@@ -2,7 +2,7 @@
 /** chunk id: 331146, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  E: () => g
+  E: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk562337 = require("./562337.js");
 
-function m(e) {
+function g(e) {
   let {
     emoji: t,
     onRemoveEmoji: n,
@@ -51,7 +51,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     tierEmojiIds: t,
     guildId: n,
@@ -59,7 +59,7 @@ function g(e) {
   } = e, l = (0, c.Z)(n), s = null != t ? l.filter(e => t.has(e.id)) : [], a = (0, o.mY)();
   return (0, r.jsx)("div", {
     className: u.container,
-    children: s.map(e => (0, r.jsx)(m, {
+    children: s.map(e => (0, r.jsx)(g, {
       emoji: e,
       onRemoveEmoji: () => i(e),
       disabled: a

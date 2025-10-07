@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk189075 = require("./189075.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,19 +57,19 @@ function f(e) {
     onImport: f
   } = e, h = (0, d.mY)();
   return (0, r.jsx)("div", {
-    className: m.container,
+    className: g.container,
     children: a.map(e => (0, r.jsxs)("div", {
-      className: m.row,
+      className: g.row,
       children: [(0, r.jsx)("img", {
         alt: "",
         src: null == e.image_asset ? true : (0, o._W)(e.application_id, e.image_asset, 512),
-        className: l()(m.rowIcon, m.listingImage)
+        className: l()(g.rowIcon, g.listingImage)
       }), (0, r.jsxs)("div", {
-        className: m.rowBody,
+        className: g.rowBody,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "header-primary",
-          className: l()(m.rowText, m.listingName),
+          className: l()(g.rowText, g.listingName),
           children: e.name
         }), (0, r.jsx)(s.Text, {
           color: "header-secondary",
@@ -86,7 +86,7 @@ function f(e) {
             let {
               ImportBenefitsFromSubscriptionListingModal: l
             } = await n.e("31667").then(n.bind(n, 880229));
-            return n => (0, r.jsx)(l, p(g({}, n), {
+            return n => (0, r.jsx)(l, p(m({}, n), {
               fromSubscriptionListing: e,
               existingChannelBenefits: t,
               existingIntangibleBenefits: i,
@@ -108,15 +108,15 @@ function h(e) {
     disabled: o = false
   } = e;
   return (0, r.jsxs)(s.P3F, {
-    className: l()(m.importRoleCard, {
-      [m.disabled]: o
+    className: l()(g.importRoleCard, {
+      [g.disabled]: o
     }),
     onClick: o ? true : function() {
       (0, s.ZDy)(async () => {
         let {
           ImportBenefitsFromRoleModal: e
         } = await n.e("31667").then(n.bind(n, 880229));
-        return n => (0, r.jsx)(e, p(g({}, n), {
+        return n => (0, r.jsx)(e, p(m({}, n), {
           guildId: t,
           onImport: i
         }))
@@ -128,15 +128,15 @@ function h(e) {
       width: 23,
       height: 23,
       color: "currentColor",
-      className: m.rowIcon
+      className: g.rowIcon
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-primary",
-      className: m.rowText,
+      className: g.rowText,
       children: u.intl.string(u.t.xK9pBA)
     }), (0, r.jsx)(a.Z, {
       direction: a.Z.Directions.RIGHT,
-      className: m.caret
+      className: g.caret
     })]
   })
 }

@@ -56,7 +56,7 @@ function k(e) {
   let {
     transitionState: N,
     onClose: I
-  } = e, A = i.useRef(null), L = i.useRef(null), [R, Z] = i.useState(""), [M, z] = i.useState(""), [q, B] = i.useState(), [V, W] = i.useState(""), [G, H] = i.useState([]), [X, U] = i.useState(), [Y, K] = i.useState(), [J, Q] = i.useState(false), [F, $] = i.useState(""), [ee, et] = i.useState(function(e) {
+  } = e, A = i.useRef(null), L = i.useRef(null), [R, Z] = i.useState(""), [M, z] = i.useState(""), [q, B] = i.useState(), [V, W] = i.useState(""), [G, H] = i.useState([]), [U, X] = i.useState(), [Y, K] = i.useState(), [J, Q] = i.useState(false), [F, $] = i.useState(""), [ee, et] = i.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -66,7 +66,7 @@ function k(e) {
         return "Linux"
     }
     return ""
-  }((0, O.getOS)())), [en, er] = i.useState(""), [ei, el] = i.useState(""), [ea, eo] = i.useState(""), [es, eu] = i.useState(""), [ec, ed] = i.useState(false), [em, ep] = i.useState(false), [ef, ev] = i.useState(false), [eh, ex] = i.useState(null);
+  }((0, O.getOS)())), [en, er] = i.useState(""), [ei, el] = i.useState(""), [ea, eo] = i.useState(""), [es, eu] = i.useState(""), [ec, ed] = i.useState(false), [em, ep] = i.useState(false), [ef, ev] = i.useState(false), [eh, eg] = i.useState(null);
   i.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -76,29 +76,29 @@ function k(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "06b2dbbaa09044b7d2ffe4694338aa1dda9676e1" !== e.body.hash) {
-        let e = new Date("1759871597499"),
+      if (null != e.body && "f5c82e8c9947732d0498ff4f106c804a9f85afc8" !== e.body.hash) {
+        let e = new Date("1759871811456"),
           t = new Date,
           n = (0, j.TD)(t, e);
-        n.hours > 6 && ex(n.hours)
+        n.hours > 6 && eg(n.hours)
       }
     })
   }, []);
-  let eg = (0, a.e7)([b.default], () => {
-      let e = b.default.getCurrentUser();
+  let ex = (0, a.e7)([y.default], () => {
+      let e = y.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    eb = (0, a.e7)([m.C], () => {
+    ey = (0, a.e7)([m.C], () => {
       var e;
       return null == (e = m.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
-      overridesInfo: ey
-    } = (0, g.s)(),
+      overridesInfo: eb
+    } = (0, x.s)(),
     {
       overridesInfo: ej
-    } = (0, x.Q)(),
-    eO = Object.entries(C({}, ey, ej)).map(e => {
+    } = (0, g.Q)(),
+    eO = Object.entries(C({}, eb, ej)).map(e => {
       let [t, {
         variantId: n
       }] = e;
@@ -113,7 +113,7 @@ function k(e) {
   async function eS() {
     var e, t;
     if (ev(false), "" === R || "" === M || null == q) return void ed(true);
-    let i = null == X || null == (e = X.features) ? true : e.find(e => (0, _.pD)(e) === Y);
+    let i = null == U || null == (e = U.features) ? true : e.find(e => (0, _.pD)(e) === Y);
     ep(true), ed(false);
     let l = (0, S.D)(G.map(e => {
         let {
@@ -127,7 +127,7 @@ function k(e) {
         priority: q,
         feature: i,
         url: V,
-        buildOverride: null != (t = null == eb ? true : eb.id) ? t : null,
+        buildOverride: null != (t = null == ey ? true : ey.id) ? t : null,
         experimentOverrides: eO
       }, true === J ? {
         overridePlatformInformation: J,
@@ -140,7 +140,7 @@ function k(e) {
       } : {
         overridePlatformInformation: J
       }, l).catch(() => ev(true));
-    ep(false), null != a && a.ok ? (eg && window.open(a.body.permalink_url, "_blank"), e_(), (0, u.ZDy)(async () => {
+    ep(false), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), e_(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -163,10 +163,10 @@ function k(e) {
   }
   i.useEffect(() => {
     async function e() {
-      U(await (0, _.WG)())
+      X(await (0, _.WG)())
     }
-    eg && e()
-  }, [eg]), i.useEffect(() => {
+    ex && e()
+  }, [ex]), i.useEffect(() => {
     if (G.length > 0) {
       var e;
       null == (e = L.current) || e.scrollIntoView({
@@ -203,21 +203,21 @@ function k(e) {
       onPaste: ew,
       children: (0, r.jsxs)("form", {
         onSubmit: eS,
-        children: [null != eb && (0, r.jsx)(u.ToO, {
+        children: [null != ey && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           body: w.intl.format(w.t["yY60+/"], {
             buildOverrideHook: () => (0, r.jsx)("b", {
-              children: null == eb ? true : eb.id
+              children: null == ey ? true : ey.id
             })
           }),
           title: w.intl.string(w.t["ZP/hEx"])
-        }), null == eb && null != eh && (0, r.jsx)(u.ToO, {
+        }), null == ey && null != eh && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           title: w.intl.formatToPlainString(w.t["ql2Q/f"], {
             hours: eh
           }),
           body: w.intl.string(w.t.x18RUl)
-        }), eg && Object.keys(eO).length > 0 && (0, r.jsx)(u.ToO, {
+        }), ex && Object.keys(eO).length > 0 && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           title: "You have the following experiments overridden:",
           body: eO.map(e => (0, r.jsxs)("div", {
@@ -243,7 +243,7 @@ function k(e) {
             placeholder: "What did you expect to see?",
             value: M,
             onChange: z,
-            description: eg ? "You can add additional information/media on the ticket after submitting" : true
+            description: ex ? "You can add additional information/media on the ticket after submitting" : true
           }), (0, r.jsx)(u.q4e, {
             label: w.intl.string(w.t.xMXLdX),
             errorMessage: ec && true === q ? w.intl.string(w.t.EkokLy) : null,
@@ -256,7 +256,7 @@ function k(e) {
                   children: [(0, r.jsx)("img", {
                     alt: "",
                     className: P.formPriorityImage,
-                    src: (0, y.gT)({
+                    src: (0, b.gT)({
                       id: t.emoji,
                       animated: true,
                       size: 48
@@ -285,17 +285,17 @@ function k(e) {
             value: q,
             maxVisibleItems: 4,
             closeOnSelect: true
-          }), eg && (0, r.jsx)(u.VcW, {
+          }), ex && (0, r.jsx)(u.VcW, {
             label: w.intl.string(w.t["77VVd3"]),
             value: Y,
-            options: null != (D = null == X || null == (T = X.features) || null == (k = T.filter(e => "" !== (0, _.pD)(e))) || null == (t = k.map(e => {
+            options: null != (D = null == U || null == (T = U.features) || null == (k = T.filter(e => "" !== (0, _.pD)(e))) || null == (t = k.map(e => {
               var t;
               return {
                 label: null != (t = e.name) ? t : "",
                 value: (0, _.pD)(e)
               }
             })) ? true : t.sort((e, t) => e.label.localeCompare(t.label))) ? D : [],
-            isDisabled: null == X,
+            isDisabled: null == U,
             onChange: e => K(e)
           }), (0, r.jsx)(u.oil, {
             label: w.intl.string(w.t["7p5pqq"]),
@@ -355,10 +355,9 @@ function k(e) {
               },
               multiple: true
             })]
-          }), G.length > 0 ? (0, r.jsxs)(u.hjN, {
-            children: [(0, r.jsx)(u.vwX, {
-              children: "Preview"
-            }), (0, r.jsx)("div", {
+          }), G.length > 0 ? (0, r.jsx)(u.NIc, {
+            label: "Preview",
+            children: (0, r.jsx)("div", {
               ref: L,
               className: P.attachments,
               children: G.length > 0 && G.map(e => (0, r.jsxs)("div", {
@@ -390,7 +389,7 @@ function k(e) {
                   children: e.filename
                 })]
               }, e.id))
-            })]
+            })
           }) : null, ef ? (0, r.jsx)(u.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
@@ -405,7 +404,7 @@ function k(e) {
         justify: "end",
         children: [(0, r.jsx)(u.zxk, {
           variant: "primary",
-          text: eg ? "Submit and Open Report" : "Submit Report",
+          text: ex ? "Submit and Open Report" : "Submit Report",
           loading: em,
           onClick: eS
         }), (0, r.jsx)(u.zxk, {

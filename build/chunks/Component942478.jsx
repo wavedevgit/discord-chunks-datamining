@@ -19,7 +19,7 @@ function u() {
     originalGuild: t,
     submitting: n,
     errors: u
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), m = Chunk647438.useMemo(() => (0, Chunk203377.LG)(u), [u]), g = Chunk647438.useCallback(async () => {
+  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), g = Chunk647438.useMemo(() => (0, Chunk203377.LG)(u), [u]), m = Chunk647438.useCallback(async () => {
     if (null == module) return Promise.resolve();
     let n = {
       systemChannelFlags: module.systemChannelFlags,
@@ -41,8 +41,8 @@ function u() {
   }, [module]);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: require,
-    errorMessage: m,
-    onSave: g,
+    errorMessage: g,
+    onSave: m,
     onReset: p
   })
 }

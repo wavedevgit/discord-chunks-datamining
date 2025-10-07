@@ -2,7 +2,7 @@
 /** chunk id: 951665, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,21 +44,21 @@ function u(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     rule: n,
-    onChangeRule: m,
-    collapsed: g = false
-  } = e, [p, f] = i.useState(!g), h = i.useCallback(() => {
+    onChangeRule: g,
+    collapsed: m = false
+  } = e, [p, f] = i.useState(!m), h = i.useCallback(() => {
     f(!p)
   }, [p, f]), x = i.useCallback(e => {
-    m(u(d({}, n), {
+    g(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))
-  }, [m, n]);
+  }, [g, n]);
   return (0, s.S)(n.triggerType) ? (0, r.jsx)(l.zF9, {
     isExpanded: p,
     collapsibleContent: (0, r.jsx)(a.Z, {

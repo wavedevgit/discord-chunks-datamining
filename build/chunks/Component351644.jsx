@@ -40,11 +40,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk790904 = require("./790904.js"),
   Chunk609182 = require("./609182.js");
 
-function B(e, t) {
+function U(e, t) {
   return t.includes(e)
 }
 
-function U(e) {
+function B(e) {
   let {
     query: t,
     setQuery: n
@@ -120,7 +120,7 @@ function W(e) {
       showYoutubeCard: eu > 0 || !n && e
     }
   }, [ei, ea, W, er, ed, eu]), ef = Object.values(G).length, eh = r.useMemo(() => {
-    let e = ef > 100 ? B : s();
+    let e = ef > 100 ? U : s();
     return Object.values(G).filter(t => {
       var n;
       let {
@@ -364,7 +364,7 @@ function W(e) {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.pUBKho)
-        }), ef > 4 ? (0, i.jsx)(U, {
+        }), ef > 4 ? (0, i.jsx)(B, {
           query: et,
           setQuery: en
         }) : null, eN]

@@ -15,8 +15,8 @@ let o = e => {
       tagsLabel: c,
       value: d,
       onRemoveTag: u,
-      onAddTag: m,
-      onAddTagError: g,
+      onAddTag: g,
+      onAddTagError: m,
       maxTaxLength: p,
       maxTags: f,
       disabled: h,
@@ -41,12 +41,12 @@ let o = e => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != f && o.length >= f) {
-        null == g || g(a.intl.string(a.t.Xx7XeH));
+        null == m || m(a.intl.string(a.t.Xx7XeH));
         return
       }
-      m(e), _("")
+      g(e), _("")
     }
-  }, [j, f, m, g, o.length]), C = i.useCallback(e => {
+  }, [j, f, g, m, o.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
       case s.yXg.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));

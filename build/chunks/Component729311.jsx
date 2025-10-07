@@ -39,7 +39,7 @@ function w(e) {
     guild: t
   } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, O.Z)(t), x = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), b = h.filter(e => !x.has(e.id)), [v, C] = i.useState(false);
   return (i.useEffect(() => {
-    f || a || (0, g.S)(t.id)
+    f || a || (0, m.S)(t.id)
   }, [t.id, f, a]), v || 0 === b.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(s.Text, {
@@ -93,7 +93,7 @@ function w(e) {
               children: (0, r.jsx)(s.Text, {
                 className: T.topic,
                 variant: "text-xs/normal",
-                children: m.Z.parseTopic(e.topic, true, {
+                children: g.Z.parseTopic(e.topic, true, {
                   channelId: e.id
                 })
               })
@@ -164,7 +164,7 @@ function w(e) {
 function R(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([b.Z], () => b.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(false), _ = i.useRef(n);
+  } = e, n = (0, l.e7)([b.Z], () => b.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
   return (i.useEffect(() => {
     _.current = n
   }), i.useEffect(() => {
@@ -188,7 +188,7 @@ function R(e) {
         className: T.collapseButton,
         onClick: () => p(e => !e),
         children: (0, r.jsx)(x.Z, {
-          direction: g ? x.Z.Directions.DOWN : x.Z.Directions.UP,
+          direction: m ? x.Z.Directions.DOWN : x.Z.Directions.UP,
           height: 16,
           width: 16
         })
@@ -203,7 +203,7 @@ function R(e) {
       }), (0, r.jsx)(y.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
-      }), g ? null : (0, r.jsxs)(r.Fragment, {
+      }), m ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(w, {
           guild: n
         }), (0, r.jsx)(N.Z, {
@@ -226,7 +226,7 @@ function R(e) {
           color: "header-secondary",
           children: S.intl.string(S.t.bLDQ1d)
         }), (0, r.jsx)("div", {
-          ref: m,
+          ref: g,
           className: T.advancedModeQuestions,
           children: (0, r.jsx)(I.Z, {
             guildId: n.id,
@@ -239,7 +239,7 @@ function R(e) {
     }), (0, r.jsx)(E.Z, {
       guild: n,
       scrollToQuestions: () => {
-        null != m.current && m.current.scrollIntoView({
+        null != g.current && g.current.scrollIntoView({
           behavior: "smooth"
         })
       }

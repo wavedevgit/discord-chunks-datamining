@@ -31,7 +31,7 @@ function p(e) {
   });
   return (0, r.jsx)("div", {
     onMouseDown: l,
-    className: g.resizeHandle
+    className: m.resizeHandle
   })
 }
 let f = Chunk647438.forwardRef(function(e, t) {
@@ -40,9 +40,9 @@ let f = Chunk647438.forwardRef(function(e, t) {
     onFocus: l,
     onBlur: s,
     onClick: o
-  } = e, c = i.useRef(null), [d, m] = i.useState(u.tq);
+  } = e, c = i.useRef(null), [d, g] = i.useState(u.tq);
   return (0, r.jsxs)(a.P3F, {
-    className: g.textArea,
+    className: m.textArea,
     onFocus: l,
     onBlur: s,
     onClick: o,
@@ -52,7 +52,7 @@ let f = Chunk647438.forwardRef(function(e, t) {
       minHeight: d
     },
     children: [(0, r.jsx)(a.Den, {
-      className: g.innerScroller,
+      className: m.innerScroller,
       style: {
         minHeight: d - 2
       },
@@ -60,9 +60,9 @@ let f = Chunk647438.forwardRef(function(e, t) {
       children: n
     }), (0, r.jsx)(p, {
       resizableNode: c,
-      onResize: m,
+      onResize: g,
       onResizeEnd: e => {
-        m(e), null == l || l()
+        g(e), null == l || l()
       }
     })]
   })
@@ -78,7 +78,7 @@ function h(e) {
     placeholder: p,
     className: h,
     maxTags: x
-  } = e, b = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, m.V)(n), {
+  } = e, b = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, g.V)(n), {
     handlePasteEvent: C,
     handleInputChange: O,
     handleKeyDown: y,
@@ -89,7 +89,7 @@ function h(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, m.Q)(v, {
+  } = (0, g.Q)(v, {
     scrollerRef: _,
     mainInputRef: b,
     mainContainerRef: j
@@ -129,7 +129,7 @@ function h(e) {
       } else T(e, true), G(true)
     }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
-    className: s()(g.mainContainer, h),
+    className: s()(m.mainContainer, h),
     ref: j,
     tabIndex: 0,
     onKeyUp: N,
@@ -147,8 +147,8 @@ function h(e) {
         error: u[e],
         forceShowErrorTooltip: !k && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: s()(g.mainTextInput, {
-          [g.isEditingOtherNodes]: k
+        className: s()(m.mainTextInput, {
+          [m.isEditingOtherNodes]: k
         }),
         ref: b,
         onChange: O,
@@ -161,7 +161,7 @@ function h(e) {
     }), null != x && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: g.maxTags,
+      className: m.maxTags,
       children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", x]
     })]
   })

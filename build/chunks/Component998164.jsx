@@ -90,7 +90,7 @@ function b(e) {
     })
   }, [t, l]);
   return (0, r.jsxs)(s.P3F, {
-    className: g.addActionItem,
+    className: m.addActionItem,
     onClick: a,
     children: [(0, r.jsx)(s.oFk, {
       size: "xs",
@@ -98,7 +98,7 @@ function b(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "none",
-      children: m.intl.string(m.t.qce3EB)
+      children: g.intl.string(g.t.qce3EB)
     })]
   })
 }
@@ -110,7 +110,7 @@ let j = function(e) {
     return null != (e = d.Z.getSettings().newMemberActions) ? e : h
   }), s = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
-  }, [t]), m = i.useCallback((e, r, i, l) => {
+  }, [t]), g = i.useCallback((e, r, i, l) => {
     var s;
     let a = null == (s = n[e]) ? true : s.channelId;
     null != a && null != d.Z.getSettings() && ((0, c.el)(a, r), (0, c.ad)(t, a, i, l))
@@ -128,12 +128,12 @@ let j = function(e) {
     handleDragComplete: y
   } = (0, a.Z)(_, v);
   return (0, r.jsxs)("div", {
-    className: g.section,
+    className: m.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
       guildId: t,
       action: e,
       actionIndex: n,
-      onChange: m,
+      onChange: g,
       onDelete: j,
       onDragStart: C,
       onDragReset: O,

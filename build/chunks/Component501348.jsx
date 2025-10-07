@@ -252,9 +252,8 @@ class eo extends Chunk647438.Component {
           children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
         })
       }),
-      children: (0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DEFAULT,
-        className: Chunk226518.forcedColorsWarning,
+      children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
+        messageType: Chunk481060.QYI.INFO,
         children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ea, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
       })
     }) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {

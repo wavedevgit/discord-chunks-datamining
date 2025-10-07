@@ -25,11 +25,11 @@ function b(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
-  } = e, m = (0, d.ue)(t, {
+  } = e, g = (0, d.ue)(t, {
     publishedOnly: false
   }), {
     shouldRestrictUpdatingCreatorMonetizationSettings: b
-  } = (0, a.gX)(t), j = m.length > 0;
+  } = (0, a.gX)(t), j = g.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.vwX, {
       className: h.productListingsHeader,
@@ -38,7 +38,7 @@ function b(e) {
     }), j ? (0, r.jsx)("ul", {
       className: h.productListings,
       "aria-labelledby": x,
-      children: m.map(e => (0, r.jsx)("li", {
+      children: g.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(p.Z, {
           guildId: t,
           product: e,
@@ -83,7 +83,7 @@ function b(e) {
             var n;
             return n = e.id, void(0, o.JG)((0, u.ar)(t, n))
           },
-          onTestDownload: () => g.Z.open({
+          onTestDownload: () => m.Z.open({
             guildId: t,
             productId: e.id
           }),
@@ -105,7 +105,7 @@ function j(e) {
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
   } = (0, a.gX)(t), s = e => {
-    m.h(t, e)
+    g.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.zxk, {

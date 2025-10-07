@@ -41,7 +41,7 @@ function h(e) {
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
   }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
   i.useEffect(() => {
-    _ && x(m.ZI.PERMISSIONS)
+    _ && x(g.ZI.PERMISSIONS)
   }, [_, x]);
   let C = (0, o.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
@@ -51,7 +51,7 @@ function h(e) {
         className: p.titleText,
         color: "header-primary",
         variant: "text-md/semibold",
-        children: g.intl.format(g.t.BUdGkJ, {
+        children: m.intl.format(m.t.BUdGkJ, {
           roleName: f.name
         })
       }), C ? (0, r.jsx)(s.P3F, {
@@ -96,7 +96,7 @@ function h(e) {
             }
           })
         },
-        "aria-label": g.intl.string(g.t.PdRCRk),
+        "aria-label": m.intl.string(m.t.PdRCRk),
         children: (0, r.jsx)(s.xhG, {
           size: "md",
           color: "currentColor"
@@ -107,30 +107,30 @@ function h(e) {
       children: v
     }) : null, (0, r.jsxs)(s.njP, {
       className: p.tabBar,
-      "aria-label": g.intl.string(g.t["+1H47u"]),
+      "aria-label": m.intl.string(m.t["+1H47u"]),
       selectedItem: h,
       type: "top",
       look: "brand",
       onItemSelect: b,
       children: [(0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
-        id: m.ZI.DISPLAY,
+        id: g.ZI.DISPLAY,
         disabled: _,
-        children: g.intl.string(g.t.hmdom5)
+        children: m.intl.string(m.t.hmdom5)
       }), (0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
-        id: m.ZI.PERMISSIONS,
-        children: g.intl.string(g.t.WIDE1N)
+        id: g.ZI.PERMISSIONS,
+        children: m.intl.string(m.t.WIDE1N)
       }), (0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
-        id: m.ZI.VERIFICATIONS,
+        id: g.ZI.VERIFICATIONS,
         disabled: _,
-        children: g.intl.string(g.t["5//Mur"])
+        children: m.intl.string(m.t["5//Mur"])
       }), (0, r.jsx)(s.njP.Item, {
         className: p.tabBarItem,
-        id: m.ZI.MEMBERS,
+        id: g.ZI.MEMBERS,
         disabled: _,
-        children: _ ? g.intl.string(g.t["kg//+/"]) : g.intl.formatToPlainString(g.t.bHnZWV, {
+        children: _ ? m.intl.string(m.t["kg//+/"]) : m.intl.formatToPlainString(m.t.bHnZWV, {
           numMembers: String(j)
         })
       })]

@@ -60,13 +60,13 @@ function _(e) {
     }), (0, r.jsx)(l.hjN, {
       title: b.intl.string(b.t.O8cDAA),
       disabled: v,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         guildId: f,
         application: _.application
       })
     }), (0, r.jsx)(l.hjN, {
       title: b.intl.string(b.t["0n7R2d"]),
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(m.Z, {
         guildId: f,
         allPeriods: _.payoutsByPeriod
       })

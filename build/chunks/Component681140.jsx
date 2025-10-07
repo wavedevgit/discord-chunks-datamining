@@ -31,14 +31,16 @@ function b(e) {
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       className: x.detailsRow,
-      children: (0, a.jsx)(i.R94, {
+      children: (0, a.jsx)(i.Text, {
+        variant: "text-sm/normal",
         children: t
       })
     }), (0, a.jsxs)("div", {
       className: x.nestedDetailsList,
       children: [0 === n.length && (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.R94, {
+        children: (0, a.jsx)(i.Text, {
+          variant: "text-sm/normal",
           children: "None"
         })
       }), n.map(e => {
@@ -48,7 +50,8 @@ function b(e) {
           children: [(0, a.jsx)(c.ZP, {
             guild: t,
             iconSize: 16
-          }), (0, a.jsx)(i.R94, {
+          }), (0, a.jsx)(i.Text, {
+            variant: "text-sm/normal",
             children: t.name
           })]
         }, e)
@@ -84,14 +87,16 @@ function g(e) {
       className: x.detailsRow,
       children: [g({
         ok: null != l
-      }), (0, a.jsx)(i.R94, {
+      }), (0, a.jsx)(i.Text, {
+        variant: "text-sm/normal",
         children: null != l ? "User exists in UserStore" : "User does not exist in UserStore"
       })]
     }), null != l && (0, a.jsx)("div", {
       className: x.nestedDetailsList,
       children: (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.R94, {
+        children: (0, a.jsx)(i.Text, {
+          variant: "text-sm/normal",
           children: "username: ".concat(l.username)
         })
       })
@@ -99,31 +104,36 @@ function g(e) {
       className: x.detailsRow,
       children: [g({
         ok: null != s
-      }), (0, a.jsx)(i.R94, {
+      }), (0, a.jsx)(i.Text, {
+        variant: "text-sm/normal",
         children: null != s ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
       })]
     }), null != s && (0, a.jsxs)("div", {
       className: x.nestedDetailsList,
       children: [(0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.R94, {
+        children: (0, a.jsx)(i.Text, {
+          variant: "text-sm/normal",
           children: "username: ".concat(s.username)
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.R94, {
+        children: (0, a.jsx)(i.Text, {
+          variant: "text-sm/normal",
           children: "global name: ".concat(null != (t = s.globalName) ? t : "—")
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
-        children: (0, a.jsx)(i.R94, {
+        children: (0, a.jsx)(i.Text, {
+          variant: "text-sm/normal",
           children: "nicknames:"
         })
       }), (0, a.jsxs)("div", {
         className: x.nestedDetailsList,
         children: [0 === Object.keys(s.nicknames).length && (0, a.jsx)("div", {
           className: x.detailsRow,
-          children: (0, a.jsx)(i.R94, {
+          children: (0, a.jsx)(i.Text, {
+            variant: "text-sm/normal",
             children: "None"
           })
         }), Object.entries(s.nicknames).map(e => {
@@ -133,13 +143,17 @@ function g(e) {
             children: [null != r && (0, a.jsx)(c.ZP, {
               guild: r,
               iconSize: 16
-            }), null != r && (0, a.jsx)(i.R94, {
+            }), null != r && (0, a.jsx)(i.Text, {
+              variant: "text-sm/normal",
               children: r.name
-            }), null == r && null != l && (0, a.jsx)(i.R94, {
+            }), null == r && null != l && (0, a.jsx)(i.Text, {
+              variant: "text-sm/normal",
               children: (0, o.F6)(l, h.default, p.Z)
-            }), (0, a.jsx)(i.R94, {
+            }), (0, a.jsx)(i.Text, {
+              variant: "text-sm/normal",
               children: " (".concat(t, ")")
-            }), null != n && "" !== n && (0, a.jsx)(i.R94, {
+            }), null != n && "" !== n && (0, a.jsx)(i.Text, {
+              variant: "text-sm/normal",
               children: " - ".concat(n)
             })]
           }, t)
@@ -149,7 +163,8 @@ function g(e) {
       className: x.detailsRow,
       children: [g({
         ok: d.length > 0
-      }), (0, a.jsx)(i.R94, {
+      }), (0, a.jsx)(i.Text, {
+        variant: "text-sm/normal",
         children: d.length > 0 ? "Guild members exist:" : "No guild members exist"
       })]
     }), d.length > 0 && (0, a.jsx)("div", {
@@ -164,7 +179,8 @@ function g(e) {
           children: [(0, a.jsx)(c.ZP, {
             guild: n,
             iconSize: 16
-          }), (0, a.jsxs)(i.R94, {
+          }), (0, a.jsxs)(i.Text, {
+            variant: "text-sm/normal",
             children: [n.name, "" !== r ? " - ".concat(r) : ""]
           })]
         }, "".concat(e.guildId))
@@ -173,7 +189,8 @@ function g(e) {
       className: x.detailsRow,
       children: [(0, a.jsx)(i.d3s, {
         size: "sm"
-      }), (0, a.jsx)(i.R94, {
+      }), (0, a.jsx)(i.Text, {
+        variant: "text-sm/normal",
         children: "GuildMemberRequesterStore State"
       })]
     }), null != f && (0, a.jsxs)("div", {
@@ -249,9 +266,8 @@ function j() {
   return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: "Debug User State",
     tag: Chunk481060.RB0.H3,
-    className: Chunk530146.panelGroup,
-    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.geA.DESCRIPTION,
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/normal",
       className: Chunk530146.subtitle,
       children: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs."
     }), (0, Chunk951288.jsx)(v, {}), null != exports && (0, Chunk951288.jsx)(Chunk481060.Text, {

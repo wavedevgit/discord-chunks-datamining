@@ -2,7 +2,7 @@
 /** chunk id: 351123, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => q
+  Z: () => X
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -92,11 +92,11 @@ function W(e) {
           section: v,
           row: y
         } = e,
-        N = false;
+        S = false;
       switch (v) {
         case D.m$.ROLES:
-          var S;
-          j = (g = n[y]).rowType === D.aC.ROLE && (null == (S = g.tags) ? true : S.guild_connections) === null ? (0, i.jsx)(b.Z, {
+          var N;
+          j = (g = n[y]).rowType === D.aC.ROLE && (null == (N = g.tags) ? true : N.guild_connections) === null ? (0, i.jsx)(b.Z, {
             className: V.shield,
             color: g.colorString,
             size: 20
@@ -115,7 +115,7 @@ function W(e) {
               color: g.disabled ? "text-muted" : "text-default",
               children: g.name
             })]
-          }), N = g.disabled;
+          }), S = g.disabled;
           break;
         case D.m$.MEMBERS:
           g = l[y], c = (0, i.jsxs)(i.Fragment, {
@@ -136,13 +136,13 @@ function W(e) {
               variant: "text-sm/normal",
               children: g.username
             })]
-          }), N = g.disabled;
+          }), S = g.disabled;
           break;
         default:
           g = null
       }
       if (null == g) return null;
-      let E = !N && null == r && null != g.id;
+      let O = !S && null == r && null != g.id;
       return (0, i.jsxs)(x.Z, {
         justify: x.Z.Justify.BETWEEN,
         align: x.Z.Align.CENTER,
@@ -155,14 +155,14 @@ function W(e) {
         }), (0, i.jsx)(d.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
-          children: P.zB(g.rowType)
+          children: I.zB(g.rowType)
         }), g.rowType !== D.aC.EMPTY_STATE && (0, i.jsx)(o.u, {
           asContainer: true,
           text: null != r ? r : a(g.rowType, g.disabled),
           children: (0, i.jsx)(d.P3F, {
             onClick: () => {
               var e, n, i;
-              return E && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
+              return O && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
                 title: H.intl.string(H.t.GuPYQE),
                 body: H.intl.format(H.t.xERCnZ, {
                   name: n
@@ -176,13 +176,13 @@ function W(e) {
                 })(e, i)
               }))
             },
-            "aria-disabled": !E,
+            "aria-disabled": !O,
             "aria-label": H.intl.string(H.t.N86XcH),
             children: (0, i.jsx)(d.k$p, {
               size: "md",
               color: "currentColor",
               className: s()(V.removeIcon, {
-                [V.disabledRemoveIcon]: N || r
+                [V.disabledRemoveIcon]: S || r
               })
             })
           })
@@ -196,11 +196,11 @@ function W(e) {
       } = e;
       switch (t) {
         case D.m$.ROLES:
-          return (0, i.jsx)(X, {
+          return (0, i.jsx)(q, {
             title: H.intl.string(H.t.LPJmLy)
           }, "roles-title");
         case D.m$.MEMBERS:
-          return (0, i.jsx)(X, {
+          return (0, i.jsx)(q, {
             title: H.intl.string(H.t["9Oq93t"])
           }, "members-title")
       }
@@ -214,10 +214,10 @@ function F(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, c = (0, a.e7)([Z.Z], () => Z.Z.getSortedRoles(t.id)), u = P.RZ(t, c, l, N.yP, r), h = (0, a.e7)([O.ZP], () => P.cR(O.ZP.getMemberIds(t.id), l, t, N.yP, r)), g = (0, C.nG)(l.id);
+  } = e, c = (0, a.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), u = I.RZ(t, c, l, S.yP, r), h = (0, a.e7)([Z.ZP], () => I.cR(Z.ZP.getMemberIds(t.id), l, t, S.yP, r)), g = (0, C.nG)(l.id);
   return (0, i.jsxs)("div", {
     className: s()(V.settingCard, V.active),
-    children: [(0, i.jsx)(L.Z, {
+    children: [(0, i.jsx)(M.Z, {
       label: H.intl.string(H.t.StpcFR),
       description: H.intl.string(H.t.f7VbhI),
       icon: (0, i.jsx)(d.ewx, {
@@ -234,9 +234,8 @@ function F(e) {
         justify: x.Z.Justify.BETWEEN,
         align: x.Z.Align.CENTER,
         className: V.folderHeader,
-        children: [(0, i.jsx)(d.vwX, {
-          tag: "h5",
-          className: V.folderTitle,
+        children: [(0, i.jsx)(d.Text, {
+          variant: "text-md/semibold",
           children: H.intl.string(H.t["7BWDRU"])
         }), (0, i.jsx)(o.u, {
           text: H.intl.string(H.t.arRuER),
@@ -263,7 +262,7 @@ function F(e) {
         roles: u,
         members: h,
         disabledReason: g ? null : H.intl.string(H.t.arRuER),
-        getRemoveTooltipHint: S.kk
+        getRemoveTooltipHint: N.kk
       })]
     })]
   })
@@ -276,10 +275,10 @@ function z(e) {
     isPrivateGuildChannel: r,
     roles: o,
     members: u
-  } = e, h = (0, a.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), p = I.Uu(B.Pl.ADMINISTRATOR, t);
+  } = e, h = (0, a.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = P.Uu(B.Pl.VIEW_CHANNEL, t), p = P.Uu(B.Pl.ADMINISTRATOR, t);
   async function m() {
     let e = l.accessPermissions,
-      s = R.default.getCurrentUser();
+      s = _.default.getCurrentUser();
     if (!r && null != await (0, v.T)(t.id, l.id)) return void(0, d.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -298,7 +297,7 @@ function z(e) {
         })
       }))
     });
-    P.$e(l, e, r), r || null == s || h || P.Yh(l, e)
+    I.$e(l, e, r), r || null == s || h || I.Yh(l, e)
   }
   let f = {
     title: H.intl.string(H.t.aUI70t),
@@ -309,7 +308,7 @@ function z(e) {
     className: s()(V.settingCard, {
       [V.active]: r
     }),
-    children: [(0, i.jsx)(L.Z, {
+    children: [(0, i.jsx)(M.Z, {
       description: f.subtitle,
       icon: (0, i.jsx)(d.mBM, {
         size: "custom",
@@ -365,14 +364,14 @@ function z(e) {
           channel: l,
           roles: o,
           members: u,
-          getRemoveTooltipHint: P.yv
+          getRemoveTooltipHint: I.yv
         })]
       })]
     })]
   })
 }
 
-function X(e) {
+function q(e) {
   let {
     title: t
   } = e;
@@ -386,7 +385,7 @@ function X(e) {
     })]
   })
 }
-let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
+let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
   let e, t = Chunk277053.Z.channel,
     n = Chunk277053.Z.category,
     i = [],
@@ -399,7 +398,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     if (null != module) {
       let a = Chunk485386.Z.getSortedRoles(module.id);
       r = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
-        let n = E.Z.getPermissionOverwrite(t);
+        let n = O.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e
       }, {}), i = Chunk605436.kA(module, Chunk442837, exports, exports.accessPermissions, Chunk120356), l = Chunk605436.cR(require, exports, module, exports.accessPermissions, Chunk120356), s = Chunk605436.Yk(exports, Chunk120356)
     }
@@ -426,28 +425,29 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     isPrivateGuildChannel: u,
     locked: h,
     permissionUpdates: p
-  } = e, [m, f] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, s));
+  } = e, [m, f] = l.useState(!P.Uu(B.Pl.SEND_MESSAGES, s));
   if (null == s || null == c) return null;
   let b = {
     title: H.intl.string(H.t.BAZMBg),
     subtitle: H.intl.string(H.t.XLrZys)
   };
   return s.isCategory() && (b.title = H.intl.string(H.t["/uELTk"]), b.subtitle = H.intl.string(H.t["8iAg3d"])), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(d.vwX, {
-      tag: "h1",
+    children: [(0, i.jsx)(d.X6q, {
+      variant: "heading-lg/semibold",
       children: b.title
-    }), (0, i.jsx)(d.R94, {
+    }), (0, i.jsx)(d.Text, {
+      variant: "text-sm/normal",
       children: b.subtitle
-    }), null != r && t ? h ? (0, i.jsx)(M.Z, {
+    }), null != r && t ? h ? (0, i.jsx)(A.Z, {
       canSync: false,
       icon: d.DuK,
       noticeText: H.intl.format(H.t.ETJqLi, {
         categoryName: r.name
       })
-    }) : (0, i.jsx)(M.Z, {
+    }) : (0, i.jsx)(A.Z, {
       buttonText: H.intl.string(H.t.NVwuHh),
       canSync: true,
-      icon: (0, d.GSL)(_.Z),
+      icon: (0, d.GSL)(R.Z),
       noticeText: H.intl.format(H.t.OIhm0N, {
         categoryName: r.name
       }),
@@ -463,7 +463,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
               let {
                 guild_id: e
               } = r, t = U({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = I.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
+              null != e && null == t[e] && (t[e] = P.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
             }
@@ -480,6 +480,6 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
       isPrivateGuildChannel: u,
       roles: o,
       members: a
-    }), false, (0, i.jsx)(A.Z, {})]
+    }), false, (0, i.jsx)(L.Z, {})]
   })
 })

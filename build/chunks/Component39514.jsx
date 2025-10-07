@@ -184,7 +184,7 @@ class Z extends Chunk647438.PureComponent {
       }) : (0, r.jsx)(g.i_, {
         className: A.marginTop20,
         children: C.intl.format(C.t.NYM08v, {
-          userTag: I.ZP.getUserTag(t),
+          userTag: j.ZP.getUserTag(t),
           onLogoutClick: this.handleLogout
         })
       })]

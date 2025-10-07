@@ -31,14 +31,14 @@ function b(e) {
   }, [b]), v = i.useRef(null);
   (0, p.Z)(v, f.KsC.PROFILE_VISIBILITY);
   let C = i.useCallback(() => {
-      j ? g.Z.updateGuildProfile(b, {
+      j ? m.Z.updateGuildProfile(b, {
         visibility: u.k.RESTRICTED
-      }) : g.Z.updateGuildProfile(b, {
+      }) : m.Z.updateGuildProfile(b, {
         visibility: _ ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
     }, [b, _, j]),
     O = i.useCallback(() => {
-      g.Z.setSection(f.pNK.ACCESS, f.KsC.ACCESS_DISCOVERABLE)
+      m.Z.setSection(f.pNK.ACCESS, f.KsC.ACCESS_DISCOVERABLE)
     }, []),
     y = null == (t = n.features) ? true : t.includes(f.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
@@ -66,7 +66,7 @@ function b(e) {
       className: s()(x.column, {
         [x.profileViewDisabled]: j
       }),
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         guildId: b,
         name: null
       })

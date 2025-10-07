@@ -18,8 +18,8 @@ function u() {
     t = null == module ? true : module.id,
     n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProfileError()),
     u = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
-    m = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
-    g = Chunk647438.useMemo(() => null == require ? true : require.getAnyErrorMessage(), [require]),
+    g = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
+    m = Chunk647438.useMemo(() => null == require ? true : require.getAnyErrorMessage(), [require]),
     p = Chunk647438.useCallback(() => {
       if (null == module || null == u) return;
       let t = {
@@ -38,8 +38,8 @@ function u() {
       null != exports && Chunk434404.Z.init(exports)
     }, [exports]);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
-    submitting: m,
-    errorMessage: g,
+    submitting: g,
+    errorMessage: m,
     onSave: p,
     onReset: f
   })

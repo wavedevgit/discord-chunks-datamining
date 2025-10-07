@@ -71,46 +71,45 @@ function R() {
       guildId: e.value
     }) : null
   }, []);
-  return (0, Chunk951288.jsxs)(Chunk738486.Z, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-      title: Chunk388032.intl.string(Chunk388032.t.nzUc3N),
-      children: (0, Chunk951288.jsx)(Chunk481060.R94, {
-        children: Chunk388032.intl.format(Chunk388032.t.u9RWmp, {
-          helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
-        })
-      })
-    }), (0, Chunk951288.jsx)(Chunk856768.Z, {
-      guildId: exports,
-      className: Chunk647484.guildSelector,
-      globalOption: {
-        label: Chunk388032.intl.string(Chunk388032.t.CpEUPz),
-        value: Chunk710111.hY
-      },
-      onChange: e => {
-        n(null == e ? T.hY : e.id)
-      },
-      renderOptionSuffix: Chunk970813,
-      hideDivider: true
-    }), (0, Chunk951288.jsxs)(Chunk993413.Z, {
-      title: Chunk388032.intl.format(Chunk388032.t.I2TsYG, {
-        nitroWheelHook: () => (0, Chunk951288.jsx)(Chunk481060.SrA, {
-          size: "md",
-          color: "currentColor",
-          className: Chunk647484.nitroWheel
-        })
+  return (0, Chunk951288.jsx)(Chunk738486.Z, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.nzUc3N),
+      description: Chunk388032.intl.format(Chunk388032.t.u9RWmp, {
+        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
       }),
-      children: [(0, Chunk951288.jsx)(Chunk331642.Z, {
-        sound: Chunk921801,
-        isGlobal: Chunk581883,
-        onSelect: n => {
-          null == n ? (0, p.aC)(t, e) : (0, p.SZ)(t, n, e)
-        }
-      }), Chunk918257 && (0, Chunk951288.jsx)(Chunk481060.Wn, {
-        className: Chunk647484.notice,
-        messageType: Chunk481060.QYI.WARNING,
-        children: Chunk388032.intl.string(Chunk388032.t.WkPsFR)
+      children: [(0, Chunk951288.jsx)(Chunk856768.Z, {
+        guildId: exports,
+        className: Chunk647484.guildSelector,
+        globalOption: {
+          label: Chunk388032.intl.string(Chunk388032.t.CpEUPz),
+          value: Chunk710111.hY
+        },
+        onChange: e => {
+          n(null == e ? T.hY : e.id)
+        },
+        renderOptionSuffix: Chunk970813,
+        hideDivider: true
+      }), (0, Chunk951288.jsxs)(Chunk993413.Z, {
+        title: Chunk388032.intl.format(Chunk388032.t.I2TsYG, {
+          nitroWheelHook: () => (0, Chunk951288.jsx)(Chunk481060.SrA, {
+            size: "md",
+            color: "currentColor",
+            className: Chunk647484.nitroWheel
+          })
+        }),
+        children: [(0, Chunk951288.jsx)(Chunk331642.Z, {
+          sound: Chunk921801,
+          isGlobal: Chunk581883,
+          onSelect: n => {
+            null == n ? (0, p.aC)(t, e) : (0, p.SZ)(t, n, e)
+          }
+        }), Chunk918257 && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+          className: Chunk647484.notice,
+          messageType: Chunk481060.QYI.WARNING,
+          children: Chunk388032.intl.string(Chunk388032.t.WkPsFR)
+        })]
       })]
-    })]
+    })
   })
 }
 

@@ -29,7 +29,7 @@ function C(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, a = (0, l.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), g = c.length, p = c.length + u.length, f = g / p * 100, h = Math.max(Math.ceil(85 * p / 100) - g, 0), [x, b] = i.useState(false), j = x ? s.CJ0 : s.u04;
+  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [x, b] = i.useState(false), j = x ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
     className: v.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
@@ -46,7 +46,7 @@ function C(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           children: _.intl.format(_.t.nMVKCQ, {
-            numChannelsMissing: p - g
+            numChannelsMissing: p - m
           })
         })]
       }), (0, r.jsxs)("div", {
@@ -126,19 +126,19 @@ function y(e) {
   i.useEffect(() => {
     a || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, j.ae)()], false))
   });
-  let m = i.useRef(t);
+  let g = i.useRef(t);
   if (i.useEffect(() => {
-      m.current = t
+      g.current = t
     }), i.useEffect(() => {
       if (n) return () => {
-        (0, p.rS)(m.current, {
+        (0, p.rS)(g.current, {
           ignoreDefaultPrompt: true
         }).catch(() => {})
       }
     }, [n]), null == t) return null;
   let O = async () => {
     try {
-      await (0, p.rS)(t), await (0, g.di)(t.id)
+      await (0, p.rS)(t), await (0, m.di)(t.id)
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {

@@ -4,7 +4,7 @@
 require.d(exports, {
   a: () => s,
   y: () => l
-});
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
@@ -20,14 +20,18 @@ function s(e) {
 
 function l(e) {
   let {
-    experiment: t,
-    experimentId: n,
-    overrideInfo: o
+    label: t,
+    description: n,
+    experiment: o,
+    experimentId: l,
+    overrideInfo: c
   } = e;
   return (0, r.jsx)(i.q4e, {
-    value: null != o ? o.variantId : null,
-    clearable: null != o,
-    options: s(t),
-    onChange: e => (0, a.rX)(t.system, n, e)
+    label: t,
+    description: n,
+    value: null != c ? c.variantId : null,
+    clearable: null != c,
+    options: s(o),
+    onChange: e => (0, a.rX)(o.system, l, e)
   })
 }

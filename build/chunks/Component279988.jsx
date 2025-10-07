@@ -2,7 +2,7 @@
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,12 +15,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk137158 = require("./137158.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31829 = require("./31829.js");
-let g = function(e) {
+let m = function(e) {
   let {
     channelId: t,
     formField: n,
     index: i,
-    isDragEnabled: g,
+    isDragEnabled: m,
     isDropHovered: p,
     onDrop: f,
     onEdit: h,
@@ -33,7 +33,7 @@ let g = function(e) {
   return (0, r.jsxs)(d.Z, {
     field: n,
     index: i,
-    isDragEnabled: g,
+    isDragEnabled: m,
     isDropHovered: p,
     onDrop: f,
     onEdit: h,
@@ -46,15 +46,16 @@ let g = function(e) {
       terms: O,
       channelId: t
     }), 0 !== y && (0, r.jsxs)(a.P3F, {
-      className: l()(m.fieldFooterContainer, m.clickable),
+      className: l()(g.fieldFooterContainer, g.clickable),
       onClick: h,
-      children: [(0, r.jsx)(a.R94, {
-        className: m.clickable,
+      children: [(0, r.jsx)(a.Text, {
+        variant: "text-md/normal",
+        className: g.clickable,
         children: u.intl.format(u.t.jnhD0d, {
           count: y
         })
       }), (0, r.jsx)(o.Z, {
-        className: m.termsFieldCaretIcon,
+        className: g.termsFieldCaretIcon,
         height: 14,
         width: 14,
         color: s.Z.unsafe_rawColors.WHITE_500.css

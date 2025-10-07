@@ -24,10 +24,10 @@ function h(e) {
     rules: n
   } = e, l = (0, o.e7)([u.Z], () => u.Z.getProps().guild), h = null == l ? true : l.id, x = i.useCallback(e => {
     if (null == h || null == n) return null;
-    m.Z.setPendingInviteRules(h, e, [...n])
+    g.Z.setPendingInviteRules(h, e, [...n])
   }, [h, n]), b = i.useCallback(e => {
     if (null == h) return null;
-    m.Z.setPendingInviteRules(h, t, e)
+    g.Z.setPendingInviteRules(h, t, e)
   }, [h, t]);
   return null == l ? null : null == n ? (0, r.jsx)(c.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.rsf, {
@@ -35,7 +35,7 @@ function h(e) {
       description: p.intl.string(p.t.SzpUBA),
       onChange: x,
       checked: t
-    }), t && (0, r.jsx)(g.c, {
+    }), t && (0, r.jsx)(m.c, {
       guildId: l.id
     }), (0, r.jsx)("div", {
       className: s()(f.rules, {

@@ -2,7 +2,7 @@
 /** chunk id: 491758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk894694 = require("./894694.js"),
   Chunk779618 = require("./779618.js"),
   Chunk39604 = require("./39604.js"),
-  Chunk442334 = require("./442334.jsx"),
   Chunk356659 = require("./356659.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js"),
@@ -31,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk556865 = require("./556865.js");
 
-function R(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +39,20 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,35 +63,35 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L() {
+function D() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
       decoupledClipsEnabled: a,
-      clipsLength: R,
-      clipsQuality: w
+      clipsLength: N,
+      clipsQuality: P
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
-    L = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
-    x = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    M = Chunk435064.Z.isDecoupledGameClippingEnabled(),
-    j = (0, Chunk779618.Z)(Chunk131951.Z),
+    D = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
+    L = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
+    x = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+    M = (0, Chunk779618.Z)(Chunk131951.Z),
     {
-      showClipsHeaderEntrypoint: k
+      showClipsHeaderEntrypoint: j
     } = Chunk924557.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     });
-  o()(null != x, "Save clip keybind unset");
-  let U = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    G = Chunk647438.useMemo(() => [{
+  o()(null != L, "Save clip keybind unset");
+  let k = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+    U = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
         count: 30
@@ -107,8 +106,8 @@ function L() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
         count: 2
       })
-    }], [U]),
-    B = Chunk647438.useMemo(() => [{
+    }], [k]),
+    G = Chunk647438.useMemo(() => [{
       value: Chunk37113.LY.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
         resolution: Chunk37113.LY.RESOLUTION_480
@@ -131,8 +130,8 @@ function L() {
     }, {
       value: Chunk37113.LY.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzs)
-    }], [U]),
-    Z = Chunk647438.useMemo(() => [{
+    }], [k]),
+    B = Chunk647438.useMemo(() => [{
       value: Chunk37113.ws.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
         fps: Chunk37113.ws.FPS_15
@@ -147,12 +146,12 @@ function L() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
         fps: Chunk37113.ws.FPS_60
       })
-    }], [U]),
-    F = Chunk647438.useCallback(e => {
-      c.Z.setKeybind(D(P({}, x), {
+    }], [k]),
+    Z = Chunk647438.useCallback(e => {
+      c.Z.setKeybind(w(R({}, L), {
         shortcut: e
       }))
-    }, [x]);
+    }, [L]);
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 24,
     children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -166,7 +165,7 @@ function L() {
             scrollPosition: Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), L === Chunk894694.x.BELOW_MINIMUM ? (0, Chunk951288.jsx)(Chunk494620.Z, {
+      }), D === Chunk894694.x.BELOW_MINIMUM ? (0, Chunk951288.jsx)(Chunk494620.Z, {
         look: Chunk494620.z.WARNING,
         children: Chunk388032.intl.string(Chunk388032.t.SIxrIC)
       }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
@@ -181,7 +180,7 @@ function L() {
       }), module && (0, Chunk951288.jsx)(Chunk494620.Z, {
         children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
       })]
-    }), M && j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), x && M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         disabled: !module,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
@@ -195,7 +194,7 @@ function L() {
           })
         })
       })]
-    }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t["3zwNf3"]),
@@ -207,30 +206,30 @@ function L() {
     }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.hjN, {
       children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 24,
-        children: [(0, Chunk951288.jsx)(Chunk442334.Q, {
-          select: Chunk39604.eU,
-          title: Chunk388032.intl.string(Chunk388032.t.OgfUio),
-          note: Chunk388032.intl.string(Chunk388032.t.H7j4tb),
-          value: R,
-          options: G
-        }), (0, Chunk951288.jsx)(Chunk442334.Q, {
-          select: e => O.yi({
+        children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+          onChange: Chunk39604.eU,
+          label: Chunk388032.intl.string(Chunk388032.t.OgfUio),
+          description: Chunk388032.intl.string(Chunk388032.t.H7j4tb),
+          value: N,
+          options: U
+        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+          onChange: e => O.yi({
             resolution: e,
-            frameRate: w.frameRate
+            frameRate: P.frameRate
           }),
-          title: Chunk388032.intl.string(Chunk388032.t.aFudZG),
-          note: Chunk388032.intl.string(Chunk388032.t.nIrkW1),
-          value: w.resolution,
-          options: B
-        }), (0, Chunk951288.jsx)(Chunk442334.Q, {
-          select: e => O.yi({
-            resolution: w.resolution,
+          label: Chunk388032.intl.string(Chunk388032.t.aFudZG),
+          description: Chunk388032.intl.string(Chunk388032.t.nIrkW1),
+          value: P.resolution,
+          options: G
+        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+          onChange: e => O.yi({
+            resolution: P.resolution,
             frameRate: e
           }),
-          title: Chunk388032.intl.string(Chunk388032.t["2wScLy"]),
-          note: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
-          value: w.frameRate,
-          options: Z
+          label: Chunk388032.intl.string(Chunk388032.t["2wScLy"]),
+          description: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
+          value: P.frameRate,
+          options: B
         }), (0, Chunk951288.jsx)(Chunk481060.NIc, {
           label: Chunk388032.intl.string(Chunk388032.t.pf54ER),
           description: Chunk388032.intl.string(Chunk388032.t["QyB/jI"]),
@@ -238,8 +237,8 @@ function L() {
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk556865.keyRecorder,
             children: (0, Chunk951288.jsx)(Chunk825209.Z, {
-              defaultValue: x.shortcut,
-              onChange: F
+              defaultValue: L.shortcut,
+              onChange: Z
             })
           })
         })]

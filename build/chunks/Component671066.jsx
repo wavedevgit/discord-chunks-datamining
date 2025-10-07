@@ -35,16 +35,16 @@ function p(e) {
     icon: O
   } = b;
   return (0, r.jsxs)("div", {
-    className: g.actionContainer,
+    className: m.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: g.actionIconContainer,
+      className: m.actionIconContainer,
       children: (0, r.jsx)(O, {
         size: "md",
         color: "currentColor",
-        className: g.actionIcon
+        className: m.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: g.actionTextContainer,
+      className: m.actionTextContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: v
@@ -55,21 +55,21 @@ function p(e) {
       }), f && (0, r.jsxs)(s.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != _ && m.intl.format(m.t["8Sr/am"], {
+        children: [null != _ && g.intl.format(g.t["8Sr/am"], {
           channelName: _
         }), (0, r.jsx)(s.P3F, {
           onClick: x(true),
-          className: g.editChannel,
+          className: m.editChannel,
           tag: "span",
           role: "link",
-          children: m.intl.string(m.t["3gUsJS"])
+          children: g.intl.string(g.t["3gUsJS"])
         })]
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(l.VL, {
         checked: f,
         onChange: x(false),
-        className: g.__invalid_actionCheckbox
+        className: m.__invalid_actionCheckbox
       })
     })]
   })

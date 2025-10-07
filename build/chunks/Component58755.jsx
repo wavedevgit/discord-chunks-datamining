@@ -235,9 +235,11 @@ function j(e) {
       maxValue: 100,
       onValueChange: e => (0, p.YC)(c, Math.round(e), n),
       onMarkerRender: () => null
-    }), (0, a.jsx)(d.hjN, {
-      title: "Palette Preview",
-      children: (0, a.jsx)("div", {
+    }), (0, a.jsxs)("div", {
+      children: [(0, a.jsx)(d.Text, {
+        variant: "text-md/semibold",
+        children: "Palette Preview"
+      }), (0, a.jsx)("div", {
         className: h.paletteOverrides,
         "data-columnar": g,
         children: Object.entries(E).map((e, n) => {
@@ -266,7 +268,7 @@ function j(e) {
             })]
           }, r)
         })
-      })
+      })]
     })]
   })
 }

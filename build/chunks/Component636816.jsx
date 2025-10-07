@@ -22,21 +22,21 @@ function u(e) {
     guildProfile: p,
     fetchGuildProfile: g,
     fetchStatus: m
-  } = (0, o.u)(t), C = m !== a.a.FETCHED, x = null != p && s.Y.VISIBLE.has(p.visibility);
+  } = (0, o.u)(t), C = m !== a.a.FETCHED, b = null != p && s.Y.VISIBLE.has(p.visibility);
   i.useEffect(() => {
     g()
   }, [t, g]);
-  let b = [];
-  if (n === d.d4z.GUILD_ANNOUNCEMENT && (b.push(h.intl.format(h.t.tI7KNT, {
+  let x = [];
+  if (n === d.d4z.GUILD_ANNOUNCEMENT && (x.push(h.intl.format(h.t.tI7KNT, {
       documentationLink: c.Z.getArticleURL(d.BhN.ANNOUNCEMENT_CHANNELS)
-    })), !C && !x)) {
+    })), !C && !b)) {
     let e = h.intl.string(h.t["2Ab4IS"]);
-    b.push(e)
+    x.push(e)
   }
-  return 0 === b.length ? null : (0, r.jsx)(r.Fragment, {
-    children: b.map((e, t) => (0, r.jsx)(l.R94, {
+  return 0 === x.length ? null : (0, r.jsx)(r.Fragment, {
+    children: x.map((e, t) => (0, r.jsx)(l.Text, {
       className: u,
-      type: l.R94.Types.DESCRIPTION,
+      variant: "text-sm/normal",
       children: e
     }, "description-".concat(t)))
   })

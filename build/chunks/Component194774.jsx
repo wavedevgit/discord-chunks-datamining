@@ -23,7 +23,7 @@ function x(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, x = t.features.has(m.oNc.INVITE_SPLASH), b = n && x, {
+  } = e, x = t.features.has(g.oNc.INVITE_SPLASH), b = n && x, {
     analyticsLocations: j
   } = (0, s.ZP)(), _ = i.useCallback(e => {
     d.Z.updateGuild({
@@ -33,9 +33,9 @@ function x(e) {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: j,
-      analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
-      analyticsObject: m.qAy.UPLOAD_IMAGE,
-      perks: (0, g.o9)()
+      analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: g.qAy.UPLOAD_IMAGE,
+      perks: (0, m.o9)()
     })
   }, [j, t]), C = (0, r.jsx)(o.Z, {
     image: t.splash,

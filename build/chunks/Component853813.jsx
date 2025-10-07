@@ -48,8 +48,8 @@ function I(e) {
   i.useEffect(() => {
     null == P && l(null)
   }, [P, l]);
-  let R = (0, a.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
-    Z = (0, a.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
+  let R = (0, a.e7)([g.Z], () => g.Z.getHighestRole(T), [T]),
+    Z = (0, a.e7)([g.Z], () => !g.Z.isRoleHigher(T, R, P)),
     D = i.useRef(null),
     A = (0, a.e7)([h.Z], () => h.Z.getProps().integrations),
     L = {
@@ -65,7 +65,7 @@ function I(e) {
         role: n,
         editRoleId: r
       } = k.current, i = (0, b.UT)(I), l = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
-      g.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
+      m.default.track(N.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

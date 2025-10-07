@@ -70,7 +70,7 @@ async function _(e, t, n, r) {
   if (!r) return Promise.resolve();
   try {
     let r = await l.tn.patch({
-        url: g.ANM.NEW_MEMBER_ACTION(e, t),
+        url: m.ANM.NEW_MEMBER_ACTION(e, t),
         body: {
           icon: n
         },
@@ -128,7 +128,7 @@ function y(e) {
 async function N(e, t, n) {
   try {
     let r = await l.tn.put({
-        url: g.ANM.RESOURCE_CHANNEL(e, t),
+        url: m.ANM.RESOURCE_CHANNEL(e, t),
         body: {
           icon: n
         },
@@ -155,7 +155,7 @@ async function N(e, t, n) {
 
 function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return n || m.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (a.Z.show({
+  return n || g.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (a.Z.show({
     title: p.intl.string(p.t["6nCZyM"]),
     body: p.intl.string(p.t.JuhUTU)
   }), u.Z.addBreadcrumb({
@@ -204,13 +204,13 @@ function I(e, t) {
   }), n)))
 }
 async function S(e, t) {
-  var n, r, o, u, m, f, h, x, b;
+  var n, r, o, u, g, f, h, x, b;
   s.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
   try {
     let i = await l.tn.put({
-        url: g.ANM.GUILD_HOME_SETTINGS(e),
+        url: m.ANM.GUILD_HOME_SETTINGS(e),
         body: (0, c.HH)(e, t),
         oldFormErrors: true,
         rejectWithError: false
@@ -220,10 +220,10 @@ async function S(e, t) {
       type: "GUILD_HOME_SETTINGS_UPDATE_SUCCESS",
       guildId: e,
       homeSettings: a
-    }), d.default.track(g.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
+    }), d.default.track(m.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
       guild_id: e,
       welcome_message_author_id: (null != (u = null == a || null == (n = a.welcomeMessage) ? true : n.authorIds) ? u : [])[0],
-      welcome_message_length: null != (m = null == a || null == (o = a.welcomeMessage) || null == (r = o.message) ? true : r.length) ? m : 0,
+      welcome_message_length: null != (g = null == a || null == (o = a.welcomeMessage) || null == (r = o.message) ? true : r.length) ? g : 0,
       member_action_channel_ids: (null != (f = null == a ? true : a.newMemberActions) ? f : []).map(e => e.channelId),
       member_action_channel_actions: (null != (h = null == a ? true : a.newMemberActions) ? h : []).map(e => e.actionType),
       resource_channel_ids: (null != (x = null == a ? true : a.resourceChannels) ? x : []).map(e => e.channelId),

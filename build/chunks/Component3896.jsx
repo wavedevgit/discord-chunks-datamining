@@ -2,7 +2,7 @@
 /** chunk id: 3896, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,10 +15,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function g(e) {
+function m(e) {
   let {
     guild: t
-  } = e, l = t.verificationLevel, g = i.useMemo(() => (0, o.I9)(l), [l]);
+  } = e, l = t.verificationLevel, m = i.useMemo(() => (0, o.I9)(l), [l]);
   return (0, r.jsxs)(a.P3F, {
     onClick: () => (0, a.ZDy)(async () => {
       let {
@@ -58,9 +58,9 @@ function g(e) {
         }), i))
       }
     }),
-    className: s()(m.simpleItemWrapper, m.clickable),
+    className: s()(g.simpleItemWrapper, g.clickable),
     children: [(0, r.jsxs)("div", {
-      className: m.itemContent,
+      className: g.itemContent,
       children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -70,11 +70,11 @@ function g(e) {
         color: "header-secondary",
         children: u.intl.string(u.t.mA17eH)
       }), (0, r.jsx)("div", {
-        className: m.__invalid_pillRow,
+        className: g.__invalid_pillRow,
         children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
-          className: m.valuePill,
+          className: g.valuePill,
           children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
             size: "custom",
             color: "currentColor",
@@ -85,14 +85,14 @@ function g(e) {
             color: "currentColor",
             width: 16,
             height: 16
-          }), g]
+          }), m]
         })
       })]
     }), (0, r.jsx)(c.Z, {
       height: 24,
       width: 24,
       direction: c.Z.Directions.RIGHT,
-      className: m.caret
+      className: g.caret
     })]
   })
 }

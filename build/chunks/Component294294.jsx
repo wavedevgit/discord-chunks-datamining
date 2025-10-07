@@ -2,7 +2,7 @@
 /** chunk id: 294294, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,14 +16,14 @@ var Chunk512722 = require("./512722.js"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function m(e) {
   let {
     guildId: t
   } = e, n = (0, s.e7)([u.Z], () => u.Z.getGuild(t));
   return l()(null != n, "Guild not found"), (0, r.jsxs)(o.AL, {
     guildId: t,
     children: [(0, r.jsx)(c.Z, {
-      children: m.intl.string(m.t.WMyX29)
+      children: g.intl.string(g.t.WMyX29)
     }), (0, r.jsx)(a.LZC, {
       size: 32
     }), (0, r.jsx)(d.Z, {

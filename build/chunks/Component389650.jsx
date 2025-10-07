@@ -91,25 +91,17 @@ class H extends Chunk647438.PureComponent {
     let {
       keybind: e
     } = this.props, t = Chunk13140.BB(module.shortcut);
-    return Chunk714338.Z.hasBind(exports) ? (0, Chunk951288.jsx)(Chunk481060.R94, {
-      className: Chunk894462.keybindMessage,
-      type: Chunk481060.geA.DESCRIPTION,
-      style: {
-        color: Chunk692547.Z.unsafe_rawColors.RED_400.css
-      },
+    return Chunk714338.Z.hasBind(exports) ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
+      messageType: Chunk481060.QYI.ERROR,
       children: Chunk388032.intl.string(Chunk388032.t["7lQlw8"])
-    }) : Chunk295907.Sp.has(exports) ? (0, Chunk951288.jsx)(Chunk481060.R94, {
-      className: Chunk894462.keybindMessage,
-      type: Chunk481060.geA.DESCRIPTION,
-      style: {
-        color: Chunk692547.Z.unsafe_rawColors.RED_400.css
-      },
+    }) : Chunk295907.Sp.has(exports) ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
+      messageType: Chunk481060.QYI.ERROR,
       children: Chunk388032.intl.format(Chunk388032.t.MOIaNT, {
         keyboardNavArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.KEYBOARD_NAVIGATION)
       })
-    }) : (0, Chunk951288.jsx)(Chunk481060.R94, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-md/normal",
       className: Chunk894462.keybindMessage,
-      type: Chunk481060.geA.DESCRIPTION,
       children: this.props.keybindDescriptions[module.action]
     })
   }

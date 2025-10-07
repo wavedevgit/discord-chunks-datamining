@@ -2,7 +2,7 @@
 /** chunk id: 970061, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk992981 = require("./992981.js");
 
-function m(e) {
+function g(e) {
   let {
     checked: t,
     children: n
@@ -37,14 +37,14 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     title: t,
     children: n,
     buttonLabel: l,
     buttonCallback: s,
     disabled: o
-  } = e, [g, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, x = (0, c.q_F)({
+  } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, x = (0, c.q_F)({
     width: "".concat(100 * h, "%")
   });
   return (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function g(e) {
         className: u.headerText,
         children: t
       }), (0, r.jsx)(d.Z, {
-        direction: g ? d.Z.Directions.DOWN : d.Z.Directions.UP,
+        direction: m ? d.Z.Directions.DOWN : d.Z.Directions.UP,
         className: u.headerCaret
       })]
     }), (0, r.jsx)("div", {
@@ -66,7 +66,7 @@ function g(e) {
         className: u.progressBarInner,
         style: x
       })
-    }), !g && n.map((e, t) => {
+    }), !m && n.map((e, t) => {
       let {
         title: n,
         items: l
@@ -77,7 +77,7 @@ function g(e) {
         }), (0, r.jsx)(c.vwX, {
           className: u.categoryTitle,
           children: n
-        }), l.map((e, t) => (0, r.jsx)(m, {
+        }), l.map((e, t) => (0, r.jsx)(g, {
           children: e.description,
           checked: e.completed
         }, t))]

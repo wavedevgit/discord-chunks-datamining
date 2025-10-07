@@ -13,9 +13,8 @@ function o(e) {
   let {
     searchQuery: t = ""
   } = e, n = (0, l.ZP)(e => e.recentlyShown).map(e => r.z[e]).filter(e => e.toLowerCase().includes(t.toLowerCase()));
-  return 0 === n.length ? null : (0, a.jsx)(i.hjN, {
-    title: "Recently Shown",
-    tag: "h1",
+  return 0 === n.length ? null : (0, a.jsx)(i.C3N, {
+    label: "Recently Shown",
     children: (0, a.jsx)(s.Z, {
       items: n
     })

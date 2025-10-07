@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 298812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk960359 = require("./960359.js");
-let T = Chunk647438.forwardRef(function(e, t) {
+let P = Chunk647438.forwardRef(function(e, t) {
   let {
     guildId: n
   } = e, [l, r] = s.useState(null), o = (0, a.Wu)([v.Z, N.ZP], () => (0, O.OD)(N.ZP.getChannelOverrides(n), {
@@ -41,7 +41,7 @@ let T = Chunk647438.forwardRef(function(e, t) {
     ignoreNotificationSetting: false
   }).map(e => v.Z.getChannel(e)).filter(b.lm)), d = (0, a.e7)([j.Z], () => j.Z.getCategories(n)), u = o.map((e, t) => (0, i.jsxs)("div", {
     className: w.channelRow,
-    children: [(0, i.jsx)(P, {
+    children: [(0, i.jsx)(A, {
       channel: e,
       categories: d,
       autoFocus: l === e.id
@@ -100,7 +100,7 @@ let T = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function P(e) {
+function A(e) {
   let {
     channel: t,
     categories: n,
@@ -121,7 +121,7 @@ function P(e) {
   }) : null != j && (C = M.intl.formatToPlainString(M.t.L1zJgY, {
     categoryName: (0, m.F6)(j, S.default, f.Z)
   }));
-  let T = E ? L.s8.CUSTOM : N.preset;
+  let P = E ? L.s8.CUSTOM : N.preset;
   return (0, i.jsx)("div", {
     ref: b,
     children: (0, i.jsxs)("div", {
@@ -152,7 +152,7 @@ function P(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: T === L.s8.ALL_MESSAGES,
+            value: P === L.s8.ALL_MESSAGES,
             onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.ALL_MESSAGES), O(false))
           })
         })
@@ -163,7 +163,7 @@ function P(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: T === L.s8.MENTIONS,
+            value: P === L.s8.MENTIONS,
             onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.MENTIONS), O(false))
           })
         })
@@ -174,7 +174,7 @@ function P(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: T === L.s8.NOTHING,
+            value: P === L.s8.NOTHING,
             onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.NOTHING), O(false))
           })
         })
@@ -194,7 +194,7 @@ function P(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: T === L.s8.CUSTOM,
+            value: P === L.s8.CUSTOM,
             onChange: () => O(true)
           })
         })

@@ -2,7 +2,7 @@
 /** chunk id: 55889, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,12 +43,12 @@ function u(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = Chunk647438.memo(function(e) {
+let g = Chunk647438.memo(function(e) {
   let {
     rule: t,
     onlyRoles: n = false,
     onChangeRule: i
-  } = e, m = (0, r.jsx)(s.Z, {
+  } = e, g = (0, r.jsx)(s.Z, {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
@@ -59,7 +59,7 @@ let m = Chunk647438.memo(function(e) {
     disableEveryoneRole: true,
     includeRoleRestrictedPrivateChannels: true
   });
-  return n && (m = (0, r.jsx)(a.Z, {
+  return n && (g = (0, r.jsx)(a.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
     onChange: e => i(u(d({}, t), {
@@ -68,7 +68,7 @@ let m = Chunk647438.memo(function(e) {
     placeholder: o.intl.string(o.t.aFO1Iy),
     disableEveryoneRole: true
   })), (0, r.jsxs)("div", {
-    children: [m, (0, r.jsx)(l.Text, {
+    children: [g, (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
       className: c.exemptionHint,

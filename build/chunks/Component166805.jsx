@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   P: () => C
-}), require("./388685.js"), require("./953529.js");
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk580685 = require("./580685.js"),
@@ -28,9 +28,9 @@ function v(e) {
     guildId: t
   } = e, {
     guildProfile: c,
-    fetchGuildProfile: g,
+    fetchGuildProfile: m,
     fetchStatus: v
-  } = (0, m.u)(t), C = v !== u.a.FETCHED, {
+  } = (0, g.u)(t), C = v !== u.a.FETCHED, {
     fetchedEmbed: O,
     embedEnabled: y,
     embedChannelId: N
@@ -49,12 +49,12 @@ function v(e) {
   i.useEffect(() => {
     O || (0, p.R)(t)
   }, [O, t]), i.useEffect(() => {
-    g()
-  }, [t, g]);
+    m()
+  }, [t, m]);
   let R = i.useCallback(async e => {
     T(true), await (0, h.c)(t, e, N), T(false)
   }, [N, t]);
-  return O ? (0, r.jsxs)("div", {
+  return O ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.rsf, {
       label: j.intl.string(j.t.NR6hub),
       checked: y,
@@ -66,53 +66,45 @@ function v(e) {
       className: _.subtext,
       children: j.intl.string(j.t.zCGuJy)
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
-        className: _.divider
-      }), (0, r.jsx)(o.vwX, {
-        children: j.intl.string(j.t.LUo0Q0)
-      }), (0, r.jsx)(b.m, {
+      children: [(0, r.jsx)(b.m, {
+        label: j.intl.string(j.t.LUo0Q0),
+        description: j.intl.string(j.t.LxVR9P),
         guildId: t,
         widgetEnabled: y,
         widgetChannelId: N,
         enableLocalUpdate: true
-      }), (0, r.jsx)(s.xvT, {
-        variant: "text-sm/medium",
-        color: "text-secondary",
-        className: _.subtext,
-        children: j.intl.string(j.t.LxVR9P)
       }), (0, r.jsxs)("div", {
         className: _.twoColumns,
-        children: [(0, r.jsxs)("div", {
+        children: [(0, r.jsx)("div", {
           className: _.column,
-          children: [(0, r.jsx)(o.vwX, {
-            children: j.intl.string(j.t.TRyLUl)
-          }), (0, r.jsx)(d.Z, {
-            value: t
-          })]
-        }), (0, r.jsxs)("div", {
+          children: (0, r.jsx)(s.NIc, {
+            label: j.intl.string(j.t.TRyLUl),
+            children: (0, r.jsx)(d.Z, {
+              value: t
+            })
+          })
+        }), (0, r.jsx)("div", {
           className: _.column,
-          children: [(0, r.jsx)(o.vwX, {
-            children: j.intl.string(j.t.VECJcH)
-          }), (0, r.jsx)(d.Z, {
-            value: E
-          })]
+          children: (0, r.jsx)(s.NIc, {
+            label: j.intl.string(j.t.VECJcH),
+            children: (0, r.jsx)(d.Z, {
+              value: E
+            })
+          })
         })]
       }), (0, r.jsx)("div", {
         className: _.divider
       }), (0, r.jsxs)("div", {
         className: _.twoColumns,
-        children: [(0, r.jsxs)("div", {
+        children: [(0, r.jsx)("div", {
           className: _.column,
-          children: [(0, r.jsx)(o.vwX, {
-            children: j.intl.string(j.t.XVGbn5)
-          }), (0, r.jsx)(d.Z, {
-            value: I
-          }), (0, r.jsx)(s.xvT, {
-            variant: "text-sm/medium",
-            color: "text-secondary",
-            className: _.subtext,
-            children: j.intl.string(j.t["+baN19"])
-          })]
+          children: (0, r.jsx)(s.NIc, {
+            label: j.intl.string(j.t.XVGbn5),
+            description: j.intl.string(j.t["+baN19"]),
+            children: (0, r.jsx)(d.Z, {
+              value: I
+            })
+          })
         }), (0, r.jsx)("img", {
           className: _.column,
           "data-accessibility": "desaturate",
@@ -127,16 +119,12 @@ function v(e) {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([g.Z], () => g.Z.enabled);
-  return (0, r.jsxs)(o.hjN, {
-    title: j.intl.string(j.t.qlhNb2),
-    children: [(0, r.jsx)(s.xvT, {
-      variant: "text-sm/medium",
-      color: "text-secondary",
-      className: _.description,
-      children: j.intl.string(j.t["dNn/1t"])
-    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.enabled);
+  return (0, r.jsx)(o.C3N, {
+    label: j.intl.string(j.t.qlhNb2),
+    description: j.intl.string(j.t["dNn/1t"]),
+    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
       guildId: t
-    })]
+    })
   })
 }

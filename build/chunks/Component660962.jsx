@@ -60,7 +60,7 @@ function Y(e) {
   } = e, [l, s] = i.useState(t.name);
   return i.useEffect(() => {
     s(t.name)
-  }, [t.name]), (0, r.jsx)(g.oil, {
+  }, [t.name]), (0, r.jsx)(m.oil, {
     label: U.intl.string(U.t.dLbkBg),
     required: true,
     type: "text",
@@ -90,8 +90,8 @@ function q(e) {
       name: t.name
     }
   };
-  return (0, r.jsxs)(g.hjN, {
-    children: [(0, r.jsxs)(g.vwX, {
+  return (0, r.jsxs)(m.hjN, {
+    children: [(0, r.jsxs)(m.vwX, {
       className: F.roleStyleFormTitle,
       children: [(0, r.jsx)("div", {
         children: U.intl.string(U.t["9wVJRE"])
@@ -101,7 +101,7 @@ function q(e) {
           let {
             visibleContent: t
           } = e;
-          return t === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? (0, r.jsx)(g.IGR, {
+          return t === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? (0, r.jsx)(m.IGR, {
             text: U.intl.string(U.t.y2b7CA),
             className: F.newBadge
           }) : null
@@ -123,7 +123,7 @@ function q(e) {
           onClick: () => {
             (0, S.Jf)(t.id, u)
           },
-          children: [(0, r.jsx)(g.Rny, {
+          children: [(0, r.jsx)(m.Rny, {
             children: (0, r.jsx)("div", {
               className: F.roleStyleMessageContainer,
               children: (0, r.jsx)(v.Z, {
@@ -137,7 +137,7 @@ function q(e) {
                 },
                 message: o,
                 preview: true,
-                roleIcon: null != h ? h : (0, m.ap)(d) ? b.light : b.dark,
+                roleIcon: null != h ? h : (0, g.ap)(d) ? b.light : b.dark,
                 isGroupStart: true,
                 disableInteraction: true,
                 previewGuildId: n
@@ -153,23 +153,23 @@ function q(e) {
       className: F.roleStyleUpsell,
       children: [(0, r.jsxs)("div", {
         className: F.roleStyleUpsellMesssages,
-        children: [(0, r.jsx)(g.Text, {
+        children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/semibold",
           color: "button-outline-primary-text",
           children: U.intl.format(B.default.VpEDJS, {
             magical: (0, r.jsx)(X, {})
           })
-        }), (0, r.jsx)(g.Text, {
+        }), (0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "button-outline-primary-text",
           children: U.intl.string(B.default.FJZeZG)
         })]
-      }), (0, r.jsx)(g.zxk, {
+      }), (0, r.jsx)(m.zxk, {
         onClick: function() {
           (0, y.Z)(n, x.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
         },
         variant: "expressive",
-        icon: g.$Eu,
+        icon: m.$Eu,
         text: U.intl.string(U.t["+7XY39"])
       })]
     })]
@@ -221,11 +221,11 @@ function J(e) {
     currentStyle: s,
     hasEnhancedRoleColors: a
   } = e;
-  return (0, r.jsxs)(g.xJW, {
+  return (0, r.jsxs)(m.xJW, {
     className: F.colorPicker,
     title: U.intl.string(U.t["1F6FzM"]),
     required: true,
-    children: [(0, r.jsx)(g.R94, {
+    children: [(0, r.jsx)(m.R94, {
       className: F.colorDescription,
       children: U.intl.string(U.t["9UCxlZ"])
     }), (0, r.jsx)(V, {
@@ -271,13 +271,13 @@ function Q(e) {
     src: W,
     name: t.name
   }, u = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
-  return (0, r.jsx)(g.Rny, {
+  return (0, r.jsx)(m.Rny, {
     children: (0, r.jsx)("div", {
       className: s()(F.previewContainer, {
         [F.disableInteraction]: l
       }),
       "aria-hidden": true,
-      children: p.map(e => (0, r.jsx)(g.f6W, {
+      children: p.map(e => (0, r.jsx)(m.f6W, {
         theme: e,
         disableAdaptiveTheme: true,
         children: t => (0, r.jsxs)("div", {
@@ -287,11 +287,11 @@ function Q(e) {
             children: (0, r.jsx)(v.Z, {
               author: o,
               message: a,
-              roleIcon: null != u ? u : (0, m.ap)(e) ? d : c,
+              roleIcon: null != u ? u : (0, g.ap)(e) ? d : c,
               previewGuildId: n,
               isGroupStart: true
             })
-          }), e === G.BRd.LIGHT && i !== T.g.SOLID && (0, r.jsx)(g.Text, {
+          }), e === G.BRd.LIGHT && i !== T.g.SOLID && (0, r.jsx)(m.Text, {
             variant: "text-xs/medium",
             color: "text-secondary",
             className: F.lightThemeNotice,
@@ -309,14 +309,14 @@ function $(e) {
     disabled: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(g.rsf, {
+    children: [(0, r.jsx)(m.rsf, {
       label: U.intl.string(U.t.vceJPj),
       checked: t.hoist,
       onChange: e => (0, S.we)(t.id, e, t.mentionable),
       disabled: n
-    }), (0, r.jsx)(g.izJ, {
+    }), (0, r.jsx)(m.izJ, {
       className: F.divider
-    }), (0, r.jsx)(g.rsf, {
+    }), (0, r.jsx)(m.rsf, {
       label: U.intl.formatToPlainString(U.t.DTXoJS, {}),
       description: U.intl.string(U.t.kRg5W1),
       checked: t.mentionable,
@@ -332,14 +332,14 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, a = (0, O.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, m = (0, E.fI)(n), p = i || m, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
+  } = e, a = (0, O.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, g = (0, E.fI)(n), p = i || g, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: x
   } = (0, w.Z)(0), {
     scrolledToTop: b,
     handleScroll: j
   } = (0, Z.V)();
-  return (0, r.jsx)(g.yWw, {
+  return (0, r.jsx)(m.yWw, {
     className: F.scroller,
     style: {
       scrollPaddingTop: h
@@ -366,7 +366,7 @@ function ee(e) {
         children: (0, r.jsx)(A.Z, {
           role: n
         })
-      }), (0, r.jsx)(g.izJ, {
+      }), (0, r.jsx)(m.izJ, {
         className: F.divider
       }), (a || c) && null != u && (0, r.jsx)(q, {
         role: n,
@@ -381,7 +381,7 @@ function ee(e) {
         hasEnhancedRoleColors: a
       }), u === T.g.HOLOGRAPHIC && (0, r.jsx)(N.Z, {
         className: F.holographicInfoBox,
-        children: (0, r.jsx)(g.Text, {
+        children: (0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           children: U.intl.string(B.default.tBhCys)
         })
@@ -394,13 +394,13 @@ function ee(e) {
         guildId: t.id,
         selectedStyle: u,
         disableInteraction: !a
-      }), (0, r.jsx)(g.izJ, {
+      }), (0, r.jsx)(m.izJ, {
         className: F.divider
       }), (0, r.jsx)($, {
         role: n,
         disabled: p
       }), f ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(g.izJ, {
+        children: [(0, r.jsx)(m.izJ, {
           className: F.divider
         }), (0, r.jsx)(D.L, {
           guildId: t.id,

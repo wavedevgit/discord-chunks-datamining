@@ -13,22 +13,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk910557 = require("./910557.js");
 
 function d(e) {
+  var t;
   let {
-    category: t,
-    onClick: n,
-    active: l
+    category: n,
+    onClick: l,
+    active: o
   } = e, {
-    useTitle: o,
-    key: a
-  } = t, c = null == o ? true : o();
-  return null == c ? null : (0, r.jsx)(s.P3F, {
-    onClick: n,
+    useTitle: a,
+    useNavigationTitle: c,
+    key: d
+  } = n, f = null == a ? true : a(), m = null != (t = null == c ? true : c()) ? t : f;
+  return null == m ? null : (0, r.jsx)(s.P3F, {
+    onClick: l,
     tag: "li",
     className: i()({
-      [u.active]: l
+      [u.active]: o
     }),
-    children: c
-  }, a)
+    children: m
+  }, d)
 }
 
 function f(e) {

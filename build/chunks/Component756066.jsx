@@ -22,9 +22,9 @@ function a(e) {
   if (null != a) return (0, r.jsx)(i.Z, {
     children: a.getAnyErrorMessage()
   });
-  let m = null;
-  return u ? m = s.intl.string(s.t.OrkTBg) : null != c ? m = c : null != d && (m = d, t = s.intl.string(s.t["YKw/NT"])), null != m ? (0, r.jsx)(l.Z, {
-    notice: m,
+  let g = null;
+  return u ? g = s.intl.string(s.t.OrkTBg) : null != c ? g = c : null != d && (g = d, t = s.intl.string(s.t["YKw/NT"])), null != g ? (0, r.jsx)(l.Z, {
+    notice: g,
     ctaLabel: t,
     ctaLoading: n,
     onClick: o

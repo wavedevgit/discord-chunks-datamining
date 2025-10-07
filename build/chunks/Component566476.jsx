@@ -20,8 +20,8 @@ function u(e) {
     avatarURL: n,
     name: i,
     bot: u,
-    verifiedBot: m,
-    userTag: g
+    verifiedBot: g,
+    userTag: m
   } = e, p = (0, s.e7)([c.Z], () => c.Z.hidePersonalInformation);
   return (0, r.jsxs)("div", {
     className: l()(d.container, t),
@@ -40,13 +40,13 @@ function u(e) {
         children: i
       }), u ? (0, r.jsx)(o.Z, {
         className: d.botTag,
-        verified: m
+        verified: g
       }) : null, p ? null : (0, r.jsx)(a.Text, {
         tag: "span",
         color: "interactive-normal",
         className: d.userTag,
         variant: "text-sm/normal",
-        children: g
+        children: m
       })]
     })]
   })

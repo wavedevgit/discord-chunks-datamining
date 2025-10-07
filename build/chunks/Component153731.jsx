@@ -49,15 +49,15 @@ function I(e, t, n, a, i) {
         context: e
       })
     }), null != d && o.push({
-      section: (0, v.J$)(e, Z._s_.TRANSPORT, n),
+      section: (0, v.J$)(e, R._s_.TRANSPORT, n),
       label: F.intl.string(F.t.wU9INz),
-      element: R.Z,
+      element: x.Z,
       elementProps: {
         context: e,
         index: n
       }
     }), null == h || l().isEmpty(h) || o.push({
-      section: (0, v.J$)(e, Z._s_.OUTBOUND, n),
+      section: (0, v.J$)(e, R._s_.OUTBOUND, n),
       label: F.intl.string(F.t["3u0gIC"]),
       element: C.Z,
       elementProps: {
@@ -65,7 +65,7 @@ function I(e, t, n, a, i) {
         index: n
       }
     }), null != f && o.push({
-      section: (0, v.J$)(e, Z._s_.CAMERA, n),
+      section: (0, v.J$)(e, R._s_.CAMERA, n),
       label: F.intl.string(F.t["2AGBWF"]),
       element: D.Z,
       elementProps: {
@@ -149,14 +149,14 @@ function k() {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(f), p.push({
-      section: Z._s_.SCREENSHARE,
+      section: R._s_.SCREENSHARE,
       label: F.intl.string(F.t["gWbr/f"]),
-      element: x.Z,
+      element: Z.Z,
       elementProps: {
         screenshare: i
       }
     })), null != l && (h.push(f), h.push({
-      section: Z._s_.CLIPS,
+      section: R._s_.CLIPS,
       label: F.intl.string(F.t.MKrFKC),
       element: P.Z,
       elementProps: {
@@ -176,7 +176,7 @@ function k() {
       element: () => (0, r.jsx)(s.X6q, {
         className: N.channelName,
         variant: "heading-md/normal",
-        children: c === Z.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
+        children: c === R.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
       })
     }, ...d, ...m, ...p, ...h]
   }({

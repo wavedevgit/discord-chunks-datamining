@@ -2,7 +2,7 @@
 /** chunk id: 789574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g,
+  Z: () => m,
   j: () => p
 });
 var Chunk951288 = require("./951288.js");
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk821864 = require("./821864.js"),
   Chunk905753 = require("./905753.js");
 
-function g(e) {
+function m(e) {
   let {
     refToScroller: t
   } = e, n = (0, i.e7)([c.Z], () => c.Z.getGuild()), {
@@ -25,8 +25,8 @@ function g(e) {
     sectionId: s,
     integrations: o,
     editedIntegration: u,
-    webhooks: m,
-    editedWebhook: g,
+    webhooks: g,
+    editedWebhook: m,
     isFetching: p,
     errors: f
   } = (0, i.cj)([d.default], () => ({
@@ -44,9 +44,9 @@ function g(e) {
     section: l,
     sectionId: s,
     integrations: o,
-    webhooks: m,
+    webhooks: g,
     editedIntegration: u,
-    editedWebhook: g,
+    editedWebhook: m,
     isFetchingWebhooks: p,
     hasChanges: d.default.hasChanges,
     errors: f,

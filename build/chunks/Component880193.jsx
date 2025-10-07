@@ -2,7 +2,7 @@
 /** chunk id: 880193, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,22 +20,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk783454 = require("./783454.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605041 = require("./605041.js"),
   Chunk810792 = require("./810792.js");
 
-function v(e) {
+function _(e) {
   let {
     priceTiers: t
   } = e, {
     editStateId: n
-  } = (0, g.N)(), v = (0, l.e7)([u.Z], () => {
+  } = (0, m.N)(), _ = (0, l.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getSubscriptionListing(n)) ? true : e.image_asset
-  }), [C, O] = p._T(n), [y, N] = p.mR(n), [E, I] = p.PK(n), [S, T] = p.d9(n, 1024), {
-    imageCTA: P,
-    imageAriaLabel: w,
-    setFilename: R
-  } = (0, f.Z)(v), Z = i.useMemo(() => {
+  }), [v, C] = p._T(n), [O, y] = p.mR(n), [N, E] = p.PK(n), [I, S] = p.d9(n, 1024), {
+    imageCTA: T,
+    imageAriaLabel: P,
+    setFilename: w
+  } = (0, f.Z)(_), R = i.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t.map(e => ({
       value: e,
@@ -43,96 +42,77 @@ function v(e) {
     }))) ? e : []
   }, [t]);
 
-  function D(e, t) {
-    null != t && R(t.name), T(e)
+  function Z(e, t) {
+    null != t && w(t.name), S(e)
   }
-  let A = (0, m.mY)(),
+  let D = (0, g.mY)(),
+    A = (0, a.Dt)(),
     L = (0, a.Dt)(),
-    k = (0, a.Dt)(),
-    G = (0, a.Dt)();
-  return (0, r.jsxs)(h.Z, {
+    k = (0, a.Dt)();
+  return (0, r.jsx)(h.Z, {
     title: b.intl.string(b.t.iHU439),
     intiallyExpanded: true,
-    children: [(0, r.jsxs)("div", {
-      className: _.formSplit,
-      children: [(0, r.jsx)("div", {
-        className: _.formSplitHalf,
-        children: (0, r.jsx)(s.hjN, {
-          title: b.intl.string(b.t.grbGJy),
-          titleId: L,
-          disabled: A,
+    children: (0, r.jsxs)(s.Kqy, {
+      gap: 24,
+      children: [(0, r.jsxs)("div", {
+        className: j.formSplit,
+        children: [(0, r.jsx)("div", {
+          className: j.formSplitHalf,
           children: (0, r.jsx)(s.oil, {
+            label: b.intl.string(b.t.grbGJy),
             placeholder: b.intl.string(b.t["So2/xM"]),
-            value: C,
-            onChange: O,
-            "aria-labelledby": L,
-            disabled: A
+            value: v,
+            onChange: C,
+            "aria-labelledby": A,
+            disabled: D
           })
-        })
-      }), (0, r.jsx)("div", {
-        className: _.formSplitHalf,
-        children: (0, r.jsx)(s.hjN, {
-          title: b.intl.string(b.t.Ibl4BQ),
-          titleId: k,
-          disabled: A,
+        }), (0, r.jsx)("div", {
+          className: j.formSplitHalf,
           children: (0, r.jsx)(s.q4e, {
-            options: Z,
-            isDisabled: A || null == t,
+            label: b.intl.string(b.t.Ibl4BQ),
+            options: R,
+            isDisabled: D || null == t,
             placeholder: b.intl.string(b.t["88XZDg"]),
-            value: y,
-            onChange: N,
+            value: O,
+            onChange: y,
             maxVisibleItems: 5,
-            "aria-labelledby": k
+            "aria-labelledby": L
           })
-        })
-      })]
-    }), (0, r.jsx)(s.LZC, {
-      size: 24
-    }), (0, r.jsx)(s.hjN, {
-      title: b.intl.string(b.t["1w2WcX"]),
-      titleId: G,
-      disabled: A,
-      children: (0, r.jsx)(s.Kx8, {
-        placeholder: b.intl.string(b.t.p7Jr4O),
-        value: E,
-        autosize: true,
-        onChange: I,
-        "aria-labelledby": G,
-        disabled: A
-      })
-    }), (0, r.jsx)(s.LZC, {
-      size: 24
-    }), (0, r.jsxs)("div", {
-      className: _.iconSection,
-      children: [(0, r.jsxs)(s.hjN, {
-        title: b.intl.string(b.t.RUBM2t),
-        className: _.iconSectionDescription,
-        disabled: A,
-        children: [(0, r.jsx)(s.R94, {
-          type: s.R94.Types.DESCRIPTION,
-          className: j.formDescription,
-          disabled: A,
-          children: b.intl.string(b.t["0iUofH"])
-        }), (0, r.jsx)(o.Z, {
-          onChange: D,
-          "aria-label": w,
-          disabled: A,
-          text: P,
-          size: "md",
-          variant: "secondary"
         })]
-      }), (0, r.jsx)(c.Z, {
-        image: S,
-        hint: P,
-        showIcon: true,
-        showRemoveButton: false,
-        hideSize: true,
-        className: _.iconUploader,
-        imageClassName: _.tierSymbolUploaderInner,
-        onChange: D,
-        "aria-label": w,
-        disabled: A
+      }), (0, r.jsx)(s.Kx8, {
+        label: b.intl.string(b.t["1w2WcX"]),
+        placeholder: b.intl.string(b.t.p7Jr4O),
+        value: N,
+        autosize: true,
+        onChange: E,
+        "aria-labelledby": k,
+        disabled: D
+      }), (0, r.jsxs)("div", {
+        className: j.iconSection,
+        children: [(0, r.jsx)(s.NIc, {
+          label: b.intl.string(b.t.RUBM2t),
+          description: b.intl.string(b.t["0iUofH"]),
+          children: (0, r.jsx)(o.Z, {
+            onChange: Z,
+            "aria-label": P,
+            disabled: D,
+            text: T,
+            size: "md",
+            variant: "secondary"
+          })
+        }), (0, r.jsx)(c.Z, {
+          image: I,
+          hint: T,
+          showIcon: true,
+          showRemoveButton: false,
+          hideSize: true,
+          className: j.iconUploader,
+          imageClassName: j.tierSymbolUploaderInner,
+          onChange: Z,
+          "aria-label": P,
+          disabled: D
+        })]
       })]
-    })]
+    })
   })
 }

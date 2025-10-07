@@ -56,7 +56,7 @@ function u(e) {
         bot: false
       });
     r.author = u;
-    let m = i.$k(u);
-    return null != m && (r.author = m, r.author.getAvatarURL = () => d.Z), r
+    let g = i.$k(u);
+    return null != g && (r.author = g, r.author.getAvatarURL = () => d.Z), r
   }, [e])
 }

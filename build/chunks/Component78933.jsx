@@ -107,7 +107,7 @@ function ec(e) {
   }), () => K.Z.setState({
     isOpen: false
   })), []);
-  let ej = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
+  let ej = (0, s.e7)([z.Z], () => z.Z.getStatus(t.id)),
     e_ = G.Cr.useSetting(),
     ey = (0, $.F)(e_),
     {
@@ -117,16 +117,16 @@ function ec(e) {
     }, {
       autoTrackExposure: false
     }),
-    eE = (0, s.e7)([z.Z], () => z.Z.hidePersonalInformation),
+    eE = (0, s.e7)([B.Z], () => B.Z.hidePersonalInformation),
     eS = (0, g.p)(),
-    eN = G.Sb.useSetting(),
-    eT = (0, $.I)(ej),
-    eO = (0, Y.g)(n),
+    eT = G.Sb.useSetting(),
+    eO = (0, $.I)(ej),
+    eN = (0, Y.g)(n),
     eP = (0, j.Z)({
       analyticsLocations: ef
     }),
-    eI = (0, W.I5)(t),
-    ek = (0, h.p)({
+    ek = (0, H.I5)(t),
+    eI = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
     ew = (0, E.b)({
@@ -143,26 +143,26 @@ function ec(e) {
     }, 500)
   }, []);
   let eU = e => {
-      null == n || n(), (0, T.openUserProfileModal)(eo({
+      null == n || n(), (0, O.openUserProfileModal)(eo({
         customStatusPrompt: eD,
         sourceAnalyticsLocations: ef
       }, eb, e))
     },
-    eF = (0, N.Z)({
+    eF = (0, T.Z)({
       location: "UserProfileAccountPopout"
     }),
     eG = (null == ex ? true : ex.widgets) != null && ex.widgets.length > 0,
-    eB = eG ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [ez, eV] = (0, f.US)(eB),
-    eH = ez === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
-    eW = r.useCallback(() => {
+    ez = eG ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    [eB, eV] = (0, f.US)(ez),
+    eW = eB === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    eH = r.useCallback(() => {
       eV(en.L.USER_DISMISS), n()
     }, [eV, n]),
     eK = r.useCallback(() => {
-      ep && null != em || (eP(), eW())
-    }, [eP, eW, ep, em]),
+      ep && null != em || (eP(), eH())
+    }, [eP, eH, ep, em]),
     eq = ep && null != em,
-    eY = (0, q.K)(em, ef, eH, n, eW),
+    eY = (0, q.K)(em, ef, eW, n, eH),
     eX = (0, C.k)({
       location: "UserProfileAccountPopout"
     });
@@ -185,11 +185,11 @@ function ec(e) {
           themeType: er.l.POPOUT,
           children: [(0, a.jsxs)("div", {
             className: es.header,
-            children: [(0, a.jsx)(I.Z, {
+            children: [(0, a.jsx)(k.Z, {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT
-            }), (0, a.jsx)(O.Z, {
+            }), (0, a.jsx)(N.Z, {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT,
@@ -199,7 +199,7 @@ function ec(e) {
               user: t,
               themeType: er.l.POPOUT,
               onCloseProfile: n,
-              prompt: ek ? eD : null
+              prompt: eI ? eD : null
             })]
           }), (0, a.jsxs)(c.Ttm, {
             className: el.body,
@@ -209,7 +209,7 @@ function ec(e) {
             children: [(0, a.jsx)(D.Z, {
               user: t,
               className: el.username,
-              nickname: H.ZP.getName(em, null, t),
+              nickname: W.ZP.getName(em, null, t),
               onOpenProfile: eh ? true : eU,
               pronouns: null == ex ? true : ex.pronouns,
               tags: (0, a.jsx)(P.Z, {
@@ -239,8 +239,8 @@ function ec(e) {
                   section: ea.oh.WIDGETS
                 })
               }
-            }), (0, a.jsx)(k.Z, {
-              isPremiumUser: eI,
+            }), (0, a.jsx)(I.Z, {
+              isPremiumUser: ek,
               onInteraction: n
             }), ew ? (0, a.jsx)(A.Z, {
               user: t,
@@ -272,7 +272,7 @@ function ec(e) {
                         children: eY
                       })
                     } : true,
-                    trailing: eH ? (0, a.jsx)(c.IGR, {
+                    trailing: eW ? (0, a.jsx)(c.IGR, {
                       text: ei.intl.string(ei.t.y2b7CA)
                     }) : true,
                     ref: eA
@@ -296,7 +296,7 @@ function ec(e) {
                         className: el.statusPickerModalMenu,
                         "aria-label": ei.intl.string(ei.t.E13trK),
                         onClose: t,
-                        children: eT
+                        children: eO
                       })
                     },
                     onClick: i.tq ? () => {
@@ -332,7 +332,7 @@ function ec(e) {
                             hideScroller: true,
                             onClose: r,
                             onSelect: true,
-                            children: eT
+                            children: eO
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -366,10 +366,10 @@ function ec(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": ei.intl.string(ei.t.wFhVqK),
                         onClose: t,
-                        children: eO
+                        children: eN
                       })
                     }
-                  }), !__OVERLAY__ && V.wS && eN && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && V.wS && eT && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: ei.intl.string(ei.t["/AXYnJ"]),

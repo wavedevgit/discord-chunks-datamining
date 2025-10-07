@@ -2,7 +2,7 @@
 /** chunk id: 277369, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,13 +15,13 @@ var Chunk399606 = require("./399606.js"),
   Chunk723047 = require("./723047.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
-    application: m
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, i.e7)([c.default], () => c.default.getCurrentUser()), f = (0, d.mY)();
-  if (null == g || !(0, a.eM)(g, p)) return null;
-  let h = m.team;
+    application: g
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, i.e7)([c.default], () => c.default.getCurrentUser()), f = (0, d.mY)();
+  if (null == m || !(0, a.eM)(m, p)) return null;
+  let h = g.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
@@ -59,7 +59,7 @@ function m(e) {
               }
               return e
             }({}, t), i = i = {
-              application: m
+              application: g
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

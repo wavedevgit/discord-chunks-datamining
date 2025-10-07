@@ -80,7 +80,7 @@ function x(e) {
         numRules: t
       }
     }, [d, x]),
-    _ = (0, g.Q)(t),
+    _ = (0, m.Q)(t),
     v = _[u.u.CAPTCHA_AND_RAID_PROTECTION],
     C = _[u.u.DM_AND_SPAM_PROTECTION],
     O = _[u.u.PERMISSIONS],
@@ -91,7 +91,7 @@ function x(e) {
       color: "header-primary",
       className: f.header,
       children: p.intl.string(p.t["0A+VSE"])
-    }), (0, r.jsx)(m.z, {
+    }), (0, r.jsx)(g.z, {
       guild: t
     }), (0, r.jsxs)("div", {
       className: f.safetyChecklist,

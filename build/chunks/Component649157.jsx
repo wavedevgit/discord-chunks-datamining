@@ -101,13 +101,11 @@ function O() {
     }, []);
   return (0, Chunk951288.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.IHMsPj),
-    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-        label: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
-        onChange: O,
-        options: b,
-        value: exports
-      })
+    children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
+      label: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
+      onChange: O,
+      options: b,
+      value: exports
     })
   })
 }

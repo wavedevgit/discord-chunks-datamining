@@ -55,20 +55,16 @@ function m() {
         n = null != t ? c.ZP.getName(t) : "Unknown";
       return (0, a.jsx)("div", {
         className: d.detailsRow,
-        children: (0, a.jsx)(i.R94, {
+        children: (0, a.jsx)(i.Text, {
+          variant: "text-md/normal",
           children: "".concat(n, " (").concat(e, ")")
         })
       }, e)
     }), [module]);
-  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    title: "Diff User State",
-    tag: Chunk481060.RB0.H3,
-    className: Chunk530146.panelGroup,
-    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.geA.DESCRIPTION,
-      className: Chunk530146.subtitle,
-      children: "Click to generate a diff between the client user state and the user worker state."
-    }), (0, Chunk951288.jsxs)("div", {
+  return (0, Chunk951288.jsx)(Chunk481060.C3N, {
+    label: "Diff User State",
+    description: "Click to generate a diff between the client user state and the user worker state.",
+    children: (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
         onClick: p,
         text: "Diff User State",
@@ -82,18 +78,21 @@ function m() {
           className: Chunk530146.statusText,
           children: Chunk972959
         }), require && module.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-md/normal",
             children: "Last run at: ".concat(m)
-          }), (0, Chunk951288.jsx)(Chunk481060.R94, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-md/normal",
             children: "User IDs missing from Worker:"
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk530146.nestedDetailsList,
             children: h
           })]
-        }), require && 0 === module.length && (0, Chunk951288.jsx)(Chunk481060.R94, {
+        }), require && 0 === module.length && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-md/normal",
           children: "No users missing from Worker"
         })]
       })]
-    })]
+    })
   })
 }

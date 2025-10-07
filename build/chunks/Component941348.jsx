@@ -23,8 +23,8 @@ let p = function(e) {
     onCtxMenuClosed: x,
     onCtxMenuSelection: _,
     quest: b,
-    useReducedMotion: j,
-    collapsedHeight: v,
+    useReducedMotion: v,
+    collapsedHeight: j,
     onGameSheetOpened: C,
     onGameSheetClosed: y
   } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
@@ -39,7 +39,7 @@ let p = function(e) {
       isExpanded: g,
       isExpansionAnimationComplete: f,
       quest: b,
-      useReducedMotion: j,
+      useReducedMotion: v,
       taskDetails: w,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
@@ -48,7 +48,7 @@ let p = function(e) {
     }, E ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: m,
       className: u.content,
-      collapsedHeight: v,
+      collapsedHeight: j,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
       onCtxMenuSelect: _,
@@ -58,7 +58,7 @@ let p = function(e) {
       isExpanded: g,
       isExpansionAnimationComplete: f,
       quest: b,
-      useReducedMotion: j,
+      useReducedMotion: v,
       ref: p,
       taskDetails: w,
       children: (0, r.jsxs)(r.Fragment, {
@@ -68,7 +68,7 @@ let p = function(e) {
         }), !T && (0, r.jsx)(a.Z, {
           quest: b,
           expansionSpring: m,
-          useReducedMotion: j,
+          useReducedMotion: v,
           isExpanded: g,
           isExpansionAnimationComplete: f,
           onCtxMenuOpen: h,

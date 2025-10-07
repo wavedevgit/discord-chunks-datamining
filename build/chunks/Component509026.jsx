@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk796814 = require("./796814.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,12 +53,12 @@ function f(e) {
     guild: t
   } = e, f = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), x = (0, d.Z)(t) - h.length, b = (0, c.mY)();
   return (0, r.jsxs)(l.hjN, {
-    title: m.intl.string(m.t.LDT0Q0),
+    title: g.intl.string(g.t.LDT0Q0),
     disabled: b,
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
       disabled: b,
-      children: m.intl.format(m.t.H9Jxp6, {
+      children: g.intl.format(g.t.H9Jxp6, {
         maxSlots: (0, d.Z)(t)
       })
     }), (0, r.jsx)(l.LZC, {
@@ -69,7 +69,7 @@ function f(e) {
           let {
             CreateEmojiWithRolesModal: l
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(l, p(g({}, n), {
+          return n => (0, r.jsx)(l, p(m({}, n), {
             data: e,
             file: i,
             guildId: t.id
@@ -79,29 +79,30 @@ function f(e) {
       disabled: b || f || 0 === x,
       size: "md",
       variant: "primary",
-      text: m.intl.string(m.t.AuPtoq),
+      text: g.intl.string(g.t.AuPtoq),
       loading: f
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(a.L3, {
-      title: m.intl.string(m.t.lu1ZQ0),
+      title: g.intl.string(g.t.lu1ZQ0),
       maxSlots: (0, d.Z)(t),
-      emojiCount: h.length
-    }), (0, r.jsx)(a.FT, {
-      guild: t,
-      emojis: h,
-      onEdit: (e, t) => {
-        (0, l.ZDy)(async () => {
-          let {
-            UpdateEmojiRolesModal: i
-          } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(i, p(g({}, n), {
-            emoji: e,
-            guildId: t
-          }))
-        })
-      },
-      editingDisabled: b
+      emojiCount: h.length,
+      children: (0, r.jsx)(a.FT, {
+        guild: t,
+        emojis: h,
+        onEdit: (e, t) => {
+          (0, l.ZDy)(async () => {
+            let {
+              UpdateEmojiRolesModal: i
+            } = await n.e("9007").then(n.bind(n, 604623));
+            return n => (0, r.jsx)(i, p(m({}, n), {
+              emoji: e,
+              guildId: t
+            }))
+          })
+        },
+        editingDisabled: b
+      })
     })]
   })
 }

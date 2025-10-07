@@ -2,7 +2,7 @@
 /** chunk id: 11265, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,12 +13,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk393238 = require("./393238.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk165121 = require("./165121.js");
-let m = Chunk647438.memo(function(e) {
+let g = Chunk647438.memo(function(e) {
   var t, n;
   let {
     renderHeader: l,
-    children: m,
-    isExpanded: g,
+    children: g,
+    isExpanded: m,
     isStuck: p,
     onExpand: f,
     disableAnimation: h,
@@ -29,7 +29,7 @@ let m = Chunk647438.memo(function(e) {
   } = (0, c.ZP)(), {
     ref: y,
     height: N = 0
-  } = (0, c.ZP)(), [E, I] = i.useState(g), S = (0, o.q_F)({
+  } = (0, c.ZP)(), [E, I] = i.useState(m), S = (0, o.q_F)({
     height: E ? N + O : O,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -68,33 +68,33 @@ let m = Chunk647438.memo(function(e) {
     }
   }, b || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    v(false), I(g)
-  }, [g]), i.useLayoutEffect(() => {
+    v(false), I(m)
+  }, [m]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
     className: s()(u.editCard, {
-      [u.toggled]: g,
+      [u.toggled]: m,
       [u.noBackground]: x
     }),
     children: (0, r.jsxs)(a.animated.div, {
       className: s()(u.contentExpandContainer, {
-        [u.showOverflow]: g && _
+        [u.showOverflow]: m && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: C,
         onClick: p ? true : f,
         className: s()(u.innerHeader, {
-          [u.toggled]: g && p
+          [u.toggled]: m && p
         }),
         "aria-label": d.intl.string(d.t.dcl9MT),
         children: l
       }), (0, r.jsx)("div", {
         ref: y,
-        children: m
+        children: g
       })]
     })
   })

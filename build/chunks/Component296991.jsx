@@ -116,11 +116,11 @@ function I(e) {
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
       className: O.inputWrapper,
-      children: [(0, r.jsx)(m.P3F, {
+      children: [(0, r.jsx)(g.P3F, {
         onMouseDown: () => j(l),
         children: (0, r.jsx)(f.ZP, {
           innerClassName: O.rulesTextAreaInput,
-          type: g.Ie.RULES_INPUT,
+          type: m.Ie.RULES_INPUT,
           textValue: T,
           richValue: P,
           channel: n,
@@ -144,10 +144,10 @@ function I(e) {
         })
       }), (0, r.jsx)("div", {
         className: O.clearButton,
-        children: (0, r.jsx)(m.hU, {
+        children: (0, r.jsx)(g.hU, {
           size: "sm",
           variant: "icon-only",
-          icon: m.k$p,
+          icon: g.k$p,
           "aria-label": C.intl.string(C.t.VkKicX),
           onClick: u
         })
@@ -155,7 +155,7 @@ function I(e) {
         ref: S,
         className: O.dragContainer,
         "data-dnd-name": A,
-        children: y && (0, r.jsx)(m.Vni, {
+        children: y && (0, r.jsx)(g.Vni, {
           size: "xs",
           color: "currentColor",
           className: O.dragIcon
@@ -171,7 +171,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: s
-  } = e, a = l.rulesChannelId, c = l.features.has(v.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != a ? h.Z.getChannel(a) : null), g = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, a = l.rulesChannelId, c = l.features.has(v.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != a ? h.Z.getChannel(a) : null), m = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
     if (!s && t.length !== _.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -228,7 +228,7 @@ function S(e) {
     children: [(0, r.jsx)("div", {
       className: O.rulesContainer,
       children: t.map((e, i) => (0, r.jsx)(I, {
-        rulesChannel: null != d ? d : g,
+        rulesChannel: null != d ? d : m,
         rule: e,
         index: i,
         onChange: e => w(e, i),
@@ -252,7 +252,7 @@ function S(e) {
       text: C.intl.string(C.t.Cq5Jub),
       onClick: P,
       disabled: s
-    }), (0, r.jsx)(m.X6q, {
+    }), (0, r.jsx)(g.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: O.exampleRulesTitle,

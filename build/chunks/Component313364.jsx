@@ -105,7 +105,7 @@ function R(e) {
                         color: "text-muted",
                         children: T.intl.format(T.t.Bf6yxM, {
                           onClick: e => {
-                            null != n && (e.preventDefault(), g.Z.close(), (0, j._X)(n.id))
+                            null != n && (e.preventDefault(), m.Z.close(), (0, j._X)(n.id))
                           }
                         })
                       })]
@@ -128,7 +128,7 @@ function R(e) {
         style: {
           width: S.$Y6
         },
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(g.Z, {
           userId: Z.details.userId,
           guildId: Z.details.guildId,
           onClose: D

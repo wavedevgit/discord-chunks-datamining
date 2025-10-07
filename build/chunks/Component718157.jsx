@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E: () => u
-});
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,13 +15,15 @@ var Chunk951288 = require("./951288.js"),
 
 function u(e) {
   let {
-    guildId: t,
-    guildMetadata: n,
-    isDisabled: u,
-    clearable: m = true
-  } = e, g = (0, l.Wu)([o.Z], () => o.Z.getPrimaryCategories()), p = i.useCallback(e => {
-    (0, a.TA)(t, null != e ? e : c.o3)
-  }, [t]), f = i.useMemo(() => g.map(e => {
+    label: t,
+    description: n,
+    guildId: u,
+    guildMetadata: g,
+    isDisabled: m,
+    clearable: p = true
+  } = e, f = (0, l.Wu)([o.Z], () => o.Z.getPrimaryCategories()), h = i.useCallback(e => {
+    (0, a.TA)(u, null != e ? e : c.o3)
+  }, [u]), x = i.useMemo(() => f.map(e => {
     let {
       categoryId: t,
       name: n
@@ -30,13 +32,15 @@ function u(e) {
       value: t,
       label: n
     }
-  }), [g]);
-  return 0 === g.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(s.VcW, {
-    value: n.primaryCategoryId === c.o3 ? null : n.primaryCategoryId,
+  }), [f]);
+  return 0 === f.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(s.VcW, {
+    value: g.primaryCategoryId === c.o3 ? null : g.primaryCategoryId,
+    label: t,
+    description: n,
     placeholder: d.intl.string(d.t.XqMe3N),
-    options: f,
-    onChange: p,
-    isDisabled: u,
-    clearable: m
-  }, f.length)
+    options: x,
+    onChange: h,
+    isDisabled: m,
+    clearable: p
+  }, x.length)
 }

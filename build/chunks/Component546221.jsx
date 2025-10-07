@@ -30,16 +30,16 @@ function _(e) {
   } = e, l = (0, c.mY)() ? null : b.intl.format(b.t.d1sCiY, {
     url: null != n ? x.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(n.id) : null
   });
-  return 0 === t.length ? (0, r.jsxs)(i.R94, {
-    type: i.R94.Types.DESCRIPTION,
+  return 0 === t.length ? (0, r.jsxs)(i.Text, {
+    variant: "text-sm/medium",
     children: [b.intl.string(b.t.RrtXu7), " ", l]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(i.R94, {
-      type: i.R94.Types.DESCRIPTION,
+    children: [(0, r.jsxs)(i.Text, {
+      variant: "text-sm/medium",
       children: [b.intl.string(b.t["9Ub4KS"]), " ", l]
     }), (0, r.jsx)(i.LZC, {
       size: 16
-    }), (0, r.jsx)(g.ZP, {
+    }), (0, r.jsx)(m.ZP, {
       payoutsByPeriod: t
     })]
   })
@@ -52,7 +52,7 @@ function v(e) {
   } = e, i = (0, o.qi)(t, {
     includeSoftDeleted: true
   });
-  return null == n && 0 === i.length ? null : (0, r.jsx)(m.Z, {
+  return null == n && 0 === i.length ? null : (0, r.jsx)(g.Z, {
     totalPayoutsForPeriod: n,
     guildId: t,
     className: j.currentMonthEarningsTable
@@ -64,13 +64,13 @@ let C = e => {
     guildId: a,
     application: o
   } = e, {
-    loading: m,
-    team: g,
+    loading: g,
+    team: m,
     currentPeriod: C,
     allPeriods: O,
     metrics: y
   } = (0, d.Z)(a, o), N = (0, u.u)(a), E = (0, c.mY)();
-  return m ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+  return g ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
         children: b.intl.format(b.t["2raBCQ"], {
@@ -116,7 +116,7 @@ let C = e => {
       className: j.formSection,
       children: (0, r.jsx)(_, {
         payoutsByPeriod: O,
-        team: g
+        team: m
       })
     }), (0, r.jsx)(i.hjN, {
       title: b.intl.string(b.t.O8cDAA),

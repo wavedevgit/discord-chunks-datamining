@@ -16,7 +16,7 @@ function d(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, d = t.id, u = (0, l.e7)([o.Z], () => o.Z.getError("name")), m = i.useCallback(e => {
+  } = e, d = t.id, u = (0, l.e7)([o.Z], () => o.Z.getError("name")), g = i.useCallback(e => {
     a.Z.updateGuild({
       name: e
     }), a.Z.updateGuildProfile(d, {
@@ -29,7 +29,7 @@ function d(e) {
     disabled: !n,
     value: t.name,
     maxLength: 100,
-    onChange: m,
+    onChange: g,
     error: u
   })
 }

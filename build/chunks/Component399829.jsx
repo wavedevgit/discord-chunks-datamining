@@ -186,21 +186,21 @@ class w extends Chunk647438.Component {
           nick: e.nick
         }),
         "aria-label": null != (i = e.nick) ? i : e.user.tag,
-        children: (0, r.jsx)(m.qEK, {
+        children: (0, r.jsx)(g.qEK, {
           tabIndex: false,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
           className: s()(S.avatar, t, null != t ? S.subscriberMask : null),
-          size: m.EFr.SIZE_32
+          size: g.EFr.SIZE_32
         })
       }, n)
-    }), T(this, "renderSubscribersPopout", () => (0, r.jsx)(m.Ttm, {
+    }), T(this, "renderSubscribersPopout", () => (0, r.jsx)(g.Ttm, {
       className: S.subscribersPopout,
       children: this.props.subscribers.map(e => (0, r.jsxs)("div", {
         className: S.subscribersPopoutUser,
-        children: [(0, r.jsx)(m.qEK, {
+        children: [(0, r.jsx)(g.qEK, {
           src: e.user.getAvatarURL(this.props.guildId, 32),
           "aria-label": e.user.username,
-          size: m.EFr.SIZE_32,
+          size: g.EFr.SIZE_32,
           className: S.avatar
         }), (0, r.jsx)("div", {
           className: S.subscribersPopoutUsername,
@@ -210,7 +210,7 @@ class w extends Chunk647438.Component {
           })
         })]
       }, e.user.id))
-    })), T(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(m.yRy, {
+    })), T(this, "renderMoreSubscribers", (e, t, n) => (0, r.jsx)(g.yRy, {
       targetElementRef: this.subscribersPopoutTargetRef,
       renderPopout: this.renderSubscribersPopout,
       position: "bottom",

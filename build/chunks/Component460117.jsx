@@ -19,7 +19,7 @@ function d(e) {
     emoji: d,
     setEmoji: m,
     channel: j
-  } = e, v = i.useRef(null), g = null == d || null == d.name ? null : () => {
+  } = e, g = i.useRef(null), v = null == d || null == d.name ? null : () => {
     var e;
     return (0, l.jsx)(o.Z, {
       className: n,
@@ -34,7 +34,7 @@ function d(e) {
       m(null)
     },
     children: (0, l.jsx)(r.yRy, {
-      targetElementRef: v,
+      targetElementRef: g,
       position: "bottom",
       renderPopout: e => {
         let {
@@ -83,11 +83,11 @@ function d(e) {
           }
           return e
         }({}, e), r = r = {
-          ref: v,
+          ref: g,
           tabIndex: 0,
           active: o,
           className: t,
-          renderButtonContents: g
+          renderButtonContents: v
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

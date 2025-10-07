@@ -57,13 +57,13 @@ function _(e) {
   let i, {
     theme: l,
     platform: a,
-    integration: m,
-    onRemove: g,
+    integration: g,
+    onRemove: m,
     locked: p
   } = e;
-  if ((null == m ? true : m.application) != null) o()(null != m.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
+  if ((null == g ? true : g.application) != null) o()(null != g.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
     size: d.EFr.SIZE_24,
-    user: m.application.bot,
+    user: g.application.bot,
     className: x.verifiedIcon
   });
   else if (null != a) {
@@ -77,12 +77,12 @@ function _(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: s()(x.verifiedRow, (null == a ? true : a.hasMetadata) === true || (null == m ? true : m.role_connections_metadata) != null && (null == m ? true : m.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
+    className: s()(x.verifiedRow, (null == a ? true : a.hasMetadata) === true || (null == g ? true : g.role_connections_metadata) != null && (null == g ? true : g.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
     children: [i, (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       className: x.verifiedText,
       children: h.intl.format(h.t.Nj0a3t, {
-        platformName: null != (n = null == a ? true : a.name) ? n : null == m || null == (t = m.application) ? true : t.name
+        platformName: null != (n = null == a ? true : a.name) ? n : null == g || null == (t = g.application) ? true : t.name
       })
     }), (0, r.jsx)(d.ua7, {
       text: h.intl.string(h.t.N86XcH),
@@ -90,7 +90,7 @@ function _(e) {
         children: (0, r.jsx)(d.hU, {
           "aria-label": h.intl.string(h.t.N86XcH),
           variant: "icon-only",
-          onClick: g,
+          onClick: m,
           disabled: p,
           icon: d.Dio,
           size: "sm"
@@ -110,14 +110,14 @@ function v(e) {
     applicationId: o,
     onConfigurationChange: c,
     locked: u
-  } = e, m = i.useId();
+  } = e, g = i.useId();
   return (0, r.jsxs)("tr", {
     className: x.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
-          htmlFor: m,
+          htmlFor: g,
           children: t
         })
       })
@@ -136,7 +136,7 @@ function v(e) {
       })]
     }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {
       children: (0, r.jsx)(d.rsf, {
-        id: m,
+        id: g,
         checked: (null == s ? true : s.configuration.value) === "1",
         onChange: e => {
           var t, n;
@@ -164,8 +164,8 @@ function C(e) {
     metadataField: o,
     existingPendingConfiguration: c,
     platform: u,
-    applicationId: m,
-    onConfigurationChange: g,
+    applicationId: g,
+    onConfigurationChange: m,
     locked: p,
     operator: b
   } = e, j = (null == c ? true : c.configuration) != null, _ = null != (n = null == c ? true : c.index) ? n : false, [v, C] = function(e, t) {
@@ -218,9 +218,9 @@ function C(e) {
             }(e, b);
             if ("" !== e) {
               var r;
-              g({
+              m({
                 connectionType: null != (r = null == u ? true : u.type) ? r : f.Kt,
-                applicationId: m,
+                applicationId: g,
                 connectionMetadataField: o,
                 operator: n,
                 value: t
@@ -239,11 +239,11 @@ function C(e) {
           let r = null;
           e && (r = {
             connectionType: null != (t = null == u ? true : u.type) ? t : f.Kt,
-            applicationId: m,
+            applicationId: g,
             connectionMetadataField: o,
             operator: C,
             value: O
-          }), g(r, null != (n = null == c ? true : c.index) ? n : false)
+          }), m(r, null != (n = null == c ? true : c.index) ? n : false)
         },
         disabled: p
       })
@@ -289,7 +289,7 @@ function y(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.BLUESKY);
+  } = e, l = m.Z.get(p.ABu.BLUESKY);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(C, {
       titleText: h.intl.string(h.t.zdXqGx),
@@ -324,7 +324,7 @@ function N(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.STEAM);
+  } = e, l = m.Z.get(p.ABu.STEAM);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(C, {
       titleText: h.intl.string(h.t.zdXqGx),
@@ -371,7 +371,7 @@ function E(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.TWITTER);
+  } = e, l = m.Z.get(p.ABu.TWITTER);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(C, {
       titleText: h.intl.string(h.t.zdXqGx),
@@ -414,7 +414,7 @@ function I(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.REDDIT);
+  } = e, l = m.Z.get(p.ABu.REDDIT);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(C, {
       titleText: h.intl.string(h.t.zdXqGx),
@@ -457,7 +457,7 @@ function S(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.PAYPAL);
+  } = e, l = m.Z.get(p.ABu.PAYPAL);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(C, {
       titleText: h.intl.string(h.t.zdXqGx),
@@ -484,7 +484,7 @@ function T(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.EBAY);
+  } = e, l = m.Z.get(p.ABu.EBAY);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(C, {
       titleText: h.intl.string(h.t.zdXqGx),
@@ -536,7 +536,7 @@ function P(e) {
     configMetadataMap: t,
     onConfigurationChange: n,
     locked: i
-  } = e, l = g.Z.get(p.ABu.TIKTOK);
+  } = e, l = m.Z.get(p.ABu.TIKTOK);
   return (0, r.jsxs)(O, {
     children: [(0, r.jsx)(v, {
       titleText: h.intl.string(h.t.QHHwRU),
@@ -646,7 +646,7 @@ function R(e) {
       locked: l,
       integrations: s
     } = e,
-    a = (0, m.ZP)();
+    a = (0, g.ZP)();
   if (n.length < 1) return null;
   let o = n[0].configuration.applicationId,
     c = null != o ? null == s ? true : s.find(e => {
@@ -656,7 +656,7 @@ function R(e) {
   if (null != o && null == c) return null;
   let d = null;
   try {
-    d = g.Z.get(n[0].configuration.connectionType)
+    d = m.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
   let u = new Map;
   n.forEach(e => {

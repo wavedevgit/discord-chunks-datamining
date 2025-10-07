@@ -20,8 +20,8 @@ function d(e) {
     {
       resubmittingEnableRequest: d,
       resubmissionError: u,
-      createEnableRequest: m,
-      resubmittedRequest: g,
+      createEnableRequest: g,
+      resubmittedRequest: m,
       requestRejectedNoticeText: p,
       reapplyNoticeText: f
     } = (0, i.Z)(n),
@@ -32,11 +32,11 @@ function d(e) {
     children: u.getAnyErrorMessage()
   });
   let b = null;
-  return null != p ? b = p : g ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
+  return null != p ? b = p : m ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
     className: c.noticeContainer,
     notice: b,
     ctaLabel: t,
     ctaLoading: d,
-    onClick: m
+    onClick: g
   }) : null
 }

@@ -67,11 +67,11 @@ function j(e) {
           })
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       priceTiers: S
     }), (0, r.jsx)(p.Z, {
       allSubscriptionListings: j
-    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(h.Z, {}), (0, r.jsx)(g.Z, {
       onDeleteEditState: y
     })]
   })

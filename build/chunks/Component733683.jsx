@@ -143,17 +143,17 @@ class y extends(r = Chunk647438.Component) {
       c = a[n],
       d = s >= e.numRequired,
       u = null != c && e.key === c.key,
-      g = e.key === a[0].key,
+      m = e.key === a[0].key,
       p = this.getTierDisabled(e);
-    l = g ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : d ? x.tierAccomplished : x.tierInProgress;
-    let f = e.y - (g ? 0 : v / 2),
+    l = m ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : d ? x.tierAccomplished : x.tierInProgress;
+    let f = e.y - (m ? 0 : v / 2),
       h = this.state.tierMarkerActive >= t,
-      j = !g && u && h;
-    return (0, i.jsx)(m.ua7, {
+      j = !m && u && h;
+    return (0, i.jsx)(g.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
       "aria-label": null != (r = e.name) ? r : "",
-      children: e => (0, i.jsx)(m.AMe, {
+      children: e => (0, i.jsx)(g.AMe, {
         from: {
           scale: 1
         },
@@ -180,7 +180,7 @@ class y extends(r = Chunk647438.Component) {
               top: f,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
-            children: j && (0, i.jsx)(m.dz2, {
+            children: j && (0, i.jsx)(g.dz2, {
               size: "md",
               color: "currentColor",
               className: x.currentTierIcon
@@ -231,7 +231,7 @@ class y extends(r = Chunk647438.Component) {
         className: x.background,
         height: e,
         fill: "currentColor"
-      }), (0, i.jsx)(m.AMe, {
+      }), (0, i.jsx)(g.AMe, {
         from: {
           height: 0
         },

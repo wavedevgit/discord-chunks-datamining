@@ -22,19 +22,17 @@ function h(e) {
     onBackClick: t
   } = e, n = (0, a.e7)([u.Z], () => u.Z.getAllUnlockedAchievements()), h = i.useMemo(() => Object.values(n).sort((e, t) => t.dateUnlocked - e.dateUnlocked), [n]), m = i.useMemo(() => Object.values(d.LG).filter(c.lm).filter(e => null == n[e.id]).sort((e, t) => e.rarity - t.rarity), [n]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.hjN, {
-      children: (0, r.jsxs)(s.P3F, {
-        onClick: t,
-        className: p.backContainer,
-        children: [(0, r.jsx)(l.Z, {
-          direction: l.Z.Directions.LEFT,
-          className: p.icon
-        }), (0, r.jsx)(s.Text, {
-          variant: "text-lg/normal",
-          color: "text-default",
-          children: _.intl.string(_.t["13/7kZ"])
-        })]
-      })
+    children: [(0, r.jsxs)(s.P3F, {
+      onClick: t,
+      className: p.backContainer,
+      children: [(0, r.jsx)(l.Z, {
+        direction: l.Z.Directions.LEFT,
+        className: p.icon
+      }), (0, r.jsx)(s.Text, {
+        variant: "text-lg/normal",
+        color: "text-default",
+        children: _.intl.string(_.t["13/7kZ"])
+      })]
     }), (0, r.jsxs)("div", {
       className: p.headerContainer,
       children: [(0, r.jsxs)("div", {
@@ -57,7 +55,7 @@ function h(e) {
           height: 40
         })
       })]
-    }), h.length > 0 && (0, r.jsx)(s.hjN, {
+    }), h.length > 0 && (0, r.jsx)("div", {
       className: p.divider,
       children: (0, r.jsx)("div", {
         className: p.achievementGrid,
@@ -72,7 +70,7 @@ function h(e) {
           }, t)
         })
       })
-    }), m.length > 0 && (0, r.jsxs)(s.hjN, {
+    }), m.length > 0 && (0, r.jsxs)("div", {
       className: p.divider,
       children: [(0, r.jsx)("div", {
         className: p.headerTextContainer,
@@ -87,7 +85,7 @@ function h(e) {
           achievementId: e.id
         }, e.id))
       })]
-    }), (0, r.jsx)(s.hjN, {
+    }), (0, r.jsx)("div", {
       className: p.divider,
       children: (0, r.jsx)("div", {
         className: p.bottomPadding

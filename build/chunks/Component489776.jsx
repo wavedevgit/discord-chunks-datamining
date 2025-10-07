@@ -77,22 +77,22 @@ function h(e) {
     }
   });
   return null == _ || O ? (0, r.jsxs)("div", {
-    className: g.mainRuleContainer,
+    className: m.mainRuleContainer,
     style: {
       height: O ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
-      className: g.animatedRuleCardContainer,
+      className: m.animatedRuleCardContainer,
       style: I,
       children: (0, r.jsx)(u.Z, {
         rule: y,
         persistEdit: b
       })
     }), (0, r.jsx)(l.animated.div, {
-      className: g.animatedNewRuleContainer,
+      className: m.animatedNewRuleContainer,
       style: E,
       children: (0, r.jsxs)(a.P3F, {
-        className: g.addAnotherRuleCardContainer,
+        className: m.addAnotherRuleCardContainer,
         onClick: () => {
           v(t, n)
         },
@@ -101,11 +101,11 @@ function h(e) {
           width: 20,
           height: 20,
           color: s.Z.BLUE_345,
-          className: g.plusIcon
+          className: m.plusIcon
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-link",
-          children: m.intl.format(m.t.dNjRAQ, {
+          children: g.intl.format(g.t.dNjRAQ, {
             ruleName: C()
           })
         })]

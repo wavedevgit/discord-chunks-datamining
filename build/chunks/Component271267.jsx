@@ -2,7 +2,7 @@
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Q: () => g,
+  Q: () => m,
   Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk52726 = require("./52726.js"),
   Chunk270395 = require("./270395.js");
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function m(e) {
   }
   return e
 }
-let g = "role_subscriptions_eligibility_modal";
+let m = "role_subscriptions_eligibility_modal";
 
 function p(e) {
   let {
@@ -52,7 +52,7 @@ function p(e) {
         } = await n.e("21863").then(n.bind(n, 466501));
         return n => {
           var l, c;
-          return (0, r.jsx)(e, (l = m({}, n), c = c = {
+          return (0, r.jsx)(e, (l = g({}, n), c = c = {
             eligibility: i,
             eligibilityLoading: s,
             eligibilityError: a,
@@ -70,7 +70,7 @@ function p(e) {
           }), l))
         }
       }, {
-        modalKey: g
+        modalKey: m
       })
     },
     size: "md",
@@ -87,20 +87,20 @@ function f(e) {
     canSubmitAcceptance: o,
     error: d,
     loading: u,
-    submitAcceptTermsRequest: m
-  } = (0, s.Z)(t.id), [g, p] = i.useState(false);
+    submitAcceptTermsRequest: g
+  } = (0, s.Z)(t.id), [m, p] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.XZJ, {
       onChange: function() {
         p(e => !e)
       },
-      checked: g,
+      checked: m,
       label: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(l.zxk, {
-      disabled: !g || !o,
-      onClick: m,
+      disabled: !m || !o,
+      onClick: g,
       loading: u,
       variant: "expressive",
       text: c.intl.string(c.t.NL5ZNT)
@@ -127,7 +127,7 @@ function h(e) {
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
+  return c ? u ? (0, r.jsx)(o.Z, g({}, n)) : (0, r.jsx)(f, {
     guild: t,
     checkboxText: d
   }) : (0, r.jsx)(p, {

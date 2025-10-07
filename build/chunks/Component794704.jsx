@@ -1191,7 +1191,7 @@ function eQ(e) {
       }), (0, r.jsx)("div", {
         className: ep.settingsDivider
       })]
-    }), (0, r.jsxs)(h.hjN, {
+    }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(eX, {
         runningGame: i,
         runningGameApplication: a

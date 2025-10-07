@@ -2,7 +2,7 @@
 /** chunk id: 564488, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,13 +13,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk59192 = require("./59192.jsx"),
   Chunk11265 = require("./11265.jsx"),
   Chunk495892 = require("./495892.jsx");
-let m = Chunk647438.memo(function(e) {
+let g = Chunk647438.memo(function(e) {
   let {
     rule: t,
     persistEdit: n = false,
-    initWithEdit: m = false
+    initWithEdit: g = false
   } = e, {
-    hasChanges: g,
+    hasChanges: m,
     editingRule: p,
     createNewEditingRule: f,
     setEditingRule: h
@@ -31,13 +31,13 @@ let m = Chunk647438.memo(function(e) {
     x || h(e, true)
   }, [x, h]);
   i.useEffect(() => {
-    m && h(t, true)
-  }, [m, t, h]);
+    g && h(t, true)
+  }, [g, t, h]);
   let N = i.useCallback(() => {
-    j ? g || h(null) : g ? C(() => {
+    j ? m || h(null) : m ? C(() => {
       h(t)
     }) : h(t)
-  }, [j, g, C, t, h]);
+  }, [j, m, C, t, h]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
       rule: v,
@@ -48,7 +48,7 @@ let m = Chunk647438.memo(function(e) {
       onChangeRule: y,
       onSetupRule: O
     }),
-    isStuck: j && g,
+    isStuck: j && m,
     isExpanded: j,
     onExpand: N,
     children: j && (0, r.jsx)(c.Z, {

@@ -2,7 +2,7 @@
 /** chunk id: 383124, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk77498 = require("./77498.js"),
   Chunk512622 = require("./512622.js");
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     selected: n,
     onClick: l,
-    disabled: g
+    disabled: m
   } = e, {
     isFetching: p,
     coverImageUrl: f
@@ -33,37 +33,37 @@ function g(e) {
   }), x = i.useCallback(() => {
     null == l || l(t)
   }, [t, l]), b = i.useMemo(() => p ? null : null == f ? (0, r.jsx)("div", {
-    className: m.gameUnknownImage,
+    className: g.gameUnknownImage,
     children: (0, r.jsx)(o.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
-    className: m.gameImage,
+    className: g.gameImage,
     alt: h,
     src: f
   }), [f, p, h]);
   return (0, r.jsxs)("div", {
-    className: s()(m.selectedGame, {
-      [m.dimmed]: !n,
-      [m.disabled]: g
+    className: s()(g.selectedGame, {
+      [g.dimmed]: !n,
+      [g.disabled]: m
     }),
     children: [(0, r.jsxs)(o.P3F, {
-      "aria-disabled": g,
-      tabIndex: g ? false : 0,
-      onClick: g ? true : x,
-      className: s()(m.gameImageBackground, {
-        [m.gameImageLoading]: p,
-        [m.disabled]: g
+      "aria-disabled": m,
+      tabIndex: m ? false : 0,
+      onClick: m ? true : x,
+      className: s()(g.gameImageBackground, {
+        [g.gameImageLoading]: p,
+        [g.disabled]: m
       }),
       children: [n && (0, r.jsx)("div", {
-        className: m.checkBackground,
+        className: g.checkBackground,
         children: (0, r.jsx)(a.$q, {
           displayOnly: true,
           value: n
         })
       }), b]
     }), (0, r.jsx)(o.Text, {
-      className: m.gameName,
+      className: g.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
       children: h

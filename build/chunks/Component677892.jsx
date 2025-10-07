@@ -118,12 +118,12 @@ function x(e) {
   let t = (0, l.e7)([a.Z], () => a.Z.getDefaultChannelIds(e)),
     n = i.useMemo(() => new Set(t), [t]),
     [r, s] = (0, o.VF)(e, n);
-  return s.length >= g.md && r.length >= g.X
+  return s.length >= m.md && r.length >= m.X
 }
 
 function b(e) {
   let t = x(e),
-    n = (0, m.O4)(e);
+    n = (0, g.O4)(e);
   return t || n
 }
 
@@ -132,14 +132,14 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), _ = j.length, v = x(t), C = (0, m.O4)(t), O = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = O ? p.intl.formatToPlainString(p.t.nHwnLC, {
+  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), _ = j.length, v = x(t), C = (0, g.O4)(t), O = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = O ? p.intl.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: _,
     numFromQuestions: u - _
   }) : v ? p.intl.formatToPlainString(p.t.HxEwSk, {
     numDefaultChannels: _
   }) : p.intl.formatToPlainString(p.t.ey3uVV, {
-    numDefaultChannels: g.md,
-    numChattableChannels: g.X
+    numDefaultChannels: m.md,
+    numChattableChannels: m.X
   });
   return (0, r.jsx)(h, {
     title: O ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
@@ -160,7 +160,7 @@ function _(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), x = m.length, b = m.length + g.length, j = x / b * 100, _ = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), v = u > 0, C = "none";
+  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), u = d.length, [g, m] = (0, o.dF)(t, d, c), x = g.length, b = g.length + m.length, j = x / b * 100, _ = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), v = u > 0, C = "none";
   return v && (j >= 85 && !i ? C = "good" : j < 85 && (C = "warning")), (0, r.jsx)(h, {
     title: _ ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
@@ -189,14 +189,14 @@ function v(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
-  } = e, m = (0, l.e7)([u.Z], () => u.Z.getSettings()), g = (0, l.e7)([a.Z], () => a.Z.getEnabled(t)), x = (0, c.uo)(m), b = m.enabled, j = i.useCallback(() => {
+  } = e, g = (0, l.e7)([u.Z], () => u.Z.getSettings()), m = (0, l.e7)([a.Z], () => a.Z.getEnabled(t)), x = (0, c.uo)(g), b = g.enabled, j = i.useCallback(() => {
     (0, d.To)(t, !b)
-  }, [t, b]), _ = !(0, c.av)(m), v = "none";
+  }, [t, b]), _ = !(0, c.av)(g), v = "none";
   _ && (x && !o ? v = "good" : x || (v = "required"));
   let C = p.intl.string(p.t.GMOwOD);
   x ? _ || (C = p.intl.string(p.t.wHOoyM)) : C = p.intl.string(p.t.wXFbgY);
   let O = null;
-  return _ && g && (O = (0, r.jsx)("div", {
+  return _ && m && (O = (0, r.jsx)("div", {
     className: f.inlineSwitch,
     children: (0, r.jsx)(s.rsf, {
       checked: b,

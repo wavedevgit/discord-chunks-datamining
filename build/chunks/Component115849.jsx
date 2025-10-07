@@ -1,7 +1,7 @@
 /** Chunk was on 49078 **/
 /** chunk id: 115849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./781311.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk470840 = require("./470840.js"),
   Chunk197571 = require("./197571.js");
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,34 +62,34 @@ let Chunk349181 = require("./349181.js"),
   R = "".concat(O, "-decription"),
   w = "".concat(O, "-error");
 
-function T(e, t) {
+function S(e, t) {
   switch (t.type) {
     case "RESET":
       return _;
     case "SUCCESS":
-      return v(y({}, _), {
+      return y(v({}, _), {
         success: t.text
       });
     case "HINT":
-      return v(y({}, _), {
+      return y(v({}, _), {
         canSend: true,
         hint: t.text
       });
     case "ERROR":
-      return v(y({}, e), {
+      return y(v({}, e), {
         canSend: true,
         error: t.text
       })
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     placeholder: t = h.intl.string(h.t["Rn/sLi"])
-  } = e, n = i.useRef(null), a = i.useRef(null), [l, p] = i.useReducer(T, _), {
-    canSend: y,
-    hint: v,
-    error: S,
+  } = e, n = i.useRef(null), a = i.useRef(null), [l, p] = i.useReducer(S, _), {
+    canSend: v,
+    hint: y,
+    error: T,
     success: E
   } = l;
   return i.useEffect(() => {
@@ -104,7 +104,7 @@ function S(e) {
         type: "ERROR",
         text: r
       });
-      o.Z.sendRequest({
+      d.Z.sendRequest({
         discordTag: t,
         context: {
           location: "Add Friend"
@@ -125,19 +125,15 @@ function S(e) {
     autoComplete: "off",
     children: [(0, r.jsxs)("div", {
       className: x.addFriendWumpusWrapper,
-      children: [(0, r.jsx)(d.R94, {
-        id: R,
-        type: d.R94.Types.DESCRIPTION,
-        children: (0, r.jsx)(d.Text, {
-          tag: "div",
-          variant: "heading-md/normal",
-          children: h.intl.string(h.t["Rn/sLi"])
-        })
+      children: [(0, r.jsx)(o.Text, {
+        tag: "div",
+        variant: "heading-md/normal",
+        children: h.intl.string(h.t["Rn/sLi"])
       }), (0, r.jsx)("img", {
         src: j,
         alt: "Wumpus Waving"
       })]
-    }), (0, r.jsx)(d.tEY, {
+    }), (0, r.jsx)(o.tEY, {
       focusTarget: n,
       ringTarget: a,
       ringClassName: x.ring,
@@ -145,7 +141,7 @@ function S(e) {
         ref: a,
         className: s()(x.addFriendInputWrapper, {
           [x.success]: E,
-          [x.error]: S
+          [x.error]: T
         }),
         children: [(0, r.jsx)(c.Is, {
           id: O,
@@ -183,32 +179,32 @@ function S(e) {
           "data-1p-ignore": true,
           placeholder: t,
           "aria-label": t,
-          "aria-invalid": null != S || true,
-          "aria-describedby": null != S ? w : R
-        }), null != v && (0, r.jsx)("div", {
+          "aria-invalid": null != T || true,
+          "aria-describedby": null != T ? w : R
+        }), null != y && (0, r.jsx)("div", {
           className: x.addFriendHint,
           "aria-hidden": true,
-          children: v
-        }), (0, r.jsx)(d.zxk, {
+          children: y
+        }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           size: "sm",
           text: h.intl.string(h.t["PMsq/f"]),
-          disabled: !y,
+          disabled: !v,
           type: "submit"
         })]
       })
-    }), null != S && (0, r.jsx)("div", {
+    }), null != T && (0, r.jsx)("div", {
       role: "alert",
-      children: (0, r.jsx)(d.Text, {
+      children: (0, r.jsx)(o.Text, {
         id: w,
         variant: "text-sm/normal",
         className: g.marginTop8,
         color: "text-feedback-critical",
-        children: S
+        children: T
       })
     }), null != E && (0, r.jsx)("div", {
       role: "status",
-      children: (0, r.jsx)(d.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: g.marginTop8,
         color: "text-feedback-positive",

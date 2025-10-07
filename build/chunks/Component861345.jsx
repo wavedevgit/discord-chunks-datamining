@@ -30,7 +30,7 @@ function b(e) {
     description: c,
     targetType: d,
     index: u,
-    dndName: g,
+    dndName: m,
     onEdit: p,
     onMove: b,
     disabled: j = false
@@ -48,7 +48,7 @@ function b(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: x.emojiWrapper,
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(g.Z, {
         guildId: t,
         emojiId: n,
         emojiName: l,
@@ -56,7 +56,7 @@ function b(e) {
       }), !j && (0, r.jsx)("div", {
         ref: v,
         className: x.dragIconWrapper,
-        "data-dnd-name": g,
+        "data-dnd-name": m,
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -97,10 +97,10 @@ function j(e) {
     onEdit: n,
     onMove: l,
     guildId: o
-  } = e, m = (0, c.Dt)(), {
+  } = e, g = (0, c.Dt)(), {
     isDragging: f
   } = (0, a.f)(e => ({
-    isDragging: e.getItemType() === m
+    isDragging: e.getItemType() === g
   })), h = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: s()(x.container, {
@@ -113,9 +113,9 @@ function j(e) {
         guildId: o,
         emojiId: e.emoji_id,
         emojiName: e.emoji_name,
-        title: (0, g.Z)(e),
+        title: (0, m.Z)(e),
         description: e.description,
-        targetType: m,
+        targetType: g,
         index: t,
         dndName: (0, p.Z)(e),
         onEdit: () => n(t),

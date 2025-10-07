@@ -1,39 +1,37 @@
 /** Chunk was on 72458 **/
 /** chunk id: 694278, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk538534 = require("./538534.jsx"),
-  Chunk481060 = require("./481060.js"),
   Chunk881052 = require("./881052.js"),
   Chunk434404 = require("./434404.js"),
   Chunk78451 = require("./78451.js"),
   Chunk915509 = require("./915509.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk388032 = require("./388032.jsx");
 
-function g(t) {
+function p(t) {
   var e, r;
   let {
-    guild: g,
-    onClose: y,
-    hideColors: f
-  } = t, [_, m] = a.useState(g.verificationLevel), [O, j] = a.useState(null), h = g.features.has(u.oNc.COMMUNITY), v = (0, s.IF)(h, f).filter(t => !t.disabled), x = a.useCallback(async () => {
-    null != O && j(null);
+    guild: p,
+    onClose: b,
+    hideColors: g
+  } = t, [y, f] = a.useState(p.verificationLevel), [_, O] = a.useState(null), m = p.features.has(d.oNc.COMMUNITY), v = (0, l.IF)(m, g).filter(t => !t.disabled), j = a.useCallback(async () => {
+    null != _ && O(null);
     try {
-      await l.Z.saveGuild(g.id, {
-        verificationLevel: _
-      }), l.Z.updateGuild({
-        verificationLevel: _
-      }), y()
+      await c.Z.saveGuild(p.id, {
+        verificationLevel: y
+      }), c.Z.updateGuild({
+        verificationLevel: y
+      }), b()
     } catch (t) {
-      j(new c.Hx(t).getAnyErrorMessage())
+      O(new o.Hx(t).getAnyErrorMessage())
     }
-  }, [O, g.id, _, y]);
-  return (0, n.jsx)(d.Z, (e = function(t) {
+  }, [_, p.id, y, b]);
+  return (0, n.jsx)(s.Z, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);
@@ -51,20 +49,15 @@ function g(t) {
     }
     return t
   }({}, t), r = r = {
-    title: p.intl.string(p.t.DpRdYG),
-    errorText: O,
-    onConfirm: x,
-    onCancel: y,
-    children: (0, n.jsxs)(o.hjN, {
-      children: [(0, n.jsx)(o.R94, {
-        type: o.R94.Types.DESCRIPTION,
-        className: b.marginBottom20,
-        children: p.intl.format(p.t.iuRk2t, {})
-      }), (0, n.jsx)(i.E, {
-        value: _,
-        options: v,
-        onChange: t => m(t)
-      })]
+    title: u.intl.string(u.t.DpRdYG),
+    description: u.intl.format(u.t.iuRk2t, {}),
+    errorText: _,
+    onConfirm: j,
+    onCancel: b,
+    children: (0, n.jsx)(i.E, {
+      value: y,
+      options: v,
+      onChange: t => f(t)
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

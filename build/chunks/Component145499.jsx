@@ -66,7 +66,7 @@ let w = e => {
       guild: t
     } = e, {
       location: i
-    } = (0, m.O)(), {
+    } = (0, g.O)(), {
       canCreateExpressions: l
     } = (0, h.XJ)(t);
     return (0, r.jsx)(d.zxk, {
@@ -118,19 +118,19 @@ let w = e => {
       guild: t
     } = e, {
       isLoading: l
-    } = (0, O.Z)(t.id), m = (0, a.e7)([C.Z], () => {
+    } = (0, O.Z)(t.id), g = (0, a.e7)([C.Z], () => {
       var e;
       return null != (e = C.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: _
-    } = (0, g.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
+    } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
-      }, [m]), l) return (0, r.jsx)(d.$jN, {});
+      }, [g]), l) return (0, r.jsx)(d.$jN, {});
     let G = [{
       tier: I.Eu4.NONE,
       title: (0, r.jsx)(w, {
-        guildStickers: m,
+        guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.NONE,
         children: T.intl.string(T.t.tfVXhI)
@@ -138,7 +138,7 @@ let w = e => {
     }, {
       tier: I.Eu4.TIER_1,
       title: (0, r.jsx)(w, {
-        guildStickers: m,
+        guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.TIER_1,
         children: T.intl.string(T.t.nzXtaW)
@@ -146,7 +146,7 @@ let w = e => {
     }, {
       tier: I.Eu4.TIER_2,
       title: (0, r.jsx)(w, {
-        guildStickers: m,
+        guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.TIER_2,
         children: T.intl.string(T.t["h33/ub"])
@@ -154,7 +154,7 @@ let w = e => {
     }, {
       tier: I.Eu4.TIER_3,
       title: (0, r.jsx)(w, {
-        guildStickers: m,
+        guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.TIER_3,
         children: T.intl.string(T.t.BfF6EB)
@@ -165,7 +165,7 @@ let w = e => {
       renderTier: e => {
         var i;
         let l, a, {
-            isAnimatedTo: g,
+            isAnimatedTo: m,
             onSetRef: b,
             tier: j,
             tiers: C,
@@ -179,10 +179,10 @@ let w = e => {
           M = null != G ? (0, v.A3)(G.tier) : 0,
           U = (0, v.A3)(j.tier, t),
           B = (0, v.ig)(j.tier),
-          F = m.slice(M, U),
+          F = g.slice(M, U),
           H = F.length > 0,
           z = A < j.tier,
-          W = (i = m.length, i < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, v.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, v.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, v.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
+          W = (i = g.length, i < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, v.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, v.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, v.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
           V = N && !z && W === j.tier && U !== F.length,
           K = V || F.length > 0,
           Y = U - M,
@@ -233,7 +233,7 @@ let w = e => {
           subscriptionCount: L,
           tier: j,
           onSetRef: b,
-          isAnimatedTo: g,
+          isAnimatedTo: m,
           hasBottomMargin: O !== C.length - 1,
           withCardBody: !K,
           headerButton: a,

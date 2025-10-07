@@ -16,7 +16,8 @@ var Chunk120356 = require("./120356.js"),
     return e.WARNING = "warn", e.INFO = "info", e.ERROR = "danger", e.POSITIVE = "positive", e.PREVIEW = "preview", e
   }({});
 
-function u(e) {
+function u(e, t) {
+  if (null != t) return t;
   switch (e) {
     case "warn":
       return o.Mgn;
@@ -52,13 +53,14 @@ function f(e) {
     action: i,
     className: o,
     textColor: c = "text-default",
-    textVariant: f = "text-sm/medium"
-  } = e, _ = u(n), p = d(n);
+    textVariant: f = "text-sm/medium",
+    icon: _
+  } = e, p = u(n, _), h = d(n);
   return (0, r.jsxs)("div", {
-    className: a()(l.container, p, o),
+    className: a()(l.container, h, o),
     children: [(0, r.jsx)("div", {
       className: l.iconDiv,
-      children: null != _ ? (0, r.jsx)(_, {
+      children: null != p ? (0, r.jsx)(p, {
         className: l.icon,
         color: "currentColor"
       }) : null

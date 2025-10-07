@@ -87,7 +87,7 @@ function y(e) {
           }), null != L && (0, r.jsxs)(d.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
-            children: [(0, m.T4)(L.price, L.currency), "/", (0, g.JE)(L)]
+            children: [(0, g.T4)(L.price, L.currency), "/", (0, m.JE)(L)]
           })]
         })]
       }), D ? (0, r.jsxs)("div", {

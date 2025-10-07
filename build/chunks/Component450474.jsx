@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => d
-});
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,10 +13,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk203377 = require("./203377.js");
 let d = e => {
   let {
-    guild: t,
-    guildMetadata: n,
-    disabled: d
-  } = e, u = (0, l.Wu)([o.Z], () => o.Z.getAllCategories()), m = i.useMemo(() => u.map(e => {
+    label: t,
+    description: n,
+    guild: d,
+    guildMetadata: u,
+    disabled: g
+  } = e, m = (0, l.Wu)([o.Z], () => o.Z.getAllCategories()), p = i.useMemo(() => m.map(e => {
     let {
       categoryId: t,
       name: n
@@ -25,21 +27,23 @@ let d = e => {
       value: t,
       label: n
     }
-  }), [u]);
-  return 0 === m.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(s.VcW, {
-    value: n.secondaryCategoryIds,
-    options: m,
+  }), [m]);
+  return 0 === p.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(s.VcW, {
+    label: t,
+    description: n,
+    value: u.secondaryCategoryIds,
+    options: p,
     onChange: e => {
       let {
-        secondaryCategoryIds: r
-      } = n;
-      if (e.length < r.length) r.filter(t => !e.includes(t)).forEach(e => (0, a.K0)(t.id, e));
+        secondaryCategoryIds: t
+      } = u;
+      if (e.length < t.length) t.filter(t => !e.includes(t)).forEach(e => (0, a.K0)(d.id, e));
       else {
-        if (r.length >= c.Pg) return;
-        e.filter(e => !r.includes(e)).forEach(e => (0, a.Kq)(t.id, e))
+        if (t.length >= c.Pg) return;
+        e.filter(e => !t.includes(e)).forEach(e => (0, a.Kq)(d.id, e))
       }
     },
-    isDisabled: d,
+    isDisabled: g,
     multi: true
   })
 }

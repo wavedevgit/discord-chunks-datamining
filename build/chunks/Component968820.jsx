@@ -2,7 +2,7 @@
 /** chunk id: 968820, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,12 +15,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk49792 = require("./49792.js");
 
-function m(e) {
+function g(e) {
   let {
     children: t,
     revenue: n,
-    revenueTrend: m,
-    summaryMetricLabel: g,
+    revenueTrend: g,
+    summaryMetricLabel: m,
     summaryMetricValue: p,
     summaryMetricTrend: f,
     summaryMetricTrendIsPercent: h
@@ -34,11 +34,11 @@ function m(e) {
           label: d.intl.string(d.t.iY1jW1),
           value: (0, s.T4)(null != n ? n : 0, c.pKx.USD),
           additionalContent: (0, r.jsx)(l.H, {
-            value: m,
+            value: g,
             isPercent: true
           })
         }), (0, r.jsx)(a.Z, {
-          label: g,
+          label: m,
           value: p,
           additionalContent: (0, r.jsx)(l.H, {
             value: f,

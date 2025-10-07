@@ -40,16 +40,16 @@ function y(e) {
   } = e;
   switch (s) {
     case b.cd.DESKTOP:
-      n = (0, r.jsx)(l.pzj, {}), t = j.intl.string(j.t.QXc019);
+      n = (0, r.jsx)(l.pzj, {}), t = v.intl.string(v.t.QXc019);
       break;
     case b.cd.CONSOLE:
-      n = (0, r.jsx)(l.iWm, {}), t = j.intl.string(j.t["8lAfuL"]);
+      n = (0, r.jsx)(l.iWm, {}), t = v.intl.string(v.t["8lAfuL"]);
       break;
     default:
       return null
   }
   return (0, r.jsxs)("div", {
-    className: v.platformSelectorPrimaryLabel,
+    className: j.platformSelectorPrimaryLabel,
     children: [n, t]
   })
 }
@@ -59,13 +59,13 @@ function E(e) {
   switch (e[0].value) {
     case b.cd.DESKTOP:
       return (0, r.jsxs)("span", {
-        className: v.platformSelectorPrimaryLabel,
-        children: [(0, r.jsx)(l.pzj, {}), j.intl.string(j.t["g6Dr4+"])]
+        className: j.platformSelectorPrimaryLabel,
+        children: [(0, r.jsx)(l.pzj, {}), v.intl.string(v.t["g6Dr4+"])]
       });
     case b.cd.CONSOLE:
       return (0, r.jsxs)("span", {
-        className: v.platformSelectorPrimaryLabel,
-        children: [(0, r.jsx)(l.iWm, {}), j.intl.string(j.t.iyNbj4)]
+        className: j.platformSelectorPrimaryLabel,
+        children: [(0, r.jsx)(l.iWm, {}), v.intl.string(v.t.iyNbj4)]
       });
     default:
       return (0, d.vE)(e[0].value)
@@ -79,8 +79,8 @@ function O(e) {
     questContent: w,
     onReceiveErrorHints: P,
     contentPosition: N,
-    rowIndex: R,
-    sourceQuestContent: A
+    rowIndex: A,
+    sourceQuestContent: R
   } = e, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, _.g2)({
     useReducedMotion: B
   }), I = (0, u.O5)(), q = (0, m._s)({
@@ -96,7 +96,7 @@ function O(e) {
     isClaiming: g.Z.isClaimingReward(T.id) || g.Z.isFetchingRewardCode(T.id),
     isEnrolling: g.Z.isEnrolling(T.id),
     isQuestEnrollmentBlocked: null != g.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, Z = (null == (n = T.userStatus) ? true : n.completedAt) != null, U = Z && (null == (O = T.userStatus) ? true : O.claimedAt) == null, H = (0, p.iQ)(T), F = !(0, p.zi)(T), X = (0, m._Q)(T), z = (0, p.Xv)(T.config), G = (0, p.PB)(T), K = (0, p.HJ)(T), Y = (0, p.Vl)(T), J = (0, m.Rf)(T), [$, ee, et] = (0, m.me)(T, J), en = F && X === m.OH.ACCEPTED, er = en && $ === f.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
+  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, U = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, H = (0, p.iQ)(T), F = !(0, p.zi)(T), X = (0, m._Q)(T), z = (0, p.Xv)(T.config), G = (0, p.PB)(T), K = (0, p.HJ)(T), Y = (0, p.Vl)(T), J = (0, m.Rf)(T), [$, ee, et] = (0, m.me)(T, J), en = F && X === m.OH.ACCEPTED, er = en && $ === f.LI.SELECT, es = en && !er && ee.length > 1, eo = s.useCallback(e => {
     et(e), e === b.cd.DESKTOP && P([])
   }, [et, P]), {
     text: ea,
@@ -107,11 +107,11 @@ function O(e) {
     questContent: w,
     isCollectibleQuest: z,
     questContentPosition: N,
-    questContentRowIndex: R,
+    questContentRowIndex: A,
     inGiftInventory: true,
     isVideoQuest: G,
     inGameQuest: Y,
-    sourceQuestContent: A
+    sourceQuestContent: R
   }), {
     startingConsoleQuest: el,
     startConsoleQuest: ec
@@ -123,8 +123,8 @@ function O(e) {
         questContent: w,
         questContentCTA: u.jZ.DEFIBRILLATOR,
         questContentPosition: N,
-        questContentRowIndex: R,
-        sourceQuestContent: A
+        questContentRowIndex: A,
+        sourceQuestContent: R
       })
     },
     afterRequest: e => {
@@ -135,7 +135,7 @@ function O(e) {
     questFeatures: T.config.features
   }), eu = (null == (S = T.userStatus) ? true : S.claimedAt) != null, ep = null;
   return (H && U ? ep = (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       loading: V,
@@ -143,18 +143,18 @@ function O(e) {
       text: ea,
       fullWidth: true
     })
-  }) : Z ? ep = G ? (0, r.jsxs)(a.hE2, {
+  }) : W ? ep = G ? (0, r.jsxs)(a.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(a.zxk, {
       variant: "secondary",
       icon: l.Oe7,
-      text: j.intl.string(j.t.YsCuyM),
+      text: v.intl.string(v.t.YsCuyM),
       onClick: () => {
         (0, x.openVideoQuestModal)({
           quest: T,
           questContent: w,
-          sourceQuestContent: A,
+          sourceQuestContent: R,
           sourceQuestContentCTA: u.jZ.WATCH_VIDEO,
           skipEnrollmentCheck: true
         })
@@ -165,7 +165,7 @@ function O(e) {
       text: ea
     })]
   }) : (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: null != ei ? ei : true,
@@ -173,7 +173,7 @@ function O(e) {
       fullWidth: true
     })
   }) : F ? F && U ? ep = (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       loading: V,
@@ -182,7 +182,7 @@ function O(e) {
       fullWidth: true
     })
   }) : K ? ep = ed ? (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       loading: Q,
@@ -191,34 +191,34 @@ function O(e) {
       fullWidth: true
     })
   }) : (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "secondary",
       disabled: true,
-      text: j.intl.string(j.t.BkZhUF),
+      text: v.intl.string(v.t.BkZhUF),
       fullWidth: true
     })
-  }) : F && W && !eu ? ep = er ? (0, r.jsx)(l.PhF, {
-    className: v.platformSelectorPrimary,
+  }) : F && Z && !eu ? ep = er ? (0, r.jsx)(l.PhF, {
+    className: j.platformSelectorPrimary,
     isSelected: () => false,
     options: C,
-    placeholder: j.intl.string(j.t.drVw4e),
+    placeholder: v.intl.string(v.t.drVw4e),
     renderOptionLabel: y,
     renderOptionValue: E,
     select: eo,
     serialize: e => {
       switch (e) {
         case b.cd.DESKTOP:
-          return j.intl.string(j.t.QXc019);
+          return v.intl.string(v.t.QXc019);
         case b.cd.CONSOLE:
-          return j.intl.string(j.t["8lAfuL"]);
+          return v.intl.string(v.t["8lAfuL"]);
         default:
           return (0, d.vE)(e)
       }
     },
     size: "sm"
   }) : (0, p.$J)(T) && !D && $ !== f.LI.DESKTOP ? q ? (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "secondary",
       onClick: null != ei ? ei : true,
@@ -230,13 +230,13 @@ function O(e) {
     color: i.Tt.PRIMARY,
     onClick: ec,
     disabled: el,
-    className: v.button,
+    className: j.button,
     children: (0, r.jsxs)("div", {
-      className: v.ctaInner,
-      children: [k.render(), j.intl.string(j.t.nPThNT)]
+      className: j.ctaInner,
+      children: [k.render(), v.intl.string(v.t.nPThNT)]
     })
   }) : G ? (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: null != ei ? ei : true,
@@ -244,7 +244,7 @@ function O(e) {
       fullWidth: true
     })
   }) : (0, p.Rt)(T) ? (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
       icon: T.config.features.includes(b.S7.CLOUD_GAMING_ACTIVITY) ? l.v3n : true,
@@ -253,27 +253,27 @@ function O(e) {
       fullWidth: true
     })
   }) : (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "secondary",
       disabled: true,
-      text: j.intl.string(j.t["9KoPyM"]),
+      text: v.intl.string(v.t["9KoPyM"]),
       fullWidth: true
     })
-  }) : F && !W && (ep = M ? (0, r.jsxs)(a.hE2, {
+  }) : F && !Z && (ep = M ? (0, r.jsxs)(a.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(a.zxk, {
       variant: "secondary",
       disabled: true,
-      text: j.intl.string(j.t.V293qq)
+      text: v.intl.string(v.t.V293qq)
     }), (0, r.jsx)(a.zxk, {
       variant: "primary",
-      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(T, w, A),
-      text: j.intl.string(j.t.vY9GgI)
+      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(T, w, R),
+      text: v.intl.string(v.t.vY9GgI)
     })]
   }) : (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       loading: Q,
       variant: "primary",
@@ -283,24 +283,24 @@ function O(e) {
       fullWidth: true
     })
   })) : ep = (0, r.jsx)("div", {
-    className: v.button,
+    className: j.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "secondary",
       disabled: true,
-      text: j.intl.format(j.t["14o6QU"], {
+      text: v.intl.format(v.t["14o6QU"], {
         expiryDate: L
       }),
       fullWidth: true
     })
   }), null == ep) ? null : (0, r.jsxs)("div", {
-    className: v.container,
+    className: j.container,
     children: [(0, r.jsx)("div", {
-      className: v.ctaItem,
+      className: j.ctaItem,
       children: ep
     }), es && (0, r.jsx)("div", {
-      className: v.ctaItem,
+      className: j.ctaItem,
       children: (0, r.jsx)(l.PhF, {
-        className: v.platformSelectorSecondary,
+        className: j.platformSelectorSecondary,
         isSelected: e => {
           switch ($) {
             case f.LI.DESKTOP:
@@ -312,16 +312,16 @@ function O(e) {
           }
         },
         options: C,
-        placeholder: j.intl.string(j.t.drVw4e),
+        placeholder: v.intl.string(v.t.drVw4e),
         renderOptionLabel: y,
         renderOptionValue: E,
         select: eo,
         serialize: e => {
           switch (e) {
             case b.cd.DESKTOP:
-              return j.intl.string(j.t.QXc019);
+              return v.intl.string(v.t.QXc019);
             case b.cd.CONSOLE:
-              return j.intl.string(j.t["8lAfuL"])
+              return v.intl.string(v.t["8lAfuL"])
           }
         },
         size: "sm"

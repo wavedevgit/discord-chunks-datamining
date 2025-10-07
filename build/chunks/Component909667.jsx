@@ -33,12 +33,12 @@ function c(e) {
   let c = (0, l.mY)() || null == t ? null : o.intl.format(o.t.d1sCiY, {
     url: a.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(t.id)
   });
-  return 0 === n.payoutsByPeriod.length ? (0, r.jsxs)(i.R94, {
-    type: i.R94.Types.DESCRIPTION,
+  return 0 === n.payoutsByPeriod.length ? (0, r.jsxs)(i.Text, {
+    variant: "text-sm/medium",
     children: [o.intl.string(o.t.RrtXu7), " ", c]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(i.R94, {
-      type: i.R94.Types.DESCRIPTION,
+    children: [(0, r.jsxs)(i.Text, {
+      variant: "text-sm/medium",
       children: [o.intl.string(o.t["9Ub4KS"]), " ", c]
     }), (0, r.jsx)(i.LZC, {
       size: 16

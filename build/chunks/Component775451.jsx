@@ -33,27 +33,27 @@ let f = {
       className: _
     } = e, {
       balance: y
-    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [S, N] = r.useState(false), [T, O] = r.useState(false), P = r.useRef(null), I = r.useCallback(() => {
+    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [S, T] = r.useState(false), [O, N] = r.useState(false), P = r.useRef(null), k = r.useCallback(() => {
       let e = !S;
       e && null != g && (0, o.Y)({
         pageType: g,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-      }), E(e ? d.b.SELECTED : d.b.DEFAULT), N(e)
-    }, [S, g]), k = r.useCallback(() => {
-      S && I()
-    }, [S, I]), w = (0, s.Z)(null, k), R = r.useMemo(() => (0, a.jsx)(u.L, {
+      }), E(e ? d.b.SELECTED : d.b.DEFAULT), T(e)
+    }, [S, g]), I = r.useCallback(() => {
+      S && k()
+    }, [S, k]), w = (0, s.Z)(null, I), R = r.useMemo(() => (0, a.jsx)(u.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
-        I(), i()
+        k(), i()
       },
       linkText: v
-    }), [g, n, v, I, i]);
+    }), [g, n, v, k, i]);
     return (0, a.jsxs)("div", {
       className: l()(x.container, _, {
-        [x.hidden]: T,
-        [x.visible]: !T
+        [x.hidden]: O,
+        [x.visible]: !O
       }),
       children: [(0, a.jsx)(m.y, {
         pillRef: P,
@@ -63,12 +63,12 @@ let f = {
         onMouseDown: e => {
           e.stopPropagation()
         },
-        onClick: I,
+        onClick: k,
         showNotificationBadge: t
       }), S && (0, a.jsx)("div", {
         className: l()(x.cardContainer, j, {
-          [x.hidden]: T,
-          [x.visible]: !T
+          [x.hidden]: O,
+          [x.visible]: !O
         }),
         ref: w,
         children: R

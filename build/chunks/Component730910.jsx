@@ -139,13 +139,13 @@ function A(e) {
       }
       returntrue
     }, X = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
+      m.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, g.hH)(f)), {
         step: O.PG[D],
         back: false,
         skip: !L
       })), (0, x.Nb)((0, O.lg)(D)), await q() && (0, x.IG)(f, D)
     }, J = async () => {
-      g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(f)), {
+      m.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, g.hH)(f)), {
         step: O.PG[D],
         back: true,
         skip: false

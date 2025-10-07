@@ -18,13 +18,13 @@ function c(e) {
     triggerType: n,
     toggled: c,
     onToggleAction: d
-  } = e, u = e => () => d(e), m = (0, s.c)(t.type, t, n);
-  if (null == m) return null;
+  } = e, u = e => () => d(e), g = (0, s.c)(t.type, t, n);
+  if (null == g) return null;
   let {
-    headerText: g,
+    headerText: m,
     descriptionText: p,
     icon: f
-  } = m;
+  } = g;
   return (0, r.jsxs)("div", {
     className: o.actionContainer,
     children: [(0, r.jsx)("div", {
@@ -38,7 +38,7 @@ function c(e) {
       className: o.actionTextContainer,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-sm/semibold",
-        children: g
+        children: m
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",

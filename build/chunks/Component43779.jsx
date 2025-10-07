@@ -32,21 +32,21 @@ function S(e) {
   let {
     quest: P,
     questContent: N,
-    isHovering: R,
-    contentPosition: A,
+    isHovering: A,
+    contentPosition: R,
     rowIndex: B,
     isVisibleInViewport: k,
     onReceiveErrorHints: I,
     sourceQuestContent: q
   } = e, D = s.useRef(null), L = s.useMemo(() => f.r.build(P.config), [P.config]), V = L.defaultRewardName, Q = L.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
-    ref: W,
-    scrollHeight: Z
-  } = (0, d.kE)(), U = 104 !== Z, {
+    ref: Z,
+    scrollHeight: W
+  } = (0, d.kE)(), U = 104 !== W, {
     onAssetLoadComplete: H
   } = s.useContext(_.k), {
     expansionSpring: F
   } = (0, c.q_F)({
-    expansionSpring: +!!R,
+    expansionSpring: +!!A,
     config: (S = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -116,7 +116,7 @@ function S(e) {
     ref: D,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: F.to([0, 1], [104, (null != Z ? Z : 0) + 12])
+        maxHeight: F.to([0, 1], [104, (null != W ? W : 0) + 12])
       },
       className: E.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
@@ -139,15 +139,15 @@ function S(e) {
               quest: P,
               size: 76,
               percentComplete: Y,
-              percentCompleteText: R && !(0, m.zi)(P) ? J : true,
+              percentCompleteText: A && !(0, m.zi)(P) ? J : true,
               children: (0, r.jsx)("div", {
                 className: E.circularRewardTileWrapper,
                 children: (0, r.jsx)(x.Z, {
                   quest: P,
                   questContent: N,
                   className: E.circularQuestRewardTileAsset,
-                  location: v.dr.QUEST_HOME_DESKTOP,
-                  autoplay: R,
+                  location: j.dr.QUEST_HOME_DESKTOP,
+                  autoplay: A,
                   onLoadComplete: H,
                   lazyLoad: true,
                   sourceQuestContent: q
@@ -156,17 +156,17 @@ function S(e) {
             })]
           }) : (0, r.jsx)(x.Z, {
             quest: P,
-            autoplay: R,
+            autoplay: A,
             questContent: N,
             className: E.questRewardTileAsset,
-            location: v.dr.QUEST_HOME_DESKTOP,
+            location: j.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: H,
             lazyLoad: true,
             sourceQuestContent: q
           })]
         })
       }), (0, r.jsxs)("div", {
-        ref: W,
+        ref: Z,
         className: a()(E.textContainer, {
           [E.justifyCenter]: !U
         }),
@@ -189,10 +189,10 @@ function S(e) {
         },
         className: E.textOverflowBlur
       })]
-    }), (0, r.jsx)(j.Z, {
+    }), (0, r.jsx)(v.Z, {
       quest: P,
       questContent: N,
-      contentPosition: A,
+      contentPosition: R,
       rowIndex: B,
       onReceiveErrorHints: I,
       sourceQuestContent: q

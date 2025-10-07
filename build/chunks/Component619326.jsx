@@ -56,7 +56,7 @@ let b = (0, Chunk663993.Un)({
 
 function j(e) {
   let t = (0, a.Bd)(e) > .25;
-  return (0, u.Lq)(t ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530)
+  return (0, u.Lq)(t ? m.Ilk.WHITE_500 : m.Ilk.PRIMARY_530)
 }
 
 function _(e) {
@@ -64,16 +64,16 @@ function _(e) {
     value: t,
     onChange: n,
     disabled: l = false
-  } = e, d = i.useRef(null), [u, m] = i.useState(t);
+  } = e, d = i.useRef(null), [u, g] = i.useState(t);
 
   function b() {
     n(u)
   }
 
   function _(e) {
-    n(e), m(e)
+    n(e), g(e)
   }
-  let v = t === g.p6O,
+  let v = t === m.p6O,
     C = v ? u : t,
     O = (0, r.jsx)(c.dz2, {
       size: "custom",
@@ -106,7 +106,7 @@ function _(e) {
     I = (0, o.jm)({
       isSelected: v,
       label: p.intl.formatToPlainString(p.t.ZC69mJ, {
-        colorHex: g.Pbq
+        colorHex: m.Pbq
       })
     }),
     S = (0, o.jm)({
@@ -126,14 +126,14 @@ function _(e) {
       }),
       children: (0, r.jsxs)(c.P3F, x(h({
         onClick: l ? true : function() {
-          n(g.p6O)
+          n(m.p6O)
         },
         "aria-disabled": l
       }, I), {
         children: [(0, r.jsx)("div", {
           className: f.swatch,
           style: {
-            backgroundColor: g.Pbq
+            backgroundColor: m.Pbq
           },
           children: v ? O : null
         }), (0, r.jsx)(c.Text, {
@@ -154,7 +154,7 @@ function _(e) {
       }, S), {
         children: [(0, r.jsx)("div", {
           className: s()(f.customSwatch, {
-            [f.defaultSwatch]: C === g.p6O
+            [f.defaultSwatch]: C === m.p6O
           }),
           style: {
             "--custom-color": (0, a.Rf)(C)
@@ -206,8 +206,8 @@ function v(e) {
     onChange: i,
     disabled: l
   }) : (0, r.jsx)(b, {
-    defaultColor: g.p6O,
-    colors: g.pmI,
+    defaultColor: m.p6O,
+    colors: m.pmI,
     value: n,
     onChange: i,
     disabled: l

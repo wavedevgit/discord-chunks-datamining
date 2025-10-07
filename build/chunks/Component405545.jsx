@@ -18,8 +18,8 @@ let a = function(e) {
     onDrop: c,
     onEdit: d,
     onRemove: u,
-    canRemove: m,
-    actionsLocation: g,
+    canRemove: g,
+    actionsLocation: m,
     fieldStyle: p
   } = e, {
     label: f
@@ -33,8 +33,8 @@ let a = function(e) {
     onEdit: d,
     onRemove: u,
     title: f,
-    canRemove: m,
-    actionsLocation: g,
+    canRemove: g,
+    actionsLocation: m,
     fieldStyle: p,
     children: (0, r.jsx)(i.BO, {
       field: t,

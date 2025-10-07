@@ -35,9 +35,9 @@ function o(e) {
 
 function c(e) {
   var t;
-  let i = (0, s.e7)([l.Z], () => l.Z.can(a.Plq.MANAGE_GUILD, e)),
+  let i = (0, n.e7)([s.Z], () => s.Z.can(a.Plq.MANAGE_GUILD, e)),
     {
-      enabled: n
+      enabled: l
     } = r.useExperiment({
       guildId: null != (t = null == e ? true : e.id) ? t : a.lds,
       location: "dd4beb_3"
@@ -46,5 +46,5 @@ function c(e) {
     });
   if (null == e) returnfalse;
   let o = e.features.has(a.oNc.COMMUNITY);
-  return i && o && n
+  return i && o && l
 }

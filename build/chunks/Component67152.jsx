@@ -180,7 +180,7 @@ let y = e => {
         payoutStatus: n,
         ppgDeferralReasons: i,
         periodEndDate: l
-      } = (0, g.j0)(e);
+      } = (0, m.j0)(e);
       return (0, r.jsx)(E, {
         children: ((e, t, n, i) => {
           let l = null != i ? o()(i).add(15, "days").toISOString() : true,
@@ -263,7 +263,7 @@ let y = e => {
     } = e, [n, l] = i.useState(new Set);
     return (0, r.jsx)("div", {
       className: O.tableContainer,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         columns: R,
         data: t,
         className: O.table,

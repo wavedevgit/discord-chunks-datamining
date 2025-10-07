@@ -18,20 +18,20 @@ function u(e) {
     guildId: t,
     defaultSettings: n,
     canManageGuild: u
-  } = e, m = (0, l.e7)([a.Z], () => a.Z.getMemberCount(t)), g = i.useMemo(() => [{
+  } = e, g = (0, l.e7)([a.Z], () => a.Z.getMemberCount(t)), m = i.useMemo(() => [{
     name: d.intl.string(d.t["n/bTaW"]),
     value: c.bL.ALL_MESSAGES,
-    desc: null != m && m >= c.qWG ? d.intl.string(d.t["L+P4t7"]) : null
+    desc: null != g && g >= c.qWG ? d.intl.string(d.t["L+P4t7"]) : null
   }, {
     name: d.intl.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
-  }], [m]), p = i.useCallback(e => {
+  }], [g]), p = i.useCallback(e => {
     o.Z.updateGuild({
       defaultMessageNotifications: e
     })
   }, []);
   return (0, r.jsx)(s.E, {
-    options: g,
+    options: m,
     value: n,
     disabled: !u,
     onChange: p

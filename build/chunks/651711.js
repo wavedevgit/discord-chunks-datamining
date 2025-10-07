@@ -19,12 +19,12 @@ function u(e) {
     actions: n,
     sortedByIneligible: u
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
-    isUserMFAEnabled: m,
-    isModerationMFAEnabled: g
+    isUserMFAEnabled: g,
+    isModerationMFAEnabled: m
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
-    m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
-  }, [m, g, t, n]), f = (0, a.R)({
+    g ? m || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
+  }, [g, m, t, n]), f = (0, a.R)({
     onEnableMFAClick: p
   });
   return r.useMemo(() => {
@@ -86,8 +86,8 @@ function u(e) {
         description: d.intl.string(d.t["5ZqX+v"]),
         checked: e.notNSFW
       }), null != e.hasEnabled2FA) {
-      let t = !e.hasEnabled2FA && !m && (null == n ? true : n.onEnableMFAClick) != null,
-        r = !e.hasEnabled2FA && !g && (null == n ? true : n.onRequireModeratorMFAClick) != null,
+      let t = !e.hasEnabled2FA && !g && (null == n ? true : n.onEnableMFAClick) != null,
+        r = !e.hasEnabled2FA && !m && (null == n ? true : n.onRequireModeratorMFAClick) != null,
         i = t || r;
       o.push({
         key: "2fa_requirement",
@@ -102,5 +102,5 @@ function u(e) {
       })
     }
     returntrue === u && o.sort(e => e.checked ? 0 : false), o
-  }, [e, u, m, n, g, f, p])
+  }, [e, u, g, n, m, f, p])
 }

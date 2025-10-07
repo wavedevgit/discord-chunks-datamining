@@ -15,12 +15,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430666 = require("./430666.js");
-let g = e => {
+let m = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: m.tier0Button,
+      className: g.tier0Button,
       children: (0, r.jsx)(l.zxk, {
         variant: "overlay-primary",
         size: "md",
@@ -32,13 +32,13 @@ let g = e => {
       })
     });
     return (0, r.jsxs)("div", {
-      className: m.tier0Container,
+      className: g.tier0Container,
       children: [(0, r.jsx)(l.X6q, {
-        className: m.tier0Heading,
+        className: g.tier0Heading,
         variant: "heading-xxl/extrabold",
         children: u.intl.string(u.t["qUl+Ky"])
       }), (0, r.jsx)(a.wp, {
-        className: m.tier0Card,
+        className: g.tier0Card,
         ctaButton: n,
         featureSet: a.uZ.BOOSTING,
         showWumpus: true,
@@ -50,7 +50,7 @@ let g = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, i.e7)([o.default], () => o.default.getCurrentUser());
-    return c.ZP.isPremium(n, d.p9.TIER_2) ? null : (0, r.jsx)(g, {
+    return c.ZP.isPremium(n, d.p9.TIER_2) ? null : (0, r.jsx)(m, {
       onOpenPremiumClick: t
     })
   }

@@ -21,9 +21,9 @@ function c(e, t) {
       teamId: null == n ? true : n.id
     }),
     u = (0, s.f)("useEarningMetrics"),
-    m = (0, a.Z)(e),
+    g = (0, a.Z)(e),
     {
-      currentPeriod: g,
+      currentPeriod: m,
       previousPeriods: p,
       metrics: f
     } = r.useMemo(() => {
@@ -53,7 +53,7 @@ function c(e, t) {
           }
           return e
         }({}, l), t = t = {
-          subscribers: m,
+          subscribers: g,
           subscriberChange: l.paymentsCountChange
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -66,11 +66,11 @@ function c(e, t) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)
       }
-    }, [c, m]);
+    }, [c, g]);
   return {
     loading: d || !u,
     team: n,
-    currentPeriod: g,
+    currentPeriod: m,
     previousPeriods: p,
     allPeriods: c,
     metrics: f

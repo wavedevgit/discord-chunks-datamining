@@ -16,5 +16,6 @@ let c = (0, Chunk509613.CB)(Chunk313789.n.NOTIFICATIONS_ADVANCED_ACCORDION, {
     buildLayout: () => [Chunk291011.Z, Chunk419386.Z, Chunk392231.Z, Chunk271524.Z]
   }),
   E = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_ADVANCED_CATEGORY, {
+    useNavigationTitle: () => Chunk388032.intl.string(Chunk388032.t["31DySk"]),
     buildLayout: () => [c]
   })

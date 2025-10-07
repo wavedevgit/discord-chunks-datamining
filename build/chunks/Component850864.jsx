@@ -39,7 +39,7 @@ function N(e) {
     name: j.intl.string(j.t.cmkOsb)
   }], []), E = (0, l.e7)([o.Z], () => o.Z.theme);
   i.useEffect(() => () => {
-    let e = m.Z.getSettings();
+    let e = g.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
   let I = i.useMemo(() => (0, s.ap)(E) ? "existing" === c ? C : y : "existing" === c ? v : O, [c, E]);
@@ -79,7 +79,7 @@ function N(e) {
       }), (0, r.jsx)("div", {
         className: _.section,
         children: (0, r.jsx)(p.Z, {})
-      }), (0, r.jsx)(g.Z, {
+      }), (0, r.jsx)(m.Z, {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: _.sectionSeparator

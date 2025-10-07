@@ -37,9 +37,9 @@ function y(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : v.lds, w = null != E, [R] = (0, g.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : v.lds, w = null != E, [R] = (0, m.RD)(P), {
     rulesByTriggerType: Z
-  } = (0, g.pH)(P), D = {
+  } = (0, m.pH)(P), D = {
     [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
     [p.vh.CONTENT]: C.intl.string(C.t.fphZb2)
   }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
@@ -98,7 +98,7 @@ function y(e) {
       }), (0, r.jsxs)("div", {
         className: O.descriptionAvatarContainer,
         children: [(0, r.jsx)(a.qEK, {
-          src: (0, m.j)(),
+          src: (0, g.j)(),
           size: a.EFr.SIZE_80,
           "aria-label": C.intl.string(C.t.hG1StL)
         }), (0, r.jsx)(a.IGR, {

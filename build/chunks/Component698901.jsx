@@ -34,20 +34,15 @@ function o(e) {
 }
 
 function c() {
-  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    title: "Hotspots",
-    tag: Chunk481060.RB0.H1,
+  return (0, Chunk951288.jsx)(Chunk481060.C3N, {
+    label: "Hotspots",
+    description: "All the 'hotspots' in app, and their current status. Use the select menu to override them on or off.",
     className: Chunk983380.hotspotsSection,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk983380.helpText,
-      tag: "p",
-      variant: "text-sm/normal",
-      children: 'All the "hotspots" in app, and their current status. Use the select menu to override them on or off.'
-    }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Kqy, {
       gap: 20,
       children: Object.keys(Chunk536442.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(o, {
         hotspotLocation: e
       }, e))
-    })]
+    })
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 598622, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Q: () => m
+  Q: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,7 +14,7 @@ var Chunk740903 = require("./740903.js"),
   Chunk3896 = require("./3896.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let m = e => {
+let g = e => {
   let t = [{
     renderComponent: () => (0, r.jsx)(c.Z, {
       guild: e

@@ -23,8 +23,8 @@ function c(e) {
     groupType: o.uw.GUILD_PRODUCT,
     teamId: null == n || null == (t = n.team) ? true : t.id
   }), {
-    currentPeriod: m,
-    previousPeriods: g,
+    currentPeriod: g,
+    previousPeriods: m,
     metrics: p
   } = r.useMemo(() => {
     let {
@@ -40,8 +40,8 @@ function c(e) {
   return {
     loading: c || u,
     payoutsByPeriod: d,
-    currentPeriod: m,
-    previousPeriods: g,
+    currentPeriod: g,
+    previousPeriods: m,
     metrics: p,
     application: n
   }

@@ -27,7 +27,7 @@ let g = e => {
   } = (0, c.n)({
     location: u.dr.QUESTS_BAR,
     questConfig: t.config
-  }), x = null == h ? true : h.progressBlur, _ = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : _ ? false : 6;
+  }), x = null == h ? true : h.progressBlur, _ = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, v = x ? 70 : 48, j = x ? 12 : 8, C = x ? false : false, y = x ? 0 : _ ? false : 6;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.animated.div, {
       className: m.rewardTileContainer,
@@ -40,12 +40,12 @@ let g = e => {
           output: [0, 82]
         }), n.to({
           range: [0, 1],
-          output: [1, 64 / j]
+          output: [1, 64 / v]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
       },
       children: (0, r.jsx)(d.Z, {
         learnMoreStyle: "text",
-        learnMoreFontSize: s ? j / 64 * 12 : true,
+        learnMoreFontSize: s ? v / 64 * 12 : true,
         quest: t,
         questContent: l.jn.QUEST_BAR_V2,
         location: u.dr.QUESTS_BAR,
@@ -53,10 +53,10 @@ let g = e => {
         sourceQuestContent: l.jn.QUEST_BAR_V2,
         showShine: !b,
         style: {
-          width: j,
-          height: j,
-          marginRight: v,
-          borderRadius: j / 64 * 8
+          width: v,
+          height: v,
+          marginRight: j,
+          borderRadius: v / 64 * 8
         }
       })
     }), (0, r.jsxs)(a.animated.div, {
@@ -65,7 +65,7 @@ let g = e => {
         [m.rewardHighlightLogoCTALabel]: _
       }),
       style: {
-        height: x ? j : true,
+        height: x ? v : true,
         transform: (0, a.to)([n.to({
           range: [0, 1],
           output: [0, C]

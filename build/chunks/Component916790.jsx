@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk687278 = require("./687278.js"),
   Chunk451429 = require("./451429.js");
 
-function O(e) {
+function N(e) {
   return parseFloat(e.toFixed(3))
 }
 let P = [{
@@ -48,11 +48,11 @@ let P = [{
     let {
       trace: t
     } = e;
-    return "".concat(O(t.time), " ms")
+    return "".concat(N(t.time), " ms")
   }
 }];
 
-function I(e) {
+function k(e) {
   let {
     actionLog: t
   } = e, n = r.useMemo(() => t.traces.map(e => ({
@@ -66,7 +66,7 @@ function I(e) {
     })
   })
 }
-let k = [{
+let I = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -77,7 +77,7 @@ let k = [{
     } = e, r = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(_.E, {
-        className: N.actionProperties,
+        className: T.actionProperties,
         children: [(0, a.jsx)(_.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
@@ -87,10 +87,10 @@ let k = [{
           })
         }), (0, a.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [O(n.totalTime), " ms"]
+          children: [N(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(m.zJl, {
-        className: N.inspectorContainer,
+        className: T.inspectorContainer,
         children: (0, a.jsx)(j.Z, {
           data: n.action
         })
@@ -105,7 +105,7 @@ let k = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(k, {
       actionLog: t
     })
   }
@@ -115,11 +115,11 @@ function w(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...k, {
+  } = e, i = r.useMemo(() => t.error ? [...I, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
-        className: N.errorIcon
+        className: T.errorIcon
       }), "Error"]
     }),
     group: E.v0.NONE,
@@ -129,42 +129,42 @@ function w(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: l()(N.errorToolbar, T.toolbar),
+          className: l()(T.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
-            className: T.toolbarGroup,
+            className: O.toolbarGroup,
             children: (0, a.jsx)(u.zx, {
-              className: T.toolbarButton,
+              className: O.toolbarButton,
               size: u.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
         }), (0, a.jsx)(m.zJl, {
-          className: N.inspectorContainer,
+          className: T.inspectorContainer,
           children: (0, a.jsx)(j.Z, {
             data: t.error
           })
         })]
       })
     }
-  }] : k, [t]), {
+  }] : I, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
     tabs: i
   }, [i]);
   return (0, a.jsxs)(y.Z, {
-    className: N.subPanel,
+    className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(h.ZP, {
-      className: l()(T.headerBar, N.subPanelHeaderBar),
+      className: l()(O.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(h.ZP.Icon, {
         icon: m.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(h.ZP.Title, {
-        wrapperClassName: l()(T.headerTitle, T.dispatcherHeader),
-        className: T.headerTitleText,
+        wrapperClassName: l()(O.headerTitle, O.dispatcherHeader),
+        className: O.headerTitleText,
         children: t.name
       }), (0, a.jsx)(h.ZP.Icon, {
         icon: m.TIy,
@@ -196,7 +196,7 @@ let R = [{
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [t.error && (0, a.jsx)(b.Z, {
-          className: N.errorIcon
+          className: T.errorIcon
         }), t.name]
       })
     }
@@ -207,7 +207,7 @@ let R = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(O(t.totalTime), " ms")
+      return "".concat(N(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",
@@ -260,19 +260,19 @@ function Z() {
     }, [Chunk913527]),
     E = exports.trim().length > 0,
     S = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
-    O = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
+    N = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: l()(Chunk451429.panel, Chunk687278.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk687278.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-        text: O,
+        text: N,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: Chunk4912 ? "primary" : "active",
           icon: Chunk4912 ? Chunk481060.o1U : Chunk481060.fpf,
-          "aria-label": O,
+          "aria-label": N,
           onClick: () => Chunk484036(!Chunk4912)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {

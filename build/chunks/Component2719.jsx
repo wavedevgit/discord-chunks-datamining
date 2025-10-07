@@ -117,7 +117,8 @@ function ee(e) {
       className: K.constrainedRow,
       children: (0, r.jsxs)("div", {
         className: K.usernameRow,
-        children: [(0, r.jsx)(_.vwX, {
+        children: [(0, r.jsx)(_.Text, {
+          variant: "text-md/medium",
           className: K.fieldTitle,
           children: W.intl.string(W.t.qqhR3N)
         }), (0, r.jsxs)("div", {
@@ -207,7 +208,8 @@ function et(e) {
       className: K.constrainedRow,
       children: (0, r.jsxs)("div", {
         className: K.usernameRow,
-        children: [(0, r.jsx)(_.vwX, {
+        children: [(0, r.jsx)(_.Text, {
+          variant: "text-md/medium",
           className: K.fieldTitle,
           children: W.intl.string(W.t["9AjdkJ"])
         }), (0, r.jsx)("div", {
@@ -318,7 +320,8 @@ function er(e) {
     children: [(0, r.jsx)("div", {
       className: K.constrainedRow,
       children: (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(_.vwX, {
+        children: [(0, r.jsx)(_.Text, {
+          variant: "text-md/medium",
           className: K.fieldTitle,
           children: W.intl.string(W.t.tlZllJ)
         }), (0, r.jsx)("div", {
@@ -386,7 +389,8 @@ function ei(e) {
     children: [(0, r.jsx)("div", {
       className: K.constrainedRow,
       children: (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(_.vwX, {
+        children: [(0, r.jsx)(_.Text, {
+          variant: "text-md/medium",
           className: K.fieldTitle,
           children: W.intl.string(W.t.kerONj)
         }), (0, r.jsx)("div", {
@@ -466,7 +470,8 @@ function eo(e) {
     children: [(0, r.jsx)("div", {
       className: K.constrainedRow,
       children: (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(_.vwX, {
+        children: [(0, r.jsx)(_.Text, {
+          variant: "text-md/medium",
           className: K.fieldTitle,
           children: W.intl.string(W.t["/52UY2"])
         }), (0, r.jsx)("div", {

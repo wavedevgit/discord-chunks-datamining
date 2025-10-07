@@ -32,15 +32,15 @@ function j(e) {
     originalVanityURLCode: O,
     errorDetails: y,
     fetched: N
-  } = (0, l.cj)([g.Z], () => ({
-    vanityURLCode: g.Z.vanityURLCode,
-    vanityURLUses: g.Z.vanityURLUses,
-    originalVanityURLCode: g.Z.originalVanityURLCode,
-    errorDetails: g.Z.errorDetails,
-    fetched: g.Z.fetchedVanityURL
+  } = (0, l.cj)([m.Z], () => ({
+    vanityURLCode: m.Z.vanityURLCode,
+    vanityURLUses: m.Z.vanityURLUses,
+    originalVanityURLCode: m.Z.originalVanityURLCode,
+    errorDetails: m.Z.errorDetails,
+    fetched: m.Z.fetchedVanityURL
   })), E = null == t ? true : t.id;
   return (i.useEffect(() => {
-    null == E || N || (0, m.U5)(E)
+    null == E || N || (0, g.U5)(E)
   }, [N, E]), null == t) ? null : _ ? (0, r.jsx)(a.Z, {}) : (0, r.jsxs)(s.hjN, {
     ref: n,
     children: [(0, r.jsxs)(s.vwX, {

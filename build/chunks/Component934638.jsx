@@ -2,7 +2,7 @@
 /** chunk id: 934638, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,17 +14,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk270856 = require("./270856.js");
 
-function m(e) {
+function g(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, m = t.id, g = i.useCallback(e => {
+  } = e, g = t.id, m = i.useCallback(e => {
     o.Z.updateGuild({
       description: e
-    }), o.Z.updateGuildProfile(m, {
+    }), o.Z.updateGuildProfile(g, {
       description: e
     })
-  }, [m]), p = (0, s.e7)([c.Z], () => c.Z.getError("description"));
+  }, [g]), p = (0, s.e7)([c.Z], () => c.Z.getError("description"));
   return (0, r.jsxs)(a.hjN, {
     className: u.section,
     children: [(0, r.jsxs)("div", {
@@ -38,7 +38,7 @@ function m(e) {
     }), (0, r.jsx)(a.Kx8, {
       value: t.description,
       placeholder: d.intl.string(d.t.Nvfows),
-      onChange: g,
+      onChange: m,
       maxLength: l.Us,
       disabled: !n,
       error: p

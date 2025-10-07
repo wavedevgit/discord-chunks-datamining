@@ -28,7 +28,7 @@ function b(e) {
     editStateId: b,
     guildId: j,
     groupListingId: _
-  } = (0, m.N)(), v = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), C = null == v ? true : v.id, O = (0, g.Z)(j), y = i.useMemo(() => {
+  } = (0, g.N)(), v = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), C = null == v ? true : v.id, O = (0, m.Z)(j), y = i.useMemo(() => {
     var e;
     return null != O && null != v && (null != (e = O[v.role_id]) ? e : 0)
   }, [O, v]), N = 0 === y, E = null == C, I = null != (t = null == v ? true : v.archived) && t, {

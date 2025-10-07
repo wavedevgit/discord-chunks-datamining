@@ -34,17 +34,17 @@ function f(e) {
   let I = x.find(e => e.value === _);
   return (0, r.jsx)(u.Z, {
     title: C ? f : null != (t = null == I ? true : I.title) ? t : f,
-    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
+    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
     highlightColor: C ? d.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(a.zx, {
       look: a.zx.Looks.LINK,
       size: a.zx.Sizes.MIN,
       color: a.zx.Colors.LINK,
-      children: g.intl.string(g.t.GEgsAw)
+      children: m.intl.string(m.t.GEgsAw)
     }),
     loading: y,
     className: b,
-    children: x.map((e, t) => (0, r.jsx)(m.Z, {
+    children: x.map((e, t) => (0, r.jsx)(g.Z, {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,

@@ -67,7 +67,7 @@ function _(e) {
       [x.pickerItemSelected]: i
     }),
     onClick: l,
-    children: (0, r.jsx)(m.v, {
+    children: (0, r.jsx)(g.v, {
       badge: n,
       width: 32,
       height: 32,
@@ -84,8 +84,8 @@ function v(e) {
     secondary: i,
     isSelected: l,
     showColorPopout: d,
-    setShowColorPopout: m,
-    palettePopoutTargetRef: g,
+    setShowColorPopout: g,
+    palettePopoutTargetRef: m,
     handleChange: f
   } = e, _ = (0, o.jm)({
     isSelected: l,
@@ -95,7 +95,7 @@ function v(e) {
     })
   });
   return (0, r.jsx)(u.Z, {
-    popoutTargetRef: g,
+    popoutTargetRef: m,
     showSecondaryColor: p.ER[t] >= 2,
     palette: {
       primary: n,
@@ -112,11 +112,11 @@ function v(e) {
       })
     },
     shouldShow: d,
-    onRequestClose: () => m(false),
+    onRequestClose: () => g(false),
     children: e => (0, r.jsx)(c.P3F, j(b({}, e, _), {
-      innerRef: g,
+      innerRef: m,
       onClick: () => {
-        m(e => !e)
+        g(e => !e)
       },
       className: s()(x.pickerItem, {
         [x.pickerItemSelected]: l
@@ -136,7 +136,7 @@ let C = function(e) {
     badge: l,
     primaryColor: s,
     secondaryColor: a
-  } = e, [d, u] = i.useState(false), m = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== s || e.secondary !== a), [s, a]), N = (0, o.Jb)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== s || e.secondary !== a), [s, a]), N = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: C
@@ -144,7 +144,7 @@ let C = function(e) {
 
   function E(e) {
     let t = {};
-    true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), g.Z.updateGuildProfile(n, t)
+    true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), m.Z.updateGuildProfile(n, t)
   }
   return (0, r.jsxs)("div", {
     className: t,
@@ -170,7 +170,7 @@ let C = function(e) {
         isSelected: y,
         showColorPopout: d,
         setShowColorPopout: u,
-        palettePopoutTargetRef: m,
+        palettePopoutTargetRef: g,
         handleChange: E
       })]
     }))]

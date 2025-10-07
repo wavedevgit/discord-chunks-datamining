@@ -44,23 +44,23 @@ function I(e) {
     guild: n,
     requireDescription: o
   } = e, c = i.useCallback(e => {
-    g.Z.updateGuild({
+    m.Z.updateGuild({
       discoverySplash: e
     })
   }, []), d = i.useCallback(() => {
-    g.Z.updateGuild({
+    m.Z.updateGuild({
       discoverySplash: null
     })
   }, []), p = i.useCallback(e => {
-    g.Z.updateGuild({
+    m.Z.updateGuild({
       description: e
     })
   }, []), {
     memberCount: f,
     onlineCount: x
-  } = (0, s.cj)([m.Z], () => ({
-    memberCount: m.Z.getMemberCount(n.id),
-    onlineCount: m.Z.getOnlineCount(n.id)
+  } = (0, s.cj)([g.Z], () => ({
+    memberCount: g.Z.getMemberCount(n.id),
+    onlineCount: g.Z.getOnlineCount(n.id)
   }));
   return (0, r.jsxs)("div", {
     className: N.twoColumns,
@@ -206,15 +206,15 @@ function T(e) {
     guildMetadata: n,
     requireTag: l,
     error: s
-  } = e, [u, m] = i.useState(null), g = i.useCallback(e => {
+  } = e, [u, g] = i.useState(null), m = i.useCallback(e => {
     let r = Array.from(e),
       i = [...n.keywords].filter(e => !r.includes(e));
-    m(null), (0, c.zH)(t, i)
+    g(null), (0, c.zH)(t, i)
   }, [t, n]), p = i.useCallback(e => {
     let {
       keywords: r
     } = n;
-    !(r.length >= C.G7) && (r.includes(e) || (m(null), (0, c.zH)(t, [...r, e])))
+    !(r.length >= C.G7) && (r.includes(e) || (g(null), (0, c.zH)(t, [...r, e])))
   }, [t, n]), h = i.useMemo(() => (0, f.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= C.G7;
     return {
@@ -236,9 +236,9 @@ function T(e) {
         description: y.intl.string(y.t.ztiTDA),
         tagsLabel: y.intl.string(y.t["0PJZXl"]),
         tags: b,
-        onRemoveTag: g,
+        onRemoveTag: m,
         onAddTag: p,
-        onAddTagError: m,
+        onAddTagError: g,
         maxTags: C.G7,
         maxTaxLength: C._0,
         placeholder: n.keywords.length < 1 ? y.intl.string(y.t.EL4Lho) : true
@@ -307,7 +307,7 @@ function w(e) {
   let {
     preferredLocale: t
   } = e, n = i.useMemo(() => (0, O.jb)(), []), l = i.useCallback(e => {
-    g.Z.updateGuild({
+    m.Z.updateGuild({
       preferredLocale: e
     })
   }, []);

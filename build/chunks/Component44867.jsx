@@ -2,7 +2,7 @@
 /** chunk id: 44867, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => g
+  c: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,11 +15,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk366869 = require("./366869.js");
 
-function g(e) {
+function m(e) {
   let {
     fetchDiscoveryData: t,
     settingsView: n,
-    requireTerms: g,
+    requireTerms: m,
     rules: p
   } = e, f = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
   if (i.useEffect(() => {
@@ -34,10 +34,10 @@ function g(e) {
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-md/semibold",
             color: "header-primary",
-            className: m.header,
+            className: g.header,
             children: u.intl.format(u.t.n1LDQE, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
-                className: m.danger,
+                className: g.danger,
                 children: e
               }, t)
             })
@@ -51,7 +51,7 @@ function g(e) {
     case d.U.ELIGIBLE_DISABLED:
     case d.U.ELIGIBLE_ENABLED:
       return (0, r.jsx)(c.d, {
-        requireTerms: g,
+        requireTerms: m,
         rules: p,
         settingsView: n
       });
@@ -63,7 +63,7 @@ function g(e) {
           variant: "heading-md/semibold",
           children: u.intl.format(u.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
-              className: m.danger,
+              className: g.danger,
               children: e
             }, t)
           })

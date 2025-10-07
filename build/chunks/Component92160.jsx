@@ -20,8 +20,8 @@ function c(e) {
     onPreview: c,
     onToggle: d,
     animateStatus: u,
-    firstLine: m,
-    secondLine: g,
+    firstLine: g,
+    secondLine: m,
     disabled: p
   } = e;
   return (0, r.jsxs)("div", {
@@ -46,10 +46,10 @@ function c(e) {
       className: o.enableDescription,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: m
+        children: g
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: g
+        children: m
       })]
     }), (0, r.jsxs)("div", {
       className: o.buttonContainer,

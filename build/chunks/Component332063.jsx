@@ -42,12 +42,14 @@ class u extends(r = Chunk647438.Component) {
       applicationId: n,
       includeMaster: r,
       hide: s,
-      className: l
+      className: l,
+      label: o
     } = this.props;
     if (0 === module.length || Chunk647438) return null;
-    let o = r ? module : module.filter(e => e.id !== n);
+    let c = r ? module : module.filter(e => e.id !== n);
     return (0, Chunk951288.jsx)(Chunk481060.q4e, {
-      options: Chunk274616.map(e => ({
+      label: Chunk274616,
+      options: Chunk560587.map(e => ({
         label: e.getName(n),
         value: e.id
       })),

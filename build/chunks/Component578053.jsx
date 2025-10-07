@@ -24,7 +24,7 @@ let x = "NO_CHANNEL";
 function b(e) {
   return {
     value: e.id,
-    label: (0, c.F6)(e, p.default, g.Z),
+    label: (0, c.F6)(e, p.default, m.Z),
     channel: e,
     category: u.Z.getChannel(e.parent_id)
   }
@@ -50,7 +50,7 @@ function _(e) {
     canManageGuild: t,
     guildId: n,
     afkChannelId: a
-  } = e, c = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
+  } = e, c = (0, s.e7)([g.Z], () => g.Z.getCategories(n)), d = i.useMemo(() => {
     let e = (0, o.Z)(c._categories, c).filter(e => {
       let {
         channel: t
@@ -88,8 +88,8 @@ function v(e) {
     label: c,
     description: d,
     layout: u
-  } = e, g = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), p = i.useMemo(() => {
-    let e = (0, o.Z)(g._categories, g).filter(e => {
+  } = e, m = (0, s.e7)([g.Z], () => g.Z.getCategories(n)), p = i.useMemo(() => {
+    let e = (0, o.Z)(m._categories, m).filter(e => {
       let {
         channel: t
       } = e;
@@ -104,7 +104,7 @@ function v(e) {
       value: x,
       label: h.intl.string(h.t.ibUhoa)
     }), e
-  }, [g]), j = i.useCallback(e => {
+  }, [m]), j = i.useCallback(e => {
     let t = e === x ? null : e;
     f.Z.updateGuild({
       systemChannelId: t
@@ -134,7 +134,7 @@ function C(e) {
     if (null != e) return (0, r.jsx)(j, {
       option: e
     })
-  }, []), m = i.useCallback(e => u(e[0]), [u]);
+  }, []), g = i.useCallback(e => u(e[0]), [u]);
   return (0, r.jsx)(a.q4e, {
     label: o,
     description: c,
@@ -143,7 +143,7 @@ function C(e) {
     isDisabled: !l,
     onChange: s,
     renderOptionLabel: u,
-    renderOptionValue: m,
+    renderOptionValue: g,
     layout: d
   })
 }

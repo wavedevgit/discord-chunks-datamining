@@ -196,86 +196,87 @@ let k = Chunk647438.forwardRef(function(e, t) {
     description: ef,
     helperText: e_,
     errorMessage: ep,
-    successMessage: eh
-  } = e, em = P(e, ["options", "value", "onChange", "clearable", "multi", "closeOnSelect", "onOpen", "onClose", "placeholder", "wrapperClassName", "className", "isDisabled", "isProcessing", "maxVisibleItems", "autoFocus", "popoutPosition", "popoutWidth", "filter", "debounceTime", "renderOptionLabel", "onSearchChange", "renderOptionPrefix", "renderOptionSuffix", "aria-describedby", "aria-invalid", "aria-labelledby", "aria-required", "inputClassNames", "onBlur", "onFocus", "matchSorterOptions", "clearQueryOnSelect", "hidePills", "renderCustomPill", "customPillContainerClassName", "label", "hideLabel", "required", "description", "helperText", "errorMessage", "successMessage"]);
+    successMessage: eh,
+    layout: em
+  } = e, eg = P(e, ["options", "value", "onChange", "clearable", "multi", "closeOnSelect", "onOpen", "onClose", "placeholder", "wrapperClassName", "className", "isDisabled", "isProcessing", "maxVisibleItems", "autoFocus", "popoutPosition", "popoutWidth", "filter", "debounceTime", "renderOptionLabel", "onSearchChange", "renderOptionPrefix", "renderOptionSuffix", "aria-describedby", "aria-invalid", "aria-labelledby", "aria-required", "inputClassNames", "onBlur", "onFocus", "matchSorterOptions", "clearQueryOnSelect", "hidePills", "renderCustomPill", "customPillContainerClassName", "label", "hideLabel", "required", "description", "helperText", "errorMessage", "successMessage", "layout"]);
   let {
-    ref: eg,
-    width: eE
+    ref: eE,
+    width: eb
   } = (0, y.ZP)(), {
-    titleId: eb,
-    errorId: ey,
-    error: eO
+    titleId: ey,
+    errorId: eO,
+    error: ev
   } = (0, p.Gc)(), {
-    ref: ev,
-    width: eI
-  } = (0, y.ZP)(), eT = i.useRef(null), [eS, eA] = i.useState(null), [eC, eN] = i.useState(false), [eR, eP] = i.useState(null), [ew, eD] = i.useState(false), eL = i.useRef(null), ex = i.useRef(null), {
-    options: eM,
-    loading: ej,
-    onQueryChange: ek
+    ref: eI,
+    width: eT
+  } = (0, y.ZP)(), eS = i.useRef(null), [eA, eC] = i.useState(null), [eN, eR] = i.useState(false), [eP, ew] = i.useState(null), [eD, eL] = i.useState(false), ex = i.useRef(null), eM = i.useRef(null), {
+    options: ej,
+    loading: ek,
+    onQueryChange: eU
   } = M({
-    active: eC,
+    active: eN,
     loadableOptions: n,
     debounceTime: W
-  }), eU = i.useMemo(() => j(eM, a), [eM, a]), eG = i.useMemo(() => eU.map(e => e.value), [eU]), eB = eU[eU.length - 1], eZ = (0, I.Z)(eB), eF = i.useId(), eV = i.useId(), eH = i.useCallback(e => {
-    eC === e || R || (eN(e), e ? null == E || E() : null == v || v())
-  }, [R, v, E, eC]), eY = i.useCallback(e => {
-    eC && !e && eH(false)
-  }, [eH, eC]), eW = (0, O.O)(eY);
+  }), eG = i.useMemo(() => j(ej, a), [ej, a]), eB = i.useMemo(() => eG.map(e => e.value), [eG]), eZ = eG[eG.length - 1], eF = (0, I.Z)(eZ), eV = i.useId(), eH = i.useId(), eY = i.useCallback(e => {
+    eN === e || R || (eR(e), e ? null == E || E() : null == v || v())
+  }, [R, v, E, eN]), eW = i.useCallback(e => {
+    eN && !e && eY(false)
+  }, [eY, eN]), eK = (0, O.O)(eW);
   i.useImperativeHandle(t, () => ({
     close() {
-      eH(false)
+      eY(false)
     }
   }));
-  let eK = i.useCallback((e, t) => {
+  let ez = i.useCallback((e, t) => {
       let n = document.querySelector(e),
-        r = eL.current;
-      eA(t), null != r && null != n && r.scrollIntoViewNode({
+        r = ex.current;
+      eC(t), null != r && null != n && r.scrollIntoViewNode({
         node: n
       })
     }, []),
-    ez = i.useCallback(() => new Promise(e => {
-      let t = eL.current;
+    eq = i.useCallback(() => new Promise(e => {
+      let t = ex.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    eq = i.useCallback(() => new Promise(e => {
-      let t = eL.current;
+    eX = i.useCallback(() => new Promise(e => {
+      let t = ex.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    eX = (0, c.ZP)({
-      id: eV,
-      defaultFocused: null != eB ? String(eB.value) : true,
-      scrollToStart: ez,
-      scrollToEnd: eq,
-      isEnabled: eC,
+    eQ = (0, c.ZP)({
+      id: eH,
+      defaultFocused: null != eZ ? String(eZ.value) : true,
+      scrollToStart: eq,
+      scrollToEnd: eX,
+      isEnabled: eN,
       wrap: true,
       useVirtualFocus: true,
-      setFocus: eK,
+      setFocus: ez,
       disableClickOnSpace: true
     }),
-    eQ = (0, I.Z)(eX),
-    eJ = (0, I.Z)(eM);
+    eJ = (0, I.Z)(eQ),
+    e$ = (0, I.Z)(ej);
   i.useEffect(() => {
-    let e = eJ.current,
-      t = eZ.current;
-    eC && null != t && !ej && requestAnimationFrame(() => {
-      let n = eL.current,
+    let e = e$.current,
+      t = eF.current;
+    eN && null != t && !ek && requestAnimationFrame(() => {
+      let n = ex.current,
         r = e.indexOf(t);
       null == n || n.scrollToIndex({
         section: 0,
         row: r
       })
     })
-  }, [eC, ej, eJ, eZ]), i.useEffect(() => {
-    let e = eQ.current;
-    if (eC && !ej) {
+  }, [eN, ek, e$, eF]), i.useEffect(() => {
+    let e = eJ.current;
+    if (eN && !ek) {
       var t;
-      let n = eT.current;
+      let n = eS.current;
       if (null != n) {
         n.focus();
         let {
@@ -283,72 +284,72 @@ let k = Chunk647438.forwardRef(function(e, t) {
         } = n;
         n.value = " ", n.value = e
       }
-      eA(null != (t = e.focusedItemId()) ? t : null)
+      eC(null != (t = e.focusedItemId()) ? t : null)
     } else {
-      let t = eZ.current,
+      let t = eF.current,
         n = null != t ? String(t.value) : null;
-      e.setFocus(n), eA(null)
+      e.setFocus(n), eC(null)
     }
-  }, [eC, ej, eQ, eZ]), i.useLayoutEffect(() => {
-    eC || (_ ? eP("") : null != eB && eP(eB.label))
-  }, [_, eB, eC]), i.useLayoutEffect(() => {
-    _ && eP("")
-  }, [_, eU.length]);
-  let e$ = i.useCallback(function(e) {
+  }, [eN, ek, eJ, eF]), i.useLayoutEffect(() => {
+    eN || (_ ? ew("") : null != eZ && ew(eZ.label))
+  }, [_, eZ, eN]), i.useLayoutEffect(() => {
+    _ && ew("")
+  }, [_, eG.length]);
+  let e0 = i.useCallback(function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     if (null == e) return void l(_ ? [] : true);
     let r = "function" == typeof n,
-      i = r ? eM.find(t => t.value === e) : e;
+      i = r ? ej.find(t => t.value === e) : e;
     if (_) {
       let n = null != a ? a : [];
       if (n.some(t => (r ? t.value : t) === e) ? l(n.filter(t => (r ? t.value : t) !== e)) : l([...n, i]), t) {
         var o;
-        null == (o = eT.current) || o.focus()
+        null == (o = eS.current) || o.focus()
       }
     } else l(i);
-    eA(null), (!_ || m) && eH(false), eD(false), ea && eP("")
-  }, [n, eM, _, m, ea, l, a, eH]);
+    eC(null), (!_ || m) && eY(false), eL(false), ea && ew("")
+  }, [n, ej, _, m, ea, l, a, eY]);
   i.useLayoutEffect(() => {
     if (k) {
       var e;
-      null == (e = eT.current) || e.focus()
+      null == (e = eS.current) || e.focus()
     }
   }, [k]);
-  let e0 = i.useCallback(() => {
-      eP(""), e$(null), eH(true)
-    }, [e$, eH]),
-    e1 = i.useCallback(e => {
+  let e1 = i.useCallback(() => {
+      ew(""), e0(null), eY(true)
+    }, [e0, eY]),
+    e2 = i.useCallback(e => {
       switch (e.key) {
         case "Escape":
-          eC && (e.stopPropagation(), eH(false));
+          eN && (e.stopPropagation(), eY(false));
           break;
         case "ArrowDown":
         case "ArrowUp":
-          eH(true)
+          eY(true)
       }
-    }, [eH, eC]),
-    e2 = eM;
-  ew && null != eR && false !== V && (e2 = "function" == typeof V ? V(eM, eR) : (0, s.Lu)(eM, eR, null != ei ? ei : L)), i.useEffect(() => {
-    let e = eL.current;
+    }, [eY, eN]),
+    e3 = ej;
+  eD && null != eP && false !== V && (e3 = "function" == typeof V ? V(ej, eP) : (0, s.Lu)(ej, eP, null != ei ? ei : L)), i.useEffect(() => {
+    let e = ex.current;
     null == e || e.scrollToTop()
-  }, [eR]), i.useEffect(() => {
-    !ej && ew && null !== eR && requestAnimationFrame(() => eX.focusFirstVisibleItem())
-  }, [ej, ew, eR, eX]);
-  let e3 = _ ? Y : H,
-    e4 = i.useRef(null),
+  }, [eP]), i.useEffect(() => {
+    !ek && eD && null !== eP && requestAnimationFrame(() => eQ.focusFirstVisibleItem())
+  }, [ek, eD, eP, eQ]);
+  let e4 = _ ? Y : H,
+    e8 = i.useRef(null),
     {
-      focusPreviousItem: e8,
-      focusNextItem: e5
-    } = B(e4, eT, eU);
+      focusPreviousItem: e5,
+      focusNextItem: e6
+    } = B(e8, eS, eG);
   return (0, r.jsxs)(u.bG, {
-    navigator: eX,
+    navigator: eQ,
     children: [(0, r.jsx)(h.y, {
-      targetElementRef: ex,
+      targetElementRef: eM,
       spacing: 0,
       animation: h.y.Animation.NONE,
-      shouldShow: eC,
-      onRequestClose: () => eH(false),
-      layerContext: em.popoutLayerContext,
+      shouldShow: eN,
+      onRequestClose: () => eY(false),
+      layerContext: eg.popoutLayerContext,
       renderPopout: e => {
         let {
           closePopout: t,
@@ -356,18 +357,18 @@ let k = Chunk647438.forwardRef(function(e, t) {
           updatePosition: i
         } = e;
         return (0, r.jsx)(U, {
-          loading: ej,
+          loading: ek,
           multi: !!_,
-          listRef: eL,
-          listId: eF,
+          listRef: ex,
+          listId: eV,
           maxVisibleItems: D,
-          width: null != F && "auto" !== F ? F : eI,
-          selectedValues: eG,
+          width: null != F && "auto" !== F ? F : eT,
+          selectedValues: eB,
           closePopout: t,
-          onSelect: e$,
+          onSelect: e0,
           closeOnSelect: m,
-          options: e2,
-          activeDescendant: eS,
+          options: e3,
+          activeDescendant: eA,
           renderOptionLabel: K,
           updatePosition: i,
           popoutPosition: n,
@@ -385,9 +386,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
         } = t, s = a ? b.u04 : b.CJ0, {
           ref: l,
           onKeyDown: c
-        } = eX.containerProps, u = e => {
+        } = eQ.containerProps, u = e => {
           var t;
-          null == (t = em.onKeyDown) || t.call(em, e), c(e), e1(e)
+          null == (t = eg.onKeyDown) || t.call(eg, e), c(e), e2(e)
         };
         return (0, r.jsx)(f.NIc, {
           label: ec,
@@ -397,35 +398,36 @@ let k = Chunk647438.forwardRef(function(e, t) {
           helperText: e_,
           errorMessage: ep,
           successMessage: eh,
+          layout: em,
           children: e => {
             var t;
             let i = null == e ? true : e.controlId;
             return (0, r.jsxs)(g.U, {
               as: "div",
               disabled: R,
-              ref: ex,
+              ref: eM,
               className: o()(C, S.wrapper),
               containerClassName: N,
               style: {
-                "--icons-width": "".concat(eE, "px")
+                "--icons-width": "".concat(eb, "px")
               },
               onBlur: e => {
                 var t, n, r;
-                (null == (t = ex.current) ? true : t.contains(e.relatedTarget)) || (null == (r = eL.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (_ || null == eB || eP(eB.label), eD(false), eH(false), null == en || en(e))
+                (null == (t = eM.current) ? true : t.contains(e.relatedTarget)) || (null == (r = ex.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (_ || null == eZ || ew(eZ.label), eL(false), eY(false), null == en || en(e))
               },
               children: [(0, r.jsx)(f.tEY, {
-                ringTarget: ev,
-                focusTarget: eT,
+                ringTarget: eI,
+                focusTarget: eS,
                 offset: 4,
                 children: (0, r.jsx)("div", {
                   onClick: R ? true : e => {
-                    e.stopPropagation(), e.preventDefault(), eP(""), eH(true)
+                    e.stopPropagation(), e.preventDefault(), ew(""), eY(true)
                   },
                   onMouseDown: e => {
                     e.preventDefault()
                   },
                   ref: e => {
-                    ev.current = e, eW.current = e
+                    eI.current = e, eK.current = e
                   },
                   className: o()(S.select, S.searchable, {
                     [S.multi]: _
@@ -434,41 +436,41 @@ let k = Chunk647438.forwardRef(function(e, t) {
                     className: o()(S.value, {
                       [S.multi]: _
                     }),
-                    children: (0, r.jsx)(e3, {
-                      query: eR,
-                      selectedOptions: eU,
-                      loading: ej,
+                    children: (0, r.jsx)(e4, {
+                      query: eP,
+                      selectedOptions: eG,
+                      loading: ek,
                       renderOptionPrefix: q,
                       renderOptionSuffix: X,
                       isDisabled: R,
-                      isEditing: ew,
+                      isEditing: eD,
                       isProcessing: w,
-                      inputRef: eT,
+                      inputRef: eS,
                       "aria-describedby": null != Q ? Q : null == e ? true : e.describedById,
-                      "aria-errormessage": null != (t = null == e ? true : e.errorMessageId) ? t : ey,
-                      "aria-invalid": null != J ? J : (null == e ? true : e.errorMessageId) != null || null != eO,
+                      "aria-errormessage": null != (t = null == e ? true : e.errorMessageId) ? t : eO,
+                      "aria-invalid": null != J ? J : (null == e ? true : e.errorMessageId) != null || null != ev,
                       "aria-required": null != ee ? ee : ed,
-                      "aria-labelledby": null != $ ? $ : eb,
+                      "aria-labelledby": null != $ ? $ : ey,
                       "aria-expanded": n,
                       setInputRef: e => {
-                        l.current = e, eT.current = e
+                        l.current = e, eS.current = e
                       },
                       onFocus: e => {
                         var t, n;
-                        null == (t = eT.current) || t.setSelectionRange(0, null != (n = null == eR ? true : eR.length) ? n : 0), null == er || er(e)
+                        null == (t = eS.current) || t.setSelectionRange(0, null != (n = null == eP ? true : eP.length) ? n : 0), null == er || er(e)
                       },
                       onChange: e => {
-                        ek(e), null == z || z(e), eP(e), eH(true), eD(true)
+                        eU(e), null == z || z(e), ew(e), eY(true), eL(true)
                       },
                       onKeyDown: u,
-                      activeDescendant: eS,
+                      activeDescendant: eA,
                       placeholder: A,
                       inputId: i,
-                      listboxId: eF,
-                      navigatorId: eV,
+                      listboxId: eV,
+                      navigatorId: eH,
                       selectValue: function(e) {
                         let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-                        e$(e, t)
+                        e0(e, t)
                       },
                       inputClassNames: et,
                       hidePills: eo
@@ -479,25 +481,25 @@ let k = Chunk647438.forwardRef(function(e, t) {
                 className: o()(S.icons, S.iconsContainer, {
                   [S.multi]: _
                 }),
-                ref: eg,
+                ref: eE,
                 children: w ? (0, r.jsx)(b.bbz, {
                   dotRadius: 3.5,
                   themed: true
                 }) : (0, r.jsxs)(r.Fragment, {
-                  children: [d && (null != eR && "" !== eR || eU.length > 0) ? (0, r.jsx)(f.P3F, {
+                  children: [d && (null != eP && "" !== eP || eG.length > 0) ? (0, r.jsx)(f.P3F, {
                     "aria-label": T.intl.string(T.t.VkKicX),
                     "aria-controls": i,
-                    onClick: e0,
+                    onClick: e1,
                     children: (0, r.jsx)(b.Dio, {
                       size: "xs",
                       color: "currentColor",
                       className: S.clear
                     })
                   }) : null, (0, r.jsx)(f.P3F, {
-                    "aria-label": eC ? T.intl.string(T.t.cpT0Cg) : T.intl.string(T.t["3xjX0d"]),
+                    "aria-label": eN ? T.intl.string(T.t.cpT0Cg) : T.intl.string(T.t["3xjX0d"]),
                     "aria-controls": i,
                     onClick: () => {
-                      eH(!eC)
+                      eY(!eN)
                     },
                     children: (0, r.jsx)(s, {
                       className: S.dropdownIcon,
@@ -510,16 +512,16 @@ let k = Chunk647438.forwardRef(function(e, t) {
           }
         })
       }
-    }), eU.length > 0 && null != es && (0, r.jsx)("div", {
+    }), eG.length > 0 && null != es && (0, r.jsx)("div", {
       children: (0, r.jsx)(Z, {
-        listRef: e4,
-        selectedOptions: eU,
+        listRef: e8,
+        selectedOptions: eG,
         selectValue: function(e) {
           let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-          e$(e, t)
+          e0(e, t)
         },
-        focusNextItem: e5,
-        focusPreviousItem: e8,
+        focusNextItem: e6,
+        focusPreviousItem: e5,
         renderCustomPill: es,
         customPillContainerClassName: el
       })

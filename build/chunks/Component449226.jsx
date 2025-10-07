@@ -19,7 +19,7 @@ function o(e) {
     disabled: c,
     className: d,
     tooltipProps: u
-  } = e, m = e => {
+  } = e, g = e => {
     e.stopPropagation(), e.preventDefault()
   };
   return (0, r.jsx)(s.P3F, (t = function(e) {
@@ -40,9 +40,9 @@ function o(e) {
     }
     return e
   }({
-    onClick: m,
-    onMouseDown: m,
-    onMouseUp: m,
+    onClick: g,
+    onMouseDown: g,
+    onMouseUp: g,
     className: l()(a.switch, d)
   }, u), n = n = {
     children: (0, r.jsx)(s.rsf, {

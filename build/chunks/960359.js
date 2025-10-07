@@ -1,5 +1,5 @@
 /** Chunk was on 90564 **/
-/** chunk id: 960359, original params: e,n,t (module,exports,require) **/
+/** chunk id: 960359, original params: e,n,a (module,exports,require) **/
 module.exports = {
   table: "table__4126d",
   row: "row__4126d",

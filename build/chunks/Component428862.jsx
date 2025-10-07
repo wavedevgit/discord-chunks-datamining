@@ -61,10 +61,10 @@ function C(e) {
     n(1)
   }, d = () => {
     n(2)
-  }, g = 2 === t, p = 1 === t;
-  if (!(!(r >= i) && r / i >= .8) || g) return null;
-  let f = p || g ? j.hidden : null,
-    h = p ? m.Z.Stages.FLYING : m.Z.Stages.HOVERING;
+  }, m = 2 === t, p = 1 === t;
+  if (!(!(r >= i) && r / i >= .8) || m) return null;
+  let f = p || m ? j.hidden : null,
+    h = p ? g.Z.Stages.FLYING : g.Z.Stages.HOVERING;
   return (0, l.jsx)(u.AMe, {
     from: {
       opacity: 0
@@ -77,7 +77,7 @@ function C(e) {
     children: e => (0, l.jsxs)(c.animated.div, {
       className: j.tierClose,
       style: e,
-      children: [(0, l.jsx)(m.Z, {
+      children: [(0, l.jsx)(g.Z, {
         className: j.tierCloseMechaWumpus,
         stage: h,
         onFlyingComplete: d
@@ -108,8 +108,8 @@ function O(e) {
     tier: a,
     showHeaderLockStatus: c,
     headerButton: d = null,
-    subscriptionsRequired: m,
-    subscriptionCount: g,
+    subscriptionsRequired: g,
+    subscriptionCount: m,
     className: p
   } = e, f = e => {
     null == i || i(e)
@@ -147,11 +147,11 @@ function O(e) {
         }), c ? (0, l.jsx)(N, {
           transform: null == e ? true : e.unlockedTranslateY.to(e => "translate3d(0, ".concat(e, "px, 0)")),
           headerButton: d,
-          subscriptionsRequired: m,
+          subscriptionsRequired: g,
           hasAnimatedUnlocked: r
         }) : null, (0, l.jsx)(C, {
-          numUnlocked: g,
-          numRequired: m
+          numUnlocked: m,
+          numRequired: g
         })]
       })
     })
@@ -167,7 +167,7 @@ function y(e) {
     isAnimatedTo: s,
     hasBottomMargin: a,
     headerButton: c = null,
-    withCardBody: m = true,
+    withCardBody: g = true,
     guildId: h,
     showHeaderLockStatus: _ = true
   } = e, v = (0, d.e7)([f.Z], () => {
@@ -186,7 +186,7 @@ function y(e) {
       onSetRef: e => {
         null != r && r(e, i)
       },
-      withCardBody: m,
+      withCardBody: g,
       guildId: h,
       hasBottomMargin: a,
       subscriptionsRequired: C,
@@ -194,7 +194,7 @@ function y(e) {
       isAnimatedTo: s
     }), (0, l.jsx)("div", {
       className: o()({
-        [j.tierBody]: m
+        [j.tierBody]: g
       }),
       children: null != t ? t : (0, l.jsxs)(l.Fragment, {
         children: [N ? (0, l.jsx)("div", {
@@ -207,7 +207,7 @@ function y(e) {
             let {
               Icon: r,
               className: i
-            } = (0, g.t)(e.icon, t);
+            } = (0, m.t)(e.icon, t);
             return (0, l.jsxs)("div", {
               className: j.perk,
               children: [(0, l.jsx)(p.Z, {

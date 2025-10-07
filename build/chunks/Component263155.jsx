@@ -83,10 +83,10 @@ let k = "WELCOME_CHANNEL",
       O = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
       y = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       I = null != O && S.Uu(w.Plq.VIEW_CHANNEL, O),
-      T = null != (t = (0, b.KS)(O)) ? t : m.VL1,
+      T = null != (t = (0, b.KS)(O)) ? t : g.VL1,
       P = (0, x.ZP)(O, false),
       G = () => {
-        (0, m.ZDy)(async () => {
+        (0, g.ZDy)(async () => {
           let {
             default: e
           } = await n.e("73196").then(n.bind(n, 514698));
@@ -140,7 +140,7 @@ let k = "WELCOME_CHANNEL",
       ref: C,
       "data-dnd-name": o.description,
       onContextMenu: e => {
-        (0, g.jW)(e, async () => {
+        (0, m.jW)(e, async () => {
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
@@ -155,11 +155,11 @@ let k = "WELCOME_CHANNEL",
       },
       children: [l, (0, r.jsxs)("div", {
         className: D.channelDescriptionWrapper,
-        children: [(0, r.jsx)(m.Text, {
+        children: [(0, r.jsx)(g.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: o.description
-        }), (0, r.jsxs)(m.Text, {
+        }), (0, r.jsxs)(g.Text, {
           className: I ? true : D.channelWarning,
           variant: "text-xs/normal",
           color: "header-secondary",
@@ -171,9 +171,9 @@ let k = "WELCOME_CHANNEL",
             children: I ? P : Z.intl.string(Z.t.zFuCsL)
           })]
         })]
-      }), (0, r.jsx)(m.hU, {
+      }), (0, r.jsx)(g.hU, {
         variant: "icon-only",
-        icon: m.XHJ,
+        icon: g.XHJ,
         "aria-label": Z.intl.string(Z.t.JYBc3N),
         onClick: G
       })]
@@ -185,7 +185,7 @@ let k = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: s
-    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [g, p] = i.useState(false), [x, b] = i.useState(false), {
+    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), a = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [x, b] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
@@ -208,7 +208,7 @@ let k = "WELCOME_CHANNEL",
     (0, f.ZP)(() => () => {
       U.current = true
     }), i.useEffect(() => () => {
-      if (U.current && g) {
+      if (U.current && m) {
         let e = [],
           n = [],
           r = false;
@@ -223,16 +223,16 @@ let k = "WELCOME_CHANNEL",
           is_enabled: S
         })
       }
-    }, [g, N, j, S, t]), i.useEffect(() => () => (0, O.sm)(), []);
+    }, [m, N, j, S, t]), i.useEffect(() => () => (0, O.sm)(), []);
     let B = i.useCallback(() => {
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
-    return null == t ? null : (0, r.jsxs)(m.hjN, {
+    return null == t ? null : (0, r.jsxs)(g.hjN, {
       title: Z.intl.string(Z.t["2rkmDg"]),
-      tag: m.RB0.H1,
+      tag: g.RB0.H1,
       children: [(0, r.jsx)("div", {
         className: D.notice,
-        children: (0, r.jsxs)(m.Text, {
+        children: (0, r.jsxs)(g.Text, {
           variant: "text-md/normal",
           children: [(0, r.jsx)(E.Z, {
             className: D.noticeIcon
@@ -243,13 +243,13 @@ let k = "WELCOME_CHANNEL",
             })
           })]
         })
-      }), (0, r.jsx)(m.Text, {
+      }), (0, r.jsx)(g.Text, {
         variant: "text-sm/normal",
         children: Z.intl.string(Z.t["w2d74+"])
       }), (0, r.jsx)(P.Z, {
         enabled: S,
         onPreview: (null == N ? true : N.length) === 0 ? true : () => {
-          null != t && (0, m.ZDy)(async () => {
+          null != t && (0, g.ZDy)(async () => {
             let {
               default: e
             } = await n.e("90542").then(n.bind(n, 184782));
@@ -275,7 +275,7 @@ let k = "WELCOME_CHANNEL",
             guild: t,
             animate: true,
             tabIndex: false
-          }), (0, r.jsx)(m.X6q, {
+          }), (0, r.jsx)(g.X6q, {
             className: D.welcomeTitle,
             variant: "heading-xl/semibold",
             children: Z.intl.format(Z.t["0aydCA"], {
@@ -292,7 +292,7 @@ let k = "WELCOME_CHANNEL",
             })
           }), (0, r.jsx)("div", {
             className: D.descriptionWrapper,
-            children: (0, r.jsx)(m.Kx8, {
+            children: (0, r.jsx)(g.Kx8, {
               placeholder: Z.intl.string(Z.t.qzZHaW),
               onChange: e => {
                 (0, O.VP)({
@@ -312,13 +312,13 @@ let k = "WELCOME_CHANNEL",
               disabled: true
             })
           })]
-        }), (0, r.jsx)(m.izJ, {
+        }), (0, r.jsx)(g.izJ, {
           className: D.divider
         }), (0, r.jsxs)("div", {
           className: D.welcomeChannels,
-          children: [(0, r.jsx)(m.vwX, {
+          children: [(0, r.jsx)(g.vwX, {
             children: Z.intl.string(Z.t.euJXzc)
-          }), (0, r.jsx)(m.Text, {
+          }), (0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
             className: D.addChannelSubtext,
             children: Z.intl.string(Z.t.VOnnn5)

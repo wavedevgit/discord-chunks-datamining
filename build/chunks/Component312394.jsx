@@ -93,7 +93,7 @@ function m(e) {
       children: a
     }) : null, (0, r.jsx)(s.K, {
       direction: "vertical",
-      gap: 16,
+      gap: 24,
       children: t
     })]
   }))

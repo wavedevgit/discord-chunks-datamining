@@ -32,18 +32,20 @@ class d extends Chunk647438.Component {
     let {
       skus: e,
       selectedSkuId: t,
-      className: n
-    } = this.props, i = null != module && 0 === module.length;
+      className: n,
+      label: i
+    } = this.props, s = null != module && 0 === module.length;
     return (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      label: Chunk647438,
       options: null != module ? module.map(e => ({
         label: e.name,
         value: e.id
       })) : [],
-      placeholder: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.hKcgPz) : Chunk388032.intl.string(Chunk388032.t.QV60Ul),
+      placeholder: Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.hKcgPz) : Chunk388032.intl.string(Chunk388032.t.QV60Ul),
       value: exports,
       onChange: this.handleChange,
       className: require,
-      isDisabled: Chunk647438
+      isDisabled: Chunk442837
     })
   }
   constructor(...e) {

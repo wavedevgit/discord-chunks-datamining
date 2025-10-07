@@ -2,9 +2,9 @@
 /** chunk id: 827907, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  EH: () => m,
+  EH: () => g,
   Mf: () => d,
-  lL: () => g,
+  lL: () => m,
   t4: () => u
 });
 var Chunk442837 = require("./442837.js"),
@@ -23,11 +23,11 @@ function u(e, t) {
   return (0, r.e7)([a.Z], () => e === t || null != t && a.Z.editedDefaultChannelIds.has(t))
 }
 
-function m(e, t) {
+function g(e, t) {
   return (0, r.e7)([a.Z, i.Z], () => null != t && a.Z.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y8) : s.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? true : c.intl.string(c.t["031cXl"]))
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = (0, r.e7)([l.Z], () => {
       var n;
       return (null == (n = l.Z.getGuild(e)) ? true : n.rulesChannelId) === t

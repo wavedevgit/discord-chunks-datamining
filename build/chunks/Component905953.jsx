@@ -30,11 +30,11 @@ function g(e) {
   } = (0, u.G)(), {
     loading: E,
     hasAlreadyLinked: S,
-    canStartAuthorization: N,
-    startAuthorization: T
-  } = (0, o.FG)(C), O = (0, m.ZP)(_), P = null == O || null == (t = O.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
+    canStartAuthorization: T,
+    startAuthorization: O
+  } = (0, o.FG)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null == y || null == y.edit_profile_upsell_image || null == C || E ? null : (0, a.jsx)(c.ZP, {
-    contentTypes: S ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : N ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: S ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
@@ -68,7 +68,7 @@ function g(e) {
         } : {
           text: b.intl.string(b.t.DSJi39),
           onClick: () => {
-            T(), j(true), (0, p.openUserProfileModal)({
+            O(), j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: f.oh.WIDGETS
             }).then(() => {

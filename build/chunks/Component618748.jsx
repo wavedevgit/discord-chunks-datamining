@@ -222,11 +222,11 @@ function U(e) {
                   [e.id]: e
                 };
                 (0, u.iD)(n.id, {
-                  type: m.z.SERVER_SHOP,
+                  type: g.z.SERVER_SHOP,
                   roles: t,
                   initialTab: "role_subscriptions",
                   returnToSection: R.pNK.ROLE_SUBSCRIPTIONS
-                }), (0, C.be)(n.id), (0, g.uL)(R.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
+                }), (0, C.be)(n.id), (0, m.uL)(R.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
               text: A.intl.string(A.t.vM81yc),
               size: "sm",

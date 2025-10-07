@@ -109,7 +109,7 @@ let G = Chunk647438.forwardRef((e, t) => {
       } = a, {
         user: i
       } = t;
-      null != i && null != l && (0, m.jW)(e, async () => {
+      null != i && null != l && (0, g.jW)(e, async () => {
         let {
           default: e
         } = await n.e("50929").then(n.bind(n, 595011));
@@ -123,7 +123,7 @@ let G = Chunk647438.forwardRef((e, t) => {
       let {
         log: t
       } = a, i = j.Z.getGuild(l);
-      null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, m.jW)(e, async () => {
+      null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, g.jW)(e, async () => {
         let {
           default: e
         } = await n.e("51529").then(n.bind(n, 228620));
@@ -141,7 +141,7 @@ let G = Chunk647438.forwardRef((e, t) => {
         case T.KFR.CHANNEL_OVERWRITE:
           let i = b.Z.getChannel(t.targetId),
             s = j.Z.getGuild(l);
-          if (null != i && null != s) return (0, m.jW)(e, async () => {
+          if (null != i && null != s) return (0, g.jW)(e, async () => {
             let {
               default: e
             } = await n.e("51529").then(n.bind(n, 228620));
@@ -149,7 +149,7 @@ let G = Chunk647438.forwardRef((e, t) => {
               channel: i
             }))
           });
-          return (0, m.jW)(e, async () => {
+          return (0, g.jW)(e, async () => {
             let {
               default: e
             } = await n.e("5396").then(n.bind(n, 731646));
@@ -160,7 +160,7 @@ let G = Chunk647438.forwardRef((e, t) => {
           });
         case T.KFR.USER:
           let o = v.default.getUser(t.targetId);
-          if (null != o && null != l) return (0, m.jW)(e, async () => {
+          if (null != o && null != l) return (0, g.jW)(e, async () => {
             let {
               default: e
             } = await n.e("50929").then(n.bind(n, 595011));
@@ -185,8 +185,8 @@ function M(e) {
     scroller: c,
     setExpandedRef: d,
     setLastExpandedRef: u,
-    onHeaderClick: m,
-    onContentClick: g
+    onHeaderClick: g,
+    onContentClick: m
   } = e, f = i.useRef(c);
   i.useEffect(() => {
     f.current = c
@@ -214,8 +214,8 @@ function M(e) {
                 null == a || a(e)
               },
               className: w.row,
-              onHeaderClick: m,
-              onContentClick: g,
+              onHeaderClick: g,
+              onContentClick: m,
               log: e,
               expanded: t
             }, e.id)
@@ -306,7 +306,7 @@ class U extends Chunk647438.PureComponent {
       isLoading: o,
       hasError: c,
       guildId: u,
-      guild: m
+      guild: g
     } = this.props;
     if (s) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
     if (Chunk374470 || Chunk91192) return this.renderSpinner();
@@ -456,14 +456,14 @@ class U extends Chunk647438.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        m = [u, ...a].map(e => e instanceof x.Z ? function(e) {
+        g = [u, ...a].map(e => e instanceof x.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,
             user: e
           }
         }(e) : e),
-        g = null != (t = m.find(e => {
+        m = null != (t = g.find(e => {
           let {
             value: t
           } = e;
@@ -473,10 +473,10 @@ class U extends Chunk647438.PureComponent {
         className: w.quickSelect,
         children: [(0, r.jsx)(d.EFH, {
           popoutClassName: s()(w.selectFilterPopout, Z.elevationBorderHigh),
-          items: m,
+          items: g,
           renderItem: this.renderUserQuickSelectItem,
           renderValue: this.renderUserQuickSelectValue,
-          value: g,
+          value: m,
           onChange: this.handleFilterUserChange,
           label: P.intl.string(P.t["hxnY/v"]),
           placeholder: P.intl.string(P.t.pYHobG),

@@ -202,7 +202,7 @@ function q(e) {
     _ = null != g.Z.useHolidaySoundpack();
   return (0, r.jsx)(A.F, {
     setting: U.s6.NOTIFICATIONS_SOUNDS,
-    children: (0, r.jsxs)(u.hjN, {
+    children: (0, r.jsxs)("div", {
       children: [_ ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.vwX, {
           className: F.marginBottom20,
@@ -482,8 +482,8 @@ function ee() {
       })
     }) : null, (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_NEW_SETTINGS,
-      children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
-        title: "New Notification Settings (Advanced, Staff Only)",
+      children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
+        label: "New Notification Settings (Advanced, Staff Only)",
         children: (0, Chunk951288.jsxs)("div", {
           style: {
             display: "flex",

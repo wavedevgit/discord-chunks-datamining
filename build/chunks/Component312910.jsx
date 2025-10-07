@@ -94,8 +94,8 @@ let C = {
       o = (0, f.Qi)(s, a),
       d = (0, f.FZ)(a),
       u = (0, f.A3)(a),
-      m = s.length;
-    return null == d || a === b.Eu4.TIER_3 || o > 0 ? null : (m > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
+      g = s.length;
+    return null == d || a === b.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1d, {
       level: d
     }), n = _.intl.formatToPlainString(_.t["13hOWl"], {
       level: d

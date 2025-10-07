@@ -57,32 +57,32 @@ let b = function(e) {
     role: j
   } = e, _ = (0, c.oC)(t.id, j), {
     analyticsLocations: v
-  } = (0, s.ZP)(), C = t.features.has(m.oNc.ROLE_ICONS), O = e => {
-    C || ((0, l.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  } = (0, s.ZP)(), C = t.features.has(g.oNc.ROLE_ICONS), O = e => {
+    C || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: x(h({}, e), {
-        section: m.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
+        section: g.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? true : t.id,
       location_stack: v
     }), (0, d.Z)({
       analyticsLocations: v,
       analyticsSourceLocation: {
-        page: m.ZY5.GUILD_SETTINGS,
-        section: m.jXE.GUILD_ROLE_EDIT_UPSELL_MODAL,
-        object: m.qAy.BADGE
+        page: g.ZY5.GUILD_SETTINGS,
+        section: g.jXE.GUILD_ROLE_EDIT_UPSELL_MODAL,
+        object: g.qAy.BADGE
       },
       guild: t,
-      perks: (0, g.Yp)()
+      perks: (0, m.Yp)()
     }))
   }, y = (0, r.jsx)(o.Z, {
     className: f.availabilityIndicator,
     guild: t,
-    guildFeature: m.oNc.ROLE_ICONS,
+    guildFeature: g.oNc.ROLE_ICONS,
     tooltipPosition: "top",
     hideTooltip: C,
     onClick: () => O({
-      object: m.qAy.LEARN_MORE,
-      objectType: m.Qqv.TIER_2
+      object: g.qAy.LEARN_MORE,
+      objectType: g.Qqv.TIER_2
     })
   });
   return (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ let b = function(e) {
           className: f.preview
         })
       }), (0, r.jsx)(i.zxk, {
-        onClick: () => t.features.has(m.oNc.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
+        onClick: () => t.features.has(g.oNc.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("22942").then(n.bind(n, 660727));
@@ -120,7 +120,7 @@ let b = function(e) {
             onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
           }))
         }) : O({
-          object: m.qAy.UPLOAD_IMAGE
+          object: g.qAy.UPLOAD_IMAGE
         }),
         variant: "primary",
         disabled: b,

@@ -33,7 +33,7 @@ function E(e) {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, g.k)(e), (0, p.V)(e), (0, a.le)(), (0, a.aC)(e)
+      await (0, m.k)(e), (0, p.V)(e), (0, a.le)(), (0, a.aC)(e)
     } finally {
       n.current = true
     }
@@ -75,7 +75,7 @@ function I(e) {
     return null == (e = _.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
     h.Z.setIsAgeRestricted(t, e)
-  }, [t]), m = n === O.V_K.AGE_RESTRICTED && a !== O.V_K.AGE_RESTRICTED;
+  }, [t]), g = n === O.V_K.AGE_RESTRICTED && a !== O.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(s.hjN, {
     children: (0, r.jsx)(s.rsf, {
       label: y.intl.string(y.t.N9xEJC),
@@ -84,7 +84,7 @@ function I(e) {
       }),
       checked: o,
       onChange: c,
-      disabled: m
+      disabled: g
     })
   })
 }

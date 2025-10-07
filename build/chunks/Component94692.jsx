@@ -112,10 +112,8 @@ class m extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
       className: exports,
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        tag: "h5",
-        children: Chunk388032.intl.string(Chunk388032.t.WTJuNj)
-      }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+        label: Chunk388032.intl.string(Chunk388032.t.WTJuNj),
         autoFocus: require,
         options: this.getOptions(),
         value: module,

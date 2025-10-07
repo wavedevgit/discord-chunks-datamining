@@ -3,9 +3,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk296009 = require("./296009.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk592183 = require("./592183.js"),
   Chunk86419 = require("./86419.js"),
@@ -21,14 +20,12 @@ function d() {
       let t = (0, s.np)(e);
       (0, s.ES)(e, t)
     };
-  return module ? (0, Chunk951288.jsx)("div", {
+  return module ? (0, Chunk951288.jsxs)("div", {
     className: Chunk667108.container,
-    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        children: "User Profile Widgets"
-      }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-        children: "Generate and test different widget configurations for user profiles."
-      }), (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
+      label: "User Profile Widgets",
+      description: "Generate and test different widget configurations for user profiles.",
+      children: (0, Chunk951288.jsxs)("div", {
         className: Chunk667108.buttonGroup,
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
@@ -59,20 +56,18 @@ function d() {
             Chunk592183.Z.clearPendingWidgets()
           }
         })]
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk667108.buttonGroup,
-        children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-          children: "Backend integration:"
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-          variant: "active",
-          text: "Save Widgets State",
-          onClick: () => (0, Chunk86419.X6)()
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-          variant: "critical-primary",
-          text: "Clear Saved Widgets",
-          onClick: () => (0, Chunk86419.tk)()
-        })]
+      })
+    }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      label: "Backend integration",
+      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        variant: "active",
+        text: "Save Widgets State",
+        onClick: () => (0, Chunk86419.X6)()
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        variant: "critical-primary",
+        text: "Clear Saved Widgets",
+        onClick: () => (0, Chunk86419.tk)()
       })]
-    })
+    })]
   }) : null
 }

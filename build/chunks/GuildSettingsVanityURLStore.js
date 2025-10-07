@@ -2,7 +2,7 @@
 /** chunk id: 566084, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -11,7 +11,7 @@ let a = null,
   c = null,
   d = null,
   u = false;
-class m extends(i = Chunk442837.ZP.Store) {
+class g extends(i = Chunk442837.ZP.Store) {
   hasChanges() {
     return a !== c
   }
@@ -36,13 +36,13 @@ class m extends(i = Chunk442837.ZP.Store) {
   get fetchedVanityURL() {
     return u
   }
-}(r = "displayName") in m ? Object.defineProperty(m, r, {
+}(r = "displayName") in g ? Object.defineProperty(g, r, {
   value: "GuildSettingsVanityURLStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : m[r] = "GuildSettingsVanityURLStore";
-let g = new m(Chunk570140.Z, {
+}) : g[r] = "GuildSettingsVanityURLStore";
+let m = new g(Chunk570140.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
     c = a = null != (t = e.code) ? t : "", o = e.uses, d = null != (n = e.error) ? n : null, u = true

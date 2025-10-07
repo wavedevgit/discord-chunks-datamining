@@ -36,11 +36,11 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: a
-  } = e, h = (0, g.BT)(t), b = (0, p.Z)(t), [j, _] = i.useState(b), v = (0, o.e7)([x.Z], () => x.Z.getChannel(l), [l]), C = (0, u.ZP)(v), I = async () => {
+  } = e, h = (0, m.BT)(t), b = (0, p.Z)(t), [j, _] = i.useState(b), v = (0, o.e7)([x.Z], () => x.Z.getChannel(l), [l]), C = (0, u.ZP)(v), I = async () => {
     _(!j);
     try {
       var e;
-      await (0, m.f6)(t, !b);
+      await (0, g.f6)(t, !b);
       let n = null != (e = null != l ? l : t.safetyAlertsChannelId) ? e : null;
       if (null != n) {
         let e = {
@@ -91,8 +91,8 @@ function S(e) {
     guild: n,
     selectedChannelId: i,
     setSelectedChannelId: l,
-    className: m
-  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([b.ZP, v.default, _.Z, j.Z], () => {
+    className: g
+  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([b.ZP, v.default, _.Z, j.Z], () => {
     let e = b.ZP.getChannels(n.id)[b.sH].filter(e => {
       let {
         channel: t
@@ -107,11 +107,11 @@ function S(e) {
         label: (0, u.F6)(t, v.default, _.Z, true)
       }
     });
-    return null != g ? e : [...e]
-  }, [n.id, g]), x = async e => {
+    return null != m ? e : [...e]
+  }, [n.id, m]), x = async e => {
     l(e);
     try {
-      if (e !== g && (await C.Z.saveGuild(n.id, {
+      if (e !== m && (await C.Z.saveGuild(n.id, {
           safetyAlertsChannelId: e
         }, {
           throwErr: true
@@ -128,11 +128,11 @@ function S(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), l(g)
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), l(m)
     }
   };
   return (0, r.jsx)("div", {
-    className: s()(E.itemBodyContainer, m),
+    className: s()(E.itemBodyContainer, g),
     children: (0, r.jsxs)("div", {
       className: E.itemBodyInner,
       children: [(0, r.jsx)(c.vwX, {

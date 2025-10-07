@@ -2,7 +2,7 @@
 /** chunk id: 683579, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk273504 = require("./273504.js"),
   Chunk464992 = require("./464992.js");
 
-function m(e) {
+function g(e) {
   let {
     action: t,
     triggerType: n,
@@ -25,14 +25,14 @@ function m(e) {
   if (null == c) return null;
   let {
     headerText: d,
-    descriptionText: m,
-    icon: g
+    descriptionText: g,
+    icon: m
   } = c;
   return (0, r.jsxs)("div", {
     className: u.actionContainer,
     children: [(0, r.jsx)("div", {
       className: u.actionIconContainer,
-      children: (0, r.jsx)(g, {
+      children: (0, r.jsx)(m, {
         size: "md",
         color: "currentColor",
         className: u.actionIcon
@@ -45,7 +45,7 @@ function m(e) {
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: m
+        children: g
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.$q, {
@@ -59,7 +59,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     action: t,
     guildId: n,
@@ -91,7 +91,7 @@ function g(e) {
         onToggleAction: s
       });
     default:
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(g, {
         action: t,
         guildId: n,
         toggled: l,

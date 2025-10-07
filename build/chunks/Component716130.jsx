@@ -58,14 +58,14 @@ function v(e) {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: l
-  } = e, c = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), m = u.length, {
+  } = e, c = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
     drag: f,
     drop: j,
     dragSourcePosition: _,
     setIsDraggable: v
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
-    index: m,
+    index: g,
     optionId: "separator",
     onDragStart: () => {},
     onDragComplete: () => {},
@@ -78,12 +78,12 @@ function v(e) {
   }, [f, j, C]), (0, r.jsxs)("div", {
     ref: C,
     className: s()(b.separatorSection, {
-      [b.dropIndicatorBefore]: null != _ && m < _,
-      [b.dropIndicatorAfter]: null != _ && m > _
+      [b.dropIndicatorBefore]: null != _ && g < _,
+      [b.dropIndicatorAfter]: null != _ && g > _
     }),
     children: [!l && u.length < h.b3 ? (0, r.jsxs)(o.P3F, {
       className: b.addPrompt,
-      onClick: () => (0, g.tS)(t, [...c, (0, h.yZ)(true)], false),
+      onClick: () => (0, m.tS)(t, [...c, (0, h.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
@@ -118,7 +118,7 @@ function C(e) {
     postjoinOnly: i,
     includeCount: l,
     singleColumn: s
-  } = e, d = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), C = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), O = C.filter(e => e.inOnboarding), y = C.filter(e => true !== e.inOnboarding), N = [...O.map(e => ({
+  } = e, d = (0, a.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), O = C.filter(e => e.inOnboarding), y = C.filter(e => true !== e.inOnboarding), N = [...O.map(e => ({
     id: e.id,
     data: e
   })), {
@@ -146,7 +146,7 @@ function C(e) {
         numQuestions: h.b3
       })
     });
-    (0, g.tS)(d, [...n, ...r])
+    (0, m.tS)(d, [...n, ...r])
   });
   return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
@@ -187,7 +187,7 @@ function C(e) {
         onPromptDragComplete: S
       }, e.id)), C.length < h.YW ? (0, r.jsxs)(o.P3F, {
         className: b.addPrompt,
-        onClick: () => (0, g.tS)(d, [...C, (0, h.yZ)(false)], false),
+        onClick: () => (0, m.tS)(d, [...C, (0, h.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

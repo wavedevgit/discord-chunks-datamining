@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594928 = require("./594928.js"),
   Chunk612659 = require("./612659.js"),
@@ -44,10 +43,11 @@ function m(e) {
       placeholder: g,
       maxLength: f.l$U,
       onChange: T,
-      disabled: !O
-    }), !O && (0, r.jsx)(a.R94, {
+      disabled: !O,
+      helperText: O ? true : p.intl.string(p.t.gzjxQk)
+    }), !O && (0, r.jsx)(a.Text, {
+      variant: "text-sm/normal",
       className: h.nicknameDisabled,
-      type: a.R94.Types.DESCRIPTION,
       children: p.intl.string(p.t.gzjxQk)
     }), I && v && (0, r.jsx)(c.Z, {
       user: E,

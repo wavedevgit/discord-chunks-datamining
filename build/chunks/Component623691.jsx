@@ -42,7 +42,7 @@ function E(e) {
     var e, t;
     c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : _.Cl)
   }, [c]);
-  let m = i.useCallback(() => {
+  let g = i.useCallback(() => {
     s(n.id)
   }, [s, n.id]);
   return (0, r.jsxs)("div", {
@@ -63,7 +63,7 @@ function E(e) {
       filteredRoles: l,
       query: a,
       setQuery: o,
-      onEveryoneRoleClick: m
+      onEveryoneRoleClick: g
     })]
   })
 }
@@ -73,7 +73,7 @@ function I(e) {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, g.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+    (0, m.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
       dismissAction: C.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
@@ -174,7 +174,7 @@ function T(e) {
   }, [l]), c = i.useCallback(() => {
     l("")
   }, [l]), u = async () => {
-    a(true), await m.Z.createRole(t.id), a(false)
+    a(true), await g.Z.createRole(t.id), a(false)
   };
   return (0, r.jsx)("div", {
     className: N.__invalid_rolesList,

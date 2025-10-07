@@ -24,8 +24,8 @@ let c = {
   },
   d = c,
   u = false,
-  m = false,
-  g = c;
+  g = false,
+  m = c;
 
 function p(e) {
   let {
@@ -34,29 +34,29 @@ function p(e) {
   } = e, r = s.Z.getGuild(n);
   if (null != t) {
     var i, l;
-    g = d = {
+    m = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
       enabled: null == r ? true : r.features.has(a.oNc.WELCOME_SCREEN_ENABLED)
     }
-  } else g = d = c;
-  m = false
+  } else m = d = c;
+  g = false
 }
 class f extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z)
   }
   get() {
-    return g
+    return m
   }
   showNotice() {
-    return m
+    return g
   }
   getSettingsProps() {
     return {
       submitting: u,
-      hasErrors: m,
-      welcomeSettings: g,
+      hasErrors: g,
+      welcomeSettings: m,
       originalWelcomeSettings: d
     }
   }
@@ -66,16 +66,16 @@ let h = new f(Chunk570140.Z, {
   WELCOME_SCREEN_FETCH_SUCCESS: p,
   WELCOME_SCREEN_UPDATE: p,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    g = d, m = false
+    m = d, g = false
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    g = c, d = c
+    m = c, d = c
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {
       settings: t
     } = e;
-    g = function(e) {
+    m = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -86,7 +86,7 @@ let h = new f(Chunk570140.Z, {
         })
       }
       return e
-    }({}, g, t)
+    }({}, m, t)
   },
   WELCOME_SCREEN_SUBMIT: function() {
     u = true
@@ -95,6 +95,6 @@ let h = new f(Chunk570140.Z, {
     p(e), u = false
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
-    m = true, u = false
+    g = true, u = false
   }
 })

@@ -2,19 +2,16 @@
 /** chunk id: 325808, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk825209 = require("./825209.jsx"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk313201 = require("./313201.js"),
   Chunk131951 = require("./131951.js"),
   Chunk358085 = require("./358085.js"),
   Chunk383451 = require("./383451.js"),
@@ -22,12 +19,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk947889 = require("./947889.js"),
   Chunk962100 = require("./962100.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk184767 = require("./184767.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,141 +30,109 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let C = !Chunk358085.isPlatformEmbedded,
-  N = (0, Chunk313201.hQ)();
+let O = !Chunk358085.isPlatformEmbedded;
 
-function R(e) {
+function v(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "\xa0ms")
 }
 
-function P(e) {
+function I(e) {
   let t, {
       inputMode: n
     } = e,
     {
       shortcut: i,
-      delay: a,
-      pttLatchingEnabled: l
-    } = (0, s.cj)([p.Z], () => p.Z.getModeOptions()),
+      delay: o,
+      pttLatchingEnabled: u
+    } = (0, a.cj)([d.Z], () => d.Z.getModeOptions()),
     {
-      enableLatching: f
-    } = (0, m.H)({
+      enableLatching: b
+    } = (0, _.H)({
       location: "PTTTools"
     }),
-    S = (0, E.Z)();
-  return t = h.isPlatformEmbedded || n !== y.pM4.PUSH_TO_TALK ? (0, r.jsx)(c.R94, {
-    type: c.R94.Types.DESCRIPTION,
-    className: o()(v.pttToolsMessage, T.marginBottom8),
-    children: O.intl.format(O.t.HVvn5e, {
-      onClick: () => S(g.n.KEYBINDS_PANEL, {
-        section: y.oAB.KEYBINDS
+    y = (0, h.Z)();
+  return t = f.isPlatformEmbedded || n !== g.pM4.PUSH_TO_TALK ? (0, r.jsx)(s.Wn, {
+    messageType: s.QYI.INFO,
+    children: E.intl.format(E.t.HVvn5e, {
+      onClick: () => y(p.n.KEYBINDS_PANEL, {
+        section: g.oAB.KEYBINDS
       })
     })
-  }) : (0, r.jsx)(c.R94, {
-    type: c.R94.Types.DESCRIPTION,
-    className: o()(v.pttToolsMessage, v.pttToolsWarning, T.marginBottom8),
-    children: O.intl.format(O.t.zvMPOT, {
-      onDownloadClick: () => (0, b.y)("Help Text PTT")
+  }) : (0, r.jsx)(s.Wn, {
+    messageType: s.QYI.WARNING,
+    children: E.intl.format(E.t.zvMPOT, {
+      onDownloadClick: () => (0, m.y)("Help Text PTT")
     })
-  }), (0, r.jsxs)("div", {
-    className: v.pttTools,
-    children: [(0, r.jsxs)("div", {
-      className: v.pttToolsFlex,
-      children: [(0, r.jsx)("div", {
-        className: v.column,
-        children: (0, r.jsx)(c.xJW, {
-          title: O.intl.string(O.t.YkDjVF),
-          children: (0, r.jsx)(d.Z, {
-            defaultValue: i,
-            onChange: e => u.Z.setMode(n, {
-              shortcut: e
-            })
+  }), (0, r.jsxs)(s.Kqy, {
+    gap: 20,
+    children: [(0, r.jsxs)(s.Kqy, {
+      gap: 16,
+      direction: "horizontal",
+      children: [(0, r.jsx)(s.NIc, {
+        label: E.intl.string(E.t.YkDjVF),
+        children: (0, r.jsx)(c.Z, {
+          defaultValue: i,
+          onChange: e => l.Z.setMode(n, {
+            shortcut: e
           })
         })
-      }), (0, r.jsx)("div", {
-        className: v.column,
-        children: (0, r.jsxs)(c.xJW, {
-          children: [(0, r.jsx)(c.vwX, {
-            id: N,
-            className: T.marginBottom8,
-            children: O.intl.string(O.t.y0ShVl)
-          }), (0, r.jsx)(c.iRW, {
-            initialValue: a,
-            onValueChange: e => u.Z.setMode(n, {
-              delay: e
-            }),
-            onValueRender: R,
-            maxValue: y.qhL,
-            "aria-labelledby": N
-          })]
-        })
+      }), (0, r.jsx)(s.iRW, {
+        label: E.intl.string(E.t.y0ShVl),
+        initialValue: o,
+        onValueChange: e => l.Z.setMode(n, {
+          delay: e
+        }),
+        onValueRender: v,
+        maxValue: g.qhL
       })]
-    }), f && (0, r.jsxs)("div", {
-      className: T.marginTop8,
-      children: [(0, r.jsx)(_.FG, {
-        children: e => (0, r.jsxs)("div", {
-          className: o()(I.horizontal, T.marginBottom4),
-          children: [(0, r.jsx)(c.vwX, {
-            tag: c.RB0.H3,
-            className: T.marginReset,
-            children: (0, r.jsx)("label", {
-              htmlFor: e,
-              children: O.intl.string(O.t.EGn1eH)
-            })
-          }), (0, r.jsx)(c.rsf, {
-            id: e,
-            checked: null != l && l,
-            onChange: e => u.Z.setMode(n, {
-              pttLatchingEnabled: e
-            })
-          })]
-        })
-      }), (0, r.jsx)(c.R94, {
-        type: c.R94.Types.DESCRIPTION,
-        className: T.marginBottom8,
-        children: O.intl.string(O.t.iT257u)
-      })]
+    }), b && (0, r.jsx)(s.rsf, {
+      label: E.intl.string(E.t.EGn1eH),
+      description: E.intl.string(E.t.iT257u),
+      checked: null != u && u,
+      onChange: e => l.Z.setMode(n, {
+        pttLatchingEnabled: e
+      })
     }), t]
   })
 }
 
-function w() {
+function T() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), a = [{
+  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), c = [{
     value: Chunk981631.pM4.VOICE_ACTIVITY,
     name: Chunk388032.intl.string(Chunk388032.t.cHCEOD)
   }, {
     value: Chunk981631.pM4.PUSH_TO_TALK,
-    name: C ? Chunk388032.intl.string(Chunk388032.t["1AINrK"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVF)
-  }], o = Chunk647438.useCallback(t => {
+    name: O ? Chunk388032.intl.string(Chunk388032.t["1AINrK"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVF)
+  }], f = Chunk647438.useCallback(t => {
     let {
       value: i
     } = t;
-    i === y.pM4.PUSH_TO_TALK && C && (0, c.ZDy)(async () => {
+    i === g.pM4.PUSH_TO_TALK && O && (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
-      return t => (0, r.jsx)(e, A({
-        title: O.intl.string(O.t.Kdt0GR),
-        confirmText: O.intl.string(O.t["1WjMbG"]),
-        cancelText: O.intl.string(O.t.BddRzc),
-        onConfirm: () => (0, b.y)("PTT Limited Modal"),
-        body: O.intl.string(O.t.NIozvr)
+      return t => (0, r.jsx)(e, y({
+        title: E.intl.string(E.t.Kdt0GR),
+        confirmText: E.intl.string(E.t["1WjMbG"]),
+        cancelText: E.intl.string(E.t.BddRzc),
+        onConfirm: () => (0, m.y)("PTT Limited Modal"),
+        body: E.intl.string(E.t.NIozvr)
       }, t))
-    }), u.Z.setMode(i, true, true, {
+    }), l.Z.setMode(i, true, true, {
       analyticsLocations: e
     })
   }, [module]);
@@ -178,12 +140,12 @@ function w() {
     gap: 20,
     children: [(0, Chunk951288.jsx)(Chunk538534.E, {
       label: Chunk388032.intl.string(Chunk388032.t["pS+K2N"]),
-      onChange: e => o({
+      onChange: e => f({
         value: e
       }),
-      options: Chunk120356,
+      options: Chunk825209,
       value: exports
-    }), exports === Chunk981631.pM4.PUSH_TO_TALK && (0, Chunk951288.jsx)(P, {
+    }), exports === Chunk981631.pM4.PUSH_TO_TALK && (0, Chunk951288.jsx)(I, {
       inputMode: exports
     })]
   })

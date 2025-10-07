@@ -138,7 +138,7 @@ let N = [{
   S = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [s, v] = i.useState(0), [C, O] = i.useState(), S = (0, a.e7)([g.Z], () => g.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
+    } = e, [n, l] = i.useState(0), [s, v] = i.useState(0), [C, O] = i.useState(), S = (0, a.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
     return i.useEffect(() => {
       null != T && l(T / 2), null != P && v(P / 2)
     }, [T, P, l, v]), i.useEffect(() => {
@@ -192,7 +192,7 @@ let N = [{
             variant: "primary",
             text: x.intl.string(x.t.LhlgY2),
             onClick: () => {
-              m.Z.open()
+              g.Z.open()
             },
             disabled: !S
           })

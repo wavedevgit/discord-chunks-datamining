@@ -27,13 +27,13 @@ function b(e) {
     } = e,
     b = n.mfaLevel,
     j = (0, l.e7)([u.Z], () => null != n && u.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
-    _ = (0, l.e7)([m.default], () => m.default.getCurrentUser()),
+    _ = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
     v = (0, d.eM)(n, _),
     C = null == _ ? true : _.mfaEnabled,
     O = b === f.BpS.ELEVATED,
     y = v && C,
     N = (0, i.throttle)(async e => {
-      y && await g.Z.updateMFALevel({
+      y && await m.Z.updateMFALevel({
         guildId: n.id,
         level: e ? f.BpS.ELEVATED : f.BpS.NONE,
         isEnabled: !e

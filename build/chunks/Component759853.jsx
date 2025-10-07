@@ -25,18 +25,18 @@ let _ = ["#51BC9D"],
       expansionSpring: n,
       overlayRef: o,
       quest: b,
-      progressBarRef: j,
-      isExpanded: v,
+      progressBarRef: v,
+      isExpanded: j,
       isHovered: C
     } = e, {
       completionSpring: y,
       startCompletionAnimation: E
-    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [R, A] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
+    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [A, R] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(R, B), D = s.useCallback(() => {
+    })), q = (0, i.uR)(A, B), D = s.useCallback(() => {
       if (T) return;
-      let e = j.current,
+      let e = v.current,
         t = w.current;
       if (null != t && null != e && q.isReady) {
         var n, r, s, o, a, i;
@@ -112,10 +112,10 @@ let _ = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [j, w, q, T]), L = (0, u.Z)(v);
+    }, [v, w, q, T]), L = (0, u.Z)(j);
     return (s.useEffect(() => {
-      O && v && !L && (E(), D())
-    }, [v, O, E, D, L]), s.useEffect(() => {
+      O && j && !L && (E(), D())
+    }, [j, O, E, D, L]), s.useEffect(() => {
       O && !P && N && setTimeout(() => {
         E(), D()
       }, 200)
@@ -146,7 +146,7 @@ let _ = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: A,
+          ref: R,
           className: h.confetti,
           environment: I.current
         }), (0, r.jsx)(i.Ji, {

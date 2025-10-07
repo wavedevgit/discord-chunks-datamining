@@ -15,7 +15,7 @@ function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, c = i.useMemo(() => (0, s.V9)(t.triggerType), [t.triggerType]), d = a.km(t.guildId), u = i.useMemo(() => (0, l.U5)(), []), m = (e, r) => {
+  } = e, c = i.useMemo(() => (0, s.V9)(t.triggerType), [t.triggerType]), d = a.km(t.guildId), u = i.useMemo(() => (0, l.U5)(), []), g = (e, r) => {
     var i, l;
     if (null == r) return;
     let s = t.actions.some(e => e.type === r.type),
@@ -69,8 +69,8 @@ function c(e) {
             s = n ? r : l;
           if (null != s && (!i || n)) {
             let n = d[e];
-            null != n ? m(true, await n(t, s)) : m(true, s)
-          } else m(false, i ? r : l)
+            null != n ? g(true, await n(t, s)) : g(true, s)
+          } else g(false, i ? r : l)
         }
       }, e)
     })

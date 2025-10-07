@@ -79,7 +79,7 @@ function k(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, m = (0, c.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), g = (0, c.e7)([C.Z], () => C.Z.getHighestRole(n), [n]), f = u.trim();
+  } = e, g = (0, c.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([C.Z], () => C.Z.getHighestRole(n), [n]), f = u.trim();
   i.useEffect(() => {
     (0, y.E)(n.id)
   }, [n.id]);
@@ -107,9 +107,9 @@ function k(e) {
       return (0, r.jsx)(M, {
         role: o,
         guild: n,
-        highestRole: g,
+        highestRole: m,
         currentPosition: l,
-        memberCount: null != (i = null == m ? true : m[o.id]) ? i : 0,
+        memberCount: null != (i = null == g ? true : g[o.id]) ? i : 0,
         onDragStart: _,
         onDragReset: v,
         onDragComplete: I,
@@ -118,7 +118,7 @@ function k(e) {
         setEditRoleId: t,
         setSelectedSection: a
       }, o.id)
-    }, [x, n, g, m, _, v, I, j, s, t, a]);
+    }, [x, n, m, g, _, v, I, j, s, t, a]);
   return (0, r.jsx)(p.Xi, {
     sections: [Math.max(x.length, 1)],
     sectionHeight: d,
@@ -194,7 +194,7 @@ function M(e) {
   }), [G, d]), [{
     dragSourcePosition: V
   }, K] = (0, o.L)(W), Y = i.useCallback(e => {
-    (0, g.jW)(e, async () => {
+    (0, m.jW)(e, async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
@@ -214,7 +214,7 @@ function M(e) {
   function X() {
     S(d.id)
   }
-  return (0, r.jsxs)(m.P3F, {
+  return (0, r.jsxs)(g.P3F, {
     className: s()(R.roleRow, {
       [R.roleRowDisableHover]: N,
       [R.containerDragBefore]: null != V && j < V,
@@ -236,7 +236,7 @@ function M(e) {
       }),
       onMouseEnter: () => B(true),
       onMouseLeave: () => B(false),
-      children: (0, r.jsx)(m.Vni, {
+      children: (0, r.jsx)(g.Vni, {
         size: "xs",
         color: "currentColor"
       })
@@ -255,7 +255,7 @@ function M(e) {
       }), null != k ? (0, r.jsx)(I.Z, {
         className: R.lock,
         tooltipText: k
-      }) : null, (0, r.jsx)(m.Text, {
+      }) : null, (0, r.jsx)(g.Text, {
         className: R.roleName,
         color: "header-primary",
         variant: "text-md/medium",
@@ -270,16 +270,16 @@ function M(e) {
         count: "".concat(v)
       }),
       position: "right",
-      children: (0, r.jsxs)(m.P3F, {
+      children: (0, r.jsxs)(g.P3F, {
         className: s()(R.memberCountContainer, Z.memberSpacing),
         onClick: function() {
           X(), P(T.ZI.MEMBERS)
         },
-        children: [(0, r.jsx)(m.Text, {
+        children: [(0, r.jsx)(g.Text, {
           variant: "text-md/normal",
           color: "none",
           children: v
-        }), (0, r.jsx)(m.tBG, {
+        }), (0, r.jsx)(g.tBG, {
           size: "custom",
           color: "currentColor",
           className: R.person,
@@ -291,19 +291,19 @@ function M(e) {
       className: s()(R.buttonsContainer, Z.buttonsSpacing),
       children: [(0, r.jsx)(u.u, {
         text: G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
-        children: (0, r.jsx)(m.hU, {
+        children: (0, r.jsx)(g.hU, {
           variant: "secondary",
           "aria-label": G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
-          icon: G ? m.tEF : m.vdY,
+          icon: G ? g.tEF : g.vdY,
           onClick: X
         })
       }), (0, r.jsx)(u.u, {
         text: w.intl.string(w.t.UKOtz8),
         shouldShow: q,
-        children: (0, r.jsx)(m.hU, {
+        children: (0, r.jsx)(g.hU, {
           variant: "secondary",
           "aria-label": w.intl.string(w.t.UKOtz8),
-          icon: m.xhG,
+          icon: g.xhG,
           onClick: Y,
           disabled: !q
         })
@@ -319,7 +319,7 @@ function U(e) {
     role: o,
     size: c,
     enableTooltip: u,
-    className: g,
+    className: m,
     defaultIconClassName: p
   } = e, {
     hasGradient: f,
@@ -331,7 +331,7 @@ function U(e) {
     size: c
   });
   if (null != C) return (0, r.jsx)(h.Z, A(D({}, C), {
-    className: g,
+    className: m,
     enableTooltip: u
   }));
   let O = null != (l = o.colorString) ? l : P.Pbq;
@@ -350,9 +350,9 @@ function U(e) {
         y2: "100%",
         children: x
       })
-    }), (0, r.jsx)(m.lZ8, {
+    }), (0, r.jsx)(g.lZ8, {
       size: "custom",
-      className: s()(g, p),
+      className: s()(m, p),
       color: O,
       width: c,
       height: c

@@ -61,10 +61,10 @@ function h(e) {
     }))
   }, [b, x]);
   return (0, r.jsxs)("div", {
-    className: g.cardContentsContainer,
+    className: m.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
-      header: m.intl.string(m.t.CX5YfX),
+      header: g.intl.string(g.t.CX5YfX),
       children: [(0, r.jsx)(s.Z, {
         rule: x,
         onChangeRule: b
@@ -78,7 +78,7 @@ function h(e) {
       type: d.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
       step: 2,
-      header: m.intl.string(m.t["18TOiY"]),
+      header: g.intl.string(g.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
         rule: x,
         onChangeRule: b
@@ -87,7 +87,7 @@ function h(e) {
       type: d.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
       step: 3,
-      header: m.intl.string(m.t.eq3gjo),
+      header: g.intl.string(g.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
         rule: x,
         onChangeRule: b

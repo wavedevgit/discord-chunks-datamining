@@ -41,7 +41,7 @@ function h(e) {
     {
       isApplicationRejected: I,
       requestCooldownDuration: S
-    } = (0, m.Z)(E),
+    } = (0, g.Z)(E),
     T = (null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_DISABLED)) === true,
     {
       isMonetizationReapplicationDisabled: P
@@ -61,7 +61,7 @@ function h(e) {
   }));
   let D = n && b && false === x,
     A = n && false === h,
-    L = (0, g.f)(),
+    L = (0, m.f)(),
     k = I && R && b ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()

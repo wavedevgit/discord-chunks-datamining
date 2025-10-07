@@ -77,7 +77,7 @@ function E(e) {
     });
     return (0, a.uniq)(e)
   }, [I, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), L = i.useCallback(() => {
-    A && g.jJ.trackExposure({
+    A && m.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
     }), A && D ? (0, d.ZDy)(async () => {
@@ -93,7 +93,7 @@ function E(e) {
     }, {
       modalKey: N
     }) : S()
-  }, [t, T, S, l, A, D]), k = b.Lo(Z), G = i.useCallback(() => Z.forEach(b.GM), [Z]), M = (0, x.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  }, [t, T, S, l, A, D]), k = b.Lo(Z), G = i.useCallback(() => Z.forEach(b.GM), [Z]), M = (0, x.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
   return i.useEffect(() => (U === _.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
     (0, d.Mr3)(N)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
@@ -159,20 +159,15 @@ function I(e) {
   })(t), l = (0, f.GG)(t), {
     maxTiers: s
   } = (0, p.s1)(t), a = l.map(e => e.id);
-  return (0, r.jsxs)(d.hjN, {
-    title: v.intl.string(v.t["72+Soq"]),
-    className: C.container,
-    children: [(0, r.jsx)(d.R94, {
-      type: d.R94.Types.DESCRIPTION,
-      children: v.intl.format(v.t.nHRSvL, {
-        maxTiers: s
-      })
-    }), (0, r.jsx)(d.LZC, {
-      size: 16
-    }), (0, r.jsx)(E, {
+  return (0, r.jsx)(d.NIc, {
+    label: v.intl.string(v.t["72+Soq"]),
+    description: v.intl.format(v.t.nHRSvL, {
+      maxTiers: s
+    }),
+    children: (0, r.jsx)(E, {
       priceTiers: n,
       guildId: t,
       groupListingId: a[0]
-    })]
+    })
   })
 }

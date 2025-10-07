@@ -89,21 +89,21 @@ function F(e) {
     onRevokeInvite: u
   } = e;
   return (0, i.jsxs)(w.Z, {
-    className: a()(U.inviteSettingsInviteRow, W.card, {
-      [U.inviteDisabledRow]: t
+    className: a()(B.inviteSettingsInviteRow, W.card, {
+      [B.inviteDisabledRow]: t
     }),
     children: [(0, i.jsxs)(w.Z, {
       grow: 3,
       basis: 0,
       align: w.Z.Align.CENTER,
-      className: U.text,
+      className: B.text,
       children: [null != n && (0, i.jsx)(y.Z, {
         user: n,
         size: g.EFr.SIZE_24,
-        className: U.avatar
+        className: B.avatar
       }), (0, i.jsxs)("div", {
         children: [null != n && (0, i.jsx)(j.Z, {
-          discriminatorClass: U.discriminator,
+          discriminatorClass: B.discriminator,
           user: n
         }), r && null != l && (0, i.jsx)(g.Text, {
           variant: "text-xs/normal",
@@ -116,18 +116,18 @@ function F(e) {
       shrink: 1,
       basis: 0,
       align: w.Z.Align.CENTER,
-      className: U.text,
+      className: B.text,
       children: (0, i.jsxs)("div", {
-        className: U.inviteSourceContainer,
+        className: B.inviteSourceContainer,
         children: [o, s]
       })
     }), (0, i.jsx)(w.Z, {
       grow: 1,
       basis: 0,
       align: w.Z.Align.CENTER,
-      className: U.text,
+      className: B.text,
       children: (0, i.jsx)(g.Text, {
-        className: U.uses,
+        className: B.uses,
         variant: "text-sm/normal",
         children: c
       })
@@ -135,14 +135,14 @@ function F(e) {
       grow: 2,
       basis: 0,
       align: w.Z.Align.CENTER,
-      className: a()(U.text, U.countdownColumn),
+      className: a()(B.text, B.countdownColumn),
       children: (0, i.jsx)(g.Text, {
-        className: U.countdown,
+        className: B.countdown,
         variant: "text-sm/normal",
         children: d
       })
     }), (0, i.jsx)(x.Z, {
-      className: U.revokeInvite,
+      className: B.revokeInvite,
       onClick: u
     })]
   })
@@ -162,23 +162,23 @@ function K(e) {
     showChannel: r,
     channel: n.channel,
     inviteSource: (0, i.jsx)(g.Text, {
-      className: U.inviteCode,
+      className: B.inviteCode,
       variant: "text-sm/normal",
       children: a ? "..." : n.code
     }),
     inviteSourceTrailingContent: !a && (0, D.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, i.jsxs)("div", {
-      className: U.bypass,
+      className: B.bypass,
       children: [(0, i.jsx)(g.Text, {
-        className: U.text,
+        className: B.text,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: B.intl.string(B.t["1i1bUl"])
+        children: U.intl.string(U.t["1i1bUl"])
       }), (0, i.jsx)(b.u, {
-        text: B.intl.string(B.t["jvd/LC"]),
+        text: U.intl.string(U.t["jvd/LC"]),
         children: (0, i.jsx)(g.d3s, {
           size: "xxs",
           color: "currentColor",
-          className: U.infoIcon
+          className: B.infoIcon
         })
       })]
     }) : null,
@@ -208,22 +208,22 @@ function q(e) {
     showChannel: l,
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
-      className: U.linkedChannelJoinSource,
+      className: B.linkedChannelJoinSource,
       children: [(0, i.jsx)(S.Z, {
         game: o,
         size: S.A.XXSMALL
       }), (0, i.jsx)(g.Text, {
-        className: U.linkedChannelJoinSourceText,
+        className: B.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
         children: null == o ? true : o.name
       })]
     }),
-    uses: B.intl.string(B.t.jHpxws),
-    expiresAt: B.intl.string(B.t.PqEzn5),
+    uses: U.intl.string(U.t.jHpxws),
+    expiresAt: U.intl.string(U.t.PqEzn5),
     onRevokeInvite: () => {
       if (!c || null == o) return void h.Z.show({
-        title: B.intl.string(B.t.JmUENj),
-        body: B.intl.string(B.t.SrvsMD)
+        title: U.intl.string(U.t.JmUENj),
+        body: U.intl.string(U.t.SrvsMD)
       });
       (0, g.ZDy)(async () => {
         let {
@@ -298,8 +298,8 @@ function V(e) {
               width: 256,
               height: 130
             }), (0, i.jsx)(g.OZU, {
-              note: B.intl.string(B.t.F53CAQ),
-              children: B.intl.string(B.t["+nLJkZ"])
+              note: U.intl.string(U.t.F53CAQ),
+              children: U.intl.string(U.t["+nLJkZ"])
             })]
           })
         }, "empty-state");
@@ -309,26 +309,26 @@ function V(e) {
             basis: 0,
             className: H.marginReset,
             children: (0, i.jsx)(g.vwX, {
-              children: B.intl.string(B.t.EgHyKy)
+              children: U.intl.string(U.t.EgHyKy)
             })
           }), (0, i.jsx)(w.Z.Child, {
             basis: 0,
             grow: 3,
             className: H.marginReset,
             children: (0, i.jsx)(g.vwX, {
-              children: _.length > 0 ? B.intl.string(B.t.l7VISU) : B.intl.string(B.t.LBlFEB)
+              children: _.length > 0 ? U.intl.string(U.t.l7VISU) : U.intl.string(U.t.LBlFEB)
             })
           }), (0, i.jsx)(w.Z.Child, {
             grow: 1,
             basis: 0,
             children: (0, i.jsx)(g.vwX, {
-              children: B.intl.string(B.t.erWrmJ)
+              children: U.intl.string(U.t.erWrmJ)
             })
           }), (0, i.jsx)(w.Z.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(g.vwX, {
-              children: B.intl.string(B.t["1aM27e"])
+              children: U.intl.string(U.t["1aM27e"])
             })
           })]
         }, "table-header");
@@ -342,27 +342,27 @@ function V(e) {
       if (0 === t) return (0, i.jsx)(g.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        className: U.header,
-        children: B.intl.string(B.t["9F90iY"])
+        className: B.header,
+        children: U.intl.string(U.t["9F90iY"])
       });
       if (1 === t) return (0, i.jsxs)(g.hjN, {
-        className: U.actions,
+        className: B.actions,
         children: [(0, i.jsx)(g.R94, {
           className: H.marginBottom20,
           type: g.geA.DESCRIPTION,
-          children: true === o ? B.intl.format(B.t["97VdNj"], {
+          children: true === o ? U.intl.format(U.t["97VdNj"], {
             onCreateInvite: N
-          }) : B.intl.string(B.t.WDw38P)
+          }) : U.intl.string(U.t.WDw38P)
         }), (0, i.jsxs)("div", {
-          className: U.inviteDisabledContainer,
+          className: B.inviteDisabledContainer,
           children: [(0, i.jsx)(g.zxk, {
             size: "sm",
             variant: j ? "primary" : "critical-primary",
-            text: j ? B.intl.string(B.t["/dbw3N"]) : B.intl.string(B.t.Uwsjn5),
+            text: j ? U.intl.string(U.t["/dbw3N"]) : U.intl.string(U.t.Uwsjn5),
             onClick: k,
             disabled: !x
           }), j && (0, i.jsxs)("div", {
-            className: U.inviteDisabledTip,
+            className: B.inviteDisabledTip,
             children: [(0, i.jsx)(g.Mgn, {
               size: "custom",
               width: 20,
@@ -370,11 +370,11 @@ function V(e) {
               color: m.Z.unsafe_rawColors.YELLOW_300.css
             }), (0, i.jsx)(g.Text, {
               variant: "text-sm/normal",
-              children: B.intl.string(B.t["2LLbj4"])
+              children: U.intl.string(U.t["2LLbj4"])
             })]
           })]
         }), (0, i.jsx)(g.izJ, {
-          className: U.headerDivider
+          className: B.headerDivider
         })]
       }, "header");
       if (2 === t) return (0, i.jsx)(L.Y, {

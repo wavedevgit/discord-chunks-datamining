@@ -2,11 +2,10 @@
 /** chunk id: 949493, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk921801 = require("./921801.js"),
   Chunk663389 = require("./663389.js"),
   Chunk10298 = require("./10298.jsx"),
@@ -19,7 +18,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk694569 = require("./694569.jsx"),
   Chunk394655 = require("./394655.jsx"),
   Chunk540204 = require("./540204.jsx"),
-  Chunk546957 = require("./546957.jsx"),
   Chunk893996 = require("./893996.jsx"),
   Chunk273927 = require("./273927.jsx"),
   Chunk211466 = require("./211466.jsx"),
@@ -32,35 +30,33 @@ var Chunk442837 = require("./442837.js"),
   Chunk583139 = require("./583139.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let P = () => (0, Chunk951288.jsx)(Chunk893996.Z, {
+let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["y62Z/f"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
-    children: (0, Chunk951288.jsxs)(Chunk546957.Z, {
-      children: [(0, Chunk951288.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-        children: (0, Chunk951288.jsx)(Chunk540204.Z, {})
-      }), (0, Chunk951288.jsx)(Chunk988043.Z, {}), (0, Chunk951288.jsx)(Chunk919539.Z, {}), (0, Chunk951288.jsx)(Chunk301812.Z, {}), (0, Chunk951288.jsx)(Chunk190014.Z, {})]
-    })
+    children: [(0, Chunk951288.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+      children: (0, Chunk951288.jsx)(Chunk540204.Z, {})
+    }), (0, Chunk951288.jsx)(Chunk988043.Z, {}), (0, Chunk951288.jsx)(Chunk919539.Z, {}), (0, Chunk951288.jsx)(Chunk301812.Z, {}), (0, Chunk951288.jsx)(Chunk190014.Z, {})]
   }),
-  w = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
+  P = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.xVRG4O),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk211466.n, {}), (0, Chunk951288.jsx)(Chunk122897.Z, {}), (0, Chunk951288.jsx)(Chunk394655.Z, {}), (0, Chunk951288.jsx)(Chunk24400.Z, {}), (0, Chunk951288.jsx)(Chunk924356.Z, {}), (0, Chunk951288.jsx)(Chunk864239.Z, {})]
   }),
-  D = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
+  w = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["1Qn8iY"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk694569.Z, {}), (0, Chunk951288.jsx)(Chunk273927.ZP, {})]
   }),
-  L = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(D, {})]
+  D = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(w, {})]
   });
 
-function x() {
+function L() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t["/7xJCA"]),
-      component: () => (0, Chunk951288.jsx)(L, {}),
+      component: () => (0, Chunk951288.jsx)(D, {}),
       setting: Chunk726985.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
       title: Chunk388032.intl.string(Chunk388032.t.YpCiMj),

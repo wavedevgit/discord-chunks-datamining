@@ -98,12 +98,12 @@ function j(e) {
         option: O,
         index: C,
         onSave: e => {
-          (0, g.Kk)(j, _.id, {
+          (0, m.Kk)(j, _.id, {
             options: _.options.map(t => t.id === O.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, g.Kk)(j, _.id, {
+          (0, m.Kk)(j, _.id, {
             options: _.options.filter(e => e.id !== O.id)
           })
         }
@@ -125,7 +125,7 @@ function j(e) {
       className: h.optionCardRow,
       children: [(0, r.jsx)("div", {
         className: h.emoji,
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(g.Z, {
           emojiId: null == (s = O.emoji) ? true : s.id,
           emojiName: null == (c = O.emoji) ? true : c.name,
           defaultComponent: null
@@ -166,7 +166,7 @@ function _(e) {
       return n => (0, r.jsx)(e, b(x({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, g.Kk)(t, i.id, {
+        onSave: e => (0, m.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},

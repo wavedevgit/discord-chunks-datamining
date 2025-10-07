@@ -42,7 +42,7 @@ function w(e) {
   } = (0, O.eD)(t), R = (0, s.e7)([_.Z], () => _.Z.getGuild(t)), Z = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
-  (0, m.P)(R);
+  (0, g.P)(R);
   let G = i.useCallback(() => {
     if (null == R) return;
     let e = j.Z.getEveryoneRole(R);
@@ -115,7 +115,7 @@ function w(e) {
     }) : (0, r.jsx)(o.$jN, {});
   return (0, r.jsxs)(d.AL, {
     guildId: t,
-    children: [M, (0, r.jsx)(g.Z, {
+    children: [M, (0, r.jsx)(m.Z, {
       guild: R
     }), (0, r.jsx)("div", {
       className: P.tabBarContainer,

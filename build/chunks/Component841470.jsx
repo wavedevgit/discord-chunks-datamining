@@ -18,11 +18,11 @@ let c = e => {
     localizedNumber: c,
     isTrendingUp: d,
     isTrendingDown: u,
-    tooltipText: m
-  } = e, g = null != m ? (0, r.jsx)(l.ua7, {
-    text: m,
+    tooltipText: g
+  } = e, m = null != g ? (0, r.jsx)(l.ua7, {
+    text: g,
     position: "top",
-    "aria-label": "string" == typeof m ? m : t,
+    "aria-label": "string" == typeof g ? g : t,
     children: e => {
       var t, n;
       return (0, r.jsx)(l.d3s, (t = function(e) {
@@ -63,7 +63,7 @@ let c = e => {
     className: o.analyticsCard,
     children: [(0, r.jsxs)(l.vwX, {
       className: o.analyticsCardTitle,
-      children: [t, g]
+      children: [t, m]
     }), (0, r.jsx)("div", {
       className: o.analyticsCardContent,
       children: (0, r.jsx)(l.X6q, {

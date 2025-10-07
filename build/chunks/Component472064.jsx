@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk912278 = require("./912278.js");
 
-function S(t, e, s) {
+function L(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
     value: s,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(t, e, s) {
     writable: true
   }) : t[e] = s, t
 }
-class b extends Chunk647438.Component {
+class S extends Chunk647438.Component {
   fetchInstallSize() {
     let {
       applicationId: t,
@@ -146,17 +146,17 @@ class b extends Chunk647438.Component {
     })
   }
   constructor(...t) {
-    super(...t), S(this, "state", {
+    super(...t), L(this, "state", {
       selectedInstallationPath: this.props.defaultInstallationPath,
       hasError: false,
       isInstalling: false,
       hasAcceptedNeccessaryTerms: false
-    }), S(this, "isUnmounted", false), S(this, "handleChangePath", (t, e) => {
+    }), L(this, "isUnmounted", false), L(this, "handleChangePath", (t, e) => {
       this.setState({
         selectedInstallationPath: t,
         hasError: e
       })
-    }), S(this, "install", (t, e) => {
+    }), L(this, "install", (t, e) => {
       let {
         application: s,
         branchId: l,
@@ -171,7 +171,7 @@ class b extends Chunk647438.Component {
         installationPath: this.state.selectedInstallationPath,
         analyticsLocation: n
       }), (0, g.uL)(C.Z5c.APPLICATION_LIBRARY), this.close()
-    }), S(this, "handleInstall", () => {
+    }), L(this, "handleInstall", () => {
       let {
         application: t,
         buildId: e,
@@ -180,11 +180,11 @@ class b extends Chunk647438.Component {
       } = this.props;
       if (null != e && null != s) l || (0, d.B)(), null != t && null != t.eulaId && (0, d.D)(t.eulaId), this.install(e, s);
       else throw Error("Unexpected missing build info for non-premium product")
-    }), S(this, "handlePurchaseTermsChange", t => {
+    }), L(this, "handlePurchaseTermsChange", t => {
       this.setState({
         hasAcceptedNeccessaryTerms: t
       })
-    }), S(this, "close", () => {
+    }), L(this, "close", () => {
       this.props.onClose()
     })
   }
@@ -202,4 +202,4 @@ let N = Chunk442837.ZP.connectStores([Chunk173747.Z, Chunk391690.Z, Chunk850840.
     buildSizeKB: null != l ? f.Z.getBuildSize(l) : null,
     hasPreviouslyAcceptedStoreTerms: P.Z.hasAcceptedStoreTerms
   }
-})(b)
+})(S)

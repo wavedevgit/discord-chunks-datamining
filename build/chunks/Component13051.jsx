@@ -88,10 +88,10 @@ function Z(e) {
         }), t))
       })
     }, [l, T]),
-    B = r.useCallback(() => {
+    U = r.useCallback(() => {
       x.Z.syncIntegration(n.id, l.id)
     }, [n.id, l.id]),
-    U = r.useCallback(() => {
+    B = r.useCallback(() => {
       null != l.role_id && (x.Z.setSection(w.pNK.ROLES), x.Z.selectRole(l.role_id))
     }, [l.role_id]),
     {
@@ -129,7 +129,7 @@ function Z(e) {
     } = r.useMemo(() => {
       let e;
       e = null != K ? (0, i.jsx)(m.eee, {
-        onClick: U,
+        onClick: B,
         children: K.name
       }) : S.intl.string(S.t.PoWNfX);
       let t = g.Z.get(l.type);
@@ -142,7 +142,7 @@ function Z(e) {
           datetime: s()(l.synced_at).calendar()
         })
       }
-    }, [K, U, l.revoked, l.synced_at, l.type, l.user]),
+    }, [K, B, l.revoked, l.synced_at, l.type, l.user]),
     J = (0, d.e7)([v.Z], () => v.Z.getSortedRoles(n.id)),
     Y = r.useMemo(() => {
       let e = h.ZP.getGuildEmoji(n.id),
@@ -269,7 +269,7 @@ function Z(e) {
       subscribersText: F,
       descriptionText: V,
       roleLink: q,
-      onSync: B
+      onSync: U
     }), (0, i.jsx)(m.izJ, {
       className: P.midDivider
     }), function(e) {
@@ -280,12 +280,10 @@ function Z(e) {
         onGracePeriodChange: l
       } = e;
       return (0, i.jsxs)(f.Z, {
-        children: [(0, i.jsxs)(f.Z.Child, {
+        children: [(0, i.jsx)(f.Z.Child, {
           basis: "50%",
-          children: [(0, i.jsx)(m.vwX, {
-            className: I.marginBottom8,
-            children: n
-          }), (0, i.jsx)(m.q4e, {
+          children: (0, i.jsx)(m.q4e, {
+            label: n,
             placeholder: n,
             value: "".concat(t.expire_behavior),
             options: [{
@@ -297,13 +295,11 @@ function Z(e) {
             }],
             isDisabled: t.syncing,
             onChange: e => r(parseInt(e))
-          })]
-        }), (0, i.jsxs)(f.Z.Child, {
+          })
+        }), (0, i.jsx)(f.Z.Child, {
           basis: "50%",
-          children: [(0, i.jsx)(m.vwX, {
-            className: I.marginBottom8,
-            children: S.intl.string(S.t.uiXMo6)
-          }), (0, i.jsx)(m.q4e, {
+          children: (0, i.jsx)(m.q4e, {
+            label: S.intl.string(S.t.uiXMo6),
             placeholder: S.intl.string(S.t.uiXMo6),
             maxVisibleItems: 5,
             value: "".concat(t.expire_grace_period),
@@ -315,7 +311,7 @@ function Z(e) {
             })),
             onChange: e => l(parseInt(e)),
             isDisabled: t.syncing
-          })]
+          })
         })]
       })
     }({

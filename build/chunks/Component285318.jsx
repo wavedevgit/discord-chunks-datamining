@@ -2,7 +2,7 @@
 /** chunk id: 285318, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,7 +44,7 @@ function u(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     preset: t,
     toggled: n,
@@ -100,7 +100,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   var t;
   let {
     rule: n,
@@ -111,23 +111,23 @@ function g(e) {
         presets: e
       })
     }))
-  }, [l, n]), g = e => {
+  }, [l, n]), m = e => {
     let t = new Set(s);
     t.has(e) ? t.delete(e) : t.add(e), o(t), c(Array.from(t))
   };
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(m, {
+    children: [(0, r.jsx)(g, {
       preset: a.Ux.PROFANITY,
       toggled: s.has(a.Ux.PROFANITY),
-      onToggle: g
-    }), (0, r.jsx)(m, {
+      onToggle: m
+    }), (0, r.jsx)(g, {
       preset: a.Ux.SLURS,
       toggled: s.has(a.Ux.SLURS),
-      onToggle: g
-    }), (0, r.jsx)(m, {
+      onToggle: m
+    }), (0, r.jsx)(g, {
       preset: a.Ux.SEXUAL_CONTENT,
       toggled: s.has(a.Ux.SEXUAL_CONTENT),
-      onToggle: g
+      onToggle: m
     })]
   })
 }

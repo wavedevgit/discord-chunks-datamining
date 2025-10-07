@@ -20,7 +20,7 @@ let p = e => {
     let {
       reason: n = "",
       emoji_name: d,
-      onSetReason: g,
+      onSetReason: m,
       onSelectEmoji: p,
       onClearPressed: f,
       reasonMinLength: h,
@@ -41,7 +41,7 @@ let p = e => {
           closePopout: t
         } = e;
         return (0, r.jsx)(c.Z, {
-          pickerIntention: m.Hz.COMMUNITY_CONTENT,
+          pickerIntention: g.Hz.COMMUNITY_CONTENT,
           closePopout: t,
           onSelectEmoji: e => {
             let {
@@ -76,7 +76,7 @@ let p = e => {
         button: y
       },
       onChange: e => {
-        g(e)
+        m(e)
       },
       clearable: {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
@@ -90,7 +90,7 @@ let p = e => {
       reasonMaxLength: n,
       guildId: i,
       reasons: l
-    } = e, a = [g.intl.string(g.t["9dhBGh"]), g.intl.string(g.t["8RmhKC"]), g.intl.string(g.t["2t0V8/"]), g.intl.string(g.t.l8WqCQ)], o = [];
+    } = e, a = [m.intl.string(m.t["9dhBGh"]), m.intl.string(m.t["8RmhKC"]), m.intl.string(m.t["2t0V8/"]), m.intl.string(m.t.l8WqCQ)], o = [];
     for (let e = 0; e < 4; e++) o.push((0, r.jsx)(p, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);

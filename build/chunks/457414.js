@@ -22,7 +22,7 @@ let c = e => {
 };
 
 function d(e, t) {
-  var n, c, d, u, m, g;
+  var n, c, d, u, g, m;
   return null != e && (e => {
     switch (e) {
       case a.fX.KEYWORD:
@@ -36,7 +36,7 @@ function d(e, t) {
         returnfalse
     }
   })(e) ? {
-    headerText: null !== (n = null != (g = null == t ? true : t.name) ? g : s.I6[e].getDefaultRuleName()) && true !== n ? n : "",
+    headerText: null !== (n = null != (m = null == t ? true : t.name) ? m : s.I6[e].getDefaultRuleName()) && true !== n ? n : "",
     headerSubtext: null != (c = ((e, t) => {
       if ((0, l.Vb)(t) && (0, l.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.intl.formatToPlainString(o.t.xZUvxc, {
         keywordCount: t.triggerMetadata.keywordFilter.length,
@@ -64,7 +64,7 @@ function d(e, t) {
     descriptionSubtext: null != (u = (e => {
       if (e === a.fX.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2t, {})
     })(e)) ? u : "",
-    icon: null != (m = (e => {
+    icon: null != (g = (e => {
       switch (e) {
         case a.fX.MENTION_SPAM:
           return r.lOy;
@@ -76,6 +76,6 @@ function d(e, t) {
         case a.fX.DEFAULT_KEYWORD_LIST:
           return r.Oqj
       }
-    })(e)) ? m : r.xPt
+    })(e)) ? g : r.xPt
   } : null
 }

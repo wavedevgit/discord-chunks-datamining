@@ -44,8 +44,8 @@ function h(e) {
     onChange: _,
     hint: p.intl.string(p.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
-      uploadType: m.pC.GUILD_BANNER,
-      maxFileSizeBytes: g.B,
+      uploadType: g.pC.GUILD_BANNER,
+      maxFileSizeBytes: m.B,
       onComplete: e => {
         let {
           imageUri: t,

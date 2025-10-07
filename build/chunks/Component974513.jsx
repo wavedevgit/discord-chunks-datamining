@@ -61,7 +61,7 @@ function x(e) {
       let t = (0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
       return [(0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), c.V7)), t]
     }(e);
-  return !!t && r.length >= m.md && n.length >= m.X
+  return !!t && r.length >= g.md && n.length >= g.X
 }
 
 function b(e) {
@@ -69,28 +69,28 @@ function b(e) {
     guildId: t,
     className: n
   } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), u = i.useCallback(() => {
-    let e = c ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
+    let e = c ? g.Un.ONBOARDING_DEFAULT : g.Un.ONBOARDING_ADVANCED;
     c ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
-      header: g.intl.string(g.t["49+ONj"]),
-      confirmText: g.intl.string(g.t.R9GHyc),
-      cancelText: g.intl.string(g.t["ETE/oK"]),
+      header: m.intl.string(m.t["49+ONj"]),
+      confirmText: m.intl.string(m.t.R9GHyc),
+      cancelText: m.intl.string(m.t["ETE/oK"]),
       confirmButtonColor: s.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: g.intl.string(g.t.TLkoOj)
+        children: m.intl.string(m.t.TLkoOj)
       })
     }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
-      header: g.intl.string(g.t.YB9xUF),
-      confirmText: g.intl.string(g.t.ts6u6u),
-      cancelText: g.intl.string(g.t["ETE/oK"]),
+      header: m.intl.string(m.t.YB9xUF),
+      confirmText: m.intl.string(m.t.ts6u6u),
+      cancelText: m.intl.string(m.t["ETE/oK"]),
       confirmButtonColor: s.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: g.intl.string(g.t.BcGGVl)
+        children: m.intl.string(m.t.BcGGVl)
       })
     })))
   }, [t, c]);
@@ -101,7 +101,7 @@ function b(e) {
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-link",
-        children: c ? g.intl.string(g.t.OmpxW1) : g.intl.string(g.t.ozsQBA)
+        children: c ? m.intl.string(m.t.OmpxW1) : m.intl.string(m.t.ozsQBA)
       })
     })
   })

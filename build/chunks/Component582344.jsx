@@ -28,9 +28,8 @@ function h() {
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk455698.panelContainer,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        title: "Dismissible Content Overrides",
-        tag: "h1",
+      children: [(0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: "Dismissible Content Overrides",
         children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 4,
           children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -43,7 +42,7 @@ function h() {
             children: "Daily Cap Reached: ".concat(module ? "Yes" : "No")
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk455698.divider
+          gap: 24
         }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Override Dismissible Content Daily Cap",
           checked: exports,
@@ -53,16 +52,12 @@ function h() {
           checked: require,
           onChange: Chunk883904.KC
         })]
-      }), (0, Chunk951288.jsx)(Chunk775195.Z, {}), (0, Chunk951288.jsx)(Chunk227157.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        title: "All Dismissible Contents",
-        tag: "h1",
-        children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk455698.searchBarContainer,
-          children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
-            query: h,
-            onChange: x,
-            onClear: () => x("")
-          })
+      }), (0, Chunk951288.jsx)(Chunk775195.Z, {}), (0, Chunk951288.jsx)(Chunk227157.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: "All Dismissible Contents",
+        children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
+          query: h,
+          onChange: x,
+          onClear: () => x("")
         }), (0, Chunk951288.jsx)(Chunk699867.Z, {
           items: f
         })]

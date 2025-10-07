@@ -30,15 +30,15 @@ function h(e) {
   return (0, r.jsx)(a.VcW, {
     multi: true,
     hidePills: true,
-    wrapperClassName: g.selectWrapper,
+    wrapperClassName: m.selectWrapper,
     options: l,
     value: t,
-    placeholder: m.intl.string(m.t.JTLolJ),
+    placeholder: g.intl.string(g.t.JTLolJ),
     onChange: n,
     isDisabled: 20 === t.length || i,
     matchSorterOptions: s,
     clearQueryOnSelect: true,
-    customPillContainerClassName: g.pills,
+    customPillContainerClassName: m.pills,
     renderCustomPill: f
   })
 }
@@ -50,7 +50,7 @@ function x(e) {
     disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: g.selectedGames,
+    className: m.selectedGames,
     children: t.map(e => (0, r.jsx)(d.Z, {
       applicationId: e,
       selected: true,
@@ -81,13 +81,13 @@ function j(e) {
     children: [(0, r.jsxs)("div", {
       className: p.sectionHeader,
       children: [(0, r.jsx)(a.vwX, {
-        children: m.intl.string(m.t.BR68vL)
+        children: g.intl.string(g.t.BR68vL)
       }), (0, r.jsx)(a.R94, {
         type: a.geA.DESCRIPTION,
-        children: m.intl.string(m.t.MobxiI)
+        children: g.intl.string(g.t.MobxiI)
       })]
     }), (0, r.jsxs)("div", {
-      className: g.sectionBody,
+      className: m.sectionBody,
       children: [(0, r.jsx)(h, {
         gameApplicationIds: d,
         handleChange: f,

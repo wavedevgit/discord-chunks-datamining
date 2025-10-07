@@ -3,9 +3,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk780384 = require("./780384.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -25,9 +24,9 @@ function g(e) {
     errors: f,
     canNavigate: h
   } = e, x = (0, a.ZP)();
-  return (0, i.jsxs)(l.hjN, {
-    children: [(0, i.jsx)(l.R94, {
-      type: l.geA.DESCRIPTION,
+  return (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(l.Text, {
+      variant: "text-sm/normal",
       children: u.intl.format(u.t["5u+aV1"], {
         helpdeskArticle: s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)
       })

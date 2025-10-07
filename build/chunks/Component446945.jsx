@@ -2,7 +2,7 @@
 /** chunk id: 446945, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,12 +15,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk789113 = require("./789113.js");
 
-function m(e) {
+function g(e) {
   let {
     addFormField: t,
     onSelect: n,
     guild: o,
-    allowTerms: m
+    allowTerms: g
   } = e;
   return (0, r.jsx)(i.v2r, {
     navId: "add-questions",
@@ -44,7 +44,7 @@ function m(e) {
         icon: i.jE$,
         label: d.intl.string(d.t.ooKh3t),
         action: () => (0, c.Md)(a.QJ.MULTIPLE_CHOICE, t, o)
-      }), m && (0, r.jsx)(i.sNh, {
+      }), g && (0, r.jsx)(i.sNh, {
         id: "terms",
         icon: i.snC,
         label: d.intl.string(d.t["3pz9t7"]),
@@ -53,7 +53,7 @@ function m(e) {
     })
   })
 }
-let g = function(e) {
+let m = function(e) {
   let {
     addFormField: t,
     guild: n,
@@ -65,7 +65,7 @@ let g = function(e) {
     onClick: e => {
       (0, l.vq)(e, e => {
         var l, s;
-        return (0, r.jsx)(m, (l = function(e) {
+        return (0, r.jsx)(g, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

@@ -2,17 +2,14 @@
 /** chunk id: 736752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => Q,
-  Z: () => $
+  D: () => K,
+  Z: () => q
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk816814 = require("./816814.js"),
@@ -20,7 +17,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk497321 = require("./497321.jsx"),
   Chunk279837 = require("./279837.jsx"),
   Chunk952306 = require("./952306.jsx"),
-  Chunk600164 = require("./600164.jsx"),
   Chunk690221 = require("./690221.jsx"),
   Chunk332473 = require("./332473.js"),
   Chunk303172 = require("./303172.jsx"),
@@ -50,7 +46,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk343396 = require("./343396.js"),
   Chunk197571 = require("./197571.js");
 
-function K(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,20 +55,20 @@ function K(e, t, n) {
   }) : e[t] = n, e
 }
 
-function z(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      K(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
 }
 
-function q(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -83,15 +79,15 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var Q = function(e) {
+var K = function(e) {
   return e.SECURITY = "SECURITY", e.STANDING = "STANDING", e
 }({});
-class J extends Chunk647438.PureComponent {
+class z extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       currentUser: e
@@ -166,70 +162,36 @@ class J extends Chunk647438.PureComponent {
     }) : null
   }
   renderAccountSettings() {
-    let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-      t = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [this.renderPomeloWarning(), this.renderAccountWarning(), (0, Chunk951288.jsx)(Chunk2719.Z, {})]
-      });
-    return module ? (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H1,
-      title: Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
-      children: exports
-    }) : exports
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [this.renderPomeloWarning(), this.renderAccountWarning(), (0, Chunk951288.jsx)(Chunk2719.Z, {})]
+    })
   }
   renderSecuritySettings() {
     let {
       backupCodes: e,
-      currentUser: t,
-      theme: i
-    } = this.props, a = (0, Chunk780384.wj)(Chunk647438) ? require("./555702.js") : require("./610802.js");
-    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: o()(Chunk343396.userSettingsSecurity, Chunk197571.marginTop40),
-      title: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
-      tag: "h1",
-      children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.hjN, {
-        children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
-          className: o()(Chunk343396.isEnabled, Chunk197571.marginBottom20),
-          children: [(0, Chunk951288.jsx)("img", {
-            alt: "",
-            className: Chunk343396.lockIcon,
-            src: require("./511391.js")
-          }), Chunk388032.intl.string(Chunk388032.t.FsmBy8)]
-        })
+      currentUser: t
+    } = this.props;
+    return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      className: Chunk343396.userSettingsSecurity,
+      label: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
+      children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
+        icon: Chunk481060.mBM,
+        messageType: Chunk481060.QYI.POSITIVE,
+        children: Chunk388032.intl.string(Chunk388032.t.FsmBy8)
       }) : null, (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_CHANGE_PASSWORD,
-        children: (0, Chunk951288.jsx)("div", {
-          children: (0, Chunk951288.jsx)("div", {
-            "data-button-hoisted-classname-wrapper": true,
-            className: Chunk343396.changePasswordButton,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
-              variant: "primary",
-              size: "sm",
-              text: Chunk388032.intl.string(Chunk388032.t["FRep5+"]),
-              onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(B.default, X(z({}, e), {
-                onSuccess: e.onClose
-              })))
-            })
-          })
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          size: "sm",
+          text: Chunk388032.intl.string(Chunk388032.t["FRep5+"]),
+          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(j.default, W(H({}, e), {
+            onSuccess: e.onClose
+          })))
         })
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
-          align: Chunk600164.Z.Align.STRETCH,
-          children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-            wrap: true,
-            children: (0, Chunk951288.jsx)(Chunk730820.Z, {
-              backupCodes: module
-            })
-          }), exports.mfaEnabled ? null : (0, Chunk951288.jsx)(Chunk600164.Z, {
-            align: Chunk600164.Z.Align.CENTER,
-            basis: "323px",
-            grow: 0,
-            children: (0, Chunk951288.jsx)("img", {
-              src: Chunk120356,
-              className: Chunk343396.userSettingsSecurityImage,
-              alt: ""
-            })
-          })]
+        children: (0, Chunk951288.jsx)(Chunk730820.Z, {
+          backupCodes: module
         })
       })]
     })
@@ -307,7 +269,7 @@ class J extends Chunk647438.PureComponent {
         onConfirm: module,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          children: Chunk120356
+          children: Chunk512722
         })
       })
     }
@@ -318,19 +280,21 @@ class J extends Chunk647438.PureComponent {
       currentUser: e,
       userTeamsLoading: t
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk888256.Z, {
-      className: Chunk197571.marginTop40,
-      currentUser: module,
-      disabled: exports,
-      handleDisableAccount: () => this.handleDisableAccount(false),
-      handleDeleteAccount: () => this.handleDisableAccount(true)
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk888256.Z, {
+        currentUser: module,
+        disabled: exports,
+        handleDisableAccount: () => this.handleDisableAccount(false),
+        handleDeleteAccount: () => this.handleDisableAccount(true)
+      })]
     })
   }
   renderSecuritySettingsRedesign() {
-    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 40,
       children: [this.renderConfirmModals(), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_PROFILE,
-        children: this.renderAccountSettings(false)
+        children: this.renderAccountSettings()
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
@@ -351,8 +315,8 @@ class J extends Chunk647438.PureComponent {
         settingsSection: Chunk981631.oAB.ACCOUNT,
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
-          w.default.track(F.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-            target_tab_name: e === Z.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
+          C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+            target_tab_name: e === k.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
         defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,
@@ -372,14 +336,14 @@ class J extends Chunk647438.PureComponent {
     return this.props.hide ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : this.renderUnhidden()
   }
   handleDisableAccountError(e) {
-    if (e.body.code === F.evJ.INVALID_PASSWORD) throw e;
+    if (e.body.code === U.evJ.INVALID_PASSWORD) throw e;
     this.setState({
       shouldRenderDisableAccountErrorModal: true,
       disableAccountErrorMessage: e.body.message
     })
   }
   handleSubmitDisableAccount(e, t) {
-    return (0, p.ss)(e, t).then(F.dG4, this.handleDisableAccountError)
+    return (0, d.ss)(e, t).then(U.dG4, this.handleDisableAccountError)
   }
   handleDisableAccount() {
     var e;
@@ -391,13 +355,13 @@ class J extends Chunk647438.PureComponent {
       a = Chunk430824.Z.getGuildsArray().filter(e => e.ownerId === n.id);
     return (null != (e = null == Chunk647438 ? true : Chunk647438.filter(e => e.owner_user_id === n.id)) ? module : []).length > 0 ? void this.setState({
       shouldRenderOwnedTeamsModal: true
-    }) : Chunk120356.length > 0 ? void this.setState({
+    }) : Chunk512722.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(m.Z, X(z({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(_.Z, W(H({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
-      title: t ? H.intl.string(H.t["8lQ2ra"]) : H.intl.string(H.t.jf5GGR),
-      actionText: t ? H.intl.string(H.t["8lQ2ra"]) : H.intl.string(H.t.jf5GGR),
-      children: t ? H.intl.string(H.t.FB4H1N) : H.intl.string(H.t.gk7h39)
+      title: t ? B.intl.string(B.t["8lQ2ra"]) : B.intl.string(B.t.jf5GGR),
+      actionText: t ? B.intl.string(B.t["8lQ2ra"]) : B.intl.string(B.t.jf5GGR),
+      children: t ? B.intl.string(B.t.FB4H1N) : B.intl.string(B.t.gk7h39)
     }))) : this.setState({
       shouldRenderDeleteAccountConfirmModal: true
     }))
@@ -412,32 +376,32 @@ class J extends Chunk647438.PureComponent {
     }
   }
 }
-let $ = () => {
+let q = () => {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return l()(null != module, "ConnectedUserAccountSettings: currentUser cannot be undefined"), module
+      return o()(null != module, "ConnectedUserAccountSettings: currentUser cannot be undefined"), module
     }),
     t = (0, Chunk442837.e7)([Chunk325067.Z], () => Chunk325067.Z.getBackupCodes()),
     n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     i = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
     a = (0, Chunk332473.b)(),
-    o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    s = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+    l = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+    c = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     {
       teams: u,
       loading: d
     } = (0, Chunk577275.Z)({
       refreshOnDepChange: true
     });
-  return (0, Chunk951288.jsx)(J, {
+  return (0, Chunk951288.jsx)(z, {
     theme: Chunk647438,
     currentUser: module,
     backupCodes: exports,
     hide: require,
-    shouldRenderPomeloWarning: Chunk120356,
-    locale: o,
-    subsection: Chunk512722,
-    userTeams: Chunk780384,
-    userTeamsLoading: Chunk755721
+    shouldRenderPomeloWarning: Chunk512722,
+    locale: Chunk755721,
+    subsection: Chunk481060,
+    userTeams: Chunk816814,
+    userTeamsLoading: Chunk809206
   })
 }

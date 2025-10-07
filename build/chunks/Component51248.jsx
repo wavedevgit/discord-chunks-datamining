@@ -2,7 +2,7 @@
 /** chunk id: 51248, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,13 +15,13 @@ var Chunk215569 = require("./215569.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk590745 = require("./590745.js");
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     existingRules: n
   } = e, {
-    cancelEditingRule: m,
-    isLoading: g,
+    cancelEditingRule: g,
+    isLoading: m,
     hasChanges: p,
     editingRule: f,
     errorMessage: h,
@@ -29,7 +29,7 @@ function m(e) {
   } = (0, c.w)(), {
     updateRule: b
   } = (0, o.pH)(t), j = null != f, _ = j && !(0, a.Vb)(f), v = j || p || _, C = async () => {
-    if (!p && !_) return m();
+    if (!p && !_) return g();
     null == f || _ || b(f);
     let e = n.find(e => {
       let {
@@ -56,10 +56,10 @@ function m(e) {
     className: u.saveNoticeContainer,
     children: v && (0, r.jsx)(l.oXn, {
       children: (0, r.jsx)(s.Z, {
-        submitting: g,
-        disabled: g,
+        submitting: m,
+        disabled: m,
         onSave: C,
-        onReset: m,
+        onReset: g,
         onResetText: O,
         message: y
       })

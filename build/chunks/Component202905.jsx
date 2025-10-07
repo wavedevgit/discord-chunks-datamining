@@ -46,9 +46,9 @@ function _(e) {
   } = e, {
     guild: n,
     guildProfile: _
-  } = (0, a.cj)([g.Z], () => ({
-    guild: g.Z.getGuild(),
-    guildProfile: g.Z.getGuildProfile()
+  } = (0, a.cj)([m.Z], () => ({
+    guild: m.Z.getGuild(),
+    guildProfile: m.Z.getGuildProfile()
   })), v = null == n ? true : n.id, C = (0, a.e7)([c.Z], () => c.Z.get(v)), {
     fetchGuildProfile: O
   } = (0, d.u)(v), y = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), N = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
@@ -57,14 +57,14 @@ function _(e) {
   }, [v, O]);
   let E = i.useMemo(() => null == n || null == _ ? j : _, [n, _]),
     I = i.useCallback(() => {
-      (null == n ? true : n.id) != null && (N ? m.Z.updateGuildProfile(n.id, {
+      (null == n ? true : n.id) != null && (N ? g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC
-      }) : m.Z.updateGuildProfile(n.id, {
+      }) : g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC_WITH_RECRUITMENT
       }))
     }, [null == n ? true : n.id, N]),
     S = i.useCallback(() => {
-      m.Z.setSection(h.pNK.PROFILE)
+      g.Z.setSection(h.pNK.PROFILE)
     }, []);
   if (null == n) return null;
   let T = null != t ? t : null == C ? true : C.formFields;

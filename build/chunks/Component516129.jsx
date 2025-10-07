@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk156811 = require("./156811.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,20 +64,20 @@ function h(e) {
       width: 18,
       color: (0, c.Lq)(x)
     };
-  return (0, r.jsx)(d.Z, g({
+  return (0, r.jsx)(d.Z, m({
     className: l()({
-      [m.avatarUploader]: t,
-      [m.avatarUploaderDisabled]: !t
+      [g.avatarUploader]: t,
+      [g.avatarUploaderDisabled]: !t
     }),
-    imageClassName: l()(n, m.avatarUploaderInnerSquare, {
-      [m.avatarUploaderInnerSquareDisabled]: !t
+    imageClassName: l()(n, g.avatarUploaderInnerSquare, {
+      [g.avatarUploaderInnerSquareDisabled]: !t
     }),
-    icon: null != u.image && "" !== u.image ? (0, r.jsx)(a.vdY, g({
+    icon: null != u.image && "" !== u.image ? (0, r.jsx)(a.vdY, m({
       size: "custom"
-    }, b)) : (0, r.jsx)(a.FmF, g({
+    }, b)) : (0, r.jsx)(a.FmF, m({
       size: "custom"
     }, b)),
-    iconClassName: l()(m.avatarUploadIcon, m.hideDefaultIcon),
+    iconClassName: l()(g.avatarUploadIcon, g.hideDefaultIcon),
     iconWrapperClassName: i,
     showIcon: true,
     showIconDisabled: true,

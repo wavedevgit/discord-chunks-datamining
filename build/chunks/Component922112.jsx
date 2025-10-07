@@ -33,7 +33,7 @@ let x = function(e) {
   } = l, y = u.Z.getChannel(C), N = null;
   null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8f));
   let E = null == O || 0 === O.length,
-    I = m.ZP.getResourceChannelIconURL({
+    I = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
     }),
@@ -51,12 +51,12 @@ let x = function(e) {
       onDragReset: _
     }),
     R = i.useCallback(e => {
-      (0, g.XG)(l.channelId, e)
+      (0, m.XG)(l.channelId, e)
     }, [l.channelId]),
     Z = i.useCallback((e, n) => {
       let r = p.Z.getSettings();
-      null != r && ((0, g.XG)(l.channelId, e), (0, g.oo)(t, r).then(() => {
-        (0, g.mM)(t, e.channelId, n)
+      null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
+        (0, m.mM)(t, e.channelId, n)
       }))
     }, [t, l]),
     D = i.useCallback(() => (0, o.ZDy)(async () => {
@@ -86,7 +86,7 @@ let x = function(e) {
           guildId: t,
           resourceChannel: l,
           onSave: R,
-          onDelete: () => (0, g.Hz)(l.channelId),
+          onDelete: () => (0, m.Hz)(l.channelId),
           onIconUpload: Z
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);

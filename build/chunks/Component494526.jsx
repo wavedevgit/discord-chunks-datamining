@@ -107,7 +107,7 @@ function R(e) {
           color: c.Tt.LINK,
           disabled: a,
           onClick: () => (function(e) {
-            let t = v.isPlatformEmbedded && I.ZP.supportsFeature(N.eRX.WEBAUTHN) ? I.ZP.webAuthnAuthenticate : e => {
+            let t = v.isPlatformEmbedded && j.ZP.supportsFeature(N.eRX.WEBAUTHN) ? j.ZP.webAuthnAuthenticate : e => {
               let t = (0, l.wz)(JSON.parse(e));
               return (0, l.U2)(t).then(e => JSON.stringify(e))
             };
@@ -136,7 +136,7 @@ function R(e) {
           children: O.intl.string(O.t.apGCUV)
         }), (0, r.jsx)(p.DK, {
           children: O.intl.format(O.t.Cbl5JC, {
-            username: "".concat(j.ZP.getUserTag(e))
+            username: "".concat(I.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zx, {
           look: c.zx.Looks.BLANK,
@@ -181,7 +181,7 @@ function L(e) {
       d && r && 0 === a.step && (T.info("reconnecting, now that document is visible"), l(false), n(e => e + 1))
     }, [a, d, r, l]), i.useEffect(() => {
       let t = Date.now(),
-        n = "wss:".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
+        n = "".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
         r = new WebSocket(n);
       T.info("[0ms] connecting to ".concat(n));
       let i = e => T.info("[".concat("".concat(Date.now() - t, "ms"), "] ").concat(e)),

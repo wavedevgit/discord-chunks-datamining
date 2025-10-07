@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk183190 = require("./183190.js"),
   Chunk698128 = require("./698128.js");
-let g = [{
+let m = [{
     key: "tier_name",
     cellClassName: Chunk183190.tierNameColumn,
     renderHeader: () => Chunk388032.intl.string(Chunk388032.t["2Uiha2"]),
@@ -65,13 +65,13 @@ let g = [{
       className: i
     } = e, a = (0, o.Z)(n, t);
     return (0, r.jsx)("div", {
-      className: l()(m.tableContainer, i),
+      className: l()(g.tableContainer, i),
       children: (0, r.jsx)(s.Z, {
-        columns: g,
+        columns: m,
         data: a,
-        className: l()(m.table, u.table),
+        className: l()(g.table, u.table),
         rowClassName: u.row,
-        headerClassName: l()(m.header, u.header)
+        headerClassName: l()(g.header, u.header)
       })
     })
   }

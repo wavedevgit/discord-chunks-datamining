@@ -2,8 +2,8 @@
 /** chunk id: 821458, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  E6: () => m,
-  f4: () => g,
+  E6: () => g,
+  f4: () => m,
   mw: () => u
 });
 var Chunk951288 = require("./951288.js"),
@@ -56,7 +56,7 @@ function u(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     guild: t,
     analyticsLocations: n,
@@ -85,7 +85,7 @@ function m(e) {
   })
 }
 
-function g(e, t, n, r) {
+function m(e, t, n, r) {
   let i = null == r ? true : r.type,
     l = {
       page: d.ZY5.GUILD_SETTINGS,

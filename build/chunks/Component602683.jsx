@@ -15,16 +15,11 @@ let a = function(e) {
   } = e, [l, c] = s.useState("");
   return s.useEffect(() => {
     c(null != n ? n : "")
-  }, [n]), (0, r.jsxs)(o.xJW, {
-    children: [(0, r.jsx)(o.vwX, {
-      children: i
-    }), (0, r.jsx)(o.R94, {
-      children: (0, r.jsx)(o.oil, {
-        value: l,
-        onChange: function(e) {
-          c(e), a(t, e)
-        }
-      })
-    })]
+  }, [n]), (0, r.jsx)(o.oil, {
+    label: i,
+    value: l,
+    onChange: function(e) {
+      c(e), a(t, e)
+    }
   })
 }

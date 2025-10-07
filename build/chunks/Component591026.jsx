@@ -59,7 +59,7 @@ function x(e) {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
-      header: g.intl.string(g.t.IGfuTU),
+      header: m.intl.string(m.t.IGfuTU),
       children: [(0, r.jsxs)("div", {
         className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
@@ -73,12 +73,12 @@ function x(e) {
           className: p.mentionLimitTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-sm/semibold",
-            children: g.intl.string(g.t["s/26oa"])
+            children: m.intl.string(m.t["s/26oa"])
           }), (0, r.jsx)(s.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
             className: p.descriptionHint,
-            children: g.intl.string(g.t["8uW4/P"])
+            children: m.intl.string(m.t["8uW4/P"])
           })]
         }), (0, r.jsx)("div", {
           className: p.stepperContainer,
@@ -91,8 +91,8 @@ function x(e) {
                 })
               }))
             },
-            minValue: m.Vg,
-            maxValue: m.Lg,
+            minValue: g.Vg,
+            maxValue: g.Lg,
             className: p.stepper
           })
         })]
@@ -109,12 +109,12 @@ function x(e) {
           className: p.mentionLimitTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-sm/semibold",
-            children: g.intl.string(g.t.XnuC9v)
+            children: m.intl.string(m.t.XnuC9v)
           }), (0, r.jsx)(s.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
             className: p.descriptionHint,
-            children: g.intl.string(g.t.EDBe5u)
+            children: m.intl.string(m.t.EDBe5u)
           })]
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.VL, {
@@ -134,7 +134,7 @@ function x(e) {
       type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
       step: 2,
-      header: g.intl.string(g.t["18TOiY"]),
+      header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(o.Z, {
         rule: x,
         onChangeRule: b
@@ -143,7 +143,7 @@ function x(e) {
       type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
       step: 3,
-      header: g.intl.string(g.t.eq3gjo),
+      header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(c.Z, {
         rule: x,
         onChangeRule: b

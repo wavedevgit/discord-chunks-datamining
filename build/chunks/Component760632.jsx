@@ -2,7 +2,7 @@
 /** chunk id: 760632, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  M: () => g
+  M: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,13 +13,13 @@ let o = "".concat(60),
   c = "".concat(300),
   d = "".concat(900),
   u = "".concat(1800),
-  m = "".concat(3600);
+  g = "".concat(3600);
 
-function g(e) {
+function m(e) {
   let {
     canManageGuild: t,
     afkTimeout: n,
-    afkChannelId: g
+    afkChannelId: m
   } = e, p = i.useMemo(() => [{
     value: o,
     label: a.intl.formatToPlainString(a.t.iXLF9f, {
@@ -41,7 +41,7 @@ function g(e) {
       minutes: 30
     })
   }, {
-    value: m,
+    value: g,
     label: a.intl.formatToPlainString(a.t.xCjYxM, {
       hours: 1
     })
@@ -53,7 +53,7 @@ function g(e) {
   return (0, r.jsx)(l.q4e, {
     value: null == n ? null : "".concat(n),
     options: p,
-    isDisabled: null == g || !t,
+    isDisabled: null == m || !t,
     onChange: f
   })
 }

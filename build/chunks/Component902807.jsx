@@ -2,7 +2,7 @@
 /** chunk id: 902807, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ class d extends Chunk647438.Component {
   }
 }
 let u = (0, Chunk137317.animated)(d),
-  m = function(e) {
+  g = function(e) {
     let {
       className: t,
       name: n,

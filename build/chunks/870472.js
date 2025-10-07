@@ -46,8 +46,8 @@ function c(e, t) {
       selections: d
     },
     setState: u,
-    goBack: m,
-    goForward: g
+    goBack: g,
+    goForward: m
   } = e;
   r.useLayoutEffect(() => {
     let e = e => t => {
@@ -250,8 +250,8 @@ function c(e, t) {
     O = r.useCallback(e => {
       var t, n, r, l;
       let s = e.metaKey || e.ctrlKey;
-      "z" === e.key && s ? (m().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && s && (g().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
-    }, [m, g, i]),
+      "z" === e.key && s ? (g().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && s && (m().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
+    }, [g, m, i]),
     y = r.useCallback(e => {
       var t;
       let n = o.trim().length > 0,

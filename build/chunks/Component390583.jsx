@@ -16,7 +16,7 @@ var Chunk723047 = require("./723047.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,7 +75,7 @@ function f() {
     children: [(0, Chunk951288.jsx)(Chunk861345.p, {
       benefits: require,
       onEdit: function(e) {
-        (0, l.h7j)(i => (0, r.jsx)(c.x3, p(g({}, i), {
+        (0, l.h7j)(i => (0, r.jsx)(c.x3, p(m({}, i), {
           guildId: t,
           omitChannelIds: h,
           initialData: n[e],
@@ -96,7 +96,7 @@ function f() {
       size: 8
     }), (0, Chunk951288.jsx)(Chunk861345.s, {
       onClick: function() {
-        (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
+        (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, p(m({}, e), {
           guildId: t,
           omitChannelIds: h,
           onSave: e => x(e)

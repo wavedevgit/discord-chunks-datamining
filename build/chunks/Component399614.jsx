@@ -78,7 +78,7 @@ let h = [],
       })
     }, [t, C]);
     return (0, r.jsxs)("div", {
-      className: g.editResources,
+      className: m.editResources,
       children: [x.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
@@ -87,7 +87,7 @@ let h = [],
         onDragReset: _,
         onDragComplete: v
       }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(s.P3F, {
-        className: g.addActionItem,
+        className: m.addActionItem,
         onClick: O,
         children: [(0, r.jsx)(s.oFk, {
           size: "xs",
@@ -95,7 +95,7 @@ let h = [],
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "none",
-          children: m.intl.string(m.t["w9/qGR"])
+          children: g.intl.string(g.t["w9/qGR"])
         })]
       })]
     })

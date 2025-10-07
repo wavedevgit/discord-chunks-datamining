@@ -2,7 +2,7 @@
 /** chunk id: 832321, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  k: () => m
+  k: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,20 +14,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk650774 = require("./650774.js"),
   Chunk231338 = require("./231338.js");
 
-function m(e) {
+function g(e) {
   let {
     guild: t,
     discoverableGuild: n
-  } = e, m = null == t ? true : t.id, {
-    memberCount: g,
+  } = e, g = null == t ? true : t.id, {
+    memberCount: m,
     onlineCount: p
   } = (0, s.cj)([d.Z], () => {
     var e, t;
     return {
-      memberCount: null != (e = d.Z.getMemberCount(m)) ? e : 1234,
-      onlineCount: null != (t = d.Z.getOnlineCount(m)) ? t : 1234
+      memberCount: null != (e = d.Z.getMemberCount(g)) ? e : 1234,
+      onlineCount: null != (t = d.Z.getOnlineCount(g)) ? t : 1234
     }
-  }, [m]), f = i.useRef((0, l.Z)()), h = i.useMemo(() => {
+  }, [g]), f = i.useRef((0, l.Z)()), h = i.useMemo(() => {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;
@@ -54,7 +54,7 @@ function m(e) {
       emojis: i,
       emojiCount: i.length,
       presenceCount: p,
-      memberCount: g
+      memberCount: m
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function m(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, g, p]), x = i.useMemo(() => {
+  }, [n, t, m, p]), x = i.useMemo(() => {
     var e;
     let t = null == h || null == (e = h.emojis) ? true : e[0];
     return null != t ? {

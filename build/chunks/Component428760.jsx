@@ -19,13 +19,13 @@ function u(e) {
     maxWordCount: n,
     className: l,
     textAreaClassName: u,
-    subtitleText: m,
-    initialValue: g
-  } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
+    subtitleText: g,
+    initialValue: m
+  } = e, p = i.useMemo(() => null != m ? m : [], [m]), {
     value: f,
     onChange: h,
     errorMessage: x
-  } = (0, o.Z)(t, g, n);
+  } = (0, o.Z)(t, m, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()(d.keywordsContainer, l),
@@ -49,7 +49,7 @@ function u(e) {
       className: d.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: null != m ? m : c.intl.string(c.t["Gm6G5+"])
+      children: null != g ? g : c.intl.string(c.t["Gm6G5+"])
     })]
   })
 }

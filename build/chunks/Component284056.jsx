@@ -108,9 +108,10 @@ class N extends Chunk647438.PureComponent {
       isMicTesting: n,
       isDetectingInput: i
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk481060.R94, {
+    return (0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
       className: Chunk81272.micTestCaption,
-      type: Chunk481060.R94.Types.DESCRIPTION,
       children: require ? Chunk647438 ? module : exports : null
     })
   }
@@ -135,56 +136,52 @@ class N extends Chunk647438.PureComponent {
     } = this.state, O = module && !Chunk19780 ? Chunk388032.intl.string(Chunk388032.t["9viE2N"]) : null;
     Chunk19780 && module && !Chunk46973 && this._micTestStop();
     let T = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: o()(Chunk81272.container, Chunk131951),
-      children: [!Chunk393238 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk81272.title,
-          children: exports
-        }), null != require && (0, Chunk951288.jsx)(Chunk481060.R94, {
-          type: Chunk481060.R94.Types.DESCRIPTION,
-          className: Chunk81272.description,
-          children: require
-        })]
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk81272.micTest,
-        children: [!Chunk393238 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsxs)("div", {
-            className: Chunk81272.buttonSizer,
-            "aria-hidden": true,
-            children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-              buttonRef: Chunk846027,
-              grow: true,
-              size: Chunk755721.zx.Sizes.SMALL,
-              className: l,
-              color: Chunk442837,
-              children: T
-            }), (0, Chunk951288.jsx)("div", {
-              className: Chunk81272.buttonSizerSpacer
+      children: (0, Chunk951288.jsx)(Chunk481060.NIc, {
+        label: null != exports ? exports : true,
+        hideLabel: Chunk393238,
+        description: Chunk393238 ? null : require,
+        children: (0, Chunk951288.jsxs)("div", {
+          className: Chunk81272.micTest,
+          children: [!Chunk393238 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+            children: [(0, Chunk951288.jsxs)("div", {
+              className: Chunk81272.buttonSizer,
+              "aria-hidden": true,
+              children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
+                buttonRef: Chunk846027,
+                grow: true,
+                size: Chunk755721.zx.Sizes.SMALL,
+                className: l,
+                color: Chunk442837,
+                children: T
+              }), (0, Chunk951288.jsx)("div", {
+                className: Chunk81272.buttonSizerSpacer
+              })]
+            }), (0, Chunk951288.jsx)(Chunk28664.u, {
+              text: Chunk981631,
+              children: (0, Chunk951288.jsx)(Chunk755721.zx, {
+                grow: true,
+                onClick: this.handleToggleMicTest,
+                size: Chunk755721.zx.Sizes.SMALL,
+                className: l,
+                color: Chunk442837,
+                style: null != Chunk846519 ? {
+                  minWidth: Chunk846519
+                } : {
+                  visibility: "hidden"
+                },
+                children: Chunk19780 ? Chunk392711 : Chunk120356
+              })
             })]
-          }), (0, Chunk951288.jsx)(Chunk28664.u, {
-            text: Chunk981631,
-            children: (0, Chunk951288.jsx)(Chunk755721.zx, {
-              grow: true,
-              onClick: this.handleToggleMicTest,
-              size: Chunk755721.zx.Sizes.SMALL,
-              className: l,
-              color: Chunk442837,
-              style: null != Chunk846519 ? {
-                minWidth: Chunk846519
-              } : {
-                visibility: "hidden"
-              },
-              children: Chunk19780 ? Chunk392711 : Chunk120356
-            })
+          }), (0, Chunk951288.jsx)(Chunk794347.Z, {
+            progress: Chunk19780 || Chunk393238 ? Chunk626135 + 100 : 0,
+            notchBackground: Chunk647438,
+            notchClassName: this.props.notchClassName,
+            children: this.renderCaption()
           })]
-        }), (0, Chunk951288.jsx)(Chunk794347.Z, {
-          progress: Chunk19780 || Chunk393238 ? Chunk626135 + 100 : 0,
-          notchBackground: Chunk647438,
-          notchClassName: this.props.notchClassName,
-          children: this.renderCaption()
-        })]
-      })]
+        })
+      })
     })
   }
   constructor(...e) {

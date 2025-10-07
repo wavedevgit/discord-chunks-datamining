@@ -42,8 +42,8 @@ function b(e, t) {
       var r;
       let n = i[l.userId];
       null != n && t.push({
-        name: null != (r = l.nick) ? r : m.ZP.getName(n),
-        userTag: m.ZP.getUserTag(n),
+        name: null != (r = l.nick) ? r : g.ZP.getName(n),
+        userTag: g.ZP.getUserTag(n),
         id: l.userId,
         avatarSource: n.getAvatarSource(e),
         avatarURL: n.getAvatarURL(e, 80),
@@ -63,7 +63,7 @@ function j(e, t, n) {
   return r.useEffect(() => {
     i.current = n
   }), r.useEffect(() => {
-    (0, g.H)(e, t).catch(i.current)
+    (0, m.H)(e, t).catch(i.current)
   }, [e, t]), b(e, r.useCallback(e => e.roles.includes(t), [t]))
 }
 

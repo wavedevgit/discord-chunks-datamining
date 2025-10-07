@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk678558 = require("./678558.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk736692 = require("./736692.js");
-let g = e => {
+let m = e => {
   let {
     guild: t,
     analyticsLocation: n,
@@ -54,17 +54,17 @@ function p(e) {
   return (0, r.jsx)(c.Gt, {
     value: x,
     children: (0, r.jsxs)("div", {
-      className: l()(m.banner, u),
+      className: l()(g.banner, u),
       children: [(0, r.jsx)("img", {
-        className: m.__invalid_headerGraphic,
+        className: g.__invalid_headerGraphic,
         alt: "",
         src: n(322393)
       }), (0, r.jsxs)("div", {
-        className: m.content,
+        className: g.content,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-lg/semibold",
           color: null != f ? f : "always-white",
-          className: m.header,
+          className: g.header,
           children: t
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
@@ -72,11 +72,11 @@ function p(e) {
           children: i
         })]
       }), (0, r.jsx)("div", {
-        className: m.ctaContainer,
-        children: (0, r.jsx)(g, {
+        className: g.ctaContainer,
+        children: (0, r.jsx)(m, {
           guild: d,
           analyticsLocation: s,
-          className: m.button,
+          className: g.button,
           buttonProps: h
         })
       })]

@@ -82,8 +82,8 @@ let f = e => {
           onChange: e => v(e),
           options: O
         })
-      }), (0, r.jsx)(c.R94, {
-        type: c.R94.Types.DESCRIPTION,
+      }), (0, r.jsx)(c.Text, {
+        variant: "text-sm/normal",
         className: p.spacing,
         children: x.length > 0 ? b.intl.format(b.t["5WxHHh"], {
           members: g,

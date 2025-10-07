@@ -1,8 +1,8 @@
 /** Chunk was on 80960 **/
 /** chunk id: 481250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  VE: () => x,
-  lV: () => Z
+  VE: () => Z,
+  lV: () => R
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ let C = {
   [Chunk65154.Z.HIGH]: "High Quality Stream"
 };
 
-function x(e) {
+function Z(e) {
   let t = [],
     n = 0;
   for (e.length % 2 != 0 && e.push((0, r.jsx)(m.Z, {
@@ -44,28 +44,28 @@ function x(e) {
   }, n++));
   return t
 }
-let R = {
+let x = {
   ssrc: 1,
   codec: 2
 };
 
-function Z(e) {
+function R(e) {
   let {
     streams: t,
     context: n,
     mediaEngineConnectionId: i,
-    userId: Z,
+    userId: R,
     videoStreams: S,
     title: F,
     showUserInfo: N = false,
     showSimulcastOverride: I = false
-  } = e, [k, B] = a.useState("0"), w = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != Z ? v.default.getUser(Z) : null), T = (0, s.e7)([h.ZP], () => N && null != w && null != Z ? h.ZP.getNick(w, Z) : null);
-  if (null == t || N && null == Z || 0 === t.length) return (0, r.jsx)(c.$jN, {
+  } = e, [k, B] = a.useState("0"), w = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != R ? v.default.getUser(R) : null), T = (0, s.e7)([h.ZP], () => N && null != w && null != R ? h.ZP.getNick(w, R) : null);
+  if (null == t || N && null == R || 0 === t.length) return (0, r.jsx)(c.$jN, {
     type: c.$jN.Type.SPINNING_CIRCLE
   });
-  let O = F;
-  N && null != A && (O = "".concat(F, " — ").concat(null != T ? T : E.ZP.getName(A)));
-  let L = t.map((e, t) => (0, r.jsx)(c.njP.Item, {
+  let L = F;
+  N && null != A && (L = "".concat(F, " — ").concat(null != T ? T : E.ZP.getName(A)));
+  let O = t.map((e, t) => (0, r.jsx)(c.njP.Item, {
       id: t.toString(),
       children: function(e) {
         let t = (0, o.De)(e.type),
@@ -78,8 +78,8 @@ function Z(e) {
     G = function(e, t, n, a, i) {
       let o = [];
       for (let t of Object.keys(e).sort((e, t) => {
-          let n = R[e],
-            r = R[t];
+          let n = x[e],
+            r = x[t];
           return n !== r ? true === n ? 1 : true === r ? false : n - r : g.Pz[e] !== g.Pz[t] ? g.Pz[e] ? 1 : false : e > t ? 1 : false
         })) {
         let n = e[t];
@@ -103,10 +103,10 @@ function Z(e) {
               userId: n
             })
           }) : null
-        }(e, n, a, i), x(o)]
+        }(e, n, a, i), Z(o)]
       }, "".concat(e.type, " + ").concat(e.ssrc))
-    }(V, 0, i, Z, S),
-    _ = I && "video" === V.type && null != i && null != Z && null != S && (0, r.jsx)(m.Z, {
+    }(V, 0, i, R, S),
+    _ = I && "video" === V.type && null != i && null != R && null != S && (0, r.jsx)(m.Z, {
       className: j.marginBottom20,
       children: (0, r.jsxs)(m.Z.Child, {
         basis: "100%",
@@ -114,9 +114,9 @@ function Z(e) {
           className: j.marginBottom8,
           children: "Simulcast Override"
         }), (0, r.jsx)(c.q4e, {
-          value: g.ZP.getSimulcastDebugOverride(Z, n),
+          value: g.ZP.getSimulcastDebugOverride(R, n),
           onChange: e => {
-            d.MS(Z, n, e)
+            d.MS(R, n, e)
           },
           options: Object.values(D.Z).map(e => ({
             value: e,
@@ -127,14 +127,14 @@ function Z(e) {
     });
   return (0, r.jsxs)(c.hjN, {
     tag: c.RB0.H2,
-    title: O,
+    title: L,
     children: [(0, r.jsx)(c.njP, {
       type: "top",
       look: "brand",
       selectedItem: k,
       onItemSelect: B,
       className: P.tabBar,
-      children: L
+      children: O
     }), G, _]
   })
 }

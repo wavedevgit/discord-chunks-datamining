@@ -17,7 +17,7 @@ function c(e) {
     initialValue: n,
     maxWordCount: c,
     collapsed: d = false
-  } = e, [u, m] = i.useState(!d);
+  } = e, [u, g] = i.useState(!d);
   return (0, r.jsx)(l.zF9, {
     isExpanded: u,
     collapsibleContent: (0, r.jsx)(s.Z, {
@@ -35,7 +35,7 @@ function c(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          m(!u), t(e)
+          g(!u), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: o.header,

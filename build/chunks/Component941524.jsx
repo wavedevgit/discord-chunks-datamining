@@ -19,10 +19,10 @@ function a(e) {
     placeholder: c,
     disableEveryoneRole: d,
     includeRoleRestrictedPrivateChannels: u = false,
-    includeStageVoiceChannels: m = false,
-    helperText: g,
+    includeStageVoiceChannels: g = false,
+    helperText: m,
     className: p
-  } = e, f = (0, l.r)(t, n, u, m), h = (0, s.h)(t, a, d);
+  } = e, f = (0, l.r)(t, n, u, g), h = (0, s.h)(t, a, d);
   return (0, r.jsx)(i.ZP, {
     channelRows: f,
     roleRows: h,
@@ -31,7 +31,7 @@ function a(e) {
     selectedRoleIds: a,
     onChange: o,
     placeholder: c,
-    helperText: g,
+    helperText: m,
     className: p
   })
 }

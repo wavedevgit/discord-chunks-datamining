@@ -30,7 +30,7 @@ function h(e) {
       className: p.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
-      children: null != i ? i : g.intl.format(g.t.jKYAPj, {
+      children: null != i ? i : m.intl.format(m.t.jKYAPj, {
         helpArticle: f
       })
     })
@@ -49,13 +49,13 @@ function x(e) {
     onChangeText: a,
     className: o
   } = e, {
-    patterns: m,
+    patterns: g,
     valueError: x,
     errors: b,
     validatePatternsChanged: j,
     validateEditingValueChanged: _
   } = (0, d.Z)(l, a), [v] = i.useState(() => ({
-    tags: m,
+    tags: g,
     value: "",
     selections: [],
     isSelecting: false
@@ -67,15 +67,15 @@ function x(e) {
       erroringCharacterLength: l = n.length,
       erroringCharacterOffset: s = 0
     } = t;
-    return null == m.find(e => e === n) || (e[n] = {
+    return null == g.find(e => e === n) || (e[n] = {
       value: n,
       message: null != i ? i : r,
       erroringCharacterLength: l,
       erroringCharacterOffset: s
     }), e
-  }, {}), [b, m]), O = i.useCallback(e => {
-    j(e, m)
-  }, [j, m]), y = i.useCallback(e => {
+  }, {}), [b, g]), O = i.useCallback(e => {
+    j(e, g)
+  }, [j, g]), y = i.useCallback(e => {
     _(e)
   }, [_]);
   return (0, r.jsxs)("div", {
@@ -88,7 +88,7 @@ function x(e) {
       tagErrors: C,
       maxTags: u.VW
     }), (0, r.jsx)(h, {
-      text: g.intl.format(g.t["PGC/AA"], {
+      text: m.intl.format(m.t["PGC/AA"], {
         helpArticle: f
       }),
       hasErrors: b.length > 0 || null != x,

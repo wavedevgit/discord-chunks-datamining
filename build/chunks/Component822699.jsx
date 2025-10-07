@@ -109,8 +109,8 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   eE = (0, Chunk320830.Z)(Chunk637776.Z),
   ev = (0, Chunk320830.Z)(Chunk73906.Z),
   eb = (0, Chunk320830.Z)(Chunk649156.Z),
-  ej = (0, Chunk320830.Z)(Chunk909223.Z),
-  eI = (0, Chunk320830.Z)(Chunk424044.Z),
+  eI = (0, Chunk320830.Z)(Chunk909223.Z),
+  ej = (0, Chunk320830.Z)(Chunk424044.Z),
   eN = (0, Chunk320830.Z)(Chunk521379.Z);
 class eS extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
@@ -332,10 +332,10 @@ class eS extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(ev, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT,
-        render: e => (0, r.jsx)(ej, er({}, e))
+        render: e => (0, r.jsx)(eI, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT_SECOND_LOOK,
-        render: e => (0, r.jsx)(eI, er({}, e))
+        render: e => (0, r.jsx)(ej, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACCOUNT_REVERT(":token"),
         render: e => (0, r.jsx)(eN, er({}, e))

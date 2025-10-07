@@ -81,12 +81,10 @@ function N() {
           }
         }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(P, {})]
       })]
-    }), require.length > 0 ? (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      title: Chunk313789.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.geA.DESCRIPTION,
-        children: Chunk388032.intl.string(Chunk388032.t.OTXyaW)
-      }), (0, Chunk951288.jsx)("div", {
+    }), require.length > 0 ? (0, Chunk951288.jsx)(Chunk481060.NIc, {
+      label: Chunk313789.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
+      description: Chunk388032.intl.string(Chunk388032.t.OTXyaW),
+      children: (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: Chunk844642.logOutAllButton,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -99,12 +97,12 @@ function N() {
             Chunk313789.size > 0 ? (0, Chunk43015.L$)(Array.from(Chunk313789)) : (0, Chunk43015.L$)(require.map(e => e.id_hash))
           }
         })
-      })]
+      })
     }) : null]
   }), (0, Chunk951288.jsxs)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
-    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.geA.DESCRIPTION,
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+      variant: "text-sm/normal",
       className: Chunk844642.description,
       children: Chunk388032.intl.string(Chunk388032.t.zZp619)
     }), (null == o ? true : o.isStaff()) ? (0, Chunk951288.jsxs)("div", {

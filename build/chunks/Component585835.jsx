@@ -41,7 +41,7 @@ function y(e) {
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), B = D && !A && !L && true !== k && null != P, U = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : E ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != P, B = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : E ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
@@ -58,14 +58,14 @@ function y(e) {
     }) : null]
   }) : (0, i.jsx)(d.zxk, {
     size: "sm",
-    buttonRef: U,
+    buttonRef: B,
     disabled: Z,
     onClick: T,
     text: I
   });
   r.useEffect(() => {
     var e, t;
-    B && g.default.track(x.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
+    U && g.default.track(x.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -95,9 +95,9 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == P ? true : P.application.id, B]);
-  let G = B && (null != W.current || null != U.current) ? (0, i.jsx)(c.J2, {
-      targetElementRef: E ? W : U,
+  }, [k, null == P ? true : P.application.id, U]);
+  let G = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.J2, {
+      targetElementRef: E ? W : B,
       title: j.intl.string(j.t.ufFDiI),
       body: j.intl.string(j.t.TyMJwM),
       onRequestClose: () => {

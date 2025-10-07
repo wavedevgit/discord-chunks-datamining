@@ -128,7 +128,7 @@ let ev = {
     switch (e) {
       case ef.pNK.PROFILE:
         return {
-          section: ef.pNK.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: ex.intl.string(ex.t.txdaxc), ariaLabel: ex.intl.string(ex.t.txdaxc), element: eg.Z, type: o.bT.SCROLLABLE_CUSTOM, notice: {
+          section: ef.pNK.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: ex.intl.string(ex.t.txdaxc), ariaLabel: ex.intl.string(ex.t.txdaxc), element: em.Z, type: o.bT.SCROLLABLE_CUSTOM, notice: {
             stores: [T.Z],
             element: ep.Z
           }
@@ -191,7 +191,7 @@ let ev = {
       case ef.pNK.ACCESS:
         return {
           section: ef.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: ex.intl.string(ex.t.YJlvBA), element: ed.O, notice: {
-            stores: [em.Z],
+            stores: [eg.Z],
             element: eu.w
           }, predicate: () => t.canManageGuild, ariaLabel: ex.intl.string(ex.t.YJlvBA)
         };
@@ -224,7 +224,7 @@ let ev = {
           section: ef.pNK.GUILD_AUTOMOD, label: (0, r.jsx)("div", {
             className: eb.landingPageTabLink,
             children: ex.intl.string(ex.t.uRelg4)
-          }), ariaLabel: ex.intl.string(ex.t.uRelg4), element: g.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ef.oNc.COMMUNITY) && ((0, m.Nb)(t.guild.id) || (0, m.ze)(t.guild.id))
+          }), ariaLabel: ex.intl.string(ex.t.uRelg4), element: m.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ef.oNc.COMMUNITY) && ((0, g.Nb)(t.guild.id) || (0, g.ze)(t.guild.id))
         };
       case ef.pNK.AUDIT_LOG:
         return {

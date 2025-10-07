@@ -19,14 +19,14 @@ function d(e) {
     onUpdateGames: d,
     disabled: u
   } = e, {
-    topGames: m,
-    tryFetchTopGames: g
-  } = (0, s.I)(), p = m.get(t), [f, h] = i.useState(false);
+    topGames: g,
+    tryFetchTopGames: m
+  } = (0, s.I)(), p = g.get(t), [f, h] = i.useState(false);
   i.useEffect(() => {
-    h(true), g(t).finally(() => {
+    h(true), m(t).finally(() => {
       h(false)
     })
-  }, [t, g]);
+  }, [t, m]);
   let x = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
     b = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])

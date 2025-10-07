@@ -32,8 +32,8 @@ function p(e) {
     className: t,
     children: [(0, r.jsx)(l.vwX, {
       id: b,
-      className: g.sectionTitle,
-      children: m.intl.string(u.default.pb7lpK)
+      className: m.sectionTitle,
+      children: g.intl.string(u.default.pb7lpK)
     }), (0, r.jsx)(d.g, {
       badgeCollection: x,
       handleBoostUpsellClick: h,

@@ -235,14 +235,14 @@ function D(e) {
     cancel: t,
     confirm: n
   } = e;
-  return (0, i.jsx)(g.sYh, {
+  return (0, i.jsx)(m.sYh, {
     dismissable: true,
     header: O.intl.string(O.t["cN/RFB"]),
     confirmText: O.intl.string(O.t["cN/RFB"]),
     cancelText: O.intl.string(O.t["ETE/oK"]),
     onCancel: t,
     onConfirm: n,
-    children: (0, i.jsx)(g.Text, {
+    children: (0, i.jsx)(m.Text, {
       variant: "text-md/normal",
       color: "text-default",
       children: O.intl.string(O.t.apCQv7)
@@ -295,14 +295,14 @@ function L(e) {
   return null == n ? (0, i.jsx)(k, {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(g.xJW, {
+    children: [(0, i.jsx)(m.xJW, {
       title: O.intl.string(O.t.zGGcLy),
       children: (0, i.jsx)(f.Z, {
-        buttonLook: m.zx.Looks.FILLED,
-        buttonColor: m.zx.Colors.BRAND,
+        buttonLook: g.zx.Looks.FILLED,
+        buttonColor: g.zx.Colors.BRAND,
         value: (0, _.Z)(n.code)
       })
-    }), n.isDirty && (0, i.jsx)(g.Text, {
+    }), n.isDirty && (0, i.jsx)(m.Text, {
       color: "text-feedback-warning",
       className: N.marginTop8,
       variant: "text-sm/normal",
@@ -342,7 +342,7 @@ function k(e) {
     }
     s(false)
   };
-  return (0, i.jsx)(g.zxk, {
+  return (0, i.jsx)(m.zxk, {
     variant: "primary",
     text: O.intl.string(O.t.Wxdi8P),
     loading: r,
@@ -367,7 +367,7 @@ function G(e) {
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: y.button,
-    children: (0, i.jsx)(g.zxk, {
+    children: (0, i.jsx)(m.zxk, {
       variant: "primary",
       text: O.intl.string(O.t["Nw+0Y2"]),
       loading: r,
@@ -393,7 +393,7 @@ function M(e) {
     children: [(0, i.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: y.button,
-      children: (0, i.jsx)(g.zxk, {
+      children: (0, i.jsx)(m.zxk, {
         variant: "critical-secondary",
         text: O.intl.string(O.t["cN/RFB"]),
         onClick: () => s(true)
@@ -412,10 +412,10 @@ function U(e) {
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: y.button,
-    children: (0, i.jsx)(g.zxk, {
+    children: (0, i.jsx)(m.zxk, {
       variant: "secondary",
       text: O.intl.string(O.t.YI3iV1),
-      onClick: () => (0, g.ZDy)(async () => {
+      onClick: () => (0, m.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));

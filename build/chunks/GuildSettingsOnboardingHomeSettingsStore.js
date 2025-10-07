@@ -32,16 +32,16 @@ function u(e) {
   }
   return e
 }
-let m = {
+let g = {
     enabled: false
   },
-  g = null,
-  p = Object.assign({}, m),
+  m = null,
+  p = Object.assign({}, g),
   f = false,
   h = {};
 
 function x() {
-  g = null, p = Object.assign({}, m), f = false, g = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+  m = null, p = Object.assign({}, g), f = false, m = Chunk999382.Z.getGuildId(), p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(m)))
 }
 
 function b(e, t) {
@@ -59,7 +59,7 @@ function j(e, t) {
 }
 
 function _() {
-  f = false, p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+  f = false, p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(m)))
 }
 class v extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -71,10 +71,10 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   getSettings() {
-    return null != p ? p : m
+    return null != p ? p : g
   }
   hasChanges() {
-    return null != g && !l().isEqual(p, Chunk563534.Z.getSettings(g))
+    return null != m && !l().isEqual(p, Chunk563534.Z.getSettings(m))
   }
   canCloseEarly() {
     return !this.hasChanges()
@@ -108,7 +108,7 @@ let C = new v(Chunk570140.Z, {
   GUILD_SETTINGS_SET_SECTION: x,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: x,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
-    p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(g)))
+    p = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(m)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
     f = true

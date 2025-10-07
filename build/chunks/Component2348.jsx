@@ -86,7 +86,7 @@ function N(e) {
         }))
       })
     },
-    onClick: e => (e.stopPropagation(), (0, g.s)(t.id, i.id) ? (0, x.pt)(i.id) : (0, d.ZDy)(async () => {
+    onClick: e => (e.stopPropagation(), (0, m.s)(t.id, i.id) ? (0, x.pt)(i.id) : (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("35641").then(n.bind(n, 89216));
@@ -147,7 +147,7 @@ let E = Chunk647438.memo(function() {
             [C.disabled]: P
           }),
           onClick: e => {
-            if (!P) return e.stopPropagation(), (0, g.s)(l.id, t.id) ? (0, x.pt)(t.id) : (0, d.ZDy)(async () => {
+            if (!P) return e.stopPropagation(), (0, m.s)(l.id, t.id) ? (0, x.pt)(t.id) : (0, d.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("35641").then(n.bind(n, 89216));
@@ -183,7 +183,7 @@ let E = Chunk647438.memo(function() {
               children: [(0, r.jsx)(f._W, {
                 channel: t,
                 guild: l
-              }), (0, r.jsx)(m.Z, {
+              }), (0, r.jsx)(g.Z, {
                 className: C.__invalid_name,
                 children: (0, r.jsx)(d.Text, {
                   className: C.channelText,
@@ -205,7 +205,7 @@ let E = Chunk647438.memo(function() {
             })
           }), (0, r.jsx)("div", {
             className: C.channelActions,
-            children: (0, g.s)(t.guild_id, t.id) ? (0, r.jsx)(c.$q, {
+            children: (0, m.s)(t.guild_id, t.id) ? (0, r.jsx)(c.$q, {
               "aria-checked": T,
               value: T,
               type: c.M0.INVERTED,

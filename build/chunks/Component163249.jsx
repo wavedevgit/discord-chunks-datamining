@@ -60,7 +60,7 @@ function h(e) {
         children: [(0, r.jsx)(a.qEK, {
           size: a.EFr.SIZE_56,
           "aria-hidden": true,
-          status: m.Skl.ONLINE,
+          status: g.Skl.ONLINE,
           src: t.avatar
         }), (0, r.jsx)(a.Text, {
           color: "header-primary",
@@ -176,7 +176,7 @@ function b(e) {
     guild: t,
     everyoneRole: n,
     setEditRoleId: l
-  } = e, [s, d] = i.useState(false), m = async () => {
+  } = e, [s, d] = i.useState(false), g = async () => {
     d(true), await o.Z.createRole(t.id), d(false)
   }, f = i.useCallback(() => {
     l(n.id)
@@ -184,25 +184,25 @@ function b(e) {
   return (0, r.jsx)(c.NM, {
     children: (0, r.jsxs)(a.hjN, {
       className: p.section,
-      title: g.intl.string(g.t.LPJmLy),
+      title: m.intl.string(m.t.LPJmLy),
       tag: a.RB0.H2,
       children: [(0, r.jsxs)("div", {
         className: p.container,
         children: [(0, r.jsx)(x, {}), (0, r.jsx)(a.X6q, {
           variant: "heading-xl/semibold",
-          children: g.intl.string(g.t.ALlnbm)
+          children: m.intl.string(m.t.ALlnbm)
         }), (0, r.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-md/normal",
           className: p.introBody,
-          children: g.intl.string(g.t["1ydhVl"])
+          children: m.intl.string(m.t["1ydhVl"])
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.button,
           children: (0, r.jsx)(a.zxk, {
             variant: "primary",
-            text: g.intl.string(g.t.JZZjQE),
-            onClick: m,
+            text: m.intl.string(m.t.JZZjQE),
+            onClick: g,
             loading: s
           })
         })]

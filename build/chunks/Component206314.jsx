@@ -58,10 +58,7 @@ class p extends Chunk647438.PureComponent {
         })]
       }), null !== Chunk692547 && (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
         className: Chunk966117.graph,
-        children: (0, Chunk951288.jsx)(Chunk481060.R94, {
-          type: Chunk481060.geA.DESCRIPTION,
-          children: Chunk692547
-        })
+        children: Chunk692547
       }, null != Chunk647438 ? "".concat(Chunk647438, "-").concat(Chunk120356) : Chunk120356), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk966117.divider
       })]

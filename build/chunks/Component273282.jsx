@@ -26,7 +26,7 @@ function x(e) {
     buttonClassName: x
   } = e, {
     analyticsLocations: b
-  } = (0, s.ZP)(), j = t.features.has(m.oNc.INVITE_SPLASH), _ = n && j, v = i.useRef(null), C = i.useCallback(e => {
+  } = (0, s.ZP)(), j = t.features.has(g.oNc.INVITE_SPLASH), _ = n && j, v = i.useRef(null), C = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
@@ -34,9 +34,9 @@ function x(e) {
     e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
       analyticsLocations: b,
-      analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
-      analyticsObject: m.qAy.BUTTON_CTA,
-      perks: (0, g.o9)()
+      analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: g.qAy.BUTTON_CTA,
+      perks: (0, m.o9)()
     })
   }, [b, t]), y = i.useCallback(() => {
     var e;

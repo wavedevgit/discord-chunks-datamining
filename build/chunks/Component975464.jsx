@@ -88,11 +88,11 @@ function v(e) {
     disableTrack: null == t.id || null == h
   }), p || null == h || v) ? (0, r.jsx)(s.$jN, {}) : h.actionRequired ? (0, r.jsx)(x.Z, {
     guild: t
-  }) : null != f ? (0, r.jsx)(m.Z, {
+  }) : null != f ? (0, r.jsx)(g.Z, {
     children: f.message
   }) : (0, r.jsxs)("div", {
     className: j.container,
-    children: [(0, r.jsx)(g.Z, {
+    children: [(0, r.jsx)(m.Z, {
       guild: t,
       monetizationEligibility: n
     }), (0, r.jsx)(_, {

@@ -69,7 +69,7 @@ async function Z(e, t, n) {
   try {
     await _.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
-    let e = new m.Z(t);
+    let e = new g.Z(t);
     (0, d.h7j)(t => (0, r.jsx)(a.Modal, R(w({}, t), {
       title: S.intl.string(S.t.R0RpRU),
       actions: [{
@@ -91,13 +91,13 @@ function D(e) {
     member: t,
     guildId: l,
     roleId: o,
-    locked: m
+    locked: g
   } = e, p = i.useRef(null), f = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
   function b(e) {
-    if (e.stopPropagation(), !m) {
+    if (e.stopPropagation(), !g) {
       if (e.shiftKey) return void Z(t, l, o);
       let n = v.Z.getRole(o);
       (0, d.h7j)(e => (0, r.jsx)(a.Modal, R(w({}, e), {
@@ -140,7 +140,7 @@ function D(e) {
       }))
     })
   }
-  return (0, g.$)(f, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
+  return (0, m.$)(f, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
     className: P.contentWidth,
     children: (0, r.jsx)(h.Z, {
       targetElementRef: p,
@@ -162,11 +162,11 @@ function D(e) {
         }), (0, r.jsx)("div", {
           className: T.removeButtonContainer,
           children: (0, r.jsx)(c.u, {
-            text: m ? S.intl.string(S.t.wkrQaG) : S.intl.string(S.t["7sFNfX"]),
+            text: g ? S.intl.string(S.t.wkrQaG) : S.intl.string(S.t["7sFNfX"]),
             position: "top",
             children: (0, r.jsx)(d.P3F, {
               className: s()(T.removeButton, {
-                [T.removeButtonDisabled]: m
+                [T.removeButtonDisabled]: g
               }),
               onClick: b,
               children: (0, r.jsx)(d.k$p, {
@@ -221,13 +221,13 @@ function L(e) {
     roleMembers: c,
     handleAddClick: u
   } = e, {
-    analyticsLocations: m
-  } = (0, f.ZP)(p.Z.MEMBER_LIST), g = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, C.rY)(t, g);
-  let h = i.useMemo(() => c.filter(e => (0, C.eg)(g, e)), [c, g]),
+    analyticsLocations: g
+  } = (0, f.ZP)(p.Z.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
+  (0, C.rY)(t, m);
+  let h = i.useMemo(() => c.filter(e => (0, C.eg)(m, e)), [c, m]),
     x = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(f.Gt, {
-    value: m,
+    value: g,
     children: (0, r.jsx)(d._2F, {
       className: T.list,
       sections: [Math.max(h.length, 1)],
@@ -293,8 +293,8 @@ function G(e) {
     role: l,
     locked: a,
     setSelectedSection: c
-  } = e, [u, m] = i.useState(""), {
-    headerHeight: g,
+  } = e, [u, g] = i.useState(""), {
+    headerHeight: m,
     headerRef: p
   } = (0, O.Z)(0), {
     scrolledToTop: f,
@@ -335,7 +335,7 @@ function G(e) {
             setSelectedSection: c
           }), (0, r.jsx)(k, {
             query: u,
-            setQuery: m,
+            setQuery: g,
             locked: x,
             handleAddClick: N
           }), v ? (0, r.jsx)(d.Wn, {
@@ -346,7 +346,7 @@ function G(e) {
         })
       })
     }), (0, r.jsx)(L, {
-      headerHeight: g + 8,
+      headerHeight: m + 8,
       query: u,
       guildId: t.id,
       roleId: l.id,

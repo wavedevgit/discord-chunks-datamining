@@ -119,10 +119,9 @@ function x(e) {
       [e.location]: t
     }))
   }, e.location));
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.vwX, {
-      children: O.intl.string(O.t.bWVN1N)
-    }), o]
+  return (0, r.jsx)(l.C3N, {
+    label: O.intl.string(O.t.bWVN1N),
+    children: o
   })
 }
 
@@ -182,9 +181,8 @@ function k(e) {
     },
     updateSettings: s
   } = e, c = !t || !n;
-  return (0, r.jsxs)(l.hjN, {
-    tag: l.RB0.H1,
-    title: O.intl.string(O.t.mqxwJC),
+  return (0, r.jsxs)(l.C3N, {
+    label: O.intl.string(O.t.mqxwJC),
     children: [(0, r.jsx)(l.rsf, {
       label: O.intl.string(O.t.s0KCgI),
       description: O.intl.string(O.t.O1Vflp),
@@ -193,11 +191,13 @@ function k(e) {
       onChange: e => s({
         confettiEnabled: e
       }, 0)
-    }), (0, r.jsxs)(l.xJW, {
-      disabled: c,
-      title: O.intl.string(O.t["vd0D8/"]),
-      className: v.formItem,
-      children: [(0, r.jsx)(M, {
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Text, {
+        variant: "text-md/semibold",
+        color: c ? "text-muted" : "header-primary",
+        className: v.sliderLabel,
+        children: O.intl.string(O.t["vd0D8/"])
+      }), (0, r.jsx)(M, {
         children: O.intl.string(O.t.a18Sur)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
@@ -211,11 +211,13 @@ function k(e) {
         }, 0),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsxs)(l.xJW, {
-      disabled: c,
-      title: O.intl.string(O.t.sPO3io),
-      className: v.formItem,
-      children: [(0, r.jsx)(M, {
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Text, {
+        variant: "text-md/semibold",
+        color: c ? "text-muted" : "header-primary",
+        className: v.sliderLabel,
+        children: O.intl.string(O.t.sPO3io)
+      }), (0, r.jsx)(M, {
         children: O.intl.string(O.t.xoldVl)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
@@ -250,9 +252,8 @@ function U(e) {
     },
     updateSettings: o
   } = e, s = !t || !n;
-  return (0, r.jsxs)(l.hjN, {
-    tag: l.RB0.H1,
-    title: O.intl.string(O.t.Xz0olZ),
+  return (0, r.jsxs)(l.C3N, {
+    label: O.intl.string(O.t.Xz0olZ),
     children: [(0, r.jsx)(l.rsf, {
       label: O.intl.string(O.t.o3iV7O),
       description: O.intl.string(O.t["31Z8ER"]),
@@ -269,11 +270,13 @@ function U(e) {
       onChange: e => o({
         comboSoundsEnabled: e
       })
-    }), (0, r.jsxs)(l.xJW, {
-      disabled: s,
-      title: O.intl.string(O.t.L0oQur),
-      className: v.formItem,
-      children: [(0, r.jsx)(M, {
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Text, {
+        variant: "text-md/semibold",
+        color: s ? "text-muted" : "header-primary",
+        className: v.sliderLabel,
+        children: O.intl.string(O.t.L0oQur)
+      }), (0, r.jsx)(M, {
         children: O.intl.string(O.t["/OOFpK"])
       }), (0, r.jsx)(l.iRW, {
         disabled: s,
@@ -287,8 +290,6 @@ function U(e) {
         }),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsx)(l.izJ, {
-      className: v.divider
     })]
   })
 }
@@ -305,9 +306,8 @@ function G(e) {
   } = e, u = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), d = !t || !n || u, f = (e, t) => {
     null != e.shakeIntensity && e.shakeIntensity > i && (0, p.T)(h.hn.MORE), s(e, t)
   };
-  return (0, r.jsxs)(l.hjN, {
-    tag: l.RB0.H1,
-    title: O.intl.string(O.t.wVS5SU),
+  return (0, r.jsxs)(l.C3N, {
+    label: O.intl.string(O.t.wVS5SU),
     children: [(0, r.jsx)(l.rsf, {
       label: O.intl.string(O.t.N004zM),
       description: O.intl.string(O.t.Qq5W3t),
@@ -317,11 +317,13 @@ function G(e) {
       onChange: e => s({
         screenshakeEnabled: e
       }, 1)
-    }), (0, r.jsxs)(l.xJW, {
-      disabled: d,
-      title: O.intl.string(O.t.UxnnCw),
-      className: v.formItem,
-      children: [(0, r.jsx)(M, {
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(l.Text, {
+        variant: "text-md/semibold",
+        color: d ? "text-muted" : "header-primary",
+        className: v.sliderLabel,
+        children: O.intl.string(O.t.UxnnCw)
+      }), (0, r.jsx)(M, {
         children: O.intl.string(O.t.CEOEOT)
       }), (0, r.jsx)(l.iRW, {
         disabled: d,
@@ -356,13 +358,11 @@ function B(e) {
       settingsVisible: false
     }), (0, f.default)()
   };
-  return (0, r.jsx)(l.hjN, {
-    tag: l.RB0.H1,
-    title: O.intl.string(O.t.EuXv2t),
-    children: (0, r.jsxs)("div", {
-      className: v.formItem,
-      children: [(0, r.jsx)(l.R94, {
-        className: v.formItem,
+  return (0, r.jsx)(l.C3N, {
+    label: O.intl.string(O.t.EuXv2t),
+    children: (0, r.jsxs)(l.Kqy, {
+      gap: 16,
+      children: [(0, r.jsx)("div", {
         children: O.intl.string(O.t["1SLnkp"])
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
@@ -382,35 +382,31 @@ function Z(e) {
   let {
     onChangePage: t
   } = e, n = () => t(1);
-  return (0, r.jsxs)(l.hjN, {
-    children: [(0, r.jsxs)(l.P3F, {
-      onClick: n,
-      className: v.achievementContainer,
-      children: [(0, r.jsx)("div", {
-        className: v.achievementIconContainer,
-        children: (0, r.jsx)(l.rm8, {
-          size: "md",
-          color: s.Z.unsafe_rawColors.ORANGE_345.css
-        })
-      }), (0, r.jsxs)("div", {
-        className: v.achievementTextContainer,
-        children: [(0, r.jsx)(l.X6q, {
-          variant: "heading-md/semibold",
-          color: "header-primary",
-          children: O.intl.string(O.t["6jI0hY"])
-        }), (0, r.jsx)(l.Text, {
-          variant: "text-md/normal",
-          color: "header-secondary",
-          children: O.intl.string(O.t.GuUItb)
-        })]
-      }), (0, r.jsx)(l.Fbu, {
-        size: "custom",
-        color: "currentColor",
-        width: 16,
-        className: v.rightCaretIcon
+  return (0, r.jsxs)(l.P3F, {
+    onClick: n,
+    className: v.achievementContainer,
+    children: [(0, r.jsx)("div", {
+      className: v.achievementIconContainer,
+      children: (0, r.jsx)(l.rm8, {
+        size: "md",
+        color: s.Z.unsafe_rawColors.ORANGE_345.css
+      })
+    }), (0, r.jsxs)("div", {
+      className: v.achievementTextContainer,
+      children: [(0, r.jsx)(l.X6q, {
+        variant: "heading-md/semibold",
+        color: "header-primary",
+        children: O.intl.string(O.t["6jI0hY"])
+      }), (0, r.jsx)(l.Text, {
+        variant: "text-md/normal",
+        color: "header-secondary",
+        children: O.intl.string(O.t.GuUItb)
       })]
-    }), (0, r.jsx)(l.izJ, {
-      className: v.divider
+    }), (0, r.jsx)(l.Fbu, {
+      size: "custom",
+      color: "currentColor",
+      width: 16,
+      className: v.rightCaretIcon
     })]
   })
 }
@@ -466,10 +462,10 @@ function V(e) {
         y: e.clientY
       })
     };
-  return i.useEffect(() => (window.addEventListener("mousemove", E), () => window.removeEventListener("mousemove", E)), []), (0, r.jsxs)(r.Fragment, {
+  return i.useEffect(() => (window.addEventListener("mousemove", E), () => window.removeEventListener("mousemove", E)), []), (0, r.jsxs)(l.Kqy, {
+    gap: 24,
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
-      className: v.title,
       children: O.intl.string(O.t.AtCukJ)
     }), (0, r.jsx)(j, {
       settings: a,

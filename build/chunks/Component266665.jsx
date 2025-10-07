@@ -38,7 +38,7 @@ function w(e) {
   let l, {
       guild: c,
       role: d,
-      highestRole: g,
+      highestRole: m,
       selectedItem: p,
       onClick: f,
       currentPosition: x,
@@ -47,7 +47,7 @@ function w(e) {
       onDragComplete: C,
       roleStyle: y
     } = e,
-    N = (0, O.T)(c, g, d),
+    N = (0, O.T)(c, m, d),
     E = (0, j.fI)(d),
     S = null == N && !E,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
@@ -105,7 +105,7 @@ function w(e) {
     itemType: "side",
     onClick: f,
     onContextMenu: function(e) {
-      (0, m.jW)(e, async () => {
+      (0, g.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 741247));
@@ -167,7 +167,7 @@ function R(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: a
-  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), m = (0, c.e7)([_.Z], () => _.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [b, j] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([_.Z], () => _.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [b, j] = i.useState(o.length), {
     scrolledToTop: O,
     handleScroll: I
   } = (0, N.V)(), {
@@ -215,7 +215,7 @@ function R(e) {
           children: (0, r.jsx)(u.P3F, {
             className: T.addRole,
             onClick: () => {
-              g.Z.createRole(t.id), a(E.ZI.DISPLAY)
+              m.Z.createRole(t.id), a(E.ZI.DISPLAY)
             },
             children: (0, r.jsx)(u.qJs, {
               size: "custom",
@@ -236,7 +236,7 @@ function R(e) {
           children: o.map((e, i) => (0, r.jsx)(w, {
             guild: t,
             role: e,
-            highestRole: m,
+            highestRole: g,
             selectedItem: n,
             onClick: () => l(e.id),
             currentPosition: i,

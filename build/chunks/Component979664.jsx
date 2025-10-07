@@ -15,14 +15,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk713611 = require("./713611.js"),
   Chunk270856 = require("./270856.js");
 
-function g(e) {
+function m(e) {
   let {
     profile: t,
     handleIconChange: l,
     canManageGuild: o
-  } = e, m = i.useCallback(() => {
+  } = e, g = i.useCallback(() => {
     l(null)
-  }, [l]), g = i.useCallback((e, t) => {
+  }, [l]), m = i.useCallback((e, t) => {
     (0, s.ZDy)(async () => {
       let {
         default: i
@@ -71,7 +71,7 @@ function g(e) {
           text: d.intl.string(d.t.r3Jdsb)
         }), (0, r.jsx)(a.ZP, {
           tabIndex: 0,
-          onChange: g,
+          onChange: m,
           disabled: !o
         })]
       })
@@ -79,7 +79,7 @@ function g(e) {
       variant: "critical-secondary",
       size: "sm",
       text: d.intl.string(d.t.x8AlTk),
-      onClick: m,
+      onClick: g,
       disabled: !o
     }) : null]
   })
@@ -94,16 +94,16 @@ function p(e) {
   return (0, r.jsxs)("section", {
     className: u.container,
     children: [(0, r.jsxs)(s.hjN, {
-      className: m.section,
+      className: g.section,
       children: [(0, r.jsxs)("div", {
-        className: m.sectionHeader,
+        className: g.sectionHeader,
         children: [(0, r.jsx)(s.vwX, {
           children: d.intl.string(d.t.FkQnxM)
         }), (0, r.jsx)(s.R94, {
           type: "description",
           children: d.intl.string(d.t.KjkA0d)
         })]
-      }), (0, r.jsx)(g, {
+      }), (0, r.jsx)(m, {
         profile: t,
         canManageGuild: n,
         handleIconChange: i

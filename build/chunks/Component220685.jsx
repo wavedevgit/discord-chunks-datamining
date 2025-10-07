@@ -82,7 +82,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }), (0, r.jsx)(u.izJ, {}), (0, r.jsxs)(u.xJW, {
         title: C.intl.string(C.t.N46WOj),
         disabled: B,
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(g.Z, {
           value: M,
           className: s()({
             [O.disabled]: B
@@ -145,7 +145,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         component: "div",
         className: O.contentRegion,
         children: k && (0, r.jsx)(u.oXn, {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(m.Z, {
             submitting: x,
             onReset: () => {
               var e, t;

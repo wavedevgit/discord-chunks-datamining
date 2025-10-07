@@ -2,7 +2,7 @@
 /** chunk id: 783454, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,18 +15,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk717795 = require("./717795.js");
 
-function g(e) {
+function m(e) {
   let {
     intiallyExpanded: t = false,
     title: n,
     description: l,
-    children: g
+    children: m
   } = e, [p, f] = i.useState(t), h = () => f(e => !e), x = (0, o.Dt)();
   return (0, r.jsxs)("div", {
-    className: m.container,
+    className: g.container,
     children: [(0, r.jsx)(d.Z, {
-      className: s()(m.header, {
-        [m.headerWithDescription]: p && null != l
+      className: s()(g.header, {
+        [g.headerWithDescription]: p && null != l
       }),
       onClick: h,
       children: e => {
@@ -47,7 +47,7 @@ function g(e) {
               ringTarget: t
             },
             children: (0, r.jsx)(c.Z, {
-              className: m.caret,
+              className: g.caret,
               direction: p ? c.Z.Directions.UP : c.Z.Directions.DOWN
             })
           })]
@@ -57,13 +57,13 @@ function g(e) {
       id: x,
       children: [null != l && (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
-        className: m.description,
+        className: g.description,
         children: l
       }), (0, r.jsx)("div", {
-        className: m.divider
+        className: g.divider
       }), (0, r.jsx)("div", {
-        className: m.content,
-        children: g
+        className: g.content,
+        children: m
       })]
     })]
   })

@@ -67,7 +67,7 @@ function E(e) {
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
-  } = e, T = E.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = E.features.has(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
+  } = e, T = E.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = E.features.has(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
     guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
     Z(null), f.Z.init(T, v.pNK.ACCESS)
@@ -171,7 +171,7 @@ function E(e) {
       } = l;
       if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(O.intl.string(O.t.TCHkcX))
     }
-    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, m._C)(e)))) return void Z(O.intl.string(O.t.HGVrIy));
+    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void Z(O.intl.string(O.t.HGVrIy));
     (e => {
       if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
         let {

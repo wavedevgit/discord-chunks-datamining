@@ -27,13 +27,13 @@ function p(e) {
     onCtaClicked: a
   } = t;
   return (0, r.jsxs)("div", {
-    className: m.__invalid_ctaContainer,
+    className: g.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: m.__invalid_heroBanner,
-      src: g,
+      className: g.__invalid_heroBanner,
+      src: m,
       alt: u.intl.string(u.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: m.__invalid_ctaContent,
+      className: g.__invalid_ctaContent,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -47,7 +47,7 @@ function p(e) {
       }), (0, r.jsx)(l.LZC, {
         size: 24
       }), (0, r.jsx)(c.Z, {
-        className: m.waitlist,
+        className: g.waitlist,
         color: o.W.BROWN,
         buttonPosition: c.E.RIGHT,
         notice: n,
@@ -75,7 +75,7 @@ function f(e) {
       guild_id: t.id
     }
   }), o) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
-    className: m.__invalid_container,
+    className: g.__invalid_container,
     children: [(0, r.jsx)(p, {
       config: n
     }), (0, r.jsx)(d.C, {

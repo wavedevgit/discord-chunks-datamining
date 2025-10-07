@@ -42,9 +42,9 @@ function p(e, t) {
         t = f.name;
       [l.b.TWITCH, l.b.YOUTUBE].includes(f.type) && (t = "".concat(o.Z.get(f.type).name, " - ").concat(t));
       let n = () => {
-        d.Z.setSection(m.pNK.INTEGRATIONS), a.Z.setSection(m.b4C.APPLICATION, e)
+        d.Z.setSection(g.pNK.INTEGRATIONS), a.Z.setSection(g.b4C.APPLICATION, e)
       };
-      return g.intl.format(g.t.FuXsWl, {
+      return m.intl.format(m.t.FuXsWl, {
         name: t,
         integrationNameHook: (e, t) => (0, r.jsx)(c.Z, {
           onClick: n,
@@ -52,6 +52,6 @@ function p(e, t) {
         }, t)
       })
     }
-    return b ? g.intl.string(g.t.oF6FYW) : j ? g.intl.string(g.t.ZQ37tL) : g.intl.string(g.t.k5d7DA)
+    return b ? m.intl.string(m.t.oF6FYW) : j ? m.intl.string(m.t.ZQ37tL) : m.intl.string(m.t.k5d7DA)
   })(0, t, n), [e, t, n])
 }

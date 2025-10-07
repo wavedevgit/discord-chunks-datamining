@@ -2,7 +2,7 @@
 /** chunk id: 215124, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,26 +15,26 @@ var Chunk399606 = require("./399606.js"),
   Chunk198139 = require("./198139.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
-    allPeriods: m
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
+    allPeriods: g
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
     includeSoftDeleted: true
   }), f = (0, a.ue)(t, {
     publishedOnly: false
   }), {
     allowSelfRemoveMonetization: h
-  } = (0, s.gX)(t), x = m.filter(e => {
+  } = (0, s.gX)(t), x = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
   }), b = p.length > 0, j = f.length > 0, _ = x.length > 0;
-  return null == g ? null : (0, r.jsxs)("div", {
+  return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
       children: u.intl.format(u.t.fvOn6O, {
-        guildName: g.name
+        guildName: m.name
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
@@ -67,7 +67,7 @@ function m(e) {
               }
               return e
             }({}, t), i = i = {
-              guild: g
+              guild: m
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

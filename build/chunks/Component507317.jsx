@@ -23,8 +23,8 @@ var Chunk951288 = require("./951288.js"),
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(g.oNc.BANNER), _ = i.useCallback((e, i) => {
-    if (null == e || true === i) return void m.Z.saveGuild(t.id, {
+  } = e, j = t.features.has(m.oNc.BANNER), _ = i.useCallback((e, i) => {
+    if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
     (0, l.ZDy)(async () => {
@@ -55,7 +55,7 @@ let j = function(e) {
           let {
             imageUri: n
           } = e;
-          return m.Z.saveGuild(t.id, {
+          return g.Z.saveGuild(t.id, {
             homeHeader: n
           })
         },
@@ -63,19 +63,19 @@ let j = function(e) {
       }, n))
     })
   }, [t.id]), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+    e.preventDefault(), e.stopPropagation(), (0, s.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: g.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: g.qAy.LEARN_MORE
+        section: m.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: m.qAy.LEARN_MORE
       },
       guild_id: null == t ? true : t.id,
       location_stack: []
     }), (0, o.Z)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: g.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: g.qAy.ONBOARDING_EDIT,
-        page: g.ZY5.GUILD_SETTINGS
+        section: m.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: m.qAy.ONBOARDING_EDIT,
+        page: m.ZY5.GUILD_SETTINGS
       },
       guild: t,
       perks: (0, p.XO)()
@@ -102,7 +102,7 @@ let j = function(e) {
       }), (0, r.jsx)(a.Z, {
         className: b.boostIndicator,
         guild: t,
-        guildFeature: g.oNc.BANNER,
+        guildFeature: m.oNc.BANNER,
         onClick: v
       })]
     }), (0, r.jsxs)("div", {
@@ -137,7 +137,7 @@ let j = function(e) {
       }), (0, r.jsx)(a.Z, {
         className: b.boostIndicator,
         guild: t,
-        guildFeature: g.oNc.BANNER,
+        guildFeature: m.oNc.BANNER,
         onClick: v
       })]
     }), (0, r.jsxs)("div", {

@@ -51,12 +51,12 @@ function O(e) {
     originalVanityURLCode: a,
     errorDetails: o
   } = e, c = (null == t ? true : t.features.has(b.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
-    (0, g.Gy)("")
+    (0, m.Gy)("")
   }, []), u = i.useCallback(e => {
-    (0, g.Gy)(e)
+    (0, m.Gy)(e)
   }, []);
   if (null == n) return (0, r.jsx)(s.$jN, {});
-  let m = null != o ? (0, p.i)(o.code) : null;
+  let g = null != o ? (0, p.i)(o.code) : null;
   return (0, r.jsxs)(s.Zbd, {
     editable: true,
     className: v.editVanityUrlCard,
@@ -76,7 +76,7 @@ function O(e) {
     }), (0, r.jsx)(x.Z, {
       value: n,
       onChange: u,
-      error: m,
+      error: g,
       disabled: !c
     }), null != a && a.length > 0 ? (0, r.jsx)("div", {
       className: v.removeVanityUrlButton,
@@ -95,11 +95,11 @@ function y(e) {
     vanityURLCode: n,
     vanityURLUses: s,
     originalVanityURLCode: c,
-    errorDetails: g
+    errorDetails: m
   } = e, {
     analyticsLocations: x
   } = (0, o.ZP)(), _ = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), _ ? (m.Z.close(), (0, u.Z)(t.id, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
+    e.preventDefault(), e.stopPropagation(), _ ? (g.Z.close(), (0, u.Z)(t.id, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
       guild: t,
       analyticsLocations: x,
       analyticsSection: b.jXE.GUILD_SETTINGS_VANITY_URL,
@@ -114,7 +114,7 @@ function y(e) {
       vanityURLCode: n,
       vanityURLUses: s,
       originalVanityURLCode: c,
-      errorDetails: g
+      errorDetails: m
     }) : (0, r.jsx)(h.P, {
       onClick: y,
       className: v.upsellButton

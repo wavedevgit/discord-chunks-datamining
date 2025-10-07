@@ -20,23 +20,23 @@ function c(e) {
     highlightColor: c = a.q.NONE,
     selected: d = false,
     subsection: u = null,
-    onClick: m,
-    className: g,
+    onClick: g,
+    className: m,
     disabled: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(o.container, g),
+    className: l()(o.container, m),
     children: [(0, r.jsx)(s.P3F, {
       className: l()(o.clickableContainer, {
-        [o.noAction]: null == m,
+        [o.noAction]: null == g,
         [o.disabled]: p
-      }, g),
-      onClick: p ? true : m,
+      }, m),
+      onClick: p ? true : g,
       children: (0, r.jsxs)("div", {
         className: l()(o.backgroundModifierContainer, o[c], {
           [o.selected]: d,
           [o.disabled]: p,
-          [o.noAction]: null == m
+          [o.noAction]: null == g
         }),
         children: [(0, r.jsxs)("div", {
           className: o.settingsDescriptionContainer,

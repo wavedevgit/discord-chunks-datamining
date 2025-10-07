@@ -132,7 +132,7 @@ function w(e) {
       tooltipPosition: "left"
     }));
     return (0, j.LJ)(e)
-  }, [t]), m = i.useMemo(() => u.find(e => e.value === (null == t ? true : t.explicitContentFilter)), [t, u]);
+  }, [t]), g = i.useMemo(() => u.find(e => e.value === (null == t ? true : t.explicitContentFilter)), [t, u]);
   return (0, r.jsxs)(r.Fragment, {
     children: [l && (0, r.jsx)(c.izJ, {
       className: I.divider
@@ -153,7 +153,7 @@ function w(e) {
         })]
       }), (0, r.jsx)(O.Z, {
         changeTitle: E.intl.string(E.t["eBd+Ul"]),
-        value: null == m ? true : m.value,
+        value: null == g ? true : g.value,
         options: u,
         disabled: !a,
         onChange: d
@@ -172,7 +172,7 @@ async function R(e, t) {
 function Z(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), s = (0, u.n2)(t.id), [a, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), m = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), s = (0, u.n2)(t.id), [a, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
     d(e), await R(t, e)
   }, [t]);
   return l || !s ? null : (0, r.jsxs)(r.Fragment, {
@@ -183,7 +183,7 @@ function Z(e) {
         description: E.intl.string(E.t["/ee7yM"]),
         badge: "beta",
         checked: a,
-        onChange: m,
+        onChange: g,
         disabled: !n
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
@@ -232,7 +232,7 @@ function D(e) {
         textVariant: "text-xs/normal",
         children: E.intl.format(E.t.Xz1O0d, {
           onClick: function() {
-            (0, g.openUserSettings)(m.n.ACCOUNT_PANEL, {
+            (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
               section: N.oAB.ACCOUNT
             })
           }

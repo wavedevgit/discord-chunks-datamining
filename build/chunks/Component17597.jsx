@@ -30,9 +30,9 @@ let C = function(e) {
     onClose: C,
     onComplete: E,
     dismissable: S
-  } = e, [N, T] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = r.useRef(N), [P, I] = (0, c.US)([N], true, true), k = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
+  } = e, [T, O] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), N = r.useRef(T), [P, k] = (0, c.US)([T], true, true), I = r.useMemo(() => (0, i.Z)(), []), w = r.useRef(false);
   r.useEffect(() => {
-    O.current = P
+    N.current = P
   }, [P]);
   let {
     loading: R,
@@ -40,18 +40,18 @@ let C = function(e) {
   } = (0, b.Z)(() => {
     null == E || E(), C()
   }, () => {
-    T(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+    O(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
   return r.useLayoutEffect(() => () => {
     if (w.current) return;
-    let e = O.current;
+    let e = N.current;
     null != e && (w.current = true, m.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
   }, []), r.useEffect(() => {
-    (0, x.lA)(k, x.d_.EXPRESSIVE_PRIMARY, n)
-  }, [k, n]), (0, a.jsx)(l.ExpressiveModal, {
+    (0, x.lA)(I, x.d_.EXPRESSIVE_PRIMARY, n)
+  }, [I, n]), (0, a.jsx)(l.ExpressiveModal, {
     transitionState: t,
     onClose: C,
     gradientColor: "blue",
@@ -63,7 +63,7 @@ let C = function(e) {
     title: j.intl.string(j.t.JHNunp),
     subtitle: j.intl.format(v.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        h.Z.openUrl(p.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(k, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
+        h.Z.openUrl(p.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(I, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, a.jsx)(o.Avr, {
@@ -71,7 +71,7 @@ let C = function(e) {
       textVariant: "text-sm/medium",
       text: j.intl.string(j.t["2jxGen"]),
       onClick: () => {
-        (0, x.x3)(k, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
+        (0, x.x3)(I, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
     children: (0, a.jsxs)(o.Kqy, {
@@ -127,7 +127,7 @@ let C = function(e) {
             title: t,
             description: n,
             buttonDisabled: R,
-            onButtonPress: () => r(k)
+            onButtonPress: () => r(I)
           }, t)
         })
       })]

@@ -64,7 +64,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [S, N] = r.useState(true), T = r.useRef(null), [O, P] = r.useState(false), [I, k] = r.useState(false), [w, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [L, M] = r.useState(t.name), U = L.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
+    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [S, T] = r.useState(true), O = r.useRef(null), [N, P] = r.useState(false), [k, I] = r.useState(false), [w, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [L, M] = r.useState(t.name), U = L.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
       id: E,
       skuId: E,
       title: E,
@@ -77,7 +77,7 @@ let C = {
     }), [w]), G = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
-    }, B = (e, t) => {
+    }, z = (e, t) => {
       let n = G(t);
       null != n && (0, f.i0)(n, t => {
         Z(a => y(_({}, a), {
@@ -106,13 +106,13 @@ let C = {
         }
       })
     }, [t.config.stillFrames]);
-    let z = {
+    let B = {
         effect: t,
         upsertConfig: n
       },
-      V = r.useRef(z);
+      V = r.useRef(B);
     return (r.useEffect(() => {
-      V.current = z
+      V.current = B
     }), r.useEffect(() => {
       let {
         effect: e,
@@ -137,7 +137,7 @@ let C = {
         children: [(0, a.jsxs)("div", {
           className: l()(g.col, g.preview),
           children: [(0, a.jsx)("img", {
-            src: O ? v : j,
+            src: N ? v : j,
             alt: "",
             width: 450
           }), S && (0, a.jsx)(b.Z, {
@@ -167,10 +167,10 @@ let C = {
                 children: "Dark Theme"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: O,
+                checked: N,
                 className: g.checkBox,
                 onChange: () => {
-                  P(!O)
+                  P(!N)
                 }
               })]
             }), (0, a.jsxs)("div", {
@@ -180,10 +180,10 @@ let C = {
                 children: "Show User Profile"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: I,
+                checked: k,
                 className: g.checkBox,
                 onChange: () => {
-                  k(!I)
+                  I(!k)
                 }
               })]
             })]
@@ -192,7 +192,7 @@ let C = {
             children: [(0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload Animated Layer", (0, a.jsx)(m.Z, {
-                ref: T,
+                ref: O,
                 onChange: e => {
                   let t = G(e);
                   null != t && (0, f.i0)(t, async e => {
@@ -211,22 +211,22 @@ let C = {
             children: [(0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload thumbnail.png", (0, a.jsx)(m.Z, {
-                ref: T,
-                onChange: e => B(f.cq.THUMBNAIL, e),
+                ref: O,
+                onChange: e => z(f.cq.THUMBNAIL, e),
                 multiple: false
               })]
             }), (0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload static.png", (0, a.jsx)(m.Z, {
-                ref: T,
-                onChange: e => B(f.cq.STATIC, e),
+                ref: O,
+                onChange: e => z(f.cq.STATIC, e),
                 multiple: false
               })]
             }), (0, a.jsxs)(c.zx, {
               color: c.Tt.GREEN,
               children: ["Upload reduced_motion.png", (0, a.jsx)(m.Z, {
-                ref: T,
-                onChange: e => B(f.cq.REDUCED_MOTION, e),
+                ref: O,
+                onChange: e => z(f.cq.REDUCED_MOTION, e),
                 multiple: false
               })]
             })]
@@ -238,7 +238,7 @@ let C = {
                 variant: "primary",
                 text: "Replay Animation",
                 onClick: () => {
-                  N(false), setTimeout(() => N(true), 100)
+                  T(false), setTimeout(() => T(true), 100)
                 }
               })
             })
@@ -331,7 +331,7 @@ let C = {
               })]
             })]
           }), (0, a.jsx)("div", {
-            children: I && (0, a.jsxs)("div", {
+            children: k && (0, a.jsxs)("div", {
               className: l()(g.userProfilePreview, g.preview),
               children: [(0, a.jsx)(p.Z, {
                 user: i,
@@ -472,7 +472,7 @@ let C = {
                   color: "always-white",
                   children: "Add Alternative"
                 }), (0, a.jsx)(m.Z, {
-                  ref: T,
+                  ref: O,
                   onChange: e => ((e, t) => {
                     let n = G(e);
                     null != n && (0, f.i0)(n, e => {

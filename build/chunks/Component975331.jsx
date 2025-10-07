@@ -2,7 +2,7 @@
 /** chunk id: 975331, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,66 +17,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk518470 = require("./518470.js"),
   Chunk22902 = require("./22902.js"),
   Chunk783454 = require("./783454.jsx"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk605041 = require("./605041.js");
+  Chunk388032 = require("./388032.jsx");
 
-function b() {
+function x() {
   var e;
   let {
     editStateId: t
-  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [b, j] = Chunk290348.F2(exports), _ = (0, Chunk584825.oC)(exports), {
-    options: v
-  } = (0, Chunk22902.Z)(null != (e = null == _ ? true : _.active_trial) ? module : null), C = (0, Chunk518470.Z)(), O = null != require, y = Chunk647438.useCallback(e => {
-    let t = v.find(e => e.isDefault);
+  } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [x, b] = Chunk290348.F2(exports), j = (0, Chunk584825.oC)(exports), {
+    options: _
+  } = (0, Chunk22902.Z)(null != (e = null == j ? true : j.active_trial) ? module : null), v = (0, Chunk518470.Z)(), C = null != require, O = Chunk647438.useCallback(e => {
+    let t = _.find(e => e.isDefault);
     s()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [Chunk512722, v]), N = (0, Chunk723047.mY)(), E = (0, Chunk313201.Dt)(), I = (0, Chunk313201.Dt)();
+  }, [Chunk512722, _]), y = (0, Chunk723047.mY)(), N = (0, Chunk313201.Dt)(), E = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
     description: Chunk388032.intl.string(Chunk388032.t.urVijY),
     children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["+hTmdX"]),
-      checked: O,
-      onChange: e => y(e),
-      disabled: N
-    }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      title: Chunk388032.intl.string(Chunk388032.t.m1KuWV),
-      titleId: E,
-      disabled: !O || N,
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk605041.formDescription,
-        disabled: !O || N,
-        children: Chunk388032.intl.string(Chunk388032.t.NB9NLC)
-      }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
-        size: 8
-      }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        "aria-labelledby": E,
-        options: v,
-        placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BQ),
-        value: require,
-        onChange: Chunk512722,
-        maxVisibleItems: 5,
-        isDisabled: !O || N
-      })]
+      checked: C,
+      onChange: e => O(e),
+      disabled: y
+    }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      label: Chunk388032.intl.string(Chunk388032.t.m1KuWV),
+      description: Chunk388032.intl.string(Chunk388032.t.NB9NLC),
+      "aria-labelledby": N,
+      options: _,
+      placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BQ),
+      value: require,
+      onChange: Chunk512722,
+      maxVisibleItems: 5,
+      isDisabled: !C || y
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 24
-    }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      title: Chunk388032.intl.string(Chunk388032.t["/JD9oa"]),
-      titleId: I,
-      disabled: !O || N,
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk605041.formDescription,
-        disabled: !O || N,
-        children: Chunk388032.intl.string(Chunk388032.t.Cg5eBg)
-      }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        "aria-labelledby": I,
-        options: C,
-        value: b,
-        onChange: j,
-        maxVisibleItems: 5,
-        isDisabled: !O || N
-      })]
+    }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+      label: Chunk388032.intl.string(Chunk388032.t["/JD9oa"]),
+      description: Chunk388032.intl.string(Chunk388032.t.Cg5eBg),
+      "aria-labelledby": E,
+      options: v,
+      value: x,
+      onChange: b,
+      maxVisibleItems: 5,
+      isDisabled: !C || y
     })]
   })
 }

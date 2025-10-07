@@ -69,7 +69,7 @@ let f = e => {
         className: s()(p.content, {
           [p.contentRemoving]: x
         }),
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(g.Z, {
           className: p.sticker,
           size: 72,
           sticker: f
@@ -96,7 +96,7 @@ let f = e => {
           children: [(0, r.jsx)(a.P3F, {
             className: p.action,
             onClick: v,
-            "aria-label": g.intl.string(g.t.bt75u7),
+            "aria-label": m.intl.string(m.t.bt75u7),
             children: (0, r.jsx)(a.vdY, {
               size: "xs",
               color: "currentColor",
@@ -105,7 +105,7 @@ let f = e => {
           }), (0, r.jsx)(a.P3F, {
             className: s()(p.action, p.actionRemove),
             onClick: C,
-            "aria-label": g.intl.string(g.t.N86XcH),
+            "aria-label": m.intl.string(m.t.N86XcH),
             children: (0, r.jsx)(a.Dio, {
               size: "md",
               color: "currentColor",

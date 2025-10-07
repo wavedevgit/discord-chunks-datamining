@@ -24,7 +24,7 @@ let b = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), b = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), _ = (0, s.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), v = null != (t = (0, s.e7)([d.Z], () => null != _ ? d.Z.getForSkuAndInterval((0, g.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), b = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), _ = (0, s.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), v = null != (t = (0, s.e7)([d.Z], () => null != _ ? d.Z.getForSkuAndInterval((0, m.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
     className: l()(x.wrapper, n),
     children: [(0, r.jsx)(a.X6q, {
@@ -40,8 +40,8 @@ let b = e => {
           guildBoostingPlanId: i,
           interval: l,
           intervalCount: s
-        } = e, a = g.ZP.getDefaultPrice(i, g.ZP.isPremium(t)), o = g.ZP.getDefaultPrice(i, false), c = (0, p.og)((0, p.T4)(a.amount, a.currency), l, s), d = (0, p.og)((0, p.T4)(o.amount, o.currency), l, s);
-        return g.ZP.isPremium(t, f.p9.TIER_2) ? h.intl.format(h.t.N3Icb2, {
+        } = e, a = m.ZP.getDefaultPrice(i, m.ZP.isPremium(t)), o = m.ZP.getDefaultPrice(i, false), c = (0, p.og)((0, p.T4)(a.amount, a.currency), l, s), d = (0, p.og)((0, p.T4)(o.amount, o.currency), l, s);
+        return m.ZP.isPremium(t, f.p9.TIER_2) ? h.intl.format(h.t.N3Icb2, {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
@@ -49,15 +49,15 @@ let b = e => {
             children: e
           }, t),
           freeSubscriptionCount: f.cb,
-          discountPercent: (0, m.T3)(n, f.Rr / 100)
-        }) : g.ZP.isPremium(t, f.p9.TIER_1) ? h.intl.format(h.t.nQLVBA, {
+          discountPercent: (0, g.T3)(n, f.Rr / 100)
+        }) : m.ZP.isPremium(t, f.p9.TIER_1) ? h.intl.format(h.t.nQLVBA, {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
             className: x.originalPrice,
             children: e
           }, t),
-          discountPercent: (0, m.T3)(n, f.Rr / 100)
+          discountPercent: (0, g.T3)(n, f.Rr / 100)
         }) : h.intl.format(h.t.Mmf63N, {
           price: c
         })

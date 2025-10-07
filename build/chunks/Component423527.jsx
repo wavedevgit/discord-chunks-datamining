@@ -259,12 +259,11 @@ class eu extends(r = Chunk647438.PureComponent) {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
         className: Chunk33724.authBlock,
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          children: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"])
-        }), (0, Chunk951288.jsx)(Chunk28664.u, {
+        children: [(0, Chunk951288.jsx)(Chunk28664.u, {
           text: Chunk388032.intl.string(Chunk388032.t["hBB85+"]),
           position: "right",
           children: (0, Chunk951288.jsx)(Chunk388905.II, {
+            label: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"]),
             autoFocus: true,
             className: Chunk197571.marginBottom8,
             name: "username",
@@ -446,8 +445,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       apiErrors: {
         email: v,
         username: b,
-        global_name: j,
-        password: I,
+        global_name: I,
+        password: j,
         date_of_birth: S
       } = {}
     } = this.state, {
@@ -507,7 +506,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: ec(j),
+        error: ec(I),
         maxLength: en.hy,
         autoComplete: "off",
         setRef: e => {
@@ -561,7 +560,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? er.intl.string(er.t.EkokLy) : null
         }),
-        error: null != f ? f : ec(I),
+        error: null != f ? f : ec(j),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {

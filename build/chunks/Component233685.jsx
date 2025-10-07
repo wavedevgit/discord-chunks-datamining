@@ -2,7 +2,7 @@
 /** chunk id: 233685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -10,10 +10,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk579806 = require("./579806.js"),
   Chunk435064 = require("./435064.js"),
   Chunk39604 = require("./39604.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk441849 = require("./441849.js");
+  Chunk388032 = require("./388032.jsx");
 
-function d() {
+function u() {
   let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().storageLocation),
     t = async () => {
       let e = await Chunk579806.Z.fileManager.showOpenDialog({
@@ -26,7 +25,6 @@ function d() {
     description: Chunk388032.intl.string(Chunk388032.t.svjwGh),
     layout: "horizontal",
     children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: Chunk441849.selectControl,
       "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.iMONTk, {
         storageLocation: module
       }),

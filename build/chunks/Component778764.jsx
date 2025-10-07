@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => N
-}), require("./388685.js"), require("./49124.js"), require("./457542.js"), require("./953529.js");
+}), require("./388685.js"), require("./49124.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk849055 = require("./849055.js"),
@@ -274,14 +274,10 @@ function N() {
   }, []);
   return Chunk647438.useEffect(() => {
     require && !Chunk849055 && (Chunk365007.vg(), Chunk202858())
-  }, [require, Chunk849055, Chunk202858]), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
-    className: Chunk421156.settings,
-    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk421156.description,
-      children: Chunk388032.intl.string(Chunk388032.t.TMukAA)
-    }), module.length > 0 && (0, Chunk951288.jsx)("div", {
+  }, [require, Chunk849055, Chunk202858]), (0, Chunk951288.jsxs)(Chunk481060.NIc, {
+    label: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
+    description: Chunk388032.intl.string(Chunk388032.t.TMukAA),
+    children: [module.length > 0 && (0, Chunk951288.jsx)("div", {
       className: Chunk421156.credentialList,
       children: module.map(e => (0, r.jsxs)("div", {
         className: O.credentialItem,

@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk579605 = require("./579605.js");
-let v = (0, Chunk137317.animated)(Chunk685613.ZP),
+let j = (0, Chunk137317.animated)(Chunk685613.ZP),
   C = e => {
     let {
       quest: t,
@@ -50,15 +50,15 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: p.jn.QUEST_BAR_V2
       })
-    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
+    }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
       onClick: N,
-      className: a()(j.clickable, {
-        [j.logo]: R
+      className: a()(v.clickable, {
+        [v.logo]: A
       }),
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(j, {
         quest: t,
         withGameTile: false,
-        logotypeClassName: j.partnerBranding,
+        logotypeClassName: v.partnerBranding,
         logotypeStyle: {
           height: w ? 32 : 24,
           maxWidth: w ? 130 : 92,
@@ -70,8 +70,8 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
       })
     });
     return (0, r.jsxs)(i.animated.div, {
-      className: a()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: R
+      className: a()(v.wrapper, v.rewardHighlightWrapper, {
+        [v.interactable]: A
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -80,7 +80,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
         })], e => "translateY(".concat(e, "px"))
       },
       children: [(0, r.jsx)(i.animated.div, {
-        className: j.opaqueExpandedBackground,
+        className: v.opaqueExpandedBackground,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -90,11 +90,11 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: R,
-        partnerBranding: A,
+        isFullyExpanded: A,
+        partnerBranding: R,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
-        className: j.promotedBadgeWrapper,
+        className: v.promotedBadgeWrapper,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -102,7 +102,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
           })
         },
         children: [(0, r.jsxs)(l.P3F, {
-          className: j.promotedBadge,
+          className: v.promotedBadge,
           onClick: P,
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
@@ -110,7 +110,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
             children: b.intl.string(b.t.o6FLcH)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
-            className: j.promotedBadgeIcon
+            className: v.promotedBadgeIcon
           })]
         }), (0, r.jsx)(h.r, {
           onOpen: g,
@@ -141,12 +141,12 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
               }
               return e
             }({}, e), n = n = {
-              className: j.submenuWrapper,
+              className: v.submenuWrapper,
               "aria-label": b.intl.string(b.t.DEoVWV),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: a()(j.submenuIcon, j.white)
+                className: a()(v.submenuIcon, v.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

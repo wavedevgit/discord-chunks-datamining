@@ -1,7 +1,7 @@
 /** Chunk was on 5588 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,11 +10,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk570140 = require("./570140.js"),
   Chunk178635 = require("./178635.js"),
   Chunk115470 = require("./115470.js"),
-  Chunk511010 = require("./511010.jsx"),
   Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
   Chunk584314 = require("./584314.js");
-let h = [{
+let p = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -28,149 +27,116 @@ let h = [{
   value: 864e5
 }];
 
-function x() {
-  let [e, t] = Chunk647438.useState(null), [n, x] = Chunk647438.useState(0), [f, b] = Chunk647438.useState(1e3), [g, v] = Chunk647438.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+function h() {
+  let [e, t] = Chunk647438.useState(null), [n, h] = Chunk647438.useState(0), [x, f] = Chunk647438.useState(1e3), [b, g] = Chunk647438.useState(0), v = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
-  }), _ = Object.entries(Chunk531578.nw), y = _.slice(_.length / 2).map(e => {
+  }), j = Object.entries(Chunk531578.nw), _ = j.slice(j.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
       value: t
     }
-  }), C = Chunk647438.useMemo(() => null != module && g >= 0 && g <= 100 && require >= 0, [module, g, require]);
-  return (0, Chunk951288.jsxs)("div", {
+  }), y = Chunk647438.useMemo(() => null != module && b >= 0 && b <= 100 && require >= 0, [module, b, require]);
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk584314.container,
-    children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
-      title: "Feedback Survey",
-      className: Chunk584314.formElement,
-      tag: Chunk481060.RB0.H3,
-      children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        options: y,
+    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 32,
+      children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
+        label: "Feedback Survey",
+        options: _,
         value: module,
         onChange: e => {
           t(e)
         },
         popoutLayerContext: Chunk246992.O$,
         placeholder: "Select Feedback Survey"
-      })
-    }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      title: "Override Survey Cooldown",
-      className: Chunk584314.formElement,
-      tag: Chunk481060.RB0.H3,
-      children: [null != j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk511010.Z, {
-          className: Chunk584314.formDividerTitle,
-          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: "Override Survey Cooldown",
+        children: [null != v && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
-          })
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 1e3, " second(s) or")
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 6e4, " minute(s) or")
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 36e5, " hour(s) or")
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/normal",
-          children: "".concat(j.cooldown / 864e5, " day(s)")
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
+            children: "".concat(v.cooldown / 1e3, " second(s) or")
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
+            children: "".concat(v.cooldown / 6e4, " minute(s) or")
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
+            children: "".concat(v.cooldown / 36e5, " hour(s) or")
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
+            children: "".concat(v.cooldown / 864e5, " day(s)")
+          })]
+        }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          direction: "horizontal",
+          align: "end",
+          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: "Override cooldown",
+            min: 0,
+            value: require.toString(),
+            type: "number",
+            placeholder: "Duration length",
+            onChange: e => h(parseFloat(e))
+          }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
+            options: p,
+            value: x,
+            onChange: e => {
+              f(e)
+            },
+            popoutLayerContext: Chunk246992.O$
+          })]
         })]
-      }), (0, Chunk951288.jsx)(Chunk511010.Z, {
-        className: Chunk584314.formDividerTitle,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/semibold",
-          children: "Override cooldown"
-        })
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk584314.formRow,
-        children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-          min: 0,
-          value: require.toString(),
-          type: "number",
-          placeholder: "Duration length",
-          onChange: e => x(parseFloat(e))
-        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-          options: h,
-          value: f,
-          onChange: e => {
-            b(e)
-          },
-          popoutLayerContext: Chunk246992.O$
-        })]
-      })]
-    }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      title: "Override Survey Chance",
-      className: Chunk584314.formElement,
-      tag: Chunk481060.RB0.H3,
-      children: [null != j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk511010.Z, {
-          className: Chunk584314.formDividerTitle,
-          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-            variant: "text-sm/semibold",
-            children: "Current chance"
-          })
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/normal",
-          children: "".concat(100 * j.chance, "%")
-        })]
-      }), (0, Chunk951288.jsx)(Chunk511010.Z, {
-        className: Chunk584314.formDividerTitle,
-        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-sm/semibold",
-          children: "Override chance"
-        })
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk584314.formRow,
-        children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.C3N, {
+        label: "Override Survey Chance",
+        children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+          label: "Override chance",
+          description: null != v ? "Current chance: ".concat(100 * v.chance, "%") : true,
+          helperText: "As a percentage",
           min: 0,
           max: 100,
-          value: g.toString(),
+          value: b.toString(),
           type: "number",
-          onChange: e => v(parseFloat(e))
-        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-          variant: "text-md/normal",
-          children: "%"
+          onChange: e => g(parseFloat(e))
+        })
+      }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+          variant: "critical-primary",
+          text: "Clear Override",
+          onClick: () => void(null != v && Chunk570140.Z.dispatch({
+            type: "FEEDBACK_OVERRIDE_CLEAR",
+            feedbackType: v.feedbackType
+          })),
+          disabled: !y
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Update",
+          onClick: () => void(null != v && Chunk570140.Z.dispatch({
+            type: "FEEDBACK_OVERRIDE_SET",
+            feedbackType: v.feedbackType,
+            cooldown: require * x,
+            chance: b / 100
+          })),
+          disabled: !y
         })]
+      }), null == module && (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "text-danger",
+        children: "Error: need to select a survey"
+      }), !(require >= 0) && (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "text-danger",
+        children: "Error: cooldown needs to be a number greater than 0"
+      }), !(b >= 0 && b <= 100) && (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "text-danger",
+        children: "Error: chance needs to be a number between 0 and 100"
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        children: "Clear override resets a feedback survey to its default values"
       })]
-    }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk584314.formRow,
-      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
-        variant: "primary",
-        text: "Update",
-        onClick: () => void(null != j && Chunk570140.Z.dispatch({
-          type: "FEEDBACK_OVERRIDE_SET",
-          feedbackType: j.feedbackType,
-          cooldown: require * f,
-          chance: g / 100
-        })),
-        disabled: !C
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        variant: "primary",
-        text: "Clear Override",
-        onClick: () => void(null != j && Chunk570140.Z.dispatch({
-          type: "FEEDBACK_OVERRIDE_CLEAR",
-          feedbackType: j.feedbackType
-        })),
-        disabled: !C
-      })]
-    }), null == module && (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-sm/normal",
-      color: "text-danger",
-      children: "Error: need to select a survey"
-    }), !(require >= 0) && (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-sm/normal",
-      color: "text-danger",
-      children: "Error: cooldown needs to be a number greater than 0"
-    }), !(g >= 0 && g <= 100) && (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-sm/normal",
-      color: "text-danger",
-      children: "Error: chance needs to be a number between 0 and 100"
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-sm/normal",
-      children: "Clear override resets a feedback survey to its default values"
-    })]
+    })
   })
 }

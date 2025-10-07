@@ -28,7 +28,7 @@ let b = function(e) {
     primaryColor: j,
     secondaryColor: _,
     isDisabled: v = false
-  } = e, C = (0, s.e7)([g.Z], () => g.Z.getProps().originalProfile), O = null != C && C.tag !== i;
+  } = e, C = (0, s.e7)([m.Z], () => m.Z.getProps().originalProfile), O = null != C && C.tag !== i;
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.vwX, {
@@ -54,7 +54,7 @@ let b = function(e) {
           disabled: v,
           value: null != i ? i : "",
           onChange: function(e) {
-            m.Z.updateGuildProfile(n, {
+            g.Z.updateGuildProfile(n, {
               tag: e
             })
           }

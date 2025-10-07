@@ -2,7 +2,7 @@
 /** chunk id: 594278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,12 +14,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk81543 = require("./81543.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk858063 = require("./858063.js");
-let g = function(e) {
+let m = function(e) {
   let {
     items: t,
     carouselClassName: n,
     paginationCaretClassName: l,
-    intervalBetweenAutomaticItemRotations: g,
+    intervalBetweenAutomaticItemRotations: m,
     renderItem: p
   } = e, f = i.useMemo(() => new a.Xp, []), [h, x] = i.useState(d.n.LEFT), [b, j] = i.useState(0), [_, v] = i.useState(false), [C, O] = i.useState(false), y = i.useCallback((e, t) => {
     j(n => {
@@ -32,13 +32,13 @@ let g = function(e) {
     C || y(t, false)
   }, [y, t, C]);
   return i.useEffect(() => {
-    null != g && (_ ? _ && f.stop() : f.start(g, N))
-  }, [_, f, g, N]), (0, r.jsxs)("div", {
-    className: m.root,
+    null != m && (_ ? _ && f.stop() : f.start(m, N))
+  }, [_, f, m, N]), (0, r.jsxs)("div", {
+    className: g.root,
     onMouseEnter: () => v(true),
     onMouseLeave: () => v(false),
     children: [(0, r.jsx)(o.P3F, {
-      className: s()(m.carouselCaret, l),
+      className: s()(g.carouselCaret, l),
       onClick: E,
       onMouseEnter: () => x(d.n.RIGHT),
       ignoreKeyPress: C,
@@ -53,10 +53,10 @@ let g = function(e) {
       direction: h,
       onAnimationStart: () => O(true),
       onAnimationEnd: () => O(false),
-      className: s()(m.carousel, n),
+      className: s()(g.carousel, n),
       children: p(t[b])
     }), (0, r.jsx)(o.P3F, {
-      className: s()(m.carouselCaret, l),
+      className: s()(g.carouselCaret, l),
       onClick: N,
       onMouseEnter: () => x(d.n.LEFT),
       ignoreKeyPress: C,

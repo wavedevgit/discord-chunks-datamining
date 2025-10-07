@@ -61,13 +61,13 @@ function E(e) {
   s()(null != n, "Guild cannot be null here");
   let c = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
   s()(null != c, "Guild must have an everyone role");
-  let g = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
+  let m = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
     p = (0, a.e7)([f.Z], () => f.Z.getSelectedRoleId()),
-    [h, O] = i.useState(g.length > 0);
+    [h, O] = i.useState(m.length > 0);
   i.useEffect(() => {
-    O(h || g.length > 0)
-  }, [h, g.length]), (0, d.ZP)(() => {
-    let e = m.Z.getMemberCount(n.id);
+    O(h || m.length > 0)
+  }, [h, m.length]), (0, d.ZP)(() => {
+    let e = g.Z.getMemberCount(n.id);
     null != e && e <= b.cm && o.Z.requestMembers(n.id, "", 0, false)
   });
   let [N, E] = i.useState(C.ZI.DISPLAY);
@@ -82,7 +82,7 @@ function E(e) {
     setEditRoleId: y,
     guild: n,
     everyoneRole: c,
-    otherRoles: g,
+    otherRoles: m,
     setSelectedSection: E,
     refToScroller: t
   }) : (0, r.jsx)(_.Z, {

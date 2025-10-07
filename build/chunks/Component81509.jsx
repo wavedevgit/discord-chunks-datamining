@@ -164,7 +164,7 @@ function v(e) {
     quote: i,
     quote_attribution: l,
     quote_attribution_title: a
-  } = t, o = (0, m.Z)(n, 4, 60), {
+  } = t, o = (0, g.Z)(n, 4, 60), {
     isLoading: c,
     hasAllImperativeDetails: d
   } = o;
@@ -175,7 +175,7 @@ function v(e) {
   if (!d) return null;
   let {
     guildIcon: u,
-    guildName: g,
+    guildName: m,
     guildAvatarUrl: p,
     subscriberCount: f,
     emojisToShow: x,
@@ -186,7 +186,7 @@ function v(e) {
     className: h.guildCard,
     children: [(0, r.jsx)(b, {
       guildIcon: u,
-      guildName: g,
+      guildName: m,
       guildAvatarUrl: p,
       subscriberCount: f
     }), (0, r.jsx)(j, {
@@ -212,7 +212,7 @@ function C(e) {
       children: f.intl.string(f.t["tJp+QU"])
     }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       carouselClassName: h.creatorGuildCarousel,
       items: t,
       renderItem: e => (0, r.jsx)(v, {

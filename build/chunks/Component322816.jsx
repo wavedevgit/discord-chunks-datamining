@@ -66,18 +66,18 @@ function T(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), u = i.useMemo(() => h.uB({
+  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => h.uB({
     user: s,
     context: t
-  }), [s, t]), m = i.useMemo(() => ({
+  }), [s, t]), g = i.useMemo(() => ({
     [n.id]: S(I({}, n), {
       permissions: h.Hn
     })
   }), [n]), p = i.useMemo(() => h.uB({
     user: s,
     context: t,
-    roles: m
-  }), [s, t, m]), f = !a.fS(u, p);
+    roles: g
+  }), [s, t, g]), f = !a.fS(u, p);
   return (0, r.jsx)(c.u, {
     text: f ? y.intl.string(y.t["IQ/6Sk"]) : null,
     position: "top",
@@ -112,7 +112,7 @@ function P(e) {
   });
 
   function s(e) {
-    return m.Z.can(e, t) ? !m.Z.can(e, t, null, {
+    return g.Z.can(e, t) ? !g.Z.can(e, t, null, {
       [n.id]: S(I({}, n), {
         permissions: a.Od(n.permissions, e)
       })
@@ -145,13 +145,13 @@ function w(e) {
     locked: l,
     setSelectedSection: a,
     initialSearchQuery: o
-  } = e, [c, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => f.Z.generateGuildPermissionSpec(t), [t]).map(e => S(I({}, e), {
+  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => f.Z.generateGuildPermissionSpec(t), [t]).map(e => S(I({}, e), {
     permissions: e.permissions.filter(e => {
       let t = c.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
-    headerHeight: g,
+    headerHeight: m,
     headerRef: h
   } = (0, j.Z)(0), {
     scrolledToTop: x,
@@ -164,7 +164,7 @@ function w(e) {
   }, [c]), (0, r.jsx)(d.yWw, {
     className: N.scroller,
     style: {
-      scrollPaddingTop: g
+      scrollPaddingTop: m
     },
     onScroll: b,
     children: (0, r.jsxs)("div", {
@@ -197,7 +197,7 @@ function w(e) {
       }), (0, r.jsx)(P, {
         guild: t,
         role: n,
-        specs: m,
+        specs: g,
         locked: l
       })]
     })

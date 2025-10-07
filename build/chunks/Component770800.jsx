@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 770800, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => x
 }), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-class x extends Chunk647438.PureComponent {
+class Z extends Chunk647438.PureComponent {
   render() {
     var e, t;
     let {
@@ -118,7 +118,7 @@ class x extends Chunk647438.PureComponent {
     })
   }
 }
-let R = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.Z, Chunk959457.Z], e => {
+let x = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.Z, Chunk959457.Z], e => {
   var t;
   let {
     context: n,
@@ -130,4 +130,4 @@ let R = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.
     mediaSessionId: d.Z.getMediaSessionId(),
     hostname: g.Z.getShortHostname(l)
   }
-})(x)
+})(Z)

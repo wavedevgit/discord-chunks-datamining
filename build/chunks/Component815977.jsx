@@ -54,7 +54,7 @@ function D(e) {
     v = (0, y.Z)(n),
     Z = !v && f;
   switch (i.useEffect(() => {
-      (0, m.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
+      (0, g.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case O.PG.LANDING:
       t = v ? (0, r.jsx)(I.Z, {
@@ -108,9 +108,9 @@ function D(e) {
             return
           }(0, _.NB)(), (0, x.BG)(), (0, j.bj)(), (0, b.$K)(O.PG.LANDING)
         },
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(m.Z, {
           className: R.arrow,
-          direction: g.Z.Directions.LEFT
+          direction: m.Z.Directions.LEFT
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",

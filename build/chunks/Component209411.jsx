@@ -43,9 +43,9 @@ function x(e) {
     })),
     {
       location: b,
-      redirectTo: j
+      redirectTo: I
     } = e,
-    [I, N] = i.useState(E);
+    [j, N] = i.useState(E);
 
   function S(e) {
     let {
@@ -66,8 +66,8 @@ function x(e) {
         handoff_token: t
       } = (0, l.parse)(b.search);
       if (null != e && null != t) {
-        let n = null != j ? (0, d.L)(j) : true;
-        I ? o.Z.logout("handoff", null).finally(() => {
+        let n = null != I ? (0, d.L)(I) : true;
+        j ? o.Z.logout("handoff", null).finally(() => {
           S({
             handoffKey: e,
             handoffToken: t,
@@ -80,7 +80,7 @@ function x(e) {
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(p.q, {}) : (0, r.jsx)(p.Z, (t = function(e) {
+  }), j || v === f.u34.LOGGING_IN) ? (0, r.jsx)(p.q, {}) : (0, r.jsx)(p.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

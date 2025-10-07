@@ -75,15 +75,15 @@ function Z(e) {
     user: s,
     ban: a,
     hideDiscriminator: c,
-    onClose: m
-  } = e, [g, h] = i.useState(false), [x, b] = i.useState(null), {
+    onClose: g
+  } = e, [m, h] = i.useState(false), [x, b] = i.useState(null), {
     analyticsLocations: j
   } = (0, f.ZP)(), v = null != (t = null == j ? true : j[0]) ? t : null;
   async function O() {
     if (null != l) {
       b(null), h(true);
       try {
-        await d.Z.unbanUser(l.id, s.id), m(), _.default.track(I.rMx.GUILD_BAN_REMOVED, R(w({}, (0, p.hH)(l.id)), {
+        await d.Z.unbanUser(l.id, s.id), g(), _.default.track(I.rMx.GUILD_BAN_REMOVED, R(w({}, (0, p.hH)(l.id)), {
           target_user_id: s.id,
           reason: a.reason,
           location: v
@@ -134,12 +134,12 @@ function Z(e) {
         children: [(0, r.jsx)(o.zxk, {
           variant: "primary",
           text: S.intl.string(S.t.i4jeWV),
-          onClick: m
+          onClick: g
         }), (0, r.jsx)(o.zxk, {
           variant: "critical-secondary",
           text: S.intl.string(S.t.UPcIa2),
           onClick: O,
-          loading: g
+          loading: m
         })]
       })
     })]
@@ -243,9 +243,9 @@ function L(e) {
     storedSearchQuery: n
   } = e, [l, s] = i.useState(null != n ? n : ""), [a, c] = i.useState(false), u = i.useCallback(() => {
     O.Z.setSection(I.pNK.SAFETY), (0, N.K)(E.u.DM_AND_SPAM_PROTECTION)
-  }, []), m = i.useCallback(e => {
+  }, []), g = i.useCallback(e => {
     s(e), 0 === e.trim().length && O.Z.setSearchQuery(e)
-  }, []), g = i.useCallback(() => {
+  }, []), m = i.useCallback(() => {
     s(""), O.Z.setSearchQuery("")
   }, []), p = i.useCallback(async () => {
     if (0 === l.trim().length) {
@@ -280,9 +280,9 @@ function L(e) {
         query: null != l ? l : "",
         placeholder: S.intl.string(S.t.MiqUmZ),
         "aria-label": S.intl.string(S.t.MiqUmZ),
-        onChange: m,
+        onChange: g,
         onKeyDown: f,
-        onClear: g
+        onClear: m
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: T.searchButton,

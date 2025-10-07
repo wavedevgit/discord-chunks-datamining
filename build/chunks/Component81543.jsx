@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => h,
-  n: () => g
+  n: () => m
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function m(e) {
   }
   return e
 }
-var g = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+var m = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
 let p = {
   friction: 10,
   tension: 40,
@@ -43,7 +43,7 @@ let p = {
 class f extends Chunk647438.PureComponent {
   componentWillEnter(e) {
     var t, n;
-    null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
+    null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, g({
       toValue: 0
     }, p)).start(() => {
       var t, n;
@@ -54,7 +54,7 @@ class f extends Chunk647438.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    o.Z.spring(this._animated, m({
+    o.Z.spring(this._animated, g({
       toValue: this.props.direction
     }, p)).start(e)
   }

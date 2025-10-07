@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [E, S] = r.useState(false), N = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [E, S] = r.useState(false), T = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), T = r.useCallback(async e => {
+  }, [t]), O = r.useCallback(async e => {
     if (null !== n) {
       S(true);
       try {
@@ -79,30 +79,30 @@ let y = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), N()
+        await (0, d.Wl)(t), T()
       } catch (e) {
         C(g.intl.string(b.default["+QRSxc"]))
       } finally {
         S(false)
       }
     }
-  }, [n, N]);
+  }, [n, T]);
   (0, l.ZP)(() => {
-    N()
+    T()
   });
-  let O = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
+  let N = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.background,
     children: [(0, a.jsx)("img", {
       className: v.artwork,
       src: j,
       alt: ""
-    }), O ? (0, a.jsx)(o.Z, {
+    }), N ? (0, a.jsx)(o.Z, {
       transitionState: i.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: f.dG,
       onComplete: async () => {
-        await T({
+        await O({
           type: m.rY.Empty
         })
       },
@@ -149,13 +149,13 @@ let y = function(e) {
                 fullWidth: true,
                 text: g.intl.string(g.t["7NqTJi"]),
                 onClick: () => {
-                  N()
+                  T()
                 }
               })]
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: T,
+            handleSubmit: O,
             disabled: E
           })]
         })

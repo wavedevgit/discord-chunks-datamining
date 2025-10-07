@@ -24,7 +24,7 @@ function x(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, s.e7)([g.Z], () => g.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, s.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)("div", {
@@ -85,11 +85,11 @@ function v(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: h.category,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(g.Z, {
       className: h.caret,
       width: 12,
       height: 12,
-      direction: m.Z.Directions.DOWN
+      direction: g.Z.Directions.DOWN
     }), (0, r.jsx)(a.Text, {
       variant: "text-xs/semibold",
       color: "text-muted",

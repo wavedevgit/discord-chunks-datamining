@@ -29,17 +29,17 @@ function f(e) {
   }, [t]);
   return c && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: g.setupContainer,
+      className: m.setupContainer,
       children: (0, r.jsx)(s.rsf, {
-        label: u.intl.string(m.default["/xIz7O"]),
-        description: u.intl.string(m.default.uUMXys),
+        label: u.intl.string(g.default["/xIz7O"]),
+        description: u.intl.string(g.default.uUMXys),
         badge: "beta",
         checked: f,
         onChange: x,
         disabled: !n
       })
     }), (0, r.jsx)(s.izJ, {
-      className: g.divider
+      className: m.divider
     })]
   }) : null
 }

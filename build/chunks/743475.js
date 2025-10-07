@@ -33,11 +33,11 @@ function h(e) {
 }
 async function x(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
-    n = m.Z.advancedMode,
+    n = g.Z.advancedMode,
     [f, h] = (0, a.d9)(e.id, [...t]),
-    x = (0, a.kl)(e.id, t, m.Z.editedOnboardingPrompts),
-    b = (0, a.kl)(e.id, t, m.Z.editedOnboardingPrompts, a.V7);
-  if (s.Z.getEnabled(e.id) && (!n && (h.length < g.md || f.length < g.X) || n && (x.length < g.md || b.length < g.X))) return void i.Z.show({
+    x = (0, a.kl)(e.id, t, g.Z.editedOnboardingPrompts),
+    b = (0, a.kl)(e.id, t, g.Z.editedOnboardingPrompts, a.V7);
+  if (s.Z.getEnabled(e.id) && (!n && (h.length < m.md || f.length < m.X) || n && (x.length < m.md || b.length < m.X))) return void i.Z.show({
     title: p.intl.string(p.t.iLdiqa),
     body: p.intl.string(p.t.JOT74e)
   });

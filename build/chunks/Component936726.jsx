@@ -129,8 +129,8 @@ function P(e) {
       timestamp: j.default.extractTimestamp(n.id)
     })
   });
-  let B = null;
-  return P && null != l && (B = (0, i.jsxs)("div", {
+  let U = null;
+  return P && null != l && (U = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
@@ -267,7 +267,7 @@ function P(e) {
             "aria-hidden": true
           })]
         })
-      }), B]
+      }), U]
     })
   })
 }

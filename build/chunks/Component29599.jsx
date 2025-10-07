@@ -243,7 +243,7 @@ let Z = function() {
         isShown: U,
         type: Chunk504983.Y.PREMIUM,
         hasBackground: true,
-        children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+        children: (0, Chunk951288.jsxs)("div", {
           className: o()({
             [Chunk666707.marginContainer]: !U
           }),
@@ -304,7 +304,7 @@ let Z = function() {
     })
   }
   return Chunk755721 && Chunk454585 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [F(), (0, Chunk951288.jsx)(Chunk481060.hjN, {
+    children: [F(), (0, Chunk951288.jsx)("div", {
       className: Chunk666707.marginContainer,
       children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk951288.jsx)(Chunk481060.X6q, {

@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
 function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     n = arguments.length > 2 ? arguments[2] : true;
-  h.ZP.trackWithMetadata(A.rMx.SETTINGS_PANE_VIEWED, {
+  h.ZP.trackWithMetadata(L.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "channel",
     origin_pane: t,
     destination_pane: e,
@@ -68,7 +68,7 @@ class k extends Chunk647438.PureComponent {
       canManageWebhooks: a,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (i !== A.QZA.CLOSED || i === t) && (r || l !== A.CoT.PERMISSIONS) && (a || o || l !== A.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
+    (s || r || a || o) && (i !== L.QZA.CLOSED || i === t) && (r || l !== L.CoT.PERMISSIONS) && (a || o || l !== L.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -100,65 +100,65 @@ class k extends Chunk647438.PureComponent {
           canUnlinkChannel: h
         } = e, f = (0, p.KS)(t), {
           GUILD_CATEGORY: b
-        } = A.d4z, x = v.Ec.has(t.type), j = t.type === b ? L.intl.string(L.t.ifbXnJ) : x ? t.isForumPost() ? L.intl.string(L.t.nEOg1N) : L.intl.string(L.t.H7vTe3) : L.intl.string(L.t["8D8Rsb"]);
+        } = L.d4z, x = v.Ec.has(t.type), j = t.type === b ? M.intl.string(M.t.ifbXnJ) : x ? t.isForumPost() ? M.intl.string(M.t.nEOg1N) : M.intl.string(M.t.H7vTe3) : M.intl.string(M.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
             children: [null != f ? (0, i.jsx)(f, {
               size: "xxs",
               color: "currentColor",
-              className: M.channelIcon
-            }) : null, (0, g.F6)(t, Z.default, O.Z), null != n ? (0, i.jsx)(s.Text, {
+              className: A.channelIcon
+            }) : null, (0, g.F6)(t, w.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
-              className: M.category,
-              children: (0, g.F6)(n, Z.default, O.Z)
+              className: A.category,
+              children: (0, g.F6)(n, w.default, Z.Z)
             }) : null]
-          }) : L.intl.string(L.t.XPDhcX)
+          }) : M.intl.string(M.t.XPDhcX)
         }, {
-          section: A.CoT.OVERVIEW,
-          label: L.intl.string(L.t["/dp6yc"]),
-          ariaLabel: L.intl.string(L.t["/dp6yc"]),
-          element: I.Z,
+          section: L.CoT.OVERVIEW,
+          label: M.intl.string(M.t["/dp6yc"]),
+          ariaLabel: M.intl.string(M.t["/dp6yc"]),
+          element: P.Z,
           notice: {
-            element: I.G,
-            stores: [N.Z]
+            element: P.G,
+            stores: [S.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
         }, {
-          section: A.CoT.PERMISSIONS,
-          label: L.intl.string(L.t.xrmhRU),
+          section: L.CoT.PERMISSIONS,
+          label: M.intl.string(M.t.xrmhRU),
           element: m.Z,
           notice: {
-            element: P.n,
+            element: I.n,
             stores: [C.Z]
           },
           predicate: () => l && !x
         }, {
-          section: A.CoT.INSTANT_INVITES,
-          label: L.intl.string(L.t["9F90iY"]),
-          element: _.Z,
+          section: L.CoT.INSTANT_INVITES,
+          label: M.intl.string(M.t["9F90iY"]),
+          element: R.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
-          section: A.CoT.INTEGRATIONS,
-          label: L.intl.string(L.t.s69NLC),
-          ariaLabel: L.intl.string(L.t.s69NLC),
-          element: R.Z,
+          section: L.CoT.INTEGRATIONS,
+          label: M.intl.string(M.t.s69NLC),
+          ariaLabel: M.intl.string(M.t.s69NLC),
+          element: _.Z,
           notice: {
             stores: [y.Z],
-            element: R.B
+            element: _.B
           },
           predicate: () => !(!d && !h || t.isModeratorReportChannel()) && v.Ti.has(t.type)
         }, {
           section: u.ID.DIVIDER
         }, {
-          section: A.CoT.DELETE,
+          section: L.CoT.DELETE,
           onClick() {
             (0, T.w)(t, function() {
-              w.S.subscribeOnce(A.CkL.LAYER_POP_COMPLETE, () => {
+              E.S.subscribeOnce(L.CkL.LAYER_POP_COMPLETE, () => {
                 (0, o.zz)(t.id)
               }), (0, c.xf)()
             })

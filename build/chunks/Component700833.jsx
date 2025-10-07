@@ -16,7 +16,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk786127 = require("./786127.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function p(e) {
         let {
           default: e
         } = await n.e("74673").then(n.bind(n, 394045));
-        return t => (0, r.jsx)(e, g(m({}, t), {
+        return t => (0, r.jsx)(e, m(g({}, t), {
           guildId: f.id,
           submittedGuildJoinRequestsCount: j,
           onConfirm: () => h(p, I, f)
@@ -93,21 +93,21 @@ function p(e) {
   };
   switch (p.field_type) {
     case s.QJ.TERMS:
-      return (0, r.jsx)(c.Z, m({
+      return (0, r.jsx)(c.Z, g({
         channelId: f.rulesChannelId,
         title: N === s.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
         formField: p
       }, w));
     case s.QJ.PARAGRAPH:
-      return (0, r.jsx)(o.Z, m({
+      return (0, r.jsx)(o.Z, g({
         formField: p
       }, w));
     case s.QJ.TEXT_INPUT:
-      return (0, r.jsx)(d.Z, m({
+      return (0, r.jsx)(d.Z, g({
         formField: p
       }, w));
     case s.QJ.MULTIPLE_CHOICE:
-      return (0, r.jsx)(a.Z, m({
+      return (0, r.jsx)(a.Z, g({
         formField: p
       }, w));
     default:
@@ -122,7 +122,7 @@ function f(e, t, i) {
         let {
           default: e
         } = await n.e("5945").then(n.bind(n, 92451));
-        return n => (0, r.jsx)(e, g(m({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t,
           guild: i
@@ -133,7 +133,7 @@ function f(e, t, i) {
         let {
           ParagraphFormFieldModal: e
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(e, g(m({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t
         }))
@@ -143,7 +143,7 @@ function f(e, t, i) {
         let {
           TextInputFormFieldModal: e
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(e, g(m({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t
         }))
@@ -153,7 +153,7 @@ function f(e, t, i) {
         let {
           default: e
         } = await n.e("94064").then(n.bind(n, 607569));
-        return n => (0, r.jsx)(e, g(m({}, n), {
+        return n => (0, r.jsx)(e, m(g({}, n), {
           field: true,
           onSave: t
         }))
@@ -168,7 +168,7 @@ function h(e, t, i) {
         let {
           default: l
         } = await n.e("5945").then(n.bind(n, 92451));
-        return n => (0, r.jsx)(l, g(m({}, n), {
+        return n => (0, r.jsx)(l, m(g({}, n), {
           field: e,
           onSave: t,
           guild: i
@@ -179,7 +179,7 @@ function h(e, t, i) {
         let {
           ParagraphFormFieldModal: i
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(i, g(m({}, n), {
+        return n => (0, r.jsx)(i, m(g({}, n), {
           field: e,
           onSave: t
         }))
@@ -189,7 +189,7 @@ function h(e, t, i) {
         let {
           TextInputFormFieldModal: i
         } = await n.e("6595").then(n.bind(n, 457042));
-        return n => (0, r.jsx)(i, g(m({}, n), {
+        return n => (0, r.jsx)(i, m(g({}, n), {
           field: e,
           onSave: t
         }))
@@ -199,7 +199,7 @@ function h(e, t, i) {
         let {
           default: i
         } = await n.e("94064").then(n.bind(n, 607569));
-        return n => (0, r.jsx)(i, g(m({}, n), {
+        return n => (0, r.jsx)(i, m(g({}, n), {
           field: e,
           onSave: t
         }))

@@ -58,10 +58,10 @@ function C(e) {
   let {
     rule: t,
     triggerType: n
-  } = e, l = i.useMemo(() => null == t ? (0, m.V9)(n).map(e => (0, r.jsx)(f.Z, {
+  } = e, l = i.useMemo(() => null == t ? (0, g.V9)(n).map(e => (0, r.jsx)(f.Z, {
     actionType: e,
     triggerType: n
-  }, e)) : (0, m.V9)(n).reduce((e, i) => {
+  }, e)) : (0, g.V9)(n).reduce((e, i) => {
     var l;
     let s = t.actions.find(e => {
       let {
@@ -154,9 +154,9 @@ function N(e) {
 }
 
 function E(e) {
-  return (0, m.r5)(e, m.vT.ALPHA) ? (0, r.jsx)(o.Z, {
+  return (0, g.r5)(e, g.vT.ALPHA) ? (0, r.jsx)(o.Z, {
     className: j.alphaBetaTag
-  }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(c.Z, {
+  }) : (0, g.r5)(e, g.vT.BETA) ? (0, r.jsx)(c.Z, {
     className: j.alphaBetaTag
   }) : null
 }
@@ -168,8 +168,8 @@ function I(e) {
     onContextMenu: a
   } = e, o = (0, p.w)(t.triggerType, t), {
     isLoading: c,
-    saveRule: m
-  } = (0, g.w)(), {
+    saveRule: g
+  } = (0, m.w)(), {
     updateRule: f
   } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
     if (!c) {
@@ -177,7 +177,7 @@ function I(e) {
         enabled: !h
       });
       x(!h);
-      let n = await m(e, []);
+      let n = await g(e, []);
       null != n && (f(n), x(n.enabled))
     }
   }, 300), I = e => {
@@ -300,7 +300,7 @@ function T(e) {
     forceSetup: c,
     onSetupRule: d,
     onChangeRule: u
-  } = e, m = e => {
+  } = e, g = e => {
     null != t && (e.preventDefault(), e.stopPropagation(), (0, a.jW)(e, async () => {
       let {
         default: e
@@ -309,21 +309,21 @@ function T(e) {
         rule: t
       }, n))
     }))
-  }, g = (0, r.jsx)(S, {
+  }, m = (0, r.jsx)(S, {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (g = l ? (0, r.jsx)(N, {
+  return null == t || c || (m = l ? (0, r.jsx)(N, {
     rule: t,
     onChangeRule: u,
-    onContextMenu: m
+    onContextMenu: g
   }) : (0, r.jsx)(I, {
     rule: t,
     isDefaultRule: o,
-    onContextMenu: m
+    onContextMenu: g
   })), (0, r.jsx)(s.P3F, {
     className: j.mainContainer,
-    onContextMenu: m,
-    children: g
+    onContextMenu: g,
+    children: m
   })
 }

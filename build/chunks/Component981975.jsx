@@ -49,7 +49,7 @@ function I(e) {
 }
 
 function S(e, t) {
-  return t !== g.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
+  return t !== m.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
     [...e]
   ]
 }
@@ -101,7 +101,7 @@ function P(e) {
   }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
     var e;
     return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), L = A.length > 1 ? g.O1.OR : g.O1.AND, k = i.useMemo(() => L === g.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), G = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
+  }), L = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => L === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), G = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
   function M(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
@@ -116,7 +116,7 @@ function P(e) {
   }
 
   function U() {
-    m.Z.dispatch({
+    g.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
       onComplete: e => M(e),
       excludedPlatformTypes: G,
@@ -163,15 +163,15 @@ function P(e) {
           })
         })]
       })), function(e, t, n, i, l) {
-        let s = S(i, g.O1.OR);
+        let s = S(i, m.O1.OR);
         return (0, r.jsx)(d.E, {
           label: y.intl.string(y.t.Xs7PHR),
           options: [{
             name: y.intl.string(y.t["W3iY5+"]),
-            value: g.O1.OR
+            value: m.O1.OR
           }, {
             name: y.intl.string(y.t.gHXS9P),
-            value: g.O1.AND
+            value: m.O1.AND
           }],
           onChange: e => l(i, e),
           value: n,

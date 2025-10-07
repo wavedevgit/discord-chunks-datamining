@@ -51,7 +51,7 @@ let b = function(e) {
       }({}, n), s = s = {
         guildId: t,
         welcomeMessage: l,
-        onSave: e => (0, g._N)(e)
+        onSave: e => (0, m._N)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ let b = function(e) {
         Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
       }), i))
     }
-  }), [t, l]), j = (0, a.e7)([m.default], () => m.default.getId());
+  }), [t, l]), j = (0, a.e7)([g.default], () => g.default.getId());
   return (0, d.pw)(l) ? (0, r.jsx)(c.zxk, {
     variant: "primary",
     size: "sm",

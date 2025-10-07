@@ -27,7 +27,7 @@ function h(e) {
     guildId: x,
     toggled: b,
     onToggleAction: j
-  } = e, _ = e => () => j(e), v = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, g.L9)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(m.Plq.MODERATE_MEMBERS, o.Z.getGuild(x)), [x]);
+  } = e, _ = e => () => j(e), v = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.L9)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(x)), [x]);
   if (null == v) return null;
   let {
     headerText: N,

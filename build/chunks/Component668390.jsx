@@ -92,10 +92,10 @@ function f(e) {
     lockTooltip: v,
     showContextMenu: y,
     theme: C,
-    roleStyle: N,
-    onContextMenu: S,
-    "aria-label": E
-  } = e, O = (0, g._f)(s.id, r, null == r ? true : r.colorStrings);
+    roleStyle: S,
+    onContextMenu: N,
+    "aria-label": O
+  } = e, Z = (0, g._f)(s.id, r, null == r ? true : r.colorStrings);
   return u ? (0, i.jsx)("div", {
     className: p.dragged
   }) : (0, i.jsx)(c.njP.Item, {
@@ -104,19 +104,19 @@ function f(e) {
     selectedItem: f,
     onItemSelect: b,
     itemType: x,
-    "aria-label": null != v ? "".concat(E, ", ").concat(v) : E,
-    onContextMenu: S,
+    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
+    onContextMenu: N,
     children: (0, i.jsxs)("div", {
       className: p.roleContent,
-      children: ["dot" === N ? (0, i.jsx)(c.FhE, {
+      children: ["dot" === S ? (0, i.jsx)(c.FhE, {
         color: null != t ? t : true,
-        colors: O,
+        colors: Z,
         className: p.roleDot,
         background: false,
         tooltip: false
       }) : (0, i.jsx)(c.xko, {
         color: null != t ? t : null,
-        colors: O,
+        colors: Z,
         className: p.roleCircle
       }), function() {
         if (!j) return null;

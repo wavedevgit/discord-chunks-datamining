@@ -2,7 +2,7 @@
 /** chunk id: 662379, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -39,7 +39,7 @@ function u(e) {
   })
 }
 
-function m() {
+function g() {
   let e = [{
     imageSrc: Chunk174618,
     description: Chunk388032.intl.string(Chunk388032.t.lT0ZNT)

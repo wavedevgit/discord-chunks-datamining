@@ -144,7 +144,7 @@ let w = Chunk647438.forwardRef((e, t) => {
             targetElementRef: G,
             user: e,
             guildId: v,
-            newAnalyticsLocations: [m.Z.AVATAR],
+            newAnalyticsLocations: [g.Z.AVATAR],
             children: e => {
               var t;
               return (0, r.jsx)(d.qEK, T(S({}, e), {
@@ -209,7 +209,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: i.count,
-                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, g.F6)(i.channel, b.default, x.Z, true),
+                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, m.F6)(i.channel, b.default, x.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: R,
                     children: e

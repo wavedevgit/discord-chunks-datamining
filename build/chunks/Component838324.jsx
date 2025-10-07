@@ -25,27 +25,27 @@ function p(e) {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
-    className: g.icon
+    className: m.icon
   }), E = (0, r.jsx)(s.k$p, {
     size: "sm",
-    className: g.icon,
+    className: m.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
   }), I = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, _) / u.md * 100], S = !C && O ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: m.container,
     children: [(0, r.jsxs)("div", {
-      className: g.header,
+      className: m.header,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         color: "text-brand",
-        children: m.intl.format(m.t.kvroKC, {
+        children: g.intl.format(g.t.kvroKC, {
           count: v
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
         color: "text-muted",
-        children: m.intl.format(m.t["0MjxJy"], {
+        children: g.intl.format(g.t["0MjxJy"], {
           count: _
         })
       })]
@@ -54,47 +54,47 @@ function p(e) {
       percents: I,
       size: s.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
-      className: g.requiredItem,
+      className: m.requiredItem,
       children: [C ? E : N, (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: m.intl.format(m.t.k0COZW, {
+        children: g.intl.format(g.t.k0COZW, {
           count: u.md
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: g.requiredItem,
+      className: m.requiredItem,
       children: [O ? N : E, (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: m.intl.format(m.t.PwXgS0, {
+        children: g.intl.format(g.t.PwXgS0, {
           count: u.X
         })
       })]
     }), p && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: g.requiredItem,
+        className: m.requiredItem,
         children: [(0, r.jsx)(s.d3s, {
           size: "sm",
           color: l.Z.colors.WHITE.css,
           secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css,
-          className: g.icon
+          className: m.icon
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: m.intl.string(m.t.AyvkOD)
+          children: g.intl.string(g.t.AyvkOD)
         })]
       }), (0, r.jsxs)("div", {
-        className: g.requiredItem,
+        className: m.requiredItem,
         children: [(0, r.jsx)(s.d3s, {
           size: "sm",
           color: l.Z.colors.WHITE.css,
           secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css,
-          className: g.icon
+          className: m.icon
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: m.intl.format(m.t["8Geut7"], {
+          children: g.intl.format(g.t["8Geut7"], {
             count: y,
             prejoinHook: e => (0, r.jsx)(s.eee, {
               onClick: n,

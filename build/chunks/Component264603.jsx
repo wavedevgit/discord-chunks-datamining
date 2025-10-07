@@ -49,12 +49,12 @@ function C() {
     S = (0, Chunk20471.FG)(C, {
       allowedFlows: [Chunk20471.ro.RPC]
     }),
-    N = (0, Chunk20471.FG)(C, {
+    T = (0, Chunk20471.FG)(C, {
       allowedFlows: [Chunk20471.ro.WEB]
     }),
-    T = (0, Chunk20471.FG)(C),
+    O = (0, Chunk20471.FG)(C),
     {
-      canDeauthorize: O,
+      canDeauthorize: N,
       deauthorize: P
     } = function(e) {
       let t = (0, s.e7)([b.Z], () => b.Z.getNewestTokenForApplication(e)),
@@ -74,27 +74,23 @@ function C() {
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/normal",
         children: "Settings"
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: "Receive DMs In Game",
-        children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
-          options: y,
-          isSelected: e => e === t,
-          select: Chunk695346.JG.updateSetting,
-          popoutLayerContext: Chunk246992.O$,
-          serialize: e => e.toString()
-        })
+      }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
+        label: "Receive DMs In Game",
+        options: y,
+        isSelected: e => e === t,
+        select: Chunk695346.JG.updateSetting,
+        popoutLayerContext: Chunk246992.O$,
+        serialize: e => e.toString()
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk441900.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/normal",
         children: "Application"
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: "Application ID",
-        children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-          value: require,
-          onChange: Chunk120356
-        })
+      }), (0, Chunk951288.jsx)(Chunk481060.oil, {
+        label: "Application ID",
+        value: require,
+        onChange: Chunk120356
       }), null != Chunk524437 && null != Chunk524437.id ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
         onClick: () => Chunk120356(Chunk524437.id),
         variant: "primary",
@@ -115,8 +111,8 @@ function C() {
         variant: "heading-lg/normal",
         children: "Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        disabled: !T.canStartAuthorization,
-        onClick: T.startAuthorization,
+        disabled: !O.canStartAuthorization,
+        onClick: O.startAuthorization,
         variant: "primary",
         text: "Start Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -129,12 +125,12 @@ function C() {
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        disabled: !N.canStartAuthorization,
-        onClick: N.startAuthorization,
+        disabled: !T.canStartAuthorization,
+        onClick: T.startAuthorization,
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        disabled: !O,
+        disabled: !N,
         onClick: P,
         variant: "critical-primary",
         text: "Deauthorize"

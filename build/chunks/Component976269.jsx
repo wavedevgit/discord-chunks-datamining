@@ -2,7 +2,7 @@
 /** chunk id: 976269, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ function u(e) {
     onSaveText: d.intl.string(d.t.R3BPHx)
   })
 }
-let m = function() {
+let g = function() {
   let e = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
   return null == module ? null : (0, Chunk951288.jsx)(u, {
     guildId: module.id

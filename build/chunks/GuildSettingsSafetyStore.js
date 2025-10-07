@@ -12,7 +12,7 @@ var r, i, Chunk442837 = require("./442837.js"),
 let d = Chunk740903.u.OVERVIEW,
   u = null;
 
-function m(e) {
+function g(e) {
   let {
     subsection: t
   } = e;
@@ -34,23 +34,23 @@ function m(e) {
       d = o.u.OVERVIEW
   }
 }
-class g extends(i = Chunk442837.ZP.Store) {
+class m extends(i = Chunk442837.ZP.Store) {
   getCurrentPage() {
     return d
   }
-}(r = "displayName") in g ? Object.defineProperty(g, r, {
+}(r = "displayName") in m ? Object.defineProperty(m, r, {
   value: "GuildSettingsSafetyStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : g[r] = "GuildSettingsSafetyStore";
-let p = new g(Chunk570140.Z, {
+}) : m[r] = "GuildSettingsSafetyStore";
+let p = new m(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: function() {
     if (Chunk999382.Z.getGuildId() === u) returnfalse;
     u = Chunk999382.Z.getGuildId()
   },
-  GUILD_SETTINGS_SET_SECTION: m,
-  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: m,
+  GUILD_SETTINGS_SET_SECTION: g,
+  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
   GUILD_SETTINGS_SAFETY_PAGE: function(e) {
     let {
       page: t

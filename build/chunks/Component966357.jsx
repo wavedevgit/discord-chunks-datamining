@@ -2,7 +2,7 @@
 /** chunk id: 966357, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,23 +15,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk659854 = require("./659854.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
+function m() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     t = null == module ? true : module.id,
     n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProfileError()),
-    g = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
+    m = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     p = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
     f = Chunk647438.useMemo(() => (null == require ? true : require.status) === 429 ? Chunk388032.intl.string(Chunk659854.default["bFRS/v"]) : null == require ? true : require.getAnyErrorMessage(), [require]),
     h = Chunk647438.useCallback(() => {
-      if (null == module || null == g) return;
+      if (null == module || null == m) return;
       let t = {
-        tag: g.tag,
-        badge: g.badge,
-        badgeColorPrimary: g.badgeColorPrimary,
-        badgeColorSecondary: g.badgeColorSecondary
+        tag: m.tag,
+        badge: m.badge,
+        badgeColorPrimary: m.badgeColorPrimary,
+        badgeColorSecondary: m.badgeColorSecondary
       };
       (0, Chunk699553.pV)(module.id, exports)
-    }, [module, g]),
+    }, [module, m]),
     x = Chunk647438.useCallback(() => {
       null != exports && Chunk434404.Z.init(exports)
     }, [exports]);

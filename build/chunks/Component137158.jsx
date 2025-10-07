@@ -45,19 +45,19 @@ function b(e) {
     switch (t) {
       case p.QJ.MULTIPLE_CHOICE:
         return {
-          icon: m.jE$, text: f.intl.string(f.t.ooKh3t)
+          icon: g.jE$, text: f.intl.string(f.t.ooKh3t)
         };
       case p.QJ.PARAGRAPH:
         return {
-          icon: m.OvV, text: f.intl.string(f.t.gG0JBA)
+          icon: g.OvV, text: f.intl.string(f.t.gG0JBA)
         };
       case p.QJ.TEXT_INPUT:
         return {
-          icon: (0, m.GSL)(g.Z), text: f.intl.string(f.t.w6Q9w8)
+          icon: (0, g.GSL)(m.Z), text: f.intl.string(f.t.w6Q9w8)
         };
       case p.QJ.TERMS:
         return {
-          icon: m.snC, text: f.intl.string(f.t["3pz9t7"])
+          icon: g.snC, text: f.intl.string(f.t["3pz9t7"])
         };
       default:
         return null
@@ -87,14 +87,14 @@ function j(e) {
     className: h.backgroundContainer,
     children: i === p.it.REGULAR ? (0, r.jsxs)("div", {
       className: h.containerPadding,
-      children: [(0, r.jsx)(m.vwX, {
+      children: [(0, r.jsx)(g.vwX, {
         tag: "h3",
         className: h.containerTitle,
         children: t
       }), n]
     }) : (0, r.jsxs)("div", {
       className: h.compactContainer,
-      children: [(0, r.jsx)(m.vwX, {
+      children: [(0, r.jsx)(g.vwX, {
         tag: "h3",
         className: h.compactTitle,
         children: t
@@ -112,7 +112,7 @@ function v(e) {
     field: n,
     isDropHovered: l,
     onDrop: d,
-    fieldStyle: g
+    fieldStyle: m
   } = e, f = (0, a.debounce)(async (e, t, n) => {
     await d(e, t, n)
   }), b = i.useRef(null), [, v] = (0, o.c)({
@@ -150,9 +150,9 @@ function v(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: s()(h.dragIconContainer, {
-        [h.compact]: g === p.it.COMPACT
+        [h.compact]: m === p.it.COMPACT
       }),
-      children: (0, r.jsx)(m.Vni, {
+      children: (0, r.jsx)(g.Vni, {
         size: "xs",
         className: h.dragIcon,
         color: u.Z.unsafe_rawColors.PRIMARY_400.css
@@ -174,18 +174,18 @@ function C(e) {
         [h.compact]: e.fieldStyle === p.it.COMPACT,
         [h.canRemove]: e.canRemove
       }),
-      children: [(0, r.jsx)(m.P3F, {
+      children: [(0, r.jsx)(g.P3F, {
         className: h.actionButton,
         onClick: e.onEdit,
         "aria-label": f.intl.string(f.t.bt75u7),
-        children: (0, r.jsx)(m.vdY, {
+        children: (0, r.jsx)(g.vdY, {
           size: "xs"
         })
-      }), e.canRemove && (0, r.jsx)(m.P3F, {
+      }), e.canRemove && (0, r.jsx)(g.P3F, {
         className: h.actionButton,
         onClick: e.onRemove,
         "aria-label": f.intl.string(f.t.N86XcH),
-        children: (0, r.jsx)(m.XHJ, {
+        children: (0, r.jsx)(g.XHJ, {
           size: "xs"
         })
       })]

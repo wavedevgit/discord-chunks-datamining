@@ -26,7 +26,7 @@ function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, s.e7)([m.Z], () => m.Z.getGuild(i)), _ = (0, s.e7)([g.default], () => g.default.getCurrentUser()), {
+  } = e, j = (0, s.e7)([g.Z], () => g.Z.getGuild(i)), _ = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
     onAdoptTag: v,
     isAdopting: C
   } = (0, u.Z)(i), O = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;

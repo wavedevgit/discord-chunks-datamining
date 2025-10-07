@@ -40,7 +40,7 @@ function p(e) {
   }, [f, t]), j = i.useCallback(() => {
     (0, a.mw)({
       uploadType: u.pC.GUILD_BANNER,
-      maxFileSizeBytes: m.B,
+      maxFileSizeBytes: g.B,
       onComplete: x,
       analyticsLocation: {
         page: c.ZY5.GUILD_SETTINGS,
@@ -54,7 +54,7 @@ function p(e) {
     children: (0, r.jsx)(l.zxk, {
       disabled: !(h && n),
       variant: "primary",
-      text: g.intl.string(g.t.yG2pUl),
+      text: m.intl.string(m.t.yG2pUl),
       onClick: j
     })
   }) : (0, r.jsx)(o.P, {

@@ -135,14 +135,14 @@ function A() {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
       className: Chunk680027.content,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 8,
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-md/semibold",
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
           columns: w,
           data: Chunk392711
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
-          size: 8
         }), (0, Chunk951288.jsx)(Chunk789086.Z, {}), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Refresh Now",
@@ -156,8 +156,10 @@ function A() {
           },
           loading: Chunk876215
         })]
-      }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 8,
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-md/semibold",
           children: "Impression Capping"
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
@@ -168,8 +170,6 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
-          size: 8
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Log Impressions",
@@ -179,8 +179,6 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
-          size: 8
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: Chunk120356 ? "Enable Impression Capping" : "Disable Impression Capping",
@@ -190,8 +188,6 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
-          size: 8
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: l ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
@@ -202,8 +198,10 @@ function A() {
             })
           }
         })]
-      }), false, (0, Chunk951288.jsx)(Chunk650613.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+      }), false, (0, Chunk951288.jsx)(Chunk650613.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 8,
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-md/semibold",
           children: "Game Profile"
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           placeholder: "App ID or full name",
@@ -220,8 +218,10 @@ function A() {
             })
           }, "follow-game-".concat(e.id)))
         })]
-      }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 8,
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-md/semibold",
           children: "Activity Sharing"
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
@@ -255,10 +255,6 @@ let Z = e => {
   });
   return (0, a.jsx)(p.P3F, {
     onClick: n,
-    style: {
-      margin: "2px",
-      cursor: "pointer"
-    },
     children: (0, a.jsx)(p.Text, {
       variant: "text-xs/normal",
       color: "text-muted",

@@ -49,10 +49,10 @@ function b(e, t) {
   }), e
 }
 let g = () => {
-    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, S] = Chunk647438.useState([]), [N, T] = Chunk647438.useState(() => {
+    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, S] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [O, P] = Chunk647438.useState(null), [I, k] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
+    }), [N, P] = Chunk647438.useState(null), [k, I] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
     (0, Chunk647438.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk647438.useEffect)(() => {
@@ -68,7 +68,7 @@ let g = () => {
         case Chunk474936.Xh.PREMIUM_YEAR_TIER_2:
           module.setFullYear(module.getFullYear() + 1)
       }
-      T(module)
+      O(module)
     }, [y]), (0, Chunk647438.useEffect)(() => {
       switch (module) {
         case Chunk474936.p9.TIER_0:
@@ -99,7 +99,7 @@ let g = () => {
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_2)
       }
     }, [module]), (0, Chunk647438.useEffect)(() => {
-      [Chunk45474.R.CONFIRM_DISCOUNT, Chunk45474.R.DISCOUNT_APPLIED].includes(require) && null === j && _(v()), require === Chunk45474.R.PREVIEW && null === O && P(new Chunk146528.Z({
+      [Chunk45474.R.CONFIRM_DISCOUNT, Chunk45474.R.DISCOUNT_APPLIED].includes(require) && null === j && _(v()), require === Chunk45474.R.PREVIEW && null === N && P(new Chunk146528.Z({
         id: "",
         invoiceItems: [{
           id: "",
@@ -121,10 +121,10 @@ let g = () => {
         tax: 0,
         taxInclusive: true,
         subscriptionPeriodStart: new Date,
-        subscriptionPeriodEnd: N,
+        subscriptionPeriodEnd: T,
         status: Chunk981631.hUK.PAID
-      })), require !== Chunk45474.R.PREVIEW && null !== O && P(null)
-    }, [require, j, N, y, O]);
+      })), require !== Chunk45474.R.PREVIEW && null !== N && P(null)
+    }, [require, j, T, y, N]);
     let D = Chunk647438.useCallback(async () => {
       Z(true), await (0, Chunk481060.ZDy)(async () => t => (0, a.jsx)(u.x, b(f({}, t), {
         onClose: () => {
@@ -133,12 +133,12 @@ let g = () => {
         premiumType: e,
         churnDiscount: j,
         planId: y,
-        renewalInvoice: O,
+        renewalInvoice: N,
         renewalInvoiceDetails: {
           intervalType: h.rV.MONTH,
           intervalCount: 1
         },
-        errorOnCancel: I,
+        errorOnCancel: k,
         errorOnRedeem: w,
         setActiveStep: e => {
           g(e), t.onClose()
@@ -152,7 +152,7 @@ let g = () => {
           createdAt: new Date,
           canceledAt: null,
           currentPeriodStart: new Date,
-          currentPeriodEnd: N,
+          currentPeriodEnd: T,
           status: m.O0b.ACTIVE,
           paymentSourceId: null,
           paymentGateway: null,
@@ -167,7 +167,7 @@ let g = () => {
           pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [module, j, y, O, I, w, require, N]);
+    }, [module, j, y, N, k, w, require, T]);
     return (0, Chunk647438.useEffect)(() => {
       A && D()
     }, [require, A, D]), (0, Chunk951288.jsxs)(Chunk237012.$0, {
@@ -260,9 +260,9 @@ let g = () => {
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
           children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: I,
+            checked: k,
             onChange: () => {
-              k(!I)
+              I(!k)
             },
             label: "Error on Cancel"
           })

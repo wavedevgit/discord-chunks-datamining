@@ -36,34 +36,31 @@ function g() {
       value: Chunk524437.GI.ACTIVITY_STATUS_OFF,
       name: Chunk388032.intl.string(Chunk933554.default.m3oL7e)
     }];
-  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-    className: Chunk764055.formSection,
-    children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk933554.default.TG0Qsb),
-      description: Chunk388032.intl.string(Chunk933554.default.OO17Li),
-      children: [(0, Chunk951288.jsx)(Chunk538534.E, {
-        label: Chunk388032.intl.string(Chunk933554.default["/LHVbm"]),
-        options: Chunk921801,
-        value: exports,
-        onChange: e => n(e)
-      }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk764055.myServersContainer,
-        children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk764055.myServersHeaderContainer,
-          children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-            className: Chunk764055.myServersTitle,
-            variant: "heading-md/medium",
-            color: "header-primary",
-            children: Chunk388032.intl.string(Chunk388032.t.TqdOvL)
-          }), !module && (0, Chunk951288.jsx)(Chunk481060.Wn, {
-            className: Chunk764055.myServersIgnoredWarning,
-            messageType: Chunk481060.QYI.WARNING,
-            textColor: "text-feedback-warning",
-            children: Chunk388032.intl.string(Chunk933554.default["xxI0/f"])
-          })]
-        }), (0, Chunk951288.jsx)(Chunk940276.Z, {})]
-      })]
-    })
+  return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+    label: Chunk388032.intl.string(Chunk933554.default.TG0Qsb),
+    description: Chunk388032.intl.string(Chunk933554.default.OO17Li),
+    children: [(0, Chunk951288.jsx)(Chunk538534.E, {
+      label: Chunk388032.intl.string(Chunk933554.default["/LHVbm"]),
+      options: Chunk921801,
+      value: exports,
+      onChange: e => n(e)
+    }), (0, Chunk951288.jsxs)("div", {
+      className: Chunk764055.myServersContainer,
+      children: [(0, Chunk951288.jsxs)("div", {
+        className: Chunk764055.myServersHeaderContainer,
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          className: Chunk764055.myServersTitle,
+          variant: "heading-md/medium",
+          color: "header-primary",
+          children: Chunk388032.intl.string(Chunk388032.t.TqdOvL)
+        }), !module && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+          className: Chunk764055.myServersIgnoredWarning,
+          messageType: Chunk481060.QYI.WARNING,
+          textColor: "text-feedback-warning",
+          children: Chunk388032.intl.string(Chunk933554.default["xxI0/f"])
+        })]
+      }), (0, Chunk951288.jsx)(Chunk940276.Z, {})]
+    })]
   })
 }
 
@@ -96,14 +93,10 @@ function b() {
     t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk933554.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
-    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk764055.formSection,
+    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 32,
       children: [(0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk481060.R94, {
-          className: Chunk764055.formDescription,
-          type: Chunk481060.R94.Types.DESCRIPTION,
-          children: Chunk388032.intl.string(Chunk933554.default.t2Ysra)
-        })
+        children: Chunk388032.intl.string(Chunk933554.default.t2Ysra)
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk933554.default.WhdCGB),
         description: exports,
@@ -118,13 +111,11 @@ function b() {
 function y() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
-    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
-        type: Chunk481060.ToO.Types.PRIMARY,
-        body: Chunk388032.intl.format(Chunk388032.t.xvCsx8, {
-          termsLink: Chunk981631.EYA.TERMS,
-          privacyLink: Chunk981631.EYA.PRIVACY
-        })
+    children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
+      type: Chunk481060.ToO.Types.PRIMARY,
+      body: Chunk388032.intl.format(Chunk388032.t.xvCsx8, {
+        termsLink: Chunk981631.EYA.TERMS,
+        privacyLink: Chunk981631.EYA.PRIVACY
       })
     })
   })
@@ -137,11 +128,11 @@ let O = function(e) {
     className: t,
     title: h.intl.string(h.t.Cq98yM),
     children: [(0, r.jsx)(b, {}), (0, r.jsx)(o.izJ, {
-      className: m.divider
+      gap: 32
     }), (0, r.jsx)(g, {}), (0, r.jsx)(o.izJ, {
-      className: m.divider
+      gap: 32
     }), (0, r.jsx)(E, {}), (0, r.jsx)(o.izJ, {
-      className: m.divider
+      gap: 32
     }), (0, r.jsx)(y, {})]
   })
 }

@@ -21,10 +21,10 @@ let f = (0, Chunk624138.Mg)(Chunk477690.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
 function h(e) {
   let {
     role: t,
-    "aria-label": n = g.intl.string(g.t["MsUY/f"]),
+    "aria-label": n = m.intl.string(m.t["MsUY/f"]),
     className: l,
     onClick: a,
-    disabled: m = false
+    disabled: g = false
   } = e, h = i.useRef(null), x = i.useMemo(() => (0, d.Kz)(t, f), [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -55,10 +55,10 @@ function h(e) {
     children: (0, r.jsxs)(o.P3F, {
       "aria-label": n,
       className: s()(p.container, l, {
-        [p.disabled]: m
+        [p.disabled]: g
       }),
-      onClick: m ? true : a,
-      "aria-disabled": m,
+      onClick: g ? true : a,
+      "aria-disabled": g,
       children: [(0, r.jsx)("div", {
         ref: h,
         className: p.preview,

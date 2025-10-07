@@ -29,7 +29,7 @@ function f(e) {
     })) ? t : 0,
     [j, _] = i.useState(null),
     v = i.useMemo(() => null == f ? true : f.some(e => (0, s.J)(e)), [f]),
-    C = i.useMemo(() => f.length === m.nx, [f]),
+    C = i.useMemo(() => f.length === g.nx, [f]),
     O = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && _(null)
     }, [j, n.id]),
@@ -54,9 +54,9 @@ function f(e) {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.title,
-      children: g.intl.format(g.t["sm+75u"], {
+      children: m.intl.format(m.t["sm+75u"], {
         currentCount: f.length,
-        maxCount: m.nx
+        maxCount: g.nx
       })
     }), f.map(e => (0, d.a0)({
       dropHoveredIndex: j,
@@ -88,29 +88,29 @@ function h(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
-    text: g.intl.string(g.t.EOwiEh),
+    text: m.intl.string(m.t.EOwiEh),
     onClick: () => {
       t({
         field_type: s.QJ.TEXT_INPUT,
-        label: g.intl.string(g.t.EOwiEh),
+        label: m.intl.string(m.t.EOwiEh),
         required: true
       })
     }
   }, {
-    text: g.intl.string(g.t.jqrNDg),
+    text: m.intl.string(m.t.jqrNDg),
     onClick: () => {
       t({
         field_type: s.QJ.TEXT_INPUT,
-        label: g.intl.string(g.t.jqrNDg),
+        label: m.intl.string(m.t.jqrNDg),
         required: true
       })
     }
   }, {
-    text: g.intl.string(g.t.I5q8vr),
+    text: m.intl.string(m.t.I5q8vr),
     onClick: () => {
       t({
         field_type: s.QJ.TEXT_INPUT,
-        label: g.intl.string(g.t.I5q8vr),
+        label: m.intl.string(m.t.I5q8vr),
         required: true
       })
     }
@@ -120,7 +120,7 @@ function h(e) {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.examplesHeader,
-      children: g.intl.string(g.t.ID04cH)
+      children: m.intl.string(m.t.ID04cH)
     }), (0, r.jsx)(c.j, {
       pills: n
     })]

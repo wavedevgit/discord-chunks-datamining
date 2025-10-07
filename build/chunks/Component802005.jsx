@@ -2,7 +2,7 @@
 /** chunk id: 802005, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  C: () => g
+  C: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk196961 = require("./196961.js"),
   Chunk203377 = require("./203377.js");
 
-function g() {
+function m() {
   let {
     vanityURLCode: e,
     hasChanges: t,
@@ -25,26 +25,26 @@ function g() {
     hasChanges: Chunk566084.Z.hasChanges(),
     errorDetails: Chunk566084.Z.errorDetails
   })), {
-    guild: g,
+    guild: m,
     submitting: p,
     errors: f,
     hasChanges: h
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), x = Chunk647438.useMemo(() => null != require ? (0, Chunk196961.i)(null == require ? true : require.code) : (0, Chunk203377.LG)(f), [f, require]), b = Chunk647438.useCallback(async () => {
-    if (null != g && (exports && await (0, Chunk736617.en)(g.id, module, {
+    if (null != m && (exports && await (0, Chunk736617.en)(m.id, module, {
         throwErr: true
       }), h)) {
       let e = {
-        premiumProgressBarEnabled: g.premiumProgressBarEnabled,
-        banner: g.banner,
-        splash: g.splash
+        premiumProgressBarEnabled: m.premiumProgressBarEnabled,
+        banner: m.banner,
+        splash: m.splash
       };
-      await Chunk434404.Z.saveGuild(g.id, module, {
+      await Chunk434404.Z.saveGuild(m.id, module, {
         throwErr: true
       })
     }
-  }, [g, h, exports, module]), j = Chunk647438.useCallback(() => {
-    null != g && (Chunk434404.Z.init(g.id), (0, Chunk736617.H7)())
-  }, [g]);
+  }, [m, h, exports, module]), j = Chunk647438.useCallback(() => {
+    null != m && (Chunk434404.Z.init(m.id), (0, Chunk736617.H7)())
+  }, [m]);
   return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: p,
     errorMessage: x,

@@ -44,8 +44,8 @@ function A() {
           children: (0, Chunk951288.jsx)(Chunk976758.Z, {})
         }), (0, Chunk951288.jsxs)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_MIC_TEST,
-          children: [(0, Chunk951288.jsx)(Chunk823087.Z, {}), (0, Chunk951288.jsx)(Chunk481060.R94, {
-            type: Chunk481060.R94.Types.DESCRIPTION,
+          children: [(0, Chunk951288.jsx)(Chunk823087.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
             children: Chunk388032.intl.format(Chunk388032.t["V+B3FB"], {
               guideURL: S
             })

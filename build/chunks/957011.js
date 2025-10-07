@@ -15,8 +15,8 @@ var Chunk647438 = require("./647438.js"),
 
 function u(e, t) {
   let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e)),
-    [u, m] = r.useState(),
-    [g, p] = r.useState(false),
+    [u, g] = r.useState(),
+    [m, p] = r.useState(false),
     f = (0, d.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([o.default], () => {
@@ -24,14 +24,14 @@ function u(e, t) {
       return null != n && (0, s.eM)(n, e)
     }, [n]),
     error: u,
-    loading: g,
+    loading: m,
     submitAcceptTermsRequest: r.useCallback(async () => {
       if (null != e && (f || null != t)) {
-        p(true), m(true);
+        p(true), g(true);
         try {
           null != t ? await c.wE(e, t) : await c.zo(e)
         } catch (e) {
-          m(new l.Z(e))
+          g(new l.Z(e))
         } finally {
           p(false)
         }

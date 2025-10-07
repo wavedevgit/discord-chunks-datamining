@@ -22,12 +22,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk78224 = require("./78224.js");
 let b = "mweb_handoff_nonce",
-  j = "mweb_handoff_nonce_expiration",
-  I = +Chunk70956.Z.Millis.MINUTE,
+  I = "mweb_handoff_nonce_expiration",
+  j = +Chunk70956.Z.Millis.MINUTE,
   N = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
   S = new Set(["deep_link_failed"]),
   O = () => {
-    Chunk433517.K.remove(b), Chunk433517.K.remove(j)
+    Chunk433517.K.remove(b), Chunk433517.K.remove(I)
   },
   y = () => {
     let e = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getFingerprint()),
@@ -53,7 +53,7 @@ let b = "mweb_handoff_nonce",
     }, [A, y]), Z = Chunk433517.K.get(b);
     if ("null" === require && null === C && T("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && T("nonce_missing"), Chunk647438.useEffect(() => {
         if (null != Z) {
-          let e = Chunk433517.K.get(j);
+          let e = Chunk433517.K.get(I);
           (null == module || Date.now() >= module) && (T("nonce_expired"), O())
         }
       }, [Z, T]), Chunk647438.useEffect(() => {
@@ -98,7 +98,7 @@ let b = "mweb_handoff_nonce",
         color: Chunk755721.zx.Colors.BRAND_INVERTED,
         onClick: () => {
           let e = Chunk970648.Z.generateNonce();
-          Chunk433517.K.set(b, module), Chunk433517.K.set(j, Date.now() + I);
+          Chunk433517.K.set(b, module), Chunk433517.K.set(I, Date.now() + j);
           let t = new URL(Chunk981631.x0X),
             n = new URLSearchParams(window.location.search);
           require.delete("fingerprint"), require.delete("handoff_token");

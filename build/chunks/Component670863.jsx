@@ -2,7 +2,7 @@
 /** chunk id: 670863, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => P
+  j: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,10 +23,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk118896 = require("./118896.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk118896 = require("./118896.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,22 +34,22 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,16 +57,16 @@ function A(e, t) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = "SHOW_MORE";
+let C = "SHOW_MORE";
 
-function R(e) {
+function N(e) {
   return ({
     [y.h7.AUDIO_INPUT]: {
       setDevice: u.Z.setInputDevice,
@@ -99,22 +98,23 @@ function R(e) {
   })[e]
 }
 
-function P(e) {
+function R(e) {
   var {
     deviceType: t,
     location: a,
     showAllDevices: u = false,
     selectedDeviceId: _,
     onSelectDevice: y,
-    hideDeviceTypeIcon: T = false
-  } = e, C = A(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon"]);
+    hideDeviceTypeIcon: I = false,
+    label: A
+  } = e, R = S(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
     setDevice: P,
     Icon: w,
     getCanSetDevice: D,
     getWarningMessage: L,
     getLocation: x
-  } = R(t), {
+  } = N(t), {
     analyticsLocations: M
   } = (0, d.ZP)(), j = (0, s.e7)([f.Z], () => f.Z.theme), [k, U] = i.useState(u), G = x(a), [B, Z] = (0, E.Ls)(t, {
     location: G
@@ -124,12 +124,11 @@ function P(e) {
     showDeviceSelectionImprovements: Y
   } = (0, g.V)({
     location: "".concat(G, "/SingleSelectDevices")
-  }), W = (0, r.jsx)(c.R94, {
-    type: c.R94.Types.DESCRIPTION,
-    className: I.marginTop8,
+  }), W = (0, r.jsx)(c.Wn, {
+    messageType: c.QYI.WARNING,
     children: L()
   }), K = i.useCallback(e => {
-    if (e === N) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+    if (e === C) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,
       location: G,
       location_stack: M,
@@ -167,9 +166,9 @@ function P(e) {
     return (0, r.jsxs)("div", {
       className: o()(v.deviceContainer, {
         [v.multiLine]: u && null != t,
-        [v.withIcon]: !T
+        [v.withIcon]: !I
       }),
-      children: [!T && (0, r.jsx)("div", {
+      children: [!I && (0, r.jsx)("div", {
         className: v.deviceIcon,
         children: (0, r.jsx)(w, {
           size: "custom",
@@ -213,7 +212,7 @@ function P(e) {
       return t.concat(n)
     } {
       let e = {
-        value: N,
+        value: C,
         label: O.intl.string(O.t.E99UMj),
         preventCloseOnSelect: true
       };
@@ -221,7 +220,8 @@ function P(e) {
     }
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.q4e, S({
+    children: [(0, r.jsx)(c.q4e, T({
+      label: A,
       value: V,
       onChange: K,
       options: q(),
@@ -233,6 +233,6 @@ function P(e) {
         return z(t)
       },
       optionClassName: v.singleSelectOption
-    }, C)), !H && W]
+    }, R)), !H && W]
   })
 }
