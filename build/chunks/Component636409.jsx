@@ -20,32 +20,32 @@ function m(e) {
   var t, n, l;
   let {
     guildId: m,
-    initialPageIndex: I = 0
-  } = e, b = (0, d.e7)([s.Z], () => s.Z.getStorefrontData(m)), v = (0, d.e7)([s.Z], () => s.Z.getStorefrontState(m)), _ = ((null == b ? true : b.storefront) != null || (null == b ? true : b.error)) && !(null == b ? true : b.loading);
+    initialPageIndex: b = 0
+  } = e, v = (0, o.e7)([s.Z], () => s.Z.getStorefrontData(m)), _ = (0, o.e7)([s.Z], () => s.Z.getStorefrontState(m)), I = ((null == v ? true : v.storefront) != null || (null == v ? true : v.error)) && !(null == v ? true : v.loading);
   if (r.useEffect(() => {
-      null == b && (0, c.Y)(m)
-    }, [m, b]), r.useEffect(() => {
-      (0, c.K)(m, I)
-    }, [m, I]), !_ || (null == b ? true : b.storefront) == null) return (0, a.jsx)("div", {
+      null == v && (0, c.Y)(m)
+    }, [m, v]), r.useEffect(() => {
+      (0, c.K)(m, b)
+    }, [m, b]), !I || (null == v ? true : v.storefront) == null) return (0, a.jsx)("div", {
     className: i()(p.spinner, p.container),
-    children: (0, a.jsx)(o.$jN, {})
+    children: (0, a.jsx)(d.$jN, {})
   });
-  let h = null != (l = null == v ? true : v.activePage) ? l : I;
+  let h = null != (l = null == _ ? true : _.activePage) ? l : b;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
       className: p.container,
       children: [(0, a.jsx)(u.Z, {
         guildId: m,
-        storefront: b.storefront,
+        storefront: v.storefront,
         selectedPageIndex: h
       }), (0, a.jsx)(g.$, {
-        applicationId: b.storefront.applicationId,
+        applicationId: v.storefront.applicationId,
         guildId: m,
-        page: b.storefront.pages[h]
+        page: v.storefront.pages[h]
       })]
     }), (0, a.jsx)(f.n, {
-      applicationId: b.storefront.applicationId,
-      backgroundImageAssetId: null == (n = b.storefront.pages[h]) || null == (t = n.leaderboard) ? true : t.backgroundImageAssetId
+      applicationId: v.storefront.applicationId,
+      backgroundImageAssetId: null == (n = v.storefront.pages[h]) || null == (t = n.leaderboard) ? true : t.backgroundImageAssetId
     })]
   })
 }

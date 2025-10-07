@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk706898 = require("./706898.jsx");
+  Chunk481060 = require("./481060.js");
 
 function o(e) {
   let {
@@ -14,23 +14,23 @@ function o(e) {
     selectedStory: n,
     onStorySelect: o
   } = e;
-  return (0, r.jsx)(a.n, {
+  return (0, r.jsx)(a.njP, {
     selectedItem: n,
     orientation: "vertical",
     onItemSelect: e => {
       null != e && o(e)
     },
     children: t.map((e, s) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(a.n.Header, {
+      children: [(0, r.jsx)(a.njP.Header, {
         children: e.title
-      }), e.stories.map(e => (0, r.jsx)(a.n.Item, {
+      }), e.stories.map(e => (0, r.jsx)(a.njP.Item, {
         selectedItem: n,
         id: e.id,
         onItemSelect: () => {
           o(e.id)
         },
         children: e.name
-      }, e.id)), s < t.length - 1 && (0, r.jsx)(a.n.Separator, {})]
+      }, e.id)), s < t.length - 1 && (0, r.jsx)(a.njP.Separator, {})]
     }, e.title))
   })
 }

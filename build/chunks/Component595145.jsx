@@ -84,7 +84,7 @@ function ea(e) {
     disableActionsForPreview: eI = false
   } = e, {
     analyticsLocations: eZ
-  } = (0, m.ZP)([...ey, u.Z.USER_PROFILE_MODAL_V2]), eO = (0, T.ZB)({
+  } = (0, m.ZP)([...ey, u.Z.USER_PROFILE_MODAL_V2]), eO = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     sourceSessionId: ep,
@@ -93,7 +93,7 @@ function ea(e) {
     messageId: eu,
     roleId: em,
     showGuildProfile: eb
-  }), eN = i.useRef(null), eT = (0, c.Z)(eN), [eP, eA] = i.useState(false), {
+  }), eN = i.useRef(null), eP = (0, c.Z)(eN), [eT, eA] = i.useState(false), {
     defaultWishlistId: eE
   } = (0, o.cj)([A.Z], () => ({
     defaultWishlistId: A.Z.getFirstWishlistId(t.id)
@@ -153,7 +153,7 @@ function ea(e) {
     }
   }, []), (0, l.jsx)(m.Gt, {
     value: eZ,
-    children: (0, l.jsx)(T.Mt, {
+    children: (0, l.jsx)(P.Mt, {
       value: eO,
       openedAt: ev,
       fetchStartedAt: null == ew ? true : ew.fetchStartedAt,
@@ -169,7 +169,7 @@ function ea(e) {
           "aria-labelledby": eW,
           parentComponent: "UserProfileModalV2",
           children: [(0, l.jsxs)(s.UkV, {
-            isShaking: eP,
+            isShaking: eT,
             intensity: 1.4,
             children: [eI ? (0, l.jsxs)("div", {
               className: es.previewBar,
@@ -361,7 +361,7 @@ function ea(e) {
                         userId: t.id,
                         className: es.profileNote,
                         autoFocus: eh === el.Tb.NOTE,
-                        onUpdate: () => (0, P.pQ)(function(e) {
+                        onUpdate: () => (0, T.pQ)(function(e) {
                           for (var n = 1; n < arguments.length; n++) {
                             var t = null != arguments[n] ? arguments[n] : {},
                               l = Object.keys(t);
@@ -385,7 +385,7 @@ function ea(e) {
                     })]
                   }), (null == ew ? true : ew.profileEffect) != null && (0, l.jsx)(v.Z, {
                     skuId: null == ew ? true : ew.profileEffect.skuId,
-                    isHovering: eT
+                    isHovering: eP
                   })]
                 }), (0, l.jsx)($.Z, {
                   user: t,

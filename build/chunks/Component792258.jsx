@@ -53,8 +53,8 @@ let g = e => {
           children: g
         })]
       }), (0, r.jsx)(s.Text, {
-        variant: "text-xs/medium",
-        color: "text-muted",
+        variant: "text-sm/medium",
+        color: "text-secondary",
         children: null != i ? i : true !== h.approximateMemberCount ? _.intl.format(f.default["5JmNgo"], {
           members: h.approximateMemberCount
         }) : null

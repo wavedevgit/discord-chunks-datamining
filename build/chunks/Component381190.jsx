@@ -129,8 +129,8 @@ let f = e => {
           variant: "text-md/semibold",
           children: null != g ? "".concat(p, " • ").concat(g) : p
         }), (0, r.jsx)(s.Text, {
-          variant: "text-xs/medium",
-          color: "text-muted",
+          variant: "text-sm/medium",
+          color: "text-secondary",
           children: b
         })]
       })]

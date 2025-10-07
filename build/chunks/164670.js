@@ -2,22 +2,25 @@
 /** chunk id: 164670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K$: () => i,
-  Uc: () => o,
-  wK: () => a,
-  x6: () => s
+  FE: () => u,
+  K$: () => o,
+  Uc: () => l,
+  wK: () => s,
+  x6: () => c
 }), require("./953529.js");
-var Chunk981631 = require("./981631.js");
-
-function i(e) {
-  return null != e && e.productLine === r.POd.SOCIAL_LAYER_GAME_ITEM
-}
-
-function a(e) {
-  return null != e && e.features.has(r.oNc.SOCIAL_LAYER_STOREFRONT)
-}
+var Chunk73346 = require("./73346.js"),
+  Chunk591759 = require("./591759.js"),
+  Chunk981631 = require("./981631.js");
 
 function o(e) {
+  return null != e && e.productLine === a.POd.SOCIAL_LAYER_GAME_ITEM
+}
+
+function s(e) {
+  return null != e && e.features.has(a.oNc.SOCIAL_LAYER_STOREFRONT)
+}
+
+function l(e) {
   return {
     applicationId: e.application_id,
     title: e.title,
@@ -38,7 +41,7 @@ function o(e) {
   }
 }
 
-function s(e) {
+function c(e) {
   if (null != e) return {
     carouselItems: e.carousel_items.map(e => ({
       thumbnailAssetId: e.thumbnail_asset_id,
@@ -52,5 +55,21 @@ function s(e) {
     expiresAt: null != e.expires_at ? new Date(e.expires_at) : true,
     cardImageAssetId: e.card_image_asset_id,
     cardBackgroundImageAssetId: e.card_background_image_asset_id
+  }
+}
+
+function u(e, t) {
+  var n, a, o;
+  if ((null == e || null == (a = e.tenantMetadata) || null == (n = a.socialLayer) ? true : n.carouselItems) == null || 0 === e.tenantMetadata.socialLayer.carouselItems.length) return {
+    primaryIconAsset: true,
+    primaryIconLabel: true
+  };
+  let s = e.tenantMetadata.socialLayer.carouselItems[0];
+  return null == s.labelIconAssetId ? {
+    primaryIconAsset: true,
+    primaryIconLabel: true
+  } : {
+    primaryIconAsset: null != (o = i.Z.toURLSafe((0, r._W)(t, s.labelIconAssetId, 512, "png"))) ? o : true,
+    primaryIconLabel: s.label
   }
 }

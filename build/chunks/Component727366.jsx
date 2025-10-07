@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 727366, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => o
+  t: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,22 +10,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk840724 = require("./840724.jsx"),
   Chunk180165 = require("./180165.js");
 
-function o(e) {
+function d(e) {
   let {
     applicationId: t,
     skuIds: n,
-    isWide: r,
-    guildId: o
+    variant: r = i.Z.SMALL,
+    guildId: d
   } = e;
   return null == n || 0 === n.length ? null : (0, a.jsx)("div", {
-    className: l()(d.container, d.cardGrid, {
-      [d.wideCardGrid]: r
+    className: l()(o.container, o.cardGrid, {
+      [o.mediumCardGrid]: r === i.Z.MEDIUM,
+      [o.largeCardGrid]: r === i.Z.LARGE
     }),
-    children: n.map((e, n) => (0, a.jsx)(i.Z, {
+    children: n.map((e, n) => (0, a.jsx)(i.C, {
       applicationId: t,
       skuId: e,
-      isWide: r,
-      guildId: o
+      variant: r,
+      guildId: d
     }, "".concat(e, "-").concat(n)))
   })
 }

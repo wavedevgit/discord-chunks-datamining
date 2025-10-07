@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk706898 = require("./706898.jsx");
+  Chunk793030 = require("./793030.js");
 let o = {
   title: "TabBar",
   stories: [{
@@ -23,12 +23,12 @@ let o = {
         id: "tab".concat(t + 1),
         name: "Tab ".concat(t + 1)
       }));
-      return (0, r.jsx)(a.n, {
+      return (0, r.jsx)(a.njP, {
         type: n,
         look: t,
         selectedItem: s,
         onItemSelect: l,
-        children: c.map(e => (0, r.jsx)(a.n.Item, {
+        children: c.map(e => (0, r.jsx)(a.njP.Item, {
           id: e.id,
           children: e.name
         }, e.id))

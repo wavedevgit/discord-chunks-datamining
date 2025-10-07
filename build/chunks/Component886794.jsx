@@ -75,7 +75,7 @@ function C(e) {
           component: (0, l.jsx)(r.nn4, {
             children: (0, l.jsx)(r.H, {
               id: G,
-              children: P.intl.format(P.t.KRe1Fh, {
+              children: T.intl.format(T.t.KRe1Fh, {
                 name: V
               })
             })
@@ -83,7 +83,7 @@ function C(e) {
           children: (0, l.jsxs)(b.Z, {
             user: t,
             displayProfile: F,
-            themeType: T.l.MODAL,
+            themeType: P.l.MODAL,
             ref: (null == F ? true : F.profileEffect) != null ? W : true,
             children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(I.Z, {
@@ -93,7 +93,7 @@ function C(e) {
               children: [(0, l.jsx)(x.Z, {
                 user: t,
                 displayProfile: F,
-                themeType: T.l.MODAL
+                themeType: P.l.MODAL
               }), (0, l.jsx)("div", {
                 className: A.headerInner,
                 children: (0, l.jsx)(f.Z, {
@@ -101,7 +101,7 @@ function C(e) {
                   displayProfile: F,
                   guildId: B,
                   channelId: _,
-                  themeType: T.l.MODAL
+                  themeType: P.l.MODAL
                 })
               })]
             }), (0, l.jsxs)("div", {
@@ -114,7 +114,7 @@ function C(e) {
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(h.Z, {
                   displayProfile: F,
-                  themeType: T.l.MODAL,
+                  themeType: P.l.MODAL,
                   onClose: U
                 })
               }), (0, l.jsxs)("div", {
@@ -127,10 +127,10 @@ function C(e) {
                   children: (0, l.jsx)(r.njP.Item, {
                     className: S.tabBarItem,
                     id: O.oh.BOT_INFO,
-                    "aria-label": P.intl.string(P.t.jGoPJS),
+                    "aria-label": T.intl.string(T.t.jGoPJS),
                     children: (0, l.jsx)(r.Text, {
                       variant: "text-sm/normal",
-                      children: P.intl.string(P.t.jGoPJS)
+                      children: T.intl.string(T.t.jGoPJS)
                     })
                   }, O.oh.BOT_INFO)
                 }), (0, l.jsxs)(r.zJl, {
@@ -141,7 +141,7 @@ function C(e) {
                     userBio: null == F ? true : F.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(g.Z, {
-                    heading: P.intl.string(P.t["A//N4u"]),
+                    heading: T.intl.string(T.t["A//N4u"]),
                     children: (0, l.jsx)(v.Z, {
                       userId: t.id,
                       guildId: B,

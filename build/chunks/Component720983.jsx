@@ -18,7 +18,7 @@ function s(e) {
     selectedPageIndex: r
   } = e;
   if (null == n) return null;
-  let s = null != n.logoAssetId ? (0, d._W)(n.applicationId, n.logoAssetId, 75) : null;
+  let s = null != n.logoAssetId ? (0, o._W)(n.applicationId, n.logoAssetId, 75) : null;
   return (0, a.jsxs)("div", {
     className: c.headerContainer,
     children: [(0, a.jsxs)("div", {
@@ -35,7 +35,7 @@ function s(e) {
       })]
     }), n.pages.map((e, n) => (0, a.jsx)(i.P3F, {
       onClick: () => {
-        (0, o.K)(t, n)
+        (0, d.K)(t, n)
       },
       className: l()(c.pageTitleContainer, {
         [c.selectedPageIndicator]: r === n

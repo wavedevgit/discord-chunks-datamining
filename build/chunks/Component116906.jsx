@@ -32,9 +32,9 @@ function O(e) {
     currentUser: t,
     guildId: O,
     subsection: N,
-    onClose: T
+    onClose: P
   } = e, {
-    voiceActivityStatusEnabled: P
+    voiceActivityStatusEnabled: T
   } = (0, o.U)({
     location: "UserProfileModalActivity"
   }), A = (0, u.b)({
@@ -52,7 +52,7 @@ function O(e) {
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, U = P && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
+  }), M = E.length > 0 || null != C, U = T && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
   return k || B || !D ? (0, l.jsxs)(r.zJl, {
     className: I.scroller,
     fade: true,
@@ -65,21 +65,21 @@ function O(e) {
             user: n,
             currentUser: t,
             voiceChannel: _,
-            onClose: T
+            onClose: P
           })
         }), null != C && (0, l.jsx)("li", {
           children: (0, l.jsx)(j.Z, {
             user: n,
             currentUser: t,
             stream: C,
-            onClose: T
+            onClose: P
           })
         }), E.map((e, i) => (0, l.jsx)("li", {
           children: (0, l.jsx)(h.Z, {
             user: n,
             currentUser: t,
             activity: e,
-            onClose: T
+            onClose: P
           })
         }, "live-".concat(i)))]
       })
@@ -98,7 +98,7 @@ function O(e) {
           children: (0, l.jsx)(x.Z, {
             user: n,
             entry: e,
-            onClose: T
+            onClose: P
           })
         }, e.id))
       })

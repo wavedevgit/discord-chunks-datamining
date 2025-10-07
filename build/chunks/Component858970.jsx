@@ -49,8 +49,8 @@ function Z(e) {
     channelId: Z,
     messageId: O,
     roleId: N,
-    transitionState: T,
-    openedAt: P,
+    transitionState: P,
+    openedAt: T,
     onHide: A,
     sourceAnalyticsLocations: E = []
   } = e, S = t === v.ME ? true : t, C = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), {
@@ -76,13 +76,13 @@ function Z(e) {
     value: _,
     children: (0, l.jsx)(u.Mt, {
       value: w,
-      openedAt: P,
+      openedAt: T,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
       isLoaded: null == R ? true : R.isLoaded,
       children: (0, l.jsx)(r.Y0X, {
         "data-migration-pending": true,
-        transitionState: T,
+        transitionState: P,
         className: y.root,
         "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",

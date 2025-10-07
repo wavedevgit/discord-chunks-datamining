@@ -32,9 +32,9 @@ function O(e) {
     currentUser: t,
     displayProfile: O,
     subsection: N,
-    onClose: T
+    onClose: P
   } = e, {
-    trackUserProfileAction: P
+    trackUserProfileAction: T
   } = (0, m.KZ)(), A = (0, i.e7)([d.Z], () => d.Z.getGuildId()), E = (0, s.Y)({
     userId: n.id
   }), S = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), _ = (0, f.Z)(n.id), w = (0, p.Z)(n.id);
@@ -87,9 +87,9 @@ function O(e) {
         applicationRoleConnection: e,
         locale: C,
         onApplicationClicked: () => {
-          P({
+          T({
             action: "PRESS_APP_CONNECTION"
-          }), T()
+          }), P()
         },
         selectedGuildId: null != A ? A : true
       }, e.application.id))
@@ -100,7 +100,7 @@ function O(e) {
         userId: n.id,
         className: Z.note,
         autoFocus: N === y.Tb.NOTE,
-        onUpdate: () => P({
+        onUpdate: () => T({
           action: "SET_NOTE"
         })
       })

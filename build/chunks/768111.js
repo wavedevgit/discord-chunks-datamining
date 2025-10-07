@@ -31,29 +31,29 @@ function j(e) {
     location: "useUserProfileModalV2TabBarItems"
   }), Z = (0, m.Z)(n.id), O = (0, o.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), N = (0, s.Z)(n.id), T = [], P = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), E = (null != A ? l.Z.getWishlistItems(A) : []).length > 0, S = Z.length > 0;
-  (P && y || S && I) && T.push({
+  }), N = (0, s.Z)(n.id), P = [], T = n.id === (null == t ? true : t.id), A = r.Z.getFirstWishlistId(n.id), E = (null != A ? l.Z.getWishlistItems(A) : []).length > 0, S = Z.length > 0;
+  (T && y || S && I) && P.push({
     text: x.intl.string(x.t.laViw8),
     section: h.oh.WIDGETS,
     subsection: true
-  }), T.push({
+  }), P.push({
     text: x.intl.string(x.t.chq59f),
     section: h.oh.ACTIVITY,
     subsection: true
   });
   let C = false === n.nsfwAllowed,
     _ = i.Z.isFriend(n.id);
-  return O && (P || E && N && (!C || C && _)) && T.push({
+  return O && (T || E && N && (!C || C && _)) && P.push({
     text: x.intl.string(x.t["7lZ31N"]),
     section: h.oh.WISHLIST,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && b && (T.push({
+  }), n.id !== (null == t ? true : t.id) && b && (P.push({
     text: (0, p.Z)(j),
     section: h.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), T.push({
+  }), P.push({
     text: (0, f.Z)(g),
     section: h.oh.MUTUAL_GUILDS,
     subsection: true
-  })), T
+  })), P
 }

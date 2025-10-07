@@ -10,7 +10,7 @@ let i = e => {
   let {
     skuId: t,
     applicationId: i,
-    guildId: d
+    guildId: o
   } = e;
   (0, r.ZDy)(async () => {
     let {
@@ -55,7 +55,7 @@ let i = e => {
     l.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_SELECT_SKU",
       skuId: t,
-      guildId: d
+      guildId: o
     })
   })
 }

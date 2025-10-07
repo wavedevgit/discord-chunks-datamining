@@ -132,13 +132,12 @@ function F(e) {
     k = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {
         className: j.sectionHeader,
-        variant: "eyebrow",
-        color: "header-secondary",
+        variant: "text-md/semibold",
         children: w
       }), true !== I.sectionDescription ? (0, r.jsx)(u.Text, {
         className: j.sectionDescription,
         variant: "text-md/medium",
-        color: "text-muted",
+        color: "text-tertiary",
         children: I.sectionDescription(null != s && s, R)
       }) : null]
     }), [w, I, s, R]);
@@ -280,8 +279,10 @@ let V = () => {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk37742.header,
           children: (0, Chunk951288.jsx)(W, {})
-        }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk37742.content,
+        }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 32,
+          padding: 32,
+          fullWidth: false,
           children: [(0, Chunk951288.jsx)("div", {
             className: module ? Chunk37742.activityCounterRowV2 : Chunk37742.activityCounterRow,
             children: exports.map(e => {
@@ -291,9 +292,9 @@ let V = () => {
                 header: n.tooltipHeader()
               }, "counter-".concat(t))
             })
-          }), module ? (0, Chunk951288.jsx)(Chunk448524.Z, {}) : null, (0, Chunk951288.jsx)("div", {
+          }), (0, Chunk951288.jsxs)("div", {
             className: Chunk37742.activityOverview,
-            children: require ? exports.map(e => {
+            children: [module ? (0, Chunk951288.jsx)(Chunk448524.Z, {}) : null, require ? exports.map(e => {
               let [t] = e;
               return (0, r.jsx)(F, {
                 displayType: t
@@ -301,7 +302,7 @@ let V = () => {
             }) : (0, Chunk951288.jsx)(Chunk895328.Z, {
               className: Chunk37742.emptyActivity,
               text: null != Chunk120356 ? Chunk120356 : ""
-            })
+            })]
           })]
         })]
       })]

@@ -30,10 +30,11 @@ let f = e => {
         className: d.descriptors,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
+          color: "interactive-active",
           children: c.ZP.getName(f)
         }), (0, r.jsx)(s.Text, {
-          variant: "text-xs/medium",
-          color: "text-muted",
+          variant: "text-sm/medium",
+          color: "text-secondary",
           children: n
         })]
       })

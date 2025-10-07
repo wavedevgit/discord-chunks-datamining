@@ -6,6 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
+  Chunk840724 = require("./840724.jsx"),
   Chunk727366 = require("./727366.jsx"),
   Chunk693965 = require("./693965.js");
 
@@ -14,21 +15,21 @@ function d(e) {
     applicationId: t,
     guildId: n,
     sectionTitle: d,
-    skuIds: o,
-    isWide: c
+    skuIds: c,
+    variant: s = l.Z.SMALL
   } = e;
-  return null == o || 0 === o.length ? null : (0, a.jsxs)("div", {
-    className: i.sectionContainer,
+  return null == c || 0 === c.length ? null : (0, a.jsxs)("div", {
+    className: o.sectionContainer,
     children: [null != d && (0, a.jsx)(r.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       lineClamp: 1,
-      className: i.sectionTitle,
+      className: o.sectionTitle,
       children: d
-    }), (0, a.jsx)(l.t, {
+    }), (0, a.jsx)(i.t, {
       applicationId: t,
-      skuIds: o,
-      isWide: c,
+      skuIds: c,
+      variant: s,
       guildId: n
     })]
   })

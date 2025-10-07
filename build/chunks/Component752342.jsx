@@ -48,7 +48,7 @@ function C(e) {
     openedAt: k,
     onClose: B,
     sourceAnalyticsLocations: F = []
-  } = e, V = C === P.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), K = (0, a.Dt)(), {
+  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), K = (0, a.Dt)(), {
     analyticsLocations: W
   } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
     layout: "MODAL",
@@ -155,7 +155,7 @@ function C(e) {
                 displayProfile: G,
                 guildId: V,
                 items: H,
-                initialSection: null != L ? L : T.oh.BOT_INFO,
+                initialSection: null != L ? L : P.oh.BOT_INFO,
                 initialSubsection: M,
                 onClose: B
               })]

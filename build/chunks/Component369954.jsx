@@ -2,7 +2,7 @@
 /** chunk id: 369954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => v
+  J: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,13 +28,16 @@ let y = e => {
       onButtonPress: i
     } = e;
     return (0, r.jsxs)(a.Kqy, {
+      padding: {
+        top: 12,
+        bottom: 12
+      },
       justify: "space-between",
       direction: "horizontal",
       align: "center",
       gap: 32,
       children: [(0, r.jsx)(a.xvT, {
-        variant: "text-sm/semibold",
-        color: "interactive-active",
+        variant: "text-md/medium",
         children: t
       }), (0, r.jsx)(o.zxk, {
         text: n,
@@ -45,6 +48,39 @@ let y = e => {
     })
   },
   O = () => {
+    let e = (0, Chunk631885.ZM)(),
+      t = () => {
+        (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
+          recipientIds: module
+        })
+      };
+    return (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+      justify: "space-between",
+      direction: "horizontal",
+      align: "center",
+      gap: 32,
+      children: [(0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+        direction: "vertical",
+        gap: 4,
+        children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+          variant: "text-sm/semibold",
+          children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
+        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+          variant: "text-md/medium",
+          color: "text-tertiary",
+          children: Chunk388032.intl.string(Chunk345909.default.X9rW0t)
+        })]
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        text: Chunk388032.intl.formatToPlainString(Chunk345909.default.ggcjPT, {
+          count: module.length
+        }),
+        onClick: exports,
+        variant: "secondary",
+        size: "sm"
+      })]
+    })
+  },
+  v = () => {
     let e = (0, Chunk780985.cz)(),
       t = (0, Chunk780985.$r)(),
       {
@@ -53,51 +89,39 @@ let y = e => {
     Chunk647438.useEffect(() => {
       (null == module ? true : module.id) != null && exports && Chunk260722.ZP.fetchTeenSettingsAndConsents(null == module ? true : module.id)
     }, [null == module ? true : module.id, exports]);
-    let a = e => {
+    let o = e => {
       n(e)
     };
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(y, {
+      children: [(0, Chunk951288.jsxs)(Chunk793030.Kqy, {
+        direction: "vertical",
+        gap: 4,
+        children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
+          variant: "text-sm/semibold",
+          children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
+        }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
+          variant: "text-md/medium",
+          color: "text-tertiary",
+          children: Chunk388032.intl.string(Chunk345909.default.Sv236e)
+        })]
+      }), (0, Chunk951288.jsx)(y, {
         title: Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
-        onButtonPress: () => Chunk793030(Chunk292352.dG.CONTENT_AND_SOCIAL)
+        onButtonPress: () => Chunk481060(Chunk292352.dG.CONTENT_AND_SOCIAL)
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
         className: Chunk271650.divider
       }), (0, Chunk951288.jsx)(y, {
         title: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
-        onButtonPress: () => Chunk793030(Chunk292352.dG.DATA_AND_PRIVACY)
+        onButtonPress: () => Chunk481060(Chunk292352.dG.DATA_AND_PRIVACY)
       })]
     })
   },
-  v = () => {
+  I = () => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.ZM)();
-    if (!(0, Chunk277537.PO)("settings-controls") || 0 === exports.length) return null;
-    let n = () => {
-      (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
-        recipientIds: exports
-      })
-    };
-    return (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
-      padding: {
-        top: 24
-      },
-      gap: 4,
+    return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk951288.jsx)("div", {
       className: Chunk271650.container,
-      children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
-        variant: "eyebrow",
-        color: "text-secondary",
-        children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
-      }), (0, Chunk951288.jsx)(Chunk793030.Kqy, {
-        gap: 8,
-        children: module ? (0, Chunk951288.jsx)(y, {
-          title: Chunk388032.intl.string(Chunk345909.default.X9rW0t),
-          buttonText: Chunk388032.intl.formatToPlainString(Chunk345909.default.w0JA3N, {
-            count: exports.length
-          }),
-          onButtonPress: require
-        }) : (0, Chunk951288.jsx)(O, {})
-      })]
-    })
+      children: module ? (0, Chunk951288.jsx)(O, {}) : (0, Chunk951288.jsx)(v, {})
+    }) : null
   }
