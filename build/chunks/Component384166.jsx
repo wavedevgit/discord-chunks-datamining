@@ -56,7 +56,7 @@ function O(e) {
   }, []), i.useEffect(() => {
     S && c.uvj.announce(j.intl.string(j.t["0Y/qkJ"]))
   }, [S]);
-  let N = i.useCallback(async () => {
+  let A = i.useCallback(async () => {
       try {
         await p.Z.savePendingWidgets(x)
       } catch (e) {
@@ -81,7 +81,7 @@ function O(e) {
         isWidgetRemoved: true
       })
     }, [x, P, I, n]),
-    A = i.useCallback(() => {
+    N = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
   return T((e, n) => n ? (0, r.jsx)(s.animated.div, {
@@ -103,13 +103,13 @@ function O(e) {
           size: "sm",
           variant: "secondary",
           text: j.intl.string(j.t.yBZMsb),
-          onClick: A,
+          onClick: N,
           disabled: !S || w
         }), (0, r.jsx)(c.zxk, {
           size: "sm",
           variant: "primary",
           text: j.intl.string(j.t.R3BPHx),
-          onClick: N,
+          onClick: A,
           loading: w,
           disabled: !S || w
         })]

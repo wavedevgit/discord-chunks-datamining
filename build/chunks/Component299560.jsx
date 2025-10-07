@@ -105,7 +105,7 @@ function P(e) {
           })
       }
     }, [n, null == E ? true : E.application_id]),
-    N = i.useCallback(() => {
+    A = i.useCallback(() => {
       d || null == T || ((0, p.qH)(n, T), b({
         action: "WIDGET_ADDED",
         widgetEdited: n
@@ -115,7 +115,7 @@ function P(e) {
     className: O.addButtonContainer,
     children: [(0, r.jsxs)(o.P3F, {
       className: a()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
-      onClick: N,
+      onClick: A,
       "aria-label": I(T),
       "aria-busy": d,
       children: [(() => {

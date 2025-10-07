@@ -72,29 +72,29 @@ function S(e) {
     }
   }), {
     analyticsLocations: E
-  } = (0, u.ZP)(), T = (null == S ? true : S.id) === t.id, N = false === t.nsfwAllowed, [A, k] = i.useState(true);
+  } = (0, u.ZP)(), T = (null == S ? true : S.id) === t.id, A = false === t.nsfwAllowed, [N, C] = i.useState(true);
   i.useEffect(() => {
-    (null == w ? true : w.visibility) != null && k(w.visibility === l.f.PUBLIC)
+    (null == w ? true : w.visibility) != null && C(w.visibility === l.f.PUBLIC)
   }, [null == w ? true : w.visibility]);
   let {
-    wishlist: C,
-    error: Z
-  } = (0, g.k)(n), D = i.useCallback(() => {
+    wishlist: k,
+    error: D
+  } = (0, g.k)(n), Z = i.useCallback(() => {
     if (null == n) return;
-    let e = A ? l.f.PRIVATE : l.f.PUBLIC;
-    k(!A), f.Z.updateWishlistVisibility(n, e), (0, h.Er)({
+    let e = N ? l.f.PRIVATE : l.f.PUBLIC;
+    C(!N), f.Z.updateWishlistVisibility(n, e), (0, h.Er)({
       wishlistId: n,
-      action: A ? b.NW.WISHLIST_TOGGLE_PRIVATE : b.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: N ? b.NW.WISHLIST_TOGGLE_PRIVATE : b.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: E
     })
-  }, [n, A, E]), _ = i.useCallback(() => {
+  }, [n, N, E]), _ = i.useCallback(() => {
     (0, s.pT)(), (0, d.mK)({
       analyticsLocations: E,
       analyticsSource: c.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
   }, [E]);
-  return null != Z ? null : null == C || 0 === C.items.length ? (0, r.jsx)(v.F, {
+  return null != D ? null : null == k || 0 === k.items.length ? (0, r.jsx)(v.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: x.emptyStateContainer,
@@ -128,9 +128,9 @@ function S(e) {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: O.intl.format(O.t.r6Y1Li, {
-            count: C.items.length
+            count: k.items.length
           })
-        }), !A && (0, r.jsx)(o.ua7, {
+        }), !N && (0, r.jsx)(o.ua7, {
           text: O.intl.string(O.t.RX7D9v),
           children: e => (0, r.jsx)(o.tEY, {
             children: (0, r.jsx)("div", I(P({
@@ -144,7 +144,7 @@ function S(e) {
               })
             }))
           })
-        }), A && N && (0, r.jsx)(o.ua7, {
+        }), N && A && (0, r.jsx)(o.ua7, {
           text: O.intl.string(O.t.d78ChY),
           children: e => (0, r.jsx)(o.tEY, {
             children: (0, r.jsx)("div", I(P({
@@ -169,8 +169,8 @@ function S(e) {
           onClick: _
         }), (0, r.jsx)(j.Z, {
           isOwner: T,
-          isWishlistPublic: A,
-          onToggleVisibility: D
+          isWishlistPublic: N,
+          onToggleVisibility: Z
         })]
       }) : (0, r.jsx)(o.zxk, {
         variant: "secondary",
@@ -180,7 +180,7 @@ function S(e) {
         onClick: _
       })]
     }), (0, r.jsx)(y.Z, {
-      items: C.items,
+      items: k.items,
       profileOwner: t,
       isOwner: T
     })]

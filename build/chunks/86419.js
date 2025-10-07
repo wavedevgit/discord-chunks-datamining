@@ -138,8 +138,9 @@ function w(e) {
 }
 
 function D(e, t) {
-  let n = R();
-  null == n.find(t => t.type === e) && u.Z.setPendingWidgets([...n, t])
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    r = R();
+  null == r.find(t => t.type === e) && (n ? u.Z.setPendingWidgets([t, ...r]) : u.Z.setPendingWidgets([...r, t]))
 }
 
 function L(e) {

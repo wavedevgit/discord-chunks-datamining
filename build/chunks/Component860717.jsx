@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => z
+  Z: () => V
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
+  Chunk20471 = require("./20471.js"),
   Chunk812206 = require("./812206.js"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
@@ -29,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk18827 = require("./18827.js");
 
-function T(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +62,7 @@ function N(e, t) {
   }), e
 }
 
-function A(e) {
+function C(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
@@ -89,40 +90,40 @@ function k(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(D, N(T({}, i), {
+      return (0, r.jsx)(_, N(A({}, i), {
         body: Z(n)
       }));
     case "GRID":
-      return (0, r.jsx)(_, {
+      return (0, r.jsx)(L, {
         children: Z(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(L, {
-        value: C(t.value),
-        name: C(t.name)
+      return (0, r.jsx)(R, {
+        value: D(t.value),
+        name: D(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(R, T({}, t));
+      return (0, r.jsx)(G, A({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(G, T({}, t));
+      return (0, r.jsx)(U, A({}, t));
     case "SEPARATOR":
-      return (0, r.jsx)(U, T({}, t));
+      return (0, r.jsx)(M, A({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(M, {})
+      return (0, r.jsx)(W, {})
   }
 }
 
-function C(e, t) {
+function D(e, t) {
   return (0, r.jsx)(k, {
     component: e
   }, t)
 }
 
 function Z(e) {
-  return e.map((e, t) => C(e, t))
+  return e.map((e, t) => D(e, t))
 }
 
-function D(e) {
+function _(e) {
   let {
     title: t,
     body: n,
@@ -130,53 +131,53 @@ function D(e) {
     imagePlaceholder: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: E.heroSection,
+    className: T.heroSection,
     children: [(0, r.jsxs)("div", {
-      className: E.heroBody,
+      className: T.heroBody,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-lg/medium",
-        className: E.heroTitle,
+        className: T.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
-          className: E.textPlaceholder
+          className: T.textPlaceholder
         })
-      }), (0, r.jsx)(m.U, {
+      }), (0, r.jsx)(v.U, {
         color: "muted",
         children: n
       })]
-    }), A(i) ? (0, r.jsx)("div", {
-      className: E.heroImageContainer,
-      children: (0, r.jsx)(b.ZP, {
+    }), C(i) ? (0, r.jsx)("div", {
+      className: T.heroImageContainer,
+      children: (0, r.jsx)(O.ZP, {
         src: i.proxyUrl,
         alt: "",
         width: i.width,
         height: i.height,
         responsive: true,
-        className: E.heroImage
+        className: T.heroImage
       })
     }) : null != l ? (0, r.jsx)("div", {
-      className: E.heroImageContainer,
+      className: T.heroImageContainer,
       children: (0, r.jsx)("img", {
         src: l,
         alt: "",
-        className: E.heroImage
+        className: T.heroImage
       })
     }) : (0, r.jsx)("div", {
-      className: E.heroImagePlaceholder
+      className: T.heroImagePlaceholder
     })]
   })
 }
 
-function _(e) {
+function L(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: E.grid,
+    className: T.grid,
     children: t
   })
 }
 
-function L(e) {
+function R(e) {
   let {
     name: t,
     value: n
@@ -186,27 +187,27 @@ function L(e) {
   })
 }
 
-function R(e) {
+function G(e) {
   let {
     content: t
-  } = e, n = i.useId(), l = (0, m._)();
-  return null != t ? (0, r.jsx)(y.Z, {
+  } = e, n = i.useId(), l = (0, v._)();
+  return null != t ? (0, r.jsx)(j.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
   }) : (0, r.jsx)("div", {
-    className: a()(E.textPlaceholder, l.className)
+    className: a()(T.textPlaceholder, l.className)
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     content: t,
     image: n,
     imagePosition: i
-  } = e, l = (0, m._)(), s = A(n) ? (0, r.jsx)("div", {
-    className: a()(E.image, l.className),
-    children: (0, r.jsx)(b.ZP, {
+  } = e, l = (0, v._)(), s = C(n) ? (0, r.jsx)("div", {
+    className: a()(T.image, l.className),
+    children: (0, r.jsx)(O.ZP, {
       src: n.proxyUrl,
       alt: "",
       width: n.width,
@@ -214,22 +215,22 @@ function G(e) {
       responsive: true
     })
   }) : (0, r.jsx)("div", {
-    className: a()(E.imagePlaceholder, l.className)
+    className: a()(T.imagePlaceholder, l.className)
   });
   return (0, r.jsxs)("div", {
-    className: E.textWithImage,
-    children: ["left" === i ? s : null, (0, r.jsx)(R, {
+    className: T.textWithImage,
+    children: ["left" === i ? s : null, (0, r.jsx)(G, {
       content: t
     }), "right" === i ? s : null]
   })
 }
 
-function U(e) {
+function M(e) {
   let {
     size: t = "small",
     divider: n = false
   } = e, l = i.useId();
-  return (0, r.jsx)(v.Z, {
+  return (0, r.jsx)(y.Z, {
     type: u.re.SEPARATOR,
     id: l,
     divider: n,
@@ -237,15 +238,15 @@ function U(e) {
   })
 }
 
-function M() {
+function W() {
   let e = function() {
-      let e = Chunk647438.useContext(W);
+      let e = Chunk647438.useContext(F);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = F(module.widget);
+    } = B(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -253,33 +254,33 @@ function M() {
     channelId: module.channelId
   })
 }
-let W = Chunk647438.createContext(null);
+let F = Chunk647438.createContext(null);
 
-function F(e) {
-  return (0, s.cj)([d.Z, P.Z, x.Z], () => {
-    let t = d.Z.getApplication(e.applicationId);
+function B(e) {
+  return (0, s.cj)([f.Z, I.Z, P.Z], () => {
+    let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
-      game: null != t ? x.Z.getGameByApplication(t) : null,
-      config: P.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+      game: null != t ? P.Z.getGameByApplication(t) : null,
+      config: I.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
 }
 
-function B(e) {
+function z(e) {
   let {
     children: t,
     widget: n
   } = e;
-  return (0, r.jsx)(h.am.Root, {
+  return (0, r.jsx)(m.am.Root, {
     containerInnerWidth: 396,
-    children: (0, r.jsx)(p.Il, {
+    children: (0, r.jsx)(h.Il, {
       applicationWidget: n,
-      children: (0, r.jsx)(m.U, {
+      children: (0, r.jsx)(v.U, {
         size: "reduced",
         weight: "reduced",
         children: (0, r.jsx)("div", {
-          className: E.container,
+          className: T.container,
           children: t
         })
       })
@@ -287,63 +288,96 @@ function B(e) {
   })
 }
 
-function z(e) {
+function H(e) {
+  return (0, r.jsxs)(c.Kqy, {
+    direction: "horizontal",
+    gap: 24,
+    padding: 16,
+    fullWidth: false,
+    className: T.cta,
+    children: [(0, r.jsxs)(c.Kqy, {
+      gap: 4,
+      children: [(0, r.jsx)(c.X6q, {
+        variant: "heading-sm/medium",
+        color: "text-default",
+        children: e.heading
+      }), (0, r.jsx)(c.Text, {
+        variant: "text-xs/normal",
+        color: "header-secondary",
+        children: e.content
+      })]
+    }), (0, r.jsx)(c.Kqy, {
+      direction: "horizontal",
+      gap: 12,
+      align: "center",
+      justify: "end",
+      fullWidth: false,
+      children: e.buttons
+    })]
+  })
+}
+let V = Object.assign(function(e) {
   var t, n, i;
   let {
     user: l,
     widget: s,
     containerClassName: u,
-    cta: d
+    cta: f
   } = e, {
-    application: p,
-    game: h,
-    config: m
-  } = F(s), v = null == p ? true : p.getIconURL(16), y = (0, O.O)(l.id).data, b = null == y ? true : y.find(e => e.application_id === s.applicationId), x = null == b || null == (n = b.profile) || null == (t = n.data) ? true : t.primary, P = (0, g.Z)({
+    application: h,
+    game: m,
+    config: v
+  } = B(s), y = null == h ? true : h.getIconURL(16), j = (0, x.O)(l.id).data, O = null == j ? true : j.find(e => e.application_id === s.applicationId), P = null == O || null == (n = O.profile) || null == (t = n.data) ? true : t.primary, I = (0, p.Z)({
     location: "UserProfileApplicationWidget",
-    applicationId: null == h ? true : h.id,
-    source: f.m1.UserProfile,
+    applicationId: null == m ? true : m.id,
+    source: g.m1.UserProfile,
     sourceUserId: l.id,
     trackEntryPointImpression: true
-  }), S = (0, r.jsxs)(r.Fragment, {
-    children: [null != v ? (0, r.jsx)("img", {
-      className: E.appIcon,
-      src: v,
+  }), {
+    loading: w,
+    hasAlreadyLinked: C,
+    canStartAuthorization: D,
+    startAuthorization: Z
+  } = (0, d.FG)(h), _ = null == f && !w && !C && D, L = (0, r.jsxs)(r.Fragment, {
+    children: [null != y ? (0, r.jsx)("img", {
+      className: T.appIcon,
+      src: y,
       width: 16,
       height: 16,
       alt: ""
     }) : (0, r.jsx)("span", {
-      className: E.appIconPlaceholder
+      className: T.appIconPlaceholder
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
-      children: (null == p ? true : p.name) != null ? p.name : (0, r.jsx)("div", {
-        className: E.textPlaceholder
+      children: (null == h ? true : h.name) != null ? h.name : (0, r.jsx)("div", {
+        className: T.textPlaceholder
       })
     })]
-  }), A = null == h ? (0, r.jsx)("div", {
-    className: E.header,
-    children: S
+  }), R = null == m ? (0, r.jsx)("div", {
+    className: T.header,
+    children: L
   }) : (0, r.jsx)(o.u, {
     asContainer: true,
-    text: w.intl.string(w.t.ajHoOj),
+    text: E.intl.string(E.t.ajHoOj),
     children: (0, r.jsx)(c.P3F, {
-      className: a()(E.header, E.headerClickable),
-      onClick: P,
-      "aria-label": w.intl.string(w.t.ajHoOj),
-      children: S
+      className: a()(T.header, T.headerClickable),
+      onClick: I,
+      "aria-label": E.intl.string(E.t.ajHoOj),
+      children: L
     })
-  }), C = [{
+  }), G = [{
     type: "HERO",
-    title: null == b || null == (i = b.profile) ? true : i.username,
-    image: (null == x ? true : x.featured_played_character_image) != null ? (0, j.ym)(x.featured_played_character_image) : null,
-    imagePlaceholder: null == m ? true : m.hero_placeholder_image,
+    title: null == O || null == (i = O.profile) ? true : i.username,
+    image: (null == P ? true : P.featured_played_character_image) != null ? (0, b.ym)(P.featured_played_character_image) : null,
+    imagePlaceholder: null == v ? true : v.hero_placeholder_image,
     body: [{
       type: "TEXT_WITH_IMAGE",
-      content: (null == x ? true : x.highest_rank) != null ? null == x ? true : x.highest_rank : true,
-      image: (null == x ? true : x.highest_rank_image) != null ? (0, j.ym)(x.highest_rank_image) : true,
+      content: (null == P ? true : P.highest_rank) != null ? null == P ? true : P.highest_rank : true,
+      image: (null == P ? true : P.highest_rank_image) != null ? (0, b.ym)(P.highest_rank_image) : true,
       imagePosition: "right"
     }, {
       type: "TEXT",
-      content: (null == x ? true : x.featured_played_character) != null ? "Top Hero: ".concat(null == x ? true : x.featured_played_character) : true
+      content: (null == P ? true : P.featured_played_character) != null ? "Top Hero: ".concat(null == P ? true : P.featured_played_character) : true
     }]
   }, {
     type: "SEPARATOR",
@@ -357,8 +391,8 @@ function z(e) {
       type: "FIELD",
       value: {
         type: "TEXT_WITH_IMAGE",
-        content: (null == x ? true : x.rank_name) != null ? "**".concat(null == x ? true : x.rank_name, "**") : true,
-        image: (null == x ? true : x.rank_image) != null ? (0, j.ym)(x.rank_image) : true,
+        content: (null == P ? true : P.rank_name) != null ? "**".concat(null == P ? true : P.rank_name, "**") : true,
+        image: (null == P ? true : P.rank_image) != null ? (0, b.ym)(P.rank_image) : true,
         imagePosition: "right"
       },
       name: {
@@ -369,7 +403,7 @@ function z(e) {
       type: "FIELD",
       value: {
         type: "TEXT",
-        content: (null == x ? true : x.playtime_hours) != null ? "**".concat(x.playtime_hours.toLocaleString(), " Hours**") : true
+        content: (null == P ? true : P.playtime_hours) != null ? "**".concat(P.playtime_hours.toLocaleString(), " Hours**") : true
       },
       name: {
         type: "TEXT",
@@ -379,7 +413,7 @@ function z(e) {
       type: "FIELD",
       value: {
         type: "TEXT",
-        content: (null == x ? true : x.total_games) != null ? "**".concat(x.total_games.toLocaleString(), "**") : true
+        content: (null == P ? true : P.total_games) != null ? "**".concat(P.total_games.toLocaleString(), "**") : true
       },
       name: {
         type: "TEXT",
@@ -398,7 +432,7 @@ function z(e) {
       type: "FIELD",
       value: {
         type: "TEXT",
-        content: (null == x ? true : x.total_wins) != null ? "**".concat(x.total_wins.toLocaleString(), "**") : true
+        content: (null == P ? true : P.total_wins) != null ? "**".concat(P.total_wins.toLocaleString(), "**") : true
       },
       name: {
         type: "TEXT",
@@ -408,7 +442,7 @@ function z(e) {
       type: "FIELD",
       value: {
         type: "TEXT",
-        content: (null == x ? true : x.total_kills) != null ? "**".concat(x.total_kills.toLocaleString(), "**") : true
+        content: (null == P ? true : P.total_kills) != null ? "**".concat(P.total_kills.toLocaleString(), "**") : true
       },
       name: {
         type: "TEXT",
@@ -418,7 +452,7 @@ function z(e) {
       type: "FIELD",
       value: {
         type: "TEXT",
-        content: (null == x ? true : x.total_assists) != null ? "**".concat(x.total_assists.toLocaleString(), "**") : true
+        content: (null == P ? true : P.total_assists) != null ? "**".concat(P.total_assists.toLocaleString(), "**") : true
       },
       name: {
         type: "TEXT",
@@ -426,37 +460,46 @@ function z(e) {
       }
     }]
   }];
-  return (0, r.jsxs)(I.Z, N(T({}, e), {
+  return (0, r.jsxs)(S.Z, N(A({}, e), {
     userId: l.id,
     widget: s,
-    className: a()(u, E.widgetContainer),
-    headerTitle: A,
-    dragHandleAdditionalMenuItems: null != h ? (0, r.jsx)(c.sNh, {
+    className: a()(u, T.widgetContainer),
+    headerTitle: R,
+    dragHandleAdditionalMenuItems: null != m ? (0, r.jsx)(c.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: c.iWm,
-      action: P
+      action: I
     }) : null,
-    children: [(0, r.jsx)(W.Provider, {
+    children: [(0, r.jsx)(F.Provider, {
       value: e,
-      children: (0, r.jsx)(B, {
+      children: (0, r.jsx)(z, {
         widget: s,
         children: (0, r.jsx)(k, {
-          component: C
+          component: G
         })
       })
     }), (0, r.jsxs)("div", {
-      className: E.footer,
-      children: [null == b ? (0, r.jsxs)("div", {
-        className: E.stillSyncing,
+      className: T.footer,
+      children: [null != O || _ ? null : (0, r.jsxs)("div", {
+        className: T.stillSyncing,
         children: [(0, r.jsx)(c.wGF, {
           size: "xxs"
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: w.intl.string(w.t.z5K4Ul)
+          children: E.intl.string(E.t.z5K4Ul)
         })]
-      }) : null, d]
+      }), _ ? (0, r.jsx)(H, {
+        heading: E.intl.string(E.t.UDPRLC),
+        content: E.intl.string(E.t["OW/2am"]),
+        buttons: (0, r.jsx)(c.zxk, {
+          text: E.intl.string(E.t.S0W8Z2),
+          onClick: Z
+        })
+      }) : f]
     })]
   }))
-}
+}, {
+  Cta: H
+})

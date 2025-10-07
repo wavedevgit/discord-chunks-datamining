@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => A
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,17 +31,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk158069 = require("./158069.js");
 
-function N(e) {
+function A(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: N,
-    guildId: A,
-    channelId: k,
-    subsection: C,
-    onClose: Z
+    displayProfile: A,
+    guildId: N,
+    channelId: C,
+    subsection: k,
+    onClose: D
   } = e, {
-    voiceActivityStatusEnabled: D
+    voiceActivityStatusEnabled: Z
   } = (0, s.U)({
     location: "UserProfileModalV2Activity"
   }), _ = (0, p.b)({
@@ -55,11 +55,11 @@ function N(e) {
     voiceActivity: W
   } = (0, m.Z)({
     userId: t.id,
-    guildId: A
+    guildId: N
   }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = R.length > 0 || null != U, V = D && null == U && null == W && null != M, Y = !z && (H || V), q = G.length > 0, K = R.some(e => (0, a.Z)(e));
+  }), H = R.length > 0 || null != U, V = Z && null == U && null == W && null != M, Y = !z && (H || V), q = G.length > 0, K = R.some(e => (0, a.Z)(e));
   if (!Y && !q && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
@@ -78,12 +78,12 @@ function N(e) {
   if (!Y && !q && !F) {
     var X;
     return B ? (0, r.jsx)(x.Uf, {
-      onClose: Z
+      onClose: D
     }) : (0, r.jsx)(x.P9, {
       user: t,
-      guildId: null != (X = null == N ? true : N.guildId) ? X : A,
-      channelId: k,
-      onClose: Z
+      guildId: null != (X = null == A ? true : A.guildId) ? X : N,
+      channelId: C,
+      onClose: D
     })
   }
   return (0, r.jsxs)(I.F, {
@@ -104,28 +104,28 @@ function N(e) {
               user: t,
               currentUser: n,
               voiceChannel: M,
-              onClose: Z
+              onClose: D
             })
           }), null != U && (0, r.jsx)("li", {
             children: (0, r.jsx)(b.Z, {
               user: t,
               currentUser: n,
               stream: U,
-              onClose: Z
+              onClose: D
             })
           }), R.map((e, i) => (0, r.jsx)("li", {
             children: (0, r.jsx)(y.Z, {
               user: t,
               currentUser: n,
               activity: e,
-              onClose: Z
+              onClose: D
             })
           }, "live-".concat(i))), _ && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
-              onClose: Z
+              onClose: D
             })
           })]
         })
@@ -143,14 +143,14 @@ function N(e) {
           children: e
         }, t)
       }) : true,
-      scrollIntoView: C === S.Tb.RECENT_ACTIVITY,
+      scrollIntoView: k === S.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: T.cards,
         children: G.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             user: t,
             entry: e,
-            onClose: Z
+            onClose: D
           })
         }, e.id))
       })

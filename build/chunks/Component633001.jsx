@@ -93,7 +93,7 @@ let X = {
         width: 100,
         height: 100
       }
-    }, k.Z.getWidgetDefaultSettings(z.Odu.CLICK_ZONE_DEBUG)), {
+    }, I.Z.getWidgetDefaultSettings(z.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => Y(q({
@@ -109,7 +109,7 @@ let X = {
         width: "auto",
         height: "auto"
       }
-    }, k.Z.getWidgetDefaultSettings(z.Odu.PERFORMANCE_DEBUG)), {
+    }, I.Z.getWidgetDefaultSettings(z.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -140,7 +140,7 @@ function Q(e) {
 let $ = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
-    } = e, n = (0, d.e7)([v.ZP], () => v.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([I.Z], () => I.Z.getGameForPID(t.pid)), i = (0, d.e7)([v.ZP], () => null == n ? null : v.ZP.getGameOverlayStatus(n));
+    } = e, n = (0, d.e7)([v.ZP], () => v.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([k.Z], () => k.Z.getGameForPID(t.pid)), i = (0, d.e7)([v.ZP], () => null == n ? null : v.ZP.getGameOverlayStatus(n));
     return (0, a.jsxs)("div", {
       className: W.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -303,7 +303,7 @@ let $ = Chunk647438.memo(function(e) {
   });
 
 function et(e) {
-  let t, n = (t = Object.values((0, d.Wu)([k.Z], () => k.Z.getWidgetsForLayout(V.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([I.Z], () => I.Z.getWidgetsForLayout(V.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, h.E9)(n.id);
     else {
@@ -1023,8 +1023,8 @@ function e_() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [Chunk837268, Chunk765250, Chunk755721, o, Chunk371651]), [P, k] = Chunk647438.useState(Chunk886118), [I, w] = Chunk647438.useState(null), A = Chunk647438.useMemo(() => Chunk837268.find(e => e.key === I), [Chunk837268, Chunk449224]), Z = Chunk647438.useCallback(e => {
-    k(e)
+  }), [Chunk837268, Chunk765250, Chunk755721, o, Chunk371651]), [P, I] = Chunk647438.useState(Chunk886118), [k, w] = Chunk647438.useState(null), A = Chunk647438.useMemo(() => Chunk837268.find(e => e.key === k), [Chunk837268, Chunk449224]), Z = Chunk647438.useCallback(e => {
+    I(e)
   }, []), {
     renderSelectedTab: L
   } = (0, Chunk621060.ZP)({

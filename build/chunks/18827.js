@@ -20,5 +20,6 @@ module.exports = {
   imagePlaceholder: "imagePlaceholder__0ea1a",
   socialProof: "socialProof__0ea1a",
   stillSyncing: "stillSyncing__0ea1a",
-  footer: "footer__0ea1a"
+  footer: "footer__0ea1a",
+  cta: "cta__0ea1a"
 }
