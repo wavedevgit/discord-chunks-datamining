@@ -22,24 +22,24 @@ let p = e => {
   i.useEffect(() => {
     null != f && g(true)
   }, [f]);
-  let h = i.useRef(false);
+  let b = i.useRef(false);
   i.useEffect(() => {
-    h.current || (a.Z.fetch(), h.current = true)
+    b.current || (a.Z.fetch(), b.current = true)
   }, []);
-  let b = (0, l.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
+  let h = (0, l.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
     x = i.useCallback(() => {
       if (g(false), c.ZP.trackWithMetadata(_.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
         }), null == f) return;
       a.Z.delete(f.id);
-      let e = b.get(t.id);
+      let e = h.get(t.id);
       null != e && s.Z.leaveActivity({
         location: e.location,
         applicationId: t.id,
         showFeedback: false
       })
-    }, [t.id, f, b, n]);
+    }, [t.id, f, h, n]);
   return null == t ? null : (0, r.jsx)(d.JZ, {
     title: m.intl.string(m.t.ygG62N),
     description: m.intl.string(m.t.S51EKi),

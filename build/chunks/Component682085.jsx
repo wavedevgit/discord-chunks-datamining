@@ -70,16 +70,16 @@ function w() {
       token: N,
       loading: A
     } = (0, Chunk491662.o)(null == T ? true : T.application_id),
-    C = Chunk647438.useMemo(() => (null == T ? true : T.application_id) != null ? new Chunk931847.q({
+    k = Chunk647438.useMemo(() => (null == T ? true : T.application_id) != null ? new Chunk931847.q({
       type: Chunk296009.l.APPLICATION,
       applicationId: T.application_id
     }) : null, [null == T ? true : T.application_id]),
-    k = Chunk647438.useCallback(() => {
-      null != C && ((0, Chunk86419.qH)(C.type, C), exports({
+    C = Chunk647438.useCallback(() => {
+      null != k && ((0, Chunk86419.qH)(k.type, k), exports({
         action: "WIDGET_ADDED",
-        widgetEdited: C.type
+        widgetEdited: k.type
       }), (0, Chunk872269.L$)(Chunk228168.qb.WIDGET_ADDED))
-    }, [C, exports]),
+    }, [k, exports]),
     Z = Chunk647438.useCallback(() => {
       exports({
         action: "PRESS_ADD_WIDGET"
@@ -94,7 +94,7 @@ function w() {
         stackingBehavior: "stack"
       })
     }, [exports]);
-  if (null == module || null == w || null == C || A) return (0, Chunk951288.jsx)("div", {
+  if (null == module || null == w || null == k || A) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
@@ -131,7 +131,7 @@ function w() {
               size: 32
             }), D, (0, r.jsx)(m.Z, {
               user: e,
-              widget: C,
+              widget: k,
               cta: (0, r.jsx)(E, {
                 heading: x.intl.format(x.t.OIzLCw, {
                   applicationName: w.name
@@ -161,7 +161,7 @@ function w() {
                         applicationName: w.name
                       }),
                       onClick: () => {
-                        i(O.L.TAKE_ACTION), k()
+                        i(O.L.TAKE_ACTION), C()
                       }
                     }))
                   })]

@@ -2,7 +2,7 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => w,
+  F3: () => P,
   J0: () => b,
   NW: () => c,
   OV: () => o,
@@ -20,7 +20,6 @@ require.d(exports, {
   lj: () => v,
   mB: () => m,
   o4: () => s,
-  pN: () => P,
   qA: () => E,
   tU: () => S,
   td: () => _
@@ -391,12 +390,6 @@ function R(e) {
   })
 }
 
-function P(e) {
-  return N.useExperiment({
-    location: e
-  })
-}
-
-function w() {
+function P() {
   v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), R("OVERLAY_INITIALIZED")
 }

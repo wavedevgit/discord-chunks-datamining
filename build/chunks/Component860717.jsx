@@ -65,7 +65,7 @@ function A(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
-function C(e) {
+function k(e) {
   let {
     component: t
   } = e;
@@ -98,28 +98,28 @@ function C(e) {
       });
     case "FIELD":
       return (0, r.jsx)(L, {
-        value: k(t.value),
-        name: k(t.name)
+        value: C(t.value),
+        name: C(t.name)
       });
     case "TEXT":
       return (0, r.jsx)(R, T({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(U, T({}, t));
-    case "SEPARATOR":
       return (0, r.jsx)(G, T({}, t));
+    case "SEPARATOR":
+      return (0, r.jsx)(U, T({}, t));
     case "SOCIAL_PROOF":
       return (0, r.jsx)(M, {})
   }
 }
 
-function k(e, t) {
-  return (0, r.jsx)(C, {
+function C(e, t) {
+  return (0, r.jsx)(k, {
     component: e
   }, t)
 }
 
 function Z(e) {
-  return e.map((e, t) => k(e, t))
+  return e.map((e, t) => C(e, t))
 }
 
 function D(e) {
@@ -199,7 +199,7 @@ function R(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     content: t,
     image: n,
@@ -224,7 +224,7 @@ function U(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     size: t = "small",
     divider: n = false
@@ -331,7 +331,7 @@ function z(e) {
       "aria-label": w.intl.string(w.t.ajHoOj),
       children: S
     })
-  }), k = [{
+  }), C = [{
     type: "HERO",
     title: null == b || null == (i = b.profile) ? true : i.username,
     image: (null == x ? true : x.featured_played_character_image) != null ? (0, j.ym)(x.featured_played_character_image) : null,
@@ -441,8 +441,8 @@ function z(e) {
       value: e,
       children: (0, r.jsx)(B, {
         widget: s,
-        children: (0, r.jsx)(C, {
-          component: k
+        children: (0, r.jsx)(k, {
+          component: C
         })
       })
     }), (0, r.jsxs)("div", {

@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function k(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -73,9 +73,9 @@ function D(e) {
   var {
     widget: t
   } = e, n = Z(e, ["widget"]);
-  return t instanceof p.q ? (0, r.jsx)(x.Z, k({
+  return t instanceof p.q ? (0, r.jsx)(x.Z, C({
     widget: t
-  }, n)) : t instanceof h.zy ? (0, r.jsx)(S.Z, k({
+  }, n)) : t instanceof h.zy ? (0, r.jsx)(S.Z, C({
     widget: t
   }, n)) : null
 }
@@ -112,11 +112,11 @@ function L(e) {
   (0, j.s)(E);
   let {
     data: A,
-    refetch: C
-  } = (0, d.O)(T), k = i.useRef(A);
-  if (k.current = A, i.useEffect(() => {
-      null !== k.current && C()
-    }, [C]), I)
+    refetch: k
+  } = (0, d.O)(T), C = i.useRef(A);
+  if (C.current = A, i.useEffect(() => {
+      null !== C.current && k()
+    }, [k]), I)
     if (x) return (0, r.jsx)(w.Z, {});
     else return (0, r.jsx)(N.Z, {});
   return (0, r.jsxs)(r.Fragment, {
@@ -142,13 +142,13 @@ function R(e) {
   return (0, r.jsxs)(T.F, {
     "data-scroller": true,
     scrollerRef: l,
-    className: a()(C.scroller, {
-      [C.hasToolbar]: s
+    className: a()(k.scroller, {
+      [k.hasToolbar]: s
     }),
     fade: true,
     children: [(0, r.jsx)(I.Z, {
       scrollerRef: l
-    }), (0, r.jsx)(L, k({
+    }), (0, r.jsx)(L, C({
       user: t
     }, n))]
   })

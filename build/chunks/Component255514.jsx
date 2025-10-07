@@ -106,7 +106,7 @@ let ee = e => {
     multiSelect: el,
     reportId: ea,
     textInput: eo
-  } = e, es = Y(t, "checkbox"), ec = Y(t, "text_line_resource"), ed = $(t, "external_link"), eu = $(t, "free_text"), e_ = $(t, "dropdown"), em = Y(t, "text"), ep = l.s.REPORT_TO_MOD.has(n.name), [eg, ef] = i.useState(false), [eh, eb] = i.useState(false), [ex, ev] = i.useState(""), [ej, ey] = i.useState(() => ({})), [eO, eC] = i.useState(() => ({})), eI = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eZ = i.useCallback(e => ({
+  } = e, es = Y(t, "checkbox"), ec = Y(t, "text_line_resource"), ed = $(t, "external_link"), eu = $(t, "free_text"), e_ = $(t, "dropdown"), em = Y(t, "text"), ep = l.s.REPORT_TO_MOD.has(n.name), [eg, ef] = i.useState(false), [eb, eh] = i.useState(false), [ex, ev] = i.useState(""), [ej, ey] = i.useState(() => ({})), [eO, eI] = i.useState(() => ({})), eC = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eZ = i.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != eu || null != e_ ? eO : true,
@@ -120,12 +120,12 @@ let ee = e => {
     r[e] = {
       value: t,
       isValid: n
-    }, eC(r)
+    }, eI(r)
   }, eT = e => {
     en(eZ(e))
   };
   i.useEffect(() => {
-    null != el && ey(el), null != eo && eC(eo)
+    null != el && ey(el), null != eo && eI(eo)
   }, [el, eo]), i.useEffect(() => {
     if (null != es) {
       let e = es.data;
@@ -146,8 +146,8 @@ let ee = e => {
         }))
     }
   }, [es]), i.useEffect(() => {
-    t.is_auto_submit && !eh && (eb(true), ei(eZ(["", t.id])))
-  }, [t.is_auto_submit, eh, ei, eZ, t.id]);
+    t.is_auto_submit && !eb && (eh(true), ei(eZ(["", t.id])))
+  }, [t.is_auto_submit, eb, ei, eZ, t.id]);
   let eN = (0, u.fW)(ee),
     eE = null != Y(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
     ek = (0, d.U)(),
@@ -201,18 +201,18 @@ let ee = e => {
       }(t) && (0, r.jsxs)(R.Z, {
         children: [eE && (0, r.jsx)(T.Z, {
           user: "user" === n.name ? n.record : n.record.author,
-          channelId: eI,
+          channelId: eC,
           reportId: ea
         }), eR && (0, r.jsx)(B.Z, {
           parents: eD
         }), null != Y(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(g.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
-          channelId: eI,
+          channelId: eC,
           reportId: ea,
           reportType: n
         }), !eE && null != Y(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(D.Z, {
           user: "user" === n.name ? n.record : n.record.author,
-          channelId: eI,
+          channelId: eC,
           reportId: ea
         }), null != Y(t, "delete_message") && ("message" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(x.Z, {
           message: n.record,
@@ -220,7 +220,7 @@ let ee = e => {
         }), null != Y(t, "leave_guild") && "guild" === n.name && (0, r.jsx)(E.Z, {
           guildId: n.record.id,
           reportId: ea
-        }), null != Y(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(b.Z, {
+        }), null != Y(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(h.Z, {
           application: n.record,
           reportId: ea
         }), null != Y(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(M.Z, {
@@ -238,9 +238,9 @@ let ee = e => {
         stageInstance: n.record
       }), null != Y(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(S.Z, {
         event: n.record
-      }), null != Y(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(C.Z, {
+      }), null != Y(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(I.Z, {
         entry: n.record
-      }), null != Y(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(I.Z, {
+      }), null != Y(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, r.jsx)(C.Z, {
         entry: n.record
       }), null != Y(t, "app_preview") && "application" === n.name && (0, r.jsx)(p.Z, {
         entry: n.record
@@ -261,7 +261,7 @@ let ee = e => {
         state: eO
       }), (0, r.jsxs)("div", {
         className: Q.listContainer,
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(b.Z, {
           node: t,
           onSelectChild: eT,
           nodeMap: e.nodeMap

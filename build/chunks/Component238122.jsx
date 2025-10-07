@@ -22,8 +22,8 @@ let u = e => {
         character_limit: g,
         pattern: f
       },
-      onChange: h,
-      initialText: b,
+      onChange: b,
+      initialText: h,
       isRequired: x
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,21 +53,21 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = i.useState(""), [O, C] = i.useState(null);
+    }), t))), [j, y] = i.useState(""), [O, I] = i.useState(null);
     i.useEffect(() => {
       var e;
-      y(null != (e = null == b ? true : b.value) ? e : "")
-    }, [b]);
-    let I = i.useCallback(e => {
+      y(null != (e = null == h ? true : h.value) ? e : "")
+    }, [h]);
+    let C = i.useCallback(e => {
       let t = null != f ? new RegExp(f) : null;
-      null == t || t.test(e) ? null != e && (C(null), y(e), h({
+      null == t || t.test(e) ? null != e && (I(null), y(e), b({
         value: e,
         isValid: true
-      })) : (C(s.intl.string(s.t["24xrGR"])), h({
+      })) : (I(s.intl.string(s.t["24xrGR"])), b({
         value: e,
         isValid: false
       }))
-    }, [h, f]);
+    }, [b, f]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
@@ -81,7 +81,7 @@ let u = e => {
         })
       }), (0, r.jsx)(l.Kx8, {
         maxLength: g,
-        onChange: I,
+        onChange: C,
         value: j,
         error: O,
         rows: p,

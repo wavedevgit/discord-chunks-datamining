@@ -1,7 +1,7 @@
 /** Chunk was on 31417 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
-let h = e => {
+let b = e => {
   var t, n;
   let {
-    entry: h
+    entry: b
   } = e, {
-    name: b
-  } = h, x = (0, l.e7)([_.Z], () => _.Z.getNewestTokenForApplication(h.id)), v = null != (n = h.getIconURL(40)) ? n : f, j = (0, d.Z)({
-    application: h
+    name: h
+  } = b, x = (0, l.e7)([_.Z], () => _.Z.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : f, j = (0, d.Z)({
+    application: b
   }), y = i.useRef(false);
   i.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = true)
@@ -55,7 +55,7 @@ let h = e => {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/medium",
-            children: b
+            children: h
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",
@@ -70,7 +70,7 @@ let h = e => {
             children: [(0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (t = h.bot) ? true : t.tag
+              children: null == (t = b.bot) ? true : t.tag
             }), null != O && (0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",

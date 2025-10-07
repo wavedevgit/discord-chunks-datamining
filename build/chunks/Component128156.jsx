@@ -37,8 +37,8 @@ function N(e) {
     currentUser: n,
     displayProfile: N,
     guildId: A,
-    channelId: C,
-    subsection: k,
+    channelId: k,
+    subsection: C,
     onClose: Z
   } = e, {
     voiceActivityStatusEnabled: D
@@ -48,8 +48,8 @@ function N(e) {
     location: "UserProfileModalV2Activity"
   }), L = (0, c.P6)("UserProfileModalV2Activity"), {
     live: R,
-    recent: U,
-    stream: G
+    recent: G,
+    stream: U
   } = (0, h.Z)(t.id), {
     voiceChannel: M,
     voiceActivity: W
@@ -59,7 +59,7 @@ function N(e) {
   }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = R.length > 0 || null != G, V = D && null == G && null == W && null != M, Y = !z && (H || V), q = U.length > 0, K = R.some(e => (0, a.Z)(e));
+  }), H = R.length > 0 || null != U, V = D && null == U && null == W && null != M, Y = !z && (H || V), q = G.length > 0, K = R.some(e => (0, a.Z)(e));
   if (!Y && !q && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
@@ -82,7 +82,7 @@ function N(e) {
     }) : (0, r.jsx)(x.P9, {
       user: t,
       guildId: null != (X = null == N ? true : N.guildId) ? X : A,
-      channelId: C,
+      channelId: k,
       onClose: Z
     })
   }
@@ -106,11 +106,11 @@ function N(e) {
               voiceChannel: M,
               onClose: Z
             })
-          }), null != G && (0, r.jsx)("li", {
+          }), null != U && (0, r.jsx)("li", {
             children: (0, r.jsx)(b.Z, {
               user: t,
               currentUser: n,
-              stream: G,
+              stream: U,
               onClose: Z
             })
           }), R.map((e, i) => (0, r.jsx)("li", {
@@ -143,10 +143,10 @@ function N(e) {
           children: e
         }, t)
       }) : true,
-      scrollIntoView: k === S.Tb.RECENT_ACTIVITY,
+      scrollIntoView: C === S.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: T.cards,
-        children: U.map(e => (0, r.jsx)("li", {
+        children: G.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             user: t,
             entry: e,

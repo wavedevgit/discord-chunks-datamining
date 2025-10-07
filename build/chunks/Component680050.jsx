@@ -30,14 +30,14 @@ let _ = e => {
     })
   }, [_]);
   if (0 === _.length || !m) return null;
-  let h = u.intl.formatToPlainString(u.t.HqyWeH, {
+  let b = u.intl.formatToPlainString(u.t.HqyWeH, {
     count: _.length,
     parent1: _[0].username,
     parent2: null == (t = _[1]) ? true : t.username,
     parent3: null == (n = _[2]) ? true : n.username
   });
   return (0, r.jsx)(d.JZ, {
-    title: h,
+    title: b,
     description: u.intl.string(u.t["5l/hlp"]),
     buttonText: p ? u.intl.string(u.t.ntuuk5) : u.intl.string(u.t["sYdX/P"]),
     buttonDisabled: p,

@@ -185,7 +185,7 @@ class el extends(i = Chunk647438.PureComponent) {
       return (0, r.jsx)(eo, {
         guildId: null == a ? true : a.guild_id,
         user: c,
-        nick: null != (l = null == h ? true : h.nick) ? l : F.ZP.getName(c),
+        nick: null != (l = null == h ? true : h.nick) ? l : H.ZP.getName(c),
         flipped: p,
         voiceState: u,
         displayNameMode: n,
@@ -447,7 +447,7 @@ function ea(e) {
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
+      }, [], F.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
