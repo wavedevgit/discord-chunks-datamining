@@ -43,7 +43,7 @@ function I(e) {
     analyticsLocations: M,
     guildId: Z,
     onClose: G
-  } = e, Y = (0, s.e7)([S.default], () => S.default.getCurrentUser()), H = null != (t = C.ZP.useName(Y)) ? t : "", z = (0, s.e7)([h.Z, b.Z, _.ZP], () => {
+  } = e, Y = (0, s.e7)([S.default], () => S.default.getCurrentUser()), H = null != (t = j.ZP.useName(Y)) ? t : "", z = (0, s.e7)([h.Z, b.Z, _.ZP], () => {
     var e, t, n;
     return null != Z ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(Z, null == Y ? true : Y.id)) ? t : H : null != (n = b.Z.getPendingGlobalName()) ? n : H
   }, [Z, Y, H]), {
@@ -70,7 +70,7 @@ function I(e) {
         effectId: V,
         colors: e
       };
-      null != Z ? (0, g.N_)(t) : (0, u.NI)(t), j.default.track(D.rMx.DISPLAY_NAME_STYLES_APPLIED, {
+      null != Z ? (0, g.N_)(t) : (0, u.NI)(t), C.default.track(D.rMx.DISPLAY_NAME_STYLES_APPLIED, {
         font_name: i.C[K],
         effect_name: a.m[V],
         colors: er
@@ -82,7 +82,7 @@ function I(e) {
       effectId: t,
       colors: n
     } = (0, P.aY)();
-    X(e), W(t), t === a.m.GRADIENT ? eo(n) : et(n[0]), j.default.track(D.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+    X(e), W(t), t === a.m.GRADIENT ? eo(n) : et(n[0]), C.default.track(D.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
   }, [eo, et]), ec = l.useCallback(e => {
     W(e)
   }, [W]), ed = l.useCallback(e => {
@@ -99,37 +99,37 @@ function I(e) {
         transitionState: B,
         size: d.CgR.LARGE,
         parentComponent: "DisplayNameStylesModal",
-        className: A.modalRoot,
+        className: L.modalRoot,
         children: [(0, o.jsxs)(d.hzk, {
           "data-migration-pending": true,
-          className: A.modalContent,
+          className: L.modalContent,
           style: {
             overflow: "hidden auto"
           },
           children: [(0, o.jsxs)("div", {
-            className: A.selectionSection,
+            className: L.selectionSection,
             children: [(0, o.jsx)(d.xBx, {
               "data-migration-pending": true,
               separator: false,
-              className: A.sectionHeader,
+              className: L.sectionHeader,
               children: (0, o.jsx)(d.X6q, {
                 variant: "heading-lg/semibold",
-                children: L.intl.string(R.default.ZPMAlZ)
+                children: A.intl.string(R.default.ZPMAlZ)
               })
             }), (0, o.jsx)(y.Z, {
               selectedFontId: K,
               setSelectedFontId: X,
               displayName: z,
-              className: A.selectionSubSection
+              className: L.selectionSubSection
             }), (0, o.jsx)(k.Z, {
               selectedEffectId: V,
               setSelectedEffectId: ec,
-              className: A.selectionSubSection
+              className: L.selectionSubSection
             }), (0, o.jsx)(N.Z, {
               selectedColors: er,
               setSelectedColors: ed,
               selectedEffectId: V,
-              className: A.selectionSubSection,
+              className: L.selectionSubSection,
               defaultColor: $.defaultColors[0]
             })]
           }), (0, o.jsx)(T.Z, {

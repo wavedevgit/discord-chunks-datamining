@@ -138,14 +138,14 @@ function _(e) {
     disabled: _ = false,
     customPickerPosition: b = "bottom",
     secondaryValue: S,
-    onChangeGradientColors: j,
-    isGradient: C = false,
+    onChangeGradientColors: C,
+    isGradient: j = false,
     gradientButtonClassName: v,
     allowBlackCustomColor: P = false
   } = e, N = l.useCallback(e => (0 !== e || P) && e !== t && !n.some(t => t === e) && (P || 0 !== e), [n, t, P]), k = l.useRef(null), y = l.useRef(null), O = l.useRef(null), [T, E] = l.useState(() => N(r) ? r : null), [D, R] = l.useState({
     start: r,
     end: null != S ? S : d.p6O
-  }), [L, A] = l.useState({
+  }), [A, L] = l.useState({
     showStart: false,
     showEnd: false
   });
@@ -165,10 +165,10 @@ function _(e) {
       R({
         start: e,
         end: t
-      }), null == j || j([e, t])
-    }, [j]),
+      }), null == C || C([e, t])
+    }, [C]),
     M = l.useCallback((e, t) => {
-      A(n => g(f({}, n), {
+      L(n => g(f({}, n), {
         [e]: t
       }))
     }, []),
@@ -201,7 +201,7 @@ function _(e) {
           isStart: true,
           buttonRef: y,
           color: null != (l = D.start) ? l : d.p6O,
-          showPopout: L.showStart,
+          showPopout: A.showStart,
           position: b,
           onRequestClose: () => M("showStart", false),
           onShowPopout: () => M("showStart", true),
@@ -211,7 +211,7 @@ function _(e) {
           isStart: false,
           buttonRef: O,
           color: null != (r = D.end) ? r : 0,
-          showPopout: L.showEnd,
+          showPopout: A.showEnd,
           position: b,
           onRequestClose: () => M("showEnd", false),
           onShowPopout: () => M("showEnd", true),
@@ -222,7 +222,7 @@ function _(e) {
           disabled: _
         })]
       })
-    }, [b, _, D, L, B, M, v]),
+    }, [b, _, D, A, B, M, v]),
     G = l.useCallback(() => (0, o.jsx)(c.Z$W, {
       onChange: w,
       value: r
@@ -263,8 +263,8 @@ function _(e) {
     renderDefaultButton: H,
     renderCustomButton: Y,
     renderGradientCustomButton: Z,
-    isGradient: C,
+    isGradient: j,
     customColor: T,
-    onChange: C ? B : I
+    onChange: j ? B : I
   }))
 }

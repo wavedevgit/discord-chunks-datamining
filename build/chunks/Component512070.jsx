@@ -27,7 +27,7 @@ function _(e) {
     displayName: l,
     className: _
   } = e, b = t !== a.C.DEFAULT, S = (0, u.mR)(l), {
-    enabled: j
+    enabled: C
   } = d.wL.useConfig({
     location: "DisplayNameStylesFontSelection"
   });
@@ -65,7 +65,7 @@ function _(e) {
           })
         }, e)
       })
-    }), b && S && j && (0, o.jsxs)("div", {
+    }), b && S && C && (0, o.jsxs)("div", {
       className: x.nonLatinDisclaimer,
       children: [(0, o.jsx)(i.d3s, {
         size: "lg"

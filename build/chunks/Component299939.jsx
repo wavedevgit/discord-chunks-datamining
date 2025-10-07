@@ -27,7 +27,15 @@ function g(e) {
     variant: "secondary",
     size: "md",
     onClick: n,
-    icon: r.$2U,
+    icon: {
+      type: "rive",
+      asset: r.xhK,
+      riveProps: {
+        dataBinding: {
+          fill: r.TVs.colors.ICON_PRIMARY
+        }
+      }
+    },
     text: m.intl.string(p.default.NOGFdn)
   }), b = (0, o.jsxs)("div", {
     className: f.subscriberButtonContainer,

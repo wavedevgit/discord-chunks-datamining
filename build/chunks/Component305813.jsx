@@ -68,8 +68,8 @@ function E(e) {
     selectedFontId: r,
     selectedEffectId: E,
     selectedColors: R,
-    onClose: L
-  } = e, A = (0, c.ZP)(), I = (0, s.wjy)(A), [w, B] = (0, l.useState)(I), M = (0, x.ZP)(t.id, null), {
+    onClose: A
+  } = e, L = (0, c.ZP)(), I = (0, s.wjy)(L), [w, B] = (0, l.useState)(I), M = (0, x.ZP)(t.id, null), {
     bannerSrc: Z
   } = (0, _.Z)({
     displayProfile: M,
@@ -79,12 +79,12 @@ function E(e) {
     userId: t.id,
     image: G.pendingAvatar
   }), H = w ? v.BRd.DARK : v.BRd.LIGHT;
-  (I && w || !I && !w) && (H = A);
+  (I && w || !I && !w) && (H = L);
   let z = (0, l.useCallback)(() => {
-      j.default.track(v.rMx.DISPLAY_NAME_STYLES_CLOSED), L()
-    }, [L]),
+      C.default.track(v.rMx.DISPLAY_NAME_STYLES_CLOSED), A()
+    }, [A]),
     F = (0, l.useCallback)(e => {
-      B(e === v.BRd.DARK), j.default.track(v.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+      B(e === v.BRd.DARK), C.default.track(v.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === v.BRd.DARK
       })
     }, []),
@@ -166,7 +166,7 @@ function E(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: k.intl.format(N.default.prQba2, {
-          helpArticleLink: C.Z.getArticleURL(v.BhN.DISPLAY_NAME_STYLES)
+          helpArticleLink: j.Z.getArticleURL(v.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, o.jsx)(D, {
         darkPreview: w,
