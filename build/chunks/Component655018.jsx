@@ -93,23 +93,26 @@ function B(e) {
     J.trim().length > 0 && ec && eu(false), null == $ && ec && eu(false)
   }, [J, $, ec]), r.useEffect(() => {
     var e;
-    J !== (null != (e = null == G ? true : G.status) ? e : "") && "" !== J.trim() ? H(true) : H(false)
-  }, [J, null == G ? true : G.status, $, null == G ? true : G.emoji, H]), r.useEffect(() => {
+    et || J !== (null != (e = null == G ? true : G.status) ? e : "") && "" !== J.trim() ? H(true) : H(false)
+  }, [J, null == G ? true : G.status, $, null == G ? true : G.emoji, H, et]), r.useEffect(() => {
     null == V || V(null == X ? true : X.current)
   }, [X, V]);
   let em = r.useCallback(e => {
       e !== ei && ((0, C.Zx)(e, true), null != $ && ee(null), "" !== J.trim() && Q(""))
     }, [ei, $, J]),
-    eg = r.useCallback(e => {
+    eg = r.useCallback(() => {
+      ee(null), Q(""), en(false)
+    }, []),
+    eb = r.useCallback(e => {
       let {
         emoji: t,
         status: n
       } = e;
       s()(t, null == G ? true : G.emoji) && n === (null == G ? true : G.status) || ((0, C._s)(e.status, e.emoji, true), ee(e.emoji), Q(e.status))
     }, [null == G ? true : G.emoji, null == G ? true : G.status]),
-    eb = r.useCallback(e => {
+    eC = r.useCallback(e => {
       var t, n;
-      null == e || null == (t = e.preventDefault) || t.call(e), null != $ && 0 === J.trim().length && eu(true), ea || (eg({
+      null == e || null == (t = e.preventDefault) || t.call(e), null != $ && 0 === J.trim().length && eu(true), ea || (eb({
         status: J,
         emoji: null != $ ? $ : {
           id: null,
@@ -117,8 +120,8 @@ function B(e) {
           animated: false
         }
       }), null == (n = F.current) || n.blur(), en(false))
-    }, [J, $, eg, ea]),
-    eC = r.useCallback(() => {
+    }, [J, $, eb, ea]),
+    ey = r.useCallback(() => {
       var e, t;
       let n = null,
         i = null;
@@ -134,20 +137,20 @@ function B(e) {
           }, 1 === eo.length)) break; while (null == n || (null == n ? true : n.name) == null || s()($, i));
       null != i && (null == n ? true : n.name) != null && (ee(i), Q(n.name), en(true), null == (e = F.current) || e.focus(), b.default.track(A.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, x.Z)(B.id)))
     }, [eo, $, B.id]),
-    ey = r.useCallback((e, t) => {
+    e_ = r.useCallback((e, t) => {
       let n = (0, O.Z)(t);
       (!ed || e) && ((0, C.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(D({}, (0, x.Z)(B.id)), {
         favorited: !e
       })))
     }, [B.id, ed]),
-    e_ = r.useCallback(() => {
+    ev = r.useCallback(() => {
       H(false)
     }, [H]),
-    ev = r.useCallback(() => {
+    ex = r.useCallback(() => {
       var e;
       J !== (null != (e = null == G ? true : G.status) ? e : "") && "" !== J.trim() ? H(true) : H(false)
     }, [H, J, null == G ? true : G.status]),
-    ex = r.useCallback((e, t, n) => {
+    eO = r.useCallback((e, t, n) => {
       var r;
       let l = (0, O.Z)(e),
         a = l ? K[e] : null,
@@ -170,16 +173,16 @@ function B(e) {
         label: l ? null != (r = null == a ? true : a.title) ? r : "" : e.status,
         icon: s,
         setStatus: () => {
-          l ? em(e) : eg(e), en(false)
+          l ? em(e) : eb(e), en(false)
         },
         isFavorited: o,
-        onFavoriteClick: () => ey(o, e)
+        onFavoriteClick: () => e_(o, e)
       }, "".concat(n, "-").concat(t))
-    }, [q, eg, em, K, ey]),
-    eO = r.useCallback(() => {
+    }, [q, eb, em, K, e_]),
+    ej = r.useCallback(() => {
       (0, C.Sc)(true, Y), ee(null), Q(""), en(false)
     }, [Y]),
-    ej = r.useCallback(e => {
+    eE = r.useCallback(e => {
       en(true), Q(e.substring(0, N.s0))
     }, []);
   return (0, i.jsxs)("div", {
@@ -203,16 +206,16 @@ function B(e) {
       role: "group",
       className: a()(k.groupLabel, R.inputGroup),
       children: (0, i.jsxs)("form", {
-        onSubmit: eb,
+        onSubmit: eC,
         className: a()(k.item, R.input),
         children: [(0, i.jsxs)("div", {
           className: R.inputRow,
           children: [(0, i.jsx)(h.oil, {
             inputRef: F,
             value: et || ep ? J : null != (o = null == er ? true : er.title) ? o : "",
-            onBlur: e_,
-            onFocus: ev,
-            onChange: ej,
+            onBlur: ev,
+            onFocus: ex,
+            onChange: eE,
             placeholder: M.intl.string(M.t.KPop4u),
             leading: {
               type: "emoji",
@@ -225,18 +228,18 @@ function B(e) {
             },
             trailing: null == G && null == ei || es ? es ? {
               icon: h.d4D,
-              onClick: eb,
+              onClick: eC,
               "aria-label": M.intl.string(M.t.R3BPHx),
               disabled: 0 === J.length
             } : true : {
               icon: h.XHJ,
-              onClick: eO,
+              onClick: ej,
               "aria-label": M.intl.string(M.t.S90Fub)
             }
           }), (0, i.jsx)(h.hU, {
             variant: "secondary",
             icon: S.k,
-            onClick: eC,
+            onClick: ey,
             "aria-label": M.intl.string(M.t["5UAi5+"])
           })]
         }), ec && (0, i.jsx)(h.Text, {
@@ -251,7 +254,8 @@ function B(e) {
       role: "group",
       className: a()(k.groupLabel, R.group, R.scroller),
       children: [(0, i.jsx)(Z.d, {
-        guildId: B.guild_id
+        guildId: B.guild_id,
+        onSetActivityStatus: eg
       }), el && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
           className: R.subtitle,
@@ -262,7 +266,7 @@ function B(e) {
           }), (0, i.jsx)(h.r7p, {
             size: "xxs"
           })]
-        }), W.map((e, t) => ex(e, t, "favorite"))]
+        }), W.map((e, t) => eO(e, t, "favorite"))]
       }), z.length > 0 && el && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           role: "separator",
@@ -277,7 +281,7 @@ function B(e) {
             size: "xxs"
           })]
         })]
-      }), z.map((e, t) => ex(e, t, "recent"))]
+      }), z.map((e, t) => eO(e, t, "recent"))]
     })]
   })
 }

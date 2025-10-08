@@ -152,7 +152,7 @@ let B = (0, Chunk888651.$)(function(e) {
     ey(!eC)
   }, eT = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-    ej && null != t && n.has(t) && eE(false), eN()
+    null != t && n.has(t) && (ej && eE(false), ex && eO(false)), eN()
   }, eN = () => {
     ($ || eg || eI) && (null == er || er(p.id))
   }, eA = e => {
