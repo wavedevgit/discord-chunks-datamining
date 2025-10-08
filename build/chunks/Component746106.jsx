@@ -47,7 +47,11 @@ function w(e, t, n, r) {
         BETA: P.intl.string(P.t.oW0eUV),
         EARLY_ACCESS: P.intl.string(P.t.EYxi0t),
         BILLING_TRIAL_FREE_TRIAL_TEXT: P.intl.string(P.t.IBYG5e),
-        MODAL_DONT_SHOW_AGAIN: P.intl.string(R.default.m3Vfcn)
+        MODAL_DONT_SHOW_AGAIN: P.intl.string(R.default.m3Vfcn),
+        LISTBOX_EMPTY_STATE: P.intl.string(R.default.db85vb),
+        LISTBOX_EMPTY_STATE_WITH_QUERY: e => P.intl.formatToPlainString(R.default.bPKiIS, {
+          query: e
+        })
       },
       theme: e,
       saturation: t,

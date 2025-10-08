@@ -24,7 +24,6 @@ function m() {
       tag: "div",
       children: [Chunk388032.intl.string(Chunk388032.t.AHoLf3), ":"]
     }), require, require.length > 0 && m && (0, Chunk951288.jsx)(Chunk681715.u, {
-      asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.L99HQk),
       children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
         size: "xs",

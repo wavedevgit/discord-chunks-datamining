@@ -12,20 +12,20 @@ function a() {
   return Chunk647438.useContext(o)
 }
 let o = Chunk647438.createContext({
-  state: {
-    isInitialized: false,
-    activeDescendantIndex: null,
-    listItems: [],
-    filteredItems: [],
-    selectedItems: [],
-    longestLabelCharCount: 5,
-    width: "0px",
-    dropDownHeight: "auto"
-  },
-  setState: Chunk981631.dG4,
+  value: null,
+  options: [],
+  selectedOptions: [],
+  filteredOptions: [],
+  query: "",
+  setQuery: Chunk981631.dG4,
+  activeDescendantIndex: null,
+  setActiveDescendantIndex: Chunk981631.dG4,
+  loading: false,
   selectionMode: "single",
   handleSelectionChange: Chunk981631.dG4,
   onSelectionChange: Chunk981631.dG4,
   isOpen: false,
-  setIsOpen: Chunk981631.dG4
+  setIsOpen: Chunk981631.dG4,
+  isEditing: false,
+  setIsEditing: Chunk981631.dG4
 })

@@ -23,13 +23,13 @@ function d(e) {
     clearable: l,
     fullWidth: c,
     isOpen: d,
-    isInert: h,
-    hasValue: m,
-    showChevronButton: g = true,
-    width: E,
-    children: b,
-    handleToggle: y,
-    handleClear: O
+    isInert: p,
+    hasValue: h,
+    showChevronButton: m = true,
+    width: g,
+    children: E,
+    handleToggle: b,
+    handleClear: y
   } = e;
   return (0, r.jsxs)(s.U, {
     ref: t,
@@ -38,28 +38,27 @@ function d(e) {
     }),
     className: a()(u.selectField, {
       [u.isFocused]: d,
-      [u.isInert]: h
+      [u.isInert]: p
     }),
     style: c ? true : {
-      width: "min(".concat(E, ", 100%)")
+      width: "min(".concat(g, ", 100%)")
     },
     "data-mana-component": "select-input-field",
     disabled: n,
     readOnly: i,
     fullWidth: c,
+    "aria-busy": o,
     children: [(0, r.jsx)("div", {
       className: u.selectFieldContent,
-      children: b
+      children: E
     }), (0, r.jsx)(f, {
-      show: true === l && !h && true === m,
-      iconSize: g ? "xs" : "sm",
-      onClick: O
-    }), (0, r.jsx)(_, {
-      show: true === g && !o,
-      isOpen: d,
+      show: true === l && !p && true === h,
+      iconSize: m ? "xs" : "sm",
       onClick: y
-    }), (0, r.jsx)(p, {
-      show: true === o
+    }), (0, r.jsx)(_, {
+      show: m,
+      isOpen: d,
+      onClick: b
     })]
   })
 }
@@ -102,18 +101,6 @@ function _(e) {
         size: "refresh_sm",
         color: "currentColor"
       })
-    })
-  }) : null
-}
-
-function p(e) {
-  let {
-    show: t
-  } = e;
-  return t ? (0, r.jsx)("div", {
-    className: u.loadingSpinner,
-    children: (0, r.jsx)(o.$jN, {
-      type: o.RAz.PULSING_ELLIPSIS
     })
   }) : null
 }

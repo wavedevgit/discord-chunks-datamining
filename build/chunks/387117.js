@@ -170,6 +170,11 @@ let r = {
       WIDTH_SMALL: {
         resolve: () => 442
       }
+    },
+    select: {
+      OPTION_HEIGHT: {
+        resolve: () => 40
+      }
     }
   }
 }

@@ -3,15 +3,14 @@
 "use strict";
 require.d(exports, {
   W: () => b
-}), require("./953529.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk448814 = require("./448814.jsx"),
+}), require("./388685.js"), require("./953529.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk448814 = require("./448814.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk496600 = require("./496600.jsx"),
   Chunk333200 = require("./333200.jsx"),
   Chunk673221 = require("./673221.jsx"),
-  Chunk231338 = require("./231338.js"),
   Chunk740353 = require("./740353.js");
 
 function d(e, t, n) {
@@ -148,11 +147,18 @@ let g = [{
         var {
           selectionMode: t,
           withLeadingAndTrailing: n
-        } = e, i = h(e, ["selectionMode", "withLeadingAndTrailing"]);
-        return (0, r.jsx)(l.P, p(f({}, i), {
+        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]);
+        let [o, s] = i.useState(null), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
+        return "single" === t ? (0, r.jsx)(c.P, p(f({}, a), {
           selectionMode: t,
-          options: n ? E : g,
-          onSelectionChange: c.dG
+          options: d,
+          onSelectionChange: s,
+          value: o
+        })) : (0, r.jsx)(c.P, p(f({}, a), {
+          selectionMode: t,
+          options: d,
+          onSelectionChange: u,
+          value: l
         }))
       },
       controls: {
@@ -170,6 +176,11 @@ let g = [{
         },
         withLeadingAndTrailing: {
           label: "Show leading and trailing content",
+          type: "boolean",
+          defaultValue: false
+        },
+        asyncOptions: {
+          label: "Async loaded options",
           type: "boolean",
           defaultValue: false
         },
@@ -191,11 +202,6 @@ let g = [{
         clearable: {
           type: "boolean",
           label: "Clearable",
-          defaultValue: false
-        },
-        loading: {
-          type: "boolean",
-          label: "Loading",
           defaultValue: false
         },
         fullWidth: {
@@ -260,12 +266,20 @@ let g = [{
       component: function(e) {
         var {
           selectionMode: t,
-          withLeadingAndTrailing: n
-        } = e, i = h(e, ["selectionMode", "withLeadingAndTrailing"]);
-        return (0, r.jsx)(s.V, p(f({}, i), {
+          withLeadingAndTrailing: n,
+          asyncOptions: a
+        } = e, o = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
+        let [s, c] = i.useState(null), [u, d] = i.useState([]), _ = y(n, a);
+        return "single" === t ? (0, r.jsx)(l.V, p(f({}, o), {
           selectionMode: t,
-          onSelectionChange: c.dG,
-          options: n ? E : g
+          onSelectionChange: c,
+          value: s,
+          options: _
+        })) : (0, r.jsx)(l.V, p(f({}, o), {
+          selectionMode: t,
+          onSelectionChange: d,
+          value: u,
+          options: _
         }))
       },
       controls: {
@@ -286,6 +300,11 @@ let g = [{
           type: "boolean",
           defaultValue: false
         },
+        asyncOptions: {
+          label: "Async loaded options",
+          type: "boolean",
+          defaultValue: false
+        },
         required: {
           label: "Required",
           type: "boolean",
@@ -299,11 +318,6 @@ let g = [{
         clearable: {
           type: "boolean",
           label: "Clearable",
-          defaultValue: false
-        },
-        loading: {
-          type: "boolean",
-          label: "Loading",
           defaultValue: false
         },
         closeOnSelect: {
@@ -364,34 +378,35 @@ let g = [{
         var {
           selectionMode: t,
           label: n,
-          hideLabel: i,
-          description: a,
-          helperText: s,
-          errorMessage: l,
+          hideLabel: a,
+          description: o,
+          helperText: l,
+          errorMessage: c,
           successMessage: u,
           wrapTags: d,
           withLeadingAndTrailing: _
         } = e, m = h(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing"]);
         let {
-          required: b,
-          disabled: y
-        } = m;
-        return (0, r.jsxs)(o.uz, p(f({
+          required: g,
+          disabled: E
+        } = m, b = y(_, m.asyncOptions), [O, v] = i.useState(null);
+        return (0, r.jsxs)(s.uz, p(f({
           selectionMode: t,
-          onSelectionChange: c.dG,
-          options: _ ? E : g
+          onSelectionChange: v,
+          options: b,
+          value: O
         }, m), {
-          children: [(0, r.jsx)(o.Ct, {
+          children: [(0, r.jsx)(s.Ct, {
             label: n,
-            hideLabel: i,
-            required: b,
-            disabled: y,
-            description: a,
-            helperText: s,
-            errorMessage: l,
+            hideLabel: a,
+            required: g,
+            disabled: E,
+            description: o,
+            helperText: l,
+            errorMessage: c,
             successMessage: u,
             wrapTags: d
-          }), (0, r.jsx)(o.px, {})]
+          }), (0, r.jsx)(s.px, {})]
         }))
       },
       controls: {
@@ -412,6 +427,11 @@ let g = [{
           type: "boolean",
           defaultValue: false
         },
+        asyncOptions: {
+          label: "Async loaded options",
+          type: "boolean",
+          defaultValue: false
+        },
         required: {
           label: "Required",
           type: "boolean",
@@ -425,11 +445,6 @@ let g = [{
         clearable: {
           type: "boolean",
           label: "Clearable",
-          defaultValue: false
-        },
-        loading: {
-          type: "boolean",
-          label: "Loading",
           defaultValue: false
         },
         closeOnSelect: {
@@ -485,15 +500,16 @@ let g = [{
         let {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: a,
-          withLeadingAndTrailing: o
-        } = e;
-        return (0, r.jsx)(i.w, {
+          shouldFocusWrap: o,
+          withLeadingAndTrailing: s
+        } = e, [l, c] = i.useState(null);
+        return (0, r.jsx)(a.w, {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: a,
-          items: o ? E : g,
-          onSelectionChange: c.dG
+          shouldFocusWrap: o,
+          items: s ? E : g,
+          onSelectionChange: c,
+          selectedItems: l
         })
       },
       controls: {
@@ -526,4 +542,12 @@ let g = [{
         }
       }
     }]
-  }
+  };
+
+function y(e, t) {
+  let n = i.useRef(null);
+  return i.useMemo(() => {
+    let r = e ? E : g;
+    return t ? e => new Promise(null != n.current ? e => e(n.current) : e => setTimeout(() => (n.current = r, e(r)), 1e3)) : r
+  }, [e, t])
+}
