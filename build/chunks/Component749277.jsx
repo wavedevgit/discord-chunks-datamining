@@ -2,7 +2,7 @@
 /** chunk id: 749277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => w
+  A: () => L
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -53,11 +53,28 @@ function P(e) {
   }
   return e
 }
-let w = e => {
+
+function w(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let L = e => {
   let {
     dismissibleContent: t,
     noticeType: R
-  } = e, w = (0, i.e7)([b.default], () => b.default.getCurrentUser()), D = (0, i.e7)([E.Z], () => E.Z.getGuildId());
+  } = e, w = (0, i.e7)([b.default], () => b.default.getCurrentUser()), L = (0, i.e7)([E.Z], () => E.Z.getGuildId());
   return (0, r.jsx)(v.ZP, {
     contentTypes: [t],
     groupName: I.R.NOTICE_BAR,
@@ -127,6 +144,40 @@ let w = e => {
                 location: "Notice Bar"
               }),
               children: C.intl.string(C.t.S0W8Z2)
+            })]
+          });
+        case a.z.NAGBAR_NOTICE_PASSKEY_BACKUP:
+          return (0, r.jsxs)(o.qXd, {
+            color: o.DM8.DEFAULT,
+            children: [(0, r.jsx)(o.RyX, {
+              onClick: () => i(I.L.USER_DISMISS),
+              noticeType: R
+            }), C.intl.string(C.t["3qKN/v"]), (0, r.jsx)(o.NoS, {
+              onClick: async () => {
+                i(I.L.TAKE_ACTION);
+                try {
+                  let {
+                    startRegisterWebAuthnCredential: e
+                  } = await Promise.resolve().then(n.bind(n, 365007)), {
+                    ticket: t,
+                    challenge: i
+                  } = await e();
+                  (0, o.ZDy)(async () => {
+                    let {
+                      RegisterWebAuthnCredentialModal: e
+                    } = await Promise.resolve().then(n.bind(n, 778764));
+                    return n => (0, r.jsx)(e, D(P({}, n), {
+                      ticket: t,
+                      challenge: i,
+                      showAccountSettingsButton: true
+                    }))
+                  })
+                } catch (e) {
+                  (0, o.showToast)((0, o.createToast)(C.intl.string(C.t.xSCvBQ), o.ToastType.FAILURE))
+                }
+              },
+              noticeType: R,
+              children: C.intl.string(C.t["ff/XX1"])
             })]
           });
         case a.z.NAGBAR_NOTICE_PREMIUM_PROMO:
@@ -250,7 +301,7 @@ let w = e => {
               noticeType: T.kVF.REPORT_TO_MOD_EXIT_SURVEY
             }), C.intl.string(C.t.sw22sr), (0, r.jsx)(o.NoS, {
               onClick: () => {
-                window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9zz09xNJ3Qvyb78?user_id=".concat(null == w ? true : w.id, "&guild_id=").concat(D), "_blank"), i(I.L.TAKE_ACTION)
+                window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9zz09xNJ3Qvyb78?user_id=".concat(null == w ? true : w.id, "&guild_id=").concat(L), "_blank"), i(I.L.TAKE_ACTION)
               },
               noticeType: T.kVF.REPORT_TO_MOD_EXIT_SURVEY,
               children: C.intl.string(C.t.rulMOT)

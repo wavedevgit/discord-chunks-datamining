@@ -39,9 +39,9 @@ function S(e) {
     onReceiveErrorHints: I,
     sourceQuestContent: q
   } = e, D = s.useRef(null), L = s.useMemo(() => f.r.build(P.config), [P.config]), V = L.defaultRewardName, Q = L.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
-    ref: Z,
-    scrollHeight: W
-  } = (0, d.kE)(), U = 104 !== W, {
+    ref: W,
+    scrollHeight: Z
+  } = (0, d.kE)(), U = 104 !== Z, {
     onAssetLoadComplete: H
   } = s.useContext(_.k), {
     expansionSpring: F
@@ -76,10 +76,10 @@ function S(e) {
     })(Object(w)).forEach(function(e) {
       Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(w, e))
     }), S)
-  }), X = (null == (n = P.userStatus) ? true : n.completedAt) != null, z = (null == (o = P.userStatus) ? true : o.claimedAt) != null, G = (0, m.xN)(P.config), K = (0, m.LM)(P.config), {
+  }), z = (null == (n = P.userStatus) ? true : n.completedAt) != null, X = (null == (o = P.userStatus) ? true : o.claimedAt) != null, G = (0, m.xN)(P.config), K = (0, m.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: J
-  } = (0, g.I)(P), $ = (0, g.Bd)(P, q, D), ee = s.useMemo(() => z && G ? y.intl.format(y.t["8Op4c3"], {
+  } = (0, g.I)(P), $ = (0, g.Bd)(P, q, D), ee = s.useMemo(() => X && G ? y.intl.format(y.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
@@ -87,7 +87,7 @@ function S(e) {
         className: E.orbsBalanceIcon
       }), K]
     })
-  }) : z ? (0, r.jsx)(T, {
+  }) : X ? (0, r.jsx)(T, {
     questId: P.id,
     children: V
   }) : G ? y.intl.format(y.t.ro1szc, {
@@ -103,7 +103,7 @@ function S(e) {
       questId: P.id,
       children: Q
     })
-  }), [V, z, Q, P.id, K, G]), et = s.useMemo(() => {
+  }), [V, X, Q, P.id, K, G]), et = s.useMemo(() => {
     if (null != $) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -116,7 +116,7 @@ function S(e) {
     ref: D,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: F.to([0, 1], [104, (null != W ? W : 0) + 12])
+        maxHeight: F.to([0, 1], [104, (null != Z ? Z : 0) + 12])
       },
       className: E.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
@@ -125,11 +125,11 @@ function S(e) {
         height: 80,
         children: (0, r.jsxs)("div", {
           className: E.assetWrapper,
-          children: [!z && X && (0, r.jsx)("div", {
+          children: [!X && z && (0, r.jsx)("div", {
             className: E.completionAnimation
-          }), M && !z ? (0, r.jsxs)("div", {
+          }), M && !X ? (0, r.jsxs)("div", {
             className: E.progressWrapper,
-            children: [X && (0, r.jsx)(c.Fmz, {
+            children: [z && (0, r.jsx)(c.Fmz, {
               importData: O,
               className: E.confetti,
               loop: false,
@@ -166,7 +166,7 @@ function S(e) {
           })]
         })
       }), (0, r.jsxs)("div", {
-        ref: Z,
+        ref: W,
         className: a()(E.textContainer, {
           [E.justifyCenter]: !U
         }),

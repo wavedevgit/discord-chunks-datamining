@@ -2,11 +2,11 @@
 /** chunk id: 933429, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => tn,
-  m9: () => ex,
-  nA: () => ek,
-  o: () => eM,
-  zD: () => ej
+  ZP: () => tr,
+  m9: () => eM,
+  nA: () => eU,
+  o: () => ej,
+  zD: () => ek
 }), require("./388685.js"), require("./35282.js");
 var r, Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
@@ -50,6 +50,7 @@ var r, Chunk913527 = require("./913527.js"),
   Chunk590415 = require("./590415.js"),
   Chunk865066 = require("./865066.js"),
   Chunk581883 = require("./581883.js"),
+  Chunk15980 = require("./15980.js"),
   Chunk199902 = require("./199902.js"),
   Chunk314897 = require("./314897.js"),
   Chunk881998 = require("./881998.js"),
@@ -89,7 +90,7 @@ var r, Chunk913527 = require("./913527.js"),
   Chunk231338 = require("./231338.js"),
   Chunk65154 = require("./65154.js");
 
-function eP(e, t, n) {
+function ew(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -98,20 +99,20 @@ function eP(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ew(e) {
+function eD(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eP(e, t, n[t])
+      ew(e, t, n[t])
     })
   }
   return e
 }
 
-function eD(e, t) {
+function eL(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -122,15 +123,16 @@ function eD(e, t) {
   return n
 }
 
-function eL(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eD(Object(t)).forEach(function(n) {
+function ex(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eL(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ex = {
+let eM = {
     [Chunk981631.kVF.DOWNLOAD_NAG]: Chunk704215.z.NAGBAR_NOTICE_DOWNLOAD,
     [Chunk981631.kVF.CONNECT_SPOTIFY]: Chunk704215.z.NAGBAR_NOTICE_CONNECT_SPOTIFY,
     [Chunk981631.kVF.CONNECT_PLAYSTATION]: Chunk704215.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION,
+    [Chunk981631.kVF.PASSKEY_BACKUP]: Chunk704215.z.NAGBAR_NOTICE_PASSKEY_BACKUP,
     [Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]: Chunk704215.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING,
     [Chunk981631.kVF.PREMIUM_REACTIVATE]: Chunk704215.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE,
     [Chunk981631.kVF.BOUNCED_EMAIL_DETECTED]: Chunk704215.z.NAGBAR_BOUNCED_EMAIL_NOTICE,
@@ -140,17 +142,17 @@ let ex = {
     [Chunk981631.kVF.CHECKOUT_RECOVERY_NAGBAR]: Chunk704215.z.CHECKOUT_RECOVERY_NAGBAR,
     [Chunk981631.kVF.REPORT_TO_MOD_EXIT_SURVEY]: Chunk704215.z.REPORT_TO_MOD_EXIT_SURVEY_NOTICE
   },
-  eM = {
+  ej = {
     [Chunk981631.kVF.GIFTING_PROMOTION_REMINDER]: Chunk704215.z.GIFTING_PROMOTION_REMINDER
   },
-  ej = {
+  ek = {
     [Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]: Chunk704215.z.NAGBAR_NOTICE_OFFER_EXPIRING,
     [Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING]: Chunk704215.z.NAGBAR_NOTICE_OFFER_EXPIRING
   },
-  ek = {
+  eU = {
     [Chunk981631.kVF.OUTBOUND_PROMOTION]: Chunk704215.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR
   },
-  eU = {
+  eG = {
     [Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL]: "hideDetectedOffPlatformPremiumPerkUpsell",
     [Chunk981631.kVF.PREMIUM_UNCANCEL]: "hideUncancelReminder",
     [Chunk981631.kVF.PREMIUM_MISSING_PAYMENT]: "hideMissingPaymentReminder",
@@ -167,58 +169,58 @@ let ex = {
     [Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE]: "hideMacOS19DeprecationMessageNotice",
     [Chunk981631.kVF.SYSTEM_SERVICE_WARNING]: "hideSystemServiceWarningNotice"
   },
-  eG = new Set([Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.BLOCKED_BY_PROXY]),
-  eB = {},
+  eB = new Set([Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.BLOCKED_BY_PROXY]),
   eZ = {},
-  eF = Object.freeze({
+  eF = {},
+  eV = Object.freeze({
     id: null,
     message: null,
     buttonText: null,
     callback: true,
     metadata: null
   }),
-  eV = null;
-
-function eH(e) {
-  return eU[e] + "-untilAtLeast"
-}
+  eH = null;
 
 function eY(e) {
-  let t = c.K.get(eH(e));
+  return eG[e] + "-untilAtLeast"
+}
+
+function eW(e) {
+  let t = c.K.get(eY(e));
   return null != t ? a()(t) : null
 }
 
-function eW(e, t) {
-  c.K.set(eH(e), t.format("YYYY-MM-DDTHH:mm:ss.SSSZ"))
+function eK(e, t) {
+  c.K.set(eY(e), t.format("YYYY-MM-DDTHH:mm:ss.SSSZ"))
 }
 
-function eK(e) {
-  c.K.remove(eH(e))
+function ez(e) {
+  c.K.remove(eY(e))
 }
 
-function ez(e, t, n) {
+function eq(e, t, n) {
   if (null == e) return;
-  let r = eU[e];
-  null == r || t || c.K.set(r, true), eG.has(e) && (eB[e] = true), null != n && null != r ? eW(e, n) : eK(e)
+  let r = eG[e];
+  null == r || t || c.K.set(r, true), eB.has(e) && (eZ[e] = true), null != n && null != r ? eK(e, n) : ez(e)
 }
 
-function eq(e) {
-  if (null == e || null != ej[e]) returnfalse;
-  let t = eM[e];
+function eX(e) {
+  if (null == e || null != ek[e]) returnfalse;
+  let t = ej[e];
   if (null != t) return (0, g.H4)(t).isDismissed;
-  let n = ex[e];
+  let n = eM[e];
   if (null != n) return (0, m.zu)(n);
-  let r = eU[e];
+  let r = eG[e];
   if (null != r) {
-    let t = eY(e);
+    let t = eW(e);
     if (null != t) return null == t ? true : t.isAfter(a()())
   }
-  let i = eB[e];
-  return !!i || (null != r && "" !== r ? c.K.get(r) : !!eG.has(e) && i)
+  let i = eZ[e];
+  return !!i || (null != r && "" !== r ? c.K.get(r) : !!eB.has(e) && i)
 }
-let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.H264_DISABLED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE, Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE, Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.SYSTEM_SERVICE_WARNING, Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION, Chunk981631.kVF.GUILD_RAID_NOTIFICATION, Chunk981631.kVF.GIFTING_PROMOTION_REMINDER, Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION, Chunk981631.kVF.UNCLAIMED_ACCOUNT, Chunk981631.kVF.POMELO_ELIGIBLE, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.CHECKOUT_RECOVERY_NAGBAR, Chunk981631.kVF.OUTBOUND_PROMOTION, Chunk981631.kVF.CORRUPT_INSTALLATION, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE, Chunk981631.kVF.BOUNCED_EMAIL_DETECTED, Chunk981631.kVF.UNVERIFIED_ACCOUNT, Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING, Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_UNCANCEL, Chunk981631.kVF.PREMIUM_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT, Chunk981631.kVF.PREMIUM_REACTIVATE, Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION, Chunk981631.kVF.APPLICATION_TEST_MODE, Chunk981631.kVF.DOWNLOAD_NAG, Chunk981631.kVF.CONNECT_SPOTIFY, Chunk981631.kVF.CONNECT_PLAYSTATION, Chunk981631.kVF.SURVEY, Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR, Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.REPORT_TO_MOD_EXIT_SURVEY],
-  eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.H264_DISABLED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE],
-  eJ = {
+let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.H264_DISABLED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE, Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE, Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.SYSTEM_SERVICE_WARNING, Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION, Chunk981631.kVF.GUILD_RAID_NOTIFICATION, Chunk981631.kVF.GIFTING_PROMOTION_REMINDER, Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION, Chunk981631.kVF.UNCLAIMED_ACCOUNT, Chunk981631.kVF.POMELO_ELIGIBLE, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.CHECKOUT_RECOVERY_NAGBAR, Chunk981631.kVF.OUTBOUND_PROMOTION, Chunk981631.kVF.CORRUPT_INSTALLATION, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE, Chunk981631.kVF.BOUNCED_EMAIL_DETECTED, Chunk981631.kVF.UNVERIFIED_ACCOUNT, Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING, Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_UNCANCEL, Chunk981631.kVF.PREMIUM_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT, Chunk981631.kVF.PREMIUM_REACTIVATE, Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION, Chunk981631.kVF.PASSKEY_BACKUP, Chunk981631.kVF.APPLICATION_TEST_MODE, Chunk981631.kVF.DOWNLOAD_NAG, Chunk981631.kVF.CONNECT_SPOTIFY, Chunk981631.kVF.CONNECT_PLAYSTATION, Chunk981631.kVF.SURVEY, Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR, Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.REPORT_TO_MOD_EXIT_SURVEY],
+  eJ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.H264_DISABLED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE],
+  e$ = {
     [Chunk981631.kVF.GIFTING_PROMOTION_REMINDER]: {
       predicate: () => {
         let {
@@ -232,11 +234,11 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         } = Chunk107756.ZP.getConfig({
           location: "NoticeStore"
         });
-        return module && exports && (0, Chunk605236.H4)(Chunk704215.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK).isDismissed && !eq(Chunk981631.kVF.GIFTING_PROMOTION_REMINDER)
+        return module && exports && (0, Chunk605236.H4)(Chunk704215.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK).isDismissed && !eX(Chunk981631.kVF.GIFTING_PROMOTION_REMINDER)
       }
     },
     [Chunk981631.kVF.GUILD_RAID_NOTIFICATION]: {
-      predicate: () => (0, Chunk528011.g)().show && !eq(Chunk981631.kVF.GUILD_RAID_NOTIFICATION),
+      predicate: () => (0, Chunk528011.g)().show && !eX(Chunk981631.kVF.GUILD_RAID_NOTIFICATION),
       metadata: () => ({
         dismissUntil: a()().add(3, "hours").toDate()
       })
@@ -248,7 +250,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           selectedGuildId: n
         } = e;
         if (null == n) returnfalse;
-        let r = $.ZP.getMember(n, t.id);
+        let r = ee.ZP.getMember(n, t.id);
         return null != r && !r.isPending && (0, A.EY)(r)
       }
     },
@@ -257,7 +259,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           currentUser: t
         } = e;
-        return t.hasFlag(eT.xW$.QUARANTINED)
+        return t.hasFlag(eS.xW$.QUARANTINED)
       }
     },
     [Chunk981631.kVF.VIEWING_ROLES]: {
@@ -300,8 +302,8 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       predicate: e => {
         let {
           voiceChannelId: t
-        } = e, n = X.Z.getChannel(t);
-        return !et.Z.getOpenH264() && null != t && e_.Z.hasVideo(t) && null != n && n.isGuildStageVoice()
+        } = e, n = Q.Z.getChannel(t);
+        return !en.Z.getOpenH264() && null != t && ep.Z.hasVideo(t) && null != n && n.isGuildStageVoice()
       }
     },
     [Chunk981631.kVF.HARDWARE_MUTE]: {
@@ -330,7 +332,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       predicate: () => Chunk768419.Z.wasAutoPaused()
     },
     [Chunk981631.kVF.BLOCKED_BY_PROXY]: {
-      predicate: () => !eq(Chunk981631.kVF.BLOCKED_BY_PROXY) && Chunk417626.Z.blockedByProxy && Chunk621615.Z.getCurrentConfig({
+      predicate: () => !eX(Chunk981631.kVF.BLOCKED_BY_PROXY) && Chunk417626.Z.blockedByProxy && Chunk621615.Z.getCurrentConfig({
         location: "notice_store"
       }).eligibleForNotice
     },
@@ -349,7 +351,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           selectedGuildId: i,
           currentUser: a
         } = e;
-        return null != (r = null != i && null != a && !(null == (t = ee.Z.getGuild(i)) ? true : t.features.has(eT.oNc.GUILD_ONBOARDING)) && (null == (n = $.ZP.getMember(i, a.id)) ? true : n.isPending)) && r
+        return null != (r = null != i && null != a && !(null == (t = et.Z.getGuild(i)) ? true : t.features.has(eS.oNc.GUILD_ONBOARDING)) && (null == (n = ee.ZP.getMember(i, a.id)) ? true : n.isPending)) && r
       }
     },
     [Chunk981631.kVF.OUTBOUND_PROMOTION]: {
@@ -363,7 +365,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           voiceChannelId: t
         } = e;
-        return null != t && e_.Z.hasVideo(t) && !et.Z.supports(eR.AN.VIDEO) && !eq(eT.kVF.VIDEO_UNSUPPORTED_BROWSER)
+        return null != t && ep.Z.hasVideo(t) && !en.Z.supports(eP.AN.VIDEO) && !eX(eS.kVF.VIDEO_UNSUPPORTED_BROWSER)
       }
     },
     [Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK]: {
@@ -371,19 +373,19 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           currentUser: t
         } = e;
-        return ey.ZP.canRedeemPremiumPerks(t) && J.Z.getDetectedOffPlatformPremiumPerks().length > 0
+        return eO.ZP.canRedeemPremiumPerks(t) && $.Z.getDetectedOffPlatformPremiumPerks().length > 0
       },
       metadata: () => Chunk427123.Z.getDetectedOffPlatformPremiumPerks()[0]
     },
     [Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL]: {
-      predicate: () => !eq(Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL) && Chunk427123.Z.getDetectedOffPlatformPremiumPerks().length > 0,
+      predicate: () => !eX(Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL) && Chunk427123.Z.getDetectedOffPlatformPremiumPerks().length > 0,
       metadata: () => Chunk427123.Z.getDetectedOffPlatformPremiumPerks()[0]
     },
     [Chunk981631.kVF.STREAMER_MODE]: {
       predicate: () => Chunk246946.Z.enabled
     },
     [Chunk981631.kVF.DOWNLOAD_NAG]: {
-      predicate: () => !Chunk358085.isPlatformEmbedded && !eq(Chunk981631.kVF.DOWNLOAD_NAG)
+      predicate: () => !Chunk358085.isPlatformEmbedded && !eX(Chunk981631.kVF.DOWNLOAD_NAG)
     },
     [Chunk981631.kVF.SCHEDULED_MAINTENANCE]: {
       predicate: () => null != Chunk215427.Z.getScheduledMaintenance(),
@@ -417,7 +419,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.CONNECT_SPOTIFY]: {
-      predicate: () => !Chunk768419.Z.hasConnectedAccount() && Chunk594190.ZP.isObservedAppRunning(Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name) && !eq(Chunk981631.kVF.CONNECT_SPOTIFY)
+      predicate: () => !Chunk768419.Z.hasConnectedAccount() && Chunk594190.ZP.isObservedAppRunning(Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name) && !eX(Chunk981631.kVF.CONNECT_SPOTIFY)
     },
     [Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE]: {
       predicate: () => (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.arch) === "ia32" && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.process.platform) === "win32",
@@ -448,33 +450,41 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       })
     },
     [Chunk981631.kVF.CONNECT_PLAYSTATION]: {
-      predicate: () => Chunk553795.Z.isSuggestedAccountType(Chunk981631.ABu.PLAYSTATION) && null == Chunk553795.Z.getAccount(null, Chunk981631.ABu.PLAYSTATION) && !eq(Chunk981631.kVF.CONNECT_PLAYSTATION)
+      predicate: () => Chunk553795.Z.isSuggestedAccountType(Chunk981631.ABu.PLAYSTATION) && null == Chunk553795.Z.getAccount(null, Chunk981631.ABu.PLAYSTATION) && !eX(Chunk981631.kVF.CONNECT_PLAYSTATION)
+    },
+    [Chunk981631.kVF.PASSKEY_BACKUP]: {
+      predicate: e => {
+        let {
+          currentUser: t
+        } = e;
+        return null != t && t.mfaEnabled && !W.Z.hasCredentials
+      }
     },
     [Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]: {
-      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && !eq(Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING)
+      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && !eX(Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING)
     },
     [Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING]: {
-      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_0]).length > 0 && !eq(Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING)
+      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_0]).length > 0 && !eX(Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING)
     },
     [Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING]: {
-      predicate: () => Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && !eq(Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING)
+      predicate: () => Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && !eX(Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING)
     },
     [Chunk981631.kVF.PREMIUM_UNCANCEL]: {
       predicate: e => {
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eT.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eT.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, ey.M5)(n, eA.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eq(eT.kVF.PREMIUM_UNCANCEL) && s
+        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eS.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eS.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, eO.M5)(n, eC.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
+        return !eX(eS.kVF.PREMIUM_UNCANCEL) && s
       },
       metadata: e => {
         var t;
         let {
           premiumSubscription: n
-        } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, ey.Af)(n)) ? true : t.planId : null;
+        } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, eO.Af)(n)) ? true : t.planId : null;
         return {
           daysLeft: r,
-          premiumType: null != i ? ey.ZP.getPremiumType(i) : null,
+          premiumType: null != i ? eO.ZP.getPremiumType(i) : null,
           premiumSubscription: n
         }
       }
@@ -484,23 +494,23 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null != t ? a()(t.currentPeriodEnd).diff(a()(t.currentPeriodStart).startOf("day"), "days") : 0) > 14 ? 7 : 2, o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = eg.Z.applicationIdsFetched.has(eA.CL), l = eg.Z.getForApplication(eA.CL), c = null != t ? (0, ey.Af)(t) : null, u = null != c ? ey.ZP.getSkuIdForPlan(c.planId) : null, d = null != l && null != c && Array.from(l).filter(e => {
+        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null != t ? a()(t.currentPeriodEnd).diff(a()(t.currentPeriodStart).startOf("day"), "days") : 0) > 14 ? 7 : 2, o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = eE.Z.applicationIdsFetched.has(eC.CL), l = eE.Z.getForApplication(eC.CL), c = null != t ? (0, eO.Af)(t) : null, u = null != c ? eO.ZP.getSkuIdForPlan(c.planId) : null, d = null != l && null != c && Array.from(l).filter(e => {
           let {
             skuId: t,
             consumed: n
           } = e;
           return !n && t === u
-        }).length > 0, f = null != t && r <= i && r >= 0 && t.status !== eT.O0b.PAST_DUE && !o && s && !d && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eq(eT.kVF.PREMIUM_MISSING_PAYMENT) && f
+        }).length > 0, f = null != t && r <= i && r >= 0 && t.status !== eS.O0b.PAST_DUE && !o && s && !d && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
+        return !eX(eS.kVF.PREMIUM_MISSING_PAYMENT) && f
       },
       metadata: e => {
         var t;
         let {
           premiumSubscription: n
-        } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, ey.Af)(n)) ? true : t.planId : null;
+        } = e, r = null != n ? a()(n.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = null != n ? null == (t = (0, eO.Af)(n)) ? true : t.planId : null;
         return {
           daysLeft: r,
-          premiumType: null != i ? ey.ZP.getPremiumType(i) : null,
+          premiumType: null != i ? eO.ZP.getPremiumType(i) : null,
           premiumSubscription: n
         }
       }
@@ -510,8 +520,8 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t && null != t.paymentSourceId ? ep.Z.getPaymentSource(t.paymentSourceId) : null, i = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = null != t && t.status === eT.O0b.PAST_DUE && !i && null != r && r.invalid && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eq(eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT) && o
+        } = e, r = null != t && null != t.paymentSourceId ? eh.Z.getPaymentSource(t.paymentSourceId) : null, i = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = null != t && t.status === eS.O0b.PAST_DUE && !i && null != r && r.invalid && !n.hasFreePremium() && !t.isPurchasedExternally;
+        return !eX(eS.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT) && o
       },
       metadata: e => {
         let {
@@ -527,8 +537,8 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t && a()(t.currentPeriodEnd).isBefore(a()()), i = null != t && t.status === eT.O0b.PAST_DUE && !r && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eq(eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT) && i
+        } = e, r = null != t && a()(t.currentPeriodEnd).isBefore(a()()), i = null != t && t.status === eS.O0b.PAST_DUE && !r && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
+        return !eX(eS.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT) && i
       },
       metadata: e => {
         let {
@@ -552,15 +562,15 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.PREMIUM_REACTIVATE]: {
-      predicate: () => !eq(Chunk981631.kVF.PREMIUM_REACTIVATE) && Chunk616106.Z.shouldShowReactivateNotice()
+      predicate: () => !eX(Chunk981631.kVF.PREMIUM_REACTIVATE) && Chunk616106.Z.shouldShowReactivateNotice()
     },
     [Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT]: {
       predicate: e => {
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t && a()(t.currentPeriodEnd).isBefore(a()()), i = null != t && null != t.paymentSourceId ? ep.Z.getPaymentSource(t.paymentSourceId) : null, o = null != i && eN.Uk.has(i.type), s = null != t && t.status === eT.O0b.PAST_DUE && !r && o && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eq(eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT) && s
+        } = e, r = null != t && a()(t.currentPeriodEnd).isBefore(a()()), i = null != t && null != t.paymentSourceId ? eh.Z.getPaymentSource(t.paymentSourceId) : null, o = null != i && eR.Uk.has(i.type), s = null != t && t.status === eS.O0b.PAST_DUE && !r && o && !n.hasFreePremium() && !t.isPurchasedExternally;
+        return !eX(eS.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT) && s
       },
       metadata: e => {
         let {
@@ -570,20 +580,20 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           daysPastDue: 0,
           dismissUntil: a()().toDate()
         } : {
-          daysPastDue: t.status === eT.O0b.PAST_DUE ? a()().diff(t.currentPeriodStart, "days") : 0,
-          dismissUntil: (0, ey.lY)(t).expiresDate.toDate()
+          daysPastDue: t.status === eS.O0b.PAST_DUE ? a()().diff(t.currentPeriodStart, "days") : 0,
+          dismissUntil: (0, eO.lY)(t).expiresDate.toDate()
         }
       }
     },
     [Chunk981631.kVF.POMELO_ELIGIBLE]: {
-      predicate: () => (0, Chunk332473.e)() && !eq(Chunk981631.kVF.POMELO_ELIGIBLE)
+      predicate: () => (0, Chunk332473.e)() && !eX(Chunk981631.kVF.POMELO_ELIGIBLE)
     },
     [Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION]: {
       predicate: e => {
         let {
           selectedGuildId: t
-        } = e, n = null != t ? ee.Z.getGuild(t) : null;
-        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eT.oNc.COMMUNITY)) && !eq(eT.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
+        } = e, n = null != t ? et.Z.getGuild(t) : null;
+        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eS.oNc.COMMUNITY)) && !eX(eS.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
       },
       metadata: e => {
         let {
@@ -599,7 +609,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION]: {
-      predicate: () => !eq(Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION) && 0 !== Chunk674525.Z.getEligibleGuildsForNagActivate().length && (0, Chunk223892.Lm)()
+      predicate: () => !eX(Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION) && 0 !== Chunk674525.Z.getEligibleGuildsForNagActivate().length && (0, Chunk223892.Lm)()
     },
     [Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR]: {
       predicate: e => {
@@ -629,12 +639,12 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         var t;
         let {
           currentUser: n
-        } = e, r = null != (t = ep.Z.paymentSources) ? t : {};
-        return w.Z.getIsTargeted() && !(0, ey.I5)(n) && 0 !== Object.keys(r).length
+        } = e, r = null != (t = eh.Z.paymentSources) ? t : {};
+        return w.Z.getIsTargeted() && !(0, eO.I5)(n) && 0 !== Object.keys(r).length
       }
     },
     [Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR]: {
-      predicate: () => !eq(Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR) && Chunk867003.L0(),
+      predicate: () => !eX(Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR) && Chunk867003.L0(),
       metadata: () => ({
         dismissUntil: a()().add(180, "days").toDate(),
         sampleRate: .1
@@ -660,171 +670,171 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           voiceChannelId: t
         } = e;
-        if (eq(eT.kVF.SYSTEM_SERVICE_WARNING) || !(0, H.s2)(O.ZP) || null == t || et.Z.getMode() !== eT.pM4.PUSH_TO_TALK) returnfalse;
+        if (eX(eS.kVF.SYSTEM_SERVICE_WARNING) || !(0, H.s2)(O.ZP) || null == t || en.Z.getMode() !== eS.pM4.PUSH_TO_TALK) returnfalse;
         let n = O.ZP.getVisibleGame();
         return null != n && !!n.elevated
       }
     }
   };
 
-function e$() {
+function e0() {
   var e, t, n;
   if (!Chunk38618.Z.isConnected()) returnfalse;
-  eV = null;
+  eH = null;
   let r = Chunk594174.default.getCurrentUser();
   if (null == r) returnfalse;
   let i = Chunk78839.Z.getPremiumSubscription(),
     a = Chunk914010.Z.getGuildId(),
     o = Chunk944486.Z.getVoiceChannelId(),
     s = null != Chunk442837 ? Chunk979651.Z.getVoiceStateForChannel(Chunk442837) : null;
-  for (let n of Chunk188785.a ? eQ : eX)
-    if (null != eJ[require] && eJ[require].predicate({
+  for (let n of Chunk188785.a ? eJ : eQ)
+    if (null != e$[require] && e$[require].predicate({
         selectedGuildId: a,
         voiceChannelId: Chunk442837,
         voiceState: Chunk743426,
         currentUser: r,
         premiumSubscription: Chunk913527
       })) {
-      let o = null == (e = (t = eJ[require]).metadata) ? true : module.call(exports, {
+      let o = null == (e = (t = e$[require]).metadata) ? true : module.call(exports, {
         currentUser: r,
         premiumSubscription: Chunk913527,
         selectedGuildId: a
       });
-      eV = eL(ew({}, eF), {
+      eH = ex(eD({}, eV), {
         type: require,
         metadata: Chunk442837
       });
       break
-    } if (null != eV) {
-    (null == (n = eV.metadata) ? true : require.sampleRate) != null && null == eZ[eV.type] && (eZ[eV.type] = Math.random() <= eV.metadata.sampleRate);
-    let e = false === eZ[eV.type];
-    (eq(eV.type) || module) && (eV = null)
+    } if (null != eH) {
+    (null == (n = eH.metadata) ? true : require.sampleRate) != null && null == eF[eH.type] && (eF[eH.type] = Math.random() <= eH.metadata.sampleRate);
+    let e = false === eF[eH.type];
+    (eX(eH.type) || module) && (eH = null)
   }
-}
-
-function e0(e) {
-  let {
-    voiceStates: t
-  } = e;
-  return ((null == eV ? true : eV.type) === eT.kVF.INVITED_TO_SPEAK || t.some(e => {
-    let {
-      userId: t
-    } = e;
-    return t !== K.default.getId()
-  })) && e$()
 }
 
 function e1(e) {
-  eV = e.notice
+  let {
+    voiceStates: t
+  } = e;
+  return ((null == eH ? true : eH.type) === eS.kVF.INVITED_TO_SPEAK || t.some(e => {
+    let {
+      userId: t
+    } = e;
+    return t !== z.default.getId()
+  })) && e0()
 }
 
 function e2(e) {
-  return null != eV && (null == e.id || e.id === eV.id) && (ez(eV.type, e.isTemporary, e.untilAtLeast), e$())
+  eH = e.notice
 }
 
 function e3(e) {
+  return null != eH && (null == e.id || e.id === eH.id) && (eq(eH.type, e.isTemporary, e.untilAtLeast), e0())
+}
+
+function e4(e) {
   let {
     noticeType: t
   } = e;
-  return ez(t), e$()
-}
-
-function e4() {
-  return Chunk246946.Z.enabled || delete eB[Chunk981631.kVF.STREAMER_MODE], e$()
+  return eq(t), e0()
 }
 
 function e8() {
-  return delete eB[Chunk981631.kVF.DISPATCH_ERROR], e$()
+  return Chunk246946.Z.enabled || delete eZ[Chunk981631.kVF.STREAMER_MODE], e0()
 }
 
 function e5() {
-  return delete eB[Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], e$()
+  return delete eZ[Chunk981631.kVF.DISPATCH_ERROR], e0()
 }
 
 function e6() {
-  return e$()
+  return delete eZ[Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], e0()
 }
 
 function e7() {
-  return e$()
+  return e0()
 }
 
-function e9(e) {
-  return e.user.id === K.default.getId() && e$()
+function e9() {
+  return e0()
 }
 
-function te() {
-  eB = {}, eZ = {}, eV = null
+function te(e) {
+  return e.user.id === z.default.getId() && e0()
 }
-class tt extends(r = Chunk442837.ZP.Store) {
+
+function tt() {
+  eZ = {}, eF = {}, eH = null
+}
+class tn extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk558724.Z, Chunk571474.Z, Chunk427123.Z, Chunk914010.Z, Chunk1844.Z, Chunk431.Z, Chunk881998.Z, Chunk553795.Z, Chunk581883.Z, Chunk487419.Z, Chunk569984.Z, Chunk199902.Z, Chunk594190.ZP], e$), this.waitFor(Chunk594174.default, Chunk215427.Z, Chunk430824.Z, Chunk271383.ZP, Chunk19780.Z, Chunk131951.Z, Chunk246946.Z, Chunk353926.Z, Chunk914010.Z, Chunk23434.Z, Chunk768419.Z, Chunk594190.ZP, Chunk571474.Z, Chunk922156.Z, Chunk436181.Z, Chunk695103.Z, Chunk292959.Z, Chunk78839.Z, Chunk941128.Z, Chunk427123.Z, Chunk853872.Z, Chunk496675.Z, Chunk1844.Z, Chunk580130.Z, Chunk431.Z, Chunk553795.Z, Chunk41776.Z, Chunk674525.Z, Chunk417626.Z, Chunk569984.Z, Chunk199902.Z)
+    this.syncWith([Chunk558724.Z, Chunk571474.Z, Chunk427123.Z, Chunk914010.Z, Chunk1844.Z, Chunk431.Z, Chunk881998.Z, Chunk553795.Z, Chunk581883.Z, Chunk487419.Z, Chunk569984.Z, Chunk199902.Z, Chunk594190.ZP, Chunk15980.Z], e0), this.waitFor(Chunk594174.default, Chunk215427.Z, Chunk430824.Z, Chunk271383.ZP, Chunk19780.Z, Chunk131951.Z, Chunk246946.Z, Chunk353926.Z, Chunk914010.Z, Chunk23434.Z, Chunk768419.Z, Chunk594190.ZP, Chunk571474.Z, Chunk922156.Z, Chunk436181.Z, Chunk695103.Z, Chunk292959.Z, Chunk78839.Z, Chunk941128.Z, Chunk427123.Z, Chunk853872.Z, Chunk496675.Z, Chunk1844.Z, Chunk580130.Z, Chunk431.Z, Chunk553795.Z, Chunk41776.Z, Chunk674525.Z, Chunk417626.Z, Chunk569984.Z, Chunk199902.Z)
   }
   hasNotice() {
-    return null != eV && null != eV.type
+    return null != eH && null != eH.type
   }
   getNotice() {
-    return null == Chunk23434.Z.getAction() ? eV : null
+    return null == Chunk23434.Z.getAction() ? eH : null
   }
   isNoticeDismissed(e) {
-    return eq(e)
+    return eX(e)
   }
 }
-eP(tt, "displayName", "NoticeStore");
-let tn = new tt(Chunk570140.Z, {
-  CURRENT_USER_UPDATE: e$,
-  MEDIA_ENGINE_SET_AUDIO_ENABLED: e$,
-  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: e$,
-  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: e$,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE: e$,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: e$,
-  GUILD_CREATE: e$,
-  GUILD_DELETE: e$,
-  AUDIO_INPUT_DETECTED: e$,
-  AUDIO_SET_DISPLAY_SILENCE_WARNING: e$,
-  CERTIFIED_DEVICES_SET: e$,
-  AUDIO_SET_INPUT_DEVICE: e$,
-  AUDIO_SET_OUTPUT_DEVICE: e$,
-  MEDIA_ENGINE_DEVICES: e$,
-  RTC_CONNECTION_STATE: e$,
-  RPC_APP_AUTHENTICATED: e$,
-  RPC_APP_DISCONNECTED: e$,
-  USER_CONNECTIONS_UPDATE: e$,
-  WINDOW_FOCUS: e$,
-  INSTANT_INVITE_CREATE: e$,
-  INSTANT_INVITE_REVOKE_SUCCESS: e$,
-  SPOTIFY_PLAYER_PAUSE: e$,
-  RUNNING_GAMES_CHANGE: e$,
-  EXPERIMENTS_FETCH_SUCCESS: e$,
-  PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: e$,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: e$,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: e$,
-  DEVELOPER_TEST_MODE_RESET: e$,
-  BILLING_SUBSCRIPTION_FETCH_SUCCESS: e$,
-  DISPATCH_APPLICATION_INSTALL: e$,
-  IMPERSONATE_STOP: e$,
-  IMPERSONATE_UPDATE: e$,
-  GUILD_MEMBER_ADD: e9,
-  GUILD_MEMBER_UPDATE: e$,
-  SURVEY_FETCHED: e$,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: e$,
-  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: e$,
-  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: e$,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: e$,
-  VOICE_STATE_UPDATES: e0,
-  STREAMER_MODE_UPDATE: e4,
-  RUNNING_STREAMER_TOOLS_CHANGE: e4,
-  DISPATCH_APPLICATION_ERROR: e8,
-  DISPATCH_APPLICATION_LAUNCH_SETUP_START: e5,
-  DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: e6,
-  DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE: e7,
-  NOTICE_SHOW: e1,
-  NOTICE_DISMISS: e2,
-  NOTICE_DISABLE: e3,
-  LOGOUT: te,
-  SUBSCRIPTION_PLANS_FETCH_SUCCESS: e$,
-  AUTO_MODERATION_MENTION_RAID_DETECTION: e$,
-  CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: e$,
-  PROXY_BLOCKED_REQUEST: e$,
-  REPORT_AV_ERROR: e$
+ew(tn, "displayName", "NoticeStore");
+let tr = new tn(Chunk570140.Z, {
+  CURRENT_USER_UPDATE: e0,
+  MEDIA_ENGINE_SET_AUDIO_ENABLED: e0,
+  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: e0,
+  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: e0,
+  STATUS_PAGE_SCHEDULED_MAINTENANCE: e0,
+  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: e0,
+  GUILD_CREATE: e0,
+  GUILD_DELETE: e0,
+  AUDIO_INPUT_DETECTED: e0,
+  AUDIO_SET_DISPLAY_SILENCE_WARNING: e0,
+  CERTIFIED_DEVICES_SET: e0,
+  AUDIO_SET_INPUT_DEVICE: e0,
+  AUDIO_SET_OUTPUT_DEVICE: e0,
+  MEDIA_ENGINE_DEVICES: e0,
+  RTC_CONNECTION_STATE: e0,
+  RPC_APP_AUTHENTICATED: e0,
+  RPC_APP_DISCONNECTED: e0,
+  USER_CONNECTIONS_UPDATE: e0,
+  WINDOW_FOCUS: e0,
+  INSTANT_INVITE_CREATE: e0,
+  INSTANT_INVITE_REVOKE_SUCCESS: e0,
+  SPOTIFY_PLAYER_PAUSE: e0,
+  RUNNING_GAMES_CHANGE: e0,
+  EXPERIMENTS_FETCH_SUCCESS: e0,
+  PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: e0,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: e0,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: e0,
+  DEVELOPER_TEST_MODE_RESET: e0,
+  BILLING_SUBSCRIPTION_FETCH_SUCCESS: e0,
+  DISPATCH_APPLICATION_INSTALL: e0,
+  IMPERSONATE_STOP: e0,
+  IMPERSONATE_UPDATE: e0,
+  GUILD_MEMBER_ADD: te,
+  GUILD_MEMBER_UPDATE: e0,
+  SURVEY_FETCHED: e0,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: e0,
+  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: e0,
+  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: e0,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: e0,
+  VOICE_STATE_UPDATES: e1,
+  STREAMER_MODE_UPDATE: e8,
+  RUNNING_STREAMER_TOOLS_CHANGE: e8,
+  DISPATCH_APPLICATION_ERROR: e5,
+  DISPATCH_APPLICATION_LAUNCH_SETUP_START: e6,
+  DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: e7,
+  DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE: e9,
+  NOTICE_SHOW: e2,
+  NOTICE_DISMISS: e3,
+  NOTICE_DISABLE: e4,
+  LOGOUT: tt,
+  SUBSCRIPTION_PLANS_FETCH_SUCCESS: e0,
+  AUTO_MODERATION_MENTION_RAID_DETECTION: e0,
+  CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: e0,
+  PROXY_BLOCKED_REQUEST: e0,
+  REPORT_AV_ERROR: e0
 })

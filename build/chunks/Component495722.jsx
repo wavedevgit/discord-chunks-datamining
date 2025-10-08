@@ -115,7 +115,7 @@ function F(e) {
   })
 }
 
-function X(e) {
+function z(e) {
   return (0, r.jsx)(m.Text, {
     className: U.description,
     variant: "text-xs/normal",
@@ -132,7 +132,7 @@ function X(e) {
   })
 }
 
-function z(e) {
+function X(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -169,10 +169,10 @@ function z(e) {
             className: U.title,
             color: "header-primary",
             variant: "heading-md/medium",
-            children: W.intl.format(W.t.EQa7oq, {
+            children: Z.intl.format(Z.t.EQa7oq, {
               questName: t.config.messages.questName
             })
-          }), (0, r.jsx)(X, {
+          }), (0, r.jsx)(z, {
             quest: t,
             taskDetails: n,
             popoutTargetElementRef: j,
@@ -308,19 +308,19 @@ function K(e) {
     onGameSheetClosed: v
   } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = o.percentComplete > 0, O = (0, j.z)(n), [S, T, w] = (0, j.me)(n, o), P = s.useRef(null), N = s.useRef(null), R = (0, j._s)({
     quest: n
-  }), W = (0, b.q8)(n), F = (0, j.Jf)(n), X = s.useCallback(() => {
+  }), Z = (0, b.q8)(n), F = (0, j.Jf)(n), z = s.useCallback(() => {
     (0, A.openVideoQuestModal)({
       quest: n,
       questContent: y.jn.QUEST_BAR_V2,
       sourceQuestContent: y.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: _.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), z = null != F ? F.percentComplete : o.percentComplete;
+  }, [n]), X = null != F ? F.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(U.postEnrollmentBackground, U.postEnrollmentBackgroundCollapsed),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")"),
+        backgroundImage: "linear-gradient(90deg, ".concat(W.aY, ", ").concat(W.v6, ")"),
         opacity: c.to({
           range: [0, 1],
           output: [1, 0]
@@ -350,7 +350,7 @@ function K(e) {
         quest: n,
         progressBarRef: P,
         isExpanded: true,
-        percentComplete: z,
+        percentComplete: X,
         activeScreen: S,
         popoutTargetElementRef: N,
         onGameSheetOpened: x,
@@ -366,10 +366,10 @@ function K(e) {
           taskDetails: o
         })).exhaustive()
       }), (0, r.jsxs)(B.n, {
-        children: [W && (0, r.jsx)(H, {
+        children: [Z && (0, r.jsx)(H, {
           isExpanded: u,
           quest: n,
-          onClick: X,
+          onClick: z,
           reducedMotion: p
         }), (0, r.jsx)(k.y, {
           quest: n,
@@ -390,7 +390,7 @@ function K(e) {
     }), (0, r.jsx)("div", {
       className: a()(U.postEnrollmentBackground, U.postEnrollmentBackgroundExpanded),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")")
+        backgroundImage: "linear-gradient(90deg, ".concat(W.aY, ", ").concat(W.v6, ")")
       }
     })]
   })
@@ -473,7 +473,7 @@ let J = Chunk647438.forwardRef(function(e, t) {
         containerRef: t,
         onGameSheetOpened: h,
         onGameSheetClosed: x
-      }) : (0, r.jsx)(z, {
+      }) : (0, r.jsx)(X, {
         quest: C,
         taskDetails: O,
         expansionSpring: p,
