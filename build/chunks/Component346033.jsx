@@ -125,6 +125,9 @@ let U = e => {
       }), (0, Chunk951288.jsx)(U, {
         inOfferExperience: en
       }), (0, Chunk951288.jsxs)("div", {
+        className: o()({
+          [Chunk689095.settingsContainer]: !en
+        }),
         children: [null != ea && (0, Chunk951288.jsx)(Chunk218390.C, {
           className: Chunk689095.giftPromoCard,
           config: ea
