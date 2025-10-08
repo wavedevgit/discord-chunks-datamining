@@ -93,7 +93,7 @@ function L(e) {
       isLoaded: null == k ? true : k.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: W,
-        children: (0, r.jsxs)(x.Z, {
+        children: (0, r.jsxs)(O.Z, {
           ref: B,
           user: n,
           displayProfile: k,
@@ -122,7 +122,7 @@ function L(e) {
                 themeType: R.l.SIDEBAR,
                 animateOnHoverOrFocusOnly: !z,
                 className: A.banner
-              }), (0, r.jsx)(O.Z, {
+              }), (0, r.jsx)(x.Z, {
                 userId: n.id,
                 className: A.toast
               }), (0, r.jsx)(_.Z, {

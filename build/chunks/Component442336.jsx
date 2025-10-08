@@ -58,12 +58,12 @@ function b(e) {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let O = e => {
+  let x = e => {
       e.shiftKey ? s.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
       }, d.UE.muted(!b)) : j(e => !e)
     },
-    x = f.intl.string(f.t.h850Sk);
+    O = f.intl.string(f.t.h850Sk);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
     shouldShow: _,
@@ -84,10 +84,10 @@ function b(e) {
       } = t;
       return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
         ref: n,
-        onClick: O,
-        tooltip: i ? null : x,
+        onClick: x,
+        tooltip: i ? null : O,
         icon: b || y !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": x,
+        "aria-label": O,
         selected: i
       }))
     }

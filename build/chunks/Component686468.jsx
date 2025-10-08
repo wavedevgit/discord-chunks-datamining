@@ -31,18 +31,18 @@ function v(e) {
   } = e, i = c.S6n;
   return (0, r.jsx)(u.Z, {
     iconContainerClassName: a()({
-      [x.continueIconContainer]: false
+      [O.continueIconContainer]: false
     }),
     icon: (0, r.jsx)(i, {
       size: "custom",
       color: "currentColor",
-      className: x.continueIcon,
+      className: O.continueIcon,
       height: 20,
       width: 20
     }),
     color: o.Z.unsafe_rawColors.PRIMARY_700.css,
-    title: O.intl.string(O.t.jMLfp6),
-    description: O.intl.string(O.t["Vd/rER"]),
+    title: x.intl.string(x.t.jMLfp6),
+    description: x.intl.string(x.t["Vd/rER"]),
     onClick: t,
     className: n
   })
@@ -56,9 +56,9 @@ function C(e) {
     usersInSummary: i
   } = (0, _.Z)(t.id);
   return (0, r.jsxs)("div", {
-    className: x.audienceSummary,
+    className: O.audienceSummary,
     children: [(0, r.jsx)(d.ZP, {
-      className: x.summaryItem,
+      className: O.summaryItem,
       guildId: t.guild_id,
       users: i,
       size: d.u8.SIZE_16
@@ -67,15 +67,15 @@ function C(e) {
       color: "header-secondary",
       children: function(e) {
         if (0 === e.length) return "";
-        if (1 === e.length) return O.intl.formatToPlainString(O.t["5ULgaW"], {
+        if (1 === e.length) return x.intl.formatToPlainString(x.t["5ULgaW"], {
           first: e[0].userNick
         });
-        if (2 === e.length) return O.intl.formatToPlainString(O.t.BHK0Oj, {
+        if (2 === e.length) return x.intl.formatToPlainString(x.t.BHK0Oj, {
           first: e[0].userNick,
           second: e[1].userNick
         });
         let t = e.length - 2;
-        return O.intl.formatToPlainString(O.t.T3MT4u, {
+        return x.intl.formatToPlainString(x.t.T3MT4u, {
           first: e[0].userNick,
           second: e[1].userNick,
           numOthers: t
@@ -93,35 +93,35 @@ function I(e) {
     canCreateGuildEvent: d
   } = (0, g.XJ)(t), u = (0, j.Z)(t.id), _ = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: x.container,
+    className: O.container,
     ref: _,
     children: [(0, r.jsx)(m.Z, {
       eventTargetRef: _
     }), (0, r.jsxs)("div", {
-      className: x.content,
+      className: O.content,
       children: [(0, r.jsxs)("div", {
-        className: x.headerContainer,
+        className: O.headerContainer,
         children: [(0, r.jsx)(c.X6q, {
-          className: x.__invalid_title,
+          className: O.__invalid_title,
           variant: "heading-xxl/normal",
-          children: O.intl.string(O.t.QGnDLi)
+          children: x.intl.string(x.t.QGnDLi)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
-          className: x.subtitle,
+          className: O.subtitle,
           variant: "heading-lg/normal",
-          children: O.intl.string(O.t.djfK39)
+          children: x.intl.string(x.t.djfK39)
         })]
       }), u ? null : (0, r.jsx)(h.Z, {
         channelId: t.id
       }), l ? (0, r.jsx)(f.Z, {
-        className: x.eventPrompt,
+        className: O.eventPrompt,
         channel: t
       }) : null, d ? (0, r.jsx)(p.Z, {
-        className: x.eventPrompt,
+        className: O.eventPrompt,
         guildId: o
       }) : null, l ? (0, r.jsx)(v, {
         className: a()({
-          [x.eventPrompt]: true
+          [O.eventPrompt]: true
         }),
         onClick: n
       }) : null, (0, r.jsx)(C, {

@@ -23,8 +23,8 @@ function b(e) {
   let {
     channel: b
   } = e, y = i.useContext(p.AnalyticsContext), _ = (0, c.Aq)(), j = g.intl.string(m.default["Beo/7u"]), {
-    firstMessage: O
-  } = (0, a.cl)(b), x = null == O || null == (t = O.messageSnapshots) ? true : t[0], v = null == x || null == (n = x.moderatorReport) ? true : n.reported_user_id;
+    firstMessage: x
+  } = (0, a.cl)(b), O = null == x || null == (t = x.messageSnapshots) ? true : t[0], v = null == O || null == (n = O.moderatorReport) ? true : n.reported_user_id;
   return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(o.ZP.Icon, {
     onClick: () => {
       (0, u.Kh)(b.id), (0, d.i)(), (0, s.r)(b.guild_id, v, b.id, {

@@ -2,7 +2,7 @@
 /** chunk id: 165017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => d
+  H: () => f
 });
 var Chunk498607 = require("./498607.js"),
   i = require.n(Chunk498607),
@@ -15,9 +15,19 @@ var Chunk498607 = require("./498607.js"),
 
 function d(e) {
   let {
+    isSearchDesktopXDMExperimentEnabled: t,
+    isGlobalXDMSettingSupported: n
+  } = e;
+  return !!t && !!n || !!t
+}
+
+function f(e) {
+  let {
     guildId: t,
     channelId: n
-  } = e, r = (0, c.UX)({
+  } = e, r = (0, c.u5)({
+    location: "useDesktopSearchContext"
+  }), f = (0, c.UX)({
     location: "useDesktopSearchContext"
   });
   return (0, a.e7)([s.Z, o.Z, l.Z], () => {
@@ -28,11 +38,14 @@ function d(e) {
     } : null != t && null != e ? {
       type: u.aib.GUILD,
       guildId: t
-    } : null != n && null != i && i.isPrivate() ? r ? {
+    } : null != n && null != i && i.isPrivate() ? d({
+      isSearchDesktopXDMExperimentEnabled: f,
+      isGlobalXDMSettingSupported: r
+    }) ? {
       type: u.aib.DMS
     } : {
       type: u.aib.CHANNEL,
       channelId: n
     } : null
-  }, [n, t, r], i())
+  }, [n, t, r, f], i())
 }

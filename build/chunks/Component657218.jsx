@@ -192,8 +192,8 @@ function X(e) {
       setTextAreaState: r
     }
   }(t, f), j = (0, k.vH)(t), {
-    isGeneratingAI: O,
-    enableAIFeatures: x,
+    isGeneratingAI: x,
+    enableAIFeatures: O,
     getThreadNameInputAccessory: C
   } = (0, H.U)({
     parentChannel: t,
@@ -276,7 +276,7 @@ function X(e) {
     privateThreadMode: j,
     textAreaState: b,
     location: l,
-    enableAIFeatures: x
+    enableAIFeatures: O
   }), R = (0, k.oD)(p, j) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: V.chat,
@@ -308,8 +308,8 @@ function X(e) {
                 updateThreadSettings: m,
                 error: I,
                 disabled: N,
-                isGeneratingAI: O,
-                enableAIFeatures: x,
+                isGeneratingAI: x,
+                enableAIFeatures: O,
                 getThreadNameInputAccessory: C
               }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
@@ -389,7 +389,7 @@ function $(e) {
     getThreadNameInputAccessory: h
   } = e, f = null != (t = l.name) ? t : "", g = (0, M.Op)(s, {
     content: f
-  }), m = (0, k.Od)(n, i), b = null != i && !p, y = (0, x.Dt)(), _ = p ? z.intl.string(z.t["Nb2/RE"]) : "" !== m ? m : z.intl.string(z.t["Nb2/RE"]);
+  }), m = (0, k.Od)(n, i), b = null != i && !p, y = (0, O.Dt)(), _ = p ? z.intl.string(z.t["Nb2/RE"]) : "" !== m ? m : z.intl.string(z.t["Nb2/RE"]);
   return (0, r.jsx)(c.oil, {
     label: z.intl.string(b ? z.t.JPvIiI : z.t.j3XWjI),
     trailing: h(o),
@@ -441,18 +441,18 @@ function ee(e) {
     handler: m
   });
   let _ = (0, s.e7)([R.Z], () => R.Z.can(B.Plq.ATTACH_FILES, t)),
-    x = (0, M.Op)(p, {
+    O = (0, M.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channelId: t.id,
       type: q,
       canAttachFiles: _
     }), (0, r.jsx)("div", {
       className: V.starterMessageError,
       children: (0, r.jsx)(c.pdY, {
-        error: x
+        error: O
       })
     }), (0, r.jsx)(j.ZP, {
       type: q,
@@ -463,7 +463,7 @@ function ee(e) {
       focused: h,
       className: a()(V.channelTextArea, V.channelTextAreaWithTypingIndicator),
       innerClassName: a()(V.channelTextAreaInner, {
-        [V.channelTextAreaInnerError]: null != x
+        [V.channelTextAreaInnerError]: null != O
       }),
       onFocus: g,
       onBlur: m,

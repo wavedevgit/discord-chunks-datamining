@@ -58,7 +58,7 @@ function w(e) {
     channel: s,
     status: d,
     activities: u
-  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), O = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, h.Z)(t.id), T = i.useRef(null), N = e => {
+  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, h.Z)(t.id), T = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    x.S.dispatch(S.CkL.TEXTAREA_FOCUS, {
+    O.S.dispatch(S.CkL.TEXTAREA_FOCUS, {
       channelId: s.id
-    }), x.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
+    }), O.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(s.id)
@@ -136,7 +136,7 @@ function w(e) {
         channel: s,
         onContextMenu: N,
         selected: D,
-        isMobile: O,
+        isMobile: x,
         nick: v,
         nameplate: A,
         onClick: e => {
@@ -194,7 +194,7 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    O.default.track(S.rMx.MEMBER_LIST_VIEWED, {
+    x.default.track(S.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

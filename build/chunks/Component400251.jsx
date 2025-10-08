@@ -84,7 +84,7 @@ function P(e) {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
     canEdit: u
-  } = (0, O.Z)(t);
+  } = (0, x.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
@@ -110,7 +110,7 @@ function P(e) {
             className: I.overflowIcon
           })
         })
-      }) : null, (0, r.jsx)(x.Z, {
+      }) : null, (0, r.jsx)(O.Z, {
         targetElementRef: d,
         onRequestOpen: () => s(true),
         onRequestClose: () => s(false),
@@ -158,7 +158,7 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -167,7 +167,7 @@ let N = e => {
     } finally {
       o(false)
     }
-  }, x = _.ZP.getGuildSplashURL({
+  }, O = _.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
@@ -192,8 +192,8 @@ let N = e => {
       className: I.cardHeader,
       children: [(0, r.jsx)("div", {
         className: I.splash,
-        children: null != x && (0, r.jsx)("img", {
-          src: x,
+        children: null != O && (0, r.jsx)("img", {
+          src: O,
           alt: "",
           className: I.splashImage
         })
@@ -263,7 +263,7 @@ let N = e => {
         children: (0, r.jsx)(c.zxk, {
           loading: a,
           variant: h ? "secondary" : "active",
-          onClick: O,
+          onClick: x,
           text: T,
           fullWidth: true
         })
