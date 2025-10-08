@@ -35,7 +35,7 @@ function P(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, S.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(y.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([S.ZP, C.default], () => S.ZP.getVoiceStatesForChannel(t.record).map(e => C.default.getUser(e.user.id)).filter(y.lm));
   return (0, r.jsxs)(a.P3F, {
     className: N.channelResult,
     onClick: () => n(t.record.id),
@@ -80,29 +80,29 @@ function T(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), S = (0, o.Wu)([b.Z, _.ZP, g.Z, v.Z, j.Z], () => {
+  }), C = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
     let e = [],
       t = b.Z.getGuildId();
     if (null == t) return e;
     for (let n of _.ZP.getVocalChannelIds(t)) {
-      let t = g.Z.getChannel(n);
+      let t = x.Z.getChannel(n);
       null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
     }
     return e
-  }), C = (0, o.Wu)([f.Z, g.Z, x.Z, v.Z, j.Z], () => {
+  }), S = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
-      let r = g.Z.getChannel(n);
+      let r = x.Z.getChannel(n);
       (null == r ? true : r.type) === w.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
-    let e = new Set(C.map(e => e.id)),
-      t = new Set(S.map(e => e.id));
-    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
-  }, [C, S]), R = "" !== u ? p : T;
+    let e = new Set(S.map(e => e.id)),
+      t = new Set(C.map(e => e.id));
+    return [...C.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...S.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
+  }, [S, C]), R = "" !== u ? p : T;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
     children: [(0, r.jsx)("div", {

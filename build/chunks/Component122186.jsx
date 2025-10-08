@@ -43,9 +43,9 @@ function v(e) {
     o = i.useCallback(() => {
       if (null != l) {
         var e;
-        return null != (e = (0, h.fr)(l, g.Si.TIER_2)) ? e : x.intl.string(x.t.Y2WKTk)
+        return null != (e = (0, h.fr)(l, x.Si.TIER_2)) ? e : g.intl.string(g.t.Y2WKTk)
       }
-      return x.intl.string(x.t.Y2WKTk)
+      return g.intl.string(g.t.Y2WKTk)
     }, [l]);
   return (0, r.jsx)(m.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -67,7 +67,7 @@ function v(e) {
   }({
     className: s()(_.enhancedCTA, _.ctaGradientBackground),
     iconClassName: _.premiumIcon,
-    subscriptionTier: g.Si.TIER_2,
+    subscriptionTier: x.Si.TIER_2,
     textOptions: {
       textOverride: o()
     },
@@ -121,7 +121,7 @@ function b(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         className: s()(_.upsellText, _.enhancedUpsellText),
-        children: null != t ? t : x.intl.format(x.t["L/zCtr"], {
+        children: null != t ? t : g.intl.format(g.t["L/zCtr"], {
           onClick: () => i({
             analyticsLocation: o,
             onClose: n

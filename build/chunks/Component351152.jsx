@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 351152, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => C
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,7 +31,7 @@ function b(e) {
     let {
       channel: t
     } = e;
-    return (0, g.JL)(t, f.Z, m.Z)
+    return (0, x.JL)(t, f.Z, m.Z)
   }));
   return null != i && l ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
@@ -51,11 +51,11 @@ function b(e) {
   }) : null
 }
 
-function S(e) {
+function C(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
-  return (0, r.jsx)(x.Z, {
+  return (0, r.jsx)(g.Z, {
     title: _.intl.string(_.t.JsqeEh),
     scrollerClassName: l()(j.guildScroller, v.marginBottom),
     children: o().flatMap(n, e => {

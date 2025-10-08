@@ -55,10 +55,10 @@ function b(e) {
   let {
     onSourceSelect: t
   } = e;
-  (0, f.UB)(), (0, m.Z)(t, x.Vq);
+  (0, f.UB)(), (0, m.Z)(t, g.Vq);
   let [{
     nativeSourceType: n
-  }, i] = (0, p.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, g.jR);
+  }, i] = (0, p.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, x.jR);
   return (0, r.jsxs)("div", {
     className: v.root,
     children: [(0, r.jsx)(a.X6q, {

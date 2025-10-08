@@ -58,10 +58,10 @@ function Y(e) {
     selectSource: J = true
   } = e, X = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
     analyticsLocations: q
-  } = (0, _.ZP)(Y, x.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([C.default], () => C.default.getCurrentUser()), $ = (0, T.Z)(), {
+  } = (0, _.ZP)(Y, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([S.default], () => S.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
-  } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
+  } = (0, A.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
   (0, W.Z)(K, et, "confirm" === ee.modalStep);
   let en = !w.ZP.canStreamQuality(w.ZP.StreamQuality.HIGH, Q),
     er = !(0, O.isLinux)(),
@@ -106,7 +106,7 @@ function Y(e) {
       }), n()
     }, [n, ee, q]);
   async function ed(e) {
-    await (0, g.Z)({
+    await (0, x.Z)({
       channelId: e
     }) && null != o && ec(o)
   }
@@ -118,7 +118,7 @@ function Y(e) {
       url: ""
     })
   }, [ec, ee.nativeSourceType]);
-  return (0, r.jsx)(k.Yw, {
+  return (0, r.jsx)(A.Yw, {
     state: ee,
     dispatch: et,
     children: (0, r.jsxs)(m.Y0X, {
@@ -127,7 +127,7 @@ function Y(e) {
         impressionProperties: {
           location_stack: q,
           application_id: (0, O.isWindows)() ? null == (t = (0, N.Z)(v.ZP, y.Z)) ? true : t.id : true,
-          parent_media_session_id: S.Z.getMediaSessionId()
+          parent_media_session_id: C.Z.getMediaSessionId()
         }
       },
       className: s()(V.root, {
@@ -141,7 +141,7 @@ function Y(e) {
       children: [el ? (0, r.jsx)(R.Z, {
         className: s()(V.channelSelectorComponent, V.withFooter),
         onSelectChannel: ed
-      }) : ei ? (0, r.jsx)(A.Z, {
+      }) : ei ? (0, r.jsx)(k.Z, {
         hideBackButton: null != o
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.xBx, {

@@ -1,45 +1,52 @@
 /** Chunk was on 46746 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => P
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
+  Chunk209739 = require("./209739.js"),
+  a = require.n(Chunk209739),
   Chunk268146 = require("./268146.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk579806 = require("./579806.js"),
   Chunk594190 = require("./594190.js"),
   Chunk320724 = require("./320724.js"),
+  Chunk751571 = require("./751571.js"),
   Chunk569984 = require("./569984.js"),
   Chunk63063 = require("./63063.js"),
+  Chunk358085 = require("./358085.js"),
+  Chunk747268 = require("./747268.js"),
   Chunk215915 = require("./215915.js"),
   Chunk855403 = require("./855403.js"),
   Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
+  Chunk761274 = require("./761274.js"),
   Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
-function b(e) {
+function I(e) {
   let {
     source: t
   } = e;
-  return t.id.startsWith(o.vA.SCREEN) ? (0, r.jsx)(c.pzj, {
+  return t.id.startsWith(c.vA.SCREEN) ? (0, r.jsx)(u.pzj, {
     size: "xs"
-  }) : t.id.startsWith(o.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
+  }) : t.id.startsWith(c.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
-    className: j.sourceIcon,
+    className: Z.sourceIcon,
     alt: ""
-  }) : (0, r.jsx)(c.GON, {
+  }) : (0, r.jsx)(u.GON, {
     size: "xs"
-  }) : (0, r.jsx)(c.Odl, {
+  }) : (0, r.jsx)(u.Odl, {
     size: "xs"
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     source: t,
     selected: n,
@@ -48,83 +55,108 @@ function S(e) {
     url: l,
     name: o
   } = t;
-  return (0, r.jsxs)(c.P3F, {
+  return (0, r.jsxs)(u.P3F, {
     onClick: () => i(t),
-    className: s()(j.source, {
-      [j.selectedSource]: n
+    className: s()(Z.source, {
+      [Z.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
-      className: j.sourcePreviewContainer,
+      className: Z.sourcePreviewContainer,
       children: (0, r.jsxs)("div", {
-        className: j.sourcePreview,
+        className: Z.sourcePreview,
         children: [(0, r.jsx)("img", {
           src: l,
-          className: j.sourcePreviewImage,
+          className: Z.sourcePreviewImage,
           alt: ""
         }), (0, r.jsx)("div", {
-          className: j.sourceOverlay,
+          className: Z.sourceOverlay,
           children: (0, r.jsx)("div", {
-            className: j.sourceOverlayCTA,
-            children: (0, r.jsx)(c.Text, {
+            className: Z.sourceOverlayCTA,
+            children: (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: v.intl.string(v.t.z7WGho)
+              children: w.intl.string(w.t.z7WGho)
             })
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: j.sourceNameContainer,
-      children: [(0, r.jsx)(b, {
+      className: Z.sourceNameContainer,
+      children: [(0, r.jsx)(I, {
         source: t
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
-        className: j.sourceName,
+        className: Z.sourceName,
         children: o
       })]
     })]
   })
 }
 
-function C(e) {
+function P(e) {
   let {
     onClick: t
   } = e, [{
     windowSources: n,
     deviceSources: l,
     screenSources: s,
-    sourceType: m,
-    fetchingSources: _,
-    selectedSource: v,
-    discordSourceId: b
-  }] = (0, x.E_)(), {
-    smarterSourceOrdering: C
-  } = (0, h.E)({
+    sourceType: o,
+    fetchingSources: g,
+    selectedSource: O,
+    discordSourceId: I,
+    hasPermission: P
+  }] = (0, S.E_)(), {
+    smarterSourceOrdering: E
+  } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), O = (0, a.e7)([d.ZP], () => d.ZP.getRunningGames()), w = (0, a.cj)([d.ZP], () => {
-    let e = d.ZP.getCandidateGames(),
+  }), R = (0, d.e7)([m.ZP], () => m.ZP.getRunningGames()), k = (0, d.cj)([m.ZP], () => {
+    let e = m.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), Z = (0, a.e7)([f.Z], () => f.Z.quests), I = (0, g.jx)(Z, O, n);
-  i.useEffect(() => ((0, u.Ky)(), u.P7), []);
-  let N = i.useMemo(() => C ? [...n].sort((e, t) => (0, g.ov)(t, null == I ? true : I.source.id, b, w) - (0, g.ov)(e, null == I ? true : I.source.id, b, w)) : n, [I, C, n, b, w]);
-  if (_) return (0, r.jsx)("div", {
-    className: j.loading,
-    children: (0, r.jsx)(c.$jN, {})
-  });
-  let P = [];
-  return (P = m === o.vA.WINDOW ? N : m === o.vA.SCREEN ? s : l, m === o.vA.CAMERA && 0 === P.length) ? (0, r.jsx)(y, {}) : (0, r.jsx)("div", {
-    className: j.root,
-    children: P.map(e => (0, r.jsx)(S, {
+  }), A = (0, d.e7)([x.Z], () => x.Z.quests), M = (0, C.jx)(A, R, n);
+  i.useEffect(() => ((0, h.Ky)(), h.P7), []);
+  let D = i.useMemo(() => E ? [...n].sort((e, t) => (0, C.ov)(t, null == M ? true : M.source.id, I, k) - (0, C.ov)(e, null == M ? true : M.source.id, I, k)) : n, [M, E, n, I, k]);
+  if (g) {
+    if (!P) {
+      let e = false;
+      if ((0, _.isMac)()) {
+        var L, B;
+        let t = null === f.Z || true === f.Z || null == (B = f.Z.remoteApp) || null == (L = B.getVersion) ? true : L.call(B);
+        e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
+      }
+      return (0, r.jsxs)("div", {
+        className: Z.errorBox,
+        children: [(0, r.jsxs)(u.Text, {
+          className: Z.errorText,
+          variant: "text-md/normal",
+          color: "text-danger",
+          children: [w.intl.string(w.t["kW5h/f"]), (0, r.jsx)("br", {}), w.intl.string(w.t["5Jvu1d"])]
+        }), e && (0, r.jsx)(u.zxk, {
+          text: w.intl.string(w.t["XgZk+v"]),
+          onClick: () => {
+            p.Z.openSettings(y.Eu.SCREEN_RECORDING)
+          }
+        })]
+      })
+    }
+    return (0, r.jsx)("div", {
+      className: Z.loading,
+      children: (0, r.jsx)(u.$jN, {})
+    })
+  }
+  let G = [];
+  return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(T, {}) : (0, r.jsx)("div", {
+    className: Z.root,
+    children: G.map(e => (0, r.jsx)(N, {
       onClick: t,
       source: e,
-      selected: null != v && "windowHandle" in v ? (0, p.Z)(e.id, v.windowHandle) : (null == v ? true : v.id) === e.id
+      selected: null != O && "windowHandle" in O ? (0, b.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
     }, e.id))
   })
 }
 
-function y() {
+function T() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk602804.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060.Odl, {

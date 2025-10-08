@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 641115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -92,7 +92,7 @@ function R() {
   })
 }
 
-function A(e) {
+function k(e) {
   let t, n, {
       type: i,
       selected: l,
@@ -145,16 +145,16 @@ function A(e) {
   }
 }
 
-function k(e) {
+function A(e) {
   let {
     onClose: t,
     selectedPreset: n,
     selectedResolution: l,
     selectedFPS: s,
     onResolutionChange: o,
-    onFPSChange: g,
+    onFPSChange: x,
     onPresetChange: R,
-    targetGuildPremiumTier: k,
+    targetGuildPremiumTier: A,
     captureDeviceSelected: M
   } = e, D = (0, c.e7)([j.default], () => {
     let e = j.default.getCurrentUser();
@@ -163,13 +163,13 @@ function k(e) {
     location: G
   } = (0, m.O)(), U = (0, h.Zq)({
     autoTrackExposure: false
-  }), W = (0, x.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? y.z8 : y.WC, Y = T(P({}, G), {
+  }), W = (0, g.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? y.z8 : y.WC, Y = T(P({}, G), {
     section: O.jXE.STREAM_SETTINGS
   }), J = (0, r.jsx)(d.hE, {
-    buttons: V.map(e => A({
+    buttons: V.map(e => k({
       type: e,
       selected: e.value === l,
-      needsPremium: !(0, S.Z)(n, e.value, s, D, k, L),
+      needsPremium: !(0, C.Z)(n, e.value, s, D, A, L),
       needsDemo: W && e.value !== y.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
@@ -177,13 +177,13 @@ function k(e) {
       setIsHovering: H
     }))
   }), X = (0, r.jsx)(d.hE, {
-    buttons: y.k0.map(e => A({
+    buttons: y.k0.map(e => k({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, S.Z)(n, l, e.value, D, k, L),
+      needsPremium: !(0, C.Z)(n, l, e.value, D, A, L),
       needsDemo: W && e.value === y.ws.FPS_60,
       analyticsLocation: Y,
-      onClick: () => g(e.value),
+      onClick: () => x(e.value),
       onClose: t,
       setIsHovering: H
     }))
@@ -209,11 +209,11 @@ function k(e) {
           })
         })
       })
-    }), z ? (0, r.jsx)(C.Z, {
+    }), z ? (0, r.jsx)(S.Z, {
       message: w.intl.string(w.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, W && (0, r.jsx)(C.c, {})]
+    }) : null, W && (0, r.jsx)(S.c, {})]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(u.xJW, {
@@ -227,11 +227,11 @@ function k(e) {
         titleClassName: Z.formItemTitleSlim,
         children: X
       })]
-    }), z ? (0, r.jsx)(C.Z, {
+    }), z ? (0, r.jsx)(S.Z, {
       onClose: t,
       openStreamUpsellModal: E,
       glow: F
-    }) : null, W && (0, r.jsx)(C.c, {})]
+    }) : null, W && (0, r.jsx)(S.c, {})]
   });
   return (0, r.jsx)(f.Z, T(P({}, Y), {
     children: (0, r.jsx)(u.xJW, {

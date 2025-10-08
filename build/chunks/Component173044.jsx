@@ -26,22 +26,22 @@ function _(e) {
     onClose: v
   } = e, {
     analyticsLocations: j
-  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), C = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(S, h.Si.TIER_2), y = g.intl.string(p.default["+f+cqq"]);
-  return C && (null != b ? y = (0, f.Rt)({
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), C = (0, c.Ng)(), S = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(C, h.Si.TIER_2), y = x.intl.string(p.default["+f+cqq"]);
+  return S && (null != b ? y = (0, f.Rt)({
     intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
     intervalCount: null == b || null == (_ = b.subscription_trial) ? true : _.interval_count
-  }) : null != S && (y = g.intl.formatToPlainString(g.t.bkQ4bG, {
-    percent: S.discount.amount
+  }) : null != C && (y = x.intl.formatToPlainString(x.t.bkQ4bG, {
+    percent: C.discount.amount
   }))), (0, r.jsxs)("div", {
-    className: x.root,
+    className: g.root,
     children: [(0, r.jsxs)(l.Text, {
-      className: x.infoText,
+      className: g.infoText,
       variant: "text-xs/normal",
       color: "always-white",
       children: [(0, r.jsx)(l.mBM, {
         size: "xxs",
         color: "currentColor"
-      }), g.intl.format(g.t.sLJ3ER, {
+      }), x.intl.format(x.t.sLJ3ER, {
         onNitroClick: function() {
           (0, m.E)({
             analyticsLocation: j[0],
@@ -50,19 +50,19 @@ function _(e) {
         }
       })]
     }), (0, r.jsx)(u.Z, {
-      className: x.ctaButton,
-      iconClassName: x.premiumIcon,
+      className: g.ctaButton,
+      iconClassName: g.premiumIcon,
       size: i.zx.Sizes.TINY,
       color: i.zx.Colors.BRAND_INVERTED,
       subscriptionTier: h.Si.TIER_2,
-      buttonShineClassName: x.premiumShine,
+      buttonShineClassName: g.premiumShine,
       iconColor: a.JX.PREMIUM_TIER_2,
       onClick: () => {
         v()
       },
       textOptions: {
         subscribeText: y,
-        textClassName: x.ctaButtonText
+        textClassName: g.ctaButtonText
       }
     })]
   })

@@ -67,8 +67,8 @@ function W(e) {
 }
 
 function z(e, t, n, r) {
-  let i = (0, O.isWindows)() ? (0, T.Z)(x.ZP, y.Z) : null,
-    l = x.ZP.getRunningGames(),
+  let i = (0, O.isWindows)() ? (0, T.Z)(g.ZP, y.Z) : null,
+    l = g.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
   if (null != s && s === o) return 0;
@@ -107,9 +107,9 @@ function H(e) {
     enableGoLiveCaptureCard: l
   } = w.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, y] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), A = i.useRef(new u.Xp), M = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
+  }), o = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, f] = i.useState(null), [h, v] = i.useState(null), [b, y] = i.useState(null), O = null != b && b.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), E = i.useRef(null), k = i.useRef(new u.Xp), M = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), L = F((0, d.e7)([j.Z], () => j.Z.quests), M, h), W = i.useMemo(() => null == h ? null : [...h].sort((e, t) => z(t, null == L ? true : L.source.id) - z(e, null == L ? true : L.source.id)), [L, h]);
   i.useEffect(() => {
-    let e = A.current;
+    let e = k.current;
     return (0, P.t)({
       width: 176,
       height: 99
@@ -173,7 +173,7 @@ function H(e) {
         [U.selected]: l
       }),
       onClick: () => n(e, null),
-      children: (0, r.jsx)(k.Z, {
+      children: (0, r.jsx)(A.Z, {
         source: e,
         selectedSource: t
       }, e.id)
@@ -215,10 +215,10 @@ function H(e) {
         let e = E.current;
         null != e && T(!e.isScrolledToTop())
       },
-      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(S.Z, {
+      children: [Z === c.vA.WINDOW && null != L && (0, r.jsx)(C.Z, {
         quest: L.quest
-      }), (0, r.jsx)(g.Z, {
-        layout: g.Z.Layout.WRAP,
+      }), (0, r.jsx)(x.Z, {
+        layout: x.Z.Layout.WRAP,
         columns: 2,
         className: U.sourceContainer,
         children: X
@@ -245,7 +245,7 @@ function V(e) {
     className: s()(U.nativeSourceSingleTypeButton, U.nativePickerRadioItem),
     children: (0, r.jsxs)("div", {
       className: U.nativeSourceSingleTypeButtonInner,
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(k.Z, {
         className: U.nativeSourceSingleTypeImage
       }), (0, r.jsx)(m.Text, {
         variant: "text-md/medium",
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(C.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });
@@ -332,13 +332,13 @@ function J(e) {
         url: ""
       })
     }, [t, o]),
-    g = (0, O.isMac)() && a().satisfies(null === h.Z || true === h.Z ? true : h.Z.os.release, M.jR),
-    x = (0, O.isMac)(),
+    x = (0, O.isMac)() && a().satisfies(null === h.Z || true === h.Z ? true : h.Z.os.release, M.jR),
+    g = (0, O.isMac)(),
     [_, v] = i.useState(false),
     j = i.useCallback(() => {
       v(!_)
     }, [_]),
-    b = g ? (0, r.jsx)(V, {
+    b = x ? (0, r.jsx)(V, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: U.nativePickerTypes,
@@ -354,7 +354,7 @@ function J(e) {
         name: G.intl.string(G.t["+SLJCg"]),
         text: G.intl.string(G.t.dG2A1N),
         icon: m.GON
-      }), x ? (0, r.jsx)(Y, {
+      }), g ? (0, r.jsx)(Y, {
         onSelect: t,
         id: "app",
         name: G.intl.string(G.t.ct7AKS),
@@ -418,7 +418,7 @@ function X(e) {
     variant: "text-md/normal",
     color: "text-danger",
     children: null != o && o.length > 0 ? o : G.intl.string(G.t.CKsXk5)
-  }) : (0, r.jsx)(A.Z, {
+  }) : (0, r.jsx)(k.Z, {
     animated: true,
     className: U.nativePickerGuide
   })
