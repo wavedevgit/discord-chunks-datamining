@@ -150,5 +150,11 @@ let u = {
       type: "SIDEBAR_CLOSE_GUILD",
       guildId: e
     })
+  },
+  setSelectedSearchContext(e) {
+    r.Z.dispatch({
+      type: "SIDEBAR_SET_SELECTED_SEARCH_CONTEXT",
+      searchContextId: e
+    })
   }
 }
