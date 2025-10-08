@@ -26,25 +26,28 @@ let b = function(t) {
   } = t, {
     loading: m,
     initiateAgeVerification: O
-  } = (0, p.WD)(b, true), _ = r.useMemo(() => (0, o.Z)(), []);
+  } = (0, p.WD)({
+    onComplete: b,
+    isRetry: true
+  }), _ = r.useMemo(() => (0, o.Z)(), []);
   r.useEffect(() => {
     (0, d.lA)(_, d.d_.RETRY, n)
   }, [_, n]);
   let T = r.useMemo(() => [{
-    title: R.intl.string(R.t.FYkioq),
-    description: R.intl.string(R.t.xMfbR0),
-    buttonText: R.intl.string(R.t.RtOE1t),
+    title: x.intl.string(x.t.FYkioq),
+    description: x.intl.string(x.t.xMfbR0),
+    buttonText: x.intl.string(x.t.RtOE1t),
     buttonLoading: m,
     onButtonPress: () => {
       O(d.cU.RETRY_MODAL), (0, d.x3)(_, d.d_.RETRY, d.sU.GET_STARTED)
     }
   }, {
-    title: R.intl.string(R.t["LZO+HR"]),
-    description: R.intl.string(R.t.N2mHaG),
-    buttonText: R.intl.string(R.t["LZO+HR"]),
+    title: x.intl.string(x.t["LZO+HR"]),
+    description: x.intl.string(x.t.N2mHaG),
+    buttonText: x.intl.string(x.t["LZO+HR"]),
     buttonLoading: m,
     onButtonPress: () => {
-      u.Z.openUrl(x.sQ.APPEALS_LINK), (0, d.x3)(_, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
+      u.Z.openUrl(f.sQ.APPEALS_LINK), (0, d.x3)(_, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
     }
   }], [O, _, m]);
   return (0, i.jsx)(l.ExpressiveModal, {
@@ -55,8 +58,8 @@ let b = function(t) {
       src: E.Z,
       type: "image"
     },
-    title: R.intl.string(R.t["5l3R/v"]),
-    subtitle: R.intl.string(R.t.O7SO0N),
+    title: x.intl.string(x.t["5l3R/v"]),
+    subtitle: x.intl.string(x.t.O7SO0N),
     children: (0, i.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 16,
@@ -65,7 +68,7 @@ let b = function(t) {
         className: g.infoBox,
         textColor: "text-feedback-info",
         textVariant: "text-sm/medium",
-        children: R.intl.string(R.t.El4aXl)
+        children: x.intl.string(x.t.El4aXl)
       }), T.map((t, e) => (0, i.jsx)(a.JZ, function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
@@ -88,9 +91,9 @@ let b = function(t) {
       }, t), e)), (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: R.intl.format(R.t["L+FgkZ"], {
+        children: x.intl.format(x.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            u.Z.openUrl(c.Z.getArticleURL(f.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(_, d.d_.RETRY, d.sU.LEARN_MORE)
+            u.Z.openUrl(c.Z.getArticleURL(R.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(_, d.d_.RETRY, d.sU.LEARN_MORE)
           }
         })
       })]

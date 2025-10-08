@@ -181,8 +181,9 @@ function L(e) {
       d && r && 0 === a.step && (T.info("reconnecting, now that document is visible"), l(false), n(e => e + 1))
     }, [a, d, r, l]), i.useEffect(() => {
       let t = Date.now(),
-        n = "wss:".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
-        r = new WebSocket(n);
+        n = "".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2");
+      n.startsWith("//") && (n = "wss:".concat(n));
+      let r = new WebSocket(n);
       T.info("[0ms] connecting to ".concat(n));
       let i = e => T.info("[".concat("".concat(Date.now() - t, "ms"), "] ").concat(e)),
         l = null,

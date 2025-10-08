@@ -20,7 +20,10 @@ let u = function(e, t) {
     loading: l.Z.loading
   })), {
     initiateAgeVerification: m
-  } = (0, o.WD)(e, false, null, true);
+  } = (0, o.WD)({
+    onComplete: e,
+    shouldShowExpressiveModal: true
+  });
   return a.useEffect(() => {
     null == n && (0, s.J)()
   }, [n]), {
