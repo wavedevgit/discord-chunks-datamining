@@ -1,7 +1,7 @@
 /** Chunk was on 30042 **/
 /** chunk id: 30575, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,98 +15,104 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk193183 = require("./193183.js");
 
-function p(e) {
+function T(e) {
   switch (e) {
-    case c.Q.INPUT:
-      return c.a.INPUT;
-    case c.Q.OUTPUT:
-      return c.a.OUTPUT;
-    case c.Q.INPUT_AND_OUTPUT:
-      return c.a.INPUT_AND_OUTPUT;
+    case d.Q.INPUT:
+      return d.a.INPUT;
+    case d.Q.OUTPUT:
+      return d.a.OUTPUT;
+    case d.Q.INPUT_AND_OUTPUT:
+      return d.a.INPUT_AND_OUTPUT;
     default:
       return null
   }
 }
 
-function v(e) {
+function p(e) {
   let t, {
       device: n,
-      certifiedDeviceMetadata: v,
+      certifiedDeviceMetadata: p,
       onClose: f,
-      transitionState: x
+      transitionState: v
     } = e,
-    [h, T] = (0, i.useState)(null != n ? p(n.type) : null),
-    _ = (0, i.useRef)(false);
+    [U, h] = (0, i.useState)(null != n ? T(n.type) : null),
+    x = (0, i.useRef)(false);
 
-  function D() {
-    _.current = true, d.Wz(n.displayName)
-  }(0, r.zq)(() => {
-    _.current || D()
+  function _() {
+    x.current = true, s.Wz(n.displayName)
+  }(0, o.zq)(() => {
+    x.current || _()
   }), (0, i.useEffect)(() => {
-    s.default.track(m.rMx.OPEN_MODAL, {
-      type: null != v ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
-      device_name: null != v ? "".concat(v.vendor.name, " ").concat(v.model.name) : n.displayName
+    c.default.track(u.rMx.OPEN_MODAL, {
+      type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
+      device_name: null != p ? "".concat(p.vendor.name, " ").concat(p.model.name) : n.displayName
     })
-  }, [n.displayName, v]);
-  let y = null != v ? u.intl.string(u.t.kiqvHR) : u.intl.string(u.t.AbnGIy);
+  }, [n.displayName, p]);
+  let D = null != p ? m.intl.string(m.t.kiqvHR) : m.intl.string(m.t.AbnGIy);
   switch (n.type) {
-    case c.Q.INPUT:
-      t = null != v ? u.intl.format(u.t.NqNqy8, {
-        vendorName: v.vendor.name,
-        modelName: v.model.name
-      }) : u.intl.format(u.t.stSaRk, {
+    case d.Q.INPUT:
+      t = null != p ? m.intl.format(m.t.NqNqy8, {
+        vendorName: p.vendor.name,
+        modelName: p.model.name
+      }) : m.intl.format(m.t.stSaRk, {
         name: n.displayName
       });
       break;
-    case c.Q.OUTPUT:
-      t = null != v ? u.intl.format(u.t.uPgqIC, {
-        vendorName: v.vendor.name,
-        modelName: v.model.name
-      }) : u.intl.format(u.t.jyhYp6, {
+    case d.Q.OUTPUT:
+      t = null != p ? m.intl.format(m.t.uPgqIC, {
+        vendorName: p.vendor.name,
+        modelName: p.model.name
+      }) : m.intl.format(m.t.jyhYp6, {
         name: n.displayName
       });
       break;
     default:
       t = (0, a.jsxs)(i.Fragment, {
-        children: [null != v ? u.intl.format(u.t["4Xyzx8"], {
-          vendorName: v.vendor.name,
-          modelName: v.model.name
-        }) : u.intl.format(u.t.Z7XQcn, {
+        children: [null != p ? m.intl.format(m.t["4Xyzx8"], {
+          vendorName: p.vendor.name,
+          modelName: p.model.name
+        }) : m.intl.format(m.t.Z7XQcn, {
           name: n.displayName
-        }), (0, a.jsx)(l.Gu, {
-          value: h,
-          className: N.options,
-          onChange: e => {
-            let {
-              value: t
-            } = e;
-            return T(p(t))
-          },
+        }), (0, a.jsx)(r.FXm, {
+          value: function(e) {
+            if (null == e) return null;
+            switch (e) {
+              case d.a.INPUT:
+                return d.Q.INPUT;
+              case d.a.OUTPUT:
+                return d.Q.OUTPUT;
+              case d.a.INPUT_AND_OUTPUT:
+                return d.Q.INPUT_AND_OUTPUT;
+              default:
+                return null
+            }
+          }(U),
+          onChange: e => h(T(e)),
           options: [{
-            name: u.intl.string(u.t.vhxqwc),
-            value: c.Q.INPUT_AND_OUTPUT
+            name: m.intl.string(m.t.vhxqwc),
+            value: d.Q.INPUT_AND_OUTPUT
           }, {
-            name: u.intl.string(u.t["Kqs9+P"]),
-            value: c.Q.INPUT
+            name: m.intl.string(m.t["Kqs9+P"]),
+            value: d.Q.INPUT
           }, {
-            name: u.intl.string(u.t.GGlM3d),
-            value: c.Q.OUTPUT
+            name: m.intl.string(m.t.GGlM3d),
+            value: d.Q.OUTPUT
           }]
         })]
       })
   }
-  return (0, a.jsxs)(o.Y0X, {
-    transitionState: x,
-    "aria-label": y,
+  return (0, a.jsxs)(r.Y0X, {
+    transitionState: v,
+    "aria-label": D,
     parentComponent: "ConnectedDeviceDetectionModal",
-    children: [(0, a.jsx)(o.xBx, {
+    children: [(0, a.jsx)(r.xBx, {
       separator: false,
-      children: (0, a.jsx)(o.X6q, {
+      children: (0, a.jsx)(r.X6q, {
         variant: "heading-lg/semibold",
-        children: y
+        children: D
       })
-    }), (0, a.jsx)(o.hzk, {
-      children: (0, a.jsx)(o.Text, {
+    }), (0, a.jsx)(r.hzk, {
+      children: (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         children: (0, a.jsxs)(i.Fragment, {
           children: [t, (0, a.jsx)(l.zx, {
@@ -114,36 +120,36 @@ function v(e) {
             look: l.zx.Looks.LINK,
             color: l.zx.Colors.LINK,
             onClick: () => {
-              _.current = true, d.Gl(n.displayName), s.default.track(m.rMx.MODAL_DISMISSED, {
-                type: null != v ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
+              x.current = true, s.Gl(n.displayName), c.default.track(u.rMx.MODAL_DISMISSED, {
+                type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
                 location_object: n.displayName,
                 dismiss_type: "permanent"
               }), f()
             },
-            children: u.intl.formatToPlainString(u.t.cwS3Ex, {
+            children: m.intl.formatToPlainString(m.t.cwS3Ex, {
               device: n.displayName
             })
           })]
         }, n.displayName)
       })
-    }), (0, a.jsx)(o.mzw, {
+    }), (0, a.jsx)(r.mzw, {
       children: (0, a.jsxs)("div", {
         className: N.footerButtons,
         children: [(0, a.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: N.cancelButton,
-          children: (0, a.jsx)(o.zxk, {
+          children: (0, a.jsx)(r.zxk, {
             variant: "secondary",
-            text: u.intl.string(u.t.vPBgq6),
+            text: m.intl.string(m.t.vPBgq6),
             onClick: () => {
-              D(), f()
+              _(), f()
             }
           })
-        }), (0, a.jsx)(o.zxk, {
+        }), (0, a.jsx)(r.zxk, {
           variant: "primary",
-          text: u.intl.string(u.t.ydkoDQ),
+          text: m.intl.string(m.t.ydkoDQ),
           onClick: () => {
-            _.current = true, null != h && d.mo(n.displayName, h, "New Audio Device Detected Modal"), f()
+            x.current = true, null != U && s.mo(n.displayName, U, "New Audio Device Detected Modal"), f()
           }
         })]
       })
