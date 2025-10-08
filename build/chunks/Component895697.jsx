@@ -53,6 +53,7 @@ function R(e) {
     className: N.body,
     children: [(0, r.jsx)(E.Z, {
       user: t,
+      guildId: null == P ? true : P.id,
       onOpenProfile: D,
       nickname: M,
       pronouns: null == R ? true : R.pronouns,

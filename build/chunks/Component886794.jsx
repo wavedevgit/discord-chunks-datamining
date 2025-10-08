@@ -47,7 +47,7 @@ function C(e) {
     sourceAnalyticsLocations: k = []
   } = e, B = C === N.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, _, t), G = (0, a.Dt)(), {
     analyticsLocations: z
-  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), K = (0, m.ZB)({
+  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), W = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
@@ -55,11 +55,11 @@ function C(e) {
     channelId: _,
     messageId: w,
     roleId: D
-  }), W = i.useRef(null), Y = (0, c.X)(W);
+  }), K = i.useRef(null), Y = (0, c.X)(K);
   return (0, l.jsx)(s.Gt, {
     value: z,
     children: (0, l.jsx)(m.Mt, {
-      value: K,
+      value: W,
       openedAt: M,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
@@ -84,7 +84,7 @@ function C(e) {
             user: t,
             displayProfile: F,
             themeType: P.l.MODAL,
-            ref: (null == F ? true : F.profileEffect) != null ? W : true,
+            ref: (null == F ? true : F.profileEffect) != null ? K : true,
             children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(I.Z, {
                 user: t
@@ -109,6 +109,7 @@ function C(e) {
               children: [(0, l.jsx)(y.Z, {
                 className: A.username,
                 user: t,
+                guildId: B,
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",

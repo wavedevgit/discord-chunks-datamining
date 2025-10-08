@@ -58,6 +58,8 @@ class E extends Chunk839548.Z {
     return (0, Chunk450279.Z)(module, this.getUserIdBySsrc, this.remoteVideoSinkWants, this.localVideoSinkWants, exports)
   }
   setNoiseCancellationDuringProcessing(e) {}
+  setNoiseCancellationAfterProcessing(e) {}
+  setVADAfterWebrtc(e) {}
   getSelfMute() {
     return this.selfMute
   }

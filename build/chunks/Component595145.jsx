@@ -98,7 +98,7 @@ function ea(e) {
   } = (0, o.cj)([A.Z], () => ({
     defaultWishlistId: A.Z.getFirstWishlistId(t.id)
   }));
-  (0, b.k)(eE);
+  (0, b.k)(eE, t.id);
   let eS = (0, _.$m)(),
     eC = (0, s.q_F)({
       opacity: +(null != eS.interactionType),
@@ -137,8 +137,8 @@ function ea(e) {
     }),
     eG = (0, x.vh)(t.id),
     ez = (0, C.Z)(t.id),
-    eK = (0, S.Z)(t.id),
-    eW = (0, m.Dt)(),
+    eW = (0, S.Z)(t.id),
+    eK = (0, m.Dt)(),
     eY = eo.intl.format(eo.t.KRe1Fh, {
       name: eD
     });
@@ -166,7 +166,7 @@ function ea(e) {
           hideShadow: true,
           className: es.root,
           transitionState: ex,
-          "aria-labelledby": eW,
+          "aria-labelledby": eK,
           parentComponent: "UserProfileModalV2",
           children: [(0, l.jsxs)(s.UkV, {
             isShaking: eT,
@@ -174,7 +174,7 @@ function ea(e) {
             children: [eI ? (0, l.jsxs)("div", {
               className: es.previewBar,
               children: [(0, l.jsxs)(s.X6q, {
-                id: eW,
+                id: eK,
                 variant: "heading-sm/normal",
                 color: "text-primary",
                 children: [(0, l.jsx)(s.nn4, {
@@ -192,7 +192,7 @@ function ea(e) {
               })]
             }) : (0, l.jsx)(s.nn4, {
               children: (0, l.jsx)(s.H, {
-                id: eW,
+                id: eK,
                 children: eY
               })
             }), (0, l.jsx)(s.y5t, {
@@ -231,7 +231,7 @@ function ea(e) {
                       guildId: ec,
                       channelId: ed,
                       themeType: er.l.MODAL_V2
-                    }), (0, l.jsx)(W.Z, {
+                    }), (0, l.jsx)(K.Z, {
                       user: t,
                       guildId: ec,
                       channelId: ed,
@@ -243,8 +243,9 @@ function ea(e) {
                   }), (0, l.jsxs)(s.Ttm, {
                     fade: true,
                     className: es.profileBody,
-                    children: [(0, l.jsx)(K.Z, {
+                    children: [(0, l.jsx)(W.Z, {
                       user: t,
+                      guildId: ec,
                       onClose: eg,
                       nickname: O.ZP.useName(null == ew ? true : ew.guildId, ed, t),
                       nicknameIcons: (0, l.jsx)(U.Z, {
@@ -346,11 +347,11 @@ function ea(e) {
                         userId: t.id,
                         className: es.profileAppConnections
                       })
-                    }), eK.length > 0 && (0, l.jsx)(Q.Z, {
+                    }), eW.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: eo.intl.string(eo.t.PHjkRE),
                       scrollIntoView: eh === el.Tb.APPS,
                       children: (0, l.jsx)(H.Z, {
-                        applicationRoleConnections: eK,
+                        applicationRoleConnections: eW,
                         onClose: eg,
                         className: es.profileAppConnections
                       })

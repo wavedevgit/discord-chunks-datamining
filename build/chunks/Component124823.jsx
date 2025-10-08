@@ -109,6 +109,7 @@ function w(e) {
             className: N.body,
             children: [(0, r.jsx)(I.Z, {
               user: n,
+              guildId: w.guild_id,
               nickname: h.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
               onOpenProfile: A ? true : B,

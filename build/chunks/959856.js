@@ -150,6 +150,8 @@ class N extends Chunk47770.Z {
   }
   setNoiseCancellationEnableStats(e) {}
   setNoiseCancellationDuringProcessing(e) {}
+  setNoiseCancellationAfterProcessing(e) {}
+  setVADAfterWebrtc(e) {}
   getAudioInputDevices() {
     return (0, Chunk740197.Hg)()
   }

@@ -48,8 +48,8 @@ function C(e) {
     openedAt: k,
     onClose: B,
     sourceAnalyticsLocations: F = []
-  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), K = (0, a.Dt)(), {
-    analyticsLocations: W
+  } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), W = (0, a.Dt)(), {
+    analyticsLocations: K
   } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
@@ -60,7 +60,7 @@ function C(e) {
     roleId: D
   }), H = (0, N.Z)(n);
   return (0, l.jsx)(s.Gt, {
-    value: W,
+    value: K,
     children: (0, l.jsx)(d.Mt, {
       value: Y,
       openedAt: k,
@@ -72,12 +72,12 @@ function C(e) {
         transitionState: U,
         className: S.root,
         hideShadow: true,
-        "aria-labelledby": K,
+        "aria-labelledby": W,
         parentComponent: "BotUserProfileModal",
         children: (0, l.jsx)(i.y5t, {
           component: (0, l.jsx)(i.nn4, {
             children: (0, l.jsx)(i.H, {
-              id: K,
+              id: W,
               children: E.intl.format(E.t.KRe1Fh, {
                 name: z
               })
@@ -137,6 +137,7 @@ function C(e) {
               children: [(0, l.jsx)(j.Z, {
                 className: S.username,
                 user: n,
+                guildId: V,
                 nickname: z,
                 pronouns: null == G ? true : G.pronouns,
                 nicknameVariant: "heading-xl/bold",

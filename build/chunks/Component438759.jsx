@@ -22,23 +22,23 @@ function h(e) {
   let {
     selectedEffectId: t,
     setSelectedEffectId: n,
-    className: l
+    className: o
   } = e;
-  return (0, o.jsxs)("div", {
-    className: l,
-    children: [(0, o.jsxs)(a.X6q, {
+  return (0, l.jsxs)("div", {
+    className: o,
+    children: [(0, l.jsxs)(i.X6q, {
       variant: "heading-md/semibold",
       className: f.selectorHeading,
-      children: [m.intl.string(p.default["1wilMz"]), (0, o.jsx)(i.SrA, {
+      children: [m.intl.string(p.default["1wilMz"]), (0, l.jsx)(a.SrA, {
         size: "xs",
-        color: i.TVs.colors.TEXT_DEFAULT
+        color: a.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, o.jsx)(a.Kqy, {
+    }), (0, l.jsx)(i.Kqy, {
       direction: "horizontal",
       align: "center",
       wrap: true,
       gap: 8,
-      children: u.mH.map(e => (0, o.jsx)(x, {
+      children: u.mH.map(e => (0, l.jsx)(x, {
         effectId: e,
         selected: e === t,
         onClick: () => n(e)
@@ -51,17 +51,17 @@ function x(e) {
   let {
     effectId: t,
     selected: n,
-    onClick: l
-  } = e, a = (0, d.R)(t);
-  return (0, o.jsx)(i.P3F, {
+    onClick: o
+  } = e, i = (0, d.R)(t);
+  return (0, l.jsx)(a.P3F, {
     className: r()(g.effectContainer, {
       [g.selected]: n
     }),
-    onClick: l,
-    children: (0, o.jsx)(c.Z, {
-      userName: a.name,
+    onClick: o,
+    children: (0, l.jsx)(c.Z, {
+      userName: i.name,
       effectDisplayType: s.F.STATIC,
-      displayNameStyles: a.previewStyles,
+      displayNameStyles: i.previewStyles,
       textClassName: g.effectText,
       inProfile: true
     })

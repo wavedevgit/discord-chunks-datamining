@@ -25,27 +25,27 @@ function h(e) {
     defaultColor: x,
     selectedEffectId: _,
     className: b
-  } = e, S = _ === r.m.GRADIENT, C = (0, l.useCallback)(e => {
+  } = e, S = _ === r.m.GRADIENT, C = (0, o.useCallback)(e => {
     h([e]), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: e === x,
       colors: [e]
     })
-  }, [h, x]), j = (0, l.useCallback)(e => {
+  }, [h, x]), j = (0, o.useCallback)(e => {
     h(e), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: false,
       colors: e
     })
   }, [h]);
-  return (0, o.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: b,
-    children: [(0, o.jsxs)(a.X6q, {
+    children: [(0, l.jsxs)(i.X6q, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [m.intl.string(p.default["JOpi7+"]), (0, o.jsx)(i.SrA, {
+      children: [m.intl.string(p.default["JOpi7+"]), (0, l.jsx)(a.SrA, {
         size: "xs",
-        color: i.TVs.colors.TEXT_DEFAULT
+        color: a.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, o.jsx)(s.default, {
+    }), (0, l.jsx)(s.default, {
       className: f.colorPicker,
       colorContainerClassName: f.colorPickerContainer,
       defaultColor: x,

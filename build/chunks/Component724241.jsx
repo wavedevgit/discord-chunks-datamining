@@ -18,54 +18,55 @@ var Chunk442837 = require("./442837.js"),
   Chunk116649 = require("./116649.js");
 
 function p(e) {
-  var t, n;
+  var t;
   let {
-    user: p,
-    displayProfile: h,
-    guild: m,
-    pendingAvatar: g,
-    pendingNickname: E,
-    pendingGlobalName: b,
-    pendingBio: y,
-    pendingPronouns: O,
-    pendingLegacyUsernameDisabled: v,
-    pendingBadges: I,
-    pendingDisplayNameStyles: T,
-    isTryItOutFlow: S,
-    hideBioSection: A,
-    shouldOpenBadgeTooltip: C
-  } = e, N = (0, i.e7)([c.ZP], () => null == m ? null : c.ZP.getMember(m.id, p.id)), R = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), P = null == h || null == (t = h.getPreviewBio(y)) ? true : t.value, w = null != O ? O : null == h ? true : h.pronouns, D = (0, d.Ly)({
-    pendingNickname: E,
-    pendingGlobalName: b,
-    user: p,
-    guildMember: N
-  }), L = true !== T ? T : null != (n = null == N ? true : N.displayNameStyles) ? n : p.displayNameStyles, x = () => {
-    if (null != N && null !== g && (null != N.avatar || null != g)) return (0, r.jsx)(l.Z, {
-      user: p,
-      nickname: D
+    user: n,
+    displayProfile: p,
+    guild: h,
+    pendingAvatar: m,
+    pendingNickname: g,
+    pendingGlobalName: E,
+    pendingBio: b,
+    pendingPronouns: y,
+    pendingLegacyUsernameDisabled: O,
+    pendingBadges: v,
+    pendingDisplayNameStyles: I,
+    isTryItOutFlow: T,
+    hideBioSection: S,
+    shouldOpenBadgeTooltip: A
+  } = e, C = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), R = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, P = null != y ? y : null == p ? true : p.pronouns, w = (0, d.Ly)({
+    pendingNickname: g,
+    pendingGlobalName: E,
+    user: n,
+    guildMember: C
+  }), D = () => {
+    if (null != C && null !== m && (null != C.avatar || null != m)) return (0, r.jsx)(l.Z, {
+      user: n,
+      nickname: w
     })
   };
   return (0, r.jsxs)("div", {
     className: _.body,
     inert: true,
     children: [(0, r.jsx)(o.Z, {
-      user: p,
-      usernameIcon: x(),
-      nickname: D,
-      displayNameStyles: L,
-      pronouns: w,
-      isTryItOut: S,
+      user: n,
+      guildId: null == h ? true : h.id,
+      usernameIcon: D(),
+      nickname: w,
+      pendingDisplayNameStyles: I,
+      pronouns: P,
+      isTryItOut: T,
       tags: (0, r.jsx)(a.Z, {
-        displayProfile: h,
+        displayProfile: p,
         themeType: f.l.POPOUT,
-        pendingLegacyUsernameDisabled: v,
-        pendingBadges: I,
-        shouldOpenBadgeTooltip: C
+        pendingLegacyUsernameDisabled: O,
+        pendingBadges: v,
+        shouldOpenBadgeTooltip: A
       })
-    }), !A && null != P && "" !== P && (0, r.jsx)(s.Z, {
-      user: p,
-      bio: P,
-      hidePersonalInformation: R,
+    }), !S && null != R && "" !== R && (0, r.jsx)(s.Z, {
+      user: n,
+      bio: R,
+      hidePersonalInformation: N,
       viewFullBioDisabled: true
     })]
   })

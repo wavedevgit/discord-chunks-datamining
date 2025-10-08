@@ -63,6 +63,7 @@ function M(e) {
     className: x.body,
     children: [(0, r.jsx)(I.Z, {
       user: t,
+      guildId: null == j ? true : j.id,
       onOpenProfile: U,
       onClose: B,
       usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(C.Z, {

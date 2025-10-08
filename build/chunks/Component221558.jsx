@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 221558, original params: t,i,r (module,exports,require) **/
+/** chunk id: 221558, original params: i,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -17,15 +17,15 @@ var Chunk951288 = require("./951288.js"),
 function p() {
   let {
     guilds: {
-      guilds: t,
-      numGuildsJoined: i
+      guilds: i,
+      numGuildsJoined: t
     }
-  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), r = (0, Chunk647438.useMemo)(() => module.map(t => {
+  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), r = (0, Chunk647438.useMemo)(() => module.map(i => {
     let {
-      guildId: i
-    } = t;
-    return d.Z.getGuild(i)
-  }).filter(t => null != t), [module]);
+      guildId: t
+    } = i;
+    return d.Z.getGuild(t)
+  }).filter(i => null != i), [module]);
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
@@ -34,19 +34,19 @@ function p() {
         joinedCount: exports,
         guildCount: require.length
       })
-    }), require.map((i, r) => (0, e.jsxs)("div", {
+    }), require.map((t, r) => (0, e.jsxs)("div", {
       children: [(0, e.jsx)(l.Z, {
-        guild: i,
+        guild: t,
         size: l.Z.Sizes.XLARGE
       }), (0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: i.name
+        children: t.name
       }), 0 === r && (0, e.jsxs)("div", {
         children: [(0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: t[0].numMessagesSent
+          children: i[0].numMessagesSent
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
@@ -54,13 +54,13 @@ function p() {
         }), (0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: t[0].numMinutesListening + t[0].numMinutesSpeaking
+          children: i[0].numMinutesListening + i[0].numMinutesSpeaking
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
           children: u.intl.string(x.default.lXT6np)
         })]
       })]
-    }, i.id))]
+    }, t.id))]
   })
 }

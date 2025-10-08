@@ -283,8 +283,7 @@ function L(e) {
       var e;
       null == (e = M.current) || e.scrollIntoView({
         behavior: "smooth",
-        inline: "end",
-        block: "end"
+        block: "nearest"
       })
     }, 10))
   }, [G.selectedItems, ea, D]);

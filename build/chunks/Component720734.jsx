@@ -49,7 +49,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk812055 = require("./812055.jsx"),
   Chunk243778 = require("./243778.jsx"),
   Chunk594928 = require("./594928.js"),
-  Chunk181430 = require("./181430.js"),
+  Chunk386725 = require("./386725.js"),
   Chunk821795 = require("./821795.js"),
   Chunk287647 = require("./287647.jsx"),
   Chunk892567 = require("./892567.jsx"),
@@ -182,10 +182,10 @@ function tm(e) {
   } = e, v = r.useRef(null), j = null != t ? t : v, y = (0, eH.NZ)({
     avatarDecoration: x,
     size: (0, I.y9)(f.EFr.SIZE_32)
-  }), {
-    updateOpenPopoutRef: C,
-    highlightBadge: E,
-    setHighlightBadge: S
+  }), C = (0, q.Z)(), {
+    updateOpenPopoutRef: E,
+    highlightBadge: S,
+    setHighlightBadge: T
   } = function() {
     let e = r.useRef(null),
       t = r.useCallback(t => {
@@ -211,20 +211,20 @@ function tm(e) {
       highlightBadge: i ? n : true,
       setHighlightBadge: a
     }
-  }(), T = (0, er.A)(m);
+  }(), O = (0, er.A)(m);
   if (null == s) return null;
-  let O = h && p !== e7.I_8 && p !== e7.ME && null != p ? p : true;
+  let N = h && p !== e7.I_8 && p !== e7.ME && null != p ? p : true;
   return (0, a.jsx)(g.Z, {
     object: e7.qAy.AVATAR,
     children: (0, a.jsx)(eh.Z, {
       user: s,
       targetElementRef: j,
       clickTrap: true,
-      preload: () => (0, ep.Z)(s.id, s.getAvatarURL(O, eh.I), {
+      preload: () => (0, ep.Z)(s.id, s.getAvatarURL(N, eh.I), {
         type: "account_popout",
         withMutualGuilds: false,
         withMutualFriends: false,
-        guildId: O
+        guildId: N
       }),
       renderPopout: (e, t) => {
         let {
@@ -233,13 +233,13 @@ function tm(e) {
         } = e;
         return (0, a.jsx)(en.Z, {
           currentUser: s,
-          highlightBadge: E,
+          highlightBadge: S,
           openedAt: t,
           onClose: () => {
             null == n || n()
           },
           setPopoutRef: r,
-          guildId: O,
+          guildId: N,
           guildProfileEnabled: h
         })
       },
@@ -250,11 +250,11 @@ function tm(e) {
       fixed: true,
       ignoreModalClicks: true,
       onRequestClose: () => {
-        d(), S(true)
+        d(), T(true)
       },
-      children: e => (C(e), (0, a.jsxs)(f.P3F, ts(tl({
+      children: e => (E(e), (0, a.jsxs)(f.P3F, ts(tl({
         innerRef: j,
-        style: T
+        style: O
       }, e), {
         onClick: t => {
           var n;
@@ -277,7 +277,7 @@ function tm(e) {
           className: l()(tr.nameTag, {
             [tr.canCopy]: eK.wS
           }),
-          children: u(null == s ? true : s.displayNameStyles)
+          children: u(C)
         })]
       })))
     })
@@ -656,18 +656,17 @@ class tp extends Chunk647438.PureComponent {
     }), ti(this, "renderNameTag", e => {
       let {
         currentUser: t,
-        isDisplayNameStylesEnabled: n,
-        username: r
+        username: n
       } = this.props;
       return null == t ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
           className: tr.panelTitleContainer,
           children: (0, a.jsx)(e5.Z, {
             className: l()({
-              [tr.withDisplayNameStyles]: n && null != e
+              [tr.withDisplayNameStyles]: null != e
             }),
             children: (0, a.jsx)(J.Z, {
-              userName: r,
+              userName: n,
               displayNameStyles: e,
               effectDisplayType: this.state.hovered ? Y.F.ANIMATED : Y.F.STATIC,
               loop: true,
@@ -841,31 +840,31 @@ function tf() {
     B = (0, Chunk676742.Z)(Chunk120356 ? Chunk795318 : Chunk522651),
     V = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, require),
     H = null != (t = Chunk51144.ZP.useName(require)) ? exports : "",
-    Y = (null == require || null == (e = require.avatarDecoration) ? true : module.skuId) === Chunk215023.rL,
+    q = (null == require || null == (e = require.avatarDecoration) ? true : module.skuId) === Chunk215023.rL,
     {
-      voiceActivityStatusEnabled: X
+      voiceActivityStatusEnabled: Y
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
-    [J, $] = (0, Chunk291533.G)(null != Chunk575175 ? Chunk575175 : null),
-    [et, en] = (0, Chunk812055.b)(),
-    er = Chunk594928.JH.useExperiment({
+    [X, J] = (0, Chunk291533.G)(null != Chunk575175 ? Chunk575175 : null),
+    [$, et] = (0, Chunk812055.b)(),
+    en = Chunk594928.JH.useExperiment({
       location: "Account"
     }).enabled,
     {
-      analyticsLocations: ei
+      analyticsLocations: er
     } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT),
-    el = (0, Chunk850020.K)({
+    ei = (0, Chunk850020.K)({
       user: require,
       guildId: Chunk120356 && null != Chunk575175 ? Chunk575175 : true
     }),
     {
-      isQuestBarEmpty: eo,
-      hasLoadedQuestBar: ec
+      isQuestBarEmpty: el,
+      hasLoadedQuestBar: eo
     } = (0, Chunk667105.Ws)({
       location: Chunk46140.dr.CONFLICT_CHECKS
     }),
-    ep = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
+    ec = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
       let e, t = Chunk768419.Z.getSyncingWith(),
         n = Chunk768419.Z.getActivity(),
         a = [];
@@ -875,27 +874,23 @@ function tf() {
       }
       return Chunk951288.length > 1
     }),
-    eh = (0, Chunk172416.Un)({
+    ep = (0, Chunk172416.Un)({
       location: "AccountConnected"
     }),
-    ex = {
+    eh = {
       avatar: [],
       settings: []
     };
-  !Chunk659580 && (Chunk821795 && Chunk620799.avatar.push(Chunk704215.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), Chunk379839 && Chunk620799.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk670188 && Chunk620799.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK));
-  let ef = (0, Chunk181430.Y)({
-      location: "AccountConnected"
-    }),
-    {
-      shouldShowTooltip: eb,
-      dismissTooltip: eg
-    } = tx(Chunk65154.h7.AUDIO_INPUT),
-    {
-      shouldShowTooltip: e_,
-      dismissTooltip: ey
-    } = tx(Chunk65154.h7.AUDIO_OUTPUT);
+  !Chunk659580 && (Chunk386725 && Chunk670188.avatar.push(Chunk704215.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), Chunk78933 && Chunk670188.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk184301 && Chunk670188.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK));
+  let {
+    shouldShowTooltip: ex,
+    dismissTooltip: ef
+  } = tx(Chunk65154.h7.AUDIO_INPUT), {
+    shouldShowTooltip: eb,
+    dismissTooltip: eg
+  } = tx(Chunk65154.h7.AUDIO_OUTPUT);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
-    value: Chunk359135,
+    value: Chunk379839,
     children: (0, Chunk951288.jsx)(tp, {
       currentUser: require,
       username: Chunk120356 ? Chunk427217 : Chunk243778,
@@ -903,11 +898,11 @@ function tf() {
       activities: l,
       applicationStream: Chunk846519,
       voiceChannel: Chunk239091,
-      dismissibleContents: Chunk620799,
-      visibleRecurringAvatarDc: Chunk892567,
-      markRecurringAvatarDcAsDismissed: Chunk53891,
-      visibleRecurringDoNotDisturbReminderPopoverDc: Chunk72897,
-      markRecurringDoNotDisturbReminderPopoverDcAsDismissed: Chunk78933,
+      dismissibleContents: Chunk670188,
+      visibleRecurringAvatarDc: Chunk287647,
+      markRecurringAvatarDcAsDismissed: Chunk892567,
+      visibleRecurringDoNotDisturbReminderPopoverDc: Chunk53891,
+      markRecurringDoNotDisturbReminderPopoverDcAsDismissed: Chunk72897,
       userTag: Chunk789639,
       hidePrivateData: Chunk930295,
       occluded: Chunk659580,
@@ -924,18 +919,17 @@ function tf() {
       webBuildOverride: Chunk963056,
       awaitingRemote: Chunk55311,
       isEligibleForPomelo: Chunk855844,
-      voiceActivityStatusEnabled: Chunk287647,
-      nameplate: Chunk516817,
+      voiceActivityStatusEnabled: Chunk821795,
+      nameplate: Chunk359135,
       selectedGuildId: Chunk575175,
       avatarDecoration: Chunk64220,
-      isQuestBarEmpty: Chunk963590,
-      hasLoadedQuestBar: Chunk562705,
-      isListenAlongVisible: Chunk184301,
-      isDisplayNameStylesEnabled: Chunk313789,
-      shouldShowInputDeviceChangedTooltip: Chunk846071,
-      shouldShowOutputDeviceChangedTooltip: Chunk875527,
-      dismissInputDeviceChangedTooltip: Chunk518596,
-      dismissOutputDeviceChangedTooltip: Chunk702977
+      isQuestBarEmpty: Chunk516817,
+      hasLoadedQuestBar: Chunk963590,
+      isListenAlongVisible: Chunk562705,
+      shouldShowInputDeviceChangedTooltip: Chunk620799,
+      shouldShowOutputDeviceChangedTooltip: Chunk846071,
+      dismissInputDeviceChangedTooltip: Chunk313789,
+      dismissOutputDeviceChangedTooltip: Chunk518596
     })
   })
 }

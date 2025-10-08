@@ -2,8 +2,6 @@
 /** chunk id: 726550, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r = {
-  bgFill: "bgFill__714a9",
-  bgEmpty: "bgEmpty__714a9",
   dotGrow: "dotGrow__714a9",
   dotShrink: "dotShrink__714a9",
   checkDraw: "checkDraw__714a9",

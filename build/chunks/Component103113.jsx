@@ -146,6 +146,7 @@ function P(e) {
             className: C.body,
             children: [(0, r.jsx)(v.Z, {
               user: n,
+              guildId: N,
               nickname: f.ZP.getName(N, P, n),
               onOpenProfile: Y ? H : true,
               tags: (0, r.jsx)(E.Z, {

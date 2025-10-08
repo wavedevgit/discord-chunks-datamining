@@ -1,7 +1,7 @@
 /** Chunk was on 47495 **/
 /** chunk id: 766950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,6 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk778825 = require("./778825.js"),
   Chunk150039 = require("./150039.js"),
   Chunk271383 = require("./271383.js"),
+  Chunk430824 = require("./430824.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
@@ -36,21 +37,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk300119 = require("./300119.js");
 
-function I(e) {
-  var t, n, I, w;
+function w(e) {
+  var t, n, w, B;
   let {
-    transitionState: B,
+    transitionState: Z,
     analyticsLocations: M,
-    guildId: Z,
-    onClose: G
-  } = e, Y = (0, s.e7)([S.default], () => S.default.getCurrentUser()), H = null != (t = j.ZP.useName(Y)) ? t : "", z = (0, s.e7)([h.Z, b.Z, _.ZP], () => {
+    guildId: G,
+    onClose: Y
+  } = e, H = (0, s.e7)([C.default], () => C.default.getCurrentUser()), z = null != (t = v.ZP.useName(H)) ? t : "", F = (0, s.e7)([h.Z, S.Z, _.ZP], () => {
     var e, t, n;
-    return null != Z ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(Z, null == Y ? true : Y.id)) ? t : H : null != (n = b.Z.getPendingGlobalName()) ? n : H
-  }, [Z, Y, H]), {
-    userDisplayNameStyles: F,
-    guildDisplayNameStyles: U,
-    pendingDisplayNameStyles: q
-  } = (0, x.mD)(Y, Z), K = true !== q ? q : null != U ? U : F, [X, V] = l.useState(null != (n = null == K ? true : K.fontId) ? n : i.C.DEFAULT), [W, $] = l.useState(null != (I = null == K ? true : K.effectId) ? I : a.m.SOLID), J = (0, E.R)(W), Q = (0, E.R)(a.m.GRADIENT), ee = null != (w = null == K ? true : K.colors) ? w : [], [et, en] = l.useState(ee.length > 0 && W !== a.m.GRADIENT ? ee[0] : J.defaultColors[0]), [eo, el] = l.useState(ee.length > 0 && W === a.m.GRADIENT ? ee : Q.defaultColors);
+    return null != G ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(G, null == H ? true : H.id)) ? t : z : null != (n = S.Z.getPendingGlobalName()) ? n : z
+  }, [G, H, z]), U = (0, s.e7)([b.Z], () => b.Z.getGuild(G)), {
+    userDisplayNameStyles: q,
+    guildDisplayNameStyles: K,
+    pendingDisplayNameStyles: X
+  } = (0, x.mD)(H, G), V = true !== X ? X : null != K ? K : q, [W, $] = o.useState(null != (n = null == V ? true : V.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == V ? true : V.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == V ? true : V.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
   (0, f.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -58,95 +59,96 @@ function I(e) {
     trackOnInitialLoad: true
   });
   let {
-    analyticsLocations: er
-  } = (0, m.ZP)(M, p.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), ea = l.useMemo(() => W === a.m.GRADIENT ? eo : [et], [W, eo, et]), ei = l.useMemo(() => {
+    analyticsLocations: ea
+  } = (0, m.ZP)(M, p.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), es = o.useMemo(() => J === i.m.GRADIENT ? er : [el], [J, er, el]), ec = o.useMemo(() => {
     var e;
-    return X !== (null == K ? true : K.fontId) || W !== (null == K ? true : K.effectId) || !(0, c.E)(ea, null != (e = null == K ? true : K.colors) ? e : [])
-  }, [K, X, W, ea]), es = l.useCallback(() => {
-    if (ei) {
-      let e = ea;
-      W === a.m.SOLID && ea.length > 0 && ea[0] === J.defaultColors[0] && (e = []);
+    return W !== (null == V ? true : V.fontId) || J !== (null == V ? true : V.effectId) || !(0, c.E)(es, null != (e = null == V ? true : V.colors) ? e : [])
+  }, [V, W, J, es]), ed = o.useCallback(() => {
+    if (ec) {
+      let e = es;
+      J === i.m.SOLID && es.length > 0 && es[0] === ee.defaultColors[0] && (e = []);
       let t = {
-        fontId: X,
-        effectId: W,
+        fontId: W,
+        effectId: J,
         colors: e
       };
-      null != Z ? (0, g.N_)(t) : (0, u.NI)(t), C.default.track(D.rMx.DISPLAY_NAME_STYLES_APPLIED, {
-        font_name: i.C[X],
-        effect_name: a.m[W],
-        colors: ea
-      }), G()
+      null != G ? (0, g.N_)(t) : (0, u.NI)(t), j.default.track(R.rMx.DISPLAY_NAME_STYLES_APPLIED, {
+        font_name: a.C[W],
+        effect_name: i.m[J],
+        colors: es
+      }), Y()
     }
-  }, [ei, X, W, ea, J, G, Z]), ec = l.useCallback(() => {
+  }, [ec, W, J, es, ee, Y, G]), eu = o.useCallback(() => {
     let {
       fontId: e,
       effectId: t,
       colors: n
-    } = (0, P.aY)();
-    V(e), $(t), t === a.m.GRADIENT ? el(n) : en(n[0]), C.default.track(D.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
-  }, [el, en]), ed = l.useCallback(e => {
-    $(e)
-  }, [$]), eu = l.useCallback(e => {
-    W === a.m.GRADIENT ? el(e) : en(e[0])
-  }, [W, el, en]);
-  return null == Y ? null : (0, o.jsx)(m.Gt, {
-    value: er,
-    children: (0, o.jsx)(v.k.Provider, {
+    } = (0, N.aY)();
+    $(e), Q(t), t === i.m.GRADIENT ? ei(n) : eo(n[0]), j.default.track(R.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+  }, [ei, eo]), ep = o.useCallback(e => {
+    Q(e)
+  }, [Q]), em = o.useCallback(e => {
+    J === i.m.GRADIENT ? ei(e) : eo(e[0])
+  }, [J, ei, eo]);
+  return null == H ? null : (0, l.jsx)(m.Gt, {
+    value: ea,
+    children: (0, l.jsx)(P.k.Provider, {
       value: {
         overrideSettings: true
       },
-      children: (0, o.jsxs)(d.Y0X, {
+      children: (0, l.jsxs)(d.Y0X, {
         "data-migration-pending": true,
-        transitionState: B,
+        transitionState: Z,
         size: d.CgR.LARGE,
         parentComponent: "DisplayNameStylesModal",
         className: L.modalRoot,
-        children: [(0, o.jsxs)(d.hzk, {
+        children: [(0, l.jsxs)(d.hzk, {
           "data-migration-pending": true,
           className: L.modalContent,
           style: {
             overflow: "hidden auto"
           },
-          children: [(0, o.jsxs)("div", {
+          children: [(0, l.jsxs)("div", {
             className: L.selectionSection,
-            children: [(0, o.jsx)(d.xBx, {
+            children: [(0, l.jsx)(d.xBx, {
               "data-migration-pending": true,
               separator: false,
               className: L.sectionHeader,
-              children: (0, o.jsx)(d.X6q, {
+              children: (0, l.jsx)(d.X6q, {
                 variant: "heading-lg/semibold",
-                children: A.intl.string(R.default.ZPMAlZ)
+                children: I.intl.string(A.default.ZPMAlZ)
               })
-            }), (0, o.jsx)(y.Z, {
-              selectedFontId: X,
-              setSelectedFontId: V,
-              displayName: z,
+            }), (0, l.jsx)(O.Z, {
+              selectedFontId: W,
+              setSelectedFontId: $,
+              displayName: F,
               className: L.selectionSubSection
-            }), (0, o.jsx)(k.Z, {
-              selectedEffectId: W,
-              setSelectedEffectId: ed,
+            }), (0, l.jsx)(y.Z, {
+              selectedEffectId: J,
+              setSelectedEffectId: ep,
               className: L.selectionSubSection
-            }), (0, o.jsx)(N.Z, {
-              selectedColors: ea,
-              setSelectedColors: eu,
-              selectedEffectId: W,
+            }), (0, l.jsx)(k.Z, {
+              selectedColors: es,
+              setSelectedColors: em,
+              selectedEffectId: J,
               className: L.selectionSubSection,
-              defaultColor: J.defaultColors[0]
+              defaultColor: ee.defaultColors[0]
             })]
-          }), (0, o.jsx)(T.Z, {
-            user: Y,
-            displayName: z,
-            selectedFontId: X,
-            selectedEffectId: W,
-            selectedColors: W === a.m.SOLID && (0, c.E)(ea, J.defaultColors) ? [] : ea,
-            onClose: G
+          }), (0, l.jsx)(E.Z, {
+            user: H,
+            guild: U,
+            displayName: F,
+            selectedFontId: W,
+            selectedEffectId: J,
+            selectedColors: J === i.m.SOLID && (0, c.E)(es, ee.defaultColors) ? [] : es,
+            onClose: Y
           })]
-        }), (0, o.jsx)(O.B, {
-          onApply: es,
-          onSurpriseMe: ec,
-          onClose: G,
-          canApply: ei,
-          analyticsLocations: er
+        }), (0, l.jsx)(T.B, {
+          onApply: ed,
+          onSurpriseMe: eu,
+          onClose: Y,
+          canApply: ec,
+          analyticsLocations: ea
         })]
       })
     })

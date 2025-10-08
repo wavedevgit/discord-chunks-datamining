@@ -79,7 +79,7 @@ function S(e) {
   let {
     wishlist: k,
     error: D
-  } = (0, g.k)(n), Z = i.useCallback(() => {
+  } = (0, g.k)(n, t.id), Z = i.useCallback(() => {
     if (null == n) return;
     let e = N ? l.f.PRIVATE : l.f.PUBLIC;
     C(!N), f.Z.updateWishlistVisibility(n, e), (0, m.Er)({

@@ -73,7 +73,7 @@ let M = e => {
       }), [c]);
     l.useEffect(() => {
       null != c && null == H && (0, _.Z)(c.id, c.getAvatarURL(null, 80))
-    }, [c, H]), (0, m.k)(W);
+    }, [c, H]), (0, m.k)(W, null == c ? true : c.id);
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V

@@ -188,6 +188,7 @@ class w extends Chunk647438.Component {
         "aria-label": null != (i = e.nick) ? i : e.user.tag,
         children: (0, r.jsx)(g.qEK, {
           tabIndex: false,
+          "aria-label": e.user.username,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
           className: s()(S.avatar, t, null != t ? S.subscriberMask : null),
           size: g.EFr.SIZE_32

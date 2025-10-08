@@ -1,3 +1,3 @@
 /** Chunk was on 71071 **/
 /** chunk id: 320200, original params: i (module,exports,require) **/
-module.exports = JSON.parse('{"UvP/1N":"Ištrinta","Bz9gcH":"Neprisijungęs","7q4iGR":"Prisijungęs","1eK9GR":"Užimtas","op6/kZ":"Vieta","iccpNT":"Vieta","78avu7":"Pavadinimas","3QONen":"Planas","D0Mb4O":"Pakviesti Draugų","3NtB39":"Tvarkyti planą","NUTl4u":"Nustatymai","MQQIu7":"Serverio Būsena"}')
+module.exports = JSON.parse('{"UvP/1N":"Ištrinta","Bz9gcH":"Neprisijungęs","7q4iGR":"Prisijungęs","1eK9GR":"Užimtas","op6/kZ":"Vieta","iccpNT":"Vieta","78avu7":"Pavadinimas","3QONen":"Planas","8QpmEx":"Peržiūrėti","D0Mb4O":"Pakviesti Draugų","3NtB39":"Tvarkyti planą","NUTl4u":"Nustatymai","MQQIu7":"Serverio Būsena"}')

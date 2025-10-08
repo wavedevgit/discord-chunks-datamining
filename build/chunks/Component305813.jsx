@@ -1,20 +1,23 @@
 /** Chunk was on 47495 **/
 /** chunk id: 305813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk22267 = require("./22267.jsx"),
+  Chunk778825 = require("./778825.js"),
   Chunk786761 = require("./786761.js"),
   Chunk3148 = require("./3148.js"),
   Chunk739566 = require("./739566.js"),
   Chunk753206 = require("./753206.jsx"),
+  Chunk4242 = require("./4242.js"),
+  Chunk150039 = require("./150039.js"),
   Chunk678135 = require("./678135.jsx"),
   Chunk643879 = require("./643879.js"),
   Chunk687158 = require("./687158.js"),
@@ -29,31 +32,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk270816 = require("./270816.js");
 
-function O(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      o = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), o.forEach(function(t) {
-      var o;
-      o = n[t], t in e ? Object.defineProperty(e, t, {
-        value: o,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = o
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function T(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, o)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -61,143 +64,151 @@ function T(e, t) {
   }), e
 }
 
-function E(e) {
+function A(e) {
   let {
     user: t,
-    displayName: n,
-    selectedFontId: r,
-    selectedEffectId: E,
-    selectedColors: R,
-    onClose: A
-  } = e, L = (0, c.ZP)(), I = (0, s.wjy)(L), [w, B] = (0, l.useState)(I), M = (0, x.ZP)(t.id, null), {
-    bannerSrc: Z
-  } = (0, _.Z)({
-    displayProfile: M,
+    guild: n,
+    displayName: r,
+    selectedFontId: A,
+    selectedEffectId: L,
+    selectedColors: w,
+    onClose: B
+  } = e, Z = (0, c.ZP)(), M = (0, s.wjy)(Z), [G, Y] = (0, o.useState)(M), H = (0, S.ZP)(t.id, null), {
+    bannerSrc: z
+  } = (0, C.Z)({
+    displayProfile: H,
     size: 413,
     canAnimate: false
-  }), G = (0, i.cj)([S.Z], () => S.Z.getAllPending()), Y = (0, h.SD)({
+  }), F = (0, a.cj)([v.Z, u.Z], () => null == n ? v.Z.getAllPending() : u.Z.getAllPending()), U = (0, b.SD)({
     userId: t.id,
-    image: G.pendingAvatar
-  }), H = w ? v.BRd.DARK : v.BRd.LIGHT;
-  (I && w || !I && !w) && (H = L);
-  let z = (0, l.useCallback)(() => {
-      C.default.track(v.rMx.DISPLAY_NAME_STYLES_CLOSED), A()
-    }, [A]),
-    F = (0, l.useCallback)(e => {
-      B(e === v.BRd.DARK), C.default.track(v.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
-        dark: e === v.BRd.DARK
+    image: F.pendingAvatar
+  }), {
+    userNameplate: q,
+    guildNameplate: K,
+    pendingNameplate: X
+  } = (0, x.Zx)(t, null == n ? true : n.id), V = null != K ? (0, h.Pb)(K) : true, W = G ? k.BRd.DARK : k.BRd.LIGHT;
+  (M && G || !M && !G) && (W = Z);
+  let $ = (0, o.useCallback)(() => {
+      P.default.track(k.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
+    }, [B]),
+    J = (0, o.useCallback)(e => {
+      Y(e === k.BRd.DARK), P.default.track(k.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+        dark: e === k.BRd.DARK
       })
     }, []),
-    U = (0, l.useMemo)(() => T(O({}, (0, m.ij)(t, null)), {
-      nick: n,
+    Q = (0, o.useMemo)(() => R(D({}, (0, f.ij)(t, null)), {
+      nick: r,
       displayNameStyles: {
-        fontId: r,
-        effectId: E,
-        colors: R
+        fontId: A,
+        effectId: L,
+        colors: w
       }
-    }), [t, r, E, R, n]);
-  return (0, o.jsxs)("div", {
-    className: y.previewSection,
-    children: [(0, o.jsx)(s.xBx, {
+    }), [t, A, L, w, r]);
+  return (0, l.jsxs)("div", {
+    className: E.previewSection,
+    children: [(0, l.jsx)(s.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: y.sectionHeader,
-      children: (0, o.jsx)(s.olH, {
+      className: E.sectionHeader,
+      children: (0, l.jsx)(s.olH, {
         "data-migration-pending": true,
-        onClick: z,
-        innerClassName: y.closeButton
+        onClick: $,
+        innerClassName: E.closeButton
       })
-    }), null != Z && (0, o.jsx)(b.Z, {
+    }), null != z && (0, l.jsx)(j.Z, {
       user: t,
-      displayProfile: M,
-      themeType: P.l.MODAL_V2,
-      className: y.backgroundThemeContainer,
+      displayProfile: H,
+      themeType: y.l.MODAL_V2,
+      className: E.backgroundThemeContainer,
       forceUserTheme: true,
-      children: (0, o.jsx)("div", {
-        className: y.bannerBackground,
+      children: (0, l.jsx)("div", {
+        className: E.bannerBackground,
         style: {
-          backgroundImage: "url(".concat(Z, ")")
+          backgroundImage: "url(".concat(z, ")")
         }
       })
-    }), (0, o.jsx)(s.f6W, {
-      theme: H,
-      children: e => (0, o.jsxs)("div", {
-        className: a()(y.previewCards, e),
+    }), (0, l.jsx)(s.f6W, {
+      theme: W,
+      children: e => (0, l.jsxs)("div", {
+        className: i()(E.previewCards, e),
         inert: true,
-        children: [(0, o.jsx)(g.Z, T(O({
-          user: t
-        }, G), {
-          pendingAvatar: Y,
-          pendingGlobalName: n,
-          pendingDisplayNameStyles: U.displayNameStyles,
+        children: [(0, l.jsx)(_.Z, R(D({
+          user: t,
+          guild: n
+        }, F), {
+          pendingAvatar: U,
+          pendingGlobalName: r,
+          pendingDisplayNameStyles: Q.displayNameStyles,
           canUsePremiumCustomization: true,
           disabledInputs: true,
           hideCustomStatus: true,
           hideBioSection: true,
-          containerClassName: y.profile,
+          containerClassName: E.profile,
           interactive: false,
           hideExampleButton: true
-        })), (0, o.jsx)(f.Z, {
-          author: U,
-          message: (0, u.e5)(T(O({}, (0, p.ZP)({
+        })), (0, l.jsx)(g.Z, {
+          author: Q,
+          message: (0, p.e5)(R(D({}, (0, m.ZP)({
             channelId: "1337",
-            content: k.intl.string(N.default.h5Cuen)
+            content: T.intl.string(O.default.h5Cuen)
           })), {
-            state: v.yb.SENT,
+            state: k.yb.SENT,
             id: "0"
           })),
           isGroupStart: true,
           hideSimpleEmbedContent: true,
           hideGuildTag: true,
-          className: y.chatMessage
-        }), (0, o.jsx)(d.Z, {
+          className: E.chatMessage,
+          previewGuildId: null == n ? true : n.id
+        }), (0, l.jsx)(d.Z, {
           user: t,
-          nameplate: G.pendingNameplate,
-          nameplateData: true === G.pendingNameplate ? t.nameplate : true,
-          pendingGlobalName: n,
-          pendingDisplayNameStyles: U.displayNameStyles,
+          guildId: null == n ? true : n.id,
+          nameplate: X,
+          nameplateData: null == X ? null != V ? V : q : true,
+          pendingGlobalName: r,
+          pendingDisplayNameStyles: Q.displayNameStyles,
           isHighlighted: true,
-          className: y.nameplate
+          className: E.nameplate
         })]
       })
-    }), (0, o.jsxs)("div", {
-      className: y.themeToggleSection,
-      children: [(0, o.jsx)(s.Text, {
+    }), (0, l.jsxs)("div", {
+      className: E.themeToggleSection,
+      children: [(0, l.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: k.intl.format(N.default.prQba2, {
-          helpArticleLink: j.Z.getArticleURL(v.BhN.DISPLAY_NAME_STYLES)
+        children: T.intl.format(O.default.prQba2, {
+          helpArticleLink: N.Z.getArticleURL(k.BhN.DISPLAY_NAME_STYLES)
         })
-      }), (0, o.jsx)(D, {
-        darkPreview: w,
-        onToggleTheme: F
+      }), (0, l.jsx)(I, {
+        darkPreview: G,
+        onToggleTheme: J
       })]
     })]
   })
 }
 
-function D(e) {
+function I(e) {
   let {
     darkPreview: t,
     onToggleTheme: n
-  } = e, l = t ? v.BRd.DARK : v.BRd.LIGHT;
-  return (0, o.jsx)(s.sY7, {
-    className: y.themeToggleControl,
-    optionClassName: y.themeToggleOption,
+  } = e, o = t ? k.BRd.DARK : k.BRd.LIGHT;
+  return (0, l.jsx)(s.sY7, {
+    className: E.themeToggleControl,
+    optionClassName: E.themeToggleOption,
     options: [{
       name: "",
-      tooltip: k.intl.string(k.t.b8Cei4),
-      value: v.BRd.DARK,
+      tooltip: T.intl.string(T.t.b8Cei4),
+      value: k.BRd.DARK,
       icon: s.Z6G,
-      className: l === v.BRd.DARK ? y.themeToggleOptionSelected : true
+      className: o === k.BRd.DARK ? E.themeToggleOptionSelected : true
     }, {
       name: "",
-      tooltip: k.intl.string(k.t.K2sFfn),
-      value: v.BRd.LIGHT,
+      tooltip: T.intl.string(T.t.K2sFfn),
+      value: k.BRd.LIGHT,
       icon: s.chG,
-      className: l === v.BRd.LIGHT ? y.themeToggleOptionSelected : true
+      className: o === k.BRd.LIGHT ? E.themeToggleOptionSelected : true
     }],
-    value: l,
+    value: o,
     onChange: e => {
       let {
         value: t

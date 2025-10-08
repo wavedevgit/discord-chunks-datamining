@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk243778 = require("./243778.jsx"),
+  Chunk886880 = require("./886880.jsx"),
   Chunk82084 = require("./82084.jsx"),
-  Chunk218353 = require("./218353.jsx"),
   Chunk131051 = require("./131051.js"),
   Chunk663389 = require("./663389.js"),
   Chunk594174 = require("./594174.js"),
@@ -60,9 +60,9 @@ function _(e) {
   let a = p.Z.useField("query"),
     {
       node: c,
-      directory: d
+      directory: u
     } = (0, f.Z)(y.Z, a),
-    j = (t = x.n.ACCOUNT_PANEL, null == d.entry(n) ? t : n),
+    j = (t = x.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
     g = l.useRef(null);
   return ((0, s.ZP)(() => {
     let e = m.Z.getSection();
@@ -70,7 +70,7 @@ function _(e) {
       destinationPanel: e,
       originPanel: null
     }), g.current = e)
-  }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(u.Z, function(e) {
+  }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -89,7 +89,7 @@ function _(e) {
     return e
   }({
     root: c,
-    directory: d,
+    directory: u,
     sidebarHeader: S,
     emptyState: P,
     sidebarFooter: v.Z,
@@ -116,7 +116,7 @@ function S() {
       align: "center",
       scrollBehavior: "sticky"
     }), []),
-    u = Chunk647438.useCallback(e => {
+    d = Chunk647438.useCallback(e => {
       p.Z.setState({
         query: e
       })
@@ -137,7 +137,7 @@ function S() {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk942408.popoverAnchor,
         ref: exports
-      }), (0, Chunk951288.jsx)(Chunk218353.Z, {
+      }), (0, Chunk951288.jsx)(Chunk886880.Z, {
         dismissibleContentType: Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
         targetElementRef: exports,
         visibleContent: require,

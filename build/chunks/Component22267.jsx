@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570908 = require("./570908.jsx"),
   Chunk204418 = require("./204418.jsx"),
-  Chunk181430 = require("./181430.js"),
+  Chunk386725 = require("./386725.js"),
   Chunk821795 = require("./821795.js"),
   Chunk892567 = require("./892567.jsx"),
   Chunk172751 = require("./172751.jsx"),
@@ -56,14 +56,16 @@ let C = {
       pendingGlobalName: x,
       user: t,
       guildMember: W
-    }) : true, z = C[k], q = (0, f.Y)({
-      location: "NameplatePreview"
-    }), X = true !== M ? M : null == t ? true : t.displayNameStyles, Q = null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
+    }) : true, z = C[k], q = (0, f.Z)({
+      userId: null == t ? true : t.id,
+      guildId: n,
+      pendingDisplayNameStyles: M
+    }), X = null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
       a11y_text: a.label
     }) : I.intl.string(I.t.SZeUdX);
     return (0, r.jsx)("div", {
       role: "img",
-      "aria-label": Q,
+      "aria-label": X,
       style: {
         color: Z ? "white" : "black",
         width: null != B ? "".concat(B, "px") : "100%"
@@ -103,12 +105,12 @@ let C = {
               }),
               name: (0, r.jsx)(p.Z, {
                 userName: K,
-                displayNameStyles: X,
+                displayNameStyles: q,
                 effectDisplayType: G ? _.F.PLAIN : _.F.ANIMATED,
                 loop: true
               }),
               innerClassName: P,
-              withDisplayNameStyles: q && null != X
+              withDisplayNameStyles: null != q
             })
           }) : null, (0, r.jsxs)("div", {
             className: o()(T.avatarContainer, L && T.avatarVisible),

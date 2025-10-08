@@ -171,6 +171,7 @@ function Z(e) {
           onUpsellClick: B
         })),
         nameplatePreview: z ? (0, r.jsx)(p.Z, {
+          pendingDisplayNameStyles: K,
           user: a,
           guildId: null == t ? true : t.id,
           nameplate: V,

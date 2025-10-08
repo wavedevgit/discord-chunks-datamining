@@ -48,13 +48,13 @@ function x(e) {
         onClose: () => {
           (0, o.Zy)(), a()
         },
-        "aria-label": b.intl.string(m.default.xCq1DA),
+        "aria-label": g.intl.string(m.default.xCq1DA),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
           children: [null != t.providerType && (0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: b.intl.string(m.default["TciV8/"]),
+            label: g.intl.string(m.default["TciV8/"]),
             action: () => {
               (0, l.q)({
                 href: u.BH[t.providerType]
@@ -63,7 +63,7 @@ function x(e) {
           }), (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: b.intl.string(m.default.NUTl4u),
+            label: g.intl.string(m.default.NUTl4u),
             action: () => {
               (0, d.Z)({
                 guildId: n,
@@ -96,8 +96,8 @@ function x(e) {
         }
         return e
       }({
-        "aria-label": b.intl.string(b.t.UKOtz8),
-        className: g.clickable
+        "aria-label": g.intl.string(g.t.UKOtz8),
+        className: b.clickable
       }, e), t = t = {
         innerRef: x,
         children: (0, r.jsx)(i.xhG, {
