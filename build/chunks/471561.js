@@ -1,0 +1,13 @@
+/** Chunk was on web.js **/
+/** chunk id: 471561, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  button: "button_fb7f94",
+  icon: "icon_fb7f94",
+  banner: "banner_fb7f94",
+  buttonInner: "buttonInner_fb7f94",
+  themeColor: "themeColor_fb7f94",
+  primary: "primary_fb7f94",
+  secondary: "secondary_fb7f94",
+  bannerColor: "bannerColor_fb7f94"
+}

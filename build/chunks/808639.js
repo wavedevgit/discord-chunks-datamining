@@ -1,3 +1,8 @@
-/** Chunk was on 86290 **/
-/** chunk id: 808639, original params: i (module,exports,require) **/
-module.exports = JSON.parse('{"UvP/1N":"Poistettu","Bz9gcH":"Ei paikalla","7q4iGR":"Paikalla","1eK9GR":"Ei k\xe4ytett\xe4viss\xe4","op6/kZ":"Sijainti","iccpNT":"Sijainti","78avu7":"Nimi","3QONen":"Tilaus","8QpmEx":"Tutustu","D0Mb4O":"Kutsu kavereita","3NtB39":"Tilauksen hallinta","NUTl4u":"Asetukset","MQQIu7":"Palvelimen tila"}')
+/** Chunk was on web.js **/
+/** chunk id: 808639, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  buttonsContainer: "buttonsContainer_ffefd9",
+  removeButton: "removeButton_ffefd9",
+  buttonHighlighted: "buttonHighlighted_ffefd9"
+}

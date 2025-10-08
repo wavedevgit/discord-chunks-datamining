@@ -13,7 +13,7 @@ var Chunk63063 = require("./63063.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk131022 = require("./131022.js"),
+  Chunk398158 = require("./398158.js"),
   Chunk388032 = require("./388032.jsx");
 let c = new Set([Chunk480916.cU.NSFW_GUILD]),
   u = e => [{
@@ -37,11 +37,11 @@ var _ = function(e) {
 }({});
 let p = {
   1: {
-    title: Chunk131022.default["2yLvkZ"],
-    description: Chunk131022.default.eJmat7
+    title: Chunk398158.default["2yLvkZ"],
+    description: Chunk398158.default.eJmat7
   },
   2: {
-    title: Chunk131022.default.dwkwo6,
-    description: Chunk131022.default.ZdmRwc
+    title: Chunk398158.default.dwkwo6,
+    description: Chunk398158.default.ZdmRwc
   }
 }

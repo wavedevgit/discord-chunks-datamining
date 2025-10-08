@@ -1,4 +1,4 @@
-/** Chunk was on 5938 **/
+/** Chunk was on 5588 **/
 /** chunk id: 722332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk538645 = require("./538645.jsx"),
   Chunk383036 = require("./383036.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk431638 = require("./431638.js");
+  Chunk440543 = require("./440543.js");
 let b = e => {
     let {
       setTab: t
@@ -81,9 +81,9 @@ let b = e => {
   g = () => {
     let [e, t] = Chunk647438.useState(0);
     return (0, Chunk951288.jsxs)(Chunk793030.zJl, {
-      className: Chunk431638.wrapper,
+      className: Chunk440543.wrapper,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk431638.nav,
+        className: Chunk440543.nav,
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "ShopKeeper"

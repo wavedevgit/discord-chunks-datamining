@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 312910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk881332 = require("./881332.js");
+  Chunk96761 = require("./96761.js");
 let C = {
     page: Chunk981631.ZY5.GUILD_SETTINGS,
     section: Chunk981631.jXE.GUILD_SETTINGS_STICKERS,
@@ -138,7 +138,7 @@ let C = {
         }) : (0, Chunk951288.jsx)(O, {
           guild: module
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk881332.divider
+          className: Chunk96761.divider
         }), (0, Chunk951288.jsx)(Chunk145499.Z, {
           guild: module
         })]

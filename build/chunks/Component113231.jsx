@@ -1,4 +1,4 @@
-/** Chunk was on 5938 **/
+/** Chunk was on 5588 **/
 /** chunk id: 113231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk693587 = require("./693587.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
-  Chunk593415 = require("./593415.js");
+  Chunk733870 = require("./733870.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -86,26 +86,26 @@ function f() {
       })
     }, [f, module]);
   return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk593415.container,
+    className: Chunk733870.container,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk593415.section,
+      className: Chunk733870.section,
       children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(exports)
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk593415.section,
+      className: Chunk733870.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Set server state for first server: ".concat(null == f ? true : f.name)
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk593415.buttonContainer,
+        className: Chunk733870.buttonContainer,
         children: g
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Remove Server Info"
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk593415.buttonContainer,
+        className: Chunk733870.buttonContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Remove IP Address & Game Server Panel URL",

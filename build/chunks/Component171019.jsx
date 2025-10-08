@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk597688 = require("./597688.js"),
   Chunk884697 = require("./884697.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk237680 = require("./237680.js");
+  Chunk71414 = require("./71414.js");
 let d = e => {
   let {
     isPurchaseSection: t,

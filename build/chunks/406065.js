@@ -1,0 +1,3 @@
+/** Chunk was on 24531 **/
+/** chunk id: 406065, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Ayarları D\xfczenle","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["mesaj"],"other":["mesajlar"]},0,"cardinal"]],"O+racX":"Bildirim yok.","5H2Jd3":"T\xfcm\xfcn\xfc G\xf6ster","Ko8NGh":"İşaretleri G\xf6ster","dcpdhI":"Oraya gitmek i\xe7in bir mesaj se\xe7.","VAK+h4":"Bildirim Merkezine hoş geldin!"}')

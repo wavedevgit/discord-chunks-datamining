@@ -1,7 +1,7 @@
-/** Chunk was on 96033 **/
-/** chunk id: 321867, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 72891 **/
+/** chunk id: 321867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,41 +18,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869497 = require("./869497.js");
+  Chunk637285 = require("./637285.js");
 
-function N(t) {
+function h(e) {
   let {
-    analyticsSection: e,
-    type: i
-  } = t, N = (0, o.e7)([u.default], () => u.default.getCurrentUser()), v = h.ZP.canUseAnimatedAvatar(N), b = h.ZP.canUsePremiumProfileCustomization(N), y = i === m.pC.BANNER && b || i === m.pC.AVATAR && v, {
-    sourceAnalyticsLocations: A
-  } = (0, s.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
+    analyticsSection: t,
+    type: n
+  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = _.ZP.canUseAnimatedAvatar(h), P = _.ZP.canUsePremiumProfileCustomization(h), b = n === p.pC.BANNER && P || n === p.pC.AVATAR && A, {
+    sourceAnalyticsLocations: E
+  } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (a.useEffect(() => {
-      y || _.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: e,
-        location_stack: A
+      b || f.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: t,
+        location_stack: E
       })
-    }, [y, e, A]), y) return null;
-  let E = (0, n.jsx)(d.Z, {
-    className: p.__invalid_getNitroLink,
+    }, [b, t, E]), b) return null;
+  let R = (0, i.jsx)(s.Z, {
+    className: x.__invalid_getNitroLink,
     size: r.zx.Sizes.SMALL,
     look: r.zx.Looks.LINK,
     color: r.zx.Colors.LINK,
-    subscriptionTier: f.Si.TIER_2,
+    subscriptionTier: m.Si.TIER_2,
     textOptions: {
-      textOverride: x.intl.format(x.t["944tDg"], {})
+      textOverride: N.intl.format(N.t["944tDg"], {})
     },
     showIcon: false,
     premiumModalAnalyticsLocation: {
-      section: e,
+      section: t,
       object: g.qAy.BUTTON_CTA
     },
     disableShine: true
   });
-  return (0, n.jsx)(c.Z, {
+  return (0, i.jsx)(d.Z, {
     reducedRightPadding: true,
-    className: p.nitroPreviewUpsell,
-    text: x.intl.format(x.t.Og8039, {}),
-    button: E
+    className: x.nitroPreviewUpsell,
+    text: N.intl.format(N.t.Og8039, {}),
+    button: R
   })
 }

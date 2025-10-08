@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk168545 = require("./168545.js"),
   Chunk499339 = require("./499339.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk507349 = require("./507349.js");
+  Chunk841321 = require("./841321.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function m(e, t) {
 
 function g() {
   return (0, Chunk951288.jsxs)("svg", {
-    className: Chunk507349.radioIndicator,
+    className: Chunk841321.radioIndicator,
     width: 20,
     height: 20,
     viewBox: "0 0 40 40",
@@ -82,17 +82,17 @@ function g() {
       cx: 20,
       cy: 20,
       r: 20,
-      className: Chunk507349.outerRadioBase
+      className: Chunk841321.outerRadioBase
     }), (0, Chunk951288.jsx)("circle", {
       cx: 20,
       cy: 20,
       r: 20,
-      className: Chunk507349.outerRadioFill
+      className: Chunk841321.outerRadioFill
     }), (0, Chunk951288.jsx)("circle", {
       cx: 20,
       cy: 20,
       r: 8,
-      className: Chunk507349.innerDotRadio
+      className: Chunk841321.innerDotRadio
     })]
   })
 }

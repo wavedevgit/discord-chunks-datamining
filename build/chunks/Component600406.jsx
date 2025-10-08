@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk997612 = require("./997612.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk120983 = require("./120983.js");
+  Chunk567 = require("./567.js");
 let g = RegExp("^dev://mana(/([-\\w._0-9]+))?$", "i");
 
 function E(e) {

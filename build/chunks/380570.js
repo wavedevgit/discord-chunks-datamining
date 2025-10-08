@@ -4,9 +4,9 @@ require.d(exports, {
   Z: () => u
 }), require("./388685.js");
 var Chunk748780 = require("./748780.js"),
+  Chunk908670 = require("./908670.js"),
   Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js"),
-  Chunk716578 = require("./716578.js"),
   Chunk928518 = require("./928518.js");
 
 function s(e, t, n) {
@@ -27,7 +27,7 @@ class c extends Chunk317770.Z {
   injectWindowAnimationFrame(e) {
     let t = t => e.requestAnimationFrame(t),
       n = t => e.cancelAnimationFrame(t);
-    r.Z.inject.RequestAnimationFrame(t), r.Z.inject.CancelAnimationFrame(n), a.f.setRAF(t, n)
+    r.Z.inject.RequestAnimationFrame(t), r.Z.inject.CancelAnimationFrame(n), i.f.setRAF(t, n)
   }
   constructor(...e) {
     super(...e), s(this, "handleMainWindowFocus", e => {

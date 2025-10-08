@@ -59,7 +59,7 @@ let d = {
     a()(i.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?"), a()(i.applicationId === t, "Passed an unexpected [applicationId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?"), (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("89311"), n.e("20074")]).then(n.bind(n, 644941));
+      } = await Promise.all([n.e("89311"), n.e("83123")]).then(n.bind(n, 644941));
       return n => (0, r.jsx)(e, u(l({
         applicationId: t,
         source: s,

@@ -221,7 +221,8 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
       evaluation_id: e,
       experiment: t,
       exposure_location: n,
-      unit_type: r
+      unit_type: r,
+      tracked_variation_id: a
     }, {
       flush: true
     }), D[o] = Date.now(), this.saveTrackedExposures(D))

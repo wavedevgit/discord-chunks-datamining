@@ -6,8 +6,8 @@ require.r(exports), require.d(exports, {
 }), require("./953529.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
-  Chunk25817 = require("./25817.jsx"),
+var Chunk942682 = require("./942682.jsx"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk55563 = require("./55563.js"),
   Chunk551428 = require("./551428.js"),
@@ -28,7 +28,7 @@ function g(e) {
     skuId: O,
     appId: v,
     onHeaderTitleClick: I
-  } = e, T = (0, i.e7)([l.Z], () => l.Z.getForSKU(O), [O]), S = (0, i.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
+  } = e, T = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), S = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
   if (null == S) return null;
   let C = null != (n = S.name) ? n : "",
     N = null != (g = null == T || null == (t = T.description) ? true : t.trim()) ? g : true,
@@ -54,7 +54,7 @@ function g(e) {
       title: C,
       description: N,
       imgSrc: R,
-      tag: null != w ? (0, r.jsx)(a.V, {
+      tag: null != w ? (0, r.jsx)(i.V, {
         text: w
       }) : true,
       FallbackIcon: o.Prq

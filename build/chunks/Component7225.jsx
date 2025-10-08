@@ -1,13 +1,13 @@
-/** Chunk was on 80691 **/
+/** Chunk was on 42124 **/
 /** chunk id: 7225, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   default: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk374481 = require("./374481.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk312568 = require("./312568.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk728345 = require("./728345.js"),
   Chunk812206 = require("./812206.js"),
@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk979007 = require("./979007.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk58954 = require("./58954.js"),
-  Chunk815847 = require("./815847.js");
+  Chunk465103 = require("./465103.js"),
+  Chunk325380 = require("./325380.js");
 
 function v(t) {
   let {
@@ -29,7 +29,7 @@ function v(t) {
     transitionState: i,
     appId: v,
     guildId: w
-  } = t, C = (0, s.e7)([p.Z], () => p.Z.getApplication(v), [v]), [Z, y] = r.useState(() => p.Z.isFetchingApplication(v) ? {
+  } = t, C = (0, o.e7)([p.Z], () => p.Z.getApplication(v), [v]), [Z, y] = r.useState(() => p.Z.isFetchingApplication(v) ? {
     status: 1
   } : {
     status: 0
@@ -58,29 +58,29 @@ function v(t) {
     }),
     A = (0, n.jsx)("div", {
       className: b.icon,
-      children: (0, n.jsx)(d.Z, {})
+      children: (0, n.jsx)(u.Z, {})
     }),
-    I = u.wS ? (0, n.jsx)(a.hU, {
+    I = d.wS ? (0, n.jsx)(c.hU, {
       "aria-label": m.intl.string(m.t.WqhZsr),
-      icon: () => (0, n.jsx)(a.xPt, {
+      icon: () => (0, n.jsx)(c.xPt, {
         size: "sm"
       }),
       onClick: () => {
         let t = "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(v, g.GlobalDiscoveryAppsSections.STORE));
-        (0, u.JG)(t, () => (0, a.showToast)((0, a.createToast)(m.intl.string(m.t["L/PwZW"]), a.ToastType.SUCCESS))), (0, _.X)(v, _.B.STORE_MODAL)
+        (0, d.JG)(t, () => (0, c.showToast)((0, c.createToast)(m.intl.string(m.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, _.X)(v, _.B.STORE_MODAL)
       },
       variant: "icon-only"
     }) : true;
-  return (0, n.jsxs)(c.IX, {
+  return (0, n.jsxs)(s.IX, {
     transitionState: i,
     "aria-label": T,
     onClose: e,
     size: "xl",
-    children: [(0, n.jsx)(c.xBx, {
+    children: [(0, n.jsx)(s.xBx, {
       leading: A,
       title: T,
       trailing: I
-    }), (0, n.jsx)(o.Z, {
+    }), (0, n.jsx)(a.Z, {
       children: (0, n.jsx)("main", {
         className: j.bodyInner,
         children: (0, n.jsx)(f.AF, {
@@ -90,8 +90,8 @@ function v(t) {
           otps: P
         })
       })
-    }), (0, n.jsx)(c.mzw, {
-      children: (0, n.jsx)(a.Text, {
+    }), (0, n.jsx)(s.mzw, {
+      children: (0, n.jsx)(c.Text, {
         variant: "text-md/normal",
         children: null != C.termsOfServiceUrl || null != C.privacyPolicyUrl ? (0, n.jsx)(h.Z, {
           termsOfServiceUrl: C.termsOfServiceUrl,

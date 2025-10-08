@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk399521 = require("./399521.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664688 = require("./664688.js");
+  Chunk944658 = require("./944658.js");
 
 function E(e) {
   var t, n;
@@ -96,12 +96,12 @@ function y() {
   } = exports;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk664688.frequentFriendsRow,
+      className: Chunk944658.frequentFriendsRow,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk664688.frequentFriendsHeader,
+        className: Chunk944658.frequentFriendsHeader,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
-          className: Chunk664688.frequentFriendsTitle,
+          className: Chunk944658.frequentFriendsTitle,
           children: Chunk388032.intl.string(Chunk388032.t.QEh90N)
         }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcX),
@@ -139,7 +139,7 @@ function y() {
           }
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.u2D, {
-        className: Chunk664688.frequentFriendsAvatars,
+        className: Chunk944658.frequentFriendsAvatars,
         orientation: "horizontal",
         children: Chunk493683.map((e, t) => (0, r.jsx)(E, {
           user: e,
