@@ -26,7 +26,7 @@ function j(e) {
     guildId: t
   } = e;
   a.useEffect(() => {
-    (0, u.EC)(t), l.Z.getDetectableGames()
+    (0, u.EC)(t), s.Z.getDetectableGames()
   }, [t]);
   let j = (0, d.Z)(t),
     _ = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(t)),
@@ -41,14 +41,14 @@ function j(e) {
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
         children: p.intl.string(x.default.lH9Dio)
-      }), (0, r.jsx)(s.IGR, {
+      }), (0, r.jsx)(l.IGR, {
         disableColor: true,
         text: p.intl.string(p.t.oW0eUV),
         className: v.badge
       })]
     }), (0, r.jsxs)("div", {
       className: v.contentContainer,
-      children: [(null == _ ? true : _.instances) != null ? (0, r.jsx)(s.zJl, {
+      children: [(null == _ ? true : _.instances) != null ? (0, r.jsx)(l.zJl, {
         className: v.gameContainerWrapper,
         children: (0, r.jsxs)("div", {
           className: v.gameContainer,
@@ -59,8 +59,8 @@ function j(e) {
         })
       }) : (0, r.jsx)("div", {
         className: v.spinnerContainer,
-        children: (0, r.jsx)(s.$jN, {
-          type: s.RAz.SPINNING_CIRCLE
+        children: (0, r.jsx)(l.$jN, {
+          type: l.RAz.SPINNING_CIRCLE
         })
       }), j && (0, r.jsx)(f.Z, {
         guildId: t

@@ -206,7 +206,7 @@ let D = function() {
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onClick: () => {
-                    window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(F))
+                    window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(F))
                   }
                 })
               }
@@ -261,7 +261,7 @@ let D = function() {
               onMouseEnter: t,
               disabled: V,
               onClick: () => {
-                window.open(k.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, z)))
+                window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, z)))
               }
             })
           }

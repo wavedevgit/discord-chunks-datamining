@@ -56,7 +56,7 @@ function x(e) {
             icon: i.kBi,
             label: g.intl.string(m.default["TciV8/"]),
             action: () => {
-              (0, l.q)({
+              (0, s.q)({
                 href: u.BH[t.providerType]
               })
             }
@@ -69,7 +69,7 @@ function x(e) {
                 guildId: n,
                 stepConfig: f,
                 initialPortkeyInstance: t,
-                analyticsLocation: s.Z.PORTKEY_OVERVIEW
+                analyticsLocation: l.Z.PORTKEY_OVERVIEW
               })
             }
           })]

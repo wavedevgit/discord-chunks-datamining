@@ -105,8 +105,8 @@ function y() {
   } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [i, l] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk647438.useState(null), E = Chunk647438.useRef(null), S = Chunk647438.useRef(null), [T, O] = Chunk647438.useState(.5), {
     krispModels: N,
     krispModelOverride: P,
-    inputMode: k,
-    echoCancellation: I,
+    inputMode: I,
+    echoCancellation: k,
     autoThreshold: w,
     vadUseKrisp: R,
     vadKrispActivationThreshold: A,
@@ -208,7 +208,7 @@ function y() {
           checked: U,
           onChange: e => d.Z.setNoiseCancellationEnableStats(e)
         })]
-      }), k === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), I === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: w,
@@ -240,7 +240,7 @@ function y() {
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: "Echo Cancellation",
-        checked: I,
+        checked: k,
         onChange: e => d.Z.setEchoCancellation(e)
       }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 4,
@@ -267,7 +267,7 @@ function y() {
                 audioBuffer: i,
                 createdAt: Date.now(),
                 suppression: G,
-                echoCancellation: I,
+                echoCancellation: k,
                 krispSuppressionLevel: j
               }])
             })

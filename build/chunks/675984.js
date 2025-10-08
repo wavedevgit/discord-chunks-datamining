@@ -1,13 +1,8 @@
 /** Chunk was on 5588 **/
 /** chunk id: 675984, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  m: () => r
-}), require("./953529.js"), require("./642613.js"), require("./388685.js");
-var Chunk962774 = require("./962774.js");
-
-function r(e) {
-  var t, n, r, i;
-  let l = e.skus.map(e => {
+function a(e) {
+  var t, n, a, r;
+  let i = e.skus.map(e => {
       let t = e.tenant_metadata.plan_features.map(e => ({
         title: e.title,
         description: e.description
@@ -19,15 +14,16 @@ function r(e) {
         specifications: t
       }
     }).sort((e, t) => t.cost - e.cost),
-    s = l.length > 0 ? Math.min(...l.map(e => e.cost)) : 0;
+    l = i.length > 0 ? Math.min(...i.map(e => e.cost)) : 0;
   return {
     id: e.id,
     name: e.name,
-    gameId: null != (i = null == (r = e.tenant_metadata) || null == (n = r.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? i : "",
-    imageUrl: "",
+    gameId: null != (r = null == (a = e.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? r : "",
     developer: "Game Server Provider",
-    plans: l,
-    regions: a.Y9,
-    baseCost: s
+    plans: i,
+    baseCost: l
   }
 }
+require.d(exports, {
+  m: () => a
+}), require("./953529.js"), require("./642613.js"), require("./388685.js")

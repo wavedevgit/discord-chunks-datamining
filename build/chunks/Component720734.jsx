@@ -181,7 +181,7 @@ function tm(e) {
     "data-jump-section": b
   } = e, v = r.useRef(null), j = null != t ? t : v, y = (0, eH.NZ)({
     avatarDecoration: x,
-    size: (0, I.y9)(f.EFr.SIZE_32)
+    size: (0, k.y9)(f.EFr.SIZE_32)
   }), C = (0, q.Z)(), {
     updateOpenPopoutRef: E,
     highlightBadge: S,
@@ -828,7 +828,7 @@ function tf() {
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
     T = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
+    k = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
     Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     D = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
     L = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk628581 || Chunk374023.s.isDisallowPopupsSet() || Chunk571250,
@@ -1018,15 +1018,15 @@ function tg(e) {
     T = r.useRef(null),
     P = (0, ew.b)(E),
     {
-      activeVoice: k,
-      mostRecentlyRequestedVoiceId: I,
+      activeVoice: I,
+      mostRecentlyRequestedVoiceId: k,
       lastInitAttemptMayHaveCrashed: w
     } = (0, eS.o)(),
     {
       showSilentLagWarning: R
     } = (0, eE.Y)(),
-    A = null != k,
-    Z = (0, eC.z)(k),
+    A = null != I,
+    Z = (0, eC.z)(I),
     U = (0, d.e7)([eU.Z], () => eU.Z.isConnected()),
     {
       Component: F,
@@ -1265,7 +1265,7 @@ function tg(e) {
           let {
             closePopout: t
           } = e;
-          return (0, a.jsx)(ek.l, {
+          return (0, a.jsx)(eI.l, {
             onSettingsButtonClick: t
           })
         },
@@ -1341,7 +1341,7 @@ function tg(e) {
                   "aria-label": ta.intl.string(ta.t.Hapb4O),
                   disabled: o,
                   onClick: e => {
-                    i(te.L.INDIRECT_ACTION), n(e), null != I && !Q && w ? (0, eI.$)(() => $(true)) : $(!Q)
+                    i(te.L.INDIRECT_ACTION), n(e), null != k && !Q && w ? (0, ek.$)(() => $(true)) : $(!Q)
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(f.yRy, {

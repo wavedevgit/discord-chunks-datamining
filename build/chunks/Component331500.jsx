@@ -6,7 +6,7 @@ require.d(exports, {
 var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -68,7 +68,7 @@ function O(e) {
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    s = a.length >= v.zI;
+    l = a.length >= v.zI;
   return 0 === r.length ? (0, i.jsx)("div", {
     className: h.container,
     children: (0, i.jsx)(u.$jN, {
@@ -81,12 +81,12 @@ function O(e) {
       className: h.heading,
       variant: "heading-md/semibold",
       children: _.intl.string(j.default.DG1SHB)
-    }), s && (0, i.jsx)("div", {
+    }), l && (0, i.jsx)("div", {
       className: h.maxInstancesWarning,
       children: (0, i.jsx)(x.Y, {})
     }), (0, i.jsx)(c.zJl, {
-      className: l()(h.gameContainerWrapper, {
-        [h.disabled]: s
+      className: s()(h.gameContainerWrapper, {
+        [h.disabled]: l
       }),
       children: (0, i.jsx)("div", {
         className: h.gameContainer,
@@ -100,7 +100,7 @@ function O(e) {
           }),
           imageClassName: h.image,
           titleClassName: h.title,
-          disabled: s
+          disabled: l
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })
     })]

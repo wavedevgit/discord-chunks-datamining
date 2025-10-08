@@ -33,23 +33,23 @@ let f = {
       className: _
     } = e, {
       balance: y
-    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [S, T] = r.useState(false), [O, N] = r.useState(false), P = r.useRef(null), k = r.useCallback(() => {
+    } = (0, c.A)(), [C, E] = r.useState(d.b.DEFAULT), [S, T] = r.useState(false), [O, N] = r.useState(false), P = r.useRef(null), I = r.useCallback(() => {
       let e = !S;
       e && null != g && (0, o.Y)({
         pageType: g,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), E(e ? d.b.SELECTED : d.b.DEFAULT), T(e)
-    }, [S, g]), I = r.useCallback(() => {
-      S && k()
-    }, [S, k]), w = (0, s.Z)(null, I), R = r.useMemo(() => (0, a.jsx)(u.L, {
+    }, [S, g]), k = r.useCallback(() => {
+      S && I()
+    }, [S, I]), w = (0, s.Z)(null, k), R = r.useMemo(() => (0, a.jsx)(u.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
-        k(), i()
+        I(), i()
       },
       linkText: v
-    }), [g, n, v, k, i]);
+    }), [g, n, v, I, i]);
     return (0, a.jsxs)("div", {
       className: l()(x.container, _, {
         [x.hidden]: O,
@@ -63,7 +63,7 @@ let f = {
         onMouseDown: e => {
           e.stopPropagation()
         },
-        onClick: k,
+        onClick: I,
         showNotificationBadge: t
       }), S && (0, a.jsx)("div", {
         className: l()(x.cardContainer, j, {

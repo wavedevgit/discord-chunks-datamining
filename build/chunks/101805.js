@@ -19,7 +19,8 @@ function r(e) {
     providerType: e.provider_type,
     gameServerPanelUrl: e.provider_url,
     status: e.status,
-    gameId: e.game_id
+    gameId: e.game_id,
+    gameConfig: e.game_config
   }
 }
 require.d(exports, {
