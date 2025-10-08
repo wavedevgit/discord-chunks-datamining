@@ -491,7 +491,7 @@ function W(e) {
         searchContext: t,
         query: r,
         queryString: n
-      }), t.type === U.aib.DMS ? D.Z.fetchCrossDMMessages({
+      }), w.Z.updateSearchMode(t, U.QIO.NEWEST), t.type === U.aib.DMS ? D.Z.fetchCrossDMMessages({
         searchContext: t,
         selectedPageIndex: 0,
         queryString: n
@@ -500,8 +500,7 @@ function W(e) {
         searchQuery: r,
         queryString: n,
         searchEverywhere: i,
-        offset: 0,
-        searchMode: U.QIO.NEWEST
+        offset: 0
       })
     }, [t]),
     I = (0, u.e7)([E.Z, g.Z], () => {
@@ -523,10 +522,10 @@ function W(e) {
     P = (0, C.KS)({
       location: "Search"
     }),
-    w = A || P,
-    L = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : w ? G.intl.formatToPlainString(G.t.LDZtFB, {
+    L = A || P,
+    x = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : L ? G.intl.formatToPlainString(G.t.LDZtFB, {
       name: I
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, w, I]);
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, L, I]);
   return (0, r.jsx)(Y, {
     className: n,
     searchContext: t,
@@ -536,8 +535,8 @@ function W(e) {
     keyboardModeEnabled: o,
     onSearch: y,
     isSearchActive: _,
-    placeholder: L,
-    isSearchFiltersRedesignEnabled: w
+    placeholder: x,
+    isSearchFiltersRedesignEnabled: L
   })
 }
 
