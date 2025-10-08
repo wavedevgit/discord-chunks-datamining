@@ -58,7 +58,7 @@ function x() {
         children: Chunk388032.intl.string(Chunk401561.default.wzC4ws)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameInstanceContainer,
-        children: require.map((t, n) => (0, l.jsx)(u.Z, {
+        children: require.map((t, n) => (0, l.jsx)(c.Z, {
           guildId: e,
           gameInstance: t,
           onClick: O
@@ -73,7 +73,7 @@ function x() {
         children: Chunk388032.intl.string(Chunk401561.default.l4UdiY)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk782991.gameContainer,
-        children: Object.values(exports).map((e, t) => (0, l.jsx)(c.Z, {
+        children: Object.values(exports).map((e, t) => (0, l.jsx)(u.Z, {
           game: e,
           disabled: h,
           onClick: y

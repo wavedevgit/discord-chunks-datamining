@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk381994 = require("./381994.js"),
   Chunk197571 = require("./197571.js");
 
-function P(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,7 +71,7 @@ function E(e) {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
-    return n => (0, r.jsx)(e, T(P({}, n), {
+    return n => (0, r.jsx)(e, T(N({}, n), {
       analyticsSource: t
     }))
   })
@@ -152,7 +152,7 @@ function k(e) {
     selectedResolution: l,
     selectedFPS: s,
     onResolutionChange: o,
-    onFPSChange: x,
+    onFPSChange: g,
     onPresetChange: R,
     targetGuildPremiumTier: k,
     captureDeviceSelected: M
@@ -163,40 +163,40 @@ function k(e) {
     location: G
   } = (0, m.O)(), U = (0, h.Zq)({
     autoTrackExposure: false
-  }), W = (0, g.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? C.z8 : C.WC, Y = T(P({}, G), {
+  }), W = (0, x.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? y.z8 : y.WC, Y = T(N({}, G), {
     section: O.jXE.STREAM_SETTINGS
   }), J = (0, r.jsx)(d.hE, {
     buttons: V.map(e => A({
       type: e,
       selected: e.value === l,
       needsPremium: !(0, S.Z)(n, e.value, s, D, k, L),
-      needsDemo: W && e.value !== C.LY.RESOLUTION_720,
+      needsDemo: W && e.value !== y.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
       onClose: t,
       setIsHovering: H
     }))
   }), X = (0, r.jsx)(d.hE, {
-    buttons: C.k0.map(e => A({
+    buttons: y.k0.map(e => A({
       type: e,
       selected: e.value === s,
       needsPremium: !(0, S.Z)(n, l, e.value, D, k, L),
-      needsDemo: W && e.value === C.ws.FPS_60,
+      needsDemo: W && e.value === y.ws.FPS_60,
       analyticsLocation: Y,
-      onClick: () => x(e.value),
+      onClick: () => g(e.value),
       onClose: t,
       setIsHovering: H
     }))
   }), K = [{
-    value: C.tI.PRESET_VIDEO,
+    value: y.tI.PRESET_VIDEO,
     label: w.intl.string(w.t.HcwHc3)
   }, ...M ? [] : [{
-    value: C.tI.PRESET_DOCUMENTS,
+    value: y.tI.PRESET_DOCUMENTS,
     label: w.intl.string(w.t["/RfohI"])
   }], {
-    value: C.tI.PRESET_CUSTOM,
+    value: y.tI.PRESET_CUSTOM,
     label: w.intl.string(w.t["+eOtrK"])
-  }], q = n === C.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
+  }], q = n === y.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       children: (0, r.jsx)(u.xJW, {
         title: w.intl.string(w.t.rHyPXl),
@@ -209,11 +209,11 @@ function k(e) {
           })
         })
       })
-    }), z ? (0, r.jsx)(y.Z, {
+    }), z ? (0, r.jsx)(C.Z, {
       message: w.intl.string(w.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, W && (0, r.jsx)(y.c, {})]
+    }) : null, W && (0, r.jsx)(C.c, {})]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(u.xJW, {
@@ -227,13 +227,13 @@ function k(e) {
         titleClassName: Z.formItemTitleSlim,
         children: X
       })]
-    }), z ? (0, r.jsx)(y.Z, {
+    }), z ? (0, r.jsx)(C.Z, {
       onClose: t,
       openStreamUpsellModal: E,
       glow: F
-    }) : null, W && (0, r.jsx)(y.c, {})]
+    }) : null, W && (0, r.jsx)(C.c, {})]
   });
-  return (0, r.jsx)(f.Z, T(P({}, Y), {
+  return (0, r.jsx)(f.Z, T(N({}, Y), {
     children: (0, r.jsx)(u.xJW, {
       title: w.intl.string(w.t.ax4FnZ),
       titleClassName: Z.formItemTitle,
@@ -242,7 +242,7 @@ function k(e) {
         className: I.qualitySettingsContainer,
         children: [(0, r.jsx)(u.q4e, {
           value: n,
-          className: N.marginTop8,
+          className: P.marginTop8,
           options: K,
           onChange: e => R(e)
         }), q]

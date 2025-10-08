@@ -100,7 +100,7 @@ let j = {
           ref: T,
           className: O.container,
           id: "skill-trees-".concat(t),
-          renderIcon: e => (0, r.jsx)(s.$Eu, {
+          renderIcon: e => (0, r.jsx)(s.Ucv, {
             size: "md",
             className: e,
             color: "currentColor"

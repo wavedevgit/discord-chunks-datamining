@@ -43,7 +43,7 @@ var l = function(e) {
     return e[e.FPS_5 = 5] = "FPS_5", e[e.FPS_15 = 15] = "FPS_15", e[e.FPS_30 = 30] = "FPS_30", e[e.FPS_60 = 60] = "FPS_60", e
   }({}),
   c = function(e) {
-    return e[e.PRESET_VIDEO = 1] = "PRESET_VIDEO", e[e.PRESET_DOCUMENTS = 2] = "PRESET_DOCUMENTS", e[e.PRESET_CUSTOM = 3] = "PRESET_CUSTOM", e
+    return e[e.PRESET_VIDEO = 1] = "PRESET_VIDEO", e[e.PRESET_DOCUMENTS = 2] = "PRESET_DOCUMENTS", e[e.PRESET_CUSTOM = 3] = "PRESET_CUSTOM", e[e.PRESET_AUTO = 4] = "PRESET_AUTO", e
   }({});
 
 function u(e) {
@@ -81,6 +81,7 @@ let d = {
       resolution: 720,
       fps: 30
     }],
+    4: [],
     3: []
   },
   f = [{

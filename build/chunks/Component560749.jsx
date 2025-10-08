@@ -31,23 +31,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk603410 = require("./603410.js");
 
-function P(e) {
+function N(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, S.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(C.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, S.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(y.lm));
   return (0, r.jsxs)(a.P3F, {
-    className: N.channelResult,
+    className: P.channelResult,
     onClick: () => n(t.record.id),
     children: [(0, r.jsxs)("div", {
-      className: N.channelResultInfo,
+      className: P.channelResultInfo,
       children: [(0, r.jsx)("img", {
         alt: "",
         src: null != i ? (0, p.EB)(i, 32) : true,
-        className: N.guildIcon
+        className: P.guildIcon
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)(a.Text, {
-          className: N.channelName,
+          className: P.channelName,
           variant: "text-md/medium",
           color: "interactive-normal",
           children: [(0, r.jsx)(a.gj8, {
@@ -80,33 +80,33 @@ function T(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), S = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
+  }), S = (0, o.Wu)([b.Z, _.ZP, g.Z, v.Z, j.Z], () => {
     let e = [],
       t = b.Z.getGuildId();
     if (null == t) return e;
     for (let n of _.ZP.getVocalChannelIds(t)) {
-      let t = x.Z.getChannel(n);
+      let t = g.Z.getChannel(n);
       null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
     }
     return e
-  }), y = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
+  }), C = (0, o.Wu)([f.Z, g.Z, x.Z, v.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
-      let r = x.Z.getChannel(n);
+      let r = g.Z.getChannel(n);
       (null == r ? true : r.type) === w.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
-    let e = new Set(y.map(e => e.id)),
+    let e = new Set(C.map(e => e.id)),
       t = new Set(S.map(e => e.id));
-    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(C.lm)]
-  }, [y, S]), R = "" !== u ? p : T;
+    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
+  }, [C, S]), R = "" !== u ? p : T;
   return (0, r.jsxs)("div", {
-    className: s()(N.root, n),
+    className: s()(P.root, n),
     children: [(0, r.jsx)("div", {
-      className: N.searchBar,
+      className: P.searchBar,
       children: (0, r.jsx)(a.E1j, {
         placeholder: I.intl.string(I.t["3jvv+/"]),
         query: u,
@@ -135,7 +135,7 @@ function T(e) {
         let {
           rowIndex: n
         } = e, i = R[n];
-        return (0, r.jsx)(P, {
+        return (0, r.jsx)(N, {
           result: i,
           onSelectChannel: t
         }, i.record.id)

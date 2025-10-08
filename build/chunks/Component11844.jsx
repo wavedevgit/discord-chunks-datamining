@@ -95,7 +95,7 @@ let b = function() {
   });
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk569029.wrapper,
-    children: [(0, Chunk951288.jsx)(Chunk481060.$Eu, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Ucv, {
       color: Chunk481060.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: Chunk569029.boostIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {

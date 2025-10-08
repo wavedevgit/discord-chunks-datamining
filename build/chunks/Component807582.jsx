@@ -28,7 +28,7 @@ let m = e => {
     _ = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
     v = (0, c._p)(m);
   return !j && m === d.oNc.VANITY_URL && _ ? null : (j ? (null != v && (i = u.intl.string(u.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.$Eu, {
+    children: [(0, r.jsx)(a.Ucv, {
       color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: g.unlockedIcon
     }), (0, r.jsx)(a.X6q, {
@@ -37,7 +37,7 @@ let m = e => {
       children: u.intl.string(u.t["0O+87u"])
     })]
   })) : (null != v && (i = u.intl.string(u.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.$Eu, {
+    children: [(0, r.jsx)(a.Ucv, {
       color: "currentColor",
       className: g.icon
     }), (0, r.jsx)(a.X6q, {

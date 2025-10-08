@@ -82,7 +82,7 @@ let Z = Chunk647438.memo(function(e) {
         variant: "text-sm/normal",
         color: "header-primary",
         children: O.ZP.getName(t, n, i)
-      }), l ? (0, r.jsx)(p.$Eu, {
+      }), l ? (0, r.jsx)(p.Ucv, {
         className: I.boost,
         color: u.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }) : null]

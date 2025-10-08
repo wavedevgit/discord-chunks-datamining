@@ -72,7 +72,7 @@ function d(e) {
       className: o.labelsContainer,
       children: [null != s && (0, r.jsxs)("div", {
         className: o.topPerksCardLabelContainer,
-        children: [(0, r.jsx)(i.$Eu, {
+        children: [(0, r.jsx)(i.Ucv, {
           size: "sm",
           color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, r.jsx)(i.Text, {

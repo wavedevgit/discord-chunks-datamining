@@ -58,7 +58,7 @@ let _ = e => {
     let n = (0, d.Km)(t);
     return (0, r.jsx)("div", {
       className: f.purchasePlaceholder,
-      children: n ? (0, r.jsx)(l.$Eu, {
+      children: n ? (0, r.jsx)(l.Ucv, {
         size: "custom",
         width: 20,
         height: 20

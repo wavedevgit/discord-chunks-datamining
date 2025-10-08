@@ -24,12 +24,12 @@ function x(e) {
     powerup: n
   } = e, [x, _] = i.useState(true);
   (0, f.KT)(x);
-  let [b, h] = i.useState(false), j = (0, s.ZP)(t, n).type !== g.A3.INACTIVE, C = (0, m.d)(j), E = (0, a.g1)(t, "GuildPowerupPerkCard"), I = n.skuId === o.A$;
+  let [b, h] = i.useState(false), j = (0, s.ZP)(t, n).type !== g.A3.INACTIVE, C = (0, m.d)(j), I = (0, a.g1)(t, "GuildPowerupPerkCard"), w = n.skuId === o.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
-    badge: I && E ? "beta" : true,
+    badge: w && I ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
       className: v.image,
       powerup: n,

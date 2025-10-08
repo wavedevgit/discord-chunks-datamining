@@ -28,7 +28,7 @@ function p(e) {
   } = (0, r.ZP)();
   return null == x || x.features.has(u.oNc.ANIMATED_BANNER) || !p && x.features.has(u.oNc.BANNER) ? null : (0, i.jsxs)("div", {
     className: g.container,
-    children: [(0, i.jsx)(o.$Eu, {
+    children: [(0, i.jsx)(o.Ucv, {
       color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: g.guildBoostingIcon
     }), (0, i.jsx)(o.Text, {

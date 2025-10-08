@@ -58,7 +58,7 @@ function Y(e) {
     selectSource: J = true
   } = e, X = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
     analyticsLocations: q
-  } = (0, _.ZP)(Y, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
+  } = (0, _.ZP)(Y, x.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([C.default], () => C.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
   } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
@@ -89,7 +89,7 @@ function Y(e) {
     } = ee,
     ec = i.useCallback(async e => {
       j.eo.updateSetting(ee.notifyFriends), j.I0.updateSetting(ee.hidePreview);
-      let [t, r] = await (0, P.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
+      let [t, r] = await (0, N.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: ee.preset,
         fps: ee.fps,
         resolution: ee.resolution,
@@ -106,7 +106,7 @@ function Y(e) {
       }), n()
     }, [n, ee, q]);
   async function ed(e) {
-    await (0, x.Z)({
+    await (0, g.Z)({
       channelId: e
     }) && null != o && ec(o)
   }
@@ -126,7 +126,7 @@ function Y(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: q,
-          application_id: (0, O.isWindows)() ? null == (t = (0, N.Z)(v.ZP, C.Z)) ? true : t.id : true,
+          application_id: (0, O.isWindows)() ? null == (t = (0, P.Z)(v.ZP, y.Z)) ? true : t.id : true,
           parent_media_session_id: S.Z.getMediaSessionId()
         }
       },

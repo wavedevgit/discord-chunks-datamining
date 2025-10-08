@@ -100,7 +100,7 @@ function R(e) {
     })
   }, [t, A, R, n]), W = a.useCallback(() => {
     (0, f.JG)(null != i ? i : ""), (0, u.showToast)((0, u.createToast)(T.intl.string(T.t["+5kSoa"]), u.ToastType.SUCCESS))
-  }, [i]), B = (0, C.Z)(t.gameId, "cover"), M = (0, v.Z)(n), U = a.useCallback(() => {
+  }, [i]), B = (0, C.Z)(t.gameId, "cover"), U = (0, v.Z)(n), M = a.useCallback(() => {
     var e;
     (0, p.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
@@ -113,8 +113,8 @@ function R(e) {
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E, {
             onClick: z
-          }), M && (0, r.jsx)(Z, {
-            onClick: U,
+          }), U && (0, r.jsx)(Z, {
+            onClick: M,
             disabled: null == t.gameServerPanelUrl
           })]
         });
@@ -124,22 +124,22 @@ function R(e) {
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(G, {
             onClick: L
-          }), M && (0, r.jsx)(Z, {
-            onClick: U,
+          }), U && (0, r.jsx)(Z, {
+            onClick: M,
             disabled: null == t.gameServerPanelUrl
           })]
         });
       case l.V.STARTUP_FAILED:
       case l.V.MISSING_STOCK:
-        return M ? (0, r.jsx)(D, {
-          onClick: U
+        return U ? (0, r.jsx)(D, {
+          onClick: M
         }) : (0, r.jsx)(G, {
           onClick: L,
           disabled: true
         });
       case l.V.DELETED:
-        return M ? (0, r.jsx)(Z, {
-          onClick: U,
+        return U ? (0, r.jsx)(Z, {
+          onClick: M,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(G, {
           onClick: L,
@@ -148,7 +148,7 @@ function R(e) {
       default:
         return null
     }
-  }, [t, L, M, U, z]), K = a.useMemo(() => {
+  }, [t, L, U, M, z]), K = a.useMemo(() => {
     if (null == t.gameConfig) return null;
     let e = [t.gameConfig.type, t.gameConfig.version].filter(x.lm).join(" ");
     return "" === e ? null : e
@@ -158,13 +158,13 @@ function R(e) {
         if (null == t.gameServerPanelUrl) return T.intl.string(S.default.K59Dxc);
         return null;
       case l.V.STARTUP_FAILED:
-        return T.intl.string(M ? S.default.lpwWOD : S.default.pNWcub);
+        return T.intl.string(U ? S.default.lpwWOD : S.default.pNWcub);
       case l.V.MISSING_STOCK:
-        return T.intl.string(M ? S.default.CksIra : S.default.pNWcub);
+        return T.intl.string(U ? S.default.CksIra : S.default.pNWcub);
       default:
         return null
     }
-  }, [t.status, t.gameServerPanelUrl, M]);
+  }, [t.status, t.gameServerPanelUrl, U]);
   return (0, r.jsxs)(h.Z, {
     actions: F,
     children: [(0, r.jsxs)("div", {
@@ -292,7 +292,7 @@ function R(e) {
           })]
         })
       })]
-    }), M && (0, r.jsx)("div", {
+    }), U && (0, r.jsx)("div", {
       className: w.overflowMenu,
       children: (0, r.jsx)(y.Z, {
         guildId: n,

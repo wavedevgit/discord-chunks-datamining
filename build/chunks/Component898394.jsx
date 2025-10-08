@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 289092, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 898394, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => _
+  U: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -78,18 +78,22 @@ let _ = e => {
   let m = (0, o.m)(s),
     g = null != (t = null == m ? true : m.width) ? t : c,
     E = null != (n = null == m ? true : m.height) ? n : f;
-  return (0, r.jsx)("svg", u(l({}, (0, a.Z)(h)), {
+  return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: E,
     fill: "none",
     viewBox: "0 0 24 24",
-    children: (0, r.jsx)("path", {
+    children: [(0, r.jsx)("path", {
+      fill: "string" == typeof _ ? _ : _.css,
+      d: "M11.47 6.55a.75.75 0 0 1 1.06 0l2.2 2.14c.14.14.23.34.23.55v5.52c0 .21-.09.4-.23.55l-2.2 2.14a.75.75 0 0 1-1.06 0l-2.2-2.14a.77.77 0 0 1-.23-.55V9.24c0-.21.09-.41.23-.55l2.2-2.14Z",
+      className: p
+    }), (0, r.jsx)("path", {
       fill: "string" == typeof _ ? _ : _.css,
       fillRule: "evenodd",
-      d: "M13.05 1.4a1.59 1.59 0 0 0-2.1 0l-4.9 4A3.37 3.37 0 0 0 5 8v8c0 1.07.4 2.06 1.05 2.6l4.9 4c.65.53 1.45.53 2.1 0l4.9-4A3.37 3.37 0 0 0 19 16V8c0-1.07-.4-2.06-1.05-2.6l-4.9-4ZM12 4.41 8.06 7.64c-.03.08-.06.2-.06.36v8c0 .16.03.28.06.36L12 19.59l3.94-3.23c.03-.08.06-.2.06-.36V8c0-.16-.03-.28-.06-.36L12 4.41Z",
+      d: "M10.95 1.43a1.5 1.5 0 0 1 2.1 0l5.49 5.33c.3.29.46.68.46 1.1v8.44c-.04.35-.2.69-.46.94l-5.49 5.33-.11.1a1.5 1.5 0 0 1-2-.1l-5.48-5.33c-.3-.29-.46-.68-.46-1.1V7.86c0-.42.17-.81.46-1.1l5.49-5.33ZM7.29 7.76c-.2.2-.3.46-.3.73v7.02c0 .27.1.54.3.73l4 3.9a1 1 0 0 0 1.41 0l4-3.9c.2-.2.31-.46.31-.73V8.49c0-.27-.1-.54-.3-.73l-4-3.9a1 1 0 0 0-1.41 0l-4 3.9Z",
       clipRule: "evenodd",
       className: p
-    })
+    })]
   }))
 }

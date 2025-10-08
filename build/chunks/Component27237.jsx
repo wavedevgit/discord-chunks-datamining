@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => I
+  ZP: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ function C(e) {
         [j.boostContainerActive]: n,
         [h.active]: n
       }),
-      children: (0, r.jsx)(s.$Eu, {
+      children: (0, r.jsx)(s.Ucv, {
         size: "sm",
         color: "white"
       })
@@ -46,7 +46,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function I(e) {
   let {
     isActive: t,
     index: n
@@ -80,7 +80,7 @@ function E(e) {
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     guildId: t,
     index: n,
@@ -88,7 +88,7 @@ function I(e) {
     nextPowerup: l
   } = e, a = (0, u.ZP)(t, o), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, x = s.type !== v.A3.INACTIVE, _ = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [b, h] = i.useState(true);
   (0, m.KT)(b);
-  let I = (0, g.d)(c);
+  let w = (0, g.d)(c);
   return (0, r.jsxs)(f.Z, {
     guildId: t,
     powerup: o,
@@ -99,13 +99,13 @@ function I(e) {
       nextActive: null != l ? x : true
     }), (0, r.jsx)(d.Q9, {
       title: o.title,
-      textColor: I,
+      textColor: w,
       footer: !_ && (0, r.jsx)(f.g, {
         className: j.footer,
         guildId: t,
         powerup: o
       }),
-      children: (0, r.jsx)(E, {
+      children: (0, r.jsx)(I, {
         isActive: c,
         index: n
       })

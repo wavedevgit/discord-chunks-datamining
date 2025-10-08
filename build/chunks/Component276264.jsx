@@ -125,7 +125,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       children: (0, r.jsx)(c.P3F, {
         onClick: n,
         tabIndex: false,
-        children: (0, r.jsx)(c.$Eu, {
+        children: (0, r.jsx)(c.Ucv, {
           color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
           className: M.premiumIcon
         })

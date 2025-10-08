@@ -503,6 +503,10 @@ let i = {
   UserApplicationIdentityManager: {
     actions: ["USER_APPLICATION_IDENTITY_UPDATE", "USER_APPLICATION_IDENTITY_REMOVE"],
     inlineRequire: () => require("./473288.js").Z
+  },
+  AutoQualityStreamingManager: {
+    actions: ["MEDIA_ENGINE_CONNECTION_STATS"],
+    inlineRequire: () => require("./216405.js").Z
   }
 };
 (0, Chunk132454.j)(i)

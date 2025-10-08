@@ -87,7 +87,7 @@ function p(e) {
     className: s()(o, i),
     children: [true !== n && (0, r.jsxs)("div", {
       className: s()(g.inline, g.inlineBoost),
-      children: [(0, r.jsx)(l.$Eu, {
+      children: [(0, r.jsx)(l.Ucv, {
         size: "sm",
         color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, r.jsx)(l.Text, {

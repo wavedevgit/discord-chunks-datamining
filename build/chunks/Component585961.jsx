@@ -20,7 +20,7 @@ function c(e) {
     className: n,
     innerClassName: a.upsellButton,
     onClick: t,
-    children: [(0, r.jsx)(i.$Eu, {
+    children: [(0, r.jsx)(i.Ucv, {
       color: "white",
       size: "custom",
       height: 16,

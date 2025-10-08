@@ -66,8 +66,8 @@ function U(e) {
 }
 
 function W(e, t, n, r) {
-  let i = (0, C.isWindows)() ? (0, P.Z)(x.ZP, y.Z) : null,
-    l = x.ZP.getRunningGames(),
+  let i = (0, y.isWindows)() ? (0, N.Z)(g.ZP, C.Z) : null,
+    l = g.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
   if (null != s && s === o) return 0;
@@ -106,10 +106,10 @@ function F(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [_, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [P, T] = i.useState(false), R = i.useRef(null), k = i.useRef(new u.Xp), D = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), U = z((0, d.e7)([v.Z], () => v.Z.quests), D, _), F = i.useMemo(() => null == _ ? null : [..._].sort((e, t) => W(t, null == U ? true : U.source.id) - W(e, null == U ? true : U.source.id)), [U, _]);
+  }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [_, j] = i.useState(null), [C, y] = i.useState(null), w = null != C && C.length > 0, [Z, I] = i.useState(c.vA.WINDOW), [N, T] = i.useState(false), R = i.useRef(null), k = i.useRef(new u.Xp), D = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), U = z((0, d.e7)([v.Z], () => v.Z.quests), D, _), F = i.useMemo(() => null == _ ? null : [..._].sort((e, t) => W(t, null == U ? true : U.source.id) - W(e, null == U ? true : U.source.id)), [U, _]);
   i.useEffect(() => {
     let e = k.current;
-    return (0, N.t)({
+    return (0, P.t)({
       width: 176,
       height: 99
     }).then(e => {
@@ -118,17 +118,17 @@ function F(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), j(n), C(r)
+      m(t), j(n), y(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
         windowSources: t,
         cameraSources: n
-      } = await (0, N.t)({
+      } = await (0, P.t)({
         width: 176,
         height: 99
       });
-      m(e), j(t), C(n)
+      m(e), j(t), y(n)
     }), () => {
       e.stop()
     }
@@ -138,7 +138,7 @@ function F(e) {
     }, []),
     [V, Y] = i.useState(true);
   i.useEffect(() => {
-    g.Z.hasPermission(M.Eu.SCREEN_RECORDING, {
+    x.Z.hasPermission(M.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     }).then(Y)
   }, []);
@@ -149,7 +149,7 @@ function F(e) {
       case c.vA.SCREEN:
         return a;
       case c.vA.CAMERA:
-        return y
+        return C
     }
   }(Z);
   if (null == J) returnfalse === V ? (0, r.jsxs)(f.Text, {
@@ -182,7 +182,7 @@ function F(e) {
     children: [(0, r.jsxs)("div", {
       className: G.segmentContainer,
       children: [(0, r.jsx)(E.Z, {
-        separator: P
+        separator: N
       }), (0, r.jsx)(f.sY7, {
         options: function() {
           let e = [{
@@ -329,13 +329,13 @@ function Y(e) {
         url: ""
       })
     }, [t, c]),
-    x = (0, C.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, k.jR),
-    g = (0, C.isMac)(),
+    g = (0, y.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, k.jR),
+    x = (0, y.isMac)(),
     [_, v] = i.useState(false),
     j = i.useCallback(() => {
       v(!_)
     }, [_]),
-    b = x ? (0, r.jsx)(H, {
+    b = g ? (0, r.jsx)(H, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
@@ -351,7 +351,7 @@ function Y(e) {
         name: B.intl.string(B.t["+SLJCg"]),
         text: B.intl.string(B.t.dG2A1N),
         icon: f.GON
-      }), g ? (0, r.jsx)(V, {
+      }), x ? (0, r.jsx)(V, {
         onSelect: t,
         id: "app",
         name: B.intl.string(B.t.ct7AKS),
@@ -410,7 +410,7 @@ function J(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return i.useEffect(() => {
-    (0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, k.jR) ? (0, Z.T)(l) : (0, Z.t)()
+    (0, y.isLinux)() || (0, y.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, k.jR) ? (0, Z.T)(l) : (0, Z.t)()
   }, [l]), s === I.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",

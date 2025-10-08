@@ -251,7 +251,7 @@ let Y = Chunk647438.memo(function(e) {
       children: [(0, i.jsx)(c.sNh, {
         id: "premium-subscribe",
         label: B.intl.string(B.t.VJEVbm),
-        icon: c.$Eu,
+        icon: c.Ucv,
         action: () => {
           (0, m.f)({
             guildId: t.id,

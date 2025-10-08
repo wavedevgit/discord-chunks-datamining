@@ -19,7 +19,7 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANE, {
     buildLayout: () => [c]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
-    icon: Chunk657707.$Eu,
+    icon: Chunk657707.Ucv,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Nn1lJy),
     legacySearchKey: Chunk726985.s6.GUILD_BOOSTING,
     buildLayout: () => [E]

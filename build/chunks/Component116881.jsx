@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 870199, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 116881, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => _
+  z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -71,29 +71,37 @@ let _ = e => {
       size: s = "md",
       width: c,
       height: f,
-      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: p = ""
+      secondaryColor: _ = "#323339",
+      secondaryColorClass: p = "",
+      color: h = i.Z.colors.INTERACTIVE_NORMAL,
+      colorClass: m = ""
     } = e,
-    h = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, o.m)(s),
-    g = null != (t = null == m ? true : m.width) ? t : c,
-    E = null != (n = null == m ? true : m.height) ? n : f;
-  return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
+    g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
+  let E = (0, o.m)(s),
+    b = null != (t = null == E ? true : E.width) ? t : c,
+    y = null != (n = null == E ? true : E.height) ? n : f;
+  return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
-    width: g,
-    height: E,
+    width: b,
+    height: y,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
       fill: "string" == typeof _ ? _ : _.css,
-      d: "M11.65 6.35 9.29 8.71a1 1 0 0 0-.29.7v5.18c0 .26.1.52.3.7l2.35 2.36c.2.2.5.2.7 0l2.36-2.36a1 1 0 0 0 .29-.7V9.4a1 1 0 0 0-.3-.7l-2.35-2.36a.5.5 0 0 0-.7 0Z",
+      d: "M19.1 16.14v.15c-.04.36-.2.7-.46.95l-5.53 5.33-.11.1c-.6.47-1.45.44-2-.1l-2.72-2.61 1.44-1.44 1.62 1.56c.4.38 1.02.38 1.42 0l4-3.85c.2-.2.3-.46.3-.74v-4.32l2.04-2.03v7Zm-4.07-1.38c0 .21-.08.4-.23.55l-2.22 2.14a.76.76 0 0 1-1.06 0l-.37-.36 3.88-3.88v1.55ZM11 1.43c.6-.57 1.53-.57 2.12 0l2.66 2.56-1.44 1.44-1.57-1.51a1.02 1.02 0 0 0-1.42 0l-4 3.85c-.2.2-.3.46-.3.74v4.21L5 14.76v-6.9c0-.42.17-.81.47-1.1l5.52-5.33Zm.53 5.12a.76.76 0 0 1 1.06 0l.32.3-3.83 3.84V9.24c0-.21.09-.41.23-.55l2.22-2.14ZM22.7 1.3a1 1 0 0 1 0 1.4l-20 20a1 1 0 0 1-1.4-1.4l20-20a1 1 0 0 1 1.4 0Z",
       className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
-      fillRule: "evenodd",
-      d: "M10.95 1.4a1.59 1.59 0 0 1 2.1 0l4.9 4A3.37 3.37 0 0 1 19 8v8c0 1.07-.4 2.06-1.05 2.6l-4.9 4c-.65.53-1.45.53-2.1 0l-4.9-4A3.37 3.37 0 0 1 5 16V8c0-1.07.4-2.06 1.05-2.6l4.9-4ZM7.32 6.95 12 3.12l4.68 3.83c.07.06.32.4.32 1.05v8c0 .65-.25 1-.32 1.05L12 20.88l-4.68-3.83C7.25 16.99 7 16.65 7 16V8c0-.65.25-1 .32-1.05Z",
-      clipRule: "evenodd",
-      className: p
+      fill: "string" == typeof h ? h : h.css,
+      d: "M19.1 16.14v.15c-.04.36-.2.7-.46.95l-5.53 5.33-.11.1c-.6.47-1.45.44-2-.1l-2.72-2.61 1.44-1.44 1.62 1.56c.4.38 1.02.38 1.42 0l4-3.85c.2-.2.3-.46.3-.74v-4.32l2.04-2.03v7Z",
+      className: m
+    }), (0, r.jsx)("path", {
+      fill: "string" == typeof h ? h : h.css,
+      d: "M15.03 14.76c0 .21-.08.4-.23.55l-2.22 2.14a.76.76 0 0 1-1.06 0l-.37-.36 3.88-3.88v1.55ZM11 1.43c.58-.57 1.52-.57 2.11 0l2.66 2.56-1.44 1.44-1.57-1.51a1.02 1.02 0 0 0-1.42 0l-4 3.85c-.2.2-.3.46-.3.74v4.21L5 14.76v-6.9c0-.42.17-.81.47-1.1l5.52-5.33Z",
+      className: m
+    }), (0, r.jsx)("path", {
+      fill: "string" == typeof h ? h : h.css,
+      d: "M11.52 6.55a.76.76 0 0 1 1.06 0l.32.3-3.83 3.84V9.24c0-.21.09-.41.23-.55l2.22-2.14ZM22.7 1.3a1 1 0 0 1 0 1.4l-20 20a1 1 0 0 1-1.4-1.4l20-20a1 1 0 0 1 1.4 0Z",
+      className: m
     })]
   }))
 }

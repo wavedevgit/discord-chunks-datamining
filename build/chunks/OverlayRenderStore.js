@@ -390,7 +390,7 @@ async function ed(e) {
   if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy && i.overlayMethod !== b.gl.Disabled || (k === m.UNSET_PID || null === k) && n.state === b.mM.OVERLAY_RENDERING) return t;
   let a = D === b.R5.OUT_OF_PROCESS_V3 || D === b.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     o = D === b.R5.IN_PROCESS_V2,
-    s = (0, v.PD)(n, r, K()),
+    s = (0, v.PD)(r, K()),
     l = (0, v.DH)(n, r, K());
   w.verbose("Overlay method different for pid ".concat(e), {
     oldOverlayMethod: n.overlayMethod,
@@ -419,7 +419,7 @@ async function ed(e) {
       (l && !a || o || W()) && (c(), await ef(e, i));
       break;
     case b.gl.Disabled:
-      c(), await eo(e)
+      c(), ec(e, i)
   }
   return t
 }

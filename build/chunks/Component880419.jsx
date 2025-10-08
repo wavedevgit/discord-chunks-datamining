@@ -125,7 +125,7 @@ function y(e) {
               isActive: n,
               compact: i,
               iconSize: l
-            } = e, o = null != l ? l : "sm", a = n ? s.mTd : s.$Eu;
+            } = e, o = null != l ? l : "sm", a = n ? s.zkc : s.Ucv;
             return i ? {
               text: t.toString(),
               icon: a

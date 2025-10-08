@@ -17,9 +17,9 @@ function c(e) {
       description: u,
       powerups: p,
       footerInfoText: f,
-      footerAction: m
+      footerAction: v
     } = e,
-    v = function(e, t) {
+    m = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -63,8 +63,8 @@ function c(e) {
     title: d,
     subtitle: u,
     actionBarInput: x,
-    actions: null != m ? [m] : []
-  }, v), r = r = {
+    actions: null != v ? [v] : []
+  }, m), r = r = {
     children: (0, n.jsx)("div", {
       className: l.perkCardsContainer,
       children: p.map(e => (0, n.jsx)(s.Z, {

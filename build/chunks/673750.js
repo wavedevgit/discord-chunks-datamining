@@ -6,7 +6,7 @@ require.d(exports, {
   Bz: () => R,
   ZP: () => L,
   hc: () => P
-}), require("./539854.js"), require("./388685.js"), require("./49124.js");
+}), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk544891 = require("./544891.js"),
@@ -225,54 +225,45 @@ class D extends Chunk651655.Z {
     }), h)
   }
   handleCommand(e, t) {
-    let n, {
-        applicationId: r,
-        guildId: s,
-        channelId: l,
-        data: c,
-        nonce: u,
-        attachments: d,
-        maxSizeCallback: _,
-        analytics_location: p,
-        sectionName: m,
-        source: y
-      } = e,
-      O = {
-        type: o.B8.APPLICATION_COMMAND,
-        application_id: r,
-        guild_id: s,
-        channel_id: l,
-        session_id: f.default.getSessionId(),
-        data: c,
-        nonce: u,
-        analytics_location: p,
-        section_name: m,
-        source: y
-      };
-    if (null != d) {
-      O.data.attachments = [], n = [];
-      let e = d;
-      O.data.attachments = e.map((e, t) => (i()(e.status === E.mw.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
-    }
-    let v = new AbortController;
+    let {
+      applicationId: n,
+      guildId: r,
+      channelId: s,
+      data: l,
+      nonce: c,
+      attachments: u,
+      maxSizeCallback: d,
+      analytics_location: _,
+      sectionName: p,
+      source: m
+    } = e, y = {
+      type: o.B8.APPLICATION_COMMAND,
+      application_id: n,
+      guild_id: r,
+      channel_id: s,
+      session_id: f.default.getSessionId(),
+      data: l,
+      nonce: c,
+      analytics_location: _,
+      section_name: p,
+      source: m
+    };
+    null != u && (y.data.attachments = u.map((e, t) => (i()(e.status === E.mw.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t))));
+    let O = new AbortController;
     a.tn.post({
       url: b.ANM.INTERACTIONS,
-      fields: [{
-        name: "payload_json",
-        value: JSON.stringify(O)
-      }],
-      attachments: n,
-      signal: v.signal,
+      body: y,
+      signal: O.signal,
       rejectWithError: true,
       onRequestCreated: e => {
-        this.requests.set(u, v), e.on("progress", e => {
+        this.requests.set(c, O), e.on("progress", e => {
           let {
             total: t
-          } = e, n = (0, h.dg)(s);
-          null != t && t > n && (this.cancelRequest(u), null == _ || _(n))
+          } = e, n = (0, h.dg)(r);
+          null != t && t > n && (this.cancelRequest(c), null == d || d(n))
         })
       }
-    }, this.createResponseHandler(u, t))
+    }, this.createResponseHandler(c, t))
   }
   constructor(e = 5) {
     super(new l.Z("MessageQueue")), O(this, "maxSize", true), O(this, "requests", true), O(this, "analyticsTimeouts", true), O(this, "handleEdit", true), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map, this.handleEdit = (e, t) => {

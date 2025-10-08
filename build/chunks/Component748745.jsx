@@ -51,7 +51,7 @@ function g(e) {
         }({}, e), s = s = {
           icon: {
             type: "icon",
-            asset: r.mTd
+            asset: r.zkc
           },
           text: a.toString(),
           variant: "secondary",
@@ -81,10 +81,10 @@ function b(e) {
     guildId: b,
     gameInstance: p,
     onClick: j
-  } = e, x = (0, i.e7)([u.Z], () => u.Z.getStateForGuild(b)), y = a.useMemo(() => {
+  } = e, x = (0, i.e7)([c.Z], () => c.Z.getStateForGuild(b)), y = a.useMemo(() => {
     var e;
     return null == x || null == (e = x.entitlements) ? true : e[p.entitlementId]
-  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
+  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
   return null == h ? null : (0, l.jsxs)(r.P3F, {
     className: f.game,
     onClick: () => j(p),

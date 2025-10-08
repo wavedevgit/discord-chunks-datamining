@@ -23,7 +23,7 @@ function x(e) {
     canUseBoosts: t,
     guildId: r,
     powerup: a
-  } = e, [x, b] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, m._)(a, g, false), y = (0, c.UP)(g), {
+  } = e, [x, b] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, v._)(a, g, false), y = (0, c.UP)(g), {
     disabled: C
   } = (0, l.Z)(r, a, y), {
     onActivate: h
@@ -55,13 +55,13 @@ function x(e) {
             text: O.statusText
           }), null == O && (0, n.jsxs)("div", {
             className: j.statusContainer,
-            children: [(0, n.jsx)(s.$Eu, {
+            children: [(0, n.jsx)(s.Ucv, {
               size: "sm",
               color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
             }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: v.intl.formatToPlainString(v.t.t2Wbo6, {
+              children: m.intl.formatToPlainString(m.t.t2Wbo6, {
                 required: a.cost,
                 decorator: ""
               })

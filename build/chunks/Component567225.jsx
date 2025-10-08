@@ -24,36 +24,36 @@ function d(e) {
   } = e, f = (0, s.Z)(n.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
     "aria-disabled": v,
-    className: i()(c.game, {
-      [c.disabled]: v
+    className: i()(u.game, {
+      [u.disabled]: v
     }, t),
     onClick: v ? true : () => a(n),
     children: [(0, l.jsxs)("div", {
-      className: i()(c.gameImageContainer, d),
+      className: i()(u.gameImageContainer, d),
       children: [(0, l.jsx)("img", {
-        className: c.image,
+        className: u.image,
         alt: "",
         src: null != f ? f : ""
       }), (0, l.jsx)("div", {
-        className: c.gameImageBorder
+        className: u.gameImageBorder
       }), (0, l.jsx)("div", {
-        className: c.gameImageOverlay
+        className: u.gameImageOverlay
       })]
     }), (0, l.jsxs)("div", {
-      className: i()(c.textContainer, m),
+      className: i()(u.textContainer, m),
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         lineClamp: 1,
         title: n.name,
         children: n.name
       }), (0, l.jsxs)("div", {
-        className: c.boostContainer,
-        children: [(0, l.jsx)(r.$Eu, {
+        className: u.boostContainer,
+        children: [(0, l.jsx)(r.Ucv, {
           size: "sm",
           color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, l.jsx)(r.Text, {
           variant: "text-sm/medium",
-          children: u.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
+          children: c.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
             boostCount: n.baseCost
           })
         })]

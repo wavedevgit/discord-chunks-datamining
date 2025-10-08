@@ -36,7 +36,7 @@ function _(e) {
     text: b.intl.string(b.t.b0y3DA)
   } : {
     variant: "expressive",
-    icon: c.$Eu,
+    icon: c.Ucv,
     text: b.intl.string(b.t["+7XY39"])
   };
   return (0, l.jsx)("div", {

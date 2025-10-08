@@ -228,7 +228,7 @@ function ed(e) {
       children: ee.intl.string(ee.t.jNY1FB)
     }), g.length > 0 ? (0, r.jsxs)("div", {
       className: et.existingSlotNotice,
-      children: [(0, r.jsx)(_.$Eu, {
+      children: [(0, r.jsx)(_.Ucv, {
         className: et.existingSlotIcon,
         color: d.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, r.jsxs)("div", {

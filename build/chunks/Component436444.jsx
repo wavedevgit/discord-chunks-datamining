@@ -112,7 +112,7 @@ let T = {
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== p.Eu4.NONE ? k ? (0, r.jsx)(s.mTd, {
+      }), A !== p.Eu4.NONE ? k ? (0, r.jsx)(s.zkc, {
         className: a()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"

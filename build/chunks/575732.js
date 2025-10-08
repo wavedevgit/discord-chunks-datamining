@@ -32,7 +32,7 @@ let l = [{
     getText: () => Chunk388032.intl.string(Chunk388032.t.zTk8Ul)
   }],
   c = [{
-    Icon: Chunk481060.$Eu,
+    Icon: Chunk481060.Ucv,
     getText: function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "en-US";
       return Chunk388032.intl.formatToPlainString(Chunk388032.t.T9RTr6, {
@@ -94,7 +94,7 @@ let l = [{
     Icon: Chunk481060.hGI,
     getText: () => Chunk388032.intl.string(Chunk388032.t.W180bW)
   }, {
-    Icon: Chunk481060.$Eu,
+    Icon: Chunk481060.Ucv,
     getText: () => Chunk388032.intl.string(Chunk388032.t.cdfuUV)
   }, {
     Icon: Chunk481060.kYE,

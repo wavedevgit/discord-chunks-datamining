@@ -23,7 +23,7 @@ function p(e) {
     className: u.container,
     children: [(0, i.jsxs)("div", {
       className: u.headerContainer,
-      children: [(0, i.jsx)(o.$Eu, {
+      children: [(0, i.jsx)(o.Ucv, {
         size: "sm",
         color: 0 !== n ? a.Z.colors.HEADER_MUTED : a.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, i.jsx)(l.X6q, {

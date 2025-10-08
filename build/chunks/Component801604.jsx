@@ -26,7 +26,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214795 = require("./214795.js");
 
-function C() {
+function y() {
   return (0, Chunk951288.jsx)("span", {
     className: Chunk214795.ellipsis,
     children: "•"
@@ -38,22 +38,22 @@ function O(e) {
     source: t
   } = e, {
     data: n
-  } = (0, c.IX)(null != t && (0, x.T)(t) ? t.id : true);
+  } = (0, c.IX)(null != t && (0, g.T)(t) ? t.id : true);
   return null == t ? (0, r.jsx)(a.hGI, {
-    className: y.screenArrowIcon,
+    className: C.screenArrowIcon,
     size: "md",
     color: "currentColor"
-  }) : (0, x.T)(t) ? (0, r.jsx)(d.Z, {
+  }) : (0, g.T)(t) ? (0, r.jsx)(d.Z, {
     game: n,
     pid: t.pid
   }) : null == t.icon || "" === t.icon ? (0, r.jsx)(a.hGI, {
-    className: y.screenArrowIcon,
+    className: C.screenArrowIcon,
     size: "md",
     color: "currentColor"
   }) : (0, r.jsx)("img", {
     src: t.icon,
     alt: "",
-    className: y.sourceIcon
+    className: C.sourceIcon
   })
 }
 
@@ -62,14 +62,14 @@ function w() {
   let [{
     preset: c,
     resolution: d,
-    fps: x,
+    fps: g,
     muteStreamAudio: w,
     selectedSource: Z,
     sourceType: I,
-    audioSourceId: N
-  }] = (0, Chunk615161.E_)(), [P, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
+    audioSourceId: P
+  }] = (0, Chunk615161.E_)(), [N, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
     location: "StreamSettingsSummary"
-  }), E = P.concat(T), [R, A] = null != (n = (0, Chunk396678.Z)(Chunk728345)) ? require : [Chunk925329, Chunk556389], k = (0, Chunk672811.L)(Chunk728345), M = (0, Chunk891180.M)(R), D = I === Chunk268146.vA.CAMERA, L = null != Z, B = null != Z ? null == Z || null == (e = Z.id) ? true : module.startsWith(Chunk268146.vA.CAMERA) : D, G = L ? true : Chunk728345 === Chunk37113.tI.PRESET_VIDEO ? Chunk388032.intl.string(Chunk637824.default.MuHUFR) : Chunk728345 === Chunk37113.tI.PRESET_DOCUMENTS ? Chunk388032.intl.string(Chunk637824.default.y0JuYW) : true, U = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getUseSystemScreensharePicker() && (0, Chunk358085.isLinux)());
+  }), E = N.concat(T), [R, A] = null != (n = (0, Chunk396678.Z)(Chunk728345)) ? require : [Chunk925329, Chunk556389], k = (0, Chunk672811.L)(Chunk728345), M = (0, Chunk891180.M)(R), D = I === Chunk268146.vA.CAMERA, L = null != Z, B = null != Z ? null == Z || null == (e = Z.id) ? true : module.startsWith(Chunk268146.vA.CAMERA) : D, G = Chunk728345 === Chunk37113.tI.PRESET_AUTO, U = L ? true : Chunk728345 === Chunk37113.tI.PRESET_VIDEO ? Chunk388032.intl.string(Chunk637824.default.MuHUFR) : Chunk728345 === Chunk37113.tI.PRESET_DOCUMENTS ? Chunk388032.intl.string(Chunk637824.default.y0JuYW) : Chunk728345 === Chunk37113.tI.PRESET_AUTO ? Chunk388032.intl.string(Chunk637824.default.m4jtlZ) : true, W = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getUseSystemScreensharePicker() && (0, Chunk358085.isLinux)());
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk214795.root,
     children: [L && (0, Chunk951288.jsx)(O, {
@@ -93,17 +93,17 @@ function w() {
               size: "xxs",
               color: "currentColor"
             }), k]
-          }), (0, Chunk951288.jsx)(C, {})]
-        }), null != G && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)("span", {
-            children: G
-          }), (0, Chunk951288.jsx)(C, {})]
-        }), (0, Chunk951288.jsx)("span", {
-          children: M
-        }), (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)("span", {
-          children: "".concat(A, "fps")
+          }), (0, Chunk951288.jsx)(y, {})]
+        }), null != U && (0, Chunk951288.jsx)("span", {
+          children: U
+        }), !G && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)("span", {
+            children: M
+          }), (0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)("span", {
+            children: "".concat(A, "fps")
+          })]
         }), w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsxs)("span", {
+          children: [(0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsxs)("span", {
             className: Chunk214795.iconSummaryContainer,
             children: [(0, Chunk951288.jsx)(Chunk481060.OyP, {
               className: l()(Chunk214795.icon, Chunk214795.mutedIcon),
@@ -111,15 +111,15 @@ function w() {
               color: "currentColor"
             }), Chunk388032.intl.string(Chunk637824.default.FzMGWV)]
           })]
-        }), !w && !B && U && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(C, {}), Chunk388032.intl.string(Chunk637824.default["n9/rUl"])]
+        }), !w && !B && W && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)(y, {}), Chunk388032.intl.string(Chunk637824.default["n9/rUl"])]
         }), B ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-          children: [(0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)("span", {
+          children: [(0, Chunk951288.jsx)(y, {}), (0, Chunk951288.jsx)("span", {
             children: null == (t = E.find(e => {
               let {
                 id: t
               } = e;
-              return N === t
+              return P === t
             })) ? true : exports.name
           })]
         }) : null]

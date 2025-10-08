@@ -151,7 +151,7 @@ let j = function(e) {
           children: x.intl.string(x.t.Vwintr)
         }), (0, r.jsx)(l.zxk, {
           variant: "expressive",
-          icon: l.$Eu,
+          icon: l.Ucv,
           text: x.intl.string(x.t["+7XY39"]),
           onClick: v
         })]

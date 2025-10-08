@@ -39,7 +39,7 @@ function y(e) {
         children: n.name
       }), (0, r.jsxs)("div", {
         className: O.labelContainer,
-        children: [(0, r.jsx)(d.$Eu, {
+        children: [(0, r.jsx)(d.Ucv, {
           size: "xs",
           color: d.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, r.jsx)(d.Text, {
@@ -114,7 +114,7 @@ function E() {
     G = (0, Chunk442837.e7)([Chunk590383.Z], () => Chunk590383.Z.getRegionState()),
     B = Chunk647438.useMemo(() => {
       var e;
-      return null != (e = k.sort((e, n) => (0, h.Z)(e, n, G)).map(e => ({
+      return null != (e = k.sort((e, n) => (0, v.Z)(e, n, G)).map(e => ({
         value: e,
         label: e.name
       }))) ? module : []

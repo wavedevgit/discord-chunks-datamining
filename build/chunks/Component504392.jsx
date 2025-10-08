@@ -128,7 +128,7 @@ function L(e) {
       hideSearch: true,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(d.Z.Icon, {
-        icon: c.$Eu,
+        icon: c.Ucv,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
         children: A.intl.string(S.default.yv3DJC)
@@ -207,11 +207,11 @@ function L(e) {
         })
       }), (0, r.jsxs)("div", {
         className: k.sidebarContainer,
-        children: [M ? (0, r.jsx)(E.Z, {
+        children: [M ? (0, r.jsx)(I.Z, {
           guildId: t
-        }) : (0, r.jsx)(I.Z, {
+        }) : (0, r.jsx)(w.Z, {
           guildId: t
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(E.Z, {
           guildId: t
         })]
       })]

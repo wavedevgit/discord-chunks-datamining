@@ -86,7 +86,7 @@ let T = function(e) {
       className: I.guildBoostCountWrapper,
       children: [(0, r.jsxs)("div", {
         className: I.guildBoostCount,
-        children: [(0, r.jsx)(u.$Eu, {
+        children: [(0, r.jsx)(u.Ucv, {
           color: P > 0 ? u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
           className: o()(I.guildBoostBadge, {
             [I.guildBoostBadgeWithBoosts]: P > 0

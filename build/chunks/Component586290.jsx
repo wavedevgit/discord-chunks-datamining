@@ -30,18 +30,18 @@ function b(e) {
   } = e;
   s()(null != t, "Camera capture device cannot be null");
   let o = (0, p.Z)(),
-    [b, S] = (0, m.Ls)(x.h7.AUDIO_INPUT, {
+    [b, S] = (0, m.Ls)(g.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    y = b.concat(S),
-    [C, O] = i.useState(function(e, t, n) {
+    C = b.concat(S),
+    [y, O] = i.useState(function(e, t, n) {
       var r;
       let i = t.find(t => t.id === e);
       if (null == i) return null;
       let l = a().reduce(n, (e, t) => (0, c.stringSimilarity)(i.name, t.name) > (0, c.stringSimilarity)(i.name, e.name) ? t : e);
       return null != (r = null == l ? true : l.id) ? r : null
-    }(t.id, o, y));
-  return null != C && l(C), (0, r.jsx)(u.hjN, {
+    }(t.id, o, C));
+  return null != y && l(y), (0, r.jsx)(u.hjN, {
     title: "Capture Device",
     className: v.modalContent,
     children: (0, r.jsxs)(u.Kqy, {
@@ -57,15 +57,15 @@ function b(e) {
             color: d.zx.Colors.PRIMARY,
             size: d.zx.Sizes.SMALL,
             onClick: n,
-            children: g.intl.string(g.t.GEgsAw)
+            children: x.intl.string(x.t.GEgsAw)
           })]
         })
       }), (0, r.jsx)(f.j, {
-        label: g.intl.string(g.t.y4ooen),
-        deviceType: x.h7.AUDIO_INPUT,
+        label: x.intl.string(x.t.y4ooen),
+        deviceType: g.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
         className: j.__invalid_marginaTop8,
-        selectedDeviceId: C,
+        selectedDeviceId: y,
         onSelectDevice: e => (O(e), l(e), false)
       })]
     })
