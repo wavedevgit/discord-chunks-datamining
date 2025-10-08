@@ -1,7 +1,7 @@
 /** Chunk was on 84802 **/
-/** chunk id: 250317, original params: n,e,t (module,exports,require) **/
+/** chunk id: 250317, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => b
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,70 +10,87 @@ var Chunk951288 = require("./951288.js"),
   Chunk55563 = require("./55563.js"),
   Chunk937615 = require("./937615.js"),
   Chunk73346 = require("./73346.js"),
+  Chunk594914 = require("./594914.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk73262 = require("./73262.js");
 
-function x(n) {
-  var e, t, a, i;
+function p(e) {
+  var n, t, a, i;
   let {
-    sku: r
-  } = n;
-  if (null == r) return null;
-  let c = (0, s.T4)(null != (a = null == (e = r.price) ? true : e.amount) ? a : 0, null != (i = null == (t = r.price) ? true : t.currency) ? i : d.pK.USD);
+    sku: o
+  } = e;
+  if (null == o) return null;
+  let s = (0, c.T4)(null != (a = null == (n = o.price) ? true : n.amount) ? a : 0, null != (i = null == (t = o.price) ? true : t.currency) ? i : u.pK.USD),
+    p = e => {
+      let {
+        isGift: n
+      } = e;
+      (0, d.P)(o, {
+        isGift: n
+      })
+    };
   return (0, l.jsxs)("div", {
     className: m.detailsContainer,
     children: [(0, l.jsxs)("div", {
       className: m.titleDescriptionContainer,
-      children: [(0, l.jsx)(o.X6q, {
+      children: [(0, l.jsx)(r.X6q, {
         variant: "heading-xl/bold",
         color: "header-primary",
         lineClamp: 2,
-        children: r.name
-      }), (0, l.jsx)(o.Text, {
+        children: o.name
+      }), (0, l.jsx)(r.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: r.description
+        children: o.description
       })]
-    }), (0, l.jsx)(o.X6q, {
+    }), (0, l.jsx)(r.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
-      children: c
+      children: s
     }), (0, l.jsxs)("div", {
       className: m.buttonsContainer,
-      children: [(0, l.jsx)(o.zxk, {
+      children: [(0, l.jsx)(r.zxk, {
         variant: "primary",
-        onClick: () => {},
-        text: u.intl.string(u.t.boqtTE),
+        onClick: () => {
+          p({
+            isGift: false
+          })
+        },
+        text: f.intl.string(f.t.boqtTE),
         fullWidth: true
-      }), (0, l.jsx)(o.zxk, {
-        icon: o.OgN,
+      }), (0, l.jsx)(r.zxk, {
+        icon: r.OgN,
         variant: "secondary",
-        onClick: () => {},
-        text: u.intl.string(u.t.QAZA5e),
+        onClick: () => {
+          p({
+            isGift: true
+          })
+        },
+        text: f.intl.string(f.t.QAZA5e),
         fullWidth: true
       })]
     })]
   })
 }
 
-function C(n) {
+function x(e) {
   let {
-    socialLayerTenantMetadata: e,
+    socialLayerTenantMetadata: n,
     selectedCarouselItemIndex: t,
     applicationId: a
-  } = n;
-  if (null == e || e.carouselItems.length <= t) return null;
-  let i = e.carouselItems[t];
+  } = e;
+  if (null == n || n.carouselItems.length <= t) return null;
+  let i = n.carouselItems[t];
   if (null == i) return null;
-  let r = null != i.labelIconAssetId ? (0, c._W)(a, i.labelIconAssetId) : null;
+  let o = null != i.labelIconAssetId ? (0, s._W)(a, i.labelIconAssetId) : null;
   return (0, l.jsxs)("div", {
     className: m.labelIconContainer,
-    children: [null != r && (0, l.jsx)("img", {
+    children: [null != o && (0, l.jsx)("img", {
       className: m.labelIcon,
-      src: r,
+      src: o,
       alt: i.label
-    }), (0, l.jsx)(o.Text, {
+    }), (0, l.jsx)(r.Text, {
       variant: "text-xs/medium",
       color: "text-primary",
       children: i.label
@@ -81,31 +98,31 @@ function C(n) {
   })
 }
 
-function h(n) {
-  var e, t;
+function b(e) {
+  var n, t;
   let {
-    transitionState: s,
-    returnRef: c,
+    transitionState: c,
+    returnRef: s,
     skuId: d,
     applicationId: u
-  } = n, h = (0, i.e7)([r.Z], () => r.Z.get(d)), f = null == h || null == (e = h.tenantMetadata) ? true : e.socialLayer, [p, _] = a.useState(0);
-  return null == f ? null : (0, l.jsx)(o.Y0X, {
-    transitionState: s,
+  } = e, f = (0, i.e7)([o.Z], () => o.Z.get(d)), b = null == f || null == (n = f.tenantMetadata) ? true : n.socialLayer, [h, C] = a.useState(0);
+  return null == b ? null : (0, l.jsx)(r.Y0X, {
+    transitionState: c,
     "hide-shadow": true,
     parentComponent: "SocialLayerStorefrontProductDetailsModal",
     className: m.modalRoot,
-    size: o.CgR.DYNAMIC,
-    returnRef: c,
-    children: (0, l.jsx)(o.hzk, {
+    size: r.CgR.DYNAMIC,
+    returnRef: s,
+    children: (0, l.jsx)(r.hzk, {
       className: m.modalContent,
       children: (0, l.jsxs)("div", {
         className: m.infoContainer,
-        children: [(0, l.jsx)(C, {
+        children: [(0, l.jsx)(x, {
           applicationId: u,
-          socialLayerTenantMetadata: null == h || null == (t = h.tenantMetadata) ? true : t.socialLayer,
-          selectedCarouselItemIndex: p
-        }), (0, l.jsx)(x, {
-          sku: h
+          socialLayerTenantMetadata: null == f || null == (t = f.tenantMetadata) ? true : t.socialLayer,
+          selectedCarouselItemIndex: h
+        }), (0, l.jsx)(p, {
+          sku: f
         })]
       })
     })

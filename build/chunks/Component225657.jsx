@@ -18,28 +18,30 @@ let f = e => {
   let {
     selectedSkuId: t,
     validateSelectedGift: n,
-    className: f
-  } = e, _ = (0, i.Wu)([l.Z], () => l.Z.getFriendIDs()), p = (0, i.Wu)([c.default], () => c.default.filter(e => _.includes(e.id) && !e.bot), [_]), {
-    giftRecipient: h,
-    setGiftRecipient: m
+    className: f,
+    searchableSelectWrapperClassName: _
+  } = e, p = (0, i.Wu)([l.Z], () => l.Z.getFriendIDs()), h = (0, i.Wu)([c.default], () => c.default.filter(e => p.includes(e.id) && !e.bot), [p]), {
+    giftRecipient: m,
+    setGiftRecipient: g
   } = (0, s.wD)();
   if (null == t) return null;
-  let g = e => {
-    n(e, t), m(e)
+  let E = e => {
+    n(e, t), g(e)
   };
   return (0, r.jsxs)("div", {
     className: f,
     children: [(0, r.jsx)(a.vwX, {
       children: d.intl.string(d.t.xFn72t)
     }), (0, r.jsx)(a.VcW, {
+      wrapperClassName: _,
       placeholder: d.intl.string(d.t.R0vK0N),
       renderOptionPrefix: e => (null == e ? true : e.value) == null ? null : (0, r.jsx)(o.Z, {
         user: e.value,
         size: a.EFr.SIZE_20
       }),
-      value: h,
-      onChange: g,
-      options: p.map(e => ({
+      value: m,
+      onChange: E,
+      options: h.map(e => ({
         value: e,
         label: "".concat(u.ZP.getUserTag(e))
       }))

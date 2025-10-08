@@ -31,6 +31,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
+    title: Chunk388032.intl.string(Chunk388032.t.xVRG4O),
+    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    children: [(0, Chunk951288.jsx)(Chunk211466.n, {}), (0, Chunk951288.jsx)(Chunk122897.Z, {}), (0, Chunk951288.jsx)(Chunk394655.Z, {}), (0, Chunk951288.jsx)(Chunk24400.Z, {}), (0, Chunk951288.jsx)(Chunk924356.Z, {}), (0, Chunk951288.jsx)(Chunk864239.Z, {})]
+  }),
+  P = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["y62Z/f"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
@@ -38,18 +43,13 @@ let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
       children: (0, Chunk951288.jsx)(Chunk540204.Z, {})
     }), (0, Chunk951288.jsx)(Chunk988043.Z, {}), (0, Chunk951288.jsx)(Chunk919539.Z, {}), (0, Chunk951288.jsx)(Chunk301812.Z, {}), (0, Chunk951288.jsx)(Chunk190014.Z, {})]
   }),
-  P = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.xVRG4O),
-    webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, Chunk951288.jsx)(Chunk211466.n, {}), (0, Chunk951288.jsx)(Chunk122897.Z, {}), (0, Chunk951288.jsx)(Chunk394655.Z, {}), (0, Chunk951288.jsx)(Chunk24400.Z, {}), (0, Chunk951288.jsx)(Chunk924356.Z, {}), (0, Chunk951288.jsx)(Chunk864239.Z, {})]
-  }),
   w = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["1Qn8iY"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk694569.Z, {}), (0, Chunk951288.jsx)(Chunk273927.ZP, {})]
   }),
   D = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(w, {})]
+    children: [(0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(w, {})]
   });
 
 function L() {

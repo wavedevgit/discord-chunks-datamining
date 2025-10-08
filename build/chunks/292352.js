@@ -129,11 +129,11 @@ let S = new Map([
     [6, {
       priority: 175,
       tooltipHeader: () => Chunk388032.intl.string(Chunk412297.default.eo4Fxs),
-      tooltipDescription: e => e ? s.intl.string(o.default["Mx+/eX"]) : s.intl.string(o.default.n3otj4),
+      tooltipDescription: () => Chunk388032.intl.string(Chunk412297.default["O/AElp"]),
       sectionHeader: e => s.intl.formatToPlainString(o.default.eGFWUV, {
         count: e
       }),
-      sectionDescription: e => e ? s.intl.string(o.default["Mx+/eX"]) : s.intl.string(o.default.n3otj4)
+      sectionDescription: () => Chunk388032.intl.string(Chunk412297.default["O/AElp"])
     }],
     [7, {
       priority: 150,
