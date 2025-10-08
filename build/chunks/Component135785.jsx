@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk518596 = require("./518596.jsx"),
+  Chunk947889 = require("./947889.js"),
   Chunk63063 = require("./63063.js"),
   Chunk74538 = require("./74538.js"),
   Chunk140465 = require("./140465.js"),
@@ -24,14 +24,15 @@ let m = e => {
       className: m,
       textColor: g
     } = e,
-    E = (0, d.Nx)();
+    E = (0, d.Nx)(),
+    b = (0, l.Z)();
   if (null == i) return null;
-  let b = null != i ? u.ZP.getPremiumPlanItem(i) : null;
-  if (u.ZP.isBoostOnlySubscription(i) ? t = p.intl.string(p.t.Uj0md3) : null != b && (t = u.ZP.getDisplayPremiumType(b.planId)), null == t) return null;
-  let y = () => (0, l.openUserSettings)(s.n.SUBSCRIPTIONS_PANEL, {
+  let y = null != i ? u.ZP.getPremiumPlanItem(i) : null;
+  if (u.ZP.isBoostOnlySubscription(i) ? t = p.intl.string(p.t.Uj0md3) : null != y && (t = u.ZP.getDisplayPremiumType(y.planId)), null == t) return null;
+  let O = () => b(s.n.SUBSCRIPTIONS_PANEL, {
       section: _.oAB.SUBSCRIPTIONS
     }),
-    O = (null != b ? u.ZP.getSkuIdForPlan(b.planId) : null) === f.Si.TIER_1;
+    v = (null != y ? u.ZP.getSkuIdForPlan(y.planId) : null) === f.Si.TIER_1;
   return n = null != g ? g : E ? "always-white" : "text-default", (0, r.jsxs)(o.Zbd, {
     className: a()(h.container, m, {
       [h.centerText]: E
@@ -48,12 +49,12 @@ let m = e => {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: n,
-      children: O ? p.intl.format(p.t["tYuv+f"], {
+      children: v ? p.intl.format(p.t["tYuv+f"], {
         helpdeskArticle: c.Z.getArticleURL(_.BhN.PREMIUM_DETAILS),
-        onSubscriptionsClick: y
+        onSubscriptionsClick: O
       }) : p.intl.format(p.t.xHRgU1, {
         subscriptionName: t,
-        onSubscriptionsClick: y
+        onSubscriptionsClick: O
       })
     })]
   })

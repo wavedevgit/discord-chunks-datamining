@@ -20,14 +20,14 @@ function c(e) {
     leading: c,
     trailing: d,
     inInput: f = false
-  } = e, _ = (0, r.jsx)("div", {});
+  } = e, _ = null;
   null != c && (_ = (0, r.jsx)("div", {
     className: s.leading,
     children: (0, r.jsx)(u, {
       accessory: c
     })
   }));
-  let p = (0, r.jsx)("div", {});
+  let p = null;
   return null != d && (p = (0, r.jsx)("div", {
     className: s.trailing,
     children: (0, r.jsx)(u, {
@@ -43,6 +43,10 @@ function c(e) {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
+      style: {
+        gridColumnStart: null != _ ? "2" : "1",
+        gridColumnEnd: null != p ? "2" : "3"
+      },
       children: t
     }), p]
   })

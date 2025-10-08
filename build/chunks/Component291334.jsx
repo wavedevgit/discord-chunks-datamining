@@ -24,9 +24,13 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   switch (e) {
     case _.BRd.DARK:
+    case _.BRd.DARKER:
+    case _.BRd.MIDNIGHT:
       return g;
     case _.BRd.LIGHT:
-      return E
+      return E;
+    default:
+      return g
   }
 }
 
