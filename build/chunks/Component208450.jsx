@@ -133,45 +133,41 @@ class Y extends Chunk647438.PureComponent {
       searchContext: e,
       editorState: t,
       hasResults: n,
-      className: i,
-      searchBarContainerClassName: a,
-      searchBarClassName: s,
-      popoutAlignment: l
+      className: i
     } = this.props, {
-      focused: c
-    } = this.state, u = Chunk72006.Sq(exports).length > 0;
+      focused: a
+    } = this.state, s = Chunk72006.Sq(exports).length > 0;
     return (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this._containerRef,
       renderPopout: this.renderPopout,
       position: "bottom",
-      align: Chunk299608,
       animation: Chunk481060.yRy.Animation.NONE,
-      shouldShow: c,
+      shouldShow: Chunk120356,
       autoInvert: false,
       children: (t, l) => {
-        var f;
+        var c;
         let {
-          isShown: _
+          isShown: u
         } = l;
         return (0, r.jsx)("div", {
           className: i,
           ref: this._containerRef,
           children: (0, r.jsx)("div", {
-            className: o()(B.search, a, {
-              [B.open]: u || c,
-              [B.focused]: c
+            className: o()(B.search, {
+              [B.open]: s || a,
+              [B.focused]: a
             }),
             children: (0, r.jsx)(d.tEY, {
               focusTarget: {
-                current: null == (f = this._editorRef) ? true : f.editor
+                current: null == (c = this._editorRef) ? true : c.editor
               },
               ringTarget: this._searchBarRef,
               children: (0, r.jsxs)("div", {
-                className: o()(B.searchBar, s),
+                className: B.searchBar,
                 ref: this._searchBarRef,
-                children: [this.renderInput(_), (0, r.jsx)(d.BK9, {
+                children: [this.renderInput(u), (0, r.jsx)(d.BK9, {
                   onClear: this.handleClearSearch,
-                  hasContent: u || n,
+                  hasContent: s || n,
                   className: B.icon,
                   isLoading: false
                 })]
@@ -214,14 +210,12 @@ class Y extends Chunk647438.PureComponent {
         ref: this._searchFiltersRedesignPopoutRef,
         searchContext: this.props.searchContext,
         navId: V,
-        onSelectedIndexChanged: this.handleSelectedIndexChanged,
-        className: this.props.searchPopoutClassName
+        onSelectedIndexChanged: this.handleSelectedIndexChanged
       }) : (0, r.jsx)(L.ZP, {
         ref: this._searchPopoutRef,
         searchContext: this.props.searchContext,
         navId: V,
-        onSelectedIndexChanged: this.handleSelectedIndexChanged,
-        className: this.props.searchPopoutClassName
+        onSelectedIndexChanged: this.handleSelectedIndexChanged
       })
     }), Z(this, "search", e => {
       let {
@@ -460,35 +454,31 @@ class Y extends Chunk647438.PureComponent {
 function W(e) {
   let {
     searchContext: t,
-    className: n,
-    searchBarContainerClassName: a,
-    searchBarClassName: o,
-    searchPopoutClassName: s,
-    popoutAlignment: l
-  } = e, c = (0, T.Tm)(t), d = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), f = (0, u.e7)([M.Z], () => null != c ? M.Z.getEditorState(c) : null), _ = (0, u.e7)([M.Z], () => M.Z.getIsSearchTokensInitialized()), h = i.useRef(_);
+    className: n
+  } = e, a = (0, T.Tm)(t), o = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), s = (0, u.e7)([M.Z], () => null != a ? M.Z.getEditorState(a) : null), l = (0, u.e7)([M.Z], () => M.Z.getIsSearchTokensInitialized()), c = i.useRef(l);
   i.useEffect(() => {
-    _ && h.current !== _ && (h.current = _, D.Z.ensureSearchInputDecorators(t))
-  }, [_, t]);
-  let E = i.useMemo(() => null != f ? f : y.nR(O.Jl(R.ZP)), [f]),
+    l && c.current !== l && (c.current = l, D.Z.ensureSearchInputDecorators(t))
+  }, [l, t]);
+  let d = i.useMemo(() => null != s ? s : y.nR(O.Jl(R.ZP)), [s]),
     {
-      isSearching: b,
-      isSearchActive: v,
-      hasResults: S
+      isSearching: f,
+      isSearchActive: _,
+      hasResults: h
     } = (0, u.cj)([I.Z], () => {
-      let e = I.Z.getTotalCount(c);
+      let e = I.Z.getTotalCount(a);
       return {
         hasResults: null != e && e > 0,
-        isSearching: I.Z.getIsFetching(c),
-        isSearchActive: I.Z.hasSearchState(c)
+        isSearching: I.Z.getIsFetching(a),
+        isSearchActive: I.Z.hasSearchState(a)
       }
     }),
-    A = i.useRef(v);
+    E = i.useRef(_);
   i.useEffect(() => {
-    A.current && !v && (A.current = false, (0, j.IZ)({
+    E.current && !_ && (E.current = false, (0, j.IZ)({
       searchContext: t
-    })), !A.current && v && (A.current = true)
-  }, [v, t]);
-  let P = i.useCallback(e => {
+    })), !E.current && _ && (E.current = true)
+  }, [_, t]);
+  let b = i.useCallback(e => {
       let {
         queryString: n,
         query: r,
@@ -511,7 +501,7 @@ function W(e) {
         searchMode: U.QIO.NEWEST
       })
     }, [t]),
-    w = (0, u.e7)([g.Z, m.Z], () => {
+    v = (0, u.e7)([g.Z, m.Z], () => {
       let e = (0, T.b7)(t) ? t.guildId : null;
       if (null != e) {
         let t = g.Z.getGuild(e);
@@ -524,31 +514,27 @@ function W(e) {
       }
       return null
     }),
-    L = (0, C.nP)({
+    S = (0, C.nP)({
       location: "Search"
     }),
-    x = (0, C.KS)({
+    A = (0, C.KS)({
       location: "Search"
     }),
-    k = L || x,
-    B = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : k ? G.intl.formatToPlainString(G.t.LDZtFB, {
-      name: w
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, k, w]);
+    P = S || A,
+    w = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : P ? G.intl.formatToPlainString(G.t.LDZtFB, {
+      name: v
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, P, v]);
   return (0, r.jsx)(Y, {
     className: n,
-    searchPopoutClassName: s,
-    searchBarContainerClassName: a,
-    searchBarClassName: o,
     searchContext: t,
-    isSearching: b,
-    editorState: E,
-    hasResults: S,
-    keyboardModeEnabled: d,
-    onSearch: P,
-    isSearchActive: v,
-    placeholder: B,
-    popoutAlignment: l,
-    isSearchFiltersRedesignEnabled: k
+    isSearching: f,
+    editorState: d,
+    hasResults: h,
+    keyboardModeEnabled: o,
+    onSearch: b,
+    isSearchActive: _,
+    placeholder: w,
+    isSearchFiltersRedesignEnabled: P
   })
 }
 
