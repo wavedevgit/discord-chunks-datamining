@@ -143,8 +143,8 @@ function I(e) {
         }), (0, a.jsx)(l.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: R.intl.format(R.t["/UTD6e"], {
-            orbsEarned: r
+          children: R.intl.formatToPlainString(R.t.YMor7u, {
+            count: r
           })
         })]
       }), null != i ? (0, a.jsx)(l.Text, {

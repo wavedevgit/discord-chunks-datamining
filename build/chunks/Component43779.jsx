@@ -84,7 +84,8 @@ function S(e) {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
-        className: E.orbsBalanceIcon
+        className: E.orbsBalanceIcon,
+        customSize: 14
       }), K]
     })
   }) : X ? (0, r.jsx)(T, {
@@ -95,7 +96,8 @@ function S(e) {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
-        className: E.orbsBalanceIcon
+        className: E.orbsBalanceIcon,
+        customSize: 14
       }), K]
     })
   }) : y.intl.format(y.t["0IUT4e"], {
