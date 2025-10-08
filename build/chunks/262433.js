@@ -1,8 +1,8 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 262433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => _,
-  Z: () => b
+  U: () => m,
+  Z: () => E
 }), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -15,7 +15,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk88315 = require("./88315.js"),
   Chunk199766 = require("./199766.js"),
   Chunk813900 = require("./813900.js");
-let m = {
+let _ = {
     X_OFFSET: 2 * Chunk813900.qh,
     Y_OFFSET: 25,
     X_SPEED: .5,
@@ -27,22 +27,22 @@ let m = {
     SIZE_MIN: Chunk813900.qh / 2,
     SIZE_MAX: Chunk813900.qh
   },
-  _ = (0, Chunk191336.U)(() => ({
+  m = (0, Chunk191336.U)(() => ({
     particles: {},
     lastSpawned: {}
   }));
 
-function g(e, t) {
+function b(e, t) {
   var n;
-  i()(null != (n = _.getState().particles[e.id]) ? n : {}).forEach(t)
+  i()(null != (n = m.getState().particles[e.id]) ? n : {}).forEach(t)
 }
 
-function b(e) {
+function E(e) {
   var t, n, r;
   let {
     emojiHose: a,
-    context: b,
-    canvasWidth: E,
+    context: E,
+    canvasWidth: g,
     canvasHeight: v,
     fallbackColor: h,
     outlineColorDark: S,
@@ -50,48 +50,48 @@ function b(e) {
     streamerId: O,
     deadDrawables: I
   } = e;
-  b.save();
+  E.save();
   let C = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
-    w = (0, d.np)(a.x, E),
+    w = (0, d.np)(a.x, g),
     j = (0, d.np)(a.y, v),
     {
       outlineColor: Z
     } = (0, d.bg)(a.userId, S, y, h);
-  g(a, e => {
+  b(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
-        _.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))
+        m.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))
       })
     }),
     function(e, t, n) {
       var r;
-      let a = null != (r = _.getState().lastSpawned[e.id]) ? r : 0,
+      let a = null != (r = m.getState().lastSpawned[e.id]) ? r : 0,
         c = Date.now();
       !(a + 100 > c) && e.state !== u.f.STOP && (.8 >= Math.random() || a + 300 < c) && (0, o.j)(() => {
-        _.setState(r => {
+        m.setState(r => {
           var a;
           let o = null != (a = r.particles[e.id]) ? a : {},
             c = i().random(1, 2);
           for (let e = 0; e < c; e++) {
             let e = {
               id: (0, l.Z)(),
-              x: t + i().random(-m.X_OFFSET, m.X_OFFSET),
-              y: n + i().random(-m.Y_OFFSET, m.Y_OFFSET),
-              xSpeed: i().random(-m.X_SPEED, m.X_SPEED),
-              ySpeed: i().random(m.Y_SPEED_MIN, m.Y_SPEED_MAX),
-              opacity: m.OPACITY,
-              opacitySpeed: i().random(m.OPACITY_SPEED_MIN, m.OPACITY_SPEED_MAX),
-              size: i().random(m.SIZE_MIN, m.SIZE_MAX)
+              x: t + i().random(-_.X_OFFSET, _.X_OFFSET),
+              y: n + i().random(-_.Y_OFFSET, _.Y_OFFSET),
+              xSpeed: i().random(-_.X_SPEED, _.X_SPEED),
+              ySpeed: i().random(_.Y_SPEED_MIN, _.Y_SPEED_MAX),
+              opacity: _.OPACITY,
+              opacitySpeed: i().random(_.OPACITY_SPEED_MIN, _.OPACITY_SPEED_MAX),
+              size: i().random(_.SIZE_MIN, _.SIZE_MAX)
             };
             o[e.id] = e
           }
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, w, j), (0, f.I)(b, w, j, Z, p.q2), (0, f.T)(b, w, j, a.userId), g(a, e => (function(e, t, n) {
+    }(a, w, j), (0, f.I)(E, w, j, Z, p.q2), (0, f.T)(E, w, j, a.userId), b(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         i = n.x - r / 2 * window.devicePixelRatio,
         l = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + i, r / 2 + l, r, r)
-    })(b, C, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, c.ZZ)(O, a), a.state !== u.f.STOP || Object.keys(null != (r = _.getState().particles[a.id]) ? r : {}).length > 0 || I.push(a), b.restore()
+    })(E, C, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, c.ZZ)(O, a), a.state !== u.f.STOP || Object.keys(null != (r = m.getState().particles[a.id]) ? r : {}).length > 0 || I.push(a), E.restore()
 }

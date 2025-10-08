@@ -1,4 +1,4 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => D,
@@ -75,7 +75,7 @@ function M(e) {
     user: H,
     streamId: B,
     speaking: z
-  } = t, q = H.id === W, Y = (0, w.ZP)(t), G = (0, o.e7)([I.Z], () => I.Z.isFocused()), K = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = z && (K || G), ee = c < 124 ? N : R, {
+  } = t, q = H.id === W, Y = (0, w.ZP)(t), G = (0, o.e7)([I.Z], () => I.Z.isFocused()), K = (0, o.e7)([g.Z], () => g.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = z && (K || G), ee = c < 124 ? N : R, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, v.Z)({
@@ -83,7 +83,7 @@ function M(e) {
     guildId: n.guild_id,
     size: ee,
     animateOnHover: !$
-  }), er = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), ei = (0, _.Z)(x.Yn.DEFAULT, t.user.id), el = (0, m.Z)(t.user.id), ea = {
+  }), er = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), ei = (0, m.Z)(x.Yn.DEFAULT, t.user.id), el = (0, _.Z)(t.user.id), ea = {
     channel: n,
     selectedParticipant: er,
     user: H
@@ -102,7 +102,7 @@ function M(e) {
     userId: t.id,
     width: c,
     selected: s
-  }) : (0, r.jsx)(b.Z, {
+  }) : (0, r.jsx)(E.Z, {
     onResize: Z,
     wrapperClassName: T.videoWrapper,
     className: T.content,
@@ -117,7 +117,7 @@ function M(e) {
     className: a()(T.content, {
       [T.blockedAvatar]: D || M
     }),
-    children: (0, r.jsx)(g.Z, {
+    children: (0, r.jsx)(b.Z, {
       "aria-label": J,
       src: et,
       avatarDecoration: en,

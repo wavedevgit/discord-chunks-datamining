@@ -60,8 +60,7 @@ function m(e) {
   let {
     value: t
   } = e;
-  return (0, a.jsx)(s.XZJ, {
-    checked: t,
-    displayOnly: true
+  return (0, a.jsx)(s.FZ5, {
+    checked: t
   })
 }

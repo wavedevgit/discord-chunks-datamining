@@ -1,1 +1,0 @@
-{"id":"395322","type":"experiment","data":{"kind":"user","id":"2023-11_midjourney_onboarding","label":"Midjourney Onboarding","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enables the accelerated Midjourney Onboarding & Discord experience for the user.","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

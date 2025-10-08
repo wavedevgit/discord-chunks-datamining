@@ -20,32 +20,30 @@ let c = {
         label: t,
         description: n,
         disabled: c,
-        displayOnly: u,
-        labelType: d,
-        iconPosition: f
-      } = e, [_, p] = i.useState(false), h = i.useCallback(() => {
-        p(true)
+        labelType: u,
+        showIcons: d
+      } = e, [f, _] = i.useState(false), p = i.useCallback(() => {
+        _(true)
+      }, []), h = i.useCallback(() => {
+        _(false)
       }, []), m = i.useCallback(() => {
-        p(false)
-      }, []), g = i.useCallback(() => {
-        p(e => !e)
+        _(e => !e)
       }, []);
       return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(l.XZJ, {
-          checked: _,
-          onChange: e => p(e),
+          checked: f,
+          onChange: e => _(e),
           disabled: c,
-          displayOnly: u,
           label: t,
           description: null != n || "" === n ? n : true,
           value: "checkbox-value",
-          labelType: d,
-          leadingIcon: "leading" === f ? a.d3s : true
+          labelType: u,
+          leadingIcon: d ? a.d3s : true
         }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
-          children: ["Current state: ", _ ? "Checked" : "Unchecked"]
+          children: ["Current state: ", f ? "Checked" : "Unchecked"]
         }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
@@ -53,19 +51,19 @@ let c = {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: h,
+            onClick: p,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: m,
+            onClick: h,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: g,
+            onClick: m,
             disabled: c
           })]
         })]
@@ -80,11 +78,6 @@ let c = {
       disabled: {
         type: "boolean",
         label: "Disabled",
-        defaultValue: false
-      },
-      displayOnly: {
-        type: "boolean",
-        label: "Display Only",
         defaultValue: false
       },
       labelType: {
@@ -104,17 +97,10 @@ let c = {
         label: "Description",
         defaultValue: ""
       },
-      iconPosition: {
-        type: "select",
-        label: "Icon Position",
-        options: [{
-          label: "None",
-          value: "none"
-        }, {
-          label: "Leading",
-          value: "leading"
-        }],
-        defaultValue: "none"
+      showIcons: {
+        type: "boolean",
+        label: "Show Icons",
+        defaultValue: false
       }
     }
   }]

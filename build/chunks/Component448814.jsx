@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk924826 = require("./924826.js"),
   Chunk91192 = require("./91192.jsx"),
-  Chunk595824 = require("./595824.jsx"),
+  Chunk571155 = require("./571155.jsx"),
   Chunk652728 = require("./652728.jsx"),
   Chunk715644 = require("./715644.js"),
   Chunk777207 = require("./777207.jsx"),
@@ -171,9 +171,8 @@ function I(e) {
   } = e, f = (0, l.JA)(n);
 
   function _() {
-    return "multiple" === s ? (0, r.jsx)(c.X, {
-      checked: i,
-      displayOnly: true
+    return "multiple" === s ? (0, r.jsx)(c.F, {
+      checked: i
     }) : i ? (0, r.jsx)(u.k, {
       color: "currentColor",
       size: "refresh_sm"

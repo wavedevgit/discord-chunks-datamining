@@ -1,4 +1,4 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -14,17 +14,17 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk729303 = require("./729303.js"),
   Chunk651941 = require("./651941.js"),
   Chunk981631 = require("./981631.js");
-let g = new Map,
-  b = new Map,
-  E = false,
+let b = new Map,
+  E = new Map,
+  g = false,
   v = null;
 
 function h() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
-    } = (0, c.my)(t), r = true === g.get(n), i = b.get(t) !== r;
-    return b.set(t, r), !!i || e
+    } = (0, c.my)(t), r = true === b.get(n), i = E.get(t) !== r;
+    return E.set(t, r), !!i || e
   }, false)
 }
 
@@ -34,11 +34,11 @@ function S() {
     n = Chunk314897.default.getId(),
     r = true;
   for (let e of exports)
-    if (require !== module && true !== g.get(module)) {
+    if (require !== module && true !== b.get(module)) {
       r = false;
       break
-    } let i = r !== E;
-  return E = r, i
+    } let i = r !== g;
+  return g = r, i
 }
 
 function y(e) {
@@ -50,11 +50,11 @@ function y(e) {
       let t = u.Z.getSecureFramesRosterMapEntry(e);
       if (null == t) returnfalse;
       let n = new Uint8Array(t),
-        r = m.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
+        r = _.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
         i = (0, f.UB)(e, [u.Z, d.Z]),
         l = r && !i,
-        a = l !== g.get(e);
-      return g.set(e, l), a
+        a = l !== b.get(e);
+      return b.set(e, l), a
     }(t),
     r = h(),
     i = S();
@@ -62,20 +62,20 @@ function y(e) {
 }
 
 function O() {
-  g.clear(), b.clear(), E = false
+  b.clear(), E.clear(), g = false
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk729303.Z, Chunk651941.Z, Chunk19780.Z, Chunk959457.Z)
   }
   isCallVerified() {
-    return E
+    return g
   }
   isStreamVerified(e) {
-    return b.get(e)
+    return E.get(e)
   }
   isUserVerified(e) {
-    return g.get(e)
+    return b.get(e)
   }
 }(i = "displayName") in I ? Object.defineProperty(I, i, {
   value: "SecureFramesVerifiedStore",
@@ -98,11 +98,11 @@ let C = new I(Chunk570140.Z, {
       state: n,
       context: r
     } = e;
-    if (n !== _.hes.DISCONNECTED) returnfalse;
+    if (n !== m.hes.DISCONNECTED) returnfalse;
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return b.delete(t), S();
+        return E.delete(t), S();
       case a.Yn.DEFAULT:
         O()
     }

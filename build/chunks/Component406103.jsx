@@ -21,37 +21,37 @@ let c = {
         optionCount: n,
         label: c,
         description: u,
-        iconPosition: d,
+        showIcons: d,
         withMixedDisabledOptions: f
       } = e, [_, p] = i.useState(["option1"]), h = i.useMemo(() => [{
         label: "Option 1",
         value: "option1",
         description: null != u || "" === u ? u : true,
-        leadingIcon: "leading" === d ? a.d3s : true,
+        leadingIcon: d ? a.d3s : true,
         disabled: !f && true
       }, {
         label: "Option 2",
         value: "option2",
         description: null != u || "" === u ? u : true,
-        leadingIcon: "leading" === d ? a.d3s : true,
+        leadingIcon: d ? a.d3s : true,
         disabled: !!f || true
       }, {
         label: "Option 3",
         value: "option3",
         description: null != u || "" === u ? u : true,
-        leadingIcon: "leading" === d ? a.d3s : true,
+        leadingIcon: d ? a.d3s : true,
         disabled: !f && true
       }, {
         label: "Option 4",
         value: "option4",
         description: null != u || "" === u ? u : true,
-        leadingIcon: "leading" === d ? a.d3s : true,
+        leadingIcon: d ? a.d3s : true,
         disabled: !!f || true
       }, {
         label: "Option 5",
         value: "option5",
         description: null != u || "" === u ? u : true,
-        leadingIcon: "leading" === d ? a.d3s : true,
+        leadingIcon: d ? a.d3s : true,
         disabled: !f && true
       }].slice(0, Math.max(1, Math.min(5, n))), [n, u, d, f]), m = i.useCallback(e => {
         p(e)
@@ -66,7 +66,7 @@ let c = {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(l.c, {
-          value: _,
+          selectedValues: _,
           label: c,
           onChange: m,
           options: h,
@@ -136,17 +136,10 @@ let c = {
         label: "Description",
         defaultValue: ""
       },
-      iconPosition: {
-        type: "select",
-        label: "Icon Position",
-        options: [{
-          label: "None",
-          value: "none"
-        }, {
-          label: "Leading",
-          value: "leading"
-        }],
-        defaultValue: "none"
+      showIcons: {
+        type: "boolean",
+        label: "Show Icons",
+        defaultValue: false
       },
       withMixedDisabledOptions: {
         type: "boolean",

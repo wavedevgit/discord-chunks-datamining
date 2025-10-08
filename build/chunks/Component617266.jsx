@@ -132,8 +132,7 @@ function I(e) {
       })]
     }), (0, l.jsx)("div", {
       className: T.checkbox,
-      children: (0, l.jsx)(c.XZJ, {
-        displayOnly: true,
+      children: (0, l.jsx)(c.FZ5, {
         checked: o
       })
     })]
@@ -149,7 +148,7 @@ function F(e) {
     a = Z.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, u.e7)([_.Z], () => _.Z.getNickname(t.id)),
+    s = (0, u.e7)([O.Z], () => O.Z.getNickname(t.id)),
     o = (0, u.e7)([C.Z], () => C.Z.getStatus(t.id));
   return (0, l.jsx)(I, A(D({}, r), {
     icon: (0, l.jsx)(d.Z, {
@@ -189,11 +188,11 @@ function U(e) {
   } = e, r = k(e, ["channel", "subLabel"]);
   let i = (0, u.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
     a = (0, b.ZP)(t),
-    s = (0, u.e7)([x.Z, P.default, _.Z], () => {
+    s = (0, u.e7)([x.Z, P.default, O.Z], () => {
       let e = x.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, b.F6)(e, P.default, _.Z, false)
+      return null == e ? null : (0, b.F6)(e, P.default, O.Z, false)
     }),
-    d = (0, u.e7)([O.ZP], () => O.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
+    d = (0, u.e7)([_.ZP], () => _.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
     f = null == i ? true : i.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? c.Mmi : c.VL1;

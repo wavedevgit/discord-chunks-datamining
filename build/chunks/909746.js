@@ -972,6 +972,8 @@ function eh(e, t) {
       return j.intl.string(j.t.FlNoSU);
     case x.Plq.REQUEST_TO_SPEAK:
       return j.intl.string(j.t["5kicT0"]);
+    case x.Plq.USE_EMBEDDED_ACTIVITIES:
+      return j.intl.string(j.t.rLSGen);
     case x.Plq.CREATE_EVENTS:
       return j.intl.string(j.t.qyjZub);
     case x.Plq.MANAGE_EVENTS:

@@ -1,8 +1,8 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZB: () => b,
-  ZP: () => E,
+  ZB: () => E,
+  ZP: () => g,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -16,18 +16,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk699966 = require("./699966.js");
 let p = 112,
-  m = 16 / 9 * 112 + 8,
-  _ = 10 * Chunk70956.Z.Millis.SECOND;
+  _ = 16 / 9 * 112 + 8,
+  m = 10 * Chunk70956.Z.Millis.SECOND;
 
-function g(e) {
+function b(e) {
   var t;
   let n = o.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? true : t.selfVideo)
 }
 
-function b(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
-      tileWidth: m,
+      tileWidth: _,
       tileMinWidth: 124,
       tileMargin: 8,
       limit: 12,
@@ -41,11 +41,11 @@ function b(e, t) {
       cropSelfVideo: f,
       version: p
     } = n,
-    [b, E] = i.useState(Date.now());
+    [E, g] = i.useState(Date.now());
   i.useEffect(() => {
     let e = setTimeout(() => {
-      E(Date.now())
-    }, _);
+      g(Date.now())
+    }, m);
     return () => {
       clearTimeout(e)
     }
@@ -67,21 +67,21 @@ function b(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < _ ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < m ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
-        [p, m] = (0, l.partition)(i, d.Io),
-        b = p.findIndex(g),
-        E = null;
-      false !== b && (E = p[b], p.splice(b, 1));
-      let h = null == E || f ? e : e - r - c,
+        [p, _] = (0, l.partition)(i, d.Io),
+        E = p.findIndex(b),
+        g = null;
+      false !== E && (g = p[E], p.splice(E, 1));
+      let h = null == g || f ? e : e - r - c,
         S = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
         y = Math.min((h - c) / S - c, r),
-        O = Math.max(0, S - m.length),
-        I = m.slice(0, S),
+        O = Math.max(0, S - _.length),
+        I = _.slice(0, S),
         C = p.slice(0, O),
         w = Array(O);
       if (O > 0) {
@@ -100,18 +100,18 @@ function b(e, t) {
       let j = w.filter(s.lm);
       v.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
       let Z = [...I, ...j];
-      return null != E && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = E : Z.push(E)), {
+      return null != g && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = g : Z.push(g)), {
         visibleParticipants: Z,
         participantTileWidth: y
       }
-    }, [e, t, b, p, f, u, c, o, r]);
+    }, [e, t, E, p, f, u, c, o, r]);
   return {
     visibleParticipants: h,
     participantTileWidth: S
   }
 }
 
-function E(e) {
+function g(e) {
   let {
     participants: t,
     participantTileWidth: n,
@@ -123,12 +123,12 @@ function E(e) {
     inCall: s,
     popoutWindow: d,
     paused: p = false
-  } = e, _ = null != d;
+  } = e, m = null != d;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
       if (null == e) return null;
-      let t = g(e);
+      let t = b(e);
       return (0, r.jsx)("div", {
         className: f.tileSizer,
         style: t ? {
@@ -143,10 +143,10 @@ function E(e) {
           onClick: o,
           onDoubleClick: l,
           onContextMenu: a,
-          width: t ? m : n,
+          width: t ? _ : n,
           inCall: s,
           paused: p,
-          inPopout: _
+          inPopout: m
         })
       }, e.id)
     })

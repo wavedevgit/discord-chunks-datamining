@@ -1,7 +1,7 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,18 +14,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk456631 = require("./456631.js"),
   Chunk181201 = require("./181201.js");
 let p = 6 * Chunk70956.Z.Millis.SECOND,
-  m = 2 * Chunk70956.Z.Millis.SECOND,
   _ = 2 * Chunk70956.Z.Millis.SECOND,
-  g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
+  m = 2 * Chunk70956.Z.Millis.SECOND,
+  b = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
-function b(e) {
+function E(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
     onComplete: u
   } = e, {
-    emoji: b,
-    sentAt: E
+    emoji: E,
+    sentAt: g
   } = n, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [h, S] = i.useState(true), y = !v, O = (0, o.Yzy)(h, {
     from: {
       rotate: false
@@ -46,12 +46,12 @@ function b(e) {
   });
   return (i.useEffect(() => {
     let e;
-    return Date.now() - E >= _ ? (0, d.H)(t) : e = setTimeout(() => {
+    return Date.now() - g >= m ? (0, d.H)(t) : e = setTimeout(() => {
       S(false), y && (0, d.H)(t)
-    }, y ? m : p), () => {
+    }, y ? _ : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [E, t, y]), y) ? null : O((e, t) => {
+  }, [g, t, y]), y) ? null : O((e, t) => {
     var n;
     let {
       rotate: i
@@ -59,13 +59,13 @@ function b(e) {
     return t && (0, r.jsx)(l.animated.div, {
       className: f.voiceChannelEffectEmojiContainer,
       style: {
-        transform: i.to(g)
+        transform: i.to(b)
       },
       children: (0, r.jsx)(c.Z, {
         className: f.voiceChannelEffectEmoji,
-        emojiId: b.id,
-        emojiName: b.name,
-        animated: null != (n = b.animated) && n
+        emojiId: E.id,
+        emojiName: E.name,
+        animated: null != (n = E.animated) && n
       })
     })
   })

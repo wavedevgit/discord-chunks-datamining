@@ -1,4 +1,4 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk565063 = require("./565063.js");
 
-function _(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,14 +34,14 @@ function _(e) {
   }
   return e
 }
-let g = {
+let b = {
     visibility: "hidden"
   },
-  b = {
+  E = {
     precision: 1e-4,
     duration: 300
   },
-  E = {
+  g = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
@@ -63,7 +63,7 @@ function h(e) {
   }, [O]);
   let j = e => {
       let t = null == y ? true : y.getBoundingClientRect();
-      if (w.current = t, e.timestamp !== I || null == t || n) return g;
+      if (w.current = t, e.timestamp !== I || null == t || n) return b;
       let {
         top: r,
         left: i
@@ -85,33 +85,33 @@ function h(e) {
       enter: {
         opacity: 0
       },
-      config: b
+      config: E
     }, "animate-always"),
     x = (0, i.useRef)(null),
     A = (0, c.Yzy)(C, {
       ref: x,
       keys: e => e.timestamp,
-      from: e => _({
+      from: e => m({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
       }, h.enabled ? j(e) : (() => {
         var e;
         let t = null == (e = S.current) ? true : e.getBoundingClientRect();
-        return null == t || n ? g : {
+        return null == t || n ? b : {
           width: t.width,
           height: t.height,
           top: t.top,
           left: t.left
         }
       })()),
-      enter: e => [_({
+      enter: e => [m({
         opacity: 1,
         visibility: "visible"
       }, j(e))],
-      leave: _({
+      leave: m({
         opacity: 0
-      }, !h.enabled && _({
+      }, !h.enabled && m({
         height: 0,
         width: 0
       }, (() => {
@@ -120,24 +120,24 @@ function h(e) {
           left: w.current.left + 12
         }
       })())),
-      config: h.enabled ? v : E,
+      config: h.enabled ? v : g,
       onRest: (e, t) => {
         null != t.item && null != C.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(O, t.item.timestamp)
       }
     }, "animate-always");
   return (0, l.useChain)([Z, x], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: m.hidden,
+      className: _.hidden,
       ref: S
     }), P((e, t) => null != t && (0, r.jsx)(l.animated.div, {
-      className: m.whiteFlash,
+      className: _.whiteFlash,
       style: e
     })), (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
-        className: m.hidden,
+        className: _.hidden,
         children: A((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
           src: t.thumbnail,
-          className: m.movingImage,
+          className: _.movingImage,
           style: e
         }))
       })

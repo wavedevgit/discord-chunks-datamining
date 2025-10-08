@@ -652,7 +652,7 @@ function eu(e, t) {
 }
 
 function ed(e, t) {
-  if ((0, N.g)("create-guild-and-oauth2-modal")) return void A.Z.openCreateGuildModal({
+  if ((0, N.g)()) return void A.Z.openCreateGuildModal({
     onSuccess: n => ef(ea(er({}, e), {
       guildId: n
     }), t)

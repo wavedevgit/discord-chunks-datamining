@@ -2,7 +2,7 @@
 /** chunk id: 415635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,45 +11,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk570140 = require("./570140.js"),
   Chunk607070 = require("./607070.js"),
   Chunk367907 = require("./367907.js"),
-  Chunk37091 = require("./37091.js"),
-  Chunk721264 = require("./721264.js"),
   Chunk963838 = require("./963838.js"),
   Chunk39127 = require("./39127.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk57495 = require("./57495.js");
-let m = 50;
+let p = 50;
 
-function g(e) {
+function h(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: g,
-    containerDimensions: E
-  } = e, b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [y, O] = i.useState([]), v = y.length < m;
+    userId: h,
+    containerDimensions: m
+  } = e, g = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < p;
   i.useEffect(() => {
     function e(e) {
-      var r;
       let {
-        channelId: i,
-        userId: o,
-        emoji: s,
-        animationType: l,
-        animationId: _
+        channelId: r,
+        userId: i,
+        emoji: o,
+        animationType: s,
+        animationId: l
       } = e;
-      if (null != g && g !== o || u.Z.getEnabled() && (0, d.Z)(null != (r = null == s ? true : s.name) ? r : "")) return;
-      let h = null != s && null != l && null != _;
-      if (i === t && !b && v && h) {
-        let e = (0, f._r)(s),
-          r = null != s.id && !s.animated,
-          i = {
+      if (null != h && h !== i) return;
+      let d = null != o && null != s && null != l;
+      if (r === t && !g && y && d) {
+        let e = (0, u._r)(o),
+          r = null != o.id && !o.animated,
+          d = {
             id: (0, a.Z)(),
-            animationType: l,
-            animationId: _,
+            animationType: s,
+            animationId: l,
             shouldResize: r,
             url: e,
-            userId: o
+            userId: i
           };
-        O(e => [...e, i]), c.ZP.trackWithMetadata(p.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
+        b(e => [...e, d]), c.ZP.trackWithMetadata(f.rMx.VOICE_CHANNEL_EFFECT_VIEWED, {
           channel_id: t,
           guild_id: n
         })
@@ -58,25 +55,25 @@ function g(e) {
     return s.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       s.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, g, b, v]);
-  let I = i.useCallback(e => {
-    O(t => {
+  }, [t, n, h, g, y]);
+  let O = i.useCallback(e => {
+    b(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return b ? null : (0, r.jsx)("div", {
-    className: h.effectsWrapper,
+  return g ? null : (0, r.jsx)("div", {
+    className: _.effectsWrapper,
     style: {
-      width: E.width
+      width: m.width
     },
     children: (0, r.jsx)("div", {
-      className: h.effects,
-      children: y.map(e => (0, r.jsx)(_.Z, {
-        containerDimensions: E,
+      className: _.effects,
+      children: E.map(e => (0, r.jsx)(d.Z, {
+        containerDimensions: m,
         effect: e,
-        onComplete: I
+        onComplete: O
       }, e.id))
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 833519, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => z,
@@ -75,25 +75,25 @@ function z(e) {
     selected: n,
     onVideoResize: l,
     fit: p,
-    inPopout: m,
+    inPopout: _,
     inOverlayPopout: h = false,
     width: M,
     focused: k,
     wrapperClassName: B,
     paused: z = false
-  } = e, q = j.Z.getVideoComponent(), Y = (0, o.e7)([C.default], () => C.default.getId()), G = (0, g.Z)(), {
+  } = e, q = j.Z.getVideoComponent(), Y = (0, o.e7)([C.default], () => C.default.getId()), G = (0, b.Z)(), {
     stream: K,
     user: Q,
     streamId: X
   } = t, J = (0, o.e7)([w.Z], () => w.Z.getChannel(K.channelId)), $ = (0, o.e7)([I.Z], () => I.Z.getActiveStreamForUser(Q.id, K.guildId), [Q.id, K.guildId]), {
     defaultWatchMultipleStreams: ee
-  } = (0, b.P)({
+  } = (0, E.P)({
     location: "StreamTile"
-  }), et = (0, o.e7)([I.Z], () => I.Z.getAllActiveStreams().length > 0), en = (0, o.e7)([Z.Z], () => Z.Z.isFocused()), er = (null == $ ? true : $.ownerId) === Y, ei = er && !en && !m, el = null != $ ? (0, E.Z)($, Q, Q.id === Y, ei) : null, ea = M < 195;
+  }), et = (0, o.e7)([I.Z], () => I.Z.getAllActiveStreams().length > 0), en = (0, o.e7)([Z.Z], () => Z.Z.isFocused()), er = (null == $ ? true : $.ownerId) === Y, ei = er && !en && !_, el = null != $ ? (0, g.Z)($, Q, Q.id === Y, ei) : null, ea = M < 195;
   (0, d.ZP)(() => {
     !et && (null == J ? true : J.isGuildStageVoice()) && !er && ((0, u.rn)(K), s.Z.updateStageStreamSize(K.channelId, false))
   });
-  let eo = (0, _.c)(V.Yn.STREAM, t.user.id);
+  let eo = (0, m.c)(V.Yn.STREAM, t.user.id);
   if (i.useEffect(() => {
       H.info("Stream Tile State - activeStream: ".concat(null != $, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(j.Z.supports(V.AN.VIDEO)))
     }, [q, $, n]), G) return (0, r.jsx)(D.Z, {
@@ -195,7 +195,7 @@ function z(e) {
       size: (0, x.L)(M)
     }, el)) : null, (0, r.jsx)(A.Z, {
       stream: K,
-      inPopout: m
+      inPopout: _
     })]
   })
 }

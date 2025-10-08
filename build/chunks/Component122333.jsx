@@ -150,7 +150,7 @@ class Z extends Chunk317770.Z {
       open: e => c.j(y.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)("new_user_manager")
+        return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)()
       }
     }, {
       key: "Verification Gate with Claim Account",

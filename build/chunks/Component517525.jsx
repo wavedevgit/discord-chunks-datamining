@@ -1,4 +1,4 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -91,7 +91,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         participant: o,
         isUpsellEnabled: c,
         shape: f,
-        size: b,
+        size: E,
         didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: x,
         className: A,
@@ -100,7 +100,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       } = e,
       {
         analyticsLocations: N
-      } = (0, _.ZP)(),
+      } = (0, m.ZP)(),
       D = null != (0, y.Z)(o);
     try {
       t = (0, S.nG)(R)
@@ -115,8 +115,8 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     let M = t || l,
       {
         location: k
-      } = (0, m.O)(),
-      F = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
+      } = (0, _.O)(),
+      F = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
       L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
       V = i.useCallback(() => {
         L && M && (0, p.ZDy)(async () => {
@@ -141,7 +141,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
         onClick: V,
-        className: a()(w.qualityIndicator, b, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
+        className: a()(w.qualityIndicator, E, b.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && M
         }),
         children: [M ? (0, r.jsx)(p.SrA, {
@@ -162,7 +162,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         [w.qualityIndicatorBadgePremium]: M && T
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
-      shape: g.eE[f]
+      shape: b.eE[f]
     })
   },
   F = e => {
@@ -173,24 +173,24 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: c,
       className: s,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), m = (0, S.W3)(t), {
-      reducedMotion: _
-    } = i.useContext(p.Sfi), E = n && null != m;
+    } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
+      reducedMotion: m
+    } = i.useContext(p.Sfi), g = n && null != _;
     i.useEffect(() => {
-      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, E.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let v = (0, p.Yzy)(E, {
+    let v = (0, p.Yzy)(g, {
         enter: {
-          from: _.enabled ? T : x,
-          to: _.enabled ? R : A
+          from: m.enabled ? T : x,
+          to: m.enabled ? R : A
         },
-        leave: _.enabled ? T : x,
+        leave: m.enabled ? T : x,
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
-        to: E ? D : N,
+        to: g ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -212,15 +212,15 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: f,
             premiumIndicator: u,
-            quality: m
+            quality: _
           })
         }) : null), (0, r.jsx)(o.animated.div, {
           style: h,
           className: w.liveIndicator,
-          children: (0, r.jsx)(g.ZP, {
-            look: g.jZ.RED,
+          children: (0, r.jsx)(b.ZP, {
+            look: b.jZ.RED,
             size: c,
-            shape: E ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: g ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

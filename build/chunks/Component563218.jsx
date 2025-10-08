@@ -1,7 +1,7 @@
-/** Chunk was on 92592 **/
+/** Chunk was on 38319 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,24 +16,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk716600 = require("./716600.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js");
-let g = (e, t) => {
+let b = (e, t) => {
   a.Z.wait(() => {
     (0, o.Cz)(e, t)
   })
 };
 
-function b(e) {
+function E(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    b = (0, l.e7)([c.Z], () => c.Z.getWindow(_.KJ3.CHANNEL_CALL_POPOUT)),
-    E = (0, p.Z)(),
+    E = (0, l.e7)([c.Z], () => c.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
+    g = (0, p.Z)(),
     v = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == E || (0, f.Z)((0, d.p)(E.location)) || v !== m.Ez.PANEL) {
+  if (null == g || (0, f.Z)((0, d.p)(g.location)) || v !== _.Ez.PANEL) {
     var h;
-    t = null != (h = null == b ? true : b.window) ? h : window
+    t = null != (h = null == E ? true : E.window) ? h : window
   } else t = window;
   let S = i.useRef(null),
     y = i.useMemo(() => {
@@ -41,12 +41,12 @@ function b(e) {
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          g(n, null != (r = null == (t = S.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
+          b(n, null != (r = null == (t = S.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(_.CkL.REMEASURE_TARGET, y), () => {
-    t.removeEventListener("resize", y), s.S.unsubscribe(_.CkL.REMEASURE_TARGET, y)
+  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(m.CkL.REMEASURE_TARGET, y), () => {
+    t.removeEventListener("resize", y), s.S.unsubscribe(m.CkL.REMEASURE_TARGET, y)
   }), [y, t]), i.useLayoutEffect(() => {
     let e = S.current;
     if (null == e) return;
@@ -55,7 +55,7 @@ function b(e) {
     y();
     let r = new t.ResizeObserver(y);
     return r.observe(e), () => {
-      r.disconnect(), g(n, null)
+      r.disconnect(), b(n, null)
     }
   }, [n, y]), (0, r.jsx)("div", {
     ref: S,
