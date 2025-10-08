@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk8426 = require("./8426.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
+  Chunk359449 = require("./359449.js");
 let x = function(e) {
   let {
     guildId: t,
@@ -50,10 +50,10 @@ let x = function(e) {
       onDragComplete: b,
       onDragReset: _
     }),
-    R = i.useCallback(e => {
+    Z = i.useCallback(e => {
       (0, m.XG)(l.channelId, e)
     }, [l.channelId]),
-    Z = i.useCallback((e, n) => {
+    R = i.useCallback((e, n) => {
       let r = p.Z.getSettings();
       null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
         (0, m.mM)(t, e.channelId, n)
@@ -62,7 +62,7 @@ let x = function(e) {
     D = i.useCallback(() => (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("84725").then(n.bind(n, 462499));
+      } = await n.e("76396").then(n.bind(n, 462499));
       return n => {
         var i, s;
         return (0, r.jsx)(e, (i = function(e) {
@@ -85,9 +85,9 @@ let x = function(e) {
         }({}, n), s = s = {
           guildId: t,
           resourceChannel: l,
-          onSave: R,
+          onSave: Z,
           onDelete: () => (0, m.Hz)(l.channelId),
-          onIconUpload: Z
+          onIconUpload: R
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -99,7 +99,7 @@ let x = function(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }
-    }), [t, l, R, Z]);
+    }), [t, l, Z, R]);
   return null == y ? null : (0, r.jsxs)("div", {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {

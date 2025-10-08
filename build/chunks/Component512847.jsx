@@ -82,7 +82,7 @@ function Z() {
 }
 
 function w() {
-  return x([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.Z], () => {
+  return x([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.default], () => {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
       t = null == module ? true : module.type,
       n = null == module ? true : module.getGuildId(),
@@ -93,8 +93,8 @@ function w() {
       guildId: require,
       connected: Chunk647438 === Chunk981631.hes.RTC_CONNECTED,
       connectHasStarted: !Chunk951288 && Chunk647438 !== Chunk981631.hes.DISCONNECTED || Chunk647438 === Chunk981631.hes.RTC_CONNECTED,
-      awaitingRemote: null != Chunk258609.Z.getAwaitingRemoteSessionInfo(),
-      connectedRemote: null != Chunk258609.Z.getRemoteSessionId()
+      awaitingRemote: null != Chunk258609.default.getAwaitingRemoteSessionInfo(),
+      connectedRemote: null != Chunk258609.default.getRemoteSessionId()
     }
   }, (e, t) => {
     let {

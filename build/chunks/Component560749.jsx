@@ -27,15 +27,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk102172 = require("./102172.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk637824 = require("./637824.js"),
+  Chunk137349 = require("./137349.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603410 = require("./603410.js");
+  Chunk761268 = require("./761268.js");
 
 function P(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([S.ZP, C.default], () => S.ZP.getVoiceStatesForChannel(t.record).map(e => C.default.getUser(e.user.id)).filter(y.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, S.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(C.lm));
   return (0, r.jsxs)(a.P3F, {
     className: N.channelResult,
     onClick: () => n(t.record.id),
@@ -80,7 +80,7 @@ function T(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), C = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
+  }), S = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
     let e = [],
       t = b.Z.getGuildId();
     if (null == t) return e;
@@ -89,7 +89,7 @@ function T(e) {
       null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
     }
     return e
-  }), S = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
+  }), y = (0, o.Wu)([f.Z, x.Z, g.Z, v.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
@@ -99,10 +99,10 @@ function T(e) {
     for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
-    let e = new Set(S.map(e => e.id)),
-      t = new Set(C.map(e => e.id));
-    return [...C.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...S.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
-  }, [S, C]), R = "" !== u ? p : T;
+    let e = new Set(y.map(e => e.id)),
+      t = new Set(S.map(e => e.id));
+    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(C.lm)]
+  }, [y, S]), R = "" !== u ? p : T;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
     children: [(0, r.jsx)("div", {
@@ -146,20 +146,20 @@ function T(e) {
 
 function E() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk603410.emptyState,
+    className: Chunk761268.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060._Ve, {
-      className: Chunk603410.emptyIcon,
+      className: Chunk761268.emptyIcon,
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk603410.emptyHeader,
+      className: Chunk761268.emptyHeader,
       variant: "text-lg/medium",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk637824.default.sWGfr6)
+      children: Chunk388032.intl.string(Chunk137349.default.sWGfr6)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: Chunk388032.intl.string(Chunk637824.default.nBRtt7)
+      children: Chunk388032.intl.string(Chunk137349.default.nBRtt7)
     })]
   })
 }

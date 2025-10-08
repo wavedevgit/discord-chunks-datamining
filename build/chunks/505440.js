@@ -1,3 +1,0 @@
-/** Chunk was on 6027 **/
-/** chunk id: 505440, original params: c (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Настройки за редактиране","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["съобщение"],"other":["съобщения"]},0,"cardinal"]],"O+racX":"Няма известия.","5H2Jd3":"Показване на всички","Ko8NGh":"Показване на отметки","dcpdhI":"Избери съобщение, на което да отидеш.","VAK+h4":"Добре дошъл(ла) в Центъра за известия!"}')

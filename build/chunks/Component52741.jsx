@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk504865 = require("./504865.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560230 = require("./560230.js");
+  Chunk40747 = require("./40747.js");
 
 function O(e) {
   var t;
@@ -55,7 +55,7 @@ function v(e) {
     headerClassName: C,
     headingVariant: N = "heading-md/normal",
     headingColor: R
-  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), L = (0, _.lr)(), x = n === E.p9.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.p9.TIER_2 : null, j = (0, h.N)(), k = (0, p.Ng)(), U = null == j ? true : j.subscription_trial;
+  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), L = (0, _.lr)(), x = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.PremiumTypes.TIER_2 : null, j = (0, h.N)(), k = (0, p.Ng)(), U = null == j ? true : j.subscription_trial;
   if (!S && !t && null != M && n === M && null != P && null != P.planIdFromItems) {
     let e = null != P.trialEndsAt ? s()(null == P ? true : P.trialEndsAt).diff(s()(), "d") : 0,
       t = E.GP[P.planIdFromItems],
@@ -82,7 +82,7 @@ function v(e) {
     })
   }
   if (!S && !t && i) {
-    let e = f.ZP.formatPriceString(f.ZP.getDefaultPrice(n === E.p9.TIER_0 ? E.Xh.PREMIUM_MONTH_TIER_0 : E.Xh.PREMIUM_MONTH_TIER_2), E.rV.MONTH);
+    let e = f.ZP.formatPriceString(f.ZP.getDefaultPrice(n === E.PremiumTypes.TIER_0 ? E.Xh.PREMIUM_MONTH_TIER_0 : E.Xh.PREMIUM_MONTH_TIER_2), E.rV.MONTH);
     if (o === E.C.PREMIUM_TRIAL) {
       var G, B, Z, F;
       return (0, r.jsx)(c.X6q, {

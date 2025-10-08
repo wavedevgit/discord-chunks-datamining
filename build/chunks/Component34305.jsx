@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk499126 = require("./499126.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk167103 = require("./167103.js"),
+  Chunk10198 = require("./10198.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,30 +51,30 @@ class E extends Chunk647438.PureComponent {
     }) : null, t = null != Chunk325432.totalKB ? (0, Chunk424218.BU)(Chunk325432.totalKB, {
       useKibibytes: true
     }) : null), (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      className: Chunk499126.installationPath,
+      className: Chunk167103.installationPath,
       align: Chunk600164.Z.Align.CENTER,
       children: [this.renderDiskUsageCircle(), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk499126.__invalid_descriptionWrapper,
+        className: Chunk167103.__invalid_descriptionWrapper,
         children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
           children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-            className: Chunk499126.rowTitle,
+            className: Chunk167103.rowTitle,
             variant: "heading-md/semibold",
             children: null != Chunk647438 ? Chunk647438 : Chunk391690.Z.getLabelFromPath(require)
           }), Chunk755721 ? (0, Chunk951288.jsx)("span", {
-            className: Chunk499126.defaultIndicator,
+            className: Chunk167103.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
           }) : null]
         }), null != Chunk325432 && null != module && null != exports ? (0, Chunk951288.jsx)(Chunk570928.Z, {
-          className: Chunk499126.rowBody,
+          className: Chunk167103.rowBody,
           hoverText: Chunk388032.intl.formatToPlainString(Chunk388032.t.Fxo9e3, {
             available: module,
             total: exports
           }),
           children: require
         }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk499126.rowBody,
+          className: Chunk167103.rowBody,
           variant: "text-xs/normal",
           children: require
         })]
@@ -97,7 +97,7 @@ class E extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk481060.Zbd, {
       editable: true,
-      className: Chunk499126.installationPathEditing,
+      className: Chunk167103.installationPathEditing,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         children: [this.renderDiskUsageCircle(), (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
@@ -106,7 +106,7 @@ class E extends Chunk647438.PureComponent {
             placeholder: Chunk391690.Z.getLabelFromPath(module),
             onChange: this.handleLabelChange
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk197571.marginTop20,
+            className: Chunk10198.marginTop20,
             children: (0, Chunk951288.jsx)(Chunk481060.oil, {
               label: Chunk388032.intl.string(Chunk388032.t.lnUCwc),
               disabled: true,
@@ -115,11 +115,11 @@ class E extends Chunk647438.PureComponent {
           }), (0, Chunk951288.jsx)(Chunk755721.VL, {
             checked: null != Chunk647438 ? Chunk647438 : this.props.isDefault,
             disabled: this.props.isDefault,
-            className: Chunk499126.defaultLocationCheckbox,
+            className: Chunk167103.defaultLocationCheckbox,
             onChange: this.handleToggleDefault,
             label: Chunk388032.intl.string(Chunk388032.t.Z2MWuL)
           }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-            className: Chunk499126.separator
+            className: Chunk167103.separator
           }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
             children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "critical-secondary",
@@ -244,7 +244,7 @@ class y extends Chunk647438.PureComponent {
       editingPath: i
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      className: Chunk499126.wrapper,
+      className: Chunk167103.wrapper,
       title: Chunk388032.intl.string(Chunk388032.t.aLszkJ),
       children: [module.map(e => {
         let {
@@ -261,7 +261,7 @@ class y extends Chunk647438.PureComponent {
           onToggleEditing: this.handleToggleEditing
         }, l)
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk499126.buttonRowWrapper,
+        className: Chunk167103.buttonRowWrapper,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",

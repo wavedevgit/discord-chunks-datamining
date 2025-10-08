@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk635840 = require("./635840.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk304495 = require("./304495.js");
+  Chunk290362 = require("./290362.js");
 
 function O(t) {
   let {
@@ -29,10 +29,10 @@ function O(t) {
     guild: T,
     onClose: p
   } = t, h = (0, d.Dt)(), {
-    analyticsLocations: P
+    analyticsLocations: m
   } = (0, o.ZP)(c.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
-    cancelSubscription: g,
-    error: m,
+    cancelSubscription: P,
+    error: g,
     submitting: L
   } = (t => {
     let [i, e] = a.useState(false), [n, s] = a.useState(null);
@@ -49,14 +49,14 @@ function O(t) {
       error: n,
       submitting: i
     }
-  })(P), [j, f] = a.useState(0), R = async () => {
-    await g(x.id) && (C.ZP.disableApplicationSubscriptionCancellationSurvey ? p() : f(1))
+  })(m), [j, f] = a.useState(0), R = async () => {
+    await P(x.id) && (C.ZP.disableApplicationSubscriptionCancellationSurvey ? p() : f(1))
   };
   a.useEffect(() => {
     _.default.track(S.rMx.CANCELLATION_FLOW_STARTED, {
-      location_stack: P
+      location_stack: m
     })
-  }, [P]);
+  }, [m]);
   let v = (0, u.KW)(O.skuFlags);
   return (0, n.jsx)(s.IX, {
     onClose: p,
@@ -69,8 +69,8 @@ function O(t) {
         id: 0,
         children: (0, n.jsxs)("div", {
           className: E.slideContainer,
-          children: [null != m ? (0, n.jsx)(l.kzN, {
-            children: m.message
+          children: [null != g ? (0, n.jsx)(l.kzN, {
+            children: g.message
           }) : null, (0, n.jsxs)(s.fef, {
             children: [(0, n.jsx)(l.LZC, {
               size: 16

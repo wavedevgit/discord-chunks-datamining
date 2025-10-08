@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk131704 = require("./131704.js"),
   Chunk981631 = require("./981631.js");
 let a = "131";
-(0, Chunk131704.kt)({
+(0, Chunk131704.createChannelRecord)({
   id: a,
   type: Chunk981631.d4z.DM,
   name: "Placeholder Channel"

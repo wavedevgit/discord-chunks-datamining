@@ -19,7 +19,7 @@ let f = function() {
     n = (0, Chunk140465.t7)(),
     f = (0, Chunk775412._O)(),
     _ = (0, Chunk975298.Z)(),
-    p = (null == exports ? true : exports.verified) === true && (0, Chunk111361.M5)(exports, Chunk474936.p9.TIER_2) && _.fetched && _.fractionalState !== Chunk474936.a$.FP_ONLY && !require && !f;
+    p = (null == exports ? true : exports.verified) === true && (0, Chunk111361.M5)(exports, Chunk474936.PremiumTypes.TIER_2) && _.fetched && _.fractionalState !== Chunk474936.a$.FP_ONLY && !require && !f;
   Chunk647438.useEffect(() => {
     p && !module && Chunk276444.Z.checkAndFetchReferralsRemaining()
   }, [p, module])

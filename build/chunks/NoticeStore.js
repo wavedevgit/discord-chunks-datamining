@@ -474,7 +474,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eS.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eS.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, eO.M5)(n, eC.p9.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
+        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eS.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eS.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, eO.M5)(n, eC.PremiumTypes.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
         return !eX(eS.kVF.PREMIUM_UNCANCEL) && s
       },
       metadata: e => {

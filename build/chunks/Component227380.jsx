@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 227380, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk733895 = require("./733895.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk213798 = require("./213798.js");
+  Chunk81190 = require("./81190.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -142,8 +142,8 @@ let I = e => {
       className: C.__invalid_spinner
     })]
   });
-  let R = T ? v.t["WH+1Y2"] : v.t.a4MYDA,
-    Z = [{
+  let Z = T ? v.t["WH+1Y2"] : v.t.a4MYDA,
+    R = [{
       name: v.intl.string(v.t.yvk9p6),
       failingName: v.intl.string(v.t["IY/UT0"]),
       description: v.intl.string(v.t.hSLSMz),
@@ -160,7 +160,7 @@ let I = e => {
         minMembers: g.minimumGuildSize.toLocaleString()
       }),
       description: null,
-      failingDescription: v.intl.format(R, {
+      failingDescription: v.intl.format(Z, {
         minMembers: g.minimumGuildSize.toLocaleString()
       }),
       checked: null == g ? true : g.size
@@ -316,8 +316,8 @@ let I = e => {
           width: 40
         }), o]
       })
-    })(), Z.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(N, O({}, e)), t < Z.length - 1 ? (0, r.jsx)("hr", {
+    })(), R.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
+      children: [(0, r.jsx)(N, O({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
         className: C.separator
       }) : null]
     }, "".concat(e.name)))]

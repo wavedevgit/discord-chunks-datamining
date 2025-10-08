@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk927923 = require("./927923.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk5511 = require("./5511.js");
+  Chunk751394 = require("./751394.js");
 
 function h(e) {
   let {
@@ -47,14 +47,14 @@ function C(e) {
     channel: t,
     transitionState: r,
     onClose: C
-  } = e, _ = (0, a.e7)([u.Z], () => null != u.Z.getRemoteSessionId()), j = (0, f.Z)(t, {
+  } = e, _ = (0, i.e7)([u.default], () => null != u.default.getRemoteSessionId()), j = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
     _ && C()
   }, [_, C]), s.useEffect(() => {
     (0, m.Z)(t.id, p.YE.XBOX)
-  }, [t.id]), (0, n.jsx)(i.Modal, {
+  }, [t.id]), (0, n.jsx)(a.Modal, {
     title: b.intl.string(b.t["f+Aijo"]),
     subtitle: b.intl.string(b.t.mYFmDQ),
     actions: [],

@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
   Chunk761274 = require("./761274.js"),
-  Chunk637824 = require("./637824.js"),
+  Chunk137349 = require("./137349.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk602804 = require("./602804.js");
+  Chunk615770 = require("./615770.js");
 
 function I(e) {
   let {
@@ -105,18 +105,18 @@ function P(e) {
     selectedSource: O,
     discordSourceId: I,
     hasPermission: P
-  }] = (0, S.E_)(), {
+  }] = (0, y.E_)(), {
     smarterSourceOrdering: E
   } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), R = (0, d.e7)([m.ZP], () => m.ZP.getRunningGames()), k = (0, d.cj)([m.ZP], () => {
+  }), R = (0, d.e7)([m.ZP], () => m.ZP.getRunningGames()), A = (0, d.cj)([m.ZP], () => {
     let e = m.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), A = (0, d.e7)([x.Z], () => x.Z.quests), M = (0, C.jx)(A, R, n);
+  }), k = (0, d.e7)([x.Z], () => x.Z.quests), M = (0, S.jx)(k, R, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => E ? [...n].sort((e, t) => (0, C.ov)(t, null == M ? true : M.source.id, I, k) - (0, C.ov)(e, null == M ? true : M.source.id, I, k)) : n, [M, E, n, I, k]);
+  let D = i.useMemo(() => E ? [...n].sort((e, t) => (0, S.ov)(t, null == M ? true : M.source.id, I, A) - (0, S.ov)(e, null == M ? true : M.source.id, I, A)) : n, [M, E, n, I, A]);
   if (g) {
     if (!P) {
       let e = false;
@@ -135,7 +135,7 @@ function P(e) {
         }), e && (0, r.jsx)(u.zxk, {
           text: w.intl.string(w.t["XgZk+v"]),
           onClick: () => {
-            p.Z.openSettings(y.Eu.SCREEN_RECORDING)
+            p.Z.openSettings(C.Eu.SCREEN_RECORDING)
           }
         })]
       })
@@ -158,24 +158,24 @@ function P(e) {
 
 function T() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk602804.emptyState,
+    className: Chunk615770.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060.Odl, {
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED,
-      className: Chunk602804.emptyIcon
+      className: Chunk615770.emptyIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-lg/medium",
       color: "header-primary",
-      className: Chunk602804.emptyHeader,
-      children: Chunk388032.intl.string(Chunk637824.default["/z3YaW"])
+      className: Chunk615770.emptyHeader,
+      children: Chunk388032.intl.string(Chunk137349.default["/z3YaW"])
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: Chunk602804.emptyBody,
-      children: Chunk388032.intl.string(Chunk637824.default.agwSGB)
+      className: Chunk615770.emptyBody,
+      children: Chunk388032.intl.string(Chunk137349.default.agwSGB)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
-      children: Chunk388032.intl.format(Chunk637824.default.xpVzr6, {
+      children: Chunk388032.intl.format(Chunk137349.default.xpVzr6, {
         helpdeskURL: Chunk63063.Z.getArticleURL(0x53d41ade17)
       })
     })]

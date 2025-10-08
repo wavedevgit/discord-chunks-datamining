@@ -39,7 +39,7 @@ class _ extends Chunk147913.Z {
     }), f(this, "maybeFetchMostRecentSubscription", () => {
       var e;
       let t = o.default.getCurrentUser(),
-        n = (0, u.xI)(null != (e = null == t ? true : t.premiumType) ? e : null, d.p9.TIER_1),
+        n = (0, u.xI)(null != (e = null == t ? true : t.premiumType) ? e : null, d.PremiumTypes.TIER_1),
         i = l.Z.getIsFetchingMostRecentSubscription();
       null != t && n && t.hasHadPremium() && !i && (0, r.ou)()
     }), f(this, "maybeFetchCountryCode", async () => {

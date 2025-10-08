@@ -1,4 +1,4 @@
-/** Chunk was on 50118 **/
+/** Chunk was on 42300 **/
 /** chunk id: 793319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NZ: () => eE,
@@ -76,7 +76,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk32312 = require("./32312.js");
+  Chunk817675 = require("./817675.js");
 
 function ev() {
   return (ev = Object.assign || function(e) {
@@ -450,7 +450,7 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([ei.Z], () => ({
     canGoLive: (0, w.Z)(ei.Z)
-  })), k = (0, N.Z)(), D = (0, u.e7)([T.Z], () => null != T.Z.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([er.Z], () => {
+  })), k = (0, N.Z)(), D = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != k, H = (0, u.e7)([er.Z], () => {
     var e;
     return (null != (e = null == k ? true : k.channelId) ? e : er.Z.getVoiceChannelId()) === n.id
   }), F = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {

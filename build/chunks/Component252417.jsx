@@ -1,7 +1,7 @@
-/** Chunk was on 93338 **/
+/** Chunk was on 69310 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,38 +18,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk777267 = require("./777267.js");
-let v = Chunk481060.EFr.SIZE_40,
-  j = (0, Chunk481060.pxk)(v);
+  Chunk788485 = require("./788485.js");
+let y = Chunk481060.EFr.SIZE_40,
+  O = (0, Chunk481060.pxk)(y);
 
-function y(e) {
+function v(e) {
   let {
     user: t,
-    status: y,
-    guildId: x,
-    channelId: O,
-    onSelect: P
+    status: v,
+    guildId: j,
+    channelId: x,
+    onSelect: C
   } = e, {
-    theme: C,
-    themeType: w
-  } = (0, h.z)(), k = i.useMemo(() => t.isNonUserBot() || (0, b.W)(t, O), [t, O]), {
-    activities: Z,
-    isMobileOnline: S
-  } = (0, a.cj)([f.Z], () => ({
+    theme: E,
+    themeType: S
+  } = (0, g.z)(), I = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, x), [t, x]), {
+    activities: P,
+    isMobileOnline: N
+  } = (0, l.cj)([f.Z], () => ({
     activities: f.Z.getActivities(t.id),
     isMobileOnline: f.Z.isMobileOnline(t.id)
-  })), I = (0, p.Z)(t.id), {
-    voiceActivityStatusEnabled: N
+  })), Z = (0, h.Z)(t.id), {
+    voiceActivityStatusEnabled: w
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
     voiceChannel: T
   } = (0, u.Z)({
-    userId: N ? t.id : true,
-    guildId: x
+    userId: w ? t.id : true,
+    guildId: j
   });
   return (0, r.jsxs)(o.P3F, {
-    focusProps: w === g.l.MODAL_V2 ? {
+    focusProps: S === b.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -61,14 +61,14 @@ function y(e) {
       }
     },
     className: _.row,
-    onClick: P,
+    onClick: C,
     onContextMenu: e => {
-      (0, l.jW)(e, async () => {
+      (0, a.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
         return n => {
-          var i, a;
+          var i, l;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -86,28 +86,28 @@ function y(e) {
               })
             }
             return e
-          }({}, n), a = a = {
+          }({}, n), l = l = {
             user: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))
         }
       })
     },
     children: [(0, r.jsx)(o.qEK, {
-      src: t.getAvatarURL(x, j),
+      src: t.getAvatarURL(j, O),
       "aria-label": t.username,
-      size: v,
-      status: k ? m.Skl.UNKNOWN : y,
-      statusBackdropColor: k ? true : (0, o.QFD)(C),
-      isMobile: S,
+      size: y,
+      status: I ? m.Skl.UNKNOWN : v,
+      statusBackdropColor: I ? true : (0, o.QFD)(E),
+      isMobile: N,
       className: _.avatar
     }), (0, r.jsxs)("div", {
       className: _.details,
@@ -117,8 +117,8 @@ function y(e) {
         discriminatorClass: _.discriminator
       }), (0, r.jsx)(d.Z, {
         user: t,
-        activities: Z,
-        applicationStream: I,
+        activities: P,
+        applicationStream: Z,
         voiceChannel: T
       })]
     })]

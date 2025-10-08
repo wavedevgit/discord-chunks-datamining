@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 495892, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk295708 = require("./295708.jsx"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk260107 = require("./260107.js");
+  Chunk365722 = require("./365722.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -189,7 +189,7 @@ function I(e) {
     headerSubtext: T,
     descriptionText: P,
     icon: w
-  } = o, R = !(0, d.Vb)(t);
+  } = o, Z = !(0, d.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: j.ruleIconContainer,
@@ -212,7 +212,7 @@ function I(e) {
           variant: "text-sm/normal",
           children: T
         })]
-      }), R && (0, r.jsx)(s.Text, {
+      }), Z && (0, r.jsx)(s.Text, {
         className: j.ruleTextDescription,
         variant: "text-sm/normal",
         children: P

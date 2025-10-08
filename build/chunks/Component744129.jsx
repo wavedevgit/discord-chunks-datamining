@@ -35,7 +35,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk52741 = require("./52741.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk1721 = require("./1721.js"),
+  Chunk518520 = require("./518520.js"),
   Chunk895601 = require("./895601.js"),
   Chunk381126 = require("./381126.js"),
   Chunk234286 = require("./234286.js");
@@ -101,7 +101,7 @@ function G(e) {
       color: T ? "black" : "white"
     }), (0, r.jsx)(N.Z, {
       isGift: l,
-      premiumTier: R.p9.TIER_0,
+      premiumTier: R.PremiumTypes.TIER_0,
       offerType: R.C.PREMIUM_TRIAL,
       offerTierMatchesCard: b === R.Si.TIER_0,
       showYearlyPrice: i,
@@ -160,7 +160,7 @@ function B(e) {
       color: V ? "black" : "white"
     }), (0, r.jsx)(N.Z, {
       isGift: f,
-      premiumTier: R.p9.TIER_2,
+      premiumTier: R.PremiumTypes.TIER_2,
       offerType: F,
       offerTierMatchesCard: U === R.Si.TIER_2 || (0, O.Wp)(B, R.Si.TIER_2),
       showYearlyPrice: i,

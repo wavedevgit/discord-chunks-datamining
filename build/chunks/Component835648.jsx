@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk422840 = require("./422840.js");
+  Chunk875825 = require("./875825.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -206,7 +206,7 @@ function k(e) {
     listPadding: o = P,
     guildId: s,
     inExpressionPicker: c
-  } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), g = (0, m.I5)(_, O.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
+  } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), g = (0, m.I5)(_, O.PremiumTypes.TIER_2), v = i.useCallback((e, t, n, i) => {
     let o = a && (0, E.O)(e.categoryInfo, g, s),
       l = () => {
         h.default.track(b.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {

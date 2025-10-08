@@ -206,22 +206,22 @@ function z(e, t, n) {
 function q(e) {
   return (0, r.EQ)(e).with({
     interval: m.rV.MONTH,
-    premiumSubscriptionType: m.p9.TIER_2
+    premiumSubscriptionType: m.PremiumTypes.TIER_2
   }, () => g.intl.formatToPlainString(g.t["vFfV+P"], {
     timeInterval: g.intl.string(g.t.FPybU1)
   })).with({
     interval: m.rV.YEAR,
-    premiumSubscriptionType: m.p9.TIER_2
+    premiumSubscriptionType: m.PremiumTypes.TIER_2
   }, () => g.intl.formatToPlainString(g.t["vFfV+P"], {
     timeInterval: g.intl.string(g.t.tfqrho)
   })).with({
     interval: m.rV.MONTH,
-    premiumSubscriptionType: m.p9.TIER_1
+    premiumSubscriptionType: m.PremiumTypes.TIER_1
   }, () => g.intl.formatToPlainString(g.t.gjKbFx, {
     intervalCount: e.intervalCount
   })).with({
     interval: m.rV.YEAR,
-    premiumSubscriptionType: m.p9.TIER_1
+    premiumSubscriptionType: m.PremiumTypes.TIER_1
   }, () => g.intl.formatToPlainString(g.t.GIe7Bw, {
     intervalCount: e.intervalCount
   })).otherwise(() => g.intl.string(g.t["5ayf7+"]))
@@ -300,7 +300,7 @@ function et(e, t) {
       return g.intl.string(g.t.roztIi);
     case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
       return g.intl.formatToPlainString(g.t["4YTHKy"], {
-        planName: (0, f.M5)(t, m.p9.TIER_2) ? g.intl.string(g.t["lG6a5+"]) : g.intl.string(g.t["FSOz7+"])
+        planName: (0, f.M5)(t, m.PremiumTypes.TIER_2) ? g.intl.string(g.t["lG6a5+"]) : g.intl.string(g.t["FSOz7+"])
       });
     case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
       return g.intl.string(g.t["9i1J39"]);

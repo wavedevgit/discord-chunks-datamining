@@ -1,7 +1,7 @@
 /** Chunk was on 24920 **/
 /** chunk id: 333451, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk22706 = require("./22706.js");
+  Chunk697485 = require("./697485.js");
 
 function M(e) {
   let {
@@ -64,7 +64,7 @@ function M(e) {
   })
 }
 
-function L(e) {
+function T(e) {
   var n;
   let {
     premiumSubscriptionPlan: t,
@@ -73,14 +73,14 @@ function L(e) {
     onSkip: h,
     onSubscriptionConfirmation: S,
     analyticsLocation: y,
-    analyticsSourceLocation: L,
-    priceOptions: T
+    analyticsSourceLocation: T,
+    priceOptions: L
   } = e, {
     analyticsLocations: j,
     sourceAnalyticsLocations: C
   } = (0, p.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), k = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == t || null == t.premiumSubscriptionType, v = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, T), D = (0, I.T4)(v.amount, v.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
+  } = (0, u.TCT)(), k = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == t || null == t.premiumSubscriptionType, v = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, L), D = (0, I.T4)(v.amount, v.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
   return l.useEffect(() => {
     g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -159,7 +159,7 @@ function L(e) {
               })(Object(n)).forEach(function(t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               }), e),
-              analyticsSourceLocation: L,
+              analyticsSourceLocation: T,
               onSubscriptionConfirmation: S,
               trialId: w
             })

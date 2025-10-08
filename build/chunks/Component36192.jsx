@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk844642 = require("./844642.js");
+  Chunk792058 = require("./792058.js");
 
 function N() {
   let e, {
@@ -55,22 +55,22 @@ function N() {
     },
     [O, I] = Chunk647438.useState(new Set);
   return Chunk120356 ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk100527 ? (0, Chunk951288.jsx)("div", {
-    className: Chunk844642.loading,
+    className: Chunk792058.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }) : null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk844642.sessions,
+      className: Chunk792058.sessions,
       children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t.LLS19v),
-        titleClassName: Chunk844642.groupTitle,
+        titleClassName: Chunk792058.groupTitle,
         children: null != exports ? (0, Chunk951288.jsx)(R, {
           session: exports,
           current: true
         }) : null
       }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
-        titleClassName: Chunk844642.groupTitle,
-        className: Chunk844642.otherSessions,
+        titleClassName: Chunk792058.groupTitle,
+        className: Chunk792058.otherSessions,
         children: [require.map(e => (0, r.jsx)(R, {
           session: e,
           useChecks: O.size > 0,
@@ -86,7 +86,7 @@ function N() {
       description: Chunk388032.intl.string(Chunk388032.t.OTXyaW),
       children: (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk844642.logOutAllButton,
+        className: Chunk792058.logOutAllButton,
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "critical-secondary",
           size: "sm",
@@ -103,16 +103,16 @@ function N() {
     header: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      className: Chunk844642.description,
+      className: Chunk792058.description,
       children: Chunk388032.intl.string(Chunk388032.t.zZp619)
     }), (null == o ? true : o.isStaff()) ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk844642.tools,
+      className: Chunk792058.tools,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk844642.toolsTitle,
+        className: Chunk792058.toolsTitle,
         variant: "text-md/bold",
         children: "DEV TOOLS"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk844642.toolsTitle,
+        className: Chunk792058.toolsTitle,
         variant: "text-sm/normal",
         color: "text-danger",
         children: "These tools are only shown to staff users."
@@ -201,25 +201,25 @@ function R(e) {
 function P() {
   let e = (0, Chunk947889.Z)();
   return (0, Chunk951288.jsxs)("div", {
-    className: o()(Chunk844642.session, Chunk844642.legacySession),
+    className: o()(Chunk792058.session, Chunk792058.legacySession),
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk844642.sessionIcon,
+      className: Chunk792058.sessionIcon,
       children: (0, Chunk951288.jsx)(Chunk460562.Z, {
         width: "32",
         height: "32"
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk844642.sessionInfo,
+      className: Chunk792058.sessionInfo,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk844642.sessionInfoRow,
+        className: Chunk792058.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
           children: Chunk388032.intl.string(Chunk388032.t.iUa0sr)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        className: Chunk844642.sessionInfoRow,
+        className: Chunk792058.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
           children: Chunk388032.intl.format(Chunk388032.t["044+8v"], {

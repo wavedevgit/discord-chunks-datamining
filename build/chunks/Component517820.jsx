@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk682392 = require("./682392.js");
+  Chunk78642 = require("./78642.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,7 +79,7 @@ function G(e, t) {
 
 function B() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk682392.dot
+    className: Chunk78642.dot
   })
 }
 

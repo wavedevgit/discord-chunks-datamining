@@ -1,8 +1,8 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 976288, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  d: () => Z
+  d: () => R
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,14 +26,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk203377 = require("./203377.js"),
   Chunk929834 = require("./929834.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk912440 = require("./912440.js");
+  Chunk377139 = require("./377139.js");
 
 function E() {
   return (0, Chunk951288.jsx)(Chunk481060.Text, {
     tag: "span",
     variant: "text-xs/bold",
     color: "text-danger",
-    className: Chunk912440.required,
+    className: Chunk377139.required,
     children: "*"
   })
 }
@@ -335,13 +335,13 @@ function w(e) {
   })
 }
 
-function R() {
+function Z() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk912440.divider
+    className: Chunk377139.divider
   })
 }
 
-function Z(e) {
+function R(e) {
   let {
     requireTerms: t,
     rules: n,
@@ -369,22 +369,22 @@ function Z(e) {
     children: [(0, r.jsx)(I, {
       guild: o,
       requireDescription: c
-    }), (0, r.jsx)(R, {}), (0, r.jsx)(S, {
+    }), (0, r.jsx)(Z, {}), (0, r.jsx)(S, {
       guild: o,
       guildMetadata: a,
       requirePrimaryCategory: c,
       error: l.discovery_splash
-    }), (0, r.jsx)(R, {}), (0, r.jsx)(T, {
+    }), (0, r.jsx)(Z, {}), (0, r.jsx)(T, {
       guildId: o.id,
       guildMetadata: a,
       requireTag: c,
       error: l.keywords
-    }), (0, r.jsx)(R, {}), (0, r.jsx)(P, {
+    }), (0, r.jsx)(Z, {}), (0, r.jsx)(P, {
       guild: o,
       guildMetadata: a
-    }), (0, r.jsx)(R, {}), (0, r.jsx)(w, {
+    }), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {
       preferredLocale: o.preferredLocale
-    }), (0, r.jsx)(R, {}), (0, r.jsx)("div", {
+    }), (0, r.jsx)(Z, {}), (0, r.jsx)("div", {
       children: (0, r.jsx)(_.A, {
         requireTerms: t,
         rules: n

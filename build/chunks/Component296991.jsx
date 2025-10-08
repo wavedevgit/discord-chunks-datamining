@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 296991, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk592286 = require("./592286.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk94228 = require("./94228.js");
+  Chunk761560 = require("./761560.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function I(e) {
   } = e, I = i.useRef(null), S = i.useRef(null), [{
     textValue: T,
     richValue: P
-  }, w] = i.useState((0, p.eK)(t.value)), [, R, Z] = (0, c.c)({
+  }, w] = i.useState((0, p.eK)(t.value)), [, Z, R] = (0, c.c)({
     type: E,
     item: {
       rule: t,
@@ -102,9 +102,9 @@ function I(e) {
       h(e.rule, l, true)
     }
   });
-  if (i.useLayoutEffect(() => (R(S), Z(D(I)), () => {
-      R(null), D(null)
-    }), [R, D, Z]), i.useEffect(() => {
+  if (i.useLayoutEffect(() => (Z(S), R(D(I)), () => {
+      Z(null), D(null)
+    }), [Z, D, R]), i.useEffect(() => {
       "" !== t.value && "" === T && w((0, p.eK)(t.value))
     }, [t.value, T]), null == n) return null;
   let A = "" !== t.value ? t.value : t.id;
@@ -190,7 +190,7 @@ function S(e) {
     i[r] = N(y({}, i[r]), {
       value: e
     }), n(i)
-  }, [s, t, n]), R = i.useCallback((e, r, i) => {
+  }, [s, t, n]), Z = i.useCallback((e, r, i) => {
     if (s || null == t) return;
     let l = t.indexOf(e);
     if (null != r && r !== l) {
@@ -198,32 +198,32 @@ function S(e) {
       i.splice(l, 1), i.splice(r, 0, e), n(i)
     }
     i ? null !== p && f(null) : r !== p && f(r)
-  }, [s, p, t, n]), Z = t.length === _.X2, D = i.useMemo(() => {
-    let e = Z ? C.intl.formatToPlainString(C.t.tU718P, {
+  }, [s, p, t, n]), R = t.length === _.X2, D = i.useMemo(() => {
+    let e = R ? C.intl.formatToPlainString(C.t.tU718P, {
       number: _.X2
     }) : true;
     return [{
       text: C.intl.string(C.t.DXq2oa),
       onClick: () => T(C.intl.string(C.t.XudkSk)),
-      disabled: Z || s,
+      disabled: R || s,
       tooltipText: e
     }, {
       text: C.intl.string(C.t.nSqTjI),
       onClick: () => T(C.intl.string(C.t.np91jI)),
-      disabled: Z || s,
+      disabled: R || s,
       tooltipText: e
     }, {
       text: C.intl.string(C.t.AtRxsL),
       onClick: () => T(C.intl.string(C.t.PNIDDA)),
-      disabled: Z || s,
+      disabled: R || s,
       tooltipText: e
     }, {
       text: C.intl.string(C.t["0K5NJi"]),
       onClick: () => T(C.intl.string(C.t.HolIDw)),
-      disabled: Z || s,
+      disabled: R || s,
       tooltipText: e
     }]
-  }, [T, s, Z]);
+  }, [T, s, R]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: O.rulesContainer,
@@ -240,7 +240,7 @@ function S(e) {
             value: ""
           }] : r)
         })(i),
-        onRuleReorder: R,
+        onRuleReorder: Z,
         isDropHovered: i === p,
         focused: i === E,
         onFocus: S,
@@ -248,7 +248,7 @@ function S(e) {
         isDragEnabled: !s && t.length > 1,
         disabled: s
       }, e.id))
-    }), !Z && (0, r.jsx)(b.A, {
+    }), !R && (0, r.jsx)(b.A, {
       text: C.intl.string(C.t.Cq5Jub),
       onClick: P,
       disabled: s

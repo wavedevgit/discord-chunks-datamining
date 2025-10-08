@@ -172,7 +172,7 @@ function D(e) {
   return t.reduce((e, t) => {
     var n, a, o;
     if (null == O || O.updateVoiceStates(t.userId, t.channelId), I = I || (null != (n = null == O ? true : O.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), A = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, y = null, r = N(t.guildId, t.channelId), I = (null != (a = null == O ? true : O.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.Z.getAwaitingRemoteSessionInfo() || null == u.Z.getRemoteSessionId()) && (b = r.channelId), R());
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), A = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, y = null, r = N(t.guildId, t.channelId), I = (null != (a = null == O ? true : O.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), R());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
       b = null, y = null, r = N(t.guildId, t.channelId), I = (null != (o = null == O ? true : O.getStats().max_voice_state_count) ? o : 0) > 1

@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 959508, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk976983 = require("./976983.jsx"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk814939 = require("./814939.js");
+  Chunk457663 = require("./457663.js");
 let C = {
   optionErrors: []
 };
@@ -41,8 +41,8 @@ function O(e) {
     onPromptDragStart: T,
     onPromptDragReset: P
   } = e, w = (0, a.e7)([f.Z], () => f.Z.editedDefaultChannelIds), {
-    drag: R,
-    dragSourcePosition: Z,
+    drag: Z,
+    dragSourcePosition: R,
     drop: D,
     setIsDraggable: A
   } = (0, d.Z)({
@@ -72,12 +72,12 @@ function O(e) {
       onBlur: () => U(false),
       onMouseLeave: () => U(false),
       className: s()(v.container, {
-        [v.dropIndicatorBefore]: null != Z && b < Z,
-        [v.dropIndicatorAfter]: null != Z && b > Z,
+        [v.dropIndicatorBefore]: null != R && b < R,
+        [v.dropIndicatorAfter]: null != R && b > R,
         [v.containerFocused]: M
       }),
       ref: e => {
-        R(D(e))
+        Z(D(e))
       },
       children: [(0, r.jsx)("div", {
         className: v.dragContainer,
@@ -127,12 +127,12 @@ function O(e) {
       onFocus: () => U(true),
       onBlur: () => U(false),
       className: s()(v.container, {
-        [v.dropIndicatorBefore]: null != Z && b < Z,
-        [v.dropIndicatorAfter]: null != Z && b > Z,
+        [v.dropIndicatorBefore]: null != R && b < R,
+        [v.dropIndicatorAfter]: null != R && b > R,
         [v.containerFocused]: M
       }),
       ref: e => {
-        R(D(e))
+        Z(D(e))
       },
       children: [(0, r.jsx)("div", {
         className: v.dragContainer,

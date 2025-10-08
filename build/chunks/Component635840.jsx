@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk167739 = require("./167739.js");
+  Chunk166555 = require("./166555.js");
 let u = [{
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t["+RZgNT"])
@@ -54,7 +54,7 @@ function N(t) {
     }), (0, n.jsxs)(s.fef, {
       children: [(0, n.jsx)("div", {
         className: _.answerChoicesContainer,
-        children: (0, n.jsx)(l.Gu, {
+        children: (0, n.jsx)(r.FXm, {
           value: A,
           options: u.map(t => {
             let {
@@ -66,8 +66,7 @@ function N(t) {
               value: e
             }
           }),
-          onChange: t => E(t.value),
-          withTransparentBackground: true
+          onChange: t => E(t)
         })
       }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === A && (0, n.jsx)("div", {
         className: _.otherField,

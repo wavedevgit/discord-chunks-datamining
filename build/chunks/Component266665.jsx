@@ -1,8 +1,8 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 266665, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk612894 = require("./612894.js");
+  Chunk671806 = require("./671806.js");
 let P = "DRAGGABLE_ROLE";
 
 function w(e) {
@@ -51,8 +51,8 @@ function w(e) {
     E = (0, j.fI)(d),
     S = null == N && !E,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
-    R = (0, b._f)(c.id, d, d.colorStrings),
-    [, Z] = (0, a.c)({
+    Z = (0, b._f)(c.id, d, d.colorStrings),
+    [, R] = (0, a.c)({
       type: P,
       item: () => (_(d.id), {
         id: d.id,
@@ -89,12 +89,12 @@ function w(e) {
     className: T.verifiedRoleIcon
   }) : "dot" === y ? (0, r.jsx)(u.FhE, {
     color: L,
-    colors: R,
+    colors: Z,
     background: false,
     tooltip: false
   }) : (0, r.jsx)(u.xko, {
     color: L,
-    colors: R
+    colors: Z
   }), (0, r.jsxs)(u.njP.Item, {
     className: s()(T.row, {
       [T.dragBefore]: null !== D && x < D,
@@ -147,7 +147,7 @@ function w(e) {
     "aria-label": d.name,
     clickableRef: e => {
       var t;
-      Z(A(null != (t = null == e ? true : e.ref) ? t : null))
+      R(A(null != (t = null == e ? true : e.ref) ? t : null))
     },
     children: [l, null != N ? (0, r.jsx)(O.Z, {
       className: T.lock,
@@ -161,7 +161,7 @@ function w(e) {
   })
 }
 
-function R(e) {
+function Z(e) {
   let {
     guild: t,
     currentRoleId: n,
@@ -172,8 +172,8 @@ function R(e) {
     handleScroll: I
   } = (0, N.V)(), {
     handleDragStart: P,
-    handleDragReset: R,
-    handleDragComplete: Z
+    handleDragReset: Z,
+    handleDragComplete: R
   } = (0, y.Z)(o), D = i.useRef(null), A = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
@@ -241,8 +241,8 @@ function R(e) {
             onClick: () => l(e.id),
             currentPosition: i,
             onDragStart: P,
-            onDragReset: R,
-            onDragComplete: Z,
+            onDragReset: Z,
+            onDragComplete: R,
             roleStyle: h
           }, e.id))
         })

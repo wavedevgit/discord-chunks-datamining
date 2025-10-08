@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk42818 = require("./42818.jsx"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704442 = require("./704442.js");
+  Chunk181459 = require("./181459.js");
 let h = () => {
   let {
     transitionState: t,
@@ -24,18 +24,18 @@ let h = () => {
     onClose: a,
     handleCancellation: h,
     renewalInvoiceDetails: x,
-    fullPrice: C,
-    premiumSubscription: P
-  } = (0, Chunk594135.a)(), [v, y] = Chunk647438.useState(false), [E, S] = Chunk647438.useState(false);
+    fullPrice: P,
+    premiumSubscription: C
+  } = (0, Chunk594135.a)(), [v, y] = Chunk647438.useState(false), [T, E] = Chunk647438.useState(false);
   if (null == require) return null;
-  let _ = async () => {
-    y(true), S(false);
+  let S = async () => {
+    y(true), E(false);
     try {
       await h(), Chunk120356()
     } catch (t) {
-      S(true), y(false)
+      E(true), y(false)
     }
-  }, N = [{
+  }, _ = [{
     text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
     onClick: () => Chunk120356(),
     variant: "secondary"
@@ -43,16 +43,16 @@ let h = () => {
     text: "".concat(Chunk388032.intl.format(Chunk388032.t.yxFzdH, {
       planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(exports))
     })),
-    onClick: _,
+    onClick: S,
     disabled: v,
     variant: "critical-primary",
     loading: v
   }];
   if (null == x) return null;
   let {
-    intervalType: j,
-    intervalCount: D
-  } = x, T = (0, Chunk937615.og)("".concat(C), j, D);
+    intervalType: N,
+    intervalCount: j
+  } = x, D = (0, Chunk937615.og)("".concat(P), N, j);
   return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
     size: "md",
     transitionState: module,
@@ -61,16 +61,16 @@ let h = () => {
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBw, {
       renewalDate: require.subscriptionPeriodStart,
-      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), j, D)
+      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), N, j)
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tj4"], {
       renewalDate: require.subscriptionPeriodStart
     }),
-    actions: N,
+    actions: _,
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,
       className: l()({
-        [Chunk704442.hasError]: E
+        [Chunk181459.hasError]: T
       }),
       children: [(0, Chunk951288.jsx)(Chunk811334.Z9, {
         children: Chunk388032.intl.string(Chunk388032.t.iqhIp6)
@@ -78,14 +78,14 @@ let h = () => {
         label: Chunk388032.intl.formatToPlainString(Chunk388032.t.r3jVZm, {
           planName: Chunk74538.ZP.getDisplayName("".concat(exports))
         }),
-        value: "".concat(T),
-        className: Chunk704442.canceled
+        value: "".concat(D),
+        className: Chunk181459.canceled
       }), (0, Chunk951288.jsx)(Chunk811334.UN, {}), (0, Chunk951288.jsx)(Chunk42818.nd, {
-        premiumSubscription: P,
+        premiumSubscription: C,
         renewalInvoice: require,
         isUpdate: true
       })]
-    }), E ? (0, Chunk951288.jsx)(Chunk434333.k, {
+    }), T ? (0, Chunk951288.jsx)(Chunk434333.k, {
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
     }) : null]
   })

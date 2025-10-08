@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk780985 = require("./780985.js"),
   Chunk631885 = require("./631885.js"),
   Chunk292352 = require("./292352.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk271650 = require("./271650.js");
+  Chunk671683 = require("./671683.js");
 let y = e => {
     let {
       title: t,
@@ -64,14 +64,14 @@ let y = e => {
         gap: 4,
         children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
+          children: Chunk388032.intl.string(Chunk412297.default.ahKIJC)
         }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-tertiary",
-          children: Chunk388032.intl.string(Chunk345909.default.X9rW0t)
+          children: Chunk388032.intl.string(Chunk412297.default.X9rW0t)
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-        text: Chunk388032.intl.formatToPlainString(Chunk345909.default.ggcjPT, {
+        text: Chunk388032.intl.formatToPlainString(Chunk412297.default.ggcjPT, {
           count: module.length
         }),
         onClick: exports,
@@ -98,18 +98,18 @@ let y = e => {
         gap: 4,
         children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk345909.default.ahKIJC)
+          children: Chunk388032.intl.string(Chunk412297.default.ahKIJC)
         }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-tertiary",
-          children: Chunk388032.intl.string(Chunk345909.default.Sv236e)
+          children: Chunk388032.intl.string(Chunk412297.default.Sv236e)
         })]
       }), (0, Chunk951288.jsx)(y, {
         title: Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
         onButtonPress: () => Chunk481060(Chunk292352.dG.CONTENT_AND_SOCIAL)
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
-        className: Chunk271650.divider
+        className: Chunk671683.divider
       }), (0, Chunk951288.jsx)(y, {
         title: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
@@ -121,7 +121,7 @@ let y = e => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.ZM)();
     return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk951288.jsx)("div", {
-      className: Chunk271650.container,
+      className: Chunk671683.container,
       children: module ? (0, Chunk951288.jsx)(O, {}) : (0, Chunk951288.jsx)(v, {})
     }) : null
   }

@@ -43,11 +43,11 @@ function p(e) {
     channelContext: f,
     customGiftMessage: p,
     giftInfo: h
-  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.p9.TIER_0);
+  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("92446"), n.e("21432")]).then(n.bind(n, 409858));
+    } = await Promise.all([n.e("92446"), n.e("5645")]).then(n.bind(n, 409858));
     return n => {
       var i, a;
       return (0, r.jsx)(e, _({
@@ -64,7 +64,7 @@ function p(e) {
   }, {
     onCloseCallback: () => {
       var e;
-      m && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      m && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

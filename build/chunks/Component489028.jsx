@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 489028, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk674563 = require("./674563.js"),
   Chunk829857 = require("./829857.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk489838 = require("./489838.js");
+  Chunk402158 = require("./402158.js");
 
 function T(e) {
   let {
@@ -102,7 +102,7 @@ let w = e => {
   }), N = i.useMemo(() => _.filter(e => {
     var t;
     return e.payout_account_status !== E.C.BLOCKED && (0, m.Z)(null != (t = null == n ? true : n.id) ? t : y.lds, e)
-  }), [_, n]), w = N.length > 0, R = i.useCallback(async () => {
+  }), [_, n]), w = N.length > 0, Z = i.useCallback(async () => {
     b.default.track(y.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
       has_eligible_team: w,
@@ -111,10 +111,10 @@ let w = e => {
     });
     let e = await (0, u.$)(y.E07.DEVELOPER_PORTAL_TEAMS);
     (0, o.Z)(e)
-  }, [t, s, d, w]), Z = i.useCallback(e => s ? (0, r.jsx)(g.Z, {
-    onClick: R,
+  }, [t, s, d, w]), R = i.useCallback(e => s ? (0, r.jsx)(g.Z, {
+    onClick: Z,
     children: e
-  }) : e, [R, s]);
+  }) : e, [Z, s]);
   return v ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [!s && (0, r.jsx)(C.Z, {
       className: S.nonOwnerNotice,
@@ -127,14 +127,14 @@ let w = e => {
         className: S.description,
         disabled: !s,
         children: I.intl.format(I.t["5mfqpa"], {
-          onCreateTeamHook: Z
+          onCreateTeamHook: R
         })
       }), w ? (0, r.jsx)(P, {
         guild: t,
         eligibleTeams: N,
         isGuildOwner: s
       }) : (0, r.jsx)(T, {
-        onCreateTeamClick: R,
+        onCreateTeamClick: Z,
         isGuildOwner: s
       })]
     }), (0, r.jsx)(a.hjN, {

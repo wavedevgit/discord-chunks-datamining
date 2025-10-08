@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk853276 = require("./853276.jsx"),
   Chunk596390 = require("./596390.js"),
   Chunk870472 = require("./870472.js"),
-  Chunk961010 = require("./961010.js");
+  Chunk373820 = require("./373820.js");
 
 function p(e) {
   let {
@@ -95,22 +95,22 @@ function h(e) {
     mainContainerRef: j
   }), {
     state: {
-      value: R,
-      tags: Z,
+      value: Z,
+      tags: R,
       selections: D,
       isSelecting: A
     }
-  } = v, L = (0, o.Z)(Z), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = v, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
     G(false), P(), null == (e = b.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
   i.useEffect(() => {
-    L !== Z && l(Z)
-  }, [l, L, Z]), i.useEffect(() => {
-    k || c(R)
-  }, [c, R, k]);
+    L !== R && l(R)
+  }, [l, L, R]), i.useEffect(() => {
+    k || c(Z)
+  }, [c, Z, k]);
   let U = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       e && M(), G(false)
@@ -118,7 +118,7 @@ function h(e) {
     B = i.useCallback(e => t => {
       if (t) {
         var n;
-        let t = D.includes(Z[e]);
+        let t = D.includes(R[e]);
         null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
           null == (e = b.current) || e.blur(), setTimeout(() => {
@@ -127,7 +127,7 @@ function h(e) {
           }, 16)
         }))
       } else T(e, true), G(true)
-    }, [S, T, D, Z]);
+    }, [S, T, D, R]);
   return (0, r.jsxs)("div", {
     className: s()(m.mainContainer, h),
     ref: j,
@@ -136,7 +136,7 @@ function h(e) {
     children: [(0, r.jsxs)(f, {
       ref: _,
       onClick: M,
-      children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
+      children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: I(t),
         onBlur: U,
@@ -145,7 +145,7 @@ function h(e) {
         isSelected: D.includes(e),
         isSelecting: A,
         error: u[e],
-        forceShowErrorTooltip: !k && t === Z.length - 1
+        forceShowErrorTooltip: !k && t === R.length - 1
       }, t)), (0, r.jsx)("input", {
         className: s()(m.mainTextInput, {
           [m.isEditingOtherNodes]: k
@@ -155,14 +155,14 @@ function h(e) {
         onKeyDownCapture: y,
         onPaste: C,
         onBlur: w,
-        placeholder: 0 === Z.length ? p : true,
-        value: R
+        placeholder: 0 === R.length ? p : true,
+        value: Z
       })]
     }), null != x && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: m.maxTags,
-      children: [null != (t = null == Z ? true : Z.length) ? t : 0, "/", x]
+      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", x]
     })]
   })
 }

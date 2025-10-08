@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk981631 = require("./981631.js"),
   Chunk308569 = require("./308569.js"),
-  Chunk780187 = require("./780187.js"),
+  Chunk810512 = require("./810512.js"),
   Chunk800010 = require("./800010.js"),
   Chunk75277 = require("./75277.js");
 
@@ -29,10 +29,10 @@ function g(e) {
   let {
     transitionState: S,
     onClose: v
-  } = e, O = (0, i.e7)([c.default], () => c.default.getCurrentUser()), I = s.useRef(null != (t = null == O ? true : O.verified) && t);
+  } = e, O = (0, i.e7)([c.default], () => c.default.getCurrentUser()), M = s.useRef(null != (t = null == O ? true : O.verified) && t);
   s.useEffect(() => (d.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED), () => (0, o.Zy)()), []);
-  let M = null == O ? true : O.verified,
-    T = M ? p.Ax.CONFIRM_START : p.Ax.EMAIL_AND_PASSWORD,
+  let I = null == O ? true : O.verified,
+    T = I ? p.Ax.CONFIRM_START : p.Ax.EMAIL_AND_PASSWORD,
     [b, y] = s.useState(T),
     [R, k] = s.useState(null),
     [w, L] = s.useState(null),
@@ -124,7 +124,7 @@ function g(e) {
           }
           return e
         }({}, q), g = g = {
-          email_verified: I.current
+          email_verified: M.current
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -138,7 +138,7 @@ function g(e) {
         children: (0, a.jsx)(E.Z, {
           emailToken: w,
           isSlideReady: R === p.Ax.EMAIL_AND_PASSWORD,
-          onBack: M ? () => y(null != P && A.Mr.has(P) ? p.Ax.CHANGE_EMAIL_WARNING : p.Ax.CHANGE_EMAIL_REASONS) : null,
+          onBack: I ? () => y(null != P && A.Mr.has(P) ? p.Ax.CHANGE_EMAIL_WARNING : p.Ax.CHANGE_EMAIL_REASONS) : null,
           onNext: e => {
             d.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, {
               change_email_reason_enum: P,

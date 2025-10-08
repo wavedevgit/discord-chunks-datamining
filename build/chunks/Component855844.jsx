@@ -27,7 +27,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk345655 = require("./345655.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk895634 = require("./895634.js");
+  Chunk371882 = require("./371882.js");
 
 function E(e) {
   let {
@@ -35,8 +35,8 @@ function E(e) {
     onInteraction: n,
     onSelect: E,
     onClose: I,
-    maybeRenderPTTCheckbox: S = false,
-    renderDeafenCheckbox: T = false,
+    maybeRenderPTTCheckbox: T = false,
+    renderDeafenCheckbox: S = false,
     renderInputProfiles: N = false,
     renderOutputDevices: D = false,
     renderOutputVolume: Z = false,
@@ -56,12 +56,12 @@ function E(e) {
   });
   let F = (0, h.Z)(t),
     L = (0, m.M)({
-      deviceType: P.h7.AUDIO_INPUT,
+      deviceType: _.h7.AUDIO_INPUT,
       analyticsLocations: V,
       asSubmenu: true
     }),
     U = (0, m.M)({
-      deviceType: P.h7.AUDIO_OUTPUT,
+      deviceType: _.h7.AUDIO_OUTPUT,
       analyticsLocations: V,
       asSubmenu: true
     }),
@@ -107,15 +107,15 @@ function E(e) {
           })
         }), Z && q]
       }), (0, r.jsxs)(a.kSQ, {
-        children: [S && O.isPlatformEmbedded && G ? (0, r.jsx)(a.S89, {
+        children: [T && O.isPlatformEmbedded && G ? (0, r.jsx)(a.S89, {
           checked: X === x.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: w.intl.string(w.t.Q8gkVF),
           action: () => s.Z.setMode(K, true, true, {
             analyticsLocations: V
           }),
-          disabled: Y === _._.STUDIO
-        }) : null, T && (0, r.jsx)(a.S89, {
+          disabled: Y === P._.STUDIO
+        }) : null, S && (0, r.jsx)(a.S89, {
           id: "deafen",
           label: w.intl.string(w.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({

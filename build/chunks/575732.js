@@ -20,7 +20,7 @@ let l = [{
   }, {
     Icon: Chunk481060.dz2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLS, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.p9.TIER_2, {
+      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
@@ -43,7 +43,7 @@ let l = [{
   }, {
     Icon: Chunk481060.rG2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLS, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.p9.TIER_2, {
+      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
@@ -60,7 +60,7 @@ let l = [{
   u = [{
     Icon: Chunk481060.rG2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLS, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.p9.TIER_2, {
+      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
@@ -80,7 +80,7 @@ let l = [{
   d = [{
     Icon: Chunk481060.rG2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLS, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.p9.TIER_2, {
+      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2, {
         useSpace: false
       })
     })
@@ -106,7 +106,7 @@ let l = [{
   }, {
     Icon: Chunk481060.dz2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLS, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.p9.TIER_0, {
+      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_0, {
         useSpace: false
       })
     })
@@ -117,7 +117,7 @@ let l = [{
   _ = [{
     Icon: Chunk481060.rG2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLS, {
-      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.p9.TIER_0, {
+      maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_0, {
         useSpace: false
       })
     })

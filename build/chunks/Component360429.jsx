@@ -115,7 +115,7 @@ function L(e) {
       r = (0, E.Z)(e.ownerId, A.Yn.STREAM, n);
     return t ? r : null
   }(t), Q = function(e) {
-    let t, n = (0, i.e7)([h.Z], () => null != h.Z.getRemoteSessionId()),
+    let t, n = (0, i.e7)([h.default], () => null != h.default.getRemoteSessionId()),
       l = (0, i.e7)([Z.Z], () => Z.Z.getChannel(e.channelId), [e.channelId]),
       a = T(e),
       c = C.default.getCurrentUser(),
@@ -158,7 +158,7 @@ function L(e) {
       u = (0, i.e7)([x.Z], () => x.Z.getSidechainCompressionStrength()),
       {
         analyticsLocations: s
-      } = (0, b.ZP)();
+      } = (0, f.ZP)();
     return !n && t && l ? (0, r.jsxs)(o.kSQ, {
       children: [(0, r.jsx)(o.S89, {
         id: "sidechain-compression",
@@ -181,7 +181,7 @@ function L(e) {
         }))
       })]
     }) : null
-  }(t), W = (0, f.Z)(t, v, L), F = (0, p.G)({
+  }(t), W = (0, b.Z)(t, v, L), F = (0, p.G)({
     stream: t,
     channelId: t.channelId
   }), Y = (0, g.B)({

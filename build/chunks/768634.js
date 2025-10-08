@@ -1,5 +1,5 @@
 /** Chunk was on 17938 **/
-/** chunk id: 768634, original params: e,t,s (module,exports,require) **/
+/** chunk id: 768634, original params: e,s,t (module,exports,require) **/
 require.d(exports, {
   C: () => o
 });
@@ -19,11 +19,11 @@ let i = (0, Chunk427164.le)({
   }
 });
 
-function o(e, t) {
+function o(e, s) {
   let {
-    enabled: s
+    enabled: t
   } = i.useConfig({
-    location: t
+    location: s
   });
-  return !!(0, n.M5)(e, a.p9.TIER_2) && s
+  return !!(0, n.M5)(e, a.PremiumTypes.TIER_2) && t
 }

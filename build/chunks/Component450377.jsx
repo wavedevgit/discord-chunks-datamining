@@ -1,9 +1,9 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 450377, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   ZP: () => A,
-  fp: () => R,
+  fp: () => Z,
   k0: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk181339 = require("./181339.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk776853 = require("./776853.js");
+  Chunk984734 = require("./984734.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -161,7 +161,7 @@ function w(e) {
     })]
   })
 }
-async function R(e, t) {
+async function Z(e, t) {
   if (e.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
   return t ? n.add(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await _.Z.saveGuild(e.id, {
@@ -169,11 +169,11 @@ async function R(e, t) {
   })
 }
 
-function Z(e) {
+function R(e) {
   let {
     guild: t
   } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), s = (0, u.n2)(t.id), [a, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
-    d(e), await R(t, e)
+    d(e), await Z(t, e)
   }, [t]);
   return l || !s ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -250,10 +250,10 @@ function A() {
   return null == module ? null : require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t["suhY+f"]),
     tag: Chunk481060.RB0.H1,
-    titleClassName: Chunk776853.headerContainer,
+    titleClassName: Chunk984734.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk723136.z, {
       guild: module
-    }), (0, Chunk951288.jsx)(Z, {
+    }), (0, Chunk951288.jsx)(R, {
       guild: module
     }), (0, Chunk951288.jsx)(P, {
       guild: module
@@ -263,9 +263,9 @@ function A() {
     }), (0, Chunk951288.jsx)(w, {
       guild: module
     }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-      className: Chunk776853.divider
+      className: Chunk984734.divider
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk776853.setupContainer,
+      className: Chunk984734.setupContainer,
       children: (0, Chunk951288.jsx)(Chunk181339.w, {
         guild: module
       })

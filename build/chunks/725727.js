@@ -45,7 +45,7 @@ function g() {
         return n.id === e.promotion.id
       }) ? t : [...t, e])
     }, []),
-    T = Chunk74538.ZP.isPremiumExactly(exports, Chunk474936.p9.TIER_2),
+    T = Chunk74538.ZP.isPremiumExactly(exports, Chunk474936.PremiumTypes.TIER_2),
     S = Chunk163684.g.useExperiment({
       location: "useOutboundPromotions"
     }, {

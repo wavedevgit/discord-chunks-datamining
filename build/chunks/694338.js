@@ -97,10 +97,10 @@ let c = () => [{
     id: 4,
     label: Chunk388032.intl.string(Chunk388032.t.ufhQCw),
     tier0ColumnData: {
-      text: (0, Chunk74538.v9)(Chunk474936.p9.TIER_0)
+      text: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_0)
     },
     tier2ColumnData: {
-      text: (0, Chunk74538.v9)(Chunk474936.p9.TIER_2)
+      text: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_2)
     }
   }, {
     id: 11,

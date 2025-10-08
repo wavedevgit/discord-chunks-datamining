@@ -1,9 +1,9 @@
-/** Chunk was on 82928 **/
-/** chunk id: 567400, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 70820 **/
+/** chunk id: 567400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => c
+  Y: () => l
 });
-let o = (0, require("./427164.js").le)({
+let r = (0, require("./427164.js").le)({
   name: "2025-09-user-profile-wishlist-editing",
   kind: "user",
   defaultConfig: {
@@ -19,11 +19,11 @@ let o = (0, require("./427164.js").le)({
   }
 });
 
-function c(e) {
+function l(e) {
   let {
-    location: n
+    location: t
   } = e;
-  return o.useConfig({
-    location: n
+  return r.useConfig({
+    location: t
   }).enabled
 }

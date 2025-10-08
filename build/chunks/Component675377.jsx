@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 675377, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360054 = require("./360054.js");
+  Chunk909258 = require("./909258.js");
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -321,14 +321,14 @@ function Y(e) {
     analyticsLocations: C
   } = (0, x.ZP)(), O = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != v, [w, Z] = i.useState(false), D = (0, y.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != v, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!w) {
-      Z(true);
+      R(true);
       try {
         await (0, _.AA)(o.id, d)
       } catch (e) {
-        Z(false)
+        R(false)
       }
     }
   }
@@ -345,7 +345,7 @@ function Y(e) {
         sourceAnalyticsLocations: C
       })
     }, [O, o.id, C]),
-    B = R.ZP.useUserTag(O);
+    B = Z.ZP.useUserTag(O);
   return (0, r.jsxs)("div", {
     className: s()(G.row, {
       [G.active]: l

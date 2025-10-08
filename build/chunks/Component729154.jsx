@@ -1,4 +1,4 @@
-/** Chunk was on 5588 **/
+/** Chunk was on 5938 **/
 /** chunk id: 729154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => x
@@ -34,7 +34,7 @@ let x = e => {
     } = (0, l.ZP)(i.Z.USER_SETTINGS), [_, y] = r.useState(f(v));
     return (0, r.useEffect)(() => {
       y(f(v))
-    }, [v]), (0, a.jsx)(u.D.Provider, {
+    }, [v]), (0, a.jsx)(u.CancellationContext.Provider, {
       value: {
         setStep: g,
         premiumType: o,

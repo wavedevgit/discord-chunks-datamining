@@ -24,15 +24,15 @@ let p = () => {
       premiumSubscription: p,
       paymentsBlocked: h,
       planId: x,
-      handleCancellation: C
-    } = (0, Chunk594135.a)(), [P, v] = (0, Chunk647438.useState)(false), [y, E] = (0, Chunk647438.useState)(false), S = async () => {
-      v(true), E(false);
+      handleCancellation: P
+    } = (0, Chunk594135.a)(), [C, v] = (0, Chunk647438.useState)(false), [y, T] = (0, Chunk647438.useState)(false), E = async () => {
+      v(true), T(false);
       try {
-        await C(), require()
+        await P(), require()
       } catch (t) {
-        E(true), v(false)
+        T(true), v(false)
       }
-    }, _ = p.items.some(t => {
+    }, S = p.items.some(t => {
       let {
         planId: e
       } = t;
@@ -42,23 +42,23 @@ let p = () => {
         planId: e
       } = t;
       return !d.dJ.has(e)
-    })) != null, N = [];
-    return N.push({
+    })) != null, _ = [];
+    return _.push({
       text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
       onClick: () => require(),
       variant: "secondary"
-    }), _ ? N.push({
+    }), S ? _.push({
       text: Chunk388032.intl.string(Chunk388032.t.PDTjLC),
       onClick: () => Chunk981631(Chunk45474.R.PREVIEW),
-      disabled: P,
+      disabled: C,
       variant: "critical-primary",
-      loading: P
-    }) : N.push({
+      loading: C
+    }) : _.push({
       text: Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
-      onClick: () => S(),
-      disabled: P,
+      onClick: () => E(),
+      disabled: C,
       variant: "critical-primary",
-      loading: P
+      loading: C
     }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       size: "md",
       transitionState: exports,
@@ -66,7 +66,7 @@ let p = () => {
         planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(x))
       })),
       subtitle: g(h, Chunk63063, p),
-      actions: N,
+      actions: _,
       onClose: async () => require(),
       children: y ? (0, Chunk951288.jsx)(Chunk434333.k, {
         children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
@@ -81,14 +81,14 @@ let p = () => {
         return f.intl.string(f.t.FClXh4);
       default:
         switch (e) {
-          case d.p9.TIER_0:
+          case d.PremiumTypes.TIER_0:
             return t ? f.intl.format(f.t["l+A50N"], {
               date: n.currentPeriodEnd,
               helpdeskArticle: s.Z.getArticleURL(m.BhN.BLOCKED_PAYMENTS)
             }) : f.intl.format(f.t.Y6Wfa2, {
               date: n.currentPeriodEnd
             });
-          case d.p9.TIER_1:
+          case d.PremiumTypes.TIER_1:
             return t ? f.intl.format(f.t.QN7eIi, {
               date: n.currentPeriodEnd,
               helpdeskArticle: s.Z.getArticleURL(m.BhN.BLOCKED_PAYMENTS)

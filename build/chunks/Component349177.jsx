@@ -13,11 +13,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560553 = require("./560553.js");
+  Chunk155886 = require("./155886.js");
 
 function f(e) {
   var t, n;
-  let f = (0, a.m)(c.p9.TIER_2);
+  let f = (0, a.m)(c.PremiumTypes.TIER_2);
   return (0, r.jsxs)(o.Z, {
     errors: e.errors,
     disabled: e.disabled,

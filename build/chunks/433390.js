@@ -19,7 +19,7 @@ function f(e) {
     subscriptionTier: t,
     buttonTextOverride: n,
     defaultTextOverride: f
-  } = e, p = (0, r.e7)([a.default], () => a.default.getCurrentUser()), h = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()), m = (0, r.e7)([l.Z], () => l.Z.getPremiumTypeOverride()), g = null != f ? f : d.intl.string(d.t["2pG5GR"]), E = null != h ? (0, s.Af)(h) : null, b = true !== m ? m : null != E ? (0, s.Rd)(E.planId) : null == p ? true : p.premiumType, y = t === c.Si.TIER_2 && null != b && [c.p9.TIER_0, c.p9.TIER_1].includes(b);
+  } = e, p = (0, r.e7)([a.default], () => a.default.getCurrentUser()), h = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()), m = (0, r.e7)([l.Z], () => l.Z.getPremiumTypeOverride()), g = null != f ? f : d.intl.string(d.t["2pG5GR"]), E = null != h ? (0, s.Af)(h) : null, b = true !== m ? m : null != E ? (0, s.Rd)(E.planId) : null == p ? true : p.premiumType, y = t === c.Si.TIER_2 && null != b && [c.PremiumTypes.TIER_0, c.PremiumTypes.TIER_1].includes(b);
   y && (g = d.intl.string(d.t.IJI7ys));
   let O = null != h && (0, s.m3)(h);
   if (!(null != h && h.status !== u.O0b.ACCOUNT_HOLD && !(0, i.Q0)(h.planId) && !y && true === m || O)) return {
@@ -58,7 +58,7 @@ function _(e) {
   if (a) {
     var _;
     n = null != (_ = (0, s.nd)(o)) ? _ : true
-  } else null != f && null != u && u < f ? (t = d.intl.string(d.t["2pG5GR"]), n = d.intl.string(d.t.jXaaRk)) : null != l && null != i && l === i ? (t = d.intl.string(d.t.ymSxh4), n = d.intl.string(d.t.jXaaRk)) : null == l && null != i && i === c.p9.TIER_2 && (n = d.intl.string(d.t.jXaaRk));
+  } else null != f && null != u && u < f ? (t = d.intl.string(d.t["2pG5GR"]), n = d.intl.string(d.t.jXaaRk)) : null != l && null != i && l === i ? (t = d.intl.string(d.t.ymSxh4), n = d.intl.string(d.t.jXaaRk)) : null == l && null != i && i === c.PremiumTypes.TIER_2 && (n = d.intl.string(d.t.jXaaRk));
   return {
     disabledButtonText: t,
     disabledButtonTooltipText: n

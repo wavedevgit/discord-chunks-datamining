@@ -44,7 +44,7 @@ let T = "SELECTABLE",
   w = {},
   D = {
     comparator: false,
-    channel: (0, Chunk131704.kt)({
+    channel: (0, Chunk131704.createChannelRecord)({
       id: Chunk981631.Sc2,
       type: Chunk981631.d4z.GUILD_CATEGORY,
       name: "Uncategorized"

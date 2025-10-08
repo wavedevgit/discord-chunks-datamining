@@ -64,7 +64,7 @@ function U(e) {
       {
         enableViewerClipping: c,
         ignoreSenderPreference: s
-      } = I.Z.useExperiment({
+      } = Z.Z.useExperiment({
         location: "StreamContextMenu"
       }, {
         autoTrackExposure: false
@@ -82,7 +82,7 @@ function U(e) {
       n = (0, y.Z)(e.ownerId, M.Yn.STREAM);
     return t ? n : null
   }(t), L = function(e, t) {
-    let n, o = (0, l.e7)([Z.Z], () => null != Z.Z.getRemoteSessionId()),
+    let n, o = (0, l.e7)([I.default], () => null != I.default.getRemoteSessionId()),
       a = (0, l.e7)([P.Z], () => P.Z.getChannel(e.channelId), [e.channelId]),
       u = T(e),
       d = k.default.getCurrentUser(),

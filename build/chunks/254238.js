@@ -57,7 +57,7 @@ function y(e, t) {
   })
 }
 async function O() {
-  let e = Chunk258609.Z.getAwaitingRemoteSessionInfo(),
+  let e = Chunk258609.default.getAwaitingRemoteSessionInfo(),
     t = null == module ? true : module.nonce;
   Chunk570140.Z.dispatch({
     type: "REMOTE_SESSION_DISCONNECT"

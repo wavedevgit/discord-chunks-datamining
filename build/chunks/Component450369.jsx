@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 63962 **/
 /** chunk id: 450369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => k,
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk248400 = require("./248400.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk375767 = require("./375767.js");
+  Chunk685046 = require("./685046.js");
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -138,7 +138,7 @@ let k = 16 / 9,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
     })), P = i.useCallback((e, t) => {
       if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, _.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, j.p9)(l, T.Z, S.Z, Z.Z, y.Z)[0]) return;
+        if (!(0, j.p9)(l, T.Z, S.Z, Z.Z, y.default)[0]) return;
         (0, p.rn)((0, _.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -223,7 +223,7 @@ let k = 16 / 9,
             (0, u.jW)(t, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
+              } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, M(L({}, t), {
                 user: j,
                 guildId: y,

@@ -1,4 +1,4 @@
-/** Chunk was on 26196 **/
+/** Chunk was on 67261 **/
 /** chunk id: 433359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CustomThemesShareModalWrapper: () => y
@@ -32,17 +32,17 @@ let y = e => {
     updateChannel: S
   } = (0, o.o)(y), [P, x] = a.useState(false), {
     colors: E,
-    chassisMixAmount: k,
-    gradientAngle: M
+    chassisMixAmount: M,
+    gradientAngle: k
   } = (0, b.Ig)(), D = (0, s.e7)([u.Z], () => u.Z.theme), I = (0, a.useMemo)(() => ({
     colors: E.map(e => e.replace("#", "")),
-    gradient_angle: M,
-    base_mix: k,
+    gradient_angle: k,
+    base_mix: M,
     base_theme: (0, p.h)(D)
-  }), [E, M, k, D]), T = a.useMemo(() => (0, d.kt)({
+  }), [E, k, M, D]), T = a.useMemo(() => (0, d.createChannelRecord)({
     id: "1",
     type: l.d.DM
-  }), []), Z = a.useMemo(() => (0, i.e5)(function(e) {
+  }), []), R = a.useMemo(() => (0, i.e5)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -64,17 +64,17 @@ let y = e => {
     content: ""
   }))), [T]);
   (0, a.useEffect)(() => {
-    v(Z), S(T), x(true)
-  }, [Z, T, v, S]);
-  let R = a.useCallback(async () => {
+    v(R), S(T), x(true)
+  }, [R, T, v, S]);
+  let Z = a.useCallback(async () => {
     if (!C()) return Promise.reject();
     await (0, _.O)(O, I, j), f.default.track(m.rMx.CUSTOM_THEME_SHARED, {
       num_destinations: O.length
     }), await n()
   }, [I, O, j, C, n]);
   return ((0, a.useEffect)(() => {
-    w(R)
-  }, [R, w]), P) ? (0, r.jsx)(g.fm.Provider, {
+    w(Z)
+  }, [Z, w]), P) ? (0, r.jsx)(g.fm.Provider, {
     value: y,
     children: (0, r.jsx)(h._, {
       transitionState: t,

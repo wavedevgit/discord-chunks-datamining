@@ -1,4 +1,4 @@
-/** Chunk was on 83175 **/
+/** Chunk was on 70154 **/
 /** chunk id: 732389, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   p: () => g
@@ -16,13 +16,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk784238 = require("./784238.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk851499 = require("./851499.js");
+  Chunk558560 = require("./558560.js");
 let g = e => {
   let {
     buttonAnalyticsObject: n,
     className: t,
     upsellText: o
-  } = e, g = c.default.getCurrentUser(), h = (0, u.yd)(null == g ? true : g.premiumType, p.p9.TIER_2), C = (0, m._)({
+  } = e, g = c.default.getCurrentUser(), h = (0, u.yd)(null == g ? true : g.premiumType, p.PremiumTypes.TIER_2), C = (0, m._)({
     defaultResponse: f.intl.string(f.t["8x0jKS"]),
     onNonTier2Subscriber: f.intl.string(f.t.IJI7ys)
   });

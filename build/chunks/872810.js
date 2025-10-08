@@ -95,7 +95,7 @@ function L(e, t) {
   } = (0, c.$)({
     location: "StreamActionCreators.watchStream"
   });
-  if (null != l.Z.getRemoteSessionId()) return;
+  if (null != l.default.getRemoteSessionId()) return;
   let {
     guildId: r,
     channelId: i

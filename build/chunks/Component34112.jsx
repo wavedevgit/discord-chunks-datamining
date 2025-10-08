@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 34112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,8 +33,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk810688 = require("./810688.js"),
-  Chunk297827 = require("./297827.js");
+  Chunk960585 = require("./960585.js"),
+  Chunk804306 = require("./804306.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -130,14 +130,14 @@ function k(e) {
 
 function G() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk810688.emptyRoles,
+    className: Chunk960585.emptyRoles,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk297827.dragSpacing
+      className: Chunk804306.dragSpacing
     }), (0, Chunk951288.jsx)(Chunk481060.BFJ, {
       size: "md",
       color: "currentColor"
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk810688.emptyRolesText,
+      className: Chunk960585.emptyRolesText,
       variant: "text-md/semibold",
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk388032.t["vR7M+/"])
@@ -208,17 +208,17 @@ function M(e) {
     ref: e => {
       z(e)
     },
-    className: s()(R.roleRow, R.roleRowDragging)
+    className: s()(Z.roleRow, Z.roleRowDragging)
   });
 
   function X() {
     S(d.id)
   }
   return (0, r.jsxs)(g.P3F, {
-    className: s()(R.roleRow, {
-      [R.roleRowDisableHover]: N,
-      [R.containerDragBefore]: null != V && j < V,
-      [R.containerDragAfter]: null != V && j > V
+    className: s()(Z.roleRow, {
+      [Z.roleRowDisableHover]: N,
+      [Z.containerDragBefore]: null != V && j < V,
+      [Z.containerDragAfter]: null != V && j > V
     }),
     onClick: X,
     onContextMenu: Y,
@@ -231,8 +231,8 @@ function M(e) {
       count: "".concat(v)
     }),
     children: [(0, r.jsx)("div", {
-      className: s()(R.dragIcon, Z.dragSpacing, {
-        [R.dragIconHidden]: G || E
+      className: s()(Z.dragIcon, R.dragSpacing, {
+        [Z.dragIconHidden]: G || E
       }),
       onMouseEnter: () => B(true),
       onMouseLeave: () => B(false),
@@ -241,27 +241,27 @@ function M(e) {
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: s()(R.roleNameContainer, Z.roleNameSpacing),
+      className: s()(Z.roleNameContainer, R.roleNameSpacing),
       children: [(null == (t = d.tags) ? true : t.guild_connections) === null ? (0, r.jsx)(f.Z, {
-        className: R.roleFlowerStar,
+        className: Z.roleFlowerStar,
         color: d.colorString,
         size: 24
       }) : (0, r.jsx)(U, {
         guildId: p.id,
         role: d,
         size: 24,
-        className: R.roleIcon,
-        defaultIconClassName: R.shield
+        className: Z.roleIcon,
+        defaultIconClassName: Z.shield
       }), null != k ? (0, r.jsx)(I.Z, {
-        className: R.lock,
+        className: Z.lock,
         tooltipText: k
       }) : null, (0, r.jsx)(g.Text, {
-        className: R.roleName,
+        className: Z.roleName,
         color: "header-primary",
         variant: "text-md/medium",
         children: d.name
       }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(_.Z, {
-        className: R.subscriptionRoleIcon,
+        className: Z.subscriptionRoleIcon,
         "aria-label": w.intl.string(w.t.a2Ak8f)
       }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(x.Z, {})]
     }), (0, r.jsx)(u.u, {
@@ -271,7 +271,7 @@ function M(e) {
       }),
       position: "right",
       children: (0, r.jsxs)(g.P3F, {
-        className: s()(R.memberCountContainer, Z.memberSpacing),
+        className: s()(Z.memberCountContainer, R.memberSpacing),
         onClick: function() {
           X(), P(T.ZI.MEMBERS)
         },
@@ -282,13 +282,13 @@ function M(e) {
         }), (0, r.jsx)(g.tBG, {
           size: "custom",
           color: "currentColor",
-          className: R.person,
+          className: Z.person,
           width: 20,
           height: 20
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: s()(R.buttonsContainer, Z.buttonsSpacing),
+      className: s()(Z.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.u, {
         text: G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
         children: (0, r.jsx)(g.hU, {

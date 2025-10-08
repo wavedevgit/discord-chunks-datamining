@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js");
 
 function s() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk474936.p9.TIER_2;
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk474936.PremiumTypes.TIER_2;
   return (0, Chunk442837.e7)([Chunk594174.default], () => {
     let t = Chunk594174.default.getCurrentUser();
     return (0, Chunk111361.M5)(exports, module)

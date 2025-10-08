@@ -102,7 +102,7 @@ let T = e => {
         object: x
       }),
       location_stack: P,
-      sku_id: (0, p.Wz)(p.ZP.getSkuIdForPremiumType(E.p9.TIER_2)),
+      sku_id: (0, p.Wz)(p.ZP.getSkuIdForPremiumType(E.PremiumTypes.TIER_2)),
       has_search_query: null != R && "" !== R,
       is_animated: D
     },

@@ -1,8 +1,8 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 822591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  X: () => Z,
+  X: () => R,
   Z: () => L
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk929834 = require("./929834.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560818 = require("./560818.js"),
+  Chunk291284 = require("./291284.js"),
   Chunk922905 = require("./922905.js");
 
 function P(e) {
@@ -64,8 +64,8 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = "dismissedCommunityFeaturesUpsell",
-  Z = () => {
+let Z = "dismissedCommunityFeaturesUpsell",
+  R = () => {
     let e, {
         guild: t,
         submitting: n,
@@ -100,7 +100,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [c, g] = i.useState(true === o.K.get(R)), p = (0, s.e7)([x.Z], () => {
+    } = e, [c, g] = i.useState(true === o.K.get(Z)), p = (0, s.e7)([x.Z], () => {
       var e;
       return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
     }), [h, j] = i.useState(false);
@@ -150,7 +150,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         size: d.zx.Sizes.NONE,
         className: S.upsellClose,
         onClick: () => {
-          o.K.set(R, true), g(true)
+          o.K.set(Z, true), g(true)
         },
         children: (0, r.jsx)(u.Dio, {
           size: "md",
@@ -215,7 +215,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       })),
       a = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
       d = Chunk647438.useMemo(Chunk929834.jb, []),
-      g = true !== Chunk433517.K.get(R);
+      g = true !== Chunk433517.K.get(Z);
     if (null == module) return null;
     let m = [];
     null != Chunk544891 && Chunk544891[Chunk984933.sH].forEach(e => {
@@ -261,7 +261,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
+        className: Chunk291284.divider
       }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
         label: Chunk388032.intl.string(Chunk388032.t.vAyDGR),
@@ -275,7 +275,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !require
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
+        className: Chunk291284.divider
       }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
         label: Chunk388032.intl.string(Chunk388032.t.sMkYEx),
@@ -289,7 +289,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
+        className: Chunk291284.divider
       }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
         label: Chunk388032.intl.string(Chunk388032.t.pO60f3),
@@ -303,7 +303,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
+        className: Chunk291284.divider
       }), (() => {
         var n;
         if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Kx8, {
@@ -316,7 +316,7 @@ let R = "dismissedCommunityFeaturesUpsell",
           disabled: !exports
         })
       })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
+        className: Chunk291284.divider
       }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.c1BmbG),
         description: Chunk388032.intl.string(Chunk388032.t.aQzVFx),

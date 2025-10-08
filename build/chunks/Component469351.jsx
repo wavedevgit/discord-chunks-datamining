@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 469351, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk68920 = require("./68920.js");
+  Chunk514709 = require("./514709.js");
 
 function w(e) {
   let {
@@ -39,26 +39,26 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, O.eD)(t), R = (0, s.e7)([_.Z], () => _.Z.getGuild(t)), Z = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R && (0, b.eM)(R, Z), {
+  } = (0, O.eD)(t), Z = (0, s.e7)([_.Z], () => _.Z.getGuild(t)), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != Z && (0, b.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
-  (0, g.P)(R);
+  (0, g.P)(Z);
   let G = i.useCallback(() => {
-    if (null == R) return;
-    let e = j.Z.getEveryoneRole(R);
+    if (null == Z) return;
+    let e = j.Z.getEveryoneRole(Z);
     p.Z.close();
     let t = {
       [e.id]: e
     };
-    (0, f.iD)(R.id, {
+    (0, f.iD)(Z.id, {
       type: h.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: I.pNK.GUILD_PRODUCTS
-    }), (0, x.uL)(I.Z5c.CHANNEL(R.id, S.oC.GUILD_SHOP))
-  }, [R]);
+    }), (0, x.uL)(I.Z5c.CHANNEL(Z.id, S.oC.GUILD_SHOP))
+  }, [Z]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
-  if (null == R) return null;
+  if (null == Z) return null;
   let M = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.vwX, {
         tag: o.RB0.H1,
@@ -116,7 +116,7 @@ function w(e) {
   return (0, r.jsxs)(d.AL, {
     guildId: t,
     children: [M, (0, r.jsx)(m.Z, {
-      guild: R
+      guild: Z
     }), (0, r.jsx)("div", {
       className: P.tabBarContainer,
       children: U

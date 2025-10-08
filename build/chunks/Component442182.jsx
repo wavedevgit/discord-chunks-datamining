@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 442182, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,8 +30,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk472039 = require("./472039.js"),
-  Chunk21321 = require("./21321.js");
+  Chunk37134 = require("./37134.js"),
+  Chunk10083 = require("./10083.js");
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ function w(e) {
   return e
 }
 
-function R(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,13 +64,13 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function Z(e, t, n) {
+async function R(e, t, n) {
   let i = e.roles.filter(e => e !== n);
   try {
     await _.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
     let e = new g.Z(t);
-    (0, d.h7j)(t => (0, r.jsx)(a.Modal, R(w({}, t), {
+    (0, d.h7j)(t => (0, r.jsx)(a.Modal, Z(w({}, t), {
       title: S.intl.string(S.t.R0RpRU),
       actions: [{
         text: S.intl.string(S.t.BddRzc),
@@ -98,9 +98,9 @@ function D(e) {
 
   function b(e) {
     if (e.stopPropagation(), !g) {
-      if (e.shiftKey) return void Z(t, l, o);
+      if (e.shiftKey) return void R(t, l, o);
       let n = v.Z.getRole(o);
-      (0, d.h7j)(e => (0, r.jsx)(a.Modal, R(w({}, e), {
+      (0, d.h7j)(e => (0, r.jsx)(a.Modal, Z(w({}, e), {
         title: S.intl.string(S.t["7sFNfX"]),
         subtitle: S.intl.format(S.t.scORUl, {
           username: t.name,
@@ -114,7 +114,7 @@ function D(e) {
           text: S.intl.string(S.t.N86XcH),
           variant: "critical-primary",
           onClick: () => {
-            Z(t, l, o), e.onClose()
+            R(t, l, o), e.onClose()
           }
         }],
         children: (0, r.jsx)(d.Text, {
@@ -132,8 +132,8 @@ function D(e) {
     null != i && (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("26976"), n.e("97445")]).then(n.bind(n, 415118));
-      return t => (0, r.jsx)(e, R(w({}, t), {
+      } = await Promise.all([n.e("79695"), n.e("26976"), n.e("71227")]).then(n.bind(n, 415118));
+      return t => (0, r.jsx)(e, Z(w({}, t), {
         user: i,
         guildId: l,
         showChatItems: false
@@ -148,7 +148,7 @@ function D(e) {
       guildId: l,
       roleId: o,
       position: "left",
-      children: e => (0, r.jsxs)(d.P3F, R(w({}, e), {
+      children: e => (0, r.jsxs)(d.P3F, Z(w({}, e), {
         innerRef: p,
         className: T.memberRow,
         onContextMenu: j,
@@ -310,8 +310,8 @@ function G(e) {
     }), (0, d.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("33285"), n.e("3291")]).then(n.bind(n, 24722));
-      return n => (0, r.jsx)(e, R(w({}, n), {
+      } = await Promise.all([n.e("33285"), n.e("68226")]).then(n.bind(n, 24722));
+      return n => (0, r.jsx)(e, Z(w({}, n), {
         roleId: l.id,
         guildId: t.id
       }))

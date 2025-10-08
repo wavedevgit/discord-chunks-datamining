@@ -2,12 +2,11 @@
 /** chunk id: 669083, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  default: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -17,13 +16,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk237997 = require("./237997.js"),
   Chunk998502 = require("./998502.js"),
   Chunk13140 = require("./13140.js"),
+  Chunk486016 = require("./486016.js"),
   Chunk809357 = require("./809357.js"),
   Chunk624864 = require("./624864.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk476828 = require("./476828.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk968175 = require("./968175.js"),
+  Chunk10198 = require("./10198.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,39 +58,39 @@ class Z extends Chunk647438.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    a.Z.setNotificationPositionMode(t), S()
+    l.Z.setNotificationPositionMode(t), S()
   }
   handleChangeAvatarSizeMode(e) {
     let {
       value: t
     } = e;
-    a.Z.setAvatarSizeMode(t)
+    l.Z.setAvatarSizeMode(t)
   }
   handleChangeDisplayNameMode(e) {
     let {
       value: t
     } = e;
-    a.Z.setDisplayNameMode(t)
+    l.Z.setDisplayNameMode(t)
   }
   handleChangeDisplayUserMode(e) {
     let {
       value: t
     } = e;
-    a.Z.setDisplayUserMode(t)
+    l.Z.setDisplayUserMode(t)
   }
   renderHeader() {
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
       grow: 0,
       shrink: 0,
-      className: Chunk476828.header,
+      className: Chunk968175.header,
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          className: Chunk476828.headerTitle,
+          className: Chunk968175.headerTitle,
           tag: "h1",
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mj"])
         }), (0, Chunk951288.jsx)(Chunk481060.olH, {
-          className: Chunk476828.headerClose,
+          className: Chunk968175.headerClose,
           onClick: this.props.onClose
         })]
       }), this.renderTabBar()]
@@ -101,21 +101,21 @@ class Z extends Chunk647438.PureComponent {
       selectedSection: e
     } = this.state, t = Chunk906467.Z.isDeveloper ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
       id: "DEVELOPER",
-      className: Chunk476828.tabBarItem,
+      className: Chunk968175.tabBarItem,
       children: "Developer"
     }) : null;
     return (0, Chunk951288.jsxs)(Chunk481060.njP, {
       selectedItem: module,
       type: "top",
-      className: Chunk476828.__invalid_tabBar,
+      className: Chunk968175.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "GENERAL",
-        className: Chunk476828.tabBarItem,
+        className: Chunk968175.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["0FYxx8"])
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "VOICE",
-        className: Chunk476828.tabBarItem,
+        className: Chunk968175.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["3WeSiI"])
       }), exports]
     })
@@ -135,7 +135,7 @@ class Z extends Chunk647438.PureComponent {
         e = this.renderGeneralSettings()
     }
     return (0, Chunk951288.jsx)(Chunk481060.hzk, {
-      className: Chunk476828.content,
+      className: Chunk968175.content,
       children: module
     }, exports)
   }
@@ -145,20 +145,20 @@ class Z extends Chunk647438.PureComponent {
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
       shouldShowInviteNotification: s
-    } = this.props, o = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), c = module !== Chunk981631._vf.DISABLED;
+    } = this.props, a = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), d = module !== Chunk981631._vf.DISABLED;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.IQv8Eh),
-        className: Chunk197571.marginBottom20,
+        className: Chunk10198.marginBottom20,
         children: (0, Chunk951288.jsx)(Chunk212632.Z, {
           position: module,
           onChange: this.handleChangeNotificationPositionMode
         })
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.Fy5kPj),
-        checked: Chunk755721 && Chunk600164,
+        checked: Chunk600164 && Chunk906467,
         onChange: this.handleToggleTextChatNotifications,
-        disabled: !Chunk600164
+        disabled: !Chunk906467
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["f+c48/"]),
         description: Chunk388032.intl.string(Chunk388032.t.W9DVVV),
@@ -167,7 +167,7 @@ class Z extends Chunk647438.PureComponent {
       }), require && (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.XZTl9v),
         checked: exports,
-        onChange: e => a.Z.setShowKeybindIndicators(e)
+        onChange: e => l.Z.setShowKeybindIndicators(e)
       })]
     })
   }
@@ -179,9 +179,11 @@ class Z extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 20,
-      children: [(0, Chunk951288.jsx)(Chunk755721.Gu, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
         label: Chunk388032.intl.string(Chunk388032.t.dnvZSk),
-        onChange: this.handleChangeAvatarSizeMode,
+        onChange: e => this.handleChangeAvatarSizeMode({
+          value: e
+        }),
         options: [{
           value: Chunk981631.ipw.LARGE,
           name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
@@ -189,11 +191,12 @@ class Z extends Chunk647438.PureComponent {
           value: Chunk981631.ipw.SMALL,
           name: Chunk388032.intl.string(Chunk388032.t.BKIKq6)
         }],
-        value: module,
-        size: Chunk755721.l7.SMALL
-      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        value: module
+      }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
         label: Chunk388032.intl.string(Chunk388032.t.J0dpcH),
-        onChange: this.handleChangeDisplayNameMode,
+        onChange: e => this.handleChangeDisplayNameMode({
+          value: e
+        }),
         options: [{
           value: Chunk981631.wC$.ALWAYS,
           name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
@@ -204,11 +207,12 @@ class Z extends Chunk647438.PureComponent {
           value: Chunk981631.wC$.NEVER,
           name: Chunk388032.intl.string(Chunk388032.t.ekjlPD)
         }],
-        value: exports,
-        size: Chunk755721.l7.SMALL
-      }), (0, Chunk951288.jsx)(Chunk755721.Gu, {
+        value: exports
+      }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
         label: Chunk388032.intl.string(Chunk388032.t.swsWWF),
-        onChange: this.handleChangeDisplayUserMode,
+        onChange: e => this.handleChangeDisplayUserMode({
+          value: e
+        }),
         options: [{
           value: Chunk981631.OYC.ALWAYS,
           name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
@@ -216,14 +220,13 @@ class Z extends Chunk647438.PureComponent {
           value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
           name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
         }],
-        value: require,
-        size: Chunk755721.l7.SMALL
+        value: require
       })]
     })
   }
   renderDeveloperSettings() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk197571.marginBottom20,
+      className: Chunk10198.marginBottom20,
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         label: "Crashes",
         value: true,
@@ -246,7 +249,7 @@ class Z extends Chunk647438.PureComponent {
           value: 4,
           label: "Out of Memory"
         }],
-        onChange: e => null != e && f.ZP.crash(e)
+        onChange: e => null != e && h.ZP.crash(e)
       })
     })
   }
@@ -266,10 +269,10 @@ class Z extends Chunk647438.PureComponent {
         selectedSection: e
       })
     }), x(this, "handleToggleTextChatNotifications", () => {
-      a.Z.setNotificationDisabled(_.n0.TextChat, !this.props.textChatDisabled), S()
+      l.Z.setNotificationDisabledSetting(g.i.TEXT_CHAT, !this.props.textChatDisabled), S()
     }), x(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
-      a.Z.setNotificationDisabled(_.n0.ActivityInvite, !e)
+      l.Z.setNotificationDisabledSetting(g.i.GAME_ACTIVITY, !e)
     })
   }
 }
@@ -285,13 +288,13 @@ function C(e) {
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, s.cj)([h.default, y.Z], () => ({
-    avatarSizeMode: h.default.getAvatarSizeMode(),
-    displayNameMode: h.default.getDisplayNameMode(),
-    displayUserMode: h.default.getDisplayUserMode(),
-    notificationPositionMode: h.default.getNotificationPositionMode(),
+  } = (0, s.cj)([p.default, y.Z], () => ({
+    avatarSizeMode: p.default.getAvatarSizeMode(),
+    displayNameMode: p.default.getDisplayNameMode(),
+    displayUserMode: p.default.getDisplayUserMode(),
+    notificationPositionMode: p.default.getNotificationPositionMode(),
     textChatDisabled: y.Z.isNotificationDisabled(_.n0.TextChat),
-    shouldShowKeybindIndicators: h.default.showKeybindIndicators,
+    shouldShowKeybindIndicators: p.default.showKeybindIndicators,
     shouldShowInviteNotification: !y.Z.isNotificationDisabled(_.n0.ActivityInvite)
   })), u = (0, m.Z)({
     location: "Overlay Settings"

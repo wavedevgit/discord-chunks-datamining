@@ -347,7 +347,7 @@ function er(e, t) {
 function ei(e) {
   if (er(e.streamType, e.channelId)) returntrue;
   let t = y.Z.getBasicChannel(e.channelId);
-  return null != t && (0, h.p9)(t, A.Z, O.Z, I.Z, f.Z)[0]
+  return null != t && (0, h.p9)(t, A.Z, O.Z, I.Z, f.default)[0]
 }
 j();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {

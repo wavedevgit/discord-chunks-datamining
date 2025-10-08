@@ -108,7 +108,7 @@ class I extends Chunk147913.Z {
         memberActions: r,
         completedActions: i
       } = await this._getOrLoadOnboardingMemberActions(t), a = null == r ? true : r.find(e => e.channelId === n);
-      (null == i ? true : i[n]) !== true && null != a && a.actionType === p.oi.VIEW && (0, f.Oh)(t, n)
+      (null == i ? true : i[n]) !== true && null != a && a.actionType === p.NewMemberActionTypes.VIEW && (0, f.Oh)(t, n)
     }), b(this, "handleMessageSend", e => {
       var t;
       let {
@@ -131,7 +131,7 @@ class I extends Chunk147913.Z {
         memberActions: n,
         completedActions: r
       } = await this._getOrLoadOnboardingMemberActions(e), i = null == n ? true : n.find(e => e.channelId === t);
-      (null == r ? true : r[t]) !== true && null != i && i.actionType === p.oi.CHAT && (0, f.Oh)(e, t)
+      (null == r ? true : r[t]) !== true && null != i && i.actionType === p.NewMemberActionTypes.CHAT && (0, f.Oh)(e, t)
     }), b(this, "_getOrLoadOnboardingMemberActions", async e => {
       let t = (0, m.s)(e),
         n = o.Z.isFullServerPreview(e);

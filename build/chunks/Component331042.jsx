@@ -1,7 +1,7 @@
 /** Chunk was on 87624 **/
 /** chunk id: 331042, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,17 +28,17 @@ var Chunk238651 = require("./238651.js"),
   Chunk29121 = require("./29121.js"),
   Chunk391594 = require("./391594.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk222311 = require("./222311.js");
-let P = t => {
+  Chunk722982 = require("./722982.js");
+let _ = t => {
   let {
     transitionState: e,
     product: n,
-    onClose: P,
+    onClose: _,
     analyticsLocations: L,
     overrideTitle: k,
     overrideDescription: N,
     shouldShowPromotionalExperience: S,
-    purchaseType: B = _.o8.FIAT
+    purchaseType: B = v.o8.FIAT
   } = t, Z = (0, a.e7)([p.Z], () => p.Z.purchases), M = (0, h.o)(n, Z), x = (0, I.W)(n, M), {
     analyticsLocations: F
   } = (0, d.ZP)([...L, o.Z.COLLECTIBLES_COLLECTED_MODAL]), {
@@ -83,8 +83,8 @@ let P = t => {
     isApplying: Y
   } = (0, A.W)({
     product: x,
-    onSuccess: P,
-    onError: P
+    onSuccess: _,
+    onError: _
   }), Q = (0, R.Xw)({
     product: x,
     overrideTitle: k,
@@ -99,7 +99,7 @@ let P = t => {
     promotionalRewardCollectedText: w
   }), q = (0, R.cf)({
     product: x,
-    onClose: P,
+    onClose: _,
     analyticsLocations: F,
     hasRequiredProductItems: D,
     handleUseNow: z,
@@ -125,7 +125,7 @@ let P = t => {
       ref: V,
       children: [(0, i.jsx)(r.O_, {
         ref: W,
-        className: v.confettiCanvas,
+        className: P.confettiCanvas,
         environment: j
       }), (0, i.jsx)(s.ExpressiveModal, {
         graphic: {
@@ -139,7 +139,7 @@ let P = t => {
         },
         title: Q,
         subtitle: null != $ ? $ : true,
-        onClose: P,
+        onClose: _,
         transitionState: e,
         actions: q
       }), null != H ? (0, i.jsx)(g.i, {

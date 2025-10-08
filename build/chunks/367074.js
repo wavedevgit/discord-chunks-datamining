@@ -41,18 +41,18 @@ function C(e) {
   if (!t) returnfalse;
   if (null != r && r.status === S.O0b.ENDED) {
     let e = r.endedAt,
-      t = r.hasPremiumAtLeast(T.p9.TIER_2);
+      t = r.hasPremiumAtLeast(T.PremiumTypes.TIER_2);
     if (null != e && t && i()().subtract(A, "days").isBefore(e)) returnfalse
   }
   if (null != o && o.status === S.O0b.ENDED) {
     let e = o.endedAt,
-      t = o.hasPremiumAtLeast(T.p9.TIER_2);
+      t = o.hasPremiumAtLeast(T.PremiumTypes.TIER_2);
     if (null != e && t && i()().subtract(A, "days").isBefore(e)) returnfalse
   }
   if (null != n) {
-    let e = n.hasPremiumAtLeast(T.p9.TIER_2),
+    let e = n.hasPremiumAtLeast(T.PremiumTypes.TIER_2),
       t = c.default.getCurrentUser(),
-      r = !!(null == n ? true : n.hasActiveTrial) && p.ZP.isPremiumExactly(t, T.p9.TIER_0),
+      r = !!(null == n ? true : n.hasActiveTrial) && p.ZP.isPremiumExactly(t, T.PremiumTypes.TIER_0),
       i = (0, _.isAndroid)() && n.paymentGateway !== S.gg$.GOOGLE;
     if (e || r || i) returnfalse
   }

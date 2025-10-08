@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk412553 = require("./412553.js");
+  Chunk25220 = require("./25220.js");
 
 function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -241,7 +241,7 @@ function eu(e) {
     location: eb
   } = (0, f.O)(), ey = i.useMemo(() => $(Q({}, eb), {
     section: Y.jXE.SOUNDBOARD_SOUND_PICKER
-  }), [eb]), [eO, ev] = i.useState(null), eI = (0, l.e7)([N.default], () => N.default.getCurrentUser()), eT = (0, D.I5)(eI, K.p9.TIER_2), eS = (0, l.e7)([R.Z], () => {
+  }), [eb]), [eO, ev] = i.useState(null), eI = (0, l.e7)([N.default], () => N.default.getCurrentUser()), eT = (0, D.I5)(eI, K.PremiumTypes.TIER_2), eS = (0, l.e7)([R.Z], () => {
     var e;
     return R.Z.getVoiceState(t, null != (e = null == eI ? true : eI.id) ? e : Y.lds)
   }), eA = (null == eS ? true : eS.selfDeaf) || (null == eS ? true : eS.mute) || (null == eS ? true : eS.suppress), eC = (0, b.Iu)(e => e.searchQuery), eN = null != eC && "" !== eC, eR = (0, m.Dt)(), eP = L.t.useConfig({
@@ -316,7 +316,7 @@ function eu(e) {
     let e = x.Z.getSoundById(ea);
     null != e && ev(e)
   }, []), e0 = i.useCallback(() => {
-    let e = (0, D.Px)(K.p9.TIER_2);
+    let e = (0, D.Px)(K.PremiumTypes.TIER_2);
     return z.intl.format(z.t["tw/SSk"], {
       nitroTierName: e,
       onClick: e$
@@ -463,7 +463,7 @@ function eu(e) {
           object: Y.qAy.SOUNDBOARD_SOUND
         }),
         location_stack: eE,
-        sku_id: D.ZP.getSkuIdForPremiumType(K.p9.TIER_2)
+        sku_id: D.ZP.getSkuIdForPremiumType(K.PremiumTypes.TIER_2)
       },
       onClose: () => ev(null),
       onLearnMore: g,

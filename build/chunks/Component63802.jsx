@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk410030 = require("./410030.js"),
   Chunk325767 = require("./325767.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk961850 = require("./961850.js");
+  Chunk317691 = require("./317691.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,14 +78,14 @@ let g = "premium_new_tier_2_gradient",
 
 function b(e) {
   let {
-    tier: t = c.p9.TIER_2
+    tier: t = c.PremiumTypes.TIER_2
   } = e, n = (0, s.ZP)(), i = (0, o.ap)(n);
   return (0, r.jsxs)(r.Fragment, {
     children: [!i && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: a()(u.rimGlowVertical, {
-          [u.rimGlowVerticalTier0]: t === c.p9.TIER_0,
-          [u.rimGlowVerticalTier2]: t === c.p9.TIER_2
+          [u.rimGlowVerticalTier0]: t === c.PremiumTypes.TIER_0,
+          [u.rimGlowVerticalTier2]: t === c.PremiumTypes.TIER_2
         })
       }), (0, r.jsx)(y, {
         foreground: u.buttonSparkleStar1

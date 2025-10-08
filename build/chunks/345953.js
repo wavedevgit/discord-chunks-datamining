@@ -181,7 +181,7 @@ function G(e) {
     volume: r
   } = e;
   if (n === f.default.getId()) return;
-  let i = u.Z.getRemoteSessionId();
+  let i = u.default.getRemoteSessionId();
   null != i && k(i, n, t, {
     muted: _.Z.isLocalMute(n, t),
     volume: r

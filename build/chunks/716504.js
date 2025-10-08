@@ -1,3 +1,0 @@
-/** Chunk was on 34179 **/
-/** chunk id: 716504, original params: i (module,exports,require) **/
-module.exports = JSON.parse('{"UvP/1N":"Poistettu","Bz9gcH":"Ei paikalla","7q4iGR":"Paikalla","1eK9GR":"Ei k\xe4ytett\xe4viss\xe4","op6/kZ":"Sijainti","iccpNT":"Sijainti","78avu7":"Nimi","3QONen":"Tilaus","8QpmEx":"Tutustu","D0Mb4O":"Kutsu kavereita","3NtB39":"Tilauksen hallinta","NUTl4u":"Asetukset","MQQIu7":"Palvelimen tila"}')

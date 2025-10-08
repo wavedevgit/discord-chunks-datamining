@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk273504 = require("./273504.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk894780 = require("./894780.js");
+  Chunk716971 = require("./716971.js");
 
 function y(e) {
   var t, n;
@@ -37,12 +37,12 @@ function y(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : v.lds, w = null != E, [R] = (0, m.RD)(P), {
-    rulesByTriggerType: Z
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : v.lds, w = null != E, [Z] = (0, m.RD)(P), {
+    rulesByTriggerType: R
   } = (0, m.pH)(P), D = {
     [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
     [p.vh.CONTENT]: C.intl.string(C.t.fphZb2)
-  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
+  }, A = i.useMemo(() => Object.values(null != R ? R : {}).flat().filter(d.lm), [R]), L = {
     isInEditMode: w,
     setEditingRule: I
   }, k = i.useRef(L);
@@ -118,7 +118,7 @@ function y(e) {
           className: O.textBadge
         })]
       })]
-    }), R ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
+    }), Z ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != D[t] ? (0, r.jsx)(a.hjN, {
@@ -138,7 +138,7 @@ function y(e) {
             return (0, r.jsx)(b.Z, {
               guildId: P,
               triggerType: e,
-              rules: null != (t = Z[e]) ? t : [],
+              rules: null != (t = R[e]) ? t : [],
               initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === _.fX.MENTION_SPAM
             }, e)
           })

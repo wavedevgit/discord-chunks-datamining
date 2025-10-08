@@ -27,7 +27,7 @@ var Chunk647438 = require("./647438.js"),
 function S(e) {
   let t = e.map(u.hl).find(p.lm),
     n = (0, i.e7)([f.Z], () => f.Z.getChannel(t), [t]);
-  return l.useMemo(() => null != n ? n : (0, d.kt)({
+  return l.useMemo(() => null != n ? n : (0, d.createChannelRecord)({
     id: "1",
     type: r.d.DM
   }), [n])

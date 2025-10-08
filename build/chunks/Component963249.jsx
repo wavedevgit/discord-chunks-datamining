@@ -111,11 +111,11 @@ function R(e) {
     returnRef: K,
     subscription: z,
     skipConfirm: q
-  } = null != e ? e : {}, X = false, Q = null != (t = (0, b.b)()) ? t : (0, o.Z)(), J = h.default.getCurrentUser(), $ = (0, E.M5)(J, v.p9.TIER_2), ee = a()("payment-modal"), et = (0, E.Wz)(B), en = false;
+  } = null != e ? e : {}, X = false, Q = null != (t = (0, b.b)()) ? t : (0, o.Z)(), J = h.default.getCurrentUser(), $ = (0, E.M5)(J, v.PremiumTypes.TIER_2), ee = a()("payment-modal"), et = (0, E.Wz)(B), en = false;
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("17938"), n.e("84992"), n.e("84071")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("17938"), n.e("84992"), n.e("37786")]).then(n.bind(n, 7305));
     return t => {
       var {
         onClose: n

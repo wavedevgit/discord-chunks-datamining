@@ -1,7 +1,7 @@
 /** Chunk was on 61 **/
 /** chunk id: 779250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => M
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869939 = require("./869939.js");
+  Chunk333050 = require("./333050.js");
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,7 +59,7 @@ let {
 } = Chunk971130.ZP;
 var G = ((r = G || {})[r.ENTITY = 0] = "ENTITY", r[r.SETTINGS = 1] = "SETTINGS", r[r.PREVIEW = 2] = "PREVIEW", r[r.SUCCESS = 3] = "SUCCESS", r);
 
-function M(e) {
+function U(e) {
   let {
     modal: t
   } = e, {
@@ -119,7 +119,7 @@ function M(e) {
   }, [n, t]), null
 }
 
-function U(e) {
+function L(e) {
   let {
     guildId: t,
     guildEvent: n,
@@ -147,12 +147,12 @@ function U(e) {
     slideId: 2,
     label: D.intl.string(D.t["8aJzT0"]),
     valid: true
-  }], [d, c, N]), w = Object.keys(G).length, k = (0, j.xt)(n), A = e => Math.max(0, Math.min(e, w - 1)), [_, z] = i.useState(+!!k), [U, L] = i.useState(false), V = i.useMemo(() => Z.slice(0, _ + 1).map(e => e.valid).every(Boolean), [Z, _]), F = _ >= Z.length ? 3 : Z[A(_)].slideId, X = 3 === F;
+  }], [d, c, N]), w = Object.keys(G).length, k = (0, j.xt)(n), A = e => Math.max(0, Math.min(e, w - 1)), [_, z] = i.useState(+!!k), [L, M] = i.useState(false), V = i.useMemo(() => Z.slice(0, _ + 1).map(e => e.valid).every(Boolean), [Z, _]), F = _ >= Z.length ? 3 : Z[A(_)].slideId, X = 3 === F;
   (0, C.l)(e => e.onUpdateCanCloseModal)(X);
   let W = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     q = i.useRef(null),
     B = e => {
-      L(false), z(A(e))
+      M(false), z(A(e))
     },
     Y = i.useRef(B);
   i.useEffect(() => {
@@ -173,7 +173,7 @@ function U(e) {
     size: o.CgR.DYNAMIC,
     parentComponent: "ScheduleEventModal",
     "data-migration-pending": true,
-    children: [!W && X ? (0, l.jsx)(M, {
+    children: [!W && X ? (0, l.jsx)(U, {
       modal: q.current
     }) : null, (0, l.jsxs)(o.hzk, {
       className: R.content,
@@ -189,7 +189,7 @@ function U(e) {
         activeSlide: F,
         width: 440,
         onSlideReady: e => {
-          L(e === F)
+          M(e === F)
         },
         children: [(0, l.jsx)(o.Mi4, {
           id: 0,
@@ -197,7 +197,7 @@ function U(e) {
             guildId: t,
             guildEvent: n,
             validationErrorMessage: d.entity,
-            isSlideReady: U,
+            isSlideReady: L,
             onChange: p
           })
         }), (0, l.jsx)(o.Mi4, {
@@ -209,7 +209,7 @@ function U(e) {
             onChange: p,
             error: v,
             validationErrorMessage: d.schedule,
-            isSlideReady: U
+            isSlideReady: L
           })
         }), (0, l.jsx)(o.Mi4, {
           id: 2,
@@ -260,7 +260,7 @@ function U(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     guildId: t,
     guildScheduledEventId: r,
@@ -291,13 +291,13 @@ function L(e) {
         }, k.t4x.GUILD_EVENTS), n ? I(e) : u()
       })(e.body), e
     }),
-    M = i.useMemo(() => (0, Z.Z)(v, P), [v, P]);
-  return (0, l.jsx)(U, {
+    U = i.useMemo(() => (0, Z.Z)(v, P), [v, P]);
+  return (0, l.jsx)(L, {
     guildId: t,
     guildEvent: v,
     guildEventId: r,
     isEdit: P,
-    formErrors: M,
+    formErrors: U,
     transitionState: a,
     loading: R,
     error: G,

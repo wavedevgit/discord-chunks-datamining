@@ -98,7 +98,7 @@ function z() {
   null != exports && module.push(exports);
   let n = Chunk944486.Z.getVoiceChannelId();
   null == require || module.includes(require) || module.push(require);
-  let r = Chunk258609.Z.getRemoteSessionId(),
+  let r = Chunk258609.default.getRemoteSessionId(),
     i = Chunk979651.Z.getVoiceStateForSession(Chunk314897.default.getId(), r);
   (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(x, module).forEach(ei);
   let a = s().difference(module, x);
@@ -482,7 +482,7 @@ function eM(e) {
 }
 class ej extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {

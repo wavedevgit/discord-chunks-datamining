@@ -11,7 +11,11 @@ var Chunk72703 = require("./72703.js");
 
 function i(e) {
   let t = {};
-  return true !== e.pendingBanner && (t.banner = e.pendingBanner), null != e.pendingBio && (t.bio = e.pendingBio), null != e.pendingPronouns && (t.pronouns = e.pendingPronouns), true !== e.pendingAccentColor && (t.accent_color = e.pendingAccentColor), true !== e.pendingThemeColors && (t.theme_colors = e.pendingThemeColors), true !== e.pendingProfileEffect && (t.profile_effect_id = null != e.pendingProfileEffect ? e.pendingProfileEffect.id : null), t
+  if (true !== e.pendingBanner && (t.banner = e.pendingBanner), null != e.pendingBio && (t.bio = e.pendingBio), null != e.pendingPronouns && (t.pronouns = e.pendingPronouns), true !== e.pendingAccentColor && (t.accent_color = e.pendingAccentColor), true !== e.pendingThemeColors && (t.theme_colors = e.pendingThemeColors), true !== e.pendingProfileEffect) {
+    var n, r;
+    t.profile_effect_sku_id = null != (r = null == (n = e.pendingProfileEffect) ? true : n.skuId) ? r : null
+  }
+  return t
 }
 
 function a(e) {

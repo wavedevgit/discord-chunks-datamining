@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk473385 = require("./473385.js");
+  Chunk356683 = require("./356683.js");
 
 function m(e) {
   let {
@@ -26,7 +26,7 @@ function m(e) {
     username: g,
     user: E,
     guild: b
-  } = e, y = null != n ? n : m, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(_.p9.TIER_2), {
+  } = e, y = null != n ? n : m, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(_.PremiumTypes.TIER_2), {
     enabled: I
   } = o.wL.useConfig({
     location: "NicknameSection"

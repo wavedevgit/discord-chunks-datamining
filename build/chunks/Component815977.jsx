@@ -1,8 +1,8 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 815977, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => R
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,9 +33,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk707076 = require("./707076.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk344037 = require("./344037.js");
+  Chunk24773 = require("./24773.js");
 
-function Z() {
+function R() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId());
   return null == module ? null : (0, Chunk951288.jsx)(D, {
     guildId: module
@@ -52,7 +52,7 @@ function D(e) {
       return null != e && !C.Z.isEducationUpsellDismissed(e)
     }),
     v = (0, y.Z)(n),
-    Z = !v && f;
+    R = !v && f;
   switch (i.useEffect(() => {
       (0, g.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
@@ -87,8 +87,8 @@ function D(e) {
       })
   }
   return (0, r.jsxs)("div", {
-    className: s()(R.onboardingContainer, {
-      [R.upsellOnTop]: Z
+    className: s()(Z.onboardingContainer, {
+      [Z.upsellOnTop]: R
     }),
     children: [!v && l !== O.PG.LANDING && (0, r.jsx)(A, {
       setOnboardingStep: b.$K,
@@ -96,7 +96,7 @@ function D(e) {
       homeSettingsEnabled: true
     }), v && l !== O.PG.LANDING && (0, r.jsx)("div", {
       children: (0, r.jsxs)(c.zx, {
-        innerClassName: R.backButton,
+        innerClassName: Z.backButton,
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.MIN,
         onClick: () => {
@@ -109,7 +109,7 @@ function D(e) {
           }(0, _.NB)(), (0, x.BG)(), (0, j.bj)(), (0, b.$K)(O.PG.LANDING)
         },
         children: [(0, r.jsx)(m.Z, {
-          className: R.arrow,
+          className: Z.arrow,
           direction: m.Z.Directions.LEFT
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
@@ -132,13 +132,13 @@ function A(e) {
     if (!l) return () => n(e)
   }, c = (0, a.e7)([v.Z], () => v.Z.advancedMode);
   return (0, r.jsxs)("div", {
-    className: R.progressContainer,
+    className: Z.progressContainer,
     children: [(0, r.jsxs)(d.P3F, {
-      className: s()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(Z.progressBarContainer, Z.clickableProgressBar),
       onClick: o(O.PG.SAFETY_CHECK),
       children: [(0, r.jsx)("div", {
-        className: s()(R.progressBar, {
-          [R.progressBarCurrent]: t === O.PG.SAFETY_CHECK
+        className: s()(Z.progressBar, {
+          [Z.progressBarCurrent]: t === O.PG.SAFETY_CHECK
         })
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.SAFETY_CHECK ? "text-brand" : "text-muted",
@@ -148,11 +148,11 @@ function A(e) {
         })
       })]
     }), (0, r.jsxs)(d.P3F, {
-      className: s()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(Z.progressBarContainer, Z.clickableProgressBar),
       onClick: o(O.PG.DEFAULT_CHANNELS),
       children: [(0, r.jsx)("div", {
-        className: s()(R.progressBar, {
-          [R.progressBarCurrent]: t === O.PG.DEFAULT_CHANNELS
+        className: s()(Z.progressBar, {
+          [Z.progressBarCurrent]: t === O.PG.DEFAULT_CHANNELS
         })
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
@@ -164,11 +164,11 @@ function A(e) {
         })
       })]
     }), (0, r.jsxs)(d.P3F, {
-      className: s()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(Z.progressBarContainer, Z.clickableProgressBar),
       onClick: o(O.PG.CUSTOMIZATION_QUESTIONS),
       children: [(0, r.jsx)("div", {
-        className: s()(R.progressBar, {
-          [R.progressBarCurrent]: t === O.PG.CUSTOMIZATION_QUESTIONS
+        className: s()(Z.progressBar, {
+          [Z.progressBarCurrent]: t === O.PG.CUSTOMIZATION_QUESTIONS
         })
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
@@ -180,11 +180,11 @@ function A(e) {
         })
       })]
     }), i && (0, r.jsxs)(d.P3F, {
-      className: s()(R.progressBarContainer, R.clickableProgressBar),
+      className: s()(Z.progressBarContainer, Z.clickableProgressBar),
       onClick: o(O.PG.HOME_SETTINGS),
       children: [(0, r.jsx)("div", {
-        className: s()(R.progressBar, {
-          [R.progressBarCurrent]: t === O.PG.HOME_SETTINGS
+        className: s()(Z.progressBar, {
+          [Z.progressBarCurrent]: t === O.PG.HOME_SETTINGS
         })
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.HOME_SETTINGS ? "text-brand" : "text-muted",
@@ -194,10 +194,10 @@ function A(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: R.progressBarContainer,
+      className: Z.progressBarContainer,
       children: [(0, r.jsx)("div", {
-        className: s()(R.progressBar, {
-          [R.progressBarCurrent]: t === O.PG.REVIEW
+        className: s()(Z.progressBar, {
+          [Z.progressBarCurrent]: t === O.PG.REVIEW
         })
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.REVIEW ? "text-brand" : "text-muted",

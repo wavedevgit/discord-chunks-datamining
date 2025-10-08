@@ -24,7 +24,7 @@ let d = {},
 
 function _(e) {
   var t;
-  return (0, l.kt)({
+  return (0, l.createChannelRecord)({
     id: e.id,
     name: null != (t = e.nickname) ? t : "",
     type: c.d4z.GUILD_CATEGORY,

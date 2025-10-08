@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk132547 = require("./132547.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk166893 = require("./166893.js");
+  Chunk790595 = require("./790595.js");
 let k = function(e) {
   let {
     entrypoint: t = x.EZ.UserSettings
@@ -57,7 +57,7 @@ let k = function(e) {
     H = (0, g.V)(x.nS),
     [Y, W] = i.useState(true),
     K = i.useRef(0),
-    z = (0, A.M5)(B, x.p9.TIER_2),
+    z = (0, A.M5)(B, x.PremiumTypes.TIER_2),
     q = (0, R.ZP)({
       location: "PremiumMarketingPage"
     }),

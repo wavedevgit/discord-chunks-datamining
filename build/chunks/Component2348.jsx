@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 2348, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk868814 = require("./868814.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk813878 = require("./813878.js");
+  Chunk333999 = require("./333999.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -112,7 +112,7 @@ function N(e) {
 }
 let E = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk813878.separator
+      className: Chunk333999.separator
     })
   }),
   I = Chunk647438.memo(function(e) {
@@ -133,11 +133,11 @@ let E = Chunk647438.memo(function() {
       isFirstChannel: h,
       isLastChannel: N,
       tooltipDirection: S = "right"
-    } = e, T = (0, b.Mf)(t.id, i.id), P = (0, b.t4)(t.id, i.id), w = (0, b.EH)(t.id, i.id), R = (0, b.lL)(l.id, i.id), Z = null != (0, j.Z)(l).find(e => e.id === t.id), D = (0, p.mn)(t.id);
+    } = e, T = (0, b.Mf)(t.id, i.id), P = (0, b.t4)(t.id, i.id), w = (0, b.EH)(t.id, i.id), Z = (0, b.lL)(l.id, i.id), R = null != (0, j.Z)(l).find(e => e.id === t.id), D = (0, p.mn)(t.id);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.u, {
         asContainer: true,
-        __unsupportedReactNodeAsText: null != w ? w : R,
+        __unsupportedReactNodeAsText: null != w ? w : Z,
         delay: 500,
         position: S,
         children: (0, r.jsxs)(d.P3F, {
@@ -169,7 +169,7 @@ let E = Chunk647438.memo(function() {
             }) : (0, u.jW)(e, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("75387"), n.e("79695"), n.e("90508"), n.e("6915"), n.e("33285"), n.e("46154"), n.e("64838"), n.e("43342"), n.e("91315"), n.e("30474"), n.e("24358"), n.e("38342"), n.e("91053"), n.e("35755"), n.e("92592"), n.e("37220"), n.e("18320"), n.e("95546"), n.e("50118"), n.e("93077"), n.e("63373"), n.e("93338")]).then(n.bind(n, 373651));
+              } = await Promise.all([n.e("75387"), n.e("79695"), n.e("90508"), n.e("6915"), n.e("33285"), n.e("46154"), n.e("64838"), n.e("43342"), n.e("91315"), n.e("30474"), n.e("24358"), n.e("38342"), n.e("63962"), n.e("35755"), n.e("56785"), n.e("37220"), n.e("18320"), n.e("95546"), n.e("42300"), n.e("93077"), n.e("63373"), n.e("57955")]).then(n.bind(n, 373651));
               return n => (0, r.jsx)(e, y(O({}, n), {
                 channel: t,
                 guild: l
@@ -192,7 +192,7 @@ let E = Chunk647438.memo(function() {
                   color: P ? "text-muted" : "text-default",
                   children: t.name
                 })
-              }), Z ? (0, r.jsxs)(r.Fragment, {
+              }), R ? (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(I, {
                   index: 0
                 }), (0, r.jsx)(d.Text, {

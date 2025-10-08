@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk572065 = require("./572065.js");
+  Chunk605299 = require("./605299.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -119,7 +119,7 @@ function w(e) {
       analyticsLocations: I,
       parentAnalyticsLocation: S
     } = (0, s.ZP)(),
-    N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)),
+    N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
     w = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
     D = i.useMemo(() => null != n ? [n] : [], [n]),
     L = i.useCallback(() => {

@@ -44,7 +44,7 @@ class u {
     return null != (t = null == (e = this.themeColors) ? true : module[0]) ? exports : this.accentColor
   }
   get canUsePremiumProfileCustomization() {
-    return Chunk74538.ZP.isPremiumAtLeast(this.premiumType, Chunk474936.p9.TIER_2)
+    return Chunk74538.ZP.isPremiumAtLeast(this.premiumType, Chunk474936.PremiumTypes.TIER_2)
   }
   get canEditThemes() {
     return this.canUsePremiumProfileCustomization

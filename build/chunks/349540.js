@@ -26,7 +26,7 @@ class u extends Chunk147913.Z {
   }
   maybeFetchActiveOutboundPromotions() {
     let e = Chunk594174.default.getCurrentUser(),
-      t = Chunk74538.ZP.isPremiumExactly(module, Chunk474936.p9.TIER_2),
+      t = Chunk74538.ZP.isPremiumExactly(module, Chunk474936.PremiumTypes.TIER_2),
       n = Chunk163684.g.getCurrentConfig({
         location: "maybeFetchActiveOutboundPromotions"
       }, {
@@ -41,7 +41,7 @@ class u extends Chunk147913.Z {
       EXPERIMENTS_FETCH_SUCCESS: this.onPostConnectionOpen.bind(this)
     }), c(this, "maybeFetchBogoPromotion", async () => {
       let e = i.default.getCurrentUser();
-      a.ZP.isPremiumExactly(e, l.p9.TIER_2)
+      a.ZP.isPremiumExactly(e, l.PremiumTypes.TIER_2)
     })
   }
 }

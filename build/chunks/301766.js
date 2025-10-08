@@ -49,11 +49,11 @@ class o extends Chunk81825.Z {
     switch (this.skuId) {
       case Chunk474936.Si.LEGACY:
       case Chunk474936.Si.TIER_2:
-        return Chunk474936.p9.TIER_2;
+        return Chunk474936.PremiumTypes.TIER_2;
       case Chunk474936.Si.TIER_1:
-        return Chunk474936.p9.TIER_1;
+        return Chunk474936.PremiumTypes.TIER_1;
       case Chunk474936.Si.TIER_0:
-        return Chunk474936.p9.TIER_0;
+        return Chunk474936.PremiumTypes.TIER_0;
       default:
         return null
     }

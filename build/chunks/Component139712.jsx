@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk124165 = require("./124165.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk994397 = require("./994397.js");
+  Chunk450644 = require("./450644.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,11 +87,13 @@ function E(e) {
     cancelText: u.intl.string(u.t["ETE/oK"]),
     onConfirm: I,
     confirmButtonColor: a.zx.Colors.BRAND,
-    children: (0, r.jsx)(a.Gu, {
+    children: (0, r.jsx)("div", {
       className: d.responseOptions,
-      value: E,
-      options: (0, l.pF)(),
-      onChange: e => b(e.value)
+      children: (0, r.jsx)(o.FXm, {
+        value: E,
+        options: (0, l.pF)(),
+        onChange: e => b(e)
+      })
     })
   }))
 }

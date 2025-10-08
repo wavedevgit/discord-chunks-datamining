@@ -42,9 +42,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179598 = require("./179598.js");
+  Chunk707449 = require("./707449.js");
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var A = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(A);
@@ -63,7 +63,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var A = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -172,7 +172,7 @@ function J(e) {
     saveProductWithAttachments: eX,
     hasUnsavedAttachmentChanges: eQ,
     cancelUnusedUploads: eS
-  } = (0, O.P)(), ez = (null == eo ? true : eo.attachments) != null && (null == eo ? true : eo.attachments.length) > 0, ew = null != eW ? eW : ey, eR = null != eZ && "published" in eZ, eL = null != eZ && !eR, ek = null != (b = null == eo ? true : eo.role_id) ? b : null, [eD, eB] = n.useState(), eE = null != eD || null != ek, eG = (0, d.e7)([j.Z], () => null != ek && null !== eD ? j.Z.getRole(eA, ek) : null != eD ? eD : true, [eD, ek, eA]), eY = "";
+  } = (0, O.P)(), ez = (null == eo ? true : eo.attachments) != null && (null == eo ? true : eo.attachments.length) > 0, ew = null != eW ? eW : ey, eR = null != eZ && "published" in eZ, eL = null != eZ && !eR, eD = null != (b = null == eo ? true : eo.role_id) ? b : null, [ek, eB] = n.useState(), eE = null != ek || null != eD, eG = (0, d.e7)([j.Z], () => null != eD && null !== ek ? j.Z.getRole(eA, eD) : null != ek ? ek : true, [ek, eD, eA]), eY = "";
   eE && eT ? eY = R.intl.string(R.t.ih4QMT) : eE ? eY = R.intl.string(R.t.o9xphY) : eT && (eY = R.intl.string(R.t.DWYJub));
   let eH = () => {
       eK(false), eS()
@@ -192,10 +192,10 @@ function J(e) {
       image: ex,
       imageName: eV,
       isImageChanged: eP,
-      newRoleParams: eD,
+      newRoleParams: ek,
       hasSavedAttachments: ez,
       hasUnsavedAttachmentChanges: eQ
-    }), [eo, eh, eC, eq, ex, eV, eP, eD, ez, eQ]),
+    }), [eo, eh, eC, eq, ex, eV, eP, ek, ez, eQ]),
     e9 = n.useMemo(() => e$ || null == eM || "publish" === eM || null != ew ? null : (0, r.jsx)(u.oXn, {
       className: L.successNotice,
       children: (0, r.jsx)(f.Z, {
@@ -226,21 +226,21 @@ function J(e) {
       }) : ea()
     }, [ea, e$]);
   n.useEffect(() => {
-    (0, u.oav)(S.Yz, e => (0, r.jsx)(_, k({
+    (0, u.oav)(S.Yz, e => (0, r.jsx)(_, D({
       guildId: eA,
       productId: el
     }, e)), e6)
   }, [eA, e6, el]);
-  let e7 = async e => {
+  let e8 = async e => {
     let t = (0, F.pM)({
-      newRoleParams: eD
+      newRoleParams: ek
     });
     if (eI(t), null != t) return;
     let A = await eX(e);
     if (eF(false), null != A) {
-      if (null != e.name && ev(A.name), null != e.description && eb(A.description), null != eD) {
+      if (null != e.name && ev(A.name), null != e.description && eb(A.description), null != ek) {
         let e = A.role_id;
-        o()(null != e, "Cannot update role without role ID"), await g.Z.updateRole(eA, e, eD)
+        o()(null != e, "Cannot update role without role ID"), await g.Z.updateRole(eA, e, ek)
       }
       eB(true), ei(A.id), "published" in e && true === e.published && ea()
     }
@@ -253,7 +253,7 @@ function J(e) {
   }, [ew, eA, ec]), n.useEffect(() => {
     e$ && eJ(true)
   }, [e$]);
-  let e8 = n.useRef(null),
+  let e7 = n.useRef(null),
     e2 = !e3 || !ed && es >= S.dD;
   return (0, r.jsxs)(u.Y0X, {
     transitionState: en,
@@ -290,7 +290,7 @@ function J(e) {
       children: [(0, r.jsx)(u.zJl, {
         children: (0, r.jsxs)("div", {
           className: L.productFieldsSection,
-          ref: e8,
+          ref: e7,
           children: [(0, r.jsx)(u.oil, {
             label: R.intl.string(R.t.Hsk7xc),
             error: null == ew ? true : ew.getFirstFieldErrorMessage("name"),
@@ -341,7 +341,7 @@ function J(e) {
             children: (0, r.jsx)(N.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e8.current) || e.scrollIntoView({
+                null == (e = e7.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -349,10 +349,10 @@ function J(e) {
             })
           }) : null, eE ? (0, r.jsx)(Q.ZP, {
             error: null != (et = null == ew ? true : ew.getFirstFieldErrorMessage(F.NB)) ? et : true,
-            newRoleParams: eD,
+            newRoleParams: ek,
             setNewRoleParams: eB,
             guildId: eA,
-            listingRoleId: ek,
+            listingRoleId: eD,
             productId: el
           }) : null]
         })
@@ -368,7 +368,7 @@ function J(e) {
             }) : R.intl.string(R.t["Ax89/f"]),
             published: ed,
             onClick: () => {
-              o()(e3, "Attempting to publish/unpublish when not allowed"), eJ(ed ? "unpublish" : "publish"), e7(D(k({}, e_), {
+              o()(e3, "Attempting to publish/unpublish when not allowed"), eJ(ed ? "unpublish" : "publish"), e8(k(D({}, e_), {
                 published: !ed
               }))
             },
@@ -415,8 +415,8 @@ function J(e) {
             onChange: e => {
               e ? eB((0, Q.YP)()) : eB(true)
             },
-            warning: null === eD ? (0, r.jsx)(Q.aN, {}) : true,
-            disabled: null != ek
+            warning: null === ek ? (0, r.jsx)(Q.aN, {}) : true,
+            disabled: null != eD
           }), (0, r.jsx)(Y, {
             text: R.intl.string(R.t.C6wP2d),
             value: eT,
@@ -425,7 +425,7 @@ function J(e) {
                 let {
                   ConfirmModal: e
                 } = await Promise.resolve().then(A.bind(A, 481060));
-                return t => (0, r.jsx)(e, D(k({}, t), {
+                return t => (0, r.jsx)(e, k(D({}, t), {
                   header: R.intl.string(R.t["2Wihyc"]),
                   confirmText: R.intl.string(R.t.N86XcH),
                   cancelText: R.intl.string(R.t["ETE/oK"]),
@@ -447,7 +447,7 @@ function J(e) {
             disabled: !e1,
             loading: eL,
             onClick: () => {
-              o()(e1, "cannot save changes for published product without adding all fields"), eJ("update_publish"), e7(e_)
+              o()(e1, "cannot save changes for published product without adding all fields"), eJ("update_publish"), e8(e_)
             }
           }) : (0, r.jsx)(u.zxk, {
             variant: "secondary",
@@ -455,7 +455,7 @@ function J(e) {
             disabled: !e0,
             loading: eL,
             onClick: () => {
-              o()(e0, "cannot save changes without name or price tier"), eJ("draft"), e7(e_)
+              o()(e0, "cannot save changes without name or price tier"), eJ("draft"), e8(e_)
             }
           })
         })]
@@ -474,6 +474,6 @@ function _(e) {
     guildId: e.guildId,
     editSkuId: null != (t = e.productId) ? t : true,
     onFileSizeError: () => (0, b.Z)(S.ve),
-    children: (0, r.jsx)(J, k({}, e))
+    children: (0, r.jsx)(J, D({}, e))
   })
 }

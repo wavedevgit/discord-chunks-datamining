@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 641115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,9 +27,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk37113 = require("./37113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk542257 = require("./542257.js"),
-  Chunk381994 = require("./381994.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk79985 = require("./79985.js"),
+  Chunk763021 = require("./763021.js"),
+  Chunk10198 = require("./10198.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -79,20 +79,20 @@ function E(e) {
 
 function R() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk381994.toolTipTextContainer,
+    className: Chunk763021.toolTipTextContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
       color: Chunk436774.JX.PREMIUM_TIER_2,
-      className: Chunk381994.premiumIcon
+      className: Chunk763021.premiumIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk381994.upsellText,
+      className: Chunk763021.upsellText,
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk388032.t.sEAnVF)
     })]
   })
 }
 
-function k(e) {
+function A(e) {
   let t, n, {
       type: i,
       selected: l,
@@ -145,7 +145,7 @@ function k(e) {
   }
 }
 
-function A(e) {
+function k(e) {
   let {
     onClose: t,
     selectedPreset: n,
@@ -154,7 +154,7 @@ function A(e) {
     onResolutionChange: o,
     onFPSChange: x,
     onPresetChange: R,
-    targetGuildPremiumTier: A,
+    targetGuildPremiumTier: k,
     captureDeviceSelected: M
   } = e, D = (0, c.e7)([j.default], () => {
     let e = j.default.getCurrentUser();
@@ -163,40 +163,40 @@ function A(e) {
     location: G
   } = (0, m.O)(), U = (0, h.Zq)({
     autoTrackExposure: false
-  }), W = (0, g.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? y.z8 : y.WC, Y = T(P({}, G), {
+  }), W = (0, g.B4)(), z = !B && !U, [F, H] = i.useState(false), V = M ? C.z8 : C.WC, Y = T(P({}, G), {
     section: O.jXE.STREAM_SETTINGS
   }), J = (0, r.jsx)(d.hE, {
-    buttons: V.map(e => k({
+    buttons: V.map(e => A({
       type: e,
       selected: e.value === l,
-      needsPremium: !(0, C.Z)(n, e.value, s, D, A, L),
-      needsDemo: W && e.value !== y.LY.RESOLUTION_720,
+      needsPremium: !(0, S.Z)(n, e.value, s, D, k, L),
+      needsDemo: W && e.value !== C.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
       onClose: t,
       setIsHovering: H
     }))
   }), X = (0, r.jsx)(d.hE, {
-    buttons: y.k0.map(e => k({
+    buttons: C.k0.map(e => A({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, C.Z)(n, l, e.value, D, A, L),
-      needsDemo: W && e.value === y.ws.FPS_60,
+      needsPremium: !(0, S.Z)(n, l, e.value, D, k, L),
+      needsDemo: W && e.value === C.ws.FPS_60,
       analyticsLocation: Y,
       onClick: () => x(e.value),
       onClose: t,
       setIsHovering: H
     }))
   }), K = [{
-    value: y.tI.PRESET_VIDEO,
+    value: C.tI.PRESET_VIDEO,
     label: w.intl.string(w.t.HcwHc3)
   }, ...M ? [] : [{
-    value: y.tI.PRESET_DOCUMENTS,
+    value: C.tI.PRESET_DOCUMENTS,
     label: w.intl.string(w.t["/RfohI"])
   }], {
-    value: y.tI.PRESET_CUSTOM,
+    value: C.tI.PRESET_CUSTOM,
     label: w.intl.string(w.t["+eOtrK"])
-  }], q = n === y.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
+  }], q = n === C.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       children: (0, r.jsx)(u.xJW, {
         title: w.intl.string(w.t.rHyPXl),
@@ -209,11 +209,11 @@ function A(e) {
           })
         })
       })
-    }), z ? (0, r.jsx)(S.Z, {
+    }), z ? (0, r.jsx)(y.Z, {
       message: w.intl.string(w.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, W && (0, r.jsx)(S.c, {})]
+    }) : null, W && (0, r.jsx)(y.c, {})]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(u.xJW, {
@@ -227,11 +227,11 @@ function A(e) {
         titleClassName: Z.formItemTitleSlim,
         children: X
       })]
-    }), z ? (0, r.jsx)(S.Z, {
+    }), z ? (0, r.jsx)(y.Z, {
       onClose: t,
       openStreamUpsellModal: E,
       glow: F
-    }) : null, W && (0, r.jsx)(S.c, {})]
+    }) : null, W && (0, r.jsx)(y.c, {})]
   });
   return (0, r.jsx)(f.Z, T(P({}, Y), {
     children: (0, r.jsx)(u.xJW, {

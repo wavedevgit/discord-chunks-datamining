@@ -76,7 +76,7 @@ let V = e => {
     let X = (0, a.e7)([b.default], () => b.default.getCurrentUser()),
       J = (0, a.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
       $ = (0, E.Qo)(X, J),
-      ee = (0, E.M5)(X, U.p9.TIER_2),
+      ee = (0, E.M5)(X, U.PremiumTypes.TIER_2),
       et = (0, l.JA)("nitro"),
       en = (0, j.N)(),
       er = (0, N.Ng)(),

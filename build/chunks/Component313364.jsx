@@ -1,8 +1,8 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 313364, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,15 +31,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk918192 = require("./918192.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk490745 = require("./490745.js"),
-  Chunk630016 = require("./630016.js");
+  Chunk788905 = require("./788905.js"),
+  Chunk551955 = require("./551955.js");
 
-function R(e) {
+function Z(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([x.Z], () => x.Z.getGuild(t)), {
     analyticsLocations: l
-  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), R = (0, u.m)(t), Z = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
   }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
@@ -119,7 +119,7 @@ function R(e) {
           })
         })
       })
-    }), R && null != Z && (0, r.jsxs)(r.Fragment, {
+    }), Z && null != R && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.ZMr, {
         isVisible: true,
         onClick: D
@@ -129,8 +129,8 @@ function R(e) {
           width: S.$Y6
         },
         children: (0, r.jsx)(g.Z, {
-          userId: Z.details.userId,
-          guildId: Z.details.guildId,
+          userId: R.details.userId,
+          guildId: R.details.guildId,
           onClose: D
         })
       })]

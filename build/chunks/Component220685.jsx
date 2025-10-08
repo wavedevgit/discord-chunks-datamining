@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 220685, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk584825 = require("./584825.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk737543 = require("./737543.js");
+  Chunk618747 = require("./618747.js");
 let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
   N = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
   E = y[4],
@@ -36,7 +36,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     } = e, c = (0, _.YB)(l.id), {
       loading: x,
       updateSubscriptionsSettings: j
-    } = (0, _.QV)(), [I, S] = i.useState(l.features.has(v.oNc.CREATOR_STORE_PAGE)), [T, P] = i.useState(null != (t = null == c ? true : c.store_page_primary_color) ? t : E), [w, R] = i.useState(null == c ? true : c.store_page_trailer_url), Z = null == w || null != w.match(N), [D, A] = i.useState(null != (n = null == c ? true : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? true : c.store_page_slug).current, k = I !== l.features.has(v.oNc.CREATOR_STORE_PAGE) || (null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color) || w !== (null == c ? true : c.store_page_trailer_url) || null != D && D !== (null == c ? true : c.store_page_show_subscriber_count), G = async () => {
+    } = (0, _.QV)(), [I, S] = i.useState(l.features.has(v.oNc.CREATOR_STORE_PAGE)), [T, P] = i.useState(null != (t = null == c ? true : c.store_page_primary_color) ? t : E), [w, Z] = i.useState(null == c ? true : c.store_page_trailer_url), R = null == w || null != w.match(N), [D, A] = i.useState(null != (n = null == c ? true : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? true : c.store_page_slug).current, k = I !== l.features.has(v.oNc.CREATOR_STORE_PAGE) || (null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color) || w !== (null == c ? true : c.store_page_trailer_url) || null != D && D !== (null == c ? true : c.store_page_show_subscriber_count), G = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
       I !== l.features.has(v.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = I), ((null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color)) && (e.store_page_primary_color = T), w !== (null == c ? true : c.store_page_trailer_url) && (e.store_page_trailer_url = w), D !== (null == c ? true : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = D), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && b.default.track(v.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
@@ -61,7 +61,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }, (0, f.hH)(l.id))))
     }, M = v.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), U = null != w && w === (null == c ? true : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: B
-    } = (0, h.gX)(l.id), F = B || !Z, H = !I && !a;
+    } = (0, h.gX)(l.id), F = B || !R, H = !I && !a;
     return (0, r.jsxs)(u.Kqy, {
       gap: 24,
       children: [(0, r.jsx)(u.vwX, {
@@ -125,10 +125,10 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         label: C.intl.string(C.t.k2yRvb),
         description: C.intl.string(C.t["amd99/"]),
         value: null != w ? w : true,
-        onChange: e => R("" === e ? null : e),
-        error: Z ? null : C.intl.string(C.t["1kL79f"]),
+        onChange: e => Z("" === e ? null : e),
+        error: R ? null : C.intl.string(C.t["1kL79f"]),
         placeholder: C.intl.string(C.t["+I4gdX"]),
-        trailing: Z && U ? u.owK : true,
+        trailing: R && U ? u.owK : true,
         disabled: B
       }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.C3N, {
         label: C.intl.string(C.t.AU2HU1),
@@ -149,7 +149,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             submitting: x,
             onReset: () => {
               var e, t;
-              S(l.features.has(v.oNc.CREATOR_STORE_PAGE)), P(null != (e = null == c ? true : c.store_page_primary_color) ? e : E), R(null == c ? true : c.store_page_trailer_url), A(null != (t = null == c ? true : c.store_page_show_subscriber_count) && t)
+              S(l.features.has(v.oNc.CREATOR_STORE_PAGE)), P(null != (e = null == c ? true : c.store_page_primary_color) ? e : E), Z(null == c ? true : c.store_page_trailer_url), A(null != (t = null == c ? true : c.store_page_show_subscriber_count) && t)
             },
             onSave: G,
             disabled: F

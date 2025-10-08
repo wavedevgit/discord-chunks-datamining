@@ -39,9 +39,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk474936 = require("./474936.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk696162 = require("./696162.js"),
+  Chunk2482 = require("./2482.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640292 = require("./640292.js");
+  Chunk998193 = require("./998193.js");
 
 function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,7 +93,7 @@ function z(e) {
     orientation: d.y.VERTICAL_TOP
   });
   (0, L.useSyncMessages)(F.messagesLoader);
-  let Q = (0, s.e7)([h.default], () => (0, _.I5)(h.default.getCurrentUser())),
+  let Q = (0, s.e7)([h.default], () => (0, P.I5)(h.default.getCurrentUser())),
     J = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()),
     [$, ee] = i.useState(false),
     [et, en] = i.useState(false),
@@ -135,7 +135,7 @@ function z(e) {
     }),
     es = i.useRef(null);
   (0, u.ZP)(() => {
-    (0, S.r5)(), ei && (0, w.jG)(), x.default.track(M.rMx.VOICE_FILTER_PICKER_OPENED, {
+    (0, T.r5)(), ei && (0, w.jG)(), x.default.track(M.rMx.VOICE_FILTER_PICKER_OPENED, {
       active_voice_filter_id: null != er ? er : null
     })
   });
@@ -199,7 +199,7 @@ function z(e) {
             children: (0, r.jsx)(y.p, {
               showUpsell: true,
               text: L.intl.format(L.t["XMDm8/"], {
-                nitroTierName: (0, P.Px)(R.p9.TIER_2),
+                nitroTierName: (0, _.Px)(R.PremiumTypes.TIER_2),
                 onClick: () => (0, j.i)()
               }),
               button: L.intl.string(L.t.cRCCJy),
@@ -215,7 +215,7 @@ function z(e) {
             })
           })
         })]
-      }), (0, r.jsx)(N.l, {}), (0, r.jsx)(T.R, {}), (0, r.jsx)(D.y, {}), (0, r.jsxs)("div", {
+      }), (0, r.jsx)(N.l, {}), (0, r.jsx)(S.R, {}), (0, r.jsx)(D.y, {}), (0, r.jsxs)("div", {
         className: l()(U.voiceFiltersFooter, {
           [U.hasActiveVoice]: null != er
         }),

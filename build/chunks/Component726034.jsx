@@ -37,9 +37,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk684555 = require("./684555.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk461917 = require("./461917.js");
+  Chunk615676 = require("./615676.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -107,17 +107,17 @@ function H(e) {
 
 function Y() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk461917.headerContainer,
+    className: Chunk615676.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk119475.default["AsmU8/"])
+      children: Chunk388032.intl.string(Chunk684555.default["AsmU8/"])
     }), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t["5AFxuL"]),
       children: (0, Chunk951288.jsx)(Chunk481060.SrA, {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: Chunk461917.nitroIcon
+        colorClass: Chunk615676.nitroIcon
       })
     }), (0, Chunk951288.jsx)(H, {})]
   })
@@ -138,7 +138,7 @@ function W(e) {
 function K(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, O.m)(M.p9.TIER_2);
+  } = e, n = (0, O.m)(M.PremiumTypes.TIER_2);
   return (0, r.jsxs)("div", {
     className: U.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -273,7 +273,7 @@ function J(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, O.m)(M.p9.TIER_2);
+  } = e, i = (0, O.m)(M.PremiumTypes.TIER_2);
   return (0, P.hf)(i, h.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: U.coachmarkFooterContainer,
     children: [(0, r.jsx)(X, {
@@ -302,7 +302,7 @@ function $(e) {
     onSaveTheme: t,
     canApply: n,
     metadata: i
-  } = e, a = (0, O.m)(M.p9.TIER_2);
+  } = e, a = (0, O.m)(M.PremiumTypes.TIER_2);
   (0, P.hf)(a, h.Z.CUSTOM_THEMES_EDITOR);
   let o = () => {
     (0, P.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? true : i.from) === g.tE.SETTING ? ((0, S.openUserSettings)(T.n.APPEARANCE_PANEL, {

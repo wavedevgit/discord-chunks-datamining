@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 548647, original params: e,n,t (module,exports,require) **/
+/** chunk id: 548647, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
   n: () => x
 });
@@ -14,14 +14,14 @@ var Chunk647438 = require("./647438.js"),
 let x = () => {
   let e = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getAppealClassificationId()),
     n = (0, Chunk613734.YG)(null != module ? module : Chunk981631.lds),
-    t = (0, Chunk451284.P)(),
+    i = (0, Chunk451284.P)(),
     x = (0, Chunk442837.e7)([Chunk236289.Z], () => Chunk236289.Z.getIsDsaEligible());
-  return Chunk647438.useCallback(i => {
-    s.default.track(c.rMx.SAFETY_HUB_ACTION, {
-      action: i,
-      account_standing: t.state,
+  return Chunk647438.useCallback(t => {
+    s.default.track(d.rMx.SAFETY_HUB_ACTION, {
+      action: t,
+      account_standing: i.state,
       classification_ids: null != e ? [Number(e)] : null,
-      source: d.s.AppealIngestion,
+      source: c.s.AppealIngestion,
       is_dsa_eligible: x,
       violation_type: n.violationType
     })

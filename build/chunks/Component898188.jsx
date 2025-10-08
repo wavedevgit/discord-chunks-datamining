@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk216701 = require("./216701.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk530815 = require("./530815.js");
+  Chunk236426 = require("./236426.js");
 let T = 60;
 
 function S(e) {
@@ -74,7 +74,7 @@ function C(e) {
   } = e, {
     channelAction: h,
     completed: b
-  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? true : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == h ? true : h.actionType) === g.oi.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(false), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? true : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == h ? true : h.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(false), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
     b ? s.Z.timing(w, {
       toValue: 0,

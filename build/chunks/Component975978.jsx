@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk694338 = require("./694338.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk727486 = require("./727486.js"),
+  Chunk97269 = require("./97269.js"),
   Chunk298632 = require("./298632.js"),
   Chunk219242 = require("./219242.js");
 
@@ -142,7 +142,7 @@ let C = e => {
     let {
       premiumType: t,
       priceString: n
-    } = e, i = t === E.p9.TIER_0 ? b.intl.string(b.t.tUbSDA) : b.intl.string(b.t.Ipxkoq);
+    } = e, i = t === E.PremiumTypes.TIER_0 ? b.intl.string(b.t.tUbSDA) : b.intl.string(b.t.Ipxkoq);
     return (0, r.jsxs)("div", {
       className: y.planTitleWithPrice,
       children: [(0, r.jsxs)("div", {
@@ -180,14 +180,14 @@ let C = e => {
           scope: "col",
           className: y.cell,
           children: (0, r.jsx)(P, {
-            premiumType: E.p9.TIER_0,
+            premiumType: E.PremiumTypes.TIER_0,
             priceString: (0, f.T4)(t.amount, t.currency)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
           className: y.cell,
           children: (0, r.jsx)(P, {
-            premiumType: E.p9.TIER_2,
+            premiumType: E.PremiumTypes.TIER_2,
             priceString: o
           })
         })]
@@ -199,7 +199,7 @@ let C = e => {
     let n, {
         className: a,
         hidePill: s = false,
-        selectedPlanTier: f = E.p9.TIER_2
+        selectedPlanTier: f = E.PremiumTypes.TIER_2
       } = e,
       {
         analyticsLocations: I
@@ -221,7 +221,7 @@ let C = e => {
         text: e
       })
     }
-    let k = C === E.Si.TIER_0 || f === E.p9.TIER_0;
+    let k = C === E.Si.TIER_0 || f === E.PremiumTypes.TIER_0;
     return (0, r.jsx)(u.Gt, {
       value: I,
       children: (0, r.jsxs)("div", {

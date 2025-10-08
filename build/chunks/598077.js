@@ -136,11 +136,11 @@ class y extends Chunk81825.Z {
       n = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_1),
       r = this.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_2);
     switch (module) {
-      case Chunk474936.p9.TIER_0:
+      case Chunk474936.PremiumTypes.TIER_0:
         return exports;
-      case Chunk474936.p9.TIER_1:
+      case Chunk474936.PremiumTypes.TIER_1:
         return require;
-      case Chunk474936.p9.TIER_2:
+      case Chunk474936.PremiumTypes.TIER_2:
         return Chunk149765;
       default:
         return exports || require || Chunk149765

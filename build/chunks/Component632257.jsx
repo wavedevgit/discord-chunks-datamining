@@ -21,12 +21,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk125321 = require("./125321.js");
+  Chunk525551 = require("./525551.js");
 let y = e => {
     let {
       isAuthenticated: t,
       user: n
-    } = e, i = (0, h.I5)(n, g.p9.TIER_2), s = (0, f.ZP)();
+    } = e, i = (0, h.I5)(n, g.PremiumTypes.TIER_2), s = (0, f.ZP)();
     return (0, r.jsx)(u.Z, {
       section: m.jXE.NAVIGATION,
       children: (0, r.jsx)(c.f6W, {

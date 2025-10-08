@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk375646 = require("./375646.js");
+  Chunk15470 = require("./15470.js");
 let T = function(e) {
   let {
     closeLayer: t,
@@ -131,7 +131,7 @@ let T = function(e) {
             fullWidth: true
           })
         })
-      }), E.ZP.hasFreeBoosts(S, N) || E.ZP.isPremium(S, O.p9.TIER_2) ? (0, r.jsxs)(c.zx, {
+      }), E.ZP.hasFreeBoosts(S, N) || E.ZP.isPremium(S, O.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.zx, {
         "data-migration-pending": true,
         className: o()(I.guildBoostCta, I.guildBoostCtaSecondary),
         innerClassName: o()(I.__invalid_guildBoostCtaContent, I.guildBoostCtaGiftContent),

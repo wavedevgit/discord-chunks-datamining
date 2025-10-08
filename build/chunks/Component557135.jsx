@@ -63,7 +63,7 @@ let v = {
       bypassGuildIdCheck: A = false
     } = e;
     t.isThread() && (await d.Z.unarchiveThreadIfNecessary(t.id), u.Z.hasJoined(t.id) || await d.Z.joinThread(t, "Join Voice"));
-    let C = o.Z.getRemoteSessionId(),
+    let C = o.default.getRemoteSessionId(),
       N = p.Z.getVoiceStateForSession(f.default.getId(), C),
       R = (null == N ? true : N.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),

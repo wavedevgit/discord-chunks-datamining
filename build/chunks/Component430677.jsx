@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
+  Chunk359449 = require("./359449.js");
 let _ = function(e) {
   var t, l, _, v, C;
   let {
@@ -32,10 +32,10 @@ let _ = function(e) {
     onDragStart: S,
     onDragComplete: T,
     onDragReset: P
-  } = e, w = (0, a.e7)([f.Z], () => f.Z.getChannel(y.channelId)), R = (0, a.e7)([h.Z], () => h.Z.getGuild(O)), {
-    customEmoji: Z,
+  } = e, w = (0, a.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, a.e7)([h.Z], () => h.Z.getGuild(O)), {
+    customEmoji: R,
     unicodeEmoji: D
-  } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != Z || null != D, L = x.ZP.getNewMemberActionIconURL({
+  } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = x.ZP.getNewMemberActionIconURL({
     channelId: y.channelId,
     icon: y.icon
   }), k = null;
@@ -56,7 +56,7 @@ let _ = function(e) {
     if (null != O) return (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("7590").then(n.bind(n, 380716));
+      } = await Promise.all([n.e("7590"), n.e("61351")]).then(n.bind(n, 380716));
       return t => {
         var n, i;
         return (0, r.jsx)(e, (n = function(e) {
@@ -94,7 +94,7 @@ let _ = function(e) {
       }
     })
   }, [O, y, N, E, I]);
-  if (null == w || null == R) return null;
+  if (null == w || null == Z) return null;
   let H = null != (C = (0, d.KS)(w)) ? C : c.VL1;
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,

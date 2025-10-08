@@ -18,13 +18,13 @@ function f(e, t) {
   let {
     nonce: f,
     forQRCode: m
-  } = t, p = e.getGuildId(), x = i.Z.getGuild(p), b = (0, l.Lc)({
+  } = t, p = e.getGuildId(), x = a.Z.getGuild(p), b = (0, l.Lc)({
     guildId: null != p ? p : d.aIL,
     channelId: e.id,
     channelName: (0, s.F6)(e, o.default, c.Z),
     guildName: null != (r = null == x ? true : x.name) ? r : u.intl.string(u.t.LJpTRE),
-    muted: a.Z.isSelfMute(),
-    deafened: a.Z.isSelfDeaf(),
+    muted: i.Z.isSelfMute(),
+    deafened: i.Z.isSelfDeaf(),
     nonce: f
   });
   return m ? "".concat((0, n.K0)()).concat(d.ANM.XBOX_HANDOFF, "?").concat(b.toString()) : "".concat(l.bJ, "?").concat(b.toString())

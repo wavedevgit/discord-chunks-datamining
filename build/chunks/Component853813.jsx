@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 853813, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk266665 = require("./266665.jsx"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk760150 = require("./760150.js");
+  Chunk720298 = require("./720298.js");
 
 function I(e) {
   let t, {
@@ -48,8 +48,8 @@ function I(e) {
   i.useEffect(() => {
     null == P && l(null)
   }, [P, l]);
-  let R = (0, a.e7)([g.Z], () => g.Z.getHighestRole(T), [T]),
-    Z = (0, a.e7)([g.Z], () => !g.Z.isRoleHigher(T, R, P)),
+  let Z = (0, a.e7)([g.Z], () => g.Z.getHighestRole(T), [T]),
+    R = (0, a.e7)([g.Z], () => !g.Z.isRoleHigher(T, Z, P)),
     D = i.useRef(null),
     A = (0, a.e7)([h.Z], () => h.Z.getProps().integrations),
     L = {
@@ -99,8 +99,8 @@ function I(e) {
       t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
-        locked: Z,
-        highestRole: R,
+        locked: R,
+        highestRole: Z,
         setSelectedSection: S
       });
       break;
@@ -108,7 +108,7 @@ function I(e) {
       t = (0, r.jsx)(C.ZP, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: R,
         setSelectedSection: S,
         initialSearchQuery: w
       });
@@ -117,7 +117,7 @@ function I(e) {
       t = (0, r.jsx)(j.Z, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: R,
         setSelectedSection: S,
         integrations: null != A ? A : true
       });
@@ -126,7 +126,7 @@ function I(e) {
       t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
-        locked: Z,
+        locked: R,
         setSelectedSection: S
       });
       break;

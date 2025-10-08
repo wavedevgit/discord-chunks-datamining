@@ -1,14 +1,13 @@
 /** Chunk was on 65652 **/
-/** chunk id: 409617, original params: e,n,t (module,exports,require) **/
+/** chunk id: 409617, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -17,104 +16,98 @@ var Chunk951288 = require("./951288.js"),
   Chunk613734 = require("./613734.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk707489 = require("./707489.js"),
-  Chunk186425 = require("./186425.js");
+  Chunk708670 = require("./708670.js"),
+  Chunk428687 = require("./428687.js");
 
-function N(e) {
+function C(e) {
   let {
     className: n,
-    isDsaEligible: t = false,
+    isDsaEligible: i = false,
     onClose: s,
-    onNext: N,
+    onNext: C,
     onBack: j
-  } = e, I = (0, u.U0)(), T = (0, r.e7)([m.Z], () => m.Z.getFreeTextAppealReason()), [E, v] = a.useState(""), [f, k] = a.useState(false);
+  } = e, _ = (0, g.U0)(), E = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [v, I] = a.useState(""), [T, S] = a.useState(false);
   a.useEffect(() => {
-    v(null != T ? T : ""), k(I === g.bK.SOMETHING_ELSE)
-  }, [T, I, t]);
-  let S = g.RY.map(e => ({
+    I(null != E ? E : ""), S(_ === p.bK.SOMETHING_ELSE)
+  }, [E, _, i]);
+  let k = p.RY.map(e => ({
     value: e,
-    name: (0, p.ox)(e)
+    name: (0, m.ox)(e)
   }));
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(d.xBx, {
+  return (0, t.jsxs)(t.Fragment, {
+    children: [(0, t.jsxs)(o.xBx, {
       "data-migration-pending": true,
-      direction: x.Z.Direction.VERTICAL,
-      className: C.header,
+      direction: d.Z.Direction.VERTICAL,
+      className: N.header,
       separator: false,
-      children: [(0, i.jsx)(d.X6q, {
-        className: C.title,
+      children: [(0, t.jsx)(o.X6q, {
+        className: N.title,
         variant: "heading-xl/semibold",
-        children: _.intl.string(_.t["C5q+pa"])
-      }), (0, i.jsx)(d.Text, {
-        className: C.subtitle,
+        children: u.intl.string(u.t["C5q+pa"])
+      }), (0, t.jsx)(o.Text, {
+        className: N.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: _.intl.string(_.t.VEcRh4)
-      }), null != s && (0, i.jsx)(d.olH, {
+        children: u.intl.string(u.t.VEcRh4)
+      }), null != s && (0, t.jsx)(o.olH, {
         "data-migration-pending": true,
-        className: C.closeButton,
+        className: N.closeButton,
         onClick: s
       })]
-    }), (0, i.jsxs)(d.hzk, {
+    }), (0, t.jsxs)(o.hzk, {
       "data-migration-pending": true,
       className: l()(h.modalContent, n),
       paddingFix: false,
-      children: [(0, i.jsx)(o.Gu, {
-        radioPosition: "right",
-        radioItemClassName: C.radioItem,
-        size: o.l7.NOT_SET,
-        value: I,
-        options: S,
+      children: [(0, t.jsx)(o.FXm, {
+        value: _,
+        options: k,
         onChange: e => {
-          let {
-            value: n
-          } = e;
-          k(n === g.bK.SOMETHING_ELSE), n !== g.bK.SOMETHING_ELSE && (v(""), c.Z.dispatch({
+          S(e === p.bK.SOMETHING_ELSE), e !== p.bK.SOMETHING_ELSE && (I(""), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
             userInput: ""
           })), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_SELECT",
-            signal: n
+            signal: e
           })
         }
-      }), t && f && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.Kx8, {
+      }), i && T && (0, t.jsxs)(t.Fragment, {
+        children: [(0, t.jsx)(o.Kx8, {
           rows: 4,
           maxLength: 1024,
-          placeholder: _.intl.string(_.t.bQrZIC),
-          value: E,
-          onChange: v,
+          placeholder: u.intl.string(u.t.bQrZIC),
+          value: v,
+          onChange: I,
           autoFocus: true
-        }), (0, i.jsx)(d.Text, {
+        }), (0, t.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
-          children: _.intl.string(_.t.xfNY3N)
+          children: u.intl.string(u.t.xfNY3N)
         })]
-      }), (0, i.jsx)(d.Text, {
+      }), (0, t.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: h.disclaimer,
-        children: _.intl.format(_.t["8k9GCQ"], {})
+        children: u.intl.format(u.t["8k9GCQ"], {})
       })]
-    }), (0, i.jsx)(d.mzw, {
+    }), (0, t.jsx)(o.mzw, {
       "data-migration-pending": true,
-      children: (0, i.jsxs)(d.hE2, {
+      children: (0, t.jsxs)(o.hE2, {
         direction: "horizontal-reverse",
-        children: [(0, i.jsx)(d.zxk, {
+        children: [(0, t.jsx)(o.zxk, {
           variant: "primary",
-          text: _.intl.string(_.t.PDTjLC),
+          text: u.intl.string(u.t.PDTjLC),
           onClick: () => {
             c.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-              userInput: E
-            }), null == N || N()
+              userInput: v
+            }), null == C || C()
           }
-        }), (0, i.jsx)(d.zxk, {
+        }), (0, t.jsx)(o.zxk, {
           variant: "secondary",
-          text: _.intl.string(_.t["13/7kZ"]),
+          text: u.intl.string(u.t["13/7kZ"]),
           onClick: () => {
             c.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-              userInput: E
+              userInput: v
             }), null == j || j()
           }
         })]

@@ -34,7 +34,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk681642 = require("./681642.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk517793 = require("./517793.js");
+  Chunk311838 = require("./311838.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -103,7 +103,7 @@ function U(e) {
   } = (0, c.ZP)(l.Z.BADGE), {
     context: B,
     trackUserProfileAction: Z
-  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.p9.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.PremiumTypes.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: a()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y8),

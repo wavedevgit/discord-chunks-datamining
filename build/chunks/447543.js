@@ -172,7 +172,7 @@ function eh(e) {
         default: n
       } = e, o = () => {
         if (y) {
-          (0, x.Cq)(r instanceof M.Sf ? r : (0, M.kt)(r)), (0, L.uL)(T);
+          (0, x.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, L.uL)(T);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && X.Z.setSelfMute(d.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
           streamType: en.lo.GUILD,

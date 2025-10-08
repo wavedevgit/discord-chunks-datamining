@@ -25,7 +25,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk345655 = require("./345655.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk895634 = require("./895634.js");
+  Chunk371882 = require("./371882.js");
 
 function w(e) {
   let {
@@ -35,8 +35,8 @@ function w(e) {
     renderInputProfiles: C = false,
     renderInputModes: E = false,
     renderInputVolume: I = false,
-    renderOutputVolume: S = false,
-    renderDeafen: T = false,
+    renderOutputVolume: T = false,
+    renderDeafen: S = false,
     minimal: N = false,
     onSelect: D,
     appContext: Z,
@@ -76,18 +76,18 @@ function w(e) {
     children: (0, r.jsxs)(a.v2r, {
       onSelect: D,
       onInteraction: k,
-      className: P.menu,
+      className: _.menu,
       onClose: t,
       navId: "audio-device-context",
       variant: "fixed",
-      "aria-label": _.intl.string(_.t.ZR1Ss7),
+      "aria-label": P.intl.string(P.t.ZR1Ss7),
       children: [w && R, n && V, C && L, !N && E && F !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
-        label: _.intl.string(_.t["pS+K2N"]),
+        label: P.intl.string(P.t["pS+K2N"]),
         children: U
       }) : null, (0, r.jsxs)(a.kSQ, {
-        children: [I ? Y : null, S ? H : null, N ? (0, r.jsx)(a.Clw, {}) : null, N && T ? (0, r.jsx)(a.S89, {
+        children: [I ? Y : null, T ? H : null, N ? (0, r.jsx)(a.Clw, {}) : null, N && S ? (0, r.jsx)(a.S89, {
           id: "deafen",
-          label: _.intl.string(_.t.wjcRFR),
+          label: P.intl.string(P.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({
             context: z,
             location: "AudioDeviceMenu"
@@ -96,7 +96,7 @@ function w(e) {
         }, "self-deafen") : null, N && w && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
           checked: B === O.pM4.PUSH_TO_TALK,
           id: "input-mode",
-          label: _.intl.string(_.t.Q8gkVF),
+          label: P.intl.string(P.t.Q8gkVF),
           action: () => s.Z.setMode(W, true, true, {
             analyticsLocations: M
           }),

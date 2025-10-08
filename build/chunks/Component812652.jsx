@@ -20,10 +20,10 @@ var Chunk268146 = require("./268146.js"),
   Chunk396678 = require("./396678.js"),
   Chunk37113 = require("./37113.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk637824 = require("./637824.js"),
+  Chunk137349 = require("./137349.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk355669 = require("./355669.js");
-let C = [{
+  Chunk246238 = require("./246238.js");
+let S = [{
     value: Chunk37113.tI.PRESET_VIDEO,
     canUse: e => true
   }, {
@@ -33,7 +33,7 @@ let C = [{
     value: Chunk37113.tI.PRESET_CUSTOM,
     canUse: e => true
   }],
-  S = [{
+  y = [{
     value: Chunk37113.LY.RESOLUTION_720,
     canUse: e => true
   }, {
@@ -46,7 +46,7 @@ let C = [{
     value: Chunk37113.LY.RESOLUTION_SOURCE,
     canUse: e => e !== i.vA.CAMERA
   }],
-  y = [Chunk37113.ws.FPS_15, Chunk37113.ws.FPS_30, Chunk37113.ws.FPS_60];
+  C = [Chunk37113.ws.FPS_15, Chunk37113.ws.FPS_30, Chunk37113.ws.FPS_60];
 
 function O(e) {
   let {
@@ -74,9 +74,9 @@ function w(e) {
     preset: T,
     resolution: E,
     fps: R,
-    sourceType: k,
-    selectedChannel: A
-  }, M] = (0, h.E_)(), D = !(0, c.$s)(A, "StreamOptionsMenu"), L = (0, m.Z)(), [B, G] = null != (t = (0, x.Z)(g.tI.PRESET_VIDEO)) ? t : [g.LY.RESOLUTION_720, g.ws.FPS_30], [U, W] = null != (n = (0, x.Z)(g.tI.PRESET_DOCUMENTS)) ? n : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15], z = (0, o.M)({
+    sourceType: A,
+    selectedChannel: k
+  }, M] = (0, h.E_)(), D = !(0, c.$s)(k, "StreamOptionsMenu"), L = (0, m.Z)(), [B, G] = null != (t = (0, x.Z)(g.tI.PRESET_VIDEO)) ? t : [g.LY.RESOLUTION_720, g.ws.FPS_30], [U, W] = null != (n = (0, x.Z)(g.tI.PRESET_DOCUMENTS)) ? n : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15], z = (0, o.M)({
     deviceType: _.h7.AUDIO_INPUT,
     selectedDeviceId: Z,
     analyticsLocations: [s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
@@ -102,11 +102,11 @@ function w(e) {
     onSelect: w,
     children: [(0, r.jsx)(l.kSQ, {
       label: j.intl.string(v.default.P2pjm5),
-      children: C.filter(e => {
+      children: S.filter(e => {
         let {
           canUse: t
         } = e;
-        return t(k)
+        return t(A)
       }).map(e => {
         let {
           value: t
@@ -144,11 +144,11 @@ function w(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: j.intl.string(v.default.IG5n0d),
-        children: S.filter(e => {
+        children: y.filter(e => {
           let {
             canUse: t
           } = e;
-          return t(k)
+          return t(A)
         }).map(e => {
           let {
             value: t
@@ -174,7 +174,7 @@ function w(e) {
       }), (0, r.jsx)(l.sNh, {
         id: "frame-rate",
         label: j.intl.string(j.t.SkkeIi),
-        children: y.map(e => (0, r.jsx)(l.k5B, {
+        children: C.map(e => (0, r.jsx)(l.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
           checked: R === e,
@@ -200,7 +200,7 @@ function w(e) {
         type: "set_mute_audio",
         value: !P
       })
-    }), k === i.vA.CAMERA && z, (0, r.jsxs)(l.sNh, {
+    }), A === i.vA.CAMERA && z, (0, r.jsxs)(l.sNh, {
       id: "advanced-items",
       label: j.intl.string(v.default.eYyK1t),
       children: [(0, r.jsx)(l.S89, {

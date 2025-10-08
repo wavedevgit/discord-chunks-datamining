@@ -1,8 +1,8 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 603784, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk501801 = require("./501801.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk404211 = require("./404211.js");
+  Chunk617314 = require("./617314.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,7 +69,7 @@ class P extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)("span", {
       onContextMenu: exports,
-      className: Chunk404211.userHook,
+      className: Chunk617314.userHook,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk51144.ZP.getUserTag(module, {
@@ -77,7 +77,7 @@ class P extends Chunk647438.PureComponent {
         })
       }), "0" !== module.discriminator && (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        className: Chunk404211.discrim,
+        className: Chunk617314.discrim,
         children: ["#", module.discriminator]
       })]
     })
@@ -90,8 +90,8 @@ let w = Chunk647438.forwardRef((e, t) => {
       expanded: f,
       guildId: v,
       guild: w,
-      onChannelContextMenu: R,
-      onContentClick: Z,
+      onChannelContextMenu: Z,
+      onContentClick: R,
       onHeaderClick: D,
       onTargetContextMenu: A,
       onUserContextMenu: L,
@@ -211,7 +211,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                   count: i.count,
                   channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, m.F6)(i.channel, b.default, x.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
-                    onContextMenu: R,
+                    onContextMenu: Z,
                     children: e
                   }, t),
                   subtarget: i.subtarget
@@ -230,13 +230,13 @@ let w = Chunk647438.forwardRef((e, t) => {
       }) : null, f && null != w ? (0, r.jsx)(y.tP, {
         log: l,
         guild: w,
-        onContentClick: Z
+        onContentClick: R
       }) : null]
     })
   })
 });
 w.displayName = "GuildSettingsAuditLogEntry";
-let R = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
+let Z = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
   theme: Chunk210887.Z.theme
 }), {
   forwardRef: true

@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk573702 = require("./573702.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk108626 = require("./108626.js"),
+  Chunk491881 = require("./491881.js"),
   Chunk236078 = require("./236078.js"),
   Chunk278345 = require("./278345.js"),
   Chunk895601 = require("./895601.js"),
@@ -82,7 +82,7 @@ let T = function(e) {
     isEligibleForTrial: b = false,
     showTrialBadge: T = false,
     showDiscountBadge: S = false
-  } = e, A = E === _.p9.TIER_2, C = (0, c.Fv)(b), N = (0, d.Ng)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
+  } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.Ng)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
     step: w,
     breadcrumbs: D,
     startedPaymentFlowWithPaymentSourcesRef: L,

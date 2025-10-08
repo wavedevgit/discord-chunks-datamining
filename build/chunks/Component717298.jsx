@@ -40,13 +40,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk328242 = require("./328242.jsx"),
   Chunk565574 = require("./565574.jsx"),
   Chunk286420 = require("./286420.jsx"),
-  Chunk173044 = require("./173044.jsx"),
+  Chunk51708 = require("./51708.jsx"),
   Chunk801604 = require("./801604.jsx"),
   Chunk577257 = require("./577257.js"),
   Chunk70722 = require("./70722.js"),
-  Chunk637824 = require("./637824.js"),
+  Chunk137349 = require("./137349.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk468918 = require("./468918.js");
+  Chunk374079 = require("./374079.js");
 
 function Y(e) {
   var t;
@@ -58,10 +58,10 @@ function Y(e) {
     selectSource: J = true
   } = e, X = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
     analyticsLocations: q
-  } = (0, _.ZP)(Y, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([S.default], () => S.default.getCurrentUser()), $ = (0, T.Z)(), {
+  } = (0, _.ZP)(Y, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
-  } = (0, A.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
+  } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
   (0, W.Z)(K, et, "confirm" === ee.modalStep);
   let en = !w.ZP.canStreamQuality(w.ZP.StreamQuality.HIGH, Q),
     er = !(0, O.isLinux)(),
@@ -118,7 +118,7 @@ function Y(e) {
       url: ""
     })
   }, [ec, ee.nativeSourceType]);
-  return (0, r.jsx)(A.Yw, {
+  return (0, r.jsx)(k.Yw, {
     state: ee,
     dispatch: et,
     children: (0, r.jsxs)(m.Y0X, {
@@ -126,8 +126,8 @@ function Y(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: q,
-          application_id: (0, O.isWindows)() ? null == (t = (0, N.Z)(v.ZP, y.Z)) ? true : t.id : true,
-          parent_media_session_id: C.Z.getMediaSessionId()
+          application_id: (0, O.isWindows)() ? null == (t = (0, N.Z)(v.ZP, C.Z)) ? true : t.id : true,
+          parent_media_session_id: S.Z.getMediaSessionId()
         }
       },
       className: s()(V.root, {
@@ -141,7 +141,7 @@ function Y(e) {
       children: [el ? (0, r.jsx)(R.Z, {
         className: s()(V.channelSelectorComponent, V.withFooter),
         onSelectChannel: ed
-      }) : ei ? (0, r.jsx)(k.Z, {
+      }) : ei ? (0, r.jsx)(A.Z, {
         hideBackButton: null != o
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.xBx, {

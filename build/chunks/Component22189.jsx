@@ -39,7 +39,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk526761 = require("./526761.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119475 = require("./119475.js"),
+  Chunk684555 = require("./684555.js"),
   Chunk660372 = require("./660372.js"),
   Chunk926433 = require("./926433.js"),
   Chunk302036 = require("./302036.js"),
@@ -78,9 +78,9 @@ let ep = () => {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, Chunk410030.ZP)(), n = (0, Chunk424218.BU)(Chunk474936.Uq / 1024, {
     useKibibytes: true
-  }), e_ = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ep = null != e_ ? Chunk74538.ZP.getPremiumPlanItem(e_) : null, eh = (null != ep ? Chunk74538.ZP.getSkuIdForPlan(ep.planId) : null) === Chunk474936.Si.TIER_2, em = Chunk594174.default.getCurrentUser(), eg = (0, Chunk74538.I5)(em, Chunk474936.p9.TIER_2), eE = (0, Chunk74538.I5)(em, Chunk474936.p9.TIER_0), eb = (0, Chunk779618.Z)(Chunk131951.Z), {
+  }), e_ = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ep = null != e_ ? Chunk74538.ZP.getPremiumPlanItem(e_) : null, eh = (null != ep ? Chunk74538.ZP.getSkuIdForPlan(ep.planId) : null) === Chunk474936.Si.TIER_2, em = Chunk594174.default.getCurrentUser(), eg = (0, Chunk74538.I5)(em, Chunk474936.PremiumTypes.TIER_2), eE = (0, Chunk74538.I5)(em, Chunk474936.PremiumTypes.TIER_0), eb = (0, Chunk779618.Z)(Chunk131951.Z), {
     isFractionalPremiumActive: ey
-  } = (0, Chunk975298.Z)(), eO = null != e_ && e_.hasPremiumAtLeast(Chunk474936.p9.TIER_2), ev = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eI = Chunk803038.Mc.useExperiment({
+  } = (0, Chunk975298.Z)(), eO = null != e_ && e_.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), ev = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eI = Chunk803038.Mc.useExperiment({
     location: "usePremiumPerksCards"
   }).v2EditorEnabled, eT = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
@@ -435,8 +435,8 @@ let ep = () => {
     },
     customThemes: {
       name: "customThemes",
-      title: Chunk388032.intl.string(Chunk119475.default["76L4b2"]),
-      subtitle: Chunk388032.intl.string(Chunk119475.default.i3n50t),
+      title: Chunk388032.intl.string(Chunk684555.default["76L4b2"]),
+      subtitle: Chunk388032.intl.string(Chunk684555.default.i3n50t),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
       onCtaClick: () => {
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)

@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975290 = require("./975290.js");
+  Chunk577694 = require("./577694.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,7 +41,7 @@ function P(e, t, n) {
 }
 let w = 10 * Chunk70956.Z.Millis.SECOND;
 
-function N() {
+function T() {
   let e = (0, Chunk145597.getPID)(),
     t = (0, Chunk145597.getRPCAuthToken)();
   (0, Chunk490029.lW)({
@@ -55,7 +55,7 @@ function N() {
     }]
   })
 }
-class T extends Chunk647438.PureComponent {
+class N extends Chunk647438.PureComponent {
   componentDidMount() {
     this.notificationTimer = setTimeout(this.hideNotification, w), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
@@ -121,7 +121,7 @@ class T extends Chunk647438.PureComponent {
       showTrace: false,
       busy: false
     }), P(this, "notificationTimer", true), P(this, "contentDomRef", r.createRef()), P(this, "hideNotification", () => {
-      N();
+      T();
       let {
         notificationTimer: e
       } = this;
@@ -129,7 +129,7 @@ class T extends Chunk647438.PureComponent {
     }), P(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), N(), h.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+      }), T(), h.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: Z.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
@@ -174,7 +174,7 @@ class k extends Chunk647438.PureComponent {
         locked: true,
         pid: i
       }]
-    }), setImmediate(() => window.addEventListener("click", N));
+    }), setImmediate(() => window.addEventListener("click", T));
     let s = (0, v.V6)(e, E.gl.Hook, {
       extra: t
     });
@@ -195,7 +195,7 @@ class k extends Chunk647438.PureComponent {
       error: n,
       info: r
     } = this.state;
-    return null != require ? (0, Chunk951288.jsx)(T, {
+    return null != require ? (0, Chunk951288.jsx)(N, {
       error: require,
       info: Chunk647438
     }) : (0, Chunk951288.jsx)("div", {

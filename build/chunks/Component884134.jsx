@@ -40,9 +40,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk684555 = require("./684555.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882741 = require("./882741.js");
+  Chunk330749 = require("./330749.js");
 let F = 0,
   V = 5e3;
 
@@ -73,17 +73,17 @@ function Y(e) {
 
 function W() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk882741.headerContainer,
+    className: Chunk330749.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk119475.default["AsmU8/"])
+      children: Chunk388032.intl.string(Chunk684555.default["AsmU8/"])
     }), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t["5AFxuL"]),
       children: (0, Chunk951288.jsx)(Chunk481060.SrA, {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: Chunk882741.nitroIcon
+        colorClass: Chunk330749.nitroIcon
       })
     }), (0, Chunk951288.jsx)(Y, {})]
   })
@@ -104,7 +104,7 @@ function K(e) {
 function z(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, y.m)(U.p9.TIER_2);
+  } = e, n = (0, y.m)(U.PremiumTypes.TIER_2);
   return (0, r.jsxs)("div", {
     className: Z.coachmarkHeaderContainer,
     children: [(0, r.jsxs)("div", {
@@ -334,7 +334,7 @@ function ee(e) {
   let {
     onSaveTheme: t,
     canApply: n
-  } = e, i = (0, y.m)(U.p9.TIER_2);
+  } = e, i = (0, y.m)(U.PremiumTypes.TIER_2);
   return (0, D.hf)(i, h.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsx)("div", {
     className: Z.coachmarkFooterContainer,
     children: i ? (0, r.jsx)($, {
@@ -359,7 +359,7 @@ function et(e) {
     onSaveTheme: n,
     canApply: i,
     metadata: a
-  } = e, s = (0, y.m)(U.p9.TIER_2), c = (null == (t = (0, g.oq)().metadata) ? true : t.from) === g.tE.SHARE_MESSAGE;
+  } = e, s = (0, y.m)(U.PremiumTypes.TIER_2), c = (null == (t = (0, g.oq)().metadata) ? true : t.from) === g.tE.SHARE_MESSAGE;
   (0, D.hf)(s, h.Z.CUSTOM_THEMES_EDITOR);
   let u = () => {
       (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, T.openUserSettings)(I.n.APPEARANCE_PANEL, {

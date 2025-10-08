@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 927731, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk450215 = require("./450215.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk255311 = require("./255311.js");
+  Chunk331245 = require("./331245.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -70,7 +70,7 @@ function E(e) {
     removeEditStateId: P
   } = b.B7(h, t, {
     includeSoftDeleted: true
-  }), [w, R] = i.useState({}), Z = i.useMemo(() => {
+  }), [w, Z] = i.useState({}), R = i.useMemo(() => {
     let e = I.map(e => {
       var t;
       return null != (t = w[e]) ? t : e
@@ -93,13 +93,13 @@ function E(e) {
     }, {
       modalKey: N
     }) : S()
-  }, [t, T, S, l, A, D]), k = b.Lo(Z), G = i.useCallback(() => Z.forEach(b.GM), [Z]), M = (0, x.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
+  }, [t, T, S, l, A, D]), k = b.Lo(R), G = i.useCallback(() => R.forEach(b.GM), [R]), M = (0, x.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
   return i.useEffect(() => (U === _.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
     (0, d.Mr3)(N)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: C.groupListings,
-      children: [Z.map(e => (0, r.jsx)(j.Z, {
+      children: [R.map(e => (0, r.jsx)(j.Z, {
         guildId: t,
         initialEditStateId: e,
         allSubscriptionListings: E,
@@ -108,7 +108,7 @@ function E(e) {
         onDeleteEditState: () => P(e),
         onBeforeDispatchNewListing: t => {
           var n;
-          return n = t.id, void R(t => y(O({}, t), {
+          return n = t.id, void Z(t => y(O({}, t), {
             [n]: e
           }))
         },

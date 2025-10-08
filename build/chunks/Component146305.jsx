@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 146305, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -73,7 +73,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk135899 = require("./135899.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk566386 = require("./566386.js");
+  Chunk929958 = require("./929958.js");
 
 function ej(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -240,12 +240,12 @@ let ev = {
           section: ef.pNK.COMMUNITY,
           impressionName: t.guild.features.has(ef.oNc.COMMUNITY) ? i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_OVERVIEW : i.ImpressionNames.GUILD_SETTINGS_ENABLE_COMMUNITY,
           label: eE,
-          element: Z.Z,
+          element: R.Z,
           ariaLabel: eE,
           newIndicator: !t.guild.features.has(ef.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= eh.U3 && C.qc.hasHotspot(C.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
             stores: [T.Z],
-            element: Z.X
+            element: R.X
           }
         };
       case ef.pNK.ONBOARDING:
@@ -266,7 +266,7 @@ let ev = {
         };
       case ef.pNK.ANALYTICS:
         return {
-          section: ef.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ex.intl.string(ex.t["0wWfUF"]), ariaLabel: ex.intl.string(ex.t["0wWfUF"]), element: R.Z, predicate: () => eN
+          section: ef.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: ex.intl.string(ex.t["0wWfUF"]), ariaLabel: ex.intl.string(ex.t["0wWfUF"]), element: Z.Z, predicate: () => eN
         };
       case ef.pNK.DISCOVERY_LANDING_PAGE:
         return {

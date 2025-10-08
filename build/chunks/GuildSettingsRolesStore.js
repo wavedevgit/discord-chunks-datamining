@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 103576, original params: e,t,n (module,exports,require) **/
 "use strict";
 let r, i, l;
@@ -50,8 +50,8 @@ let S = new Set,
   T = Chunk981631.QZA.CLOSED,
   P = false,
   w = false,
-  R = [],
   Z = [],
+  R = [],
   D = false,
   A = new Set,
   L = new Map,
@@ -59,9 +59,9 @@ let S = new Set,
   G = new Map;
 
 function M() {
-  return null == r || null == R ? [] : Chunk990492.ZP.calculatePositionDeltas({
+  return null == r || null == Z ? [] : Chunk990492.ZP.calculatePositionDeltas({
     oldOrdering: Chunk485386.Z.getSortedRoles(r.id),
-    newOrdering: R,
+    newOrdering: Z,
     idGetter: e => e.id,
     existingPositionGetter: e => e.position,
     ascending: false
@@ -78,7 +78,7 @@ function U(e) {
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), G.clear(), T = Chunk981631.QZA.OPEN, Z = [...R = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, Z), D = false, module && (k.clear(), L.forEach((e, t) => {
+  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), G.clear(), T = Chunk981631.QZA.OPEN, R = [...Z = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, R), D = false, module && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
@@ -123,7 +123,7 @@ let H = c().debounce(() => {
   let e = false;
   w && ((w = M().length > 0) || (e = true)), [...S].forEach(t => {
     var n;
-    c().isEqual(W(t), (n = t, Z.find(e => {
+    c().isEqual(W(t), (n = t, R.find(e => {
       let {
         id: t
       } = e;
@@ -133,15 +133,15 @@ let H = c().debounce(() => {
 }, 500);
 
 function z(e, t) {
-  let n = R.indexOf(e);
+  let n = Z.indexOf(e);
   if (n < 0) returnfalse;
   let r = E({}, e, t),
-    i = [...R];
-  i[n] = r, R = i, P = true, S.add(r.id), H()
+    i = [...Z];
+  i[n] = r, Z = i, P = true, S.add(r.id), H()
 }
 
 function W(e) {
-  return R.find(t => {
+  return Z.find(t => {
     let {
       id: n
     } = t;
@@ -171,7 +171,7 @@ function V(e) {
     null != t && i.set(e, t)
   }), G.clear(), F(t, n), i.forEach((e, t) => {
     G.set(t, e)
-  }), w = false, R = [...n]
+  }), w = false, Z = [...n]
 }
 class K extends(s = Chunk442837.ZP.Store) {
   initialize() {
@@ -202,7 +202,7 @@ class K extends(s = Chunk442837.ZP.Store) {
     return A
   }
   get roles() {
-    return R
+    return Z
   }
   get formState() {
     return T
@@ -232,8 +232,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         roles: t
       } = e;
-      if (null != R && t.length !== R.length) returnfalse;
-      R = t.map(e => W(e)).filter(_.lm), w = true, H()
+      if (null != Z && t.length !== Z.length) returnfalse;
+      Z = t.map(e => W(e)).filter(_.lm), w = true, H()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
@@ -355,7 +355,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       } = e;
       if (i = n, null != t) {
         if (null != W(t.id)) return void z(t, t);
-        R = [...R, t], H()
+        Z = [...Z, t], H()
       }
     },
     GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE: function(e) {
@@ -399,7 +399,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       D = true, A.add(r.id), k.set(r.id, n), H()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, Z = R = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
+      r = null, R = Z = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: V,
     GUILD_ROLE_UPDATE: V,

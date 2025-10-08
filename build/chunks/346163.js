@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 346163, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -47,8 +47,8 @@ function h(e) {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
     w = C || (null == E ? true : E.isApplicationPending) === true,
-    R = (null == E ? true : E.canApply) === true,
-    Z = f.intl.format(f.t.aJUdOj, {
+    Z = (null == E ? true : E.canApply) === true,
+    R = f.intl.format(f.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
   I && P ? t = true === h ? f.intl.format(f.t["0o1Q+v"], {
@@ -62,7 +62,7 @@ function h(e) {
   let D = n && b && false === x,
     A = n && false === h,
     L = (0, m.f)(),
-    k = I && R && b ? f.intl.format(f.t.wbVIUF, {}) : true;
+    k = I && Z && b ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
@@ -75,14 +75,14 @@ function h(e) {
     eligibilityError: y,
     refreshEligibility: N,
     eligibility: E,
-    eligibleForMonetization: R,
+    eligibleForMonetization: Z,
     isApplicationPending: w,
     hasPreviousApplicationRejection: I,
     requestRejectedNoticeText: t,
     reapplyNoticeText: k,
     showAcceptTermsFlow: A,
     wasRejectedInV1: A && (T || I),
-    requirementsFinePrintText: Z,
+    requirementsFinePrintText: R,
     acceptTermsCheckboxText: L
   }
 }

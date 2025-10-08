@@ -1,8 +1,8 @@
-/** Chunk was on 5588 **/
+/** Chunk was on 5938 **/
 /** chunk id: 442954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
-}), require("./642613.js"), require("./388685.js");
+}), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk990547 = require("./990547.js"),
@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk711322 = require("./711322.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk596533 = require("./596533.js"),
+  Chunk866403 = require("./866403.js");
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -92,7 +92,7 @@ let v = {
   ExistingUserAgeGatePrompt: async () => {
     let {
       default: e
-    } = await Promise.all([require.e("1716"), require.e("8430")]).then(require.bind(require, 701509));
+    } = await Promise.all([require.e("1716"), require.e("48590")]).then(require.bind(require, 746882));
     return t => (0, a.jsx)(e, g(b({}, t), {
       source: p.L0.NSFW_SERVER
     }))
@@ -177,6 +177,193 @@ let v = {
         children: "This modal showcases the new dynamic graphics system where components can be loaded dynamically based on enum values, providing type safety while maintaining runtime flexibility."
       })
     }))
+  },
+  OverlayDisabledSurveyModal: async () => {
+    let {
+      default: e
+    } = await require.e("20114").then(require.bind(require, 536920)), {
+      OverlayToggledClientSettingType: t
+    } = await Promise.resolve().then(require.bind(require, 444295));
+    return n => (0, a.jsx)(e, g(b({}, n), {
+      clientSettingType: t.LEGACY_GAME,
+      gameId: "123456789"
+    }))
+  },
+  PremiumSubscriptionPauseModal: async () => {
+    let {
+      PremiumSubscriptionPauseModalSelect: e
+    } = await require.e("14963").then(require.bind(require, 398775)), {
+      CancellationContext: t
+    } = await Promise.resolve().then(require.bind(require, 594135)), {
+      PremiumTypes: i
+    } = await Promise.resolve().then(require.bind(require, 474936)), l = {
+      id: "test-subscription-id",
+      userId: "test-user-id",
+      status: 1,
+      currency: "usd",
+      currentPeriodStart: new Date,
+      currentPeriodEnd: new Date(Date.now() + 2592e6),
+      items: [{
+        id: "test-item-id",
+        planId: "511651880837840896",
+        quantity: 1
+      }],
+      paymentSourceId: "test-payment-source",
+      renewalMutations: null,
+      hasActiveTrial: false
+    }, s = Chunk647438.forwardRef((n, s) => {
+      let [o, c] = r.useState(null);
+      return (0, a.jsx)(t.Provider, {
+        value: {
+          setStep: () => {},
+          premiumType: i.TIER_2,
+          onClose: n.onClose,
+          transitionState: n.transitionState,
+          premiumSubscription: l,
+          analyticsLocations: [],
+          analyticsLocation: true,
+          confettiCanvas: null,
+          churnUserDiscountOffer: null,
+          isFetchingChurnDiscountOffer: false,
+          fullPrice: "$9.99",
+          discountedPrice: true,
+          planId: "511651880837840896",
+          paymentsBlocked: false,
+          renewalInvoice: null,
+          renewalInvoiceDetails: null,
+          handleCancellation: async () => {},
+          applyOffer: async () => {},
+          pauseDuration: o,
+          setPauseDuration: c
+        },
+        children: (0, a.jsx)(e, {})
+      })
+    });
+    return Chunk481060.displayName = "PremiumSubscriptionPauseModalWrapper", e => (0, a.jsx)(s, b({}, e))
+  },
+  OverlaySettingsModal: async () => {
+    let {
+      default: e
+    } = await require.e("55288").then(require.bind(require, 669083));
+    return t => (0, a.jsx)(e, {
+      onClose: t.onClose
+    })
+  },
+  NewMemberActionModal: async () => {
+    let {
+      default: e
+    } = await Promise.all([require.e("7590"), require.e("27703")]).then(require.bind(require, 380716)), {
+      NewMemberActionTypes: t
+    } = await Promise.resolve().then(require.bind(require, 734893)), r = {
+      channelId: "123456789",
+      title: "Welcome to the server!",
+      description: "Say hello in the welcome channel",
+      actionType: exports.CHAT,
+      emoji: null,
+      icon: null
+    };
+    return t => (0, a.jsx)(e, g(b({}, t), {
+      guildId: "123456789",
+      action: r,
+      onSave: (e, t, n) => {
+        console.log("NewMemberActionModal onSave:", {
+          action: e,
+          iconData: t,
+          shouldSaveIcon: n
+        })
+      },
+      onDelete: () => {
+        console.log("NewMemberActionModal onDelete")
+      }
+    }))
+  },
+  PlayStationModal: async () => {
+    let {
+      default: e
+    } = await require.e("638").then(require.bind(require, 543974)), t = await Promise.resolve().then(require.bind(require, 258609)), {
+      createChannelRecord: r
+    } = await Promise.resolve().then(require.bind(require, 131704)), i = Chunk647438({
+      id: "123456789",
+      name: "test-voice-channel",
+      type: 2,
+      guild_id: "987654321",
+      position: 0,
+      permissionOverwrites: {},
+      parent_id: true,
+      nsfw: false,
+      topic: true,
+      lastMessageId: true,
+      bitrate: 64e3,
+      userLimit: 0,
+      rateLimitPerUser: 0,
+      icon: null,
+      ownerId: null,
+      application_id: null,
+      lastPinTimestamp: null,
+      rtcRegion: null,
+      videoQualityMode: null,
+      messageCount: 0,
+      memberCount: 0,
+      threadMetadata: true,
+      member: true,
+      defaultAutoArchiveDuration: true,
+      flags: 0,
+      totalMessageSent: 0,
+      availableTags: [],
+      appliedTags: [],
+      defaultReactionEmoji: null,
+      defaultThreadRateLimitPerUser: 0,
+      defaultSortOrder: null,
+      defaultForumLayout: 0
+    }), l = {
+      "device-1": {
+        id: "device-1",
+        name: "PS5 - Living Room",
+        platform: "playstation"
+      },
+      "device-2": {
+        id: "device-2",
+        name: "PS5 - Bedroom",
+        platform: "playstation"
+      },
+      "device-3": {
+        id: "device-3",
+        name: "PS4 - Office",
+        platform: "playstation"
+      }
+    }, s = n => {
+      let r = t.default.getDevicesForPlatform,
+        s = t.default.getFetchingDevices,
+        o = t.default.getLastSelectedDeviceByPlatform,
+        c = t.default.getAwaitingRemoteSessionInfo;
+      t.default.getDevicesForPlatform = e => e === m.ABu.PLAYSTATION ? l : r.call(t.default, e), t.default.getFetchingDevices = e => e !== m.ABu.PLAYSTATION && s.call(t.default, e), t.default.getLastSelectedDeviceByPlatform = e => e === m.ABu.PLAYSTATION ? "device-1" : o.call(t.default, e), t.default.getAwaitingRemoteSessionInfo = () => null;
+      let d = n.onClose;
+      return n.onClose = async () => {
+        t.default.getDevicesForPlatform = r, t.default.getFetchingDevices = s, t.default.getLastSelectedDeviceByPlatform = o, t.default.getAwaitingRemoteSessionInfo = c, await d()
+      }, (0, a.jsx)(e, g(b({}, n), {
+        channel: i,
+        platform: m.ABu.PLAYSTATION
+      }))
+    };
+    return Chunk481060.displayName = "PlayStationModalWrapper", Chunk481060
+  },
+  GameProfileFeedbackModal: async () => {
+    let {
+      default: e
+    } = await require.e("46923").then(require.bind(require, 55396));
+    return t => (0, a.jsx)(e, g(b({}, t), {
+      applicationId: "123456789",
+      viewId: "dev-tools-test",
+      showOutdatedInfoOption: true
+    }))
+  },
+  AppealIngestionModal: async () => {
+    let {
+      default: e
+    } = await Promise.all([require.e("65652"), require.e("25038")]).then(require.bind(require, 208265));
+    return t => (0, a.jsx)(e, g(b({}, t), {
+      classificationId: "123456789"
+    }))
   }
 };
 
@@ -187,18 +374,18 @@ function j() {
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
     [t, n] = Chunk647438.useState(module[0].value);
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
-    className: Chunk451429.panel,
+    className: Chunk866403.panel,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk711322.panelInner,
+      className: Chunk596533.panelInner,
       children: [(0, Chunk951288.jsxs)("section", {
-        className: Chunk711322.section,
+        className: Chunk596533.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Open a Modal"
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk711322.inputRow,
+          className: Chunk596533.inputRow,
           children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
-            className: Chunk711322.input,
+            className: Chunk596533.input,
             options: module,
             isSelected: e => t === e,
             serialize: e => e,
@@ -211,12 +398,12 @@ function j() {
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
-        className: Chunk711322.section,
+        className: Chunk596533.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Wow moment"
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk711322.inputRow,
+          className: Chunk596533.inputRow,
           children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Open",

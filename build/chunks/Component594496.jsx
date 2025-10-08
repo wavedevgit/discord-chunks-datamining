@@ -37,7 +37,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk291334 = require("./291334.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk737788 = require("./737788.js");
+  Chunk486750 = require("./486750.js");
 
 function j(e) {
   var t, n, i, j;
@@ -47,7 +47,7 @@ function j(e) {
   } = e, G = (0, o.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), B = (0, d.m)(L.p9.TIER_2), {
+  }), B = (0, d.m)(L.PremiumTypes.TIER_2), {
     pendingAvatar: Z,
     pendingNickname: F,
     pendingBanner: V,

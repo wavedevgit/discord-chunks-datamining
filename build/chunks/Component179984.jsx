@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk21023 = require("./21023.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk17355 = require("./17355.js"),
+  Chunk213599 = require("./213599.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -81,14 +81,14 @@ let Z = () => {
     let e = (0, Chunk346497.W)();
     return (0, Chunk951288.jsx)(Chunk382791.Cy, {
       text: module,
-      className: Chunk17355.bogoPillWithSparkles,
+      className: Chunk213599.bogoPillWithSparkles,
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   F = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk17355.mostPopularPill,
+    className: Chunk213599.mostPopularPill,
     children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
-      className: Chunk17355.mostPopularText,
+      className: Chunk213599.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t["o/oRJC"])
     })
@@ -98,7 +98,7 @@ let Z = () => {
         premiumType: n
       } = e,
       i = (0, d.ZP)();
-    t = n === P.p9.TIER_0 ? (0, l.wj)(i) ? L : x : (0, l.wj)(i) ? M : j;
+    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? L : x : (0, l.wj)(i) ? M : j;
     let a = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -175,7 +175,7 @@ let Z = () => {
         headingOverride: L,
         hidePill: x = false,
         selectedPlanColumnClassName: M,
-        selectedPlanTier: j = P.p9.TIER_2
+        selectedPlanTier: j = P.PremiumTypes.TIER_2
       } = e,
       {
         analyticsLocations: k
@@ -185,7 +185,7 @@ let Z = () => {
       K = (0, d.ZP)(),
       z = (0, l.ap)(K),
       q = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
-      X = (0, E.M5)(q, P.p9.TIER_2),
+      X = (0, E.M5)(q, P.PremiumTypes.TIER_2),
       Q = (0, I.N)(),
       J = null == Q || null == (t = Q.subscription_trial) ? true : t.sku_id,
       $ = (0, y.rT)(),
@@ -212,10 +212,10 @@ let Z = () => {
           children: eu
         }),
         column1: (0, r.jsx)(V, {
-          premiumType: P.p9.TIER_0
+          premiumType: P.PremiumTypes.TIER_0
         }),
         column2: (0, r.jsx)(V, {
-          premiumType: P.p9.TIER_2
+          premiumType: P.PremiumTypes.TIER_2
         })
       };
     C ? es.push({
@@ -239,7 +239,7 @@ let Z = () => {
           className: D.button,
           subscriptionTier: P.Si.TIER_0,
           showIcon: false
-        }), $ === P.p9.TIER_2 || null != J ? null : (0, r.jsx)(T.Z, {
+        }), $ === P.PremiumTypes.TIER_2 || null != J ? null : (0, r.jsx)(T.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_0
         })]
@@ -256,7 +256,7 @@ let Z = () => {
           subscriptionTier: P.Si.TIER_2,
           showIcon: false,
           hasActivePromotion: el
-        }), $ === P.p9.TIER_0 || null != J ? null : (0, r.jsx)(T.Z, {
+        }), $ === P.PremiumTypes.TIER_0 || null != J ? null : (0, r.jsx)(T.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_2
         })]
@@ -269,7 +269,7 @@ let Z = () => {
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
-    let ef = J === P.Si.TIER_0 || $ === P.p9.TIER_0 || j === P.p9.TIER_0;
+    let ef = J === P.Si.TIER_0 || $ === P.PremiumTypes.TIER_0 || j === P.PremiumTypes.TIER_0;
     return (0, r.jsx)(_.Gt, {
       value: k,
       children: (0, r.jsxs)("div", {

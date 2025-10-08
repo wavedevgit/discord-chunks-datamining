@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk503922 = require("./503922.js");
+  Chunk445102 = require("./445102.js");
 let O = "premiumRetentionEmojiPickerNotice",
   v = Chunk433517.K.get(O),
   I = e => {
@@ -41,7 +41,7 @@ let O = "premiumRetentionEmojiPickerNotice",
     let A = T.status === g.O0b.PAST_DUE ? (0, h.lY)(T).expiresDate : o()(T.currentPeriodStart).add(E.gh),
       C = "".concat(T.id, ":").concat(A.toISOString());
     if (v === C) return null;
-    let N = h.ZP.getPremiumType(T.planId) === E.p9.TIER_0 ? d.JX.PREMIUM_TIER_0 : h.ZP.getPremiumType(T.planId) === E.p9.TIER_1 ? d.JX.PREMIUM_TIER_1 : d.JX.PREMIUM_TIER_2;
+    let N = h.ZP.getPremiumType(T.planId) === E.PremiumTypes.TIER_0 ? d.JX.PREMIUM_TIER_0 : h.ZP.getPremiumType(T.planId) === E.PremiumTypes.TIER_1 ? d.JX.PREMIUM_TIER_1 : d.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
       className: y.premiumRetentionNotice,
       children: [(0, r.jsx)(c.SrA, {

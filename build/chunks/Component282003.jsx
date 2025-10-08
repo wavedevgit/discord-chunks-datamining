@@ -1,4 +1,4 @@
-/** Chunk was on 5588 **/
+/** Chunk was on 5938 **/
 /** chunk id: 282003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => g
@@ -49,7 +49,7 @@ function b(e, t) {
   }), e
 }
 let g = () => {
-    let [e, t] = Chunk647438.useState(Chunk474936.p9.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, S] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
+    let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, S] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
     }), [N, P] = Chunk647438.useState(null), [I, k] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
@@ -71,7 +71,7 @@ let g = () => {
       O(module)
     }, [y]), (0, Chunk647438.useEffect)(() => {
       switch (module) {
-        case Chunk474936.p9.TIER_0:
+        case Chunk474936.PremiumTypes.TIER_0:
           S([{
             label: "Nitro Basic Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0
@@ -80,7 +80,7 @@ let g = () => {
             value: Chunk474936.Xh.PREMIUM_YEAR_TIER_0
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_0);
           break;
-        case Chunk474936.p9.TIER_1:
+        case Chunk474936.PremiumTypes.TIER_1:
           S([{
             label: "Nitro Classic Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_1
@@ -89,7 +89,7 @@ let g = () => {
             value: Chunk474936.Xh.PREMIUM_YEAR_TIER_1
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_1);
           break;
-        case Chunk474936.p9.TIER_2:
+        case Chunk474936.PremiumTypes.TIER_2:
           S([{
             label: "Nitro Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_2
@@ -188,13 +188,13 @@ let g = () => {
             serialize: e => "".concat(e),
             options: [{
               label: "Nitro Basic",
-              value: Chunk474936.p9.TIER_0
+              value: Chunk474936.PremiumTypes.TIER_0
             }, {
               label: "Nitro Classic",
-              value: Chunk474936.p9.TIER_1
+              value: Chunk474936.PremiumTypes.TIER_1
             }, {
               label: "Nitro",
-              value: Chunk474936.p9.TIER_2
+              value: Chunk474936.PremiumTypes.TIER_2
             }],
             popoutLayerContext: Chunk246992.O$
           })]

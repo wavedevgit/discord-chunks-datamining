@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk265299 = require("./265299.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk818923 = require("./818923.js"),
-  Chunk142441 = require("./142441.js");
+  Chunk674455 = require("./674455.js"),
+  Chunk985227 = require("./985227.js");
 let c = function(e) {
   let {
     questId: t

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430790 = require("./430790.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk66582 = require("./66582.js");
+  Chunk267233 = require("./267233.js");
 
 function j() {
   let {
@@ -77,13 +77,13 @@ function j() {
     })
   }, [module]);
   if (null == exports || null == j || null == I || P) return (0, Chunk951288.jsx)("div", {
-    className: Chunk66582.loading,
+    className: Chunk267233.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
   if (null == x) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
   let w = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 4,
-    className: Chunk66582.header,
+    className: Chunk267233.header,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/medium",
       color: "header-primary",

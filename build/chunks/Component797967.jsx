@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk989308 = require("./989308.js"),
-  Chunk616132 = require("./616132.js");
+  Chunk258640 = require("./258640.js"),
+  Chunk85854 = require("./85854.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -142,7 +142,7 @@ function _(e) {
     isGradient: j = false,
     gradientButtonClassName: v,
     allowBlackCustomColor: P = false
-  } = e, N = o.useCallback(e => (0 !== e || P) && e !== t && !n.some(t => t === e) && (P || 0 !== e), [n, t, P]), k = o.useRef(null), y = o.useRef(null), O = o.useRef(null), [T, E] = o.useState(() => N(r) ? r : null), [D, R] = o.useState({
+  } = e, y = o.useCallback(e => (0 !== e || P) && e !== t && !n.some(t => t === e) && (P || 0 !== e), [n, t, P]), N = o.useRef(null), k = o.useRef(null), O = o.useRef(null), [T, E] = o.useState(() => y(r) ? r : null), [D, R] = o.useState({
     start: r,
     end: null != S ? S : d.p6O
   }), [A, I] = o.useState({
@@ -150,11 +150,11 @@ function _(e) {
     showEnd: false
   });
   o.useEffect(() => {
-    E(N(r) ? r : null), R({
+    E(y(r) ? r : null), R({
       start: r,
       end: null != S ? S : d.p6O
     })
-  }, [r, N, S]);
+  }, [r, y, S]);
   let L = o.useCallback(e => {
       null == p || p(e), E(null)
     }, [p, E]),
@@ -199,7 +199,7 @@ function _(e) {
           style: s
         }), (0, l.jsx)(x, {
           isStart: true,
-          buttonRef: y,
+          buttonRef: k,
           color: null != (o = D.start) ? o : d.p6O,
           showPopout: A.showStart,
           position: b,
@@ -235,15 +235,15 @@ function _(e) {
           "aria-label": u.intl.string(u.t["FHBa//"])
         }));
       return _ ? i : (0, l.jsx)(c.yRy, {
-        targetElementRef: k,
+        targetElementRef: N,
         renderPopout: G,
         position: b,
         children: e => (0, l.jsx)(s.u, {
-          targetElementRef: k,
+          targetElementRef: N,
           text: u.intl.string(u.t["FHBa//"]),
           position: "bottom",
           children: (0, l.jsx)("div", g(f({}, e), {
-            ref: k,
+            ref: N,
             children: i
           }))
         })

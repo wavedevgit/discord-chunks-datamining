@@ -58,7 +58,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk540798 = require("./540798.js");
+  Chunk124795 = require("./124795.js");
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -204,7 +204,7 @@ function ed(e) {
     } : K.ZP.getPrice(x.id, em, false, I),
     eb = s * eE.amount,
     ey = (0, u.e7)([V.Z], () => V.Z.inReverseTrial() && K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p),
-    eO = K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p && K.ZP.getPremiumType(p.planId) === J.p9.TIER_2 ? ee.intl.format(ee.t.hf6YOT, {
+    eO = K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p && K.ZP.getPremiumType(p.planId) === J.PremiumTypes.TIER_2 ? ee.intl.format(ee.t.hf6YOT, {
       planName: K.ZP.getDisplayPremiumType(p.planId)
     }) : ee.intl.format(eh ? ee.t["ba1L7+"] : ee.t.fkffDQ, {
       onPremiumSubscriptionClick: m,
@@ -543,7 +543,7 @@ function ep(e) {
     }) : null, (0, r.jsx)(D.ZP, {
       className: et.confirmationUpgradedBanner,
       theme: h,
-      premiumType: J.p9.TIER_2,
+      premiumType: J.PremiumTypes.TIER_2,
       type: $.X7.has(null != u ? u : $.He.UNKNOWN) ? D.ZP.Types.PREMIUM_PAYMENT_STARTED : D.ZP.Types.GUILD_BOOST_APPLIED
     }), (0, r.jsx)("div", {
       className: et.confirmationText,

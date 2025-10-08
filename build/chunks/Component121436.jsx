@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk397206 = require("./397206.js");
+  Chunk667059 = require("./667059.js");
 let B = e => {
   var a, t;
   let {
@@ -32,7 +32,7 @@ let B = e => {
     displayProfile: E
   } = e, {
     analyticsLocations: S
-  } = (0, o.ZP)(c.Z.TIERED_TENURE_BADGES_MODAL), I = (0, u.Dt)(), L = Object.values(_.vK), R = (0, h.SI)(null == E ? true : E.userId), A = (0, h.Rw)(), D = g.default.getCurrentUser(), f = null != (t = (0, h.a1)(null != (a = null == E ? true : E.userId) ? a : null == D ? true : D.id)) ? t : new Date, k = (0, x.yd)(null == D ? true : D.premiumType, _.p9.TIER_2), C = L.map(e => {
+  } = (0, o.ZP)(c.Z.TIERED_TENURE_BADGES_MODAL), I = (0, u.Dt)(), L = Object.values(_.vK), R = (0, h.SI)(null == E ? true : E.userId), A = (0, h.Rw)(), D = g.default.getCurrentUser(), f = null != (t = (0, h.a1)(null != (a = null == E ? true : E.userId) ? a : null == D ? true : D.id)) ? t : new Date, k = (0, x.yd)(null == D ? true : D.premiumType, _.PremiumTypes.TIER_2), P = L.map(e => {
     let {
       id: a,
       nameUnformatted: t,
@@ -72,7 +72,7 @@ let B = e => {
         })]
       })]
     }, a)
-  }), M = () => {
+  }), y = () => {
     (0, m.uL)(N.Z5c.APPLICATION_STORE, {
       source: c.Z.TIERED_TENURE_BADGES_MODAL,
       sourceLocationStack: S
@@ -102,11 +102,11 @@ let B = e => {
           children: j.intl.string(j.t["IdAP9/"])
         }), (0, n.jsx)("div", {
           className: p.badgeList,
-          children: C
+          children: P
         }), null != E && E.userId !== (null == D ? true : D.id) && (0, n.jsx)(r.gtL, {
           "data-migration-pending": true,
           className: p.learnMoreButton,
-          onClick: M,
+          onClick: y,
           children: j.intl.string(j.t.hvVgAQ)
         })]
       }) : (0, n.jsxs)(n.Fragment, {
@@ -118,11 +118,11 @@ let B = e => {
           variant: "text-md/medium",
           className: p.subHeader,
           children: j.intl.format(j.t.ffatnZ, {
-            onClick: M
+            onClick: y
           })
         }), (0, n.jsx)("div", {
           className: p.badgeList,
-          children: C
+          children: P
         }), (0, n.jsx)(b.Z, {
           className: p.subscribeButton,
           premiumModalAnalyticsLocation: {

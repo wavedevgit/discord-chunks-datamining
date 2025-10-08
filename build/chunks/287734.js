@@ -54,7 +54,7 @@ let g = {
     d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, h.h)(e, o, t, n, r))
   },
   disconnect() {
-    let e = Chunk258609.Z.getRemoteSessionId();
+    let e = Chunk258609.default.getRemoteSessionId();
     if (null != module && Chunk254238._(module), (0, Chunk700615.ur)()) this.selectVoiceChannel(null);
     else {
       let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId()),

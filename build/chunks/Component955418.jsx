@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk698305 = require("./698305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391022 = require("./391022.js");
+  Chunk589687 = require("./589687.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,7 +56,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = (0, Chunk131704.kt)({
+let y = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM
 });

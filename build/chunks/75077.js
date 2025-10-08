@@ -110,5 +110,5 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
   },
   g = () => {
     let e = Chunk594174.default.getCurrentUser();
-    return (0, Chunk74538.M5)(module, Chunk474936.p9.TIER_2)
+    return (0, Chunk74538.M5)(module, Chunk474936.PremiumTypes.TIER_2)
   }

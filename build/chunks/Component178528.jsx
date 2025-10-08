@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk613322 = require("./613322.js");
+  Chunk477863 = require("./477863.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,7 +93,7 @@ class M extends Chunk647438.PureComponent {
     let {
       closePopout: t
     } = e;
-    return (0, i.jsx)(w.Z, {
+    return (0, i.jsx)(w.default, {
       onClose: t
     })
   }
@@ -168,8 +168,8 @@ class M extends Chunk647438.PureComponent {
         controller: Chunk619915,
         renderBanner: Chunk554747,
         bannerVisible: Chunk598056,
-        className: Chunk613322.guildHeader,
-        headerClassName: Chunk613322.guildHeaderInner,
+        className: Chunk477863.guildHeader,
+        headerClassName: Chunk477863.guildHeaderInner,
         onMouseDown: Chunk647438,
         disableBannerAnimation: false,
         communityInfoVisible: Chunk905423,
@@ -185,7 +185,7 @@ class M extends Chunk647438.PureComponent {
         })
       }) : null,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk613322.channelList,
+        className: Chunk477863.channelList,
         children: null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk680089, (e = L({}, Chunk137317), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
@@ -203,7 +203,7 @@ class M extends Chunk647438.PureComponent {
           withBannerPadding: false
         })
       }), null != Chunk442837 && (0, Chunk951288.jsx)("section", {
-        className: Chunk613322.panels,
+        className: Chunk477863.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
         children: (0, Chunk951288.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id
@@ -246,7 +246,7 @@ function z(e) {
       channelId: t
     } = e;
     return t
-  }), w = (0, o.e7)([C.Z], () => C.Z.getVoiceChannelId()), N = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([v.default], () => v.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), W = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
+  }), w = (0, o.e7)([C.Z], () => C.Z.getVoiceChannelId()), T = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([v.default], () => v.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(N.oNc.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
@@ -258,11 +258,11 @@ function z(e) {
     selectedVoiceChannelId: w,
     voiceStates: p,
     rtcConnectedChannelId: z,
-    rtcDesyncedVoiceStatesCount: W,
+    rtcDesyncedVoiceStatesCount: V,
     collapsedChannels: h,
     collapseMuted: u,
     guildReadStateSentinel: k,
-    permissionVersion: N,
+    permissionVersion: T,
     categoryCollapseVersion: D,
     embeddedAppsByChannel: R,
     activeEventsByChannel: A,

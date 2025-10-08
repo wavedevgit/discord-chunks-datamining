@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
-/** chunk id: 670199, original params: e,n,t (module,exports,require) **/
+/** chunk id: 670199, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,80 +16,80 @@ var Chunk120356 = require("./120356.js"),
   Chunk97568 = require("./97568.jsx"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk186425 = require("./186425.js");
+  Chunk428687 = require("./428687.js");
 
-function _(e) {
-  var n, t;
+function h(e) {
+  var n, i;
   let {
     classification: a,
-    isDsaEligible: _ = false,
-    isSpam: h = false,
+    isDsaEligible: h = false,
+    isSpam: N = false,
     isCoppa: C = false,
-    appealIngestionType: N,
-    className: j,
-    onClose: I,
-    onNext: T
-  } = e, E = (0, c.n)(), v = null != (n = null == a ? true : a.explainer_link) ? n : "", f = null != a && null != a.flagged_content && a.flagged_content.length > 0, k = (0, d.c7)(null == a ? true : a.description), S = !h && !C && (null == N || N === o.j4.IN_APP), A = null != a && ((0, d.FB)(a) || f);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(l.xBx, {
+    appealIngestionType: j,
+    className: _,
+    onClose: E,
+    onNext: v
+  } = e, I = (0, d.n)(), T = null != (n = null == a ? true : a.explainer_link) ? n : "", S = null != a && null != a.flagged_content && a.flagged_content.length > 0, k = (0, c.c7)(null == a ? true : a.description), A = !N && !C && (null == j || j === o.j4.IN_APP), Z = null != a && ((0, c.FB)(a) || S);
+  return (0, t.jsxs)(t.Fragment, {
+    children: [(0, t.jsxs)(l.xBx, {
       "data-migration-pending": true,
       direction: r.Z.Direction.VERTICAL,
-      className: g.header,
+      className: u.header,
       separator: false,
-      children: [(0, i.jsx)(l.X6q, {
-        className: g.title,
+      children: [(0, t.jsx)(l.X6q, {
+        className: u.title,
         variant: "heading-xl/semibold",
-        children: u.intl.string(u.t["C5q+pa"])
-      }), (0, i.jsx)(l.Text, {
-        className: g.subtitle,
+        children: p.intl.string(p.t["C5q+pa"])
+      }), (0, t.jsx)(l.Text, {
+        className: u.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: u.intl.string(u.t.URt7VF)
-      }), null != I && (0, i.jsx)(l.olH, {
+        children: p.intl.string(p.t.URt7VF)
+      }), null != E && (0, t.jsx)(l.olH, {
         "data-migration-pending": true,
-        className: g.closeButton,
-        onClick: I
+        className: u.closeButton,
+        onClick: E
       })]
-    }), (0, i.jsxs)(l.hzk, {
+    }), (0, t.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: s()(g.modalContent, !A && g.evidenceOffset, j),
+      className: s()(u.modalContent, !Z && u.evidenceOffset, _),
       paddingFix: false,
-      children: [A && (0, i.jsx)(m.s, {
-        flaggedContent: null != (t = a.flagged_content) ? t : []
-      }), (0, i.jsx)(l.Text, {
-        className: g.optionHeader,
+      children: [Z && (0, t.jsx)(m.s, {
+        flaggedContent: null != (i = a.flagged_content) ? i : []
+      }), (0, t.jsx)(l.Text, {
+        className: u.optionHeader,
         color: "header-secondary",
         variant: "text-xs/bold",
-        children: u.intl.string(u.t.xsdcxs)
-      }), (0, i.jsx)("div", {
-        className: g.policyContainer,
-        children: (0, i.jsx)(l.Text, {
+        children: p.intl.string(p.t.xsdcxs)
+      }), (0, t.jsx)("div", {
+        className: u.policyContainer,
+        children: (0, t.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: k
         })
-      }), C && (0, i.jsx)(x.Z, {
-        url: p.sQ.AGE_VERIFICATION_LINK,
-        text: u.intl.string(u.t["gJs+kZ"]),
-        onClick: () => E(p.n0.ClickAgeVerificationLink)
-      }), h && !C && (0, i.jsx)(x.Z, {
-        url: p.sQ.SPAM_LINK,
-        text: u.intl.string(u.t["PaNS+P"]),
-        onClick: () => E(p.n0.ClickSpamWebformLink)
-      }), !C && (0, i.jsx)(x.Z, {
-        text: u.intl.string(u.t["Vtyn//"]),
-        url: v,
-        onClick: () => E(p.n0.ClickLearnMoreLink)
-      }), S && _ && (0, i.jsx)(l.Text, {
-        className: g.learnMore,
+      }), C && (0, t.jsx)(x.Z, {
+        url: g.sQ.AGE_VERIFICATION_LINK,
+        text: p.intl.string(p.t["gJs+kZ"]),
+        onClick: () => I(g.n0.ClickAgeVerificationLink)
+      }), N && !C && (0, t.jsx)(x.Z, {
+        url: g.sQ.SPAM_LINK,
+        text: p.intl.string(p.t["PaNS+P"]),
+        onClick: () => I(g.n0.ClickSpamWebformLink)
+      }), !C && (0, t.jsx)(x.Z, {
+        text: p.intl.string(p.t["Vtyn//"]),
+        url: T,
+        onClick: () => I(g.n0.ClickLearnMoreLink)
+      }), A && h && (0, t.jsx)(l.Text, {
+        className: u.learnMore,
         variant: "text-xs/normal",
-        children: u.intl.format(u.t.WMUgCQ, {})
+        children: p.intl.format(p.t.WMUgCQ, {})
       })]
-    }), S && (0, i.jsx)(l.mzw, {
+    }), A && (0, t.jsx)(l.mzw, {
       "data-migration-pending": true,
-      children: (0, i.jsx)(l.zxk, {
+      children: (0, t.jsx)(l.zxk, {
         variant: "primary",
-        text: u.intl.string(u.t.PDTjLC),
-        onClick: T
+        text: p.intl.string(p.t.PDTjLC),
+        onClick: v
       })
     })]
   })
