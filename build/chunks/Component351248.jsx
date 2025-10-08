@@ -125,6 +125,7 @@ class v extends Chunk647438.PureComponent {
       [Chunk162130.crossGrey]: !Chunk647438
     });
     return (0, Chunk951288.jsxs)(Chunk748780.Z.div, {
+      role: "listitem",
       className: a()(Chunk907894.transition, require),
       style: this.getWidthStyle(),
       children: [(0, Chunk951288.jsx)("div", {
@@ -166,21 +167,25 @@ function x(e) {
       className: g.participant,
       width: (0, d.pxk)(y),
       theme: C,
-      children: (0, i.jsx)(f.Z, {
-        userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(y), s && _),
-        size: y,
-        muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
-        deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
-        speaking: s,
-        ringing: c,
+      children: (0, i.jsx)(d.kL8, {
+        "aria-label": l.username,
         onClick: t => null == o ? true : o(e, t),
-        onContextMenu: t => null == r ? true : r(e, t)
-      }, e.id)
+        onContextMenu: t => null == r ? true : r(e, t),
+        children: (0, i.jsx)(f.Z, {
+          userId: l.id,
+          src: l.getAvatarURL(b, (0, d.pxk)(y), s && _),
+          size: y,
+          muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
+          deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
+          speaking: s,
+          ringing: c
+        }, e.id)
+      })
     }, l.id)
   });
   return (0, i.jsx)(c.W, {
     component: "div",
+    role: "list",
     className: a()(g.root, l),
     children: x
   })
