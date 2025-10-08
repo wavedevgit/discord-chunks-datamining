@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,7 +11,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk607802 = require("./607802.js"),
-  Chunk945577 = require("./945577.js"),
   Chunk28964 = require("./28964.js"),
   Chunk465524 = require("./465524.jsx"),
   Chunk770092 = require("./770092.js"),
@@ -19,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk865239 = require("./865239.js");
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +37,7 @@ function y(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,93 +50,91 @@ function _(e, t) {
   }), e
 }
 
-function j(e) {
+function _(e) {
   let {
     searchContext: t,
     searchMode: l,
     onSearchModeChange: s,
     totalResults: c,
-    isIndexing: j,
-    isSearching: x,
-    documentsIndexed: v
-  } = e, C = (0, u.UX)({
+    isIndexing: _,
+    isSearching: O,
+    documentsIndexed: x
+  } = e, v = (0, u.nP)({
     location: "SearchHeader"
-  }), I = (0, p.nP)({
+  }), C = (0, u.KS)({
     location: "SearchHeader"
-  }), S = (0, p.KS)({
-    location: "SearchHeader"
-  }), Z = (0, f.I)(t), {
-    totalFilters: T
-  } = (0, h.p4)(Z, t), P = i.useMemo(() => {
-    if (t.type === g.aib.DMS && C) {
+  }), E = (0, h.I)(t), {
+    totalFilters: S
+  } = (0, p.p4)(E, t), Z = i.useMemo(() => {
+    if (t.type === f.aib.DMS) {
       var e, n;
-      let t = null != (n = null == (e = (0, d.$G)(Z).channel_id) ? true : e.length) ? n : 0;
-      return t > 0 ? m.intl.format(m.t.A2dqWF, {
+      let t = null != (n = null == (e = (0, d.$G)(E).channel_id) ? true : e.length) ? n : 0;
+      return t > 0 ? g.intl.format(g.t.A2dqWF, {
         filterCount: t
-      }) : m.intl.string(m.t.tc619f)
+      }) : g.intl.string(g.t.tc619f)
     }
     return null
-  }, [C, t.type, Z]), N = i.useCallback(() => {
+  }, [t.type, E]), T = i.useCallback(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("37979"), n.e("57390")]).then(n.bind(n, 238088));
-      return n => (0, r.jsx)(e, _(y({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         searchContext: t
       }))
     })
-  }, [t]), R = i.useMemo(() => T > 0 ? m.intl.format(m.t.uaR4sL, {
-    filterCount: T
-  }) : m.intl.string(m.t.UdhTtr), [T]);
+  }, [t]), P = i.useMemo(() => S > 0 ? g.intl.format(g.t.uaR4sL, {
+    filterCount: S
+  }) : g.intl.string(g.t.UdhTtr), [S]);
   return (0, r.jsxs)("header", {
-    className: a()(b.searchHeader, {
-      [b.searchHeaderWithSubtitle]: null != P
+    className: a()(m.searchHeader, {
+      [m.searchHeaderWithSubtitle]: null != Z
     }),
     children: [(0, r.jsx)("div", {
-      className: b.totalResults,
+      className: m.totalResults,
       role: "status",
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(j, {
         totalResults: c,
-        subtitle: P,
-        isIndexing: j,
-        isSearching: x,
-        documentsIndexed: v
+        subtitle: Z,
+        isIndexing: _,
+        isSearching: O,
+        documentsIndexed: x
       })
-    }), I || S ? (0, r.jsxs)("div", {
-      className: b.searchModeAndFiltersContainer,
+    }), v || C ? (0, r.jsxs)("div", {
+      className: m.searchModeAndFiltersContainer,
       children: [(0, r.jsx)(o.zxk, {
         variant: "secondary",
-        onClick: N,
-        text: R,
+        onClick: T,
+        text: P,
         icon: o.gXV,
         size: "sm"
-      }), (0, r.jsx)(E, {
+      }), (0, r.jsx)(I, {
         searchMode: l,
         onSearchModeChange: s
       })]
     }) : (0, r.jsxs)(o.njP, {
       orientation: "horizontal",
-      className: b.searchHeaderTabList,
+      className: m.searchHeaderTabList,
       selectedItem: l,
       onItemSelect: s,
       children: [(0, r.jsx)(o.njP.Item, {
-        className: b.searchHeaderTab,
-        id: g.QIO.NEWEST,
-        children: m.intl.string(m.t.rLjqbW)
+        className: m.searchHeaderTab,
+        id: f.QIO.NEWEST,
+        children: g.intl.string(g.t.rLjqbW)
       }), (0, r.jsx)(o.njP.Item, {
-        className: b.searchHeaderTab,
-        id: g.QIO.OLDEST,
-        children: m.intl.string(m.t.a1BaUl)
+        className: m.searchHeaderTab,
+        id: f.QIO.OLDEST,
+        children: g.intl.string(g.t.a1BaUl)
       }), (0, r.jsx)(o.njP.Item, {
-        className: b.searchHeaderTab,
-        id: g.QIO.MOST_RELEVANT,
-        children: m.intl.string(m.t.FtR97u)
+        className: m.searchHeaderTab,
+        id: f.QIO.MOST_RELEVANT,
+        children: g.intl.string(g.t.FtR97u)
       })]
     })]
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     totalResults: t,
     subtitle: n,
@@ -145,15 +142,15 @@ function O(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(v, {
+  return l ? (0, r.jsx)(x, {
     documentsIndexed: a
-  }) : i ? (0, r.jsx)(C, {}) : (0, r.jsx)(I, {
+  }) : i ? (0, r.jsx)(v, {}) : (0, r.jsx)(C, {
     totalResults: t,
     subtitle: n
   })
 }
 
-function x() {
+function O() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk865239.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -164,53 +161,53 @@ function x() {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     documentsIndexed: t
   } = e;
   return (0, r.jsx)(s.u, {
     asContainer: true,
-    text: m.intl.formatToPlainString(m.t["4Y3O+P"], {
+    text: g.intl.formatToPlainString(g.t["4Y3O+P"], {
       count: t
     }),
     children: (0, r.jsxs)("div", {
-      className: b.totalResultsWrapper,
+      className: m.totalResultsWrapper,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: (0, r.jsx)(o.eee, {
-          className: b.helpdeskLink,
-          href: c.Z.getArticleURL(g.BhN.SEARCH_INDEXING),
-          children: m.intl.string(m.t["G3EA+/"])
+          className: m.helpdeskLink,
+          href: c.Z.getArticleURL(f.BhN.SEARCH_INDEXING),
+          children: g.intl.string(g.t["G3EA+/"])
         })
-      }), (0, r.jsx)(x, {})]
+      }), (0, r.jsx)(O, {})]
     })
   })
 }
 
-function C() {
+function v() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk951288.jsx)(x, {})]
+    }), (0, Chunk951288.jsx)(O, {})]
   })
 }
 
-function I(e) {
+function C(e) {
   let {
     totalResults: t,
     subtitle: n
   } = e, l = i.useMemo(() => t.toLocaleString(), [t]), a = (0, r.jsx)(o.Text, {
     variant: "text-md/medium",
     color: "header-primary",
-    children: m.intl.format(m.t.ZGVL3t, {
+    children: g.intl.format(g.t.ZGVL3t, {
       count: l
     })
   });
   return null != n ? (0, r.jsxs)("div", {
-    className: b.totalResultsWithSubtitle,
+    className: m.totalResultsWithSubtitle,
     children: [a, (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-secondary",
@@ -219,19 +216,19 @@ function I(e) {
   }) : a
 }
 
-function E(e) {
+function I(e) {
   let {
     searchMode: t,
     onSearchModeChange: n
   } = e, l = i.useRef(null), [a, s] = i.useState(false), c = i.useMemo(() => [{
-    label: m.intl.string(m.t.CbaapK),
-    value: g.QIO.NEWEST
+    label: g.intl.string(g.t.CbaapK),
+    value: f.QIO.NEWEST
   }, {
-    label: m.intl.string(m.t.OukXZm),
-    value: g.QIO.OLDEST
+    label: g.intl.string(g.t.OukXZm),
+    value: f.QIO.OLDEST
   }, {
-    label: m.intl.string(m.t["q8gB5+"]),
-    value: g.QIO.MOST_RELEVANT
+    label: g.intl.string(g.t["q8gB5+"]),
+    value: f.QIO.MOST_RELEVANT
   }], []);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: l,
@@ -247,7 +244,7 @@ function E(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "search-result-sort-menu",
         onClose: i,
-        "aria-label": m.intl.string(m.t.utp2hY),
+        "aria-label": g.intl.string(g.t.utp2hY),
         onSelect: () => s(false),
         children: (0, r.jsx)(o.kSQ, {
           children: c.map(e => {
@@ -266,14 +263,14 @@ function E(e) {
         })
       })
     },
-    children: e => (0, r.jsx)(o.hU, _(y({}, e), {
+    children: e => (0, r.jsx)(o.hU, y(b({}, e), {
       buttonRef: l,
       variant: "secondary",
       icon: o.uVW,
       onClick: () => {
         s(e => !e)
       },
-      "aria-label": m.intl.string(m.t.XvNMNj),
+      "aria-label": g.intl.string(g.t.XvNMNj),
       size: "sm"
     }))
   })
