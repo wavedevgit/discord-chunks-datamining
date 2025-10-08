@@ -161,7 +161,14 @@ function P(e) {
         }],
         shouldHideMediaOptions: true
       })
-    }, [u]);
+    }, [u]),
+    b = (null == t ? true : t.name) != null ? t.name : v.intl.string(v.t.lduvqK),
+    y = null != n && "" !== n ? v.intl.formatToPlainString(v.t["8TRAzc"], {
+      filename: b,
+      alt: n
+    }) : v.intl.formatToPlainString(v.t.lXoOER, {
+      filename: b
+    });
   return (0, r.jsx)("div", {
     onMouseEnter: c,
     className: o()(I.mediaContainer, {
@@ -170,6 +177,7 @@ function P(e) {
     children: (0, r.jsx)(l.P3F, {
       onClick: g,
       className: I.clickableMedia,
+      "aria-label": y,
       children: (0, r.jsx)(R, {
         size: s,
         alt: n,
@@ -355,6 +363,7 @@ function L(e) {
       size: h
     }), !E && !A && (0, r.jsx)("div", {
       className: I.filenameContainer,
+      "aria-hidden": true,
       children: (0, r.jsx)(l.Text, {
         className: I.filename,
         variant: "text-sm/normal",
