@@ -282,10 +282,6 @@ let eB = {
       messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
       messageGetter: () => Chunk388032.intl.string(Chunk388032.t.k1Cjqq)
     },
-    [Chunk981631.evJ.GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED]: {
-      messageName: "GUILD_MESSAGE_UPDATE_RATE_LIMIT_EXCEEDED",
-      messageGetter: () => Chunk388032.intl.string(Chunk388032.t.Z5SUur)
-    },
     [Chunk981631.evJ.INVALID_MESSAGE_SEND_USER]: {
       messageName: "BOT_DM_SEND_FAILED_WITH_HELP_LINK",
       messageGetter: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.CTMXwM, {
