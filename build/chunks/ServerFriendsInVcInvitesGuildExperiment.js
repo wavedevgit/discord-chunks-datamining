@@ -37,7 +37,7 @@ function s(e) {
     location: n
   }, {
     autoTrackExposure: t,
-    disable: r
+    disable: !r
   })
 }
 
@@ -57,6 +57,6 @@ function r(e) {
     location: n
   }, {
     autoTrackExposure: t,
-    disable: r
+    disable: !r
   })
 }

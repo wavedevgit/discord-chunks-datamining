@@ -21,39 +21,39 @@ function d(e) {
     imageClassName: d,
     titleClassName: m,
     disabled: v = false
-  } = e, g = (0, s.Z)(n.gameId, "cover");
+  } = e, f = (0, s.Z)(n.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
     "aria-disabled": v,
-    className: i()(u.game, {
-      [u.disabled]: v
+    className: i()(c.game, {
+      [c.disabled]: v
     }, t),
     onClick: v ? true : () => a(n),
     children: [(0, l.jsxs)("div", {
-      className: i()(u.gameImageContainer, d),
+      className: i()(c.gameImageContainer, d),
       children: [(0, l.jsx)("img", {
-        className: u.image,
+        className: c.image,
         alt: "",
-        src: null != g ? g : ""
+        src: null != f ? f : ""
       }), (0, l.jsx)("div", {
-        className: u.gameImageBorder
+        className: c.gameImageBorder
       }), (0, l.jsx)("div", {
-        className: u.gameImageOverlay
+        className: c.gameImageOverlay
       })]
     }), (0, l.jsxs)("div", {
-      className: i()(u.textContainer, m),
+      className: i()(c.textContainer, m),
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         lineClamp: 1,
         title: n.name,
         children: n.name
       }), (0, l.jsxs)("div", {
-        className: u.boostContainer,
+        className: c.boostContainer,
         children: [(0, l.jsx)(r.$Eu, {
           size: "sm",
           color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, l.jsx)(r.Text, {
           variant: "text-sm/medium",
-          children: c.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
+          children: u.intl.formatToPlainString(n.plans.length > 1 ? o.default.Vf4vwM : o.default.ZzpD5u, {
             boostCount: n.baseCost
           })
         })]

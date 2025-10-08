@@ -1,8 +1,8 @@
 /** Chunk was on 81487 **/
 /** chunk id: 675984, original params: e,t,n (module,exports,require) **/
 function a(e) {
-  var t, n, a, r;
-  let i = e.skus.map(e => {
+  var t, n, a, r, i, l, s;
+  let o = e.skus.map(e => {
       let t = e.tenant_metadata.plan_features.map(e => ({
         title: e.title,
         description: e.description
@@ -14,14 +14,14 @@ function a(e) {
         specifications: t
       }
     }).sort((e, t) => t.cost - e.cost),
-    l = i.length > 0 ? Math.min(...i.map(e => e.cost)) : 0;
+    c = o.length > 0 ? Math.min(...o.map(e => e.cost)) : 0;
   return {
     id: e.id,
     name: e.name,
-    gameId: null != (r = null == (a = e.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? r : "",
-    developer: "Game Server Provider",
-    plans: i,
-    baseCost: l
+    gameId: null != (s = null == (a = e.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? s : "",
+    provider: null == (l = e.tenant_metadata) || null == (i = l.guild_monetization) || null == (r = i.game_server) ? true : r.provider,
+    plans: o,
+    baseCost: c
   }
 }
 require.d(exports, {

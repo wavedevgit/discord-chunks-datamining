@@ -33,24 +33,25 @@ function E() {
 }
 
 function b() {
-  var e;
-  if (!Chunk358085.isPlatformEmbedded) returnfalse;
+  if (!Chunk358085.isPlatformEmbedded || true !== Chunk998502.ZP.CanSystemServiceBeInstalled()) returnfalse;
   let {
-    enabled: t
+    enabled: e
   } = Chunk765504.Z.getConfig({
     location: "can-install"
   });
-  return !!exports && null != (e = Chunk998502.ZP.CanSystemServiceBeInstalled()) && module
+  return module
 }
 
 function y() {
   var e;
-  let {
-    enabled: t
-  } = Chunk765504.Z.useConfig({
-    location: "can-install-hook"
-  });
-  return !!Chunk358085.isPlatformEmbedded && !!exports && null != (e = Chunk998502.ZP.CanSystemServiceBeInstalled()) && module
+  let t = !!Chunk358085.isPlatformEmbedded && null != (e = Chunk998502.ZP.CanSystemServiceBeInstalled()) && module,
+    n = exports ? "can-install-hook" : "can-install-hook-disabled",
+    {
+      enabled: r
+    } = Chunk765504.Z.useConfig({
+      location: require
+    });
+  return !!exports && Chunk442837
 }
 
 function O() {

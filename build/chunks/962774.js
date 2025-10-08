@@ -1,11 +1,12 @@
 /** Chunk was on 81487 **/
 /** chunk id: 962774, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => l,
-  q: () => s
+  k: () => s,
+  q: () => o
 }), require("./388685.js");
-var Chunk660815 = require("./660815.js");
-let r = [{
+var Chunk763600 = require("./763600.js"),
+  Chunk660815 = require("./660815.js");
+let i = [{
   id: "1",
   name: "Portkey #1",
   cost: 3,
@@ -49,26 +50,26 @@ let r = [{
   }]
 }];
 
-function i(e, t) {
+function l(e, t) {
   return {
     id: e,
     name: t,
-    developer: "Portkey Developer",
-    plans: r,
-    baseCost: Math.min(...r.map(e => e.cost)),
+    provider: a.Z.SHOCKBYTE,
+    plans: i,
+    baseCost: Math.min(...i.map(e => e.cost)),
     gameId: "1"
   }
 }
-let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey Test #3"), i("4", "Portkey Test #4"), i("5", "Portkey Test #5"), i("6", "Portkey Test #6"), i("7", "Portkey Test #7"), i("8", "Portkey Test #8"), i("9", "Portkey Test #9"), i("10", "Portkey Test #10"), i("11", "Portkey Test #11"), i("12", "Portkey Test #12")],
-  s = [{
+let s = [l("1", "Portkey Test #1"), l("2", "Portkey Test #2"), l("3", "Portkey Test #3"), l("4", "Portkey Test #4"), l("5", "Portkey Test #5"), l("6", "Portkey Test #6"), l("7", "Portkey Test #7"), l("8", "Portkey Test #8"), l("9", "Portkey Test #9"), l("10", "Portkey Test #10"), l("11", "Portkey Test #11"), l("12", "Portkey Test #12")],
+  o = [{
     id: "1",
     gameId: "1",
     name: "Portkey Test #1",
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: r[1].id,
-    planName: r[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -82,8 +83,8 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: r[1].id,
-    planName: r[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -97,8 +98,8 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: r[1].id,
-    planName: r[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -112,8 +113,8 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: r[1].id,
-    planName: r[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -127,8 +128,8 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: r[1].id,
-    planName: r[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -142,8 +143,8 @@ let l = [i("1", "Portkey Test #1"), i("2", "Portkey Test #2"), i("3", "Portkey T
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: r[1].id,
-    planName: r[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,

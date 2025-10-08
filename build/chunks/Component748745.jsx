@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk961820 = require("./961820.js");
 
-function f(e) {
+function g(e) {
   let {
     guildId: t,
     gameInstance: n,
@@ -30,7 +30,7 @@ function f(e) {
     children: e => {
       var i, s;
       return (0, l.jsx)("div", {
-        className: g.disableButton,
+        className: f.disableButton,
         children: (0, l.jsx)(r.zxk, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -81,19 +81,19 @@ function b(e) {
     guildId: b,
     gameInstance: p,
     onClick: j
-  } = e, x = (0, i.e7)([c.Z], () => c.Z.getStateForGuild(b)), y = a.useMemo(() => {
+  } = e, x = (0, i.e7)([u.Z], () => u.Z.getStateForGuild(b)), y = a.useMemo(() => {
     var e;
     return null == x || null == (e = x.entitlements) ? true : e[p.entitlementId]
-  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, u.Z)(p.gameId, "icon");
+  }, [null == x ? true : x.entitlements, p.entitlementId]), O = (null == y ? true : y.ends_at) != null, h = null == y || null == (d = y.sku) || null == (o = d.tenant_metadata) || null == (n = o.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, P = (0, c.Z)(p.gameId, "icon");
   return null == h ? null : (0, l.jsxs)(r.P3F, {
-    className: g.game,
+    className: f.game,
     onClick: () => j(p),
     children: [(0, l.jsx)("img", {
-      className: g.image,
+      className: f.image,
       alt: "",
       src: P
     }), (0, l.jsxs)("div", {
-      className: g.textContainer,
+      className: f.textContainer,
       children: [(0, l.jsx)(r.X6q, {
         variant: "heading-sm/semibold",
         children: p.name
@@ -102,7 +102,7 @@ function b(e) {
       }) : (0, l.jsx)(s.P2, {
         text: v.intl.string(m.default.FFLkm5)
       })]
-    }), (0, l.jsx)(f, {
+    }), (0, l.jsx)(g, {
       guildId: b,
       gameInstance: p,
       cost: h
