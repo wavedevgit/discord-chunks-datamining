@@ -2,13 +2,14 @@
 /** chunk id: 369954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => I
+  J: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
+  Chunk230711 = require("./230711.js"),
   Chunk511010 = require("./511010.jsx"),
   Chunk981312 = require("./981312.js"),
   Chunk342386 = require("./342386.js"),
@@ -18,10 +19,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk780985 = require("./780985.js"),
   Chunk631885 = require("./631885.js"),
   Chunk292352 = require("./292352.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271650 = require("./271650.js");
-let y = e => {
+let v = e => {
     let {
       title: t,
       buttonText: n,
@@ -47,12 +49,15 @@ let y = e => {
       })]
     })
   },
-  O = () => {
+  I = () => {
     let e = (0, Chunk631885.ZM)(),
       t = () => {
         (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
           recipientIds: module
         })
+      },
+      n = () => {
+        Chunk230711.Z.setSection(Chunk981631.oAB.CONTENT_AND_SOCIAL)
       };
     return (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
       justify: "space-between",
@@ -68,7 +73,12 @@ let y = e => {
         }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-tertiary",
-          children: Chunk388032.intl.string(Chunk345909.default.X9rW0t)
+          children: Chunk388032.intl.format(Chunk345909.default.X9rW0t, {
+            openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
+              onClick: n,
+              children: e
+            }, t)
+          })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         text: Chunk388032.intl.formatToPlainString(Chunk345909.default.ggcjPT, {
@@ -80,7 +90,7 @@ let y = e => {
       })]
     })
   },
-  v = () => {
+  T = () => {
     let e = (0, Chunk780985.cz)(),
       t = (0, Chunk780985.$r)(),
       {
@@ -104,24 +114,24 @@ let y = e => {
           color: "text-tertiary",
           children: Chunk388032.intl.string(Chunk345909.default.Sv236e)
         })]
-      }), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(v, {
         title: Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
         onButtonPress: () => Chunk481060(Chunk292352.dG.CONTENT_AND_SOCIAL)
       }), (0, Chunk951288.jsx)(Chunk511010.Z, {
         className: Chunk271650.divider
-      }), (0, Chunk951288.jsx)(y, {
+      }), (0, Chunk951288.jsx)(v, {
         title: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75u7),
         onButtonPress: () => Chunk481060(Chunk292352.dG.DATA_AND_PRIVACY)
       })]
     })
   },
-  I = () => {
+  S = () => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.ZM)();
     return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk951288.jsx)("div", {
       className: Chunk271650.container,
-      children: module ? (0, Chunk951288.jsx)(O, {}) : (0, Chunk951288.jsx)(v, {})
+      children: module ? (0, Chunk951288.jsx)(I, {}) : (0, Chunk951288.jsx)(T, {})
     }) : null
   }

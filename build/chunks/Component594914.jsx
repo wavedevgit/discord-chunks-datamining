@@ -1,33 +1,33 @@
-/** Chunk was on 84802 **/
-/** chunk id: 594914, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 77033 **/
+/** chunk id: 594914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => i
+  P: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
 
-function i(e, n) {
+function l(e, t) {
   let {
-    isGift: i
-  } = n;
-  (0, a.ZDy)(async () => {
+    isGift: l
+  } = t;
+  (0, r.ZDy)(async () => {
     let {
-      default: n
-    } = await t.e("45227").then(t.bind(t, 556266));
-    return t => (0, l.jsx)(n, function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          l = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), l.forEach(function(n) {
-          var l;
-          l = t[n], n in e ? Object.defineProperty(e, n, {
-            value: l,
+      default: t
+    } = await n.e("45227").then(n.bind(n, 556266));
+    return n => (0, a.jsx)(t, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[n] = l
+          }) : e[t] = a
         })
       }
       return e
@@ -35,8 +35,8 @@ function i(e, n) {
       skuId: e.id,
       applicationId: e.applicationId,
       analyticsLocations: [],
-      isGift: i
-    }, t))
+      isGift: l
+    }, n))
   }, {
     modalKey: "slayers-payment-modal"
   })

@@ -21,16 +21,16 @@ function m(e) {
   let {
     guildId: m,
     initialPageIndex: b = 0
-  } = e, v = (0, o.e7)([s.Z], () => s.Z.getStorefrontData(m)), _ = (0, o.e7)([s.Z], () => s.Z.getStorefrontState(m)), I = ((null == v ? true : v.storefront) != null || (null == v ? true : v.error)) && !(null == v ? true : v.loading);
+  } = e, v = (0, o.e7)([s.Z], () => s.Z.getStorefrontData(m)), I = (0, o.e7)([s.Z], () => s.Z.getStorefrontState(m)), _ = ((null == v ? true : v.storefront) != null || (null == v ? true : v.error)) && !(null == v ? true : v.loading);
   if (r.useEffect(() => {
       null == v && (0, c.Y)(m)
     }, [m, v]), r.useEffect(() => {
       (0, c.K)(m, b)
-    }, [m, b]), !I || (null == v ? true : v.storefront) == null) return (0, a.jsx)("div", {
+    }, [m, b]), !_ || (null == v ? true : v.storefront) == null) return (0, a.jsx)("div", {
     className: i()(p.spinner, p.container),
     children: (0, a.jsx)(d.$jN, {})
   });
-  let h = null != (l = null == _ ? true : _.activePage) ? l : b;
+  let h = null != (l = null == I ? true : I.activePage) ? l : b;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
       className: p.container,

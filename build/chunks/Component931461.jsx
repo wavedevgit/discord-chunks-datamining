@@ -57,7 +57,8 @@ function O() {
   return (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk345909.default.i284fX,
     labelHook: exports,
-    noticeType: Chunk484710.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE
+    noticeType: Chunk484710.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
+    count: module.length
   })
 }
 
