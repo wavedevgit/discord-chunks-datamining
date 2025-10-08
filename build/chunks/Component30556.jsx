@@ -56,7 +56,7 @@ function a(e) {
     onClick: () => {
       r.Z.openPrivateChannel({
         recipientIds: t
-      }), null == a || a()
+      }), null == a || a(), (0, i.pTH)()
     }
   }, c))
 }
