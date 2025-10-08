@@ -2,12 +2,14 @@
 /** chunk id: 628952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk512722 = require("./512722.js"),
+  l = require.n(Chunk512722),
   Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk855646 = require("./855646.js");
 
-function O(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +34,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,103 +58,108 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let C = e => {
   let {
     skuId: t,
     isSelected: n,
     price: a,
-    onSelect: O,
+    onSelect: s,
     shouldDisplayHeader: I = false,
     className: S
   } = e, {
-    product: A
-  } = (0, p.T)(t), {
-    giftRecipient: C,
-    giftRecipientError: N
-  } = (0, u.wD)(), R = (0, l.e7)([_.default], () => _.default.getCurrentUser()), P = (0, E.kd)(A), w = i.useRef(null);
-  if (null == A) return null;
-  let [D] = A.items, L = () => {
-    switch (D.type) {
-      case s.Z.AVATAR_DECORATION:
-        return b.intl.string(b.t["7v0T9P"]);
-      case s.Z.PROFILE_EFFECT:
-        return b.intl.string(b.t.wR5wOj);
-      case s.Z.NAMEPLATE:
-        return b.intl.string(b.t.x5CoXV);
-      default:
-        return null
-    }
-  }, x = null != C && C.id !== (null == R ? true : R.id) && D.type !== s.Z.NAMEPLATE, M = () => {
-    null != t && null != O && O(t)
-  };
+    product: C
+  } = (0, m.T)(t, true), {
+    giftRecipient: N,
+    giftRecipientError: R
+  } = (0, f.wD)(), P = (0, u.e7)([h.default], () => h.default.getCurrentUser()), w = (0, y.kd)(C), D = i.useRef(null);
+  if (null == C) return null;
+  let [L] = C.items;
+  l()(null != L, "Product item should not be empty");
+  let x = () => {
+      if ((null == C ? true : C.type) === c.Z.BUNDLE) return null;
+      switch (L.type) {
+        case c.Z.AVATAR_DECORATION:
+          return O.intl.string(O.t["7v0T9P"]);
+        case c.Z.PROFILE_EFFECT:
+          return O.intl.string(O.t.wR5wOj);
+        case c.Z.NAMEPLATE:
+          return O.intl.string(O.t.x5CoXV);
+        default:
+          return null
+      }
+    },
+    M = null != N && N.id !== (null == P ? true : P.id) && (L.type === c.Z.AVATAR_DECORATION || L.type === c.Z.PROFILE_EFFECT),
+    j = () => {
+      null != t && null != s && s(t)
+    };
   return (0, r.jsxs)("div", {
     className: S,
     children: [I && (0, r.jsxs)("div", {
-      className: y.previewTitleContainer,
-      children: [(0, r.jsx)(c.vwX, {
-        className: y.previewTitle,
-        children: b.intl.string(b.t.PpoJzs)
-      }), x && (0, r.jsx)(c.yRy, {
-        targetElementRef: w,
-        preload: () => (0, f.Z)(C.id, C.getAvatarURL(null, 80)),
-        renderPopout: e => (0, r.jsx)(d.Z, T(v({}, e), {
-          user: C,
-          pendingAvatar: C.getAvatarURL(null, (0, c.pxk)(c.EFr.SIZE_80)),
-          pendingAvatarDecoration: (0, h.M)(D) ? D : null,
-          pendingProfileEffect: (0, m.H)(D) ? D : null,
+      className: v.previewTitleContainer,
+      children: [(0, r.jsx)(d.vwX, {
+        className: v.previewTitle,
+        children: O.intl.string(O.t.PpoJzs)
+      }), M && (0, r.jsx)(d.yRy, {
+        targetElementRef: D,
+        preload: () => (0, p.Z)(N.id, N.getAvatarURL(null, 80)),
+        renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
+          user: N,
+          pendingAvatar: N.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
+          pendingAvatarDecoration: (0, g.M)(L) ? L : null,
+          pendingProfileEffect: (0, E.H)(L) ? L : null,
           canUsePremiumCustomization: true,
           disabledInputs: true,
           hideExampleButton: true
         })),
         align: "center",
         position: "right",
-        children: e => (0, r.jsx)(c.P3F, T(v({}, e), {
-          className: y.previewLink,
-          innerRef: w,
-          children: (0, r.jsx)(c.Text, {
+        children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
+          className: v.previewLink,
+          innerRef: D,
+          children: (0, r.jsx)(d.Text, {
             variant: "text-xs/medium",
             color: "text-link",
-            children: b.intl.string(b.t["2GnJQE"])
+            children: O.intl.string(O.t["2GnJQE"])
           })
         }))
-      }, C.id)]
-    }), (0, r.jsxs)(c.P3F, {
+      }, N.id)]
+    }), (0, r.jsxs)(d.P3F, {
       tag: "div",
-      onClick: M,
-      className: o()(y.previewContainer, {
-        [y.previewContainerSelected]: n && null == N,
-        [y.previewContainerError]: n && null != N
+      onClick: j,
+      className: o()(v.previewContainer, {
+        [v.previewContainerSelected]: n && null == R,
+        [v.previewContainerError]: n && null != R
       }),
       children: [(0, r.jsxs)("div", {
-        className: y.giftInfoContainer,
-        children: [(0, r.jsx)(g.O, {
-          product: A,
+        className: v.giftInfoContainer,
+        children: [(0, r.jsx)(b.O, {
+          product: C,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
-          className: y.previewTextContainer,
-          children: [(0, r.jsx)(c.Text, {
+          className: v.previewTextContainer,
+          children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: P
-          }), (0, r.jsx)(c.X6q, {
+            children: w
+          }), (0, r.jsx)(d.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: L()
+            children: x()
           })]
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",
           children: a
         })]
-      }), n && null != N && (0, r.jsx)("div", {
-        className: y.recipientError,
-        children: (0, r.jsx)(c.Text, {
+      }), n && null != R && (0, r.jsx)("div", {
+        className: v.recipientError,
+        children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "status-danger",
-          children: N
+          children: R
         })
       })]
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 75962 **/
+/** Chunk was on 13859 **/
 /** chunk id: 533815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -23,7 +23,7 @@ function f(e) {
   } = e, {
     trackUserProfileEditAction: g
   } = (0, c.KZ)();
-  return (0, n.jsx)(o.u, {
+  return (0, n.jsx)(a.u, {
     text: u.intl.string(u.t.HUvyDQ),
     children: (0, n.jsx)(l.kL8, {
       onClick: () => {
@@ -34,7 +34,7 @@ function f(e) {
         })
       },
       "aria-label": u.intl.string(u.t.HUvyDQ),
-      className: a()(f, d.clickable),
+      className: o()(f, d.clickable),
       children: (0, n.jsx)(l.XHJ, {
         size: i,
         className: d.icon,

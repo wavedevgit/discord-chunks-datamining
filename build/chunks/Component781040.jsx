@@ -1,12 +1,12 @@
-/** Chunk was on 75962 **/
+/** Chunk was on 13859 **/
 /** chunk id: 781040, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -56,20 +56,20 @@ let j = e => {
       children: r
     } = e, {
       isDragging: i
-    } = (0, o.f)(e => ({
+    } = (0, a.f)(e => ({
       isDragging: e.isDragging()
     }));
     return (0, n.jsx)(l.ua7, {
       "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
         widgetTitle: t
       }),
-      text: (0, n.jsx)(v, {}),
+      text: (0, n.jsx)(x, {}),
       position: "top",
       shouldShow: true !== i,
       children: r
     })
   },
-  v = () => (0, Chunk951288.jsxs)("div", {
+  x = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk176870.dragClickTooltipText,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
@@ -87,12 +87,12 @@ let j = e => {
       })
     })]
   }),
-  x = e => {
+  h = e => {
     let {
       children: t,
       widget: i,
-      targetRef: a,
-      additionalMenuItems: o
+      targetRef: o,
+      additionalMenuItems: a
     } = e, {
       trackUserProfileEditAction: s
     } = (0, d.KZ)(), m = e => {
@@ -116,7 +116,7 @@ let j = e => {
       })
     };
     return (0, n.jsx)(l.yRy, {
-      targetElementRef: a,
+      targetElementRef: o,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -132,7 +132,7 @@ let j = e => {
           onSelect: () => {},
           "aria-label": b.intl.string(b.t.xpSHSk),
           children: (0, n.jsxs)(l.kSQ, {
-            children: [o, (0, n.jsx)(l.sNh, {
+            children: [a, (0, n.jsx)(l.sNh, {
               id: "remove-widget",
               label: b.intl.string(b.t.Mm07YW),
               action: m,
@@ -145,22 +145,22 @@ let j = e => {
       children: t
     })
   },
-  h = e => {
+  v = e => {
     let {
       widget: t,
       className: r,
       buttonRef: i,
-      additionalMenuItems: o
+      additionalMenuItems: a
     } = e, c = (0, f.mR)(t), u = (0, s.Dt)();
     return (0, n.jsx)(j, {
       widgetTitle: c,
-      children: e => (0, n.jsx)(x, {
+      children: e => (0, n.jsx)(h, {
         targetRef: i,
         widget: t,
-        additionalMenuItems: o,
+        additionalMenuItems: a,
         children: t => (0, n.jsxs)(l.P3F, y(O({
           innerRef: i,
-          className: a()(m.dragHandleButton, r),
+          className: o()(m.dragHandleButton, r),
           "data-dnd-name": c,
           "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
             widgetTitle: c

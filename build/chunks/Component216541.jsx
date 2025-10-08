@@ -1,12 +1,13 @@
-/** Chunk was on 96887 **/
-/** chunk id: 216541, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 216541, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  d: () => P
+  d: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -19,50 +20,50 @@ var Chunk120356 = require("./120356.js"),
   Chunk881937 = require("./881937.js"),
   Chunk63243 = require("./63243.js"),
   Chunk244488 = require("./244488.js");
-let P = e => {
+let E = e => {
   let {
     product: t,
-    isPurchased: r,
-    isHighlighted: n,
-    user: P,
-    forCollectedModal: w,
+    isPurchased: n,
+    isHighlighted: i,
+    user: E,
+    forCollectedModal: b,
     containerClassName: y
   } = e, {
-    firstProfileEffect: b,
-    firstAvatarDecoration: O,
-    firstNameplate: _
-  } = (0, d.Rj)(t), j = (0, f.O1)(O), E = (0, s.ZP)(), C = (0, l.ap)(E), x = (0, u.L)(t);
-  return (0, a.jsxs)("div", {
-    className: i()(h.container, x ? h.threeItemBundle : null, y),
-    children: [(0, a.jsx)("div", {
-      className: i()(h.profileEffectShopPreview, w ? h.profileEffectShopPreviewCollectedModal : null),
-      children: null != b && (0, a.jsx)(c.Z, {
-        isHighlighted: n,
-        skuId: b.skuId,
-        isPurchased: r,
-        forCollectedModal: w,
+    firstProfileEffect: O,
+    firstAvatarDecoration: v,
+    firstNameplate: I
+  } = (0, u.Rj)(t), T = (0, f.O1)(v), S = (0, l.ZP)(), A = (0, o.ap)(S), C = (0, d.L)(t);
+  return (0, r.jsxs)("div", {
+    className: a()(h.container, C ? h.threeItemBundle : null, y),
+    children: [(0, r.jsx)("div", {
+      className: a()(h.profileEffectShopPreview, b ? h.profileEffectShopPreviewCollectedModal : null),
+      children: null != O && (0, r.jsx)(c.Z, {
+        isHighlighted: i,
+        skuId: O.skuId,
+        isPurchased: n,
+        forCollectedModal: b,
         removeSetHeight: true
       })
-    }), (0, a.jsx)("div", {
-      className: i()(h.avatarDecorationPreview, w ? h.avatarDecorationPreviewCollectedModal : null, x ? h.avatarDecorationDropShadow : null),
-      children: (0, a.jsx)(p.R, {
-        item: j,
-        user: P,
-        avatarSize: null != _ ? o.EFr.SIZE_96 : o.EFr.SIZE_120,
-        isPurchased: r,
-        isHighlighted: n,
-        avatarPlaceholderSrc: C ? g : m
+    }), (0, r.jsx)("div", {
+      className: a()(h.avatarDecorationPreview, b ? h.avatarDecorationPreviewCollectedModal : null, C ? h.avatarDecorationDropShadow : null),
+      children: (0, r.jsx)(_.R, {
+        item: T,
+        user: E,
+        avatarSize: null != I ? s.EFr.SIZE_96 : s.EFr.SIZE_120,
+        isPurchased: n,
+        isHighlighted: i,
+        avatarPlaceholderSrc: A ? g : m
       })
-    }), x && (0, a.jsx)("div", {
-      className: i()(h.nameplatePreview, w ? h.nameplatePreviewCollectedModal : null),
-      children: (0, a.jsx)(v.Z, {
-        user: P,
-        nameplate: _,
-        isHighlighted: n,
-        isPurchased: r,
+    }), C && (0, r.jsx)("div", {
+      className: a()(h.nameplatePreview, b ? h.nameplatePreviewCollectedModal : null),
+      children: (0, r.jsx)(p.Z, {
+        user: E,
+        nameplate: I,
+        isHighlighted: i,
+        isPurchased: n,
         nameplatePreviewSize: "default",
-        showPlaceholderUser: !n,
-        avatarDecorationOverride: null != j ? j : true
+        showPlaceholderUser: !i,
+        avatarDecorationOverride: null != T ? T : true
       })
     })]
   })

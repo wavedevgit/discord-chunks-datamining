@@ -28,20 +28,20 @@ function y(e) {
       handleClose: n,
       planGroup: a,
       onSubscriptionConfirmation: y,
-      renderPurchaseConfirmation: v,
-      postSuccessGuild: L,
+      renderPurchaseConfirmation: L,
+      postSuccessGuild: v,
       followupSKUInfo: S,
       continueSessionToInitialStep: O
     } = e,
     {
       activeSubscription: P,
-      paymentSources: w,
-      paymentSourceId: E,
+      paymentSources: E,
+      paymentSourceId: w,
       selectedPlan: I,
       selectedSkuId: k,
       step: T,
-      updatedSubscription: A,
-      startingPremiumSubscriptionPlanIdRef: M,
+      updatedSubscription: M,
+      startingPremiumSubscriptionPlanIdRef: A,
       startingFractionalPremiumEndsAtRef: Z
     } = (0, f.JL)(),
     {
@@ -49,8 +49,8 @@ function y(e) {
       giftRecipient: R,
       giftCode: B,
       hasSentMessage: F,
-      isSendingMessage: U,
-      sendGiftMessage: G,
+      isSendingMessage: G,
+      sendGiftMessage: U,
       claimableRewards: H,
       selectedGiftingPromotionReward: D
     } = (0, _.wD)(),
@@ -61,33 +61,33 @@ function y(e) {
     W = (0, d.Z)(),
     Y = (0, C.a5)(I),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, j.$)(w, E),
+    q = (0, j.$)(E, w),
     J = N && null != D && Y;
   l()(null != I, "Expected plan to selected"), l()(null != k, "Expected selectedSkuId"), l()(null != T, "Step should be set");
   let X = i.useCallback(() => {
     n(), null == y || y()
   }, [n, y]);
   i.useEffect(() => {
-    !N || null == R || null == B || F || U || (0, u.pO)(R) || G({
+    !N || null == R || null == B || F || G || (0, u.pO)(R) || U({
       onSubscriptionConfirmation: y
     })
-  }, [G, N, R, B, F, U, y]), i.useEffect(() => {
+  }, [U, N, R, B, F, G, y]), i.useEffect(() => {
     null != W && null != W.reminderNotice && K && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, W.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
   }, [W, K]);
   let Q = null != O ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != v) t = v(I, X, A);
+  if (null != L) t = L(I, X, M);
   else if (N) t = (0, r.jsx)(c.TB, {
     planId: I.id,
     onClose: X
   });
   else {
-    let e = M.current === I.id ? {
-      postSuccessGuild: L
+    let e = A.current === I.id ? {
+      postSuccessGuild: v
     } : {
       followupSKUInfo: S,
-      startingPremiumSubscriptionPlanId: M.current,
+      startingPremiumSubscriptionPlanId: A.current,
       isDowngrade: null != P && (0, p.GY)(P, I.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {

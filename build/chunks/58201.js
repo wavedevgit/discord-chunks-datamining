@@ -6,6 +6,6 @@ require.d(exports, {
 var Chunk979554 = require("./979554.js"),
   Chunk597688 = require("./597688.js");
 let l = (t, e) => {
-  var n, l, s;
-  return t.type === i.Z.VARIANTS_GROUP && null != e && null != (s = r.Z.getProduct(null == (l = t.variants) || null == (n = l[e]) ? true : n.skuId)) ? s : t
+  var n, l, a;
+  return t.type === i.Z.VARIANTS_GROUP && null != e && null != (a = r.Z.getProduct(null == (l = t.variants) || null == (n = l[e]) ? true : n.skuId)) ? a : t
 }

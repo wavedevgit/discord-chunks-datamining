@@ -1,4 +1,4 @@
-/** Chunk was on 75962 **/
+/** Chunk was on 13859 **/
 /** chunk id: 566007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -39,13 +39,13 @@ function c(e) {
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          a = Object.keys(e);
-        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          o = Object.keys(e);
+        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var o = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["user", "widget", "containerClassName"]);
@@ -55,12 +55,12 @@ function c(e) {
     widget: s,
     className: u
   }, d), r = r = {
-    children: null != f ? (0, n.jsx)(o.Z, l({
+    children: null != f ? (0, n.jsx)(a.Z, l({
       user: c,
       game: f,
       widgetType: s.type,
       disableInteraction: d.disableInteraction
-    }, d)) : (0, n.jsx)(a.Z, {
+    }, d)) : (0, n.jsx)(o.Z, {
       widgetType: s.type
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

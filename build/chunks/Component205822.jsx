@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk995751 = require("./995751.js"),
   Chunk162130 = require("./162130.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -91,10 +91,10 @@ class g extends Chunk647438.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, f(this, "state", {
+    super(...e), t = this, _(this, "state", {
       isDragging: false,
       isOverZone: false
-    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", i.createRef()), f(this, "isAllDropFiles", e => {
+    }), _(this, "dragOverTimeout", null), _(this, "elementDOMRef", i.createRef()), _(this, "isAllDropFiles", e => {
       for (let n = 0; n < e.length; n++) try {
         var t;
         let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
@@ -102,7 +102,7 @@ class g extends Chunk647438.Component {
         if (!r.isFile) returnfalse
       } catch (e) {}
       returntrue
-    }), f(this, "preventUnwantedDrop", function(e) {
+    }), _(this, "preventUnwantedDrop", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
         r = e.dataTransfer;
       if (null == r) returntrue;
@@ -115,7 +115,7 @@ class g extends Chunk647438.Component {
         help: u.intl.string(u.t.Koklr6),
         icons: t.props.icons
       })), false)
-    }), f(this, "handleDragOver", e => {
+    }), _(this, "handleDragOver", e => {
       var t, n, r;
       if (!this.preventUnwantedDrop(e)) returnfalse;
       let i = e.dataTransfer;
@@ -133,23 +133,23 @@ class g extends Chunk647438.Component {
           }), null == (e = (t = this.props).onDragClear) || e.call(t)
         }, 1e3)
       }
-    }), f(this, "handleDragOverZone", () => {
+    }), _(this, "handleDragOverZone", () => {
       this.setState({
         isOverZone: true
       })
-    }), f(this, "handleDragLeaveZone", () => {
+    }), _(this, "handleDragLeaveZone", () => {
       this.setState({
         isOverZone: false
       })
-    }), f(this, "handleDragLeave", e => {
+    }), _(this, "handleDragLeave", e => {
       this.state.isDragging && (e.stopPropagation(), e.preventDefault(), this.clearDragging())
-    }), f(this, "clearDragging", () => {
+    }), _(this, "clearDragging", () => {
       var e, t;
       this.setState({
         isDragging: false,
         isOverZone: false
       }), null == (e = (t = this.props).onDragClear) || e.call(t)
-    }), f(this, "handleDrop", e => {
+    }), _(this, "handleDrop", e => {
       if (!this.preventUnwantedDrop(e, true)) returnfalse;
       let t = e.dataTransfer;
       if (null == t) returntrue;

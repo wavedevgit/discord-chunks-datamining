@@ -1,4 +1,4 @@
-/** Chunk was on 70820 **/
+/** Chunk was on 24975 **/
 /** chunk id: 336079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => b,
@@ -46,8 +46,8 @@ let p = (0, Chunk647438.createContext)({
     }, [m, y]), {
       redeemVirtualCurrency: g,
       isSubmitting: j,
-      error: v
-    } = (0, d.f)(), h = (0, l.useCallback)(e => {
+      error: h
+    } = (0, d.f)(), v = (0, l.useCallback)(e => {
       g(t, n, n => {
         f({
           entitlements: n,
@@ -61,9 +61,9 @@ let p = (0, Chunk647438.createContext)({
         loadId: n,
         analyticsLocations: null != i ? i : [],
         orbProductContext: O,
-        onRedeemVirtualCurrency: h,
+        onRedeemVirtualCurrency: v,
         isRedeeming: j,
-        orbRedemptionError: v
+        orbRedemptionError: h
       },
       children: b
     })

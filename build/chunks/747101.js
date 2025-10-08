@@ -1,4 +1,4 @@
-/** Chunk was on 75962 **/
+/** Chunk was on 13859 **/
 /** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   FX: () => b,
@@ -47,14 +47,14 @@ function u(e, t) {
 }
 
 function d(e) {
-  return (0, i.e7)([o.Z], () => o.Z.isFetching(e))
+  return (0, i.e7)([a.Z], () => a.Z.isFetching(e))
 }
 
 function f(e) {
   n.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => o.Z.canFetch(e));
-      t.length > 0 && a.Z.getDetectableGamesSupplemental(t)
+      let t = e.filter(e => a.Z.canFetch(e));
+      t.length > 0 && o.Z.getDetectableGamesSupplemental(t)
     }
   }, [e])
 }
@@ -71,11 +71,11 @@ function g(e) {
 }
 
 function p(e) {
-  let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
+  let [t, r] = (0, i.Wu)([a.Z], () => [a.Z.numNoDataAvailable(), a.Z.numSupplementalGames()]);
   return n.useMemo(() => {
     let t = {};
     return e.forEach(e => {
-      t[e] = o.Z.getGame(e)
+      t[e] = a.Z.getGame(e)
     }), t
   }, [e, t, r])
 }

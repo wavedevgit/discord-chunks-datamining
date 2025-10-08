@@ -1,7 +1,7 @@
-/** Chunk was on 70820 **/
+/** Chunk was on 24975 **/
 /** chunk id: 325834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => h
+  r: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -65,22 +65,22 @@ function j(e, t) {
   }
   return l
 }
-let v = e => {
+let h = e => {
     let {
       variantGroupProduct: t,
       variant: n,
       variantIndex: i,
       totalVariants: d,
-      selectedVariantIndex: v,
-      onEnter: h,
+      selectedVariantIndex: h,
+      onEnter: v,
       onLeave: x
     } = e, {
       isPurchased: E
     } = (0, f.L)(n), P = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: _
-    } = P, C = j(P, ["onFocus"]), A = l.useCallback(e => {
+    } = P, C = j(P, ["onFocus"]), S = l.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, p.$)(t, i), _()
-    }, [_, t, i]), S = (0, b.SQ)(n);
+    }, [_, t, i]), A = (0, b.SQ)(n);
     return (0, r.jsx)(c.u, {
       asContainer: true,
       text: y.intl.string(y.t["6cfuDg"]),
@@ -89,31 +89,31 @@ let v = e => {
       children: (0, r.jsx)(u.P3F, g(O({}, C), {
         tag: "li",
         onMouseEnter: () => {
-          h()
+          v()
         },
         onMouseLeave: () => {
           x()
         },
         onFocus: () => {
-          h()
+          v()
         },
         onBlur: () => {
           x()
         },
-        onClick: A,
+        onClick: S,
         onKeyDown: e => {
-          e.key === s.R8.ENTER && A(e)
+          e.key === s.R8.ENTER && S(e)
         },
         className: m.thumbnailVariant,
         children: (0, r.jsxs)("div", {
           className: a()(m.thumbnailImage, {
-            [m.selected]: i === v
+            [m.selected]: i === h
           }),
           style: {
             zIndex: d - i
           },
-          children: [null != S && "" !== S && (0, r.jsx)("img", {
-            src: S,
+          children: [null != A && "" !== A && (0, r.jsx)("img", {
+            src: A,
             alt: n.variantLabel,
             className: m.thumbnailImg,
             onError: e => {
@@ -129,7 +129,7 @@ let v = e => {
       }))
     })
   },
-  h = e => {
+  v = e => {
     var t, n;
     let {
       variantGroupProduct: l,
@@ -137,9 +137,9 @@ let v = e => {
       previewingVariantIndexProps: c,
       setIsHoveringOnSwitch: p,
       selectedVariantIndex: f
-    } = e, b = c.previewingVariantIndex, y = null == (t = l.variants) ? true : t[f], h = null !== b ? null == (n = l.variants) ? true : n[b] : true, x = (0, d.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
+    } = e, b = c.previewingVariantIndex, y = null == (t = l.variants) ? true : t[f], v = null !== b ? null == (n = l.variants) ? true : n[b] : true, x = (0, d.Z)("shop-variants-group-".concat(l.storeListingId), s.hy.HORIZONTAL);
     if (null == y) return null;
-    let E = null != h ? h.variantLabel : null == y ? true : y.variantLabel;
+    let E = null != v ? v.variantLabel : null == y ? true : y.variantLabel;
     return (0, r.jsx)(o.bG, {
       navigator: x,
       children: (0, r.jsx)(o.SJ, {
@@ -155,7 +155,7 @@ let v = e => {
             onMouseLeave: () => null == p ? true : p(false),
             children: [null != l.variants && l.variants.length > 0 && (0, r.jsx)("ol", {
               className: m.variantsList,
-              children: l.variants.map((e, t) => (0, r.jsx)(v, {
+              children: l.variants.map((e, t) => (0, r.jsx)(h, {
                 variantGroupProduct: l,
                 variant: e,
                 variantIndex: t,

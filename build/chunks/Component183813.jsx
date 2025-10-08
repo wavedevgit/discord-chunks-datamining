@@ -1,7 +1,7 @@
 /** Chunk was on 84071 **/
 /** chunk id: 183813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => v
+  S: () => L
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,21 +24,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk950174 = require("./950174.js");
 
-function v(e) {
+function L(e) {
   var t, n;
   let {
     handleStepChange: a,
-    handleClose: v
+    handleClose: L
   } = e, {
-    selectedPlan: L,
+    selectedPlan: v,
     selectedSkuId: S,
     step: O
   } = (0, m.JL)(), {
     setSelectedGiftingPromotionReward: P,
-    selectedGiftingPromotionReward: w,
-    claimableRewards: E,
+    selectedGiftingPromotionReward: E,
+    claimableRewards: w,
     claimableVariants: I
-  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(E, I, w), [A, M] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, N] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [R, B] = i.useState(false), F = i.useRef(A), U = i.useMemo(() => null == I ? null != E ? E : [] : I.flatMap(e => {
+  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(w, I, E), [M, A] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, N] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [R, B] = i.useState(false), F = i.useRef(M), G = i.useMemo(() => null == I ? null != w ? w : [] : I.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function v(e) {
         })
       }
       return e
-    }({}, e.variants[A]), n = n = {
+    }({}, e.variants[M]), n = n = {
       name: e.name
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -69,40 +69,40 @@ function v(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [I, E, A]);
+  }), [I, w, M]);
   i.useEffect(() => {
     let e = null == T ? true : T.defaultHighlightedReward;
-    !R && null == w && null != e && null != e && U.some(t => t.skuId === e.skuId) && (P(e), N(e.skuId))
-  }, [T, R, w, U, P]), i.useEffect(() => {
-    (null == T ? true : T.defaultCategory) == null || R || M(T.defaultCategory)
-  }, [null == T ? true : T.defaultCategory, R]), l()(null != L, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != O, "Step should be set");
-  let G = i.useMemo(() => null != Z && (null != E ? E : []).some(e => e.skuId === Z), [Z, E]),
-    H = i.useMemo(() => null != w && U.some(e => e.skuId === w.skuId), [U, w]),
-    D = i.useMemo(() => 0 === U.length || null == Z || !H || !G, [U, Z, G, H]);
+    !R && null == E && null != e && null != e && G.some(t => t.skuId === e.skuId) && (P(e), N(e.skuId))
+  }, [T, R, E, G, P]), i.useEffect(() => {
+    (null == T ? true : T.defaultCategory) == null || R || A(T.defaultCategory)
+  }, [null == T ? true : T.defaultCategory, R]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != O, "Step should be set");
+  let U = i.useMemo(() => null != Z && (null != w ? w : []).some(e => e.skuId === Z), [Z, w]),
+    H = i.useMemo(() => null != E && G.some(e => e.skuId === E.skuId), [G, E]),
+    D = i.useMemo(() => 0 === G.length || null == Z || !H || !U, [G, Z, U, H]);
   i.useEffect(() => {
-    if (0 === U.length) {
+    if (0 === G.length) {
       N(true), P(true);
       return
     }
-    G && U.some(e => e.skuId === Z) || null == Z || (N(true), P(true))
-  }, [U, G, Z, P]), i.useEffect(() => {
-    F.current === A || H || (P(true), N(true)), F.current = A
-  }, [A, H, P]);
+    U && G.some(e => e.skuId === Z) || null == Z || (N(true), P(true))
+  }, [G, U, Z, P]), i.useEffect(() => {
+    F.current === M || H || (P(true), N(true)), F.current = M
+  }, [M, H, P]);
   let z = e => {
-      P(U.find(t => t.skuId === e)), N(e), B(true)
+      P(G.find(t => t.skuId === e)), N(e), B(true)
     },
-    K = U.map(e => {
+    K = G.map(e => {
       var t, n;
       return (0, r.jsx)(d.c, {
         skuId: e.skuId,
         assetId: e.assetId,
         productName: null == (t = e.name) ? true : t.call(e),
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
-        claimed: null != E && E.every(t => t.skuId !== e.skuId),
+        claimed: null != w && w.every(t => t.skuId !== e.skuId),
         user: k,
         onSelect: z,
         selectedSkuId: Z,
-        category: A
+        category: M
       }, e.skuId)
     }),
     W = (0, r.jsx)(j.O3, {
@@ -111,16 +111,16 @@ function v(e) {
         className: y.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != w && f.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != E && f.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
-              reward_sku_id: w.skuId
+              reward_sku_id: E.skuId
             }), a(e)
           },
           onBackClick: () => a(x.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
-          planOptions: [L.id],
-          selectedPlanId: L.id,
+          planOptions: [v.id],
+          selectedPlanId: v.id,
           isNextDisabled: D
         })
       })
@@ -144,7 +144,7 @@ function v(e) {
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: y.closeButton,
-        onClick: v
+        onClick: L
       })]
     }), (0, r.jsx)(s.hzk, {
       "data-migration-pending": true,
@@ -153,8 +153,8 @@ function v(e) {
         justify: "center",
         align: "center",
         children: [null != I && I.length > 1 && (0, r.jsx)(u.Z, {
-          defaultCategory: A,
-          onCategoryChange: M
+          defaultCategory: M,
+          onCategoryChange: A
         }), (0, r.jsx)("div", {
           className: y.giftRewardShopCardsGrid,
           children: K

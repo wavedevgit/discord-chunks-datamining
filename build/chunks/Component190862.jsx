@@ -1,7 +1,7 @@
-/** Chunk was on 75962 **/
+/** Chunk was on 13859 **/
 /** chunk id: 190862, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk296009 = require("./296009.js"),
@@ -42,13 +42,13 @@ function y(e, t) {
   var r, n, i = function(e, t) {
     if (null == e) return {};
     var r, n, i = {},
-      a = Object.keys(e);
-    for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      o = Object.keys(e);
+    for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+    var o = Object.getOwnPropertySymbols(e);
+    for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
   }
   return i
 }
@@ -77,7 +77,7 @@ let j = e => {
         return null
     }
   },
-  v = e => {
+  x = e => {
     var {
       widget: t,
       user: r,
@@ -88,25 +88,25 @@ let j = e => {
         shouldShowSuggestions: g,
         handleDismissSuggestions: p
       } = (0, s.h)(f),
-      v = (0, a.e7)([o.default], () => o.default.getId() === r.id),
-      x = v && !i && g,
-      h = (0, l.mR)(f),
+      x = (0, o.e7)([a.default], () => a.default.getId() === r.id),
+      h = x && !i && g,
+      v = (0, l.mR)(f),
       _ = (0, l.Hy)(f, {
-        isCurrentUser: v
+        isCurrentUser: x
       }),
       w = (0, l.kQ)(f);
     return (0, n.jsx)(j, O({
       widget: f,
       user: r,
       disableInteraction: i,
-      headerTitle: h,
+      headerTitle: v,
       headerSubtitle: _,
-      headerActionButtons: v ? [(0, n.jsx)(u.Z, {
+      headerActionButtons: x ? [(0, n.jsx)(u.Z, {
         disabled: w,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: x && (0, n.jsx)(b.Z, {
+      trailingContent: h && (0, n.jsx)(b.Z, {
         userId: r.id,
         widgetType: f.type,
         onDismiss: p,

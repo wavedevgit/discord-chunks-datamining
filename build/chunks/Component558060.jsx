@@ -1,4 +1,4 @@
-/** Chunk was on 70820 **/
+/** Chunk was on 24975 **/
 /** chunk id: 558060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -33,7 +33,7 @@ function d(e) {
     })
   });
   let j = (0, a.ql)(l, c.tuJ.PREMIUM_TIER_2),
-    v = (0, a.x6)(l) && d ? (t = function(e) {
+    h = (0, a.x6)(l) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -62,19 +62,19 @@ function d(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t) : g,
-    h = d && null != j;
+    v = d && null != j;
   return (0, r.jsxs)("div", {
     className: i()(u.priceTagsContainer, f),
     children: [y ? null : (0, r.jsx)(o.y, {
-      price: v,
+      price: h,
       className: u.price
     }), (0, r.jsx)(s.F, {
-      price: h ? j : v,
+      price: v ? j : h,
       discount: p,
       className: i()({
         [u.price]: null == b
       }),
-      nitroIconType: h ? m : true,
+      nitroIconType: v ? m : true,
       nitroIconSize: O,
       discountOfferAmount: b
     })]

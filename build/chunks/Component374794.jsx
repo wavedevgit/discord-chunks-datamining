@@ -18,8 +18,8 @@ function c(e) {
       innerClassName: d,
       onChange: u,
       "aria-label": p,
-      "aria-describedby": _,
-      filters: f,
+      "aria-describedby": f,
+      filters: _,
       multiple: v = false,
       disabled: h = false,
       submitting: g = false
@@ -80,10 +80,10 @@ function c(e) {
       }), (0, r.jsx)(s.Z, {
         tabIndex: 0,
         onChange: u,
-        filters: f,
+        filters: _,
         multiple: v,
         "aria-label": p,
-        "aria-describedby": _,
+        "aria-describedby": f,
         disabled: h
       })]
     })

@@ -15,24 +15,24 @@ let c = t => {
   let {
     product: e,
     onSuccess: c,
-    onError: f
-  } = t, [p, h] = i.useState(false), {
-    firstAvatarDecoration: E,
+    onError: p
+  } = t, [h, E] = i.useState(false), {
+    firstAvatarDecoration: f,
     firstProfileEffect: A,
-    firstNameplate: y
-  } = (0, o.Rj)(e), T = (0, u.x6)(e) ? d.intl.string(d.t.tf1ZZ2) : e.type === r.Z.AVATAR_DECORATION ? d.intl.string(d.t.zOA4a2) : e.type === r.Z.NAMEPLATE ? d.intl.string(d.t.gOzMv7) : d.intl.string(d.t.SWm2am);
+    firstNameplate: O
+  } = (0, o.Rj)(e), C = (0, u.x6)(e) ? d.intl.string(d.t.tf1ZZ2) : e.type === r.Z.AVATAR_DECORATION ? d.intl.string(d.t.zOA4a2) : e.type === r.Z.NAMEPLATE ? d.intl.string(d.t.gOzMv7) : d.intl.string(d.t.SWm2am);
   return {
     handleUseNow: i.useCallback(async () => {
-      h(true);
+      E(true);
       let t = {};
       try {
-        if (null != E && (t.avatarDecoration = E), null != A) {
-          let t = (0, s.g9)({
+        if (null != f && (t.avatarDecoration = f), null != A) {
+          let t = (0, a.g9)({
             pendingProfileEffect: A
           });
-          await (0, a.Z)(t)
+          await (0, s.Z)(t)
         }
-        null != y && (t.nameplate = y), Object.keys(t).length > 0 && await (0, l.Mn)(t);
+        null != O && (t.nameplate = O), Object.keys(t).length > 0 && await (0, l.Mn)(t);
         {
           let {
             ToastPosition: t,
@@ -41,18 +41,18 @@ let c = t => {
             popToast: r,
             showToast: l
           } = await Promise.resolve().then(n.bind(n, 481060));
-          r(), l(i(T, e.MESSAGE, {
+          r(), l(i(C, e.MESSAGE, {
             duration: 6e3,
             position: t.TOP
           }))
         }
         null == c || c()
       } catch (t) {
-        null == f || f(t)
+        null == p || p(t)
       } finally {
-        h(false)
+        E(false)
       }
-    }, [E, A, y, c, T, f]),
-    isApplying: p
+    }, [f, A, O, c, C, p]),
+    isApplying: h
   }
 }

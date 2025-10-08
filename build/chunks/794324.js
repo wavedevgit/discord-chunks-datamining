@@ -1,4 +1,4 @@
-/** Chunk was on 35791 **/
+/** Chunk was on 66882 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Oi: () => m,
@@ -89,11 +89,11 @@ let u = e => {
       };
       let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
         h = null == f ? true : f.resting,
-        _ = null == f ? true : f.hovered;
+        g = null == f ? true : f.hovered;
       return {
         hasPreviewAssets: v,
-        buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == _ ? true : _.dark,
-        buttonBGHoverLight: null != (s = null != a ? a : t) ? s : null == _ ? true : _.light,
+        buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == g ? true : g.dark,
+        buttonBGHoverLight: null != (s = null != a ? a : t) ? s : null == g ? true : g.light,
         buttonBGRestingDark: null != (m = null != c ? c : l) ? m : null == h ? true : h.dark,
         buttonBGRestingLight: null != (p = null != u ? u : l) ? p : null == h ? true : h.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar

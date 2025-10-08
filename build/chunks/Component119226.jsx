@@ -2,7 +2,7 @@
 /** chunk id: 119226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => R
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,6 +12,7 @@ var Chunk278074 = require("./278074.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk125988 = require("./125988.js"),
   Chunk583434 = require("./583434.js"),
+  Chunk216541 = require("./216541.jsx"),
   Chunk22267 = require("./22267.jsx"),
   Chunk479446 = require("./479446.js"),
   Chunk981632 = require("./981632.jsx"),
@@ -23,7 +24,7 @@ var Chunk278074 = require("./278074.js"),
   Chunk610868 = require("./610868.js"),
   Chunk241822 = require("./241822.js");
 
-function y(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +33,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,14 +57,14 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let S = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function S(e) {
+function A(e) {
   let {
     avatarDecoration: t
   } = e, {
@@ -75,43 +76,43 @@ function S(e) {
     size: (0, s.y9)(o.EFr.SIZE_152)
   });
   return (0, r.jsx)("div", {
-    className: E.giftMainAnimationWrapper,
-    children: (0, r.jsx)(T, I(O({}, i), {
+    className: b.giftMainAnimationWrapper,
+    children: (0, r.jsx)(S, T(v({}, i), {
       avatarDecoration: n,
       src: a,
-      className: E.avatar,
+      className: b.avatar,
       size: o.EFr.SIZE_152,
-      "aria-label": g.intl.string(g.t.lqaIxM)
+      "aria-label": E.intl.string(E.t.lqaIxM)
     }))
   })
 }
 
-function A(e) {
+function C(e) {
   var t;
   let {
     skuId: n
-  } = e, i = null == (t = (0, _.V)(n)) ? true : t.config;
+  } = e, i = null == (t = (0, p.V)(n)) ? true : t.config;
   return (0, r.jsxs)("div", {
-    className: E.profileEffectContainer,
+    className: b.profileEffectContainer,
     children: [(0, r.jsx)("img", {
-      src: b,
+      src: y,
       alt: null == i ? true : i.accessibilityLabel,
-      className: E.profileEffectBackground
-    }), (0, r.jsx)(p.Z, {
+      className: b.profileEffectBackground
+    }), (0, r.jsx)(h.Z, {
       skuId: n
     })]
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     nameplate: t
   } = e;
   return (0, r.jsx)("div", {
-    className: E.nameplateContainer,
-    children: (0, r.jsx)(u.Z, {
+    className: b.nameplateContainer,
+    children: (0, r.jsx)(d.Z, {
       nameplate: t,
-      className: E.nameplate,
+      className: b.nameplate,
       nameplatePreviewSize: "xlarge",
       isHighlighted: true,
       showPlaceholderUser: true
@@ -119,33 +120,42 @@ function C(e) {
   })
 }
 
-function N(e) {
+function R(e) {
   let {
     sku: t
   } = e, {
     selectedGiftStyle: n
-  } = (0, m.wD)(), {
+  } = (0, g.wD)(), {
     product: o
-  } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0], l = (0, i.EQ)(s).with({
+  } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0];
+  if ((null == o ? true : o.type) === a.Z.BUNDLE) return (0, r.jsx)("div", {
+    className: b.bundlePreviewWrapper,
+    children: (0, r.jsx)(u.d, {
+      product: o,
+      isPurchased: false,
+      isHighlighted: false
+    })
+  });
+  let l = (0, i.EQ)(s).with({
     type: a.Z.AVATAR_DECORATION
-  }, e => (0, r.jsx)(S, {
+  }, e => (0, r.jsx)(A, {
     avatarDecoration: e
   })).with({
     type: a.Z.PROFILE_EFFECT
-  }, e => (0, r.jsx)(A, {
+  }, e => (0, r.jsx)(C, {
     skuId: e.skuId
   })).with({
     type: a.Z.NAMEPLATE
-  }, e => (0, r.jsx)(C, {
+  }, e => (0, r.jsx)(N, {
     nameplate: e
   })).otherwise(() => null);
   return null != n && null == l ? (0, r.jsx)("div", {
-    className: E.giftMainAnimationWrapper,
-    children: (0, r.jsx)(f.Z, {
-      defaultAnimationState: d.SR.LOOP,
+    className: b.giftMainAnimationWrapper,
+    children: (0, r.jsx)(_.Z, {
+      defaultAnimationState: f.SR.LOOP,
       giftStyle: n,
       shouldAnimate: true,
-      className: E.__invalid_giftMainAnimation
+      className: b.__invalid_giftMainAnimation
     })
   }) : l
 }

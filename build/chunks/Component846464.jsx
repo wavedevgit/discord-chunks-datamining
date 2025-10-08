@@ -39,10 +39,10 @@ function y(e) {
   } = (0, f.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, _.wD)(), L = b && null != y && y.length > 0, S = (0, C.N)(i), O = (0, o.Nx)(), P = (0, s.ZP)({
+  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, C.N)(i), O = (0, o.Nx)(), P = (0, s.ZP)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(L, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -90,12 +90,12 @@ function y(e) {
     isGift: b,
     inOfferExperience: O,
     priceOptions: u,
-    showPromotionalGiftBanner: L,
+    showPromotionalGiftBanner: v,
     enablePremiumBrandRefresh: P
   })
 }
 
-function v(e) {
+function L(e) {
   let {
     selectSku: t,
     onClose: n,

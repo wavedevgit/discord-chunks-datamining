@@ -1,7 +1,7 @@
-/** Chunk was on 5588 **/
+/** Chunk was on 81487 **/
 /** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,45 +9,52 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
   Chunk314897 = require("./314897.js"),
+  Chunk172416 = require("./172416.js"),
   Chunk892001 = require("./892001.js"),
   Chunk228168 = require("./228168.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   let {
     targetElementRef: t,
     markAsDismissed: n,
-    children: p
-  } = e, h = (0, r.e7)([o.default], () => o.default.getId()), x = (0, r.e7)([l.Z], () => l.Z.useReducedMotion);
+    children: h
+  } = e, x = (0, r.e7)([o.default], () => o.default.getId()), f = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), b = (0, c.bg)({
+    location: "GameWidgetsPopover"
+  });
   return (0, a.jsxs)(a.Fragment, {
-    children: [p, (0, a.jsx)(i.J2, {
+    children: [h, (0, a.jsx)(i.J2, {
       targetElementRef: t,
-      title: m.intl.string(m.t.gxcsSk),
-      body: m.intl.string(m.t["8L7E5u"]),
+      badge: b ? {
+        type: "early_access",
+        variant: "expressive"
+      } : true,
+      title: p.intl.string(p.t.gxcsSk),
+      body: p.intl.string(p.t["8L7E5u"]),
       caretConfig: {
         align: "start"
       },
       graphic: {
         type: "image",
-        src: x ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
+        src: f ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
       },
       position: "top",
       align: "left",
       gradientColor: "blue",
       size: "md",
       onRequestClose: () => {
-        n(u.L.USER_DISMISS)
+        n(m.L.USER_DISMISS)
       },
       actions: [{
-        text: m.intl.string(m.t.RzWDqa),
+        text: p.intl.string(p.t.RzWDqa),
         variant: "primary",
         onClick: () => {
-          n(u.L.TAKE_ACTION), (0, c.openUserProfileModal)({
-            userId: h,
+          n(m.L.TAKE_ACTION), (0, d.openUserProfileModal)({
+            userId: x,
             sourceAnalyticsLocations: [s.Z.ACCOUNT],
             hideRestrictedProfile: true,
-            section: d.oh.WIDGETS
+            section: u.oh.WIDGETS
           })
         }
       }]

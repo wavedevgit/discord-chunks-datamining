@@ -1,4 +1,4 @@
-/** Chunk was on 18539 **/
+/** Chunk was on 69033 **/
 /** chunk id: 523080, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -17,8 +17,8 @@ class s extends Chunk81825.Z {
   static fromServer(t) {
     var e, r, {
       sku_id: n,
-      sku_product_line: o,
-      sku_name: u
+      sku_product_line: u,
+      sku_name: o
     } = t;
     return new s((e = function(t) {
       for (var e = 1; e < arguments.length; e++) {
@@ -47,8 +47,8 @@ class s extends Chunk81825.Z {
       return i
     }(t, ["sku_id", "sku_product_line", "sku_name"])), r = r = {
       sku_id: n,
-      sku_product_line: o,
-      sku_name: u
+      sku_product_line: u,
+      sku_name: o
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
       var r = Object.keys(t);
       if (Object.getOwnPropertySymbols) {

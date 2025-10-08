@@ -15,17 +15,17 @@ function o(e) {
     isPremiumUser: i,
     discount: o,
     hasSufficientOrbs: d,
-    discountOfferAmount: c
+    discountOfferAmount: u
   } = e;
-  return t.currency === a.pK.DISCORD_ORB ? (0, l.jsx)(n.Z, {
+  return t.currency === a.pK.DISCORD_ORB ? (0, l.jsx)(r.Z, {
     orbAmount: t.amount,
     className: d ? true : s.disabled
-  }) : (0, l.jsx)(r.F, {
+  }) : (0, l.jsx)(n.F, {
     price: t,
     discount: o,
     nitroIconType: i ? "default" : true,
     nitroIconSize: "md",
-    discountOfferAmount: c
+    discountOfferAmount: u
   })
 }
 
@@ -33,8 +33,8 @@ function d(e) {
   let {
     displayPrices: t,
     isPremiumUser: i,
-    discount: r,
-    hasSufficientOrbs: n,
+    discount: n,
+    hasSufficientOrbs: r,
     discountOfferAmount: a
   } = e;
   return (0, l.jsx)("div", {
@@ -42,8 +42,8 @@ function d(e) {
     children: t.map((e, t) => (0, l.jsx)(o, {
       price: e,
       isPremiumUser: i,
-      discount: r,
-      hasSufficientOrbs: n,
+      discount: n,
+      hasSufficientOrbs: r,
       discountOfferAmount: a
     }, t))
   })

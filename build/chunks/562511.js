@@ -2,7 +2,7 @@
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A2: () => v,
-  S3: () => f
+  S3: () => _
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,9 +16,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk864133 = require("./864133.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function _(e) {
   let t = function(e) {
-    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds);
+    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
     return (0, i.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
@@ -31,7 +31,7 @@ function f(e) {
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds),
+    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
       n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
       s = (0, i.e7)([d.default], () => {
         var e;
@@ -50,12 +50,12 @@ function f(e) {
           }
         })
       }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
-    let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
+    let _ = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
       v = null === n || (null == n ? true : n.tag) === u;
-    return f && !v && t
+    return _ && !v && t
   }(e) ? t ? "available" : null : "changed"
 }
 
 function v(e) {
-  return null !== f(e)
+  return null !== _(e)
 }

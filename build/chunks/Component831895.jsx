@@ -40,23 +40,23 @@ function p(e) {
     }),
     onMouseEnter: () => g(d.KN.Treat),
     onMouseLeave: () => g(null)
-  }], []), v = i.useCallback(e => {
+  }], []), L = i.useCallback(e => {
     x(e.value), f(e.value)
-  }, [f]), L = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
+  }, [f]), v = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: l()(u.container, h),
     children: [(0, r.jsx)(C.w, {
       options: y,
       value: m,
-      onChange: v
-    }), j === d.KN.Trick && null != L && (0, r.jsx)("div", {
+      onChange: L
+    }), j === d.KN.Trick && null != v && (0, r.jsx)("div", {
       className: l()(u.animationOverlay, u.trickAnimation),
       children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: u.lottieAnimation,
-        importData: L,
+        importData: v,
         renderer: o.Fmz.Renderers.SVG,
         versionKey: +(j === d.KN.Trick)
       })
