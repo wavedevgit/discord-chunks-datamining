@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
   Chunk192371 = require("./192371.js"),
@@ -82,11 +82,11 @@ function p(e) {
     costDecorator: t,
     status: a,
     className: i
-  } = e, s = true !== n ? g.labelContainer : g.labelContainerEnd;
+  } = e, o = true !== n ? g.labelContainer : g.labelContainerEnd;
   return (0, r.jsxs)("div", {
-    className: o()(s, i),
+    className: s()(o, i),
     children: [true !== n && (0, r.jsxs)("div", {
-      className: o()(g.inline, g.inlineBoost),
+      className: s()(g.inline, g.inlineBoost),
       children: [(0, r.jsx)(l.$Eu, {
         size: "sm",
         color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -155,7 +155,7 @@ let _ = Chunk647438.forwardRef(function(e, n) {
     children: p
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(g.parentContainer, {
+    className: s()(g.parentContainer, {
       [g.rollbackInactive]: u && !i
     }),
     ref: n,
@@ -164,7 +164,7 @@ let _ = Chunk647438.forwardRef(function(e, n) {
       onClick: b,
       onMouseOver: f,
       onMouseLeave: x,
-      className: o()(g.container, {
+      className: s()(g.container, {
         [g.active]: i,
         [g.warning]: c || u && i
       }, t),
@@ -174,7 +174,7 @@ let _ = Chunk647438.forwardRef(function(e, n) {
       }), "beta" === d && (0, r.jsx)(l.IGR, {
         className: g.new,
         text: m.intl.string(m.t.oW0eUV),
-        color: s.Z.BG_BRAND
+        color: o.Z.BG_BRAND
       })]
     })
   })

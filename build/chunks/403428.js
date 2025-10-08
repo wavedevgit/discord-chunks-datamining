@@ -18,28 +18,32 @@ function a(e, t, n) {
   return t.registerExperiment(a), {
     definition: a,
     useConfig: function(e) {
-      let a = n(s, e),
-        [u, d] = (0, i.Wu)([t], () => t.getEvaluationAndAssignment(s, a, o), [a]),
-        f = null == d ? true : d.variantId,
-        _ = null == d ? true : d.revision,
-        p = null == d ? true : d.isOverride;
+      var a;
+      let u = n(s, e),
+        [d, f] = (0, i.Wu)([t], () => t.getEvaluationAndAssignment(s, u, o), [u]),
+        _ = null == f ? true : f.variantId,
+        p = null != (a = null == f ? true : f.trackedVariantId) ? a : _,
+        h = null == f ? true : f.revision,
+        m = null == f ? true : f.isOverride;
       if ((0, r.useEffect)(() => {
-          null != u && null != f && null != _ && false === p && t.trackExperimentExposure(u, o, e.location, s, _, f)
-        }, [a, u, f, _, e.location, p]), null == f) return c;
+          null != d && null != p && null != h && false === m && t.trackExperimentExposure(d, o, e.location, s, h, p)
+        }, [u, d, p, h, e.location, m]), null == _) return c;
       {
-        let e = l[f];
+        let e = l[_];
         return null != e ? e : c
       }
     },
     getConfig: function(e) {
-      let r = n(s, e),
-        [i, a] = t.getEvaluationAndAssignment(s, r, o),
-        u = null == a ? true : a.variantId,
-        d = null == a ? true : a.revision,
-        f = null == a ? true : a.isOverride;
-      if (null != i && null != u && null != d && false === f && t.trackExperimentExposure(i, o, e.location, s, d, u), null == u) return c;
+      var r;
+      let i = n(s, e),
+        [a, u] = t.getEvaluationAndAssignment(s, i, o),
+        d = null == u ? true : u.variantId,
+        f = null != (r = null == u ? true : u.trackedVariantId) ? r : d,
+        _ = null == u ? true : u.revision,
+        p = null == u ? true : u.isOverride;
+      if (null != a && null != f && null != _ && false === p && t.trackExperimentExposure(a, o, e.location, s, _, f), null == d) return c;
       {
-        let e = l[u];
+        let e = l[d];
         return null != e ? e : c
       }
     }

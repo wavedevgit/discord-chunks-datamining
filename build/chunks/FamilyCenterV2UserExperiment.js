@@ -2,7 +2,8 @@
 /** chunk id: 277537, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PO: () => o,
+  PO: () => s,
+  vE: () => o,
   yI: () => a
 });
 var Chunk818083 = require("./818083.js"),
@@ -25,6 +26,14 @@ let a = (0, Chunk818083.B)({
 });
 
 function o(e) {
+  return a.getCurrentConfig({
+    location: e
+  }, {
+    autoTrackExposure: false
+  }).enabled
+}
+
+function s(e) {
   return a.useExperiment({
     location: e
   }, {

@@ -1,12 +1,12 @@
 /** Chunk was on 85683 **/
 /** chunk id: 331500, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 });
 var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -50,18 +50,18 @@ let y = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function O(e) {
+function C(e) {
   let {
     guildId: n
   } = e;
-  o.useEffect(() => {
+  s.useEffect(() => {
     (0, g.po)(n)
   }, [n]);
   let t = (0, d.e7)([b.Z], () => b.Z.getStateForGuild(n)),
     {
       catalog: r,
       instances: a
-    } = o.useMemo(() => {
+    } = s.useMemo(() => {
       var e, n;
       return {
         catalog: Object.values(null != (e = null == t ? true : t.catalog) ? e : {}),
@@ -85,7 +85,7 @@ function O(e) {
       className: h.maxInstancesWarning,
       children: (0, i.jsx)(x.Y, {})
     }), (0, i.jsx)(c.zJl, {
-      className: s()(h.gameContainerWrapper, {
+      className: o()(h.gameContainerWrapper, {
         [h.disabled]: l
       }),
       children: (0, i.jsx)("div", {

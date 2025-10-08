@@ -1,15 +1,16 @@
 /** Chunk was on 85683 **/
 /** chunk id: 462923, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => D
+  ZP: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk660815 = require("./660815.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk690221 = require("./690221.jsx"),
@@ -31,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk842788 = require("./842788.js");
 
-function w(e) {
+function k(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -50,70 +51,70 @@ function w(e) {
   return e
 }
 
-function k(e) {
-  return (0, r.jsx)(d.zxk, w({
+function E(e) {
+  return (0, r.jsx)(u.zxk, k({
     fullWidth: true,
-    text: S.intl.string(P.default.NHwQ0N),
+    text: T.intl.string(S.default.NHwQ0N),
     variant: "secondary"
   }, e))
 }
 
-function E(e) {
-  return (0, r.jsx)(d.zxk, w({
-    fullWidth: true,
-    text: S.intl.string(P.default["jO3u+/"]),
-    variant: "secondary",
-    icon: d.Gr1,
-    iconPosition: "end"
-  }, e))
-}
-
 function Z(e) {
-  return (0, r.jsx)(d.zxk, w({
+  return (0, r.jsx)(u.zxk, k({
     fullWidth: true,
-    text: S.intl.string(P.default["0TMXHh"]),
-    variant: "primary"
+    text: T.intl.string(S.default["jO3u+/"]),
+    variant: "secondary",
+    icon: u.Gr1,
+    iconPosition: "end"
   }, e))
 }
 
 function G(e) {
-  return (0, r.jsx)(d.zxk, w({
+  return (0, r.jsx)(u.zxk, k({
     fullWidth: true,
-    text: S.intl.string(P.default.irvMjo),
-    variant: "primary",
-    icon: d.Gr1,
-    iconPosition: "end"
+    text: T.intl.string(S.default["0TMXHh"]),
+    variant: "primary"
   }, e))
 }
 
 function D(e) {
+  return (0, r.jsx)(u.zxk, k({
+    fullWidth: true,
+    text: T.intl.string(S.default.irvMjo),
+    variant: "primary",
+    icon: u.Gr1,
+    iconPosition: "end"
+  }, e))
+}
+
+function R(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, O.Z)(t), [w, D] = (0, u.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), R = w !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, A = (0, s.e7)([g.Z], () => g.Z.getDetectableGame(t.gameId)), V = a.useCallback(() => {
-    R || null == t.providerType ? (0, C.Z)(n, t) : (0, I.Z)({
+  } = e, i = (0, O.Z)(t), [k, R] = (0, m.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), A = k !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, o.e7)([b.Z], () => b.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
+    A || null == t.providerType ? (0, I.Z)(n, t) : (0, N.Z)({
       provider: t.providerType,
       onAccept: () => {
-        D(N.L.TAKE_ACTION), (0, C.Z)(n, t)
+        R(P.L.TAKE_ACTION), (0, I.Z)(n, t)
       }
     })
-  }, [t, R, D, n]), B = a.useCallback(() => {
-    (0, b.JG)(null != i ? i : ""), (0, d.showToast)((0, d.createToast)(S.intl.string(S.t["+5kSoa"]), d.ToastType.SUCCESS))
-  }, [i]), W = (0, y.Z)(t.gameId, "cover"), L = (0, p.Z)(n), M = a.useCallback(() => {
+  }, [t, A, R, n]), W = a.useCallback(() => {
+    (0, f.JG)(null != i ? i : ""), (0, u.showToast)((0, u.createToast)(T.intl.string(T.t["+5kSoa"]), u.ToastType.SUCCESS))
+  }, [i]), B = (0, C.Z)(t.gameId, "cover"), M = (0, v.Z)(n), U = a.useCallback(() => {
     var e;
-    (0, x.q)({
+    (0, p.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
   }, [t.gameServerPanelUrl]), z = a.useCallback(() => {
-    (0, v.WX)(n, t.id)
-  }, [n, t.id]), U = a.useMemo(() => {
+    (0, j.WX)(n, t.id)
+  }, [n, t.id]), F = a.useMemo(() => {
     switch (t.status) {
       case l.V.SLEEPING:
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(k, {
+          children: [(0, r.jsx)(E, {
             onClick: z
-          }), L && (0, r.jsx)(E, {
-            onClick: M,
+          }), M && (0, r.jsx)(Z, {
+            onClick: U,
             disabled: null == t.gameServerPanelUrl
           })]
         });
@@ -121,163 +122,186 @@ function D(e) {
       case l.V.ONLINE:
       case l.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(Z, {
-            onClick: V
-          }), L && (0, r.jsx)(E, {
-            onClick: M,
+          children: [(0, r.jsx)(G, {
+            onClick: L
+          }), M && (0, r.jsx)(Z, {
+            onClick: U,
             disabled: null == t.gameServerPanelUrl
           })]
         });
+      case l.V.STARTUP_FAILED:
       case l.V.MISSING_STOCK:
-        return L ? (0, r.jsx)(G, {
-          onClick: M
-        }) : (0, r.jsx)(Z, {
-          onClick: V,
+        return M ? (0, r.jsx)(D, {
+          onClick: U
+        }) : (0, r.jsx)(G, {
+          onClick: L,
           disabled: true
         });
       case l.V.DELETED:
-      case l.V.STARTUP_FAILED:
-        return L ? (0, r.jsx)(E, {
-          onClick: M,
+        return M ? (0, r.jsx)(Z, {
+          onClick: U,
           disabled: null == t.gameServerPanelUrl
-        }) : (0, r.jsx)(Z, {
-          onClick: V,
+        }) : (0, r.jsx)(G, {
+          onClick: L,
           disabled: true
         });
       default:
         return null
     }
-  }, [t, V, L, M, z]), F = a.useMemo(() => {
+  }, [t, L, M, U, z]), K = a.useMemo(() => {
     if (null == t.gameConfig) return null;
-    let e = [t.gameConfig.type, t.gameConfig.version].filter(f.lm).join(" ");
+    let e = [t.gameConfig.type, t.gameConfig.version].filter(x.lm).join(" ");
     return "" === e ? null : e
-  }, [t.gameConfig]);
-  return (0, r.jsxs)(_.Z, {
-    actions: U,
+  }, [t.gameConfig]), X = a.useMemo(() => {
+    switch (t.status) {
+      case l.V.STARTING:
+        if (null == t.gameServerPanelUrl) return T.intl.string(S.default.K59Dxc);
+        return null;
+      case l.V.STARTUP_FAILED:
+        return T.intl.string(M ? S.default.lpwWOD : S.default.pNWcub);
+      case l.V.MISSING_STOCK:
+        return T.intl.string(M ? S.default.CksIra : S.default.pNWcub);
+      default:
+        return null
+    }
+  }, [t.status, t.gameServerPanelUrl, M]);
+  return (0, r.jsxs)(h.Z, {
+    actions: F,
     children: [(0, r.jsxs)("div", {
-      className: T.serverDetailsContainer,
+      className: w.serverDetailsContainer,
       children: [(0, r.jsxs)("div", {
-        className: T.serverHeader,
+        className: w.serverHeader,
         children: [(0, r.jsx)("img", {
-          src: null != W ? W : "",
+          src: null != B ? B : "",
           alt: "",
-          className: T.gameImage
+          className: w.gameImage
         }), (0, r.jsxs)("div", {
-          className: T.serverInfo,
-          children: [(0, r.jsx)(d.X6q, {
+          className: w.serverInfo,
+          children: [(0, r.jsx)(u.X6q, {
             variant: "heading-sm/medium",
             children: t.name
-          }), (0, r.jsx)(d.Text, {
+          }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: [null == A ? true : A.name, F].filter(f.lm).join(" • ")
+            children: [null == V ? true : V.name, K].filter(x.lm).join(" • ")
           })]
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsxs)("div", {
-          className: T.detailsGrid,
+          className: w.detailsGrid,
           children: [(0, r.jsxs)("div", {
-            className: T.detailItem,
-            children: [(0, r.jsx)(d.Text, {
+            className: w.detailItem,
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: S.intl.string(P.default.X0IaiI)
-            }), (0, r.jsx)(d.Text, {
+              children: T.intl.string(S.default.X0IaiI)
+            }), (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               children: "".concat(null != t.onlineConnectionsCount ? t.onlineConnectionsCount : "—", " / ").concat(null != t.maxConnectionsCount ? t.maxConnectionsCount : "—")
             })]
           }), (0, r.jsxs)("div", {
-            className: T.detailItem,
-            children: [(0, r.jsx)(d.Text, {
+            className: w.detailItem,
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: S.intl.string(P.default["9pw/yM"])
+              children: T.intl.string(S.default["9pw/yM"])
             }), (0, r.jsx)("div", {
-              className: T.serverIpContainer,
-              children: null == i ? (0, r.jsx)(d.Text, {
+              className: w.serverIpContainer,
+              children: null == i ? (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: "—"
-              }) : R ? (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(d.Text, {
+              }) : A ? (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(u.Text, {
                   variant: "text-sm/medium",
                   children: i
-                }), (0, r.jsx)(d.P3F, {
-                  className: T.copyButton,
-                  "aria-label": S.intl.string(S.t.OpuAlJ),
-                  onClick: B,
-                  children: (0, r.jsx)(d.TIy, {
+                }), (0, r.jsx)(u.P3F, {
+                  className: w.copyButton,
+                  "aria-label": T.intl.string(T.t.OpuAlJ),
+                  onClick: W,
+                  children: (0, r.jsx)(u.TIy, {
                     size: "sm"
                   })
                 })]
-              }) : null != t.providerType && (0, r.jsx)(m.Z, {
+              }) : null != t.providerType && (0, r.jsx)(g.Z, {
                 onClick: () => {
-                  (0, I.Z)({
+                  (0, N.Z)({
                     provider: t.providerType,
                     onAccept: () => {
-                      D(N.L.TAKE_ACTION), (0, C.Z)(n, t)
+                      R(P.L.TAKE_ACTION), (0, I.Z)(n, t)
                     }
                   })
                 },
-                children: S.intl.string(P.default.UwXK29)
+                children: T.intl.string(S.default.UwXK29)
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: T.detailItem,
-            children: [(0, r.jsx)(d.Text, {
+            className: w.detailItem,
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: S.intl.string(P.default.MQQIu7)
+              children: T.intl.string(S.default.MQQIu7)
             }), (0, r.jsxs)("div", {
-              className: T.statusContainer,
-              children: [(0, r.jsx)("span", {
-                className: o()(T.statusIndicator, null != t.status && T[t.status])
-              }), (0, r.jsx)(d.Text, {
+              className: w.statusContainer,
+              children: [t.status === l.V.STARTING ? (0, r.jsx)(u.$jN, {
+                type: u.RAz.SPINNING_CIRCLE_SIMPLE,
+                className: w.statusLoading,
+                itemClassName: w.statusLoadingItem
+              }) : (0, r.jsx)("span", {
+                className: s()(w.statusIndicator, null != t.status && w[t.status])
+              }), (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: function(e) {
                   switch (e) {
                     case l.V.STARTING:
-                      return S.intl.string(P.default["7XF8pK"]);
+                      return T.intl.string(S.default["7XF8pK"]);
                     case l.V.STARTUP_FAILED:
-                      return S.intl.string(P.default["C/096+"]);
+                      return T.intl.string(S.default["C/096+"]);
                     case l.V.OFFLINE:
-                      return S.intl.string(P.default.Bz9gcH);
+                      return T.intl.string(S.default.Bz9gcH);
                     case l.V.ONLINE:
-                      return S.intl.string(P.default["7q4iGR"]);
+                      return T.intl.string(S.default["7q4iGR"]);
                     case l.V.DELETED:
-                      return S.intl.string(P.default["UvP/1N"]);
+                      return T.intl.string(S.default["UvP/1N"]);
                     case l.V.MISSING_STOCK:
-                      return S.intl.string(P.default.ssC3cX);
+                      return T.intl.string(S.default.ssC3cX);
                     case l.V.SLEEPING:
-                      return S.intl.string(P.default.PS8AMT);
+                      return T.intl.string(S.default.PS8AMT);
                     default:
                       return "—"
                   }
                 }(t.status)
+              }), null != X && (0, r.jsx)(d.u, {
+                position: "top",
+                text: X,
+                children: (0, r.jsx)(u.idN, {
+                  className: w.statusTooltipIcon,
+                  size: "xs"
+                })
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: T.detailItem,
-            children: [(0, r.jsx)(d.Text, {
+            className: w.detailItem,
+            children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: S.intl.string(P.default.fqrxlJ)
-            }), (0, r.jsx)(d.Text, {
+              children: T.intl.string(S.default.fqrxlJ)
+            }), (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               children: null != t.regionName ? t.regionName : "—"
             })]
           })]
         })
       })]
-    }), L && (0, r.jsx)("div", {
-      className: T.overflowMenu,
-      children: (0, r.jsx)(h.Z, {
+    }), M && (0, r.jsx)("div", {
+      className: w.overflowMenu,
+      children: (0, r.jsx)(y.Z, {
         guildId: n,
         instance: t
       })
     }), (0, r.jsx)("div", {
-      className: T.imageBackground,
-      children: (0, r.jsx)(j.M, {
-        imageUrl: null != W ? W : ""
+      className: w.imageBackground,
+      children: (0, r.jsx)(_.M, {
+        imageUrl: null != B ? B : ""
       })
     })]
   })

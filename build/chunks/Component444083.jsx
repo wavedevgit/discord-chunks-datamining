@@ -46,7 +46,7 @@ function x(e) {
       return (0, r.jsx)(i.v2r, {
         navId: "portkey-popout-context-menu",
         onClose: () => {
-          (0, o.Zy)(), a()
+          (0, s.Zy)(), a()
         },
         "aria-label": g.intl.string(m.default.xCq1DA),
         onSelect: true,
@@ -56,7 +56,7 @@ function x(e) {
             icon: i.kBi,
             label: g.intl.string(m.default["TciV8/"]),
             action: () => {
-              (0, s.q)({
+              (0, o.q)({
                 href: u.BH[t.providerType]
               })
             }

@@ -26,10 +26,10 @@ function j(e) {
     guildId: t
   } = e;
   a.useEffect(() => {
-    (0, u.EC)(t), s.Z.getDetectableGames()
+    (0, u.EC)(t), o.Z.getDetectableGames()
   }, [t]);
   let j = (0, d.Z)(t),
-    _ = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(t)),
+    _ = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)),
     h = Object.values(null != (n = null == _ ? true : _.instances) ? n : {});
   return (0, r.jsxs)("div", {
     className: v.container,

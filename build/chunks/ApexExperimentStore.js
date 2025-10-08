@@ -102,7 +102,7 @@ let O = [Chunk341691.Cm.User],
   C = new Set,
   N = new Set,
   R = "apexTrackedExposures",
-  P = 1,
+  P = 2,
   w = 6048e5,
   D = {},
   L = {};
@@ -114,10 +114,11 @@ function x(e) {
 class M extends(r = Chunk442837.ZP.PersistedStore) {
   loadStoredState(e, t) {
     for (let n in null != e && 1 === e.version && (T = e.clientOverrides, v = e.evaluatedExperiments), S = {}, t) {
-      let e = x(n);
+      let e = x(n),
+        r = t[n];
       S[n] = {
         hashedName: e,
-        variantId: t[n],
+        variantId: r,
         isOverride: true
       }
     }
@@ -146,9 +147,10 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
           evaluationId: null != t ? t : true,
           assignments: {}
         };
-        for (let [t, r, o, s] of(i[e] = a, n)) null != o || (o = 0), a.assignments[t] = {
+        for (let [t, r, o, s, l] of(i[e] = a, n)) null != o || (o = 0), a.assignments[t] = {
           hashedName: t,
           variantId: r,
+          trackedVariantId: l,
           isOverride: (o & c.V8.IsOverride) != 0,
           revision: s
         }
