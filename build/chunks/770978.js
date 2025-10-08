@@ -1,5 +1,5 @@
-/** Chunk was on 59054 **/
-/** chunk id: 770978, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 82928 **/
+/** chunk id: 770978, original params: e,n,t (module,exports,require) **/
 module.exports = {
   scroller: "scroller__95bea",
   row: "row__95bea",
