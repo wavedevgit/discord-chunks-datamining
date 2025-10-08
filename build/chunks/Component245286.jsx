@@ -61,15 +61,15 @@ function _(e) {
     {
       node: c,
       directory: u
-    } = (0, f.Z)(y.Z, a),
+    } = (0, f.Z)(v.Z, a),
     j = (t = x.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
-    g = l.useRef(null);
+    h = l.useRef(null);
   return ((0, s.ZP)(() => {
     let e = m.Z.getSection();
     null != e && (C({
       destinationPanel: e,
       originPanel: null
-    }), g.current = e)
+    }), h.current = e)
   }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -92,13 +92,13 @@ function _(e) {
     directory: u,
     sidebarHeader: S,
     emptyState: P,
-    sidebarFooter: v.Z,
+    sidebarFooter: y.Z,
     onPanelChange: e => {
-      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (C({
         destinationPanel: t,
-        originPanel: g.current
-      }), g.current = t)
+        originPanel: h.current
+      }), h.current = t)
     },
     target: j
   }, i)) : null

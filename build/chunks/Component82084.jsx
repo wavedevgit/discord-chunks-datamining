@@ -21,10 +21,10 @@ function m(e) {
       target: j,
       onPanelChange: p,
       sidebarHeader: x,
-      sidebarFooter: v,
-      emptyState: y
+      sidebarFooter: y,
+      emptyState: v
     } = e,
-    h = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -39,7 +39,7 @@ function m(e) {
       }
       return l
     }(e, ["root", "directory", "target", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [g, O] = l.useState(false), [C, _] = l.useState(1.4), S = l.useRef(null), P = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), N = (0, o.e7)([c.Z], () => c.Z.isFocused());
+  let [h, O] = l.useState(false), [C, _] = l.useState(1.4), S = l.useRef(null), P = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), N = (0, o.e7)([c.Z], () => c.Z.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {
@@ -52,7 +52,7 @@ function m(e) {
       u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(S.current)
     }
   }, [P, N]), (0, r.jsx)(a.UkV, {
-    isShaking: g,
+    isShaking: h,
     intensity: C,
     children: (0, r.jsx)(i.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -71,16 +71,16 @@ function m(e) {
         })
       }
       return e
-    }({}, h), n = n = {
+    }({}, g), n = n = {
       children: (0, r.jsx)(d.Z, {
-        onClose: h.onClose,
+        onClose: g.onClose,
         root: m,
         directory: b,
         target: j,
         onPanelChange: p,
         sidebarHeader: x,
-        emptyState: y,
-        sidebarFooter: v
+        emptyState: v,
+        sidebarFooter: y
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

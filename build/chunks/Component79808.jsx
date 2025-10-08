@@ -51,16 +51,16 @@ function f(e) {
     target: j,
     onClose: p,
     sidebarHeader: x,
-    sidebarFooter: v,
-    onPanelChange: y,
-    emptyState: h
-  } = e, [g, O] = l.useState(true), [C, _] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [S, P] = l.useState(() => b.typedGet(C)), N = l.useCallback(() => k(true), []), [E, k] = l.useState({
+    sidebarFooter: y,
+    onPanelChange: v,
+    emptyState: g
+  } = e, [h, O] = l.useState(true), [C, _] = l.useState(null == (t = b.entry(j)) ? true : t.targetPanel), [S, P] = l.useState(() => b.typedGet(C)), N = l.useCallback(() => T(true), []), [E, T] = l.useState({
     target: j,
     targetAccordion: null == (n = b.entry(j)) ? true : n.parentAccordion,
     animateScroll: false,
     complete: N
   }), {
-    navigateWithValidation: T
+    navigateWithValidation: k
   } = (0, a.Cu)(), w = l.useMemo(() => ({
     currentPanel: b.typedGet(C),
     navigateTo: e => {
@@ -73,19 +73,19 @@ function f(e) {
       };
       if (t.targetPanel.key !== (null == C ? true : C.key)) {
         let e = t.targetPanel;
-        T(() => {
-          k(d(u({}, n), {
+        k(() => {
+          T(d(u({}, n), {
             animateScroll: false
-          })), P(e), _(e), null == y || y(e.key)
+          })), P(e), _(e), null == v || v(e.key)
         })
-      } else k(d(u({}, n), {
+      } else T(d(u({}, n), {
         animateScroll: true
       }))
     },
     navTransition: E,
-    showNavigationMobile: g,
+    showNavigationMobile: h,
     setShowNavigationMobile: O
-  }), [b, C, E, g, N, T, y]), I = () => T(p);
+  }), [b, C, E, h, N, k, v]), I = () => k(p);
   return (0, r.jsx)(s.j.Provider, {
     value: w,
     children: (0, r.jsxs)("div", {
@@ -93,9 +93,9 @@ function f(e) {
       children: [(0, r.jsx)(i.P, {
         root: m,
         header: x,
-        footer: v,
+        footer: y,
         onClose: I,
-        emptyState: h
+        emptyState: g
       }), (0, r.jsx)(o.Z, {
         onClose: I,
         setting: null != (f = w.currentPanel) ? f : S

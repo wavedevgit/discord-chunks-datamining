@@ -41,27 +41,27 @@ function m(e) {
     stronglyDiscouragedCustomComponent: j,
     icon: p,
     trailing: x
-  } = t, v = l.useMemo(() => t.layout[0], [t]), y = null != o && o.key === (null == v ? true : v.key), h = b(), g = null != v ? () => {
-    i(v.key), m(false)
+  } = t, y = l.useMemo(() => t.layout[0], [t]), v = null != o && o.key === (null == y ? true : y.key), g = b(), h = null != y ? () => {
+    i(y.key), m(false)
   } : t.onClick, O = l.useMemo(() => {
     var e;
-    return null != (e = null == v ? true : v.layout.flatMap(e => e.layout)) ? e : []
-  }, [v]);
+    return null != (e = null == y ? true : y.layout.flatMap(e => e.layout)) ? e : []
+  }, [y]);
   return null != j ? (0, r.jsxs)(f, {
-    onClick: g,
-    active: y,
+    onClick: h,
+    active: v,
     children: [(0, r.jsx)(j, {}), null != x && (0, r.jsx)("div", {
       className: d.itemContent,
       children: (0, r.jsx)(c.W, {
         trailing: x,
         visibleContent: n,
-        isSelected: y
+        isSelected: v
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f, {
-      onClick: g,
-      active: y,
+      onClick: h,
+      active: v,
       children: [(0, r.jsxs)("div", {
         className: d.itemContent,
         children: [(0, r.jsx)(p, {
@@ -71,17 +71,17 @@ function m(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "currentColor",
-          children: h
+          children: g
         })]
       }), null != x && (0, r.jsx)("div", {
         className: d.itemContent,
         children: (0, r.jsx)(c.W, {
           trailing: x,
           visibleContent: n,
-          isSelected: y
+          isSelected: v
         })
       })]
-    }), y && O.length > 1 && (0, r.jsx)(u.Z, {
+    }), v && O.length > 1 && (0, r.jsx)(u.Z, {
       categories: O
     })]
   })

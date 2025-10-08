@@ -25,8 +25,8 @@ function p(e) {
     onClose: m,
     emptyState: p
   } = e, {
-    showNavigationMobile: v
-  } = (0, d.t)(), y = l.useMemo(() => {
+    showNavigationMobile: y
+  } = (0, d.t)(), v = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -43,7 +43,7 @@ function p(e) {
         }
       })
     }), e
-  }, [t.layout]), [h, g] = l.useMemo(() => {
+  }, [t.layout]), [g, h] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -53,7 +53,7 @@ function p(e) {
   return (0, r.jsx)(s.f6W, {
     theme: O,
     children: e => (0, r.jsx)(c.ZP, {
-      contentTypes: y,
+      contentTypes: v,
       children: t => {
         let {
           visibleContent: l
@@ -61,7 +61,7 @@ function p(e) {
         return (0, r.jsxs)("div", {
           className: i()(j.sidebar, e, {
             [j.mobile]: a.tq,
-            [j.mobileNavigationOpen]: v
+            [j.mobileNavigationOpen]: y
           }),
           children: [(0, r.jsxs)("div", {
             className: j.fixedContent,
@@ -75,17 +75,17 @@ function p(e) {
                 "aria-label": b.intl.string(b.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
-              children: h.map(e => (0, r.jsx)(x, {
+              children: g.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != p && 0 === g.length && (0, r.jsx)(p, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != p && 0 === h.length && (0, r.jsx)(p, {})]
           }), (0, r.jsxs)(s.zJl, {
             className: j.navScroller,
             fade: true,
             children: [(0, r.jsx)("nav", {
               className: j.nav,
-              children: g.map(e => (0, r.jsx)(x, {
+              children: h.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l
               }, e.key))

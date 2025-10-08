@@ -1,8 +1,10 @@
-/** Chunk was on 75685 **/
-/** chunk id: 924052, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 924052, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Cu: () => d,
-  Ri: () => u
+  Ri: () => u,
+  Tx: () => c
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,28 +17,28 @@ let c = Chunk647438.createContext(true);
 function u(e) {
   let {
     children: t
-  } = e, n = l.useRef(o.$x), [u, d] = l.useState(false), f = l.useCallback(e => {
+  } = e, n = i.useRef(a.$x), [u, d] = i.useState(false), f = i.useCallback(e => {
     var t;
     d(null != (t = null == e ? true : e.some(e => {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
-    })) && t), n.current = o.$x
-  }, []), m = l.useCallback(e => {
+    })) && t), n.current = a.$x
+  }, []), _ = i.useCallback(e => {
     if (u) {
-      (0, a.Aj)({
+      (0, s.Aj)({
         duration: 300,
         intensity: n.current
-      }), n.current = Math.min(n.current + o.d7, o.w6), i.S.dispatch(s.CkL.EMPHASIZE_NOTICE);
+      }), n.current = Math.min(n.current + a.d7, a.w6), o.S.dispatch(l.CkL.EMPHASIZE_NOTICE);
       return
     }
     e()
-  }, [u]), b = l.useMemo(() => ({
-    navigateWithValidation: m,
+  }, [u]), p = i.useMemo(() => ({
+    navigateWithValidation: _,
     showNotice: u,
     handleStoreUpdate: f
-  }), [m, u, f]);
+  }), [_, u, f]);
   return (0, r.jsx)(c.Provider, {
-    value: b,
+    value: p,
     children: t
   })
 }
