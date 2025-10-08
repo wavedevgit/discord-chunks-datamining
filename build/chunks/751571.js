@@ -8,5 +8,5 @@ require.d(exports, {
 var Chunk358085 = require("./358085.js"),
   Chunk374023 = require("./374023.js"),
   Chunk865033 = require("./865033.js");
-(require("./58406.js"), Chunk865033.Z.initialize(), Chunk374023.s.isDiscordTestSet()) ? r = require("./903387.js").Z: r = (0, Chunk358085.isDesktop)() && !(0, Chunk358085.isWindows)() ? require("./716546.js").Z : require("./903387.js").Z;
+(require("./58406.js"), Chunk865033.Z.initialize(), Chunk374023.s.isDiscordTestSet()) ? r = require("./903387.js").Z: r = (0, Chunk358085.isDesktop)() ? require("./716546.js").Z : require("./903387.js").Z;
 let s = r
