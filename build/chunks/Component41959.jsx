@@ -13,11 +13,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk73346 = require("./73346.js"),
   Chunk919073 = require("./919073.js"),
   c = function(e) {
-    return e[e.SMALL = 40] = "SMALL", e[e.MEDIUM = 66] = "MEDIUM", e
+    return e[e.SMALL = 40] = "SMALL", e[e.MEDIUM = 66] = "MEDIUM", e[e.LARGE = 128] = "LARGE", e
   }({});
 let u = {
     40: Chunk919073.small,
-    66: Chunk919073.medium
+    66: Chunk919073.medium,
+    128: Chunk919073.large
   },
   d = e => {
     let t, {
