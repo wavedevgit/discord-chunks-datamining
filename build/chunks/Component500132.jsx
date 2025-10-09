@@ -2,7 +2,8 @@
 /** chunk id: 500132, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => b
+  C: () => y,
+  M: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,7 +71,26 @@ function m(e, t) {
   return i
 }
 
-function g() {
+function g(e) {
+  let {
+    disabled: t,
+    isSelected: n
+  } = e, [a, s] = (0, i.useState)(true), l = (0, i.useRef)(false);
+  return (0, i.useEffect)(() => {
+    if (!l.current) {
+      l.current = true;
+      return
+    }
+    s(n ? "animateIn" : "animateOut")
+  }, [n]), (0, r.jsx)("div", {
+    className: o()([u.standaloneRadioIndicator, "string" == typeof a && u[a]]),
+    "data-selected": n,
+    "data-disabled": t,
+    children: (0, r.jsx)(E, {})
+  })
+}
+
+function E() {
   return (0, Chunk951288.jsxs)("svg", {
     className: Chunk841321.radioIndicator,
     width: 20,
@@ -97,7 +117,7 @@ function g() {
   })
 }
 
-function E(e) {
+function b(e) {
   let {
     desc: t,
     disabled: n,
@@ -105,13 +125,13 @@ function E(e) {
     name: d,
     value: f,
     isSelected: _
-  } = e, p = (0, i.useRef)(null), h = (0, i.useRef)(null), [m, E] = (0, i.useState)(true), b = (0, i.useRef)(false);
+  } = e, p = (0, i.useRef)(null), h = (0, i.useRef)(null), [m, g] = (0, i.useState)(true), b = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (!b.current) {
       b.current = true;
       return
     }
-    E(_ ? "animateIn" : "animateOut")
+    g(_ ? "animateIn" : "animateOut")
   }, [_]), (0, r.jsx)(c.tEY, {
     focusTarget: p,
     ringTarget: p,
@@ -122,7 +142,7 @@ function E(e) {
       isDisabled: n,
       inputRef: h,
       ref: p,
-      children: [(0, r.jsx)(g, {}), (0, r.jsxs)(c.Kqy, {
+      children: [(0, r.jsx)(E, {}), (0, r.jsxs)(c.Kqy, {
         gap: 4,
         children: [(0, r.jsxs)(l._, {
           className: u.label,
@@ -146,7 +166,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   var {
     onChange: t,
     options: n,
@@ -166,7 +186,7 @@ function b(e) {
       "aria-errormessage": e.errorMessageId,
       "data-mana-component": "BaseRadioGroup",
       value: i,
-      children: n.map((e, t) => (0, r.jsx)(E, p(f({
+      children: n.map((e, t) => (0, r.jsx)(b, p(f({
         index: t
       }, e), {
         isSelected: i === e.value

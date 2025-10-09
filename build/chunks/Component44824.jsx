@@ -85,9 +85,12 @@ function h(e) {
     let {
       current: e
     } = h;
-    null != e && (d ? e.play().catch(e => {
-      if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
-    }) : e.pause())
+    if (d) {
+      var t;
+      null == e || null == (t = e.play()) || t.catch(e => {
+        if (!(e instanceof DOMException) || "NotAllowedError" !== e.name) throw e
+      })
+    } else null == e || e.pause()
   }, [d]), c <= s.N_j && u <= s.XKF || c <= s.XKF && u <= s.N_j) ? (0, r.jsx)(a.Z, {
     ref: h,
     className: f,
