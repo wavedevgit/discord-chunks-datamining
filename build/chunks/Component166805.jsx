@@ -23,18 +23,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk356086 = require("./356086.js");
 
-function v(e) {
+function _(e) {
   let {
     guildId: t
   } = e, {
     guildProfile: c,
     fetchGuildProfile: m,
-    fetchStatus: v
-  } = (0, g.u)(t), C = v !== u.a.FETCHED, {
+    fetchStatus: _
+  } = (0, g.u)(t), C = _ !== u.a.FETCHED, {
     fetchedEmbed: O,
     embedEnabled: y,
     embedChannelId: N
-  } = (0, a.cj)([f.Z], () => {
+  } = (0, s.cj)([f.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
@@ -60,10 +60,10 @@ function v(e) {
       checked: y,
       onChange: Z,
       disabled: S
-    }), w ? (0, r.jsx)(s.xvT, {
+    }), w ? (0, r.jsx)(a.xvT, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: _.subtext,
+      className: v.subtext,
       children: j.intl.string(j.t.zCGuJy)
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(b.m, {
@@ -74,18 +74,18 @@ function v(e) {
         widgetChannelId: N,
         enableLocalUpdate: true
       }), (0, r.jsxs)("div", {
-        className: _.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsx)("div", {
-          className: _.column,
-          children: (0, r.jsx)(s.gNt, {
+          className: v.column,
+          children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.TRyLUl),
             children: (0, r.jsx)(d.Z, {
               value: t
             })
           })
         }), (0, r.jsx)("div", {
-          className: _.column,
-          children: (0, r.jsx)(s.gNt, {
+          className: v.column,
+          children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.VECJcH),
             children: (0, r.jsx)(d.Z, {
               value: E
@@ -93,12 +93,12 @@ function v(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: _.divider
+        className: v.divider
       }), (0, r.jsxs)("div", {
-        className: _.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsx)("div", {
-          className: _.column,
-          children: (0, r.jsx)(s.gNt, {
+          className: v.column,
+          children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.XVGbn5),
             description: j.intl.string(j.t["+baN19"]),
             children: (0, r.jsx)(d.Z, {
@@ -106,7 +106,7 @@ function v(e) {
             })
           })
         }), (0, r.jsx)("img", {
-          className: _.column,
+          className: v.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -119,11 +119,11 @@ function v(e) {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.enabled);
+  } = e, n = (0, s.e7)([m.Z], () => m.Z.enabled);
   return (0, r.jsx)(o.C3N, {
     label: j.intl.string(j.t.qlhNb2),
     description: j.intl.string(j.t["dNn/1t"]),
-    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
+    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(_, {
       guildId: t
     })
   })

@@ -84,22 +84,22 @@ module.exports = function(e) {
         P = N.getType(),
         w = n(N),
         D = true,
-        L = true,
-        x = true;
-      w && (D = w.component, L = w.props, x = w.editable);
+        x = true,
+        L = true;
+      w && (D = w.component, x = w.props, L = w.editable);
       var M = g || v.get(R),
-        j = c.encode(R, 0, 0),
-        k = {
+        k = c.encode(R, 0, 0),
+        j = {
           contentState: E,
           block: N,
-          blockProps: L,
+          blockProps: x,
           blockStyleFn: r,
           customStyleMap: o,
           customStyleFn: s,
           decorator: O,
           direction: M,
           forceSelection: y,
-          offsetKey: j,
+          offsetKey: k,
           preventScroll: m,
           selection: b,
           tree: d.getBlockTree(R)
@@ -118,21 +118,21 @@ module.exports = function(e) {
           className: F,
           "data-block": true,
           "data-editor": h,
-          "data-offset-key": j,
+          "data-offset-key": k,
           key: R
         };
-      true !== x && (Y = a({}, Y, {
-        contentEditable: x,
+      true !== L && (Y = a({}, Y, {
+        contentEditable: L,
         suppressContentEditableWarning: true
       }));
-      var W = u.createElement(B, Y, u.createElement(H, i({}, k, {
+      var W = u.createElement(B, Y, u.createElement(H, i({}, j, {
         key: R
       })));
       T.push({
         block: W,
         wrapperTemplate: G,
         key: R,
-        offsetKey: j
+        offsetKey: k
       }), S = G ? N.getDepth() : null, A = G
     }
     for (var K = [], z = 0; z < T.length;) {

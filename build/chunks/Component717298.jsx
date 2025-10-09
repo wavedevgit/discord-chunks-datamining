@@ -55,33 +55,33 @@ function Y(e) {
     transitionState: l,
     sourceApplication: o,
     analyticsLocations: Y = [],
-    selectSource: J = true
-  } = e, X = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
+    selectSource: X = true
+  } = e, J = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
     analyticsLocations: q
-  } = (0, _.ZP)(Y, x.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([C.default], () => C.default.getCurrentUser()), $ = (0, T.Z)(), {
+  } = (0, _.ZP)(Y, x.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
-  } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && J ? "confirm" : "source_select");
+  } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && X ? "confirm" : "source_select");
   (0, W.Z)(K, et, "confirm" === ee.modalStep);
   let en = !w.ZP.canStreamQuality(w.ZP.StreamQuality.HIGH, Q),
     er = !(0, O.isLinux)(),
     ei = "confirm" === ee.modalStep,
-    el = !J && null != o && !ei,
+    el = !X && null != o && !ei,
     es = K && ee.sourceType !== u.vA.CAMERA,
     eo = i.useMemo(() => {
       let e = [{
         name: H.intl.string(H.t.tHoi7u),
         value: u.vA.WINDOW,
-        icon: m.GON
+        icon: h.GON
       }, {
         name: H.intl.string(H.t.MhJ43N),
         value: u.vA.CAMERA,
-        icon: m.Odl
+        icon: h.Odl
       }];
       return K || e.splice(1, 0, {
         name: H.intl.string(H.t.slM8rK),
         value: u.vA.SCREEN,
-        icon: m.pzj
+        icon: h.pzj
       }), e
     }, [K]),
     {
@@ -95,12 +95,12 @@ function Y(e) {
         resolution: ee.resolution,
         soundshareEnabled: !ee.muteStreamAudio,
         previewDisabled: ee.hidePreview,
-        goLiveModalDurationMs: performance.now() - X.current,
+        goLiveModalDurationMs: performance.now() - J.current,
         audioSourceId: ee.audioSourceId,
         analyticsLocations: q
       });
       if (t) return n();
-      "no permission" === r && h.Z.show({
+      "no permission" === r && m.Z.show({
         title: H.intl.string(H.t["X+mXen"]),
         body: H.intl.string(H.t.MIJCzs)
       }), n()
@@ -121,12 +121,12 @@ function Y(e) {
   return (0, r.jsx)(k.Yw, {
     state: ee,
     dispatch: et,
-    children: (0, r.jsxs)(m.Y0X, {
+    children: (0, r.jsxs)(h.Y0X, {
       impression: {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: q,
-          application_id: (0, O.isWindows)() ? null == (t = (0, P.Z)(v.ZP, y.Z)) ? true : t.id : true,
+          application_id: (0, O.isWindows)() ? null == (t = (0, P.Z)(v.ZP, C.Z)) ? true : t.id : true,
           parent_media_session_id: S.Z.getMediaSessionId()
         }
       },
@@ -135,7 +135,7 @@ function Y(e) {
         [V.channelSelector]: el,
         [V.confirmStep]: ei
       }),
-      size: m.CgR.DYNAMIC,
+      size: h.CgR.DYNAMIC,
       transitionState: l,
       parentComponent: "GoLiveModalV2",
       children: [el ? (0, r.jsx)(R.Z, {
@@ -144,10 +144,10 @@ function Y(e) {
       }) : ei ? (0, r.jsx)(A.Z, {
         hideBackButton: null != o
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(m.xBx, {
+        children: [(0, r.jsx)(h.xBx, {
           separator: false,
           className: V.header,
-          children: (0, r.jsx)(m.sY7, {
+          children: (0, r.jsx)(h.sY7, {
             className: V.segmentedControl,
             value: ea,
             look: "pill",
@@ -163,7 +163,7 @@ function Y(e) {
             },
             options: eo
           })
-        }), (0, r.jsx)(m.hzk, {
+        }), (0, r.jsx)(h.hzk, {
           className: V.content,
           children: K && ea !== u.vA.CAMERA ? (0, r.jsx)(M.Z, {
             onSourceSelect: eu
@@ -173,7 +173,7 @@ function Y(e) {
             }
           })
         })]
-      }), (0, r.jsxs)(m.mzw, {
+      }), (0, r.jsxs)(h.mzw, {
         className: s()(V.footer, {
           [V.footerShadow]: !en && ei
         }),
@@ -181,7 +181,7 @@ function Y(e) {
         direction: d.k.Direction.VERTICAL,
         children: [(0, r.jsxs)("div", {
           className: V.footerContent,
-          children: [(0, r.jsx)(U.Z, {}), (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(G.Z, {}), (0, r.jsxs)("div", {
             className: V.rightButtonGroup,
             children: [en && (0, r.jsx)(B.Z, {
               onClose: n
@@ -205,7 +205,7 @@ function Y(e) {
               align: "right"
             })]
           })]
-        }), en && (0, r.jsx)(G.Z, {
+        }), en && (0, r.jsx)(U.Z, {
           onClose: n
         })]
       })]

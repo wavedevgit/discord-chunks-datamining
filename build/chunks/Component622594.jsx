@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk259580 = require("./259580.jsx"),
   Chunk70956 = require("./70956.js"),
   Chunk586826 = require("./586826.js"),
@@ -18,7 +18,7 @@ let g = Chunk647438.memo(function(e) {
   let {
     playing: n,
     onPausePlayback: t,
-    onPlaybackChange: i,
+    onPlaybackChange: r,
     onChangePosition: g,
     disabled: h = false
   } = e, p = function(e) {
@@ -39,79 +39,79 @@ let g = Chunk647438.memo(function(e) {
     }
     return e
   }({}, f.nl), {
-    audio: y
-  } = (0, u.p)(), b = null != y, v = l.useRef(null), x = l.useRef(null), j = l.useRef(null), [w, _] = l.useState(0), [N, C] = l.useState(0), [S, O] = l.useState(0), [E, P] = l.useState(false), [I, Z] = l.useState(false), [k, M] = l.useState(false), [T, F] = l.useState(0), [D, R] = l.useState(false), B = l.useMemo(() => T / p.fineTuningScale, [p.fineTuningScale, T]);
+    audio: b
+  } = (0, u.p)(), y = null != b, v = l.useRef(null), x = l.useRef(null), j = l.useRef(null), [w, _] = l.useState(0), [C, N] = l.useState(0), [S, O] = l.useState(0), [E, P] = l.useState(false), [I, M] = l.useState(false), [Z, k] = l.useState(false), [T, F] = l.useState(0), [D, R] = l.useState(false), B = l.useMemo(() => T / p.fineTuningScale, [p.fineTuningScale, T]);
   l.useEffect(() => {
-    if (null == y) return;
-    let e = y.duration * s.Z.Millis.SECOND;
-    _(0), C(0), O(e), F(e)
-  }, [y]);
-  let H = l.useCallback((e, n) => {
+    if (null == b) return;
+    let e = b.duration * s.Z.Millis.SECOND;
+    _(0), N(0), O(e), F(e)
+  }, [b]);
+  let A = l.useCallback((e, n) => {
       if (t(), 0 === e.button) switch (n) {
         case 0:
           P(true);
           break;
         case 1:
-          Z(true);
+          M(true);
           break;
         case 2:
-          M(true)
+          k(true)
       }
     }, [t]),
-    A = l.useCallback(e => {
+    U = l.useCallback(e => {
       switch (e) {
         case 0:
           P(false);
           break;
         case 1:
-          Z(false);
+          M(false);
           break;
         case 2:
-          M(false)
+          k(false)
       }
       R(false)
     }, []),
-    U = l.useCallback(e => {
-      if (null == y || !E) return;
+    H = l.useCallback(e => {
+      if (null == b || !E) return;
       let n = parseInt(e.target.value),
         t = n > S ? S : n;
-      i((0, c.my)(t)), _(t), C(t)
-    }, [y, i, S, E]),
+      r((0, c.my)(t)), _(t), N(t)
+    }, [b, r, S, E]),
     z = l.useCallback(e => {
-      if (null == y || !I) return;
+      if (null == b || !I) return;
       let n = parseInt(e.target.value);
-      n < w ? (i((0, c.my)(w)), C(w)) : n > S ? (i((0, c.my)(S)), C(S)) : (i((0, c.my)(n)), C(n))
-    }, [y, i, S, I, w]),
+      n < w ? (r((0, c.my)(w)), N(w)) : n > S ? (r((0, c.my)(S)), N(S)) : (r((0, c.my)(n)), N(n))
+    }, [b, r, S, I, w]),
     L = l.useCallback(e => {
-      if (null == y || !k) return;
+      if (null == b || !Z) return;
       let n = parseInt(e.target.value),
         t = n > w ? n : w;
-      i((0, c.my)(w)), C(w), O(t)
-    }, [y, i, k, w]);
+      r((0, c.my)(w)), N(w), O(t)
+    }, [b, r, Z, w]);
   return l.useEffect(() => {
-    null != g && b && g({
+    null != g && y && g({
       startPositionMs: w,
       endPositionMs: S,
-      playheadPositionMs: N
+      playheadPositionMs: C
     })
-  }, [w, S, g, b, N]), l.useEffect(() => {
+  }, [w, S, g, y, C]), l.useEffect(() => {
     let e;
-    if (null != y) return n && (e = setInterval(() => {
-      y.currentTime < (0, c.my)(S) ? y.currentTime >= (0, c.my)(N) && C(y.currentTime * s.Z.Millis.SECOND) : (t((0, c.my)(w)), C(w))
+    if (null != b) return n && (e = setInterval(() => {
+      b.currentTime < (0, c.my)(S) ? b.currentTime >= (0, c.my)(C) && N(b.currentTime * s.Z.Millis.SECOND) : (t((0, c.my)(w)), N(w))
     }, 16)), () => {
       clearInterval(e)
     }
-  }, [y, S, t, N, n, w]), l.useEffect(() => {
+  }, [b, S, t, C, n, w]), l.useEffect(() => {
     if (p.fineTuningDelay <= 0) return;
     let e = setTimeout(() => {
-      E && w == w && false === D ? R(w) : k && S == S && false === D ? R(S) : I && N == N && false === D && R(N)
+      E && w == w && false === D ? R(w) : Z && S == S && false === D ? R(S) : I && C == C && false === D && R(C)
     }, p.fineTuningDelay);
     return () => {
       clearTimeout(e)
     }
-  }, [p.fineTuningDelay, k, S, D, I, N, E, w]), (0, a.jsxs)("div", {
-    className: r()(m.timeline, {
-      [m.initialized]: b
+  }, [p.fineTuningDelay, Z, S, D, I, C, E, w]), (0, a.jsxs)("div", {
+    className: i()(m.timeline, {
+      [m.initialized]: y
     }),
     children: [(0, a.jsxs)("div", {
       className: m.rangeHandleContainer,
@@ -119,57 +119,57 @@ let g = Chunk647438.memo(function(e) {
         className: m.rangeHandleFrame,
         children: [(0, a.jsx)("input", {
           ref: v,
-          className: r()(m.rangeHandle, m.rangeHandleStart),
+          className: i()(m.rangeHandle, m.rangeHandleStart),
           type: "range",
           min: (0, c.ao)(D, B, T),
           max: (0, c.MN)(D, B, T),
           value: w,
-          onChange: U,
-          onMouseDown: e => H(e, 0),
-          onMouseUp: () => A(0),
-          disabled: !b || h
+          onChange: H,
+          onMouseDown: e => A(e, 0),
+          onMouseUp: () => U(0),
+          disabled: !y || h
         }), (0, a.jsx)("input", {
           ref: j,
-          className: r()(m.rangeHandle, m.rangeHandleEnd),
+          className: i()(m.rangeHandle, m.rangeHandleEnd),
           type: "range",
           min: (0, c.ao)(D, B, T),
           max: (0, c.MN)(D, B, T),
           value: S,
           onChange: L,
-          onMouseDown: e => H(e, 2),
-          onMouseUp: () => A(2),
-          disabled: !b || h
+          onMouseDown: e => A(e, 2),
+          onMouseUp: () => U(2),
+          disabled: !y || h
         })]
       }), (0, a.jsx)("div", {
         className: m.__invalid_handlePlayheadTrack,
         children: (0, a.jsx)("input", {
           ref: x,
-          className: r()(m.rangeHandle, m.rangeHandlePlayhead),
+          className: i()(m.rangeHandle, m.rangeHandlePlayhead),
           type: "range",
           min: (0, c.ao)(D, B, T),
           max: (0, c.MN)(D, B, T),
-          value: N,
+          value: C,
           onChange: z,
-          onMouseDown: e => H(e, 1),
-          onMouseUp: () => A(1),
-          disabled: !b || h
+          onMouseDown: e => A(e, 1),
+          onMouseUp: () => U(1),
+          disabled: !y || h
         })
       })]
     }), (0, a.jsxs)("div", {
       className: m.handleContainer,
       children: [(0, a.jsxs)("div", {
-        className: r()(m.handleFrame, {
+        className: i()(m.handleFrame, {
           [m.startDragging]: E,
-          [m.endDragging]: k
+          [m.endDragging]: Z
         }),
         style: {
           left: "".concat((0, c.pN)(w, D, B, T), "%"),
           right: "".concat((0, c.kD)(S, D, B, T), "%")
         },
         children: [(0, a.jsx)("div", {
-          className: r()(m.handleIconFrame, m.handleIconFrameStart),
+          className: i()(m.handleIconFrame, m.handleIconFrameStart),
           children: (0, a.jsx)("div", {
-            className: r()(m.handleIconContainer, m.__invalid_start),
+            className: i()(m.handleIconContainer, m.__invalid_start),
             children: (0, a.jsx)(o.Z, {
               direction: o.Z.Directions.RIGHT,
               className: m.handleIcon,
@@ -178,9 +178,9 @@ let g = Chunk647438.memo(function(e) {
             })
           })
         }), (0, a.jsx)("div", {
-          className: r()(m.handleIconFrame, m.handleIconFrameEnd),
+          className: i()(m.handleIconFrame, m.handleIconFrameEnd),
           children: (0, a.jsx)("div", {
-            className: r()(m.handleIconContainer, m.__invalid_end),
+            className: i()(m.handleIconContainer, m.__invalid_end),
             children: (0, a.jsx)(o.Z, {
               direction: o.Z.Directions.LEFT,
               className: m.handleIcon,
@@ -192,11 +192,11 @@ let g = Chunk647438.memo(function(e) {
       }), (0, a.jsx)("div", {
         className: m.playheadTrack,
         children: (0, a.jsx)("div", {
-          className: r()(m.playhead, {
-            [m.dragging]: I || E || k || n
+          className: i()(m.playhead, {
+            [m.dragging]: I || E || Z || n
           }),
           style: {
-            left: "".concat((0, c.pN)(N, D, B, T), "%")
+            left: "".concat((0, c.pN)(C, D, B, T), "%")
           }
         })
       })]

@@ -105,17 +105,17 @@ function N(e) {
     selectedSource: O,
     discordSourceId: I,
     hasPermission: N
-  }] = (0, C.E_)(), {
+  }] = (0, y.E_)(), {
     smarterSourceOrdering: E
   } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), R = (0, d.e7)([m.ZP], () => m.ZP.getRunningGames()), A = (0, d.cj)([m.ZP], () => {
-    let e = m.ZP.getCandidateGames(),
+  }), R = (0, d.e7)([h.ZP], () => h.ZP.getRunningGames()), A = (0, d.cj)([h.ZP], () => {
+    let e = h.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
   }), k = (0, d.e7)([g.Z], () => g.Z.quests), M = (0, S.jx)(k, R, n);
-  i.useEffect(() => ((0, h.Ky)(), h.P7), []);
+  i.useEffect(() => ((0, m.Ky)(), m.P7), []);
   let D = i.useMemo(() => E ? [...n].sort((e, t) => (0, S.ov)(t, null == M ? true : M.source.id, I, A) - (0, S.ov)(e, null == M ? true : M.source.id, I, A)) : n, [M, E, n, I, A]);
   if (x) {
     if (!N) {
@@ -135,7 +135,7 @@ function N(e) {
         }), e && (0, r.jsx)(u.zxk, {
           text: w.intl.string(w.t["XgZk+v"]),
           onClick: () => {
-            p.Z.openSettings(y.Eu.SCREEN_RECORDING)
+            p.Z.openSettings(C.Eu.SCREEN_RECORDING)
           }
         })]
       })
@@ -145,10 +145,10 @@ function N(e) {
       children: (0, r.jsx)(u.$jN, {})
     })
   }
-  let G = [];
-  return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(T, {}) : (0, r.jsx)("div", {
+  let U = [];
+  return (U = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === U.length) ? (0, r.jsx)(T, {}) : (0, r.jsx)("div", {
     className: Z.root,
-    children: G.map(e => (0, r.jsx)(P, {
+    children: U.map(e => (0, r.jsx)(P, {
       onClick: t,
       source: e,
       selected: null != O && "windowHandle" in O ? (0, b.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id

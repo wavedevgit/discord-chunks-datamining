@@ -3,15 +3,15 @@
 "use strict";
 require.d(exports, {
   AL: () => o,
-  f3: () => a
+  f3: () => s
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk674180 = require("./674180.js");
-let s = Chunk647438.createContext(true);
+let a = Chunk647438.createContext(true);
 
-function a() {
-  let e = Chunk647438.useContext(s);
+function s() {
+  let e = Chunk647438.useContext(a);
   if (null == module) throw Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
   return module
 }
@@ -23,7 +23,7 @@ function o(e) {
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: i
   } = (0, l.gX)(t);
-  return (0, r.jsx)(s.Provider, {
+  return (0, r.jsx)(a.Provider, {
     value: i,
     children: n
   })

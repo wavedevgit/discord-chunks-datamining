@@ -19,12 +19,12 @@ function u(e) {
     guildId: t,
     section: n
   } = e;
-  (0, s.transitionToGlobalDiscovery)({
+  (0, a.transitionToGlobalDiscovery)({
     tab: o.GlobalDiscoveryTab.APPS,
     newSessionState: {
       guildId: t,
       entrypoint: {
-        name: a.xF.GUILD_SETTINGS,
+        name: s.xF.GUILD_SETTINGS,
         guildSettingsSection: n
       }
     }

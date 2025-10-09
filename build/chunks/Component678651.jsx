@@ -34,7 +34,8 @@ function p(e) {
     }), (0, a.jsxs)("div", {
       className: m.timeContainer,
       children: [(0, a.jsxs)("div", {
-        children: [(0, a.jsx)(i.vwX, {
+        children: [(0, a.jsx)(i.Text, {
+          variant: "text-md/medium",
           className: m.timeTitle,
           children: d.intl.string(d.t.g8pDeX)
         }), (0, a.jsx)(i.Text, {
@@ -47,7 +48,8 @@ function p(e) {
           })
         })]
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(i.vwX, {
+        children: [(0, a.jsx)(i.Text, {
+          variant: "text-md/medium",
           className: m.timeTitle,
           children: d.intl.string(d.t.v6XAgo)
         }), (0, a.jsx)(i.Text, {

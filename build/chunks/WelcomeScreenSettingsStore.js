@@ -31,13 +31,13 @@ function p(e) {
   let {
     welcomeScreen: t,
     guildId: n
-  } = e, r = s.Z.getGuild(n);
+  } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, l;
     m = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
-      enabled: null == r ? true : r.features.has(a.oNc.WELCOME_SCREEN_ENABLED)
+      enabled: null == r ? true : r.features.has(s.oNc.WELCOME_SCREEN_ENABLED)
     }
   } else m = d = c;
   g = false

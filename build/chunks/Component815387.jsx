@@ -119,13 +119,13 @@ function eD(e, t) {
   return n
 }
 
-function eL(e, t) {
+function ex(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eD(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function ex(e) {
+function eL(e) {
   K.Z.captureException(e), new p.Z("SystemMessage").error("", e)
 }
 
@@ -137,7 +137,7 @@ function eM(e) {
   } = e, {
     id: s,
     author: l
-  } = t, u = j.default.getId(), d = t.getChannelId(), f = (0, a.e7)([k.Z], () => k.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
+  } = t, u = k.default.getId(), d = t.getChannelId(), f = (0, a.e7)([j.Z], () => j.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
     user: l,
     channelId: d,
     guildId: o.guild_id,
@@ -154,7 +154,7 @@ function eM(e) {
   })
 }
 
-function ej(e) {
+function ek(e) {
   let {
     message: t,
     compact: n,
@@ -175,7 +175,7 @@ function ej(e) {
   })
 }
 
-function ek(e) {
+function ej(e) {
   let {
     message: t,
     compact: n,
@@ -270,9 +270,9 @@ function eB(e) {
     var n;
     let r = null == (n = t.messageReference) ? true : n.channel_id;
     if (null != r) {
-      await L.Z.loadThread(r);
+      await x.Z.loadThread(r);
       let t = U.Z.getChannel(r);
-      null != t && (0, x.ok)(t, e.shiftKey)
+      null != t && (0, L.ok)(t, e.shiftKey)
     }
   }, [t]), d = i.useCallback(() => {
     (0, o.ZDy)(async () => {
@@ -290,7 +290,7 @@ function eB(e) {
       let {
         default: e
       } = await Promise.all([n.e("90508"), n.e("46154"), n.e("89381")]).then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, eL(ew({}, t), {
+      return t => (0, r.jsx)(e, ex(ew({}, t), {
         channel: a
       }))
     })
@@ -785,8 +785,8 @@ let tn = Object.freeze({
   [Chunk981631.uaV.RECIPIENT_ADD]: eG,
   [Chunk981631.uaV.RECIPIENT_REMOVE]: eZ,
   [Chunk981631.uaV.CALL]: eM,
-  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: ej,
-  [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: ek,
+  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: ek,
+  [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: ej,
   [Chunk981631.uaV.CHANNEL_PINNED_MESSAGE]: eU,
   [Chunk981631.uaV.USER_JOIN]: eF,
   [Chunk981631.uaV.GUILD_BOOST]: eV,
@@ -852,7 +852,7 @@ function tr(e) {
   } = e, {
     type: o
   } = t, s = tn[o];
-  return null == s ? (ex(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)(J.ZP, {
+  return null == s ? (eL(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)(J.ZP, {
     message: t,
     content: (0, q.ZP)(t).content,
     compact: null != i && i,

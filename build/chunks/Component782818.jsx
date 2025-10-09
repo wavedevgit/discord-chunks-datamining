@@ -45,13 +45,13 @@ function C(e) {
   let {
     avatar: t,
     index: n,
-    onSelectRecentAvatar: a,
-    onDeleteRecentAvatar: l,
+    onSelectRecentAvatar: l,
+    onDeleteRecentAvatar: a,
     avatarButtonRef: i
   } = e, {
     id: s,
     storageHash: u,
-    description: d = x.intl.string(x.t.lqaIxM)
+    description: d = A.intl.string(A.t.lqaIxM)
   } = t, {
     avatarSrc: f,
     eventHandlers: p
@@ -61,37 +61,37 @@ function C(e) {
   }), {
     onMouseEnter: g,
     onMouseLeave: h
-  } = p, b = null != d ? d : u.substring(0, 6).toUpperCase(), j = x.intl.formatToPlainString(x.t["tmJ75+"], {
+  } = p, b = null != d ? d : u.substring(0, 6).toUpperCase(), j = A.intl.formatToPlainString(A.t["tmJ75+"], {
     orderNumber: n + 1,
     description: b
-  }), y = x.intl.formatToPlainString(x.t.pBzwhY, {
+  }), y = A.intl.formatToPlainString(A.t.pBzwhY, {
     orderNumber: n + 1,
     description: b
   });
   return (0, r.jsxs)("div", {
-    className: A.recentAvatarButtonContainer,
+    className: x.recentAvatarButtonContainer,
     children: [(0, r.jsx)(c.P3F, {
-      onClick: () => a(t),
+      onClick: () => l(t),
       onMouseEnter: g,
       onMouseLeave: h,
-      className: A.recentAvatarButton,
+      className: x.recentAvatarButton,
       "aria-label": j,
       innerRef: i,
       children: (0, r.jsx)("img", {
         src: f,
         alt: d,
-        className: A.recentAvatar
+        className: x.recentAvatar
       })
     }), (0, r.jsx)(o.u, {
-      text: x.intl.string(x.t.N86XcH),
+      text: A.intl.string(A.t.N86XcH),
       children: (0, r.jsx)(c.P3F, {
         "aria-label": y,
-        onClick: e => l(e, n, s, u, y),
-        className: A.deleteButton,
+        onClick: e => a(e, n, s, u, y),
+        className: x.deleteButton,
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",
           color: "currentColor",
-          className: A.deleteIcon
+          className: x.deleteIcon
         })
       })
     })]
@@ -101,39 +101,39 @@ function C(e) {
 function v(e) {
   let {
     onComplete: t
-  } = e, l = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
+  } = e, a = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
     avatars: i,
     loading: o,
     error: m
-  } = (0, p.S)(), v = a.useRef([]), E = a.useRef(null), O = a.useRef(i.length), N = a.useRef(null), [S, T] = a.useState(false), [w, R] = a.useState(false), [P, _] = a.useState(null), F = null != P ? P : null == m ? true : m.message, Z = i.length, I = Math.max(j.iZ - Z, 0), k = (0, c.vRw)(), D = a.useCallback(async e => {
-    if (null == l || S) return;
+  } = (0, p.S)(), v = l.useRef([]), E = l.useRef(null), O = l.useRef(i.length), N = l.useRef(null), [S, T] = l.useState(false), [w, R] = l.useState(false), [P, _] = l.useState(null), F = null != P ? P : null == m ? true : m.message, Z = i.length, I = Math.max(j.iZ - Z, 0), k = (0, c.vRw)(), D = l.useCallback(async e => {
+    if (null == a || S) return;
     T(true), _(null);
     let {
-      id: a,
+      id: l,
       storageHash: i,
       description: s
     } = e, o = (0, d.fD)({
-      userId: l.id,
-      avatarId: a,
+      userId: a.id,
+      avatarId: l,
       storageHash: i,
       size: h.dGM,
       canAnimate: true,
       allowWebp: false
     });
     try {
-      let a = await fetch(o),
-        l = await a.blob(),
+      let l = await fetch(o),
+        a = await l.blob(),
         {
           filename: u,
           type: f
         } = (0, d.mh)(i, s);
       (0, c.ZDy)(async () => {
         let {
-          default: a
+          default: l
         } = await Promise.all([n.e("59732"), n.e("11866")]).then(n.bind(n, 712451));
-        return n => (0, r.jsx)(a, y({
+        return n => (0, r.jsx)(l, y({
           imageUri: o,
-          file: new File([l], u, {
+          file: new File([a], u, {
             type: f
           }),
           originalAsset: e,
@@ -145,13 +145,13 @@ function v(e) {
         contextKey: k
       })
     } catch (e) {
-      _(x.intl.string(x.t.fZRH9P))
+      _(A.intl.string(A.t.fZRH9P))
     } finally {
       T(false)
     }
-  }, [k, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
+  }, [k, S, t, a]), M = l.useCallback((e, t, l, a, s) => {
     let o = t + 1 < i.length ? t + 1 : t - 1;
-    N.current = o >= 0 ? v.current[o] : E.current, e.shiftKey ? (0, f.B)(a) : (R(true), (0, c.ZDy)(async () => {
+    N.current = o >= 0 ? v.current[o] : E.current, e.shiftKey ? (0, f.B)(l) : (R(true), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -160,24 +160,24 @@ function v(e) {
           onClose: n
         } = t, i = function(e, t) {
           if (null == e) return {};
-          var n, r, a = function(e, t) {
+          var n, r, l = function(e, t) {
             if (null == e) return {};
-            var n, r, a = {},
-              l = Object.keys(e);
-            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-            return a
+            var n, r, l = {},
+              a = Object.keys(e);
+            for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+            return l
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+            var a = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
           }
-          return a
+          return l
         }(t, ["onClose"]);
         return (0, r.jsx)(e, y({
-          avatarId: a,
-          storageHash: l,
+          avatarId: l,
+          storageHash: a,
           avatarDescription: s,
-          onConfirmDelete: () => (0, f.B)(a),
+          onConfirmDelete: () => (0, f.B)(l),
           onClose: async () => {
             await n(), requestAnimationFrame(() => {
               R(false)
@@ -187,26 +187,26 @@ function v(e) {
       }
     }))
   }, [i]);
-  return (a.useEffect(() => {
+  return (l.useEffect(() => {
     (0, f.N)()
-  }, []), a.useEffect(() => {
+  }, []), l.useEffect(() => {
     w || (i.length < O.current && null != N.current && requestAnimationFrame(() => {
       var e;
       null == (e = N.current) || e.focus()
     }), O.current = i.length)
   }, [i.length, w]), o) ? (0, r.jsx)(c.$jN, {
-    className: A.spinner
+    className: x.spinner
   }) : (0, r.jsxs)("div", {
-    className: A.recentAvatarContainer,
+    className: x.recentAvatarContainer,
     children: [null != F && !o && (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
       children: F
     }), (0, r.jsxs)("div", {
-      className: A.recentAvatarSlots,
+      className: x.recentAvatarSlots,
       children: [Z > 0 && (0, r.jsx)("ul", {
-        "aria-label": x.intl.string(x.t.lsU63N),
-        className: A.recentAvatarList,
+        "aria-label": A.intl.string(A.t.lsU63N),
+        className: x.recentAvatarList,
         children: i.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(C, {
             avatar: e,
@@ -219,17 +219,17 @@ function v(e) {
           })
         }, e.id))
       }), I > 0 && (0, r.jsxs)("div", {
-        className: A.emptyAvatarSlots,
+        className: x.emptyAvatarSlots,
         tabIndex: false,
         ref: E,
         children: [(0, r.jsxs)(c.nn4, {
           children: [0 === Z && (0, r.jsxs)(r.Fragment, {
-            children: [x.intl.string(x.t.x0DsRU), " "]
-          }), x.intl.format(x.t["8W2HOz"], {
+            children: [A.intl.string(A.t.x0DsRU), " "]
+          }), A.intl.format(A.t["8W2HOz"], {
             numberOfEmptyAvatarSlots: I
           })]
         }), [...Array(I)].map((e, t) => (0, r.jsx)(g.Z, {
-          className: A.avatarPlaceholder
+          className: x.avatarPlaceholder
         }, t))]
       })]
     })]
@@ -241,21 +241,16 @@ function E(e) {
     className: t,
     onComplete: n
   } = e;
-  return (0, r.jsxs)("div", {
-    className: i()(A.container, t),
-    children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(c.vwX, {
-        className: A.recentAvatarsHeading,
-        children: x.intl.string(x.t.Bnq9zM)
-      }), (0, r.jsx)(c.Text, {
-        variant: "text-sm/normal",
-        color: "text-secondary",
-        children: x.intl.format(x.t["+CyJu7"], {
-          recentAvatarsLimit: j.iZ
-        })
-      })]
-    }), (0, r.jsx)(v, {
-      onComplete: n
-    })]
+  return (0, r.jsx)("div", {
+    className: i()(x.container, t),
+    children: (0, r.jsx)(c.gNt, {
+      label: A.intl.string(A.t.Bnq9zM),
+      description: A.intl.format(A.t["+CyJu7"], {
+        recentAvatarsLimit: j.iZ
+      }),
+      children: (0, r.jsx)(v, {
+        onComplete: n
+      })
+    })
   })
 }

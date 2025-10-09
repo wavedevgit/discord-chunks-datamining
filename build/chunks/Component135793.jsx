@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,12 +69,12 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 190,
-  k = 178,
+let k = 190,
+  j = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
     let {
@@ -91,7 +91,7 @@ let j = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, M(x({}, t), {
         channel: d,
         message: i,
         onRedeem: a,
@@ -169,8 +169,8 @@ function Z(e) {
         variantsReturnStyle: o.v.INDIVIDUAL_PRODUCTS
       })
     }, [w, N]),
-    L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
-    x = (0, i.useMemo)(() => {
+    x = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
+    L = (0, i.useMemo)(() => {
       if (null != E) {
         if ("apply" === s) return 3;
         if (E.type === C.qc2.DEVELOPER_GIFT) return 1;
@@ -178,13 +178,13 @@ function Z(e) {
       }
       return 0
     }, [E, R, s]),
-    M = (0, i.useMemo)(() => 0 === x ? 1 : u ? 2 : 3 * (null == _), [u, _, x]);
+    M = (0, i.useMemo)(() => 0 === L ? 1 : u ? 2 : 3 * (null == _), [u, _, L]);
   return (0, r.jsx)(F, {
     channel: t,
-    buttonPurchaseState: x,
+    buttonPurchaseState: L,
     buttonDisabledState: M,
     price: p,
-    onActionClick: L,
+    onActionClick: x,
     loading: P,
     selectedEmoji: null != _ ? _ : true,
     isReaction: l
@@ -422,7 +422,7 @@ let F = e => {
       tooltipContentClassName: P.tooltip,
       text: u,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(c.zxk, M(L({}, e), {
+      children: e => (0, r.jsx)(c.zxk, M(x({}, e), {
         onClick: o,
         disabled: s,
         text: l
@@ -435,8 +435,8 @@ let F = e => {
       className: Chunk393919.error,
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
-        width: k,
-        height: j
+        width: j,
+        height: k
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)

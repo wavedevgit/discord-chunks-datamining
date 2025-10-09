@@ -31,7 +31,7 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       onCopy: s,
       disabled: r
     } = e;
-    return (0, l.jsx)(u.Z, {
+    return (0, l.jsx)(d.Z, {
       value: t,
       hideMessage: i ? x.intl.string(x.t["6HzNgY"]) : null,
       buttonColor: a.zx.Colors.BRAND,
@@ -46,12 +46,12 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       noInvitesAvailable: n,
       showFriends: r,
       onClose: a,
-      modalState: u,
+      modalState: d,
       isApplicationBypassToggleEnabled: c,
       setInviteFlags: S,
       copyValue: _,
-      changePage: j,
-      inviteChannel: b,
+      changePage: b,
+      inviteChannel: j,
       source: E,
       code: y,
       guildScheduledEvent: T,
@@ -63,17 +63,17 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       networkError: A,
       showVanityURL: M,
       flags: w
-    } = u, R = i.useCallback(() => {
+    } = d, R = i.useCallback(() => {
       g.default.track(I.rMx.COPY_INSTANT_INVITE, {
-        server: d.Z.getGuildId(),
-        channel: null == b ? true : b.id,
-        channel_type: null == b ? true : b.type,
+        server: u.Z.getGuildId(),
+        channel: null == j ? true : j.id,
+        channel_type: null == j ? true : j.type,
         location: E,
         code: y,
         guild_scheduled_event_id: null == T ? true : T.id,
         application_id: null == C ? true : C.id
       })
-    }, [null == C ? true : C.id, b, E, y, T]);
+    }, [null == C ? true : C.id, j, E, y, T]);
     return (0, l.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, l.jsx)(N, {
@@ -91,7 +91,7 @@ let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         variant: "text-xs/normal",
         className: f.footerText,
         children: [(0, m.Vg)(P, Z), " ", r ? (0, l.jsx)(o.eee, {
-          onClick: () => j(v.RV.SETTINGS),
+          onClick: () => b(v.RV.SETTINGS),
           children: x.intl.string(x.t.VNe8Pz)
         }) : null]
       }), !n && r && M ? (0, l.jsxs)(o.Text, {

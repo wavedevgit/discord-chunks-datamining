@@ -55,10 +55,10 @@ let h = null,
   m = null,
   g = {},
   E = false,
-  b = x(),
+  b = L(),
   y = M(),
   O = null,
-  v = L(),
+  v = x(),
   I = false,
   T = false,
   S = null,
@@ -70,12 +70,12 @@ let h = null,
   w = {},
   D = {};
 
-function L() {
+function x() {
   var e, t, n, r;
   return (null == (t = window) || null == (e = exports.location) ? true : module.pathname) === Chunk292352.ix.FAMILY_CENTER_MY_FAMILY ? Chunk292352.dG.REQUESTS : (null == (r = window) || null == (n = Chunk133080.location) ? true : require.pathname) === Chunk292352.ix.FAMILY_CENTER_SETTINGS ? Chunk292352.dG.SETTINGS : Chunk292352.dG.ACTIVITY
 }
 
-function x() {
+function L() {
   let e = new Map;
   return module.set(Chunk292352.MY.USER_ADD, new Map), module.set(Chunk292352.MY.GUILD_ADD, new Map), module.set(Chunk292352.MY.USER_INTERACTION, new Map), module.set(Chunk292352.MY.GUILD_INTERACTION, new Map), module.set(Chunk292352.MY.USER_CALLED, new Map), module.set(Chunk292352.MY.TOTAL_VOICE_MINUTES, new Map), module.set(Chunk292352.MY.PURCHASES, new Map), module
 }
@@ -92,19 +92,19 @@ function M() {
   }
 }
 
-function j() {
+function k() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => p(f({}, e), {
     [t.user_id]: t
   }), {}) : {}, E = true, g
 }
 
-function k(e) {
+function j(e) {
   true !== e && (y = e)
 }
 
 function U(e, t) {
-  let n = t ? b : x();
+  let n = t ? b : L();
   return e.forEach(e => {
     let t = e.display_type,
       r = n.get(t);
@@ -160,21 +160,21 @@ function F(e) {
     totalSpendCurrency: f,
     invoices: _
   } = n;
-  h = o, m = l, U(r), k(a), G(i), j(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function V(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function H(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function Y(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = o, U(n), k(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
+  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
 function W(e) {
@@ -211,14 +211,14 @@ function K(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function z(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t, true)
+  k(t, true)
 }
 
 function q(e) {
@@ -246,7 +246,7 @@ function Q(e) {
       user_id: t
     } = e;
     return true === n[t]
-  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : j(t.linked_users)
+  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : k(t.linked_users)
 }
 
 function J(e) {
@@ -254,7 +254,7 @@ function J(e) {
     linkedUsers: t
   } = e;
   if (null == t) returnfalse;
-  j(t)
+  k(t)
 }
 
 function $(e) {
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, b = x(), y = M(), D = {}, T = false, S = null, v = L(), E = false, C = [], N = [], R = null, P = null, w = {}
+  h = null, m = null, g = {}, b = L(), y = M(), D = {}, T = false, S = null, v = x(), E = false, C = [], N = [], R = null, P = null, w = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -297,7 +297,7 @@ class ei extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(ei.LATEST_SNAPSHOT_VERSION);
-    null != module && (j(module.linkedUsers), G(module.guilds), U(module.teenActivity), en(module.teenActivityTotals))
+    null != module && (k(module.linkedUsers), G(module.guilds), U(module.teenActivity), en(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {

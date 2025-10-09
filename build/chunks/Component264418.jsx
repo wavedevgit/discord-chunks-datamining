@@ -92,16 +92,16 @@ function O(e) {
       scrollBehavior: R
     } = e,
     P = b(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]);
-  let [w, D] = i.useState(null != C ? C : "top"), [L, x] = i.useState({
+  let [w, D] = i.useState(null != C ? C : "top"), [x, L] = i.useState({
     position: (0, _.z)(w),
     align: null != (t = null == N ? true : N.align) ? t : "center",
     customOffset: null == N ? true : N.customOffset
   }), M = i.useCallback((e, t) => {
     null == S || S(t)
-  }, [S]), j = i.useCallback(() => {
+  }, [S]), k = i.useCallback(() => {
     null == S || S("user:explicit")
-  }, [S]), k = i.useCallback(e => {
-    D(e), x(t => E(m({}, t), {
+  }, [S]), j = i.useCallback(e => {
+    D(e), L(t => E(m({}, t), {
       position: (0, _.z)(e)
     }))
   }, []);
@@ -109,13 +109,13 @@ function O(e) {
     position: w,
     onRequestClose: M,
     gradientColor: T,
-    onPositionChange: k,
+    onPositionChange: j,
     scrollBehavior: R,
     children: (0, r.jsxs)("div", {
       ref: A,
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.u, {
-        onClick: j,
+        onClick: k,
         variant: null != T ? "color-mix" : true
       }), null != y && (0, r.jsx)("div", {
         className: o()(p.graphic, {
@@ -132,7 +132,7 @@ function O(e) {
       }), null != v && v.length > 0 ? (0, r.jsx)(c.k, {
         actions: v
       }) : null, (0, r.jsx)(u.$, {
-        caretConfig: L
+        caretConfig: x
       })]
     })
   }))

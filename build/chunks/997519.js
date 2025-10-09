@@ -20,8 +20,8 @@ function c(e, t) {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? true : n.id
     }),
-    u = (0, s.f)("useEarningMetrics"),
-    g = (0, a.Z)(e),
+    u = (0, a.f)("useEarningMetrics"),
+    g = (0, s.Z)(e),
     {
       currentPeriod: m,
       previousPeriods: p,

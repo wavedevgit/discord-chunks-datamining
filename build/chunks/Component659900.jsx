@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk866442 = require("./866442.js"),
@@ -33,11 +33,11 @@ var Chunk951288 = require("./951288.js"),
 
 function S(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    [n, s] = r.useState(""),
-    [l, a] = r.useState(null),
-    [c, d] = r.useState(null),
+    [n, l] = i.useState(""),
+    [s, a] = i.useState(null),
+    [c, d] = i.useState(null),
     u = (0, E.Z)(e.code);
-  r.useEffect(() => {
+  i.useEffect(() => {
     !async function() {
       let e = v.default.getCurrentUser();
       if (null == e) try {
@@ -45,67 +45,52 @@ function S(e) {
       } catch (e) {
         C.Z.verifySSOToken("accept_guild_template", null)
       }
-      null != e && s(M.intl.formatToPlainString(u.defaultName, {
+      null != e && l(M.intl.formatToPlainString(u.defaultName, {
         username: e.username
       }))
     }()
   }, [u.defaultName]), (0, Z.Z)(e);
-  let x = (0, i.jsxs)(i.Fragment, {
-      children: [t ? (0, i.jsx)(T.Z, {
+  let f = (0, r.jsxs)(r.Fragment, {
+      children: [t ? (0, r.jsx)(_.Z, {
         guildTemplate: e
-      }) : null, (0, i.jsx)("div", {
-        className: b.icon,
-        children: (0, i.jsx)(h.Z, {
-          icon: l,
+      }) : null, (0, r.jsx)("div", {
+        className: T.icon,
+        children: (0, r.jsx)(h.Z, {
+          icon: s,
           onChange: a
         })
-      }), (0, i.jsx)(o.oil, {
+      }), (0, r.jsx)(o.oil, {
         label: u.nameLabel,
+        helperText: M.intl.format(u.terms, {
+          guidelinesURL: b.EYA.GUIDELINES
+        }),
         type: "text",
         value: n,
         maxLength: 100,
-        onChange: s,
+        onChange: l,
         error: null == c ? true : c.name
-      }), (0, i.jsx)(o.Text, {
-        variant: "text-xs/normal",
-        color: "text-muted",
-        className: b.guidelines,
-        children: M.intl.format(u.terms, {
-          guidelinesURL: _.EYA.GUIDELINES
-        })
       })]
     }),
-    f = e.serializedSourceGuild.roles.map(t => N.wD(e.serializedSourceGuild.id, t)).filter(e => !(0, p.fI)(e));
+    g = e.serializedSourceGuild.roles.map(t => H.wD(e.serializedSourceGuild.id, t)).filter(e => !(0, p.fI)(e));
   return {
-    form: x,
-    preview: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)("div", {
-        className: b.divider
-      }), (0, i.jsxs)(o.xJW, {
-        className: b.previewSection,
-        title: M.intl.string(M.t.Zxk1OD),
-        children: [(0, i.jsx)(G, {
+    form: f,
+    preview: (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(o.izJ, {}), (0, r.jsx)(o.gNt, {
+        label: M.intl.string(M.t.Zxk1OD),
+        helperText: M.intl.string(M.t.de7DpK),
+        children: (0, r.jsx)(G, {
           channels: e.serializedSourceGuild.channels
-        }), (0, i.jsxs)(o.Text, {
-          variant: "text-xs/normal",
-          color: "header-secondary",
-          className: b.protip,
-          children: [(0, i.jsxs)("span", {
-            className: b.protipText,
-            children: [M.intl.string(M.t["8tvIiI"]), ":"]
-          }), " ", M.intl.string(M.t.de7DpK)]
-        })]
-      }), f.length > 0 ? (0, i.jsx)(o.xJW, {
-        className: b.previewSection,
-        title: M.intl.string(M.t["RJ1e/v"]),
-        children: (0, i.jsx)(I, {
+        })
+      }), g.length > 0 ? (0, r.jsx)(o.gNt, {
+        label: M.intl.string(M.t["RJ1e/v"]),
+        children: (0, r.jsx)(R, {
           guildId: e.serializedSourceGuild.id,
-          roles: f
+          roles: g
         })
       }) : null]
     }),
     handleSubmit: () => {
-      H.Z.acceptGuildTemplate(e.code, n, l).then(() => {
+      N.Z.acceptGuildTemplate(e.code, n, s).then(() => {
         (0, o.pTH)(), (0, m.Ou)()
       }).catch(e => d(e))
     }
@@ -117,59 +102,59 @@ function G(e) {
     channels: t
   } = e, n = c()(t).sortBy(e => null == e.parent_id ? 1e4 * Number(e.id) : 1e4 * Number(e.parent_id) + e.id).map(e => {
     var t;
-    let n = (t = e).type === _.d4z.GUILD_CATEGORY ? j.Z : (0, x.KS)((0, g.q_)(t));
-    return (0, i.jsxs)("div", {
-      className: l()(b.channel, {
-        [b.category]: e.type === _.d4z.GUILD_CATEGORY
+    let n = (t = e).type === b.d4z.GUILD_CATEGORY ? j.Z : (0, f.KS)((0, x.q_)(t));
+    return (0, r.jsxs)("div", {
+      className: s()(T.channel, {
+        [T.category]: e.type === b.d4z.GUILD_CATEGORY
       }),
-      children: [null != n ? (0, i.jsx)(n, {
-        className: b.channelIcon
-      }) : null, (0, i.jsx)(o.Text, {
-        className: b.channelText,
+      children: [null != n ? (0, r.jsx)(n, {
+        className: T.channelIcon
+      }) : null, (0, r.jsx)(o.Text, {
+        className: T.channelText,
         variant: "text-sm/normal",
         children: e.name
       })]
     }, e.id)
   }).value();
-  return (0, i.jsx)("div", {
-    className: b.channelsWrapper,
+  return (0, r.jsx)("div", {
+    className: T.channelsWrapper,
     children: n
   })
 }
 
-function I(e) {
+function R(e) {
   let {
     guildId: t,
     roles: n
-  } = e, r = n.slice().reverse().map(e => (0, i.jsx)(R, {
+  } = e, i = n.slice().reverse().map(e => (0, r.jsx)(I, {
     guildId: t,
     role: e
   }, e.id));
-  return (0, i.jsx)("ul", {
-    className: b.rolesWrapper,
-    children: r
+  return (0, r.jsx)("ul", {
+    className: T.rolesWrapper,
+    children: i
   })
 }
 
-function R(e) {
+function I(e) {
   var t, n;
   let {
-    guildId: r,
-    role: s
-  } = e, l = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == s.color ? l : (0, d.Rf)(s.color), c = (0, f._f)(r, s, s.colorStrings);
-  return (0, i.jsxs)("li", {
-    className: b.role,
+    guildId: i,
+    role: l
+  } = e, s = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == l.color ? s : (0, d.Rf)(l.color), c = (0, g._f)(i, l, l.colorStrings);
+  return (0, r.jsxs)("li", {
+    className: T.role,
     style: {
       borderColor: null != (t = (0, d.wK)(a, .6)) ? t : true,
       backgroundColor: null != (n = (0, d.wK)(a, .075)) ? n : true
     },
-    children: [(0, i.jsx)(o.xko, {
-      className: b.roleCircle,
+    children: [(0, r.jsx)(o.xko, {
+      className: T.roleCircle,
       color: a,
       colors: c
-    }), (0, i.jsx)(o.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
-      children: s.name
+      children: l.name
     })]
   })
 }

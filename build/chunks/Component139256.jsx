@@ -2,7 +2,7 @@
 /** chunk id: 139256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $e: () => k,
+  $e: () => j,
   $w: () => F,
   Og: () => H,
   ZY: () => V,
@@ -102,7 +102,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     children: n
@@ -115,7 +115,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     className: t,
     children: n
@@ -153,7 +153,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let t, {
     className: n,
     children: i,
@@ -177,7 +177,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     answers: t,
     answersInteraction: n,
@@ -196,12 +196,12 @@ function k(e) {
   }).with({
     answersInteraction: y.Y7.RADIO_BUTTONS
   }, () => ({
-    ContainerComponent: x,
+    ContainerComponent: L,
     answerElementType: 1
   })).with({
     answersInteraction: y.Y7.CHECKBOXES
   }, () => ({
-    ContainerComponent: L,
+    ContainerComponent: x,
     answerElementType: 2
   })).with({
     canTapAnswers: true,
@@ -253,7 +253,7 @@ function U(e) {
         children: a
       });
     case 1:
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(k, {
         className: o()(t, f),
         onClick: p,
         isSelected: _,

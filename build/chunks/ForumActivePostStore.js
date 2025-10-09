@@ -42,20 +42,20 @@ let O = [],
   P = [],
   w = o().chain(O),
   D = o().chain(O),
-  L = new Set,
-  x = new Set;
+  x = new Set,
+  L = new Set;
 
 function M(e) {
   var t;
   return null != (t = m.ZP.lastMessageId(e)) ? t : e
 }
 
-function j(e) {
+function k(e) {
   let t = _.Z.getCount(e);
   return null === t || 0 === t
 }
 
-function k(e) {
+function j(e) {
   return function(t, n) {
     return (0, b.yv)(t) ? false : (0, b.yv)(n) ? 1 : e === l.z.LATEST_ACTIVITY ? E.default.compare(M(n), M(t)) : E.default.compare(n, t)
   }
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), x.clear(), L.clear()
+  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), L.clear(), x.clear()
 }
 
 function B() {
@@ -93,7 +93,7 @@ function Z(e) {
       id: t
     } = e;
     return t
-  }).sort(k(S))
+  }).sort(j(S))
 }
 
 function F(e) {
@@ -104,9 +104,9 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), C = 0, R = true), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(k(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(k(l.z.CREATION_DATE)));
+  }), C = 0, R = true), 0 !== x.size && (P = P.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (P = Array.from(new Set([...P, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
   let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
-    i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => j(e));
+    i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => k(e));
   r = null == i ? null : i
 }
 
@@ -127,13 +127,13 @@ function H(e) {
   } = e;
   if (null == t.parent_id || t.parent_id !== I) returnfalse;
   let n = (0, b.yv)(t.id),
-    r = x.has(t.id);
-  if (n && !r) x.add(t.id), F({
+    r = L.has(t.id);
+  if (n && !r) L.add(t.id), F({
     sortThreadIds: true
   });
   else {
     if (n || !r) returnfalse;
-    x.delete(t.id), F({
+    L.delete(t.id), F({
       sortThreadIds: true
     })
   }
@@ -153,7 +153,7 @@ function W(e) {
     channel: t
   } = e;
   if (null == t.parent_id || t.parent_id !== I) returnfalse;
-  L.add(t.id), F({
+  x.add(t.id), F({
     sortThreadIds: true
   })
 }

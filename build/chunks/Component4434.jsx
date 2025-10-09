@@ -159,12 +159,12 @@ function ed(e) {
     priceOptions: I
   } = e, {
     setInvoicePreview: S
-  } = (0, v.JL)(), R = (0, N.Z)(), P = a.interval, D = a.intervalCount, x = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(J.Si.GUILD), P, D)), M = (0, u.e7)([G.default], () => G.default.getCurrentUser()), U = (0, y.Z)({
+  } = (0, v.JL)(), R = (0, N.Z)(), P = a.interval, D = a.intervalCount, L = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(J.Si.GUILD), P, D)), M = (0, u.e7)([G.default], () => G.default.getCurrentUser()), U = (0, y.Z)({
     forceFetch: false
   });
-  l()(null != x, "Missing guildBoostingSubscriptionPlan");
+  l()(null != L, "Missing guildBoostingSubscriptionPlan");
   let B = [{
-      planId: x.id,
+      planId: L.id,
       quantity: 1
     }],
     Z = null == p ? true : p.items.find(e => e.planId === J.Xh.PREMIUM_MONTH_TIER_2 || e.planId === J.Xh.PREMIUM_YEAR_TIER_2);
@@ -195,20 +195,20 @@ function ed(e) {
   let ep = !ei && null == ef && null == e_,
     eh = (null == (n = (0, C.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === J.Si.TIER_2,
     em = K.ZP.hasBoostDiscount(M, U.fractionalState),
-    eg = null == ef ? true : ef.findInvoiceItemByPlanId(x.id),
+    eg = null == ef ? true : ef.findInvoiceItemByPlanId(L.id),
     eE = null != eg ? {
       amount: eg.amount,
       tax: 0,
       taxInclusive: true,
       currency: I.currency
-    } : K.ZP.getPrice(x.id, em, false, I),
+    } : K.ZP.getPrice(L.id, em, false, I),
     eb = s * eE.amount,
     ey = (0, u.e7)([V.Z], () => V.Z.inReverseTrial() && K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p),
     eO = K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p && K.ZP.getPremiumType(p.planId) === J.PremiumTypes.TIER_2 ? ee.intl.format(ee.t.hf6YOT, {
       planName: K.ZP.getDisplayPremiumType(p.planId)
     }) : ee.intl.format(eh ? ee.t["ba1L7+"] : ee.t.fkffDQ, {
       onPremiumSubscriptionClick: m,
-      discountPercentage: (0, W.T3)(k.default.locale, J.Rr / 100),
+      discountPercentage: (0, W.T3)(j.default.locale, J.Rr / 100),
       freeSubscriptionCount: J.cb
     }),
     ev = g.filter(e => (0, H.tl)(e)).length,
@@ -219,7 +219,7 @@ function ed(e) {
     eS = "HR" === eT && eE.currency === $.pK.EUR,
     eA = U.fractionalState === J.a$.FP_SUB_PAUSED;
   return f(ep), (0, r.jsxs)("div", {
-    children: [eA && (0, r.jsx)(L.n, {
+    children: [eA && (0, r.jsx)(x.n, {
       fractionalPremiumInfo: U
     }), ey && null != p ? (0, r.jsx)(eu, {
       endDate: p.currentPeriodEnd
@@ -304,7 +304,7 @@ function ed(e) {
       message: ee.intl.format(ee.t.Om31w8, {
         documentationLink: Y.Z.getArticleURL(X.BhN.LOCALIZED_PRICING)
       })
-    }), ey ? (0, r.jsx)(j.e, {}) : (0, r.jsx)(j.Z, {
+    }), ey ? (0, r.jsx)(k.e, {}) : (0, r.jsx)(k.Z, {
       text: eO,
       color: O.JX.PREMIUM_TIER_2
     })]
@@ -415,11 +415,11 @@ function e_(e) {
     P = s.paymentSourceId,
     w = (0, I.$)(o, P),
     D = (0, u.e7)([Z.Z], () => null != d ? Z.Z.getPaymentSource(d) : null),
-    L = (0, u.e7)([U.Z], () => U.Z.hidePersonalInformation);
+    x = (0, u.e7)([U.Z], () => U.Z.hidePersonalInformation);
   n = null != l ? (0, K.Zx)(l, y[0].quantity, y[0].planId) : y;
   let {
     analyticsLocations: M
-  } = (0, b.ZP)(), [j] = (0, T.ED)({
+  } = (0, b.ZP)(), [k] = (0, T.ED)({
     subscriptionId: null == l ? true : l.id,
     items: n,
     renewal: false,
@@ -428,7 +428,7 @@ function e_(e) {
     currency: s.currency,
     analyticsLocations: M,
     analyticsLocation: E.Z.GUILD_BOOSTING_REVIEW_PRORATED
-  }), [k] = (0, T.ED)({
+  }), [j] = (0, T.ED)({
     subscriptionId: null == l ? true : l.id,
     items: n,
     renewal: true,
@@ -436,7 +436,7 @@ function e_(e) {
     currency: s.currency,
     analyticsLocations: M,
     analyticsLocation: E.Z.GUILD_BOOSTING_REVIEW_RENEWAL
-  }), G = k;
+  }), G = j;
   null != G && (a = {
     amount: G.subtotal,
     currency: G.currency,
@@ -445,37 +445,37 @@ function e_(e) {
   });
   let F = c.M.EEA_COUNTRIES.has(B.Z.ipCountryCodeWithFallback);
   return i.useEffect(() => {
-    R(j)
-  }, [R, j]), (0, r.jsxs)("div", {
-    children: [null != j && null != k ? (0, r.jsx)(ef, {
+    R(k)
+  }, [R, k]), (0, r.jsxs)("div", {
+    children: [null != k && null != j ? (0, r.jsx)(ef, {
       premiumSubscription: l,
       premiumSubscriptionPlan: h,
-      proratedInvoicePreview: j,
-      renewalInvoicePreview: k,
+      proratedInvoicePreview: k,
+      renewalInvoicePreview: j,
       priceOptions: s
-    }) : null, (0, r.jsxs)("div", {
+    }) : null, (0, r.jsx)("div", {
       className: et.paymentSourceWrapper,
-      children: [(0, r.jsx)(_.vwX, {
-        children: ee.intl.string(ee.t.mmDvV1)
-      }), null != d ? null != D ? (0, r.jsx)(f.u, {
+      children: null != d ? null != D ? (0, r.jsx)(f.u, {
         asContainer: true,
         text: ee.intl.string(ee.t.XiuuV1),
         children: (0, r.jsx)(m.ZP, {
+          label: ee.intl.string(ee.t.mmDvV1),
           paymentSources: [D],
           selectedPaymentSourceId: D.id,
-          hidePersonalInformation: L,
+          hidePersonalInformation: x,
           disabled: true
         })
       }) : (0, r.jsx)("div", {
         children: (0, r.jsx)(_.$jN, {})
       }) : (0, r.jsx)(m.ZP, {
+        label: ee.intl.string(ee.t.mmDvV1),
         paymentSources: Object.values(o),
         selectedPaymentSourceId: P,
         onChange: O,
         onPaymentSourceAdd: S,
-        hidePersonalInformation: L
-      })]
-    }), (0, r.jsx)(x.Z, {
+        hidePersonalInformation: x
+      })
+    }), (0, r.jsx)(L.Z, {
       isActive: N,
       ref: C,
       children: null != a && (0, r.jsx)(g.Z, {
@@ -484,11 +484,11 @@ function e_(e) {
         finePrint: (0, r.jsx)(p.Z, {
           subscriptionPlan: h,
           paymentSourceType: w,
-          proratedAmount: null != j ? j.total : true,
+          proratedAmount: null != k ? k.total : true,
           basePrice: a,
           productLine: X.POd.BOOST
         }),
-        showPricingLink: (null != (t = null == j ? true : j.currency) ? t : $.pK.USD) !== $.pK.USD,
+        showPricingLink: (null != (t = null == k ? true : k.currency) ? t : $.pK.USD) !== $.pK.USD,
         showWithdrawalWaiver: F,
         subscriptionPlan: h
       })

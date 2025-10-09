@@ -23,12 +23,12 @@ let b = e => {
     guildId: n,
     selectedNameplate: r
   } = e, b = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
-    product: v,
-    purchase: x
-  } = (0, c.Z)(null == r ? true : r.skuId), C = (0, p.kd)(v), f = m.ZP.canUseCollectibles(t), I = (0, s.qS)(x), P = (0, s.G1)(v), y = !f && I, w = null == x || y;
+    product: x,
+    purchase: v
+  } = (0, c.Z)(null == r ? true : r.skuId), C = (0, p.kd)(x), f = m.ZP.canUseCollectibles(t), I = (0, s.qS)(v), P = (0, s.G1)(x), y = !f && I, j = null == v || y;
   return (0, i.jsxs)("div", {
     className: a()(g.previewBorder, {
-      [g.upsell]: null != r && w
+      [g.upsell]: null != r && j
     }),
     children: [(0, i.jsx)("div", {
       className: g.previewBox,
@@ -62,7 +62,7 @@ let b = e => {
       children: [(0, i.jsx)(o.Text, {
         variant: "text-sm/semibold",
         children: C
-      }), w && (0, i.jsx)(o.Text, {
+      }), j && (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: y ? h.intl.string(h.t.nD78oa) : P && f ? h.intl.string(h.t.hmyYKy) : P ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
       })]

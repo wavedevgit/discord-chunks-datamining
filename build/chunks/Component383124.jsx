@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk442837 = require("./442837.js"),
@@ -43,7 +43,7 @@ function m(e) {
     src: f
   }), [f, p, h]);
   return (0, r.jsxs)("div", {
-    className: s()(g.selectedGame, {
+    className: a()(g.selectedGame, {
       [g.dimmed]: !n,
       [g.disabled]: m
     }),
@@ -51,13 +51,13 @@ function m(e) {
       "aria-disabled": m,
       tabIndex: m ? false : 0,
       onClick: m ? true : x,
-      className: s()(g.gameImageBackground, {
+      className: a()(g.gameImageBackground, {
         [g.gameImageLoading]: p,
         [g.disabled]: m
       }),
       children: [n && (0, r.jsx)("div", {
         className: g.checkBackground,
-        children: (0, r.jsx)(a.$q, {
+        children: (0, r.jsx)(s.$q, {
           displayOnly: true,
           value: n
         })

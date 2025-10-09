@@ -47,10 +47,9 @@ let d = function(e) {
     onChange: d,
     title: u
   } = e, p = s.useRef(null);
-  return (0, r.jsxs)(a.xJW, {
-    children: [(0, r.jsx)(a.vwX, {
-      children: u
-    }), (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(a.gNt, {
+    label: u,
+    children: (0, r.jsx)(a.yRy, {
       targetElementRef: p,
       renderPopout: e => (0, r.jsx)(a.Z$W, c(l({}, e), {
         value: n,
@@ -70,6 +69,6 @@ let d = function(e) {
           className: i.swatchIcon
         })
       }))
-    })]
+    })
   })
 }

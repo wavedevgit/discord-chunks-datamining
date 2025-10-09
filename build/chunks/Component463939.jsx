@@ -59,67 +59,67 @@ function N(e) {
     ppgStatus: n,
     payoutStatus: r,
     ppgDeferralReasons: i,
-    periodEndDate: s
-  } = (0, x.j0)(t), a = null != s ? d()(s).add(15, "days").toISOString() : true, o = (0, m.Zo)(a, "MMM D");
+    periodEndDate: a
+  } = (0, x.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
   switch (n) {
-    case _.x_.OPEN:
+    case v.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjY, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
           payoutDate: o
-        }) : v.intl.string(v.t.G5ATX1), (0, l.jsx)(f.Z, {
+        }) : _.intl.string(_.t.G5ATX1), (0, l.jsx)(f.Z, {
           className: C.statusScheduledIcon
         })]
       });
-    case _.x_.CANCELED:
+    case v.x_.CANCELED:
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
+        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon
         })]
       });
-    case _.x_.PAYOUT_DEFERRED:
-      if ((null == i ? true : i.includes(_.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
+    case v.x_.PAYOUT_DEFERRED:
+      if ((null == i ? true : i.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
+        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t.OtZ5k5), (0, l.jsx)(h.Z, {
+        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(h.Z, {
           className: C.statusDeferredIcon
         })]
       })
   }
   switch (r) {
-    case _.jw.MANUAL:
-    case _.jw.OPEN:
-    case _.jw.PENDING:
-    case _.jw.PROCESSING:
-    case _.jw.SUBMITTED:
-    case _.jw.PENDING_FUNDS:
-    case _.jw.CANCELED:
-    case _.jw.ERROR:
+    case v.jw.MANUAL:
+    case v.jw.OPEN:
+    case v.jw.PENDING:
+    case v.jw.PROCESSING:
+    case v.jw.SUBMITTED:
+    case v.jw.PENDING_FUNDS:
+    case v.jw.CANCELED:
+    case v.jw.ERROR:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjY, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
           payoutDate: o
-        }) : v.intl.string(v.t.ubdQTk), (0, l.jsx)(f.Z, {
+        }) : _.intl.string(_.t.ubdQTk), (0, l.jsx)(f.Z, {
           className: C.statusScheduledIcon
         })]
       });
-    case _.jw.PAID:
+    case v.jw.PAID:
       return (0, l.jsxs)(l.Fragment, {
-        children: [v.intl.string(v.t.eoSslJ), (0, l.jsx)(g.owK, {
+        children: [_.intl.string(_.t.eoSslJ), (0, l.jsx)(g.owK, {
           size: "md",
           color: "currentColor",
           className: C.statusPaidIcon
         })]
       });
-    case _.jw.DEFERRED:
-    case _.jw.DEFERRED_INTERNAL:
-    case _.jw.REJECTED:
-    case _.jw.RISK_REVIEW:
+    case v.jw.DEFERRED:
+    case v.jw.DEFERRED_INTERNAL:
+    case v.jw.REJECTED:
+    case v.jw.RISK_REVIEW:
       return (0, l.jsxs)(l.Fragment, {
         children: [p.Z.getStatusErrorText(r), (0, l.jsx)(g.k$p, {
           size: "md",
@@ -220,12 +220,12 @@ function S(e) {
         amount: null == (n = e.ppgs[t]) ? true : n.amount
       }
     })
-  }), a = s.useMemo(() => O({
+  }), s = a.useMemo(() => O({
     ListingIdLabel: t
   }, r), [r, t]);
   return (0, l.jsx)(b.ZP, {
     columns: I,
     data: i,
-    cellProps: a
+    cellProps: s
   })
 }

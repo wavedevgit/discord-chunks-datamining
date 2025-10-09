@@ -59,7 +59,8 @@ function g(e) {
           toggleWebhookExpand: h
         } = e;
         return (0, i.jsxs)("div", {
-          children: [(0, i.jsx)(l.vwX, {
+          children: [(0, i.jsx)(l.Text, {
+            variant: "text-md/medium",
             className: b.groupHeader,
             children: m.intl.format(m.t.TKDIZm, {
               channelHook: () => (0, i.jsx)("span", {

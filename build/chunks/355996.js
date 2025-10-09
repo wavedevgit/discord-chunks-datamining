@@ -10,11 +10,11 @@ var Chunk544891 = require("./544891.js"),
   Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js");
 let d = {
-  acceptGuildTemplate: (e, t, n) => (r.Z.dispatch({
+  acceptGuildTemplate: (e, t, n) => (i.Z.dispatch({
     type: "GUILD_TEMPLATE_ACCEPT",
     code: e
   }), new Promise((d, u) => {
-    i.tn.post({
+    r.tn.post({
       url: c.ANM.UNRESOLVED_GUILD_TEMPLATE(e),
       body: {
         name: t,
@@ -24,15 +24,15 @@ let d = {
       rejectWithError: false
     }).then(t => {
       let n = t.body;
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "GUILD_TEMPLATE_ACCEPT_SUCCESS",
         code: e,
         guild: n
-      }), s.Z.isConnected() ? a.Z.addConditionalChangeListener(() => {
-        if (null != a.Z.getGuild(n.id)) return (0, l.X)(n.id), d(n), false
-      }) : ((0, l.X)(n.id), d(n))
+      }), l.Z.isConnected() ? a.Z.addConditionalChangeListener(() => {
+        if (null != a.Z.getGuild(n.id)) return (0, s.X)(n.id), d(n), false
+      }) : ((0, s.X)(n.id), d(n))
     }, t => {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "GUILD_TEMPLATE_ACCEPT_FAILURE",
         code: e
       }), u(t.body)

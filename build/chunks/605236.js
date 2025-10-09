@@ -8,7 +8,7 @@ require.d(exports, {
   H4: () => N,
   J0: () => C,
   JO: () => F,
-  ME: () => k,
+  ME: () => j,
   OA: () => D,
   Ow: () => V,
   UJ: () => P,
@@ -18,10 +18,10 @@ require.d(exports, {
   bj: () => U,
   kk: () => M,
   mA: () => B,
-  oK: () => L,
+  oK: () => x,
   po: () => I,
   qN: () => G,
-  u9: () => j,
+  u9: () => k,
   wH: () => Z,
   wx: () => y,
   z2: () => v
@@ -179,18 +179,18 @@ function D(e, t) {
   return (0, r.e7)([s.Z], () => w(e, t))
 }
 
-function L(e, t) {
+function x(e, t) {
   if ((0, m.Bh)(e)) returntrue;
   let n = s.Z.getGuildDismissedContentState(t);
   return null != n && null != n[e] && null != n[e].lastDismissedAtMs && "0" !== n[e].lastDismissedAtMs
 }
-let x = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
+let L = new Set([Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS, Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER, Chunk704215.z.ACCOUNT_LINK_PROMPT]);
 
 function M(e, t, n, r) {
   if ((0, h.cI)(e) || p.Z.hasUserHitDCCap(e, null == t ? true : t.guildId)) return;
   let o = d.Z.getConfig({
     location: "requestMarkDismissibleContentAsShown"
-  }).enabled && null == r && x.has(e);
+  }).enabled && null == r && L.has(e);
   (!n || o) && (a.Z.dispatch({
     type: "DCF_EVENT_LOGGED",
     eventType: u.D.DC_SHOW_REQUEST,
@@ -214,11 +214,11 @@ function M(e, t, n, r) {
   }))
 }
 
-function j(e, t) {
+function k(e, t) {
   ((0, h.cI)(e) || t.forceTrack) && H(e, t), (0, _.Vr)(e)
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = !p.Z.hasUserHitDCCap();
   (0, h.gE)({
     content: e,
@@ -244,15 +244,15 @@ function B(e, t) {
 }
 async function Z(e, t, n) {
   let r = B(e, n);
-  j(e, n), await O(e, t, r), k(e, n)
+  k(e, n), await O(e, t, r), j(e, n)
 }
 async function F(e, t, n) {
   let r = B(e, n);
-  j(e, n), await I(e, t, r), k(e, n)
+  k(e, n), await I(e, t, r), j(e, n)
 }
 async function V(e, t) {
   let n = B(e, t);
-  j(e, t), await v(e, n), k(e, t)
+  k(e, t), await v(e, n), j(e, t)
 }
 
 function H(e, t) {

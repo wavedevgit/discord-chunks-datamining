@@ -36,11 +36,11 @@ let T = 3e5,
 R.width = 512, R.height = w;
 let D = R.getContext("2d");
 
-function L() {
+function x() {
   C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
-let x = s().debounce((e, t, n, r) => {
-  j(e, (0, y.V9)({
+let L = s().debounce((e, t, n, r) => {
+  k(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -61,11 +61,11 @@ function M(e) {
     null == D || D.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function j(e, t) {
+async function k(e, t) {
   if (r !== e || (0, E.isWeb)() && h.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t)) return;
-  let n = () => j(e, t);
+  let n = () => k(e, t);
   if (!N) try {
-    let n = await k(e, 60);
+    let n = await j(e, 60);
     await M(n);
     let r = R.toDataURL("image/jpeg");
     if (_.Z.dispatch({
@@ -95,7 +95,7 @@ async function j(e, t) {
   r === e && (N ? C.start(S, n) : C.start(T, n))
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = 0;
   return (E.isPlatformEmbedded ? G : U)(e, e => {
     if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) returntrue;
@@ -148,7 +148,7 @@ function G(e, t) {
 }
 let B = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", L), Chunk570140.Z.subscribe("LOGOUT", L), Chunk570140.Z.subscribe("STREAM_DELETE", L), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", x), Chunk570140.Z.subscribe("LOGOUT", x), Chunk570140.Z.subscribe("STREAM_DELETE", x), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -156,7 +156,7 @@ let B = {
         streamId: a,
         context: o
       } = e;
-      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (L(), r = a, x(a, t, n, i))
+      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (x(), r = a, L(a, t, n, i))
     }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

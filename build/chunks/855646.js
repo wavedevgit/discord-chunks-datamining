@@ -8,7 +8,6 @@ module.exports = {
   previewContainerError: "previewContainerError__50f14",
   previewTextContainer: "previewTextContainer__50f14",
   previewTitleContainer: "previewTitleContainer__50f14",
-  previewTitle: "previewTitle__50f14",
   recipientError: "recipientError__50f14",
   previewLink: "previewLink__50f14"
 }

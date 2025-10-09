@@ -2,8 +2,8 @@
 /** chunk id: 474936, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $7: () => k,
-  $8: () => ex,
+  $7: () => j,
+  $8: () => eL,
   $X: () => eb,
   $e: () => f,
   $n: () => eQ,
@@ -23,7 +23,7 @@ require.d(exports, {
   F$: () => T,
   F_: () => c,
   GP: () => R,
-  HO: () => ej,
+  HO: () => ek,
   IW: () => S,
   Lw: () => eC,
   M_: () => e2,
@@ -37,7 +37,7 @@ require.d(exports, {
   Qh: () => e8,
   RU: () => eu,
   Rg: () => W,
-  Rr: () => x,
+  Rr: () => L,
   Rt: () => er,
   Se: () => e7,
   Si: () => p,
@@ -45,7 +45,7 @@ require.d(exports, {
   TD: () => eY,
   TL: () => Q,
   Tp: () => ez,
-  UA: () => j,
+  UA: () => k,
   UD: () => O,
   Ue: () => U,
   Uq: () => eR,
@@ -54,7 +54,7 @@ require.d(exports, {
   X2: () => e$,
   XB: () => eO,
   Xh: () => b,
-  Y1: () => ek,
+  Y1: () => ej,
   YQ: () => m,
   Z1: () => v,
   Zh: () => u,
@@ -89,7 +89,7 @@ require.d(exports, {
   nH: () => eB,
   nS: () => h,
   o4: () => I,
-  pH: () => eL,
+  pH: () => ex,
   pj: () => P,
   rB: () => e_,
   rV: () => C,
@@ -326,11 +326,11 @@ let R = Object.freeze({
   P = new Set(["511651880837840896"]),
   w = 16,
   D = 8,
-  L = 5,
-  x = 30,
+  x = 5,
+  L = 30,
   M = 2,
-  j = 3,
-  k = 28,
+  k = 3,
+  j = 28,
   U = 30,
   G = 30,
   B = 7,
@@ -430,17 +430,17 @@ let eA = Object.freeze({
   eP = 0x3200000,
   ew = 0x6400000,
   eD = 5,
-  eL = {
+  ex = {
     [Chunk981631.Eu4.NONE]: eD,
     [Chunk981631.Eu4.TIER_1]: 10,
     [Chunk981631.Eu4.TIER_2]: 15,
     [Chunk981631.Eu4.TIER_3]: 30
   },
-  ex = {
-    [Chunk981631.Eu4.NONE]: eL[Chunk981631.Eu4.NONE],
-    [Chunk981631.Eu4.TIER_1]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1],
-    [Chunk981631.Eu4.TIER_2]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2],
-    [Chunk981631.Eu4.TIER_3]: eL[Chunk981631.Eu4.NONE] + eL[Chunk981631.Eu4.TIER_1] + eL[Chunk981631.Eu4.TIER_2] + eL[Chunk981631.Eu4.TIER_3]
+  eL = {
+    [Chunk981631.Eu4.NONE]: ex[Chunk981631.Eu4.NONE],
+    [Chunk981631.Eu4.TIER_1]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1],
+    [Chunk981631.Eu4.TIER_2]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2],
+    [Chunk981631.Eu4.TIER_3]: ex[Chunk981631.Eu4.NONE] + ex[Chunk981631.Eu4.TIER_1] + ex[Chunk981631.Eu4.TIER_2] + ex[Chunk981631.Eu4.TIER_3]
   },
   eM = {
     [Chunk981631.Eu4.NONE]: eO,
@@ -448,7 +448,7 @@ let eA = Object.freeze({
     [Chunk981631.Eu4.TIER_2]: 36,
     [Chunk981631.Eu4.TIER_3]: 48
   },
-  ej = Object.freeze({
+  ek = Object.freeze({
     [Chunk981631.Eu4.NONE]: {
       features: [],
       limits: {
@@ -458,7 +458,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
         soundboardSounds: eM[Chunk981631.Eu4.NONE],
-        stickers: ex[Chunk981631.Eu4.NONE],
+        stickers: eL[Chunk981631.Eu4.NONE],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -471,7 +471,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
         soundboardSounds: eM[Chunk981631.Eu4.TIER_1],
-        stickers: ex[Chunk981631.Eu4.TIER_1],
+        stickers: eL[Chunk981631.Eu4.TIER_1],
         stageVideoUsers: Chunk981631.B9o
       }
     },
@@ -484,7 +484,7 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eM[Chunk981631.Eu4.TIER_2],
-        stickers: ex[Chunk981631.Eu4.TIER_2],
+        stickers: eL[Chunk981631.Eu4.TIER_2],
         stageVideoUsers: Chunk981631.eez
       }
     },
@@ -497,12 +497,12 @@ let eA = Object.freeze({
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eM[Chunk981631.Eu4.TIER_3],
-        stickers: ex[Chunk981631.Eu4.TIER_3],
+        stickers: eL[Chunk981631.Eu4.TIER_3],
         stageVideoUsers: Chunk981631.RcX
       }
     }
   }),
-  ek = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+  ej = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
 var eU = function(e) {
     return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
   }({}),
@@ -514,7 +514,7 @@ let eB = {
   "511651876987469824": w,
   "511651885459963904": w,
   "944037208325619722": D,
-  "642251038925127690": L
+  "642251038925127690": x
 };
 var eZ = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e

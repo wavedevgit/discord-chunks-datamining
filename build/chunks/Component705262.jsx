@@ -132,19 +132,19 @@ let Y = Object.freeze({
       type: "EDITOR",
       isCoachmark: true,
       isPreview: true
-    }, () => j.intl.string(j.t.D29k19)).with({
+    }, () => k.intl.string(k.t.D29k19)).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => j.intl.string(j.t["8+vbqa"])).otherwise(() => j.intl.string(j.t.hjV0fX));
+    }, () => k.intl.string(k.t["8+vbqa"])).otherwise(() => k.intl.string(k.t.hjV0fX));
     return (0, r.jsxs)("div", {
-      className: k.title,
+      className: j.title,
       children: [(0, r.jsx)(c.X6q, {
         "aria-label": o,
-        className: k.titleText,
+        className: j.titleText,
         variant: "text-md/medium",
         children: o
       }), (0, r.jsx)(b.Z, {
-        className: k.premiumIcon
+        className: j.premiumIcon
       })]
     })
   },
@@ -163,22 +163,22 @@ let Y = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: true
-    }, () => j.intl.format(j.t.G8yQXl, {
+    }, () => k.intl.format(k.t.G8yQXl, {
       onPremiumClick: () => m.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => j.intl.string(j.t.jmZiNj)).with({
+    }, () => k.intl.string(k.t.jmZiNj)).with({
       type: "EDITOR",
       isPreview: false
-    }, () => j.intl.string(j.t.dqDFwc)).with({
+    }, () => k.intl.string(k.t.dqDFwc)).with({
       isPreview: true
-    }, () => j.intl.format(j.t.DWIjJy, {
+    }, () => k.intl.format(k.t.DWIjJy, {
       onPremiumClick: () => m.z
-    })).otherwise(() => j.intl.string(j.t["np0X/v"]));
+    })).otherwise(() => k.intl.string(k.t["np0X/v"]));
     return (0, r.jsx)(c.X6q, {
       variant: "text-sm/normal",
-      className: k.subtext,
+      className: j.subtext,
       children: l
     })
   },
@@ -193,13 +193,13 @@ let Y = Object.freeze({
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: D.Si.TIER_2,
-      children: j.intl.format(j.t.G8yQXl, {
+      children: k.intl.format(k.t.G8yQXl, {
         onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
-      className: k.header,
+      className: j.header,
       children: [(0, r.jsxs)("div", {
-        className: k.headings,
+        className: j.headings,
         children: [(0, r.jsx)(z, {
           type: l,
           isPreview: c,
@@ -239,7 +239,7 @@ let Y = Object.freeze({
           }), g && a.v2EditorEnabled && "SETTINGS" === l ? M(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
-            useSystemTheme: g ? L.KW.OFF : true
+            useSystemTheme: g ? x.KW.OFF : true
           }, h), null != t) {
           if (b && y(false), t <= O || 0 === t) return void v(0);
           v(e => e + 1)
@@ -249,9 +249,9 @@ let Y = Object.freeze({
         await (0, u.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
-          useSystemTheme: g ? L.KW.OFF : true
-        }, x.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
-      }, j = () => {
+          useSystemTheme: g ? x.KW.OFF : true
+        }, L.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
+      }, k = () => {
         if (!b) return null;
         let e = P.qt[s.Us.EASTER_EGG];
         if (null == e) return null;
@@ -262,7 +262,7 @@ let Y = Object.freeze({
           return e
         }
         return (0, r.jsxs)("div", {
-          className: k.easterEggSelection,
+          className: j.easterEggSelection,
           children: [(0, r.jsx)(R.DR, {
             preset: e,
             isSelected: E === s.Us.EASTER_EGG,
@@ -270,7 +270,7 @@ let Y = Object.freeze({
           }), (0, r.jsx)(c.Fmz, {
             importData: t,
             shouldAnimate: !T,
-            className: k.sparkles
+            className: j.sparkles
           })]
         })
       };
@@ -295,7 +295,7 @@ let Y = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), j()]
+      }, e.id)), k()]
     })
   },
   J = e => {
@@ -331,7 +331,7 @@ let Y = Object.freeze({
       delay: a
     } = i.useContext(W), {
       analyticsLocations: s
-    } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === L.KW.ON]), p = e => {
+    } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === x.KW.ON]), p = e => {
       (0, S.xs)(), K({
         isPersisted: true,
         analyticsLocations: s,
@@ -381,9 +381,9 @@ let Y = Object.freeze({
         renderCTAButtons: i,
         isCoachmark: a
       }), t && a && (0, r.jsx)(c.X6q, {
-        className: k.upsellText,
+        className: j.upsellText,
         variant: "heading-sm/semibold",
-        children: j.intl.string(j.t.POSLGR)
+        children: k.intl.string(k.t.POSLGR)
       }), (0, r.jsxs)(c.Kqy, {
         direction: "horizontal",
         wrap: true,
@@ -418,7 +418,7 @@ let Y = Object.freeze({
       children: (0, r.jsx)("div", Z(G({
         ref: s
       }, c), {
-        className: k.__invalid_container,
+        className: j.__invalid_container,
         children: n
       }))
     })

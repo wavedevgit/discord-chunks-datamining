@@ -87,8 +87,8 @@ function G(e) {
   } = e, k = f.cC.useSetting(), F = (0, I.p)(), w = l.useCallback(e => {
     if (e === L.Z.getChannelId()) return;
     let t = S.Z.getChannel(e);
-    null != t && (p.Z.can(b.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
-  }, []), z = null != s ? (0, _.F6)(s, U.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = C.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = p.Z.can(b.Plq.MANAGE_MESSAGES, s), {
+    null != t && (p.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
+  }, []), z = null != s ? (0, _.F6)(s, U.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = C.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = p.Z.can(v.Plq.MANAGE_MESSAGES, s), {
     content: W
   } = (0, g.ZP)({
     content: z,
@@ -132,7 +132,7 @@ function G(e) {
         })
       }), a.map((e, t) => {
         let n = E + t;
-        return (0, r.jsx)(v.Z, {
+        return (0, r.jsx)(b.Z, {
           ref: e => {
             d.current[n] = e
           },
@@ -171,7 +171,7 @@ let k = Chunk647438.memo(function(e) {
     isFavoritesSearch: L
   } = e, {
     offset: U,
-    totalResults: v,
+    totalResults: b,
     isSearching: y,
     showBlockedResults: k
   } = s, F = l.useCallback((e, t) => {
@@ -180,7 +180,7 @@ let k = Chunk647438.memo(function(e) {
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: C
-      }), (0, h.uL)(b.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, h.uL)(v.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [g, C]), w = l.useMemo(() => {
     let e, t = 0;
@@ -224,7 +224,7 @@ let k = Chunk647438.memo(function(e) {
       highlighter: K,
       startIndex: l,
       resultRefs: z,
-      totalResults: v,
+      totalResults: b,
       scrollTo: _,
       renderEmbeds: o,
       offset: U,
@@ -300,8 +300,8 @@ let k = Chunk647438.memo(function(e) {
       renderPageWrapper: f,
       onPageChange: m,
       offset: U,
-      totalCount: null != O ? O : v,
-      pageSize: b.vpv
+      totalCount: null != O ? O : b,
+      pageSize: v.vpv
     })]
   })
 })

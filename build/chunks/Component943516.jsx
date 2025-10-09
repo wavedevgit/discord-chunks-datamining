@@ -173,17 +173,11 @@ function q(e) {
         }
       })]
     })]
-  }) : null != p ? (0, r.jsxs)(s.xJW, {
-    title: g.intl.string(g.t.zIg9t7),
-    error: q,
-    titleClassName: f.roleHeader,
-    children: [(0, r.jsx)(s.Text, {
-      variant: "text-xs/normal",
-      color: "text-muted",
-      children: g.intl.string(g.t.OfuEkJ)
-    }), (0, r.jsx)(s.LZC, {
-      size: 8
-    }), (0, r.jsx)(m, {
+  }) : null != p ? (0, r.jsx)(s.gNt, {
+    label: g.intl.string(g.t.zIg9t7),
+    description: g.intl.string(g.t.OfuEkJ),
+    errorMessage: q,
+    children: (0, r.jsx)(m, {
       role: b,
       onRemove: () => {
         a()(null != u, "productId cannot be null"), a()(null != b, "no role attached"),
@@ -228,21 +222,14 @@ function q(e) {
             onConfirm: () => n(null)
           })
       }
-    })]
-  }) : (a()(null != t, "newRoleParams cannot be null at this point"), (0, r.jsxs)(s.xJW, {
+    })
+  }) : (a()(null != t, "newRoleParams cannot be null at this point"), (0, r.jsx)(s.gNt, {
     required: true,
-    title: g.intl.string(g.t.xZvFpK),
-    error: q,
-    titleClassName: f.roleHeader,
-    children: [(0, r.jsx)(s.Text, {
-      variant: "text-xs/normal",
-      color: "text-muted",
-      children: g.intl.string(g.t.CllC5u)
-    }), (0, r.jsx)(s.LZC, {
-      size: 8
-    }), (0, r.jsx)(c.Z, {
+    label: g.intl.string(g.t.xZvFpK),
+    errorMessage: q,
+    children: (0, r.jsx)(c.Z, {
       newRoleParams: t,
       setNewRoleParams: n
-    })]
+    })
   }))
 }

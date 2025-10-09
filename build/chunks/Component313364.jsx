@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -37,11 +37,11 @@ var Chunk951288 = require("./951288.js"),
 function Z(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([x.Z], () => x.Z.getGuild(t)), {
+  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild(t)), {
     analyticsLocations: l
-  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, a.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, s.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
-  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
+  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
@@ -56,29 +56,29 @@ function Z(e) {
   return (0, r.jsxs)(d.Gt, {
     value: l,
     children: [(0, r.jsx)("div", {
-      className: s()(w.customColumn, P.override, P.settingsColumn),
+      className: a()(w.customColumn, P.override, P.settingsColumn),
       children: (0, r.jsx)("div", {
         className: w.customContainer,
         children: (0, r.jsx)(o.w0Z, {
-          className: s()(w.customScroller, P.settingsVerticalScroller),
+          className: a()(w.customScroller, P.settingsVerticalScroller),
           orientation: "auto",
           children: (0, r.jsx)(o.w0Z, {
             className: P.settingsHorizontalScroller,
             orientation: "auto",
             children: (0, r.jsxs)("main", {
-              className: s()(w.customColumn, w.contentColumnDefault, P.override, P.settingsColumn, P.settingsContent),
-              children: [(0, r.jsx)(o.hjN, {
+              className: a()(w.customColumn, w.contentColumnDefault, P.override, P.settingsColumn, P.settingsContent),
+              children: [(0, r.jsx)("div", {
                 className: P.header,
-                children: (0, r.jsx)(o.vwX, {
-                  tag: o.RB0.H1,
+                children: (0, r.jsx)(o.X6q, {
+                  variant: "heading-lg/semibold",
                   children: T.intl.string(T.t["S40K6+"])
                 })
-              }, "header"), (0, r.jsx)(o.hjN, {
+              }, "header"), (0, r.jsx)("div", {
                 children: (0, r.jsxs)("div", {
                   className: P.tableContainer,
-                  children: [(0, r.jsx)(v.Z, {
+                  children: [(0, r.jsx)(_.Z, {
                     guild: n
-                  }), (0, r.jsx)(_.Z, {
+                  }), (0, r.jsx)(v.Z, {
                     guild: n
                   }), A ? (0, r.jsxs)("div", {
                     className: P.mainTableContainer,

@@ -2,8 +2,8 @@
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  C: () => _,
-  Z: () => v
+  C: () => v,
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk581050 = require("./581050.js"),
   Chunk169400 = require("./169400.js");
 
-function _(e) {
+function v(e) {
   let {
     onboardingMarketing: t,
     onboardingMarketingError: n
@@ -32,24 +32,24 @@ function _(e) {
       children: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.izJ, {
+      children: [(0, r.jsx)(a.izJ, {
         className: j.sectionDivider
       }), t]
     })
   }, l = (0, r.jsx)(i, {
     children: (0, r.jsx)(h.Z, {})
-  }, b.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
+  }, b.q.HOW_IT_WORKS), s = (0, r.jsx)(i, {
     children: (0, r.jsx)(p.Z, {})
   }, b.q.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
-    children: [l, a]
+    children: [l, s]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
         case b.q.HOW_IT_WORKS:
           return l;
         case b.q.BENEFITS:
-          return a;
+          return s;
         case b.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
             children: (0, r.jsx)(f.Z, {
@@ -61,7 +61,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, u.Z)(t), {
@@ -69,13 +69,13 @@ function v(e) {
     eligibilityError: f,
     eligibility: h
   } = n, b = (0, c.j)(h), {
-    isLoading: v,
+    isLoading: _,
     error: C,
     creatorMonetizationOnboardingMarketing: O
   } = (0, d.Z)(t.id);
   return (i.useEffect(() => {
     (0, o.k)(t.id)
-  }, [t.id]), (0, a.Z)({
+  }, [t.id]), (0, s.Z)({
     type: l.ImpressionTypes.PANE,
     name: l.ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING,
     properties: {
@@ -86,7 +86,7 @@ function v(e) {
     }
   }, {
     disableTrack: null == t.id || null == h
-  }), p || null == h || v) ? (0, r.jsx)(s.$jN, {}) : h.actionRequired ? (0, r.jsx)(x.Z, {
+  }), p || null == h || _) ? (0, r.jsx)(a.$jN, {}) : h.actionRequired ? (0, r.jsx)(x.Z, {
     guild: t
   }) : null != f ? (0, r.jsx)(g.Z, {
     children: f.message
@@ -95,7 +95,7 @@ function v(e) {
     children: [(0, r.jsx)(m.Z, {
       guild: t,
       monetizationEligibility: n
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       onboardingMarketing: O,
       onboardingMarketingError: C
     })]

@@ -2,7 +2,7 @@
 /** chunk id: 549817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./472816.js"), require("./794429.js"), require("./415506.js"), require("./388685.js"), require("./997841.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -129,7 +129,7 @@ function D(e, t, n) {
     removedRoleIds: n
   })
 }
-let L = {
+let x = {
   selectOption(e, t, n, r) {
     let a = O.Z.getOnboardingPrompt(t);
     if (null == a) return;
@@ -173,8 +173,8 @@ let L = {
       }), (0, u.og)(e, Array.from(i));
       let t = h.default.getCurrentUser();
       if (null != t) {
-        var L, x;
-        let n = null != (x = null == (L = p.ZP.getMember(e, t.id)) ? true : L.flags) ? x : 0;
+        var x, L;
+        let n = null != (L = null == (x = p.ZP.getMember(e, t.id)) ? true : x.flags) ? L : 0;
         (0, u.aq)(e, {
           memberOptions: {
             flags: (0, g.mB)(n, S.q.COMPLETED_ONBOARDING, true)

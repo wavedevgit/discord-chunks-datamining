@@ -31,8 +31,8 @@ let o = {
       dragCoefficientValue: O = 1.66,
       onAnimationEnd: v
     } = e, [P, j] = r.useState(null), {
-      confettiCanvas: S
-    } = r.useContext(a.h), x = (0, l.uR)(null != b ? b : S, P), [w, _] = r.useState(false);
+      confettiCanvas: x
+    } = r.useContext(a.h), S = (0, l.uR)(null != b ? b : x, P), [w, _] = r.useState(false);
     r.useEffect(() => {
       w && (null == v || v())
     });
@@ -46,7 +46,7 @@ let o = {
       if (null == t) return;
       let e = Array(null != d ? d : 4).fill(0);
       return e = e.map((n, i) => setTimeout(() => {
-        x.createMultipleConfetti(function(e, t, n, i, r) {
+        S.createMultipleConfetti(function(e, t, n, i, r) {
           var l, a;
           let c = arguments.length > 5 && true !== arguments[5] ? arguments[5] : o,
             d = arguments.length > 6 && true !== arguments[6] ? arguments[6] : 1.66,
@@ -123,7 +123,7 @@ let o = {
       }, 60 * i)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [x, t, d, p, f, m, g, h, y, O, v]), (0, i.jsx)(l.Ji, {
+    }, [S, t, d, p, f, m, g, h, y, O, v]), (0, i.jsx)(l.Ji, {
       ref: j,
       sprites: null != I ? I : s.CA,
       colors: null != n ? n : s.Br,

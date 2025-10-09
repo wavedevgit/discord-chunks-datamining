@@ -2,18 +2,18 @@
 /** chunk id: 382574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk73880 = require("./73880.jsx"),
   Chunk137158 = require("./137158.jsx"),
   Chunk388032 = require("./388032.jsx");
-let a = function(e) {
+let s = function(e) {
   let {
     formField: t,
     index: n,
-    isDragEnabled: a,
+    isDragEnabled: s,
     isDropHovered: o,
     onDrop: c,
     onEdit: d,
@@ -28,7 +28,7 @@ let a = function(e) {
   return (0, r.jsx)(l.Z, {
     field: t,
     index: n,
-    isDragEnabled: a,
+    isDragEnabled: s,
     isDropHovered: o,
     onDrop: c,
     onEdit: d,
@@ -38,7 +38,7 @@ let a = function(e) {
     actionsLocation: m,
     fieldStyle: p,
     children: (0, r.jsx)(i.Q8, {
-      placeholder: null != h ? h : s.intl.string(s.t["Sqn+Wl"]),
+      placeholder: null != h ? h : a.intl.string(a.t["Sqn+Wl"]),
       disabled: true
     })
   })

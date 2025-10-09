@@ -16,11 +16,12 @@ let u = () => (0, Chunk951288.jsxs)("div", {
   className: Chunk809863.previewPanel,
   children: [(0, Chunk951288.jsx)(Chunk11075.a, {
     className: Chunk809863.previewSection
-  }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    title: "Shop Overrides",
-    tag: "h1",
+  }), (0, Chunk951288.jsxs)("div", {
     className: Chunk809863.previewSection,
-    children: [(0, Chunk951288.jsx)(Chunk812381.a, {}), (0, Chunk951288.jsx)(Chunk511010.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      variant: "heading-md/semibold",
+      children: "Shop Overrides"
+    }), (0, Chunk951288.jsx)(Chunk812381.a, {}), (0, Chunk951288.jsx)(Chunk511010.Z, {
       className: Chunk809863.divider
     }), (0, Chunk951288.jsx)(Chunk484486.Z, {}), (0, Chunk951288.jsx)(Chunk511010.Z, {
       className: Chunk809863.divider

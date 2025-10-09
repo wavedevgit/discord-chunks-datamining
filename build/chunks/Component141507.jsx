@@ -45,11 +45,11 @@ let w = e => {
     }) : null
   },
   D = Chunk647438.memo(function(e) {
-    let t, D, L, {
-        className: x,
+    let t, D, x, {
+        className: L,
         emojiGrid: M,
-        guildId: j,
-        pickerIntention: k,
+        guildId: k,
+        pickerIntention: j,
         channel: U
       } = e,
       {
@@ -94,11 +94,11 @@ let w = e => {
       V = (0, a.e7)([E.Z], () => E.Z.isFocused()),
       H = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       Y = m.Yk.useSetting(),
-      W = (0, v.C1)(j, P(t) ? t : null),
+      W = (0, v.C1)(k, P(t) ? t : null),
       K = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: z
-      } = (0, I.Z)(j, k),
+      } = (0, I.Z)(k, j),
       q = (null == Z ? true : Z.type) === S.ld.EMOJI ? Z.subCategory : A.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
@@ -107,7 +107,7 @@ let w = e => {
             emoji: t,
             subCategory: q,
             position: Z.columnIndex + 1,
-            newlyAddedHighlight: q === A.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(j, t.id)
+            newlyAddedHighlight: q === A.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(k, t.id)
           }))
         }
       }), null == t) return null;
@@ -154,19 +154,19 @@ let w = e => {
       guild: F,
       shouldAnimate: !H && V
     }) : null;
-    L = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDA"]) : C.intl.string(C.t.NZI2Zm) : (0, y.nY)(t);
+    x = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDA"]) : C.intl.string(C.t.NZI2Zm) : (0, y.nY)(t);
     let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : w({
       inspectedEmoji: t,
       channel: U,
-      guildId: j,
-      intention: k,
+      guildId: k,
+      intention: j,
       guild: F
     });
     return (0, r.jsx)(p.Z, {
-      className: x,
+      className: L,
       graphicPrimary: D,
       graphicSecondary: J,
-      titlePrimary: L,
+      titlePrimary: x,
       titleSecondary: $,
       isFavorite: W,
       emojiSubCategory: q

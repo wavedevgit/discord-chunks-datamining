@@ -2,12 +2,12 @@
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -21,8 +21,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-let _ = function(e) {
-  var t, l, _, v, C;
+let v = function(e) {
+  var t, l, v, _, C;
   let {
     guildId: O,
     action: y,
@@ -32,7 +32,7 @@ let _ = function(e) {
     onDragStart: S,
     onDragComplete: T,
     onDragReset: P
-  } = e, w = (0, a.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, a.e7)([h.Z], () => h.Z.getGuild(O)), {
+  } = e, w = (0, s.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(O)), {
     customEmoji: R,
     unicodeEmoji: D
   } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = x.ZP.getNewMemberActionIconURL({
@@ -99,7 +99,7 @@ let _ = function(e) {
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,
     children: [(0, r.jsxs)("div", {
-      className: s()(j.actionItem, {
+      className: a()(j.actionItem, {
         [j.dropIndicatorBefore]: null != M && N < M,
         [j.dropIndicatorAfter]: null != M && N > M,
         [j.actionItemError]: null != k
@@ -129,8 +129,8 @@ let _ = function(e) {
       }) : (0, r.jsx)("div", {
         className: j.actionItemEmojiWrapper,
         children: (0, r.jsx)(p.Z, {
-          emojiId: null == (_ = y.emoji) ? true : _.id,
-          emojiName: null == (v = y.emoji) ? true : v.name,
+          emojiId: null == (v = y.emoji) ? true : v.id,
+          emojiName: null == (_ = y.emoji) ? true : _.name,
           size: p.R.MEDIUM,
           defaultComponent: (0, r.jsx)(H, {})
         })

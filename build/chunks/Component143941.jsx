@@ -64,10 +64,10 @@ let P = e => {
     selectedVariantIndex: S
   } = e, [A, N] = (0, p.US)([s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), I = A === s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: T
-  } = (0, u.ZP)(), w = m.default.getCurrentUser(), L = null != w ? f.Z.getFirstWishlistId(w.id) : null, k = l.useMemo(() => {
+  } = (0, u.ZP)(), L = m.default.getCurrentUser(), w = null != L ? f.Z.getFirstWishlistId(L.id) : null, k = l.useMemo(() => {
     var e;
     return t.type === o.Z.VARIANTS_GROUP && null != S && (null == (e = t.variants) ? true : e[S]) != null ? t.variants[S] : t
-  }, [t, S]), R = k.skuId, D = (0, y.n)(L, R), M = l.useRef(null), [F, U] = l.useState(null);
+  }, [t, S]), R = k.skuId, D = (0, y.n)(w, R), M = l.useRef(null), [F, U] = l.useState(null);
   l.useEffect(() => {
     U(null)
   }, [R]);
@@ -82,10 +82,10 @@ let P = e => {
     G = (0, O.x6)(k),
     H = (0, O.G1)(k),
     K = l.useCallback(async e => {
-      if (e.stopPropagation(), Z && null != L) {
+      if (e.stopPropagation(), Z && null != w) {
         U(false);
         try {
-          await b.Z.removeSkuFromWishlist(L, R, T), U(null)
+          await b.Z.removeSkuFromWishlist(w, R, T), U(null)
         } catch (e) {
           U(null), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t.F8FvU1), c.ToastType.FAILURE)), c.uvj.announce(h.intl.string(h.t.F8FvU1))
         }
@@ -104,8 +104,8 @@ let P = e => {
           U(null), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t.F8FvU1), c.ToastType.FAILURE)), c.uvj.announce(h.intl.string(h.t.F8FvU1))
         }
       }
-    }, [T, Z, R, k, I, N, L, U]);
-  if (!C && !Z || null == w || B) return null;
+    }, [T, Z, R, k, I, N, w, U]);
+  if (!C && !Z || null == L || B) return null;
   if (z || G || H) {
     let e = h.intl.string(h.t["50TX9v"]);
     return G ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.ua7, {
@@ -125,8 +125,8 @@ let P = e => {
       }))
     })
   }
-  let X = Z ? h.intl.string(h.t.yr9TTU) : h.intl.string(h.t["8DkMER"]),
-    q = I ? (0, r.jsxs)(r.Fragment, {
+  let q = Z ? h.intl.string(h.t.yr9TTU) : h.intl.string(h.t["8DkMER"]),
+    X = I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
         children: h.intl.string(h.t["47Rhc3"])
@@ -134,16 +134,16 @@ let P = e => {
         variant: "text-sm/medium",
         children: h.intl.string(h.t.PXjA0d)
       })]
-    }) : X;
+    }) : q;
   return (0, r.jsx)(c.ua7, {
     "data-migration-pending": true,
-    text: q,
-    "aria-label": X,
+    text: X,
+    "aria-label": q,
     children: e => (0, r.jsx)(c.P3F, E(x({}, e), {
       className: a()(v.wishlistButton, _ && v.withHover, P),
       innerRef: M,
       onClick: K,
-      "aria-label": X,
+      "aria-label": q,
       children: (0, r.jsx)(W, {
         colorClass: V,
         size: "custom",

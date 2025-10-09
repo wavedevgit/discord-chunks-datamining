@@ -70,25 +70,25 @@ function b(e) {
     className: n
   } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), u = i.useCallback(() => {
     let e = c ? g.Un.ONBOARDING_DEFAULT : g.Un.ONBOARDING_ADVANCED;
-    c ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
+    c ? (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, f(p({
       header: m.intl.string(m.t["49+ONj"]),
       confirmText: m.intl.string(m.t.R9GHyc),
       cancelText: m.intl.string(m.t["ETE/oK"]),
-      confirmButtonColor: s.zx.Colors.BRAND,
+      confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: m.intl.string(m.t.TLkoOj)
       })
-    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
+    }))) : (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, f(p({
       header: m.intl.string(m.t.YB9xUF),
       confirmText: m.intl.string(m.t.ts6u6u),
       cancelText: m.intl.string(m.t["ETE/oK"]),
-      confirmButtonColor: s.zx.Colors.BRAND,
+      confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: m.intl.string(m.t.BcGGVl)
       })
@@ -96,9 +96,9 @@ function b(e) {
   }, [t, c]);
   return (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(a.eee, {
+    children: (0, r.jsx)(s.eee, {
       onClick: u,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-link",
         children: c ? m.intl.string(m.t.OmpxW1) : m.intl.string(m.t.ozsQBA)

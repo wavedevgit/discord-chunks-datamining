@@ -101,7 +101,7 @@ function er(e, t) {
 }
 
 function ei(e) {
-  let t = j.Z.toURLSafe(e);
+  let t = k.Z.toURLSafe(e);
   return null == t ? e : (t.searchParams.set("format", "png"), t.toString())
 }
 
@@ -132,9 +132,9 @@ function ea(e) {
     onVolumeChange: N,
     onMute: P,
     href: D,
-    placeholder: L,
+    placeholder: x,
     placeholderVersion: M,
-    sourceMetadata: j
+    sourceMetadata: k
   } = e, [U, G] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => G(false), [G]), H = e => {
     e.preventDefault(), e.stopPropagation(), null == I || I(false), G(true), Z && (w.S.dispatch(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
   };
@@ -146,7 +146,7 @@ function ea(e) {
     height: W
   } = u;
   null != d && (Y = d.width, W = d.height);
-  let K = (0, x.Tj)({
+  let K = (0, L.Tj)({
     width: Y,
     height: W,
     maxWidth: l,
@@ -159,7 +159,7 @@ function ea(e) {
     children: m({
       poster: z,
       src: d.proxyURL,
-      placeholder: L,
+      placeholder: x,
       placeholderVersion: M,
       width: Y,
       height: W,
@@ -177,7 +177,7 @@ function ea(e) {
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
-      sourceMetadata: j
+      sourceMetadata: k
     })
   });
   if (U && null != d) {
@@ -214,7 +214,7 @@ function ea(e) {
       children: (0, i.jsx)("div", {
         className: s()(V.embedVideo, o),
         style: a,
-        children: (0, i.jsx)(k.ZP, {
+        children: (0, i.jsx)(j.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -243,10 +243,10 @@ function ea(e) {
       responsive: p,
       containerClassName: V.embedVideoImageComponent,
       imageClassName: V.embedVideoImageComponentInner,
-      placeholder: L,
+      placeholder: x,
       placeholderVersion: M,
       onClick: E && null != d ? H : null,
-      sourceMetadata: j,
+      sourceMetadata: k,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: V.embedVideoActions,
@@ -256,8 +256,8 @@ function ea(e) {
           onPlay: null != d ? H : null,
           externalURL: D,
           renderLinkComponent: g,
-          messageId: null == j || null == (t = j.message) ? true : t.id,
-          channelId: null == j || null == (n = j.message) ? true : n.channel_id
+          messageId: null == k || null == (t = k.message) ? true : t.id,
+          channelId: null == k || null == (n = k.message) ? true : n.channel_id
         }) : null
       })
     })]
@@ -941,7 +941,7 @@ class es extends(r = Chunk647438.PureComponent) {
     if (null == l) return;
     let {
       width: c
-    } = (0, x.Tj)({
+    } = (0, L.Tj)({
       width: l.width,
       height: l.height,
       maxWidth: o,
@@ -953,7 +953,7 @@ class es extends(r = Chunk647438.PureComponent) {
       var u, d, f, _;
       let {
         width: e
-      } = (0, x.Tj)({
+      } = (0, L.Tj)({
         width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
         height: null != (_ = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? _ : 0,
         maxWidth: o,
@@ -1030,7 +1030,7 @@ class es extends(r = Chunk647438.PureComponent) {
           minHeight: r
         } = null != (t = this.getMinSize()) ? t : {}, {
           width: i
-        } = (0, x.Tj)({
+        } = (0, L.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: l,
@@ -1116,7 +1116,7 @@ class es extends(r = Chunk647438.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, L.vP)(this.props.embed))), W(this, "onReveal", () => {
+    }, (0, x.vP)(this.props.embed))), W(this, "onReveal", () => {
       this.setState({
         isVisible: true
       })

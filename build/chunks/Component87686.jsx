@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk747071 = require("./747071.js"),
@@ -24,53 +24,53 @@ let h = {
     let {
       className: n,
       volume: t,
-      disabled: i = false,
+      disabled: r = false,
       onChange: p
     } = e, {
-      audio: y
-    } = (0, c.p)(), [b, v] = l.useState(false), [x, j] = l.useState(h), {
+      audio: b
+    } = (0, c.p)(), [y, v] = l.useState(false), [x, j] = l.useState(h), {
       playheadPositionMs: w,
       endPositionMs: _,
-      startPositionMs: N
-    } = x, C = null != y, S = _ - N, O = S > m.YW * s.Z.Millis.SECOND;
+      startPositionMs: C
+    } = x, N = null != b, S = _ - C, O = S > m.YW * s.Z.Millis.SECOND;
     l.useEffect(() => {
-      if (null != y) return j({
+      if (null != b) return j({
         playheadPositionMs: 0,
-        endPositionMs: y.duration * s.Z.Millis.SECOND,
+        endPositionMs: b.duration * s.Z.Millis.SECOND,
         startPositionMs: 0
       }), () => {
-        y.pause(), v(false)
+        b.pause(), v(false)
       }
-    }, [y]);
+    }, [b]);
     let E = l.useCallback(e => {
-        null != y && (y.pause(), null != e && (y.currentTime = e), v(false))
-      }, [y]),
+        null != b && (b.pause(), null != e && (b.currentTime = e), v(false))
+      }, [b]),
       P = l.useCallback(() => {
-        if (null != y) {
-          if (b) return void E();
-          w >= _ ? y.currentTime = (0, f.my)(N) : y.currentTime = (0, f.my)(w), y.volume = (0, u.Z)(t), y.play(), v(true)
+        if (null != b) {
+          if (y) return void E();
+          w >= _ ? b.currentTime = (0, f.my)(C) : b.currentTime = (0, f.my)(w), b.volume = (0, u.Z)(t), b.play(), v(true)
         }
-      }, [y, _, E, w, b, N, t]),
+      }, [b, _, E, w, y, C, t]),
       I = l.useCallback(e => {
         j(e), null == p || p({
           startMs: e.startPositionMs,
           endMs: e.endPositionMs
         })
       }, [p]),
-      Z = l.useCallback(e => {
-        null != y && (y.currentTime = e)
-      }, [y]);
+      M = l.useCallback(e => {
+        null != b && (b.currentTime = e)
+      }, [b]);
     return (0, a.jsxs)("div", {
-      className: r()(g.container, {
-        [g.initialized]: C,
-        [g.disabled]: !C || i
+      className: i()(g.container, {
+        [g.initialized]: N,
+        [g.disabled]: !N || r
       }, n),
       children: [(0, a.jsxs)("div", {
         className: g.playButtonContainer,
         children: [(0, a.jsx)(o.P3F, {
           className: g.playButton,
-          onClick: C ? P : true,
-          children: b ? (0, a.jsx)(o.wNq, {
+          onClick: N ? P : true,
+          children: y ? (0, a.jsx)(o.wNq, {
             size: "xs",
             color: "currentColor",
             className: g.playButtonIcon
@@ -89,11 +89,11 @@ let h = {
           })
         })]
       }), (0, a.jsx)(d.Z, {
-        playing: b,
-        onPlaybackChange: Z,
+        playing: y,
+        onPlaybackChange: M,
         onPausePlayback: E,
         onChangePosition: I,
-        disabled: i
+        disabled: r
       })]
     })
   })

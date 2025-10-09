@@ -19,27 +19,27 @@ let m = Chunk647438.memo(function(e) {
     volume: t,
     disabled: m
   } = e, [g, h] = l.useState(false), p = l.useRef(null), {
-    file: y,
-    audio: b,
+    file: b,
+    audio: y,
     loadAudioFromFile: v
-  } = (0, s.p)(), x = l.useMemo(() => (0, r.Z)(n.soundId), [n]);
+  } = (0, s.p)(), x = l.useMemo(() => (0, i.Z)(n.soundId), [n]);
   return l.useEffect(() => {
     null == p.current && (p.current = (0, u.XG)(x, n.name).then(v))
   }, [x, v, n.name]), (0, a.jsxs)("div", {
     className: f.previewContainer,
-    children: [(0, a.jsx)(i.P3F, {
+    children: [(0, a.jsx)(r.P3F, {
       onClick: m ? true : function() {
-        null != b && (b.paused ? (b.volume = (0, o.Z)(t), b.currentTime = 0, b.play(), h(true), b.addEventListener("ended", () => h(false), {
+        null != y && (y.paused ? (y.volume = (0, o.Z)(t), y.currentTime = 0, y.play(), h(true), y.addEventListener("ended", () => h(false), {
           once: true
-        })) : (b.pause(), h(false)))
+        })) : (y.pause(), h(false)))
       },
       className: f.playButton,
       "aria-label": g ? d.intl.string(d.t.hHBkuL) : d.intl.string(d.t.RscU7O),
-      children: g ? (0, a.jsx)(i.wNq, {
+      children: g ? (0, a.jsx)(r.wNq, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon
-      }) : (0, a.jsx)(i.o1U, {
+      }) : (0, a.jsx)(r.o1U, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon
@@ -48,8 +48,8 @@ let m = Chunk647438.memo(function(e) {
       className: f.waveformContainer,
       children: (0, a.jsx)(c.Z, {
         className: f.waveform,
-        file: y,
-        audio: b
+        file: b,
+        audio: y
       })
     })]
   })

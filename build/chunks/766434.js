@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Br: () => l,
-  Uj: () => s,
+  Uj: () => a,
   j0: () => i
 }), require("./388685.js");
 var Chunk198139 = require("./198139.js");
@@ -30,7 +30,7 @@ function l(e) {
   }
 }
 
-function s(e, t) {
+function a(e, t) {
   let n, r, i, l;
   return null != e && (n = e.amount, i = e.paymentsCount, null != t && (r = e.amount / t.amount - 1, l = e.paymentsCount - t.paymentsCount)), {
     revenue: n,

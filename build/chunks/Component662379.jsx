@@ -20,16 +20,16 @@ function u(e) {
     description: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.howItWorksCard,
+    className: s.howItWorksCard,
     children: [(0, r.jsx)("div", {
-      className: a.howItWorksImageContainer,
+      className: s.howItWorksImageContainer,
       children: (0, r.jsx)("img", {
-        className: a.howItWorksImage,
+        className: s.howItWorksImage,
         src: t,
         alt: ""
       })
     }), (0, r.jsx)("div", {
-      className: a.howItWorksDescription,
+      className: s.howItWorksDescription,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "header-primary",

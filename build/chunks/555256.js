@@ -306,17 +306,17 @@ let N = {
   },
   w = 10,
   D = false,
-  L = "",
-  x = false,
+  x = "",
+  L = false,
   M = false,
-  j = [],
-  k = e => e._config && e._config.installationMethod ? e._config.installationMethod : e._gtm ? "web-gtm" : e._segment ? "web-segment" : "web-snippet",
+  k = [],
+  j = e => e._config && e._config.installationMethod ? e._config.installationMethod : e._gtm ? "web-gtm" : e._segment ? "web-segment" : "web-snippet",
   U = e => {
     var t;
     null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (M = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
   },
   G = (e = "") => {
-    D = true, L = e
+    D = true, x = e
   };
 
 function B(e = {}) {
@@ -324,7 +324,7 @@ function B(e = {}) {
     "Content-Type": "application/json",
     "userleap-platform": "web",
     "x-ul-sdk-version": "2.34.0",
-    "x-ul-installation-method": k(e),
+    "x-ul-installation-method": j(e),
     "sprig-modules": P()
   };
   return e.envId && (t["x-ul-environment-id"] = e.envId), e.token && (t.Authorization = "Bearer " + e.token), e.userId && (t["x-ul-user-id"] = e.userId), e.visitorId && (t["x-ul-visitor-id"] = e.visitorId), e.partnerAnonymousId && (t["x-ul-anonymous-id"] = e.partnerAnonymousId), e.mobileHeadersJSON && Object.assign(t, JSON.parse(e.mobileHeadersJSON)), e.locale && (t["accept-language"] = e.locale), window.previewMode && (t["x-ul-preview-mode"] = "1"), t
@@ -338,7 +338,7 @@ let Z = async ({
   };
   {
     let e = new C(t);
-    return j.push(e), e.promise
+    return k.push(e), e.promise
   }
 }, F = async (e, t) => {
   let {
@@ -352,17 +352,17 @@ let Z = async ({
     retries: n,
     shouldDropOnRateLimit: r
   };
-  if (x && !i) return Z(o);
+  if (L && !i) return Z(o);
   let s = {
     ok: false,
     reportError: false
   };
-  if (D) return console.info(`UserLeap - ${L}`), s;
+  if (D) return console.info(`UserLeap - ${x}`), s;
   try {
     let t = await fetch(e, a);
     if (429 === t.status) {
-      if (!x && !r || i) {
-        x = true;
+      if (!L && !r || i) {
+        L = true;
         let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : w;
         return await v(1e3 * n), F(e, {
           ...a,
@@ -372,7 +372,7 @@ let Z = async ({
       }
       return Z(o)
     }
-    if (x = false, j.length && (j.map(e => {
+    if (L = false, k.length && (k.map(e => {
         let t = e.payload;
         F(t.url, {
           ...t.options,
@@ -381,7 +381,7 @@ let Z = async ({
         }).then(t => {
           e.resolveRequest(t)
         })
-      }), j = []), t.ok) {
+      }), k = []), t.ok) {
       if (249 === t.status) return G(), s;
       let n = await t.text();
       try {

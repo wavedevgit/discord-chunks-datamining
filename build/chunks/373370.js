@@ -2,8 +2,8 @@
 /** chunk id: 373370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => k,
-  DD: () => x
+  CR: () => j,
+  DD: () => L
 }), require("./953529.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -339,7 +339,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t;
   return D(y(E({}, e), {
     currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser(),
@@ -349,7 +349,7 @@ function L(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   let {
     quest: t,
     questContent: n,
@@ -359,7 +359,7 @@ function x(e) {
     questContent: n,
     sourceQuestContent: r
   }), s = (0, i.e7)([a.default], () => a.default.getCurrentUser()), l = (0, c.Jf)(t);
-  return L(y(E({}, e), {
+  return x(y(E({}, e), {
     connectedConsoleLinkOnClick: o,
     currentUser: s,
     withoutMarkdown: false,
@@ -373,16 +373,16 @@ function M(e) {
   }) ? 1 : (0, l.q8)(e) ? 2 : 3 * !!(0, l.Vl)(e)
 }
 
-function j(e) {
+function k(e) {
   return r.useMemo(() => M(e), [e])
 }
 
-function k(e) {
+function j(e) {
   let {
     quest: t,
     shortText: n = false
   } = e;
-  switch (j(t)) {
+  switch (k(t)) {
     case 0:
       if (t.config.features.includes(_.S7.CLOUD_GAMING_ACTIVITY)) return m.intl.string(m.t["+qoymJ"]);
       if (t.config.features.includes(_.S7.START_QUEST_CTA)) return m.intl.string(n ? m.t.E4kW5O : m.t["Ie9++v"]);

@@ -27,16 +27,16 @@ function f(e) {
     canManageRoles: x,
     canManageBans: b,
     canAccessMembersPage: j,
-    canViewGuildAnalytics: _,
-    isOwner: v,
+    canViewGuildAnalytics: v,
+    isOwner: _,
     isGuildAdmin: C,
     canManageGuildExpressions: O
-  } = e, y = () => (0, a.X$)({
+  } = e, y = () => (0, s.X$)({
     guild: c,
-    isOwner: v,
-    canManageGuildRoleSubscriptions: (0, a.H2)(c),
+    isOwner: _,
+    canManageGuildRoleSubscriptions: (0, s.H2)(c),
     isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
-    isGuildEligibleForRoleSubscriptions: (0, s.kT)(c.id),
+    isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
     isExpeditedMonetizationOnboardingGuild: (0, r.Rw)(c),
     isUserInCreatorMonetizationEligibleCountry: (0, r.DB)(),
     shouldRestrictUpdatingRoleSubscriptionSettings: (0, i.cu)(c.id)
@@ -95,7 +95,7 @@ function f(e) {
     section: m,
     label: u.intl.string(u.t["5tbTdX"])
   }), E.push(g(d.pNK.SAFETY, N)), E.push(g(d.pNK.MODERATION, N)), E.push(g(d.pNK.AUDIT_LOG, N)), E.push(g(d.pNK.BANS, N)), E.push(g(d.pNK.GUILD_AUTOMOD, N)));
-  let S = c.features.has(d.oNc.COMMUNITY) && _,
+  let S = c.features.has(d.oNc.COMMUNITY) && v,
     T = y();
   return (f || S || T) && (E.push({
     section: p

@@ -174,7 +174,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     channelIds: n
@@ -184,7 +184,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     mode: n
@@ -192,8 +192,8 @@ function x(e) {
   null != r && (r.mode = n)
 }
 let M = [],
-  j = [],
-  k = [];
+  k = [],
+  j = [];
 class U extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk819553.ZP, Chunk160404.Z)
@@ -208,7 +208,7 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getOnboardingResponses(e) {
     var t, n, r;
-    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : j) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : j
+    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : k) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : k
   }
   getSelectedOptions(e) {
     let t = this.getOnboardingResponses(e);
@@ -216,9 +216,9 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getOnboardingResponsesForPrompt(e, t) {
     let n = b[e];
-    if (null == n) return j;
+    if (null == n) return k;
     let r = n.prompts.find(e => e.id === t);
-    return null == r ? j : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
+    return null == r ? k : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
   }
   getEnabledOnboardingPrompts(e) {
     var t, n;
@@ -227,7 +227,7 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getDefaultChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : k
+    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : j
   }
   getEnabled(e) {
     var t, n;
@@ -275,6 +275,6 @@ let G = new U(Chunk570140.Z, {
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: R,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: R,
-  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: L,
-  GUILD_SETTINGS_ONBOARDING_SET_MODE: x
+  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,
+  GUILD_SETTINGS_ONBOARDING_SET_MODE: L
 })

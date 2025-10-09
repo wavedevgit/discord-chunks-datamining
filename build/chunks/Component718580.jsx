@@ -126,27 +126,27 @@ function N(e) {
     {
       reducedMotion: D
     } = i.useContext(d.Sfi),
-    L = i.useContext(h.Z),
-    x = C[R].impressionName,
+    x = i.useContext(h.Z),
+    L = C[R].impressionName,
     M = O(b({}, C[R].impressionProperties), {
       location_stack: N
     });
-  L({
+  x({
     type: l.ImpressionTypes.MODAL,
-    name: x,
+    name: L,
     properties: M,
     _stackContext: {
       isSlide: true
     }
   });
   let {
-    ref: j,
-    width: k = 0,
+    ref: k,
+    width: j = 0,
     height: U = 0
   } = (0, _.ZP)(R), G = b({}, T, I.springConfig, D.enabled ? {
     clamp: true
   } : null), B = (0, f.q_F)({
-    width: null != (n = I.width) ? n : k,
+    width: null != (n = I.width) ? n : j,
     height: U,
     config: G
   }, null == P ? "animate-never" : "respect-motion-settings"), Z = (0, f.Yzy)(R, {
@@ -196,7 +196,7 @@ function N(e) {
         opacity: e.value.to(e => 1 - Math.abs(e))
       };
       return (0, r.jsx)(s.animated.div, {
-        ref: t === R ? j : null,
+        ref: t === R ? k : null,
         style: b({
           position: "absolute",
           display: E,

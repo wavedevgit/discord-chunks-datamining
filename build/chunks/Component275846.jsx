@@ -2,7 +2,7 @@
 /** chunk id: 275846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => _
+  i: () => f
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,10 +11,9 @@ var Chunk49800 = require("./49800.jsx"),
   Chunk434333 = require("./434333.jsx"),
   Chunk540863 = require("./540863.jsx"),
   Chunk383838 = require("./383838.jsx"),
-  Chunk789164 = require("./789164.jsx"),
   Chunk512983 = require("./512983.jsx"),
   Chunk231338 = require("./231338.js");
-let f = {
+let d = {
     id: "formnotice",
     name: "FormNotice",
     component: function(e) {
@@ -75,9 +74,9 @@ let f = {
       }
     }
   },
-  _ = {
+  f = {
     title: "Form Components",
-    stories: [f, {
+    stories: [d, {
       id: "formitem",
       name: "FormItem",
       component: function(e) {
@@ -177,7 +176,7 @@ let f = {
                 color: "#666"
               },
               children: [e, ":"]
-            }), (0, r.jsx)(u.v, {
+            }), (0, r.jsx)(c.v, {
               tag: e,
               disabled: n,
               required: i,
@@ -211,57 +210,6 @@ let f = {
         }
       }
     }, {
-      id: "formsection",
-      name: "FormSection",
-      component: function(e) {
-        let {
-          title: t,
-          disabled: n,
-          tag: i
-        } = e;
-        return (0, r.jsxs)(c.h, {
-          title: t,
-          disabled: n,
-          tag: i,
-          children: [(0, r.jsx)(a.Text, {
-            variant: "text-md/normal",
-            children: "This is content within the form section."
-          }), (0, r.jsx)(a.oil, {
-            placeholder: "Enter text here..."
-          })]
-        })
-      },
-      controls: {
-        title: {
-          type: "text",
-          label: "Title",
-          defaultValue: "Section Title"
-        },
-        disabled: {
-          type: "boolean",
-          label: "Disabled",
-          defaultValue: false
-        },
-        tag: {
-          type: "select",
-          label: "Title Tag",
-          defaultValue: "h5",
-          options: [{
-            label: "H1",
-            value: "h1"
-          }, {
-            label: "H2",
-            value: "h2"
-          }, {
-            label: "H3",
-            value: "h3"
-          }, {
-            label: "H5",
-            value: "h5"
-          }]
-        }
-      }
-    }, {
       id: "formerrorblock",
       name: "FormErrorBlock",
       component: function(e) {
@@ -273,7 +221,7 @@ let f = {
         } = e, l = "check" === s ? a.owK : a.Mgn;
         return (0, r.jsx)(o.k, {
           backgroundColor: n,
-          onDismiss: i ? d.dG : true,
+          onDismiss: i ? u.dG : true,
           icon: l,
           children: t
         })

@@ -106,9 +106,9 @@ let eE = () => {
       subsection: Chunk526761.GA,
       analyticsLocations: module
     })
-  }, eL = () => {
-    (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
   }, ex = () => {
+    (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
+  }, eL = () => {
     (0, Chunk547972.Z)(Chunk332325.Z.CLIPS, {
       analyticsLocations: module
     })
@@ -117,9 +117,9 @@ let eE = () => {
       section: Chunk981631.oAB.APPEARANCE,
       scrollPosition: Chunk526761.h1.CUSTOM_APP_ICONS
     })
-  }, ej = () => {
-    window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.CLIPS), "_blank")
   }, ek = () => {
+    window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.CLIPS), "_blank")
+  }, ej = () => {
     eA || (0, Chunk266454.Q3)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
       dismissAction: Chunk921944.L.TAKE_ACTION
     }), eR()
@@ -154,7 +154,7 @@ let eE = () => {
       description: Chunk388032.intl.string(Chunk388032.t.Z6v86e),
       descriptionCta: eI ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0t),
-      onCtaClick: eI ? ex : ej,
+      onCtaClick: eI ? eL : ek,
       perkImage: Chunk766491
     } : {
       name: "clips",
@@ -273,7 +273,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDQ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSU"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eL,
+      onCtaClick: ex,
       perkImage: Chunk498730
     },
     specialMemberPricingSeeAllVariant: {
@@ -282,7 +282,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDQ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSU"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eL,
+      onCtaClick: ex,
       perkImage: Chunk498730
     },
     specialShopPerks: {
@@ -291,7 +291,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.chRZiY),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSU"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eL,
+      onCtaClick: ex,
       perkImage: Chunk498730
     },
     superReactions: {
@@ -409,7 +409,7 @@ let eE = () => {
       }),
       descriptionCta: eO ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.JST6jo),
       isPremiumGetCta: !eO,
-      onCtaClick: eO ? ek : true,
+      onCtaClick: eO ? ej : true,
       pillText: eA || !eO ? true : Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
       perkImage: Chunk317194.Z
     },

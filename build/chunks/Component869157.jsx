@@ -1,7 +1,7 @@
 /** Chunk was on 58511 **/
 /** chunk id: 869157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => Z
 }), require("./975844.js"), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547063 = require("./547063.js");
 
-function T(e) {
+function Z(e) {
   let {
     commandId: t,
     editPermissions: n,
@@ -94,10 +94,10 @@ function T(e) {
     let e = Object.values(c).filter(e => e.type === m.Kw.USER && !e.canRead && !O.has(e.id)).map(e => e.id);
     0 !== e.length && (u.Z.requestMembersById(l, e, false), w(t => new Set([...t, ...e])))
   }, [l, c, O, w]);
-  let T = (0, o.e7)([N.Z], () => N.Z.getApplicationId()),
-    A = (0, o.e7)([C.default], () => null == T ? true : C.default.integrations.find(e => {
+  let Z = (0, o.e7)([N.Z], () => N.Z.getApplicationId()),
+    A = (0, o.e7)([C.default], () => null == Z ? true : C.default.integrations.find(e => {
       var t;
-      return (null == (t = e.application) ? true : t.id) === T
+      return (null == (t = e.application) ? true : t.id) === Z
     })),
     D = (0, o.e7)([f.Z], () => true !== A && f.Z.canShowToggleTooltip(A.id));
   return P.length > 0 ? P.map(e => (0, i.jsx)(k, {
@@ -110,7 +110,7 @@ function T(e) {
     canShowMigrationTooltip: D,
     hasAccessToMutatePermissions: p
   }, e.id)) : (0, i.jsx)("div", {
-    className: Z.noItemsSelected,
+    className: T.noItemsSelected,
     children: (0, i.jsx)(d.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
@@ -136,9 +136,9 @@ function k(e) {
     N = !x.canWrite || !y,
     S = h.default.getId();
   y ? x.canWrite || (x.type === m.Kw.USER ? a = x.id === S ? E.intl.string(E.t["1VF/09"]) : E.intl.string(E.t.P1GnER) : x.type === m.Kw.ROLE && (a = E.intl.string(E.t.mcAijY))) : a = null != d ? E.intl.string(E.t.tybdam) : E.intl.string(E.t.z2hjk5);
-  let T = v && null != j && x.id === o.id && true !== C && !x.permission;
+  let Z = v && null != j && x.id === o.id && true !== C && !x.permission;
   r.useEffect(() => {
-    if (T) {
+    if (Z) {
       var e, t, n;
       O.default.track(I.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -171,7 +171,7 @@ function k(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }
-  }, [o.id, null == j || null == (l = j.application) ? true : l.id, T]);
+  }, [o.id, null == j || null == (l = j.application) ? true : l.id, Z]);
   let k = r.useRef(null),
     D = (0, i.jsx)(c.u, {
       text: a,
@@ -182,7 +182,7 @@ function k(e) {
         children: (0, i.jsx)(P.Z, {
           isDisabled: N,
           currentValue: x.permission,
-          onChange: T ? e => {
+          onChange: Z ? e => {
             g.Z.dismissToggleTooltip(o.id, j), u(e)
           } : u
         })
@@ -204,9 +204,9 @@ function k(e) {
       }
     });
   return (0, i.jsxs)("div", {
-    className: Z.entryItem,
+    className: T.entryItem,
     children: [(0, i.jsx)("div", {
-      className: Z.entryName,
+      className: T.entryName,
       children: (0, i.jsx)(w.Z, {
         guild: o,
         id: x.id,
@@ -215,13 +215,13 @@ function k(e) {
         lockTooltipText: a
       })
     }), (0, i.jsxs)("div", {
-      className: Z.entryActions,
+      className: T.entryActions,
       children: [(0, i.jsx)(A, {
         commandId: d,
         isSentinel: _,
         isDisabled: !y,
         onRemove: f
-      }), D, T && R]
+      }), D, Z && R]
     })]
   }, x.id)
 }
@@ -234,15 +234,15 @@ function A(e) {
     onRemove: l
   } = e;
   return r ? null : null == t && n ? null : (0, i.jsx)("div", {
-    className: Z.removeActions,
+    className: T.removeActions,
     children: (0, i.jsx)(d.P3F, {
-      className: Z.removeContainer,
+      className: T.removeContainer,
       "aria-label": E.intl.string(E.t.mT0CQE),
       onClick: l,
       children: (0, i.jsx)(d.XHJ, {
         size: "md",
         color: "currentColor",
-        className: Z.removeIcon
+        className: T.removeIcon
       })
     })
   })

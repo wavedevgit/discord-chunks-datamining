@@ -131,7 +131,7 @@ function z(e) {
     sourceQuestContent: e.sourceQuestContent,
     children: n => {
       var a, o;
-      return (0, r.jsx)(W, (a = function(e) {
+      return (0, r.jsx)(U, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -166,7 +166,7 @@ function z(e) {
   }) : null
 }
 
-function W(e) {
+function U(e) {
   var t;
   let {
     transitionState: n,
@@ -180,9 +180,9 @@ function W(e) {
   } = e, P = (0, f.Z)(() => {
     var e;
     return (null == (e = l.userStatus) ? true : e.claimedAt) != null
-  }), Z = D.r.build(l.config).rewardPlatforms, z = Z.length > 1, [W, U] = a.useState(z ? null : Z[0]), H = a.useRef(new s.qA), F = a.useRef(null), [$, Y] = a.useState(null), X = (0, i.e7)([C.Z], () => C.Z.useReducedMotion), G = (0, i.e7)([v.Z], () => v.Z.hidePersonalInformation), {
-    questStoreRewardCode: J,
-    isFetchingRewardCode: V,
+  }), Z = D.r.build(l.config).rewardPlatforms, z = Z.length > 1, [U, W] = a.useState(z ? null : Z[0]), H = a.useRef(new s.qA), F = a.useRef(null), [$, X] = a.useState(null), Y = (0, i.e7)([C.Z], () => C.Z.useReducedMotion), G = (0, i.e7)([x.Z], () => x.Z.hidePersonalInformation), {
+    questStoreRewardCode: V,
+    isFetchingRewardCode: J,
     isClaimingReward: K
   } = (0, i.cj)([N.Z], () => ({
     questStoreRewardCode: N.Z.getRewardCode(l.id),
@@ -190,21 +190,21 @@ function W(e) {
     isClaimingReward: N.Z.isClaimingReward(l.id)
   })), ee = (0, A.O5)(), et = (0, T.oo)({
     quest: l
-  }), en = true === S ? (0, j.b)(l) : J, er = z && (null == (t = l.userStatus) ? true : t.claimedAt) == null && null == en, {
+  }), en = true === S ? (0, j.b)(l) : V, er = z && (null == (t = l.userStatus) ? true : t.claimedAt) == null && null == en, {
     claimCode: ea,
     fetchCode: eo,
     hasError: el,
     setHasError: es
   } = (0, E.uL)({
     isClaimingReward: K,
-    isFetchingRewardCode: V,
+    isFetchingRewardCode: J,
     quest: l,
     questContent: c,
     requiresPlatformSelection: er,
     rewardCode: en,
-    selectedPlatformType: W,
+    selectedPlatformType: U,
     preview: S
-  }), ei = el && !K && !V;
+  }), ei = el && !K && !J;
   ! function(e) {
     let t = (0, g.Z)(e),
       n = w.default.useIsCaptchaModalOpen(),
@@ -250,13 +250,13 @@ function W(e) {
         variant: "text-sm/normal",
         color: "text-default",
         className: B.bodyCopy,
-        children: x.Z.parse(i, false, {
+        children: v.Z.parse(i, false, {
           allowLinks: true
         })
       }) : null
     }({
       quest: l,
-      selectedPlatform: W,
+      selectedPlatform: U,
       requiresPlatformSelection: er,
       rewardCode: en,
       hasTieredRewardCodes: et
@@ -266,51 +266,48 @@ function W(e) {
       value: e
     })), [Z]),
     em = null;
-  er && (em = (0, r.jsxs)(p.xJW, {
-    title: M.intl.string(M.t.vVcTtL),
-    children: [(0, r.jsx)(p.PhF, {
-      placeholder: M.intl.string(M.t.EMrUHR),
-      options: ep,
-      select: e => {
-        es(false), U(e)
-      },
-      isSelected: e => e === W,
-      serialize: e => (0, T.t2)(e),
-      className: ei ? B.errorInput : "",
-      isDisabled: K,
-      renderLeading: e => (function(e) {
-        switch (e) {
-          case R.y$.CROSS_PLATFORM:
-            return (0, r.jsx)(p.Che, {
-              className: B.platformSelectionOptionIcon
-            });
-          case R.y$.PC:
-            return (0, r.jsx)(p.pzj, {
-              className: B.platformSelectionOptionIcon
-            });
-          case R.y$.PLAYSTATION:
-            return (0, r.jsx)(p.Tsp, {
-              className: B.platformSelectionOptionIcon
-            });
-          case R.y$.SWITCH:
-            return (0, r.jsx)(p.aPH, {
-              className: B.platformSelectionOptionIcon
-            });
-          case R.y$.XBOX:
-            return (0, r.jsx)(p.Mko, {
-              className: B.platformSelectionOptionIcon
-            })
-        }
-      })(e.value)
-    }), ei ? (0, r.jsx)(p.pdY, {
-      error: M.intl.string(M.t.rbZBMT)
-    }) : null]
+  er && (em = (0, r.jsx)(p.PhF, {
+    label: M.intl.string(M.t.vVcTtL),
+    errorMessage: ei ? M.intl.string(M.t.rbZBMT) : true,
+    placeholder: M.intl.string(M.t.EMrUHR),
+    options: ep,
+    select: e => {
+      es(false), W(e)
+    },
+    isSelected: e => e === U,
+    serialize: e => (0, T.t2)(e),
+    className: ei ? B.errorInput : "",
+    isDisabled: K,
+    renderLeading: e => (function(e) {
+      switch (e) {
+        case R.y$.CROSS_PLATFORM:
+          return (0, r.jsx)(p.Che, {
+            className: B.platformSelectionOptionIcon
+          });
+        case R.y$.PC:
+          return (0, r.jsx)(p.pzj, {
+            className: B.platformSelectionOptionIcon
+          });
+        case R.y$.PLAYSTATION:
+          return (0, r.jsx)(p.Tsp, {
+            className: B.platformSelectionOptionIcon
+          });
+        case R.y$.SWITCH:
+          return (0, r.jsx)(p.aPH, {
+            className: B.platformSelectionOptionIcon
+          });
+        case R.y$.XBOX:
+          return (0, r.jsx)(p.Mko, {
+            className: B.platformSelectionOptionIcon
+          })
+      }
+    })(e.value)
   }));
-  let ef = null == en && (V || K),
+  let ef = null == en && (J || K),
     eb = ef && !er ? (0, r.jsx)(p.$jN, {}) : null,
     eg = null;
-  null != en ? eg = (0, r.jsx)(p.xJW, {
-    title: M.intl.string(M.t.srzsU1),
+  null != en ? eg = (0, r.jsx)(p.gNt, {
+    label: M.intl.string(M.t.srzsU1),
     children: (0, r.jsx)(m.Z, {
       value: G ? M.intl.string(M.t["0n2u0t"]) : en.code,
       delay: 1e3,
@@ -347,21 +344,21 @@ function W(e) {
       questContent: c,
       questContentPosition: d,
       requiresPlatformSelection: er,
-      selectedPlatformType: W,
+      selectedPlatformType: U,
       redemptionLink: eC,
       sourceQuestContent: I
     }),
     ey = er && K,
-    ej = !ey && (er && null == W || ef),
-    ex = null != eC && "" !== eC,
-    ev = M.intl.string(M.t["23SS+/"]);
-  er ? ev = M.intl.string(M.t.SLZMi4) : !er && ei ? ev = M.intl.string(M.t.gNJHHh) : ex && (ev = M.intl.string(M.t["+zx47e"]));
-  let eO = !X && null != en && !P && !ei,
+    ej = !ey && (er && null == U || ef),
+    ev = null != eC && "" !== eC,
+    ex = M.intl.string(M.t["23SS+/"]);
+  er ? ex = M.intl.string(M.t.SLZMi4) : !er && ei ? ex = M.intl.string(M.t.gNJHHh) : ev && (ex = M.intl.string(M.t["+zx47e"]));
+  let eO = !Y && null != en && !P && !ei,
     eS = null != eb && et,
     eA = (0, _.Gd)(l.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: Y,
+      ref: X,
       className: B.confettiCanvas,
       environment: H.current
     }), (0, r.jsx)("div", {
@@ -407,7 +404,7 @@ function W(e) {
                 variant: "text-md/normal",
                 color: "text-default",
                 className: B.cosponsorRedemptionInstructions,
-                children: x.Z.parse(l.config.cosponsorMetadata.redemptionInstructions, false, {
+                children: v.Z.parse(l.config.cosponsorMetadata.redemptionInstructions, false, {
                   allowLinks: true
                 })
               })]
@@ -417,7 +414,7 @@ function W(e) {
           "data-migration-pending": true,
           children: (0, r.jsx)(p.zxk, {
             variant: "primary",
-            text: ev,
+            text: ex,
             onClick: ew,
             loading: ey,
             disabled: ej

@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       o = Object.keys(n);
@@ -59,11 +59,11 @@ function m(e) {
       report_id: t,
       report_type: m
     })
-  }, [t, m]), (0, o.jsx)(l.Z, p({
+  }, [t, m]), (0, o.jsx)(l.Z, s({
     modalType: "in_app_report",
-    header: d.intl.string(d.t.MP5lDg),
-    body: d.intl.string(d.t["7Ct0Dg"]),
-    problemTitle: d.intl.string(d.t.FJmoxM),
+    header: p.intl.string(p.t.MP5lDg),
+    body: p.intl.string(p.t["7Ct0Dg"]),
+    problemTitle: p.intl.string(p.t.FJmoxM),
     problems: (0, _.Z)(),
     freeformNeededProblems: f,
     onSubmit: function(e) {
@@ -75,7 +75,7 @@ function m(e) {
         feedback: b
       } = e;
       _ && (0, a.Uv)({
-        feedbackType: s.nw.IN_APP_REPORTS,
+        feedbackType: d.nw.IN_APP_REPORTS,
         location: "InAppReportsFeedbackModal"
       }), (0, u.Z)({
         rating: l,
@@ -88,8 +88,8 @@ function m(e) {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
-        return t => (0, o.jsx)(e, p({
-          body: d.intl.string(d.t["d9+vQ0"])
+        return t => (0, o.jsx)(e, s({
+          body: p.intl.string(p.t["d9+vQ0"])
         }, t))
       })
     },

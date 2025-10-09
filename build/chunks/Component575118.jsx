@@ -2,7 +2,6 @@
 /** chunk id: 575118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => b,
   x: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -176,7 +175,7 @@ function I(e) {
     variant: "text-md/normal",
     color: "text-secondary",
     children: l
-  }), D = null != n ? R : P, L = (0, r.jsx)("header", {
+  }), D = null != n ? R : P, x = (0, r.jsx)("header", {
     className: o()(m.section, m.header, {
       [m.headerCentered]: g
     }),
@@ -201,8 +200,8 @@ function I(e) {
   return A ? (0, r.jsx)(c.$, {
     color: t,
     className: m.headerGradient,
-    children: L
-  }) : L
+    children: x
+  }) : x
 }
 
 function T(e) {

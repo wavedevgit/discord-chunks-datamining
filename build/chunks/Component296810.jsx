@@ -2,50 +2,49 @@
 /** chunk id: 296810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk34747 = require("./34747.js");
 
-function u(e) {
+function c(e) {
   let {
     children: t,
     className: n,
     layoutClassName: i,
-    profilePreview: u,
-    profilePreviewTitle: d,
-    nameplatePreview: f
-  } = e, _ = () => null != f ? (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Z, {
-      title: null != d ? d : l.intl.string(l.t.Zb06yM),
+    profilePreview: c,
+    profilePreviewTitle: u,
+    nameplatePreview: d
+  } = e, f = () => null != d ? (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(o.Z, {
+      title: null != u ? u : s.intl.string(s.t.Zb06yM),
       hideDivider: true,
-      className: c.preview,
-      children: u
-    }), null != f ? (0, r.jsx)(s.Z, {
-      title: l.intl.string(l.t["7KRt6e"]),
-      className: c.preview,
+      className: l.preview,
+      children: c
+    }), null != d ? (0, r.jsx)(o.Z, {
+      title: s.intl.string(s.t["7KRt6e"]),
+      className: l.preview,
       hideDivider: true,
-      children: f
+      children: d
     }) : null]
-  }) : (0, r.jsx)(s.Z, {
-    title: null != d ? d : l.intl.string(l.t.Zb06yM),
+  }) : (0, r.jsx)(o.Z, {
+    title: null != u ? u : s.intl.string(s.t.Zb06yM),
     hideDivider: true,
-    className: c.preview,
-    children: u
+    className: l.preview,
+    children: c
   });
   return (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(o.hjN, {
-      className: c.profileCustomizationSection,
+    children: (0, r.jsx)("div", {
+      className: l.profileCustomizationSection,
       children: (0, r.jsxs)("div", {
-        className: a()(c.baseLayout, i),
-        children: [t, _()]
+        className: a()(l.baseLayout, i),
+        children: [t, f()]
       })
     })
   })

@@ -32,8 +32,8 @@ function d(e) {
     dynamicDataBinding: S,
     listenOnDocumentBody: A,
     eventCapture: C
-  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), L = i.useRef(null), {
-    rive: x,
+  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), x = i.useRef(null), {
+    rive: L,
     RiveComponent: M
   } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
@@ -51,58 +51,58 @@ function d(e) {
     eventCapture: C
   });
   i.useImperativeHandle(O, () => ({
-    play: () => null == x ? true : x.play(),
-    pause: () => null == x ? true : x.pause(),
-    stop: () => null == x ? true : x.stop()
-  }), [x]), f({
-    rive: x,
+    play: () => null == L ? true : L.play(),
+    pause: () => null == L ? true : L.pause(),
+    stop: () => null == L ? true : L.stop()
+  }), [L]), f({
+    rive: L,
     artboard: b,
     artboardProperties: v,
     dataBinding: I,
     dynamicDataBinding: S
   }), i.useEffect(() => {
-    if (null != x && "short-loop" === y && N.reducedMotion.enabled) {
+    if (null != L && "short-loop" === y && N.reducedMotion.enabled) {
       let e = () => {
-          x.isPlaying && (L.current = setTimeout(() => {
-            x.pause()
+          L.isPlaying && (x.current = setTimeout(() => {
+            L.pause()
           }, 5e3))
         },
         t = () => {
-          clearTimeout(L.current)
+          clearTimeout(x.current)
         };
-      return x.on(o.EventType.Play, e), x.on(o.EventType.Pause, t), x.on(o.EventType.Stop, t), () => {
-        x.off(o.EventType.Play, e), x.off(o.EventType.Pause, t), x.off(o.EventType.Stop, t)
+      return L.on(o.EventType.Play, e), L.on(o.EventType.Pause, t), L.on(o.EventType.Stop, t), () => {
+        L.off(o.EventType.Play, e), L.off(o.EventType.Pause, t), L.off(o.EventType.Stop, t)
       }
     }
-  }, [x, y, N.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != x && "layout" === h && (x.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      x.resizeDrawingSurfaceToCanvas()
+  }, [L, y, N.reducedMotion.enabled]), i.useLayoutEffect(() => {
+    null != L && "layout" === h && (L.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
+      L.resizeDrawingSurfaceToCanvas()
     }, 100))
-  }, [x, h]), i.useEffect(() => {
-    null != x && null == w && (D(x.stateMachineNames), x.reset({
-      stateMachines: x.stateMachineNames,
+  }, [L, h]), i.useEffect(() => {
+    null != L && null == w && (D(L.stateMachineNames), L.reset({
+      stateMachines: L.stateMachineNames,
       autoplay: _,
       artboard: b,
       autoBind: true
-    }), x.setupRiveListeners())
-  }, [x, _, w, b]);
-  let j = i.useRef(0);
+    }), L.setupRiveListeners())
+  }, [L, _, w, b]);
+  let k = i.useRef(0);
   i.useEffect(() => {
-    if (null == x) return;
-    x.play();
+    if (null == L) return;
+    L.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (j.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && x.isPlaying && x.pause(), x.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (k.current = t.data, t.data > 0 && ("halt" === y && N.reducedMotion.enabled && L.isPlaying && L.pause(), L.off(o.EventType.Advance, e)))
     };
-    return x.on(o.EventType.Advance, e), () => {
-      x.off(o.EventType.Advance, e)
+    return L.on(o.EventType.Advance, e), () => {
+      L.off(o.EventType.Advance, e)
     }
-  }, [x, N.reducedMotion.enabled, y]);
-  let k = i.useRef(false);
+  }, [L, N.reducedMotion.enabled, y]);
+  let j = i.useRef(false);
   return i.useEffect(() => {
-    if (null != x) return !P && k.current && x.isPlaying && j.current > 0 ? x.pause() : P && !x.isPlaying && k.current && x.play(), () => {
-      null != x && P && (k.current = null != x.frameRequestId)
+    if (null != L) return !P && j.current && L.isPlaying && k.current > 0 ? L.pause() : P && !L.isPlaying && j.current && L.play(), () => {
+      null != L && P && (j.current = null != L.frameRequestId)
     }
-  }, [x, P]), (0, r.jsx)(M, {
+  }, [L, P]), (0, r.jsx)(M, {
     className: p,
     style: g
   })

@@ -19,8 +19,8 @@ function u(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: l,
-    onComplete: s,
-    showUpsellHeader: a = true,
+    onComplete: a,
+    showUpsellHeader: s = true,
     analyticsLocation: o,
     analyticsLocations: c
   } = e;
@@ -47,9 +47,9 @@ function u(e) {
       return e
     }({
       maxFileSizeBytes: l,
-      onComplete: s,
+      onComplete: a,
       uploadType: t,
-      showUpsellHeader: a,
+      showUpsellHeader: s,
       analyticsLocation: o,
       analyticsLocations: c
     }, n))
@@ -62,7 +62,7 @@ function g(e) {
     analyticsLocations: n,
     analyticsSection: r,
     analyticsObject: i,
-    perks: s,
+    perks: a,
     targetPremiumGuildTier: c
   } = e;
   (0, l.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
@@ -73,7 +73,7 @@ function g(e) {
     },
     guild_id: t.id,
     location_stack: n
-  }), (0, a.Z)({
+  }), (0, s.Z)({
     analyticsLocations: n,
     analyticsSourceLocation: {
       section: r,
@@ -81,7 +81,7 @@ function g(e) {
       page: d.ZY5.GUILD_SETTINGS
     },
     guild: t,
-    perks: s
+    perks: a
   })
 }
 
@@ -95,7 +95,7 @@ function m(e, t, n, r) {
   if (null != i && null != n)
     if ("image/gif" !== i || e.features.has(d.oNc.ANIMATED_BANNER)) {
       if (!e.features.has(d.oNc.BANNER)) {
-        l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, s.c)({
+        l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: l,
@@ -105,7 +105,7 @@ function m(e, t, n, r) {
         return
       }
     } else {
-      l.object = d.qAy.GIF_CROPPING_MODAL, (0, s.c)({
+      l.object = d.qAy.GIF_CROPPING_MODAL, (0, a.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: l,

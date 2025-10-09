@@ -23,14 +23,14 @@ function p(e) {
     buttonClassName: p
   } = e, {
     analyticsLocations: f
-  } = (0, s.ZP)(), h = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
+  } = (0, a.ZP)(), h = t.features.has(c.oNc.BANNER), x = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, a.f4)(t, f, n, r)
+    (0, s.f4)(t, f, n, r)
   }, [f, t]), b = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, s.E6)({
       guild: t,
       analyticsLocations: f,
       analyticsSection: c.jXE.GUILD_BANNER,
@@ -38,7 +38,7 @@ function p(e) {
       perks: (0, d.XO)()
     })
   }, [f, t]), j = i.useCallback(() => {
-    (0, a.mw)({
+    (0, s.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
       onComplete: x,

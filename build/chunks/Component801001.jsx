@@ -49,12 +49,12 @@ function C(e) {
   }), [D, q] = i.useState(() => {
     var e;
     return new Set(null != (e = null == h ? true : h.roleIds) ? e : [])
-  }), [z, J] = i.useState({}), F = i.useRef(null);
+  }), [z, F] = i.useState({}), H = i.useRef(null);
   i.useLayoutEffect(() => {
     var e;
-    return null == (e = F.current) ? true : e.focus()
+    return null == (e = H.current) ? true : e.focus()
   }, []);
-  let H = i.useCallback(() => {
+  let J = i.useCallback(() => {
       var e;
       let t = {
           id: null != (e = null == h ? true : h.id) ? e : "".concat(Date.now()),
@@ -70,7 +70,7 @@ function C(e) {
           let r = (0, p.en)(e, t, n, l);
           return null != r && (i.roles = r), i
         }(C, x.Z.editedOnboardingPrompts, I, t);
-      J(l), o().isEmpty(l) && (r(t), n())
+      F(l), o().isEmpty(l) && (r(t), n())
     }, [T, R, E, C, n, r, null == h ? true : h.id, I, D, k]),
     K = i.useMemo(() => [{
       text: y.intl.string(y.t["ETE/oK"]),
@@ -78,9 +78,9 @@ function C(e) {
       variant: "secondary"
     }, {
       text: y.intl.string(y.t.R3BPHx),
-      onClick: H,
+      onClick: J,
       variant: "primary"
-    }], [H, n]);
+    }], [J, n]);
   return (0, l.jsxs)(s.IX, {
     transitionState: t,
     onClose: n,
@@ -107,7 +107,7 @@ function C(e) {
         children: [(0, l.jsx)(u.oil, {
           label: y.intl.string(y.t.VWdcBg),
           required: true,
-          inputRef: F,
+          inputRef: H,
           placeholder: y.intl.string(y.t.EHe6gY),
           value: k,
           onChange: e => M(e),
@@ -120,8 +120,8 @@ function C(e) {
           onChange: e => _(e),
           maxLength: b.NO
         })]
-      }), (0, l.jsx)(u.izJ, {}), (0, l.jsxs)(u.xJW, {
-        title: y.intl.string(y.t.TtIbPD),
+      }), (0, l.jsx)(u.izJ, {}), (0, l.jsxs)(s.gNt, {
+        label: y.intl.string(y.t.TtIbPD),
         children: [(0, l.jsxs)(u.Kqy, {
           gap: 8,
           children: [(0, l.jsx)(d.Z, {

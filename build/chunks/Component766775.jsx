@@ -1,12 +1,12 @@
 /** Chunk was on 86015 **/
-/** chunk id: 766775, original params: e,i,n (module,exports,require) **/
+/** chunk id: 766775, original params: e,n,a (module,exports,require) **/
 require.d(exports, {
   default: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  t = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk313201 = require("./313201.js"),
@@ -17,53 +17,55 @@ var Chunk120356 = require("./120356.js"),
 
 function m(e) {
   let {
-    transitionState: i,
-    onClose: n,
-    guildTemplate: t
+    transitionState: n,
+    onClose: a,
+    guildTemplate: c
   } = e, {
     form: m,
-    preview: p,
-    handleSubmit: h
-  } = (0, d.Z)(t, false), C = (0, l.Dt)();
-  return (0, a.jsx)("div", {
-    children: (0, a.jsxs)(o.Y0X, {
+    preview: h,
+    handleSubmit: C
+  } = (0, d.Z)(c, false), x = (0, l.Dt)();
+  return (0, i.jsx)("div", {
+    children: (0, i.jsxs)(o.Y0X, {
       size: o.CgR.DYNAMIC,
-      transitionState: i,
+      transitionState: n,
       className: f.modalRoot,
-      "aria-labelledby": C,
+      "aria-labelledby": x,
       parentComponent: "GuildTemplateModal",
-      children: [(0, a.jsxs)("div", {
+      children: [(0, i.jsxs)("div", {
         className: f.modalContainer,
-        children: [(0, a.jsx)("div", {
-          className: c()(f.modalSection, f.ctaSection),
-          children: (0, a.jsx)("div", {
+        children: [(0, i.jsx)("div", {
+          className: t()(f.modalSection, f.ctaSection),
+          children: (0, i.jsx)("div", {
             className: f.ctaContainer,
-            children: (0, a.jsx)(_.Z, {
-              guildTemplate: t,
-              headerId: C
+            children: (0, i.jsx)(s.Z, {
+              guildTemplate: c,
+              headerId: x
             })
           })
-        }), (0, a.jsx)("div", {
-          className: c()(f.modalSection, f.formSection),
-          children: (0, a.jsxs)(o.Ttm, {
+        }), (0, i.jsx)("div", {
+          className: t()(f.modalSection, f.formSection),
+          children: (0, i.jsxs)(o.Ttm, {
             className: f.formContainer,
-            children: [(0, a.jsx)(r.Dx, {
+            children: [(0, i.jsx)(r.Dx, {
               className: f.header,
-              children: s.intl.string(s.t.UNFvtL)
-            }), m, p]
+              children: _.intl.string(_.t.UNFvtL)
+            }), (0, i.jsxs)(o.C3N, {
+              children: [m, h]
+            })]
           })
         })]
-      }), (0, a.jsxs)(o.mzw, {
+      }), (0, i.jsxs)(o.mzw, {
         className: f.modalFooter,
-        children: [(0, a.jsx)(o.zxk, {
+        children: [(0, i.jsx)(o.zxk, {
           variant: "secondary",
-          text: s.intl.string(s.t.cpT0Cg),
-          onClick: n
-        }), (0, a.jsx)(o.zxk, {
+          text: _.intl.string(_.t.cpT0Cg),
+          onClick: a
+        }), (0, i.jsx)(o.zxk, {
           variant: "active",
-          text: s.intl.string(s.t.CumH4u),
+          text: _.intl.string(_.t.CumH4u),
           onClick: async () => {
-            null != await h() && n()
+            null != await C() && a()
           }
         })]
       })]

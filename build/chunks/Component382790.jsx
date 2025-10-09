@@ -29,7 +29,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   let {
     closePopout: t
   } = e;
@@ -37,7 +37,7 @@ function v(e) {
     onClose: t
   })
 }
-class b extends(i = Chunk647438.PureComponent) {
+class v extends(i = Chunk647438.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
@@ -49,7 +49,7 @@ class b extends(i = Chunk647438.PureComponent) {
       onDragStart: this.onDragStart
     }, module) : (0, Chunk951288.jsx)(Chunk711553.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.YUU0RE),
-      renderSettings: v,
+      renderSettings: b,
       onDragStart: this.onDragStart,
       children: (0, Chunk951288.jsx)(Chunk483962.Z, {})
     }), o = require ? "div" : Chunk518084.ZP;
@@ -73,9 +73,9 @@ class b extends(i = Chunk647438.PureComponent) {
     })
   }
 }
-O(b, "defaultProps", {
+O(v, "defaultProps", {
   contained: false
 });
 let E = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({
   selectedGuildId: Chunk914010.Z.getGuildId()
-}))(b)
+}))(v)

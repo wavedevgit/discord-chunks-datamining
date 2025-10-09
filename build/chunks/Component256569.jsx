@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk347469 = require("./347469.js"),
@@ -38,20 +38,20 @@ let f = Chunk647438.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
-    onBlur: s,
+    onBlur: a,
     onClick: o
   } = e, c = i.useRef(null), [d, g] = i.useState(u.tq);
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     className: m.textArea,
     onFocus: l,
-    onBlur: s,
+    onBlur: a,
     onClick: o,
     innerRef: c,
     ignoreKeyPress: true,
     style: {
       minHeight: d
     },
-    children: [(0, r.jsx)(a.Den, {
+    children: [(0, r.jsx)(s.Den, {
       className: m.innerScroller,
       style: {
         minHeight: d - 2
@@ -78,7 +78,7 @@ function h(e) {
     placeholder: p,
     className: h,
     maxTags: x
-  } = e, b = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, g.V)(n), {
+  } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, g.V)(n), {
     handlePasteEvent: C,
     handleInputChange: O,
     handleKeyDown: y,
@@ -89,8 +89,8 @@ function h(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, g.Q)(v, {
-    scrollerRef: _,
+  } = (0, g.Q)(_, {
+    scrollerRef: v,
     mainInputRef: b,
     mainContainerRef: j
   }), {
@@ -100,7 +100,7 @@ function h(e) {
       selections: D,
       isSelecting: A
     }
-  } = v, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = _, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
     G(false), P(), null == (e = b.current) || e.focus({
       preventScroll: true
@@ -129,12 +129,12 @@ function h(e) {
       } else T(e, true), G(true)
     }, [S, T, D, R]);
   return (0, r.jsxs)("div", {
-    className: s()(m.mainContainer, h),
+    className: a()(m.mainContainer, h),
     ref: j,
     tabIndex: 0,
     onKeyUp: N,
     children: [(0, r.jsxs)(f, {
-      ref: _,
+      ref: v,
       onClick: M,
       children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
@@ -147,7 +147,7 @@ function h(e) {
         error: u[e],
         forceShowErrorTooltip: !k && t === R.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: s()(m.mainTextInput, {
+        className: a()(m.mainTextInput, {
           [m.isEditingOtherNodes]: k
         }),
         ref: b,
@@ -158,7 +158,7 @@ function h(e) {
         placeholder: 0 === R.length ? p : true,
         value: Z
       })]
-    }), null != x && (0, r.jsxs)(a.Text, {
+    }), null != x && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: m.maxTags,

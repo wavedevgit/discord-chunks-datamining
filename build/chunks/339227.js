@@ -298,15 +298,15 @@ let R = {
   P = /(-# +)/,
   w = (0, Chunk364458.Z)([S, R]),
   D = (0, Chunk364458.Z)([A, R]),
-  L = Chunk25209._p(w),
-  x = Chunk25209._p(D),
+  x = Chunk25209._p(w),
+  L = Chunk25209._p(D),
   M = {
     max: 1 / 0,
     maxAge: +Chunk70956.Z.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  j = new(o())(M),
-  k = new(o())(M);
+  k = new(o())(M),
+  j = new(o())(M);
 
 function U(e, t, n) {
   let r = [],
@@ -317,8 +317,8 @@ function U(e, t, n) {
       isSlate: true,
       allowGameMentions: true
     },
-    a = n ? x : L,
-    o = n ? k : j,
+    a = n ? L : x,
+    o = n ? j : k,
     s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",

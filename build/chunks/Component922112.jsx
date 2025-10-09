@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk603211 = require("./603211.js"),
@@ -25,9 +25,9 @@ let x = function(e) {
     index: x,
     onDragComplete: b,
     onDragStart: j,
-    onDragReset: _
+    onDragReset: v
   } = e, {
-    title: v,
+    title: _,
     channelId: C,
     description: O
   } = l, y = u.Z.getChannel(C), N = null;
@@ -48,7 +48,7 @@ let x = function(e) {
       index: x,
       onDragStart: j,
       onDragComplete: b,
-      onDragReset: _
+      onDragReset: v
     }),
     Z = i.useCallback(e => {
       (0, m.XG)(l.channelId, e)
@@ -64,7 +64,7 @@ let x = function(e) {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
       return n => {
-        var i, s;
+        var i, a;
         return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -82,28 +82,28 @@ let x = function(e) {
             })
           }
           return e
-        }({}, n), s = s = {
+        }({}, n), a = a = {
           guildId: t,
           resourceChannel: l,
           onSave: Z,
           onDelete: () => (0, m.Hz)(l.channelId),
           onIconUpload: R
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(s)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }
     }), [t, l, Z, R]);
   return null == y ? null : (0, r.jsxs)("div", {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: s()(h.resourceChannel, {
+      className: a()(h.resourceChannel, {
         [h.dropIndicatorBefore]: null != T && x < T,
         [h.dropIndicatorAfter]: null != T && x > T,
         [h.resourceChannelError]: null != N
@@ -136,7 +136,7 @@ let x = function(e) {
           className: h.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: v
+          children: _
         }), !E && (0, r.jsx)(o.Text, {
           className: h.resourceChannelDescription,
           variant: "text-xs/medium",
@@ -144,7 +144,7 @@ let x = function(e) {
           lineClamp: 1,
           children: O
         })]
-      }), (0, r.jsx)(a.u, {
+      }), (0, r.jsx)(s.u, {
         text: f.intl.string(f.t.bt75u7),
         children: (0, r.jsx)(o.hU, {
           icon: o.vdY,

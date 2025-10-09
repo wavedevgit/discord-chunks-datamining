@@ -7,7 +7,7 @@ require.d(exports, {
   GW: () => l,
   Go: () => I,
   I4: () => g,
-  JB: () => L,
+  JB: () => x,
   KX: () => R,
   NM: () => s,
   Qq: () => b,
@@ -143,7 +143,7 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     x: t,
     y: n,

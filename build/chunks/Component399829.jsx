@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -63,12 +63,12 @@ class w extends Chunk647438.Component {
       currentTier: l
     } = this.props;
     if (null == t || null == n) return null;
-    let s = {
+    let a = {
         numRequired: 0,
         y: 0,
         key: b.x
       },
-      a = e.map(e => {
+      s = e.map(e => {
         var n;
         return {
           numRequired: E.oCV[e.tier],
@@ -81,7 +81,7 @@ class w extends Chunk647438.Component {
       currentTier: l,
       className: i > 0 ? S.progressWithSubscriptions : S.progress,
       progress: i,
-      tiers: [s, ...a],
+      tiers: [a, ...s],
       initialAnimationDelay: 500,
       onAnimatedTierMaker: this.handleAnimatedTier
     })
@@ -90,10 +90,13 @@ class w extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk744834.tierDefaultUnlocked,
       ref: this.defaultTierRef,
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-md/medium",
+        color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t["76OoX1"])
-      }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "header-secondary",
         className: Chunk744834.tierDefaultUnlockedDescription,
         children: Chunk388032.intl.string(Chunk388032.t.DaYNQU)
       })]
@@ -166,8 +169,8 @@ class w extends Chunk647438.Component {
         if (null == i) return;
         let {
           top: l
-        } = i.getBoundingClientRect(), s = e > 0 ? P : 0;
-        r[t] = l - n + 32 - s
+        } = i.getBoundingClientRect(), a = e > 0 ? P : 0;
+        r[t] = l - n + 32 - a
       }
       this.setState({
         tierPositions: r
@@ -190,7 +193,7 @@ class w extends Chunk647438.Component {
           tabIndex: false,
           "aria-label": e.user.username,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
-          className: s()(S.avatar, t, null != t ? S.subscriberMask : null),
+          className: a()(S.avatar, t, null != t ? S.subscriberMask : null),
           size: g.EFr.SIZE_32
         })
       }, n)
@@ -253,16 +256,16 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     r = null != (t = null == (e = Chunk430824.Z.getGuild(require)) ? true : module.premiumTier) ? exports : Chunk981631.Eu4.NONE,
     i = (0, Chunk151494.I)(require),
     l = null != require ? Chunk899667.Z.getAppliedGuildBoostsForGuild(require) : null,
-    s = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
-    a = s.map(e => ({
+    a = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
+    s = a.map(e => ({
       user: O.default.getUser(e.userId),
-      nick: v.ZP.getNick(n, e.userId)
+      nick: _.ZP.getNick(n, e.userId)
     })).filter(e => null != e.user).value();
   return {
     guildId: require,
     currentTier: Chunk951288,
     levelSubscriptionCount: Chunk647438,
     subscribers: Chunk392711,
-    uniqueSubscriberCount: s.size()
+    uniqueSubscriberCount: a.size()
   }
 })(w)

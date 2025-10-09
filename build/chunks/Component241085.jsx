@@ -2,7 +2,7 @@
 /** chunk id: 241085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -144,7 +144,7 @@ function D(e) {
   }, n.id)
 }
 
-function L(e) {
+function x(e) {
   var t;
   let {
     minValues: n,
@@ -157,12 +157,12 @@ function L(e) {
   l()(null != O, "FileUploadActionComponent requires modalCustomId from context");
   let {
     uploadIds: v,
-    setUploadIds: L,
-    currentUploads: x,
+    setUploadIds: x,
+    currentUploads: L,
     error: M
-  } = (0, C.t)(e), j = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
-  l()(null != j, "FileUploadActionComponent requires a valid channel");
-  let k = i.useCallback(e => {
+  } = (0, C.t)(e), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
+  l()(null != k, "FileUploadActionComponent requires a valid channel");
+  let j = i.useCallback(e => {
       var t;
       e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && m(true)
     }, []),
@@ -177,7 +177,7 @@ function L(e) {
           maxValues: a
         })
       });
-      if ((0, T.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
+      if ((0, T.Bf)(e, k.guild_id)) return (0, I.G)(k, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {
@@ -193,8 +193,8 @@ function L(e) {
           draftType: y.d.InteractionModal
         }), n
       });
-      L(v.concat(n))
-    }, [v, a, j, L, O, E]),
+      x(v.concat(n))
+    }, [v, a, k, x, O, E]),
     B = i.useCallback(e => {
       var t, n;
       e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -204,15 +204,15 @@ function L(e) {
       G(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
     F = e => {
-      d.Z.remove(E, e, y.d.InteractionModal), L(v.filter(t => t !== e))
+      d.Z.remove(E, e, y.d.InteractionModal), x(v.filter(t => t !== e))
     };
   return (i.useEffect(() => {
     let e = u.current;
-    return null == e || e.addEventListener("dragover", k), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
-      null == e || e.removeEventListener("dragover", k), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
+    return null == e || e.addEventListener("dragover", j), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
+      null == e || e.removeEventListener("dragover", j), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
     }
-  }, [k, U, B]), 1 === a && 1 === x.length) ? (0, r.jsx)(D, {
-    upload: x[0],
+  }, [j, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
+    upload: L[0],
     handleRemoveFile: F,
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
@@ -226,10 +226,10 @@ function L(e) {
       fileInputRef: s,
       minValues: n,
       maxValues: a,
-      guildId: j.guild_id
-    }), x.length > 0 && (0, r.jsx)("div", {
+      guildId: k.guild_id
+    }), L.length > 0 && (0, r.jsx)("div", {
       className: R.files,
-      children: x.map(e => (0, r.jsx)(D, {
+      children: L.map(e => (0, r.jsx)(D, {
         upload: e,
         handleRemoveFile: F
       }, e.id))

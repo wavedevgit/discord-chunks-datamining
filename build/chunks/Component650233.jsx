@@ -1,7 +1,7 @@
 /** Chunk was on 95468 **/
 /** chunk id: 650233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => h,
+  H: () => g,
   default: () => p
 });
 var Chunk951288 = require("./951288.js"),
@@ -58,7 +58,7 @@ function p(e) {
     })
   })
 }
-let h = e => {
+let g = e => {
   let {
     invite: t
   } = e;

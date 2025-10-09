@@ -23,8 +23,8 @@ function p(e) {
   } = e, {
     noticeText: n,
     ctaLabel: i,
-    ctaClickable: s,
-    onCtaClicked: a
+    ctaClickable: a,
+    onCtaClicked: s
   } = t;
   return (0, r.jsxs)("div", {
     className: g.__invalid_ctaContainer,
@@ -52,8 +52,8 @@ function p(e) {
         buttonPosition: c.E.RIGHT,
         notice: n,
         ctaLabel: i,
-        ctaDisabled: !s,
-        onClick: a
+        ctaDisabled: !a,
+        onClick: s
       })]
     })]
   })
@@ -67,8 +67,8 @@ function f(e) {
     isLoading: o,
     error: c,
     creatorMonetizationOnboardingMarketing: u
-  } = (0, a.Z)(t.id);
-  return ((0, s.Z)({
+  } = (0, s.Z)(t.id);
+  return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING,
     properties: {

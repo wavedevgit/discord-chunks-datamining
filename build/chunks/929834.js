@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   U2: () => i,
-  jb: () => s
+  jb: () => a
 });
 var Chunk388032 = require("./388032.jsx");
 let i = {
@@ -26,7 +26,7 @@ let i = {
   },
   l = ["en-GB"];
 
-function s() {
+function a() {
   return (0, Chunk388032.getAvailableLocales)().map(e => {
     let t, {
       value: i,

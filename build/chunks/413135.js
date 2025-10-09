@@ -121,7 +121,7 @@ function O(e, t, n) {
   if ((true === t || t < 0) && (t = 0), t > this.length || ((true === n || n > this.length) && (n = this.length), n <= 0 || (n >>>= 0) <= (t >>>= 0))) return "";
   for (e || (e = "utf8");;) switch (e) {
     case "hex":
-      return k(this, t, n);
+      return j(this, t, n);
     case "utf8":
     case "utf-8":
       return D(this, t, n);
@@ -129,7 +129,7 @@ function O(e, t, n) {
       return M(this, t, n);
     case "latin1":
     case "binary":
-      return j(this, t, n);
+      return k(this, t, n);
     case "base64":
       return w(this, t, n);
     case "ucs2":
@@ -254,7 +254,7 @@ function D(e, t, n) {
     }
     null === u ? (u = 65533, d = 1) : u > 65535 && (u -= 65536, r.push(u >>> 10 & 1023 | 55296), u = 56320 | 1023 & u), r.push(u), i += d
   }
-  return x(r)
+  return L(r)
 }
 r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   try {
@@ -405,12 +405,12 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     data: Array.prototype.slice.call(this._arr || this, 0)
   }
 };
-var L = 4096;
+var x = 4096;
 
-function x(e) {
+function L(e) {
   var t = e.length;
-  if (t <= L) return String.fromCharCode.apply(String, e);
-  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += L));
+  if (t <= x) return String.fromCharCode.apply(String, e);
+  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += x));
   return n
 }
 
@@ -421,14 +421,14 @@ function M(e, t, n) {
   return r
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(e[i]);
   return r
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   var r = e.length;
   (!t || t < 0) && (t = 0), (!n || n < 0 || n > r) && (n = r);
   for (var i = "", a = t; a < n; ++a) i += $[e[a]];

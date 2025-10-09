@@ -2,7 +2,7 @@
 /** chunk id: 976983, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => _,
+  B: () => v,
   Z: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
@@ -10,7 +10,7 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk603211 = require("./603211.js"),
@@ -54,24 +54,24 @@ function b(e, t) {
 }
 
 function j(e) {
-  var t, i, s, c;
+  var t, i, a, c;
   let {
     guild: j,
-    prompt: _,
-    singleColumn: v,
+    prompt: v,
+    singleColumn: _,
     promptIndex: C,
     option: O,
     hasError: y,
     onDragStart: N,
     onDragComplete: E,
     onDragReset: I
-  } = e, S = null, T = a().findIndex(_.options, e => e.id === O.id), {
+  } = e, S = null, T = s().findIndex(v.options, e => e.id === O.id), {
     drag: P,
     dragSourcePosition: w,
     drop: Z,
     setIsDraggable: R
   } = (0, d.Z)({
-    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
+    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
     index: T,
     optionId: O.id,
     onDragStart: N,
@@ -86,7 +86,7 @@ function j(e) {
       [h.hasError]: y || null != S,
       [h.dropIndicatorBefore]: null != w && T < w,
       [h.dropIndicatorAfter]: null != w && T > w,
-      [h.singleColumn]: v
+      [h.singleColumn]: _
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
@@ -94,17 +94,17 @@ function j(e) {
       } = await n.e("1862").then(n.bind(n, 801001));
       return t => (0, r.jsx)(e, b(x({}, t), {
         guild: j,
-        prompt: _,
+        prompt: v,
         option: O,
         index: C,
         onSave: e => {
-          (0, m.Kk)(j, _.id, {
-            options: _.options.map(t => t.id === O.id ? e : t)
+          (0, m.Kk)(j, v.id, {
+            options: v.options.map(t => t.id === O.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, m.Kk)(j, _.id, {
-            options: _.options.filter(e => e.id !== O.id)
+          (0, m.Kk)(j, v.id, {
+            options: v.options.filter(e => e.id !== O.id)
           })
         }
       }))
@@ -126,7 +126,7 @@ function j(e) {
       children: [(0, r.jsx)("div", {
         className: h.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null == (s = O.emoji) ? true : s.id,
+          emojiId: null == (a = O.emoji) ? true : a.id,
           emojiName: null == (c = O.emoji) ? true : c.name,
           defaultComponent: null
         })
@@ -152,12 +152,12 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guild: t,
     prompt: i,
-    promptIndex: s,
-    singleColumn: a
+    promptIndex: a,
+    singleColumn: s
   } = e, d = () => {
     (0, o.ZDy)(async () => {
       let {
@@ -170,14 +170,14 @@ function _(e) {
           options: [...i.options, e]
         }),
         onDelete: () => {},
-        index: s
+        index: a
       }))
     })
   };
   return (0, r.jsx)(o.P3F, {
     className: l()(h.optionCard, h.addOptionCard, {
       [h.addFirstOptionCard]: 0 === i.options.length,
-      [h.singleColumn]: a
+      [h.singleColumn]: s
     }),
     onClick: () => {
       i.options.length + 1 === p.fY ? c.Z.show({

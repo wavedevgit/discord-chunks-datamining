@@ -214,7 +214,7 @@ function F(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, c = (0, a.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), u = I.RZ(t, c, l, S.yP, r), h = (0, a.e7)([Z.ZP], () => I.cR(Z.ZP.getMemberIds(t.id), l, t, S.yP, r)), g = (0, C.nG)(l.id);
+  } = e, c = (0, a.e7)([E.Z], () => E.Z.getSortedRoles(t.id)), u = I.RZ(t, c, l, S.yP, r), h = (0, a.e7)([Z.ZP], () => I.cR(Z.ZP.getMemberIds(t.id), l, t, S.yP, r)), g = (0, C.nG)(l.id);
   return (0, i.jsxs)("div", {
     className: s()(V.settingCard, V.active),
     children: [(0, i.jsx)(M.Z, {
@@ -340,8 +340,8 @@ function z(e) {
           justify: x.Z.Justify.BETWEEN,
           align: x.Z.Align.CENTER,
           className: V.folderHeader,
-          children: [(0, i.jsx)(d.vwX, {
-            tag: "h5",
+          children: [(0, i.jsx)(d.X6q, {
+            variant: "heading-sm/semibold",
             className: V.folderTitle,
             children: f.formLabel
           }), (0, i.jsx)(d.zxk, {
@@ -378,9 +378,9 @@ function q(e) {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(d.izJ, {
       className: V.divider
-    }), (0, i.jsx)(d.vwX, {
+    }), (0, i.jsx)(d.X6q, {
+      variant: "heading-sm/semibold",
       className: s()(V.folderTitle, V.sectionTitle),
-      tag: "h5",
       children: t
     })]
   })

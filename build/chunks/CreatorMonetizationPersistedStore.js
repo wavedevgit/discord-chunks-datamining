@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,23 +15,23 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = {
+let s = {
   canSeeEnableMonetizationForGuilds: new Set
 };
 class o extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (a.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
+    null != e && (s.canSeeEnableMonetizationForGuilds = new Set(e.canSeeEnableMonetizationForGuilds))
   }
   getState() {
-    return a
+    return s
   }
   hasSeenCreatorOnboardingForGuild(e) {
-    return a.canSeeEnableMonetizationForGuilds.has(e)
+    return s.canSeeEnableMonetizationForGuilds.has(e)
   }
 }
-s(o, "displayName", "CreatorMonetizationPersistedStore"), s(o, "persistKey", "CreatorMonetizationPersistedStore"), s(o, "migrations", []);
+a(o, "displayName", "CreatorMonetizationPersistedStore"), a(o, "persistKey", "CreatorMonetizationPersistedStore"), a(o, "migrations", []);
 let c = new o(Chunk570140.Z, {
   CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD: function(e) {
-    a.canSeeEnableMonetizationForGuilds.has(e.guildId) || (a.canSeeEnableMonetizationForGuilds = new Set(a.canSeeEnableMonetizationForGuilds).add(e.guildId))
+    s.canSeeEnableMonetizationForGuilds.has(e.guildId) || (s.canSeeEnableMonetizationForGuilds = new Set(s.canSeeEnableMonetizationForGuilds).add(e.guildId))
   }
 })

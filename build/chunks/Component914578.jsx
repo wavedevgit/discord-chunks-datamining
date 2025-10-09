@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function y(e) {
+function x(e) {
   let {
     onClose: t
   } = e;
@@ -31,22 +31,22 @@ function y(e) {
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
-        label: p.intl.string(p.t.LRmNAg),
+        label: j.intl.string(j.t.LRmNAg),
         action: () => (0, c.Z)(true)
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
-        label: p.intl.string(p.t["0nUKy8"]),
-        action: () => (0, s.Z)(j.EYA.ACKNOWLEDGEMENTS)
+        label: j.intl.string(j.t["0nUKy8"]),
+        action: () => (0, s.Z)(p.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
-        label: p.intl.string(p.t["Yl/Rio"]),
+        label: j.intl.string(j.t["Yl/Rio"]),
         action: () => (0, s.Z)(f.w)
       })]
     })
   })
 }
 
-function v() {
+function y() {
   let e = Chunk647438.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
@@ -94,7 +94,7 @@ function v() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(y, {
+          return (0, r.jsx)(x, {
             onClose: t
           })
         },
@@ -120,14 +120,14 @@ function v() {
           }({}, t), o = o = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: i()(x.moreButton, {
-              [x.active]: n.isShown
+            className: i()(v.moreButton, {
+              [v.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: p.intl.string(p.t.UKOtz8)
+              children: j.intl.string(j.t.UKOtz8)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);

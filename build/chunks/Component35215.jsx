@@ -69,12 +69,12 @@ function P(e, t) {
 }
 let w = 10,
   D = 20,
-  L = 4,
-  x = 5,
+  x = 4,
+  L = 5,
   M = 8,
-  j = 10;
+  k = 10;
 
-function k(e) {
+function j(e) {
   var t;
   let n = {
       [I.S7.PACKAGE_ACTION_ADVENTURE]: S.t.PYFVdX,
@@ -107,7 +107,7 @@ let U = e => {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-primary",
-            children: k(t)
+            children: j(t)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-tertiary",
@@ -222,7 +222,7 @@ function Z(e) {
     y = (0, a.Wu)([f.Z], () => o.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, p.z6)(e.applicationId)).slice(0, w)),
     O = i.useMemo(() => {
       let e = y.length;
-      return e <= L ? L - e : e === x ? 0 : e <= M ? M - e : j - e
+      return e <= x ? x - e : e === L ? 0 : e <= M ? M - e : k - e
     }, [y.length]);
   if (i.useEffect(() => {
       b && (g.default.track(T.rMx.QUEST_GAME_SHEET_ERROR, {

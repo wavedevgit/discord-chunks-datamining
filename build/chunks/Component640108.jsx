@@ -45,7 +45,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -118,15 +118,15 @@ let K = e => {
     duration: n
   } = e, r = null != t ? Y(t) : Z, i = null != n ? Y(n) : Z;
   return r = r.padStart(i.length, "0"), (0, a.jsxs)("div", {
-    className: L.durationTimeWrapper,
+    className: x.durationTimeWrapper,
     children: [(0, a.jsx)("span", {
-      className: L.durationTimeDisplay,
+      className: x.durationTimeDisplay,
       children: r
     }), (0, a.jsx)("span", {
-      className: L.durationTimeSeparator,
+      className: x.durationTimeSeparator,
       children: "/"
     }), (0, a.jsx)("span", {
-      className: L.durationTimeDisplay,
+      className: x.durationTimeDisplay,
       children: i
     })]
   })
@@ -154,7 +154,7 @@ class z extends(r = Chunk647438.Component) {
     let {
       translateY: n
     } = this.state;
-    t ? d.Z.spring(n, j({
+    t ? d.Z.spring(n, k({
       toValue: e
     }, F)).start() : n.setValue(e)
   }
@@ -284,23 +284,23 @@ function q(e) {
     hideDownloadButton: s
   } = e;
   return (0, a.jsxs)("div", {
-    className: L.audioMetadata,
+    className: x.audioMetadata,
     children: [(0, a.jsxs)("div", {
-      className: L.metadataContent,
+      className: x.metadataContent,
       children: [i ? t : (0, a.jsx)(m.Z, {
         href: r,
-        className: L.metadataDownload,
-        iconClassName: L.metadataIcon,
+        className: x.metadataDownload,
+        iconClassName: x.metadataIcon,
         mimeType: o,
         fileName: t
       }), (0, a.jsx)("div", {
-        className: L.metadataSize,
+        className: x.metadataSize,
         children: n
       })]
     }), !s && (0, a.jsx)(m.Z, {
       href: r,
-      className: L.metadataDownload,
-      iconClassName: L.metadataIcon,
+      className: x.metadataDownload,
+      iconClassName: x.metadataIcon,
       mimeType: o
     })]
   })
@@ -361,7 +361,7 @@ class X extends Chunk647438.Component {
       }), d.Z.timing(e, {
         toValue: 0,
         duration: 200
-      })]), d.Z.spring(t, U(j({
+      })]), d.Z.spring(t, U(k({
         toValue: 1.5
       }, F), {
         friction: 80

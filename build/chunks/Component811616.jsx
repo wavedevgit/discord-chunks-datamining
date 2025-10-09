@@ -41,12 +41,12 @@ function S(e) {
     isEligibleForTrial: R
   } = e, P = (0, l.e7)([_.default], () => _.default.locale), w = (0, l.e7)([p.Z], () => p.Z.get(n)), {
     isGift: D,
-    giftRecipient: L
-  } = (0, f.wD)(), x = D && (0, h.pO)(L);
+    giftRecipient: x
+  } = (0, f.wD)(), L = D && (0, h.pO)(x);
   s()(null != w, "Missing subscriptionPlan");
   let M = null != t && t.planId === n,
-    j = M || n === v.Xh.PREMIUM_MONTH_TIER_2 && null != t && [v.Xh.PREMIUM_YEAR_TIER_0, v.Xh.PREMIUM_YEAR_TIER_1].includes(t.planId),
-    k = v.nH[n],
+    k = M || n === v.Xh.PREMIUM_MONTH_TIER_2 && null != t && [v.Xh.PREMIUM_YEAR_TIER_0, v.Xh.PREMIUM_YEAR_TIER_1].includes(t.planId),
+    j = v.nH[n],
     {
       enabled: U
     } = y.Z.getCurrentConfig({
@@ -54,10 +54,10 @@ function S(e) {
     }, {
       autoTrackExposure: false
     });
-  U && (k = (0, g.UV)(w, D, S));
+  U && (j = (0, g.UV)(w, D, S));
   let G = (0, g.aS)(n, false, D, S),
     B = (0, g.Ap)(S.paymentSourceId),
-    Z = null != k && !A,
+    Z = null != j && !A,
     F = (0, O.Ng)(),
     V = (0, b.Vi)(),
     H = w.interval === v.rV.YEAR ? I.t.ECT4Aw : I.t.v9QeOD,
@@ -68,13 +68,13 @@ function S(e) {
       className: T.planOptionDiscount,
       children: I.intl.string(I.t.iQTfW1)
     }) : null,
-    W = () => null != k && !V && (0, r.jsx)(d.Text, {
+    W = () => null != j && !V && (0, r.jsx)(d.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
       className: T.planOptionDiscount,
       children: I.intl.format(I.t.IAybsL, {
-        discount: (0, m.T3)(P, k / 100)
+        discount: (0, m.T3)(P, j / 100)
       })
     }),
     K = () => V ? Y() : w.interval === v.rV.YEAR && null != t || Z && !M ? w.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
@@ -84,11 +84,11 @@ function S(e) {
     z = () => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: a()(T.planOptionInterval, {
-          [T.optionSelected]: o || x,
-          [T.updatedOptionSelected]: A && (o || x)
+          [T.optionSelected]: o || L,
+          [T.updatedOptionSelected]: A && (o || L)
         }),
-        children: [(0, g.L7)(w.interval, D, B, w.intervalCount, x, (0, g.Rd)(w.id)), x && K()]
-      }), x && (0, r.jsx)("div", {
+        children: [(0, g.L7)(w.interval, D, B, w.intervalCount, L, (0, g.Rd)(w.id)), L && K()]
+      }), L && (0, r.jsx)("div", {
         className: T.planOneTimeCost,
         children: I.intl.format(I.t.ori2Ji, {
           currencyAmount: (0, E.T4)(G.amount, G.currency)
@@ -111,11 +111,11 @@ function S(e) {
       return R ? I.intl.format(H, {
         price: (0, E.T4)(G.amount, G.currency)
       }) : w.interval === v.rV.YEAR ? I.intl.formatToPlainString(I.t.rtLTJC, {
-        percent: k
+        percent: j
       }) : null
     };
   return (0, r.jsxs)(d.P3F, {
-    role: x ? "menuitem" : "radio",
+    role: L ? "menuitem" : "radio",
     "aria-checked": o,
     tabIndex: o ? 0 : false,
     focusProps: {
@@ -126,18 +126,18 @@ function S(e) {
         bottom: 0
       }
     },
-    onClick: j ? true : () => i(n),
+    onClick: k ? true : () => i(n),
     className: a()(T.planOptionClickableContainer, {
-      [T.selectedPlan]: x && o,
-      [T.selectionBox]: x
+      [T.selectedPlan]: L && o,
+      [T.selectionBox]: L
     }),
     children: [(0, r.jsxs)("div", {
       className: a()(T.planOption, {
-        [T.planOptionDisabled]: j
+        [T.planOptionDisabled]: k
       }),
       children: [(0, r.jsxs)("div", {
         className: T.planOptionClickable,
-        children: [!x && (0, r.jsx)(u.$q, {
+        children: [!L && (0, r.jsx)(u.$q, {
           readOnly: true,
           displayOnly: true,
           value: o,
@@ -148,7 +148,7 @@ function S(e) {
         }), z(), M && (0, r.jsxs)("span", {
           className: T.planOptionCurrentPlan,
           children: ["(", I.intl.string(I.t.ymSxh4), ")"]
-        }), !x && K()]
+        }), !L && K()]
       }), A ? (0, r.jsx)("div", {
         className: a()({
           [T.optionPriceSelected]: o
@@ -158,7 +158,7 @@ function S(e) {
         })
       }) : (0, r.jsx)("div", {
         className: a()({
-          [T.optionSelected]: o || x
+          [T.optionSelected]: o || L
         }),
         children: (0, E.T4)(G.amount, G.currency)
       })]

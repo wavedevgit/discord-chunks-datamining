@@ -5,11 +5,11 @@ var t = "\ud800-\udfff",
   r = "\ud83c[\udffb-\udfff]",
   i = "[^" + t + "]",
   l = "(?:\ud83c[\udde6-\uddff]){2}",
-  s = "[\ud800-\udbff][\udc00-\udfff]",
-  a = "(?:" + n + "|" + r + ")?",
+  a = "[\ud800-\udbff][\udc00-\udfff]",
+  s = "(?:" + n + "|" + r + ")?",
   o = "[\\ufe0e\\ufe0f]?",
-  c = "(?:\\u200d(?:" + [i, l, s].join("|") + ")" + o + a + ")*",
-  d = RegExp(r + "(?=" + r + ")|" + ("(?:" + [i + n + "?", n, l, s, "[" + t + "]"].join("|")) + ")" + (o + a + c), "g");
+  c = "(?:\\u200d(?:" + [i, l, a].join("|") + ")" + o + s + ")*",
+  d = RegExp(r + "(?=" + r + ")|" + ("(?:" + [i + n + "?", n, l, a, "[" + t + "]"].join("|")) + ")" + (o + s + c), "g");
 module.exports = function(e) {
   return e.match(d) || []
 }

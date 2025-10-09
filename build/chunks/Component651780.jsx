@@ -56,15 +56,15 @@ function T(e) {
     guildId: n
   } = e, i = (0, C.gZ)(t, n), l = (0, C.nW)((0, C.Jh)(n));
   if (null == i || null == l) return null;
-  let a = (0, C._k)(t, n);
-  return (0, r.jsxs)(s.Wn, {
-    messageType: s.QYI.WARNING,
+  let s = (0, C._k)(t, n);
+  return (0, r.jsxs)(a.Wn, {
+    messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
       className: I.guildBoostingGracePeriodTitle,
       children: E.intl.format(E.t.LG7vvr, {})
     }), (0, r.jsx)(S, {
       endsAt: i,
-      appliedGuildBoostsToMaintain: a,
+      appliedGuildBoostsToMaintain: s,
       tierName: l
     })]
   })
@@ -75,8 +75,8 @@ let P = e => {
     onSetRef: n,
     subscriptionCount: i,
     tier: l,
-    tiers: s,
-    tierIndex: a,
+    tiers: a,
+    tierIndex: s,
     guildId: o
   } = e;
   return (0, r.jsx)(j.Z, {
@@ -84,7 +84,7 @@ let P = e => {
     tier: l,
     onSetRef: n,
     isAnimatedTo: t,
-    hasBottomMargin: a !== s.length - 1,
+    hasBottomMargin: s !== a.length - 1,
     guildId: o
   }, l.tier)
 };
@@ -100,15 +100,15 @@ function w() {
     n = (0, Chunk15640.V)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        tag: Chunk481060.RB0.H1,
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nLovSU)
       }), null != exports && null != module ? (0, Chunk951288.jsx)(T, {
         appliedGuildBoosts: exports,
         guildId: module.id
-      }) : null, (0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
+      }) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk424359.titleBlurb,
+        variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.hLOkp6, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_SUBSCRIPTIONS)
         })

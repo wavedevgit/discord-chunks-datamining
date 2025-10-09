@@ -58,16 +58,16 @@ function p() {
       name: r,
       description: i,
       emojiId: l,
-      emojiName: s
-    } = e, a = [...n], o = {
+      emojiName: a
+    } = e, s = [...n], o = {
       name: r,
       description: i,
       emoji_id: l,
-      emoji_name: s,
+      emoji_name: a,
       ref_type: d.Qs.INTANGIBLE,
       ref_id: true
     };
-    null != t ? a[t] = o : a.push(o), p(a)
+    null != t ? s[t] = o : s.push(o), p(s)
   }
   let h = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

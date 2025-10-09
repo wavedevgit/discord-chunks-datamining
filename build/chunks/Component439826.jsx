@@ -105,7 +105,7 @@ function B(e) {
     onCtxMenuOpen: q,
     onCtxMenuSelect: D,
     sourceQuestContent: L
-  } = e, V = (0, f.PB)(m), Q = (0, p.ZP)(), M = ((0, c.wj)(Q) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, W = (0, x.tP)(m), Z = (null == (t = m.userStatus) ? true : t.claimedAt) != null, U = (0, x.B6)(m.config.expiresAt, {
+  } = e, V = (0, f.PB)(m), Q = (0, p.ZP)(), M = ((0, c.wj)(Q) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, x.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, U = (0, x.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), H = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
@@ -248,7 +248,7 @@ function B(e) {
             children: N.intl.format(N.t.buEvBw, {
               brandName: null != (u = null == (i = m.config.cosponsorMetadata) ? true : i.name) ? u : m.config.messages.gamePublisher
             })
-          }), W || Z ? null : (0, r.jsx)(d.Text, {
+          }), Z || W ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: M ? "text-muted" : "always-white",
             children: N.intl.format(N.t["7D8r4O"], {

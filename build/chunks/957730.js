@@ -36,7 +36,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,13 +52,13 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -179,7 +179,7 @@ let F = Chunk428595.Z.RULES,
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
         let i = U("@", e, t.users, "mention");
         if (i || (i = U("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = U("@", e, t.users.map(e => k(M({}, e), {
+        if (!(i = U("@", e, t.users.map(e => j(M({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let a = q.exec(e);
@@ -257,7 +257,7 @@ let F = Chunk428595.Z.RULES,
         }
       }
     },
-    text: k(M({}, V), {
+    text: j(M({}, V), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, f.T9)(t.textExclusions).exec(e) : null != V.match ? V.match(e, t, "") : null
     })
   },
@@ -332,7 +332,7 @@ let F = Chunk428595.Z.RULES,
           return null != t ? {
             content: "@".concat(t.name)
           } : {
-            content: "@".concat(L.intl.string(L.t["11pdXV"]))
+            content: "@".concat(x.intl.string(x.t["11pdXV"]))
           }
         }
         return {
@@ -381,7 +381,7 @@ let F = Chunk428595.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: k(M({}, F.timestamp), {
+    timestamp: j(M({}, F.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
         let r = F.timestamp.parse(...exports);

@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,16 +29,16 @@ function C(e) {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, j.QB)({
+  (0, p.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: m.Z.getSubsection(),
-    source: m.Z.getAnalyticsLocation(),
-    locationStack: m.Z.getAnalyticsLocations()
+    subsection: b.Z.getSubsection(),
+    source: b.Z.getAnalyticsLocation(),
+    locationStack: b.Z.getAnalyticsLocations()
   })
 }
 
-function _(e) {
+function S(e) {
   var t, {
       target: n
     } = e,
@@ -57,20 +57,20 @@ function _(e) {
       }
       return l
     }(e, ["target"]);
-  let a = p.Z.useField("query"),
+  let a = j.Z.useField("query"),
     {
       node: c,
       directory: u
-    } = (0, f.Z)(v.Z, a),
-    j = (t = x.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
-    h = l.useRef(null);
+    } = (0, f.Z)(y.Z, a),
+    p = (t = v.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
+    g = l.useRef(null);
   return ((0, s.ZP)(() => {
-    let e = m.Z.getSection();
+    let e = b.Z.getSection();
     null != e && (C({
       destinationPanel: e,
       originPanel: null
-    }), h.current = e)
-  }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+    }), g.current = e)
+  }), (0, o.e7)([m.default], () => null != m.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -90,21 +90,21 @@ function _(e) {
   }({
     root: c,
     directory: u,
-    sidebarHeader: S,
-    emptyState: P,
-    sidebarFooter: y.Z,
+    sidebarHeader: P,
+    emptyState: _,
+    sidebarFooter: x.Z,
     onPanelChange: e => {
-      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (C({
         destinationPanel: t,
-        originPanel: h.current
-      }), h.current = t)
+        originPanel: g.current
+      }), g.current = t)
     },
-    target: j
+    target: p
   }, i)) : null
 }
 
-function S() {
+function P() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk647438.useRef(null),
     [n, o] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
@@ -117,7 +117,7 @@ function S() {
       scrollBehavior: "sticky"
     }), []),
     d = Chunk647438.useCallback(e => {
-      p.Z.setState({
+      j.Z.setState({
         query: e
       })
     }, []),
@@ -148,7 +148,7 @@ function S() {
   })
 }
 
-function P() {
+function _() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk942408.emptySearchResultsContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

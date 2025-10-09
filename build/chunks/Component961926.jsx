@@ -65,7 +65,7 @@ function h(e) {
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: g.intl.string(g.t.CX5YfX),
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(a.Z, {
         rule: x,
         onChangeRule: b
       }), (0, r.jsx)(l.Z, {
@@ -79,7 +79,7 @@ function h(e) {
     }), (0, r.jsx)(c.Z, {
       step: 2,
       header: g.intl.string(g.t["18TOiY"]),
-      children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(s.Z, {
         rule: x,
         onChangeRule: b
       })

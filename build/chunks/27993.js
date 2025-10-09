@@ -38,14 +38,14 @@ function v(e) {
       disallowTypeAhead: P = false,
       shouldUseVirtualFocus: w,
       allowsTabNavigation: D = false,
-      isVirtualized: L,
-      scrollRef: x = I,
+      isVirtualized: x,
+      scrollRef: L = I,
       linkBehavior: M = "action"
     } = e,
     {
-      direction: j
+      direction: k
     } = (0, O.j)(),
-    k = (0, a.tv)(),
+    j = (0, a.tv)(),
     U = e => {
       var t, i, a, l, c, u, d, f, _, p, m, E, b;
       if (e.altKey && "Tab" === e.key && e.preventDefault(), !(null == (t = I.current) ? true : t.contains(e.target))) return;
@@ -57,7 +57,7 @@ function v(e) {
             });
             let a = (0, r.D0)(I, t),
               o = n.getItemProps(t);
-            a && k.open(a, e, o.href, o.routerOptions);
+            a && j.open(a, e, o.href, o.routerOptions);
             return
           }
           n.setFocusedKey(t, i), n.isLink(t) && "override" === M || (e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : R && !(0, r.FJ)(e) && n.replaceSelection(t))
@@ -79,13 +79,13 @@ function v(e) {
         case "ArrowLeft":
           if (v.getKeyLeftOf) {
             let t = null != n.focusedKey ? null == (f = v.getKeyLeftOf) ? true : f.call(v, n.focusedKey) : null;
-            null == t && S && (t = "rtl" === j ? null == (_ = v.getFirstKey) ? true : _.call(v, n.focusedKey) : null == (p = v.getLastKey) ? true : p.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "first" : "last"))
+            null == t && S && (t = "rtl" === k ? null == (_ = v.getFirstKey) ? true : _.call(v, n.focusedKey) : null == (p = v.getLastKey) ? true : p.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === k ? "first" : "last"))
           }
           break;
         case "ArrowRight":
           if (v.getKeyRightOf) {
             let t = null != n.focusedKey ? null == (m = v.getKeyRightOf) ? true : m.call(v, n.focusedKey) : null;
-            null == t && S && (t = "rtl" === j ? null == (E = v.getLastKey) ? true : E.call(v, n.focusedKey) : null == (b = v.getFirstKey) ? true : b.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "last" : "first"))
+            null == t && S && (t = "rtl" === k ? null == (E = v.getLastKey) ? true : E.call(v, n.focusedKey) : null == (b = v.getFirstKey) ? true : b.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === k ? "last" : "first"))
           }
           break;
         case "Home":
@@ -138,11 +138,11 @@ function v(e) {
       top: 0,
       left: 0
     });
-  (0, l.z)(x, "scroll", L ? true : () => {
+  (0, l.z)(L, "scroll", x ? true : () => {
     var e, t, n, r;
     G.current = {
-      top: null != (n = null == (e = x.current) ? true : e.scrollTop) ? n : 0,
-      left: null != (r = null == (t = x.current) ? true : t.scrollLeft) ? r : 0
+      top: null != (n = null == (e = L.current) ? true : e.scrollTop) ? n : 0,
+      left: null != (r = null == (t = L.current) ? true : t.scrollLeft) ? r : 0
     }
   });
   let B = e => {
@@ -158,8 +158,8 @@ function v(e) {
             },
             s = e.relatedTarget;
           s && e.currentTarget.compareDocumentPosition(s) & Node.DOCUMENT_POSITION_FOLLOWING ? r(null != (a = n.lastSelectedKey) ? a : null == (t = v.getLastKey) ? true : t.call(v)) : r(null != (o = n.firstSelectedKey) ? o : null == (i = v.getFirstKey) ? true : i.call(v))
-        } else !L && x.current && (x.current.scrollTop = G.current.top, x.current.scrollLeft = G.current.left);
-        if (null != n.focusedKey && x.current) {
+        } else !x && L.current && (L.current.scrollTop = G.current.top, L.current.scrollLeft = G.current.left);
+        if (null != n.focusedKey && L.current) {
           let e = (0, r.D0)(I, n.focusedKey);
           e instanceof HTMLElement && (e.contains(document.activeElement) || w || (0, s.A)(e), "keyboard" === (0, b.Jz)() && (0, c.G)(e, {
             containingElement: I.current
@@ -218,12 +218,12 @@ function v(e) {
   let K = (0, E.useRef)(n.focusedKey),
     z = (0, E.useRef)(null);
   (0, E.useEffect)(() => {
-    if (n.isFocused && null != n.focusedKey && (n.focusedKey !== K.current || W.current) && x.current && I.current) {
+    if (n.isFocused && null != n.focusedKey && (n.focusedKey !== K.current || W.current) && L.current && I.current) {
       let e = (0, b.Jz)(),
         t = (0, r.D0)(I, n.focusedKey);
       if (!(t instanceof HTMLElement)) return;
       ("keyboard" === e || W.current) && (z.current && cancelAnimationFrame(z.current), z.current = requestAnimationFrame(() => {
-        x.current && ((0, c.z)(x.current, t), "virtual" !== e && (0, c.G)(t, {
+        L.current && ((0, c.z)(L.current, t), "virtual" !== e && (0, c.G)(t, {
           containingElement: I.current
         }))
       }))
@@ -238,7 +238,7 @@ function v(e) {
       onFocus: B,
       onBlur: Z,
       onMouseDown(e) {
-        x.current === e.target && e.preventDefault()
+        L.current === e.target && e.preventDefault()
       }
     },
     {

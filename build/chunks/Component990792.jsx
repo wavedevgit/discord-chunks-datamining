@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,9 +20,9 @@ let p = Chunk647438.memo(function(e) {
   let {
     file: n,
     audio: t,
-    className: i,
+    className: r,
     waveformSettings: p
-  } = e, [y, b] = l.useState({
+  } = e, [b, y] = l.useState({
     width: 0,
     height: 0
   }), v = l.useRef(null), x = l.useMemo(() => {
@@ -50,8 +50,8 @@ let p = Chunk647438.memo(function(e) {
       fineTuningResolution: n / m.nl.fineTuningScale,
       duration: n
     }, null != p ? p : {})
-  }, [t, p]), j = (0, f.b1)(n), w = (0, f.NN)(j, v.current, x), _ = (0, c.ZP)(), N = (0, d.Sl)((0, s.wj)(_) ? g.Il.PRIMARY_300 : g.Il.PRIMARY_700), C = null == j || null == w, S = (0 === y.width || 0 === y.height || C) && null != n, O = l.useCallback(() => {
-    null != v.current && b({
+  }, [t, p]), j = (0, f.b1)(n), w = (0, f.NN)(j, v.current, x), _ = (0, c.ZP)(), C = (0, d.Sl)((0, s.wj)(_) ? g.Il.PRIMARY_300 : g.Il.PRIMARY_700), N = null == j || null == w, S = (0 === b.width || 0 === b.height || N) && null != n, O = l.useCallback(() => {
+    null != v.current && y({
       width: v.current.offsetWidth,
       height: v.current.offsetHeight
     })
@@ -72,24 +72,24 @@ let p = Chunk647438.memo(function(e) {
       width: t,
       height: a
     } = e;
-    if (0 !== y.width && 0 !== y.height && null != w && w.length > 0) {
+    if (0 !== b.width && 0 !== b.height && null != w && w.length > 0) {
       let e = t / w.length,
         l = -(e * (m.nl.waveformBarWidth - 1));
-      n.clearRect(0, 0, t, a), n.fillStyle = N.hex;
+      n.clearRect(0, 0, t, a), n.fillStyle = C.hex;
       for (let t = 0; t < w.length; t++) {
-        let i = w[t] * a,
-          r = t * e + l,
-          o = a / 2 - i / 2;
-        n.fillRect(r, o, e - l, i)
+        let r = w[t] * a,
+          i = t * e + l,
+          o = a / 2 - r / 2;
+        n.fillRect(i, o, e - l, r)
       }
     }
-  }, [N, y, _, w]), (0, a.jsxs)("div", {
-    className: r()(h.container, i),
+  }, [C, b, _, w]), (0, a.jsxs)("div", {
+    className: i()(h.container, r),
     children: [(0, a.jsx)("canvas", {
       className: h.waveformCanvas,
       ref: v,
-      width: 4 * y.width,
-      height: 4 * y.height
+      width: 4 * b.width,
+      height: 4 * b.height
     }), S && (0, a.jsx)("div", {
       className: h.loading,
       children: (0, a.jsx)(u.$jN, {

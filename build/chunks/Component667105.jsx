@@ -5,8 +5,8 @@ require.d(exports, {
   DH: () => Z,
   Ks: () => B,
   Ws: () => V,
-  g2: () => k,
-  hf: () => j,
+  g2: () => j,
+  hf: () => k,
   k3: () => U,
   qN: () => F
 }), require("./388685.js");
@@ -50,7 +50,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,12 +75,12 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function k(e) {
   let {
     quest: t,
     questContent: n,
@@ -104,7 +104,7 @@ function j(e) {
     }) : (0, C.B)())
   }, [t, d, n, r, a, c, u, s])
 }
-let k = e => {
+let j = e => {
     let {
       useReducedMotion: t,
       className: n
@@ -187,7 +187,7 @@ function B(e) {
     isVideoQuest: b,
     inGameQuest: y,
     sourceQuestContent: v
-  } = e, I = j({
+  } = e, I = k({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -195,9 +195,9 @@ function B(e) {
     sourceQuestContent: v
   }), C = (0, E._s)({
     quest: n
-  }), D = (0, E.Rf)(n), x = i.useCallback(() => {
+  }), D = (0, E.Rf)(n), L = i.useCallback(() => {
     (0, u.$)()
-  }, []), k = i.useCallback(() => {
+  }, []), j = i.useCallback(() => {
     (0, d.Y)({
       pageType: R.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: R.jXE.QUEST_TILE_CTA,
@@ -352,27 +352,27 @@ function B(e) {
           onClick: I,
           text: (0, m.wj)(n.config) ? w.intl.string(w.t.bAGFz8) : w.intl.string(w.t.vTgCW1)
         };
-        if (a) return M(L({}, i), {
+        if (a) return M(x({}, i), {
           text: w.intl.string(w.t.MAS7uL)
         });
-        if ((0, m.vQ)(n.config)) return M(L({}, i), {
+        if ((0, m.vQ)(n.config)) return M(x({}, i), {
           text: w.intl.string(w.t.vTgCW1)
         });
         if ((0, m.Bg)(n.config)) return {
           tooltipText: null,
-          onClick: x,
+          onClick: L,
           text: w.intl.string(w.t["eQX+go"])
         };
         else if ((0, m.xN)(n.config)) return {
           tooltipText: null,
           text: w.intl.string(w.t.WYchdX),
-          onClick: k
+          onClick: j
         };
-        return M(L({}, i), {
+        return M(x({}, i), {
           text: w.intl.string(w.t.bAGFz8)
         })
     }
-  }, [r, b, C, _, I, a, n, o, s, f, U, D, x, k, y, B, v, F, Z])
+  }, [r, b, C, _, I, a, n, o, s, f, U, D, L, j, y, B, v, F, Z])
 }
 
 function Z() {

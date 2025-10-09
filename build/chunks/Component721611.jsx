@@ -22,14 +22,14 @@ function d(e) {
     useTitle: a,
     useNavigationTitle: c,
     key: d
-  } = n, f = null == a ? true : a(), m = null != (t = null == c ? true : c()) ? t : f;
-  return null == m ? null : (0, r.jsx)(s.P3F, {
+  } = n, f = null == a ? true : a(), b = null != (t = null == c ? true : c()) ? t : f;
+  return null == b ? null : (0, r.jsx)(s.P3F, {
     onClick: l,
     tag: "li",
     className: i()({
       [u.active]: o
     }),
-    children: m
+    children: b
   }, d)
 }
 
@@ -39,7 +39,7 @@ function f(e) {
   } = e, [n, o] = l.useState(t[0].key), {
     setShowNavigationMobile: i,
     navigateTo: f
-  } = (0, c.t)(), [m, b] = (0, s.q_F)(() => ({
+  } = (0, c.t)(), [b, m] = (0, s.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -48,16 +48,16 @@ function f(e) {
     }
   }));
   return l.useEffect(() => {
-    b({
+    m({
       y: 36 * Math.max(t.findIndex(e => e.key === n), 0)
     })
-  }, [t, n, b]), (0, r.jsxs)("div", {
+  }, [t, n, m]), (0, r.jsxs)("div", {
     className: u.subnav,
     children: [(0, r.jsx)("div", {
       className: u.track,
       children: (0, r.jsx)(a.animated.div, {
         className: u.thumb,
-        style: m
+        style: b
       })
     }), (0, r.jsx)("ul", {
       children: t.map(e => (0, r.jsx)(d, {

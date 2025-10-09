@@ -8,13 +8,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk295141 = require("./295141.js");
 
 function l(e) {
-  let [t, n] = r.useState(true), [l, s] = r.useState(), [a, o] = r.useState(), c = r.useCallback(async e => {
-    n(true), s(true);
+  let [t, n] = r.useState(true), [l, a] = r.useState(), [s, o] = r.useState(), c = r.useCallback(async e => {
+    n(true), a(true);
     try {
       let t = await i.HT(e);
       o(t)
     } catch (e) {
-      s(e)
+      a(e)
     } finally {
       n(false)
     }
@@ -24,6 +24,6 @@ function l(e) {
   }, [e, c]), {
     isLoading: t,
     error: l,
-    highlightedCreatorDetails: a
+    highlightedCreatorDetails: s
   }
 }

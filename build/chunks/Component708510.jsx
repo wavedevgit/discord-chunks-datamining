@@ -33,7 +33,7 @@ function E(e) {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, m.k)(e), (0, p.V)(e), (0, a.le)(), (0, a.aC)(e)
+      await (0, m.k)(e), (0, p.V)(e), (0, s.le)(), (0, s.aC)(e)
     } finally {
       n.current = true
     }
@@ -63,29 +63,27 @@ function I(e) {
     guildId: t
   } = e, {
     nsfwLevel: n,
-    ownerConfiguredContentLevel: a
+    ownerConfiguredContentLevel: s
   } = (0, l.cj)([d.Z], () => {
     var e, n;
     return {
       nsfwLevel: null == (e = d.Z.getGuild(t)) ? true : e.nsfwLevel,
       ownerConfiguredContentLevel: null == (n = d.Z.getGuild(t)) ? true : n.ownerConfiguredContentLevel
     }
-  }), o = (0, l.e7)([_.Z], () => {
+  }), o = (0, l.e7)([v.Z], () => {
     var e;
-    return null == (e = _.Z.pendingState) ? true : e.isAgeRestricted
+    return null == (e = v.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
     h.Z.setIsAgeRestricted(t, e)
-  }, [t]), g = n === O.V_K.AGE_RESTRICTED && a !== O.V_K.AGE_RESTRICTED;
-  return (0, r.jsx)(s.hjN, {
-    children: (0, r.jsx)(s.rsf, {
-      label: y.intl.string(y.t.N9xEJC),
-      description: y.intl.format(y.t["iyQQ6+"], {
-        helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
-      }),
-      checked: o,
-      onChange: c,
-      disabled: g
-    })
+  }, [t]), g = n === O.V_K.AGE_RESTRICTED && s !== O.V_K.AGE_RESTRICTED;
+  return (0, r.jsx)(a.rsf, {
+    label: y.intl.string(y.t.N9xEJC),
+    description: y.intl.format(y.t["iyQQ6+"], {
+      helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
+    }),
+    checked: o,
+    onChange: c,
+    disabled: g
   })
 }
 
@@ -116,7 +114,7 @@ function T() {
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {
-    joinType: a
+    joinType: s
   } = exports;
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 32,

@@ -60,29 +60,29 @@ function T(e) {
     disableAutoFocus: P = false
   } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: D
-  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), L = (0, d.ZB)({
+  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
     channelId: T,
     messageId: S,
     roleId: A
-  }), x = i.useRef(null), M = (0, _.ZP)(t.id, n);
+  }), L = i.useRef(null), M = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
-    null == v || v(null == x ? true : x.current)
-  }, [x, v]);
-  let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    k = P ? "div" : o.VqE;
+    null == v || v(null == L ? true : L.current)
+  }, [L, v]);
+  let k = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+    j = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
-      value: L,
+      value: x,
       openedAt: C,
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsx)(k, {
-        ref: x,
+      children: (0, r.jsx)(j, {
+        ref: L,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
           user: t,
@@ -117,9 +117,9 @@ function T(e) {
                   isBlocked: w,
                   onClick: () => {
                     N(), (0, f.pQ)(I({
-                      action: j,
+                      action: k,
                       analyticsLocations: D
-                    }, L))
+                    }, x))
                   }
                 }), (0, r.jsx)(m.Z, {
                   userId: t.id,
@@ -127,7 +127,7 @@ function T(e) {
                     N(), (0, f.pQ)(I({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: D
-                    }, L))
+                    }, x))
                   }
                 })]
               })]

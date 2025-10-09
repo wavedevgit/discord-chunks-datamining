@@ -14,7 +14,7 @@ var Chunk692547 = require("./692547.js"),
 let c = e => {
   let {
     title: t,
-    subtext: n = a.intl.string(a.t.jHpxws),
+    subtext: n = s.intl.string(s.t.jHpxws),
     localizedNumber: c,
     isTrendingUp: d,
     isTrendingDown: u,
@@ -62,28 +62,29 @@ let c = e => {
   }) : null;
   return (0, r.jsxs)("div", {
     className: o.analyticsCard,
-    children: [(0, r.jsxs)(l.vwX, {
+    children: [(0, r.jsxs)(l.Text, {
+      variant: "text-md/medium",
       className: o.analyticsCardTitle,
       children: [t, m]
     }), (0, r.jsx)("div", {
       className: o.analyticsCardContent,
-      children: (0, r.jsx)(l.X6q, {
+      children: (0, r.jsx)(l.Text, {
         className: null != c ? o.analyticsCardNumber : o.analyticsCardNumberNotAvailable,
-        variant: "heading-xl/semibold",
-        children: null != c ? c : a.intl.string(a.t.jHpxws)
+        variant: "text-lg/semibold",
+        children: null != c ? c : s.intl.string(s.t.jHpxws)
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
-      children: [d ? (0, r.jsx)(s.Z, {
+      children: [d ? (0, r.jsx)(a.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
-        "aria-label": a.intl.string(a.t["8mcccX"]),
+        "aria-label": s.intl.string(s.t["8mcccX"]),
         width: 14,
         height: 12
-      }) : null, u ? (0, r.jsx)(s.Z, {
+      }) : null, u ? (0, r.jsx)(a.Z, {
         className: o.trendingArrowIconDown,
         color: i.Z.unsafe_rawColors.RED_400.css,
-        "aria-label": a.intl.string(a.t.NLl6Q0),
+        "aria-label": s.intl.string(s.t.NLl6Q0),
         width: 14,
         height: 12
       }) : null, (0, r.jsx)(l.Text, {

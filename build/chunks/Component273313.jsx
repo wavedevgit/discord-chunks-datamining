@@ -2,24 +2,27 @@
 /** chunk id: 273313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk438976 = require("./438976.js"),
-  Chunk135013 = require("./135013.js");
+  Chunk438976 = require("./438976.js");
 
-function s(e) {
+function o(e) {
   let {
     title: t,
     className: n,
-    children: s
-  } = e, l = (0, a.Z)() ? true : t;
-  return (0, r.jsx)(i.hjN, {
-    tag: i.RB0.H1,
-    title: l,
-    titleClassName: o.title,
+    children: o
+  } = e, s = (0, a.Z)() ? true : t;
+  return (0, r.jsx)("div", {
     className: n,
-    children: s
+    children: (0, r.jsxs)(i.Kqy, {
+      gap: 16,
+      children: [(0, r.jsx)(i.X6q, {
+        variant: "heading-lg/semibold",
+        color: "header-primary",
+        children: s
+      }), o]
+    })
   })
 }

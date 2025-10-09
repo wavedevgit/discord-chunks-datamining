@@ -1,7 +1,7 @@
 /** Chunk was on 19611 **/
 /** chunk id: 746147, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,13 +14,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function d(e) {
   let {
     onClose: t,
-    transitionState: m
-  } = e, d = (0, a.Z)(s.Me), p = r.useMemo(() => d.map(e => e.value), [d]);
+    transitionState: d
+  } = e, m = (0, a.Z)(b.Me), p = r.useMemo(() => m.map(e => e.value), [m]);
   r.useEffect(() => {
-    _.default.track(b.rMx.OPEN_MODAL, {
+    l.default.track(s.rMx.OPEN_MODAL, {
       type: "Ignore User Feedback"
     })
   }, []);
@@ -30,8 +30,8 @@ function m(e) {
       rating: r,
       problem: a,
       feedback: i
-    } = e, _ = null == r;
-    (0, l.wT)(r, i, null != (t = null == a ? true : a.value) ? t : null, _), _ || (0, c.ZDy)(async () => {
+    } = e, l = null == r;
+    (0, _.wT)(r, i, null != (t = null == a ? true : a.value) ? t : null, l), l || (0, c.ZDy)(async () => {
       let {
         default: e
       } = await o.e("14466").then(o.bind(o, 729328));
@@ -62,14 +62,14 @@ function m(e) {
     header: u.intl.string(u.t.Ib6biY),
     body: u.intl.string(u.t["uW0/nZ"]),
     problemTitle: u.intl.string(u.t.avs5Vl),
-    problems: d,
+    problems: m,
     freeformNeededProblems: p,
     onSubmit: f,
     onClose: t,
-    transitionState: m,
-    otherKey: s.XL.SOMETHING_ELSE,
+    transitionState: d,
+    otherKey: b.XL.SOMETHING_ELSE,
     hideHelpDeskLink: true,
     hideDontShowAgainCheckbox: true,
-    freeformDescription: e => null == e ? null : e.value === s.XL.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel5)
+    freeformDescription: e => null == e ? null : e.value === b.XL.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel5)
   })
 }

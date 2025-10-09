@@ -160,7 +160,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     message: t
   } = e;
@@ -175,7 +175,7 @@ function L(e) {
   i.message = (0, s.wi)(r.message, t), h.set(n, i)
 }
 
-function x() {
+function L() {
   if (0 === b.size || m) returnfalse;
   m = true
 }
@@ -188,7 +188,7 @@ function M(e) {
   m = true
 }
 
-function j(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -198,7 +198,7 @@ function j(e) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t
   } = e;
@@ -277,16 +277,16 @@ let Z = new B(Chunk570140.Z, {
   SAVED_MESSAGE_DELETE: R,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
-  MESSAGE_UPDATE: L,
-  GUILD_CREATE: x,
-  GUILD_UPDATE: x,
-  GUILD_DELETE: x,
+  MESSAGE_UPDATE: x,
+  GUILD_CREATE: L,
+  GUILD_UPDATE: L,
+  GUILD_DELETE: L,
   CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: j,
-  CHANNEL_DELETE: k,
+  CHANNEL_UPDATES: k,
+  CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
-  GUILD_ROLE_CREATE: x,
-  GUILD_ROLE_UPDATE: x,
-  GUILD_ROLE_DELETE: x,
+  GUILD_ROLE_CREATE: L,
+  GUILD_ROLE_UPDATE: L,
+  GUILD_ROLE_DELETE: L,
   MESSAGE_REMINDER_DUE: G
 })

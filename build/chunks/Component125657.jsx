@@ -63,20 +63,18 @@ function j(e) {
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(o.izJ, {
             className: x.divider
-          }), n.length > 0 ? (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(o.vwX, {
-              className: x.permissionHeader,
-              children: h.intl.format(h.t.PCs0oq, {
-                numRoles: n.length
-              })
-            }), (0, i.jsx)(c.ZP, {
+          }), n.length > 0 ? (0, i.jsx)(o.gNt, {
+            label: h.intl.format(h.t.PCs0oq, {
+              numRoles: n.length
+            }),
+            children: (0, i.jsx)(c.ZP, {
               className: x.rolePills,
               user: e,
               guild: t,
               userRoleIds: n,
               wrap: false,
               readOnly: true
-            })]
+            })
           }) : null, a.length > 0 || s.length > 0 ? (0, i.jsx)(d.Z, {
             grantedPermissions: a,
             grantedPermissionsHeader: h.intl.string(h.t["hA4+sr"]),

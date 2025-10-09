@@ -21,13 +21,13 @@ function f(e, t) {
       location: "usePollSources"
     }),
     f = (0, l.e7)([o.ZP], () => o.ZP.getRunningGames().length > 0),
-    m = r.useRef(0),
-    h = f ? 2e3 : 1e3,
+    h = r.useRef(0),
+    m = f ? 2e3 : 1e3,
     p = r.useRef(new s.V7);
   r.useEffect(() => {
     if (n) return;
     let r = p.current,
-      l = m.current,
+      l = h.current,
       s = {
         width: 376 * i,
         height: 212 * i,
@@ -39,15 +39,15 @@ function f(e, t) {
         windowSources: n,
         cameraSources: i
       } = await (0, c.t)(s);
-      m.current > l || (t({
+      h.current > l || (t({
         type: "set_source_candidates",
         screenSources: e,
         windowSources: n,
         deviceSources: i
-      }), r.start(h, o))
+      }), r.start(m, o))
     }
     return o(), () => {
-      m.current += 1, r.stop()
+      h.current += 1, r.stop()
     }
-  }, [t, h, e, n, i])
+  }, [t, m, e, n, i])
 }

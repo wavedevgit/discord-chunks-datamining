@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 152708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 var f = ((r = f || {}).WRAP = "wrap", r.STACK = "stack", r);
-class m extends(i = Chunk647438.PureComponent) {
+class h extends(i = Chunk647438.PureComponent) {
   renderChildren() {
     let e, {
       children: t,
@@ -51,9 +51,9 @@ class m extends(i = Chunk647438.PureComponent) {
     })
   }
 }
-u(m, "Layout", f), u(m, "defaultProps", {
+u(h, "Layout", f), u(h, "defaultProps", {
   children: [],
   layout: "wrap",
   columns: 4
 });
-let h = m
+let m = h

@@ -67,10 +67,10 @@ function u(e) {
       scrollToStart: d,
       scrollToEnd: f
     }), [t, d, f]),
-    [D, L] = r.useState(false),
-    x = r.useRef(D);
+    [D, x] = r.useState(false),
+    L = r.useRef(D);
   r.useLayoutEffect(() => {
-    x.current = D
+    L.current = D
   }, [D]), r.useLayoutEffect(() => {
     let e = T.current;
     if (null != e && u) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", a, {
@@ -80,18 +80,18 @@ function u(e) {
     };
 
     function n() {
-      L(true)
+      x(true)
     }
 
     function r(e) {
-      e.currentTarget.contains(e.relatedTarget) || (L(false), requestAnimationFrame(() => {
+      e.currentTarget.contains(e.relatedTarget) || (x(false), requestAnimationFrame(() => {
         let e = v.current;
         null !== e && null == A((0, l.P1)(e)) && R((0, l.P1)(t, l.kn))
       }))
     }
     async function i() {
       let e = T.current;
-      if (x.current || null == e) return;
+      if (L.current || null == e) return;
       let n = v.current;
       if (g && null !== n) {
         let t = (0, l.P1)(n),
@@ -121,26 +121,26 @@ function u(e) {
         return
       }
     }), [E, b]),
-    j = r.useCallback(async () => {
+    k = r.useCallback(async () => {
       let e = await w.getNextFocusableElement(M),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? P(t) : null == e && null != p && p()
     }, [w, M, p, P]),
-    k = r.useCallback(async () => {
+    j = r.useCallback(async () => {
       let e = await w.getPreviousFocusableElement(M),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? P(t) : null == e && null != _ && _()
     }, [w, M, _, P]),
     U = r.useCallback(e => {
-      if (!S.current || !E && !x.current) return;
+      if (!S.current || !E && !L.current) return;
       let n = y === s.hy.HORIZONTAL ? s.R8.RIGHT : s.R8.DOWN,
         r = y === s.hy.HORIZONTAL ? s.R8.LEFT : s.R8.UP;
       switch (e.key) {
         case n:
-          e.stopPropagation(), e.preventDefault(), j();
+          e.stopPropagation(), e.preventDefault(), k();
           return;
         case r:
-          e.stopPropagation(), e.preventDefault(), k();
+          e.stopPropagation(), e.preventDefault(), j();
           return;
         case s.R8.HOME:
           e.stopPropagation(), e.preventDefault(), d().then(() => {
@@ -170,7 +170,7 @@ function u(e) {
           }
         }
       }
-    }, [j, k, t, y, f, d, P, E]),
+    }, [k, j, t, y, f, d, P, E]),
     G = r.useCallback(e => {
       v.current = null != e ? (0, l.jb)(t, e) : null, (0, a.h)(t, e, g)
     }, [t, g]);
@@ -193,11 +193,11 @@ function u(e) {
       let n = await (0, o.KG)(null != (e = T.current) ? e : document.body, c(t, T));
       null !== n && P(n)
     },
-    focusPreviousItem: k,
-    focusNextItem: j,
+    focusPreviousItem: j,
+    focusNextItem: k,
     focusedItemId() {
       let e = v.current;
       return e ? (0, l.x3)(e) : null
     }
-  }), [t, U, y, D, g, G, k, j, P])
+  }), [t, U, y, D, g, G, j, k, P])
 }

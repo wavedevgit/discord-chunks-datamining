@@ -29,7 +29,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class Z extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   handleValueRender(e) {
     return "".concat((-((100 - e) * 1)).toFixed(0), "dB")
   }
@@ -86,7 +86,7 @@ class Z extends Chunk647438.PureComponent {
   }
 }
 
-function b(e) {
+function Z(e) {
   let t, {
       mediaEngineContext: n,
       speaking: i = false
@@ -94,10 +94,10 @@ function b(e) {
     {
       inputVolume: h,
       outputVolume: c,
-      inputMode: m,
+      inputMode: j,
       shortcut: C,
       vadThreshold: T,
-      vadAutoThreshold: b,
+      vadAutoThreshold: Z,
       delay: M
     } = (0, s.cj)([g.Z], () => ({
       inputVolume: g.Z.getInputVolume(),
@@ -110,63 +110,63 @@ function b(e) {
     })),
     v = [{
       value: x.pM4.VOICE_ACTIVITY,
-      name: j.intl.string(j.t.cHCEOD)
+      name: V.intl.string(V.t.cHCEOD)
     }, {
       value: x.pM4.PUSH_TO_TALK,
-      name: j.intl.string(j.t.Q8gkVF)
+      name: V.intl.string(V.t.Q8gkVF)
     }];
-  return t = m === x.pM4.PUSH_TO_TALK ? (0, l.jsxs)(o.Kqy, {
+  return t = j === x.pM4.PUSH_TO_TALK ? (0, l.jsxs)(o.Kqy, {
     gap: 20,
     children: [(0, l.jsx)(o.gNt, {
-      label: j.intl.string(j.t.YkDjVF),
+      label: V.intl.string(V.t.YkDjVF),
       children: (0, l.jsx)(d.Z, {
         defaultValue: C,
-        onChange: e => r.Z.setMode(m, {
+        onChange: e => r.Z.setMode(j, {
           shortcut: e
         }, n)
       })
     }), (0, l.jsx)(o.iRW, {
-      label: j.intl.string(j.t.y0ShVl),
+      label: V.intl.string(V.t.y0ShVl),
       initialValue: M,
-      onValueChange: e => r.Z.setMode(m, {
+      onValueChange: e => r.Z.setMode(j, {
         delay: e
       }, n),
       onValueRender: e => e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "ms"),
       maxValue: x.qhL
     })]
-  }) : (0, l.jsx)(Z, {
+  }) : (0, l.jsx)(b, {
     speaking: i,
-    inputMode: m,
+    inputMode: j,
     threshold: T,
-    autoThreshold: b,
-    onThresholdChange: (e, t) => r.Z.setMode(m, {
+    autoThreshold: Z,
+    onThresholdChange: (e, t) => r.Z.setMode(j, {
       threshold: e,
       autoThreshold: t
     }, n)
   }), (0, l.jsxs)(o.Kqy, {
     gap: 20,
     children: [(0, l.jsx)(u.j, {
-      label: j.intl.string(j.t.hHMYbW),
-      deviceType: V.h7.AUDIO_INPUT,
+      label: V.intl.string(V.t.hHMYbW),
+      deviceType: m.h7.AUDIO_INPUT,
       location: "VoiceSettingsModal"
     }), (0, l.jsx)(o.iRW, {
-      label: j.intl.string(j.t.OX2Bnp),
+      label: V.intl.string(V.t.OX2Bnp),
       initialValue: (0, p.P)(h),
       asValueChanges: e => r.Z.setInputVolume((0, p.A)(e))
     }), (0, l.jsx)(u.j, {
-      label: j.intl.string(j.t.dl18zc),
-      deviceType: V.h7.AUDIO_OUTPUT,
+      label: V.intl.string(V.t.dl18zc),
+      deviceType: m.h7.AUDIO_OUTPUT,
       location: "VoiceSettingsModal"
     }), (0, l.jsx)(o.iRW, {
-      label: j.intl.string(j.t.eATD2N),
+      label: V.intl.string(V.t.eATD2N),
       initialValue: (0, p.P)(c),
       maxValue: 200,
       asValueChanges: e => r.Z.setOutputVolume((0, p.A)(e))
     }), (0, l.jsx)(a.E, {
-      label: j.intl.string(j.t["pS+K2N"]),
+      label: V.intl.string(V.t["pS+K2N"]),
       onChange: e => r.Z.setMode(e, {}, n),
       options: v,
-      value: m
+      value: j
     }), t]
   })
 }
@@ -177,17 +177,17 @@ function M(e) {
     null != x.e3s && e.onClose()
   }), (0, l.jsxs)(o.Y0X, {
     transitionState: e.transitionState,
-    "aria-label": j.intl.string(j.t.NiTd0d),
+    "aria-label": V.intl.string(V.t.NiTd0d),
     parentComponent: "VoiceSettingsModal",
     children: [(0, l.jsxs)(o.xBx, {
       children: [(0, l.jsxs)(h.Z.Child, {
-        children: [(0, l.jsx)(o.vwX, {
-          tag: "h1",
+        children: [(0, l.jsx)(o.X6q, {
+          variant: "heading-lg/semibold",
           className: C.marginReset,
-          children: j.intl.string(j.t.NiTd0d)
+          children: V.intl.string(V.t.NiTd0d)
         }), (0, l.jsx)(o.Text, {
           variant: "text-xs/normal",
-          className: m.title,
+          className: j.title,
           children: e.title
         })]
       }), (0, l.jsx)(h.Z.Child, {
@@ -197,8 +197,8 @@ function M(e) {
         })
       })]
     }), (0, l.jsx)(o.hzk, {
-      children: (0, l.jsx)(b, {
-        mediaEngineContext: null != (t = e.mediaEngineContext) ? t : V.Yn.DEFAULT
+      children: (0, l.jsx)(Z, {
+        mediaEngineContext: null != (t = e.mediaEngineContext) ? t : m.Yn.DEFAULT
       })
     })]
   })

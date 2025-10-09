@@ -84,7 +84,7 @@ let q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, G.getPlatform)(), u = s.tq || s.Em, m = (0, c.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), j = i.useRef(document.body), k = "".concat(m);
+    } = e, a = (0, G.getPlatform)(), u = s.tq || s.Em, m = (0, c.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), j = "".concat(m);
     return (0, C.G)(), (0, R.G)("AppSkeleton"), (0, r.jsx)(M.w, {
       children: (0, r.jsxs)(E.Z, {
         children: [(0, r.jsx)(Z.Z, {
@@ -92,8 +92,8 @@ let q = (0, Chunk663993.Un)({
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(V.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: j,
-              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(L.Wu, {
+              containerRef: k,
+              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(x.Wu, {
                 appContext: K.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(P.yP, {
@@ -112,7 +112,7 @@ let q = (0, Chunk663993.Un)({
                                 children: t
                               }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(P.Un, {}), (0, r.jsx)(D.ot, {}), (0, r.jsx)(d.Ixi, {
                                 appContext: K.IlC.APP
-                              }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
+                              }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
                             })
                           })
                         })
@@ -129,5 +129,5 @@ let q = (0, Chunk663993.Un)({
           })
         })]
       })
-    }, k)
+    }, j)
   }

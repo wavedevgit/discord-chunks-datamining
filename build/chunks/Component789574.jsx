@@ -27,8 +27,8 @@ function b(e) {
     refToScroller: t
   } = e, n = (0, l.e7)([g.Z], () => g.Z.getGuild()), {
     section: i,
-    sectionId: s,
-    integrations: a,
+    sectionId: a,
+    integrations: s,
     editedIntegration: o,
     webhooks: d,
     editedWebhook: u,
@@ -47,8 +47,8 @@ function b(e) {
   return null == n ? null : (0, r.jsx)(c.Z, {
     guild: n,
     section: i,
-    sectionId: s,
-    integrations: a,
+    sectionId: a,
+    integrations: s,
     webhooks: d,
     editedIntegration: o,
     editedWebhook: u,

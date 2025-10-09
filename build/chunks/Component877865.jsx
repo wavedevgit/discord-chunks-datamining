@@ -115,10 +115,10 @@ function R(e) {
         e[I] = t, s(e)
       }
     },
-    L = i.useCallback(e => {
+    x = i.useCallback(e => {
       P(e.hex)
     }, []),
-    x = e => {
+    L = e => {
       if ((0, b.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
         t[I] = e.hex, s(t)
@@ -131,14 +131,14 @@ function R(e) {
         } = await c.open();
         (0, b.J4)(), D(e)
       } catch (e) {}
-    }, j = () => {
+    }, k = () => {
       if (o.length === S) return;
       0 === o.length && (0, E.ft)(), (0, b.gG)();
       let e = o.length > 0 ? o[o.length - 1] : R,
         t = o.length > 0 ? N(e) : e,
         n = [...o, t];
       s(n), A(n.length - 1)
-    }, k = e => {
+    }, j = e => {
       if (o.length > 1) {
         (0, b.JL)();
         let t = o.filter((t, n) => n !== e);
@@ -159,7 +159,7 @@ function R(e) {
         text: O.intl.string(y.default["61KGaW"]),
         shouldShow: o.length === S,
         children: (0, r.jsx)(h.P3F, {
-          onClick: o.length === S ? true : j,
+          onClick: o.length === S ? true : k,
           className: l()(v.addColorButton, {
             [v.disabled]: o.length === S
           }),
@@ -175,8 +175,8 @@ function R(e) {
       selectedIndex: I,
       onColorSelect: U
     }), (0, r.jsx)(T, {
-      onChange: L,
-      onChangeComplete: x,
+      onChange: x,
+      onChangeComplete: L,
       color: R
     }), (0, r.jsxs)("div", {
       className: v.hexInputContainer,
@@ -203,7 +203,7 @@ function R(e) {
           children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             size: "sm",
-            onClick: () => k(I),
+            onClick: () => j(I),
             icon: f.X,
             "aria-label": O.intl.string(y.default["rTik5+"])
           })

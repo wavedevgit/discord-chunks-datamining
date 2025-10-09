@@ -21,16 +21,16 @@ function u(e) {
   } = e, {
     editStateId: u,
     guildId: g
-  } = (0, l.N)(), [m, p] = a.GP(u, g);
+  } = (0, l.N)(), [m, p] = s.GP(u, g);
   return (0, r.jsx)(i.FXm, {
     onChange: e => p(e),
     options: [{
       name: d.intl.string(d.t["vs2T+P"]),
-      value: s.I.SOME_CHANNELS_ACCESS,
+      value: a.I.SOME_CHANNELS_ACCESS,
       leadingIcon: (0, i.GSL)(c.Z)
     }, {
       name: d.intl.string(d.t.l4Tr7e),
-      value: s.I.ALL_CHANNELS_ACCESS,
+      value: a.I.ALL_CHANNELS_ACCESS,
       leadingIcon: (0, i.GSL)(o.Z)
     }],
     value: m,

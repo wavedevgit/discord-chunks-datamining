@@ -92,9 +92,9 @@ async function v(e) {
     inPopout: P,
     applicationId: w,
     intent: D
-  } = e, L = P ? i.u1M : i.z1l, x = l.default.getCurrentUser();
-  if (null == x) return;
-  if (!x.verified) return void(0, i.ZDy)(async () => {
+  } = e, x = P ? i.u1M : i.z1l, L = l.default.getCurrentUser();
+  if (null == L) return;
+  if (!L.verified) return void(0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -107,12 +107,12 @@ async function v(e) {
       }))
     }
   }, {
-    contextKey: L
+    contextKey: x
   });
   let M = [];
   u.Z.isLoadedForPremiumSKUs() || M.push((0, s.Y2)()), c.Z.hasFetched || (M.push(a.jg()), M.push((0, o.X8)())), M.length > 0 && (null == I || I(true), await Promise.allSettled(M), null == I || I(false));
-  let j = (0, f.vx)(c.Z.boostSlots),
-    k = j.length,
+  let k = (0, f.vx)(c.Z.boostSlots),
+    j = k.length,
     U = e => {
       null == v || v(), null == N || N(e)
     },
@@ -122,9 +122,9 @@ async function v(e) {
         location_section: h.section
       })
     };
-  if (k > 0 && (null == y || k >= y)) {
+  if (j > 0 && (null == y || j >= y)) {
     let e;
-    1 === k ? e = j.slice(0, 1) : null != y && (e = j.slice(0, y)), await (0, i.ZDy)(async () => {
+    1 === j ? e = k.slice(0, 1) : null != y && (e = k.slice(0, y)), await (0, i.ZDy)(async () => {
       let {
         default: t
       } = await Promise.resolve().then(n.bind(n, 760558));
@@ -146,7 +146,7 @@ async function v(e) {
       onCloseRequest: () => {
         (0, i.Mr3)(O), U(false)
       },
-      contextKey: L
+      contextKey: x
     })
   } else(0, _.Z)({
     analyticsLocations: t,

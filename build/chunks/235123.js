@@ -45,9 +45,9 @@ function h(e, t, n) {
     w = false;
   T || !R && P || (w = 0);
   let D = (0, s.z)(h.props),
-    L = (0, l.fU)(h.props),
+    x = (0, l.fU)(h.props),
     {
-      focusableProps: x
+      focusableProps: L
     } = (0, d.kc)({
       isDisabled: T
     }, n);
@@ -59,7 +59,7 @@ function h(e, t, n) {
       id: g,
       onPress: () => E ? E(new Set([h.key])) : null
     },
-    rowProps: (0, c.d)(x, b, D, L, {
+    rowProps: (0, c.d)(L, b, D, x, {
       tabIndex: w,
       onKeyDown: E ? S : true,
       "aria-describedby": N["aria-describedby"]

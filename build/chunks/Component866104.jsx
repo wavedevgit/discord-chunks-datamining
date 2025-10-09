@@ -106,11 +106,11 @@ function R(e) {
   }), g = (null != (n = null == o || null == (t = o.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), R = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: P,
     isPhantomPreview: w
-  } = (0, O.m)(), D = P === v.y.GUILD_PRODUCTS_PREVIEW ? T.intl.string(T.t["LvXy/P"]) : T.intl.string(T.t.XyqKh4), L = e => {
+  } = (0, O.m)(), D = P === v.y.GUILD_PRODUCTS_PREVIEW ? T.intl.string(T.t["LvXy/P"]) : T.intl.string(T.t.XyqKh4), x = e => {
     null != e && e.clientHeight > 30 && b(2)
   };
 
-  function x(e, t) {
+  function L(e, t) {
     return (0, r.jsx)("span", {
       style: {
         color: _
@@ -153,7 +153,7 @@ function R(e) {
         horizontal: true
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          ref: L,
+          ref: x,
           children: (0, r.jsx)(l.X6q, {
             variant: "heading-xl/semibold",
             color: "header-primary",
@@ -169,7 +169,7 @@ function R(e) {
           color: "text-default",
           children: T.intl.format(T.t["7JwrlJ"], {
             username: d,
-            usernameHook: x
+            usernameHook: L
           })
         }), (0, r.jsx)(l.LZC, {
           size: 9

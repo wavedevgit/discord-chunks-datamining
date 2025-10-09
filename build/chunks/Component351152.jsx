@@ -27,11 +27,11 @@ function b(e) {
   let {
     guildId: t,
     onClick: n
-  } = e, i = (0, a.e7)([f.Z], () => f.Z.getGuild(t)), l = (0, a.e7)([u.ZP, f.Z, m.Z], () => u.ZP.getChannels(t)[u.Zb].some(e => {
+  } = e, i = (0, a.e7)([f.Z], () => f.Z.getGuild(t)), l = (0, a.e7)([u.ZP, f.Z, h.Z], () => u.ZP.getChannels(t)[u.Zb].some(e => {
     let {
       channel: t
     } = e;
-    return (0, g.JL)(t, f.Z, m.Z)
+    return (0, g.JL)(t, f.Z, h.Z)
   }));
   return null != i && l ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
@@ -54,7 +54,7 @@ function b(e) {
 function S(e) {
   let {
     onSelectGuild: t
-  } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
+  } = e, n = (0, a.e7)([m.ZP], () => m.ZP.getGuildFolders());
   return (0, r.jsx)(x.Z, {
     title: _.intl.string(_.t.JsqeEh),
     scrollerClassName: l()(j.guildScroller, v.marginBottom),

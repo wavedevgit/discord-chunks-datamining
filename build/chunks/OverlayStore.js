@@ -462,11 +462,11 @@ function D(e) {
     meta: n
   } = e;
   return N(t, (e, t) => {
-    L(e, n)
+    x(e, n)
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   var n;
   i = O(b({}, i), {
     [e.id]: e.merge({
@@ -475,7 +475,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     widgetId: t,
     pinned: n
@@ -509,7 +509,7 @@ function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   i = O(b({}, i), {
     [e.id]: e.merge({
       showExtrasHintTimestamp: Date.now()
@@ -517,12 +517,12 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     widgetId: t
   } = e;
   return N(t, (e, t) => {
-    j(e)
+    k(e)
   })
 }
 
@@ -847,13 +847,13 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
 }]);
 let q = new z(Chunk570140.Z, {
   LAYOUT_CREATE: A,
-  LAYOUT_SET_PINNED: x,
+  LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: R,
   LAYOUT_SET_TOP_WIDGET: P,
   LAYOUT_DELETE_WIDGET: U,
   LAYOUT_DELETE_ALL_WIDGETS: G,
   LAYOUT_CREATE_WIDGETS: B,
   LAYOUT_SET_WIDGET_META: D,
-  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: k,
+  LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: j,
   LAYOUT_SET_DEFAULT_CONFIG: Z
 })

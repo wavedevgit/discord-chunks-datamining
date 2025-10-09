@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk894723 = require("./894723.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -104,7 +104,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       ownerTooltipText: i
     } = e;
     return null != t && t && null == n ? (0, r.jsx)(s.u, {
-      __unsupportedReactNodeAsText: null != i ? i : x.intl.string(x.t.pclUFB),
+      __unsupportedReactNodeAsText: null != i ? i : L.intl.string(L.t.pclUFB),
       children: (0, r.jsx)(c.CEn, {
         size: "md",
         color: "currentColor",
@@ -118,7 +118,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onClickPremiumGuildIcon: n
     } = e;
     return null == t ? null : (0, r.jsx)(s.u, {
-      text: x.intl.formatToPlainString(x.t.IWkAq6, {
+      text: L.intl.formatToPlainString(L.t.IWkAq6, {
         date: t
       }),
       asContainer: true,
@@ -221,7 +221,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       currentUser: h
     } = e, m = a === w.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? w.Skl.STREAMING : a;
     return E = m ? true : E, (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g, G(k({}, o), {
+      children: [(0, r.jsx)(g, G(j({}, o), {
         size: c.EFr.SIZE_32,
         src: s,
         isMobile: l,
@@ -234,7 +234,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })), (0, r.jsx)(T.Z, {
         confettiSpawnRef: p,
         shouldFire: d && null != h && t.id !== h.id,
-        confettiLocation: L.Hn.MEMBER_USER
+        confettiLocation: x.Hn.MEMBER_USER
       })]
     })
   }),
@@ -296,9 +296,9 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       shouldAnimateStatus: T = false,
       isMobile: R,
       premiumSince: D,
-      channel: L,
-      guildId: x,
-      className: j,
+      channel: x,
+      guildId: L,
+      className: k,
       nameplate: U,
       hideClanTag: Z = false,
       hideSubtext: F = false,
@@ -320,7 +320,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       voiceChannel: eE
     } = (0, _.Z)({
       userId: el,
-      guildId: x
+      guildId: L
     }), {
       voiceActivityStatusEnabled: eb
     } = (0, d.U)({
@@ -333,10 +333,10 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       userId: el,
       size: c.EFr.SIZE_32,
       animateOnHover: !(t || ef),
-      guildId: x
+      guildId: L
     }), eT = null != eo ? eo : {}, {
       onFocus: eS
-    } = eT, eA = B(eT, ["onFocus"]), eC = (0, S.X7)(x, el, null != a ? a : null), [eN, eR] = i.useState(false);
+    } = eT, eA = B(eT, ["onFocus"]), eC = (0, S.X7)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
     i.useEffect(() => {
       t && eR(false)
     }, [t]);
@@ -345,19 +345,19 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eD = i.useCallback(() => {
         e_(true)
       }, []),
-      eL = i.useCallback(() => {
+      ex = i.useCallback(() => {
         e_(false)
       }, []),
-      ex = i.useCallback(() => {
+      eL = i.useCallback(() => {
         eh(true), null == eS || eS()
       }, [eS]),
       eM = i.useCallback(() => {
         eh(false)
       }, []),
-      ej = i.useCallback(e => {
+      ek = i.useCallback(e => {
         eg(e)
       }, []),
-      ek = i.useCallback(e => null == eP ? null : (0, r.jsx)(C.Z, G(k({
+      ej = i.useCallback(e => null == eP ? null : (0, r.jsx)(C.Z, G(j({
         name: null != E ? E : ec,
         quest: eP,
         memberListItemRef: ed,
@@ -370,17 +370,17 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       className: M.placeholder
     }) : (0, r.jsx)(c.yRy, {
       targetElementRef: ed,
-      renderPopout: ek,
+      renderPopout: ej,
       position: "bottom",
       shouldShow: ew,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.yRy.Animation.NONE,
       spacing: -V,
-      children: () => (0, r.jsx)(g.Z, k({
+      children: () => (0, r.jsx)(g.Z, j({
         ref: ed,
         selected: t,
-        className: o()(M.member, j, {
+        className: o()(M.member, k, {
           [M.offline]: I === w.Skl.OFFLINE && !t,
           [M.flatBottom]: ew
         }),
@@ -390,7 +390,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         onMouseDown: Y,
         onContextMenu: J,
         onMouseEnter: eD,
-        onMouseLeave: eL,
+        onMouseLeave: ex,
         onBlur: eM,
         hovered: ef,
         name: null == p ? (0, r.jsx)("span", {
@@ -402,7 +402,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             colorStrings: eC,
             hideClanTag: Z,
             user: b,
-            guildId: x,
+            guildId: L,
             isHovering: ef
           })
         }) : (0, r.jsx)(s.u, {
@@ -416,7 +416,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
               colorStrings: eC,
               hideClanTag: Z,
               user: b,
-              guildId: x,
+              guildId: L,
               isHovering: ef
             })
           })
@@ -431,7 +431,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           isMobile: R,
           isTyping: h,
           avatarDecorationSrc: eO,
-          handleSetTypingRef: ej,
+          handleSetTypingRef: ek,
           typingRef: em,
           currentUser: y
         }),
@@ -443,7 +443,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           applicationStream: v,
           voiceStatusChannel: ey,
           user: b,
-          channel: L,
+          channel: x,
           isHoveringOrFocusing: ef || ep,
           quest: eP,
           hideTooltip: H
@@ -462,7 +462,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         "aria-posinset": en,
         id: ei,
         tabIndex: ea,
-        onFocus: ex,
+        onFocus: eL,
         focusProps: {
           offset: {
             top: 4,

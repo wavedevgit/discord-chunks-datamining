@@ -106,7 +106,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       analyticsLocations: z
     } = (0, _.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, I.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
-      onPickerOpen: ex
+      onPickerOpen: eL
     }));
     let el = (0, A.Sd)(c),
       ec = 0 === el.filter(e => e.type !== N.Ih.EMPTY_GUILD_UPSELL).length,
@@ -120,7 +120,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ed = b._O.useSetting(),
       ef = i.useMemo(() => new Set(ed), [ed]),
       e_ = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
-      ep = i.useMemo(() => (0, x.S)(ea, e_, c), [ea, e_, c]),
+      ep = i.useMemo(() => (0, L.S)(ea, e_, c), [ea, e_, c]),
       eh = (0, A.RJ)(),
       em = (0, A.LZ)(),
       eg = (0, l.cj)([C.Z], () => C.Z.getAllGuildStickers()),
@@ -154,8 +154,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         } = t;
         switch (e.type) {
           case N.al.CREATE_STICKER:
-            O.default.track(k.rMx.OPEN_MODAL, {
-              type: k.jXE.CREATE_STICKER_MODAL,
+            O.default.track(j.rMx.OPEN_MODAL, {
+              type: j.jXE.CREATE_STICKER_MODAL,
               location: Z
             }), (0, u.ZDy)(async () => {
               let {
@@ -175,7 +175,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         getRowProps: eP,
         gridContainerProps: ew,
         handleGridContainerKeyDown: eD,
-        isUsingKeyboardNavigation: eL
+        isUsingKeyboardNavigation: ex
       } = (0, R.t)({
         columnCounts: eC,
         stickersListRef: ee,
@@ -183,10 +183,10 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onGridItemSelect: eN,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: j.Vr
+        gridNavigatorId: k.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
-    let ex = () => {
+    let eL = () => {
       let e = c.getGuildId(),
         t = [];
       if (null !== e) {
@@ -213,15 +213,15 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       null == (e = er.current) || e.focus()
     }, []);
     let eM = i.useCallback(() => {
-      G(), O.default.track(k.rMx.PREMIUM_PROMOTION_OPENED, {
-        location_section: k.jXE.STICKER_PICKER_UPSELL
+      G(), O.default.track(j.rMx.PREMIUM_PROMOTION_OPENED, {
+        location_section: j.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
     }, [G]);
     return (0, r.jsxs)(_.Gt, {
       value: z,
       children: [!(q && ec) && (0, r.jsx)("div", {
         className: U.header,
-        children: (0, r.jsx)(L.Z, {
+        children: (0, r.jsx)(x.Z, {
           ref: er,
           onKeyDown: eD,
           stickersListRef: ee,
@@ -234,7 +234,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         children: [(0, r.jsx)("div", F(B({
           ref: X,
           className: U.listWrapper,
-          id: j.Vr
+          id: k.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -244,7 +244,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             getStickerRowProps: eP,
             gridWidth: eu,
             gutterWidth: eA,
-            isUsingKeyboardNavigation: eL,
+            isUsingKeyboardNavigation: ex,
             onSelectSticker: eO,
             rowCount: eI,
             rowCountBySection: eT,
@@ -263,8 +263,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: j.nZ,
-    "aria-labelledby": j.ED,
+    id: k.nZ,
+    "aria-labelledby": k.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator

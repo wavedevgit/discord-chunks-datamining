@@ -2,7 +2,7 @@
 /** chunk id: 594496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -39,15 +39,15 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk737788 = require("./737788.js");
 
-function j(e) {
-  var t, n, i, j;
+function k(e) {
+  var t, n, i, k;
   let {
-    guild: k,
+    guild: j,
     nameplateEnabled: U
   } = e, G = (0, o.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), B = (0, d.m)(L.PremiumTypes.TIER_2), {
+  }), B = (0, d.m)(x.PremiumTypes.TIER_2), {
     pendingAvatar: Z,
     pendingNickname: F,
     pendingBanner: V,
@@ -78,7 +78,7 @@ function j(e) {
   }), q = (0, v.SD)({
     userId: G.id,
     image: Z
-  }), X = null != k ? k : z;
+  }), X = null != j ? j : z;
   a()(null != X, "guild should not be null");
   let Q = (0, u.gS)(X.id),
     J = (0, o.e7)([T.ZP], () => null == X.id ? null : T.ZP.getMember(X.id, G.id)),
@@ -110,7 +110,7 @@ function j(e) {
       user: G,
       guild: X
     }, "nick"), (0, r.jsx)(O.Z, {
-      sectionTitle: x.intl.string(x.t["+T3RIy"]),
+      sectionTitle: L.intl.string(L.t["+T3RIy"]),
       errors: null == K ? true : K.pronouns,
       onPronounsChange: e => {
         (0, P.xs)(e, eo)
@@ -122,8 +122,8 @@ function j(e) {
       showOverlay: !et,
       children: [(0, r.jsx)(h.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t.lqaIxM), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [L.intl.string(L.t.lqaIxM), (0, r.jsx)(s.u, {
+            text: L.intl.string(L.t["5AFxuL"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -138,8 +138,8 @@ function j(e) {
         disabled: !et
       }, "avatar"), (0, r.jsx)(p.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t["7v0T9P"]), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [L.intl.string(L.t["7v0T9P"]), (0, r.jsx)(s.u, {
+            text: L.intl.string(L.t["5AFxuL"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -156,7 +156,7 @@ function j(e) {
         user: G,
         guild: X,
         titleIcon: (0, r.jsx)(s.u, {
-          text: x.intl.string(x.t["5AFxuL"]),
+          text: L.intl.string(L.t["5AFxuL"]),
           children: (0, r.jsx)(l.SrA, {
             size: "md",
             color: "currentColor",
@@ -165,8 +165,8 @@ function j(e) {
         })
       }, "nameplate"), (0, r.jsx)(b.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t.wR5wOj), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [L.intl.string(L.t.wR5wOj), (0, r.jsx)(s.u, {
+            text: L.intl.string(L.t["5AFxuL"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -192,10 +192,10 @@ function j(e) {
         guildId: null == X ? true : X.id,
         showResetThemeButton: ei
       }), (0, r.jsx)(_.Z, {
-        placeholder: x.intl.string(x.t["/7NKgo"]),
+        placeholder: L.intl.string(L.t["/7NKgo"]),
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t.jGoPJS), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [L.intl.string(L.t.jGoPJS), (0, r.jsx)(s.u, {
+            text: L.intl.string(L.t["5AFxuL"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -204,7 +204,7 @@ function j(e) {
           })]
         }),
         onBioChange: e => (0, P.qN)(e, ea),
-        errors: null != (j = null == K ? true : K.bio) ? j : null == Q ? true : Q.bio,
+        errors: null != (k = null == K ? true : K.bio) ? k : null == Q ? true : Q.bio,
         pendingBio: H,
         currentBio: ea,
         disabled: !et

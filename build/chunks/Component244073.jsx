@@ -73,7 +73,7 @@ class D extends Chunk647438.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, h.F6)(e, E.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : C.ME;
+    } = this.props, n = (0, h.F6)(e, E.default, v.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : C.ME;
     return (0, i.jsx)(l.rU, {
       to: C.Z5c.CHANNEL(s),
       onClick: t => {
@@ -197,7 +197,7 @@ function k(e) {
   }(e, ["context", "lobbyId", "channel"]);
   let o = (0, a.e7)([O.Z], () => O.Z.getGuild(null == r ? true : r.getGuildId())),
     l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
+    [c, d] = (0, a.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
     [u, p, h] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
   return (0, i.jsx)(D, T(N({}, s), {
     context: t,

@@ -3,9 +3,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk392711 = require("./392711.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk481250 = require("./481250.jsx"),
@@ -25,9 +24,10 @@ function d(e) {
       value: e
     }, t)
   });
-  return (0, r.jsx)(l.hjN, {
-    tag: l.RB0.H2,
-    title: c.intl.string(c.t["2AGBWF"]),
-    children: (0, o.VE)(n)
+  return (0, r.jsxs)(l.Kqy, {
+    children: [(0, r.jsx)(l.X6q, {
+      variant: "heading-md/medium",
+      children: c.intl.string(c.t["2AGBWF"])
+    }), (0, o.VE)(n)]
   })
 }

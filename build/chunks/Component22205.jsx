@@ -2,7 +2,7 @@
 /** chunk id: 22205, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,9 +49,9 @@ let D = o().throttle(() => {
   }, 100, {
     trailing: false
   }),
-  L = 10 * Chunk70956.Z.Millis.SECOND;
+  x = 10 * Chunk70956.Z.Millis.SECOND;
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     error: a,
@@ -60,7 +60,7 @@ function x(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(T, L), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
+  (0, h.ZP)(() => (m.current = setTimeout(T, x), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
@@ -77,11 +77,11 @@ function x(e) {
     D = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
-    x = i.useCallback(e => {
+    L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    j = g ? (0, r.jsxs)("div", {
+    k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -104,12 +104,12 @@ function x(e) {
         })]
       })]
     }) : null,
-    k = g ? null : R.intl.string(R.t.oEJEFh),
+    j = g ? null : R.intl.string(R.t.oEJEFh),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
     title: R.intl.string(R.t.U38qZm),
-    body: j,
-    hint: U ? k : true,
+    body: k,
+    hint: U ? j : true,
     confirmText: R.intl.string(R.t.a3HlgI),
     cancelText: null != M ? R.intl.string(R.t.qIYnPj) : true,
     icon: (0, r.jsx)(b.Z, {
@@ -119,7 +119,7 @@ function x(e) {
     }),
     onNotificationClick: D,
     onConfirmClick: w,
-    onCancelClick: null != M ? x : true,
+    onCancelClick: null != M ? L : true,
     onDismissClick: o,
     expand: true,
     locked: true,
@@ -166,7 +166,7 @@ class M extends Chunk647438.PureComponent {
     } = this.state;
     return null != require ? Chunk647438 ? (0, Chunk951288.jsx)(Chunk333031.Z, {
       className: Chunk534887.errorClickNotification,
-      children: (0, Chunk951288.jsx)(x, {
+      children: (0, Chunk951288.jsx)(L, {
         error: require,
         onLock: () => {
           var e;
@@ -205,4 +205,4 @@ class M extends Chunk647438.PureComponent {
     }), w(this, "pid", null)
   }
 }
-let j = M
+let k = M

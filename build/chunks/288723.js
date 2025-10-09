@@ -35,30 +35,30 @@ let d = {
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, w = true, D = C[0], L = 0; L < C.length; L++) {
-        var x = C[L],
-          M = (0, i.Z)(x),
-          j = (0, c.Z)(x) === l.BL,
-          k = [l.we, l.I].indexOf(M) >= 0,
-          U = k ? "width" : "height",
+        }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, w = true, D = C[0], x = 0; x < C.length; x++) {
+        var L = C[x],
+          M = (0, i.Z)(L),
+          k = (0, c.Z)(L) === l.BL,
+          j = [l.we, l.I].indexOf(M) >= 0,
+          U = j ? "width" : "height",
           G = (0, o.Z)(t, {
-            placement: x,
+            placement: L,
             boundary: g,
             rootBoundary: E,
             altBoundary: b,
             padding: m
           }),
-          B = k ? j ? l.F2 : l.t$ : j ? l.I : l.we;
+          B = j ? k ? l.F2 : l.t$ : k ? l.I : l.we;
         N[U] > R[U] && (B = (0, r.Z)(B));
         var Z = (0, r.Z)(B),
           F = [];
         if (f && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[Z] <= 0), F.every(function(e) {
             return e
           })) {
-          D = x, w = false;
+          D = L, w = false;
           break
         }
-        P.set(x, F)
+        P.set(L, F)
       }
       if (w)
         for (var V = O ? 3 : 1, H = function(e) {

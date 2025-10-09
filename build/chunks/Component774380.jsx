@@ -27,7 +27,7 @@ let m = e => {
         fullWidth: true,
         text: u.intl.string(u.t.hvVgAQ),
         onClick: () => {
-          (0, s.z)(), null != t && t()
+          (0, a.z)(), null != t && t()
         }
       })
     });
@@ -37,10 +37,10 @@ let m = e => {
         className: g.tier0Heading,
         variant: "heading-xxl/extrabold",
         children: u.intl.string(u.t["qUl+Ky"])
-      }), (0, r.jsx)(a.wp, {
+      }), (0, r.jsx)(s.wp, {
         className: g.tier0Card,
         ctaButton: n,
-        featureSet: a.uZ.BOOSTING,
+        featureSet: s.uZ.BOOSTING,
         showWumpus: true,
         showYearlyPrice: true
       })]

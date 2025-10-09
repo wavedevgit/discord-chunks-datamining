@@ -63,15 +63,15 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = null,
-  x = {},
+let x = null,
+  L = {},
   M = null;
 
-function j() {
+function k() {
   r = new Map, i = {}, a = {}, o = {}
 }
 
-function k(e) {
+function j(e) {
   var t;
   null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : C.kod] = e
 }
@@ -115,7 +115,7 @@ function F(e) {
       selfStream: o,
       discoverable: s
     } = t;
-    if (o && null != i) return k({
+    if (o && null != i) return j({
       streamType: null != r ? N.lo.GUILD : N.lo.CALL,
       ownerId: n,
       guildId: r,
@@ -135,7 +135,7 @@ function V(e) {
   } = e, n = (0, p.my)(t);
   r.delete(t), r.set(t, D(P({}, n), {
     state: C.jm8.CONNECTING
-  })), n.ownerId === b.default.getId() && (x[n.channelId] = false)
+  })), n.ownerId === b.default.getId() && (L[n.channelId] = false)
 }
 
 function H(e) {
@@ -259,9 +259,9 @@ function Q(e) {
     id: t,
     channelId: n
   } = e;
-  L = t, Array.from(r.values()).forEach(e => {
-    (0, p.V9)(e) !== L && e.state === C.jm8.ENDED && G((0, p.V9)(e))
-  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (x[n] = false)
+  x = t, Array.from(r.values()).forEach(e => {
+    (0, p.V9)(e) !== x && e.state === C.jm8.ENDED && G((0, p.V9)(e))
+  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (L[n] = false)
 }
 
 function J(e) {
@@ -289,7 +289,7 @@ function J(e) {
   } else s.state === C.jm8.FAILED && o === C.si2.USER_REQUESTED && (l = C.jm8.FAILED);
   r.set(t, D(P({}, s), {
     state: l
-  })), l === C.jm8.ENDED && L !== t && G(t)
+  })), l === C.jm8.ENDED && x !== t && G(t)
 }
 
 function $(e) {
@@ -329,7 +329,7 @@ function et(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, p.DB)(L) && (null == L ? true : L.includes(b.default.getId())) && false === x[t] && true === n && (L = null), x[t] = n
+  (0, p.DB)(x) && (null == x ? true : x.includes(b.default.getId())) && false === L[t] && true === n && (x = null), L[t] = n
 }
 
 function en(e) {
@@ -349,19 +349,19 @@ function ei(e) {
   let t = y.Z.getBasicChannel(e.channelId);
   return null != t && (0, h.p9)(t, A.Z, O.Z, I.Z, f.default)[0]
 }
-j();
+k();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([I.Z], () => true), this.waitFor(_.ZP, I.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
+    this.syncWith([I.Z], () => true), this.waitFor(_.ZP, I.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(L, null == e ? true : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {
-      selfStreamParticipantsHidden: x
+      selfStreamParticipantsHidden: L
     }
   }
   isSelfStreamHidden(e) {
     var t;
-    return null != (t = x[e]) && t
+    return null != (t = L[e]) && t
   }
   getLastActiveStream() {
     var e;
@@ -479,7 +479,7 @@ let eo = new ea(Chunk570140.Z, {
   SET_STREAM_APP_INTENT: en,
   RTC_CONNECTION_STATE: ee,
   CHANNEL_RTC_SELECT_PARTICIPANT: Q,
-  CONNECTION_OPEN: j,
-  CONNECTION_CLOSED: j,
-  LOGOUT: j
+  CONNECTION_OPEN: k,
+  CONNECTION_CLOSED: k,
+  LOGOUT: k
 })

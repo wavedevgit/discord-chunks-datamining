@@ -107,7 +107,7 @@ function D(e) {
   O = e.afk
 }
 
-function L(e) {
+function x(e) {
   let {
     userId: t,
     speakingFlags: n
@@ -115,7 +115,7 @@ function L(e) {
   return n !== g.Dg.NONE && t === h.default.getId() && M({}), false
 }
 
-function x(e) {
+function L(e) {
   let {
     state: t
   } = e;
@@ -133,13 +133,13 @@ function M(e) {
   }) : N(), false)
 }
 
-function j() {
+function k() {
   if (!Chunk491966.Z.getConfig({
       location: "handleSettingsProtoUpdate"
     }).settings_updates) returnfalse;
   M({})
 }
-class k extends(i = Chunk442837.ZP.Store) {
+class j extends(i = Chunk442837.ZP.Store) {
   isIdle() {
     return y
   }
@@ -156,17 +156,17 @@ class k extends(i = Chunk442837.ZP.Store) {
     return I
   }
 }
-E(k, "displayName", "IdleStore");
-let U = new k(Chunk570140.Z, {
+E(j, "displayName", "IdleStore");
+let U = new j(Chunk570140.Z, {
   IDLE: w,
   AFK: D,
-  SPEAKING: L,
-  APP_STATE_UPDATE: x,
+  SPEAKING: x,
+  APP_STATE_UPDATE: L,
   OVERLAY_SET_NOT_IDLE: M,
   CHANNEL_SELECT: M,
   VOICE_CHANNEL_SELECT: M,
   WINDOW_FOCUS: M,
   OVERLAY_INITIALIZE: M,
   OVERLAY_SET_INPUT_LOCKED: M,
-  USER_SETTINGS_PROTO_UPDATE: j
+  USER_SETTINGS_PROTO_UPDATE: k
 })

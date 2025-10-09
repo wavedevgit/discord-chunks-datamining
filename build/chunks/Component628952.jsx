@@ -78,11 +78,11 @@ let C = e => {
     giftRecipientError: R
   } = (0, f.wD)(), P = (0, u.e7)([h.default], () => h.default.getCurrentUser()), w = (0, y.kd)(C), D = i.useRef(null);
   if (null == C) return null;
-  let [L] = C.items;
-  l()(null != L, "Product item should not be empty");
-  let x = () => {
+  let [x] = C.items;
+  l()(null != x, "Product item should not be empty");
+  let L = () => {
       if ((null == C ? true : C.type) === c.Z.BUNDLE) return null;
-      switch (L.type) {
+      switch (x.type) {
         case c.Z.AVATAR_DECORATION:
           return O.intl.string(O.t["7v0T9P"]);
         case c.Z.PROFILE_EFFECT:
@@ -93,44 +93,44 @@ let C = e => {
           return null
       }
     },
-    M = null != N && N.id !== (null == P ? true : P.id) && (L.type === c.Z.AVATAR_DECORATION || L.type === c.Z.PROFILE_EFFECT),
-    j = () => {
+    M = null != N && N.id !== (null == P ? true : P.id) && (x.type === c.Z.AVATAR_DECORATION || x.type === c.Z.PROFILE_EFFECT),
+    k = () => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
     className: S,
-    children: [I && (0, r.jsxs)("div", {
+    children: [I && (0, r.jsx)("div", {
       className: v.previewTitleContainer,
-      children: [(0, r.jsx)(d.vwX, {
-        className: v.previewTitle,
-        children: O.intl.string(O.t.PpoJzs)
-      }), M && (0, r.jsx)(d.yRy, {
-        targetElementRef: D,
-        preload: () => (0, p.Z)(N.id, N.getAvatarURL(null, 80)),
-        renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
-          user: N,
-          pendingAvatar: N.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
-          pendingAvatarDecoration: (0, g.M)(L) ? L : null,
-          pendingProfileEffect: (0, E.H)(L) ? L : null,
-          canUsePremiumCustomization: true,
-          disabledInputs: true,
-          hideExampleButton: true
-        })),
-        align: "center",
-        position: "right",
-        children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
-          className: v.previewLink,
-          innerRef: D,
-          children: (0, r.jsx)(d.Text, {
-            variant: "text-xs/medium",
-            color: "text-link",
-            children: O.intl.string(O.t["2GnJQE"])
-          })
-        }))
-      }, N.id)]
+      children: (0, r.jsx)(d.gNt, {
+        label: O.intl.string(O.t.PpoJzs),
+        children: M && (0, r.jsx)(d.yRy, {
+          targetElementRef: D,
+          preload: () => (0, p.Z)(N.id, N.getAvatarURL(null, 80)),
+          renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
+            user: N,
+            pendingAvatar: N.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
+            pendingAvatarDecoration: (0, g.M)(x) ? x : null,
+            pendingProfileEffect: (0, E.H)(x) ? x : null,
+            canUsePremiumCustomization: true,
+            disabledInputs: true,
+            hideExampleButton: true
+          })),
+          align: "center",
+          position: "right",
+          children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
+            className: v.previewLink,
+            innerRef: D,
+            children: (0, r.jsx)(d.Text, {
+              variant: "text-xs/medium",
+              color: "text-link",
+              children: O.intl.string(O.t["2GnJQE"])
+            })
+          }))
+        }, N.id)
+      })
     }), (0, r.jsxs)(d.P3F, {
       tag: "div",
-      onClick: j,
+      onClick: k,
       className: o()(v.previewContainer, {
         [v.previewContainerSelected]: n && null == R,
         [v.previewContainerError]: n && null != R
@@ -148,7 +148,7 @@ let C = e => {
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: x()
+            children: L()
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",

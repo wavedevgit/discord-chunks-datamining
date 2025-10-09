@@ -2,7 +2,6 @@
 /** chunk id: 560818, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
-  divider: "divider__73000",
   upsellContainer: "upsellContainer__73000",
   upsellContent: "upsellContent__73000",
   upsellFooter: "upsellFooter__73000",

@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,14 +66,14 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let M = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function j(e) {
+function k(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -99,7 +99,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n, r, i, a;
   let {
     quest: o,
@@ -171,7 +171,7 @@ function U(e) {
       return y ? (0, r.jsx)(G, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(u.zxk, x(D({}, e), {
+      }) : (0, r.jsx)(u.zxk, L(D({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -193,14 +193,14 @@ function G(e) {
   } = y.Z.useConfig({
     location: "QuestsCardFooter"
   });
-  return o ? (0, r.jsx)(u.gtL, x(D({}, a), {
+  return o ? (0, r.jsx)(u.gtL, L(D({}, a), {
     "data-migration-pending": true,
     wrapperClassName: P.ctaButtonWrapper,
     color: c.Tt.BRAND,
     disabled: null == i.onClick,
     onClick: null != (t = i.onClick) ? t : true,
     children: i.text
-  })) : (0, r.jsx)(u.zxk, x(D({}, a), {
+  })) : (0, r.jsx)(u.zxk, L(D({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -224,7 +224,7 @@ let B = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), D = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), D = N >= g.OH.ACCEPTED, x = N >= g.OH.COMPLETED, L = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
@@ -241,7 +241,7 @@ let B = e => {
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
-  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !L;
+  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !x;
   return (0, r.jsx)("div", {
     className: P.root,
     children: (0, r.jsxs)("div", {
@@ -289,7 +289,7 @@ let B = e => {
         }), (0, r.jsx)(u.Text, {
           variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
-          children: k({
+          children: j({
             quest: n,
             locale: K,
             isQuestExpired: _,
@@ -316,14 +316,14 @@ let B = e => {
         align: "center",
         justify: "end",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(k, {
           containerSize: c,
           onClick: W,
           text: R.intl.string(R.t.LLLLPD)
         }), !z && (0, r.jsx)(U, {
           quest: n,
           progressState: N,
-          isCollectibleQuest: x,
+          isCollectibleQuest: L,
           questContent: a,
           sourceQuestContent: A
         })]

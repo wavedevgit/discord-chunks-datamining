@@ -207,7 +207,7 @@ class z extends(r = Chunk647438.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && j.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
@@ -231,7 +231,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       lang: l,
       style: u,
       className: d
-    } = (0, x.vP)();
+    } = (0, L.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("style", u)

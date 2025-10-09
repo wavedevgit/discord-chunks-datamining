@@ -69,11 +69,11 @@ let S = Symbol("NO GUILD ID"),
   P = 0x7fffffff,
   w = new Map,
   D = new Map,
-  L = new Map,
   x = new Map,
+  L = new Map,
   M = new Map,
-  j = new Map,
   k = new Map,
+  j = new Map,
   U = [],
   G = [],
   B = null,
@@ -114,10 +114,10 @@ function Y(e) {
   if ((null == n ? true : n.expiresAt) == null) return;
   let r = 1e3 * n.expiresAt + b.Cm - Date.now();
   if (r <= 0) {
-    t.profileEffect = true, L.delete(e), eg.emitChange();
+    t.profileEffect = true, x.delete(e), eg.emitChange();
     return
   }
-  let i = L.get(e);
+  let i = x.get(e);
   null != i && i.start(Math.min(P, r), () => Y(e))
 }
 
@@ -133,15 +133,15 @@ function W(e, t) {
   if (s <= 0) {
     i.set(t, T(v({}, a), {
       profileEffect: true
-    })), null == (r = x.get(e)) || r.delete(t), eg.emitChange();
+    })), null == (r = L.get(e)) || r.delete(t), eg.emitChange();
     return
   }
-  let l = null == (n = x.get(e)) ? true : n.get(t);
+  let l = null == (n = L.get(e)) ? true : n.get(t);
   null != l && l.start(Math.min(P, s), () => W(e, t))
 }
 
 function K() {
-  A.clear(), C.clear(), w.clear(), D.clear(), M.clear(), j.clear(), k.clear(), V = false
+  A.clear(), C.clear(), w.clear(), D.clear(), M.clear(), k.clear(), j.clear(), V = false
 }
 
 function z(e) {
@@ -172,7 +172,7 @@ function X(e) {
 }
 
 function Q(e) {
-  C.delete(e.userId), M.set(e.userId, X(e.mutualFriends)), j.set(e.userId, e.mutualFriends.length)
+  C.delete(e.userId), M.set(e.userId, X(e.mutualFriends)), k.set(e.userId, e.mutualFriends.length)
 }
 
 function J(e) {
@@ -192,16 +192,16 @@ function J(e) {
         guild: i,
         nick: r
       })
-    }), k.set(z.user.id, p.ZP.getFlattenedGuildIds().filter(t => null != e[t]).map(t => ({
+    }), j.set(z.user.id, p.ZP.getFlattenedGuildIds().filter(t => null != e[t]).map(t => ({
       guild: e[t].guild,
       nick: e[t].nick
     })))
   }
   if (null != z.mutual_friends_count) {
     let e = z.mutual_friends_count;
-    j.set(z.user.id, e), 0 === e && M.set(z.user.id, U)
+    k.set(z.user.id, e), 0 === e && M.set(z.user.id, U)
   }
-  null != z.mutual_friends && (M.set(z.user.id, X(z.mutual_friends)), j.set(z.user.id, z.mutual_friends.length));
+  null != z.mutual_friends && (M.set(z.user.id, X(z.mutual_friends)), k.set(z.user.id, z.mutual_friends.length));
   let J = null != z.premium_since ? new Date(z.premium_since) : null,
     ee = null != z.premium_guild_since ? new Date(z.premium_guild_since) : null,
     et = z.application,
@@ -261,7 +261,7 @@ function J(e) {
       wishlistSettings: z.wishlist_settings
     }), (null == (E = z.user_profile) || null == (g = E.profile_effect) ? true : g.expires_at) != null) {
     let e = new o.V7;
-    L.set(z.user.id, e), Y(z.user.id)
+    x.set(z.user.id, e), Y(z.user.id)
   }
   if (null != z.guild_member_profile) {
     let e = z.guild_member_profile.profile_effect,
@@ -289,11 +289,11 @@ function J(e) {
     }
     if ((null == (K = z.guild_member_profile) || null == (V = K.profile_effect) ? true : V.expires_at) != null) {
       let e = new o.V7,
-        t = x.get(z.user.id);
+        t = L.get(z.user.id);
       if (null != t) t.set(z.guild_member_profile.guild_id, e);
       else {
         let t = new Map;
-        t.set(z.guild_member_profile.guild_id, e), x.set(z.user.id, t)
+        t.set(z.guild_member_profile.guild_id, e), L.set(z.user.id, t)
       }
       W(z.user.id, z.guild_member_profile.guild_id)
     }
@@ -347,7 +347,7 @@ function et(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, w.set(r, s), (null == a ? true : a.status) === 404 && (j.set(r, 0), M.set(r, U), k.set(r, G))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, w.set(r, s), (null == a ? true : a.status) === 404 && (k.set(r, 0), M.set(r, U), j.set(r, G))
 }
 
 function en(e) {
@@ -376,7 +376,7 @@ function en(e) {
       } : true
     })), (null == c ? true : c.expires_at) != null) {
     let e = new o.V7;
-    L.set(t, e), Y(t)
+    x.set(t, e), Y(t)
   }
 }
 
@@ -409,11 +409,11 @@ function er(e) {
       } : true
     })), (null == u ? true : u.expires_at) != null) {
     let e = new o.V7,
-      r = x.get(t);
+      r = L.get(t);
     if (null != r) r.set(n, e);
     else {
       let r = new Map;
-      r.set(n, e), x.set(t, r)
+      r.set(n, e), L.set(t, r)
     }
     W(t, n)
   }
@@ -520,10 +520,10 @@ class em extends Chunk750041.Z {
     return M.get(e)
   }
   getMutualFriendsCount(e) {
-    return j.get(e)
+    return k.get(e)
   }
   getMutualGuilds(e) {
-    return k.get(e)
+    return j.get(e)
   }
   getWidgets(e) {
     var t;

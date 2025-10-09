@@ -1,14 +1,9 @@
 /** Chunk was on 86015 **/
-/** chunk id: 868568, original params: e,i,n (module,exports,require) **/
+/** chunk id: 868568, original params: e,n,a (module,exports,require) **/
 module.exports = {
   icon: "icon__5c799",
-  guidelines: "guidelines__5c799",
-  divider: "divider__5c799",
-  previewSection: "previewSection__5c799",
   channelsWrapper: "channelsWrapper__5c799",
   rolesWrapper: "rolesWrapper__5c799",
-  protip: "protip__5c799",
-  protipText: "protipText__5c799",
   channel: "channel__5c799",
   category: "category__5c799",
   channelIcon: "channelIcon__5c799",

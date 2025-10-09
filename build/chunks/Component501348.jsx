@@ -153,48 +153,33 @@ let J = "cozy",
   };
 class eo extends Chunk647438.Component {
   renderZoomSlider() {
-    return Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk197571.marginTop20,
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        id: ee,
-        className: o()(Chunk226518.title, Chunk197571.marginBottom8),
-        children: Chunk388032.intl.string(Chunk388032.t.i19n5O)
-      }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.geA.DESCRIPTION,
-        className: Chunk226518.subtext,
-        children: Chunk388032.intl.string(Chunk388032.t.ip0uSU)
-      }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        className: o()(Chunk197571.marginTop20, Chunk197571.marginBottom4),
-        initialValue: this.props.zoom,
-        defaultValue: Chunk981631.yqN.ZOOM_DEFAULT,
-        markers: Chunk981631.yqN.ZOOM_SCALES,
-        stickToMarkers: true,
-        onValueChange: this.handleZoomChange,
-        onValueRender: this.handleSliderRender,
-        "aria-labelledby": ee
-      }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        children: Chunk388032.intl.format(Chunk388032.t.OMkSUl, {
-          modKey: Chunk714338.Z.modKey
-        })
-      })]
-    }) : null
+    return !Chunk358085.isPlatformEmbedded, (0, Chunk951288.jsx)(Chunk481060.iRW, {
+      label: Chunk388032.intl.string(Chunk388032.t.i19n5O),
+      description: Chunk388032.intl.string(Chunk388032.t.ip0uSU),
+      helperText: Chunk388032.intl.format(Chunk388032.t.OMkSUl, {
+        modKey: Chunk714338.Z.modKey
+      }),
+      initialValue: this.props.zoom,
+      defaultValue: Chunk981631.yqN.ZOOM_DEFAULT,
+      markers: Chunk981631.yqN.ZOOM_SCALES,
+      stickToMarkers: true,
+      onValueChange: this.handleZoomChange,
+      onValueRender: this.handleSliderRender,
+      "aria-labelledby": ee
+    })
   }
   renderFontScaleSlider() {
-    return (0, Chunk951288.jsx)("div", {
-      className: Chunk197571.marginTop20,
-      children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        label: Chunk388032.intl.string(Chunk388032.t.qPOqoK),
-        description: Chunk388032.intl.string(Chunk388032.t.XrtbPj),
-        initialValue: this.props.fontSize,
-        defaultValue: Chunk981631.yqN.FONT_SIZE_DEFAULT,
-        markers: Chunk981631.yqN.FONT_SIZES,
-        stickToMarkers: true,
-        onValueChange: this.handleFontSizeChange,
-        onValueRender: this.handleSliderRenderPX,
-        onMarkerRender: this.handleSliderRenderPX,
-        getAriaValueText: this.handleSliderValueText
-      })
+    return (0, Chunk951288.jsx)(Chunk481060.iRW, {
+      label: Chunk388032.intl.string(Chunk388032.t.qPOqoK),
+      description: Chunk388032.intl.string(Chunk388032.t.XrtbPj),
+      initialValue: this.props.fontSize,
+      defaultValue: Chunk981631.yqN.FONT_SIZE_DEFAULT,
+      markers: Chunk981631.yqN.FONT_SIZES,
+      stickToMarkers: true,
+      onValueChange: this.handleFontSizeChange,
+      onValueRender: this.handleSliderRenderPX,
+      onMarkerRender: this.handleSliderRenderPX,
+      getAriaValueText: this.handleSliderValueText
     })
   }
   renderMessageGroupSpacingSlider() {
@@ -243,29 +228,18 @@ class eo extends Chunk647438.Component {
     let {
       useForcedColors: e
     } = this.props;
-    return module ? (0, Chunk951288.jsx)(Chunk481060.xJW, {
-      className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom40),
-      title: (0, Chunk951288.jsx)("div", {
-        className: Chunk226518.themeTitle,
-        children: (0, Chunk951288.jsx)("div", {
-          className: Chunk226518.title,
-          children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
-        })
-      }),
+    return module ? (0, Chunk951288.jsx)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.Ksh3io),
       children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.INFO,
         children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ea, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
       })
-    }) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-      gap: 24,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "text-lg/medium",
-        className: Chunk226518.title,
-        children: Chunk388032.intl.string(Chunk388032.t.Ksh3io)
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.Ksh3io),
+      children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: (0, Chunk951288.jsx)(ei, {}),
         children: (0, Chunk951288.jsx)(Chunk329013.i, {})
-      })]
+      })
     })
   }
   renderTimestampHourCycle() {
@@ -375,11 +349,10 @@ class eo extends Chunk647438.Component {
       })]
     }), s = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_SCALING_SPACING,
-      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "text-lg/medium",
-        className: Chunk226518.title,
-        children: Chunk388032.intl.string(Chunk388032.t["0Yh+ZW"])
-      }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: Chunk388032.intl.string(Chunk388032.t["0Yh+ZW"]),
+        children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk226518.divider
       })]
     }), l = (0, Chunk951288.jsx)(Chunk921801.F, {

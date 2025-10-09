@@ -18,11 +18,11 @@ function d(e) {
     onClose: c,
     isSlideReady: u,
     headerAlignStart: h
-  } = e, [f, g] = r.useState(false), [m, p] = r.useState(null), [x, S] = r.useState(""), b = r.useRef(null);
+  } = e, [f, g] = r.useState(false), [m, p] = r.useState(null), [x, b] = r.useState(""), S = r.useRef(null);
   return r.useEffect(() => {
     if (u) {
       var e;
-      null == (e = b.current) || e.focus()
+      null == (e = S.current) || e.focus()
     }
   }, [u]), (0, l.jsxs)("form", {
     onSubmit: e => {
@@ -43,8 +43,8 @@ function d(e) {
       scrollbarType: "none",
       children: [(0, l.jsx)(s.oil, {
         label: o.intl.string(o.t.HZPBOT),
-        inputRef: b,
-        onChange: S,
+        inputRef: S,
+        onChange: b,
         placeholder: o.intl.string(o.t.tARzgo),
         maxLength: i.gH,
         minLength: i.gH,

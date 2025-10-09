@@ -2,7 +2,7 @@
 /** chunk id: 40455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => j
+  ZP: () => k
 }), require("./388685.js");
 var Chunk592125 = require("./592125.js"),
   Chunk650774 = require("./650774.js"),
@@ -111,8 +111,8 @@ class S extends Chunk750041.Z {
       CHANNEL_DELETE: P,
       CHANNEL_UPDATES: R,
       CONNECTION_OPEN_SUPPLEMENTAL: C,
-      GUILD_DELETE: L,
-      LOGIN_SUCCESS: x,
+      GUILD_DELETE: x,
+      LOGIN_SUCCESS: L,
       THREAD_DELETE: D,
       THREAD_UPDATE: w
     })
@@ -151,11 +151,11 @@ function D(e) {
   S.deleteChannel(e.channel.id)
 }
 
-function L(e) {
+function x(e) {
   return !e.guild.unavailable && (S.deleteGuild(e.guild.id), true)
 }
 
-function x(e) {
+function L(e) {
   v.clear(), I.clear(), T = false
 }
 
@@ -163,4 +163,4 @@ function M(e) {
   T = true
 }
 p(S, "displayName", "SaveableChannelsStore"), p(S, "LATEST_SNAPSHOT_VERSION", 1);
-let j = new S
+let k = new S

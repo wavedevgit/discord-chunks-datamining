@@ -88,14 +88,14 @@ class C extends Chunk647438.PureComponent {
     } = this.state;
     switch (exports) {
       case Chunk981631.wI2.FAVORITES:
-        return (0, Chunk951288.jsx)(Chunk481060.vwX, {
-          tag: "h5",
+        return (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          variant: "heading-md/semibold",
           className: Chunk577021.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.y3LQCA)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
-        return (0, Chunk951288.jsx)(Chunk481060.vwX, {
-          tag: "h5",
+        return (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          variant: "heading-md/semibold",
           className: Chunk577021.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.H6zNFx)
         });

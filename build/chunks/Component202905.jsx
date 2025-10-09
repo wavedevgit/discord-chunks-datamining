@@ -2,7 +2,7 @@
 /** chunk id: 202905, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  r: () => _
+  r: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,22 +40,22 @@ let j = {
   badgeColorSecondary: null
 };
 
-function _(e) {
+function v(e) {
   let {
     pendingFields: t
   } = e, {
     guild: n,
-    guildProfile: _
-  } = (0, a.cj)([m.Z], () => ({
+    guildProfile: v
+  } = (0, s.cj)([m.Z], () => ({
     guild: m.Z.getGuild(),
     guildProfile: m.Z.getGuildProfile()
-  })), v = null == n ? true : n.id, C = (0, a.e7)([c.Z], () => c.Z.get(v)), {
+  })), _ = null == n ? true : n.id, C = (0, s.e7)([c.Z], () => c.Z.get(_)), {
     fetchGuildProfile: O
-  } = (0, d.u)(v), y = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), N = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
+  } = (0, d.u)(_), y = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), N = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
-    null != v && O()
-  }, [v, O]);
-  let E = i.useMemo(() => null == n || null == _ ? j : _, [n, _]),
+    null != _ && O()
+  }, [_, O]);
+  let E = i.useMemo(() => null == n || null == v ? j : v, [n, v]),
     I = i.useCallback(() => {
       (null == n ? true : n.id) != null && (N ? g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC
@@ -69,11 +69,11 @@ function _(e) {
   if (null == n) return null;
   let T = null != t ? t : null == C ? true : C.formFields;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: x.intl.string(x.t.AHJddH)
-    }), (0, r.jsx)(s.xvT, {
+    }), (0, r.jsx)(a.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -89,7 +89,7 @@ function _(e) {
       }) : (0, r.jsx)(o.$jN, {})
     }), (0, r.jsx)("div", {
       className: b.divider
-    }), (0, r.jsxs)(o.hjN, {
+    }), (0, r.jsxs)("div", {
       className: b.twoColumnContainer,
       children: [(0, r.jsxs)("div", {
         className: b.column,
@@ -98,11 +98,11 @@ function _(e) {
           checked: N,
           onChange: I,
           disabled: y
-        }), (0, r.jsx)(s.xvT, {
+        }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: x.intl.string(x.t["3TSZYG"])
-        }), y && (0, r.jsx)(s.xvT, {
+        }), y && (0, r.jsx)(a.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: x.intl.format(x.t.Bk0VOj, {
@@ -121,7 +121,7 @@ function _(e) {
           }), (0, r.jsx)(u.ZP, {
             className: b.preview,
             profile: E,
-            CTAOverride: (0, r.jsx)(s.zxk, {
+            CTAOverride: (0, r.jsx)(a.zxk, {
               variant: "active",
               size: "sm",
               text: x.intl.string(x.t["7XdMW1"]),

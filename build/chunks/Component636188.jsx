@@ -65,13 +65,13 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -88,8 +88,8 @@ function M(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let j = 25,
-  k = 720;
+let k = 25,
+  j = 720;
 
 function U() {
   return [{
@@ -159,7 +159,7 @@ function B(e) {
     userId: t.user_id,
     assetId: t.id,
     assetHash: t.asset,
-    size: k,
+    size: j,
     canAnimate: false
   });
   return (0, r.jsx)("img", {
@@ -180,7 +180,7 @@ function Z(e) {
     isAnimatedImage: f,
     isVideo: b,
     hotspotLocation: y
-  } = e, v = x(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
+  } = e, v = L(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
   let I = (0, d.O)(),
     {
       analyticsLocations: S
@@ -205,7 +205,7 @@ function Z(e) {
       location_stack: S
     }))
   }
-  return (0, r.jsxs)(c.P3F, L(w({}, v), {
+  return (0, r.jsxs)(c.P3F, x(w({}, v), {
     className: o()(R.backgroundOption, {
       [R.backgroundOptionSelected]: a
     }),
@@ -214,7 +214,7 @@ function Z(e) {
       let {
         default: e
       } = await n.e("99414").then(n.bind(n, 187658));
-      return n => (0, r.jsx)(e, L(w({}, n), {
+      return n => (0, r.jsx)(e, x(w({}, n), {
         backgroundOption: t,
         optionIsInUse: a
       }))
@@ -320,7 +320,7 @@ function Y(e) {
     onAddBackgroundImage: t,
     disabled: i
   } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeH, {
-    maxCustomBackgrounds: j
+    maxCustomBackgrounds: k
   }) : N.intl.string(N.t.Qx0tFR), s = U();
 
   function l() {
@@ -365,7 +365,7 @@ function W(e) {
     onUpsellClick: s,
     onAddBackgroundImage: u,
     smallerOptions: d
-  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= j, {
+  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= k, {
     analyticsLocations: m
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_OPTIONS), g = Object.values((0, v.Z)()).sort((e, t) => I.E1[e.id] - I.E1[t.id]);
   return (0, r.jsx)(p.Gt, {
@@ -399,9 +399,9 @@ function W(e) {
             userId: e.user_id,
             assetId: e.id,
             assetHash: e.asset,
-            size: k
+            size: j
           });
-          return null == n ? null : (0, i.createElement)(Z, L(w({}, t), {
+          return null == n ? null : (0, i.createElement)(Z, x(w({}, t), {
             key: e.id,
             option: e,
             source: n,

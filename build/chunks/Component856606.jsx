@@ -90,7 +90,7 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
     onSave() {
       if (null == module) return;
       let t = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
-        let n = w.Z.getPermissionOverwrite(t);
+        let n = E.Z.getPermissionOverwrite(t);
         return null != n && e.push(n), e
       }, []);
       (0, Chunk741361.hw)(module.id, exports)
@@ -101,7 +101,7 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
 function J(e) {
   let {
     overwrite: t
-  } = e, n = (0, o.e7)([w.Z], () => w.Z.channel), l = (0, o.e7)([R.Z], () => null != n ? R.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === x.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.N.useExperiment({
+  } = e, n = (0, o.e7)([E.Z], () => E.Z.channel), l = (0, o.e7)([R.Z], () => null != n ? R.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === x.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.N.useExperiment({
     guildId: null == n ? true : n.guild_id,
     location: "ChannelSettingsPermissions"
   }).enabled;
@@ -151,7 +151,7 @@ function J(e) {
   }, j = e => {
     let t = P.Z.can(G.Plq.ADMINISTRATOR, l) || P.Z.can(G.Plq.MANAGE_ROLES, n, true, true, true);
     return n.isGuildStageVoice() && N.xS.has(e) ? W.intl.string(W.t.bTS5lZ) : !((!a.fS(e, G.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && W.intl.string(W.t.nOtPMD)
-  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, G.Plq.SEND_MESSAGES), O = a.e$(t.deny, G.Plq.SEND_MESSAGES), Z = a.e$(t.deny, G.Plq.READ_MESSAGE_HISTORY), E = k.Z.generateChannelPermissionSpec(c, n, v, {
+  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, G.Plq.SEND_MESSAGES), O = a.e$(t.deny, G.Plq.SEND_MESSAGES), Z = a.e$(t.deny, G.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, v, {
     createPostsDisabled: y,
     sendMessagesDisabled: O,
     readMessageHistoryDisabled: Z,
@@ -159,7 +159,7 @@ function J(e) {
   });
   return (0, i.jsxs)(C.ZP.Content, {
     className: F.layoutStyle,
-    children: [E.map((e, n) => (0, i.jsx)(f.Z, {
+    children: [w.map((e, n) => (0, i.jsx)(f.Z, {
       spec: e,
       allow: t.allow,
       deny: t.deny,
@@ -290,7 +290,7 @@ function $() {
     S = (0, Chunk188857.Z)(Chunk144991, Chunk392711),
     N = (0, Chunk410030.ZP)(),
     Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
-    E = Chunk647438.useCallback((e, l) => {
+    w = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
       (0, p.jW)(e, async () => {
         let {
@@ -351,7 +351,7 @@ function $() {
       guild: b,
       color: e.colorString,
       "aria-label": e.name,
-      onContextMenu: t => E(t, {
+      onContextMenu: t => w(t, {
         id: e.id,
         name: e.name,
         role: e
@@ -368,7 +368,7 @@ function $() {
         "aria-label": H.ZP.getUserTag(e, {
           decoration: "never"
         }),
-        onContextMenu: t => E(t, {
+        onContextMenu: t => w(t, {
           id: e.id,
           name: e.username
         }),

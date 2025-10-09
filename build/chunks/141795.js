@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   mw: () => M,
-  nH: () => k
+  nH: () => j
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./49124.js");
 var Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -70,7 +70,7 @@ function w(e, t) {
   }), e
 }
 let D = new Chunk710845.Z("CloudUpload.tsx");
-class L extends Error {
+class x extends Error {
   static getErrorKind(e, t) {
     var n;
     let r = null != (n = null == t ? true : t.status) ? n : 0,
@@ -80,13 +80,13 @@ class L extends Error {
   }
   static rejectionHandler(e) {
     return t => {
-      if (t instanceof s.Pd) throw new L(e, {
+      if (t instanceof s.Pd) throw new x(e, {
         response: t
       });
-      if (t instanceof Error) throw new L(e, {
+      if (t instanceof Error) throw new x(e, {
         cause: t
       });
-      throw new L(e, {
+      throw new x(e, {
         cause: Error(String(t))
       })
     }
@@ -99,30 +99,30 @@ class L extends Error {
     let {
       cause: i,
       response: a
-    } = t, o = L.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? true : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? true : a.status) ? r : 0) : "".concat(e, ":").concat(o);
+    } = t, o = x.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? true : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? true : a.status) ? r : 0) : "".concat(e, ":").concat(o);
     super(s, {
       cause: i
     }), N(this, "kind", true), N(this, "phase", true), N(this, "messageShort", true), this.name = "ResumableUploadError", this.phase = e, this.kind = o, this.messageShort = s
   }
 }
-let x = "Content-MD5";
+let L = "Content-MD5";
 var M = function(e) {
   return e.NOT_STARTED = "NOT_STARTED", e.STARTED = "STARTED", e.UPLOADING = "UPLOADING", e.ERROR = "ERROR", e.COMPLETED = "COMPLETED", e.CANCELED = "CANCELED", e.REMOVED_FROM_MSG_DRAFT = "REMOVED_FROM_MSG_DRAFT", e
 }({});
-class j {
+class k {
   constructor() {
     N(this, "numUploadAttempts", true), N(this, "timing", {}), N(this, "compressAndExtractDisabled", true), N(this, "fileAlreadyPrepped", true), N(this, "imageCompressionQuality", true), N(this, "videoCompressionQuality", true), N(this, "convertedMimeType", true), N(this, "sourceMediaWidth", true), N(this, "sourceMediaHeight", true), N(this, "sourceMediaFormat", true), N(this, "sourceVideoBitrate", true), N(this, "sourceVideoFramerate", true), N(this, "videoDurationMs", true), N(this, "sourceVideoProfile", true), N(this, "sourceVideoLevel", true), N(this, "targetVideoWidth", true), N(this, "targetVideoHeight", true), N(this, "targetVideoBitrate", true), N(this, "targetVideoCodec", true), N(this, "targetVideoFramerate", true), N(this, "targetVideoIsHdr", true), N(this, "hevcIsSupported", true), N(this, "progressUpdateGranularity", true), N(this, "validUploadHash", true), N(this, "psnr", true), N(this, "ssim", true), N(this, "origin", true), N(this, "psnrMeasurementLatencyMs", true), N(this, "ssimMeasurementLatencyMs", true), N(this, "uploadResumptionCount", 0), N(this, "uploadResumptionPosition", 0), N(this, "uploadResumptionReason", true), N(this, "conversionFailureReason", true)
   }
 }
 r = require("./224497.js").Z;
-class k extends Chunk476326.ZP {
+class j extends Chunk476326.ZP {
   static fromJson(e) {
     let {
       item: t,
       channelId: n,
       showLargeMessageDialog: r,
       reactNativeFileIndex: i
-    } = e, a = new k(t, n, r, i);
+    } = e, a = new j(t, n, r, i);
     return Object.entries(e).forEach(e => {
       let [t, n] = e;
       t.startsWith("_") || (a[t] = n)
@@ -171,7 +171,7 @@ class k extends Chunk476326.ZP {
     let r = {
       "Content-Type": exports
     };
-    true !== this.contentHash && (r[x] = this.contentHash);
+    true !== this.contentHash && (r[L] = this.contentHash);
     let i = R({
       url: this.responseUrl,
       body: module,
@@ -195,13 +195,13 @@ class k extends Chunk476326.ZP {
       },
       signal: this._abortController.signal
     };
-    return await this._uploadHttpClient.doUpload(t).then(e => 200 === e.status || 201 === e.status ? this.currentSize : L.rejectionHandler("status_check")(e)).catch(e => {
+    return await this._uploadHttpClient.doUpload(t).then(e => 200 === e.status || 201 === e.status ? this.currentSize : x.rejectionHandler("status_check")(e)).catch(e => {
       if (e instanceof s.Pd && 308 === e.status) {
         var t;
         let n = this.parseRangeHeader(null != (t = e.headers.range) ? t : "");
         return null != n ? n[1] + 1 : 0
       }
-      return L.rejectionHandler("status_check")(e)
+      return x.rejectionHandler("status_check")(e)
     })
   }
   async startOrResumeUpload(e) {
@@ -217,8 +217,8 @@ class k extends Chunk476326.ZP {
       fileByteRange: {
         start: t
       }
-    }).catch(L.rejectionHandler("upload"));
-    if (200 !== r.status && 201 !== r.status) throw new L("upload", {
+    }).catch(x.rejectionHandler("upload"));
+    if (200 !== r.status && 201 !== r.status) throw new x("upload", {
       response: r
     });
     return r
@@ -249,7 +249,7 @@ class k extends Chunk476326.ZP {
         }
         return await this.startOrResumeUpload(s, l)
       } catch (e) {
-        if (e instanceof L && e.canRetry()) {
+        if (e instanceof x && e.canRetry()) {
           D.warn("Error uploading ".concat(this.id, ": ").concat(e.message, ", attempting resumption")), this.uploadAnalytics.uploadResumptionReason = e.messageShort, await y.Z.awaitOnline();
           let t = i.fail();
           D.log("Waiting ".concat(t, "ms before attachment upload attempt ").concat(this.uploadAttempts + 1)), await new Promise(e => setTimeout(e, t))
@@ -283,7 +283,7 @@ class k extends Chunk476326.ZP {
     if ("COMPLETED" === this.status) return;
     if (this.setStatus("STARTED"), this.startTime = performance.now(), this.trackUploadStart(), this.isCancelled()) return void this.handleComplete(this.id);
     if (this.allowOptimization && this.item.platform === Chunk476326.ow.WEB) {
-      let e = await k.tryConvertToWebP(this.item.file, () => this._aborted, this.id);
+      let e = await j.tryConvertToWebP(this.item.file, () => this._aborted, this.id);
       null != module && (null != module.convertedFile && (this.item.file = module.convertedFile, this.currentSize = module.convertedFile.size), null != module.convertedMimeType && (this.uploadAnalytics.convertedMimeType = module.convertedMimeType), null != module.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = module.hashTimeMs), null != module.conversionFailureReason && (this.uploadAnalytics.conversionFailureReason = module.conversionFailureReason), this.uploadAnalytics.timing.compressTimeMs = module.compressTimeMs)
     }
     let a = await r.getUploadPayload(this),
@@ -441,7 +441,7 @@ class k extends Chunk476326.ZP {
     return "CANCELED" === this.status || "REMOVED_FROM_MSG_DRAFT" === this.status
   }
   resetState() {
-    return this.status = "NOT_STARTED", this.uploadedFilename = true, this.responseUrl = true, this.error = true, this.startTime = true, this.uploadAnalytics = new j, this.uploadAttempts = 0, this._aborted = false, this._abortController = new AbortController, super.resetState()
+    return this.status = "NOT_STARTED", this.uploadedFilename = true, this.responseUrl = true, this.error = true, this.startTime = true, this.uploadAnalytics = new k, this.uploadAttempts = 0, this._aborted = false, this._abortController = new AbortController, super.resetState()
   }
   async delete() {
     if (null == this.uploadedFilename) return;
@@ -535,7 +535,7 @@ class k extends Chunk476326.ZP {
   }
   constructor(e, t, n, r, i) {
     var a, o, s, l;
-    super(e, n), N(this, "status", "NOT_STARTED"), N(this, "channelId", true), N(this, "responseUrl", true), N(this, "currentSize", true), N(this, "preCompressionSize", true), N(this, "postCompressionSize", true), N(this, "loaded", 0), N(this, "reactNativeFileIndex", true), N(this, "error", true), N(this, "reactNativeFilePrepped", false), N(this, "allowOptimization", true), N(this, "startTime", true), N(this, "uploadAnalytics", new j), N(this, "contentHash", true), N(this, "etag", true), N(this, "uploadAttempts", 0), N(this, "_abortController", true), N(this, "_xhr", true), N(this, "_aborted", false), N(this, "_uploadHttpClient", true), N(this, "_libdiscoreEnabled", true), N(this, "_resumptionEnabled", true), N(this, "createResumeAwareProgressFn", e => t => {
+    super(e, n), N(this, "status", "NOT_STARTED"), N(this, "channelId", true), N(this, "responseUrl", true), N(this, "currentSize", true), N(this, "preCompressionSize", true), N(this, "postCompressionSize", true), N(this, "loaded", 0), N(this, "reactNativeFileIndex", true), N(this, "error", true), N(this, "reactNativeFilePrepped", false), N(this, "allowOptimization", true), N(this, "startTime", true), N(this, "uploadAnalytics", new k), N(this, "contentHash", true), N(this, "etag", true), N(this, "uploadAttempts", 0), N(this, "_abortController", true), N(this, "_xhr", true), N(this, "_aborted", false), N(this, "_uploadHttpClient", true), N(this, "_libdiscoreEnabled", true), N(this, "_resumptionEnabled", true), N(this, "createResumeAwareProgressFn", e => t => {
       let n = t.loaded + e,
         r = t.total + e,
         i = n - this.loaded;

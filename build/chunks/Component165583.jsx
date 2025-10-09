@@ -58,7 +58,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n, i;
   let {
     className: a,
@@ -68,25 +68,25 @@ function j(e) {
     trialOffer: u
   } = e, d = null != (t = null == u ? true : u.expires_at) ? t : null == c ? true : c.expires_at, f = null == u ? true : u.subscription_trial, _ = null != (i = null != (n = e.subscriptionTier) ? n : null == f ? true : f.sku_id) ? i : P.Si.TIER_2;
   return (0, r.jsxs)("div", {
-    className: o()(a, L.gradientUpsellWrapper, {
-      [L.gradientUpsellWrapperTier0]: _ === P.Si.TIER_0,
-      [L.gradientUpsellWrapperTier2]: _ === P.Si.TIER_2,
-      [L.gradientUpsellWrapperWithBottomMargin]: l
+    className: o()(a, x.gradientUpsellWrapper, {
+      [x.gradientUpsellWrapperTier0]: _ === P.Si.TIER_0,
+      [x.gradientUpsellWrapperTier2]: _ === P.Si.TIER_2,
+      [x.gradientUpsellWrapperWithBottomMargin]: l
     }),
     children: [(0, r.jsxs)("div", {
-      className: L.logo,
+      className: x.logo,
       children: [(0, r.jsx)(h.SrA, {
         size: "md",
         color: "currentColor",
-        className: L.logoIcon
+        className: x.logoIcon
       }), _ === P.Si.TIER_0 && (0, r.jsx)(O.Z, {
-        className: L.logoWordmark
+        className: x.logoWordmark
       }), _ === P.Si.TIER_2 && (0, r.jsx)(y.Z, {
-        className: L.logoWordmark
+        className: x.logoWordmark
       })]
     }), (0, r.jsx)(h.Text, {
       variant: "text-md/medium",
-      className: L.copy,
+      className: x.copy,
       color: "none",
       children: s
     }), (0, r.jsx)(R.Cy, {
@@ -96,13 +96,13 @@ function j(e) {
       colorOptions: _ === P.Si.TIER_0 ? R.VE.PREMIUM_TIER_0_WHITE_FILL : R.VE.PREMIUM_TIER_2_WHITE_FILL
     }), (0, r.jsx)(h.Text, {
       variant: "eyebrow",
-      className: L.countdownText,
+      className: x.countdownText,
       children: M(d)
     })]
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     className: a,
@@ -142,9 +142,9 @@ function U(e) {
     a = null != (n = null == i ? true : i.sku_id) ? n : P.Si.TIER_2;
   return (0, r.jsx)(h.Text, {
     variant: "text-xs/bold",
-    className: o()(L.trialBadge, e.className, {
-      [L.trialBadgeGradientTier0]: a === P.Si.TIER_0,
-      [L.trialBadgeGradientTier2]: a === P.Si.TIER_2
+    className: o()(x.trialBadge, e.className, {
+      [x.trialBadgeGradientTier0]: a === P.Si.TIER_0,
+      [x.trialBadgeGradientTier2]: a === P.Si.TIER_2
     }),
     color: "none",
     children: (0, I.a5)({
@@ -163,16 +163,16 @@ function G(e) {
     discountOffer: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: L.footer,
+    className: x.footer,
     children: [(0, r.jsx)(p.zx, {
       "data-migration-pending": true,
       onClick: n,
       size: p.zx.Sizes.SMALL,
       look: p.iL.BLANK,
-      className: L.cancelButton,
+      className: x.cancelButton,
       children: D.intl.string(D.t.cpT0Cg)
-    }), (0, r.jsx)(k, {
-      className: L.subscribeButton,
+    }), (0, r.jsx)(j, {
+      className: x.subscribeButton,
       subscriptionTier: t,
       analyticsLocationObject: i,
       onClose: n,
@@ -188,9 +188,9 @@ function B(e) {
     analyticsLocationObject: n
   } = e, i = (0, C.N)();
   return (0, r.jsxs)("div", {
-    className: L.tryOutUpsellContainer,
+    className: x.tryOutUpsellContainer,
     children: [(0, r.jsx)(R.Cy, {
-      className: L.topRimPill,
+      className: x.topRimPill,
       text: D.intl.string(D.t["8CVUra"]),
       colorOptions: R.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     }), (0, r.jsx)(h.X6q, {
@@ -199,15 +199,15 @@ function B(e) {
       children: D.intl.format(D.t["fF+cgY"], {
         onClick: () => (0, A.z)()
       })
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(j, {
       trialOffer: i,
-      className: L.subscribeButtonWide,
+      className: x.subscribeButtonWide,
       subscriptionTier: P.Si.TIER_2,
       analyticsLocationObject: n,
       onClose: t
     }), (0, r.jsx)(h.Text, {
       variant: "eyebrow",
-      className: L.countdownTextInSetting,
+      className: x.countdownTextInSetting,
       children: M(null == i ? true : i.expires_at)
     })]
   })
@@ -222,15 +222,15 @@ function Z(e) {
     discountOffer: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: L.contentContainer,
+    className: x.contentContainer,
     children: [(0, r.jsx)(h.X6q, {
       variant: "heading-xl/semibold",
       children: t
     }), null != n && (0, r.jsx)(h.Text, {
-      className: L.context,
+      className: x.context,
       variant: "text-md/normal",
       children: n
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       trialOffer: a,
       discountOffer: o,
       children: i
@@ -256,23 +256,23 @@ function F(e) {
     case P.cd.EMPTY_STICKER_PICKER_UPSELL:
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.P3F, {
-          className: L.upsellClose,
+          className: x.upsellClose,
           onClick: s,
           children: (0, r.jsx)(h.Dio, {
             size: "md",
             color: "currentColor"
           })
         }), (0, r.jsxs)("div", {
-          className: L.contentContainer,
+          className: x.contentContainer,
           children: [(0, r.jsx)("img", {
-            className: L.upsellImage,
-            src: x,
+            className: x.upsellImage,
+            src: L,
             alt: D.intl.string(D.t.do7AoK)
           }), (0, r.jsx)(h.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
             children: D.intl.string(D.t.HEm04O)
-          }), (0, r.jsx)(j, {
+          }), (0, r.jsx)(k, {
             trialOffer: y,
             discountOffer: O,
             children: D.intl.format(D.t["2HoFKC"], {
@@ -294,16 +294,16 @@ function F(e) {
     case P.cd.STICKER_PICKER_UPSELL:
       return l()(null != a, "You must specify children for this upsell type"), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: L.contentContainer,
+          className: x.contentContainer,
           children: [(0, r.jsx)("img", {
-            className: L.upsellImage,
-            src: x,
+            className: x.upsellImage,
+            src: L,
             alt: D.intl.string(D.t.do7AoK)
           }), (0, r.jsx)(h.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
             children: D.intl.string(D.t.jJG1pq)
-          }), (0, r.jsx)(j, {
+          }), (0, r.jsx)(k, {
             trialOffer: y,
             discountOffer: O,
             children: D.intl.format(D.t["2HoFKC"], {
@@ -327,16 +327,16 @@ function F(e) {
       let R = (0, _.ap)(C) ? n(537381) : n(341048);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: L.contentContainer,
+          className: x.contentContainer,
           children: [(0, r.jsx)("img", {
             alt: "",
-            className: L.upsellImage,
+            className: x.upsellImage,
             src: R
           }), (0, r.jsx)(h.X6q, {
             variant: "heading-xl/bold",
             color: "header-primary",
             children: D.intl.string(D.t["1SsvhY"])
-          }), (0, r.jsx)(j, {
+          }), (0, r.jsx)(k, {
             trialOffer: y,
             discountOffer: O,
             children: D.intl.format(D.t.md4nPz, {
@@ -394,7 +394,7 @@ function F(e) {
           })
       }
       return l()(null != M, "There must be some upsell context"), (0, r.jsxs)("div", {
-        className: L.contentContainer,
+        className: x.contentContainer,
         children: [(0, r.jsx)(h.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
@@ -402,7 +402,7 @@ function F(e) {
         }), (0, r.jsx)(h.Text, {
           variant: "text-md/normal",
           children: i
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(k, {
           trialOffer: y,
           discountOffer: O,
           children: M
@@ -410,7 +410,7 @@ function F(e) {
       });
     case P.cd.BURST_REACTION_QUICK_ACTION_UPSELL:
       return (0, r.jsxs)("div", {
-        className: L.contentContainer,
+        className: x.contentContainer,
         children: [(0, r.jsx)(h.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
@@ -418,15 +418,15 @@ function F(e) {
         }), (0, r.jsx)(h.Text, {
           variant: "text-md/normal",
           children: i
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(k, {
           trialOffer: y,
           discountOffer: O,
           children: D.intl.format(D.t.poib9P, {
             planName: (0, I.jP)(u),
             onClick: () => (0, b.uL)(w.Z5c.APPLICATION_STORE)
           })
-        }), (0, r.jsx)(k, {
-          className: L.upsellButton,
+        }), (0, r.jsx)(j, {
+          className: x.upsellButton,
           subscriptionTier: u,
           analyticsLocationObject: p,
           onClose: s,
@@ -435,7 +435,7 @@ function F(e) {
         })]
       });
     case P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT:
-      return l()(null != a, "You must specify children for this upsell type"), (0, r.jsx)(j, {
+      return l()(null != a, "You must specify children for this upsell type"), (0, r.jsx)(k, {
         trialOffer: y,
         discountOffer: O,
         children: D.intl.format(D.t["5KMAnJ"], {
@@ -446,8 +446,8 @@ function F(e) {
       });
     case P.cd.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
       return (0, r.jsxs)("div", {
-        className: o()(L.messageLengthUpsellContainer, {
-          [L.messageLengthUpsellAppearAnimation]: !A
+        className: o()(x.messageLengthUpsellContainer, {
+          [x.messageLengthUpsellAppearAnimation]: !A
         }),
         children: [(0, r.jsx)(h.Text, {
           variant: "text-lg/bold",
@@ -456,14 +456,14 @@ function F(e) {
         }), (0, r.jsx)(h.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          className: L.messageLengthUpsellHeader,
+          className: x.messageLengthUpsellHeader,
           children: D.intl.string(D.t.ZvHg3N)
         }), (0, r.jsx)("div", {
-          className: L.divider
-        }), (0, r.jsx)(j, {
+          className: x.divider
+        }), (0, r.jsx)(k, {
           trialOffer: y,
           discountOffer: O,
-          className: L.messageLengthBrandedContainer,
+          className: x.messageLengthBrandedContainer,
           subscriptionTier: u,
           children: D.intl.format(D.t.GUHtEx, {
             premiumMaxMessageLength: w.en1,
@@ -471,7 +471,7 @@ function F(e) {
               (0, b.uL)(w.Z5c.APPLICATION_STORE), null == s || s()
             }
           })
-        }), (0, r.jsx)(k, {
+        }), (0, r.jsx)(j, {
           subscriptionTier: u,
           analyticsLocationObject: p,
           onClose: s,

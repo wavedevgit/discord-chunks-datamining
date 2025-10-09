@@ -85,7 +85,7 @@ function F(e) {
   } = e;
   return t([m.Q2.MESSAGE, m.Q2.NAVIGATION, m.Q2.DND, m.Q2.CHAT, m.Q2.VOICE_AND_VIDEO, m.Q2.MISCELLANEOUS])
 }
-let V = l()((0, Chunk612226.Rv)()).filter(e => e.description !== x.intl.string(x.t.HnNtEB)).groupBy(e => e.group).value();
+let V = l()((0, Chunk612226.Rv)()).filter(e => e.description !== L.intl.string(L.t.HnNtEB)).groupBy(e => e.group).value();
 class H extends Chunk647438.PureComponent {
   renderMessage() {
     let {
@@ -120,21 +120,23 @@ class H extends Chunk647438.PureComponent {
         onClick: this.handleDeleteKeybind
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk894462.keybindGroupContent,
-        children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-          title: Chunk388032.intl.string(Chunk388032.t.UUpADw),
+        children: [(0, Chunk951288.jsx)("div", {
           className: Chunk894462.item,
           children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
+            label: Chunk388032.intl.string(Chunk388032.t.UUpADw),
             value: this.props.keybind.action,
             options: this.props.keybindActionTypes,
             onChange: this.handleActionChanged,
             isDisabled: module
           })
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          title: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk894462.item,
-          children: (0, Chunk951288.jsx)(Chunk825209.Z, {
-            defaultValue: this.props.keybind.shortcut,
-            onChange: this.handleShortcutChange
+          children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
+            label: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
+            children: (0, Chunk951288.jsx)(Chunk825209.Z, {
+              defaultValue: this.props.keybind.shortcut,
+              onChange: this.handleShortcutChange
+            })
           })
         }), !module && this.props.isUserSettingsRedesignEnabled && (0, Chunk951288.jsx)("div", {
           className: Chunk894462.removeKeybind,
@@ -345,54 +347,53 @@ class Y extends Chunk647438.PureComponent {
             downloadLink: Chunk981631.EYA.DOWNLOAD
           })
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        tag: Chunk481060.RB0.H1,
-        title: Chunk388032.intl.string(Chunk388032.t.Lz5KHB),
-        className: Chunk197571.marginTop60,
-        children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk894462.defaultKeybind,
-          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-            variant: "text-md/normal",
-            children: Chunk388032.intl.string(Chunk388032.t.sMWLBg)
-          }), (0, Chunk951288.jsx)("div", {
-            className: Chunk894462.defaultKeybindShortcutGroup,
-            children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
-              shortcut: Chunk721383._.binds["0"]
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
+        className: Chunk197571.marginBottom60
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 48,
+        children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
+          label: Chunk388032.intl.string(Chunk388032.t.Lz5KHB),
+          children: (0, Chunk951288.jsx)("div", {
+            className: Chunk894462.defaultKeybindGroup,
+            children: (0, Chunk951288.jsxs)("div", {
+              className: Chunk894462.defaultKeybind,
+              children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+                variant: "text-md/normal",
+                children: Chunk388032.intl.string(Chunk388032.t.sMWLBg)
+              }), (0, Chunk951288.jsx)("div", {
+                className: Chunk894462.defaultKeybindShortcutGroup,
+                children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
+                  shortcut: Chunk721383._.binds["0"]
+                })
+              })]
             })
-          })]
-        }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(F, {
+          })
+        }), (0, Chunk951288.jsx)(F, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
               let n = (0, m.UD)(e),
                 a = (0, m.U6)(e),
-                s = V[e];
-              return (0, r.jsxs)("div", {
-                className: M.defaultKeybindGroup,
-                children: [(0, r.jsx)(d.X6q, {
-                  variant: "heading-deprecated-12/semibold",
-                  className: o()(M.defaultKeybindGroupHeader, {
-                    [M.defaultKeybindGroupWithDescription]: null != a
-                  }),
-                  children: n
-                }), null != a && (0, r.jsx)(d.Text, {
-                  color: "header-secondary",
-                  className: M.defaultKeybindGroupDescription,
-                  variant: "text-sm/normal",
-                  children: a
-                }), (0, r.jsx)(d.izJ, {}), s.map(e => (0, r.jsxs)(i.Fragment, {
-                  children: [(0, r.jsxs)("div", {
-                    className: M.defaultKeybind,
-                    children: [(0, r.jsx)(d.Text, {
-                      variant: "text-md/normal",
-                      children: e.description
-                    }), (0, r.jsx)("div", {
-                      className: M.defaultKeybindShortcutGroup,
-                      children: e.binds.map(e => (0, r.jsx)(d.M2$, {
-                        shortcut: e
-                      }, e))
+                o = V[e];
+              return (0, r.jsx)(d.C3N, {
+                label: n,
+                description: a,
+                children: (0, r.jsx)("div", {
+                  className: M.defaultKeybindGroup,
+                  children: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
+                    children: [0 !== t && (0, r.jsx)(d.izJ, {}), (0, r.jsxs)("div", {
+                      className: M.defaultKeybind,
+                      children: [(0, r.jsx)(d.Text, {
+                        variant: "text-md/normal",
+                        children: e.description
+                      }), (0, r.jsx)("div", {
+                        className: M.defaultKeybindShortcutGroup,
+                        children: e.binds.map(e => (0, r.jsx)(d.M2$, {
+                          shortcut: e
+                        }, e))
+                      })]
                     })]
-                  }), (0, r.jsx)(d.izJ, {})]
-                }, e.description))]
+                  }, e.description))
+                })
               }, t)
             })
           })

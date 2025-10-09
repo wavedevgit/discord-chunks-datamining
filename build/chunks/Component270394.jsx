@@ -76,7 +76,7 @@ function z(e, t) {
   }), e
 }
 
-function F(e) {
+function K(e) {
   let {
     isDisabled: t,
     inviter: n,
@@ -148,7 +148,7 @@ function F(e) {
   })
 }
 
-function K(e) {
+function F(e) {
   var t;
   let {
     invite: n,
@@ -156,7 +156,7 @@ function K(e) {
     inviteDisabled: l = false,
     hide: a = false
   } = e, o = n.uses;
-  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(F, {
+  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(K, {
     isDisabled: l,
     inviter: n.inviter,
     showChannel: r,
@@ -201,8 +201,8 @@ function q(e) {
   } = e, o = (0, _.q)(t), s = (0, p.e7)([A.default], () => {
     var e;
     return A.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
-  }), c = (0, Z.Y)(r);
-  return (0, i.jsx)(F, {
+  }), c = (0, T.Y)(r);
+  return (0, i.jsx)(K, {
     isDisabled: a,
     inviter: s,
     showChannel: l,
@@ -257,7 +257,7 @@ function V(e) {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? true : t.username) ? n : "").toLowerCase()
     }).value(), [t, f]),
-    _ = (0, p.Wu)([T.Z], () => T.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
+    _ = (0, p.Wu)([Z.Z], () => Z.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
     C = r.useMemo(() => f ? [] : [...O.map(e => ({
       type: "invite",
       data: e
@@ -272,7 +272,7 @@ function V(e) {
         source: M.t4x.SETTINGS_INVITE
       })))
     },
-    [w, Z] = r.useState(62),
+    [w, T] = r.useState(62),
     k = () => {
       let e = {
         source: P.Zu.GUILD_SETTINGS
@@ -308,26 +308,30 @@ function V(e) {
             grow: 3,
             basis: 0,
             className: H.marginReset,
-            children: (0, i.jsx)(g.vwX, {
+            children: (0, i.jsx)(g.Text, {
+              variant: "text-md/medium",
               children: U.intl.string(U.t.EgHyKy)
             })
           }), (0, i.jsx)(S.Z.Child, {
             basis: 0,
             grow: 3,
             className: H.marginReset,
-            children: (0, i.jsx)(g.vwX, {
+            children: (0, i.jsx)(g.Text, {
+              variant: "text-md/medium",
               children: _.length > 0 ? U.intl.string(U.t.l7VISU) : U.intl.string(U.t.LBlFEB)
             })
           }), (0, i.jsx)(S.Z.Child, {
             grow: 1,
             basis: 0,
-            children: (0, i.jsx)(g.vwX, {
+            children: (0, i.jsx)(g.Text, {
+              variant: "text-md/medium",
               children: U.intl.string(U.t.erWrmJ)
             })
           }), (0, i.jsx)(S.Z.Child, {
             grow: 2,
             basis: 0,
-            children: (0, i.jsx)(g.vwX, {
+            children: (0, i.jsx)(g.Text, {
+              variant: "text-md/medium",
               children: U.intl.string(U.t["1aM27e"])
             })
           })]
@@ -345,11 +349,12 @@ function V(e) {
         className: B.header,
         children: U.intl.string(U.t["9F90iY"])
       });
-      if (1 === t) return (0, i.jsxs)(g.hjN, {
+      if (1 === t) return (0, i.jsxs)("div", {
         className: B.actions,
-        children: [(0, i.jsx)(g.R94, {
+        children: [(0, i.jsx)(g.Text, {
           className: H.marginBottom20,
-          type: g.geA.DESCRIPTION,
+          variant: "text-sm/normal",
+          color: "text-secondary",
           children: true === o ? U.intl.format(U.t["97VdNj"], {
             onCreateInvite: N
           }) : U.intl.string(U.t.WDw38P)
@@ -376,10 +381,10 @@ function V(e) {
         }), (0, i.jsx)(g.izJ, {
           className: B.headerDivider
         })]
-      }, "header");
+      });
       if (2 === t) return (0, i.jsx)(L.Y, {
         hasInvites: O.length > 0,
-        setHeight: Z,
+        setHeight: T,
         onShowDisableInvites: k,
         onShowInviteModal: N,
         hasInviteDisabledPermission: x,
@@ -394,7 +399,7 @@ function V(e) {
         let e = C[n];
         switch (null == e ? true : e.type) {
           case "invite":
-            return (0, i.jsx)(K, {
+            return (0, i.jsx)(F, {
               hide: a,
               invite: e.data,
               showChannel: b,

@@ -2,7 +2,7 @@
 /** chunk id: 785547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,7 +70,7 @@ function w(e, t) {
 var D = function(e) {
   return e.PLAY = "play", e.NOW_PLAYING = "now_playing", e.INSTALL = "install", e.UPDATE = "update", e.PAUSED = "paused", e.LOCATE = "locate", e.UNINSTALLING = "uninstalling", e.QUEUED = "queued", e.DOWNLOADING = "downloading", e.UNSUPPORTED_OS = "unsupported_os", e.ADD_TO_LIBRARY = "add_to_library", e.PREORDER_WAIT = "preorder_wait", e
 }(D || {});
-let L = Object.freeze({
+let x = Object.freeze({
     [Chunk981631.apO.PLAY]: "play",
     [Chunk981631.apO.INSTALL]: "install",
     [Chunk981631.apO.UPDATE]: "update",
@@ -78,7 +78,7 @@ let L = Object.freeze({
     [Chunk981631.apO.MOVE_UP]: "queued",
     [Chunk981631.apO.RESUME]: "paused"
   }),
-  x = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
+  L = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
 
 function M(e) {
   let t = v.en(e.sku);
@@ -86,7 +86,7 @@ function M(e) {
     date: t
   }) : null
 }
-class j extends(r = Chunk647438.Component) {
+class k extends(r = Chunk647438.Component) {
   get analyticsLocation() {
     return w(R({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
@@ -104,7 +104,7 @@ class j extends(r = Chunk647438.Component) {
       case "locate":
         return A.intl.string(A.t["nIj+a2"]);
       case "uninstalling":
-        let t = x();
+        let t = L();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
         return A.intl.string(A.t.TiJg5u);
@@ -126,7 +126,7 @@ class j extends(r = Chunk647438.Component) {
     } = this.props;
     if (module.isHidden()) return "add_to_library";
     if (module.isPreorder()) return "preorder_wait";
-    let r = null != require ? L[require] : null;
+    let r = null != require ? x[require] : null;
     return null != r ? r : null != exports && exports.type === Chunk981631.vxO.UNINSTALLING ? "uninstalling" : (0, Chunk358085.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
@@ -265,11 +265,11 @@ class j extends(r = Chunk647438.Component) {
   }
 }
 
-function k(e) {
+function j(e) {
   let {
     libraryApplication: t
   } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, m.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([h.Z], () => h.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(j, w(R({}, e), {
+  return (0, i.jsx)(k, w(R({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,
@@ -277,10 +277,10 @@ function k(e) {
     hasNoBuild: l
   }))
 }
-N(j, "defaultProps", {
+N(k, "defaultProps", {
   fullWidth: false,
   size: Chunk755721.zx.Sizes.LARGE,
   hideProgress: false,
   isPlayShiny: false,
   tooltipPosition: "top"
-}), N(j, "ButtonStates", D)
+}), N(k, "ButtonStates", D)

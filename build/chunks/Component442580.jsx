@@ -25,10 +25,11 @@ class u extends Chunk647438.PureComponent {
         value: e
       }, t)
     });
-    return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H2,
-      title: Chunk388032.intl.string(Chunk388032.t["gWbr/f"]),
-      children: (0, Chunk481250.VE)(exports)
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-md/medium",
+        children: Chunk388032.intl.string(Chunk388032.t["gWbr/f"])
+      }), (0, Chunk481250.VE)(exports)]
     })
   }
 }

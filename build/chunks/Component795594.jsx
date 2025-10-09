@@ -252,15 +252,15 @@ let ef = e => {
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[E]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
-    }), L = a.bot, M = (0, p.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
-      appDMChannelMuteConfig: j,
+    }), x = a.bot, M = (0, p.e7)([L.Z], () => L.Z.getDMFromUserId(null == x ? true : x.id)), {
+      appDMChannelMuteConfig: k,
       dmChannelMuted: B
-    } = (0, p.cj)([k.ZP], () => null == M ? {
+    } = (0, p.cj)([j.ZP], () => null == M ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: k.ZP.getChannelMuteConfig(null, M),
-      dmChannelMuted: k.ZP.isChannelMuted(null, M)
+      appDMChannelMuteConfig: j.ZP.getChannelMuteConfig(null, M),
+      dmChannelMuted: j.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [X, Q] = i.useState(false), eo = () => {
       let e = [];
       for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRk));
@@ -415,9 +415,9 @@ let ef = e => {
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
       })
     }, em = i.useCallback(async () => {
-      u()(null != L, "dm channel mute setting requires having a bot user");
+      u()(null != x, "dm channel mute setting requires having a bot user");
       let e = M;
-      null == e && (e = await b.Z.ensurePrivateChannel(L.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
+      null == e && (e = await b.Z.ensurePrivateChannel(x.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, Z.ZB.Unmuted) : (0, g.ZDy)(async () => {
         let {
@@ -428,7 +428,7 @@ let ef = e => {
           applicationId: a.id
         }, n))
       })
-    }, [M, L, B, a.id]), eg = () => C.enabled ? (0, r.jsxs)("div", {
+    }, [M, x, B, a.id]), eg = () => C.enabled ? (0, r.jsxs)("div", {
       className: er.directMessagesSection,
       children: [(0, r.jsx)(g.X6q, {
         variant: "heading-sm/medium",
@@ -437,10 +437,10 @@ let ef = e => {
         children: en.intl.string(en.t.NaZyYG)
       }), (0, r.jsxs)(g.Kqy, {
         gap: 20,
-        children: [null != L ? (0, r.jsx)(g.rsf, {
+        children: [null != x ? (0, r.jsx)(g.rsf, {
           label: en.intl.string(en.t.NkwaBg),
-          description: (null == j ? true : j.end_time) != null ? en.intl.format(en.t.j7h4AA, {
-            endTime: new Date(j.end_time).toLocaleString(en.intl.currentLocale, {
+          description: (null == k ? true : k.end_time) != null ? en.intl.format(en.t.j7h4AA, {
+            endTime: new Date(k.end_time).toLocaleString(en.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
               hour: "numeric",

@@ -155,11 +155,11 @@ class I extends(r = Chunk647438.PureComponent) {
       onValueRender: P,
       renderMarker: w,
       getAriaValueText: D,
-      barClassName: L,
-      grabberClassName: x,
+      barClassName: x,
+      grabberClassName: L,
       grabberStyles: M = {},
-      markerPosition: j = 0,
-      "aria-hidden": k,
+      markerPosition: k = 0,
+      "aria-hidden": j,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B,
@@ -179,8 +179,8 @@ class I extends(r = Chunk647438.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(h.mark, {
             [h.defaultValue]: r,
-            [h.markAbove]: 0 === j,
-            [h.markBelow]: 1 === j
+            [h.markAbove]: 0 === k,
+            [h.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -225,7 +225,7 @@ class I extends(r = Chunk647438.PureComponent) {
               "aria-valuenow": t,
               "aria-disabled": E,
               "aria-orientation": R,
-              "aria-hidden": k,
+              "aria-hidden": j,
               "aria-label": U,
               "aria-labelledby": G,
               "aria-describedby": null != B ? B : e.describedById,
@@ -249,7 +249,7 @@ class I extends(r = Chunk647438.PureComponent) {
                 className: h.track,
                 children: q
               }), (0, i.jsx)("div", {
-                className: s()(h.bar, L),
+                className: s()(h.bar, x),
                 style: I,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
@@ -266,7 +266,7 @@ class I extends(r = Chunk647438.PureComponent) {
                   text: C || y ? null : X,
                   forceOpen: n || r && p.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
-                    className: s()(h.grabber, x),
+                    className: s()(h.grabber, L),
                     style: b(g({}, M), {
                       left: z
                     }),

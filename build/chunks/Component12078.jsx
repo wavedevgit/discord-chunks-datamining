@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -22,15 +22,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk453921 = require("./453921.js");
 
-function _(e) {
+function v(e) {
   let {
     profile: t,
     canManageGuild: n,
     handleClick: i,
     hasCustomBanner: l
-  } = e, a = (0, d.nv)(), u = (0, d.qw)({
+  } = e, s = (0, d.nv)(), u = (0, d.qw)({
     profile: t,
-    defaultColor: a.hex(),
+    defaultColor: s.hex(),
     forceDefaultColor: false
   });
   return (0, r.jsx)(o.u, {
@@ -44,11 +44,11 @@ function _(e) {
       style: {
         background: (0, d.dG)(u)
       },
-      className: s()(j.itemContainer, {
+      className: a()(j.itemContainer, {
         [j.disabled]: !n
       }),
       children: (0, r.jsx)("div", {
-        className: s()({
+        className: a()({
           [j.itemSelected]: !l && null == t.brandColorPrimary
         })
       })
@@ -56,12 +56,12 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     isDiscoverable: t,
     profile: n,
     onCustomBannerChange: l,
-    canManageGuild: a
+    canManageGuild: s
   } = e, o = null != n.customBanner, d = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
@@ -85,12 +85,12 @@ function v(e) {
     children: (0, r.jsx)(c.tEY, {
       within: true,
       children: (0, r.jsx)("div", {
-        className: s()(j.uploadItemWrapper, {
+        className: a()(j.uploadItemWrapper, {
           [j.uploadItemSelected]: o
         }),
         children: (0, r.jsxs)("div", {
-          className: s()(j.uploadItem, {
-            [j.disabled]: !a
+          className: a()(j.uploadItem, {
+            [j.disabled]: !s
           }),
           children: [g, (0, r.jsx)("div", {
             className: j.overlay
@@ -104,7 +104,7 @@ function v(e) {
             multiple: false,
             tabIndex: 0,
             onChange: l,
-            disabled: !a
+            disabled: !s
           })]
         })
       })
@@ -118,17 +118,17 @@ function C(e) {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: u
-  } = e, m = (0, a.e7)([g.Z], () => g.Z.getGuild(n.id)), p = null != (t = null == m ? true : m.features.has(h.oNc.DISCOVERABLE)) && t, C = n.id, O = i.useCallback(e => () => {
+  } = e, m = (0, s.e7)([g.Z], () => g.Z.getGuild(n.id)), p = null != (t = null == m ? true : m.features.has(h.oNc.DISCOVERABLE)) && t, C = n.id, O = i.useCallback(e => () => {
     f.Z.updateGuildProfile(C, {
       brandColorPrimary: e,
       customBanner: null
     })
   }, [C]), y = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
-  return (0, r.jsx)(c.hjN, {
-    title: b.intl.string(b.t.BSVog4),
+  return (0, r.jsx)(c.gNt, {
+    label: b.intl.string(b.t.BSVog4),
     children: (0, r.jsxs)("div", {
       className: j.grid,
-      children: [(0, r.jsx)(_, {
+      children: [(0, r.jsx)(v, {
         profile: n,
         canManageGuild: u,
         handleClick: O(null),
@@ -149,17 +149,17 @@ function C(e) {
             style: {
               background: (0, d.dG)(n)
             },
-            className: s()(j.itemContainer, {
+            className: a()(j.itemContainer, {
               [j.disabled]: !u
             }),
             children: (0, r.jsx)("div", {
-              className: s()({
+              className: a()({
                 [j.itemSelected]: y(n)
               })
             })
           })
         }, t)
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(_, {
         canManageGuild: u,
         isDiscoverable: p,
         profile: n,

@@ -170,7 +170,7 @@ let A = {
       onClose: t
     }) : null
   },
-  w = e => {
+  L = e => {
     var t;
     let {
       handleClose: n
@@ -231,12 +231,12 @@ let A = {
       })]
     })
   },
-  L = [{
+  w = [{
     key: null,
     renderStep: e => (0, r.jsx)(T, _({}, e))
   }, {
     key: Chunk409813.h8.REVIEW,
-    renderStep: e => (0, r.jsx)(w, _({}, e)),
+    renderStep: e => (0, r.jsx)(L, _({}, e)),
     options: {
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHh)
     }
@@ -289,7 +289,7 @@ let A = {
       applicationId: (0, g.N)(t),
       activeSubscription: null,
       loadId: n,
-      stepConfigs: L,
+      stepConfigs: w,
       purchaseType: x.GZQ.ONE_TIME,
       skuIDs: [t],
       excludeSubscriptionPlansBySKU: true,

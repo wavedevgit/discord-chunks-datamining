@@ -5,7 +5,7 @@ require.d(exports, {
   BT: () => W,
   Hn: () => A,
   Hu: () => H,
-  I0: () => k,
+  I0: () => j,
   Og: () => G,
   TP: () => N,
   Uu: () => K,
@@ -16,7 +16,7 @@ require.d(exports, {
   r6: () => F,
   uB: () => U,
   we: () => Y,
-  ym: () => L
+  ym: () => x
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -68,9 +68,9 @@ let A = Chunk149765.vB(0),
   P = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.SEND_MESSAGES, Chunk981631.Plq.CONNECT, Chunk981631.Plq.SPEAK, Chunk981631.Plq.STREAM, Chunk981631.Plq.USE_EMBEDDED_ACTIVITIES, Chunk981631.Plq.USE_EXTERNAL_APPS, Chunk981631.Plq.USE_EXTERNAL_EMOJIS, Chunk981631.Plq.USE_EXTERNAL_SOUNDS, Chunk981631.Plq.USE_EXTERNAL_STICKERS, Chunk981631.Plq.USE_SOUNDBOARD, Chunk981631.Plq.USE_VAD),
   w = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY),
   D = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY, Chunk981631.Plq.CHANGE_NICKNAME),
-  L = Chunk149765.$e(Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.VIEW_AUDIT_LOG);
+  x = Chunk149765.$e(Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.VIEW_AUDIT_LOG);
 
-function x(e, t, n) {
+function L(e, t, n) {
   let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
   if (r && t.mfaLevel === I.BpS.ELEVATED && n === h.default.getId()) {
     var i;
@@ -97,7 +97,7 @@ function M(e, t, n, r) {
   return n
 }
 
-function j(e) {
+function k(e) {
   let {
     userId: t,
     member: n,
@@ -116,10 +116,10 @@ function j(e) {
       let t = o[n.roles[e]];
       true !== t && (f = a.IH(f, t.permissions))
     }
-  return f = a.e$(f, I.Plq.ADMINISTRATOR) ? C : M(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.hX(f, c)), g.ZP.isCurrentUserGuest(r.id) && (f = a.hX(f, P)), x(f, r, t, s)
+  return f = a.e$(f, I.Plq.ADMINISTRATOR) ? C : M(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.hX(f, c)), g.ZP.isCurrentUserGuest(r.id) && (f = a.hX(f, P)), L(f, r, t, s)
 }
 
-function k(e) {
+function j(e) {
   let t, {
       forceRoles: n,
       context: r,
@@ -134,7 +134,7 @@ function k(e) {
     if (r.isScheduledForDeletion()) return A;
     if (f.Ec.has(r.type)) {
       let e = m.Z.getChannel(r.parent_id);
-      return null == e ? A : G(r, k({
+      return null == e ? A : G(r, j({
         forceRoles: n,
         context: e,
         overwrites: i,
@@ -162,7 +162,7 @@ function k(e) {
     joinedAt: new Date().toISOString(),
     communicationDisabledUntil: null
   };
-  return j({
+  return k({
     userId: I.lds,
     member: u,
     guild: t,
@@ -207,9 +207,9 @@ function U(e) {
     i = null != e ? b.Z.getGuild(e) : null
   } else s = null != s ? s : {}, i = o;
   if (null == i) return A;
-  if (!(h === (null == (t = y.default.getCurrentUser()) ? true : t.id) && c.Z.isViewingRoles(i.id)) && (0, _.eM)(i, h)) return x(C, i, h, u);
+  if (!(h === (null == (t = y.default.getCurrentUser()) ? true : t.id) && c.Z.isViewingRoles(i.id)) && (0, _.eM)(i, h)) return L(C, i, h, u);
   let O = g.ZP.getMember(i.id, h);
-  return j({
+  return k({
     userId: h,
     member: O,
     guild: i,

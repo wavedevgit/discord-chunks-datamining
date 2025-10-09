@@ -2,7 +2,7 @@
 /** chunk id: 781428, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => $,
-  q: () => X
+  q: () => Q
 }), require("./35282.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -84,12 +84,12 @@ function J(e, t) {
   }), e
 }
 
-function X() {
+function Q() {
   return (0, Chunk951288.jsx)(Chunk388905.ZP, {
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
-class Q extends(r = Chunk647438.PureComponent) {
+class X extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e) {
     let {
       handoffAvailable: t,
@@ -437,7 +437,7 @@ class Q extends(r = Chunk647438.PureComponent) {
           })
         })]
       }), (0, i.jsx)(d.y5t, {
-        children: e ? (0, i.jsx)(B.Z, {
+        children: e ? (0, i.jsx)(F.Z, {
           authTokenCallback: this.handleAuthToken,
           conditionalMediationAbortController: this.state.conditionalMediationAbortController
         }) : null
@@ -461,7 +461,7 @@ class Q extends(r = Chunk647438.PureComponent) {
     })
   }
   renderGuildTemplate(e) {
-    return (0, i.jsx)(F.Z, {
+    return (0, i.jsx)(B.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
       className: a()(this.props.authBoxClassName, H.horizontalAuthBox),
@@ -552,7 +552,7 @@ class Q extends(r = Chunk647438.PureComponent) {
       checkingHandoff: s,
       redirecting: a
     } = this.state;
-    if (a || Chunk120356) return (0, Chunk951288.jsx)(X, {});
+    if (a || Chunk120356) return (0, Chunk951288.jsx)(Q, {});
     if (Chunk647438) return this.renderHandOffAvailable();
     if (module && Chunk120356) return this.renderHandOffContinue();
     switch (r) {
@@ -770,7 +770,7 @@ class Q extends(r = Chunk647438.PureComponent) {
     }
   }
 }
-q(Q, "defaultProps", {
+q(X, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let $ = function(e) {
@@ -786,5 +786,5 @@ let $ = function(e) {
     country: y.Z.getCountryCode(),
     hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
   }));
-  return (0, i.jsx)(Q, Y({}, e, t))
+  return (0, i.jsx)(X, Y({}, e, t))
 }

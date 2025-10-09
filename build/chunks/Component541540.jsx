@@ -2,7 +2,7 @@
 /** chunk id: 541540, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,10 +14,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk669079 = require("./669079.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk954655 = require("./954655.js");
+  Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +25,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,20 +49,20 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = "WUMP-AAAAA-BBBBB-CCCCC";
-class y extends Chunk647438.Component {
+let E = "WUMP-AAAAA-BBBBB-CCCCC";
+class b extends Chunk647438.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return E(m({}, module), {
+    return g(h({}, module), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -76,22 +75,23 @@ class y extends Chunk647438.Component {
       hasError: i,
       isPromoCode: a
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H1,
-      title: Chunk388032.intl.string(Chunk388032.t["il+VCg"]),
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        children: Chunk388032.intl.string(Chunk388032.t.SeKIoa)
-      }), (0, Chunk951288.jsx)("form", {
+    return (0, Chunk951288.jsx)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t["il+VCg"]),
+      children: (0, Chunk951288.jsx)("form", {
         onSubmit: this.handleSubmit,
-        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-          direction: "horizontal",
-          gap: 8,
+        children: (0, Chunk951288.jsxs)(Chunk481060.NIo, {
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: Chunk388032.intl.string(Chunk388032.t.SeKIoa),
             type: module ? "password" : "text",
             value: exports,
             onChange: this.handleChange,
-            placeholder: b,
+            placeholder: E,
             error: !Chunk442837 && Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Y11a2t) : null,
+            helperText: Chunk442837 ? Chunk388032.intl.format(Chunk388032.t.gPt3PD, {
+              promoLink: () => {
+                window.open("https://discord.com/billing/promotions/".concat(exports))
+              }
+            }) : null,
             fullWidth: true
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
@@ -100,29 +100,21 @@ class y extends Chunk647438.Component {
             loading: require
           })]
         })
-      }), Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk954655.errorMessage,
-        variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.gPt3PD, {
-          promoLink: () => {
-            window.open("https://discord.com/billing/promotions/".concat(exports))
-          }
-        })
-      }) : null]
+      })
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), p(this, "state", {
       codeInput: "",
       submitting: false,
       hasError: false,
       isPromoCode: false
-    }), h(this, "handleChange", e => {
+    }), p(this, "handleChange", e => {
       this.setState({
         codeInput: e,
         hasError: false
       })
-    }), h(this, "handleSubmit", async e => {
+    }), p(this, "handleSubmit", async e => {
       e.preventDefault();
       let {
         codeInput: t
@@ -142,7 +134,7 @@ class y extends Chunk647438.Component {
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(f.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: E(m({}, this.analyticsLocation), {
+          location: g(h({}, this.analyticsLocation), {
             object: f.qAy.BUTTON_CTA
           })
         }), (0, l.V)({
@@ -163,10 +155,10 @@ class y extends Chunk647438.Component {
   }
 }
 
-function O() {
+function y() {
   let e = Chunk647438.useContext(Chunk626135.AnalyticsContext),
     t = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled);
-  return (0, Chunk951288.jsx)(y, {
+  return (0, Chunk951288.jsx)(b, {
     analyticsContext: module,
     obscureInput: exports
   })

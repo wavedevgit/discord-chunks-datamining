@@ -65,28 +65,28 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = 250,
+let L = 250,
   M = 24;
 
-function j(e, t) {
+function k(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
-      return L(w({}, e), {
+      return x(w({}, e), {
         animationPhase: "ready",
         height: t.height
       });
     case "START_EXPAND_ANIMATION":
-      return L(w({}, e), {
+      return x(w({}, e), {
         animationPhase: "animating",
         height: t.height
       });
     case "ANIMATION_COMPLETE":
-      return L(w({}, e), {
+      return x(w({}, e), {
         animationPhase: "done",
         height: "auto"
       });
@@ -94,7 +94,7 @@ function j(e, t) {
       return (0, g.vE)(t)
   }
 }
-let k = {
+let j = {
   animationPhase: "awaitingInput",
   height: "auto"
 };
@@ -107,7 +107,7 @@ function U(e) {
     onOpenUserProfileModal: g,
     onClose: P
   } = e, D = (0, _.Dt)(), {
-    analyticsLocations: L
+    analyticsLocations: x
   } = (0, f.ZP)(), {
     trackUserProfileAction: U
   } = (0, E.KZ)(), {
@@ -126,7 +126,7 @@ function U(e) {
     voiceActivityStatusEnabled: Y
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), W = Y && null == B && null == F && null != Z, K = (0, O.yi)(), z = (null == K ? true : K.interactionSource) === A.n_.ACTIVITY, q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), [$, ee] = i.useReducer(j, k), {
+  }), W = Y && null == B && null == F && null != Z, K = (0, O.yi)(), z = (null == K ? true : K.interactionSource) === A.n_.ACTIVITY, q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), J = i.useRef(null), [$, ee] = i.useReducer(k, j), {
     height: et,
     animationPhase: en
   } = $, er = "awaitingInput" !== en, ei = "animating" === en || "done" === en, ea = (0, p.P6)("UserProfileStackedActivity"), eo = [], es = {
@@ -150,7 +150,7 @@ function U(e) {
       onClick: () => {
         U({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: L
+          analyticsLocations: x
         }), g({
           section: A.oh.ACTIVITY
         })
@@ -163,7 +163,7 @@ function U(e) {
     if (null == q.current || null == Q.current) return;
     U({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: L
+      analyticsLocations: x
     });
     let e = q.current.getBoundingClientRect().height,
       t = Q.current.getBoundingClientRect().height;
@@ -180,9 +180,9 @@ function U(e) {
           type: "ANIMATION_COMPLETE",
           height: "auto"
         }), null == (e = X.current) || e.focus()
-      }, x)
+      }, L)
     })
-  }, [L, U]);
+  }, [x, U]);
   if ((0, c.zq)(() => {
       null != J.current && window.clearTimeout(J.current)
     }), H) return null;

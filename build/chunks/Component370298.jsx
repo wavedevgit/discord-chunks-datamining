@@ -2,7 +2,7 @@
 /** chunk id: 370298, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk491856 = require("./491856.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,13 +52,13 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e) {
+function k(e) {
   let {
     toggleShowMenu: t,
     showMenu: n,
@@ -77,7 +77,7 @@ function j(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(k, {
+      return (0, r.jsx)(j, {
         onClose: t,
         channel: _,
         imageUrl: d,
@@ -120,34 +120,34 @@ function j(e) {
   }))
 }
 
-function k(e) {
+function j(e) {
   let {
     onSelect: t,
     onClose: n,
     channel: o,
     imageUrl: s,
     mimeType: T
-  } = e, x = (0, a.e7)([A.Z], () => A.Z.getGuild(o.guild_id)), {
-    fetchState: j,
-    imageRecCommandContexts: k
+  } = e, L = (0, a.e7)([A.Z], () => A.Z.getGuild(o.guild_id)), {
+    fetchState: k,
+    imageRecCommandContexts: j
   } = (0, R.h)({
     channelId: o.id
-  }), U = j === P.M.FETCHING, G = (0, b.g)(o), B = (0, p.PL)(true, true), Z = (0, p.LD)(o.guild_id, true);
+  }), U = k === P.M.FETCHING, G = (0, b.g)(o), B = (0, p.PL)(true, true), Z = (0, p.LD)(o.guild_id, true);
   i.useEffect(() => {
-    (j === P.M.ERROR || j === P.M.FETCHED && 0 === k.length) && n()
-  }, [j, k.length, n]), i.useEffect(() => {
+    (k === P.M.ERROR || k === P.M.FETCHED && 0 === j.length) && n()
+  }, [k, j.length, n]), i.useEffect(() => {
     var e, t;
-    if (U || 0 === k.length) return;
+    if (U || 0 === j.length) return;
     let n = [];
-    k.forEach(e => {
+    j.forEach(e => {
       n.push(Number(e.command.id)), null != e.overrideSendCommand && n.push(Number(e.overrideSendCommand.id))
     }), C.default.track(w.rMx.APP_IMAGE_RECS_MENU_VIEWED, {
       guild_id: null != (e = null == o ? true : o.guild_id) ? e : "",
       channel_id: null != (t = null == o ? true : o.id) ? t : "",
-      application_ids: [...k.map(e => Number(e.command.applicationId))],
+      application_ids: [...j.map(e => Number(e.command.applicationId))],
       command_ids: n
     })
-  }, [k, o, U]);
+  }, [j, o, U]);
   let F = i.useCallback(async e => {
       let t = await fetch(s),
         n = await t.arrayBuffer(),
@@ -233,11 +233,11 @@ function k(e) {
         },
         context: {
           channel: o,
-          guild: x
+          guild: L
         },
         commandOrigin: t === m.Vh.IMAGE_RECS_SUBMENU ? m.bB.IMAGE_RECS_SUBMENU : m.bB.IMAGE_RECS_MENU
       }))
-    }, [o, x, B, Z, F]);
+    }, [o, L, B, Z, F]);
   return (0, r.jsxs)(l.v2r, {
     onSelect: t,
     navId: "image-context-commands-popout",
@@ -246,7 +246,7 @@ function k(e) {
     children: [(0, r.jsx)(l.sNh, {
       id: "menu-image-rec-header",
       render: () => (0, r.jsx)(l.Text, {
-        className: L.title,
+        className: x.title,
         variant: "text-md/bold",
         color: "header-primary",
         children: D.intl.string(D.t.emnnEB)
@@ -259,7 +259,7 @@ function k(e) {
       navigable: false,
       disabled: true
     }, "menu-image-recs-placeholder") : (0, r.jsx)(r.Fragment, {
-      children: k.filter(e => null != e.imageOption).map(e => {
+      children: j.filter(e => null != e.imageOption).map(e => {
         let t = e.overrideSendCommand,
           n = null == e ? true : e.overrideSendCommandInfo,
           i = null != t && null != n,

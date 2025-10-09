@@ -2,11 +2,10 @@
 /** chunk id: 310800, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk159691 = require("./159691.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk724598 = require("./724598.jsx"),
   Chunk674180 = require("./674180.js"),
@@ -19,105 +18,104 @@ var Chunk159691 = require("./159691.js"),
   Chunk391181 = require("./391181.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk82917 = require("./82917.js");
-let x = "guild-product-listings-header";
 
-function b(e) {
+function x(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
   } = e, g = (0, d.ue)(t, {
     publishedOnly: false
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: b
-  } = (0, a.gX)(t), j = g.length > 0;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.vwX, {
-      className: h.productListingsHeader,
-      id: x,
-      children: j ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT)
-    }), j ? (0, r.jsx)("ul", {
-      className: h.productListings,
-      "aria-labelledby": x,
-      children: g.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(p.Z, {
-          guildId: t,
-          product: e,
-          onEditProduct: () => i(e.id),
-          onUnpublishProduct: () => {
-            var n;
-            return n = e.id, void(0, c.Je)(t, n, {
-              published: false
-            })
-          },
-          onDeleteProduct: () => {
-            var i, s;
-            return i = e.id, s = e.name, void(0, l.ZDy)(async () => {
-              let {
-                default: e
-              } = await n.e("95925").then(n.bind(n, 673078));
-              return n => (0, r.jsx)(e, function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                  var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                      value: r,
-                      enumerable: true,
-                      configurable: true,
-                      writable: true
-                    }) : e[t] = r
-                  })
-                }
-                return e
-              }({
-                guildId: t,
-                productId: i,
-                productName: s
-              }, n))
-            })
-          },
-          onCopyProductLink: () => {
-            var n;
-            return n = e.id, void(0, o.JG)((0, u.ar)(t, n))
-          },
-          onTestDownload: () => m.Z.open({
+    shouldRestrictUpdatingCreatorMonetizationSettings: x
+  } = (0, s.gX)(t), b = g.length > 0;
+  return (0, r.jsx)("div", {
+    className: h.productListingsHeader,
+    children: (0, r.jsx)(l.gNt, {
+      label: b ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT),
+      children: e => b ? (0, r.jsx)("ul", {
+        className: h.productListings,
+        id: e.controlId,
+        children: g.map(e => (0, r.jsx)("li", {
+          children: (0, r.jsx)(p.Z, {
             guildId: t,
-            productId: e.id
-          }),
-          onReportProduct: () => {},
-          disabled: b
-        })
-      }, e.id))
-    }) : (0, r.jsx)(s.Z, {
-      guildId: t,
-      showCTA: false,
-      responsive: false
-    })]
+            product: e,
+            onEditProduct: () => i(e.id),
+            onUnpublishProduct: () => {
+              var n;
+              return n = e.id, void(0, c.Je)(t, n, {
+                published: false
+              })
+            },
+            onDeleteProduct: () => {
+              var i, a;
+              return i = e.id, a = e.name, void(0, l.ZDy)(async () => {
+                let {
+                  default: e
+                } = await n.e("95925").then(n.bind(n, 673078));
+                return n => (0, r.jsx)(e, function(e) {
+                  for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {},
+                      r = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                      return Object.getOwnPropertyDescriptor(n, e).enumerable
+                    }))), r.forEach(function(t) {
+                      var r;
+                      r = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: r,
+                        enumerable: true,
+                        configurable: true,
+                        writable: true
+                      }) : e[t] = r
+                    })
+                  }
+                  return e
+                }({
+                  guildId: t,
+                  productId: i,
+                  productName: a
+                }, n))
+              })
+            },
+            onCopyProductLink: () => {
+              var n;
+              return n = e.id, void(0, o.JG)((0, u.ar)(t, n))
+            },
+            onTestDownload: () => m.Z.open({
+              guildId: t,
+              productId: e.id
+            }),
+            onReportProduct: () => {},
+            disabled: x
+          })
+        }, e.id))
+      }) : (0, r.jsx)(a.Z, {
+        guildId: t,
+        showCTA: false,
+        responsive: false
+      })
+    })
   })
 }
 
-function j(e) {
+function b(e) {
   let {
     guildId: t
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
-  } = (0, a.gX)(t), s = e => {
+  } = (0, s.gX)(t), a = e => {
     g.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.zxk, {
       text: f.intl.string(f.t.riG6DQ),
       icon: l.qJs,
-      onClick: () => s(null),
+      onClick: () => a(null),
       disabled: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(x, {
       guildId: t,
-      handleCreateOrEditProduct: s
+      handleCreateOrEditProduct: a
     })]
   })
 }

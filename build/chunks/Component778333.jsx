@@ -62,7 +62,7 @@ function b(e) {
   S ? (R = g.intl.string(g.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (R = g.intl.string(g.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
   let w = v ? g.intl.string(g.t.eQyu1N) : g.intl.string(g.t.PYJHW1),
     D = null != n.inviter ? "".concat(n.inviter.username) : "",
-    L = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
+    x = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
       text: w
@@ -75,7 +75,7 @@ function b(e) {
         }), (0, r.jsx)(u.Z.Info, {
           title: D,
           onClick: S ? N : true,
-          children: L
+          children: x
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: N,

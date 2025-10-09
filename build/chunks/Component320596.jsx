@@ -1,7 +1,7 @@
 /** Chunk was on 24753 **/
 /** chunk id: 320596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ie: () => f,
+  Ie: () => h,
   mv: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
@@ -21,14 +21,14 @@ let b = e => {
     let {
       channelId: t
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(f, {
       channelId: t
     })
   },
-  h = e => {
+  f = e => {
     let {
       channelId: t
-    } = e, n = (0, x._d)(t), l = (0, x.K3)(t);
+    } = e, n = (0, g._d)(t), l = (0, g.K3)(t);
     if (0 === n && 0 === l) return null;
     let c = e => {
       (0, s.vq)(e, e => {
@@ -68,61 +68,61 @@ let b = e => {
       })
     };
     return n > 0 && l > 0 ? (0, r.jsxs)("div", {
-      className: m.blockedNotice,
+      className: x.blockedNotice,
       children: [(0, r.jsx)(a.t6m, {
         size: "lg",
         color: i.Z.unsafe_rawColors.RED_400.css
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: g.intl.string(g.t["P/KFX1"])
+        children: m.intl.string(m.t["P/KFX1"])
       }), (0, r.jsx)(a.P3F, {
-        className: m.blockedButton,
+        className: x.blockedButton,
         onClick: c,
-        children: g.intl.string(g.t.rUEjBQ)
+        children: m.intl.string(m.t.rUEjBQ)
       })]
     }) : l > 0 ? (0, r.jsxs)("div", {
-      className: m.blockedNotice,
+      className: x.blockedNotice,
       children: [(0, r.jsx)(a.kZF, {
         size: "lg"
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: g.intl.format(g.t.Ri3o39, {
+        children: m.intl.format(m.t.Ri3o39, {
           number: l
         })
       }), (0, r.jsx)(a.P3F, {
-        className: m.blockedButton,
+        className: x.blockedButton,
         onClick: c,
-        children: g.intl.string(g.t.rUEjBQ)
+        children: m.intl.string(m.t.rUEjBQ)
       })]
     }) : (0, r.jsxs)("div", {
-      className: m.blockedNotice,
+      className: x.blockedNotice,
       children: [(0, r.jsx)(a.t6m, {
         size: "lg",
         color: i.Z.unsafe_rawColors.RED_400.css
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: g.intl.format(g.t["6Tcdt7"], {
+        children: m.intl.format(m.t["6Tcdt7"], {
           number: n
         })
       }), (0, r.jsx)(a.P3F, {
-        className: m.blockedButton,
+        className: x.blockedButton,
         onClick: c,
-        children: g.intl.string(g.t.rUEjBQ)
+        children: m.intl.string(m.t.rUEjBQ)
       })]
     })
   },
-  f = e => {
+  h = e => {
     let {
       user: t,
       showStatus: n,
       speaker: i,
       channelId: s
-    } = e, x = (0, l.e7)([d.ZP], () => d.ZP.isModerator(t.id, s)), b = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), h = null;
-    return n && (h = i ? g.intl.string(g.t.LqMmGx) : x ? g.intl.string(g.t.GMZqSk) : g.intl.string(g.t.suRAp6)), (0, r.jsxs)("div", {
-      className: m.user,
+    } = e, g = (0, l.e7)([d.ZP], () => d.ZP.isModerator(t.id, s)), b = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), f = null;
+    return n && (f = i ? m.intl.string(m.t.LqMmGx) : g ? m.intl.string(m.t.GMZqSk) : m.intl.string(m.t.suRAp6)), (0, r.jsxs)("div", {
+      className: x.user,
       children: [(0, r.jsx)(c.Z, {
         src: t.getAvatarURL(null, 32),
         size: a.EFr.SIZE_32,
@@ -133,12 +133,12 @@ let b = e => {
         renderIcon: i ? () => (0, r.jsx)(a.S6n, {
           size: "md",
           color: "currentColor",
-          className: m.icon
+          className: x.icon
         }) : null
       }, t.id), (0, r.jsxs)("div", {
-        className: m.userInfo,
+        className: x.userInfo,
         children: [(0, r.jsxs)("div", {
-          className: m.username,
+          className: x.username,
           children: [(0, r.jsx)(a.Text, {
             variant: n ? "text-md/normal" : "text-sm/normal",
             children: u.ZP.getName(t)
@@ -148,15 +148,15 @@ let b = e => {
             children: "#".concat(t.discriminator)
           })]
         }), (0, r.jsxs)("div", {
-          className: m.username,
+          className: x.username,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: b ? "text-danger" : "text-default",
-            children: b ? g.intl.string(g.t["4bDptL"]) : g.intl.string(g.t.tFY5ZW)
+            children: b ? m.intl.string(m.t["4bDptL"]) : m.intl.string(m.t.tFY5ZW)
           }), (0, r.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: ["| ", h]
+            children: ["| ", f]
           })]
         })]
       })]
@@ -165,14 +165,14 @@ let b = e => {
   j = e => {
     let {
       channelId: t
-    } = e, n = (0, x.z)(t), l = (0, x.bA)(t);
+    } = e, n = (0, g.z)(t), l = (0, g.bA)(t);
     return (0, r.jsx)(a.Ttm, {
-      className: m.container,
+      className: x.container,
       children: [...n, ...l].map(e => {
         let {
           user: n
         } = e;
-        return (0, r.jsx)(f, {
+        return (0, r.jsx)(h, {
           user: n,
           channelId: t
         }, n.id)

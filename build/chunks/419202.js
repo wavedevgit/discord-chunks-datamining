@@ -9,7 +9,7 @@ function a(e, n, t) {
   }) : e[n] = t, e
 }
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./415506.js"), require("./388685.js"), require("./259475.js"), require("./539854.js");
 class l {
   appendBytes(e) {
@@ -40,10 +40,10 @@ class l {
         l = 4
     }
     this.appendBytes([79, 103, 103, 83, 0, l, 255 & e.granulePosition, e.granulePosition >> 8 & 255, e.granulePosition >> 16 & 255, e.granulePosition >> 24 & 255, 0, 0, 0, 0, 0, 0, 0, 1, 255 & this._pageSequenceNumber, this._pageSequenceNumber >> 8 & 255, this._pageSequenceNumber >> 16 & 255, this._pageSequenceNumber >> 24 & 255]);
-    let i = this._offset;
+    let r = this._offset;
     for (let n of (this.appendBytes([0, 0, 0, 0, e.segments.length]), this.appendBytes(e.segments.map(e => e.length)), e.segments)) this.appendBytes(n);
-    let o = this._buffer.subarray(a, this._offset).reduce((e, n) => e << 8 >>> 0 ^ r[e >>> 24 ^ n], 0) >>> 0;
-    this._buffer.set([255 & o, o >> 8 & 255, o >> 16 & 255, o >> 24 & 255], i), this._pageSequenceNumber++
+    let o = this._buffer.subarray(a, this._offset).reduce((e, n) => e << 8 >>> 0 ^ i[e >>> 24 ^ n], 0) >>> 0;
+    this._buffer.set([255 & o, o >> 8 & 255, o >> 16 & 255, o >> 24 & 255], r), this._pageSequenceNumber++
   }
   finalize(e) {
     this.addPage({
@@ -60,19 +60,19 @@ class l {
   }
 }
 
-function i(e, n) {
+function r(e, n) {
   let t = new Uint8Array([79, 112, 117, 115, 72, 101, 97, 100, 1, n.channelCount, 0, 0, 255 & n.inputSampleRate, n.inputSampleRate >> 8 & 255, n.inputSampleRate >> 16 & 255, n.inputSampleRate >> 24 & 255, 255 & n.outputGain, n.outputGain >> 8 & 255, n.channelMappingFamily]),
     a = new Uint8Array([79, 112, 117, 115, 84, 97, 103, 115, 0, 0, 0, 0, 0, 0, 0, 0]),
-    i = new l;
-  i.addPage({
+    r = new l;
+  r.addPage({
     pageType: 2,
     granulePosition: 0,
     segments: [t]
   });
-  let r = 0;
-  for (let n of (i.addPage({
+  let i = 0;
+  for (let n of (r.addPage({
       pageType: 0,
-      granulePosition: r,
+      granulePosition: i,
       segments: [a]
     }), e)) {
     let e = function(e) {
@@ -80,20 +80,20 @@ function i(e, n) {
         t = [];
       for (let a = 0; a <= n; a++) {
         let l = 0 === a ? 0 : 255 * a,
-          i = a === n ? e.length : (a + 1) * 255;
-        t.push(e.slice(l, i))
+          r = a === n ? e.length : (a + 1) * 255;
+        t.push(e.slice(l, r))
       }
       return t
     }(n.buffer);
-    r += n.numSamples, i.addPage({
+    i += n.numSamples, r.addPage({
       pageType: 0,
-      granulePosition: r,
+      granulePosition: i,
       segments: e
     })
   }
-  return i.finalize(r)
+  return r.finalize(i)
 }
-let r = function() {
+let i = function() {
   let e = new Uint32Array(256);
   for (let n = 256; exports > 0; exports--) {
     let t = exports << 24;

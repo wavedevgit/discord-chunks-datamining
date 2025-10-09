@@ -13,8 +13,8 @@ async function r(e, t) {
     reasonCode: o,
     reasonDescription: s,
     variant: u,
-    feedback: c,
-    analyticsData: d
+    feedback: d,
+    analyticsData: c
   } = t, b = l.Z.getSettings(), f = l.Z.getInputDeviceId(), O = l.Z.getInputDevices()[f], v = l.Z.getOutputDeviceId(), _ = l.Z.getOutputDevices()[v], m = l.Z.getVideoDeviceId(), E = l.Z.getVideoDevices()[m], p = l.Z.getNoiseCancellation(), g = l.Z.getMediaEngine().getAudioSubsystem(), h = l.Z.getMediaEngine().getAudioLayer(), S = await a.Z.getKrispModel();
   i.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ async function r(e, t) {
     reason_code: o,
     reason_description: s,
     reason_variant: u,
-    feedback: c,
+    feedback: d,
     audio_input_mode: b.mode,
     automatic_audio_input_sensitivity_enabled: b.modeOptions.autoThreshold,
     audio_input_sensitivity: b.modeOptions.threshold,
@@ -56,5 +56,5 @@ async function r(e, t) {
     audio_layer: h,
     automatic_audio_subsystem: b.automaticAudioSubsystem,
     krisp_nc_model: S
-  }, d))
+  }, c))
 }

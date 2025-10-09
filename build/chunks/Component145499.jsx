@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
@@ -38,17 +38,17 @@ let w = e => {
       currentGuildTier: n,
       guildStickers: i,
       tier: l
-    } = e, s = n < l, a = (0, v.ig)(l);
+    } = e, a = n < l, s = (0, _.ig)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.X6q, {
         color: "header-primary",
         variant: "heading-md/semibold",
         children: t
-      }), !s && (0, r.jsx)(d.Text, {
+      }), !a && (0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
         children: T.intl.format(T.t.ZLoNtr, {
-          numTotal: a,
-          numAvailable: (0, v.Qi)(i, l)
+          numTotal: s,
+          numAvailable: (0, _.Qi)(i, l)
         })
       })]
     })
@@ -74,7 +74,7 @@ let w = e => {
       size: "sm",
       text: T.intl.string(T.t.O1REe3),
       onClick: () => {
-        _.default.track(I.rMx.OPEN_MODAL, {
+        v.default.track(I.rMx.OPEN_MODAL, {
           type: I.jXE.CREATE_STICKER_MODAL,
           location: i
         }), (e => {
@@ -118,11 +118,11 @@ let w = e => {
       guild: t
     } = e, {
       isLoading: l
-    } = (0, O.Z)(t.id), g = (0, a.e7)([C.Z], () => {
+    } = (0, O.Z)(t.id), g = (0, s.e7)([C.Z], () => {
       var e;
       return null != (e = C.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
-      analyticsLocations: _
+      analyticsLocations: v
     } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
@@ -164,7 +164,7 @@ let w = e => {
       tiers: G,
       renderTier: e => {
         var i;
-        let l, a, {
+        let l, s, {
             isAnimatedTo: m,
             onSetRef: b,
             tier: j,
@@ -176,19 +176,19 @@ let w = e => {
             canManageGuildExpression: w
           } = (0, h.Gw)(t),
           G = C[O - 1],
-          M = null != G ? (0, v.A3)(G.tier) : 0,
-          U = (0, v.A3)(j.tier, t),
-          B = (0, v.ig)(j.tier),
+          M = null != G ? (0, _.A3)(G.tier) : 0,
+          U = (0, _.A3)(j.tier, t),
+          B = (0, _.ig)(j.tier),
           F = g.slice(M, U),
           H = F.length > 0,
           z = A < j.tier,
-          W = (i = g.length, i < (0, v.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, v.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, v.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, v.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
-          V = N && !z && W === j.tier && U !== F.length,
-          K = V || F.length > 0,
+          V = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
+          W = N && !z && V === j.tier && U !== F.length,
+          K = W || F.length > 0,
           Y = U - M,
           q = n(872732),
           X = B - F.length,
-          J = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          J = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
           Q = [];
         for (let e = 0; e < J; e++) Q.push((0, r.jsx)(Z, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < j.tier && D >= I.oCV[j.tier],
@@ -197,7 +197,7 @@ let w = e => {
             var e, n;
             let r;
             return e = Math.max(1, I.oCV[j.tier] - D), n = j.tier, r = null, void(n === I.Eu4.TIER_1 ? r = I.Qqv.TIER_1 : n === I.Eu4.TIER_2 ? r = I.Qqv.TIER_2 : n === I.Eu4.TIER_3 && (r = I.Qqv.TIER_3), (0, f.Z)({
-              analyticsLocations: _,
+              analyticsLocations: v,
               analyticsLocation: {
                 page: I.ZY5.GUILD_SETTINGS,
                 section: I.jXE.GUILD_SETTINGS_STICKERS,
@@ -213,9 +213,9 @@ let w = e => {
           let e = S.Cp[j.tier];
           null != e && (0, x.H6)(t.id, e)
         }, ee = T.intl.string(T.t.g7lkra), t.premiumTier + 1 !== j.tier && (en = true, l = T.intl.string(T.t.mTMkY2))) : (en = true, l = T.intl.string(T.t.hwPEJS)));
-        let er = W === O + 1 && W > A,
-          ei = V || er || O > A;
-        return er ? a = (0, r.jsx)(p.Z, {
+        let er = V === O + 1 && V > A,
+          ei = W || er || O > A;
+        return er ? s = (0, r.jsx)(p.Z, {
           guild: t,
           size: c.zx.Sizes.SMALL,
           color: c.zx.Colors.GREEN,
@@ -225,9 +225,9 @@ let w = e => {
             page: I.ZY5.GUILD_SETTINGS,
             section: I.jXE.GUILD_SETTINGS_STICKERS,
             object: I.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
-            objectType: (0, v.ge)(j.tier)
+            objectType: (0, _.ge)(j.tier)
           }
-        }) : V && (a = (0, r.jsx)(R, {
+        }) : W && (s = (0, r.jsx)(R, {
           guild: t
         })), (0, r.jsxs)(E.Z, {
           subscriptionCount: L,
@@ -236,7 +236,7 @@ let w = e => {
           isAnimatedTo: m,
           hasBottomMargin: O !== C.length - 1,
           withCardBody: !K,
-          headerButton: a,
+          headerButton: s,
           showHeaderLockStatus: ei,
           guildId: t.id,
           children: [K && (0, r.jsxs)("div", {
@@ -246,8 +246,8 @@ let w = e => {
               sticker: e,
               canManageSticker: w(e)
             }, e.id)), Q]
-          }), !z && !V && 0 === F.length && (0, r.jsx)("div", {
-            className: s()(P.emptyTierWrapper, P.unusedTierWrapper),
+          }), !z && !W && 0 === F.length && (0, r.jsx)("div", {
+            className: a()(P.emptyTierWrapper, P.unusedTierWrapper),
             children: (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
               color: "header-secondary",

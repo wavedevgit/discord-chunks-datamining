@@ -2,12 +2,12 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => x,
+  GY: () => L,
   PI: () => A,
   RT: () => M,
   XM: () => D,
   bc: () => C,
-  ls: () => L,
+  ls: () => x,
   xZ: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -149,7 +149,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     onClick: t
   } = e;
@@ -170,7 +170,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     widgetId: t,
     showAllStreams: n

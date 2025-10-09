@@ -65,8 +65,8 @@ let O = e => {
   }({
     direction: h.Z.Direction.VERTICAL
   }, a), r = r = {
-    children: [(0, n.jsx)(l.vwX, {
-      tag: "h2",
+    children: [(0, n.jsx)(l.X6q, {
+      variant: "heading-md/semibold",
       children: s
     }), null != i ? (0, n.jsx)(l.Text, {
       variant: "text-md/normal",

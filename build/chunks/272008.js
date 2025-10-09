@@ -16,7 +16,7 @@ require.d(exports, {
   gU: () => ee,
   gl: () => Z,
   is: () => D,
-  it: () => L,
+  it: () => x,
   lL: () => $,
   lx: () => X,
   m0: () => M,
@@ -24,8 +24,8 @@ require.d(exports, {
   pf: () => B,
   qm: () => q,
   w: () => Q,
-  wF: () => k,
-  xw: () => x
+  wF: () => j,
+  xw: () => L
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
@@ -139,13 +139,13 @@ async function D(e) {
     rejectWithError: false
   })
 }
-async function L() {
+async function x() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: false
   })
 }
-async function x() {
+async function L() {
   if (!Chunk569984.Z.isFetchingCurrentQuests) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -224,11 +224,11 @@ async function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   return e instanceof c.CaptchaCancelError || null != e && "object" == typeof e && (400 === e.status && (null == (t = e.body) ? true : t.captcha_key) != null || null != e.captchaFields && !!(Object.keys(e.captchaFields).length > 0) || (null == (n = e.fields) ? true : n.captcha_key) != null || false)
 }
-var k = function(e) {
+var j = function(e) {
   return e.SUCCESS = "success", e.CAPTCHA_FAILED = "captcha_failed", e.UNKNOWN_ERROR = "unknown_error", e.PREVIOUS_IN_FLIGHT_REQUEST = "previous_in_flight_request", e
 }({});
 async function U(e, t) {
@@ -264,7 +264,7 @@ async function U(e, t) {
     return a.Z.dispatch({
       type: "QUESTS_ENROLL_FAILURE",
       questId: e
-    }), j(t) ? {
+    }), k(t) ? {
       type: "captcha_failed"
     } : {
       type: "unknown_error"

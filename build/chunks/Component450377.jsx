@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -72,20 +72,20 @@ function P(e) {
       value: n
     } = e;
     try {
-      await _.Z.saveGuild(t.id, {
+      await v.Z.saveGuild(t.id, {
         verificationLevel: n
-      }), _.Z.updateGuild({
+      }), v.Z.updateGuild({
         verificationLevel: n
       })
     } catch (e) {
       (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
     }
-  }, [t]), s = i.useMemo(() => {
+  }, [t]), a = i.useMemo(() => {
     let e = (0, j.IF)(null == t ? true : t.features.has(N.oNc.COMMUNITY)).map(e => T(S({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.LJ)(e)
-  }, [t]), a = i.useMemo(() => s.find(e => e.value === (null == t ? true : t.verificationLevel)), [t, s]);
+  }, [t]), s = i.useMemo(() => a.find(e => e.value === (null == t ? true : t.verificationLevel)), [t, a]);
   return (0, r.jsxs)("div", {
     className: I.setupContainer,
     children: [(0, r.jsxs)("div", {
@@ -101,8 +101,8 @@ function P(e) {
       })]
     }), (0, r.jsx)(O.Z, {
       changeTitle: E.intl.string(E.t.TxESJC),
-      value: null == a ? true : a.value,
-      options: s,
+      value: null == s ? true : s.value,
+      options: a,
       disabled: !n,
       onChange: l
     })]
@@ -114,14 +114,14 @@ function w(e) {
     guild: t,
     className: n,
     withDivider: l = true
-  } = e, a = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, s = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
     try {
-      await _.Z.saveGuild(t.id, {
+      await v.Z.saveGuild(t.id, {
         explicitContentFilter: n
-      }), _.Z.updateGuild({
+      }), v.Z.updateGuild({
         explicitContentFilter: n
       })
     } catch (e) {
@@ -137,7 +137,7 @@ function w(e) {
     children: [l && (0, r.jsx)(c.izJ, {
       className: I.divider
     }), (0, r.jsxs)("div", {
-      className: s()(I.setupContainer, n),
+      className: a()(I.setupContainer, n),
       children: [(0, r.jsxs)("div", {
         className: I.switchItemTextContent,
         children: [(0, r.jsx)(c.Text, {
@@ -155,7 +155,7 @@ function w(e) {
         changeTitle: E.intl.string(E.t["eBd+Ul"]),
         value: null == g ? true : g.value,
         options: u,
-        disabled: !a,
+        disabled: !s,
         onChange: d
       })]
     })]
@@ -164,7 +164,7 @@ function w(e) {
 async function Z(e, t) {
   if (e.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
-  return t ? n.add(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await _.Z.saveGuild(e.id, {
+  return t ? n.add(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await v.Z.saveGuild(e.id, {
     features: n
   })
 }
@@ -172,17 +172,17 @@ async function Z(e, t) {
 function R(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), s = (0, u.n2)(t.id), [a, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.oNc.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(N.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
     d(e), await Z(t, e)
   }, [t]);
-  return l || !s ? null : (0, r.jsxs)(r.Fragment, {
+  return l || !a ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
         label: E.intl.string(E.t.jDarm5),
         description: E.intl.string(E.t["/ee7yM"]),
         badge: "beta",
-        checked: a,
+        checked: s,
         onChange: g,
         disabled: !n
       }), (0, r.jsx)(c.Wn, {
@@ -200,17 +200,17 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
-  } = i.useMemo(() => null == s ? {
+  } = i.useMemo(() => null == a ? {
     canChangeMFALevel: false,
     showMFAUserTooltip: false
   } : {
-    isGuildOwnerWithMFA: (0, p.yn)(t, s),
-    showMFAUserTooltip: !s.mfaEnabled && (0, p.eM)(t, s)
-  }, [s, t]), h = n === N.BpS.ELEVATED, b = (0, a.throttle)(async e => {
-    d && (u || await _.Z.updateMFALevel({
+    isGuildOwnerWithMFA: (0, p.yn)(t, a),
+    showMFAUserTooltip: !a.mfaEnabled && (0, p.eM)(t, a)
+  }, [a, t]), h = n === N.BpS.ELEVATED, b = (0, s.throttle)(async e => {
+    d && (u || await v.Z.updateMFALevel({
       guildId: t.id,
       level: e ? N.BpS.ELEVATED : N.BpS.NONE,
       isEnabled: !e
@@ -247,11 +247,12 @@ function A() {
     guild: e,
     mfaLevel: t
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps(), []), n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
-  return null == module ? null : require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    title: Chunk388032.intl.string(Chunk388032.t["suhY+f"]),
-    tag: Chunk481060.RB0.H1,
-    titleClassName: Chunk776853.headerContainer,
-    children: [(0, Chunk951288.jsx)(Chunk723136.z, {
+  return null == module ? null : require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      className: Chunk776853.headerContainer,
+      variant: "heading-lg/semibold",
+      children: Chunk388032.intl.string(Chunk388032.t["suhY+f"])
+    }), (0, Chunk951288.jsx)(Chunk723136.z, {
       guild: module
     }), (0, Chunk951288.jsx)(R, {
       guild: module

@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk214779 = require("./214779.js");
 
-function j(e) {
+function p(e) {
   let {
     icon: t,
     label: n,
@@ -31,7 +31,7 @@ function j(e) {
   })
 }
 
-function p(e) {
+function j(e) {
   let {
     title: t,
     onClose: n
@@ -41,27 +41,27 @@ function p(e) {
   return (0, r.jsx)(c.f6W, {
     theme: o,
     children: e => (0, r.jsxs)("div", {
-      className: i()(b.contentHeader, e),
+      className: i()(m.contentHeader, e),
       children: [(0, r.jsxs)("div", {
-        className: b.contentHeaderLeft,
-        children: [a.tq && (0, r.jsx)(j, {
+        className: m.contentHeaderLeft,
+        children: [a.tq && (0, r.jsx)(p, {
           icon: c.yFM,
           onClick: () => l(true),
-          label: m.intl.string(m.t["13/7kZ"])
+          label: b.intl.string(b.t["13/7kZ"])
         }), (0, r.jsx)(c.X6q, {
           variant: "heading-md/medium",
           color: "header-secondary",
           children: t
         })]
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(p, {
         icon: c.Uz9,
         onClick: n,
-        label: m.intl.string(m.t.cpT0Cg)
+        label: b.intl.string(b.t.cpT0Cg)
       })]
     })
   })
 }
-let x = Chunk647438.memo(function(e) {
+let v = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setting: n
@@ -69,15 +69,15 @@ let x = Chunk647438.memo(function(e) {
     showNavigationMobile: o
   } = (0, d.t)();
   return (0, r.jsxs)("div", {
-    className: i()(b.content, {
-      [b.mobile]: a.tq,
-      [b.mobileNavigationOpen]: o
+    className: i()(m.content, {
+      [m.mobile]: a.tq,
+      [m.mobileNavigationOpen]: o
     }),
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(j, {
       title: l,
       onClose: t
     }), (0, r.jsx)("div", {
-      className: b.contentBody,
+      className: m.contentBody,
       children: null != n && (0, r.jsx)(f.Z, {
         node: n
       })

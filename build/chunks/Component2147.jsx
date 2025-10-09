@@ -281,8 +281,8 @@ class eO extends Chunk647438.PureComponent {
         isThreadModerator: v,
         canManageThread: C,
         guild: N,
-        isForumPost: w,
-        isOwner: E,
+        isForumPost: E,
+        isOwner: w,
         showAdvancedSlowModeSetting: T
       } = this.props,
       _ = V.Ec.has(e.type),
@@ -486,7 +486,7 @@ class eO extends Chunk647438.PureComponent {
           isDisabled: !C,
           autoArchiveDuration: null != (g = e.threadMetadata.autoArchiveDuration) ? g : eo.AX,
           onChange: this.handleAutoArchiveDurationChanged,
-          helperText: w ? ec.intl.string(ec.t["3aJN9P"]) : ec.intl.string(ec.t.YUXr4e)
+          helperText: E ? ec.intl.string(ec.t["3aJN9P"]) : ec.intl.string(ec.t.YUXr4e)
         })
       }) : null,
       es = e.type === el.d4z.PRIVATE_THREAD && null != e.threadMetadata ? (0, i.jsx)("div", {
@@ -553,7 +553,7 @@ class eO extends Chunk647438.PureComponent {
         disabled: !x
       }) : null;
     e.type === el.d4z.GUILD_CATEGORY ? (f = ec.intl.string(ec.t.OCAkGB), m = "category-name") : e.isForumPost() ? (f = ec.intl.string(ec.t.uyVrTE), m = "post-title") : _ ? (f = ec.intl.string(ec.t.j3XWjI), m = "thread-name") : (f = ec.intl.string(ec.t.PVbHDg), m = "channel-name");
-    let eO = E ? j : x;
+    let eO = w ? j : x;
     return (0, i.jsxs)(p.Kqy, {
       gap: 24,
       children: [(0, i.jsx)(p.oil, {
@@ -693,8 +693,8 @@ class eO extends Chunk647438.PureComponent {
     let t, {
       theme: l
     } = this.props;
-    return t = e.type === el.d4z.GUILD_CATEGORY ? (0, g.wj)(l) ? n(309095) : n(925442) : (0, g.wj)(l) ? n(316491) : n(301358), (0, i.jsx)(w.Z, {
-      justify: w.Z.Justify.CENTER,
+    return t = e.type === el.d4z.GUILD_CATEGORY ? (0, g.wj)(l) ? n(309095) : n(925442) : (0, g.wj)(l) ? n(316491) : n(301358), (0, i.jsx)(E.Z, {
+      justify: E.Z.Justify.CENTER,
       className: eu.marginTop60,
       children: (0, i.jsx)("img", {
         alt: "",

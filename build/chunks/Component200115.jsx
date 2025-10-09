@@ -1,11 +1,10 @@
 /** Chunk was on 15076 **/
 /** chunk id: 200115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => x
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk913527 = require("./913527.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,58 +14,47 @@ var Chunk913527 = require("./913527.js"),
   Chunk621600 = require("./621600.js"),
   Chunk423589 = require("./423589.js"),
   Chunk969943 = require("./969943.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk565375 = require("./565375.js");
+  Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function x(e) {
   var t, n;
   let {
     guildId: s
-  } = e, p = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), v = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), j = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
-  return null == p ? null : (0, i.jsxs)(a.xJW, {
+  } = e, x = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), p = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), v = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
+  return null == x ? null : (0, i.jsxs)(a.C3N, {
     children: [(0, i.jsx)(a.rsf, {
       label: m.intl.format(m.t["J+7D9P"], {
-        name: p.name
+        name: x.name
       }),
       description: m.intl.string(m.t.IngcUl),
-      checked: v,
+      checked: p,
       onChange: e => {
         o.Z.updateGuildNotificationSettings(s, {
           muted: e
         }, u.UE.muted(e))
       }
-    }), v && (0, i.jsxs)("div", {
-      className: x.mutedConfig,
-      children: [(0, i.jsxs)("div", {
-        children: [(0, i.jsx)(a.vwX, {
-          tag: "h3",
-          children: m.intl.string(m.t.Ztu2Ym)
-        }), (0, i.jsx)(a.Text, {
-          variant: "text-xs/normal",
-          color: "text-muted",
-          children: null == (n = j) || null == n.end_time ? null : m.intl.formatToPlainString(m.t.j7h4AA, {
-            endTime: new Date(n.end_time).toLocaleString(m.intl.currentLocale, {
-              month: "numeric",
-              day: "numeric",
-              hour: "numeric",
-              minute: "2-digit"
-            })
-          })
-        })]
-      }), (0, i.jsx)(a.q4e, {
-        onChange: e => {
-          let t = e > 0 ? l()().add(e, "second").toISOString() : null;
-          o.Z.updateGuildNotificationSettings(s, {
-            mute_config: {
-              selected_time_window: e,
-              end_time: t
-            },
-            muted: true
-          }, u.ZB.Muted)
-        },
-        options: (0, h.W9)(),
-        value: null != (t = null == j ? true : j.selected_time_window) ? t : g.Oe.ALWAYS
-      })]
+    }), p && (0, i.jsx)(a.q4e, {
+      label: m.intl.string(m.t.Ztu2Ym),
+      description: null == (n = v) || null == n.end_time ? null : m.intl.formatToPlainString(m.t.j7h4AA, {
+        endTime: new Date(n.end_time).toLocaleString(m.intl.currentLocale, {
+          month: "numeric",
+          day: "numeric",
+          hour: "numeric",
+          minute: "2-digit"
+        })
+      }),
+      onChange: e => {
+        let t = e > 0 ? l()().add(e, "second").toISOString() : null;
+        o.Z.updateGuildNotificationSettings(s, {
+          mute_config: {
+            selected_time_window: e,
+            end_time: t
+          },
+          muted: true
+        }, u.ZB.Muted)
+      },
+      options: (0, h.W9)(),
+      value: null != (t = null == v ? true : v.selected_time_window) ? t : g.Oe.ALWAYS
     })]
   })
 }

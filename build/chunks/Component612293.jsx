@@ -34,25 +34,25 @@ function E(e) {
   let {
     currentUser: c,
     categories: _,
-    purchases: x,
+    purchases: v,
     analyticsLocations: C,
     onClose: y,
     guildId: E,
     initialSelectedNameplate: T
-  } = e, S = (0, a.e7)([v.ZP], () => null != E && null != c ? v.ZP.getMember(E, c.id) : null), A = null != S ? null == S || null == (t = S.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
+  } = e, A = (0, a.e7)([x.ZP], () => null != E && null != c ? x.ZP.getMember(E, c.id) : null), S = null != A ? null == A || null == (t = A.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
     pendingNameplate: N
   } = (0, b.Zx)(c, E), [B, Z] = (0, r.useState)(() => {
     var e;
-    return null != T ? T : true !== N ? N : null == A ? null : null != (e = (0, u.Y)(x, _).find(e => {
+    return null != T ? T : true !== N ? N : null == S ? null : null != (e = (0, u.Y)(v, _).find(e => {
       let {
         skuId: t
       } = e;
-      return t === A.skuId
+      return t === S.skuId
     })) ? e : null
   }), {
     product: O,
     purchase: L
-  } = (0, p.Z)(null == B ? true : B.skuId), U = f.ZP.canUseCollectibles(c), D = true === N ? (null == B ? true : B.skuId) === (null == A ? true : A.skuId) : (null == B ? true : B.skuId) === (null == N ? true : N.skuId), M = (0, r.useCallback)(e => {
+  } = (0, p.Z)(null == B ? true : B.skuId), U = f.ZP.canUseCollectibles(c), D = true === N ? (null == B ? true : B.skuId) === (null == S ? true : S.skuId) : (null == B ? true : B.skuId) === (null == N ? true : N.skuId), M = (0, r.useCallback)(e => {
     y(), (0, d.mK)({
       analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -66,7 +66,7 @@ function E(e) {
       className: k.header,
       children: [(0, i.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: j.intl.string(j.t.BwdeMz)
+        children: w.intl.string(w.t.BwdeMz)
       }), (0, i.jsx)(l.olH, {
         "data-migration-pending": true,
         className: k.closeButton,
@@ -92,7 +92,7 @@ function E(e) {
       className: k.modalFooter,
       children: [null != L && (!(0, u.qS)(L) || U) || null === B ? (0, i.jsx)(l.zxk, {
         variant: "primary",
-        text: j.intl.string(j.t.Jh8fJy),
+        text: w.intl.string(w.t.Jh8fJy),
         onClick: () => {
           null != E ? (0, m.RH)(B) : (0, o.Rx)(B), y()
         },
@@ -100,19 +100,19 @@ function E(e) {
       }) : null == L && (U || !(0, u.G1)(O)) ? (0, i.jsx)(l.zxk, {
         variant: "primary",
         onClick: () => M(null == O ? true : O.skuId),
-        text: j.intl.string(j.t.fYfGgI)
+        text: w.intl.string(w.t.fYfGgI)
       }) : (0, i.jsx)(g.Z, {
-        subscriptionTier: w.Si.TIER_2,
+        subscriptionTier: j.Si.TIER_2,
         showGradient: !U,
         textOptions: {
-          textOverride: f.ZP.isPremium(c) ? j.intl.string(j.t.KXLX7u) : U ? j.intl.string(j.t.mr4K7O) : j.intl.string(j.t.pj0XBA)
+          textOverride: f.ZP.isPremium(c) ? w.intl.string(w.t.KXLX7u) : U ? w.intl.string(w.t.mr4K7O) : w.intl.string(w.t.pj0XBA)
         }
       }), !U && (0, u.G1)(O) ? (0, i.jsx)(h.Z, {
         product: O,
         onClose: y
       }) : (0, i.jsx)(l.zxk, {
         variant: "secondary",
-        text: j.intl.string(j.t["ETE/oK"]),
+        text: w.intl.string(w.t["ETE/oK"]),
         onClick: y
       })]
     })]
@@ -126,14 +126,14 @@ function T(e) {
     onClose: o,
     guildId: d,
     initialSelectedNameplate: u
-  } = e, p = (0, a.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, p = (0, a.e7)([v.default], () => v.default.getCurrentUser()), {
     analyticsLocations: m
   } = (0, c.ZP)(n, s.Z.EDIT_NAMEPLATE_MODAL), {
     categories: h,
     purchases: g,
     isFetchingCategories: b,
-    isFetchingPurchases: v
-  } = (0, _.ZP)(), f = b || v && 0 === g.size;
+    isFetchingPurchases: x
+  } = (0, _.ZP)(), f = b || x && 0 === g.size;
   return ((0, r.useEffect)(() => {
     C.default.track(y.rMx.OPEN_MODAL, {
       type: y.jXE.NAMEPLATE_CUSTOMIZATION,

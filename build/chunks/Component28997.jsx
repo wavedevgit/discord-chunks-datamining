@@ -17,7 +17,7 @@ function c(e) {
     title: t,
     description: n,
     action: i,
-    highlightColor: c = a.q.NONE,
+    highlightColor: c = s.q.NONE,
     selected: d = false,
     subsection: u = null,
     onClick: g,
@@ -26,7 +26,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(o.container, m),
-    children: [(0, r.jsx)(s.P3F, {
+    children: [(0, r.jsx)(a.P3F, {
       className: l()(o.clickableContainer, {
         [o.noAction]: null == g,
         [o.disabled]: p
@@ -40,11 +40,11 @@ function c(e) {
         }),
         children: [(0, r.jsxs)("div", {
           className: o.settingsDescriptionContainer,
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "interactive-active",
             children: t
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
             className: o.description,

@@ -43,7 +43,7 @@ function y(e) {
       desktopSourceId: null == t ? true : t.id,
       lastPickedContent: n
     }
-  }), R = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), P = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), w = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), L = (0, h.Z)(O, A), x = (0, p.Z)(O, A, g.Vq), M = null != C && w && (!C.startsWith("screen") || D), j = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, _.isLinux)()), k = i.useCallback(() => {
+  }), R = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), P = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), w = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, h.Z)(O, A), L = (0, p.Z)(O, A, g.Vq), M = null != C && w && (!C.startsWith("screen") || D), k = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, _.isLinux)()), j = i.useCallback(() => {
     (null == C ? true : C.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
@@ -79,7 +79,7 @@ function y(e) {
   let V = _.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
       id: "stream-settings",
       label: b.intl.string(b.t.ytAD9f),
-      children: L
+      children: x
     }) : null,
     H = M ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
@@ -87,11 +87,11 @@ function y(e) {
       checked: R,
       action: F
     }) : null,
-    Y = !P || T || j ? null : (0, r.jsx)(o.sNh, {
+    Y = !P || T || k ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
       label: Z,
       icon: o.hGI,
-      action: k
+      action: j
     }),
     W = (0, r.jsx)(o.sNh, {
       id: "stop-streaming",
@@ -103,6 +103,6 @@ function y(e) {
   return S ? (0, r.jsxs)(r.Fragment, {
     children: [W, Y, V, H]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [V, I ? x : null, H, Y, W]
+    children: [V, I ? L : null, H, Y, W]
   })
 }

@@ -22,14 +22,14 @@ function h(e) {
   let t, n = (0, c.Ob)(e),
     h = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
     x = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
-    b = (0, i.e7)([a.default], () => {
-      let t = a.default.getCurrentUser();
-      return null != e && (0, s.eM)(e, t)
+    b = (0, i.e7)([s.default], () => {
+      let t = s.default.getCurrentUser();
+      return null != e && (0, a.eM)(e, t)
     }),
     {
       error: j,
-      loading: _,
-      createEnableRequest: v,
+      loading: v,
+      createEnableRequest: _,
       submittedRequest: C
     } = (0, d.Z)(null == e ? true : e.id),
     {
@@ -66,10 +66,10 @@ function h(e) {
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
-    resubmittingEnableRequest: _,
+    resubmittingEnableRequest: v,
     resubmissionError: j,
     isGuildOwner: b,
-    createEnableRequest: v,
+    createEnableRequest: _,
     resubmittedRequest: C,
     eligibilityLoading: O,
     eligibilityError: y,

@@ -11,9 +11,9 @@ require.r(exports), require.d(exports, {
   analyticsTrackingStoreMaker: () => Chunk699407.l,
   encodeProperties: () => Chunk947486.Z,
   extendSuperProperties: () => z,
-  getCampaignParams: () => L,
+  getCampaignParams: () => x,
   getDevice: () => U,
-  getOS: () => k,
+  getOS: () => j,
   getSuperProperties: () => X,
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => K,
@@ -126,7 +126,7 @@ function D(e, t) {
   return null === n || "string" != typeof n[1] && n[1].length ? "" : decodeURIComponent(n[1]).replace(/\+/g, " ")
 }
 
-function L(e) {
+function x(e) {
   let t = {};
   return w.forEach(n => {
     let r = D(e, n);
@@ -134,7 +134,7 @@ function L(e) {
   }), t
 }
 
-function x() {
+function L() {
   let e = document.referrer;
   return 0 === module.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === module.search("https?://(.*)bing.com") ? "bing" : 0 === module.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === module.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
@@ -142,7 +142,7 @@ function x() {
 function M() {
   let e = {},
     t = document.referrer,
-    n = x(),
+    n = L(),
     r = "yahoo" !== require ? "q" : "p";
   if (null != require) {
     module.search_engine = require;
@@ -152,7 +152,7 @@ function M() {
   return module
 }
 
-function j() {
+function k() {
   let {
     userAgent: e,
     vendor: t = ""
@@ -174,7 +174,7 @@ function j() {
   else return ""
 }
 
-function k() {
+function j() {
   let {
     userAgent: e
   } = window.navigator;
@@ -206,7 +206,7 @@ function G() {
 
 function B() {
   let e = {};
-  return module.os = k(), module.browser = j(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
+  return module.os = j(), module.browser = k(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
 function Z() {
@@ -221,7 +221,7 @@ function Z() {
 
 function F() {
   let e = {};
-  return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, L(window.location.href), M())
+  return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, x(window.location.href), M())
 }
 
 function V(e, t) {
@@ -250,7 +250,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("456127", 10);
+  let i = parseInt("456145", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require

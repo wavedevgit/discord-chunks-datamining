@@ -16,7 +16,7 @@ let d = e => {
   let {
     role: t
   } = e;
-  return (0, l.yE)(t.flags, a.aO5.IN_PROMPT) ? (0, s.F)(t) ? (0, r.jsxs)("div", {
+  return (0, l.yE)(t.flags, s.aO5.IN_PROMPT) ? (0, a.F)(t) ? (0, r.jsxs)("div", {
     className: c.notice,
     children: [(0, r.jsx)(i.Mgn, {
       size: "custom",

@@ -33,7 +33,7 @@ function T(e) {
     transitionState: n,
     sourceAnalyticsLocations: T,
     onClose: S
-  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, w] = i.useState(false), [D, L] = i.useState(null), x = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
+  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, w] = i.useState(false), [D, x] = i.useState(null), L = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
   i.useEffect(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -41,18 +41,18 @@ function T(e) {
       location_stack: T
     })
   }, [t.guild_id, T]);
-  let j = e => {
-      L(new s.Hx(e, e.status).getAnyErrorMessage())
+  let k = e => {
+      x(new s.Hx(e, e.status).getAnyErrorMessage())
     },
-    k = e => {
+    j = e => {
       let {
         invalidEmojis: n
       } = e;
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = c.Z.validateMessage(n, x, t.id);
-        return L(e), w(false), {
+        } = c.Z.validateMessage(n, L, t.id);
+        return x(e), w(false), {
           hasErrors: true
         }
       }
@@ -61,13 +61,13 @@ function T(e) {
       }
     },
     U = async e => {
-      N === A && S(), null == e || e.preventDefault(), L(null), w(true);
+      N === A && S(), null == e || e.preventDefault(), x(null), w(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = p.ZP.parse(t, N),
         {
           hasErrors: a
-        } = k(i);
+        } = j(i);
       if (!a) {
         try {
           let e = await l.ZP.updateVoiceChannelStatus(t.id, i.content);
@@ -78,9 +78,9 @@ function T(e) {
             raw_length: n,
             text_length: r,
             location_stack: T
-          }), S()) : j(e)
+          }), S()) : k(e)
         } catch (e) {
-          j(e)
+          k(e)
         }
         w(false)
       }

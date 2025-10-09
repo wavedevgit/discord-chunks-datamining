@@ -21,7 +21,7 @@ function d(e) {
   } = e, {
     topGames: g,
     tryFetchTopGames: m
-  } = (0, s.I)(), p = g.get(t), [f, h] = i.useState(false);
+  } = (0, a.I)(), p = g.get(t), [f, h] = i.useState(false);
   i.useEffect(() => {
     h(true), m(t).finally(() => {
       h(false)
@@ -42,7 +42,7 @@ function d(e) {
         children: o.intl.string(o.t.bFGpub)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
-        children: x.map(e => (0, r.jsx)(a.Z, {
+        children: x.map(e => (0, r.jsx)(s.Z, {
           applicationId: e,
           selected: false,
           onClick: b,

@@ -2,7 +2,7 @@
 /** chunk id: 835648, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -104,7 +104,7 @@ function D(e) {
   }))
 }
 
-function L(e, t, n, i, a, o) {
+function x(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return (0, r.jsx)(D, C(S({}, i), {
@@ -149,7 +149,7 @@ function L(e, t, n, i, a, o) {
   }
 }
 
-function x(e) {
+function L(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
       return v.intl.string(v.t.k8fFjo);
@@ -182,7 +182,7 @@ function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     category: t,
     categoryIndex: n,
@@ -191,14 +191,14 @@ function j(e) {
     isNitroLocked: o
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
-    text: x(t),
+    text: L(t),
     "aria-label": M(t),
     position: "right",
-    children: e => L(t, i, a, e, l, o)
+    children: e => x(t, i, a, e, l, o)
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     soundboardListRef: t,
     categories: n,
@@ -220,7 +220,7 @@ function k(e) {
           pack_id: null
         }), n()
       };
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(k, {
       category: e,
       categoryIndex: t,
       onClick: l,

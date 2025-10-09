@@ -25,8 +25,8 @@ function j(e) {
   var t, n;
   let {
     allSubscriptionListings: j,
-    priceTiers: _,
-    loading: v,
+    priceTiers: v,
+    loading: _,
     error: C,
     handlePublishTier: O,
     onDeleteEditState: y
@@ -37,8 +37,8 @@ function j(e) {
       var t;
       return null == (t = e.subscription_plans[0]) ? true : t.price
     });
-    return null == _ ? true : _.filter(t => !e.includes(t))
-  }, [j, N, _]), T = null == E, P = null != (t = null == E ? true : E.published) && t, w = null != (n = null == E ? true : E.archived) && n;
+    return null == v ? true : v.filter(t => !e.includes(t))
+  }, [j, N, v]), T = null == E, P = null != (t = null == E ? true : E.published) && t, w = null != (n = null == E ? true : E.archived) && n;
   return (0, r.jsxs)("div", {
     className: b.body,
     children: [null != C && (0, r.jsx)(u.Z, {
@@ -46,23 +46,23 @@ function j(e) {
     }), !P && !I && !w && (0, r.jsxs)("div", {
       className: b.publishListing,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           className: b.publishListingInfoHeader,
           children: x.intl.string(x.t.WOlcS0)
-        }), (0, r.jsx)(a.R94, {
-          type: a.R94.Types.DESCRIPTION,
+        }), (0, r.jsx)(s.Text, {
+          variant: "text-sm/normal",
           children: x.intl.string(x.t.rMulDQ)
         })]
-      }), (0, r.jsx)(s.u, {
+      }), (0, r.jsx)(a.u, {
         shouldShow: T,
         text: x.intl.string(x.t.v7lRIi),
         children: (0, r.jsx)("div", {
-          children: (0, r.jsx)(a.zxk, {
+          children: (0, r.jsx)(s.zxk, {
             disabled: T,
             variant: "secondary",
             onClick: O,
-            loading: v,
+            loading: _,
             text: x.intl.string(x.t.Lj6R5u)
           })
         })

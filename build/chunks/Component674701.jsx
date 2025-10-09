@@ -2,8 +2,8 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => L,
-  Z: () => x
+  U: () => x,
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,20 +35,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk553517 = require("./553517.js"),
-  L = function(e) {
+  x = function(e) {
     return e.SYSTEM_MESSAGE = "system_message", e.COACHMARK = "coachmark", e
   }({});
 
-function x(e) {
+function L(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: a,
-    onMouseEnter: L,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: L,
     popoutPosition: M,
-    analyticsPage: j,
-    analyticsSection: k,
+    analyticsPage: k,
+    analyticsSection: j,
     glow: U,
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
@@ -94,8 +94,8 @@ function x(e) {
         analyticsLocation: "system_message" === n ? r.chat : r.actionButtonCoachmark,
         analyticsLocations: Z,
         analyticsObject: {
-          page: j,
-          section: k,
+          page: k,
+          section: j,
           object: N.qAy.BUTTON_CTA,
           objectType: N.Qqv.GIFT
         },
@@ -134,8 +134,8 @@ function x(e) {
       [D.outerGlow]: U,
       [D.contentCoachmark]: q
     }),
-    onMouseEnter: L,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: L,
     children: (0, r.jsxs)("div", {
       className: o()(X, {
         [D.innerGlow]: U

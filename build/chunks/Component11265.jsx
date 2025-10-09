@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -23,7 +23,7 @@ let g = Chunk647438.memo(function(e) {
     onExpand: f,
     disableAnimation: h,
     disableBackground: x
-  } = e, [b, j] = i.useState(true), [_, v] = i.useState(false), {
+  } = e, [b, j] = i.useState(true), [v, _] = i.useState(false), {
     ref: C,
     height: O = 0
   } = (0, c.ZP)(), {
@@ -48,7 +48,7 @@ let g = Chunk647438.memo(function(e) {
         })
       }
       return e
-    }({}, a.config.stiff), n = n = {
+    }({}, s.config.stiff), n = n = {
       clamp: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -61,33 +61,33 @@ let g = Chunk647438.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      v(false)
+      _(false)
     },
     onRest: () => {
-      v(true)
+      _(true)
     }
   }, b || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    v(false), I(m)
+    _(false), I(m)
   }, [m]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
-    className: s()(u.editCard, {
+    className: a()(u.editCard, {
       [u.toggled]: m,
       [u.noBackground]: x
     }),
-    children: (0, r.jsxs)(a.animated.div, {
-      className: s()(u.contentExpandContainer, {
-        [u.showOverflow]: m && _
+    children: (0, r.jsxs)(s.animated.div, {
+      className: a()(u.contentExpandContainer, {
+        [u.showOverflow]: m && v
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: C,
         onClick: p ? true : f,
-        className: s()(u.innerHeader, {
+        className: a()(u.innerHeader, {
           [u.toggled]: m && p
         }),
         "aria-label": d.intl.string(d.t.dcl9MT),

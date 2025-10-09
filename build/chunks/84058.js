@@ -5,28 +5,28 @@ require.d(exports, {
   Gf: () => x,
   Jf: () => m,
   OW: () => u,
-  S1: () => a,
+  S1: () => s,
   TW: () => g,
   TY: () => c,
   Uv: () => d,
   _l: () => f,
   d_: () => h,
   lO: () => o,
-  sI: () => s,
+  sI: () => a,
   we: () => p
 }), require("./953529.js"), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk749210 = require("./749210.js"),
   Chunk228643 = require("./228643.js");
 
-function s(e) {
+function a(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_SORT_UPDATE",
     roles: e
   })
 }
 
-function a() {
+function s() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_INIT"
   })
@@ -106,7 +106,7 @@ function h(e, t) {
     roleConnectionConfigurations: t
   })
 }
-async function x(e, t, n, s, a) {
+async function x(e, t, n, a, s) {
   var o, c, d, u;
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_SUBMITTING"
@@ -126,9 +126,9 @@ async function x(e, t, n, s, a) {
         unicodeEmoji: n.unicodeEmoji
       })
     }
-    if (null != a && null != s)
-      for await (let t of s) {
-        let n = a.get(t);
+    if (null != s && null != a)
+      for await (let t of a) {
+        let n = s.get(t);
         await (0, l.L_)(e, t, null != n ? n : [])
       }
     r.Z.dispatch({

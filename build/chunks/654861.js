@@ -200,7 +200,7 @@ var r = function(e) {
       }
       _[i] = r
     }
-    return E = L(E, g)[0], [p(_), p(E)]
+    return E = x(E, g)[0], [p(_), p(E)]
   }
 
   function D(e, n) {
@@ -219,7 +219,7 @@ var r = function(e) {
     return u.reverse(), [p(u), p(d)]
   }
 
-  function L(e, n) {
+  function x(e, n) {
     var r, i, a, o, s = e.length,
       l = m(s),
       c = t;
@@ -227,7 +227,7 @@ var r = function(e) {
     return [l, 0 | a]
   }
 
-  function x(e, n) {
+  function L(e, n) {
     var r, i, a = ea(n);
     if (s) return [new d(e.value / a.value), new d(e.value % a.value)];
     var o = e.value,
@@ -239,7 +239,7 @@ var r = function(e) {
       if (false == f) return [e.negate(), l[0]];
       var h = Math.abs(f);
       if (h < t) {
-        r = p((i = L(o, h))[0]);
+        r = p((i = x(o, h))[0]);
         var m = i[1];
         return (e.sign && (m = -m), "number" == typeof r) ? (e.sign !== a.sign && (r = -r), [new u(r), new u(m)]) : [new c(r, e.sign !== a.sign), new u(m)]
       }
@@ -262,12 +262,12 @@ var r = function(e) {
     return 0
   }
 
-  function j(e) {
+  function k(e) {
     var t = e.abs();
     return !t.isUnit() && (!!(t.equals(2) || t.equals(3) || t.equals(5)) || !(t.isEven() || t.isDivisibleBy(3) || t.isDivisibleBy(5)) && (!!t.lesser(49) || true))
   }
 
-  function k(e, t) {
+  function j(e, t) {
     for (var n, i, a, o = e.prev(), s = o, l = 0; s.isEven();) s = s.divide(2), l++;
     t: for (i = 0; i < t.length; i++)
       if (!e.lesser(t[i]) && !((a = r(t[i]).modPow(s, e)).isUnit() || a.equals(o))) {
@@ -351,17 +351,17 @@ var r = function(e) {
   }, d.prototype.square = function(e) {
     return new d(this.value * this.value)
   }, c.prototype.divmod = function(e) {
-    var t = x(this, e);
+    var t = L(this, e);
     return {
       quotient: t[0],
       remainder: t[1]
     }
   }, d.prototype.divmod = u.prototype.divmod = c.prototype.divmod, c.prototype.divide = function(e) {
-    return x(this, e)[0]
+    return L(this, e)[0]
   }, d.prototype.over = d.prototype.divide = function(e) {
     return new d(this.value / ea(e).value)
   }, u.prototype.over = u.prototype.divide = c.prototype.over = c.prototype.divide, c.prototype.mod = function(e) {
-    return x(this, e)[1]
+    return L(this, e)[1]
   }, d.prototype.mod = d.prototype.remainder = function(e) {
     return new d(this.value % ea(e).value)
   }, u.prototype.remainder = u.prototype.mod = c.prototype.remainder = c.prototype.mod, c.prototype.pow = function(e) {
@@ -483,18 +483,18 @@ var r = function(e) {
     var t = ea(e);
     return !t.isZero() && (!!t.isUnit() || (0 === t.compareAbs(2) ? this.isEven() : this.mod(t).isZero()))
   }, d.prototype.isDivisibleBy = u.prototype.isDivisibleBy = c.prototype.isDivisibleBy, c.prototype.isPrime = function(e) {
-    var t = j(this);
+    var t = k(this);
     if (true !== t) return t;
     var n = this.abs(),
       i = n.bitLength();
-    if (i <= 64) return k(n, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+    if (i <= 64) return j(n, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
     for (var a = Math.log(2) * i.toJSNumber(), o = Math.ceil(true === e ? 2 * Math.pow(a, 2) : a), s = [], l = 0; l < o; l++) s.push(r(l + 2));
-    return k(n, s)
+    return j(n, s)
   }, d.prototype.isPrime = u.prototype.isPrime = c.prototype.isPrime, c.prototype.isProbablePrime = function(t, n) {
-    var i = j(this);
+    var i = k(this);
     if (true !== i) return i;
     for (var a = this.abs(), o = e === t ? 5 : t, s = [], l = 0; l < o; l++) s.push(r.randBetween(2, a.minus(2), n));
-    return k(a, s)
+    return j(a, s)
   }, d.prototype.isProbablePrime = u.prototype.isProbablePrime = c.prototype.isProbablePrime, c.prototype.modInv = function(e) {
     for (var t, n, i, a = r.zero, o = r.one, s = ea(e), l = this.abs(); !l.isZero();) t = s.divide(l), n = a, i = s, a = o, s = l, o = n.subtract(t.multiply(o)), l = i.subtract(t.multiply(l));
     if (!s.isUnit()) throw Error(this.toString() + " and " + e.toString() + " are not co-prime");
@@ -526,7 +526,7 @@ var r = function(e) {
 
   function F(e, t, n) {
     t = ea(t);
-    for (var i = e.isNegative(), a = t.isNegative(), o = i ? e.not() : e, s = a ? t.not() : t, l = 0, c = 0, u = null, d = null, f = []; !o.isZero() || !s.isZero();) l = (u = x(o, B))[1].toJSNumber(), i && (l = B - 1 - l), c = (d = x(s, B))[1].toJSNumber(), a && (c = B - 1 - c), o = u[0], s = d[0], f.push(n(l, c));
+    for (var i = e.isNegative(), a = t.isNegative(), o = i ? e.not() : e, s = a ? t.not() : t, l = 0, c = 0, u = null, d = null, f = []; !o.isZero() || !s.isZero();) l = (u = L(o, B))[1].toJSNumber(), i && (l = B - 1 - l), c = (d = L(s, B))[1].toJSNumber(), a && (c = B - 1 - c), o = u[0], s = d[0], f.push(n(l, c));
     for (var _ = 0 !== n(+!!i, +!!a) ? r(false) : r(0), p = f.length - 1; p >= 0; p -= 1) _ = _.multiply(B).add(r(f[p]));
     return _
   }
@@ -544,9 +544,9 @@ var r = function(e) {
     if (n < 0) return this.shiftLeft(-n);
     for (var r = this; n >= G;) {
       if (r.isZero() || r.isNegative() && r.isUnit()) return r;
-      r = (t = x(r, B))[1].isNegative() ? t[0].prev() : t[0], n -= G - 1
+      r = (t = L(r, B))[1].isNegative() ? t[0].prev() : t[0], n -= G - 1
     }
-    return (t = x(r, U[n]))[1].isNegative() ? t[0].prev() : t[0]
+    return (t = L(r, U[n]))[1].isNegative() ? t[0].prev() : t[0]
   }, d.prototype.shiftRight = u.prototype.shiftRight = c.prototype.shiftRight, c.prototype.not = function() {
     return this.negate().prev()
   }, d.prototype.not = u.prototype.not = c.prototype.not, c.prototype.and = function(e) {

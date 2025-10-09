@@ -79,7 +79,7 @@ function f(e) {
         null != e ? (w(e), C(false)) : requestAnimationFrame(() => C(true))
       })
     }, [t, h, w]),
-    L = r.useCallback(function() {
+    x = r.useCallback(function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         [n, r] = null != m ? m(f, _) : [f, _];
       if ((n !== f || r !== _) && (g({
@@ -90,17 +90,17 @@ function f(e) {
       let a = u(c(t, n, r));
       null != a && (R(true), w(a))
     }, [g, f, _, m, t, w]),
-    [x, M] = r.useState(false);
+    [L, M] = r.useState(false);
   r.useEffect(() => {
-    if (!x || !T) return;
+    if (!L || !T) return;
     M(false);
     let e = u(c(t, f, _));
     if (null != e) return void w(e);
     S(false);
     let n = u(c(t));
     null != n && w(n)
-  }, [t, x, T, w, f, _]);
-  let j = r.useCallback(e => {
+  }, [t, L, T, w, f, _]);
+  let k = r.useCallback(e => {
     v.current && null == e && M(true)
   }, []);
   r.useEffect(() => {
@@ -108,10 +108,10 @@ function f(e) {
   }, [A, I]), r.useEffect(() => {
     T && (N || D(f, _), R(false))
   }, [f, _]);
-  let k = r.useCallback(e => {
+  let j = r.useCallback(e => {
       if (!v.current) return;
       if (!O && s.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
-        e.preventDefault(), e.stopPropagation(), L();
+        e.preventDefault(), e.stopPropagation(), x();
         return
       }
       let t = l(e);
@@ -134,8 +134,8 @@ function f(e) {
             type: t
           }), null != p ? p(f, _, e) : null != I && I.click()
       }
-    }, [L, g, y, I, p, f, _]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (T || (S(true), R(true)), false) : T ? (L(false), false) : void(E && null != I ? D(f, _) : L(true)), [T, E, I, L, D, f, _]),
+    }, [x, g, y, I, p, f, _]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (T || (S(true), R(true)), false) : T ? (x(false), false) : void(E && null != I ? D(f, _) : x(true)), [T, E, I, x, D, f, _]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) returnfalse;
@@ -149,10 +149,10 @@ function f(e) {
       "aria-colcount": B,
       tabIndex: T && E ? false : 0,
       "data-ref-id": t,
-      onKeyDown: k,
+      onKeyDown: j,
       onFocus: U,
       onBlur: G
-    }), [n.length, B, T, E, t, k, U, G]),
+    }), [n.length, B, T, E, t, j, U, G]),
     F = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",
@@ -162,8 +162,8 @@ function f(e) {
         tabIndex: E && e === f && n === _ ? 0 : false,
         onFocus: P.get("".concat(e, ",").concat(n))
       };
-      return e === f && n === _ && (r.ref = j), r
-    }, [t, E, f, _, P, j]),
+      return e === f && n === _ && (r.ref = k), r
+    }, [t, E, f, _, P, k]),
     V = r.useCallback(e => ({
       role: "row",
       "aria-rowindex": e + 1

@@ -53,7 +53,7 @@ function V(e) {
     selectSource: n,
     sourceChanged: i,
     onChangeSource: l
-  } = e, s = (0, o.e7)([m.ZP, w.Z], () => (0, N.isWindows)() ? (0, E.Z)(m.ZP, w.Z) : null), u = (0, o.e7)([d.Z], () => (null == s ? true : s.id) != null ? d.Z.getApplication(s.id) : null), f = (0, o.e7)([m.ZP], () => m.ZP.getRunningGames()), p = (0, o.Wu)([d.Z], () => f.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(I.lm), [f]), g = null;
+  } = e, s = (0, o.e7)([h.ZP, w.Z], () => (0, N.isWindows)() ? (0, E.Z)(h.ZP, w.Z) : null), u = (0, o.e7)([d.Z], () => (null == s ? true : s.id) != null ? d.Z.getApplication(s.id) : null), f = (0, o.e7)([h.ZP], () => h.ZP.getRunningGames()), p = (0, o.Wu)([d.Z], () => f.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(I.lm), [f]), g = null;
   if (null != t ? g = t.name : null != s && (g = s.name), null == g) return null;
   let x = (0, B.Z)(s, t, f),
     _ = i ? p.find(e => {
@@ -63,14 +63,12 @@ function V(e) {
       return t === (null == x ? true : x.id)
     }) : u,
     v = null != t && t.id.startsWith("screen") ? c.pzj : c.GON;
-  return (0, r.jsx)(c.xJW, {
-    title: z.intl.string(z.t.TC7Ev7),
-    className: H.modalContent,
-    titleClassName: H.formItemTitleVerySlim,
+  return (0, r.jsx)(c.gNt, {
+    label: z.intl.string(z.t.TC7Ev7),
     children: (0, r.jsxs)(D.Z, {
-      children: [null != _ ? (0, r.jsx)(h.Z, {
+      children: [null != _ ? (0, r.jsx)(m.Z, {
         game: _,
-        size: h.A.XSMALL,
+        size: m.A.XSMALL,
         className: F.selectedIcon
       }) : (0, r.jsx)(v, {
         className: F.selectedIcon
@@ -93,30 +91,31 @@ function Y(e) {
     onChange: t,
     guildId: n
   } = e, i = (0, o.e7)([S.Z], () => S.Z.getGuild(n));
-  return null == i ? (t(), null) : (0, r.jsx)(c.xJW, {
-    title: z.intl.string(z.t.WC3u3t),
+  return null == i ? (t(), null) : (0, r.jsx)("div", {
     className: H.modalContent,
-    titleClassName: H.formItemTitle,
-    children: (0, r.jsxs)(D.Z, {
-      children: [(0, r.jsx)(p.Z, {
-        guild: i,
-        size: p.Z.Sizes.SMALLER,
-        className: F.selectedIcon
-      }), (0, r.jsx)("span", {
-        className: F.ellipsisText,
-        children: i.name
-      }), (0, r.jsx)(a.zx, {
-        className: F.changeButton,
-        color: a.zx.Colors.PRIMARY,
-        size: a.zx.Sizes.SMALL,
-        onClick: t,
-        children: z.intl.string(z.t.GEgsAw)
-      })]
+    children: (0, r.jsx)(c.gNt, {
+      label: z.intl.string(z.t.WC3u3t),
+      children: (0, r.jsxs)(D.Z, {
+        children: [(0, r.jsx)(p.Z, {
+          guild: i,
+          size: p.Z.Sizes.SMALLER,
+          className: F.selectedIcon
+        }), (0, r.jsx)("span", {
+          className: F.ellipsisText,
+          children: i.name
+        }), (0, r.jsx)(a.zx, {
+          className: F.changeButton,
+          color: a.zx.Colors.PRIMARY,
+          size: a.zx.Sizes.SMALL,
+          onClick: t,
+          children: z.intl.string(z.t.GEgsAw)
+        })]
+      })
     })
   })
 }
 
-function J(e) {
+function X(e) {
   let {
     text: t
   } = e;
@@ -137,18 +136,18 @@ function J(e) {
   })
 }
 
-function X(e) {
+function J(e) {
   let {
     guildId: t
   } = e, n = (0, o.e7)([b.Z], () => {
     var e;
     return null != (e = b.Z.getMemberCount(t)) ? e : 0
   }), l = g.eo.useSetting(), a = i.useCallback(e => {
-    g.eo.updateSetting(e), Z.default.track(U.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+    g.eo.updateSetting(e), Z.default.track(G.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: e
     })
   }, []);
-  return n >= 2 && n <= G.tB ? (0, r.jsx)("div", {
+  return n >= 2 && n <= U.tB ? (0, r.jsx)("div", {
     className: s()(H.modalContent, F.checkboxRow),
     children: (0, r.jsx)(c.XZJ, {
       checked: !!l,
@@ -165,7 +164,7 @@ function K(e) {
     screen: l
   } = e, a = i.useCallback(e => {
     n(e)
-  }, [n]), d = (0, o.e7)([C.Z], () => C.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
+  }, [n]), d = (0, o.e7)([y.Z], () => y.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
   return (0, r.jsx)("div", {
     className: s()(H.modalContent, F.checkboxRow),
     children: (0, r.jsx)(c.XZJ, {
@@ -203,8 +202,8 @@ function Q(e) {
     sourceChanged: c,
     selectedGuildId: d,
     targetGuildPremiumTier: f,
-    selectSource: m,
-    selectGuild: h,
+    selectSource: h,
+    selectGuild: m,
     sound: p,
     previewDisabled: g,
     onClose: b,
@@ -216,13 +215,13 @@ function Q(e) {
     onChangeAudioDevice: E,
     onChangeGuild: D,
     onChangeSound: B,
-    onChangePreviewDisabled: G
-  } = e, H = (0, o.e7)([y.Z, j.Z], () => j.Z.getChannel(y.Z.getVoiceChannelId())), Q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), $ = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), ee = (0, o.e7)([O.default], () => O.default.getCurrentUser()), et = (0, R.Z)();
-  null != t && t.id.startsWith("screen") && !C.Z.supportsScreenSoundshare() && (et = z.intl.string(z.t["1b0Gm5"]));
+    onChangePreviewDisabled: U
+  } = e, H = (0, o.e7)([C.Z, j.Z], () => j.Z.getChannel(C.Z.getVoiceChannelId())), Q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), $ = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), ee = (0, o.e7)([O.default], () => O.default.getCurrentUser()), et = (0, R.Z)();
+  null != t && t.id.startsWith("screen") && !y.Z.supportsScreenSoundshare() && (et = z.intl.string(z.t["1b0Gm5"]));
   let en = !!(null == t ? true : t.id.startsWith("camera")),
     er = null != ee && ee.verified && !ee.bot,
     ei = null != H && !(0, u.Yk)(H),
-    el = !(0, o.e7)([C.Z], () => C.Z.getHardwareEncoding());
+    el = !(0, o.e7)([y.Z], () => y.Z.getHardwareEncoding());
   return (0, r.jsxs)(i.Fragment, {
     children: [en ? (0, r.jsx)(A.Z, {
       selectedSource: t,
@@ -230,18 +229,18 @@ function Q(e) {
       onChangeAudioDevice: E
     }) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(V, {
-        selectSource: m,
+        selectSource: h,
         sourceChanged: c,
         onChangeSource: N,
         selectedSource: t
-      }), null != et ? (0, r.jsx)(J, {
+      }), null != et ? (0, r.jsx)(X, {
         text: et
       }) : null, null != t && null == et ? (0, r.jsx)(K, {
         enabled: p,
         onChange: B,
         screen: t.id.startsWith("screen")
       }) : null]
-    }), h && null != d ? (0, r.jsx)(Y, {
+    }), m && null != d ? (0, r.jsx)(Y, {
       guildId: d,
       onChange: D
     }) : null, null != H ? (0, r.jsx)(M.Z, {
@@ -250,13 +249,13 @@ function Q(e) {
       guildId: d,
       selectedChannelId: l,
       onChangeSelectedChannelId: I
-    }), null != d && er && ei ? (0, r.jsx)(X, {
+    }), null != d && er && ei ? (0, r.jsx)(J, {
       guildId: d
-    }) : null, Q ? (0, r.jsx)(J, {
+    }) : null, Q ? (0, r.jsx)(X, {
       text: z.intl.string(z.t.q65tS0)
-    }) : null, $ ? (0, r.jsx)(J, {
+    }) : null, $ ? (0, r.jsx)(X, {
       text: z.intl.format(z.t.RrLvub, {
-        helpCenterLink: P.Z.getArticleURL(U.BhN.NVIDIA_DRIVER_ISSUES)
+        helpCenterLink: P.Z.getArticleURL(G.BhN.NVIDIA_DRIVER_ISSUES)
       })
     }) : null, el && (0, r.jsx)(_.Z, {
       look: _.z.WARNING,
@@ -264,7 +263,7 @@ function Q(e) {
       children: z.intl.format(z.t.zCLXws, {
         onClick: () => {
           b(), (0, v.openUserSettings)(x.n.VOICE_AND_VIDEO_PANEL, {
-            section: U.oAB.VOICE,
+            section: G.oAB.VOICE,
             subsection: W.gP,
             scrollPosition: W.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
@@ -282,7 +281,7 @@ function Q(e) {
       captureDeviceSelected: en
     }), (0, r.jsx)(q, {
       enabled: g,
-      onChange: G
+      onChange: U
     })]
   })
 }

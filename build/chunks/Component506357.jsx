@@ -70,10 +70,10 @@ function S(e) {
     shouldShowIncidentActions: R,
     incidentData: P,
     isUnderLockdown: w
-  } = (0, p.mI)(C), D = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), L = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
+  } = (0, p.mI)(C), D = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), x = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
   if (null == N || null == P || !R) return null;
-  let x = e => {
-      if (e && D && A !== E.oC.MEMBER_SAFETY && L()) return void _.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+  let L = e => {
+      if (e && D && A !== E.oC.MEMBER_SAFETY && x()) return void _.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: g.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: N.id
       });
@@ -96,16 +96,16 @@ function S(e) {
       guild: N,
       size: s.Z.Sizes.MINI
     }),
-    j = (0, m.OY)(P, N.name);
+    k = (0, m.OY)(P, N.name);
   if (null != (null != (O = P.dmsDisabledUntil) ? O : P.invitesDisabledUntil) && w) return (0, r.jsxs)(o.qXd, {
     className: y.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), M, j, (0, r.jsx)(o.EyT, {
+    }), M, k, (0, r.jsx)(o.EyT, {
       className: y.actionButton,
-      onClick: () => x(false),
+      onClick: () => L(false),
       children: (0, r.jsxs)("div", {
         className: y.actionButtonInner,
         children: [(0, r.jsx)(o.mBM, {
@@ -117,7 +117,7 @@ function S(e) {
       })
     })]
   });
-  let k = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
+  let j = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
       guildName: N.name
     }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxs"], {
       guildName: N.name
@@ -131,9 +131,9 @@ function S(e) {
     children: [(0, r.jsx)(o.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), M, k, !U && (0, r.jsx)(o.EyT, {
+    }), M, j, !U && (0, r.jsx)(o.EyT, {
       className: y.actionButton,
-      onClick: () => x(true),
+      onClick: () => L(true),
       children: (0, r.jsx)("div", {
         className: y.actionButtonInner,
         children: (0, r.jsx)("span", {

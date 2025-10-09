@@ -146,7 +146,7 @@ function J(e) {
   let E = X(t),
     b = Q(n);
   a = null == a ? M.FC : a, s = null == s ? M.rs : s;
-  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === k.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
+  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === j.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
     let {
       altText: t
     } = e;
@@ -268,7 +268,7 @@ function en(e) {
     mediaLayoutType: f,
     imageContainerStyle: _,
     mosaicStyleAlt: h
-  } = e, m = f === k.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
+  } = e, m = f === j.hV.MOSAIC || true === h, g = !c && N.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
     let {
       altText: t
     } = e;
@@ -351,7 +351,7 @@ function es(e) {
     case 1:
       return Z.intl.string(Z.t["1J6Xq6"]);
     default:
-      return (0, x.vE)(e)
+      return (0, L.vE)(e)
   }
 }
 
@@ -362,7 +362,7 @@ function el(e) {
     case 1:
       return Z.intl.string(Z.t["k3RM8/"]);
     default:
-      return (0, x.vE)(e)
+      return (0, L.vE)(e)
   }
 }
 let ec = e => {
@@ -440,7 +440,7 @@ function ed(e) {
       context: "Mark As Read"
     }) : f.Z.jumpToMessage({
       channelId: n,
-      messageId: j.default.castChannelIdAsMessageId(n),
+      messageId: k.default.castChannelIdAsMessageId(n),
       offset: 1,
       context: "Mark As Read"
     })
@@ -498,9 +498,9 @@ function ef(e) {
   } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
-  }, [s]), k = (0, g.Z)(M);
+  }, [s]), j = (0, g.Z)(M);
   i.useEffect(() => {
-    l().isEqual(k, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(j, M) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: M.length,
       message_counts: M.map(e => e.count),
       start_message_ids: M.map(e => e.startId),
@@ -510,7 +510,7 @@ function ef(e) {
       channel_id: s.id,
       channel_type: s.type
     })
-  }, [M, k, s.guild_id, s.id, s.type]);
+  }, [M, j, s.guild_id, s.id, s.type]);
   let B = (0, u.e7)([w.default], () => {
       var e;
       return null != (e = null == M ? true : M.map(e => {
@@ -518,7 +518,7 @@ function ef(e) {
         return null == (t = e.people) ? true : t.map(e => {
           var t;
           return null != (t = w.default.getUser(e)) ? t : null
-        }).filter(x.lm)
+        }).filter(L.lm)
       })) ? e : []
     }, [M], ep),
     V = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
@@ -538,7 +538,7 @@ function ef(e) {
     }, [Y, W]),
     [z, q] = i.useState(false),
     X = i.useCallback(() => {
-      L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+      x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
         topics_dropdown_open: !z,
         num_summaries: M.length,
         message_counts: M.map(e => e.count),
@@ -560,7 +560,7 @@ function ef(e) {
           h.addAutomaticAnchorCallback(K, false)
         }, 100)
       };
-      h.removeAutomaticAnchorCallback(K), h.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      h.removeAutomaticAnchorCallback(K), h.addScrollCompleteCallback(r), x.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
@@ -591,7 +591,7 @@ function ef(e) {
   }, [T, z]);
   let $ = i.useCallback(e => {
     var t;
-    (0, c.kK)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.kK)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
       num_summaries: M.length,
       message_counts: M.map(e => e.count),
@@ -626,7 +626,7 @@ function ef(e) {
         context: "Mark As Read"
       }) : f.Z.jumpToMessage({
         channelId: s.id,
-        messageId: j.default.castChannelIdAsMessageId(s.id),
+        messageId: k.default.castChannelIdAsMessageId(s.id),
         offset: 1,
         context: "Mark As Read"
       })
@@ -743,7 +743,7 @@ function eh(e) {
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), R = (0, g.Z)(N);
   i.useEffect(() => {
-    l().isEqual(R, N) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(R, N) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: N.length,
       message_counts: N.map(e => e.count),
       start_message_ids: N.map(e => e.startId),
@@ -761,13 +761,13 @@ function eh(e) {
         return null == (t = e.people) ? true : t.map(e => {
           var t;
           return null != (t = w.default.getUser(e)) ? t : null
-        }).filter(x.lm)
+        }).filter(L.lm)
       })) ? e : []
     }, [N], ep),
     M = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    j = null == N || null == (t = N[M]) ? true : t.topic;
-  null == j && null == h && (null == N ? true : N.length) >= 1 && (j = null == (a = N[0]) ? true : a.topic);
-  let k = i.useMemo(() => l().get(N, M - 1), [M, N]),
+    k = null == N || null == (t = N[M]) ? true : t.topic;
+  null == k && null == h && (null == N ? true : N.length) >= 1 && (k = null == (a = N[0]) ? true : a.topic);
+  let j = i.useMemo(() => l().get(N, M - 1), [M, N]),
     B = i.useMemo(() => l().get(N, M + 1), [M, N]),
     V = i.useMemo(() => l().debounce(e => {
       var t;
@@ -783,7 +783,7 @@ function eh(e) {
     }, [V, H]),
     [W, K] = i.useState(false),
     z = i.useCallback(() => {
-      L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+      x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
         topics_dropdown_open: !W,
         num_summaries: N.length,
         message_counts: N.map(e => e.count),
@@ -805,7 +805,7 @@ function eh(e) {
           _.addAutomaticAnchorCallback(Y, false)
         }, 100)
       };
-      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), x.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
@@ -842,7 +842,7 @@ function eh(e) {
   }, [v, W]);
   let $ = i.useCallback(e => {
     var t;
-    (0, c.kK)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (W && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.kK)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (W && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
       num_summaries: N.length,
       message_counts: N.map(e => e.count),
@@ -870,7 +870,7 @@ function eh(e) {
   }), [N, P, q, J, s]);
   if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
   let et = Z.intl.string(Z.t["38qwgI"]);
-  return N.length > 0 && (et = "" === j || null == j ? Z.intl.string(Z.t.DwnFuL) : j), p ? null : (0, r.jsxs)("div", {
+  return N.length > 0 && (et = "" === k || null == k ? Z.intl.string(Z.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
     ref: y,
     className: o()(F.topicsPillContainer, F.containerMarginTop),
     children: [(0, r.jsxs)("div", {
@@ -916,7 +916,7 @@ function eh(e) {
           "aria-label": Z.intl.string(Z.t["58KOoK"]),
           onClick: X,
           className: o()(F.topicsPillCaret, F.topicsCaretRight, {
-            [F.topicsPillCaretDisabled]: null == k
+            [F.topicsPillCaretDisabled]: null == j
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,

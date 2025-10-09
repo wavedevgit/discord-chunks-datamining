@@ -20,7 +20,7 @@ function g(e) {
     emoji: t,
     onRemoveEmoji: n,
     disabled: i = false
-  } = e, o = a.ZP.getEmojiURL({
+  } = e, o = s.ZP.getEmojiURL({
     id: t.id,
     animated: t.animated,
     size: 32
@@ -33,16 +33,16 @@ function g(e) {
       className: u.emojiImage,
       src: o,
       alt: t.name
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: "header-primary",
       variant: "text-md/medium",
       className: u.emojiAlias,
       children: t.name
     }), (0, r.jsx)("div", {
       className: u.deleteButton,
-      children: (0, r.jsx)(s.hU, {
+      children: (0, r.jsx)(a.hU, {
         variant: "secondary",
-        icon: s.XHJ,
+        icon: a.XHJ,
         onClick: () => n(t),
         "aria-label": d.intl.string(d.t.dVS92d),
         disabled: i
@@ -56,13 +56,13 @@ function m(e) {
     tierEmojiIds: t,
     guildId: n,
     onRemoveEmoji: i
-  } = e, l = (0, c.Z)(n), s = null != t ? l.filter(e => t.has(e.id)) : [], a = (0, o.mY)();
+  } = e, l = (0, c.Z)(n), a = null != t ? l.filter(e => t.has(e.id)) : [], s = (0, o.mY)();
   return (0, r.jsx)("div", {
     className: u.container,
-    children: s.map(e => (0, r.jsx)(g, {
+    children: a.map(e => (0, r.jsx)(g, {
       emoji: e,
       onRemoveEmoji: () => i(e),
-      disabled: a
+      disabled: s
     }, e.id))
   })
 }

@@ -38,8 +38,8 @@ function m() {
             duration: 250
           }).start())
         },
-        children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
-          tag: "h1",
+        children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
+          variant: "text-lg/semibold",
           className: Chunk657254.advancedTitle,
           children: [Chunk388032.intl.string(Chunk388032.t.dYRsrq), (0, Chunk951288.jsx)(Chunk259580.Z, {
             expanded: module,

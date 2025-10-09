@@ -2,7 +2,7 @@
 /** chunk id: 206044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,18 +69,18 @@ function w(e, t) {
   }), e
 }
 let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
-  L = e => {
+  x = e => {
     var t;
     let {
       isQuestExpired: n,
       quest: a,
       location: N,
       size: P,
-      expansionSpring: L,
-      isAnimating: x,
+      expansionSpring: x,
+      isAnimating: L,
       isExpanded: M,
-      isInteracting: j,
-      contentPosition: k,
+      isInteracting: k,
+      contentPosition: j,
       toggleExpanded: U,
       sourceQuestContent: G
     } = e, {
@@ -94,7 +94,7 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
         questId: a.id,
         questContent: N,
         questContentCTA: M ? p.jZ.COLLAPSE : p.jZ.EXPAND,
-        questContentPosition: k,
+        questContentPosition: j,
         sourceQuestContent: G
       })
     }, er = () => null != F && null != H && F < H, ei = (0, r.jsx)(b.ZP, {
@@ -118,7 +118,7 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
       },
       children: [(0, r.jsx)(E.Z, {
         quest: a,
-        isInteracting: j,
+        isInteracting: k,
         containerClassName: C.questSplashContainer,
         imageSize: {
           width: 660,
@@ -133,7 +133,7 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
             [C.headerContentEmbed]: q
           }),
           style: {
-            y: z ? L.to({
+            y: z ? x.to({
               range: [0, 1],
               output: [I.DJ, 0]
             }) : true
@@ -141,13 +141,13 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
           children: [z && (0, r.jsx)(s.animated.div, {
             className: C.headerCollapsedContent,
             style: {
-              opacity: L.to({
+              opacity: x.to({
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: x || !M ? "inherit" : "hidden"
+              visibility: L || !M ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && M,
+            "aria-hidden": !L && M,
             children: (0, r.jsxs)(u.kL8, {
               "aria-label": A.intl.string(A.t.dcl9MT),
               onClick: en,
@@ -183,13 +183,13 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
               [C.outerContainerEmbed]: q
             }),
             style: {
-              opacity: L.to({
+              opacity: x.to({
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: x || M ? "inherit" : "hidden"
+              visibility: L || M ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && !M,
+            "aria-hidden": !L && !M,
             children: (0, r.jsxs)("div", {
               className: C.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
@@ -228,7 +228,7 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
         }), (0, r.jsxs)(s.animated.div, {
           className: C.iconsContainer,
           style: {
-            top: z ? L.to({
+            top: z ? x.to({
               range: [0, 1],
               output: [I.DJ / 2 - I.Z$ / 2, I.jc]
             }) : I.jc
@@ -236,17 +236,17 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
           children: [(0, r.jsx)(v.r, {
             questContent: N,
             quest: a,
-            questContentPosition: k,
+            questContentPosition: j,
             shouldShowDisclosure: true,
             hideLearnMore: z,
             showShareLink: !n && q,
             sourceQuestContent: G,
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
-                opacity: L,
-                visibility: x || M ? "inherit" : "hidden"
+                opacity: x,
+                visibility: L || M ? "inherit" : "hidden"
               },
-              "aria-hidden": !x && !M,
+              "aria-hidden": !L && !M,
               children: (0, r.jsx)(u.P3F, w(R({}, e), {
                 className: C.iconWrapper,
                 "aria-label": A.intl.string(A.t.DEoVWV),
@@ -262,7 +262,7 @@ let D = (0, Chunk137317.animated)(Chunk481060.CJ0),
             "aria-label": M ? A.intl.string(A.t.iTcumZ) : A.intl.string(A.t.dcl9MT),
             children: (0, r.jsx)(D, {
               style: {
-                rotate: L.to({
+                rotate: x.to({
                   range: [0, 1],
                   output: [0, 180]
                 })

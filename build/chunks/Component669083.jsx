@@ -85,9 +85,9 @@ class Z extends Chunk647438.PureComponent {
       shrink: 0,
       className: Chunk476828.header,
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          variant: "heading-lg/semibold",
           className: Chunk476828.headerTitle,
-          tag: "h1",
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mj"])
         }), (0, Chunk951288.jsx)(Chunk481060.olH, {
           className: Chunk476828.headerClose,
@@ -144,25 +144,24 @@ class Z extends Chunk647438.PureComponent {
       notificationPositionMode: e,
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
-      shouldShowInviteNotification: s
-    } = this.props, a = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), d = module !== Chunk981631._vf.DISABLED;
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
-        title: Chunk388032.intl.string(Chunk388032.t.IQv8Eh),
-        className: Chunk197571.marginBottom20,
+      shouldShowInviteNotification: r
+    } = this.props, s = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), a = module !== Chunk981631._vf.DISABLED;
+    return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
+        label: Chunk388032.intl.string(Chunk388032.t.IQv8Eh),
         children: (0, Chunk951288.jsx)(Chunk212632.Z, {
           position: module,
           onChange: this.handleChangeNotificationPositionMode
         })
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.Fy5kPj),
-        checked: Chunk600164 && Chunk906467,
+        checked: Chunk442837 && Chunk600164,
         onChange: this.handleToggleTextChatNotifications,
-        disabled: !Chunk906467
+        disabled: !Chunk600164
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["f+c48/"]),
         description: Chunk388032.intl.string(Chunk388032.t.W9DVVV),
-        checked: Chunk442837,
+        checked: Chunk647438,
         onChange: this.handleToggleInviteNotification
       }), require && (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.XZTl9v),

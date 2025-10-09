@@ -8,7 +8,7 @@ require.d(exports, {
   HL: () => en,
   JT: () => $,
   L2: () => z,
-  MY: () => j,
+  MY: () => k,
   Nz: () => V,
   Q_: () => F,
   TO: () => W,
@@ -18,7 +18,7 @@ require.d(exports, {
   dQ: () => K,
   e$: () => Q,
   iM: () => X,
-  pO: () => k,
+  pO: () => j,
   xr: () => M,
   z2: () => J
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./314940.js"), require("./781311.js");
@@ -72,13 +72,13 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   P = C(5, 3),
   w = "WUMP-?",
   D = [N, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
-  x = "-";
+  x = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
+  L = "-";
 var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
-let j = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
-  k = e => 0 !== j(e);
+let k = (e, t) => i.tq || i.Em ? 0 : null != e || t ? 2 : 1,
+  j = e => 0 !== k(e);
 
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
@@ -277,10 +277,10 @@ function J(e, t, n) {
 }
 
 function $(e) {
-  let t = e.trim().split("/").pop().match(L);
+  let t = e.trim().split("/").pop().match(x);
   if (null == t) return null;
   let [n, r, i] = t;
-  return null == i ? null : i.replace(RegExp(x, "g"), "")
+  return null == i ? null : i.replace(RegExp(L, "g"), "")
 }
 let ee = (e, t) => (0, a.e7)([l.Z], () => {
   if (null == e || !t) return null;

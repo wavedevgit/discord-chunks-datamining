@@ -2,7 +2,7 @@
 /** chunk id: 128277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,19 +70,19 @@ function D(e, t) {
   }), e
 }
 
-function L(e) {
+function x(e) {
   let {
     user: t,
     currentUser: n,
     activity: a,
     className: R,
     onClose: w
-  } = e, L = (0, p.Dt)(), x = (0, p.Dt)(), {
+  } = e, x = (0, p.Dt)(), L = (0, p.Dt)(), {
     themeType: M
-  } = (0, b.z)(), j = (0, _.Z)({
+  } = (0, b.z)(), k = (0, _.Z)({
     activity: a,
     user: t
-  }), k = (0, E.Z)(a), U = null != k.text && "" !== k.text, {
+  }), j = (0, E.Z)(a), U = null != j.text && "" !== j.text, {
     largeImage: G
   } = (0, d.FO)(a), {
     analyticsLocations: B
@@ -90,7 +90,7 @@ function L(e) {
     display: "live",
     user: t,
     activity: a,
-    entry: j,
+    entry: k,
     analyticsLocations: B
   }), F = (0, g.Z)({
     userId: t.id,
@@ -147,15 +147,15 @@ function L(e) {
       className: o()(N.card, R),
       onAction: Z,
       onClose: w,
-      "aria-labelledby": U ? "".concat(x, " ").concat(L) : L,
+      "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
       children: [(0, r.jsx)(v.Z, D(P({
-        textId: x
-      }, k), {
+        textId: L
+      }, j), {
         contextMenu: (0, r.jsx)(A.Z, {
           display: "live",
           user: t,
           activity: a,
-          entry: j,
+          entry: k,
           onClose: w
         })
       })), (0, r.jsx)("div", {
@@ -182,7 +182,7 @@ function L(e) {
                     action: "OPEN_SPOTIFY_TRACK"
                   }), (0, h.aG)(a)
                 },
-                id: L
+                id: x
               }), V()]
             }), (0, r.jsx)(y.Z, {
               user: t,

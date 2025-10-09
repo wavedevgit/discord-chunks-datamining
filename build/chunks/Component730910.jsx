@@ -76,15 +76,15 @@ function D() {
 function A(e) {
   let {
     guild: t
-  } = e, f = t.id, D = (0, s.e7)([C.Z], () => C.Z.getCurrentPage()), A = (0, y.Z)(f), {
+  } = e, f = t.id, D = (0, a.e7)([C.Z], () => C.Z.getCurrentPage()), A = (0, y.Z)(f), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: k,
     hasErrors: G
-  } = (0, s.cj)([C.Z], () => ({
+  } = (0, a.cj)([C.Z], () => ({
     hasChanges: C.Z.hasChanges(),
     hasConfiguredAnythingForCurrentStep: C.Z.hasConfiguredAnythingForCurrentStep(),
     hasErrors: C.Z.hasErrors()
-  })), M = (0, s.e7)([C.Z], () => {
+  })), M = (0, a.e7)([C.Z], () => {
     let e = (0, O.lg)(D);
     return null != e && !C.Z.isEducationUpsellDismissed(e)
   }), U = (0, u.ZP)(), B = i.useRef(null), [{
@@ -107,12 +107,12 @@ function A(e) {
       p.S.unsubscribe(T.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [H]);
-  let z = (0, d.dQu)(a.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
-    W = (0, d.dQu)(a.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    V = (0, c.wj)(U) ? z : W,
+  let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
+    V = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
+    W = (0, c.wj)(U) ? z : V,
     K = F.to({
       range: [0, 1],
-      output: [V, (0, d.dQu)(a.Z.colors.STATUS_DANGER).hex()]
+      output: [W, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
     if (D === O.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
@@ -122,12 +122,12 @@ function A(e) {
   }
   let Y = D === O.xh[O.xh.length - 1],
     q = async () => {
-      let e = v.Z.advancedMode;
+      let e = _.Z.advancedMode;
       if (L) try {
-        if (D === O.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, _.rS)(t, {
+        if (D === O.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (D === O.PG.CUSTOMIZATION_QUESTIONS) await (0, _.rS)(t, {
+        else if (D === O.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         });
         else if (D === O.PG.HOME_SETTINGS) {

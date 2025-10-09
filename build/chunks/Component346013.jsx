@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,10 +79,10 @@ function U(e, t) {
 function G(e) {
   var t, n, a, M;
   let {
-    embedUrl: k,
+    embedUrl: j,
     message: G,
     channel: B
-  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(k, G), {
+  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(j, G), {
     setPopout: H
   } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
     var e;
@@ -120,7 +120,7 @@ function G(e) {
       name: V.authorName,
       colorString: et,
       colorStrings: ei,
-      className: L.authorName
+      className: x.authorName
     }) : (0, r.jsx)(O.Z, {
       targetElementRef: Z,
       userId: V.authorId,
@@ -130,28 +130,28 @@ function G(e) {
       roleId: er,
       avatarUrl: V.avatarUrl,
       newAnalyticsLocations: [d.Z.USERNAME],
-      children: e => (0, r.jsx)(u.rz2, U(j({}, e), {
+      children: e => (0, r.jsx)(u.rz2, U(k({}, e), {
         ref: Z,
         name: V.authorName,
         colorString: et,
         colorStrings: ei,
-        className: L.authorName
+        className: x.authorName
       }))
     }, (0, s.Z)()),
     eh = V.coverImage,
     em = null != eh && (0, g.d$)(eh),
     eg = K && (W || z);
   return (0, r.jsxs)("div", {
-    className: L.postPreviewContainer,
+    className: x.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
-      className: L.thumbnailContainer,
+      className: x.thumbnailContainer,
       onMouseEnter: el,
       onMouseLeave: ec,
       children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
-        src: x,
+        src: L,
         alt: D.intl.string(D.t.rIbh8P),
-        className: o()(L.thumbnail, {
-          [L.spoiler]: V.shouldSpoiler
+        className: o()(x.thumbnail, {
+          [x.spoiler]: V.shouldSpoiler
         }),
         onContextMenu: Y,
         onError: () => Q(true)
@@ -160,18 +160,18 @@ function G(e) {
         backgroundSrc: "".concat(eh, "?format=png"),
         alt: D.intl.string(D.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: o()(L.thumbnail, {
-          [L.spoiler]: V.shouldSpoiler
+        className: o()(x.thumbnail, {
+          [x.spoiler]: V.shouldSpoiler
         }),
-        imageChildClassName: L.thumbnailImage,
+        imageChildClassName: x.thumbnailImage,
         onContextMenu: Y,
         onError: () => Q(true)
       })), null != V.coverImageOverlayText && (0, r.jsx)(u.P3F, {
         onClick: eu,
         children: (0, r.jsx)("div", {
-          className: L.thumbnailOverlay,
+          className: x.thumbnailOverlay,
           children: (0, r.jsxs)("div", {
-            className: L.thumbnailOverlayCta,
+            className: x.thumbnailOverlayCta,
             children: [(0, r.jsx)(N.Z, {
               color: l.Z.WHITE
             }), (0, r.jsx)(u.Text, {
@@ -183,22 +183,22 @@ function G(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: L.descriptionContainer,
+      className: x.descriptionContainer,
       children: [(0, r.jsxs)("div", {
-        className: L.descriptionHeader,
+        className: x.descriptionHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
           color: "text-default",
-          className: L.descriptionHeaderText,
+          className: x.descriptionHeaderText,
           children: V.title
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: o()(L.descriptionHeaderText, L.descriptionSubtitle),
+          className: o()(x.descriptionHeaderText, x.descriptionSubtitle),
           children: V.subtitle
         })]
       }), (0, r.jsxs)("div", {
-        className: L.descriptionFooter,
+        className: x.descriptionFooter,
         children: [null != V.authorId && null != ef && (0, r.jsx)(O.Z, {
           targetElementRef: F,
           userId: V.authorId,
@@ -212,7 +212,7 @@ function G(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: e_,
             onMouseLeave: e_,
-            children: (0, r.jsx)(u.qEK, U(j({}, e), {
+            children: (0, r.jsx)(u.qEK, U(k({}, e), {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,
@@ -221,16 +221,16 @@ function G(e) {
             }))
           })
         }), (0, r.jsxs)("div", {
-          className: L.descriptionFooterContainer,
+          className: x.descriptionFooterContainer,
           children: [(0, r.jsxs)("div", {
-            className: L.descriptionFooterChannelName,
+            className: x.descriptionFooterChannelName,
             children: [null != V.channelName && (0, r.jsx)(u.EAQ, {
               size: "md",
               color: "currentColor",
-              className: L.mediaChannelIcon
+              className: x.mediaChannelIcon
             }), (0, r.jsx)(u.P3F, {
               onClick: eu,
-              className: L.channelName,
+              className: x.channelName,
               children: (0, r.jsx)(u.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
@@ -240,7 +240,7 @@ function G(e) {
           }), null != V.authorName && (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: L.descriptionFooterAuthorContainer,
+            className: x.descriptionFooterAuthorContainer,
             children: D.intl.format(D.t.voIDKS, {
               authorName: V.authorName,
               authorNameHook: ep

@@ -79,11 +79,13 @@ class g extends Chunk647438.PureComponent {
       startMinimized: t,
       minimizeToTray: n
     } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTU"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZoq);
-    return (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H1,
-      title: Chunk647438,
-      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-        gap: 24,
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 16,
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        color: "header-primary",
+        children: Chunk647438
+      }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.WQm4p6),
           description: Chunk388032.intl.string(Chunk388032.t["s/cQra"]),
@@ -101,7 +103,7 @@ class g extends Chunk647438.PureComponent {
           checked: require,
           onChange: this.handleToggleMinimizeToTray
         }), (0, Chunk951288.jsx)(m, {})]
-      })
+      })]
     })
   }
   constructor(e) {

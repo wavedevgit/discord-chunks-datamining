@@ -4,10 +4,10 @@
 require.d(exports, {
   Cg: () => C,
   Y0: () => P,
-  YA: () => j,
+  YA: () => k,
   fM: () => R,
-  hz: () => L,
-  mz: () => x,
+  hz: () => x,
+  mz: () => L,
   ol: () => M,
   xB: () => w
 });
@@ -133,10 +133,10 @@ function P(e) {
       clamp: true
     },
     onRest: O
-  }, "animate-always"), L = i.useRef(null), x = null != R["aria-label"], M = null != R["aria-labelledby"], j = i.useId(), k = null != (t = R["aria-labelledby"]) ? t : j, U = i.useMemo(() => ({
-    headerId: k,
+  }, "animate-always"), x = i.useRef(null), L = null != R["aria-label"], M = null != R["aria-labelledby"], k = i.useId(), j = null != (t = R["aria-labelledby"]) ? t : k, U = i.useMemo(() => ({
+    headerId: j,
     headerIdIsManaged: M
-  }), [k, M]);
+  }), [j, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
     children: (0, r.jsx)(_.V, T(v({
@@ -144,17 +144,17 @@ function P(e) {
       role: f,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": x ? true : U.headerId
+      "aria-labelledby": L ? true : U.headerId
     }, R), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(p, y.root, N[u], {
           [y.fullscreenOnMobile]: m,
           [y.rootWithShadow]: !b
         }),
-        ref: L,
+        ref: x,
         style: D,
         children: (0, r.jsx)(d.JcV, {
-          containerRef: L,
+          containerRef: x,
           children: a
         })
       })
@@ -194,7 +194,7 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     children: n,
@@ -212,7 +212,7 @@ function L(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   var t, n, i, a, s;
   return (0, r.jsx)(m.Z, {
     grow: 0,
@@ -253,7 +253,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var {
     className: t,
     scrollerRef: n

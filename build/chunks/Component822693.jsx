@@ -28,9 +28,9 @@ function j(e) {
     guildId: l,
     widgetEnabled: f,
     widgetChannelId: j,
-    className: _,
-    enableLocalUpdate: v
-  } = e, C = (0, s.e7)([c.ZP], () => c.ZP.getChannels(l)), O = i.useMemo(() => {
+    className: v,
+    enableLocalUpdate: _
+  } = e, C = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), O = i.useMemo(() => {
     let e = [...C[c.sH], ...C[c.Zb]].filter(e => {
       let {
         channel: t
@@ -55,14 +55,14 @@ function j(e) {
       label: h.intl.string(h.t.u197b2)
     }), e
   }, [C, l, j]), y = i.useCallback(e => {
-    v ? (0, p.c)(l, f, e !== x ? e : null) : m.Z.updateEmbed(l, f, e !== x ? e : null)
-  }, [l, f, v]);
-  return (0, r.jsx)(a.q4e, {
+    _ ? (0, p.c)(l, f, e !== x ? e : null) : m.Z.updateEmbed(l, f, e !== x ? e : null)
+  }, [l, f, _]);
+  return (0, r.jsx)(s.q4e, {
     label: t,
     description: n,
     options: O,
     value: j,
     onChange: y,
-    className: _
+    className: v
   })
 }

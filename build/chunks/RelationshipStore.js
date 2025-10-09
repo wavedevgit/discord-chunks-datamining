@@ -102,12 +102,12 @@ function D(e) {
   }), w()
 }
 
-function L(e) {
+function x(e) {
   for (let [t, n] of(p.clear(), N.clear(), e.relationships)) R(t, n);
   w()
 }
 
-function x(e) {
+function L(e) {
   let t = p.get(e.relationship.id);
   R(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
     [e.relationship.id]: e.relationship.nickname
@@ -125,14 +125,14 @@ function M(e) {
   P(e.relationship.id), null != h[e.relationship.id] && (h = u({}, h), delete h[e.relationship.id]), null != m[e.relationship.id] && (m = u({}, m), delete m[e.relationship.id]), null != y[e.relationship.id] && (y = u({}, y), delete y[e.relationship.id]), e.relationship.userIgnored || E.delete(e.relationship.id), b.delete(e.relationship.id), g.delete(e.relationship.id), w()
 }
 
-function j(e) {
+function k(e) {
   let {
     relationship: t
   } = e;
   R(t.id, t.type), null == t.since ? delete m[t.id] : m[t.id] = t.since, null == t.nickname ? delete h[t.id] : h[t.id] = t.nickname, t.isSpamRequest ? g.add(t.id) : g.delete(t.id), null != v[t.id] && delete v[t.id], null == t.originApplicationId ? delete y[t.id] : y[t.id] = t.originApplicationId, t.userIgnored ? (E.add(t.id), t.type === l.OGo.PENDING_INCOMING && b.add(t.id)) : (E.delete(t.id), b.delete(t.id)), w()
 }
 
-function k(e) {
+function j(e) {
   for (let e of p.keys()) p.get(e) === l.OGo.PENDING_INCOMING && (P(e), g.delete(e), b.delete(e), delete v[e]);
   w()
 }
@@ -260,10 +260,10 @@ class G extends(r = Chunk442837.ZP.Store) {
 c(G, "displayName", "RelationshipStore");
 let B = new G(Chunk570140.Z, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: L,
-  RELATIONSHIP_ADD: x,
+  OVERLAY_INITIALIZE: x,
+  RELATIONSHIP_ADD: L,
   RELATIONSHIP_REMOVE: M,
-  RELATIONSHIP_UPDATE: j,
-  RELATIONSHIP_PENDING_INCOMING_REMOVED: k,
+  RELATIONSHIP_UPDATE: k,
+  RELATIONSHIP_PENDING_INCOMING_REMOVED: j,
   UPDATE_STRANGER_STATUS: U
 })

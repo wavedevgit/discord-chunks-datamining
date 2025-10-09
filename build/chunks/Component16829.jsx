@@ -82,7 +82,7 @@ let M = Chunk647438.memo(function() {
       })
     })
   }),
-  v = {
+  b = {
     [Chunk327999.gq.UNSPECIFIED]: {
       type: Chunk327999.gq.UNSPECIFIED,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.DvMBkZ),
@@ -180,7 +180,7 @@ let M = Chunk647438.memo(function() {
     }
   };
 
-function b(e) {
+function v(e) {
   var t, n;
   let {
     guildId: i,
@@ -240,7 +240,7 @@ function j(e) {
     joinSourceChannelId: c
   } = e, E = (0, a.e7)([m.Z], () => m.Z.getChannel(c)), d = (0, _.ZP)(E, true), A = !!n && (o === C.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL || null != s), T = l.useMemo(() => o === C.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? (0, r.jsx)(P, {
     channel: E
-  }) : (0, r.jsx)(b, {
+  }) : (0, r.jsx)(v, {
     guildId: i,
     inviterUser: s,
     joinSourceType: o
@@ -301,7 +301,7 @@ function G(e) {
     }
     return l
   }(e, ["sourceInviteCode", "joinSourceType", "joinSourceApplicationId", "integrationType", "joinSourceChannelId", "showJoinMethodContextAsFooter", "guildId", "inviterUser", "onClickInviter"]);
-  let N = null != n ? v[n] : null,
+  let N = null != n ? b[n] : null,
     h = n === C.gq.INTEGRATION && null != o,
     O = (0, d.q)(i),
     f = (0, a.e7)([m.Z], () => m.Z.getChannel(c)),
@@ -380,7 +380,7 @@ function G(e) {
             variant: "text-sm/medium",
             children: null == N ? true : N.getJoinTypeLabel(null != t ? t : true)
           })]
-        })), E && (0, r.jsx)(b, {
+        })), E && (0, r.jsx)(v, {
           guildId: _,
           inviterUser: T,
           joinSourceType: n,
@@ -413,7 +413,7 @@ let k = Chunk647438.memo(function(e) {
     joinSourceChannelId: g,
     joinSourceApplicationId: O,
     integrationType: f
-  } = E, S = null != m ? v[m] : null, p = null != (n = null == S ? true : S.hasTooltip) && n;
+  } = E, S = null != m ? b[m] : null, p = null != (n = null == S ? true : S.hasTooltip) && n;
   return (m === C.gq.INVITE || m === C.gq.VANITY_URL || m === C.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
     hasTooltip: p && !o,
     inviterUser: null != _ ? _ : null,

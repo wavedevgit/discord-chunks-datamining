@@ -19,16 +19,16 @@ function m(e) {
   let {
     canManageGuild: t,
     premiumProgressBarEnabled: n
-  } = e, m = (0, a.ZP)(), p = i.useCallback(e => {
+  } = e, m = (0, s.ZP)(), p = i.useCallback(e => {
     o.Z.updateGuild({
       premiumProgressBarEnabled: e
     })
   }, []);
-  return (0, r.jsxs)(s.hjN, {
+  return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)("div", {
       className: d.column,
-      children: (0, r.jsx)(s.rsf, {
+      children: (0, r.jsx)(a.rsf, {
         label: c.intl.string(c.t.Dl4mJS),
         description: c.intl.string(c.t.xzHcoa),
         checked: n,

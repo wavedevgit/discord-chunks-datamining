@@ -19,18 +19,19 @@ function m(t) {
     name: n,
     value: e
   } = t, [a, r] = i.useState(l.uA3.DEFAULT);
-  return (0, s.jsxs)("div", {
+  return (0, s.jsx)("div", {
     className: h.infoRow,
-    children: [(0, s.jsx)(l.vwX, {
-      children: n
-    }), (0, s.jsx)(l.kO8, {
-      value: e,
-      mode: a,
-      supportsCopy: o.wS,
-      onCopy: () => {
-        (0, o.JG)(e, () => r(l.uA3.SUCCESS), () => r(l.uA3.ERROR))
-      }
-    })]
+    children: (0, s.jsx)(l.gNt, {
+      label: n,
+      children: (0, s.jsx)(l.kO8, {
+        value: e,
+        mode: a,
+        supportsCopy: o.wS,
+        onCopy: () => {
+          (0, o.JG)(e, () => r(l.uA3.SUCCESS), () => r(l.uA3.ERROR))
+        }
+      })
+    })
   })
 }
 
@@ -38,8 +39,8 @@ function u(t) {
   let {
     onClose: n,
     transitionState: e
-  } = t, [o, u] = i.useState(""), [j, p] = i.useState(""), [v, _] = i.useState(null), [N, g] = i.useState(false), [C, f] = i.useState("DOMAIN"), k = () => {
-    g(true), _(null), a.tn.post({
+  } = t, [o, u] = i.useState(""), [j, p] = i.useState(""), [v, N] = i.useState(null), [_, g] = i.useState(false), [C, b] = i.useState("DOMAIN"), f = () => {
+    g(true), N(null), a.tn.post({
       url: d.ANM.CONNECTION(d.ABu.DOMAIN, o),
       body: {},
       rejectWithError: false
@@ -47,7 +48,7 @@ function u(t) {
       n()
     }).catch(t => {
       var n, e, s, i, a, l, r;
-      (null == (n = t.body) ? true : n.proof) && "DOMAIN" === C ? (p(t.body.proof), f("PROOF_DNS")) : _((null == (l = t.body) || null == (a = l.errors) || null == (i = a.domain) || null == (s = i._errors) || null == (e = s[0]) ? true : e.message) || (null == (r = t.body) ? true : r.message) || t.message)
+      (null == (n = t.body) ? true : n.proof) && "DOMAIN" === C ? (p(t.body.proof), b("PROOF_DNS")) : N((null == (l = t.body) || null == (a = l.errors) || null == (i = a.domain) || null == (s = i._errors) || null == (e = s[0]) ? true : e.message) || (null == (r = t.body) ? true : r.message) || t.message)
     }).finally(() => {
       g(false)
     })
@@ -74,7 +75,7 @@ function u(t) {
         id: "DOMAIN",
         children: (0, s.jsxs)("form", {
           onSubmit: t => {
-            t.preventDefault(), k()
+            t.preventDefault(), f()
           },
           children: [(0, s.jsxs)(l.hzk, {
             className: h.content,
@@ -90,7 +91,7 @@ function u(t) {
               placeholder: c.pL,
               maxLength: 253,
               value: o,
-              disabled: N,
+              disabled: _,
               autoFocus: true
             })]
           }), (0, s.jsx)(l.mzw, {
@@ -101,7 +102,7 @@ function u(t) {
                 variant: "primary",
                 text: x.intl.string(x.t.PDTjLC),
                 type: "submit",
-                loading: N,
+                loading: _,
                 disabled: "" === o
               }), (0, s.jsx)(l.zxk, {
                 variant: "secondary",
@@ -159,7 +160,7 @@ function u(t) {
             variant: "secondary",
             text: x.intl.string(x.t["13/7kZ"]),
             onClick: () => {
-              f("DOMAIN"), _(null)
+              b("DOMAIN"), N(null)
             }
           }), (0, s.jsxs)("div", {
             className: h.footerInner,
@@ -170,14 +171,14 @@ function u(t) {
                 variant: "secondary",
                 text: x.intl.string(x.t.CkfdNz),
                 onClick: () => {
-                  f("PROOF_HTTP"), _(null)
+                  b("PROOF_HTTP"), N(null)
                 }
               })
             }), (0, s.jsx)(l.zxk, {
               variant: "primary",
               text: x.intl.string(x.t["13ofGh"]),
-              loading: N,
-              onClick: k
+              loading: _,
+              onClick: f
             })]
           })]
         })]
@@ -211,7 +212,7 @@ function u(t) {
             variant: "secondary",
             text: x.intl.string(x.t["13/7kZ"]),
             onClick: () => {
-              f("DOMAIN"), _(null)
+              b("DOMAIN"), N(null)
             }
           }), (0, s.jsxs)("div", {
             className: h.footerInner,
@@ -222,14 +223,14 @@ function u(t) {
                 variant: "secondary",
                 text: x.intl.string(x.t.RhJMVV),
                 onClick: () => {
-                  f("PROOF_DNS"), _(null)
+                  b("PROOF_DNS"), N(null)
                 }
               })
             }), (0, s.jsx)(l.zxk, {
               variant: "primary",
               text: x.intl.string(x.t["13ofGh"]),
-              loading: N,
-              onClick: k
+              loading: _,
+              onClick: f
             })]
           })]
         })]

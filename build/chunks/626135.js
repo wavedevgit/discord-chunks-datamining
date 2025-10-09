@@ -103,11 +103,11 @@ let A = {
   P = 6e4,
   w = 12e4,
   D = 3e5,
-  L = 9e5,
-  x = 36e5,
+  x = 9e5,
+  L = 36e5,
   M = 864e5,
-  j = .001,
-  k = performance.now(),
+  k = .001,
+  j = performance.now(),
   U = (0, Chunk668757.X6)() ? (0, Chunk668757.Ub)((0, Chunk548345.R)()) : null;
 Chunk990547.extendSuperProperties({
   launch_signature: U
@@ -127,31 +127,31 @@ let Z = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === m.Qqv.ACK_MANUAL ? true : {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.channel_id, e.location_section]
   },
   [Chunk981631.rMx.GUILD_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.is_pending]
   },
   [Chunk981631.rMx.FRIENDS_LIST_CLICKED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.FRIENDS_LIST_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.NOW_PLAYING_CARD_HOVERED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.START_SPEAKING]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.START_LISTENING]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
@@ -160,7 +160,7 @@ let Z = {
     deduplicate: true
   },
   [Chunk981631.rMx.CHANNEL_OPENED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
   },
   [Chunk981631.rMx.TEXT_IN_VOICE_OPENED]: {
@@ -168,19 +168,19 @@ let Z = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NOTIFICATION_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.notif_type]
   },
   [Chunk981631.rMx.MEMBER_LIST_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.DM_LIST_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NAV_DRAWER_OPENED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYBOARD_SHORTCUT_USED]: {
@@ -195,7 +195,7 @@ let Z = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.ROLE_PAGE_VIEWED]: {
@@ -211,11 +211,11 @@ let Z = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_STUDENT_PROMPT_CLICKED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_SERVER_ERROR_CAUGHT]: {
@@ -225,12 +225,12 @@ let Z = {
   [Chunk981631.rMx.RPC_COMMAND_SENT]: {
     throttlePeriod: M,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: j
+    throttlePercent: k
   },
   [Chunk981631.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
     throttlePeriod: M,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: j
+    throttlePercent: k
   },
   [Chunk981631.rMx.ACTIVITY_HANDSHAKE]: {
     throttlePeriod: M,
@@ -249,7 +249,7 @@ let Z = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
@@ -265,23 +265,23 @@ let Z = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.ACTIVITY_CARDS_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.context, e.guild_id]
   },
   [Chunk981631.rMx.GUILD_TOOLTIP_SHOWN]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.ACK_COMMUNITY_MESSAGES]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDESIGN_NAV_BAR_CLICKED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab]
   },
   [Chunk981631.rMx.CHANNEL_LIST_END_REACHED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
@@ -289,11 +289,11 @@ let Z = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYWORD_FILTER_MATCH]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.message_id]
   },
   [Chunk981631.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
@@ -305,7 +305,7 @@ let Z = {
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.USER_VOICE_ACTIVITY_VIEWED]: {
@@ -323,7 +323,7 @@ let Z = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDACTABLE_MESSAGE_LOADED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk981631.rMx.OPEN_MODAL]: e => e.type === m.jXE.MEDIA_VIEWER ? {
@@ -335,11 +335,11 @@ let Z = {
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS]: {
-    throttlePeriod: 12 * x,
+    throttlePeriod: 12 * L,
     throttleKeys: e => [e.os_enabled, e.notification_authorization_status, e.foreground_app_enabled, e.background_app_enabled]
   },
   [Chunk981631.rMx.SEARCH_BAR_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.search_type]
   },
   [Chunk981631.rMx.AD_IDENTIFIER_FETCHED]: {
@@ -351,11 +351,11 @@ let Z = {
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.LIBDISCORE_SLOW_TIMERS]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.DEBUG_MISSING_STRING]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   }
 };
@@ -413,7 +413,7 @@ function z(e) {
     } = a;
     a = O({}, T(a, ["source"]), V(e))
   }
-  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - k) / 1e3);
+  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - j) / 1e3);
   let o = p.Z.getProcessUptime();
   null != o && (a.uptime_process_renderer = Math.floor(o));
   let {

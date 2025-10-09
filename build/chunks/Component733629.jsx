@@ -2,14 +2,14 @@
 /** chunk id: 733629, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk824804 = require("./824804.js");
 
-function s(e) {
+function a(e) {
   let {
     title: t,
     settings: n

@@ -88,16 +88,16 @@ function D(e, t) {
   return "object" == typeof e && null !== e && null != e.key ? P("" + e.key) : t.toString(36)
 }
 
-function L() {}
+function x() {}
 
-function x(e) {
+function L(e) {
   switch (e.status) {
     case "fulfilled":
       return e.value;
     case "rejected":
       throw e.reason;
     default:
-      switch ("string" == typeof e.status ? e.then(L, L) : (e.status = "pending", e.then(function(t) {
+      switch ("string" == typeof e.status ? e.then(x, x) : (e.status = "pending", e.then(function(t) {
           "pending" === e.status && (e.status = "fulfilled", e.value = t)
         }, function(t) {
           "pending" === e.status && (e.status = "rejected", e.reason = t)
@@ -142,13 +142,13 @@ function M(e, t, n, r, o) {
   else if ("function" == typeof(u = m(e)))
     for (e = u.call(e), u = 0; !(r = e.next()).done;) s = c + D(r = r.value, u++), l += M(r, t, n, s, o);
   else if ("object" === s) {
-    if ("function" == typeof e.then) return M(x(e), t, n, r, o);
+    if ("function" == typeof e.then) return M(L(e), t, n, r, o);
     throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.")
   }
   return l
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   if (null == e) return e;
   var r = [],
     i = 0;
@@ -157,7 +157,7 @@ function j(e, t, n) {
   }), r
 }
 
-function k(e) {
+function j(e) {
   if (false === e._status) {
     var t = e._result;
     (t = t()).then(function(t) {
@@ -184,20 +184,20 @@ var U = "function" == typeof reportError ? reportError : function(e) {
 
 function G() {}
 exports.Children = {
-  map: j,
+  map: k,
   forEach: function(e, t, n) {
-    j(e, function() {
+    k(e, function() {
       t.apply(this, arguments)
     }, n)
   },
   count: function(e) {
     var t = 0;
-    return j(e, function() {
+    return k(e, function() {
       t++
     }), t
   },
   toArray: function(e) {
-    return j(e, function(e) {
+    return k(e, function(e) {
       return e
     }) || []
   },
@@ -267,7 +267,7 @@ exports.Children = {
       _status: false,
       _result: e
     },
-    _init: k
+    _init: j
   }
 }, exports.memo = function(e, t) {
   return {

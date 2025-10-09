@@ -112,7 +112,7 @@ function er(e) {
     }).enabled,
     i = (0, b.A)("UserSettingsAccessibility"),
     a = (0, U.Z)();
-  return (0, r.jsx)(k.Z, {
+  return (0, r.jsx)(j.Z, {
     title: H.intl.string(H.t.G0neg4),
     children: (0, r.jsxs)(u.Kqy, {
       gap: 16,
@@ -169,7 +169,7 @@ function er(e) {
           variant: "text-md/normal",
           children: H.intl.format(H.t.DHpTjY, {
             onAppearanceClick() {
-              a(x.n.APPEARANCE_PANEL, {
+              a(L.n.APPEARANCE_PANEL, {
                 section: Z.oAB.APPEARANCE
               })
             }
@@ -378,22 +378,24 @@ function ef() {
     t = Chunk647438.useRef(null);
   (0, Chunk996073.Z)(exports, Chunk526761.rP.SYNC_PROFILE_THEME_WITH_USER_THEME);
   let n = (0, Chunk947889.Z)();
-  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
+  return (0, Chunk951288.jsx)("div", {
     ref: exports,
-    title: Chunk388032.intl.string(Chunk388032.t.BT8Bmp),
-    children: (0, Chunk951288.jsx)(Chunk921801.F, {
-      setting: Chunk726985.s6.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
-      children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["sSY+mJ"]),
-        description: Chunk388032.intl.format(Chunk388032.t.u6UjrK, {
-          onThemeClick() {
-            require(Chunk313789.n.APPEARANCE_PANEL, {
-              section: Chunk981631.oAB.APPEARANCE
-            })
-          }
-        }),
-        checked: module,
-        onChange: Chunk857595.Uv
+    children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
+      label: Chunk388032.intl.string(Chunk388032.t.BT8Bmp),
+      children: (0, Chunk951288.jsx)(Chunk921801.F, {
+        setting: Chunk726985.s6.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
+        children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+          label: Chunk388032.intl.string(Chunk388032.t["sSY+mJ"]),
+          description: Chunk388032.intl.format(Chunk388032.t.u6UjrK, {
+            onThemeClick() {
+              require(Chunk313789.n.APPEARANCE_PANEL, {
+                section: Chunk981631.oAB.APPEARANCE
+              })
+            }
+          }),
+          checked: module,
+          onChange: Chunk857595.Uv
+        })
       })
     })
   })
@@ -498,7 +500,7 @@ function eh() {
   let e = Chunk695346.Wp.useSetting(),
     t = (0, Chunk442837.e7)([Chunk263937.Z], () => Chunk263937.Z.getAppliedOverrideReasonKey("animateStickers")),
     n = Chunk647438.useCallback(e => {
-      L.Wp.updateSetting(e)
+      x.Wp.updateSetting(e)
     }, []);
   return (0, Chunk951288.jsx)(Chunk538534.E, {
     label: Chunk388032.intl.string(Chunk388032.t["6NtAuL"]),
@@ -546,7 +548,7 @@ function em() {
               location: {
                 section: Z.jXE.SETTINGS_ACCESSIBILITY
               }
-            }), L.dN.updateSetting(e)
+            }), x.dN.updateSetting(e)
           }
         })
       })]

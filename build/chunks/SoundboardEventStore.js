@@ -2,7 +2,7 @@
 /** chunk id: 178106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -73,7 +73,7 @@ function S(e) {
     sound: t,
     trigger: n
   } = e;
-  if (!x()) return;
+  if (!L()) return;
   let r = t.soundId.toString();
   n === h.YQ.SOUNDBOARD && N(r)
 }
@@ -84,7 +84,7 @@ function A(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!L()) return;
+  if (!x()) return;
   let i = n.toString();
   r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && C(i)
 }
@@ -114,7 +114,7 @@ function P(e) {
 
 function w() {
   var e;
-  if (!x()) return;
+  if (!L()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
   T.overwriteHistory(P(null != exports ? exports : {}), v)
 }
@@ -126,17 +126,17 @@ function D(e) {
     },
     wasSaved: n
   } = e;
-  x() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (v = [])
+  L() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (v = [])
 }
 
-function L() {
+function x() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
   }).canSeeRecentlyHeard
 }
 
-function x() {
+function L() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
@@ -166,7 +166,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
-let j = new M(Chunk570140.Z, {
+let k = new M(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
   USER_SETTINGS_PROTO_UPDATE: D

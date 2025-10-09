@@ -40,21 +40,21 @@ function v(e) {
     pendingErrors: R
   } = (0, h.mD)(t, n), P = [];
   I && P.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(P), L = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, x = (0, i.useCallback)(() => {
+  let [w, D] = (0, c.US)(P), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
     D(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
       analyticsLocations: S,
       guildId: n
     })
   }, [S, D, n]), M = (0, i.useCallback)(() => {
     (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, []), j = (0, i.useCallback)(() => {
+  }, []), k = (0, i.useCallback)(() => {
     (0, f.N_)(null)
-  }, []), k = true !== N || (null != n ? null != C : null != A);
-  if (!I && !k) return null;
+  }, []), j = true !== N || (null != n ? null != C : null != A);
+  if (!I && !j) return null;
   let U = true !== N ? N : C;
   return (0, r.jsx)(m.Z, {
     title: b.intl.string(y.default["86GtGB"]),
-    titleIcon: L ? (0, r.jsx)(o.IGR, {
+    titleIcon: x ? (0, r.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: O.newBadge
     }) : true,
@@ -67,8 +67,8 @@ function v(e) {
         variant: "primary",
         size: "sm",
         text: b.intl.string(y.default.vJqrIi),
-        onClick: x
-      }), null == n && k && (0, r.jsx)(o.zxk, {
+        onClick: L
+      }), null == n && j && (0, r.jsx)(o.zxk, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default.ymq8WV),
@@ -77,7 +77,7 @@ function v(e) {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default["j/KRxc"]),
-        onClick: j
+        onClick: k
       })]
     })
   })

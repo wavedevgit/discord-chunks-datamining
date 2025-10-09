@@ -78,8 +78,8 @@ function b(e) {
   let {
     guildId: t,
     onAddAction: l
-  } = e, a = i.useCallback(() => {
-    if (null != t) return (0, s.ZDy)(async () => {
+  } = e, s = i.useCallback(() => {
+    if (null != t) return (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7590"), n.e("83975")]).then(n.bind(n, 380716));
@@ -89,13 +89,13 @@ function b(e) {
       }))
     })
   }, [t, l]);
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     className: m.addActionItem,
-    onClick: a,
-    children: [(0, r.jsx)(s.oFk, {
+    onClick: s,
+    children: [(0, r.jsx)(a.oFk, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "none",
       children: g.intl.string(g.t.qce3EB)
@@ -108,25 +108,25 @@ let j = function(e) {
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
     return null != (e = d.Z.getSettings().newMemberActions) ? e : h
-  }), s = i.useCallback((e, n) => {
+  }), a = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), g = i.useCallback((e, r, i, l) => {
-    var s;
-    let a = null == (s = n[e]) ? true : s.channelId;
-    null != a && null != d.Z.getSettings() && ((0, c.el)(a, r), (0, c.ad)(t, a, i, l))
+    var a;
+    let s = null == (a = n[e]) ? true : a.channelId;
+    null != s && null != d.Z.getSettings() && ((0, c.el)(s, r), (0, c.ad)(t, s, i, l))
   }, [n, t]), j = i.useCallback(e => {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), _ = n.map(e => f(p({}, e), {
+  }, [n]), v = n.map(e => f(p({}, e), {
     id: e.channelId
-  })), v = i.useCallback(e => {
+  })), _ = i.useCallback(e => {
     (0, c.hS)(e)
   }, []), {
     handleDragStart: C,
     handleDragReset: O,
     handleDragComplete: y
-  } = (0, a.Z)(_, v);
+  } = (0, s.Z)(v, _);
   return (0, r.jsxs)("div", {
     className: m.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
@@ -140,7 +140,7 @@ let j = function(e) {
       onDragComplete: y
     }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
       guildId: t,
-      onAddAction: s
+      onAddAction: a
     })]
   })
 }

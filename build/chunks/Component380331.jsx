@@ -65,23 +65,23 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
   U = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, Chunk624138.Mg)(Chunk911166.__invalid_unicodeCategoryShortcutHeight),
   B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  F = j + M + 2 * U,
-  V = x + M,
+  F = k + M + 2 * U,
+  V = L + M,
   H = V + (B + 2 * Z),
-  Y = j + k + 2 * U,
+  Y = k + j + 2 * U,
   W = 7;
 
 function K(e) {
@@ -94,7 +94,7 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(w({}, p), {
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(w({}, p), {
     "aria-label": (0, O.Nf)(l, E),
     className: o()({
       [R.categoryItemGuildCategory]: null != E,
@@ -117,8 +117,8 @@ function K(e) {
     }) : null, null == E && null != h ? (0, r.jsx)(v.Z, {
       categoryId: h,
       className: R.categoryIcon,
-      height: j,
-      width: j,
+      height: k,
+      width: k,
       size: "custom"
     }) : null]
   })), T = s[n + 1], N = null != T && l.type === S.En.GUILD && T.type !== S.En.GUILD;
@@ -158,7 +158,7 @@ let z = e => {
       isWindowFocused: P,
       useReducedMotion: w
     }, t)
-  }), [b, v, A, y, P, w]), L = i.useMemo(() => [8, 8, 0, 8], []), x = i.useCallback((e, t) => {
+  }), [b, v, A, y, P, w]), x = i.useMemo(() => [8, 8, 0, 8], []), L = i.useCallback((e, t) => {
     let n = A[t];
     if (n.type === S.En.RECENT) return F;
     if (n.type === S.En.GUILD) {
@@ -203,7 +203,7 @@ let z = e => {
       let n = A[e];
       if (null == n) return 0;
       let r = Q ? G : 0;
-      if (n.type === S.En.RECENT) return t ? 0 : k;
+      if (n.type === S.En.RECENT) return t ? 0 : j;
       if (n.type === S.En.GUILD) {
         let n = A[e + 1];
         return null != n && n.type !== S.En.GUILD ? t ? B + false * Z + M + r : M : t ? r : M
@@ -222,12 +222,12 @@ let z = e => {
     className: t,
     store: h.kJ,
     categories: A,
-    listPadding: L,
+    listPadding: x,
     onScroll: $,
     renderCategoryListItem: D,
     renderSection: en,
     rowCount: A.length,
-    categoryHeight: x,
+    categoryHeight: L,
     getScrollOffsetForIndex: et,
     rowCountBySection: X,
     children: e => U >= W && (0, r.jsx)(f.P3F, {
@@ -241,8 +241,8 @@ let z = e => {
       children: (0, r.jsx)(f.EO4, {
         size: "custom",
         color: "currentColor",
-        height: j,
-        width: j
+        height: k,
+        width: k
       })
     }, er)
   })

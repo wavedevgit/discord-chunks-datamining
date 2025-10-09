@@ -93,37 +93,37 @@ function O(e) {
   } = e, P = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "positionKey"]);
   let w = (0, _.c)(N),
     D = i.useId(),
-    L = null != h && ("string" != typeof h || "" !== h),
-    x = i.useMemo(() => (0, r.jsxs)("div", {
+    x = null != h && ("string" != typeof h || "" !== h),
+    L = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
       children: [null != y && (0, r.jsx)("div", {
         className: p.assetContainer,
         children: y
       }), (0, r.jsxs)("div", {
         className: p.textContent,
-        children: [L && (0, r.jsx)(o.Text, {
+        children: [x && (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           children: h
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
-          color: L ? "text-secondary" : "text-primary",
+          color: x ? "text-secondary" : "text-primary",
           children: g
         })]
       })]
-    }), [y, h, g, L]),
+    }), [y, h, g, x]),
     {
       isVisible: M,
-      triggerProps: j
+      triggerProps: k
     } = (0, d.l)(m({
       targetElementRef: w.targetElementRef
     }, P)),
-    k = null != R ? R : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
+    j = null != R ? R : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
     U = (0, f.Q)({
       shouldShow: M
     });
   if (O) {
-    let e = E(m({}, j), {
-      onFocus: (0, u.tS)(j.onFocus, e => {
+    let e = E(m({}, k), {
+      onFocus: (0, u.tS)(k.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
@@ -131,7 +131,7 @@ function O(e) {
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, u.tS)(j.onBlur, e => {
+      onBlur: (0, u.tS)(k.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
@@ -150,7 +150,7 @@ function O(e) {
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, u.C9)(n, j, D, w.triggerRef)
+    t = (0, u.C9)(n, k, D, w.triggerRef)
   }
   let G = U((e, t) => t ? (0, r.jsx)(c.pn, {
     isRichTooltip: true,
@@ -159,21 +159,21 @@ function O(e) {
       isRendered: true,
       targetElementRef: w.targetElementRef,
       id: D,
-      content: x,
+      content: L,
       position: I,
       align: T,
       spacing: S,
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
-      positionKey: k,
+      positionKey: j,
       "data-mana-component": "rich-tooltip"
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != x ? (0, r.jsx)(a.n, {
+    children: [t, null != L ? (0, r.jsx)(a.n, {
       id: D,
-      children: x
+      children: L
     }) : null, G]
   })
 }

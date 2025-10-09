@@ -56,7 +56,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,8 +67,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,12 +78,12 @@ let M = (0, Chunk663993.Un)({
     webpackId: 576184,
     name: "UnsupportedBrowser"
   }),
-  j = (0, Chunk663993.Un)({
+  k = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583)),
     webpackId: 431583,
     name: "DownloadApps"
   }),
-  k = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("81226").then(require.bind(require, 484097)),
     webpackId: 484097,
     name: "InviteProxy"
@@ -215,13 +215,13 @@ class ea extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         exact: true,
         path: Chunk981631.Z5c.APPS,
-        component: j
+        component: k
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
         path: ei([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.RESET], Chunk188785.a),
         component: Y
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
-        component: k
+        component: j
       }), (0, Chunk951288.jsx)(Chunk843611.l_, {
         from: Chunk981631.Z5c.INVITE(""),
         to: Chunk981631.Z5c.LOGIN
@@ -252,7 +252,7 @@ class ea extends Chunk647438.Component {
         to: Chunk981631.Z5c.LOGIN
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
-        component: k
+        component: j
       }), (0, Chunk951288.jsx)(Chunk843611.l_, {
         from: Chunk981631.Z5c.GIFT_CODE(""),
         to: Chunk981631.Z5c.LOGIN
@@ -339,7 +339,7 @@ class ea extends Chunk647438.Component {
         }
       }), (0, Chunk951288.jsx)(Chunk843611.l_, {
         from: Chunk981631.Z5c.CONNECT_AUTHORIZE,
-        to: x(D({}, location), {
+        to: L(D({}, location), {
           pathname: Chunk981631.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
@@ -379,7 +379,7 @@ function eo() {
 function es(e) {
   let t = eo(),
     n = (0, b.h)();
-  return (0, r.jsx)(ea, x(D({}, e), {
+  return (0, r.jsx)(ea, L(D({}, e), {
     skipsSettingDefaultPageTitle: t,
     shouldBlockBrowser: n
   }))

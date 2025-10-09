@@ -135,14 +135,14 @@ function D(e) {
   null != e.channelId && (N(), g.clear())
 }
 
-function L(e) {
+function x(e) {
   if (null === e.streamId) {
     let t = O(e.userId, e.context);
     g.set(t, d.Z.NO_OVERRIDE)
   }
 }
 
-function x(e) {
+function L(e) {
   h = e.section
 }
 
@@ -176,7 +176,7 @@ function M(e) {
   return r
 }
 
-function j(e) {
+function k(e) {
   let {
     connectionStats: t
   } = e;
@@ -187,7 +187,7 @@ function j(e) {
       } = t;
       return n === e
     }).forEach((t, n) => {
-      k({
+      j({
         context: e,
         stats: t.stats,
         index: n
@@ -196,7 +196,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     context: t,
     stats: n,
@@ -302,13 +302,13 @@ f(V, "displayName", "RTCDebugStore");
 let H = new V(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: w,
-  RTC_DEBUG_MODAL_SET_SECTION: x,
+  RTC_DEBUG_MODAL_SET_SECTION: L,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
   RTC_DEBUG_SET_RECORDING_FLAG: Z,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: D,
-  RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: j
+  RTC_CONNECTION_VIDEO: x,
+  MEDIA_ENGINE_CONNECTION_STATS: k
 })

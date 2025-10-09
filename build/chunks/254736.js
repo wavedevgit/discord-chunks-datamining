@@ -67,14 +67,14 @@ var Chunk901607 = require("./901607.js"),
   Chunk467159 = require("./467159.js"),
   w = Chunk169774.isBrowser("IE"),
   D = !w,
-  L = {
+  x = {
     edit: Chunk701871,
     composite: Chunk655183,
     drag: Chunk542501,
     cut: null,
     render: null
   },
-  x = false,
+  L = false,
   M = function(e) {
     function t() {
       return e.apply(this, arguments) || this
@@ -92,7 +92,7 @@ var Chunk901607 = require("./901607.js"),
       e._latestEditorState = this.props.editorState, e._blockSelectEvents = true
     }, t
   }(Chunk647438.Component),
-  j = function(e) {
+  k = function(e) {
     function t(t) {
       var n;
       return s(o(n = e.call(this, t) || this), "_blockSelectEvents", true), s(o(n), "_clipboard", true), s(o(n), "_handler", true), s(o(n), "_dragCount", true), s(o(n), "_internalDrag", true), s(o(n), "_editorKey", true), s(o(n), "_placeholderAccessibilityID", true), s(o(n), "_latestEditorState", true), s(o(n), "_latestCommittedEditorState", true), s(o(n), "_pendingStateFromBeforeInput", true), s(o(n), "_onBeforeInput", true), s(o(n), "_onBlur", true), s(o(n), "_onCharacterData", true), s(o(n), "_onCompositionEnd", true), s(o(n), "_onCompositionStart", true), s(o(n), "_onCopy", true), s(o(n), "_onCut", true), s(o(n), "_onDragEnd", true), s(o(n), "_onDragOver", true), s(o(n), "_onDragStart", true), s(o(n), "_onDrop", true), s(o(n), "_onInput", true), s(o(n), "_onFocus", true), s(o(n), "_onKeyDown", true), s(o(n), "_onKeyPress", true), s(o(n), "_onKeyUp", true), s(o(n), "_onMouseDown", true), s(o(n), "_onMouseUp", true), s(o(n), "_onPaste", true), s(o(n), "_onSelect", true), s(o(n), "editor", true), s(o(n), "editorContainer", true), s(o(n), "focus", true), s(o(n), "blur", true), s(o(n), "setMode", true), s(o(n), "exitCurrentMode", true), s(o(n), "restoreEditorDOM", true), s(o(n), "setClipboard", true), s(o(n), "getClipboard", true), s(o(n), "getEditorKey", true), s(o(n), "update", true), s(o(n), "onDragEnter", true), s(o(n), "onDragLeave", true), s(o(n), "_handleEditorContainerRef", function(e) {
@@ -116,8 +116,8 @@ var Chunk901607 = require("./901607.js"),
           r = t.onPaste,
           i = t.onCut,
           o = t.onCopy,
-          s = a({}, L.edit);
-        r && (s.onPaste = r), i && (s.onCut = i), o && (s.onCopy = o), n._handler = a({}, L, {
+          s = a({}, x.edit);
+        r && (s.onPaste = r), i && (s.onCut = i), o && (s.onCopy = o), n._handler = a({}, x, {
           edit: s
         })[e]
       }), s(o(n), "exitCurrentMode", function() {
@@ -264,12 +264,12 @@ var Chunk901607 = require("./901607.js"),
         key: "contents" + this.state.contentsKey
       })))))
     }, r.componentDidMount = function() {
-      this._blockSelectEvents = false, !x && C("draft_ods_enabled") && (x = true, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
+      this._blockSelectEvents = false, !L && C("draft_ods_enabled") && (L = true, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
     }, r.componentDidUpdate = function() {
       this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
     }, t
   }(Chunk647438.Component);
-s(j, "defaultProps", {
+s(k, "defaultProps", {
   blockRenderMap: Chunk901607,
   blockRendererFn: function() {
     return null
@@ -281,4 +281,4 @@ s(j, "defaultProps", {
   readOnly: false,
   spellCheck: false,
   stripPastedStyles: false
-}), module.exports = j
+}), module.exports = k

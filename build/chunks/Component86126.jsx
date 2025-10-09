@@ -2,12 +2,12 @@
 /** chunk id: 86126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk674180 = require("./674180.js"),
@@ -17,62 +17,57 @@ var Chunk951288 = require("./951288.js"),
   Chunk14263 = require("./14263.js"),
   Chunk783454 = require("./783454.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605041 = require("./605041.js"),
   Chunk654321 = require("./654321.js");
 
-function b(e) {
+function x(e) {
   var t;
   let {
     onDeleteEditState: l
   } = e, {
-    editStateId: b,
-    guildId: j,
-    groupListingId: _
-  } = (0, g.N)(), v = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), C = null == v ? true : v.id, O = (0, m.Z)(j), y = i.useMemo(() => {
+    editStateId: x,
+    guildId: b,
+    groupListingId: j
+  } = (0, g.N)(), v = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(x)), _ = null == v ? true : v.id, C = (0, m.Z)(b), O = i.useMemo(() => {
     var e;
-    return null != O && null != v && (null != (e = O[v.role_id]) ? e : 0)
-  }, [O, v]), N = 0 === y, E = null == C, I = null != (t = null == v ? true : v.archived) && t, {
-    error: S,
-    deleteSubscriptionListing: T,
-    submitting: P
+    return null != C && null != v && (null != (e = C[v.role_id]) ? e : 0)
+  }, [C, v]), y = 0 === O, N = null == _, E = null != (t = null == v ? true : v.archived) && t, {
+    error: I,
+    deleteSubscriptionListing: S,
+    submitting: T
   } = (0, d.r4)(), {
-    error: w,
-    archiveSubscriptionListing: Z,
-    submitting: R
+    error: P,
+    archiveSubscriptionListing: w,
+    submitting: Z
   } = (0, d._1)(), {
-    allowSelfRemoveMonetization: D
-  } = (0, c.gX)(j);
+    allowSelfRemoveMonetization: R
+  } = (0, c.gX)(b);
   return null == v ? null : (0, r.jsx)(p.Z, {
     title: f.intl.string(f.t["7Si8Ul"]),
     children: (0, r.jsxs)(o.Kqy, {
       gap: 16,
-      children: [null !== S && (0, r.jsx)(o.Wn, {
+      children: [null !== I && (0, r.jsx)(o.Wn, {
         messageType: o.QYI.ERROR,
         children: f.intl.string(f.t["9k8H//"])
-      }), null !== w && (0, r.jsx)(o.Wn, {
+      }), null !== P && (0, r.jsx)(o.Wn, {
         messageType: o.QYI.ERROR,
         children: f.intl.string(f.t.up8gUl)
-      }), I ? (0, r.jsxs)(o.hjN, {
-        title: f.intl.string(f.t["2D14T0"]),
-        disabled: !D,
-        children: [(0, r.jsx)(o.R94, {
-          type: o.R94.Types.DESCRIPTION,
-          className: h.formDescription,
-          disabled: !D,
-          children: f.intl.string(f.t.Y4KjUF)
-        }), (0, r.jsxs)(o.Kqy, {
+      }), E ? (0, r.jsx)(o.gNt, {
+        disabled: !R,
+        label: f.intl.string(f.t["2D14T0"]),
+        description: f.intl.string(f.t.Y4KjUF),
+        children: (0, r.jsxs)(o.Kqy, {
           gap: 16,
-          children: [!N && (0, r.jsx)(o.Text, {
+          children: [!y && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            className: x.warning,
+            className: h.warning,
             children: f.intl.formatToPlainString(f.t.ABeonZ, {
-              listingMemberCount: y
+              listingMemberCount: O
             })
           }), (0, r.jsx)(o.zxk, {
             variant: "critical-primary",
             onClick: () => {
               let e = async () => {
-                (E || (s()(null != _, "group listing doesnt exist"), s()(null != C, "subscription listing doesnt exist"), await T(j, _, C))) && (null == l || l())
+                (N || (a()(null != j, "group listing doesnt exist"), a()(null != _, "subscription listing doesnt exist"), await S(b, j, _))) && (null == l || l())
               };
               (0, o.ZDy)(async () => {
                 let {
@@ -100,23 +95,19 @@ function b(e) {
                 })
               })
             },
-            loading: P,
-            disabled: !D || !N,
+            loading: T,
+            disabled: !R || !y,
             text: f.intl.string(f.t.GMtG6u)
           })]
-        })]
-      }) : (0, r.jsxs)(o.hjN, {
-        title: f.intl.string(f.t["MS/4U1"]),
-        disabled: !D,
-        children: [(0, r.jsx)(o.R94, {
-          type: o.R94.Types.DESCRIPTION,
-          className: h.formDescription,
-          disabled: !D,
-          children: f.intl.string(f.t["5/Jeg4"])
-        }), (0, r.jsx)(o.zxk, {
+        })
+      }) : (0, r.jsx)(o.gNt, {
+        disabled: !R,
+        label: f.intl.string(f.t["MS/4U1"]),
+        description: f.intl.string(f.t["5/Jeg4"]),
+        children: (0, r.jsx)(o.zxk, {
           variant: "critical-primary",
           onClick: () => {
-            s()(null != _, "group listing doesnt exist"), s()(null != C, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
+            a()(null != j, "group listing doesnt exist"), a()(null != _, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
               let {
                 Modal: e
               } = await Promise.resolve().then(n.bind(n, 793030));
@@ -132,7 +123,7 @@ function b(e) {
                   text: f.intl.string(f.t.RL0wjo),
                   variant: "critical-primary",
                   onClick: async () => {
-                    await Z(j, _, C), t.onClose()
+                    await w(b, j, _), t.onClose()
                   }
                 }],
                 children: (0, r.jsx)(o.Text, {
@@ -142,10 +133,10 @@ function b(e) {
               })
             })
           },
-          loading: R,
-          disabled: !D,
+          loading: Z,
+          disabled: !R,
           text: f.intl.string(f.t.RL0wjo)
-        })]
+        })
       })]
     })
   })

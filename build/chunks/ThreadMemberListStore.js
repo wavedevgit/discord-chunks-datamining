@@ -2,7 +2,7 @@
 /** chunk id: 159299, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -228,7 +228,7 @@ function D(e) {
   delete y[t.id]
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t
   } = e, n = false;
@@ -236,7 +236,7 @@ function L(e) {
   return n
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t
   } = e, n = new Set(t.map(e => e.id)), r = false;
@@ -272,12 +272,12 @@ class M extends(r = Chunk442837.ZP.Store) {
   }
 }
 b(M, "displayName", "ThreadMemberListStore");
-let j = new M(Chunk570140.Z, {
+let k = new M(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   THREAD_MEMBERS_UPDATE: I,
   THREAD_UPDATE: w,
   THREAD_DELETE: D,
-  CHANNEL_UPDATES: x,
+  CHANNEL_UPDATES: L,
   THREAD_MEMBER_LIST_UPDATE: T,
   USER_UPDATE: S,
   PRESENCE_UPDATES: A,
@@ -286,7 +286,7 @@ let j = new M(Chunk570140.Z, {
   GUILD_MEMBER_REMOVE: S,
   PRESENCES_REPLACE: R,
   GUILD_MEMBERS_CHUNK_BATCH: P,
-  GUILD_ROLE_UPDATE: L,
-  GUILD_ROLE_DELETE: L,
+  GUILD_ROLE_UPDATE: x,
+  GUILD_ROLE_DELETE: x,
   PASSIVE_UPDATE_V2: C
 })

@@ -75,7 +75,7 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: h = false,
     initialSlide: y = O.x.INIT
-  } = e, S = (0, u.Dt)(), [A, C] = i.useState(""), [N, R] = i.useState(true), [P, w] = i.useState(y), [D, L] = i.useState(""), [x, M] = i.useState(null), j = async () => {
+  } = e, S = (0, u.Dt)(), [A, C] = i.useState(""), [N, R] = i.useState(true), [P, w] = i.useState(y), [D, x] = i.useState(""), [L, M] = i.useState(null), k = async () => {
     let e;
     w(O.x.REGISTER);
     let t = m.isPlatformEmbedded && E.ZP.supportsFeature(v.eRX.WEBAUTHN) ? E.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -85,7 +85,7 @@ function R(e) {
       g.Z.captureException(e), M(I.intl.string(I.t.xSCvBQ)), w(O.x.INIT);
       return
     }
-    L(e), w(O.x.NAME)
+    x(e), w(O.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
@@ -116,10 +116,10 @@ function R(e) {
               src: n(773072)
             })
           }), (0, r.jsx)("div", {
-            children: null != x && (0, r.jsx)(l.Text, {
+            children: null != L && (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "status-danger",
-              children: x
+              children: L
             })
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
@@ -131,7 +131,7 @@ function R(e) {
           children: (0, r.jsx)(l.zxk, {
             variant: "primary",
             text: I.intl.string(I.t.oibaQU),
-            onClick: j
+            onClick: k
           })
         })]
       }), (0, r.jsxs)(l.Mi4, {

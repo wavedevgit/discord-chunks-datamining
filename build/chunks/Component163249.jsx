@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
   Chunk493544 = require("./493544.jsx"),
@@ -24,7 +24,7 @@ function f(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: p.roleTag,
-    children: [(0, r.jsx)(a.xko, {
+    children: [(0, r.jsx)(s.xko, {
       className: p.roleDot,
       color: t,
       colors: null
@@ -41,7 +41,7 @@ function h(e) {
     display: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(p.banner, t.backgroundClass, {
+    className: a()(p.banner, t.backgroundClass, {
       [p.bannerOut]: !n
     }),
     children: [(0, r.jsx)("div", {
@@ -57,12 +57,12 @@ function h(e) {
       className: p.profileCard,
       children: (0, r.jsxs)("div", {
         className: p.avatarContainer,
-        children: [(0, r.jsx)(a.qEK, {
-          size: a.EFr.SIZE_56,
+        children: [(0, r.jsx)(s.qEK, {
+          size: s.EFr.SIZE_56,
           "aria-hidden": true,
           status: g.Skl.ONLINE,
           src: t.avatar
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-md/bold",
           className: p.avatarName,
@@ -154,12 +154,12 @@ function x() {
       ]
     }], []),
     [t, l] = Chunk647438.useState(0),
-    s = Chunk647438.useRef(module);
+    a = Chunk647438.useRef(module);
   return Chunk647438.useEffect(() => {
-    s.current = module
+    a.current = module
   }), Chunk647438.useEffect(() => {
     if (Chunk607070.Z.useReducedMotion) return;
-    let e = setTimeout(() => Chunk120356((exports + 1) % s.current.length), 6332);
+    let e = setTimeout(() => Chunk120356((exports + 1) % a.current.length), 6332);
     return () => clearTimeout(module)
   }, [exports]), (0, Chunk951288.jsx)("div", {
     className: Chunk203552.bannerContainer,
@@ -176,22 +176,23 @@ function b(e) {
     guild: t,
     everyoneRole: n,
     setEditRoleId: l
-  } = e, [s, d] = i.useState(false), g = async () => {
+  } = e, [a, d] = i.useState(false), g = async () => {
     d(true), await o.Z.createRole(t.id), d(false)
   }, f = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
   return (0, r.jsx)(c.NM, {
-    children: (0, r.jsxs)(a.hjN, {
+    children: (0, r.jsxs)("div", {
       className: p.section,
-      title: m.intl.string(m.t.LPJmLy),
-      tag: a.RB0.H2,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, r.jsx)(s.X6q, {
+        variant: "heading-lg/semibold",
+        children: m.intl.string(m.t.LPJmLy)
+      }), (0, r.jsxs)("div", {
         className: p.container,
-        children: [(0, r.jsx)(x, {}), (0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(x, {}), (0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
           children: m.intl.string(m.t.ALlnbm)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           color: "header-secondary",
           variant: "text-md/normal",
           className: p.introBody,
@@ -199,14 +200,14 @@ function b(e) {
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.button,
-          children: (0, r.jsx)(a.zxk, {
+          children: (0, r.jsx)(s.zxk, {
             variant: "primary",
             text: m.intl.string(m.t.JZZjQE),
             onClick: g,
-            loading: s
+            loading: a
           })
         })]
-      }), (0, r.jsx)(a.izJ, {
+      }), (0, r.jsx)(s.izJ, {
         className: p.divider
       }), (0, r.jsx)(u.Z, {
         role: n,

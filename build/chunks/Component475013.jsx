@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk749210 = require("./749210.js"),
   Chunk852860 = require("./852860.jsx"),
@@ -54,15 +54,15 @@ function E(e) {
   } = e, {
     guild: n,
     roles: l
-  } = (0, a.cj)([x.Z], () => ({
+  } = (0, s.cj)([x.Z], () => ({
     guild: x.Z.guild,
     roles: x.Z.roles
   }), []);
-  s()(null != n, "Guild cannot be null here");
+  a()(null != n, "Guild cannot be null here");
   let c = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
-  s()(null != c, "Guild must have an everyone role");
+  a()(null != c, "Guild must have an everyone role");
   let m = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
-    p = (0, a.e7)([f.Z], () => f.Z.getSelectedRoleId()),
+    p = (0, s.e7)([f.Z], () => f.Z.getSelectedRoleId()),
     [h, O] = i.useState(m.length > 0);
   i.useEffect(() => {
     O(h || m.length > 0)
@@ -78,14 +78,14 @@ function E(e) {
     setEditRoleId: y,
     selectedSection: N,
     setSelectedSection: E
-  }) : h ? (0, r.jsx)(v.Z, {
+  }) : h ? (0, r.jsx)(_.Z, {
     setEditRoleId: y,
     guild: n,
     everyoneRole: c,
     otherRoles: m,
     setSelectedSection: E,
     refToScroller: t
-  }) : (0, r.jsx)(_.Z, {
+  }) : (0, r.jsx)(v.Z, {
     guild: n,
     everyoneRole: c,
     setEditRoleId: y

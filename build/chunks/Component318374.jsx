@@ -100,13 +100,13 @@ function I(e) {
     onClickOverflow: P,
     onFocusOverflow: w,
     onUserClick: D,
-    onUserPopoutRequestClose: L,
-    "aria-label": x,
+    onUserPopoutRequestClose: x,
+    "aria-label": L,
     "aria-labelledby": M,
-    "aria-hidden": j
-  } = e, [k, U] = i.useState(false), G = O(I), B = i.useRef(null), Z = t.length - a, F = Z + 1, V = Z > 0 && !C && !j, H = () => (0, r.jsx)(u.VqE, {
+    "aria-hidden": k
+  } = e, [j, U] = i.useState(false), G = O(I), B = i.useRef(null), Z = t.length - a, F = Z + 1, V = Z > 0 && !C && !k, H = () => (0, r.jsx)(u.VqE, {
     className: m.popoutWrapper,
-    "aria-label": x,
+    "aria-label": L,
     "aria-labelledby": M,
     children: (0, r.jsx)(u.Ttm, {
       className: m.scroller,
@@ -118,7 +118,7 @@ function I(e) {
         disablePopout: "function" == typeof R ? R(e.id) : R,
         onClick: D,
         onPopoutRequestClose: () => {
-          U(false), null == L || L()
+          U(false), null == x || x()
         },
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
@@ -174,7 +174,7 @@ function I(e) {
     return (0, r.jsx)(u.yRy, {
       targetElementRef: B,
       renderPopout: H,
-      shouldShow: k,
+      shouldShow: j,
       position: "bottom",
       onRequestClose: () => U(false),
       children: t => (0, r.jsx)(u.P3F, y(E({}, t), {
@@ -197,10 +197,10 @@ function I(e) {
   };
   return t.length <= 0 ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-label": x,
+    "aria-label": L,
     "aria-labelledby": M,
     className: o()(b, m.avatars),
-    "aria-hidden": j,
+    "aria-hidden": k,
     children: [Y(), W()]
   })
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -87,7 +87,7 @@ function P(e) {
     guild: t,
     role: n,
     locked: l,
-    setSelectedSection: a,
+    setSelectedSection: s,
     integrations: o
   } = e, {
     headerHeight: P,
@@ -95,7 +95,7 @@ function P(e) {
   } = (0, b.Z)(0), {
     scrolledToTop: Z,
     handleScroll: R
-  } = (0, _.V)(), D = (0, c.e7)([f.Z], () => {
+  } = (0, v.V)(), D = (0, c.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
   }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
@@ -163,7 +163,7 @@ function P(e) {
           })
         })]
       })), function(e, t, n, i, l) {
-        let s = S(i, m.O1.OR);
+        let a = S(i, m.O1.OR);
         return (0, r.jsx)(d.E, {
           label: y.intl.string(y.t.Xs7PHR),
           options: [{
@@ -175,10 +175,10 @@ function P(e) {
           }],
           onChange: e => l(i, e),
           value: n,
-          disabled: e || s.length < 2
+          disabled: e || a.length < 2
         })
       }(l, n.id, L, k, (e, t) => (0, h.d_)(n.id, S(e, t))), function(e, t, n, i, l) {
-        function s(n, r) {
+        function a(n, r) {
           let i = [];
           for (let t of e) i.push(I({}, t));
           if (null == n) {
@@ -187,20 +187,20 @@ function P(e) {
           } else false === r ? i.push(n) : r >= 0 && (i[r] = n);
           t(i)
         }
-        let a = new Map;
+        let s = new Map;
         for (let t of (e.forEach((e, t) => {
             let n = "".concat(e.connectionType, ":").concat(e.applicationId);
-            if (a.has(n)) {
-              let r = a.get(n);
+            if (s.has(n)) {
+              let r = s.get(n);
               null == r || r.push({
                 index: t,
                 configuration: e
               })
-            } else a.set(n, [{
+            } else s.set(n, [{
               index: t,
               configuration: e
             }])
-          }), a.values())) {
+          }), s.values())) {
           if (t.some(e => {
               let {
                 configuration: t
@@ -231,9 +231,9 @@ function P(e) {
         }
         return (0, r.jsx)("div", {
           className: N.configurationsContainer,
-          children: Array.from(a.values()).map(e => (0, r.jsx)(j.Z, {
+          children: Array.from(s.values()).map(e => (0, r.jsx)(j.Z, {
             configurationItems: e,
-            onConfigurationChange: s,
+            onConfigurationChange: a,
             locked: n,
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
@@ -250,15 +250,15 @@ function P(e) {
     children: (0, r.jsxs)("div", {
       className: E.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: s()(E.header, E.stickyHeader, {
+        className: a()(E.header, E.stickyHeader, {
           [E.stickyHeaderElevated]: !Z
         }),
         ref: w,
-        children: (0, r.jsx)(_.Z, {
+        children: (0, r.jsx)(v.Z, {
           guild: t,
           role: n,
-          selectedSection: v.ZI.VERIFICATIONS,
-          setSelectedSection: a
+          selectedSection: _.ZI.VERIFICATIONS,
+          setSelectedSection: s
         })
       }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
         className: N.warningContainer,

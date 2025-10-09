@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  u = require.n(Chunk392711),
+  d = require.n(Chunk392711),
   Chunk872175 = require("./872175.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,20 +40,20 @@ function I(e) {
   var t, n;
   let {
     header: i,
-    body: o,
+    body: u,
     problems: h,
     transitionState: I,
-    feedbackProblems: L = {},
-    otherKey: y,
-    hasCloseButton: D,
+    feedbackProblems: y = {},
+    otherKey: D,
+    hasCloseButton: L,
     onSubmit: T,
     onClose: x,
     canDismissForever: M = true,
     showHelpdeskLink: k = true
-  } = e, R = (0, E.Z)(h), [j, A] = a.useState(false), [P, B] = a.useState(null), [U, $] = a.useState(u().shuffle(h)), [F, Z] = a.useState(""), [w, H] = a.useState(false), G = (0, f.Dt)(), J = (0, d.Z)(j), Y = (0, d.Z)(P), z = (0, d.Z)(T), K = (0, d.Z)(F), Q = (0, d.Z)(w), X = null != P ? L[P] : null, V = null != X;
+  } = e, R = (0, E.Z)(h), [j, A] = a.useState(false), [P, U] = a.useState(null), [$, B] = a.useState(d().shuffle(h)), [F, Z] = a.useState(""), [w, H] = a.useState(false), G = (0, f.Dt)(), J = (0, o.Z)(j), Y = (0, o.Z)(P), z = (0, o.Z)(T), K = (0, o.Z)(F), Q = (0, o.Z)(w), X = null != P ? y[P] : null, V = null != X;
   return a.useEffect(() => {
-    u().isEqual(R, h) || $((0, g.Bi)(h, y))
-  }, [h, R, y]), (0, c.ZP)(() => () => {
+    d().isEqual(R, h) || B((0, g.Bi)(h, D))
+  }, [h, R, D]), (0, c.ZP)(() => () => {
     z.current({
       problem: Y.current,
       dontShowAgain: J.current,
@@ -77,8 +77,8 @@ function I(e) {
         variant: "text-sm/medium",
         color: "header-secondary",
         className: r()(m.ratingBody, p.headerBody),
-        children: null != (t = null == X ? true : X.subheader) ? t : o
-      }), D ? (0, l.jsx)(b.olH, {
+        children: null != (t = null == X ? true : X.subheader) ? t : u
+      }), L ? (0, l.jsx)(b.olH, {
         className: m.modalCloseButton,
         onClick: function() {
           H(true), x()
@@ -89,12 +89,12 @@ function I(e) {
       children: [V ? null : (0, l.jsx)("div", {
         className: m.problemInfo,
         children: (0, l.jsx)(v.Z, {
-          options: U,
+          options: $,
           onClick: function(e) {
             let {
               value: t
             } = e;
-            B(t), Object.keys(L).includes(t) || x()
+            U(t), Object.keys(y).includes(t) || x()
           }
         })
       }), V ? (0, l.jsxs)("div", {
@@ -116,7 +116,7 @@ function I(e) {
           look: s.zx.Looks.LINK,
           color: s.zx.Colors.PRIMARY,
           onClick: () => {
-            B(null), Z("")
+            U(null), Z("")
           },
           children: N.intl.string(N.t["13/7kZ"])
         }), (0, l.jsx)(b.zxk, {

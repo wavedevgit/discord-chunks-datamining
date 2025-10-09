@@ -17,15 +17,15 @@ function o(e) {
     guild: n
   } = e;
   return (0, r.jsxs)(i.C3N, {
-    label: a.intl.string(a.t.Cv6ANz),
-    description: a.intl.string(a.t.qxIcra),
-    children: [(0, r.jsx)(s.W, {
+    label: s.intl.string(s.t.Cv6ANz),
+    description: s.intl.string(s.t.qxIcra),
+    children: [(0, r.jsx)(a.W, {
       canManageGuild: t,
       guild: n
     }), (0, r.jsx)(l.u, {
       layout: "horizontal",
-      label: a.intl.string(a.t.NASFnp),
-      description: a.intl.string(a.t.ZhOdpa),
+      label: s.intl.string(s.t.NASFnp),
+      description: s.intl.string(s.t.ZhOdpa),
       canManageGuild: t,
       guildId: n.id,
       systemChannelId: n.systemChannelId

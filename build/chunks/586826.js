@@ -12,20 +12,20 @@ let o = (0, Chunk51835.F)(e => ({
   file: null,
   loading: false,
   loadAudioFromFile: async n => {
-    if ((0, i.j)(() => e({
+    if ((0, r.j)(() => e({
         file: n,
         audio: null,
         loading: null != n
       })), null == n) return;
-    let t = await (0, r.lj)(n);
-    null != t && (0, i.j)(() => e({
+    let t = await (0, i.lj)(n);
+    null != t && (0, r.j)(() => e({
       audio: t,
       loading: false
     }))
   },
   maxVolume: 1,
   setMaxVolume: n => {
-    (0, i.j)(() => e({
+    (0, r.j)(() => e({
       maxVolume: n
     }))
   }

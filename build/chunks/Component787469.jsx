@@ -25,9 +25,8 @@ function h(e) {
   let {
     member: t
   } = e, n = (0, a.e7)([A.Z], () => A.Z.getGuild(t.guildId)), i = (0, a.e7)([_.Z], () => _.Z.getSortedRoles(t.guildId)), h = l.useMemo(() => i.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, i]), O = (0, a.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, E.zq)(O), R = (0, E.vN)(t), S = (0, a.e7)([T.Z], () => T.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
-  return null == n ? null : (0, r.jsx)(u.xJW, {
-    title: g.intl.string(g.t.LPJmLy),
-    titleClassName: N.infoTitle,
+  return null == n ? null : (0, r.jsx)(u.gNt, {
+    label: g.intl.string(g.t.LPJmLy),
     children: (0, r.jsx)(I.WM, {
       children: (0, r.jsx)(I._2, {
         description: t.roles.length > 0 || S ? (0, r.jsxs)("div", {

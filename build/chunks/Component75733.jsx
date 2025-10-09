@@ -46,13 +46,13 @@ function h(e) {
   } = e, g = i.useRef(null), m = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
     let n = c.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
-    return (0, r.jsx)(s.Z, {
+    return (0, r.jsx)(a.Z, {
       animated: null != (e = t.animated) && e,
       emojiId: t.id,
       emojiName: n
     })
   }, [t]);
-  return n ? (0, r.jsx)(a.Z, {
+  return n ? (0, r.jsx)(s.Z, {
     tabIndex: false,
     active: false,
     renderButtonContents: m
@@ -74,7 +74,7 @@ function h(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(a.Z, (n = p({}, e), i = i = {
+      return (0, r.jsx)(s.Z, (n = p({}, e), i = i = {
         ref: g,
         tabIndex: 0,
         active: l,
@@ -97,27 +97,27 @@ function x(e) {
   let {
     guildId: t,
     trait: n,
-    index: s,
-    onTraitUpdate: a,
+    index: a,
+    onTraitUpdate: s,
     disabled: o
   } = e, c = i.useCallback(() => {
-    a(t, s, {
+    s(t, a, {
       emoji: true,
       label: ""
     })
-  }, [t, s, a]), d = i.useCallback(e => n => {
+  }, [t, a, s]), d = i.useCallback(e => n => {
     let {
       emoji: r,
       willClose: i
     } = n;
-    a(t, s, {
+    s(t, a, {
       emoji: null != r ? r : true
     }), i && e()
-  }, [t, s, a]), u = i.useCallback(e => {
-    a(t, s, {
+  }, [t, a, s]), u = i.useCallback(e => {
+    s(t, a, {
       label: e
     })
-  }, [t, s, a]), g = i.useMemo(() => n.emoji, [n.emoji]), p = null != n.label && n.label.length > 0 || null != n.emoji;
+  }, [t, a, s]), g = i.useMemo(() => n.emoji, [n.emoji]), p = null != n.label && n.label.length > 0 || null != n.emoji;
   return (0, r.jsx)("div", {
     className: m.traitWrapper,
     children: (0, r.jsx)(l.oil, {
@@ -146,12 +146,12 @@ function j(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, s = i.useMemo(() => t.traits, [t]), a = i.useCallback((e, t, n) => {
-    let r = [...s];
-    r[t] = p({}, s[t], n), d.Z.updateGuildProfile(e, {
+  } = e, a = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, n) => {
+    let r = [...a];
+    r[t] = p({}, a[t], n), d.Z.updateGuildProfile(e, {
       traits: r
     })
-  }, [s]);
+  }, [a]);
   return (0, r.jsx)(l.gNt, {
     label: g.intl.string(g.t.S6JNrq),
     description: g.intl.string(g.t.l7Ig5e),
@@ -161,9 +161,9 @@ function j(e) {
         var i;
         return (0, r.jsx)(x, {
           guildId: t.id,
-          trait: null != (i = s[e]) ? i : f,
+          trait: null != (i = a[e]) ? i : f,
           index: e,
-          onTraitUpdate: a,
+          onTraitUpdate: s,
           disabled: !n
         }, "trait-".concat(e))
       })

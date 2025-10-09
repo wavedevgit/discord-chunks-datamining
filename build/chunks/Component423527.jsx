@@ -341,9 +341,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       globalName: s,
       globalNameClientError: a,
       dateOfBirthClientError: o,
-      parsedDateOfBirth: c,
-      globalNameFocused: u
-    } = this.state, d = (null == module ? true : module.guild_scheduled_event) != null, h = e => {
+      parsedDateOfBirth: c
+    } = this.state, u = (null == module ? true : module.guild_scheduled_event) != null, d = e => {
       this.setState({
         globalName: e
       })
@@ -353,45 +352,31 @@ class eu extends(r = Chunk647438.PureComponent) {
         onSubmit: this.handleSubmit,
         tag: "form",
         className: exports,
-        children: [this.renderInviteHeader(), Chunk442837 ? (0, Chunk951288.jsx)("div", {
+        children: [this.renderInviteHeader(), Chunk990547 ? (0, Chunk951288.jsx)("div", {
           className: Chunk33724.divider
         }) : null, (0, Chunk951288.jsxs)(Chunk388905.gO, {
-          className: Chunk442837 ? true : Chunk33724.authBlock,
-          children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+          className: Chunk990547 ? true : Chunk33724.authBlock,
+          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+            helperText: Chunk388032.intl.string(Chunk388032.t["330TCQ"]),
+            label: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"]),
             error: null != a ? a : ec(null != r ? r : require),
-            children: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"])
-          }), (0, Chunk951288.jsx)(Chunk28664.u, {
-            text: Chunk388032.intl.string(Chunk388032.t["hBB85+"]),
-            position: "right",
-            children: (0, Chunk951288.jsx)(Chunk388905.II, {
-              autoFocus: true,
-              className: Chunk197571.marginBottom8,
-              name: "global_name",
-              value: Chunk120356,
-              placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
-              onChange: Chunk846519,
-              error: null != require || null != r ? "" : null,
-              onFocus: () => {
-                this.setState({
-                  globalNameFocused: true
-                }), this.trackInputFocus("global_name")
-              },
-              onBlur: () => {
-                this.setState({
-                  globalNameFocused: false
-                }), this.trackInputBlur("global_name")
-              }
-            })
-          }), (0, Chunk951288.jsx)(Chunk180529.Z, {
-            show: Chunk990547,
-            children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-              variant: "text-sm/normal",
-              color: "text-secondary",
-              children: Chunk388032.intl.string(Chunk388032.t["330TCQ"])
-            })
+            autoFocus: true,
+            name: "global_name",
+            value: Chunk120356,
+            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
+            onChange: Chunk442837,
+            onFocus: () => {
+              this.setState({
+                globalNameFocused: true
+              }), this.trackInputFocus("global_name")
+            },
+            onBlur: () => {
+              this.setState({
+                globalNameFocused: false
+              }), this.trackInputBlur("global_name")
+            }
           }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk13430.Z, {
             label: Chunk388032.intl.string(Chunk388032.t.rhBeKS),
-            labelTag: Chunk481060.RB0.H3,
             wrapperClassName: Chunk33724.inviteBirthdayInput,
             name: "date_of_birth",
             onChange: this.handleBirthdayChange,
@@ -408,7 +393,7 @@ class eu extends(r = Chunk647438.PureComponent) {
             })
           })]
         })]
-      }), null != module && Chunk442837 ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+      }), null != module && Chunk990547 ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
         className: Chunk197571.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk792766.y, {
           guild: module.guild,
@@ -588,7 +573,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         children: er.intl.string(er.t["1lWxu7"])
       })]
     });
-    return t ? (0, i.jsx)(X.Z, {
+    return t ? (0, i.jsx)(Q.Z, {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: a()(C, ei.horizontalAuthBox),
@@ -657,12 +642,12 @@ class eu extends(r = Chunk647438.PureComponent) {
           transitionTo: u
         } = this.props,
         d = null != s ? (0, o.parse)(s.search) : {};
-      null != l ? t = Q.Z5c.INVITE_LOGIN(l.code) : null != r ? t = Q.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = Q.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = Q.Z5c.LOGIN, d.redirect_to = c) : (t = Q.Z5c.LOGIN, "" !== n && (d = {
+      null != l ? t = X.Z5c.INVITE_LOGIN(l.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, d.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (d = {
         email: n
       })), p.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == a || a(e), H.S.dispatch(Q.CkL.WAVE_EMPHASIZE)
+      }), null == a || a(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), es(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -691,11 +676,11 @@ class eu extends(r = Chunk647438.PureComponent) {
         dateOfBirthClientError: er.intl.string(er.t.EkokLy)
       }), o = true)), o || this.handleRegister()
     }), es(this, "trackInputFocus", e => {
-      K.default.track(Q.rMx.REGISTER_INPUT_FOCUS, {
+      K.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
         field: e
       })
     }), es(this, "trackInputBlur", e => {
-      K.default.track(Q.rMx.REGISTER_INPUT_BLUR, {
+      K.default.track(X.rMx.REGISTER_INPUT_BLUR, {
         field: e
       })
     }), es(this, "handleBirthdayChange", e => {
@@ -748,9 +733,9 @@ class eu extends(r = Chunk647438.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([z.Z, F.default, _.Z, L.Z, P.Z], () => ({
+  let t = (0, d.cj)([z.Z, B.default, _.Z, L.Z, P.Z], () => ({
       consentRequired: z.Z.getAuthenticationConsentRequired(),
-      authenticated: F.default.isAuthenticated(),
+      authenticated: B.default.isAuthenticated(),
       isUnderage: _.Z.isUnderageAnonymous(),
       country: L.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()

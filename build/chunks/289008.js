@@ -248,7 +248,7 @@
         stripe: n
       }
     },
-    L = function(e) {
+    x = function(e) {
       e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({
         name: "react-stripe-js",
         version: "3.7.0"
@@ -258,13 +258,13 @@
         url: "https://stripe.com/docs/stripe-js/react"
       }))
     },
-    x = t.createContext(null);
-  x.displayName = "ElementsContext";
+    L = t.createContext(null);
+  L.displayName = "ElementsContext";
   var M = function(e, t) {
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
     },
-    j = function(e) {
+    k = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
@@ -307,23 +307,23 @@
           e && s.elements.update(e)
         }
       }, [r, d, s.elements]), t.useEffect(function() {
-        L(s.stripe)
-      }, [s.stripe]), t.createElement(x.Provider, {
+        x(s.stripe)
+      }, [s.stripe]), t.createElement(L.Provider, {
         value: s
       }, i)
     };
-  j.propTypes = {
+  k.propTypes = {
     stripe: O.any,
     options: O.object
   };
-  var k = function(e) {
-      return M(t.useContext(x), e)
+  var j = function(e) {
+      return M(t.useContext(L), e)
     },
     U = function() {
-      return k("calls useElements()").elements
+      return j("calls useElements()").elements
     },
     G = function(e) {
-      return (0, e.children)(k("mounts <ElementsConsumer>"))
+      return (0, e.children)(j("mounts <ElementsConsumer>"))
     };
   G.propTypes = {
     children: O.func.isRequired
@@ -399,7 +399,7 @@
           i && (a || o) && d.checkoutSdk.changeAppearance(i)
         }
       }, [r, m, d.checkoutSdk, g]), t.useEffect(function() {
-        L(d.stripe)
+        x(d.stripe)
       }, [d.stripe]);
       var E = t.useMemo(function() {
         return H(d.checkoutSdk, s)
@@ -422,7 +422,7 @@
     },
     z = function(e) {
       var n = t.useContext(Z),
-        r = t.useContext(x);
+        r = t.useContext(L);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
       return n ? F(n, e) : M(r, e)
     },
@@ -462,12 +462,12 @@
             P = l(t.useState(null), 2),
             w = P[0],
             D = P[1],
-            L = t.useRef(null),
-            x = t.useRef(null);
+            x = t.useRef(null),
+            L = t.useRef(null);
           v(w, "blur", d), v(w, "focus", f), v(w, "escape", h), v(w, "click", m), v(w, "loaderror", g), v(w, "loaderstart", E), v(w, "networkschange", b), v(w, "confirm", y), v(w, "cancel", O), v(w, "shippingaddresschange", T), v(w, "shippingratechange", S), v(w, "change", p), _ && (i = "expressCheckout" === e ? _ : function() {
             _(w)
           }), v(w, "ready", i), t.useLayoutEffect(function() {
-            if (null === L.current && null !== x.current && (C || N)) {
+            if (null === x.current && null !== L.current && (C || N)) {
               var t = null;
               if (N) switch (e) {
                 case "payment":
@@ -491,25 +491,25 @@
                 default:
                   throw Error("Invalid Element type ".concat(r, ". You must use either the <PaymentElement />, <AddressElement options={{mode: 'shipping'}} />, <AddressElement options={{mode: 'billing'}} />, or <ExpressCheckoutElement />."))
               } else C && (t = C.create(e, u));
-              L.current = t, D(t), t && t.mount(x.current)
+              x.current = t, D(t), t && t.mount(L.current)
             }
           }, [C, N, u]);
           var M = I(u);
           return t.useEffect(function() {
-            if (L.current) {
+            if (x.current) {
               var e = R(u, M, ["paymentRequest"]);
-              e && "update" in L.current && L.current.update(e)
+              e && "update" in x.current && x.current.update(e)
             }
           }, [u, M]), t.useLayoutEffect(function() {
             return function() {
-              if (L.current && "function" == typeof L.current.destroy) try {
-                L.current.destroy(), L.current = null
+              if (x.current && "function" == typeof x.current.destroy) try {
+                x.current.destroy(), x.current = null
               } catch (e) {}
             }
           }, []), t.createElement("div", {
             id: a,
             className: o,
-            ref: x
+            ref: L
           })
         },
         a = function(e) {
@@ -584,7 +584,7 @@
           })
         }
       }, [u.embeddedCheckout]), t.useEffect(function() {
-        L(s)
+        x(s)
       }, [s]);
       var f = I(n);
       t.useEffect(function() {
@@ -651,5 +651,5 @@
     eS = J("paymentMethodMessaging", $),
     eA = J("affirmMessage", $),
     eC = J("afterpayClearpayMessage", $);
-  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = j, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
+  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = k, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
 })

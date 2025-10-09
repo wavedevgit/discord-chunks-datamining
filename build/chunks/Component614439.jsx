@@ -90,8 +90,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                 var t, n, r, i;
                 let l = new URL(e).hostname.split(".");
                 if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return N.z.bandcamp.presentation;
-                let s = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
-                if ("www" === s && (s = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), s in N.z) return N.z[s].presentation;
+                let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
+                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in N.z) return N.z[a].presentation;
                 return null
               } catch (e) {
                 return null
@@ -104,12 +104,12 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     }, [D]);
     let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk852860 || null == D) return null;
-    let W = e => {
-        _.Z.updateGuild({
+    let V = e => {
+        v.Z.updateGuild({
           discoverySplash: e
         })
       },
-      V = e => {
+      W = e => {
         let t = () => {
           (0, m.W1)(d.id, e), e ? (0, m.Vv)({
             guildId: d.id,
@@ -133,7 +133,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: D.reasonsToJoin,
             socialLinks: D.socialLinks,
             about: D.about
-          }), _.Z.saveGuild(d.id, {
+          }), v.Z.saveGuild(d.id, {
             discoverySplash: d.discoverySplash,
             description: d.description
           })
@@ -189,17 +189,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
               containerRef: exports,
               children: (0, Chunk951288.jsxs)("div", {
                 className: Chunk133190.container,
-                children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
+                children: [(0, Chunk951288.jsxs)("div", {
                   className: Chunk133190.mainContent,
-                  title: (0, Chunk951288.jsxs)("div", {
-                    children: [Chunk388032.intl.string(Chunk388032.t.kGlQGB), " ", (0, Chunk951288.jsx)(Chunk688465.Z, {
+                  children: [(0, Chunk951288.jsxs)(Chunk481060.X6q, {
+                    variant: "heading-lg/semibold",
+                    children: [Chunk388032.intl.string(Chunk388032.t.kGlQGB), (0, Chunk951288.jsx)(Chunk688465.Z, {
                       className: Chunk133190.betaTag
                     })]
-                  }),
-                  tag: Chunk481060.RB0.H1,
-                  children: [(0, Chunk951288.jsxs)(Chunk481060.R94, {
+                  }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+                    variant: "text-sm/normal",
                     className: Chunk133190.tabMainDescription,
-                    type: Chunk481060.geA.DESCRIPTION,
                     children: [Chunk388032.intl.format(Chunk388032.t["+ScrMT"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
                     }), " ", Chunk388032.intl.format(Chunk388032.t.T6WtKy, {
@@ -260,7 +259,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               size: 512 * (0, p.x_)()
                             }),
                             disabled: !Z,
-                            onChange: W,
+                            onChange: V,
                             hint: Chunk388032.intl.string(Chunk388032.t.uPvxqK),
                             imageClassName: Chunk133190.imageUploaderInnerSquare,
                             hideSize: true
@@ -269,7 +268,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             color: Chunk755721.zx.Colors.PRIMARY,
                             children: [Chunk388032.intl.string(Chunk388032.t.yG2pUl), (0, Chunk951288.jsx)(Chunk813197.ZP, {
                               disabled: !Z,
-                              onChange: W
+                              onChange: V
                             })]
                           })]
                         })
@@ -281,7 +280,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ul),
                       onChange: e => {
                         var t;
-                        _.Z.updateGuild({
+                        v.Z.updateGuild({
                           description: null != (t = null == e ? true : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
@@ -407,7 +406,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           variant: "critical-primary",
                           size: "sm",
                           text: Chunk388032.intl.string(Chunk388032.t["DCHd/P"]),
-                          onClick: () => V(false),
+                          onClick: () => W(false),
                           disabled: !Z
                         })
                       })]
@@ -423,7 +422,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
                     children: Y,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
-                    buttonCallback: () => V(true),
+                    buttonCallback: () => W(true),
                     disabled: !Z || !G
                   })
                 })]

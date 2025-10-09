@@ -14,14 +14,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk223892 = require("./223892.js");
 
 function u(e, t) {
-  let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e)),
+  let n = (0, i.e7)([s.Z], () => s.Z.getGuild(e)),
     [u, g] = r.useState(),
     [m, p] = r.useState(false),
     f = (0, d.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([o.default], () => {
       let e = o.default.getCurrentUser();
-      return null != n && (0, s.eM)(n, e)
+      return null != n && (0, a.eM)(n, e)
     }, [n]),
     error: u,
     loading: m,

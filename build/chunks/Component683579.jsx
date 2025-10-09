@@ -19,9 +19,9 @@ function g(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: a,
+    toggled: s,
     onToggleAction: o
-  } = e, c = (0, s.c)(t.type, t, n);
+  } = e, c = (0, a.c)(t.type, t, n);
   if (null == c) return null;
   let {
     headerText: d,
@@ -51,7 +51,7 @@ function g(e) {
       children: (0, r.jsx)(i.$q, {
         disabled: !c.isEditable,
         type: i.M0.INVERTED,
-        value: a,
+        value: s,
         onChange: () => o(false),
         className: u.__invalid_actionCheckbox
       })
@@ -65,7 +65,7 @@ function m(e) {
     guildId: n,
     triggerType: i,
     toggled: l,
-    onToggleAction: s
+    onToggleAction: a
   } = e;
   switch (t.type) {
     case d.jj.FLAG_TO_CHANNEL:
@@ -73,7 +73,7 @@ function m(e) {
         action: t,
         triggerType: i,
         toggled: l,
-        onToggleAction: s
+        onToggleAction: a
       });
     case d.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(o.Z, {
@@ -81,14 +81,14 @@ function m(e) {
         guildId: n,
         triggerType: i,
         toggled: l,
-        onToggleAction: s
+        onToggleAction: a
       });
     case d.jj.BLOCK_MESSAGE:
-      return (0, r.jsx)(a.Z, {
+      return (0, r.jsx)(s.Z, {
         action: t,
         triggerType: i,
         toggled: l,
-        onToggleAction: s
+        onToggleAction: a
       });
     default:
       return (0, r.jsx)(g, {
@@ -96,7 +96,7 @@ function m(e) {
         guildId: n,
         toggled: l,
         triggerType: i,
-        onToggleAction: s
+        onToggleAction: a
       })
   }
 }

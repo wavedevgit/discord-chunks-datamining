@@ -169,7 +169,7 @@ function X(e) {
             className: U.title,
             color: "header-primary",
             variant: "heading-md/medium",
-            children: Z.intl.format(Z.t.EQa7oq, {
+            children: W.intl.format(W.t.EQa7oq, {
               questName: t.config.messages.questName
             })
           }), (0, r.jsx)(z, {
@@ -308,7 +308,7 @@ function K(e) {
     onGameSheetClosed: v
   } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = o.percentComplete > 0, O = (0, j.z)(n), [S, T, w] = (0, j.me)(n, o), P = s.useRef(null), N = s.useRef(null), R = (0, j._s)({
     quest: n
-  }), Z = (0, b.q8)(n), F = (0, j.Jf)(n), z = s.useCallback(() => {
+  }), W = (0, b.q8)(n), F = (0, j.Jf)(n), z = s.useCallback(() => {
     (0, A.openVideoQuestModal)({
       quest: n,
       questContent: y.jn.QUEST_BAR_V2,
@@ -320,7 +320,7 @@ function K(e) {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(U.postEnrollmentBackground, U.postEnrollmentBackgroundCollapsed),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(W.aY, ", ").concat(W.v6, ")"),
+        backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")"),
         opacity: c.to({
           range: [0, 1],
           output: [1, 0]
@@ -366,7 +366,7 @@ function K(e) {
           taskDetails: o
         })).exhaustive()
       }), (0, r.jsxs)(B.n, {
-        children: [Z && (0, r.jsx)(H, {
+        children: [W && (0, r.jsx)(H, {
           isExpanded: u,
           quest: n,
           onClick: z,
@@ -390,7 +390,7 @@ function K(e) {
     }), (0, r.jsx)("div", {
       className: a()(U.postEnrollmentBackground, U.postEnrollmentBackgroundExpanded),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(W.aY, ", ").concat(W.v6, ")")
+        backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")")
       }
     })]
   })

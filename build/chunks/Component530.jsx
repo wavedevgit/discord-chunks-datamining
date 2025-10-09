@@ -46,14 +46,14 @@ function E(e) {
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
-  }), L = null != D;
+  }), x = null != D;
   return (0, r.jsxs)("div", {
     className: a()(g.container, {
       [g.bot]: null != w
     }, I),
     children: [(0, r.jsxs)("div", {
       className: g.usernameRow,
-      children: [R(L ? (0, r.jsx)(s.Text, {
+      children: [R(x ? (0, r.jsx)(s.Text, {
         variant: N,
         children: (0, r.jsx)(_.Z, {
           userName: b,

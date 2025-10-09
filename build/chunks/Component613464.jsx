@@ -34,15 +34,15 @@ function C(e) {
     className: C,
     infoPanelClassName: p,
     style: D
-  } = e, L = (0, O.m)(n), U = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [x, v] = l.useState(null == U || null == M), b = (0, c.Z)(M), P = l.useRef(null), {
+  } = e, L = (0, O.m)(n), U = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [x, b] = l.useState(null == U || null == M), v = (0, c.Z)(M), P = l.useRef(null), {
     analyticsLocations: j
   } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, I.ZP)(t, n), G = (0, E.ZP)();
   return (l.useEffect(() => {
     L || i()
   }, [L, i]), l.useEffect(() => {
-    null == b || null != M || x || i()
-  }, [x, M, i, b]), l.useEffect(() => {
-    null != U && null != M && v(false)
+    null == v || null != M || x || i()
+  }, [x, M, i, v]), l.useEffect(() => {
+    null != U && null != M && b(false)
   }, [U, M]), l.useEffect(() => {
     let e = null == M;
     return !x && e && (P.current = window.setTimeout(i, 500)), () => {
@@ -56,7 +56,7 @@ function C(e) {
         guildId: n,
         dispatchWait: true
       })];
-      await Promise.all(e), v(false)
+      await Promise.all(e), b(false)
     }()
   }, [n, t]), L) ? x || null == U || null == M ? (0, r.jsx)("div", {
     className: s()(S.sidebarContainer, S.loadingContainer, C),

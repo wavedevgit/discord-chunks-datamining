@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   z: () => u
-});
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,25 +15,31 @@ var Chunk951288 = require("./951288.js"),
 
 function u(e) {
   let {
-    guildId: t,
-    defaultSettings: n,
-    canManageGuild: u
-  } = e, g = (0, l.e7)([a.Z], () => a.Z.getMemberCount(t)), m = i.useMemo(() => [{
+    label: t,
+    description: n,
+    helperText: u,
+    guildId: g,
+    defaultSettings: m,
+    canManageGuild: p
+  } = e, f = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), h = i.useMemo(() => [{
     name: d.intl.string(d.t["n/bTaW"]),
     value: c.bL.ALL_MESSAGES,
-    desc: null != g && g >= c.qWG ? d.intl.string(d.t["L+P4t7"]) : null
+    desc: null != f && f >= c.qWG ? d.intl.string(d.t["L+P4t7"]) : null
   }, {
     name: d.intl.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
-  }], [g]), p = i.useCallback(e => {
+  }], [f]), x = i.useCallback(e => {
     o.Z.updateGuild({
       defaultMessageNotifications: e
     })
   }, []);
-  return (0, r.jsx)(s.E, {
-    options: m,
-    value: n,
-    disabled: !u,
-    onChange: p
+  return (0, r.jsx)(a.E, {
+    label: t,
+    description: n,
+    helperText: u,
+    options: h,
+    value: m,
+    disabled: !p,
+    onChange: x
   })
 }

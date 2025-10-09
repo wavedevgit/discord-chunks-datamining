@@ -33,11 +33,11 @@ let C = 10,
   P = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
   w = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
-  L = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
-  x = /^\/activities\/([0-9-]+)\/?$/,
+  x = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
+  L = /^\/activities\/([0-9-]+)\/?$/,
   M = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-  j = /^\/channels\/([0-9]+)\/shop$/,
-  k = /^\/quests\/([0-9-]+)\/?$/,
+  k = /^\/channels\/([0-9]+)\/shop$/,
+  j = /^\/quests\/([0-9-]+)\/?$/,
   U = /^\/oauth2\/authorize/,
   G = /^#itemSkuId=([0-9]+)$/,
   B = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
@@ -185,7 +185,7 @@ function eo(e) {
       let e = _[2];
       u(S.g.APP_DIRECTORY_PROFILE, e)
     }
-    let h = null == c ? true : c.match(L);
+    let h = null == c ? true : c.match(x);
     if (null != h) {
       let e = h[2],
         t = h[3];
@@ -194,14 +194,14 @@ function eo(e) {
         u(S.g.APP_DIRECTORY_STOREFRONT_SKU, n)
       } else u(S.g.APP_DIRECTORY_STOREFRONT, e)
     }
-    let m = null == c ? true : c.match(x);
+    let m = null == c ? true : c.match(L);
     if (null != m) {
       let e = m[1];
       u(S.g.ACTIVITY_BOOKMARK, e)
     }
     let g = null == c ? true : c.match(M);
     null != g && u(S.g.GUILD_PRODUCT, "".concat(g[1], "-").concat(g[2]));
-    let I = null == c ? true : c.match(j);
+    let I = null == c ? true : c.match(k);
     null != I && u(S.g.SERVER_SHOP, I[1]);
     let T = es(e);
     if (null != T && u(S.g.QUESTS_EMBED, T), "/shop" === c) {
@@ -216,7 +216,7 @@ function eo(e) {
 function es(e) {
   var t, n;
   let r = ei(e),
-    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(k);
+    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(j);
   return null != (n = null == i ? true : i[1]) ? n : null
 }
 

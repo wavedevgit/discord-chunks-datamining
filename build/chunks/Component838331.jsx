@@ -125,9 +125,9 @@ function C(e) {
     emptyStateText: N,
     emptyStateHeader: R,
     onQueryChange: P
-  } = e, [w, D] = i.useState(""), L = i.useCallback(e => {
+  } = e, [w, D] = i.useState(""), x = i.useCallback(e => {
     D(e), null == P || P(e)
-  }, [P]), [x] = i.useState(true), [M, j] = i.useState(null), k = i.useId(), U = i.useRef(null);
+  }, [P]), [L] = i.useState(true), [M, k] = i.useState(null), j = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(y, '="').concat(M, '"]')),
       t = U.current;
@@ -155,7 +155,7 @@ function C(e) {
       })
     }), []),
     Y = i.useCallback((e, t) => {
-      j(t);
+      k(t);
       let n = document.querySelector(e),
         r = U.current;
       null != r && null != n && r.scrollIntoViewNode({
@@ -182,9 +182,9 @@ function C(e) {
           ref: n,
           role: "combobox",
           "aria-label": b,
-          "aria-expanded": x,
-          "aria-controls": x ? k : true,
-          "aria-owns": k,
+          "aria-expanded": L,
+          "aria-controls": L ? j : true,
+          "aria-owns": j,
           "aria-haspopup": "listbox",
           className: o()(_.combobox, p),
           children: [(0, r.jsx)("div", {
@@ -194,17 +194,17 @@ function C(e) {
               autoFocus: I,
               placeholder: t,
               query: w,
-              onChange: L,
+              onChange: x,
               onKeyDown: i,
-              onBlur: () => j(null),
-              onClear: () => L(""),
+              onBlur: () => k(null),
+              onClear: () => x(""),
               inputProps: {
                 "aria-multiline": false,
                 "aria-activedescendant": null != M ? M : true
               }
             })
           }), (0, r.jsx)("div", {
-            children: x && (B ? (0, r.jsxs)("div", {
+            children: L && (B ? (0, r.jsxs)("div", {
               className: _.empty,
               children: [(0, r.jsx)(d.X6q, {
                 variant: "heading-md/semibold",
@@ -226,7 +226,7 @@ function C(e) {
                   maxHeight: T * (O + 6)
                 },
                 "aria-multiselectable": v,
-                id: k,
+                id: j,
                 ref: U,
                 className: o()(_.list, _.scroller, m),
                 sections: [G.length],

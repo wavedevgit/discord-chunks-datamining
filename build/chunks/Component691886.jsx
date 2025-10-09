@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
@@ -25,7 +25,7 @@ function j(e) {
   return String(e)
 }
 
-function _(e) {
+function v(e) {
   let {
     icon: t,
     title: n,
@@ -33,7 +33,7 @@ function _(e) {
     className: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(b.label, l),
+    className: a()(b.label, l),
     children: [t, (0, r.jsxs)("div", {
       className: b.labelText,
       children: [(0, r.jsx)(o.Text, {
@@ -51,8 +51,8 @@ function _(e) {
   })
 }
 
-function v() {
-  return (0, Chunk951288.jsx)(_, {
+function _() {
+  return (0, Chunk951288.jsx)(v, {
     icon: (0, Chunk951288.jsx)(Chunk481060.qJs, {
       size: "md",
       color: "currentColor",
@@ -69,14 +69,14 @@ function C(e) {
     channelId: n
   } = e, i = (0, f.m7)(n), l = (0, f.m7)(null != (t = null == i ? true : i.parent_id) ? t : h.lds);
   if (null == i) return null;
-  let s = (0, d.KS)(i),
-    a = (0, c.F6)(i, p.default, m.Z),
+  let a = (0, d.KS)(i),
+    s = (0, c.F6)(i, p.default, m.Z),
     o = null != l ? (0, c.F6)(l, p.default, m.Z) : true;
-  return (0, r.jsx)(_, {
-    icon: null != s && (0, r.jsx)(s, {
+  return (0, r.jsx)(v, {
+    icon: null != a && (0, r.jsx)(a, {
       className: b.labelIcon
     }),
-    title: a,
+    title: s,
     subtitle: o
   })
 }
@@ -87,19 +87,19 @@ function O(e) {
   } = e;
   return null != t ? (0, r.jsx)(C, {
     channelId: t
-  }) : (0, r.jsx)(v, {})
+  }) : (0, r.jsx)(_, {})
 }
 
 function y(e) {
   let {
     label: t,
     guildId: l,
-    value: s,
+    value: a,
     initialChannelId: d,
     omitChannelIds: b,
-    "aria-labelledby": _,
-    onChange: v
-  } = e, C = x.intl.string(x.t.d7YJMD), y = (0, a.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != s ? s : h.lds), E = i.useMemo(() => {
+    "aria-labelledby": v,
+    onChange: _
+  } = e, C = x.intl.string(x.t.d7YJMD), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
     let e = [{
         value: null,
         label: C
@@ -109,15 +109,15 @@ function y(e) {
       for (let {
           channel: r
         }
-        of y[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== s && (null == b ? true : b.has(r.id)) && (r.id !== d || s === d) || (s === r.id && (t = true), e.push({
+        of y[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== a && (null == b ? true : b.has(r.id)) && (r.id !== d || a === d) || (a === r.id && (t = true), e.push({
         value: r.id,
         label: (0, c.F6)(r, p.default, m.Z)
       })));
-    return null == s || t || null == N || e.push({
-      value: s,
+    return null == a || t || null == N || e.push({
+      value: a,
       label: N.name
     }), e
-  }, [C, s, N, y, b, d]);
+  }, [C, a, N, y, b, d]);
   return (0, r.jsx)(o.PhF, {
     label: t,
     placeholder: x.intl.string(x.t.r2pts7),
@@ -148,7 +148,7 @@ function y(e) {
             return e
           }({}, t), i = i = {
             guildId: l,
-            onSubmit: v
+            onSubmit: _
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -160,15 +160,15 @@ function y(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         }
-      }) : v(e)
+      }) : _(e)
     },
-    isSelected: e => null != s && j(e) === j(s),
+    isSelected: e => null != a && j(e) === j(a),
     serialize: j,
     renderOptionLabel: O,
     renderOptionValue: e => {
       let [t] = e;
       return O(t)
     },
-    "aria-labelledby": _
+    "aria-labelledby": v
   })
 }

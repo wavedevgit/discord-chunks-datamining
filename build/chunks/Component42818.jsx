@@ -2,8 +2,8 @@
 /** chunk id: 42818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  As: () => j,
-  By: () => k,
+  As: () => k,
+  By: () => j,
   Lu: () => U,
   e9: () => Y,
   hG: () => Z,
@@ -78,12 +78,12 @@ let D = (e, t) => {
     var n;
     return !!(null == (n = e.discounts) ? true : n.some(e => e.type === t))
   },
-  L = (e, t) => {
+  x = (e, t) => {
     var n, r, i;
     return e.subscriptionPlanPrice - (null != (i = null == (r = e.discounts) || null == (n = r.find(e => e.type === t)) ? true : n.amount) ? i : 0)
   };
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   let i = D(e, d.eW.PREMIUM_TRIAL);
   switch (e.subscriptionPlanId) {
     case T.Xh.PREMIUM_MONTH_LEGACY:
@@ -142,7 +142,7 @@ function M(e) {
     inTrialPeriod: _
   } = e, h = (0, c.e7)([p.Z], () => p.Z.get(n.subscriptionPlanId)), m = null == (t = (0, O.N)(f)) ? true : t.subscription_trial;
   l()(null != h, "Missing subscriptionPlan");
-  let b = x(n, h, d, (0, g.if)({
+  let b = L(n, h, d, (0, g.if)({
     intervalType: null == m ? true : m.interval,
     intervalCount: null == m ? true : m.interval_count
   }));
@@ -177,7 +177,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     label: t,
     tooltipText: n,
@@ -200,7 +200,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
@@ -236,7 +236,7 @@ function U(e) {
   let c = o.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount < 0),
     u = o.find(e => null == e.subscriptionPlanId && null != e.discounts && e.discounts.find(e => e.type === d.eW.PREMIUM_LEGACY_UPGRADE_PROMOTION)),
     f = D(s, d.eW.PREMIUM_TRIAL),
-    _ = L(s, d.eW.SUBSCRIPTION_PLAN),
+    _ = x(s, d.eW.SUBSCRIPTION_PLAN),
     p = s.quantity * _,
     h = s.amount + (null != c ? c.amount : 0) - p + (null != u ? u.amount : 0),
     m = o.filter(e => e.subscriptionPlanId === T.Xh.PREMIUM_MONTH_GUILD || e.subscriptionPlanId === T.Xh.PREMIUM_YEAR_GUILD).reduce((e, t) => e + t.amount, 0);
@@ -248,7 +248,7 @@ function U(e) {
       isPrepaidPaymentSource: i,
       referralTrialOfferId: a
     }), 0 === h || f ? null : (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(j, {
+      label: (0, r.jsx)(k, {
         label: A.intl.formatToPlainString(A.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -256,7 +256,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(j, {
+      label: (0, r.jsx)(k, {
         label: A.intl.string(A.t["+as5ZW"]),
         tooltipText: A.intl.format(A.t.UDop9f, {}),
         tooltipAriaLabel: A.intl.string(A.t.P68ePD)
@@ -464,7 +464,8 @@ function Y(e) {
     planName: (0, g.Gf)(n.id, false, a)
   }), (0, r.jsxs)("div", {
     className: i,
-    children: [(0, r.jsx)(u.vwX, {
+    children: [(0, r.jsx)(u.X6q, {
+      variant: "heading-md/semibold",
       children: A.intl.string(A.t.PEjaCw)
     }), l >= 0 && false === c ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {

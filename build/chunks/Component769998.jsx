@@ -27,13 +27,13 @@ function h(e) {
     guildId: x,
     toggled: b,
     onToggleAction: j
-  } = e, _ = e => () => j(e), v = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.L9)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(x)), [x]);
-  if (null == v) return null;
+  } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.L9)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(x)), [x]);
+  if (null == _) return null;
   let {
     headerText: N,
     descriptionText: E,
     icon: I
-  } = v;
+  } = _;
   return (0, r.jsxs)("div", {
     className: f.actionContainer,
     children: [(0, r.jsx)("div", {
@@ -45,22 +45,22 @@ function h(e) {
       })
     }), (0, r.jsxs)("div", {
       className: f.actionTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: N
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: E
-      }), b && (0, r.jsxs)(a.Text, {
+      }), b && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKC, {
           friendlyDurationString: O
         }) : p.intl.format(p.t.mvHxzc, {
           friendlyDurationString: O
-        }), y && (0, r.jsx)(a.P3F, {
-          onClick: _(true),
+        }), y && (0, r.jsx)(s.P3F, {
+          onClick: v(true),
           className: f.editChannel,
           tag: "span",
           role: "link",
@@ -72,10 +72,10 @@ function h(e) {
       "aria-label": p.intl.formatToMarkdownString(p.t.wx6Vb2, {}),
       shouldShow: !y,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(s.$q, {
-          type: s.M0.INVERTED,
+        children: (0, r.jsx)(a.$q, {
+          type: a.M0.INVERTED,
           value: b,
-          onChange: _(false),
+          onChange: v(false),
           disabled: !y,
           className: f.__invalid_actionCheckbox
         })

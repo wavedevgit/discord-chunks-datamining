@@ -13,16 +13,16 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = (0, a.MO)(e);
+  let t = (0, s.MO)(e);
   switch (t) {
-    case a.d5.NEEDS_COMMUNITY:
+    case s.d5.NEEDS_COMMUNITY:
       return {
         visibility: t, noticeText: c.intl.string(c.t["0Z2Qxs"]), ctaLabel: c.intl.string(c.t.BOJpl5), ctaClickable: null != e, onCtaClicked() {
           var t;
-          i()(null != e, "Guild must be not null open COMMUNITY settings"), s.Z.open(null != (t = null == e ? true : e.id) ? t : "", o.pNK.COMMUNITY)
+          i()(null != e, "Guild must be not null open COMMUNITY settings"), a.Z.open(null != (t = null == e ? true : e.id) ? t : "", o.pNK.COMMUNITY)
         }
       };
-    case a.d5.WAITLIST_ONLY:
+    case s.d5.WAITLIST_ONLY:
       return {
         visibility: t, noticeText: c.intl.string(c.t["5vz88P"]), ctaLabel: c.intl.string(c.t["6yjvmp"]), ctaClickable: true, onCtaClicked() {
           (0, l.Z)("https://dis.gd/creators-waitlist")

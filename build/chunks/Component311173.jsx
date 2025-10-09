@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk256569 = require("./256569.jsx"),
@@ -26,7 +26,7 @@ function h(e) {
   } = e;
   return t ? (0, r.jsx)("div", {
     className: p.subtext,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(s.Text, {
       className: p.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
@@ -34,7 +34,7 @@ function h(e) {
         helpArticle: f
       })
     })
-  }) : (0, r.jsx)(a.Text, {
+  }) : (0, r.jsx)(s.Text, {
     className: p.subtext,
     variant: "text-xs/medium",
     color: "text-muted",
@@ -46,15 +46,15 @@ function x(e) {
   var t, n;
   let {
     rule: l,
-    onChangeText: a,
+    onChangeText: s,
     className: o
   } = e, {
     patterns: g,
     valueError: x,
     errors: b,
     validatePatternsChanged: j,
-    validateEditingValueChanged: _
-  } = (0, d.Z)(l, a), [v] = i.useState(() => ({
+    validateEditingValueChanged: v
+  } = (0, d.Z)(l, s), [_] = i.useState(() => ({
     tags: g,
     value: "",
     selections: [],
@@ -65,24 +65,24 @@ function x(e) {
       message: r,
       description: i,
       erroringCharacterLength: l = n.length,
-      erroringCharacterOffset: s = 0
+      erroringCharacterOffset: a = 0
     } = t;
     return null == g.find(e => e === n) || (e[n] = {
       value: n,
       message: null != i ? i : r,
       erroringCharacterLength: l,
-      erroringCharacterOffset: s
+      erroringCharacterOffset: a
     }), e
   }, {}), [b, g]), O = i.useCallback(e => {
     j(e, g)
   }, [j, g]), y = i.useCallback(e => {
-    _(e)
-  }, [_]);
+    v(e)
+  }, [v]);
   return (0, r.jsxs)("div", {
-    className: s()(p.keywordsContainer, o),
+    className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-      initialValue: v,
+      initialValue: _,
       onChangeTags: O,
       onChangeNewTagValue: y,
       tagErrors: C,

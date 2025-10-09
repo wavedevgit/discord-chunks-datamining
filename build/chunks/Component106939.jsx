@@ -35,14 +35,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk166387 = require("./166387.js");
-let L = {
+let x = {
     [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
     [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
     [Chunk292352.dG.SETTINGS]: Chunk521450.Z,
     [Chunk292352.dG.CONTENT_AND_SOCIAL]: Chunk615160.Z,
     [Chunk292352.dG.DATA_AND_PRIVACY]: Chunk273879.Z
   },
-  x = {
+  L = {
     [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
     [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
     [Chunk292352.dG.CONTENT_AND_SOCIAL]: Chunk615160.Z,
@@ -58,7 +58,7 @@ function M() {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     section: t,
     handleItemSelect: n
@@ -90,7 +90,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     theme: t,
     section: n,
@@ -150,13 +150,13 @@ function U() {
       i(e)
     };
   if (Chunk120356) return null;
-  let s = L[require];
+  let s = x[require];
   return (0, Chunk951288.jsxs)("main", {
     className: Chunk166387.container,
     "aria-label": Chunk388032.intl.string(Chunk345909.default.RZqaJi),
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
       location: Chunk388032.intl.string(Chunk345909.default.RZqaJi)
-    }), (0, Chunk951288.jsx)(j, {
+    }), (0, Chunk951288.jsx)(k, {
       section: require,
       handleItemSelect: o
     }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
@@ -193,7 +193,7 @@ function G() {
   };
   if (Chunk273879) return null;
   let S = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
-    A = x[Chunk731934];
+    A = L[Chunk731934];
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
@@ -201,7 +201,7 @@ function G() {
       "aria-label": Chunk388032.intl.string(Chunk345909.default.RZqaJi),
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
         location: Chunk388032.intl.string(Chunk345909.default.RZqaJi)
-      }), (0, Chunk951288.jsx)(k, {
+      }), (0, Chunk951288.jsx)(j, {
         theme: Chunk120356,
         section: Chunk731934,
         handleItemSelect: Chunk830746

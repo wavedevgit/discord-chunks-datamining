@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk37742 = require("./37742.js"),
   Chunk519279 = require("./519279.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ function Z(e) {
   let {
     displayType: t
   } = e, n = (0, h.PO)("family_center_activity_card"), a = i.useCallback(() => {
-    (0, u.showToast)((0, u.createToast)(x.intl.string(L.default.Wu8BKy), u.ToastType.FAILURE))
+    (0, u.showToast)((0, u.createToast)(L.intl.string(x.default.Wu8BKy), u.ToastType.FAILURE))
   }, []), s = (0, O.Z)(), c = (0, E.ws)(t), d = (0, E.C7)(t), m = (0, E.A)(t), {
     loadMore: b,
     isMoreLoading: y
@@ -139,18 +139,18 @@ function Z(e) {
       }) : null]
     }), [R, v, s]);
   if (0 === c.length) return null;
-  let j = c.slice(0, I);
+  let k = c.slice(0, I);
   return (0, r.jsxs)("div", {
     className: M.actionSection,
     children: [D(), (0, r.jsx)("div", {
       className: M.actions,
       style: {
-        maxHeight: j.length * G
+        maxHeight: k.length * G
       },
-      children: j.map((e, t) => P({
+      children: k.map((e, t) => P({
         row: t
       }))
-    }), j.length < d ? (0, r.jsx)(u.P3F, {
+    }), k.length < d ? (0, r.jsx)(u.P3F, {
       className: o()(M.loadMoreBar, {
         [M.disabled]: y
       }),
@@ -163,8 +163,8 @@ function Z(e) {
       }) : (0, r.jsx)(u.Text, {
         className: M.loadMore,
         variant: "text-sm/bold",
-        children: x.intl.format(L.default["7dMmJS"], {
-          pageSize: Math.max(1, Math.min(d - j.length, w.iB))
+        children: L.intl.format(x.default["7dMmJS"], {
+          pageSize: Math.max(1, Math.min(d - k.length, w.iB))
         })
       })
     }) : null]

@@ -54,16 +54,16 @@ let C = "recentMentionFilterSettings",
   P = {},
   w = false,
   D = true,
-  L = Chunk433517.K.get(C, {
+  x = Chunk433517.K.get(C, {
     guildFilter: Chunk981631.NgX.ALL_SERVERS,
     everyoneFilter: true,
     roleFilter: true
   }),
-  x = false,
+  L = false,
   M = 0,
-  j = false;
+  k = false;
 
-function k(e) {
+function j(e) {
   R = {}, e.forEach(e => {
     null == R[e.getChannelId()] && (R[e.getChannelId()] = 0), R[e.getChannelId()]++
   })
@@ -85,7 +85,7 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  w = true, null == t && L.guildFilter === T.NgX.THIS_SERVER && X({
+  w = true, null == t && x.guildFilter === T.NgX.THIS_SERVER && X({
     guildFilter: T.NgX.ALL_SERVERS
   })
 }
@@ -129,7 +129,7 @@ function F(e) {
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
     P[e.id] = true
-  }), w = false, D = t, M = (0, l.zO)(), x = true
+  }), w = false, D = t, M = (0, l.zO)(), L = true
 }
 
 function V() {
@@ -141,23 +141,23 @@ function H(e) {
   if ((0, _.Z)(e) && !T.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
   let n = g.Z.getChannel(t);
-  if (null == n || n.type === T.d4z.DM || L.guildFilter === T.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
+  if (null == n || n.type === T.d4z.DM || x.guildFilter === T.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
   let r = m.default.getId();
   if (y.Z.isBlockedOrIgnoredForMessage(e) || (0, p.Z)(e, r)) return null;
   e = B(e);
-  let i = !L.everyoneFilter,
-    a = !L.roleFilter;
+  let i = !x.everyoneFilter,
+    a = !x.roleFilter;
   return (0, f.ZP)({
     message: e,
     userId: r,
     suppressEveryone: i,
     suppressRoles: a
-  }) ? (j && b.ZP.ackMessageId(n.id) !== e.id && (0, f.ZP)({
+  }) ? (k && b.ZP.ackMessageId(n.id) !== e.id && (0, f.ZP)({
     message: e,
     userId: r,
     suppressEveryone: v.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
     suppressRoles: v.ZP.isSuppressRolesEnabled(n.getGuildId())
-  }) && (j = false), e) : null
+  }) && (k = false), e) : null
 }
 
 function Y(e) {
@@ -223,25 +223,25 @@ function q(e) {
 }
 
 function X(e) {
-  let t = A({}, L);
-  L = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), L), s.K.set(C, L);
-  let n = (e, n) => t[e] !== L[e] && L[e] === n,
+  let t = A({}, x);
+  x = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), x), s.K.set(C, x);
+  let n = (e, n) => t[e] !== x[e] && x[e] === n,
     r = n("guildFilter", T.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
   P = {};
   let i = [];
   r && N.forEach(e => {
     let t = H(e);
     null != t && (i.push(t), P[t.id] = true)
-  }), k(N = i), 0 === N.length && (x = false)
+  }), j(N = i), 0 === N.length && (L = false)
 }
 
 function Q() {
-  if (L.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
-  x = false
+  if (x.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
+  L = false
 }
 
 function J() {
-  N = [], P = {}, x = false, j = false, R = {}
+  N = [], P = {}, L = false, k = false, R = {}
 }
 
 function $(e) {
@@ -287,23 +287,23 @@ function er(e) {
 }
 
 function ei(e) {
-  j = true
+  k = true
 }
 class ea extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk375954.Z, Chunk306680.ZP, Chunk9156.ZP)
   }
   get hasLoadedEver() {
-    return x
+    return L
   }
   get lastLoaded() {
     return M
   }
   getMentions() {
-    return x || N.length > 0 ? N : null
+    return L || N.length > 0 ? N : null
   }
   getSettingsFilteredMentions() {
-    return x || N.length > 0 ? N.filter(Z) : null
+    return L || N.length > 0 ? N.filter(Z) : null
   }
   hasMention(e) {
     return P[e]
@@ -315,16 +315,16 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return D
   }
   get guildFilter() {
-    return L.guildFilter
+    return x.guildFilter
   }
   get everyoneFilter() {
-    return L.everyoneFilter
+    return x.everyoneFilter
   }
   get roleFilter() {
-    return L.roleFilter
+    return x.roleFilter
   }
   get mentionsAreStale() {
-    return j
+    return k
   }
   get mentionCountByChannel() {
     return R

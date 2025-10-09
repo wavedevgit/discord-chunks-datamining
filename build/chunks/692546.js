@@ -39,7 +39,7 @@ function _(e) {
 }
 let O = new Map;
 
-function v(e, t) {
+function b(e, t) {
   if (null == t) O.delete(e), 0 === O.size && (window.removeEventListener("mousemove", _), y = false);
   else {
     let n = O.get(e);
@@ -73,19 +73,19 @@ function v(e, t) {
           } = e;
           return t
         })
-      }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
+      }), n = e, v || (n.setClickZoneCallback((e, t, n) => {
         let i = O.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
-      }), b = true)
+      }), v = true)
     }
 }
-let b = false;
+let v = false;
 class E extends(i = Chunk647438.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), v(this.zone, null)
+    this.interval.stop(), b(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -113,7 +113,7 @@ class E extends(i = Chunk647438.PureComponent) {
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        v(this.zone, {
+        b(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

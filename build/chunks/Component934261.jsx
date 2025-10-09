@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 934261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => A
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -52,7 +52,7 @@ let S = e => {
       pendingProfileEffectRecord: n,
       product: u,
       purchase: d
-    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), j = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, v.TD)(Date.now(), d.expiresAt) : null, S = (0, a.ag)(d), w = (0, a.kd)(m), A = (0, f.M)(!y || h), N = I(j, y, h, A);
+    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), j = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, v.TD)(Date.now(), d.expiresAt) : null, S = (0, a.ag)(d), A = (0, a.kd)(m), w = (0, f.M)(!y || h), N = I(j, y, h, w);
     return null != n ? (0, r.jsx)("div", {
       className: t ? E.effectDescriptionNoGradient : E.effectDescriptionBorderWithGradient,
       children: (0, r.jsxs)("div", {
@@ -61,7 +61,7 @@ let S = e => {
           color: "header-primary",
           variant: "text-sm/semibold",
           className: E.effectName,
-          children: (0, i.isEmpty)(S) ? w : S
+          children: (0, i.isEmpty)(S) ? A : S
         }), null != d ? null : (0, r.jsx)(o.Text, {
           color: "text-default",
           variant: "text-sm/normal",
@@ -104,7 +104,7 @@ let S = e => {
     }) : null
   },
   I = (e, t, n, r) => e ? _.intl.string(_.t["1UPza2"]) : t && n ? _.intl.string(_.t.hmyYKy) : t && !n ? r ? _.intl.string(_.t.meldu7) : _.intl.string(_.t.JtAKws) : _.intl.string(_.t.fEGjVV),
-  w = e => {
+  A = e => {
     var t, n;
     let {
       user: i,
@@ -119,8 +119,8 @@ let S = e => {
       pendingPronouns: v,
       pendingBio: _,
       pendingBanner: I,
-      pendingAvatar: w,
-      pendingAvatarDecoration: A,
+      pendingAvatar: A,
+      pendingAvatarDecoration: w,
       pendingThemeColors: N,
       pendingAccentColor: Z
     } = (0, l.cj)([u.Z, j.Z], () => C({
@@ -138,9 +138,9 @@ let S = e => {
       useLargeBanner: true,
       pendingAvatar: (0, m.SD)({
         userId: i.id,
-        image: w
+        image: A
       }),
-      pendingAvatarDecoration: A,
+      pendingAvatarDecoration: w,
       pendingThemeColors: N,
       pendingAccentColor: Z,
       pendingProfileEffect: null != o ? o : null,

@@ -24,7 +24,7 @@ function _(e) {
     requirementsUpdated: E,
     noSkip: b = false
   } = e, [y, O] = i.useState(""), [v, I] = i.useState(""), [T, S] = i.useState(""), [A, C] = i.useState(null), [N, R] = i.useState(null), P = (0, a.e7)([l.Z], () => l.Z.getErrors()), w = (0, a.e7)([l.Z], () => l.Z.getFormState()), D = i.useRef(null);
-  async function L(e) {
+  async function x(e) {
     e.preventDefault(), (0, s.b9)();
     let t = false;
     if ("" === v ? (C(d.intl.string(d.t["/7/oPT"])), t = true) : C(null), v !== T ? (R(d.intl.string(d.t.IEKYZ2)), t = true) : R(null), t) return;
@@ -64,7 +64,7 @@ function _(e) {
         className: f.modalCloseButton
       })]
     }), (0, r.jsxs)("form", {
-      onSubmit: L,
+      onSubmit: x,
       children: [(0, r.jsx)(o.hzk, {
         className: f.content,
         children: (0, r.jsxs)(o.Kqy, {

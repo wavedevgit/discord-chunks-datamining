@@ -25,11 +25,11 @@ function u(e) {
     width: i = 16,
     height: l = 16
   } = e;
-  return (0, r.jsx)(s.u, {
+  return (0, r.jsx)(a.u, {
     text: n,
     children: (0, r.jsx)("div", {
       className: t,
-      children: (0, r.jsx)(a.mBM, {
+      children: (0, r.jsx)(s.mBM, {
         size: "custom",
         color: "currentColor",
         width: i,

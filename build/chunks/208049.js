@@ -2,18 +2,18 @@
 /** chunk id: 208049, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $d: () => T,
-  AA: () => S,
-  Db: () => L,
-  Dx: () => I,
-  R: () => w,
-  TB: () => A,
-  XE: () => R,
-  hs: () => C,
-  w: () => v,
-  xR: () => P,
-  xU: () => N,
-  xz: () => D
+  $d: () => A,
+  AA: () => C,
+  Db: () => M,
+  Dx: () => S,
+  R: () => x,
+  TB: () => N,
+  XE: () => w,
+  hs: () => R,
+  w: () => T,
+  xR: () => D,
+  xU: () => P,
+  xz: () => L
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -22,6 +22,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk668781 = require("./668781.js"),
   Chunk479531 = require("./479531.js"),
   Chunk675478 = require("./675478.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk900849 = require("./900849.js"),
   Chunk763296 = require("./763296.js"),
   Chunk697426 = require("./697426.js"),
@@ -30,47 +31,61 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
-let E = async () => {
-  try {
-    let e = (await Chunk544891.tn.get({
-      url: Chunk981631.ANM.SOUNDBOARD_DEFAULT_SOUNDS,
-      rejectWithError: false
-    })).body.map(e => (0, f.o3)(e, p.X8));
+let b = false,
+  y = async () => {
+    try {
+      let e = (await Chunk544891.tn.get({
+        url: Chunk981631.ANM.SOUNDBOARD_DEFAULT_SOUNDS,
+        rejectWithError: false
+      })).body.map(e => (0, _.o3)(e, h.X8));
+      Chunk570140.Z.dispatch({
+        type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS",
+        soundboardSounds: module
+      })
+    } catch (e) {
+      throw Chunk570140.Z.dispatch({
+        type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"
+      }), new Chunk479531.Z(module)
+    }
+  }, O = e => new Promise(t => {
+    let n = () => {
+      o.Z.unsubscribe(e, n), setTimeout(t, 0)
+    };
+    o.Z.subscribe(e, n)
+  }), v = () => {
+    if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
     Chunk570140.Z.dispatch({
-      type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS",
-      soundboardSounds: module
-    })
-  } catch (e) {
-    throw Chunk570140.Z.dispatch({
-      type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"
-    }), new Chunk479531.Z(module)
-  }
-}, b = e => new Promise(t => {
-  let n = () => {
-    o.Z.unsubscribe(e, n), setTimeout(t, 0)
+      type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
+    });
+    let e = O("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
+    return y(), module
+  }, I = () => {
+    let e = (0, Chunk174470.D)();
+    if (0 === module.length) return Promise.resolve();
+    let t = O("SOUNDBOARD_SOUNDS_RECEIVED");
+    return Chunk570140.Z.dispatch({
+      type: "GUILD_SOUNDBOARD_FETCH"
+    }), Chunk570140.Z.dispatch({
+      type: "REQUEST_SOUNDBOARD_SOUNDS",
+      guildIds: module
+    }), exports
+  }, T = async () => {
+    if (__OVERLAY__) return Chunk570140.Z.dispatch({
+      type: "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST"
+    }), Promise.all([]);
+    let e = performance.now(),
+      t = !b;
+    b = true;
+    let n = await Promise.all([v(), I()]);
+    if (exports) {
+      let t = performance.now() - module;
+      Chunk626135.default.track(Chunk981631.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {
+        elapsed_ms: exports
+      })
+    }
+    return require
   };
-  o.Z.subscribe(e, n)
-}), y = () => {
-  if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
-  Chunk570140.Z.dispatch({
-    type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
-  });
-  let e = b("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
-  return E(), module
-}, O = () => {
-  let e = (0, Chunk174470.D)();
-  if (0 === module.length) return Promise.resolve();
-  let t = b("SOUNDBOARD_SOUNDS_RECEIVED");
-  return Chunk570140.Z.dispatch({
-    type: "GUILD_SOUNDBOARD_FETCH"
-  }), Chunk570140.Z.dispatch({
-    type: "REQUEST_SOUNDBOARD_SOUNDS",
-    guildIds: module
-  }), exports
-}, v = () => __OVERLAY__ ? (Chunk570140.Z.dispatch({
-  type: "OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST"
-}), Promise.all([])) : Promise.all([y(), O()]);
-async function I(e) {
+async function S(e) {
   let {
     guildId: t,
     name: n,
@@ -79,7 +94,7 @@ async function I(e) {
     emojiId: o,
     emojiName: s
   } = e, l = await a.tn.post({
-    url: h.ANM.GUILD_SOUNDBOARD_SOUNDS(t),
+    url: m.ANM.GUILD_SOUNDBOARD_SOUNDS(t),
     body: {
       name: n,
       sound: r,
@@ -89,9 +104,9 @@ async function I(e) {
     },
     rejectWithError: false
   });
-  return (0, f.o3)(l.body, t)
+  return (0, _.o3)(l.body, t)
 }
-async function T(e) {
+async function A(e) {
   let {
     guildId: t,
     soundId: n,
@@ -100,7 +115,7 @@ async function T(e) {
     emojiId: o,
     emojiName: s
   } = e, l = await a.tn.patch({
-    url: h.ANM.GUILD_SOUNDBOARD_SOUND(t, n),
+    url: m.ANM.GUILD_SOUNDBOARD_SOUND(t, n),
     body: {
       name: r,
       volume: i,
@@ -109,43 +124,43 @@ async function T(e) {
     },
     rejectWithError: false
   });
-  return (0, f.o3)(l.body, t)
+  return (0, _.o3)(l.body, t)
 }
-async function S(e, t) {
+async function C(e, t) {
   await a.tn.del({
-    url: h.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
+    url: m.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: true,
     rejectWithError: false
   })
 }
 
-function A(e) {
-  c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= m.oX ? (s.Z.show({
-    title: g.intl.string(g.t["+XYXtb"]),
-    body: g.intl.formatToPlainString(g.t.JaIyFh, {
-      count: m.oX
+function N(e) {
+  c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= g.oX ? (s.Z.show({
+    title: E.intl.string(E.t["+XYXtb"]),
+    body: E.intl.formatToPlainString(E.t.JaIyFh, {
+      count: g.oX
     })
-  }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), m.fy.INFREQUENT_USER_ACTION)
+  }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), g.fy.INFREQUENT_USER_ACTION)
 }
 
-function C(e) {
+function R(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
-  }, m.fy.INFREQUENT_USER_ACTION)
+  }, g.fy.INFREQUENT_USER_ACTION)
 }
-async function N(e, t) {
+async function P(e, t) {
   try {
     let n = await a.tn.get({
-      url: h.ANM.SOUNDBOARD_SOUND_GUILD_DATA(e, t),
+      url: m.ANM.SOUNDBOARD_SOUND_GUILD_DATA(e, t),
       rejectWithError: false
     });
-    return null != n.body ? (0, u.PP)(n.body) : null
+    return null != n.body ? (0, d.PP)(n.body) : null
   } catch (e) {
     throw new l.Z(e)
   }
 }
 
-function R(e, t, n) {
+function w(e, t, n) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY",
     sound: t,
@@ -154,7 +169,7 @@ function R(e, t, n) {
   })
 }
 
-function P(e, t) {
+function D(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_START",
     soundId: e,
@@ -162,7 +177,7 @@ function P(e, t) {
   })
 }
 
-function w(e, t) {
+function x(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,
@@ -170,7 +185,7 @@ function w(e, t) {
   })
 }
 
-function D(e, t) {
+function L(e, t) {
   o.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
     volume: e,
@@ -178,7 +193,7 @@ function D(e, t) {
   })
 }
 
-function L(e) {
+function M(e) {
   o.Z.dispatch({
     type: "SOUNDBOARD_MUTE_JOIN_SOUND",
     channelId: e

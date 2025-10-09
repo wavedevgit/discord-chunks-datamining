@@ -18,11 +18,11 @@ async function c(e) {
 }
 
 function d(e) {
-  let [n, t] = a.useState(null), [l, i] = a.useState(null);
+  let [n, t] = a.useState(null), [l, r] = a.useState(null);
   return a.useEffect(() => {
     if (null == e) return;
     let n = (0, o.hp)(e);
-    n !== l && (i(n), t(null), c(e).then(t))
+    n !== l && (r(n), t(null), c(e).then(t))
   }, [l, e]), n
 }
 let f = function(e) {
@@ -45,13 +45,13 @@ let f = function(e) {
 }({}, Chunk943351.nl);
 
 function m(e, n, t) {
-  let [i, u] = a.useState(null), [c, d] = a.useState(null), [m, g] = a.useState(1), {
+  let [r, u] = a.useState(null), [c, d] = a.useState(null), [m, g] = a.useState(1), {
     setMaxVolume: h
-  } = (0, r.p)(), p = a.useCallback((e, n) => {
+  } = (0, i.p)(), p = a.useCallback((e, n) => {
     var a;
     d(null), (a = n.offsetWidth, new Promise(n => {
-      let i = (0, l.Z)(),
-        r = e => {
+      let r = (0, l.Z)(),
+        i = e => {
           let {
             data: {
               waveform: t,
@@ -59,10 +59,10 @@ function m(e, n, t) {
               normalizedVolumeMultipler: l
             }
           } = e;
-          i === a && (n(t), g(l)), null == s || s.removeEventListener("message", r)
+          r === a && (n(t), g(l)), null == s || s.removeEventListener("message", i)
         };
-      null == s || s.addEventListener("message", r), null == s || s.postMessage({
-        id: i,
+      null == s || s.addEventListener("message", i), null == s || s.postMessage({
+        id: r,
         options: t,
         config: f,
         width: a,
@@ -73,8 +73,8 @@ function m(e, n, t) {
   return a.useEffect(() => {
     if (null == e || null == n) return;
     let a = (0, o.V3)(e, t);
-    i !== a && (u(a), p(e, n))
-  }, [e, p, n, t, i]), a.useEffect(() => {
+    r !== a && (u(a), p(e, n))
+  }, [e, p, n, t, r]), a.useEffect(() => {
     h(m)
   }, [m, h]), c
 }

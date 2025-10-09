@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -113,7 +113,7 @@ function B(e) {
       let {
         isShown: o
       } = i;
-      return (0, r.jsx)(f.Z, j({
+      return (0, r.jsx)(f.Z, k({
         ref: c,
         selected: o,
         colorString: t.colorString,
@@ -130,7 +130,7 @@ function B(e) {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("98783"), n.e("6915"), n.e("8982"), n.e("7717"), n.e("26624")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, U(j({}, t), {
+            return t => (0, r.jsx)(e, U(k({}, t), {
               user: _,
               guildId: a,
               channel: p,
@@ -188,14 +188,14 @@ function Z(e) {
   });
   return (0, r.jsx)(c.d.Provider, {
     value: true,
-    children: (0, r.jsx)("div", U(j({
-      className: L.rolePopout,
+    children: (0, r.jsx)("div", U(k({
+      className: x.rolePopout,
       ref: d
     }, t), {
       children: (0, r.jsxs)(u.Ttm, {
-        className: L.roleScroller,
+        className: x.roleScroller,
         children: [(0, r.jsx)(g.Z, {
-          className: L.roleHeader,
+          className: x.roleHeader,
           "aria-label": D.intl.formatToPlainString(D.t.UaqbkZ, {
             title: m.name,
             count: y.length
@@ -205,7 +205,7 @@ function Z(e) {
             children: O
           })
         }), y, null == E || E <= y.length ? null : (0, r.jsx)(g.Z, {
-          className: L.roleHeader,
+          className: x.roleHeader,
           children: D.intl.formatToPlainString(D.t["9oMmZG"], {
             count: E - y.length
           })
@@ -225,16 +225,16 @@ function F(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(j({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
     ref: C,
-    className: L.roleMention,
+    className: x.roleMention,
     color: S ? g.color : null,
     roleColors: S ? A : null
   }, e), {
     children: [T && null != g.color && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(g.color),
       colors: A,
-      className: x.roleDot,
+      className: L.roleDot,
       background: false,
       tooltip: false
     }), c]

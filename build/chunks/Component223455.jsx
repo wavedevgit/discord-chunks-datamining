@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 223455, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => Z
+  default: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk702511 = require("./702511.js");
 let C = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
 
-function Z(e) {
+function x(e) {
   let {
     windowKey: t,
     channelId: n

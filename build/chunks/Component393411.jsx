@@ -38,7 +38,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk965406 = require("./965406.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,13 +54,13 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,8 +71,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,29 +94,29 @@ function Z(e) {
     discountAmount: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(L.banner, o),
+    className: a()(x.banner, o),
     children: [(0, r.jsx)("div", {
-      className: L.bannerBackgroundImage
+      className: x.bannerBackgroundImage
     }), (0, r.jsxs)("div", {
-      className: L.detailsContainer,
+      className: x.detailsContainer,
       children: [(0, r.jsx)("div", {
-        className: L.image
+        className: x.image
       }), (0, r.jsxs)("div", {
-        className: L.details,
+        className: x.details,
         children: [(0, r.jsxs)("div", {
-          className: L.headerLabel,
+          className: x.headerLabel,
           children: [t, s && null != l && (0, r.jsx)(C.Cy, {
             text: D.intl.formatToPlainString(D.t.iiLbvr, {
               percent: l
             }),
-            className: L.discountPill,
+            className: x.discountPill,
             colorOptions: C.VE.PREMIUM_TIER_2_WHITE_FILL,
             isPillOnBorder: false
           })]
         }), n]
       })]
     }), (0, r.jsx)("div", {
-      className: L.buttons,
+      className: x.buttons,
       children: i
     })]
   })
@@ -132,24 +132,24 @@ function F(e) {
     discountAmount: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(L.banner, o, L.repositioned),
+    className: a()(x.banner, o, x.repositioned),
     children: [(0, r.jsx)("div", {
-      className: L.bannerBackgroundImage
+      className: x.bannerBackgroundImage
     }), (0, r.jsx)("div", {
-      className: L.detailsContainer,
+      className: x.detailsContainer,
       children: (0, r.jsx)("div", {
-        className: L.details,
+        className: x.details,
         children: (0, r.jsxs)("div", {
-          className: L.headerLabel,
+          className: x.headerLabel,
           children: [(0, r.jsx)("div", {
-            className: L.image
+            className: x.image
           }), (0, r.jsxs)("div", {
-            className: L.headerColumnB,
+            className: x.headerColumnB,
             children: [t, s && null != l && (0, r.jsx)(C.Cy, {
               text: D.intl.formatToPlainString(D.t.iiLbvr, {
                 percent: l
               }),
-              className: L.discountPill,
+              className: x.discountPill,
               colorOptions: C.VE.PREMIUM_TIER_2_WHITE_FILL,
               isPillOnBorder: false
             }), n]
@@ -157,7 +157,7 @@ function F(e) {
         })
       })
     }), (0, r.jsx)("div", {
-      className: L.buttons,
+      className: x.buttons,
       children: i
     })]
   })
@@ -206,8 +206,8 @@ let Y = function(e) {
     renewalInvoicePreview: o,
     paymentSource: _,
     busy: C,
-    analyticsLocation: x
-  } = e, j = "subscription_header", {
+    analyticsLocation: L
+  } = e, k = "subscription_header", {
     analyticsLocations: H
   } = (0, d.ZP)(u.Z.SUBSCRIPTION_HEADER), {
     fractionalState: Y
@@ -216,7 +216,7 @@ let Y = function(e) {
   }), W = Y === P.a$.FP_SUB_PAUSED, {
     enabled: K
   } = (0, S.ZP)({
-    location: j
+    location: k
   });
   P.pj.has(i.planId) && w.JwP.ALL_PAUSEABLE.has(i.status) && !W || (K = false);
   let z = (0, A.Ng)(),
@@ -238,9 +238,9 @@ let Y = function(e) {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
         } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
-        return n => (0, r.jsx)(t, k(M({}, n), {
+        return n => (0, r.jsx)(t, j(M({}, n), {
           premiumSubscription: i,
-          analyticsLocation: x,
+          analyticsLocation: L,
           analyticsLocations: H,
           initialStep: e
         }))
@@ -256,7 +256,7 @@ let Y = function(e) {
         1 === t.length && (null == _ ? true : _.id) === i.paymentSourceId && (0, O.tD)(e.id, n, null == _ ? true : _.id) && (r = true), r ? c.O5(i, H) : (0, p.Z)({
           initialPlanId: i.premiumPlanIdFromItems,
           analyticsLocations: H,
-          analyticsLocation: x,
+          analyticsLocation: L,
           analyticsObject: G,
           subscription: i
         })
@@ -273,7 +273,7 @@ let Y = function(e) {
       i.status === w.O0b.PAUSED ? (0, p.Z)({
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: H,
-        analyticsLocation: x,
+        analyticsLocation: L,
         analyticsObject: G,
         subscription: i,
         skipConfirm: true
@@ -286,7 +286,7 @@ let Y = function(e) {
       en(R.R.WHAT_YOU_LOSE)
     },
     es = e => (s()(null != o, "Expected renewalInvoicePreview"), (0, r.jsx)("div", {
-      className: L.planInfo,
+      className: x.planInfo,
       children: J ? D.intl.format(D.t["/SfHws"], {
         weeks: 1
       }) : (0, y.qV)({
@@ -320,9 +320,9 @@ let Y = function(e) {
         let e = y.ZP.isSwitchingPlansDisabled(i),
           t = y.ZP.getSwitchingPlansDisabledMessage(i);
         return (0, r.jsxs)("div", {
-          className: L.toolsButtons,
+          className: x.toolsButtons,
           children: [K ? (0, r.jsx)("div", {
-            className: L.secondaryBannerTextButtonContainerWithPause,
+            className: x.secondaryBannerTextButtonContainerWithPause,
             children: (0, r.jsx)(l.Avr, {
               variant: "always-white",
               disabled: C,
@@ -331,7 +331,7 @@ let Y = function(e) {
               text: D.intl.string(D.t.eFlYVF)
             })
           }) : (0, r.jsx)("div", {
-            className: L.secondaryBannerTextButtonContainer,
+            className: x.secondaryBannerTextButtonContainer,
             children: (0, r.jsx)(l.Avr, {
               variant: "always-white",
               onClick: ee,
@@ -341,13 +341,13 @@ let Y = function(e) {
             })
           }), (0, r.jsx)(l.ua7, {
             text: t,
-            children: t => (0, r.jsx)(N.Z, k(M({}, t), {
-              className: a()(L.toolsButton, L.premiumSettingsPushButton),
+            children: t => (0, r.jsx)(N.Z, j(M({}, t), {
+              className: a()(x.toolsButton, x.premiumSettingsPushButton),
               disabled: e,
               onClick: () => {
                 (0, p.Z)({
                   analyticsLocations: H,
-                  analyticsLocation: x,
+                  analyticsLocation: L,
                   analyticsObject: G,
                   subscription: i
                 })
@@ -359,7 +359,7 @@ let Y = function(e) {
       }
       if (y.ZP.isBaseSubscriptionCanceled(i)) return (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: L.toolsButton,
+        className: x.toolsButton,
         children: (0, r.jsx)(l.zxk, {
           variant: "overlay-primary",
           size: "sm",
@@ -379,9 +379,9 @@ let Y = function(e) {
           });
         case w.O0b.PAUSE_PENDING:
           return (0, r.jsxs)("div", {
-            className: L.toolsButtons,
+            className: x.toolsButtons,
             children: [(0, r.jsx)("div", {
-              className: L.secondaryBannerTextButtonContainer,
+              className: x.secondaryBannerTextButtonContainer,
               children: (0, r.jsx)(l.Avr, {
                 variant: "always-white",
                 disabled: C,
@@ -391,7 +391,7 @@ let Y = function(e) {
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: L.toolsButton,
+              className: x.toolsButton,
               children: (0, r.jsx)(l.zxk, {
                 variant: "overlay-primary",
                 size: "sm",
@@ -407,9 +407,9 @@ let Y = function(e) {
             durations: n
           } = (0, v.AT)(i);
           return (0, r.jsxs)("div", {
-            className: L.toolsButtons,
+            className: x.toolsButtons,
             children: [(0, r.jsx)("div", {
-              className: L.secondaryBannerTextButtonContainer,
+              className: x.secondaryBannerTextButtonContainer,
               children: n.length > 0 ? (0, r.jsx)(l.Avr, {
                 variant: "always-white",
                 onClick: ea,
@@ -425,7 +425,7 @@ let Y = function(e) {
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: L.toolsButton,
+              className: x.toolsButton,
               children: (0, r.jsx)(l.zxk, {
                 variant: "overlay-primary",
                 size: "sm",
@@ -445,24 +445,24 @@ let Y = function(e) {
   let eu = y.ZP.getStatusFromInvoice(i, o),
     ed = y.ZP.getPremiumType(ec),
     ef = {
-      [L.tier0]: ed === P.PremiumTypes.TIER_0,
-      [L.tier1]: ed === P.PremiumTypes.TIER_1,
-      [L.tier2]: ed === P.PremiumTypes.TIER_2,
-      [L.canceled]: eu === w.O0b.CANCELED,
-      [L.pausePending]: eu === w.O0b.PAUSE_PENDING,
-      [L.paused]: eu === w.O0b.PAUSED && !W,
-      [L.failedPayment]: (0, y.zV)(eu)
+      [x.tier0]: ed === P.PremiumTypes.TIER_0,
+      [x.tier1]: ed === P.PremiumTypes.TIER_1,
+      [x.tier2]: ed === P.PremiumTypes.TIER_2,
+      [x.canceled]: eu === w.O0b.CANCELED,
+      [x.pausePending]: eu === w.O0b.PAUSE_PENDING,
+      [x.paused]: eu === w.O0b.PAUSED && !W,
+      [x.failedPayment]: (0, y.zV)(eu)
     },
     e_ = null;
   switch (ed) {
     case P.PremiumTypes.TIER_0:
       e_ = (0, r.jsxs)("div", {
-        className: L.wordMark,
+        className: x.wordMark,
         children: [(0, r.jsx)(E.Z, {
-          className: L.discordWordmark,
+          className: x.discordWordmark,
           "aria-label": D.intl.string(D.t["t9uG/v"])
         }), (0, r.jsx)("div", {
-          className: L.basicWordmark
+          className: x.basicWordmark
         })]
       });
       break;
@@ -471,7 +471,7 @@ let Y = function(e) {
       break;
     case P.PremiumTypes.TIER_2:
       e_ = (0, r.jsx)(g.Z, {
-        className: L.planName,
+        className: x.planName,
         "aria-label": D.intl.string(D.t.lpNrPj)
       })
   }

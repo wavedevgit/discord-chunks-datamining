@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,9 +32,9 @@ function p(e) {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
-      className: s()(m.rowIcon, m.rowIconChecked)
+      className: a()(m.rowIcon, m.rowIconChecked)
     }) : (0, r.jsx)("div", {
-      className: s()(m.rowIcon, m.rowIconEmpty)
+      className: a()(m.rowIcon, m.rowIconEmpty)
     })]
   })
 }
@@ -42,7 +42,7 @@ function p(e) {
 function f(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(false), s = t.flatMap(e => e.items.map(e => e.completed)), o = s.filter(e => e).length / s.length, f = 1 === o, h = (0, c.q_F)({
+  } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
     width: "".concat(100 * o, "%")
   }), x = [g.intl.format(g.t.wtQtXl, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
@@ -52,58 +52,63 @@ function f(e) {
     subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
   }), g.intl.format(g.t.zkXN6O, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
-  })], b = n ? null : (0, r.jsxs)(r.Fragment, {
+  })], b = n ? null : (0, r.jsxs)(c.C3N, {
     children: [!f && t.map((e, t) => {
       let {
         title: n,
         items: l
       } = e;
       return (0, r.jsxs)(i.Fragment, {
-        children: [t > 0 && (0, r.jsx)(c.izJ, {
-          className: m.divider
-        }), (0, r.jsx)(c.vwX, {
-          className: m.categoryTitle,
-          children: n
-        }), l.map((e, t) => (0, r.jsx)(p, {
-          children: e.description,
-          checked: e.completed
-        }, t))]
+        children: [t > 0 && (0, r.jsx)(c.izJ, {}), (0, r.jsx)(c.gNt, {
+          label: n,
+          children: (0, r.jsx)(c.Kqy, {
+            gap: 8,
+            children: l.map((e, t) => (0, r.jsx)(p, {
+              children: e.description,
+              checked: e.completed
+            }, t))
+          })
+        })]
       }, t)
-    }), (0, r.jsx)(c.izJ, {
-      className: m.divider
-    }), (0, r.jsx)(c.vwX, {
-      className: m.categoryTitle,
-      children: g.intl.string(g.t.FO0AIS)
-    }), x.map((e, t) => (0, r.jsx)("div", {
-      className: m.row,
-      children: (0, r.jsx)(c.Text, {
-        variant: "text-md/normal",
-        children: e
+    }), (0, r.jsx)(c.izJ, {}), (0, r.jsx)(c.gNt, {
+      label: g.intl.string(g.t.FO0AIS),
+      children: (0, r.jsx)(c.Kqy, {
+        gap: 8,
+        children: x.map((e, t) => (0, r.jsx)("div", {
+          className: m.row,
+          children: (0, r.jsx)(c.Text, {
+            variant: "text-md/normal",
+            children: e
+          })
+        }, t))
       })
-    }, t))]
+    })]
   });
   return (0, r.jsx)("div", {
     className: m.checklist,
-    children: (0, r.jsxs)("div", {
+    children: (0, r.jsx)("div", {
       className: m.container,
-      children: [(0, r.jsxs)(c.P3F, {
-        className: m.headerBar,
-        onClick: () => l(e => !e),
-        children: [(0, r.jsx)(c.X6q, {
-          variant: "heading-md/semibold",
-          className: m.headerText,
-          children: g.intl.string(g.t["2Xbd/P"])
-        }), (0, r.jsx)(d.Z, {
-          direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
-          className: m.headerCaret
-        })]
-      }), !f && (0, r.jsx)("div", {
-        className: m.progressBarOuter,
-        children: (0, r.jsx)(a.animated.div, {
-          className: m.progressBarInner,
-          style: h
-        })
-      }), b]
+      children: (0, r.jsxs)(c.Kqy, {
+        gap: 16,
+        children: [(0, r.jsxs)(c.P3F, {
+          className: m.headerBar,
+          onClick: () => l(e => !e),
+          children: [(0, r.jsx)(c.X6q, {
+            variant: "heading-md/semibold",
+            className: m.headerText,
+            children: g.intl.string(g.t["2Xbd/P"])
+          }), (0, r.jsx)(d.Z, {
+            direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
+            className: m.headerCaret
+          })]
+        }), !f && (0, r.jsx)("div", {
+          className: m.progressBarOuter,
+          children: (0, r.jsx)(s.animated.div, {
+            className: m.progressBarInner,
+            style: h
+          })
+        }), b]
+      })
     })
   })
 }

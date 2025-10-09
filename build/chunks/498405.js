@@ -145,32 +145,32 @@ function m(e) {
     T || S(true)
   }, [T]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && T && S(false)
-  }, [T]), L = r.useCallback(() => {
+  }, [T]), x = r.useCallback(() => {
     O({
       type: i.B.SET_FOCUS_PATH,
       path: []
     }), S(false)
-  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
+  }, []), L = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: false,
     onKeyDown: P,
     onFocus: w,
     onBlur: D,
-    onMouseLeave: L,
+    onMouseLeave: x,
     "aria-activedescendant": I.length > 0 ? (0, o.qR)(t, I.join(d)) : true
-  }), [t, P, w, D, L, I]), j = r.useCallback(e => {
+  }), [t, P, w, D, x, I]), k = r.useCallback(e => {
     let {
       path: n
     } = e;
     return {
       role: "menu",
       tabIndex: false,
-      "aria-activedescendant": x(n) ? (0, o.qR)(t, I.join(d)) : true,
+      "aria-activedescendant": L(n) ? (0, o.qR)(t, I.join(d)) : true,
       focusIndex: y.focusIndex,
       isUsingKeyboardNavigation: A
     }
-  }, [t, I, x, y.focusIndex, A]), k = r.useCallback(e => {
+  }, [t, I, L, y.focusIndex, A]), j = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = false,
@@ -178,7 +178,7 @@ function m(e) {
       role: a = "menuitem"
     } = e, s = n.join(d);
     return u(l({}, r ? {
-      "aria-expanded": x(n),
+      "aria-expanded": L(n),
       "aria-haspopup": true
     } : {}), {
       role: a,
@@ -187,13 +187,13 @@ function m(e) {
       onFocus: i ? N.get(s) : () => {},
       onMouseEnter: i ? R.get(s) : () => {}
     })
-  }, [t, x, N, R]);
+  }, [t, L, N, R]);
   return r.useMemo(() => ({
     dispatch: v,
     getContainerProps: M,
-    getSubmenuProps: j,
-    getItemProps: k,
-    isFocused: x,
+    getSubmenuProps: k,
+    getItemProps: j,
+    isFocused: L,
     isUsingKeyboardNavigation: A
-  }), [v, M, j, k, x, A])
+  }), [v, M, k, j, L, A])
 }

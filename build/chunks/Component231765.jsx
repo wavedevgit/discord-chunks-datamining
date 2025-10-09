@@ -90,7 +90,7 @@ let C = {
     title: Chunk388032.intl.string(Chunk388032.t.V66giY),
     description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
   }],
-  L = () => [{
+  x = () => [{
     location: Chunk524484.oZ.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.vUcvPD),
     description: Chunk388032.intl.string(Chunk388032.t.y00OrK)
@@ -104,7 +104,7 @@ let C = {
     description: Chunk388032.intl.string(Chunk388032.t["mqfw/P"])
   }];
 
-function x(e) {
+function L(e) {
   let {
     disabled: t,
     locations: n,
@@ -137,7 +137,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     settings: {
       enabled: t,
@@ -170,7 +170,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     settings: {
       enabled: t,
@@ -231,7 +231,7 @@ function k(e) {
         }, 0),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(L, {
       disabled: c,
       locations: D(),
       settingsLocations: o,
@@ -338,9 +338,9 @@ function G(e) {
         }, 1),
         onMarkerRender: e => e === R[R.length - 1] ? O.intl.string(O.t["4rbMWV"]) : "".concat(100 * e, "%")
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(L, {
       disabled: d,
-      locations: L(),
+      locations: x(),
       settingsLocations: a,
       onChange: e => s({
         screenshakeEnabledLocations: e
@@ -467,7 +467,7 @@ function V(e) {
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
       children: O.intl.string(O.t.AtCukJ)
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(Z, {
@@ -478,7 +478,7 @@ function V(e) {
     }), (0, r.jsx)(G, {
       settings: a,
       updateSettings: h
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(j, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(B, {

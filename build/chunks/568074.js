@@ -12,9 +12,9 @@ function i(e) {
   if (null == t) returnfalse;
   let i = Object.keys(n),
     l = t.every(e => i.includes(e)),
-    s = Object.entries(n).filter(e => {
+    a = Object.entries(n).filter(e => {
       let [n] = e;
       return null == t ? true : t.includes(n)
     }).flatMap(e => null == e[1] || Object.values(e[1]).every(e => null == e || "" === e));
-  return !l || s.includes(true)
+  return !l || a.includes(true)
 }

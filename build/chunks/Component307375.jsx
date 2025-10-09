@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk496675 = require("./496675.js"),
@@ -22,7 +22,7 @@ function f(e) {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, f = l.features.has(g.oNc.COMMUNITY), h = (0, a.e7)([c.Z], () => c.Z.can(g.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+  } = e, f = l.features.has(g.oNc.COMMUNITY), h = (0, s.e7)([c.Z], () => c.Z.can(g.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
     let e = t === u.A.DISCOVERABLE && !h,
       n = f && (t === u.A.DISCOVERABLE || h);
     return [{
@@ -83,7 +83,7 @@ function f(e) {
             className: p.tooltipContainer,
             tooltipClassName: p.tooltip,
             children: (0, r.jsxs)("div", {
-              className: s()(p.joinOptionContent, {
+              className: a()(p.joinOptionContent, {
                 [p.active]: n,
                 [p.uninteractive]: !e.enabled
               }),

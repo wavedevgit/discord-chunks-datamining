@@ -110,11 +110,11 @@ let v = (0, Chunk647438.createContext)(null),
       validationBehavior: m
     }, (0, g.l)(e), T), {
       isFocused: D,
-      isFocusVisible: L,
-      focusProps: x
+      isFocusVisible: x,
+      focusProps: L
     } = (0, _.F)(), M = N || R, {
-      hoverProps: j,
-      isHovered: k
+      hoverProps: k,
+      isHovered: j
     } = (0, p.X)({
       ...e,
       isDisabled: M
@@ -125,9 +125,9 @@ let v = (0, Chunk647438.createContext)(null),
         isSelected: C,
         isIndeterminate: e.isIndeterminate || false,
         isPressed: P,
-        isHovered: k,
+        isHovered: j,
         isFocused: D,
-        isFocusVisible: L,
+        isFocusVisible: x,
         isDisabled: N,
         isReadOnly: R,
         isInvalid: w,
@@ -137,15 +137,15 @@ let v = (0, Chunk647438.createContext)(null),
       global: true
     });
     return delete G.id, delete G.onClick, O.createElement("label", {
-      ...(0, u.d)(G, S, j, U),
+      ...(0, u.d)(G, S, k, U),
       ref: t,
       slot: e.slot || true,
       "data-selected": C || true,
       "data-indeterminate": e.isIndeterminate || true,
       "data-pressed": P || true,
-      "data-hovered": k || true,
+      "data-hovered": j || true,
       "data-focused": D || true,
-      "data-focus-visible": L || true,
+      "data-focus-visible": x || true,
       "data-disabled": N || true,
       "data-readonly": R || true,
       "data-invalid": w || true,
@@ -153,7 +153,7 @@ let v = (0, Chunk647438.createContext)(null),
     }, O.createElement(h.T, {
       elementType: "span"
     }, O.createElement("input", {
-      ...(0, u.d)(A, x),
+      ...(0, u.d)(A, L),
       ref: T
     })), U.children)
   })

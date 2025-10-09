@@ -6,7 +6,7 @@ require.d(exports, {
   UB: () => D,
   Uc: () => I,
   ZP: () => H,
-  kE: () => L
+  kE: () => x
 });
 var i, Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -65,13 +65,13 @@ function D() {
   }), [])
 }
 
-function L() {
+function x() {
   return (0, Chunk647438.useEffect)(() => (A++, w(), () => {
     --A, w()
   }), [])
 }
 
-function x() {
+function L() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
   return T = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
 }
@@ -80,11 +80,11 @@ function M() {
   return null != r ? (0, Chunk783443.Z)(r) : null
 }
 
-function j() {
+function k() {
   return null != r ? (0, Chunk692417.Z)(r) : null
 }
 
-function k() {
+function j() {
   var e;
   let {
     soundshareEnabled: t
@@ -98,7 +98,7 @@ function k() {
 }
 class U extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], x), x()
+    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], L), L()
   }
   supported() {
     return R()
@@ -119,10 +119,10 @@ class U extends(i = Chunk442837.ZP.Store) {
     return M()
   }
   getLastPickedContentPID() {
-    return j()
+    return k()
   }
   getStreamStartOptions() {
-    return k()
+    return j()
   }
 }
 
@@ -135,7 +135,7 @@ function G(e) {
       lastPickerAction: 1
     }, r = n, 0 === S && !t) {
     let e = u.Z.getChannel(p.Z.getVoiceChannelId());
-    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
+    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, j())
   }
 }
 

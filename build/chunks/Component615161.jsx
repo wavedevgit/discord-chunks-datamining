@@ -1,8 +1,8 @@
 /** Chunk was on 46746 **/
 /** chunk id: 615161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E_: () => y,
-  Ti: () => C,
+  E_: () => C,
+  Ti: () => y,
   Yw: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -109,7 +109,7 @@ function b(e, t) {
         sourceType: t.sourceType,
         selectedSource: true
       };
-      return t.sourceType === l.vA.CAMERA && ((e.preset === h.tI.PRESET_DOCUMENTS || e.preset === h.tI.PRESET_AUTO) && (n.preset = h.tI.PRESET_VIDEO), e.resolution === h.LY.RESOLUTION_SOURCE && (n.resolution = h.LY.RESOLUTION_720)), g({}, e, n);
+      return t.sourceType === l.vA.CAMERA && ((e.preset === m.tI.PRESET_DOCUMENTS || e.preset === m.tI.PRESET_AUTO) && (n.preset = m.tI.PRESET_VIDEO), e.resolution === m.LY.RESOLUTION_SOURCE && (n.resolution = m.LY.RESOLUTION_720)), g({}, e, n);
     case "set_native_source_type":
       return x(g({}, e), {
         nativeSourceType: t.sourceType
@@ -163,7 +163,7 @@ function S(e) {
   })
 }
 
-function C(e, t, n) {
+function y(e, t, n) {
   var r, l;
   let v = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "source_select",
     {
@@ -173,20 +173,20 @@ function C(e, t, n) {
       location: "useCreateGoLiveModalState"
     }),
     {
-      preset: C,
-      resolution: y,
+      preset: y,
+      resolution: C,
       fps: O,
       soundshareEnabled: w
     } = (0, s.cj)([d.Z], () => d.Z.getState());
-  j && (C = h.tI.PRESET_AUTO);
+  j && (y = m.tI.PRESET_AUTO);
   let Z = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
     I = null != (r = c.I0.useSetting()) && r,
     P = null != (l = c.eo.useSetting()) && l;
-  C in h.tI && (C !== h.tI.PRESET_AUTO || S) || (C = h.tI.PRESET_VIDEO), (0, m.Z)(h.tI.PRESET_CUSTOM, y, O, t, n) || (y = h.LY.RESOLUTION_720, O = h.ws.FPS_30);
+  y in m.tI && (y !== m.tI.PRESET_AUTO || S) || (y = m.tI.PRESET_VIDEO), (0, h.Z)(m.tI.PRESET_CUSTOM, C, O, t, n) || (C = m.LY.RESOLUTION_720, O = m.ws.FPS_30);
   let [N, T] = i.useReducer(b, x(g({}, _), {
     muteStreamAudio: !w,
-    preset: C,
-    resolution: y,
+    preset: y,
+    resolution: C,
     fps: O,
     hidePreview: I,
     notifyFriends: P,
@@ -213,6 +213,6 @@ function C(e, t, n) {
   }
 }
 
-function y() {
+function C() {
   return [Chunk647438.useContext(v), Chunk647438.useContext(j)]
 }

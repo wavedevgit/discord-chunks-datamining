@@ -62,8 +62,8 @@ function u(e, t, n) {
   let {
     name: w,
     form: D,
-    descriptionId: L,
-    errorMessageId: x,
+    descriptionId: x,
+    errorMessageId: L,
     validationBehavior: M
   } = r.H.get(t);
   return (0, o.y)(n, t.defaultSelectedValue, t.setSelectedValue), (0, c.Q)({
@@ -83,7 +83,7 @@ function u(e, t, n) {
       checked: O,
       value: u,
       onChange: v,
-      "aria-describedby": [e["aria-describedby"], t.isInvalid ? x : null, L].filter(Boolean).join(" ") || true
+      "aria-describedby": [e["aria-describedby"], t.isInvalid ? L : null, x].filter(Boolean).join(" ") || true
     }),
     isDisabled: y,
     isSelected: O,

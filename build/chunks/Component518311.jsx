@@ -175,7 +175,8 @@ let ef = e => {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/normal",
         children: er.intl.string(er.t.rIsSqK)
-      }), (0, r.jsx)(f.vwX, {
+      }), (0, r.jsx)(f.Text, {
+        variant: "text-md/normal",
         className: el.selectExistingFormHeader,
         children: er.intl.string(er.t.cjE7wM)
       }), (0, r.jsx)(f.Ttm, {
@@ -471,30 +472,24 @@ class eg extends(i = Chunk647438.PureComponent) {
       copied: i
     } = this.state;
     if (null == module || !module.isMultiUserDM() || this.isPartyFull()) return null;
-    let a = null != exports ? (0, Chunk366980.Z)(exports.code) : "",
-      s = Chunk120356.length > 0;
-    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        tag: "h5",
-        className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.t3O2BQ)
-      }), (0, Chunk951288.jsx)(Chunk481060.kO8, {
+    let l = null != exports ? (0, Chunk366980.Z)(exports.code) : "",
+      a = Chunk647438.length > 0;
+    return (0, Chunk951288.jsx)(Chunk481060.gNt, {
+      label: Chunk388032.intl.string(Chunk388032.t.t3O2BQ),
+      helperText: Chunk647438.length > 0 ? Chunk388032.intl.format(Chunk388032.t.ZVdJMz, {
+        numHours: "".concat(24)
+      }) : true,
+      children: (0, Chunk951288.jsx)(Chunk481060.kO8, {
         supportsCopy: Chunk572004.wS,
         placeholder: (0, Chunk366980.Z)(Chunk388032.intl.string(Chunk388032.t.lPVBqK)),
-        value: Chunk392711 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgY"]) : Chunk120356 : "",
+        value: Chunk120356 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgY"]) : Chunk647438 : "",
         buttonColor: Chunk755721.zx.Colors.BRAND,
-        text: Chunk392711 ? i ? Chunk388032.intl.string(Chunk388032.t.q30c5u) : Chunk388032.intl.string(Chunk388032.t.OpuAlJ) : Chunk388032.intl.string(Chunk388032.t.qzxqUV),
+        text: Chunk120356 ? i ? Chunk388032.intl.string(Chunk388032.t.q30c5u) : Chunk388032.intl.string(Chunk388032.t.OpuAlJ) : Chunk388032.intl.string(Chunk388032.t.qzxqUV),
         mode: i ? Chunk481060.uA3.SUCCESS : Chunk481060.uA3.DEFAULT,
         onCopy: () => {
-          Chunk392711 ? this.handleCopyInvite(Chunk120356) : this.createInvite()
+          Chunk120356 ? this.handleCopyInvite(Chunk647438) : this.createInvite()
         }
-      }), Chunk120356.length > 0 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "text-xs/normal",
-        className: o()(Chunk197571.marginTop8, Chunk918324.footerText),
-        children: Chunk388032.intl.format(Chunk388032.t.ZVdJMz, {
-          numHours: "".concat(24)
-        })
-      }) : null]
+      })
     })
   }
   renderFooter() {

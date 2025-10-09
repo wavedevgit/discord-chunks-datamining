@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, O.eD)(t), Z = (0, s.e7)([_.Z], () => _.Z.getGuild(t)), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != Z && (0, b.eM)(Z, R), {
+  } = (0, O.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != Z && (0, b.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);
@@ -60,11 +60,11 @@ function w(e) {
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == Z) return null;
   let M = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.vwX, {
-        tag: o.RB0.H1,
+      children: [(0, r.jsx)(o.X6q, {
+        variant: "heading-lg/semibold",
         children: T.intl.string(T.t.X6h2g4)
-      }), (0, r.jsx)(o.R94, {
-        type: o.R94.Types.DESCRIPTION,
+      }), (0, r.jsx)(o.Text, {
+        variant: "text-sm/normal",
         children: T.intl.format(T.t.xiYuDg, {
           monetizationPolicyLink: C.Z.getArticleURL(I.BhN.CREATOR_POLICY),
           serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
@@ -94,7 +94,7 @@ function w(e) {
         children: T.intl.string(T.t.YBrFe3)
       }) : null, n ? (0, r.jsx)("div", {
         className: P.previewButton,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(s.zxk, {
           text: T.intl.string(T.t.vM81yc),
           variant: "secondary",
           onClick: G,

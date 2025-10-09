@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk471613 = require("./471613.js"),
   Chunk29605 = require("./29605.jsx"),
@@ -51,17 +50,14 @@ function p(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, f = (0, i.e7)([s.Z], () => s.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), x = (0, d.Z)(t) - h.length, b = (0, c.mY)();
-  return (0, r.jsxs)(l.hjN, {
-    title: g.intl.string(g.t.LDT0Q0),
+  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), x = (0, d.Z)(t) - h.length, b = (0, c.mY)();
+  return (0, r.jsxs)(l.gNt, {
+    label: g.intl.string(g.t.LDT0Q0),
     disabled: b,
-    children: [(0, r.jsx)(l.R94, {
-      type: l.R94.Types.DESCRIPTION,
-      disabled: b,
-      children: g.intl.format(g.t.H9Jxp6, {
-        maxSlots: (0, d.Z)(t)
-      })
-    }), (0, r.jsx)(l.LZC, {
+    description: g.intl.format(g.t.H9Jxp6, {
+      maxSlots: (0, d.Z)(t)
+    }),
+    children: [(0, r.jsx)(l.LZC, {
       size: 16
     }), (0, r.jsx)(o.Z, {
       onChange: (e, i) => {
@@ -83,11 +79,11 @@ function f(e) {
       loading: f
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(a.L3, {
+    }), (0, r.jsx)(s.L3, {
       title: g.intl.string(g.t.lu1ZQ0),
       maxSlots: (0, d.Z)(t),
       emojiCount: h.length,
-      children: (0, r.jsx)(a.FT, {
+      children: (0, r.jsx)(s.FT, {
         guild: t,
         emojis: h,
         onEdit: (e, t) => {

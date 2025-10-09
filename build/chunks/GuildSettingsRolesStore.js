@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => q,
   g: () => I
 }), require("./388685.js"), require("./953529.js");
-var s, a, Chunk392711 = require("./392711.js"),
+var a, s, Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
   Chunk866442 = require("./866442.js"),
@@ -45,7 +45,7 @@ function E(e) {
   }
   return e
 }
-var I = ((a = {}).SOLID = "solid", a.GRADIENT = "gradient", a.HOLOGRAPHIC = "holographic", a);
+var I = ((s = {}).SOLID = "solid", s.GRADIENT = "gradient", s.HOLOGRAPHIC = "holographic", s);
 let S = new Set,
   T = Chunk981631.QZA.CLOSED,
   P = false,
@@ -106,11 +106,11 @@ function F(e, t) {
       }
     };
     if (null != t.colors) {
-      var l, s, a;
+      var l, a, s;
       i[n] = {
         primary_color: null != (l = t.colors.primary_color) ? l : O.p6O,
-        secondary_color: null != (s = t.colors.secondary_color) ? s : null,
-        tertiary_color: null != (a = t.colors.tertiary_color) ? a : null
+        secondary_color: null != (a = t.colors.secondary_color) ? a : null,
+        tertiary_color: null != (s = t.colors.tertiary_color) ? s : null
       }
     }
     G.set(t.id, {
@@ -123,7 +123,7 @@ let H = c().debounce(() => {
   let e = false;
   w && ((w = M().length > 0) || (e = true)), [...S].forEach(t => {
     var n;
-    c().isEqual(W(t), (n = t, R.find(e => {
+    c().isEqual(V(t), (n = t, R.find(e => {
       let {
         id: t
       } = e;
@@ -140,7 +140,7 @@ function z(e, t) {
   i[n] = r, Z = i, P = true, S.add(r.id), H()
 }
 
-function W(e) {
+function V(e) {
   return Z.find(t => {
     let {
       id: n
@@ -149,14 +149,14 @@ function W(e) {
   })
 }
 
-function V(e) {
+function W(e) {
   let {
     guildId: t
   } = e;
   if (null == (r = C.Z.getProps().guild) || t !== r.id || T === O.QZA.SUBMITTING) returnfalse;
   let n = [...b.Z.getSortedRoles(r.id)];
   S.forEach(e => {
-    let t = W(e),
+    let t = V(e),
       r = false;
     null == n.find((t, n) => {
       let {
@@ -173,7 +173,7 @@ function V(e) {
     G.set(t, e)
   }), w = false, Z = [...n]
 }
-class K extends(s = Chunk442837.ZP.Store) {
+class K extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk561654.Z, Chunk485386.Z)
   }
@@ -214,7 +214,7 @@ class K extends(s = Chunk442837.ZP.Store) {
     return this.hasChanges()
   }
   getRole(e) {
-    return W(e)
+    return V(e)
   }
   getPermissionSearchQuery() {
     return i
@@ -233,14 +233,14 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         roles: t
       } = e;
       if (null != Z && t.length !== Z.length) returnfalse;
-      Z = t.map(e => W(e)).filter(_.lm), w = true, H()
+      Z = t.map(e => V(e)).filter(v.lm), w = true, H()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
         id: t,
         flag: n,
         allow: r
-      } = e, i = W(t);
+      } = e, i = V(t);
       if (null == i) returnfalse;
       let {
         permissions: l
@@ -253,7 +253,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         permissions: n
-      } = e, r = W(t);
+      } = e, r = V(t);
       return null != r && z(r, {
         permissions: n
       })
@@ -261,16 +261,16 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_CLEAR_PERMISSIONS: function(e) {
       let {
         id: t
-      } = e, n = W(t);
+      } = e, n = V(t);
       return null != n && z(n, {
-        permissions: v.Hn
+        permissions: _.Hn
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_NAME: function(e) {
       let {
         id: t,
         name: n
-      } = e, r = W(t);
+      } = e, r = V(t);
       return null != r && z(r, {
         name: n
       })
@@ -279,7 +279,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         description: n
-      } = e, r = W(t);
+      } = e, r = V(t);
       return null != r && z(r, {
         description: n
       })
@@ -288,7 +288,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = W(t);
+      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = V(t);
       if (null == i) returnfalse;
       let l = G.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {
@@ -315,11 +315,11 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         colors: n,
         currentStyle: r
-      } = e, i = W(t);
+      } = e, i = V(t);
       if (null == i) returnfalse;
       let l = (0, h.DX)(n),
-        s = G.get(t);
-      return null != s && (s.styleColors[r] = n, s.currentStyle = r, G.set(t, E({}, s)), z(i, {
+        a = G.get(t);
+      return null != a && (a.styleColors[r] = n, a.currentStyle = r, G.set(t, E({}, a)), z(i, {
         color: n.primary_color,
         colors: n,
         colorString: l.primaryColor,
@@ -331,7 +331,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         hoist: n,
         mentionable: r
-      } = e, i = W(t);
+      } = e, i = V(t);
       return null != i && z(i, {
         hoist: n,
         mentionable: r
@@ -342,7 +342,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         icon: n,
         unicodeEmoji: r
-      } = e, i = W(t);
+      } = e, i = V(t);
       return null != i && z(i, {
         icon: n,
         unicodeEmoji: r
@@ -354,7 +354,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         searchQuery: n
       } = e;
       if (i = n, null != t) {
-        if (null != W(t.id)) return void z(t, t);
+        if (null != V(t.id)) return void z(t, t);
         Z = [...Z, t], H()
       }
     },
@@ -363,7 +363,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: n,
         currentStyle: r
-      } = e, i = W(n);
+      } = e, i = V(n);
       if (null == i) returnfalse;
       let l = G.get(n);
       if (null == l) returnfalse;
@@ -371,20 +371,20 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r,
         styleColors: l.styleColors
       });
-      let s = l.styleColors[r],
-        a = (0, h.DX)(s);
+      let a = l.styleColors[r],
+        s = (0, h.DX)(a);
       return z(i, {
-        color: null != (t = s.primary_color) ? t : true,
-        colors: s,
-        colorString: a.primaryColor,
-        colorStrings: a
+        color: null != (t = a.primary_color) ? t : true,
+        colors: a,
+        colorString: s.primaryColor,
+        colorStrings: s
       })
     },
     GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: function(e) {
       let {
         roleId: t,
         roleConnectionConfigurations: n
-      } = e, r = W(t);
+      } = e, r = V(t);
       if (null == r) returnfalse;
       let i = L.get(r.id);
       if (c().isEqual(i, n)) returnfalse;
@@ -394,17 +394,17 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         roleId: t,
         roleConnectionConfigurations: n
-      } = e, r = W(t);
+      } = e, r = V(t);
       if (null == r) returnfalse;
       D = true, A.add(r.id), k.set(r.id, n), H()
     },
     GUILD_SETTINGS_CLOSE: function() {
       r = null, R = Z = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
     },
-    GUILD_ROLE_CREATE: V,
-    GUILD_ROLE_UPDATE: V,
+    GUILD_ROLE_CREATE: W,
+    GUILD_ROLE_UPDATE: W,
     GUILD_ROLE_DELETE: function(e) {
-      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), V(e)
+      return A.has(e.roleId) && (A.delete(e.roleId), L.delete(e.roleId), k.delete(e.roleId), D = false), W(e)
     },
     GUILD_SETTINGS_ROLES_SUBMITTING: function() {
       T = Chunk981631.QZA.SUBMITTING

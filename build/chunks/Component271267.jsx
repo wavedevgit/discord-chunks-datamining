@@ -39,8 +39,8 @@ function p(e) {
   let {
     guild: t,
     eligibility: i,
-    eligibilityLoading: s,
-    eligibilityError: a,
+    eligibilityLoading: a,
+    eligibilityError: s,
     refreshEligibility: o
   } = e;
   return (0, r.jsx)(l.zxk, {
@@ -54,8 +54,8 @@ function p(e) {
           var l, c;
           return (0, r.jsx)(e, (l = g({}, n), c = c = {
             eligibility: i,
-            eligibilityLoading: s,
-            eligibilityError: a,
+            eligibilityLoading: a,
+            eligibilityError: s,
             refreshEligibility: o,
             guildId: t.id
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
@@ -88,7 +88,7 @@ function f(e) {
     error: d,
     loading: u,
     submitAcceptTermsRequest: g
-  } = (0, s.Z)(t.id), [m, p] = i.useState(false);
+  } = (0, a.Z)(t.id), [m, p] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.XZJ, {
       onChange: function() {
@@ -107,7 +107,7 @@ function f(e) {
     }), null != d && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(s.Z, {
         children: d.getAnyErrorMessage()
       })]
     })]
@@ -121,8 +121,8 @@ function h(e) {
   } = e, {
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: s,
-    eligibility: a,
+    refreshEligibility: a,
+    eligibility: s,
     eligibleForMonetization: c,
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
@@ -132,10 +132,10 @@ function h(e) {
     checkboxText: d
   }) : (0, r.jsx)(p, {
     guild: t,
-    eligibility: a,
+    eligibility: s,
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: s
+    refreshEligibility: a
   })
 }
 

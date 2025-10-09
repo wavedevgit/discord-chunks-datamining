@@ -6,9 +6,9 @@ var Chunk448730 = require("./448730.js"),
   Chunk263604 = require("./263604.js");
 module.exports = function(e) {
   return function(t) {
-    var n = i(t = s(t)) ? l(t) : true,
-      a = n ? n[0] : t.charAt(0),
+    var n = i(t = a(t)) ? l(t) : true,
+      s = n ? n[0] : t.charAt(0),
       o = n ? r(n, 1).join("") : t.slice(1);
-    return a[e]() + o
+    return s[e]() + o
   }
 }

@@ -36,7 +36,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk359739 = require("./359739.js"),
   Chunk611344 = require("./611344.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,28 +45,28 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 let M = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(k, x({}, e)),
+  renderStep: e => (0, r.jsx)(j, L({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
   }
 };
 
-function j(e) {
+function k(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -88,7 +88,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     handleStepChange: t,
     handleClose: n
@@ -98,10 +98,10 @@ function k(e) {
     giftRecipientError: g,
     setGiftRecipientError: b,
     validatingGiftRecipient: A,
-    giftRecipient: L,
-    recommendedGiftSkuIds: x,
+    giftRecipient: x,
+    recommendedGiftSkuIds: L,
     giftingOrigin: M,
-    setValidatingGiftRecipient: k
+    setValidatingGiftRecipient: j
   } = (0, T.wD)(), {
     selectedSkuId: B,
     setSelectedSkuId: Z,
@@ -117,17 +117,17 @@ function k(e) {
   }, {
     autoTrackExposure: false
   }), q = K && M === R.Wt.DM_CHANNEL, X = z === p.u.POPULAR ? P.intl.string(P.t.Kwgrrq) : P.intl.string(P.t.r1huYW), Q = async (e, t) => {
-    k(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqa"])), k(false)
+    j(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqa"])), j(false)
   };
   (0, o.ZP)(() => {
-    null != B && null != L && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != B && null != x && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: B
-    }), Q(L, B))
+    }), Q(x, B))
   });
   let J = e => {
       v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != L && Q(L, e), Z(e)
+      }), null != x && Q(x, e), Z(e)
     },
     $ = e => {
       let t = H[e],
@@ -162,7 +162,7 @@ function k(e) {
         color: "header-secondary",
         className: w.selectGiftTitle,
         children: X.toLocaleUpperCase()
-      }), x.map(e => $(e)), (0, r.jsx)(U, {
+      }), L.map(e => $(e)), (0, r.jsx)(U, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -175,7 +175,7 @@ function k(e) {
       if (q) return (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
-          giftRecipient: L
+          giftRecipient: x
         }), (0, r.jsx)(m.q, {
           isShopGift: true,
           className: D.adjustedGiftMainAnimation,
@@ -193,7 +193,7 @@ function k(e) {
       return M === R.Wt.USER_PROFILE_WISHLIST ? (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
-          giftRecipient: L
+          giftRecipient: x
         }), ee(), null != e && null != B && (0, r.jsx)(d.Z, {
           skuId: B,
           price: e,
@@ -230,10 +230,10 @@ function k(e) {
         "data-migration-pending": true,
         justify: _.Z.Justify.BETWEEN,
         align: _.Z.Align.CENTER,
-        children: (0, r.jsx)(j, {
+        children: (0, r.jsx)(k, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != g || null == L || L.id === (null == W ? true : W.id) || s.length > R.$n,
+          disabled: null != g || null == x || x.id === (null == W ? true : W.id) || s.length > R.$n,
           loading: A
         })
       })

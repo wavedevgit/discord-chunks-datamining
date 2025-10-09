@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => U,
-  eJ: () => j,
-  nm: () => k
+  eJ: () => k,
+  nm: () => j
 }), require("./539854.js"), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,7 +73,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function D(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = 16,
+let L = 16,
   M = e => {
     let {
       hangStatusActivity: t,
@@ -111,13 +111,13 @@ let x = 16,
       className: C.icons,
       children: (0, r.jsx)(E.Z, {
         userId: s,
-        size: x,
+        size: L,
         hangStatusActivity: t,
         className: o()(C.icon, n)
       })
     })
   },
-  j = e => {
+  k = e => {
     let {
       children: t,
       collapsed: n = false,
@@ -130,7 +130,7 @@ let x = 16,
     })
   };
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     mute: n,
@@ -149,10 +149,10 @@ function k(e) {
     otherClientSessionType: P,
     voicePlatform: w,
     application: D,
-    guildId: L,
-    channelId: x,
-    user: j,
-    disconnected: k,
+    guildId: x,
+    channelId: L,
+    user: k,
+    disconnected: j,
     hangStatusActivity: U,
     showHangStatus: Z,
     isSelf: F,
@@ -191,7 +191,7 @@ function k(e) {
       color: "currentColor",
       className: o()(C.icon, N)
     })
-  }, "video"))), k && K.push((0, r.jsx)(l.u, {
+  }, "video"))), j && K.push((0, r.jsx)(l.u, {
     text: A.intl.string(A.t.HFwRpq),
     children: (0, r.jsx)(c.Mgn, {
       className: o()(C.icon, N),
@@ -236,11 +236,11 @@ function k(e) {
       children: Q ? (0, r.jsx)(G, {
         application: D,
         iconClassName: N,
-        guildId: L,
-        channelId: x,
-        userId: j.id
-      }, "".concat(j.id, "-game")) : (0, r.jsx)(M, {
-        userId: j.id,
+        guildId: x,
+        channelId: L,
+        userId: k.id
+      }, "".concat(k.id, "-game")) : (0, r.jsx)(M, {
+        userId: k.id,
         hangStatusActivity: U,
         iconClassName: N,
         isSelf: F,
@@ -270,10 +270,10 @@ let U = function(e) {
     priority: S,
     speaking: N,
     collapsed: P,
-    mute: L,
-    serverMute: x,
+    mute: x,
+    serverMute: L,
     guildId: M,
-    nick: j,
+    nick: k,
     isGuest: U,
     flipped: G,
     className: B,
@@ -303,7 +303,7 @@ let U = function(e) {
       text: A.intl.string(A.t.BVK71t),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {
-          [C.iconPriortySpeakerSpeaking]: !L && !x && N
+          [C.iconPriortySpeakerSpeaking]: !x && !L && N
         })
       })
     }) : null
@@ -325,9 +325,9 @@ let U = function(e) {
   function ee() {
     let e = (0, r.jsxs)("div", {
         className: o()(i, C.username, W, {
-          [C.usernameSpeaking]: !L && !x && N
+          [C.usernameSpeaking]: !x && !L && N
         }),
-        children: [null != j ? j : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
+        children: [null != k ? k : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
           className: C.guestSuffix,
           children: ["\xa0", A.intl.string(A.t["pFO/Pj"])]
         }) : ""]
@@ -349,7 +349,7 @@ let U = function(e) {
   }
 
   function et() {
-    return (0, r.jsx)(k, R({
+    return (0, r.jsx)(j, R({
       disabled: u
     }, _))
   }
@@ -371,7 +371,7 @@ let U = function(e) {
     onMouseLeave: X,
     onMouseDown: Q,
     onKeyDown: E,
-    "aria-label": null != (t = null != F ? F : j) ? t : H.username,
+    "aria-label": null != (t = null != F ? F : k) ? t : H.username,
     focusProps: {
       offset: {
         right: 4

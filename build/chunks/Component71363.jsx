@@ -43,14 +43,14 @@ let A = e => {
     {
       analyticsLocations: D
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
-    [L, x] = i.useState(false),
+    [x, L] = i.useState(false),
     M = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
-    j = (0, O.mN)(),
+    k = (0, O.mN)(),
     {
-      fractionalState: k
+      fractionalState: j
     } = (0, _.Z)(),
     U = (0, h.W)();
-  j ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
+  k ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
   let G = () => {
     A(false), p.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: y.MQ.SEE_ALL,
@@ -90,9 +90,9 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_FIRST_ROW,
-              isPremiumSubscriber: j,
+              isPremiumSubscriber: k,
               hideCardsOnNarrowScreen: true,
-              fractionalState: k,
+              fractionalState: j,
               isInReverseTrial: U
             }),
             cardType: y.gM.CARD_CAROUSEL_FIRST_ROW
@@ -106,9 +106,9 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_SECOND_ROW,
-              isPremiumSubscriber: j,
+              isPremiumSubscriber: k,
               hideCardsOnNarrowScreen: true,
-              fractionalState: k,
+              fractionalState: j,
               isInReverseTrial: U
             }),
             cardType: y.gM.CARD_CAROUSEL_SECOND_ROW
@@ -122,9 +122,9 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_THIRD_ROW,
-              isPremiumSubscriber: j,
+              isPremiumSubscriber: k,
               hideCardsOnNarrowScreen: true,
-              fractionalState: k,
+              fractionalState: j,
               isInReverseTrial: U
             }),
             cardType: y.gM.CARD_CAROUSEL_THIRD_ROW
@@ -134,9 +134,9 @@ let A = e => {
         }), (0, r.jsx)(l.$, {
           innerRef: P,
           onChange: e => {
-            e && !L && (p.default.track(v.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !x && (p.default.track(v.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: D
-            }), x(true))
+            }), L(true))
           },
           children: (0, r.jsx)("div", {
             ref: P,

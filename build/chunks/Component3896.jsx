@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk456935 = require("./456935.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -19,8 +19,8 @@ function m(e) {
   let {
     guild: t
   } = e, l = t.verificationLevel, m = i.useMemo(() => (0, o.I9)(l), [l]);
-  return (0, r.jsxs)(a.P3F, {
-    onClick: () => (0, a.ZDy)(async () => {
+  return (0, r.jsxs)(s.P3F, {
+    onClick: () => (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("72458").then(n.bind(n, 694278));
@@ -58,29 +58,29 @@ function m(e) {
         }), i))
       }
     }),
-    className: s()(g.simpleItemWrapper, g.clickable),
+    className: a()(g.simpleItemWrapper, g.clickable),
     children: [(0, r.jsxs)("div", {
       className: g.itemContent,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: u.intl.string(u.t.DpRdYG)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: u.intl.string(u.t.mA17eH)
       }), (0, r.jsx)("div", {
         className: g.__invalid_pillRow,
-        children: (0, r.jsxs)(a.Text, {
+        children: (0, r.jsxs)(s.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           className: g.valuePill,
-          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
+          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(s.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16
-          }) : (0, r.jsx)(a._XJ, {
+          }) : (0, r.jsx)(s._XJ, {
             size: "custom",
             color: "currentColor",
             width: 16,

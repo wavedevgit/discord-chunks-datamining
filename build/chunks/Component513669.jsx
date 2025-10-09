@@ -87,9 +87,9 @@ function h(e) {
     uploadButtonLabel: q = c.intl.string(c.t["MsUY/f"]),
     radioGroupAriaLabel: b = c.intl.string(c.t["0Q0UJi"]),
     disabled: C = false
-  } = e, j = a === p, [x, U] = n.useState(j ? A : null), [V, O] = n.useState(null), P = n.useRef(null), F = n.useRef(null);
+  } = e, j = a === p, [U, x] = n.useState(j ? A : null), [V, O] = n.useState(null), P = n.useRef(null), F = n.useRef(null);
   n.useEffect(() => {
-    h !== p && (U(null), O(null))
+    h !== p && (x(null), O(null))
   }, [h]);
   let y = null != V ? c.intl.formatToPlainString(c.t["Kw+5YW"], {
       filename: V
@@ -101,7 +101,7 @@ function h(e) {
     {
       ref: N
     } = I,
-    T = function(e, t) {
+    K = function(e, t) {
       if (null == e) return {};
       var A, r, n = function(e, t) {
         if (null == e) return {};
@@ -128,7 +128,7 @@ function h(e) {
       children: (0, r.jsxs)("div", {
         className: l()(u.uploadButton, {
           [u.disabled]: C,
-          [u.hidden]: null != x
+          [u.hidden]: null != U
         }),
         "aria-disabled": C,
         children: [(0, r.jsx)(s.FmF, {
@@ -144,12 +144,12 @@ function h(e) {
           ref: P,
           tabIndex: 0,
           onChange: (e, t) => {
-            null != t && (O(t.name), U(e), v(e, p))
+            null != t && (O(t.name), x(e), v(e, p))
           },
           "aria-label": q
         })]
       })
-    }), null != x && (0, r.jsxs)("div", {
+    }), null != U && (0, r.jsxs)("div", {
       className: u.customImageActionContainer,
       children: [(0, r.jsx)(i.u, {
         asContainer: true,
@@ -175,7 +175,7 @@ function h(e) {
         children: (0, r.jsx)(s.P3F, {
           className: u.customImageAction,
           onClick: () => {
-            a === p && v(t[0].data, t[0].name), U(null), O(null)
+            a === p && v(t[0].data, t[0].name), x(null), O(null)
           },
           "aria-label": c.intl.formatToPlainString(c.t.Z43V9f, {
             filename: V
@@ -190,16 +190,16 @@ function h(e) {
     }), (0, r.jsxs)("div", f(g({
       "aria-label": b,
       ref: N
-    }, T), {
+    }, K), {
       className: u.radioGroup,
-      children: [null != x && (0, r.jsx)(m, {
+      children: [null != U && (0, r.jsx)(m, {
         ref: F,
         selectedImageName: a,
         onChange: v,
         disabled: C,
         name: p,
         alt: y,
-        data: x
+        data: U
       }), t.map(e => (0, r.jsx)(m, g({
         selectedImageName: a,
         onChange: v,

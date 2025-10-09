@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -52,18 +52,18 @@ function j(e, t) {
   }), e
 }
 
-function _(e) {
+function v(e) {
   let {
     palette: t,
     badge: n,
     isSelected: i,
     onClick: l
-  } = e, a = (0, o.jm)({
+  } = e, s = (0, o.jm)({
     isSelected: i,
     label: (0, d.Z)(t.primary, t.secondary)
   });
-  return (0, r.jsx)(c.P3F, j(b({}, a), {
-    className: s()(x.pickerItem, {
+  return (0, r.jsx)(c.P3F, j(b({}, s), {
+    className: a()(x.pickerItem, {
       [x.pickerItemSelected]: i
     }),
     onClick: l,
@@ -77,7 +77,7 @@ function _(e) {
   }))
 }
 
-function v(e) {
+function _(e) {
   let {
     badge: t,
     primary: n,
@@ -87,7 +87,7 @@ function v(e) {
     setShowColorPopout: g,
     palettePopoutTargetRef: m,
     handleChange: f
-  } = e, _ = (0, o.jm)({
+  } = e, v = (0, o.jm)({
     isSelected: l,
     label: h.intl.formatToPlainString(h.t.hr4D2d, {
       primaryColor: n,
@@ -103,22 +103,22 @@ function v(e) {
     },
     onPrimaryColorChange: e => {
       f({
-        primary: (0, a.Rf)(e)
+        primary: (0, s.Rf)(e)
       })
     },
     onSecondaryColorChange: e => {
       f({
-        secondary: (0, a.Rf)(e)
+        secondary: (0, s.Rf)(e)
       })
     },
     shouldShow: d,
     onRequestClose: () => g(false),
-    children: e => (0, r.jsx)(c.P3F, j(b({}, e, _), {
+    children: e => (0, r.jsx)(c.P3F, j(b({}, e, v), {
       innerRef: m,
       onClick: () => {
         g(e => !e)
       },
-      className: s()(x.pickerItem, {
+      className: a()(x.pickerItem, {
         [x.pickerItemSelected]: l
       }),
       children: (0, r.jsx)(c.ilE, {
@@ -134,9 +134,9 @@ let C = function(e) {
     className: t,
     guildId: n,
     badge: l,
-    primaryColor: s,
-    secondaryColor: a
-  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== s || e.secondary !== a), [s, a]), N = (0, o.Jb)({
+    primaryColor: a,
+    secondaryColor: s
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), N = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: C
@@ -148,31 +148,32 @@ let C = function(e) {
   }
   return (0, r.jsxs)("div", {
     className: t,
-    children: [(0, r.jsx)(c.vwX, {
+    children: [(0, r.jsx)(c.gNt, {
+      label: h.intl.string(f.default.zSbMdX),
       id: C,
-      className: x.sectionTitle,
-      children: h.intl.string(f.default.zSbMdX)
+      children: e => (0, r.jsxs)("div", j(b({}, N), {
+        id: e.controlId,
+        "aria-describedby": O,
+        className: x.pickerGrid,
+        children: [p.Ek.map(e => (0, r.jsx)(v, {
+          palette: e,
+          badge: l,
+          isSelected: e.primary === a && e.secondary === s,
+          onClick: () => E(e)
+        }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
+          badge: l,
+          primary: a,
+          secondary: s,
+          isSelected: y,
+          showColorPopout: d,
+          setShowColorPopout: u,
+          palettePopoutTargetRef: g,
+          handleChange: E
+        })]
+      }))
     }), (0, r.jsx)(c.nn4, {
       id: O,
       children: h.intl.string(h.t.ovbW0d)
-    }), (0, r.jsxs)("div", j(b({}, N), {
-      "aria-describedby": O,
-      className: x.pickerGrid,
-      children: [p.Ek.map(e => (0, r.jsx)(_, {
-        palette: e,
-        badge: l,
-        isSelected: e.primary === s && e.secondary === a,
-        onClick: () => E(e)
-      }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(v, {
-        badge: l,
-        primary: s,
-        secondary: a,
-        isSelected: y,
-        showColorPopout: d,
-        setShowColorPopout: u,
-        palettePopoutTargetRef: g,
-        handleChange: E
-      })]
-    }))]
+    })]
   })
 }

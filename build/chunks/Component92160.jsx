@@ -26,7 +26,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(t, o.enableContainer),
-    children: [n ? (0, r.jsx)(s.dz2, {
+    children: [n ? (0, r.jsx)(a.dz2, {
       size: "custom",
       color: "currentColor",
       width: 24,
@@ -34,7 +34,7 @@ function c(e) {
       className: l()(o.activeCircle, {
         [o.animate]: u
       })
-    }) : (0, r.jsx)(s.vdY, {
+    }) : (0, r.jsx)(a.vdY, {
       size: "custom",
       color: "currentColor",
       width: 24,
@@ -44,10 +44,10 @@ function c(e) {
       })
     }), (0, r.jsxs)("div", {
       className: o.enableDescription,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: g
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: m
       })]
@@ -56,18 +56,18 @@ function c(e) {
       children: [null == c ? null : (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: o.previewButton,
-        children: (0, r.jsx)(s.zxk, {
+        children: (0, r.jsx)(a.zxk, {
           variant: "secondary",
           size: "sm",
-          text: null != i ? i : a.intl.string(a.t["5U0kLy"]),
+          text: null != i ? i : s.intl.string(s.t["5U0kLy"]),
           onClick: c,
           disabled: p
         })
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         variant: n ? "critical-primary" : "primary",
         size: "sm",
         disabled: null == d || !n || p,
-        text: n ? a.intl.string(a.t.R9GHyc) : a.intl.string(a.t.JFfinp),
+        text: n ? s.intl.string(s.t.R9GHyc) : s.intl.string(s.t.JFfinp),
         onClick: d
       })]
     })]

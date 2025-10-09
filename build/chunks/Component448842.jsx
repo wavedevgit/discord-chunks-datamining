@@ -88,7 +88,7 @@ function A(e) {
     s.S.dispatch(b.CkL.PERFORM_SEARCH, {
       searchEverywhere: t
     })
-  }, L = e => {
+  }, x = e => {
     var t;
     let {
       autocompleteCount: n,
@@ -115,7 +115,7 @@ function A(e) {
       isInFilterForSelectedChannel: O,
       searchAutocompleteSelectAction: i
     })
-  }, x = i.useCallback(e => {
+  }, L = i.useCallback(e => {
     let t = e ? y.intl.string(y.t.diOL4u) : y.intl.string(y.t["M1tf+/"]),
       i = () => {
         (0, a.ZDy)(async () => {
@@ -190,7 +190,7 @@ function A(e) {
           });
         e.push(i)
       }
-      let t = x(C);
+      let t = L(C);
       if (C) {
         let n = [...w, t];
         e.push((0, _.fC)(f.i.GROUP, {
@@ -337,7 +337,7 @@ function A(e) {
               selectedIndex: t,
               searchAutocompleteSelectAction: r
             } = e;
-            L({
+            x({
               selectedIndex: t,
               searchAutocompleteSelectAction: r,
               selectedAutocomplete: i,
@@ -368,7 +368,7 @@ function A(e) {
             title: r
           })
         }
-      }), o = C && 0 === n, s = x(o);
+      }), o = C && 0 === n, s = L(o);
       if (o) {
         let t = [...w, s];
         e.push((0, _.fC)(f.i.GROUP, {
@@ -403,7 +403,7 @@ function A(e) {
               selectedIndex: r,
               searchAutocompleteSelectAction: o
             } = t;
-            L({
+            x({
               selectedIndex: r,
               searchAutocompleteSelectAction: o,
               selectedAutocomplete: n,
@@ -438,7 +438,7 @@ function A(e) {
         items: [...t]
       }
     }
-  })[R.type])(), j = i.useMemo(() => {
+  })[R.type])(), k = i.useMemo(() => {
     let e = [];
     return M.forEach(t => {
       switch (t.type) {
@@ -452,6 +452,6 @@ function A(e) {
   }, [M]);
   return {
     items: M,
-    itemsData: j
+    itemsData: k
   }
 }

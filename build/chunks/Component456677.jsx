@@ -15,14 +15,14 @@ function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, c = i.useMemo(() => (0, s.V9)(t.triggerType), [t.triggerType]), d = a.km(t.guildId), u = i.useMemo(() => (0, l.U5)(), []), g = (e, r) => {
+  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), d = s.km(t.guildId), u = i.useMemo(() => (0, l.U5)(), []), g = (e, r) => {
     var i, l;
     if (null == r) return;
-    let s = t.actions.some(e => e.type === r.type),
-      a = [...t.actions, r];
-    if (s) {
+    let a = t.actions.some(e => e.type === r.type),
+      s = [...t.actions, r];
+    if (a) {
       let n = t.actions.filter(e => e.type !== r.type);
-      a = e ? [...n, r] : n
+      s = e ? [...n, r] : n
     }
     n((i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -42,7 +42,7 @@ function c(e) {
       }
       return e
     }({}, t), l = l = {
-      actions: a
+      actions: s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -66,10 +66,10 @@ function c(e) {
           let r = t.actions.find(t => t.type === e),
             i = null != r,
             l = u[e],
-            s = n ? r : l;
-          if (null != s && (!i || n)) {
+            a = n ? r : l;
+          if (null != a && (!i || n)) {
             let n = d[e];
-            null != n ? g(true, await n(t, s)) : g(true, s)
+            null != n ? g(true, await n(t, a)) : g(true, a)
           } else g(false, i ? r : l)
         }
       }, e)

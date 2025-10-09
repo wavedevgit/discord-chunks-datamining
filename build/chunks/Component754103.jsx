@@ -139,11 +139,13 @@ class m extends Chunk647438.PureComponent {
           onFocus: a,
           onBlur: l
         });
-      return (0, r.jsx)(s.hjN, {
+      return (0, r.jsx)("div", {
         className: o()(null == f ? true : f(c)),
-        title: m(),
-        titleId: E,
-        children: h(y, u)
+        children: (0, r.jsx)(s.gNt, {
+          id: E,
+          label: m(),
+          children: h(y, u)
+        })
       }, g)
     }), u(this, "renderFormRow", e => {
       let t = e.fields.map(this.renderFormSection);

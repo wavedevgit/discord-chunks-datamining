@@ -1,39 +1,31 @@
 /** Chunk was on 75685 **/
 /** chunk id: 211512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => s
+  I: () => o
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk540863 = require("./540863.jsx"),
-  Chunk534542 = require("./534542.jsx"),
-  Chunk481060 = require("./481060.js"),
-  Chunk188639 = require("./188639.js");
+  Chunk481060 = require("./481060.js");
 
-function s(e) {
+function o(e) {
   let {
     node: t
   } = e, {
     useLabel: n,
-    useTitle: s,
-    useSubtitle: c,
-    useVariant: u,
-    useDisabled: d,
-    onClick: f
-  } = t, m = s(), b = null == c ? true : c(), j = n(), p = null == u ? true : u(), x = null == d ? true : d();
-  return (0, r.jsx)(l.x, {
-    title: m,
-    className: a.settingButtonContainer,
-    children: (0, r.jsxs)("div", {
-      className: a.settingButtonContent,
-      children: [null != b && (0, r.jsx)(o.R, {
-        type: o.g.DESCRIPTION,
-        children: b
-      }), (0, r.jsx)(i.zxk, {
-        onClick: f,
-        text: j,
-        variant: p,
-        disabled: x
-      })]
+    useTitle: o,
+    useSubtitle: i,
+    useVariant: a,
+    useDisabled: s,
+    onClick: c
+  } = t, u = o(), d = null == i ? true : i(), f = n(), b = null == a ? true : a(), m = null == s ? true : s();
+  return (0, r.jsx)(l.gNt, {
+    label: u,
+    description: d,
+    disabled: m,
+    children: (0, r.jsx)(l.zxk, {
+      onClick: c,
+      text: f,
+      variant: b,
+      disabled: m
     })
   })
 }

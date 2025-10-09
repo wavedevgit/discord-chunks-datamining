@@ -2,14 +2,14 @@
 /** chunk id: 402766, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,7 +28,7 @@ function s(e) {
   return e
 }
 
-function a(e) {
+function s(e) {
   var {
     tier: t
   } = e, n = function(e, t) {
@@ -48,11 +48,11 @@ function a(e) {
   }(e, ["tier"]);
   switch (t) {
     case l.Eu4.TIER_1:
-      return (0, r.jsx)(i.lJJ, s({}, n));
+      return (0, r.jsx)(i.lJJ, a({}, n));
     case l.Eu4.TIER_2:
-      return (0, r.jsx)(i.Ucv, s({}, n));
+      return (0, r.jsx)(i.Ucv, a({}, n));
     case l.Eu4.TIER_3:
-      return (0, r.jsx)(i.iOe, s({}, n));
+      return (0, r.jsx)(i.iOe, a({}, n));
     case l.Eu4.NONE:
       return null;
     default:

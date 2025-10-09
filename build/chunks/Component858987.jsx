@@ -110,11 +110,11 @@ function T(e) {
     onPaymentSourceAdd: w
   } = e, {
     application: D,
-    selectedPlan: L,
-    hasAcceptedTerms: x,
+    selectedPlan: x,
+    hasAcceptedTerms: L,
     purchaseType: M,
-    paymentSourceId: j,
-    activeSubscription: k,
+    paymentSourceId: k,
+    activeSubscription: j,
     devShelfFetchState: U,
     hasPaymentSources: G
   } = (0, c.JL)(), {
@@ -123,13 +123,13 @@ function T(e) {
     location: "SubscriptionReviewButton"
   }), Z = v({
     purchaseType: M,
-    plan: L,
+    plan: x,
     premiumSubscription: E,
     isGift: y,
     planGroup: T,
     isPrepaidPaymentSource: S,
     inReverseTrial: R,
-    paymentSourceId: j,
+    paymentSourceId: k,
     hasPaymentSources: G
   }), {
     analyticsLocations: F
@@ -177,16 +177,16 @@ function T(e) {
   });
   if (A) return (0, r.jsx)(o.zxk, {
     variant: "expressive",
-    "data-testid": x ? "purchase" : "submitButton",
+    "data-testid": L ? "purchase" : "submitButton",
     text: Z,
-    onClick: x ? C : () => I(n, f),
+    onClick: L ? C : () => I(n, f),
     loading: m,
     iconPosition: "start",
     icon: () => (0, r.jsx)(o.SrA, {
       color: "currentColor"
     })
   });
-  else if (!x) return (0, r.jsx)(o.ua7, {
+  else if (!L) return (0, r.jsx)(o.ua7, {
     text: g.intl.string(g.t.XdvBLS),
     children: e => (0, r.jsx)(o.zxk, O(b({
       variant: "active",
@@ -197,11 +197,11 @@ function T(e) {
       "data-testid": "submitButton"
     }))
   });
-  else if (R && null != k && null != j) return (0, r.jsx)(p.Z, {
-    activeSubscription: k,
+  else if (R && null != j && null != k) return (0, r.jsx)(p.Z, {
+    activeSubscription: j,
     onNext: P,
     isSubmitting: m,
-    paymentSourceId: j,
+    paymentSourceId: k,
     buttonLabel: Z,
     analyticsLocations: F
   });

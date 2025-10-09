@@ -90,8 +90,8 @@ let p = function(e) {
   i.useEffect(() => (D(), () => {
     N()
   }), [D, N]);
-  let L = (0, c.dQu)(l.Z.colors.TEXT_SECONDARY).hex(),
-    x = (0, c.dQu)(l.Z.colors.TEXT_PRIMARY).hex();
+  let x = (0, c.dQu)(l.Z.colors.TEXT_SECONDARY).hex(),
+    L = (0, c.dQu)(l.Z.colors.TEXT_PRIMARY).hex();
 
   function M() {
     return s()(f.cardInput, {
@@ -101,7 +101,7 @@ let p = function(e) {
     })
   }
 
-  function j() {
+  function k() {
     switch (n) {
       case "cardNumber":
         return (0, r.jsxs)("div", {
@@ -147,20 +147,20 @@ let p = function(e) {
       base: {
         fontFamily: r,
         fontWeight: n.getPropertyValue("font-weight"),
-        color: x,
+        color: L,
         fontSize: n.getPropertyValue("font-size"),
         "::placeholder": {
-          color: L
+          color: x
         }
       }
     })
-  }, [t, L, x]), (0, r.jsxs)("div", {
+  }, [t, x, L]), (0, r.jsxs)("div", {
     className: f.cardNumberWrapper,
     "data-stripe-type": n,
     children: [(0, r.jsx)("div", {
       ref: t,
       className: s()(f.hiddenDiv, _.input)
-    }), j(), (0, r.jsx)(c.pdY, {
+    }), k(), (0, r.jsx)(c.pdY, {
       error: I
     })]
   })

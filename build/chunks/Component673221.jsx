@@ -125,10 +125,10 @@ function w(e) {
     closeOnSelect: C = true,
     shouldFocusWrap: P,
     placeholder: w = y.intl.string(b.default["A+pfVV"]),
-    label: x,
+    label: L,
     name: M,
-    form: j,
-    autoComplete: k,
+    form: k,
+    autoComplete: j,
     maxOptionsVisible: U = 5,
     options: G,
     formatOption: B,
@@ -251,7 +251,7 @@ function w(e) {
       handleClear: eu
     }, q()), {
       children: (0, r.jsxs)(f.kL8, {
-        "aria-label": x,
+        "aria-label": L,
         buttonRef: et,
         buttonProps: S(I({}, null != n ? {
           id: n
@@ -276,8 +276,8 @@ function w(e) {
         "aria-errormessage": null == ee ? true : ee.errorMessageId,
         "aria-invalid": (null == ee ? true : ee.errorMessageId) != null,
         children: [(0, r.jsxs)(u.n, {
-          children: [x, ", "]
-        }), (0, r.jsx)(L, {
+          children: [L, ", "]
+        }), (0, r.jsx)(x, {
           tagGroupRef: H,
           placeholder: w,
           selectionMode: t,
@@ -287,9 +287,9 @@ function w(e) {
       })
     })), (0, r.jsx)(p.M, {
       name: M,
-      form: j,
+      form: k,
       disabled: ea,
-      autoComplete: k,
+      autoComplete: j,
       selectionMode: t,
       selectedItems: ef,
       onSelectionChange: ep,
@@ -347,7 +347,7 @@ function D(e, t) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     placeholder: t,
     selectionMode: n,

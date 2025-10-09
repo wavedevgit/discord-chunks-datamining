@@ -69,16 +69,16 @@ let m = "x-science-test",
   P = 0,
   w = null,
   D = 0,
-  L = Number.MAX_SAFE_INTEGER,
-  x = 0,
+  x = Number.MAX_SAFE_INTEGER,
+  L = 0,
   M = 0,
-  j = null,
-  k = false,
+  k = null,
+  j = false,
   U = null,
   G = null;
 
 function B() {
-  C = 0, N = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = A
+  C = 0, N = 0, R = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, M = 0, w = Date.now(), P = A
 }
 
 function Z(e) {
@@ -137,7 +137,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       let e = Y.slice();
       Y = [], D = Z(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = Z(M, t);
+      x = Math.min(x, t), L = Math.max(L, t), M = Z(M, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
@@ -162,7 +162,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           })
         })),
         a = {};
-      return k || (G = (0, o.Z)(), a[m] = G, k = true), c.tn.post({
+      return j || (G = (0, o.Z)(), a[m] = G, j = true), c.tn.post({
         url: t,
         headers: a,
         body: {
@@ -193,8 +193,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: C,
           event_queue_batch_count: D,
-          event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
-          event_queue_batch_max_size: x,
+          event_queue_batch_min_size: x === Number.MAX_SAFE_INTEGER ? 0 : x,
+          event_queue_batch_max_size: L,
           event_queue_batch_avg_size: D > 0 ? M / D : 0,
           science_request_id: G,
           science_response: U,
@@ -205,32 +205,32 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == j) returnfalse;
-      switch (j.type) {
+      if (null == k) returnfalse;
+      switch (k.type) {
         case "timeout":
-          clearTimeout(j.id);
+          clearTimeout(k.id);
           break;
         case "interval":
-          clearInterval(j.id);
+          clearInterval(k.id);
           break;
         default:
-          j.type
+          k.type
       }
-      return j = null, true
+      return k = null, true
     }
 
     function er() {
-      if (null != j) return;
+      if (null != k) return;
       let e = () => {
         let t = .1 * v;
-        j = {
+        k = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      j = {
+      k = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()

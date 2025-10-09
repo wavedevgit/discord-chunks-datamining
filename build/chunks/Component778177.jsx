@@ -151,12 +151,12 @@ let X = (e, t, n) => {
       children: a
     }) : (0, r.jsxs)("div", {
       className: B.resultChannel,
-      children: [(0, r.jsx)(x.MC, {
+      children: [(0, r.jsx)(L.MC, {
         channel: i,
         className: B.searchResultChannelIcon
-      }), (0, r.jsx)(x.GQ, {
+      }), (0, r.jsx)(L.GQ, {
         channel: i
-      }), (0, r.jsx)(x.P, {
+      }), (0, r.jsx)(L.P, {
         channel: i
       })]
     })
@@ -434,17 +434,17 @@ class ei extends Chunk647438.PureComponent {
       })
     }), Z(this, "handleDateChange", e => {
       let t = (0, P.Tm)(this.props.searchContext);
-      (0, j.bh)({
+      (0, k.bh)({
         searchContext: this.props.searchContext,
         searchQuery: M.Z.getSearchResultsQuery(t),
-        searchQueryString: L.Z.getSearchInputText(this.props.searchContext),
+        searchQueryString: x.Z.getSearchInputText(this.props.searchContext),
         searchTokenType: this.props.resultsState.mode.filter,
         searchAutocompleteGroup: U.rtL.DATES,
         searchAutocompleteMode: this.props.resultsState.mode,
         isSearchFilterPrefix: false,
         isSearchFilterAnswer: true,
         isSearchFilterComplete: false,
-        searchAutocompleteSelectAction: k.ZW.CLICK
+        searchAutocompleteSelectAction: j.ZW.CLICK
       }), this.setSearchQuery(e.format(U.b2L) + " ", true)
     }), Z(this, "keepCurrentOptionSelected", (e, t) => {
       let {
@@ -507,7 +507,7 @@ class ei extends Chunk647438.PureComponent {
         let e = i.find(e => (null == e ? true : e.group) === U.rtL.HISTORY);
         if (null != e) {
           let t = r - (l - e.results.length);
-          (0, j.$z)({
+          (0, k.$z)({
             searchContext: this.props.searchContext,
             searchHistoryIndex: t,
             searchHistoryTotalResults: e.results.length
@@ -526,10 +526,10 @@ class ei extends Chunk647438.PureComponent {
           f = s.result.channel,
           _ = d === U.dCx.FILTER_IN && null != f && f.id === I.Z.getChannelId(),
           p = (0, P.Tm)(this.props.searchContext);
-        (0, j.bh)({
+        (0, k.bh)({
           searchContext: this.props.searchContext,
           searchQuery: M.Z.getSearchResultsQuery(p),
-          searchQueryString: L.Z.getSearchInputText(this.props.searchContext),
+          searchQueryString: x.Z.getSearchInputText(this.props.searchContext),
           searchTokenType: d,
           searchAutocompleteGroup: null != (u = s.group) ? u : a,
           searchAutocompleteMode: this.props.resultsState.mode,
@@ -582,7 +582,7 @@ class ei extends Chunk647438.PureComponent {
         searchContext: i
       } = this.props;
       if (!this.shouldShowSearchInSelectedChannel() || null == r) returnfalse;
-      (0, j.tA)({
+      (0, k.tA)({
         searchContext: i,
         searchAutocompleteSelectAction: n
       });
@@ -656,7 +656,7 @@ class ei extends Chunk647438.PureComponent {
               showFilter: g,
               onSelect: this.selectOption.bind(null, {
                 selectedIndex: o,
-                searchAutocompleteSelectAction: k.ZW.CLICK
+                searchAutocompleteSelectAction: j.ZW.CLICK
               }),
               onFocus: this.focusOption.bind(null, o)
             }, (0, m.M)(t, o, c)), "".concat(i.group, "-").concat(a.text, "-").concat(null != (l = a.key) ? l : ""))

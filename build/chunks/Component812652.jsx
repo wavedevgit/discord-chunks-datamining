@@ -24,7 +24,7 @@ var Chunk268146 = require("./268146.js"),
   Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk355669 = require("./355669.js");
-let C = [{
+let y = [{
     value: Chunk37113.tI.PRESET_AUTO,
     canUse: e => e !== i.vA.CAMERA && (0, c.I)({
       location: "StreamOptionsMenu"
@@ -39,7 +39,7 @@ let C = [{
     value: Chunk37113.tI.PRESET_CUSTOM,
     canUse: e => true
   }],
-  y = [{
+  C = [{
     value: Chunk37113.LY.RESOLUTION_720,
     canUse: e => true
   }, {
@@ -82,7 +82,7 @@ function Z(e) {
     fps: R,
     sourceType: A,
     selectedChannel: k
-  }, M] = (0, p.E_)(), D = !(0, d.$s)(k, "StreamOptionsMenu"), L = (0, h.Z)(), [B, G] = null != (t = (0, x.Z)(_.tI.PRESET_VIDEO)) ? t : [_.LY.RESOLUTION_720, _.ws.FPS_30], [U, W] = null != (n = (0, x.Z)(_.tI.PRESET_DOCUMENTS)) ? n : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15], z = (0, o.M)({
+  }, M] = (0, p.E_)(), D = !(0, d.$s)(k, "StreamOptionsMenu"), L = (0, m.Z)(), [B, U] = null != (t = (0, x.Z)(_.tI.PRESET_VIDEO)) ? t : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, W] = null != (n = (0, x.Z)(_.tI.PRESET_DOCUMENTS)) ? n : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15], z = (0, o.M)({
     deviceType: v.h7.AUDIO_INPUT,
     selectedDeviceId: Z,
     analyticsLocations: [s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
@@ -108,7 +108,7 @@ function Z(e) {
     onSelect: S,
     children: [(0, r.jsx)(l.kSQ, {
       label: b.intl.string(j.default.P2pjm5),
-      children: C.filter(e => {
+      children: y.filter(e => {
         let {
           canUse: t
         } = e;
@@ -126,12 +126,12 @@ function Z(e) {
             switch (e) {
               case _.tI.PRESET_VIDEO:
                 return b.intl.format(j.default.G5O1Mz, {
-                  resolution: (0, m.M)(B),
-                  frameRate: G
+                  resolution: (0, h.M)(B),
+                  frameRate: U
                 });
               case _.tI.PRESET_DOCUMENTS:
                 return b.intl.format(j.default["8tcFLy"], {
-                  resolution: (0, m.M)(U),
+                  resolution: (0, h.M)(G),
                   frameRate: W
                 });
               case _.tI.PRESET_AUTO:
@@ -152,7 +152,7 @@ function Z(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: b.intl.string(j.default.IG5n0d),
-        children: y.filter(e => {
+        children: C.filter(e => {
           let {
             canUse: t
           } = e;
@@ -166,8 +166,8 @@ function Z(e) {
             id: "stream-option-resolution-".concat(t),
             checked: E === t,
             label: t !== _.LY.RESOLUTION_720 ? (0, r.jsx)(w, {
-              label: (0, m.M)(t)
-            }) : (0, m.M)(t),
+              label: (0, h.M)(t)
+            }) : (0, h.M)(t),
             action: () => (function(e) {
               if (!(0, u.Z)(T, e, R, a.default.getCurrentUser(), L)) return c(), (0, g.E)({
                 analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION

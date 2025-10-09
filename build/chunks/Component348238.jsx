@@ -6,10 +6,10 @@ require.d(exports, {
   Go: () => H,
   JC: () => M,
   NU: () => G,
-  Nk: () => x,
-  R9: () => k,
+  Nk: () => L,
+  R9: () => j,
   RN: () => F,
-  Wl: () => L,
+  Wl: () => x,
   XO: () => D,
   Xn: () => z,
   bb: () => W,
@@ -111,12 +111,12 @@ function D(e, t, n, r) {
   return w(e.author.id, t.id, i)
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
   let i = P("referencedUsernameProfile", n, r);
   return w(null == e ? true : e.author.id, t.id, i)
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   let i = P("interactionUsernameProfile", n, r);
   return w(null == e ? true : e.user.id, t.id, i)
 }
@@ -126,22 +126,22 @@ function M(e, t, n, r) {
   return w(e, t.id, i)
 }
 
-function j(e) {
+function k(e) {
   return i.useCallback(t => {
     t.preventDefault(), t.stopPropagation(), e()
   }, [e])
 }
 
-function k(e, t) {
-  return j(P("avatarProfile", e, t))
+function j(e, t) {
+  return k(P("avatarProfile", e, t))
 }
 
 function U(e, t) {
-  return j(P("referencedAvatarProfile", e, t))
+  return k(P("referencedAvatarProfile", e, t))
 }
 
 function G(e, t) {
-  return j(P("interactionAvatarProfile", e, t))
+  return k(P("interactionAvatarProfile", e, t))
 }
 
 function B(e, t, a, s) {

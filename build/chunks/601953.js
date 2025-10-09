@@ -33,7 +33,7 @@ function i(e, t) {
 }
 
 function s(e, t) {
-  var n, s, r, a, o, u, d;
+  var n, s, r, a, o, d, u;
   let c = i(l(i(l({
     max_uses: null != (r = e.maxUses) ? r : null,
     max_age: null != (a = e.maxAge) ? a : null,
@@ -41,11 +41,11 @@ function s(e, t) {
   }, (null == (n = e.targetUser) ? true : n.id) == null ? {} : {
     target_user_id: e.targetUser.id
   }), {
-    target_type: null != (u = e.targetType) ? u : null
+    target_type: null != (d = e.targetType) ? d : null
   }), (null == (s = e.targetApplication) ? true : s.id) == null ? {} : {
     target_application_id: e.targetApplication.id
   }), {
-    flags: null != (d = e.flags) ? d : null
+    flags: null != (u = e.flags) ? u : null
   });
   for (let e of Object.keys(t))
     if (t[e] !== c[e]) returnfalse;

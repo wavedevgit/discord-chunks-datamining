@@ -2,7 +2,7 @@
 /** chunk id: 910494, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,33 +13,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk353857 = require("./353857.jsx"),
   Chunk659854 = require("./659854.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk764009 = require("./764009.js");
+  Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function m(e) {
   let {
     className: t,
     guildId: n,
-    selectedBadge: p
-  } = e, f = i.useCallback(e => {
+    selectedBadge: m
+  } = e, p = i.useCallback(e => {
     c.Z.updateGuildProfile(n, {
       badge: e
     })
-  }, [n]), h = i.useCallback(() => {
-    (0, o.Z)(n, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.Z.close()
-  }, [n]), x = (0, a.Z)(), b = i.useId();
-  return (0, r.jsxs)("div", {
+  }, [n]), f = i.useCallback(() => {
+    (0, o.Z)(n, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.Z.close()
+  }, [n]), h = (0, s.Z)(), x = i.useId();
+  return (0, r.jsx)("div", {
     className: t,
-    children: [(0, r.jsx)(l.vwX, {
-      id: b,
-      className: m.sectionTitle,
-      children: g.intl.string(u.default.pb7lpK)
-    }), (0, r.jsx)(d.g, {
-      badgeCollection: x,
-      handleBoostUpsellClick: h,
-      onBadgeClicked: f,
-      selectedBadge: p,
-      headingId: b
-    })]
+    children: (0, r.jsx)(l.gNt, {
+      label: g.intl.string(u.default.pb7lpK),
+      id: x,
+      children: (0, r.jsx)(d.g, {
+        badgeCollection: h,
+        handleBoostUpsellClick: f,
+        onBadgeClicked: p,
+        selectedBadge: m,
+        headingId: x
+      })
+    })
   })
 }

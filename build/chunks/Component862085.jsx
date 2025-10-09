@@ -18,7 +18,7 @@ function c(e) {
     triggerType: n,
     toggled: c,
     onToggleAction: d
-  } = e, u = e => () => d(e), g = (0, s.c)(t.type, t, n);
+  } = e, u = e => () => d(e), g = (0, a.c)(t.type, t, n);
   if (null == g) return null;
   let {
     headerText: m,
@@ -46,12 +46,12 @@ function c(e) {
       }), c ? (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [a.intl.string(a.t.Oa9oWF), (0, r.jsx)(l.P3F, {
+        children: [s.intl.string(s.t.Oa9oWF), (0, r.jsx)(l.P3F, {
           onClick: u(true),
           className: o.editChannel,
           tag: "span",
           role: "link",
-          children: a.intl.string(a.t.QupmYW)
+          children: s.intl.string(s.t.QupmYW)
         })]
       }) : null]
     }), (0, r.jsx)("div", {

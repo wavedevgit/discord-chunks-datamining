@@ -2,7 +2,7 @@
 /** chunk id: 401786, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => k
+  default: () => j
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,13 +80,13 @@ function D(e) {
   })
 }
 
-function L() {
+function x() {
   let e = Object.values(Chunk314884.Z.boostSlots),
     t = o().sortBy(module.filter(e => !(0, T.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
   return null != exports ? exports.id : null
 }
-async function x(e, t, n, r) {
-  let i = null != r ? r : L();
+async function L(e, t, n, r) {
+  let i = null != r ? r : x();
   if (null == i) throw Error("No slot to cancel");
   let a = (0, S.MY)(e, t);
   await (0, d.pD)(i), await (0, u.Mg)(e, {
@@ -106,7 +106,7 @@ function M(e) {
     onBack: d,
     onNext: p,
     onClose: O
-  } = e, [I, T] = i.useState(false), [R, D] = i.useState(null), [L, M] = i.useMemo(() => {
+  } = e, [I, T] = i.useState(false), [R, D] = i.useState(null), [x, M] = i.useMemo(() => {
     try {
       return [(0, g.g)(o, false), false]
     } catch (e) {
@@ -114,14 +114,14 @@ function M(e) {
         [], true
       ]
     }
-  }, [o]), j = i.useRef(O);
+  }, [o]), k = i.useRef(O);
   i.useEffect(() => {
-    j.current = O
+    k.current = O
   }), i.useEffect(() => {
-    M && j.current()
+    M && k.current()
   }, [M]);
   let {
-    premiumSubscriptionPlan: k,
+    premiumSubscriptionPlan: j,
     premiumGuildPlan: U
   } = (0, l.cj)([v.Z], () => {
     let e = v.Z.get(o.planId);
@@ -138,14 +138,14 @@ function M(e) {
     paymentSourceId: o.paymentSourceId,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-  }), Z = null != U ? (0, S.Zx)(o, null != (a = null == (t = L[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, m.ED)({
+  }), Z = null != U ? (0, S.Zx)(o, null != (a = null == (t = x[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, m.ED)({
     subscriptionId: o.id,
     items: Z,
     renewal: true,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
   });
-  if (null == F || null == k || null == U || null == B) return (0, r.jsx)(c.$jN, {});
+  if (null == F || null == j || null == U || null == B) return (0, r.jsx)(c.$jN, {});
   let V = o.items.some(e => {
       let {
         planId: t
@@ -157,7 +157,7 @@ function M(e) {
       } = e;
       return !N.Z1.has(t)
     })) != null,
-    H = L.some(e => {
+    H = x.some(e => {
       let {
         planId: t
       } = e;
@@ -167,7 +167,7 @@ function M(e) {
     {
       interval: W,
       intervalCount: K
-    } = k,
+    } = j,
     z = P.intl.format(P.t["0W23cn"], {
       endDate: F.subscriptionPeriodStart
     });
@@ -213,7 +213,7 @@ function M(e) {
         disabled: I,
         onClick: async () => {
           try {
-            T(true), D(null), await x(o, L, G, s), p()
+            T(true), D(null), await L(o, x, G, s), p()
           } catch (e) {
             D(P.intl.string(P.t["5mlOCQ"])), T(false)
           }
@@ -225,7 +225,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     premiumSubscription: t,
     fractionalPremiumInfo: n,
@@ -257,7 +257,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let t, {
     guildBoostSlot: n,
     transitionState: a,
@@ -303,7 +303,7 @@ function k(e) {
       });
       break;
     case 3:
-      t = (0, r.jsx)(j, {
+      t = (0, r.jsx)(k, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         onClose: o,

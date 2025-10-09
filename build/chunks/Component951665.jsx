@@ -59,9 +59,9 @@ function g(e) {
       })
     }))
   }, [g, n]);
-  return (0, s.S)(n.triggerType) ? (0, r.jsx)(l.zF9, {
+  return (0, a.S)(n.triggerType) ? (0, r.jsx)(l.zF9, {
     isExpanded: p,
-    collapsibleContent: (0, r.jsx)(a.Z, {
+    collapsibleContent: (0, r.jsx)(s.Z, {
       rule: n,
       onChangeText: x,
       className: c.textAreaContainer,

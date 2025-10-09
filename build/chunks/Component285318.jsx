@@ -56,17 +56,17 @@ function g(e) {
     let t = null,
       n = null;
     switch (e) {
-      case a.Ux.PROFANITY:
+      case s.Ux.PROFANITY:
         t = o.intl.string(o.t["I+BDrK"]), n = (0, r.jsx)(r.Fragment, {
           children: o.intl.string(o.t.hISCmp)
         });
         break;
-      case a.Ux.SEXUAL_CONTENT:
+      case s.Ux.SEXUAL_CONTENT:
         t = o.intl.string(o.t.URSMen), n = (0, r.jsx)(r.Fragment, {
           children: o.intl.string(o.t.oRQDBg)
         });
         break;
-      case a.Ux.SLURS:
+      case s.Ux.SLURS:
         t = o.intl.string(o.t.xjK2Mz), n = (0, r.jsx)(r.Fragment, {
           children: o.intl.string(o.t.oJYXBA)
         });
@@ -83,10 +83,10 @@ function g(e) {
     className: c.keywordListContainer,
     children: [(0, r.jsxs)("div", {
       className: c.keywordListTextContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
         children: d
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: u
@@ -105,28 +105,28 @@ function m(e) {
   let {
     rule: n,
     onChangeRule: l
-  } = e, [s, o] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), c = i.useMemo(() => e => {
+  } = e, [a, o] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), c = i.useMemo(() => e => {
     l(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         presets: e
       })
     }))
   }, [l, n]), m = e => {
-    let t = new Set(s);
+    let t = new Set(a);
     t.has(e) ? t.delete(e) : t.add(e), o(t), c(Array.from(t))
   };
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(g, {
-      preset: a.Ux.PROFANITY,
-      toggled: s.has(a.Ux.PROFANITY),
+      preset: s.Ux.PROFANITY,
+      toggled: a.has(s.Ux.PROFANITY),
       onToggle: m
     }), (0, r.jsx)(g, {
-      preset: a.Ux.SLURS,
-      toggled: s.has(a.Ux.SLURS),
+      preset: s.Ux.SLURS,
+      toggled: a.has(s.Ux.SLURS),
       onToggle: m
     }), (0, r.jsx)(g, {
-      preset: a.Ux.SEXUAL_CONTENT,
-      toggled: s.has(a.Ux.SEXUAL_CONTENT),
+      preset: s.Ux.SEXUAL_CONTENT,
+      toggled: a.has(s.Ux.SEXUAL_CONTENT),
       onToggle: m
     })]
   })

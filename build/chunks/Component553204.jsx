@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
   Chunk91218 = require("./91218.jsx"),
@@ -23,7 +23,7 @@ function h(e) {
     role: t,
     "aria-label": n = m.intl.string(m.t["MsUY/f"]),
     className: l,
-    onClick: a,
+    onClick: s,
     disabled: g = false
   } = e, h = i.useRef(null), x = i.useMemo(() => (0, d.Kz)(t, f), [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -54,10 +54,10 @@ function h(e) {
     ringTarget: h,
     children: (0, r.jsxs)(o.P3F, {
       "aria-label": n,
-      className: s()(p.container, l, {
+      className: a()(p.container, l, {
         [p.disabled]: g
       }),
-      onClick: g ? true : a,
+      onClick: g ? true : s,
       "aria-disabled": g,
       children: [(0, r.jsx)("div", {
         ref: h,

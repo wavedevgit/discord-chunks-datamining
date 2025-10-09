@@ -2,7 +2,7 @@
 /** chunk id: 204875, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,9 +10,9 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk760564 = require("./760564.js");
 
-function a(e) {
+function s(e) {
   var t, n, {
-      children: a,
+      children: s,
       disabled: o,
       disabledTooltip: c,
       id: d
@@ -53,11 +53,11 @@ function a(e) {
       }
       return e
     }({
-      className: s.tabBarItem,
+      className: a.tabBarItem,
       id: d,
       disabled: o
     }, u), n = n = {
-      children: a
+      children: s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

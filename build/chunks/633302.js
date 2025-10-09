@@ -137,13 +137,13 @@ function D(e) {
   let t = T(e);
   return null != t ? C(t) : null
 }
-let L = new Map;
+let x = new Map;
 
-function x(e) {
-  let t = L.get(e);
+function L(e) {
+  let t = x.get(e);
   if (null == t) {
     let n = b[e];
-    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), L.set(e, t)
+    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
   }
   return t
 }
@@ -152,11 +152,11 @@ function M(e) {
   return m.test(e)
 }
 
-function j(e) {
+function k(e) {
   return e.replace(_, (e, t) => H(t, e))
 }
 
-function k(e) {
+function j(e) {
   var t;
   let n = null == (t = S(e)) ? true : t.names[0];
   return null != n ? {
@@ -188,12 +188,12 @@ function Z(e, t) {
       else if (B.test(t)) {
       r += t;
       continue
-    } else i.push(k(r)), r = "";
+    } else i.push(j(r)), r = "";
     else if (t === G) {
       r = t;
       continue
     }
-    let n = k(t);
+    let n = j(t);
     if (i.length > 0) {
       let e = i[i.length - 1];
       if ("text" === n.type && "text" === e.type) {
@@ -203,7 +203,7 @@ function Z(e, t) {
     }
     i.push(n)
   }
-  return null != r && "" !== r && i.push(k(r)), i
+  return null != r && "" !== r && i.push(j(r)), i
 }
 
 function F(e) {
@@ -238,9 +238,9 @@ let K = {
   setDefaultDiversitySurrogate: R,
   getCategories: w,
   getByName: D,
-  getByCategory: x,
+  getByCategory: L,
   contentHasUnicodeOrEmoji: M,
-  translateInlineEmojiToSurrogates: j,
+  translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: V,
   findInlineEmojisFromSurrogates: Z,
   translateSurrogatesToInlineEmoji: F,

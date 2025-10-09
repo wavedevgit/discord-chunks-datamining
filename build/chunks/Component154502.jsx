@@ -2,7 +2,7 @@
 /** chunk id: 154502, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,13 +10,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk556012 = require("./556012.js"),
   Chunk335260 = require("./335260.js");
 
-function a(e) {
+function s(e) {
   var t;
   let {
     action: n,
-    actionType: a,
+    actionType: s,
     triggerType: o
-  } = e, c = (0, l.c)(null != (t = null == n ? true : n.type) ? t : a, n, o);
+  } = e, c = (0, l.c)(null != (t = null == n ? true : n.type) ? t : s, n, o);
   if (null == c) return null;
   let {
     headerText: d,
@@ -24,24 +24,24 @@ function a(e) {
     icon: g
   } = c;
   return (0, r.jsxs)("div", {
-    className: s.actionContainer,
+    className: a.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: s.actionIconContainer,
+      className: a.actionIconContainer,
       children: (0, r.jsx)(g, {
         size: "custom",
         color: "currentColor",
         width: 14,
         height: 14,
-        className: s.actionIcon
+        className: a.actionIcon
       })
     }), (0, r.jsx)("div", {
-      className: s.actionTextContainer,
+      className: a.actionTextContainer,
       children: (0, r.jsxs)(i.Text, {
-        className: s.actionTextHeader,
+        className: a.actionTextHeader,
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: [d, null != u && (0, r.jsx)(i.Text, {
-          className: s.actionTextHelper,
+          className: a.actionTextHelper,
           variant: "text-xs/medium",
           color: "text-muted",
           tag: "span",

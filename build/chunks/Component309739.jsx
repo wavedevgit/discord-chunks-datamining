@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function M(e) {
   let t = () => {
     T.SE.updateSetting(e ? b.Z.getGuildIds() : [])
   };
-  (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, x(D({
+  (0, d.h7j)(e => (0, r.jsx)(d.ConfirmModal, L(D({
     header: N.intl.string(N.t["uUr+GR"]),
     confirmText: N.intl.string(N.t.gm1Ven),
     cancelText: N.intl.string(N.t.p89ACg),
@@ -90,7 +90,7 @@ function M(e) {
   })))
 }
 
-function j() {
+function k() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
@@ -140,7 +140,7 @@ function j() {
   })
 }
 
-function k() {
+function j() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -165,7 +165,7 @@ function k() {
 function U() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
-    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
+    children: (0, Chunk951288.jsx)("div", {
       className: Chunk197571.marginBottom40,
       children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
@@ -262,7 +262,7 @@ function F(e) {
     title: n ? N.intl.string(N.t.Cq98yM) : null,
     children: (0, r.jsxs)(d.Kqy, {
       gap: 24,
-      children: [(0, r.jsx)(j, {}), (0, r.jsx)(d.izJ, {}), (0, r.jsx)(k, {}), (0, r.jsx)(U, {}), i && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(k, {}), (0, r.jsx)(d.izJ, {}), (0, r.jsx)(j, {}), (0, r.jsx)(U, {}), i && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.izJ, {}), (0, r.jsx)(Z, {})]
       })]
     })

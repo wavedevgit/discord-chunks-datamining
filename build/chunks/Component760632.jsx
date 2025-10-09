@@ -19,41 +19,43 @@ function m(e) {
   let {
     canManageGuild: t,
     afkTimeout: n,
-    afkChannelId: m
-  } = e, p = i.useMemo(() => [{
+    afkChannelId: m,
+    label: p
+  } = e, f = i.useMemo(() => [{
     value: o,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 1
     })
   }, {
     value: c,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 5
     })
   }, {
     value: d,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 15
     })
   }, {
     value: u,
-    label: a.intl.formatToPlainString(a.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9f, {
       minutes: 30
     })
   }, {
     value: g,
-    label: a.intl.formatToPlainString(a.t.xCjYxM, {
+    label: s.intl.formatToPlainString(s.t.xCjYxM, {
       hours: 1
     })
-  }], []), f = i.useCallback(e => {
-    s.Z.updateGuild({
+  }], []), h = i.useCallback(e => {
+    a.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
   }, []);
   return (0, r.jsx)(l.q4e, {
+    label: p,
     value: null == n ? null : "".concat(n),
-    options: p,
+    options: f,
     isDisabled: null == m || !t,
-    onChange: f
+    onChange: h
   })
 }

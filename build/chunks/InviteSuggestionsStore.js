@@ -4,7 +4,7 @@ let l, i, s, r, a, o;
 require.d(exports, {
   Z: () => P
 }), require("./388685.js"), require("./642613.js");
-var u, d, Chunk442837 = require("./442837.js"),
+var d, u, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk559310 = require("./559310.js"),
   Chunk823385 = require("./823385.js"),
@@ -16,8 +16,8 @@ var u, d, Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk981631 = require("./981631.js"),
   Chunk245335 = require("./245335.js");
-let j = new Set,
-  b = [],
+let b = new Set,
+  j = [],
   E = new Map,
   y = {
     numFriends: 0,
@@ -35,33 +35,33 @@ function T(e) {
     autoTrackExposure: false
   }), n = new Set, l = (null == r ? true : r.type) === S.d4z.GUILD_VOICE, i = null;
   null == s || o === _.Iq.EMBEDDED_APPLICATION || t && l || (i = s.id);
-  let a = (0, I.rh)(j, i);
+  let a = (0, I.rh)(b, i);
   for (let e of (null == a || N.Z.isBlockedOrIgnored(a.id) || n.add(a.id), p.Z.getUserAffinities())) n.add(e.otherUserId);
-  let u = new Set;
-  return o === _.Iq.EMBEDDED_APPLICATION && m.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(v.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => f.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, I.an)({
+  let d = new Set;
+  return o === _.Iq.EMBEDDED_APPLICATION && m.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(v.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => f.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => d.add(e.id)), (0, I.an)({
     query: e,
-    omitUserIds: j,
+    omitUserIds: b,
     suggestedUserIds: n,
     maxRowsWithoutQuery: 100,
     omitGuildId: i,
-    suggestedChannelIds: u,
+    suggestedChannelIds: d,
     inviteTargetType: o
   })
 }
 
 function O(e) {
-  b = e, E = new Map, e.forEach((e, t) => {
+  j = e, E = new Map, e.forEach((e, t) => {
     E.set(e, {
       index: t
     })
   })
 }
-class C extends(u = Chunk442837.ZP.Store) {
+class C extends(d = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z, Chunk752048.Z)
   }
   getInviteSuggestionRows() {
-    return b
+    return j
   }
   getTotalSuggestionsCount() {
     return l
@@ -75,27 +75,27 @@ class C extends(u = Chunk442837.ZP.Store) {
     if (null != t) return {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: b.length,
+      numTotal: j.length,
       numAffinityConnections: n.length,
       isFiltered: i
     }
   }
-}(d = "displayName") in C ? Object.defineProperty(C, d, {
+}(u = "displayName") in C ? Object.defineProperty(C, u, {
   value: "InviteSuggestionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : C[d] = "InviteSuggestionsStore";
+}) : C[u] = "InviteSuggestionsStore";
 let P = new C(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,
       guild: n,
-      channel: u,
-      applicationId: d,
+      channel: d,
+      applicationId: u,
       inviteTargetType: c
     } = e;
-    s = null != u ? n : null, r = u, a = d, o = c, j = new Set([...t, ...N.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
+    s = null != d ? n : null, r = d, a = u, o = c, b = new Set([...t, ...N.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
       channel: r,
       applicationId: a,
       inviteTargetType: c
@@ -104,7 +104,7 @@ let P = new C(Chunk570140.Z, {
       rows: g,
       counts: h
     } = T("");
-    O(g), y = h, l = b.length
+    O(g), y = h, l = j.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {

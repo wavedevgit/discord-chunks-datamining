@@ -191,7 +191,7 @@ function e_(e) {
     guildProductListingId: n
   } = e, r = (0, y.hO)(t, n, {
     requireCurrentGuild: false
-  }), o = (0, v.C)(r), s = (0, f.e7)([x.Z], () => x.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? z.intl.string(z.t.H11qcX) : o, c = a.useCallback(async () => {
+  }), o = (0, v.C)(r), s = (0, f.e7)([L.Z], () => L.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? z.intl.string(z.t.H11qcX) : o, c = a.useCallback(async () => {
     (null == s ? true : s.features.has(Y.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, A.Z)(Y.Z5c.GUILD_PRODUCT(t, n)) : await (0, A.Z)(Y.Z5c.CHANNEL(t)), (0, w.default)()
   }, [s, t, n]);
   return (0, i.jsxs)(i.Fragment, {
@@ -215,7 +215,7 @@ function ep(e) {
     guildProductListingId: a
   } = e, o = (0, y.hO)(r, a, {
     requireCurrentGuild: false
-  }), s = (0, f.e7)([O.Z], () => O.Z.getGuildProductFetchState(a) === O.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([L.Z], () => null != l ? L.Z.getRole(r, l) : true, [r, l]), u = (0, T.Z)({
+  }), s = (0, f.e7)([O.Z], () => O.Z.getGuildProductFetchState(a) === O.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([x.Z], () => null != l ? x.Z.getRole(r, l) : true, [r, l]), u = (0, T.Z)({
     guildId: r,
     productId: a
   }), d = (null != (n = null == o || null == (t = o.attachments) ? true : t.length) ? n : 0) > 0, h = null != c;
@@ -738,10 +738,10 @@ function em(e) {
     applicationStatistics: p,
     gameApplication: h,
     paymentSources: g
-  } = (0, f.cj)([M.Z, k.Z, m.Z], () => {
+  } = (0, f.cj)([M.Z, j.Z, m.Z], () => {
     var e, t;
     return {
-      applicationStatistics: null != u ? k.Z.getCurrentUserStatisticsForApplication(u) : null,
+      applicationStatistics: null != u ? j.Z.getCurrentUserStatisticsForApplication(u) : null,
       gameApplication: null != (t = m.Z.getApplication(null != u ? u : "")) ? t : null == (e = r.sku) ? true : e.application,
       paymentSources: M.Z.paymentSources
     }
@@ -749,10 +749,10 @@ function em(e) {
   a.useEffect(() => {
     _ && null != d && (0, N.UM)(d)
   }, [d, _]);
-  let y = (0, f.e7)([x.Z], () => x.Z.getGuild(null == h ? true : h.guildId)),
+  let y = (0, f.e7)([L.Z], () => L.Z.getGuild(null == h ? true : h.guildId)),
     O = c ? h : true,
     v = r.subscription,
-    I = (0, f.e7)([j.Z], () => null != v && v.type !== Y.NYc.PREMIUM ? j.Z.get(v.items[0].planId) : null);
+    I = (0, f.e7)([k.Z], () => null != v && v.type !== Y.NYc.PREMIUM ? k.Z.get(v.items[0].planId) : null);
   return (0, i.jsx)(eh, {
     applicationStatistics: p,
     application: _ ? E : O,

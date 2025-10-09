@@ -197,7 +197,7 @@ function et(e) {
   let {
     user: a,
     className: s
-  } = e, l = (0, v.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, f = j.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
+  } = e, l = (0, v.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, f = k.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
   i.useEffect(() => {
     m(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [f]);

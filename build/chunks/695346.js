@@ -5,16 +5,16 @@ require.d(exports, {
   A2: () => e0,
   AY: () => en,
   CM: () => eo,
-  CW: () => ex,
+  CW: () => eL,
   Cr: () => em,
   DC: () => es,
   Eo: () => eW,
   Ex: () => eU,
   Fg: () => J,
   G6: () => e_,
-  H1: () => L,
+  H1: () => x,
   HV: () => e1,
-  I0: () => j,
+  I0: () => k,
   JG: () => eZ,
   JN: () => er,
   JT: () => ea,
@@ -31,14 +31,14 @@ require.d(exports, {
   RS: () => eO,
   R_: () => eG,
   Rt: () => eJ,
-  SE: () => eL,
+  SE: () => ex,
   Sb: () => eC,
   Sh: () => eY,
   T4: () => D,
   UP: () => ed,
   Wp: () => ew,
   Xc: () => B,
-  Xk: () => x,
+  Xk: () => L,
   Xr: () => ef,
   YC: () => e$,
   Yk: () => eP,
@@ -54,7 +54,7 @@ require.d(exports, {
   d8: () => A,
   dN: () => b,
   eR: () => v,
-  eo: () => k,
+  eo: () => j,
   ev: () => $,
   fq: () => O,
   fv: () => N,
@@ -64,7 +64,7 @@ require.d(exports, {
   h2: () => X,
   hg: () => eX,
   iG: () => z,
-  iH: () => ej,
+  iH: () => ek,
   j7: () => ez,
   jU: () => ee,
   kJ: () => K,
@@ -74,7 +74,7 @@ require.d(exports, {
   mX: () => W,
   nc: () => eI,
   nh: () => eH,
-  no: () => ek,
+  no: () => ej,
   qF: () => M,
   rN: () => eT,
   rR: () => e2,
@@ -165,13 +165,13 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   P = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : R, e => e),
   w = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : R, e => e),
   D = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : R, e => e),
-  L = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
+  x = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  x = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
+  L = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -183,10 +183,10 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   }, e => o.D5.create({
     value: e
   })),
-  j = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
+  k = (0, Chunk560997.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  k = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
+  j = (0, Chunk560997.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
   U = "0",
@@ -518,12 +518,12 @@ let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     return null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
   })),
   eD = [],
-  eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e),
-  ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, {
+  ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e),
+  eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, {
     delay: Chunk526761.fy.FREQUENT_USER_ACTION
   }),
   eM = [],
-  ej = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eM, e => e);
+  ek = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eM, e => e);
 (0, Chunk560997.TG)({
   baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
   isEligible: () => (0, Chunk362352.o0)("user_settings"),
@@ -531,7 +531,7 @@ let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   ineligibleDefault: Chunk524437.E5.OFF,
   eligibleDefault: () => Chunk524437.E5.ON_FOR_LARGE_GUILDS
 });
-let ek = (0, Chunk560997.TG)({
+let ej = (0, Chunk560997.TG)({
     baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestrictedV2", e => e, e => null != e ? e : a.GI.ACTIVITY_STATUS_OFF),
     isEligible: () => (0, Chunk362352.o0)("user_settings"),
     useIsEligible: () => (0, Chunk362352.Yd)("user_settings"),

@@ -3,7 +3,6 @@
 "use strict";
 module.exports = {
   helpUrl: "helpUrl__0034b",
-  descriptionHeader: "descriptionHeader__0034b",
   description: "description__0034b",
   descriptionContainer: "descriptionContainer__0034b",
   descriptionAvatarContainer: "descriptionAvatarContainer__0034b",

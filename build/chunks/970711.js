@@ -13,9 +13,9 @@ require.d(exports, {
   B: () => ey,
   B8: () => I,
   BQ: () => eN,
-  C2: () => ek,
+  C2: () => ej,
   Cn: () => ea,
-  D7: () => eL,
+  D7: () => ex,
   DZ: () => ev,
   F8: () => em,
   G0: () => ts,
@@ -28,7 +28,7 @@ require.d(exports, {
   KJ: () => ta,
   Mc: () => ed,
   OU: () => eK,
-  On: () => ej,
+  On: () => ek,
   Or: () => tg,
   R7: () => e$,
   RC: () => eo,
@@ -37,7 +37,7 @@ require.d(exports, {
   S: () => ei,
   S6: () => J,
   Tc: () => e1,
-  UE: () => ex,
+  UE: () => eL,
   Ub: () => v,
   Uj: () => eC,
   V3: () => e3,
@@ -94,7 +94,7 @@ require.d(exports, {
   uX: () => ec,
   up: () => eH,
   vH: () => $,
-  vz: () => k,
+  vz: () => j,
   w7: () => eX,
   xB: () => Z,
   xH: () => eF,
@@ -285,15 +285,15 @@ function P(e, t, n, i) {
 }
 let w = ["bytes"],
   D = ["omit", "same-origin", "include"],
-  L = ["same-origin", "no-cors", "cors", "navigate"],
-  x = "undefined" == typeof FinalizationRegistry ? {
+  x = ["same-origin", "no-cors", "cors", "navigate"],
+  L = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
   } : new FinalizationRegistry(e => r.__wbg_blockeddomainsstore_free(e >>> 0, 1));
 class M {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, x.unregister(this), module
+    return this.__wbg_ptr = 0, L.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -311,14 +311,14 @@ class M {
     r.blockeddomainsstore_startFetchingBlockedDomains(t, n)
   }
 }
-let j = "undefined" == typeof FinalizationRegistry ? {
+let k = "undefined" == typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_experimentcacher_free(e >>> 0, 1));
-class k {
+class j {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, j.unregister(this), module
+    return this.__wbg_ptr = 0, k.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -668,13 +668,13 @@ function eD() {
   }, arguments)
 }
 
-function eL() {
+function ex() {
   return u(function(e) {
     return new Blob(e)
   }, arguments)
 }
 
-function ex(e) {
+function eL(e) {
   return e.next
 }
 
@@ -684,11 +684,11 @@ function eM() {
   }, arguments)
 }
 
-function ej(e, t, n) {
+function ek(e, t, n) {
   return e.open(l(t, n))
 }
 
-function ek(e, t) {
+function ej(e, t) {
   return e.push(t)
 }
 
@@ -755,7 +755,7 @@ function eQ(e, t, n) {
 }
 
 function eJ(e, t) {
-  e.mode = L[t]
+  e.mode = x[t]
 }
 
 function e$(e, t) {

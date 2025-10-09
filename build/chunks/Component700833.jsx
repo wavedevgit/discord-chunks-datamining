@@ -56,16 +56,16 @@ function p(e) {
     index: x,
     isDragEnabled: b,
     submittedGuildJoinRequestsCount: j,
-    removeFormField: _,
-    updateFormField: v,
+    removeFormField: v,
+    updateFormField: _,
     updateFormFieldOrder: C,
     canRemove: O,
     actionsLocation: y,
     fieldStyle: N
   } = e, E = async () => {
-    await _(x)
+    await v(x)
   }, I = async e => {
-    await v(x, e)
+    await _(x, e)
   }, S = async (e, t, n) => {
     await C(e, t, n)
   }, T = (0, i.uniqueId)(), P = t === x, w = {
@@ -92,22 +92,22 @@ function p(e) {
     fieldStyle: N
   };
   switch (p.field_type) {
-    case s.QJ.TERMS:
+    case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, g({
         channelId: f.rulesChannelId,
-        title: N === s.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
+        title: N === a.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
         formField: p
       }, w));
-    case s.QJ.PARAGRAPH:
+    case a.QJ.PARAGRAPH:
       return (0, r.jsx)(o.Z, g({
         formField: p
       }, w));
-    case s.QJ.TEXT_INPUT:
+    case a.QJ.TEXT_INPUT:
       return (0, r.jsx)(d.Z, g({
         formField: p
       }, w));
-    case s.QJ.MULTIPLE_CHOICE:
-      return (0, r.jsx)(a.Z, g({
+    case a.QJ.MULTIPLE_CHOICE:
+      return (0, r.jsx)(s.Z, g({
         formField: p
       }, w));
     default:
@@ -117,7 +117,7 @@ function p(e) {
 
 function f(e, t, i) {
   switch (e) {
-    case s.QJ.TERMS:
+    case a.QJ.TERMS:
       return (0, l.ZDy)(async () => {
         let {
           default: e
@@ -128,7 +128,7 @@ function f(e, t, i) {
           guild: i
         }))
       });
-    case s.QJ.PARAGRAPH:
+    case a.QJ.PARAGRAPH:
       return (0, l.ZDy)(async () => {
         let {
           ParagraphFormFieldModal: e
@@ -138,7 +138,7 @@ function f(e, t, i) {
           onSave: t
         }))
       });
-    case s.QJ.TEXT_INPUT:
+    case a.QJ.TEXT_INPUT:
       return (0, l.ZDy)(async () => {
         let {
           TextInputFormFieldModal: e
@@ -148,7 +148,7 @@ function f(e, t, i) {
           onSave: t
         }))
       });
-    case s.QJ.MULTIPLE_CHOICE:
+    case a.QJ.MULTIPLE_CHOICE:
       return (0, l.ZDy)(async () => {
         let {
           default: e
@@ -163,7 +163,7 @@ function f(e, t, i) {
 
 function h(e, t, i) {
   switch (e.field_type) {
-    case s.QJ.TERMS:
+    case a.QJ.TERMS:
       return (0, l.ZDy)(async () => {
         let {
           default: l
@@ -174,7 +174,7 @@ function h(e, t, i) {
           guild: i
         }))
       });
-    case s.QJ.PARAGRAPH:
+    case a.QJ.PARAGRAPH:
       return (0, l.ZDy)(async () => {
         let {
           ParagraphFormFieldModal: i
@@ -184,7 +184,7 @@ function h(e, t, i) {
           onSave: t
         }))
       });
-    case s.QJ.TEXT_INPUT:
+    case a.QJ.TEXT_INPUT:
       return (0, l.ZDy)(async () => {
         let {
           TextInputFormFieldModal: i
@@ -194,7 +194,7 @@ function h(e, t, i) {
           onSave: t
         }))
       });
-    case s.QJ.MULTIPLE_CHOICE:
+    case a.QJ.MULTIPLE_CHOICE:
       return (0, l.ZDy)(async () => {
         let {
           default: i

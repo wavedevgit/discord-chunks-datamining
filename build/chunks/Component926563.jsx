@@ -33,7 +33,7 @@ function b(e) {
     themeType: p.l.POPOUT,
     className: O.profilePreviewContainer,
     children: [(0, r.jsxs)("header", {
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(u.Z, {
         user: t,
         displayProfile: T,
         themeType: p.l.POPOUT
@@ -63,7 +63,7 @@ function b(e) {
         user: t,
         nickname: f.ZP.getName(null, null, t),
         pronouns: null == T ? true : T.pronouns,
-        tags: (0, r.jsx)(u.Z, {
+        tags: (0, r.jsx)(s.Z, {
           displayProfile: T,
           themeType: p.l.POPOUT
         })

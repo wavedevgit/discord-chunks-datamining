@@ -55,7 +55,7 @@ function b(e) {
   let {
     onSourceSelect: t
   } = e;
-  (0, f.UB)(), (0, m.Z)(t, x.Vq);
+  (0, f.UB)(), (0, h.Z)(t, x.Vq);
   let [{
     nativeSourceType: n
   }, i] = (0, p.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, g.jR);
@@ -74,7 +74,7 @@ function b(e) {
         children: _.intl.format(_.t.sbbPhY, {
           buttonName: _.intl.string(_.t.FiBjwc)
         })
-      }), (0, r.jsx)(h.Z, {})]
+      }), (0, r.jsx)(m.Z, {})]
     }) : (0, r.jsxs)("div", {
       className: v.sourceTypeButtons,
       children: [(0, r.jsx)(j, {

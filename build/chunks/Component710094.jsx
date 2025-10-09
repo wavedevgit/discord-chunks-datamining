@@ -35,14 +35,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk108626 = require("./108626.js");
-let x = 500;
+let L = 500;
 
 function M(e) {
   var t, n;
   let a, {
       handleStepChange: M,
-      trialId: j,
-      trialFooterMessageOverride: k,
+      trialId: k,
+      trialFooterMessageOverride: j,
       reviewWarningMessage: U,
       planGroup: G,
       openInvoiceId: B,
@@ -94,12 +94,12 @@ function M(e) {
     } = (0, b.zb)();
   o()(null != eu, "Step should be set");
   let eA = i.useRef(null),
-    [eC, eN] = (0, l.Z)(false, x),
-    eR = null != (n = null != j ? j : V) ? n : null,
+    [eC, eN] = (0, l.Z)(false, L),
+    eR = null != (n = null != k ? k : V) ? n : null,
     eP = null != eR && (!ef || P.nG[eR].skus.includes(ei)) ? eR : null,
     ew = (0, f.N)(V),
     eD = (0, d.Ng)(),
-    eL = {
+    ex = {
       user_trial_offer_id: null == ew ? true : ew.id
     };
   i.useEffect(() => {
@@ -107,7 +107,7 @@ function M(e) {
       behavior: "smooth"
     })
   }, [ee]);
-  let ex = i.useCallback((e, t, n) => {
+  let eL = i.useCallback((e, t, n) => {
       z(e), null != t && eh(t), null != n && em(n), M(E.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
@@ -116,8 +116,8 @@ function M(e) {
       })
     }, [M, z, eh, em]),
     eM = (0, A.m)(J, Q),
-    ej = null != er && P.o4.has(er.id) && null != eM && !(0, c.aQ)(eM) ? Error(D.intl.string(D.t["2ik8io"])) : null,
-    ek = i.useRef(null),
+    ek = null != er && P.o4.has(er.id) && null != eM && !(0, c.aQ)(eM) ? Error(D.intl.string(D.t["2ik8io"])) : null,
+    ej = i.useRef(null),
     [eU, eG] = i.useState(null),
     eB = !eO && null != ew && null != ei && P.nG[ew.trial_id].skus.includes(ei),
     eZ = null == eD || null == (t = eD.discount) ? true : t.plan_ids,
@@ -140,7 +140,7 @@ function M(e) {
     };
   return ep === w.GZ.ONE_TIME ? (eX = null == ea && null != Q || null != et, a = (0, r.jsx)(S.Z, {
     hasLegalTermsFlash: eC,
-    legalTermsNodeRef: ek,
+    legalTermsNodeRef: ej,
     onPaymentSourceChange: e => es(null != e ? e.id : null),
     handlePaymentSourceAdd: () => M(E.h8.ADD_PAYMENT_STEPS)
   })) : (eX = null == eE || !eO && null != eM && ep === w.GZ.SUBSCRIPTION && eB && !eM.canRedeemTrial(), null == K || eb || eO ? (o()(null != er, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
@@ -153,14 +153,14 @@ function M(e) {
     onCurrencyChange: e => eo(e),
     handlePaymentSourceAdd: () => M(E.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: e_,
-    legalTermsNodeRef: ek,
+    legalTermsNodeRef: ej,
     hasLegalTermsFlash: eC,
     trialId: eP,
-    trialFooterMessageOverride: k,
+    trialFooterMessageOverride: j,
     reviewWarningMessage: U,
     purchaseState: ed,
     referralTrialOfferId: V,
-    isTrial: eB || null != j && null != k,
+    isTrial: eB || null != k && null != j,
     isDiscount: eF,
     handleClose: W
   })) : (o()(null != er, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
@@ -173,7 +173,7 @@ function M(e) {
     onPaymentSourceAdd: eQ,
     planId: er.id,
     setHasAcceptedTerms: e_,
-    legalTermsNodeRef: ek,
+    legalTermsNodeRef: ej,
     hasLegalTermsFlash: eC,
     onInvoiceError: e => eG(e),
     planGroup: G,
@@ -189,7 +189,7 @@ function M(e) {
       isEligibleForTrial: eB
     }), (0, r.jsxs)(R.C3, {
       children: [ey && eY && (0, r.jsx)("div", {
-        className: L.bodyGradientPadding
+        className: x.bodyGradientPadding
       }), null != eS && eS, (0, r.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
@@ -200,12 +200,12 @@ function M(e) {
         premiumSubscription: null != K ? K : null,
         setPurchaseState: el,
         onBack: eq,
-        onNext: ex,
+        onNext: eL,
         onPurchaseError: e => ec(e),
-        legalTermsNodeRef: ek,
+        legalTermsNodeRef: ej,
         flashLegalTerms: () => eN(true),
         invoiceError: eU,
-        planError: ej,
+        planError: ek,
         analyticsLocation: F,
         baseAnalyticsData: Z,
         flowStartTime: q.startTime,
@@ -214,7 +214,7 @@ function M(e) {
         purchaseTokenAuthState: en,
         openInvoiceId: B,
         backButtonEligible: eK,
-        metadata: eL,
+        metadata: ex,
         isTrial: eB,
         disablePurchase: eX,
         onPaymentSourceAdd: eQ

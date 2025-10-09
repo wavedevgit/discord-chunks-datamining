@@ -4,17 +4,17 @@
 require.d(exports, {
   C1: () => H,
   Gh: () => Y,
-  N0: () => j,
-  T1: () => k,
+  N0: () => k,
+  T1: () => j,
   Tm: () => W,
   _Q: () => M,
   eL: () => K,
   eU: () => G,
-  em: () => x,
+  em: () => L,
   jv: () => q,
   rO: () => Q,
   sS: () => X,
-  yg: () => L,
+  yg: () => x,
   yi: () => U,
   yl: () => B,
   zq: () => z
@@ -84,7 +84,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function L(e) {
+async function x(e) {
   let {
     allowVoiceRecording: t
   } = e;
@@ -94,7 +94,7 @@ async function L(e) {
     type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE"
   })
 }
-async function x(e) {
+async function L(e) {
   let {
     clipsEnabled: t,
     guildId: n,
@@ -134,7 +134,7 @@ function M(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {
@@ -145,7 +145,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {

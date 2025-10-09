@@ -10,7 +10,6 @@ module.exports = {
   privateProfileWarning: "privateProfileWarning_a84c50",
   enableSwitchContainer: "enableSwitchContainer_a84c50",
   boostingLinkContainer: "boostingLinkContainer_a84c50",
-  sectionTitle: "sectionTitle_a84c50",
   section: "section_a84c50",
   tagContainer: "tagContainer_a84c50",
   tagTooltip: "tagTooltip_a84c50",

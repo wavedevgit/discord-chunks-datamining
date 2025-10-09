@@ -196,7 +196,8 @@ let O = () => 80,
           style: j(v({}, t), {
             position: "absolute"
           }),
-          children: (0, n.jsx)(o.vwX, {
+          children: (0, n.jsx)(o.Text, {
+            variant: "text-md/medium",
             children: r
           })
         })

@@ -6,9 +6,9 @@ require.d(exports, {
   Lk: () => Z,
   Xg: () => F,
   ZP: () => M,
-  c7: () => j,
+  c7: () => k,
   j3: () => V,
-  jO: () => k,
+  jO: () => j,
   ks: () => B
 }), require("./358797.js"), require("./539854.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -77,9 +77,9 @@ function D(e, t) {
   }), e
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -87,7 +87,7 @@ function L(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -122,17 +122,17 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   return (0, r.jsx)(M, D(P({}, e), {
     headerClassName: N.headerSuccess
   }))
 }
 
-function k(e) {
+function j(e) {
   var {
     guild: t,
     application: n
-  } = e, a = L(e, ["guild", "application"]);
+  } = e, a = x(e, ["guild", "application"]);
   let {
     onClose: o
   } = a, s = i.useCallback(() => {
@@ -180,7 +180,7 @@ function U(e) {
   var {
     guild: t,
     application: n
-  } = e, a = L(e, ["guild", "application"]);
+  } = e, a = x(e, ["guild", "application"]);
   let o = C.intl.string(C.t.se5gLi);
   i.useEffect(() => {
     O.default.track(A.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
@@ -198,7 +198,7 @@ function U(e) {
       className: N.authorizedSuccessSubtext,
       children: s
     });
-  return (0, r.jsx)(j, P({
+  return (0, r.jsx)(k, P({
     message: o,
     footer: l
   }, a))
@@ -207,7 +207,7 @@ function U(e) {
 function G(e) {
   var {
     application: t
-  } = e, n = L(e, ["application"]);
+  } = e, n = x(e, ["application"]);
   let {
     onClose: a
   } = n;

@@ -49,9 +49,9 @@ let E = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
     return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = O.intl.string(O.t.xO2msb)) : i = O.intl.formatToPlainString(O.t.nskeMz, {
-      percentage: (0, s.o)(Math.abs(t), n)
+      percentage: (0, a.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, s.o)(e, n)).concat(r ? "%" : "") : O.intl.string(O.t.jHpxws),
+      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : O.intl.string(O.t.jHpxws),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -59,7 +59,7 @@ let E = function(e, t, n) {
   },
   I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return t || e === v.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
+    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
       className: y.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
@@ -79,13 +79,13 @@ let E = function(e, t, n) {
         text: Chunk388032.intl.string(Chunk388032.t.Uskgx8),
         onClick: () => {
           exports(true), (function(e) {
-            x.default.track(v.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            x.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
-            let t = null == e ? v.E07.DEVELOPER_PORTAL : v.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
+            let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
               n = (0, l.Z)();
             return o.tn.post({
-              url: v.ANM.HANDOFF,
+              url: _.ANM.HANDOFF,
               body: {
                 key: n
               },
@@ -93,7 +93,7 @@ let E = function(e, t, n) {
               rejectWithError: true
             }).then(e => {
               let r = e.body.handoff_token;
-              window.open(v.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
+              window.open(_.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
             }, () => {
               window.open(t)
             })
@@ -111,7 +111,7 @@ let E = function(e, t, n) {
       n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)),
       l = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
       {
-        analytics: s,
+        analytics: a,
         errorCode: o
       } = (0, Chunk442837.cj)([Chunk743676.Z], () => ({
         analytics: null != module ? Chunk743676.Z.getOverviewAnalytics(module) : null,
@@ -142,11 +142,12 @@ let E = function(e, t, n) {
         }, E(Chunk640358.pctRetained, Chunk640358.pctRetainedChange, Chunk772848, true)))]
       })
     }) : null;
-    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H1,
-      title: Chunk388032.intl.string(Chunk388032.t["0wWfUF"]),
-      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-        type: Chunk481060.geA.DESCRIPTION,
+    return (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        children: Chunk388032.intl.string(Chunk388032.t["0wWfUF"])
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.NIZ60d, {})
       }), I(Chunk544891, T), (0, Chunk951288.jsxs)("div", {
         className: Chunk503562.developerPortalCtaWrapper,

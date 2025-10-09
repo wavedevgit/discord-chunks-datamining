@@ -43,20 +43,20 @@ let C = {
       innerClassName: P,
       isHighlighted: w,
       showStatus: D,
-      showPlaceholderUser: L,
-      pendingGlobalName: x,
+      showPlaceholderUser: x,
+      pendingGlobalName: L,
       pendingDisplayNameStyles: M,
-      avatarDecorationOverride: j,
-      nameplatePreviewSize: k = "default",
+      avatarDecorationOverride: k,
+      nameplatePreviewSize: j = "default",
       isPurchased: U = false,
       skipEffectDisplayName: G = false,
       width: B
     } = e, Z = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), F = null != a ? (0, v.EU)(a) : N, V = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), H = Z ? "#706F74" : "#aaaab2", Y = i.useRef(null), W = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), K = null != t ? (0, E.Ly)({
       pendingNickname: true,
-      pendingGlobalName: x,
+      pendingGlobalName: L,
       user: t,
       guildMember: W
-    }) : true, z = i.useMemo(() => C[k], [k]), q = (0, f.Z)({
+    }) : true, z = i.useMemo(() => C[j], [j]), q = (0, f.Z)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: M
@@ -73,19 +73,19 @@ let C = {
       children: (0, r.jsxs)(c.Rny, {
         className: o()(R, T.nameplatePreview, {
           [T.nameplatePurchased]: U && !w,
-          [T.large]: "large" === k,
-          [T.xlarge]: "xlarge" === k,
+          [T.large]: "large" === j,
+          [T.xlarge]: "xlarge" === j,
           [T.inheritWidth]: null != B
         }),
         children: [null != F && (0, r.jsx)(g.Z, {
           nameplate: F,
           hovered: w,
           placement: m.i.PREVIEW,
-          content: L ? true : Y
+          content: x ? true : Y
         }, null == a ? true : a.id), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(T.avatarContainer, !L && T.avatarVisible),
+            className: o()(T.avatarContainer, !x && T.avatarVisible),
             children: (0, r.jsx)(u.Z, {
               ref: Y,
               avatar: (0, r.jsx)(d.Z, {
@@ -94,8 +94,8 @@ let C = {
                 avatarSize: z,
                 status: D ? V : true,
                 "aria-hidden": true,
-                avatarDecorationOverride: null != j ? {
-                  asset: j.asset
+                avatarDecorationOverride: null != k ? {
+                  asset: k.asset
                 } : true
               }),
               decorators: (0, r.jsx)(h.ZP, {
@@ -113,7 +113,7 @@ let C = {
               withDisplayNameStyles: null != q
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(T.avatarContainer, L && T.avatarVisible),
+            className: o()(T.avatarContainer, x && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: Z ? S : A,
               size: z,

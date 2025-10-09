@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,12 +68,12 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = "???",
-  k = e => {
+let k = "???",
+  j = e => {
     let {
       analyticsLocations: t,
       startingScreen: i
@@ -84,7 +84,7 @@ let j = "???",
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, M(x({}, t), {
         startingScreen: i
       }))
     })
@@ -104,9 +104,9 @@ class U extends Chunk647438.Component {
   }
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : j,
+      t = null != module ? module.username : k,
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : j;
+      r = null != require ? require.username : k;
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t.Mptau7, {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf3"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxM"], {
@@ -170,9 +170,9 @@ class U extends Chunk647438.Component {
   render() {
     let e = () => {
         let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-          t = null != module ? module.username : j,
+          t = null != module ? module.username : k,
           n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-          r = null != require ? require.username : j;
+          r = null != require ? require.username : k;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
             headerText: Chunk388032.intl.formatToPlainString(Chunk388032.t.qABVhI, {
@@ -216,7 +216,7 @@ class U extends Chunk647438.Component {
         variant: "primary",
         disabled: false,
         size: "md",
-        onClick: () => k({
+        onClick: () => j({
           analyticsLocations: [],
           startingScreen: this.referralsSent.size === Chunk796634.Q ? Chunk656139.K.REMINDER : Chunk656139.K.SELECT_FRIENDS
         }),

@@ -2,7 +2,7 @@
 /** chunk id: 217597, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,21 +10,21 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk49792 = require("./49792.js");
 
-function a(e) {
+function s(e) {
   let {
     label: t,
     sublabel: n,
-    value: a,
+    value: s,
     additionalContent: o,
     tooltip: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.metricCard,
+    className: a.metricCard,
     "aria-label": t,
     children: [(0, r.jsxs)("div", {
-      className: s.metricCardLabelContainer,
+      className: a.metricCardLabelContainer,
       children: [(0, r.jsx)(l.Text, {
-        className: s.metricCardLabel,
+        className: a.metricCardLabel,
         variant: "text-xs/medium",
         color: "interactive-normal",
         "aria-hidden": true,
@@ -34,7 +34,7 @@ function a(e) {
         children: (0, r.jsx)(l.d3s, {
           size: "xs",
           color: "currentColor",
-          className: s.__invalid_labelTooltipIcon
+          className: a.__invalid_labelTooltipIcon
         })
       }), null != n ? (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -45,7 +45,7 @@ function a(e) {
       tag: "span",
       variant: "heading-xl/medium",
       color: "header-primary",
-      children: a
+      children: s
     }), o]
   })
 }

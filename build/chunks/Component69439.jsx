@@ -92,12 +92,12 @@ function S(e) {
   }), {
     isClaiming: Q,
     isEnrolling: M,
-    isQuestEnrollmentBlocked: W
+    isQuestEnrollmentBlocked: Z
   } = (0, o.cj)([g.Z], () => ({
     isClaiming: g.Z.isClaimingReward(w.id) || g.Z.isFetchingRewardCode(w.id),
     isEnrolling: g.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != g.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, U = (null == (n = w.userStatus) ? true : n.completedAt) != null, H = U && (null == (S = w.userStatus) ? true : S.claimedAt) == null, F = (0, p.iQ)(w), z = !(0, p.zi)(w), X = (0, m._Q)(w), G = (0, p.Xv)(w.config), K = (0, p.PB)(w), Y = (0, p.HJ)(w), J = (0, p.Vl)(w), $ = (0, m.Rf)(w), [ee, et, en] = (0, m.me)(w, $), er = z && X === m.OH.ACCEPTED, es = er && ee === f.LI.SELECT, eo = er && !es && et.length > 1, ea = s.useCallback(e => {
+  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, U = (null == (n = w.userStatus) ? true : n.completedAt) != null, H = U && (null == (S = w.userStatus) ? true : S.claimedAt) == null, F = (0, p.iQ)(w), z = !(0, p.zi)(w), X = (0, m._Q)(w), G = (0, p.Xv)(w.config), K = (0, p.PB)(w), Y = (0, p.HJ)(w), J = (0, p.Vl)(w), $ = (0, m.Rf)(w), [ee, et, en] = (0, m.me)(w, $), er = z && X === m.OH.ACCEPTED, es = er && ee === f.LI.SELECT, eo = er && !es && et.length > 1, ea = s.useCallback(e => {
     en(e), e === v.cd.DESKTOP && N([])
   }, [en, N]), {
     text: ei,
@@ -219,7 +219,7 @@ function S(e) {
       text: j.intl.string(j.t.BkZhUF),
       fullWidth: true
     })
-  }) : z && Z && !ep ? ef = es ? (0, r.jsx)(l.PhF, {
+  }) : z && W && !ep ? ef = es ? (0, r.jsx)(l.PhF, {
     className: C.platformSelectorPrimary,
     isSelected: () => false,
     options: y,
@@ -281,7 +281,7 @@ function S(e) {
       text: j.intl.string(j.t["9KoPyM"]),
       fullWidth: true
     })
-  }) : z && !Z && (ef = W ? (0, r.jsxs)(a.hE2, {
+  }) : z && !W && (ef = Z ? (0, r.jsxs)(a.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(a.zxk, {

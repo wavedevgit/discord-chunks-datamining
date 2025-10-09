@@ -2,7 +2,7 @@
 /** chunk id: 303628, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -92,8 +92,8 @@ function w(e) {
     smallAttachments: T = false
   } = e, A = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), R = (0, p.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
-    commandOptions: L,
-    commandOptionStates: x
+    commandOptions: x,
+    commandOptionStates: L
   } = (0, c.cj)([h.Z], () => {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
@@ -109,11 +109,11 @@ function w(e) {
     }
   }), M = i.useMemo(() => {
     var e;
-    return null != (e = null == L ? true : L.filter(e => {
+    return null != (e = null == x ? true : x.filter(e => {
       var t;
-      return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? true : t.hasValue)
+      return e.type === f.jw.ATTACHMENT && (null == L || null == (t = L[e.name]) ? true : t.hasValue)
     })) ? e : []
-  }, [L, x]), [j, k] = i.useState([]);
+  }, [x, L]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -129,7 +129,7 @@ function w(e) {
   });
   let G = {
       isApplicationCommand: D,
-      previousUploadOptions: j,
+      previousUploadOptions: k,
       uploadOptions: M
     },
     B = i.useRef(G);
@@ -147,7 +147,7 @@ function w(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), k(i)
+      }), j(i)
     }
   }, [t, M.length, n]);
   let Z = w.filter(e => e.filename !== a);
@@ -195,4 +195,4 @@ function D(e) {
     smallAttachments: o
   }) : null
 }
-let L = Chunk647438.memo(D)
+let x = Chunk647438.memo(D)

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $b: () => U,
-  Bu: () => j,
-  ES: () => k,
+  Bu: () => k,
+  ES: () => j,
   Gv: () => T,
   Hy: () => O,
   M8: () => I,
@@ -12,12 +12,12 @@ require.d(exports, {
   X6: () => G,
   kQ: () => Z,
   mR: () => y,
-  n$: () => x,
+  n$: () => L,
   np: () => C,
   ou: () => W,
   qH: () => D,
   tk: () => B,
-  y8: () => L
+  y8: () => x
 }), require("./388685.js"), require("./642613.js"), require("./415506.js");
 var Chunk624238 = require("./624238.js"),
   Chunk379405 = require("./379405.js"),
@@ -143,12 +143,12 @@ function D(e, t) {
   null == r.find(t => t.type === e) && (n ? u.Z.setPendingWidgets([t, ...r]) : u.Z.setPendingWidgets([...r, t]))
 }
 
-function L(e) {
+function x(e) {
   let t = R().filter(t => t.type !== e);
   u.Z.setPendingWidgets(t)
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   let r = Object.values(i._).length;
   if (n.length > r) return;
   let a = P(e);
@@ -171,10 +171,10 @@ function M(e, t, n) {
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
   let a = i.tags.filter(e => e !== n);
-  x(r.type, t, a.length > 0 ? a : [])
+  L(r.type, t, a.length > 0 ? a : [])
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   let r = P(e);
   if (null == r) return;
   let i = r.games.find(e => e.applicationId === t);
@@ -189,7 +189,7 @@ function j(e, t, n) {
   u.Z.setPendingWidgets(s)
 }
 
-function k(e, t) {
+function j(e, t) {
   var n, r, i;
   let a, s = P(e),
     c = T(e);

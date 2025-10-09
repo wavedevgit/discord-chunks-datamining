@@ -109,7 +109,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           names: e
         }) : e
       },
-      L = d && !R;
+      x = d && !R;
     return (0, r.jsx)(l.tEY, {
       children: (0, r.jsx)("button", A(T({}, P), {
         className: o()(v.emojiItem, {
@@ -133,7 +133,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           size: b,
           surrogateCodePoint: I,
           allowAnimatedEmoji: S,
-          isLocked: L
+          isLocked: x
         })
       }))
     })
@@ -155,11 +155,11 @@ function w(e) {
     selectedItemClassName: N,
     getEmojiItemProps: w,
     isMediumSize: D,
-    isLargeSize: L,
-    pulseItemKey: x,
+    isLargeSize: x,
+    pulseItemKey: L,
     allowAnimatedEmoji: M,
-    setPulseItemKey: j,
-    messageId: k,
+    setPulseItemKey: k,
+    messageId: j,
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
@@ -171,7 +171,7 @@ function w(e) {
   } = t, X = e => {
     if (e.stopPropagation(), y.current || v.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && j(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -201,21 +201,21 @@ function w(e) {
       ref: l,
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
-      isLargeSize: L,
+      isLargeSize: x,
       isMediumSize: D,
       isInspected: o,
       isDisabled: z,
-      showPulse: x === a,
+      showPulse: L === a,
       allowAnimatedEmoji: M,
       onFocus: null != u ? u : Q,
       onMouseMove: Q,
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != k && !e.shiftKey && null != W.name && U && !V && M) {
+        if (null != Y.current && null != G && null != j && !e.shiftKey && null != W.name && U && !V && M) {
           let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(R(q, f)), (0, m.U)(k, e, W.id, t)
+          t.x = G.x + (q + 1) * K, F(R(q, f)), (0, m.U)(j, e, W.id, t)
         }
         X(e)
       },

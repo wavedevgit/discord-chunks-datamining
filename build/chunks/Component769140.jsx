@@ -73,7 +73,7 @@ function Z(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), ea = $ || null == J ? ei : J;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(L.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == Y || null == W || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
@@ -91,7 +91,7 @@ function Z(e) {
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: H === x.BRd.LIGHT ? B : G
+          src: H === L.BRd.LIGHT ? B : G
         }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
@@ -100,7 +100,7 @@ function Z(e) {
             children: (0, b.P9)(et)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: er ? j.intl.string(j.t.uQZTBQ) : j.intl.string(j.t.pgUTZG)
+            children: er ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -127,7 +127,7 @@ function Z(e) {
       })
     },
     es = () => V !== M.l.MODAL && V !== M.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: k.details,
+      className: j.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
         guild: Y,
@@ -147,7 +147,7 @@ function Z(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": j.intl.string(j.t.jNqDh4)
+        "aria-label": k.intl.string(k.t.jNqDh4)
       }), V === M.l.MODAL_V2 && ec()]
     }),
     el = () => V === M.l.MODAL || V === M.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
@@ -158,16 +158,16 @@ function Z(e) {
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: k.actions,
+      className: j.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: X,
         onClose: F
       })
     }),
-    eu = null != z ? j.intl.formatToPlainString(j.t["4CQq9f"], {
+    eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9f"], {
       name: z.name
-    }) : j.intl.string(j.t["Jpkr/v"]);
+    }) : k.intl.string(k.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
@@ -181,15 +181,15 @@ function Z(e) {
         tags: (0, r.jsx)(m.ZP, {
           size: m.OH.SMALL
         }),
-        contextMenu: (0, r.jsx)(L.Z, {
+        contextMenu: (0, r.jsx)(x.Z, {
           display: "live",
           user: t,
           onClose: F
         })
       }), (0, r.jsxs)("div", {
-        className: k.body,
+        className: j.body,
         children: [(0, r.jsxs)("div", {
-          className: k.content,
+          className: j.content,
           children: [eo(), es(), V === M.l.MODAL && ec()]
         }), el()]
       }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && ec()]

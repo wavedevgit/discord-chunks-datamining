@@ -21,18 +21,18 @@ function g(e) {
     allPeriods: g
   } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
     includeSoftDeleted: true
-  }), f = (0, a.ue)(t, {
+  }), f = (0, s.ue)(t, {
     publishedOnly: false
   }), {
     allowSelfRemoveMonetization: h
-  } = (0, s.gX)(t), x = g.filter(e => {
+  } = (0, a.gX)(t), x = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), b = p.length > 0, j = f.length > 0, _ = x.length > 0;
+  }), b = p.length > 0, j = f.length > 0, v = x.length > 0;
   return null == m ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(l.R94, {
-      type: l.R94.Types.DESCRIPTION,
+    children: [(0, r.jsx)(l.Text, {
+      variant: "text-sm/normal",
       children: u.intl.format(u.t.fvOn6O, {
         guildName: m.name
       })
@@ -41,7 +41,7 @@ function g(e) {
     }), (0, r.jsx)(l.zxk, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSk),
-      disabled: !h || b || j || _,
+      disabled: !h || b || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

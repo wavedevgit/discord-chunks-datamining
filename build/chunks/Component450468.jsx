@@ -117,7 +117,7 @@ function T(e) {
           return []
       }
     },
-    L = () => {
+    x = () => {
       if (null == y) return (0, r.jsx)(c.$jN, {});
       switch (T) {
         case 1:
@@ -138,7 +138,7 @@ function T(e) {
       size: "sm",
       title: w(),
       actions: D(),
-      children: L()
+      children: x()
     })
   })
 }

@@ -8,8 +8,8 @@ require.d(exports, {
   Gu: () => B,
   JQ: () => A,
   NE: () => b,
-  RG: () => L,
-  Xb: () => j,
+  RG: () => x,
+  Xb: () => k,
   Xu: () => O,
   Y: () => G,
   cD: () => v,
@@ -17,7 +17,7 @@ require.d(exports, {
   kn: () => w,
   tM: () => E,
   tc: () => P,
-  xl: () => x,
+  xl: () => L,
   yw: () => U
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -120,13 +120,13 @@ function R(e, t, n) {
 
 function P(e) {
   let t = (0, o.e7)([p.Z], () => N(e, p.Z)),
-    n = j(e);
+    n = k(e);
   return R(e, t, n)
 }
 
 function w(e) {
   let t = N(e, p.Z),
-    n = k(e);
+    n = j(e);
   return R(e, t, n)
 }
 
@@ -136,12 +136,12 @@ function D(e) {
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && n)
 }
 
-function L(e) {
+function x(e) {
   var t;
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && p.Z.can(g.Plq.SEND_MESSAGES_IN_THREADS, e))
 }
 
-function x(e) {
+function L(e) {
   let t = p.Z.can(g.Plq.MANAGE_THREADS, e);
   return e.isArchivedLockedThread() && !t
 }
@@ -150,11 +150,11 @@ function M(e, t) {
   return null != e && t.can(g.Plq.MANAGE_THREADS, e)
 }
 
-function j(e) {
-  return (0, o.e7)([p.Z], () => k(e, [p.Z]))
+function k(e) {
+  return (0, o.e7)([p.Z], () => j(e, [p.Z]))
 }
 
-function k(e) {
+function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [p.Z],
     [n] = t;
   return M(e, n)
@@ -165,7 +165,7 @@ function U(e) {
     let t = _.Z.getChannel(e);
     if (null == t) returnfalse;
     let n = f.default.getId();
-    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || k(t, [p.Z])
+    return t.type === g.d4z.PRIVATE_THREAD && t.ownerId === n || j(t, [p.Z])
   })
 }
 
@@ -184,6 +184,6 @@ function G(e) {
 }
 
 function B(e) {
-  let t = j(e);
+  let t = k(e);
   return e.isLockedThread() && !t
 }

@@ -33,7 +33,7 @@ function u(e) {
           })
         }
         return e
-      }({}, (0, s.ZP)({
+      }({}, (0, a.ZP)({
         channelId: "1337",
         content: e
       })), n = n = {
@@ -49,7 +49,7 @@ function u(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      u = new a.Z({
+      u = new s.Z({
         id: "313337",
         username: c.intl.string(c.t.cqpybG),
         discriminator: "0000",

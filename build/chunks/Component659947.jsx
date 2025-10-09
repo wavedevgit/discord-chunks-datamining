@@ -127,7 +127,7 @@ function P(e) {
     l.current = a
   });
   let [u, d] = i.useState(null != (n = null == (t = a.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
-    (0, o.ZDy)(async () => e => (0, r.jsx)(L, O(b({}, e), {
+    (0, o.ZDy)(async () => e => (0, r.jsx)(x, O(b({}, e), {
       onSelect: e => {
         d(e), s.Z.setKeybind(O(b({}, l.current), {
           params: {
@@ -137,25 +137,27 @@ function P(e) {
       }
     })))
   }, []);
-  return (0, r.jsx)(o.hjN, {
-    title: m.intl.string(m.t.q4JpMz),
+  return (0, r.jsx)("div", {
     className: g.channelIdSection,
-    children: (0, r.jsxs)(c.Z, {
-      align: c.Z.Align.STRETCH,
-      children: [(0, r.jsx)("div", {
-        className: g.selectedVoiceChannel,
-        children: (0, r.jsx)(x, {
-          channelId: u
-        })
-      }), (0, r.jsx)(c.Z.Child, {
-        grow: 0,
-        shrink: 0,
-        children: (0, r.jsx)(o.zxk, {
-          variant: "primary",
-          text: m.intl.string(m.t.Dm8O4e),
-          onClick: f
-        })
-      })]
+    children: (0, r.jsx)(o.gNt, {
+      label: m.intl.string(m.t.q4JpMz),
+      children: (0, r.jsxs)(c.Z, {
+        align: c.Z.Align.STRETCH,
+        children: [(0, r.jsx)("div", {
+          className: g.selectedVoiceChannel,
+          children: (0, r.jsx)(L, {
+            channelId: u
+          })
+        }), (0, r.jsx)(c.Z.Child, {
+          grow: 0,
+          shrink: 0,
+          children: (0, r.jsx)(o.zxk, {
+            variant: "primary",
+            text: m.intl.string(m.t.Dm8O4e),
+            onClick: f
+          })
+        })]
+      })
     })
   })
 }
@@ -185,7 +187,7 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -215,9 +217,9 @@ function L(e) {
       row: S
     })
   }, [S]);
-  let L = null != v ? v.length : O.length;
+  let x = null != v ? v.length : O.length;
 
-  function x(e) {
+  function L(e) {
     let {
       row: t
     } = e, i = (() => {
@@ -262,13 +264,13 @@ function L(e) {
         break
       }
       case "arrowup":
-        0 === S ? P(L - 1) : P(S - 1);
+        0 === S ? P(x - 1) : P(S - 1);
         break;
       case "arrowdown":
-        S >= L - 1 ? P(0) : P(S + 1)
+        S >= x - 1 ? P(0) : P(S + 1)
     }
   }
-  let j = (() => {
+  let k = (() => {
     if (null != v) {
       var e;
       return null == (e = v[S]) ? true : e.id
@@ -292,18 +294,18 @@ function L(e) {
           placeholder: m.intl.string(m.t.tG0r7u),
           role: "combobox",
           "aria-controls": s,
-          "aria-expanded": L > 0,
-          "aria-activedescendant": L > 0 && null != j ? j : true,
+          "aria-expanded": x > 0,
+          "aria-activedescendant": x > 0 && null != k ? k : true,
           "aria-autocomplete": "list",
           spellCheck: false
         })
-      }), 0 === L && "" !== b && (0, r.jsx)(N, {}), (L > 0 || "" === b) && (0, r.jsx)(o.Tvr, {
+      }), 0 === x && "" !== b && (0, r.jsx)(N, {}), (x > 0 || "" === b) && (0, r.jsx)(o.Tvr, {
         innerId: s,
         innerRole: "listbox",
         "aria-label": m.intl.string(m.t["+N3fW1"]),
         ref: c,
-        sections: [L],
-        renderRow: x,
+        sections: [x],
+        renderRow: L,
         renderListHeader: C,
         renderFooter: A,
         sectionHeight: 0,
@@ -316,7 +318,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     channelId: t
   } = e, {

@@ -102,14 +102,14 @@ function T(e) {
       channel: t,
       className: o()(b.icon, f)
     }))
-  }), L = () => N ? A : C ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
+  }), x = () => N ? A : C ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
       className: a,
       canTruncate: v,
       hideTooltip: y,
-      children: [L(), R && null != A && " (".concat(A, ")")]
+      children: [x(), R && null != A && " (".concat(A, ")")]
     })]
   })
 }

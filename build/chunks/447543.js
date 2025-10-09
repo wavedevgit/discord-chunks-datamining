@@ -131,7 +131,7 @@ function e_(e, t, n) {
   var r, i;
   if ((null == n ? true : n.targetType) === er.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return et.oC.ROLE_SUBSCRIPTIONS;
   if ((null == n ? true : n.targetType) == null && !M.tx.has(t.type) && (0, T.s)(e)) return et.oC.GUILD_HOME;
-  let a = k.Z.getChannel(t.id);
+  let a = j.Z.getChannel(t.id);
   return F.Z.can($.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = U.ZP.getDefaultChannel(e, true, $.Plq.CREATE_INSTANT_INVITE)) ? true : r.id) ? i : t.id
 }
 
@@ -146,7 +146,7 @@ function ep(e, t) {
     source: D.Z.INVITE_ACCEPT,
     navigationReplace: true
   };
-  return null != i && (s.welcomeModalChannelId = i), o && (s.state = ei.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, L.uL)(e, s)
+  return null != i && (s.welcomeModalChannelId = i), o && (s.state = ei.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, x.uL)(e, s)
 }
 
 function eh(e) {
@@ -165,21 +165,21 @@ function eh(e) {
   if (!f && !_ && !(null == i ? true : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
   let {
     type: p
-  } = r, g = k.Z.getChannel(r.id), E = e_(t, r, i), y = p === $.d4z.GUILD_STAGE_VOICE, T = $.Z5c.CHANNEL(t, E);
+  } = r, g = j.Z.getChannel(r.id), E = e_(t, r, i), y = p === $.d4z.GUILD_STAGE_VOICE, T = $.Z5c.CHANNEL(t, E);
   M.tx.has(p) ? (0, O.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
       } = e, o = () => {
         if (y) {
-          (0, x.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, L.uL)(T);
+          (0, L.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, x.uL)(T);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && X.Z.setSelfMute(d.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
           streamType: en.lo.GUILD,
           ownerId: l,
           guildId: t,
           channelId: E
-        }), c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, L.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
+        }), c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
           channelId: E,
           applicationId: u,
           intent: null == i ? true : i.intent,
@@ -190,7 +190,7 @@ function eh(e) {
       };
       !f && (0, I.n)(t, [B.Z, H.default, G.ZP]) ? (0, v.hk)(t, o) : o()
     })
-  }) : (0, h.l5)(g) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, L.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
+  }) : (0, h.l5)(g) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
     channelId: E,
     applicationId: u,
     intent: null == i ? true : i.intent,
@@ -239,9 +239,9 @@ function eg(e, t, n) {
 }
 let eE = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
-    k.Z.addConditionalChangeListener(() => {
+    j.Z.addConditionalChangeListener(() => {
       var r;
-      let i = k.Z.getChannel(e),
+      let i = j.Z.getChannel(e),
         a = H.default.getCurrentUser();
       return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocal() && (0, E.RW)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? em(t) : eh({
         guildId: null != (r = i.getGuildId()) ? r : $.ME,
@@ -433,7 +433,7 @@ let ev = {
       context: i,
       callback: a,
       skipOnboarding: o
-    } = e, s = (0, R.fU)(r), l = s.baseCode, c = j.default.getSessionId(), d = ef(i, s), _ = H.default.getCurrentUser();
+    } = e, s = (0, R.fU)(r), l = s.baseCode, c = k.default.getSessionId(), d = ef(i, s), _ = H.default.getCurrentUser();
     return null != (t = null == _ ? true : _.hasFlag($.xW$.QUARANTINED)) && t ? ((0, w.default)(), new Promise((e, t) => t(Error()))) : (0, E.hO)(i.location_guild_id) ? ((0, g.mN)(ee.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l

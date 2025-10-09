@@ -53,12 +53,12 @@ function f(e) {
   let {
     channelBenefits: t,
     intangibleBenefits: i,
-    subscriptionListings: a,
+    subscriptionListings: s,
     onImport: f
   } = e, h = (0, d.mY)();
   return (0, r.jsx)("div", {
     className: g.container,
-    children: a.map(e => (0, r.jsxs)("div", {
+    children: s.map(e => (0, r.jsxs)("div", {
       className: g.row,
       children: [(0, r.jsx)("img", {
         alt: "",
@@ -66,12 +66,12 @@ function f(e) {
         className: l()(g.rowIcon, g.listingImage)
       }), (0, r.jsxs)("div", {
         className: g.rowBody,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "header-primary",
           className: l()(g.rowText, g.listingName),
           children: e.name
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: u.intl.format(u.t["QMj+Ii"], {
@@ -79,10 +79,10 @@ function f(e) {
             benefits: e.role_benefits.benefits.filter(c.lL).length
           })
         })]
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         variant: "secondary",
         onClick: () => {
-          (0, s.ZDy)(async () => {
+          (0, a.ZDy)(async () => {
             let {
               ImportBenefitsFromSubscriptionListingModal: l
             } = await n.e("31667").then(n.bind(n, 880229));
@@ -107,12 +107,12 @@ function h(e) {
     onImport: i,
     disabled: o = false
   } = e;
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     className: l()(g.importRoleCard, {
       [g.disabled]: o
     }),
     onClick: o ? true : function() {
-      (0, s.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           ImportBenefitsFromRoleModal: e
         } = await n.e("31667").then(n.bind(n, 880229));
@@ -123,19 +123,19 @@ function h(e) {
       })
     },
     "aria-disabled": o,
-    children: [(0, r.jsx)(s.lZ8, {
+    children: [(0, r.jsx)(a.lZ8, {
       size: "custom",
       width: 23,
       height: 23,
       color: "currentColor",
       className: g.rowIcon
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-primary",
       className: g.rowText,
       children: u.intl.string(u.t.xK9pBA)
-    }), (0, r.jsx)(a.Z, {
-      direction: a.Z.Directions.RIGHT,
+    }), (0, r.jsx)(s.Z, {
+      direction: s.Z.Directions.RIGHT,
       className: g.caret
     })]
   })

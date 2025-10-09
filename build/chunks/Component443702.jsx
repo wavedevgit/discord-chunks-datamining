@@ -2,7 +2,7 @@
 /** chunk id: 443702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -88,7 +88,7 @@ let D = () => (0, Chunk951288.jsx)("div", {
   className: Chunk61365.syncing,
   children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
 });
-class L extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk570140.Z.wait(() => {
       Chunk355467.tZ(), Chunk355467.jg()
@@ -125,12 +125,12 @@ class L extends Chunk647438.PureComponent {
         setting: Chunk726985.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, Chunk951288.jsx)("div", {
           className: Chunk61365.paymentHistory,
-          children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
-            component: (0, Chunk951288.jsx)(Chunk481060.vwX, {
-              tag: "h1",
+          children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+            gap: 16,
+            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+              variant: "heading-lg/semibold",
               children: Chunk388032.intl.string(Chunk388032.t.obLrcH)
-            }),
-            children: [(0, Chunk951288.jsx)(Chunk89057.oQ, {}), (0, Chunk951288.jsx)(Chunk231428.Z, {
+            }), (0, Chunk951288.jsx)(Chunk89057.oQ, {}), (0, Chunk951288.jsx)(Chunk231428.Z, {
               locale: Chunk442837
             })]
           })
@@ -146,7 +146,7 @@ class L extends Chunk647438.PureComponent {
   }
 }
 
-function x() {
+function L() {
   let e = (0, Chunk442837.cj)([Chunk706454.default, Chunk351402.Z, Chunk853872.Z, Chunk594174.default, Chunk246946.Z, Chunk78839.Z], () => {
       let e = Chunk78839.Z.getPremiumTypeSubscription(),
         t = Chunk594174.default.getCurrentUser();
@@ -171,7 +171,7 @@ function x() {
   let {
     shouldRenderBillingSettings: n
   } = module, i = P(module, ["shouldRenderBillingSettings"]);
-  return (0, Chunk951288.jsx)(L, R(C({}, Chunk647438), {
+  return (0, Chunk951288.jsx)(x, R(C({}, Chunk647438), {
     navigateTo: exports
   }))
 }

@@ -48,7 +48,7 @@ function B(e) {
       application: d,
       channelId: I,
       guildId: w,
-      message: L
+      message: x
     } = e,
     {
       analyticsLocations: B
@@ -79,7 +79,7 @@ function B(e) {
     J = null == Q ? true : Q.details,
     $ = i.useMemo(() => {
       let e = new T.ZP(d);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = j.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [d]),
     ee = (0, h.s5)({
       userId: Y,
@@ -87,7 +87,7 @@ function B(e) {
       application: $
     }),
     et = null == W,
-    en = (0, x.NL)({
+    en = (0, L.NL)({
       embeddedActivity: W,
       joinability: ee,
       currentEmbeddedActivity: K,
@@ -196,17 +196,17 @@ function B(e) {
     onClickContent: es,
     trackingConfig: {
       id: d.id,
-      linkType: k.U.ACTIVITY_INSTANCE,
+      linkType: j.U.ACTIVITY_INSTANCE,
       guildId: w,
       channelId: I,
-      messageId: L.id
+      messageId: x.id
     }
   })
 }
 let Z = Chunk647438.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), a = (0, L.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
+  } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {

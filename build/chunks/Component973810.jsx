@@ -22,10 +22,10 @@ function g(e) {
     setSlide: g,
     onClose: m,
     headerAlignStart: p
-  } = e, [x, S] = r.useState(false), [b, j] = r.useState(null), {
+  } = e, [x, b] = r.useState(false), [S, j] = r.useState(null), {
     challenge: y
   } = t.methods.find(e => "webauthn" === e.type), v = async () => {
-    S(true), j(null);
+    b(true), j(null);
     let e = o.isPlatformEmbedded && c.ZP.supportsFeature(h.eRX.WEBAUTHN) ? c.ZP.webAuthnAuthenticate(y) : i.U2(JSON.parse(y)).then(e => JSON.stringify(e)),
       t = async e => {
         try {
@@ -43,16 +43,16 @@ function g(e) {
     } catch (e) {
       d.Z.captureException(e), j(f.intl.string(f.t.xSCvBQ))
     } finally {
-      S(false)
+      b(false)
     }
   };
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(u.Z.SlideHeader, {
       onClose: m,
       headerAlignStart: p
-    }), null != b && (0, l.jsx)(u.Z.SlideContent, {
+    }), null != S && (0, l.jsx)(u.Z.SlideContent, {
       children: (0, l.jsx)(u.Z.SlideError, {
-        error: b
+        error: S
       })
     }), (0, l.jsx)(u.Z.SlideFooter, {
       mfaChallenge: t,

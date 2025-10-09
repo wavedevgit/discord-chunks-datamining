@@ -54,7 +54,7 @@ function x(e) {
   let {
     rule: x,
     onChangeRule: b
-  } = e, [j, _] = i.useState(null == (t = x.triggerMetadata) ? true : t.mentionTotalLimit), v = (0, a.a)(x.guildId, false);
+  } = e, [j, v] = i.useState(null == (t = x.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, s.a)(x.guildId, false);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
@@ -64,17 +64,17 @@ function x(e) {
         className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
           className: p.mentionLimitIconContainer,
-          children: (0, r.jsx)(s.lOy, {
+          children: (0, r.jsx)(a.lOy, {
             size: "md",
             color: "currentColor",
             className: p.mentionLimitIcon
           })
         }), (0, r.jsxs)("div", {
           className: p.mentionLimitTextContainer,
-          children: [(0, r.jsx)(s.X6q, {
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-sm/semibold",
             children: m.intl.string(m.t["s/26oa"])
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(a.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
             className: p.descriptionHint,
@@ -82,10 +82,10 @@ function x(e) {
           })]
         }), (0, r.jsx)("div", {
           className: p.stepperContainer,
-          children: (0, r.jsx)(s.FiK, {
+          children: (0, r.jsx)(a.FiK, {
             value: j,
             onChange: e => {
-              _(e), b(h(f({}, x), {
+              v(e), b(h(f({}, x), {
                 triggerMetadata: h(f({}, x.triggerMetadata), {
                   mentionTotalLimit: e
                 })
@@ -96,21 +96,21 @@ function x(e) {
             className: p.stepper
           })
         })]
-      }), v ? (0, r.jsxs)("div", {
+      }), _ ? (0, r.jsxs)("div", {
         className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
           className: p.mentionLimitIconContainer,
-          children: (0, r.jsx)(s.S4f, {
+          children: (0, r.jsx)(a.S4f, {
             size: "md",
             color: "currentColor",
             className: p.mentionLimitIcon
           })
         }), (0, r.jsxs)("div", {
           className: p.mentionLimitTextContainer,
-          children: [(0, r.jsx)(s.X6q, {
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-sm/semibold",
             children: m.intl.string(m.t.XnuC9v)
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(a.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
             className: p.descriptionHint,

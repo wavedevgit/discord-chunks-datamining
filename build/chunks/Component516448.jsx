@@ -26,9 +26,9 @@ function b(e) {
   } = e, {
     editStateId: n,
     guildId: b
-  } = (0, a.N)(), [j, _] = o.UE(n), [v, C] = o.R7(n), O = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+  } = (0, s.N)(), [j, v] = o.UE(n), [_, C] = o.R7(n), O = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: y
-  } = (0, c.Z)(b), N = (0, s.mY)();
+  } = (0, c.Z)(b), N = (0, a.mY)();
   return (0, r.jsx)(d.Z, {
     title: x.intl.string(x.t.YNw2Sk),
     description: x.intl.string(x.t.zMW5r6),
@@ -40,15 +40,15 @@ function b(e) {
         description: x.intl.string(x.t.kHalVF),
         children: [(0, r.jsx)(u.Z, {
           channelBenefits: j,
-          intangibleBenefits: v,
+          intangibleBenefits: _,
           subscriptionListings: O,
           onImport: function(e, t) {
-            _(t => t.concat(e)), C(e => e.concat(t))
+            v(t => t.concat(e)), C(e => e.concat(t))
           }
         }), (0, r.jsx)(u.w, {
           guildId: b,
           onImport: function(e) {
-            _(t => {
+            v(t => {
               let n = new Set(t.map(e => {
                 let {
                   ref_id: t

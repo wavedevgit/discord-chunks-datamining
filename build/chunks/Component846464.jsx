@@ -3,9 +3,8 @@
 require.d(exports, {
   q: () => v
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk140465 = require("./140465.js"),
@@ -107,8 +106,8 @@ function y(e) {
   } = e, f = h ? (0, r.jsx)(l.X6q, {
     variant: "heading-lg/bold",
     children: j.intl.string(j.t["r+SebW"])
-  }) : (0, r.jsx)(l.vwX, {
-    tag: l.RB0.H4,
+  }) : (0, r.jsx)(l.X6q, {
+    variant: "heading-md/semibold",
     children: j.intl.string(j.t["r+SebW"])
   }), {
     giftRecipient: m
@@ -116,18 +115,22 @@ function y(e) {
     location: "PremiumPaymentSelect"
   }) && i && null != m;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(l.xBx, {
+    children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalHeader, {
         [b.premiumBrandRefreshHeader]: h
       }),
       separator: false,
-      children: [f, (0, r.jsx)(l.olH, {
-        "data-migration-pending": true,
-        className: b.close,
-        innerClassName: b.closeInner,
-        onClick: n
-      })]
+      children: (0, r.jsxs)(l.Kqy, {
+        direction: "horizontal",
+        justify: "space-between",
+        children: [f, (0, r.jsx)(l.olH, {
+          "data-migration-pending": true,
+          className: b.close,
+          innerClassName: b.closeInner,
+          onClick: n
+        })]
+      })
     }), (0, r.jsx)(l.hzk, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalContent, {

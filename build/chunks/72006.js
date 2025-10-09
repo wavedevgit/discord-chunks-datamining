@@ -5,14 +5,14 @@ require.d(exports, {
   FZ: () => D,
   Hl: () => B,
   NJ: () => M,
-  R8: () => k,
+  R8: () => j,
   Sq: () => N,
   Wg: () => U,
   Zn: () => C,
-  c2: () => L,
-  eE: () => j,
+  c2: () => x,
+  eE: () => k,
   iE: () => Z,
-  iK: () => x,
+  iK: () => L,
   l8: () => w,
   lv: () => R,
   m1: () => G,
@@ -158,25 +158,25 @@ function D(e) {
   return null != n && n.hasFocus && (t = r.EditorState.moveFocusToEnd(t)), t
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = N(t);
   return S(e, t, 0, n.length)
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = t.getSelection();
   return n = (n = n.set("focusOffset", e)).set("anchorOffset", e), r.EditorState.forceSelection(t, n)
 }
 
 function M(e) {
-  return x(e.getCurrentContent().getFirstBlock().getText().length, e)
-}
-
-function j(e) {
-  return x(0, e)
+  return L(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
 function k(e) {
+  return L(0, e)
+}
+
+function j(e) {
   let t = e.getSelection();
   return t = (t = t.set("focusOffset", 0)).set("isBackward", true), r.EditorState.forceSelection(e, t)
 }

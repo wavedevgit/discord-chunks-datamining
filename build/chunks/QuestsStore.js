@@ -16,7 +16,7 @@ var A, Chunk392711 = require("./392711.js"),
   Chunk5881 = require("./5881.js"),
   Chunk46140 = require("./46140.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -143,12 +143,12 @@ function et(e) {
   } = e;
   c = Date.now(), r = false, o = new Map;
   let a = new Map;
-  for (let e of t) o.set(e.id, e), a.set(e.id, (0, D.zi)(e)), e.targetedContent.includes(L.jn.QUEST_BAR) && (0, M.T)({
-    location: j.dr.QUESTS_STORE
+  for (let e of t) o.set(e.id, e), a.set(e.id, (0, D.zi)(e)), e.targetedContent.includes(x.jn.QUEST_BAR) && (0, M.T)({
+    location: k.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (s = new Map, n)) s.set(e.id, e);
   for (let e of null == S ? true : S.values()) o.has(e.id) || (o.set(e.id, e), a.set(e.id, (0, D.zi)(e)));
-  I = a, ek(), T = null != i ? new Date(i) : null
+  I = a, ej(), T = null != i ? new Date(i) : null
 }
 
 function en() {
@@ -338,7 +338,7 @@ function eN(e) {
   let {
     user_status: t
   } = e, n = (0, M.T)({
-    location: j.dr.QUESTS_STORE
+    location: k.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
   let r = (0, D.U3)(t);
@@ -359,7 +359,7 @@ function eR(e) {
   } = e;
   K(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (g = new Map(g)).delete(t.questId), null == t.enrolledAt && ((O = new Map(O)).delete(t.questId), x.ZP.getState().resetQuest(t.questId));
+  }), null == t.claimedAt && (g = new Map(g)).delete(t.questId), null == t.enrolledAt && ((O = new Map(O)).delete(t.questId), L.ZP.getState().resetQuest(t.questId));
   let n = o.get(t.questId);
   if (null != n) {
     let e = (0, D.zi)(n);
@@ -392,14 +392,14 @@ function eD(e) {
   a.set(r, i), Z.set(n, a)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     questId: t
   } = e;
-  Z.has(t) && Z.delete(t), x.ZP.getState().resetQuest(t)
+  Z.has(t) && Z.delete(t), L.ZP.getState().resetQuest(t)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     quest: t,
     placement: n,
@@ -422,7 +422,7 @@ function eM(e) {
   v.delete(t), u = Date.now(), i = false
 }
 
-function ej() {
+function ek() {
   let e = false,
     t = new Map(I);
   o.forEach((n, r) => {
@@ -430,9 +430,9 @@ function ej() {
   }), module && (I = exports, eZ.emitChange())
 }
 
-function ek() {
-  null === F && (ej(), F = setInterval(() => {
-    ej()
+function ej() {
+  null === F && (ek(), F = setInterval(() => {
+    ek()
   }, H))
 }
 
@@ -533,7 +533,7 @@ class eB extends(A = Chunk442837.ZP.Store) {
     return S.get(e)
   }
 }
-k(eB, "displayName", "QuestsStore");
+j(eB, "displayName", "QuestsStore");
 let eZ = new eB(Chunk570140.Z, {
     LOGOUT: $,
     QUESTS_FETCH_CURRENT_QUESTS_BEGIN: ee,
@@ -543,7 +543,7 @@ let eZ = new eB(Chunk570140.Z, {
     QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: el,
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: ec,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: er,
-    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: ex,
+    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eL,
     QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eM,
     QUESTS_FETCH_PREVIEW_BEGIN: ei,
     QUESTS_FETCH_PREVIEW_SUCCESS: ea,
@@ -569,7 +569,7 @@ let eZ = new eB(Chunk570140.Z, {
     QUESTS_DELIVERY_OVERRIDE: eP,
     QUESTS_SELECT_TASK_PLATFORM: ew,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eD,
-    QUESTS_RESET_OPTIMISTIC_PROGRESS: eL,
+    QUESTS_RESET_OPTIMISTIC_PROGRESS: ex,
     QUESTS_USER_COMPLETION_UPDATE: eG
   }),
   eF = eZ

@@ -1,12 +1,12 @@
 /** Chunk was on 56035 **/
 /** chunk id: 203437, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -30,7 +30,7 @@ function _(e) {
     className: t
   } = e;
   return (0, a.jsxs)(s.Text, {
-    className: r()(w.suffixNode, t),
+    className: i()(w.suffixNode, t),
     variant: "text-sm/medium",
     color: "text-primary",
     children: [(0, a.jsx)(s.gj8, {
@@ -43,11 +43,12 @@ function _(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let {
-    value: n,
-    className: t,
-    onChange: i
+    label: n,
+    value: t,
+    className: r,
+    onChange: C
   } = e, N = (0, o.cj)([m.ZP, f.Z, g.default, d.Z], () => {
     let e = {};
     for (let n of m.ZP.getFlattenedGuildIds()) {
@@ -55,19 +56,19 @@ function N(e) {
       null != t && (0, c.Gw)(t, f.Z, g.default).canCreateExpressions && (e[t.id] = t)
     }
     return e
-  }), C = (0, o.cj)([b.Z], () => {
+  }), S = (0, o.cj)([y.Z], () => {
     let e = {};
     for (let [t, a] of p.default.entries(N)) {
       var n;
-      let l = (0, h.yw)(a, null != (n = b.Z.getSoundsForGuild(t)) ? n : v.Hy, a.premiumTier);
+      let l = (0, h.yw)(a, null != (n = y.Z.getSoundsForGuild(t)) ? n : v.Hy, a.premiumTier);
       e[t] = l
     }
     return e
   }, [N]);
   l.useEffect(() => {
-    (0, y.w)()
+    (0, b.w)()
   }, []);
-  let S = l.useMemo(() => Object.values(N).map(e => {
+  let O = l.useMemo(() => Object.values(N).map(e => {
       let {
         name: n,
         id: t
@@ -75,48 +76,49 @@ function N(e) {
       return {
         label: n,
         value: t,
-        disabled: C[t] <= 0
+        disabled: S[t] <= 0
       }
-    }), [N, C]),
-    O = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
-      className: r()(w.guildSelectOptionIcon, {
+    }), [N, S]),
+    E = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
+      className: i()(w.guildSelectOptionIcon, {
         [w.disabledOption]: e.disabled
       }),
       guild: N[e.value],
       size: u.Z.Sizes.SMOL,
       active: true
     }), [N]),
-    E = l.useCallback(e => {
+    P = l.useCallback(e => {
       let n = null == e ? true : e.value;
       return null == n || "" === n ? null : (0, a.jsx)(_, {
-        className: r()({
+        className: i()({
           [w.disabledOption]: null == e ? true : e.disabled
         }),
-        availableSlots: C[n]
+        availableSlots: S[n]
       })
-    }, [C]),
-    P = l.useCallback(e => (0, a.jsx)("div", {
-      className: r()({
+    }, [S]),
+    I = l.useCallback(e => (0, a.jsx)("div", {
+      className: i()({
         [w.disabledOption]: e.disabled
       }),
       children: e.label
     }), []),
-    I = l.useCallback(e => {
-      C[e] <= 0 || i(e)
-    }, [C, i]),
+    M = l.useCallback(e => {
+      S[e] <= 0 || C(e)
+    }, [S, C]),
     Z = (() => {
-      let e = C[null != n ? n : x.lds];
-      return null == e || e > 0 ? n : true
+      let e = S[null != t ? t : x.lds];
+      return null == e || e > 0 ? t : true
     })();
   return (0, a.jsx)(s.VcW, {
-    className: t,
-    onChange: I,
+    label: n,
+    className: r,
+    onChange: M,
     value: Z,
     multi: false,
-    options: S,
-    renderOptionPrefix: O,
-    renderOptionSuffix: E,
-    renderOptionLabel: P,
-    placeholder: 0 === S.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
+    options: O,
+    renderOptionPrefix: E,
+    renderOptionSuffix: P,
+    renderOptionLabel: I,
+    placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
   })
 }

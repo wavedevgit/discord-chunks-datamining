@@ -67,10 +67,10 @@ function E(e) {
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
-  } = e, T = E.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = E.features.has(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
+  } = e, T = E.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
     guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
-    R(null), f.Z.init(T, v.pNK.ACCESS)
+    R(null), f.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
       w(true), await e(), R(null)
@@ -84,7 +84,7 @@ function E(e) {
       })
     } catch (e) {
       throw "object" == typeof e && "message" in e ? R(e.message) : R(O.intl.formatToPlainString(O.t.aTVNen, {
-        statusPageURL: v.yXt.STATUS
+        statusPageURL: _.yXt.STATUS
       })), e
     }
   }, [T]), M = i.useCallback(async (e, t, n) => {
@@ -102,8 +102,8 @@ function E(e) {
     }] : [];
     await M(r, e, n)
   }, [M]), B = i.useCallback(e => {
-    if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === v.V_K.AGE_RESTRICTED) && k(async () => {
-        let e = l.isAgeRestricted ? v.V_K.AGE_RESTRICTED : v.V_K.DEFAULT;
+    if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
+        let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
         await G({
           ownerConfiguredContentLevel: e
         })
@@ -113,9 +113,9 @@ function E(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (E.features.has(v.oNc.DISCOVERABLE)) {
+        if (E.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(E.features);
-          e.delete(v.oNc.DISCOVERABLE), await G({
+          e.delete(_.oNc.DISCOVERABLE), await G({
             features: e
           })
         }
@@ -127,9 +127,9 @@ function E(e) {
       } = l;
       if (null == t) return;
       k(async () => {
-        if (E.features.has(v.oNc.DISCOVERABLE)) {
+        if (E.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(E.features);
-          e.delete(v.oNc.DISCOVERABLE), await G({
+          e.delete(_.oNc.DISCOVERABLE), await G({
             features: e
           })
         }
@@ -146,7 +146,7 @@ function E(e) {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
           (0, x.UA)(E, b);
           let e = new Set(E.features);
-          e.add(v.oNc.DISCOVERABLE), e.delete(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
+          e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
             features: e,
             discoverySplash: E.discoverySplash,
             description: E.description,
@@ -173,7 +173,7 @@ function E(e) {
     }
     if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void R(O.intl.string(O.t.HGVrIy));
     (e => {
-      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
+      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, a.ZDy)(async () => {
         let {
           default: t
         } = await n.e("55009").then(n.bind(n, 826390));
@@ -185,7 +185,7 @@ function E(e) {
       });
       e()
     })(e => (e => {
-      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
+      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
         let {
           default: t
         } = await n.e("67376").then(n.bind(n, 207252));
@@ -196,8 +196,8 @@ function E(e) {
       });
       e()
     })(() => B(e)))
-  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== C.o3 && I.keywords.length > 0;
-  return (0, r.jsx)(a.Z, {
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== C.o3 && I.keywords.length > 0;
+  return (0, r.jsx)(s.Z, {
     message: H ? O.intl.string(O.t.V2G2Ym) : true,
     onSaveText: H ? O.intl.string(O.t["qjtt/v"]) : true,
     submitting: P,
@@ -218,7 +218,7 @@ function I() {
   })), {
     settingsGuild: n,
     settingsMetadata: i,
-    originalGuild: s,
+    originalGuild: a,
     guildProfile: o
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => {
     let {

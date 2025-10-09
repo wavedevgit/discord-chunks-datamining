@@ -2,8 +2,8 @@
 /** chunk id: 603270, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => x,
-  P: () => L
+  F: () => L,
+  P: () => x
 }), require("./388685.js"), require("./997841.js"), require("./953529.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,7 +76,7 @@ function D(e, t) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     appId: t,
     message: a
@@ -128,7 +128,7 @@ function L(e) {
         area: "open_store_button"
       })
     },
-    L = () => {
+    x = () => {
       (0, I.X)(t, I.B.STORE_EMBED)
     };
   return (0, r.jsx)(M, {
@@ -138,7 +138,7 @@ function L(e) {
     }),
     description: S,
     link: "".concat(location.protocol, "//").concat(location.host).concat(A.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, C.GlobalDiscoveryAppsSections.STORE)),
-    onLinkCopy: L,
+    onLinkCopy: x,
     iconSrc: E,
     onIconClick: w,
     children: (0, r.jsx)("div", {
@@ -151,7 +151,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, a;
   let {
     appId: o,
@@ -168,15 +168,15 @@ function x(e) {
     var e;
     return null == (e = h.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
   }, [u]), P = i.useMemo(() => null != b ? (0, v.y)(b, 45) : true, [b]), w = (0, T.R)(null != (a = null == b ? true : b.id) ? a : ""), {
-    openModal: L,
-    subscriptionPurchaseButtonState: x
+    openModal: x,
+    subscriptionPurchaseButtonState: L
   } = (0, p.Z)({
     skuId: c,
     initialSubscribeForGuild: O
   });
   if (!w || null == b || null == m) return null;
-  let j = m.type === A.epS.SUBSCRIPTION,
-    k = !!j && (0, _.KW)(m.flags),
+  let k = m.type === A.epS.SUBSCRIPTION,
+    j = !!k && (0, _.KW)(m.flags),
     U = () => {
       (0, l.ZDy)(async () => {
         let {
@@ -192,8 +192,8 @@ function x(e) {
     },
     G = () => {
       (0, l.ZDy)(async () => {
-        let e = j ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
-          t = j ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
+        let e = k ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
+          t = k ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
         return n => {
           let i = () => {
             n.onClose(), U()
@@ -203,7 +203,7 @@ function x(e) {
             appId: b.id,
             skuId: m.id,
             guildId: O,
-            subscriptionType: k ? "user" : "guild",
+            subscriptionType: j ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
           }) : null != t ? (0, r.jsx)(t, {
@@ -217,7 +217,7 @@ function x(e) {
       })
     },
     B = 12,
-    Z = j ? k ? (0, r.jsxs)(r.Fragment, {
+    Z = k ? j ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "custom",
         width: B,
@@ -269,15 +269,15 @@ function x(e) {
         variant: "secondary",
         onClick: V,
         text: N.intl.string(N.t.DXYfjI)
-      }), j ? null != g ? (0, r.jsx)(S.pV, {
-        onClick: L,
+      }), k ? null != g ? (0, r.jsx)(S.pV, {
+        onClick: x,
         appId: b.id,
-        subscriptionType: k ? "user" : "guild",
+        subscriptionType: j ? "user" : "guild",
         skuId: m.id,
         icon: l.EOn,
         onHasClicked: H,
         subscriptionPlan: g,
-        state: x
+        state: L
       }) : (0, r.jsx)(l.zxk, {
         variant: "primary",
         text: N.intl.string(N.t.uuzaAA),

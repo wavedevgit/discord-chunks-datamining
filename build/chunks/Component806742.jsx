@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 let b = function(e) {
   let {
     guildId: t
-  } = e, l = (0, a.cj)([p.Z], () => {
+  } = e, l = (0, s.cj)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSettings().welcomeMessage) ? e : f.z
   }), b = i.useCallback(() => (0, c.ZDy)(async () => {
@@ -30,7 +30,7 @@ let b = function(e) {
       default: e
     } = await n.e("36371").then(n.bind(n, 893626));
     return n => {
-      var i, s;
+      var i, a;
       return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -48,22 +48,22 @@ let b = function(e) {
           })
         }
         return e
-      }({}, n), s = s = {
+      }({}, n), a = a = {
         guildId: t,
         welcomeMessage: l,
         onSave: e => (0, m._N)(e)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
       }), i))
     }
-  }), [t, l]), j = (0, a.e7)([g.default], () => g.default.getId());
+  }), [t, l]), j = (0, s.e7)([g.default], () => g.default.getId());
   return (0, d.pw)(l) ? (0, r.jsx)(c.zxk, {
     variant: "primary",
     size: "sm",
@@ -81,7 +81,7 @@ let b = function(e) {
     }), (0, r.jsx)(o.u, {
       text: h.intl.string(h.t.bt75u7),
       children: (0, r.jsxs)("div", {
-        className: s()(x.actionItemEditButton, x.editWelcomeButton),
+        className: a()(x.actionItemEditButton, x.editWelcomeButton),
         children: [(0, r.jsx)(c.vdY, {
           size: "md",
           color: "currentColor"

@@ -56,7 +56,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     width: t = 18,
     height: n = 18,
@@ -76,7 +76,7 @@ function L(e) {
   })
 }
 
-function x(e, t, n, i, a, s) {
+function L(e, t, n, i, a, s) {
   return (0, r.jsx)("img", {
     alt: "",
     src: (null == t ? true : t.guildMemberAvatar) != null && null != n ? (0, y.JM)({
@@ -119,7 +119,7 @@ function M(e, t, n) {
       className: P.replyIcon
     })
   });
-  if (a.message.type === N.uaV.USER_JOIN || a.message.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.uaV.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(L, {
+  if (a.message.type === N.uaV.USER_JOIN || a.message.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.uaV.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(x, {
     className: P.userJoinSystemMessageIcon
   });
   if (a.message.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, r.jsx)(c.Prq, {
@@ -133,7 +133,7 @@ function M(e, t, n) {
     height: C.WW,
     size: "custom"
   });
-  let y = () => x(a.message.author, f, o.guild_id, p, h, b);
+  let y = () => L(a.message.author, f, o.guild_id, p, h, b);
   return null != t && null != _ ? (0, r.jsx)(d.Gt, {
     value: E,
     children: (0, r.jsx)(c.yRy, {
@@ -150,7 +150,7 @@ function M(e, t, n) {
   })
 }
 
-function j(e, t) {
+function k(e, t) {
   let {
     baseMessage: n,
     channel: i,
@@ -174,7 +174,7 @@ function j(e, t) {
   })
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   let {
     content: i,
     referencedMessage: a,
@@ -245,7 +245,7 @@ function U(e, t, n, i, a, s) {
     A = null != E.interaction,
     C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
     D = E.isPoll(),
-    L = E.type === N.uaV.POLL_RESULT;
+    x = E.type === N.uaV.POLL_RESULT;
   if ((0, _.Z)(e) && (g = (0, r.jsx)(h.Z, {
       size: "custom",
       className: O,
@@ -260,12 +260,12 @@ function U(e, t, n, i, a, s) {
   });
   else if (I)
     if (D) {
-      var x, M;
+      var L, M;
       u = (0, r.jsx)("div", {
         className: o()(P.repliedTextContent, w.markup),
-        children: null == E || null == (M = E.poll) || null == (x = M.question) ? true : x.text
+        children: null == E || null == (M = E.poll) || null == (L = M.question) ? true : L.text
       })
-    } else L ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCQ) : A ? l = R.intl.string(R.t["E+6SSU"]) : C ? l = R.intl.string(R.t["XC3A5+"]) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6e) : (l = R.intl.string(R.t["6hGo0d"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCQ) : A ? l = R.intl.string(R.t["E+6SSU"]) : C ? l = R.intl.string(R.t["XC3A5+"]) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6e) : (l = R.intl.string(R.t["6hGo0d"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: y,
@@ -296,7 +296,7 @@ function U(e, t, n, i, a, s) {
     className: y,
     width: 19 / 24 * v,
     height: v
-  }) : (E.attachments.length > 0 || E.embeds.length > 0) && !L && (d = (0, r.jsx)(c.XBm, {
+  }) : (E.attachments.length > 0 || E.embeds.length > 0) && !x && (d = (0, r.jsx)(c.XBm, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -324,8 +324,8 @@ function G(e) {
     m = i.useMemo(() => null != d && u.state === g.Y.LOADED ? e => d(e, u.message) : true, [u, d]),
     E = i.useCallback(() => h(e => !e), []),
     b = M(e, m, s.type),
-    y = j(e, m),
-    v = k(e, p, E),
+    y = k(e, m),
+    v = j(e, p, E),
     T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2N, {
     author: null == a ? true : a.nick,

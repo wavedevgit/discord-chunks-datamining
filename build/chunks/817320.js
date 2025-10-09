@@ -9,7 +9,5 @@ module.exports = {
   ratingBody: "ratingBody__6c12c",
   footer: "footer__6c12c",
   problemInfo: "problemInfo__6c12c",
-  ratingSelectorContainer: "ratingSelectorContainer__6c12c",
-  presetList: "presetList__6c12c",
-  marginBottom16: "marginBottom16__6c12c"
+  ratingSelectorContainer: "ratingSelectorContainer__6c12c"
 }

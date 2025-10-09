@@ -2,11 +2,10 @@
 /** chunk id: 66972, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk723047 = require("./723047.js"),
   Chunk727843 = require("./727843.jsx"),
   Chunk290348 = require("./290348.js"),
@@ -15,16 +14,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk619326 = require("./619326.jsx"),
   Chunk553204 = require("./553204.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605041 = require("./605041.js"),
   Chunk549556 = require("./549556.js");
 
-function f() {
+function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, f] = Chunk290348.p9(module, exports), [h, x] = Chunk290348.Ek(module, exports), b = Chunk290348.qs(module, exports);
+  } = (0, Chunk727843.N)(), [, p] = Chunk290348.p9(module, exports), [f, h] = Chunk290348.Ek(module, exports), x = Chunk290348.qs(module, exports);
 
-  function j() {
+  function b() {
     (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -50,11 +48,11 @@ function f() {
           return e
         }({}, n), l = l = {
           guildId: t,
-          onUploadIcon: e => f({
+          onUploadIcon: e => p({
             icon: e,
             unicodeEmoji: null
           }),
-          onSelectUnicodeEmoji: e => f({
+          onSelectUnicodeEmoji: e => p({
             icon: null,
             unicodeEmoji: e
           })
@@ -71,56 +69,52 @@ function f() {
       }
     })
   }
-  let _ = (0, Chunk723047.mY)();
+  let j = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsx)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["Ah+sQ0"]),
     description: Chunk388032.intl.string(Chunk388032.t.ixbWiI),
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       direction: "vertical",
       gap: 24,
-      children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
-        title: Chunk388032.intl.string(Chunk388032.t["6OUqDQ"]),
-        disabled: _,
+      children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
+        label: Chunk388032.intl.string(Chunk388032.t["6OUqDQ"]),
+        disabled: j,
         children: (0, Chunk951288.jsx)(Chunk619326.Z, {
-          value: h,
-          onChange: x,
-          disabled: _
+          value: f,
+          onChange: h,
+          disabled: j
         })
-      }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        title: Chunk388032.intl.string(Chunk388032.t["zn8/AQ"]),
-        disabled: _,
-        children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
-          type: Chunk481060.R94.Types.DESCRIPTION,
-          className: Chunk605041.formDescription,
-          disabled: _,
-          children: Chunk388032.intl.string(Chunk388032.t.AqHUra)
-        }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
+        label: Chunk388032.intl.string(Chunk388032.t["zn8/AQ"]),
+        disabled: j,
+        description: Chunk388032.intl.string(Chunk388032.t.AqHUra),
+        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           direction: "horizontal",
           gap: 16,
           children: [(0, Chunk951288.jsx)(Chunk553204.Z, {
-            role: b,
+            role: x,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
-            onClick: j,
-            disabled: _
+            onClick: b,
+            disabled: j
           }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "secondary",
-            onClick: j,
-            disabled: _,
+            onClick: b,
+            disabled: j,
             text: Chunk388032.intl.string(Chunk388032.t.mD1oGB)
           })]
-        })]
+        })
       }), (0, Chunk951288.jsx)(Chunk481060.Rny, {
         children: (0, Chunk951288.jsxs)("div", {
           className: Chunk549556.previewContainer,
           "aria-hidden": true,
           children: [(0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: b,
+            role: x,
             className: Chunk549556.messageContainer,
             theme: "light"
           }), (0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: b,
+            role: x,
             className: Chunk549556.messageContainer,
             theme: "dark"
           })]

@@ -24,7 +24,7 @@ function u(e) {
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
     g ? m || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
-  }, [g, m, t, n]), f = (0, a.R)({
+  }, [g, m, t, n]), f = (0, s.R)({
     onEnableMFAClick: p
   });
   return r.useMemo(() => {
@@ -32,16 +32,16 @@ function u(e) {
     let {
       minimumOwnerAgeInYears: t,
       minimumSize: r
-    } = e, a = !e.noRecentViolations, o = [{
+    } = e, s = !e.noRecentViolations, o = [{
       key: "no_violations_requirement",
       checkedLabel: d.intl.string(d.t["1lGNPT"]),
       uncheckedLabel: d.intl.string(d.t["D+gTJi"]),
       description: d.intl.format(d.t.HFY0m5, {
-        communityGuidelinesUrl: s.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
+        communityGuidelinesUrl: a.Z.getArticleURL(c.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: e.noRecentViolations,
-      actionLabel: a ? d.intl.string(d.t.xU2fl5) : true,
-      actionHandler: a ? () => (0, i.Z)(s.Z.getSubmitRequestURL()) : true
+      actionLabel: s ? d.intl.string(d.t.xU2fl5) : true,
+      actionHandler: s ? () => (0, i.Z)(a.Z.getSubmitRequestURL()) : true
     }];
     if (null != t && null != e.meetsOwnerAgeRequirement && o.push({
         key: "owner_age_requirement",

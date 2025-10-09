@@ -54,13 +54,13 @@ function T(e) {
       guild: P,
       invite: w,
       message: D,
-      currentUserId: L
+      currentUserId: x
     } = e,
-    x = L === D.author.id,
+    L = x === D.author.id,
     {
       channel: M,
-      approximate_member_count: j,
-      approximate_presence_count: k
+      approximate_member_count: k,
+      approximate_presence_count: j
     } = w,
     U = w.state === b.r2o.ACCEPTING,
     G = null != M ? (0, p.jD)(M) : null,
@@ -95,7 +95,7 @@ function T(e) {
   }
   let ee = (0, g.e)({
     isVoiceChannel: F,
-    isOwnInvite: x,
+    isOwnInvite: L,
     isGuest: H,
     isHubGuild: Y,
     isStage: V,
@@ -142,9 +142,9 @@ function T(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != j && j >= 5 || null != k && k > 0 ? S = (0, r.jsx)(_.Z.Data, {
-    members: j,
-    membersOnline: k
+  })) : null != k && k >= 5 || null != j && j > 0 ? S = (0, r.jsx)(_.Z.Data, {
+    members: k,
+    membersOnline: j
   }) : Z && (S = (0, r.jsx)(_.Z.Channel, {
     channel: G,
     guild: P

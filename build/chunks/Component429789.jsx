@@ -2,22 +2,18 @@
 /** chunk id: 429789, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => d
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
-  Chunk313201 = require("./313201.js"),
   Chunk921801 = require("./921801.js"),
   Chunk131951 = require("./131951.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
-let _ = (0, Chunk313201.hQ)();
+  Chunk388032 = require("./388032.jsx");
 
-function p() {
+function d() {
   let {
     attenuation: e,
     attenuateWhileSpeakingSelf: t,
@@ -29,19 +25,13 @@ function p() {
   }));
   return (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
-    children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-      id: _,
-      className: Chunk197571.marginBottom8,
-      children: Chunk388032.intl.string(Chunk388032.t.oSdBvb)
-    }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.iRW, {
+      label: Chunk388032.intl.string(Chunk388032.t.oSdBvb),
+      description: Chunk388032.intl.string(Chunk388032.t["0A/8Rk"]),
       initialValue: module,
       onValueChange: e => {
         o.Z.setAttenuation(e, t, n)
-      },
-      "aria-labelledby": _
-    }), (0, Chunk951288.jsx)(Chunk481060.R94, {
-      type: Chunk481060.R94.Types.DESCRIPTION,
-      children: Chunk388032.intl.string(Chunk388032.t["0A/8Rk"])
+      }
     }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["9dHxRU"]),
       checked: exports,

@@ -32,10 +32,10 @@ function g(e, t) {
   let m = e.getUint32(t + n);
   if (m === o) return w(e, h, p);
   if (m === s) return D(e, t, h, p);
-  if (m === f) return L(e, t, h, p);
-  if (m === _) return x(e, h, p);
+  if (m === f) return x(e, t, h, p);
+  if (m === _) return L(e, h, p);
   let g = e.getUint8(h);
-  return m === l ? j(e, t, h + i, p) : m === c ? (0, a.I)(e, g, h + i, p) : m === u ? U(e, t, g, h + i, p) : m === d ? B(e, t, g, h + i, p) : {
+  return m === l ? k(e, t, h + i, p) : m === c ? (0, a.I)(e, g, h + i, p) : m === u ? U(e, t, g, h + i, p) : m === d ? B(e, t, g, h + i, p) : {
     type: true,
     length: p
   }
@@ -155,20 +155,20 @@ function w(e, t, n) {
 function D(e, t, n, r) {
   return {
     type: "iprp",
-    subBoxes: k(e, n, r - (n - t)),
+    subBoxes: j(e, n, r - (n - t)),
     length: r
   }
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
   return {
     type: "ipco",
-    properties: k(e, n, r - (n - t)),
+    properties: j(e, n, r - (n - t)),
     length: r
   }
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   return {
     type: "colr",
     icc: M(e, t),
@@ -187,15 +187,15 @@ function M(e, t) {
   }
 }
 
-function j(e, t, n, r) {
+function k(e, t, n, r) {
   return {
     type: "meta",
-    subBoxes: k(e, n + 3, r - (n + 3 - t)),
+    subBoxes: j(e, n + 3, r - (n + 3 - t)),
     length: r
   }
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   let r = [p, h],
     i = [],
     a = t;
@@ -213,7 +213,7 @@ function U(e, t, n, r, i) {
   } = G(n, r);
   return {
     type: "iinf",
-    itemInfos: k(e, a.itemInfos, i - (a.itemInfos - t)),
+    itemInfos: j(e, a.itemInfos, i - (a.itemInfos - t)),
     length: i
   }
 }

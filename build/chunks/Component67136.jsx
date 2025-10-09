@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Jc: () => j,
+  Jc: () => k,
   dx: () => M,
   tE: () => G
 });
@@ -335,28 +335,28 @@ var R = function(e, t, n, r) {
 let P = false,
   w, D = {};
 
-function L() {
+function x() {
   if (!P) return;
   let e = null == r ? true : r.getStyle();
-  null == module || R(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(L)
+  null == module || R(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(x)
 }
-let x = false,
+let L = false,
   M = {
     get ringsEnabled() {
-      return x
+      return L
     },
     setRingsEnabled(e) {
-      x = e, null == r || r.invalidate()
+      L = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      P = true, w = requestAnimationFrame(L)
+      P = true, w = requestAnimationFrame(x)
     },
     disableAnimationTracking() {
       P = false, null != w && cancelAnimationFrame(w)
     }
   };
 
-function j(e) {
+function k(e) {
   let {
     containerRef: t,
     children: n,
@@ -366,11 +366,11 @@ function j(e) {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), (0, o.jsxs)(N.Provider, {
     value: i.current,
-    children: [n, (0, o.jsx)(k, {})]
+    children: [n, (0, o.jsx)(j, {})]
   })
 }
 
-function k() {
+function j() {
   let e = Chunk647438.useContext(N),
     [, t] = Chunk647438.useState({});
   return Chunk647438.useEffect(() => (module.invalidate = () => exports({}), () => {

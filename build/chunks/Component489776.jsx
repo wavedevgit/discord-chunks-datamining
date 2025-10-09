@@ -53,30 +53,30 @@ function h(e) {
     guildId: t,
     triggerType: n
   } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(h), [b, j] = i.useState(false), {
-    editingRule: _,
-    createNewEditingRule: v
+    editingRule: v,
+    createNewEditingRule: _
   } = (0, d.V)(), {
     getDefaultRuleName: C
-  } = c.I6[n], O = !(0, o.Vb)(_) && (null == _ ? true : _.triggerType) === n, [y, N] = i.useState(O ? _ : x), E = (0, a.q_F)({
+  } = c.I6[n], O = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [y, N] = i.useState(O ? v : x), E = (0, s.q_F)({
     opacity: +!O,
     pointerEvents: O ? "none" : "all",
     config: f(p({}, l.config.stiff), {
       clamp: true
     })
-  }), I = (0, a.q_F)({
+  }), I = (0, s.q_F)({
     opacity: +!!O,
     pointerEvents: O ? "all" : "none",
     config: f(p({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
-      N(O ? _ : x)
+      N(O ? v : x)
     },
     onRest: () => {
-      N(O ? _ : x), j(O)
+      N(O ? v : x), j(O)
     }
   });
-  return null == _ || O ? (0, r.jsxs)("div", {
+  return null == v || O ? (0, r.jsxs)("div", {
     className: m.mainRuleContainer,
     style: {
       height: O ? "auto" : "60px"
@@ -91,18 +91,18 @@ function h(e) {
     }), (0, r.jsx)(l.animated.div, {
       className: m.animatedNewRuleContainer,
       style: E,
-      children: (0, r.jsxs)(a.P3F, {
+      children: (0, r.jsxs)(s.P3F, {
         className: m.addAnotherRuleCardContainer,
         onClick: () => {
-          v(t, n)
+          _(t, n)
         },
-        children: [(0, r.jsx)(a.oFk, {
+        children: [(0, r.jsx)(s.oFk, {
           size: "custom",
           width: 20,
           height: 20,
-          color: s.Z.BLUE_345,
+          color: a.Z.BLUE_345,
           className: m.plusIcon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-link",
           children: g.intl.format(g.t.dNjRAQ, {

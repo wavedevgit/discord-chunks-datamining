@@ -26,7 +26,7 @@ function u(e) {
   } = e, {
     analyticsLocations: m
   } = (0, l.ZP)(), p = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, s.E6)({
       guild: t,
       analyticsLocations: m,
       analyticsSection: o,
@@ -35,7 +35,7 @@ function u(e) {
       targetPremiumGuildTier: g
     })
   }, [m, c, o, t, u, g]);
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,

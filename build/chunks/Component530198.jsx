@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk780384 = require("./780384.js"),
@@ -52,11 +52,11 @@ function j(e, t) {
   }), e
 }
 
-function _(e) {
+function v(e) {
   var t, n;
   let i, {
     theme: l,
-    platform: a,
+    platform: s,
     integration: g,
     onRemove: m,
     locked: p
@@ -66,23 +66,23 @@ function _(e) {
     user: g.application.bot,
     className: x.verifiedIcon
   });
-  else if (null != a) {
-    let e = (0, c.ap)(l) ? a.icon.lightSVG : a.icon.darkSVG;
+  else if (null != s) {
+    let e = (0, c.ap)(l) ? s.icon.lightSVG : s.icon.darkSVG;
     i = (0, r.jsx)("img", {
       className: x.verifiedIcon,
       src: e,
       alt: h.intl.formatToPlainString(h.t.rtm15O, {
-        name: a.name
+        name: s.name
       })
     })
   }
   return (0, r.jsxs)("div", {
-    className: s()(x.verifiedRow, (null == a ? true : a.hasMetadata) === true || (null == g ? true : g.role_connections_metadata) != null && (null == g ? true : g.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
+    className: a()(x.verifiedRow, (null == s ? true : s.hasMetadata) === true || (null == g ? true : g.role_connections_metadata) != null && (null == g ? true : g.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
     children: [i, (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       className: x.verifiedText,
       children: h.intl.format(h.t.Nj0a3t, {
-        platformName: null != (n = null == a ? true : a.name) ? n : null == g || null == (t = g.application) ? true : t.name
+        platformName: null != (n = null == s ? true : s.name) ? n : null == g || null == (t = g.application) ? true : t.name
       })
     }), (0, r.jsx)(d.ua7, {
       "data-migration-pending": true,
@@ -101,13 +101,13 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     titleText: t,
     fieldText: n,
     metadataField: l,
-    existingPendingConfiguration: s,
-    platform: a,
+    existingPendingConfiguration: a,
+    platform: s,
     applicationId: o,
     onConfigurationChange: c,
     locked: u
@@ -138,17 +138,17 @@ function v(e) {
     }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {
       children: (0, r.jsx)(d.rsf, {
         id: g,
-        checked: (null == s ? true : s.configuration.value) === "1",
+        checked: (null == a ? true : a.configuration.value) === "1",
         onChange: e => {
           var t, n;
           let r = null;
           e && (r = {
-            connectionType: null != (t = null == a ? true : a.type) ? t : f.Kt,
+            connectionType: null != (t = null == s ? true : s.type) ? t : f.Kt,
             applicationId: o,
             connectionMetadataField: l,
             operator: f.iO.EQUAL,
             value: "1"
-          }), c(r, null != (n = null == s ? true : s.index) ? n : false)
+          }), c(r, null != (n = null == a ? true : a.index) ? n : false)
         },
         disabled: u
       })
@@ -160,8 +160,8 @@ function C(e) {
   var t, n;
   let {
     titleText: l,
-    fieldText: s,
-    fieldTextHook: a,
+    fieldText: a,
+    fieldTextHook: s,
     metadataField: o,
     existingPendingConfiguration: c,
     platform: u,
@@ -169,16 +169,16 @@ function C(e) {
     onConfigurationChange: m,
     locked: p,
     operator: b
-  } = e, j = (null == c ? true : c.configuration) != null, _ = null != (n = null == c ? true : c.index) ? n : false, [v, C] = function(e, t) {
+  } = e, j = (null == c ? true : c.configuration) != null, v = null != (n = null == c ? true : c.index) ? n : false, [_, C] = function(e, t) {
     let n = null != t ? t : f.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === f.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === f.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? true : t.value, b), [O, y] = i.useState(v), N = null != a ? h.intl.format(a, {
+  }(null == c || null == (t = c.configuration) ? true : t.value, b), [O, y] = i.useState(_), N = null != s ? h.intl.format(s, {
     count: O,
     metadataHook: () => O
   }) : (0, r.jsx)("span", {
     className: x.fieldText,
-    children: s
+    children: a
   }), E = i.useId();
   return (0, r.jsxs)("tr", {
     className: x.ruleContainer,
@@ -225,7 +225,7 @@ function C(e) {
                 connectionMetadataField: o,
                 operator: n,
                 value: t
-              }, _)
+              }, v)
             }
           },
           disabled: p || !j
@@ -398,7 +398,7 @@ function E(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       titleText: h.intl.string(h.t.yz2CIC),
       fieldText: h.intl.string(h.t.E2iT8P),
       metadataField: f.PC.TWITTER_VERIFIED,
@@ -433,7 +433,7 @@ function I(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       titleText: h.intl.string(h.t.oWM95O),
       fieldText: h.intl.string(h.t["0cKdkZ"]),
       metadataField: f.PC.REDDIT_MOD,
@@ -441,7 +441,7 @@ function I(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       titleText: h.intl.string(h.t["06rDHR"]),
       fieldText: h.intl.string(h.t["kCAN5+"]),
       metadataField: f.PC.REDDIT_GOLD,
@@ -468,7 +468,7 @@ function S(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       titleText: h.intl.string(h.t.IhXLy8),
       fieldText: h.intl.string(h.t["0JyE8P"]),
       metadataField: f.PC.PAYPAL_VERIFIED,
@@ -520,7 +520,7 @@ function T(e) {
       onConfigurationChange: n,
       locked: i,
       operator: f.iO.LESS_THAN
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(_, {
       titleText: h.intl.string(h.t.TEEYwc),
       fieldText: h.intl.string(h.t["39wASE"]),
       metadataField: f.PC.EBAY_TOP_RATED_SELLER,
@@ -539,7 +539,7 @@ function P(e) {
     locked: i
   } = e, l = m.Z.get(p.ABu.TIKTOK);
   return (0, r.jsxs)(O, {
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(_, {
       titleText: h.intl.string(h.t.QHHwRU),
       fieldText: h.intl.string(h.t.E2iT8P),
       metadataField: f.PC.TIKTOK_VERIFIED,
@@ -583,7 +583,7 @@ function w(e) {
     integration: l
   } = e;
   return null == l || null == l.role_connections_metadata ? null : l.role_connections_metadata.map(e => {
-    var s, a;
+    var a, s;
     let o;
     switch (e.type) {
       case f.xn.INTEGER_LESS_THAN_EQUAL:
@@ -621,11 +621,11 @@ function w(e) {
           onConfigurationChange: n,
           locked: i,
           operator: o,
-          applicationId: null == (s = l.application) ? true : s.id
+          applicationId: null == (a = l.application) ? true : a.id
         }, e.key);
       case f.xn.BOOLEAN_EQUAL:
       case f.xn.BOOLEAN_NOT_EQUAL:
-        return (0, r.jsx)(v, {
+        return (0, r.jsx)(_, {
           titleText: e.name,
           fieldText: e.description,
           metadataField: e.key,
@@ -634,7 +634,7 @@ function w(e) {
           onConfigurationChange: n,
           locked: i,
           operator: o,
-          applicationId: null == (a = l.application) ? true : a.id
+          applicationId: null == (s = l.application) ? true : s.id
         }, e.key)
     }
   })
@@ -645,12 +645,12 @@ function Z(e) {
       configurationItems: n,
       onConfigurationChange: i,
       locked: l,
-      integrations: s
+      integrations: a
     } = e,
-    a = (0, g.ZP)();
+    s = (0, g.ZP)();
   if (n.length < 1) return null;
   let o = n[0].configuration.applicationId,
-    c = null != o ? null == s ? true : s.find(e => {
+    c = null != o ? null == a ? true : a.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === o
     }) : true;
@@ -698,8 +698,8 @@ function Z(e) {
   }
   return (0, r.jsxs)("div", {
     className: x.container,
-    children: [(0, r.jsx)(_, {
-      theme: a,
+    children: [(0, r.jsx)(v, {
+      theme: s,
       platform: d,
       integration: c,
       onRemove: () => i(null, t.index),

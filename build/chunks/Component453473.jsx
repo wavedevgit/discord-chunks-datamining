@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk125919 = require("./125919.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -110,7 +110,7 @@ function H(e) {
   return (0, r.jsx)(p.VqE, {
     "aria-label": M.intl.string(M.t["2pAkDA"]),
     children: (0, r.jsxs)("div", {
-      className: j.popoutContainer,
+      className: k.popoutContainer,
       children: [(0, r.jsx)(m.h4, {
         icon: p.plf,
         title: M.intl.string(M.t["2pAkDA"])
@@ -150,7 +150,7 @@ function W(e) {
   }, [n, l]), f = i.useCallback(() => {
     c(!l), l ? null == n || n() : null == t || t()
   }, [n, t, l]);
-  i.useEffect(() => (T.S.subscribe(x.CkL.TOGGLE_FOR_LATER, f), () => void T.S.unsubscribe(x.CkL.TOGGLE_FOR_LATER, f)), [f]);
+  i.useEffect(() => (T.S.subscribe(L.CkL.TOGGLE_FOR_LATER, f), () => void T.S.unsubscribe(L.CkL.TOGGLE_FOR_LATER, f)), [f]);
   let h = (0, _.e7)([N.Z], () => N.Z.hasOverdueReminder(), []);
 
   function m() {
@@ -199,7 +199,7 @@ function K(e) {
             var t;
             a.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           },
-          className: j.messagesScroller
+          className: k.messagesScroller
         }, o), {
           children: t.map(e => (0, r.jsx)(q, {
             savedMessageKey: e,
@@ -219,21 +219,21 @@ function z(e) {
     throttledNow: a
   } = e, s = (0, C.gr)(t), l = i.useCallback(async e => {
     var r;
-    await (0, C.fC)(t, s), e.shiftKey || n(), I.default.track(x.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, C.fC)(t, s), e.shiftKey || n(), I.default.track(L.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (r = t.message) ? true : r.author.id,
       type: null != t.saveData.dueAt ? R._l.REMINDER : R._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : true
     })
-  }, [n, t, s]), c = (0, _.e7)([v.Z], () => !!((null == s ? true : s.type) === x.d4z.UNKNOWN || (null == s ? true : s.isPrivate())) || v.Z.can(x.Plq.VIEW_CHANNEL, s));
+  }, [n, t, s]), c = (0, _.e7)([v.Z], () => !!((null == s ? true : s.type) === L.d4z.UNKNOWN || (null == s ? true : s.isPrivate())) || v.Z.can(L.Plq.VIEW_CHANNEL, s));
   return null != s && null != t.message && c ? (0, r.jsxs)("div", {
-    className: j.messageContainer,
+    className: k.messageContainer,
     children: [(0, r.jsx)(p.P3F, {
-      className: j.clickableMessageBackground,
+      className: k.clickableMessageBackground,
       onClick: l,
       "aria-label": M.intl.string(M.t["+TSRGB"])
-    }), null != t.saveData.dueAt ? (0, r.jsx)(L.Z, {
+    }), null != t.saveData.dueAt ? (0, r.jsx)(x.Z, {
       reminder: t,
       throttledNow: a
     }) : null, (0, r.jsx)(w.Z, {
@@ -241,22 +241,22 @@ function z(e) {
     }), (0, r.jsx)(b.Z, {
       message: t.message,
       channel: s,
-      className: j.message,
+      className: k.message,
       compact: O.jU.getSetting(),
       animateAvatar: false,
       focusProps: V,
       trackAnnouncementViews: true
     }, t.message.id), (0, r.jsx)(y.ZP, {
-      className: j.hoverBar,
+      className: k.hoverBar,
       children: (0, r.jsx)(X, {
         savedMessage: t,
         jumpToMessage: l
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: o()(j.messageContainer, j.deletedMessage),
+    className: o()(k.messageContainer, k.deletedMessage),
     children: [(0, r.jsx)("div", {
-      className: j.deleteIcon,
+      className: k.deleteIcon,
       children: (0, r.jsx)(p.Mgn, {
         size: "xxs",
         color: p.TVs.colors.INTERACTIVE_ACTIVE
@@ -266,7 +266,7 @@ function z(e) {
       color: "header-secondary",
       children: null != t.saveData.dueAt ? M.intl.string(M.t["wuQm+v"]) : M.intl.string(M.t.o572FR)
     }), (0, r.jsx)(y.ZP, {
-      className: j.hoverBar,
+      className: k.hoverBar,
       children: (0, r.jsx)(y.sF, {
         label: M.intl.string(M.t.SvXS1d),
         icon: p.XHJ,

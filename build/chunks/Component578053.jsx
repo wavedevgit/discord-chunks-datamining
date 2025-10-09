@@ -2,8 +2,8 @@
 /** chunk id: 578053, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => _,
-  u: () => v
+  g: () => v,
+  u: () => _
 }), require("./290780.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,22 +36,23 @@ function j(e) {
   } = e, {
     label: n,
     channel: l,
-    category: s
+    category: a
   } = t, o = i.useMemo(() => (0, d.KS)(l), [l]), u = (0, c.ZP)(l);
-  return (0, r.jsx)(a.ZZ$, {
+  return (0, r.jsx)(s.ZZ$, {
     title: n,
     icon: o,
-    subtitle: null != s ? u : null
+    subtitle: null != a ? u : null
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    afkChannelId: a
-  } = e, c = (0, s.e7)([g.Z], () => g.Z.getCategories(n)), d = i.useMemo(() => {
-    let e = (0, o.Z)(c._categories, c).filter(e => {
+    afkChannelId: s,
+    label: c
+  } = e, d = (0, a.e7)([g.Z], () => g.Z.getCategories(n)), u = i.useMemo(() => {
+    let e = (0, o.Z)(d._categories, d).filter(e => {
       let {
         channel: t
       } = e;
@@ -66,29 +67,30 @@ function _(e) {
       value: x,
       label: h.intl.string(h.t.wGiHkJ)
     }), e
-  }, [c]), u = i.useCallback(e => {
+  }, [d]), m = i.useCallback(e => {
     let t = e === x ? null : e;
     f.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
   return (0, r.jsx)(C, {
-    value: null != a ? a : x,
-    options: d,
+    label: c,
+    value: null != s ? s : x,
+    options: u,
     canManageGuild: t,
-    onChange: u
+    onChange: m
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    systemChannelId: a,
+    systemChannelId: s,
     label: c,
     description: d,
     layout: u
-  } = e, m = (0, s.e7)([g.Z], () => g.Z.getCategories(n)), p = i.useMemo(() => {
+  } = e, m = (0, a.e7)([g.Z], () => g.Z.getCategories(n)), p = i.useMemo(() => {
     let e = (0, o.Z)(m._categories, m).filter(e => {
       let {
         channel: t
@@ -114,7 +116,7 @@ function v(e) {
     label: c,
     description: d,
     layout: u,
-    value: null != a ? a : x,
+    value: null != s ? s : x,
     options: p,
     canManageGuild: t,
     onChange: j
@@ -126,7 +128,7 @@ function C(e) {
     value: t,
     options: n,
     canManageGuild: l,
-    onChange: s,
+    onChange: a,
     label: o,
     description: c,
     layout: d
@@ -135,13 +137,13 @@ function C(e) {
       option: e
     })
   }, []), g = i.useCallback(e => u(e[0]), [u]);
-  return (0, r.jsx)(a.q4e, {
+  return (0, r.jsx)(s.q4e, {
     label: o,
     description: c,
     value: t,
     options: n,
     isDisabled: !l,
-    onChange: s,
+    onChange: a,
     renderOptionLabel: u,
     renderOptionValue: g,
     layout: d

@@ -19,15 +19,21 @@ function a(e, t) {
   }
 }
 
-function o(e, t, n) {
+function o(e) {
+  let t;
+  for (let n of e) t = n;
+  return t
+}
+
+function s(e, t, n) {
   if (t.parentKey === n.parentKey) return t.index - n.index;
-  let r = [...s(e, t), t],
-    i = [...s(e, n), n],
+  let r = [...l(e, t), t],
+    i = [...l(e, n), n],
     a = r.slice(0, i.length).findIndex((e, t) => e !== i[t]);
   return false !== a ? (t = r[a], n = i[a], t.index - n.index) : r.findIndex(e => e === n) >= 0 ? 1 : (i.findIndex(e => e === t), false)
 }
 
-function s(e, t) {
+function l(e, t) {
   let n = [],
     r = t;
   for (;
@@ -35,7 +41,9 @@ function s(e, t) {
   return n
 }
 require.d(exports, {
+  Em: () => a,
   _P: () => r,
-  eg: () => o,
-  l8: () => i
+  eg: () => s,
+  l8: () => i,
+  s: () => o
 })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -67,10 +67,10 @@ function Z(e, t) {
 async function R(e, t, n) {
   let i = e.roles.filter(e => e !== n);
   try {
-    await _.Z.updateMemberRoles(t, e.id, i, [], [n])
+    await v.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
     let e = new g.Z(t);
-    (0, d.h7j)(t => (0, r.jsx)(a.Modal, Z(w({}, t), {
+    (0, d.h7j)(t => (0, r.jsx)(s.Modal, Z(w({}, t), {
       title: S.intl.string(S.t.R0RpRU),
       actions: [{
         text: S.intl.string(S.t.BddRzc),
@@ -99,8 +99,8 @@ function D(e) {
   function b(e) {
     if (e.stopPropagation(), !g) {
       if (e.shiftKey) return void R(t, l, o);
-      let n = v.Z.getRole(o);
-      (0, d.h7j)(e => (0, r.jsx)(a.Modal, Z(w({}, e), {
+      let n = _.Z.getRole(o);
+      (0, d.h7j)(e => (0, r.jsx)(s.Modal, Z(w({}, e), {
         title: S.intl.string(S.t["7sFNfX"]),
         subtitle: S.intl.format(S.t.scORUl, {
           username: t.name,
@@ -165,7 +165,7 @@ function D(e) {
             text: g ? S.intl.string(S.t.wkrQaG) : S.intl.string(S.t["7sFNfX"]),
             position: "top",
             children: (0, r.jsx)(d.P3F, {
-              className: s()(T.removeButton, {
+              className: a()(T.removeButton, {
                 [T.removeButtonDisabled]: g
               }),
               onClick: b,
@@ -189,7 +189,7 @@ function A(e) {
   return (0, r.jsx)("div", {
     className: P.contentWidth,
     children: (0, r.jsxs)("div", {
-      className: s()(T.memberRow, T.emptyRowContainer),
+      className: a()(T.memberRow, T.emptyRowContainer),
       children: [(0, r.jsx)(d.BFJ, {
         size: "md",
         color: "currentColor"
@@ -215,8 +215,8 @@ function L(e) {
     guildId: t,
     roleId: n,
     query: l,
-    headerHeight: s,
-    locked: a,
+    headerHeight: a,
+    locked: s,
     onScroll: o,
     roleMembers: c,
     handleAddClick: u
@@ -231,14 +231,14 @@ function L(e) {
     children: (0, r.jsx)(d._2F, {
       className: T.list,
       sections: [Math.max(h.length, 1)],
-      sectionHeight: s,
+      sectionHeight: a,
       renderSection: () => (0, r.jsx)("div", {
         style: {
-          height: s
+          height: a
         }
       }, "section"),
       style: {
-        scrollPaddingTop: s
+        scrollPaddingTop: a
       },
       rowHeight: 40,
       renderRow: function(e) {
@@ -247,14 +247,14 @@ function L(e) {
         } = e;
         if (0 === x.length) return (0, r.jsx)(A, {
           handleAddClick: u,
-          locked: a
+          locked: s
         }, "empty");
         let l = x[i];
         return (0, r.jsx)(D, {
           member: l,
           guildId: t,
           roleId: n,
-          locked: a
+          locked: s
         }, l.id)
       },
       onScroll: o
@@ -291,7 +291,7 @@ function G(e) {
   let {
     guild: t,
     role: l,
-    locked: a,
+    locked: s,
     setSelectedSection: c
   } = e, [u, g] = i.useState(""), {
     headerHeight: m,
@@ -299,10 +299,10 @@ function G(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, y.V)(), x = l.managed || a, _ = (0, C.e)(t.id, l.id), v = (0, o.e7)([j.Z], () => {
+  } = (0, y.V)(), x = l.managed || s, v = (0, C.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
-  }) > _.length, N = () => {
+  }) > v.length, N = () => {
     b.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
@@ -325,7 +325,7 @@ function G(e) {
       children: (0, r.jsx)("div", {
         className: P.contentWidth,
         children: (0, r.jsxs)("div", {
-          className: s()(P.header, {
+          className: a()(P.header, {
             [P.stickyHeaderElevated]: !f
           }),
           children: [(0, r.jsx)(y.Z, {
@@ -338,7 +338,7 @@ function G(e) {
             setQuery: g,
             locked: x,
             handleAddClick: N
-          }), v ? (0, r.jsx)(d.Wn, {
+          }), _ ? (0, r.jsx)(d.Wn, {
             className: T.searchWarning,
             messageType: d.QYI.INFO,
             children: S.intl.string(S.t.RQxHZ2)
@@ -352,7 +352,7 @@ function G(e) {
       roleId: l.id,
       locked: x,
       onScroll: h,
-      roleMembers: _,
+      roleMembers: v,
       handleAddClick: N
     })]
   })

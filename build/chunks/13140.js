@@ -5,9 +5,9 @@ require.d(exports, {
   BB: () => U,
   C$: () => C,
   H9: () => A,
-  Kd: () => k,
+  Kd: () => j,
   UR: () => v,
-  d2: () => j,
+  d2: () => k,
   dU: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
@@ -205,9 +205,9 @@ let P = [
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },
-  L = /shift|meta|ctrl|alt$/;
+  x = /shift|meta|ctrl|alt$/;
 
-function x(e) {
+function L(e) {
   return "meta" === e || "shift" === e || "alt" === e || "ctrl" === e
 }
 
@@ -215,7 +215,7 @@ function M(e) {
   return e + "Key"
 }
 
-function j(e) {
+function k(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -231,7 +231,7 @@ function j(e) {
     if (null == r) return e.push(h(_({}, i), {
       combo: n
     })), e;
-    if (L.test(r) && x(r)) return t[M(r)] = true, e.map(e => (e[M(r)] = true, e));
+    if (x.test(r) && L(r)) return t[M(r)] = true, e.map(e => (e[M(r)] = true, e));
     {
       let t = C(r, d.Cg.BROWSER);
       return null != t && (i.keyCode = t), e.push(i), e
@@ -239,7 +239,7 @@ function j(e) {
   }, [])
 }
 
-function k(e) {
+function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {

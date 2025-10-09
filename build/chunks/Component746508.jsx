@@ -211,24 +211,27 @@ function eY() {
       location: {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
       }
-    }), (0, Chunk951288.jsx)(Chunk481060.vwX, {
+    }), (0, Chunk951288.jsx)("div", {
       className: a()(Chunk197571.marginBottom8, Chunk197571.marginTop20),
-      children: Chunk388032.intl.string(Chunk388032.t.k6h1Fx)
-    }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      justify: Chunk600164.Z.Justify.BETWEEN,
-      className: Chunk890332.__invalid_footer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
-        href: Chunk981631.EYA.KRISP,
-        onClick: e => eq(e),
-        children: (0, Chunk951288.jsx)("div", {
-          className: Chunk890332.krispLogo
+      children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
+        label: Chunk388032.intl.string(Chunk388032.t.k6h1Fx),
+        children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
+          justify: Chunk600164.Z.Justify.BETWEEN,
+          className: Chunk890332.__invalid_footer,
+          children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
+            href: Chunk981631.EYA.KRISP,
+            onClick: e => eq(e),
+            children: (0, Chunk951288.jsx)("div", {
+              className: Chunk890332.krispLogo
+            })
+          }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+            href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
+            className: Chunk890332.krispLink,
+            onClick: e => eq(e),
+            children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
+          })]
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.eee, {
-        href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-        className: Chunk890332.krispLink,
-        onClick: e => eq(e),
-        children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
-      })]
+      })
     })]
   })
 }

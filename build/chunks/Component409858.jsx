@@ -65,7 +65,7 @@ let J = e => {
       openedGift: t
     } = e, {
       createMultipleConfettiAt: n
-    } = r.useContext(S.h);
+    } = r.useContext(x.h);
     return r.useEffect(() => {
       t && n(window.innerWidth / 2, window.innerHeight / 4)
     }, [n, t]), null
@@ -78,7 +78,7 @@ let J = e => {
     return r.useEffect(() => {
       var e;
       if (t !== V.wZ8.CONFIRM) return;
-      let i = C.Z.getSoundById(n);
+      let i = T.Z.getSoundById(n);
       (0, A.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
     }, [t, n]), null
   };
@@ -303,8 +303,8 @@ class ee extends Chunk647438.Component {
       accepted: O,
       opened: v,
       emojiURL: j,
-      isPremiumAppGift: S
-    } = this.state, x = Chunk594174.default.getCurrentUser(), _ = this.step === Chunk981631.wZ8.ERROR, A = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk120356.userId === Chunk313201.id;
+      isPremiumAppGift: x
+    } = this.state, S = Chunk594174.default.getCurrentUser(), _ = this.step === Chunk981631.wZ8.ERROR, A = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk120356.userId === Chunk313201.id;
     switch (this.step) {
       case Chunk981631.wZ8.ERROR:
         null == Chunk533307 || Chunk533307(Chunk120356, false);
@@ -312,7 +312,7 @@ class ee extends Chunk647438.Component {
       case Chunk981631.wZ8.SUCCESS:
         null == Chunk533307 || Chunk533307(Chunk120356, true)
     }
-    let C = (0, Chunk164670.K$)(module);
+    let T = (0, Chunk164670.K$)(module);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {
@@ -377,14 +377,15 @@ class ee extends Chunk647438.Component {
             variant: "text-md/normal",
             children: this.errorMessage
           }), Chunk812206 && this.state.opened && !this.state.accepted && !Chunk703656 && null != Chunk410030 && "" !== Chunk410030 && !Chunk146779 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-            children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+              id: Chunk979554,
+              variant: "heading-md/semibold",
               children: Chunk388032.intl.format(Chunk388032.t.DDO4W1, {
                 sender: Chunk51144.ZP.getName(Chunk728345)
               })
-            }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
-              id: Chunk979554,
+            }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               className: Chunk269142.customMessage,
-              variant: "heading-sm/bold",
+              variant: "text-md/semibold",
               children: Chunk410030
             })]
           }), Chunk763296 && (0, Chunk951288.jsx)(Chunk435883.q, {
@@ -472,7 +473,7 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       libraryApplication: null != n && (null == t ? true : t.entitlementBranches) != null ? (0, L.z2)(t.entitlementBranches, n, E.Z) : null,
       application: i,
       subscriptionPlan: null != t.subscriptionPlanId ? (0, M.oE)(t.subscriptionPlanId) : null,
-      accepting: T.Z.getIsAccepting(t.code),
+      accepting: C.Z.getIsAccepting(t.code),
       useReducedMotion: r
     }
   })(ee),
@@ -500,14 +501,14 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         }
         return r
       }(e, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]);
-    let h = (0, x.Dt)(),
-      b = (0, o.e7)([T.Z], () => T.Z.get(l)),
+    let h = (0, S.Dt)(),
+      b = (0, o.e7)([C.Z], () => C.Z.get(l)),
       y = (0, p.ZP)(),
       {
         analyticsLocations: P
       } = (0, g.ZP)(m.Z.GIFT_CODE_MODAL),
       {
-        product: S
+        product: x
       } = (0, v.T)(null == b ? true : b.skuId, true);
     return null == b ? null : (0, i.jsx)(et, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -530,10 +531,10 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       analyticsLocations: P,
       isThemeDark: (0, u.wj)(y),
       onClose: d,
-      collectiblesItemType: (0, O.$W)(S),
-      onAccept: null != S ? () => {
+      collectiblesItemType: (0, O.$W)(x),
+      onAccept: null != x ? () => {
         d(), (0, j.Z)({
-          product: S,
+          product: x,
           analyticsLocations: P,
           purchaseType: K.o8.GIFT
         })

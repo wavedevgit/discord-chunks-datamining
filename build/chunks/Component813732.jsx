@@ -72,19 +72,13 @@ function q() {
   let e = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.getForApplication(Chunk474936.CL));
   return Chunk647438.useEffect(() => {
     (0, Chunk496929.yD)(Chunk474936.CL)
-  }, []), (0, Chunk951288.jsxs)("section", {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
-      variant: "heading-md/bold",
-      className: Chunk49122.accountCreditTitle,
-      children: Chunk388032.intl.string(Chunk388032.t["2GKrvr"])
-    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-md/normal",
-      className: Chunk49122.accountCreditDescription,
-      children: Chunk388032.intl.string(Chunk388032.t.kNEjGh)
-    }), null != module && Chunk74538.ZP.hasAccountCredit(module) ? (0, Chunk951288.jsx)(Chunk639056.Z, {
+  }, []), (0, Chunk951288.jsx)(Chunk481060.C3N, {
+    label: Chunk388032.intl.string(Chunk388032.t["2GKrvr"]),
+    description: Chunk388032.intl.string(Chunk388032.t.kNEjGh),
+    children: null != module && Chunk74538.ZP.hasAccountCredit(module) ? (0, Chunk951288.jsx)(Chunk639056.Z, {
       className: Chunk49122.accountCredit,
       entitlements: module
-    }) : (0, Chunk951288.jsx)(z, {})]
+    }) : (0, Chunk951288.jsx)(z, {})
   })
 }
 
@@ -123,12 +117,12 @@ let J = function() {
     f = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.hasFetchedSubscriptions()),
     b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.isBusy),
     y = (0, Chunk15640.V)(),
-    L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+    x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     M = (0, Chunk442837.e7)([Chunk78839.Z], () => {
       var e, t;
       return null != (t = null == (e = Chunk78839.Z.getActiveApplicationSubscriptions()) ? true : module.length) ? exports : 0
     }),
-    j = (0, Chunk442837.e7)([Chunk78839.Z], () => {
+    k = (0, Chunk442837.e7)([Chunk78839.Z], () => {
       var e;
       return Object.values(null != (e = Chunk78839.Z.getSubscriptions()) ? module : {}).filter(e => e.type === V.NYc.GUILD).filter(e => e.status !== V.O0b.ENDED).length
     }),

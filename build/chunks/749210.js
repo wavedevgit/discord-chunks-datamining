@@ -56,7 +56,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,15 +67,15 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function M(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,14 +83,14 @@ function M(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = e => {
+let j = e => {
     C.Z.show({
       title: P.intl.string(P.t.cTaRxM),
       body: P.intl.formatToPlainString(P.t["VSd+Ag"], {
@@ -187,7 +187,7 @@ let F = {
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === N.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), (null == (s = t.body) ? true : s.code) === N.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
+        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? j(N.tHP) : j(N.DZw)
       }
       throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), I && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
     }
@@ -196,7 +196,7 @@ let F = {
   async transitionToGuildSync(e, t, n, r) {
     let i = Z((await B(e)).id, n),
       a = t;
-    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = x(D({}, t), {
+    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(D({}, t), {
       welcomeModalChannelId: null != i ? i : true
     })), (0, d.Z)(N.Z5c.CHANNEL(e, i, r), a), await new Promise(setImmediate)
   },
@@ -352,7 +352,7 @@ let F = {
       unicodeEmoji: i
     } = n, o = M(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
       url: N.ANM.GUILD_ROLE(e, t),
-      body: x(D({}, o), {
+      body: L(D({}, o), {
         icon: s,
         unicode_emoji: i
       }),

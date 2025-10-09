@@ -75,8 +75,8 @@ function P(e) {
     isExpanded: P,
     isNew: I,
     errors: E,
-    onToggleExpand: Z
-  } = e, [T, k] = r.useState(false), [A] = r.useState(new s.V7);
+    onToggleExpand: T
+  } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
   let D = r.useMemo(() => w(n, n.avatar), [n]),
     R = r.useCallback(() => {
@@ -196,7 +196,7 @@ function P(e) {
           children: [(0, i.jsx)(c.ua7, {
             "data-migration-pending": true,
             text: _.intl.string(_.t.wwdb3t),
-            forceOpen: T,
+            forceOpen: Z,
             color: c.FGA.GREEN,
             disableTooltipPointerEvents: true,
             children: e => {
@@ -255,7 +255,7 @@ function P(e) {
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
         "aria-expanded": P,
-        onClick: Z,
+        onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, i.jsx)(O.Z, {

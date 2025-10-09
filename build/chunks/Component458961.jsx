@@ -131,7 +131,7 @@ function M(e) {
     priceTiers: o
   } = (0, h.R)(t, z.RG5.GUILD_PRODUCTS), s = n.useMemo(() => (null != o ? o : null != A ? [A] : []).map(e => ({
     value: e,
-    label: (0, x.T4)(e, z.pKx.USD)
+    label: (0, U.T4)(e, z.pKx.USD)
   })), [o, A]);
   return (0, r.jsx)(u.VcW, {
     label: l,
@@ -159,23 +159,23 @@ function J(e) {
     application: ec
   } = (0, p.Z)(eA, w.wW.GUILD_ROLE_SUBSCRIPTIONS), eu = y.M["0"], eg = C.QK.useSetting(), ef = (0, V.n)(), ep = n.useCallback(() => {
     var e;
-    return (null == eo || null == (e = eo.image_asset) ? true : e.application_id) == null ? eu.data : (0, U._W)(eo.image_asset.application_id, eo.image_asset, 600, ef && eg ? true : "webp")
+    return (null == eo || null == (e = eo.image_asset) ? true : e.application_id) == null ? eu.data : (0, x._W)(eo.image_asset.application_id, eo.image_asset, 600, ef && eg ? true : "webp")
   }, [eu, eo, ef, eg]), {
     shouldRestrictUpdatingCreatorMonetizationSettings: em
   } = (0, q.gX)(eA);
   n.useEffect(() => {
-    em && (ea(), (0, K.B)(R.intl.string(R.t.OLf3xs), R.t["90LBVl"]))
+    em && (ea(), (0, T.B)(R.intl.string(R.t.OLf3xs), R.t["90LBVl"]))
   }, [em, ea]);
-  let [eh, ev] = n.useState(null != (l = null == eo ? true : eo.name) ? l : ""), [eq, eb] = n.useState(null != (i = null == eo ? true : eo.description) ? i : ""), [eC, ej] = n.useState(null != (m = null == eo ? true : eo.price_tier) ? m : true), [ex, eU] = n.useState(ep), [eV, eO] = n.useState(null != (h = null == eo || null == (t = eo.image_asset) ? true : t.filename) ? h : eu.name), [eP, eF] = n.useState(false), [ey, eI] = n.useState(), eN = n.useMemo(() => null != eC ? (0, x.T4)(eC, z.pKx.USD) : true, [eC]), [eT, eK] = n.useState(true), {
+  let [eh, ev] = n.useState(null != (l = null == eo ? true : eo.name) ? l : ""), [eq, eb] = n.useState(null != (i = null == eo ? true : eo.description) ? i : ""), [eC, ej] = n.useState(null != (m = null == eo ? true : eo.price_tier) ? m : true), [eU, ex] = n.useState(ep), [eV, eO] = n.useState(null != (h = null == eo || null == (t = eo.image_asset) ? true : t.filename) ? h : eu.name), [eP, eF] = n.useState(false), [ey, eI] = n.useState(), eN = n.useMemo(() => null != eC ? (0, U.T4)(eC, z.pKx.USD) : true, [eC]), [eK, eT] = n.useState(true), {
     changesSaving: eZ,
     saveError: eW,
     saveProductWithAttachments: eX,
     hasUnsavedAttachmentChanges: eQ,
     cancelUnusedUploads: eS
   } = (0, O.P)(), ez = (null == eo ? true : eo.attachments) != null && (null == eo ? true : eo.attachments.length) > 0, ew = null != eW ? eW : ey, eR = null != eZ && "published" in eZ, eL = null != eZ && !eR, eD = null != (b = null == eo ? true : eo.role_id) ? b : null, [ek, eB] = n.useState(), eE = null != ek || null != eD, eG = (0, d.e7)([j.Z], () => null != eD && null !== ek ? j.Z.getRole(eA, eD) : null != ek ? ek : true, [ek, eD, eA]), eY = "";
-  eE && eT ? eY = R.intl.string(R.t.ih4QMT) : eE ? eY = R.intl.string(R.t.o9xphY) : eT && (eY = R.intl.string(R.t.DWYJub));
+  eE && eK ? eY = R.intl.string(R.t.ih4QMT) : eE ? eY = R.intl.string(R.t.o9xphY) : eK && (eY = R.intl.string(R.t.DWYJub));
   let eH = () => {
-      eK(false), eS()
+      eT(false), eS()
     },
     [eM, eJ] = n.useState(),
     {
@@ -189,13 +189,13 @@ function J(e) {
       name: eh,
       priceTier: eC,
       description: eq,
-      image: ex,
+      image: eU,
       imageName: eV,
       isImageChanged: eP,
       newRoleParams: ek,
       hasSavedAttachments: ez,
       hasUnsavedAttachmentChanges: eQ
-    }), [eo, eh, eC, eq, ex, eV, eP, ek, ez, eQ]),
+    }), [eo, eh, eC, eq, eU, eV, eP, ek, ez, eQ]),
     e9 = n.useMemo(() => e$ || null == eM || "publish" === eM || null != ew ? null : (0, r.jsx)(u.oXn, {
       className: L.successNotice,
       children: (0, r.jsx)(f.Z, {
@@ -215,7 +215,7 @@ function J(e) {
       })
     }), [ew, e$, eM]),
     e6 = n.useCallback(() => {
-      e$ ? (0, T.Z)({
+      e$ ? (0, K.Z)({
         title: R.intl.string(R.t.FVDhIS),
         body: R.intl.string(R.t.Hgdhwc),
         cta: R.intl.string(R.t.h0bti4),
@@ -325,17 +325,17 @@ function J(e) {
             children: (0, r.jsx)(W.Z, {
               presetImages: y.M,
               radioGroupAriaLabel: R.intl.string(R.t.fKzQj4),
-              image: ex,
+              image: eU,
               imageName: eV,
               savedImageName: null == eo || null == (a = eo.image_asset) ? true : a.filename,
               onChange: (e, t) => {
                 if (null != e) {
                   var A;
-                  eU(e), eO(t), eF(e.startsWith("data:") || t !== (null == eo || null == (A = eo.image_asset) ? true : A.filename))
+                  ex(e), eO(t), eF(e.startsWith("data:") || t !== (null == eo || null == (A = eo.image_asset) ? true : A.filename))
                 }
               }
             })
-          }), eT ? (0, r.jsx)(u.gNt, {
+          }), eK ? (0, r.jsx)(u.gNt, {
             label: R.intl.string(R.t.zLrtkJ),
             errorMessage: null != (ee = null == ew ? true : ew.getFirstFieldErrorMessage("attachments")) ? ee : true,
             children: (0, r.jsx)(N.s, {
@@ -389,7 +389,7 @@ function J(e) {
           }), (0, r.jsx)(u.LZC, {
             size: 16
           }), (0, r.jsx)(I.Z, {
-            imageUrl: ex,
+            imageUrl: eU,
             name: "" === eh ? R.intl.string(R.t.EmqIws) : eh,
             description: "" === eq ? R.intl.string(R.t["11NA2N"]) : eq,
             formattedPrice: eN,
@@ -419,9 +419,9 @@ function J(e) {
             disabled: null != eD
           }), (0, r.jsx)(Y, {
             text: R.intl.string(R.t.C6wP2d),
-            value: eT,
+            value: eK,
             onChange: e => {
-              e ? eK(true) : eQ ? (0, u.ZDy)(async () => {
+              e ? eT(true) : eQ ? (0, u.ZDy)(async () => {
                 let {
                   ConfirmModal: e
                 } = await Promise.resolve().then(A.bind(A, 481060));

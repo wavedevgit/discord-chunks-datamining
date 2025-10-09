@@ -26,11 +26,11 @@ function _(e) {
     onClose: v
   } = e, {
     analyticsLocations: j
-  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), C = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(S, h.Si.TIER_2), y = g.intl.string(p.default["+f+cqq"]);
-  return C && (null != b ? y = (0, f.Rt)({
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), y = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2 || (0, c.Wp)(S, m.Si.TIER_2), C = g.intl.string(p.default["+f+cqq"]);
+  return y && (null != b ? C = (0, f.Rt)({
     intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
     intervalCount: null == b || null == (_ = b.subscription_trial) ? true : _.interval_count
-  }) : null != S && (y = g.intl.formatToPlainString(g.t.bkQ4bG, {
+  }) : null != S && (C = g.intl.formatToPlainString(g.t.bkQ4bG, {
     percent: S.discount.amount
   }))), (0, r.jsxs)("div", {
     className: x.root,
@@ -43,7 +43,7 @@ function _(e) {
         color: "currentColor"
       }), g.intl.format(g.t.sLJ3ER, {
         onNitroClick: function() {
-          (0, m.E)({
+          (0, h.E)({
             analyticsLocation: j[0],
             onClose: v
           })
@@ -54,14 +54,14 @@ function _(e) {
       iconClassName: x.premiumIcon,
       size: i.zx.Sizes.TINY,
       color: i.zx.Colors.BRAND_INVERTED,
-      subscriptionTier: h.Si.TIER_2,
+      subscriptionTier: m.Si.TIER_2,
       buttonShineClassName: x.premiumShine,
       iconColor: a.JX.PREMIUM_TIER_2,
       onClick: () => {
         v()
       },
       textOptions: {
-        subscribeText: y,
+        subscribeText: C,
         textClassName: x.ctaButtonText
       }
     })]

@@ -98,9 +98,8 @@ function O() {
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.W3K5Ii)
     })]
-  })), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
-    title: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
-    titleId: y,
+  })), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+    label: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
     className: Chunk192294.sensitivity,
     children: [I && (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.I1Zuq6),

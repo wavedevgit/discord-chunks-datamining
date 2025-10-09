@@ -52,7 +52,7 @@ function D(e) {
   e.channelId === S && e.sortOrder === A && (0, c.O)(e.tagFilter, r) && e.tagSetting === R || P(), S = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, v = false
 }
 
-function L(e) {
+function x(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   let t = e.threads.filter(e => p.AW.has(e.type)).map(e => e.id);
   C = C.concat(t);
@@ -67,7 +67,7 @@ function L(e) {
   }), M(), I = e.hasMore, N = e.offset + y, O = false, v = false
 }
 
-function x(e) {
+function L(e) {
   return (null == S || null == e.channelId || S === e.channelId) && M()
 }
 
@@ -94,12 +94,12 @@ function M() {
   }).sort((e, t) => g.default.compare(w(e, A), w(t, A))).map(e => e.id).reverse().value()
 }
 
-function j(e) {
+function k(e) {
   if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   O = false, T = true, v = false
 }
 
-function k(e) {
+function j(e) {
   if (e.channel.id !== S) returnfalse;
   P()
 }
@@ -148,9 +148,9 @@ let V = new F(Chunk570140.Z, {
   CONNECTION_OPEN: P,
   THREAD_DELETE: G,
   THREAD_UPDATE: B,
-  CHANNEL_DELETE: k,
+  CHANNEL_DELETE: j,
   LOAD_ARCHIVED_THREADS: D,
-  LOAD_ARCHIVED_THREADS_SUCCESS: L,
-  LOAD_ARCHIVED_THREADS_FAIL: j,
-  RESORT_THREADS: x
+  LOAD_ARCHIVED_THREADS_SUCCESS: x,
+  LOAD_ARCHIVED_THREADS_FAIL: k,
+  RESORT_THREADS: L
 })

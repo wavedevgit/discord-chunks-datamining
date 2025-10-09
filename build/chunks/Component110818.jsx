@@ -5,7 +5,7 @@ require.d(exports, {
   Db: () => C,
   HC: () => O,
   NQ: () => E,
-  fe: () => x
+  fe: () => L
 }), require("./388685.js");
 var r, i, a, o, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -456,7 +456,7 @@ let R = {
     EASING_END: Chunk748780.Z.Easing.bezier(0, false, .99, 0)
   });
 
-function L(e) {
+function x(e) {
   let {
     animate: t
   } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
@@ -514,7 +514,7 @@ function L(e) {
     })
   })
 }
-class x extends(o = Chunk647438.PureComponent) {
+class L extends(o = Chunk647438.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -553,10 +553,10 @@ class x extends(o = Chunk647438.PureComponent) {
         onSceneComplete: i,
         pauseWhileUnfocused: a,
         pause: require
-      }), (0, Chunk951288.jsx)(L, {
+      }), (0, Chunk951288.jsx)(x, {
         animate: !require && "stars" === exports
       })]
     })
   }
 }
-h(x, "Scenes", N)
+h(L, "Scenes", N)

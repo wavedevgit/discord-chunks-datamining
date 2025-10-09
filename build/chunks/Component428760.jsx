@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk730671 = require("./730671.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -28,24 +28,24 @@ function u(e) {
   } = (0, o.Z)(t, m, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: s()(d.keywordsContainer, l),
-      children: [(0, r.jsx)(a.lcI, {
-        className: s()(d.keywordsTextArea, u),
+      className: a()(d.keywordsContainer, l),
+      children: [(0, r.jsx)(s.lcI, {
+        className: a()(d.keywordsTextArea, u),
         value: f,
         onChange: h,
         placeholder: c.intl.string(c.t.UyaxJy)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
         children: "".concat(p.length, " / ").concat(n)
       })]
-    }), null != x ? (0, r.jsx)(a.Text, {
-      className: s()(d.paddingTop, d.errorText),
+    }), null != x ? (0, r.jsx)(s.Text, {
+      className: a()(d.paddingTop, d.errorText),
       variant: "text-xs/medium",
       color: "text-danger",
       children: x
-    }) : (0, r.jsx)(a.Text, {
+    }) : (0, r.jsx)(s.Text, {
       className: d.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",

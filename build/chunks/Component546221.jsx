@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => O
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk825055 = require("./825055.jsx"),
   Chunk937615 = require("./937615.js"),
   Chunk730647 = require("./730647.jsx"),
@@ -23,7 +22,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk150043 = require("./150043.js");
 
-function _(e) {
+function v(e) {
   let {
     payoutsByPeriod: t,
     team: n
@@ -45,7 +44,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     totalPayoutsForPeriod: n
@@ -61,7 +60,7 @@ function v(e) {
 let C = e => {
   var t, n;
   let {
-    guildId: a,
+    guildId: s,
     application: o
   } = e, {
     loading: g,
@@ -69,18 +68,18 @@ let C = e => {
     currentPeriod: C,
     allPeriods: O,
     metrics: y
-  } = (0, d.Z)(a, o), N = (0, u.u)(a), E = (0, c.mY)();
+  } = (0, d.Z)(s, o), N = (0, u.u)(s), E = (0, c.mY)();
   return g ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
         children: b.intl.format(b.t["2raBCQ"], {
-          insightsURL: x.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(a)
+          insightsURL: x.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(s)
         })
       }), (0, r.jsx)(i.LZC, {
         size: 32
       })]
-    }), (0, r.jsxs)(i.hjN, {
-      title: b.intl.string(b.t.ofmOzc),
+    }), (0, r.jsxs)(i.C3N, {
+      label: b.intl.string(b.t.ofmOzc),
       className: j.formSection,
       children: [(0, r.jsx)(i.LZC, {
         size: 8
@@ -88,7 +87,7 @@ let C = e => {
         className: j.metricsContainer,
         children: [(0, r.jsx)(p.Z, {
           label: b.intl.string(b.t.iY1jW1),
-          value: (0, s.T4)(null != (t = y.revenue) ? t : 0, x.pKx.USD),
+          value: (0, a.T4)(null != (t = y.revenue) ? t : 0, x.pKx.USD),
           additionalContent: (0, r.jsx)(p.H, {
             value: y.revenuePctChange,
             isPercent: true
@@ -107,30 +106,30 @@ let C = e => {
             value: y.subscriberChange
           })
         })]
-      }), (0, r.jsx)(v, {
-        guildId: a,
+      }), (0, r.jsx)(_, {
+        guildId: s,
         totalPayoutsForPeriod: C
       })]
-    }), (0, r.jsx)(i.hjN, {
-      title: b.intl.string(b.t["+5Rmho"]),
+    }), (0, r.jsx)(i.C3N, {
+      label: b.intl.string(b.t["+5Rmho"]),
       className: j.formSection,
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(v, {
         payoutsByPeriod: O,
         team: m
       })
-    }), (0, r.jsx)(i.hjN, {
-      title: b.intl.string(b.t.O8cDAA),
-      disabled: E,
+    }), (0, r.jsx)(i.C3N, {
+      label: b.intl.string(b.t.O8cDAA),
       className: j.formSection,
+      disabled: E,
       children: (0, r.jsx)(f.Z, {
-        guildId: a,
+        guildId: s,
         application: o
       })
-    }), (0, r.jsx)(i.hjN, {
-      title: b.intl.string(b.t["0n7R2d"]),
+    }), (0, r.jsx)(i.C3N, {
+      label: b.intl.string(b.t["0n7R2d"]),
       className: j.formSection,
       children: (0, r.jsx)(h.Z, {
-        guildId: a,
+        guildId: s,
         allPeriods: O
       })
     })]
@@ -138,7 +137,7 @@ let C = e => {
 };
 
 function O(e) {
-  return (0, r.jsx)(a.l, {
+  return (0, r.jsx)(s.l, {
     guildId: e.guildId,
     children: (0, r.jsx)(C, function(e) {
       for (var t = 1; t < arguments.length; t++) {

@@ -84,7 +84,7 @@ function C(e) {
   } = (0, g.bd)(n), [P, v] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
-  }, [l, c]), [C, S] = i.useState(() => null != p ? p : true !== x ? x : null == m ? null : null != m ? m : null), [I, w] = i.useMemo(() => {
+  }, [l, c]), [C, S] = i.useState(() => null != p ? p : true !== x ? x : null == m ? null : null != m ? m : null), [I, A] = i.useMemo(() => {
     var e;
     let t = P.find(e => {
         let {
@@ -100,7 +100,7 @@ function C(e) {
       return t === (null == C ? true : C.skuId)
     })) ? e : null, n]
   }, [C, P, v]), {
-    product: A,
+    product: w,
     purchase: N
   } = (0, d.Z)(null == I ? true : I.skuId), Z = i.useRef(null), k = b.ZP.canUseCollectibles(t), D = (null == C ? true : C.skuId) === (true === x ? null == m ? true : m.skuId : null == x ? true : x.skuId), T = i.useCallback(e => {
     S(e)
@@ -136,9 +136,9 @@ function C(e) {
         onOpenShop: U
       }), (0, r.jsx)(y.Z, {
         user: t,
-        canApplySelectedChange: w,
+        canApplySelectedChange: A,
         pendingProfileEffectRecord: I,
-        product: A,
+        product: w,
         purchase: N,
         guild: n
       })]
@@ -149,7 +149,7 @@ function C(e) {
       },
       onClose: f,
       onOpenShop: U,
-      product: A,
+      product: w,
       purchase: N,
       canUseCollectibles: k,
       selectedProfileEffect: C,

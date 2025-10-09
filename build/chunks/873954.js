@@ -2,8 +2,9 @@
 /** chunk id: 873954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FE: () => S,
+  FE: () => A,
   G5: () => v,
+  IW: () => I,
   yF: () => h
 });
 var Chunk665012 = require("./665012.js"),
@@ -98,32 +99,46 @@ function v(e, t) {
   return r.displayName = t.name, r
 }
 
-function I(e) {
+function I(e, t, n = T) {
+  let r = ({
+      node: e
+    }) => t(e.props, e.props.ref, e),
+    i = (0, c.forwardRef)((t, i) => {
+      var a;
+      let o = n(t);
+      return null != (a = O(e, t, i, null, o, e => c.createElement(r, {
+        node: e
+      }))) ? a : c.createElement(c.Fragment, null)
+    });
+  return i.displayName = t.name, i
+}
+
+function T(e) {
   return (0, a.H)({
     ...e,
     addIdAndValue: true
   })
 }
-let T = (0, Chunk647438.createContext)(null);
+let S = (0, Chunk647438.createContext)(null);
 
-function S(e) {
-  let t = (0, c.useContext)(T),
+function A(e) {
+  let t = (0, c.useContext)(S),
     n = ((null == t ? true : t.dependencies) || []).concat(e.dependencies),
     r = e.idScope || (null == t ? true : t.idScope),
-    i = I({
+    i = T({
       ...e,
       idScope: r,
       dependencies: n
     });
-  return (0, c.useContext)(p) && (i = c.createElement(A, null, i)), t = (0, c.useMemo)(() => ({
+  return (0, c.useContext)(p) && (i = c.createElement(C, null, i)), t = (0, c.useMemo)(() => ({
     dependencies: n,
     idScope: r
-  }), [r, ...n]), c.createElement(T.Provider, {
+  }), [r, ...n]), c.createElement(S.Provider, {
     value: t
   }, i)
 }
 
-function A({
+function C({
   children: e
 }) {
   let t = (0, c.useContext)(p),

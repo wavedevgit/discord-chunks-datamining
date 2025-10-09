@@ -47,7 +47,7 @@ function D() {
   return R = module, P = exports, w.clear()
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: {
       id: t
@@ -56,7 +56,7 @@ function L(e) {
   return w.clearGuildId(t)
 }
 
-function x(e) {
+function L(e) {
   let {
     channel: {
       guild_id: t
@@ -74,11 +74,11 @@ function M(e) {
   }), n
 }
 
-function j(e) {
+function k(e) {
   return w.nonPositionalChannelIdUpdate(e.id)
 }
 
-function k(e) {
+function j(e) {
   return w.clearGuildId(e.guildId)
 }
 
@@ -314,13 +314,13 @@ let eu = new ec(Chunk570140.Z, {
   CATEGORY_EXPAND: ee,
   CHANNEL_ACK: Y,
   CHANNEL_COLLAPSE: F,
-  CHANNEL_CREATE: x,
-  CHANNEL_DELETE: x,
+  CHANNEL_CREATE: L,
+  CHANNEL_DELETE: L,
   CHANNEL_LOCAL_ACK: Y,
   CHANNEL_MUTE_EXPIRED: B,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: Y,
   CHANNEL_SELECT: J,
-  CHANNEL_STATUSES: k,
+  CHANNEL_STATUSES: j,
   CHANNEL_UPDATES: M,
   CONNECTION_OPEN_SUPPLEMENTAL: ei,
   CONNECTION_OPEN: D,
@@ -338,8 +338,8 @@ let eu = new ec(Chunk570140.Z, {
   GAMES_DATABASE_FETCH: ei,
   GAMES_DATABASE_UPDATE: ei,
   GUILD_APPLICATIONS_FETCH_SUCCESS: ei,
-  GUILD_CREATE: L,
-  GUILD_DELETE: L,
+  GUILD_CREATE: x,
+  GUILD_DELETE: x,
   GUILD_MEMBER_UPDATE: U,
   GUILD_MUTE_EXPIRED: B,
   GUILD_ROLE_CREATE: B,
@@ -351,7 +351,7 @@ let eu = new ec(Chunk570140.Z, {
   GUILD_SCHEDULED_EVENT_DELETE: eo,
   GUILD_SCHEDULED_EVENT_UPDATE: eo,
   GUILD_TOGGLE_COLLAPSE_MUTED: B,
-  GUILD_UPDATE: L,
+  GUILD_UPDATE: x,
   IMPERSONATE_STOP: B,
   IMPERSONATE_UPDATE: B,
   LOAD_CHANNELS: Z,
@@ -384,7 +384,7 @@ let eu = new ec(Chunk570140.Z, {
   VOICE_CATEGORY_COLLAPSE: et,
   VOICE_CATEGORY_EXPAND: et,
   VOICE_CHANNEL_SELECT: J,
-  VOICE_CHANNEL_STATUS_UPDATE: j,
+  VOICE_CHANNEL_STATUS_UPDATE: k,
   VOICE_STATE_UPDATES: $,
   WINDOW_FOCUS: W
 })

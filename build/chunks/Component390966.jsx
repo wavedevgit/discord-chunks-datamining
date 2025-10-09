@@ -164,11 +164,11 @@ function T(e) {
   null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjI) : m.intl.string(m.t["X2K3//"]));
   let D = (0, f.Z)(N, C),
     [{
-      startDateTimeString: L,
-      endDateTimeString: x,
+      startDateTimeString: x,
+      endDateTimeString: L,
       currentOrPastEvent: M,
-      upcomingEvent: j,
-      diffMinutes: k
+      upcomingEvent: k,
+      diffMinutes: j
     }, U] = i.useState((0, _.ub)(t, u));
   i.useEffect(() => {
     U((0, _.ub)(t, u));
@@ -177,13 +177,13 @@ function T(e) {
       clearInterval(e)
     }
   }, [t, u]);
-  let G = L;
-  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7O, {
-    start: L,
-    end: x
+  let G = x;
+  null != L && "" !== L && (G = m.intl.formatToPlainString(m.t.tXbu7O, {
+    start: x,
+    end: L
   }));
-  let B = i.useMemo(() => n === h.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!j, [n, null == D ? true : D.is_canceled, M, j]),
-    Z = y(B, G, p, x, k),
+  let B = i.useMemo(() => n === h.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == D ? true : D.is_canceled, M, k]),
+    Z = y(B, G, p, L, j),
     {
       Icon: F,
       iconColor: V,
@@ -194,9 +194,9 @@ function T(e) {
       textBrand: R,
       textPositive: P,
       textDanger: w,
-      endDateTimeString: x,
-      startDateTimeString: L
-    }), [B, R, P, w, x, L]),
+      endDateTimeString: L,
+      startDateTimeString: x
+    }), [B, R, P, w, L, x]),
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);

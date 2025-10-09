@@ -80,9 +80,9 @@ function D(e) {
   g = {}, t.forEach(N)
 }
 
-function L() {}
+function x() {}
 
-function x() {
+function L() {
   y = true
 }
 
@@ -94,11 +94,11 @@ function M(e) {
   for (let e of (O = true, y = false, v = !n, t)) C(e)
 }
 
-function j() {
+function k() {
   O = false, y = false, v = false
 }
 
-function k(e) {
+function j(e) {
   let {
     entitlements: t
   } = e;
@@ -232,16 +232,16 @@ h(Z, "displayName", "EntitlementStore");
 let F = new Z(Chunk570140.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
-  ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
+  ENTITLEMENT_FETCH_APPLICATION_FAIL: x,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: k,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
+  SKU_PURCHASE_SUCCESS: j,
+  VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
   LIBRARY_FETCH_SUCCESS: U,
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
   ENTITLEMENT_DELETE: B,
   LOGOUT: A,
-  ENTITLEMENTS_FETCH_FOR_USER_START: x,
+  ENTITLEMENTS_FETCH_FOR_USER_START: L,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: j
+  ENTITLEMENTS_FETCH_FOR_USER_FAIL: k
 })

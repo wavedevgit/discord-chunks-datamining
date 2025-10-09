@@ -78,8 +78,8 @@ function C(e) {
       channel: f,
       rating: n
     })
-  }, L = d.Z.can(y.Plq.MANAGE_MESSAGES, f), x = e => {
-    L && (0, s.jW)(e, async () => {
+  }, x = d.Z.can(y.Plq.MANAGE_MESSAGES, f), L = e => {
+    x && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("12891").then(n.bind(n, 519620));
@@ -91,7 +91,7 @@ function C(e) {
   return (0, r.jsxs)(o.P3F, {
     className: v.container,
     onClick: C,
-    onContextMenu: x,
+    onContextMenu: L,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
     children: [(0, r.jsx)(c.Z, {

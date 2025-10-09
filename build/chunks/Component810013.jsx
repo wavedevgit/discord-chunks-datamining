@@ -3,9 +3,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
   Chunk938475 = require("./938475.js"),
@@ -18,23 +17,24 @@ function f(e) {
   let {
     channel: t
   } = e, n = (0, i.e7)([s.default], () => s.default.getId()), f = (0, i.e7)([o.ZP], () => o.ZP.getVoiceStatesForChannel(t), [t]);
-  return (0, r.jsx)(l.xJW, {
-    title: d.intl.string(d.t.KPuWsr),
+  return (0, r.jsx)("div", {
     className: u.modalContent,
-    titleClassName: u.formItemTitle,
-    children: (0, r.jsx)(c.Z, {
-      children: (0, r.jsx)(a.Z, {
-        channel: t,
-        users: f.filter(e => {
-          let {
-            user: t
-          } = e;
-          return t.id !== n
-        }).map(e => {
-          let {
-            user: t
-          } = e;
-          return t
+    children: (0, r.jsx)(l.gNt, {
+      label: d.intl.string(d.t.KPuWsr),
+      children: (0, r.jsx)(c.Z, {
+        children: (0, r.jsx)(a.Z, {
+          channel: t,
+          users: f.filter(e => {
+            let {
+              user: t
+            } = e;
+            return t.id !== n
+          }).map(e => {
+            let {
+              user: t
+            } = e;
+            return t
+          })
         })
       })
     })

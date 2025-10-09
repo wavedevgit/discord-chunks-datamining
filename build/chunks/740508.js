@@ -27,7 +27,5 @@ module.exports = {
   cancelButton: "cancelButton_cc46f0",
   toggleIconOn: "toggleIconOn_cc46f0",
   gameHasSubgame: "gameHasSubgame_cc46f0",
-  subgameContainer: "subgameContainer_cc46f0",
-  addedGamesTitle: "addedGamesTitle_cc46f0",
-  addedGamesDescription: "addedGamesDescription_cc46f0"
+  subgameContainer: "subgameContainer_cc46f0"
 }

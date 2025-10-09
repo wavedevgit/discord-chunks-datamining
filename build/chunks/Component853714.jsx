@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
@@ -90,23 +90,23 @@ let G = Chunk647438.forwardRef((e, t) => {
   var {
     onHeaderClick: i,
     guildId: l,
-    guild: s
-  } = e, a = k(e, ["onHeaderClick", "guildId", "guild"]);
+    guild: a
+  } = e, s = k(e, ["onHeaderClick", "guildId", "guild"]);
   return null == l ? null : (0, r.jsx)(S.Z, L(A({
     ref: t
-  }, a), {
+  }, s), {
     guildId: l,
-    guild: s,
+    guild: a,
     onHeaderClick: () => {
       let {
         log: e
-      } = a;
+      } = s;
       null == i || i(e)
     },
     onUserContextMenu: e => {
       let {
         log: t
-      } = a, {
+      } = s, {
         user: i
       } = t;
       null != i && null != l && (0, g.jW)(e, async () => {
@@ -122,7 +122,7 @@ let G = Chunk647438.forwardRef((e, t) => {
     onChannelContextMenu: e => {
       let {
         log: t
-      } = a, i = j.Z.getGuild(l);
+      } = s, i = j.Z.getGuild(l);
       null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, g.jW)(e, async () => {
         let {
           default: e
@@ -135,13 +135,13 @@ let G = Chunk647438.forwardRef((e, t) => {
     onTargetContextMenu: e => {
       let {
         log: t
-      } = a;
+      } = s;
       switch (t.targetType) {
         case T.KFR.CHANNEL:
         case T.KFR.CHANNEL_OVERWRITE:
           let i = b.Z.getChannel(t.targetId),
-            s = j.Z.getGuild(l);
-          if (null != i && null != s) return (0, g.jW)(e, async () => {
+            a = j.Z.getGuild(l);
+          if (null != i && null != a) return (0, g.jW)(e, async () => {
             let {
               default: e
             } = await n.e("51529").then(n.bind(n, 228620));
@@ -159,7 +159,7 @@ let G = Chunk647438.forwardRef((e, t) => {
             }))
           });
         case T.KFR.USER:
-          let o = v.default.getUser(t.targetId);
+          let o = _.default.getUser(t.targetId);
           if (null != o && null != l) return (0, g.jW)(e, async () => {
             let {
               default: e
@@ -180,7 +180,7 @@ function M(e) {
     logs: t,
     guildId: n,
     guild: l,
-    expandedId: s,
+    expandedId: a,
     lastExpandedId: o,
     scroller: c,
     setExpandedRef: d,
@@ -192,26 +192,26 @@ function M(e) {
     f.current = c
   }, [c]);
   let h = (0, p.Z)("audit-log", f);
-  return (0, r.jsx)(a.bG, {
+  return (0, r.jsx)(s.bG, {
     navigator: h,
-    children: (0, r.jsx)(a.SJ, {
+    children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, a = k(e, ["ref"]);
+        } = e, s = k(e, ["ref"]);
         return (0, r.jsx)("div", L(A({
           ref: i
-        }, a), {
+        }, s), {
           className: w.list,
           children: t.map(e => {
-            let t = s === e.id,
+            let t = a === e.id,
               i = o === e.id,
-              a = t ? d : i ? u : null;
+              s = t ? d : i ? u : null;
             return (0, r.jsx)(G, {
               guildId: n,
               guild: l,
               ref: e => {
-                null == a || a(e)
+                null == s || s(e)
               },
               className: w.row,
               onHeaderClick: g,
@@ -279,9 +279,8 @@ class U extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk912864.customHeader,
-        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-          tag: Chunk481060.RB0.H1,
-          className: Chunk912864.formTitle,
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.SPWLyc)
         }), this.renderHeaderDropdowns()]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
@@ -301,14 +300,14 @@ class U extends Chunk647438.PureComponent {
     } = this.state, {
       logs: i,
       theme: l,
-      hide: s,
-      isInitialLoading: a,
+      hide: a,
+      isInitialLoading: s,
       isLoading: o,
       hasError: c,
       guildId: u,
       guild: g
     } = this.props;
-    if (s) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
+    if (a) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
     if (Chunk374470 || Chunk91192) return this.renderSpinner();
     if (0 === Chunk647438.length) {
       let e = Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.tzkaDw) : Chunk388032.intl.string(Chunk388032.t.lNuYho),
@@ -354,7 +353,7 @@ class U extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk630016.customContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.yWw, {
-          className: s()(Chunk630016.customScroller, Chunk912864.scroller),
+          className: a()(Chunk630016.customScroller, Chunk912864.scroller),
           onScroll: this.handleOnScroll,
           ref: this.handleSetScrollerRef,
           children: (0, Chunk951288.jsx)("div", {
@@ -378,15 +377,15 @@ class U extends Chunk647438.PureComponent {
       var n;
       let {
         actionFilter: i
-      } = this.props, l = (0, h.Pw)(e.value), s = (0, h.p5)(e.value), a = e.value === i;
+      } = this.props, l = (0, h.Pw)(e.value), a = (0, h.p5)(e.value), s = e.value === i;
       return (0, r.jsxs)(d.lo1, {
         value: e.value,
         selectedColor: d.lo1.Colors.BRAND,
         children: [(0, r.jsx)(d.lo1.Icon, {
           children: (0, r.jsx)(I.mp, {
-            themeOverride: a ? T.BRd.DARK : null,
+            themeOverride: s ? T.BRd.DARK : null,
             actionType: l,
-            targetType: s,
+            targetType: a,
             action: e.value
           })
         }), (0, r.jsx)(d.lo1.Label, {
@@ -441,7 +440,7 @@ class U extends Chunk647438.PureComponent {
         actionFilter: n,
         hide: i,
         userIdFilter: l,
-        moderators: a
+        moderators: s
       } = this.props;
       if (i) return null;
       let o = N.Iv(),
@@ -456,7 +455,7 @@ class U extends Chunk647438.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        g = [u, ...a].map(e => e instanceof x.Z ? function(e) {
+        g = [u, ...s].map(e => e instanceof x.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,
@@ -472,7 +471,7 @@ class U extends Chunk647438.PureComponent {
       return (0, r.jsxs)("div", {
         className: w.quickSelect,
         children: [(0, r.jsx)(d.EFH, {
-          popoutClassName: s()(w.selectFilterPopout, R.elevationBorderHigh),
+          popoutClassName: a()(w.selectFilterPopout, R.elevationBorderHigh),
           items: g,
           renderItem: this.renderUserQuickSelectItem,
           renderValue: this.renderUserQuickSelectValue,
@@ -487,7 +486,7 @@ class U extends Chunk647438.PureComponent {
         }), (0, r.jsx)(d.EFH, {
           placeholder: P.intl.string(P.t.I288Z2),
           label: P.intl.string(P.t.rautdn),
-          popoutClassName: s()(w.selectFilterPopout, R.elevationBorderLow),
+          popoutClassName: a()(w.selectFilterPopout, R.elevationBorderLow),
           items: o,
           renderItem: this.renderActionQuickSelectItem,
           renderValue: this.renderActionQuickSelectValue,
@@ -564,7 +563,7 @@ let B = Chunk442837.ZP.connectStores([Chunk233857.Z, Chunk999382.Z, Chunk430824.
   return {
     guildId: module,
     guild: exports,
-    moderators: Chunk233857.Z.userIds.map(e => v.default.getUser(e)).filter(Chunk823379.lm),
+    moderators: Chunk233857.Z.userIds.map(e => _.default.getUser(e)).filter(Chunk823379.lm),
     isInitialLoading: Chunk233857.Z.isInitialLoading,
     isLoading: Chunk233857.Z.isLoading,
     isLoadingNextPage: Chunk233857.Z.isLoadingNextPage,

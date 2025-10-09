@@ -211,7 +211,7 @@ class Y extends Chunk647438.PureComponent {
         searchContext: this.props.searchContext,
         navId: V,
         onSelectedIndexChanged: this.handleSelectedIndexChanged
-      }) : (0, r.jsx)(L.ZP, {
+      }) : (0, r.jsx)(x.ZP, {
         ref: this._searchPopoutRef,
         searchContext: this.props.searchContext,
         navId: V,
@@ -250,7 +250,7 @@ class Y extends Chunk647438.PureComponent {
         focused: r
       } = this.state;
       if (e.preventDefault(), e.stopPropagation(), "" === O.Sq(t)) return void this.focusEditor();
-      t = O.Hl(t, 0), this.setEditorState(t), (0, j.cy)({
+      t = O.Hl(t, 0), this.setEditorState(t), (0, k.cy)({
         searchContext: n
       }), r || Promise.resolve().then(() => this.blurEditor())
     }), Z(this, "handleFocusSearch", e => {
@@ -270,7 +270,7 @@ class Y extends Chunk647438.PureComponent {
       if (r.isPrivate() && a.type !== U.aib.DMS) return void this.focusEditor();
       let o = (0, S.X3)(r);
       if (null == o) return void this.focusEditor();
-      (0, j.PJ)({
+      (0, k.PJ)({
         searchContext: a
       }), Promise.resolve().then(() => {
         let {
@@ -300,7 +300,7 @@ class Y extends Chunk647438.PureComponent {
       } = this.props;
       this.setState({
         focused: true
-      }), t || (0, j.I1)({
+      }), t || (0, k.I1)({
         searchContext: e
       })
     }), Z(this, "handleBlur", e => {
@@ -311,7 +311,7 @@ class Y extends Chunk647438.PureComponent {
       this.setState({
         focused: false
       }, () => {
-        n || e || (0, j.IZ)({
+        n || e || (0, k.IZ)({
           searchContext: t
         }), O.xb(this.props.editorState) && this.clearSearch()
       })
@@ -322,16 +322,16 @@ class Y extends Chunk647438.PureComponent {
         current: e
       } = this._searchPopoutRef;
       return null != e && (false === e.state.selectedIndex && e.shouldShowSearchInSelectedChannel() ? e.handleSearchInChannel({
-        searchAutocompleteSelectAction: k.ZW.KEY_PRESS
+        searchAutocompleteSelectAction: j.ZW.KEY_PRESS
       }) : e.selectOption({
-        searchAutocompleteSelectAction: k.ZW.KEY_PRESS
+        searchAutocompleteSelectAction: j.ZW.KEY_PRESS
       }))
     }), Z(this, "handleRedesignOption", () => {
       let {
         current: e
       } = this._searchFiltersRedesignPopoutRef;
       return null != e && e.selectOption({
-        searchAutocompleteSelectAction: k.ZW.KEY_PRESS
+        searchAutocompleteSelectAction: j.ZW.KEY_PRESS
       })
     }), Z(this, "handleReturn", e => {
       let {
@@ -477,7 +477,7 @@ function W(e) {
     }),
     b = i.useRef(_);
   i.useEffect(() => {
-    b.current && !_ && (b.current = false, (0, j.IZ)({
+    b.current && !_ && (b.current = false, (0, k.IZ)({
       searchContext: t
     })), !b.current && _ && (b.current = true)
   }, [_, t]);
@@ -487,7 +487,7 @@ function W(e) {
         query: r,
         searchEverywhere: i
       } = e;
-      N.ZP.refreshSearchQueryAnalyticsId(t), (0, j.tI)({
+      N.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
         searchContext: t,
         query: r,
         queryString: n
@@ -522,10 +522,10 @@ function W(e) {
     P = (0, C.KS)({
       location: "Search"
     }),
-    L = A || P,
-    x = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : L ? G.intl.formatToPlainString(G.t.LDZtFB, {
+    x = A || P,
+    L = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : x ? G.intl.formatToPlainString(G.t.LDZtFB, {
       name: I
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, L, I]);
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, x, I]);
   return (0, r.jsx)(Y, {
     className: n,
     searchContext: t,
@@ -535,8 +535,8 @@ function W(e) {
     keyboardModeEnabled: o,
     onSearch: y,
     isSearchActive: _,
-    placeholder: x,
-    isSearchFiltersRedesignEnabled: L
+    placeholder: L,
+    isSearchFiltersRedesignEnabled: x
   })
 }
 
@@ -545,7 +545,7 @@ function K(e) {
     className: t,
     guildId: n,
     channelId: i
-  } = e, a = (0, x.H)({
+  } = e, a = (0, L.H)({
     guildId: n,
     channelId: i
   });

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk481060 = require("./481060.js"),
   Chunk152406 = require("./152406.js");
@@ -73,7 +73,7 @@ let u = (0, Chunk137317.animated)(d),
       name: n,
       icon: i,
       iconClassName: l
-    } = e, a = (0, o.Yzy)({
+    } = e, s = (0, o.Yzy)({
       name: n,
       icon: i,
       iconClassName: l
@@ -91,15 +91,15 @@ let u = (0, Chunk137317.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: s()(c.crossfade, t),
-      children: a((e, t) => {
+      className: a()(c.crossfade, t),
+      children: s((e, t) => {
         let {
           icon: n,
           iconClassName: i
         } = t;
         return (0, r.jsx)(u, {
           icon: n,
-          className: s()(c.icon, i),
+          className: a()(c.icon, i),
           style: e
         })
       })

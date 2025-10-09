@@ -103,15 +103,15 @@ let eo = (e, t) => er({
   }, t ? {
     referralProgram: {
       thumbnail: D.Z,
-      assetUrl: e ? w.Z : L.Z
+      assetUrl: e ? w.Z : x.Z
     },
     showYourStyle: {
       thumbnail: M.Z,
-      assetUrl: e ? x.Z : j.Z
+      assetUrl: e ? L.Z : k.Z
     },
     yourSpace: {
       thumbnail: U.Z,
-      assetUrl: e ? k.Z : G.Z
+      assetUrl: e ? j.Z : G.Z
     },
     emojis: {
       thumbnail: A.Z,
@@ -233,14 +233,14 @@ let eo = (e, t) => er({
         onClick: Chunk612253,
         videoUrl: Chunk295349.yourSpace.assetUrl
       },
-      L = {
+      x = {
         name: "emojis",
         title: Chunk388032.intl.string(Chunk388032.t.zY5PPT),
         description: Chunk388032.intl.string(Chunk388032.t.R5Xag4),
         previewImage: Chunk295349.emojis.thumbnail,
         videoUrl: Chunk295349.emojis.assetUrl
       },
-      x = [
+      L = [
         [Chunk138431],
         [Chunk305516],
         [Chunk980984, {

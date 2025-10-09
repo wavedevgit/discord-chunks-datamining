@@ -42,11 +42,11 @@ function j(e) {
     })
   }, [j.ownerId, h]);
   let {
-    showRefreshedStreamTaxonomy: C
+    showRefreshedStreamTaxonomy: k
   } = (0, s.u)({
     location: "StreamFeedback"
   }), {
-    surveyEmojiKind: k
+    surveyEmojiKind: C
   } = (0, c.R)({
     location: "StreamFeedback"
   });
@@ -62,12 +62,12 @@ function j(e) {
         feedbackType: _.nw.STREAM,
         location: "StreamFeedback"
       }), null != c) {
-      if (C) {
+      if (k) {
         let {
           category: n,
           problem: r
         } = e;
-        (0, b.Z)({
+        (0, m.Z)({
           problem: null != (t = null == r ? true : r.value) ? t : null,
           category: n,
           variant: null != (l = null == r ? true : r.variant) ? l : null,
@@ -82,7 +82,7 @@ function j(e) {
         let {
           problem: t
         } = e;
-        (0, b.Z)({
+        (0, m.Z)({
           problem: null != (i = null == t ? true : t.value) ? i : null,
           stream: j,
           feedback: u,
@@ -122,7 +122,7 @@ function j(e) {
   let P = O.intl.string(O.t["5smP3d"]),
     R = O.intl.string(O.t["0uxA2d"]),
     T = O.intl.string(O.t.CqjnLC),
-    L = {
+    F = {
       impressionName: i.ImpressionNames.STREAM_FEEDBACK_MODAL,
       impressionProperties: {
         media_session_id: S.media_session_id,
@@ -130,7 +130,7 @@ function j(e) {
         parent_media_session_id: S.parent_media_session_id
       }
     };
-  if (C) {
+  if (k) {
     let e = {
         value: _.tX.CONNECTION,
         label: O.intl.string(y.default.FVhMw8),
@@ -185,26 +185,26 @@ function j(e) {
           label: O.intl.string(O.t["emlT9/"])
         }
       };
-    return (0, r.jsx)(m.Z, {
+    return (0, r.jsx)(d.Z, {
       onSubmit: w,
       onClose: x,
       ratingHeader: P,
-      ratingEmojiKind: k,
+      ratingEmojiKind: C,
       ratingBody: t ? R : T,
       categoriesHeader: O.intl.string(y.default["tq859/"]),
       optionsTree: [e, n, l, o, i],
-      impression: L,
+      impression: F,
       transitionState: E
     })
   }
   return (0, r.jsx)(u.Z, {
     modalType: "stream",
     header: P,
-    ratingEmojiKind: k,
-    impression: L,
+    ratingEmojiKind: C,
+    impression: F,
     body: t ? R : T,
     problemTitle: O.intl.string(O.t["6Y1t5O"]),
-    problems: (0, d.Z)({
+    problems: (0, b.Z)({
       isStreamer: t,
       isEndStream: true
     }),

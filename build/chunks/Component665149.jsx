@@ -140,11 +140,11 @@ let y = 24,
       role: P,
       "aria-label": w,
       "aria-hidden": D,
-      "aria-checked": L,
-      "aria-expanded": x,
+      "aria-checked": x,
+      "aria-expanded": L,
       "aria-haspopup": M,
-      "data-jump-section": j
-    } = e, k = null != g ? {
+      "data-jump-section": k
+    } = e, j = null != g ? {
       secondaryColorClass: g
     } : {}, U = (0, r.jsx)(E, h({
       x: 0,
@@ -155,7 +155,7 @@ let y = 24,
       className: o()(i, _.icon),
       colorClass: null != m ? m : true,
       color: null != p ? p : "currentColor"
-    }, k)), G = w;
+    }, j)), G = w;
     return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.ua7, {
       "data-migration-pending": true,
       text: I,
@@ -191,7 +191,7 @@ let y = 24,
             onMouseLeave: y,
             onFocus: I,
             onBlur: T
-          }, k))
+          }, j))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
           tag: "div",
@@ -210,11 +210,11 @@ let y = 24,
           role: P,
           "aria-label": G,
           "aria-hidden": D,
-          "aria-checked": L,
+          "aria-checked": x,
           "aria-haspopup": M,
-          "aria-expanded": x,
+          "aria-expanded": L,
           tabIndex: l || null == O ? false : 0,
-          "data-jump-section": j,
+          "data-jump-section": k,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: b,

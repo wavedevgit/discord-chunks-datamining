@@ -55,7 +55,7 @@ function v(e) {
     headerClassName: C,
     headingVariant: N = "heading-md/normal",
     headingColor: R
-  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), L = (0, _.lr)(), x = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.PremiumTypes.TIER_2 : null, j = (0, h.N)(), k = (0, p.Ng)(), U = null == j ? true : j.subscription_trial;
+  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), x = (0, _.lr)(), L = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.PremiumTypes.TIER_2 : null, k = (0, h.N)(), j = (0, p.Ng)(), U = null == k ? true : k.subscription_trial;
   if (!S && !t && null != M && n === M && null != P && null != P.planIdFromItems) {
     let e = null != P.trialEndsAt ? s()(null == P ? true : P.trialEndsAt).diff(s()(), "d") : 0,
       t = E.GP[P.planIdFromItems],
@@ -66,12 +66,12 @@ function v(e) {
           remainingTime: e,
           price: n
         }) : P.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6u"], {
-          percent: null != (t = null == L ? true : L.percentage) ? t : E.Bo,
+          percent: null != (t = null == x ? true : x.percentage) ? t : E.Bo,
           regularPrice: n
         }) : b.intl.formatToPlainString(b.t["3Ziutb"], {
-          percent: null != (r = null == L ? true : L.percentage) ? r : E.M_,
+          percent: null != (r = null == x ? true : x.percentage) ? r : E.M_,
           regularPrice: n,
-          numMonths: null != (i = null == L ? true : L.duration) ? i : E.rt
+          numMonths: null != (i = null == x ? true : x.duration) ? i : E.rt
         })
       };
     return (0, r.jsx)(c.X6q, {
@@ -100,20 +100,20 @@ function v(e) {
         })
       })
     }
-    if (null != k) return (0, r.jsx)(c.X6q, {
+    if (null != j) return (0, r.jsx)(c.X6q, {
       variant: N,
       color: R,
       className: a()(y.trialHeader, C),
       children: (0, r.jsx)(O, {
         defaultPriceString: e,
         subscriptionPlan: E.Xh.PREMIUM_MONTH_TIER_2,
-        discountOffer: k
+        discountOffer: j
       })
     })
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.Z, {
-      subscriptionTier: x,
+      subscriptionTier: L,
       isGift: t,
       className: null != T ? T : y.price,
       priceOptions: v,
@@ -121,7 +121,7 @@ function v(e) {
       isApplicationHome: S,
       enablePremiumBrandRefresh: A
     }), m && (0, r.jsx)(g.Z, {
-      subscriptionTier: x,
+      subscriptionTier: L,
       interval: E.rV.YEAR,
       className: null != T ? T : y.price,
       isGift: t,

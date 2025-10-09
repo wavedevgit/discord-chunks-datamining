@@ -95,11 +95,11 @@ let A = Chunk647438.forwardRef((e, t) => {
     minWidth: P = 0,
     minHeight: w = 0,
     mediaLayoutType: D,
-    limitResponsiveWidth: L = true,
-    accessory: x,
+    limitResponsiveWidth: x = true,
+    accessory: L,
     zoomable: M = true,
-    original: j,
-    children: k = e => {
+    original: k,
+    children: j = e => {
       let {
         src: t,
         size: n,
@@ -133,7 +133,7 @@ let A = Chunk647438.forwardRef((e, t) => {
       minHeight: w
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
-  "" !== f && c !== p.zo9.ERROR ? n = k({
+  "" !== f && c !== p.zo9.ERROR ? n = j({
     src: f,
     size: K,
     alt: b,
@@ -152,7 +152,7 @@ let A = Chunk647438.forwardRef((e, t) => {
     children: n
   });
   let q = null != U ? U() : null;
-  return q = null != q ? q : x, (0, r.jsx)(l.tEY, {
+  return q = null != q ? q : L, (0, r.jsx)(l.tEY, {
     ringTarget: Y,
     focusTarget: W,
     children: (0, r.jsxs)("div", I(O({
@@ -162,14 +162,14 @@ let A = Chunk647438.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: N(K, L, F, D)
+      style: N(K, x, F, D)
     }, H), {
-      children: [null != j && (0, r.jsx)("a", {
+      children: [null != k && (0, r.jsx)("a", {
         tabIndex: false,
         onClick: G,
         "aria-hidden": true,
         className: g.originalLink,
-        href: j,
+        href: k,
         ref: Y,
         "data-role": "img",
         "data-safe-src": null != Z ? Z : f

@@ -16,10 +16,10 @@ function c(e) {
   let {
     application: n,
     loading: c
-  } = (0, i.Z)(e, a.wW.GUILD_ROLE_SUBSCRIPTIONS), {
+  } = (0, i.Z)(e, s.wW.GUILD_ROLE_SUBSCRIPTIONS), {
     payoutsByPeriod: d,
     loading: u
-  } = (0, s.Z)(null == n ? true : n.id, {
+  } = (0, a.Z)(null == n ? true : n.id, {
     groupType: o.uw.GUILD_PRODUCT,
     teamId: null == n || null == (t = n.team) ? true : t.id
   }), {

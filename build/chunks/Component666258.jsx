@@ -93,7 +93,7 @@ let w = e => {
     let {
       guild: t,
       channel: n
-    } = e, i = (0, b.a5)({
+    } = e, i = (0, j.a5)({
       type: n.type
     }), s = (0, l.jsx)(h.Text, {
       variant: "text-xs/medium",
@@ -249,14 +249,14 @@ function F(e) {
     canUseVanityURL: f,
     disabled: N,
     hasSelection: S,
-    options: b,
+    options: j,
     setOptions: w,
     isApplicationBypassAllowed: R,
     isGuestInviteAllowed: V,
     isTemporaryInviteAllowed: k,
     setError: F,
-    analyticsLocation: B
-  } = e, [z, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, d.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), $ = i.useMemo(() => f && null != s.vanityURLCode ? (0, T.Z)(s.vanityURLCode, false) : null, [s, f]), J = i.useCallback(async () => {
+    analyticsLocation: z
+  } = e, [B, G] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, u.Wu)([_.Z], () => [_.Z.hideInstantInvites]), K = (0, x.Dt)(), X = (0, x.Dt)(), Q = (0, x.Dt)(), $ = i.useMemo(() => f && null != s.vanityURLCode ? (0, T.Z)(s.vanityURLCode, false) : null, [s, f]), J = i.useCallback(async () => {
     var e, t;
     if (N) return;
     null !== W.current && clearTimeout(W.current);
@@ -269,17 +269,17 @@ function F(e) {
       }, 1e3)
     }, e => {
       F(e)
-    }), j.default.track(C.rMx.COPY_INSTANT_INVITE, {
+    }), b.default.track(C.rMx.COPY_INSTANT_INVITE, {
       server: s.id,
       channel: null != (e = null == a ? true : a.id) ? e : null,
       channel_type: null != (t = null == a ? true : a.type) ? t : null,
-      location: B,
+      location: z,
       code: n,
       application_id: p
     }), () => {
       null !== W.current && clearTimeout(W.current)
     }
-  }, [N, v, s, a, B, p, F]), ee = i.useCallback(e => {
+  }, [N, v, s, a, z, p, F]), ee = i.useCallback(e => {
     w({
       max_age: e
     })
@@ -288,12 +288,12 @@ function F(e) {
       max_uses: e
     })
   }, [w]), en = i.useCallback(e => {
-    b.flags === e ? w({
+    j.flags === e ? w({
       flags: true
     }) : w({
       flags: e
     })
-  }, [b, w]), el = i.useCallback(e => {
+  }, [j, w]), el = i.useCallback(e => {
     w({
       temporary: e
     })
@@ -309,12 +309,12 @@ function F(e) {
         default: e
       } = await n.e("84212").then(n.bind(n, 593851));
       return t => (0, l.jsx)(e, M(A({}, t), {
-        initialOptions: b,
+        initialOptions: j,
         onChangeMaxAge: ee,
         onChangeMaxUses: et
       }))
     })
-  }, [b, ee, et]), es = function(e) {
+  }, [j, ee, et]), es = function(e) {
     let t = O.H.find(t => {
         let {
           value: n
@@ -331,7 +331,7 @@ function F(e) {
       maxAge: t.label,
       maxUses: n.label
     }) : n.value === y.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== y.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== y.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === y.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
-  }(b);
+  }(j);
   return (0, l.jsxs)("div", {
     className: r()(t, Z.footer),
     children: [(0, l.jsxs)("div", {
@@ -405,8 +405,8 @@ function F(e) {
           })]
         }), (0, l.jsx)(h.rsf, {
           id: K,
-          checked: b.flags === u.$.IS_APPLICATION_BYPASS,
-          onChange: () => en(u.$.IS_APPLICATION_BYPASS)
+          checked: j.flags === d.$.IS_APPLICATION_BYPASS,
+          onChange: () => en(d.$.IS_APPLICATION_BYPASS)
         })]
       }), V && (0, l.jsxs)(U, {
         htmlFor: X,
@@ -426,8 +426,8 @@ function F(e) {
           })]
         }), (0, l.jsx)(h.rsf, {
           id: X,
-          checked: b.flags === u.$.IS_GUEST_INVITE,
-          onChange: () => en(u.$.IS_GUEST_INVITE)
+          checked: j.flags === d.$.IS_GUEST_INVITE,
+          onChange: () => en(d.$.IS_GUEST_INVITE)
         })]
       }), k && (0, l.jsxs)(U, {
         htmlFor: Q,
@@ -447,7 +447,7 @@ function F(e) {
           })]
         }), (0, l.jsx)(h.rsf, {
           id: Q,
-          checked: !!b.temporary,
+          checked: !!j.temporary,
           onChange: e => el(e)
         })]
       })]
@@ -468,7 +468,7 @@ function F(e) {
             null == e || null == (t = e.onClick) || t.call(e), J()
           },
           disabled: N,
-          children: z ? (0, l.jsxs)(l.Fragment, {
+          children: B ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(h.dz2, {
               size: "xs",
               color: "currentColor"

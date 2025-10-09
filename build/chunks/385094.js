@@ -38,14 +38,14 @@ function E(e, t, n) {
     linkBehavior: R,
     keyboardNavigationBehavior: P,
     shouldSelectOnPressUp: w
-  } = r.Co.get(t), D = (0, i.mp)(), L = (0, f.useRef)(null), x = () => {
+  } = r.Co.get(t), D = (0, i.mp)(), x = (0, f.useRef)(null), L = () => {
     var e;
-    null === n.current || (null == L.current || S.key === L.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
-  }, M = {}, j = e.hasChildItems, k = t.selectionManager.isLink(S.key);
+    null === n.current || (null == x.current || S.key === x.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
+  }, M = {}, k = e.hasChildItems, j = t.selectionManager.isLink(S.key);
   if (null != S && "expandedKeys" in t) {
     let e = null == (O = (v = t.collection).getChildren) ? true : O.call(v, S.key);
-    j = j || [...null != e ? e : []].length > 1, null == N && !k && "none" === t.selectionManager.selectionMode && j && (N = () => t.toggleKey(S.key));
-    let n = j ? t.expandedKeys.has(S.key) : true,
+    k = k || [...null != e ? e : []].length > 1, null == N && !j && "none" === t.selectionManager.selectionMode && k && (N = () => t.toggleKey(S.key));
+    let n = k ? t.expandedKeys.has(S.key) : true,
       r = 1;
     if (S.level > 0 && (null == S ? true : S.parentKey) != null) {
       let e = t.collection.getItem(S.parentKey);
@@ -68,16 +68,16 @@ function E(e, t, n) {
     isVirtualized: A,
     shouldSelectOnPressUp: e.shouldSelectOnPressUp || w,
     onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.t)(null == (y = S.props) ? true : y.onAction, N ? () => N(S.key) : true) : true,
-    focus: x,
+    focus: L,
     linkBehavior: R
   }), B = e => {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.QL)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && j && !t.expandedKeys.has(S.key)) {
+      if (e.key === m[C] && t.selectionManager.focusedKey === S.key && k && !t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
-      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && j && t.expandedKeys.has(S.key)) {
+      } else if (e.key === g[C] && t.selectionManager.focusedKey === S.key && k && t.expandedKeys.has(S.key)) {
         t.toggleKey(S.key), e.stopPropagation();
         return
       }
@@ -127,7 +127,7 @@ function E(e, t, n) {
         }
     }
   }, Z = e => {
-    if (L.current = S.key, e.target !== n.current) {
+    if (x.current = S.key, e.target !== n.current) {
       (0, _.E)() || t.selectionManager.setFocusedKey(S.key);
       return
     }

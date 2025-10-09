@@ -59,17 +59,17 @@ function C(e) {
     onChange: m,
     onSubmit: C,
     showCharacterCount: j = false,
-    placeholder: x,
-    required: U,
+    placeholder: U,
+    required: x,
     value: V,
     enableThemedBackground: O = false,
     parentModalKey: P,
     label: F,
     errorMessage: y
-  } = e, I = (0, o.Gc0)(), [N, T] = n.useState(() => (0, s.JM)(V)), K = n.useRef(true === c), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : h;
+  } = e, I = (0, o.Gc0)(), [N, K] = n.useState(() => (0, s.JM)(V)), T = n.useRef(true === c), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : h;
 
   function X(e, t, A) {
-    m(t), T(A)
+    m(t), K(A)
   }
   let Q = n.useMemo(() => ({
     analyticsName: "simple",
@@ -96,7 +96,7 @@ function C(e) {
     label: F,
     errorMessage: y,
     id: i,
-    required: U,
+    required: x,
     children: e => {
       var t, A;
       return (0, r.jsxs)(d.ZP, {
@@ -109,19 +109,19 @@ function C(e) {
         innerClassName: l()(a, p.textAreaInner),
         maxCharacterCount: g,
         onChange: X,
-        placeholder: x,
-        required: U,
+        placeholder: U,
+        required: x,
         channel: v,
         textValue: V,
         richValue: N,
         type: Q,
         onBlur: () => {
-          K.current = false
+          T.current = false
         },
         onFocus: () => {
-          K.current = true
+          T.current = true
         },
-        focused: K.current,
+        focused: T.current,
         onSubmit: null != C ? C : q,
         disableThemedBackground: !O,
         parentModalKey: P,

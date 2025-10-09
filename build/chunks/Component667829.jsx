@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let j = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
   U = 1e3;
@@ -229,9 +229,9 @@ class G extends Chunk647438.Component {
       id: A,
       required: R,
       maxCharacterCount: w,
-      allowNewLines: L,
+      allowNewLines: x,
       isEditorIdle: M,
-      isAutocompleteVisible: k,
+      isAutocompleteVisible: j,
       "aria-describedby": U,
       "aria-labelledby": G,
       accessibilityLabel: B,
@@ -260,7 +260,7 @@ class G extends Chunk647438.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: L,
+      allowNewLines: x,
       onChange: Chunk729594,
       onResize: Chunk166459,
       onKeyDown: Chunk430742,
@@ -274,7 +274,7 @@ class G extends Chunk647438.Component {
       spellcheckEnabled: Chunk710845,
       useNewSlashCommands: Chunk117530,
       isEditorIdle: M,
-      isAutocompleteVisible: k,
+      isAutocompleteVisible: j,
       disableAutoFocus: Chunk873546.tq || null != (n = Chunk476326.disableAutoFocus) && require,
       disableEnterToSubmit: null != (i = null == (e = Chunk476326.submit) ? true : module.disableEnterToSubmit) && Chunk647438,
       "aria-controls": null != (a = V.id) ? Chunk120356 : true,
@@ -285,14 +285,14 @@ class G extends Chunk647438.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, j(x({
+    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, k(L({
       ref: this.ref
     }, H), {
       type: Chunk476326,
       value: u && !Z ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk403182
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, j(x({
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, k(L({
       ref: this.ref
     }, H), {
       value: u && !Z ? "" : l
@@ -309,12 +309,12 @@ class G extends Chunk647438.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, L(this, "ref", i.createRef()), L(this, "_focusBlurQueue", Promise.resolve()), L(this, "_unsubscribe", true), L(this, "_initTimeoutId", null), L(this, "_cachedEditorWindow", null), L(this, "handleSelectionChange", () => {
+    super(e), t = this, x(this, "ref", i.createRef()), x(this, "_focusBlurQueue", Promise.resolve()), x(this, "_unsubscribe", true), x(this, "_initTimeoutId", null), x(this, "_cachedEditorWindow", null), x(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? true : e.toString())
       }
-    }), L(this, "focus", () => {
+    }), x(this, "focus", () => {
       var e;
       null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
@@ -324,41 +324,41 @@ class G extends Chunk647438.Component {
           null != e && e.focus()
         })
       })
-    }), L(this, "saveCurrentText", function() {
+    }), x(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), L(this, "handleBeforeUnload", () => this.saveCurrentText()), L(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), L(this, "handleEnter", e => {
+    }), x(this, "handleBeforeUnload", () => this.saveCurrentText()), x(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), x(this, "handleEnter", e => {
       var t, n;
       return null == (t = (n = this.props).onEnter) ? true : t.call(n, e)
-    }), L(this, "handleTab", () => {
+    }), x(this, "handleTab", () => {
       var e, t;
       return null == (e = (t = this.props).onTab) ? true : e.call(t)
-    }), L(this, "handleMoveSelection", e => {
+    }), x(this, "handleMoveSelection", e => {
       var t, n;
       return null == (t = (n = this.props).onMoveSelection) ? true : t.call(n, e)
-    }), L(this, "maybeShowAutocomplete", () => {
+    }), x(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onMaybeShowAutocomplete) ? true : e.call(t)
-    }), L(this, "hideAutocomplete", () => {
+    }), x(this, "hideAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? true : e.call(t)
-    }), L(this, "handleSaveCurrentText", e => {
+    }), x(this, "handleSaveCurrentText", e => {
       _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), L(this, "handleClearText", () => {
+    }), x(this, "handleClearText", () => {
       var e, t;
       null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, T.JM)(""))
-    }), L(this, "handleInsertText", e => {
+    }), x(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = false
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), L(this, "handleFocus", e => {
+    }), x(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -367,7 +367,7 @@ class G extends Chunk647438.Component {
       null == t || t(e), n || this.setState({
         focused: true
       })
-    }), L(this, "handleBlur", e => {
+    }), x(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -376,7 +376,7 @@ class G extends Chunk647438.Component {
       null == t || t(e), n && this.setState({
         focused: false
       })
-    }), L(this, "handlePaste", e => {
+    }), x(this, "handlePaste", e => {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? true : t.defaultView,
         {
@@ -421,7 +421,7 @@ class G extends Chunk647438.Component {
           files: I,
           errors: T
         } = B(e.clipboardData, u.uploadLongMessages ? v : null);
-      return (k("onPaste", [...e.clipboardData.items].map(e => {
+      return (j("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

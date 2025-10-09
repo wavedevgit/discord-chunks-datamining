@@ -90,7 +90,7 @@ let D = s().debounce(() => {
   A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || X.emitChange())
 }, 500);
 
-function L(e) {
+function x(e) {
   let {
     settings: t
   } = e;
@@ -98,7 +98,7 @@ function L(e) {
   y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && D()
 }
 
-function x(e) {
+function L(e) {
   let {
     settings: t
   } = e;
@@ -110,13 +110,13 @@ function M() {
   T = Chunk981631.QZA.SUBMITTING, S = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (T !== p.QZA.SUBMITTING) returnfalse;
   T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     integrations: n
@@ -310,14 +310,14 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
     INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: Z,
     INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
-    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
-    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
+    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: x,
+    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
     GUILD_SETTINGS_CLOSE: w,
-    GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
+    GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: j
+    INTEGRATION_SETTINGS_SAVE_FAILURE: k
   }),
   Q = X

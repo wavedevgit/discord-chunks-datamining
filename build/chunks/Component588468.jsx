@@ -47,7 +47,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,8 +120,8 @@ class H extends Chunk647438.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(f.P3F, U(j({}, e), {
-      className: s()(x.clickable, r, n),
+    return (0, i.jsx)(f.P3F, U(k({}, e), {
+      className: s()(L.clickable, r, n),
       id: null != (t = Z(a)) ? t : true,
       onClick: l ? this.handleClick : true,
       onMouseMove: l ? () => {
@@ -136,7 +136,7 @@ class H extends Chunk647438.PureComponent {
       "aria-disabled": !l,
       "aria-selected": l && o,
       children: (0, i.jsx)("div", {
-        className: x.base,
+        className: L.base,
         children: this.renderContent()
       })
     }))
@@ -151,7 +151,7 @@ class H extends Chunk647438.PureComponent {
     }) : this.renderClickable()
   }
   constructor(e) {
-    super(e), M(this, "selectable", true), M(this, "layoutClass", x.autocompleteRowVertical), M(this, "handleMouseEnter", () => {
+    super(e), M(this, "selectable", true), M(this, "layoutClass", L.autocompleteRowVertical), M(this, "handleMouseEnter", () => {
       let {
         onHover: e,
         index: t,
@@ -193,13 +193,13 @@ class Y extends H {
 function W(e) {
   let t = a.useMemo(() => c().random(60, 120), []);
   return (0, i.jsx)("div", {
-    className: x.base,
+    className: L.base,
     "aria-busy": true,
     children: (0, i.jsx)(P.RX, {
       children: (0, i.jsx)(P.z5, {
         children: (0, i.jsx)(P.BR, {
           children: (0, i.jsx)("div", {
-            className: x.autocompletePlaceholder,
+            className: L.autocompletePlaceholder,
             style: {
               width: t
             }
@@ -217,10 +217,10 @@ function K(e) {
     children: r
   } = e, o = a.useContext(V);
   return (0, i.jsx)("div", {
-    className: x.base,
+    className: L.base,
     children: (0, i.jsxs)(f.X6q, {
       id: F(o.id),
-      className: s()(x.contentTitle, n),
+      className: s()(L.contentTitle, n),
       variant: "heading-deprecated-12/semibold",
       children: [t, r]
     })
@@ -236,7 +236,7 @@ class z extends H {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", x.dividerContainer), M(this, "selectable", false)
+    super(...e), M(this, "layoutClass", L.dividerContainer), M(this, "selectable", false)
   }
 }
 class q extends H {
@@ -327,7 +327,7 @@ class X extends H {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", x.autoCompleteRowSuggestion)
+    super(...e), M(this, "layoutClass", L.autoCompleteRowSuggestion)
   }
 }
 class Q extends H {
@@ -347,7 +347,7 @@ class Q extends H {
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
-    }), h = Chunk392711 ? j({}, Chunk91192 ? Chunk313666 : {
+    }), h = Chunk392711 ? k({}, Chunk91192 ? Chunk313666 : {
       color: null != r ? r : true
     }) : true;
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
@@ -472,7 +472,7 @@ class et extends H {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", s()(x.autocompleteRowVertical, x.autocompleteRowVerticalSmall))
+    super(...e), M(this, "layoutClass", s()(L.autocompleteRowVertical, L.autocompleteRowVerticalSmall))
   }
 }
 class en extends H {
@@ -504,7 +504,7 @@ class en extends H {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", s()(x.autocompleteRowVertical, x.autocompleteRowVerticalSmall))
+    super(...e), M(this, "layoutClass", s()(L.autocompleteRowVertical, L.autocompleteRowVerticalSmall))
   }
 }
 class er extends H {
@@ -522,7 +522,7 @@ class er extends H {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "layoutClass", x.autocompleteRowHorizontal)
+    super(...e), M(this, "layoutClass", L.autocompleteRowHorizontal)
   }
 }
 class ei extends H {
@@ -534,7 +534,7 @@ class ei extends H {
 }
 class ea extends H {
   renderContent() {
-    return (0, Chunk951288.jsx)(Chunk887120.Z, j({}, this.props))
+    return (0, Chunk951288.jsx)(Chunk887120.Z, k({}, this.props))
   }
 }
 class eo extends H {
@@ -577,7 +577,7 @@ class es extends(r = Chunk647438.PureComponent) {
       },
       children: (0, Chunk951288.jsx)("div", {
         className: s()(Chunk512746.autocomplete, require),
-        children: (0, Chunk951288.jsx)("div", U(j({
+        children: (0, Chunk951288.jsx)("div", U(k({
           className: s()(Chunk512746.autocompleteInner, r)
         }, Chunk392711), {
           children: exports

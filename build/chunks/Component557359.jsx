@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,12 +38,12 @@ function h(e) {
     }), t && (0, r.jsx)(m.c, {
       guildId: l.id
     }), (0, r.jsx)("div", {
-      className: s()(f.rules, {
+      className: a()(f.rules, {
         [f.disabled]: !t
       }),
       children: (0, r.jsxs)("div", {
         inert: t ? true : "",
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: f.rulesHeader,

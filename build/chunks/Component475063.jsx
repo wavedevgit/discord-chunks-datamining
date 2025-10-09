@@ -92,11 +92,11 @@ function T(e) {
       rows: P = 3,
       disabled: w,
       label: D,
-      hideLabel: L,
-      description: x,
+      hideLabel: x,
+      description: L,
       helperText: M,
-      successMessage: j,
-      inputRef: k
+      successMessage: k,
+      inputRef: j
     } = e,
     U = y(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "disabled", "label", "hideLabel", "description", "helperText", "successMessage", "inputRef"]);
   let G = (0, f.U)("UserSettingsDesignSystems"),
@@ -126,10 +126,10 @@ function T(e) {
     }) : null;
   return (0, r.jsx)(s.gNt, {
     label: D,
-    hideLabel: L,
-    description: x,
+    hideLabel: x,
+    description: L,
     helperText: M,
-    successMessage: j,
+    successMessage: k,
     trailingContent: V,
     errorMessage: B.hasError && null != (t = B.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {
@@ -152,7 +152,7 @@ function T(e) {
           "data-mana-component": "text-area"
         }, U), {
           onChange: F,
-          ref: k
+          ref: j
         }))
       }), G ? null : (0, r.jsxs)(r.Fragment, {
         children: [N ? (0, r.jsx)(A, {

@@ -10,9 +10,9 @@ require.d(exports, {
   J0: () => N,
   K8: () => P,
   RE: () => I,
-  Vt: () => L,
+  Vt: () => x,
   aK: () => T,
-  aP: () => k,
+  aP: () => j,
   bu: () => h,
   cv: () => p,
   f7: () => y,
@@ -22,7 +22,7 @@ require.d(exports, {
   o0: () => M,
   o8: () => D,
   rL: () => _,
-  xg: () => j,
+  xg: () => k,
   yf: () => E
 }), require("./388685.js");
 var Chunk463570 = require("./463570.js"),
@@ -61,14 +61,14 @@ let v = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
 var D = function(e) {
   return e[e.FIAT = 0] = "FIAT", e[e.ORB = 1] = "ORB", e[e.PREMIUM_PURCHASE = 2] = "PREMIUM_PURCHASE", e[e.PROMOTIONAL = 3] = "PROMOTIONAL", e[e.TENURE_REWARD = 4] = "TENURE_REWARD", e[e.GIFT = 5] = "GIFT", e
 }({});
-let L = {
+let x = {
     ORB_PROFILE_BADGE: "1342211853484429445",
     FRACTIONAL_PREMIUM: Chunk314794.a.PREMIUM_TIER_2_3_DAY
   },
-  x = new Set(Object.values(L)),
-  M = e => x.has(e),
-  j = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
-  k = [{
+  L = new Set(Object.values(x)),
+  M = e => L.has(e),
+  k = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
+  j = [{
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   }, {

@@ -73,7 +73,7 @@ function P(e) {
 
 function w() {
   if (null != N) return void K(N);
-  if (x(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
+  if (L(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = Chunk522558.w.getCurrentConfig({
@@ -106,23 +106,23 @@ function D(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
-function L() {
+function x() {
   return Array.from(A).some(e => !T.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function x() {
+function L() {
   S.length = 0, A.clear(), C = {}
 }
 
 function M() {
-  x()
-}
-
-function j() {
-  T = I(), x()
+  L()
 }
 
 function k() {
+  T = I(), L()
+}
+
+function j() {
   T.lastShownFriendsListGiftIntents = Array.from(A)
 }
 
@@ -179,7 +179,7 @@ function W(e) {
 }
 
 function K(e) {
-  x();
+  L();
   let {
     enabled: t
   } = p.w.getCurrentConfig({
@@ -225,7 +225,7 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   canShowFriendsTabBadge() {
     var e;
     let t = null != (e = T.friendsTabBadgeLastDismissedTime) ? module : 0;
-    return !(Date.now() - exports <= O) && L()
+    return !(Date.now() - exports <= O) && x()
   }
   getFriendAnniversaryYears(e) {
     let t = C[e];
@@ -248,9 +248,9 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
 }]);
 let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: M,
-  LOGOUT: j,
+  LOGOUT: k,
   MESSAGE_GIFT_INTENT_SHOWN: U,
-  FRIENDS_LIST_GIFT_INTENTS_SHOWN: k,
+  FRIENDS_LIST_GIFT_INTENTS_SHOWN: j,
   FRIENDS_TAB_BADGE_DISMISS: G,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: B,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: V,

@@ -27,11 +27,11 @@ function b(e) {
     } = e,
     b = n.mfaLevel,
     j = (0, l.e7)([u.Z], () => null != n && u.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
-    _ = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
-    v = (0, d.eM)(n, _),
-    C = null == _ ? true : _.mfaEnabled,
+    v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
+    _ = (0, d.eM)(n, v),
+    C = null == v ? true : v.mfaEnabled,
     O = b === f.BpS.ELEVATED,
-    y = v && C,
+    y = _ && C,
     N = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
         guildId: n.id,
@@ -40,7 +40,7 @@ function b(e) {
       })
     }, 1e3);
   if (!j) return null;
-  y || (t = v ? h.intl.format(h.t.nFwNyc, {
+  y || (t = _ ? h.intl.format(h.t.nFwNyc, {
     settingsHook: () => (0, c.openUserSettings)(o.n.ACCOUNT_PANEL, {
       section: f.oAB.ACCOUNT
     })
@@ -50,17 +50,17 @@ function b(e) {
     className: x.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
       className: x.itemContent,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: h.intl.string(h.t.lbBfER)
-      }), (0, r.jsxs)(a.Text, {
+      }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: [h.intl.string(h.t["a/93Jy"]), " ", t]
       })]
-    }), !y || O && E ? (0, r.jsx)(s.u, {
-      text: E ? h.intl.string(h.t["KG1V/P"]) : v ? h.intl.string(h.t.NmsheX) : h.intl.string(h.t.LieBtb),
+    }), !y || O && E ? (0, r.jsx)(a.u, {
+      text: E ? h.intl.string(h.t["KG1V/P"]) : _ ? h.intl.string(h.t.NmsheX) : h.intl.string(h.t.LieBtb),
       children: (0, r.jsx)(p.Z, {
         checked: O,
         disabled: true,

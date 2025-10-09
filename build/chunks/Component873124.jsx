@@ -17,11 +17,11 @@ function o(e) {
     onClose: d,
     isSlideReady: c,
     headerAlignStart: u
-  } = e, [h, f] = r.useState(false), [g, m] = r.useState(null), [p, x] = r.useState(""), S = r.useRef(null);
+  } = e, [h, f] = r.useState(false), [g, m] = r.useState(null), [p, x] = r.useState(""), b = r.useRef(null);
   return r.useEffect(() => {
     if (c) {
       var e;
-      null == (e = S.current) || e.focus()
+      null == (e = b.current) || e.focus()
     }
   }, [c]), (0, l.jsxs)("form", {
     onSubmit: e => {
@@ -41,7 +41,7 @@ function o(e) {
     }), (0, l.jsxs)(s.Z.SlideContent, {
       children: [(0, l.jsx)(i.oil, {
         label: a.intl.string(a.t["CIGa+/"]),
-        inputRef: S,
+        inputRef: b,
         onChange: x,
         value: p,
         type: "password",

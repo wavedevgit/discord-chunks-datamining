@@ -18,29 +18,29 @@ function p(e) {
   var {
     uploadType: t,
     analyticsSource: n,
-    className: l
+    className: a
   } = e, p = function(e, t) {
     if (null == e) return {};
-    var n, r, a = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, r, a = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-      return a
+      var n, r, l = {},
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return a
+    return l
   }(e, ["uploadType", "analyticsSource", "className"]);
-  let g = a.useCallback(() => {
+  let g = l.useCallback(() => {
       (0, o.s)({
         uploadType: t,
         analyticsSource: n
       })
     }, [t, n]),
-    m = a.useMemo(() => {
+    m = l.useMemo(() => {
       switch (t) {
         case u.pC.AVATAR:
           return d.intl.format(d.t["pvw/HB"], {
@@ -77,6 +77,6 @@ function p(e) {
     buttonAnalyticsObject: {
       section: c.jXE.USER_PROFILE
     },
-    className: i()(f.container, l)
+    className: i()(f.container, a)
   }, p))
 }

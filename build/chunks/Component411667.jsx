@@ -25,14 +25,14 @@ function d(e) {
       requestRejectedNoticeText: p,
       reapplyNoticeText: f
     } = (0, i.Z)(n),
-    h = n.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
-    x = n.features.has(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    h = n.features.has(s.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    x = n.features.has(s.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != u) return (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
     children: u.getAnyErrorMessage()
   });
   let b = null;
-  return null != p ? b = p : m ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(s.Z, {
+  return null != p ? b = p : m ? b = o.intl.string(o.t.MyJpJS) : null != f ? (b = f, t = o.intl.string(o.t["YKw/NT"])) : x ? b = o.intl.string(o.t.e2g9sb) : h && (b = o.intl.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(a.Z, {
     className: c.noticeContainer,
     notice: b,
     ctaLabel: t,

@@ -593,13 +593,13 @@
           Object.assign(a, p), p = null, a.thisProgram && (h = a.thisProgram), a.wasmBinary && (O = a.wasmBinary), a.noExitRuntime, "object" != typeof WebAssembly && F("no native wasm support detected");
           var O, v, I, T, S, A, C, N, R, P, w, D = false;
 
-          function L() {
+          function x() {
             var e = v.buffer;
             a.HEAP8 = T = new Int8Array(e), a.HEAP16 = A = new Int16Array(e), a.HEAP32 = N = new Int32Array(e), a.HEAPU8 = S = new Uint8Array(e), a.HEAPU16 = C = new Uint16Array(e), a.HEAPU32 = R = new Uint32Array(e), a.HEAPF32 = P = new Float32Array(e), a.HEAPF64 = w = new Float64Array(e)
           }
-          var x, M = [],
-            j = [],
-            k = [];
+          var L, M = [],
+            k = [],
+            j = [];
 
           function U() {
             var e = a.preRun.shift();
@@ -991,7 +991,7 @@
                   },
                   stream: eH
                 }
-              }), 16384 == (61440 & (n = ek(e, t, n, r)).mode) ? (n.l = eb.O.dir.node, n.m = eb.O.dir.stream, n.j = {}) : 32768 == (61440 & n.mode) ? (n.l = eb.O.file.node, n.m = eb.O.file.stream, n.v = 0, n.j = null) : 40960 == (61440 & n.mode) ? (n.l = eb.O.link.node, n.m = eb.O.link.stream) : 8192 == (61440 & n.mode) && (n.l = eb.O.$a.node, n.m = eb.O.$a.stream), n.timestamp = Date.now(), e && (e.j[t] = n, e.timestamp = n.timestamp), n
+              }), 16384 == (61440 & (n = ej(e, t, n, r)).mode) ? (n.l = eb.O.dir.node, n.m = eb.O.dir.stream, n.j = {}) : 32768 == (61440 & n.mode) ? (n.l = eb.O.file.node, n.m = eb.O.file.stream, n.v = 0, n.j = null) : 40960 == (61440 & n.mode) ? (n.l = eb.O.link.node, n.m = eb.O.link.stream) : 8192 == (61440 & n.mode) && (n.l = eb.O.$a.node, n.m = eb.O.$a.stream), n.timestamp = Date.now(), e && (e.j[t] = n, e.timestamp = n.timestamp), n
             },
             Kc: e => e.j ? e.j.subarray ? e.j.subarray(0, e.v) : new Uint8Array(e.j) : new Uint8Array(0),
             l: {
@@ -1014,7 +1014,7 @@
               ub(e, t, n) {
                 if (16384 == (61440 & e.mode)) {
                   try {
-                    var r = ej(t, n)
+                    var r = ek(t, n)
                   } catch (e) {}
                   if (r)
                     for (var i in r.j) throw new ew(55)
@@ -1025,7 +1025,7 @@
                 delete e.j[t], e.timestamp = Date.now()
               },
               vb(e, t) {
-                var n, r = ej(e, t);
+                var n, r = ek(e, t);
                 for (n in r.j) throw new ew(55);
                 delete e.j[t], e.timestamp = Date.now()
               },
@@ -1092,7 +1092,7 @@
             eP = true,
             ew = null,
             eD = {},
-            eL = (e, t = {}) => {
+            ex = (e, t = {}) => {
               if (!(e = eo(e))) return {
                 path: "",
                 node: null
@@ -1105,9 +1105,9 @@
               for (var n = eS, r = "/", i = 0; i < e.length; i++) {
                 var a = i === e.length - 1;
                 if (a && t.parent) break;
-                if (n = ej(n, e[i]), r = et(r + "/" + e[i]), n.wa && (!a || a && t.gb) && (n = n.wa.root), !a || t.fb) {
+                if (n = ek(n, e[i]), r = et(r + "/" + e[i]), n.wa && (!a || a && t.gb) && (n = n.wa.root), !a || t.fb) {
                   for (a = 0; 40960 == (61440 & n.mode);)
-                    if (n = eX(r), n = eL(r = eo(en(r), n), {
+                    if (n = eX(r), n = ex(r = eo(en(r), n), {
                         Qa: t.Qa + 1
                       }).node, 40 < a++) throw new ew(32)
                 }
@@ -1117,7 +1117,7 @@
                 node: n
               }
             },
-            ex = e => {
+            eL = e => {
               for (var t;;) {
                 if (e === e.parent) return e = e.U.mb, t ? "/" !== e[e.length - 1] ? `${e}/${t}` : e + t : e;
                 t = t ? `${e.name}/${t}` : e.name, e = e.parent
@@ -1127,7 +1127,7 @@
               for (var n = 0, r = 0; r < t.length; r++) n = (n << 5) - n + t.charCodeAt(r) | 0;
               return (e + n >>> 0) % eR.length
             },
-            ej = (e, t) => {
+            ek = (e, t) => {
               var n;
               if (n = (n = eG(e, "x")) ? n : 2 * !e.l.ka) throw new ew(n, e);
               for (n = eR[eM(e.id, t)]; n; n = n.lc) {
@@ -1136,7 +1136,7 @@
               }
               return e.l.ka(e, t)
             },
-            ek = (e, t, n, r) => (t = eM((e = new nh(e, t, n, r)).parent.id, e.name), e.lc = eR[t], eR[t] = e),
+            ej = (e, t, n, r) => (t = eM((e = new nh(e, t, n, r)).parent.id, e.name), e.lc = eR[t], eR[t] = e),
             eU = e => {
               var t = ["r", "w", "rw"][3 & e];
               return 512 & e && (t += "w"), t
@@ -1144,7 +1144,7 @@
             eG = (e, t) => eP ? 0 : t.includes("r") && !(292 & e.mode) || t.includes("w") && !(146 & e.mode) || t.includes("x") && !(73 & e.mode) ? 2 : 0,
             eB = (e, t) => {
               try {
-                return ej(e, t), 20
+                return ek(e, t), 20
               } catch (e) {}
               return eG(e, "wx")
             },
@@ -1203,7 +1203,7 @@
                 r = !t;
               if (n && eS) throw new ew(10);
               if (!n && !r) {
-                var i = eL(t, {
+                var i = ex(t, {
                   gb: false
                 });
                 if (t = i.path, (i = i.node).wa) throw new ew(10);
@@ -1217,7 +1217,7 @@
               }, (e = e.U(t)).U = t, t.root = e, n ? eS = e : i && (i.wa = t, i.U && i.U.kc.push(t))
             },
             eK = (e, t, n) => {
-              var r = eL(e, {
+              var r = ex(e, {
                 parent: true
               }).node;
               if (!(e = er(e)) || "." === e || ".." === e) throw new ew(28);
@@ -1231,7 +1231,7 @@
             },
             eq = (e, t) => {
               if (!eo(e)) throw new ew(44);
-              var n = eL(t, {
+              var n = ex(t, {
                 parent: true
               }).node;
               if (!n) throw new ew(44);
@@ -1241,9 +1241,9 @@
               n.l.Ea(n, t, e)
             },
             eX = e => {
-              if (!(e = eL(e).node)) throw new ew(44);
+              if (!(e = ex(e).node)) throw new ew(44);
               if (!e.l.ma) throw new ew(28);
-              return eo(ex(e.parent), e.l.ma(e))
+              return eo(eL(e.parent), e.l.ma(e))
             },
             eQ = (e, t, n) => {
               if ("" === e) throw new ew(44);
@@ -1263,7 +1263,7 @@
               else {
                 e = et(e);
                 try {
-                  i = eL(e, {
+                  i = ex(e, {
                     fb: !(131072 & t)
                   }).node
                 } catch (e) {}
@@ -1276,7 +1276,7 @@
               if (8192 == (61440 & i.mode) && (t &= false), 65536 & t && 16384 != (61440 & i.mode)) throw new ew(54);
               if (!r && (n = i ? 40960 == (61440 & i.mode) ? 32 : 16384 == (61440 & i.mode) && ("r" !== eU(t) || 512 & t) ? 31 : eG(i, eU(t)) : 44)) throw new ew(n);
               if (512 & t && !r) {
-                if (!(n = "string" == typeof(n = i) ? eL(n, {
+                if (!(n = "string" == typeof(n = i) ? ex(n, {
                     fb: true
                   }).node : n).l.P) throw new ew(63);
                 if (16384 == (61440 & n.mode)) throw new ew(31);
@@ -1289,7 +1289,7 @@
               }
               return t &= false, (i = eV({
                 node: i,
-                path: ex(i),
+                path: eL(i),
                 flags: t,
                 seekable: true,
                 position: 0,
@@ -1543,11 +1543,11 @@
             tw(e, t, n)
           }
 
-          function tL(e) {
+          function tx(e) {
             e9(e.g.u.i.name + " instance already deleted")
           }
 
-          function tx() {}
+          function tL() {}
 
           function tM(e, t, n) {
             if (true === e[t].B) {
@@ -1558,11 +1558,11 @@
             }
           }
 
-          function tj(e, t, n) {
+          function tk(e, t, n) {
             a.hasOwnProperty(e) ? ((true === n || true !== a[e].B && true !== a[e].B[n]) && e9(`Cannot register public name '${e}' twice`), tM(a, e, e), a.hasOwnProperty(n) && e9(`Cannot register multiple overloads of a function with the same number of arguments (${n})!`), a[e].B[n] = t) : (a[e] = t, true !== n && (a[e].Pc = n))
           }
 
-          function tk(e, t, n, r, i, a, o, s) {
+          function tj(e, t, n, r, i, a, o, s) {
             this.name = e, this.constructor = t, this.N = n, this.W = r, this.A = i, this.Ub = a, this.na = o, this.Pb = s, this.qb = []
           }
 
@@ -1619,7 +1619,7 @@
           var tH = [],
             tY = e => {
               var t = tH[e];
-              return t || (e >= tH.length && (tH.length = e + 1), tH[e] = t = x.get(e)), t
+              return t || (e >= tH.length && (tH.length = e + 1), tH[e] = t = L.get(e)), t
             },
             tW = (e, t) => {
               var n = [];
@@ -2018,7 +2018,7 @@
             var e = eK("/proc/self", 16895, 0);
             eK("/proc/self/fd", 16895, 0), eW({
               U: () => {
-                var t = ek(e, "fd", 16895, 73);
+                var t = ej(e, "fd", 16895, 73);
                 return t.l = {
                   ka: (e, t) => {
                     var n = eF(+t);
@@ -2078,16 +2078,16 @@
             constructor(e) {
               super(e), this.name = "InternalError"
             }
-          }, tx.prototype.isAliasOf = function(e) {
-            if (!(this instanceof tx && e instanceof tx)) returnfalse;
+          }, tL.prototype.isAliasOf = function(e) {
+            if (!(this instanceof tL && e instanceof tL)) returnfalse;
             var t = this.g.u.i,
               n = this.g.o,
               r = e.g.u.i;
             for (e = e.g.o; t.A;) n = t.na(n), t = t.A;
             for (; r.A;) e = r.na(e), r = r.A;
             return t === r && n === e
-          }, tx.prototype.clone = function() {
-            if (this.g.o || tL(this), this.g.ia) return this.g.count.value += 1, this;
+          }, tL.prototype.clone = function() {
+            if (this.g.o || tx(this), this.g.ia) return this.g.count.value += 1, this;
             var e = tI,
               t = Object,
               n = t.create,
@@ -2106,12 +2106,12 @@
                 }
               }
             })), e.g.count.value += 1, e.g.fa = false, e
-          }, tx.prototype.delete = function() {
-            this.g.o || tL(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), tp(this), tm(this.g), this.g.ia || (this.g.G = true, this.g.o = true)
-          }, tx.prototype.isDeleted = function() {
+          }, tL.prototype.delete = function() {
+            this.g.o || tx(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), tp(this), tm(this.g), this.g.ia || (this.g.G = true, this.g.o = true)
+          }, tL.prototype.isDeleted = function() {
             return !this.g.o
-          }, tx.prototype.deleteLater = function() {
-            return this.g.o || tL(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), to.push(this), 1 === to.length && tl && tl(ts), this.g.fa = true, this
+          }, tL.prototype.deleteLater = function() {
+            return this.g.o || tx(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), to.push(this), 1 === to.length && tl && tl(ts), this.g.fa = true, this
           }, tF.prototype.Vb = function(e) {
             return this.rb && (e = this.rb(e)), e
           }, tF.prototype.ab = function(e) {
@@ -2340,12 +2340,12 @@
             _embind_register_class: function(e, t, n, r, i, a, o, s, l, c, u, d, f) {
               u = ta(u), a = tK(i, a), s && (s = tK(o, s)), c && (c = tK(l, c)), f = tK(d, f);
               var _ = e4(u);
-              tj(_, function() {
+              tk(_, function() {
                 tq(`Cannot construct ${u} due to unbound types`, [r])
               }), tR([e, t, n], r ? [r] : [], function(t) {
                 if (t = t[0], r) var n = t.i,
                   i = n.N;
-                else i = tx.prototype;
+                else i = tL.prototype;
                 var o = Object.create(i, {
                   constructor: {
                     value: t = e8(_, function() {
@@ -2358,7 +2358,7 @@
                   }
                 });
                 t.prototype = o;
-                var l = new tk(u, t, o, f, n, a, s, c);
+                var l = new tj(u, t, o, f, n, a, s, c);
                 l.A && (true === l.A.oa && (l.A.oa = []), l.A.oa.push(l)), n = new tF(u, l, true, false), i = new tF(u + "*", l, false, false);
                 var d = new tF(u + " const*", l, false, true);
                 return tE[e] = {
@@ -2507,7 +2507,7 @@
                 argPackAdvance: 8,
                 readValueFromPointer: t0(t, n, r),
                 K: null
-              }), tj(t, i)
+              }), tk(t, i)
             },
             _embind_register_enum_value: function(e, t, n) {
               var r = t_(e, "enum");
@@ -2536,7 +2536,7 @@
             },
             _embind_register_function: function(e, t, n, r, i, a) {
               var o = tQ(t, n);
-              e = ta(e), i = tK(r, i), tj(e, function() {
+              e = ta(e), i = tK(r, i), tk(e, function() {
                 tq(`Cannot call ${e} due to unbound types`, o)
               }, t - 1), tR([], o, function(n) {
                 return tV(e, tX(e, [n[0], null].concat(n.slice(1)), null, i, a), t - 1), []
@@ -2760,7 +2760,7 @@
                 e: {
                   i = i.min.call(i, 0x80000000, r + (65536 - r % 65536) % 65536) - v.buffer.byteLength + 65535 >>> 16;
                   try {
-                    v.grow(i), L();
+                    v.grow(i), x();
                     var a = 1;
                     break e
                   } catch (e) {}
@@ -2901,7 +2901,7 @@
           };
           ! function() {
             function e(e) {
-              if (v = (I = e = e.exports).memory, L(), x = I.__indirect_function_table, j.unshift(I.__wasm_call_ctors), G--, a.monitorRunDependencies && a.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), Z)) {
+              if (v = (I = e = e.exports).memory, x(), L = I.__indirect_function_table, k.unshift(I.__wasm_call_ctors), G--, a.monitorRunDependencies && a.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), Z)) {
                 var t = Z;
                 Z = null, t()
               }
@@ -2932,12 +2932,12 @@
           function nA() {
             function e() {
               if (!n && (n = true, a.calledRun = true, !D)) {
-                if (a.noFSInit || eO || (eO = true, e$(), a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? e0("stdin", a.stdin) : eq("/dev/tty", "/dev/stdin"), a.stdout ? e0("stdout", null, a.stdout) : eq("/dev/tty", "/dev/stdout"), a.stderr ? e0("stderr", null, a.stderr) : eq("/dev/tty1", "/dev/stderr"), eQ("/dev/stdin", 0), eQ("/dev/stdout", 1), eQ("/dev/stderr", 1)), eP = false, $(j), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
+                if (a.noFSInit || eO || (eO = true, e$(), a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? e0("stdin", a.stdin) : eq("/dev/tty", "/dev/stdin"), a.stdout ? e0("stdout", null, a.stdout) : eq("/dev/tty", "/dev/stdout"), a.stderr ? e0("stderr", null, a.stderr) : eq("/dev/tty1", "/dev/stderr"), eQ("/dev/stdin", 0), eQ("/dev/stdout", 1), eQ("/dev/stderr", 1)), eP = false, $(k), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
                   for ("function" == typeof a.postRun && (a.postRun = [a.postRun]); a.postRun.length;) {
                     var e = a.postRun.shift();
-                    k.unshift(e)
+                    j.unshift(e)
                   }
-                $(k)
+                $(j)
               }
             }
             if (!(0 < G)) {
@@ -3191,15 +3191,15 @@
       Fit: () => module,
       Layout: () => O,
       LoopType: () => s,
-      Rive: () => L,
+      Rive: () => x,
       RiveEventType: () => a,
       RiveFile: () => D,
       RuntimeLoader: () => v,
       StateMachineInput: () => I,
       StateMachineInputType: () => i,
       Testing: () => K,
-      ViewModel: () => x,
-      ViewModelInstance: () => j,
+      ViewModel: () => L,
+      ViewModelInstance: () => k,
       ViewModelInstanceBoolean: () => B,
       ViewModelInstanceColor: () => H,
       ViewModelInstanceEnum: () => F,
@@ -3207,7 +3207,7 @@
       ViewModelInstanceNumber: () => G,
       ViewModelInstanceString: () => U,
       ViewModelInstanceTrigger: () => Z,
-      ViewModelInstanceValue: () => k,
+      ViewModelInstanceValue: () => j,
       decodeAudio: () => z,
       decodeFont: () => X,
       decodeImage: () => q
@@ -3973,7 +3973,7 @@
           if (null !== this.file) return this.referenceCount += 1, this.file
         }, module.missingErrorMessage = "Rive source file or data buffer required", module.fileLoadErrorMessage = "The file failed to load", module
       }(),
-      L = function() {
+      x = function() {
         function t(e) {
           var t, n = this;
           this.loaded = false, this.destroyed = false, this._observed = null, this.readyForPlaying = false, this.artboard = null, this.eventCleanup = null, this.shouldDisableRiveListeners = false, this.automaticallyHandleEvents = false, this.enableRiveAssetCDN = true, this._volume = 1, this._artboardWidth = true, this._artboardHeight = true, this._devicePixelRatioUsed = 1, this._hasZeroSize = false, this._audioEventListener = null, this._boundDraw = null, this.eventTarget = e.eventTarget, this.eventCapture = null == e.eventCapture || e.eventCapture, this.listenOnDocumentBody = null != e.listenOnDocumentBody && e.listenOnDocumentBody, null != e.eventTarget && (this.listenOnDocumentBody = false), this._viewModelInstance = null, this._dataEnums = null, this.durations = [], this.frameTimes = [], this.frameCount = 0, this.isTouchScrollEnabled = false, this.onCanvasResize = function(e) {
@@ -4125,7 +4125,7 @@
               if (null !== c) {
                 var u = c.defaultInstance();
                 if (null !== u) {
-                  var d = new j(u, null);
+                  var d = new k(u, null);
                   this.bindViewModelInstance(d)
                 }
               }
@@ -4532,10 +4532,10 @@
           configurable: true
         }), t.prototype.viewModelByIndex = function(e) {
           var t = this.file.viewModelByIndex(e);
-          return null !== t ? new x(t) : null
+          return null !== t ? new L(t) : null
         }, t.prototype.viewModelByName = function(e) {
           var t = this.file.viewModelByName(e);
-          return null !== t ? new x(t) : null
+          return null !== t ? new L(t) : null
         }, t.prototype.enums = function() {
           if (null === this._dataEnums) {
             var e = this.file.enums();
@@ -4547,12 +4547,12 @@
         }, t.prototype.defaultViewModel = function() {
           if (this.artboard) {
             var e = this.file.defaultArtboardViewModel(this.artboard);
-            if (module) return new x(module)
+            if (module) return new L(module)
           }
           return null
         }, t.missingErrorMessage = "Rive source file or data buffer required", t.cleanupErrorMessage = "Attempt to use file after calling cleanup.", t
       }(),
-      x = function() {
+      L = function() {
         function e(e) {
           this._viewModel = e
         }
@@ -4570,16 +4570,16 @@
           configurable: true
         }), module.prototype.instanceByIndex = function(e) {
           var t = this._viewModel.instanceByIndex(e);
-          return null !== t ? new j(t, null) : null
+          return null !== t ? new k(t, null) : null
         }, module.prototype.instanceByName = function(e) {
           var t = this._viewModel.instanceByName(e);
-          return null !== t ? new j(t, null) : null
+          return null !== t ? new k(t, null) : null
         }, module.prototype.defaultInstance = function() {
           var e = this._viewModel.defaultInstance();
-          return null !== module ? new j(module, null) : null
+          return null !== module ? new k(module, null) : null
         }, module.prototype.instance = function() {
           var e = this._viewModel.instance();
-          return null !== module ? new j(module, null) : null
+          return null !== module ? new k(module, null) : null
         }, Object.defineProperty(module.prototype, "properties", {
           get: function() {
             return this._viewModel.getProperties()
@@ -4615,7 +4615,7 @@
     ! function(e) {
       e.Number = "number", e.String = "string", e.Boolean = "boolean", e.Color = "color", e.Trigger = "trigger", e.Enum = "enum", e.List = "list"
     }(c || (c = {}));
-    var j = function() {
+    var k = function() {
         function e(e, t) {
           this._parents = [], this._children = [], this._viewModelInstances = new Map, this._propertiesWithCallbacks = [], this._referenceCount = 0, this._runtimeInstance = e, null !== t && this._parents.push(t)
         }
@@ -4782,7 +4782,7 @@
           }
         }, module
       }(),
-      k = function() {
+      j = function() {
         function e(e, t) {
           this.callbacks = [], this._viewModelInstanceValue = e, this._parentViewModel = t
         }
@@ -4825,7 +4825,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(k),
+      }(j),
       G = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -4842,7 +4842,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(k),
+      }(j),
       B = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -4859,7 +4859,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(k),
+      }(j),
       Z = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -4869,7 +4869,7 @@
         }, t.prototype.internalHandleCallback = function(e) {
           e()
         }, t
-      }(k),
+      }(j),
       F = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -4901,7 +4901,7 @@
         }), t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(k),
+      }(j),
       V = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -4920,11 +4920,11 @@
           this._viewModelInstanceValue.removeInstanceAt(e)
         }, t.prototype.instanceAt = function(e) {
           var t = this._viewModelInstanceValue.instanceAt(e);
-          return null != t ? new j(t, null) : null
+          return null != t ? new k(t, null) : null
         }, t.prototype.internalHandleCallback = function(e) {
           e()
         }, t
-      }(k),
+      }(j),
       H = function(e) {
         function t(t, n) {
           return e.call(this, t, n) || this
@@ -4951,7 +4951,7 @@
         }, t.prototype.internalHandleCallback = function(e) {
           e(this.value)
         }, t
-      }(k),
+      }(j),
       Y = function(e) {
         return m(true, true, true, function() {
           return g(this, function(t) {

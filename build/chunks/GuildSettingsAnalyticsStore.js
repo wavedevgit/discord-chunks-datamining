@@ -29,12 +29,12 @@ function g(e) {
   u = null;
   let r = {},
     i = {},
-    s = n[0],
-    a = n[1];
-  null != s && c.forEach(e => {
-    if (null != s[e]) {
+    a = n[0],
+    s = n[1];
+  null != a && c.forEach(e => {
+    if (null != a[e]) {
       let t = l()(e);
-      null != a && 0 !== a[e] && (r["".concat(t, "Change")] = (s[e] - a[e]) * 100 / a[e]), i[t] = s[e]
+      null != s && 0 !== s[e] && (r["".concat(t, "Change")] = (a[e] - s[e]) * 100 / s[e]), i[t] = a[e]
     }
   }), d[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {

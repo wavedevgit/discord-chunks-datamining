@@ -105,9 +105,9 @@ let ee = {
 function ea(e) {
   let {
     header: t
-  } = e, n = L.Z.getCameraComponent(), a = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), o = (0, I.Z)();
+  } = e, n = x.Z.getCameraComponent(), a = (0, l.e7)([x.Z], () => x.Z.getVideoDeviceId()), o = (0, I.Z)();
   return i.useEffect(() => {
-    let e = x.default.getCurrentUser();
+    let e = L.default.getCurrentUser();
     if (o && null != e) {
       let t = (0, O.P)(e);
       (0, v.FU)(t, a, {
@@ -149,7 +149,7 @@ function eo(e) {
       label: W.intl.string(W.t.WAI6xs),
       className: z.actionButton,
       onClick: () => {
-        (0, Z.v)(s, Z.d.DISCONNECT), j.default.track(H.rMx.RING_CALL_DECLINED, Q({
+        (0, Z.v)(s, Z.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, Q({
           location: s,
           guild_id: n.guild_id
         }, (0, h.v_)(n))), u.Z.stopRinging(n.id)
@@ -193,7 +193,7 @@ function eo(e) {
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
-            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), j.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
               location: s,
               guild_id: n.guild_id
             }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, true), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
@@ -204,7 +204,7 @@ function eo(e) {
       channel: n,
       color: "join",
       centerButton: true,
-      onCallJoined: () => j.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
         location: s,
         guild_id: n.guild_id
       }, (0, h.v_)(n))),
@@ -222,11 +222,11 @@ function es(e) {
     channel: h
   } = e, {
     analyticsLocations: y
-  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? k.ZP.getGuildIconURL({
+  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? j.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
     size: ei
-  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), j = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(Y.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, L = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), Z = (0, c.q_F)({
     value: +!!O,
@@ -240,14 +240,14 @@ function es(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let F = j === H.WtW.VIDEO && C && N > 0,
+  let F = k === H.WtW.VIDEO && C && N > 0,
     {
       enabled: V
     } = P.Z.useExperiment({
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = j === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    X = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
     J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(z.icon, K.wrapper, K.ringingIncoming),
@@ -266,7 +266,7 @@ function es(e) {
         })
       }) : (0, r.jsx)(G.Z, {
         className: z.icon,
-        ringing: x,
+        ringing: L,
         src: null != S ? S : "",
         ringingType: G.Z.RingingType.INCOMING,
         size: O ? c.EFr.SIZE_40 : c.EFr.SIZE_80

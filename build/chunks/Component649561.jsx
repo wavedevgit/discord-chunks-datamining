@@ -159,11 +159,11 @@ class k extends Chunk647438.PureComponent {
       error: e,
       info: t
     });
-    let i = (0, v.getPID)(),
-      r = (0, v.getRPCAuthToken)();
+    let i = (0, b.getPID)(),
+      r = (0, b.getRPCAuthToken)();
     (0, f.lW)({
       type: C.BmY.DISPATCH,
-      pid: (0, v.getPID)(),
+      pid: (0, b.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -175,7 +175,7 @@ class k extends Chunk647438.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", N));
-    let s = (0, b.V6)(e, E.gl.Hook, {
+    let s = (0, v.V6)(e, E.gl.Hook, {
       extra: t
     });
     h.Z.track(C.rMx.APP_CRASHED, {

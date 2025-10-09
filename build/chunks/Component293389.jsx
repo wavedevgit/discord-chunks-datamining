@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -68,12 +68,12 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
+let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
     theme: Chunk210887.Z.theme
   }))(Chunk481060.ubH),
   U = (0, Chunk358085.isWindows)(),
@@ -145,9 +145,9 @@ function F(e) {
   } = (0, s.cj)([h.ZP], () => ({
     canToggleDetection: null == I || h.ZP.isDetectionEnabled(I),
     isCurrentGameDetectionEnabled: h.ZP.isDetectionEnabled(T)
-  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [L, M] = i.useState(false), k = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
+  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [x, M] = i.useState(false), j = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
     subgameName: T.gameName
-  }) : T.name, [T, E]), [B, Z] = i.useState(null != k ? k : "???"), V = o()(w.flexCenter, {
+  }) : T.name, [T, E]), [B, Z] = i.useState(null != j ? j : "???"), V = o()(w.flexCenter, {
     [R.game]: !a,
     [R.activeGame]: a,
     [R.nowPlaying]: null != T && a,
@@ -178,12 +178,12 @@ function F(e) {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
-      return t => (0, r.jsx)(e, j(x({}, t), {
+      return t => (0, r.jsx)(e, k(L({}, t), {
         title: N.intl.formatToPlainString(N.t.PZ4fKS, {
-          platform: k
+          platform: j
         }),
         subtitle: N.intl.formatToPlainString(N.t.ZIQbfX, {
-          platform: k
+          platform: j
         }),
         actions: [{
           text: N.intl.string(N.t["ETE/oK"]),
@@ -201,7 +201,7 @@ function F(e) {
   }
 
   function q() {
-    if (L) return;
+    if (x) return;
     let e = null != T.id ? y.Z.getDetectableGame(T.id) : null;
     v.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
@@ -212,7 +212,7 @@ function F(e) {
       } = await n.e("82077").then(n.bind(n, 953848));
       return n => {
         var i, a, o;
-        return (0, r.jsx)(t, j(x({}, n), {
+        return (0, r.jsx)(t, k(L({}, n), {
           detectedActivity: {
             name: null != (i = T.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : T.id) ? o : true,
@@ -231,11 +231,11 @@ function F(e) {
       className: R.detectedApplication,
       children: [(0, r.jsx)("div", {
         className: R.gameName,
-        children: k
+        children: j
       }), (0, r.jsx)(u.ua7, {
         "data-migration-pending": true,
         text: N.intl.string(N.t["4PJP5u"]),
-        children: e => (0, r.jsx)(g.Z, j(x({
+        children: e => (0, r.jsx)(g.Z, k(L({
           className: R.gameVerifiedIcon,
           size: G,
           color: l.Z.unsafe_rawColors.BRAND_500.css
@@ -293,7 +293,7 @@ function F(e) {
     }), i = t ? (0, r.jsx)(u.ua7, {
       "data-migration-pending": true,
       text: N.intl.string(N.t.Vfw2Ly),
-      children: e => (0, r.jsx)("i", x({
+      children: e => (0, r.jsx)("i", L({
         className: R.overlayWarningIcon
       }, e))
     }) : null;
@@ -358,7 +358,7 @@ function F(e) {
   }
 
   function ee() {
-    return L ? null : (0, r.jsx)("div", {
+    return x ? null : (0, r.jsx)("div", {
       className: o()(w.flexCenter, w.noWrap, w.justifyBetween, R.toggleContainer),
       children: (0, r.jsx)(u.ua7, {
         "data-migration-pending": true,
@@ -437,7 +437,7 @@ function H(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsxs)(k, {
+  return (0, r.jsxs)(j, {
     className: D.marginTop40,
     children: [(0, r.jsx)(u.oxh, {
       darkSrc: n(879601),
@@ -474,22 +474,17 @@ let Y = (0, Chunk251625.oH)(function() {
         children: (0, r.jsx)(u.OZU, {
           children: N.intl.string(N.t["1yiJws"])
         })
-      }) : (0, r.jsxs)(u.hjN, {
+      }) : (0, r.jsx)(u.C3N, {
         className: D.marginTop40,
-        children: [(0, r.jsx)(u.vwX, {
-          className: R.addedGamesTitle,
-          children: N.intl.string(N.t.jCOdv7)
-        }), (0, r.jsx)(u.R94, {
-          className: R.addedGamesDescription,
-          type: u.geA.DESCRIPTION,
-          children: N.intl.format(N.t.KPA3m5, {
-            igdbLink: B
-          })
-        }), d.map(e => (0, r.jsx)(F, {
+        label: N.intl.string(N.t.jCOdv7),
+        description: N.intl.format(N.t.KPA3m5, {
+          igdbLink: B
+        }),
+        children: d.map(e => (0, r.jsx)(F, {
           rawGame: e,
           isOverride: c.has(e.exePath),
           subgames: e.id === E.eB ? f : true
-        }, (0, h.rH)(e)))]
+        }, (0, h.rH)(e)))
       })
     }
     return i.useEffect(() => ((0, m.Ky)(), m.P7), []), (0, r.jsxs)(A.Z, {
@@ -516,7 +511,7 @@ let Y = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(u.Avr, j(x({}, e), {
+          children: e => (0, r.jsx)(u.Avr, k(L({}, e), {
             buttonRef: _,
             variant: "primary",
             textVariant: "text-sm/medium",

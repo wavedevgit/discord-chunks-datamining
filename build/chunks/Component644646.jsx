@@ -56,11 +56,11 @@ let S = function(e) {
       location: w
     } = e,
     D = (0, _.O5)(),
-    L = (0, l.e7)([f.Z], () => f.Z.isFocused()),
-    x = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
+    x = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+    L = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
     M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
-    j = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
-    k = i.useCallback(t => {
+    k = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
+    j = i.useCallback(t => {
       var n;
       (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), D({
         questId: a.id,
@@ -78,13 +78,13 @@ let S = function(e) {
     B = (0, p.Bg)(a.config);
   return i.useEffect(() => {
     if (null != U.current) {
-      if (!M.isAnimated || x) {
+      if (!M.isAnimated || L) {
         U.current.currentTime = 0, U.current.pause();
         return
       }
       h && !G.current ? U.current.play() : !h && G.current && (U.current.currentTime = 0, U.current.pause()), G.current = h
     }
-  }, [h, M, x]), t = B ? (0, r.jsx)(O.Fl, {
+  }, [h, M, L]), t = B ? (0, r.jsx)(O.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(b.Z, {
       ref: e,
@@ -92,8 +92,8 @@ let S = function(e) {
     })
   }) : N ? (0, r.jsx)(E.K, {
     showVideo: h,
-    imageAsset: null != j ? {
-      asset: j,
+    imageAsset: null != k ? {
+      asset: k,
       assetId: "QuestRewardTile_rewardTileStatic",
       className: I.imageVideoOverlay,
       alt: v.intl.string(v.t.UMclVF)
@@ -112,7 +112,7 @@ let S = function(e) {
         ref: e => {
           t.current = e, U.current = e
         },
-        autoPlay: !x && h,
+        autoPlay: !L && h,
         loop: true,
         muted: true,
         playsInline: true,
@@ -140,10 +140,10 @@ let S = function(e) {
     children: t
   }) : (0, r.jsxs)(c.P3F, {
     className: o()(I.questRewardTileInteractive, I.questRewardTile, I.rewardHighlight, n),
-    onClick: k,
+    onClick: j,
     style: R,
-    children: [t, P && !x && (0, r.jsx)(T, {
-      appFocused: L,
+    children: [t, P && !L && (0, r.jsx)(T, {
+      appFocused: x,
       location: w
     }), "text" === S && (0, r.jsx)(c.Text, {
       color: "always-white",

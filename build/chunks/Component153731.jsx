@@ -51,7 +51,7 @@ function I(e, t, n, a, i) {
     }), null != d && o.push({
       section: (0, v.J$)(e, R._s_.TRANSPORT, n),
       label: F.intl.string(F.t.wU9INz),
-      element: x.Z,
+      element: Z.Z,
       elementProps: {
         context: e,
         index: n
@@ -151,7 +151,7 @@ function k() {
     return null != i && (p.push(f), p.push({
       section: R._s_.SCREENSHARE,
       label: F.intl.string(F.t["gWbr/f"]),
-      element: Z.Z,
+      element: x.Z,
       elementProps: {
         screenshare: i
       }

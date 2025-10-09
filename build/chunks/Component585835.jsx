@@ -35,13 +35,13 @@ function O(e) {
     integration: P,
     buttonText: I,
     buttonDisabled: E,
-    hasNextSection: Z,
-    onButtonClick: T,
+    hasNextSection: T,
+    onButtonClick: Z,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != P, B = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : Z ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != P, B = r.useRef(null), W = r.useRef(null), H = null == I || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
@@ -49,7 +49,7 @@ function O(e) {
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: I
-    }), Z ? (0, i.jsx)(d.Fbu, {
+    }), T ? (0, i.jsx)(d.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
@@ -60,7 +60,7 @@ function O(e) {
     size: "sm",
     buttonRef: B,
     disabled: E,
-    onClick: T,
+    onClick: Z,
     text: I
   });
   r.useEffect(() => {
@@ -97,7 +97,7 @@ function O(e) {
     }), e))
   }, [k, null == P ? true : P.application.id, U]);
   let G = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.J2, {
-      targetElementRef: Z ? W : B,
+      targetElementRef: T ? W : B,
       title: j.intl.string(j.t.ufFDiI),
       body: j.intl.string(j.t.TyMJwM),
       onRequestClose: () => {
@@ -113,8 +113,8 @@ function O(e) {
       var e;
       return null != P && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, k)) ? e : []
     }),
-    F = (0, p.LD)(k, true),
-    K = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    K = (0, p.LD)(k, true),
+    F = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
     q = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
@@ -159,12 +159,12 @@ function O(e) {
               items: l
             })
           })
-        }(P, K)
+        }(P, F)
       }), G, H, R]
     });
-  return Z ? (0, i.jsx)(d.P3F, {
+  return T ? (0, i.jsx)(d.P3F, {
     onClick: () => {
-      D && null != k && null != P && h.Z.dismissOverviewTooltip(k, P.integration), null == T || T()
+      D && null != k && null != P && h.Z.dismissOverviewTooltip(k, P.integration), null == Z || Z()
     },
     children: (0, i.jsx)(d.Zbd, {
       editable: true,

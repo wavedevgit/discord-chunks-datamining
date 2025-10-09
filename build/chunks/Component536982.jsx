@@ -20,12 +20,12 @@ function c(e) {
   } = e, [u, g] = i.useState(!d);
   return (0, r.jsx)(l.zF9, {
     isExpanded: u,
-    collapsibleContent: (0, r.jsx)(s.Z, {
+    collapsibleContent: (0, r.jsx)(a.Z, {
       onChangeText: t,
       maxWordCount: c,
       className: o.keywordTextAreaContainer,
       textAreaClassName: o.keywordTextArea,
-      subtitleText: a.intl.formatToMarkdownString(a.t.qm7UZ2, {}),
+      subtitleText: s.intl.formatToMarkdownString(s.t.qm7UZ2, {}),
       initialValue: n
     }),
     className: o.collapseable,
@@ -41,7 +41,7 @@ function c(e) {
           className: o.header,
           children: [(0, r.jsx)(l.X6q, {
             variant: "text-sm/medium",
-            children: a.intl.string(a.t.lbE2Nj)
+            children: s.intl.string(s.t.lbE2Nj)
           }), u ? (0, r.jsx)(l.u04, {
             size: "md",
             color: "currentColor",

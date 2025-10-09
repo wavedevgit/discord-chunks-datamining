@@ -40,25 +40,25 @@ module.exports = function(e, t) {
       w = P.getBlockForKey(T),
       D = w.getText().slice(N, R);
     if (y.endsWith(f) && (y = y.slice(0, false)), y === D) {
-      var L = t.nativeEvent.inputType;
-      if (L) {
-        var x = _(L, O);
-        x !== O && (e.restoreEditorDOM(), e.update(x))
+      var x = t.nativeEvent.inputType;
+      if (x) {
+        var L = _(x, O);
+        L !== O && (e.restoreEditorDOM(), e.update(L))
       }
       return
     }
     var M = O.getSelection(),
-      j = M.merge({
+      k = M.merge({
         anchorOffset: N,
         focusOffset: R,
         isBackward: false
       }),
-      k = w.getEntityAt(N),
-      U = s(k) ? P.getEntity(k) : null,
+      j = w.getEntityAt(N),
+      U = s(j) ? P.getEntity(j) : null,
       G = null != U ? U.getMutability() : null,
       B = "MUTABLE" === G,
       Z = B ? "spellcheck-change" : "apply-entity",
-      F = r.replaceText(P, j, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
+      F = r.replaceText(P, k, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, p = (c = N + Math.min(n, o = h.focusOffset)) + Math.abs(n - o), n = c, o = p;
     else {
       var V = y.length - D.length;

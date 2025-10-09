@@ -17,6 +17,6 @@ function a() {
   let a = new Date,
     o = new Date(require);
   if (a.getFullYear() !== o.getFullYear() || a.getMonth() !== o.getMonth() || a.getDate() !== o.getDate()) return Chunk875425.FO.TODAY;
-  let u = Number(require) - Date.now();
-  return null != (e = l.find(e => u <= e)) ? module : Chunk875425.FO.TODAY
+  let s = Number(require) - Date.now();
+  return null != (e = l.find(e => s <= e)) ? module : Chunk875425.FO.TODAY
 }

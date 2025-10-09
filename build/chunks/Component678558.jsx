@@ -93,11 +93,11 @@ let R = e => {
     pauseAnimation: P = false,
     applicationId: w,
     handleSubscribeModalClose: D,
-    withHighlight: L = false,
-    icon: x,
+    withHighlight: x = false,
+    icon: L,
     intent: M
-  } = e, j = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
-    analyticsLocations: k
+  } = e, k = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
+    analyticsLocations: j
   } = (0, d.ZP)(), U = (0, p.bp)() === b.IlC.POPOUT, [G, B] = i.useState(false), {
     fractionalState: Z
   } = (0, f.Z)(), F = (0, s.e7)([h.Z], () => h.Z.hasFetched);
@@ -111,7 +111,7 @@ let R = e => {
     }),
     W = async () => {
       B(true), await (0, E.u)({
-        analyticsLocations: k,
+        analyticsLocations: j,
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: a,
@@ -125,7 +125,7 @@ let R = e => {
       }), B(false)
     }, K = m.Z.getPremiumTypeSubscription(), z = (0, r.jsxs)("div", {
       className: v.button,
-      children: [x, null != I ? I : O.intl.string(O.t.gKmQ1N)]
+      children: [L, null != I ? I : O.intl.string(O.t.gKmQ1N)]
     }), q = false;
   return ((q = null !== K && !(V.length > 0) && (null == K ? true : K.isPausedOrPausePending) && Z === y.a$.NONE) && (z = (0, r.jsxs)("div", {
     className: v.button,
@@ -133,7 +133,7 @@ let R = e => {
       size: "xs",
       className: v.buttonIcon
     }), " ", z]
-  }), j.disabled = true), null != Y) ? (0, r.jsx)(_.Z, {
+  }), k.disabled = true), null != Y) ? (0, r.jsx)(_.Z, {
     text: Y,
     "aria-label": false,
     children: e => (0, r.jsx)(c.gtL, A(T(A(T({
@@ -142,15 +142,15 @@ let R = e => {
       disabled: true,
       size: l.zx.Sizes.SMALL,
       pauseAnimation: P
-    }), j), {
+    }), k), {
       children: z
     }))
   }) : (0, r.jsx)(c.gtL, A(T({
     "data-migration-pending": true,
     size: l.zx.Sizes.SMALL
-  }, j), {
-    className: o()(j.className, {
-      [v.buttonHighlighted]: L
+  }, k), {
+    className: o()(k.className, {
+      [v.buttonHighlighted]: x
     }),
     submitting: G,
     onClick: W,

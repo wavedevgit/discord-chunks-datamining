@@ -15,8 +15,8 @@ let o = Chunk647438.memo(function(e) {
   } = e, {
     file: o,
     audio: s
-  } = (0, i.p)();
-  return (0, a.jsx)(r.Z, {
+  } = (0, r.p)();
+  return (0, a.jsx)(i.Z, {
     file: o,
     audio: s,
     waveformSettings: {

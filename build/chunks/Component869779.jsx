@@ -108,13 +108,13 @@ class k extends Chunk647438.PureComponent {
               size: "xxs",
               color: "currentColor",
               className: A.channelIcon
-            }) : null, (0, g.F6)(t, w.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, E.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
               className: A.category,
-              children: (0, g.F6)(n, w.default, Z.Z)
+              children: (0, g.F6)(n, E.default, Z.Z)
             }) : null]
           }) : M.intl.string(M.t.XPDhcX)
         }, {
@@ -158,7 +158,7 @@ class k extends Chunk647438.PureComponent {
           section: L.CoT.DELETE,
           onClick() {
             (0, T.w)(t, function() {
-              E.S.subscribeOnce(L.CkL.LAYER_POP_COMPLETE, () => {
+              w.S.subscribeOnce(L.CkL.LAYER_POP_COMPLETE, () => {
                 (0, o.zz)(t.id)
               }), (0, c.xf)()
             })

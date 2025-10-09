@@ -71,8 +71,9 @@ function b() {
       })]
     }, t.id)
   });
-  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+  return (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      variant: "heading-md/semibold",
       children: "Selected Content"
     }), null != Chunk594174 ? (0, Chunk951288.jsx)("ul", {
       children: Chunk594174

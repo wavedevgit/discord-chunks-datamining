@@ -27,8 +27,8 @@ let m = function(e) {
     onRemove: x,
     canRemove: b,
     title: j,
-    actionsLocation: _,
-    fieldStyle: v
+    actionsLocation: v,
+    fieldStyle: _
   } = e, C = n.values, O = C.slice(0, 1), y = C.length - O.length;
   return (0, r.jsxs)(d.Z, {
     field: n,
@@ -40,15 +40,15 @@ let m = function(e) {
     onRemove: x,
     title: j,
     canRemove: b,
-    actionsLocation: _,
-    fieldStyle: v,
+    actionsLocation: v,
+    fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {
       terms: O,
       channelId: t
-    }), 0 !== y && (0, r.jsxs)(a.P3F, {
+    }), 0 !== y && (0, r.jsxs)(s.P3F, {
       className: l()(g.fieldFooterContainer, g.clickable),
       onClick: h,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: g.clickable,
         children: u.intl.format(u.t.jnhD0d, {
@@ -58,7 +58,7 @@ let m = function(e) {
         className: g.termsFieldCaretIcon,
         height: 14,
         width: 14,
-        color: s.Z.unsafe_rawColors.WHITE_500.css
+        color: a.Z.unsafe_rawColors.WHITE_500.css
       })]
     }), (0, r.jsx)(c.G0, {
       disabled: true,

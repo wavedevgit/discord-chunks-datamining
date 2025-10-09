@@ -60,15 +60,15 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D,
-    openedAt: L,
-    setPopoutRef: x,
+    openedAt: x,
+    setPopoutRef: L,
     closePopout: M,
-    disableUserProfileLink: j = __OVERLAY__,
-    newAnalyticsLocations: k = [],
+    disableUserProfileLink: k = __OVERLAY__,
+    newAnalyticsLocations: j = [],
     disableAutoFocus: U = false
   } = e, G = (0, h.ZP)(n.id, N), {
     analyticsLocations: B
-  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_POPOUT]), Z = (0, _.ZB)({
+  } = (0, s.ZP)([...j, o.Z.USER_PROFILE_POPOUT]), Z = (0, _.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: N,
@@ -77,15 +77,15 @@ function P(e) {
     roleId: D
   }), F = i.useRef(null), V = (0, u.X)(F);
   i.useEffect(() => {
-    null == x || x(null == F ? true : F.current)
-  }, [F, x]);
+    null == L || L(null == F ? true : F.current)
+  }, [F, L]);
   let H = () => {
       null == M || M(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: B,
         hideRestrictedProfile: true
       }, Z))
     },
-    Y = !j && (0, l.Z)(n.id),
+    Y = !k && (0, l.Z)(n.id),
     W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
@@ -103,7 +103,7 @@ function P(e) {
     value: B,
     children: (0, r.jsx)(_.Mt, {
       value: Z,
-      openedAt: L,
+      openedAt: x,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,

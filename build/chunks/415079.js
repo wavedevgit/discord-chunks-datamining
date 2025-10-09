@@ -106,7 +106,7 @@ let R = ["continue", "continuePrimaryKey", "advance"],
   P = {},
   w = new WeakMap,
   D = new WeakMap,
-  L = {
+  x = {
     get(e, t) {
       if (!R.includes(t)) return e[t];
       let n = P[t];
@@ -115,10 +115,10 @@ let R = ["continue", "continuePrimaryKey", "advance"],
       }), n
     }
   };
-async function* x(...e) {
+async function* L(...e) {
   let t = this;
   if (t instanceof IDBCursor || (t = await t.openCursor(...e)), !t) return;
-  let n = new Proxy(t, L);
+  let n = new Proxy(t, x);
   for (D.set(n, t), g.set(n, I(t)); t;) yield n, t = await (w.get(n) || t.continue()), w.delete(n)
 }
 
@@ -127,11 +127,11 @@ function M(e, t) {
 }
 b(e => ({
   ...e,
-  get: (t, n, r) => M(t, n) ? x : e.get(t, n, r),
+  get: (t, n, r) => M(t, n) ? L : e.get(t, n, r),
   has: (t, n) => M(t, n) || e.has(t, n)
 }));
-let j = "sprigReplayIframeLoaded",
-  k = "sprigReplayIframeSettings",
+let k = "sprigReplayIframeLoaded",
+  j = "sprigReplayIframeSettings",
   U = "sprigReplayIframeTakeFullSnapshot",
   G = "sprigReplayTeardown",
   B = [],
@@ -557,38 +557,38 @@ let ev = new class {
   eT, eS, eA, eC, eN, eR, eP = [],
   ew = false,
   eD = 0,
-  eL = false,
   ex = false,
+  eL = false,
   eM = [],
-  ej = false,
-  ek = () => eL && !ew && Date.now() <= eA,
+  ek = false,
+  ej = () => ex && !ew && Date.now() <= eA,
   eU = ({
     apiUrl: e,
     config: t,
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    eL && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
+    ex && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
       sdkVersion: t.sdkVersion
-    }, eC = t.maxDurationSeconds, eH(), eL || (eR = window.setInterval(eF, 500)), eL = true) : ew = true)
+    }, eC = t.maxDurationSeconds, eH(), ex || (eR = window.setInterval(eF, 500)), ex = true) : ew = true)
   },
   eG = [_.Drag, _.Input, _.MediaInteraction, _.MouseInteraction, _.MouseMove, _.Scroll, _.Selection, _.TouchMove],
   eB = e => e.type === f.Custom || e.type === f.IncrementalSnapshot && eG.includes(e.data.source),
   eZ = e => e.some(eB),
   eF = async () => {
-    if (!ek()) return void window.clearInterval(eR);
+    if (!ej()) return void window.clearInterval(eR);
     if (eV(), !eZ(eI)) return;
     let e = eI[0].timestamp;
     Date.now() - module > 35e3 && (null == eN || eN())
   }, eV = async () => {
-    if (eP.length || ej) return;
-    ej = true;
+    if (eP.length || ek) return;
+    ek = true;
     let e = await ez();
     if (!module) return void(ew = true);
-    eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ej = false
+    eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ek = false
   }, eH = () => {
     let e = Chunk555256.a.getItem("sprig.alwayson.info");
     if (module) {
@@ -612,7 +612,7 @@ let ev = new class {
       ew = true
     }
   }, eK = async (e, t) => {
-    if (!ek() || !e) return;
+    if (!ej() || !e) return;
     let n = await (async e => {
       let t = new TextEncoder,
         n = new CompressionStream("gzip"),
@@ -625,7 +625,7 @@ let ev = new class {
       method: "PUT"
     }), "uploading always-on with presigned url")
   }, ez = async () => {
-    if (!ek()) return;
+    if (!ej()) return;
     let {
       surveyId: e,
       responseGroupUuid: t
@@ -672,7 +672,7 @@ let ev = new class {
       }
     })
   }, eQ = (e, t) => {
-    ek() && !ex && (e || eI.length) && (e && eI.length && (async () => {
+    ej() && !eL && (e || eI.length) && (e && eI.length && (async () => {
       let e = eI.splice(0);
       if (!eZ(e)) return;
       l.b.info("Capturing always-on event array to upload"), eX(e);
@@ -681,7 +681,7 @@ let ev = new class {
     })(), eI.push(t))
   };
 window.addEventListener("beforeunload", async () => {
-  ex = true, ek() && (Chunk555256.b.info("Always On handle page unload"), (() => {
+  eL = true, ej() && (Chunk555256.b.info("Always On handle page unload"), (() => {
     let e;
     eI.length && (e = eI[0].timestamp);
     let t = {
@@ -1077,7 +1077,7 @@ let eJ = async (e, t) => {
     ey(async () => {
       await tt(true)
     }, "Error uploading ready pending captures");
-    let o = Math.max(e ?? 0, 30 * !!ek());
+    let o = Math.max(e ?? 0, 30 * !!ej());
     if (!o) return l.b.debug("MissingDuration");
     l.b.debug("ReplayInit"), await ey(async () => {
       var e, r, i;
@@ -1122,11 +1122,11 @@ let eJ = async (e, t) => {
       }), el.isRecording = !!el.stopRecording, el.isRecording && (((e, t) => {
         window.addEventListener("message", n => {
           var r;
-          n.data.type === j && (B.push({
+          n.data.type === k && (B.push({
             source: n.source,
             origin: n.origin
           }), null == (r = n.source) || r.postMessage({
-            type: k,
+            type: j,
             settings: e,
             replayLibraryUrl: t
           }, {

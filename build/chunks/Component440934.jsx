@@ -4,9 +4,8 @@ require.r(exports), require.d(exports, {
   default: () => p,
   openInteractionModal: () => m
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk793030 = require("./793030.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk970184 = require("./970184.jsx"),
   Chunk471073 = require("./471073.js"),
@@ -25,9 +24,9 @@ function p(n) {
     applicationIconURL: f,
     applicationName: b,
     submissionState: x,
-    error: h,
-    validators: j,
-    validationErrors: g,
+    error: g,
+    validators: h,
+    validationErrors: j,
     setValidationErrors: y,
     onSubmit: I
   } = (0, l.X9)(n, t);
@@ -39,31 +38,31 @@ function p(n) {
       transitionState: p,
       onClose: t,
       children: [(0, i.jsx)(a.xBx, {
-        leading: (0, i.jsx)(r.qEK, {
+        leading: (0, i.jsx)(s.qEK, {
           src: f,
-          size: r.EFr.SIZE_24,
+          size: s.EFr.SIZE_24,
           "aria-label": b,
           className: u.applicationIcon
         }),
         title: e,
         titleTextVariant: "heading-xl/semibold"
       }), (0, i.jsxs)(a.fef, {
-        children: [null != h && "" !== h ? (0, i.jsx)(r.Wn, {
-          messageType: r.QYI.ERROR,
+        children: [null != g && "" !== g ? (0, i.jsx)(s.Wn, {
+          messageType: s.QYI.ERROR,
           className: u.submissionWarning,
-          children: h
-        }) : null, (0, i.jsx)(r.Wn, {
-          messageType: r.QYI.WARNING,
+          children: g
+        }) : null, (0, i.jsx)(s.Wn, {
+          messageType: s.QYI.WARNING,
           className: u.submissionWarning,
           children: d.intl.format(d.t["dSTy//"], {
             applicationName: b
           })
-        }), (0, i.jsx)(r.hjN, {
+        }), (0, i.jsx)("div", {
           className: u.components,
-          children: (0, i.jsx)(s.Il, {
+          children: (0, i.jsx)(r.Il, {
             modal: n,
-            validators: j,
-            validationErrors: g,
+            validators: h,
+            validationErrors: j,
             setValidationErrors: y,
             children: (0, c.xX)(m)
           })
@@ -86,7 +85,7 @@ function p(n) {
 }
 
 function m(n) {
-  (0, r.h7j)(e => (0, i.jsx)(p, function(n) {
+  (0, s.h7j)(e => (0, i.jsx)(p, function(n) {
     for (var e = 1; e < arguments.length; e++) {
       var t = null != arguments[e] ? arguments[e] : {},
         i = Object.keys(t);

@@ -85,11 +85,11 @@ function R(e, t) {
 let P = 20,
   w = 125,
   D = (0, Chunk313201.hQ)(),
-  L = Chunk336317.Z.convert.fromCodePoint("1f44f"),
-  x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
+  x = Chunk336317.Z.convert.fromCodePoint("1f44f"),
+  L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function j(e) {
+function k(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return v.intl.string(v.t.BVK5b2);
@@ -105,14 +105,14 @@ function j(e) {
       return v.intl.string(v.t.bGN1o6)
   }
 }
-let k = e => {
+let j = e => {
     let {
       fade: t,
       surrogate: n,
       onClick: i,
       delay: a,
       index: o
-    } = e, s = (0, u.JA)("item-".concat(o)), l = b.ZP.getURL(L + n), d = (0, _.q_F)({
+    } = e, s = (0, u.JA)("item-".concat(o)), l = b.ZP.getURL(x + n), d = (0, _.q_F)({
       opacity: 1,
       from: {
         opacity: +!t
@@ -125,7 +125,7 @@ let k = e => {
       onClick: () => i(n),
       className: I.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": j(n),
+        "aria-label": k(n),
         className: I.diversityEmojiItemImage,
         style: S({
           backgroundImage: 'url("'.concat(l, '")')
@@ -139,7 +139,7 @@ let k = e => {
       selectedSurrogate: n,
       onClick: a
     } = e, o = (0, m.Z)("diversity"), s = (0, _.q_F)({
-      height: (M + 2 * x) * (E.gw.length + 1),
+      height: (M + 2 * L) * (E.gw.length + 1),
       from: {
         height: M
       },
@@ -164,7 +164,7 @@ let k = e => {
             className: I.diversitySelectorOptions,
             style: s,
             role: "listbox",
-            children: d.map((e, t) => (0, r.jsx)(k, {
+            children: d.map((e, t) => (0, r.jsx)(j, {
               index: t,
               fade: 0 !== t,
               delay: t * P,
@@ -181,7 +181,7 @@ let k = e => {
       searchBarRef: t,
       selectedSurrogate: n,
       className: a
-    } = e, s = b.ZP.getURL(L + n), [l, c] = i.useState(false), u = (0, h.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
+    } = e, s = b.ZP.getURL(x + n), [l, c] = i.useState(false), u = (0, h.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
       c(true)
     }, m = e => {
       e.keyCode === O.yXg.ESCAPE && (e.stopPropagation(), c(false), null != d.current && d.current.focus())

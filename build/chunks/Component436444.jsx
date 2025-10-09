@@ -93,7 +93,7 @@ let T = {
       totalAvailableBoostsCount: N
     } = e, {
       analyticsLocations: R
-    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - N, L = A <= C || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, j = L && A === i.premiumTier, k = i.premiumTier < A && N >= w, {
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - N, x = A <= C || b, L = x && A <= i.premiumTier, M = x && A < i.premiumTier, k = x && A === i.premiumTier, j = i.premiumTier < A && N >= w, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -112,7 +112,7 @@ let T = {
         style: {
           transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== p.Eu4.NONE ? k ? (0, r.jsx)(s.zkc, {
+      }), A !== p.Eu4.NONE ? j ? (0, r.jsx)(s.zkc, {
         className: a()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
@@ -124,7 +124,7 @@ let T = {
     });
 
     function B() {
-      L && (k || (0, f.u)({
+      x && (j || (0, f.u)({
         analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -136,18 +136,18 @@ let T = {
         guild: i
       }))
     }
-    let Z = !x && P.fractionalState === h.a$.NONE,
+    let Z = !L && P.fractionalState === h.a$.NONE,
       F = Z ? s.P3F : "div",
       V = Z ? {
         onClick: B
       } : {};
     return (0, r.jsx)(s.ua7, {
       tooltipClassName: E.tooltip,
-      text: x ? m.intl.formatToPlainString(m.t["1o48kp"], {
+      text: L ? m.intl.formatToPlainString(m.t["1o48kp"], {
         tierName: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : k ? m.intl.formatToPlainString(g.default["9CtPjo"], {
+      }) : j ? m.intl.formatToPlainString(g.default["9CtPjo"], {
         perk: (0, d.nW)(A, {
           useLevels: false
         })
@@ -160,18 +160,18 @@ let T = {
       shouldShow: A !== p.Eu4.NONE,
       children: e => (0, r.jsxs)(F, v(y({
         className: a()(E.progressBarMarker, {
-          [E.progressBarMarkerUnlocked]: x,
+          [E.progressBarMarkerUnlocked]: L,
           [E.progressBarMarkerLocked]: Z,
           [E.progressBarMarkerLower]: M,
-          [E.progressBarMarkerCurrent]: j
+          [E.progressBarMarkerCurrent]: k
         }),
         style: {
           left: "".concat(100 * T[A], "%")
         }
       }, e, V), {
-        children: [!x && (0, r.jsx)("div", {
+        children: [!L && (0, r.jsx)("div", {
           className: E.boostedTierIconBackground
-        }), x && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
+        }), L && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
           setConfettiCount: O,
           setShouldFireConfetti: S,
@@ -179,7 +179,7 @@ let T = {
         }) : G, (0, r.jsxs)(s.Text, {
           className: E.progressBarMarkerLabel,
           variant: "text-md/normal",
-          children: [x && A !== p.Eu4.NONE && (0, r.jsx)(s.dz2, {
+          children: [L && A !== p.Eu4.NONE && (0, r.jsx)(s.dz2, {
             size: "md",
             color: "currentColor",
             className: E.progressBarMarkerUnlockedIcon

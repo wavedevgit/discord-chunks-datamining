@@ -90,7 +90,7 @@ function I(e) {
         openEntryContextMenu: u
       });
     case m.Kw.ROLE:
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(T, {
         guild: t,
         id: l,
         isLocked: o,
@@ -98,7 +98,7 @@ function I(e) {
         openEntryContextMenu: u
       });
     case m.Kw.USER:
-      return (0, i.jsx)(T, {
+      return (0, i.jsx)(Z, {
         guild: t,
         id: l,
         isLocked: o,
@@ -158,7 +158,7 @@ function E(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   var t;
   let {
     guild: l,
@@ -202,7 +202,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function Z(e) {
   let {
     guild: t,
     id: n,

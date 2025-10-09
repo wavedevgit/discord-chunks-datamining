@@ -92,7 +92,7 @@ function I(e) {
     children: R
   } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), w = (0, i.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), {
     analyticsLocations: D
-  } = (0, o.ZP)(), L = (0, p.N)(), x = !N && null != L && null != g && h.nG[L.trial_id].skus.includes(g);
+  } = (0, o.ZP)(), x = (0, p.N)(), L = !N && null != x && null != g && h.nG[x.trial_id].skus.includes(g);
   return R({
     onClick: e => {
       var i;
@@ -131,7 +131,7 @@ function I(e) {
           }))
         }
       });
-      let o = x ? null == (i = L.subscription_trial) ? true : i.id : null,
+      let o = L ? null == (i = x.subscription_trial) ? true : i.id : null,
         f = m.Qqv.BUY;
       null != o ? f = m.Qqv.TRIAL : N && (f = m.Qqv.GIFT), (0, l.Z)({
         isGift: N,

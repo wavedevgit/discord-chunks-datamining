@@ -37,7 +37,7 @@ function y(e) {
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : v.lds, w = null != E, [Z] = (0, m.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : _.lds, w = null != E, [Z] = (0, m.RD)(P), {
     rulesByTriggerType: R
   } = (0, m.pH)(P), D = {
     [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
@@ -75,56 +75,55 @@ function y(e) {
     N(w, (0, j.af)(M))
   }, [N, w, M]);
   let U = (0, p.Z6)(P);
-  return (0, r.jsxs)(a.hjN, {
-    title: C.intl.string(C.t.uRelg4),
-    tag: "h1",
-    children: [(0, r.jsxs)("div", {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(s.X6q, {
+      variant: "heading-lg/semibold",
+      color: "header-primary",
+      children: C.intl.string(C.t.uRelg4)
+    }), (0, r.jsxs)("div", {
       className: O.descriptionContainer,
-      children: [(0, r.jsxs)(a.hjN, {
-        tag: "h3",
+      children: [(0, r.jsxs)("div", {
         className: O.description,
-        titleClassName: O.descriptionHeader,
-        children: [(0, r.jsx)(a.Text, {
-          variant: "text-md/medium",
+        children: [(0, r.jsx)(s.Text, {
+          variant: "text-sm/normal",
           color: "header-secondary",
           children: C.intl.string(C.t.EwuSCQ)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           className: O.helpUrl,
           children: C.intl.format(C.t["B+sgGh"], {
-            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
         className: O.descriptionAvatarContainer,
-        children: [(0, r.jsx)(a.qEK, {
+        children: [(0, r.jsx)(s.qEK, {
           src: (0, g.j)(),
-          size: a.EFr.SIZE_80,
+          size: s.EFr.SIZE_80,
           "aria-label": C.intl.string(C.t.hG1StL)
-        }), (0, r.jsx)(a.IGR, {
+        }), (0, r.jsx)(s.IGR, {
           text: (0, r.jsxs)("div", {
             className: O.automodBadgeText,
-            children: [(0, r.jsx)(a.sV5, {
+            children: [(0, r.jsx)(s.sV5, {
               size: "xxs",
               color: "currentColor",
               className: O.checkmarkIcon
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/bold",
               className: O.automodText,
               children: C.intl.string(C.t.hG1StL)
             })]
           }),
-          color: s.Z.unsafe_rawColors.BRAND_500.css,
+          color: a.Z.unsafe_rawColors.BRAND_500.css,
           className: O.textBadge
         })]
       })]
     }), Z ? (0, r.jsx)(f.Z, {}) : Object.entries(U).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
-      let l = null != D[t] ? (0, r.jsx)(a.hjN, {
-        tag: "h3",
+      let l = null != D[t] ? (0, r.jsx)("div", {
         className: O.categoryHeader,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           children: D[t]
@@ -139,7 +138,7 @@ function y(e) {
               guildId: P,
               triggerType: e,
               rules: null != (t = R[e]) ? t : [],
-              initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === _.fX.MENTION_SPAM
+              initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
             }, e)
           })
         })]

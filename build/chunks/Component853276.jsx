@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
 let p = Chunk647438.forwardRef(function(e, t) {
   var n, l;
   let {
-    value: a,
+    value: s,
     isSelected: c,
     isEditing: d,
     forceShowErrorTooltip: u = false,
@@ -27,17 +27,17 @@ let p = Chunk647438.forwardRef(function(e, t) {
     if (null == g) return [];
     let {
       erroringCharacterOffset: e = 0,
-      erroringCharacterLength: t = a.length
-    } = null != g ? g : {}, n = a.slice(0, e);
-    return [n, a.slice(e, e + t), a.slice(e + t)]
-  }, [a, g]);
+      erroringCharacterLength: t = s.length
+    } = null != g ? g : {}, n = s.slice(0, e);
+    return [n, s.slice(e, e + t), s.slice(e + t)]
+  }, [s, g]);
   return null == g ? (0, r.jsx)("div", {
-    className: s()(m.chipletValue, {
+    className: a()(m.chipletValue, {
       [m.isEditing]: d,
       [m.isSelected]: c
     }),
     ref: t,
-    children: a
+    children: s
   }) : (null != (n = null == p ? true : p.length) ? n : 0) + (null != (l = null == f ? true : f.length) ? l : 0) > 70 ? (0, r.jsx)(o.u, {
     "aria-label": g.message,
     __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
@@ -51,7 +51,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
     forceOpen: u || true,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: s()(m.chipletValue, {
+      className: a()(m.chipletValue, {
         [m.isEditing]: d,
         [m.isError]: null != g && !d,
         [m.isOverflowing]: null != g && !d
@@ -67,7 +67,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
     })
   }) : (0, r.jsxs)("div", {
     ref: t,
-    className: s()(m.chipletValue, {
+    className: a()(m.chipletValue, {
       [m.isEditing]: d,
       [m.isError]: null != g && !d
     }),
@@ -98,13 +98,13 @@ function f(e) {
     isSelecting: x,
     error: b,
     forceShowErrorTooltip: j
-  } = e, _ = i.useRef(null), v = i.useRef(null), [C, O] = i.useState(false), {
+  } = e, v = i.useRef(null), _ = i.useRef(null), [C, O] = i.useState(false), {
     ref: y,
     width: N = 0
   } = (0, d.ZP)(C), {
     ref: E,
     width: I = 0
-  } = (0, d.ZP)(C), S = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), [T, P] = i.useState(j), w = i.useRef(null), Z = N > I ? N : I;
+  } = (0, d.ZP)(C), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [T, P] = i.useState(j), w = i.useRef(null), Z = N > I ? N : I;
   i.useEffect(() => {
     j ? (P(true), w.current = setTimeout(() => {
       P(false), w.current = null
@@ -117,9 +117,9 @@ function f(e) {
     }, [n]),
     D = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && f(), null != _.current && null != y.current && null != v.current) {
+      if (t.trim().length <= 0 && f(), null != v.current && null != y.current && null != _.current) {
         var n;
-        _.current.scrollTo(0, 0), _.current.setSelectionRange(0, 0), _.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = v.current) ? true : n.ref) != null && (v.current.ref.scrollLeft = 0)
+        v.current.scrollTo(0, 0), v.current.setSelectionRange(0, 0), v.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = _.current) ? true : n.ref) != null && (_.current.ref.scrollLeft = 0)
       }
       O(false), l(e)
     }, [t, y, l, f]),
@@ -138,7 +138,7 @@ function f(e) {
     className: m.chipletFlexContainer,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: s()(m.chipletContainer, {
+      className: a()(m.chipletContainer, {
         [m.isEditing]: C,
         [m.smallBlink]: !C && !S,
         [m.isSelected]: h,
@@ -152,17 +152,17 @@ function f(e) {
         ignoreKeyPress: true,
         onMouseEnter: () => P(true),
         onMouseLeave: () => P(false),
-        className: s()(m.chipletContainerInner, {
+        className: a()(m.chipletContainerInner, {
           [m.isSelecting]: x,
           [m.isEditing]: C
         }),
-        ref: v,
+        ref: _,
         children: [(0, r.jsx)("input", {
-          className: s()(m.chipletInput, {
+          className: a()(m.chipletInput, {
             [m.isEditing]: C,
             [m.isSelecting]: x
           }),
-          ref: _,
+          ref: v,
           onChange: R,
           onKeyDownCapture: A,
           value: t,

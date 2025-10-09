@@ -29,6 +29,5 @@ module.exports = {
   confirmChannelName: "confirmChannelName_cba592",
   lastActiveTimestamp: "lastActiveTimestamp_cba592",
   confirmInviteScroller: "confirmInviteScroller_cba592",
-  subtitle: "subtitle_cba592",
-  footerText: "footerText_cba592"
+  subtitle: "subtitle_cba592"
 }

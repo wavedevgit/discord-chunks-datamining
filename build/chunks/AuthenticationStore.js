@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  default: () => eL
+  default: () => ex
 }), require("./539854.js"), require("./358797.js"), require("./415506.js");
 var a, Chunk213919 = require("./213919.js"),
   Chunk756647 = require("./756647.js"),
@@ -40,11 +40,11 @@ let N = new Chunk710845.Z("AuthenticationStore"),
   P = "user_id_cache",
   w = null,
   D = null,
-  L = null,
   x = null,
+  L = null,
   M = null,
-  j = null,
   k = null,
+  j = null,
   U = Chunk981631.u34.NONE,
   G = false,
   B = [],
@@ -116,7 +116,7 @@ function $(e) {
 }
 
 function ee() {
-  j = M, M = null, Chunk433517.K.remove(R)
+  k = M, M = null, Chunk433517.K.remove(R)
 }
 
 function et(e, t) {
@@ -124,7 +124,7 @@ function et(e, t) {
 }
 
 function en(e) {
-  k = e, o.setAnalyticsToken(e)
+  j = e, o.setAnalyticsToken(e)
 }
 
 function er() {
@@ -224,9 +224,9 @@ function eg(e) {
 function eE(e) {
   let t = e.fingerprint;
   null == M ? null != t ? (y.default.track(S.rMx.USER_FINGERPRINT_CHANGED, {
-    old_fingerprint: null != j ? (0, s.s)(j) : null,
+    old_fingerprint: null != k ? (0, s.s)(k) : null,
     new_fingerprint: (0, s.s)(t)
-  }), M = t, j = t, u.K.set(R, M)) : J() : null != t && M !== t && y.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+  }), M = t, k = t, u.K.set(R, M)) : J() : null != t && M !== t && y.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
     fingerprint: (0, s.s)(M),
     dropped_fingerprint: (0, s.s)(t)
   })
@@ -249,7 +249,7 @@ function ey(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  Q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, L = i, x = s, en(a), w = n.id, true !== o && (B = o.authenticator_types), u.K.set(P, n.id)
+  Q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, x = i, L = s, en(a), w = n.id, true !== o && (B = o.authenticator_types), u.K.set(P, n.id)
 }
 
 function eO(e) {
@@ -260,7 +260,7 @@ function eO(e) {
     analyticsToken: i,
     token: a
   } = e;
-  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, k = i, et(a, n.id), null != i && en(i), ee(), w = n.id, u.K.set(P, n.id)
+  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, j = i, et(a, n.id), null != i && en(i), ee(), w = n.id, u.K.set(P, n.id)
 }
 
 function ev(e) {
@@ -289,7 +289,7 @@ function eT(e) {
   let {
     authSessionIdHash: t
   } = e;
-  null != t && (L = t)
+  null != t && (x = t)
 }
 
 function eS() {
@@ -347,10 +347,10 @@ class eD extends(a = Chunk442837.ZP.Store) {
     return D
   }
   getAuthSessionIdHash() {
-    return L
+    return x
   }
   getStaticAuthSessionId() {
-    return x
+    return L
   }
   getToken() {
     return (0, Chunk449934.LP)()
@@ -362,7 +362,7 @@ class eD extends(a = Chunk442837.ZP.Store) {
     return M
   }
   getAnalyticsToken() {
-    return null != k ? k : Chunk213919.getAnalyticsToken()
+    return null != j ? j : Chunk213919.getAnalyticsToken()
   }
   getMFATicket() {
     return Z
@@ -394,7 +394,7 @@ class eD extends(a = Chunk442837.ZP.Store) {
   }
 }
 C(eD, "displayName", "AuthenticationStore");
-let eL = new eD(Chunk570140.Z, {
+let ex = new eD(Chunk570140.Z, {
   CONNECTION_OPEN: ey,
   OVERLAY_INITIALIZE: eO,
   CONNECTION_CLOSED: ev,

@@ -22,7 +22,7 @@ function o(e) {
   } = e, g = e => {
     e.stopPropagation(), e.preventDefault()
   };
-  return (0, r.jsx)(s.P3F, (t = function(e) {
+  return (0, r.jsx)(a.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -43,9 +43,9 @@ function o(e) {
     onClick: g,
     onMouseDown: g,
     onMouseUp: g,
-    className: l()(a.switch, d)
+    className: l()(s.switch, d)
   }, u), n = n = {
-    children: (0, r.jsx)(s.rsf, {
+    children: (0, r.jsx)(a.rsf, {
       checked: i,
       onChange: o,
       disabled: c

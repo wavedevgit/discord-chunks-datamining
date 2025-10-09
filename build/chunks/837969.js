@@ -96,7 +96,7 @@ function E(e) {
             index: n
           }), e && L(h(t, n), n)
         }, [h, E, A, T, t, L]),
-        v = r.useCallback(e => {
+        b = r.useCallback(e => {
           if (!S.current) return;
           if (a.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
             e.preventDefault(), e.stopPropagation(), x();
@@ -135,7 +135,7 @@ function E(e) {
               null == r || r.click()
           }
         }, [h, t, T, E, x, d]),
-        b = r.useCallback(() => {
+        v = r.useCallback(() => {
           C || p(true)
         }, [C]),
         P = r.useCallback(() => {
@@ -150,17 +150,17 @@ function E(e) {
         y = r.useRef(null);
       r.useLayoutEffect(() => {
         let e = y.current;
-        if (null != e) return e.addEventListener("focusin", b), e.addEventListener("focus", P), e.addEventListener("focusout", j), () => {
-          e.removeEventListener("focusin", b), e.removeEventListener("focus", P), e.removeEventListener("focusout", j)
+        if (null != e) return e.addEventListener("focusin", v), e.addEventListener("focus", P), e.addEventListener("focusout", j), () => {
+          e.removeEventListener("focusin", v), e.removeEventListener("focus", P), e.removeEventListener("focusout", j)
         }
-      }, [P, b, j]);
+      }, [P, v, j]);
       let G = r.useCallback(() => ({
           role: "list",
           tabIndex: C && I ? false : 0,
           id: t,
-          onKeyDown: v,
+          onKeyDown: b,
           ref: y
-        }), [t, C, v, I]),
+        }), [t, C, b, I]),
         k = r.useCallback(e => {
           let {
             index: n

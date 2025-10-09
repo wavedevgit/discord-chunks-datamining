@@ -25,19 +25,19 @@ function g(e) {
     summaryMetricTrend: f,
     summaryMetricTrendIsPercent: h
   } = e;
-  return (0, r.jsx)(i.hjN, {
-    title: d.intl.string(d.t.ofmOzc),
+  return (0, r.jsx)(i.C3N, {
+    label: d.intl.string(d.t.ofmOzc),
     children: (0, r.jsxs)("div", {
       className: u.paymentInfoGroup,
       children: [(0, r.jsxs)(o.H, {
-        children: [(0, r.jsx)(a.Z, {
+        children: [(0, r.jsx)(s.Z, {
           label: d.intl.string(d.t.iY1jW1),
-          value: (0, s.T4)(null != n ? n : 0, c.pKx.USD),
+          value: (0, a.T4)(null != n ? n : 0, c.pKx.USD),
           additionalContent: (0, r.jsx)(l.H, {
             value: g,
             isPercent: true
           })
-        }), (0, r.jsx)(a.Z, {
+        }), (0, r.jsx)(s.Z, {
           label: m,
           value: p,
           additionalContent: (0, r.jsx)(l.H, {

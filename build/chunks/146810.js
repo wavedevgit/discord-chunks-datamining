@@ -72,10 +72,10 @@ function C(e) {
     isPressed: v,
     preventFocusOnPress: C,
     shouldCancelOnPointerExit: w,
-    allowTextSelectionOnPress: L,
-    ref: x,
+    allowTextSelectionOnPress: x,
+    ref: L,
     ...M
-  } = O(e), [j, k] = (0, y.useState)(false), U = (0, y.useRef)({
+  } = O(e), [k, j] = (0, y.useState)(false), U = (0, y.useRef)({
     isPressed: false,
     ignoreEmulatedMouseEvents: false,
     didFirePressStart: false,
@@ -96,7 +96,7 @@ function C(e) {
       let n = new I("pressstart", t, e);
       a(n), i = n.shouldStopPropagation
     }
-    return n && n(true), r.isTriggeringEvent = false, r.didFirePressStart = true, k(true), i
+    return n && n(true), r.isTriggeringEvent = false, r.didFirePressStart = true, j(true), i
   }), F = (0, f.i)((e, r, i = true) => {
     let a = U.current;
     if (!a.didFirePressStart) returnfalse;
@@ -106,7 +106,7 @@ function C(e) {
       let t = new I("pressend", r, e);
       o(t), s = t.shouldStopPropagation
     }
-    if (n && n(false), k(false), t && i && !u) {
+    if (n && n(false), j(false), t && i && !u) {
       let n = new I("press", r, e);
       t(n), s && (s = n.shouldStopPropagation)
     }
@@ -123,7 +123,7 @@ function C(e) {
   }), H = (0, f.i)(e => {
     let t = U.current;
     if (t.isPressed && t.target) {
-      for (let n of (t.didFirePressStart && null != t.pointerType && F(P(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, B(), L || (0, i.A)(t.target), t.disposables)) n();
+      for (let n of (t.didFirePressStart && null != t.pointerType && F(P(t.target, e), t.pointerType, false), t.isPressed = false, t.isOverTarget = false, t.activePointerId = null, t.pointerType = null, B(), x || (0, i.A)(t.target), t.disposables)) n();
       t.disposables = []
     }
   }), Y = (0, f.i)(e => {
@@ -194,7 +194,7 @@ function C(e) {
         e.pointerType = t.pointerType;
         let r = true;
         if (!e.isPressed) {
-          e.isPressed = true, e.isOverTarget = true, e.activePointerId = t.pointerId, e.target = t.currentTarget, L || (0, i.l)(e.target), r = Z(t, e.pointerType);
+          e.isPressed = true, e.isOverTarget = true, e.activePointerId = t.pointerId, e.target = t.currentTarget, x || (0, i.l)(e.target), r = Z(t, e.pointerType);
           let o = (0, _.NI)(t.nativeEvent);
           "releasePointerCapture" in o && o.releasePointerCapture(t.pointerId), G((0, p.r3)(t.currentTarget), "pointerup", n, false), G((0, p.r3)(t.currentTarget), "pointercancel", a, false)
         }
@@ -234,10 +234,10 @@ function C(e) {
       }
     }
     return t
-  }, [G, u, C, B, L, H, Y, F, Z, V, W, K]);
+  }, [G, u, C, B, x, H, Y, F, Z, V, W, K]);
   return (0, y.useEffect)(() => {
-    if (!x) return;
-    let e = (0, p.r3)(x.current);
+    if (!L) return;
+    let e = (0, p.r3)(L.current);
     if (!e || !e.head || e.getElementById(S)) return;
     let t = e.createElement("style");
     t.id = S, t.textContent = `
@@ -247,15 +247,15 @@ function C(e) {
   }
 }
     `.trim(), e.head.prepend(t)
-  }, [x]), (0, y.useEffect)(() => {
+  }, [L]), (0, y.useEffect)(() => {
     let e = U.current;
     return () => {
       var t;
-      for (let n of (L || (0, i.A)(null != (t = e.target) ? t : true), e.disposables)) n();
+      for (let n of (x || (0, i.A)(null != (t = e.target) ? t : true), e.disposables)) n();
       e.disposables = []
     }
-  }, [L]), {
-    isPressed: v || j,
+  }, [x]), {
+    isPressed: v || k,
     pressProps: (0, c.d)(M, z, {
       [A]: true
     })
@@ -271,7 +271,7 @@ function R(e, t) {
     key: n,
     code: r
   } = e, i = t, a = i.getAttribute("role");
-  return ("Enter" === n || " " === n || "Spacebar" === n || "Space" === r) && !(i instanceof(0, p.kR)(i).HTMLInputElement && !x(i, n) || i instanceof(0, p.kR)(i).HTMLTextAreaElement || i.isContentEditable) && !(("link" === a || !a && N(i)) && "Enter" !== n)
+  return ("Enter" === n || " " === n || "Spacebar" === n || "Space" === r) && !(i instanceof(0, p.kR)(i).HTMLInputElement && !L(i, n) || i instanceof(0, p.kR)(i).HTMLTextAreaElement || i.isContentEditable) && !(("link" === a || !a && N(i)) && "Enter" !== n)
 }
 
 function P(e, t) {
@@ -293,10 +293,10 @@ function w(e) {
 }
 
 function D(e, t) {
-  return e instanceof HTMLInputElement ? !x(e, t) : w(e)
+  return e instanceof HTMLInputElement ? !L(e, t) : w(e)
 }
-let L = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
+let x = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 
-function x(e, t) {
-  return "checkbox" === e.type || "radio" === e.type ? " " === t : L.has(e.type)
+function L(e, t) {
+  return "checkbox" === e.type || "radio" === e.type ? " " === t : x.has(e.type)
 }

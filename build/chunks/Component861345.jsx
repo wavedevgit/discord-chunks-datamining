@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   p: () => j,
-  s: () => _
+  s: () => v
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -26,7 +26,7 @@ function b(e) {
     guildId: t,
     emojiId: n,
     emojiName: l,
-    title: a,
+    title: s,
     description: c,
     targetType: d,
     index: u,
@@ -34,15 +34,15 @@ function b(e) {
     onEdit: p,
     onMove: b,
     disabled: j = false
-  } = e, _ = i.useRef(null), v = i.useRef(null), {
+  } = e, v = i.useRef(null), _ = i.useRef(null), {
     drag: C,
     dragPreview: O,
     drop: y,
     isDragging: N
-  } = (0, f.Z)(_, d, u, b);
-  return C(v), O(y(_)), (0, r.jsxs)("div", {
-    ref: _,
-    className: s()(x.card, {
+  } = (0, f.Z)(v, d, u, b);
+  return C(_), O(y(v)), (0, r.jsxs)("div", {
+    ref: v,
+    className: a()(x.card, {
       [x.cardDragging]: N,
       [x.disabled]: j
     }),
@@ -54,7 +54,7 @@ function b(e) {
         emojiName: l,
         className: x.emoji
       }), !j && (0, r.jsx)("div", {
-        ref: v,
+        ref: _,
         className: x.dragIconWrapper,
         "data-dnd-name": m,
         children: (0, r.jsx)(o.Vni, {
@@ -68,7 +68,7 @@ function b(e) {
       children: [(0, r.jsx)(o.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: a
+        children: s
       }), (0, r.jsx)(o.Text, {
         color: "interactive-normal",
         variant: "text-sm/normal",
@@ -99,11 +99,11 @@ function j(e) {
     guildId: o
   } = e, g = (0, c.Dt)(), {
     isDragging: f
-  } = (0, a.f)(e => ({
+  } = (0, s.f)(e => ({
     isDragging: e.getItemType() === g
   })), h = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: s()(x.container, {
+    className: a()(x.container, {
       [x.isDragging]: f
     }),
     children: t.map((e, t) => (0, r.jsxs)(i.Fragment, {
@@ -126,7 +126,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     onClick: t,
     children: n,
@@ -137,7 +137,7 @@ function _(e) {
     onClick: i ? true : t,
     "aria-disabled": i,
     children: (0, r.jsxs)("div", {
-      className: s()(x.card, x.addBenefit, {
+      className: a()(x.card, x.addBenefit, {
         [x.disabled]: i
       }),
       children: [(0, r.jsx)("div", {

@@ -181,7 +181,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     botUserId: t
   } = e, n = g.botUserIdToAppUsage[t];
@@ -190,7 +190,7 @@ function L(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   let {
     applicationIds: t
   } = e, n = false;
@@ -212,7 +212,7 @@ function M(e) {
   return n
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     applications: n
@@ -221,7 +221,7 @@ function j(e) {
   _.set(t, r)
 }
 
-function k(e) {
+function j(e) {
   let {
     payments: t
   } = e, n = new Set;
@@ -367,13 +367,13 @@ let z = new K(Chunk570140.Z, {
   APPLICATION_FETCH_FAIL: C,
   APPLICATIONS_FETCH: N,
   APPLICATIONS_FETCH_SUCCESS: P,
-  APPLICATIONS_FETCH_FAIL: x,
+  APPLICATIONS_FETCH_FAIL: L,
   APPLICATION_UPDATE: I,
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: j,
-  BILLING_PAYMENTS_FETCH_SUCCESS: k,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: k,
+  BILLING_PAYMENTS_FETCH_SUCCESS: j,
   PAYMENT_UPDATE: U,
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: G,
@@ -382,7 +382,7 @@ let z = new K(Chunk570140.Z, {
   LOAD_MESSAGES_SUCCESS: F,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
   USER_PROFILE_FETCH_SUCCESS: D,
-  APP_DM_OPEN: L,
+  APP_DM_OPEN: x,
   USER_AUTHORIZED_APPS_UPDATE: Y,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: W,
   OAUTH2_TOKEN_CREATE: H

@@ -42,12 +42,12 @@ function M(e) {
     user: t,
     currentUser: n,
     displayProfile: M,
-    guild: j,
-    isHoveringOrFocusing: k,
+    guild: k,
+    isHoveringOrFocusing: j,
     onOpenProfile: U,
     channelId: G,
     onClose: B
-  } = e, Z = u.ZP.useName(null == j ? true : j.id, G, t), {
+  } = e, Z = u.ZP.useName(null == k ? true : k.id, G, t), {
     relationshipType: F,
     originApplicationId: V
   } = (0, i.cj)([l.Z], () => ({
@@ -60,13 +60,13 @@ function M(e) {
   }), q = (null == M ? true : M.widgets) != null && M.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
-    className: x.body,
+    className: L.body,
     children: [(0, r.jsx)(I.Z, {
       user: t,
-      guildId: null == j ? true : j.id,
+      guildId: null == k ? true : k.id,
       onOpenProfile: U,
       onClose: B,
-      usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(C.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == k ? true : k.id) && (0, r.jsx)(C.Z, {
         user: t,
         nickname: Z
       }),
@@ -82,14 +82,14 @@ function M(e) {
           userId: t.id
         }), !Y && (0, r.jsx)(T.Z, {
           userId: t.id,
-          isVisible: k,
+          isVisible: j,
           onOpenProfile: U
         })]
       })
     }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
-        guildId: null == j ? true : j.id,
+        guildId: null == k ? true : k.id,
         channelId: G,
         applicationId: V
       })
@@ -108,9 +108,9 @@ function M(e) {
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
-      className: x.card,
+      className: L.card,
       children: (0, r.jsx)(y.Z, {
-        heading: L.intl.string(L.t.Iyka0d),
+        heading: x.intl.string(x.t.Iyka0d),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY
@@ -138,18 +138,18 @@ function M(e) {
     }), W ? (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
-      guildId: null == j ? true : j.id,
+      guildId: null == k ? true : k.id,
       onOpenUserProfileModal: U,
       onClose: B
     }) : (0, r.jsx)(m.Z, {
       user: t,
       currentUser: n,
-      guildId: null == j ? true : j.id,
+      guildId: null == k ? true : k.id,
       onClose: B
-    }), null != j && (0, r.jsx)(N.Z, {
+    }), null != k && (0, r.jsx)(N.Z, {
       user: t,
       currentUser: n,
-      guild: j
+      guild: k
     })]
   })
 }

@@ -263,14 +263,10 @@ function v() {
 function j() {
   let e = f.useField("state"),
     t = f.useField("error");
-  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-    title: "Debug User State",
-    tag: Chunk481060.RB0.H3,
-    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-sm/normal",
-      className: Chunk530146.subtitle,
-      children: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs."
-    }), (0, Chunk951288.jsx)(v, {}), null != exports && (0, Chunk951288.jsx)(Chunk481060.Text, {
+  return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+    label: "Debug User State",
+    description: "Paste a user ID below to get a snapshot of client state for the user. This does not generate any logs.",
+    children: [(0, Chunk951288.jsx)(v, {}), null != exports && (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
       className: Chunk530146.statusText,

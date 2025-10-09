@@ -37,26 +37,26 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, _] = i.useState(null != d ? d : ""), v = i.useCallback(() => {
+  let [j, v] = i.useState(null != d ? d : ""), _ = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != f && o.length >= f) {
-        null == m || m(a.intl.string(a.t.Xx7XeH));
+        null == m || m(s.intl.string(s.t.Xx7XeH));
         return
       }
-      g(e), _("")
+      g(e), v("")
     }
   }, [j, f, g, m, o.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
-      case s.yXg.BACKSPACE:
+      case a.yXg.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
         break;
-      case s.yXg.ENTER:
-      case s.yXg.TAB:
-      case s.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), v()
+      case a.yXg.ENTER:
+      case a.yXg.TAB:
+      case a.yXg.COMMA:
+        e.preventDefault(), e.stopPropagation(), _()
     }
-  }, [v, j.length, u, o]);
+  }, [_, j.length, u, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -84,10 +84,10 @@ let o = e => {
   }, b), n = n = {
     value: j,
     onKeyDown: C,
-    onChange: _,
+    onChange: v,
     maxLength: p,
     disabled: h,
-    onBlur: v,
+    onBlur: _,
     placeholder: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

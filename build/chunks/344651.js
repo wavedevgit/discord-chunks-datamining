@@ -36,7 +36,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk483012 = require("./483012.js"),
   Chunk955132 = require("./955132.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -69,13 +69,13 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -101,7 +101,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, b.q_)(t),
       i = v.Z.getChannel(t.id),
-      a = null == i ? true : i.merge(j(x({}, r), {
+      a = null == i ? true : i.merge(k(L({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -594,7 +594,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
 }), W(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => v.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = k(e, ["newly_created"]);
+  } = e, r = j(e, ["newly_created"]);
   q({
     type: t,
     isNewlyCreated: n,
@@ -861,7 +861,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     requiredAction: e.required_action
   })
 }), Y(["USER_NOTE_UPDATE"], e => {
-  q(x({
+  q(L({
     type: "USER_NOTE_UPDATE"
   }, e))
 }), Y(["RELATIONSHIP_ADD"], e => {
@@ -1071,7 +1071,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "MESSAGE_REACTION_ADD_MANY",
     channelId: e.channel_id,
     messageId: e.message_id,
-    reactions: e.votes.map(e => j(x({}, e), {
+    reactions: e.votes.map(e => k(L({}, e), {
       emoji: {
         id: e.answer_id,
         name: ""
@@ -1567,7 +1567,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     openid_params: e.openid_params
   })
 }), Y(["DELETED_ENTITY_IDS"], e => {
-  q(x({
+  q(L({
     type: "DELETED_ENTITY_IDS"
   }, e))
 }), W(["CHANNEL_SYNC"], e => v.o.loadGuildIds([e.guild_id]), e => {
@@ -1671,7 +1671,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     inviteIds: e.invite_ids
   })
 }), Y(["CONVERSATION_SUMMARY_UPDATE"], e => {
-  q(x({
+  q(L({
     type: "CONVERSATION_SUMMARY_UPDATE"
   }, e))
 }), Y(["PREMIUM_MARKETING_PREVIEW"], e => {

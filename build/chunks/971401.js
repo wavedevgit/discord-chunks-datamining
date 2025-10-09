@@ -9,9 +9,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function a(e) {
-  let t = i.useRef([]);
-  i.useEffect(() => {
-    null != e && e.state !== s.Rj.RESOLVING && (t.current.includes(e.code) || (t.current.push(e.code), r.default.track(l.rMx.CREATE_GUILD_VIEWED, {
+  let t = r.useRef([]);
+  r.useEffect(() => {
+    null != e && e.state !== l.Rj.RESOLVING && (t.current.includes(e.code) || (t.current.push(e.code), i.default.track(s.rMx.CREATE_GUILD_VIEWED, {
       guild_template_code: e.code,
       guild_template_name: e.name,
       guild_template_description: e.description,

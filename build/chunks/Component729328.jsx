@@ -1,40 +1,38 @@
 /** Chunk was on 14466 **/
-/** chunk id: 729328, original params: t,e,i (module,exports,require) **/
+/** chunk id: 729328, original params: t,n,r (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk405786 = require("./405786.js");
+  Chunk388032 = require("./388032.jsx");
 
-function l(t) {
+function s(t) {
   let {
-    onClose: e,
-    transitionState: i,
-    body: l
+    onClose: n,
+    transitionState: r,
+    body: s
   } = t;
-  return (0, n.jsxs)(r.Y0X, {
-    transitionState: i,
+  return (0, i.jsxs)(e.Y0X, {
+    transitionState: r,
     parentComponent: "ProblemReported",
-    children: [(0, n.jsx)(r.xBx, {
+    children: [(0, i.jsx)(e.xBx, {
       separator: false,
-      children: (0, n.jsx)(r.vwX, {
-        tag: "h2",
-        className: a.title,
-        children: s.intl.string(s.t.KTjjrK)
+      children: (0, i.jsx)(e.X6q, {
+        variant: "heading-md/semibold",
+        children: a.intl.string(a.t.KTjjrK)
       })
-    }), (0, n.jsx)(r.hzk, {
-      children: "string" == typeof l ? (0, n.jsx)(r.Text, {
+    }), (0, i.jsx)(e.hzk, {
+      children: "string" == typeof s ? (0, i.jsx)(e.Text, {
         variant: "text-md/normal",
-        children: l
-      }) : l
-    }), (0, n.jsx)(r.mzw, {
-      children: (0, n.jsx)(r.zxk, {
+        children: s
+      }) : s
+    }), (0, i.jsx)(e.mzw, {
+      children: (0, i.jsx)(e.zxk, {
         variant: "primary",
-        text: s.intl.string(s.t.i4jeWV),
-        onClick: e
+        text: a.intl.string(a.t.i4jeWV),
+        onClick: n
       })
     })]
   })

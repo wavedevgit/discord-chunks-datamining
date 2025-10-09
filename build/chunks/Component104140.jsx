@@ -150,7 +150,7 @@ function v(e) {
     S(true)
   }, C = () => {
     S(false)
-  }, N = null != m, R = null != O, P = i.useId(), w = "".concat(P, "-upper_badge_masks"), D = "".concat(P, "-lower_badge_masks"), L = "".concat(P, "-blob_mask"), x = "".concat(P, "-stroke_mask"), M = "".concat(P, "-highlight_mask"), j = (null == f ? true : f.width) != null ? f.width : g, k = (null == f ? true : f.height) != null ? f.height : g, U = {
+  }, N = null != m, R = null != O, P = i.useId(), w = "".concat(P, "-upper_badge_masks"), D = "".concat(P, "-lower_badge_masks"), x = "".concat(P, "-blob_mask"), L = "".concat(P, "-stroke_mask"), M = "".concat(P, "-highlight_mask"), k = (null == f ? true : f.width) != null ? f.width : g, j = (null == f ? true : f.height) != null ? f.height : g, U = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : false,
@@ -178,7 +178,7 @@ function v(e) {
           id: M
         }), (0, r.jsx)("path", {
           d: B,
-          id: L
+          id: x
         }), null != m ? (0, r.jsx)("rect", {
           id: w,
           x: n - G + p,
@@ -189,10 +189,10 @@ function v(e) {
           ry: G / 2
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: D,
-          x: n - (j + 2 * p) + p,
-          y: n - (k + 2 * p) + p,
-          width: j + 2 * p,
-          height: k + 2 * p,
+          x: n - (k + 2 * p) + p,
+          y: n - (j + 2 * p) + p,
+          width: k + 2 * p,
+          height: j + 2 * p,
           rx: h / 2,
           ry: h / 2
         }) : null]
@@ -207,7 +207,7 @@ function v(e) {
           href: "#".concat(M),
           fill: "black"
         }), (0, r.jsx)("use", {
-          href: "#".concat(L),
+          href: "#".concat(x),
           fill: "white",
           className: o()({
             [u.isHighlighted]: _
@@ -220,7 +220,7 @@ function v(e) {
           fill: "black"
         }) : null]
       }), N || R ? (0, r.jsxs)("mask", {
-        id: x,
+        id: L,
         children: [(0, r.jsx)("rect", {
           width: "150%",
           height: "150%",
@@ -237,9 +237,9 @@ function v(e) {
       }) : null, T ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("g", {
           className: u.focusStroke,
-          mask: "url(#".concat(x, ")"),
+          mask: "url(#".concat(L, ")"),
           children: (0, r.jsx)("use", {
-            href: "#".concat(L)
+            href: "#".concat(x)
           })
         }), (0, r.jsxs)("g", {
           className: u.focusFill,
@@ -254,7 +254,7 @@ function v(e) {
         stroke: s.Z.BRAND_500,
         "stroke-width": E,
         className: u.highlight,
-        mask: "url(#".concat(x, ")")
+        mask: "url(#".concat(L, ")")
       }), (0, r.jsx)("foreignObject", {
         mask: "url(#".concat(P, ")"),
         x: 0,

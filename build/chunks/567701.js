@@ -31,11 +31,11 @@
     P = "Firefox",
     w = "Google",
     D = "Huawei",
-    L = "LG",
-    x = "Microsoft",
+    x = "LG",
+    L = "Microsoft",
     M = "Motorola",
-    j = "Opera",
-    k = "Samsung",
+    k = "Opera",
+    j = "Samsung",
     U = "Sharp",
     G = "Sony",
     B = "Xiaomi",
@@ -105,11 +105,11 @@
         [/(opera mini)\/([-\w\.]+)/i, /(opera [mobiletab]{3,6})\b.+version\/([-\w\.]+)/i, /(opera)(?:.+version\/|[\/ ]+)([\w\.]+)/i],
         [f, h],
         [/opios[\/ ]+([\w\.]+)/i],
-        [h, [f, j + " Mini"]],
+        [h, [f, k + " Mini"]],
         [/\bop(?:rg)?x\/([\w\.]+)/i],
-        [h, [f, j + " GX"]],
+        [h, [f, k + " GX"]],
         [/\bopr\/([\w\.]+)/i],
-        [h, [f, j]],
+        [h, [f, k]],
         [/\bb[ai]*d(?:uhd|[ub]*[aekoprswx]{5,6})[\/ ]?([\w\.]+)/i],
         [h, [f, "Baidu"]],
         [/\b(?:mxbrowser|mxios|myie2)\/?([-\w\.]*)\b/i],
@@ -139,13 +139,13 @@
         [/\bfocus\/([\w\.]+)/i],
         [h, [f, P + " Focus"]],
         [/\bopt\/([\w\.]+)/i],
-        [h, [f, j + " Touch"]],
+        [h, [f, k + " Touch"]],
         [/coc_coc\w+\/([\w\.]+)/i],
         [h, [f, "Coc Coc"]],
         [/dolfin\/([\w\.]+)/i],
         [h, [f, "Dolphin"]],
         [/coast\/([\w\.]+)/i],
-        [h, [f, j + " Coast"]],
+        [h, [f, k + " Coast"]],
         [/miuibrowser\/([\w\.]+)/i],
         [h, [f, "MIUI" + Y]],
         [/fxios\/([\w\.-]+)/i],
@@ -161,7 +161,7 @@
           [f, /(.+)/, "$1" + Y], h
         ],
         [/samsungbrowser\/([\w\.]+)/i],
-        [h, [f, k + " Internet"]],
+        [h, [f, j + " Internet"]],
         [/metasr[\/ ]?([\d\.]+)/i],
         [h, [f, "Sogou Explorer"]],
         [/(sogou)mo\w+\/([\d\.]+)/i],
@@ -264,11 +264,11 @@
       ],
       device: [
         [/\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i],
-        [d, [p, k],
+        [d, [p, j],
           [_, b]
         ],
         [/\b((?:s[cgp]h|gt|sm)-(?![lr])\w+|sc[g-]?[\d]+a?|galaxy nexus)/i, /samsung[- ]((?!sm-[lr])[-\w]+)/i, /sec-(sgh\w+)/i],
-        [d, [p, k],
+        [d, [p, j],
           [_, E]
         ],
         [/(?:\/|\()(ip(?:hone|od)[\w, ]*)(?:\/|;)/i],
@@ -334,11 +334,11 @@
           [_, b]
         ],
         [/((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i],
-        [d, [p, L],
+        [d, [p, x],
           [_, b]
         ],
         [/(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i, /\blg[-e;\/ ]+((?!browser|netcast|android tv)\w+)/i, /\blg-?([\d\w]+) bui/i],
-        [d, [p, L],
+        [d, [p, x],
           [_, E]
         ],
         [/(ideatab[-\w ]+)/i, /lenovo ?(s[56]000[-\w]+|tab(?:[\w ]+)|yt[-\d\w]{6}|tb[-\d\w]{6})/i],
@@ -449,7 +449,7 @@
         [/(imo) (tab \w+)/i, /(kobo)\s(ereader|touch)/i, /(archos) (gamepad2?)/i, /(hp).+(touchpad(?!.+tablet)|tablet)/i, /(kindle)\/([\w\.]+)/i, /(nook)[\w ]+build\/(\w+)/i, /(dell) (strea[kpr\d ]*[\dko])/i, /(le[- ]+pan)[- ]+(\w{1,9}) bui/i, /(trinity)[- ]*(t\d{3}) bui/i, /(gigaset)[- ]+(q\w{1,9}) bui/i, /(vodafone) ([\w ]+)(?:\)| bui)/i],
         [p, d, [_, b]],
         [/(surface duo)/i],
-        [d, [p, x],
+        [d, [p, L],
           [_, b]
         ],
         [/droid [\d\.]+; (fp\du?)(?: b|\))/i],
@@ -549,7 +549,7 @@
         [/(kin\.[onetw]{3})/i],
         [
           [d, /\./g, " "],
-          [p, x],
+          [p, L],
           [_, E]
         ],
         [/droid.+; (cc6666?|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i],
@@ -565,12 +565,12 @@
         [/hbbtv.+maple;(\d+)/i],
         [
           [d, /^/, "SmartTV"],
-          [p, k],
+          [p, j],
           [_, y]
         ],
         [/(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i],
         [
-          [p, L],
+          [p, x],
           [_, y]
         ],
         [/(apple) ?tv/i],
@@ -622,11 +622,11 @@
           [_, g]
         ],
         [/\b(xbox(?: one)?(?!; xbox))[\); ]/i],
-        [d, [p, x],
+        [d, [p, L],
           [_, g]
         ],
         [/\b(sm-[lr]\d\d[05][fnuw]?s?)\b/i],
-        [d, [p, k],
+        [d, [p, j],
           [_, O]
         ],
         [/((pebble))app/i],

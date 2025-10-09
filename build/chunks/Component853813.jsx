@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
@@ -36,22 +36,22 @@ function I(e) {
       selectedSection: I,
       setSelectedSection: S
     } = e,
-    T = (0, a.e7)([x.Z], () => x.Z.guild, []);
-  s()(null != T, "guildId cannot be null here");
+    T = (0, s.e7)([x.Z], () => x.Z.guild, []);
+  a()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, a.cj)([x.Z], () => ({
+  } = (0, s.cj)([x.Z], () => ({
     role: x.Z.getRole(n),
     permissionSearchQuery: x.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && l(null)
   }, [P, l]);
-  let Z = (0, a.e7)([g.Z], () => g.Z.getHighestRole(T), [T]),
-    R = (0, a.e7)([g.Z], () => !g.Z.isRoleHigher(T, Z, P)),
+  let Z = (0, s.e7)([g.Z], () => g.Z.getHighestRole(T), [T]),
+    R = (0, s.e7)([g.Z], () => !g.Z.isRoleHigher(T, Z, P)),
     D = i.useRef(null),
-    A = (0, a.e7)([h.Z], () => h.Z.getProps().integrations),
+    A = (0, s.e7)([h.Z], () => h.Z.getProps().integrations),
     L = {
       role: P,
       editRoleId: n
@@ -96,7 +96,7 @@ function I(e) {
     }, [T.id, null == P ? true : P.id]), null == P) return null;
   switch (I) {
     case y.ZI.DISPLAY:
-      t = (0, r.jsx)(_.ZP, {
+      t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
         locked: R,
@@ -123,7 +123,7 @@ function I(e) {
       });
       break;
     case y.ZI.MEMBERS:
-      t = (0, r.jsx)(v.ZP, {
+      t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
         locked: R,
@@ -133,7 +133,7 @@ function I(e) {
     default:
       (0, p.vE)(I)
   }
-  return (0, r.jsxs)(o.hjN, {
+  return (0, r.jsxs)("div", {
     className: E.page,
     children: [(0, r.jsx)(O.Z, {
       guild: T,

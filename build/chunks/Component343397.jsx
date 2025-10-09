@@ -17,13 +17,13 @@ function d(e) {
     profile: t,
     canManageGuild: n
   } = e, d = t.id, u = (0, l.e7)([o.Z], () => o.Z.getError("name")), g = i.useCallback(e => {
-    a.Z.updateGuild({
+    s.Z.updateGuild({
       name: e
-    }), a.Z.updateGuildProfile(d, {
+    }), s.Z.updateGuildProfile(d, {
       name: e
     })
   }, [d]);
-  return (0, r.jsx)(s.oil, {
+  return (0, r.jsx)(a.oil, {
     label: c.intl.string(c.t.X56QcH),
     type: "text",
     disabled: !n,

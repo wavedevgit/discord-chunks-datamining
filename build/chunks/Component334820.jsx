@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
@@ -86,7 +86,7 @@ function p(e, t) {
             children: (0, r.jsx)(c.Fbu, {
               size: "md",
               color: "currentColor",
-              className: s()(u.caretIcon, {
+              className: a()(u.caretIcon, {
                 [u.caretDownIcon]: l
               })
             })

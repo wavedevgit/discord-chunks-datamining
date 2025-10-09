@@ -209,10 +209,12 @@ class w extends Chunk647438.PureComponent {
     })), (0, Chunk951288.jsxs)("div", {
       children: [Chunk710845 && (0, Chunk951288.jsx)("hr", {
         className: Chunk213605.SeparatorUpper
-      }), (0, Chunk951288.jsx)(Chunk481060.hjN, {
-        title: Chunk710845 ? Chunk388032.intl.string(Chunk388032.t.tywMsb) : Chunk388032.intl.string(Chunk388032.t["8lqkf3"]),
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk647438,
-        children: S
+        children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
+          label: Chunk710845 ? Chunk388032.intl.string(Chunk388032.t.tywMsb) : Chunk388032.intl.string(Chunk388032.t["8lqkf3"]),
+          children: S
+        })
       }), Chunk710845 && (0, Chunk951288.jsx)("hr", {
         className: Chunk213605.SeparatorLower
       })]

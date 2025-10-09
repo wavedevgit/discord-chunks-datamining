@@ -5,9 +5,8 @@ require.d(exports, {
   Z: () => d,
   d: () => u
 }), require("./953529.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk692547 = require("./692547.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk752657 = require("./752657.jsx"),
@@ -70,13 +69,15 @@ let d = e => {
     children: [(0, r.jsx)(d, {
       className: c.fileIcon,
       color: i.Z.unsafe_rawColors.PRIMARY_300.css
-    }), (0, r.jsxs)(o.hjN, {
+    }), (0, r.jsxs)("div", {
       className: c.fileInfo,
-      children: [(0, r.jsx)(o.vwX, {
+      children: [(0, r.jsx)(o.Text, {
+        variant: "text-md/normal",
         className: c.fileName,
         children: u
-      }), (0, r.jsx)(o.R94, {
-        type: o.geA.DESCRIPTION,
+      }), (0, r.jsx)(o.Text, {
+        variant: "text-sm/normal",
+        color: "text-secondary",
         children: f
       })]
     }), (0, r.jsx)(a.u, {

@@ -4,9 +4,9 @@
 require.d(exports, {
   fz: () => P,
   ge: () => M,
-  r5: () => j,
+  r5: () => k,
   rk: () => w,
-  wV: () => x
+  wV: () => L
 }), require("./388685.js"), require("./415506.js"), require("./457542.js");
 var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
@@ -151,7 +151,7 @@ function P(e) {
 }
 async function w(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-  await j();
+  await k();
   let n = performance.now();
   try {
     let r = p.ZP.getVoiceFilters();
@@ -190,7 +190,7 @@ async function D(e) {
   if (null == o) throw Error("Voice filters catalog signature is missing");
   return await e.setCatalog(r, o), a
 }
-async function L(e) {
+async function x(e) {
   if (!p.ZP.canCheckVoiceFilterFilesExist()) return;
   let t = Object.keys(e.models).map(e => ({
       id: e,
@@ -208,13 +208,13 @@ async function L(e) {
   let i = t.map(e => e.fileName);
   return (0, o.dZ)(i) && await (0, E.A)(i), r
 }
-async function x() {
+async function L() {
   if (!Chunk709706.Z.isNativeModuleLoaded()) return void S.info("Voice Filter catalog refresh ignored, module not loaded.");
   if (!N) try {
     N = true;
     let e = Chunk998502.ZP.getVoiceFilters(),
       t = await D(module),
-      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await L(exports) : true;
+      n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await x(exports) : true;
     await Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",
       catalog: exports,
@@ -237,7 +237,7 @@ function M() {
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function j() {
+async function k() {
   if (!(Chunk709706.Z.isNativeModuleLoaded() || Chunk709706.Z.isNativeModuleLoading()) && !__OVERLAY__) {
     if (!(0, Chunk358085.isWindows)() && !(0, Chunk358085.isMac)()) return void Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
@@ -257,7 +257,7 @@ async function j() {
       }), await Chunk570140.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: Chunk750180.O.LOADED
-      }), await x();
+      }), await L();
       let n = Chunk131951.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != require) {
         var e;

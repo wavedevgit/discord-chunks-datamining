@@ -42,7 +42,7 @@ let S = {},
   w = Chunk981631.hVg.THEATRE,
   D = {};
 
-function L(e, t, n, i) {
+function x(e, t, n, i) {
   return o()(null != r, "Creating RTCConnection without session."), new _.Z({
     sessionId: r,
     streamKey: e,
@@ -55,21 +55,21 @@ function L(e, t, n, i) {
   })
 }
 
-function x() {
+function L() {
   l().forEach(D, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete P[t]
   })
 }
 
 function M(e) {
-  r = e.sessionId, x()
+  r = e.sessionId, L()
 }
 
-function j() {
-  r = null, x()
+function k() {
+  r = null, L()
 }
 
-function k(e) {
+function j(e) {
   let {
     streamType: t,
     guildId: n,
@@ -146,7 +146,7 @@ function G(e) {
       goLiveModalDurationMs: R[t],
       analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
     });
-    o = L(t, n, r, e), D[t] = o
+    o = x(t, n, r, e), D[t] = o
   }
   delete P[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
@@ -331,14 +331,14 @@ class Q extends(i = Chunk442837.ZP.Store) {
 T(Q, "displayName", "StreamRTCConnectionStore");
 let J = new Q(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: M,
-  CONNECTION_CLOSED: j,
+  CONNECTION_CLOSED: k,
   RTC_CONNECTION_STATE: Y,
   RTC_CONNECTION_PING: Y,
   RTC_CONNECTION_LOSS_RATE: Y,
   RTC_CONNECTION_UPDATE_ID: K,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: Y,
   RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: W,
-  STREAM_START: k,
+  STREAM_START: j,
   STREAM_STOP: U,
   STREAM_CREATE: G,
   STREAM_SERVER_UPDATE: B,

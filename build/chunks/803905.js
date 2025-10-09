@@ -12,11 +12,11 @@ require.d(exports, {
   O8: () => P,
   Pl: () => v,
   Uw: () => D,
-  ZE: () => x,
+  ZE: () => L,
   _G: () => y,
   _O: () => T,
   _y: () => m,
-  do: () => j,
+  do: () => k,
   g7: () => R,
   g_: () => _,
   hs: () => E,
@@ -27,8 +27,8 @@ require.d(exports, {
   tj: () => g,
   uw: () => A,
   wN: () => U,
-  zZ: () => k,
-  zm: () => L
+  zZ: () => j,
+  zm: () => x
 }), require("./49124.js");
 var Chunk848246 = require("./848246.js"),
   Chunk710845 = require("./710845.js"),
@@ -78,18 +78,18 @@ let _ = new f(Chunk848246.q.ANIMATED_EMOJIS),
   P = new f(Chunk848246.q.STREAM_HIGH_QUALITY),
   w = new f(Chunk848246.q.CUSTOM_NOTIFICATION_SOUNDS),
   D = new f("fancyVoiceChannelReactions"),
-  L = new f("installPremiumApplications"),
-  x = new f("redeemPremiumPerks"),
+  x = new f("installPremiumApplications"),
+  L = new f("redeemPremiumPerks"),
   M = new f(Chunk848246.q.VIDEO_FILTER_ASSETS);
 new Chunk533293.Z(Chunk848246.q.INCREASED_FILE_UPLOAD_SIZE, Chunk380684.h);
-let j = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
-  k = new f(Chunk848246.q.INCREASED_MESSAGE_LENGTH),
+let k = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
+  j = new f(Chunk848246.q.INCREASED_MESSAGE_LENGTH),
   U = new f("increasedVideoUploadQuality"),
   G = new f("uploadLargeFiles"),
   B = Object.freeze({
     [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [_, p, h, v, M, U, G, S]),
     [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [_, p, b, y, v, C, R, D, U, G, S]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, D, L, x, M, j, k, U, G, S, T, w, E])
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, D, x, L, M, k, j, U, G, S, T, w, E])
   }),
   Z = [C, N];
 

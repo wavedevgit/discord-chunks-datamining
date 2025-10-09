@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => I,
-  default: () => ej,
+  default: () => ek,
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
@@ -135,7 +135,7 @@ function D(e, t) {
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r, i, a, o;
   null != e.author && "SENDING" !== e.state && N(e.author) && R(e.author, t), null == (n = e.mentions) || n.forEach(e => {
     N(e) && R(e, t)
@@ -152,7 +152,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     user: t,
     users: n,
@@ -190,13 +190,13 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   return !("incomplete" in e)
 }
 
-function k(e) {
+function j(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.Z(t))
+    for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t))
 }
 
 function U(e) {
@@ -233,7 +233,7 @@ function F(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => L(e, true)), false
+  return t.forEach(e => x(e, true)), false
 }
 
 function V(e) {
@@ -244,7 +244,7 @@ function V(e) {
     let {
       message: t
     } = e;
-    return L(t, true)
+    return x(t, true)
   }), false
 }
 
@@ -252,7 +252,7 @@ function H(e) {
   let {
     mostRecentMessages: t
   } = e;
-  return null == t || t.forEach(e => L(e, false)), false
+  return null == t || t.forEach(e => x(e, false)), false
 }
 
 function Y(e) {
@@ -266,7 +266,7 @@ function Y(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        L(e, true)
+        x(e, true)
       })
     }), n.forEach(e => {
       if (e.type === E.d4z.DM || e.type === E.d4z.GROUP_DM) {
@@ -282,7 +282,7 @@ function W(e) {
     firstMessages: t,
     owners: n
   } = e;
-  null != t && t.forEach(e => L(e, true)), null != n && n.forEach(e => R(e.user, true))
+  null != t && t.forEach(e => x(e, true)), null != n && n.forEach(e => R(e.user, true))
 }
 
 function K(e) {
@@ -295,7 +295,7 @@ function K(e) {
       most_recent_message: n,
       owner: r
     } = e;
-    null != t && L(t, true), null != n && L(n, true), null != r && null != r.user && R(r.user, true)
+    null != t && x(t, true), null != n && x(n, true), null != r && null != r.user && R(r.user, true)
   })
 }
 
@@ -307,7 +307,7 @@ function z(e) {
     let {
       message_preview: t
     } = e;
-    null != t && L(t, true)
+    null != t && x(t, true)
   })
 }
 
@@ -348,7 +348,7 @@ function J(e) {
   let {
     message: t
   } = e;
-  if (L(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
+  if (x(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
     let e = O[m.default.getId()];
     return null != e && (O[m.default.getId()] = e.set("flags", p.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
   }
@@ -621,7 +621,7 @@ function eP(e) {
     messageItems: t
   } = e;
   t.forEach(e => {
-    null != e.message && L(e.message, true)
+    null != e.message && x(e.message, true)
   }, false)
 }
 
@@ -637,14 +637,14 @@ function eD(e) {
   return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), true)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     status: t
   } = e, n = O[m.default.getId()];
   return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     resolved: t
   } = e;
@@ -668,7 +668,7 @@ class eM extends Chunk750041.Z {
     if (null != t)
       for (let e of t.users) O[e.id] = new _.Z(e);
     if (null != e.users)
-      for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.Z(t));
+      for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -708,10 +708,10 @@ class eM extends Chunk750041.Z {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: x,
+      CONNECTION_OPEN: L,
       CONNECTION_OPEN_SUPPLEMENTAL: M,
       UPDATE_CLIENT_PREMIUM_TYPE: Z,
-      OVERLAY_INITIALIZE: k,
+      OVERLAY_INITIALIZE: j,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: U,
       USER_PROFILE_FETCH_SUCCESS: G,
@@ -770,10 +770,10 @@ class eM extends Chunk750041.Z {
       LOAD_ICYMI_HYDRATED: eP,
       EMBEDDED_ACTIVITY_UPDATE_V2: ew,
       INITIATE_AGE_VERIFICATION: eD,
-      CLOSE_AGE_VERIFICATION_MODAL: eL,
-      INTERACTION_MODAL_CREATE: ex
+      CLOSE_AGE_VERIFICATION_MODAL: ex,
+      INTERACTION_MODAL_CREATE: eL
     })
   }
 }
 y(eM, "displayName", "UserStore"), y(eM, "LATEST_SNAPSHOT_VERSION", 1);
-let ej = new eM
+let ek = new eM

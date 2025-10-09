@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var a, Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -71,12 +71,12 @@ let A = true,
 function D() {
   A && (r = true), C = false
 }
-let L = () => {
+let x = () => {
     let e = !Chunk74538.ZP.canUseClientThemes(Chunk594174.default.getCurrentUser());
     if (module === A) returnfalse;
     A = module
   },
-  x = () => {
+  L = () => {
     if (!Chunk238514.Z.shouldSync("appearance")) returnfalse;
     let e = Chunk695346.L1.getSetting().backgroundGradientPresetId;
     if (null == module) {
@@ -99,9 +99,9 @@ let L = () => {
       n = (null == r ? true : r.id) === (null == exports ? true : exports.id);
     null == exports || require || (r = exports)
   };
-class j extends(a = Chunk442837.ZP.PersistedStore) {
+class k extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], L), this.syncWith([u.Z], x)
+    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], x), this.syncWith([u.Z], L)
   }
   getState() {
     return A ? {} : {
@@ -132,8 +132,8 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-S(j, "displayName", "ClientThemesBackgroundStore"), S(j, "persistKey", "ClientThemesBackgroundStore");
-let k = new j(Chunk570140.Z, {
+S(k, "displayName", "ClientThemesBackgroundStore"), S(k, "persistKey", "ClientThemesBackgroundStore");
+let j = new k(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   RESET_PREVIEW_CLIENT_THEME: P,

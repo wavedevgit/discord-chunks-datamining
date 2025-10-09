@@ -2,7 +2,7 @@
 /** chunk id: 678869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,7 +51,7 @@ let D = (e, t, n) => {
   }).replaceAll("*", "")
 };
 
-function L(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
@@ -98,19 +98,19 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t;
   let n, m, T, {
       channel: R,
-      entry: x,
+      entry: L,
       closePopout: M,
-      onReaction: j,
-      onVoiceChannelPreview: k
+      onReaction: k,
+      onVoiceChannelPreview: j
     } = e,
     {
       largeImage: U
     } = (0, g.rv)({
-      entry: x
+      entry: L
     }),
     {
       activity: G,
@@ -118,7 +118,7 @@ function x(e) {
       artist: Z,
       title: F,
       user: V
-    } = (0, v.pi)(x),
+    } = (0, v.pi)(L),
     {
       primaryColor: H,
       secondaryColor: Y
@@ -131,7 +131,7 @@ function x(e) {
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
-        } : x, Date.now());
+        } : L, Date.now());
       return (0, b.CR)({
         user: V,
         channel: R,
@@ -146,7 +146,7 @@ function x(e) {
           timestamp: n
         })
       })
-    }, [G, Z, R, x, null == U ? true : U.src, H, Y, F, V]);
+    }, [G, Z, R, L, null == U ? true : U.src, H, Y, F, V]);
   if (null == G || null == B) return null;
   let q = Z,
     X = [];
@@ -184,31 +184,31 @@ function x(e) {
   let Q = (0, r.jsx)(I.wG, {
     onClickThumbnail: T,
     channel: R,
-    entry: x,
+    entry: L,
     headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
       onClick: n,
       "aria-label": N.intl.string(N.t.rRffNz),
       Icon: h.Z
     }) : null,
-    userDescription: (0, E.kr)(x) ? N.t.Tzx5Dw : N.t.CcVI1d,
+    userDescription: (0, E.kr)(L) ? N.t.Tzx5Dw : N.t.CcVI1d,
     title: F,
     onClickTitle: m,
     subtitle: q,
     badges: null,
-    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
+    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(x, {
       activity: G
     })
   });
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: j,
-        onVoiceChannelPreview: k,
+        onReaction: k,
+        onVoiceChannelPreview: j,
         user: V,
         channel: R,
         generateReactionImage: z,
         reactionImageAltText: w(Z, V),
-        entry: x,
+        entry: L,
         buttons: X
       })
     })]

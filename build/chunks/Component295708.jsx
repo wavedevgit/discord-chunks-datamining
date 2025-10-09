@@ -52,10 +52,10 @@ function c(e) {
     },
     onClick: e => e.stopPropagation(),
     onKeyDown: e => {
-      e.which === a.yXg.SPACE && e.stopPropagation()
+      e.which === s.yXg.SPACE && e.stopPropagation()
     },
     placeholder: o.intl.string(o.t["5AO43N"]),
-    maxLength: s.OU,
+    maxLength: a.OU,
     value: c
   })
 }

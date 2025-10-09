@@ -74,7 +74,7 @@ function F(e) {
     case "DND":
       return G.intl.string(G.t.LBsB0d);
     default:
-      return null
+      return
   }
 }
 

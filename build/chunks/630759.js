@@ -6,12 +6,12 @@ require.d(exports, {
   LO: () => D,
   TQ: () => w,
   UB: () => H,
-  ZU: () => L,
-  Zn: () => x,
+  ZU: () => x,
+  Zn: () => L,
   aZ: () => R,
   bo: () => M,
   fz: () => W,
-  kK: () => j,
+  kK: () => k,
   lg: () => Y,
   om: () => F,
   pL: () => P,
@@ -71,7 +71,7 @@ function D(e, t, n) {
   } else O.Z.deleteSecureFramesTransientKey(e)
 }
 
-function L(e, t) {
+function x(e, t) {
   I.Z.openSecureFramesUpdateConfirmation({
     title: C.intl.string(C.t["hdL15+"]),
     subtitle: C.intl.string(C.t["8VGYKi"]),
@@ -81,7 +81,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let t = h.default.getUser(e),
     n = y.ZP.getName(t);
   I.Z.openSecureFramesUpdateConfirmation({
@@ -138,7 +138,7 @@ function M(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     isCurrentUserKeyPersistent: t,
     isOtherUserKeyPersistent: n,
@@ -155,7 +155,7 @@ function j(e) {
     helpArticle: N()
   })
 }
-async function k(e) {
+async function j(e) {
   let t = d.default.getStaticAuthSessionId();
   return a()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
 }
@@ -182,7 +182,7 @@ async function B(e) {
   let {
     key: t,
     signature: n
-  } = await k(e);
+  } = await j(e);
   try {
     await l.tn.put({
       url: A.ANM.VOICE_PUBLIC_KEYS(),
@@ -209,7 +209,7 @@ async function V(e) {
   let t = d.default.getId(),
     {
       key: n
-    } = await k(e),
+    } = await j(e),
     r = await G(t, n, e);
   return r || (0, T.KA)(e), r
 }

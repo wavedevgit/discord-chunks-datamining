@@ -75,7 +75,7 @@ function P(e) {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
-    let [n, r, a] = L(t.guildId, t);
+    let [n, r, a] = x(t.guildId, t);
     return n ? (t.sessionId === i && null != r && null != a && a.channelId !== r.channelId && (p += 1), h++, true) : e
   }, false)
 }
@@ -83,7 +83,7 @@ function P(e) {
 function w(e) {
   let t = false;
   for (let n of e.voiceStates) {
-    let [r] = L(e.guildId, n);
+    let [r] = x(e.guildId, n);
     t = t || r
   }
   for (let n of e.removedVoiceStateUsers) R(e.guildId, n, () => null), t = true;
@@ -99,7 +99,7 @@ function D(e) {
   v[I(t, n)] = r
 }
 
-function L(e, t) {
+function x(e, t) {
   return R(e, t.userId, e => {
     if (null == t.channelId) return null;
     {
@@ -122,7 +122,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     channelId: n
@@ -138,11 +138,11 @@ function M(e) {
   return a && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
 }
 
-function j() {
+function k() {
   m = {}, b = {}, O = {}, y = {}, E.clear()
 }
 
-function k(e) {
+function j(e) {
   let {
     voiceStates: t,
     user: n,
@@ -250,9 +250,9 @@ class Z extends(a = Chunk442837.ZP.Store) {
 _(Z, "displayName", "VoiceStateStore");
 let F = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: M,
-  CONNECTION_OPEN_SUPPLEMENTAL: j,
-  OVERLAY_INITIALIZE: k,
-  VOICE_CHANNEL_SELECT: x,
+  CONNECTION_OPEN_SUPPLEMENTAL: k,
+  OVERLAY_INITIALIZE: j,
+  VOICE_CHANNEL_SELECT: L,
   VOICE_STATE_UPDATES: P,
   GUILD_DELETE: U,
   GUILD_CREATE: U,

@@ -146,7 +146,7 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [j, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [k, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
   i.useEffect(() => {
     p(n.friendSync), g(n.visibility), T(n.metadataVisibility), C(n.showActivity)
   }, [n]);
@@ -220,7 +220,7 @@ function q(e) {
       children: (0, r.jsx)(U.Y, {})
     }) : e.type === G.ABu.PLAYSTATION ? (0, r.jsx)("div", {
       className: V.upsellWrapper,
-      children: (0, r.jsx)(k.t, {})
+      children: (0, r.jsx)(j.t, {})
     }) : null
   }
 
@@ -278,7 +278,7 @@ function q(e) {
         text: s,
         variant: "secondary",
         size: "sm",
-        loading: j,
+        loading: k,
         disabled: o,
         "aria-label": F.intl.string(F.t.sCkLYG),
         onClick: o ? true : () => {
@@ -371,7 +371,7 @@ function q(e) {
         variant: "primary"
       }]
     }, i), {
-      children: (0, x.Z)(n) && (0, r.jsx)(M.Z, {
+      children: (0, L.Z)(n) && (0, r.jsx)(M.Z, {
         children: F.intl.format(F.t.COW3Xl, {
           platformName: e.name
         })
@@ -424,7 +424,7 @@ function q(e) {
     } = J.current;
     null != e && (g(e), h.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (T(t), h.Z.setMetadataVisibility(n.type, n.id, t), D(null))
   }, [n]);
-  let ed = (0, L.wy)("ConnectedAccount");
+  let ed = (0, x.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {
     className: o()(V.connection, {
       [V.connectionUserSettingsRedesign]: ed

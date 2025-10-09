@@ -63,7 +63,7 @@ async function F(e) {
   }
   if (null == n) return;
   if (n.state === U.r2o.EXPIRED || n.state === U.r2o.BANNED || n.state === U.r2o.ERROR) return void await Z(n, e.code);
-  let r = x.ZP.getFlattenedGuildIds(),
+  let r = L.ZP.getFlattenedGuildIds(),
     i = null == n || null == (t = n.guild) ? true : t.id;
   null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await Z(n, e.code)
 }
@@ -93,8 +93,8 @@ function H(e) {
     } : null != (i = (0, _.Q)(o)) ? i : {
       applicationId: true,
       skuId: true
-    }, c = null != (a = L.Z.getGuildId()) ? a : true;
-    return null == s ? (0, k.Z)(e) : (M.default.track(U.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+    }, c = null != (a = x.Z.getGuildId()) ? a : true;
+    return null == s ? (0, j.Z)(e) : (M.default.track(U.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
@@ -181,12 +181,12 @@ function H(e) {
     })
   }), true);
   let {
-    host: x,
+    host: L,
     hostname: Z,
     pathname: H,
     search: Y,
     hash: W
-  } = null != (t = j.Z.toURLSafe(e)) ? t : {}, K = j.Z.isDiscordHostname(null != Z ? Z : null) || j.Z.isDiscordLocalhost(null != x ? x : null, null != Z ? Z : null);
+  } = null != (t = k.Z.toURLSafe(e)) ? t : {}, K = k.Z.isDiscordHostname(null != Z ? Z : null) || k.Z.isDiscordLocalhost(null != L ? L : null, null != Z ? Z : null);
   if (K && ((null == H ? true : H.startsWith("/application-directory")) || (null == H ? true : H.startsWith("/discovery/applications")))) {
     let e = H.split("/"),
       t = null == H ? true : H.startsWith("/discovery/applications"),
@@ -215,7 +215,7 @@ function H(e) {
       }), true
     }
   }
-  if (null != H && K && j.Z.isAppRoute(H)) {
+  if (null != H && K && k.Z.isAppRoute(H)) {
     let e = {
       navigationReplace: false,
       openChannel: true
@@ -234,7 +234,7 @@ function H(e) {
   let z = (0, v.Ao)(H);
   if (null != H && K && null != z) return e => {
     null == e || e.preventDefault();
-    let t = L.Z.getGuildId();
+    let t = x.Z.getGuildId();
     null != z.guildId && "" !== z.guildId && z.guildId !== t && (0, I.Z)(U.Z5c.CHANNEL(z.guildId));
     let n = y.ZP.getGuildScheduledEvent(z.guildEventId);
     return null != n && (0, b.bO)({

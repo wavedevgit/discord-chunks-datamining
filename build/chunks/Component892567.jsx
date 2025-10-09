@@ -42,28 +42,28 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       inProfile: T
     }), {
       useReducedMotion: D,
-      saturation: L
+      saturation: x
     } = (0, d.cj)([p.Z], () => ({
       useReducedMotion: p.Z.useReducedMotion,
       saturation: p.Z.desaturateUserColors ? p.Z.saturation : 1
     })), {
-      includeNonProfile: x
+      includeNonProfile: L
     } = m.fN.useExperiment({
       location: "useDisplayNameStylesFont"
     }), M = (0, g.Y)({
       location: "UserNameWithEffects"
-    }), j = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(k), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && M ? a.colors.map(e => (0, h.wh)({
+    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), j = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(j), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, j === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && M ? a.colors.map(e => (0, h.wh)({
       foreground: o()(e),
-      background: k === c.m.TOON ? o()("#333") : o()(j),
+      background: j === c.m.TOON ? o()("#333") : o()(k),
       ratio: U.minContrastRatio,
-      saturationFactor: L
-    }).hex()) : [], [a, M, k, U.minContrastRatio, L, j]);
-    if (!M || !T && !x || null == a) return n;
-    let F = (0, b.K)(k, Z, {
+      saturationFactor: x
+    }).hex()) : [], [a, M, j, U.minContrastRatio, x, k]);
+    if (!M || !T && !L || null == a) return n;
+    let F = (0, b.K)(j, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
-      V = S(k);
+      V = S(j);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== E.F.PLAIN,

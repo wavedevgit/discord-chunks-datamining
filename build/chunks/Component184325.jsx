@@ -36,7 +36,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517793 = require("./517793.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -69,12 +69,12 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = e => {
+let j = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -95,7 +95,7 @@ function U(e) {
     className: i,
     badgeClassName: d,
     displayProfile: g,
-    onClose: L,
+    onClose: x,
     shouldOpenBadgeTooltip: M,
     shouldGlowTenureBadge: U
   } = e, {
@@ -116,7 +116,7 @@ function U(e) {
         y = t => {
           if (Z({
               action: "PRESS_BADGE"
-            }), (0, I.NE)(x({
+            }), (0, I.NE)(L({
               badge: e.id,
               analyticsLocations: G
             }, B)), i) return void(0, u.mK)({
@@ -134,7 +134,7 @@ function U(e) {
               (null == g ? true : g.userId) === (null == F ? true : F.id) ? (0, h.uL)(C.Z5c.NITRO_HOME) : (0, f.k)({
                 analyticsLocations: G,
                 displayProfile: g
-              }), null == L || L();
+              }), null == x || x();
               return
             }
             if ((null == g ? true : g.userId) === (null == F ? true : F.id)) {
@@ -142,29 +142,29 @@ function U(e) {
                 analyticsLocations: G
               }) : null;
               if (null == n) return;
-              return null == L || L(), n(t)
+              return null == x || x(), n(t)
             }
             return (0, f.k)({
               analyticsLocations: G,
               displayProfile: g
-            }), void(null == L || L())
+            }), void(null == x || x())
           }
           let n = null != e.link ? (0, s.default)(e.link, {
             analyticsLocations: G
           }) : null;
-          if (null != n) return null == L || L(), n(t)
+          if (null != n) return null == x || x(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(L({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
-          }), (0, I.Qf)(x({
+          }), (0, I.Qf)(L({
             badge: e.id,
             analyticsLocations: G
           }, B))
         },
-        S = k({
+        S = j({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y

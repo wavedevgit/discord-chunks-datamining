@@ -71,7 +71,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,7 +79,7 @@ function D(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,7 +87,7 @@ function L(e, t) {
   return i
 }
 
-function x(e) {
+function L(e) {
   let {
     children: t,
     className: n
@@ -136,7 +136,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
       })]
     });
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x, {
+      children: [(0, r.jsx)(L, {
         children: f
       }), (0, r.jsx)(u.tEY, {
         ringClassName: C.ring,
@@ -167,7 +167,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
       })]
     })
   }),
-  j = Chunk647438.forwardRef(function(e, t) {
+  k = Chunk647438.forwardRef(function(e, t) {
     var n, a;
     let {
       emoji: _,
@@ -182,7 +182,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
       trackUserProfileAction: R
     } = (0, b.KZ)(), P = (0, h.p)({
       location: "CustomStatusBubble"
-    }), w = null != _ ? S.Hp : 0, D = S.hT + w, L = S.YF + w, M = i.useRef(null), j = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(L), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), w = null != _ ? S.Hp : 0, D = S.hT + w, x = S.YF + w, M = i.useRef(null), k = i.useRef(null), j = i.useRef(null), U = i.useRef(D), G = i.useRef(x), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == N || N.onInteractionPopoutTargetRefChange(M)
     }, [N]);
@@ -194,16 +194,16 @@ let M = Chunk647438.forwardRef(function(e, t) {
       }
     }));
     i.useLayoutEffect(() => {
-      if (F(true), null == j.current || null == k.current || !K) return;
-      let e = j.current.getBoundingClientRect().height,
-        t = k.current.getBoundingClientRect().height;
+      if (F(true), null == k.current || null == j.current || !K) return;
+      let e = k.current.getBoundingClientRect().height,
+        t = j.current.getBoundingClientRect().height;
       W(t > e), U.current = e, G.current = t, Q({
-        maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? D : L), "px")
+        maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? D : x), "px")
       })
-    }, [K, p, _, Q, V, D, L]);
+    }, [K, p, _, Q, V, D, x]);
     let J = e => {
         Y && (e ? Q({
-          maxHeight: "".concat(Math.min(G.current, L), "px"),
+          maxHeight: "".concat(Math.min(G.current, x), "px"),
           delay: z ? 0 : S.zS,
           config: {
             clamp: true,
@@ -235,12 +235,12 @@ let M = Chunk647438.forwardRef(function(e, t) {
       }),
       en = null == ee || "" === p ? et : ee,
       er = (0, r.jsxs)("div", {
-        ref: j,
+        ref: k,
         className: C.content,
         children: [$, en]
       }),
       ei = (0, r.jsxs)("div", {
-        ref: k,
+        ref: j,
         className: o()(C.content, C.unclamped),
         children: [$, en]
       }),
@@ -258,7 +258,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
           })
         })
       }),
-      eo = (0, r.jsxs)(x, {
+      eo = (0, r.jsxs)(L, {
         children: [er, ei]
       });
     return null == O ? (0, r.jsxs)(r.Fragment, {
@@ -320,14 +320,14 @@ let M = Chunk647438.forwardRef(function(e, t) {
       })]
     })
   }),
-  k = Chunk647438.forwardRef(function(e, t) {
+  j = Chunk647438.forwardRef(function(e, t) {
     var {
       emoji: n,
       text: a,
       onCloseProfile: o
     } = e, s = D(e, ["emoji", "text", "onCloseProfile"]);
     let [l, c] = i.useState(false);
-    return (0, r.jsx)(j, w(R({}, s), {
+    return (0, r.jsx)(k, w(R({}, s), {
       ref: t,
       emoji: n,
       text: a,
@@ -362,9 +362,9 @@ function U(e) {
   }, [f, _, t, n]);
   let [A, N] = i.useState(false), P = i.useCallback(e => {
     (e || !m) && N(e)
-  }, [m]), L = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : g.ZP.translateSurrogatesToInlineEmoji(e.name), x = (e, t) => null == e ? t : "".concat(e, " ").concat(t), M = () => {
-    let e = L(t);
-    return null == n ? e : x(e, n)
+  }, [m]), x = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : g.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), M = () => {
+    let e = x(t);
+    return null == n ? e : L(e, n)
   };
   return (0, r.jsx)(O.Z, {
     user: a,
@@ -375,7 +375,7 @@ function U(e) {
     sourceType: T.n_.STATUS,
     onAction: u,
     onClose: () => N(false),
-    children: () => (0, r.jsx)(j, w(R({}, c), {
+    children: () => (0, r.jsx)(k, w(R({}, c), {
       ref: E,
       emoji: t,
       text: n,
@@ -411,7 +411,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
       n = null != s && "" !== s ? s : null;
     return (0, r.jsx)(p.Gt, {
       value: b,
-      children: (0, r.jsx)(j, R({
+      children: (0, r.jsx)(k, R({
         emoji: e,
         text: n,
         placeholderText: u,
@@ -438,7 +438,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     }, h))
   }) : O ? (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(k, R({
+    children: (0, r.jsx)(j, R({
       emoji: I,
       text: S,
       onCloseProfile: o,
@@ -446,7 +446,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     }, h))
   }) : (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(j, R({
+    children: (0, r.jsx)(k, R({
       emoji: I,
       text: S,
       ref: t

@@ -3,8 +3,6 @@
 module.exports = {
   modalSize: "modalSize_a55fdc",
   modalCloseButton: "modalCloseButton_a55fdc",
-  formItemTitleVerySlim: "formItemTitleVerySlim_a55fdc",
-  formItemTitleSlim: "formItemTitleSlim_a55fdc",
   modalContent: "modalContent_a55fdc",
   modalHeader: "modalHeader_a55fdc",
   marginBottom: "marginBottom_a55fdc",

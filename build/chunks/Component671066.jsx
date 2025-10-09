@@ -24,13 +24,13 @@ function p(e) {
     triggerType: p,
     toggled: f,
     onToggleAction: h
-  } = e, x = e => () => h(e), b = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, _ = (0, i.e7)([d.default, c.Z, o.Z], () => {
+  } = e, x = e => () => h(e), b = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
-    return null == e ? null : (0, a.F6)(e, d.default, c.Z)
+    return null == e ? null : (0, s.F6)(e, d.default, c.Z)
   }, [j]);
   if (null == b) return null;
   let {
-    headerText: v,
+    headerText: _,
     descriptionText: C,
     icon: O
   } = b;
@@ -45,19 +45,19 @@ function p(e) {
       })
     }), (0, r.jsxs)("div", {
       className: m.actionTextContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
-        children: v
-      }), (0, r.jsx)(s.Text, {
+        children: _
+      }), (0, r.jsx)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: C
-      }), f && (0, r.jsxs)(s.Text, {
+      }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != _ && g.intl.format(g.t["8Sr/am"], {
-          channelName: _
-        }), (0, r.jsx)(s.P3F, {
+        children: [null != v && g.intl.format(g.t["8Sr/am"], {
+          channelName: v
+        }), (0, r.jsx)(a.P3F, {
           onClick: x(true),
           className: m.editChannel,
           tag: "span",

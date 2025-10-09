@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,12 +68,12 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function k(e) {
   let t = (0, d.R)("formatActivityString"),
     n = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
   return null != n ? t ? n : P.intl.formatToPlainString(P.t["0wJXSk"], {
@@ -81,7 +81,7 @@ function j(e) {
   }) : P.intl.string(P.t.eXan7O)
 }
 
-function k(e, t) {
+function j(e, t) {
   return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
@@ -99,12 +99,12 @@ function U(e) {
   } = (0, h.Cq)({
     location: "StackedActivityStatus"
   }), s = (0, p.ZP)(r), l = a || o;
-  return null != t && i.push(j(t)), n.forEach(e => {
+  return null != t && i.push(k(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(j(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function G(e) {
@@ -149,9 +149,9 @@ function Z(e) {
     hideTooltip: D = false
   } = e;
   (0, _.Z)(null == t ? true : t.id);
-  let x = (null == a ? true : a.discoverable) !== false ? a : null,
-    j = (0, m.Cf)(x),
-    k = (0, E.E)("ActivityStatus", l),
+  let L = (null == a ? true : a.discoverable) !== false ? a : null,
+    k = (0, m.Cf)(L),
+    j = (0, E.E)("ActivityStatus", l),
     Z = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -165,7 +165,7 @@ function Z(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
     F = (0, c.e7)([b.default], () => b.default.getId() === (null == t ? true : t.id)),
-    V = (0, c.e7)([g.Z], () => k ? F ? g.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null : null),
+    V = (0, c.e7)([g.Z], () => j ? F ? g.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null : null),
     H = i.useMemo(() => {
       var e;
       return (0, s.uniqWith)(null != (e = null == n ? true : n.filter(e => {
@@ -173,14 +173,14 @@ function Z(e) {
           type: t,
           name: n
         } = e;
-        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == j ? true : j.name)
+        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == j ? true : j.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == j ? true : j.name)),
+    }, [n, null == k ? true : k.name]),
+    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([y.Z], () => y.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == Z ? true : Z.state) != null,
-    q = null != x,
+    q = null != L,
     X = !q && null != l,
     Q = H.length + (q || X ? 1 : 0),
     J = Q > 1,
@@ -194,8 +194,8 @@ function Z(e) {
   let et = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || D;
-      if (null != x) return (0, r.jsx)(T.Z, {
-        stream: x,
+      if (null != L) return (0, r.jsx)(T.Z, {
+        stream: L,
         game: Y,
         textVariant: "text-".concat(h, "/medium"),
         textClassName: d,
@@ -231,16 +231,16 @@ function Z(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != x && e.push((0, r.jsx)(T.Z, M(L({
-        stream: x,
+      return null != L && e.push((0, r.jsx)(T.Z, M(x({
+        stream: L,
         game: null == n ? true : n.find(f.Z)
       }, t), {
         showChannelName: true
       }), "stream")), H.forEach((n, i) => {
-        e.push((0, r.jsx)(A.Z, L({
+        e.push((0, r.jsx)(A.Z, x({
           activity: n
         }, t), "activity-".concat(i)))
-      }), X && e.push((0, r.jsx)(C.Z, M(L({
+      }), X && e.push((0, r.jsx)(C.Z, M(x({
         channel: l
       }, t), {
         showChannelName: true
@@ -261,7 +261,7 @@ function Z(e) {
       delay: N.X,
       text: en(),
       "aria-label": ee,
-      children: e => (0, r.jsxs)("div", M(L({
+      children: e => (0, r.jsxs)("div", M(x({
         className: o()(w.activityContainer, $ && w.iconOnly)
       }, e), {
         children: [et(true), er()]

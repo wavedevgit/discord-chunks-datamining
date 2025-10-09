@@ -75,15 +75,14 @@ let E = Chunk647438.forwardRef(function(e, t) {
     required: N,
     onFocus: x,
     onBlur: T,
-    name: A,
-    labelTag: C
+    name: A
   } = e, {
-    day: j,
-    setDay: O,
-    month: y,
-    setMonth: v,
-    year: I,
-    setYear: g
+    day: C,
+    setDay: j,
+    month: O,
+    setMonth: y,
+    year: v,
+    setYear: I
   } = function(e) {
     let t = null,
       n = null,
@@ -98,13 +97,13 @@ let E = Chunk647438.forwardRef(function(e, t) {
       year: c,
       setYear: u
     }
-  }(n), G = o.useMemo(() => null != j && null != y && null != I ? i()("".concat(j, "/").concat(y, "/").concat(I), "DD/MM/YYYY") : null, [j, y, I]);
+  }(n), g = o.useMemo(() => null != C && null != O && null != v ? i()("".concat(C, "/").concat(O, "/").concat(v), "DD/MM/YYYY") : null, [C, O, v]);
   o.useEffect(() => {
-    l((null == G ? true : G.isValid()) ? G : null)
-  }, [G, l]);
-  let F = m;
-  null == G || G.isValid() || (F = u.intl.string(u.t.udnqh4));
-  let D = function() {
+    l((null == g ? true : g.isValid()) ? g : null)
+  }, [g, l]);
+  let G = m;
+  null == g || g.isValid() || (G = u.intl.string(u.t.udnqh4));
+  let F = function() {
       let e = new Date().getFullYear(),
         t = o.useRef(Array.from(Array(150).keys()).map(t => ({
           value: e - t - 3,
@@ -117,48 +116,48 @@ let E = Chunk647438.forwardRef(function(e, t) {
         }))
       }, [e]), t.current
     }(),
-    [S, L] = o.useState(E ? 0 : false),
-    w = o.useMemo(b, []),
+    [D, S] = o.useState(E ? 0 : false),
+    L = o.useMemo(b, []),
     k = {
       onPopulated: _,
-      sortedInputs: w
+      sortedInputs: L
     },
-    M = o.useRef(k);
+    w = o.useRef(k);
   o.useEffect(() => {
-    M.current = k
+    w.current = k
   }), o.useEffect(() => {
     let {
       onPopulated: e,
       sortedInputs: t
-    } = M.current;
-    if (S >= t.length) {
+    } = w.current;
+    if (D >= t.length) {
       null == e || e();
       return
     }
-  }, [S]);
-  let P = [];
+  }, [D]);
+  let M = [];
   for (let e = 0; e < 3; e++) {
     let {
       type: t
-    } = w[e];
+    } = L[e];
     switch (t) {
       case "day":
-        P.push({
+        M.push({
           key: "day",
           input: (0, a.jsx)(h, {
             options: p,
-            selectOption: O,
+            selectOption: j,
             children: (0, a.jsx)(c.q4e, {
               "aria-label": u.intl.string(u.t.Voklra),
               popoutPosition: "top",
               placeholder: u.intl.string(u.t.Voklra),
               options: p,
-              value: j,
+              value: C,
               onChange: t => {
-                O(t), L(e + 1)
+                j(t), S(e + 1)
               },
               maxVisibleItems: 6,
-              autoFocus: S === e,
+              autoFocus: D === e,
               onOpen: () => null == x ? true : x("".concat(A, "_").concat(t)),
               onClose: () => null == T ? true : T("".concat(A, "_").concat(t))
             })
@@ -166,22 +165,22 @@ let E = Chunk647438.forwardRef(function(e, t) {
         });
         break;
       case "month":
-        P.push({
+        M.push({
           key: "month",
           input: (0, a.jsx)(h, {
             options: f,
-            selectOption: v,
+            selectOption: y,
             children: (0, a.jsx)(c.q4e, {
               "aria-label": u.intl.string(u.t.UDlN8f),
               popoutPosition: "top",
               placeholder: u.intl.string(u.t.UDlN8f),
               options: f,
-              value: y,
+              value: O,
               onChange: t => {
-                v(t), L(e + 1)
+                y(t), S(e + 1)
               },
               maxVisibleItems: 6,
-              autoFocus: S === e,
+              autoFocus: D === e,
               onOpen: () => null == x ? true : x("".concat(A, "_").concat(t)),
               onClose: () => null == T ? true : T("".concat(A, "_").concat(t))
             })
@@ -189,22 +188,22 @@ let E = Chunk647438.forwardRef(function(e, t) {
         });
         break;
       case "year":
-        P.push({
+        M.push({
           key: "year",
           input: (0, a.jsx)(h, {
-            options: D,
-            selectOption: g,
+            options: F,
+            selectOption: I,
             children: (0, a.jsx)(c.q4e, {
               "aria-label": u.intl.string(u.t.ZWr5WF),
               popoutPosition: "top",
               placeholder: u.intl.string(u.t.ZWr5WF),
-              options: D,
-              value: I,
+              options: F,
+              value: v,
               onChange: t => {
-                g(t), L(e + 1)
+                I(t), S(e + 1)
               },
               maxVisibleItems: 6,
-              autoFocus: S === e,
+              autoFocus: D === e,
               onOpen: () => null == x ? true : x("".concat(A, "_").concat(t)),
               onClose: () => null == T ? true : T("".concat(A, "_").concat(t))
             })
@@ -212,26 +211,26 @@ let E = Chunk647438.forwardRef(function(e, t) {
         })
     }
   }
-  return (0, a.jsxs)("fieldset", {
+  return (0, a.jsx)("fieldset", {
     className: r()(d.container, s),
-    children: [(0, a.jsx)(c.vwX, {
-      tag: null != C ? C : "legend",
+    children: (0, a.jsx)(c.gNt, {
+      label: u.intl.string(u.t.xNpFJy),
       required: N,
-      error: F,
-      children: u.intl.string(u.t.xNpFJy)
-    }), (0, a.jsx)("div", {
-      className: d.inputs,
-      children: P.map((e, t) => {
-        let {
-          key: n,
-          input: o
-        } = e;
-        return (0, a.jsx)("div", {
-          tabIndex: t + 1,
-          className: d[n],
-          children: o
-        }, n)
+      errorMessage: null != G ? G : true,
+      children: (0, a.jsx)("div", {
+        className: d.inputs,
+        children: M.map((e, t) => {
+          let {
+            key: n,
+            input: o
+          } = e;
+          return (0, a.jsx)("div", {
+            tabIndex: t + 1,
+            className: d[n],
+            children: o
+          }, n)
+        })
       })
-    })]
+    })
   })
 })

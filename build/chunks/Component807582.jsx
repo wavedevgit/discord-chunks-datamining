@@ -25,37 +25,37 @@ let m = e => {
       onClick: b
     } = e,
     j = p.features.has(m),
-    _ = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
-    v = (0, c._p)(m);
-  return !j && m === d.oNc.VANITY_URL && _ ? null : (j ? (null != v && (i = u.intl.string(u.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Ucv, {
-      color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+    v = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
+    _ = (0, c._p)(m);
+  return !j && m === d.oNc.VANITY_URL && v ? null : (j ? (null != _ && (i = u.intl.string(u.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.Ucv, {
+      color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: g.unlockedIcon
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(s.X6q, {
       variant: "eyebrow",
       className: g.description,
       children: u.intl.string(u.t["0O+87u"])
     })]
-  })) : (null != v && (i = u.intl.string(u.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Ucv, {
+  })) : (null != _ && (i = u.intl.string(u.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.Ucv, {
       color: "currentColor",
       className: g.icon
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(s.X6q, {
       variant: "eyebrow",
       className: g.description,
-      children: null != v && (0, c.e9)(v)
+      children: null != _ && (0, c.e9)(_)
     })]
   })), n = h || null == i ? (0, r.jsx)("div", {
     className: l()(g.availabilityIndicator, f),
     children: t
-  }) : (0, r.jsx)(s.u, {
+  }) : (0, r.jsx)(a.u, {
     position: x,
     text: i,
     children: (0, r.jsx)("div", {
       className: l()(g.availabilityIndicator, f),
       children: t
     })
-  }), null == b || j) ? n : (0, r.jsx)(a.P3F, {
+  }), null == b || j) ? n : (0, r.jsx)(s.P3F, {
     onClick: b,
     className: g.clickable,
     children: n

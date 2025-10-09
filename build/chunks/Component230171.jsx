@@ -2,7 +2,7 @@
 /** chunk id: 230171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => j,
+  O: () => k,
   U: () => Chunk967249.U
 }), require("./539854.js"), require("./784620.js"), require("./973216.js"), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk217648 = require("./217648.js");
 
-function j(e) {
+function k(e) {
   var t;
   let {
     app: n,
@@ -57,9 +57,9 @@ function j(e) {
     bot: O
   }), {
     staticBannerSrc: N,
-    videoBannerSrc: L,
+    videoBannerSrc: x,
     bannerAspectRatio: M
-  } = (0, w.E)(n), j = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+  } = (0, w.E)(n), k = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: B,
@@ -75,7 +75,7 @@ function j(e) {
   }), W = null != v && I && Y, K = V && I, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
     let e = [];
     return I ? (K && e.push({
-      label: null == Z ? x.intl.string(x.t.RscU7O) : F ? x.intl.string(x.t.DPfdsr) : x.intl.string(x.t.sqe0ho),
+      label: null == Z ? L.intl.string(L.t.RscU7O) : F ? L.intl.string(L.t.DPfdsr) : L.intl.string(L.t.sqe0ho),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, c.G6)({
@@ -84,13 +84,13 @@ function j(e) {
           isStart: null == Z,
           embeddedActivitiesManager: H,
           customId: o,
-          referrerId: j,
+          referrerId: k,
           analyticsLocations: G
         })
       },
       disabled: F
     }), !K && W && e.push({
-      label: x.intl.string(x.t.JeK1Wl),
+      label: L.intl.string(L.t.JeK1Wl),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, _.W)({
@@ -98,19 +98,19 @@ function j(e) {
           botId: v,
           analyticsLocations: G,
           customId: o,
-          referrerId: j
+          referrerId: k
         })
       }
     })) : null != q && e.push(q), e
-  }, [K, W, Z, F, B, n.id, H, o, j, G, I, q, v]), Q = I ? (0, r.jsx)(U, {
+  }, [K, W, Z, F, B, n.id, H, o, k, G, I, q, v]), Q = I ? (0, r.jsx)(U, {
     app: n
-  }) : (0, r.jsx)(k, {
+  }) : (0, r.jsx)(j, {
     app: n
   });
   return (0, r.jsx)(C.W, {
     title: E,
     staticBannerSrc: N,
-    videoBannerSrc: L,
+    videoBannerSrc: x,
     onClickBanner: z,
     bannerAspectRatio: M,
     iconSrc: S,
@@ -120,7 +120,7 @@ function j(e) {
     trackingConfig: {
       id: n.id,
       linkType: a,
-      referrerId: j,
+      referrerId: k,
       activityCustomId: o,
       onView: g,
       guildId: null == (t = y.Z.getChannel(m.channel_id)) ? true : t.guild_id,
@@ -130,7 +130,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n, o;
   let {
     app: c
@@ -146,7 +146,7 @@ function k(e) {
         compactDisplay: "short"
       }),
       r = null != (t = null == (e = c.directoryEntry) ? true : e.guild_count) ? t : 0;
-    return 0 === r ? null : x.intl.format(x.t["6IW6Wl"], {
+    return 0 === r ? null : L.intl.format(L.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
   }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), _ = null == (o = c.categories) || null == (n = o.at(0)) ? true : n.name;
@@ -191,7 +191,7 @@ function U(e) {
     if (d.length > 0) return (0, r.jsx)(N.K, {
       activityUsers: d,
       guildId: c,
-      activityText: x.intl.formatToPlainString(x.t["IJa+4+"], {
+      activityText: L.intl.formatToPlainString(L.t["IJa+4+"], {
         count: d.length
       })
     });
@@ -199,11 +199,11 @@ function U(e) {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"
-      }), x.intl.string(x.t.TsWCdX)]
+      }), L.intl.string(L.t.TsWCdX)]
     });
-    let e = a > 0 ? x.intl.format(x.t.z8EAJS, {
+    let e = a > 0 ? L.intl.format(L.t.z8EAJS, {
       count: a
-    }) : x.intl.string(x.t.RjceQU);
+    }) : L.intl.string(L.t.RjceQU);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "xxs",

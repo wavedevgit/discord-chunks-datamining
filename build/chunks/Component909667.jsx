@@ -31,7 +31,7 @@ function c(e) {
     return i
   }(e, ["team"]);
   let c = (0, l.mY)() || null == t ? null : o.intl.format(o.t.d1sCiY, {
-    url: a.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(t.id)
+    url: s.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(t.id)
   });
   return 0 === n.payoutsByPeriod.length ? (0, r.jsxs)(i.Text, {
     variant: "text-sm/medium",
@@ -42,7 +42,7 @@ function c(e) {
       children: [o.intl.string(o.t["9Ub4KS"]), " ", c]
     }), (0, r.jsx)(i.LZC, {
       size: 16
-    }), (0, r.jsx)(s.Z, function(e) {
+    }), (0, r.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

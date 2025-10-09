@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk704215 = require("./704215.js"),
@@ -33,22 +33,22 @@ function E(e) {
     guild: t,
     everyoneRole: n,
     filteredRoles: l,
-    setEditRoleId: s,
-    query: a,
+    setEditRoleId: a,
+    query: s,
     setQuery: o,
     setHeaderHeight: c
   } = e, u = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : _.Cl)
+    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : v.Cl)
   }, [c]);
   let g = i.useCallback(() => {
-    s(n.id)
-  }, [s, n.id]);
+    a(n.id)
+  }, [a, n.id]);
   return (0, r.jsxs)("div", {
     ref: u,
-    children: [(0, r.jsx)(d.vwX, {
-      tag: d.RB0.H1,
+    children: [(0, r.jsx)(d.X6q, {
+      variant: "heading-lg/semibold",
       children: y.intl.string(y.t.LPJmLy)
     }), (0, r.jsx)(d.Text, {
       className: N.description,
@@ -61,7 +61,7 @@ function E(e) {
       guild: t,
       everyoneRole: n,
       filteredRoles: l,
-      query: a,
+      query: s,
       setQuery: o,
       onEveryoneRoleClick: g
     })]
@@ -79,8 +79,8 @@ function I(e) {
       forceTrack: true
     })
   }, [t]);
-  let n = (0, h.vc)(o()(v.zQD), "LL"),
-    l = t.features.has(v.oNc.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
+  let n = (0, h.vc)(o()(_.zQD), "LL"),
+    l = t.features.has(_.oNc.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: y.intl.format(y.t.Vg2oTE, {
         breakingChangeDate: n
@@ -122,7 +122,7 @@ function S(e) {
     everyoneRole: n,
     filteredRoles: i,
     query: l,
-    setQuery: a,
+    setQuery: s,
     onEveryoneRoleClick: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
@@ -132,13 +132,13 @@ function S(e) {
     }), (0, r.jsx)(T, {
       guild: t,
       query: l,
-      setQuery: a
+      setQuery: s
     }), (0, r.jsx)(d.Text, {
       className: N.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: y.intl.format(y.t.xkC3YW, {
-        articleURL: x.Z.getArticleURL(v.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: x.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: N.rolesTable,
@@ -147,13 +147,13 @@ function S(e) {
         children: [(0, r.jsx)("div", {
           className: N.dragSpacing
         }), (0, r.jsx)(d.Text, {
-          className: s()(N.tableTitle, N.roleNameSpacing),
+          className: a()(N.tableTitle, N.roleNameSpacing),
           variant: "text-sm/normal",
           children: y.intl.format(y.t["38N3V1"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
-          className: s()(N.tableTitle, N.memberSpacing),
+          className: a()(N.tableTitle, N.memberSpacing),
           variant: "text-sm/normal",
           children: y.intl.string(y.t["9Oq93t"])
         }), (0, r.jsx)("div", {
@@ -169,12 +169,12 @@ function T(e) {
     guild: t,
     query: n,
     setQuery: l
-  } = e, [s, a] = i.useState(false), o = i.useCallback(e => {
+  } = e, [a, s] = i.useState(false), o = i.useCallback(e => {
     l(e)
   }, [l]), c = i.useCallback(() => {
     l("")
   }, [l]), u = async () => {
-    a(true), await g.Z.createRole(t.id), a(false)
+    s(true), await g.Z.createRole(t.id), s(false)
   };
   return (0, r.jsx)("div", {
     className: N.__invalid_rolesList,
@@ -189,7 +189,7 @@ function T(e) {
       }), (0, r.jsx)(d.zxk, {
         size: "sm",
         onClick: u,
-        loading: s,
+        loading: a,
         text: y.intl.string(y.t.JZZjQE)
       })]
     })

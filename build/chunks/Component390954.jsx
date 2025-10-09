@@ -163,20 +163,16 @@ class T extends Chunk647438.PureComponent {
       onEditClick: this.handleEditClick
     }, t.id));
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        tag: "h1",
-        children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk579378.titleContainer,
-          children: [(0, Chunk951288.jsx)(Chunk481060.ua7, {
-            position: "left",
-            text: Chunk388032.intl.string(Chunk388032.t.h6V3uL),
-            children: e => (0, i.jsx)(c.mBM, y({
-              size: "md",
-              color: "currentColor",
-              className: E.lockIcon
-            }, e))
-          }), Chunk388032.intl.string(Chunk388032.t.W26xGR)]
-        })
+      children: [(0, Chunk951288.jsxs)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
+          size: "sm",
+          className: Chunk579378.lockIcon
+        }), " ", Chunk388032.intl.string(Chunk388032.t.W26xGR)]
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "text-secondary",
+        children: Chunk388032.intl.string(Chunk388032.t.h6V3uL)
       }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk579378.__invalid_sourceDivider
       }) : null, this.renderFooter()]

@@ -16,17 +16,17 @@ var Chunk951288 = require("./951288.js"),
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var o = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(o);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(o).filter(function(e) {
+      n = Object.keys(o);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(o).filter(function(e) {
       return Object.getOwnPropertyDescriptor(o, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = o[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), n.forEach(function(t) {
+      var n;
+      n = o[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -39,11 +39,11 @@ function p(e) {
     transitionState: p,
     onClose: m
   } = e;
-  return n.useEffect(() => {
+  return r.useEffect(() => {
     l.default.track(_.rMx.OPEN_MODAL, {
       type: "Video Background Feedback"
     })
-  }, []), (0, r.jsx)(i.Z, {
+  }, []), (0, n.jsx)(i.Z, {
     modalType: "video_background",
     header: s.intl.string(s.t.Wl8qXl),
     body: s.intl.string(s.t.vPw6j4),
@@ -66,7 +66,7 @@ function p(e) {
     }],
     freeformNeededProblems: d,
     onSubmit: function(e) {
-      var n, i, d, p;
+      var r, i, d, p;
       let {
         rating: m,
         problem: f,
@@ -76,15 +76,15 @@ function p(e) {
       O && (0, a.Uv)({
         feedbackType: b.nw.VIDEO_BACKGROUND,
         location: "VideoBackgroundFeedbackModal"
-      }), null != m && (i = null != (n = null == f ? true : f.value) ? n : null, l.default.track(_.rMx.VIDEO_BACKGROUND_FEEDBACK, (d = u({}, t), p = p = {
+      }), null != m && (i = null != (r = null == f ? true : f.value) ? r : null, l.default.track(_.rMx.VIDEO_BACKGROUND_FEEDBACK, (d = u({}, t), p = p = {
         reason: i,
         rating: m,
         feedback: y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
         var o = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          o.push.apply(o, r)
+          var n = Object.getOwnPropertySymbols(e);
+          o.push.apply(o, n)
         }
         return o
       })(Object(p)).forEach(function(e) {
@@ -93,7 +93,7 @@ function p(e) {
         let {
           default: e
         } = await o.e("14466").then(o.bind(o, 729328));
-        return t => (0, r.jsx)(e, u({
+        return t => (0, n.jsx)(e, u({
           body: s.intl.string(s.t.aHB11d)
         }, t))
       }))

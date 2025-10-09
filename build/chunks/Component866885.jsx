@@ -108,7 +108,7 @@ function V(e) {
     })) : null,
     selectedParticipant: null != _ ? g.Z.getSelectedParticipant(_.id) : null,
     participantsOpen: null != _ && g.Z.getParticipantsOpen(_.id)
-  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === L.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === x.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function eo() {
     if (null != _) {
@@ -117,7 +117,7 @@ function V(e) {
         applicationId: B.applicationId,
         instanceId: B.compositeInstanceId
       }));
-      let t = null != (e = _.getGuildId()) ? e : x.ME;
+      let t = null != (e = _.getGuildId()) ? e : L.ME;
       d.Z.channelListScrollTo(t, _.id), (0, E.XU)(t, _.id)
     }
     null == q && (0, f.Ou)()
@@ -154,7 +154,7 @@ function V(e) {
       onMouseDown: n,
       onMouseLeave: i,
       onJumpToChannel: () => {
-        eo(), (0, T.tg)(L.Ez.PANEL)
+        eo(), (0, T.tg)(x.Ez.PANEL)
       },
       channel: _,
       applicationId: B.applicationId,
@@ -165,7 +165,7 @@ function V(e) {
         onMouseMove: n,
         onMouseDown: n,
         onMouseLeave: i,
-        className: j.clickShield,
+        className: k.clickShield,
         onDoubleClick: eo
       }), (0, r.jsx)(w.YB, {
         idle: a,
@@ -208,14 +208,14 @@ function V(e) {
         onForceIdle: s
       } = e;
       return (0, r.jsxs)(b.Z, {
-        className: o()(j.root, {
-          [j.pipMode]: ei,
+        className: o()(k.root, {
+          [k.pipMode]: ei,
           [U.elevationHigh]: ei,
-          [k.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
-          [j.pipModeShort]: ei && !C,
-          [j.pipModeTall]: ei && C,
-          [j.hidden]: z,
-          [j.multiPIPMode]: ea
+          [j.idle]: i && !(null == (t = B.config) ? true : t.useInteractivePIP),
+          [k.pipModeShort]: ei && !C,
+          [k.pipModeTall]: ei && C,
+          [k.hidden]: z,
+          [k.multiPIPMode]: ea
         }),
         noBorder: !ei,
         children: [(0, r.jsx)("div", {
@@ -228,19 +228,19 @@ function V(e) {
             users: ec
           })
         }), p || F ? (0, r.jsx)(l.$jN, {
-          className: o()(j.iframe, {
-            [j.pipModeShort]: ei && !C,
-            [j.pipModeTall]: ei && C
+          className: o()(k.iframe, {
+            [k.pipModeShort]: ei && !C,
+            [k.pipModeTall]: ei && C
           })
         }) : (0, r.jsx)(P.J, {
           allowPopups: (0, N.h)(H),
           referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: eu,
-          className: o()(j.iframe, {
-            [j.pipModeShort]: ei && !C,
-            [j.pipModeTall]: ei && C,
-            [j.pipNonInteractive]: ei && !(null == (n = B.config) ? true : n.useInteractivePIP)
+          className: o()(k.iframe, {
+            [k.pipModeShort]: ei && !C,
+            [k.pipModeTall]: ei && C,
+            [k.pipNonInteractive]: ei && !(null == (n = B.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !ei && W
         }), !ei && null != _ && (0, r.jsx)(w.Ds, {

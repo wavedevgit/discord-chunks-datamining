@@ -1,7 +1,7 @@
 /** Chunk was on 43866 **/
 /** chunk id: 423639, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,11 +12,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk74450 = require("./74450.js");
 
-function p(e) {
+function b(e) {
   var t, r, {
       createReminder: i
     } = e,
-    p = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -31,9 +31,9 @@ function p(e) {
       }
       return o
     }(e, ["createReminder"]);
-  let [b, f] = o.useState(() => c()()), [O, d] = o.useState(() => c()()), y = o.useCallback(() => {
-    i(b.toDate())
-  }, [i, b]), j = e => {
+  let [p, f] = o.useState(() => c()()), [O, y] = o.useState(() => c()()), d = o.useCallback(() => {
+    i(p.toDate())
+  }, [i, p]), j = e => {
     e.isValid() && f(e)
   };
   return (0, n.jsx)(u.ConfirmModal, (t = function(e) {
@@ -54,29 +54,25 @@ function p(e) {
     }
     return e
   }({
-    header: s.intl.string(s.t.VKsXpa),
-    confirmText: s.intl.string(s.t.R3BPHx),
-    cancelText: s.intl.string(s.t["ETE/oK"]),
+    header: a.intl.string(a.t.VKsXpa),
+    confirmText: a.intl.string(a.t.R3BPHx),
+    cancelText: a.intl.string(a.t["ETE/oK"]),
     confirmButtonColor: l.zx.Colors.BRAND,
-    onConfirm: y
-  }, p), r = r = {
+    onConfirm: d
+  }, b), r = r = {
     children: (0, n.jsxs)("div", {
-      className: a.doubleInput,
-      children: [(0, n.jsx)(u.xJW, {
-        title: s.intl.string(s.t.pSZKvL),
+      className: s.doubleInput,
+      children: [(0, n.jsx)(u.Wrb, {
+        label: a.intl.string(a.t.pSZKvL),
         required: true,
-        children: (0, n.jsx)(u.Wrb, {
-          value: b,
-          onSelect: j,
-          minDate: O
-        })
-      }), (0, n.jsx)(u.xJW, {
-        title: s.intl.string(s.t.GOmEb2),
+        value: p,
+        onSelect: j,
+        minDate: O
+      }), (0, n.jsx)(u.MGJ, {
+        label: a.intl.string(a.t.GOmEb2),
         required: true,
-        children: (0, n.jsx)(u.MGJ, {
-          value: b,
-          onChange: j
-        })
+        value: p,
+        onChange: j
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

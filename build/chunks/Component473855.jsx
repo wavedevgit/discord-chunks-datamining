@@ -34,26 +34,26 @@ function u(e) {
       header: e,
       description: d,
       author: m
-    } = (0, s.Z)(u);
-    return (0, i.jsxs)("div", {
-      children: [(0, i.jsx)("img", {
+    } = (0, l.Z)(u);
+    return (0, r.jsxs)("div", {
+      children: [(0, r.jsx)("img", {
         className: c.image,
         src: o,
         alt: ""
-      }), (0, i.jsx)(r.Dx, {
+      }), (0, r.jsx)(i.Dx, {
         className: c.header,
         id: t,
         children: e
-      }), (0, i.jsx)(r.DK, {
+      }), (0, r.jsx)(i.DK, {
         children: d
-      }), n.state === a.Rj.RESOLVED ? (0, i.jsx)(l.D, {
+      }), n.state === a.Rj.RESOLVED ? (0, r.jsx)(s.D, {
         className: c.usagePill,
         count: null != (C = n.usageCount) ? C : 0,
         verifiedName: m
       }) : null]
     })
   }
-  return (0, i.jsx)(l.Z, {
+  return (0, r.jsx)(s.Z, {
     pillClassName: c.usagePill,
     guildTemplate: n,
     tall: true

@@ -18,10 +18,13 @@ let f = () => {
     t = (0, Chunk410030.ZP)();
   return (Chunk647438.useEffect(() => {
     Chunk457330.Z.fetch()
-  }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsx)(Chunk481060.hjN, {
-    tag: Chunk481060.RB0.H1,
-    title: Chunk388032.intl.string(Chunk388032.t["Ig/XFR"]),
-    children: (0, Chunk951288.jsxs)(Chunk481060.ubH, {
+  }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+    gap: 16,
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      variant: "heading-lg/semibold",
+      color: "header-primary",
+      children: Chunk388032.intl.string(Chunk388032.t["Ig/XFR"])
+    }), (0, Chunk951288.jsxs)(Chunk481060.ubH, {
       theme: exports,
       children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
         darkSrc: require("./703152.js"),
@@ -32,6 +35,6 @@ let f = () => {
         note: Chunk388032.intl.string(Chunk388032.t.WenGZ2),
         children: Chunk388032.intl.string(Chunk388032.t["aoLS8/"])
       })]
-    })
+    })]
   })
 }

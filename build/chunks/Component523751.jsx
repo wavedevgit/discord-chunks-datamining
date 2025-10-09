@@ -136,7 +136,7 @@ let D = {
   [Chunk284363.Q.NONE]: {}
 };
 
-function L(e) {
+function x(e) {
   let {
     guildTraits: t
   } = e;
@@ -166,7 +166,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -191,7 +191,7 @@ function x(e) {
         variant: "text-xs/medium",
         children: o
       }) : null]
-    }), n.premium ? (0, r.jsx)(L, {
+    }), n.premium ? (0, r.jsx)(x, {
       guildTraits: n
     }) : null]
   })
@@ -212,14 +212,14 @@ function M(e) {
     "aria-label": N = false
   } = e;
   let w = null != (a = P(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
-    L = (0, s.e7)([m.default, h.ZP], () => {
+    x = (0, s.e7)([m.default, h.ZP], () => {
       let e = m.default.getCurrentUser();
       return h.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
     M = (0, s.e7)([p.Z], () => p.Z.theme),
-    j = (0, O.XX)(o),
-    k = (0, y.i)(j),
-    U = i.useMemo(() => j.premium && L && !A, [A, j.premium, L]),
+    k = (0, O.XX)(o),
+    j = (0, y.i)(k),
+    U = i.useMemo(() => k.premium && x && !A, [A, k.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
@@ -229,7 +229,7 @@ function M(e) {
         }
       }))
     }, [U, o.id]);
-  if (k === y.Q.NONE) return null;
+  if (j === y.Q.NONE) return null;
   let {
     IconComponent: B,
     backgroundDarkColor: Z,
@@ -239,9 +239,9 @@ function M(e) {
     premiumBackgroundColor: Y,
     premiumForegroundColor: W,
     sizeAdjustment: K
-  } = D[k];
+  } = D[j];
   if (null == B) return null;
-  j.premium && (t = W, n = Y);
+  k.premium && (t = W, n = Y);
   let z = (0, c.wj)(M) ? V : H,
     q = (0, c.wj)(M) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;
@@ -250,9 +250,9 @@ function M(e) {
     color: l,
     position: d,
     "aria-label": N,
-    text: (0, r.jsx)(x, {
-      badgeType: k,
-      guildTraits: j
+    text: (0, r.jsx)(L, {
+      badgeType: j,
+      guildTraits: k
     }),
     tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {

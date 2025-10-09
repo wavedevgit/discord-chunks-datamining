@@ -24,14 +24,14 @@ function f(e) {
     formFields: c
   } = e, [f, x] = i.useState(c);
   i.useEffect(() => x(c), [c]);
-  let b = null != (t = (0, a.A)({
+  let b = null != (t = (0, s.A)({
       guildId: n.id
     })) ? t : 0,
-    [j, _] = i.useState(null),
-    v = i.useMemo(() => null == f ? true : f.some(e => (0, s.J)(e)), [f]),
+    [j, v] = i.useState(null),
+    _ = i.useMemo(() => null == f ? true : f.some(e => (0, a.J)(e)), [f]),
     C = i.useMemo(() => f.length === g.nx, [f]),
     O = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && _(null)
+      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && v(null)
     }, [j, n.id]),
     y = i.useCallback(e => {
       O([...f, e])
@@ -47,7 +47,7 @@ function f(e) {
     I = i.useCallback((e, t, n) => {
       let r = f.indexOf(e),
         i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (O(i), null !== j && _(null)) : j !== t && _(t)
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (O(i), null !== j && v(null)) : j !== t && v(t)
     }, [j, f, O]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
@@ -70,13 +70,13 @@ function f(e) {
       updateFormFieldOrder: I,
       canRemove: f.length > 1,
       actionsLocation: "side",
-      fieldStyle: s.it.COMPACT
+      fieldStyle: a.it.COMPACT
     })), !C && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
         addFormField: y,
         guild: n,
-        allowTerms: !v
+        allowTerms: !_
       })
     }), !C && (0, r.jsx)(h, {
       addFormField: y
@@ -91,7 +91,7 @@ function h(e) {
     text: m.intl.string(m.t.EOwiEh),
     onClick: () => {
       t({
-        field_type: s.QJ.TEXT_INPUT,
+        field_type: a.QJ.TEXT_INPUT,
         label: m.intl.string(m.t.EOwiEh),
         required: true
       })
@@ -100,7 +100,7 @@ function h(e) {
     text: m.intl.string(m.t.jqrNDg),
     onClick: () => {
       t({
-        field_type: s.QJ.TEXT_INPUT,
+        field_type: a.QJ.TEXT_INPUT,
         label: m.intl.string(m.t.jqrNDg),
         required: true
       })
@@ -109,7 +109,7 @@ function h(e) {
     text: m.intl.string(m.t.I5q8vr),
     onClick: () => {
       t({
-        field_type: s.QJ.TEXT_INPUT,
+        field_type: a.QJ.TEXT_INPUT,
         label: m.intl.string(m.t.I5q8vr),
         required: true
       })

@@ -94,8 +94,8 @@ let y = function(e) {
     color: P,
     iconColor: w = "currentColor"
   } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor"]);
-  let L = (0, o.e7)([c.Z], () => c.Z.isFocused()),
-    x = (0, d.Z)({
+  let x = (0, o.e7)([c.Z], () => c.Z.isFocused()),
+    L = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == m ? true : m.textOverride,
       defaultTextOverride: null == m ? true : m.subscribeText
@@ -111,7 +111,7 @@ let y = function(e) {
       paymentModalBanner: R
     };
 
-  function j(e) {
+  function k(e) {
     let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
     return (0, r.jsx)(u.Z, g(h({}, M), {
       children: o => {
@@ -120,7 +120,7 @@ let y = function(e) {
         } = o;
         return (0, r.jsxs)(l.gtL, g(h({
           "data-migration-pending": true,
-          disabled: x.disabled,
+          disabled: L.disabled,
           onClick: c,
           innerClassName: _.premiumSubscribeButton,
           color: n,
@@ -131,7 +131,7 @@ let y = function(e) {
             [_.tier1Gradient]: C && t === f.Si.TIER_1
           }, p),
           buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
-          pauseAnimation: !L || T
+          pauseAnimation: !x || T
         }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
@@ -139,14 +139,14 @@ let y = function(e) {
             className: a()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
             className: a()(_.buttonText, null == m ? true : m.textClassName),
-            children: x.buttonText
+            children: L.buttonText
           })]
         }))
       }
     }))
   }
-  return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
-    text: x.buttonTooltipText,
-    children: j
-  }) : j()
+  return null != L.buttonTooltipText ? (0, r.jsx)(l.ua7, {
+    text: L.buttonTooltipText,
+    children: k
+  }) : k()
 }

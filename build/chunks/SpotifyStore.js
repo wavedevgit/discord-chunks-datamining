@@ -40,7 +40,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,12 +65,12 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
-  k = "wss://dealer.spotify.com/?access_token=",
+let k = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
+  j = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
   G = 30 * Chunk70956.Z.Millis.SECOND,
   B = 30 * Chunk70956.Z.Millis.SECOND,
@@ -140,7 +140,7 @@ class eh {
   }
   connect() {
     this.connected || this._requestedConnect || ($.info("WS Connecting"), this._requestedDisconnect = false, this._requestedConnect = true, eU(this.accountId, this.accessToken).then(() => {
-      this._requestedConnect = false, this.socket = new WebSocket("".concat(k).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
+      this._requestedConnect = false, this.socket = new WebSocket("".concat(j).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
     }).catch(e => {
       $.error(e), this._requestedConnect = false, this.handleClose()
     }))
@@ -198,7 +198,7 @@ class eh {
     } = e;
     switch (t) {
       case "PLAYER_STATE_CHANGED":
-        null != n && null != n.state && ek(this.accountId, this.accessToken, n.state);
+        null != n && null != n.state && ej(this.accountId, this.accessToken, n.state);
         break;
       case "DEVICE_STATE_CHANGED":
         this.handleDeviceStateChange()
@@ -464,14 +464,14 @@ function eD(e) {
   returnfalse
 }
 
-function eL(e) {
+function ex(e) {
   let {
     userId: t
   } = e;
   return eD(t)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     voiceStates: t
   } = e;
@@ -492,7 +492,7 @@ function eM(e) {
   r.isPremium = n, $.info("Profile updated for ".concat(t, ": isPremium = ").concat(n))
 }
 
-function ej(e) {
+function ek(e) {
   let {
     settings: t
   } = e;
@@ -502,11 +502,11 @@ function ej(e) {
       sourceId: e,
       sound: n
     } = null == t ? true : t.desktopSettings;
-    null != e && E.ZP.getObservedAppNameForWindow(e) === j.name && n ? (ec = new f.Xp).start(B, ew) : (null == ec || ec.stop(), ec = null)
+    null != e && E.ZP.getObservedAppNameForWindow(e) === k.name && n ? (ec = new f.Xp).start(B, ew) : (null == ec || ec.stop(), ec = null)
   } else null == t && (null == ec || ec.stop(), ec = null)
 }
 
-function ek(e, t, n) {
+function ej(e, t, n) {
   var r, i, a, o, s, l, c, u, d, f, p, h, m, g;
   let E, b, {
     device: y,
@@ -546,7 +546,7 @@ function ek(e, t, n) {
     artists: [],
     isLocal: false
   });
-  if (null != y && true !== y.is_active && (y = M(L({}, y), {
+  if (null != y && true !== y.is_active && (y = M(x({}, y), {
       is_active: true
     })), null != S && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(S.type)) {
     let n = eB.getPlayerState(e);
@@ -586,7 +586,7 @@ function eU(e, t) {
     onlyRetryOnAuthorizationErrors: true
   }).then(n => {
     let r = n.body;
-    null != r ? ek(e, t, r).then(() => n) : ef(e)
+    null != r ? ej(e, t, r).then(() => n) : ef(e)
   }).catch(() => ef(e))
 }
 class eG extends(o = Chunk442837.ZP.Store) {
@@ -676,7 +676,7 @@ class eG extends(o = Chunk442837.ZP.Store) {
         button_urls: []
       },
       y = {
-        name: j.name,
+        name: k.name,
         assets: Chunk726542,
         details: Chunk710845,
         state: module,
@@ -705,8 +705,8 @@ let eB = new eG(Chunk570140.Z, {
     ACTIVITY_SYNC_STOP: ey,
     SPOTIFY_SET_DEVICES: eA,
     SPOTIFY_SET_ACTIVE_DEVICE: eC,
-    SPEAKING: eL,
-    VOICE_STATE_UPDATES: ex,
-    MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ej
+    SPEAKING: ex,
+    VOICE_STATE_UPDATES: eL,
+    MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ek
   }),
   eZ = eB

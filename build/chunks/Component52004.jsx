@@ -3,9 +3,8 @@
 require.d(exports, {
   default: () => d
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -19,7 +18,7 @@ let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
       applicationId: i
     } = t;
     return {
-      application: l.Z.getApplication(i)
+      application: s.Z.getApplication(i)
     }
   })(function(t) {
     let {
@@ -27,25 +26,25 @@ let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
       transitionState: n,
       onClose: a
     } = t;
-    return (0, e.jsxs)(s.Y0X, {
+    return (0, e.jsxs)(l.Y0X, {
       transitionState: n,
-      size: s.CgR.MEDIUM,
+      size: l.CgR.MEDIUM,
       parentComponent: "MissingEntitlementModal",
-      children: [(0, e.jsxs)(s.xBx, {
+      children: [(0, e.jsxs)(l.xBx, {
         align: r.Z.Align.CENTER,
         justify: r.Z.Justify.BETWEEN,
-        children: [(0, e.jsx)(s.vwX, {
-          tag: s.RB0.H4,
+        children: [(0, e.jsx)(l.X6q, {
+          variant: "heading-lg/semibold",
           children: null != i ? m.intl.formatToPlainString(m.t.N2mILi, {
             applicationName: i.name
           }) : m.intl.string(m.t.nS8PUV)
-        }), (0, e.jsx)(s.olH, {
+        }), (0, e.jsx)(l.olH, {
           onClick: a
         })]
-      }), (0, e.jsxs)(s.hzk, {
+      }), (0, e.jsxs)(l.hzk, {
         children: [(0, e.jsx)("div", {
           className: p.missingEntitlementImage
-        }), (0, e.jsx)(s.Text, {
+        }), (0, e.jsx)(l.Text, {
           className: p.text,
           variant: "text-md/normal",
           children: null != i ? m.intl.format(m.t["MM/7q6"], {
@@ -55,8 +54,8 @@ let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
             supportArticleURL: x
           })
         })]
-      }), (0, e.jsx)(s.mzw, {
-        children: (0, e.jsx)(s.zxk, {
+      }), (0, e.jsx)(l.mzw, {
+        children: (0, e.jsx)(l.zxk, {
           variant: "primary",
           text: m.intl.string(m.t.BddRzc),
           onClick: a

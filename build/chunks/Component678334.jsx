@@ -2,7 +2,7 @@
 /** chunk id: 678334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,16 +36,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk62868 = require("./62868.js"),
   Chunk133529 = require("./133529.js");
 
-function x(e) {
+function L(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: a,
     onNext: s,
-    legalTermsNodeRef: x,
+    legalTermsNodeRef: L,
     flashLegalTerms: M,
-    invoiceError: j,
-    planError: k,
+    invoiceError: k,
+    planError: j,
     onPurchaseError: U,
     baseAnalyticsData: G,
     flowStartTime: B,
@@ -98,16 +98,16 @@ function x(e) {
     } = (0, E.H)(ev, ef),
     ew = (0, v.Ap)(J.paymentSourceId),
     eD = eP || eI,
-    eL = (0, m.U)(),
-    ex = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
+    ex = (0, m.U)(),
+    eL = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
     eM = null,
-    ej = null;
+    ek = null;
   if (et === P.GZQ.ONE_TIME) {
-    var ek;
-    l()(null != ei, "SKU must be selected for one-time purchases"), eM = null != (ek = ea[ei]) ? ek : null, l()(null != eM, "SKU must exist and be fetched.");
+    var ej;
+    l()(null != ei, "SKU must be selected for one-time purchases"), eM = null != (ej = ea[ei]) ? ej : null, l()(null != eM, "SKU must exist and be fetched.");
     let e = eo[ei],
       t = null != en ? en : y.c;
-    ej = null != e ? e[t] : null
+    ek = null != e ? e[t] : null
   }
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
@@ -129,19 +129,19 @@ function x(e) {
         trialId: Z,
         priceOptions: J,
         paymentSource: eS,
-        isPrepaidPaymentPastDue: eL,
+        isPrepaidPaymentPastDue: ex,
         openInvoiceId: Y,
         premiumSubscription: t,
         onNext: s,
         metadata: W,
         sku: eM,
-        skuPricePreview: ej,
+        skuPricePreview: ek,
         purchaseType: et,
         referralCode: es,
         loadId: el.loadId,
         giftInfoOptions: eO,
         invoicePreview: ec,
-        orderId: ex
+        orderId: eL
       })
     }, eZ = {
       baseAnalyticsData: G,
@@ -171,13 +171,13 @@ function x(e) {
       [D.modalFooterDiscount]: eG
     }, ed, D.modalFooter),
     children: [eG && (0, r.jsx)("img", {
-      src: L.Z,
+      src: x.Z,
       alt: "",
       className: D.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
-      legalTermsNodeRef: x,
-      invoiceError: j,
-      planError: k,
+      legalTermsNodeRef: L,
+      invoiceError: k,
+      planError: j,
       disablePurchase: z,
       flashLegalTerms: M,
       isSubmitting: eA,

@@ -155,8 +155,8 @@ class v extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.olH, {
           className: Chunk422622.closeButton,
           onClick: this.onClose
-        }), (0, Chunk951288.jsx)(Chunk481060.vwX, {
-          tag: "h2",
+        }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          variant: "heading-lg/semibold",
           className: Chunk197571.marginReset,
           children: require
         })]

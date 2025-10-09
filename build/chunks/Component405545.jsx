@@ -2,18 +2,18 @@
 /** chunk id: 405545, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk186078 = require("./186078.jsx"),
   Chunk137158 = require("./137158.jsx"),
   Chunk31829 = require("./31829.js");
-let a = function(e) {
+let s = function(e) {
   let {
     formField: t,
     index: n,
-    isDragEnabled: a,
+    isDragEnabled: s,
     isDropHovered: o,
     onDrop: c,
     onEdit: d,
@@ -27,7 +27,7 @@ let a = function(e) {
   return (0, r.jsx)(l.Z, {
     field: t,
     index: n,
-    isDragEnabled: a,
+    isDragEnabled: s,
     isDropHovered: o,
     onDrop: c,
     onEdit: d,
@@ -39,7 +39,7 @@ let a = function(e) {
     children: (0, r.jsx)(i.BO, {
       field: t,
       value: true,
-      radioItemClassName: s.multipleChoiceFixedTextColor,
+      radioItemClassName: a.multipleChoiceFixedTextColor,
       disabled: false
     })
   })

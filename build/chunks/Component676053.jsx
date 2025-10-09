@@ -104,10 +104,10 @@ function I(e) {
       height: 720,
       className: m.media
     }), [g, t]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       null !== P.current && P.current.pause(), null == C || C()
     }, [C]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       null !== P.current && P.current.pause(), null == C || C()
     }, [C]),
     M = i.useCallback(() => {
@@ -120,7 +120,7 @@ function I(e) {
         shouldHideMediaOptions: true
       }), null == C || C(), null == A || A()
     }, [D, A, C]),
-    j = w ? (0, r.jsx)(a.zsu, {
+    k = w ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {
@@ -146,17 +146,17 @@ function I(e) {
       })]
     });
   return (0, r.jsx)(c.m, y(E({}, R), {
-    onRequestClose: L,
+    onRequestClose: x,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
       ref: N,
       children: [(0, r.jsx)(_.N, {
-        onClick: x
+        onClick: L
       }), (0, r.jsx)(d.$, {
         caretConfig: I
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
-        children: j
+        children: k
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,

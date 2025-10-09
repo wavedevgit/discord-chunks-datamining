@@ -155,7 +155,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     targetId: t
   } = e, n = T.getNode(t);
@@ -166,7 +166,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     joinedAt: n,
@@ -185,7 +185,7 @@ function M(e) {
   U(n, r)
 }
 
-function j(e) {
+function k(e) {
   let {
     folderId: t,
     expanded: n
@@ -194,7 +194,7 @@ function j(e) {
   U(r, n)
 }
 
-function k() {
+function j() {
   for (let e of T.allNodes()) module.type === Chunk727258.eD.FOLDER && module.expanded && U(module, false)
 }
 
@@ -258,15 +258,15 @@ class V extends Chunk750041.Z {
       CACHE_LOADED: () => this.loadCache(),
       GUILD_CREATE: N,
       GUILD_DELETE: N,
-      GUILD_MEMBER_ADD: x,
+      GUILD_MEMBER_ADD: L,
       USER_SETTINGS_PROTO_UPDATE: R,
       GUILD_MOVE_BY_ID: P,
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
-      GUILD_FOLDER_DELETE_LOCAL: L,
+      GUILD_FOLDER_DELETE_LOCAL: x,
       TOGGLE_GUILD_FOLDER_EXPAND: M,
-      SET_GUILD_FOLDER_EXPANDED: j,
-      GUILD_FOLDER_COLLAPSE: k
+      SET_GUILD_FOLDER_EXPANDED: k,
+      GUILD_FOLDER_COLLAPSE: j
     }), O(this, "loadCache", () => {
       let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),
         t = null == module ? true : module.tree;

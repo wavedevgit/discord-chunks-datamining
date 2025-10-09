@@ -21,15 +21,15 @@ let m = e => {
     analyticsLocation: n,
     className: i,
     buttonProps: l = {
-      color: s.Tt.BRAND_INVERTED,
+      color: a.Tt.BRAND_INVERTED,
       text: u.intl.string(u.t.oqweNz)
     }
   } = e, {
-    color: a,
+    color: s,
     text: o
   } = l, c = t.premiumTier + 1;
   return (0, r.jsx)(d.Z, {
-    color: a,
+    color: s,
     analyticsLocation: n,
     guild: t,
     buttonText: o,
@@ -42,7 +42,7 @@ function p(e) {
   let {
     header: t,
     text: i,
-    analyticsLocation: s,
+    analyticsLocation: a,
     guild: d,
     className: u,
     textColor: p,
@@ -61,12 +61,12 @@ function p(e) {
         src: n(322393)
       }), (0, r.jsxs)("div", {
         className: g.content,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
           color: null != f ? f : "always-white",
           className: g.header,
           children: t
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: null != p ? p : "always-white",
           children: i
@@ -75,7 +75,7 @@ function p(e) {
         className: g.ctaContainer,
         children: (0, r.jsx)(m, {
           guild: d,
-          analyticsLocation: s,
+          analyticsLocation: a,
           className: g.button,
           buttonProps: h
         })

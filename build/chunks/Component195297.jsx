@@ -1,7 +1,7 @@
 /** Chunk was on 72891 **/
 /** chunk id: 195297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,15 +22,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk382775 = require("./382775.js");
 
-function P(e) {
+function b(e) {
   let {
     transitionState: t,
     onClose: o,
-    onComplete: P,
-    uploadType: b,
+    onComplete: b,
+    uploadType: P,
     showUpsellHeader: v,
     analyticsPage: E
-  } = e, [R, j] = a.useState(false), y = (0, l.vRw)(), C = (0, d.Dt)(), {
+  } = e, [j, R] = a.useState(false), y = (0, l.vRw)(), C = (0, d.Dt)(), {
     analyticsLocations: I,
     newestAnalyticsLocation: Z
   } = (0, s.ZP)(c.Z.GIF_PICKER);
@@ -38,8 +38,8 @@ function P(e) {
     let {
       gifSrc: t
     } = e;
-    if (null == t || R) return;
-    j(true);
+    if (null == t || j) return;
+    R(true);
     let a = (0, m.Q)(t),
       r = await fetch(a),
       c = await r.blob();
@@ -69,8 +69,8 @@ function P(e) {
         file: new File([c], "tenor.gif", {
           type: "image/gif"
         }),
-        onCrop: P,
-        uploadType: b,
+        onCrop: b,
+        uploadType: P,
         showUpsellHeader: v
       }, t))
     }, {
@@ -86,8 +86,8 @@ function P(e) {
       }
     })
   }, [I, E]);
-  let w = b === x.pC.AVATAR || b === x.pC.BANNER,
-    L = (0, f.M)(!w);
+  let L = P === x.pC.AVATAR || P === x.pC.BANNER,
+    w = (0, f.M)(!L);
   return (0, i.jsx)(s.Gt, {
     value: I,
     children: (0, i.jsxs)(l.Y0X, {
@@ -95,17 +95,17 @@ function P(e) {
       transitionState: t,
       size: l.CgR.SMALL,
       parentComponent: "GIFPickerCroppingModal",
-      children: [v && !L && (0, i.jsx)(p.Z, {
-        type: b,
+      children: [v && !w && (0, i.jsx)(p.Z, {
+        type: P,
         analyticsPage: E,
         analyticsSection: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
         isGIF: true
       }), (0, i.jsxs)(l.xBx, {
         className: A.modalHeader,
         separator: false,
-        children: [(0, i.jsx)(l.vwX, {
+        children: [(0, i.jsx)(l.X6q, {
           className: A.titleCase,
-          tag: l.RB0.H1,
+          variant: "heading-lg/semibold",
           children: h.intl.string(h.t["xsC+//"])
         }), (0, i.jsx)(l.olH, {
           onClick: o,
@@ -114,18 +114,18 @@ function P(e) {
       }), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(u.Z, {
           contentClassName: r()({
-            [A.gifPickerContent]: v && L
+            [A.gifPickerContent]: v && w
           }),
           className: r()(A.gifPicker, {
-            [A.loadingOverlay]: R
+            [A.loadingOverlay]: j
           }),
           onSelectGIF: B,
           hideFavorites: true
-        }), R && (0, i.jsx)(l.$jN, {
+        }), j && (0, i.jsx)(l.$jN, {
           className: A.spinner
         })]
-      }), v && L && (0, i.jsx)(_.Z, {
-        uploadType: b,
+      }), v && w && (0, i.jsx)(_.Z, {
+        uploadType: P,
         analyticsSource: Z,
         showUpsell: true,
         className: A.nitroUpsell

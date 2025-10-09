@@ -9,7 +9,7 @@ require.d(exports, {
   JM: () => w,
   NZ: () => M,
   ZP: () => et,
-  aN: () => x,
+  aN: () => L,
   ay: () => Q,
   ff: () => E,
   gT: () => C,
@@ -17,7 +17,7 @@ require.d(exports, {
   pK: () => b,
   pU: () => en,
   rI: () => K,
-  tp: () => j,
+  tp: () => k,
   xR: () => X
 }), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk654861 = require("./654861.js"),
@@ -186,13 +186,13 @@ function D(e) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = D(e, n);
   return null != r ? ee(r) : t.getAvatarSource(e.guildId, n)
 }
 
-function x(e) {
+function L(e) {
   let t, {
     id: n,
     banner: r,
@@ -228,7 +228,7 @@ function M(e) {
   return u.searchParams.set("size", "".concat((0, l.oO)(n * (0, l.x_)()))), u.searchParams.set("passthrough", "".concat(r)), u.toString()
 }
 
-function j(e) {
+function k(e) {
   let t, {
     id: n,
     guildId: r,
@@ -247,7 +247,7 @@ function j(e) {
   return "webp" === u && a && X(i) && (_.animated = true), t += "?".concat(o.stringify(_))
 }
 
-function k(e) {
+function j(e) {
   let t, {
     id: n,
     splash: r,
@@ -260,7 +260,7 @@ function k(e) {
 }
 
 function U(e) {
-  return ee(k(e))
+  return ee(j(e))
 }
 
 function G(e) {
@@ -475,9 +475,9 @@ let et = {
   getDefaultAvatarURL: N,
   getGuildMemberAvatarURL: D,
   getGuildMemberAvatarURLSimple: w,
-  getGuildMemberAvatarSource: L,
-  getGuildMemberBannerURL: j,
-  getUserBannerURL: x,
+  getGuildMemberAvatarSource: x,
+  getGuildMemberBannerURL: k,
+  getUserBannerURL: L,
   getAvatarDecorationURL: M,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? true : e.icon)
@@ -485,7 +485,7 @@ let et = {
   isAnimatedIconHash: X,
   getUserAvatarSource: (e, t, n) => ee(P(e, t, n)),
   getGuildIconURL: V,
-  getGuildSplashURL: k,
+  getGuildSplashURL: j,
   getGuildSplashSource: U,
   getGuildDiscoverySplashURL: Z,
   getGuildDiscoverySplashSource: F,

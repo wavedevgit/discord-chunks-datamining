@@ -24,7 +24,7 @@ function x(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, s.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, a.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)("div", {
@@ -35,7 +35,7 @@ function x(e) {
       })
     }), (0, r.jsxs)("div", {
       className: h.channelList,
-      children: [(0, r.jsx)(_, {}), 0 === l.length && (0, r.jsx)(b, {}), (0, r.jsx)(j, {
+      children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(b, {}), (0, r.jsx)(j, {
         channels: l
       })]
     })]
@@ -65,7 +65,7 @@ function j(e) {
     channels: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map(e => e.isCategory() ? (0, r.jsx)(v, {
+    children: t.map(e => e.isCategory() ? (0, r.jsx)(_, {
       label: e.name
     }, e.id) : (0, r.jsx)(C, {
       channel: e
@@ -73,13 +73,13 @@ function j(e) {
   })
 }
 
-function _() {
+function v() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk628682.divider
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     label: t
   } = e;
@@ -90,7 +90,7 @@ function v(e) {
       width: 12,
       height: 12,
       direction: g.Z.Directions.DOWN
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
       color: "text-muted",
       lineClamp: 1,
@@ -103,14 +103,14 @@ function C(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, d.iF)(n), s = null != (t = (0, o.KS)(n)) ? t : a.VL1;
+  } = e, i = (0, d.iF)(n), a = null != (t = (0, o.KS)(n)) ? t : s.VL1;
   return (0, r.jsxs)("div", {
     className: h.channel,
-    children: [(0, r.jsx)(s, {
+    children: [(0, r.jsx)(a, {
       className: h.channelIcon,
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       className: h.channelName,
       variant: "text-md/normal",
       color: "text-muted",

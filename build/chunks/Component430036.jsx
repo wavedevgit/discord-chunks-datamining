@@ -391,7 +391,7 @@ class ea extends Chunk647438.PureComponent {
       p = n && r,
       h = n && d && !r,
       f = (0, Y.Z)(l);
-    return (0, i.jsx)(J.ZP, {
+    return (0, i.jsx)(q.ZP, {
       className: o()(f, {
         [et.widgetWrapper]: !n,
         [et.widgetWrapperPinned]: n,
@@ -504,7 +504,7 @@ function ec(e) {
     } = (0, O.Z)({
       channel: o
     });
-  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(v.Z, {}) : (0, i.jsx)(ea, ei({
+  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(b.Z, {}) : (0, i.jsx)(ea, ei({
     guild: h,
     channel: o,
     user: y,

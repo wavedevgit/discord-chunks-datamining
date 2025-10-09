@@ -57,17 +57,17 @@ let I = Chunk647438.memo(function(e) {
     guild: l,
     channel: I,
     integrations: E,
-    editedIntegration: Z,
-    webhooks: T,
+    editedIntegration: T,
+    webhooks: Z,
     editedWebhook: k,
     isFetchingWebhooks: A,
     refToScroller: D,
     errors: R,
     hasChanges: L
-  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != I ? I : M, G = t === N.b4C.APPLICATION ? n : null, [z, F] = r.useState(d.$x), K = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
+  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != I ? I : M, G = t === N.b4C.APPLICATION ? n : null, [z, K] = r.useState(d.$x), F = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
     intensity: z
-  }), F(Math.min(z + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (F(d.$x), true), [L, z]), q = r.useCallback(e => !!K() && (c.Z.setSection(e), true), [K]), {
+  }), K(Math.min(z + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, z]), q = r.useCallback(e => !!F() && (c.Z.setSection(e), true), [F]), {
     applicationIntegrations: V,
     applicationBotIds: Y,
     builtInIntegrations: J,
@@ -91,7 +91,7 @@ let I = Chunk647438.memo(function(e) {
             }, (null == (l = i.application.bot) ? true : l.id) !== true && (t[i.application.bot.id] = i.application.id)
           }
         } else i.type in n || (n[i.type] = []), n[i.type].push(i);
-    for (let t of T)(t.channel_id in B || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === N.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
+    for (let t of Z)(t.channel_id in B || t.channel_id in W) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === N.ylB.CHANNEL_FOLLOWER ? r.push(t) : i.push(t));
     return {
       applicationIntegrations: e,
       applicationBotIds: t,
@@ -99,7 +99,7 @@ let I = Chunk647438.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [E, B, W, T]);
+  }, [E, B, W, Z]);
   r.useEffect(() => {
     if (!A) switch (t) {
       case N.b4C.TWITCH:
@@ -122,7 +122,7 @@ let I = Chunk647438.memo(function(e) {
       null != J[N.ABu.TWITCH] && ($ = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: J[N.ABu.TWITCH],
-        editedIntegration: Z,
+        editedIntegration: T,
         labelText: S.intl.string(S.t.q4pBGx),
         platformType: N.ABu.TWITCH,
         descriptionText: S.intl.string(S.t.V9kNqq),
@@ -134,14 +134,14 @@ let I = Chunk647438.memo(function(e) {
           helpdeskArticle: x.Z.getArticleURL(N.BhN.TWITCH_INTEGRATION)
         }),
         errors: R,
-        canNavigate: K
+        canNavigate: F
       }));
       break;
     case N.b4C.YOUTUBE:
       null != J[N.ABu.YOUTUBE] && ($ = (0, i.jsx)(v.Z, {
         guild: l,
         integrations: J[N.ABu.YOUTUBE],
-        editedIntegration: Z,
+        editedIntegration: T,
         labelText: S.intl.string(S.t.aS6cKy),
         platformType: N.ABu.YOUTUBE,
         descriptionText: S.intl.string(S.t["7Tv7JC"]),
@@ -152,7 +152,7 @@ let I = Chunk647438.memo(function(e) {
           helpdeskArticle: x.Z.getArticleURL(N.BhN.YOUTUBE_INTEGRATION)
         }),
         errors: R,
-        canNavigate: K
+        canNavigate: F
       }));
       break;
     case N.b4C.APPLICATION:
@@ -164,7 +164,7 @@ let I = Chunk647438.memo(function(e) {
         editedWebhook: k,
         selectableWebhookChannels: B,
         errors: R,
-        canNavigate: K
+        canNavigate: F
       }));
       break;
     case N.b4C.CHANNEL_FOLLOWING:
@@ -172,7 +172,7 @@ let I = Chunk647438.memo(function(e) {
         followedChannelWebhooks: Q,
         editedWebhook: k,
         selectableWebhookChannels: B,
-        canNavigate: K,
+        canNavigate: F,
         errors: R
       });
       break;
@@ -200,7 +200,7 @@ let I = Chunk647438.memo(function(e) {
           }
           return e
         }({}, B, W),
-        canNavigate: K,
+        canNavigate: F,
         refToScroller: D,
         errors: R
       });
@@ -247,8 +247,8 @@ let I = Chunk647438.memo(function(e) {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
       className: w.breadcrumbs,
-      children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
-        tag: "h1",
+      children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.X6q, {
+        variant: "heading-lg/semibold",
         children: P(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
@@ -259,8 +259,8 @@ let I = Chunk647438.memo(function(e) {
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && q(parseInt(e.id))
         },
-        renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
-          tag: "h1",
+        renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.X6q, {
+          variant: "heading-lg/semibold",
           className: t ? w.breadcrumbActive : w.breadcrumbInactive,
           children: e.label
         })

@@ -268,7 +268,7 @@ async function el(e) {
     }
   }
   let y = D.Z.getChannel(r),
-    O = null != i ? L.Z.getGuild(i) : null;
+    O = null != i ? x.Z.getGuild(i) : null;
   if (null == y) return {
     result: "failure",
     reason: 3
@@ -309,7 +309,7 @@ async function el(e) {
           null == l || l(), e()
         },
         onFailure: (e, n, a, o) => {
-          null == l || l(), k.default.track(J.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
+          null == l || l(), j.default.track(J.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
             channel_id: r,
             guild_id: i,
             application_id: t,
@@ -365,9 +365,9 @@ async function ec(e) {
   let p = (0, W.e4)({
     channelId: i,
     ChannelStore: D.Z,
-    GuildStore: L.Z,
-    PermissionStore: x.Z,
-    VoiceStateStore: j.Z
+    GuildStore: x.Z,
+    PermissionStore: L.Z,
+    VoiceStateStore: k.Z
   });
   if (p !== W.jy.CAN_LAUNCH) {
     let e = 4;

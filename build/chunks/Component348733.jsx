@@ -26,14 +26,14 @@ function y(e) {
   } = e, s = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
   if ((0, a.e7)([h.Z], () => h.Z.isNotificationDisabled(f.n0.TextChat)) || y === g._vf.DISABLED) return null;
   let O = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    v = (0, l.groupBy)(O, e => e.type);
+    b = (0, l.groupBy)(O, e => e.type);
   return (0, i.jsx)(u.Z, {
     contentDomRef: s,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
       ref: s,
       className: o()(m.container, m[y]),
-      children: Object.entries(v).map(e => {
+      children: Object.entries(b).map(e => {
         let [r, s] = e;
         return 0 === s.length ? null : (0, i.jsx)(_, {
           locked: t,

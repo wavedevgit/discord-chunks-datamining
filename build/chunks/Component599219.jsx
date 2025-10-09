@@ -87,9 +87,9 @@ function S(e) {
     {
       onClose: S
     } = s,
-    [L, w] = o.useState(false),
-    k = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
-    M = null != k && null == k.nsfwAllowed,
+    [L, k] = o.useState(false),
+    w = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
+    M = null != w && null == w.nsfwAllowed,
     [P, U] = o.useState(M ? O.F.AGE_GATE : O.F.CHOOSE_TEMPLATE),
     [R, Z] = o.useState(null);
   o.useEffect(() => {
@@ -101,8 +101,8 @@ function S(e) {
       template_code: e.code
     })
   }, [H, U]), {
-    content: X,
-    footer: K
+    content: K,
+    footer: X
   } = (0, f.v)({
     hasFooter: false,
     onBack: () => {
@@ -119,7 +119,7 @@ function S(e) {
     titleClassName: G.customizeGuildTitle,
     hasFooter: false,
     onGuildCreated: e => {
-      z(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : w(true)
+      z(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : k(true)
     },
     onBack: () => {
       U(O.F.CREATION_INTENT)
@@ -133,7 +133,7 @@ function S(e) {
     createdGuildId: B,
     hasFooter: false,
     onChannelPromptCompleted: () => {
-      w(true)
+      k(true)
     },
     isSlideReady: R === O.F.CHANNEL_PROMPT
   }), {
@@ -158,7 +158,7 @@ function S(e) {
       eo = ea;
       break;
     case O.F.CREATION_INTENT:
-      eo = K
+      eo = X
   }
   let {
     ref: es,
@@ -227,7 +227,7 @@ function S(e) {
               impressionProperties: el,
               children: (0, a.jsx)("div", {
                 className: r()(G.container, G.standardFooter),
-                children: X
+                children: K
               })
             }), (0, a.jsx)(c.Mi4, {
               id: O.F.CUSTOMIZE_GUILD,

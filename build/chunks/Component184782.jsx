@@ -1,7 +1,7 @@
 /** Chunk was on 90542 **/
 /** chunk id: 184782, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => P
 }), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -72,7 +72,7 @@ let k = e => {
       })]
     }) : null
   },
-  w = e => {
+  P = e => {
     var n;
     let {
       onClose: i,
@@ -173,7 +173,8 @@ let k = e => {
           color: "header-secondary",
           className: S.guildDescription,
           children: j.description
-        }) : null, (0, a.jsx)(s.vwX, {
+        }) : null, (0, a.jsx)(s.X6q, {
+          variant: "heading-sm/semibold",
           className: S.choiceHeader,
           children: T.intl.string(T.t["haj5+v"])
         }), (0, a.jsx)("div", {

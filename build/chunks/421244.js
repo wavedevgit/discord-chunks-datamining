@@ -31,9 +31,9 @@ var Chunk98405 = require("./98405.js"),
   P = RegExp.prototype,
   w = TypeError,
   D = Chunk35760("".indexOf),
-  L = Chunk35760("".matchAll),
-  x = !!L && !Chunk621523(function() {
-    L("a", /./)
+  x = Chunk35760("".matchAll),
+  L = !!x && !Chunk621523(function() {
+    x("a", /./)
   }),
   M = Chunk280481(function(e, t, n, r) {
     N(this, {
@@ -52,7 +52,7 @@ var Chunk98405 = require("./98405.js"),
       r = Chunk820616(exports, require);
     return null === Chunk98405 ? (module.done = true, Chunk682564(true, true)) : (module.global ? "" === Chunk382698(Chunk98405[0]) && (exports.lastIndex = Chunk857168(require, Chunk554148(exports.lastIndex), module.unicode)) : module.done = true, Chunk682564(Chunk98405, false))
   }),
-  j = function(e) {
+  k = function(e) {
     var t, n, r, i = d(this),
       a = u(e),
       o = y(i, RegExp),
@@ -62,17 +62,17 @@ var Chunk98405 = require("./98405.js"),
 Chunk98405({
   target: "String",
   proto: true,
-  forced: x
+  forced: L
 }, {
   matchAll: function(e) {
     var t, n, r, a = l(this);
     if (f(e)) {
-      if (x) return L(a, e)
+      if (L) return x(a, e)
     } else {
       if (p(e) && !~D(u(l(h(e))), "g")) throw new w("`.matchAll` does not allow non-global regexes");
-      if (x) return L(a, e);
-      if (true === (n = m(e, S)) && T && "RegExp" === _(e) && (n = j), n) return i(n, e, a)
+      if (L) return x(a, e);
+      if (true === (n = m(e, S)) && T && "RegExp" === _(e) && (n = k), n) return i(n, e, a)
     }
-    return t = u(a), r = RegExp(e, "g"), T ? i(j, r, t) : r[S](t)
+    return t = u(a), r = RegExp(e, "g"), T ? i(k, r, t) : r[S](t)
   }
-}), Chunk511696 || S in P || Chunk556585(P, S, j)
+}), Chunk511696 || S in P || Chunk556585(P, S, k)

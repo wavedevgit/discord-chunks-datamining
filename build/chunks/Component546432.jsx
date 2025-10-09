@@ -45,7 +45,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,14 +70,14 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -85,7 +85,7 @@ function j(e, t) {
   return i
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -203,11 +203,11 @@ function V(e) {
     renderPlaintextFilePreview: A,
     renderGenericFileComponent: w,
     renderVisualPlaceholderComponent: D,
-    className: L,
-    imgContainerClassName: x,
+    className: x,
+    imgContainerClassName: L,
     imgClassName: M,
-    focusable: j,
-    hiddenSpoilers: k,
+    focusable: k,
+    hiddenSpoilers: j,
     mediaLayoutType: U,
     maxWidth: G,
     maxHeight: B,
@@ -289,7 +289,7 @@ function V(e) {
       })
     }, [U, l, Q, eo, J, eu, ee, el, n, ec, es, K, ed, H, ei, u]);
   if (z) return (0, r.jsx)(c.Eep, {
-    className: L,
+    className: x,
     readyState: N.zo9.READY,
     src: "",
     width: null != q ? q : 350,
@@ -308,17 +308,17 @@ function V(e) {
           message: t,
           width: q,
           height: X,
-          autoPlay: a && !k,
+          autoPlay: a && !j,
           onClick: _,
           onContextMenu: h,
           shouldHideMediaOptions: eo,
           renderAccessory: e,
           renderAdjacentContent: e_,
-          containerClassName: L,
-          className: x,
+          containerClassName: x,
+          className: L,
           imageClassName: M,
-          shouldLink: j,
-          hiddenSpoilers: k,
+          shouldLink: k,
+          hiddenSpoilers: j,
           responsive: true,
           mediaLayoutType: U,
           maxWidth: G,
@@ -341,10 +341,10 @@ function V(e) {
         renderAdjacentContent: e_,
         naturalWidth: q,
         naturalHeight: X,
-        className: o()(L, {
+        className: o()(x, {
           [P.hasFooter]: Z
         }),
-        playable: j,
+        playable: k,
         responsive: true,
         mediaLayoutType: U,
         maxWidth: G,
@@ -361,7 +361,7 @@ function V(e) {
       return (0, r.jsx)(D, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         imageClassName: M,
         maxWidth: G,
         maxHeight: B,
@@ -372,8 +372,8 @@ function V(e) {
       return (0, r.jsx)(T, {
         item: n,
         message: t,
-        className: L,
-        playable: j,
+        className: x,
+        playable: k,
         mimeType: el,
         renderAdjacentContent: e_,
         onVolumeShow: () => et(true),
@@ -384,7 +384,7 @@ function V(e) {
       return (0, r.jsx)(A, {
         item: n,
         message: t,
-        className: L,
+        className: x,
         onClick: _,
         onContextMenu: h,
         renderAdjacentContent: e_
@@ -393,7 +393,7 @@ function V(e) {
       return (0, r.jsx)(w, {
         item: n,
         message: t,
-        className: L,
+        className: x,
         onClick: _,
         onContextMenu: h,
         renderAdjacentContent: e_
@@ -417,7 +417,7 @@ function H(e, t, n) {
     });
     r = t
   }
-  return M(L({}, n !== C.hV.MOSAIC && {
+  return M(x({}, n !== C.hV.MOSAIC && {
     maxWidth: null != r ? r : "400px"
   }), {
     width: "100%",
@@ -436,18 +436,18 @@ let Y = function(e) {
     isSingleMosaicItem: u,
     footer: d,
     displayGridItem: f
-  } = e, _ = j(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
+  } = e, _ = k(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
   let {
     width: h,
     height: b,
     type: y
-  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [x, k] = i.useState(false), Z = () => {
-    k(true)
+  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [L, j] = i.useState(false), Z = () => {
+    j(true)
   }, F = () => {
-    k(false)
+    j(false)
   }, Y = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (0, r.jsx)(V, M(L({}, _), {
+    return (0, r.jsx)(V, M(x({}, _), {
       item: n,
       message: a,
       getObscureReason: s,
@@ -489,7 +489,7 @@ let Y = function(e) {
       obscured: v,
       containerStyles: H(n, R, c),
       obscurityControlClassName: o()({
-        [P.obscureVideoSpacing]: "VIDEO" === y && u && !v && x
+        [P.obscureVideoSpacing]: "VIDEO" === y && u && !v && L
       }),
       onToggleObscurity: () => I(e => !e),
       children: e => Y(e)

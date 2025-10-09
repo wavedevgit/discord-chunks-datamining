@@ -58,15 +58,15 @@ let h = [],
       id: e.channelId
     })), [x]), {
       handleDragStart: j,
-      handleDragReset: _,
-      handleDragComplete: v
-    } = (0, a.Z)(b, c.lq), C = i.useCallback((e, n) => {
+      handleDragReset: v,
+      handleDragComplete: _
+    } = (0, s.Z)(b, c.lq), C = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
     }, [t]), O = i.useCallback(() => {
-      if (null != t) return (0, s.ZDy)(async () => {
+      if (null != t) return (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
@@ -84,15 +84,15 @@ let h = [],
         resourceChannel: e,
         index: n,
         onDragStart: j,
-        onDragReset: _,
-        onDragComplete: v
-      }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(s.P3F, {
+        onDragReset: v,
+        onDragComplete: _
+      }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: m.addActionItem,
         onClick: O,
-        children: [(0, r.jsx)(s.oFk, {
+        children: [(0, r.jsx)(a.oFk, {
           size: "xs",
           color: "currentColor"
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "none",
           children: g.intl.string(g.t["w9/qGR"])

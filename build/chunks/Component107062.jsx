@@ -2,7 +2,7 @@
 /** chunk id: 107062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => L
+  ZP: () => x
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,21 +58,21 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  L = e => {
+  x = e => {
     let {
       channel: t,
       entry: n,
       onReaction: b,
-      onVoiceChannelPreview: L,
-      disableActivityProfileLinks: x
+      onVoiceChannelPreview: x,
+      disableActivityProfileLinks: L
     } = e, {
       largeImage: M
     } = (0, y.rv)({
       entry: n,
       showCoverImage: false
     }), {
-      user: j,
-      details: k,
+      user: k,
+      details: j,
       activity: U,
       embeddedActivity: G
     } = (0, C.n)(n), {
@@ -88,13 +88,13 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         applicationId: n.extra.application_id
       })
     }, z = i.useCallback(e => {
-      if ((null == M ? true : M.src) == null || null == t || null == j) return;
+      if ((null == M ? true : M.src) == null || null == t || null == k) return;
       let r = W > 0 ? D({
         entry: n,
         channel: t,
         users: [H, Y],
         countOthers: W
-      }) : w(n, t, j);
+      }) : w(n, t, k);
       return (0, I.C4)({
         entry: n,
         applicationImageSrc: null == M ? true : M.src,
@@ -104,7 +104,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         colors: [B, Z],
         channelId: e
       })
-    }, [null == M ? true : M.src, t, V, n, F, W, H, Y, B, Z, j]), {
+    }, [null == M ? true : M.src, t, V, n, F, W, H, Y, B, Z, k]), {
       data: q
     } = (0, h.IX)(n.extra.application_id), X = (0, u.Z)({
       application: q,
@@ -116,7 +116,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
     }, {
       autoTrackExposure: true
     });
-    if (null == j) return null;
+    if (null == k) return null;
     let J = (0, r.jsx)(S.PZ, {
         location: S.Gt.POPOUT,
         entry: n
@@ -125,19 +125,19 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         channel: t,
         userDescription: (0, v.kr)(n) ? R.t.vPg1JS : R.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: k,
+        subtitle: j,
         badges: J,
         entry: n,
         showCoverImage: false,
-        onClickTitle: x ? true : K,
-        onClickSubtitle: x ? true : K,
-        onClickThumbnail: x ? true : K
+        onClickTitle: L ? true : K,
+        onClickSubtitle: L ? true : K,
+        onClickThumbnail: L ? true : K
       }),
       ee = (0, l.Z)(U, N.xjy.JOIN) || (0, c.Z)(U),
       et = ee ? (0, r.jsx)(d.Z, {
         embeddedActivity: G,
         activity: U,
-        user: j,
+        user: k,
         variant: "primary",
         size: "md",
         icon: o.YVR
@@ -151,7 +151,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         icon: o.v3n
       }),
       er = Q ? o.iWm : o.jje,
-      ei = null != en || x ? null : (0, r.jsx)(o.zxk, {
+      ei = null != en || L ? null : (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "md",
         fullWidth: true,
@@ -159,16 +159,16 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         text: R.intl.string(R.t.GDWYR0),
         icon: er
       }),
-      ea = [en, ee && !x ? et : ei].filter(E.lm);
+      ea = [en, ee && !L ? et : ei].filter(E.lm);
     return (0, r.jsxs)(A.yR, {
       children: [$, (0, r.jsx)(A.St, {
         children: (0, r.jsx)(A.WT, {
           onReaction: b,
-          onVoiceChannelPreview: L,
-          user: j,
+          onVoiceChannelPreview: x,
+          user: k,
           channel: t,
           generateReactionImage: z,
-          reactionImageAltText: P(n, j),
+          reactionImageAltText: P(n, k),
           entry: n,
           buttons: ea
         })

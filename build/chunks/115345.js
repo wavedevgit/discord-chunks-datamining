@@ -41,7 +41,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,13 +57,13 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ function U(e, t) {
   return r.useEffect(() => d(c()), [c]), {
     guildPlans: u,
     overrideGuild: r.useCallback((e, t) => {
-      s(n => k(M({}, n), {
+      s(n => j(M({}, n), {
         [e]: t
       }))
     }, []),
@@ -217,8 +217,8 @@ async function H(e, t) {
     } else n()
   } catch (e) {
     I.Z.captureException(e), c.Z.show({
-      title: L.intl.string(L.t.j2d6Ki),
-      body: L.intl.string(L.t.mCjLAQ),
+      title: x.intl.string(x.t.j2d6Ki),
+      body: x.intl.string(x.t.mCjLAQ),
       onConfirm: t
     })
   }
@@ -240,7 +240,7 @@ function Y(e) {
       unmuted_server_ids: t.filter(e => b.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, k(M({}, n), {
+    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
       auto_migrated: true,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),

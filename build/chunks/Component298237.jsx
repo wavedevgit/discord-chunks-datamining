@@ -1,5 +1,5 @@
 /** Chunk was on 76323 **/
-/** chunk id: 298237, original params: t,e,n (module,exports,require) **/
+/** chunk id: 298237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => y
 }), require("./388685.js");
@@ -19,11 +19,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk630724 = require("./630724.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(t) {
+function y(e) {
   let {
-    transitionState: e,
+    transitionState: t,
     onClose: n
-  } = t, [y, b] = l.useState(null), [g, T] = l.useState(null), [O, S] = l.useState(false), N = l.useRef(null), v = (0, i.e7)([c.default], () => c.default.getCurrentUser()), h = l.useRef(null);
+  } = e, [y, b] = l.useState(null), [g, T] = l.useState(null), [O, N] = l.useState(false), S = l.useRef(null), v = (0, i.e7)([c.default], () => c.default.getCurrentUser()), h = l.useRef(null);
   l.useEffect(() => {
     u.Z.flowStep(m.MK.ANY, m.FF.AGE_GATE), s.default.track(E.rMx.OPEN_MODAL, {
       type: "Claim Age Gate"
@@ -31,28 +31,28 @@ function y(t) {
   }, []), l.useEffect(() => {
     (null == v ? true : v.nsfwAllowed) != null && n()
   }, [v, n]);
-  let G = async t => {
-    if (t.preventDefault(), null != y) {
-      S(true);
+  let G = async e => {
+    if (e.preventDefault(), null != y) {
+      N(true);
       try {
         await p.Av(y, E.jXE.CLAIM_ACCOUNT_MODAL)
-      } catch (t) {
-        if (null != t.body && null != t.body.date_of_birth) u.Z.flowStep(m.MK.ANY, m.FF.AGE_GATE_UNDERAGE), p.wE(_.L0.CLAIM_ACCOUNT), p.hp(_.L0.CLAIM_ACCOUNT), n();
+      } catch (e) {
+        if (null != e.body && null != e.body.date_of_birth) u.Z.flowStep(m.MK.ANY, m.FF.AGE_GATE_UNDERAGE), p.wE(_.L0.CLAIM_ACCOUNT), p.hp(_.L0.CLAIM_ACCOUNT), n();
         else {
-          var e;
-          (null == t || null == (e = t.body) ? true : e.username) != null ? T(A.intl.string(A.t["TGg/2t"])) : T(null == t ? true : t.body.message)
+          var t;
+          (null == e || null == (t = e.body) ? true : t.username) != null ? T(A.intl.string(A.t["TGg/2t"])) : T(null == e ? true : e.body.message)
         }
       }
-      S(false)
+      N(false)
     }
   }, w = l.useCallback(() => {
-    var t;
-    null == (t = h.current) || t.focus()
+    var e;
+    null == (e = h.current) || e.focus()
   }, [h]);
   return (0, r.jsx)("form", {
     onSubmit: G,
     children: (0, r.jsx)(a.Modal, {
-      transitionState: e,
+      transitionState: t,
       onClose: n,
       title: A.intl.string(A.t.QpSKo6),
       subtitle: A.intl.format(A.t.EcJBEB, {
@@ -77,11 +77,11 @@ function y(t) {
         autoFocus: true,
         label: A.intl.string(A.t.rhBeKS),
         name: "birthday",
-        onChange: t => b(t),
+        onChange: e => b(e),
         onPopulated: w,
         error: g,
         value: y,
-        ref: N
+        ref: S
       })
     })
   })

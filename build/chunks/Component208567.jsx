@@ -87,8 +87,8 @@ class v extends(i = Chunk647438.PureComponent) {
       icon: P,
       hideSize: I,
       imageStyle: E,
-      showRemoveButton: Z,
-      maxFileSizeBytes: T,
+      showRemoveButton: T,
+      maxFileSizeBytes: Z,
       onFileSizeError: k,
       onOpenImageSelectModal: A,
       "aria-label": D
@@ -146,7 +146,7 @@ class v extends(i = Chunk647438.PureComponent) {
               className: Chunk270956.imageUploaderFileInput,
               "aria-label": R,
               tabIndex: 0,
-              maxFileSizeBytes: T,
+              maxFileSizeBytes: Z,
               onFileSizeError: k
             })]
           }), null != Chunk512722 && (0, Chunk951288.jsx)("div", {
@@ -158,7 +158,7 @@ class v extends(i = Chunk647438.PureComponent) {
             icon: P
           })]
         })
-      }), Z ? Chunk647438 : null]
+      }), T ? Chunk647438 : null]
     })
   }
   constructor(...e) {

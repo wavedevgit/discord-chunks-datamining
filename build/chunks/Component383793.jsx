@@ -30,11 +30,11 @@ function C(e) {
   } = e;
   if (null != t && t.length > 0) {
     let e = (0, c.Z)(t);
-    return (0, r.jsx)(s.Text, {
+    return (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: v.vanityInfo,
-      children: _.intl.format(_.t["1qTOvr"], {
+      className: _.vanityInfo,
+      children: v.intl.format(v.t["1qTOvr"], {
         urlText: e,
         urlValue: e
       })
@@ -48,28 +48,28 @@ function O(e) {
     guild: t,
     vanityURLCode: n,
     vanityURLUses: l,
-    originalVanityURLCode: a,
+    originalVanityURLCode: s,
     errorDetails: o
   } = e, c = (null == t ? true : t.features.has(b.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
     (0, m.Gy)("")
   }, []), u = i.useCallback(e => {
     (0, m.Gy)(e)
   }, []);
-  if (null == n) return (0, r.jsx)(s.$jN, {});
+  if (null == n) return (0, r.jsx)(a.$jN, {});
   let g = null != o ? (0, p.i)(o.code) : null;
-  return (0, r.jsxs)(s.Zbd, {
+  return (0, r.jsxs)(a.Zbd, {
     editable: true,
-    className: v.editVanityUrlCard,
+    className: _.editVanityUrlCard,
     children: [(0, r.jsxs)("div", {
-      className: v.formTitleField,
-      children: [(0, r.jsx)(s.X6q, {
+      className: _.formTitleField,
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: _.intl.string(_.t["6oJyq6"])
-      }), n.length > 0 ? (0, r.jsx)(s.Text, {
+        children: v.intl.string(v.t["6oJyq6"])
+      }), n.length > 0 ? (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: _.intl.format(_.t.MVWOUV, {
+        children: v.intl.format(v.t.MVWOUV, {
           uses: l
         })
       }) : null]
@@ -78,12 +78,12 @@ function O(e) {
       onChange: u,
       error: g,
       disabled: !c
-    }), null != a && a.length > 0 ? (0, r.jsx)("div", {
-      className: v.removeVanityUrlButton,
-      children: (0, r.jsx)(s.zxk, {
+    }), null != s && s.length > 0 ? (0, r.jsx)("div", {
+      className: _.removeVanityUrlButton,
+      children: (0, r.jsx)(a.zxk, {
         variant: "critical-secondary",
         onClick: d,
-        text: _.intl.string(_.t["3ggb6O"])
+        text: v.intl.string(v.t["3ggb6O"])
       })
     }) : null]
   })
@@ -93,13 +93,13 @@ function y(e) {
   let {
     guild: t,
     vanityURLCode: n,
-    vanityURLUses: s,
+    vanityURLUses: a,
     originalVanityURLCode: c,
     errorDetails: m
   } = e, {
     analyticsLocations: x
-  } = (0, o.ZP)(), _ = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), _ ? (g.Z.close(), (0, u.Z)(t.id, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
+  } = (0, o.ZP)(), v = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), v ? (g.Z.close(), (0, u.Z)(t.id, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
       guild: t,
       analyticsLocations: x,
       analyticsSection: b.jXE.GUILD_SETTINGS_VANITY_URL,
@@ -107,17 +107,17 @@ function y(e) {
       perks: (0, j.WW)(),
       targetPremiumGuildTier: b.Eu4.TIER_3
     })
-  }, [x, t, _]);
+  }, [x, t, v]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, p.p)(t) ? (0, r.jsx)(O, {
       guild: t,
       vanityURLCode: n,
-      vanityURLUses: s,
+      vanityURLUses: a,
       originalVanityURLCode: c,
       errorDetails: m
     }) : (0, r.jsx)(h.P, {
       onClick: y,
-      className: v.upsellButton
+      className: _.upsellButton
     }), (0, r.jsx)(C, {
       originalVanityURLCode: c
     })]

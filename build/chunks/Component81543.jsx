@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk215569 = require("./215569.js"),
   Chunk248881 = require("./248881.js");
@@ -85,15 +85,15 @@ let h = e => {
     step: n,
     direction: r,
     className: l,
-    onAnimationStart: s,
+    onAnimationStart: a,
     onAnimationEnd: o
   } = e;
   return (0, i.jsx)(c.W, {
     component: "div",
-    className: a()(d.animator, l),
+    className: s()(d.animator, l),
     children: (0, i.jsx)(f, {
       direction: r,
-      onAnimationStart: s,
+      onAnimationStart: a,
       onAnimationEnd: o,
       children: t
     }, n)

@@ -47,11 +47,11 @@ function b(e) {
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, a.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = b(t), m = g.length > 0, j = p.$X.some(e => {
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = b(t), m = g.length > 0, j = p.$X.some(e => {
     var n, r;
     return !u.Z.can(e, t, null, {
       [i.id]: (n = x({}, i), r = r = {
-        permissions: s.Od(i.permissions, e)
+        permissions: a.Od(i.permissions, e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function j(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n)
     })
-  }), _ = (0, r.jsxs)(r.Fragment, {
+  }), v = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: h.itemContent,
       children: [(0, r.jsx)(c.X6q, {
@@ -97,7 +97,7 @@ function j(e) {
     text: f.intl.string(f.t["E5v/a2"]),
     children: (0, r.jsx)("div", {
       className: l()(h.simpleItemWrapper, h.disabled),
-      children: _
+      children: v
     })
   }) : (0, r.jsx)(c.P3F, {
     onClick: () => {
@@ -111,9 +111,9 @@ function j(e) {
       })
     },
     className: l()(h.simpleItemWrapper, h.clickable),
-    children: _
+    children: v
   }) : (0, r.jsx)("div", {
     className: h.simpleItemWrapper,
-    children: _
+    children: v
   })
 }

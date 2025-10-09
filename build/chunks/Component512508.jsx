@@ -340,12 +340,12 @@ function k(e) {
             let {
               section: t
             } = e;
-            return 0 === t ? (0, r.jsx)(u.vwX, {
-              tag: "h5",
+            return 0 === t ? (0, r.jsx)(u.X6q, {
+              variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
               children: O.intl.string(O.t.OGiMXF)
-            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
-              tag: "h5",
+            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.X6q, {
+              variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
               children: O.intl.string(O.t.LPJmLy)
             }, O.intl.string(O.t.LPJmLy)) : null

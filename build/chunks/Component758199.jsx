@@ -89,10 +89,10 @@ function O(e) {
         messageId: T.messageId
       }), w.current = true
     }
-  }, true), L = null != h, x = null != E && false === P, M = L || x, j = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, k = i.useRef(null), U = i.useCallback(() => {
-    let e = k.current;
+  }, true), x = null != h, L = null != E && false === P, M = x || L, k = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, j = i.useRef(null), U = i.useCallback(() => {
+    let e = j.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), G = i.useMemo(() => !!x && new URL(E).pathname.endsWith(".gif"), [x, E]), B = i.useMemo(() => {
+  }, []), G = i.useMemo(() => !!L && new URL(E).pathname.endsWith(".gif"), [L, E]), B = i.useMemo(() => {
     if (null != S) return e => {
       S(e), (0, p.KX)(T.id, T.linkType, p.j_.CONTENT, T.referrerId, T.activityCustomId)
     }
@@ -106,22 +106,22 @@ function O(e) {
     className: g.embed,
     children: [M && (0, r.jsxs)(y, {
       onClick: Z,
-      className: o()(g.bannerWrapper, j, {
-        [g.showVideoOnFocus]: x
+      className: o()(g.bannerWrapper, k, {
+        [g.showVideoOnFocus]: L
       }),
-      children: [x && (G ? (0, r.jsx)("div", {
+      children: [L && (G ? (0, r.jsx)("div", {
         className: g.videoBanner,
         style: {
           backgroundImage: "url(".concat(E, ")")
         }
       }) : (0, r.jsx)(f.Z, {
-        ref: k,
+        ref: j,
         src: E,
         mediaLayoutType: m.hV.MOSAIC,
         loop: true,
         muted: true,
         className: g.videoBanner
-      })), L && (0, r.jsx)("div", {
+      })), x && (0, r.jsx)("div", {
         className: g.staticBanner,
         style: {
           backgroundImage: "url(".concat(h, ")")

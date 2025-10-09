@@ -58,19 +58,17 @@ function N() {
     className: Chunk844642.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }) : null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 24,
       className: Chunk844642.sessions,
-      children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
-        title: Chunk388032.intl.string(Chunk388032.t.LLS19v),
-        titleClassName: Chunk844642.groupTitle,
+      children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
+        label: Chunk388032.intl.string(Chunk388032.t.LLS19v),
         children: null != exports ? (0, Chunk951288.jsx)(R, {
           session: exports,
           current: true
         }) : null
-      }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-        title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
-        titleClassName: Chunk844642.groupTitle,
-        className: Chunk844642.otherSessions,
+      }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.C3N, {
+        label: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
         children: [require.map(e => (0, r.jsx)(R, {
           session: e,
           useChecks: O.size > 0,

@@ -27,15 +27,15 @@ function j() {
       application: n,
       loading: j
     } = (0, Chunk725803.Z)(null == exports ? true : exports.id, Chunk674563.wW.GUILD_ROLE_SUBSCRIPTIONS),
-    _ = Chunk647438.useRef(null),
-    v = (0, Chunk614342.Z)(null != exports ? exports : true);
+    v = Chunk647438.useRef(null),
+    _ = (0, Chunk614342.Z)(null != exports ? exports : true);
   Chunk647438.useEffect(() => {
     null != exports && (0, Chunk303737.sO)(exports) && (0, Chunk266454.Q3)(Chunk704215.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [exports]);
   let C = (null == exports ? true : exports.features.has(Chunk981631.oNc.CREATOR_MONETIZABLE)) === false && (null == exports ? true : exports.features.has(Chunk981631.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
-  return e = null == exports || j ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null != v ? (0, Chunk951288.jsx)(Chunk500395.Z, {
+  return e = null == exports || j ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null != _ ? (0, Chunk951288.jsx)(Chunk500395.Z, {
     guild: exports,
-    config: v
+    config: _
   }) : C ? (0, Chunk951288.jsx)(Chunk975464.Z, {
     guild: exports
   }) : (0, Chunk951288.jsx)(Chunk618748.Z, {
@@ -48,10 +48,10 @@ function j() {
       children: (0, Chunk951288.jsx)(Chunk481060.w0Z, {
         className: Chunk423887.settingsScroller,
         children: (0, Chunk951288.jsx)("main", {
-          ref: _,
+          ref: v,
           className: Chunk423887.settingsContent,
           children: (0, Chunk951288.jsx)(Chunk481060.JcV, {
-            containerRef: _,
+            containerRef: v,
             children: module
           })
         })

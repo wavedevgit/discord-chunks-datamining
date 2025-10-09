@@ -188,7 +188,7 @@ function ey(e) {
     onVoiceChannelPreview: h
   }), {
     embeddedActivity: P
-  } = (0, $.Z)(o), w = eA(P), D = null != R && 0 === s.length ? [R] : s, L = D.length > 0, x = D.length >= 2, [M, j] = i.useState(!L), U = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
+  } = (0, $.Z)(o), w = eA(P), D = null != R && 0 === s.length ? [R] : s, x = D.length > 0, L = D.length >= 2, [M, k] = i.useState(!x), U = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAw"], {
     channel: "@".concat(U)
@@ -205,7 +205,7 @@ function ey(e) {
       else {
         var o;
         let e = await p.Z.getOrEnsurePrivateChannel(n.id);
-        r = null != (o = k.Z.getChannel(e)) ? o : null
+        r = null != (o = j.Z.getChannel(e)) ? o : null
       }
       return l()(null != r, "Send channel must be defined"), H({
         reply: ":".concat(i.name, ":"),
@@ -226,7 +226,7 @@ function ey(e) {
       let e = await p.Z.openPrivateChannel({
           recipientIds: n.id
         }),
-        t = k.Z.getChannel(e);
+        t = j.Z.getChannel(e);
       l()(null != t, "DM channel must be defined"), r = t
     }
     let i = r.type === es.d4z.DM ? eo.xP.DM_REACTION_MESSAGE_SENT : eo.xP.CHANNEL_REACTION_MESSAGE_SENT;
@@ -256,7 +256,7 @@ function ey(e) {
   }, W = null != f ? f : null != N ? N : null != w ? w : true, z = () => {
     g(e => !e), M && (null == E || E.focus())
   }, q = e => {
-    j(e), e && (null == E || E.focus())
+    k(e), e && (null == E || E.focus())
   };
   return (0, r.jsx)("div", {
     ref: O,
@@ -306,7 +306,7 @@ function ey(e) {
                 })
               }))
             }) : true
-          }), L && (0, r.jsx)(_.P3F, {
+          }), x && (0, r.jsx)(_.P3F, {
             onClick: () => q(false),
             className: eu.primaryActionPopoutMessageCloseIcon,
             children: (0, r.jsx)(_.Dio, {
@@ -318,11 +318,11 @@ function ey(e) {
           })]
         }), false === M && (0, r.jsxs)("div", {
           className: eu.primaryActionPopoutActionButtons,
-          children: [!x && (0, r.jsx)(_.zxk, {
+          children: [!L && (0, r.jsx)(_.zxk, {
             fullWidth: true,
             variant: "secondary",
             onClick: () => q(true),
-            size: x ? "sm" : "md",
+            size: L ? "sm" : "md",
             text: ec.intl.string(ec.t.OAJQlJ)
           }, "toggleMessageMode"), D]
         })]
@@ -367,7 +367,7 @@ let eO = e => {
             emojiName: t.name
           }),
           shouldShow: !s && true,
-          children: (0, r.jsx)(x.u, {
+          children: (0, r.jsx)(L.u, {
             emoji: t,
             isDisabled: !a,
             onClick: () => n({
@@ -560,7 +560,7 @@ function eS(e) {
       trackRankingItemInteraction: p
     } = e,
     h = eh(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]);
-  let E = (0, c.e7)([k.Z], () => k.Z.getChannel(null == s ? true : s.channelId)),
+  let E = (0, c.e7)([j.Z], () => j.Z.getChannel(null == s ? true : s.channelId)),
     [b] = i.useMemo(() => (0, R.p9)(E, V.Z, U.Z, G.Z, A.default), [E]),
     {
       entry: y
@@ -583,8 +583,8 @@ function eS(e) {
       fallbackApplication: D
     } = (0, $.Z)(y),
     {
-      largeImage: L,
-      smallImage: x
+      largeImage: x,
+      smallImage: L
     } = (0, z.YC)(S, null != w ? w : D),
     {
       largeImage: M
@@ -618,11 +618,11 @@ function eS(e) {
         })
       }), (0, r.jsxs)("div", {
         className: eu.streamingPopoutHeader,
-        children: [null != L && (0, r.jsx)("div", {
+        children: [null != x && (0, r.jsx)("div", {
           className: eu.popoutThumbnailContainer,
           children: (0, r.jsx)(Q.E, {
-            image: L,
-            smallImage: x,
+            image: x,
+            smallImage: L,
             onClick: null != l ? l : T,
             size: Q.J.SIZE_72
           })
@@ -654,17 +654,17 @@ function eS(e) {
 
 function eA(e) {
   let t = (0, c.e7)([U.Z], () => U.Z.getGuild((0, b.j)(null == e ? true : e.location))),
-    n = (0, c.e7)([k.Z], () => k.Z.getChannel((0, b.p)(null == e ? true : e.location))),
+    n = (0, c.e7)([j.Z], () => j.Z.getChannel((0, b.p)(null == e ? true : e.location))),
     i = (0, c.Wu)([F.default], () => {
       var t, n;
       return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => F.default.getUser(e.userId))) ? n : []
     });
-  return null != e && null != t && null != n && j.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
+  return null != e && null != t && null != n && k.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: eu.voiceChannelPopoutReactorHeader,
       children: [(0, r.jsxs)(_.P3F, {
         "aria-label": ec.intl.string(ec.t["W/A4Qk"]),
-        onClick: () => (0, L.Kh)(n.id),
+        onClick: () => (0, x.Kh)(n.id),
         className: eu.voiceChannelPopoutReactorChannel,
         children: [(0, r.jsx)(w.Z, {
           guild: t,
@@ -720,7 +720,7 @@ function eC(e) {
     needSubscriptionToAccess: l
   } = (0, D.Z)(null == t ? true : t.id), u = (0, c.e7)([U.Z], () => null != s ? U.Z.getGuild(s.guild_id) : true), f = (0, c.Wu)([H.ZP], () => null != s ? H.ZP.getVoiceStatesForChannel(s) : [], [s]), p = (0, c.e7)([V.Z], () => V.Z.isInChannel(null == s ? true : s.id)), m = i.useMemo(() => {
     for (let e of f) {
-      let t = k.Z.getDMFromUserId(e.user.id),
+      let t = j.Z.getDMFromUserId(e.user.id),
         n = null != t && Z.ZP.isChannelMuted(null, t),
         r = B.Z.isBlockedOrIgnored(e.user.id);
       if (n || r) returntrue
@@ -733,7 +733,7 @@ function eC(e) {
   };
   let g = null != o,
     E = () => {
-      h.Z.updateChatOpen(s.id, true), (0, L.Kh)(s.id), null == a || a(s)
+      h.Z.updateChatOpen(s.id, true), (0, x.Kh)(s.id), null == a || a(s)
     },
     b = () => {
       O.Z.handleVoiceConnect({

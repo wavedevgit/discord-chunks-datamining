@@ -30,8 +30,8 @@ let m = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS
   U = false,
   M = true,
   x = false,
-  v = null,
-  b = Chunk981631.rsA.ALL,
+  b = null,
+  v = Chunk981631.rsA.ALL,
   P = null,
   j = {},
   y = 0;
@@ -146,13 +146,13 @@ class F extends(r = Chunk442837.ZP.Store) {
     return O
   }
   get userIdFilter() {
-    return v
+    return b
   }
   get targetIdFilter() {
     return P
   }
   get actionFilter() {
-    return b
+    return v
   }
   get deletedTargets() {
     return j
@@ -205,13 +205,13 @@ let w = new F(Chunk570140.Z, {
     let {
       action: t
     } = e;
-    b = t
+    v = t
   },
   AUDIT_LOG_FILTER_BY_USER: function(e) {
     let {
       userId: t
     } = e;
-    v = t
+    b = t
   },
   AUDIT_LOG_FILTER_BY_TARGET: function(e) {
     let {
@@ -230,6 +230,6 @@ let w = new F(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    N = [], O = [], b = Chunk981631.rsA.ALL, v = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], C = []
+    N = [], O = [], v = Chunk981631.rsA.ALL, b = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], C = []
   }
 })

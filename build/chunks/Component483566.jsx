@@ -58,12 +58,12 @@ function p(e) {
     describedById: C,
     helperTextId: N,
     descriptionId: R
-  } = I, P = "group" === b || "radiogroup" === b, w = P ? "span" : "label", D = P ? "fieldset" : "div", L = P ? (0, r.jsx)("legend", {
+  } = I, P = "group" === b || "radiogroup" === b, w = P ? "span" : "label", D = P ? "fieldset" : "div", x = P ? (0, r.jsx)("legend", {
     id: T,
     children: (0, r.jsx)(s.n, {
       children: t
     })
-  }) : null, x = null != t && "" !== t, M = null != l && "" !== l, j = x ? (0, r.jsxs)(u.x, {
+  }) : null, L = null != t && "" !== t, M = null != l && "" !== l, k = L ? (0, r.jsxs)(u.x, {
     "aria-hidden": P,
     id: T,
     tag: w,
@@ -96,11 +96,11 @@ function p(e) {
       "data-disabled": a,
       "aria-describedby": P ? C : true,
       disabled: P ? a : true,
-      children: [L, x || M ? (0, r.jsxs)("div", {
+      children: [x, L || M ? (0, r.jsxs)("div", {
         className: f.labelContainer,
         children: [n ? (0, r.jsx)(s.n, {
-          children: j
-        }) : j, M && (0, r.jsx)(u.x, {
+          children: k
+        }) : k, M && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,

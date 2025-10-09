@@ -23,7 +23,7 @@ function h(e) {
     title: t,
     subtitle: n,
     icon: i,
-    page: s
+    page: a
   } = e;
   return (0, r.jsxs)("div", {
     className: f.safetyStepRow,
@@ -47,7 +47,7 @@ function h(e) {
     }), (0, r.jsx)(l.zxk, {
       size: "sm",
       variant: "secondary",
-      onClick: () => (0, d.K)(s),
+      onClick: () => (0, d.K)(a),
       text: p.intl.string(p.t.bt75u7)
     })]
   })
@@ -57,11 +57,11 @@ function x(e) {
   let {
     guild: t
   } = e;
-  (0, s.RD)(t.id);
-  let d = (0, a.Z6)(t.id),
+  (0, a.RD)(t.id);
+  let d = (0, s.Z6)(t.id),
     {
       rulesByTriggerType: x
-    } = (0, s.pH)(t.id),
+    } = (0, a.pH)(t.id),
     {
       numEnabledRules: b,
       numRules: j
@@ -80,10 +80,10 @@ function x(e) {
         numRules: t
       }
     }, [d, x]),
-    _ = (0, m.Q)(t),
-    v = _[u.u.CAPTCHA_AND_RAID_PROTECTION],
-    C = _[u.u.DM_AND_SPAM_PROTECTION],
-    O = _[u.u.PERMISSIONS],
+    v = (0, m.Q)(t),
+    _ = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
+    C = v[u.u.DM_AND_SPAM_PROTECTION],
+    O = v[u.u.PERMISSIONS],
     y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.X6q, {
@@ -99,8 +99,8 @@ function x(e) {
         icon: n(14215),
         title: p.intl.string(p.t["53eF5u"]),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
-          enabled: v.filter(e => e.enabled).length,
-          total: v.length
+          enabled: _.filter(e => e.enabled).length,
+          total: _.length
         }),
         page: u.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {

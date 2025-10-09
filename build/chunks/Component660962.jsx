@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk866442 = require("./866442.js"),
@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk21321 = require("./21321.js"),
   Chunk179517 = require("./179517.js"),
   Chunk79829 = require("./79829.js");
-let V = (0, Chunk663993.Un)({
+let W = (0, Chunk663993.Un)({
     createPromise: () => require.e("4848").then(require.bind(require, 797967)),
     webpackId: 797967
   }),
@@ -57,9 +57,9 @@ function Y(e) {
   let {
     role: t,
     disabled: n
-  } = e, [l, s] = i.useState(t.name);
+  } = e, [l, a] = i.useState(t.name);
   return i.useEffect(() => {
-    s(t.name)
+    a(t.name)
   }, [t.name]), (0, r.jsx)(m.oil, {
     label: U.intl.string(U.t.dLbkBg),
     required: true,
@@ -67,7 +67,7 @@ function Y(e) {
     value: l,
     maxLength: G.VKK,
     onChange: function(e) {
-      s(e), K(t.id, e)
+      a(e), K(t.id, e)
     },
     disabled: n
   })
@@ -79,100 +79,96 @@ function q(e) {
     guildId: n,
     selectedStyle: i,
     disabled: l,
-    shouldShowUpsell: a
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, _.oC)(n, t), b = {
+    shouldShowUpsell: s
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), b = {
     dark: {
       src: z,
       name: t.name
     },
     light: {
-      src: W,
+      src: V,
       name: t.name
     }
   };
-  return (0, r.jsxs)(m.hjN, {
-    children: [(0, r.jsxs)(m.vwX, {
-      className: F.roleStyleFormTitle,
-      children: [(0, r.jsx)("div", {
-        children: U.intl.string(U.t["9wVJRE"])
-      }), (0, r.jsx)(j.ZP, {
-        contentTypes: [u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
-        children: e => {
-          let {
-            visibleContent: t
-          } = e;
-          return t === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? (0, r.jsx)(m.IGR, {
-            text: U.intl.string(U.t.y2b7CA),
-            className: F.newBadge
-          }) : null
-        }
-      })]
-    }), (0, r.jsx)("div", {
-      className: F.roleStyleContainer,
-      children: k.pM.map(e => {
-        let {
-          id: u,
-          colors: p,
-          labelString: f
-        } = e;
-        return (0, r.jsxs)("button", {
-          className: s()(F.roleStylePreviewContainer, {
-            [F.selected]: i === u,
-            [F.disabled]: l || a && [T.g.HOLOGRAPHIC, T.g.GRADIENT].includes(u)
-          }),
-          onClick: () => {
-            (0, S.Jf)(t.id, u)
-          },
-          children: [(0, r.jsx)(m.Rny, {
-            children: (0, r.jsx)("div", {
-              className: F.roleStyleMessageContainer,
-              children: (0, r.jsx)(v.Z, {
-                author: {
-                  nick: o.author.username,
-                  guildId: n,
-                  authorId: o.author.id,
-                  colorRoleId: t.id,
-                  colorStrings: (0, C.DX)(p),
-                  colorString: (0, c.Rf)(p.primary_color)
-                },
-                message: o,
-                preview: true,
-                roleIcon: null != h ? h : (0, g.ap)(d) ? b.light : b.dark,
-                isGroupStart: true,
-                disableInteraction: true,
-                previewGuildId: n
-              })
-            })
-          }), (0, r.jsx)("div", {
-            className: F.roleStyleLabel,
-            children: U.intl.string(f)
-          })]
-        }, u)
-      })
-    }), a && (0, r.jsxs)("div", {
-      className: F.roleStyleUpsell,
-      children: [(0, r.jsxs)("div", {
-        className: F.roleStyleUpsellMesssages,
-        children: [(0, r.jsx)(m.Text, {
-          variant: "text-sm/semibold",
-          color: "button-outline-primary-text",
-          children: U.intl.format(B.default.VpEDJS, {
-            magical: (0, r.jsx)(X, {})
+
+  function O() {
+    (0, y.Z)(n, x.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
+  }
+  return (0, r.jsx)(j.ZP, {
+    contentTypes: [u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
+    children: e => {
+      let {
+        visibleContent: p
+      } = e;
+      return (0, r.jsxs)(m.gNt, {
+        label: U.intl.string(U.t["9wVJRE"]),
+        badge: p === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? "new" : true,
+        children: [(0, r.jsx)("div", {
+          className: F.roleStyleContainer,
+          children: k.pM.map(e => {
+            let {
+              id: u,
+              colors: p,
+              labelString: f
+            } = e;
+            return (0, r.jsxs)("button", {
+              className: a()(F.roleStylePreviewContainer, {
+                [F.selected]: i === u,
+                [F.disabled]: l || s && [T.g.HOLOGRAPHIC, T.g.GRADIENT].includes(u)
+              }),
+              onClick: () => {
+                (0, S.Jf)(t.id, u)
+              },
+              children: [(0, r.jsx)(m.Rny, {
+                children: (0, r.jsx)("div", {
+                  className: F.roleStyleMessageContainer,
+                  children: (0, r.jsx)(_.Z, {
+                    author: {
+                      nick: o.author.username,
+                      guildId: n,
+                      authorId: o.author.id,
+                      colorRoleId: t.id,
+                      colorStrings: (0, C.DX)(p),
+                      colorString: (0, c.Rf)(p.primary_color)
+                    },
+                    message: o,
+                    preview: true,
+                    roleIcon: null != h ? h : (0, g.ap)(d) ? b.light : b.dark,
+                    isGroupStart: true,
+                    disableInteraction: true,
+                    previewGuildId: n
+                  })
+                })
+              }), (0, r.jsx)("div", {
+                className: F.roleStyleLabel,
+                children: U.intl.string(f)
+              })]
+            }, u)
           })
-        }), (0, r.jsx)(m.Text, {
-          variant: "text-xs/medium",
-          color: "button-outline-primary-text",
-          children: U.intl.string(B.default.FJZeZG)
+        }), s && (0, r.jsxs)("div", {
+          className: F.roleStyleUpsell,
+          children: [(0, r.jsxs)("div", {
+            className: F.roleStyleUpsellMesssages,
+            children: [(0, r.jsx)(m.Text, {
+              variant: "text-sm/semibold",
+              color: "button-outline-primary-text",
+              children: U.intl.format(B.default.VpEDJS, {
+                magical: (0, r.jsx)(X, {})
+              })
+            }), (0, r.jsx)(m.Text, {
+              variant: "text-xs/medium",
+              color: "button-outline-primary-text",
+              children: U.intl.string(B.default.FJZeZG)
+            })]
+          }), (0, r.jsx)(m.zxk, {
+            onClick: O,
+            variant: "expressive",
+            icon: m.Ucv,
+            text: U.intl.string(U.t["+7XY39"])
+          })]
         })]
-      }), (0, r.jsx)(m.zxk, {
-        onClick: function() {
-          (0, y.Z)(n, x.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
-        },
-        variant: "expressive",
-        icon: m.Ucv,
-        text: U.intl.string(U.t["+7XY39"])
-      })]
-    })]
+      })
+    }
   })
 }
 
@@ -218,36 +214,36 @@ function J(e) {
   let {
     role: i,
     disabled: l,
-    currentStyle: s,
-    hasEnhancedRoleColors: a
+    currentStyle: a,
+    hasEnhancedRoleColors: s
   } = e;
-  return (0, r.jsxs)(m.xJW, {
+  return (0, r.jsx)("div", {
     className: F.colorPicker,
-    title: U.intl.string(U.t["1F6FzM"]),
-    required: true,
-    children: [(0, r.jsx)(m.R94, {
-      className: F.colorDescription,
-      children: U.intl.string(U.t["9UCxlZ"])
-    }), (0, r.jsx)(V, {
-      defaultColor: G.p6O,
-      colors: s === T.g.GRADIENT && a ? M.tl : G.pmI,
-      value: i.color,
-      disabled: l,
-      onChange: e => {
-        var t;
-        return t = e, void(i.color !== t && (t !== G.p6O || 0 !== i.color) && (t === G.p6O && (t = 0), (0, S.OW)(i.id, t)))
-      },
-      secondaryValue: s === T.g.GRADIENT && a && (null == (t = i.colors) ? true : t.secondary_color) != null ? null == (n = i.colors) ? true : n.secondary_color : true,
-      onChangeGradientColors: e => {
-        (0, S.TW)(i.id, {
-          primary_color: e[0],
-          secondary_color: e[1],
-          tertiary_color: null
-        }, T.g.GRADIENT)
-      },
-      isGradient: s === T.g.GRADIENT,
-      customPickerPosition: "right"
-    })]
+    children: (0, r.jsx)(m.gNt, {
+      label: U.intl.string(U.t["1F6FzM"]),
+      description: U.intl.string(U.t["9UCxlZ"]),
+      required: true,
+      children: (0, r.jsx)(W, {
+        defaultColor: G.p6O,
+        colors: a === T.g.GRADIENT && s ? M.tl : G.pmI,
+        value: i.color,
+        disabled: l,
+        onChange: e => {
+          var t;
+          return t = e, void(i.color !== t && (t !== G.p6O || 0 !== i.color) && (t === G.p6O && (t = 0), (0, S.OW)(i.id, t)))
+        },
+        secondaryValue: a === T.g.GRADIENT && s && (null == (t = i.colors) ? true : t.secondary_color) != null ? null == (n = i.colors) ? true : n.secondary_color : true,
+        onChangeGradientColors: e => {
+          (0, S.TW)(i.id, {
+            primary_color: e[0],
+            secondary_color: e[1],
+            tertiary_color: null
+          }, T.g.GRADIENT)
+        },
+        isGradient: a === T.g.GRADIENT,
+        customPickerPosition: "right"
+      })
+    })
   })
 }
 
@@ -257,10 +253,10 @@ function Q(e) {
     guildId: n,
     selectedStyle: i,
     disableInteraction: l
-  } = e, a = (0, P.F)(U.intl.string(U.t.Mi9KbW)), o = {
-    nick: a.author.username,
+  } = e, s = (0, P.F)(U.intl.string(U.t.Mi9KbW)), o = {
+    nick: s.author.username,
     guildId: n,
-    authorId: a.author.id,
+    authorId: s.author.id,
     colorRoleId: t.id,
     colorStrings: t.colorStrings,
     colorString: t.colorString
@@ -268,12 +264,12 @@ function Q(e) {
     src: z,
     name: t.name
   }, d = {
-    src: W,
+    src: V,
     name: t.name
-  }, u = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
+  }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {
     children: (0, r.jsx)("div", {
-      className: s()(F.previewContainer, {
+      className: a()(F.previewContainer, {
         [F.disableInteraction]: l
       }),
       "aria-hidden": true,
@@ -281,12 +277,12 @@ function Q(e) {
         theme: e,
         disableAdaptiveTheme: true,
         children: t => (0, r.jsxs)("div", {
-          className: s()(t, F.messageWrapper),
+          className: a()(t, F.messageWrapper),
           children: [(0, r.jsx)("div", {
             className: F.messageContainer,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(_.Z, {
               author: o,
-              message: a,
+              message: s,
               roleIcon: null != u ? u : (0, g.ap)(e) ? d : c,
               previewGuildId: n,
               isGroupStart: true
@@ -332,7 +328,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, a = (0, O.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !a, u = null != o && a ? o.currentStyle : T.g.SOLID, g = (0, E.fI)(n), p = i || g, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
+  } = e, s = (0, O.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, E.fI)(n), p = i || g, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: x
   } = (0, w.Z)(0), {
@@ -348,7 +344,7 @@ function ee(e) {
     children: (0, r.jsxs)("div", {
       className: H.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: s()(H.header, H.stickyHeader, {
+        className: a()(H.header, H.stickyHeader, {
           [H.stickyHeaderElevated]: !b
         }),
         ref: x,
@@ -368,7 +364,7 @@ function ee(e) {
         })
       }), (0, r.jsx)(m.izJ, {
         className: F.divider
-      }), (a || c) && null != u && (0, r.jsx)(q, {
+      }), (s || c) && null != u && (0, r.jsx)(q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,
@@ -378,7 +374,7 @@ function ee(e) {
         role: n,
         disabled: p,
         currentStyle: u,
-        hasEnhancedRoleColors: a
+        hasEnhancedRoleColors: s
       }), u === T.g.HOLOGRAPHIC && (0, r.jsx)(N.Z, {
         className: F.holographicInfoBox,
         children: (0, r.jsx)(m.Text, {
@@ -393,7 +389,7 @@ function ee(e) {
         role: n,
         guildId: t.id,
         selectedStyle: u,
-        disableInteraction: !a
+        disableInteraction: !s
       }), (0, r.jsx)(m.izJ, {
         className: F.divider
       }), (0, r.jsx)($, {

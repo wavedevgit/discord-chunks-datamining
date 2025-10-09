@@ -53,7 +53,7 @@ function D(e, t) {
   return null != S && S.applicationId === e && S.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
-function L() {
+function x() {
   let e = v[0];
   if (null != module) {
     let {
@@ -72,7 +72,7 @@ function L() {
   }
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = (0, _.Tu)(e, t);
   return v.findIndex(e => e.comboId === n)
 }
@@ -85,19 +85,19 @@ function M(e, t, n, r) {
     },
     o = I.indexOf(i);
   false !== o && I.splice(o, 1);
-  let s = x(e, t);
-  0 !== s && (n ? false === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), w()
+  let s = L(e, t);
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && T && p.Z.resume(), w()
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = (0, _.Tu)(e, t),
     r = I.indexOf(n);
   false !== r && I.splice(r, 1);
-  let i = x(e, t);
-  false !== i && (v.splice(i, 1), w()), L()
+  let i = L(e, t);
+  false !== i && (v.splice(i, 1), w()), x()
 }
 
-function k(e) {
+function j(e) {
   let {
     applicationId: t,
     branchId: n
@@ -131,16 +131,16 @@ function Z(e) {
     applicationId: t,
     branchId: n
   } = e;
-  j(t, n)
+  k(t, n)
 }
 
 function F(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = x(t, n);
+  } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), L(), T && p.Z.resume(), w()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), T && p.Z.resume(), w()
 }
 
 function V(e) {
@@ -155,7 +155,7 @@ function H(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, L(), T || p.Z.resume());
+  !C && (C = true, x(), T || p.Z.resume());
   let n = T;
   T = t.paused, S = t.currentTask, A = t.nextTask;
   let r = false;
@@ -180,7 +180,7 @@ function H(e) {
       return r = true, false
     }
     returntrue
-  }), L(), (r || n !== T) && w()
+  }), x(), (r || n !== T) && w()
 }
 
 function Y() {
@@ -206,7 +206,7 @@ function W(e) {
           application_id: t,
           branch_id: n
         } = e;
-        j(t, n)
+        k(t, n)
       }
     }
   }
@@ -257,7 +257,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
     return T
   }
   getQueuePosition(e, t) {
-    return x(e, t)
+    return L(e, t)
   }
   isCorruptInstallation() {
     return R
@@ -265,7 +265,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
 }
 b(Q, "displayName", "DispatchManagerStore");
 let J = new Q(Chunk570140.Z, {
-  DISPATCH_APPLICATION_INSTALL: k,
+  DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
   DISPATCH_APPLICATION_CANCEL: Z,

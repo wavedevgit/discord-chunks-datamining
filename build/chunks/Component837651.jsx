@@ -1,7 +1,7 @@
 /** Chunk was on 23746 **/
 /** chunk id: 837651, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,19 +42,19 @@ let p = e => {
       direction: l.Z.Direction.VERTICAL,
       justify: l.Z.Justify.CENTER,
       children: (0, s.jsxs)("div", {
-        children: [(0, s.jsx)(n.vwX, {
-          tag: "h5",
+        children: [(0, s.jsx)(n.X6q, {
+          variant: "heading-sm/semibold",
           className: u.headerSpacing,
           children: r
-        }), (0, s.jsx)(n.R94, {
-          type: n.R94.Types.DESCRIPTION,
+        }), (0, s.jsx)(n.Text, {
+          variant: "text-md/normal",
           children: i
         }), a]
       })
     })]
   })
 };
-class f extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   render() {
     var e;
     let {
@@ -63,8 +63,8 @@ class f extends Chunk647438.PureComponent {
     } = this.props, {
       totpSecret: a,
       code: g,
-      isVerifying: f
-    } = this.state, x = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, b = (0, Chunk287880.U0)(null != x ? x : "", Chunk816814), m = (0, Chunk951288.jsx)("form", {
+      isVerifying: x
+    } = this.state, f = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, m = (0, Chunk287880.U0)(null != f ? f : "", Chunk816814), b = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk186603.inputContainer,
@@ -85,7 +85,7 @@ class f extends Chunk647438.PureComponent {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t["/a5+YW"]),
             type: "submit",
-            loading: f
+            loading: x
           })
         })]
       })
@@ -131,14 +131,14 @@ class f extends Chunk647438.PureComponent {
           className: Chunk186603.divider
         }), (0, Chunk951288.jsx)(p, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
-            text: b
+            text: m
           }),
           label: Chunk388032.intl.string(Chunk388032.t["91InFx"]),
           text: Chunk388032.intl.string(Chunk388032.t.hFeBkp),
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk186603.topSpacing,
-            children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-              tag: "h5",
+            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+              variant: "heading-sm/semibold",
               className: Chunk186603.headerSpacing,
               children: Chunk388032.intl.string(Chunk388032.t["76IPws"])
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -157,7 +157,7 @@ class f extends Chunk647438.PureComponent {
           }),
           label: Chunk388032.intl.string(Chunk388032.t["SaD/LS"]),
           text: Chunk388032.intl.string(Chunk388032.t.vI1ziY),
-          children: m
+          children: b
         })]
       })]
     })
@@ -198,4 +198,4 @@ class f extends Chunk647438.PureComponent {
     })
   }
 }
-let x = f
+let f = x

@@ -29,11 +29,11 @@ var r, i, Chunk754793 = require("./754793.js"),
   P = 7,
   w = 8,
   D = 9,
-  L = 10,
-  x = 11,
+  x = 10,
+  L = 11,
   M = 12,
-  j = 13,
-  k = 14,
+  k = 13,
+  j = 14,
   U = 15,
   G = 16,
   B = 17,
@@ -115,11 +115,11 @@ function ep(e, t) {
     eA = new a.Buf8(4),
     eC = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
   if (!e || !e.state || !e.output || !e.input && 0 !== e.avail_in) return b;
-  (n = e.state).mode === M && (n.mode = j), en = e.next_out, i = e.output, ea = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, eo = n.hold, es = n.bits, el = er, ec = ea, ev = m;
+  (n = e.state).mode === M && (n.mode = k), en = e.next_out, i = e.output, ea = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, eo = n.hold, es = n.bits, el = er, ec = ea, ev = m;
   i: for (;;) switch (n.mode) {
     case T:
       if (0 === n.wrap) {
-        n.mode = j;
+        n.mode = k;
         break
       }
       for (; es < 16;) {
@@ -143,7 +143,7 @@ function ep(e, t) {
         e.msg = "invalid window size", n.mode = $;
         break
       }
-      n.dmax = 1 << eO, e.adler = n.check = 1, n.mode = 512 & eo ? L : M, eo = 0, es = 0;
+      n.dmax = 1 << eO, e.adler = n.check = 1, n.mode = 512 & eo ? x : M, eo = 0, es = 0;
       break;
     case S:
       for (; es < 16;) {
@@ -213,18 +213,18 @@ function ep(e, t) {
       }
       n.head && (n.head.hcrc = n.flags >> 9 & 1, n.head.done = true), e.adler = n.check = 0, n.mode = M;
       break;
-    case L:
+    case x:
       for (; es < 32;) {
         if (0 === er) break i;
         er--, eo += r[et++] << es, es += 8
       }
-      e.adler = n.check = ei(eo), eo = 0, es = 0, n.mode = x;
-    case x:
+      e.adler = n.check = ei(eo), eo = 0, es = 0, n.mode = L;
+    case L:
       if (0 === n.havedict) return e.next_out = en, e.avail_out = ea, e.next_in = et, e.avail_in = er, n.hold = eo, n.bits = es, E;
       e.adler = n.check = 1, n.mode = M;
     case M:
       if (t === p || t === h) break i;
-    case j:
+    case k:
       if (n.last) {
         eo >>>= 7 & es, es -= 7 & es, n.mode = X;
         break
@@ -235,7 +235,7 @@ function ep(e, t) {
       }
       switch (n.last = 1 & eo, es -= 1, 3 & (eo >>>= 1)) {
         case 0:
-          n.mode = k;
+          n.mode = j;
           break;
         case 1:
           if (ef(n), n.mode = V, t === h) {
@@ -251,7 +251,7 @@ function ep(e, t) {
       }
       eo >>>= 2, es -= 2;
       break;
-    case k:
+    case j:
       for (eo >>>= 7 & es, es -= 7 & es; es < 32;) {
         if (0 === er) break i;
         er--, eo += r[et++] << es, es += 8
@@ -493,6 +493,6 @@ function em(e, t) {
 
 function eg(e, t) {
   var n, r, i = t.length;
-  return e && e.state && (0 === (n = e.state).wrap || n.mode === x) ? n.mode === x && (r = o(r = 1, t, i, 0)) !== n.check ? y : e_(e, t, i, i) ? (n.mode = ee, O) : (n.havedict = 1, m) : b
+  return e && e.state && (0 === (n = e.state).wrap || n.mode === L) ? n.mode === L && (r = o(r = 1, t, i, 0)) !== n.check ? y : e_(e, t, i, i) ? (n.mode = ee, O) : (n.havedict = 1, m) : b
 }
 exports.inflateReset = es, exports.inflateReset2 = el, exports.inflateResetKeep = eo, exports.inflateInit = eu, exports.inflateInit2 = ec, exports.inflate = ep, exports.inflateEnd = eh, exports.inflateGetHeader = em, exports.inflateSetDictionary = eg, exports.inflateInfo = "pako inflate (from Nodeca project)"

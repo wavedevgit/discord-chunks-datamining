@@ -19,11 +19,11 @@ function d(e) {
     isLoading: n,
     onChangeRule: d
   } = e;
-  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(s.Z, {
+  return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(a.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d
-  }) : (0, i.vo)(t) ? (0, r.jsx)(a.Z, {
+  }) : (0, i.vo)(t) ? (0, r.jsx)(s.Z, {
     rule: t,
     isLoading: n,
     onChangeRule: d

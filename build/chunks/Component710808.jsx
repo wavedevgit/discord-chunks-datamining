@@ -2,7 +2,7 @@
 /** chunk id: 710808, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -120,7 +120,7 @@ function D(e) {
   })))
 }
 
-function L(e) {
+function x(e) {
   (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, R(C({
     header: T.intl.string(T.t["7UXEFx"]),
     confirmText: T.intl.string(T.t.BddRzc),
@@ -135,7 +135,7 @@ function L(e) {
   })))
 }
 
-function x() {
+function L() {
   let [e, t] = Chunk647438.useState(false), {
     debugLogging: n,
     aecDumpEnabled: o
@@ -185,18 +185,16 @@ function x() {
         description: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
         checked: Chunk458725,
         onChange: e => u.TC(e)
-      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk951288.jsx)(Chunk600164.Z, {
-          className: Chunk197571.marginBottom20,
-          children: (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-            grow: 0,
-            shrink: 0,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
-              variant: "primary",
-              size: "sm",
-              text: Chunk388032.intl.string(Chunk388032.t.nJnOHB),
-              onClick: () => Chunk304680.z4()
-            })
+      }), (0, Chunk951288.jsx)(Chunk600164.Z, {
+        className: Chunk197571.marginBottom20,
+        children: (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
+          grow: 0,
+          shrink: 0,
+          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: Chunk388032.intl.string(Chunk388032.t.nJnOHB),
+            onClick: () => Chunk304680.z4()
           })
         })
       })]
@@ -207,21 +205,19 @@ function x() {
           label: Chunk388032.intl.string(Chunk388032.t["726JHB"]),
           description: Chunk388032.intl.string(Chunk388032.t["/7ak9f"]),
           checked: require,
-          onChange: L
-        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
-            size: "sm",
-            children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
-              variant: "primary",
-              text: Chunk388032.intl.string(Chunk388032.t["3UB9aW"]),
-              disabled: module,
-              onClick: A
-            }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-              variant: "primary",
-              text: Chunk388032.intl.string(Chunk388032.t.nuPtYm),
-              onClick: P
-            })]
-          })
+          onChange: x
+        }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+          size: "sm",
+          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+            variant: "primary",
+            text: Chunk388032.intl.string(Chunk388032.t["3UB9aW"]),
+            disabled: module,
+            onClick: A
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            variant: "primary",
+            text: Chunk388032.intl.string(Chunk388032.t.nuPtYm),
+            onClick: P
+          })]
         })]
       })
     })]

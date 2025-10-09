@@ -190,7 +190,7 @@ class K extends Chunk647438.Component {
     } = this.props, a = {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
-    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, L.I5)(n);
+    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, x.I5)(n);
     return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, H(F({}, a), {
       className: (0, m.mO)(e) ? B.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
@@ -338,14 +338,14 @@ class K extends Chunk647438.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(k.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(k.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(j.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(j.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
     }), Z(this, "handleVerificationClick", e => {
       e.stopPropagation(), e.preventDefault(), (0, I.openUserSettings)(v.n.ACCOUNT_PANEL, {
-        section: k.oAB.ACCOUNT
+        section: j.oAB.ACCOUNT
       })
     }), Z(this, "handleAccept", e => {
       let {
@@ -355,13 +355,13 @@ class K extends Chunk647438.Component {
         type: i,
         giftInfo: a
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), w.default.track(k.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), w.default.track(j.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: H(F({}, this.analyticsLocation), {
-          object: k.qAy.BUTTON_CTA
+          object: j.qAy.BUTTON_CTA
         })
       });
-      let o = i !== k.uaV.CUSTOM_GIFT ? true : r;
+      let o = i !== j.uaV.CUSTOM_GIFT ? true : r;
       (0, b.V)({
         processedCode: n,
         channelContext: t,
@@ -373,13 +373,13 @@ class K extends Chunk647438.Component {
         giftCode: t
       } = this.props;
       null != t && t.isSubscription && (e.preventDefault(), (0, I.openUserSettings)(v.n.NITRO_PANEL, {
-        section: k.oAB.PREMIUM
+        section: j.oAB.PREMIUM
       }))
     }), Z(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? true : t.code;
-      null != n && window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(j.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), Z(this, "renderCustomGiftBox", e => {
       let {
         width: t
@@ -421,7 +421,7 @@ let z = (0, Chunk112724.Z)((0, Chunk730749.Z)(K)),
       giftCode: i,
       gifter: o,
       currentUser: r,
-      subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, x.oE)(i.subscriptionPlanId) : null,
+      subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, L.oE)(i.subscriptionPlanId) : null,
       isSelfGift: null != i ? T.default.getId() === i.userId : T.default.getId() === n.id,
       resolved: S.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? true : i.entitlementBranches) != null ? D.z2(i.entitlementBranches, a, A.Z) : null

@@ -48,7 +48,7 @@ let g = Chunk647438.memo(function(e) {
     rule: t,
     onlyRoles: n = false,
     onChangeRule: i
-  } = e, g = (0, r.jsx)(s.Z, {
+  } = e, g = (0, r.jsx)(a.Z, {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
@@ -59,7 +59,7 @@ let g = Chunk647438.memo(function(e) {
     disableEveryoneRole: true,
     includeRoleRestrictedPrivateChannels: true
   });
-  return n && (g = (0, r.jsx)(a.Z, {
+  return n && (g = (0, r.jsx)(s.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
     onChange: e => i(u(d({}, t), {

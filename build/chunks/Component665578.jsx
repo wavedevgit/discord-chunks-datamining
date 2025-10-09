@@ -133,7 +133,7 @@ function E(e) {
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, U, i)
-  }, [t, E, U, H, G]), F = r.useCallback(() => {
+  }, [t, E, U, H, G]), K = r.useCallback(() => {
     let e = Object.keys(B);
     return (0, c.ZDy)(async () => {
       let {
@@ -145,12 +145,12 @@ function E(e) {
         headerText: S.intl.string(S.t["i1c+kZ"]),
         hasMemberSearch: false,
         overwrittenKeys: e,
-        search: Z,
+        search: T,
         searchPlaceholderText: S.intl.string(S.t["TLQo/v"]),
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, B, j, D]), K = r.useCallback(() => {
+  }, [z, B, j, D]), F = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
@@ -162,7 +162,7 @@ function E(e) {
         hasMemberSearch: true,
         headerText: S.intl.string(S.t["56jRn5"]),
         overwrittenKeys: e,
-        search: T,
+        search: Z,
         searchPlaceholderText: S.intl.string(S.t.wAfO5e),
         selectedPermissionCount: D
       }, n))
@@ -175,13 +175,13 @@ function E(e) {
       defaultMemberPermissions: t
     }))
   }), [R]), V = D - N._n, Y = V >= 0, J = [{
-    buttonClick: K,
+    buttonClick: F,
     buttonText: S.intl.string(S.t["56jRn5"]),
     noneSelectedText: S.intl.string(S.t.C0rYfn),
     overwrites: W,
     title: null == l ? S.intl.string(S.t["vPWe+/"]) : S.intl.string(S.t["1jLVGB"])
   }, {
-    buttonClick: F,
+    buttonClick: K,
     buttonText: S.intl.string(S.t["i1c+kZ"]),
     noneSelectedText: S.intl.string(S.t.UBJhCw),
     overwrites: B,
@@ -241,7 +241,7 @@ function E(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   let t = (0, j.w)(e);
   return I(P({}, t), {
     results: t.results.map(e => I(P({}, e), {
@@ -250,7 +250,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function Z(e) {
   let t = (0, v.U)(e);
   return I(P({}, t), {
     results: t.results.roles.map(e => I(P({}, e), {

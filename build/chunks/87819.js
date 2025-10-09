@@ -7,7 +7,6 @@ module.exports = {
   keyComboContainer: "keyComboContainer__3a5a1",
   header: "header__3a5a1",
   headerTitle: "headerTitle__3a5a1",
-  infoTitle: "infoTitle__3a5a1",
   roleContainer: "roleContainer__3a5a1",
   highestRole: "highestRole__3a5a1",
   addRoleIcon: "addRoleIcon__3a5a1",

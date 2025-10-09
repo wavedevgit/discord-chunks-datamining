@@ -23,15 +23,15 @@ let g = e => {
     if (null == t) return null;
     let {
       formattedValue: i,
-      isPositive: s
+      isPositive: a
     } = (0, o.m5)(t, n);
     return (0, r.jsxs)("div", {
       className: u.trendContainer,
       children: [(0, r.jsx)(c.Z, {
         className: l()(u.chartLineIcon, {
-          [u.chartLineIconNegative]: !s
+          [u.chartLineIconNegative]: !a
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: u.trendDescription,
         children: d.intl.format(d.t.OTHOvb, {
@@ -53,23 +53,23 @@ let g = e => {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
           className: u.labelContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             className: u.label,
             children: t
-          }), null != o && (0, r.jsx)(s.u, {
+          }), null != o && (0, r.jsx)(a.u, {
             text: o,
-            children: (0, r.jsx)(a.d3s, {
+            children: (0, r.jsx)(s.d3s, {
               size: "xs",
               color: "currentColor",
               className: u.labelTooltipIcon
             })
-          }), null != n ? (0, r.jsx)(a.Text, {
+          }), null != n ? (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             className: u.sublabel,
             children: n
           }) : null]
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           className: u.value,
           variant: "text-sm/normal",
           children: i

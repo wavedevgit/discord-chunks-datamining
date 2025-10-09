@@ -25,11 +25,11 @@ let g = e => {
       canUsePremiumCollectibles: p,
       isSelected: g,
       onClick: b
-    } = e, v = (0, r.useRef)(null), {
-      isHoveringOrFocusing: x
-    } = (0, u.Z)(v);
+    } = e, x = (0, r.useRef)(null), {
+      isHoveringOrFocusing: v
+    } = (0, u.Z)(x);
     return (0, i.jsxs)(o.P3F, {
-      innerRef: v,
+      innerRef: x,
       "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXV),
       className: h.nameplateItem,
       onClick: b,
@@ -37,7 +37,7 @@ let g = e => {
         nameplate: a,
         user: n,
         showPlaceholderUser: true,
-        isHighlighted: x
+        isHighlighted: v
       }), (0, i.jsx)("div", {
         className: l()(h.nameplateItemOverlay, {
           [h.selected]: g
@@ -60,8 +60,10 @@ let g = e => {
     } = e, d = p.ZP.canUseCollectibles(t), u = (0, _.ZP)();
     return (0, i.jsx)(o.u2D, {
       className: h.inventory,
-      children: u.map(e => (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(o.vwX, {
+      children: u.map(e => (0, i.jsxs)(o.Kqy, {
+        gap: 4,
+        children: [(0, i.jsx)(o.Text, {
+          variant: "text-md/medium",
           children: e.header
         }), e.section === _.$0.PURCHASE && (0, i.jsxs)("div", {
           className: h.inventoryControls,

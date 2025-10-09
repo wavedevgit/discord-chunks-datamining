@@ -47,19 +47,19 @@ function B(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), p = (0, o.e7)([N.Z, x.default, D.Z, w.Z, P.Z, _.Z], () => f.getForwardInfo(N.Z, x.default, D.Z, w.Z, P.Z, _.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), p = (0, o.e7)([N.Z, L.default, D.Z, w.Z, P.Z, _.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, P.Z, _.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
     var e, n;
     let r = N.Z.getChannel(t.channel_id),
       i = P.Z.getGuild(null == r ? true : r.guild_id),
       a = null == (e = t.messageReference) ? true : e.channel_id,
-      o = L.Z.getCurrentlySelectedChannelId(),
+      o = x.Z.getCurrentlySelectedChannelId(),
       s = C.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
       l = o === a && s === (null == r ? true : r.id);
     null == r || null == i || l || null == a || (S.Z.openModReportAsSidebar({
       channelId: r.id,
       baseChannelId: a,
       guildId: r.guild_id
-    }), (0, T.Kh)(a), M.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, T.Kh)(a), M.default.track(j.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: a,
       destination_message_id: t.id
@@ -120,7 +120,7 @@ function F(e) {
     showAvatarPopout: f
   } = Z(t, i);
   return (0, r.jsx)(m.Z, {
-    childrenExecutedCommand: (0, r.jsx)(j.Z, {
+    childrenExecutedCommand: (0, r.jsx)(k.Z, {
       reportingUserId: a,
       guildId: i.guild_id,
       channel: i,

@@ -21,7 +21,7 @@ function g(e) {
   } = e, g = null == t ? true : t.id, {
     memberCount: m,
     onlineCount: p
-  } = (0, s.cj)([d.Z], () => {
+  } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
       memberCount: null != (e = d.Z.getMemberCount(g)) ? e : 1234,
@@ -31,7 +31,7 @@ function g(e) {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;
-    let i = a.ZP.getGuildEmoji(t.id);
+    let i = s.ZP.getGuildEmoji(t.id);
     return o.JO.createFromDiscoverableGuild((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

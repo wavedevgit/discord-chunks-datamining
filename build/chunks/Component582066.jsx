@@ -26,13 +26,13 @@ function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, s.e7)([g.Z], () => g.Z.getGuild(i)), _ = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
-    onAdoptTag: v,
+  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
+    onAdoptTag: _,
     isAdopting: C
-  } = (0, u.Z)(i), O = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;
-  if (null != _ && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
+  } = (0, u.Z)(i), O = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
+  if (null != v && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(s.Text, {
       className: b.section,
       variant: "text-xs/medium",
       color: "text-muted",
@@ -43,9 +43,9 @@ function j(e) {
       className: l()(b.section, b.body),
       children: [(0, r.jsx)(f.l, {
         avatar: (0, r.jsx)(o.Z, {
-          user: _,
+          user: v,
           guildId: i,
-          avatarSize: a.EFr.SIZE_40,
+          avatarSize: s.EFr.SIZE_40,
           "aria-hidden": true
         }),
         decorations: (0, r.jsx)(d.m0, {
@@ -54,12 +54,12 @@ function j(e) {
           guildTag: j.profile.tag,
           inline: false
         }),
-        username: p.ZP.getName(i, null, _),
+        username: p.ZP.getName(i, null, v),
         message: x.intl.string(x.t["6OSasb"])
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(s.zxk, {
         variant: "primary",
         text: x.intl.string(x.t.cQDYRk),
-        onClick: v,
+        onClick: _,
         loading: C,
         disabled: O,
         fullWidth: true

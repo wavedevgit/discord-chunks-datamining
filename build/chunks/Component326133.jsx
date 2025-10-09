@@ -85,10 +85,10 @@ function R(e, t) {
 let P = 490,
   w = 490,
   D = 245,
-  L = 200,
-  x = 120,
+  x = 200,
+  L = 120,
   M = Chunk647438.forwardRef(function(e, t) {
-    var n, a, T, A, R, M, j, k;
+    var n, a, T, A, R, M, k, j;
     let {
       channel: U,
       type: G,
@@ -136,10 +136,10 @@ let P = 490,
         [I.minimal]: (null == (a = K.query) ? true : a.type) === b.eq.MENTION_SUGGESTIONS
       },
       er = P;
-    null != J && (er = (null == (R = G.autocomplete) ? true : R.small) ? L : (null == (M = K.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let ei = Math.max(B, null != (j = null == F || null == (T = F.current) ? true : T.clientHeight) ? j : 0),
+    null != J && (er = (null == (R = G.autocomplete) ? true : R.small) ? x : (null == (M = K.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    let ei = Math.max(B, null != (k = null == F || null == (T = F.current) ? true : T.clientHeight) ? k : 0),
       ea = Math.min(.5 * window.innerHeight, ei);
-    er = Math.min(window.innerHeight - x - ea - (null != V ? V : 0), er);
+    er = Math.min(window.innerHeight - L - ea - (null != V ? V : 0), er);
     let eo = (0, r.jsx)(_.ZP, {
       id: H,
       className: o()(I.autocomplete, en),
@@ -178,7 +178,7 @@ let P = 490,
         targetRef: e.targetRef,
         overrideTargetRect: J,
         positionKey: ee,
-        position: null != (k = e.position) ? k : "top",
+        position: null != (j = e.position) ? j : "top",
         align: "left",
         spacing: 8,
         autoInvert: true,

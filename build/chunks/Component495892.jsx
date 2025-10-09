@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk260107 = require("./260107.js");
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function v(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,15 +63,15 @@ function C(e) {
     triggerType: n
   }, e)) : (0, g.V9)(n).reduce((e, i) => {
     var l;
-    let s = t.actions.find(e => {
+    let a = t.actions.find(e => {
       let {
         type: t
       } = e;
       return i === t
     });
-    return null == s || e.push((0, r.jsx)(f.Z, {
+    return null == a || e.push((0, r.jsx)(f.Z, {
       actionType: i,
-      action: s,
+      action: a,
       triggerType: null != (l = null == t ? true : t.triggerType) ? l : n
     }, i)), e
   }, []), [t, n]);
@@ -102,7 +102,7 @@ let O = e => {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(s.P3F, v(_({
+    return (0, r.jsx)(a.P3F, _(v({
       className: t,
       onClick: O,
       onMouseDown: O,
@@ -118,7 +118,7 @@ function N(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, a = () => i(v(_({}, n), {
+  } = e, s = () => i(_(v({}, n), {
     enabled: !n.enabled
   })), o = e => {
     O(e), l(e)
@@ -132,18 +132,18 @@ function N(e) {
       })
     }), (0, r.jsxs)(y, {
       className: j.actionContainer,
-      children: [(0, r.jsx)(s.rsf, {
-        onChange: a,
+      children: [(0, r.jsx)(a.rsf, {
+        onChange: s,
         checked: null != (t = null == n ? true : n.enabled) && t
-      }), (0, r.jsx)(s.ua7, {
+      }), (0, r.jsx)(a.ua7, {
         "data-migration-pending": true,
         text: b.intl.string(b.t.UKOtz8),
         position: "top",
         "aria-label": b.intl.string(b.t.PdRCRk),
-        children: e => (0, r.jsx)(s.P3F, v(_({}, e), {
+        children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
           onClick: o,
           className: j.menuIconButton,
-          children: (0, r.jsx)(s.Huf, {
+          children: (0, r.jsx)(a.Huf, {
             size: "md",
             color: "currentColor",
             className: j.menuIcon
@@ -166,7 +166,7 @@ function I(e) {
   let {
     rule: t,
     isDefaultRule: n,
-    onContextMenu: a
+    onContextMenu: s
   } = e, o = (0, p.w)(t.triggerType, t), {
     isLoading: c,
     saveRule: g
@@ -174,7 +174,7 @@ function I(e) {
     updateRule: f
   } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
     if (!c) {
-      let e = v(_({}, t), {
+      let e = _(v({}, t), {
         enabled: !h
       });
       x(!h);
@@ -182,7 +182,7 @@ function I(e) {
       null != n && (f(n), x(n.enabled))
     }
   }, 300), I = e => {
-    O(e), a(e)
+    O(e), s(e)
   };
   if (null == o) return null;
   let {
@@ -201,19 +201,19 @@ function I(e) {
       })
     }), (0, r.jsxs)("div", {
       className: j.ruleTextContainer,
-      children: [(0, r.jsxs)(s.X6q, {
+      children: [(0, r.jsxs)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
         className: j.ruleTextHeaderContainer,
         children: [(0, r.jsxs)("div", {
           className: j.ruleTextHeader,
           children: [S, E(t.triggerType)]
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: j.ruleSubtextHeader,
           variant: "text-sm/normal",
           children: T
         })]
-      }), Z && (0, r.jsx)(s.Text, {
+      }), Z && (0, r.jsx)(a.Text, {
         className: j.ruleTextDescription,
         variant: "text-sm/normal",
         children: P
@@ -223,18 +223,18 @@ function I(e) {
       })]
     }), (0, r.jsxs)(y, {
       className: j.actionContainer,
-      children: [(0, r.jsx)(s.rsf, {
+      children: [(0, r.jsx)(a.rsf, {
         onChange: N,
         checked: null != h && h
-      }), !n && (0, r.jsx)(s.ua7, {
+      }), !n && (0, r.jsx)(a.ua7, {
         "data-migration-pending": true,
         text: b.intl.string(b.t.UKOtz8),
         position: "top",
         "aria-label": b.intl.string(b.t.PdRCRk),
-        children: e => (0, r.jsx)(s.P3F, v(_({}, e), {
+        children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
           onClick: I,
           className: j.menuIconButton,
-          children: (0, r.jsx)(s.Huf, {
+          children: (0, r.jsx)(a.Huf, {
             size: "md",
             color: "currentColor",
             className: j.menuIcon
@@ -252,7 +252,7 @@ function S(e) {
   } = e, l = i.useMemo(() => (0, p.w)(t), [t]);
   if (null == l) return null;
   let {
-    headerText: a,
+    headerText: s,
     descriptionText: o,
     icon: c
   } = l;
@@ -266,15 +266,15 @@ function S(e) {
       })
     }), (0, r.jsxs)("div", {
       className: j.ruleTextContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         className: j.ruleTextHeader,
         variant: "text-md/semibold",
         color: "header-primary",
         children: (0, r.jsxs)("div", {
           className: j.ruleTextHeader,
-          children: [a, E(t)]
+          children: [s, E(t)]
         })
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: j.ruleTextDescription,
         variant: "text-sm/normal",
         children: o
@@ -283,7 +283,7 @@ function S(e) {
       })]
     }), (0, r.jsx)(y, {
       className: j.actionContainer,
-      children: (0, r.jsx)(s.zxk, {
+      children: (0, r.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",
         text: t === x.fX.KEYWORD ? b.intl.string(b.t.CumH4u) : b.intl.string(b.t.oRs6mJ),
@@ -303,11 +303,11 @@ function T(e) {
     onSetupRule: d,
     onChangeRule: u
   } = e, g = e => {
-    null != t && (e.preventDefault(), e.stopPropagation(), (0, a.jW)(e, async () => {
+    null != t && (e.preventDefault(), e.stopPropagation(), (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("25443").then(n.bind(n, 46577));
-      return n => (0, r.jsx)(e, _({
+      return n => (0, r.jsx)(e, v({
         rule: t
       }, n))
     }))
@@ -323,7 +323,7 @@ function T(e) {
     rule: t,
     isDefaultRule: o,
     onContextMenu: g
-  })), (0, r.jsx)(s.P3F, {
+  })), (0, r.jsx)(a.P3F, {
     className: j.mainContainer,
     onContextMenu: g,
     children: m

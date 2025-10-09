@@ -126,8 +126,8 @@ function eR(e, t) {
 let eP = null,
   ew = new Chunk710845.Z("MessageActionCreators"),
   eD = new Chunk710845.Z("MessageQueue"),
-  eL = false;
-class ex {
+  ex = false;
+class eL {
   markComplete() {
     this.completed = true
   }
@@ -151,7 +151,7 @@ function eM(e) {
       code: c,
       url: u
     } = e;
-    if (t === b.g.INVITE) ej({
+    if (t === b.g.INVITE) ek({
       inviteKey: c,
       channelId: n,
       messageId: r,
@@ -199,7 +199,7 @@ function eM(e) {
   })
 }
 
-function ej(e) {
+function ek(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -248,7 +248,7 @@ function ej(e) {
   }
 }
 
-function ek(e, t, n, r, i) {
+function ej(e, t, n, r, i) {
   (0, eh.Q_)(e).forEach(e => {
     let a = ea.Z.getChannel(t);
     null != a && d.ZP.trackWithMetadata(eO.rMx.GIFT_CODE_SENT, {
@@ -556,7 +556,7 @@ let eB = {
         type: "LOAD_MESSAGES"
       });
       let v = null == y ? true : y.messageId,
-        T = new ex;
+        T = new eL;
       return d || this.fetchLocalMessages(t, n, r, i, T), a.tn.get({
         url: eO.ANM.MESSAGES(t),
         query: {
@@ -718,8 +718,8 @@ let eB = {
         nonce: o
       });
       let s = () => eZ._sendMessage(e, t, i),
-        l = x.ZP.backgroundify(s, true);
-      return (j.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+        l = L.ZP.backgroundify(s, true);
+      return (k.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           eD.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -831,7 +831,7 @@ let eB = {
         context: {
           location: eT.dy.GREET
         }
-      }).then(n => (k.Z.donateSentMessage(n.body.content, e), eZ.receiveMessage(e, n.body), s.Z.dispatch({
+      }).then(n => (j.Z.donateSentMessage(n.body.content, e), eZ.receiveMessage(e, n.body), s.Z.dispatch({
         type: "STICKER_TRACK_USAGE",
         stickerIds: [t]
       }), n), t => {
@@ -891,9 +891,9 @@ let eB = {
           onAttachmentUploadError: w,
           announcementSendOptions: D
         } = n,
-        x = null != (i = n.flags) ? i : 0,
+        L = null != (i = n.flags) ? i : 0,
         [M, Y] = (0, ee.Z)(d);
-      M && (d = Y, x = (0, ep.pj)(x, eO.iLy.SUPPRESS_NOTIFICATIONS));
+      M && (d = Y, L = (0, ep.pj)(L, eO.iLy.SUPPRESS_NOTIFICATIONS));
       let Q = false,
         J = (null == (r = n.messageReference) ? true : r.type) === eO.Uvt.FORWARD;
       if ("" === d && null == h && null == E && null == I && null == T && null == S && !J && (null == R || 0 === R.length) && (null == t.components || 0 === t.components.length))
@@ -909,13 +909,13 @@ let eB = {
           type: et,
           messageReference: y,
           allowedMentions: O,
-          flags: 0 !== x ? x : true,
+          flags: 0 !== L ? L : true,
           nonce: en,
           poll: (0, V.x9)(I),
           sharedCustomTheme: T
         });
-      if (false !== n.eagerDispatch && ((0, Z.EL)(e, ea.id), null != E && (ea.sticker_items = E.map(e => $.Z.getStickerById(e)).filter(e => null != e)), eZ.receiveMessage(e, ea, true, n)), !eL && null != f && f.length > 0) {
-        eL = true;
+      if (false !== n.eagerDispatch && ((0, Z.EL)(e, ea.id), null != E && (ea.sticker_items = E.map(e => $.Z.getStickerById(e)).filter(e => null != e)), eZ.receiveMessage(e, ea, true, n)), !ex && null != f && f.length > 0) {
+        ex = true;
         let t = ef.default.getCurrentUser(),
           {
             errorMessage: n,
@@ -932,7 +932,7 @@ let eB = {
           tts: p,
           message_reference: y,
           allowed_mentions: O,
-          flags: x,
+          flags: L,
           analyticsLocation: m
         }
       };
@@ -951,7 +951,7 @@ let eB = {
         }
       }
       if (null != I && (eo.message.poll = I), null != T && (eo.message.shared_client_theme = T), null != E && (eo.message.sticker_ids = E), F.Z.isEnabled() && (eo.message.has_poggermode_enabled = true), null != S && (eo.message.content_inventory_entry = S), null != b && (eo.message.confetti_potion = (0, K.vY)(b), b.callback()), null != R && R.length > 0 && (eo.message.attachments = R), null != P && P.length > 0) try {
-        let t = await (0, L.c)({
+        let t = await (0, x.c)({
           channelId: e,
           nonce: en,
           items: P,
@@ -983,7 +983,7 @@ let eB = {
         eD.info("Queueing message to be sent LogId:".concat(o)), u.ZP.enqueue(eo, o => {
           let c = Date.now() - i;
           if (o.ok) {
-            k.Z.donateSentMessage(d, e), eZ.receiveMessage(e, o.body, true, {
+            j.Z.donateSentMessage(d, e), eZ.receiveMessage(e, o.body, true, {
               sendAnalytics: {
                 duration: c,
                 queueSize: a
@@ -1011,7 +1011,7 @@ let eB = {
                 joinRequestUserId: n
               })
             }
-            j.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
+            k.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ed.S.SendMessage,
               channelId: e
@@ -1033,7 +1033,7 @@ let eB = {
               messageId: o.body.id,
               location: null != m ? m : "chat_input",
               inviteAnalyticsMetadata: g
-            }), ek(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
+            }), ej(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
               type: "UPLOAD_COMPLETE",
               channelId: e,
               file: l._file,
@@ -1251,6 +1251,6 @@ let eB = {
         confirmText: eS.intl.string(eS.t.BddRzc)
       })
     }),
-    trackInvite: ej
+    trackInvite: ek
   },
   eF = eZ

@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 477718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => U
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,10 +27,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87437 = require("./87437.js"),
-  Chunk938556 = require("./938556.js"),
-  Chunk87819 = require("./87819.js");
+  Chunk938556 = require("./938556.js");
 
-function U(e) {
+function L(e) {
   var t, n;
   let {
     log: i,
@@ -38,7 +37,7 @@ function U(e) {
     guild: d
   } = e, {
     analyticsLocations: m
-  } = (0, _.ZP)(), O = I.nm(i), R = I.QM(i), L = null == (t = I.V$(S.zUn.REASON, i)) ? true : t.newValue, U = I.J5(i), M = (0, A.LJ)(i.id), x = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(a.guildId, i.userId) : null, [a.guildId, i.userId]), v = (0, N.X7)(null == x ? true : x.guildId, null == x ? true : x.userId, null != (n = null == x ? true : x.colorStrings) ? n : null), b = l.useCallback(e => t => {
+  } = (0, _.ZP)(), O = I.nm(i), R = I.QM(i), L = null == (t = I.V$(S.zUn.REASON, i)) ? true : t.newValue, U = I.J5(i), M = (0, A.LJ)(i.id), x = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(a.guildId, i.userId) : null, [a.guildId, i.userId]), b = (0, N.X7)(null == x ? true : x.guildId, null == x ? true : x.userId, null != (n = null == x ? true : x.colorStrings) ? n : null), v = l.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, T.RE)(e, m)
   }, [m]), P = l.useCallback(() => {
     var e;
@@ -46,7 +45,7 @@ function U(e) {
       asContainer: true,
       text: C.intl.string(C.t.mvsi9v),
       children: (0, r.jsx)(E.P3F, {
-        onClick: b(x),
+        onClick: v(x),
         tag: "span",
         className: p.username,
         children: (0, r.jsxs)(E.Text, {
@@ -55,12 +54,12 @@ function U(e) {
           children: ["@", (0, r.jsx)(E.PUh, {
             name: f.ZP.getName(a.guildId, null, i.user),
             colorString: null != (e = null == x ? true : x.colorString) ? e : null,
-            colorStrings: v
+            colorStrings: b
           })]
         })
       })
     })
-  }, [b, i.user, a.guildId, x, v])();
+  }, [v, i.user, a.guildId, x, b])();
   return (0, r.jsxs)("div", {
     className: s()(D.modInfoItem, p.auditLogItem),
     children: [(0, r.jsxs)("div", {
@@ -126,7 +125,7 @@ function U(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     member: t
   } = e, n = (0, u.e7)([O.Z], () => O.Z.getGuild(t.guildId), [t.guildId]), i = (0, u.e7)([m.Z], () => {
@@ -137,11 +136,10 @@ function M(e) {
     !async function(e, t) {
       await d.gV(t, e)
     }(t.guildId, t.userId)
-  }, [t.guildId, t.userId]), null == n || 0 === i.length) ? null : (0, r.jsx)(E.xJW, {
-    title: C.intl.string(C.t.flCxLi),
-    titleClassName: L.infoTitle,
+  }, [t.guildId, t.userId]), null == n || 0 === i.length) ? null : (0, r.jsx)(E.gNt, {
+    label: C.intl.string(C.t.flCxLi),
     children: i.length > 0 ? (0, r.jsx)(R.WM, {
-      children: i.map(e => (0, r.jsx)(U, {
+      children: i.map(e => (0, r.jsx)(L, {
         log: e,
         member: t,
         guild: n

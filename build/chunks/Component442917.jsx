@@ -251,7 +251,7 @@ class ef extends Chunk647438.PureComponent {
           onHide: this.handleHidePIP,
           renderBottomLeftControls: this.renderBottomLeftControls,
           renderBottomRightControls: this.renderBottomRightControls,
-          preventIdleComponent: x.Z,
+          preventIdleComponent: L.Z,
           width: a,
           className: es.elevationHigh,
           videoControlsClassName: (null == c ? true : c.state) === ei.jm8.ENDED ? eo.videoControls : true
@@ -312,7 +312,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(j.Z, {
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
       className: eo.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
@@ -329,7 +329,7 @@ class ef extends Chunk647438.PureComponent {
         participantOnScreen: e,
         channel: t
       } = this.props;
-      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(x.Z, {
+      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(L.Z, {
         children: (0, r.jsx)(O.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
@@ -338,7 +338,7 @@ class ef extends Chunk647438.PureComponent {
           compact: true
         })
       })
-    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
+    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
       className: eo.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,

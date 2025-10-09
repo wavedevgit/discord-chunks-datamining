@@ -95,21 +95,22 @@ function S(e) {
             applicationName: null == A ? true : A.name
           })
         })]
-      }), !ei && (0, r.jsxs)("div", {
+      }), !ei && (0, r.jsx)("div", {
         className: C.guildPickerContainer,
-        children: [(0, r.jsx)(s.vwX, {
-          children: O.intl.string(O.t["5qyruL"])
-        }), (0, r.jsxs)("div", {
-          className: C.guildNameContainer,
-          children: [(0, r.jsx)(s.Text, {
-            variant: "text-md/normal",
-            children: O.intl.string(O.t.dBih7e)
-          }), (0, r.jsx)(s.Text, {
-            variant: "text-md/normal",
-            lineClamp: 1,
-            children: null != (n = null == et ? true : et.name) ? n : O.intl.string(O.t.dtwqPT)
-          })]
-        })]
+        children: (0, r.jsx)(s.gNt, {
+          label: O.intl.string(O.t["5qyruL"]),
+          children: (0, r.jsxs)("div", {
+            className: C.guildNameContainer,
+            children: [(0, r.jsx)(s.Text, {
+              variant: "text-md/normal",
+              children: O.intl.string(O.t.dBih7e)
+            }), (0, r.jsx)(s.Text, {
+              variant: "text-md/normal",
+              lineClamp: 1,
+              children: null != (n = null == et ? true : et.name) ? n : O.intl.string(O.t.dtwqPT)
+            })]
+          })
+        })
       }), null == D ? (0, r.jsx)(u.Z, {
         selectedPlanId: W.id,
         planGroup: k,

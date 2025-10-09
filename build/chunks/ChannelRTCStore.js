@@ -2,7 +2,7 @@
 /** chunk id: 358221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => ek
+  Z: () => ej
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -68,11 +68,11 @@ function w(e, t) {
   }), e
 }
 let D = new Chunk710845.Z("ChannelRTCStore"),
-  L = Object.freeze([]),
-  x = [],
+  x = Object.freeze([]),
+  L = [],
   M = {},
-  j = {},
   k = {},
+  j = {},
   U = {},
   G = {},
   B = {},
@@ -88,7 +88,7 @@ function W(e) {
 }
 
 function K() {
-  for (let e of x) ei(module);
+  for (let e of L) ei(module);
   ea()
 }
 
@@ -100,18 +100,18 @@ function z() {
   null == require || module.includes(require) || module.push(require);
   let r = Chunk258609.default.getRemoteSessionId(),
     i = Chunk979651.Z.getVoiceStateForSession(Chunk314897.default.getId(), r);
-  (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(x, module).forEach(ei);
-  let a = s().difference(module, x);
-  return x = module, a
+  (null == Chunk512722 ? true : Chunk512722.channelId) != null && module.push(null == Chunk512722 ? true : Chunk512722.channelId), s().difference(L, module).forEach(ei);
+  let a = s().difference(module, L);
+  return L = module, a
 }
 
 function q(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
   return t.reduce((t, n) => e(W(n)) ? (er(n), en(n), true) : t, false)
 }
 
 function X(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : x;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
   return q(t => t.updateParticipant(e), t)
 }
 
@@ -119,23 +119,23 @@ function Q(e) {
   var t;
   let n = E.Z.getChannel(e),
     r = (null == n ? true : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
-  return null != (t = j[e]) ? t : [r, A.dF.NONE]
+  return null != (t = k[e]) ? t : [r, A.dF.NONE]
 }
 
 function J(e) {
-  if (null == j[e]) returnfalse;
-  let [t] = j[e];
+  if (null == k[e]) returnfalse;
+  let [t] = k[e];
   return t !== A.dF.NONE
 }
 
 function $(e) {
-  null == k[e] && (k[e] = {
+  null == j[e] && (j[e] = {
     gridDurationMs: 0,
     focusDurationMs: 0,
     toggleCount: 0,
     lastUpdate: 0
   });
-  let t = k[e],
+  let t = j[e],
     n = performance.now(),
     r = J(e);
   if (t.lastUpdate > 0) {
@@ -148,7 +148,7 @@ function $(e) {
 function ee(e, t) {
   $(e);
   let n = J(e);
-  null == t ? delete j[e] : j[e] = t, n !== J(e) && k[e].toggleCount++
+  null == t ? delete k[e] : k[e] = t, n !== J(e) && j[e].toggleCount++
 }
 
 function et(e) {
@@ -187,7 +187,7 @@ function er(e) {
 }
 
 function ei(e) {
-  delete M[e], delete j[e], delete U[e], delete G[e]
+  delete M[e], delete k[e], delete U[e], delete G[e]
 }
 
 function ea() {
@@ -199,7 +199,7 @@ function eo(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete k[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
+  return null != t ? delete j[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
@@ -226,7 +226,7 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
-    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !x.includes(i)) ? e : X(r) || e
+    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : X(r) || e
   }, false)
 }
 
@@ -270,7 +270,7 @@ function eh(e) {
   let {
     guild: t
   } = e, n = [];
-  if (s().forEach(x, e => {
+  if (s().forEach(L, e => {
       let r = E.Z.getChannel(e);
       (null == r || r.getGuildId() === t.id) && n.push(e)
     }), 0 === n.length) returnfalse;
@@ -448,7 +448,7 @@ function eD(e) {
   return q(e => e.updateParticipantQuality(n, r, i), [t])
 }
 
-function eL(e) {
+function ex(e) {
   let {
     channelId: t,
     guildId: n,
@@ -462,7 +462,7 @@ function eL(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, true)), q(e => e.rebuild(), [t])
 }
 
-function ex(e) {
+function eL(e) {
   let {
     channelId: t,
     guildId: n,
@@ -480,7 +480,7 @@ function eM(e) {
   var t;
   return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocal())
 }
-class ej extends(r = Chunk442837.ZP.PersistedStore) {
+class ek extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
@@ -494,26 +494,26 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getParticipants(e) {
     var t;
-    return null != (t = W(e).toArray()) ? t : L
+    return null != (t = W(e).toArray()) ? t : x
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : L
+    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : x
   }
   getFilteredParticipants(e) {
     return Z[e] ? W(e).toArray(S.sI.FILTERED) : W(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : L
+    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : x
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : L
+    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : x
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : L
+    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : x
   }
   getParticipant(e, t) {
     return W(e).getParticipant(t)
@@ -539,7 +539,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t ? null : W(e).getParticipant(t)
   }
   getSelectedParticipantStats(e) {
-    let t = k[e];
+    let t = j[e];
     return null == t ? {} : {
       view_mode_grid_duration_ms: Math.floor(t.gridDurationMs),
       view_mode_focus_duration_ms: Math.floor(t.focusDurationMs),
@@ -582,8 +582,8 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return Y[e]
   }
 }
-N(ej, "displayName", "ChannelRTCStore"), N(ej, "persistKey", "ChannelRTCStore");
-let ek = new ej(Chunk570140.Z, {
+N(ek, "displayName", "ChannelRTCStore"), N(ek, "persistKey", "ChannelRTCStore");
+let ej = new ek(Chunk570140.Z, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,
@@ -617,8 +617,8 @@ let ek = new ej(Chunk570140.Z, {
   SPEAKING: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: ed,
-  GUILD_RING_START: eL,
-  GUILD_RING_STOP: ex,
+  GUILD_RING_START: ex,
+  GUILD_RING_STOP: eL,
   USER_UPDATE: ef,
   GUILD_MEMBER_UPDATE: ef,
   GUILD_DELETE: eh

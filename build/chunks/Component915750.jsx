@@ -59,10 +59,10 @@ let N = 100,
   w = .5,
   D = new Set;
 
-function L(e, t) {
+function x(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class x {
+class L {
   getId() {
     return this.id
   }
@@ -142,7 +142,7 @@ class x {
         let t = false,
           n = (0, y.Zp)(this.questContent);
         if (null != n) {
-          let r = L(e.id, n);
+          let r = x(e.id, n);
           (t = !D.has(r) && (0, y.VB)(this.questContent)) && D.add(r)
         }
         let r = (0, y.jY)(this.questContent);
@@ -192,7 +192,7 @@ class x {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new x({
+      return this.stop(), new L({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -229,15 +229,15 @@ let M = (e, t) => {
     let n = Array.isArray(e) ? e.sort().map(e => e.id).join("_") : e.id;
     return "".concat(n, "_").concat(t)
   },
-  j = e => {
+  k = e => {
     let t = Array.isArray(e) ? null : (0, b.uk)(e),
       n = (0, c.Z)(t);
     return t !== n
   },
-  k = Chunk647438.createContext(true);
+  j = Chunk647438.createContext(true);
 
 function U() {
-  let e = Chunk647438.useContext(k);
+  let e = Chunk647438.useContext(j);
   return null == module ? true : module.current
 }
 
@@ -254,14 +254,14 @@ function B(e) {
     reference: o,
     focusedChanged: c,
     sourceQuestContent: u
-  } = e, d = j(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
+  } = e, d = k(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([O.Z], () => null != O.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new x({
+    (i || o) && null != f.current && f.current.stop(), i && (f.current = new L({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,
@@ -272,7 +272,7 @@ function B(e) {
       isQuestEnrollmentBlocked: _,
       sourceQuestContent: u
     }), f.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(k.Provider, {
+  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(j.Provider, {
     value: f,
     children: e.children(o, f)
   })

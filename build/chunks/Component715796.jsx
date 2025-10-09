@@ -16,9 +16,9 @@ function d(e) {
   let t = (null == e ? true : e.features.has(c.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === true,
     d = (null == e ? true : e.features.has(c.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
     u = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
-    g = null != e && (0, a.eM)(e, u);
+    g = null != e && (0, s.eM)(e, u);
   i.useEffect(() => {
-    null != e && t && g && (0, s.ZDy)(async () => {
+    null != e && t && g && (0, a.ZDy)(async () => {
       let {
         default: t
       } = await n.e("710").then(n.bind(n, 32342));

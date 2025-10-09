@@ -2,7 +2,7 @@
 /** chunk id: 979664, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,10 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk999382 = require("./999382.js"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk713611 = require("./713611.js"),
-  Chunk270856 = require("./270856.js");
+  Chunk713611 = require("./713611.js");
 
-function m(e) {
+function g(e) {
   let {
     profile: t,
     handleIconChange: l,
@@ -23,7 +22,7 @@ function m(e) {
   } = e, g = i.useCallback(() => {
     l(null)
   }, [l]), m = i.useCallback((e, t) => {
-    (0, s.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("91689"), n.e("59732"), n.e("7016")]).then(n.bind(n, 712451));
@@ -59,23 +58,23 @@ function m(e) {
   }, [l]);
   return (0, r.jsxs)("div", {
     className: u.buttons,
-    children: [(0, r.jsx)(s.tEY, {
+    children: [(0, r.jsx)(a.tEY, {
       within: true,
       children: (0, r.jsxs)("div", {
         className: u.iconInput,
-        children: [(0, r.jsx)(s.zxk, {
+        children: [(0, r.jsx)(a.zxk, {
           tabIndex: false,
           size: "sm",
           variant: "primary",
           disabled: !o,
           text: d.intl.string(d.t.r3Jdsb)
-        }), (0, r.jsx)(a.ZP, {
+        }), (0, r.jsx)(s.ZP, {
           tabIndex: 0,
           onChange: m,
           disabled: !o
         })]
       })
-    }), null != t.icon ? (0, r.jsx)(s.zxk, {
+    }), null != t.icon ? (0, r.jsx)(a.zxk, {
       variant: "critical-secondary",
       size: "sm",
       text: d.intl.string(d.t.x8AlTk),
@@ -85,32 +84,23 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     profile: t,
     canManageGuild: n,
     onIconChange: i
-  } = e, a = (0, l.e7)([o.Z], () => o.Z.getError("icon"));
-  return (0, r.jsxs)("section", {
+  } = e, s = (0, l.e7)([o.Z], () => o.Z.getError("icon"));
+  return (0, r.jsx)("section", {
     className: u.container,
-    children: [(0, r.jsxs)(s.hjN, {
-      className: g.section,
-      children: [(0, r.jsxs)("div", {
-        className: g.sectionHeader,
-        children: [(0, r.jsx)(s.vwX, {
-          children: d.intl.string(d.t.FkQnxM)
-        }), (0, r.jsx)(s.R94, {
-          type: "description",
-          children: d.intl.string(d.t.KjkA0d)
-        })]
-      }), (0, r.jsx)(m, {
+    children: (0, r.jsx)(a.gNt, {
+      label: d.intl.string(d.t.FkQnxM),
+      description: d.intl.string(d.t.KjkA0d),
+      errorMessage: s,
+      children: (0, r.jsx)(g, {
         profile: t,
         canManageGuild: n,
         handleIconChange: i
-      })]
-    }), null != a ? (0, r.jsx)("div", {
-      className: u.iconError,
-      children: a
-    }) : null]
+      })
+    })
   })
 }

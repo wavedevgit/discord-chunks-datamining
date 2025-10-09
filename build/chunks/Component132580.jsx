@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function o(e) {
   var t, n, {
       className: o,
-      color: c = (0, l.Lq)(s.Ilk.BRAND_500)
+      color: c = (0, l.Lq)(a.Ilk.BRAND_500)
     } = e,
     d = function(e, t) {
       if (null == e) return {};
@@ -49,7 +49,7 @@ function o(e) {
     }
     return e
   }({}, d), n = n = {
-    text: a.intl.string(a.t.G6GWZ2),
+    text: s.intl.string(s.t.G6GWZ2),
     color: c,
     className: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -36,7 +36,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,13 +52,13 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,10 +108,10 @@ let H = e => {
   W = {
     newline: o().defaultRules.newline,
     paragraph: o().defaultRules.paragraph,
-    escape: k(M({}, o().defaultRules.escape), {
+    escape: j(M({}, o().defaultRules.escape), {
       match: (e, t, n) => false === t.allowEscape ? null : o().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: k(M({}, o().defaultRules.blockQuote), {
+    blockQuote: j(M({}, o().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -143,14 +143,14 @@ let H = e => {
       }
     }),
     link: Chunk772096.ZP,
-    autolink: k(M({}, o().defaultRules.autolink), {
+    autolink: j(M({}, o().defaultRules.autolink), {
       parse: V
     }),
-    mailto: k(M({}, o().defaultRules.mailto), {
+    mailto: j(M({}, o().defaultRules.mailto), {
       match: o().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
       requiredFirstCharacters: ["<"]
     }),
-    tel: k(M({}, o().defaultRules.mailto), {
+    tel: j(M({}, o().defaultRules.mailto), {
       requiredFirstCharacters: ["<"],
       match: o().inlineRegex(/^<((?:(?:tel|sms):\+?|\+)(?:(?:[0-9]|\([0-9]+\)))(?:[- .\/]?(?:[0-9]|\([0-9]+\)))+)>/),
       parse(e) {
@@ -166,7 +166,7 @@ let H = e => {
         }
       }
     }),
-    url: k(M({}, o().defaultRules.url), {
+    url: j(M({}, o().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -193,10 +193,10 @@ let H = e => {
     u: o().defaultRules.u,
     br: o().defaultRules.br,
     text: Chunk594199.ZP,
-    inlineCode: k(M({}, o().defaultRules.inlineCode), {
+    inlineCode: j(M({}, o().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = o().defaultRules.inlineCode.parse(e, t, n);
-        returntrue === n.parseInlineCodeChildContent ? k(M({}, r), {
+        returntrue === n.parseInlineCodeChildContent ? j(M({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -238,7 +238,7 @@ let H = e => {
           d = null != l ? _.Z.getRole(l.id, s) : null;
         if (null == d) return {
           type: "text",
-          content: "@".concat(L.intl.string(L.t["YV4F/v"]))
+          content: "@".concat(x.intl.string(x.t["YV4F/v"]))
         };
         let f = (0, u.zI)(null == l ? true : l.id, d) && !(0, c.Gr)(d);
         return {
@@ -286,7 +286,7 @@ let H = e => {
         }
         let l = e[1],
           c = null != l && w.Xyh.test(l.trim()),
-          u = c && n.unknownUserMentionPlaceholder ? "@".concat(L.intl.string(L.t.sKdZ6e)) : e[0];
+          u = c && n.unknownUserMentionPlaceholder ? "@".concat(x.intl.string(x.t.sKdZ6e)) : e[0];
         return {
           userId: i,
           channelId: n.channelId,
@@ -351,7 +351,7 @@ let H = e => {
           channelId: n.channelId,
           content: [{
             type: "text",
-            content: L.intl.string(L.t["11pdXV"])
+            content: x.intl.string(x.t["11pdXV"])
           }],
           icon: true
         };
@@ -363,7 +363,7 @@ let H = e => {
           channelId: n.channelId,
           content: [{
             type: "text",
-            content: "".concat(null != (a = null == l ? true : l.name) ? a : L.intl.string(L.t["11pdXV"]))
+            content: "".concat(null != (a = null == l ? true : l.name) ? a : x.intl.string(x.t["11pdXV"]))
           }],
           icon: null != l && null != l.icon_hash ? m.ZP.getApplicationIconURL({
             id: l.id,
@@ -500,7 +500,7 @@ let er = 10,
       parse(e, t, n) {
         var r;
         let i = null != (r = n.parseDepth) ? r : 0,
-          a = k(M({}, n), {
+          a = j(M({}, n), {
             parseDepth: i + 1
           }),
           o = t(e[2], a),

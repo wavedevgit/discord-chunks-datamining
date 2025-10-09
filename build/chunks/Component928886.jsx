@@ -45,9 +45,9 @@ function I(e) {
     isDisplayingWowMomentConfirmation: w
   } = (0, m.JL)(), {
     isGift: D,
-    selectedGiftStyle: L,
-    giftRecipient: x
-  } = (0, h.wD)(), M = D && (0, p.pO)(x) && S === g.h8.CONFIRM && null != L && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, j = null != n && null != S, k = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !k.includes(S) && null != T, G = (0, u.N)(a), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), V = !D && null != Z && null != T && F;
+    selectedGiftStyle: x,
+    giftRecipient: L
+  } = (0, h.wD)(), M = D && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, k = null != n && null != S, j = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !j.includes(S) && null != T, G = (0, u.N)(a), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), V = !D && null != Z && null != T && F;
   return i.useMemo(() => {
     if (null == S) return;
     let e = null;
@@ -55,14 +55,14 @@ function I(e) {
       className: O.container,
       children: [(0, r.jsx)(d.Z, {
         defaultAnimationState: l.SR.LOOP,
-        giftStyle: L,
+        giftStyle: x,
         className: O.seasonalGiftBoxHeaderIcon
       }), (0, r.jsx)(s.olH, {
         onClick: I,
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : j ? e = n(null != A ? A : null, I, S) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
+    }) : k ? e = n(null != A ? A : null, I, S) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
       step: S,
       onClose: I
     }) : U && (o()(v(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(f.Z, {
@@ -73,10 +73,10 @@ function I(e) {
       showTrialBadge: B,
       showDiscountBadge: V,
       isGift: D,
-      giftRecipient: x,
+      giftRecipient: L,
       isEligibleForTrial: B,
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: w
     })), e
-  }, [L, I, C, n, A, T, S, B, V, M, U, j, N, D, x, P, w])
+  }, [x, I, C, n, A, T, S, B, V, M, U, k, N, D, L, P, w])
 }

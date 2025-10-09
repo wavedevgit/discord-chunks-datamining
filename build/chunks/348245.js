@@ -76,7 +76,7 @@ function w(e) {
       avoidInitialScroll: l
     });
     else {
-      if ((null == d ? true : d.isThread()) && x(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
+      if ((null == d ? true : d.isThread()) && L(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
         channelId: n,
         limit: A.AQB,
         jump: {
@@ -113,19 +113,19 @@ function w(e) {
     }
 }
 let D = 90 * Chunk70956.Z.Millis.DAY,
-  L = "viewedThreadIds";
+  x = "viewedThreadIds";
 
-function x(e) {
+function L(e) {
   if (O.ZP.hasOpenedThread(e)) returnfalse;
   if (null == i) {
     var t;
-    i = null != (t = o.K.get(L, {})) ? t : {}
+    i = null != (t = o.K.get(x, {})) ? t : {}
   }
   if (e in i) returnfalse;
   i[e] = Date.now();
   let n = Date.now() - D;
   for (let e in i) i[e] < n && delete i[e];
-  return o.K.set(L, i), true
+  return o.K.set(x, i), true
 }
 
 function M(e) {
@@ -141,7 +141,7 @@ function M(e) {
   }
 }
 
-function j() {
+function k() {
   let e = Chunk944486.Z.getChannelId();
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
@@ -156,7 +156,7 @@ function j() {
   }), Z(exports.getGuildId(), exports.id)
 }
 
-function k() {
+function j() {
   let e = Chunk944486.Z.getChannelId();
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
@@ -325,27 +325,27 @@ function q(e) {
 }
 class X extends Chunk147913.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", j)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", k)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", j)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", k)
   }
   constructor(...e) {
-    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", k), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {
+    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", j), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {
       APP_STATE_UPDATE: q,
-      OVERLAY_INITIALIZE: j,
+      OVERLAY_INITIALIZE: k,
       CHANNEL_SELECT: U,
       VOICE_CHANNEL_SELECT: G,
       THREAD_CREATE: H,
-      THREAD_LIST_SYNC: () => k(),
+      THREAD_LIST_SYNC: () => j(),
       CHANNEL_CREATE: H,
       CHANNEL_PRELOAD: V,
-      GUILD_CREATE: () => k(),
+      GUILD_CREATE: () => j(),
       MESSAGE_END_EDIT: Y,
       LOAD_MESSAGES_SUCCESS: K,
       UPLOAD_FAIL: z,
-      CHANNEL_DELETE: () => k(),
-      THREAD_DELETE: () => k(),
+      CHANNEL_DELETE: () => j(),
+      THREAD_DELETE: () => j(),
       CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE: B
     })
   }

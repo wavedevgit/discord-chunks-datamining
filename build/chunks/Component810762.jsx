@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => _
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk873546 = require("./873546.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk873546 = require("./873546.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk270237 = require("./270237.js"),
@@ -29,18 +28,15 @@ let _ = e => {
       onClick: t
     }), (0, r.jsx)(o.LZC, {
       size: 10
-    }), (0, r.jsx)(o.vwX, {
-      tag: "h1",
-      children: d.intl.string(d.t["KzCF//"])
-    }), (0, r.jsx)(o.Text, {
-      variant: "text-sm/normal",
-      className: f.pageDescription,
-      children: d.intl.string(d.t["Y+ucR0"])
-    }), (0, r.jsx)("div", {
-      className: f.subscriptionsContainer,
-      children: n.map(e => (0, r.jsx)(u.Z, {
-        subscription: e
-      }, e.id))
+    }), (0, r.jsx)(o.C3N, {
+      label: d.intl.string(d.t["KzCF//"]),
+      description: d.intl.string(d.t["Y+ucR0"]),
+      children: (0, r.jsx)("div", {
+        className: f.subscriptionsContainer,
+        children: n.map(e => (0, r.jsx)(u.Z, {
+          subscription: e
+        }, e.id))
+      })
     })]
   })
 }

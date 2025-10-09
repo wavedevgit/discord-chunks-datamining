@@ -63,9 +63,9 @@ let C = Chunk981631.QZA.CLOSED,
   P = false,
   w = false,
   D = null,
-  L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
+  x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
-function x(e) {
+function L(e) {
   if (null == a || a.id !== e) returnfalse;
   if (a === o) {
     let t = O.Z.getChannel(e);
@@ -81,17 +81,17 @@ function x(e) {
 
 function M(e) {
   let t = O.Z.getChannel(e.channelId);
-  if (null == t) return k();
+  if (null == t) return j();
   C = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
   let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
-  return N = {}, j({
+  return N = {}, k({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : n,
     subsection: i
   }), true
 }
 
-function j(e) {
+function k(e) {
   r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (P = true, h.tn.get({
     url: v.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: true,
@@ -104,7 +104,7 @@ function j(e) {
   }, () => P = false))
 }
 
-function k() {
+function j() {
   w = false, C = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, R = {}
 }
 
@@ -127,7 +127,7 @@ let Z = d().debounce(() => {
   if (null == o || null == a) returnfalse;
   let e = o.toJS(),
     t = a.toJS();
-  L.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
+  x.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
 }, 500);
 
 function F(e) {
@@ -199,7 +199,7 @@ function W(e) {
 }
 
 function K(e) {
-  return !!x(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), true)
+  return !!L(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), true)
 }
 
 function z(e) {
@@ -286,12 +286,12 @@ let $ = new J(Chunk570140.Z, {
     CHANNEL_SETTINGS_SUBMIT: U,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: G,
     CHANNEL_SETTINGS_SUBMIT_FAILURE: B,
-    CHANNEL_SETTINGS_CLOSE: k,
+    CHANNEL_SETTINGS_CLOSE: j,
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
     CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: F,
-    CHANNEL_SETTINGS_SET_SECTION: j,
+    CHANNEL_SETTINGS_SET_SECTION: k,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,
     CHANNEL_DELETE: X,

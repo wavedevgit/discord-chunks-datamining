@@ -17,10 +17,10 @@ function o(e) {
     onClick: n
   } = e;
   return (0, r.jsxs)(i.P3F, {
-    className: a.container,
+    className: s.container,
     onClick: n,
     children: [(0, r.jsx)("div", {
-      className: a.icon,
+      className: s.icon,
       children: (0, r.jsx)(i.BFJ, {
         size: "custom",
         color: "currentColor",
@@ -28,19 +28,19 @@ function o(e) {
         height: 20
       })
     }), (0, r.jsxs)("div", {
-      className: a.description,
+      className: s.description,
       children: [(0, r.jsx)(i.Text, {
-        className: a.label,
+        className: s.label,
         color: "none",
         variant: "text-md/bold",
-        children: s.intl.string(s.t.yiaoNj)
+        children: a.intl.string(a.t.yiaoNj)
       }), (0, r.jsxs)(i.Text, {
         color: "none",
         variant: "text-xs/normal",
-        children: [t.name, " • ", s.intl.string(s.t.JwYI3N)]
+        children: [t.name, " • ", a.intl.string(a.t.JwYI3N)]
       })]
     }), (0, r.jsx)(l.Z, {
-      className: a.arrow,
+      className: s.arrow,
       direction: l.Z.Directions.RIGHT
     })]
   })

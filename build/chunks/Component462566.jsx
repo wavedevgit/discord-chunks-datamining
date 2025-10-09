@@ -94,8 +94,9 @@ let y = function(e) {
       name: v.name
     }, !!e)
   }, [y, v, w]);
-  let L = [{
+  let x = [{
     fields: [{
+      id: "card-number",
       name: "cardNumber",
       title: () => _.intl.string(_.t.cVyJ3t),
       getClassNameForLayout: () => h.width100,
@@ -108,6 +109,7 @@ let y = function(e) {
     }]
   }, {
     fields: [{
+      id: "card-expiration-date",
       name: "cardExpiry",
       title: () => _.intl.string(_.t["CeBa//"]),
       getClassNameForLayout: () => h.width50,
@@ -117,6 +119,7 @@ let y = function(e) {
         onFocus: R
       })
     }, {
+      id: "card-cvc",
       name: "cardCvc",
       title: () => _.intl.string(_.t.Fd3rOz),
       getClassNameForLayout: () => h.width50,
@@ -143,7 +146,7 @@ let y = function(e) {
     }]
   }];
 
-  function x(e, t) {
+  function L(e, t) {
     if ("name" !== t && "country" !== t && "postalCode" !== t) return;
     let n = g({}, v),
       r = g({}, T),
@@ -193,11 +196,11 @@ let y = function(e) {
   }
   return (0, r.jsxs)("div", {
     children: [M(), (0, r.jsx)(d.Z, {
-      form: L,
+      form: x,
       errors: A,
       formError: n,
       values: v,
-      onFieldChange: x,
+      onFieldChange: L,
       onFieldBlur: D
     })]
   })

@@ -24,20 +24,20 @@ function p(e) {
   } = e;
   (0, i.US)([f]);
   let h = (0, c.Z)((0, b.ny)(f)),
-    g = r.useMemo(() => h.map(e => e.value), [h]);
-  r.useEffect(() => {
+    g = a.useMemo(() => h.map(e => e.value), [h]);
+  a.useEffect(() => {
     _.default.track(s.rMx.OPEN_MODAL, {
       type: "Age Verification User Feedback"
     })
   }, []);
-  let j = r.useCallback(e => {
+  let j = a.useCallback(e => {
     var t;
     let {
-      rating: r,
+      rating: a,
       problem: c,
       feedback: i
-    } = e, l = null == r, _ = (0, u.nH)(f);
-    (0, u.I)(r, "" !== i ? i : null, null != (t = null == c ? true : c.value) ? t : null, l, _), l || (0, a.ZDy)(async () => {
+    } = e, l = null == a, _ = (0, u.nH)(f);
+    (0, u.I)(a, "" !== i ? i : null, null != (t = null == c ? true : c.value) ? t : null, l, _), l || (0, r.ZDy)(async () => {
       let {
         default: e
       } = await o.e("14466").then(o.bind(o, 729328));

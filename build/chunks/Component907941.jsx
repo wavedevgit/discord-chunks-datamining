@@ -123,7 +123,7 @@ function z(e) {
   })
 }
 
-function W(e) {
+function V(e) {
   let {
     muted: t,
     messageNotifications: n,
@@ -155,7 +155,7 @@ function W(e) {
   })
 }
 
-function V(e) {
+function Y(e) {
   let {
     suppressEveryone: t,
     suppressRoles: n,
@@ -210,7 +210,7 @@ function V(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     setNewChannelOverrides: t,
     newChannelOverrides: n,
@@ -373,7 +373,7 @@ function H(e) {
       muted: p,
       guild: a,
       handleCheckboxChange: P
-    }), (0, i.jsx)(W, {
+    }), (0, i.jsx)(V, {
       muted: p,
       messageNotifications: f,
       memberCount: o,
@@ -382,7 +382,7 @@ function H(e) {
           [e]: n
         }, i)
       }
-    }), (0, i.jsx)(V, {
+    }), (0, i.jsx)(Y, {
       suppressEveryone: u,
       suppressRoles: h,
       handleCheckboxChange: P,
@@ -391,7 +391,7 @@ function H(e) {
       mobilePush: m,
       muted: p,
       guildId: t
-    }), (0, i.jsx)(Y, {
+    }), (0, i.jsx)(W, {
       setNewChannelOverrides: _,
       newChannelOverrides: L,
       setLatestOverrideId: M,

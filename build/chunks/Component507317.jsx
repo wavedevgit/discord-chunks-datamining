@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(m.oNc.BANNER), _ = i.useCallback((e, i) => {
+  } = e, j = t.features.has(m.oNc.BANNER), v = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
@@ -62,8 +62,8 @@ let j = function(e) {
         uploadType: f.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  }, [t.id]), _ = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, a.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
         section: m.jXE.GUILD_SETTINGS_ONBOARDING,
         object: m.qAy.LEARN_MORE
@@ -87,7 +87,7 @@ let j = function(e) {
       homeHeader: e
     }) : null,
     disabled: !j,
-    onChange: _,
+    onChange: v,
     hint: x.intl.string(x.t.NyXznp),
     enabled: j,
     maxFileSizeBytes: h.B
@@ -99,11 +99,11 @@ let j = function(e) {
         className: b.header,
         variant: "heading-lg/extrabold",
         children: x.intl.string(x.t.BBj1nZ)
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(s.Z, {
         className: b.boostIndicator,
         guild: t,
         guildFeature: m.oNc.BANNER,
-        onClick: v
+        onClick: _
       })]
     }), (0, r.jsxs)("div", {
       className: b.section,
@@ -116,7 +116,7 @@ let j = function(e) {
         }), (0, r.jsx)("div", {
           className: b.uploadButton,
           children: (0, r.jsx)(d.Z, {
-            onChange: _,
+            onChange: v,
             maxFileSizeBytes: h.B,
             text: x.intl.string(x.t.yG2pUl),
             size: "md",
@@ -134,11 +134,11 @@ let j = function(e) {
         className: b.header,
         variant: "heading-lg/extrabold",
         children: x.intl.string(x.t.BBj1nZ)
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(s.Z, {
         className: b.boostIndicator,
         guild: t,
         guildFeature: m.oNc.BANNER,
-        onClick: v
+        onClick: _
       })]
     }), (0, r.jsxs)("div", {
       className: b.section,
@@ -153,13 +153,13 @@ let j = function(e) {
           variant: "expressive",
           icon: l.Ucv,
           text: x.intl.string(x.t["+7XY39"]),
-          onClick: v
+          onClick: _
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(l.P3F, {
           "aria-hidden": true,
           tabIndex: false,
-          onClick: v,
+          onClick: _,
           children: C
         })
       })]

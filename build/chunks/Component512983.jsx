@@ -2,8 +2,7 @@
 /** chunk id: 512983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => p,
-  v: () => h
+  v: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -68,11 +67,8 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var p = function(e) {
-  return e.H1 = "h1", e.H2 = "h2", e.H3 = "h3", e.H4 = "h4", e.H5 = "h5", e.LEGEND = "legend", e
-}({});
 
-function h(e) {
+function p(e) {
   let t;
   var {
     tag: n = "h5",

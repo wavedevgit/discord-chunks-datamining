@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   BU: () => D,
-  Cd: () => j,
+  Cd: () => k,
   DZ: () => R,
   PS: () => w,
   T6: () => A,
@@ -11,8 +11,8 @@ require.d(exports, {
   aj: () => P,
   fy: () => Chunk526761.fy,
   hW: () => N,
-  m9: () => k,
-  nm: () => L,
+  m9: () => j,
+  nm: () => x,
   w9: () => U
 }), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk512722 = require("./512722.js"),
@@ -292,14 +292,14 @@ function D(e, t, n, r) {
   return w(e, e => (0, E.uL)(e, t, n), r)
 }
 
-function L(e) {
-  return x(e), N.updateAsync("userContent", t => {
+function x(e) {
+  return L(e), N.updateAsync("userContent", t => {
     if ((0, p.jl)(t.dismissedContents, e)) returnfalse;
     t.dismissedContents = (0, p.GV)(t.dismissedContents, e)
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function x(e) {
+function L(e) {
   !m.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) && (M(e) || f.default.track(y.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: o.z[e]
   }))
@@ -310,12 +310,12 @@ function M(e) {
   let n = null == (t = m.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, p.jl)(n, e)
 }
-async function j(e, t) {
+async function k(e, t) {
   return await N.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = v({}, n.recurringDismissibleContentStates[e], t)
   }, b.fy.INFREQUENT_USER_ACTION)
 }
-async function k(e, t, n) {
+async function j(e, t, n) {
   return await w(t, t => {
     t.guildDismissibleContentStates[e] = v({}, t.guildDismissibleContentStates[e], n)
   }, b.fy.INFREQUENT_USER_ACTION)
@@ -329,7 +329,7 @@ function U(e) {
 }
 
 function G(e) {
-  return j(e, {
+  return k(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0",

@@ -109,8 +109,8 @@ function S(e) {
   } = e, {
     application: I,
     integration: E,
-    webhooks: Z
-  } = s, [T, k] = (0, a.Wu)([m.Z], () => [m.Z.can(O.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(O.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
+    webhooks: T
+  } = s, [Z, k] = (0, a.Wu)([m.Z], () => [m.Z.can(O.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(O.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
     P() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
       application: I,
@@ -153,7 +153,7 @@ function S(e) {
     }), (null == I ? true : I.description) != null ? (0, i.jsx)(p.Z, {
       userBio: I.description,
       className: _.headerDescription
-    }) : null, T ? (0, i.jsx)(u.Z, {
+    }) : null, Z ? (0, i.jsx)(u.Z, {
       application: I,
       canNavigate: P,
       guildId: n.id
@@ -176,8 +176,8 @@ function S(e) {
           color: "currentColor"
         }),
         title: y.intl.string(y.t["t9ZX/P"])
-      }), Z.length > 0 ? (0, i.jsx)(v.Z, {
-        webhooks: Z,
+      }), T.length > 0 ? (0, i.jsx)(v.Z, {
+        webhooks: T,
         editedWebhook: S,
         selectableWebhookChannels: d,
         errors: w,

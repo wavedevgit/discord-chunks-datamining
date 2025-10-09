@@ -44,8 +44,8 @@ function g(e) {
       value: e.id
     }
   });
-  return (0, r.jsx)(m.Z, {
-    title: h.intl.string(h.t["eg7R/v"]),
+  return (0, r.jsx)(h.Z, {
+    title: m.intl.string(m.t["eg7R/v"]),
     scrollerInnerClassName: p.channelSelectScrollerInner,
     children: (0, r.jsx)(l.Gu, {
       options: j,

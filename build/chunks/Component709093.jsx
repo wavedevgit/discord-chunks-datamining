@@ -85,8 +85,8 @@ let T = function(e) {
   } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.Ng)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
     step: w,
     breadcrumbs: D,
-    startedPaymentFlowWithPaymentSourcesRef: L,
-    isDisplayingWowMomentConfirmation: x
+    startedPaymentFlowWithPaymentSourcesRef: x,
+    isDisplayingWowMomentConfirmation: L
   } = (0, s.JL)();
   if (null == D || 0 === D.length) return null;
   let M = D.flatMap(e => {
@@ -99,17 +99,17 @@ let T = function(e) {
     } : []
   });
   if (0 === M.length) return null;
-  let j = (M = M.filter(e => {
+  let k = (M = M.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
-        n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
+        n = e.id === l.h8.ADD_PAYMENT_STEPS && !x.current;
       return !b || b && (t || n)
     })).find(e => e.id === w),
-    k = null != (i = null == j || null == (n = j.sectionHeaderText) ? true : n.call(j)) ? i : null == j ? true : j.label,
-    U = null != k && null != w,
+    j = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
+    U = null != j && null != w,
     G = C && U && w === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
     Z = A ? p.intl.string(p.t["lG6a5+"]) : p.intl.string(p.t["t9uG/v"]);
-  return x ? (0, r.jsx)("div", {
+  return L ? (0, r.jsx)("div", {
     className: h.container,
     children: (0, r.jsx)(o.$1m, {
       color: B,
@@ -146,7 +146,7 @@ let T = function(e) {
       discountAmount: R
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,
-      headerText: k,
+      headerText: j,
       step: w,
       filteredBreadcrumbs: M
     }), G && (0, r.jsx)("div", {

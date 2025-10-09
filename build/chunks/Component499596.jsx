@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 /** chunk id: 499596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,13 +15,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk339762 = require("./339762.js");
 
-function m(e) {
+function h(e) {
   let {
     channel: t,
     users: n,
     selected: i = false
-  } = e, m = (0, a.ZP)(t), h = null;
-  null != n && n.length > 0 && (h = (0, r.jsx)(o.ZP, {
+  } = e, h = (0, a.ZP)(t), m = null;
+  null != n && n.length > 0 && (m = (0, r.jsx)(o.ZP, {
     guildId: t.guild_id,
     className: f.voiceUserList,
     users: n,
@@ -80,7 +80,7 @@ function m(e) {
       className: f.channelIcon
     }), (0, r.jsx)("div", {
       className: f.channelName,
-      children: m
-    }), h]
+      children: h
+    }), m]
   })
 }

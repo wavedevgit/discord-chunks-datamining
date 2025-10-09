@@ -11,7 +11,7 @@ var Chunk533800 = require("./533800.js"),
   Chunk971130 = require("./971130.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337709 = require("./337709.js");
-let d = Chunk971130.ZP.getMaxUsesOptions;
+let u = Chunk971130.ZP.getMaxUsesOptions;
 
 function c(e) {
   var t;
@@ -28,12 +28,12 @@ function c(e) {
     isGuestInviteCreationToggleEnabled: f,
     inviteFlags: N,
     onSetInviteFlags: S
-  } = e, _ = a.ZP.getMaxAgeOptionByValue(g), j = d.find(e => e.value === h);
+  } = e, _ = a.ZP.getMaxAgeOptionByValue(g), b = u.find(e => e.value === h);
   return (0, l.jsx)("div", {
-    className: u.settingsContent,
+    className: d.settingsContent,
     children: (0, l.jsxs)("form", {
       onSubmit: p,
-      className: u.settingsForm,
+      className: d.settingsForm,
       children: [(0, l.jsx)(s.VcW, {
         label: o.intl.string(o.t["60qw29"]),
         options: c,
@@ -41,8 +41,8 @@ function c(e) {
         onChange: I
       }), (0, l.jsx)(s.VcW, {
         label: o.intl.string(o.t.jDqWHR),
-        options: d,
-        value: null == j ? true : j.value,
+        options: u,
+        value: null == b ? true : b.value,
         onChange: x
       }), !n && (0, l.jsx)(s.rsf, {
         checked: m,

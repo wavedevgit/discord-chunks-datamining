@@ -243,33 +243,35 @@ class y extends Chunk647438.PureComponent {
     } = this.props, {
       editingPath: i
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk499126.wrapper,
-      title: Chunk388032.intl.string(Chunk388032.t.aLszkJ),
-      children: [module.map(e => {
-        let {
-          path: l,
-          label: a
-        } = e;
-        return (0, r.jsx)(E, {
-          path: l,
-          label: a,
-          metadata: t[l],
-          isDefault: n === l,
-          editingPath: i,
-          hasGamesInstalledInPath: p.Z.hasGamesInstalledInPath(l),
-          onToggleEditing: this.handleToggleEditing
-        }, l)
-      }), (0, Chunk951288.jsx)("div", {
-        className: Chunk499126.buttonRowWrapper,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
-          variant: "primary",
-          size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.pnZ2ur),
-          disabled: !Chunk358085.isPlatformEmbedded,
-          onClick: this.handleAddInstallationLocation
-        })
-      })]
+      children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
+        label: Chunk388032.intl.string(Chunk388032.t.aLszkJ),
+        children: [module.map(e => {
+          let {
+            path: l,
+            label: a
+          } = e;
+          return (0, r.jsx)(E, {
+            path: l,
+            label: a,
+            metadata: t[l],
+            isDefault: n === l,
+            editingPath: i,
+            hasGamesInstalledInPath: p.Z.hasGamesInstalledInPath(l),
+            onToggleEditing: this.handleToggleEditing
+          }, l)
+        }), (0, Chunk951288.jsx)("div", {
+          className: Chunk499126.buttonRowWrapper,
+          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            variant: "primary",
+            size: "sm",
+            text: Chunk388032.intl.string(Chunk388032.t.pnZ2ur),
+            disabled: !Chunk358085.isPlatformEmbedded,
+            onClick: this.handleAddInstallationLocation
+          })
+        })]
+      })
     })
   }
   constructor(...e) {

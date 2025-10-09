@@ -26,7 +26,7 @@ function x(e) {
     buttonClassName: x
   } = e, {
     analyticsLocations: b
-  } = (0, s.ZP)(), j = t.features.has(g.oNc.INVITE_SPLASH), _ = n && j, v = i.useRef(null), C = i.useCallback(e => {
+  } = (0, a.ZP)(), j = t.features.has(g.oNc.INVITE_SPLASH), v = n && j, _ = i.useRef(null), C = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
@@ -40,23 +40,23 @@ function x(e) {
     })
   }, [b, t]), y = i.useCallback(() => {
     var e;
-    null == (e = v.current) || e.activateUploadDialogue()
+    null == (e = _.current) || e.activateUploadDialogue()
   }, []);
   return j ? (0, r.jsxs)("div", {
     className: x,
     children: [(0, r.jsx)(l.zxk, {
-      disabled: !_,
+      disabled: !v,
       variant: "primary",
       text: f.intl.string(f.t.yG2pUl),
       onClick: y
     }), (0, r.jsx)("div", {
       className: h.hiddenInputContainer,
       children: (0, r.jsx)(o.ZP, {
-        ref: v,
-        disabled: !_,
+        ref: _,
+        disabled: !v,
         onChange: C,
         maxFileSizeBytes: p.B,
-        onFileSizeError: () => (0, a.Z)(p.B),
+        onFileSizeError: () => (0, s.Z)(p.B),
         tabIndex: false,
         "aria-hidden": true
       })

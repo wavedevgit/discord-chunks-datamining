@@ -20,16 +20,15 @@ let d = Chunk647438.memo(function(e) {
   } = e, {
     file: f
   } = (0, o.p)();
-  return (0, a.jsx)(i.hjN, {
-    className: c.section,
-    title: u.intl.string(u.t.CCRKNz),
+  return (0, a.jsx)(r.gNt, {
+    label: u.intl.string(u.t.CCRKNz),
     children: (0, a.jsxs)("div", {
       className: c.fakeInput,
       children: [null != n && (0, a.jsx)(s.Z, {
         sound: n,
         volume: t,
         disabled: l
-      }), null == n && null != f && (0, a.jsx)(r.Z, {
+      }), null == n && null != f && (0, a.jsx)(i.Z, {
         className: c.audioTrimmer,
         volume: t,
         disabled: l,

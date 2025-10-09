@@ -100,16 +100,16 @@ function O(e) {
     colorStrings: c,
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
-  }), L = (0, f.EJ)(n), x = {
+  }), x = (0, f.EJ)(n), L = {
     className: o()(p.name, g, y, {
       [p.username]: A,
       [w]: R
     }),
-    children: L
+    children: x
   }, M = {
     className: o()(p.nameGlow, D, y),
     children: n
-  }, j = C ? (0, r.jsx)(_.F, {
+  }, k = C ? (0, r.jsx)(_.F, {
     color: a,
     colors: N ? c : null,
     name: l,
@@ -120,7 +120,7 @@ function O(e) {
     className: o()(h, p.container),
     onMouseEnter: T,
     onMouseLeave: S,
-    children: ["left" === d && j, (0, r.jsxs)("span", {
+    children: ["left" === d && k, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
         color: A && !N && null != a ? a : true
@@ -129,7 +129,7 @@ function O(e) {
         tag: "span",
         color: "currentColor",
         variant: b
-      }, x)) : (0, r.jsx)("span", m({}, x)), R && (null != b ? (0, r.jsx)(s.xvT, m({
+      }, L)) : (0, r.jsx)("span", m({}, L)), R && (null != b ? (0, r.jsx)(s.xvT, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,
@@ -137,7 +137,7 @@ function O(e) {
       }, M)) : (0, r.jsx)("span", m({
         "aria-hidden": true
       }, M)))]
-    }), "right" === d && j]
+    }), "right" === d && k]
   })
 }
 

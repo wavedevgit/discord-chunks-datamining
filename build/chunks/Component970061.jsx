@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -30,9 +30,9 @@ function g(e) {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
-      className: s()(u.rowIcon, u.rowIconChecked)
+      className: a()(u.rowIcon, u.rowIconChecked)
     }) : (0, r.jsx)("div", {
-      className: s()(u.rowIcon, u.rowIconEmpty)
+      className: a()(u.rowIcon, u.rowIconEmpty)
     })]
   })
 }
@@ -42,7 +42,7 @@ function m(e) {
     title: t,
     children: n,
     buttonLabel: l,
-    buttonCallback: s,
+    buttonCallback: a,
     disabled: o
   } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, x = (0, c.q_F)({
     width: "".concat(100 * h, "%")
@@ -62,7 +62,7 @@ function m(e) {
       })]
     }), (0, r.jsx)("div", {
       className: u.progressBarOuter,
-      children: (0, r.jsx)(a.animated.div, {
+      children: (0, r.jsx)(s.animated.div, {
         className: u.progressBarInner,
         style: x
       })
@@ -74,15 +74,18 @@ function m(e) {
       return (0, r.jsxs)(i.Fragment, {
         children: [t > 0 && (0, r.jsx)(c.izJ, {
           className: u.divider
-        }), (0, r.jsx)(c.vwX, {
+        }), (0, r.jsx)("div", {
           className: u.categoryTitle,
-          children: n
-        }), l.map((e, t) => (0, r.jsx)(g, {
-          children: e.description,
-          checked: e.completed
-        }, t))]
+          children: (0, r.jsx)(c.gNt, {
+            label: n,
+            children: l.map((e, t) => (0, r.jsx)(g, {
+              children: e.description,
+              checked: e.completed
+            }, t))
+          })
+        })]
       }, t)
-    }), null !== l && "" !== l && null !== s && (0, r.jsxs)("div", {
+    }), null !== l && "" !== l && null !== a && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.izJ, {
         className: u.divider
       }), (0, r.jsx)("div", {
@@ -92,7 +95,7 @@ function m(e) {
           variant: "primary",
           size: "sm",
           text: l,
-          onClick: s,
+          onClick: a,
           disabled: 1 !== h || o
         })
       })]

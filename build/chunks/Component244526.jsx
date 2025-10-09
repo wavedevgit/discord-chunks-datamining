@@ -2,12 +2,10 @@
 /** chunk id: 244526, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
-}), require("./953529.js");
+  Z: () => m
+});
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk987032 = require("./987032.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -18,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk916648 = require("./916648.js");
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +24,7 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class E extends(r = Chunk647438.PureComponent) {
+class m extends(r = Chunk647438.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -51,14 +49,14 @@ class E extends(r = Chunk647438.PureComponent) {
     return Chunk219929.ZP.Types.UNKNOWN
   }
   getLabel(e) {
-    return e instanceof f.dm ? h.intl.format(h.t["o/dsrK"], {
-      brand: (0, p.De)(e.brand),
+    return e instanceof u.dm ? _.intl.format(_.t["o/dsrK"], {
+      brand: (0, f.De)(e.brand),
       last_4: e.last4
-    }) : e instanceof f.qo ? h.intl.string(h.t["2dgEq6"]) : e instanceof f.Sf ? h.intl.string(h.t["edKX//"]) : e instanceof f.fv ? h.intl.string(h.t["y+0MQU"]) : e instanceof f.Vg ? h.intl.string(h.t.u25uLy) : e instanceof f.sn ? h.intl.string(h.t.boznHB) : e instanceof f.o_ ? h.intl.string(h.t.PjehcH) : e instanceof f.kX ? h.intl.string(h.t.T5davL) : e instanceof f.z ? h.intl.string(h.t.J0A1Vl) : e instanceof f.Xc ? h.intl.string(h.t.jYOezc) : e instanceof f.Om ? h.intl.string(h.t.CSVexs) : e instanceof f.JC ? h.intl.string(h.t["43J8JC"]) : e instanceof f.U4 ? h.intl.string(h.t["1ITkfn"]) : e instanceof f.jc ? null == e.bank ? h.intl.string(h.t.nSbwqK) : h.intl.format(h.t["9kUlRU"], {
-      bank: (0, c.YE)(e.bank)
-    }) : e instanceof f.D0 ? h.intl.format(h.t.hSPoZ2, {
-      bank: (0, c.Ul)(e.bank)
-    }) : e instanceof f.u_ ? h.intl.string(h.t["+rbTmJ"]) : e instanceof f.$z ? h.intl.string(h.t.RFi12t) : h.intl.string(h.t.jdPblp)
+    }) : e instanceof u.qo ? _.intl.string(_.t["2dgEq6"]) : e instanceof u.Sf ? _.intl.string(_.t["edKX//"]) : e instanceof u.fv ? _.intl.string(_.t["y+0MQU"]) : e instanceof u.Vg ? _.intl.string(_.t.u25uLy) : e instanceof u.sn ? _.intl.string(_.t.boznHB) : e instanceof u.o_ ? _.intl.string(_.t.PjehcH) : e instanceof u.kX ? _.intl.string(_.t.T5davL) : e instanceof u.z ? _.intl.string(_.t.J0A1Vl) : e instanceof u.Xc ? _.intl.string(_.t.jYOezc) : e instanceof u.Om ? _.intl.string(_.t.CSVexs) : e instanceof u.JC ? _.intl.string(_.t["43J8JC"]) : e instanceof u.U4 ? _.intl.string(_.t["1ITkfn"]) : e instanceof u.jc ? null == e.bank ? _.intl.string(_.t.nSbwqK) : _.intl.format(_.t["9kUlRU"], {
+      bank: (0, s.YE)(e.bank)
+    }) : e instanceof u.D0 ? _.intl.format(_.t.hSPoZ2, {
+      bank: (0, s.Ul)(e.bank)
+    }) : e instanceof u.u_ ? _.intl.string(_.t["+rbTmJ"]) : e instanceof u.$z ? _.intl.string(_.t.RFi12t) : _.intl.string(_.t.jdPblp)
   }
   renderDescription() {
     let {
@@ -66,7 +64,7 @@ class E extends(r = Chunk647438.PureComponent) {
       descriptionClassName: t
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: s()(Chunk916648.description, exports),
+      className: exports,
       variant: "text-md/semibold",
       children: this.getLabel(module)
     })
@@ -88,8 +86,8 @@ class E extends(r = Chunk647438.PureComponent) {
       showSubtext: n,
       isForSubscription: r,
       showPaymentSourceIcon: a,
-      showLabels: o
-    } = this.props, s = this.renderSubText();
+      showLabels: s
+    } = this.props, u = this.renderSubText();
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       children: [Chunk647438 && (0, Chunk951288.jsx)(Chunk219929.ZP, {
         type: this.typeString
@@ -98,25 +96,27 @@ class E extends(r = Chunk647438.PureComponent) {
         className: Chunk916648.descriptionWrapper,
         children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
-          children: [this.renderDescription(), Chunk120356 && module ? (0, Chunk951288.jsx)("div", {
+          children: [this.renderDescription(), Chunk987032 && module ? (0, Chunk951288.jsx)("div", {
             className: Chunk916648.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
           }) : null, r ? (0, Chunk951288.jsx)("div", {
             className: Chunk916648.premiumIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.YCrcPD)
-          }) : null, Chunk120356 && exports.invalid ? (0, Chunk951288.jsx)("div", {
+          }) : null, Chunk987032 && exports.invalid ? (0, Chunk951288.jsx)("div", {
             className: Chunk916648.invalidIndicator,
             children: Chunk388032.intl.string(Chunk388032.t["851k9/"])
           }) : null]
-        }), require && null != s ? (0, Chunk951288.jsx)("div", {
+        }), require && null != Chunk46141 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-sm/normal",
+          color: "text-secondary",
           className: Chunk916648.subText,
-          children: s
+          children: Chunk46141
         }) : null]
       })]
     })
   }
 }
-g(E, "defaultProps", {
+h(m, "defaultProps", {
   isForSubscription: false,
   isDefault: false,
   showSubtext: false,

@@ -112,11 +112,11 @@ function R(e) {
     setDevice: P,
     Icon: w,
     getCanSetDevice: D,
-    getWarningMessage: L,
-    getLocation: x
+    getWarningMessage: x,
+    getLocation: L
   } = N(t), {
     analyticsLocations: M
-  } = (0, d.ZP)(), j = (0, s.e7)([f.Z], () => f.Z.theme), [k, U] = i.useState(u), G = x(a), [B, Z] = (0, E.Ls)(t, {
+  } = (0, d.ZP)(), k = (0, s.e7)([f.Z], () => f.Z.theme), [j, U] = i.useState(u), G = L(a), [B, Z] = (0, E.Ls)(t, {
     location: G
   }), {
     id: F
@@ -126,7 +126,7 @@ function R(e) {
     location: "".concat(G, "/SingleSelectDevices")
   }), W = (0, r.jsx)(c.Wn, {
     messageType: c.QYI.WARNING,
-    children: L()
+    children: x()
   }), K = i.useCallback(e => {
     if (e === C) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,
@@ -157,7 +157,7 @@ function R(e) {
     }), d = f.prefix, t = f.subName);
     let _ = p.Z.getCertifiedDeviceName(s, d);
     if (p.Z.isCertified(s)) {
-      let e = (0, l.ap)(j) ? n(561259) : n(887695);
+      let e = (0, l.ap)(k) ? n(561259) : n(887695);
       i = (0, r.jsx)("img", {
         src: e,
         alt: O.intl.string(O.t.smSKsr)
@@ -207,7 +207,7 @@ function R(e) {
         }
       },
       t = B.map(e);
-    if (k || 0 === Z.length) {
+    if (j || 0 === Z.length) {
       let n = Z.map(e);
       return t.concat(n)
     } {

@@ -33,16 +33,16 @@ function N(e) {
     size: 40
   })) ? t : true;
   return (0, r.jsxs)(c.P3F, {
-    className: _.clickableGuildInfoRow,
+    className: v.clickableGuildInfoRow,
     onClick: a,
     children: [(0, r.jsx)(m.ZP, {
       mask: m.ZP.Masks.AVATAR_DEFAULT,
       width: 40,
       height: 40,
       children: (0, r.jsx)(f.Z, {
-        className: _.guildIcon,
+        className: v.guildIcon,
         iconSrc: o,
-        guild: (0, h.yS)((n = function(e) {
+        guild: (0, g.yS)((n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -74,13 +74,13 @@ function N(e) {
         size: f.Z.Sizes.MEDIUM
       })
     }), (0, r.jsx)(c.Text, {
-      className: _.guildName,
+      className: v.guildName,
       variant: "text-md/semibold",
       children: i.name
     }), s ? (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.PULSING_ELLIPSIS
     }) : (0, r.jsx)("img", {
-      className: _.__invalid_arrow,
+      className: v.__invalid_arrow,
       alt: "",
       src: x
     })]
@@ -93,36 +93,36 @@ let E = e => {
     guildsInfo: i,
     setGuildId: s,
     forceGuildScrollHeight: m
-  } = e, [f, p] = l.useState(null), [h, x] = l.useState(true), [E, y] = l.useState(null), S = () => t(g.tF.SUBMIT_SCHOOL), j = i;
-  return null != h && "" !== h && (j = i.filter(e => o()(h.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
-    className: _.container,
+  } = e, [f, p] = l.useState(null), [g, x] = l.useState(true), [E, y] = l.useState(null), S = () => t(h.tF.SUBMIT_SCHOOL), j = i;
+  return null != g && "" !== g && (j = i.filter(e => o()(g.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
+    className: v.container,
     children: [(0, r.jsx)(c.X6q, {
-      className: a()(_.centerText, _.header),
+      className: a()(v.centerText, v.header),
       variant: "heading-xl/semibold",
-      children: v.intl.string(v.t.mOMeiY)
+      children: _.intl.string(_.t.mOMeiY)
     }), (0, r.jsx)("div", {
-      className: _.description,
+      className: v.description,
       children: (0, r.jsx)(c.Text, {
-        className: _.centerText,
+        className: v.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: v.intl.format(v.t.dZeiTE, {
+        children: _.intl.format(_.t.dZeiTE, {
           onJoinWaitlist: S
         })
       })
     }), (0, r.jsxs)("div", {
-      className: a()(_.guildList, {
-        [_.forcedHeight]: m
+      className: a()(v.guildList, {
+        [v.forcedHeight]: m
       }),
       children: [(0, r.jsxs)("div", {
-        className: _.searchContainer,
+        className: v.searchContainer,
         children: [(0, r.jsx)(c.E1j, {
-          placeholder: v.intl.string(v.t["5h0QOD"]),
+          placeholder: _.intl.string(_.t["5h0QOD"]),
           onChange: e => {
             x(e)
           },
-          "aria-label": v.intl.string(v.t["5h0QOD"]),
-          query: null != h ? h : "",
+          "aria-label": _.intl.string(_.t["5h0QOD"]),
+          query: null != g ? g : "",
           onClear: () => {
             x(true)
           }
@@ -132,7 +132,7 @@ let E = e => {
           children: null == f ? true : f.getAnyErrorMessage()
         })]
       }), j.length > 0 ? (0, r.jsx)(c.zJl, {
-        className: _.scroller,
+        className: v.scroller,
         children: j.map(e => {
           let l;
           return true === e ? null : (0, r.jsx)(N, {
@@ -140,7 +140,7 @@ let E = e => {
             onClick: (l = e.id, async () => {
               p(null), s(l), y(l);
               try {
-                await d.Z.sendVerificationEmail(n, true, l), t(g.tF.VERIFY_PIN)
+                await d.Z.sendVerificationEmail(n, true, l), t(h.tF.VERIFY_PIN)
               } catch (e) {
                 p(new u.Hx(e))
               } finally {
@@ -151,19 +151,19 @@ let E = e => {
           }, e.id)
         })
       }) : (0, r.jsx)("div", {
-        className: _.noResultsContainer,
+        className: v.noResultsContainer,
         children: (0, r.jsxs)("div", {
-          className: _.noResultsContent,
+          className: v.noResultsContent,
           children: [(0, r.jsx)("div", {
-            className: _.noResultsImage
+            className: v.noResultsImage
           }), (0, r.jsx)(c.X6q, {
-            className: a()(_.centerText, _.header),
+            className: a()(v.centerText, v.header),
             variant: "heading-xl/semibold",
-            children: v.intl.string(v.t["1eUrDQ"])
+            children: _.intl.string(_.t["1eUrDQ"])
           }), (0, r.jsx)(c.Text, {
-            className: _.centerText,
+            className: v.centerText,
             variant: "text-md/normal",
-            children: v.intl.format(v.t.flgDKC, {
+            children: _.intl.format(_.t.flgDKC, {
               onJoinWaitlist: S
             })
           })]

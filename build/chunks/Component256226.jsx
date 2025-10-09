@@ -88,14 +88,14 @@ let N = Chunk647438.forwardRef(function(e, t) {
       role: P,
       onRemove: w,
       guildId: D,
-      disableBorderColor: L,
-      onMouseDown: x
+      disableBorderColor: x,
+      onMouseDown: L
     } = e,
     M = (0, s.JA)(P.id),
     {
-      tabIndex: j
+      tabIndex: k
     } = M,
-    k = A(M, ["tabIndex"]),
+    j = A(M, ["tabIndex"]),
     U = (0, E.p9)({
       roleId: P.id,
       size: 16,
@@ -140,16 +140,16 @@ let N = Chunk647438.forwardRef(function(e, t) {
   let z = i.useMemo(() => {
       var t;
       return I({
-        borderColor: L ? true : H
+        borderColor: x ? true : H
       }, null != (t = e.style) ? t : {})
-    }, [H, L, e.style]),
+    }, [H, x, e.style]),
     q = () => N ? (0, r.jsx)(d.u, {
       asContainer: true,
       text: y.intl.string(y.t.u3RVsL),
       children: (0, r.jsxs)(f.P3F, {
         className: o()(O.roleRemoveButtonCanRemove, O.roleRemoveButton),
         onClick: w,
-        tabIndex: j,
+        tabIndex: k,
         focusProps: {
           focusClassName: O.roleRemoveIconFocused
         },
@@ -182,10 +182,10 @@ let N = Chunk647438.forwardRef(function(e, t) {
       className: o()(O.role, R),
       style: z,
       onContextMenu: Z,
-      onMouseDown: x,
+      onMouseDown: L,
       "aria-label": P.name,
-      tabIndex: j
-    }, k), {
+      tabIndex: k
+    }, j), {
       children: [q(), null != U ? (0, r.jsx)(g.Z, S(I({
         className: O.roleIcon
       }, U), {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk28997 = require("./28997.jsx"),
   Chunk882871 = require("./882871.js");
@@ -35,8 +35,8 @@ function d(e) {
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
   let [m, p] = i.useState(false);
-  return (0, r.jsx)(a.zF9, {
-    className: s()(c.groupContainer, l),
+  return (0, r.jsx)(s.zF9, {
+    className: a()(c.groupContainer, l),
     isExpanded: m,
     collapsibleContent: (0, r.jsxs)("div", {
       className: c.groupCollapsedContainer,
@@ -68,8 +68,8 @@ function d(e) {
         return e
       }({}, g), i = i = {
         className: c.groupHeaderRow,
-        action: u ? (0, r.jsx)(a.$jN, {
-          type: a.$jN.Type.PULSING_ELLIPSIS
+        action: u ? (0, r.jsx)(s.$jN, {
+          type: s.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
           var t;

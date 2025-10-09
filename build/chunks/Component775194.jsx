@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 775194, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./642613.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,9 +11,8 @@ var Chunk392711 = require("./392711.js"),
   Chunk481250 = require("./481250.jsx"),
   Chunk513547 = require("./513547.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-let m = {
+let u = {
   userId: 1,
   dataType: 2,
   savedKB: 3,
@@ -26,7 +25,7 @@ let m = {
   sampleRate: 10
 };
 
-function p(e) {
+function m(e) {
   let {
     clips: t
   } = e;
@@ -42,15 +41,16 @@ function p(e) {
   return n.push((0, r.jsx)(s.ck, {
     label: "Frames Per Second",
     value: t.recentEncodedFrames / (t.recentDurationMs / 1e3)
-  }, "framerate")), (0, r.jsxs)(l.hjN, {
-    tag: l.RB0.H2,
-    title: c.intl.string(c.t.MKrFKC),
-    children: [(0, o.VE)(n), function(e) {
+  }, "framerate")), (0, r.jsxs)(l.Kqy, {
+    children: [(0, r.jsx)(l.X6q, {
+      variant: "heading-md/medium",
+      children: c.intl.string(c.t.MKrFKC)
+    }), (0, o.VE)(n), function(e) {
       if (null != e.buffers) return e.buffers.map(e => {
         let t = [];
         for (let n of Object.keys(e).sort((e, t) => {
-            let n = m[e],
-              r = m[t];
+            let n = u[e],
+              r = u[t];
             return n !== r ? true === n ? 1 : true === r ? false : n - r : e > t ? 1 : false
           })) {
           let a = e[n];
@@ -59,11 +59,12 @@ function p(e) {
             value: a
           }, n))
         }
-        return (0, r.jsx)(l.hjN, {
-          className: u.marginBottom40,
-          title: "Buffer: ".concat(e.key),
-          titleClassName: d.title,
-          children: (0, o.VE)(t)
+        return (0, r.jsxs)("div", {
+          className: d.marginBottom40,
+          children: [(0, r.jsx)(l.X6q, {
+            variant: "heading-md/medium",
+            children: "Buffer: ".concat(e.key)
+          }), (0, o.VE)(t)]
         }, "Buffer: ".concat(e.key))
       })
     }(t)]

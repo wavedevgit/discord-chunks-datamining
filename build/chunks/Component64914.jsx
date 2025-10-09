@@ -104,12 +104,12 @@ function w() {
   }, []), {
     warpEnabled: w,
     warpConnecting: D,
-    warpLog: L
+    warpLog: x
   } = (0, Chunk442837.cj)([Chunk956097.Z], () => ({
     warpEnabled: Chunk956097.Z.enabled,
     warpConnecting: Chunk956097.Z.connecting,
     warpLog: Chunk956097.Z.log
-  })), x = Chunk647438.useCallback(e => {
+  })), L = Chunk647438.useCallback(e => {
     e ? d.Z.connect() : d.Z.disconnect()
   }, []);
   return (0, Chunk951288.jsx)(Chunk273313.Z, {
@@ -172,10 +172,10 @@ function w() {
             label: "Enable WARP",
             description: "Enable WARP Proxy Connection",
             checked: w,
-            onChange: x
+            onChange: L
           }), D ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "code",
-            children: L.map((e, t) => (0, r.jsx)("div", {
+            children: x.map((e, t) => (0, r.jsx)("div", {
               children: JSON.stringify(e)
             }, t))
           })]

@@ -67,9 +67,9 @@ function E(e) {
     channelId: l,
     clipName: E,
     onSetClipName: R,
-    onClose: L
+    onClose: T
   } = e, {
-    videoPlayerRef: T,
+    videoPlayerRef: L,
     cropData: D,
     voiceAudioEnabled: F,
     setVoiceAudioEnabled: A,
@@ -84,7 +84,7 @@ function E(e) {
   async function H() {
     var e;
     let r = p.Z.getChannel(l);
-    B("export"), null == (e = T.current) || e.pause();
+    B("export"), null == (e = L.current) || e.pause();
     try {
       let e = await (0, x.rO)(t, N(S({}, D), {
         applicationAudio: I,
@@ -111,7 +111,7 @@ function E(e) {
   }
   async function W() {
     var e;
-    B("export"), null == (e = T.current) || e.pause();
+    B("export"), null == (e = L.current) || e.pause();
     try {
       let e = await (0, x.rO)(t, N(S({}, D), {
           applicationAudio: I,
@@ -126,7 +126,7 @@ function E(e) {
 
   function U() {
     var e;
-    null == (e = T.current) || e.pause(), (0, u.ZDy)(async () => {
+    null == (e = L.current) || e.pause(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("15915").then(n.bind(n, 799677));
@@ -137,7 +137,7 @@ function E(e) {
           await n.onClose()
         },
         onAfterDelete: async () => {
-          await n.onClose(), L()
+          await n.onClose(), T()
         }
       }))
     })
@@ -202,7 +202,7 @@ function E(e) {
           [O.submittingWrapperFix]: null != M
         }),
         color: s.zx.Colors.PRIMARY,
-        onClick: L,
+        onClick: T,
         children: k.intl.string(k.t.K344S0)
       }), (0, a.jsx)(s.zx, {
         "aria-label": k.intl.string(k.t.PdRCRk),

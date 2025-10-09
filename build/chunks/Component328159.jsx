@@ -27,15 +27,15 @@ let p = e => {
       reasonMaxLength: x,
       placeholder: b,
       position: j
-    } = e, _ = i.useRef(null), [v, C] = i.useState(false), O = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(s.yRy, {
-      targetElementRef: _,
+    } = e, v = i.useRef(null), [_, C] = i.useState(false), O = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
+      targetElementRef: v,
       onRequestClose: () => {
         C(false)
       },
-      shouldShow: v,
+      shouldShow: _,
       position: "right",
       align: "top",
-      animation: s.yRy.Animation.NONE,
+      animation: a.yRy.Animation.NONE,
       renderPopout: e => {
         let {
           closePopout: t
@@ -58,14 +58,14 @@ let p = e => {
           C(true)
         },
         tabIndex: 0,
-        renderButtonContents: null != d ? () => (0, r.jsx)(a.Z, {
+        renderButtonContents: null != d ? () => (0, r.jsx)(s.Z, {
           emojiName: d,
           animated: false
         }) : null,
-        ref: _
+        ref: v
       })
     });
-    return (0, r.jsx)(s.oil, {
+    return (0, r.jsx)(a.oil, {
       placeholder: b,
       value: n,
       minLength: h,
@@ -90,7 +90,7 @@ let p = e => {
       reasonMaxLength: n,
       guildId: i,
       reasons: l
-    } = e, a = [m.intl.string(m.t["9dhBGh"]), m.intl.string(m.t["8RmhKC"]), m.intl.string(m.t["2t0V8/"]), m.intl.string(m.t.l8WqCQ)], o = [];
+    } = e, s = [m.intl.string(m.t["9dhBGh"]), m.intl.string(m.t["8RmhKC"]), m.intl.string(m.t["2t0V8/"]), m.intl.string(m.t.l8WqCQ)], o = [];
     for (let e = 0; e < 4; e++) o.push((0, r.jsx)(p, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -121,7 +121,7 @@ let p = e => {
       return e
     }({
       position: e,
-      placeholder: a[e]
+      placeholder: s[e]
     }, l[e]), {
       onSetReason: t => {
         let n = [...l],
@@ -148,7 +148,7 @@ let p = e => {
       reasonMinLength: t,
       reasonMaxLength: n
     }), "reasonListItem-" + e));
-    return (0, r.jsx)(s.Kqy, {
+    return (0, r.jsx)(a.Kqy, {
       gap: 16,
       children: o
     })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Dp: () => O,
-  Ew: () => L,
+  Ew: () => x,
   HO: () => E,
   Jp: () => N,
   Lv: () => A,
@@ -92,7 +92,7 @@ let w = [{
     filter: "reward_in_game"
   }],
   D = ["reward", "task"],
-  L = Object.entries((0, Chunk392711.groupBy)(w, "group")).sort((e, t) => {
+  x = Object.entries((0, Chunk392711.groupBy)(w, "group")).sort((e, t) => {
     let n = D.indexOf(e[0]),
       r = D.indexOf(t[0]);
     return n < r ? false : +(r < n)

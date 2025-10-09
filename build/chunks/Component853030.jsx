@@ -19,7 +19,7 @@ function u(e) {
     align: l,
     ctaText: u,
     hideOptionsButton: f
-  } = e, m = i.useRef(null);
+  } = e, h = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: d.root,
     children: [(0, r.jsx)(o.zx, {
@@ -31,7 +31,7 @@ function u(e) {
       onClick: n,
       children: u
     }), !f && (0, r.jsx)(a.yRy, {
-      targetElementRef: m,
+      targetElementRef: h,
       position: "top",
       align: l,
       renderPopout: e => {
@@ -65,7 +65,7 @@ function u(e) {
         }({
           size: o.zx.Sizes.LARGE,
           className: d.optionsButton,
-          buttonRef: m
+          buttonRef: h
         }, e), n = n = {
           children: (0, r.jsx)(a.Huf, {
             color: "currentColor"

@@ -137,28 +137,28 @@ function w(e, t, n, r) {
 function D() {
   P()
 }
-let L = i().debounce(() => {
+let x = i().debounce(() => {
   U()
 }, T);
 
-function x(e, t, n) {
+function L(e, t, n) {
   (0, h.RF)(e, t, {
     volume: n
-  }), L()
+  }), x()
 }
 
 function M(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
-  }), L.cancel(), U()
+  }), x.cancel(), U()
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
-  }), L.cancel(), U()
+  }), x.cancel(), U()
 }
-let k = i().debounce(Chunk254238.On, 500, {
+let j = i().debounce(Chunk254238.On, 500, {
   maxWait: 500
 });
 
@@ -182,10 +182,10 @@ function G(e) {
   } = e;
   if (n === f.default.getId()) return;
   let i = u.default.getRemoteSessionId();
-  null != i && k(i, n, t, {
+  null != i && j(i, n, t, {
     muted: _.Z.isLocalMute(n, t),
     volume: r
-  }), x(t, n, r)
+  }), L(t, n, r)
 }
 
 function B(e) {
@@ -201,7 +201,7 @@ function Z(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && j(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 
 function F(e) {

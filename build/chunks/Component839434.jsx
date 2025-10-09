@@ -109,12 +109,12 @@ function eo(e) {
     voiceState: m
   } = e, y = (0, Q.Z)({
     location: "overlay_voice_widget"
-  }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), v = (0, a.e7)([A.default], () => A.default.getId()), b = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
+  }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), v = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
     userId: i.id,
     context: f
   }), Z = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), C = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), j = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
   if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
-  let I = i.id === v,
+  let I = i.id === b,
     {
       mute: P,
       selfMute: w,
@@ -145,8 +145,8 @@ function eo(e) {
       isOverlay: true,
       size: u,
       priority: Z,
-      mute: P || M || b,
-      localMute: b,
+      mute: P || M || v,
+      localMute: v,
       serverMute: P || N,
       deaf: T || D,
       serverDeaf: T,
@@ -343,7 +343,7 @@ class el extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, J.CR)(e, this.props, this.shouldDisplay)
+    (0, q.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -440,7 +440,7 @@ class el extends(i = Chunk647438.PureComponent) {
 function ea(e) {
   var t;
   let n = (0, a.e7)([V.Z, L.Z], () => L.Z.getChannel(V.Z.getVoiceChannelId())),
-    i = (0, v.ZP)(n),
+    i = (0, b.ZP)(n),
     o = function() {
       let [e] = (0, a.e7)([G.ZP, w.Z, V.Z, L.Z], () => {
         let e = L.Z.getChannel(V.Z.getVoiceChannelId());

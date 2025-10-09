@@ -4,7 +4,6 @@
 module.exports = {
   scroller: "scroller__981c8",
   colorPicker: "colorPicker__981c8",
-  colorDescription: "colorDescription__981c8",
   divider: "divider__981c8",
   noticeContainer: "noticeContainer__981c8",
   previewContainer: "previewContainer__981c8",
@@ -21,7 +20,5 @@ module.exports = {
   disabled: "disabled__981c8",
   roleStyleUpsell: "roleStyleUpsell__981c8",
   roleStyleUpsellMesssages: "roleStyleUpsellMesssages__981c8",
-  holographicInfoBox: "holographicInfoBox__981c8",
-  roleStyleFormTitle: "roleStyleFormTitle__981c8",
-  newBadge: "newBadge__981c8"
+  holographicInfoBox: "holographicInfoBox__981c8"
 }

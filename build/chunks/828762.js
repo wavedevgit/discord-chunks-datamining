@@ -44,7 +44,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var A = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function x(e, t) {
     Object.defineProperty(e, A, Object.getOwnPropertyDescriptor(t, A))
   }), e
 }
-let U = new Chunk710845.Z("ProductAttachmentManager");
+let x = new Chunk710845.Z("ProductAttachmentManager");
 class V {
   addAttachment(e, t) {
     let A = this.target.getMaxAttachmentsCount();
@@ -76,11 +76,11 @@ class V {
         reason: i
       })) : l.uv.announce(b.intl.formatToPlainString(b.t.mBkf6e, {
         reason: i
-      })), t(e => x(j({}, e), {
+      })), t(e => U(j({}, e), {
         [r.id]: a
       }))
     }), r.on("progress", (e, A) => {
-      t(t => x(j({}, t), {
+      t(t => U(j({}, t), {
         [r.id]: e / A
       }))
     }), this.uploads = [...this.uploads, r]
@@ -131,7 +131,7 @@ class V {
       h = (await f({
         url: m,
         rejectWithError: false,
-        body: x(j({}, l), {
+        body: U(j({}, l), {
           price_tier: A,
           create_new_role: r,
           image_name: n,
@@ -139,7 +139,7 @@ class V {
           attachments: d.length > 0 ? [...d, ...g] : g
         })
       })).body;
-    return U.log("Created/updated product:", h), null != h && (null != this.editSkuId ? await i.Z.dispatch({
+    return x.log("Created/updated product:", h), null != h && (null != this.editSkuId ? await i.Z.dispatch({
       type: "GUILD_PRODUCT_UPDATE",
       product: h
     }) : await i.Z.dispatch({
@@ -193,9 +193,9 @@ function O(e, t) {
   }, [c]);
   let [m, h] = r.useState(), [v, b] = r.useState(), C = r.useCallback(e => {
     c.deleteAttachment(e) && p({})
-  }, [c]), x = r.useCallback(e => {
+  }, [c]), U = r.useCallback(e => {
     c.addAttachment(e, g), p({})
-  }, [c]), U = r.useCallback(async e => {
+  }, [c]), x = r.useCallback(async e => {
     try {
       h(e), b(true);
       let t = await c.saveProductWithAttachments(e);
@@ -218,12 +218,12 @@ function O(e, t) {
     uploads: P
   } = c, F = !P.every(e => c.existingAttachmentIds.has(e.id)) || P.length !== c.existingAttachmentIds.size;
   return {
-    addAttachment: x,
+    addAttachment: U,
     cancelUnusedUploads: O,
     deleteAttachment: C,
     fileUploadProgresses: u,
     uploads: P,
-    saveProductWithAttachments: U,
+    saveProductWithAttachments: x,
     isSaving: null != m,
     changesSaving: m,
     saveError: v,

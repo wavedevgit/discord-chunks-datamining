@@ -61,9 +61,9 @@ function j(e) {
   }), c = Object.keys(l);
   return r.useEffect(() => {
     0 === n.length && s.Z.setSection(g.b4C.OVERVIEW)
-  }, [n]), (0, i.jsxs)(o.hjN, {
-    children: [(0, i.jsx)(o.R94, {
-      type: o.geA.DESCRIPTION,
+  }, [n]), (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(o.Text, {
+      variant: "text-sm/normal",
       children: f.intl.format(f.t["9gsSLi"], {
         helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })

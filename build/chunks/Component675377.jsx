@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
   o = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
@@ -81,12 +81,14 @@ function F() {
     } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_SOUNDBOARD);
   return null == module ? null : (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: exports,
-    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
-      tag: Chunk481060.RB0.H1,
-      title: Chunk388032.intl.string(Chunk388032.t.OWQNYm),
-      children: (0, Chunk951288.jsx)(K, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 8,
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        children: Chunk388032.intl.string(Chunk388032.t.OWQNYm)
+      }), (0, Chunk951288.jsx)(K, {
         guild: module
-      })
+      })]
     })
   })
 }
@@ -108,11 +110,11 @@ function z(e) {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, l = E.Z.getGuild(i), s = null != l ? (0, P.nL)(l) : 0;
+  } = e, l = E.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
     children: k.intl.format(k.t["7E9Hd3"], {
       slots: n,
-      totalSlots: s
+      totalSlots: a
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.u, {
@@ -135,17 +137,17 @@ function z(e) {
       })
     }), k.intl.format(k.t.HHCdvb, {
       slots: n,
-      totalSlots: s,
+      totalSlots: a,
       boostLevel: t
     })]
   })
 }
-let W = e => {
+let V = e => {
     var {
       renderPopoutBody: t,
       renderPopoutChildren: n,
       popoutTargetRef: l
-    } = e, s = function(e, t) {
+    } = e, a = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -160,7 +162,7 @@ let W = e => {
       }
       return i
     }(e, ["renderPopoutBody", "renderPopoutChildren", "popoutTargetRef"]);
-    let [a, o] = i.useState(false), c = i.useMemo(() => new d.V7, []), u = i.useCallback(() => {
+    let [s, o] = i.useState(false), c = i.useMemo(() => new d.V7, []), u = i.useCallback(() => {
       c.stop(), o(true)
     }, [c]), m = i.useCallback(() => {
       c.start(200, () => o(false))
@@ -169,21 +171,21 @@ let W = e => {
       onMouseLeave: m
     };
     return (0, r.jsx)(g.yRy, U(M({
-      shouldShow: a,
+      shouldShow: s,
       renderPopout: e => (0, r.jsx)(g.VqE, {
         className: G.browserUnsupportedDialog,
         onMouseEnter: u,
         onMouseLeave: m,
         children: t(e)
       })
-    }, s), {
+    }, a), {
       targetElementRef: l,
       children: e => n(e, p)
     }))
   },
-  V = () => {
+  W = () => {
     let e = Chunk647438.useRef(null);
-    return (0, Chunk951288.jsx)(W, {
+    return (0, Chunk951288.jsx)(V, {
       renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -205,17 +207,17 @@ let W = e => {
 function K(e) {
   let {
     guild: t
-  } = e, [l, s] = (0, c.Wu)([v.Z], () => {
+  } = e, [l, a] = (0, c.Wu)([_.Z], () => {
     var e;
-    return [null != (e = v.Z.getSoundsForGuild(t.id)) ? e : L.Hy, v.Z.isFetchingSounds() || v.Z.isFetchingDefaultSounds()]
+    return [null != (e = _.Z.getSoundsForGuild(t.id)) ? e : L.Hy, _.Z.isFetchingSounds() || _.Z.isFetchingDefaultSounds()]
   }), {
-    canCreateExpressions: a
+    canCreateExpressions: s
   } = (0, j.XJ)(t), o = i.useRef(null), d = (0, f.ZP)(), u = t.premiumTier, m = (0, P.yw)(t, l, u);
   i.useEffect(() => {
-    (0, _.w)()
+    (0, v.w)()
   }, []);
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, C.Z)(t.soundId)), e), {}), [l]),
-    h = 0 === l.length && !s;
+    h = 0 === l.length && !a;
 
   function x(e) {
     var t;
@@ -226,7 +228,7 @@ function K(e) {
   if (i.useEffect(() => () => {
       var e;
       null == (e = o.current) || e.pause()
-    }, []), s) return (0, r.jsx)(g.$jN, {});
+    }, []), a) return (0, r.jsx)(g.$jN, {});
   let b = B ? (0, r.jsx)(g.zxk, {
     variant: "primary",
     text: k.intl.string(k.t["/uNYPD"]),
@@ -240,8 +242,8 @@ function K(e) {
         }))
       })
     },
-    disabled: m <= 0 || !a
-  }) : (0, r.jsx)(V, {});
+    disabled: m <= 0 || !s
+  }) : (0, r.jsx)(W, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(g.Text, {
@@ -308,7 +310,7 @@ function Y(e) {
   let {
     sound: t,
     isPlaying: l,
-    onPlaySound: a,
+    onPlaySound: s,
     guild: o
   } = e, {
     soundId: d,
@@ -316,17 +318,17 @@ function Y(e) {
     user: f,
     userId: h,
     emojiId: b,
-    emojiName: v
+    emojiName: _
   } = t, {
     analyticsLocations: C
   } = (0, x.ZP)(), O = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != v, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != _, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!w) {
       R(true);
       try {
-        await (0, _.AA)(o.id, d)
+        await (0, v.AA)(o.id, d)
       } catch (e) {
         R(false)
       }
@@ -347,12 +349,12 @@ function Y(e) {
     }, [O, o.id, C]),
     B = Z.ZP.useUserTag(O);
   return (0, r.jsxs)("div", {
-    className: s()(G.row, {
+    className: a()(G.row, {
       [G.active]: l
     }),
     children: [P ? (0, r.jsx)(p.Z, {
       emojiId: b,
-      emojiName: v,
+      emojiName: _,
       className: G.emoji
     }) : (0, r.jsx)(g.XBm, {
       size: "md",
@@ -360,7 +362,7 @@ function Y(e) {
       className: G.emoji
     }), (0, r.jsx)(g.P3F, {
       onClick: () => {
-        w || a(t)
+        w || s(t)
       },
       onContextMenu: D,
       className: G.soundName,

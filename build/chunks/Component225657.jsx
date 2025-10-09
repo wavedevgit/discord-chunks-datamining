@@ -4,9 +4,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk987209 = require("./987209.jsx"),
@@ -28,12 +27,11 @@ let f = e => {
   let E = e => {
     n(e, t), g(e)
   };
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
     className: f,
-    children: [(0, r.jsx)(a.vwX, {
-      children: d.intl.string(d.t.xFn72t)
-    }), (0, r.jsx)(a.VcW, {
+    children: (0, r.jsx)(a.VcW, {
       wrapperClassName: _,
+      label: d.intl.string(d.t.xFn72t),
       placeholder: d.intl.string(d.t.R0vK0N),
       renderOptionPrefix: e => (null == e ? true : e.value) == null ? null : (0, r.jsx)(o.Z, {
         user: e.value,
@@ -45,6 +43,6 @@ let f = e => {
         value: e,
         label: "".concat(u.ZP.getUserTag(e))
       }))
-    })]
+    })
   })
 }

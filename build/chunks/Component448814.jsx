@@ -95,13 +95,13 @@ function S(e) {
       maxVisibleItems: P = 5,
       loading: w = false,
       onBlur: D,
-      onFocus: L
+      onFocus: x
     } = e,
-    x = i.useId(),
-    M = null != n ? n : x,
-    [j, k] = i.useState(null != E ? E : []),
+    L = i.useId(),
+    M = null != n ? n : L,
+    [k, j] = i.useState(null != E ? E : []),
     U = null != y,
-    G = U ? y : j,
+    G = U ? y : k,
     B = (0, s.ZP)({
       id: M,
       async scrollToEnd() {},
@@ -113,7 +113,7 @@ function S(e) {
     Z = i.useCallback(e => {
       if (true === a && 1 === G.length && G.includes(e)) return;
       let t = (0, m.cq)(u, G, e);
-      U || k(t), null == I || I(t)
+      U || j(t), null == I || I(t)
     }, [a, G, I, U, u]),
     F = i.useCallback(e => (0, r.jsx)("div", {
       className: g.listBoxItemContent,
@@ -173,7 +173,7 @@ function S(e) {
         } = e, i = v(e, ["ref"]);
         return (0, r.jsx)("div", O(b({
           onBlur: D,
-          onFocus: L,
+          onFocus: x,
           "aria-busy": w,
           ref: n
         }, i), {

@@ -106,10 +106,13 @@ function D(e) {
     selectedBenefits: o,
     onToggleBenefit: a
   } = e, s = l.every(e => o.has(e));
-  return l.length > 0 ? (0, i.jsxs)(m.hjN, {
-    title: t,
+  return l.length > 0 ? (0, i.jsxs)("div", {
     className: M.section,
-    children: [l.length - r.size > 1 && (0, i.jsx)("div", {
+    children: [(0, i.jsx)(m.X6q, {
+      variant: "heading-md/semibold",
+      color: "header-primary",
+      children: t
+    }), l.length - r.size > 1 && (0, i.jsx)("div", {
       className: M.list,
       children: (0, i.jsx)(O, {
         icon: (0, i.jsx)(m.avL, {
@@ -162,20 +165,20 @@ function L(e) {
     onClose: d
   } = e, h = n.role_benefits.benefits, [u, x] = l.useState(() => new Set(h)), f = l.useMemo(() => h.filter(k.rC), [h]), j = (0, S.Z)(f), g = l.useMemo(() => h.filter(k.lL), [h]), p = l.useMemo(() => new Set(j.filter(e => r.some(t => t.ref_id === e.ref_id))), [j, r]), _ = l.useMemo(() => new Set(g.filter(e => o.some(t => (0, c.Z)(e, t)))), [o, g]);
 
-  function b(e, t) {
+  function v(e, t) {
     x(n => {
       let i = new Set(n);
       return t ? i.add(e) : i.delete(e), i
     })
   }
 
-  function v(e) {
+  function b(e) {
     e.preventDefault();
     let t = h.filter(e => u.has(e));
     s(t.filter(k.rC).filter(e => !p.has(e)), t.filter(k.lL).filter(e => !_.has(e))), d()
   }
   return (0, i.jsx)("form", {
-    onSubmit: v,
+    onSubmit: b,
     children: (0, i.jsxs)(a.Modal, {
       transitionState: t,
       onClose: d,
@@ -190,7 +193,7 @@ function L(e) {
         variant: "primary",
         text: z.intl.string(z.t["27a219"]),
         disabled: 0 === u.size,
-        onClick: v
+        onClick: b
       }],
       children: [0 === j.length && 0 === g.length && (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
@@ -201,14 +204,14 @@ function L(e) {
         benefits: j,
         dupeBenefits: p,
         selectedBenefits: u,
-        onToggleBenefit: b
+        onToggleBenefit: v
       }), (0, i.jsx)(D, {
         title: z.intl.string(z.t.RdwKw8),
         selectAllText: z.intl.string(z.t.aJPLVF),
         benefits: g,
         dupeBenefits: _,
         selectedBenefits: u,
-        onToggleBenefit: b
+        onToggleBenefit: v
       })]
     })
   })
@@ -271,8 +274,8 @@ function F(e) {
       })]
     }), (0, i.jsx)("div", {
       className: M.rowCheckbox,
-      children: (0, i.jsx)(N.Z, {
-        direction: N.Z.Directions.RIGHT
+      children: (0, i.jsx)(I.Z, {
+        direction: I.Z.Directions.RIGHT
       })
     })]
   })
@@ -282,7 +285,7 @@ function H(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, r = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, s.e7)([v.Z], () => v.Z.getCategories(t.id)), a = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
+  } = e, r = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, s.e7)([b.Z], () => b.Z.getCategories(t.id)), a = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
@@ -294,7 +297,7 @@ function H(e) {
     return t
   })), [o]), c = l.useMemo(() => r.flatMap(e => {
     var t;
-    if ((0, b.fI)(e) || (null == (t = e.tags) ? true : t.subscription_listing_id) != null || (0, b._N)(e, Z.TC2)) return [];
+    if ((0, v.fI)(e) || (null == (t = e.tags) ? true : t.subscription_listing_id) != null || (0, v._N)(e, Z.TC2)) return [];
     let n = (0, y.Z)(a, e).length;
     return n > 0 ? {
       role: e,
@@ -315,7 +318,7 @@ function H(e) {
   })
 }
 
-function K(e) {
+function q(e) {
   let {
     onClose: t,
     guildId: n,
@@ -344,7 +347,7 @@ function K(e) {
   })
 }
 
-function q(e) {
+function K(e) {
   let {
     onClose: t,
     guildId: n,
@@ -355,7 +358,7 @@ function q(e) {
   null != r && (s.current = r);
   let c = null != r ? r : s.current,
     d = (0, u.Z)(() => {
-      let e = v.Z.getCategories(n);
+      let e = b.Z.getCategories(n);
       return e._categories.flatMap(t => e[t.channel.id].filter(e => {
         let {
           channel: t
@@ -477,14 +480,14 @@ function W(e) {
       width: 440,
       children: [(0, i.jsx)(m.Mi4, {
         id: 0,
-        children: (0, i.jsx)(K, {
+        children: (0, i.jsx)(q, {
           onClose: r,
           guildId: n,
           onSelect: s
         })
       }), (0, i.jsx)(m.Mi4, {
         id: 1,
-        children: (0, i.jsx)(q, {
+        children: (0, i.jsx)(K, {
           onClose: r,
           guildId: n,
           role: a,

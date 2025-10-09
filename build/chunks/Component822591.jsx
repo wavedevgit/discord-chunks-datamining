@@ -76,7 +76,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         errors: Chunk999382.Z.getErrors()
       })),
       l = Object.keys(Chunk647438),
-      a = Chunk345074.length > 0 ? Chunk345074[0] : null;
+      s = Chunk345074.length > 0 ? Chunk345074[0] : null;
     return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYm"]) : null != Chunk544891 ? Chunk647438[Chunk544891] : true, (0, Chunk951288.jsx)(Chunk852860.Z, {
       submitting: require,
       onReset: () => {
@@ -100,24 +100,24 @@ let Z = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [c, g] = i.useState(true === o.K.get(Z)), p = (0, s.e7)([x.Z], () => {
+    } = e, [c, g] = i.useState(true === o.K.get(Z)), p = (0, a.e7)([x.Z], () => {
       var e;
       return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
     }), [h, j] = i.useState(false);
     (0, m.ZP)(() => {
-      a.tn.get({
+      s.tn.get({
         url: E.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
-    let _ = (0, s.e7)([b.Z], () => b.Z.getGuild("942897714956472401")),
-      v = l.features.has(E.oNc.COMMUNITY) && p >= 1e3 && h && null == _;
-    if (t && n && !v) return null;
+    let v = (0, a.e7)([b.Z], () => b.Z.getGuild("942897714956472401")),
+      _ = l.features.has(E.oNc.COMMUNITY) && p >= 1e3 && h && null == v;
+    if (t && n && !_) return null;
     let O = async () => {
       try {
-        let e = await a.tn.post({
+        let e = await s.tn.post({
           url: E.ANM.JOIN_ADMIN_SERVER(l.id),
           oldFormErrors: true,
           rejectWithError: true
@@ -125,7 +125,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         C.Z.close(), (0, f.X)(e.body.id)
       } catch (e) {}
     };
-    return c && !v ? null : (0, r.jsxs)("div", {
+    return c && !_ ? null : (0, r.jsxs)("div", {
       className: S.upsellContainer,
       children: [(0, r.jsxs)("div", {
         className: S.upsellContent,
@@ -158,7 +158,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         })
       }), (0, r.jsxs)("div", {
         className: S.upsellFooter,
-        children: [v && (0, r.jsx)("div", {
+        children: [_ && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
           children: (0, r.jsx)(u.zxk, {
@@ -213,7 +213,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, module),
         isGuildAdmin: Chunk496675.Z.can(Chunk981631.Plq.ADMINISTRATOR, module)
       })),
-      a = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
+      s = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
       d = Chunk647438.useMemo(Chunk929834.jb, []),
       g = true !== Chunk433517.K.get(Z);
     if (null == module) return null;
@@ -224,7 +224,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === E.d4z.GUILD_TEXT && m.push({
         value: t.id,
-        label: (0, p.F6)(t, v.default, _.Z, true)
+        label: (0, p.F6)(t, _.default, v.Z, true)
       })
     });
     let f = () => {
@@ -241,10 +241,12 @@ let Z = "dismissedCommunityFeaturesUpsell",
           description: e
         })
       };
-    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
-      title: Chunk388032.intl.string(Chunk388032.t.nRtNqq),
-      tag: Chunk481060.RB0.H1,
-      children: [Chunk852860 ? (0, Chunk951288.jsx)(D, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+      gap: 24,
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        children: Chunk388032.intl.string(Chunk388032.t.nRtNqq)
+      }), Chunk852860 ? (0, Chunk951288.jsx)(D, {
         discoveryEnabled: module.features.has(Chunk981631.oNc.DISCOVERABLE),
         onboardingEnabled: module.features.has(Chunk981631.oNc.GUILD_ONBOARDING),
         guild: module
@@ -260,9 +262,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !exports
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
-      }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
         label: Chunk388032.intl.string(Chunk388032.t.vAyDGR),
         description: Chunk388032.intl.string(Chunk388032.t.ZFeonp),
@@ -274,9 +274,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !require
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
-      }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
         label: Chunk388032.intl.string(Chunk388032.t.sMkYEx),
         description: Chunk388032.intl.string(Chunk388032.t.htioQk),
@@ -288,9 +286,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !exports
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
-      }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
         label: Chunk388032.intl.string(Chunk388032.t.pO60f3),
         description: Chunk388032.intl.string(Chunk388032.t.aIR73d),
@@ -302,9 +298,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           })
         },
         isDisabled: !exports
-      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
-      }), (() => {
+      }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
         var n;
         if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Kx8, {
           label: Chunk388032.intl.string(Chunk388032.t["RSfm+v"]),
@@ -315,9 +309,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           maxLength: Chunk345074.Us,
           disabled: !exports
         })
-      })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk560818.divider
-      }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
+      })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.c1BmbG),
         description: Chunk388032.intl.string(Chunk388032.t.aQzVFx),
         layout: "horizontal",

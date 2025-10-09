@@ -194,11 +194,11 @@ function D(e, t) {
     }
 }
 
-function L(e) {
-  e.P || (e.P = true, e.l && L(e.l))
+function x(e) {
+  e.P || (e.P = true, e.l && x(e.l))
 }
 
-function x(e) {
+function L(e) {
   e.o || (e.o = h(e.t))
 }
 
@@ -229,7 +229,7 @@ function M(e, t, n) {
   return (n ? n.A : O()).p.push(r), r
 }
 
-function j(e) {
+function k(e) {
   return i(e) || r(22, e),
     function e(t) {
       if (!a(t)) return t;
@@ -237,15 +237,15 @@ function j(e) {
         i = s(t);
       if (r) {
         if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
-        r.I = true, n = k(t, i), r.I = false
-      } else n = k(t, i);
+        r.I = true, n = j(t, i), r.I = false
+      } else n = j(t, i);
       return o(n, function(t, i) {
         r && c(r.t, t) === i || u(n, t, e(i))
       }), 3 === i ? new Set(n) : n
     }(e)
 }
 
-function k(e, t) {
+function j(e, t) {
   switch (t) {
     case 2:
       return new Map(e);
@@ -288,7 +288,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === w(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === w(e.t, t) ? (L(e), e.o[t] = M(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in p(e)
@@ -304,12 +304,12 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
           a = null == i ? true : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
-        x(e), L(e)
+        L(e), x(e)
       }
       return e.o[t] === n && (true !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = true), true
     },
     deleteProperty: function(e, t) {
-      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], true
+      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = p(e),
@@ -400,7 +400,7 @@ var ee = new(function() {
     }
     var t = module.prototype;
     return exports.createDraft = function(e) {
-      a(e) || r(8), i(e) && (e = j(e));
+      a(e) || r(8), i(e) && (e = k(e));
       var t = S(this),
         n = M(this, e, true);
       return n[W].C = true, T(t), n

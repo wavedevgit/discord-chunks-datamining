@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => G,
-  c: () => k
+  c: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,14 +35,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk126683 = require("./126683.js");
-let L = 24,
-  x = 5,
+let x = 24,
+  L = 5,
   M = e => {
     let {
       benefits: t,
       header: n,
       guildId: a
-    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, x), u = t.length > x, f = t.length - x, _ = w.intl.formatToPlainString(w.t["XSdy7+"], {
+    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, L), u = t.length > L, f = t.length - L, _ = w.intl.formatToPlainString(w.t["XSdy7+"], {
       numTruncated: f
     }), p = () => s(e => !e), m = (0, d.Dt)();
     return 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -71,7 +71,7 @@ let L = 24,
       })]
     })
   },
-  j = e => {
+  k = e => {
     let {
       guildId: t,
       listingId: n
@@ -81,7 +81,7 @@ let L = 24,
       return p.ZP.getEmojiURL({
         id: e.id,
         animated: e.animated,
-        size: L
+        size: x
       })
     }
     return 0 === o.length ? null : (0, r.jsxs)("div", {
@@ -105,8 +105,8 @@ let L = 24,
             children: (0, r.jsx)("img", {
               className: D.emojiListEmoji,
               src: s(e),
-              width: L,
-              height: L,
+              width: x,
+              height: x,
               alt: e.name
             })
           }, null != (n = e.id) ? n : t)
@@ -114,7 +114,7 @@ let L = 24,
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       listingId: t,
       guildId: n,
@@ -144,7 +144,7 @@ let L = 24,
         header: w.intl.string(w.t["8oxWpK"]),
         benefits: u,
         guildId: n
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(k, {
         guildId: n,
         listingId: t
       })]
@@ -175,12 +175,12 @@ let L = 24,
       cannotOpenReason: v,
       isCheckingTrialEligibility: I
     } = (0, N.Z)(p, n, a, d), S = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
-      activeSubscription: L,
-      activeSubscriptionListing: x
-    } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, j = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
+      activeSubscription: x,
+      activeSubscriptionListing: L
+    } = (0, E.Z)(a), M = (null == L ? true : L.id) === t, k = (null == x ? true : x.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
-    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEAw);
+    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEAw);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.container,
       "aria-label": H,
@@ -220,8 +220,8 @@ let L = 24,
             }), M ? (0, r.jsx)(c.zxk, {
               disabled: true,
               fullWidth: true,
-              variant: j ? "secondary" : "primary",
-              text: j ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
+              variant: k ? "secondary" : "primary",
+              text: k ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
                 className: D.helpMessage,
@@ -255,7 +255,7 @@ let L = 24,
             })]
           })]
         }), ee && (0, r.jsx)(c.y5t, {
-          children: (0, r.jsx)(k, {
+          children: (0, r.jsx)(j, {
             listingId: t,
             guildId: n
           })

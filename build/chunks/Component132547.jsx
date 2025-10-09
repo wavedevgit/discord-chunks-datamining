@@ -2,7 +2,7 @@
 /** chunk id: 132547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
-let x = e => {
+let L = e => {
   let {
     userId: t
   } = e;
@@ -44,18 +44,18 @@ let x = e => {
       null != t && await (0, m.Z)(t)
     })
   }, [t]), i.useEffect(() => {
-    j(true)
+    k(true)
   }, []), (0, p.z)(_.X);
   let n = i.useRef(null),
     a = i.useRef(null),
-    x = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
-    [M, j] = i.useState(false),
-    k = (0, y.$)(),
+    L = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
+    [M, k] = i.useState(false),
+    j = (0, y.$)(),
     U = i.useRef(null),
     [G, B] = i.useState(false),
     [Z, F] = i.useState(false),
-    V = null != k && null != x && x.status === P.O0b.CANCELED,
-    H = (0, O.W7)(R.Xh.PREMIUM_MONTH_TIER_2, k, x),
+    V = null != j && null != L && L.status === P.O0b.CANCELED,
+    H = (0, O.W7)(R.Xh.PREMIUM_MONTH_TIER_2, j, L),
     Y = !Z && V,
     {
       analyticsLocations: W
@@ -90,7 +90,7 @@ let x = e => {
               buttonVisibilityRef: U,
               className: D.heroHeading,
               enablePremiumBrandRefresh: Q,
-              userDiscountOffer: k,
+              userDiscountOffer: j,
               discountedPrice: H
             })
           }), (0, r.jsx)(I.Z, {
@@ -129,7 +129,7 @@ let x = e => {
               className: D.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {
-            src: L,
+            src: x,
             className: D.bottomIllustration,
             width: 112,
             height: 85,
@@ -138,8 +138,8 @@ let x = e => {
         })
       }), V && null != H && (0, r.jsx)(v.Z, {
         isVisible: Y && M,
-        premiumSubscription: x,
-        churnDiscountOffer: k,
+        premiumSubscription: L,
+        churnDiscountOffer: j,
         discountedPrice: H
       })]
     }), (0, r.jsx)(C.Z, {

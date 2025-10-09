@@ -1,7 +1,7 @@
 /** Chunk was on 64387 **/
 /** chunk id: 580584, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  default: () => s
+  default: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,21 +11,21 @@ var Chunk332664 = require("./332664.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = [Chunk814249.R7.OTHER];
 
-function s(e) {
+function b(e) {
   let {
     transitionState: t,
     startRating: o,
-    onClose: s,
-    onSubmit: b
+    onClose: b,
+    onSubmit: s
   } = e;
   return (0, _.jsx)(c.Z, {
     modalType: "summary",
-    header: n.intl.string(n.t.hghcMj),
-    body: n.intl.string(n.t["QFU78/"]),
-    problemTitle: n.intl.string(n.t.CtiHPj),
-    onSubmit: b,
-    onClose: s,
-    ratingOptions: [i.aZ.GOOD, i.aZ.BAD],
+    header: i.intl.string(i.t.hghcMj),
+    body: i.intl.string(i.t["QFU78/"]),
+    problemTitle: i.intl.string(i.t.CtiHPj),
+    onSubmit: s,
+    onClose: b,
+    ratingOptions: [n.aZ.GOOD, n.aZ.BAD],
     ratingEmojiKind: "thumb",
     transitionState: t,
     problems: (0, a.iq)(),

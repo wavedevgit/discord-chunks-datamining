@@ -2,10 +2,10 @@
 /** chunk id: 615673, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Me: () => j,
+  Me: () => k,
   RR: () => B,
   X5: () => U,
-  cv: () => k,
+  cv: () => j,
   dp: () => Z,
   oo: () => F,
   uY: () => G
@@ -344,7 +344,7 @@ let w = async function(e) {
 function D(e) {
   return "rtl" === (0, a.Dx)(e).direction
 }
-let L = {
+let x = {
   convertOffsetParentRelativeRectToViewportRelativeRect: h,
   getDocumentElement: Chunk274676.tF,
   getClippingRect: S,
@@ -357,7 +357,7 @@ let L = {
   isRTL: D
 };
 
-function x(e, t) {
+function L(e, t) {
   return e.x === t.x && e.y === t.y && e.width === t.width && e.height === t.height
 }
 
@@ -396,7 +396,7 @@ function M(e, t) {
           l(false, 1e-7)
         }, 1e3)
       }
-      1 !== r || x(u, e.getBoundingClientRect()) || l(), E = false
+      1 !== r || L(u, e.getBoundingClientRect()) || l(), E = false
     }
     try {
       i = new IntersectionObserver(b, {
@@ -411,7 +411,7 @@ function M(e, t) {
   return l(true), s
 }
 
-function j(e, t, n, r) {
+function k(e, t, n, r) {
   let i;
   true === r && (r = {});
   let {
@@ -440,7 +440,7 @@ function j(e, t, n, r) {
 
   function b() {
     let t = f(e);
-    E && !x(E, t) && n(), E = t, i = requestAnimationFrame(b)
+    E && !L(E, t) && n(), E = t, i = requestAnimationFrame(b)
   }
   return d && b(), n(), () => {
     var e;
@@ -449,7 +449,7 @@ function j(e, t, n, r) {
     }), null == h || h(), null == (e = g) || e.disconnect(), g = null, d && cancelAnimationFrame(i)
   }
 }
-let k = Chunk393347.cv,
+let j = Chunk393347.cv,
   U = Chunk393347.X5,
   G = Chunk393347.uY,
   B = Chunk393347.RR,
@@ -457,7 +457,7 @@ let k = Chunk393347.cv,
   F = (e, t, n) => {
     let r = new Map,
       a = {
-        platform: L,
+        platform: x,
         ...n
       },
       o = {

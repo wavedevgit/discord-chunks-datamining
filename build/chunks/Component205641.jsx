@@ -101,12 +101,12 @@ class x extends(r = Chunk647438.Component) {
       r = n ? f.HOVERING.FIRE_MIN_INTENSITY_FALLING : f.HOVERING.FIRE_MIN_INTENSITY_RISING,
       i = n ? f.HOVERING.FIRE_MAX_INTENSITY_FALLING : f.HOVERING.FIRE_MAX_INTENSITY_RISING,
       l = this.createFireAnimation(f.HOVERING.FIRE_COUNT, f.HOVERING.Y_DURATION, r, i),
-      s = u.Z.timing(this.y, {
+      a = u.Z.timing(this.y, {
         toValue: e,
         duration: f.HOVERING.Y_DURATION,
         easing: u.Z.Easing.inOut(u.Z.Easing.ease)
       });
-    this.currentAnimation = u.Z.parallel([s, l]), await (null == (t = this.currentAnimation) ? true : t.start()), this.hoverAnimate(e * f.HOVERING.Y_VALUE_MODIFIER)
+    this.currentAnimation = u.Z.parallel([a, l]), await (null == (t = this.currentAnimation) ? true : t.start()), this.hoverAnimate(e * f.HOVERING.Y_VALUE_MODIFIER)
   }
   createShakeAnimation(e, t, n) {
     return h(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : false))
@@ -127,8 +127,8 @@ class x extends(r = Chunk647438.Component) {
         duration: f.STAGING.DURATION
       }),
       l = this.createShakeAnimation(f.STAGING.SHAKE_COUNT, f.STAGING.DURATION, f.STAGING.SHAKE_INTENSITY),
-      s = this.createFireAnimation(f.STAGING.FIRE_COUNT, f.STAGING.DURATION, f.STAGING.FIRE_MIN_INTENSITY, f.STAGING.FIRE_MAX_INTENSITY),
-      a = Chunk82923.Z.parallel([i, Chunk951288, Chunk647438]),
+      a = this.createFireAnimation(f.STAGING.FIRE_COUNT, f.STAGING.DURATION, f.STAGING.FIRE_MIN_INTENSITY, f.STAGING.FIRE_MAX_INTENSITY),
+      s = Chunk82923.Z.parallel([i, Chunk951288, Chunk647438]),
       o = Chunk82923.Z.timing(this.y, {
         toValue: f.FLYING.Y_VALUE,
         duration: f.FLYING.DURATION,

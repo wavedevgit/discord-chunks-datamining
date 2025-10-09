@@ -28,15 +28,12 @@ class y extends Chunk647438.PureComponent {
     l.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
-    return (0, Chunk951288.jsxs)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk264815.container,
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        id: m,
-        className: Chunk264815.title,
-        children: Chunk388032.intl.string(Chunk388032.t.OVovCQ)
-      }), (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk951288.jsx)("div", {
         className: Chunk264815.sliderContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
+          label: Chunk388032.intl.string(Chunk388032.t.OVovCQ),
           mini: true,
           initialValue: this.initialValue,
           defaultValue: this.initialValue,
@@ -51,7 +48,7 @@ class y extends Chunk647438.PureComponent {
           stickToMarkers: true,
           "aria-labelledby": m
         })
-      })]
+      })
     })
   }
   constructor(...e) {

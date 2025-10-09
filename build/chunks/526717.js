@@ -2,15 +2,15 @@
 /** chunk id: 526717, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk768581 = require("./768581.js"),
   Chunk776155 = require("./776155.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
-  var a, o;
+function s(e, t, n) {
+  var s, o;
   let {
     isLoading: c,
     error: d,
@@ -32,16 +32,16 @@ function a(e, t, n) {
     id: e,
     icon: p,
     size: n
-  }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), x = null != m && m.length > t ? m.length - t : null, b = null == u ? true : u.slug, j = null != b ? s.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : true, _ = null == g || null == (a = g.guild) ? true : a.name, v = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, C = !c && null != _ && null != p && null != f;
+  }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), x = null != m && m.length > t ? m.length - t : null, b = null == u ? true : u.slug, j = null != b ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(b) : true, v = null == g || null == (s = g.guild) ? true : s.name, _ = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, C = !c && null != v && null != p && null != f;
   return C ? {
     hasAllImperativeDetails: C,
     isLoading: c,
     details: {
-      guildName: _,
+      guildName: v,
       guildIcon: p,
       guildAvatarUrl: f,
       storePageUrl: j,
-      subscriberCount: v,
+      subscriberCount: _,
       emojisToShow: h,
       notShownEmojiCount: x
     }

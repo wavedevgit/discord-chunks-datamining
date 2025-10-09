@@ -28,6 +28,7 @@ function _() {
     label: Chunk388032.intl.string(exports.soundpackLabel)
   }];
   return (0, Chunk951288.jsx)(Chunk481060.q4e, {
+    label: Chunk388032.intl.string(Chunk388032.t.fgSHf3),
     onChange: Chunk716364.c,
     value: module,
     options: require,

@@ -17,8 +17,8 @@ function o(e) {
     size: n = 14
   } = e;
   return (0, r.jsx)("div", {
-    className: l()([a.guildProductRoleIcon, t]),
-    children: (0, r.jsx)(s.Z, {
+    className: l()([s.guildProductRoleIcon, t]),
+    children: (0, r.jsx)(a.Z, {
       height: n,
       width: n
     })

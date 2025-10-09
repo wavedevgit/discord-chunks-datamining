@@ -158,7 +158,7 @@ module.exports = function(e) {
       keywords: E,
       contains: w
     },
-    L = {
+    x = {
       variants: [{
         match: [/class/, /\s+/, d, /\s+/, /extends/, /\s+/, c.concat(d, "(", c.concat(/\./, d), ")*")],
         scope: {
@@ -175,7 +175,7 @@ module.exports = function(e) {
         }
       }]
     },
-    x = {
+    L = {
       relevance: 0,
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
@@ -189,7 +189,7 @@ module.exports = function(e) {
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    j = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -203,7 +203,7 @@ module.exports = function(e) {
       contains: [D],
       illegal: /%/
     },
-    k = {
+    j = {
       relevance: 0,
       match: /\b[A-Z][A-Z_0-9]+\b/,
       className: "variable.constant"
@@ -251,7 +251,7 @@ module.exports = function(e) {
     keywords: E,
     exports: {
       PARAMS_CONTAINS: w,
-      CLASS_REFERENCE: x
+      CLASS_REFERENCE: L
     },
     illegal: /#(?![$_A-z])/,
     contains: [e.SHEBANG({
@@ -260,7 +260,7 @@ module.exports = function(e) {
       relevance: 5
     }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, N, {
       match: /\$\d+/
-    }, v, x, {
+    }, v, L, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
@@ -316,7 +316,7 @@ module.exports = function(e) {
           contains: ["self"]
         }]
       }]
-    }, j, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -338,7 +338,7 @@ module.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, k, L, Z, {
+    }, G, j, x, Z, {
       match: /\$[(.]/
     }]
   }

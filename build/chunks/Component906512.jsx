@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -81,7 +81,7 @@ let N = [{
       color: n,
       size: i = 24,
       header: l,
-      body: s
+      body: a
     } = e;
     return (0, r.jsxs)("div", {
       className: b.featureCard,
@@ -100,7 +100,7 @@ let N = [{
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: s
+        children: a
       })]
     })
   },
@@ -110,14 +110,14 @@ let N = [{
       name: n,
       position: i,
       faded: l,
-      rightAlign: a,
+      rightAlign: s,
       imageCoordinates: o
     } = e, c = {
-      [a ? "right" : "left"]: o[0] + i[0],
+      [s ? "right" : "left"]: o[0] + i[0],
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: s()(b.guildDetails, {
+      className: a()(b.guildDetails, {
         [b.faded]: l
       }),
       style: c,
@@ -138,10 +138,10 @@ let N = [{
   S = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [s, v] = i.useState(0), [C, O] = i.useState(), S = (0, a.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, _] = i.useState(0), [C, O] = i.useState(), S = (0, s.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
     return i.useEffect(() => {
-      null != T && l(T / 2), null != P && v(P / 2)
-    }, [T, P, l, v]), i.useEffect(() => {
+      null != T && l(T / 2), null != P && _(P / 2)
+    }, [T, P, l, _]), i.useEffect(() => {
       (0, u.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []), (0, r.jsxs)("div", {
       className: b.container,
@@ -151,7 +151,7 @@ let N = [{
         children: [N.map(e => {
           var t, i;
           return (0, r.jsx)(I, (t = y({}, e), i = i = {
-            imageCoordinates: [n, s]
+            imageCoordinates: [n, a]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -169,7 +169,7 @@ let N = [{
           width: 256
         }), (0, r.jsx)("img", {
           alt: "",
-          src: _,
+          src: v,
           className: b.sparkles
         })]
       }), (0, r.jsx)(d.X6q, {

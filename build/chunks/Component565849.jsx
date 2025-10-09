@@ -4,9 +4,8 @@
 require.d(exports, {
   A: () => g
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk937222 = require("./937222.jsx"),
   Chunk269464 = require("./269464.jsx"),
@@ -20,7 +19,7 @@ function g(e) {
     guild: t,
     canManageGuild: n
   } = e;
-  return (0, r.jsxs)(i.hjN, {
+  return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsxs)("div", {
       className: u.column,
@@ -41,14 +40,14 @@ function g(e) {
         children: d.intl.format(d.t.vBcWUl, {
           articleURL: l.Z.getArticleURL(c.BhN.GUILD_BANNER_SPLASH)
         })
-      }), (0, r.jsx)(s.F, {
+      }), (0, r.jsx)(a.F, {
         guild: t,
         canManageGuild: n,
         buttonClassName: u.button
       })]
     }), (0, r.jsx)("div", {
       className: u.column,
-      children: (0, r.jsx)(a.O, {
+      children: (0, r.jsx)(s.O, {
         guild: t,
         canManageGuild: n
       })
