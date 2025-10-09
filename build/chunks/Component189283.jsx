@@ -112,6 +112,7 @@ function g(e) {
     })
   }));
   return null == g ? y() : (0, r.jsx)(s.ua7, {
+    "data-migration-pending": true,
     shouldShow: !_,
     "aria-label": E,
     text: g,

@@ -268,6 +268,7 @@ let B = (0, Chunk888651.$)(function(e) {
           if (ec) {
             var r;
             return (0, i.jsx)(o.ua7, {
+              "data-migration-pending": true,
               text: null != (r = (0, b.Z)(eo)) ? r : M.intl.string(M.t.IyYqqa),
               children: e => {
                 var {

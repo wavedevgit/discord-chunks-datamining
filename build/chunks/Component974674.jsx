@@ -613,6 +613,7 @@ function H(e) {
           className: C
         })
       }), null != j && null != I ? M(I, l, k, j) : null, null != j ? (0, r.jsx)(f.u, {
+        "data-migration-pending": true,
         text: b ? (0, h.u5)(j) : null,
         "aria-label": false,
         position: "top",
@@ -762,6 +763,7 @@ function K(e) {
           className: x
         })
       }), null != w && M(w, l, ec, O), (0, r.jsx)(f.u, {
+        "data-migration-pending": true,
         text: A ? (0, h.u5)(O) : null,
         "aria-label": false,
         position: "top",

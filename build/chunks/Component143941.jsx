@@ -109,6 +109,7 @@ let P = e => {
   if (z || G || H) {
     let e = h.intl.string(h.t["50TX9v"]);
     return G ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.ua7, {
+      "data-migration-pending": true,
       text: e,
       children: e => (0, r.jsx)(c.P3F, E(x({}, e), {
         className: a()(v.wishlistButton, v.disabledButton, P),
@@ -135,6 +136,7 @@ let P = e => {
       })]
     }) : X;
   return (0, r.jsx)(c.ua7, {
+    "data-migration-pending": true,
     text: q,
     "aria-label": X,
     children: e => (0, r.jsx)(c.P3F, E(x({}, e), {

@@ -58,7 +58,7 @@ function y(t) {
     transitionState: n,
     onClose: y,
     analyticsData: v
-  } = t, N = (0, a.e7)([o.Z], () => o.Z.getGuild(e), [e]), m = !!(null == N ? true : N.features.has(g.oNc.INVITES_DISABLED)), [E] = i.useState(false), [S, C] = i.useState(O.Fl), I = (0, a.e7)([b.Z], () => b.Z.getGuildIncident(e)), T = (0, u.BT)(N), D = (0, p.SG)(I) || m, A = (0, p.sN)(I), [P, w] = i.useState(D), [R, M] = i.useState(A), [k, G] = i.useState(false), L = P !== D || R !== A || k, Z = m && !T;
+  } = t, N = (0, a.e7)([o.Z], () => o.Z.getGuild(e), [e]), m = !!(null == N ? true : N.features.has(O.oNc.INVITES_DISABLED)), [E] = i.useState(false), [S, C] = i.useState(f.Fl), I = (0, a.e7)([b.Z], () => b.Z.getGuildIncident(e)), T = (0, u.BT)(N), D = (0, p.SG)(I) || m, A = (0, p.sN)(I), [P, w] = i.useState(D), [R, M] = i.useState(A), [k, G] = i.useState(false), L = P !== D || R !== A || k, Z = m && !T;
   if (null == N) return y(), null;
 
   function U() {
@@ -75,7 +75,7 @@ function y(t) {
     }, {
       text: h.intl.string(h.t["pwm/z8"]),
       onClick: () => {
-        (D || A) && !P && !R ? ((0, d.n)(N.id, false, false), (0, s.ZDy)(() => Promise.resolve(t => (0, r.jsx)(f.Z, x(j({}, t), {
+        (D || A) && !P && !R ? ((0, d.n)(N.id, false, false), (0, s.ZDy)(() => Promise.resolve(t => (0, r.jsx)(g.Z, x(j({}, t), {
           guildId: e
         }))))) : (0, d.n)(N.id, P, R, S);
         let {
@@ -83,7 +83,7 @@ function y(t) {
           alertType: n,
           messageId: i
         } = v;
-        c.default.track(g.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
+        c.default.track(O.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
           guild_id: e,
           source: t,
           raid_alert_id: i,
@@ -101,7 +101,7 @@ function y(t) {
       className: _.mainContainer,
       children: [(0, r.jsx)(s.PhF, {
         placeholder: h.intl.string(h.t.vKYZzc),
-        options: (0, O.c1)(),
+        options: (0, f.c1)(),
         select: t => {
           C(t), G(true)
         },
@@ -121,6 +121,7 @@ function y(t) {
             children: h.intl.string(h.t.qPJkZm)
           })]
         }), (0, r.jsx)(s.ua7, {
+          "data-migration-pending": true,
           text: h.intl.string(h.t["9GPbsb"]),
           shouldShow: m,
           children: t => (0, r.jsx)("div", x(j({}, t), {

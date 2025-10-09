@@ -429,6 +429,7 @@ class eI extends(l = Chunk647438.PureComponent) {
           children: Chunk388032.intl.string(Chunk388032.t.QKJru7)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         text: Chunk388032.intl.string(Chunk388032.t.Yx4IiI),
         children: e => {
           let {

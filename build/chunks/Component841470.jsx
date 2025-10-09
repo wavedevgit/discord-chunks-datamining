@@ -20,6 +20,7 @@ let c = e => {
     isTrendingDown: u,
     tooltipText: g
   } = e, m = null != g ? (0, r.jsx)(l.ua7, {
+    "data-migration-pending": true,
     text: g,
     position: "top",
     "aria-label": "string" == typeof g ? g : t,

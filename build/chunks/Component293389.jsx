@@ -233,6 +233,7 @@ function F(e) {
         className: R.gameName,
         children: k
       }), (0, r.jsx)(u.ua7, {
+        "data-migration-pending": true,
         text: N.intl.string(N.t["4PJP5u"]),
         children: e => (0, r.jsx)(g.Z, j(x({
           className: R.gameVerifiedIcon,
@@ -290,6 +291,7 @@ function F(e) {
       className: R.toggleIconOff,
       colorClass: R.fill
     }), i = t ? (0, r.jsx)(u.ua7, {
+      "data-migration-pending": true,
       text: N.intl.string(N.t.Vfw2Ly),
       children: e => (0, r.jsx)("i", x({
         className: R.overlayWarningIcon
@@ -298,6 +300,7 @@ function F(e) {
     return (0, r.jsxs)("div", {
       className: o()(w.flexCenter, w.noWrap, w.justifyBetween, R.toggleContainer),
       children: [i, (0, r.jsx)(u.ua7, {
+        "data-migration-pending": true,
         text: N.intl.string(N.t["1+O+Tk"]),
         children: t => {
           let {
@@ -334,6 +337,7 @@ function F(e) {
     return (0, r.jsx)("div", {
       className: o()(w.flexCenter, w.noWrap, w.justifyBetween, R.toggleContainer),
       children: (0, r.jsx)(u.ua7, {
+        "data-migration-pending": true,
         text: N.intl.string(N.t.QmitzM),
         children: e => {
           let {
@@ -357,6 +361,7 @@ function F(e) {
     return L ? null : (0, r.jsx)("div", {
       className: o()(w.flexCenter, w.noWrap, w.justifyBetween, R.toggleContainer),
       children: (0, r.jsx)(u.ua7, {
+        "data-migration-pending": true,
         text: N.intl.string(N.t["y0B+lp"]),
         children: e => {
           let {

@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
 let v = e => {
     let {
       product: t
-    } = e, n = (0, u.Nd)(), h = null == n ? true : n.tab, v = (0, s.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(v), {
+    } = e, n = (0, u.Nd)(), h = null == n ? true : n.tab, v = (0, a.e7)([o.default], () => o.default.getCurrentUser()), x = c.ZP.canUseCollectibles(v), {
       isDisabled: O
     } = (0, g.G)(t.skuId), {
       isPurchased: y,
@@ -44,7 +44,7 @@ let v = e => {
       tab: h,
       hasDiscountOffer: P
     });
-    return O ? (0, r.jsx)(a.Text, {
+    return O ? (0, r.jsx)(s.Text, {
       tag: "div",
       variant: "heading-md/semibold",
       color: "header-muted",
@@ -53,7 +53,7 @@ let v = e => {
     }) : y || T ? (0, r.jsx)(f.U, {
       className: S.priceTag,
       isPartiallyPurchased: T
-    }) : L ? (0, r.jsx)(a.Text, {
+    }) : L ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       className: S.priceTag,
       children: E.intl.string(E.t.rt69oq)

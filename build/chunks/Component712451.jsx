@@ -556,6 +556,7 @@ function M(e) {
               className: T.zoomIcon
             })]
           }), (0, n.jsx)(u.ua7, {
+            "data-migration-pending": true,
             text: w.intl.string(w.t.E36Wd3),
             "aria-label": w.intl.string(w.t.LzFiKC),
             children: e => {

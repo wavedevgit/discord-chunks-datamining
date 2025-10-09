@@ -218,6 +218,7 @@ function y(e) {
           }), (0, i.jsxs)("div", {
             className: M.ctas,
             children: [K ? (0, i.jsx)(k, {}) : null, null == w ? (0, i.jsx)(c.ua7, {
+              "data-migration-pending": true,
               text: K ? Z.intl.string(Z.t.iLyuDA) : null,
               position: "bottom",
               children: e => {

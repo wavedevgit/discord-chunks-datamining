@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   QH: () => i,
-  pj: () => s
+  pj: () => a
 });
 var r, Chunk427164 = require("./427164.js"),
-  s = ((r = {}).NO_BADGE = "no_badge", r.FIRST_BLOCK_ONLY = "first_block_only", r.RIGHT_BLOCK_ONLY = "right_block_only", r.BOTH_BLOCKS = "both_blocks", r);
-let a = (0, Chunk427164.le)({
+  a = ((r = {}).NO_BADGE = "no_badge", r.FIRST_BLOCK_ONLY = "first_block_only", r.RIGHT_BLOCK_ONLY = "right_block_only", r.BOTH_BLOCKS = "both_blocks", r);
+let s = (0, Chunk427164.le)({
     name: "2025-10-collectibles-featured-block-new-badge",
     kind: "user",
     defaultConfig: {
@@ -28,6 +28,6 @@ let a = (0, Chunk427164.le)({
       }
     }
   }),
-  i = e => a.useConfig({
+  i = e => s.useConfig({
     location: e
   }).variant

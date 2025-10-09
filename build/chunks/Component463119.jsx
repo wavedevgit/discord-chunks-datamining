@@ -201,6 +201,7 @@ let k = e => {
       }, []),
       H = I.title();
     return (0, r.jsx)(c.ua7, {
+      "data-migration-pending": true,
       text: (0, r.jsx)(B, {
         displayOptions: I,
         assetId: I.assetIds[T],
@@ -252,6 +253,7 @@ let k = e => {
       })
     }, [t]);
     return (0, r.jsx)(c.ua7, {
+      "data-migration-pending": true,
       text: l,
       tooltipClassName: w.marketingBadgeTooltip,
       position: "right",

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk497598 = require("./497598.js"),
   Chunk792091 = require("./792091.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,7 +25,7 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), s = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== o.E.RELEVANCE || E), [E]), v = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), S = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== o.E.RELEVANCE || E), [E]), v = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -70,17 +70,17 @@ let b = () => {
   })[e], []), O = Chunk647438.useCallback(e => {
     let n = v(x(e));
     u.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == s ? true : s.sessionId,
-      page_section: null == s ? true : s.pageSection,
-      page_category: null == s ? true : s.pageCategory,
-      page_index: null == s ? true : s.pageIndex,
-      page_size: null == s ? true : s.pageSize,
+      collectibles_shop_session_id: null == a ? true : a.sessionId,
+      page_section: null == a ? true : a.pageSection,
+      page_category: null == a ? true : a.pageCategory,
+      page_index: null == a ? true : a.pageIndex,
+      page_size: null == a ? true : a.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
     }), t(x(e))
   }, [Chunk120356, v, x, exports]), y = v(module);
   return (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk182668.container, {
+    className: s()(Chunk182668.container, {
       [Chunk345213.shopTakeOver]: b
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
@@ -89,7 +89,7 @@ let b = () => {
       isSelected: e => e === y.value,
       serialize: e => e,
       popoutWidth: 224,
-      popoutClassName: a()({
+      popoutClassName: s()({
         [Chunk345213.shopTakeOver]: b
       })
     })

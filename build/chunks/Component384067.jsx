@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let _ = e => {
-  var t, n, s;
+  var t, n, a;
   let {
     wideBannerBlock: _,
     handleTransition: m,
@@ -50,18 +50,18 @@ let _ = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: S,
-      className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: j
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(h.wideBannerBackgroundImg, {
+        className: s()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: j
         }),
         children: (0, r.jsx)("img", {
           ref: v,
           src: L,
           alt: _.title,
-          className: a()(h.wideBannerArt, {
+          className: s()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: j
           }),
           style: {
@@ -84,7 +84,7 @@ let _ = e => {
             children: _.title
           }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (s = _.bannerTextColor) ? s : "var(--text-muted)"
+              color: null != (a = _.bannerTextColor) ? a : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: j ? "text-md/medium" : "text-sm/medium",

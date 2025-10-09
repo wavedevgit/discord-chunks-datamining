@@ -110,6 +110,7 @@ function I(e) {
       null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(E + 1), C(true), S(true), N.start(b, () => C(false)), R.start(y, () => I(0))
     };
   return (0, r.jsx)(s.ua7, {
+    "data-migration-pending": true,
     text: L(),
     delay: h,
     "aria-label": _,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
   Chunk626135 = require("./626135.js"),
@@ -31,7 +31,7 @@ function y(e) {
   let {
     isFullScreen: t,
     tab: n,
-    sortedCategories: s,
+    sortedCategories: a,
     initialCategoryId: c,
     onUnmount: u
   } = e;
@@ -59,11 +59,11 @@ function y(e) {
   }, []), l.useEffect(() => {
     p || S(false)
   }, [p, S]), (0, r.jsx)("div", {
-    className: a()(O.pageWrapper, {
+    className: s()(O.pageWrapper, {
       [O.pageWrapperFilter]: p
     }),
     children: (0, r.jsxs)("main", {
-      className: a()(O.page, {
+      className: s()(O.page, {
         [O.pageFilter]: p
       }),
       children: [(0, r.jsx)(i.yWw, {
@@ -77,7 +77,7 @@ function y(e) {
           setFilterBarOpen: S,
           tab: n,
           scrollerRef: f,
-          sortedCategories: s,
+          sortedCategories: a,
           setCategoryRef: m
         })
       }), E && !v && (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ let T = e => {
   let {
     isFullScreen: t,
     isSmallScreen: n,
-    filterBarOpen: s,
+    filterBarOpen: a,
     setFilterBarOpen: o,
     tab: C,
     scrollerRef: y,
@@ -117,7 +117,7 @@ let T = e => {
     }), N(e)
   }, [P, N]), R = l.useRef(null);
   return l.useEffect(() => {
-    if (!n || !s) return;
+    if (!n || !a) return;
     let e = e => {
       let t = e.target;
       null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -131,10 +131,10 @@ let T = e => {
       }), o(false))
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [n, s, o, P]), (0, r.jsx)("div", {
+  }, [n, a, o, P]), (0, r.jsx)("div", {
     className: O.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: a()(O.inventory, {
+      className: s()(O.inventory, {
         [O.inventoryFilter]: j,
         [O.pageFullscreen]: t
       }),
@@ -144,7 +144,7 @@ let T = e => {
           className: O.controlsLeftSide,
           children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsxs)("div", {
-          className: a()(O.controlsRightSide, {
+          className: s()(O.controlsRightSide, {
             [O.controlsRightSideResponsive]: n
           }),
           children: [(0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ let T = e => {
             ref: R,
             children: (0, r.jsx)(i.zxk, {
               onClick: () => {
-                let e = !s;
+                let e = !a;
                 c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == P ? true : P.sessionId,
                   page_section: null == P ? true : P.pageSection,
@@ -169,12 +169,12 @@ let T = e => {
                 }), o(e)
               },
               variant: "secondary",
-              text: x.intl.string(s ? x.t.fYtm6e : x.t.TeTYEx),
+              text: x.intl.string(a ? x.t.fYtm6e : x.t.TeTYEx),
               icon: i.gXV,
               iconPosition: "end"
             })
           })]
-        }), s && n && (0, r.jsx)("div", {
+        }), a && n && (0, r.jsx)("div", {
           className: O.filterOverlay,
           ref: k,
           children: (0, r.jsx)(i.Den, {

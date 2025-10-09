@@ -1,7 +1,7 @@
 /** Chunk was on 83243 **/
 /** chunk id: 301801, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  BO: () => i
+  BO: () => o
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./781311.js");
 var Chunk647438 = require("./647438.js"),
   Chunk348327 = require("./348327.js"),
@@ -9,17 +9,17 @@ var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   Chunk823379 = require("./823379.js"),
   Chunk886118 = require("./886118.js");
-let o = new Worker(new URL("/assets/" + require.u("56558"), require.b));
+let i = new Worker(new URL("/assets/" + require.u("56558"), require.b));
 
-function i(e, t, r, a) {
-  let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : [],
+function o(e, t, r, a) {
+  let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : [],
     d = n.useRef(null),
     f = n.useRef(null),
     m = n.useRef(r),
     {
       searchStringGenerator: x
     } = a,
-    h = function(e) {
+    p = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         [r, a] = n.useState(e),
         l = n.useRef(e);
@@ -31,8 +31,8 @@ function i(e, t, r, a) {
           return c()(e, t) ? e : t
         })
       }, t), r
-    }(t.map(x), [t, x, ...i]),
-    p = function(e) {
+    }(t.map(x), [t, x, ...o]),
+    h = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         [r, a] = n.useState(e),
         l = n.useRef(e);
@@ -62,7 +62,7 @@ function i(e, t, r, a) {
         var a;
         let c = null != (a = n.promiseUuid) ? a : (0, l.uniqueId)(),
           {
-            searchType: i = s.S.FUZZY,
+            searchType: o = s.S.FUZZY,
             sortType: d = s.E.NONE,
             jaroWinklerSearchThreshold: f = .85
           } = n;
@@ -74,13 +74,13 @@ function i(e, t, r, a) {
                 foundItemIndexes: l
               }
             } = t;
-            c === r && (n(l.map(t => e[t]).filter(u.lm)), null == o || o.removeEventListener("message", a))
+            c === r && (n(l.map(t => e[t]).filter(u.lm)), null == i || i.removeEventListener("message", a))
           };
-          null == o || o.addEventListener("message", a), null == o || o.postMessage({
+          null == i || i.addEventListener("message", a), null == i || i.postMessage({
             id: c,
             searchTerm: t,
             searchStrings: r,
-            searchType: i,
+            searchType: o,
             sortType: d,
             jaroWinklerSearchThreshold: f
           })
@@ -112,8 +112,8 @@ function i(e, t, r, a) {
     }), f.current
   }, [a]);
   return n.useEffect(() => {
-    g(e, p, h)
-  }, [g, e, p, h, ...i]), n.useEffect(() => () => {
+    g(e, h, p)
+  }, [g, e, h, p, ...o]), n.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [h, r, a]), g
+  }, [p, r, a]), g
 }

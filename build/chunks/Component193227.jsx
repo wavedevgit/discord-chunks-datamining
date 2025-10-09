@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -33,10 +33,10 @@ function T(e) {
     products: t,
     header: n,
     category: l
-  } = e, s = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, x.St)(t), i = g.Z.useConfig({
+  } = e, a = (0, o.e7)([u.default], () => u.default.getCurrentUser()), s = (0, x.St)(t), i = g.Z.useConfig({
     location: "Products"
   }).showCardsV2;
-  return null == s || 0 === t.length ? null : (0, r.jsxs)("div", {
+  return null == a || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(c.Text, {
       className: y.itemTypeTitle,
       color: "header-secondary",
@@ -46,7 +46,7 @@ function T(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
-      children: a.map((e, t) => (0, r.jsx)(d.k0, {
+      children: s.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -55,7 +55,7 @@ function T(e) {
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
-          user: s,
+          user: a,
           tab: O.AW.CATALOG
         }, e.skuId)
       }, e.skuId))
@@ -77,8 +77,8 @@ function j(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [s, a] = l.useState(false), o = (0, i.O)(e => {
-    a(e)
+  } = e, [a, s] = l.useState(false), o = (0, i.O)(e => {
+    s(e)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
@@ -95,7 +95,7 @@ function k(e) {
   var t;
   let {
     sortedCategories: n,
-    setCategoryRef: s,
+    setCategoryRef: a,
     isFullScreen: i,
     currentPage: o,
     handlePageChange: u
@@ -132,11 +132,11 @@ function k(e) {
   }, [C, i, b, _, f, x.length]);
   let T = (0, p.FF)("CollectiblesBrowse");
   return f ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: a()(y.categories, {
+    className: s()(y.categories, {
       [y.categoriesNoFilter]: !T
     }),
     children: [x.map((e, t) => (0, r.jsx)("div", {
-      ref: t => s(e.skuId, t),
+      ref: t => a(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
           categoryPosition: t

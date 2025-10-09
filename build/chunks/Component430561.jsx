@@ -156,6 +156,7 @@ function L(e) {
   if ((0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)()))) return null;
   let n = y.intl.string(y.t["3D5yo6"]);
   return (0, r.jsx)(c.ua7, {
+    "data-migration-pending": true,
     text: n,
     "aria-label": n,
     children: e => (0, r.jsx)(c.P3F, S(I({}, e), {
@@ -179,6 +180,7 @@ function x(e) {
     })
   };
   return (0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)())) ? null : (0, r.jsx)(c.ua7, {
+    "data-migration-pending": true,
     text: i,
     "aria-label": i,
     children: e => (0, r.jsx)(c.P3F, S(I({}, e), {
@@ -198,6 +200,7 @@ function M(e) {
     pinned: n
   } = e, i = n ? y.intl.string(y.t.cSu80t) : y.intl.string(y.t.cM8Vnp), a = (0, s.e7)([p.default], () => p.default.isLocked((0, h.getPID)()));
   return (0, r.jsx)(c.ua7, {
+    "data-migration-pending": true,
     text: i,
     "aria-label": i,
     children: e => (0, r.jsx)("div", S(I({}, e), {

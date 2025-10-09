@@ -2,15 +2,15 @@
 /** chunk id: 659755, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk979554 = require("./979554.js"),
   Chunk786040 = require("./786040.jsx");
-let s = e => {
+let a = e => {
   let {
     skuId: t
   } = e, n = (0, l.LJ)(t);
   if (null == n) return null;
-  let s = (0, l.rC)(n);
-  return s === r.Z.PROFILE_EFFECT || s === r.Z.AVATAR_DECORATION || s === r.Z.NAMEPLATE || s === r.Z.BUNDLE || r.Z.EXTERNAL_SKU, null
+  let a = (0, l.rC)(n);
+  return a === r.Z.PROFILE_EFFECT || a === r.Z.AVATAR_DECORATION || a === r.Z.NAMEPLATE || a === r.Z.BUNDLE || r.Z.EXTERNAL_SKU, null
 }

@@ -24,11 +24,11 @@ let d = () => {
       l = (0, o.ql)(e, r);
     if (!(0, c.N)(e)) returnfalse;
     if (null == l || 0 === l.amount) returntrue;
-    let s = 0;
-    return null != e.bundledProducts && (s = e.bundledProducts.reduce((e, t) => {
+    let a = 0;
+    return null != e.bundledProducts && (a = e.bundledProducts.reduce((e, t) => {
       var n;
       let l = (0, o.ql)(t, r);
       return e + (null != (n = null == l ? true : l.amount) ? n : 0)
-    }, 0)), l.amount < s
+    }, 0)), l.amount < a
   }), [exports])
 }

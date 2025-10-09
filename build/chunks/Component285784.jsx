@@ -21,10 +21,10 @@ function d(e) {
     isChannelPublic: u = true,
     entityType: _,
     onJoinClick: p,
-    onRsvpClick: b,
-    onStartClick: g,
-    onInviteClick: h,
-    onEndClick: m,
+    onRsvpClick: g,
+    onStartClick: m,
+    onInviteClick: b,
+    onEndClick: h,
     onJoinGuildClick: f,
     isJoined: v = false
   } = e, x = true !== p, C = function(e) {
@@ -52,7 +52,7 @@ function d(e) {
       "aria-label": s.intl.string(s.t.Ej3B3d)
     }
   }({
-    onInviteClick: h,
+    onInviteClick: b,
     canInvite: d,
     isChannelPublic: u
   }), I = [];
@@ -78,26 +78,26 @@ function d(e) {
       size: "sm",
       text: s.intl.string(s.t["2BP08P"]),
       onClick: f
-    }), !t && !n && null != b) {
+    }), !t && !n && null != g) {
     let e = i && !t;
     I.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
       text: s.intl.string(s.t.DlcqlZ),
-      onClick: b,
+      onClick: g,
       disabled: t
     })
   }
-  return n || null == g || I.push({
+  return n || null == m || I.push({
     variant: "primary",
     size: "sm",
-    onClick: g,
+    onClick: m,
     text: s.intl.string(s.t.I0v0Qk)
-  }), n && null != m && I.push({
+  }), n && null != h && I.push({
     variant: "secondary",
     size: "sm",
-    onClick: m,
+    onClick: h,
     text: s.intl.string(s.t.qaYzPD)
   }), I
 }

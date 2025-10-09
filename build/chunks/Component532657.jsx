@@ -78,6 +78,7 @@ function p(e) {
     className: o()(h && c.truncated, u)
   }, O = null != t && null == n && h, v = !m && (null != n || O || g);
   return null == p && g ? null : v ? (0, r.jsx)(s.ua7, {
+    "data-migration-pending": true,
     text: b(),
     "aria-label": f,
     tooltipContentClassName: o()(c.container, c.activitiesTooltip),

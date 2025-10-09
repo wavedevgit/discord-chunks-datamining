@@ -187,8 +187,8 @@ let eo = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       role: b,
       "aria-posinset": v,
       "aria-setsize": y,
-      listItemRef: h
-    } = e, g = ea(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+      listItemRef: g
+    } = e, h = ea(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     return (0, r.jsx)(T.Z, {
       className: a()(er.channel, {
         [er.fullWidth]: p.tq
@@ -200,7 +200,7 @@ let eo = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       }, es),
       "aria-posinset": v,
       "aria-setsize": y,
-      ref: h,
+      ref: g,
       children: (0, r.jsx)(O.vjx, {
         as: "div",
         selected: n,
@@ -213,7 +213,7 @@ let eo = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
             state: d
           },
           className: er.link
-        }, g), {
+        }, h), {
           children: [(0, r.jsx)(P.Z, {
             muted: false,
             avatar: (0, r.jsx)(i, {
@@ -235,7 +235,7 @@ function em(e) {
     isGDMFacepileEnabled: l,
     selected: o = false,
     user: p,
-    activities: g,
+    activities: h,
     applicationStream: x,
     voiceChannel: R,
     isTyping: F,
@@ -245,7 +245,7 @@ function em(e) {
     ref: q,
     "aria-posinset": X,
     "aria-setsize": $
-  } = e, [ee, ef] = i.useState(false), [em, eb] = i.useState(false), [eO, ev] = i.useState(false), ey = i.useRef(null), eh = i.useRef(null), eg = null != q ? q : eh, {
+  } = e, [ee, ef] = i.useState(false), [em, eb] = i.useState(false), [eO, ev] = i.useState(false), ey = i.useRef(null), eg = i.useRef(null), eh = null != q ? q : eg, {
     avatarSrc: ej,
     avatarDecorationSrc: ex,
     eventHandlers: eN
@@ -367,9 +367,9 @@ function em(e) {
         role: n,
         focusProps: el(ei({}, es), {
           focusTarget: ey,
-          ringTarget: eg
+          ringTarget: eh
         }),
-        ref: eg,
+        ref: eh,
         onMouseEnter: eB,
         onMouseLeave: ez,
         onMouseDown: eQ,
@@ -427,7 +427,7 @@ function em(e) {
                   }));
                 s()(null != p, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                 let n = null;
-                return p.isSystemUser() || (n = (0, h.Z)(g) ? et.Skl.STREAMING : G), (0, r.jsx)(eo, el(ei({}, eN), {
+                return p.isSystemUser() || (n = (0, g.Z)(h) ? et.Skl.STREAMING : G), (0, r.jsx)(eo, el(ei({}, eN), {
                   size: O.EFr.SIZE_32,
                   src: ej,
                   avatarDecoration: ex,
@@ -449,14 +449,14 @@ function em(e) {
                   members: t.recipients.length + 1
                 })
               }) : (0, j.Z)({
-                activities: g,
+                activities: h,
                 status: G,
                 applicationStream: x,
                 voiceChannel: R
               }) ? (0, r.jsx)(N.Z, {
                 location: "PrivateChannel",
                 user: p,
-                activities: g,
+                activities: h,
                 voiceChannel: R,
                 applicationStream: x,
                 animateEmoji: ee || em || eO,
@@ -544,7 +544,7 @@ let eb = 12633 == require.j ? e => {
     }, [t, c, a]),
     {
       voiceActivityStatusEnabled: d
-    } = (0, g.U)({
+    } = (0, h.U)({
       location: "PrivateChannel"
     }),
     {

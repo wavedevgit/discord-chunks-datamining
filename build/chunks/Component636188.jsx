@@ -391,6 +391,7 @@ function W(e) {
       }) : (0, r.jsx)(H, {
         onClick: s
       }), f.map(e => (0, r.jsx)(c.ua7, {
+        "data-migration-pending": true,
         text: (0, r.jsx)(F, {}),
         "aria-label": N.intl.string(N.t["T+yRY2"]),
         children: t => {

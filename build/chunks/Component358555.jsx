@@ -98,6 +98,7 @@ function T(e) {
   return (0, r.jsx)("div", {
     className: b.guildIconContainer,
     children: (0, r.jsx)(s.ua7, {
+      "data-migration-pending": true,
       text: y,
       position: "bottom",
       "aria-label": null != _ ? _ : "",

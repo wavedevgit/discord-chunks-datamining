@@ -234,6 +234,7 @@ function z(e) {
             }
           })
         }), (0, i.jsx)(u.ua7, {
+          "data-migration-pending": true,
           text: L.intl.string(L.t.WqhZsr),
           children: e => q ? (0, i.jsx)(u.zxk, F(V({}, e), {
             icon: u.dz2,

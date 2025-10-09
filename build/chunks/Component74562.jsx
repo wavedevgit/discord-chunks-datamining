@@ -25,7 +25,7 @@ function p(e) {
   }, [n]);
   return (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(c.Z, {
       children: (0, r.jsx)("div", {
         className: g.circle,
         children: (0, r.jsx)(l.Que, {
@@ -52,7 +52,7 @@ function p(e) {
       className: g.roleTip,
       children: d.intl.format(d.t["K+DH2t"], {
         onClick: () => {
-          c.Z.open(n, u.pNK.ROLES), t()
+          a.Z.open(n, u.pNK.ROLES), t()
         }
       })
     })]

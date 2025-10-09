@@ -22,13 +22,13 @@ let g = {
   p = (e, t) => {
     let {
       enabled: n
-    } = (0, a.WX)({
+    } = (0, s.WX)({
       location: "useShopViewTransition"
-    }), s = (0, i.FF)("CollectiblesBrowse"), {
+    }), a = (0, i.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: p,
       reset: f,
       setCurrentTab: C
-    } = (0, o.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && s ? u.AW.CATALOG : e : u.AW.HOME, [e, n, s]), [_, m] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
+    } = (0, o.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, n, a]), [_, m] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
       C(_)
     }, [_, C]), r.useEffect(() => {
@@ -47,11 +47,11 @@ let g = {
         let e;
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
       }
-      let r = s && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
+      let r = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
       m(r), n && E(u.f7.IN), t || v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [v, t, s, p, f, _, S]);
+    }, [v, t, a, p, f, _, S]);
     return {
       selectedTab: _,
       transitionState: b,

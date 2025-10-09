@@ -113,6 +113,7 @@ let P = function(e) {
     D(false)
   }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
   return (0, r.jsx)(u.ua7, {
+    "data-migration-pending": true,
     targetElementRef: z,
     text: () => (0, r.jsx)(N, {}),
     "aria-label": E.intl.formatToMarkdownString(E.t["/7R4q6"], {}),

@@ -260,6 +260,7 @@ class I extends(r = Chunk647438.PureComponent) {
               }), v, (0, i.jsx)("div", {
                 className: h.track,
                 children: (0, i.jsx)(_.u, {
+                  "data-migration-pending": true,
                   color: _.u.Colors.GREY,
                   hideOnClick: false,
                   text: C || y ? null : X,

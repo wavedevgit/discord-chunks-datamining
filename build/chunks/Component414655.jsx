@@ -131,6 +131,7 @@ function S(e) {
             count: k.items.length
           })
         }), !N && (0, r.jsx)(o.ua7, {
+          "data-migration-pending": true,
           text: O.intl.string(O.t.RX7D9v),
           children: e => (0, r.jsx)(o.tEY, {
             children: (0, r.jsx)("div", I(P({
@@ -145,6 +146,7 @@ function S(e) {
             }))
           })
         }), N && A && (0, r.jsx)(o.ua7, {
+          "data-migration-pending": true,
           text: O.intl.string(O.t.d78ChY),
           children: e => (0, r.jsx)(o.tEY, {
             children: (0, r.jsx)("div", I(P({

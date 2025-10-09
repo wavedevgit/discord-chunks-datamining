@@ -159,6 +159,7 @@ let U = e => {
       }), s()
     };
     return (0, r.jsx)(l.ua7, {
+      "data-migration-pending": true,
       text: i.name,
       children: e => (0, r.jsx)(l.P3F, P(N({}, e), {
         className: A.gameClickable,

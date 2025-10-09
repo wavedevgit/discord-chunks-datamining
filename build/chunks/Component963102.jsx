@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,12 +40,12 @@ function B(e) {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: s
+    handleTransition: a
   } = e;
   return (0, r.jsx)(C.Z.Title, {
-    onClick: () => s(t),
+    onClick: () => a(t),
     wrapperClassName: N.tabWrapper,
-    className: a()(N.tab, {
+    className: s()(N.tab, {
       [N.selected]: l
     }),
     children: n
@@ -56,7 +56,7 @@ function A(e) {
   let {
     tab: t,
     selected: n,
-    displayText: s,
+    displayText: a,
     handleTransition: i
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), m = e => {
     clearTimeout(g), h(setTimeout(() => {
@@ -115,12 +115,12 @@ function A(e) {
           onClick: () => i(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: a()(N.tab, {
+          className: s()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
             className: N.tabWithChevron,
-            children: [s, g ? (0, r.jsx)(c.u04, {
+            children: [a, g ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
             }) : (0, r.jsx)(c.CJ0, {
@@ -147,7 +147,7 @@ function R(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: s,
+    onClose: a,
     selectedTab: p,
     handleTransition: f
   } = e, T = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
@@ -167,7 +167,7 @@ function R(e) {
     tab: j.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
-  let D = n ? O.DR : s,
+  let D = n ? O.DR : a,
     M = p === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     W = l.useCallback(() => {
       t && (D(), (0, u.Ou)()), (0, b.Y)({
@@ -190,7 +190,7 @@ function R(e) {
     theme: T,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: a()(e, N.headerBar, {
+      className: s()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,

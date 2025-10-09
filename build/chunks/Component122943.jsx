@@ -89,6 +89,7 @@ function T(e) {
     channel: t,
     className: o()(b.icon, f)
   }) : (0, r.jsx)(s.ua7, {
+    "data-migration-pending": true,
     text: A,
     "aria-label": (0, c.ZP)({
       channel: t

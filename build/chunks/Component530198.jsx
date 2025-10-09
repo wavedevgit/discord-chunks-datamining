@@ -85,6 +85,7 @@ function _(e) {
         platformName: null != (n = null == a ? true : a.name) ? n : null == g || null == (t = g.application) ? true : t.name
       })
     }), (0, r.jsx)(d.ua7, {
+      "data-migration-pending": true,
       text: h.intl.string(h.t.N86XcH),
       children: e => (0, r.jsx)("div", j(b({}, e), {
         children: (0, r.jsx)(d.hU, {

@@ -2,8 +2,8 @@
 /** chunk id: 190157, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Dp: () => s,
-  gT: () => a
+  Dp: () => a,
+  gT: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,31 +15,31 @@ let l = e => {
       currentTarget: l
     } = e;
     l.style.pointerEvents = "none";
-    let s = document.elementFromPoint(n, r);
+    let a = document.elementFromPoint(n, r);
     return l.style.pointerEvents = "auto", {
-      elementBelow: s,
-      button: null != (t = null == s ? true : s.closest("button")) ? t : null
+      elementBelow: a,
+      button: null != (t = null == a ? true : a.closest("button")) ? t : null
     }
   },
-  s = e => {
+  a = e => {
     var t;
     return null != (t = null == e ? true : e.endsWith(".riv")) && t
   },
-  a = e => {
+  s = e => {
     let {
       isCustomCursorEnabled: t,
       className: n,
-      riveEventTargetRef: s
-    } = e, a = e => {
+      riveEventTargetRef: a
+    } = e, s = e => {
       let {
         button: n
       } = l(e), r = e.currentTarget;
       t ? r.style.cursor = null != n ? "var(--custom-cursor-pointer)" : "var(--custom-cursor)" : r.style.cursor = null != n ? "pointer" : "default"
     };
     return (0, r.jsx)("div", {
-      ref: s,
+      ref: a,
       className: n,
-      onMouseMove: a,
+      onMouseMove: s,
       onMouseDown: e => {
         let {
           button: t

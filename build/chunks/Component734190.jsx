@@ -138,6 +138,7 @@ function L(e) {
     return null != (e = (0, h.KS)(t)) ? e : c.or_
   }, [t]), l = (0, h.bT)(t);
   return (0, r.jsx)(c.ua7, {
+    "data-migration-pending": true,
     text: l,
     delay: 500,
     children: e => (0, r.jsx)("div", R(A({}, e), {

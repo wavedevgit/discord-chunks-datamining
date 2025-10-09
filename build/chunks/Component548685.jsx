@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -36,7 +36,7 @@ let P = e => {
   var t;
   let {
     isLoading: n,
-    title: s,
+    title: a,
     sortedSkuIds: P,
     numVisibleItems: N,
     hasSorting: B,
@@ -65,15 +65,16 @@ let P = e => {
     location: "FeedBlock"
   }).showCardsV2;
   return null == w ? null : (0, r.jsxs)("div", {
-    className: a()(I.popularPicksSection, I.centeredSection),
+    className: s()(I.popularPicksSection, I.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: I.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: I.headerLeft,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
-          children: s
+          children: a
         }), z && (0, r.jsx)(o.ua7, {
+          "data-migration-pending": true,
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
           "aria-label": j.intl.string(j.t["3taPdn"]),
@@ -115,7 +116,7 @@ let P = e => {
           }
         })]
       }), B ? (0, r.jsxs)("div", {
-        className: a()(I.headerRight, {
+        className: s()(I.headerRight, {
           [k.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
@@ -127,7 +128,7 @@ let P = e => {
             options: U,
             select: et,
             className: I.sortSelect,
-            popoutClassName: a()({
+            popoutClassName: s()({
               [k.shopTakeOver]: F
             }),
             isSelected: e => e === D,

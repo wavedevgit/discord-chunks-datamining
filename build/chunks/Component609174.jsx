@@ -66,6 +66,7 @@ let m = Chunk185514.Nx.binds["0"],
     return (0, r.jsxs)("div", {
       className: f.backForwardButtons,
       children: [(0, r.jsx)(o.ua7, {
+        "data-migration-pending": true,
         "aria-label": p.intl.string(p.t.B9vzIC),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: i,
@@ -87,6 +88,7 @@ let m = Chunk185514.Nx.binds["0"],
           })
         }))
       }), (0, r.jsx)(o.ua7, {
+        "data-migration-pending": true,
         "aria-label": p.intl.string(p.t["9KJ29f"]),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: s,

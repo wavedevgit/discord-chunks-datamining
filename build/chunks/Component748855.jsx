@@ -39,6 +39,7 @@ function f(e) {
       className: p.itemText,
       children: t
     }), g && null != m && (0, i.jsx)(c.ua7, {
+      "data-migration-pending": true,
       text: C && !f ? d.intl.string(d.t.YSDH9v) : true,
       children: e => {
         var t, n;

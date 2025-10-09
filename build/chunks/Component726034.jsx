@@ -230,6 +230,7 @@ function X(e) {
     })
   }, []);
   return (0, r.jsx)(f.ua7, {
+    "data-migration-pending": true,
     text: k.intl.string(j.default.c9MBEB),
     children: e => "with-text" === t ? (0, r.jsx)(u.zxk, F(B({}, e), {
       variant: "secondary",

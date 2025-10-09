@@ -23,24 +23,24 @@ let p = e => {
     } = (0, l.cj)([c.Z], () => c.Z.getAnalytics()), r = (e => {
       switch (e) {
         case u.AW.ORBS:
-          return s.Z.COLLECTIBLES_SHOP_ORBS_TAB;
+          return a.Z.COLLECTIBLES_SHOP_ORBS_TAB;
         case u.AW.HOME:
-          return s.Z.COLLECTIBLES_SHOP_HOME_SCREEN;
+          return a.Z.COLLECTIBLES_SHOP_HOME_SCREEN;
         case u.AW.BUNDLES:
-          return s.Z.COLLECTIBLES_SHOP_BUNDLES_TAB;
+          return a.Z.COLLECTIBLES_SHOP_BUNDLES_TAB;
         case u.AW.AVATAR_DECORATIONS:
-          return s.Z.COLLECTIBLES_SHOP_AVATAR_DECORATIONS_TAB;
+          return a.Z.COLLECTIBLES_SHOP_AVATAR_DECORATIONS_TAB;
         case u.AW.PROFILE_EFFECTS:
-          return s.Z.COLLECTIBLES_SHOP_PROFILE_EFFECTS_TAB;
+          return a.Z.COLLECTIBLES_SHOP_PROFILE_EFFECTS_TAB;
         case u.AW.NAMEPLATES:
-          return s.Z.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
+          return a.Z.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
         case u.AW.CATALOG:
-          return s.Z.COLLECTIBLES_SHOP_FULLSCREEN
+          return a.Z.COLLECTIBLES_SHOP_FULLSCREEN
       }
     })(e), {
       analyticsLocations: i,
       newestAnalyticsLocation: o
-    } = (0, a.ZP)([...n, s.Z.COLLECTIBLES_SHOP, r]);
+    } = (0, s.ZP)([...n, a.Z.COLLECTIBLES_SHOP, r]);
     return {
       analyticsSource: t,
       analyticsLocations: i,
@@ -48,24 +48,24 @@ let p = e => {
       currentTabLocation: r
     }
   },
-  f = (e, t, n, l, s) => {
+  f = (e, t, n, l, a) => {
     let {
-      analyticsLocations: a,
+      analyticsLocations: s,
       analyticsSource: o,
       currentTabLocation: c,
       newestAnalyticsLocation: g
     } = p(t);
     r.useEffect(() => {
       if (l !== u.f7.VISIBLE || g !== c) return;
-      let r = t === u.AW.CATALOG ? s : o;
+      let r = t === u.AW.CATALOG ? a : o;
       i.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
-        location_stack: a,
+        location_stack: s,
         source: r,
         page_session_id: e,
         page_type: t === u.AW.CATALOG ? "full" : t,
         category: t === u.AW.HOME ? true : n
       })
-    }, [a, e, t, n, c, l, s, o, g])
+    }, [s, e, t, n, c, l, a, o, g])
   },
   C = (e, t) => {
     let {

@@ -380,6 +380,7 @@ function er() {
         let [t, n, i] = e;
         return (0, a.jsx)(r.Fragment, {
           children: (0, a.jsx)(m.ua7, {
+            "data-migration-pending": true,
             position: "left",
             text: i === y.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
             children: e => {
@@ -442,6 +443,7 @@ let ei = Chunk647438.memo(function(e) {
         }]), e
       }, q({}, e)))
     }, +Chunk70956.Z.Millis.SECOND), () => clearInterval(Chunk120356.current)), []), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      "data-migration-pending": true,
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
       children: n => (0, a.jsx)("div", Y(q({}, n), {
@@ -530,6 +532,7 @@ let ei = Chunk647438.memo(function(e) {
     }, []), (0, Chunk951288.jsxs)("div", {
       className: Chunk454741.panelGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Enables a red border around click zones to help with debugging.",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -541,6 +544,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -552,6 +556,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Enables a border the overlay window",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -563,6 +568,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -574,6 +580,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -586,6 +593,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Creates a widget that has a clickzone inside of it, which will show/hide every few seconds.",
         children: n => (0, a.jsx)("div", Y(q({}, n), {
@@ -597,6 +605,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Creates a widget that shows the overlay's window performance metrics.",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -620,6 +629,7 @@ let ei = Chunk647438.memo(function(e) {
       t = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getRunningGames()).filter(t => null == e[t.pid]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [exports.length > 0 && (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "Games that are running but not tracked by the overlay",
         children: e => (0, a.jsx)("div", Y(q({}, e), {
@@ -641,6 +651,7 @@ let ei = Chunk647438.memo(function(e) {
           })
         }))
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        "data-migration-pending": true,
         position: "left",
         text: "The current running games process information",
         children: t => (0, a.jsx)("div", Y(q({}, t), {
@@ -680,6 +691,7 @@ let ei = Chunk647438.memo(function(e) {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
     return (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      "data-migration-pending": true,
       position: "left",
       text: "Override the overlay render mode",
       children: e => (0, a.jsx)("div", Y(q({}, e), {

@@ -113,6 +113,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
       }), I === O.Wq.PREVIEW && null != W && (0, n.jsx)("div", {
         className: S.legacyUsernameBadgeContainer,
         children: (0, n.jsx)(c.ua7, {
+          "data-migration-pending": true,
           position: "top",
           text: b.intl.formatToPlainString(b.t.bhrgkJ, {
             legacyUsername: W

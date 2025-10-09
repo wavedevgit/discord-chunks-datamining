@@ -33,11 +33,11 @@ let C = e => {
     O = l.useRef(null),
     y = null == m ? true : m.bodyText,
     T = (0, o.sp)();
-  return (0, r.jsx)(s.$, {
+  return (0, r.jsx)(a.$, {
     innerRef: O,
     onChange: v,
     threshold: 0,
-    children: (0, r.jsxs)(a.P3F, {
+    children: (0, r.jsxs)(s.P3F, {
       className: f.featuredBlock,
       innerRef: O,
       style: function(e) {
@@ -72,13 +72,13 @@ let C = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(a.IGR, {
+      children: [null != b && (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: b,
         className: f.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: f.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(a.X6q, {
+        children: null != y && (0, r.jsx)(s.X6q, {
           lineClamp: 4,
           className: f.featuredBlockBodyText,
           style: {
@@ -89,7 +89,7 @@ let C = e => {
         })
       }), (0, r.jsx)("div", {
         className: f.featuredBlockButtonContainer,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(s.zxk, {
           variant: "overlay-primary",
           text: p.intl.string(p.t.jVcuVV),
           onClick: e => {

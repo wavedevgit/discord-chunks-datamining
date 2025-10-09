@@ -256,6 +256,7 @@ function Z(e) {
       className: o()(w.activityContainer, $ && w.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.ua7, {
+      "data-migration-pending": true,
       tooltipContentClassName: o()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
       delay: N.X,
       text: en(),

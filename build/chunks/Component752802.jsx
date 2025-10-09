@@ -89,6 +89,7 @@ function L(e) {
     participant: t
   } = e;
   return (0, i.jsx)(u.ua7, {
+    "data-migration-pending": true,
     text: P.intl.string(P.t["4EGMWF"]),
     children: e => {
       var {
@@ -124,6 +125,7 @@ function M(e) {
     c.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(u.ua7, {
+    "data-migration-pending": true,
     text: h ? P.intl.string(P.t.YqAjX1) : P.intl.string(P.t["w4m94+"]),
     children: e => {
       var {
@@ -188,6 +190,7 @@ function z(e) {
     }), !t && (0, i.jsx)("div", {
       className: D.watchActionContainer,
       children: (0, i.jsx)(u.ua7, {
+        "data-migration-pending": true,
         text: d,
         children: e => (0, i.jsxs)(u.P3F, R(A({}, e), {
           className: D.watchButton,
@@ -245,6 +248,7 @@ function z(e) {
           }), (0, i.jsx)(M, {
             participant: n
           }), (0, i.jsx)(u.ua7, {
+            "data-migration-pending": true,
             text: P.intl.string(P.t["3D5yo6"]),
             children: e => {
               var {

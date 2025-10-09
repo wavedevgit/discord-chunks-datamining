@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  c = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk45114 = require("./45114.js"),
@@ -36,7 +36,7 @@ function w(e) {
     transitionState: n,
     onClose: l,
     guildId: w
-  } = e, I = (0, d.Dt)(), S = (0, a.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, b.Z)(null == S ? true : S.id), T = (0, x.ZP)(w), L = i.useRef(h.ZP.ackMessageId(w, N.W.GUILD_EVENT)), _ = (0, C.Z)();
+  } = e, I = (0, d.Dt)(), S = (0, c.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, b.Z)(null == S ? true : S.id), T = (0, x.ZP)(w), L = i.useRef(h.ZP.ackMessageId(w, N.W.GUILD_EVENT)), _ = (0, C.Z)();
   return i.useEffect(() => {
     T.forEach(e => f.Z.getGuildEventUserCounts(w, e.id, [])), f.Z.getGuildEventsForCurrentUser(w)
   }, [T, w]), (0, u.ZP)(() => {
@@ -46,7 +46,7 @@ function w(e) {
       guild_events_count: T.length
     })
   }), i.useEffect(() => {
-    c()(T).map(e => e.creator_id).filter(v.lm).uniq().forEach(e => {
+    a()(T).map(e => e.creator_id).filter(v.lm).uniq().forEach(e => {
       g.Z.requestMember(w, e)
     })
   }, [w, T]), i.useEffect(() => {

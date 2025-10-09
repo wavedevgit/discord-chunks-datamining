@@ -80,6 +80,7 @@ let _ = Chunk647438.memo(function(e) {
     }))
   }, [x, _, t]);
   return null == _ ? null : (0, r.jsx)(s.ua7, {
+    "data-migration-pending": true,
     forceOpen: I,
     text: E,
     color: s.FGA.BRAND,

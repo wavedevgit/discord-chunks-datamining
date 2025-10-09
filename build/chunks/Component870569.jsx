@@ -24,8 +24,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     className: O,
     redGlow: v,
     orangeGlow: y,
-    tooltipClassName: h,
-    onMouseEnter: g,
+    tooltipClassName: g,
+    onMouseEnter: h,
     onMouseLeave: j,
     "aria-label": x,
     "aria-checked": N,
@@ -44,7 +44,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     color: "currentColor"
   }) : f;
   return (0, r.jsx)(s.ua7, {
-    tooltipClassName: h,
+    "data-migration-pending": true,
+    tooltipClassName: g,
     text: n,
     "aria-label": x,
     color: P,
@@ -56,7 +57,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
       var n, s, {
           onClick: f,
           onMouseEnter: m,
-          onMouseLeave: h
+          onMouseLeave: g
         } = e,
         x = function(e, t) {
           if (null == e) return {};
@@ -109,10 +110,10 @@ let d = Chunk647438.forwardRef(function(e, t) {
           null != f && f(), null != d && d(e)
         },
         onMouseEnter: () => {
-          null == m || m(), null == g || g()
+          null == m || m(), null == h || h()
         },
         onMouseLeave: () => {
-          null == h || h(), null == j || j()
+          null == g || g(), null == j || j()
         },
         onContextMenu: l,
         role: S,

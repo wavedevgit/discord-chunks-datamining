@@ -86,6 +86,7 @@ function c(e) {
             variant: d ? "heading-xl/semibold" : "heading-md/medium",
             className: d ? s.header : s.secondaryHeader,
             children: [t, u && (0, i.jsx)(a.ua7, {
+              "data-migration-pending": true,
               text: o.intl.string(o.t.VFuFur),
               children: e => {
                 var t, n;

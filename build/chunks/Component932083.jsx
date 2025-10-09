@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
 let o = e => {
   let {
     skuId: t
-  } = e, n = (0, s.LJ)(t), o = (0, a.To)(n);
+  } = e, n = (0, a.LJ)(t), o = (0, s.To)(n);
   return (0, r.jsx)(l.Text, {
     variant: "text-lg/bold",
     className: i.productName,

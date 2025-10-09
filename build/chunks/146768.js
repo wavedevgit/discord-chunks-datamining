@@ -20,10 +20,10 @@ function s(e) {
       participantCount: d
     },
     context: g
-  } = e, p = (0, r.e7)([o.Z, a.Z], () => {
+  } = e, p = (0, r.e7)([o.Z, c.Z], () => {
     var e;
-    return o.Z.getGuild(null == (e = a.Z.getChannel(n)) ? true : e.getGuildId())
-  }, [n]), h = (0, r.e7)([c.Z], () => c.Z.getStageInstanceByChannel(n), [n]), m = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), j = null != h ? m : u, f = (null != h ? v : d) - j.length;
+    return o.Z.getGuild(null == (e = c.Z.getChannel(n)) ? true : e.getGuildId())
+  }, [n]), h = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(n), [n]), m = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), j = null != h ? m : u, f = (null != h ? v : d) - j.length;
   return {
     channelId: n,
     guild: null != p ? p : t,

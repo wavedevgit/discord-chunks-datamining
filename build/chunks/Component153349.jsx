@@ -172,6 +172,7 @@ let R = Chunk647438.memo(function(e) {
       }), (0, r.jsxs)("div", {
         className: T.buttonContainer,
         children: [(0, r.jsx)(d.ua7, {
+          "data-migration-pending": true,
           text: D ? Z.intl.string(Z.t.h9rsTU) : Z.intl.string(Z.t.f0T7hI),
           children: e => (0, r.jsx)("div", N(P({}, e), {
             children: (0, r.jsx)(d.hU, {
@@ -183,6 +184,7 @@ let R = Chunk647438.memo(function(e) {
             })
           }))
         }), (0, r.jsx)(d.ua7, {
+          "data-migration-pending": true,
           text: Z.intl.string(Z.t.moABMz),
           children: e => (0, r.jsx)("div", N(P({}, e), {
             children: (0, r.jsx)(d.hU, {

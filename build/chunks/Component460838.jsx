@@ -66,8 +66,9 @@ function E(e) {
     onClick: t
   } = e, {
     canManageAllEvents: i
-  } = (0, _.XJ)(n), l = (0, c.e7)([p.Z], () => !n.isGuildVocal() || p.Z.can(j.Plq.CONNECT, n), [n]), b = r.useMemo(() => (0, d.Z)(n), [n]), g = (0, u.KS)(n);
+  } = (0, _.XJ)(n), l = (0, c.e7)([p.Z], () => !n.isGuildVocal() || p.Z.can(j.Plq.CONNECT, n), [n]), g = r.useMemo(() => (0, d.Z)(n), [n]), m = (0, u.KS)(n);
   return (0, a.jsx)(s.ua7, {
+    "data-migration-pending": true,
     text: k.intl.string(k.t.nHjY9P),
     shouldShow: !l && null != t,
     children: e => (0, a.jsxs)(s.P3F, N(y({}, e), {
@@ -77,9 +78,10 @@ function E(e) {
       }),
       onClick: t,
       children: [(0, a.jsx)(s.ua7, {
+        "data-migration-pending": true,
         text: k.intl.string(k.t["48WXaW"]),
-        shouldShow: i && b && l && null != t,
-        children: e => null != g ? (0, a.jsx)(g, N(y({}, e), {
+        shouldShow: i && g && l && null != t,
+        children: e => null != m ? (0, a.jsx)(m, N(y({}, e), {
           color: "currentColor",
           size: "custom",
           width: 20,
@@ -119,7 +121,7 @@ function P(e) {
     }), (0, a.jsx)(s.Text, {
       className: l ? w.externalLocation : w.channelLocation,
       variant: "text-sm/normal",
-      children: (0, b.m)(r, true)
+      children: (0, g.m)(r, true)
     })]
   })
 }
@@ -137,10 +139,10 @@ function Z(e) {
     onJoinClick: u,
     onRsvpClick: _,
     onStartClick: p,
-    onInviteClick: b,
-    onEndClick: h,
+    onInviteClick: g,
+    onEndClick: b,
     onJoinGuildClick: f
-  } = e, v = (0, g.Q)(n, t), x = (0, m.Zs)({
+  } = e, v = (0, m.Q)(n, t), x = (0, h.Zs)({
     entityType: t,
     isJoined: i,
     isActive: r,
@@ -151,14 +153,14 @@ function Z(e) {
     onJoinClick: u,
     onRsvpClick: _,
     onStartClick: p,
-    onInviteClick: b,
-    onEndClick: h,
+    onInviteClick: g,
+    onEndClick: b,
     onJoinGuildClick: f
   });
   return (0, a.jsxs)(s.hE2, {
     fullWidth: false,
     size: "sm",
-    children: [null != d ? (0, a.jsx)(m.b5, {
+    children: [null != d ? (0, a.jsx)(h.b5, {
       onClick: d
     }) : null, null == x ? true : x.map((e, n) => (0, a.jsx)(s.zxk, y({}, e), n))]
   })
@@ -176,9 +178,9 @@ function O(e) {
     imageLocation: u = 0,
     imageSource: _,
     isActive: p,
-    isUserLurking: b,
-    isJoined: g = false,
-    isMember: m = false,
+    isUserLurking: g,
+    isJoined: m = false,
+    isMember: h = false,
     speakers: j,
     speakerCount: k,
     rsvped: y,
@@ -200,8 +202,8 @@ function O(e) {
     recurrenceId: M
   } = e, X = c === I.WX.EXTERNAL, J = X ? e => e.stopPropagation() : true, V = [];
   if (null != G && null != event) {
-    let e = (0, h.Ho)(G);
-    V = (0, h.PJ)(4, e, new Date(z.scheduled_start_time))
+    let e = (0, b.Ho)(G);
+    V = (0, b.PJ)(4, e, new Date(z.scheduled_start_time))
   }
   let q = V.length > 0;
   return (0, a.jsxs)(s.kL8, {
@@ -209,8 +211,8 @@ function O(e) {
     onClick: () => null == A ? true : A(M),
     onContextMenu: O,
     className: o()(w.card, {
-      [w.joined]: g,
-      [w.lurking]: b
+      [w.joined]: m,
+      [w.lurking]: g
     }, n),
     children: [(0, a.jsxs)("div", {
       className: o()(w.padding, {
@@ -249,9 +251,9 @@ function O(e) {
             channel: i,
             entityType: c,
             isActive: p,
-            isJoined: g,
-            isUserLurking: b,
-            isMember: m,
+            isJoined: m,
+            isUserLurking: g,
+            isMember: h,
             rsvped: y,
             canInvite: N,
             onContextMenu: O,

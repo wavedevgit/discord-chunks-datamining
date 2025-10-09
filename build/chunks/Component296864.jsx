@@ -31,14 +31,14 @@ function f(e) {
   } = e, {
     guild_id: k,
     privacy_level: E
-  } = f, b = (0, a.e7)([h.Z], () => h.Z.getChannel(f.channel_id), [f]), w = (0, a.e7)([v.Z], () => v.Z.getGuild(k), [k]), {
+  } = f, b = (0, r.e7)([h.Z], () => h.Z.getChannel(f.channel_id), [f]), w = (0, r.e7)([v.Z], () => v.Z.getGuild(k), [k]), {
     canManageGuildEvent: I
-  } = (0, u.XJ)(null != b ? b : w), S = I(f), O = (0, a.e7)([o.Z], () => o.Z.isLurking(k), [k]), Z = f.entity_type === C.WX.STAGE_INSTANCE, [_, T] = l.useState(Z), [P, {
+  } = (0, u.XJ)(null != b ? b : w), S = I(f), O = (0, r.e7)([o.Z], () => o.Z.isLurking(k), [k]), Z = f.entity_type === p.WX.STAGE_INSTANCE, [_, T] = l.useState(Z), [P, {
     loading: L,
     error: A
-  }] = (0, m.Z)();
+  }] = (0, g.Z)();
   if (!S) return null;
-  let G = E === C.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
+  let G = E === p.j8.PUBLIC ? C.intl.string(C.t.HhlaLC) : C.intl.string(C.t.GI3xXV),
     X = () => {
       null == y || y(), N(), (0, d.Ku)(false)
     },
@@ -47,13 +47,13 @@ function f(e) {
         onSuccess: X
       })
     };
-  return (0, i.jsxs)(r.Modal, {
+  return (0, i.jsxs)(a.Modal, {
     transitionState: t,
     onClose: N,
     title: f.name,
-    subtitle: p.intl.format(p.t.UMajoq, {
+    subtitle: C.intl.format(C.t.UMajoq, {
       privacyLevel: G,
-      privacyLevelHook: (e, n) => E !== C.j8.PUBLIC ? null : (0, i.jsxs)("div", {
+      privacyLevelHook: (e, n) => E !== p.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: j.privacyLevel,
         children: [(0, i.jsx)(c.enf, {
           size: "xs",
@@ -67,13 +67,13 @@ function f(e) {
     }),
     actions: [{
       variant: "secondary",
-      text: p.intl.string(p.t.CZGqeX),
+      text: C.intl.string(C.t.CZGqeX),
       onClick: () => {
         N()
       }
     }, {
       variant: "active",
-      text: p.intl.string(p.t.cK1GGR),
+      text: C.intl.string(C.t.cK1GGR),
       onClick: R,
       loading: L
     }],
@@ -82,7 +82,7 @@ function f(e) {
       channel: b,
       name: f.name,
       description: null != (n = f.description) ? n : true,
-      imageSource: (0, g.Z)(f),
+      imageSource: (0, m.Z)(f),
       isActive: false,
       isUserLurking: O,
       speakers: [],
@@ -93,7 +93,7 @@ function f(e) {
       className: j.verticalSpacing,
       checked: _,
       onChange: e => T(e),
-      label: p.intl.string(p.t.dGNtgI),
+      label: C.intl.string(C.t.dGNtgI),
       labelType: "secondary"
     }), null != A && null != A.getAnyErrorMessage() ? (0, i.jsx)(c.Text, {
       color: "text-danger",
