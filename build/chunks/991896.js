@@ -8,24 +8,24 @@ var Chunk570140 = require("./570140.js"),
   Chunk607802 = require("./607802.js");
 let a = {
   addSearchHistoryItem: function(e, t) {
-    let n = (0, i.Tm)(e);
-    r.Z.dispatch({
+    let n = (0, i.BX)(e);
+    null != n && r.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_ADD_ITEM",
       id: n,
       query: t
     })
   },
   removeSearchHistoryItem: function(e, t) {
-    let n = (0, i.Tm)(e);
-    r.Z.dispatch({
+    let n = (0, i.BX)(e);
+    null != n && r.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_REMOVE_ITEM",
       id: n,
       query: t
     })
   },
   clearSearchHistory: function(e) {
-    let t = (0, i.Tm)(e);
-    r.Z.dispatch({
+    let t = (0, i.BX)(e);
+    null != t && r.Z.dispatch({
       type: "SEARCH_HISTORY_WEB_CLEAR_ITEMS",
       id: t
     })

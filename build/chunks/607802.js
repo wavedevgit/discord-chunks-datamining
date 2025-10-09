@@ -2,32 +2,33 @@
 /** chunk id: 607802, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $G: () => D,
-  AH: () => S,
-  BU: () => G,
-  Fr: () => Y,
-  Fz: () => H,
-  Jl: () => k,
-  Ko: () => N,
-  Pe: () => W,
-  R6: () => K,
-  Tm: () => v,
-  UP: () => L,
-  Vj: () => C,
-  WU: () => V,
-  X$: () => X,
-  X3: () => z,
-  b7: () => T,
-  cl: () => B,
-  g9: () => M,
-  i3: () => U,
-  jW: () => w,
-  kG: () => F,
-  nI: () => x,
-  nl: () => q,
-  qc: () => j,
-  s5: () => I,
-  zH: () => A
+  $G: () => M,
+  AH: () => N,
+  BU: () => F,
+  BX: () => S,
+  Fr: () => z,
+  Fz: () => K,
+  Jl: () => B,
+  Ko: () => w,
+  Pe: () => q,
+  R6: () => X,
+  Tm: () => T,
+  UP: () => j,
+  Vj: () => P,
+  WU: () => W,
+  X$: () => $,
+  X3: () => Q,
+  b7: () => C,
+  cl: () => V,
+  g9: () => U,
+  i3: () => Z,
+  jW: () => x,
+  kG: () => Y,
+  nI: () => k,
+  nl: () => J,
+  qc: () => G,
+  s5: () => A,
+  zH: () => R
 }), require("./35282.js"), require("./388685.js"), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./539854.js"), require("./804061.js"), require("./704826.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711);
@@ -38,18 +39,20 @@ var Chunk349033 = require("./349033.js"),
   Chunk984933 = require("./984933.js"),
   Chunk731290 = require("./731290.js"),
   Chunk699516 = require("./699516.js"),
+  Chunk944486 = require("./944486.js"),
   Chunk246946 = require("./246946.js"),
   Chunk594174 = require("./594174.js"),
   Chunk709054 = require("./709054.js"),
   Chunk51144 = require("./51144.js"),
   Chunk748610 = require("./748610.js"),
+  Chunk945577 = require("./945577.js"),
   Chunk731267 = require("./731267.js"),
   Chunk532428 = require("./532428.js");
 require("./723642.js");
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,77 +61,88 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e) {
-  switch (e.type) {
-    case E.aib.GUILD:
-      return e.guildId;
-    case E.aib.GUILD_CHANNEL:
-    case E.aib.CHANNEL:
-    case E.aib.THREAD:
-      return e.channelId;
-    case E.aib.DMS:
-      return e.type;
-    case E.aib.FAVORITES:
-      return E.I_8
-  }
-}
-
-function I(e) {
-  switch (e.type) {
-    case E.aib.GUILD_CHANNEL:
-    case E.aib.GUILD:
-    case E.aib.THREAD:
-      return e.guildId;
-    case E.aib.CHANNEL:
-      var t;
-      let n = s.Z.getChannel(e.channelId);
-      return null != (t = null == n ? true : n.guild_id) ? t : null;
-    case E.aib.FAVORITES:
-      return E.I_8;
-    default:
-      return null
-  }
-}
-
 function T(e) {
-  return e.type === E.aib.GUILD || e.type === E.aib.GUILD_CHANNEL || e.type === E.aib.THREAD
+  switch (e.type) {
+    case y.aib.GUILD:
+      return e.guildId;
+    case y.aib.GUILD_CHANNEL:
+    case y.aib.CHANNEL:
+    case y.aib.THREAD:
+      return e.channelId;
+    case y.aib.DMS:
+      return e.type;
+    case y.aib.FAVORITES:
+      return y.I_8
+  }
 }
 
 function S(e) {
+  let t = (0, g.N3)({
+    location: "getSearchHistoryStateId"
+  });
+  if (e.type === y.aib.DMS && t) {
+    var n;
+    return null != (n = d.Z.getChannelId(y.ME)) ? n : null
+  }
+  return T(e)
+}
+
+function A(e) {
   switch (e.type) {
-    case E.aib.GUILD_CHANNEL:
-    case E.aib.CHANNEL:
-    case E.aib.THREAD:
+    case y.aib.GUILD_CHANNEL:
+    case y.aib.GUILD:
+    case y.aib.THREAD:
+      return e.guildId;
+    case y.aib.CHANNEL:
+      var t;
+      let n = s.Z.getChannel(e.channelId);
+      return null != (t = null == n ? true : n.guild_id) ? t : null;
+    case y.aib.FAVORITES:
+      return y.I_8;
+    default:
+      return null
+  }
+}
+
+function C(e) {
+  return e.type === y.aib.GUILD || e.type === y.aib.GUILD_CHANNEL || e.type === y.aib.THREAD
+}
+
+function N(e) {
+  switch (e.type) {
+    case y.aib.GUILD_CHANNEL:
+    case y.aib.CHANNEL:
+    case y.aib.THREAD:
       return e.channelId;
     default:
       return null
   }
 }
 
-function A(e) {
+function R(e) {
   switch (e) {
-    case E.QIO.MOST_RELEVANT:
+    case y.QIO.MOST_RELEVANT:
       return {
         sort_by: "relevance", sort_order: "desc"
       };
-    case E.QIO.OLDEST:
+    case y.QIO.OLDEST:
       return {
         sort_by: "timestamp", sort_order: "asc"
       };
-    case E.QIO.NEWEST:
+    case y.QIO.NEWEST:
     default:
       return {
         sort_by: "timestamp", sort_order: "desc"
@@ -136,92 +150,92 @@ function A(e) {
   }
 }
 
-function C(e) {
-  return null == e.sort_by || null == e.sort_order ? E.QIO.NEWEST : "relevance" === e.sort_by ? E.QIO.MOST_RELEVANT : "asc" === e.sort_order ? E.QIO.OLDEST : E.QIO.NEWEST
+function P(e) {
+  return null == e.sort_by || null == e.sort_order ? y.QIO.NEWEST : "relevance" === e.sort_by ? y.QIO.MOST_RELEVANT : "asc" === e.sort_order ? y.QIO.OLDEST : y.QIO.NEWEST
 }
 
-function N(e) {
+function w(e) {
   switch (e) {
-    case E.dCx.FILTER_FROM:
-      return b.intl.string(b.t.E466pK);
-    case E.dCx.FILTER_MENTIONS:
-      return b.intl.string(b.t.BYvFWl);
-    case E.dCx.FILTER_HAS:
-      return b.intl.string(b.t.bhSYbW);
-    case E.dCx.FILTER_BEFORE:
-    case E.dCx.FILTER_ON:
-    case E.dCx.FILTER_AFTER:
-      return b.intl.string(b.t.Zbbc1N);
-    case E.dCx.FILTER_IN:
-      return b.intl.string(b.t["GpM+//"]);
-    case E.dCx.FILTER_FILE_TYPE:
-      return b.intl.string(b.t.FXcAFR);
-    case E.dCx.FILTER_FILE_NAME:
-      return b.intl.string(b.t.uAbFDA);
-    case E.dCx.FILTER_PINNED:
-      return b.intl.string(b.t.UJxL3d);
-    case E.dCx.FILTER_AUTHOR_TYPE:
-      return b.intl.string(b.t.qCQzBg)
+    case y.dCx.FILTER_FROM:
+      return O.intl.string(O.t.E466pK);
+    case y.dCx.FILTER_MENTIONS:
+      return O.intl.string(O.t.BYvFWl);
+    case y.dCx.FILTER_HAS:
+      return O.intl.string(O.t.bhSYbW);
+    case y.dCx.FILTER_BEFORE:
+    case y.dCx.FILTER_ON:
+    case y.dCx.FILTER_AFTER:
+      return O.intl.string(O.t.Zbbc1N);
+    case y.dCx.FILTER_IN:
+      return O.intl.string(O.t["GpM+//"]);
+    case y.dCx.FILTER_FILE_TYPE:
+      return O.intl.string(O.t.FXcAFR);
+    case y.dCx.FILTER_FILE_NAME:
+      return O.intl.string(O.t.uAbFDA);
+    case y.dCx.FILTER_PINNED:
+      return O.intl.string(O.t.UJxL3d);
+    case y.dCx.FILTER_AUTHOR_TYPE:
+      return O.intl.string(O.t.qCQzBg)
   }
 }
-let R = {
+let D = {
   [Chunk981631.dCx.FILTER_BEFORE]: true,
   [Chunk981631.dCx.FILTER_AFTER]: true,
   [Chunk981631.dCx.FILTER_ON]: true
 };
 
-function P(e) {
-  let t = g.ZP[e],
+function L(e) {
+  let t = b.ZP[e],
     n = null != t ? t.queryKey : null;
   return null == n && (n = "content"), n
 }
 
-function w(e, t) {
+function x(e, t) {
   if (c.Z.didAgree(t)) {
-    let t = f.default.getCurrentUser();
+    let t = _.default.getCurrentUser();
     null != t && (e.include_nsfw = null == t.nsfwAllowed || t.nsfwAllowed)
   }
 }
 
-function D(e) {
+function M(e) {
   let t = {};
   for (let [n, r] of(e.forEach(e => {
       let {
         type: n
       } = e;
-      if (E.TNx.test(n)) return;
+      if (y.TNx.test(n)) return;
       switch (n) {
-        case E.dCx.ANSWER_BEFORE:
-        case E.dCx.ANSWER_ON:
-        case E.dCx.ANSWER_AFTER:
+        case y.dCx.ANSWER_BEFORE:
+        case y.dCx.ANSWER_ON:
+        case y.dCx.ANSWER_AFTER:
           let r = e.getData("start"),
             i = e.getData("end");
-          r && (t.min_id = _.default.fromTimestamp(r)), i && (t.max_id = _.default.fromTimestamp(i));
+          r && (t.min_id = p.default.fromTimestamp(r)), i && (t.max_id = p.default.fromTimestamp(i));
           return
       }
-      let a = P(n);
+      let a = L(n);
       null == t[a] && (t[a] = new Set);
       let o = t[a];
       switch (n) {
-        case E.dCx.ANSWER_USERNAME_FROM:
-        case E.dCx.ANSWER_USERNAME_MENTIONS:
+        case y.dCx.ANSWER_USERNAME_FROM:
+        case y.dCx.ANSWER_USERNAME_MENTIONS:
           o.add(e.getData("userId"));
           break;
-        case E.dCx.ANSWER_FILE_TYPE:
-        case E.dCx.ANSWER_FILE_NAME:
+        case y.dCx.ANSWER_FILE_TYPE:
+        case y.dCx.ANSWER_FILE_NAME:
           o.add(e.getMatch(1));
           break;
-        case E.dCx.ANSWER_IN:
+        case y.dCx.ANSWER_IN:
           var s;
           for (let t of null != (s = e.getData("channelIds")) ? s : []) o.add(t);
           break;
-        case E.dCx.ANSWER_HAS:
+        case y.dCx.ANSWER_HAS:
           o.add(e.getData("has"));
           break;
-        case E.dCx.ANSWER_PINNED:
+        case y.dCx.ANSWER_PINNED:
           o.add(e.getData("pinned"));
           break;
-        case E.dCx.ANSWER_AUTHOR_TYPE:
+        case y.dCx.ANSWER_AUTHOR_TYPE:
           o.add(e.getData("author_type"));
           break;
         default:
@@ -230,7 +244,7 @@ function D(e) {
     }), Object.entries(t))) r instanceof Set && (t[n] = Array.from(r));
   if (t.content) {
     delete t.contents;
-    let e = m.Z.getCurrentConfig({
+    let e = E.Z.getCurrentConfig({
       location: "getSearchQueryFromTokens"
     });
     if (e.enabled) {
@@ -253,16 +267,16 @@ function D(e) {
   return t
 }
 
-function L(e) {
+function j(e) {
   var t;
   return (null == e ? true : e.contents) != null && e.contents.length > 0 ? null == e || null == (t = e.contents) ? true : t.map(e => e.split("|").slice(1).join("|")).join(" ") : null == e ? true : e.content
 }
 
-function x(e) {
+function k(e) {
   return e.map(e => e.type === a.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
 }
 
-function M(e, t, n) {
+function U(e, t, n) {
   let r, i, a = e.find((a, o) => t >= a.start && t <= a.end && n >= a.start && n <= a.end ? (null != e[o + 1] && (i = e[o + 1]), true) : (r = a, false));
   return null == a ? null : {
     previousToken: r,
@@ -273,46 +287,46 @@ function M(e, t, n) {
   }
 }
 
-function j(e, t) {
+function G(e, t) {
   let n, {
     currentToken: r,
     nextToken: i,
     previousToken: o
   } = e = null != e ? e : {};
   if (0 === t.length) return {
-    type: E.Sap.EMPTY,
+    type: y.Sap.EMPTY,
     filter: null,
     token: null
   };
   if (null == r) return {
-    type: E.Sap.FILTER_ALL,
+    type: y.Sap.FILTER_ALL,
     filter: null,
     token: null
   };
-  if ((0, g._m)(r.type)) {
+  if ((0, b._m)(r.type)) {
     if (null == i || i.type === a.ZP.NON_TOKEN_TYPE) return {
-      type: E.Sap.FILTER,
+      type: y.Sap.FILTER,
       filter: r.type,
       token: i
     };
-    if (null != i && !E.KA4.test(i.type)) return {
-      type: E.Sap.FILTER,
+    if (null != i && !y.KA4.test(i.type)) return {
+      type: y.Sap.FILTER,
       filter: r.type,
       token: null
     }
   }
-  return r.type === a.ZP.NON_TOKEN_TYPE && null != o && (0, g._m)(o.type) ? {
-    type: E.Sap.FILTER,
+  return r.type === a.ZP.NON_TOKEN_TYPE && null != o && (0, b._m)(o.type) ? {
+    type: y.Sap.FILTER,
     filter: o.type,
     token: r
   } : (r.type === a.ZP.NON_TOKEN_TYPE && (n = r), {
-    type: E.Sap.FILTER_ALL,
+    type: y.Sap.FILTER_ALL,
     filter: null,
     token: n
   })
 }
 
-function k(e) {
+function B(e) {
   if (null == e.match(/([\\" ])/g)) return e;
   {
     let t = e.replaceAll(/([\\"])/g, (e, t) => "\\".concat(t));
@@ -320,17 +334,17 @@ function k(e) {
   }
 }
 
-function U(e, t) {
+function Z(e, t) {
   let n = [];
   return i()(e).forEach(e => {
     if (null == e || 0 === e.results.length) return;
     let r = e.group;
     n = n.concat(e.results.map(n => {
       let i = n.text;
-      if (null != n.channel && (i = k(i)), t.type === E.Sap.FILTER_ALL) {
+      if (null != n.channel && (i = B(i)), t.type === y.Sap.FILTER_ALL) {
         var a;
         r = null != (a = n.group) ? a : r;
-        let e = g.ZP[r];
+        let e = b.ZP[r];
         (null == e ? true : e.key) != null && (null == e ? true : e.key) !== "" && (i = "".concat(e.key, " ").concat(i))
       }
       return {
@@ -347,50 +361,50 @@ function U(e, t) {
   })
 }
 
-function G(e) {
+function F(e) {
   return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
 }
 
-function B(e) {
+function V(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
-let Z = new Chunk349033.ZP;
+let H = new Chunk349033.ZP;
 
-function F(e) {
-  return Z.tokenize(e)
-}
-
-function V() {
-  return Z.clearCache()
-}
-
-function H(e) {
-  return null != e ? R[e] : null
-}
-
-function Y(e, t) {
-  let n = E.TNx.test(e.type);
-  return (null != t || !n) && (null == t || !n || !!E.KA4.test(t.type))
+function Y(e) {
+  return H.tokenize(e)
 }
 
 function W() {
-  (0, Chunk532428.WK)(), Z.reset(), i()(Chunk532428.ZP).forOwn((e, t) => Z.addRule(O({
+  return H.clearCache()
+}
+
+function K(e) {
+  return null != e ? D[e] : null
+}
+
+function z(e, t) {
+  let n = y.TNx.test(e.type);
+  return (null != t || !n) && (null == t || !n || !!y.KA4.test(t.type))
+}
+
+function q() {
+  (0, Chunk532428.WK)(), H.reset(), i()(Chunk532428.ZP).forOwn((e, t) => H.addRule(I({
     type: t
   }, e))), Chunk748610.Z.markSearchTokensRefreshed()
 }
 
-function K(e) {
-  return !!T(e) || e.type === E.aib.DMS && !d.Z.hidePersonalInformation
+function X(e) {
+  return !!C(e) || e.type === y.aib.DMS && !f.Z.hidePersonalInformation
 }
 
-function z(e) {
+function Q(e) {
   let t = e.name,
     n = false;
-  if (e.isGroupDM()) t = (0, o.F6)(e, f.default, u.Z);
+  if (e.isGroupDM()) t = (0, o.F6)(e, _.default, u.Z);
   else if (e.isDM()) {
     let n = e.getRecipientId(),
-      r = f.default.getUser(n),
-      i = p.ZP.getUserTag(r);
+      r = _.default.getUser(n),
+      i = h.ZP.getUserTag(r);
     if (null == i) return null;
     t = i
   } else {
@@ -398,22 +412,22 @@ function z(e) {
     let r = l.ZP.getTextChannelNameDisambiguations(e.getGuildId())[e.id];
     (null == r ? true : r.name) != null && (t = r.name)
   }
-  return (t = k(t), n) ? "#".concat(t) : t
+  return (t = B(t), n) ? "#".concat(t) : t
 }
 
-function q(e) {
+function J(e) {
   var t;
-  if (e.isGroupDM()) return (0, o.F6)(e, f.default, u.Z);
+  if (e.isGroupDM()) return (0, o.F6)(e, _.default, u.Z);
   if (e.isDM()) {
     let t = e.getRecipientId(),
-      n = f.default.getUser(t);
-    return p.ZP.getUserTag(n)
+      n = _.default.getUser(t);
+    return h.ZP.getUserTag(n)
   }
   let n = l.ZP.getTextChannelNameDisambiguations(e.getGuildId())[e.id];
   return null != (t = null == n ? true : n.name) ? t : e.name
 }
 
-function X() {
+function $() {
   var e, t;
   return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports
 }

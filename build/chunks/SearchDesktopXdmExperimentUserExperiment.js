@@ -2,10 +2,11 @@
 /** chunk id: 945577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gc: () => c,
+  Gc: () => u,
+  N3: () => c,
   UX: () => s,
   u5: () => l,
-  wn: () => u
+  wn: () => d
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
@@ -87,6 +88,25 @@ function c(e) {
   let {
     location: t,
     autoTrackExposure: n = true
+  } = e, r = (0, i.ro)({
+    location: t,
+    autoTrackExposure: n
+  }), {
+    isGlobalSettingSupported: a,
+    isXDMSearchEnabled: s
+  } = o.getCurrentConfig({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: r
+  });
+  return a && s
+}
+
+function u(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = true
   } = e, r = (0, i.nd)({
     location: t,
     autoTrackExposure: n
@@ -101,7 +121,7 @@ function c(e) {
   return a
 }
 
-function u(e) {
+function d(e) {
   let {
     location: t,
     autoTrackExposure: n = true

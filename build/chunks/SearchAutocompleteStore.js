@@ -318,8 +318,9 @@ function W(e) {
   if (_.Z.hidePersonalInformation) return null;
   {
     let t = n(741995).Z,
-      r = (0, E.Tm)(e),
-      i = t.getHistory(r);
+      r = (0, E.BX)(e);
+    if (null == r) return null;
+    let i = t.getHistory(r);
     return null == i ? null : {
       group: O.rtL.HISTORY,
       results: i.map(e => ({
@@ -418,20 +419,7 @@ function $() {
 }
 
 function ee() {
-  if (null == T) returnfalse;
-  if ((0, Chunk607802.R6)(T)) {
-    var e;
-    let t = (0, Chunk607802.Tm)(T),
-      n = S.get(exports);
-    if (null == require) returnfalse;
-    let {
-      type: r,
-      filter: i,
-      token: a
-    } = require.mode, o = null == a || null == (e = a.getFullMatch()) ? true : module.trim(), s = null == Chunk442837 || 0 === Chunk442837.length;
-    if (r === Chunk981631.Sap.FILTER && Chunk498607 === Chunk981631.dCx.FILTER_IN && Chunk570140) return J(T)
-  }
-  returnfalse
+  return null != T && J(T)
 }
 class et extends(r = Chunk442837.ZP.Store) {
   initialize() {
