@@ -22,32 +22,38 @@ function p(e) {
     labelText: b,
     descriptionText: g,
     helpText: f,
-    canNavigate: h
-  } = e, x = o.Z.get(m), j = r.useCallback(async e => {
-    h() && (await s.Z.enableIntegration(p.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
-  }, [h, p.id]), v = r.useCallback(e => {
-    h() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [h, n, p.id]), O = r.useCallback(e => {
-    h() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
-  }, [h, n]);
+    errors: h,
+    canNavigate: x
+  } = e, j = o.Z.get(m), v = r.useCallback(async e => {
+    x() && (await s.Z.enableIntegration(p.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
+  }, [x, p.id]), O = r.useCallback(e => {
+    x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
+  }, [x, n, p.id]), y = r.useCallback(e => {
+    x() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
+  }, [x, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
       name: b,
-      icon: null == x ? true : x.icon.whiteSVG,
-      iconBackgroundColor: null == x ? true : x.color,
+      icon: null == j ? true : j.icon.whiteSVG,
+      iconBackgroundColor: null == j ? true : j.color,
       iconClassName: u.platformIcon,
       description: g,
       isHeader: true
     }), (0, i.jsx)(l.izJ, {
       className: u.headerDivider
+    }), "message" in h && (0, i.jsx)(l.Text, {
+      className: u.errorText,
+      color: "text-danger",
+      variant: "text-sm/normal",
+      children: h.message
     }), t.map(e => (0, i.jsx)(d.Z, {
       integration: e,
       editedIntegration: n,
       guild: p,
       isExpanded: (null == n ? true : n.id) === e.id,
-      onEnable: j,
-      onDisable: v,
-      onToggleExpand: () => O(e.id)
+      onEnable: v,
+      onDisable: O,
+      onToggleExpand: () => y(e.id)
     }, e.id)), (0, i.jsx)(l.Text, {
       className: u.helpText,
       color: "text-muted",

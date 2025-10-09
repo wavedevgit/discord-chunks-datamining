@@ -2,83 +2,95 @@
 /** chunk id: 789574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
-  j: () => p
+  Z: () => b,
+  j: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk13107 = require("./13107.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk139387 = require("./139387.js"),
   Chunk852860 = require("./852860.jsx"),
   Chunk490655 = require("./490655.jsx"),
+  Chunk496675 = require("./496675.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
   Chunk145260 = require("./145260.js"),
   Chunk821864 = require("./821864.js"),
-  Chunk905753 = require("./905753.js");
+  Chunk905753 = require("./905753.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function b(e) {
   let {
     refToScroller: t
-  } = e, n = (0, i.e7)([c.Z], () => c.Z.getGuild()), {
-    section: l,
+  } = e, n = (0, l.e7)([g.Z], () => g.Z.getGuild()), {
+    section: i,
     sectionId: s,
-    integrations: o,
-    editedIntegration: u,
-    webhooks: g,
-    editedWebhook: m,
+    integrations: a,
+    editedIntegration: o,
+    webhooks: d,
+    editedWebhook: u,
     isFetching: p,
     errors: f
-  } = (0, i.cj)([d.default], () => ({
-    editedIntegration: d.default.editedIntegration,
-    editedWebhook: d.default.editedWebhook,
-    errors: d.default.getErrors(),
-    integrations: d.default.integrations,
-    isFetching: d.default.isFetching(),
-    section: d.default.getSection(),
-    sectionId: d.default.getSectionId(),
-    webhooks: d.default.webhooks
+  } = (0, l.cj)([m.default], () => ({
+    editedIntegration: m.default.editedIntegration,
+    editedWebhook: m.default.editedWebhook,
+    errors: m.default.getErrors(),
+    integrations: m.default.integrations,
+    isFetching: m.default.isFetching(),
+    section: m.default.getSection(),
+    sectionId: m.default.getSectionId(),
+    webhooks: m.default.webhooks
   }));
-  return null == n ? null : (0, r.jsx)(a.Z, {
+  return null == n ? null : (0, r.jsx)(c.Z, {
     guild: n,
-    section: l,
+    section: i,
     sectionId: s,
-    integrations: o,
-    webhooks: g,
-    editedIntegration: u,
-    editedWebhook: m,
+    integrations: a,
+    webhooks: d,
+    editedIntegration: o,
+    editedWebhook: u,
     isFetchingWebhooks: p,
-    hasChanges: d.default.hasChanges,
+    hasChanges: m.default.hasChanges,
     errors: f,
     refToScroller: t
   })
 }
 
-function p() {
+function j() {
+  var e;
   let {
-    guild: e,
-    submitting: t
+    guild: t,
+    submitting: n
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => ({
     guild: Chunk999382.Z.getGuild(),
     submitting: Chunk999382.Z.isSubmitting()
-  }));
-  return (0, Chunk951288.jsx)(Chunk852860.Z, {
-    submitting: exports,
+  })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), b = false, j = null;
+  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (b = true, j = (0, Chunk951288.jsx)(Chunk481060.Text, {
+    color: "text-danger",
+    variant: "text-md/normal",
+    children: Chunk388032.intl.string(Chunk388032.t["mrO/ZW"])
+  })), (0, Chunk951288.jsx)(Chunk852860.Z, {
+    submitting: require,
+    disabled: b,
+    errorMessage: j,
     onReset: () => {
-      Chunk139387.Z.init(), Chunk821864.Ui(), null != module && Chunk434404.Z.init(module.id)
+      Chunk139387.Z.init(), Chunk821864.Ui(), null != exports && Chunk434404.Z.init(exports.id)
     },
     onSave: () => {
-      if (null != module) {
-        if (null != Chunk145260.default.editedIntegration) Chunk139387.Z.saveIntegration(module.id, Chunk145260.default.editedIntegration);
-        else if (null != Chunk145260.default.editedWebhook) Chunk139387.Z.saveWebhook(module.id, Chunk145260.default.editedWebhook);
+      if (null != exports) {
+        if (null != Chunk145260.default.editedIntegration) Chunk139387.Z.saveIntegration(exports.id, Chunk145260.default.editedIntegration);
+        else if (null != Chunk145260.default.editedWebhook) Chunk139387.Z.saveWebhook(exports.id, Chunk145260.default.editedWebhook);
         else if (null != Chunk145260.default.editedCommandId) {
-          let t = Chunk145260.default.getSectionId(),
+          let e = Chunk145260.default.getSectionId(),
             n = Chunk905753.Z.getEditedApplication();
-          if (null == exports || null == require) return;
-          Chunk139387.Z.saveApplicationPermissions(exports, module.id, Object.values(require))
+          if (null == module || null == require) return;
+          Chunk139387.Z.saveApplicationPermissions(module, exports.id, Object.values(require))
         }
-        Chunk999382.Z.hasChanges() && Chunk434404.Z.saveGuild(module.id, {
-          features: module.features
+        Chunk999382.Z.hasChanges() && Chunk434404.Z.saveGuild(exports.id, {
+          features: exports.features
         })
       }
     }

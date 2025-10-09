@@ -6,22 +6,10 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk113434 = require("./113434.js"),
   Chunk670362 = require("./670362.jsx"),
-  Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
-
-function c(e) {
-  switch (e) {
-    case o.yq.SUGGESTED:
-      return s.intl.string(s.t.gBfXPT);
-    case o.yq.MOST_RECENT:
-      return s.intl.string(s.t.K6oEu7);
-    case o.yq.EXPIRING_SOON:
-      return s.intl.string(s.t.IB22n5);
-    case o.yq.RECENTLY_ENROLLED:
-      return s.intl.string(s.t["BB+2tb"])
-  }
-}
 let u = function(e) {
   let {
     onChange: t,
@@ -29,22 +17,22 @@ let u = function(e) {
     selectedSortMethod: u
   } = e, d = i.useCallback(e => {
     t(e)
-  }, [t]), p = i.useMemo(() => Object.keys(o.yq).map(e => ({
-    name: c(o.yq[e]),
-    value: o.yq[e],
+  }, [t]), p = (0, o.$I)(), f = i.useMemo(() => p.map(e => ({
+    name: e.label,
+    value: e.value,
     radioBarClassName: n
-  })), [n]);
-  return (0, r.jsx)(a.Z, {
+  })), [p, n]);
+  return (0, r.jsx)(s.Z, {
     renderPopout: (e, t) => {
       let {
         closePopout: n
       } = e;
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.g, {
+        children: [(0, r.jsx)(s.g, {
           id: t,
-          children: s.intl.string(s.t.tZXJIS)
+          children: c.intl.string(c.t.tZXJIS)
         }), (0, r.jsx)(l.FXm, {
-          options: p,
+          options: f,
           onChange: e => {
             n(), d(e)
           },
@@ -74,7 +62,7 @@ let u = function(e) {
       }({}, e), i = i = {
         buttonRef: t,
         size: "sm",
-        text: c(u),
+        text: (0, a.NL)(u),
         icon: l.hic,
         iconPosition: "end",
         variant: "secondary"
