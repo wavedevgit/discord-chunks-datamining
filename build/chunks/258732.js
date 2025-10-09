@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let l = {
-  updatePrivateChannelRecipientFlags: (e, t) => r.tn.patch({
-    url: i.ANM.CHANNEL_RECIPIENT_ME(e),
+  updatePrivateChannelRecipientFlags: (e, t) => i.tn.patch({
+    url: r.ANM.CHANNEL_RECIPIENT_ME(e),
     body: {
       flags: t
     },

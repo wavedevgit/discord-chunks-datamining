@@ -32,9 +32,9 @@ let v = Chunk647438.memo(function(e) {
       hidePrimaryCTA: x,
       hideSecondaryCTA: O,
       badgeOverride: y,
-      onClickCard: T,
-      onClickPrimaryCTA: j,
-      onClickSecondaryCTA: k,
+      onClickCard: j,
+      onClickPrimaryCTA: k,
+      onClickSecondaryCTA: T,
       onMouseEnter: L,
       onMouseLeave: I,
       onFocus: P,
@@ -55,7 +55,7 @@ let v = Chunk647438.memo(function(e) {
         className: S.baseProductCardHoverContainer,
         children: (0, r.jsx)(o.kL8, {
           ref: M,
-          onClick: null != T ? T : U,
+          onClick: null != j ? j : U,
           "aria-label": D,
           className: i()(w, S.baseProductCardContainer),
           onFocus: () => null == P ? true : P(t.skuId),
@@ -96,13 +96,13 @@ let v = Chunk647438.memo(function(e) {
                   skuId: t.skuId,
                   cardRef: M,
                   selectedVariantIndex: V,
-                  onClick: j,
+                  onClick: k,
                   text: B
                 }), !O && (0, r.jsx)(h.Z, {
                   skuId: t.skuId,
                   cardRef: M,
                   selectedVariantIndex: V,
-                  onClick: k,
+                  onClick: T,
                   icon: A
                 })]
               })

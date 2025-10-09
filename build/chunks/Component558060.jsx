@@ -1,4 +1,4 @@
-/** Chunk was on 21885 **/
+/** Chunk was on 31099 **/
 /** chunk id: 558060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk884697 = require("./884697.js"),
   Chunk754433 = require("./754433.jsx"),
   Chunk409116 = require("./409116.jsx"),
@@ -20,20 +20,20 @@ function d(e) {
     isPremiumUser: d,
     discount: m,
     className: p,
-    discountOfferAmount: v,
-    hideStrikethroughPrice: f = false,
-    nitroIconType: h,
+    discountOfferAmount: f,
+    hideStrikethroughPrice: h = false,
+    nitroIconType: v,
     nitroIconSize: g = "md"
-  } = e, b = (0, l.ql)(i, c.tuJ.DEFAULT);
-  if (null == b) return null;
-  if (b.amount <= 0) return (0, r.jsx)("div", {
-    className: a()(u.priceTagsContainer, p),
+  } = e, _ = (0, a.ql)(i, c.tuJ.DEFAULT);
+  if (null == _) return null;
+  if (_.amount <= 0) return (0, r.jsx)("div", {
+    className: l()(u.priceTagsContainer, p),
     children: (0, r.jsx)(s.F, {
-      price: b
+      price: _
     })
   });
-  let x = (0, l.ql)(i, c.tuJ.PREMIUM_TIER_2),
-    _ = (0, l.x6)(i) && d ? (t = function(e) {
+  let b = (0, a.ql)(i, c.tuJ.PREMIUM_TIER_2),
+    x = (0, a.x6)(i) && d ? (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -50,7 +50,7 @@ function d(e) {
         })
       }
       return e
-    }({}, b), n = n = {
+    }({}, _), n = n = {
       amount: m.original
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -61,22 +61,22 @@ function d(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t) : b,
-    P = d && null != x;
+    }), t) : _,
+    P = d && null != b;
   return (0, r.jsxs)("div", {
-    className: a()(u.priceTagsContainer, p),
-    children: [f ? null : (0, r.jsx)(o.y, {
-      price: _,
+    className: l()(u.priceTagsContainer, p),
+    children: [h ? null : (0, r.jsx)(o.y, {
+      price: x,
       className: u.price
     }), (0, r.jsx)(s.F, {
-      price: P ? x : _,
+      price: P ? b : x,
       discount: m,
-      className: a()({
-        [u.price]: null == v
+      className: l()({
+        [u.price]: null == f
       }),
-      nitroIconType: P ? h : true,
+      nitroIconType: P ? v : true,
       nitroIconSize: g,
-      discountOfferAmount: v
+      discountOfferAmount: f
     })]
   })
 }

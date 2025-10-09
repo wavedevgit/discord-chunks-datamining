@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 326145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,40 +22,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk76531 = require("./76531.js"),
   Chunk718215 = require("./718215.js");
 
-function y(e) {
+function v(e) {
   let {
     guildId: t,
     channelId: n
   } = e, {
     ref: l,
-    width: y,
-    height: v
+    width: v,
+    height: y
   } = (0, c.ZP)(), I = i.useCallback(() => {
     null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), S = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), C = i.useMemo(() => null == S ? null : h.ZP.getGuildSplashURL({
-    id: S.id,
-    splash: S.splash
-  }), [S]), T = (0, d.N)(C);
+  }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
+    id: C.id,
+    splash: C.splash
+  }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
     className: a()(O.outerWrapping, E.main, {
-      [E.fullBorderWithGradient]: null == C
+      [E.fullBorderWithGradient]: null == S
     }),
     ref: l,
-    children: [null != C ? (0, r.jsx)(u.Z, {
+    children: [null != S ? (0, r.jsx)(u.Z, {
       className: E.artwork,
-      src: C,
-      width: y,
-      height: v,
+      src: S,
+      width: v,
+      height: y,
       imageClassName: E.cover
-    }) : (0, r.jsx)(p.Z, {}), null != T && null != C && (0, r.jsx)("div", {
+    }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: E.gradient,
       style: {
         background: "linear-gradient(180deg, ".concat((0, g.aD)(T, .16), " 0%, ").concat((0, g.aD)(T, 1), " 100%)")
       }
-    }), null != C && (0, r.jsx)("div", {
+    }), null != S && (0, r.jsx)("div", {
       className: E.gradient
     }), (0, r.jsxs)("div", {
       className: a()(O.explainerContainer, O.transparentBackground),

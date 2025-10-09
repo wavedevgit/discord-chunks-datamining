@@ -223,7 +223,7 @@ let tn = (0, Chunk951752.l)(e => {
   tl = (0, Chunk77987.e)(Chunk684572.default, null, {
     passProps: false
   }),
-  ta = [Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), ...Array.from(Chunk176505.Vg).map(e => e5.Z5c.CHANNEL(ey.Hw.guildId(), e))];
+  ta = [Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), ...Array.from(Chunk176505.Vg).map(e => e5.Z5c.CHANNEL(ev.Hw.guildId(), e))];
 
 function to(e) {
   let {
@@ -478,8 +478,8 @@ function tu(e) {
   if (!K.Z.isConnected()) return;
   let {
     location: i
-  } = (0, ev.s1)();
-  i.pathname === r && (null == eF.Z.getChannel(t) ? (0, ev.dL)(e5.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
+  } = (0, ey.s1)();
+  i.pathname === r && (null == eF.Z.getChannel(t) ? (0, ey.dL)(e5.Z5c.CHANNEL(n)) : (0, ey.dL)(r))
 }
 class td extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -528,7 +528,7 @@ class td extends Chunk647438.PureComponent {
         channelId: i,
         messageId: o,
         threadId: s
-      } = to(n), c = (0, ey.Ss)(r), u = (0, ey.cq)(i), d = (0, ey.cq)(s), h = eQ.Z.getGuildId(), g = h !== r;
+      } = to(n), c = (0, ev.Ss)(r), u = (0, ev.cq)(i), d = (0, ev.cq)(s), h = eQ.Z.getGuildId(), g = h !== r;
       if (c && g && p.Z.selectGuild(r), c && u) {
         let n = eK.Z.getChannelId(h),
           a = n !== i;
@@ -547,19 +547,19 @@ class td extends Chunk647438.PureComponent {
           let e = eV.ZP.getCurrentSidebarChannelId(n) !== s,
             t = null != eV.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
-            if (t)(0, ev.dL)(e5.Z5c.CHANNEL(r, s, o));
+            if (t)(0, ey.dL)(e5.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
                 type: eT.Ff.THREAD
               };
-              null != o && (e.initialMessageId = o), eC.Z.openThreadAsSidebar({
+              null != o && (e.initialMessageId = o), eS.Z.openThreadAsSidebar({
                 guildId: r,
                 baseChannelId: i,
                 channelId: s,
                 details: e
               })
             }
-        } else null == i || a || eC.Z.closeChannelSidebar(i);
+        } else null == i || a || eS.Z.closeChannelSidebar(i);
         let c = es.Z.getIsOpen();
         if (i === e2.oC.ROLE_SUBSCRIPTIONS) eo.Z.closeSidebar();
         else if (g && c) {
@@ -570,7 +570,7 @@ class td extends Chunk647438.PureComponent {
       } else ta.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
-      }) || (0, ev.dL)(ez.Z.fallbackRoute)
+      }) || (0, ey.dL)(ez.Z.fallbackRoute)
     }(n, r), (0, U.pN)(n, i, o), n !== e5.Z5c.ME || o || e$.ZP.getState().section !== e5.pJs.YOU || d.Z.setSection(e5.pJs.ONLINE)
   }
   ensureChannelMatchesGuild(e) {
@@ -583,8 +583,8 @@ class td extends Chunk647438.PureComponent {
       guildId: r,
       channelId: i,
       threadId: l
-    } = to(n), a = (0, ey.Ss)(r) && r !== e5.ME && r !== e5.I_8;
-    if (null != i && (0, ey.cq)(i) && !(0, e2.AB)(i) && a) {
+    } = to(n), a = (0, ev.Ss)(r) && r !== e5.ME && r !== e5.I_8;
+    if (null != i && (0, ev.cq)(i) && !(0, e2.AB)(i) && a) {
       let n = eF.Z.getChannel(i);
       if (null == n) eA.Z.loadThread(i).then(() => tu({
         channelId: i,
@@ -596,14 +596,14 @@ class td extends Chunk647438.PureComponent {
         state: e.state
       };
       if (null != l) {
-        if (!((0, ey.cq)(l) && !(0, e2.AB)(i))) return null;
+        if (!((0, ev.cq)(l) && !(0, e2.AB)(i))) return null;
         let n = eF.Z.getChannel(l);
         if (null == n) eA.Z.loadThread(l).then(() => tu({
           channelId: l,
           guildId: r,
           pathname: t
         }));
-        else if ((null == n ? true : n.parent_id) !== i) return eC.Z.closeChannelSidebar(i), {
+        else if ((null == n ? true : n.parent_id) !== i) return eS.Z.closeChannelSidebar(i), {
           path: e5.Z5c.CHANNEL(r, i),
           state: e.state
         }

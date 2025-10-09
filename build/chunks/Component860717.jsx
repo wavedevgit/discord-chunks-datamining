@@ -287,7 +287,7 @@ function W(e) {
   let {
     content: t
   } = e, n = i.useId(), l = (0, v._)();
-  return null != t ? (0, r.jsx)(j.Z, {
+  return null != t ? (0, r.jsx)(b.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
@@ -336,13 +336,13 @@ function B(e) {
 
 function z() {
   let e = function() {
-      let e = Chunk647438.useContext(Y);
+      let e = Chunk647438.useContext(q);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = q(module.widget);
+    } = V(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -369,7 +369,7 @@ function H(e, t) {
   return r
 }
 
-function V(e, t) {
+function Y(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(k)) || null == (n = r[0]) ? true : n.slice(2, false);
@@ -377,9 +377,9 @@ function V(e, t) {
   let l = t.variables[i];
   return null == l || "unfurled_media" !== l.type ? null : l.media
 }
-let Y = Chunk647438.createContext(null);
+let q = Chunk647438.createContext(null);
 
-function q(e) {
+function V(e) {
   return (0, s.cj)([f.Z, S.Z, P.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -449,7 +449,7 @@ let J = Object.assign(function(e) {
     application: u,
     game: f,
     config: m
-  } = q(n), h = null == u ? true : u.getIconURL(16), v = (0, x.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
+  } = V(n), h = null == u ? true : u.getIconURL(16), v = (0, x.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), b = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == f ? true : f.id,
     source: g.m1.UserProfile,
@@ -483,7 +483,7 @@ let J = Object.assign(function(e) {
     text: T.intl.string(T.t.ajHoOj),
     children: (0, r.jsx)(c.P3F, {
       className: a()(A.header, A.headerClickable),
-      onClick: j,
+      onClick: b,
       "aria-label": T.intl.string(T.t.ajHoOj),
       children: Z
     })
@@ -501,7 +501,7 @@ let J = Object.assign(function(e) {
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
             type: "unfurled_media",
-            media: (0, b.ym)(n)
+            media: (0, j.ym)(n)
           }]
         } else if ("string" == typeof n) return [t, {
           type: "string",
@@ -520,7 +520,7 @@ let J = Object.assign(function(e) {
         case "HERO":
           var n;
           return {
-            type: "HERO", body: t.body.map(e), title: H(t.title, l), image: V(t.image, l), imagePlaceholder: null == (n = l.config) ? true : n.hero_placeholder_image
+            type: "HERO", body: t.body.map(e), title: H(t.title, l), image: Y(t.image, l), imagePlaceholder: null == (n = l.config) ? true : n.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -536,7 +536,7 @@ let J = Object.assign(function(e) {
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: H(t.content, l), image: V(t.image, l), imagePosition: t.imagePosition
+            type: "TEXT_WITH_IMAGE", content: H(t.content, l), image: Y(t.image, l), imagePosition: t.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
@@ -553,9 +553,9 @@ let J = Object.assign(function(e) {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: c.iWm,
-      action: j
+      action: b
     }) : null,
-    children: [(0, r.jsx)(Y.Provider, {
+    children: [(0, r.jsx)(q.Provider, {
       value: e,
       children: (0, r.jsx)(X, {
         widget: n,

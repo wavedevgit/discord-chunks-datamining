@@ -8,7 +8,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk790731 = require("./790731.js");
 
 function a(e, t) {
-  let n = (0, r.e7)([i.Z], () => i.Z.getNewestTokenForApplication(e)),
+  let n = (0, i.e7)([r.Z], () => r.Z.getNewestTokenForApplication(e)),
     {
       loading: a
     } = (0, l.A)(t);

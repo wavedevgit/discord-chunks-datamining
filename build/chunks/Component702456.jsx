@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 702456, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,7 +63,7 @@ function E(e) {
   })
 }
 
-function y() {
+function v() {
   let {
     enabled: e
   } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {

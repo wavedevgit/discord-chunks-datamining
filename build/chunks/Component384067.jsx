@@ -37,32 +37,32 @@ let _ = e => {
   }, []);
   let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: T
+      handleCardVisibilityChange: j
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: j
+      bannerURL: k
     } = (0, g.UI)(_);
-  if (null == j) return null;
-  let k = b === f.AW.ORBS;
+  if (null == k) return null;
+  let T = b === f.AW.ORBS;
   return (0, r.jsx)(a.$, {
     innerRef: S,
-    onChange: T,
+    onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: S,
       className: i()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: k
+        [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
         className: i()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: k
+          [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: v,
-          src: j,
+          src: k,
           alt: _.title,
           className: i()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: k
+            [h.wideBannerArtOrbs]: T
           }),
           style: {
             height: null != x ? "".concat(x, "px") : "auto"
@@ -79,16 +79,16 @@ let _ = e => {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: k ? h.wideBannerOrbsHeading : true,
-            variant: k ? "heading-xl/bold" : "heading-lg/semibold",
+            className: T ? h.wideBannerOrbsHeading : true,
+            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
           }), (0, r.jsx)(o.Text, {
             style: {
               color: null != (s = _.bannerTextColor) ? s : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: k ? "text-md/medium" : "text-sm/medium",
-            children: k ? C.intl.format(C.t.SFFP7O, {
+            variant: T ? "text-md/medium" : "text-sm/medium",
+            children: T ? C.intl.format(C.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]

@@ -43,7 +43,7 @@ let P = e => {
     prioritizeUserDiscounts: A,
     tab: R,
     buttonContainerClassName: Z
-  } = e, w = (0, a.e7)([d.default], () => d.default.getCurrentUser()), F = C.ZP.canUseCollectibles(w), H = (0, T.G)("FeedBlock"), {
+  } = e, w = (0, a.e7)([d.default], () => d.default.getCurrentUser()), F = C.ZP.canUseCollectibles(w), H = (0, j.G)("FeedBlock"), {
     sortType: D,
     setSortType: M,
     sortedItems: W,
@@ -62,7 +62,7 @@ let P = e => {
     X({
       isShuffling: false,
       onOutroComplete: () => M(e)
-    }), f.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), f.default.track(k.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: $,
       sort_type: e
     })
@@ -80,9 +80,9 @@ let P = e => {
           children: s
         }), z && (0, r.jsx)(o.ua7, {
           "data-migration-pending": true,
-          text: k.intl.string(k.t["3taPdn"]),
+          text: T.intl.string(T.t["3taPdn"]),
           position: "top",
-          "aria-label": k.intl.string(k.t["3taPdn"]),
+          "aria-label": T.intl.string(T.t["3taPdn"]),
           children: e => {
             var t, n;
             return (0, r.jsx)(o.P3F, (t = function(e) {
@@ -103,7 +103,7 @@ let P = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(p.Z.getArticleURL(j.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(p.Z.getArticleURL(k.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: I.informationIcon,
               children: (0, r.jsx)(o.d3s, {
                 size: "sm"
@@ -126,7 +126,7 @@ let P = e => {
         }),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          children: k.intl.string(k.t.uaX709)
+          children: T.intl.string(T.t.uaX709)
         }), (0, r.jsx)("div", {
           className: Z,
           children: (0, r.jsx)(o.PhF, {
@@ -143,14 +143,14 @@ let P = e => {
           className: Z,
           children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
-            text: k.intl.string(k.t.X3tnc3),
+            text: T.intl.string(T.t.X3tnc3),
             buttonRef: ee,
             onClick: () => {
               X({
                 isShuffling: true,
                 onOutroComplete: V,
                 returnRef: ee
-              }), f.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), f.default.track(k.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: $
               })
             },

@@ -100,25 +100,25 @@ class Z extends Chunk317770.Z {
       open: async function(e) {
         let t = e => {
           switch (e) {
-            case C.F.AGE_GATE:
+            case S.F.AGE_GATE:
               f.Z.flowStep(j.MK.ANY, j.EW.AGE_GATE);
               break;
-            case C.F.CHOOSE_TEMPLATE:
+            case S.F.CHOOSE_TEMPLATE:
               f.Z.flowStep(j.MK.ANY, j.X2.GUILD_TEMPLATES);
               break;
-            case C.F.CUSTOMIZE_GUILD:
+            case S.F.CUSTOMIZE_GUILD:
               f.Z.flowStep(j.MK.ANY, j.X2.GUILD_CREATE);
               break;
-            case C.F.CHANNEL_PROMPT:
+            case S.F.CHANNEL_PROMPT:
               f.Z.flowStep(j.MK.ANY, j.X2.CHANNEL_PROMPT);
               break;
-            case C.F.JOIN_GUILD:
+            case S.F.JOIN_GUILD:
               f.Z.flowStep(j.MK.ANY, j.X2.JOIN_GUILD);
               break;
-            case C.F.CREATION_INTENT:
+            case S.F.CREATION_INTENT:
               f.Z.flowStep(j.MK.ANY, j.X2.CREATION_INTENT);
               break;
-            case C.F.COMPLETE:
+            case S.F.COMPLETE:
               f.Z.flowStep(j.MK.ANY, j.X2.SUCCESS);
               break;
             case null:
@@ -147,7 +147,7 @@ class Z extends Chunk317770.Z {
       predicate: () => w && !Z() && !Chunk188785.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(y.isPlatformEmbedded, e),
+      open: e => c.j(v.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)()

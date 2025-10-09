@@ -44,10 +44,10 @@ function j(e) {
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
-      D && !l.tq && (0, d.M)(t, C.oC.ROLE_SUBSCRIPTIONS)
+      D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(v.z, {
+    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(y.z, {
       errorType: e
     })
   }
@@ -63,14 +63,14 @@ function j(e) {
         children: T.intl.string(T.t["KzCF//"])
       })]
     }), (0, r.jsx)("div", {
-      id: S.v
+      id: C.v
     }), (0, r.jsx)("div", {
       className: N.content,
       children: P ? (0, r.jsx)(o.u2D, {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(v.Z, {
             guild: n
           })
         })

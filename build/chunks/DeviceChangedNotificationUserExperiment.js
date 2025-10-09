@@ -27,8 +27,8 @@ function a(e) {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    isInHoldout: r
-  } = i.L.getCurrentConfig({
+    isInHoldout: i
+  } = r.L.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
@@ -36,7 +36,7 @@ function a(e) {
   return l.getCurrentConfig({
     location: t
   }, {
-    disable: r,
+    disable: i,
     autoTrackExposure: n
   })
 }
@@ -46,8 +46,8 @@ function o(e) {
     location: t,
     autoTrackExposure: n = true
   } = e, {
-    isInHoldout: r
-  } = i.L.useExperiment({
+    isInHoldout: i
+  } = r.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
@@ -55,7 +55,7 @@ function o(e) {
   return l.useExperiment({
     location: t
   }, {
-    disable: r,
+    disable: i,
     autoTrackExposure: n
   })
 }

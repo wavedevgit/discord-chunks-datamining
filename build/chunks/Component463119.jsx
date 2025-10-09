@@ -119,23 +119,23 @@ let k = e => {
       {
         analyticsLocations: O
       } = (0, g.ZP)(_),
-      [E, y] = i.useState(false),
+      [E, v] = i.useState(false),
       I = i.useCallback(() => {
-        true !== o && o(), true !== s && (0, v.mK)({
+        true !== o && o(), true !== s && (0, y.mK)({
           openInLayer: false,
           tab: s,
           analyticsLocations: O,
           analyticsSource: _
-        }), y(true), (0, v.Sm)({
+        }), v(true), (0, y.Sm)({
           analyticsSource: _,
           analyticsLocations: O
         })
-      }, [_, O, o, y, s]),
-      S = x.Z5c.COLLECTIBLES_SHOP;
+      }, [_, O, o, v, s]),
+      C = x.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [E && (0, r.jsx)(M, {}), (0, r.jsx)(d.Qj, R(L({
         selected: t,
-        route: S,
+        route: C,
         icon: null != a ? a : c.EOn,
         text: Z.intl.string(Z.t.pWG4zc),
         locationState: n
@@ -183,16 +183,16 @@ let k = e => {
   }),
   H = e => {
     let t, n;
-    var l, o, u, d, h, g, m, b, _, O, E, v, {
+    var l, o, u, d, h, g, m, b, _, O, E, y, {
         displayOptions: I
       } = e,
-      S = D(e, ["displayOptions"]);
-    let C = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
+      C = D(e, ["displayOptions"]);
+    let S = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
       [T, N] = i.useState(0),
       [j, P] = i.useState(false),
       x = (0, p.ZP)(),
       A = (0, s.wj)(x);
-    j ? A ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (o = u.hovered) ? true : o.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : A ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (_ = I.entrypointBackgroundStyle) || null == (b = _.resting) ? true : b.dark) : (t = null == (O = I.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (E = v.resting) ? true : E.light);
+    j ? A ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (o = u.hovered) ? true : o.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : A ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (_ = I.entrypointBackgroundStyle) || null == (b = _.resting) ? true : b.dark) : (t = null == (O = I.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = I.entrypointBackgroundStyle) || null == (E = y.resting) ? true : E.light);
     let M = i.useCallback(e => {
         I.assetIds.length > 0 && N(e => (e + 1) % I.assetIds.length), P(true), null == e || e()
       }, [I.assetIds.length]),
@@ -205,7 +205,7 @@ let k = e => {
       text: (0, r.jsx)(B, {
         displayOptions: I,
         assetId: I.assetIds[T],
-        reducedMotion: C
+        reducedMotion: S
       }),
       tooltipClassName: w.marketingBadgeTooltip,
       position: "right",
@@ -214,8 +214,8 @@ let k = e => {
       hideOnClick: false,
       "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxc),
       children: e => (0, r.jsxs)(U, R(L(R(L({
-        className: null != I.entryPointClassName ? (0, y.l)(w, I.entryPointClassName) : true
-      }, S), {
+        className: null != I.entryPointClassName ? (0, v.l)(w, I.entryPointClassName) : true
+      }, C), {
         icon: I.entryPointIcon
       }), e), {
         onMouseEnter: () => M(e.onMouseEnter),
@@ -296,7 +296,7 @@ let k = e => {
             "aria-hidden": true
           })
         }), (0, r.jsx)(k, {})]
-      })), (0, r.jsx)(S.Z, {
+      })), (0, r.jsx)(C.Z, {
         displayOptions: l,
         targetElementRef: c,
         onClick: () => a(A.L.TAKE_ACTION),
@@ -313,7 +313,7 @@ let k = e => {
       children: [(0, r.jsx)(U, R(L({}, n), {
         onClick: () => t(A.L.TAKE_ACTION),
         listItemRef: l
-      })), (0, r.jsx)(C.Z, {
+      })), (0, r.jsx)(S.Z, {
         targetElementRef: l,
         onClick: () => t(A.L.TAKE_ACTION),
         onRequestClose: () => t(A.L.USER_DISMISS)

@@ -3,14 +3,14 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends(r = Chunk647438.PureComponent) {
+class d extends(i = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       intervalDuration: e,
@@ -35,18 +35,18 @@ class u extends(r = Chunk647438.PureComponent) {
     let {
       showDays: t,
       showUnits: n,
-      className: r
-    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
+      className: i
+    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [u.intl.string(u.t["6m/6nJ"]), u.intl.string(u.t.n7dksL), u.intl.string(u.t["1LyF1t"]), u.intl.string(u.t.QJyuxc)];
     if (0 === e.days) l.shift();
     else if (!t) {
       let e = l.shift();
       l[0] += 24 * e
     }
-    let s = o()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+    let s = o()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, r.jsxs)("span", {
       children: [e, n ? a[l.length - t - 1] : null]
     }, t)]).flatten().value();
-    return (0, i.jsx)("span", {
-      className: r,
+    return (0, r.jsx)("span", {
+      className: i,
       children: s
     })
   }
@@ -55,24 +55,24 @@ class u extends(r = Chunk647438.PureComponent) {
       deadline: e,
       children: t,
       className: n,
-      stopAtOneSec: r
+      stopAtOneSec: i
     } = this.props;
     if (module === 1 / 0) return (0, Chunk951288.jsx)("span", {
       className: require,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn5),
       children: "∞"
     });
-    let l = (0, Chunk55935.TD)(Date.now(), module, r);
+    let l = (0, Chunk55935.TD)(Date.now(), module, i);
     return null != exports ? exports(Chunk647438, this.defaultRender.bind(this, Chunk647438)) : this.defaultRender(Chunk647438)
   }
   constructor(...e) {
-    super(...e), d(this, "_interval", true)
+    super(...e), c(this, "_interval", true)
   }
 }
-d(u, "defaultProps", {
+c(d, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,
   intervalDuration: 1e3
 });
-let p = u
+let p = d

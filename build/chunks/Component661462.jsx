@@ -2,7 +2,7 @@
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => y,
-  Z: () => b
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -79,7 +79,7 @@ function y(e) {
   }))
 }
 
-function j(e) {
+function b(e) {
   let {
     user: t,
     currentUser: n,
@@ -115,7 +115,7 @@ function j(e) {
   }) : null
 }
 
-function b(e) {
+function j(e) {
   var t;
   let {
     user: n,
@@ -130,7 +130,7 @@ function b(e) {
   } = e, {
     trackUserProfileAction: y
   } = (0, o.KZ)(), [{
-    section: b,
+    section: j,
     subsection: O,
     text: x
   }, P] = i.useState(v(h({}, null != (t = d.find(e => {
@@ -151,7 +151,7 @@ function b(e) {
       children: (0, r.jsx)(s.njP, {
         type: "top",
         look: "custom",
-        selectedItem: b,
+        selectedItem: j,
         onItemSelect: e => {
           y({
             action: "PRESS_SECTION",
@@ -169,7 +169,7 @@ function b(e) {
         }, e.section))
       })
     }), (0, r.jsx)(s.njP.Panel, {
-      id: b,
+      id: j,
       "aria-label": x,
       className: m.tabBarPanel,
       children: (0, r.jsx)(s.y5t, {
@@ -178,13 +178,13 @@ function b(e) {
             children: x
           })
         }),
-        children: (0, r.jsx)(j, {
+        children: (0, r.jsx)(b, {
           user: n,
           currentUser: l,
           displayProfile: a,
           guildId: c,
           channelId: u,
-          section: b,
+          section: j,
           subsection: O,
           onClose: p
         })

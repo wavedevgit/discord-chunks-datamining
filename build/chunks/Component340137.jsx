@@ -24,12 +24,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk445202 = require("./445202.js");
-let S = {
+let C = {
     cozy: 0,
     default: 0,
     compact: 0
   },
-  C = {
+  S = {
     cozy: 36,
     default: 24,
     compact: 14
@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: s,
     ref: g,
     focusSectionProps: b
-  } = e, [E, y] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
+  } = e, [E, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -63,7 +63,7 @@ function N(e) {
     badgeType: R
   } = (0, O.h6)({
     isSelected: j
-  }), D = (0, m.isDesktop)() && x, k = (0, h.A)(), M = (0, m.isMac)() ? S[k] : D ? C[k] : T[k];
+  }), D = (0, m.isDesktop)() && x, k = (0, h.A)(), M = (0, m.isMac)() ? C[k] : D ? S[k] : T[k];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -73,7 +73,7 @@ function N(e) {
     }), (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: !P,
-      text: v.intl.string(v.t.HcoRu7),
+      text: y.intl.string(y.t.HcoRu7),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -98,10 +98,10 @@ function N(e) {
         })
       }, b, s), n = n = {
         onMouseEnter: () => {
-          y(true)
+          v(true)
         },
         onMouseLeave: () => {
-          y(false)
+          v(false)
         },
         onClick: () => {
           var e;

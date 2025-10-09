@@ -24,20 +24,20 @@ var Chunk45792 = require("./45792.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk674563 = require("./674563.js");
-let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
-  C = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
+let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
+  S = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
   T = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "www.fortnite.com", "www.nvidia.com"]),
   N = new Map([
     [Chunk674563.Vt, {
-      trustedHosts: C,
+      trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.fd, {
-      trustedHosts: C,
+      trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.He, {
-      trustedHosts: C,
+      trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.Zs, {
@@ -67,13 +67,13 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
           let e = new URL(n),
             a = e.toString();
           if (m.isPlatformEmbedded) {
-            let e = (0, l.R)() ? y.KJ3.ACTIVITY_POPOUT : null;
+            let e = (0, l.R)() ? v.KJ3.ACTIVITY_POPOUT : null;
             f.Z.focus(e, true)
           }
           let h = u.Z.getApplication(null == (s = t.application) ? true : s.id),
             b = (0, c.p)(null == r ? true : r.location),
             _ = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
-          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (d = t.application) ? true : d.id,
             url: a,
             opened: true
@@ -85,7 +85,7 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
             shouldConfirm: true,
             onConfirm: () => {
               var n;
-              (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: a,
                 opened: true
@@ -95,7 +95,7 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
             },
             onCancel: () => {
               var n;
-              p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: a,
                 opened: false
@@ -109,7 +109,7 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
           })))
         } catch (e) {
           throw new b.Z({
-            errorCode: y.lTL.INVALID_COMMAND
+            errorCode: v.lTL.INVALID_COMMAND
           }, "Invalid URL: ".concat(n))
         }
       }
@@ -125,15 +125,15 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
         } = e;
         (0, _.bu)(t.transport);
         let r = (0, _._f)(t.application);
-        if (!S.has(r)) throw new b.Z({
-          errorCode: y.lTL.UNAUTHORIZED_FOR_APPLICATION
+        if (!C.has(r)) throw new b.Z({
+          errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {
           let {
             openUserSettings: e
           } = n(518596);
           e(d.n.CONNECTIONS_PANEL, {
-            section: y.oAB.CONNECTIONS
+            section: v.oAB.CONNECTIONS
           })
         }
       }
@@ -155,10 +155,10 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
         (0, _.bu)(n.transport);
         let a = (0, _._f)(n.application);
         if (null == a) throw new b.Z({
-          errorCode: y.lTL.INVALID_COMMAND
+          errorCode: v.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, y.udG.EMBEDDED)) throw new b.Z({
-          errorCode: y.lTL.INVALID_COMMAND
+        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, v.udG.EMBEDDED)) throw new b.Z({
+          errorCode: v.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {
           (0, s._)({

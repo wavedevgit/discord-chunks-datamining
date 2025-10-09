@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 663701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eC,
-  d: () => eS
+  Z: () => eS,
+  d: () => eC
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -288,7 +288,7 @@ let eh = e => {
       })
     }) : (0, r.jsx)("div", {
       className: eu.familyCenterButtonContainer,
-      children: (0, r.jsx)(S.ZP, {
+      children: (0, r.jsx)(C.ZP, {
         contentTypes: [p.z.FAMILY_CENTER_NEW_BADGE],
         children: e => {
           let {
@@ -296,15 +296,15 @@ let eh = e => {
           } = e;
           return t === p.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(g.IGR, {
             text: es.intl.string(es.t.y2b7CA),
-            color: v.Z.BG_BRAND
+            color: y.Z.BG_BRAND
           }) : null
         }
       })
     })
   },
-  ey = () => (0, Chunk51596.$Z)("DM_SEARCH");
+  ev = () => (0, Chunk51596.$Z)("DM_SEARCH");
 
-function ev(e) {
+function ey(e) {
   switch (e) {
     case ei.Z5c.APPLICATION_LIBRARY:
       return ei.ZY5.LIBRARY;
@@ -329,7 +329,7 @@ let eI = Chunk647438.memo(function(e) {
     createDMButtonVariant: g,
     selectedChannelId: m,
     path: b
-  } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), v = i.useRef(null);
+  } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), y = i.useRef(null);
   return (0, r.jsxs)("nav", {
     className: eu.privateChannels,
     "aria-label": es.intl.string(es.t.ZH9aPz),
@@ -348,7 +348,7 @@ let eI = Chunk647438.memo(function(e) {
           color: h.zx.Colors.PRIMARY,
           size: h.zx.Sizes.SMALL,
           fullWidth: true,
-          onClick: ey,
+          onClick: ev,
           children: (0, r.jsx)(I.Z, {
             children: es.intl.string(es.t.LzcpeX)
           })
@@ -369,25 +369,25 @@ let eI = Chunk647438.memo(function(e) {
         selected: null == b ? null != l && l.startsWith(ei.Z5c.MESSAGE_REQUESTS) : b === ei.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(U.g, {
-          nitroTabButtonRef: v,
+          nitroTabButtonRef: y,
           selected: null == b ? o : b.startsWith(ei.Z5c.APPLICATION_STORE),
           route: ei.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
-              page: ev(l),
+              page: ey(l),
               section: ei.jXE.NAVIGATION,
               object: ei.qAy.NAVIGATION_LINK
             }
           }
         }, "premium"), c && (0, r.jsx)(M.F, {
-          targetElementRef: v
+          targetElementRef: y
         })]
-      }) : null, (0, r.jsx)(y.i, {
+      }) : null, (0, r.jsx)(v.i, {
         selected: b === ei.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(ei.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: O,
         locationState: {
           analyticsSource: {
-            page: ev(l),
+            page: ey(l),
             section: ei.jXE.NAVIGATION,
             object: ei.qAy.NAVIGATION_LINK
           }
@@ -396,18 +396,18 @@ let eI = Chunk647438.memo(function(e) {
         selected: null != l && l.startsWith(ei.Z5c.FAMILY_CENTER) || null != b && b.startsWith(ei.Z5c.FAMILY_CENTER)
       }, "family-center") : null, f ? (0, r.jsx)(H.Z, {
         selected: null == b ? null != l && l.startsWith(ei.Z5c.QUEST_HOME_V2) : b === ei.Z5c.QUEST_HOME_V2
-      }, "quests") : null, (0, r.jsx)(eS, {}, "section-divider-top"), (0, r.jsx)(C.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(em, {}, "create-dm")]
+      }, "quests") : null, (0, r.jsx)(eC, {}, "section-divider-top"), (0, r.jsx)(S.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(em, {}, "create-dm")]
     }))]
   })
 });
 
-function eS() {
+function eC() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk686918.sectionDivider
   })
 }
 
-function eC() {
+function eS() {
   let e = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink()),
     t = (0, Chunk442837.e7)([Chunk55563.Z], () => {
       if (module === Chunk981631.Z5c.APPLICATION_STORE) returntrue;

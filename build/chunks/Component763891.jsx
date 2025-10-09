@@ -49,13 +49,13 @@ function A(e) {
   } = (0, S.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), W = (0, i.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
       case v.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), G ? L.Z : k.Z, s.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYND), G ? L.Z : T.Z, s.Z.AVATAR_DECORATION];
       case v.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, s.Z.PROFILE_EFFECT];
       case v.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, s.Z.NAMEPLATE];
       case v.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? j.Z : T.Z, s.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), G ? k.Z : j.Z, s.Z.BUNDLE]
     }
   }, [Z, G]), Q = (0, C.a)(), X = l.useMemo(() => Q(W.filter(e => {
     var t;

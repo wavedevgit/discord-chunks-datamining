@@ -1,5 +1,5 @@
-/** Chunk was on 69033 **/
-/** chunk id: 541699, original params: t,e,r (module,exports,require) **/
+/** Chunk was on 21145 **/
+/** chunk id: 541699, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Q: () => l,
   Z: () => a
@@ -10,34 +10,34 @@ var Chunk979554 = require("./979554.js"),
   Chunk212161 = require("./212161.js"),
   Chunk523080 = require("./523080.js"),
   Chunk981631 = require("./981631.js");
-let l = t => t instanceof a;
+let l = e => e instanceof a;
 class a extends Chunk523080.Z {
-  static fromServer(t) {
-    return new a(t)
+  static fromServer(e) {
+    return new a(e)
   }
-  constructor(t) {
-    super(t),
-      function(t, e, r) {
-        e in t ? Object.defineProperty(t, e, {
+  constructor(e) {
+    super(e),
+      function(e, t, r) {
+        t in e ? Object.defineProperty(e, t, {
           value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : t[e] = r
+        }) : e[t] = r
       }(this, "collectiblesItem", true), this.skuProductLine = c.POd.COLLECTIBLES;
-    let e = (t => {
-      switch (t.type) {
+    let t = (e => {
+      switch (e.type) {
         case n.Z.AVATAR_DECORATION:
-          return i.Z.fromServer(t);
+          return o.Z.fromServer(e);
         case n.Z.PROFILE_EFFECT:
-          return u.Z.fromServer(t);
+          return i.Z.fromServer(e);
         case n.Z.NAMEPLATE:
-          return s.Z.fromServer(t);
+          return s.Z.fromServer(e);
         default:
           return null
       }
-    })(t.collectibles_item);
-    if (null == e) throw Error("Collectibles item not found");
-    this.collectiblesItem = e
+    })(e.collectibles_item);
+    if (null == t) throw Error("Collectibles item not found");
+    this.collectiblesItem = t
   }
 }

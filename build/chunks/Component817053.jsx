@@ -84,13 +84,13 @@ function m(e) {
     source: o.m1.UserProfile,
     sourceUserId: l,
     trackEntryPointImpression: true
-  }), y = null != n ? n : u.intl.string(u.t.GIWFlJ), j = u.intl.formatToPlainString(u.t["8QLQBw"], {
+  }), y = null != n ? n : u.intl.string(u.t.GIWFlJ), b = u.intl.formatToPlainString(u.t["8QLQBw"], {
     gameName: y
-  }), b = e => h ? e() : (0, r.jsx)(s.ua7, {
+  }), j = e => h ? e() : (0, r.jsx)(s.ua7, {
     text: y,
     children: t => e(t)
   });
-  return b(null == v ? e => (0, r.jsx)("div", g(f({
+  return j(null == v ? e => (0, r.jsx)("div", g(f({
     className: m
   }, e), {
     children: (0, r.jsx)(p, {
@@ -99,7 +99,7 @@ function m(e) {
     })
   })) : e => (0, r.jsx)(s.P3F, g(f({}, e), {
     onClick: v,
-    "aria-label": j,
+    "aria-label": b,
     className: a()(d.clickable, m),
     children: (0, r.jsx)(p, {
       imageSrc: t,

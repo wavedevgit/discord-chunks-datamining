@@ -23,9 +23,9 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = new Chunk710845.Z("UploadArea");
+let h = new Chunk710845.Z("UploadArea");
 
-function h() {
+function v() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)("div", {
       className: a()(Chunk162130.sparkleWhite, Chunk995751.sparkleOne)
@@ -58,7 +58,7 @@ class g extends Chunk647438.Component {
       title: e,
       description: t,
       icons: n,
-      style: i,
+      style: r,
       className: l
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
@@ -70,7 +70,7 @@ class g extends Chunk647438.Component {
       style: Chunk647438,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk995751.uploadDropModal,
-        children: [this.state.isDragging && (0, Chunk951288.jsx)(h, {}), (0, Chunk951288.jsx)("div", {
+        children: [this.state.isDragging && (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)("div", {
           className: Chunk995751.bgScale
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk995751.inner,
@@ -94,35 +94,35 @@ class g extends Chunk647438.Component {
     super(...e), t = this, _(this, "state", {
       isDragging: false,
       isOverZone: false
-    }), _(this, "dragOverTimeout", null), _(this, "elementDOMRef", i.createRef()), _(this, "isAllDropFiles", e => {
+    }), _(this, "dragOverTimeout", null), _(this, "elementDOMRef", r.createRef()), _(this, "isAllDropFiles", e => {
       for (let n = 0; n < e.length; n++) try {
         var t;
-        let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
-        if (null == r) return v.warn("Dropped item is null or undefined"), false;
-        if (!r.isFile) returnfalse
+        let i = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
+        if (null == i) return h.warn("Dropped item is null or undefined"), false;
+        if (!i.isFile) returnfalse
       } catch (e) {}
       returntrue
     }), _(this, "preventUnwantedDrop", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
-        r = e.dataTransfer;
-      if (null == r) returntrue;
-      let i = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
-        l = null != r.items && !t.isAllDropFiles(r.items);
-      return !i && !l || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
+        i = e.dataTransfer;
+      if (null == i) returntrue;
+      let r = Array.isArray(i.types) && false !== i.types.indexOf("text/uri-list") && false === i.types.indexOf("application/json"),
+        l = null != i.items && !t.isAllDropFiles(i.items);
+      return !r && !l || (e.stopPropagation(), e.preventDefault(), i.effectAllowed = "none", i.dropEffect = "none", n && (t.setState({
         isDragging: false
-      }), (0, d.openUploadError)({
-        title: u.intl.string(u.t.azO1PT),
-        help: u.intl.string(u.t.Koklr6),
+      }), (0, c.openUploadError)({
+        title: d.intl.string(d.t.azO1PT),
+        help: d.intl.string(d.t.Koklr6),
         icons: t.props.icons
       })), false)
     }), _(this, "handleDragOver", e => {
-      var t, n, r;
+      var t, n, i;
       if (!this.preventUnwantedDrop(e)) returnfalse;
-      let i = e.dataTransfer;
-      if (null != i) {
-        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
-          let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
-          (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
+      let r = e.dataTransfer;
+      if (null != r) {
+        if ("move" === r.effectAllowed ? r.dropEffect = "move" : r.dropEffect = "copy", (0, o.nfh)(c.A) && (0, o.Mr3)(c.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+          let e = null == (i = this.elementDOMRef.current) ? true : i.ownerDocument.defaultView;
+          (null != e && r.types instanceof e.DOMStringList && r.types.contains("application/x-moz-file") || false !== r.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: true
           })
         }

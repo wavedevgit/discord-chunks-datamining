@@ -1,5 +1,5 @@
-/** Chunk was on 84071 **/
-/** chunk id: 232644, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 36529 **/
+/** chunk id: 232644, original params: e,t,r (module,exports,require) **/
 module.exports = {
   card: "card__39b32",
   container: "container__39b32",
@@ -16,5 +16,7 @@ module.exports = {
   nameplateTopLeft: "nameplateTopLeft__39b32",
   nameplateBottomRight: "nameplateBottomRight__39b32",
   removeItemButton: "removeItemButton__39b32",
-  overlay: "overlay__39b32"
+  overlay: "overlay__39b32",
+  itemIcon: "itemIcon__39b32",
+  itemIconHeart: "itemIconHeart__39b32"
 }

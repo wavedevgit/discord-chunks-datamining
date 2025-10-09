@@ -62,7 +62,7 @@ let x = {
     },
     getAriaLabel: e => {
       var t, n;
-      return b.intl.formatToPlainString(b.t.KfGahI, {
+      return j.intl.formatToPlainString(j.t.KfGahI, {
         applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
@@ -75,7 +75,7 @@ function P(e) {
       onAddWidget: l,
       size: c = "default",
       loading: d = false,
-      trackUserProfileEditAction: b
+      trackUserProfileEditAction: j
     } = e,
     {
       placeholder: P,
@@ -106,11 +106,11 @@ function P(e) {
       }
     }, [n, null == E ? true : E.application_id]),
     A = i.useCallback(() => {
-      d || null == T || ((0, p.qH)(n, T), b({
+      d || null == T || ((0, p.qH)(n, T), j({
         action: "WIDGET_ADDED",
         widgetEdited: n
-      }), (0, h.L$)(j.qb.WIDGET_ADDED), null == l || l())
-    }, [d, n, T, b, l]);
+      }), (0, h.L$)(b.qb.WIDGET_ADDED), null == l || l())
+    }, [d, n, T, j, l]);
   return (null != T && null != S && (t = S(T)), null == T) ? null : (0, r.jsxs)("div", {
     className: O.addButtonContainer,
     children: [(0, r.jsxs)(o.P3F, {

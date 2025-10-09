@@ -33,7 +33,7 @@ function b(e) {
   }, [t]), v = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[i.m.POPULAR]) ? e : []
-  }, [t]), x = S.length > 0 && E, [O, y] = r.useState(x ? i.m.RECOMMENDED : i.m.POPULAR), T = (0, C.Z)(), j = (0, a.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, a.e7)([u.Z], () => u.Z.getUserDiscounts()), L = (0, g.a)(), I = (0, f.s)(), P = r.useMemo(() => b === h.AW.ORBS ? I(T(v), n) : j, [j, n, b, I, T, v]), N = r.useMemo(() => b === h.AW.ORBS ? I(T(v), n) : T(v), [n, b, I, T, v]), B = r.useMemo(() => b === h.AW.ORBS ? I(T(S), n) : T(S), [n, b, I, T, S]), [A, R] = r.useState([]), Z = r.useCallback(() => {
+  }, [t]), x = S.length > 0 && E, [O, y] = r.useState(x ? i.m.RECOMMENDED : i.m.POPULAR), j = (0, C.Z)(), k = (0, a.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), T = (0, a.e7)([u.Z], () => u.Z.getUserDiscounts()), L = (0, g.a)(), I = (0, f.s)(), P = r.useMemo(() => b === h.AW.ORBS ? I(j(v), n) : k, [k, n, b, I, j, v]), N = r.useMemo(() => b === h.AW.ORBS ? I(j(v), n) : j(v), [n, b, I, j, v]), B = r.useMemo(() => b === h.AW.ORBS ? I(j(S), n) : j(S), [n, b, I, j, S]), [A, R] = r.useState([]), Z = r.useCallback(() => {
     y(i.m.RANDOM), R(s().shuffle(P))
   }, [P]);
   r.useEffect(() => {
@@ -41,8 +41,8 @@ function b(e) {
   }, [P]);
   let w = r.useMemo(() => {
     let e = [];
-    return O === i.m.RECENT ? e = P : O === i.m.PRICE_LOW_TO_HIGH ? e = b === h.AW.ORBS ? (0, d.DV)([...P], n) : (0, d.hC)([...P], n) : O === i.m.RECOMMENDED ? e = l ? (0, d.Qf)(B, k) : B : O === i.m.POPULAR ? e = l ? (0, d.Qf)(N, k) : N : O === i.m.RANDOM && (e = A), L(e)
-  }, [O, L, P, b, n, l, B, k, N, A]);
+    return O === i.m.RECENT ? e = P : O === i.m.PRICE_LOW_TO_HIGH ? e = b === h.AW.ORBS ? (0, d.DV)([...P], n) : (0, d.hC)([...P], n) : O === i.m.RECOMMENDED ? e = l ? (0, d.Qf)(B, T) : B : O === i.m.POPULAR ? e = l ? (0, d.Qf)(N, T) : N : O === i.m.RANDOM && (e = A), L(e)
+  }, [O, L, P, b, n, l, B, T, N, A]);
   return {
     sortType: O,
     setSortType: y,

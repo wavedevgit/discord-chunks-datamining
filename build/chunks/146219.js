@@ -7,5 +7,5 @@ var Chunk647438 = require("./647438.js"),
   Chunk812967 = require("./812967.js");
 
 function l(e, t) {
-  return r.useSyncExternalStore(e => i.Z.listenIsSubscribed(e), () => null != e && i.Z.isSubscribed(e, t))
+  return i.useSyncExternalStore(e => r.Z.listenIsSubscribed(e), () => null != e && r.Z.isSubscribed(e, t))
 }

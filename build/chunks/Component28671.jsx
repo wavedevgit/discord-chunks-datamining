@@ -55,18 +55,18 @@ function v(e) {
     onDismiss: v
   } = e, {
     trackUserProfileEditAction: y
-  } = (0, s.KZ)(), j = i.useMemo(() => new o.q({
+  } = (0, s.KZ)(), b = i.useMemo(() => new o.q({
     type: l.l.APPLICATION,
     applicationId: n.id
-  }), [n.id]), b = i.useCallback(() => {
-    null != j && ((0, c.qH)(j.type, j, true), y({
+  }), [n.id]), j = i.useCallback(() => {
+    null != b && ((0, c.qH)(b.type, b, true), y({
       action: "WIDGET_ADDED",
-      widgetEdited: j.type
+      widgetEdited: b.type
     }), (0, u.L$)(f.qb.WIDGET_ADDED))
-  }, [j, y]);
+  }, [b, y]);
   return (0, r.jsx)(d.Z, {
     user: t,
-    widget: j,
+    widget: b,
     cta: (0, r.jsx)(d.Z.Cta, {
       heading: p.intl.format(p.t.OIzLCw, {
         applicationName: n.name
@@ -96,7 +96,7 @@ function v(e) {
               applicationName: n.name
             }),
             onClick: () => {
-              v(g.L.TAKE_ACTION), b()
+              v(g.L.TAKE_ACTION), j()
             }
           }))
         })]

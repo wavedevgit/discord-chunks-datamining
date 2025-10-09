@@ -267,8 +267,8 @@ class q extends Chunk647438.PureComponent {
       children: [(0, r.jsx)(h.Exd, {
         percent: t,
         size: h.Exd.Sizes.SMALL,
-        foregroundColor: (0, v.Lq)(n),
-        foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
+        foregroundColor: (0, y.Lq)(n),
+        foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : true,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
         className: M.progressCellText,
@@ -493,10 +493,10 @@ let Y = () => (0, Chunk951288.jsx)(H, {
     cellClassName: Chunk248241.nameCell,
     render: e => (0, r.jsxs)(I.Z, {
       align: I.Z.Align.CENTER,
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(S.Z, {
         game: e.application,
         className: M.__invalid_gameIcon,
-        size: C.A.SMALL
+        size: S.A.SMALL
       }), (0, r.jsx)("div", {
         className: M.nameCellText,
         children: e.application.name

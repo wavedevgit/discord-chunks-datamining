@@ -67,7 +67,7 @@ let _ = e => {
   } = (0, u.ZP)(), T = m.default.getCurrentUser(), R = null != T ? f.Z.getFirstWishlistId(T.id) : null, k = l.useMemo(() => {
     var e;
     return t.type === o.Z.VARIANTS_GROUP && null != A && (null == (e = t.variants) ? true : e[A]) != null ? t.variants[A] : t
-  }, [t, A]), w = k.skuId, D = (0, y.n)(R, w), M = l.useRef(null), [F, U] = l.useState(null);
+  }, [t, A]), w = k.skuId, D = (0, y.ny)(R, w), M = l.useRef(null), [F, U] = l.useState(null);
   l.useEffect(() => {
     U(null)
   }, [w]);

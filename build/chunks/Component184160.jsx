@@ -1,4 +1,4 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 23404 **/
 /** chunk id: 184160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => _
@@ -23,21 +23,21 @@ function _(e) {
   } = e, {
     activeSubscription: i,
     selectedSkuId: _,
-    setSelectedPlanId: h,
-    startedPaymentFlowWithPaymentSourcesRef: f
-  } = (0, c.JL)(), {
+    setSelectedPlanId: f,
+    startedPaymentFlowWithPaymentSourcesRef: h
+  } = (0, C.JL)(), {
     isGift: m
-  } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, g = null != x ? (0, s.gq)(x.planId) : null, j = null != x ? (0, s.Rd)(x.planId) : null, b = (0, u.Kp)({
+  } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, b = null != x ? (0, s.gq)(x.planId) : null, g = null != x ? (0, s.Rd)(x.planId) : null, j = (0, u.Kp)({
     isTrial: false,
     isGift: m,
     selectedSkuId: _,
-    startedPaymentFlowWithPaymentSources: f.current
+    startedPaymentFlowWithPaymentSources: h.current
   });
-  return a()(null != j, "Expected premium type"), (0, r.jsx)(o.Z, {
-    premiumType: j,
+  return a()(null != g, "Expected premium type"), (0, r.jsx)(o.Z, {
+    premiumType: g,
     titleText: p.intl.string(p.t["7VcWW1"]),
     subtitleText: p.intl.format(p.t.Qk34Ii, {
-      subscriptionName: g
+      subscriptionName: b
     }),
     footer: (0, r.jsxs)(l.hE2, {
       direction: "horizontal-reverse",
@@ -46,7 +46,7 @@ function _(e) {
         variant: "primary",
         text: p.intl.string(p.t["3PatS0"]),
         onClick: () => {
-          b ? (h((0, u.nA)(_, i)), t(C.h8.REVIEW)) : t(C.h8.PLAN_SELECT)
+          j ? (f((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(l.zxk, {
         variant: "secondary",

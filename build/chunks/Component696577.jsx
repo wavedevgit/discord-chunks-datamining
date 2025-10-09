@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk507694 = require("./507694.js");
 
-function v(e) {
+function y(e) {
   var t;
   let {
     user: n,
@@ -45,7 +45,7 @@ function v(e) {
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
-      className: y.staffIndicator,
+      className: v.staffIndicator,
       children: (0, r.jsx)(o.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: E.intl.string(E.t.oMx98P)
@@ -91,7 +91,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     isGameRelationship: t,
     applicationId: n,
@@ -99,7 +99,7 @@ function S(e) {
     isProvisional: s
   } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eT0"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
-    className: y.applicationSublabel,
+    className: v.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -120,7 +120,7 @@ function S(e) {
   })
 }
 
-function C(e) {
+function S(e) {
   let {
     user: t,
     hovered: n,
@@ -133,7 +133,7 @@ function C(e) {
     hovered: n,
     status: i,
     showAccountIdentifier: !l && !t.isProvisional,
-    subText: (0, r.jsx)(S, {
+    subText: (0, r.jsx)(C, {
       isGameRelationship: l,
       isProvisional: t.isProvisional,
       applicationId: a,
@@ -161,16 +161,16 @@ function T(e) {
     user: t,
     onClick: f,
     children: e => (0, r.jsxs)("div", {
-      className: y.listItemContents,
-      children: [(0, r.jsx)(C, {
+      className: v.listItemContents,
+      children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
         status: d,
         isGameRelationship: c,
         applicationId: o
       }), (0, r.jsx)("div", {
-        className: y.actions,
-        children: n === O.OGo.PENDING_INCOMING ? (0, r.jsx)(v, {
+        className: v.actions,
+        children: n === O.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
           user: t,
           applicationId: o,
           isGameRelationship: c,

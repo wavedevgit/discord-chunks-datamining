@@ -26,19 +26,19 @@ function b() {
     _ = false === (null == (t = null == b ? true : b.disabled) || exports),
     O = Chunk131951.Z.supportsInApp(Chunk65154.AN.VIDEO) && Chunk131951.Z.supportsInApp(Chunk65154.AN.DESKTOP_CAPTURE),
     E = Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId()),
-    y = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
-  if (null == E || null == y) return;
+    v = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
+  if (null == E || null == v) return;
   let {
-    reachedLimit: v
+    reachedLimit: y
   } = (0, Chunk829750.t)(E);
-  if (!v) {
+  if (!y) {
     if (E.isGuildStageVoice()) {
       let e = Chunk565799.Z.getMutableParticipants(E.id, Chunk501655.pV.SPEAKER),
         t = null == module ? true : module.find(e => {
           let {
             user: t
           } = e;
-          return t.id === y
+          return t.id === v
         });
       if (!(0, Chunk368442.tu)(E.guild_id) || !O || null == exports || exports.voiceState.suppress) return
     }

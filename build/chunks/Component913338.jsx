@@ -1,7 +1,7 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 23404 **/
 /** chunk id: 913338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => C
+  w: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,20 +11,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk993365 = require("./993365.js"),
   Chunk530989 = require("./530989.js");
 
-function c(e) {
+function C(e) {
   let {
     option: t,
     selected: n,
     onClick: a,
-    disabled: c = false
-  } = e, C = i.useCallback(e => a(t), [a, t]);
+    disabled: C = false
+  } = e, c = i.useCallback(e => a(t), [a, t]);
   return (0, r.jsx)(o.P3F, {
     className: l()(d.item, {
       [d.itemSelected]: n,
-      [d.disabled]: c
+      [d.disabled]: C
     }),
-    "aria-disabled": c,
-    onClick: c ? true : C,
+    "aria-disabled": C,
+    onClick: C ? true : c,
     onMouseEnter: t.onMouseEnter,
     onMouseLeave: t.onMouseLeave,
     children: (0, r.jsxs)(s.x, {
@@ -39,17 +39,17 @@ function c(e) {
   })
 }
 
-function C(e) {
+function c(e) {
   let {
     options: t,
     value: n,
     onChange: a,
     className: o,
     disabled: s = false
-  } = e, C = i.useMemo(() => t.findIndex(e => e.value === n), [t, n]), u = i.useCallback(e => {
+  } = e, c = i.useMemo(() => t.findIndex(e => e.value === n), [t, n]), u = i.useCallback(e => {
     var t;
     let i = n === e.value;
-    return (0, r.jsx)(c, {
+    return (0, r.jsx)(C, {
       selected: i,
       option: e,
       onClick: a,
@@ -59,8 +59,8 @@ function C(e) {
   return (0, r.jsx)("div", {
     className: l()(d.container, o, {
       [d.disabledContainer]: s,
-      [d.trickSelected]: 0 === C,
-      [d.treatSelected]: 1 === C
+      [d.trickSelected]: 0 === c,
+      [d.treatSelected]: 1 === c
     }),
     children: t.map(u)
   })

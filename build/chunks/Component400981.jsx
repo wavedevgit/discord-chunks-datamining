@@ -1,4 +1,4 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 23404 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -24,29 +24,29 @@ function m(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: m
-  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
-    analyticsLocations: j
-  } = (0, s.ZP)(), b = l.EFr.SIZE_32, v = (0, d.Z)(null == m ? true : m.assetId, b, !g), y = (0, u.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
-  return null == n || null == S ? null : (0, r.jsx)(_.O3, {
+  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), b = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
+    analyticsLocations: g
+  } = (0, s.ZP)(), j = l.EFr.SIZE_32, y = (0, d.Z)(null == m ? true : m.assetId, j, !b), v = (0, u.Z)(), L = null == v ? true : v.giftPurchaseConfirmation;
+  return null == n || null == L ? null : (0, r.jsx)(_.O3, {
     children: (0, r.jsx)(l.mzw, {
-      align: C.Z.Align.CENTER,
+      align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: f.promotionalFooter,
+        className: h.promotionalFooter,
         children: [(0, r.jsx)(l.Xo$, {
           "aria-label": null == x ? true : x.username,
-          size: b,
-          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(b), !g),
-          avatarDecoration: v
+          size: j,
+          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(j), !b),
+          avatarDecoration: y
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          text: S.collectRewardButtonText(),
+          text: L.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, c.Z)({
+            t(), (0, C.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: j,
-              purchaseType: h.o8.PROMOTIONAL
+              analyticsLocations: g,
+              purchaseType: f.o8.PROMOTIONAL
             })
           }
         })]

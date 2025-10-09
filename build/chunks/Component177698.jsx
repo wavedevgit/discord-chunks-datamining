@@ -59,24 +59,24 @@ let O = (0, Chunk703912.Z)(e => {
     parsedPermissions: f,
     responseType: O,
     redirectUri: E,
-    codeChallenge: y,
-    codeChallengeMethod: v,
+    codeChallenge: v,
+    codeChallengeMethod: y,
     state: I,
-    guildId: S,
-    channelId: C,
+    guildId: C,
+    channelId: S,
     prompt: T,
     disableGuildSelect: N,
     disclosures: j,
     integrationType: P,
     pid: x,
     signal: A
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(S, "_").concat(C), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, h.jU)(x),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
-      channelId: C
+      channelId: S
     }) ? w = i.u1M : a.context === g.IlC.POPOUT && (w = i.u1M);
     let R = false,
       D = l => {
@@ -132,12 +132,12 @@ let O = (0, Chunk703912.Z)(e => {
       callback: D,
       responseType: O,
       redirectUri: E,
-      codeChallenge: y,
-      codeChallengeMethod: v,
+      codeChallenge: v,
+      codeChallengeMethod: y,
       state: I,
       permissions: f,
-      guildId: S,
-      channelId: C,
+      guildId: C,
+      channelId: S,
       prompt: T,
       disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
       integrationType: P,

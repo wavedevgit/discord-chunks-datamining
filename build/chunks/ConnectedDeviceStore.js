@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 34828, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => S,
+  X: () => C,
   Z: () => N
 }), require("./35282.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -31,17 +31,17 @@ let g = {
   _ = {},
   O = {},
   E = {},
-  y = {
+  v = {
     id: null,
     justChanged: false
   },
-  v = {
+  y = {
     id: null,
     justChanged: false
   },
   I = /\(([^)]+)\)/;
 
-function S(e) {
+function C(e) {
   if ((0, d.getPlatform)() === d.PlatformTypes.WINDOWS) {
     let t = e.name.match(I);
     if (null != t) return t[1]
@@ -49,7 +49,7 @@ function S(e) {
   return e.name
 }
 
-function C(e, t, n) {
+function S(e, t, n) {
   return null == e || e.displayName !== t ? {
     displayName: t,
     type: n
@@ -75,13 +75,13 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return _
   }
   get lastInputSystemDevice() {
-    return y
+    return v
   }
   get outputDevices() {
     return O
   }
   get lastOutputSystemDevice() {
-    return v
+    return y
   }
 }
 h(T, "displayName", "ConnectedDeviceStore"), h(T, "persistKey", "ConnectedDeviceStore"), h(T, "migrations", [e => {
@@ -119,19 +119,19 @@ let N = new T(Chunk570140.Z, {
       inputDevices: t,
       outputDevices: n
     } = e, r = {};
-    y.justChanged = false, t.forEach(e => {
-      if (r[S(e)] = e.id, e.id === f.w5) {
+    v.justChanged = false, t.forEach(e => {
+      if (r[C(e)] = e.id, e.id === f.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
-        n !== y.id && (y.justChanged = true), y.id = n
+        n !== v.id && (v.justChanged = true), v.id = n
       }
     });
     let i = {};
-    if (v.justChanged = false, n.forEach(e => {
-        if (i[S(e)] = e.id, e.id === f.w5) {
+    if (y.justChanged = false, n.forEach(e => {
+        if (i[C(e)] = e.id, e.id === f.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
-          n !== v.id && (v.justChanged = true), v.id = n
+          n !== y.id && (y.justChanged = true), y.id = n
         }
       }), !b) {
       _ = r, O = i, b = true;
@@ -144,9 +144,9 @@ let N = new T(Chunk570140.Z, {
       u = l().difference(a, o),
       d = l().difference(s, c);
     return u.length > 0 || d.length > 0 ? E = {} : (l().difference(o, a).forEach(e => {
-      E[e] = C(E[e], e, p.Q.INPUT)
+      E[e] = S(E[e], e, p.Q.INPUT)
     }), l().difference(c, s).forEach(e => {
-      E[e] = C(E[e], e, p.Q.OUTPUT)
+      E[e] = S(E[e], e, p.Q.OUTPUT)
     })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (_ = r, O = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {

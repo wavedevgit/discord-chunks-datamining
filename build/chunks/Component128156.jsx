@@ -59,8 +59,8 @@ function A(e) {
   }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != U, V = Z && null == U && null == W && null != M, Y = !z && (H || V), q = G.length > 0, X = L.some(e => (0, a.Z)(e));
-  if (!Y && !q && F) return (0, r.jsx)("div", {
+  }), H = L.length > 0 || null != U, Y = Z && null == U && null == W && null != M, q = !z && (H || Y), V = G.length > 0, X = L.some(e => (0, a.Z)(e));
+  if (!q && !V && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
       length: 8
@@ -75,7 +75,7 @@ function A(e) {
       })]
     }, t))
   });
-  if (!Y && !q && !F) {
+  if (!q && !V && !F) {
     var K;
     return B ? (0, r.jsx)(x.Uf, {
       onClose: D
@@ -91,7 +91,7 @@ function A(e) {
     fade: true,
     children: [(() => {
       let e = B && R && !X;
-      return Y ? (0, r.jsx)(P.Z, {
+      return q ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: T.cards,
@@ -99,7 +99,7 @@ function A(e) {
             children: (0, r.jsx)(v.Z, {
               variant: "horizontal"
             })
-          }), !_ && V && (0, r.jsx)("li", {
+          }), !_ && Y && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
@@ -107,7 +107,7 @@ function A(e) {
               onClose: D
             })
           }), null != U && (0, r.jsx)("li", {
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
               stream: U,
@@ -120,7 +120,7 @@ function A(e) {
               activity: e,
               onClose: D
             })
-          }, "live-".concat(i))), _ && V && (0, r.jsx)("li", {
+          }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
@@ -135,7 +135,7 @@ function A(e) {
           variant: "horizontal"
         })
       }) : null
-    })(), q ? (0, r.jsx)(P.Z, {
+    })(), V ? (0, r.jsx)(P.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
@@ -147,7 +147,7 @@ function A(e) {
       children: (0, r.jsx)("ul", {
         className: T.cards,
         children: G.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(j.Z, {
+          children: (0, r.jsx)(b.Z, {
             user: t,
             entry: e,
             onClose: D

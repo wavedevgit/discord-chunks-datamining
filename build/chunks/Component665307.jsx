@@ -97,9 +97,9 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.nameBodyCell,
     render: e => (0, i.jsxs)(O.Z, {
       align: O.Z.Align.CENTER,
-      children: [(0, i.jsx)(y.Z, {
+      children: [(0, i.jsx)(v.Z, {
         game: e.application,
-        size: y.A.SMALL,
+        size: v.A.SMALL,
         className: A.gameIcon
       }), (0, i.jsxs)("div", {
         className: A.nameCellInfo,
@@ -137,9 +137,9 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? x.intl.string(x.t.Md326u) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(v.ZP, {
+      return t = e.isRunning ? x.intl.string(x.t.Md326u) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
-        location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+        location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : x.intl.string(x.t.EoWLrq), (0, i.jsx)(O.Z, {
         align: O.Z.Align.CENTER,
         className: o()({
@@ -428,7 +428,7 @@ class B extends(r = Chunk647438.PureComponent) {
 }
 
 function H(e) {
-  let t = l.useContext(C.AnalyticsContext),
+  let t = l.useContext(S.AnalyticsContext),
     n = (0, s.TH)(),
     {
       applicationViewItems: r,
@@ -444,11 +444,11 @@ function H(e) {
       sortDirection: d,
       activeRowKey: p,
       isNavigatingByKeyboard: f
-    } = (0, c.cj)([S.Z], () => ({
-      sortKey: S.Z.sortKey,
-      sortDirection: S.Z.sortDirection,
-      activeRowKey: S.Z.activeRowKey,
-      isNavigatingByKeyboard: S.Z.isNavigatingByKeyboard
+    } = (0, c.cj)([C.Z], () => ({
+      sortKey: C.Z.sortKey,
+      sortDirection: C.Z.sortDirection,
+      activeRowKey: C.Z.activeRowKey,
+      isNavigatingByKeyboard: C.Z.isNavigatingByKeyboard
     }));
   return (0, i.jsx)(B, L(w({}, e), {
     analyticsContext: t,

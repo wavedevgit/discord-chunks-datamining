@@ -30,18 +30,18 @@ let S = e => {
       cardRef: h,
       onClick: S,
       icon: v
-    } = e, x = (0, d.Nd)(), O = null == x ? true : x.tab, y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), T = c.ZP.canUseCollectibles(y), j = (0, u.sp)(), {
-      isPurchased: k,
+    } = e, x = (0, d.Nd)(), O = null == x ? true : x.tab, y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, u.sp)(), {
+      isPurchased: T,
       isPartiallyOwnedBundle: L
     } = (0, f.L)(t), I = (0, g.rN)(t), P = (0, g.G1)(t), N = (0, g.ne)({
       product: t,
       isPartiallyOwnedBundle: L,
-      isPurchased: k
+      isPurchased: T
     }), B = (0, _.Iw)(t), {
       isOrbExclusive: A
     } = (0, m.Ip)({
       product: t,
-      isPremiumUser: T,
+      isPremiumUser: j,
       tab: O,
       hasDiscountOffer: null != B
     }), R = (0, C.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
@@ -54,7 +54,7 @@ let S = e => {
       }
     }) : (0, r.jsx)(u.k0, {
       newValue: {
-        pageCategory: O === b.AW.HOME || null == j ? true : j.pageCategory
+        pageCategory: O === b.AW.HOME || null == k ? true : k.pageCategory
       },
       children: (0, r.jsx)(p.Z, {
         primary: true,

@@ -70,7 +70,7 @@ function y(e) {
         className: O.shopScroll,
         ref: p,
         onScroll: h,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(j, {
           isFullScreen: t,
           isSmallScreen: v,
           filterBarOpen: E,
@@ -89,7 +89,7 @@ function y(e) {
     })
   })
 }
-let T = e => {
+let j = e => {
   let {
     isFullScreen: t,
     isSmallScreen: n,
@@ -97,14 +97,14 @@ let T = e => {
     setFilterBarOpen: o,
     tab: C,
     scrollerRef: y,
-    sortedCategories: T,
-    setCategoryRef: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
+    sortedCategories: j,
+    setCategoryRef: k
+  } = e, T = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), P = (0, u.sp)(), {
     handlePageChange: N,
     currentPage: B
   } = (0, m.h)({
     scrollerRef: y,
-    sortedCategories: T
+    sortedCategories: j
   }), A = l.useCallback(e => {
     c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == P ? true : P.sessionId,
@@ -135,10 +135,10 @@ let T = e => {
     className: O.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: i()(O.inventory, {
-        [O.inventoryFilter]: k,
+        [O.inventoryFilter]: T,
         [O.pageFullscreen]: t
       }),
-      children: [k && (0, r.jsxs)("div", {
+      children: [T && (0, r.jsxs)("div", {
         className: O.controls,
         children: [(0, r.jsx)("div", {
           className: O.controlsLeftSide,
@@ -182,7 +182,7 @@ let T = e => {
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), k && !I ? (0, r.jsx)(b.Z, {
+      }), T && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
         scrollerRef: y,
         tab: C
@@ -196,8 +196,8 @@ let T = e => {
         },
         children: (0, r.jsx)(p.Z, {
           isFullScreen: t,
-          sortedCategories: T,
-          setCategoryRef: j,
+          sortedCategories: j,
+          setCategoryRef: k,
           currentPage: B,
           handlePageChange: A
         })

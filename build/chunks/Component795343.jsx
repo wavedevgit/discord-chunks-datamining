@@ -2,7 +2,7 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => j
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,14 +28,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function T(e) {
+function j(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: s,
-    scrollerRef: T,
-    tab: j
-  } = e, k = (0, d.sp)(), L = null != (t = null == k ? true : k.sessionId) ? t : "", {
+    scrollerRef: j,
+    tab: k
+  } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: P
   } = (0, v.Z)(), N = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
@@ -45,10 +45,10 @@ function T(e) {
     isFetchingResults: Z
   } = (0, h.a)(), w = (0, a.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), F = l.useCallback(() => {
     var e;
-    null == T || null == (e = T.current) || e.scrollToTop({
+    null == j || null == (e = j.current) || e.scrollToTop({
       animate: true
     })
-  }, [T]), H = null == B ? true : B.join("");
+  }, [j]), H = null == B ? true : B.join("");
   l.useEffect(() => {
     F()
   }, [H, F]);
@@ -58,12 +58,12 @@ function T(e) {
     n || (0, _.n)({
       sessionId: L,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: j,
+      tab: k,
       isFullScreen: s,
       unpublishedCategoriesShown: P,
       cacheDisabled: I
     })
-  }, [L, s, P, I, n, j]);
+  }, [L, s, P, I, n, k]);
   let W = l.useRef(null),
     {
       setQueryPageSize: U,
@@ -85,15 +85,15 @@ function T(e) {
   }, [U]);
   let Q = l.useCallback(e => {
       u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == k ? true : k.sessionId,
-        page_section: null == k ? true : k.pageSection,
-        page_category: null == k ? true : k.pageCategory,
+        collectibles_shop_session_id: null == T ? true : T.sessionId,
+        page_section: null == T ? true : T.pageSection,
+        page_category: null == T ? true : T.pageCategory,
         page_index: e,
         page_size: z,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
       }), V((e - 1) * z)
-    }, [k, z, V]),
+    }, [T, z, V]),
     X = f.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
@@ -119,7 +119,7 @@ function T(e) {
               product: e,
               user: N,
               category: n,
-              tab: j
+              tab: k
             }, e.skuId)
           }, e.skuId)
         })]

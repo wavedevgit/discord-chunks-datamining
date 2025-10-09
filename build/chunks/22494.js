@@ -1,5 +1,5 @@
-/** Chunk was on 69033 **/
-/** chunk id: 22494, original params: t,e,r (module,exports,require) **/
+/** Chunk was on 21145 **/
+/** chunk id: 22494, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -8,68 +8,68 @@ var Chunk81825 = require("./81825.js"),
   Chunk541699 = require("./541699.js"),
   Chunk981631 = require("./981631.js");
 
-function o(t, e, r) {
-  return e in t ? Object.defineProperty(t, e, {
+function u(e, t, r) {
+  return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = r, t
+  }) : e[t] = r, e
 }
 class c extends Chunk81825.Z {
-  static fromServer(t) {
-    var e, r, {
+  static fromServer(e) {
+    var t, r, {
         user_id: n,
         wishlist_items: l
-      } = t,
-      a = function(t, e) {
-        if (null == t) return {};
-        var r, n, i = function(t, e) {
-          if (null == t) return {};
-          var r, n, i = {},
-            s = Object.keys(t);
-          for (n = 0; n < s.length; n++) r = s[n], e.indexOf(r) >= 0 || (i[r] = t[r]);
-          return i
-        }(t, e);
+      } = e,
+      a = function(e, t) {
+        if (null == e) return {};
+        var r, n, o = function(e, t) {
+          if (null == e) return {};
+          var r, n, o = {},
+            s = Object.keys(e);
+          for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+          return o
+        }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var s = Object.getOwnPropertySymbols(t);
-          for (n = 0; n < s.length; n++) r = s[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (i[r] = t[r])
+          var s = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
         }
-        return i
-      }(t, ["user_id", "wishlist_items"]);
-    let d = l.map(t => t.sku_product_line === u.POd.COLLECTIBLES ? s.Z.fromServer(t) : i.Z.fromServer(t));
-    return new c((e = function(t) {
-      for (var e = 1; e < arguments.length; e++) {
-        var r = null != arguments[e] ? arguments[e] : {},
+        return o
+      }(e, ["user_id", "wishlist_items"]);
+    let p = l.map(e => e.sku_product_line === i.POd.COLLECTIBLES ? s.Z.fromServer(e) : o.Z.fromServer(e));
+    return new c((t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(r, t).enumerable
-        }))), n.forEach(function(e) {
-          o(t, e, r[e])
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          u(e, t, r[t])
         })
       }
-      return t
+      return e
     }({}, a), r = r = {
       userId: n,
-      items: d
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
-      var r = Object.keys(t);
+      items: p
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(t);
+        var n = Object.getOwnPropertySymbols(e);
         r.push.apply(r, n)
       }
       return r
-    })(Object(r)).forEach(function(t) {
-      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-    }), e))
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    }), t))
   }
   getSkuIds() {
-    return this.items.map(t => t.skuId)
+    return this.items.map(e => e.skuId)
   }
-  hasSkuId(t) {
-    return this.items.some(e => e.skuId === t)
+  hasSkuId(e) {
+    return this.items.some(t => t.skuId === e)
   }
-  constructor(t) {
-    super(), o(this, "id", true), o(this, "userId", true), o(this, "items", true), this.id = t.id, this.userId = t.userId, this.items = t.items
+  constructor(e) {
+    super(), u(this, "id", true), u(this, "userId", true), u(this, "items", true), this.id = e.id, this.userId = e.userId, this.items = e.items
   }
 }

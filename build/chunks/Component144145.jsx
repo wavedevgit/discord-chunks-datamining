@@ -66,7 +66,7 @@ function P(e) {
   } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(S.ABu.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
@@ -75,16 +75,16 @@ function P(e) {
     return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
       action: () => (0, m.openUserSettings)(g.n.CONNECTIONS_PANEL, {
-        section: S.oAB.CONNECTIONS
+        section: C.oAB.CONNECTIONS
       }),
-      label: C.intl.formatToPlainString(C.t.XWSHTU, {
+      label: S.intl.formatToPlainString(S.t.XWSHTU, {
         platform: j
       })
     })
   }(e), x = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(y.AnalyticsContext);
+    } = e, n = i.useContext(v.AnalyticsContext);
     return (0, l.Wu)([f.ZP, O.Z, h.Z, E.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
@@ -92,8 +92,8 @@ function P(e) {
       } = e, i = O.Z.getActiveLibraryApplication(r.id);
       return N(T({}, e), {
         libraryApplication: i,
-        canJoin: null != t && (0, u.Z)(t, S.xjy.JOIN) && t.type === S.IIU.PLAYING,
-        canPlay: (0, v.t)({
+        canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
+        canPlay: (0, y.t)({
           LibraryApplicationStore: O.Z,
           LaunchableGameStore: h.Z,
           DispatchApplicationStore: E.Z,
@@ -121,18 +121,18 @@ function P(e) {
       async function c() {
         if (null == i) return;
         let e = await o.Z.sendActivityInviteUser({
-          type: S.mFx.JOIN_REQUEST,
+          type: C.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
-          location: S.Sbl.USER_ACTIVITY_ACTIONS
+          location: C.Sbl.USER_ACTIVITY_ACTIONS
         });
         null != e && s.default.selectPrivateChannel(e.id)
       }
       return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
-        label: t ? C.intl.formatToPlainString(C.t.wFAvxM, {
+        label: t ? S.intl.formatToPlainString(S.t.wFAvxM, {
           name: l.toString()
-        }) : C.intl.string(C.t.OKsSCQ),
+        }) : S.intl.string(S.t.OKsSCQ),
         action: c
       })
     }(e, n), function(e, t) {
@@ -146,9 +146,9 @@ function P(e) {
         isLaunching: u
       } = e;
       if (!s || null == n) return null;
-      let d = c ? C.intl.formatToPlainString(C.t["gBme//"], {
+      let d = c ? S.intl.formatToPlainString(S.t["gBme//"], {
         name: i.name
-      }) : u ? C.intl.formatToPlainString(C.t.WtSQwM, {
+      }) : u ? S.intl.formatToPlainString(S.t.WtSQwM, {
         name: i.name
       }) : true;
       return (0, r.jsx)(a.sNh, {
@@ -157,14 +157,14 @@ function P(e) {
           (0, I.playApplication)(i.id, l, {
             analyticsParams: {
               location: N(T({}, o), {
-                object: S.qAy.LIST_ITEM
+                object: C.qAy.LIST_ITEM
               })
             }
           })
         },
-        label: t ? C.intl.formatToPlainString(C.t.ZDZEJC, {
+        label: t ? S.intl.formatToPlainString(S.t.ZDZEJC, {
           name: i.name
-        }) : C.intl.string(C.t.XKUw8v),
+        }) : S.intl.string(S.t.XKUw8v),
         subtext: d
       })
     }(e, n))

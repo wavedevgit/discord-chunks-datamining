@@ -32,7 +32,7 @@ let C = e => {
     x = (0, d.YG)(_, m),
     O = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    T = (0, o.sp)();
+    j = (0, o.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: O,
     onChange: v,
@@ -62,13 +62,13 @@ let C = e => {
       }),
       onClick: () => {
         E("shop marketing tile", S), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == T ? true : T.sessionId,
+          collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: S,
           page_type: "home",
-          page_section: null == T ? true : T.pageSection,
-          page_category: null == T ? true : T.pageCategory,
+          page_section: null == j ? true : j.pageSection,
+          page_category: null == j ? true : j.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == T ? true : T.tilePosition),
+          tile_position: String(null == j ? true : j.tilePosition),
           cta_name: null
         })
       },
@@ -94,13 +94,13 @@ let C = e => {
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
             E("shop marketing take me there button", S), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == T ? true : T.sessionId,
+              collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: S,
               page_type: "home",
-              page_section: null == T ? true : T.pageSection,
-              page_category: null == T ? true : T.pageCategory,
+              page_section: null == j ? true : j.pageSection,
+              page_category: null == j ? true : j.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == T ? true : T.tilePosition),
+              tile_position: String(null == j ? true : j.tilePosition),
               cta_name: "Take me there button"
             })
           }

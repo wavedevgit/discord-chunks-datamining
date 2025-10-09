@@ -104,14 +104,14 @@ function x(e) {
       serverMute: L,
       serverDeaf: R
     } = e,
-    D = (0, o.e7)([y.Z], () => y.Z.isLocalMute(x.id)),
+    D = (0, o.e7)([v.Z], () => v.Z.isLocalMute(x.id)),
     k = (0, d.Z)({
       userId: x.id,
       checkSoundSharing: true
     }),
     M = null != (t = E.getGuildId()) ? t : true,
     U = x.getAvatarURL(E.guild_id, 24),
-    G = null != A ? A : v.ZP.getName(x),
+    G = null != A ? A : y.ZP.getName(x),
     {
       icon: B,
       colorize: H,
@@ -136,7 +136,7 @@ function x(e) {
       mute: Z,
       localMute: D
     })) ? l : {},
-    F = null != V ? S.intl.formatToPlainString(S.t["1+MVBA"], {
+    F = null != V ? C.intl.formatToPlainString(C.t["1+MVBA"], {
       userName: G,
       status: V()
     }) : G;
@@ -182,22 +182,22 @@ function x(e) {
         onClick: t => {
           e.onClick(t), (0, m.v)(f, m.d.VOICE_USER)
         },
-        className: C.avatarContainer,
+        className: S.avatarContainer,
         onContextMenu: z,
         focusProps: j,
         children: (0, r.jsx)(_.Z, {
           shakeLocation: I.oZ.VOICE_USER,
           isShaking: k,
           children: (0, r.jsx)("div", {
-            className: a()(C.avatar, {
-              [C.speaking]: k
+            className: a()(S.avatar, {
+              [S.speaking]: k
             }),
             style: {
               backgroundImage: "url(".concat(U, ")")
             },
             children: null != B ? (0, r.jsx)(B, {
-              className: a()(C.avatarIconOverlay, {
-                [C.avatarIconRed]: H
+              className: a()(S.avatarIconOverlay, {
+                [S.avatarIconRed]: H
               }),
               color: "currentColor",
               size: "xs"
@@ -242,22 +242,22 @@ function A(e) {
     onClick: () => u(!s),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
-    tooltip: s ? S.intl.string(S.t["Z/Tya2"]) : S.intl.string(S.t.XR5BAQ),
+    tooltip: s ? C.intl.string(C.t["Z/Tya2"]) : C.intl.string(C.t.XR5BAQ),
     icon: (0, r.jsx)(_, {
       size: "xs",
       color: "currentColor"
     }),
     focusProps: j
-  }), y = b && s ? t : m;
-  return y.length <= 0 ? null : (0, r.jsx)(c.zJl, {
-    className: a()(C.scroller, l),
+  }), v = b && s ? t : m;
+  return v.length <= 0 ? null : (0, r.jsx)(c.zJl, {
+    className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
       ref: h,
-      className: a()(C.voiceUsers, !s && C.collapsed),
+      className: a()(S.voiceUsers, !s && S.collapsed),
       role: "group",
-      "aria-label": S.intl.string(S.t["/ZgaVV"]),
-      children: [y.map(e => {
+      "aria-label": C.intl.string(C.t["/ZgaVV"]),
+      children: [v.map(e => {
         let {
           user: t,
           nick: i,

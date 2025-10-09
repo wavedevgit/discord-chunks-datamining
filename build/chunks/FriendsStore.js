@@ -24,7 +24,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function S(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,14 +33,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ function T(e, t) {
 }
 
 function N(e) {
-  let t = y.default.getUser(e);
+  let t = v.default.getUser(e);
   return {
     user: t,
     usernameLower: null != t ? t.username.toLowerCase() : null
@@ -92,7 +92,7 @@ class x extends Chunk81825.Z {
   }
   constructor(e) {
     var t;
-    super(), S(this, "key", true), S(this, "userId", true), S(this, "type", true), S(this, "status", true), S(this, "isMobile", true), S(this, "activities", true), S(this, "applicationStream", true), S(this, "user", true), S(this, "usernameLower", true), S(this, "mutualGuildsLength", true), S(this, "mutualGuilds", true), S(this, "nickname", true), S(this, "spam", true), S(this, "giftIntentType", true), S(this, "ignoredUser", true), S(this, "applicationId", true), S(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
+    super(), C(this, "key", true), C(this, "userId", true), C(this, "type", true), C(this, "status", true), C(this, "isMobile", true), C(this, "activities", true), C(this, "applicationStream", true), C(this, "user", true), C(this, "usernameLower", true), C(this, "mutualGuildsLength", true), C(this, "mutualGuilds", true), C(this, "nickname", true), C(this, "spam", true), C(this, "giftIntentType", true), C(this, "ignoredUser", true), C(this, "applicationId", true), C(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
   }
 }
 class A {
@@ -100,7 +100,7 @@ class A {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === v.OGo.FRIEND && e.add(n), new x(T(C({
+        return r === y.OGo.FRIEND && e.add(n), new x(T(S({
           key: n,
           type: r,
           userId: n,
@@ -108,7 +108,7 @@ class A {
         }, N(n), j(n), P(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === v.OGo.FRIEND && g.Z.isTopAffinityFriendAnniversary({
+          giftIntentType: r === y.OGo.FRIEND && g.Z.isTopAffinityFriendAnniversary({
             userId: n
           }) ? I.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)
@@ -123,7 +123,7 @@ class A {
         applicationId: l,
         type: a
       } = t;
-      !(a === v.OGo.FRIEND && e.has(r)) && (a === v.OGo.FRIEND && i.has(r) || (a === v.OGo.FRIEND && i.add(r), n.push(new x(T(C({
+      !(a === y.OGo.FRIEND && e.has(r)) && (a === y.OGo.FRIEND && i.has(r) || (a === y.OGo.FRIEND && i.add(r), n.push(new x(T(S({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
@@ -135,7 +135,7 @@ class A {
         isGameRelationship: true
       })))))
     });
-    let a = l().map(Chunk5254.Z.getSuggestions(), e => new x(C({
+    let a = l().map(Chunk5254.Z.getSuggestions(), e => new x(S({
       key: e.key,
       userId: e.key,
       type: 99,
@@ -165,19 +165,19 @@ class A {
       returntrue
     }).filter(t => {
       switch (e) {
-        case v.pJs.ONLINE:
-          return t.type === v.OGo.FRIEND && t.status !== v.Skl.OFFLINE;
-        case v.pJs.PENDING:
-          return t.type === v.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === v.OGo.PENDING_OUTGOING;
-        case v.pJs.SPAM:
-          return t.type === v.OGo.PENDING_INCOMING && t.spam;
-        case v.pJs.PENDING_IGNORED:
-          return t.type === v.OGo.PENDING_INCOMING && t.ignoredUser;
-        case v.pJs.SUGGESTIONS:
+        case y.pJs.ONLINE:
+          return t.type === y.OGo.FRIEND && t.status !== y.Skl.OFFLINE;
+        case y.pJs.PENDING:
+          return t.type === y.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === y.OGo.PENDING_OUTGOING;
+        case y.pJs.SPAM:
+          return t.type === y.OGo.PENDING_INCOMING && t.spam;
+        case y.pJs.PENDING_IGNORED:
+          return t.type === y.OGo.PENDING_INCOMING && t.ignoredUser;
+        case y.pJs.SUGGESTIONS:
           return 99 === t.type;
-        case v.pJs.ALL:
+        case y.pJs.ALL:
         default:
-          return t.type === v.OGo.FRIEND
+          return t.type === y.OGo.FRIEND
       }
     }).sortBy(e => e.comparator).value()
   }
@@ -194,7 +194,7 @@ class A {
     }), module
   }
   constructor(e = []) {
-    S(this, "_rows", true), this._rows = e
+    C(this, "_rows", true), this._rows = e
   }
 }
 let Z = true,
@@ -238,7 +238,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-S(H, "displayName", "FriendsStore");
+C(H, "displayName", "FriendsStore");
 let V = new H(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     U()

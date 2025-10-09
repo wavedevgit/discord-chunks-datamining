@@ -1,8 +1,8 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 23404 **/
 /** chunk id: 973007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => C,
-  j8: () => c,
+  ZP: () => c,
+  j8: () => C,
   jB: () => d
 });
 var Chunk951288 = require("./951288.js");
@@ -19,9 +19,9 @@ function d(e) {
     isGift: n,
     priceOptions: o,
     showPromotionalGiftBanner: d,
-    enablePremiumBrandRefresh: c
+    enablePremiumBrandRefresh: C
   } = e;
-  return c ? (0, r.jsx)(i.P3F, {
+  return C ? (0, r.jsx)(i.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
@@ -52,7 +52,7 @@ function d(e) {
   })
 }
 
-function c(e) {
+function C(e) {
   let {
     onClick: t,
     isGift: n,
@@ -86,7 +86,7 @@ function c(e) {
     })
   })
 }
-let C = function(e) {
+let c = function(e) {
   let {
     onSelectSku: t,
     isGift: n,
@@ -101,7 +101,7 @@ let C = function(e) {
       priceOptions: i,
       showPromotionalGiftBanner: a,
       enablePremiumBrandRefresh: l
-    }), (0, r.jsx)(c, {
+    }), (0, r.jsx)(C, {
       onClick: () => t(o.Si.TIER_0),
       isGift: n,
       priceOptions: i,

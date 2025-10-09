@@ -29,14 +29,14 @@ let E = e => {
     } = (0, d.G)(t.skuId), {
       isPurchased: x,
       isPartiallyOwnedBundle: O
-    } = (0, g.L)(t), y = (0, u.G1)(t), T = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, S), [t, S]), k = (0, C.Iw)(t), {
+    } = (0, g.L)(t), y = (0, u.G1)(t), j = (0, u.rN)(t), k = l.useMemo(() => (0, u.BH)(t, S), [t, S]), T = (0, C.Iw)(t), {
       displayPrices: L,
       hasSufficientOrbs: I
     } = (0, h.Ip)({
       product: t,
       isPremiumUser: S,
       tab: p,
-      hasDiscountOffer: null != k
+      hasDiscountOffer: null != T
     }), P = y && !S;
     return v ? (0, r.jsx)(i.Text, {
       variant: "text-md/semibold",
@@ -48,7 +48,7 @@ let E = e => {
     }) : x && !P ? (0, r.jsx)(i.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t["6cfuDg"])
-    }) : T ? (0, r.jsx)(i.Text, {
+    }) : j ? (0, r.jsx)(i.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t.nBtvYG)
     }) : y ? (0, r.jsx)(i.Text, {
@@ -56,10 +56,10 @@ let E = e => {
       children: m.intl.string(m.t.rt69oq)
     }) : 0 === L.length ? null : (0, r.jsx)(f.F, {
       price: L[0],
-      discount: j,
+      discount: k,
       nitroIconType: S ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: k,
+      discountOfferAmount: T,
       className: L[0].currency !== _.pK.DISCORD_ORB || I ? true : b.insufficientOrbs
     })
   },

@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk887353 = require("./887353.js");
 
-function T(e) {
+function j(e) {
   let {
     products: t,
     header: n,
@@ -63,17 +63,17 @@ function T(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     category: t
   } = e, n = (0, C.l)(t.products), l = (0, p.a)()(n);
-  return (0, r.jsx)(T, {
+  return (0, r.jsx)(j, {
     products: l,
     category: t
   })
 }
 
-function k(e) {
+function T(e) {
   let {
     category: t,
     isFullScreen: n
@@ -85,7 +85,7 @@ function k(e) {
     ref: o,
     children: [(0, r.jsx)(_.Z, {
       category: t
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       category: t
     })]
   })
@@ -130,10 +130,10 @@ function L(e) {
       cacheDisabled: _
     })
   }, [C, a, b, _, p, x.length]);
-  let T = (0, f.FF)("CollectiblesBrowse");
+  let j = (0, f.FF)("CollectiblesBrowse");
   return p ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
     className: i()(y.categories, {
-      [y.categoriesNoFilter]: !T
+      [y.categoriesNoFilter]: !j
     }),
     children: [x.map((e, t) => (0, r.jsx)("div", {
       ref: t => s(e.skuId, t),
@@ -141,7 +141,7 @@ function L(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(T, {
           category: e,
           isFullScreen: a
         })

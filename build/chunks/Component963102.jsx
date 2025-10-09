@@ -83,7 +83,7 @@ function A(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(T.Z, {
+        return (0, r.jsx)(j.Z, {
           handleTransition: a,
           onClose: t
         })
@@ -150,25 +150,25 @@ function R(e) {
     onClose: s,
     selectedTab: f,
     handleTransition: p
-  } = e, T = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
+  } = e, j = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
   }), F = (0, _.Y)({
     location: "CollectiblesShopHeaderBar"
   }), H = [{
-    tab: k.AW.HOME,
+    tab: T.AW.HOME,
     displayText: P.intl.string(P.t.ijDDw8)
   }, {
-    tab: k.AW.CATALOG,
+    tab: T.AW.CATALOG,
     displayText: P.intl.string(P.t.Ah5sJi)
   }];
   w && H.push({
-    tab: k.AW.ORBS,
+    tab: T.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
   let D = n ? O.DR : s,
-    M = f === k.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
+    M = f === T.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
     W = l.useCallback(() => {
       t && (D(), (0, u.Ou)()), (0, b.Y)({
         pageType: M,
@@ -187,7 +187,7 @@ function R(e) {
       })
     }, [null == R ? true : R.id]);
   return (0, r.jsx)(c.f6W, {
-    theme: T,
+    theme: j,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
       className: i()(e, N.headerBar, {
@@ -197,7 +197,7 @@ function R(e) {
       toolbar: t || !Z ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: N.shopHomeLink,
-        onClick: () => p(k.AW.HOME),
+        onClick: () => p(T.AW.HOME),
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: N.discordLogo
@@ -211,9 +211,9 @@ function R(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === k.AW.CATALOG ? (0, r.jsx)(A, {
+          return t === T.AW.CATALOG ? (0, r.jsx)(A, {
             tab: t,
-            selected: (0, k.RE)(f) || f === t,
+            selected: (0, T.RE)(f) || f === t,
             displayText: n,
             handleTransition: p
           }, t) : (0, r.jsx)(B, {
@@ -225,7 +225,7 @@ function R(e) {
         })
       }), (w || t || U || F) && (0, r.jsxs)("div", {
         className: N.alignedRightContent,
-        children: [U && (0, r.jsx)(j.Z, {
+        children: [U && (0, r.jsx)(k.Z, {
           handleTransition: p,
           selectedTab: f
         }), F && (0, r.jsx)(c.P3F, {

@@ -107,7 +107,7 @@ function H(e) {
   let {
     guildEvent: t,
     channel: n
-  } = e, r = (0, s.Wu)([v.ZP], () => v.ZP.getVoiceStatesForChannel(n).map(e => {
+  } = e, r = (0, s.Wu)([y.ZP], () => y.ZP.getVoiceStatesForChannel(n).map(e => {
     let {
       user: t
     } = e;
@@ -180,7 +180,7 @@ function F(e) {
     children: [(0, i.jsxs)("div", {
       className: G.textBlock,
       children: [(0, i.jsx)(c.P3F, {
-        onClick: () => (0, C.bO)({
+        onClick: () => (0, S.bO)({
           eventId: n.id
         }),
         className: G.eventNameClickable,
@@ -271,7 +271,7 @@ function W(e) {
   let {
     guildEvent: t
   } = e, n = l.useCallback(() => {
-    (0, C.bO)({
+    (0, S.bO)({
       eventId: t.id
     })
   }, [t]);
@@ -351,7 +351,7 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([y.Z], () => y.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
   switch (r) {
     case 1:
       h = U.intl.string(U.t.VJlc0d);
@@ -363,7 +363,7 @@ function Q(e) {
       h = U.intl.string(U.t.wBoE6O);
       break;
     default:
-      (0, S.vE)(r)
+      (0, C.vE)(r)
   }
   return null == a ? null : (0, i.jsxs)(i.Fragment, {
     children: [d.length > 0 ? (0, i.jsxs)("div", {

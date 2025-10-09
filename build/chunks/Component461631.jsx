@@ -1,7 +1,7 @@
-/** Chunk was on 84071 **/
-/** chunk id: 461631, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 36529 **/
+/** chunk id: 461631, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,61 +15,61 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk747615 = require("./747615.js");
 
-function p(e) {
+function g(e) {
   let {
     item: t,
-    wishlistId: n,
+    wishlistId: r,
     iconSize: i = "refresh_sm",
-    className: p
+    className: g
   } = e, {
-    analyticsLocations: _
-  } = (0, o.ZP)(), h = async () => {
+    analyticsLocations: p
+  } = (0, l.ZP)(), b = async () => {
     try {
-      await s.Z.removeSkuFromWishlist(n, t.skuId, _)
+      await c.Z.removeSkuFromWishlist(r, t.skuId, p)
     } catch (e) {
-      (0, d.L$)(c.qb.SOMETHING_WENT_WRONG)
+      (0, s.L$)(u.qb.SOMETHING_WENT_WRONG)
     }
   };
-  return (0, r.jsx)(l.ua7, {
+  return (0, n.jsx)(o.ua7, {
     "data-migration-pending": true,
-    text: C.intl.string(C.t.jTW019),
+    text: d.intl.string(d.t.jTW019),
     children: e => {
-      var t, n;
-      return (0, r.jsx)(l.P3F, (t = function(e) {
+      var t, r;
+      return (0, n.jsx)(o.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
-      }({}, e), n = n = {
-        onClick: h,
-        "aria-label": C.intl.string(C.t.jTW019),
-        className: a()(p, u.clickable),
-        children: (0, r.jsx)(l.XHJ, {
+      }({}, e), r = r = {
+        onClick: b,
+        "aria-label": d.intl.string(d.t.jTW019),
+        className: a()(g, f.clickable),
+        children: (0, n.jsx)(o.XHJ, {
           size: i,
-          className: u.icon,
-          color: l.TVs.colors.ICON_FEEDBACK_CRITICAL
+          className: f.icon,
+          color: o.TVs.colors.ICON_FEEDBACK_CRITICAL
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        return r
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }
   })

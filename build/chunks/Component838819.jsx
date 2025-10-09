@@ -61,7 +61,7 @@ let M = e => {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, C.z)(p.f), (0, j.f)();
+    (0, C.z)(p.f), (0, k.f)();
     let s = (0, g.Z)((0, a.Z)()),
       c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
       {
@@ -73,7 +73,7 @@ let M = e => {
       }), [c]);
     l.useEffect(() => {
       null != c && null == F && (0, _.Z)(c.id, c.getAvatarURL(null, 80))
-    }, [c, F]), (0, m.k)(W, null == c ? true : c.id);
+    }, [c, F]), (0, m.kZ)(W, null == c ? true : c.id);
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
@@ -93,7 +93,7 @@ let M = e => {
         tab: K,
         isFullScreen: t
       }),
-      Q = (0, T.O)(q),
+      Q = (0, j.O)(q),
       [X, J] = l.useState(),
       $ = (0, o.e7)([v.Z], () => {
         var e;
@@ -108,7 +108,7 @@ let M = e => {
         selectedTab: er,
         transitionState: el,
         transitionToTab: es
-      } = (0, k.B)(K, t);
+      } = (0, T.B)(K, t);
     (0, O.q3)(s, er, $, el, ee), (0, O.EB)(er, c);
     let {
       dismissShopButtonDC: ei

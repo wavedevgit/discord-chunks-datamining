@@ -79,12 +79,12 @@ function S(e) {
   let {
     wishlist: k,
     error: D
-  } = (0, g.k)(n, t.id), Z = i.useCallback(() => {
+  } = (0, g.kZ)(n, t.id), Z = i.useCallback(() => {
     if (null == n) return;
     let e = N ? l.f.PRIVATE : l.f.PUBLIC;
     C(!N), f.Z.updateWishlistVisibility(n, e), (0, m.Er)({
       wishlistId: n,
-      action: N ? b.NW.WISHLIST_TOGGLE_PRIVATE : b.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: N ? j.NW.WISHLIST_TOGGLE_PRIVATE : j.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: E
     })
   }, [n, N, E]), _ = i.useCallback(() => {
@@ -169,7 +169,7 @@ function S(e) {
           icon: o.qJs,
           text: O.intl.string(O.t.SDUwMz),
           onClick: _
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(b.Z, {
           isOwner: T,
           isWishlistPublic: N,
           onToggleVisibility: Z

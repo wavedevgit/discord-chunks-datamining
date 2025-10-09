@@ -85,7 +85,7 @@ let k = {
           code: t
         }
       } = e;
-      if (null == C.default.getCurrentUser()) return;
+      if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
       } = await _.Z.resolveGuildTemplate(t);
@@ -196,7 +196,7 @@ let k = {
         case Z.jE.QUEST_HOME: {
           let {
             enabled: e
-          } = y.m8.getConfig({
+          } = v.m8.getConfig({
             location: L.dr.QUEST_DEEP_LINK_UTIL
           });
           null != n ? ((0, I.dL)({
@@ -206,7 +206,7 @@ let k = {
           break
         }
         case Z.jE.QUEST_PREVIEW_TOOL:
-          if ((0, v.T)({
+          if ((0, y.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
@@ -319,11 +319,11 @@ let k = {
           state: l
         }
       } = e;
-      if (!S.Z.hasPendingAuthorizedState(l)) throw new x.Z({
+      if (!C.Z.hasPendingAuthorizedState(l)) throw new x.Z({
         errorCode: w.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
-        return S.Z.deletePendingAuthorizedState(l), await d.Z.callback(t, {
+        return C.Z.deletePendingAuthorizedState(l), await d.Z.callback(t, {
           code: n,
           openid_params: r,
           iss: i,

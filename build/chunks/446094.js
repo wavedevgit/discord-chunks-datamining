@@ -8,13 +8,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk226746 = require("./226746.js");
 
 function a(e, t) {
-  let [n, a] = r.useState(false), o = r.useCallback(async () => {
-    a(true), await (0, i.c)(e, true), a(false), null == t || t()
+  let [n, a] = i.useState(false), o = i.useCallback(async () => {
+    a(true), await (0, r.c)(e, true), a(false), null == t || t()
   }, [e, t]), s = (0, l.Z)(e);
   return {
     isAdopting: n,
     onAdoptTag: o,
-    onEditProfile: r.useCallback(() => {
+    onEditProfile: i.useCallback(() => {
       null == t || t(), s()
     }, [s, t])
   }
