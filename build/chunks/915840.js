@@ -710,6 +710,24 @@ let {
         opacity: 1
       }
     },
+    CHECKBOX_BORDER_HOVER: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
     CHECKBOX_BORDER_HOVER_SELECTED: {
       [r.DARK]: {
         raw: "NEUTRAL_12",
@@ -2492,7 +2510,43 @@ let {
         opacity: 1
       }
     },
+    RADIO_BORDER_DEFAULT: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
     RADIO_BORDER_DEFAULT_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    RADIO_BORDER_HOVER: {
       [r.DARK]: {
         raw: "NEUTRAL_12",
         opacity: 1
@@ -2672,7 +2726,43 @@ let {
         opacity: 1
       }
     },
+    SWITCH_BORDER_DEFAULT: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
     SWITCH_BORDER_DEFAULT_SELECTED: {
+      [r.DARK]: {
+        raw: "NEUTRAL_12",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_49",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_23",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_19",
+        opacity: 1
+      }
+    },
+    SWITCH_BORDER_HOVER: {
       [r.DARK]: {
         raw: "NEUTRAL_12",
         opacity: 1
