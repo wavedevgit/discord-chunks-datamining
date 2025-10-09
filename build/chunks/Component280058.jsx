@@ -25,7 +25,7 @@ function f() {
     i.IU.updateControlledSetting(t, !e)
   }
   return (0, Chunk951288.jsx)(Chunk838436.U, {
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t["3o2ojo"]),
       value: !require && !f,
       onChange: e => _(e),

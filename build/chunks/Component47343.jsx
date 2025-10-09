@@ -83,11 +83,11 @@ let N = () => {
           value: N,
           onChange: I
         })]
-      }), (0, Chunk951288.jsx)(Chunk51331.Z, {
+      }), (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t["/2ed39"]),
         value: h,
         onChange: f
-      }), Chunk120356 && (0, Chunk951288.jsx)(Chunk51331.Z, {
+      }), Chunk120356 && (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.bN4m1N),
         value: E,
         onChange: v

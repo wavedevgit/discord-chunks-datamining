@@ -2,7 +2,7 @@
 /** chunk id: 402583, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,9 +16,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk922628 = require("./922628.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk345909 = require("./345909.js");
 
-function m() {
+function g() {
   let e = (0, Chunk915009.LN)(),
     t = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS)),
     n = Chunk647438.useCallback(e => {
@@ -32,14 +33,15 @@ function m() {
     }, []);
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_IMPROVE_DISCORD_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.XuADY2),
       note: Chunk388032.intl.format(Chunk388032.t.igTSGx, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_PRIVACY_CONTROLS)
       }),
       value: exports,
       onChange: require,
-      disabled: module
+      disabled: module,
+      tooltipText: module ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
     })
   })
 }

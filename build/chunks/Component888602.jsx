@@ -20,7 +20,7 @@ function f() {
   let t = null != (e = (0, Chunk652262.M)()) ? module : true,
     n = Chunk722687.O8.useControlledSetting(exports);
   return (0, Chunk951288.jsx)(Chunk838436.U, {
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk345909.default.ZhaNu7),
       note: Chunk388032.intl.format(Chunk345909.default.cnCK6e, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)

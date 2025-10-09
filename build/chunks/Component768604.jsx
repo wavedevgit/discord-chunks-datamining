@@ -2,7 +2,7 @@
 /** chunk id: 768604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => g
+  I: () => y
 }), require("./290780.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,65 +18,92 @@ var Chunk524437 = require("./524437.js"),
   Chunk838436 = require("./838436.jsx"),
   Chunk947707 = require("./947707.jsx"),
   Chunk726985 = require("./726985.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk345909 = require("./345909.js");
 
-function g() {
+function E(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function b(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      E(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function y() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk915009.LN)(),
     {
-      goreContentGuilds: g,
-      goreContentFriendDm: E,
-      goreContentNonFriendDm: b
+      goreContentGuilds: E,
+      goreContentFriendDm: y,
+      goreContentNonFriendDm: O
     } = (0, Chunk294602.K)(),
-    y = e => {
+    v = e => {
       let t = Object.values(e);
       if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void o.Z.showAgeVerificationGetStartedModal({
         entryPoint: s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
       });
       (0, c.Jr)(e)
     },
-    O = [{
+    I = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
     }, {
       value: Chunk524437.Q4.BLOCK,
       label: Chunk388032.intl.string(Chunk388032.t["D/157e"])
     }],
-    v = [{
+    T = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
     }],
-    I = {
+    S = {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFh"])
     };
-  return exports && (O.unshift(I), v.unshift(I)), (0, Chunk951288.jsxs)(Chunk838436.U, {
+  exports && (I.unshift(S), T.unshift(S));
+  let A = {
+    isDisabled: require,
+    tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+  };
+  return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.GORE_MEDIA_REDACTION,
-    children: [(0, Chunk951288.jsx)(Chunk947707.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["+uI23N"]),
-      value: E,
-      onChange: e => y({
+      value: y,
+      onChange: e => v({
         goreContentFriendDm: e
       }),
-      isDisabled: require,
-      options: O
-    }), (0, Chunk951288.jsx)(Chunk947707.Z, {
+      options: I
+    }, A)), (0, Chunk951288.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
-      value: b,
-      onChange: e => y({
+      value: O,
+      onChange: e => v({
         goreContentNonFriendDm: e
       }),
-      isDisabled: require,
-      options: O
-    }), (0, Chunk951288.jsx)(Chunk947707.Z, {
+      options: I
+    }, A)), (0, Chunk951288.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["FP+a4+"]),
-      value: g,
-      onChange: e => y({
+      value: E,
+      onChange: e => v({
         goreContentGuilds: e
       }),
       isDisabled: !exports || require,
-      options: v
+      options: T,
+      tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-muted",

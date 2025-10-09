@@ -20,7 +20,7 @@ function _() {
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SAFETY_ALERTS_V2,
     scrollPosition: Chunk526761.FY.DM_SAFETY_ALERTS_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       value: module,
       onChange: Chunk278828.Q,
       title: Chunk388032.intl.string(Chunk388032.t.qFsx5u),

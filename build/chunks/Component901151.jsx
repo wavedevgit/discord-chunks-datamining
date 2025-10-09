@@ -120,7 +120,7 @@ function A() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.XpBObG),
       note: Chunk388032.intl.format(Chunk388032.t.oZsHTE, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SLAYER_GAME_FRIENDS)

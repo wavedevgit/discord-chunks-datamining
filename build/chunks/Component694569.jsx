@@ -2,7 +2,7 @@
 /** chunk id: 694569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,36 +14,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk51331 = require("./51331.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk345909 = require("./345909.js");
 
-function p() {
+function h() {
   let e = Chunk695346.xq.useSetting(),
     t = Chunk647438.useMemo(() => (0, Chunk88658.bL)(module), [module]),
     n = (0, Chunk915009.LN)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk838436.U, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
-      children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+      children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t["7x9dyM"]),
         value: exports.all,
         onChange: e => l.xq.updateSetting(e ? f.HGf : f.HGf & ~f.SOq.NO_RELATION),
-        disabled: require
+        disabled: require,
+        tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
       })
     }), (0, Chunk951288.jsx)(Chunk838436.U, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
-      children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+      children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.NfeuZ2),
         value: exports.all || exports.mutualFriends,
         onChange: t => l.xq.updateSetting(t ? o.pj(e, f.SOq.MUTUAL_FRIENDS) : o.M1(e, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION)),
-        disabled: require
+        disabled: require,
+        tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
       })
     }), (0, Chunk951288.jsx)(Chunk838436.U, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
-      children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+      children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.qsMfsL),
         value: exports.all || exports.mutualGuilds,
         onChange: t => l.xq.updateSetting(t ? o.pj(e, f.SOq.MUTUAL_GUILDS) : o.M1(e, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION)),
-        disabled: require
+        disabled: require,
+        tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
       })
     })]
   })

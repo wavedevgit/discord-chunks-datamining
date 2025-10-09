@@ -20,7 +20,7 @@ function d() {
     updateConsent: t
   } = (0, Chunk915009.aR)(Chunk981631.pjP.USAGE_STATISTICS);
   return (0, Chunk951288.jsx)(Chunk838436.U, {
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk345909.default.HjstRU),
       note: Chunk388032.intl.format(Chunk345909.default.Z5yJZ2, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_PRIVACY_CONTROLS)

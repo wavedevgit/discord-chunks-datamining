@@ -71,10 +71,10 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         error: C,
         flatActivityCount: A = false,
         isRegister: T = false,
-        inUnclaimedFlow: L = false
+        inUnclaimedFlow: P = false
       } = e,
       {
-        currentUser: P
+        currentUser: L
       } = (0, a.cj)([x.default], () => ({
         currentUser: x.default.getCurrentUser()
       }));
@@ -165,8 +165,8 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         online: c.approximate_presence_count,
         total: c.approximate_member_count,
         flat: A
-      }), L || null == P ? (0, i.jsx)(s.jQ, {
-        user: P
+      }), P || null == L ? (0, i.jsx)(s.jQ, {
+        user: L
       }) : (0, i.jsx)(d.R, {})]
     })
   }

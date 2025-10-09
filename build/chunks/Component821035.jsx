@@ -2,7 +2,7 @@
 /** chunk id: 821035, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => E
+  P: () => O
 }), require("./290780.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,66 +19,93 @@ var Chunk524437 = require("./524437.js"),
   Chunk947707 = require("./947707.jsx"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk345909 = require("./345909.js");
 
-function E() {
+function b(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      b(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function O() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk915009.LN)(),
     {
-      explicitContentGuilds: E,
-      explicitContentFriendDm: b,
-      explicitContentNonFriendDm: y
+      explicitContentGuilds: b,
+      explicitContentFriendDm: O,
+      explicitContentNonFriendDm: v
     } = (0, Chunk294602.B)(),
-    O = e => {
+    I = e => {
       let t = Object.values(e);
       if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) return void o.Z.showAgeVerificationGetStartedModal({
         entryPoint: s.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
       });
       (0, c.zj)(e)
     },
-    v = [{
+    T = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
     }, {
       value: Chunk524437.Q4.BLOCK,
       label: Chunk388032.intl.string(Chunk388032.t["D/157e"])
     }],
-    I = [{
+    S = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
     }],
-    T = {
+    A = {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFh"])
     };
-  return exports && (v.unshift(T), I.unshift(T)), (0, Chunk951288.jsxs)(Chunk838436.U, {
+  exports && (T.unshift(A), S.unshift(A));
+  let C = {
+    isDisabled: require,
+    tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+  };
+  return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: Chunk526761.FY.EXPLICIT_MEDIA_REDACTION_V2,
-    children: [(0, Chunk951288.jsx)(Chunk947707.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk947707.Z, y({
       title: Chunk388032.intl.string(Chunk388032.t["+uI23N"]),
-      value: b,
-      onChange: e => O({
+      value: O,
+      onChange: e => I({
         explicitContentFriendDm: e
       }),
-      isDisabled: require,
-      options: v
-    }), (0, Chunk951288.jsx)(Chunk947707.Z, {
+      options: T
+    }, C)), (0, Chunk951288.jsx)(Chunk947707.Z, y({
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
-      value: y,
-      onChange: e => O({
+      value: v,
+      onChange: e => I({
         explicitContentNonFriendDm: e
       }),
-      isDisabled: require,
-      options: v
-    }), (0, Chunk951288.jsx)(Chunk947707.Z, {
+      options: T
+    }, C)), (0, Chunk951288.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["FP+a4+"]),
-      value: E,
-      onChange: e => O({
+      value: b,
+      onChange: e => I({
         explicitContentGuilds: e
       }),
       isDisabled: !exports || require,
-      options: I
+      tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true,
+      options: S
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-muted",

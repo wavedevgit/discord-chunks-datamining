@@ -2,7 +2,7 @@
 /** chunk id: 919539, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,13 +26,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk736530 = require("./736530.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk345909 = require("./345909.js");
 
-function A(e) {
+function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, A = (0, m.c_)(), C = (0, p.q)(), N = h.h2.useSetting().includes(n), R = (0, l.LN)(), P = h.mX.useSetting(), w = h.zA.useSetting().includes(n), D = i.useCallback(e => {
+  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), w = h.mX.useSetting(), D = h.zA.useSetting().includes(n), L = i.useCallback(e => {
     let r = (0, f.gl)();
     e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), u.default.track(T.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: y.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -41,26 +42,26 @@ function A(e) {
     })
   }, [t, n]);
 
-  function L(e, t) {
+  function x(e, t) {
     u.default.track(T.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
   }
 
-  function x(e, t) {
+  function M(e, t) {
     if (!e && (0, _.S)()) return void o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
     });
-    t ? D(e) : M(!e)
+    t ? L(e) : j(!e)
   }
 
-  function M(e) {
+  function j(e) {
     let t = () => {
-        h.mX.updateSetting(e), h.zA.updateSetting(e ? c.Z.getGuildIds() : []), L(e, true)
+        h.mX.updateSetting(e), h.zA.updateSetting(e ? c.Z.getGuildIds() : []), x(e, true)
       },
       n = () => {
-        h.mX.updateSetting(e), L(e, false)
+        h.mX.updateSetting(e), x(e, false)
       };
     (0, b.V)({
       header: S.intl.string(S.t.yAfu1t),
@@ -75,20 +76,21 @@ function A(e) {
   return (0, r.jsx)(g.U, {
     setting: v.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: O.FY.MESSAGE_REQUESTS_V2,
-    children: n === I.T ? (0, r.jsx)(E.Z, {
+    children: n === I.T ? (0, r.jsx)(E.ZP, {
       title: S.intl.string(S.t["3o2ojo"]),
-      value: !C && !P,
-      onChange: e => x(e, false),
-      disabled: C || R,
+      value: !N && !w,
+      onChange: e => M(e, false),
+      disabled: N || P,
+      tooltipText: P ? S.intl.string(A.default["6Af/c3"]) : true,
       note: S.intl.format(S.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
       })
-    }) : (0, r.jsx)(E.Z, {
+    }) : (0, r.jsx)(E.ZP, {
       title: S.intl.string(S.t["3o2ojo"]),
-      value: !w,
-      onChange: e => x(e, true),
-      disabled: N,
-      note: A ? S.intl.format(S.t.WpnWLS, {
+      value: !D,
+      onChange: e => M(e, true),
+      disabled: R,
+      note: C ? S.intl.format(S.t.WpnWLS, {
         helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
       }) : S.intl.format(S.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
@@ -97,12 +99,12 @@ function A(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   let {
     ingress: t = O.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, m.is)();
-  return (0, r.jsx)(A, {
+  return (0, r.jsx)(C, {
     ingress: t,
     guildId: null != n ? n : i
   })

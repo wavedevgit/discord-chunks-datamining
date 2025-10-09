@@ -21,7 +21,7 @@ function f() {
     n = Chunk722687.J7.useControlledSetting(exports),
     f = Chunk722687.O8.useControlledSetting(exports);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk838436.U, {
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.CyLYKS),
       note: Chunk388032.intl.format(Chunk345909.default["6mK5Pz"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)

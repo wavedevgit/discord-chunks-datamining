@@ -2,7 +2,7 @@
 /** chunk id: 883382, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,13 +16,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk922628 = require("./922628.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk345909 = require("./345909.js");
 
-function m() {
+function g() {
   let e = (0, Chunk442837.cj)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)),
     [t, n] = Chunk647438.useState(module),
-    m = (0, Chunk915009.LN)(),
-    g = e => {
+    g = (0, Chunk915009.LN)(),
+    E = e => {
       e ? (0, o.g)([p.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
         header: h.intl.string(h.t["9SNpzs"]),
         confirmText: h.intl.string(h.t["9g5UGx"]),
@@ -35,14 +36,15 @@ function m() {
     };
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_PERSONALIZE_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.MNKzys),
       note: Chunk388032.intl.format(Chunk388032.t["eQL/Mj"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)
       }),
       value: exports,
-      onChange: g,
-      disabled: m
+      onChange: E,
+      disabled: g,
+      tooltipText: g ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
     })
   })
 }

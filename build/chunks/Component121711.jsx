@@ -310,23 +310,23 @@ let eh = function(e) {
         scrollerRef: eh,
         selectedTabId: w,
         tabs: D
-      }) : es ? (0, r.jsx)(X.t.Provider, {
+      }) : es ? (0, r.jsxs)(X.t.Provider, {
         value: eh,
-        children: (0, r.jsxs)(j.Z, {
+        children: [(0, r.jsx)(N.a, {
+          selectedTabId: w,
+          handleTransition: L,
+          tabs: D,
+          icon: d.qDn,
+          children: (0, r.jsx)(A.V9, {
+            analyticsPage: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
+            cardAlignment: A.ek.END,
+            ctaText: er.intl.string(er.t["J+vlIS"]),
+            ctaOnClick: eg
+          })
+        }), (0, r.jsxs)(j.Z, {
           onScroll: U,
           ref: eh,
-          children: [(0, r.jsx)(N.a, {
-            selectedTabId: w,
-            handleTransition: L,
-            tabs: D,
-            icon: d.qDn,
-            children: (0, r.jsx)(A.V9, {
-              analyticsPage: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
-              cardAlignment: A.ek.END,
-              ctaText: er.intl.string(er.t["J+vlIS"]),
-              ctaOnClick: eg
-            })
-          }), w !== k.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
+          children: [w !== k.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
             title: eu,
             description: ep,
             button: es ? (0, r.jsxs)(d.hE2, {
@@ -366,7 +366,7 @@ let eh = function(e) {
               onSelectTab: L
             }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})
           })]
-        })
+        })]
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(T.ZP, {
           variant: T._6.OVERLAY,

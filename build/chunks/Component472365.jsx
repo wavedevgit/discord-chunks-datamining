@@ -123,7 +123,7 @@ function U(e) {
           children: Z.intl.string(Z.t.FWkU6O)
         }), (0, i.jsx)(p.zx, {
           size: p.zx.Sizes.LARGE,
-          onClick: () => P.Z.close(),
+          onClick: () => L.Z.close(),
           color: p.zx.Colors.BRAND,
           children: Z.intl.string(Z.t.wcqOoK)
         })]
@@ -155,7 +155,7 @@ function y(e) {
   }, [j, null == j ? true : j.approximate_member_count, null == j ? true : j.code, null == j || null == (n = j.guild) ? true : n.id]);
   let O = (0, h.yr)();
   l.useEffect(() => {
-    !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? L.ZP.minimize() : L.ZP.restore(), L.ZP.focus())
+    !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? P.ZP.minimize() : P.ZP.restore(), P.ZP.focus())
   }, []);
   let y = (0, N.Dt)(),
     {
@@ -168,7 +168,7 @@ function y(e) {
   if (null == j.channel) return null;
 
   function G() {
-    null != j && P.Z.acceptInvite(j)
+    null != j && L.Z.acceptInvite(j)
   }
   let {
     guild: V,
@@ -273,7 +273,7 @@ function y(e) {
                   C.default.track(R.rMx.INVITE_ACCEPT_DISMISSED, {
                     invite_code: null == j ? true : j.code,
                     guild_id: null == j || null == (e = j.guild) ? true : e.id
-                  }), P.Z.close()
+                  }), L.Z.close()
                 },
                 color: p.zx.Colors.TRANSPARENT,
                 children: Z.intl.string(Z.t.ndsK4e)

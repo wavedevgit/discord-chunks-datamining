@@ -18,7 +18,7 @@ function f() {
   let e = (0, Chunk905405.p)();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_KEYWORD_FILTER_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       value: module,
       onChange: e => o.gw.updateSetting({
         profanity: e,

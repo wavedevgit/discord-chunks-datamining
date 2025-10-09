@@ -19,7 +19,7 @@ function u() {
     n = Chunk695346.DC.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_IOS_V2,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t["L+yTsb"]),
       value: require,
       onChange: Chunk695346.DC.updateSetting,

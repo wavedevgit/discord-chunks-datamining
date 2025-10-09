@@ -18,7 +18,7 @@ function f() {
   let e = (0, Chunk442837.e7)([Chunk615830.Z], () => Chunk615830.Z.getPersistentCodesEnabled());
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_PERSISTENT_VERIFICATION_CODES,
-    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       value: module,
       onChange: Chunk90641.Z.updatePersistentCodesEnabled,
       title: Chunk388032.intl.string(Chunk388032.t["opi/XF"]),
