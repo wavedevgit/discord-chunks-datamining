@@ -71,9 +71,24 @@ class c extends Chunk77450.h {
       return null
     }
   }
+  getMemoryPrivateUsageElectronRenderer() {
+    try {
+      return Chunk998502.ZP.getDiscordMemoryPrivateUsageElectronRenderer()
+    } catch (e) {
+      return null
+    }
+  }
   getMemoryUsageElectronRendererUsedHeapSize() {
     var e, t;
     return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getUsedHeapSize) ? true : module.call(exports)
+  }
+  getMemoryHeapStats() {
+    var e, t;
+    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getHeapStats) ? true : module.call(exports)
+  }
+  getBlinkMemoryInfo() {
+    var e, t;
+    return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getBlinkMemoryInfo) ? true : module.call(exports)
   }
   getMemoryUsageElectronProcessTypeDetails() {
     try {

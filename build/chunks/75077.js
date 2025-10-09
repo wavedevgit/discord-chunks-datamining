@@ -6,7 +6,7 @@ require.d(exports, {
   gx: () => d,
   mN: () => m,
   re: () => h
-}), require("./539854.js");
+}), require("./539854.js"), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk594174 = require("./594174.js"),
@@ -21,24 +21,25 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
     let {
       cards: t,
       perksCards: n,
-      showProfileWidgets: r
-    } = e, i = f, a = e => {
+      showProfileWidgets: r,
+      showDisplayNameStyles: i
+    } = e, a = null != n.tenureBadge ? [n.tenureBadge] : [], o = f - a.length, s = e => {
       let {
         card: n
       } = e;
-      t.length < i && t.push(n)
+      t.length < o && t.push(n)
     };
-    return r && a({
+    return r && s({
       card: n.profileWidgets
-    }), a({
+    }), i && s({
+      card: n.displayNameStyles
+    }), s({
       card: n.customThemes
-    }), null != n.tenureBadge && a({
-      card: n.tenureBadge
-    }), a({
+    }), s({
       card: n.permadecos
-    }), a({
+    }), s({
       card: n.newAppStylesUpdateJune2024
-    }), t
+    }), t.push(...a), t
   },
   p = e => {
     let {
@@ -48,29 +49,31 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       isPremiumSubscriber: i,
       fractionalState: a,
       isInReverseTrial: o,
-      showProfileWidgets: s
-    } = e, u = [];
+      showProfileWidgets: s,
+      showDisplayNameStyles: u
+    } = e, d = [];
     switch (n) {
       case l.gM.PERKS_DISCOVERABILITY:
-        u = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+        d = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case l.gM.WHATS_NEW:
-        u = _({
-          cards: u,
+        d = _({
+          cards: d,
           perksCards: t,
-          showProfileWidgets: s
+          showProfileWidgets: s,
+          showDisplayNameStyles: u
         });
         break;
       case l.gM.CARD_CAROUSEL_FIRST_ROW:
-        u = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
+        d = false === i ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
         break;
       case l.gM.CARD_CAROUSEL_SECOND_ROW:
-        u = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+        d = false === i ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.a$.FP_ONLY ? o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
         break;
       case l.gM.CARD_CAROUSEL_THIRD_ROW:
-        u = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+        d = a === c.a$.FP_ONLY ? o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
     }
-    return r && (u = u.filter(e => !e.hideOnNarrowScreen)), u
+    return r && (d = d.filter(e => !e.hideOnNarrowScreen)), d
   },
   h = e => {
     let t = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()),

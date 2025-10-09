@@ -2,12 +2,12 @@
 /** chunk id: 22189, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => e_,
-  Z: () => ep
+  I: () => eg,
+  Z: () => eE
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk399606 = require("./399606.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk399606 = require("./399606.js"),
   Chunk704215 = require("./704215.js"),
   Chunk410030 = require("./410030.js"),
   Chunk100527 = require("./100527.js"),
@@ -17,6 +17,8 @@ var Chunk399606 = require("./399606.js"),
   Chunk779618 = require("./779618.js"),
   Chunk550385 = require("./550385.js"),
   Chunk266454 = require("./266454.js"),
+  Chunk594928 = require("./594928.js"),
+  Chunk829716 = require("./829716.jsx"),
   Chunk300284 = require("./300284.js"),
   Chunk703656 = require("./703656.js"),
   Chunk892001 = require("./892001.js"),
@@ -41,6 +43,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk119475 = require("./119475.js"),
+  Chunk693450 = require("./693450.js"),
   Chunk660372 = require("./660372.js"),
   Chunk926433 = require("./926433.js"),
   Chunk302036 = require("./302036.js"),
@@ -70,79 +73,88 @@ var Chunk399606 = require("./399606.js"),
   Chunk371435 = require("./371435.js"),
   Chunk83663 = require("./83663.js"),
   Chunk317194 = require("./317194.js"),
-  e_ = function(e) {
-    return e.CLIENT_THEMES = "clientThemes", e.CLIPS = "clips", e.EARLY_ACCESS = "earlyAccess", e.ENTRANCE_SOUNDS = "entranceSounds", e.PROFILES = "profiles", e.REMIXING = "remixing", e.SERVER_BOOSTS = "serverBoosts", e.GREY_SERVER_BOOSTS = "greyServerBoosts", e.SPECIAL_MEMBER_PRICING = "specialMemberPricing", e.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", e.SPECIAL_SHOP_PERKS = "specialShopPerks", e.SUPER_REACTIONS = "superReactions", e.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", e.CUSTOM_APP_ICONS = "customAppIcons", e.MORE_EMOJI_POWER = "moreEmojiPower", e.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", e.SPECIAL_STICKER_ACCESS = "specialStickerAccess", e.LARGE_UPLOADS = "largeUploads", e.HD_VIDEO = "hdVideo", e.BADGE = "badge", e.GREY_BADGE = "greyBadge", e.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", e.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", e.REFERRAL_PROGRAM = "referralProgram", e.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", e.SERVER_PROFILES = "serverProfiles", e.TENURE_BADGE = "tenureBadge", e.PERMADECOS = "permadecos", e.CUSTOM_THEMES = "customThemes", e.PROFILE_WIDGETS = "profileWidgets", e
+  eg = function(e) {
+    return e.CLIENT_THEMES = "clientThemes", e.CLIPS = "clips", e.EARLY_ACCESS = "earlyAccess", e.ENTRANCE_SOUNDS = "entranceSounds", e.PROFILES = "profiles", e.REMIXING = "remixing", e.SERVER_BOOSTS = "serverBoosts", e.GREY_SERVER_BOOSTS = "greyServerBoosts", e.SPECIAL_MEMBER_PRICING = "specialMemberPricing", e.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", e.SPECIAL_SHOP_PERKS = "specialShopPerks", e.SUPER_REACTIONS = "superReactions", e.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", e.CUSTOM_APP_ICONS = "customAppIcons", e.MORE_EMOJI_POWER = "moreEmojiPower", e.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", e.SPECIAL_STICKER_ACCESS = "specialStickerAccess", e.LARGE_UPLOADS = "largeUploads", e.HD_VIDEO = "hdVideo", e.BADGE = "badge", e.GREY_BADGE = "greyBadge", e.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", e.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", e.REFERRAL_PROGRAM = "referralProgram", e.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", e.SERVER_PROFILES = "serverProfiles", e.TENURE_BADGE = "tenureBadge", e.PERMADECOS = "permadecos", e.CUSTOM_THEMES = "customThemes", e.PROFILE_WIDGETS = "profileWidgets", e.DISPLAY_NAME_STYLES = "displayNameStyles", e
   }({});
-let ep = () => {
+let eE = () => {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, Chunk410030.ZP)(), n = (0, Chunk424218.BU)(Chunk474936.Uq / 1024, {
     useKibibytes: true
-  }), e_ = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ep = null != e_ ? Chunk74538.ZP.getPremiumPlanItem(e_) : null, eh = (null != ep ? Chunk74538.ZP.getSkuIdForPlan(ep.planId) : null) === Chunk474936.Si.TIER_2, em = Chunk594174.default.getCurrentUser(), eg = (0, Chunk74538.I5)(em, Chunk474936.PremiumTypes.TIER_2), eE = (0, Chunk74538.I5)(em, Chunk474936.PremiumTypes.TIER_0), eb = (0, Chunk779618.Z)(Chunk131951.Z), {
-    isFractionalPremiumActive: ey
-  } = (0, Chunk975298.Z)(), eO = null != e_ && e_.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), ev = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eI = Chunk803038.Mc.useExperiment({
+  }), eg = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), eE = null != eg ? Chunk74538.ZP.getPremiumPlanItem(eg) : null, eb = (null != eE ? Chunk74538.ZP.getSkuIdForPlan(eE.planId) : null) === Chunk474936.Si.TIER_2, ey = Chunk594174.default.getCurrentUser(), eO = (0, Chunk74538.I5)(ey, Chunk474936.PremiumTypes.TIER_2), ev = (0, Chunk74538.I5)(ey, Chunk474936.PremiumTypes.TIER_0), eI = (0, Chunk779618.Z)(Chunk131951.Z), {
+    isFractionalPremiumActive: eT
+  } = (0, Chunk975298.Z)(), eS = null != eg && eg.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eA = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eC = Chunk803038.Mc.useExperiment({
     location: "usePremiumPerksCards"
-  }).v2EditorEnabled, eT = (0, Chunk300284.Z)({
+  }).v2EditorEnabled, eN = Chunk594928.wL.useConfig({
+    location: "usePremiumPerksCards"
+  }).enabled, eR = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
     analyticsLocations: module
-  }), eS = () => {
+  }), eP = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
       section: Chunk981631.oAB.APPEARANCE,
       analyticsLocations: module
     })
-  }, eA = () => {
+  }, ew = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
       section: Chunk981631.oAB.GUILD_BOOSTING,
       analyticsLocations: module
     })
-  }, eC = () => {
+  }, eD = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
       section: Chunk981631.oAB.VOICE,
       subsection: Chunk526761.GA,
       analyticsLocations: module
     })
-  }, eN = () => {
+  }, eL = () => {
     (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
-  }, eR = () => {
+  }, ex = () => {
     (0, Chunk547972.Z)(Chunk332325.Z.CLIPS, {
       analyticsLocations: module
     })
-  }, eP = () => {
+  }, eM = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
       section: Chunk981631.oAB.APPEARANCE,
       scrollPosition: Chunk526761.h1.CUSTOM_APP_ICONS
     })
-  }, ew = () => {
+  }, ej = () => {
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.CLIPS), "_blank")
-  }, eD = () => {
-    ev || (0, Chunk266454.Q3)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
+  }, ek = () => {
+    eA || (0, Chunk266454.Q3)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
       dismissAction: Chunk921944.L.TAKE_ACTION
-    }), eT()
-  }, eL = () => {
+    }), eR()
+  }, eU = () => {
     (0, Chunk892001.openUserProfileModal)({
-      userId: em.id,
+      userId: ey.id,
       sourceAnalyticsLocations: module,
       hideRestrictedProfile: true,
       section: Chunk228168.oh.WIDGETS
     })
-  }, ex = {
+  }, eG = Chunk647438.useCallback(() => {
+    (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
+      section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
+      analyticsLocations: module
+    }), (0, Chunk829716.I)({
+      analyticsLocations: module
+    })
+  }, [module]), eB = {
     clientThemes: {
       name: "clientThemes",
       title: Chunk388032.intl.string(Chunk388032.t.kWM48P),
       subtitle: Chunk388032.intl.string(Chunk388032.t.CjRASE),
       description: Chunk388032.intl.string(Chunk388032.t.jBTTws),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eS,
+      onCtaClick: eP,
       perkImage: Chunk567396
     },
-    clips: eg ? {
+    clips: eO ? {
       name: "clips",
       title: Chunk388032.intl.string(Chunk388032.t.z2jK6e),
       subtitle: Chunk388032.intl.string(Chunk388032.t["hxy0/f"]),
       description: Chunk388032.intl.string(Chunk388032.t.Z6v86e),
-      descriptionCta: eb ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
+      descriptionCta: eI ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0t),
-      onCtaClick: eb ? eR : ew,
+      onCtaClick: eI ? ex : ej,
       perkImage: Chunk766491
     } : {
       name: "clips",
@@ -152,7 +164,7 @@ let ep = () => {
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0t),
       perkImage: Chunk766491
     },
-    earlyAccess: eg ? {
+    earlyAccess: eO ? {
       name: "earlyAccess",
       title: Chunk388032.intl.string(Chunk388032.t.UkLVeH),
       subtitle: Chunk388032.intl.string(Chunk388032.t.xf9ePj),
@@ -166,7 +178,7 @@ let ep = () => {
       isPremiumGetCta: true,
       perkImage: Chunk707046
     },
-    earlyAccessSeeAllVariant: eg ? {
+    earlyAccessSeeAllVariant: eO ? {
       name: "earlyAccessSeeAllVariant",
       title: Chunk388032.intl.string(Chunk388032.t.UkLVeH),
       subtitle: Chunk388032.intl.string(Chunk388032.t.xf9ePj),
@@ -180,13 +192,13 @@ let ep = () => {
       isPremiumGetCta: true,
       perkImage: Chunk488459
     },
-    entranceSounds: eg ? {
+    entranceSounds: eO ? {
       name: "entranceSounds",
       title: Chunk388032.intl.string(Chunk388032.t["f4M+Hx"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t["7ZCYvL"]),
       description: Chunk388032.intl.string(Chunk388032.t.mUT8bG),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eC,
+      onCtaClick: eD,
       perkImage: Chunk132015
     } : {
       name: "entranceSounds",
@@ -195,13 +207,13 @@ let ep = () => {
       description: Chunk388032.intl.string(Chunk388032.t["3smf/f"]),
       perkImage: Chunk132015
     },
-    entranceSoundsSeeAllVariation: eg ? {
+    entranceSoundsSeeAllVariation: eO ? {
       name: "entranceSoundsSeeAllVariation",
       title: Chunk388032.intl.string(Chunk388032.t["f4M+Hx"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t["7ZCYvL"]),
       description: Chunk388032.intl.string(Chunk388032.t.mUT8bG),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eC,
+      onCtaClick: eD,
       perkImage: Chunk142416
     } : {
       name: "entranceSoundsSeeAllVariation",
@@ -216,10 +228,10 @@ let ep = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.Mt3U1d),
       description: Chunk388032.intl.string(Chunk388032.t.kWcDKy),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eT,
+      onCtaClick: eR,
       perkImage: Chunk925309
     },
-    remixing: eg ? {
+    remixing: eO ? {
       name: "remixing",
       title: Chunk388032.intl.string(Chunk388032.t["H+v6eX"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t.wmbOAg),
@@ -238,14 +250,14 @@ let ep = () => {
       name: "serverBoosts",
       title: Chunk388032.intl.string(Chunk388032.t["NyDu//"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t["4pEwXF"]),
-      description: ey ? Chunk388032.intl.format(Chunk388032.t.uPiIBQ, {
+      description: eT ? Chunk388032.intl.format(Chunk388032.t.uPiIBQ, {
         link: "https://discord.com"
       }) : Chunk388032.intl.string(Chunk388032.t.jsyNHh),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: ey ? true : eA,
+      onCtaClick: eT ? true : ew,
       perkImage: Chunk46245,
-      hideOnNarrowScreen: !ey,
-      imageOverlayText: ey ? Chunk388032.intl.string(Chunk388032.t.lcYttb) : true
+      hideOnNarrowScreen: !eT,
+      imageOverlayText: eT ? Chunk388032.intl.string(Chunk388032.t.lcYttb) : true
     },
     greyServerBoosts: {
       name: "greyServerBoosts",
@@ -261,7 +273,7 @@ let ep = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDQ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSU"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eN,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     specialMemberPricingSeeAllVariant: {
@@ -270,7 +282,7 @@ let ep = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDQ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSU"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eN,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     specialShopPerks: {
@@ -279,7 +291,7 @@ let ep = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.chRZiY),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSU"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eN,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     superReactions: {
@@ -317,7 +329,7 @@ let ep = () => {
       perkImage: Chunk193943,
       description: Chunk388032.intl.string(Chunk388032.t.e7FKCg),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eP
+      onCtaClick: eM
     },
     moreEmojiPower: {
       name: "moreEmojiPower",
@@ -363,9 +375,9 @@ let ep = () => {
       title: Chunk388032.intl.string(Chunk388032.t.XQCSrq),
       subtitle: Chunk388032.intl.string(Chunk388032.t.HC5wVV),
       description: Chunk388032.intl.string(Chunk388032.t.ee7wQ0),
-      descriptionCta: eg || eE ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lZ),
-      isPremiumGetCta: !(eg || eE),
-      onCtaClick: eg || eE ? eP : true,
+      descriptionCta: eO || ev ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lZ),
+      isPremiumGetCta: !(eO || ev),
+      onCtaClick: eO || ev ? eM : true,
       perkImage: Chunk607762
     },
     referralProgram: {
@@ -376,16 +388,16 @@ let ep = () => {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.JST6jo),
-      isPremiumGetCta: !eh || true,
+      isPremiumGetCta: !eb || true,
       perkImage: Chunk572501
     },
     serverProfiles: {
       name: "serverProfiles",
       title: Chunk388032.intl.string(Chunk388032.t.I9TYMj),
       subtitle: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
-      descriptionCta: eg ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.JST6jo),
-      isPremiumGetCta: !eg,
-      onCtaClick: eg ? eT : true,
+      descriptionCta: eO ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.JST6jo),
+      isPremiumGetCta: !eO,
+      onCtaClick: eO ? eR : true,
       perkImage: Chunk909910
     },
     permadecos: {
@@ -395,10 +407,10 @@ let ep = () => {
       description: Chunk388032.intl.format(Chunk388032.t.Pd7olp, {
         learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PERMADECOS)
       }),
-      descriptionCta: eg ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.JST6jo),
-      isPremiumGetCta: !eg,
-      onCtaClick: eg ? eD : true,
-      pillText: ev || !eg ? true : Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
+      descriptionCta: eO ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.JST6jo),
+      isPremiumGetCta: !eO,
+      onCtaClick: eO ? ek : true,
+      pillText: eA || !eO ? true : Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
       perkImage: Chunk317194.Z
     },
     customThemes: {
@@ -410,7 +422,7 @@ let ep = () => {
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
       },
       perkImage: Chunk253636.Z,
-      canReveal: eI,
+      canReveal: eC,
       dismissibleContentType: Chunk704215.z.CUSTOM_THEMES_NITRO_HOME_TILE,
       pillText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase()
     },
@@ -419,12 +431,23 @@ let ep = () => {
       title: Chunk388032.intl.string(Chunk388032.t.MyEstL),
       subtitle: Chunk388032.intl.string(Chunk388032.t["0/ClMD"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: eL,
+      onCtaClick: eU,
       perkImage: Chunk448360.Z,
+      pillText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase()
+    },
+    displayNameStyles: {
+      name: "displayNameStyles",
+      title: Chunk388032.intl.string(Chunk693450.default.ABtBDQ),
+      subtitle: Chunk388032.intl.string(Chunk693450.default.jhmU5O),
+      descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+      onCtaClick: eG,
+      canReveal: eN,
+      dismissibleContentType: Chunk704215.z.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,
+      perkImage: Chunk253636.Z,
       pillText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase()
     }
   };
-  return eg && eO && (ex.tenureBadge = {
+  return eO && eS && (eB.tenureBadge = {
     name: "tenureBadge",
     title: Chunk388032.intl.string(Chunk388032.t.rnsqpa),
     pillText: Chunk388032.intl.string(Chunk388032.t.jyYgZ2).toLocaleUpperCase(),
@@ -433,5 +456,5 @@ let ep = () => {
     onClick: () => (0, Chunk768865.k)({
       analyticsLocations: module
     })
-  }), ex
+  }), eB
 }

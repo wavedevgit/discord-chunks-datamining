@@ -299,9 +299,15 @@ function tj() {
     i = tM(r),
     a = eK[null != (e = i.activeInputProfile) ? module : Chunk345655._.CUSTOM],
     o = eN({}, null != (t = i.modeOptions) ? exports : {}, null != (n = a.modeOptions) ? require : {});
-  return null == o.vadDuringPreProcess && (o.vadDuringPreProcess = (0, Chunk705946.C)({
-    location: "getSettings"
-  }).enabled), eP(eN({}, i, a), {
+  if (null == o.vadDuringPreProcess && (o.vadDuringPreProcess = (0, Chunk705946.C)({
+      location: "getSettings"
+    }).enabled), null == o.vadKrispActivationThreshold && true === a.automaticGainControl || true === i.automaticGainControl) {
+    let e = (0, Chunk883794.U)({
+      location: "getSettings"
+    });
+    null != module.vadKrispActivationThreshold && (o.vadKrispActivationThreshold = module.vadKrispActivationThreshold)
+  }
+  return eP(eN({}, i, a), {
     modeOptions: o
   })
 }
@@ -313,7 +319,7 @@ function tk(e) {
     vadThreshold: r.modeOptions.threshold,
     vadAutoThreshold: r.modeOptions.autoThreshold,
     vadUseKrisp: r.modeOptions.vadUseKrisp && n9(),
-    vadKrispActivationThreshold: null != (t = r.modeOptions.vadKrispActivationThreshold) ? t : .5,
+    vadKrispActivationThreshold: null != (t = r.modeOptions.vadKrispActivationThreshold) ? t : eU,
     vadLeading: r.modeOptions.vadLeading,
     vadTrailing: r.modeOptions.vadTrailing,
     vadDuringPreProcess: null != (n = r.modeOptions.vadDuringPreProcess) && n,

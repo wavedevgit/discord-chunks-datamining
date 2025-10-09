@@ -1,0 +1,28 @@
+/** Chunk was on 81487 **/
+/** chunk id: 11075, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  a: () => s
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk699867 = require("./699867.jsx");
+let s = e => {
+  let {
+    className: t
+  } = e, n = Object.keys(r.z).find(e => "COLLECTIBLES_SHOP_ENTRY_MARKETING" === e);
+  return null == n ? null : (0, a.jsx)(i.hjN, {
+    title: "Shop Marketing",
+    tag: "h1",
+    className: t,
+    children: (0, a.jsx)("div", {
+      style: {
+        zIndex: 1
+      },
+      children: (0, a.jsx)(l.Z, {
+        items: [n]
+      })
+    })
+  })
+}

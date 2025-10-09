@@ -25,14 +25,14 @@ function f(e) {
     isExpanded: x,
     errors: j,
     onToggleExpand: v
-  } = e, y = r.useMemo(() => {
+  } = e, O = r.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, u.ov)({
       id: t.id,
       avatar: e,
       discriminator: m.fo$
     })
-  }, [t]), O = r.useCallback(() => {
+  }, [t]), y = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -140,7 +140,7 @@ function f(e) {
       }), (0, i.jsx)(a.izJ, {
         className: g.bottomDivider
       }), (0, i.jsx)(l.Avr, {
-        onClick: O,
+        onClick: y,
         size: "sm",
         variant: "critical",
         text: b.intl.string(b.t.CMy0Cg)
@@ -160,7 +160,7 @@ function f(e) {
           align: "center",
           children: [(0, i.jsx)(p.Z, {
             name: t.name,
-            imageSrc: y,
+            imageSrc: O,
             details: _
           }), (0, i.jsx)(d.Z, {
             className: g.expandIcon,

@@ -27,15 +27,15 @@ function j(e) {
     applicationIntegration: j
   } = e, {
     application: v
-  } = j, y = null != v.bot ? new b.Z(v.bot) : null, O = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
+  } = j, O = null != v.bot ? new b.Z(v.bot) : null, y = (0, a.e7)([g.ZP], () => null != O ? g.ZP.getMember(n.id, O.id) : null, [O, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
     var e;
-    return f.Z.getManyRoles(n.id, null != (e = null == O ? true : O.roles) ? e : [])
-  }), N = null == y ? true : y.id;
+    return f.Z.getManyRoles(n.id, null != (e = null == y ? true : y.roles) ? e : [])
+  }), N = null == O ? true : O.id;
   r.useEffect(() => {
     null != N && s.Z.requestMembersById(n.id, N)
   }, [n.id, N]);
-  let w = r.useMemo(() => l.$e(_.permissions, ...C.map(e => e.permissions)), [C, _]);
-  return null == y ? null : (0, i.jsx)(o.Zbd, {
+  let S = r.useMemo(() => l.$e(_.permissions, ...C.map(e => e.permissions)), [C, _]);
+  return null == O ? null : (0, i.jsx)(o.Zbd, {
     editable: true,
     className: x.card,
     children: (0, i.jsxs)(p.Z, {
@@ -44,17 +44,17 @@ function j(e) {
         align: p.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: y.getAvatarURL(n.id, 32),
+          src: O.getAvatarURL(n.id, 32),
           className: x.iconWrapper
         }), (0, i.jsx)(o.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
           children: h.intl.format(h.t.GyhzGx, {
-            user: y.toString()
+            user: O.toString()
           })
         }), (0, i.jsx)(u.Z, {
           className: x.tag,
-          verified: y.isVerifiedBot()
+          verified: O.isVerifiedBot()
         })]
       }), function(e, t, n, r) {
         let a = [],
@@ -84,7 +84,7 @@ function j(e) {
             disabledPermissionsHeader: h.intl.string(h.t["/rEZ2t"])
           }) : null]
         })
-      }(y, n, null != (t = null == O ? true : O.roles) ? t : [], w)]
+      }(O, n, null != (t = null == y ? true : y.roles) ? t : [], S)]
     })
   })
 }

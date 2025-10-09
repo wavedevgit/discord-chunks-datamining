@@ -45,7 +45,7 @@ function N(e) {
   return e
 }
 
-function w(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,11 +58,11 @@ function w(e, t) {
   }), e
 }
 
-function S(e, t) {
+function w(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
-    discriminator: O.fo$
+    discriminator: y.fo$
   })
 }
 
@@ -74,17 +74,17 @@ function P(e) {
     channelOptions: h,
     isExpanded: P,
     isNew: I,
-    errors: Z,
-    onToggleExpand: E
+    errors: E,
+    onToggleExpand: Z
   } = e, [T, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => S(n, n.avatar), [n]),
+  let D = r.useMemo(() => w(n, n.avatar), [n]),
     R = r.useCallback(() => {
-      let e = "".concat((0, o.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      let e = "".concat((0, o.K0)(false)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
     L = r.useCallback(() => {
-      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, w(N({}, e), {
+      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, S(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
         }),
@@ -148,13 +148,13 @@ function P(e) {
                 avatar: e
               })
             },
-            makeURL: e => S(n, e),
+            makeURL: e => w(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != Z.avatar && "" !== Z.avatar ? (0, i.jsx)(c.Text, {
+          }), null != E.avatar && "" !== E.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: Z.avatar
+            children: E.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function P(e) {
                 })
               },
               maxLength: 80,
-              error: Z.name
+              error: E.name
             })
           }), (0, i.jsx)(m.Z.Child, {
             basis: "50%",
@@ -223,7 +223,7 @@ function P(e) {
               return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": true,
                 className: C.copyButton,
-                children: (0, i.jsx)(c.zxk, w(N({
+                children: (0, i.jsx)(c.zxk, S(N({
                   variant: "secondary",
                   size: "sm",
                   text: _.intl.string(_.t.Ae9rUV)
@@ -254,10 +254,10 @@ function P(e) {
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
         "aria-expanded": P,
-        onClick: E,
+        onClick: Z,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: [(0, i.jsx)(y.Z, {
+          children: [(0, i.jsx)(O.Z, {
             name: n.name,
             imageSrc: D,
             details: M

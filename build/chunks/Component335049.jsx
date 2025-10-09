@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk243226 = require("./243226.js");
 
-function S(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -74,7 +74,7 @@ function I(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, P(S({}, t), {
+      return t => (0, i.jsx)(e, P(w({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Mu7)
       }))
@@ -82,7 +82,7 @@ function I(e) {
   }, [l]);
   switch (a) {
     case m.Kw.CHANNEL:
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(E, {
         guild: t,
         id: l,
         isLocked: o,
@@ -90,7 +90,7 @@ function I(e) {
         openEntryContextMenu: u
       });
     case m.Kw.ROLE:
-      return (0, i.jsx)(E, {
+      return (0, i.jsx)(Z, {
         guild: t,
         id: l,
         isLocked: o,
@@ -108,7 +108,7 @@ function I(e) {
   }
 }
 
-function Z(e) {
+function E(e) {
   let {
     guild: t,
     id: n,
@@ -136,20 +136,20 @@ function Z(e) {
   }, [d, n, s]);
   return null == p || null == m ? null : (0, i.jsxs)("div", {
     onContextMenu: h,
-    className: w.identifier,
+    className: S.identifier,
     children: [(0, i.jsx)(p, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a()(w.channelIcon, w.image)
+      className: a()(S.channelIcon, S.image)
     }), (0, i.jsx)(u.Text, {
-      className: w.roleName,
+      className: S.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: m
     }), null != f ? (0, i.jsxs)(u.Text, {
-      className: w.tag,
+      className: S.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
     }) : null, l ? (0, i.jsx)(k, {
@@ -158,7 +158,7 @@ function Z(e) {
   })
 }
 
-function E(e) {
+function Z(e) {
   var t;
   let {
     guild: l,
@@ -174,7 +174,7 @@ function E(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, P(S({}, t), {
+      return t => (0, i.jsx)(e, P(w({}, t), {
         guild: l,
         role: m
       }))
@@ -182,17 +182,17 @@ function E(e) {
   }, [l, m]);
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: g,
-    className: w.identifier,
-    children: [null != b ? (0, i.jsx)(f.Z, S({
-      className: a()(w.__invalid_icon, w.image)
+    className: S.identifier,
+    children: [null != b ? (0, i.jsx)(f.Z, w({
+      className: a()(S.__invalid_icon, S.image)
     }, b)) : (0, i.jsx)(u.lZ8, {
       size: "custom",
       width: 23,
       height: 23,
-      className: a()(w.shield, w.image),
+      className: a()(S.shield, S.image),
       color: null != (t = m.colorString) ? t : C.Pbq
     }), (0, i.jsx)(u.Text, {
-      className: w.roleName,
+      className: S.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: m.name
@@ -209,25 +209,25 @@ function T(e) {
     isLocked: r,
     lockTooltipText: l,
     openEntryContextMenu: a
-  } = e, o = (0, c.e7)([O.default], () => O.default.getUser(n)), s = (0, c.e7)([j.ZP], () => {
+  } = e, o = (0, c.e7)([y.default], () => y.default.getUser(n)), s = (0, c.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? true : e.nick
-  }, [t.id, n]), d = (0, c.e7)([y.Z], () => y.Z.hidePersonalInformation);
+  }, [t.id, n]), d = (0, c.e7)([O.Z], () => O.Z.hidePersonalInformation);
   return null == o ? null : (0, i.jsxs)("div", {
     onContextMenu: a,
-    className: w.identifier,
+    className: S.identifier,
     children: [(0, i.jsx)(u.qEK, {
-      className: w.image,
+      className: S.image,
       src: o.getAvatarURL(t.id, 24),
       "aria-label": o.username,
       size: u.EFr.SIZE_24
     }), (0, i.jsx)(u.Text, {
-      className: w.roleName,
+      className: S.roleName,
       color: "header-primary",
       variant: "text-md/normal",
       children: null != s ? s : o.username
     }), d ? null : (0, i.jsx)(u.Text, {
-      className: w.tag,
+      className: S.tag,
       variant: "text-sm/normal",
       children: _.ZP.getUserTag(o)
     }), r ? (0, i.jsx)(k, {
@@ -243,7 +243,7 @@ function k(e) {
   return (0, i.jsx)(d.u, {
     text: t,
     children: (0, i.jsx)("div", {
-      className: w.lockIcon,
+      className: S.lockIcon,
       children: (0, i.jsx)(u.mBM, {
         size: "xs",
         color: "currentColor"

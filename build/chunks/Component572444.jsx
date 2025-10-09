@@ -148,7 +148,8 @@ function y() {
     B()
   }, [B]), (0, Chunk493773.zq)(() => {
     Chunk846027.Z.setMode(Chunk131951.Z.getMode(), {
-      vadDuringPreProcess: null
+      vadDuringPreProcess: null,
+      vadKrispActivationThreshold: true
     })
   });
   let H = [];

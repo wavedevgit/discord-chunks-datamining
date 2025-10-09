@@ -74,24 +74,24 @@ function W(e) {
     followedChannelWebhooks: K,
     isLoadingWebhooks: q,
     canCreateWebhook: V,
-    onManageBuiltIn: J,
-    onManageCustomWebhooks: Y,
+    onManageBuiltIn: Y,
+    onManageCustomWebhooks: J,
     onManageFollowedChannels: X,
     onManageApplication: Q,
     onManageLobbiesLinked: $
   } = e, ee = (0, m.ZP)(), [et, en] = r.useState(""), {
     isFetchingConnections: ei,
     accounts: er
-  } = (0, c.cj)([O.Z], () => ({
-    isFetchingConnections: O.Z.isFetching(),
-    accounts: O.Z.getAccounts()
+  } = (0, c.cj)([y.Z], () => ({
+    isFetchingConnections: y.Z.isFetching(),
+    accounts: y.Z.getAccounts()
   }), []), {
     canManageWebhooks: el,
     canManageGuild: ea
   } = (0, c.cj)([_.Z], () => ({
     canManageWebhooks: null != W && _.Z.can(T.Plq.MANAGE_WEBHOOKS, W) || null != H && _.Z.can(T.Plq.MANAGE_WEBHOOKS, H),
     canManageGuild: null != W && null == H && _.Z.can(T.Plq.MANAGE_GUILD, W)
-  }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, y.F)(null == W ? true : W.id), {
+  }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, O.F)(null == W ? true : W.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
     guildTwitchIntegrations: ep,
@@ -128,11 +128,11 @@ function W(e) {
       } = t;
       return !!("" === (n = (n = et).trim().toLowerCase()) || i.id === n || e(n, i.name.toLowerCase()) || null != i.bot && e(n, i.bot.username.toLowerCase()))
     })
-  }, [G, ef, et]), ex = (0, c.e7)([E.Z], () => {
-    if (null != W) return eh.find(e => E.Z.canShowOverviewTooltip(W.id, e.integration.id))
-  }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [ey, eO] = r.useState(false), e_ = r.useRef(0), eC = () => {
-    eO(true), clearTimeout(e_.current), e_.current = setTimeout(() => {
-      eO(false)
+  }, [G, ef, et]), ex = (0, c.e7)([Z.Z], () => {
+    if (null != W) return eh.find(e => Z.Z.canShowOverviewTooltip(W.id, e.integration.id))
+  }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [eO, ey] = r.useState(false), e_ = r.useRef(0), eC = () => {
+    ey(true), clearTimeout(e_.current), e_.current = setTimeout(() => {
+      ey(false)
     }, 200)
   };
   r.useEffect(() => (window.addEventListener("scroll", eC, true), () => window.removeEventListener("scroll", eC)));
@@ -147,15 +147,15 @@ function W(e) {
       return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: S.default.extractTimestamp(l.id),
+          timestamp: w.default.extractTimestamp(l.id),
           user: P.ZP.getUserTag(l.user)
         })
       }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: S.default.extractTimestamp(l.id)
+          timestamp: w.default.extractTimestamp(l.id)
         })
-      }), (0, i.jsx)(Z.Z, {
+      }), (0, i.jsx)(E.Z, {
         name: r.name,
         imageSrc: null != (t = r.getIconURL(48)) ? t : N.pK["0"],
         integration: e,
@@ -170,11 +170,11 @@ function W(e) {
         },
         details: a,
         guildId: null == W ? true : W.id,
-        isScrolling: ey,
+        isScrolling: eO,
         canShowMigrationTooltip: n
       }, "integration-".concat(l.id))
     }),
-    ew = (0, i.jsx)("div", {
+    eS = (0, i.jsx)("div", {
       className: D.footerImage
     });
   0 === eN.length && ea && (eN = function(e, t, n) {
@@ -230,21 +230,21 @@ function W(e) {
         })
       });
     return t > 0 ? l : a
-  }(ee, ef, null == W ? true : W.id), ew = null);
-  let eS = w.Z.getArticleURL(T.BhN.INTEGRATIONS),
+  }(ee, ef, null == W ? true : W.id), eS = null);
+  let ew = S.Z.getArticleURL(T.BhN.INTEGRATIONS),
     eP = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
     eI = [];
   if (el) {
     let e, t, r, a, o;
     eI.push((n = F.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(Z.Z, {
+    }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(E.Z, {
       name: A.intl.string(A.t.xOg4SE),
       icon: u.tYf,
       buttonText: e,
       buttonDisabled: !V,
       trailing: t,
-      onButtonClick: Y,
+      onButtonClick: J,
       hasNextSection: n > 0,
       details: [{
         text: A.intl.formatToPlainString(A.t["6HqDfX"], {
@@ -253,7 +253,7 @@ function W(e) {
       }]
     }, "webhooks"))), (null == H ? true : H.type) === T.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && T.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = K.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(w.Z.getArticleURL(T.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(Z.Z, {
+    }), a = X) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(S.Z.getArticleURL(T.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(E.Z, {
       name: A.intl.string(A.t.OrV60t),
       icon: u.AsW,
       buttonText: r,
@@ -267,7 +267,7 @@ function W(e) {
       }]
     }, "channels-followed")))
   }
-  null == H && ec.length > 0 && eI.push((o = ec.length, (0, i.jsx)(Z.Z, {
+  null == H && ec.length > 0 && eI.push((o = ec.length, (0, i.jsx)(E.Z, {
     name: A.intl.string(A.t.tqtDXF),
     icon: u.DuK,
     trailing: (0, i.jsx)(u.LJT, {
@@ -289,7 +289,7 @@ function W(e) {
     }), a = () => n(T.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkp), l = A.intl.string(A.t.Qq3X2N), a = () => (0, f.Z)({
       platformType: T.ABu.TWITCH,
       location: "Integration Settings"
-    })), (0, i.jsx)(Z.Z, {
+    })), (0, i.jsx)(E.Z, {
       name: A.intl.string(A.t.q4pBGx),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -302,7 +302,7 @@ function W(e) {
         text: l
       }]
     }, "integrations-twitch")
-  }(ed, ep, J)), eg && eI.push(function(e, t, n) {
+  }(ed, ep, Y)), eg && eI.push(function(e, t, n) {
     let r, l, a, o, s = b.Z.get(T.ABu.YOUTUBE);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
@@ -311,7 +311,7 @@ function W(e) {
     }), a = () => n(T.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3d), l = A.intl.string(A.t.T0ivgY), a = () => (0, f.Z)({
       platformType: T.ABu.YOUTUBE,
       location: "Integration Settings"
-    })), (0, i.jsx)(Z.Z, {
+    })), (0, i.jsx)(E.Z, {
       name: A.intl.string(A.t.aS6cKy),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -324,14 +324,14 @@ function W(e) {
         text: l
       }]
     }, "integrations-youtube")
-  }(eu, em, J));
-  let eZ = null != H && eo && null != es;
+  }(eu, em, Y));
+  let eE = null != H && eo && null != es;
   return (0, i.jsxs)(u.hjN, {
-    className: a()(null != ew ? D.footerPlaceholder : null),
+    className: a()(null != eS ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
       children: A.intl.format(eP, {
-        helpdeskArticle: eS
+        helpdeskArticle: ew
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider
@@ -339,7 +339,7 @@ function W(e) {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [eI, eZ && (0, i.jsxs)(i.Fragment, {
+      children: [eI, eE && (0, i.jsxs)(i.Fragment, {
         children: [eI.length > 0 ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
@@ -358,7 +358,7 @@ function W(e) {
           })
         })]
       }), ea ? (0, i.jsxs)(i.Fragment, {
-        children: [eI.length > 0 || eZ ? (0, i.jsx)(u.izJ, {
+        children: [eI.length > 0 || eE ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",
@@ -368,7 +368,7 @@ function W(e) {
           query: et,
           setQuery: en
         }) : null, eN]
-      }) : null, ew]
+      }) : null, eS]
     })]
   })
 }

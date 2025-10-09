@@ -300,7 +300,10 @@ class X extends H {
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk512746.autocompleteContentWrapper,
         children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
-          children: (0, Chunk951288.jsx)(Chunk965386.BR, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+            className: Chunk512746.autocompleteRowHeading,
+            color: "interactive-active",
+            variant: "text-sm/medium",
             children: Chunk607070
           })
         }), (0, Chunk951288.jsx)(Chunk965386.dY, {

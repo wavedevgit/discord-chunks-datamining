@@ -574,6 +574,12 @@ let q = {
       } = this.getDiscordUtils();
       return null == module ? true : module()
     },
+    getDiscordMemoryPrivateUsageElectronRenderer() {
+      let {
+        getDiscordMemoryPrivUsageElectronRenderer: e
+      } = this.getDiscordUtils();
+      return null == module ? true : module()
+    },
     getDiscordMemoryUsageElectronProcessTypeDetails() {
       let {
         getDiscordMemoryUsageElectronProcessTypeDetails: e

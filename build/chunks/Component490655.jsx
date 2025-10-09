@@ -35,17 +35,17 @@ function P(e, t) {
       var n;
       return null != (n = null == t ? true : t.application.name) ? n : "";
     case N.b4C.OVERVIEW:
-      return w.intl.string(w.t.s69NLC);
+      return S.intl.string(S.t.s69NLC);
     case N.b4C.CHANNEL_FOLLOWING:
-      return w.intl.string(w.t.OrV60t);
+      return S.intl.string(S.t.OrV60t);
     case N.b4C.TWITCH:
-      return w.intl.string(w.t.q4pBGx);
+      return S.intl.string(S.t.q4pBGx);
     case N.b4C.WEBHOOKS:
-      return w.intl.string(w.t.xOg4SE);
+      return S.intl.string(S.t.xOg4SE);
     case N.b4C.YOUTUBE:
-      return w.intl.string(w.t.aS6cKy);
+      return S.intl.string(S.t.aS6cKy);
     case N.b4C.LOBBIES_LINKED:
-      return w.intl.string(w.t.tqtDXF);
+      return S.intl.string(S.t.tqtDXF);
     default:
       return ""
   }
@@ -56,8 +56,8 @@ let I = Chunk647438.memo(function(e) {
     sectionId: n,
     guild: l,
     channel: I,
-    integrations: Z,
-    editedIntegration: E,
+    integrations: E,
+    editedIntegration: Z,
     webhooks: T,
     editedWebhook: k,
     isFetchingWebhooks: A,
@@ -69,8 +69,8 @@ let I = Chunk647438.memo(function(e) {
     intensity: z
   }), F(Math.min(z + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (F(d.$x), true), [L, z]), q = r.useCallback(e => !!K() && (c.Z.setSection(e), true), [K]), {
     applicationIntegrations: V,
-    applicationBotIds: J,
-    builtInIntegrations: Y,
+    applicationBotIds: Y,
+    builtInIntegrations: J,
     customWebhooks: X,
     followedChannelWebhooks: Q
   } = r.useMemo(() => {
@@ -79,8 +79,8 @@ let I = Chunk647438.memo(function(e) {
       n = {},
       i = [],
       r = [];
-    if (null != Z)
-      for (let i of Z)
+    if (null != E)
+      for (let i of E)
         if ("discord" === i.type) {
           if (null != i.application) {
             var l;
@@ -99,19 +99,19 @@ let I = Chunk647438.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [Z, B, W, T]);
+  }, [E, B, W, T]);
   r.useEffect(() => {
     if (!A) switch (t) {
       case N.b4C.TWITCH:
-        null == Y[N.ABu.TWITCH] && c.Z.setSection(N.b4C.OVERVIEW);
+        null == J[N.ABu.TWITCH] && c.Z.setSection(N.b4C.OVERVIEW);
         break;
       case N.b4C.YOUTUBE:
-        null == Y[N.ABu.YOUTUBE] && c.Z.setSection(N.b4C.OVERVIEW);
+        null == J[N.ABu.YOUTUBE] && c.Z.setSection(N.b4C.OVERVIEW);
         break;
       case N.b4C.APPLICATION:
-        null != G && (G in J || G in V) || c.Z.setSection(N.b4C.OVERVIEW)
+        null != G && (G in Y || G in V) || c.Z.setSection(N.b4C.OVERVIEW)
     }
-  }, [V, J, Y, G, t, A]), r.useEffect(() => {
+  }, [V, Y, J, G, t, A]), r.useEffect(() => {
     (null == l ? true : l.id) != null && b.Z.getEntitlementsForGuildFetchState(l.id) === b.M.NOT_FETCHED && m.i1(l.id)
   }, [null == l ? true : l.id]), r.useEffect(() => () => {
     c.Z.setSection(N.b4C.OVERVIEW, null)
@@ -119,14 +119,14 @@ let I = Chunk647438.memo(function(e) {
   let $ = null;
   switch (t) {
     case N.b4C.TWITCH:
-      null != Y[N.ABu.TWITCH] && ($ = (0, i.jsx)(v.Z, {
+      null != J[N.ABu.TWITCH] && ($ = (0, i.jsx)(v.Z, {
         guild: l,
-        integrations: Y[N.ABu.TWITCH],
-        editedIntegration: E,
-        labelText: w.intl.string(w.t.q4pBGx),
+        integrations: J[N.ABu.TWITCH],
+        editedIntegration: Z,
+        labelText: S.intl.string(S.t.q4pBGx),
         platformType: N.ABu.TWITCH,
-        descriptionText: w.intl.string(w.t.V9kNqq),
-        helpText: w.intl.format(w.t.ro1jEB, {
+        descriptionText: S.intl.string(S.t.V9kNqq),
+        helpText: S.intl.format(S.t.ro1jEB, {
           connectAction: () => (0, u.Z)({
             platformType: N.ABu.TWITCH,
             location: "Integration Settings"
@@ -137,14 +137,14 @@ let I = Chunk647438.memo(function(e) {
       }));
       break;
     case N.b4C.YOUTUBE:
-      null != Y[N.ABu.YOUTUBE] && ($ = (0, i.jsx)(v.Z, {
+      null != J[N.ABu.YOUTUBE] && ($ = (0, i.jsx)(v.Z, {
         guild: l,
-        integrations: Y[N.ABu.YOUTUBE],
-        editedIntegration: E,
-        labelText: w.intl.string(w.t.aS6cKy),
+        integrations: J[N.ABu.YOUTUBE],
+        editedIntegration: Z,
+        labelText: S.intl.string(S.t.aS6cKy),
         platformType: N.ABu.YOUTUBE,
-        descriptionText: w.intl.string(w.t["7Tv7JC"]),
-        helpText: w.intl.format(w.t["4OSAQ0"], {
+        descriptionText: S.intl.string(S.t["7Tv7JC"]),
+        helpText: S.intl.format(S.t["4OSAQ0"], {
           connectAction: () => (0, u.Z)({
             platformType: N.ABu.YOUTUBE
           }),
@@ -155,7 +155,7 @@ let I = Chunk647438.memo(function(e) {
       break;
     case N.b4C.APPLICATION:
       var ee;
-      let et = null != G ? null != (ee = V[J[G]]) ? ee : V[G] : null;
+      let et = null != G ? null != (ee = V[Y[G]]) ? ee : V[G] : null;
       null != et && ($ = (0, i.jsx)(j.Z, {
         guild: l,
         applicationIntegration: et,
@@ -166,7 +166,7 @@ let I = Chunk647438.memo(function(e) {
       }));
       break;
     case N.b4C.CHANNEL_FOLLOWING:
-      $ = (0, i.jsx)(y.Z, {
+      $ = (0, i.jsx)(O.Z, {
         followedChannelWebhooks: Q,
         editedWebhook: k,
         selectableWebhookChannels: B,
@@ -204,7 +204,7 @@ let I = Chunk647438.memo(function(e) {
       });
       break;
     case N.b4C.LOBBIES_LINKED:
-      $ = (0, i.jsx)(O.Z, {
+      $ = (0, i.jsx)(y.Z, {
         guild: l
       });
       break;
@@ -213,7 +213,7 @@ let I = Chunk647438.memo(function(e) {
         guild: l,
         channel: I,
         applicationIntegrations: V,
-        builtInIntegrations: Y,
+        builtInIntegrations: J,
         customWebhooks: X,
         followedChannelWebhooks: Q,
         isLoadingWebhooks: A || null == l,
@@ -244,7 +244,7 @@ let I = Chunk647438.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: S.breadcrumbs,
+      className: w.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.vwX, {
         tag: "h1",
         children: P(N.b4C.OVERVIEW)
@@ -259,7 +259,7 @@ let I = Chunk647438.memo(function(e) {
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? S.breadcrumbActive : S.breadcrumbInactive,
+          className: t ? w.breadcrumbActive : w.breadcrumbInactive,
           children: e.label
         })
       })

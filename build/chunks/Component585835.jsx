@@ -1,7 +1,7 @@
 /** Chunk was on 58511 **/
 /** chunk id: 585835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,26 +22,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk473059 = require("./473059.js");
 
-function y(e) {
+function O(e) {
   var t, n, l;
   let {
-    name: y,
-    icon: O,
+    name: O,
+    icon: y,
     imageSrc: _,
     iconBackgroundColor: C,
     iconClassName: N,
-    iconWrapperClassName: w,
-    details: S,
+    iconWrapperClassName: S,
+    details: w,
     integration: P,
     buttonText: I,
-    buttonDisabled: Z,
-    hasNextSection: E,
+    buttonDisabled: E,
+    hasNextSection: Z,
     onButtonClick: T,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != P, B = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : E ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != P, B = r.useRef(null), W = r.useRef(null), H = null == I || null == T ? null : Z ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
@@ -49,7 +49,7 @@ function y(e) {
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: I
-    }), E ? (0, i.jsx)(d.Fbu, {
+    }), Z ? (0, i.jsx)(d.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
@@ -59,7 +59,7 @@ function y(e) {
   }) : (0, i.jsx)(d.zxk, {
     size: "sm",
     buttonRef: B,
-    disabled: Z,
+    disabled: E,
     onClick: T,
     text: I
   });
@@ -97,7 +97,7 @@ function y(e) {
     }), e))
   }, [k, null == P ? true : P.application.id, U]);
   let G = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.J2, {
-      targetElementRef: E ? W : B,
+      targetElementRef: Z ? W : B,
       title: j.intl.string(j.t.ufFDiI),
       body: j.intl.string(j.t.TyMJwM),
       onRequestClose: () => {
@@ -119,13 +119,13 @@ function y(e) {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(f.Z, {
-        name: y,
-        icon: O,
+        name: O,
+        icon: y,
         imageSrc: _,
         iconBackgroundColor: C,
         iconClassName: N,
-        iconWrapperClassName: w,
-        details: S,
+        iconWrapperClassName: S,
+        details: w,
         isPremium: z.length > 0,
         children: function(e, t) {
           var n, r;
@@ -162,7 +162,7 @@ function y(e) {
         }(P, K)
       }), G, H, R]
     });
-  return E ? (0, i.jsx)(d.P3F, {
+  return Z ? (0, i.jsx)(d.P3F, {
     onClick: () => {
       D && null != k && null != P && h.Z.dismissOverviewTooltip(k, P.integration), null == T || T()
     },
