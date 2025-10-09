@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -49,7 +49,7 @@ function v(e) {
         size: "md",
         color: "currentColor",
         className: O.inboxIcon
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(o.Heading, {
         className: O.inboxTitle,
         variant: "text-lg/semibold",
         color: "interactive-active",

@@ -28,14 +28,14 @@ function O(t) {
     hasReported: O,
     onReport: v,
     trackAnalyticsEvent: j
-  } = t, T = (0, a.e7)([x.Z], () => x.Z.isBlocked(e)), [E, y] = r.useState(T), S = (0, d.o)(), A = (0, d.Q)(), [N, C] = r.useState(false), k = (0, h.q)(n), I = r.useMemo(() => S ? 0 : A ? 2 : 1, [S, A]), M = async () => {
-    null != k && (C(true), await (0, l.J7)(k, () => {
+  } = t, T = (0, a.e7)([p.Z], () => p.Z.isBlocked(e)), [E, y] = r.useState(T), S = (0, d.o)(), A = (0, d.Q)(), [N, C] = r.useState(false), I = (0, g.q)(n), M = r.useMemo(() => S ? 0 : A ? 2 : 1, [S, A]), R = async () => {
+    null != I && (C(true), await (0, l.J7)(I, () => {
       u.Z.showReportSuccessToast(e, n), v()
     }, () => {
       u.Z.showFailedToast()
-    }), C(false), j(p.NM.USER_TAKEOVER_MODAL_REPORT))
-  }, R = r.useMemo(() => {
-    switch (I) {
+    }), C(false), j(x.NM.USER_TAKEOVER_MODAL_REPORT))
+  }, Z = r.useMemo(() => {
+    switch (M) {
       case 0:
         return _.intl.string(_.t.sZf6c3);
       case 2:
@@ -43,43 +43,43 @@ function O(t) {
       default:
         return _.intl.string(_.t["65XQam"])
     }
-  }, [I]);
-  return (0, i.jsx)(m.Z, {
+  }, [M]);
+  return (0, i.jsx)(h.Z, {
     heroImageSrc: b,
     heroImageAlt: _.intl.string(_.t.RVyYCA),
     header: _.intl.string(_.t["mWO+ys"]),
     description: _.intl.string(_.t.S0XtKC),
     children: (0, i.jsxs)("div", {
       className: f.buttonContainer,
-      children: [(0, i.jsx)(s.zxk, {
+      children: [(0, i.jsx)(s.Button, {
         text: E ? _.intl.string(_.t.XyHpKC) : _.intl.string(_.t.l4EmaW),
         variant: "primary",
         fullWidth: true,
         icon: s.k$p,
         onClick: () => {
           E ? (y(false), o.Z.unblockUser(e, {
-            location: g.DL
-          }), j(p.NM.USER_TAKEOVER_MODAL_UNBLOCK), u.Z.showUnblockSuccessToast(e, n)) : (y(true), j(p.NM.USER_TAKEOVER_MODAL_BLOCK), o.Z.blockUser(e, {
-            location: g.DL
+            location: m.DL
+          }), j(x.NM.USER_TAKEOVER_MODAL_UNBLOCK), u.Z.showUnblockSuccessToast(e, n)) : (y(true), j(x.NM.USER_TAKEOVER_MODAL_BLOCK), o.Z.blockUser(e, {
+            location: m.DL
           }).then(() => {
             u.Z.showBlockSuccessToast(e, n)
           }))
         }
-      }), (0, i.jsx)(s.zxk, {
+      }), (0, i.jsx)(s.Button, {
         text: O ? _.intl.string(_.t.QvwOJy) : _.intl.string(_.t["7fHyEx"]),
         variant: "secondary",
         fullWidth: true,
         icon: s.U65,
-        onClick: M,
+        onClick: R,
         loading: N,
         disabled: O
-      }), (0, i.jsx)(s.zxk, {
-        text: R,
+      }), (0, i.jsx)(s.Button, {
+        text: Z,
         variant: "secondary",
         fullWidth: true,
         icon: s.kBi,
         onClick: () => {
-          0 === I ? ((0, c.Z)(g.EI), j(p.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === I ? ((0, c.Z)(g.$l), j(p.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.Z)(g.n4), j(p.NM.USER_TAKEOVER_MODAL_NO_FILTR))
+          0 === M ? ((0, c.Z)(m.EI), j(x.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === M ? ((0, c.Z)(m.$l), j(x.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.Z)(m.n4), j(x.NM.USER_TAKEOVER_MODAL_NO_FILTR))
         }
       })]
     })

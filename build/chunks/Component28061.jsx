@@ -2,17 +2,18 @@
 /** chunk id: 28061, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk871952 = require("./871952.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,64 +22,64 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e) {
+function f(e) {
   var t;
   let {
     user: n,
     checked: i,
-    onChange: c,
-    disabled: d
+    onChange: u,
+    disabled: f
   } = e, {
-    avatarSrc: f,
-    eventHandlers: _
-  } = (0, s.Z)({
+    avatarSrc: _,
+    eventHandlers: p
+  } = (0, l.Z)({
     userId: null == n ? true : n.id,
-    size: o.EFr.SIZE_32
-  }), p = null != (t = n.globalName) ? t : n.username;
+    size: s.EFr.SIZE_32
+  }), h = null != (t = n.globalName) ? t : n.username;
   return (0, r.jsxs)("div", {
-    className: l.container,
+    className: c.container,
     children: [(0, r.jsx)("div", {
-      className: l.userAvatar,
-      children: (0, r.jsx)(o.qEK, u({
+      className: c.userAvatar,
+      children: (0, r.jsx)(s.qEK, d({
         className: a()({
-          [l.muted]: d
+          [c.muted]: f
         }),
-        src: f,
-        "aria-label": p,
-        size: o.EFr.SIZE_32
-      }, _))
+        src: _,
+        "aria-label": h,
+        size: s.EFr.SIZE_32
+      }, p))
     }), (0, r.jsxs)("div", {
-      className: l.usernameContainer,
-      children: [(0, r.jsx)(o.Text, {
-        className: l.userName,
-        color: d ? "text-muted" : "text-default",
+      className: c.usernameContainer,
+      children: [(0, r.jsx)(s.Text, {
+        className: c.userName,
+        color: f ? "text-muted" : "text-default",
         variant: "text-md/semibold",
         children: n.username
-      }), (0, r.jsx)(o.Text, {
-        className: l.userName,
-        color: d ? "text-muted" : "text-secondary",
+      }), (0, r.jsx)(s.Text, {
+        className: c.userName,
+        color: f ? "text-muted" : "text-secondary",
         variant: "text-xs/normal",
-        children: "@".concat(p)
+        children: "@".concat(h)
       })]
     }), (0, r.jsx)("div", {
-      className: l.checkbox,
-      children: (0, r.jsx)(o.XZJ, {
-        disabled: d,
-        checked: i,
-        onChange: e => c(n, e)
+      className: c.checkbox,
+      children: (0, r.jsx)(o.$q, {
+        disabled: f,
+        value: i,
+        onChange: (e, t) => u(n, t)
       })
     })]
   })

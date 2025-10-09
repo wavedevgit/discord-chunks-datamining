@@ -116,7 +116,7 @@ let C = 40,
               }))
             }), (0, r.jsxs)("div", {
               className: v.truncatingText,
-              children: [(0, r.jsx)(a.X6q, {
+              children: [(0, r.jsx)(a.Heading, {
                 variant: "heading-md/semibold",
                 className: v.roleName,
                 children: (0, r.jsx)(l.Z, {
@@ -127,7 +127,7 @@ let C = 40,
                 children: R
               })]
             })]
-          }), (0, r.jsx)(a.zxk, {
+          }), (0, r.jsx)(a.Button, {
             size: "sm",
             variant: "secondary",
             text: O.intl.string(O.t["H930+P"]),

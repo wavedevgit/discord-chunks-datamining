@@ -58,7 +58,7 @@ function g(e) {
       children: e.displayName
     }, e.name))
   }), f = o.map(e => m(e, null == n ? true : n[e.name], a)), g = c.length > 0 ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       className: p.optionalHeader,
       variant: "heading-deprecated-12/semibold",
       children: _.intl.string(_.t["5C107O"])

@@ -49,7 +49,7 @@ function l(e) {
     }), (0, r.jsx)(o.LZC, {
       size: 16,
       horizontal: true
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(o.Button, {
       variant: "critical-secondary",
       size: "sm",
       onClick: i,

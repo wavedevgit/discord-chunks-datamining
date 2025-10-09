@@ -119,7 +119,7 @@ let A = () => {
       className: Chunk342891.header,
       variant: "text-sm/normal",
       children: D
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "overlay-primary",
       size: "sm",
       onClick: x,

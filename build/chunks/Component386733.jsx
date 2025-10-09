@@ -80,7 +80,7 @@ let R = e => {
       src: i,
       "aria-label": t.username,
       size: c.EFr.SIZE_32
-    }, a)) : (0, r.jsx)(c.X6q, {
+    }, a)) : (0, r.jsx)(c.Heading, {
       variant: "heading-md/semibold",
       className: I.userAvatarProgressBarUnitNum,
       children: n
@@ -157,7 +157,7 @@ let R = e => {
       isInSettings: t = false
     } = e, n = (0, s.e7)([g.Z], () => g.Z.getRecipientStatus()), {
       referralSentUsers: a
-    } = (0, E.G)(), f = i.useMemo(() => a.map(e => new _.Z(e)), [a]), p = {
+    } = (0, E.G)(), f = i.useMemo(() => a.map(e => new _.default(e)), [a]), p = {
       redeemed: 0,
       converted: 0,
       sent: n.size
@@ -183,7 +183,7 @@ let R = e => {
           })
         }), (0, r.jsxs)("div", {
           className: I.expandedProgressBarContent,
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: I.expandedProgressBarHeader,
             children: (0, y.$s)({

@@ -106,7 +106,7 @@ function v(e) {
       className: a()({
         [y.descriptionWithThumbnail]: null != u
       }),
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: t,
         selectable: true,
         className: y.eventName,

@@ -372,7 +372,7 @@ class em extends Chunk647438.PureComponent {
       null != t && (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("36599"), n.e("7654"), n.e("58175"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("74318"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("59077"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
         return n => (0, r.jsx)(e, ep(ed({}, n), {
           guild: t
         }))
@@ -475,7 +475,7 @@ function eb(e) {
   (0, b.J_)(n);
   let d = (0, C.Z)(n),
     p = (0, c.e7)([B.Z], () => B.Z.getGuildDimensions(n).scrollTo),
-    h = (0, c.e7)([Y.Z], () => Y.Z.getChannelId()),
+    h = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
     g = (0, c.e7)([W.Z], () => W.Z.can(ei.Plq.MANAGE_GUILD, o)),
     m = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
     P = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
@@ -498,8 +498,8 @@ function eb(e) {
   let eE = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     ev = (0, L.Z)(n),
     ey = (0, N.Z)(n),
-    eI = (0, c.e7)([Y.Z], () => Y.Z.getChannelId()),
-    eC = (0, c.e7)([q.Z], () => q.Z.desyncedVoiceStatesCount),
+    eI = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
+    eC = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
     eS = (0, D.Z)(n);
   return (0, r.jsx)(em, {
     guildId: n,

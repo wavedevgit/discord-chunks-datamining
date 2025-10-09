@@ -44,7 +44,7 @@ function E(e) {
   let {
     media: t
   } = e;
-  return (0, r.jsx)(c.X6q, {
+  return (0, r.jsx)(c.Heading, {
     variant: "text-md/medium",
     className: h.question,
     scaleFontToUserSetting: true,
@@ -112,7 +112,7 @@ function O(e) {
       type: t.type
     }), d(t.type))
   }, [null == t ? true : t.type, n, a, d]);
-  return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, r.jsx)(c.zxk, {
+  return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, r.jsx)(c.Button, {
     buttonRef: l,
     onClick: f,
     disabled: !t.enabled,

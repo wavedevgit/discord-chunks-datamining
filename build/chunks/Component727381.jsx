@@ -29,7 +29,7 @@ function N() {
       children: [(0, Chunk951288.jsx)(Chunk777288.Z, {
         width: 16,
         height: 16
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.cf5lgo)
       })]

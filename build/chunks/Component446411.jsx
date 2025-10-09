@@ -101,7 +101,7 @@ function er(e, t) {
 }
 
 function ei(e) {
-  let t = k.Z.toURLSafe(e);
+  let t = j.Z.toURLSafe(e);
   return null == t ? e : (t.searchParams.set("format", "png"), t.toString())
 }
 
@@ -134,7 +134,7 @@ function ea(e) {
     href: D,
     placeholder: L,
     placeholderVersion: M,
-    sourceMetadata: k
+    sourceMetadata: j
   } = e, [U, G] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => G(false), [G]), H = e => {
     e.preventDefault(), e.stopPropagation(), null == I || I(false), G(true), Z && (w.S.dispatch(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
   };
@@ -177,7 +177,7 @@ function ea(e) {
       onMute: P,
       onControlsHide: A,
       onControlsShow: C,
-      sourceMetadata: k
+      sourceMetadata: j
     })
   });
   if (U && null != d) {
@@ -214,7 +214,7 @@ function ea(e) {
       children: (0, i.jsx)("div", {
         className: s()(V.embedVideo, o),
         style: a,
-        children: (0, i.jsx)(j.ZP, {
+        children: (0, i.jsx)(k.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -246,7 +246,7 @@ function ea(e) {
       placeholder: L,
       placeholderVersion: M,
       onClick: E && null != d ? H : null,
-      sourceMetadata: k,
+      sourceMetadata: j,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: V.embedVideoActions,
@@ -256,8 +256,8 @@ function ea(e) {
           onPlay: null != d ? H : null,
           externalURL: D,
           renderLinkComponent: g,
-          messageId: null == k || null == (t = k.message) ? true : t.id,
-          channelId: null == k || null == (n = k.message) ? true : n.channel_id
+          messageId: null == j || null == (t = j.message) ? true : t.id,
+          channelId: null == j || null == (n = j.message) ? true : n.channel_id
         }) : null
       })
     })]

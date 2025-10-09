@@ -171,11 +171,11 @@ let L = function(e) {
         }), [e, t]
       }
     }, [V, A]),
-    q = i.useMemo(() => V.filter(e => e.type === S.OGo.PENDING_INCOMING).length, [V]),
-    Y = A === S.pJs.PENDING && q > 0 && q >= C.yf,
+    Y = i.useMemo(() => V.filter(e => e.type === S.OGo.PENDING_INCOMING).length, [V]),
+    q = A === S.pJs.PENDING && Y > 0 && Y >= C.yf,
     K = i.useCallback(e => {
-      e.stopPropagation(), s.Z.confirmClearPendingRelationships(q)
-    }, [q]),
+      e.stopPropagation(), s.Z.confirmClearPendingRelationships(Y)
+    }, [Y]),
     Q = i.useCallback(e => {
       let n = function(e, t, n) {
         switch (e) {
@@ -206,7 +206,7 @@ let L = function(e) {
         children: [(0, r.jsx)(y.Z, {
           id: t,
           title: n
-        }), Y && (0, r.jsx)("div", {
+        }), q && (0, r.jsx)("div", {
           className: N.clearButton,
           children: (0, r.jsx)(a.Avr, {
             text: T.intl.string(T.t.O8k7Oz),
@@ -222,7 +222,7 @@ let L = function(e) {
           title: n
         })
       }, n)
-    }, [W, A, t, Y, K]);
+    }, [W, A, t, q, K]);
   if (i.useEffect(() => {
       A === S.pJs.ALL && (0, f.d$)()
     }, [A]), 0 === V.length && "" === k[A]) return (0, r.jsx)(w, {

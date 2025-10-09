@@ -1,9 +1,9 @@
 /** Chunk was on 84992 **/
 /** chunk id: 317269, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  PI: () => k,
-  TB: () => R,
-  ZP: () => v
+  PI: () => v,
+  TB: () => k,
+  ZP: () => R
 }), require("./388685.js"), require("./415506.js");
 var s, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -83,18 +83,18 @@ function P(e) {
     children: t
   })
 }
-var k = ((s = {}).DEEPLINK_TO_DESKTOP_APP = "deeplink_to_desktop_app", s);
+var v = ((s = {}).DEEPLINK_TO_DESKTOP_APP = "deeplink_to_desktop_app", s);
 
-function v(e) {
+function R(e) {
   let t, n, {
       planId: s,
       enableNoPaymentTrial: a,
       startingPremiumSubscriptionPlanId: L,
       onClose: o,
       followupSKUInfo: H,
-      isDowngrade: k,
-      hideClose: v,
-      postSuccessGuild: R,
+      isDowngrade: v,
+      hideClose: R,
+      postSuccessGuild: k,
       paymentSourceType: j,
       startingFractionalPremiumEndsAt: b,
       customCTAType: U
@@ -130,7 +130,7 @@ function v(e) {
       skuName: X.name
     })
   });
-  else if (y && !k) {
+  else if (y && !v) {
     let e = M.Z.get(s);
     r()(null != e, "Missing plan"), e.skuId === x.Si.TIER_0 ? t = (0, l.jsxs)("div", {
       className: T.text,
@@ -155,7 +155,7 @@ function v(e) {
     planId: s,
     startingPremiumSubscriptionPlanId: L
   });
-  else if (null != R) {
+  else if (null != k) {
     let e = M.Z.get(s);
     r()(null != e, "Missing plan"), t = (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
@@ -164,7 +164,7 @@ function v(e) {
       }), (0, l.jsx)("div", {
         className: T.text,
         children: I.intl.format(I.t["6aZ0NT"], {
-          guildName: R.name
+          guildName: k.name
         })
       })]
     })
@@ -182,13 +182,13 @@ function v(e) {
   }, [o, O]);
   n = "deeplink_to_desktop_app" === U || O === E.cL.APPLE_PAYMENT_LINK ? I.intl.string(I.t.qXV2XV) : null != X ? I.intl.formatToPlainString(I.t["1qGgm5"], {
     skuName: X.name
-  }) : k ? I.intl.string(I.t.QJ9EyM) : null != R ? I.intl.string(I.t.ta3cXV) : I.intl.string(I.t.TkTvBw);
+  }) : v ? I.intl.string(I.t.QJ9EyM) : null != k ? I.intl.string(I.t.ta3cXV) : I.intl.string(I.t.TkTvBw);
   let W = () => _.X7u.has(null != j ? j : _.HeQ.UNKNOWN) ? N.ZP.Types.PREMIUM_PAYMENT_STARTED : null != L ? N.ZP.Types.PREMIUM_UPDATED : N.ZP.Types.PREMIUM_ACTIVATED;
   return A ? (0, l.jsx)(f.Z, {
     type: W(),
     text: t,
     buttonText: n,
-    hideClose: v,
+    hideClose: R,
     onClose: Q,
     buttonLoading: B
   }) : (0, l.jsxs)("div", {
@@ -201,10 +201,10 @@ function v(e) {
       theme: S,
       premiumType: D,
       type: W()
-    }), t, v ? null : (0, l.jsx)("div", {
+    }), t, R ? null : (0, l.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: T.button,
-      children: (0, l.jsx)(c.zxk, {
+      children: (0, l.jsx)(c.Button, {
         variant: "primary",
         text: n,
         onClick: Q,
@@ -214,7 +214,7 @@ function v(e) {
   })
 }
 
-function R(e) {
+function k(e) {
   let {
     planId: t,
     onClose: n

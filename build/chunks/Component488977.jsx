@@ -34,17 +34,17 @@ var Chunk951288 = require("./951288.js"),
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[t] = i
     })
   }
   return e
@@ -54,8 +54,8 @@ function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -70,27 +70,27 @@ function L(e) {
     context: L,
     className: R,
     sectionName: Z
-  } = e, w = i.useRef(null), k = (0, o.e7)([C.Z], () => C.Z.entrypoint()), M = (0, E.L1)(r), U = (0, m.Eb)(M), D = (0, d.R)(r.id), H = (0, o.e7)([x.Z], () => {
+  } = e, w = l.useRef(null), k = (0, o.e7)([C.Z], () => C.Z.entrypoint()), M = (0, E.L1)(r), U = (0, m.Eb)(M), D = (0, d.R)(r.id), H = (0, o.e7)([y.Z], () => {
     var e;
-    return null != (e = x.Z.getGuildId()) ? e : true
-  }, []), V = {
+    return null != (e = y.Z.getGuildId()) ? e : true
+  }, []), B = {
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: r.id,
     section_name: Z,
     source: C.Z.lastShownEntrypoint()
-  }, B = y.default.getCurrentUser(), W = (0, f.Z)({
+  }, V = x.default.getCurrentUser(), W = (0, f.Z)({
     id: r.id,
     label: O.intl.string(O.t["+NP/b2"])
   }), F = (0, P.P)({
     application: r
-  }), G = (0, N.yE)(null != (t = r.flags) ? t : 0, _.udG.EMBEDDED), q = "channel" === L.type ? L.channel : true;
-  return (0, l.jsxs)("div", {
+  }), G = (0, N.yE)(null != (t = r.flags) ? t : 0, _.udG.EMBEDDED), Y = "channel" === L.type ? L.channel : true;
+  return (0, i.jsxs)("div", {
     className: I.container,
-    children: [(0, l.jsx)(s.P3F, {
+    children: [(0, i.jsx)(s.P3F, {
       onClick: () => {
         let e = G ? (0, p.H)({
           applicationId: r.id,
-          referrerId: null == B ? true : B.id
+          referrerId: null == V ? true : V.id
         }) : (0, p.J)(S({
           id: r.id
         }, M));
@@ -101,24 +101,24 @@ function L(e) {
       },
       className: a()(I.clickable, R),
       "aria-label": O.intl.string(O.t.WqhZsr),
-      children: (0, l.jsx)(s.xPt, {
+      children: (0, i.jsx)(s.xPt, {
         size: "sm",
         color: s.TVs.colors.INTERACTIVE_ACTIVE
       })
-    }), (0, l.jsx)(s.yRy, {
+    }), (0, i.jsx)(s.yRy, {
       targetElementRef: w,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, l.jsxs)(s.v2r, {
+        return (0, i.jsxs)(s.v2r, {
           className: A.NN,
           navId: "app-details-more-menu",
           onClose: t,
           "aria-label": O.intl.string(O.t.AXIHpa),
           onSelect: true,
-          children: [(0, l.jsxs)(s.kSQ, {
-            children: [D && (0, l.jsx)(s.sNh, {
+          children: [(0, i.jsxs)(s.kSQ, {
+            children: [D && (0, i.jsx)(s.sNh, {
               id: "open-storefront",
               label: O.intl.string(O.t.kRvlKC),
               action: () => {
@@ -126,7 +126,7 @@ function L(e) {
                   let {
                     default: e
                   } = await Promise.all([n.e("77803"), n.e("42124")]).then(n.bind(n, 7225));
-                  return t => (0, l.jsx)(e, {
+                  return t => (0, i.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
                     appId: r.id,
@@ -134,21 +134,21 @@ function L(e) {
                   })
                 })
               }
-            }), U ? (0, l.jsx)(s.sNh, {
+            }), U ? (0, i.jsx)(s.sNh, {
               id: "add-app",
               label: O.intl.string(O.t.NgXl3N),
               action: () => {
-                null == M.customInstallUrl && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, V), (0, j.L)(T(S({}, M), {
+                null == M.customInstallUrl && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, B), (0, j.L)(T(S({}, M), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, V)
+                    null != t && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, B)
                   },
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, r instanceof v.ZP ? (0, l.jsx)(s.sNh, {
+            }) : null, r instanceof v.ZP ? (0, i.jsx)(s.sNh, {
               id: "report-app",
               color: "danger",
               label: O.intl.string(O.t.jhJze3),
@@ -157,25 +157,25 @@ function L(e) {
                 (0, h.uu)({
                   application: r,
                   entrypoint: "app_launcher",
-                  contextualGuildId: null != (e = null == q ? true : q.getGuildId()) ? e : true,
-                  contextualChannelId: null == q ? true : q.id
+                  contextualGuildId: null != (e = null == Y ? true : Y.getGuildId()) ? e : true,
+                  contextualChannelId: null == Y ? true : Y.id
                 })
               }
             }) : null, F]
-          }), (0, l.jsx)(s.kSQ, {
+          }), (0, i.jsx)(s.kSQ, {
             children: W
           })]
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, l.jsx)(s.P3F, T(S({
+      children: e => (0, i.jsx)(s.P3F, T(S({
         innerRef: w
       }, e), {
         onClick: e.onClick,
         className: a()(I.clickable, R),
         "aria-label": O.intl.string(O.t.UKOtz8),
-        children: (0, l.jsx)(s.xhG, {
+        children: (0, i.jsx)(s.xhG, {
           size: "sm",
           color: s.TVs.colors.INTERACTIVE_ACTIVE
         })

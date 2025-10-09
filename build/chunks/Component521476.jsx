@@ -41,7 +41,7 @@ function y(e) {
       bannerSubtext: b.intl.string(b.t.ONjwDw),
       textStyles: C.bannerContainer,
       headerStyles: C.bannerHeader,
-      children: (0, i.jsx)(l.zxk, {
+      children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
         text: b.intl.string(b.t.Viksoq),
@@ -74,7 +74,7 @@ function _(e) {
       bannerSubtext: p,
       textStyles: C.bannerContainer,
       headerStyles: C.bannerHeader,
-      children: (0, i.jsx)(l.zxk, {
+      children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
         text: m,

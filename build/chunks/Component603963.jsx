@@ -21,7 +21,7 @@ function s(e) {
     className: o.category,
     children: [(null != n || null != a) && (0, r.jsxs)("div", {
       className: o.categoryHeader,
-      children: [null != n && (0, r.jsx)(i.X6q, {
+      children: [null != n && (0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: n

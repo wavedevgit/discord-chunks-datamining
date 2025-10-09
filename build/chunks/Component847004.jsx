@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk44315 = require("./44315.js"),
   Chunk937615 = require("./937615.js"),
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk575076 = require("./575076.js");
 
-function p(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function u(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,13 +50,13 @@ function f(e) {
   let {
     price: t,
     selected: n,
-    onClick: r
+    onClick: i
   } = e;
   return (0, a.jsxs)(s.P3F, {
-    className: i()(x.priceRow, {
+    className: l()(x.priceRow, {
       [x.selected]: n
     }),
-    onClick: r,
+    onClick: i,
     children: [n ? (0, a.jsx)(s.owK, {
       size: "custom",
       width: 20,
@@ -91,13 +91,13 @@ function _(e) {
   let {
     selectedTemplate: t,
     handleSelectTemplate: n,
-    newPricesToPick: l
-  } = e, [i, c] = r.useState(0);
+    newPricesToPick: r
+  } = e, [l, c] = i.useState(0);
   return (0, a.jsxs)("div", {
     className: x.container,
     children: [(0, a.jsxs)("div", {
       className: x.content,
-      children: [(0, a.jsx)(s.X6q, {
+      children: [(0, a.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         children: m.intl.format(m.t["5WZ9Cg"], {
           tierName: t.listings[0].name
@@ -108,18 +108,18 @@ function _(e) {
         children: m.intl.format(m.t["5i7UhY"], {
           price: (0, o.T4)(t.listings[0].price_tier, d.pKx.USD)
         })
-      }), l.map((e, t) => (0, a.jsx)(f, {
+      }), r.map((e, t) => (0, a.jsx)(f, {
         price: e,
-        selected: t === i,
+        selected: t === l,
         onClick: () => c(t)
       }, e))]
-    }), (0, a.jsx)(s.zxk, {
+    }), (0, a.jsx)(s.Button, {
       variant: "primary",
       text: m.intl.string(m.t["1W7mCg"]),
       onClick: () => {
-        n(u(p({}, t), {
-          listings: [u(p({}, t.listings[0]), {
-            price_tier: l[i]
+        n(p(u({}, t), {
+          listings: [p(u({}, t.listings[0]), {
+            price_tier: r[l]
           })]
         }))
       }

@@ -24,16 +24,16 @@ let p = e => {
     j(true)
   }, []), y = o.useCallback(() => {
     j(false)
-  }, []), x = o.useCallback(() => {
+  }, []), g = o.useCallback(() => {
     p()
-  }, [p]), g = (0, l.Z)(), {
+  }, [p]), x = (0, l.Z)(), {
     cancelLinkRequest: O,
     isCancelLoading: v
-  } = (0, a.G)({
+  } = (0, c.G)({
     onError: m,
-    onSuccess: x
+    onSuccess: g
   });
-  return s()(g, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsx)(d.Z, {
+  return s()(x, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsx)(d.Z, {
     transitionState: i,
     children: (0, n.jsxs)("form", {
       onSubmit: e => {
@@ -42,31 +42,31 @@ let p = e => {
       children: [(0, n.jsx)(d.Z.Error, {
         error: h ? b.intl.string(u.default["6gyAQU"]) : true,
         onDismiss: y
-      }), (0, n.jsx)(c.hzk, {
+      }), (0, n.jsx)(a.hzk, {
         "data-migration-pending": true,
         children: (0, n.jsx)(d.Z.Header, {
           currentUser: r,
           otherUser: t,
           header: b.intl.string(u.default.HynllZ),
-          icon: (0, n.jsx)(c.Dio, {
+          icon: (0, n.jsx)(a.Dio, {
             size: "md",
             color: "currentColor",
             className: f.closeIcon
           })
         })
-      }), (0, n.jsx)(c.mzw, {
+      }), (0, n.jsx)(a.mzw, {
         "data-migration-pending": true,
         children: (0, n.jsx)(d.Z.ButtonFooter, {
-          children: (0, n.jsxs)(c.hE2, {
+          children: (0, n.jsxs)(a.ButtonGroup, {
             direction: "horizontal-reverse",
-            children: [(0, n.jsx)(c.zxk, {
+            children: [(0, n.jsx)(a.Button, {
               variant: "secondary",
               size: "sm",
               text: b.intl.string(u.default.czincX),
               type: "button",
               disabled: v,
               onClick: p
-            }), (0, n.jsx)(c.zxk, {
+            }), (0, n.jsx)(a.Button, {
               variant: "critical-primary",
               size: "sm",
               text: b.intl.string(u.default.mK40bm),

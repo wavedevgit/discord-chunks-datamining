@@ -2,7 +2,7 @@
 /** chunk id: 370298, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function k(e) {
+function j(e) {
   let {
     toggleShowMenu: t,
     showMenu: n,
@@ -77,7 +77,7 @@ function k(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(k, {
         onClose: t,
         channel: _,
         imageUrl: d,
@@ -120,7 +120,7 @@ function k(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   let {
     onSelect: t,
     onClose: n,
@@ -128,26 +128,26 @@ function j(e) {
     imageUrl: s,
     mimeType: T
   } = e, x = (0, a.e7)([A.Z], () => A.Z.getGuild(o.guild_id)), {
-    fetchState: k,
-    imageRecCommandContexts: j
+    fetchState: j,
+    imageRecCommandContexts: k
   } = (0, R.h)({
     channelId: o.id
-  }), U = k === P.M.FETCHING, G = (0, b.g)(o), B = (0, p.PL)(true, true), Z = (0, p.LD)(o.guild_id, true);
+  }), U = j === P.M.FETCHING, G = (0, b.g)(o), B = (0, p.PL)(true, true), Z = (0, p.LD)(o.guild_id, true);
   i.useEffect(() => {
-    (k === P.M.ERROR || k === P.M.FETCHED && 0 === j.length) && n()
-  }, [k, j.length, n]), i.useEffect(() => {
+    (j === P.M.ERROR || j === P.M.FETCHED && 0 === k.length) && n()
+  }, [j, k.length, n]), i.useEffect(() => {
     var e, t;
-    if (U || 0 === j.length) return;
+    if (U || 0 === k.length) return;
     let n = [];
-    j.forEach(e => {
+    k.forEach(e => {
       n.push(Number(e.command.id)), null != e.overrideSendCommand && n.push(Number(e.overrideSendCommand.id))
     }), C.default.track(w.rMx.APP_IMAGE_RECS_MENU_VIEWED, {
       guild_id: null != (e = null == o ? true : o.guild_id) ? e : "",
       channel_id: null != (t = null == o ? true : o.id) ? t : "",
-      application_ids: [...j.map(e => Number(e.command.applicationId))],
+      application_ids: [...k.map(e => Number(e.command.applicationId))],
       command_ids: n
     })
-  }, [j, o, U]);
+  }, [k, o, U]);
   let F = i.useCallback(async e => {
       let t = await fetch(s),
         n = await t.arrayBuffer(),
@@ -259,7 +259,7 @@ function j(e) {
       navigable: false,
       disabled: true
     }, "menu-image-recs-placeholder") : (0, r.jsx)(r.Fragment, {
-      children: j.filter(e => null != e.imageOption).map(e => {
+      children: k.filter(e => null != e.imageOption).map(e => {
         let t = e.overrideSendCommand,
           n = null == e ? true : e.overrideSendCommandInfo,
           i = null != t && null != n,

@@ -1,40 +1,39 @@
 /** Chunk was on 74240 **/
 /** chunk id: 196345, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EK: () => m,
-  G0: () => f,
-  QC: () => h,
-  dd: () => x
+  EK: () => d,
+  G0: () => m,
+  QC: () => f,
+  dd: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk454585 = require("./454585.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624463 = require("./624463.js");
 
-function m(e) {
+function d(e) {
   let {
     terms: t,
     channelId: n,
     className: l
   } = e;
   return (0, r.jsx)("div", {
-    className: i()(d.termsFieldBody, l),
+    className: i()(u.termsFieldBody, l),
     children: t.map((e, t) => (0, r.jsxs)("div", {
-      className: d.termsRow,
-      children: [(0, r.jsx)(a.Text, {
+      className: u.termsRow,
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "".concat(t + 1, ".")
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: d.termsRowContent,
-        children: o.Z.parseGuildVerificationFormRule(e, true, {
+        className: u.termsRowContent,
+        children: a.Z.parseGuildVerificationFormRule(e, true, {
           channelId: n
         })
       })]
@@ -42,44 +41,46 @@ function m(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     onChange: t,
     checked: n,
     disabled: l
   } = e;
-  return (0, r.jsx)(s.VL, {
-    checked: n,
-    onChange: t,
-    disabled: l,
-    className: d.checkbox,
-    label: u.intl.string(u.t["2EXfGB"])
+  return (0, r.jsx)("div", {
+    className: u.checkbox,
+    children: (0, r.jsx)(s.Checkbox, {
+      checked: !!n,
+      onChange: t,
+      disabled: l,
+      label: c.intl.string(c.t["2EXfGB"])
+    })
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     formField: t
   } = e;
-  return (0, r.jsx)(c.Ih, {
-    icon: a.snC,
-    text: u.intl.string(u.t["2xbmoK"]),
+  return (0, r.jsx)(o.Ih, {
+    icon: s.snC,
+    text: c.intl.string(c.t["2xbmoK"]),
     meetsRequirement: !!t.response
   })
 }
-let x = e => {
+let h = e => {
   let {
     channelId: t,
     formField: n,
     onChange: l
   } = e;
-  return (0, r.jsxs)(c.hK, {
-    title: u.intl.string(u.t.Q8OFNz),
-    children: [(0, r.jsx)(m, {
-      className: d.disabledFieldBackground,
+  return (0, r.jsxs)(o.hK, {
+    title: c.intl.string(c.t.Q8OFNz),
+    children: [(0, r.jsx)(d, {
+      className: u.disabledFieldBackground,
       terms: n.values,
       channelId: t
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(m, {
       onChange: l,
       checked: n.response
     })]

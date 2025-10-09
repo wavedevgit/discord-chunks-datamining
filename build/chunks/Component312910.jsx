@@ -33,10 +33,10 @@ let C = {
       guild: t
     } = e, {
       analyticsLocations: n
-    } = (0, s.ZP)(), i = (0, u.Z)(t.id).available, a = b.oCV[b.Eu4.TIER_1] - i;
+    } = (0, s.ZP)(), i = (0, u.Z)(t.id).available, a = x.oCV[x.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
       className: _.upsellContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         className: _.upsellHeader,
         variant: "heading-xl/semibold",
         children: v.intl.string(v.t.hzCkys)
@@ -44,9 +44,9 @@ let C = {
         className: _.upsellDescription,
         variant: "text-md/normal",
         children: v.intl.string(v.t.jcesAA)
-      }), (0, r.jsxs)(l.hE2, {
+      }), (0, r.jsxs)(l.ButtonGroup, {
         className: _.upsellButtons,
-        children: [(0, r.jsx)(l.zxk, {
+        children: [(0, r.jsx)(l.Button, {
           variant: "overlay-primary",
           text: v.intl.string(v.t.Q5dbTk),
           onClick: () => (0, d.Z)({
@@ -55,13 +55,13 @@ let C = {
             guildId: t.id,
             totalNumberOfSlotsToAssign: a
           })
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
           text: v.intl.string(v.t.hvVgAQ),
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
-              section: b.jXE.GUILD_SETTINGS_STICKERS
+              section: x.jXE.GUILD_SETTINGS_STICKERS
             }
           })
         })]
@@ -97,20 +97,20 @@ let C = {
       d = (0, f.FZ)(s),
       u = (0, f.A3)(s),
       g = a.length;
-    return null == d || s === b.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
+    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
       level: d
     }), n = v.intl.formatToPlainString(v.t["13hOWl"], {
       level: d
-    }), i = b.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
       level: d,
       numAdditional: (0, f.ig)(d)
-    }), i = b.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
       guild: l,
       analyticsLocation: {
-        page: b.ZY5.GUILD_SETTINGS,
-        section: b.jXE.GUILD_SETTINGS_STICKERS,
+        page: x.ZY5.GUILD_SETTINGS,
+        section: x.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
         objectType: (0, f.ge)(d)
       }
@@ -131,7 +131,7 @@ let C = {
       value: require,
       children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.R5nQkZ)
         }), Chunk623624 ? (0, Chunk951288.jsxs)("div", {

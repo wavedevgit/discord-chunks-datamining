@@ -130,7 +130,7 @@ let C = e => {
         children: (0, r.jsx)("td", {
           className: y.labelCell,
           colSpan: 3,
-          children: (0, r.jsx)(l.X6q, {
+          children: (0, r.jsx)(l.Heading, {
             variant: "heading-lg/bold",
             children: t
           })
@@ -149,11 +149,11 @@ let C = e => {
         className: y.planTitle,
         children: [(0, r.jsx)(l.SrA, {
           colorClass: y.nitroWheelIconColor
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.Heading, {
           variant: "heading-sm/semibold",
           children: i
         })]
-      }), (0, r.jsx)(l.X6q, {
+      }), (0, r.jsx)(l.Heading, {
         variant: "heading-sm/semibold",
         children: n
       })]
@@ -172,7 +172,7 @@ let C = e => {
         children: [(0, r.jsx)("th", {
           scope: "col",
           className: y.headerLabelCell,
-          children: (0, r.jsx)(l.X6q, {
+          children: (0, r.jsx)(l.Heading, {
             variant: "heading-xl/bold",
             children: b.intl.string(b.t.ED4UVF)
           })
@@ -212,7 +212,7 @@ let C = e => {
       L = "".concat(D, "/").concat((0, d.eP)(E.rV.MONTH)),
       x = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
       M = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
-      k = (0, g.e)();
+      j = (0, g.e)();
     if (s) n = null;
     else {
       let e = null != S ? b.intl.string(b.t.IBYG5e) : b.intl.string(b.t.TR2B4e);
@@ -221,12 +221,12 @@ let C = e => {
         text: e
       })
     }
-    let j = C === E.Si.TIER_0 || f === E.PremiumTypes.TIER_0;
+    let k = C === E.Si.TIER_0 || f === E.PremiumTypes.TIER_0;
     return (0, r.jsx)(u.Gt, {
       value: I,
       children: (0, r.jsxs)("div", {
         className: o()(y.root, a),
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           className: y.titleText,
           variant: "display-md",
           color: "header-primary",
@@ -235,10 +235,10 @@ let C = e => {
           className: y.tableWrapper,
           children: [(0, r.jsxs)("div", {
             className: o()(y.gradientColumn, {
-              [y.tier0]: j,
-              [y.tier2]: !j
+              [y.tier0]: k,
+              [y.tier2]: !k
             }),
-            children: [!j && n, (0, r.jsx)("div", {
+            children: [!k && n, (0, r.jsx)("div", {
               className: y.gradientColumnBorder
             }), (0, r.jsxs)("div", {
               className: y.gradientBackgroundContainer,
@@ -259,7 +259,7 @@ let C = e => {
               tier2Price: M,
               shouldUseDiscountPrice: P,
               tier2DiscountedPriceString: L
-            }), k.map(e => (0, i.createElement)(R, A(T({}, e), {
+            }), j.map(e => (0, i.createElement)(R, A(T({}, e), {
               key: e.id
             })))]
           })]

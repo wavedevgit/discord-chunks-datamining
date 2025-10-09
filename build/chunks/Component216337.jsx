@@ -33,7 +33,7 @@ let f = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
         className: h.animation
       }), (0, i.jsxs)("div", {
         className: h.textContainer,
-        children: [(0, i.jsx)(a.X6q, {
+        children: [(0, i.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: p.intl.string(p.t.OmBThI)
         }), (0, i.jsx)(a.Text, {

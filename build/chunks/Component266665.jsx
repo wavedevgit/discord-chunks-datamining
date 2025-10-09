@@ -41,7 +41,7 @@ function w(e) {
       highestRole: m,
       selectedItem: p,
       onClick: f,
-      currentPosition: x,
+      currentPosition: b,
       onDragStart: v,
       onDragReset: _,
       onDragComplete: C,
@@ -51,12 +51,12 @@ function w(e) {
     E = (0, j.fI)(d),
     S = null == N && !E,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
-    Z = (0, b._f)(c.id, d, d.colorStrings),
+    Z = (0, x._f)(c.id, d, d.colorStrings),
     [, R] = (0, s.c)({
       type: P,
       item: () => (v(d.id), {
         id: d.id,
-        position: x
+        position: b
       }),
       canDrag: () => S,
       end: (e, t) => {
@@ -97,8 +97,8 @@ function w(e) {
     colors: Z
   }), (0, r.jsxs)(u.njP.Item, {
     className: a()(T.row, {
-      [T.dragBefore]: null !== D && x < D,
-      [T.dragAfter]: null !== D && x > D
+      [T.dragBefore]: null !== D && b < D,
+      [T.dragAfter]: null !== D && b > D
     }),
     id: d.id,
     selectedItem: p,
@@ -167,7 +167,7 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [b, j] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [x, j] = i.useState(o.length), {
     scrolledToTop: O,
     handleScroll: I
   } = (0, N.V)(), {
@@ -184,8 +184,8 @@ function Z(e) {
   return (0, p.ZP)(() => {
     A(n)
   }), i.useEffect(() => {
-    o.length > b && A(n), o.length !== b && j(o.length)
-  }, [o.length, b, j, A, n]), (0, r.jsx)(x.ZP.Sidebar, {
+    o.length > x && A(n), o.length !== x && j(o.length)
+  }, [o.length, x, j, A, n]), (0, r.jsx)(b.ZP.Sidebar, {
     className: T.sidebar,
     children: (0, r.jsxs)("div", {
       className: T.container,

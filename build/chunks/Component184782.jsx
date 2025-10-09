@@ -35,7 +35,7 @@ let k = e => {
       channelData: i,
       onClose: l,
       trackOptionClick: o
-    } = e, d = (0, t.e7)([x.Z], () => x.Z.getChannel(i.channel_id)), u = (0, t.e7)([g.Z], () => null != d && g.Z.can(I.Pl.VIEW_CHANNEL, d)), _ = (0, t.e7)([m.ZP], () => null != i.emoji_id ? m.ZP.getCustomEmojiById(i.emoji_id) : null, [i.emoji_id]), p = null != i.emoji_name ? h.ZP.getByName(h.ZP.convertSurrogateToName(i.emoji_name, false)) : null, N = null != (n = (0, c.KS)(d)) ? n : s.VL1;
+    } = e, d = (0, t.e7)([x.Z], () => x.Z.getChannel(i.channel_id)), u = (0, t.e7)([N.Z], () => null != d && N.Z.can(I.Pl.VIEW_CHANNEL, d)), _ = (0, t.e7)([m.ZP], () => null != i.emoji_id ? m.ZP.getCustomEmojiById(i.emoji_id) : null, [i.emoji_id]), p = null != i.emoji_name ? h.ZP.getByName(h.ZP.convertSurrogateToName(i.emoji_name, false)) : null, g = null != (n = (0, c.KS)(d)) ? n : s.VL1;
     return null != d && u ? (0, a.jsxs)(s.P3F, {
       className: S.optionContainer,
       onClick: () => {
@@ -47,7 +47,7 @@ let k = e => {
         emojiId: null == _ ? true : _.id,
         autoplay: true,
         className: S.optionEmoji
-      }) : (0, a.jsx)(N, {
+      }) : (0, a.jsx)(g, {
         className: S.channelIcon
       }), (0, a.jsxs)("div", {
         className: S.optionTextContainer,
@@ -58,7 +58,7 @@ let k = e => {
         }), (0, a.jsxs)(s.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: [(0, a.jsx)(N, {
+          children: [(0, a.jsx)(g, {
             className: S.channelTitleIcon,
             size: "xxs",
             color: "currentColor"
@@ -79,10 +79,10 @@ let k = e => {
       transitionState: r,
       guildId: c,
       isPreview: m
-    } = e, h = (0, t.e7)([N.Z], () => N.Z.getGuild(c)), {
+    } = e, h = (0, t.e7)([g.Z], () => g.Z.getGuild(c)), {
       welcomeScreen: j,
       fetching: x,
-      hasError: g
+      hasError: N
     } = (0, t.cj)([Z.Z], () => ({
       welcomeScreen: Z.Z.get(c),
       fetching: Z.Z.isFetching(),
@@ -91,8 +91,8 @@ let k = e => {
     l.useEffect(() => {
       null == j && (0, E.RM)(c)
     }, [c, j]), l.useEffect(() => {
-      false === x && true === g && null == j && i()
-    }, [x, g, i, j]), l.useEffect(() => {
+      false === x && true === N && null == j && i()
+    }, [x, N, i, j]), l.useEffect(() => {
       j === Z.a && false === x && i()
     }, [i, j, x]), l.useEffect(() => {
       true !== m && b.default.track(v.rMx.OPEN_MODAL, {
@@ -150,7 +150,7 @@ let k = e => {
             animate: true,
             tabIndex: false
           })
-        }), (0, a.jsx)(s.X6q, {
+        }), (0, a.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           className: S.header,
           id: C,
@@ -173,7 +173,7 @@ let k = e => {
           color: "header-secondary",
           className: S.guildDescription,
           children: j.description
-        }) : null, (0, a.jsx)(s.X6q, {
+        }) : null, (0, a.jsx)(s.Heading, {
           variant: "heading-sm/semibold",
           className: S.choiceHeader,
           children: T.intl.string(T.t["haj5+v"])

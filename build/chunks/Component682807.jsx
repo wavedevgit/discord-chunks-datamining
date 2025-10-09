@@ -25,7 +25,7 @@ function h(e) {
   } = e, c = null != (n = null == (t = a.directory_entry) ? true : t.external_urls) ? n : [];
   return null != a.terms_of_service_url || null != a.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
     className: i()(m.container, l),
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: p.intl.string(p.t.l6DP2t)

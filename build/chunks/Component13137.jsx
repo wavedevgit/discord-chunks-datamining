@@ -76,30 +76,30 @@ function h(e) {
     s().isEqual(T, L) || F(g(L))
   }, [L, T]);
   let A = (0, f.Dt)(),
-    [k, Z] = l.useState(false),
-    [w, U] = l.useState(D),
-    [$, H] = l.useState(null),
-    [B, G] = l.useState(null),
+    [k, w] = l.useState(false),
+    [Z, U] = l.useState(D),
+    [$, B] = l.useState(null),
+    [H, G] = l.useState(null),
     [J, K] = l.useState("");
   (0, d.ZP)(() => null == o ? true : o()), (0, d.zq)(() => {
     var e;
     h({
-      rating: w,
+      rating: Z,
       category: null != (e = null == $ ? true : $.value) ? e : null,
-      problem: B,
+      problem: H,
       dontShowAgain: k,
       feedback: J
     })
   });
   let V = true,
     z = false;
-  return null == w ? (n = (0, a.jsxs)(a.Fragment, {
+  return null == Z ? (n = (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       className: r()(p.problemInfo, p.ratingSelectorContainer),
       children: (0, a.jsx)(_.Z, {
         ratingOptions: N,
         emojiKind: C,
-        selectedRating: w,
+        selectedRating: Z,
         onChangeRating: function(e) {
           U(e), e === m.aZ.GOOD && S()
         }
@@ -107,23 +107,23 @@ function h(e) {
     }), !I && (0, a.jsx)(u.mzw, {
       className: p.footer,
       direction: b.Z.Direction.HORIZONTAL,
-      children: (0, a.jsx)(u.XZJ, {
+      children: (0, a.jsx)(u.Checkbox, {
         checked: k,
-        onChange: () => Z(!k),
+        onChange: () => w(!k),
         label: E.intl.string(E.t["5E9SBw"]),
         labelType: "secondary"
       })
     })]
-  }), V = false) : w !== m.aZ.GOOD && null == $ ? (n = (0, a.jsx)(u.hzk, {
+  }), V = false) : Z !== m.aZ.GOOD && null == $ ? (n = (0, a.jsx)(u.hzk, {
     children: (0, a.jsx)(u.gNt, {
       label: x,
       children: (0, a.jsx)(O.Z, {
         options: R,
-        onClick: H,
+        onClick: B,
         hideCaret: () => true
       })
     })
-  }), i = () => U(null)) : null != $ && null == B ? (n = (0, a.jsx)(u.hzk, {
+  }), i = () => U(null)) : null != $ && null == H ? (n = (0, a.jsx)(u.hzk, {
     children: (0, a.jsx)(u.gNt, {
       label: $.problemsHeader,
       children: (0, a.jsx)(O.Z, {
@@ -141,7 +141,7 @@ function h(e) {
         }
       })
     })
-  }), i = () => H(null)) : null != $ && null != B && (null == (t = $.freeformConfig) ? true : t.value) === B.value && (n = (0, a.jsx)(u.hzk, {
+  }), i = () => B(null)) : null != $ && null != H && (null == (t = $.freeformConfig) ? true : t.value) === H.value && (n = (0, a.jsx)(u.hzk, {
     children: (0, a.jsx)(u.Kx8, {
       label: E.intl.string(E.t.h95hcn),
       helperText: $.freeformConfig.hideHelpdeskLink ? true : E.intl.format(E.t.ybi2tL, {
@@ -162,7 +162,7 @@ function h(e) {
     children: [(0, a.jsxs)(u.xBx, {
       separator: false,
       className: p.headerContainer,
-      children: [(0, a.jsx)(u.X6q, {
+      children: [(0, a.jsx)(u.Heading, {
         id: A,
         variant: "heading-xl/extrabold",
         color: "none",
@@ -176,12 +176,12 @@ function h(e) {
     }), n, V && (0, a.jsxs)(u.mzw, {
       className: p.footer,
       direction: b.Z.Direction.HORIZONTAL,
-      children: [(0, a.jsx)(u.zxk, {
+      children: [(0, a.jsx)(u.Button, {
         variant: "secondary",
         size: "sm",
         text: E.intl.string(E.t["13/7kZ"]),
         onClick: i
-      }), z && (0, a.jsx)(u.zxk, {
+      }), z && (0, a.jsx)(u.Button, {
         variant: "primary",
         size: "sm",
         text: E.intl.string(E.t.geKm7u),

@@ -1,5 +1,5 @@
 /** Chunk was on 1544 **/
-/** chunk id: 926665, original params: e,s,l (module,exports,require) **/
+/** chunk id: 926665, original params: e,s,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => p
 });
@@ -23,7 +23,7 @@ let x = "https://dis.gd/Amazon-Music-Connection",
 function p() {
   let {
     type: e
-  } = (0, Chunk843611.UO)(), s = (0, Chunk656649.vJ)(module), l = (0, Chunk169382.l)().get("error-code"), t = Chunk647438.useCallback(() => {
+  } = (0, Chunk843611.UO)(), s = (0, Chunk656649.vJ)(module), n = (0, Chunk169382.l)().get("error-code"), t = Chunk647438.useCallback(() => {
     window.close()
   }, []), p = Chunk647438.useMemo(() => {
     switch (exports) {
@@ -31,12 +31,12 @@ function p() {
         return (0, Chunk951288.jsx)("div", {
           className: a()(Chunk78713.message, Chunk78713.details),
           children: Chunk873546.tq ? Chunk388032.intl.format(Chunk388032.t["0EikXl"], {
-            link: () => (0, Chunk951288.jsx)(Chunk481060.eee, {
+            link: () => (0, Chunk951288.jsx)(Chunk481060.Anchor, {
               href: x,
               children: x
             })
           }) : Chunk388032.intl.format(Chunk388032.t.hKHZhI, {
-            link: () => (0, Chunk951288.jsx)(Chunk481060.eee, {
+            link: () => (0, Chunk951288.jsx)(Chunk481060.Anchor, {
               href: x,
               children: x
             })

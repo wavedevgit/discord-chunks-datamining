@@ -37,7 +37,7 @@ let d = function(e) {
           className: u.guildIcon,
           guild: n,
           size: s.Z.Sizes.LARGER
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(o.Heading, {
           className: u.guildName,
           variant: "text-lg/bold",
           children: n.name

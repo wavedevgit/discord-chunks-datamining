@@ -46,8 +46,8 @@ let C = {
       showPlaceholderUser: L,
       pendingGlobalName: x,
       pendingDisplayNameStyles: M,
-      avatarDecorationOverride: k,
-      nameplatePreviewSize: j = "default",
+      avatarDecorationOverride: j,
+      nameplatePreviewSize: k = "default",
       isPurchased: U = false,
       skipEffectDisplayName: G = false,
       width: B
@@ -56,7 +56,7 @@ let C = {
       pendingGlobalName: x,
       user: t,
       guildMember: W
-    }) : true, z = i.useMemo(() => C[j], [j]), q = (0, f.Z)({
+    }) : true, z = i.useMemo(() => C[k], [k]), q = (0, f.Z)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: M
@@ -73,8 +73,8 @@ let C = {
       children: (0, r.jsxs)(c.Rny, {
         className: o()(R, T.nameplatePreview, {
           [T.nameplatePurchased]: U && !w,
-          [T.large]: "large" === j,
-          [T.xlarge]: "xlarge" === j,
+          [T.large]: "large" === k,
+          [T.xlarge]: "xlarge" === k,
           [T.inheritWidth]: null != B
         }),
         children: [null != F && (0, r.jsx)(g.Z, {
@@ -94,8 +94,8 @@ let C = {
                 avatarSize: z,
                 status: D ? V : true,
                 "aria-hidden": true,
-                avatarDecorationOverride: null != k ? {
-                  asset: k.asset
+                avatarDecorationOverride: null != j ? {
+                  asset: j.asset
                 } : true
               }),
               decorators: (0, r.jsx)(h.ZP, {

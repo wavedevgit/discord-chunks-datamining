@@ -251,7 +251,7 @@ function v() {
     children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
       placeholder: "User ID",
       onChange: module
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       onClick: exports,
       text: "Get Snapshot",
       loading: require,

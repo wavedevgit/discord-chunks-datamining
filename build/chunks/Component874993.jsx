@@ -76,7 +76,7 @@ function y(e) {
   }, [N, w, M]);
   let U = (0, p.Z6)(P);
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: C.intl.string(C.t.uRelg4)
@@ -134,7 +134,7 @@ function y(e) {
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
-            return (0, r.jsx)(b.Z, {
+            return (0, r.jsx)(x.Z, {
               guildId: P,
               triggerType: e,
               rules: null != (t = R[e]) ? t : [],
@@ -147,7 +147,7 @@ function y(e) {
       guild: S,
       withDivider: false,
       className: O.explicitContentFilterSection
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(b.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {

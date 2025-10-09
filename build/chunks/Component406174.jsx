@@ -21,7 +21,7 @@ function f(e) {
     count: n
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-md/bold",
       children: l.intl.string(l.t["KzCF//"])
     }), (0, r.jsx)(s.LZC, {
@@ -40,7 +40,7 @@ function f(e) {
         className: c.handImage
       }), (0, r.jsxs)("div", {
         className: c.textContainer,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           className: c.header,
           children: l.intl.string(l.t["KzCF//"])

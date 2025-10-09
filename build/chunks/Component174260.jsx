@@ -20,7 +20,7 @@ function d(e) {
   } = e;
   return null == c || 0 === c.length ? null : (0, a.jsxs)("div", {
     className: o.sectionContainer,
-    children: [null != d && (0, a.jsx)(r.X6q, {
+    children: [null != d && (0, a.jsx)(r.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       lineClamp: 1,

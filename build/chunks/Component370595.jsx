@@ -27,7 +27,7 @@ function u(e) {
           size: "custom",
           width: 20,
           height: 20
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           children: s.intl.string(s.t["13/7kZ"])
         })]

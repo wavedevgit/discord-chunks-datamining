@@ -50,37 +50,37 @@ function y(e) {
       giftCode: R,
       hasSentMessage: G,
       isSendingMessage: F,
-      sendGiftMessage: U,
-      claimableRewards: H,
+      sendGiftMessage: H,
+      claimableRewards: U,
       selectedGiftingPromotionReward: D
     } = (0, _.wD)(),
     {
       confirmationFooter: z
     } = (0, h.zb)(),
-    W = (0, C.id)(E, B, H),
+    W = (0, C.id)(E, B, U),
     K = (0, d.Z)(),
     Y = (0, C.a5)(E),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, b.$)(P, I),
-    X = B && null != D && Y;
+    q = (0, g.$)(P, I),
+    J = B && null != D && Y;
   l()(null != E, "Expected plan to selected"), l()(null != k, "Expected selectedSkuId"), l()(null != T, "Step should be set");
-  let J = i.useCallback(() => {
+  let Q = i.useCallback(() => {
     n(), null == y || y()
   }, [n, y]);
   i.useEffect(() => {
-    !B || null == N || null == R || G || F || (0, u.pO)(N) || U({
+    !B || null == N || null == R || G || F || (0, u.pO)(N) || H({
       onSubscriptionConfirmation: y
     })
-  }, [U, B, N, R, G, F, y]), i.useEffect(() => {
+  }, [H, B, N, R, G, F, y]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: j.L.INDIRECT_ACTION
     })
   }, [K, W]);
-  let Q = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != v) t = v(E, J, A);
+  let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
+  if (null != v) t = v(E, Q, A);
   else if (B) t = (0, r.jsx)(c.TB, {
     planId: E.id,
-    onClose: J
+    onClose: Q
   });
   else {
     let e = M.current === E.id ? {
@@ -109,18 +109,18 @@ function y(e) {
       return e
     }({
       planId: E.id,
-      onClose: J,
+      onClose: Q,
       paymentSourceType: q,
       hideClose: null != z,
       startingFractionalPremiumEndsAt: Z.current,
-      customCTAType: Q
+      customCTAType: X
     }, e))
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.C3, {
-      children: [(0, r.jsx)(g.Z, {}), t]
-    }), null != z && z, X && null != V && (0, r.jsx)(x.Z, {
-      onClose: J,
+      children: [(0, r.jsx)(b.Z, {}), t]
+    }), null != z && z, J && null != V && (0, r.jsx)(x.Z, {
+      onClose: Q,
       selectedPromotionalDecoPurchaseRecord: V,
       selectedGiftingPromotionReward: D
     })]

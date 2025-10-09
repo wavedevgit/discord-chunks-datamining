@@ -62,8 +62,8 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = /{{(.*?)}}/g,
-  D = [{
+let D = /{{(.*?)}}/g,
+  k = [{
     type: "HERO",
     title: "{{username}}",
     image: "{{featured_played_character_image}}",
@@ -336,13 +336,13 @@ function B(e) {
 
 function z() {
   let e = function() {
-      let e = Chunk647438.useContext(q);
+      let e = Chunk647438.useContext(V);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = V(module.widget);
+    } = q(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -353,7 +353,7 @@ function z() {
 
 function H(e, t) {
   if (null == e) return null;
-  let n = e.split(k);
+  let n = e.split(D);
   if (1 === n.length) return n[0];
   if ("skeleton" === t.mode) return null;
   let r = "";
@@ -372,14 +372,14 @@ function H(e, t) {
 function Y(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
-  let i = null == (r = e.match(k)) || null == (n = r[0]) ? true : n.slice(2, false);
+  let i = null == (r = e.match(D)) || null == (n = r[0]) ? true : n.slice(2, false);
   if (null == i) return null;
   let l = t.variables[i];
   return null == l || "unfurled_media" !== l.type ? null : l.media
 }
-let q = Chunk647438.createContext(null);
+let V = Chunk647438.createContext(null);
 
-function V(e) {
+function q(e) {
   return (0, s.cj)([f.Z, S.Z, P.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -390,7 +390,7 @@ function V(e) {
   })
 }
 
-function X(e) {
+function K(e) {
   let {
     children: t,
     widget: n
@@ -411,7 +411,7 @@ function X(e) {
   })
 }
 
-function K(e) {
+function X(e) {
   return (0, r.jsxs)(c.Kqy, {
     direction: "horizontal",
     gap: 24,
@@ -420,7 +420,7 @@ function K(e) {
     className: A.cta,
     children: [(0, r.jsxs)(c.Kqy, {
       gap: 4,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         children: e.heading
@@ -449,7 +449,7 @@ let J = Object.assign(function(e) {
     application: u,
     game: f,
     config: m
-  } = V(n), h = null == u ? true : u.getIconURL(16), v = (0, x.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), b = (0, p.Z)({
+  } = q(n), h = null == u ? true : u.getIconURL(16), v = (0, x.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), b = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == f ? true : f.id,
     source: g.m1.UserProfile,
@@ -460,7 +460,7 @@ let J = Object.assign(function(e) {
     hasAlreadyLinked: P,
     canStartAuthorization: S,
     startAuthorization: E
-  } = (0, d.FG)(u), k = null == s && !O && !P && S, Z = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(u), D = null == s && !O && !P && S, Z = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: A.appIcon,
       src: h,
@@ -515,7 +515,7 @@ let J = Object.assign(function(e) {
       }).filter(I.lm)),
       config: t
     });
-    return D.map(function e(t) {
+    return k.map(function e(t) {
       switch (t.type) {
         case "HERO":
           var n;
@@ -555,9 +555,9 @@ let J = Object.assign(function(e) {
       icon: c.iWm,
       action: b
     }) : null,
-    children: [(0, r.jsx)(q.Provider, {
+    children: [(0, r.jsx)(V.Provider, {
       value: e,
-      children: (0, r.jsx)(X, {
+      children: (0, r.jsx)(K, {
         widget: n,
         children: (0, r.jsx)(_, {
           component: L
@@ -565,7 +565,7 @@ let J = Object.assign(function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: A.footer,
-      children: [null != y || k ? null : (0, r.jsxs)("div", {
+      children: [null != y || D ? null : (0, r.jsxs)("div", {
         className: A.stillSyncing,
         children: [(0, r.jsx)(c.wGF, {
           size: "xxs"
@@ -574,10 +574,10 @@ let J = Object.assign(function(e) {
           color: "text-secondary",
           children: T.intl.string(T.t.z5K4Ul)
         })]
-      }), k ? (0, r.jsx)(K, {
+      }), D ? (0, r.jsx)(X, {
         heading: T.intl.string(T.t.UDPRLC),
         content: T.intl.string(T.t["OW/2am"]),
-        buttons: (0, r.jsx)(c.zxk, {
+        buttons: (0, r.jsx)(c.Button, {
           text: T.intl.string(T.t.S0W8Z2),
           onClick: E
         })
@@ -585,5 +585,5 @@ let J = Object.assign(function(e) {
     })]
   }))
 }, {
-  Cta: K
+  Cta: X
 })

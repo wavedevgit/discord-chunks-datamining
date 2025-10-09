@@ -1,7 +1,7 @@
 /** Chunk was on 958 **/
 /** chunk id: 4526, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,19 +14,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk544723 = require("./544723.js");
-let h = e => {
+let p = e => {
   let {
     currentUser: r,
     otherUser: t,
     transitionState: i,
-    onClose: h
-  } = e, [p, j] = o.useState(false), m = o.useCallback(() => {
+    onClose: p
+  } = e, [h, j] = o.useState(false), m = o.useCallback(() => {
     j(true)
   }, []), x = o.useCallback(() => {
     j(false)
   }, []), y = o.useCallback(() => {
-    h()
-  }, [h]), g = (0, a.Z)(), {
+    p()
+  }, [p]), g = (0, a.Z)(), {
     declineLinkRequest: O,
     isDeclineLoading: v
   } = (0, l.G)({
@@ -40,7 +40,7 @@ let h = e => {
         e.preventDefault(), O(t.id)
       },
       children: [(0, n.jsx)(d.Z.Error, {
-        error: p ? b.intl.string(u.default.tJAUys) : true,
+        error: h ? b.intl.string(u.default.tJAUys) : true,
         onDismiss: x
       }), (0, n.jsxs)(c.hzk, {
         "data-migration-pending": true,
@@ -61,16 +61,16 @@ let h = e => {
       }), (0, n.jsx)(c.mzw, {
         "data-migration-pending": true,
         children: (0, n.jsx)(d.Z.ButtonFooter, {
-          children: (0, n.jsxs)(c.hE2, {
+          children: (0, n.jsxs)(c.ButtonGroup, {
             direction: "horizontal-reverse",
-            children: [(0, n.jsx)(c.zxk, {
+            children: [(0, n.jsx)(c.Button, {
               variant: "secondary",
               size: "sm",
               text: b.intl.string(b.t["ETE/oK"]),
               type: "button",
               disabled: v,
-              onClick: h
-            }), (0, n.jsx)(c.zxk, {
+              onClick: p
+            }), (0, n.jsx)(c.Button, {
               variant: "critical-primary",
               size: "sm",
               text: b.intl.string(u.default.dKxFcn),

@@ -17,7 +17,7 @@ function u() {
   return (0, Chunk951288.jsx)("div", {
     ref: module,
     className: l()(Chunk451429.panel, Chunk55989.panel),
-    children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "primary",
       size: "sm",
       text: "Reset Uploaded Key Versions Cache",

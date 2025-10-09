@@ -132,19 +132,19 @@ let Y = Object.freeze({
       type: "EDITOR",
       isCoachmark: true,
       isPreview: true
-    }, () => k.intl.string(k.t.D29k19)).with({
+    }, () => j.intl.string(j.t.D29k19)).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => k.intl.string(k.t["8+vbqa"])).otherwise(() => k.intl.string(k.t.hjV0fX));
+    }, () => j.intl.string(j.t["8+vbqa"])).otherwise(() => j.intl.string(j.t.hjV0fX));
     return (0, r.jsxs)("div", {
-      className: j.title,
-      children: [(0, r.jsx)(c.X6q, {
+      className: k.title,
+      children: [(0, r.jsx)(c.Heading, {
         "aria-label": o,
-        className: j.titleText,
+        className: k.titleText,
         variant: "text-md/medium",
         children: o
       }), (0, r.jsx)(b.Z, {
-        className: j.premiumIcon
+        className: k.premiumIcon
       })]
     })
   },
@@ -163,22 +163,22 @@ let Y = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: true
-    }, () => k.intl.format(k.t.G8yQXl, {
+    }, () => j.intl.format(j.t.G8yQXl, {
       onPremiumClick: () => m.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => k.intl.string(k.t.jmZiNj)).with({
+    }, () => j.intl.string(j.t.jmZiNj)).with({
       type: "EDITOR",
       isPreview: false
-    }, () => k.intl.string(k.t.dqDFwc)).with({
+    }, () => j.intl.string(j.t.dqDFwc)).with({
       isPreview: true
-    }, () => k.intl.format(k.t.DWIjJy, {
+    }, () => j.intl.format(j.t.DWIjJy, {
       onPremiumClick: () => m.z
-    })).otherwise(() => k.intl.string(k.t["np0X/v"]));
-    return (0, r.jsx)(c.X6q, {
+    })).otherwise(() => j.intl.string(j.t["np0X/v"]));
+    return (0, r.jsx)(c.Heading, {
       variant: "text-sm/normal",
-      className: j.subtext,
+      className: k.subtext,
       children: l
     })
   },
@@ -193,13 +193,13 @@ let Y = Object.freeze({
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: D.Si.TIER_2,
-      children: k.intl.format(k.t.G8yQXl, {
+      children: j.intl.format(j.t.G8yQXl, {
         onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
-      className: j.header,
+      className: k.header,
       children: [(0, r.jsxs)("div", {
-        className: j.headings,
+        className: k.headings,
         children: [(0, r.jsx)(z, {
           type: l,
           isPreview: c,
@@ -251,7 +251,7 @@ let Y = Object.freeze({
           theme: e.theme,
           useSystemTheme: g ? L.KW.OFF : true
         }, x.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
-      }, k = () => {
+      }, j = () => {
         if (!b) return null;
         let e = P.qt[s.Us.EASTER_EGG];
         if (null == e) return null;
@@ -262,7 +262,7 @@ let Y = Object.freeze({
           return e
         }
         return (0, r.jsxs)("div", {
-          className: j.easterEggSelection,
+          className: k.easterEggSelection,
           children: [(0, r.jsx)(R.DR, {
             preset: e,
             isSelected: E === s.Us.EASTER_EGG,
@@ -270,7 +270,7 @@ let Y = Object.freeze({
           }), (0, r.jsx)(c.Fmz, {
             importData: t,
             shouldAnimate: !T,
-            className: j.sparkles
+            className: k.sparkles
           })]
         })
       };
@@ -295,7 +295,7 @@ let Y = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), k()]
+      }, e.id)), j()]
     })
   },
   J = e => {
@@ -380,10 +380,10 @@ let Y = Object.freeze({
       children: [!t && (0, r.jsx)(X, {
         renderCTAButtons: i,
         isCoachmark: a
-      }), t && a && (0, r.jsx)(c.X6q, {
-        className: j.upsellText,
+      }), t && a && (0, r.jsx)(c.Heading, {
+        className: k.upsellText,
         variant: "heading-sm/semibold",
-        children: k.intl.string(k.t.POSLGR)
+        children: j.intl.string(j.t.POSLGR)
       }), (0, r.jsxs)(c.Kqy, {
         direction: "horizontal",
         wrap: true,
@@ -418,7 +418,7 @@ let Y = Object.freeze({
       children: (0, r.jsx)("div", Z(G({
         ref: s
       }, c), {
-        className: j.__invalid_container,
+        className: k.__invalid_container,
         children: n
       }))
     })

@@ -141,7 +141,7 @@ class L extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.lELyPj)
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.Q3Qgur),

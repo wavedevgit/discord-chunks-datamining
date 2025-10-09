@@ -32,7 +32,7 @@ function c(e) {
       }), (0, r.jsx)(a.Z, {
         className: i.stars
       })]
-    }), (0, r.jsx)(l.X6q, {
+    }), (0, r.jsx)(l.Heading, {
       className: i.header,
       variant: "heading-xl/semibold",
       children: n
@@ -43,7 +43,7 @@ function c(e) {
     }), d || u ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: i.cta,
-      children: (0, r.jsx)(l.zxk, {
+      children: (0, r.jsx)(l.Button, {
         variant: "primary",
         text: o.intl.string(o.t.rBIGBA),
         onClick: c

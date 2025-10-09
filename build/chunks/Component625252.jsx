@@ -78,7 +78,7 @@ function I() {
             alt: "",
             src: Chunk66094,
             className: Chunk154115.icon
-          }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/bold",
             color: "always-white",
             children: Chunk388032.intl.string(Chunk388032.t.z8YP2N)
@@ -88,7 +88,7 @@ function I() {
           color: "text-secondary",
           children: Chunk388032.intl.string(y ? Chunk388032.t["HdKh6+"] : Chunk388032.t.IqmRZ2)
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: module ? "primary" : "overlay-primary",
         text: Chunk388032.intl.string(Chunk388032.t.GURBQk),
         onClick: require

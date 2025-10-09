@@ -21,12 +21,12 @@ function m() {
       className: Chunk711322.panelInner,
       children: [(0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Verification Layer"
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk711322.inputRow,
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Open Verification Layer",
             onClick: () => {
@@ -39,12 +39,12 @@ function m() {
         })]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Safety Flow"
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk711322.inputRow,
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Open Safety Flow",
             onClick: () => {
@@ -64,12 +64,12 @@ function m() {
         })]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: "Layer Controls"
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk711322.inputRow,
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Close All Layers",
             onClick: () => {

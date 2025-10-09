@@ -85,7 +85,7 @@ let h = [{
         size: 16
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk198764.headingContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/bold",
           children: "Preview Profile Effect"
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
@@ -117,7 +117,7 @@ let h = [{
       className: Chunk198764.previewSelector,
       children: [(0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 16
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         children: "Preview Avatar Decorations"
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
@@ -148,10 +148,10 @@ let h = [{
         size: 16
       }), (0, a.jsxs)("div", {
         className: m.headingContainer,
-        children: [(0, a.jsx)(i.X6q, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-lg/bold",
           children: "Uploaded Assets"
-        }), (0, a.jsx)(i.zxk, {
+        }), (0, a.jsx)(i.Button, {
           variant: "critical-primary",
           size: "sm",
           onClick: p,
@@ -184,10 +184,10 @@ let h = [{
         size: 16
       }), (0, a.jsxs)("div", {
         className: m.headingContainer,
-        children: [(0, a.jsx)(i.X6q, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
-        }), (0, a.jsx)(i.zxk, {
+        }), (0, a.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
           onClick: n,
@@ -227,7 +227,7 @@ let h = [{
           variant: "text-md/normal",
           color: h ? "text-feedback-warning" : "text-default",
           children: "".concat(Chunk281598.length, " warnings")
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           onClick: exports,
@@ -239,7 +239,7 @@ let h = [{
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 16
       }), p && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/bold",
           children: "Errors"
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
@@ -267,7 +267,7 @@ let h = [{
           })
         })]
       }), h && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/bold",
           children: "Warnings"
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {

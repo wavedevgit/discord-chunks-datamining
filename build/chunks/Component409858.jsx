@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
-function X(e, t, n) {
+function J(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ function X(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let J = e => {
+let Q = e => {
     let {
       openedGift: t
     } = e, {
@@ -70,7 +70,7 @@ let J = e => {
       t && n(window.innerWidth / 2, window.innerHeight / 4)
     }, [n, t]), null
   },
-  Q = e => {
+  X = e => {
     let {
       step: t,
       soundId: n
@@ -346,7 +346,7 @@ class ee extends Chunk647438.Component {
           }) : null, Chunk703656 && (0, Chunk951288.jsx)("img", {
             alt: "",
             src: Chunk906732 ? Chunk167969 : Chunk557256
-          }), (0, Chunk951288.jsxs)(Chunk481060.X6q, {
+          }), (0, Chunk951288.jsxs)(Chunk481060.Heading, {
             id: Chunk979554,
             className: a()({
               [Chunk269142.customGiftHeader]: Chunk812206 && !Chunk884697,
@@ -377,7 +377,7 @@ class ee extends Chunk647438.Component {
             variant: "text-md/normal",
             children: this.errorMessage
           }), Chunk812206 && this.state.opened && !this.state.accepted && !Chunk703656 && null != Chunk410030 && "" !== Chunk410030 && !Chunk146779 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               id: Chunk979554,
               variant: "heading-md/semibold",
               children: Chunk388032.intl.format(Chunk388032.t.DDO4W1, {
@@ -394,7 +394,7 @@ class ee extends Chunk647438.Component {
               [Chunk269142.gameItemImageGiftUnopened]: !this.state.opened,
               [Chunk269142.gameItemImageGiftOpened]: this.state.opened
             })
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: this.buttonText,
             loading: require,
@@ -403,19 +403,19 @@ class ee extends Chunk647438.Component {
             }
           })]
         })]
-      }), null != Chunk120356.giftStyle && !Chunk780384 && this.step !== Chunk981631.wZ8.ERROR && !Chunk884697 && !require && Chunk583434 && (null == Chunk607070 || null == Chunk832149 ? (0, Chunk951288.jsx)(J, {
+      }), null != Chunk120356.giftStyle && !Chunk780384 && this.step !== Chunk981631.wZ8.ERROR && !Chunk884697 && !require && Chunk583434 && (null == Chunk607070 || null == Chunk832149 ? (0, Chunk951288.jsx)(Q, {
         openedGift: Chunk583434 && !Chunk884697 && !require
       }) : (0, Chunk951288.jsx)(Chunk715627.Z, {
         confettiTarget: this.modalRef.current,
         emojiURL: Chunk832149
-      })), !Chunk884697 && !require && Chunk583434 && null != Chunk100527 && (0, Chunk951288.jsx)(Q, {
+      })), !Chunk884697 && !require && Chunk583434 && null != Chunk100527 && (0, Chunk951288.jsx)(X, {
         soundId: Chunk100527,
         step: this.step
       })]
     })
   }
   constructor(...e) {
-    super(...e), X(this, "state", {
+    super(...e), J(this, "state", {
       error: null,
       accepted: false,
       opened: false,
@@ -424,11 +424,11 @@ class ee extends Chunk647438.Component {
       step: true,
       emojiURL: true,
       isPremiumAppGift: false
-    }), X(this, "modalRef", r.createRef()), X(this, "handleOpen", () => {
+    }), J(this, "modalRef", r.createRef()), J(this, "handleOpen", () => {
       this.setState({
         opened: true
       })
-    }), X(this, "handleAccept", async () => {
+    }), J(this, "handleAccept", async () => {
       let {
         giftCode: e,
         channelContext: t,
@@ -449,7 +449,7 @@ class ee extends Chunk647438.Component {
           error: e
         })
       }
-    }), X(this, "handleGoToLibrary", () => {
+    }), J(this, "handleGoToLibrary", () => {
       let {
         onClose: e,
         libraryApplication: t
@@ -459,15 +459,15 @@ class ee extends Chunk647438.Component {
           applicationId: null != t ? t.id : true
         }
       }), e()
-    }), X(this, "getDefaultAnimationStatus", () => this.step === V.wZ8.OPEN ? H.SR.IDLE : H.SR.ACTION), X(this, "getIdleAnimationStatus", () => {
-      if (this.step !== V.wZ8.OPEN) return H.SR.LOOP
+    }), J(this, "getDefaultAnimationStatus", () => this.step === V.wZ8.OPEN ? U.SR.IDLE : U.SR.ACTION), J(this, "getIdleAnimationStatus", () => {
+      if (this.step !== V.wZ8.OPEN) return U.SR.LOOP
     })
   }
 }
 let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z, Chunk82142.Z, Chunk509545.Z, Chunk607070.Z, Chunk597688.Z], e => {
     let {
       giftCode: t
-    } = e, n = R.Z.get(t.skuId), i = null != n ? b.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
+    } = e, n = k.Z.get(t.skuId), i = null != n ? b.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
     return {
       sku: n,
       libraryApplication: null != n && (null == t ? true : t.entitlementBranches) != null ? (0, L.z2)(t.entitlementBranches, n, N.Z) : null,
@@ -517,7 +517,7 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          X(e, t, n[t])
+          J(e, t, n[t])
         })
       }
       return e

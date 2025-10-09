@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -29,21 +29,21 @@ let E = e => {
       className: l
     } = e, E = (0, d.Nd)(), v = null == E ? true : E.tab, {
       isPurchased: S,
-      isPartiallyOwnedBundle: x
-    } = (0, f.L)(t), O = (0, i.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (0, i.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
-      isOrbExclusive: T
+      isPartiallyOwnedBundle: O
+    } = (0, f.L)(t), x = (0, s.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), T = (0, C.Iw)(t), {
+      isOrbExclusive: L
     } = (0, h.Ip)({
       product: t,
       isPremiumUser: j,
       tab: v,
-      hasDiscountOffer: null != k
-    }), L = (0, g.Yq)(t.skuId), I = (null == O ? true : O.skuId) === _.bu && (0, g.WW)(t.skuId);
+      hasDiscountOffer: null != T
+    }), k = (0, g.Yq)(t.skuId), I = (null == x ? true : x.skuId) === _.bu && (0, g.WW)(t.skuId);
     if (n === p.Zh.NONE) return null;
-    let P = null;
-    return (n === p.Zh.NEW ? P = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? P = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (P = m.intl.string(m.t.S6kE9v)), null == P && (x || S || !L ? T ? P = m.intl.string(m.t["0TmQRE"]) : I && (P = m.intl.string(m.t.S6kE9v)) : P = m.intl.string(m.t.y2b7CA)), null == P) ? null : (0, r.jsx)(a.IGR, {
-      text: P,
+    let B = null;
+    return (n === p.Zh.NEW ? B = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? B = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (B = m.intl.string(m.t.S6kE9v)), null == B && (O || S || !k ? L ? B = m.intl.string(m.t["0TmQRE"]) : I && (B = m.intl.string(m.t.S6kE9v)) : B = m.intl.string(m.t.y2b7CA)), null == B) ? null : (0, r.jsx)(a.IGR, {
+      text: B,
       disableColor: true,
-      className: s()(l, b.productCardBadge)
+      className: i()(l, b.productCardBadge)
     })
   },
   v = e => {
@@ -51,9 +51,9 @@ let E = e => {
       skuId: t,
       badgeOverride: n,
       className: l
-    } = e, s = (0, p.LJ)(t);
-    return null == s ? null : (0, r.jsx)(E, {
-      product: s,
+    } = e, i = (0, p.LJ)(t);
+    return null == i ? null : (0, r.jsx)(E, {
+      product: i,
       badgeOverride: n,
       className: l
     })

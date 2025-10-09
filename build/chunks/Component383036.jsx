@@ -79,7 +79,7 @@ let f = e => {
       className: Chunk277790.container,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk277790.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Configuration"
         }), (0, Chunk951288.jsxs)("div", {
@@ -108,7 +108,7 @@ let f = e => {
         })]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk277790.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
         }), null != E && null != T ? (0, Chunk951288.jsxs)("div", {
@@ -118,7 +118,7 @@ let f = e => {
             user: module,
             category: T,
             tab: Chunk215023.AW.HOME
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             onClick: () => {
               null != E && null != module && (0, Chunk832149.Z)({

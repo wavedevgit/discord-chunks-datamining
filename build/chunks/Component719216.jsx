@@ -74,7 +74,7 @@ function f(e) {
     } catch (e) {}
   }
   return (0, r.jsx)(r.Fragment, {
-    children: t.buttons.map((e, a) => (0, r.jsx)(i.zxk, c({
+    children: t.buttons.map((e, a) => (0, r.jsx)(i.Button, c({
       text: e,
       variant: l,
       size: "sm",

@@ -48,7 +48,7 @@ function j(e) {
           icon: c.yFM,
           onClick: () => l(true),
           label: b.intl.string(b.t["13/7kZ"])
-        }), (0, r.jsx)(c.X6q, {
+        }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-secondary",
           children: t

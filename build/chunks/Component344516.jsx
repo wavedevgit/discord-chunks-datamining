@@ -93,20 +93,20 @@ function Z(e) {
     } = e,
     {
       inputVolume: h,
-      outputVolume: c,
+      outputVolume: g,
       inputMode: j,
       shortcut: C,
       vadThreshold: T,
       vadAutoThreshold: Z,
       delay: M
-    } = (0, s.cj)([g.Z], () => ({
-      inputVolume: g.Z.getInputVolume(),
-      outputVolume: g.Z.getOutputVolume(),
-      inputMode: g.Z.getMode(n),
-      shortcut: g.Z.getModeOptions(n).shortcut,
-      vadThreshold: g.Z.getModeOptions(n).threshold,
-      vadAutoThreshold: g.Z.getModeOptions(n).autoThreshold,
-      delay: g.Z.getModeOptions(n).delay
+    } = (0, s.cj)([c.Z], () => ({
+      inputVolume: c.Z.getInputVolume(),
+      outputVolume: c.Z.getOutputVolume(),
+      inputMode: c.Z.getMode(n),
+      shortcut: c.Z.getModeOptions(n).shortcut,
+      vadThreshold: c.Z.getModeOptions(n).threshold,
+      vadAutoThreshold: c.Z.getModeOptions(n).autoThreshold,
+      delay: c.Z.getModeOptions(n).delay
     })),
     v = [{
       value: x.pM4.VOICE_ACTIVITY,
@@ -159,7 +159,7 @@ function Z(e) {
       location: "VoiceSettingsModal"
     }), (0, l.jsx)(o.iRW, {
       label: V.intl.string(V.t.eATD2N),
-      initialValue: (0, p.P)(c),
+      initialValue: (0, p.P)(g),
       maxValue: 200,
       asValueChanges: e => r.Z.setOutputVolume((0, p.A)(e))
     }), (0, l.jsx)(a.E, {
@@ -173,7 +173,7 @@ function Z(e) {
 
 function M(e) {
   var t;
-  return (0, c.Z)(() => {
+  return (0, g.Z)(() => {
     null != x.e3s && e.onClose()
   }), (0, l.jsxs)(o.Y0X, {
     transitionState: e.transitionState,
@@ -181,7 +181,7 @@ function M(e) {
     parentComponent: "VoiceSettingsModal",
     children: [(0, l.jsxs)(o.xBx, {
       children: [(0, l.jsxs)(h.Z.Child, {
-        children: [(0, l.jsx)(o.X6q, {
+        children: [(0, l.jsx)(o.Heading, {
           variant: "heading-lg/semibold",
           className: C.marginReset,
           children: V.intl.string(V.t.NiTd0d)

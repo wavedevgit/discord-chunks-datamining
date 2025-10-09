@@ -72,7 +72,7 @@ function _(e) {
     });
   return (0, r.jsxs)("div", {
     className: l()(d.linksContainer, c.listElementWrapper),
-    children: [!i && (0, r.jsx)(a.X6q, {
+    children: [!i && (0, r.jsx)(a.Heading, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: d.header,

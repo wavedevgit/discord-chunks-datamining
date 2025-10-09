@@ -19,7 +19,7 @@ function c(e) {
   } = e, d = (0, a.Ui)(), p = 0 === n.length || n.length === d.length, f = i.useMemo(() => p ? "all" : 1 === n.length ? n[0] : "all", [n, p]);
   return (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
       children: o.intl.string(o.t.BDUDam)

@@ -1,4 +1,4 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 28798, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -27,7 +27,7 @@ let f = function(e) {
         className: u.gameTile
       }), (0, r.jsxs)("div", {
         className: u.copy,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           color: "always-white",
           variant: "text-sm/medium",
           children: d.intl.format(d.t["5nMfBQ"], {

@@ -28,7 +28,7 @@ function y(e) {
     onClose: O
   } = e, D = (0, i.e7)([m.Z], () => m.Z.getGuild(y));
   return (a.useEffect(() => {
-    (0, p.Y)(y), (0, g.L)(g.Q.MODAL_VIEWED, y), d.Z.increment({
+    (0, h.Y)(y), (0, p.L)(p.Q.MODAL_VIEWED, y), d.Z.increment({
       name: s.V.DM_SETTINGS_UPSELL_VIEW
     })
   }, [y]), null == D) ? null : (0, n.jsx)(l.Y0X, {
@@ -38,8 +38,8 @@ function y(e) {
     children: (0, n.jsxs)("form", {
       onSubmit: e => {
         e.preventDefault();
-        let t = (0, h.YK)();
-        t.add(y), b.h2.updateSetting(Array.from(t)).then(() => (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.rlYD1d), l.ToastType.SUCCESS))), O(), (0, g.L)(g.Q.MODAL_DISABLED_DMS, y)
+        let t = (0, g.YK)();
+        t.add(y), b.h2.updateSetting(Array.from(t)).then(() => (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.rlYD1d), l.ToastType.SUCCESS))), O(), (0, p.L)(p.Q.MODAL_DISABLED_DMS, y)
       },
       children: [(0, n.jsx)("img", {
         alt: "",
@@ -48,7 +48,7 @@ function y(e) {
       }), (0, n.jsxs)(l.xBx, {
         separator: false,
         className: x.header,
-        children: [(0, n.jsx)(l.X6q, {
+        children: [(0, n.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           className: x.title,
           children: f.intl.string(f.t.w2BvnJ)
@@ -91,7 +91,7 @@ function y(e) {
             className: x.button,
             color: o.zx.Colors.PRIMARY,
             onClick: () => {
-              O(), (0, g.L)(g.Q.MODAL_DISMISSED, y)
+              O(), (0, p.L)(p.Q.MODAL_DISMISSED, y)
             },
             children: f.intl.string(f.t.PsWbcn)
           }), (0, n.jsx)(l.Text, {
@@ -136,7 +136,7 @@ function y(e) {
                       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
                     }), r))
                   }
-                }), (0, g.L)(g.Q.MODAL_GUILD_SETTINGS_CLICKED, y)
+                }), (0, p.L)(p.Q.MODAL_GUILD_SETTINGS_CLICKED, y)
               }
             })
           })]

@@ -22,7 +22,7 @@ let d = {
         title: n,
         body: i,
         hasButton: o
-      } = e, s = o ? (0, r.jsx)(a.zxk, {
+      } = e, s = o ? (0, r.jsx)(a.Button, {
         text: "Action"
       }) : true;
       return (0, r.jsx)(l.To, {

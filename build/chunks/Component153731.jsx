@@ -165,7 +165,7 @@ function k() {
     })), m.length > 0 && m.unshift(f), [...null != o ? [{
       section: u.ID.CUSTOM,
       label: "Channel Name",
-      element: () => (0, r.jsx)(s.X6q, {
+      element: () => (0, r.jsx)(s.Heading, {
         className: N.channelName,
         variant: "heading-lg/semibold",
         children: o.name
@@ -173,7 +173,7 @@ function k() {
     }] : [], {
       section: u.ID.CUSTOM,
       label: "Connection State",
-      element: () => (0, r.jsx)(s.X6q, {
+      element: () => (0, r.jsx)(s.Heading, {
         className: N.channelName,
         variant: "heading-md/normal",
         children: c === R.hes.RTC_CONNECTED ? "Connected" : "Disconnected"

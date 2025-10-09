@@ -67,7 +67,7 @@ function f() {
         })
       })
     }, [f, module]),
-    g = Chunk647438.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.zxk, {
+    g = Chunk647438.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
@@ -89,7 +89,7 @@ function f() {
     className: Chunk238642.container,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk238642.section,
-      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(exports)
       })
@@ -106,7 +106,7 @@ function f() {
         children: "Remove Server Info"
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk238642.buttonContainer,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Remove IP Address & Game Server Panel URL",
           onClick: v
@@ -114,7 +114,7 @@ function f() {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Reset server"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Reset",
         onClick: () => {

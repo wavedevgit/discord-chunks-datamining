@@ -70,7 +70,7 @@ async function h(e, t, n) {
     oldFormErrors: true,
     rejectWithError: false
   })).body, u = {
-    users: o.map(e => new a.Z(e)),
+    users: o.map(e => new a.default(e)),
     nextIndex: l
   };
   return p.set(i, u), u

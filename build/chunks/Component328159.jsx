@@ -24,8 +24,8 @@ let p = e => {
       onSelectEmoji: p,
       onClearPressed: f,
       reasonMinLength: h,
-      reasonMaxLength: x,
-      placeholder: b,
+      reasonMaxLength: b,
+      placeholder: x,
       position: j
     } = e, v = i.useRef(null), [_, C] = i.useState(false), O = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
       targetElementRef: v,
@@ -66,10 +66,10 @@ let p = e => {
       })
     });
     return (0, r.jsx)(a.oil, {
-      placeholder: b,
+      placeholder: x,
       value: n,
       minLength: h,
-      maxLength: x,
+      maxLength: b,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",

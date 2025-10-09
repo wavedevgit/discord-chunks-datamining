@@ -19,13 +19,13 @@ let j = e => {
     channel: v,
     onClose: f,
     transitionState: y
-  } = e, [g, O] = o.useState(null != (j = v.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), _ = (null != (p = null == (t = v.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), R = (null != (x = null == (n = v.defaultReactionEmoji) ? true : n.emojiName) ? x : null) !== (null != (h = null == g ? true : g.emojiName) ? h : null), C = _ || R, I = e => {
+  } = e, [g, O] = o.useState(null != (j = v.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), _ = o.useRef(null), k = (null != (p = null == (t = v.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), R = (null != (x = null == (n = v.defaultReactionEmoji) ? true : n.emojiName) ? x : null) !== (null != (h = null == g ? true : g.emojiName) ? h : null), C = k || R, B = e => {
     O(null == e ? null : (null == e ? true : e.id) != null ? {
       emojiId: e.id
     } : {
       emojiName: e.optionallyDiverseSequence
     })
-  }, S = async () => {
+  }, I = async () => {
     if (C) {
       w(true), P(false);
       try {
@@ -53,16 +53,16 @@ let j = e => {
       text: u.intl.string(u.t.R3BPHx),
       loading: N,
       disabled: !C,
-      onClick: S,
+      onClick: I,
       autoFocus: true
     }],
     children: [(0, i.jsx)(s.Z, {
       reactionEmoji: g
-    }), (0, i.jsxs)(r.hE2, {
+    }), (0, i.jsxs)(r.ButtonGroup, {
       size: "sm",
       className: m.buttonRow,
       children: [(0, i.jsx)(r.yRy, {
-        targetElementRef: k,
+        targetElementRef: _,
         renderPopout: e => {
           let {
             closePopout: t
@@ -75,7 +75,7 @@ let j = e => {
                 emoji: n,
                 willClose: i
               } = e;
-              I(n), i && t()
+              B(n), i && t()
             },
             pickerIntention: d.Hz.COMMUNITY_CONTENT,
             channel: v
@@ -86,7 +86,7 @@ let j = e => {
         align: "center",
         children: e => {
           var t, n;
-          return (0, i.jsx)(r.zxk, (t = function(e) {
+          return (0, i.jsx)(r.Button, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -104,7 +104,7 @@ let j = e => {
             }
             return e
           }({}, e), n = n = {
-            buttonRef: k,
+            buttonRef: _,
             text: u.intl.string(u.t["59QgaG"]),
             variant: "primary",
             onClick: t => {
@@ -122,10 +122,10 @@ let j = e => {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
-      }), null != g && (0, i.jsx)(r.zxk, {
+      }), null != g && (0, i.jsx)(r.Button, {
         text: u.intl.string(u.t.N86XcH),
         variant: "critical-secondary",
-        onClick: () => I(null)
+        onClick: () => B(null)
       })]
     }), E ? (0, i.jsx)(r.Text, {
       variant: "text-sm/normal",

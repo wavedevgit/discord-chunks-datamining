@@ -1,5 +1,5 @@
 /** Chunk was on 804 **/
-/** chunk id: 89616, original params: e,t,n (module,exports,require) **/
+/** chunk id: 89616, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => o
 }), require("./388685.js");
@@ -10,29 +10,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk463373 = require("./463373.js");
 
-function o(e) {
+function o(t) {
   let {
-    transitionState: t,
+    transitionState: e,
     onClose: n,
     credential: o
-  } = e, [d, u] = s.useState(false), [h, x] = s.useState(""), [m, p] = s.useState(true), g = s.useRef(null);
-  async function f(e) {
-    e.preventDefault(), u(true);
+  } = t, [d, u] = s.useState(false), [h, m] = s.useState(""), [x, p] = s.useState(true), g = s.useRef(null);
+  async function f(t) {
+    t.preventDefault(), u(true);
     try {
       await (0, i.WQ)(o.id, h), n()
-    } catch (e) {
-      p(e.message)
+    } catch (t) {
+      p(t.message)
     } finally {
       u(false)
     }
   }
   return s.useEffect(() => {
-    if (t === l.Dvm.ENTERED) {
-      var e;
-      null == (e = g.current) || e.focus()
+    if (e === l.Dvm.ENTERED) {
+      var t;
+      null == (t = g.current) || t.focus()
     }
-  }, [t]), (0, a.jsxs)(l.Y0X, {
-    transitionState: t,
+  }, [e]), (0, a.jsxs)(l.Y0X, {
+    transitionState: e,
     parentComponent: "EditCredentialModal",
     children: [(0, a.jsxs)(l.xBx, {
       separator: false,
@@ -58,13 +58,13 @@ function o(e) {
           value: h,
           minLength: 1,
           maxLength: 32,
-          onChange: x,
+          onChange: m,
           autoFocus: true,
           required: true,
-          error: m
+          error: x
         })
       }), (0, a.jsxs)(l.mzw, {
-        children: [(0, a.jsx)(l.zxk, {
+        children: [(0, a.jsx)(l.Button, {
           variant: "primary",
           text: r.intl.string(r.t.i4jeWV),
           type: "submit",
@@ -73,7 +73,7 @@ function o(e) {
         }), (0, a.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: c.cancel,
-          children: (0, a.jsx)(l.zxk, {
+          children: (0, a.jsx)(l.Button, {
             variant: "secondary",
             text: r.intl.string(r.t["ETE/oK"]),
             onClick: n

@@ -20,10 +20,10 @@ function j(e) {
     guildId: t
   } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t)), {
     analyticsLocations: j
-  } = (0, s.ZP)(a.Z.MEMBER_SAFETY_PAGE), h = (0, i.e7)([d.ZP], () => d.ZP.getGuildSidebarState(t), [t]), b = r.useCallback(() => {
+  } = (0, s.ZP)(a.Z.MEMBER_SAFETY_PAGE), b = (0, i.e7)([d.ZP], () => d.ZP.getGuildSidebarState(t), [t]), h = r.useCallback(() => {
     c.Z.closeGuildSidebar(t)
-  }, [t]), f = null != h;
-  return null != n && f && null != h ? (0, l.jsx)(s.Gt, {
+  }, [t]), f = null != b;
+  return null != n && f && null != b ? (0, l.jsx)(s.Gt, {
     value: j,
     children: (0, l.jsx)("div", {
       className: x.__invalid_sidebarContainer,
@@ -31,9 +31,9 @@ function j(e) {
         width: m.$Y6
       },
       children: (0, l.jsx)(o.Z, {
-        userId: h.details.userId,
-        guildId: h.details.guildId,
-        onClose: b
+        userId: b.details.userId,
+        guildId: b.details.guildId,
+        onClose: h
       })
     })
   }) : null

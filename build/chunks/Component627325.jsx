@@ -46,7 +46,7 @@ function x(e) {
       height: 40,
       size: "custom",
       color: c.Z.colors.INTERACTIVE_MUTED
-    }), (0, r.jsx)(u.X6q, {
+    }), (0, r.jsx)(u.Heading, {
       variant: "heading-sm/medium",
       color: "header-muted",
       children: y.intl.string(y.t.ZzukHh)
@@ -58,7 +58,7 @@ function x(e) {
       height: 40,
       size: "custom",
       color: c.Z.colors.INTERACTIVE_MUTED
-    }), (0, r.jsx)(u.X6q, {
+    }), (0, r.jsx)(u.Heading, {
       variant: "heading-md/normal",
       color: "header-muted",
       children: y.intl.string(y.t.DpZNJy)

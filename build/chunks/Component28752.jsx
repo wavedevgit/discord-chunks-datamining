@@ -135,7 +135,7 @@ function O(e) {
   } = e, n = t.name, i = (0, s.vJ)(t);
   return (0, r.jsxs)("div", {
     className: _.titleContainer,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n

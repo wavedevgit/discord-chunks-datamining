@@ -33,7 +33,7 @@ function O(e) {
     guild: n,
     prompt: l,
     disableAutofocus: u,
-    promptIndex: b,
+    promptIndex: x,
     dragIndex: O,
     includeCount: E,
     singleColumn: I,
@@ -52,15 +52,15 @@ function O(e) {
     onDragStart: T,
     onDragComplete: S,
     onDragReset: P
-  }), L = (0, s.cj)([x.Z], () => {
+  }), L = (0, s.cj)([b.Z], () => {
     var e;
-    return null != (e = x.Z.errors[b]) ? e : C
-  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), W = i.useRef(b);
+    return null != (e = b.Z.errors[x]) ? e : C
+  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, W = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), z = i.useRef(x);
   return (i.useEffect(() => {
-    W.current = b
+    z.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === W.current && !u) {
+      if (0 === z.current && !u) {
         var e;
         null == (e = V.current) || e.focus()
       }
@@ -72,8 +72,8 @@ function O(e) {
       onBlur: () => U(false),
       onMouseLeave: () => U(false),
       className: a()(_.container, {
-        [_.dropIndicatorBefore]: null != R && b < R,
-        [_.dropIndicatorAfter]: null != R && b > R,
+        [_.dropIndicatorBefore]: null != R && x < R,
+        [_.dropIndicatorAfter]: null != R && x > R,
         [_.containerFocused]: M
       }),
       ref: e => {
@@ -92,7 +92,7 @@ function O(e) {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: v.intl.format(v.t.yjS3zs, {
-          index: b + 1
+          index: x + 1
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-lg/semibold",
@@ -127,8 +127,8 @@ function O(e) {
       onFocus: () => U(true),
       onBlur: () => U(false),
       className: a()(_.container, {
-        [_.dropIndicatorBefore]: null != R && b < R,
-        [_.dropIndicatorAfter]: null != R && b > R,
+        [_.dropIndicatorBefore]: null != R && x < R,
+        [_.dropIndicatorAfter]: null != R && x > R,
         [_.containerFocused]: M
       }),
       ref: e => {
@@ -147,7 +147,7 @@ function O(e) {
         gap: 16,
         children: [(0, r.jsx)(c.oil, {
           label: v.intl.formatToPlainString(v.t.yjS3zs, {
-            index: b + 1
+            index: x + 1
           }),
           inputRef: V,
           value: l.title,
@@ -172,7 +172,7 @@ function O(e) {
           children: (0, r.jsx)(N, {
             guild: n,
             prompt: l,
-            promptIndex: b,
+            promptIndex: x,
             errors: L,
             singleColumn: I
           })
@@ -181,20 +181,20 @@ function O(e) {
         className: _.buttons,
         children: [(0, r.jsxs)("div", {
           className: _.checkboxes,
-          children: [(0, r.jsx)(c.XZJ, {
+          children: [(0, r.jsx)(c.Checkbox, {
             checked: !l.singleSelect,
             onChange: e => (0, h.Kk)(n, l.id, {
               singleSelect: !e
             }),
             label: v.intl.string(v.t.uCebZW)
-          }), l.inOnboarding ? (0, r.jsx)(c.XZJ, {
-            checked: l.inOnboarding && l.required,
+          }), l.inOnboarding ? (0, r.jsx)(c.Checkbox, {
+            checked: !!(l.inOnboarding && l.required),
             onChange: e => (0, h.Kk)(n, l.id, {
               required: e
             }),
             disabled: !l.inOnboarding,
             label: E ? v.intl.formatToPlainString(v.t["0re8T0"], {
-              count: z
+              count: W
             }) : v.intl.string(v.t.Ur8Vrq)
           }) : null]
         }), (0, r.jsx)(c.P3F, {
@@ -276,7 +276,7 @@ function N(e) {
   }));
   return (0, r.jsxs)("div", {
     className: _.options,
-    children: [n.options.map((e, d) => (0, r.jsx)(b.Z, {
+    children: [n.options.map((e, d) => (0, r.jsx)(x.Z, {
       guild: t,
       prompt: n,
       promptIndex: i,
@@ -286,7 +286,7 @@ function N(e) {
       onDragComplete: c,
       onDragReset: o,
       hasError: null != a.optionErrors[d]
-    }, e.id)), n.options.length < j.qm ? (0, r.jsx)(b.B, {
+    }, e.id)), n.options.length < j.qm ? (0, r.jsx)(x.B, {
       guild: t,
       prompt: n,
       promptIndex: i,

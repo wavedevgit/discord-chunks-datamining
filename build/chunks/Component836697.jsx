@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -44,7 +44,7 @@ function y(e) {
           className: _.popoutContent,
           children: [(0, r.jsxs)("div", {
             className: _.coachmarkTextContainer,
-            children: [(0, r.jsx)(o.X6q, {
+            children: [(0, r.jsx)(o.Heading, {
               variant: "heading-md/medium",
               children: b.intl.string(b.t["0YV0YG"])
             }), (0, r.jsx)(o.Text, {
@@ -52,7 +52,7 @@ function y(e) {
               color: "text-muted",
               children: b.intl.string(b.t["0UQVDA"])
             })]
-          }), (0, r.jsx)(o.zxk, {
+          }), (0, r.jsx)(o.Button, {
             variant: "primary",
             size: "sm",
             text: b.intl.string(b.t["4r+amZ"]),

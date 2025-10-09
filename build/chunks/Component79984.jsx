@@ -36,7 +36,7 @@ function d() {
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk75243.textPlaceholder,
         style: exports,
-        children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
           className: Chunk75243.hidden,
           variant: "heading-md/semibold",
           color: "header-primary",

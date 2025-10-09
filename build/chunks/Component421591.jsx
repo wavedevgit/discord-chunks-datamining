@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk487303 = require("./487303.js");
-let x = {
+let y = {
     width: Chunk314734.Gy,
     height: Chunk314734.lv
   },
-  y = {
+  x = {
     height: Chunk314734.lv
   },
   g = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
@@ -32,12 +32,12 @@ let x = {
     } = e, {
       analyticsLocations: d
     } = (0, s.ZP)(a.Z.APP_LAUNCHER);
-    return i.useEffect(() => {
+    return l.useEffect(() => {
       (0, o.yw)(h.rMx.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
         source: r,
         location: "app_launcher"
       })
-    }, [r]), i.useEffect(() => {
+    }, [r]), l.useEffect(() => {
       let e = Date.now();
       return () => {
         (0, o.yw)(h.rMx.APP_LAUNCHER_CLOSED, {
@@ -46,17 +46,17 @@ let x = {
           source: r
         })
       }
-    }, [r]), (0, l.jsx)("div", {
+    }, [r]), (0, i.jsx)("div", {
       className: v.drawerSizingWrapper,
       ref: t,
-      style: x,
-      children: (0, l.jsx)("div", {
+      style: y,
+      children: (0, i.jsx)("div", {
         className: v.contentWrapper,
-        children: (0, l.jsx)(s.Gt, {
+        children: (0, i.jsx)(s.Gt, {
           value: d,
-          children: (0, l.jsx)(b, {
+          children: (0, i.jsx)(b, {
             initHistory: u,
-            children: (0, l.jsx)(N, {
+            children: (0, i.jsx)(N, {
               context: n,
               entrypoint: r
             })
@@ -70,49 +70,49 @@ function b(e) {
   let {
     initHistory: t,
     children: n
-  } = e, [r, a] = i.useState(null != t ? t : [{
+  } = e, [r, a] = l.useState(null != t ? t : [{
     type: u.gc.HOME
-  }]), [o, s] = i.useState({}), c = r[r.length - 1], [d, p] = i.useState(false), m = i.useCallback(e => {
+  }]), [o, s] = l.useState({}), c = r[r.length - 1], [d, p] = l.useState(false), m = l.useCallback(e => {
     a(t => [...t, e])
-  }, []), f = i.useCallback(() => {
+  }, []), f = l.useCallback(() => {
     let e = null;
     a(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), s(t => {
-      var n, l;
+      var n, i;
       return null == e ? t : (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-              value: l,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = l
+            }) : e[t] = i
           })
         }
         return e
-      }({}, t), l = l = {
+      }({}, t), i = i = {
         [e.type]: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, l)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n)
     })
-  }, []), h = i.useCallback(e => {
+  }, []), h = l.useCallback(e => {
     var t;
     return null != (t = r.findLast(t => t.type === e)) ? t : o[e]
   }, [r, o]);
-  return (0, l.jsx)(u.uX.Provider, {
+  return (0, i.jsx)(u.uX.Provider, {
     value: {
       history: r,
       discard: o,
@@ -131,14 +131,14 @@ function N(e) {
   let {
     context: t,
     entrypoint: n
-  } = e, [a, o] = i.useState(""), {
+  } = e, [a, o] = l.useState(""), {
     setScroller: s,
     isCloseToBottom: c
   } = function(e) {
-    let [t, n] = i.useState(null), [l, r] = i.useState(false), a = i.useRef(0);
-    return i.useEffect(() => {
+    let [t, n] = l.useState(null), [i, r] = l.useState(false), a = l.useRef(0);
+    return l.useEffect(() => {
       null == t || t.scrollTo(0, 0)
-    }, [t, e]), i.useEffect(() => {
+    }, [t, e]), l.useEffect(() => {
       if (null != t) return t.scrollTo(0, a.current), t.addEventListener("scroll", e), () => {
         t.removeEventListener("scroll", e, false)
       };
@@ -148,32 +148,32 @@ function N(e) {
       }
     }, [t]), {
       setScroller: n,
-      isCloseToBottom: l
+      isCloseToBottom: i
     }
   }(a), {
     currentView: h,
-    getMostRecentHistoryItemByType: x,
+    getMostRecentHistoryItemByType: y,
     setSlideReady: g
   } = (0, u.hH)();
-  i.useEffect(() => {
+  l.useEffect(() => {
     g(false)
   }, [null == h ? true : h.type, g]);
-  let b = i.useCallback(() => {
+  let b = l.useCallback(() => {
     g(true)
   }, [g]);
   if (null == h) return null;
-  let N = x(u.gc.LIST),
-    j = x(u.gc.APPLICATION);
-  return (0, l.jsxs)(r.MyZ, {
+  let N = y(u.gc.LIST),
+    j = y(u.gc.APPLICATION);
+  return (0, i.jsxs)(r.MyZ, {
     activeSlide: h.type,
     width: f.Gy,
     onSlideReady: b,
-    children: [(0, l.jsx)(r.Mi4, {
+    children: [(0, i.jsx)(r.Mi4, {
       id: u.gc.HOME,
-      children: (0, l.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: y,
-        children: (0, l.jsx)(p.Z, {
+        style: x,
+        children: (0, i.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
           context: t,
@@ -182,12 +182,12 @@ function N(e) {
           setSearchQuery: o
         })
       })
-    }), (0, l.jsx)(r.Mi4, {
+    }), (0, i.jsx)(r.Mi4, {
       id: u.gc.LIST,
-      children: (0, l.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: y,
-        children: null != N && (0, l.jsx)(m.Z, {
+        style: x,
+        children: null != N && (0, i.jsx)(m.Z, {
           context: t,
           entrypoint: n,
           title: N.title,
@@ -197,12 +197,12 @@ function N(e) {
           sectionOverallPosition: N.sectionOverallPosition
         })
       })
-    }), (0, l.jsx)(r.Mi4, {
+    }), (0, i.jsx)(r.Mi4, {
       id: u.gc.APPLICATION,
-      children: (0, l.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: y,
-        children: null != j && (0, l.jsx)(d.Z, {
+        style: x,
+        children: null != j && (0, i.jsx)(d.Z, {
           context: t,
           application: j.application,
           sectionName: j.sectionName

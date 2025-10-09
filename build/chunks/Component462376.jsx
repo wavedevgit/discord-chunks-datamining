@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 462376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => b,
-  k: () => _
+  d: () => N,
+  k: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js");
 
-function S(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = 44;
-class b extends Chunk647438.Component {
+let C = 44;
+class N extends Chunk647438.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
   renderUserOrChannel() {
     let e, t, n, {
-      user: i,
+      user: l,
       channel: s
     } = this.props;
     if (null != Chunk647438) t = Chunk647438.getAvatarURL(null == Chunk780384 ? true : Chunk780384.guild_id, 32), n = Chunk51144.ZP.getName(Chunk647438);
@@ -71,8 +71,8 @@ class b extends Chunk647438.Component {
         channel: n
       } = this.props,
       {
-        sending: i,
-        invited: a,
+        sending: l,
+        invited: r,
         hovered: o
       } = this.state;
     return e = Chunk481060 ? (0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -103,33 +103,33 @@ class b extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), j(this, "state", {
       sending: false,
       invited: false,
       hovered: false
-    }), S(this, "handleMouseEnter", () => {
+    }), j(this, "handleMouseEnter", () => {
       this.setState({
         hovered: true
       })
-    }), S(this, "handleMouseLeave", () => {
+    }), j(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), S(this, "getInviteAnalyticsMetadata", () => {
+    }), j(this, "getInviteAnalyticsMetadata", () => {
       let {
         row: e,
         source: t
       } = this.props;
       if (null != e) return {
-        suggestionData: h.Z.getSelectedInviteMetadata(e),
+        suggestionData: g.Z.getSelectedInviteMetadata(e),
         source: t
       }
-    }), S(this, "handleClickInvite", () => {
+    }), j(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,
         inviteKey: n,
-        location: l
+        location: i
       } = this.props;
       null != n && (null != t ? (this.setState({
         sending: true
@@ -137,7 +137,7 @@ class b extends Chunk647438.Component {
         type: o.m.GROUP_DM,
         channel: t,
         inviteKey: n,
-        location: l,
+        location: i,
         inviteAnalyticsMetadata: this.getInviteAnalyticsMetadata()
       }, e => {
         this.setState({
@@ -150,7 +150,7 @@ class b extends Chunk647438.Component {
         type: o.m.USER,
         user: e,
         inviteKey: n,
-        location: l,
+        location: i,
         inviteAnalyticsMetadata: this.getInviteAnalyticsMetadata()
       }, e => {
         this.setState({

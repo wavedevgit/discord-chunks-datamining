@@ -105,7 +105,7 @@ let m = {
             link: "https://discord.com",
             external: true
           } : true
-        })), (0, r.jsx)(a.zxk, {
+        })), (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Toggle Popover",
           buttonRef: E,
@@ -225,7 +225,7 @@ let m = {
             text: "Learn More",
             onClick: () => l(false)
           } : true
-        })), (0, r.jsx)(a.zxk, {
+        })), (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Show Video Popover",
           buttonRef: c,
@@ -299,7 +299,7 @@ let m = {
             align: "center"
           },
           onStepChange: () => {}
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Show Multi-Step",
           buttonRef: u,

@@ -33,7 +33,7 @@ let h = e => {
       children: [(0, a.jsx)("div", {
         role: "image",
         className: E.image
-      }), (0, a.jsx)(s.X6q, {
+      }), (0, a.jsx)(s.Heading, {
         variant: "heading-xl/semibold",
         className: E.header,
         children: m.intl.string(m.t.Uq1zJS)

@@ -14,13 +14,13 @@ function o(e) {
     applicationName: n,
     imageClassName: o,
     imageNotFoundClassName: s
-  } = e, [c, u] = i.useState(false);
-  return "not-found" === t.state || c ? (0, l.jsx)("div", {
+  } = e, [c, u] = l.useState(false);
+  return "not-found" === t.state || c ? (0, i.jsx)("div", {
     className: s,
-    children: (0, l.jsx)(r.Z, {
+    children: (0, i.jsx)(r.Z, {
       className: a.brokenImageIcon
     })
-  }) : "loading" === t.state ? null : (0, l.jsx)("img", {
+  }) : "loading" === t.state ? null : (0, i.jsx)("img", {
     alt: n,
     className: o,
     src: t.url,

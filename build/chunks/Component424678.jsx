@@ -24,7 +24,7 @@ class s extends Chunk647438.PureComponent {
       className: n
     } = this.props;
     return (0, Chunk951288.jsxs)("span", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
         className: require,
         onClick: this.handleClick,
         children: module

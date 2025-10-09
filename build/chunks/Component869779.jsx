@@ -108,13 +108,13 @@ class k extends Chunk647438.PureComponent {
               size: "xxs",
               color: "currentColor",
               className: A.channelIcon
-            }) : null, (0, g.F6)(t, E.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, Z.default, E.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
               className: A.category,
-              children: (0, g.F6)(n, E.default, Z.Z)
+              children: (0, g.F6)(n, Z.default, E.Z)
             }) : null]
           }) : M.intl.string(M.t.XPDhcX)
         }, {

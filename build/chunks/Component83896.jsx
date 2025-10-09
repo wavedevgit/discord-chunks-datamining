@@ -112,7 +112,7 @@ function S(e) {
       "data-migration-pending": true,
       text: T ? true : v.intl.string(v.t["0LMpW1"]),
       children: e => (0, i.jsx)("div", E(j({}, e), {
-        children: (0, i.jsx)(s.zxk, {
+        children: (0, i.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
           text: v.intl.string(v.t["0eHzpq"]),
@@ -120,7 +120,7 @@ function S(e) {
           disabled: !T
         })
       }))
-    }) : Z && (0, i.jsx)(s.zxk, {
+    }) : Z && (0, i.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
       text: v.intl.string(v.t["B/dHXF"]),

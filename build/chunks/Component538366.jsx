@@ -63,7 +63,7 @@ function g(e) {
   }, [g]), _ = f.size > 0, C = b || p, y = !_ && p && !j, T = i.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
   return (0, r.jsxs)("div", {
     className: h.container,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       className: h.header,
       variant: "heading-md/semibold",
       children: _ ? m.intl.formatToPlainString(m.t.lvPci4, {

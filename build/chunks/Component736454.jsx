@@ -62,12 +62,14 @@ function b(e) {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       children: s.intl.string(s.t.Jz3oqK)
-    }), (0, n.jsx)(c.VL, {
-      checked: f,
-      onChange: e => O(e),
+    }), (0, n.jsx)("div", {
       className: a.checkbox,
-      label: s.intl.string(s.t["JdIQ/f"]),
-      labelType: "secondary"
+      children: (0, n.jsx)(i.Checkbox, {
+        checked: f,
+        onChange: e => O(e),
+        label: s.intl.string(s.t["JdIQ/f"]),
+        labelType: "secondary"
+      })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

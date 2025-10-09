@@ -2,7 +2,7 @@
 /** chunk id: 124860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Cd: () => m,
-  YR: () => x
+  YR: () => b
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,9 +53,9 @@ function m(e) {
     mfaChallenge: h,
     mfaFinish: m,
     onEarlyClose: p,
-    onClose: x,
-    headerAlignStart: b,
-    width: S = 440
+    onClose: b,
+    headerAlignStart: S,
+    width: x = 440
   } = e, [j, y] = r.useState(null != (n = null == (t = h.methods[0]) ? true : t.type) ? n : "select"), [v, C] = r.useState(j), Z = async e => {
     let {
       mfaType: t,
@@ -65,27 +65,27 @@ function m(e) {
       mfaType: t,
       data: n,
       ticket: h.ticket
-    }), null != x && x()
+    }), null != b && b()
   }, w = {
     mfaChallenge: h,
     finish: Z,
     setSlide: y,
     onClose: p,
-    headerAlignStart: b
+    headerAlignStart: S
   };
   return (0, l.jsxs)(i.MyZ, {
     activeSlide: j,
-    width: S,
+    width: x,
     onSlideReady: C,
     children: [(0, l.jsx)(i.Mi4, {
       id: "select",
       children: (0, l.jsx)(o.Z, f({}, w))
     }), (0, l.jsx)(i.Mi4, {
       id: "webauthn",
-      children: (0, l.jsx)(u.Z, f({}, w))
+      children: (0, l.jsx)(c.Z, f({}, w))
     }), (0, l.jsx)(i.Mi4, {
       id: "totp",
-      children: (0, l.jsx)(c.Z, g(f({}, w), {
+      children: (0, l.jsx)(u.Z, g(f({}, w), {
         isSlideReady: "totp" === v
       }))
     }), (0, l.jsx)(i.Mi4, {
@@ -128,7 +128,7 @@ function p(e) {
   })
 }
 
-function x(e, t, n) {
+function b(e, t, n) {
   (0, i.h7j)(n => (0, l.jsx)(p, f({
     finish: t,
     mfaChallenge: e

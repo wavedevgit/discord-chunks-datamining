@@ -75,13 +75,13 @@ function m(e) {
     messageReference: n,
     guildName: s
   } = e, l = i.useRef(null);
-  if (null == n) return (0, r.jsx)(a.eee, {
+  if (null == n) return (0, r.jsx)(a.Anchor, {
     children: t
   });
   let {
     guild_id: c
   } = n;
-  return null == c ? (0, r.jsx)(a.eee, {
+  return null == c ? (0, r.jsx)(a.Anchor, {
     children: t
   }) : (0, r.jsx)(o.Z, {
     guildId: c,
@@ -92,7 +92,7 @@ function m(e) {
         "aria-controls": n,
         "aria-expanded": i
       } = e, o = p(e, ["aria-controls", "aria-expanded"]);
-      return (0, r.jsx)(a.eee, _(d({}, o), {
+      return (0, r.jsx)(a.Anchor, _(d({}, o), {
         ref: l,
         children: t
       }))

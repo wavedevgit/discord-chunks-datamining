@@ -18,13 +18,13 @@ function d(e) {
       let e = {};
       for (let n of t.values()) {
         let t = c.default.getUser(n.author_id),
-          l = s.Z.isFriend(n.author_id);
-        null != t && l && (e[t.id] = n.id)
+          i = s.Z.isFriend(n.author_id);
+        null != t && i && (e[t.id] = n.id)
       }
       return e
     }),
-    [i, d] = l.useState([]);
-  return l.useEffect(() => {
+    [l, d] = i.useState([]);
+  return i.useEffect(() => {
     let e = r().sortBy(Object.entries(n), e => {
       let [t, n] = e;
       return -u.default.extractTimestamp(n)
@@ -34,7 +34,7 @@ function d(e) {
       return c.default.getUser(t)
     }).filter(e => null != e))
   }, [n]), {
-    friends: i,
+    friends: l,
     friendsLastPlayed: n
   }
 }

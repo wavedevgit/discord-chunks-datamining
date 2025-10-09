@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 585385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => h
+  D: () => g
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -13,58 +13,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js"),
   Chunk197571 = require("./197571.js");
-let h = e => {
+let g = e => {
   let {
     handleDone: t,
     headerId: n,
-    modalState: i,
-    shouldHideTemporaryInviteToggle: h,
+    modalState: l,
+    shouldHideTemporaryInviteToggle: g,
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: I,
-    isGuestInviteCreationToggleEnabled: x,
-    onSetInviteFlags: f
-  } = e, N = (0, a.ZP)(), {
-    maxAgeOptions: S,
-    maxAge: _,
-    maxUses: b,
-    temporary: j,
+    onSelectMaxUses: x,
+    isGuestInviteCreationToggleEnabled: I,
+    onSetInviteFlags: S
+  } = e, y = (0, r.ZP)(), {
+    maxAgeOptions: j,
+    maxAge: C,
+    maxUses: N,
+    temporary: f,
     flags: E
-  } = i;
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)(r.xBx, {
-      children: [(0, l.jsx)("div", {
+  } = l;
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(a.xBx, {
+      children: [(0, i.jsx)("div", {
         className: c.closeButton,
-        children: (0, l.jsx)(r.olH, {
+        children: (0, i.jsx)(a.olH, {
           onClick: t
         })
-      }), (0, l.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: c.headerContainer,
-        children: (0, l.jsx)(r.X6q, {
+        children: (0, i.jsx)(a.Heading, {
           id: n,
           variant: "heading-md/semibold",
-          className: s()(g.marginReset, c.headerCloseButtonSpacing, c.headerText),
+          className: s()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
           children: u.intl.string(u.t.Atdlys)
         })
       })]
-    }), (0, l.jsx)(o.Z, {
-      shouldHideTemporaryInviteToggle: h,
-      maxAgeOptions: S,
-      maxAge: _,
-      maxUses: b,
-      temporary: j,
+    }), (0, i.jsx)(o.Z, {
+      shouldHideTemporaryInviteToggle: g,
+      maxAgeOptions: j,
+      maxAge: C,
+      maxUses: N,
+      temporary: f,
       onToggleTemporary: p,
       onSelectMaxAge: v,
-      onSelectMaxUses: I,
+      onSelectMaxUses: x,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: x,
-      onSetInviteFlags: f,
+      isGuestInviteCreationToggleEnabled: I,
+      onSetInviteFlags: S,
       inviteFlags: E
-    }), (0, l.jsx)(r.mzw, {
+    }), (0, i.jsx)(a.mzw, {
       className: c.settingsFooter,
-      children: (0, l.jsx)(d.Z, {
-        theme: N,
+      children: (0, i.jsx)(d.Z, {
+        theme: y,
         onConfirm: () => {
           m(), t()
         },

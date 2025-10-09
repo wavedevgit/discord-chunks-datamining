@@ -31,41 +31,41 @@ function g() {
     N = (0, Chunk884697.Ad)(O),
     P = (0, Chunk884697.jT)(O),
     I = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
-    k = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    w = null != I && null != (v = N.find(e => e.skuId === I)) ? v : null,
-    R = null != k && null != (j = P.find(e => e.skuId === k)) ? j : null,
-    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == w ? true : w.skuId)),
+    w = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+    k = null != I && null != (v = N.find(e => e.skuId === I)) ? v : null,
+    R = null != w && null != (j = P.find(e => e.skuId === w)) ? j : null,
+    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
     Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
     D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
-    L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
-    M = Chunk695346.YC.useSetting();
+    M = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
+    L = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
     className: Chunk685960.container,
     children: [(0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: "Randomize customization settings"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "Randomly sets appearance-related settings. Leaving this tab or closing devtools will reset to your initial state."
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Theme",
         onClick: Chunk176038.aB
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Collectibles",
         onClick: Chunk176038.th
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: "Randomize Appearance Settings",
         onClick: Chunk176038._Y
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: "Current Settings"
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
@@ -85,10 +85,10 @@ function g() {
         children: ["Font Size: ", D, "px"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Message Spacing: ", L]
+        children: ["Message Spacing: ", M]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["UI Density: ", M, " (", function(e) {
+        children: ["UI Density: ", L, " (", function(e) {
           switch (e) {
             case i.Pi.COMPACT:
               return "Compact";
@@ -101,7 +101,7 @@ function g() {
             default:
               return "Unknown"
           }
-        }(M), ")"]
+        }(L), ")"]
       })]
     })]
   })

@@ -212,7 +212,7 @@ function M(e) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     applications: n
@@ -221,7 +221,7 @@ function k(e) {
   _.set(t, r)
 }
 
-function j(e) {
+function k(e) {
   let {
     payments: t
   } = e, n = new Set;
@@ -372,8 +372,8 @@ let z = new K(Chunk570140.Z, {
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: k,
-  BILLING_PAYMENTS_FETCH_SUCCESS: j,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: j,
+  BILLING_PAYMENTS_FETCH_SUCCESS: k,
   PAYMENT_UPDATE: U,
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: G,

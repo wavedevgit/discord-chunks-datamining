@@ -63,7 +63,7 @@ function _(e) {
   let p = () => {
     null == f || f(), new a.Z("UserActivityActions").log("notify", n.id, t)
   };
-  return (0, r.jsx)(i.zxk, u({
+  return (0, r.jsx)(i.Button, u({
     text: l.intl.string(l.t.vwl1PD),
     variant: c,
     size: "sm",

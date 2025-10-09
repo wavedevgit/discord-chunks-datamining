@@ -107,7 +107,7 @@ function eo(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, y = (0, Q.Z)({
+  } = e, y = (0, q.Z)({
     location: "overlay_voice_widget"
   }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), v = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
     userId: i.id,
@@ -185,7 +185,7 @@ class el extends(i = Chunk647438.PureComponent) {
       return (0, r.jsx)(eo, {
         guildId: null == a ? true : a.guild_id,
         user: c,
-        nick: null != (l = null == h ? true : h.nick) ? l : H.ZP.getName(c),
+        nick: null != (l = null == h ? true : h.nick) ? l : F.ZP.getName(c),
         flipped: p,
         voiceState: u,
         displayNameMode: n,
@@ -343,7 +343,7 @@ class el extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, q.CR)(e, this.props, this.shouldDisplay)
+    (0, J.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -447,7 +447,7 @@ function ea(e) {
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], F.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
+      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])

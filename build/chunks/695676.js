@@ -5,8 +5,8 @@ require.d(exports, {
   hH: () => o,
   uX: () => a
 });
-var l, Chunk647438 = require("./647438.js"),
-  r = ((l = {}).HOME = "home", l.LIST = "list", l.APPLICATION = "application", l);
+var i, Chunk647438 = require("./647438.js"),
+  r = ((i = {}).HOME = "home", i.LIST = "list", i.APPLICATION = "application", i);
 let a = Chunk647438.createContext({
   history: [],
   discard: {},

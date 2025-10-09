@@ -85,12 +85,12 @@ let b = e => {
       }
       N(o)
     },
-    W = async e => {
+    H = async e => {
       var r;
       let i = y ? await (0, p.ZD)(n, t, [...D, e]) : await (0, p.fw)(n, t, [...D, e], j),
         l = null == i || null == (r = i.body) ? true : r.report_id;
       null != l && A(l), L(C[e.nodeRef].report_type), null == x || x(l)
-    }, z = () => {
+    }, W = () => {
       var e, n;
       if (D.length < 1) return;
       let r = [...D],
@@ -107,7 +107,7 @@ let b = e => {
         })
       }
       E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), N(l), R(r), null == v || v("..")
-    }, F = i.useMemo(() => {
+    }, z = i.useMemo(() => {
       let e = [],
         t = [];
       for (let l in C) {
@@ -136,7 +136,7 @@ let b = e => {
       width: 440,
       activeSlide: T,
       centered: false,
-      children: F.map(e => (0, r.jsx)(a.Mi4, {
+      children: z.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
           className: h.slideContainer,
@@ -147,12 +147,12 @@ let b = e => {
             history: D,
             onModalClose: b.onClose,
             onSelectChild: G,
-            onNavigateBack: z,
+            onNavigateBack: W,
             multiSelect: P,
             textInput: k,
             successNodeId: Z,
             failNodeId: S,
-            onSubmit: W,
+            onSubmit: H,
             reportId: M,
             nodeMap: C
           })

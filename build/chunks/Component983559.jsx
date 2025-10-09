@@ -68,8 +68,8 @@ function L(e) {
     userId: n.id,
     channelId: w.id
   }), B = i.useRef(null), {
-    isHoveringOrFocusing: z,
-    isHovering: V
+    isHoveringOrFocusing: V,
+    isHovering: z
   } = (0, u.Z)(B), W = (0, b.$m)(), Y = (0, s.q_F)({
     opacity: +(null != W.interactionType),
     config: {
@@ -93,7 +93,7 @@ function L(e) {
       isLoaded: null == k ? true : k.isLoaded,
       children: (0, r.jsx)(b.NJ, {
         value: W,
-        children: (0, r.jsxs)(O.Z, {
+        children: (0, r.jsxs)(x.Z, {
           ref: B,
           user: n,
           displayProfile: k,
@@ -120,9 +120,9 @@ function L(e) {
                 user: n,
                 displayProfile: k,
                 themeType: R.l.SIDEBAR,
-                animateOnHoverOrFocusOnly: !z,
+                animateOnHoverOrFocusOnly: !V,
                 className: A.banner
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(O.Z, {
                 userId: n.id,
                 className: A.toast
               }), (0, r.jsx)(_.Z, {
@@ -142,7 +142,7 @@ function L(e) {
               currentUser: f,
               displayProfile: k,
               channel: w,
-              isHoveringOrFocusing: null == W.interactionType && z,
+              isHoveringOrFocusing: null == W.interactionType && V,
               onOpenProfile: L ? true : q
             }), K && Q && (0, r.jsx)("div", {
               className: A.widgetBreadcrumb,
@@ -164,7 +164,7 @@ function L(e) {
             context: F
           }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(h.Z, {
             skuId: null == k || null == (t = k.profileEffect) ? true : t.skuId,
-            isHovering: V,
+            isHovering: z,
             urlQueryString: "dmView"
           })]
         })

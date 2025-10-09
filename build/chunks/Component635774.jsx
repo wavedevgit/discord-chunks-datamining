@@ -1,5 +1,5 @@
 /** Chunk was on 85342 **/
-/** chunk id: 635774, original params: e,t,r (module,exports,require) **/
+/** chunk id: 635774, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
 });
@@ -14,19 +14,19 @@ function l(e) {
   let {
     onClose: t
   } = e;
-  return (0, n.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s.infoContainer,
-    children: [(0, n.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       className: s.finishTitle,
       color: "header-primary",
       variant: "heading-xl/bold",
       children: a.intl.string(a.t["3C+rbG"])
-    }), (0, n.jsx)(i.Text, {
+    }), (0, r.jsx)(i.Text, {
       className: s.subtitleFinish,
       color: "header-secondary",
       variant: "text-md/medium",
       children: a.intl.string(a.t.TS1L09)
-    }), (0, n.jsx)(i.Text, {
+    }), (0, r.jsx)(i.Text, {
       className: s.promptFinish,
       color: "header-secondary",
       variant: "text-md/medium",
@@ -35,10 +35,10 @@ function l(e) {
           t(), (0, o.openUserSettings)()
         }
       })
-    }), (0, n.jsx)("div", {
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: s.button,
-      children: (0, n.jsx)(i.zxk, {
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
         text: a.intl.string(a.t["yD/zkp"]),

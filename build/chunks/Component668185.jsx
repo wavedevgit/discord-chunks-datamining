@@ -30,7 +30,7 @@ function d(e) {
         n = !a.e$(d, e);
       return (0, r.jsx)("li", {
         className: u.permission,
-        children: (0, r.jsx)(s.XZJ, {
+        children: (0, r.jsx)(s.Checkbox, {
           checked: n,
           onChange: t => f(t, e),
           label: t

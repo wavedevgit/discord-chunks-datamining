@@ -49,7 +49,7 @@ function x(e) {
       variant: "text-sm/semibold",
       color: "header-primary",
       children: S.intl.string(S.t.nTI2mZ)
-    }) : (0, l.jsx)(s.X6q, {
+    }) : (0, l.jsx)(s.Heading, {
       variant: "heading-md/semibold",
       children: S.intl.string(S.t.g1OQtr)
     }),
@@ -139,7 +139,7 @@ function _() {
         }), (0, Chunk951288.jsx)(Chunk548473.B0, {})]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk473450.upsellHeaderText,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.GnKOAw)
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -148,7 +148,7 @@ function _() {
         })]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk473450.upsellButtons,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.RzWDqa),
           onClick: function() {
@@ -196,7 +196,7 @@ function _() {
         className: Chunk473450.valueContainer,
         children: [(0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsxs)("div", {
           className: Chunk473450.valueText,
-          children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.Z7kqKS)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -208,7 +208,7 @@ function _() {
         className: Chunk473450.valueContainer,
         children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk473450.valueText,
-          children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.O4jYEh)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -304,7 +304,7 @@ function _() {
           })
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk473450.valueText,
-          children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t["3T9aHB"])
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {

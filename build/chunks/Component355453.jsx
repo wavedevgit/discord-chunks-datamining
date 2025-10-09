@@ -1,7 +1,7 @@
 /** Chunk was on 58120 **/
 /** chunk id: 355453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,16 +18,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk687213 = require("./687213.js");
 
-function g(e) {
+function y(e) {
   var t;
   let {
     transitionState: n,
-    onClose: g
-  } = e, m = (0, o.e7)([b.ZP], () => b.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), v = i.useCallback(() => {
-    if (0 === h.length) return null != m && s.Z.deleteKeybind(m.id), g();
-    if (null == m) s.Z.addKeybind({
-      action: O.kg4.SOUNDBOARD_HOLD,
-      shortcut: h,
+    onClose: y
+  } = e, h = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(g.kg4.SOUNDBOARD_HOLD)), [m, j] = i.useState(null != (t = null == h ? true : h.shortcut) ? t : []), v = i.useCallback(() => {
+    if (0 === m.length) return null != h && s.Z.deleteKeybind(h.id), y();
+    if (null == h) s.Z.addKeybind({
+      action: g.kg4.SOUNDBOARD_HOLD,
+      shortcut: m,
       enabled: true,
       params: {}
     });
@@ -50,8 +50,8 @@ function g(e) {
           })
         }
         return e
-      }({}, m), t = t = {
-        shortcut: h
+      }({}, h), t = t = {
+        shortcut: m
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -63,54 +63,54 @@ function g(e) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
     }
-    g()
-  }, [m, g, h]);
-  i.useEffect(() => (u.Z.disable(), () => {
-    u.Z.enable()
+    y()
+  }, [h, y, m]);
+  i.useEffect(() => (d.Z.disable(), () => {
+    d.Z.enable()
   }), []);
   let w = i.useMemo(() => [{
-    text: f.intl.string(f.t["ETE/oK"]),
-    onClick: g,
+    text: O.intl.string(O.t["ETE/oK"]),
+    onClick: y,
     variant: "secondary"
   }, {
-    text: f.intl.string(f.t.R3BPHx),
+    text: O.intl.string(O.t.R3BPHx),
     onClick: v,
     variant: "primary"
-  }], [g, v]);
+  }], [y, v]);
   return (0, r.jsxs)(a.Modal, {
     transitionState: n,
-    title: f.intl.string(f.t["0Osu39"]),
+    title: O.intl.string(O.t["0Osu39"]),
     actions: w,
-    onClose: g,
+    onClose: y,
     children: [(0, r.jsx)(c.Wn, {
-      className: y.warning,
+      className: f.warning,
       messageType: c.QYI.WARNING,
-      children: f.intl.string(f.t["O2v/eH"])
-    }), (0, r.jsx)(c.X6q, {
-      className: y.formHeader,
+      children: O.intl.string(O.t["O2v/eH"])
+    }), (0, r.jsx)(c.Heading, {
+      className: f.formHeader,
       variant: "eyebrow",
       color: "header-secondary",
-      children: f.intl.string(f.t.UUpADw)
+      children: O.intl.string(O.t.UUpADw)
     }), (0, r.jsx)(c.Text, {
-      className: y.action,
+      className: f.action,
       variant: "text-md/normal",
-      children: f.intl.string(f.t["1xFbPz"])
+      children: O.intl.string(O.t["1xFbPz"])
     }), (0, r.jsx)(c.Text, {
-      className: y.actionDescription,
+      className: f.actionDescription,
       variant: "text-sm/normal",
-      children: f.intl.string(f.t.laNlTk)
-    }), (0, r.jsx)(c.X6q, {
-      className: y.formHeader,
+      children: O.intl.string(O.t.laNlTk)
+    }), (0, r.jsx)(c.Heading, {
+      className: f.formHeader,
       variant: "eyebrow",
       color: "header-secondary",
-      children: f.intl.string(f.t["1La4tL"])
+      children: O.intl.string(O.t["1La4tL"])
     }), (0, r.jsx)(l.Z, {
-      defaultValue: h,
+      defaultValue: m,
       onChange: j
-    }), (0, r.jsx)(c.eee, {
-      className: y.resetButton,
-      onClick: () => j((0, d.Kd)(p.D_)),
-      children: f.intl.string(f.t["s7+2ra"])
+    }), (0, r.jsx)(c.Anchor, {
+      className: f.resetButton,
+      onClick: () => j((0, b.Kd)(p.D_)),
+      children: O.intl.string(O.t["s7+2ra"])
     })]
   })
 }

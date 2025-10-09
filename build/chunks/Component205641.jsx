@@ -2,7 +2,7 @@
 /** chunk id: 205641, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ function h(e, t, n, r) {
     duration: n / t
   })))
 }
-class x extends(r = Chunk647438.Component) {
+class b extends(r = Chunk647438.Component) {
   componentDidMount() {
     this.startAnimation()
   }
@@ -216,5 +216,5 @@ class x extends(r = Chunk647438.Component) {
     super(...e), m(this, "x", new u.Z.Value(0)), m(this, "y", new u.Z.Value(0)), m(this, "opacity", new u.Z.Value(1)), m(this, "fireScale", new u.Z.Value(1)), m(this, "currentAnimation", null), m(this, "isUnmounted", false)
   }
 }
-m(x, "Stages", p);
-let b = x
+m(b, "Stages", p);
+let x = b

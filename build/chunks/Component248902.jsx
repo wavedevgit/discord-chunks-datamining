@@ -16,13 +16,13 @@ function d(e) {
     mfaChallenge: t,
     setSlide: n,
     onClose: d,
-    headerAlignStart: c
+    headerAlignStart: u
   } = e;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(i.Z.SlideHeader, {
       subtitle: a.intl.string(a.t["XQaT+/"]),
       onClose: d,
-      headerAlignStart: c
+      headerAlignStart: u
     }), (0, l.jsx)(i.Z.SlideContent, {
       children: t.methods.map(e => (0, l.jsxs)(r.P3F, {
         className: o.listItemContainer,

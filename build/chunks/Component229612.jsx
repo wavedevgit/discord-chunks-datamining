@@ -30,7 +30,7 @@ function v(t) {
     gap: 24,
     children: [(0, l.jsxs)(r.Kqy, {
       gap: 16,
-      children: [(0, l.jsx)(r.X6q, {
+      children: [(0, l.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
         color: "text-primary",
         children: e
@@ -41,7 +41,7 @@ function v(t) {
       })]
     }), (0, l.jsxs)(r.Kqy, {
       gap: 16,
-      children: [(0, l.jsx)(r.X6q, {
+      children: [(0, l.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
         color: "text-primary",
         children: o.intl.string(o.t.oV10fn)

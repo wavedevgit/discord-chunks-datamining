@@ -84,7 +84,7 @@ let C = e => {
       text: t,
       extra: n
     } = e;
-    return (0, r.jsxs)(l.X6q, {
+    return (0, r.jsxs)(l.Heading, {
       variant: "heading-md/semibold",
       className: y.header,
       children: [t, n]
@@ -160,7 +160,7 @@ let C = e => {
       onClick: n,
       expired: i,
       children: a
-    } = e, o = (0, r.jsx)(l.X6q, {
+    } = e, o = (0, r.jsx)(l.Heading, {
       variant: "heading-md/semibold",
       className: (0, E.l)(y, "inviteDestination", i ? "Expired" : null != n ? "Joined" : ""),
       children: t
@@ -280,7 +280,7 @@ let x = e => {
       })
     })
   },
-  k = e => {
+  j = e => {
     let {
       guild: t,
       ref: n
@@ -294,7 +294,7 @@ let x = e => {
       })
     })
   },
-  j = e => {
+  k = e => {
     let {
       guildTemplate: t
     } = e;
@@ -306,5 +306,5 @@ let x = e => {
       })
     })
   };
-x.Header = C, x.Body = N, x.Icon = R, x.Info = P, x.Data = w, x.Channel = D, x.Button = L, x.GuildSplash = M, x.GuildName = k, x.GuildTemplateName = j, C.displayName = "InviteButton.Header", N.displayName = "InviteButton.Body", R.displayName = "InviteButton.Icon", P.displayName = "InviteButton.Info", w.displayName = "InviteButton.Data", D.displayName = "InviteButton.Channel", L.displayName = "InviteButton.Button", M.displayName = "InviteButton.GuildSplash", k.displayName = "InviteButton.GuildName", j.displayName = "InviteButton.GuildTemplateName";
+x.Header = C, x.Body = N, x.Icon = R, x.Info = P, x.Data = w, x.Channel = D, x.Button = L, x.GuildSplash = M, x.GuildName = j, x.GuildTemplateName = k, C.displayName = "InviteButton.Header", N.displayName = "InviteButton.Body", R.displayName = "InviteButton.Icon", P.displayName = "InviteButton.Info", w.displayName = "InviteButton.Data", D.displayName = "InviteButton.Channel", L.displayName = "InviteButton.Button", M.displayName = "InviteButton.GuildSplash", j.displayName = "InviteButton.GuildName", k.displayName = "InviteButton.GuildTemplateName";
 let U = x

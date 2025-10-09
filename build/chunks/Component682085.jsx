@@ -84,7 +84,7 @@ function j() {
   let w = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk66582.header,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/medium",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t.oqalCw)
@@ -123,7 +123,7 @@ function j() {
             align: "center",
             children: [(0, r.jsx)(o.LZC, {
               size: 128
-            }), w, (0, r.jsx)(o.zxk, {
+            }), w, (0, r.jsx)(o.Button, {
               icon: o.qJs,
               text: y.intl.string(y.t.lBG2s7),
               size: "md",

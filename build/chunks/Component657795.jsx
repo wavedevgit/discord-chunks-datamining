@@ -62,7 +62,7 @@ function S(e) {
       subscriptionTier: null != (a = null == R || null == (n = R.subscription_trial) ? true : n.sku_id) ? a : O.Si.TIER_2,
       children: v.intl.string(v.t.FnNud3)
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         className: I.header,
         variant: "heading-xl/semibold",
         children: v.intl.string(v.t.HEm04O)

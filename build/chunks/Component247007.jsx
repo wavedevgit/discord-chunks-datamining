@@ -27,7 +27,7 @@ function N(e) {
     guildInfo: i,
     onClick: a,
     submitting: s
-  } = e, o = null != (t = p.ZP.getGuildIconURL({
+  } = e, o = null != (t = f.ZP.getGuildIconURL({
     id: i.id,
     icon: i.icon,
     size: 40
@@ -39,10 +39,10 @@ function N(e) {
       mask: m.ZP.Masks.AVATAR_DEFAULT,
       width: 40,
       height: 40,
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(g.Z, {
         className: v.guildIcon,
         iconSrc: o,
-        guild: (0, g.yS)((n = function(e) {
+        guild: (0, p.yS)((n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -71,7 +71,7 @@ function N(e) {
         })(Object(l)).forEach(function(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n)),
-        size: f.Z.Sizes.MEDIUM
+        size: g.Z.Sizes.MEDIUM
       })
     }), (0, r.jsx)(c.Text, {
       className: v.guildName,
@@ -93,10 +93,10 @@ let E = e => {
     guildsInfo: i,
     setGuildId: s,
     forceGuildScrollHeight: m
-  } = e, [f, p] = l.useState(null), [g, x] = l.useState(true), [E, y] = l.useState(null), S = () => t(h.tF.SUBMIT_SCHOOL), j = i;
-  return null != g && "" !== g && (j = i.filter(e => o()(g.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
+  } = e, [g, f] = l.useState(null), [p, x] = l.useState(true), [E, y] = l.useState(null), S = () => t(h.tF.SUBMIT_SCHOOL), j = i;
+  return null != p && "" !== p && (j = i.filter(e => o()(p.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
     className: v.container,
-    children: [(0, r.jsx)(c.X6q, {
+    children: [(0, r.jsx)(c.Heading, {
       className: a()(v.centerText, v.header),
       variant: "heading-xl/semibold",
       children: _.intl.string(_.t.mOMeiY)
@@ -122,14 +122,14 @@ let E = e => {
             x(e)
           },
           "aria-label": _.intl.string(_.t["5h0QOD"]),
-          query: null != g ? g : "",
+          query: null != p ? p : "",
           onClear: () => {
             x(true)
           }
         }), (0, r.jsx)(c.Text, {
           color: "text-danger",
           variant: "text-xs/normal",
-          children: null == f ? true : f.getAnyErrorMessage()
+          children: null == g ? true : g.getAnyErrorMessage()
         })]
       }), j.length > 0 ? (0, r.jsx)(c.zJl, {
         className: v.scroller,
@@ -138,11 +138,11 @@ let E = e => {
           return true === e ? null : (0, r.jsx)(N, {
             guildInfo: e,
             onClick: (l = e.id, async () => {
-              p(null), s(l), y(l);
+              f(null), s(l), y(l);
               try {
                 await d.Z.sendVerificationEmail(n, true, l), t(h.tF.VERIFY_PIN)
               } catch (e) {
-                p(new u.Hx(e))
+                f(new u.Hx(e))
               } finally {
                 y(null)
               }
@@ -156,7 +156,7 @@ let E = e => {
           className: v.noResultsContent,
           children: [(0, r.jsx)("div", {
             className: v.noResultsImage
-          }), (0, r.jsx)(c.X6q, {
+          }), (0, r.jsx)(c.Heading, {
             className: a()(v.centerText, v.header),
             variant: "heading-xl/semibold",
             children: _.intl.string(_.t["1eUrDQ"])

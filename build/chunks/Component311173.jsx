@@ -2,7 +2,7 @@
 /** chunk id: 311173, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ function h(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   var t, n;
   let {
     rule: l,
@@ -50,8 +50,8 @@ function x(e) {
     className: o
   } = e, {
     patterns: g,
-    valueError: x,
-    errors: b,
+    valueError: b,
+    errors: x,
     validatePatternsChanged: j,
     validateEditingValueChanged: v
   } = (0, d.Z)(l, s), [_] = i.useState(() => ({
@@ -59,7 +59,7 @@ function x(e) {
     value: "",
     selections: [],
     isSelecting: false
-  })), C = i.useMemo(() => b.reduce((e, t) => {
+  })), C = i.useMemo(() => x.reduce((e, t) => {
     let {
       pattern: n,
       message: r,
@@ -73,7 +73,7 @@ function x(e) {
       erroringCharacterLength: l,
       erroringCharacterOffset: a
     }), e
-  }, {}), [b, g]), O = i.useCallback(e => {
+  }, {}), [x, g]), O = i.useCallback(e => {
     j(e, g)
   }, [j, g]), y = i.useCallback(e => {
     v(e)
@@ -91,13 +91,13 @@ function x(e) {
       text: m.intl.format(m.t["PGC/AA"], {
         helpArticle: f
       }),
-      hasErrors: b.length > 0 || null != x,
-      errorText: null != (n = null == (t = b.find(e => {
+      hasErrors: x.length > 0 || null != b,
+      errorText: null != (n = null == (t = x.find(e => {
         let {
           pattern: t
         } = e;
         return t === d.r
-      })) ? true : t.message) ? n : null == x ? true : x.message
+      })) ? true : t.message) ? n : null == b ? true : b.message
     })]
   })
 }

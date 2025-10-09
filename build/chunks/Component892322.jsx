@@ -29,7 +29,7 @@ function m(e) {
           guild: n,
           size: o.Z.Sizes.XLARGE,
           active: true
-        }), (0, i.jsx)(a.X6q, {
+        }), (0, i.jsx)(a.Heading, {
           className: u.title,
           variant: "heading-xl/semibold",
           children: d.intl.string(d.t.CueiPT)

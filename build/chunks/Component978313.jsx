@@ -22,21 +22,21 @@ function h(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [l, h] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = i.useState(true), [O, y] = i.useState(false), I = i.useRef(null), {
+  } = e, [l, h] = r.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = r.useState(true), [O, y] = r.useState(false), I = r.useRef(null), {
     width: b,
     height: E
   } = (0, u.Z)();
-  return (i.useEffect(() => {
+  return (r.useEffect(() => {
     let e = I.current;
     null != e && y(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [I, b, E, v]), null == t.summary) ? null : (0, r.jsxs)("div", {
-    className: a()(x.column, x.gapMd),
-    children: [null != t.summaryLocalized && (0, r.jsxs)("div", {
-      className: a()(x.row, x.gapSm),
-      children: [(0, r.jsx)(s.SxY, {
+  }, [I, b, E, v]), null == t.summary) ? null : (0, i.jsxs)("div", {
+    className: a()(g.column, g.gapMd),
+    children: [null != t.summaryLocalized && (0, i.jsxs)("div", {
+      className: a()(g.row, g.gapSm),
+      children: [(0, i.jsx)(s.SxY, {
         color: c.Z.colors.HEADER_SECONDARY,
         size: "xs"
-      }), (0, r.jsx)(o.xvT, {
+      }), (0, i.jsx)(o.xvT, {
         variant: "text-xs/medium",
         color: "header-secondary",
         children: l ? p.intl.format(p.t.aZ2iIi, {
@@ -45,22 +45,22 @@ function h(e) {
           onShowTranslated: () => h(true)
         })
       })]
-    }), (0, r.jsx)(o.xvT, {
+    }), (0, i.jsx)(o.xvT, {
       ref: I,
       lineClamp: v ? 8 : true,
       variant: "text-sm/normal",
       children: l ? t.summaryLocalized : t.summary
-    }), O && (0, r.jsx)(d.P3F, {
-      className: x.clickable,
+    }), O && (0, i.jsx)(d.P3F, {
+      className: g.clickable,
       onClick: () => {
         n(v ? m.as.ShowMore : m.as.ShowLess), j(!v)
       },
-      children: (0, r.jsx)(o.xvT, {
+      children: (0, i.jsx)(o.xvT, {
         variant: "text-sm/semibold",
         children: v ? p.intl.string(p.t.lBeKY2) : p.intl.string(p.t["6MwJo6"])
       })
-    }), (0, r.jsx)(f.Z, {
-      className: g.platforms,
+    }), (0, i.jsx)(f.Z, {
+      className: x.platforms,
       detectedGame: t
     })]
   })

@@ -87,7 +87,7 @@ function E(e) {
       }), v && null != b && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: g.resetButton,
-        children: (0, r.jsx)(c.zxk, {
+        children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
           text: m.intl.string(m.t["L+Gmoa"]),

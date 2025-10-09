@@ -20,7 +20,7 @@ function p(e) {
     defaultCategory: _,
     onCategoryChange: f,
     className: h
-  } = e, [m, x] = i.useState(_), [b, g] = i.useState(null), j = (0, s.Z)(), y = i.useMemo(() => [{
+  } = e, [m, x] = i.useState(_), [g, b] = i.useState(null), j = (0, s.Z)(), y = i.useMemo(() => [{
     name: c.intl.string(c.t["6Zuiv7"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -28,8 +28,8 @@ function p(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => g(d.KN.Trick),
-    onMouseLeave: () => g(null)
+    onMouseEnter: () => b(d.KN.Trick),
+    onMouseLeave: () => b(null)
   }, {
     name: c.intl.string(c.t["2UeOlZ"]),
     value: d.KN.Treat,
@@ -38,8 +38,8 @@ function p(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => g(d.KN.Treat),
-    onMouseLeave: () => g(null)
+    onMouseEnter: () => b(d.KN.Treat),
+    onMouseLeave: () => b(null)
   }], []), v = i.useCallback(e => {
     x(e.value), f(e.value)
   }, [f]), L = null == j || null == (n = j.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == j || null == (p = j.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
@@ -49,7 +49,7 @@ function p(e) {
       options: y,
       value: m,
       onChange: v
-    }), b === d.KN.Trick && null != L && (0, r.jsx)("div", {
+    }), g === d.KN.Trick && null != L && (0, r.jsx)("div", {
       className: l()(u.animationOverlay, u.trickAnimation),
       children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
@@ -58,9 +58,9 @@ function p(e) {
         className: u.lottieAnimation,
         importData: L,
         renderer: o.Fmz.Renderers.SVG,
-        versionKey: +(b === d.KN.Trick)
+        versionKey: +(g === d.KN.Trick)
       })
-    }), b === d.KN.Treat && null != S && (0, r.jsx)("div", {
+    }), g === d.KN.Treat && null != S && (0, r.jsx)("div", {
       className: l()(u.animationOverlay, u.treatAnimation),
       children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
@@ -69,7 +69,7 @@ function p(e) {
         className: u.lottieAnimation,
         importData: S,
         renderer: o.Fmz.Renderers.SVG,
-        versionKey: +(b === d.KN.Treat)
+        versionKey: +(g === d.KN.Treat)
       })
     })]
   })

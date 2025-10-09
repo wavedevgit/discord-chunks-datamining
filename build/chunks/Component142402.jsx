@@ -27,8 +27,8 @@ function j(e) {
     isStreamer: t,
     stream: j,
     streamApplication: h,
-    onClose: x,
-    transitionState: E,
+    onClose: E,
+    transitionState: x,
     analyticsData: S
   } = e;
   l.useEffect(() => {
@@ -187,14 +187,14 @@ function j(e) {
       };
     return (0, r.jsx)(d.Z, {
       onSubmit: w,
-      onClose: x,
+      onClose: E,
       ratingHeader: P,
       ratingEmojiKind: C,
       ratingBody: t ? R : T,
       categoriesHeader: O.intl.string(y.default["tq859/"]),
       optionsTree: [e, n, l, o, i],
       impression: F,
-      transitionState: E
+      transitionState: x
     })
   }
   return (0, r.jsx)(u.Z, {
@@ -210,8 +210,8 @@ function j(e) {
     }),
     freeformNeededProblems: v,
     onSubmit: w,
-    onClose: x,
-    transitionState: E,
+    onClose: E,
+    transitionState: x,
     otherKey: g.kr.OTHER
   })
 }

@@ -15,7 +15,7 @@ function a(e) {
     settings: n
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: l.header,

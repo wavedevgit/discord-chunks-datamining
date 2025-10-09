@@ -112,11 +112,11 @@ function es(e) {
     guildId: n,
     channelType: s,
     description: l
-  } = e, [a, o] = i.useState(""), [c, d] = i.useState({}), h = i.useRef(null), u = (0, p.e7)([B.Z], () => B.Z.getGuild(n)), g = s === X.d4z.GUILD_STAGE_VOICE, {
+  } = e, [a, o] = i.useState(""), [c, d] = i.useState({}), h = i.useRef(null), u = (0, p.e7)([z.Z], () => z.Z.getGuild(n)), g = s === W.d4z.GUILD_STAGE_VOICE, {
     roles: C,
     members: b,
-    getRichTag: x
-  } = (0, S.Q)(u, null, g ? w.yP : (0, M.CG)(s), a, g), N = y.Z.useSections({
+    getRichTag: N
+  } = (0, S.Q)(u, null, g ? w.yP : (0, M.CG)(s), a, g), x = y.Z.useSections({
     roles: C,
     members: b
   });
@@ -130,7 +130,7 @@ function es(e) {
     setPendingAdditions: d,
     roles: C,
     members: b,
-    getRichTag: x,
+    getRichTag: N,
     children: (0, r.jsxs)(m.hzk, {
       className: ee.addMembersContainer,
       children: [null != l && "" !== l ? (0, r.jsx)(m.Text, {
@@ -151,7 +151,7 @@ function es(e) {
         renderSection: y.Z.renderSection,
         rowHeight: y.Z.ROW_HEIGHT,
         renderRow: y.Z.renderRow,
-        sections: N,
+        sections: x,
         innerAriaOrientation: "vertical",
         innerRole: "listbox"
       })]
@@ -165,9 +165,9 @@ function el(e) {
     guildId: n
   } = e, s = i.useRef(null), l = i.useMemo(() => ({
     popoutLocation: {
-      page: X.ZY5.CREATE_CHANNEL_MODAL,
-      section: X.jXE.CHANNEL_NAME,
-      object: X.qAy.EMOJI_PICKER_BUTTON
+      page: W.ZY5.CREATE_CHANNEL_MODAL,
+      section: W.jXE.CHANNEL_NAME,
+      object: W.qAy.EMOJI_PICKER_BUTTON
     }
   }), []), a = i.useCallback(e => {
     let {
@@ -233,9 +233,9 @@ class ea extends Chunk647438.PureComponent {
     })
   }
   componentDidUpdate(e, t) {
-    !t.isPrivate && this.state.isPrivate && this.state.channelType === X.d4z.GUILD_ANNOUNCEMENT && this.setState({
-      channelType: X.d4z.GUILD_TEXT
-    }), !t.isPrivate && this.state.isPrivate && E.ZP.trackWithMetadata(X.rMx.OPEN_MODAL, {
+    !t.isPrivate && this.state.isPrivate && this.state.channelType === W.d4z.GUILD_ANNOUNCEMENT && this.setState({
+      channelType: W.d4z.GUILD_TEXT
+    }), !t.isPrivate && this.state.isPrivate && O.ZP.trackWithMetadata(W.rMx.OPEN_MODAL, {
       type: "Create Private Channel"
     })
   }
@@ -307,7 +307,7 @@ class ea extends Chunk647438.PureComponent {
       separator: false,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk421835.header,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           id: this.headerId,
           variant: "heading-lg/semibold",
           className: Chunk421835.title,
@@ -328,7 +328,7 @@ class ea extends Chunk647438.PureComponent {
     return null != module ? Chunk388032.intl.format(Chunk388032.t.s2ZzZW, {
       name: (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z, true)
     }) : exports === Chunk981631.d4z.GUILD_FORUM ? Chunk388032.intl.format(Chunk388032.t.tbVWyc, {
-      forumUpsellHook: (e, t) => (0, r.jsx)(m.eee, {
+      forumUpsellHook: (e, t) => (0, r.jsx)(m.Anchor, {
         onClick: () => (0, m.ZDy)(async () => {
           let {
             default: e
@@ -363,9 +363,9 @@ class ea extends Chunk647438.PureComponent {
       maxLength: 100,
       placeholder: function(e) {
         switch (e) {
-          case X.d4z.GUILD_CATEGORY:
+          case W.d4z.GUILD_CATEGORY:
             return $.intl.string($.t.eTVbt7);
-          case X.d4z.GUILD_FORUM:
+          case W.d4z.GUILD_FORUM:
             return $.intl.string($.t["5z1Xam"]);
           default:
             return $.intl.string($.t["bw/b8P"])
@@ -414,18 +414,18 @@ class ea extends Chunk647438.PureComponent {
         } = e, a = [{
           icon: t ? m.W4G : m.VL1,
           label: $.intl.string($.t.pnuRXF),
-          value: X.d4z.GUILD_TEXT,
+          value: W.d4z.GUILD_TEXT,
           description: $.intl.string($.t.Hf5Lb2)
         }];
         return a.push({
           icon: t ? m.gjC : m.gj8,
           label: $.intl.string($.t.Sx55Oj),
-          value: X.d4z.GUILD_VOICE,
+          value: W.d4z.GUILD_VOICE,
           description: $.intl.string($.t.pqfkoK)
         }), a.push({
           icon: t ? m.BUe : m.Mmi,
           label: $.intl.string($.t.eAVIDw),
-          value: X.d4z.GUILD_FORUM,
+          value: W.d4z.GUILD_FORUM,
           description: (0, r.jsxs)(m.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
@@ -439,14 +439,14 @@ class ea extends Chunk647438.PureComponent {
         }), l && a.push({
           icon: t ? m.D7T : m.XBm,
           label: $.intl.string($.t["6x6fVl"]),
-          value: X.d4z.GUILD_MEDIA,
+          value: W.d4z.GUILD_MEDIA,
           description: (0, r.jsxs)(m.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             className: ee.radioLabelDescription,
             children: [$.intl.string($.t.JyCrwc), (0, r.jsx)("br", {}), $.intl.format($.t.fjSvsL, {
               onClick: () => {
-                open(q.Z.getCreatorSupportArticleURL(X.BhN.MEDIA_CHANNEL))
+                open(q.Z.getCreatorSupportArticleURL(W.BhN.MEDIA_CHANNEL))
               }
             })]
           }),
@@ -455,19 +455,19 @@ class ea extends Chunk647438.PureComponent {
           icon: m.MqZ,
           iconSize: 24,
           label: $.intl.string($.t.qr9dEB),
-          value: X.d4z.GUILD_ANNOUNCEMENT,
+          value: W.d4z.GUILD_ANNOUNCEMENT,
           description: $.intl.string($.t.gBkfzs)
         }), n && a.push({
           icon: m.lO_,
           iconSize: 24,
           label: $.intl.string($.t.SxjkXV),
-          value: X.d4z.GUILD_STORE,
+          value: W.d4z.GUILD_STORE,
           description: $.intl.string($.t.nmCPMD)
         }), s && a.push({
           icon: m.ewx,
           iconSize: 24,
           label: $.intl.string($.t.pNWst7),
-          value: X.d4z.GUILD_STAGE_VOICE,
+          value: W.d4z.GUILD_STAGE_VOICE,
           description: $.intl.string($.t.VPAwgo)
         }), a.map(e => {
           let {
@@ -634,9 +634,9 @@ class ea extends Chunk647438.PureComponent {
     let l = Chunk120356 || Chunk647438 === Chunk981631.d4z.GUILD_STAGE_VOICE;
     return (0, Chunk951288.jsx)(Chunk481060.mzw, {
       className: Chunk421835.modalFooter,
-      children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [l ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [l ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.PDTjLC),
           type: "button",
@@ -647,12 +647,12 @@ class ea extends Chunk647438.PureComponent {
             })
           },
           disabled: !this.canSubmit()
-        }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: module,
           type: "submit",
           disabled: !this.canSubmit()
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
           onClick: require
@@ -668,14 +668,14 @@ class ea extends Chunk647438.PureComponent {
         pendingPermissionOverwrites: n
       } = this.state;
     return e = 0 === Object.keys(require).length ? Chunk388032.intl.string(Chunk388032.t["5WxrcX"]) : exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+ND"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+v"]), (0, Chunk951288.jsx)(Chunk481060.mzw, {
-      children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: module,
           type: "submit",
           disabled: !this.canSubmit()
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["13/7kZ"]),
           onClick: () => {
@@ -726,7 +726,7 @@ class ea extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 4,
           className: Chunk421835.header,
-          children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             className: Chunk421835.title,
             children: l ? Chunk388032.intl.string(Chunk388032.t["S/6zHB"]) : Chunk388032.intl.string(Chunk388032.t.dMJ3Y2)
@@ -829,7 +829,7 @@ class ea extends Chunk647438.PureComponent {
       } = e, {
         name: n
       } = this.state;
-      M.xL.has(t) && (n = (0, F.Nj)(n)), t === X.d4z.GUILD_STAGE_VOICE && this.setState({
+      M.xL.has(t) && (n = (0, F.Nj)(n)), t === W.d4z.GUILD_STAGE_VOICE && this.setState({
         isPrivate: false
       }), this.setState({
         channelType: t,
@@ -877,24 +877,24 @@ class ea extends Chunk647438.PureComponent {
         channelType: g,
         skuId: m,
         branchId: b,
-        isPrivate: x
-      } = this.state, N = this.getGuildId();
-      if (null != N) {
+        isPrivate: N
+      } = this.state, x = this.getGuildId();
+      if (null != x) {
         if (null != i) t = d().values(i.permissionOverwrites), n = i.bitrate, r = i.userLimit;
-        else if (g === X.d4z.GUILD_ANNOUNCEMENT) t = (0, F.rt)(N);
+        else if (g === W.d4z.GUILD_ANNOUNCEMENT) t = (0, F.rt)(x);
         else {
-          if (x) {
-            t = (0, F.oQ)(N, g, [], true);
+          if (N) {
+            t = (0, F.oQ)(x, g, [], true);
             let e = (0, v.Tj)(p, g);
             e.length > 0 && (t = t.concat(e));
             let n = null != h && l.id === h.id;
             t.some(e => a.has(e.id)) || o || n || t.push((0, F.jZ)(l.id, g))
           }
-          g === X.d4z.GUILD_STAGE_VOICE && (t = [], Object.values(p).forEach(e => {
+          g === W.d4z.GUILD_STAGE_VOICE && (t = [], Object.values(p).forEach(e => {
             let {
               row: n
             } = e;
-            null != n.id && "" !== n.id && (n.rowType === W.aC.ROLE ? t.push((0, Z.A)(n.id, f.BN.ROLE)) : n.rowType === W.aC.MEMBER && t.push((0, Z.A)(n.id, f.BN.MEMBER)))
+            null != n.id && "" !== n.id && (n.rowType === X.aC.ROLE ? t.push((0, Z.A)(n.id, f.BN.ROLE)) : n.rowType === X.aC.MEMBER && t.push((0, Z.A)(n.id, f.BN.MEMBER)))
           }))
         }
         this.setState({
@@ -903,13 +903,13 @@ class ea extends Chunk647438.PureComponent {
         });
         try {
           let e = await C.Z.createChannel({
-            guildId: N,
+            guildId: x,
             type: g,
             name: u,
             permissionOverwrites: t,
             bitrate: n,
             userLimit: r,
-            parentId: g !== X.d4z.GUILD_CATEGORY ? s : null,
+            parentId: g !== W.d4z.GUILD_CATEGORY ? s : null,
             skuId: m,
             branchId: b
           });
@@ -939,7 +939,7 @@ class ea extends Chunk647438.PureComponent {
       prefillChannelName: r
     } = e;
     this.state = {
-      channelType: null != t ? t : X.d4z.GUILD_TEXT,
+      channelType: null != t ? t : W.d4z.GUILD_TEXT,
       name: null != n ? (0, j.F6)(n, V.default, k.Z) : null != r ? r : "",
       pendingPermissionOverwrites: {},
       isPrivate: false,
@@ -960,30 +960,30 @@ let eo = Chunk647438.forwardRef(function(e, t) {
     channelType: n,
     guildId: i,
     cloneChannelId: s
-  } = e, l = (0, p.cj)([B.Z, V.default, H.Z, R.Z, z.ZP], () => {
+  } = e, l = (0, p.cj)([z.Z, V.default, H.Z, R.Z, B.ZP], () => {
     var e, t, r;
-    let l = B.Z.getGuild(i),
+    let l = z.Z.getGuild(i),
       a = V.default.getCurrentUser();
     o()(null != a, "CreateChannel: user cannot be undefined");
     let c = null != l && null != l.ownerId ? V.default.getUser(l.ownerId) : null,
-      d = H.Z.can(X.Plq.ADMINISTRATOR, l),
+      d = H.Z.can(W.Plq.ADMINISTRATOR, l),
       h = R.Z.getChannel(s);
     return {
       guild: l,
-      canCreateStoreChannel: null != l && l.features.has(X.oNc.COMMERCE),
-      canCreateAnnouncementChannel: null != l && l.features.has(X.oNc.NEWS),
+      canCreateStoreChannel: null != l && l.features.has(W.oNc.COMMERCE),
+      canCreateAnnouncementChannel: null != l && l.features.has(W.oNc.NEWS),
       user: a,
       owner: c,
-      memberRoles: null != (t = null == (e = z.ZP.getMember(i, a.id)) ? true : e.roles) ? t : [],
-      canViewChannels: H.Z.can(X.Plq.VIEW_CHANNEL, l),
-      canConnect: H.Z.can(X.Plq.CONNECT, l),
+      memberRoles: null != (t = null == (e = B.ZP.getMember(i, a.id)) ? true : e.roles) ? t : [],
+      canViewChannels: H.Z.can(W.Plq.VIEW_CHANNEL, l),
+      canConnect: H.Z.can(W.Plq.CONNECT, l),
       isAdmin: d,
       cloneChannel: h,
       channelType: null != (r = null == h ? true : h.type) ? r : n,
-      canManageRoles: H.Z.can(X.Plq.MANAGE_ROLES, l),
-      canManageChannels: H.Z.can(X.Plq.MANAGE_CHANNELS, l)
+      canManageRoles: H.Z.can(W.Plq.MANAGE_ROLES, l),
+      canManageChannels: H.Z.can(W.Plq.MANAGE_CHANNELS, l)
     }
-  }), a = (0, p.Wu)([O.Z], () => O.Z.getGuildApplicationIds(i).map(e => O.Z.getApplication(e)).filter(Y.lm)), c = new Set(l.memberRoles), {
+  }), a = (0, p.Wu)([E.Z], () => E.Z.getGuildApplicationIds(i).map(e => E.Z.getApplication(e)).filter(Y.lm)), c = new Set(l.memberRoles), {
     canManageRoles: d,
     canManageChannels: h
   } = l, u = (0, U.m)(i) && d && h, g = (0, L.Ui)(null == l ? true : l.guild);

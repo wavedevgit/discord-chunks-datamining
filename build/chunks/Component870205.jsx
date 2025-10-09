@@ -15,7 +15,7 @@ function c(e) {
       sortOrder: n,
       onSortOptionClick: c
     } = e,
-    u = i.useRef(null);
+    u = l.useRef(null);
   switch (n) {
     case o.bS.POPULAR:
       t = s.intl.string(s.t.SzxiqK);
@@ -23,13 +23,13 @@ function c(e) {
     case o.bS.ALPHABETICAL:
       t = s.intl.string(s.t.m8xstr)
   }
-  return (0, l.jsx)(r.yRy, {
+  return (0, i.jsx)(r.yRy, {
     targetElementRef: u,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, l.jsx)(a.Z, {
+      return (0, i.jsx)(a.Z, {
         sortOrder: n,
         onSortOptionClick: c,
         closePopout: t
@@ -38,40 +38,40 @@ function c(e) {
     position: "bottom",
     align: "left",
     children: e => {
-      var n, i;
-      return (0, l.jsx)(r.zxk, (n = function(e) {
+      var n, l;
+      return (0, i.jsx)(r.Button, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-              value: l,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = l
+            }) : e[t] = i
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), l = l = {
         buttonRef: u,
         size: "sm",
         variant: "secondary",
         "aria-label": s.intl.string(s.t.yeYaHR),
         icon: r.uVW,
         text: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, l)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
       }), n))
     }
   })

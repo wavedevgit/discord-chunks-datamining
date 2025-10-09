@@ -209,20 +209,20 @@ function M(e) {
   y.notifCenterActive = t
 }
 
-function k(e) {
+function j(e) {
   let {
     focused: t
   } = e;
   y.notifCenterTabFocused = t
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   var r;
   return e.type === t && (null == (r = e.other_user) ? true : r.id) === n
 }
 
 function U(e, t, n, r) {
-  return j(e, t, n) && e.applicationId === r
+  return k(e, t, n) && e.applicationId === r
 }
 
 function G(e) {
@@ -244,16 +244,16 @@ function G(e) {
       null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, p.mH)(e, s, l)])
     }
   }
-  r !== h.OGo.FRIEND || null == t.user || a || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => j(e, _.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(g({}, e), {
+  r !== h.OGo.FRIEND || null == t.user || a || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => k(e, _.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(g({}, e), {
     acked: true,
     forceUnacked: false,
     local_id: "incoming_friend_requests_accepted_".concat(o.id, "_").concat(e.id),
     type: _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED
-  }) : e)), (r === h.OGo.BLOCKED || a) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !j(e, _.O7.INCOMING_FRIEND_REQUESTS, n) && !j(e, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !j(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !j(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
+  }) : e)), (r === h.OGo.BLOCKED || a) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !k(e, _.O7.INCOMING_FRIEND_REQUESTS, n) && !k(e, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, _.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
 function B(e) {
-  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !j(t, _.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !j(t, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
+  y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !k(t, _.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, _.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
 function Z(e) {
@@ -387,7 +387,7 @@ let z = new K(Chunk570140.Z, {
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: R,
   RESET_NOTIFICATION_CENTER: () => I(),
   NOTIFICATION_CENTER_SET_ACTIVE: M,
-  NOTIFICATION_CENTER_TAB_FOCUSED: k,
+  NOTIFICATION_CENTER_TAB_FOCUSED: j,
   RELATIONSHIP_ADD: G,
   RELATIONSHIP_UPDATE: G,
   RELATIONSHIP_REMOVE: B,

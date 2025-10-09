@@ -32,7 +32,7 @@ function u(e) {
   let f = () => {
     null == d || d()
   };
-  return (0, r.jsx)(a.zxk, {
+  return (0, r.jsx)(a.Button, {
     variant: "primary",
     size: "md",
     icon: a.v3n,

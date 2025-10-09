@@ -20,36 +20,36 @@ function c(e) {
     content: x
   } = e;
   return (0, r.jsxs)(l.Z, {
-    children: [(0, r.jsxs)(s.xBx, {
-      direction: n.Z.Direction.VERTICAL,
+    children: [(0, r.jsxs)(n.xBx, {
+      direction: s.Z.Direction.VERTICAL,
       className: o.header,
       separator: false,
       children: [(0, r.jsx)("div", {
         className: o.illustration,
         children: t
-      }), (0, r.jsx)(s.X6q, {
+      }), (0, r.jsx)(n.Heading, {
         className: o.title,
         variant: "heading-xl/extrabold",
         children: c
-      }), (0, r.jsx)(s.olH, {
+      }), (0, r.jsx)(n.olH, {
         className: o.closeButton,
         onClick: a
       })]
-    }), (0, r.jsxs)(s.hzk, {
+    }), (0, r.jsxs)(n.hzk, {
       className: o.body,
       paddingFix: false,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(n.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: d
       }), x]
-    }), (0, r.jsx)(s.mzw, {
+    }), (0, r.jsx)(n.mzw, {
       className: o.footer,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: o.footerButton,
-        children: (0, r.jsx)(s.zxk, {
+        children: (0, r.jsx)(n.Button, {
           variant: "primary",
           text: i.intl.string(i.t.i4jeWV),
           onClick: a

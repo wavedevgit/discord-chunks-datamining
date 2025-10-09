@@ -64,38 +64,38 @@ function N(e) {
   }, [N, A, j, n]);
   return {
     content: (0, s.jsxs)(s.Fragment, {
-      children: [(0, s.jsxs)(i.xBx, {
+      children: [(0, s.jsxs)(l.xBx, {
         className: b.header,
         direction: d.Z.Direction.VERTICAL,
         separator: false,
-        children: [(0, s.jsx)(i.X6q, {
+        children: [(0, s.jsx)(l.Heading, {
           variant: "heading-xl/bold",
           color: "header-primary",
           className: b.title,
           children: h.intl.string(h.t.riOUtL)
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
           children: h.intl.string(h.t["7jub2t"])
         })]
-      }), (0, s.jsxs)(i.hzk, {
+      }), (0, s.jsxs)(l.hzk, {
         children: [(0, s.jsx)("form", {
           onSubmit: y,
           className: b.inputForm,
-          children: (0, s.jsx)(i.oil, {
+          children: (0, s.jsx)(l.oil, {
             label: h.intl.string(h.t.qreV29),
             error: C,
             value: N,
             onChange: x,
             inputRef: O
           })
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
           children: h.intl.format(h.t.lHTZl5, {
             examples: "".concat(E).concat("wumpus-friends", ", ").concat("hTKzmak")
           })
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
           className: b.connectCTA,
@@ -110,16 +110,16 @@ function N(e) {
       })]
     }),
     footer: (0, s.jsxs)(s.Fragment, {
-      children: [(0, s.jsx)(i.zxk, {
+      children: [(0, s.jsx)(l.Button, {
         variant: "primary",
         text: h.intl.string(h.t.VJlc0d),
         onClick: y,
         disabled: 0 === N.length,
         loading: T
-      }), (0, s.jsx)(l.zx, {
+      }), (0, s.jsx)(i.zx, {
         className: b.__invalid_skipButton,
-        look: l.zx.Looks.BLANK,
-        size: l.zx.Sizes.MIN,
+        look: i.zx.Looks.BLANK,
+        size: i.zx.Sizes.MIN,
         onClick: t,
         children: h.intl.string(h.t["13/7kZ"])
       })]

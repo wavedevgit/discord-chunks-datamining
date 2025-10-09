@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => G,
-  c: () => j
+  c: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ let L = 24,
     }), p = () => s(e => !e), m = (0, d.Dt)();
     return 0 === t.length ? null : (0, r.jsxs)("div", {
       className: D.benefitsSection,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "text-xs/bold",
         color: "header-secondary",
         className: D.sectionHeader,
@@ -71,7 +71,7 @@ let L = 24,
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       guildId: t,
       listingId: n
@@ -86,7 +86,7 @@ let L = 24,
     }
     return 0 === o.length ? null : (0, r.jsxs)("div", {
       className: D.benefitsSection,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "text-xs/bold",
         color: "header-secondary",
         className: D.sectionHeader,
@@ -114,7 +114,7 @@ let L = 24,
       })]
     })
   },
-  j = e => {
+  k = e => {
     let {
       listingId: t,
       guildId: n,
@@ -123,7 +123,7 @@ let L = 24,
     return null == a && 0 === l.length && 0 === u.length && 0 === f.size ? null : (0, r.jsxs)("div", {
       className: o()(D.subscriptionPerks, i),
       children: [null != a && (0, r.jsxs)(c.y5t, {
-        component: (0, r.jsx)(c.X6q, {
+        component: (0, r.jsx)(c.Heading, {
           variant: "text-xs/bold",
           color: "header-secondary",
           className: D.sectionHeader,
@@ -144,7 +144,7 @@ let L = 24,
         header: w.intl.string(w.t["8oxWpK"]),
         benefits: u,
         guildId: n
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(j, {
         guildId: n,
         listingId: t
       })]
@@ -177,7 +177,7 @@ let L = 24,
     } = (0, N.Z)(p, n, a, d), S = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: L,
       activeSubscriptionListing: x
-    } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, k = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
+    } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, j = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
     }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEAw);
@@ -217,17 +217,17 @@ let L = 24,
             gap: 16,
             children: [Q && (0, r.jsx)("div", {
               className: D.divider
-            }), M ? (0, r.jsx)(c.zxk, {
+            }), M ? (0, r.jsx)(c.Button, {
               disabled: true,
               fullWidth: true,
-              variant: k ? "secondary" : "primary",
-              text: k ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
+              variant: j ? "secondary" : "primary",
+              text: j ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
                 className: D.helpMessage,
                 messageType: c.QYI.INFO,
                 children: v
-              }), (0, r.jsx)(c.zxk, {
+              }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
                 text: w.intl.string(w.t.fM5Zsb),
                 disabled: !O || S,
@@ -255,7 +255,7 @@ let L = 24,
             })]
           })]
         }), ee && (0, r.jsx)(c.y5t, {
-          children: (0, r.jsx)(j, {
+          children: (0, r.jsx)(k, {
             listingId: t,
             guildId: n
           })

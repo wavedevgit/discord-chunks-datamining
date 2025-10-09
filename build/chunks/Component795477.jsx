@@ -14,7 +14,7 @@ let a = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk831901.errorImage,
     src: "https://cdn.discordapp.com/assets/content/ca0857da281051f734229e1994112aaa95b21d6f7fce7a1e509357d94c58a949.png",
     alt: Chunk388032.intl.string(Chunk388032.t["p8+qtb"])
-  }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+  }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
     variant: "heading-xl/semibold",
     children: Chunk388032.intl.string(Chunk388032.t["p8+qtb"])
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {

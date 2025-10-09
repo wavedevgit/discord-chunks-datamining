@@ -58,7 +58,7 @@ function y(e) {
               className: b.accountNameText,
               children: t.name
             })
-          }) : (0, l.jsx)(a.eee, {
+          }) : (0, l.jsx)(a.Anchor, {
             href: n,
             className: b.platformUrlAnchor,
             useDefaultUnderlineStyles: false,

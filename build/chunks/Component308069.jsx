@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
@@ -26,7 +26,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
     let {
       quest: t,
       expansionSpring: n,
-      onCtxMenuSelect: o,
+      onCtxMenuSelect: a,
       onCtxMenuOpen: g,
       onCtxMenuClose: C,
       useReducedMotion: y,
@@ -52,7 +52,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
       })
     }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
       onClick: N,
-      className: a()(j.clickable, {
+      className: o()(j.clickable, {
         [j.logo]: R
       }),
       children: (0, r.jsx)(v, {
@@ -70,7 +70,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
       })
     });
     return (0, r.jsxs)(i.animated.div, {
-      className: a()(j.wrapper, j.rewardHighlightWrapper, {
+      className: o()(j.wrapper, j.rewardHighlightWrapper, {
         [j.interactable]: R
       }),
       style: {
@@ -115,7 +115,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
         }), (0, r.jsx)(h.r, {
           onOpen: g,
           onClose: C,
-          onSelect: o,
+          onSelect: a,
           questContent: p.jn.QUEST_BAR_V2,
           quest: t,
           shouldShowDisclosure: true,
@@ -146,7 +146,7 @@ let v = (0, Chunk137317.animated)(Chunk685613.ZP),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: a()(j.submenuIcon, j.white)
+                className: o()(j.submenuIcon, j.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

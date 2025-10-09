@@ -93,7 +93,7 @@ class b extends Chunk647438.Component {
               }
             }) : null,
             fullWidth: true
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t.KIpp7O),
             type: "submit",

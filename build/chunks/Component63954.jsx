@@ -1,13 +1,13 @@
 /** Chunk was on 17013 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H,
+  Z: () => U,
   b: () => V
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
   Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
@@ -57,7 +57,7 @@ function k(e) {
   return e
 }
 
-function q(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,8 +69,8 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = ["png", "gif", "webp"],
-  D = [...I, "jpg", "jpeg"],
+let q = ["png", "gif", "webp"],
+  D = [...q, "jpg", "jpeg"],
   L = Array.from(new Set([...D, "gif", "mp4", "webm"]));
 
 function V(e) {
@@ -176,24 +176,24 @@ let M = "1193992107035983872",
   };
 
 function W() {
-  var e, t, o, d, u, B, V, M;
-  let [W, U] = Chunk647438.useState(Z), H = Chunk647438.useCallback(e => {
-    U(q(k({}, e), {
+  var e, t, a, d, u, B, V, M;
+  let [W, H] = Chunk647438.useState(Z), U = Chunk647438.useCallback(e => {
+    H(I(k({}, e), {
       preview: true
     }))
-  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [X, K] = Chunk647438.useState(false), [G, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [K, G] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function et(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      H(q(k({}, W), {
+      U(I(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => q(k({}, e), {
+        }, e => I(k({}, e), {
           assets: k({}, e.assets, r)
         })).exhaustive())
       }))
@@ -217,18 +217,18 @@ function W() {
         };
         break;
       case "videoPlayerThumbnail":
-        s.video = q(k({}, s.video), {
+        s.video = I(k({}, s.video), {
           thumbnail: t
         });
         break;
       default:
         return
     }
-    H(q(k({}, W), {
-      config: q(k({}, W.config), {
-        taskConfigV2: q(k({}, W.config.taskConfigV2), {
-          tasks: q(k({}, n), {
-            [l.X.WATCH_VIDEO]: q(k({}, r), {
+    U(I(k({}, W), {
+      config: I(k({}, W.config), {
+        taskConfigV2: I(k({}, W.config.taskConfigV2), {
+          tasks: I(k({}, n), {
+            [l.X.WATCH_VIDEO]: I(k({}, r), {
               assets: s
             })
           })
@@ -239,11 +239,11 @@ function W() {
 
   function er(e, t) {
     var n, r, s;
-    H(q(k({}, W), {
-      config: q(k({}, W.config), {
-        videoMetadata: q(k({}, W.config.videoMetadata), {
+    U(I(k({}, W), {
+      config: I(k({}, W.config), {
+        videoMetadata: I(k({}, W.config.videoMetadata), {
           messages: null != (s = null == (n = W.config.videoMetadata) ? true : n.messages) ? s : {},
-          assets: q(k({}, null == (r = W.config.videoMetadata) ? true : r.assets), {
+          assets: I(k({}, null == (r = W.config.videoMetadata) ? true : r.assets), {
             [e]: t
           })
         })
@@ -254,30 +254,30 @@ function W() {
   function es(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      H(q(k({}, W), {
+      U(I(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => q(k({}, e), {
+        }, e => I(k({}, e), {
           messages: k({}, e.messages, r)
         })).exhaustive())
       }))
     }
   }
 
-  function eo(e, t) {
+  function ea(e, t) {
     let n = W.config.taskConfigV2.tasks,
       r = n[l.X.WATCH_VIDEO];
     if (null == r) return;
-    let s = q(k({}, r.messages), {
+    let s = I(k({}, r.messages), {
       [e]: t
     });
-    H(q(k({}, W), {
-      config: q(k({}, W.config), {
-        taskConfigV2: q(k({}, W.config.taskConfigV2), {
-          tasks: q(k({}, n), {
-            [l.X.WATCH_VIDEO]: q(k({}, r), {
+    U(I(k({}, W), {
+      config: I(k({}, W.config), {
+        taskConfigV2: I(k({}, W.config.taskConfigV2), {
+          tasks: I(k({}, n), {
+            [l.X.WATCH_VIDEO]: I(k({}, r), {
               messages: s
             })
           })
@@ -286,17 +286,17 @@ function W() {
     }))
   }
 
-  function ea(e, t, n) {
+  function eo(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, s;
-      H(q(k({}, W), {
+      U(I(k({}, W), {
         config: (r = W.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
           configVersion: 2
-        }, e => q(k({}, e), {
-          rewardsConfig: q(k({}, e.rewardsConfig), {
-            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? q(k({}, e), {
+        }, e => I(k({}, e), {
+          rewardsConfig: I(k({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? I(k({}, e), {
               messages: k({}, e.messages, s)
             }) : e)
           })
@@ -306,9 +306,9 @@ function W() {
   }
 
   function ei(e, t) {
-    H(q(k({}, W), {
-      config: q(k({}, W.config), {
-        colors: q(k({}, W.config.colors), {
+    U(I(k({}, W), {
+      config: I(k({}, W.config), {
+        colors: I(k({}, W.config.colors), {
           [e]: t
         })
       })
@@ -330,11 +330,11 @@ function W() {
       return 10 * Chunk70956.Z.Seconds.MINUTE
     }, [W.config.taskConfigV2.tasks]),
     ed = Chunk647438.useMemo(() => Chunk754700.X.WATCH_VIDEO in W.config.taskConfigV2.tasks, [W.config.taskConfigV2.tasks]);
-  a()(false !== W.preview && null != W.preview, "Preview config must have property preview: true");
+  o()(false !== W.preview && null != W.preview, "Preview config must have property preview: true");
   let eu = W.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk188764.container,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
       className: Chunk188764.heading,
       children: "Quest Preview Tool"
@@ -350,11 +350,11 @@ function W() {
               n = t.progressSeconds,
               r = t.targetSeconds;
             return n / r >= 1 ? O.a.COMPLETED_100 : n / r >= .75 ? O.a.COMPLETED_75 : n / r >= .5 ? O.a.COMPLETED_50 : n / r >= .25 ? O.a.COMPLETED_25 : O.a.ENROLLED
-          }(e)), H(e))
+          }(e)), U(e))
         },
         quest: J
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       className: Chunk188764.subheading,
       children: "Task Config"
@@ -364,14 +364,14 @@ function W() {
         taskDuration: ec,
         taskConfigV2: W.config.taskConfigV2,
         onSelect: function(e) {
-          H(q(k({}, W), {
-            config: q(k({}, W.config), {
+          U(I(k({}, W), {
+            config: I(k({}, W.config), {
               taskConfigV2: e
             })
           }))
         }
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       className: Chunk188764.subheading,
       children: "Messages"
@@ -396,21 +396,21 @@ function W() {
         children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
-          onMessageChange: eo,
+          onMessageChange: ea,
           initialValue: null == eu ? true : eu.messages.videoTitle
         }), (0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
-          onMessageChange: eo,
+          onMessageChange: ea,
           initialValue: null == eu ? true : eu.messages.videoEndCtaTitle
         }), (0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
-          onMessageChange: eo,
+          onMessageChange: ea,
           initialValue: null == eu ? true : eu.messages.videoEndCtaSubtitle
         })]
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       className: Chunk188764.subheading,
       children: "Assets"
@@ -450,7 +450,7 @@ function W() {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: et,
-        filters: [...I, "svg"],
+        filters: [...q, "svg"],
         initialValue: W.config.assets.logotype
       }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
@@ -482,11 +482,11 @@ function W() {
           assetKey: "questHomeVideo",
           onFileChange: er,
           filters: L,
-          initialValue: null == (o = W.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
+          initialValue: null == (a = W.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
         })]
       })]
     }), ee.map((e, t) => (0, r.jsxs)("div", {
-      children: [(0, r.jsxs)(p.X6q, {
+      children: [(0, r.jsxs)(p.Heading, {
         variant: "heading-md/semibold",
         className: A.subheading,
         children: ["Reward #", t + 1]
@@ -495,12 +495,12 @@ function W() {
         children: [(0, r.jsx)(v.Z, {
           title: "Name",
           assetKey: "name",
-          onMessageChange: (e, n) => ea(e, n, t),
+          onMessageChange: (e, n) => eo(e, n, t),
           initialValue: e.messages.name
         }), (0, r.jsx)(v.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
-          onMessageChange: (e, n) => ea(e, n, t),
+          onMessageChange: (e, n) => eo(e, n, t),
           initialValue: e.messages.nameWithArticle
         }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(j.Z, {
           title: "Asset",
@@ -508,12 +508,12 @@ function W() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 config: (r = W.config, (0, i.EQ)(r).with({
                   configVersion: 2
-                }, e => q(k({}, e), {
-                  rewardsConfig: q(k({}, e.rewardsConfig), {
-                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? q(k({}, e), {
+                }, e => I(k({}, e), {
+                  rewardsConfig: I(k({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? I(k({}, e), {
                       asset: t,
                       skuId: ""
                     }) : e)
@@ -527,17 +527,17 @@ function W() {
         }), (0, r.jsxs)(p.Kqy, {
           direction: "vertical",
           gap: 8,
-          children: [(0, r.jsx)(p.X6q, {
+          children: [(0, r.jsx)(p.Heading, {
             variant: "heading-sm/semibold",
             children: "Claim Modal"
-          }), (0, r.jsx)(p.zxk, {
+          }), (0, r.jsx)(p.Button, {
             variant: "primary",
             text: "Open Reward Modal",
             onClick: el
           })]
         })]
       })]
-    }, t)), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }, t)), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       className: Chunk188764.subheading,
       children: "Colors & Quest States"
@@ -566,19 +566,19 @@ function W() {
         onChange: function(e) {
           switch (z(e), e) {
             case O.a.UNENROLLED:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: null
               }));
               break;
             case O.a.ENROLLED:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case O.a.COMPLETED_25:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * ec
@@ -586,7 +586,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_50:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * ec
@@ -594,7 +594,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_75:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * ec
@@ -602,7 +602,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_100:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: Q({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -611,7 +611,7 @@ function W() {
               }));
               break;
             case O.a.CLAIMED:
-              H(q(k({}, W), {
+              U(I(k({}, W), {
                 userStatus: Q({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -623,7 +623,7 @@ function W() {
         },
         value: F
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
       className: Chunk188764.heading,
       children: "Component Previews"
@@ -631,7 +631,7 @@ function W() {
       className: Chunk188764.componentPreviews,
       children: [(0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Bar"
         }), (0, Chunk951288.jsxs)("div", {
@@ -656,7 +656,7 @@ function W() {
         })]
       }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Home Card"
         }), (0, Chunk951288.jsx)(Chunk78826.p, {
@@ -674,7 +674,7 @@ function W() {
         })]
       }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Channel Call Header"
         }), (null == (u = W.userStatus) ? true : Chunk458708.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -692,7 +692,7 @@ function W() {
               children: (0, Chunk951288.jsx)(Chunk134483.Z, {
                 channelId: "123",
                 previewQuest: W,
-                isParticipatingOverride: X
+                isParticipatingOverride: K
               })
             })
           })
@@ -701,17 +701,17 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: X,
+          checked: K,
           onChange: function(e) {
-            K(e)
+            G(e)
           }
         })
       }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Card Embed"
-        }), G ? (0, Chunk951288.jsx)(Chunk683650.o, {
+        }), X ? (0, Chunk951288.jsx)(Chunk683650.o, {
           questId: W.id
         }) : (0, Chunk951288.jsx)(Chunk37303.Z, {
           quest: W,
@@ -722,16 +722,16 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Invalid Quests Embed:",
-          checked: G,
+          checked: X,
           onChange: Y
         })
       }), ed && (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
         allowClicks: true,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Video Player"
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Open Video Player Modal",
           onClick: () => {
@@ -741,7 +741,7 @@ function W() {
               } = await Promise.all([require.e("73877"), require.e("32249"), require.e("58396")]).then(require.bind(require, 536687));
               return t => {
                 var n;
-                return (0, r.jsx)(e, q(k({}, t), {
+                return (0, r.jsx)(e, I(k({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
                   questId: null != (n = W.id) ? n : "fake-quest-id",
@@ -757,7 +757,7 @@ function W() {
     })]
   })
 }
-class U extends Chunk647438.Component {
+class H extends Chunk647438.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -772,10 +772,10 @@ class U extends Chunk647438.Component {
       className: Chunk188764.errorBoundary,
       children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
         className: Chunk188764.errorBoundaryIcon
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: "Something broke in the Quest preview tool :("
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "secondary",
         text: "Reset",
         onClick: this.handleResetState
@@ -800,4 +800,4 @@ class U extends Chunk647438.Component {
     })
   }
 }
-let H = U
+let U = H

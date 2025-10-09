@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk827498 = require("./827498.js"),
   Chunk160973 = require("./160973.js"),
   Chunk783097 = require("./783097.js"),
-  Chunk890280 = require("./890280.js"),
+  Chunk826405 = require("./826405.js"),
   Chunk176412 = require("./176412.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -27,9 +27,9 @@ function b(e) {
     application: n,
     sectionName: b,
     primaryEntryPointCommand: N
-  } = e, j = i.useId(), C = i.useCallback(() => {
+  } = e, j = l.useId(), C = l.useCallback(() => {
     d.yT(m.ti.ACTIVITY)
-  }, []), E = i.useCallback(() => {
+  }, []), E = l.useCallback(() => {
     p.Z.shouldShowModal() && C()
   }, [C]), {
     submitting: P,
@@ -39,14 +39,14 @@ function b(e) {
     context: t,
     launchingComponentId: j,
     onSubmissionComplete: C
-  }), [_, O] = i.useState(false), I = (0, o.Qv)({
+  }), [_, O] = l.useState(false), I = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), S = i.useMemo(() => (0, h.XZ)(N.displayName), [N.displayName]), {
+  }), S = l.useMemo(() => (0, h.XZ)(N.displayName), [N.displayName]), {
     onActivityItemSelected: T,
     buttonVariant: L,
     buttonText: R
-  } = (0, x.P7)({
+  } = (0, y.P7)({
     context: t,
     application: n,
     location: s.Vh.APP_LAUNCHER_APPLICATION_VIEW,
@@ -64,17 +64,17 @@ function b(e) {
     application: n,
     activityAction: I
   });
-  return (0, l.jsx)(r.u, {
+  return (0, i.jsx)(r.u, {
     shouldShow: null != w,
     __unsupportedReactNodeAsText: w,
-    children: (0, l.jsx)(a.zxk, {
+    children: (0, i.jsx)(a.Button, {
       type: "submit",
       size: "md",
       variant: L,
       disabled: Z,
       loading: _,
       onClick: () => {
-        O(true), T(), u.default.track(y.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        O(true), T(), u.default.track(x.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
           button_action: m._y.USE_APP_COMMAND
         })

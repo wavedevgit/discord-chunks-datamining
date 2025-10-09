@@ -18,7 +18,7 @@ let u = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk809863.previewSection
   }), (0, Chunk951288.jsxs)("div", {
     className: Chunk809863.previewSection,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       children: "Shop Overrides"
     }), (0, Chunk951288.jsx)(Chunk812381.a, {}), (0, Chunk951288.jsx)(Chunk511010.Z, {

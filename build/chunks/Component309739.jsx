@@ -65,7 +65,7 @@ function E() {
       className: Chunk85240.myServersContainer,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk85240.myServersHeaderContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           className: Chunk85240.myServersTitle,
           variant: "heading-md/medium",
           color: "header-primary",

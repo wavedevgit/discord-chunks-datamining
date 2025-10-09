@@ -42,7 +42,7 @@ function _(e) {
       focusProps: {
         ringTarget: h
       },
-      children: (0, r.jsx)(o.X6q, {
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
         children: E
       })

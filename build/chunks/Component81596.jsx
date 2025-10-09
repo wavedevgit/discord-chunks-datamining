@@ -1,7 +1,7 @@
 /** Chunk was on 26545 **/
 /** chunk id: 81596, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,24 +20,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk569162 = require("./569162.js");
 
-function h(t) {
+function O(t) {
   let {
     user: n,
     entry: i,
-    transitionState: h,
+    transitionState: O,
     onAction: p,
     onClose: I,
     onOpenGameSettings: S
   } = t, [f, x] = (0, l.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
-  return r.useEffect(() => d.Bt, []), (0, e.jsxs)(s.Modal, {
+  return r.useEffect(() => c.Bt, []), (0, e.jsxs)(s.Modal, {
     title: (0, T.y)(i),
-    subtitle: C.intl.format(C.t.KV72oa, {
+    subtitle: h.intl.format(h.t.KV72oa, {
       settingsHook: (t, n) => {
         let r = (0, N.C)({
           entry: i,
           onOpenGameSettings: S
         });
-        return (0, e.jsx)(a.eee, {
+        return (0, e.jsx)(a.Anchor, {
           onClick: () => {
             null == p || p({
               action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
@@ -51,35 +51,35 @@ function h(t) {
     }),
     size: "sm",
     actions: [{
-      text: C.intl.string(C.t["ETE/oK"]),
+      text: h.intl.string(h.t["ETE/oK"]),
       onClick: I,
       variant: "secondary",
       size: "sm"
     }, {
-      text: null != x ? C.intl.string(C.t["5911LS"]) : C.intl.string(C.t.VkKicX),
+      text: null != x ? h.intl.string(h.t["5911LS"]) : h.intl.string(h.t.VkKicX),
       onClick: () => {
         null == p || p({
           action: "PRESS_CLEAR_HISTORY_BUTTON"
-        }), (0, c.CV)(i, n.id, I)
+        }), (0, d.CV)(i, n.id, I)
       },
       disabled: f,
       variant: "critical-primary",
       size: "sm"
     }],
     onClose: I,
-    transitionState: h,
+    transitionState: O,
     children: [null != x ? (0, e.jsxs)("div", {
-      className: O.error,
+      className: C.error,
       children: [(0, e.jsx)(a.k$p, {
         color: a.TVs.colors.STATUS_DANGER
       }), (0, e.jsx)(a.Text, {
         variant: "text-sm/medium",
-        children: C.intl.string(C.t.FMbL3t)
+        children: h.intl.string(h.t.FMbL3t)
       })]
     }) : null, (0, e.jsx)(_.Z, {
       user: n,
       entry: i,
-      className: O.card,
+      className: C.card,
       hideContextMenu: true
     })]
   })

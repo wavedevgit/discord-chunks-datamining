@@ -180,11 +180,11 @@ class z extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t.FsmBy8)
       }) : null, (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_CHANGE_PASSWORD,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["FRep5+"]),
-          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, W(H({}, e), {
+          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(j.default, W(H({}, e), {
             onSuccess: e.onClose
           })))
         })
@@ -315,7 +315,7 @@ class z extends Chunk647438.PureComponent {
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
           C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-            target_tab_name: e === j.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
+            target_tab_name: e === k.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
         defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,

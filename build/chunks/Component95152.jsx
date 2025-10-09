@@ -201,7 +201,7 @@ class R extends Chunk647438.Component {
                   if (e.which === E.yXg.ENTER) return this.handleSubmit()
                 }
               }) : null]
-            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
               checked: Chunk120356,
               onChange: e => this.setState({
                 hasSpoiler: e

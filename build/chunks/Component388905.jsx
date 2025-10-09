@@ -10,12 +10,12 @@ require.d(exports, {
   II: () => P,
   MC: () => R,
   Vj: () => N,
-  ZP: () => j,
+  ZP: () => k,
   gO: () => w,
   i_: () => D,
   jQ: () => M,
   qE: () => C,
-  v6: () => k,
+  v6: () => j,
   zx: () => A
 }), require("./953529.js"), require("./472816.js"), require("./794429.js");
 var Chunk951288 = require("./951288.js");
@@ -83,7 +83,7 @@ let I = e => {
       children: i,
       variant: o = "heading-xl/semibold"
     } = e;
-    return (0, r.jsx)(s.X6q, {
+    return (0, r.jsx)(s.Heading, {
       variant: o,
       color: "header-primary",
       className: a()(g.title, t),
@@ -315,7 +315,7 @@ let P = e => {
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       className: t
     } = e;
@@ -334,7 +334,7 @@ let P = e => {
       })]
     })
   },
-  j = e => {
+  k = e => {
     let {
       className: t,
       contentClassName: n,

@@ -96,7 +96,7 @@ function D(e) {
     [l]: [t.id]
   }), [l, t.id]);
 
-  function b(e) {
+  function x(e) {
     if (e.stopPropagation(), !g) {
       if (e.shiftKey) return void R(t, l, o);
       let n = _.Z.getRole(o);
@@ -128,7 +128,7 @@ function D(e) {
   }
 
   function j(e) {
-    let i = x.default.getUser(t.id);
+    let i = b.default.getUser(t.id);
     null != i && (0, u.jW)(e, async () => {
       let {
         default: e
@@ -168,7 +168,7 @@ function D(e) {
               className: a()(T.removeButton, {
                 [T.removeButtonDisabled]: g
               }),
-              onClick: b,
+              onClick: x,
               children: (0, r.jsx)(d.k$p, {
                 size: "xs",
                 color: "currentColor"
@@ -199,7 +199,7 @@ function A(e) {
         color: "text-muted",
         children: S.intl.format(S.t.P9pZOT, {
           addMembersHook: function(e, i) {
-            return n ? null : (0, r.jsx)(d.eee, {
+            return n ? null : (0, r.jsx)(d.Anchor, {
               onClick: t,
               children: e
             }, i)
@@ -225,7 +225,7 @@ function L(e) {
   } = (0, f.ZP)(p.Z.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
   (0, C.rY)(t, m);
   let h = i.useMemo(() => c.filter(e => (0, C.eg)(m, e)), [c, m]),
-    x = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
+    b = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(f.Gt, {
     value: g,
     children: (0, r.jsx)(d._2F, {
@@ -245,11 +245,11 @@ function L(e) {
         let {
           row: i
         } = e;
-        if (0 === x.length) return (0, r.jsx)(A, {
+        if (0 === b.length) return (0, r.jsx)(A, {
           handleAddClick: u,
           locked: s
         }, "empty");
-        let l = x[i];
+        let l = b[i];
         return (0, r.jsx)(D, {
           member: l,
           guildId: t,
@@ -277,7 +277,7 @@ function k(e) {
       onClear: () => n(""),
       placeholder: S.intl.string(S.t.pYHobG),
       "aria-label": S.intl.string(S.t.pYHobG)
-    }), (0, r.jsx)(d.zxk, {
+    }), (0, r.jsx)(d.Button, {
       onClick: l,
       variant: "primary",
       size: "sm",
@@ -299,11 +299,11 @@ function G(e) {
   } = (0, O.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, y.V)(), x = l.managed || s, v = (0, C.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
+  } = (0, y.V)(), b = l.managed || s, v = (0, C.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
   }) > v.length, N = () => {
-    b.default.track(I.rMx.OPEN_MODAL, {
+    x.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"
@@ -336,7 +336,7 @@ function G(e) {
           }), (0, r.jsx)(k, {
             query: u,
             setQuery: g,
-            locked: x,
+            locked: b,
             handleAddClick: N
           }), _ ? (0, r.jsx)(d.Wn, {
             className: T.searchWarning,
@@ -350,7 +350,7 @@ function G(e) {
       query: u,
       guildId: t.id,
       roleId: l.id,
-      locked: x,
+      locked: b,
       onScroll: h,
       roleMembers: v,
       handleAddClick: N

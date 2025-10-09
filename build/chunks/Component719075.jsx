@@ -24,43 +24,43 @@ var Chunk951288 = require("./951288.js"),
 let E = e => {
     let {
       product: t
-    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, s.e7)([a.default], () => a.default.getCurrentUser()), v = o.ZP.canUseCollectibles(E), {
+    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, i.e7)([a.default], () => a.default.getCurrentUser()), v = o.ZP.canUseCollectibles(E), {
       isDisabled: S
     } = (0, d.G)(t.skuId), {
-      isPurchased: x,
-      isPartiallyOwnedBundle: O
-    } = (0, g.L)(t), y = (0, u.G1)(t), j = (0, u.rN)(t), k = l.useMemo(() => (0, u.BH)(t, v), [t, v]), T = (0, C.Iw)(t), {
-      displayPrices: L,
+      isPurchased: O,
+      isPartiallyOwnedBundle: x
+    } = (0, g.L)(t), y = (0, u.G1)(t), j = (0, u.rN)(t), T = l.useMemo(() => (0, u.BH)(t, v), [t, v]), L = (0, C.Iw)(t), {
+      displayPrices: k,
       hasSufficientOrbs: I
     } = (0, h.Ip)({
       product: t,
       isPremiumUser: v,
       tab: p,
-      hasDiscountOffer: null != T
-    }), P = y && !v;
-    return S ? (0, r.jsx)(i.Text, {
+      hasDiscountOffer: null != L
+    }), B = y && !v;
+    return S ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
       children: m.intl.string(m.t.wu4gyc)
-    }) : O ? (0, r.jsx)(i.Text, {
+    }) : x ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t.BEjTio)
-    }) : x && !P ? (0, r.jsx)(i.Text, {
+    }) : O && !B ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t["6cfuDg"])
-    }) : j ? (0, r.jsx)(i.Text, {
+    }) : j ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t.nBtvYG)
-    }) : y ? (0, r.jsx)(i.Text, {
+    }) : y ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t.rt69oq)
-    }) : 0 === L.length ? null : (0, r.jsx)(f.F, {
-      price: L[0],
-      discount: k,
+    }) : 0 === k.length ? null : (0, r.jsx)(f.F, {
+      price: k[0],
+      discount: T,
       nitroIconType: v ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: T,
-      className: L[0].currency !== _.pK.DISCORD_ORB || I ? true : b.insufficientOrbs
+      discountOfferAmount: L,
+      className: k[0].currency !== _.pK.DISCORD_ORB || I ? true : b.insufficientOrbs
     })
   },
   v = e => {

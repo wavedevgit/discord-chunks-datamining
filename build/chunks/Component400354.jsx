@@ -35,12 +35,12 @@ let l = {
     let s = a.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
-      i = a.useCallback(() => {
+      o = a.useCallback(() => {
         if (null == t.current) return;
         let r = "deafen" === e ? "hover_undeafened" : "hover_deafened";
         t.current.play(r)
       }, [e]),
-      o = a.useCallback(() => {
+      i = a.useCallback(() => {
         if (null == t.current) return;
         let r = "deafen" === e ? "hover_undeafened" : "hover_deafened";
         t.current.stopIfPlaying(r)
@@ -83,8 +83,8 @@ let l = {
     return {
       events: {
         onClick: s,
-        onMouseEnter: i,
-        onMouseLeave: o
+        onMouseEnter: o,
+        onMouseLeave: i
       },
       play: s,
       getDuration: a.useCallback(() => {

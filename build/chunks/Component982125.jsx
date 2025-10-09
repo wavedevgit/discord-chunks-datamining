@@ -53,7 +53,7 @@ function p(e) {
       isDisabled: p,
       isReadOnly: h,
       "data-mana-component": "checkbox",
-      className: o()(_.checkboxOption, "string" == typeof S && _[S], "indicator" !== O && _.padding),
+      className: o()(_.checkboxOption, "string" == typeof S && _[S], "indicator" !== O && _.spacing),
       value: String(b),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {

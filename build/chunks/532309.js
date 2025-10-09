@@ -15,13 +15,13 @@ function s(e) {
     commandId: n,
     searchResultsPosition: s,
     query: c
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.entrypoint());
+  } = e, u = (0, l.e7)([a.Z], () => a.Z.entrypoint());
   return {
     trackSearchResultsItemImpressionRef: (0, o.Z)({
       onVisible: () => {
         (0, r.h)({
-          type: l.ImpressionTypes.VIEW,
-          name: l.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
+          type: i.ImpressionTypes.VIEW,
+          name: i.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
           properties: {
             application_id: t,
             command_id: n,

@@ -22,10 +22,10 @@ function h(e) {
   let {
     requireTerms: t,
     rules: n
-  } = e, l = (0, o.e7)([u.Z], () => u.Z.getProps().guild), h = null == l ? true : l.id, x = i.useCallback(e => {
+  } = e, l = (0, o.e7)([u.Z], () => u.Z.getProps().guild), h = null == l ? true : l.id, b = i.useCallback(e => {
     if (null == h || null == n) return null;
     g.Z.setPendingInviteRules(h, e, [...n])
-  }, [h, n]), b = i.useCallback(e => {
+  }, [h, n]), x = i.useCallback(e => {
     if (null == h) return null;
     g.Z.setPendingInviteRules(h, t, e)
   }, [h, t]);
@@ -33,7 +33,7 @@ function h(e) {
     children: [(0, r.jsx)(c.rsf, {
       label: p.intl.string(p.t.d21uOj),
       description: p.intl.string(p.t.SzpUBA),
-      onChange: x,
+      onChange: b,
       checked: t
     }), t && (0, r.jsx)(m.c, {
       guildId: l.id
@@ -51,7 +51,7 @@ function h(e) {
         }), (0, r.jsx)(d.k, {
           guild: l,
           rules: n,
-          setRules: b,
+          setRules: x,
           disabled: !t
         })]
       })

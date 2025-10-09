@@ -170,7 +170,7 @@ let k = e => {
         })
       }), (0, r.jsxs)("div", {
         className: w.shopMarketingTooltipText,
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: u ? "heading-sm/medium" : "heading-sm/bold",
           children: o
         }), !u && (0, r.jsx)(c.Text, {

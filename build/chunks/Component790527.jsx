@@ -71,8 +71,8 @@ function w(e) {
       analyticsSource: L,
       analyticsLocation: x,
       body: M,
-      context: k,
-      glowUp: j,
+      context: j,
+      glowUp: k,
       modalClassName: U,
       modalContentClassName: G,
       artContainerClassName: B,
@@ -212,16 +212,16 @@ function w(e) {
         type: w,
         subscriptionTier: null != (a = null == em || null == (n = em.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
         headingText: R,
-        context: k,
+        context: j,
         analyticsLocationObject: x,
         discountOffer: eg,
         trialOffer: em,
-        children: j
+        children: k
       }) : (0, r.jsxs)("div", {
         className: A.contentContainer,
         children: [eu, (0, r.jsxs)("div", {
           className: A.bodyContent,
-          children: [(0, r.jsxs)(c.X6q, {
+          children: [(0, r.jsxs)(c.Heading, {
             className: o()(A.header, {
               [A.enhancedHeader]: ea
             }, F),
@@ -258,7 +258,7 @@ function w(e) {
           look: l.zx.Looks.LINK,
           children: q
         }) : null, eS()]
-      }), !er && !ea && (0, r.jsx)(c.zxk, {
+      }), !er && !ea && (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
         text: null != ei ? ei : S.intl.string(S.t["13/7kZ"]),

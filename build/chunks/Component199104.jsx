@@ -33,7 +33,7 @@ function _() {
         "aria-labelledby": require,
         children: (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
           className: Chunk708567.scroller,
-          children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             className: Chunk708567.header,
             id: require,

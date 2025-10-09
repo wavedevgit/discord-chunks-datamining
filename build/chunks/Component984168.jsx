@@ -16,27 +16,27 @@ function u(e) {
   let {
     sortOrder: t,
     onSortOptionClick: n,
-    closePopout: i
+    closePopout: l
   } = e, u = e => {
-    n(e), i()
+    n(e), l()
   };
-  return (0, l.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: r()(o.Jh, c.container),
-    children: (0, l.jsx)(a.v2r, {
+    children: (0, i.jsx)(a.v2r, {
       navId: "command-list-sort",
       "aria-label": s.intl.string(s.t.Ugo9ub),
       hideScroller: true,
-      onClose: i,
-      onSelect: i,
-      children: (0, l.jsxs)(a.kSQ, {
+      onClose: l,
+      onSelect: l,
+      children: (0, i.jsxs)(a.kSQ, {
         label: s.intl.string(s.t.yeYaHR),
-        children: [(0, l.jsx)(a.k5B, {
+        children: [(0, i.jsx)(a.k5B, {
           id: "sort-by-popular",
           group: "sort-by",
           label: s.intl.string(s.t.SzxiqK),
           action: () => u(o.bS.POPULAR),
           checked: t === o.bS.POPULAR
-        }), (0, l.jsx)(a.k5B, {
+        }), (0, i.jsx)(a.k5B, {
           id: "sort-by-alphabetical",
           group: "sort-by",
           label: s.intl.string(s.t.m8xstr),

@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
 /** chunk id: 706734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -14,11 +14,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk583073 = require("./583073.js"),
   Chunk780187 = require("./780187.js");
 
-function u(e) {
+function x(e) {
   let {
     onNext: t,
     onClose: n,
-    reason: u,
+    reason: x,
     onReasonChange: _,
     freeTextResponse: E,
     setFreeTextResponse: N
@@ -30,18 +30,18 @@ function u(e) {
     onSubmit: t,
     children: [(0, a.jsxs)(s.xBx, {
       separator: false,
-      className: x.header,
-      children: [(0, a.jsx)(s.X6q, {
+      className: m.header,
+      children: [(0, a.jsx)(s.Heading, {
         variant: "heading-xl/extrabold",
         children: d.intl.string(d.t["41NIIi"])
       }), (0, a.jsx)(s.olH, {
         onClick: n,
-        className: x.modalCloseButton
+        className: m.modalCloseButton
       })]
     }), (0, a.jsxs)(s.hzk, {
-      className: m.content,
+      className: u.content,
       children: [(0, a.jsx)(s.FXm, {
-        value: u,
+        value: x,
         options: p,
         onChange: e => {
           l.default.track(o.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_SELECTED, {
@@ -50,22 +50,22 @@ function u(e) {
             location: "change_email_collect_reasons_slide"
           })
         }
-      }), h && u === c.pw.SOMETHING_ELSE && (0, a.jsx)(s.Kx8, {
+      }), h && x === c.pw.SOMETHING_ELSE && (0, a.jsx)(s.Kx8, {
         value: E,
         maxLength: c.mF,
         onChange: N,
         placeholder: d.intl.string(d.t.Q8Rk7O)
       })]
     }), (0, a.jsx)(s.mzw, {
-      className: x.modalFooter,
-      children: (0, a.jsxs)(s.hE2, {
+      className: m.modalFooter,
+      children: (0, a.jsxs)(s.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, a.jsx)(s.zxk, {
+        children: [(0, a.jsx)(s.Button, {
           variant: "primary",
           text: d.intl.string(d.t["3PatS0"]),
-          disabled: null == u,
+          disabled: null == x,
           onClick: t
-        }), (0, a.jsx)(s.zxk, {
+        }), (0, a.jsx)(s.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["ETE/oK"]),
           onClick: n

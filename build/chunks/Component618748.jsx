@@ -137,7 +137,7 @@ function U(e) {
       setCurrentTab: v
     } = (0, P.dw)(),
     _ = (0, j.f)(),
-    N = (0, i.e7)([x.default], () => x.default.getCurrentUser()),
+    N = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
     S = (0, O.Z)(n.id),
     D = null != n && (0, f.eM)(n, N);
   if (!_) return (0, r.jsx)(a.$jN, {});
@@ -163,7 +163,7 @@ function U(e) {
       });
       break;
     default:
-      (0, b.vE)(p)
+      (0, x.vE)(p)
   }
   return (0, r.jsxs)("div", {
     className: L.container,
@@ -171,7 +171,7 @@ function U(e) {
       className: L.mainContent,
       children: [(0, r.jsxs)(a.Kqy, {
         gap: 8,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/semibold",
           children: A.intl.string(A.t["KzCF//"])
         }), (0, r.jsx)(a.Text, {
@@ -215,7 +215,7 @@ function U(e) {
           className: L.previewButton,
           children: (0, r.jsx)(l.u, {
             text: A.intl.string(A.t["1wCH4O"]),
-            children: (0, r.jsx)(a.zxk, {
+            children: (0, r.jsx)(a.Button, {
               disabled: S,
               onClick: () => {
                 let e = h.Z.getEveryoneRole(n);

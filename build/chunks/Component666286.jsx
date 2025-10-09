@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
 function d() {
   return (0, Chunk951288.jsxs)("header", {
     className: Chunk979493.header,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       className: Chunk979493.title,
       children: Chunk388032.intl.string(Chunk388032.t.w5uwoK)

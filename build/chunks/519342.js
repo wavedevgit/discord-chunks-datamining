@@ -16,10 +16,10 @@ var t = "\ud800-\udfff",
   p = "(?:" + g + "|" + c + ")",
   f = "(?:" + a + "(?:d|ll|m|re|s|t|ve))?",
   h = "(?:" + a + "(?:D|LL|M|RE|S|T|VE))?",
-  x = "(?:[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]|\ud83c[\udffb-\udfff])?",
-  b = "[\\ufe0e\\ufe0f]?",
-  j = "(?:\\u200d(?:" + ["[^" + t + "]", d, u].join("|") + ")" + b + x + ")*",
-  v = "(?:" + ["[" + n + "]", d, u].join("|") + ")" + (b + x + j),
+  b = "(?:[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]|\ud83c[\udffb-\udfff])?",
+  x = "[\\ufe0e\\ufe0f]?",
+  j = "(?:\\u200d(?:" + ["[^" + t + "]", d, u].join("|") + ")" + x + b + ")*",
+  v = "(?:" + ["[" + n + "]", d, u].join("|") + ")" + (x + b + j),
   _ = RegExp([g + "?" + o + "+" + f + "(?=" + [s, g, "$"].join("|") + ")", p + "+" + h + "(?=" + [s, g + m, "$"].join("|") + ")", g + "?" + m + "+" + f, g + "+" + h, "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])|\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])|\\d+", v].join("|"), "g");
 module.exports = function(e) {
   return e.match(_) || []

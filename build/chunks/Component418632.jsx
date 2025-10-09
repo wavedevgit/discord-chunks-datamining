@@ -95,7 +95,7 @@ function b(e) {
   let [s, c] = i.useState(false), d = i.useCallback(() => {
     c(true), E(a).then(() => c(false))
   }, [a]);
-  return (0, r.jsx)(u.zxk, {
+  return (0, r.jsx)(u.Button, {
     size: t,
     variant: n,
     onClick: d,

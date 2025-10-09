@@ -90,7 +90,7 @@ let T = [],
         src: i
       }), (0, r.jsxs)("div", {
         className: I.featureCardTextGroup,
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/bold",
           className: I.featureCardTextHeader,
           children: t
@@ -122,14 +122,14 @@ function P(e) {
   } = e, {
     onClose: U,
     transitionState: G
-  } = n, B = (0, f.Dt)(), H = R.length % 2 == 0, V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, q] = i.useState(0), [Y, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(Y), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
+  } = n, B = (0, f.Dt)(), H = R.length % 2 == 0, V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, Y] = i.useState(0), [q, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(q), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
 
   function es() {
     let e = Date.now(),
       t = e - ee.current,
       n = et.current,
       r = en.current;
-    return er.current && (q(n += t), ei.current || K(r += t)), z(e), [n, r]
+    return er.current && (Y(n += t), ei.current || K(r += t)), z(e), [n, r]
   }
   return i.useEffect(() => {
     let e = async () => {
@@ -159,8 +159,8 @@ function P(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [el]), i.useEffect(() => {
-    ee.current = F, et.current = W, en.current = Y, er.current = Q, ei.current = J
-  }, [F, W, Y, Q, J]), i.useEffect(() => () => {
+    ee.current = F, et.current = W, en.current = q, er.current = Q, ei.current = J
+  }, [F, W, q, Q, J]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = es();
       _.default.track(E.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -201,7 +201,7 @@ function P(e) {
       }), null == x ? true : x(), (0, r.jsxs)(c.hzk, {
         "data-migration-pending": true,
         className: I.content,
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "display-md",
           className: a()(I.headerText, Z),
           children: A
@@ -265,7 +265,7 @@ function P(e) {
           color: "text-secondary",
           className: I.subHeader,
           children: [w, null == L ? true : L()]
-        }), null != M && "" !== M && (0, r.jsx)(c.X6q, {
+        }), null != M && "" !== M && (0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           className: I.bodyText,
           children: M

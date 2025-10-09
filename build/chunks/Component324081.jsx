@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -156,7 +156,7 @@ function T(e) {
   });
   return (0, r.jsxs)("div", {
     className: S.channelNameSection,
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-md/semibold",
       className: S.channelNameHeader,
       children: (0, r.jsxs)(s.P3F, {

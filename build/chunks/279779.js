@@ -39,7 +39,7 @@ function O(e) {
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username,
     nicknames: {}
   };
-  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof l.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = _.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, d.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = d.Z.getNickname(e.id)), e instanceof l.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = _.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
+  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof l.default ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = _.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, d.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = d.Z.getNickname(e.id)), e instanceof l.default ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = _.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
 }
 
 function v(e, t, n) {

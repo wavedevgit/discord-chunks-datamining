@@ -72,7 +72,7 @@ function y(e) {
             className: g.nitroWheel,
             width: b,
             height: b
-          }), (0, r.jsx)(s.X6q, {
+          }), (0, r.jsx)(s.Heading, {
             className: g.headerText,
             variant: "heading-xl/bold",
             children: m.intl.string(m.t.Wfl5zs)

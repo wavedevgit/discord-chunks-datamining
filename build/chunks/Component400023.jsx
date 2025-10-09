@@ -1,7 +1,7 @@
 /** Chunk was on 50118 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => K
+  Z: () => q
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -92,8 +92,8 @@ function W(e, t) {
   }
   return r
 }
-let q = (0, Chunk137317.animated)(Chunk481060.eTT),
-  Y = Chunk647438.memo(function(e) {
+let Y = (0, Chunk137317.animated)(Chunk481060.eTT),
+  K = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -115,14 +115,14 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [L, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = r.useMemo(() => y ? (0, k.aJ)({
+    } = e, [D, K] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), q = r.useMemo(() => y ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
       attachments: 8,
       fontSize: P,
       groupSpacing: o
-    }) : (0, k.aJ)({
+    }) : (0, L.aJ)({
       compact: false,
       messageGroups: 26,
       groupRange: 4,
@@ -135,12 +135,12 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       compact: y,
       hasUnreads: j,
       focusId: S,
-      placeholderHeight: K.totalHeight,
+      placeholderHeight: q.totalHeight,
       canLoadMore: null == T,
-      handleScrollToBottom: r.useCallback(() => Y(true), [Y]),
-      handleScrollFromBottom: r.useCallback(() => Y(false), [Y]),
+      handleScrollToBottom: r.useCallback(() => K(true), [K]),
+      handleScrollFromBottom: r.useCallback(() => K(false), [K]),
       additionalMessagePadding: 48
-    }), J = (0, D.Z)({
+    }), J = (0, k.Z)({
       scrollerRef: X.ref,
       isEditing: null != S,
       keyboardModeEnabled: I,
@@ -161,7 +161,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
-      specs: K,
+      specs: q,
       filterAfterTimestamp: null != T ? T : Q,
       showingQuarantineBanner: N,
       hideSummaries: A,
@@ -218,13 +218,13 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
         let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = r.useMemo(() => R ? L ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [R, L]),
-      ed = r.useMemo(() => R ? L ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [R, L]);
+      eu = r.useMemo(() => R ? D ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [R, D]),
+      ed = r.useMemo(() => R ? D ? F.typingGradientAtBottom : F.typingGradientNotAtBottom : F.gradientDefault, [R, D]);
     return (0, i.jsxs)(s.bG, {
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
         className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == ei && ee, (0, i.jsxs)(q, z(G({
+        children: [null == ei && ee, (0, i.jsxs)(Y, z(G({
           ref: es,
           customTheme: true,
           className: a()(p, F.scroller, ec ? ed : true),
@@ -263,7 +263,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  K = Chunk647438.memo(function(e) {
+  q = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -295,8 +295,8 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       messageGroupSpacing: O,
       fontSize: E,
       messageDisplayCompact: w,
-      renderSpoilers: k,
-      keyboardModeEnabled: D
+      renderSpoilers: L,
+      keyboardModeEnabled: k
     } = function() {
       let e = x.jU.useSetting(),
         t = x.cC.useSetting(),
@@ -379,9 +379,9 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
       }
     }(t);
     return (0, i.jsx)(b.aQ.Provider, {
-      value: (0, M.Z)(k, d),
-      children: (0, i.jsx)(L.v, {
-        children: (0, i.jsx)(Y, z(G({}, u), {
+      value: (0, M.Z)(L, d),
+      children: (0, i.jsx)(D.v, {
+        children: (0, i.jsx)(K, z(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,
@@ -395,7 +395,7 @@ let q = (0, Chunk137317.animated)(Chunk481060.eTT),
           canChat: _,
           editingMessageId: F,
           fontSize: E,
-          keyboardModeEnabled: D,
+          keyboardModeEnabled: k,
           showingQuarantineBanner: n,
           hideSummaries: l,
           typingGradient: s

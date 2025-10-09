@@ -5,7 +5,7 @@ require.d(exports, {
   BT: () => W,
   Hn: () => A,
   Hu: () => H,
-  I0: () => j,
+  I0: () => k,
   Og: () => G,
   TP: () => N,
   Uu: () => K,
@@ -97,7 +97,7 @@ function M(e, t, n, r) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     userId: t,
     member: n,
@@ -119,7 +119,7 @@ function k(e) {
   return f = a.e$(f, I.Plq.ADMINISTRATOR) ? C : M(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.hX(f, c)), g.ZP.isCurrentUserGuest(r.id) && (f = a.hX(f, P)), x(f, r, t, s)
 }
 
-function j(e) {
+function k(e) {
   let t, {
       forceRoles: n,
       context: r,
@@ -134,7 +134,7 @@ function j(e) {
     if (r.isScheduledForDeletion()) return A;
     if (f.Ec.has(r.type)) {
       let e = m.Z.getChannel(r.parent_id);
-      return null == e ? A : G(r, j({
+      return null == e ? A : G(r, k({
         forceRoles: n,
         context: e,
         overwrites: i,
@@ -162,7 +162,7 @@ function j(e) {
     joinedAt: new Date().toISOString(),
     communicationDisabledUntil: null
   };
-  return k({
+  return j({
     userId: I.lds,
     member: u,
     guild: t,
@@ -209,7 +209,7 @@ function U(e) {
   if (null == i) return A;
   if (!(h === (null == (t = y.default.getCurrentUser()) ? true : t.id) && c.Z.isViewingRoles(i.id)) && (0, _.eM)(i, h)) return x(C, i, h, u);
   let O = g.ZP.getMember(i.id, h);
-  return k({
+  return j({
     userId: h,
     member: O,
     guild: i,

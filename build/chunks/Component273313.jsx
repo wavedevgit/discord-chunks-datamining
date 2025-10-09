@@ -18,7 +18,7 @@ function o(e) {
     className: n,
     children: (0, r.jsxs)(i.Kqy, {
       gap: 16,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: s

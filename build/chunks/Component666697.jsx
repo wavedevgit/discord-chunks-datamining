@@ -49,7 +49,7 @@ let O = function(e) {
   }, [t]), a.useEffect(() => () => N(true), [N]);
   let R = null == A ? true : A.storefront_available,
     [Z, w] = a.useState(null != E ? E : y.GlobalDiscoveryAppsSections.ABOUT),
-    k = a.useCallback(e => {
+    D = a.useCallback(e => {
       var t;
       null == (t = T.current) || t.scrollTo({
         to: 0
@@ -58,7 +58,7 @@ let O = function(e) {
   a.useEffect(() => {
     (null == A ? true : A.storefront_available) && null != t && (0, l.Z)(t)
   }, [null == A ? true : A.storefront_available, t]);
-  let D = (0, _.Uc)(),
+  let k = (0, _.Uc)(),
     M = (0, i.e7)([p.Z], () => p.Z.getFetchState({
       applicationId: null == A ? true : A.id
     })),
@@ -66,18 +66,18 @@ let O = function(e) {
       applicationId: null == A ? true : A.id
     })),
     B = a.useMemo(() => null == G ? true : G.applications.slice(0, 3), [G]),
-    z = {
+    U = {
       displayedSimilarApplications: B,
-      previousView: D
+      previousView: k
     },
-    U = a.useRef(z);
+    z = a.useRef(U);
   a.useEffect(() => {
-    U.current = z
+    z.current = U
   }), a.useEffect(() => {
     let {
       displayedSimilarApplications: e,
       previousView: t
-    } = U.current;
+    } = z.current;
     (null == A ? true : A.id) != null && M !== p.M.FETCHING && (0, m.zZ)(I.rMx.APP_DIRECTORY_PAGE_VIEWED, {
       current_page: _.m_.APPLICATION,
       previous_page: null == t ? true : t.type,
@@ -93,7 +93,7 @@ let O = function(e) {
       id: y.GlobalDiscoveryAppsSections.STORE,
       label: S.intl.string(S.t.jgEXGB)
     }], []),
-    V = a.useMemo(() => {
+    H = a.useMemo(() => {
       if (null == A) return null;
       switch (Z) {
         case y.GlobalDiscoveryAppsSections.ABOUT:
@@ -106,7 +106,7 @@ let O = function(e) {
           })
       }
     }, [Z, A]),
-    H = a.useCallback(e => {
+    V = a.useCallback(e => {
       (0, m.zZ)(I.rMx.APP_DIRECTORY_PROFILE_TAB_CLICKED, {
         application_id: t,
         tab_name: e
@@ -140,14 +140,14 @@ let O = function(e) {
               className: P.contentTabs,
               children: (0, r.jsx)(o.Z, {
                 tabs: F,
-                onTabSelect: H,
+                onTabSelect: V,
                 selectedTab: Z
               })
-            }), V, (0, r.jsx)(C.Z, {
+            }), H, (0, r.jsx)(C.Z, {
               applicationId: t,
               fetchState: M,
               similarApplications: B,
-              onSelectApplication: k,
+              onSelectApplication: D,
               similarLoadId: null == G ? true : G.loadId
             })]
           }), Y && (0, r.jsx)(v.Z, {

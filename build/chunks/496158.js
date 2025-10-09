@@ -7,11 +7,11 @@ var Chunk647438 = require("./647438.js"),
   Chunk430824 = require("./430824.js");
 
 function r(e) {
-  return l.useMemo(() => "contextless" === e.type ? {
+  return i.useMemo(() => "contextless" === e.type ? {
     channel: true,
     guild: true
   } : {
     channel: e.channel,
-    guild: i.Z.getGuild(e.channel.guild_id)
+    guild: l.Z.getGuild(e.channel.guild_id)
   }, [e])
 }

@@ -88,12 +88,12 @@ function N(e) {
     if (t === A.id) returntrue;
     let n = h.Z.getGameByApplication(A);
     return null != n && t === n.id
-  })), k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), j = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(T.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
+  })), j = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), k = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(T.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
     children: (0, o._0)(T, N, t)
   }), {
     newestAnalyticsLocation: B
   } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), Z = I.intl.string(v.default["5+172d"]), F = false;
-  return U ? (Z = I.intl.string(v.default.u4QmWl), F = true) : null != k ? (Z = I.intl.string(v.default.P0wwmJ), F = true) : j !== N.id ? (Z = I.intl.string(v.default.qRXatr), F = true) : null == M && (Z = I.intl.string(v.default["43zohI"]), F = true), (0, r.jsx)(c.W, {
+  return U ? (Z = I.intl.string(v.default.u4QmWl), F = true) : null != j ? (Z = I.intl.string(v.default.P0wwmJ), F = true) : k !== N.id ? (Z = I.intl.string(v.default.qRXatr), F = true) : null == M && (Z = I.intl.string(v.default["43zohI"]), F = true), (0, r.jsx)(c.W, {
     header: I.intl.string(v.default.nAyuPj),
     title: A.name,
     staticBannerSrc: w,
@@ -109,7 +109,7 @@ function N(e) {
         null != M && ((0, E.isWindows)() ? (0, _.Z)(M.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("38697"), n.e("46746"), n.e("53448")]).then(n.bind(n, 60594));
+          } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("53448")]).then(n.bind(n, 60594));
           return t => (0, r.jsx)(e, C(S({}, t), {
             analyticsLocation: B
           }))

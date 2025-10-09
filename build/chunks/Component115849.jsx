@@ -185,7 +185,7 @@ function T(e) {
           className: x.addFriendHint,
           "aria-hidden": true,
           children: y
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
           text: h.intl.string(h.t["PMsq/f"]),

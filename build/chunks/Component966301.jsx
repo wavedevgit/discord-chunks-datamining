@@ -29,12 +29,12 @@ function C(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, s = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...s]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [x, b] = i.useState(false), j = x ? a.CJ0 : a.u04;
+  } = e, s = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...s]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [b, x] = i.useState(false), j = b ? a.CJ0 : a.u04;
   return (0, r.jsxs)("div", {
     className: _.channelCoverage,
     children: [(0, r.jsxs)(a.P3F, {
       className: _.coverageHeader,
-      onClick: () => b(!x),
+      onClick: () => x(!b),
       children: [(0, r.jsxs)("div", {
         className: _.warningTextContainer,
         children: [f <= 85 && (0, r.jsx)(a.Mgn, {
@@ -61,7 +61,7 @@ function C(e) {
           className: _.caret
         })]
       })]
-    }), x ? (0, r.jsxs)("div", {
+    }), b ? (0, r.jsxs)("div", {
       className: _.channelCoverageDetails,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
@@ -142,7 +142,7 @@ function y(e) {
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       className: _.header,
       variant: "heading-lg/extrabold",
       children: d ? v.intl.string(v.t.AGjtFh) : v.intl.string(v.t.dqCzoa)
@@ -152,9 +152,9 @@ function y(e) {
       children: v.intl.string(v.t["q/6MLC"])
     }), (0, r.jsxs)("div", {
       className: _.links,
-      children: [(0, r.jsx)(a.eee, {
+      children: [(0, r.jsx)(a.Anchor, {
         target: "_blank",
-        href: b.EYA.GUILD_ONBOARDING_EXAMPLES,
+        href: x.EYA.GUILD_ONBOARDING_EXAMPLES,
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-link",
@@ -162,7 +162,7 @@ function y(e) {
         })
       }), (0, r.jsx)("div", {
         className: _.dot
-      }), (0, r.jsx)(a.eee, {
+      }), (0, r.jsx)(a.Anchor, {
         onClick: O,
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
@@ -179,7 +179,7 @@ function y(e) {
       prompts: o
     }), (0, r.jsx)("div", {
       className: _.prompts,
-      children: s ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(x.Z, {
+      children: s ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(b.Z, {
         postjoinOnly: d,
         guildId: t.id
       })

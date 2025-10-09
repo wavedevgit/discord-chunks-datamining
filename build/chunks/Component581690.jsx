@@ -70,12 +70,12 @@ let m = e => {
           })
         }), (0, a.jsxs)("div", {
           className: d.qrcodeText,
-          children: [(0, a.jsx)(o.X6q, {
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.qrcodeTextHeading,
             children: c.intl.string(c.t.llDCiY)
-          }), (0, a.jsx)(o.X6q, {
+          }), (0, a.jsx)(o.Heading, {
             variant: "heading-xxl/normal",
             color: "header-secondary",
             children: c.intl.string(c.t.JfHzXF)
@@ -85,7 +85,7 @@ let m = e => {
         className: d.dividerContent,
         children: [(0, a.jsx)("div", {
           className: d.divider
-        }), (0, a.jsx)(o.X6q, {
+        }), (0, a.jsx)(o.Heading, {
           variant: "heading-lg/semibold",
           color: "header-primary",
           className: d.dividerText,
@@ -97,30 +97,30 @@ let m = e => {
         className: d.fallbackContent,
         children: [(0, a.jsxs)("div", {
           className: d.fallbackContentTextGroup,
-          children: [(0, a.jsx)(o.X6q, {
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.fallbackContentHeading,
             children: c.intl.string(c.t.Eu8rJy)
-          }), (0, a.jsx)(o.X6q, {
+          }), (0, a.jsx)(o.Heading, {
             variant: "heading-xxl/normal",
             color: "header-secondary",
             children: c.intl.string(c.t.BkEMJy)
           })]
         }), (0, a.jsxs)("div", {
           className: d.fallbackContentAction,
-          children: [(0, a.jsx)(o.X6q, {
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.fallbackContentHeading,
             children: h
           }), (0, a.jsxs)("div", {
             className: d.fallbackContentTextGroup,
-            children: [(0, a.jsx)(o.X6q, {
+            children: [(0, a.jsx)(o.Heading, {
               variant: "heading-xxl/normal",
               color: "header-secondary",
               children: c.intl.string(c.t.RyDxBQ)
-            }), (0, a.jsx)(o.X6q, {
+            }), (0, a.jsx)(o.Heading, {
               variant: "heading-xxl/bold",
               color: "header-primary",
               className: d.fallbackContentCode,

@@ -2,7 +2,7 @@
 /** chunk id: 627861, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => eg
+  c: () => eE
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,11 +39,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk885110 = require("./885110.js"),
   Chunk594174 = require("./594174.js"),
   Chunk181106 = require("./181106.js"),
-  Chunk81063 = require("./81063.js"),
   Chunk768581 = require("./768581.js"),
   Chunk823379 = require("./823379.js"),
   Chunk358085 = require("./358085.js"),
-  Chunk921948 = require("./921948.js"),
+  Chunk139212 = require("./139212.js"),
   Chunk758371 = require("./758371.js"),
   Chunk931271 = require("./931271.js"),
   Chunk565201 = require("./565201.js"),
@@ -51,6 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk150248 = require("./150248.js"),
   Chunk691731 = require("./691731.js"),
   Chunk984211 = require("./984211.js"),
+  Chunk146248 = require("./146248.js"),
   Chunk935153 = require("./935153.js"),
   Chunk620662 = require("./620662.js"),
   Chunk994339 = require("./994339.js"),
@@ -73,7 +73,7 @@ function eu(e) {
     maxPartySize: i,
     guildId: a,
     activityActionType: o
-  } = e, s = Math.max(n, t.length), l = (0, V.yy)({
+  } = e, s = Math.max(n, t.length), l = (0, F.yy)({
     maxPartySize: i,
     partySize: s,
     activityActionType: o
@@ -102,7 +102,7 @@ function ed(e) {
 }
 
 function ef(e, t, n, r) {
-  return !(null == e || !(0, J.Z)(e, n, r.id) || !(0, Q.Z)(e, ei.xjy.SYNC) || !Z.isPlatformEmbedded || (0, z.g)(t, e))
+  return !(null == e || !(0, J.Z)(e, n, r.id) || !(0, Q.Z)(e, ei.xjy.SYNC) || !B.isPlatformEmbedded || (0, K.g)(t, e))
 }
 
 function e_(e) {
@@ -116,7 +116,7 @@ function e_(e) {
     partyStatusElement: p,
     presenceActivity: g,
     guildId: E
-  } = e, b = (0, z.g)(u, g), O = (0, R.Lz)(g, f.author, "Invite Embed"), v = !(0, J.Z)(g, f, l.id), I = [], T = i.useMemo(() => {
+  } = e, b = (0, K.g)(u, g), O = (0, R.Lz)(g, f.author, "Invite Embed"), v = !(0, J.Z)(g, f, l.id), I = [], T = i.useMemo(() => {
     let e = [];
     if (!b) {
       var t;
@@ -133,7 +133,7 @@ function e_(e) {
     return e
   }, [b, O]), S = i.useMemo(() => {
     if (null != g) return () => (0, N.aG)(g)
-  }, [g]), A = (0, V.dQ)(l.name, null == (t = f.activity) ? true : t.type);
+  }, [g]), A = (0, F.dQ)(l.name, null == (t = f.activity) ? true : t.type);
   if (v) {
     let e = (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
@@ -193,7 +193,7 @@ function e_(e) {
     return (0, r.jsx)(h.W, {
       header: A,
       title: e,
-      iconSrc: null != (s = (0, W.Z)(g, l.id)) ? s : true,
+      iconSrc: null != (s = (0, Y.Z)(g, l.id)) ? s : true,
       info: u,
       actions: T,
       onClickContent: S,
@@ -262,7 +262,7 @@ function eh(e) {
       default:
         return null
     }
-  }).filter(B.lm), [a]);
+  }).filter(G.lm), [a]);
   if (!(null != n || o.length > 0)) return null;
   let l = null != n ? (0, X.V)(n) : es.intl.string(es.t["4dGUPz"]);
   return (0, r.jsxs)("div", {
@@ -283,222 +283,236 @@ function eh(e) {
 }
 
 function em(e) {
-  var t, n, s, g, I;
   let {
-    analyticsLocations: S,
-    application: A,
-    channel: C,
-    currentUserId: N,
-    currentUserPresenceActivity: R,
-    hideParty: P,
-    message: w,
-    onView: D,
-    partyStatusElement: L,
-    presenceActivity: x
-  } = e, M = (0, v.A)(A), k = (0, p.ye)(A), {
-    bot: B
-  } = A, Z = G.ZP.getApplicationIconURL({
-    id: A.id,
-    icon: A.icon,
-    bot: B
+    messageId: t,
+    presenceActivity: n,
+    application: r
+  } = e;
+  return (0, l.e7)([Z.Z], () => (0, q.O)({
+    messageId: t,
+    presenceActivity: n,
+    application: r
+  }), [t, n, r])
+}
+
+function eg(e) {
+  var t, n, s, g;
+  let {
+    analyticsLocations: I,
+    application: S,
+    channel: A,
+    currentUserId: C,
+    currentUserPresenceActivity: N,
+    hideParty: R,
+    message: P,
+    onView: w,
+    partyStatusElement: D,
+    presenceActivity: L
+  } = e, x = (0, v.A)(S), M = (0, p.ye)(S), {
+    bot: j
+  } = S, G = U.ZP.getApplicationIconURL({
+    id: S.id,
+    icon: S.icon,
+    bot: j
   }), {
-    staticBannerSrc: W,
-    videoBannerSrc: q,
-    bannerAspectRatio: X
-  } = (0, E.E)(A), ee = i.useMemo(() => {
-    var e;
-    return (null == x || null == (e = x.assets) ? true : e.invite_cover_image) != null ? (0, U.xF)(x.application_id, x.assets.invite_cover_image, 600 * (0, F.Z)()) : null
-  }, [null == x || null == (t = x.assets) ? true : t.invite_cover_image, null == x ? true : x.application_id]), en = null != ee ? ee : W, er = null != ee ? true : q, eo = null != ee ? h.u.ACTIVITY : X, ec = !(0, J.Z)(x, w, A.id), eu = (0, K.H)(w), {
-    openGameProfileModal: ed,
-    launchableAppId: e_
-  } = ep(A.id, w.author.id), em = !!e_, eg = (0, et.Z)({
-    application: A,
-    analyticsLocations: S
-  }), eE = i.useMemo(() => null == eg ? null : {
+    staticBannerSrc: B,
+    videoBannerSrc: Z,
+    bannerAspectRatio: Y
+  } = (0, E.E)(S), z = em({
+    messageId: P.id,
+    presenceActivity: L,
+    application: S
+  }), q = null != z ? z : B, X = null != z ? true : Z, ee = null != z ? h.u.ACTIVITY : Y, en = !(0, J.Z)(L, P, S.id), er = (0, W.H)(P), {
+    openGameProfileModal: eo,
+    launchableAppId: ec
+  } = ep(S.id, P.author.id), eu = !!ec, ed = (0, et.Z)({
+    application: S,
+    analyticsLocations: I
+  }), e_ = i.useMemo(() => null == ed ? null : {
     label: es.intl.string(es.t["jaYS/v"]),
     icon: c.v3n,
     trackingArea: m.j_.CLOUD_PLAY,
-    onClick: eg
-  }, [eg]), {
-    canJoin: eb,
-    remoteJoinPlatform: ey
-  } = (0, H.h)({
-    presenceActivity: x,
-    currentUserPresenceActivity: R,
-    currentUserId: N,
-    message: w,
-    application: A,
-    isEmbeddedApplication: k,
-    isFrameApplication: M,
-    isGameLaunchable: em
-  }), eO = ef(x, R, w, A), ev = (0, z.g)(R, x), eI = (0, Y.L)(x, w, A, N), eT = (0, l.e7)([j.Z], () => null != x && null != x.application_id && j.Z.getState(x.application_id, ei.mFx.JOIN) === ei.OcF.LOADING), eS = i.useMemo(() => eb ? {
+    onClick: ed
+  }, [ed]), {
+    canJoin: eg,
+    remoteJoinPlatform: eE
+  } = (0, V.h)({
+    presenceActivity: L,
+    currentUserPresenceActivity: N,
+    currentUserId: C,
+    message: P,
+    application: S,
+    isEmbeddedApplication: M,
+    isFrameApplication: x,
+    isGameLaunchable: eu
+  }), eb = ef(L, N, P, S), ey = (0, K.g)(N, L), eO = (0, H.L)(L, P, S, C), ev = (0, l.e7)([k.Z], () => null != L && null != L.application_id && k.Z.getState(L.application_id, ei.mFx.JOIN) === ei.OcF.LOADING), eI = i.useMemo(() => eg ? {
     label: es.intl.string(es.t.VJlc0d),
     trackingArea: m.j_.JOIN,
-    submitting: eT,
+    submitting: ev,
     onClick: () => {
       var e, t;
       d.Z.join({
-        userId: w.author.id,
-        sessionId: x.session_id,
-        applicationId: x.application_id,
-        channelId: C.id,
-        messageId: w.id,
+        userId: P.author.id,
+        sessionId: L.session_id,
+        applicationId: L.application_id,
+        channelId: A.id,
+        messageId: P.id,
         source: ei.Sbl.MESSAGE_EMBED,
-        analyticsLocations: S,
-        embedded: (0, Q.Z)(x, ei.xjy.EMBEDDED),
-        remotePartyId: null != ey ? null == (e = x.party) ? true : e.id : true
+        analyticsLocations: I,
+        embedded: (0, Q.Z)(L, ei.xjy.EMBEDDED),
+        remotePartyId: null != eE ? null == (e = L.party) ? true : e.id : true
       }), (0, $.Z)({
         type: ei.q5t.JOIN,
         source: ei.Sbl.MESSAGE_EMBED,
-        userId: w.author.id,
-        guildId: C.guild_id,
-        channelId: C.id,
-        applicationId: x.application_id,
-        partyId: null == (t = x.party) ? true : t.id,
-        messageId: w.id,
-        analyticsLocations: S,
-        remoteJoinPlatform: ey
+        userId: P.author.id,
+        guildId: A.guild_id,
+        channelId: A.id,
+        applicationId: L.application_id,
+        partyId: null == (t = L.party) ? true : t.id,
+        messageId: P.id,
+        analyticsLocations: I,
+        remoteJoinPlatform: eE
       })
     }
-  } : eO ? {
+  } : eb ? {
     label: es.intl.string(es.t.VJlc0d),
     trackingArea: m.j_.SYNC,
     onClick: () => {
-      null != x && f.Z_(x, w.author.id)
+      null != L && f.Z_(L, P.author.id)
     }
-  } : eI ? {
+  } : eO ? {
     label: es.intl.string(es.t["hC/Ze3"]),
     trackingArea: m.j_.INVITE,
     onClick: () => {
-      null != x && u.Z.sendActivityInvite({
+      null != L && u.Z.sendActivityInvite({
         type: ei.mFx.JOIN,
-        channelId: C.id,
-        activity: x,
+        channelId: A.id,
+        activity: L,
         location: ei.Sbl.MESSAGE_EMBED
       })
     },
-    disabled: w.author.id === N,
-    disabledReason: w.author.id === N ? es.intl.string(es.t.IBl8IC) : true
-  } : ev ? {
+    disabled: P.author.id === C,
+    disabledReason: P.author.id === C ? es.intl.string(es.t.IBl8IC) : true
+  } : ey ? {
     label: es.intl.string(es.t.KC26NT),
     trackingArea: m.j_.PLAY,
     onClick: () => {},
     disabled: true
-  } : null != eE ? eE : true, [eb, eO, eI, ev, eE, w.author.id, w.id, x, C.id, C.guild_id, S, ey, N, eT]), eA = i.useMemo(() => em && null != e_ ? {
+  } : null != e_ ? e_ : true, [eg, eb, eO, ey, e_, P.author.id, P.id, L, A.id, A.guild_id, I, eE, C, ev]), eT = i.useMemo(() => eu && null != ec ? {
     label: es.intl.string(es.t.RscU7O),
     trackingArea: m.j_.PLAY,
     onClick: () => {
       d.Z.launch({
-        applicationId: e_,
-        embedded: k
+        applicationId: ec,
+        embedded: M
       })
     }
-  } : null != eE ? eE : true, [k, em, e_, eE]), eC = (0, b.G)(A), eN = i.useMemo(() => null != ed ? ed : null != eC && k ? eC : true, [k, ed, eC]), eR = i.useMemo(() => {
+  } : null != e_ ? e_ : true, [M, eu, ec, e_]), eS = (0, b.G)(S), eA = i.useMemo(() => null != eo ? eo : null != eS && M ? eS : true, [M, eo, eS]), eC = i.useMemo(() => {
     let e = [];
-    return ec || null == eS ? ec && null != eA && e.push(eA) : e.push(eS), e
-  }, [eA, ec, eS]), eP = i.useMemo(() => eR.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eR]);
+    return en || null == eI ? en && null != eT && e.push(eT) : e.push(eI), e
+  }, [eT, en, eI]), eN = i.useMemo(() => eC.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eC]);
   (0, _.Z)({
     name: a.ImpressionNames.CLOUD_PLAY_CTA,
     type: a.ImpressionTypes.VIEW,
     properties: {
-      location_stack: S
+      location_stack: I
     }
   }, {
-    disableTrack: !eP
+    disableTrack: !eN
   });
-  let ew = (0, V.dQ)(A.name, null == (n = w.activity) ? true : n.type),
-    eD = (0, T.N)(A.id).some(e => (0, O.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  let eR = (0, F.dQ)(S.name, null == (t = P.activity) ? true : t.type),
+    eP = (0, T.N)(S.id).some(e => (0, O.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.YqE, {
         size: "xxs",
         color: "currentColor"
       }), es.intl.string(es.t.TsWCdX)]
     }) : null,
-    eL = ev ? null : (0, r.jsx)(eh, {
-      presenceActivity: x,
-      remoteJoinPlatform: ey
+    ew = ey ? null : (0, r.jsx)(eh, {
+      presenceActivity: L,
+      remoteJoinPlatform: eE
     });
-  if (ec) {
+  if (en) {
     let e = (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: el.description,
       color: "none",
       lineClamp: 3,
-      children: (0, V.wR)(w, A, C, N)
+      children: (0, F.wR)(P, S, A, C)
     });
     return (0, r.jsx)(h.W, {
-      header: ew,
-      title: A.name,
-      staticBannerSrc: en,
-      videoBannerSrc: er,
-      onClickBanner: eN,
-      bannerAspectRatio: eo,
-      iconSrc: null != Z ? Z : true,
+      header: eR,
+      title: S.name,
+      staticBannerSrc: q,
+      videoBannerSrc: X,
+      onClickBanner: eA,
+      bannerAspectRatio: ee,
+      iconSrc: null != G ? G : true,
       info: e,
-      actions: eR,
-      onClickContent: eN,
+      actions: eC,
+      onClickContent: eA,
       trackingConfig: {
-        id: A.id,
+        id: S.id,
         linkType: ea.U.RICH_PRESENCE_INVITE,
-        onView: D,
-        referrerId: w.author.id,
-        guildId: C.guild_id,
-        channelId: w.channel_id,
-        messageId: w.id
+        onView: w,
+        referrerId: P.author.id,
+        guildId: A.guild_id,
+        channelId: P.channel_id,
+        messageId: P.id
       }
     })
   }
-  let ex = null != (I = null == x || null == (s = x.timestamps) ? true : s.start) ? I : null == x ? true : x.created_at,
-    eM = null != ex ? (0, r.jsxs)("div", {
+  let eD = null != (g = null == L || null == (n = L.timestamps) ? true : n.start) ? g : null == L ? true : L.created_at,
+    eL = null != eD ? (0, r.jsxs)("div", {
       className: el.timestampContainer,
       children: [(0, r.jsx)(c.iWm, {
         size: "xxs",
         color: "currentColor"
       }), (0, r.jsx)(y.x3, {
         entry: {
-          start: ex,
-          end: null == x || null == (g = x.timestamps) ? true : g.end
+          start: eD,
+          end: null == L || null == (s = L.timestamps) ? true : s.end
         },
         textColor: "currentColor",
         textTabularNumbers: false,
         textFontCode: false
       })]
     }) : null,
-    ek = (0, r.jsxs)(c.Text, {
+    ex = (0, r.jsxs)(c.Text, {
       variant: "text-xs/normal",
       className: el.tagline,
       color: "none",
       lineClamp: 2,
-      children: [eu ? (0, V.$v)(w, A, C, N, ec) : eM, eu ? null : eD]
+      children: [er ? (0, F.$v)(P, S, A, C, en) : eL, er ? null : eP]
     }),
-    ej = (0, r.jsxs)("div", {
+    eM = (0, r.jsxs)("div", {
       className: el.info,
-      children: [ek, P || eu ? null : L]
+      children: [ex, R || er ? null : D]
     });
   return (0, r.jsx)(h.W, {
-    header: ew,
-    title: A.name,
-    staticBannerSrc: en,
-    videoBannerSrc: er,
-    onClickBanner: eN,
-    bannerAspectRatio: eo,
-    iconSrc: null != Z ? Z : true,
-    info: ej,
-    actions: eR,
-    onClickContent: eN,
+    header: eR,
+    title: S.name,
+    staticBannerSrc: q,
+    videoBannerSrc: X,
+    onClickBanner: eA,
+    bannerAspectRatio: ee,
+    iconSrc: null != G ? G : true,
+    info: eM,
+    actions: eC,
+    onClickContent: eA,
     trackingConfig: {
-      id: A.id,
+      id: S.id,
       linkType: ea.U.RICH_PRESENCE_INVITE,
-      onView: D,
-      referrerId: w.author.id,
-      guildId: C.guild_id,
-      channelId: w.channel_id,
-      messageId: w.id
+      onView: w,
+      referrerId: P.author.id,
+      guildId: A.guild_id,
+      channelId: P.channel_id,
+      messageId: P.id
     },
-    footer: eL
+    footer: ew
   })
 }
 
-function eg(e) {
+function eE(e) {
   var t, n;
   let {
     analyticsLocations: a,
@@ -511,7 +525,7 @@ function eg(e) {
     if (null == c.application) return x.Z.findActivity(c.author.id, e => e.type === ei.IIU.LISTENING);
     {
       let e = c.author.id;
-      return (0, K.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), x.Z.getApplicationActivity(e, c.application.id)
+      return (0, W.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), x.Z.getApplicationActivity(e, c.application.id)
     }
   }, [c, s, _]), h = (0, l.e7)([L.Z, M.Z], () => {
     var e;
@@ -522,8 +536,8 @@ function eg(e) {
   }, [p]), {
     partySize: E,
     maxPartySize: b
-  } = (0, q._)(p), y = i.useMemo(() => m.map(e => {
-    let t = k.default.getUser(e);
+  } = (0, z._)(p), y = i.useMemo(() => m.map(e => {
+    let t = j.default.getUser(e);
     return null != t ? t : en.ag
   }), [m]), O = (0, eo.Ps)(null == p || null == (t = p.party) ? true : t.id) || f.id === P.r9.id, v = (0, r.jsx)(eu, {
     partyMembers: y,
@@ -547,7 +561,7 @@ function eg(e) {
     channel: s,
     currentUserId: _,
     message: c
-  }) : (0, r.jsx)(em, {
+  }) : (0, r.jsx)(eg, {
     analyticsLocations: a,
     application: f,
     channel: s,

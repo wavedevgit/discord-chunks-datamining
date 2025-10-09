@@ -32,7 +32,7 @@ function h() {
         label: "Dismissible Content Overrides",
         children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 4,
-          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Reset Daily Cap",
             onClick: () => (0, Chunk883904.EG)()

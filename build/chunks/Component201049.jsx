@@ -31,15 +31,15 @@ function f(e) {
   } = e, k = l.useRef(null), x = null != O, [P, N] = l.useState(null != (n = null == O ? true : O.name) ? n : ""), [w, Z] = l.useState(null != O ? {
     id: O.emojiId,
     name: O.emojiName
-  } : null), [E, I] = l.useState(null == O ? true : O.moderated), S = (0, a.e7)([m.ZP], () => (null == w ? true : w.id) != null ? m.ZP.getUsableCustomEmojiById(w.id) : null), _ = (null == O ? true : O.name) !== P || (null == O ? true : O.emojiId) !== (null == w ? true : w.id) || (null == O ? true : O.emojiName) !== (null == w ? true : w.name) || E !== (null == O ? true : O.moderated), B = () => {
-    if (null != P && _) {
+  } : null), [B, E] = l.useState(null == O ? true : O.moderated), I = (0, a.e7)([m.ZP], () => (null == w ? true : w.id) != null ? m.ZP.getUsableCustomEmojiById(w.id) : null), S = (null == O ? true : O.name) !== P || (null == O ? true : O.emojiId) !== (null == w ? true : w.id) || (null == O ? true : O.emojiName) !== (null == w ? true : w.name) || B !== (null == O ? true : O.moderated), _ = () => {
+    if (null != P && S) {
       if (x) {
         p.Z.updateForumTag({
           id: O.id,
           name: P,
           emojiId: null == w ? true : w.id,
           emojiName: null == w ? true : w.name,
-          moderated: E
+          moderated: B
         }, h), f();
         return
       }
@@ -47,7 +47,7 @@ function f(e) {
         name: P,
         emojiId: null == w ? true : w.id,
         emojiName: null == w ? true : w.name,
-        moderated: E
+        moderated: B
       }, h), f()
     }
   }, R = l.useCallback(e => N(e), []), T = l.useRef(null);
@@ -67,11 +67,11 @@ function f(e) {
     }, {
       variant: "primary",
       text: b.intl.string(b.t.R3BPHx),
-      onClick: B,
-      disabled: 0 === P.length || !_,
+      onClick: _,
+      disabled: 0 === P.length || !S,
       autoFocus: true
     }],
-    actionBarInput: x ? (0, i.jsx)(r.zxk, {
+    actionBarInput: x ? (0, i.jsx)(r.Button, {
       variant: "critical-secondary",
       text: b.intl.string(b.t.huYSMj),
       onClick: () => {
@@ -156,7 +156,7 @@ function f(e) {
                     className: y.emoji,
                     emojiId: w.id,
                     emojiName: w.name,
-                    animated: !!(null == S ? true : S.animated)
+                    animated: !!(null == I ? true : I.animated)
                   }) : null
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
                   var t = Object.keys(e);
@@ -173,7 +173,7 @@ function f(e) {
           })
         },
         onKeyDown: e => {
-          e.keyCode === v.yXg.ENTER && P.length > 0 && (P.length > 0 && B(), e.preventDefault())
+          e.keyCode === v.yXg.ENTER && P.length > 0 && (P.length > 0 && _(), e.preventDefault())
         },
         trailing: P.length > 0 || null != w ? {
           icon: r.k$p,
@@ -185,9 +185,9 @@ function f(e) {
       })
     }), (0, i.jsx)(r.LZC, {
       size: 16
-    }), (0, i.jsx)(r.XZJ, {
-      checked: null != E && E,
-      onChange: e => I(e || (null == O ? true : O.moderated) == null && true),
+    }), (0, i.jsx)(r.Checkbox, {
+      checked: null != B && B,
+      onChange: e => E(e || (null == O ? true : O.moderated) == null && true),
       label: b.intl.string(b.t["rMH+rq"]),
       labelType: "secondary"
     })]

@@ -55,7 +55,7 @@ let b = Chunk647438.memo(function(e) {
       className: x.container,
       children: [(0, r.jsxs)("div", {
         className: x.headerContainer,
-        children: [(0, r.jsxs)(c.X6q, {
+        children: [(0, r.jsxs)(c.Heading, {
           variant: "heading-lg/semibold",
           className: x.guidelinesHeader,
           children: [(0, r.jsx)(c.snC, {

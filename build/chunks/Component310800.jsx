@@ -2,7 +2,7 @@
 /** chunk id: 310800, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk159691 = require("./159691.js"),
@@ -19,20 +19,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk82917 = require("./82917.js");
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
   } = e, g = (0, d.ue)(t, {
     publishedOnly: false
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: x
-  } = (0, s.gX)(t), b = g.length > 0;
+    shouldRestrictUpdatingCreatorMonetizationSettings: b
+  } = (0, s.gX)(t), x = g.length > 0;
   return (0, r.jsx)("div", {
     className: h.productListingsHeader,
     children: (0, r.jsx)(l.gNt, {
-      label: b ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT),
-      children: e => b ? (0, r.jsx)("ul", {
+      label: x ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT),
+      children: e => x ? (0, r.jsx)("ul", {
         className: h.productListings,
         id: e.controlId,
         children: g.map(e => (0, r.jsx)("li", {
@@ -85,7 +85,7 @@ function x(e) {
               productId: e.id
             }),
             onReportProduct: () => {},
-            disabled: x
+            disabled: b
           })
         }, e.id))
       }) : (0, r.jsx)(a.Z, {
@@ -97,7 +97,7 @@ function x(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guildId: t
   } = e, {
@@ -113,7 +113,7 @@ function b(e) {
       disabled: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(b, {
       guildId: t,
       handleCreateOrEditProduct: a
     })]

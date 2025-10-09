@@ -59,7 +59,7 @@ let m = () => {
       })
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk227919.mainColumn,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/extrabold",
         color: O ? "redesign-button-overlay-text" : "currentColor",
         className: Chunk227919.title,
@@ -69,7 +69,7 @@ let m = () => {
         color: O ? "redesign-button-overlay-text" : "currentColor",
         children: b
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       onClick: T,
       variant: "overlay-primary",
       text: Chunk388032.intl.string(Chunk388032.t.fYfGgI)

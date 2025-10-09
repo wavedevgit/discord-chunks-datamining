@@ -29,7 +29,7 @@ function p(e) {
     isSlideReady: b,
     hasFooter: _ = true,
     isCommunity: L = false
-  } = e, [I, v] = l.useState(u.Z.getGuildNameSuggestion()), [y, Z] = l.useState(null), [O, S] = l.useState(false), [T, N] = l.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, G] = l.useState(E), H = (0, c.Dt)(), U = l.useRef(null);
+  } = e, [I, v] = l.useState(u.Z.getGuildNameSuggestion()), [y, Z] = l.useState(null), [O, S] = l.useState(false), [T, N] = l.useState(null), E = !!(null == (t = d.default.getCurrentUser()) ? true : t.isStaff()), [M, H] = l.useState(E), G = (0, c.Dt)(), U = l.useRef(null);
   l.useEffect(() => {
     var e;
     b && (null == (e = U.current) || e.focus())
@@ -50,7 +50,7 @@ function p(e) {
       }
     }, [n, j, I, y, L, M, h]),
     w = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(s.zxk, {
+      children: [(0, i.jsx)(s.Button, {
         variant: "primary",
         text: null != j ? C.intl.string(C.t.PDTjLC) : C.intl.string(C.t.CumH4u),
         onClick: D,
@@ -69,7 +69,7 @@ function p(e) {
         direction: o.Z.Direction.VERTICAL,
         className: g.header,
         separator: false,
-        children: [(0, i.jsx)(s.X6q, {
+        children: [(0, i.jsx)(s.Heading, {
           className: g.title,
           variant: "heading-xl/semibold",
           children: C.intl.string(C.t["2H6Nio"])
@@ -102,12 +102,12 @@ function p(e) {
               maxLength: 100,
               onChange: v,
               inputRef: U,
-              id: H
+              id: G
             }), E && (0, i.jsx)(s.rsf, {
               label: "Staff Only",
               description: C.intl.string(C.t.edQ5vb),
               checked: M,
-              onChange: e => G(e)
+              onChange: e => H(e)
             }), (0, i.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "text-muted",

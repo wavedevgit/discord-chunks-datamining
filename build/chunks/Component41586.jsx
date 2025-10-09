@@ -78,10 +78,10 @@ let O = Chunk647438.forwardRef(function(e, t) {
     className: x.searchHeaderContainer,
     children: [(0, r.jsx)("div", {
       className: x.searchHeader,
-      children: a ? (0, r.jsx)(d.X6q, {
+      children: a ? (0, r.jsx)(d.Heading, {
         variant: "heading-md/medium",
         children: j.intl.string(j.t.y12ALC)
-      }) : (0, r.jsx)(d.X6q, {
+      }) : (0, r.jsx)(d.Heading, {
         variant: "heading-md/medium",
         children: j.intl.string(j.t.BUqwKy)
       })
@@ -132,7 +132,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
             }
             return l
           }(e, ["onClick"]);
-          return (0, r.jsx)(d.zxk, y(v({}, n), {
+          return (0, r.jsx)(d.Button, y(v({}, n), {
             buttonRef: i,
             text: j.intl.string(j.t.XvNMNj),
             onClick: t,
@@ -147,7 +147,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
       children: O && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: x.__invalid_pruneButton,
-        children: (0, r.jsx)(d.zxk, {
+        children: (0, r.jsx)(d.Button, {
           variant: "critical-secondary",
           size: "sm",
           text: j.intl.string(j.t["2mIlKS"]),

@@ -21,7 +21,7 @@ let c = e => {
       count: r
     }), h = null != a ? d.intl.formatToPlainString(d.t.YMor7u, {
       count: a
-    }) : "--", u = (0, i.dQu)(n.Z.unsafe_rawColors.RED_400).hex(), g = (0, i.dQu)(n.Z.unsafe_rawColors.YELLOW_300).hex();
+    }) : "--", g = (0, i.dQu)(n.Z.unsafe_rawColors.RED_400).hex(), u = (0, i.dQu)(n.Z.unsafe_rawColors.YELLOW_300).hex();
     return (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsxs)("div", {
         className: o.progressWrapper,
@@ -49,7 +49,7 @@ let c = e => {
               className: o.progressBar,
               style: {
                 width: r.interpolate(e => "".concat(e, "%")),
-                backgroundColor: r.interpolate(e => e < 33 ? u : g)
+                backgroundColor: r.interpolate(e => e < 33 ? g : u)
               }
             })
           }
@@ -94,8 +94,8 @@ let c = e => {
       } = e,
       h = (0, l.Dt)(),
       {
-        retentionHealthy: u,
-        engagementHealthy: g,
+        retentionHealthy: g,
+        engagementHealthy: u,
         healthScore: p
       } = n,
       {
@@ -103,9 +103,9 @@ let c = e => {
         avg_nonnew_communicators: j,
         perc_ret_w1_intentful: b
       } = p;
-    if (!g && null != _ && _ < 40 && (a = (0, t.jsxs)("div", {
+    if (!u && null != _ && _ < 40 && (a = (0, t.jsxs)("div", {
         className: o.failingBlock,
-        children: [(0, t.jsx)(i.X6q, {
+        children: [(0, t.jsx)(i.Heading, {
           className: o.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.sEzDIS)
@@ -117,9 +117,9 @@ let c = e => {
           thresholdNumber: 40,
           currentLabel: d.intl.string(d.t.BtTX9P)
         })]
-      })), !g && null != j && j < 20 && (s = (0, t.jsxs)("div", {
+      })), !u && null != j && j < 20 && (s = (0, t.jsxs)("div", {
         className: o.failingBlock,
-        children: [(0, t.jsx)(i.X6q, {
+        children: [(0, t.jsx)(i.Heading, {
           className: o.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.fWQTbm)
@@ -131,11 +131,11 @@ let c = e => {
           thresholdNumber: 20,
           currentLabel: d.intl.string(d.t.PFQI7u)
         })]
-      })), !u && null != b) {
+      })), !g && null != b) {
       let e = Math.floor(100 * b);
       r = (0, t.jsxs)("div", {
         className: o.failingBlock,
-        children: [(0, t.jsx)(i.X6q, {
+        children: [(0, t.jsx)(i.Heading, {
           className: o.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.YF6x29)
@@ -158,7 +158,7 @@ let c = e => {
       parentComponent: "HealthScoreDetailsModal",
       children: [(0, t.jsxs)(i.hzk, {
         className: o.content,
-        children: [(0, t.jsx)(i.X6q, {
+        children: [(0, t.jsx)(i.Heading, {
           variant: "heading-xl/semibold",
           className: o.modalHeader,
           id: h,

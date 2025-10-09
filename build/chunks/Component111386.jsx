@@ -21,7 +21,7 @@ let f = () => (0, Chunk951288.jsxs)("div", {
       className: Chunk170337.coachtipAsset
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk170337.coachtipTextContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.V5y3qa)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {

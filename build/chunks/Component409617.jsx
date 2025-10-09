@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 409617, original params: e,n,i (module,exports,require) **/
+/** chunk id: 409617, original params: n,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => C
 }), require("./388685.js");
@@ -19,20 +19,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk707489 = require("./707489.js"),
   Chunk186425 = require("./186425.js");
 
-function C(e) {
+function C(n) {
   let {
-    className: n,
+    className: e,
     isDsaEligible: i = false,
     onClose: s,
     onNext: C,
     onBack: j
-  } = e, _ = (0, g.U0)(), E = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [v, I] = a.useState(""), [T, S] = a.useState(false);
+  } = n, _ = (0, g.U0)(), E = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [v, I] = a.useState(""), [T, S] = a.useState(false);
   a.useEffect(() => {
     I(null != E ? E : ""), S(_ === p.bK.SOMETHING_ELSE)
   }, [E, _, i]);
-  let k = p.RY.map(e => ({
-    value: e,
-    name: (0, m.ox)(e)
+  let A = p.RY.map(n => ({
+    value: n,
+    name: (0, m.ox)(n)
   }));
   return (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsxs)(o.xBx, {
@@ -40,7 +40,7 @@ function C(e) {
       direction: d.Z.Direction.VERTICAL,
       className: N.header,
       separator: false,
-      children: [(0, t.jsx)(o.X6q, {
+      children: [(0, t.jsx)(o.Heading, {
         className: N.title,
         variant: "heading-xl/semibold",
         children: u.intl.string(u.t["C5q+pa"])
@@ -56,18 +56,18 @@ function C(e) {
       })]
     }), (0, t.jsxs)(o.hzk, {
       "data-migration-pending": true,
-      className: l()(h.modalContent, n),
+      className: l()(h.modalContent, e),
       paddingFix: false,
       children: [(0, t.jsx)(o.FXm, {
         value: _,
-        options: k,
-        onChange: e => {
-          S(e === p.bK.SOMETHING_ELSE), e !== p.bK.SOMETHING_ELSE && (I(""), c.Z.dispatch({
+        options: A,
+        onChange: n => {
+          S(n === p.bK.SOMETHING_ELSE), n !== p.bK.SOMETHING_ELSE && (I(""), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
             userInput: ""
           })), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_SELECT",
-            signal: e
+            signal: n
           })
         }
       }), i && T && (0, t.jsxs)(t.Fragment, {
@@ -90,9 +90,9 @@ function C(e) {
       })]
     }), (0, t.jsx)(o.mzw, {
       "data-migration-pending": true,
-      children: (0, t.jsxs)(o.hE2, {
+      children: (0, t.jsxs)(o.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, t.jsx)(o.zxk, {
+        children: [(0, t.jsx)(o.Button, {
           variant: "primary",
           text: u.intl.string(u.t.PDTjLC),
           onClick: () => {
@@ -101,7 +101,7 @@ function C(e) {
               userInput: v
             }), null == C || C()
           }
-        }), (0, t.jsx)(o.zxk, {
+        }), (0, t.jsx)(o.Button, {
           variant: "secondary",
           text: u.intl.string(u.t["13/7kZ"]),
           onClick: () => {

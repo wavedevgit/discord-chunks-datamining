@@ -23,7 +23,7 @@ function u(e) {
     children: [(0, n.jsxs)(o.xBx, {
       separator: false,
       className: _.headerContainer,
-      children: [(0, n.jsx)(o.X6q, {
+      children: [(0, n.jsx)(o.Heading, {
         id: b,
         variant: "heading-xl/extrabold",
         color: "none",

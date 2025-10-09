@@ -165,7 +165,7 @@ function ee(e) {
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: K.fieldButton,
-        children: (0, r.jsx)(_.zxk, {
+        children: (0, r.jsx)(_.Button, {
           variant: "secondary",
           size: "sm",
           text: g ? W.intl.string(W.t["16kTw8"]) : W.intl.string(W.t.bt75u7),
@@ -197,7 +197,7 @@ function et(e) {
   let {
     user: a,
     className: s
-  } = e, l = (0, v.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, f = k.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
+  } = e, l = (0, v.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, f = j.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
   i.useEffect(() => {
     m(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [f]);
@@ -238,7 +238,7 @@ function et(e) {
     }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: K.fieldButton,
-      children: (0, r.jsx)(_.zxk, {
+      children: (0, r.jsx)(_.Button, {
         variant: "secondary",
         size: "sm",
         text: h ? W.intl.string(W.t["16kTw8"]) : W.intl.string(W.t.bt75u7),
@@ -336,7 +336,7 @@ function er(e) {
     }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: K.fieldButton,
-      children: (0, r.jsx)(_.zxk, {
+      children: (0, r.jsx)(_.Button, {
         variant: "secondary",
         size: "sm",
         text: t.buttonText,
@@ -415,7 +415,7 @@ function ei(e) {
       }) : null, (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: K.fieldButton,
-        children: (0, r.jsx)(_.zxk, {
+        children: (0, r.jsx)(_.Button, {
           variant: "secondary",
           size: "sm",
           text: c ? W.intl.string(W.t.bt75u7) : W.intl.string(W.t.OYkgVl),
@@ -486,7 +486,7 @@ function eo(e) {
     }), s && (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: K.fieldButton,
-      children: (0, r.jsx)(_.zxk, {
+      children: (0, r.jsx)(_.Button, {
         variant: "secondary",
         size: "sm",
         text: a ? W.intl.string(W.t.KPGVWl) : W.intl.string(W.t.yNGjyM),
@@ -555,7 +555,7 @@ function es() {
           className: Chunk378846.badgeList,
           badgeClassName: Chunk378846.badge
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t["2p2aY2"]),

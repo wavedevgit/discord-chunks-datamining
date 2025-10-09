@@ -127,9 +127,9 @@ function y() {
       }))) ? module : []
     }, [exports]),
     D = (0, Chunk281014.Z)(),
-    z = null != Chunk120356,
-    L = (0, Chunk669460.Z)(G),
-    H = null != G && null != Chunk619733.nd[G] ? Chunk619733.nd[G] : "";
+    H = null != Chunk120356,
+    z = (0, Chunk669460.Z)(G),
+    L = null != G && null != Chunk619733.nd[G] ? Chunk619733.nd[G] : "";
   return null == exports ? (0, Chunk951288.jsx)("div", {
     className: Chunk817121.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -145,7 +145,7 @@ function y() {
           className: Chunk817121.sectionContainer,
           children: [(0, Chunk951288.jsxs)("div", {
             className: Chunk817121.sectionHeader,
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               className: Chunk817121.headerText,
               variant: "heading-sm/semibold",
               color: "text-secondary",
@@ -169,7 +169,7 @@ function y() {
           className: Chunk817121.sectionContainer,
           children: [(0, Chunk951288.jsxs)("div", {
             className: Chunk817121.sectionHeader,
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               className: Chunk817121.headerText,
               variant: "heading-sm/semibold",
               color: "text-secondary",
@@ -199,7 +199,7 @@ function y() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
-            isDisabled: w || z,
+            isDisabled: w || H,
             options: M,
             optionClassName: Chunk817121.option,
             select: e => a(e.id),
@@ -226,7 +226,7 @@ function y() {
           className: Chunk817121.sectionContainer,
           children: [(0, Chunk951288.jsxs)("div", {
             className: Chunk817121.sectionHeader,
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               className: Chunk817121.headerText,
               variant: "heading-sm/semibold",
               color: "text-secondary",
@@ -277,10 +277,10 @@ function y() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      children: null != G && Chunk388032.intl.format(z ? Chunk948208.default.num0a2 : Chunk948208.default.p5KZDg, {
-        provider: L,
+      children: null != G && Chunk388032.intl.format(H ? Chunk948208.default.num0a2 : Chunk948208.default.p5KZDg, {
+        provider: z,
         termsOfServiceUrl: () => (0, Chunk49012.q)({
-          href: H
+          href: L
         }),
         helpCenterUrl: "https://google.com/help-center"
       })

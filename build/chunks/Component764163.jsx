@@ -61,12 +61,12 @@ function O(e) {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, a = i.useRef(null), s = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), x = i.useCallback(e => {
+  } = e, a = i.useRef(null), s = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), b = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)(m.Z, {
-      pickerIntention: b.Hz.GUILD_ROLE_BENEFIT_EMOJI,
+      pickerIntention: x.Hz.GUILD_ROLE_BENEFIT_EMOJI,
       channel: u,
       closePopout: t,
       onNavigateAway: t,
@@ -96,7 +96,7 @@ function O(e) {
     targetElementRef: a,
     animation: c.yRy.Animation.NONE,
     position: "top",
-    renderPopout: x,
+    renderPopout: b,
     children: (e, t) => {
       let {
         isShown: n
@@ -132,14 +132,14 @@ function y(e) {
     onDelete: m,
     transitionState: p,
     onClose: f
-  } = e, h = (0, u.Dt)(), [x, b] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
+  } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), C = d && "" !== x && (null != v.id || null != v.name);
+  })), C = d && "" !== b && (null != v.id || null != v.name);
 
   function y(e) {
     e.preventDefault(), C && (g({
-      description: x,
+      description: b,
       emojiId: v.id,
       emojiName: v.name
     }), f())
@@ -173,10 +173,10 @@ function y(e) {
         children: [a, (0, r.jsx)(c.Kx8, {
           label: j.intl.string(j.t["1Ts7QE"]),
           placeholder: o,
-          value: x,
+          value: b,
           rows: 1,
           autosize: true,
-          onChange: b,
+          onChange: x,
           "aria-labelledby": h
         }), (0, r.jsx)(s.gNt, {
           label: j.intl.string(j.t.sMOuub),
@@ -205,7 +205,7 @@ function N(e) {
     children: [(0, r.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
       children: j.intl.string(j.t.xunxCg)
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(b.Z, {
       label: j.intl.string(j.t.GK18KC),
       guildId: t,
       value: m,

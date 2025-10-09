@@ -88,8 +88,8 @@ function M(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = 25,
-  j = 720;
+let j = 25,
+  k = 720;
 
 function U() {
   return [{
@@ -159,7 +159,7 @@ function B(e) {
     userId: t.user_id,
     assetId: t.id,
     assetHash: t.asset,
-    size: j,
+    size: k,
     canAnimate: false
   });
   return (0, r.jsx)("img", {
@@ -320,7 +320,7 @@ function Y(e) {
     onAddBackgroundImage: t,
     disabled: i
   } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeH, {
-    maxCustomBackgrounds: k
+    maxCustomBackgrounds: j
   }) : N.intl.string(N.t.Qx0tFR), s = U();
 
   function l() {
@@ -365,7 +365,7 @@ function W(e) {
     onUpsellClick: s,
     onAddBackgroundImage: u,
     smallerOptions: d
-  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= k, {
+  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= j, {
     analyticsLocations: m
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_OPTIONS), g = Object.values((0, v.Z)()).sort((e, t) => I.E1[e.id] - I.E1[t.id]);
   return (0, r.jsx)(p.Gt, {
@@ -399,7 +399,7 @@ function W(e) {
             userId: e.user_id,
             assetId: e.id,
             assetHash: e.asset,
-            size: j
+            size: k
           });
           return null == n ? null : (0, i.createElement)(Z, L(w({}, t), {
             key: e.id,

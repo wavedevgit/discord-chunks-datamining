@@ -40,9 +40,9 @@ let f = {
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), E(e ? d.b.SELECTED : d.b.DEFAULT), T(e)
-    }, [S, g]), k = r.useCallback(() => {
+    }, [S, g]), w = r.useCallback(() => {
       S && I()
-    }, [S, I]), w = (0, s.Z)(null, k), R = r.useMemo(() => (0, a.jsx)(u.L, {
+    }, [S, I]), k = (0, s.Z)(null, w), R = r.useMemo(() => (0, a.jsx)(u.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
@@ -70,7 +70,7 @@ let f = {
           [x.hidden]: O,
           [x.visible]: !O
         }),
-        ref: w,
+        ref: k,
         children: R
       })]
     })

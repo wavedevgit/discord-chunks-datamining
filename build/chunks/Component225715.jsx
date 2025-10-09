@@ -93,7 +93,7 @@ let m = e => {
       className: n,
       id: i
     } = e, s = p(e, ["children", "className", "id"]);
-    return (0, r.jsx)(o.X6q, _(d({
+    return (0, r.jsx)(o.Heading, _(d({
       className: a()(c.header, n),
       variant: "heading-xl/extrabold",
       id: i
@@ -116,11 +116,11 @@ let b = e => {
     return (0, r.jsxs)("div", _(d({
       className: t
     }, a), {
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
         color: "header-primary",
         children: n
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/normal",
         color: "header-secondary",
         children: i

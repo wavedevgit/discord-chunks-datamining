@@ -37,11 +37,11 @@ var Chunk951288 = require("./951288.js"),
 function Z(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild(t)), {
+  } = e, n = (0, s.e7)([b.Z], () => b.Z.getGuild(t)), {
     analyticsLocations: l
   } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, s.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
-  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([b.Z], () => b.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
+  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
@@ -69,7 +69,7 @@ function Z(e) {
               className: a()(w.customColumn, w.contentColumnDefault, P.override, P.settingsColumn, P.settingsContent),
               children: [(0, r.jsx)("div", {
                 className: P.header,
-                children: (0, r.jsx)(o.X6q, {
+                children: (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/semibold",
                   children: T.intl.string(T.t["S40K6+"])
                 })

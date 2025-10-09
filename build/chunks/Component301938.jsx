@@ -25,7 +25,7 @@ function x(e) {
     setSlide: l,
     ready: x,
     token: E
-  } = e, [v, b] = i.useState(false), [I, j] = i.useState(null), [N, S] = i.useState(null), [O, y] = i.useState(""), C = i.useRef(null);
+  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, S] = i.useState(null), [O, y] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -51,7 +51,7 @@ function x(e) {
         className: _.marginBottom20,
         value: O,
         onChange: y,
-        error: I,
+        error: j,
         autoComplete: "new-password",
         maxLength: 72,
         placeholder: p.intl.string(p.t["yY/PXV"])
@@ -60,10 +60,10 @@ function x(e) {
         onClick: () => {
           if (!v) {
             if (0 === O.length) {
-              j(p.intl.string(p.t.R98xDw)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
+              I(p.intl.string(p.t.R98xDw)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != N && S(null), null != I && j(null), t(""), b(true), h.Z.post({
+            return null != N && S(null), null != j && I(null), t(""), b(true), h.Z.post({
               url: m.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
@@ -86,7 +86,7 @@ function x(e) {
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? j(t.getAnyErrorMessage()) : S((function(e) {
+                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
                   switch (e) {
                     case m.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return p.intl.string(p.t["11zzGR"]);

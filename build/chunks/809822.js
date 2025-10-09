@@ -1,4 +1,4 @@
-/** Chunk was on 35641 **/
+/** Chunk was on 82140 **/
 /** chunk id: 809822, original params: e,l,a (module,exports,require) **/
 module.exports = {
   modalHeader: "modalHeader_e6fa8e",
@@ -13,6 +13,6 @@ module.exports = {
   channelIcon: "channelIcon_e6fa8e",
   selectableChannelRow: "selectableChannelRow_e6fa8e",
   selectAllContainer: "selectAllContainer_e6fa8e",
-  selectAllTitle: "selectAllTitle_e6fa8e",
-  selectAllButton: "selectAllButton_e6fa8e"
+  selectAllCheckbox: "selectAllCheckbox_e6fa8e",
+  selectAllTitle: "selectAllTitle_e6fa8e"
 }

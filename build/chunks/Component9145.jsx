@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk33985 = require("./33985.js");
 
-function z(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function z(e) {
   }
   return e
 }
-let V = Chunk884338.u8.SIZE_32,
+let z = Chunk884338.u8.SIZE_32,
   W = {
     [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
     [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
@@ -106,10 +106,10 @@ function Y(e) {
     ep ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
-    ey = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
-    e_ = (0, s.Wu)([x.ZP], () => {
+    ey = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
+    e_ = (0, s.Wu)([O.ZP], () => {
       var e;
-      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(ee.guild_id, e))
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => O.ZP.getMember(ee.guild_id, e))
     }, [eb, ee]),
     ej = i.useMemo(() => {
       let e = new Map;
@@ -117,7 +117,7 @@ function Y(e) {
         null != t && true !== t && e.set(t.userId, t)
       }), e
     }, [e_]),
-    ex = function(e, t, n) {
+    eO = function(e, t, n) {
       let r = (0, h.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
@@ -134,7 +134,7 @@ function Y(e) {
           transitionDuration: "".concat(50, "ms"),
           transitionTimingFunction: "ease-in-out"
         } : true;
-        return e && null != t && null != n ? (r = z({}, l), i = i = {
+        return e && null != t && null != n ? (r = V({}, l), i = i = {
           minHeight: 200,
           maxHeight: n,
           height: t
@@ -150,7 +150,7 @@ function Y(e) {
         }), r) : l
       }, [o, e, n, t])
     }(ea, es, q),
-    eO = (0, k.y)(),
+    ex = (0, k.y)(),
     {
       data: ev
     } = (0, R.K)(Z.B);
@@ -168,7 +168,7 @@ function Y(e) {
       text: i,
       position: "bottom",
       children: (0, r.jsx)("img", {
-        src: e.getAvatarURL(null == ee ? true : ee.guild_id, V),
+        src: e.getAvatarURL(null == ee ? true : ee.guild_id, z),
         alt: i,
         className: B.avatar
       }, e.id)
@@ -179,7 +179,7 @@ function Y(e) {
     children: e => (0, r.jsxs)("div", {
       className: a()(B.wrapper, W[el], e),
       ref: ei,
-      style: ex,
+      style: eO,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
         className: B.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {
@@ -210,7 +210,7 @@ function Y(e) {
           children: [(0, r.jsx)(D.ZP, {
             renderIcon: false,
             users: eI,
-            size: V,
+            size: z,
             max: 6,
             renderUser: eS
           }), (0, r.jsxs)("div", {
@@ -237,13 +237,13 @@ function Y(e) {
             })]
           }), eC && (0, r.jsx)("div", {
             className: B.fortniteUpsellModalButton,
-            children: (0, r.jsx)(d.zxk, {
+            children: (0, r.jsx)(d.Button, {
               onClick: () => {
                 (0, d.ZDy)(async () => {
                   let {
                     FortniteUpsellModal: e
                   } = await n.e("64152").then(n.bind(n, 690804));
-                  return t => (0, r.jsx)(e, z({}, t))
+                  return t => (0, r.jsx)(e, V({}, t))
                 }, {
                   modalKey: "activity-upsell-modal"
                 })
@@ -251,7 +251,7 @@ function Y(e) {
               text: F.intl.string(F.t["36gY4e"]),
               variant: "color-mix"
             })
-          }), eO ? (0, r.jsx)(_.Z, {
+          }), ex ? (0, r.jsx)(_.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({

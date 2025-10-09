@@ -32,7 +32,7 @@ let h = e => {
   let O = null != x ? m.default.extractTimestamp(x.id) : true;
   return (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       className: g.header,
       variant: "heading-sm/semibold",
       children: p.intl.string(p.t["aYfK//"])

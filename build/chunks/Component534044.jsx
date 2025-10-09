@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 534044, original params: e,n,i (module,exports,require) **/
+/** chunk id: 534044, original params: n,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -17,12 +17,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk186425 = require("./186425.js"),
   Chunk160557 = require("./160557.js");
 
-function u(e) {
+function u(n) {
   let {
-    className: n,
+    className: e,
     onNext: i,
     onClose: a
-  } = e, u = (0, o.n)();
+  } = n, u = (0, o.n)();
   return (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsxs)(l.xBx, {
       "data-migration-pending": true,
@@ -36,11 +36,11 @@ function u(e) {
           alt: "",
           className: m.icon
         })
-      }), (0, t.jsx)(l.X6q, {
+      }), (0, t.jsx)(l.Heading, {
         className: g.title,
         variant: "heading-xl/semibold",
         children: x.intl.string(x.t.QMbTSk)
-      }), (0, t.jsx)(l.X6q, {
+      }), (0, t.jsx)(l.Heading, {
         className: g.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
@@ -52,9 +52,9 @@ function u(e) {
       })]
     }), (0, t.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: s()(m.modalContent, n),
+      className: s()(m.modalContent, e),
       paddingFix: false,
-      children: [(0, t.jsx)(l.X6q, {
+      children: [(0, t.jsx)(l.Heading, {
         variant: "heading-md/bold",
         color: "header-primary",
         className: m.actionsHeader,
@@ -70,7 +70,7 @@ function u(e) {
       })]
     }), (0, t.jsx)(l.mzw, {
       "data-migration-pending": true,
-      children: (0, t.jsx)(l.zxk, {
+      children: (0, t.jsx)(l.Button, {
         variant: "primary",
         text: x.intl.string(x.t.i4jeWV),
         onClick: i

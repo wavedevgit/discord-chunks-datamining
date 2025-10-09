@@ -2,7 +2,7 @@
 /** chunk id: 615603, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -155,7 +155,7 @@ function M(e) {
     guildBoostSlotId: e.id
   })))
 }
-let k = function(e) {
+let j = function(e) {
   let t, n, a, {
       guildBoostSlots: l
     } = e,
@@ -170,8 +170,8 @@ let k = function(e) {
     N = p && !T,
     {
       appliedGuildBoostSlots: P,
-      unappliedGuildBoostSlots: k,
-      numActiveGuildBoostSlots: j,
+      unappliedGuildBoostSlots: j,
+      numActiveGuildBoostSlots: k,
       hasCooldownBoosts: U,
       allGuildBoostsAreOnCooldown: G
     } = i.useMemo(() => {
@@ -192,7 +192,7 @@ let k = function(e) {
     }, [l]),
     B = null != _ ? y.ZP.getNumIncludedPremiumGuildSubscriptionSlots(_.planId) : 0,
     Z = Math.max(0, B - P.length),
-    F = j > B,
+    F = k > B,
     V = B === l.length,
     H = V ? Z : 1,
     Y = i.useMemo(() => {
@@ -203,9 +203,9 @@ let k = function(e) {
       }, t));
       return e
     }, [H, v]),
-    W = i.useMemo(() => k.find(e => e.isAvailable()), [k]);
-  if (0 === k.length) return null;
-  let K = k.length;
+    W = i.useMemo(() => j.find(e => e.isAvailable()), [j]);
+  if (0 === j.length) return null;
+  let K = j.length;
   if (t = V ? A.intl.formatToPlainString(G ? A.t["3DW6DQ"] : A.t["/u15QU"], {
       numUnappliedGuildBoostSlots: K
     }) : A.intl.formatToPlainString(G ? A.t["3DW6DQ"] : A.t.BPadnJ, {
@@ -241,7 +241,7 @@ let k = function(e) {
             children: Y
           }), (0, r.jsxs)("div", {
             className: C.__invalid_headerCopy,
-            children: [(0, r.jsx)(c.X6q, {
+            children: [(0, r.jsx)(c.Heading, {
               className: C.headerHeading,
               variant: "heading-lg/bold",
               children: t
@@ -258,7 +258,7 @@ let k = function(e) {
             shouldShow: null == W || N,
             text: a,
             "aria-label": a.toString(),
-            children: e => (0, r.jsx)(c.zxk, w(R({
+            children: e => (0, r.jsx)(c.Button, w(R({
               variant: "primary",
               text: A.intl.string(A.t.BMx1i4)
             }, e), {
@@ -269,7 +269,7 @@ let k = function(e) {
         })]
       }), (!V || U) && (0, r.jsx)("ul", {
         className: C.unappliedBoostSlots,
-        children: k.map(e => (0, r.jsx)(D, {
+        children: j.map(e => (0, r.jsx)(D, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: x,

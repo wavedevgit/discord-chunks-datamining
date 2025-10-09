@@ -92,7 +92,7 @@ function y(e) {
         size: 6,
         horizontal: true
       })]
-    }) : null, (0, r.jsx)(s.X6q, {
+    }) : null, (0, r.jsx)(s.Heading, {
       variant: "text-sm/semibold",
       color: "text-secondary",
       className: o()(h.truncatedText, h.usersHeader),

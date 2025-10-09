@@ -34,7 +34,7 @@ function v(e) {
   } = e;
   if (t) return (0, r.jsx)("div", {
     className: h.oneStepCheckoutTextWrapper,
-    children: (0, r.jsx)(o.X6q, {
+    children: (0, r.jsx)(o.Heading, {
       variant: "heading-md/bold",
       children: n
     })
@@ -99,13 +99,13 @@ let T = function(e) {
     } : []
   });
   if (0 === M.length) return null;
-  let k = (M = M.filter(e => {
+  let j = (M = M.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
         n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
       return !b || b && (t || n)
     })).find(e => e.id === w),
-    j = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
-    U = null != j && null != w,
+    k = null != (i = null == j || null == (n = j.sectionHeaderText) ? true : n.call(j)) ? i : null == j ? true : j.label,
+    U = null != k && null != w,
     G = C && U && w === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
     Z = A ? p.intl.string(p.t["lG6a5+"]) : p.intl.string(p.t["t9uG/v"]);
@@ -146,7 +146,7 @@ let T = function(e) {
       discountAmount: R
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,
-      headerText: j,
+      headerText: k,
       step: w,
       filteredBreadcrumbs: M
     }), G && (0, r.jsx)("div", {

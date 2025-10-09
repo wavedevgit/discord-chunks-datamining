@@ -22,7 +22,7 @@ function c(e) {
   return (0, n.jsxs)("div", {
     className: a()(s.list, d),
     children: [null != t && t.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [null != i ? (0, n.jsx)(o.X6q, {
+      children: [null != i ? (0, n.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: s.header,
@@ -42,7 +42,7 @@ function c(e) {
         }, e.toString()))
       })]
     }) : null, null != r && r.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [null != c ? (0, n.jsx)(o.X6q, {
+      children: [null != c ? (0, n.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: s.header,

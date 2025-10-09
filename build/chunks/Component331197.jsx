@@ -43,9 +43,9 @@ function j(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), k = w || M || R, L = (0, m.sR)({
-    isSoundboardButtonDisabled: k
-  }), [D, U] = (0, h.cv)(L), {
+  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
+    isSoundboardButtonDisabled: L
+  }), [k, U] = (0, h.cv)(D), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: H,
@@ -100,9 +100,9 @@ function j(e) {
   function W() {
     (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
-  let q = r.useRef(null);
+  let Y = r.useRef(null);
   return (0, i.jsx)(s.y, {
-    targetElementRef: q,
+    targetElementRef: Y,
     shouldShow: H && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
@@ -116,7 +116,7 @@ function j(e) {
       let {
         closePopout: n
       } = e;
-      return k ? null : (0, i.jsx)(_.Z, {
+      return L ? null : (0, i.jsx)(_.Z, {
         children: (0, i.jsx)("div", {
           onMouseEnter: F,
           onMouseLeave: G,
@@ -124,7 +124,7 @@ function j(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: D === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.o, {
+            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -134,12 +134,12 @@ function j(e) {
       })
     },
     children: () => (0, i.jsx)(v.d, {
-      ref: q,
+      ref: Y,
       isTrayButton: true,
       themeable: j,
       label: w ? O.intl.string(O.t["Ox4/zc"]) : M ? O.intl.string(O.t["+YBKYG"]) : R ? O.intl.string(O.t.X1lQlp) : true,
       iconComponent: I,
-      disabled: k,
+      disabled: L,
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {

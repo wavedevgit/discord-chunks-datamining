@@ -1,7 +1,7 @@
 /** Chunk was on 48748 **/
 /** chunk id: 52004, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk281556 = require("./281556.js");
-let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
-  d = Chunk442837.ZP.connectStores([Chunk812206.Z], t => {
+let d = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
+  x = Chunk442837.ZP.connectStores([Chunk812206.Z], t => {
     let {
       applicationId: i
     } = t;
@@ -33,7 +33,7 @@ let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
       children: [(0, e.jsxs)(l.xBx, {
         align: r.Z.Align.CENTER,
         justify: r.Z.Justify.BETWEEN,
-        children: [(0, e.jsx)(l.X6q, {
+        children: [(0, e.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
           children: null != i ? m.intl.formatToPlainString(m.t.N2mILi, {
             applicationName: i.name
@@ -49,13 +49,13 @@ let x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
           variant: "text-md/normal",
           children: null != i ? m.intl.format(m.t["MM/7q6"], {
             applicationName: i.name,
-            supportArticleURL: x
+            supportArticleURL: d
           }) : m.intl.format(m.t.IfQUx8, {
-            supportArticleURL: x
+            supportArticleURL: d
           })
         })]
       }), (0, e.jsx)(l.mzw, {
-        children: (0, e.jsx)(l.zxk, {
+        children: (0, e.jsx)(l.Button, {
           variant: "primary",
           text: m.intl.string(m.t.BddRzc),
           onClick: a

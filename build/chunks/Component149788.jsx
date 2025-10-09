@@ -63,7 +63,7 @@ let b = function(e) {
       children: (0, r.jsx)(o.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           className: g.sectionTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",

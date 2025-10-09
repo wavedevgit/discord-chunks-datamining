@@ -50,7 +50,7 @@ function _(e) {
       bodyClassName: b,
       transitionState: y,
       loading: O = false,
-      confirmButtonColor: v = s.zx.Colors.RED,
+      confirmButtonColor: v = s.Button.Colors.RED,
       focusCancel: I = false,
       impression: T
     } = e,
@@ -60,24 +60,24 @@ function _(e) {
       var e;
       return null == (e = S.current) ? true : e.focus()
     }, 0)
-  }, [I]), i.useLayoutEffect(() => () => null == E ? true : E()), null != _ && (t = (0, r.jsx)(s.zx, {
+  }, [I]), i.useLayoutEffect(() => () => null == E ? true : E()), null != _ && (t = (0, r.jsx)(s.Button, {
     "data-migration-pending": true,
     type: "button",
-    look: s.zx.Looks.FILLED,
-    color: s.zx.Colors.PRIMARY,
+    look: s.Button.Looks.FILLED,
+    color: s.Button.Colors.PRIMARY,
     className: u.cancelButton,
-    size: s.zx.Sizes.MEDIUM,
+    size: s.Button.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
       null == m || m(), g()
     },
     autoFocus: I,
     children: _
-  })), null != f && (n = (0, r.jsx)(s.zx, {
+  })), null != f && (n = (0, r.jsx)(s.Button, {
     "data-migration-pending": true,
     buttonRef: S,
     type: "submit",
-    size: s.zx.Sizes.MEDIUM,
+    size: s.Button.Sizes.MEDIUM,
     color: v,
     submitting: O,
     onClick: async () => {
@@ -97,7 +97,7 @@ function _(e) {
     children: [null != a ? (0, r.jsx)(c.xB, {
       "data-migration-pending": true,
       separator: false,
-      children: (0, r.jsx)(l.X6q, {
+      children: (0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         children: a
       })

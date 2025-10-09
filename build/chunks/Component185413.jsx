@@ -86,11 +86,11 @@ function j(e) {
     roles: w,
     members: M,
     getRichTag: R
-  } = (0, g.Q)(a, d, d.accessPermissions, j), k = m.Z.useSections({
+  } = (0, g.Q)(a, d, d.accessPermissions, j), L = m.Z.useSections({
     roles: w,
     members: M
-  }), L = h && 0 === Object.keys(S).length;
-  async function D() {
+  }), D = h && 0 === Object.keys(S).length;
+  async function k() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
@@ -156,9 +156,9 @@ function j(e) {
         renderSection: m.Z.renderSection,
         rowHeight: m.Z.ROW_HEIGHT,
         renderRow: m.Z.renderRow,
-        sections: k
+        sections: L
       },
-      actions: L ? [{
+      actions: D ? [{
         variant: "secondary",
         text: y.intl.string(y.t.u46sxc),
         onClick: p
@@ -169,7 +169,7 @@ function j(e) {
       }, {
         variant: "primary",
         text: y.intl.string(y.t.i4jeWV),
-        onClick: D,
+        onClick: k,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -25,7 +25,7 @@ function h(e) {
     className: l,
     onClick: s,
     disabled: g = false
-  } = e, h = i.useRef(null), x = i.useMemo(() => (0, d.Kz)(t, f), [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
+  } = e, h = i.useRef(null), b = i.useMemo(() => (0, d.Kz)(t, f), [t]), x = null != b ? (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -45,7 +45,7 @@ function h(e) {
   }({
     enableTooltip: false,
     className: p.icon
-  }, x)) : (0, r.jsx)(o.FmF, {
+  }, b)) : (0, r.jsx)(o.FmF, {
     size: "md",
     color: "currentColor",
     className: p.icon
@@ -62,8 +62,8 @@ function h(e) {
       children: [(0, r.jsx)("div", {
         ref: h,
         className: p.preview,
-        children: b
-      }), null != x ? (0, r.jsx)(u.S, {
+        children: x
+      }), null != b ? (0, r.jsx)(u.S, {
         className: p.uploaderIcon
       }) : null]
     })

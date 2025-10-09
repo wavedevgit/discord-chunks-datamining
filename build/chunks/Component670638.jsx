@@ -100,8 +100,8 @@ function x(e) {
       handleComplete: L,
       handleProgress: x,
       handleResetDismissibilityClick: M,
-      handleResetStatusClick: k,
-      handleOverrideDeliveryClick: j
+      handleResetStatusClick: j,
+      handleOverrideDeliveryClick: k
     } = (0, E.kJ)(e.quest.id),
     U = () => {
       x(.9 * Math.random() + .03)
@@ -161,7 +161,7 @@ function x(e) {
     W = () => (0, g.CS)(e.quest.id, true).catch(Y),
     K = () => (0, g.is)(e.quest.id).catch(Y),
     z = () => {
-      k(), K()
+      j(), K()
     },
     q = false,
     X = i.useMemo(() => {
@@ -172,8 +172,8 @@ function x(e) {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
-      action: j
-    }), [j, e.quest.id, null == n ? true : n.id]),
+      action: k
+    }), [k, e.quest.id, null == n ? true : n.id]),
     J = i.useCallback(() => {
       (0, c.uL)(S.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),

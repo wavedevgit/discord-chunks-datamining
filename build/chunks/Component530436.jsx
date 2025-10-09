@@ -1,4 +1,4 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 74318 **/
 /** chunk id: 530436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => g
@@ -18,34 +18,34 @@ function g(e) {
     guild: t,
     error: n,
     onClose: g
-  } = e, h = t.id, m = i.useCallback(() => {
-    g(), a.Z.open(h, d.pNK.INVITES)
-  }, [h, g]), p = i.useCallback(e => (0, l.jsx)(s.P3F, {
-    className: c.errorLink,
-    onClick: m,
-    children: (0, l.jsx)(s.Text, {
+  } = e, m = t.id, I = i.useCallback(() => {
+    g(), s.Z.open(m, u.pNK.INVITES)
+  }, [m, g]), p = i.useCallback(e => (0, l.jsx)(a.P3F, {
+    className: d.errorLink,
+    onClick: I,
+    children: (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), [m]), v = i.useCallback(e => (0, l.jsx)(s.eee, {
-    href: d.EYA.INVITES_HELP,
+  }), [I]), f = i.useCallback(e => (0, l.jsx)(a.Anchor, {
+    href: u.EYA.INVITES_HELP,
     target: "_blank",
-    children: (0, l.jsx)(s.Text, {
+    children: (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), []), I = n instanceof r.Z ? n.code !== d.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(d.Plq.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY2"], {
+  }), []), v = n instanceof r.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? c.intl.format(c.t["H/RUY2"], {
     inviteListHook: p,
-    inviteHelpHook: v
-  }) : u.intl.string(u.t["/FxH6O"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z8);
-  return (0, l.jsx)(s.Text, {
-    className: c.errorMessage,
+    inviteHelpHook: f
+  }) : c.intl.string(c.t["/FxH6O"]) : "message" in n ? n.message : c.intl.string(c.t.eAn6z8);
+  return (0, l.jsx)(a.Text, {
+    className: d.errorMessage,
     variant: "text-xs/normal",
     color: "text-danger",
-    children: I
+    children: v
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 541575, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 
-function x(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,16 +50,16 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = function(e) {
+let x = function(e) {
   let {
     guild: t,
-    disabled: b,
+    disabled: x,
     role: j
   } = e, v = (0, c.oC)(t.id, j), {
     analyticsLocations: _
   } = (0, a.ZP)(), C = t.features.has(g.oNc.ROLE_ICONS), O = e => {
     C || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
-      location: x(h({}, e), {
+      location: b(h({}, e), {
         section: g.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? true : t.id,
@@ -99,7 +99,7 @@ let b = function(e) {
       className: f.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: f.previewContainer,
-        children: null != v ? (0, r.jsx)(s.Z, x(h({}, v), {
+        children: null != v ? (0, r.jsx)(s.Z, b(h({}, v), {
           className: f.roleIconPreview,
           enableTooltip: false
         })) : (0, r.jsx)(i.FmF, {
@@ -109,12 +109,12 @@ let b = function(e) {
           height: 24,
           className: f.preview
         })
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, r.jsx)(i.Button, {
         onClick: () => t.features.has(g.oNc.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("22942").then(n.bind(n, 660727));
-          return n => (0, r.jsx)(e, x(h({}, n), {
+          return n => (0, r.jsx)(e, b(h({}, n), {
             guildId: t.id,
             onUploadIcon: e => (0, u._l)(j.id, e, null),
             onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
@@ -123,14 +123,14 @@ let b = function(e) {
           object: g.qAy.UPLOAD_IMAGE
         }),
         variant: "primary",
-        disabled: b,
+        disabled: x,
         text: p.intl.string(p.t.mD1oGB)
-      }), null != v ? (0, r.jsx)(i.zxk, {
+      }), null != v ? (0, r.jsx)(i.Button, {
         onClick: () => {
           (0, u._l)(j.id, null, null)
         },
         variant: "critical-secondary",
-        disabled: b,
+        disabled: x,
         text: p.intl.string(p.t["uY+Nk5"])
       }) : null]
     })]

@@ -42,7 +42,7 @@ function m(e) {
     label: "Frames Per Second",
     value: t.recentEncodedFrames / (t.recentDurationMs / 1e3)
   }, "framerate")), (0, r.jsxs)(l.Kqy, {
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/medium",
       children: c.intl.string(c.t.MKrFKC)
     }), (0, o.VE)(n), function(e) {
@@ -61,7 +61,7 @@ function m(e) {
         }
         return (0, r.jsxs)("div", {
           className: d.marginBottom40,
-          children: [(0, r.jsx)(l.X6q, {
+          children: [(0, r.jsx)(l.Heading, {
             variant: "heading-md/medium",
             children: "Buffer: ".concat(e.key)
           }), (0, o.VE)(t)]

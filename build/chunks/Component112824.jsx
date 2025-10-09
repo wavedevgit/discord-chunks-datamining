@@ -2,7 +2,7 @@
 /** chunk id: 112824, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  R: () => b,
+  R: () => x,
   Z: () => j
 });
 var Chunk951288 = require("./951288.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,17 +40,17 @@ function x(e) {
   return e
 }
 
-function b(e) {
+function x(e) {
   return p.$X.filter(t => (null == e ? true : e.id) !== m._ && g.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = b(t), m = g.length > 0, j = p.$X.some(e => {
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = x(t), m = g.length > 0, j = p.$X.some(e => {
     var n, r;
     return !u.Z.can(e, t, null, {
-      [i.id]: (n = x({}, i), r = r = {
+      [i.id]: (n = b({}, i), r = r = {
         permissions: a.Od(i.permissions, e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
@@ -66,7 +66,7 @@ function j(e) {
   }), v = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: h.itemContent,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: f.intl.string(f.t["+vaUlJ"])
@@ -105,7 +105,7 @@ function j(e) {
         let {
           default: e
         } = await n.e("39627").then(n.bind(n, 193845));
-        return n => (0, r.jsx)(e, x({
+        return n => (0, r.jsx)(e, b({
           guild: t
         }, n))
       })

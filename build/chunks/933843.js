@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 933843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => i
@@ -6,5 +6,5 @@ require.d(exports, {
 var Chunk37113 = require("./37113.js");
 
 function i(e, t) {
-  return e === r.LY.RESOLUTION_720 && t !== r.ws.FPS_60
+  return e === r.ApplicationStreamResolutions.RESOLUTION_720 && t !== r.ApplicationStreamFPS.FPS_60
 }

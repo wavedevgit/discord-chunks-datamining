@@ -6,7 +6,7 @@ require.d(exports, {
   UM: () => A,
   V6: () => y,
   WT: () => b,
-  X7: () => I,
+  X7: () => j,
   jq: () => C,
   mx: () => x
 }), require("./415506.js");
@@ -39,15 +39,15 @@ let x = 100,
     var t;
     return (null == (t = e.channel) ? true : t.type) === m.d4z.GROUP_DM
   },
-  I = e => null == e.channel && null == e.guild && null != e.inviter,
-  j = e => e.state === m.r2o.ACCEPTED,
+  j = e => null == e.channel && null == e.guild && null != e.inviter,
+  I = e => e.state === m.r2o.ACCEPTED,
   N = e => {
     let {
       guild_scheduled_event: t
     } = e;
     return null != t
   },
-  S = e => !N(e) && (!!I(e) || null != e.inviter && !j(e) && !(e => {
+  S = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = E(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
@@ -102,7 +102,7 @@ function C(e) {
     }) : f.intl.string(f.t.OsdY8P)
   } else v(t) && null != t.target_user ? s = f.intl.formatToPlainString(f.t.x2L32d, {
     username: t.target_user.username
-  }) : j(t) ? s = f.intl.string(f.t["FDsl+P"]) : S(t) && null != t.inviter && (s = f.intl.format(f.t.spU2mJ, {
+  }) : I(t) ? s = f.intl.string(f.t["FDsl+P"]) : S(t) && null != t.inviter && (s = f.intl.format(f.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
@@ -141,7 +141,7 @@ function A(e) {
       children: [(0, r.jsx)(o.Vj, {
         guild: s,
         size: o.Vj.Sizes.SMALL
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(a.Heading, {
         color: "header-primary",
         variant: "heading-xl/semibold",
         children: s.name

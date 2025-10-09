@@ -2,7 +2,7 @@
 /** chunk id: 566036, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,14 +58,14 @@ function h(e) {
     }, e))
   })
 }
-let x = [];
+let b = [];
 
-function b(e) {
+function x(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : x, m = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, m = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -74,7 +74,7 @@ function b(e) {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, d]), b = i.useRef(d), j = i.useMemo(() => (a().isEqual(new Set(d), new Set(b.current)) || (b.current = [...d]), b.current), [d]);
+  }, [o, d]), x = i.useRef(d), j = i.useMemo(() => (a().isEqual(new Set(d), new Set(x.current)) || (x.current = [...d]), x.current), [d]);
   return (0, r.jsxs)(s.C3N, {
     label: g.intl.string(g.t.BR68vL),
     description: g.intl.string(g.t.MobxiI),

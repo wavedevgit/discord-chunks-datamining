@@ -44,7 +44,7 @@ function _(e) {
         children: _
       }), null != p && null != g && (0, r.jsx)("div", {
         className: d.ctaButtonContainer,
-        children: (0, r.jsx)(s.zxk, {
+        children: (0, r.jsx)(s.Button, {
           text: p,
           variant: "overlay-secondary",
           onClick: g,

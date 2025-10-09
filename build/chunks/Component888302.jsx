@@ -41,7 +41,7 @@ function u() {
       count: require
     })
   }, [module, require, d, exports, u]);
-  return (0, Chunk951288.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsx)(Chunk481060.Heading, {
     variant: "heading-lg/semibold",
     children: g()
   })

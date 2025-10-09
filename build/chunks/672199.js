@@ -43,7 +43,7 @@ function f(e, t, n, f) {
     },
     onConfirmClick: (e, t) => {
       (0, l.Z)((0, o.getPID)(), {
-        preset: d.tI.PRESET_VIDEO
+        preset: d.ApplicationStreamPresets.PRESET_VIDEO
       }), v("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {

@@ -46,7 +46,7 @@ let x = e => {
   }, [t, j, y]);
   return null == x ? null : (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       className: b.header,
       variant: "heading-sm/semibold",
       children: h.intl.string(h.t.iouM3d)

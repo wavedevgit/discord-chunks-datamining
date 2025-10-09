@@ -120,7 +120,7 @@ function I(e) {
         shouldHideMediaOptions: true
       }), null == C || C(), null == A || A()
     }, [D, A, C]),
-    k = w ? (0, r.jsx)(a.zsu, {
+    j = w ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {
@@ -156,7 +156,7 @@ function I(e) {
         caretConfig: I
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
-        children: k
+        children: j
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,

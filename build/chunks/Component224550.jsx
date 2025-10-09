@@ -64,11 +64,11 @@ let g = (e, t, n, r) => {
         planGroup: x,
         isPrepaidPaymentSource: false
       }),
-      k = h.intl.format(h.t.Y2Rkqa, {
+      j = h.intl.format(h.t.Y2Rkqa, {
         primaryText: M,
         paidURL: f.EYA.PAID_TERMS
       }),
-      j = h.intl.format(h.t.H2uH5e, {
+      k = h.intl.format(h.t.H2uH5e, {
         primaryText: M,
         paidURL: f.EYA.PAID_TERMS
       }),
@@ -101,20 +101,20 @@ let g = (e, t, n, r) => {
           throw Error("Unexpected interval: ".concat(t))
       } else if (C === f.GZQ.ONE_TIME) switch (N) {
         case f.POd.COLLECTIBLES:
-          G = k, U = y ? h.intl.format(h.t.Amdf8f, {
+          G = j, U = y ? h.intl.format(h.t.Amdf8f, {
             paidURL: f.EYA.PAID_TERMS
           }) : h.intl.format(h.t["40vM4u"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         case f.POd.GUILD_PRODUCT:
-          G = k, U = h.intl.format(h.t["GEAQ+v"], {
+          G = j, U = h.intl.format(h.t["GEAQ+v"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         default:
-          G = j, U = h.intl.string(h.t["9/siSU"])
-      } else if (null == b || y) switch (y && (G = k), t) {
+          G = k, U = h.intl.string(h.t["9/siSU"])
+      } else if (null == b || y) switch (y && (G = j), t) {
         case p.rV.MONTH:
           U = y ? h.intl.string(h.t.IjNapq) : h.intl.string(h.t["/sGXPj"]), U = y ? h.intl.string(h.t.IjNapq) : 1 === n ? h.intl.string(h.t["/sGXPj"]) : h.intl.formatToPlainString(h.t.Fqjiho, {
             intervalCount: n

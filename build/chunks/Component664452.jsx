@@ -1,7 +1,7 @@
-/** Chunk was on 58175 **/
-/** chunk id: 664452, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 61536 **/
+/** chunk id: 664452, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,139 +20,139 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk796668 = require("./796668.js");
 
-function j(t) {
-  for (var e = 1; e < arguments.length; e++) {
-    var n = null != arguments[e] ? arguments[e] : {},
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-      return Object.getOwnPropertyDescriptor(n, t).enumerable
-    }))), r.forEach(function(e) {
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
       var r;
-      r = n[e], e in t ? Object.defineProperty(t, e, {
+      r = n[t], t in e ? Object.defineProperty(e, t, {
         value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : t[e] = r
+      }) : e[t] = r
     })
   }
-  return t
+  return e
 }
 
-function x(t, e) {
-  return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
-    var n = Object.keys(t);
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(t);
+      var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(e)).forEach(function(n) {
-    Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
-  }), t
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
 }
 
-function y(t) {
+function x(e) {
   let {
-    guildId: e,
+    guildId: t,
     transitionState: n,
-    onClose: y,
+    onClose: x,
     analyticsData: v
-  } = t, N = (0, a.e7)([o.Z], () => o.Z.getGuild(e), [e]), m = !!(null == N ? true : N.features.has(O.oNc.INVITES_DISABLED)), [E] = i.useState(false), [S, C] = i.useState(f.Fl), I = (0, a.e7)([b.Z], () => b.Z.getGuildIncident(e)), T = (0, u.BT)(N), D = (0, p.SG)(I) || m, A = (0, p.sN)(I), [P, w] = i.useState(D), [R, M] = i.useState(A), [k, G] = i.useState(false), L = P !== D || R !== A || k, Z = m && !T;
-  if (null == N) return y(), null;
+  } = e, C = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), N = !!(null == C ? true : C.features.has(_.oNc.INVITES_DISABLED)), [S] = i.useState(false), [m, E] = i.useState(g.Fl), I = (0, a.e7)([p.Z], () => p.Z.getGuildIncident(t)), A = (0, d.BT)(C), D = (0, b.SG)(I) || N, T = (0, b.sN)(I), [P, w] = i.useState(D), [k, M] = i.useState(T), [R, G] = i.useState(false), L = P !== D || k !== T || R, U = N && !A;
+  if (null == C) return x(), null;
 
-  function U() {
-    w(t => !t)
+  function Z() {
+    w(e => !e)
   }
   return (0, r.jsx)(l.Modal, {
     transitionState: n,
-    title: h.intl.string(h.t.oCYAc3),
+    title: O.intl.string(O.t.oCYAc3),
     actions: [{
-      text: h.intl.string(h.t["ETE/oK"]),
-      onClick: y,
+      text: O.intl.string(O.t["ETE/oK"]),
+      onClick: x,
       variant: "secondary",
-      disabled: E
+      disabled: S
     }, {
-      text: h.intl.string(h.t["pwm/z8"]),
+      text: O.intl.string(O.t["pwm/z8"]),
       onClick: () => {
-        (D || A) && !P && !R ? ((0, d.n)(N.id, false, false), (0, s.ZDy)(() => Promise.resolve(t => (0, r.jsx)(g.Z, x(j({}, t), {
-          guildId: e
-        }))))) : (0, d.n)(N.id, P, R, S);
+        (D || T) && !P && !k ? ((0, u.n)(C.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, r.jsx)(f.default, j(y({}, e), {
+          guildId: t
+        }))))) : (0, u.n)(C.id, P, k, m);
         let {
-          source: t,
+          source: e,
           alertType: n,
           messageId: i
         } = v;
-        c.default.track(O.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
-          guild_id: e,
-          source: t,
+        c.default.track(_.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
+          guild_id: t,
+          source: e,
           raid_alert_id: i,
           raid_alert_type: n,
-          intervention_type_enabled: (0, p.sO)(P, R),
-          intervention_type_disabled: (0, p.lk)(P, R),
-          duration: 60 * S
-        }), y()
+          intervention_type_enabled: (0, b.sO)(P, k),
+          intervention_type_disabled: (0, b.lk)(P, k),
+          duration: 60 * m
+        }), x()
       },
-      loading: E,
+      loading: S,
       disabled: !L
     }],
-    onClose: y,
+    onClose: x,
     children: (0, r.jsxs)("div", {
-      className: _.mainContainer,
-      children: [(0, r.jsx)(s.PhF, {
-        placeholder: h.intl.string(h.t.vKYZzc),
-        options: (0, f.c1)(),
-        select: t => {
-          C(t), G(true)
+      className: h.mainContainer,
+      children: [(0, r.jsx)(o.PhF, {
+        placeholder: O.intl.string(O.t.vKYZzc),
+        options: (0, g.c1)(),
+        select: e => {
+          E(e), G(true)
         },
-        isSelected: t => t === S,
-        serialize: t => String(t)
+        isSelected: e => e === m,
+        serialize: e => String(e)
       }), (0, r.jsxs)("div", {
-        className: _.pauseContainer,
+        className: h.pauseContainer,
         children: [(0, r.jsxs)("div", {
-          className: _.pauseText,
-          children: [(0, r.jsx)(s.Text, {
+          className: h.pauseText,
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: h.intl.string(h.t.Uwsjn5)
-          }), (0, r.jsx)(s.Text, {
+            children: O.intl.string(O.t.Uwsjn5)
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: h.intl.string(h.t.qPJkZm)
+            children: O.intl.string(O.t.qPJkZm)
           })]
-        }), (0, r.jsx)(s.ua7, {
+        }), (0, r.jsx)(o.ua7, {
           "data-migration-pending": true,
-          text: h.intl.string(h.t["9GPbsb"]),
-          shouldShow: m,
-          children: t => (0, r.jsx)("div", x(j({}, t), {
-            className: _.toggle,
-            children: (0, r.jsx)(s.rsf, {
-              onChange: U,
+          text: O.intl.string(O.t["9GPbsb"]),
+          shouldShow: N,
+          children: e => (0, r.jsx)("div", j(y({}, e), {
+            className: h.toggle,
+            children: (0, r.jsx)(o.rsf, {
+              onChange: Z,
               checked: P,
-              disabled: Z
+              disabled: U
             })
           }))
         })]
       }), (0, r.jsxs)("div", {
-        className: _.pauseContainer,
+        className: h.pauseContainer,
         children: [(0, r.jsxs)("div", {
-          className: _.pauseText,
-          children: [(0, r.jsx)(s.Text, {
+          className: h.pauseText,
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: h.intl.string(h.t.wrDmAw)
-          }), (0, r.jsx)(s.Text, {
+            children: O.intl.string(O.t.wrDmAw)
+          }), (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: h.intl.string(h.t.UQbJW1)
+            children: O.intl.string(O.t.UQbJW1)
           })]
         }), (0, r.jsx)("div", {
-          className: _.toggle,
-          children: (0, r.jsx)(s.rsf, {
+          className: h.toggle,
+          children: (0, r.jsx)(o.rsf, {
             onChange: function() {
-              M(t => !t)
+              M(e => !e)
             },
-            checked: R
+            checked: k
           })
         })]
       })]

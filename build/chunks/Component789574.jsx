@@ -2,7 +2,7 @@
 /** chunk id: 789574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b,
+  Z: () => x,
   j: () => j
 });
 var Chunk951288 = require("./951288.js");
@@ -22,7 +22,7 @@ var Chunk13107 = require("./13107.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function x(e) {
   let {
     refToScroller: t
   } = e, n = (0, l.e7)([g.Z], () => g.Z.getGuild()), {
@@ -67,14 +67,14 @@ function j() {
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => ({
     guild: Chunk999382.Z.getGuild(),
     submitting: Chunk999382.Z.isSubmitting()
-  })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), b = false, j = null;
-  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (b = true, j = (0, Chunk951288.jsx)(Chunk481060.Text, {
+  })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), x = false, j = null;
+  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "text-danger",
     variant: "text-md/normal",
     children: Chunk388032.intl.string(Chunk388032.t["mrO/ZW"])
   })), (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: require,
-    disabled: b,
+    disabled: x,
     errorMessage: j,
     onReset: () => {
       Chunk139387.Z.init(), Chunk821864.Ui(), null != exports && Chunk434404.Z.init(exports.id)

@@ -1,7 +1,7 @@
-/** Chunk was on 46746 **/
-/** chunk id: 233037, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 4093 **/
+/** chunk id: 233037, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,45 +18,45 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk376681 = require("./376681.js");
 
-function g(e) {
+function j(e) {
   let {
-    selectedChannelId: t,
-    guildId: n,
-    onChangeSelectedChannelId: g
-  } = e, x = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, i.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, i.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
-    var n;
+    selectedChannelId: n,
+    guildId: t,
+    onChangeSelectedChannelId: j
+  } = e, p = (0, r.e7)([o.default], () => o.default.getCurrentUser()), v = (0, r.e7)([a.Z, s.ZP, c.Z], () => (0, d.h_)(s.ZP.getChannels(t), a.Z, c.Z)), f = (0, r.e7)([u.ZP], () => u.ZP.getVoiceStates(t)), Z = v.map(e => {
+    var t;
     return {
-      name: (0, r.jsx)(f.Z, {
+      name: (0, l.jsx)(m.Z, {
         channel: e,
-        users: null == (n = v[e.id]) ? true : n.filter(e => {
+        users: null == (t = f[e.id]) ? true : t.filter(e => {
           let {
-            user: t
+            user: n
           } = e;
-          return t.id !== (null == x ? true : x.id)
+          return n.id !== (null == p ? true : p.id)
         }).map(e => {
           let {
-            user: t
+            user: n
           } = e;
-          return t
+          return n
         }),
-        selected: e.id === t
+        selected: e.id === n
       }),
       value: e.id
     }
   });
-  return (0, r.jsx)(h.Z, {
-    title: m.intl.string(m.t["eg7R/v"]),
-    scrollerInnerClassName: p.channelSelectScrollerInner,
-    children: (0, r.jsx)(l.Gu, {
-      options: j,
-      value: t,
-      itemInfoClassName: p.channelInfoWrapper,
-      itemTitleClassName: p.channelTitleWrapper,
+  return (0, l.jsx)(x.Z, {
+    title: g.intl.string(g.t["eg7R/v"]),
+    scrollerInnerClassName: h.channelSelectScrollerInner,
+    children: (0, l.jsx)(i.Gu, {
+      options: Z,
+      value: n,
+      itemInfoClassName: h.channelInfoWrapper,
+      itemTitleClassName: h.channelTitleWrapper,
       onChange: e => {
         let {
-          value: t
+          value: n
         } = e;
-        return g(t)
+        return j(n)
       }
     })
   })

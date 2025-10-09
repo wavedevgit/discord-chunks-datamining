@@ -221,7 +221,7 @@ function ea(e) {
     reactionType: s,
     onRemoveReactor: l,
     disableManage: c = false
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), f = (0, u.e7)([j.default], () => j.default.getUser(n.id), [n]), p = (0, N.$R)(a), g = (0, u.e7)([M.Z], () => M.Z.can(V.Plq.MANAGE_MESSAGES, a) && p) || d === n.id, b = (0, u.e7)([D.ZP, w.Z, k.Z], () => B.ZP.getName(o, a.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), f = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), p = (0, N.$R)(a), g = (0, u.e7)([M.Z], () => M.Z.can(V.Plq.MANAGE_MESSAGES, a) && p) || d === n.id, b = (0, u.e7)([D.ZP, w.Z, j.Z], () => B.ZP.getName(o, a.id, n));
 
   function y() {
     A.WO({

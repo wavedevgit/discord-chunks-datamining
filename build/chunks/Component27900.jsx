@@ -69,7 +69,7 @@ function A(e) {
     onShowProfile: S,
     onWatchStream: _,
     appContext: P
-  } = e, A = (0, j.Z)({
+  } = e, A = (0, v.Z)({
     onAction: () => {
       null == S || S()
     }
@@ -79,15 +79,15 @@ function A(e) {
   }), M = (0, b.Z)({
     user: t,
     appContext: P
-  }), x = (0, p.Z)(t.id, _), C = (0, E.Z)(t.id), D = (0, m.Z)(t.id, a), w = (0, v.Z)({
+  }), x = (0, p.Z)(t.id, _), D = (0, E.Z)(t.id), C = (0, j.Z)(t.id, a), w = (0, m.Z)({
     user: t
   }), N = (0, u.Z)(null, t), T = (0, f.Z)({
     user: t,
     appContext: P
-  }), U = (0, O.Z)({
+  }), k = (0, O.Z)({
     user: t,
     appContext: P
-  }), k = (0, Z.Z)({
+  }), U = (0, Z.Z)({
     user: t,
     appContext: P
   }), L = (0, s.Z)({
@@ -105,11 +105,11 @@ function A(e) {
       }), (0, l.jsxs)(r.kSQ, {
         children: [A, I, M, x]
       }), (0, l.jsx)(r.kSQ, {
-        children: C
+        children: D
       }), (0, l.jsx)(r.kSQ, {
         children: N
       }), (0, l.jsxs)(r.kSQ, {
-        children: [D, w, T, k, U]
+        children: [C, w, T, U, k]
       }), (0, l.jsx)(r.kSQ, {
         children: B
       })]
@@ -127,7 +127,7 @@ function I(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: g
-  } = e, S = (0, j.Z)({
+  } = e, S = (0, v.Z)({
     onAction: () => {
       null == a || a()
     }
@@ -137,9 +137,9 @@ function I(e) {
   }), P = (0, b.Z)({
     user: t,
     appContext: g
-  }), A = (0, p.Z)(t.id, c), I = (0, E.Z)(t.id), M = (0, m.Z)(t.id, n), x = (0, v.Z)({
+  }), A = (0, p.Z)(t.id, c), I = (0, E.Z)(t.id), M = (0, j.Z)(t.id, n), x = (0, m.Z)({
     user: t
-  }), C = (0, u.Z)(null, t), D = (0, f.Z)({
+  }), D = (0, u.Z)(null, t), C = (0, f.Z)({
     user: t,
     appContext: g
   }), w = (0, O.Z)({
@@ -151,23 +151,23 @@ function I(e) {
   }), T = (0, s.Z)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnJ"])
-  }), U = (0, d.Z)(t), k = t.isNonUserBot();
+  }), k = (0, d.Z)(t), U = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
     "aria-label": h.intl.string(h.t.liqwPD),
     onSelect: o,
-    children: [!k && (0, l.jsxs)(l.Fragment, {
+    children: [!U && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
-        children: U
+        children: k
       }), (0, l.jsxs)(r.kSQ, {
         children: [S, _, P, A]
       }), (0, l.jsx)(r.kSQ, {
         children: I
       }), (0, l.jsx)(r.kSQ, {
-        children: C
+        children: D
       }), (0, l.jsxs)(r.kSQ, {
-        children: [M, x, D, N, w]
+        children: [M, x, C, N, w]
       })]
     }), (0, l.jsx)(r.kSQ, {
       children: T

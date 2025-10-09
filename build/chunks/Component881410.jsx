@@ -125,7 +125,7 @@ function g(e) {
     },
     children: e => (0, n.jsx)("div", {
       ref: O,
-      children: (0, n.jsx)(o.zxk, f({
+      children: (0, n.jsx)(o.Button, f({
         variant: "secondary",
         size: "sm",
         icon: o.qJs,

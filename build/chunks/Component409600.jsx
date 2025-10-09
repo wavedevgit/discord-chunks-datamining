@@ -24,13 +24,13 @@ function p(e) {
   let {
     onClose: t,
     onComplete: n,
-    transitionState: l,
+    transitionState: a,
     applicationId: r,
     analyticsLocationObject: o,
     skuId: u
   } = e, {} = (0, s.JL)(), {
     analyticsLocations: d
-  } = (0, a.ZP)();
+  } = (0, l.ZP)();
   return (0, i.jsx)(c.PaymentModal, {
     onClose: t,
     onComplete: n,
@@ -40,7 +40,7 @@ function p(e) {
     initialPlanId: null,
     analyticsObject: o,
     analyticsLocations: d,
-    transitionState: l
+    transitionState: a
   })
 }
 
@@ -53,8 +53,8 @@ function m(e) {
     isGift: h = false
   } = e, {
     analyticsLocations: m
-  } = (0, a.ZP)(f, l.Z.PREMIUM_PAYMENT_MODAL);
-  return (0, i.jsx)(a.Gt, {
+  } = (0, l.ZP)(f, a.Z.PREMIUM_PAYMENT_MODAL);
+  return (0, i.jsx)(l.Gt, {
     value: m,
     children: (0, i.jsx)(s.PaymentContextProvider, {
       loadId: t,

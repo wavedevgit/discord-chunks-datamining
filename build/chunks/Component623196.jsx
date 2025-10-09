@@ -103,7 +103,7 @@ function O() {
         })
       }) : null, (0, Chunk951288.jsx)("div", {
         className: Chunk672413.button,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.dmBSKi),
           disabled: v,

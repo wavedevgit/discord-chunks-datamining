@@ -27,7 +27,7 @@ let p = function(e) {
     collapsedHeight: v,
     onGameSheetOpened: C,
     onGameSheetClosed: y
-  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
+  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, a.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: p,
     collapsedContentRef: O,
@@ -65,7 +65,7 @@ let p = function(e) {
         children: [(0, r.jsx)(d.Z, {
           expansionSpring: m,
           isExpanded: g
-        }), !T && (0, r.jsx)(a.Z, {
+        }), !T && (0, r.jsx)(o.Z, {
           quest: b,
           expansionSpring: m,
           useReducedMotion: j,

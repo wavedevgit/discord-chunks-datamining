@@ -71,7 +71,7 @@ function m(e) {
     }
     return l
   }(e, ["guildId", "user", "location", "modReportId"]);
-  let [v, h] = l.useState(""), [M, A] = l.useState(false), C = (0, u.sE)(t, {
+  let [v, h] = l.useState(""), [M, C] = l.useState(false), A = (0, u.sE)(t, {
     location: m,
     targetUserId: n.id
   }), {
@@ -86,11 +86,11 @@ function m(e) {
   }), T = l.useCallback(() => {
     if (c.Z.kickUser(t, n.id, v, y).then(() => {
         M && null != y && s.Z.resolveFlag(y)
-      }), C(u.jQ.KICK), null != y) {
+      }), A(u.jQ.KICK), null != y) {
       var e;
       null == (e = j.onClose) || e.call(j)
     }
-  }, [t, n.id, v, C, y, M, j]), I = l.useCallback(e => {
+  }, [t, n.id, v, A, y, M, j]), I = l.useCallback(e => {
     h(e)
   }, []);
   return null != y && P ? (0, r.jsx)(i.Modal, E(p({}, j), {
@@ -106,10 +106,10 @@ function m(e) {
       size: "sm",
       variant: "critical-primary"
     }],
-    actionBarInput: S ? true : (0, r.jsx)(a.XZJ, {
+    actionBarInput: S ? true : (0, r.jsx)(a.Checkbox, {
       checked: M,
       onChange: e => {
-        A(e)
+        C(e)
       },
       label: g.intl.string(b.default["8yIKen"])
     }),

@@ -19,7 +19,7 @@ function p(e) {
   } = e, n = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), {
     styleLarge: r,
     styleSmall: p
-  } = i.useMemo(() => ({
+  } = l.useMemo(() => ({
     styleLarge: {
       width: "".concat(10 + 50 * Math.random(), "%")
     },
@@ -27,41 +27,41 @@ function p(e) {
       width: "".concat(30 + 60 * Math.random(), "%")
     }
   }), []);
-  return (0, l.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: a()(d.container, d.loadingAnimation, {
       [d.noAnimation]: n,
       [d.containerBorderRadius]: t !== u.U4.ROW,
       [d.rowContainer]: t === u.U4.ROW
     }),
-    children: [(0, l.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       className: a()(d.bannerImage, {
         [d.mediumBanner]: t === u.U4.MEDIUM_BANNER,
         [d.largeBanner]: t === u.U4.LARGE_BANNER
       })
-    }), (0, l.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: a()(d.appDetailsContainer, {
         [d.appDetailsRowContainer]: t === u.U4.ROW
       }),
-      children: [(0, l.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: a()(d.iconPlaceholder, {
           [d.rowIconPlaceholder]: t === u.U4.ROW
         })
-      }), (0, l.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: d.textContainer,
-        children: [(0, l.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           className: d.textPlaceholder,
           style: r,
-          children: (0, l.jsx)(s.X6q, {
+          children: (0, i.jsx)(s.Heading, {
             className: d.hidden,
             variant: "heading-md/semibold",
             color: "header-primary",
             lineClamp: 1,
             children: "_"
           })
-        }), (0, l.jsx)("div", {
+        }), (0, i.jsx)("div", {
           className: d.textPlaceholder,
           style: p,
-          children: (0, l.jsx)(s.Text, {
+          children: (0, i.jsx)(s.Text, {
             className: d.hidden,
             variant: "text-sm/normal",
             color: "text-secondary",
@@ -69,7 +69,7 @@ function p(e) {
             children: "_"
           })
         })]
-      }), t === u.U4.ROW && (0, l.jsx)("div", {
+      }), t === u.U4.ROW && (0, i.jsx)("div", {
         className: d.rowDivider
       })]
     })]

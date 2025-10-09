@@ -25,7 +25,7 @@ let u = function(e) {
         alt: "",
         className: d.headerImage,
         src: u ? l : c
-      }), (0, a.jsx)(o.X6q, {
+      }), (0, a.jsx)(o.Heading, {
         className: d.title,
         variant: "heading-xl/medium",
         children: s.intl.string(s.t.tWYWJy)
@@ -45,7 +45,7 @@ let u = function(e) {
     }), (0, a.jsx)(o.mzw, {
       "data-migration-pending": true,
       className: d.modalFooter,
-      children: (0, a.jsx)(o.zxk, {
+      children: (0, a.jsx)(o.Button, {
         variant: "primary",
         text: s.intl.string(s.t.cpT0Cg),
         onClick: t

@@ -76,15 +76,15 @@ function y(e) {
     } = (0, c.ZP)(),
     M = null == y ? true : y.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
-    k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    L = null == t || j ? o.ejJ : o.gQj,
-    D = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
-  return null != k && E ? (0, i.jsx)(m.Z, {
+    L = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
+    D = null == t || j ? o.ejJ : o.gQj,
+    k = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
+  return null != L && E ? (0, i.jsx)(m.Z, {
     onClick: () => {
-      null != w && (0, u.v)(w, u.d.INVITE), s.h7(k, false, A)
+      null != w && (0, u.v)(w, u.d.INVITE), s.h7(L, false, A)
     },
-    iconComponent: L,
-    label: D,
+    iconComponent: D,
+    label: k,
     iconClassName: S,
     look: P,
     size: I,
@@ -107,7 +107,7 @@ function y(e) {
           null == c || c(), (0, o.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
+            } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
             return n => {
               var o, s;
               return (0, i.jsx)(e, (o = C({}, n), s = s = {
@@ -116,7 +116,7 @@ function y(e) {
                 streamUserId: l,
                 applicationId: a,
                 analyticsLocation: u,
-                source: r.isGuildStageVoice() ? g.t4x.STAGE_CHANNEL : g.t4x.STREAM_INVITE,
+                source: r.isGuildStageVoice() ? g.InstantInviteSources.STAGE_CHANNEL : g.InstantInviteSources.STREAM_INVITE,
                 guildScheduledEvent: d
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -144,8 +144,8 @@ function y(e) {
           guildScheduledEvent: O
         })
     },
-    iconComponent: L,
-    label: D,
+    iconComponent: D,
+    label: k,
     iconClassName: S,
     look: P,
     size: I,

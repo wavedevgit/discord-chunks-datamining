@@ -49,10 +49,10 @@ function C(e) {
   }), [D, q] = i.useState(() => {
     var e;
     return new Set(null != (e = null == h ? true : h.roleIds) ? e : [])
-  }), [z, F] = i.useState({}), H = i.useRef(null);
+  }), [z, H] = i.useState({}), F = i.useRef(null);
   i.useLayoutEffect(() => {
     var e;
-    return null == (e = H.current) ? true : e.focus()
+    return null == (e = F.current) ? true : e.focus()
   }, []);
   let J = i.useCallback(() => {
       var e;
@@ -70,7 +70,7 @@ function C(e) {
           let r = (0, p.en)(e, t, n, l);
           return null != r && (i.roles = r), i
         }(C, x.Z.editedOnboardingPrompts, I, t);
-      F(l), o().isEmpty(l) && (r(t), n())
+      H(l), o().isEmpty(l) && (r(t), n())
     }, [T, R, E, C, n, r, null == h ? true : h.id, I, D, k]),
     K = i.useMemo(() => [{
       text: y.intl.string(y.t["ETE/oK"]),
@@ -98,7 +98,7 @@ function C(e) {
         children: y.intl.format(y.t.yjS3zs, {
           index: P + 1
         })
-      }), (0, l.jsx)(u.X6q, {
+      }), (0, l.jsx)(u.Heading, {
         id: S,
         variant: "heading-lg/semibold",
         children: null != I.title && I.title.length > 0 ? I.title : y.intl.string(y.t.vY91Cw)
@@ -107,7 +107,7 @@ function C(e) {
         children: [(0, l.jsx)(u.oil, {
           label: y.intl.string(y.t.VWdcBg),
           required: true,
-          inputRef: H,
+          inputRef: F,
           placeholder: y.intl.string(y.t.EHe6gY),
           value: k,
           onChange: e => M(e),

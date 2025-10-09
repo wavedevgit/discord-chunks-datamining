@@ -19,7 +19,7 @@ function u(e) {
   } = e, u = (0, a.e7)([l.Z], () => l.Z.canSubmitFpReport(t)), d = i.useCallback(() => {
     (0, s.e)(n, t)
   }, [n, t]);
-  return (0, r.jsx)(o.zxk, {
+  return (0, r.jsx)(o.Button, {
     variant: "secondary",
     text: c.intl.string(c.t["4q1ElZ"]),
     onClick: d,

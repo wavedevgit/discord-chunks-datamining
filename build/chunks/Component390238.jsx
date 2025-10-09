@@ -1,7 +1,7 @@
 /** Chunk was on 88938 **/
 /** chunk id: 390238, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,18 +32,18 @@ function A(e) {
     transitionState: n,
     onClose: o,
     quest: m,
-    location: h,
+    location: g,
     reward: x,
     sourceQuestContent: j
-  } = e, _ = r.useRef(null), [v, w] = r.useState(null), A = r.useRef(new s.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), M = (null == (t = m.userStatus) ? true : t.claimedAt) != null, [B, I] = r.useState(M ? "claimed" : "loading");
+  } = e, _ = r.useRef(null), [v, w] = r.useState(null), A = r.useRef(new s.qA), k = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), B = (null == (t = m.userStatus) ? true : t.claimedAt) != null, [M, I] = r.useState(B ? "claimed" : "loading");
   r.useEffect(() => {
-    if (!M) {
+    if (!B) {
       let e = f.r.build(m.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : C.y$.CROSS_PLATFORM;
-      (0, g.QB)(m.id, t, h).then(() => I("claimed")).catch(() => I("error"))
+      (0, h.QB)(m.id, t, g).then(() => I("claimed")).catch(() => I("error"))
     }
-  }, [m, h, M]);
-  let S = "loading" === B;
+  }, [m, g, B]);
+  let S = "loading" === M;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.O_, {
       ref: w,
@@ -62,18 +62,18 @@ function A(e) {
         parentComponent: "QuestsRewardInGameModal",
         children: S ? (0, a.jsx)(l.$jN, {
           type: l.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === B ? (0, a.jsx)(p.Z, {
+        }) : "error" === M ? (0, a.jsx)(p.Z, {
           onClose: o
-        }) : (0, a.jsx)(k, {
+        }) : (0, a.jsx)(y, {
           quest: m,
           rewardName: x.messages.name,
-          location: h,
-          useReducedMotion: y,
+          location: g,
+          useReducedMotion: k,
           onClose: o,
           sourceQuestContent: j
         })
       })
-    }), !y && !M && "claimed" === B && (0, a.jsx)(u.Z, {
+    }), !k && !B && "claimed" === M && (0, a.jsx)(u.Z, {
       confettiTarget: _.current,
       confettiCanvas: v,
       sprites: N.CA,
@@ -82,7 +82,7 @@ function A(e) {
   })
 }
 
-function k(e) {
+function y(e) {
   let {
     quest: t,
     rewardName: n,
@@ -130,7 +130,7 @@ function k(e) {
       separator: false,
       children: (0, a.jsxs)("div", {
         className: R.gradient,
-        children: [(0, a.jsx)(l.X6q, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           color: "always-white",
           className: R.heading,
@@ -148,14 +148,14 @@ function k(e) {
   })
 }
 
-function y(e) {
+function k(e) {
   let {
     quest: t,
     location: n,
     onClose: o,
     transitionState: i,
     sourceQuestContent: s
-  } = e, d = r.useMemo(() => (0, h.K)(t.config), [t]);
+  } = e, d = r.useMemo(() => (0, g.K)(t.config), [t]);
   return null == d ? null : (0, a.jsx)(j.A, {
     questOrQuests: t,
     questContent: C.jn.REWARD_MODAL,

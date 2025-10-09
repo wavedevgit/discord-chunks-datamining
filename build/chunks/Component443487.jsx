@@ -158,7 +158,7 @@ function I(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(s.X6q, {
+  return (0, r.jsx)(s.Heading, {
     color: "text-default",
     variant: "heading-sm/medium",
     className: g.contentTitle,

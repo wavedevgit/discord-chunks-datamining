@@ -77,7 +77,7 @@ function p(e) {
   return (0, r.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: a()(s.buttonWrapper, n),
-    children: (0, r.jsx)(o.zxk, d(c({}, l), {
+    children: (0, r.jsx)(o.Button, d(c({}, l), {
       variant: "overlay-primary",
       size: "sm",
       text: t,

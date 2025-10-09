@@ -56,18 +56,18 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: T
-  }), V = (0, j.Z)(n.id, M), F = (0, g.Z)({
+  }), V = (0, m.Z)(n.id, M), F = (0, g.Z)({
     guildId: u,
     userId: n.id,
     analyticsLocation: null != A ? A : U.location,
     analyticsLocations: [R],
     context: M
-  }), K = (0, Z.Z)({
+  }), Y = (0, Z.Z)({
     user: n,
     guildId: u,
     location: R,
     channelId: c
-  }), Y = (0, P.Z)({
+  }), K = (0, P.Z)({
     user: n,
     guildId: u,
     location: R,
@@ -76,7 +76,7 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     id: n.id,
     label: C.intl.string(C.t["/AXYnJ"]),
     onSuccess: q
-  }), J = (0, m.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
+  }), J = (0, j.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
   return (0, l.jsxs)(a.v2r, {
     navId: "user-context",
     onClose: () => {
@@ -88,7 +88,7 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       children: [(0, l.jsxs)(a.kSQ, {
         children: [G, V]
       }), (0, l.jsxs)(a.kSQ, {
-        children: [F, Y, K]
+        children: [F, K, Y]
       }), B && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(a.kSQ, {
           children: Q

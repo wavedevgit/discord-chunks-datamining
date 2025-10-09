@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
 
 function T(e) {
   switch (e) {
-    case d.Q.INPUT:
-      return d.a.INPUT;
-    case d.Q.OUTPUT:
-      return d.a.OUTPUT;
-    case d.Q.INPUT_AND_OUTPUT:
-      return d.a.INPUT_AND_OUTPUT;
+    case s.Q.INPUT:
+      return s.a.INPUT;
+    case s.Q.OUTPUT:
+      return s.a.OUTPUT;
+    case s.Q.INPUT_AND_OUTPUT:
+      return s.a.INPUT_AND_OUTPUT;
     default:
       return null
   }
@@ -36,12 +36,12 @@ function p(e) {
       transitionState: v
     } = e,
     [U, h] = (0, i.useState)(null != n ? T(n.type) : null),
-    x = (0, i.useRef)(false);
+    _ = (0, i.useRef)(false);
 
-  function _() {
-    x.current = true, s.Wz(n.displayName)
+  function x() {
+    _.current = true, d.Wz(n.displayName)
   }(0, o.zq)(() => {
-    x.current || _()
+    _.current || x()
   }), (0, i.useEffect)(() => {
     c.default.track(u.rMx.OPEN_MODAL, {
       type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
@@ -50,7 +50,7 @@ function p(e) {
   }, [n.displayName, p]);
   let D = null != p ? m.intl.string(m.t.kiqvHR) : m.intl.string(m.t.AbnGIy);
   switch (n.type) {
-    case d.Q.INPUT:
+    case s.Q.INPUT:
       t = null != p ? m.intl.format(m.t.NqNqy8, {
         vendorName: p.vendor.name,
         modelName: p.model.name
@@ -58,7 +58,7 @@ function p(e) {
         name: n.displayName
       });
       break;
-    case d.Q.OUTPUT:
+    case s.Q.OUTPUT:
       t = null != p ? m.intl.format(m.t.uPgqIC, {
         vendorName: p.vendor.name,
         modelName: p.model.name
@@ -77,12 +77,12 @@ function p(e) {
           value: function(e) {
             if (null == e) return null;
             switch (e) {
-              case d.a.INPUT:
-                return d.Q.INPUT;
-              case d.a.OUTPUT:
-                return d.Q.OUTPUT;
-              case d.a.INPUT_AND_OUTPUT:
-                return d.Q.INPUT_AND_OUTPUT;
+              case s.a.INPUT:
+                return s.Q.INPUT;
+              case s.a.OUTPUT:
+                return s.Q.OUTPUT;
+              case s.a.INPUT_AND_OUTPUT:
+                return s.Q.INPUT_AND_OUTPUT;
               default:
                 return null
             }
@@ -90,13 +90,13 @@ function p(e) {
           onChange: e => h(T(e)),
           options: [{
             name: m.intl.string(m.t.vhxqwc),
-            value: d.Q.INPUT_AND_OUTPUT
+            value: s.Q.INPUT_AND_OUTPUT
           }, {
             name: m.intl.string(m.t["Kqs9+P"]),
-            value: d.Q.INPUT
+            value: s.Q.INPUT
           }, {
             name: m.intl.string(m.t.GGlM3d),
-            value: d.Q.OUTPUT
+            value: s.Q.OUTPUT
           }]
         })]
       })
@@ -107,7 +107,7 @@ function p(e) {
     parentComponent: "ConnectedDeviceDetectionModal",
     children: [(0, a.jsx)(r.xBx, {
       separator: false,
-      children: (0, a.jsx)(r.X6q, {
+      children: (0, a.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
         children: D
       })
@@ -120,7 +120,7 @@ function p(e) {
             look: l.zx.Looks.LINK,
             color: l.zx.Colors.LINK,
             onClick: () => {
-              x.current = true, s.Gl(n.displayName), c.default.track(u.rMx.MODAL_DISMISSED, {
+              _.current = true, d.Gl(n.displayName), c.default.track(u.rMx.MODAL_DISMISSED, {
                 type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
                 location_object: n.displayName,
                 dismiss_type: "permanent"
@@ -138,18 +138,18 @@ function p(e) {
         children: [(0, a.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: N.cancelButton,
-          children: (0, a.jsx)(r.zxk, {
+          children: (0, a.jsx)(r.Button, {
             variant: "secondary",
             text: m.intl.string(m.t.vPBgq6),
             onClick: () => {
-              _(), f()
+              x(), f()
             }
           })
-        }), (0, a.jsx)(r.zxk, {
+        }), (0, a.jsx)(r.Button, {
           variant: "primary",
           text: m.intl.string(m.t.ydkoDQ),
           onClick: () => {
-            x.current = true, null != U && s.mo(n.displayName, U, "New Audio Device Detected Modal"), f()
+            _.current = true, null != U && d.mo(n.displayName, U, "New Audio Device Detected Modal"), f()
           }
         })]
       })

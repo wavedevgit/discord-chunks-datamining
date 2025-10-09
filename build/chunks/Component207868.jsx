@@ -23,15 +23,15 @@ let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
   } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), _ = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), j = (0, s.e7)([p.Z], () => p.Z.can(b.Plq.CONNECT, t)), {
-    needSubscriptionToAccess: x
-  } = (0, u.Z)(t.id), O = (0, h.$R)(t), v = i.useCallback(() => {
+    needSubscriptionToAccess: O
+  } = (0, u.Z)(t.id), x = (0, h.$R)(t), v = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
-      needSubscriptionToAccess: x,
+      needSubscriptionToAccess: O,
       locked: false
     })
-  }, [t, l, x]);
+  }, [t, l, O]);
   return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, v), () => {
     g.S.unsubscribe(b.CkL.CALL_START, v)
   }), [v]), h.tM.useExperiment({
@@ -39,7 +39,7 @@ let _ = Chunk647438.memo(function(e) {
     location: "63250c_1"
   }, {
     autoTrackExposure: false
-  }).enabled && !n && !l && j && O && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
+  }).enabled && !n && !l && j && x && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
     icon: o.Csw,
     onClick: v,
     tooltip: _ ? y.intl.string(y.t.fdEeb2) : y.intl.string(y.t.focH1t)

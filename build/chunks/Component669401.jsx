@@ -22,7 +22,7 @@ let u = function(e) {
   }, [null == n || null == (t = n.install_params) ? true : t.permissions]);
   return null != u && u.length > 0 ? (0, r.jsxs)("div", {
     className: d.sectionContainer,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: c.intl.string(c.t.runNFx)

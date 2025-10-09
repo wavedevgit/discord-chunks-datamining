@@ -49,7 +49,7 @@ function E(e) {
   if (null == n) return null;
   let N = (0, d.P9)(T);
   return t ? N = g.intl.string(g.t.XvBdeX) : A && (N = g.intl.string(g.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.zxk, {
+    children: [(0, r.jsx)(o.Button, {
       size: "sm",
       variant: A ? "secondary" : "active",
       icon: o.hGI,

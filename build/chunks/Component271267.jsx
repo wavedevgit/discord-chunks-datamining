@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Q: () => m,
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ function p(e) {
     eligibilityError: s,
     refreshEligibility: o
   } = e;
-  return (0, r.jsx)(l.zxk, {
+  return (0, r.jsx)(l.Button, {
     variant: "expressive",
     onClick: function() {
       (0, l.ZDy)(async () => {
@@ -90,7 +90,7 @@ function f(e) {
     submitAcceptTermsRequest: g
   } = (0, a.Z)(t.id), [m, p] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.XZJ, {
+    children: [(0, r.jsx)(l.Checkbox, {
       onChange: function() {
         p(e => !e)
       },
@@ -98,7 +98,7 @@ function f(e) {
       label: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(l.Button, {
       disabled: !m || !o,
       onClick: g,
       loading: u,
@@ -139,7 +139,7 @@ function h(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -152,7 +152,7 @@ function x(e) {
       alt: c.intl.string(c.t.Af4klJ)
     }), (0, r.jsxs)("div", {
       className: d.ctaContent,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: c.intl.string(c.t.PqYfh4)

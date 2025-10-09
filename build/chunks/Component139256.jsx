@@ -2,7 +2,7 @@
 /** chunk id: 139256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $e: () => j,
+  $e: () => k,
   $w: () => F,
   Og: () => H,
   ZY: () => V,
@@ -153,7 +153,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let t, {
     className: n,
     children: i,
@@ -177,7 +177,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     answers: t,
     answersInteraction: n,
@@ -253,7 +253,7 @@ function U(e) {
         children: a
       });
     case 1:
-      return (0, r.jsx)(k, {
+      return (0, r.jsx)(j, {
         className: o()(t, f),
         onClick: p,
         isSelected: _,

@@ -33,7 +33,7 @@ function d(e) {
           section: t
         }), null == u || u())
       },
-      children: [(0, r.jsxs)(s.X6q, {
+      children: [(0, r.jsxs)(s.Heading, {
         variant: "text-sm/medium",
         color: "text-default",
         children: [n, " — ", l.length]

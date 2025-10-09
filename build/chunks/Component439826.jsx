@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk780384 = require("./780384.js"),
@@ -37,29 +37,29 @@ function A(e) {
   var t;
   let {
     quest: n,
-    errorHints: o,
-    warningHints: a,
+    errorHints: a,
+    warningHints: o,
     isDarkTheme: l,
     sourceQuestContent: c
   } = e, {
     ref: p,
     height: g = 0
-  } = (0, u.ZP)([o]), f = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, x.z)(n), {
+  } = (0, u.ZP)([a]), f = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, x.z)(n), {
     type: _,
     hints: b
   } = s.useMemo(() => f || h ? {
     type: 2,
     hints: []
-  } : o.length > 0 ? {
-    type: 0,
-    hints: o.map(e => e.message)
   } : a.length > 0 ? {
+    type: 0,
+    hints: a.map(e => e.message)
+  } : o.length > 0 ? {
     type: 1,
-    hints: a
+    hints: o
   } : {
     type: 2,
     hints: []
-  }, [o, f, h, a]), v = 2 !== _, C = (0, d.q_F)({
+  }, [a, f, h, o]), v = 2 !== _, C = (0, d.q_F)({
     opacity: +!!v,
     height: v ? g : 0,
     config: w.Y
@@ -83,7 +83,7 @@ function A(e) {
         text: N.intl.string(N.t["yKJi+/"]),
         onClick: () => (0, j.y)({
           quest: n,
-          errorHints: o,
+          errorHints: a,
           sourceQuestContent: c
         }),
         variant: "always-white",
@@ -94,24 +94,24 @@ function A(e) {
 }
 
 function B(e) {
-  var t, n, o, i, u;
+  var t, n, a, i, u;
   let {
     quest: m,
     isHovering: j,
     errorHints: w,
     warningHints: B,
     isVisibleInViewport: k,
-    onCtxMenuClose: q,
-    onCtxMenuOpen: I,
+    onCtxMenuClose: I,
+    onCtxMenuOpen: q,
     onCtxMenuSelect: D,
     sourceQuestContent: L
-  } = e, V = (0, f.PB)(m), Q = (0, p.ZP)(), M = ((0, c.wj)(Q) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, x.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, U = (0, x.B6)(m.config.expiresAt, {
+  } = e, V = (0, f.PB)(m), Q = (0, p.ZP)(), M = ((0, c.wj)(Q) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, x.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, H = (0, x.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), H = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
+  }), U = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (a = m.userStatus) ? true : a.completedAt) != null, {
     onAssetLoadComplete: z
-  } = s.useContext(O.k), X = s.useCallback(async () => {
-    V && ((0, f.zi)(m) || H ? (0, y.openVideoQuestModal)({
+  } = s.useContext(O.k), K = s.useCallback(async () => {
+    V && ((0, f.zi)(m) || U ? (0, y.openVideoQuestModal)({
       quest: m,
       questContent: _.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: L,
@@ -131,7 +131,7 @@ function B(e) {
       sourceQuestContent: L,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [V, m, H, L]);
+  }, [V, m, U, L]);
   return (0, r.jsxs)("div", {
     className: R.container,
     children: [(0, r.jsx)("div", {
@@ -147,7 +147,7 @@ function B(e) {
         containerClassName: R.heroAssetCont
       })
     }), (0, r.jsx)("div", {
-      className: a()(R.overlay, {
+      className: o()(R.overlay, {
         [R.darkThemeGradient]: M,
         [R.lightThemeGradient]: !M
       })
@@ -166,21 +166,21 @@ function B(e) {
               children: N.intl.string(N.t.SKNnqq)
             })
           }), V && (0, r.jsx)(l.u, {
-            text: F ? N.intl.string(N.t.YsCuyM) : H ? N.intl.string(N.t["74Kqra"]) : (0, f.zi)(m) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
+            text: F ? N.intl.string(N.t.YsCuyM) : U ? N.intl.string(N.t["74Kqra"]) : (0, f.zi)(m) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {
               className: R.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.RscU7O),
-              onClick: X,
+              onClick: K,
               children: (0, r.jsx)(d.o1U, {
                 color: "currentColor",
                 className: R.utilButtonIcon
               })
             })
           }), (0, r.jsx)(E.r, {
-            onOpen: I,
-            onClose: q,
+            onOpen: q,
+            onClose: I,
             onSelect: D,
             questContent: _.jn.QUEST_HOME_DESKTOP,
             quest: m,
@@ -252,7 +252,7 @@ function B(e) {
             variant: "text-sm/medium",
             color: M ? "text-muted" : "always-white",
             children: N.intl.format(N.t["7D8r4O"], {
-              expiryDate: U
+              expiryDate: H
             })
           })]
         })]

@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk703824 = require("./703824.js");
 
-function a(e) {
+function u(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -52,16 +52,16 @@ function p(e) {
     subscriptions: n,
     color: t = "text-default"
   } = e, p = n.some(e => (0, l.yE)(e.skuFlags, s.l4R.APPLICATION_GUILD_SUBSCRIPTION));
-  return (0, r.jsx)(i.X6q, {
+  return (0, r.jsx)(i.Heading, {
     variant: "heading-lg/semibold",
     color: t,
-    className: u.heading,
+    className: a.heading,
     children: p ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.QTo, c(a({}, d), {
+      children: [(0, r.jsx)(i.QTo, c(u({}, d), {
         color: "currentColor"
       })), o.intl.string(o.t.XIhSoq)]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(i.tBG, c(a({}, d), {
+      children: [(0, r.jsx)(i.tBG, c(u({}, d), {
         color: "currentColor"
       })), o.intl.string(o.t.dxfZpq)]
     })

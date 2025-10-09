@@ -24,30 +24,30 @@ function v(e) {
   let {
     platformType: a,
     isWaitingForConnection: t,
-    onWaitingForConnection: n,
+    onWaitingForConnection: s,
     expectedCallbackState: m,
     onAuthToken: v,
-    onError: k,
-    onClose: f,
+    onError: f,
+    onClose: k,
     img: b,
-    title: E,
-    body: T,
-    redirectDestination: g
-  } = e, O = s.useCallback(async () => {
+    title: g,
+    body: E,
+    redirectDestination: T
+  } = e, O = n.useCallback(async () => {
     let e;
     try {
       if (e = await (0, u.H)(a, {
           twoWayLinkType: i.g.DESKTOP
         }), null == e) throw Error("missing authorizeURL")
     } catch (e) {
-      p.error("Error opening provider authorize page", e), k();
+      p.error("Error opening provider authorize page", e), f();
       return
     }
     let {
       state: t
     } = (0, x.xp)(e);
-    l()(null != t, "Authorize URL state query parameter must be present"), null == n || n(t)
-  }, [a, k, n]), y = s.useCallback(e => {
+    l()(null != t, "Authorize URL state query parameter must be present"), null == s || s(t)
+  }, [a, f, s]), y = n.useCallback(e => {
     let {
       callbackCode: t,
       callbackState: r
@@ -58,7 +58,7 @@ function v(e) {
       callbackState: r
     })
   }, [a, m, v]);
-  return s.useEffect(() => (d.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", y), () => {
+  return n.useEffect(() => (d.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", y), () => {
     d.Z.unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", y)
   }), [y]), (0, r.jsxs)(N.Z, {
     children: [(0, r.jsxs)(c.xBx, {
@@ -76,13 +76,13 @@ function v(e) {
       }), (0, r.jsxs)("div", {
         className: j.illustration,
         children: [b, " "]
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, r.jsx)(c.Heading, {
         className: j.title,
         variant: "heading-xl/extrabold",
-        children: E
-      }), null != f && (0, r.jsx)(c.olH, {
+        children: g
+      }), null != k && (0, r.jsx)(c.olH, {
         className: j.closeButton,
-        onClick: f
+        onClick: k
       })]
     }), (0, r.jsxs)(c.hzk, {
       className: j.body,
@@ -91,13 +91,13 @@ function v(e) {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: T
-      }), !t && null != g && (0, r.jsx)(c.Text, {
+        children: E
+      }), !t && null != T && (0, r.jsx)(c.Text, {
         tag: "p",
         variant: "text-sm/normal",
         color: "header-secondary",
         children: C.intl.format(C.t.XhlYYm, {
-          redirectUrl: g
+          redirectUrl: T
         })
       })]
     }), (0, r.jsx)(c.mzw, {

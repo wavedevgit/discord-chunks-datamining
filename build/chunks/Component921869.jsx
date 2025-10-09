@@ -25,7 +25,7 @@ function h(e) {
     body: j,
     learnMoreLink: p,
     valueProps: v
-  } = e, k = (0, n.e7)([o.Z], () => {
+  } = e, f = (0, s.e7)([o.Z], () => {
     let e = o.Z.getAccount(null, a);
     return (null == e ? true : e.twoWayLink) === false
   });
@@ -37,10 +37,10 @@ function h(e) {
       children: [(0, r.jsxs)("div", {
         className: u.illustration,
         children: [m, " "]
-      }), (0, r.jsx)(l.X6q, {
+      }), (0, r.jsx)(l.Heading, {
         className: u.title,
         variant: "heading-xl/extrabold",
-        children: k && null != C ? C : N
+        children: f && null != C ? C : N
       }), (0, r.jsx)(l.olH, {
         className: u.closeButton,
         onClick: h
@@ -57,13 +57,13 @@ function h(e) {
         children: v.map((e, a) => {
           let {
             label: t,
-            subLabel: n,
+            subLabel: s,
             icon: l
           } = e;
-          return (0, r.jsxs)(s.Fragment, {
+          return (0, r.jsxs)(n.Fragment, {
             children: [(0, r.jsx)(d.Z, {
               label: t,
-              subLabel: n,
+              subLabel: s,
               icon: l
             }, t), a !== v.length - 1 && (0, r.jsx)("div", {
               className: u.valuePropDivider
@@ -83,7 +83,7 @@ function h(e) {
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: u.footerButton,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "primary",
           text: x.intl.string(x.t["3PatS0"]),
           onClick: t

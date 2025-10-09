@@ -28,7 +28,7 @@ function u(e) {
   }, {
     name: d.intl.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
-  }], [f]), x = i.useCallback(e => {
+  }], [f]), b = i.useCallback(e => {
     o.Z.updateGuild({
       defaultMessageNotifications: e
     })
@@ -40,6 +40,6 @@ function u(e) {
     options: h,
     value: m,
     disabled: !p,
-    onChange: x
+    onChange: b
   })
 }

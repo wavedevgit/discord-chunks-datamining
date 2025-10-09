@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 208265, original params: e,n,i (module,exports,require) **/
+/** chunk id: 208265, original params: n,e,i (module,exports,require) **/
 require.d(exports, {
   default: () => h
 }), require("./388685.js");
@@ -17,31 +17,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk149390 = require("./149390.js");
 
-function h(e) {
+function h(n) {
   let {
-    classificationId: n,
+    classificationId: e,
     transitionState: i,
     initialSlide: h = g.Cs.SPEED_BUMP,
     onClose: N
-  } = e, [C, j] = a.useState(h), {
+  } = n, [C, j] = a.useState(h), {
     classification: _,
     isDsaEligible: E
-  } = (0, r.YG)(null != n ? n : p.lds), v = (null == _ ? true : _.is_spam) || false, I = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
+  } = (0, r.YG)(null != e ? e : p.lds), v = (null == _ ? true : _.is_spam) || false, I = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
   a.useEffect(() => {
     j(h)
   }, [j, h]);
   let S = a.useCallback(() => {
       d.Z.close(), N()
     }, [N]),
-    k = a.useCallback(() => {
-      var e;
-      let n = null == (e = g.JQ[C]) ? true : e.next;
-      n ? j(n) : S()
-    }, [C, S]),
     A = a.useCallback(() => {
-      var e;
-      let n = null == (e = g.JQ[C]) ? true : e.prev;
-      n ? j(n) : S()
+      var n;
+      let e = null == (n = g.JQ[C]) ? true : n.next;
+      e ? j(e) : S()
+    }, [C, S]),
+    k = a.useCallback(() => {
+      var n;
+      let e = null == (n = g.JQ[C]) ? true : n.prev;
+      e ? j(e) : S()
     }, [C, S]);
   return (0, t.jsx)(l.Y0X, {
     "data-migration-pending": true,
@@ -61,7 +61,7 @@ function h(e) {
           children: (0, t.jsx)(m.Z, {
             classification: _,
             onClose: S,
-            onNext: k,
+            onNext: A,
             isSpam: v,
             isCoppa: I,
             appealIngestionType: T,
@@ -74,8 +74,8 @@ function h(e) {
           children: (0, t.jsx)(o.Z, {
             isDsaEligible: E,
             onClose: S,
-            onNext: k,
-            onBack: A
+            onNext: A,
+            onBack: k
           })
         }), (0, t.jsx)(l.Mi4, {
           id: g.Cs.CONFIRM_SUBMISSION,
@@ -84,15 +84,15 @@ function h(e) {
           children: (0, t.jsx)(c.Z, {
             isDsaEligible: E,
             onClose: S,
-            onNext: k,
-            onBack: A
+            onNext: A,
+            onBack: k
           })
         }), (0, t.jsx)(l.Mi4, {
           id: g.Cs.REQUEST_SENT,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_REQUEST_SENT,
           impressionProperties: g.ZW,
           children: (0, t.jsx)(x.Z, {
-            onNext: k
+            onNext: A
           })
         })]
       })

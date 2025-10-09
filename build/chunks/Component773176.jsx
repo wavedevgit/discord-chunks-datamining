@@ -119,7 +119,7 @@ let ef = Chunk647438.memo(function(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, b.q5)(t.guild_id).filter(e => !Y.ZP.isEmojiFilteredOrLocked({
+  } = e, r = (0, b.q5)(t.guild_id).filter(e => !K.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: eo.Hz.REACTION,
@@ -190,8 +190,8 @@ function em(e) {
     canForward: w,
     isExpanded: M,
     showMoreUtilities: H,
-    showEmojiPicker: Y,
-    showMessageBookmarksActions: K,
+    showEmojiPicker: K,
+    showMessageBookmarksActions: q,
     isMessageBookmark: er,
     setPopout: eo,
     hasDeveloperMode: ec,
@@ -208,7 +208,7 @@ function em(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
+    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), h = (0, u.e7)([B.default], () => B.default.getId()), g = (0, k.$R)(t), b = (0, k.Gu)(t), {
       firstMessage: C
     } = (0, u.e7)([_.Z], () => _.Z.getMessage(t.id), [t.id]), y = U.nc.useSetting(), x = U.Sb.useSetting(), O = (0, u.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
@@ -216,13 +216,13 @@ function em(e) {
     } = (0, u.cj)([z.Z], () => ({
       canAddNewReactions: O && z.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: z.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, O]), P = (0, R.U)(t, n), I = (0, D.NE)(t, n), Z = (0, D.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, O]), P = (0, R.U)(t, n), I = (0, k.NE)(t, n), Z = (0, k.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == C ? true : C.id) && !(0, $.Z)(n));
     let M = (0, X.a4)(n),
       H = (0, Q.Z)(n, t),
       W = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
-        disableReactionCreates: Y
+        disableReactionCreates: K
       } = (0, ee.Z)({
         channel: t,
         canChat: O,
@@ -232,7 +232,7 @@ function em(e) {
         isGuest: N,
         isActiveChannelOrUnarchivableThread: g
       }),
-      K = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
+      q = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
       et = t.getGuildId(),
       en = null != et && n.type === el.uaV.USER_JOIN && z.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: et
@@ -240,10 +240,10 @@ function em(e) {
       ei = (0, v.a)(n),
       {
         enabled: er
-      } = k.Z.useExperiment({
+      } = L.Z.useExperiment({
         location: "message_utilities"
       }),
-      ea = (0, u.e7)([L.Z], () => null != L.Z.getSavedMessage(t.id, n.id)),
+      ea = (0, u.e7)([D.Z], () => null != D.Z.getSavedMessage(t.id, n.id)),
       eo = (0, c.Z)(a),
       es = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     return {
@@ -257,10 +257,10 @@ function em(e) {
       canStartThread: I,
       canViewThread: Z,
       canForward: ei,
-      canCopy: q.wS,
+      canCopy: Y.wS,
       hasDeveloperMode: x,
-      canReact: !Y && y,
-      canPublish: K,
+      canReact: !K && y,
+      canPublish: q,
       canConfigureJoin: en,
       isExpanded: eo && !es && !i && !r && !l,
       showEmojiPicker: i,
@@ -280,9 +280,9 @@ function em(e) {
     })
   }, [H, eo, n]), eg = r.useCallback(() => {
     eo({
-      emojiPicker: !Y
+      emojiPicker: !K
     })
-  }, [Y, eo]), eb = (0, D.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = r.useState(false), eE = r.useCallback(() => {
+  }, [K, eo]), eb = (0, k.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = r.useState(false), eE = r.useCallback(() => {
     ej(true)
   }, []), eS = r.useCallback(() => {
     ej(false)
@@ -313,7 +313,7 @@ function em(e) {
         label: es.intl.string(es.t.RpE9k5),
         icon: p.z7b,
         onClick: () => (0, en.B8)(t, n)
-      }, "mark-unread") : null, K ? (0, i.jsx)(et.sF, {
+      }, "mark-unread") : null, q ? (0, i.jsx)(et.sF, {
         label: er ? es.intl.string(es.t.LHUP9P) : es.intl.string(es.t["9p3D9v"]),
         icon: er ? p.plf : p.gt9,
         onClick: () => er ? (0, en.eM)(t, n) : (0, en.dF)(t, n)
@@ -339,7 +339,7 @@ function em(e) {
       }), (0, i.jsx)(ei.Z, {
         togglePopout: eg,
         renderEmojiPicker: eC,
-        shouldShow: Y,
+        shouldShow: K,
         isFocused: ed,
         channel: t,
         message: n

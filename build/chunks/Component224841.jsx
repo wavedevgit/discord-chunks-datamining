@@ -22,7 +22,7 @@ let u = () => (0, Chunk951288.jsx)(Chunk388905.ZP, {
       children: Chunk388032.intl.format(Chunk388032.t.KQgoxM, {
         underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4O)
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       icon: Chunk481060.Gr1,
       text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.AGE_GATE), "_blank"),

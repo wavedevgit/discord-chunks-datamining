@@ -80,8 +80,8 @@ function _(e) {
     guildTemplateCode: E,
     birthday: v,
     invite: b = null,
-    giftCodeSKUId: I = null,
-    promoEmailConsent: j = null,
+    giftCodeSKUId: j = null,
+    promoEmailConsent: I = null,
     usedUsernameSuggestion: N = null
   } = e;
   if (s.Z.dispatch({
@@ -108,17 +108,17 @@ function _(e) {
       consent: _,
       phone_token: n,
       date_of_birth: null == v ? true : v.format("YYYY-MM-DD"),
-      gift_code_sku_id: I,
+      gift_code_sku_id: j,
       guild_template_code: E,
-      promotional_email_opt_in: null == j ? true : j.checked
+      promotional_email_opt_in: null == I ? true : I.checked
     },
     trackedActionData: {
       event: l.NetworkActionNames.USER_REGISTER,
       properties: {
         invite_code: b,
         used_username_suggestion: N,
-        promotional_email_opt_in: null == j ? true : j.checked,
-        promotional_email_pre_checked: null == j ? true : j.preChecked,
+        promotional_email_opt_in: null == I ? true : I.checked,
+        promotional_email_pre_checked: null == I ? true : I.preChecked,
         was_unique_username: true
       }
     },

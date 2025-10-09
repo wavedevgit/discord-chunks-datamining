@@ -1,5 +1,5 @@
 /** Chunk was on 85342 **/
-/** chunk id: 346585, original params: e,t,r (module,exports,require) **/
+/** chunk id: 346585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K9: () => h,
   NX: () => y,
@@ -38,14 +38,14 @@ let f = ["@", "#", ":"],
 
 function y(e) {
   var t;
-  let r = e.username.toLowerCase();
-  if ((t = u.kt, r.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
+  let n = e.username.toLowerCase();
+  if ((t = u.kt, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
   for (let e of f)
-    if (r.includes(e)) returntrue;
+    if (n.includes(e)) returntrue;
   for (let e of p)
-    if (r === e.toLowerCase()) returntrue;
+    if (n === e.toLowerCase()) returntrue;
   for (let e of E)
-    if (r.includes(e.toLowerCase())) returntrue;
+    if (n.includes(e.toLowerCase())) returntrue;
   returnfalse
 }
 

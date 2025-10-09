@@ -67,9 +67,9 @@ function A(e) {
     setValue: M,
     openClips: R
   } = e, {
-    analyticsLocations: k,
-    newestAnalyticsLocation: L
-  } = (0, d.ZP)(), D = (0, g.Dt)({
+    analyticsLocations: L,
+    newestAnalyticsLocation: D
+  } = (0, d.ZP)(), k = (0, g.Dt)({
     channel: t
   });
 
@@ -142,7 +142,7 @@ function A(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: L
+      analyticsLocation: D
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -223,7 +223,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.JOIN,
                 activity: n,
-                location: k[k.length - 1]
+                location: L[L.length - 1]
               })
             }
           }, "play");
@@ -237,7 +237,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.LISTEN,
                 activity: n,
-                location: k[k.length - 1]
+                location: L[L.length - 1]
               })
             }
           }, "listen");
@@ -251,7 +251,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.WATCH,
                 activity: n,
-                location: k[k.length - 1]
+                location: L[L.length - 1]
               })
             }
           }, "watch");
@@ -281,7 +281,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: D
+            children: k
           }, "scheduled_message");
         default:
           return null

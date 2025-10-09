@@ -38,48 +38,48 @@ function I(e) {
     imageCoverUrl: s,
     sectionName: u,
     hasCommands: p
-  } = e, m = i.useMemo(() => {
+  } = e, m = l.useMemo(() => {
     var e;
     return null != (e = (0, b.jD)(n)) ? e : ""
   }, [n]), f = (0, o.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), {
     isSlideReady: h
-  } = (0, N.hH)(), [x, y] = i.useState(false);
-  i.useEffect(() => {
-    h && y(true)
+  } = (0, N.hH)(), [y, x] = l.useState(false);
+  l.useEffect(() => {
+    h && x(true)
   }, [h]);
   let g = null != r;
-  return (0, l.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: _.container,
-    children: [(0, l.jsxs)("div", {
-      children: [g ? (0, l.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
+      children: [g ? (0, i.jsxs)("div", {
         className: _.videoContainer,
-        children: [x ? (0, l.jsx)(v.Z, {
+        children: [y ? (0, i.jsx)(v.Z, {
           className: a()(_.videoCover, _.video),
           loop: true,
           muted: true,
           autoPlay: true,
           src: r,
           poster: s
-        }) : null, (0, l.jsx)("img", {
+        }) : null, (0, i.jsx)("img", {
           className: _.videoCover,
           src: s,
           "aria-label": A.intl.string(A.t.X4IxWF)
         })]
-      }) : null, (0, l.jsxs)("div", {
+      }) : null, (0, i.jsxs)("div", {
         className: g ? _.overviewContainerWithVideo : _.overviewContainerNoVideo,
-        children: [(0, l.jsx)(T, {
+        children: [(0, i.jsx)(T, {
           application: n
-        }), (0, l.jsx)(L, {
+        }), (0, i.jsx)(L, {
           application: n
-        }), m.length > 0 ? (0, l.jsx)(w, {
+        }), m.length > 0 ? (0, i.jsx)(w, {
           description: m
-        }) : null, f ? (0, l.jsx)("div", {
+        }) : null, f ? (0, i.jsx)("div", {
           className: _.developerShelfControlsContainer,
-          children: (0, l.jsx)(d.W, {
+          children: (0, i.jsx)(d.W, {
             hideSearch: true,
             className: _.developerShelfControls
           })
-        }) : null, (0, l.jsx)(Z, {
+        }) : null, (0, i.jsx)(Z, {
           context: t,
           application: n,
           sectionName: u,
@@ -87,7 +87,7 @@ function I(e) {
           hasCommands: p
         })]
       })]
-    }), (0, l.jsx)(S, {
+    }), (0, i.jsx)(S, {
       application: n
     })]
   })
@@ -96,25 +96,25 @@ function I(e) {
 function S(e) {
   let {
     application: t
-  } = e, n = (0, b.Cb)(t), i = (0, b.Hu)(t);
-  return n || i ? (0, l.jsxs)("div", {
+  } = e, n = (0, b.Cb)(t), l = (0, b.Hu)(t);
+  return n || l ? (0, i.jsxs)("div", {
     className: _.monetizationDisclosureContainerStyle,
-    children: [n ? (0, l.jsxs)("div", {
+    children: [n ? (0, i.jsxs)("div", {
       className: _.monetizationDisclosureStyle,
-      children: [(0, l.jsx)(s.EOn, {
+      children: [(0, i.jsx)(s.EOn, {
         size: "sm",
         color: s.TVs.colors.INTERACTIVE_MUTED
-      }), (0, l.jsx)(s.Text, {
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: A.intl.string(A.t["8z5B2d"])
       })]
-    }) : null, i ? (0, l.jsxs)("div", {
+    }) : null, l ? (0, i.jsxs)("div", {
       className: _.monetizationDisclosureStyle,
-      children: [(0, l.jsx)(s.uMN, {
+      children: [(0, i.jsx)(s.uMN, {
         size: "sm",
         color: s.TVs.colors.INTERACTIVE_MUTED
-      }), (0, l.jsx)(s.Text, {
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: A.intl.string(A.t["5khEk5"])
@@ -127,16 +127,16 @@ function T(e) {
   var t;
   let {
     application: n
-  } = e, i = (0, b.BQ)(n) ? n.name : null != (t = (0, b.$d)(n)) ? t : "", r = (0, b.vJ)(n);
-  return (0, l.jsxs)("div", {
+  } = e, l = (0, b.BQ)(n) ? n.name : null != (t = (0, b.$d)(n)) ? t : "", r = (0, b.vJ)(n);
+  return (0, i.jsxs)("div", {
     className: _.titleContainer,
-    children: [(0, l.jsx)(s.X6q, {
+    children: [(0, i.jsx)(s.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
-      children: i
-    }), r ? (0, l.jsx)("div", {
+      children: l
+    }), r ? (0, i.jsx)("div", {
       className: _.partnerLabelContainer,
-      children: (0, l.jsx)(s.Text, {
+      children: (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: A.intl.string(A.t.LO4f0N)
@@ -148,17 +148,17 @@ function T(e) {
 function L(e) {
   let {
     application: t
-  } = e, n = i.useMemo(() => {
+  } = e, n = l.useMemo(() => {
     var e;
     return (0, b.BQ)(t) && null != (e = null == t ? true : t.tags) ? e : []
   }, [t]);
-  return (0, b.ye)(t) ? (0, l.jsxs)("div", {
+  return (0, b.ye)(t) ? (0, i.jsxs)("div", {
     className: _.tagsContainer,
-    children: [(0, l.jsx)(R, {
+    children: [(0, i.jsx)(R, {
       application: t
-    }), n.map((e, t) => (0, l.jsx)("div", {
+    }), n.map((e, t) => (0, i.jsx)("div", {
       className: _.tagContainer,
-      children: (0, l.jsx)(s.Text, {
+      children: (0, i.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",
         children: e
@@ -173,16 +173,16 @@ function R(e) {
     application: n
   } = e;
   if (!(0, b.ye)(n)) return null;
-  let i = null != (t = (0, b.BQ)(n) ? n instanceof y.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
-  return (0, l.jsxs)("div", {
+  let l = null != (t = (0, b.BQ)(n) ? n instanceof x.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
+  return (0, i.jsxs)("div", {
     className: _.tagContainer,
-    children: [(0, l.jsx)(s.BFJ, {
+    children: [(0, i.jsx)(s.BFJ, {
       size: "xs",
       color: s.TVs.colors.INTERACTIVE_NORMAL
-    }), (0, l.jsx)(s.Text, {
+    }), (0, i.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "interactive-normal",
-      children: (0, u.lY)(i)
+      children: (0, u.lY)(l)
     })]
   })
 }
@@ -195,37 +195,37 @@ function Z(e) {
     sectionName: a,
     hasCommands: o,
     isDeveloperOfThisApp: c
-  } = e, u = (0, f.Fs)(n, r.id), d = (0, h.q)(r.id), v = null == d || null == (t = d.bot) ? true : t.id, x = (0, m.Z)({
+  } = e, u = (0, f.Fs)(n, r.id), d = (0, h.q)(r.id), v = null == d || null == (t = d.bot) ? true : t.id, y = (0, m.Z)({
     context: n,
     application: r,
     botUserId: v
   }), {
-    analyticsLocations: y
+    analyticsLocations: x
   } = (0, p.ZP)();
-  return (i.useEffect(() => {
+  return (l.useEffect(() => {
     if (!(0, b.BQ)(r) || !(0, b.ye)(r)) return;
     let e = setTimeout(() => {
       (null == u || null == v) && g.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
         application_id: r.id,
         is_primary_entry_point_command_non_null: null != u,
         is_bot_user_id_non_null: null != v,
-        show_try_it_out_button: x
+        show_try_it_out_button: y
       })
     }, 2e3);
     return () => clearTimeout(e)
-  }, [r, u, v, x]), (0, b.BQ)(r) && (0, b.ye)(r)) ? null != u && null != v ? (0, l.jsxs)(s.hE2, {
+  }, [r, u, v, y]), (0, b.BQ)(r) && (0, b.ye)(r)) ? null != u && null != v ? (0, i.jsxs)(s.ButtonGroup, {
     fullWidth: true,
-    children: [(0, l.jsx)(C.Z, {
+    children: [(0, i.jsx)(C.Z, {
       context: n,
       application: r,
       sectionName: a,
       primaryEntryPointCommand: u
-    }), x && null != v ? (0, l.jsx)(E.Z, {
+    }), y && null != v ? (0, i.jsx)(E.Z, {
       botUserId: v,
       applicationId: r.id,
-      analyticsLocations: y
+      analyticsLocations: x
     }) : null]
-  }) : c && !o && (0, b.ye)(r) ? (0, l.jsx)(s.Wn, {
+  }) : c && !o && (0, b.ye)(r) ? (0, i.jsx)(s.Wn, {
     className: _.primaryEntryPointWarningMessage,
     messageType: s.QYI.WARNING,
     children: A.intl.format(A.t["s/3hjI"], {})
@@ -235,29 +235,29 @@ function Z(e) {
 function w(e) {
   let {
     description: t
-  } = e, [n, r] = i.useState(true);
-  i.useLayoutEffect(() => r(false), []);
-  let a = i.useMemo(() => (0, x.parseBioReact)(t), [t]),
+  } = e, [n, r] = l.useState(true);
+  l.useLayoutEffect(() => r(false), []);
+  let a = l.useMemo(() => (0, y.parseBioReact)(t), [t]),
     {
       ref: o,
       lineHeight: c,
       lineCount: u
     } = function() {
-      let e = i.useRef(null),
-        [t, n] = i.useState(null),
-        [l, r] = i.useState(null);
-      return i.useLayoutEffect(() => {
+      let e = l.useRef(null),
+        [t, n] = l.useState(null),
+        [i, r] = l.useState(null);
+      return l.useLayoutEffect(() => {
         let t = e.current;
         if (null === t || 0 === t.clientHeight) return;
-        let l = parseInt(getComputedStyle(t).lineHeight);
-        isNaN(l) || (n(l), r(Math.floor(t.clientHeight / l)))
+        let i = parseInt(getComputedStyle(t).lineHeight);
+        isNaN(i) || (n(i), r(Math.floor(t.clientHeight / i)))
       }, []), {
         ref: e,
         lineHeight: t,
-        lineCount: l
+        lineCount: i
       }
     }(),
-    d = i.useMemo(() => {
+    d = l.useMemo(() => {
       if (null == c || null == u) return {
         key: 0
       };
@@ -275,17 +275,17 @@ function w(e) {
     } = (0, j.Z)(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          l = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), l.forEach(function(t) {
-          var l;
-          l = n[t], t in e ? Object.defineProperty(e, t, {
-            value: l,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = l
+          }) : e[t] = i
         })
       }
       return e
@@ -293,13 +293,13 @@ function w(e) {
       isExpanded: n
     }, d)),
     h = n || m;
-  return (0, l.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: _.descriptionContainer,
-    children: [(0, l.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       ref: p,
       className: _.overflowHidden,
       onTransitionEnd: f,
-      children: (0, l.jsx)(s.Text, {
+      children: (0, i.jsx)(s.Text, {
         ref: o,
         className: O.markup,
         variant: "text-sm/medium",
@@ -309,17 +309,17 @@ function w(e) {
         },
         children: a
       })
-    }), null != u && u > 2 ? (0, l.jsxs)(s.P3F, {
+    }), null != u && u > 2 ? (0, i.jsxs)(s.P3F, {
       className: _.expandableDescriptionClickable,
       onClick: () => r(e => !e),
-      children: [(0, l.jsx)(s.Text, {
+      children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
         children: h ? A.intl.string(A.t.u4YJ8v) : A.intl.string(A.t["N/tajI"])
-      }), h ? (0, l.jsx)(s.u04, {
+      }), h ? (0, i.jsx)(s.u04, {
         size: "sm",
         color: s.TVs.colors.TEXT_BRAND
-      }) : (0, l.jsx)(s.CJ0, {
+      }) : (0, i.jsx)(s.CJ0, {
         size: "sm",
         color: s.TVs.colors.TEXT_BRAND
       })]

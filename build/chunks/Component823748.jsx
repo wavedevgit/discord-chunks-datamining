@@ -197,7 +197,7 @@ class ti extends Chunk647438.PureComponent {
   }
   openDMContextMenu(e, t) {
     o()(null != t, "Missing channel in Channel.openDMContextMenu");
-    let i = eV.default.getUser(t.getRecipientId());
+    let i = ez.default.getUser(t.getRecipientId());
     o()(null != i, "Missing user in Channel.openDMContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
@@ -557,7 +557,7 @@ class ti extends Chunk647438.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? true : e.type) !== e4.fO.STREAM ? null : (0, r.jsx)(V.Z, {
+      return (null == e ? true : e.type) !== e4.fO.STREAM ? null : (0, r.jsx)(z.Z, {
         size: e$.ZP.Sizes.LARGE,
         participant: e,
         showQuality: true,
@@ -586,7 +586,7 @@ class ti extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(es.Z, {
             channel: e,
-            tooltip: e5.intl.string(e5.t.Xjlbvr),
+            tooltip: e6.intl.string(e6.t.Xjlbvr),
             location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), s.push((0, r.jsx)(ed.Z, {
             channel: e,
@@ -601,7 +601,7 @@ class ti extends Chunk647438.PureComponent {
             }, "calls")), s.push((0, r.jsx)(et.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e5.intl.string(e5.t.Xjlbvr);
+            let t = e6.intl.string(e6.t.Xjlbvr);
             s.push((0, r.jsx)(es.Z, {
               channel: e,
               tooltip: t,
@@ -706,10 +706,10 @@ class ti extends Chunk647438.PureComponent {
       } = this.props;
       return e ? (0, r.jsx)("div", {
         className: e9.followButton,
-        children: (0, r.jsx)(g.zxk, {
+        children: (0, r.jsx)(g.Button, {
           variant: "secondary",
           size: "sm",
-          text: e5.intl.string(e5.t["3aOv+v"]),
+          text: e6.intl.string(e6.t["3aOv+v"]),
           onClick: () => (0, g.ZDy)(async () => {
             let {
               default: e
@@ -756,7 +756,7 @@ class ti extends Chunk647438.PureComponent {
             }),
             transparent: y,
             hidden: d,
-            "aria-label": e5.intl.string(e5.t.BIYAqa),
+            "aria-label": e6.intl.string(e6.t.BIYAqa),
             children: [h && (0, r.jsx)(el.TS, {
               channel: e,
               guild: i,
@@ -774,11 +774,11 @@ class ti extends Chunk647438.PureComponent {
               renderFollowButton: this.renderFollowButton
             }), h ? (0, r.jsx)("div", {
               className: e9.followButton,
-              children: (0, r.jsx)(g.zxk, {
+              children: (0, r.jsx)(g.Button, {
                 onClick: () => (0, em.XU)(e.guild_id, e.id),
                 variant: "secondary",
                 size: "sm",
-                text: e5.intl.string(e5.t.k5WiPT)
+                text: e6.intl.string(e6.t.k5WiPT)
               })
             }) : (0, el.v0)(e, i)]
           }, "header-".concat(e.id))
@@ -796,13 +796,13 @@ let tl = (0, Chunk112724.Z)(ti),
       providedChannel: n
     } = e, [l, a] = i.useState(null), s = (0, h.e7)([eB.Z], () => eB.Z.getChannelId()), o = (0, h.e7)([eB.Z], () => eB.Z.getVoiceChannelId()), c = (0, h.e7)([eM.Z], () => null != n ? n : eM.Z.getChannel(s), [s, n]), g = (0, h.e7)([eM.Z], () => eM.Z.getChannel(o), [o]), b = null == c ? true : c.parent_id, y = (0, h.e7)([eM.Z], () => eM.Z.getChannel(b), [b]), _ = (0, h.e7)([eG.Z], () => eG.Z.getGuild(null == c ? true : c.guild_id), [c]), {
       needSubscriptionToAccess: j
-    } = (0, Q.Z)(null != (t = null == c ? true : c.id) ? t : true), x = (0, h.e7)([w.Z], () => {
+    } = (0, Q.Z)(null != (t = null == c ? true : c.id) ? t : true), O = (0, h.e7)([w.Z], () => {
       let e = null != s ? w.Z.getParticipants(s) : [],
         t = null != s ? w.Z.getActivityParticipants(s) : [];
       return e.length - t.length > 0
-    }, [s]), O = (0, z.Z)(), v = (0, h.e7)([eB.Z], () => {
+    }, [s]), x = (0, V.Z)(), v = (0, h.e7)([eB.Z], () => {
       var e;
-      return (null != (e = null == O ? true : O.channelId) ? e : eB.Z.getVoiceChannelId()) === (null == c ? true : c.id)
+      return (null != (e = null == x ? true : x.channelId) ? e : eB.Z.getVoiceChannelId()) === (null == c ? true : c.id)
     }), E = (0, h.e7)([S.ZP], () => null != c ? S.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), N = (0, h.e7)([eF.Z], () => eF.Z.isConnected()), A = (0, I.Z)(N), D = N && false === A;
     i.useEffect(() => {
       v && D && null != E && null != c && m.Z.selectParticipant(c.id, (0, R.gN)({
@@ -814,9 +814,9 @@ let tl = (0, Chunk112724.Z)(ti),
       M = (0, h.e7)([S.ZP], () => S.ZP.getActivityPanelMode()),
       k = null != L && !(0, Z.Z)(null == c ? true : c.id) && M === e8.Ez.PANEL,
       U = (0, h.e7)([eW.Z], () => null != c && c.isVocalThread() && !d().isEmpty(eW.Z.getVoiceStatesForChannel(c.id)), [c]),
-      H = null != c && c.isPrivate() && !k && x,
+      H = null != c && c.isPrivate() && !k && O,
       F = (null == c ? true : c.isGuildVocal()) || H || U,
-      V = (0, h.e7)([B.Z], () => B.Z.getFrameLayoutMode() === e3.U.FOCUSED),
+      z = (0, h.e7)([B.Z], () => B.Z.getFrameLayoutMode() === e3.U.FOCUSED),
       {
         welcomeModalChannelId: W
       } = (0, u.TH)(),
@@ -836,7 +836,7 @@ let tl = (0, Chunk112724.Z)(ti),
       }), [s, c]),
       er = null == _ ? true : _.id,
       ei = (0, h.e7)([eL.ZP], () => eL.ZP.getGuildSidebarState(er), [er]),
-      el = (0, h.e7)([ez.Z], () => ez.Z.getGuildId()) === e1.I_8,
+      el = (0, h.e7)([eV.Z], () => eV.Z.getGuildId()) === e1.I_8,
       ea = (0, ef.D)(),
       es = (0, eY.ZP)(c),
       eo = (0, eY.ZP)(c, true),
@@ -847,7 +847,7 @@ let tl = (0, Chunk112724.Z)(ti),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, em.s1)();
-      if ((null == r || null == (e = r.location) ? true : e.state) === e6.Df) {
+      if ((null == r || null == (e = r.location) ? true : e.state) === e5.Df) {
         let {
           channelId: e
         } = null != (n = (0, eh.Qj)(null == r || null == (t = r.location) ? true : t.pathname)) ? n : {};
@@ -866,19 +866,19 @@ let tl = (0, Chunk112724.Z)(ti),
         channel: e,
         inCurrentVoiceChannel: t
       } = eb.current;
-      null != l && null != e && ed && e.id === l && !t && ((0, eO.Cq)(e), a(null))
+      null != l && null != e && ed && e.id === l && !t && ((0, ex.Cq)(e), a(null))
     }, [l, ed]);
     let ey = (0, C.ts)(c),
       e_ = null != c && c.isPrivate(),
       ej = (0, I.Z)(e_),
-      ex = (0, I.Z)(null == c ? true : c.id);
+      eO = (0, I.Z)(null == c ? true : c.id);
     i.useEffect(() => {
       let e = ej && !e_,
-        t = ej && e_ && (null == c ? true : c.id) !== ex;
+        t = ej && e_ && (null == c ? true : c.id) !== eO;
       (e || t) && (0, G.Q3)(p.z.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e2.L.AUTO
       })
-    }, [null == c ? true : c.id, ex, e_, ej]);
+    }, [null == c ? true : c.id, eO, e_, ej]);
     let ev = (0, f.f9)();
     return (0, r.jsx)(tl, tn(tt({
       guildId: null == c ? true : c.guild_id,
@@ -898,7 +898,7 @@ let tl = (0, Chunk112724.Z)(ti),
       guild: _,
       showCall: !j && F,
       showActivityPanel: k,
-      showFramePanel: V,
+      showFramePanel: z,
       channelIsContentGated: J,
       isMobile: (0, h.e7)([eH.Z], () => (null == c ? true : c.type) === e1.d4z.DM && eH.Z.isMobileOnline(c.getRecipientId()), [c]),
       isUnavailable: (0, h.e7)([eU.Z], () => (null == c ? true : c.guild_id) != null && eU.Z.isUnavailable(c.guild_id), [c]),

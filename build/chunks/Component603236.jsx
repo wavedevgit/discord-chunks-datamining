@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => S,
-  S: () => N
+  I: () => j,
+  S: () => y
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,87 +21,87 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js");
-let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
+let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     hideValue: Chunk246946.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,
       autoFocus: n,
-      hideValue: i,
+      hideValue: l,
       onCopy: s,
-      disabled: r
+      disabled: a
     } = e;
-    return (0, l.jsx)(d.Z, {
+    return (0, i.jsx)(d.Z, {
       value: t,
-      hideMessage: i ? x.intl.string(x.t["6HzNgY"]) : null,
-      buttonColor: a.zx.Colors.BRAND,
+      hideMessage: l ? I.intl.string(I.t["6HzNgY"]) : null,
+      buttonColor: r.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
-      disabled: r
+      disabled: a
     })
   }),
-  S = e => {
+  j = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
-      showFriends: r,
-      onClose: a,
+      showFriends: a,
+      onClose: r,
       modalState: d,
       isApplicationBypassToggleEnabled: c,
-      setInviteFlags: S,
-      copyValue: _,
-      changePage: b,
-      inviteChannel: j,
+      setInviteFlags: j,
+      copyValue: C,
+      changePage: N,
+      inviteChannel: f,
       source: E,
-      code: y,
-      guildScheduledEvent: T,
-      disabled: O,
-      application: C
+      code: T,
+      guildScheduledEvent: b,
+      disabled: _,
+      application: P
     } = e, {
-      maxAge: P,
+      maxAge: M,
       maxUses: Z,
       networkError: A,
-      showVanityURL: M,
-      flags: w
-    } = d, R = i.useCallback(() => {
-      g.default.track(I.rMx.COPY_INSTANT_INVITE, {
+      showVanityURL: w,
+      flags: V
+    } = d, R = l.useCallback(() => {
+      h.default.track(x.rMx.COPY_INSTANT_INVITE, {
         server: u.Z.getGuildId(),
-        channel: null == j ? true : j.id,
-        channel_type: null == j ? true : j.type,
+        channel: null == f ? true : f.id,
+        channel_type: null == f ? true : f.type,
         location: E,
-        code: y,
-        guild_scheduled_event_id: null == T ? true : T.id,
-        application_id: null == C ? true : C.id
+        code: T,
+        guild_scheduled_event_id: null == b ? true : b.id,
+        application_id: null == P ? true : P.id
       })
-    }, [null == C ? true : C.id, j, E, y, T]);
-    return (0, l.jsxs)(o.Kqy, {
+    }, [null == P ? true : P.id, f, E, T, b]);
+    return (0, i.jsxs)(o.Kqy, {
       gap: 16,
-      children: [(0, l.jsx)(N, {
-        value: _,
-        autoFocus: r,
+      children: [(0, i.jsx)(y, {
+        value: C,
+        autoFocus: a,
         onCopy: R,
-        disabled: O
-      }), c && (0, l.jsx)(o.rsf, {
-        checked: (0, h.yE)(w, s.$.IS_APPLICATION_BYPASS),
-        onChange: e => S((0, h.mB)(w, s.$.IS_APPLICATION_BYPASS, e)),
-        disabled: O,
-        label: x.intl.string(x.t["1i1bUl"]),
-        description: x.intl.string(x.t["jvd/LC"])
-      }), n || M ? null : (0, l.jsxs)(o.Text, {
+        disabled: _
+      }), c && (0, i.jsx)(o.rsf, {
+        checked: (0, g.yE)(V, s.$.IS_APPLICATION_BYPASS),
+        onChange: e => j((0, g.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
+        disabled: _,
+        label: I.intl.string(I.t["1i1bUl"]),
+        description: I.intl.string(I.t["jvd/LC"])
+      }), n || w ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
-        className: f.footerText,
-        children: [(0, m.Vg)(P, Z), " ", r ? (0, l.jsx)(o.eee, {
-          onClick: () => b(v.RV.SETTINGS),
-          children: x.intl.string(x.t.VNe8Pz)
+        className: S.footerText,
+        children: [(0, m.Vg)(M, Z), " ", a ? (0, i.jsx)(o.Anchor, {
+          onClick: () => N(v.RV.SETTINGS),
+          children: I.intl.string(I.t.VNe8Pz)
         }) : null]
-      }), !n && r && M ? (0, l.jsxs)(o.Text, {
+      }), !n && a && w ? (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
-        className: f.footerText,
-        children: [x.intl.string(x.t["0M2U9/"]), " "]
-      }) : null, null != A ? (0, l.jsx)(p.W, {
+        className: S.footerText,
+        children: [I.intl.string(I.t["0M2U9/"]), " "]
+      }) : null, null != A ? (0, i.jsx)(p.W, {
         guild: t,
         error: A,
-        onClose: a
+        onClose: r
       }) : null]
     })
   }

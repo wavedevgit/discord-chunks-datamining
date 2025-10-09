@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk603113 = require("./603113.js"),
   Chunk137317 = require("./137317.js"),
@@ -23,7 +23,7 @@ let _ = ["#51BC9D"],
     var t;
     let {
       expansionSpring: n,
-      overlayRef: o,
+      overlayRef: a,
       quest: b,
       progressBarRef: j,
       isExpanded: v,
@@ -31,15 +31,15 @@ let _ = ["#51BC9D"],
     } = e, {
       completionSpring: y,
       startCompletionAnimation: E
-    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [R, A] = s.useState(null), [B, k] = s.useState(null), q = s.useRef(new i.qA({
+    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [R, A] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), I = (0, i.uR)(R, B), D = s.useCallback(() => {
+    })), q = (0, i.uR)(R, B), D = s.useCallback(() => {
       if (T) return;
       let e = j.current,
         t = w.current;
-      if (null != t && null != e && I.isReady) {
-        var n, r, s, o, a, i;
+      if (null != t && null != e && q.isReady) {
+        var n, r, s, a, o, i;
         let {
           x: l,
           y: c
@@ -47,7 +47,7 @@ let _ = ["#51BC9D"],
           x: d,
           y: u
         } = t.getBoundingClientRect();
-        I.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, a = e.clientWidth, o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -73,7 +73,7 @@ let _ = ["#51BC9D"],
             },
             maxValue: {
               x: n + s,
-              y: r + o
+              y: r + a
             }
           },
           velocity: {
@@ -101,7 +101,7 @@ let _ = ["#51BC9D"],
             minValue: 2,
             maxValue: 3
           }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -109,10 +109,10 @@ let _ = ["#51BC9D"],
           }
           return n
         })(Object(i)).forEach(function(e) {
-          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
-        }), a), 100)
+          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(i, e))
+        }), o), 100)
       }
-    }, [j, w, I, T]), L = (0, u.Z)(v);
+    }, [j, w, q, T]), L = (0, u.Z)(v);
     return (s.useEffect(() => {
       O && v && !L && (E(), D())
     }, [v, O, E, D, L]), s.useEffect(() => {
@@ -120,8 +120,8 @@ let _ = ["#51BC9D"],
         E(), D()
       }, 200)
     }, [O, N, P, E, D]), s.useEffect(() => {
-      I.isReady && (!S.current && O && (E(), D()), S.current = O)
-    }, [O, S, D, E, I]), s.useEffect(() => {
+      q.isReady && (!S.current && O && (E(), D()), S.current = O)
+    }, [O, S, D, E, q]), s.useEffect(() => {
       C && O && (E(), D())
     }, [C, O, E, D]), T) ? null : (0, r.jsxs)("div", {
       className: h.wrapper,
@@ -133,7 +133,7 @@ let _ = ["#51BC9D"],
           opacity: y
         }
       }), (0, r.jsx)(c.animated.div, {
-        className: a()(h.borders, h.bordersTopLeft),
+        className: o()(h.borders, h.bordersTopLeft),
         style: {
           opacity: y
         }
@@ -148,19 +148,19 @@ let _ = ["#51BC9D"],
         children: [(0, r.jsx)(i.O_, {
           ref: A,
           className: h.confetti,
-          environment: q.current
+          environment: I.current
         }), (0, r.jsx)(i.Ji, {
           ref: k,
           sprites: [x],
           colors: _,
           spriteWidth: f.Ko,
           spriteHeight: f.Ko
-        }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
-          className: a()(h.borders, h.bordersBottom),
+        }), null != a.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
+          className: o()(h.borders, h.bordersBottom),
           style: {
             opacity: y
           }
-        }), o.current)]
+        }), a.current)]
       })]
     })
   }

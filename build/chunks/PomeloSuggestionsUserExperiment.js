@@ -1,9 +1,9 @@
 /** Chunk was on 85342 **/
-/** chunk id: 109488, original params: e,t,r (module,exports,require) **/
+/** chunk id: 109488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => i
 });
-let n = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
     kind: "user",
     label: "Pomelo Suggestions",
     id: "2023-04_pomelo_suggestions",
@@ -18,7 +18,7 @@ let n = (0, require("./818083.js").B)({
       }
     }]
   }),
-  i = () => n.getCurrentConfig({
+  i = () => r.getCurrentConfig({
     location: "1907ae_1"
   }, {
     autoTrackExposure: false

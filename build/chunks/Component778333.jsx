@@ -70,7 +70,7 @@ function b(e) {
       children: [(0, r.jsxs)("div", {
         className: E.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
-          user: new d.Z(n.inviter),
+          user: new d.default(n.inviter),
           onClick: S ? N : true
         }), (0, r.jsx)(u.Z.Info, {
           title: D,

@@ -21,7 +21,7 @@ let u = {
 function d() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk281413.socialLinks,
-    children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
       target: "_blank",
       tabIndex: false,
       rel: "author",
@@ -35,7 +35,7 @@ function d() {
         colorClass: Chunk281413.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       target: "_blank",
       rel: "author",
       title: "Instagram",
@@ -49,7 +49,7 @@ function d() {
         colorClass: Chunk281413.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       target: "_blank",
       rel: "author",
       title: "Facebook",
@@ -63,7 +63,7 @@ function d() {
         colorClass: Chunk281413.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       target: "_blank",
       rel: "author",
       title: "YouTube",
@@ -77,7 +77,7 @@ function d() {
         foreground: Chunk281413.foreground,
         "aria-hidden": true
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       target: "_blank",
       rel: "author",
       title: "TikTok",

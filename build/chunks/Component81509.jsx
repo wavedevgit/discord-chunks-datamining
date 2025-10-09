@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk980989 = require("./980989.js");
 
-function x(e) {
+function b(e) {
   let {
     subscribers: t
   } = e;
@@ -46,13 +46,13 @@ function x(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guildName: t,
     guildIcon: n,
     guildAvatarUrl: i,
     subscriberCount: l
-  } = e, s = (0, u.Jh)({
+  } = e, s = (0, u.dangerouslyConstructGuildRecordFromUntypedObject)({
     name: t,
     icon: n
   });
@@ -65,11 +65,11 @@ function b(e) {
       size: d.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
       className: h.guildCardHeaderTitle,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: t
-      }), null != l && (0, r.jsx)(x, {
+      }), null != l && (0, r.jsx)(b, {
         subscribers: l
       })]
     })]
@@ -134,7 +134,7 @@ function v(e) {
           })]
         }), (0, r.jsx)("div", {
           className: h.viewServerButtonContainer,
-          children: (0, r.jsx)(a.zxk, {
+          children: (0, r.jsx)(a.Button, {
             variant: "secondary",
             disabled: null == i,
             onClick: d,
@@ -145,7 +145,7 @@ function v(e) {
       })]
     }) : (0, r.jsx)("div", {
       className: h.viewServerButtonContainer,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(a.Button, {
         variant: "secondary",
         disabled: null == i,
         onClick: d,
@@ -178,13 +178,13 @@ function _(e) {
     guildName: m,
     guildAvatarUrl: p,
     subscriberCount: f,
-    emojisToShow: x,
+    emojisToShow: b,
     notShownEmojiCount: _,
     storePageUrl: C
   } = o.details;
   return (0, r.jsxs)("div", {
     className: h.guildCard,
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(x, {
       guildIcon: u,
       guildName: m,
       guildAvatarUrl: p,
@@ -194,7 +194,7 @@ function _(e) {
       quoteAttribution: l,
       quoteAttributionTitle: s
     }), (0, r.jsx)(v, {
-      emojisToShow: x,
+      emojisToShow: b,
       notShownEmojiCount: _,
       storePageUrl: C
     })]
@@ -206,7 +206,7 @@ function C(e) {
     highlightedCreators: t
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: f.intl.string(f.t["tJp+QU"])

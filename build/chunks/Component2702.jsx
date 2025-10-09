@@ -28,18 +28,18 @@ function _(e) {
   } = e, O = (0, l.e7)([f.default], () => {
     let e = f.default.getCurrentUser();
     return s()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-  }), y = i.useMemo(() => E.ZP.canEditDiscriminator(O) && !O.hasUniqueUsername(), [O]), [p, T] = i.useState(O.username), [L, R] = i.useState(O.discriminator), [b, M] = i.useState(""), [A, P] = i.useState(false), C = (0, l.e7)([m.Z], () => m.Z.getErrors()), U = O.hasUniqueUsername(), x = (0, g.a)(p, U, false, O.username), N = i.useRef(null), w = i.useMemo(() => {
+  }), y = i.useMemo(() => E.ZP.canEditDiscriminator(O) && !O.hasUniqueUsername(), [O]), [p, T] = i.useState(O.username), [L, R] = i.useState(O.discriminator), [b, M] = i.useState(""), [A, P] = i.useState(false), C = (0, l.e7)([m.Z], () => m.Z.getErrors()), U = O.hasUniqueUsername(), N = (0, g.a)(p, U, false, O.username), w = i.useRef(null), x = i.useMemo(() => {
     var e, t, n;
     return null != (n = null == C || null == (e = C.username) ? true : e[0]) ? n : null == C || null == (t = C.discriminator) ? true : t[0]
   }, [C]);
   i.useEffect(() => {
     if (a === u.Dvm.ENTERED) {
       var e;
-      null == (e = N.current) || e.focus()
+      null == (e = w.current) || e.focus()
     }
   }, [a]);
-  let k = L !== O.discriminator;
-  async function I(e) {
+  let I = L !== O.discriminator;
+  async function k(e) {
     e.preventDefault(), P(true);
     let t = await (0, d.Mn)({
       username: p,
@@ -54,7 +54,7 @@ function _(e) {
     children: [(0, r.jsxs)(u.xBx, {
       separator: false,
       className: v.header,
-      children: [(0, r.jsx)(u.X6q, {
+      children: [(0, r.jsx)(u.Heading, {
         color: "header-primary",
         variant: "heading-xl/bold",
         className: v.title,
@@ -69,7 +69,7 @@ function _(e) {
         className: v.modalCloseButton
       })]
     }), (0, r.jsxs)("form", {
-      onSubmit: I,
+      onSubmit: k,
       children: [(0, r.jsx)(u.hzk, {
         className: v.content,
         children: (0, r.jsxs)(u.Kqy, {
@@ -97,14 +97,14 @@ function _(e) {
                 return e
               }({
                 label: S.intl.string(S.t.TWzdWl),
-                error: w,
+                error: x,
                 name: "username",
                 value: p,
                 maxLength: h.l$U,
                 onChange: T,
-                inputRef: N,
+                inputRef: w,
                 fullWidth: true
-              }, (n = O.hasUniqueUsername(), (0, o.EQ)(x).with({
+              }, (n = O.hasUniqueUsername(), (0, o.EQ)(N).with({
                 type: c.K.ERROR,
                 message: o.P.select()
               }, e => ({
@@ -125,7 +125,7 @@ function _(e) {
                 disabled: !y,
                 leading: "#"
               })]
-            }), k ? (0, r.jsx)(u.Text, {
+            }), I ? (0, r.jsx)(u.Text, {
               variant: "text-xs/normal",
               color: "header-secondary",
               className: v.discriminatorChangeWarning,
@@ -140,7 +140,7 @@ function _(e) {
           })]
         })
       }), (0, r.jsxs)(u.mzw, {
-        children: [(0, r.jsx)(u.zxk, {
+        children: [(0, r.jsx)(u.Button, {
           variant: "primary",
           text: S.intl.string(S.t.i4jeWV),
           type: "submit",
@@ -148,7 +148,7 @@ function _(e) {
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: v.cancel,
-          children: (0, r.jsx)(u.zxk, {
+          children: (0, r.jsx)(u.Button, {
             variant: "secondary",
             text: S.intl.string(S.t["ETE/oK"]),
             onClick: _

@@ -1,7 +1,7 @@
 /** Chunk was on 7649 **/
 /** chunk id: 797464, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => r
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,43 +9,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(t) {
+function r(t) {
   let {
     transitionState: n,
     onConfirm: e,
-    onClose: c,
+    onClose: r,
     onDismiss: o
-  } = t, [d, u] = s.useState(false), [h, b] = s.useState(true), [p, g] = s.useState(true);
+  } = t, [d, u] = s.useState(false), [h, b] = s.useState(true), [k, p] = s.useState(true);
   return (0, i.jsx)(a.Modal, {
     transitionState: n,
-    onClose: c,
-    title: r.intl.string(r.t["6rP+BQ"]),
-    subtitle: r.intl.string(r.t["1LuCnZ"]),
+    onClose: r,
+    title: c.intl.string(c.t["6rP+BQ"]),
+    subtitle: c.intl.string(c.t["1LuCnZ"]),
     actions: [{
       variant: "secondary",
-      text: r.intl.string(r.t["ETE/oK"]),
+      text: c.intl.string(c.t["ETE/oK"]),
       onClick: () => {
-        o(), c()
+        o(), r()
       },
       disabled: d
     }, {
-      text: r.intl.string(r.t["cY+Ooa"]),
+      text: c.intl.string(c.t["cY+Ooa"]),
       onClick: () => {
-        d || (u(true), e(h, p), u(false), c())
+        d || (u(true), e(h, k), u(false), r())
       },
       disabled: d,
       loading: d
     }],
-    actionBarInput: (0, i.jsx)(l.XZJ, {
-      checked: p,
+    actionBarInput: (0, i.jsx)(l.Checkbox, {
+      checked: k,
       onChange: t => {
-        g(t)
+        p(t)
       },
-      label: r.intl.string(r.t.KX8WJi),
+      label: c.intl.string(c.t.KX8WJi),
       labelType: "secondary"
     }),
     children: (0, i.jsx)(l.rsf, {
-      label: r.intl.string(r.t["zLb+u7"]),
+      label: c.intl.string(c.t["zLb+u7"]),
       checked: h,
       onChange: t => {
         b(t)

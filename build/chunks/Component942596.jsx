@@ -187,7 +187,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     }
     return (null == l ? true : l.type) === B.IIU.HANG_STATUS && (t = Z.intl.string(Z.t["74vS//"])), (0, i.jsxs)("div", {
       className: F.headerContainer,
-      children: [(0, i.jsx)(d.X6q, {
+      children: [(0, i.jsx)(d.Heading, {
         className: s()((0, w.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
         variant: a ? "text-xs/semibold" : "eyebrow",
         children: (0, i.jsx)(g.Z, {
@@ -227,7 +227,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       application_id: _
     } = e;
     if (null == f || null == f.large_image && null == f.small_image) return null;
-    (0, j.Z)(e) && (o = q[u]);
+    (0, k.Z)(e) && (o = q[u]);
     let p = (0, M.Z)(e),
       h = null != f.large_image ? (0, i.jsx)("img", {
         alt: null != (t = f.large_text) ? t : "",
@@ -237,7 +237,7 @@ class $ extends(r = Chunk647438.PureComponent) {
           [F.assetsLargeImageSpotify]: p
         })
       }) : null;
-    if (p) h = (0, i.jsx)(d.eee, {
+    if (p) h = (0, i.jsx)(d.Anchor, {
       onClick: this.handleOpenSpotifyAlbum,
       children: h
     });
@@ -272,7 +272,7 @@ class $ extends(r = Chunk647438.PureComponent) {
             game: e.details
           })
         })]
-      }), (0, i.jsx)(d.eee, {
+      }), (0, i.jsx)(d.Anchor, {
         className: F.twitchBackgroundImage,
         href: e.url,
         children: h
@@ -341,7 +341,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     return (o === B.IIU.HANG_STATUS ? u = (0, v.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
       className: F.activityName,
       children: u
-    }) : !l && (c = a, u = a, (0, M.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(d.eee, {
+    }) : !l && (c = a, u = a, (0, M.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(d.Anchor, {
       className: F.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: a
@@ -385,7 +385,7 @@ class $ extends(r = Chunk647438.PureComponent) {
         o = null == (l = e.assets) ? true : l.small_text
       }
     }
-    return null == o || "" === o ? null : ((0, j.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRU, {
+    return null == o || "" === o ? null : ((0, k.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRU, {
       game: o
     })), null != t) ? (0, i.jsx)(d.P3F, {
       onClick: t,
@@ -394,7 +394,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       children: o
     }) : (0, i.jsx)("div", {
       title: null != s ? s : true,
-      className: (0, j.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
       children: o
     })
   }
@@ -405,12 +405,12 @@ class $ extends(r = Chunk647438.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
-      className: (0, j.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
       children: Z.intl.format(Z.t["hq/Qzc"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
-      className: s()((0, j.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
+      className: s()((0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
       children: [(0, i.jsx)(O.Z, {
         guild: t,
         size: O.Z.Sizes.SMOL,
@@ -474,7 +474,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       c = o,
       u = o;
     if (!(0, x.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
-      let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(d.eee, {
+      let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(d.Anchor, {
         className: F.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,
         children: u

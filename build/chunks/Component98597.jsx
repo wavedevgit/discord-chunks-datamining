@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CN: () => Z,
@@ -163,12 +163,12 @@ function R(e) {
           (0, u.ZDy)(async () => {
             let {
               default: r
-            } = await Promise.all([n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+            } = await Promise.all([n.e("74318"), n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
             return n => (0, i.jsx)(r, N(P({}, n), {
               guild: x,
               channel: t,
               streamUserId: 1 === e.length ? e[0].ownerId : null,
-              source: C.t4x.GUILD_CHANNELS,
+              source: C.InstantInviteSources.GUILD_CHANNELS,
               guildScheduledEvent: Z
             }))
           })

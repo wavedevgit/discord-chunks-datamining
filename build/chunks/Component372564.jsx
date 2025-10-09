@@ -1,7 +1,7 @@
-/** Chunk was on 93338 **/
+/** Chunk was on 32118 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function g(e) {
 function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class v extends Chunk647438.Component {
+class y extends Chunk647438.Component {
   render() {
     let {
       channel: e
@@ -70,22 +70,22 @@ class v extends Chunk647438.Component {
   constructor(...e) {
     super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
-      if ((0, l.kK)(t)) {
+      if ((0, a.kK)(t)) {
         if (_(t)) return;
         let e = t.parentNode;
-        if ((0, l.kK)(e) && _(e)) return
+        if ((0, a.kK)(e) && _(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, r.jsx)(e, g({}, t, this.props))
+        return t => (0, r.jsx)(e, b({}, t, this.props))
       })
     }), m(this, "onMouseDown", () => {
       this._mouseDown = true
     }), m(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
     }), m(this, "onMouseUp", e => {
-      this._mouseDown && e.button !== b.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+      this._mouseDown && e.button !== p.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
     }), m(this, "handleContextMenu", e => {
       let {
         channel: t,
@@ -94,7 +94,7 @@ class v extends Chunk647438.Component {
       (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("46154"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("30474"), n.e("91053"), n.e("24783"), n.e("2498")]).then(n.bind(n, 439635));
+        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("46154"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("30474"), n.e("91053"), n.e("24783"), n.e("73289")]).then(n.bind(n, 439635));
         return n => (0, r.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -106,7 +106,7 @@ class v extends Chunk647438.Component {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(g({}, n), {
+        }(b({}, n), {
           channel: t,
           guild: i,
           includeTopic: true
@@ -121,4 +121,4 @@ class v extends Chunk647438.Component {
     })
   }
 }
-let j = v
+let O = y

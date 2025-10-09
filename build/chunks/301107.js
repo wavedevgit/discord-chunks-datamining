@@ -1,26 +1,26 @@
 /** Chunk was on 94904 **/
 /** chunk id: 301107, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  W: () => l
+  W: () => i
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js");
 var Chunk647438 = require("./647438.js"),
   Chunk250683 = require("./250683.js"),
   Chunk974167 = require("./974167.js");
 
-function l(e) {
+function i(e) {
   let {
     fingerprintBase64: t,
     chunkSize: r,
-    desiredLength: l
-  } = e, i = n.useMemo(() => {
+    desiredLength: i
+  } = e, l = n.useMemo(() => {
     if (null == t || "" === t) return null;
     let e = o.toByteArray(t),
-      n = (0, c.Dq)(e, l, r);
+      n = (0, c.Dq)(e, i, r);
     if (null == n) return null;
-    let i = RegExp(".{1,".concat(r, "}"), "g"),
-      s = n.match(i);
+    let l = RegExp(".{1,".concat(r, "}"), "g"),
+      s = n.match(l);
     return null == s ? null : Array.from(s)
-  }, [r, t, l]);
-  if (null != t && "" !== t && null == i) throw Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
-  return i
+  }, [r, t, i]);
+  if (null != t && "" !== t && null == l) throw Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
+  return l
 }

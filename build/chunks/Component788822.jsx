@@ -29,17 +29,17 @@ let C = e => {
     {
       handleCardVisibilityChange: S
     } = (0, u.E)(v, "home", "marketing featured block"),
-    x = (0, d.YG)(_, m),
-    O = l.useRef(null),
+    O = (0, d.YG)(_, m),
+    x = l.useRef(null),
     y = null == m ? true : m.bodyText,
     j = (0, o.sp)();
-  return (0, r.jsx)(s.$, {
-    innerRef: O,
+  return (0, r.jsx)(i.$, {
+    innerRef: x,
     onChange: S,
     threshold: 0,
-    children: (0, r.jsxs)(i.P3F, {
+    children: (0, r.jsxs)(s.P3F, {
       className: p.featuredBlock,
-      innerRef: O,
+      innerRef: x,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,8 +57,8 @@ let C = e => {
           })
         }
         return e
-      }({}, null != x && {
-        backgroundImage: "url(".concat(x, ")")
+      }({}, null != O && {
+        backgroundImage: "url(".concat(O, ")")
       }),
       onClick: () => {
         E("shop marketing tile", v), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -72,13 +72,13 @@ let C = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(i.IGR, {
+      children: [null != b && (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: b,
         className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(i.X6q, {
+        children: null != y && (0, r.jsx)(s.Heading, {
           lineClamp: 4,
           className: p.featuredBlockBodyText,
           style: {
@@ -89,7 +89,7 @@ let C = e => {
         })
       }), (0, r.jsx)("div", {
         className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(i.zxk, {
+        children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {

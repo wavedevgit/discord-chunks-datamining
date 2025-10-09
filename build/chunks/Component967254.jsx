@@ -81,7 +81,7 @@ let C = e => {
         })
       }), (0, r.jsxs)("div", {
         className: v.title,
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-default",
           children: "active" === t ? O.intl.formatToPlainString(O.t.IeV2oa, {
@@ -89,7 +89,7 @@ let C = e => {
           }) : O.intl.formatToPlainString(O.t.fZAHBQ, {
             count: a.toString()
           })
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.Heading, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: "active" === t ? O.intl.string(O.t.XJ2YVV) : O.intl.string(O.t.SzGV0t)
@@ -118,7 +118,7 @@ let C = e => {
       }), (0, Chunk951288.jsx)(Chunk499033.Z, {
         className: Chunk712243.stars
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/bold",
       className: Chunk712243.emptyStateText,
       children: Chunk388032.intl.string(Chunk388032.t.reLFaW)
@@ -194,7 +194,7 @@ let C = e => {
         className: v.descriptionContainer,
         children: [u ? (0, r.jsx)(w, {}) : (0, r.jsx)(P, {
           timestamp: c
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, r.jsx)(l.Heading, {
           variant: "heading-lg/normal",
           children: d
         })]

@@ -1,5 +1,5 @@
 /** Chunk was on 74194 **/
-/** chunk id: 269817, original params: t,e,n (module,exports,require) **/
+/** chunk id: 269817, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
@@ -14,7 +14,7 @@ var Chunk755721 = require("./755721.js"),
 
 function d(t) {
   let {
-    url: e,
+    url: n,
     onClose: d,
     transitionState: x
   } = t, m = (0, r.Dt)();
@@ -24,12 +24,12 @@ function d(t) {
     parentComponent: "LinkNotDiscordModal",
     children: [(0, a.jsx)("img", {
       className: c.art,
-      src: n(902623),
+      src: e(902623),
       alt: ""
     }), (0, a.jsx)(s.hzk, {
       children: (0, a.jsxs)("div", {
         className: c.modalContent,
-        children: [(0, a.jsx)(s.X6q, {
+        children: [(0, a.jsx)(s.Heading, {
           id: m,
           variant: "heading-lg/semibold",
           className: c.title,
@@ -38,12 +38,12 @@ function d(t) {
           variant: "text-md/normal",
           className: c.body,
           children: l.intl.format(l.t.J86cyc, {
-            url: e
+            url: n
           })
         })]
       })
     }), (0, a.jsxs)(s.mzw, {
-      children: [(0, a.jsx)(s.zxk, {
+      children: [(0, a.jsx)(s.Button, {
         variant: "primary",
         text: l.intl.string(l.t["xl8R+/"]),
         type: "button",
@@ -54,7 +54,7 @@ function d(t) {
         color: i.zx.Colors.TRANSPARENT,
         look: i.zx.Looks.LINK,
         onClick: () => {
-          (0, o.Z)(e, true)
+          (0, o.Z)(n, true)
         },
         children: l.intl.string(l.t.gQrLtr)
       })]

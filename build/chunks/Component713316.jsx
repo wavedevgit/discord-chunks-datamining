@@ -43,7 +43,7 @@ function h(e) {
   return (0, r.jsxs)(f.C3, {
     children: [(0, r.jsx)(d.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsxs)("div", {
       className: p.confirmation,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xxl/bold",
         className: p.confirmationHeader,
         children: "Success!"

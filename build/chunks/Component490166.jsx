@@ -1,7 +1,7 @@
 /** Chunk was on 69208 **/
-/** chunk id: 490166, original params: e,t,n (module,exports,require) **/
+/** chunk id: 490166, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => h
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,38 +13,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk71661 = require("./71661.js");
 
-function y(e) {
+function h(t) {
   let {
-    guildId: t,
-    channel: y,
-    keybind: h,
+    guildId: e,
+    channel: h,
+    keybind: y,
     transitionState: b,
     onClose: k
-  } = e, p = r.useCallback(async () => {
-    (0, o.Kw)(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await k()
+  } = t, p = r.useCallback(async () => {
+    (0, s.Kw)(s.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await k()
   }, [k]), f = r.useCallback(async () => {
-    await p(), (0, s.ZDy)(async () => {
+    await p(), (0, o.ZDy)(async () => {
       let {
-        default: e
+        default: t
       } = await n.e("58120").then(n.bind(n, 355453));
-      return t => (0, i.jsx)(e, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
+      return e => (0, i.jsx)(t, function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), i.forEach(function(e) {
             var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
+            i = n[e], e in t ? Object.defineProperty(t, e, {
               value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : t[e] = i
           })
         }
-        return e
-      }({}, t))
+        return t
+      }({}, e))
     })
   }, [p]), j = r.useMemo(() => [{
     variant: "secondary",
@@ -60,29 +60,29 @@ function y(e) {
     actions: j,
     transitionState: b,
     title: d.intl.string(d.t["yJeV5+"]),
-    children: [(0, i.jsx)(s.Text, {
+    children: [(0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       children: d.intl.format(d.t.fq3Sw8, {
-        keybind: (0, c.BB)(h.shortcut, true).split(" + "),
-        keybindHook: (e, t) => (0, i.jsx)("span", {
+        keybind: (0, c.BB)(y.shortcut, true).split(" + "),
+        keybindHook: (t, e) => (0, i.jsx)("span", {
           className: u.keybindHintKeys,
-          children: (0, i.jsx)(s.M2$, {
+          children: (0, i.jsx)(o.M2$, {
             className: u.keybindShortcut,
-            shortcut: (0, c.BB)(h.shortcut, false)
+            shortcut: (0, c.BB)(y.shortcut, false)
           })
-        }, t),
-        openSettingsHook: (e, t) => (0, i.jsx)(s.eee, {
+        }, e),
+        openSettingsHook: (t, e) => (0, i.jsx)(o.Anchor, {
           onClick: f,
-          children: e
-        }, t)
+          children: t
+        }, e)
       })
     }), (0, i.jsx)("div", {
       className: u.soundWheel,
       children: (0, i.jsx)(l.Z, {
         width: 372,
         height: 316,
-        guildId: t,
-        channel: y,
+        guildId: e,
+        channel: h,
         interactive: false,
         keepOpen: true,
         onClose: () => {},

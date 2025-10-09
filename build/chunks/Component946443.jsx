@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -175,7 +175,7 @@ function I(e) {
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(d.X6q, {
+      children: [(0, r.jsx)(d.Heading, {
         className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
         children: C.intl.string(C.t.vZPktL)
@@ -186,7 +186,7 @@ function I(e) {
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: E.tutorialButton,
-        children: (0, r.jsx)(d.zxk, {
+        children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
           text: C.intl.string(C.t["+IrDzM"]),

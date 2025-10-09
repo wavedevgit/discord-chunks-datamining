@@ -39,7 +39,7 @@ function p() {
           onChange: e => {
             t(parseInt(e))
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Set",
@@ -53,7 +53,7 @@ function p() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset",
@@ -66,7 +66,7 @@ function p() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Pretend",
@@ -74,7 +74,7 @@ function p() {
         })]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk877600.panelRow,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Open voice filters panel",

@@ -22,8 +22,8 @@ let g = Chunk647438.memo(function(e) {
     isStuck: p,
     onExpand: f,
     disableAnimation: h,
-    disableBackground: x
-  } = e, [b, j] = i.useState(true), [v, _] = i.useState(false), {
+    disableBackground: b
+  } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
     ref: C,
     height: O = 0
   } = (0, c.ZP)(), {
@@ -66,7 +66,7 @@ let g = Chunk647438.memo(function(e) {
     onRest: () => {
       _(true)
     }
-  }, b || h ? "animate-never" : "respect-motion-settings");
+  }, x || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
     _(false), I(m)
   }, [m]), i.useLayoutEffect(() => {
@@ -77,7 +77,7 @@ let g = Chunk647438.memo(function(e) {
   }, []), (0, r.jsx)(o.P3F, {
     className: a()(u.editCard, {
       [u.toggled]: m,
-      [u.noBackground]: x
+      [u.noBackground]: b
     }),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {

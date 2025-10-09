@@ -73,7 +73,7 @@ function x(e, t) {
 }
 let M = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function k(e) {
+function j(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -90,7 +90,7 @@ function k(e) {
       color: "text-link",
       children: i
     })
-  }) : (0, r.jsx)(u.zxk, {
+  }) : (0, r.jsx)(u.Button, {
     fullWidth: true,
     tabIndex: a,
     variant: "secondary",
@@ -99,7 +99,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n, r, i, a;
   let {
     quest: o,
@@ -171,7 +171,7 @@ function U(e) {
       return y ? (0, r.jsx)(G, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(u.zxk, x(D({}, e), {
+      }) : (0, r.jsx)(u.Button, x(D({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -206,7 +206,7 @@ function G(e) {
       onClick: null != (t = i.onClick) ? t : true,
       children: i.text
     }))
-  }) : (0, r.jsx)(u.zxk, x(D({}, a), {
+  }) : (0, r.jsx)(u.Button, x(D({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -295,7 +295,7 @@ let B = e => {
         }), (0, r.jsx)(u.Text, {
           variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
-          children: j({
+          children: k({
             quest: n,
             locale: K,
             isQuestExpired: _,
@@ -304,25 +304,25 @@ let B = e => {
             formattedCompletionDate: w
           })
         })]
-      }), Y ? (0, r.jsxs)(u.hE2, {
+      }), Y ? (0, r.jsxs)(u.ButtonGroup, {
         direction: "horizontal",
         align: "center",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(u.zxk, {
+        children: [(0, r.jsx)(u.Button, {
           variant: "secondary",
           disabled: true,
           text: R.intl.string(R.t.V293qq)
-        }), (0, r.jsx)(u.zxk, {
+        }), (0, r.jsx)(u.Button, {
           variant: "primary",
           onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
           text: R.intl.string(R.t.vY9GgI)
         })]
-      }) : (0, r.jsxs)(u.hE2, {
+      }) : (0, r.jsxs)(u.ButtonGroup, {
         direction: "horizontal",
         align: "center",
         justify: "end",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(k, {
+        children: [(0, r.jsx)(j, {
           containerSize: c,
           onClick: W,
           text: R.intl.string(R.t.LLLLPD)

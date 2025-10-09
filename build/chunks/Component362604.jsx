@@ -50,8 +50,8 @@ function b(e) {
           children: "" !== t.content ? t.content : g.intl.string(g.t.wnn1DQ)
         })
       })
-    }), (0, r.jsxs)(l.hE2, {
-      children: [(0, r.jsx)(l.zxk, {
+    }), (0, r.jsxs)(l.ButtonGroup, {
+      children: [(0, r.jsx)(l.Button, {
         variant: "secondary",
         text: g.intl.string(g.t.ASZTf3),
         icon: l.FmF,
@@ -67,7 +67,7 @@ function b(e) {
             shouldMention: true
           })
         }
-      }), (0, r.jsx)(l.zxk, {
+      }), (0, r.jsx)(l.Button, {
         variant: "secondary",
         text: g.intl.string(g.t.gbrrAw),
         icon: null != O ? {

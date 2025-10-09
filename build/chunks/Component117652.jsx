@@ -59,14 +59,14 @@ function x(e) {
 }
 let M = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(j, x({}, e)),
+  renderStep: e => (0, r.jsx)(k, x({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
   }
 };
 
-function k(e) {
+function j(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -77,7 +77,7 @@ function k(e) {
     hasPaymentSources: l
   } = (0, S.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.zxk, {
+    children: [(0, r.jsx)(a.Button, {
       onClick: () => t(c),
       disabled: o,
       loading: s,
@@ -88,7 +88,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     handleStepChange: t,
     handleClose: n
@@ -101,7 +101,7 @@ function j(e) {
     giftRecipient: L,
     recommendedGiftSkuIds: x,
     giftingOrigin: M,
-    setValidatingGiftRecipient: j
+    setValidatingGiftRecipient: k
   } = (0, T.wD)(), {
     selectedSkuId: B,
     setSelectedSkuId: Z,
@@ -117,7 +117,7 @@ function j(e) {
   }, {
     autoTrackExposure: false
   }), q = K && M === R.Wt.DM_CHANNEL, X = z === p.u.POPULAR ? P.intl.string(P.t.Kwgrrq) : P.intl.string(P.t.r1huYW), Q = async (e, t) => {
-    j(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqa"])), j(false)
+    k(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqa"])), k(false)
   };
   (0, o.ZP)(() => {
     null != B && null != L && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -230,7 +230,7 @@ function j(e) {
         "data-migration-pending": true,
         justify: _.Z.Justify.BETWEEN,
         align: _.Z.Align.CENTER,
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(j, {
           onStepChange: t,
           onBackClick: n,
           disabled: null != g || null == L || L.id === (null == W ? true : W.id) || s.length > R.$n,
@@ -275,7 +275,7 @@ function U(e) {
             color: "header-primary",
             variant: "text-md/semibold",
             children: P.intl.string(P.t["1+Co8P"])
-          }), (0, r.jsx)(a.X6q, {
+          }), (0, r.jsx)(a.Heading, {
             color: "header-secondary",
             variant: "heading-sm/medium",
             children: P.intl.string(P.t.nYn52N)

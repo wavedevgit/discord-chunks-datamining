@@ -32,7 +32,7 @@ let c = {
       return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(l.XZJ, {
+        children: [(0, r.jsx)(l.Checkbox, {
           checked: f,
           onChange: e => _(e),
           disabled: c,

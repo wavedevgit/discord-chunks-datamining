@@ -49,7 +49,7 @@ function c(e, t) {
 }
 
 function u(e) {
-  return (0, r.jsx)(i.zxk, c(s({}, e), {
+  return (0, r.jsx)(i.Button, c(s({}, e), {
     variant: "expressive",
     icon: a.Z
   }))

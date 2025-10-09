@@ -194,7 +194,7 @@ function R(e) {
     children: [(0, r.jsx)(A, {
       hasNoVotes: "NO_VOTES" === s.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(N, O({}, s)), null != a && (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(N, O({}, s)), null != a && (0, r.jsx)(l.Button, {
       size: "sm",
       onClick: a,
       variant: "secondary",

@@ -34,7 +34,7 @@ let d = function(e) {
         className: c.suggestedChannelText,
         variant: "text-sm/normal",
         children: n.name
-      }), (0, r.jsx)(l.zxk, {
+      }), (0, r.jsx)(l.Button, {
         size: "sm",
         variant: "primary",
         onClick: u,

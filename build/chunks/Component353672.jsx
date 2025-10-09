@@ -20,7 +20,7 @@ function o(t) {
     className: r()(a.tipsSection, n),
     children: [(0, i.jsx)("div", {
       className: a.tipsHeader,
-      children: (0, i.jsx)(l.X6q, {
+      children: (0, i.jsx)(l.Heading, {
         variant: "heading-lg/bold",
         className: a.headerText,
         children: s
@@ -29,7 +29,7 @@ function o(t) {
       className: a.tipsList,
       children: e.map((t, e) => (0, i.jsxs)("li", {
         className: a.tipRow,
-        children: [(0, i.jsx)(l.X6q, {
+        children: [(0, i.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: a.tipNumber,

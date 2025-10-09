@@ -35,29 +35,29 @@ let h = e => {
   });
   return a()(!x, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(u.Z, {
     transitionState: i,
-    "aria-label": m.intl.string(b.default.rlNJwc),
-    className: p.root,
+    "aria-label": p.intl.string(b.default.rlNJwc),
+    className: m.root,
     children: [(0, n.jsx)(u.Z.Error, {
-      error: g ? m.intl.string(b.default.pegSMz) : true
+      error: g ? p.intl.string(b.default.pegSMz) : true
     }), (0, n.jsxs)(s.hzk, {
       "data-migration-pending": true,
       children: [(0, n.jsx)(u.Z.Header, {
         currentUser: r,
         otherUser: t,
-        header: m.intl.string(b.default.rlNJwc),
+        header: p.intl.string(b.default.rlNJwc),
         icon: (0, n.jsx)(s.xPt, {
           size: "md",
           color: "currentColor",
-          className: p.linkIcon
+          className: m.linkIcon
         })
       }), (0, n.jsxs)(u.Z.Content, {
         children: [(0, n.jsx)(f.Z, {
           inModal: true
         }), (0, n.jsx)(s.Text, {
-          className: p.disclaimer,
+          className: m.disclaimer,
           variant: "text-xs/normal",
           color: "text-default",
-          children: m.intl.format(b.default.snlFqa, {
+          children: p.intl.format(b.default.snlFqa, {
             username: l.ZP.getName(t)
           })
         })]
@@ -69,19 +69,19 @@ let h = e => {
           e.preventDefault(), v(t.id)
         },
         children: (0, n.jsx)(u.Z.ButtonFooter, {
-          children: (0, n.jsxs)(s.hE2, {
+          children: (0, n.jsxs)(s.ButtonGroup, {
             direction: "horizontal-reverse",
-            children: [(0, n.jsx)(s.zxk, {
+            children: [(0, n.jsx)(s.Button, {
               variant: "secondary",
               size: "sm",
-              text: m.intl.string(m.t["ETE/oK"]),
+              text: p.intl.string(p.t["ETE/oK"]),
               type: "button",
               disabled: _,
               onClick: h
-            }), (0, n.jsx)(s.zxk, {
+            }), (0, n.jsx)(s.Button, {
               variant: "primary",
               size: "sm",
-              text: m.intl.string(b.default["wI/jo6"]),
+              text: p.intl.string(b.default["wI/jo6"]),
               type: "submit",
               disabled: _,
               loading: _

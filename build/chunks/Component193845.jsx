@@ -42,7 +42,7 @@ function _(e) {
       })
     }), (0, n.jsxs)("div", {
       className: j.headerText,
-      children: [(0, n.jsx)(l.X6q, {
+      children: [(0, n.jsx)(l.Heading, {
         variant: "heading-lg/extrabold",
         color: "header-primary",
         children: h.intl.string(h.t.MatO7O)
@@ -56,7 +56,7 @@ function _(e) {
 }
 let f = e => e.toString() === p.Plq.MENTION_EVERYONE.toString() ? h.intl.string(h.t.yCpsQ0) : (0, o.wt)(e);
 
-function v(e) {
+function g(e) {
   let {
     permissions: t
   } = e;
@@ -83,7 +83,7 @@ function v(e) {
   })
 }
 
-function g(e) {
+function v(e) {
   let {
     permissions: t
   } = e;
@@ -120,9 +120,9 @@ function y(e) {
   return (0, n.jsx)(l.hzk, {
     children: (0, n.jsxs)("div", {
       className: j.table,
-      children: [(0, n.jsx)(v, {
+      children: [(0, n.jsx)(g, {
         permissions: r
-      }), (0, n.jsx)(g, {
+      }), (0, n.jsx)(v, {
         permissions: s
       })]
     })
@@ -136,7 +136,7 @@ function O(e) {
   } = e;
   return (0, n.jsxs)(l.mzw, {
     className: j.footer,
-    children: [(0, n.jsx)(l.zxk, {
+    children: [(0, n.jsx)(l.Button, {
       variant: "primary",
       text: h.intl.string(h.t.iOSdAQ),
       onClick: t
@@ -162,7 +162,7 @@ function N(e) {
     let e = [],
       r = [];
     return b.$X.map(n => {
-      x.oz(n, t) ? e.push(n) : r.push(n)
+      u.oz(n, t) ? e.push(n) : r.push(n)
     }), {
       enabledPermissions: e,
       disabledPermissions: r
@@ -174,7 +174,7 @@ function N(e) {
     let n = null != t ? d.Z.getEveryoneRole(t) : true;
     if (null == n) return;
     let s = i.Od(n.permissions, b.mu);
-    await (0, u.Gf)(t.id, [(e = function(e) {
+    await (0, x.Gf)(t.id, [(e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);

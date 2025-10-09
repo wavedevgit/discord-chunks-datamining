@@ -17,7 +17,7 @@ let s = e => {
   return (0, r.jsxs)("div", {
     className: o.settingsPage,
     children: [s, !l && (0, r.jsx)(i.y5t, {
-      children: (0, r.jsx)(i.X6q, {
+      children: (0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: n

@@ -2,7 +2,7 @@
 /** chunk id: 426434, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,16 +21,16 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function b(e) {
+function x(e) {
   let t, {
       guild: n
     } = e,
-    b = n.mfaLevel,
+    x = n.mfaLevel,
     j = (0, l.e7)([u.Z], () => null != n && u.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
     v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
     _ = (0, d.eM)(n, v),
     C = null == v ? true : v.mfaEnabled,
-    O = b === f.BpS.ELEVATED,
+    O = x === f.BpS.ELEVATED,
     y = _ && C,
     N = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
@@ -47,10 +47,10 @@ function b(e) {
   }) : h.intl.string(h.t["9Ghu4+"]));
   let E = n.features.has(f.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: x.simpleItemWrapper,
+    className: b.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
-      className: x.itemContent,
-      children: [(0, r.jsx)(s.X6q, {
+      className: b.itemContent,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: h.intl.string(h.t.lbBfER)
@@ -65,12 +65,12 @@ function b(e) {
         checked: O,
         disabled: true,
         onChange: N,
-        className: x.bringToFront
+        className: b.bringToFront
       })
     }) : (0, r.jsx)(p.Z, {
       checked: O,
       onChange: N,
-      className: x.bringToFront
+      className: b.bringToFront
     })]
   })
 }

@@ -26,10 +26,10 @@ let _ = {
     m.s.isDisallowPopupsSet() || (0, c.h)(() => {
       if ((0, a.Z)()) return;
       let e = u.default.getCurrentUser(),
-        r = null != e && 7 > l()().diff(l()(f.default.extractTimestamp(e.id)), "days"),
-        c = null != d.Z.getGuildsArray().find(e => e.features.has(g.oNc.HUB)),
+        r = null != e && 7 > l()().diff(l()(g.default.extractTimestamp(e.id)), "days"),
+        c = null != d.Z.getGuildsArray().find(e => e.features.has(p.oNc.HUB)),
         m = !(0, s.zu)(i.z.HUB_BACK_TO_SCHOOL_UPSELL);
-      !(r || t() || c || !m) && (0, p.b)() && (p.Z.trackExposure({
+      !(r || t() || c || !m) && (0, f.b)() && (f.Z.trackExposure({
         location: "8b792a_1"
       }), n(), (0, o.kk)(i.z.HUB_BACK_TO_SCHOOL_UPSELL))
     })

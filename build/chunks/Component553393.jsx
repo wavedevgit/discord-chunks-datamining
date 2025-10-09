@@ -57,10 +57,10 @@ function L(e) {
 }
 let x = "8px",
   M = "11px",
-  k = 222;
+  j = 222;
 
-function j(e) {
-  var t, I, D, j, U;
+function k(e) {
+  var t, I, D, k, U;
   let {
     quest: G,
     memberListItemRef: B,
@@ -211,7 +211,7 @@ function j(e) {
     "aria-expanded": er,
     className: w.wrapper,
     style: {
-      width: null != (U = null == (j = B.current) ? true : j.clientWidth) ? U : k,
+      width: null != (U = null == (k = B.current) ? true : k.clientWidth) ? U : j,
       height: es.height,
       overflow: er ? "visible" : "hidden",
       borderRadius: eu
@@ -228,7 +228,7 @@ function j(e) {
         className: w.top,
         children: [(0, r.jsxs)("div", {
           className: w.left,
-          children: [(0, r.jsx)(u.X6q, {
+          children: [(0, r.jsx)(u.Heading, {
             variant: "heading-sm/semibold",
             children: em.headerText
           }), (0, r.jsxs)(u.P3F, {
@@ -294,7 +294,7 @@ function U(e) {
     questContent: y.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: y.jn.MEMBERS_LIST,
-    children: t => (0, r.jsx)(j, L({
+    children: t => (0, r.jsx)(k, L({
       impressionRef: t
     }, e))
   })

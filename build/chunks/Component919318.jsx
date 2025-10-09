@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 919318, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => L
+  ZP: () => H
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430864 = require("./430864.js"),
   Chunk931057 = require("./931057.js");
 
-function A(e) {
+function k(e) {
   let n, t, {
       firstMedia: r,
       channelId: a
@@ -45,23 +45,23 @@ function A(e) {
       channel: c
     }),
     m = (0, f.MC)(d),
-    p = (0, s.e7)([Z.Z], () => Z.Z.isFocused()),
+    p = (0, s.e7)([I.Z], () => I.Z.isFocused()),
     x = (0, h.d$)(r.src),
     C = b.QK.useSetting(),
     {
       src: v,
       width: _,
-      height: I,
+      height: Z,
       alt: y
     } = r;
-  return I > _ ? t = 72 : n = 72, (0, l.jsxs)("div", {
+  return Z > _ ? t = 72 : n = 72, (0, l.jsxs)("div", {
     className: E.media,
     children: [(0, g.Yi)({
       src: v,
       maxHeight: n,
       maxWidth: t,
       width: _,
-      height: I,
+      height: Z,
       alt: null != y && o && null != m ? m : y,
       autoPlay: C,
       animated: x && !o && p,
@@ -88,11 +88,11 @@ function M(e) {
         limit: 5
       })
     }, [n.channelId, b]), null == t || null == t.guild_id) return null;
-  let C = I.ZP.getResourceChannelIconURL({
+  let C = Z.ZP.getResourceChannelIconURL({
       channelId: t.id,
       icon: n.icon
     }),
-    Z = null == n.description || 0 === n.description.length;
+    I = null == n.description || 0 === n.description.length;
   return (0, l.jsxs)(c.P3F, {
     className: E.row,
     onClick: e => {
@@ -108,7 +108,7 @@ function M(e) {
         variant: "text-md/bold",
         color: "header-primary",
         children: n.title
-      }), Z && null != f && (0, l.jsx)(c.Text, {
+      }), I && null != f && (0, l.jsx)(c.Text, {
         className: E.messageContent,
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -117,7 +117,7 @@ function M(e) {
           guildId: t.guild_id,
           channelId: t.id
         })
-      }), !Z && (0, l.jsx)(c.Text, {
+      }), !I && (0, l.jsx)(c.Text, {
         className: i()(E.messageContent, S.markup),
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -137,31 +137,31 @@ function M(e) {
         alt: "",
         "aria-hidden": true
       })
-    }) : null, null == C && null != p ? (0, l.jsx)(A, {
+    }) : null, null == C && null != p ? (0, l.jsx)(k, {
       firstMedia: p,
       channelId: n.channelId
     }) : null]
   })
 }
 
-function L(e) {
+function H(e) {
   let {
     guild: n,
     isNewMember: t
   } = e, r = (0, O.Z)(n.id);
   return 0 === r.length ? t ? null : (0, l.jsxs)("div", {
     className: E.emptyContainer,
-    children: [(0, l.jsx)(c.X6q, {
+    children: [(0, l.jsx)(c.Heading, {
       variant: "heading-xl/bold",
       color: "header-primary",
       children: w.intl.string(w.t.owvC9f)
     }), (0, l.jsx)("img", {
       className: E.emptyStateImage,
-      src: k,
+      src: A,
       alt: ""
     }), (0, l.jsx)("div", {
       className: E.emptyStateButton,
-      children: (0, l.jsx)(c.zxk, {
+      children: (0, l.jsx)(c.Button, {
         size: "md",
         variant: "primary",
         onClick: () => {
@@ -174,7 +174,7 @@ function L(e) {
     })]
   }) : (0, l.jsxs)("div", {
     className: E.container,
-    children: [(0, l.jsx)(c.X6q, {
+    children: [(0, l.jsx)(c.Heading, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: w.intl.string(w.t.xwY4LS)

@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 987491, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => G
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,19 +34,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk494409 = require("./494409.js"),
   Chunk266631 = require("./266631.js");
 
-function M(e) {
+function A(e) {
   let t, n, {
     status: r
   } = e;
   switch (r) {
     case f.wB.REJECTED:
-      t = R.t["7YSJ6e"], n = R.t.i05OUV;
+      t = O.t["7YSJ6e"], n = O.t.i05OUV;
       break;
     case f.wB.APPROVED:
-      t = R.t.bv82GR, n = R.t.D4OUHR;
+      t = O.t.bv82GR, n = O.t.D4OUHR;
       break;
     default:
-      t = R.t["/wqiSk"], n = R.t.o47YZm
+      t = O.t["/wqiSk"], n = O.t.o47YZm
   }
   return (0, l.jsxs)("div", {
     className: I.emptyContainer,
@@ -54,31 +54,31 @@ function M(e) {
       size: "md",
       color: "currentColor",
       className: I.checkmark
-    }), (0, l.jsx)(u.X6q, {
+    }), (0, l.jsx)(u.Heading, {
       variant: "heading-md/medium",
-      children: R.intl.string(t)
+      children: O.intl.string(t)
     }), (0, l.jsx)(u.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
-      children: R.intl.string(n)
+      children: O.intl.string(n)
     })]
   })
 }
 
-function y(e) {
+function Z(e) {
   let {
     sortOrder: t,
     onSortChange: n
   } = e;
   return (0, l.jsx)("thead", {
     children: (0, l.jsxs)("tr", {
-      className: O.tableHeaderRow,
+      className: R.tableHeaderRow,
       children: [(0, l.jsx)("th", {
         className: I.headerCell,
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: R.intl.string(R.t.Es7n9f)
+          children: O.intl.string(O.t.Es7n9f)
         })
       }), (0, l.jsx)("th", {
         className: a()(I.headerCell, w.mediumCol),
@@ -88,13 +88,13 @@ function y(e) {
           children: [(0, l.jsx)(u.Text, {
             variant: "eyebrow",
             color: "interactive-normal",
-            children: R.intl.string(R.t.EZ5QWF)
-          }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(T.Z, {
+            children: O.intl.string(O.t.EZ5QWF)
+          }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(E.Z, {
             className: I.sortIcon,
-            direction: T.Z.Directions.UP
-          }) : (0, l.jsx)(T.Z, {
+            direction: E.Z.Directions.UP
+          }) : (0, l.jsx)(E.Z, {
             className: I.sortIcon,
-            direction: T.Z.Directions.DOWN
+            direction: E.Z.Directions.DOWN
           })]
         })
       }), (0, l.jsx)("th", {
@@ -102,13 +102,13 @@ function y(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: R.intl.string(R.t["5Q9xGh"])
+          children: O.intl.string(O.t["5Q9xGh"])
         })
       })]
     })
   })
 }
-let A = Chunk647438.memo(function(e) {
+let M = Chunk647438.memo(function(e) {
     let {
       joinRequest: t,
       user: n
@@ -118,7 +118,7 @@ let A = Chunk647438.memo(function(e) {
     } = t, {
       analyticsLocations: s
     } = (0, j.ZP)(), o = r.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, E.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, N.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i,
         sourceAnalyticsLocations: s
@@ -139,7 +139,7 @@ let A = Chunk647438.memo(function(e) {
           children: (0, l.jsxs)(u.P3F, {
             onClick: o,
             className: w.nameContainer,
-            children: [n.globalName, (0, l.jsx)(_.ZP, {
+            children: [n.globalName, (0, l.jsx)(C.ZP, {
               primaryGuild: null == n ? true : n.primaryGuild,
               userId: null == n ? true : n.id,
               contextGuildId: a,
@@ -170,18 +170,18 @@ let A = Chunk647438.memo(function(e) {
       guildId: s,
       createdAt: x,
       applicationStatus: j
-    } = t, h = r.useMemo(() => new N.Z(t.user), [t.user]), b = (0, g.L)({
+    } = t, b = r.useMemo(() => new S.default(t.user), [t.user]), h = (0, p.L)({
       guildId: s
-    }), v = (0, c.e7)([S.Z], () => S.Z.getGuild(s)), p = j === f.wB.SUBMITTED;
-    return null == h ? null : (0, l.jsxs)("tr", {
+    }), g = (0, c.e7)([T.Z], () => T.Z.getGuild(s)), v = j === f.wB.SUBMITTED;
+    return null == b ? null : (0, l.jsxs)("tr", {
       onClick: i,
       className: a()(w.roundedRow, w.memberRowContainer, {
-        [w.selected]: (null == b ? true : b.joinRequestId) === t.joinRequestId
+        [w.selected]: (null == h ? true : h.joinRequestId) === t.joinRequestId
       }),
       children: [(0, l.jsx)("td", {
-        children: (0, l.jsx)(A, {
+        children: (0, l.jsx)(M, {
           joinRequest: t,
-          user: h
+          user: b
         })
       }), (0, l.jsx)("td", {
         className: w.mediumCol,
@@ -192,8 +192,8 @@ let A = Chunk647438.memo(function(e) {
         })
       }), (0, l.jsx)("td", {
         className: I.moreOptionsCol,
-        children: p && (0, l.jsx)(d.u, {
-          text: R.intl.string(R.t.x8Nn4O),
+        children: v && (0, l.jsx)(d.u, {
+          text: O.intl.string(O.t.x8Nn4O),
           children: (0, l.jsx)(u.P3F, {
             onClick: e => {
               (0, m.jW)(e, async () => {
@@ -220,8 +220,8 @@ let A = Chunk647438.memo(function(e) {
                     }
                     return e
                   }({}, t), r = r = {
-                    guild: v,
-                    user: h
+                    guild: g,
+                    user: b
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
@@ -293,47 +293,47 @@ let A = Chunk647438.memo(function(e) {
     })
   };
 
-function B(e) {
+function G(e) {
   let {
     guildId: t,
     currentTab: n
-  } = e, i = r.useRef(null), a = (0, c.e7)([S.Z], () => S.Z.getGuild(t)), s = (0, p.C)({
+  } = e, i = r.useRef(null), a = (0, c.e7)([T.Z], () => T.Z.getGuild(t)), s = (0, v.C)({
     guildId: t
-  }), o = (0, c.e7)([b.Z], () => b.Z.isFetching()), {
+  }), o = (0, c.e7)([h.Z], () => h.Z.isFetching()), {
     guildJoinRequests: d
-  } = (0, C.j)({
+  } = (0, _.j)({
     guildId: t,
     applicationStatus: n,
     sortOrder: s
   }), {
     fetchNextPage: m
-  } = (0, v.m)({
+  } = (0, g.m)({
     guildId: t,
     guildJoinRequests: d
   }), x = r.useCallback(async () => {
     let e = s === f.Nw.TIMESTAMP_ASC ? f.Nw.TIMESTAMP_DESC : f.Nw.TIMESTAMP_ASC;
-    h.Z.setSelectedSortOrder(t, e), await m(e, n)
+    b.Z.setSelectedSortOrder(t, e), await m(e, n)
   }, [s, t, m, n]);
   return null == a ? null : (0, l.jsx)("div", {
-    className: Z.mainTableContainer,
+    className: y.mainTableContainer,
     children: (0, l.jsx)(u.Den, {
-      className: Z.horizatonalScroller,
+      className: y.horizatonalScroller,
       ref: i,
       orientation: "horizontal",
       children: (0, l.jsxs)("table", {
         className: I.table,
-        children: [(0, l.jsx)(y, {
+        children: [(0, l.jsx)(Z, {
           sortOrder: s,
           onSortChange: x
         }), (0, l.jsx)("tbody", {
           children: o ? [, , , , , ].fill(0).map((e, t) => (0, l.jsx)(k, {}, "placeholder-".concat(t))) : 0 === d.length ? (0, l.jsx)("td", {
             colSpan: 3,
-            children: (0, l.jsx)(M, {
+            children: (0, l.jsx)(A, {
               status: n
             })
           }) : d.map(e => (0, l.jsx)(D, {
             joinRequest: e,
-            onSelect: () => h.Z.setSelectedGuildJoinRequest(t, e)
+            onSelect: () => b.Z.setSelectedGuildJoinRequest(t, e)
           }, e.joinRequestId))
         })]
       })

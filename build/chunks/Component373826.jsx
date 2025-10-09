@@ -102,7 +102,7 @@ function h(e) {
 
 function m(e) {
   return (0, r.jsx)(h, u({
-    component: i.X6q
+    component: i.Heading
   }, e))
 }
 

@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -99,7 +99,7 @@ function B(e) {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
     return n => (0, r.jsx)(t, M({
-      source: j(M({}, e), {
+      source: k(M({}, e), {
         page: w.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
@@ -114,7 +114,7 @@ function Z(e) {
   } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), a = (0, s.e7)([I.default], () => {
     let e = I.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), x = (0, s.e7)([O.Z], () => !O.Z.isFetchingProfile(a.id, null == t ? true : t.id)), k = (0, s.e7)([v.Z], () => v.Z.hidePersonalInformation), G = (0, s.cj)([C.Z], () => j(M({}, C.Z.getAllPending()), {
+  }), x = (0, s.e7)([O.Z], () => !O.Z.isFetchingProfile(a.id, null == t ? true : t.id)), j = (0, s.e7)([v.Z], () => v.Z.hidePersonalInformation), G = (0, s.cj)([C.Z], () => k(M({}, C.Z.getAllPending()), {
     source: C.Z.getSource()
   })), {
     source: Z,
@@ -141,7 +141,7 @@ function Z(e) {
   } = h.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
-  return k ? (0, r.jsx)(u.Z, {}) : x ? (0, r.jsxs)(_.Gt, {
+  return j ? (0, r.jsx)(u.Z, {}) : x ? (0, r.jsxs)(_.Gt, {
     value: n,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -155,14 +155,14 @@ function Z(e) {
           null != e && (0, A.HP)(e)
         }
       }), (0, r.jsx)(E.Z, {
-        profilePreviewTitle: (0, r.jsx)(l.X6q, {
+        profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
           className: L.profilePreviewTitle,
           children: D.intl.formatToPlainString(D.t.Tc0slJ, {
             guildName: null == t ? true : t.name
           })
         }),
-        profilePreview: (0, r.jsx)(b.Z, j(M({}, H), {
+        profilePreview: (0, r.jsx)(b.Z, k(M({}, H), {
           pendingAvatar: Y,
           pendingDisplayNameStyles: K,
           user: a,

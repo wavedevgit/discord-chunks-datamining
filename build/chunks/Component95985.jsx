@@ -24,11 +24,11 @@ let p = e => {
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
     onGameSheetClosed: _
-  } = e, b = (0, o.eQ)(n), j = (0, o.vf)({
+  } = e, b = (0, a.eQ)(n), j = (0, a.vf)({
     quest: n,
     isExpanded: m,
     activeScreen: f,
-    sourceQuestContent: a.jn.QUEST_BAR_V2,
+    sourceQuestContent: o.jn.QUEST_BAR_V2,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
     onGameSheetClosed: _
@@ -48,10 +48,10 @@ let p = e => {
         children: (0, r.jsx)(i.Z, {
           className: u.questProgressRewardTile,
           quest: n,
-          questContent: a.jn.QUEST_BAR_V2,
+          questContent: o.jn.QUEST_BAR_V2,
           autoplay: false,
           location: d.dr.QUESTS_BAR,
-          sourceQuestContent: a.jn.QUEST_BAR_V2
+          sourceQuestContent: o.jn.QUEST_BAR_V2
         })
       })
     }), (0, r.jsxs)("div", {

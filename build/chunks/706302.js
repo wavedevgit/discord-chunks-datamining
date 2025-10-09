@@ -11,10 +11,10 @@ function r(e) {
     context: t,
     application: n,
     botUserId: r
-  } = e, a = (0, l.ms)({
+  } = e, a = (0, i.ms)({
     context: t,
     applicationId: n.id,
     botUserId: r
-  }), o = (0, i.Z)("channel" === t.type ? t.channel : true);
+  }), o = (0, l.Z)("channel" === t.type ? t.channel : true);
   return a && null != r && !o
 }

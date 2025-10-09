@@ -19,23 +19,23 @@ function o(e) {
   var {
     children: t,
     guildId: A
-  } = e, n = function(e, t) {
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var A, r, n = function(e, t) {
+    var A, n, r = function(e, t) {
       if (null == e) return {};
-      var A, r, n = {},
+      var A, n, r = {},
         a = Object.keys(e);
-      for (r = 0; r < a.length; r++) A = a[r], t.indexOf(A) >= 0 || (n[A] = e[A]);
-      return n
+      for (n = 0; n < a.length; n++) A = a[n], t.indexOf(A) >= 0 || (r[A] = e[A]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) A = a[r], !(t.indexOf(A) >= 0) && Object.prototype.propertyIsEnumerable.call(e, A) && (n[A] = e[A])
+      for (n = 0; n < a.length; n++) A = a[n], !(t.indexOf(A) >= 0) && Object.prototype.propertyIsEnumerable.call(e, A) && (r[A] = e[A])
     }
-    return n
+    return r
   }(e, ["children", "guildId"]);
-  let i = (0, a.Z)(A, n);
-  return (0, r.jsx)(l.Provider, {
+  let i = (0, a.Z)(A, r);
+  return (0, n.jsx)(l.Provider, {
     value: i,
     children: t
   })

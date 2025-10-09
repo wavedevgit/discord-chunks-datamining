@@ -24,7 +24,7 @@ function f() {
     className: Chunk958461.empty,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk958461.textContainer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.oqalCw)

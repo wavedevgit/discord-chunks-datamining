@@ -38,7 +38,7 @@ let d = function(e) {
     className: l.wrapper,
     children: [(0, r.jsxs)("div", {
       className: l.content,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(o.Heading, {
         className: l.heading,
         color: "always-white",
         variant: "heading-xxl/bold",

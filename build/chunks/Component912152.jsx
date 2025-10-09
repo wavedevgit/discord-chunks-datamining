@@ -67,7 +67,7 @@ let h = function(e) {
   });
   return (0, r.jsxs)("div", {
     className: _.wrapper,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/bold",
       className: _.subtitle,
       children: s

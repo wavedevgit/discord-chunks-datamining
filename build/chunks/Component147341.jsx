@@ -17,7 +17,7 @@ function s() {
       className: Chunk46693.textContainer,
       gap: 16,
       padding: 32,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-xxl/normal",
         color: "header-primary",
         className: Chunk46693.heading,

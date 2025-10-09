@@ -49,7 +49,7 @@ let f = [{
     } = e, [n, a] = i.useState(null);
     return (0, r.jsxs)("div", {
       className: o()(d.wrapper, t),
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         className: d.heading,
         variant: "heading-xxl/bold",
         children: u.intl.string(u.t.HPJ6Nj)

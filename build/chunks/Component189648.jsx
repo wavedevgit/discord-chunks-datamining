@@ -25,7 +25,7 @@ function d(e) {
     }, t)
   });
   return (0, r.jsxs)(l.Kqy, {
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/medium",
       children: c.intl.string(c.t["2AGBWF"])
     }), (0, o.VE)(n)]

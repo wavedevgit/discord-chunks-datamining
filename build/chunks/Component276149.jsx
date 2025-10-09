@@ -90,7 +90,7 @@ function b(e) {
         cta_type: y ? "open" : "join"
       }))
     };
-  return (0, r.jsx)(a.zxk, p({
+  return (0, r.jsx)(a.Button, p({
     text: y ? f.intl.string(f.t.BXxdl5) : f.intl.string(f.t["9C444u"]),
     onClick: O,
     variant: t,

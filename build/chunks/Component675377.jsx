@@ -83,7 +83,7 @@ function F() {
     value: exports,
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 8,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.OWQNYm)
       }), (0, Chunk951288.jsx)(K, {
@@ -97,7 +97,7 @@ function H(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(g.X6q, {
+  return (0, r.jsx)(g.Heading, {
     className: G.tableHeader,
     variant: "heading-sm/semibold",
     color: "header-secondary",
@@ -105,7 +105,7 @@ function H(e) {
   })
 }
 
-function z(e) {
+function W(e) {
   let {
     currentTier: t,
     availableSounds: n,
@@ -124,7 +124,7 @@ function z(e) {
       children: (0, r.jsx)(g.P3F, {
         className: G.boostingIconWrapper,
         onClick: () => {
-          (0, b.f)({
+          (0, x.f)({
             guildId: i,
             location: {
               section: A.jXE.GUILD_SETTINGS_SOUNDBOARD,
@@ -183,7 +183,7 @@ let V = e => {
       children: e => n(e, p)
     }))
   },
-  W = () => {
+  z = () => {
     let e = Chunk647438.useRef(null);
     return (0, Chunk951288.jsx)(V, {
       renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -194,7 +194,7 @@ let V = e => {
       renderPopoutChildren: (t, n) => (0, r.jsx)("div", U(M({
         ref: e
       }, n), {
-        children: (0, r.jsx)(g.zxk, U(M({}, t), {
+        children: (0, r.jsx)(g.Button, U(M({}, t), {
           disabled: true,
           variant: "primary",
           text: k.intl.string(k.t["/uNYPD"])
@@ -219,7 +219,7 @@ function K(e) {
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, C.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !a;
 
-  function x(e) {
+  function b(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = p[e.soundId];
@@ -229,7 +229,7 @@ function K(e) {
       var e;
       null == (e = o.current) || e.pause()
     }, []), a) return (0, r.jsx)(g.$jN, {});
-  let b = B ? (0, r.jsx)(g.zxk, {
+  let x = B ? (0, r.jsx)(g.Button, {
     variant: "primary",
     text: k.intl.string(k.t["/uNYPD"]),
     onClick: function() {
@@ -243,7 +243,7 @@ function K(e) {
       })
     },
     disabled: m <= 0 || !s
-  }) : (0, r.jsx)(W, {});
+  }) : (0, r.jsx)(z, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(g.Text, {
@@ -253,7 +253,7 @@ function K(e) {
         children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: G.buttons,
-        children: !h && b
+        children: !h && x
       })]
     }), h ? (0, r.jsxs)(g.ubH, {
       theme: d,
@@ -267,15 +267,15 @@ function K(e) {
         note: k.intl.string(k.t.ZhoSBA),
         noteClassName: G.emptyText,
         children: k.intl.string(k.t.I6P1p6)
-      }), b]
+      }), x]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.izJ, {
         className: G.divider
-      }), (0, r.jsx)(g.X6q, {
+      }), (0, r.jsx)(g.Heading, {
         className: G.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: (0, r.jsx)(z, {
+        children: (0, r.jsx)(W, {
           guildId: t.id,
           currentTier: u,
           availableSounds: m
@@ -299,7 +299,7 @@ function K(e) {
           sound: e,
           isPlaying: false,
           guild: t,
-          onPlaySound: x
+          onPlaySound: b
         }, e.soundId))]
       })]
     })]
@@ -317,13 +317,13 @@ function Y(e) {
     name: u,
     user: f,
     userId: h,
-    emojiId: b,
+    emojiId: x,
     emojiName: _
   } = t, {
     analyticsLocations: C
-  } = (0, x.ZP)(), O = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
+  } = (0, b.ZP)(), O = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != b || null != _, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!w) {
       R(true);
@@ -353,7 +353,7 @@ function Y(e) {
       [G.active]: l
     }),
     children: [P ? (0, r.jsx)(p.Z, {
-      emojiId: b,
+      emojiId: x,
       emojiName: _,
       className: G.emoji
     }) : (0, r.jsx)(g.XBm, {

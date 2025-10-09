@@ -21,7 +21,7 @@ let c = function() {
       label: "Virtual Currency Configuration",
       description: "Click the button below to reset your onboarding state for Virtual Currency.",
       children: [(0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           text: "Reset Onboarding State",
           onClick: () => {
             module(), exports(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)

@@ -1,4 +1,4 @@
-/** Chunk was on 89381 **/
+/** Chunk was on 89279 **/
 /** chunk id: 422200, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => E
@@ -30,10 +30,10 @@ let E = (0, Chunk108843.Z)(function(e) {
   let {
     channel: n,
     onSelect: t
-  } = e, o = (0, d.Z)(n), a = (0, h.Z)(n), E = (0, m.Z)(n), N = (0, s.Z)(n), x = (0, Z.Z)(n), C = (0, f.Z)(n), w = (0, c.Z)({
+  } = e, o = (0, d.Z)(n), a = (0, h.Z)(n), E = (0, m.Z)(n), A = (0, s.Z)(n), N = (0, Z.Z)(n), x = (0, f.Z)(n), C = (0, c.Z)({
     id: n.id,
     label: P.intl.string(P.t.DQ797u)
-  }), S = (0, b.Z)(n, "Context Menu"), A = (0, O.Z)(n), M = (0, _.Z)(n), T = (0, g.Z)(n), k = (0, v.Z)(n.id), R = (0, p.Z)(n), D = (0, y.Z)(n), U = (0, u.l)(n), I = (0, u.P)(n), G = (0, j.Z)(n);
+  }), w = (0, b.Z)(n, "Context Menu"), S = (0, j.Z)(n), M = (0, y.Z)(n), T = (0, v.Z)(n), k = (0, g.Z)(n.id), R = (0, p.Z)(n), D = (0, _.Z)(n), U = (0, u.l)(n), I = (0, u.P)(n), G = (0, O.Z)(n);
   return (0, r.jsxs)(i.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
@@ -42,15 +42,15 @@ let E = (0, Chunk108843.Z)(function(e) {
     children: [(0, r.jsxs)(i.kSQ, {
       children: [a, U]
     }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.kSQ, {
-      children: [S, R, N, x, T, k, o]
+      children: [w, R, A, N, T, k, o]
     }, "thread-actions"), (0, r.jsxs)(i.kSQ, {
       children: [E, M]
     }, "notifications"), (0, r.jsx)(i.kSQ, {
       children: I
     }), (0, r.jsxs)(i.kSQ, {
-      children: [D, A, C, G]
+      children: [D, S, x, G]
     }, "admin-actions"), (0, r.jsx)(i.kSQ, {
-      children: w
+      children: C
     }, "developer-actions")]
   })
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_LIST_THREAD_MENU])

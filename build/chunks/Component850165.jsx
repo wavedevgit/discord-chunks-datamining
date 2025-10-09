@@ -26,7 +26,7 @@ function a(t) {
       className: s.body,
       children: [(0, i.jsxs)("div", {
         className: s.textContainer,
-        children: [(0, i.jsx)(r.X6q, {
+        children: [(0, i.jsx)(r.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
           children: o

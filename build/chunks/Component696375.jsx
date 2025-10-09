@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 696375, original params: e,n,i (module,exports,require) **/
+/** chunk id: 696375, original params: n,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => r
 });
@@ -9,14 +9,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk452847 = require("./452847.js");
 
-function r(e) {
+function r(n) {
   let {
-    url: n,
+    url: e,
     text: i,
     onClick: r
-  } = e;
-  return (0, t.jsx)(a.eee, {
-    href: n,
+  } = n;
+  return (0, t.jsx)(a.Anchor, {
+    href: e,
     onClick: r,
     className: l.externalLinkWrapper,
     children: (0, t.jsxs)(a.P3F, {

@@ -16,42 +16,42 @@ let r = e => {
   return {
     handleLeftClick: e => {
       var n;
-      (0, a.kK)(e.target) && (null == (n = t.current) ? true : n.contains(e.target)) || r(i, e.shiftKey)
+      (0, l.kK)(e.target) && (null == (n = t.current) ? true : n.contains(e.target)) || r(i, e.shiftKey)
     },
     handleRightClick: e => (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("46154"), n.e("72280")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("46154"), n.e("89279")]).then(n.bind(n, 422200));
       return t => {
-        var n, a;
-        return (0, l.jsx)(e, (n = function(e) {
+        var n, l;
+        return (0, a.jsx)(e, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              l = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              a = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), l.forEach(function(t) {
-              var l;
-              l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
+            }))), a.forEach(function(t) {
+              var a;
+              a = n[t], t in e ? Object.defineProperty(e, t, {
+                value: a,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = l
+              }) : e[t] = a
             })
           }
           return e
-        }({}, t), a = a = {
+        }({}, t), l = l = {
           channel: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
+            var a = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, a)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       }
     })

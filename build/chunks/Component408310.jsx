@@ -32,7 +32,7 @@ let u = e => {
   else if (0 === m.length) {
     let e = null != g ? s.intl.format(s.t.qWFupq, {
       addServerHook: function(e, t) {
-        return (0, r.jsx)(i.eee, {
+        return (0, r.jsx)(i.Anchor, {
           onClick: g,
           children: e
         }, t)
@@ -44,7 +44,7 @@ let u = e => {
         className: c.emptySearchImage,
         alt: "",
         src: d
-      }), (0, r.jsx)(i.X6q, {
+      }), (0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: c.emptySearchTitle,
@@ -76,7 +76,7 @@ let u = e => {
             children: (0, r.jsx)(l.Z, {
               direction: l.Z.Directions.LEFT
             })
-          }), (0, r.jsx)(i.X6q, {
+          }), (0, r.jsx)(i.Heading, {
             variant: "heading-xl/semibold",
             className: c.searchPageTitle,
             children: s.intl.format(s.t.UkOHRU, {

@@ -76,12 +76,12 @@ function R(e) {
     ban: s,
     hideDiscriminator: c,
     onClose: g
-  } = e, [m, h] = i.useState(false), [x, b] = i.useState(null), {
+  } = e, [m, h] = i.useState(false), [b, x] = i.useState(null), {
     analyticsLocations: j
   } = (0, f.ZP)(), _ = null != (t = null == j ? true : j[0]) ? t : null;
   async function O() {
     if (null != l) {
-      b(null), h(true);
+      x(null), h(true);
       try {
         await d.Z.unbanUser(l.id, a.id), g(), v.default.track(I.rMx.GUILD_BAN_REMOVED, Z(w({}, (0, p.hH)(l.id)), {
           target_user_id: a.id,
@@ -89,7 +89,7 @@ function R(e) {
           location: _
         }))
       } catch (e) {
-        b(new u.Z(e)), h(false)
+        x(new u.Z(e)), h(false)
       }
     }
   }
@@ -100,14 +100,14 @@ function R(e) {
     children: [(0, r.jsxs)(o.xBx, {
       className: T.header,
       separator: false,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xl/semibold",
         className: T.userUsername,
         children: C.ZP.getUserTag(a, {
           mode: "username",
           identifiable: c ? "never" : "always"
         })
-      }), c || a.hasUniqueUsername() ? null : (0, r.jsxs)(o.X6q, {
+      }), c || a.hasUniqueUsername() ? null : (0, r.jsxs)(o.Heading, {
         variant: "heading-xl/semibold",
         className: T.userDiscrim,
         children: ["#", a.discriminator]
@@ -121,21 +121,21 @@ function R(e) {
         variant: "text-xs/medium",
         color: "text-secondary",
         children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zcn"])
-      }), null != x ? (0, r.jsx)(o.Text, {
+      }), null != b ? (0, r.jsx)(o.Text, {
         className: T.error,
         color: "text-danger",
         variant: "text-sm/normal",
-        children: x.getAnyErrorMessage()
+        children: b.getAnyErrorMessage()
       }) : null]
     }), (0, r.jsx)(o.mzw, {
       className: T.footer,
-      children: (0, r.jsxs)(o.hE2, {
+      children: (0, r.jsxs)(o.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, r.jsx)(o.zxk, {
+        children: [(0, r.jsx)(o.Button, {
           variant: "primary",
           text: S.intl.string(S.t.i4jeWV),
           onClick: g
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(o.Button, {
           variant: "critical-secondary",
           text: S.intl.string(S.t.UPcIa2),
           onClick: O,
@@ -206,7 +206,7 @@ let A = Chunk647438.forwardRef(function(e, t) {
     guild: n,
     sortedBans: l,
     bans: a
-  } = e, c = (0, s.e7)([b.Z], () => b.Z.hidePersonalInformation, []), d = i.useCallback(e => {
+  } = e, c = (0, s.e7)([x.Z], () => x.Z.hidePersonalInformation, []), d = i.useCallback(e => {
     var t;
     if (null == a && 0 === e) return 60;
     let n = l[e],
@@ -254,7 +254,7 @@ function L(e) {
     }
     if (!s) try {
       c(true);
-      let [e, n] = (0, x.C)(l), r = e[0];
+      let [e, n] = (0, b.C)(l), r = e[0];
       O.Z.setSearchQuery(l), await d.Z.searchGuildBans(t, r, n), c(false)
     } catch (e) {
       c(false)
@@ -263,7 +263,7 @@ function L(e) {
     "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), p())
   }, [p]);
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-lg/semibold",
       children: S.intl.string(S.t["7OY0gI"])
     }), (0, r.jsx)("div", {
@@ -287,7 +287,7 @@ function L(e) {
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: T.searchButton,
-        children: (0, r.jsx)(o.zxk, {
+        children: (0, r.jsx)(o.Button, {
           variant: "primary",
           text: S.intl.string(S.t["5h0QOD"]),
           onClick: p,
@@ -304,11 +304,11 @@ function k() {
   let {
     guild: c,
     searchQuery: u
-  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [b] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), v = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, C = (0, Chunk410030.ZP)(), O = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [x] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), v = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, C = (0, Chunk410030.ZP)(), O = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) returnfalse;
     let [
       [n], r
-    ] = (0, x.C)(e);
+    ] = (0, b.C)(e);
     return !!r.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
   }, []), P = Chunk647438.useCallback((e, t, n) => {
     if (null == e || 0 === n) return [];
@@ -333,13 +333,13 @@ function k() {
     F = Chunk647438.useMemo(() => a().chunk(R, M.pageSize), [M.pageSize, R]),
     H = Chunk647438.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (z.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (W.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
         currentPage: e
       }))
     }, [M.pageSize, R, k, F, B, Chunk367907]),
-    z = Chunk647438.useRef(null);
+    W = Chunk647438.useRef(null);
   Chunk647438.useEffect(() => {
-    B(z.current)
+    B(W.current)
   }, [B]);
   let V = Chunk647438.useMemo(() => {
     var e;

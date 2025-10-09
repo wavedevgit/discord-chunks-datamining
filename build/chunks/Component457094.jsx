@@ -142,9 +142,9 @@ function te(e) {
 require("./117240.js"), require("./801077.js"), require("./967368.js"), require("./272053.js"), require("./974180.js"), require("./574254.js"), require("./551428.js"), require("./55563.js"), require("./882029.js"), require("./959457.js"), require("./653255.js"), require("./663389.js"), require("./25990.js"), require("./778825.js"), require("./999382.js"), require("./388610.js"), require("./533947.js"), require("./277053.js"), require("./371398.js"), require("./141233.js"), require("./471073.js"), require("./606206.js");
 let tt = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
-  eq.Z.getLayers().includes(e5.S9g.USER_SETTINGS) || (0, eU.openUserSettings)()
+  eY.Z.getLayers().includes(e5.S9g.USER_SETTINGS) || (0, eU.openUserSettings)()
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
-  let n = eY.Z.getActiveLibraryApplication(t);
+  let n = eq.Z.getActiveLibraryApplication(t);
   e3.playApplication(t, n, {
     analyticsParams: {
       location: {
@@ -279,10 +279,10 @@ let ts = [{
       action: i
     } = t.params;
     return e0.Z.whenInitialized(() => {
-      eY.Z.whenInitialized(() => {
+      eq.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
-            let e = eY.Z.getActiveLibraryApplication(n);
+            let e = eq.Z.getActiveLibraryApplication(n);
             if (null == e) return;
             e3.playApplication(e.id, e, {
               analyticsParams: {
@@ -298,7 +298,7 @@ let ts = [{
             eX.Z.whenInitialized(() => h.Wt(n));
             break;
           case "uninstall": {
-            let e = eY.Z.getActiveLibraryApplication(n);
+            let e = eq.Z.getActiveLibraryApplication(n);
             if (null == e) return;
             (0, u.W)(e.id, e.branchId, e5.Sbl.URI_SCHEME)
           }

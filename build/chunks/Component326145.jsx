@@ -61,7 +61,7 @@ function v(e) {
       className: a()(O.explainerContainer, O.transparentBackground),
       children: [(0, r.jsxs)("div", {
         className: O.header,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
           children: _.intl.string(_.t.CCmhpK)
@@ -70,7 +70,7 @@ function v(e) {
           color: "always-white",
           children: _.intl.string(_.t.gRAHcX)
         })]
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, r.jsx)(s.Button, {
         variant: "overlay-primary",
         size: "md",
         text: _.intl.string(_.t.VVFjAA),

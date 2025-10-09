@@ -31,7 +31,7 @@ function m(e) {
         guild: f,
         guildId: f.id,
         headerContent: (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(a.X6q, {
+          children: [(0, r.jsx)(a.Heading, {
             variant: "text-md/semibold",
             color: "header-primary",
             className: g.header,
@@ -59,7 +59,7 @@ function m(e) {
       return (0, r.jsx)(o.Z, {
         guild: f,
         guildId: f.id,
-        headerContent: (0, r.jsx)(a.X6q, {
+        headerContent: (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: u.intl.format(u.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {

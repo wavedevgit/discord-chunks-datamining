@@ -1,7 +1,7 @@
 /** Chunk was on 13111 **/
 /** chunk id: 93756, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,14 +10,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk33108 = require("./33108.js");
 
-function d(t) {
+function o(t) {
   let {
     transitionState: n,
     onClose: e,
-    onDelete: d
+    onDelete: o
   } = t;
-  async function o() {
-    await (0, s.TG)(), d()
+  async function d() {
+    await (0, r.TG)(), o()
   }
   return (0, i.jsxs)(a.Y0X, {
     size: a.CgR.SMALL,
@@ -28,11 +28,11 @@ function d(t) {
       className: l.modalContent,
       children: [(0, i.jsxs)("div", {
         className: l.header,
-        children: [(0, i.jsx)(a.X6q, {
+        children: [(0, i.jsx)(a.Heading, {
           className: l.__invalid_title,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: r.intl.string(r.t.P8nDIC)
+          children: s.intl.string(s.t.P8nDIC)
         }), (0, i.jsx)(a.olH, {
           onClick: e
         })]
@@ -40,18 +40,18 @@ function d(t) {
         variant: "text-md/normal",
         color: "text-default",
         className: l.__invalid_body,
-        children: r.intl.string(r.t.fwFcj4)
+        children: s.intl.string(s.t.fwFcj4)
       })]
     }), (0, i.jsx)(a.mzw, {
-      children: (0, i.jsxs)(a.hE2, {
+      children: (0, i.jsxs)(a.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, i.jsx)(a.zxk, {
+        children: [(0, i.jsx)(a.Button, {
           variant: "critical-primary",
-          text: r.intl.string(r.t["5I4fSk"]),
-          onClick: o
-        }), (0, i.jsx)(a.zxk, {
+          text: s.intl.string(s.t["5I4fSk"]),
+          onClick: d
+        }), (0, i.jsx)(a.Button, {
           variant: "secondary",
-          text: r.intl.string(r.t["ETE/oK"]),
+          text: s.intl.string(s.t["ETE/oK"]),
           onClick: e
         })]
       })

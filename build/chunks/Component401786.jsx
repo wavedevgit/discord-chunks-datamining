@@ -2,7 +2,7 @@
 /** chunk id: 401786, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => j
+  default: () => k
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -114,14 +114,14 @@ function M(e) {
         [], true
       ]
     }
-  }, [o]), k = i.useRef(O);
+  }, [o]), j = i.useRef(O);
   i.useEffect(() => {
-    k.current = O
+    j.current = O
   }), i.useEffect(() => {
-    M && k.current()
+    M && j.current()
   }, [M]);
   let {
-    premiumSubscriptionPlan: j,
+    premiumSubscriptionPlan: k,
     premiumGuildPlan: U
   } = (0, l.cj)([v.Z], () => {
     let e = v.Z.get(o.planId);
@@ -145,7 +145,7 @@ function M(e) {
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
   });
-  if (null == F || null == j || null == U || null == B) return (0, r.jsx)(c.$jN, {});
+  if (null == F || null == k || null == U || null == B) return (0, r.jsx)(c.$jN, {});
   let V = o.items.some(e => {
       let {
         planId: t
@@ -167,7 +167,7 @@ function M(e) {
     {
       interval: W,
       intervalCount: K
-    } = j,
+    } = k,
     z = P.intl.format(P.t["0W23cn"], {
       endDate: F.subscriptionPeriodStart
     });
@@ -207,7 +207,7 @@ function M(e) {
       "data-migration-pending": true,
       align: h.Z.Align.CENTER,
       justify: h.Z.Justify.BETWEEN,
-      children: [(0, r.jsx)(c.zxk, {
+      children: [(0, r.jsx)(c.Button, {
         variant: "critical-primary",
         text: P.intl.string(P.t["/AS/gI"]),
         disabled: I,
@@ -225,7 +225,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     premiumSubscription: t,
     fractionalPremiumInfo: n,
@@ -257,7 +257,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let t, {
     guildBoostSlot: n,
     transitionState: a,
@@ -303,7 +303,7 @@ function j(e) {
       });
       break;
     case 3:
-      t = (0, r.jsx)(k, {
+      t = (0, r.jsx)(j, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         onClose: o,

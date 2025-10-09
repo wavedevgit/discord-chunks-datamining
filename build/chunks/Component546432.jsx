@@ -75,9 +75,9 @@ function M(e, t) {
   }), e
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -85,7 +85,7 @@ function k(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -206,8 +206,8 @@ function V(e) {
     className: L,
     imgContainerClassName: x,
     imgClassName: M,
-    focusable: k,
-    hiddenSpoilers: j,
+    focusable: j,
+    hiddenSpoilers: k,
     mediaLayoutType: U,
     maxWidth: G,
     maxHeight: B,
@@ -308,7 +308,7 @@ function V(e) {
           message: t,
           width: q,
           height: X,
-          autoPlay: a && !j,
+          autoPlay: a && !k,
           onClick: _,
           onContextMenu: h,
           shouldHideMediaOptions: eo,
@@ -317,8 +317,8 @@ function V(e) {
           containerClassName: L,
           className: x,
           imageClassName: M,
-          shouldLink: k,
-          hiddenSpoilers: j,
+          shouldLink: j,
+          hiddenSpoilers: k,
           responsive: true,
           mediaLayoutType: U,
           maxWidth: G,
@@ -344,7 +344,7 @@ function V(e) {
         className: o()(L, {
           [P.hasFooter]: Z
         }),
-        playable: k,
+        playable: j,
         responsive: true,
         mediaLayoutType: U,
         maxWidth: G,
@@ -373,7 +373,7 @@ function V(e) {
         item: n,
         message: t,
         className: L,
-        playable: k,
+        playable: j,
         mimeType: el,
         renderAdjacentContent: e_,
         onVolumeShow: () => et(true),
@@ -436,15 +436,15 @@ let Y = function(e) {
     isSingleMosaicItem: u,
     footer: d,
     displayGridItem: f
-  } = e, _ = k(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
+  } = e, _ = j(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
   let {
     width: h,
     height: b,
     type: y
-  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [x, j] = i.useState(false), Z = () => {
-    j(true)
+  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [x, k] = i.useState(false), Z = () => {
+    k(true)
   }, F = () => {
-    j(false)
+    k(false)
   }, Y = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return (0, r.jsx)(V, M(L({}, _), {

@@ -17,7 +17,7 @@ function d(e) {
     botUserId: t,
     applicationId: n,
     analyticsLocations: d
-  } = e, [p, m] = i.useState(false), f = i.useRef(null), h = i.useCallback(async () => {
+  } = e, [p, m] = l.useState(false), f = l.useRef(null), h = l.useCallback(async () => {
     a.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: o._y.OPEN_APP_DM
@@ -31,7 +31,7 @@ function d(e) {
     } catch (e) {}
     clearTimeout(f.current), m(false)
   }, [t, n, d]);
-  return (0, l.jsx)(r.zxk, {
+  return (0, i.jsx)(r.Button, {
     type: "submit",
     size: "md",
     variant: "secondary",

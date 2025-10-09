@@ -137,7 +137,7 @@ function eM(e) {
   } = e, {
     id: s,
     author: l
-  } = t, u = k.default.getId(), d = t.getChannelId(), f = (0, a.e7)([j.Z], () => j.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
+  } = t, u = j.default.getId(), d = t.getChannelId(), f = (0, a.e7)([k.Z], () => k.Z.isCallActive(d, s), [d, s]), _ = (0, a.e7)([H.Z], () => H.Z.getVoiceState(eC.ME, u)), p = !f && null != t.call && !t.call.participants.includes(u), h = f && (null == _ || _.channelId !== d), m = i.useCallback(() => c.default.selectVoiceChannel(d), [d]), g = (0, ee.l)({
     user: l,
     channelId: d,
     guildId: o.guild_id,
@@ -154,7 +154,7 @@ function eM(e) {
   })
 }
 
-function ek(e) {
+function ej(e) {
   let {
     message: t,
     compact: n,
@@ -175,7 +175,7 @@ function ek(e) {
   })
 }
 
-function ej(e) {
+function ek(e) {
   let {
     message: t,
     compact: n,
@@ -289,7 +289,7 @@ function eB(e) {
     null != a && (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("90508"), n.e("46154"), n.e("89381")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("90508"), n.e("46154"), n.e("44141")]).then(n.bind(n, 422200));
       return t => (0, r.jsx)(e, eL(ew({}, t), {
         channel: a
       }))
@@ -634,7 +634,7 @@ function e1(e) {
       message: i,
       compact: c,
       usernameHook: u
-    }), h ? (0, r.jsx)(o.zxk, {
+    }), h ? (0, r.jsx)(o.Button, {
       variant: "secondary",
       onClick: f,
       text: eR.intl.string(eR.t.f0T7hI),
@@ -785,8 +785,8 @@ let tn = Object.freeze({
   [Chunk981631.uaV.RECIPIENT_ADD]: eG,
   [Chunk981631.uaV.RECIPIENT_REMOVE]: eZ,
   [Chunk981631.uaV.CALL]: eM,
-  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: ek,
-  [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: ej,
+  [Chunk981631.uaV.CHANNEL_NAME_CHANGE]: ej,
+  [Chunk981631.uaV.CHANNEL_ICON_CHANGE]: ek,
   [Chunk981631.uaV.CHANNEL_PINNED_MESSAGE]: eU,
   [Chunk981631.uaV.USER_JOIN]: eF,
   [Chunk981631.uaV.GUILD_BOOST]: eV,

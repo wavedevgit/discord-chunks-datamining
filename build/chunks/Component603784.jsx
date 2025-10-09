@@ -201,7 +201,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     }
                     return E.intl.string(E.t["30mdIy"])
                   },
-                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.default ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {
@@ -209,7 +209,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: i.count,
-                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, m.F6)(i.channel, b.default, x.Z, true),
+                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, m.F6)(i.channel, x.default, b.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: Z,
                     children: e

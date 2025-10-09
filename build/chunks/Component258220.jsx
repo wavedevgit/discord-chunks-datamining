@@ -47,7 +47,7 @@ function h(e) {
     onClose: E,
     "aria-label": p.intl.string(p.t.NQkK4u),
     title: p.intl.string(p.t.NQkK4u),
-    actionBarInput: (0, r.jsx)(a.XZJ, {
+    actionBarInput: (0, r.jsx)(a.Checkbox, {
       checked: m,
       onChange: () => b(!m),
       label: p.intl.string(p.t["5E9SBw"]),

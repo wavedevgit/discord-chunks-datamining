@@ -101,11 +101,11 @@ function x(e) {
         asContainer: true,
         text: U,
         delay: 100,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(a.Button, {
           text: L,
           fullWidth: true
         })
-      }) : (0, r.jsx)(a.zxk, {
+      }) : (0, r.jsx)(a.Button, {
         text: L,
         fullWidth: true
       })

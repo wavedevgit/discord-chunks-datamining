@@ -86,7 +86,7 @@ function T(e) {
       children: (0, r.jsx)(d.Avr, {
         variant: "primary",
         textVariant: "text-sm/semibold",
-        onClick: () => (0, x.TY)(n.id),
+        onClick: () => (0, b.TY)(n.id),
         disabled: s.fS(n.permissions, h.Hn) || f || l,
         text: y.intl.string(y.t["UYq7+P"])
       })
@@ -103,7 +103,7 @@ function P(e) {
   } = e;
   if (0 === i.length) return (0, r.jsxs)("div", {
     className: N.noResultsContainer,
-    children: [(0, r.jsx)(b.Z, {
+    children: [(0, r.jsx)(x.Z, {
       className: N.noResults
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
@@ -131,7 +131,7 @@ function P(e) {
       locked: l,
       onChange: (e, t) => {
         if ("string" == typeof t) throw Error("Unexpected string `allow`");
-        (0, x.lO)(n.id, e, t)
+        (0, b.lO)(n.id, e, t)
       },
       permissionRender: a
     }, t))]
@@ -154,8 +154,8 @@ function w(e) {
     headerHeight: m,
     headerRef: h
   } = (0, j.Z)(0), {
-    scrolledToTop: x,
-    handleScroll: b
+    scrolledToTop: b,
+    handleScroll: x
   } = (0, v.V)(), T = i.useRef(false);
   return i.useEffect(() => {
     T.current || "" === c.trimStart() || (p.default.track(O.rMx.SEARCH_STARTED, {
@@ -166,12 +166,12 @@ function w(e) {
     style: {
       scrollPaddingTop: m
     },
-    onScroll: b,
+    onScroll: x,
     children: (0, r.jsxs)("div", {
       className: E.contentWidth,
       children: [(0, r.jsxs)("div", {
         className: a()(E.header, E.stickyHeader, {
-          [E.stickyHeaderElevated]: !x
+          [E.stickyHeaderElevated]: !b
         }),
         ref: h,
         children: [(0, r.jsx)(v.Z, {

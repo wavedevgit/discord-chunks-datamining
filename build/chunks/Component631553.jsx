@@ -257,7 +257,7 @@ class eZ extends Chunk647438.Component {
         })
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? J.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
+        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? Q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
           title: ey.intl.string(ey.t.WLx4Fx),
           body: ey.intl.string(ey.t.H8O1TE),
           secondaryConfirmText: ey.intl.string(ey.t.IwqGhY),
@@ -266,7 +266,7 @@ class eZ extends Chunk647438.Component {
           onConfirmSecondary: () => {
             O.Z.disableExternalLinkAlert()
           },
-          onConfirm: () => J.ZP.send("OPEN_EXTERNAL_URL", t)
+          onConfirm: () => Q.ZP.send("OPEN_EXTERNAL_URL", t)
         })
       })
     }
@@ -336,7 +336,7 @@ class eZ extends Chunk647438.Component {
   }
   constructor(e) {
     super(e), eO(this, "didUpdate", false), eO(this, "handleWindowResize", () => {
-      F.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
+      H.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
         this.forceUpdate()
       }, 500)
     }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => h()(t, e))), eO(this, "onKeyDownGlobal", e => {

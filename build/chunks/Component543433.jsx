@@ -58,7 +58,7 @@ function E(e) {
   };
   return (0, r.jsx)("div", {
     className: p.buttonContainer,
-    children: (0, r.jsx)(s.zxk, {
+    children: (0, r.jsx)(s.Button, {
       fullWidth: i,
       variant: "primary",
       onClick: a,
@@ -87,7 +87,7 @@ function b(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: p.contentContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "lg" === u ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
         children: _.intl.string(_.t.vnP31d)

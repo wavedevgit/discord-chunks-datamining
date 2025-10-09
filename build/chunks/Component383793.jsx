@@ -50,7 +50,7 @@ function O(e) {
     vanityURLUses: l,
     originalVanityURLCode: s,
     errorDetails: o
-  } = e, c = (null == t ? true : t.features.has(b.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
+  } = e, c = (null == t ? true : t.features.has(x.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
     (0, m.Gy)("")
   }, []), u = i.useCallback(e => {
     (0, m.Gy)(e)
@@ -62,7 +62,7 @@ function O(e) {
     className: _.editVanityUrlCard,
     children: [(0, r.jsxs)("div", {
       className: _.formTitleField,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
         color: "text-default",
         children: v.intl.string(v.t["6oJyq6"])
@@ -73,14 +73,14 @@ function O(e) {
           uses: l
         })
       }) : null]
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(b.Z, {
       value: n,
       onChange: u,
       error: g,
       disabled: !c
     }), null != s && s.length > 0 ? (0, r.jsx)("div", {
       className: _.removeVanityUrlButton,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(a.Button, {
         variant: "critical-secondary",
         onClick: d,
         text: v.intl.string(v.t["3ggb6O"])
@@ -97,17 +97,17 @@ function y(e) {
     originalVanityURLCode: c,
     errorDetails: m
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: b
   } = (0, o.ZP)(), v = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), v ? (g.Z.close(), (0, u.Z)(t.id, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, f.E6)({
       guild: t,
-      analyticsLocations: x,
-      analyticsSection: b.jXE.GUILD_SETTINGS_VANITY_URL,
-      analyticsObject: b.qAy.BUTTON_CTA,
+      analyticsLocations: b,
+      analyticsSection: x.jXE.GUILD_SETTINGS_VANITY_URL,
+      analyticsObject: x.qAy.BUTTON_CTA,
       perks: (0, j.WW)(),
-      targetPremiumGuildTier: b.Eu4.TIER_3
+      targetPremiumGuildTier: x.Eu4.TIER_3
     })
-  }, [x, t, v]);
+  }, [b, t, v]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, p.p)(t) ? (0, r.jsx)(O, {
       guild: t,

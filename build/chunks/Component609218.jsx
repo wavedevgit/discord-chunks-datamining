@@ -2,7 +2,7 @@
 /** chunk id: 609218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k,
+  Z: () => j,
   p: () => M
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -41,14 +41,14 @@ var Chunk951288 = require("./951288.js"),
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
-function k(e) {
+function j(e) {
   let {
     containerContext: t,
     image: n,
     title: a,
     description: M,
-    enableSocialProof: k,
-    analyticsLocationSection: j,
+    enableSocialProof: j,
+    analyticsLocationSection: k,
     upsellViewedTrackingData: U,
     onClose: G,
     onDisplay: B,
@@ -56,15 +56,15 @@ function k(e) {
     isEmojiPickerOverlay: F = false
   } = e, V = (0, l.e7)([E.Z], () => E.Z.affinities), H = (0, l.e7)([E.Z], () => E.Z.hasFetched);
   i.useEffect(() => {
-    !H && k && d.MH()
-  }, [H, k]), i.useEffect(() => {
+    !H && j && d.MH()
+  }, [H, j]), i.useEffect(() => {
     h.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, U), null == B || B()
   }, [B, U]);
-  let Y = V.length > 1 && k,
+  let Y = V.length > 1 && j,
     W = () => 2 === t ? R.hasTabParentContainer : 1 === t ? R.hasParentContainer : R.noParentContainer,
     K = () => {
       h.default.track(A.rMx.PREMIUM_PROMOTION_OPENED, {
-        location_section: j,
+        location_section: k,
         location_object: A.qAy.NAVIGATION_LINK
       }), null == Z || Z(), (0, _.Z)(), G(), (0, f.xf)(), (0, p.uL)(A.Z5c.APPLICATION_STORE)
     },
@@ -108,7 +108,7 @@ function k(e) {
               type: {
                 text: Q
               }
-            }), (0, r.jsx)(u.X6q, {
+            }), (0, r.jsx)(u.Heading, {
               className: o()(N.title, {
                 [N.withBadge]: null != Q
               }),
@@ -126,14 +126,14 @@ function k(e) {
           className: N.footer,
           children: (0, r.jsxs)("div", {
             className: N.buttonContainer,
-            children: [(0, r.jsx)(u.zxk, {
+            children: [(0, r.jsx)(u.Button, {
               variant: "secondary",
               onClick: K,
               text: C.intl.string(C.t.ZnqyZ2),
               fullWidth: true
             }), (0, r.jsx)(O.Z, {
               premiumModalAnalyticsLocation: {
-                section: j,
+                section: k,
                 object: A.qAy.BUTTON_CTA
               },
               subscriptionTier: S.Si.TIER_2,
@@ -166,7 +166,7 @@ function k(e) {
           height: n.height,
           src: n.url,
           alt: "Nitro Perk"
-        }), (0, r.jsx)(u.X6q, {
+        }), (0, r.jsx)(u.Heading, {
           className: o()(R.title, {
             [R.titleNoSocialProof]: !Y
           }),
@@ -192,7 +192,7 @@ function k(e) {
         }), (0, r.jsx)(v.Z, {
           showGradient: true,
           premiumModalAnalyticsLocation: {
-            section: j,
+            section: k,
             object: A.qAy.BUTTON_CTA
           },
           subscriptionTier: S.Si.TIER_2,

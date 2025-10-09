@@ -71,9 +71,9 @@ function I(e) {
       inCall: w,
       channel: M,
       selectedParticipant: R,
-      showParticipants: k = true,
-      className: L,
-      width: D,
+      showParticipants: L = true,
+      className: D,
+      width: k,
       height: U,
       layout: B,
       idle: H
@@ -82,14 +82,14 @@ function I(e) {
     F = h.Z.getVideoComponent(),
     G = p.default.getId(),
     [z, W] = r.useState(null),
-    q = (0, c.Z)(z),
-    [Y, K] = r.useState(true),
+    Y = (0, c.Z)(z),
+    [K, q] = r.useState(true),
     [X, J] = r.useState(false),
     Q = R.type === v.fO.ACTIVITY,
     $ = (0, u.Z)(Q ? R.applicationId : true),
     ee = !Q && null != R.streamId,
     et = U <= 2 * P + 144,
-    en = k && !et,
+    en = L && !et,
     ei = (0, c.Z)(en),
     er = B === _.AEg.MINIMUM || B === _.AEg.NORMAL,
     el = !et && (!er || Q),
@@ -97,20 +97,20 @@ function I(e) {
     eo = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
     es = 0;
   (Q || en) && (es += 72), Q && !en && (el ? es += 48 : es += 8), en && (es += .5 * P + 8);
-  let ec = r.useMemo(() => Q && $ ? D / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, Q, D, U, es, $]),
+  let ec = r.useMemo(() => Q && $ ? k / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, Q, k, U, es, $]),
     eu = U - 2 * es,
-    ed = Q && $ ? D : eu * ec,
-    ep = Math.floor(Math.min(D, ed) / ec),
-    eh = U > D / ec + 72 + P + 8;
+    ed = Q && $ ? k : eu * ec,
+    ep = Math.floor(Math.min(k, ed) / ec),
+    eh = U > k / ec + 72 + P + 8;
   n = en || Q ? en ? false : false : 40 + Math.max(0, 72 - (U - ep) / 2), r.useEffect(() => {
     let e = setTimeout(() => {
-      K(false)
+      q(false)
     }, 250);
     return () => {
       clearTimeout(e)
     }
   }, []);
-  let ef = Y || null == q,
+  let ef = K || null == Y,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!en,
@@ -159,19 +159,19 @@ function I(e) {
       }
     }, em),
     ev = r.useCallback(e => {
-      W(e), K(false)
+      W(e), q(false)
     }, []),
     ex = en ? [] : (0, C.n3)(T, R, G),
     {
       visibleParticipants: eO,
       participantTileWidth: ej
-    } = (0, y.ZB)(D, N);
+    } = (0, y.ZB)(k, N);
   return (0, i.jsxs)("div", {
-    className: a()(O.root, x.flexCenter, L),
+    className: a()(O.root, x.flexCenter, D),
     children: [(0, i.jsxs)("div", {
       className: O.tileWrapper,
       style: {
-        opacity: ee && Y ? 0 : 1
+        opacity: ee && K ? 0 : 1
       },
       children: [(0, i.jsxs)(o.animated.div, {
         className: O.videoFrame,
@@ -197,11 +197,11 @@ function I(e) {
                 style: e,
                 children: (0, i.jsx)(g.ZP, {
                   focused: true,
-                  noBorder: ed >= D || eu >= U,
+                  noBorder: ed >= k || eu >= U,
                   channel: M,
                   className: x.focusedVideo,
                   videoComponent: F,
-                  width: D,
+                  width: k,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
@@ -222,7 +222,7 @@ function I(e) {
           },
           children: (0, i.jsx)(d.Z, {
             channelId: M.id,
-            isParticipantsOpen: k,
+            isParticipantsOpen: L,
             isVertical: true
           })
         }) : null]
@@ -243,12 +243,12 @@ function I(e) {
           selectedParticipantId: R.id,
           inCall: w,
           popoutWindow: A,
-          paused: X || !k
+          paused: X || !L
         })
       })]
     }), ex.length > 0 ? (0, i.jsx)(b.Z, {
       onContextMenuParticipant: I,
-      width: D,
+      width: k,
       height: U,
       channel: M,
       participants: ex,

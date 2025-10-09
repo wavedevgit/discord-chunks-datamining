@@ -15,7 +15,7 @@ let s = e => {
   } = e;
   return (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       className: o.header,
       variant: "heading-sm/semibold",
       children: a.intl.string(a.t["0ox7Hh"])

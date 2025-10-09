@@ -67,7 +67,7 @@ function b(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: t.isForumPost() ? h.intl.string(h.t["833FDg"]) : h.intl.string(h.t.rEeodH)
-    }), l ? (0, i.jsx)(o.zxk, {
+    }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
       text: h.intl.string(h.t["0dvvEh"]),
       onClick: () => {
@@ -99,7 +99,7 @@ function C(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: t.isForumPost() ? h.intl.string(h.t.E7oO8v) : h.intl.string(h.t["V/JF2N"])
-    }), l ? (0, i.jsx)(o.zxk, {
+    }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
       text: h.intl.string(h.t.zA9d1N),
       onClick: () => {

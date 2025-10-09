@@ -12,11 +12,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  return t === a.IlC.POPOUT ? null : (0, n.jsx)(o.sNh, {
+  return t === a.IlC.POPOUT ? null : (0, n.jsx)(c.sNh, {
     id: "report-raid",
     label: l.intl.string(l.t.cswId3),
     action: () => {
-      (0, c.xf)(), (0, i.J)(e)
+      (0, o.xf)(), (0, i.J)(e)
     }
   })
 }

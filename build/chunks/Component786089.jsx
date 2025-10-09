@@ -38,7 +38,7 @@ let j = (0, Chunk647438.memo)(function(e) {
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, q = A.config.rewards[W], Y = (null == q ? true : q.type) === s.w.FRACTIONAL_PREMIUM, K = (null == q ? true : q.type) === s.w.COLLECTIBLE, Q = (null == q ? true : q.type) === s.w.VIRTUAL_CURRENCY, X = null == q || null == (j = q.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, Y = A.config.rewards[W], q = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, K = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (j = Y.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
   (0, p.PM)(M, e => {
     let {
       height: t
@@ -103,7 +103,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         quest_id: A.id
       })
     };
-  return null == q || D ? null : (0, r.jsx)(d.tEY, {
+  return null == Y || D ? null : (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", {
       ref: M,
       tabIndex: 0,
@@ -125,7 +125,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), Y ? (0, r.jsx)(y.Z, {
+      }), q ? (0, r.jsx)(y.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image
@@ -163,7 +163,7 @@ let j = (0, Chunk647438.memo)(function(e) {
       }), (0, r.jsxs)("div", {
         ref: H,
         className: N.details,
-        children: [(0, r.jsx)(d.X6q, {
+        children: [(0, r.jsx)(d.Heading, {
           className: N.title,
           variant: "heading-md/semibold",
           color: "always-white",
@@ -177,7 +177,7 @@ let j = (0, Chunk647438.memo)(function(e) {
             opacity: $ ? 1 : .75
           },
           children: T.intl.format(T.t.kXVcV1, {
-            reward: q.name,
+            reward: Y.name,
             claimedDate: z
           })
         })]

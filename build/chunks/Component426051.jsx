@@ -50,7 +50,7 @@ function b(e) {
       active: t
     }), (0, r.jsxs)("div", {
       className: m.actions,
-      children: [(0, r.jsx)(a.zxk, {
+      children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: g.intl.string(g.t.vicfl5),

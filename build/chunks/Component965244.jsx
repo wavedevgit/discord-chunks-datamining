@@ -16,9 +16,9 @@ var Chunk442837 = require("./442837.js"),
 
 function f(e, t) {
   let f = t === b.IlC.POPOUT,
-    O = (0, o.e7)([u.Z], () => u.Z.getGuild(e), [e]),
-    p = (0, o.e7)([l.Z], () => null != O ? l.Z.getGuildIncident(O.id) : null);
-  return f ? null : (0, n.jsx)(c.sNh, {
+    O = (0, c.e7)([u.Z], () => u.Z.getGuild(e), [e]),
+    p = (0, c.e7)([l.Z], () => null != O ? l.Z.getGuildIncident(O.id) : null);
+  return f ? null : (0, n.jsx)(o.sNh, {
     id: "nav-security-actions",
     label: s.intl.string(s.t.UgXhdn),
     action: () => {
@@ -26,13 +26,13 @@ function f(e, t) {
         source: i.Zu.MESSAGE,
         alertType: (0, a.T1)(p)
       };
-      (0, c.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
-          default: o
-        } = await Promise.all([r.e("58175"), r.e("54255")]).then(r.bind(r, 664452));
+          default: c
+        } = await r.e("58175").then(r.bind(r, 664452));
         return r => {
-          var c, i;
-          return (0, n.jsx)(o, (c = function(e) {
+          var o, i;
+          return (0, n.jsx)(c, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -52,7 +52,7 @@ function f(e, t) {
           }({}, r), i = i = {
             guildId: e,
             analyticsData: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var n = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function f(e, t) {
             }
             return r
           })(Object(i)).forEach(function(e) {
-            Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(i, e))
-          }), c))
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(i, e))
+          }), o))
         }
       })
     }

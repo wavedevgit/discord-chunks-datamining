@@ -81,7 +81,7 @@ function h(e) {
           className: m.left,
           children: [(0, a.jsxs)("div", {
             className: m.headerContainer,
-            children: [(0, a.jsx)(d.X6q, {
+            children: [(0, a.jsx)(d.Heading, {
               variant: "heading-lg/bold",
               children: p.intl.string(C.default.OvKPi4)
             }), (0, a.jsx)(d.Text, {
@@ -101,7 +101,7 @@ function h(e) {
             children: [(0, a.jsx)(l.u, {
               text: p.intl.string(C.default.WlENZm),
               shouldShow: y,
-              children: (0, a.jsx)(d.zxk, {
+              children: (0, a.jsx)(d.Button, {
                 variant: "primary",
                 text: p.intl.string(p.t.jwEaiY),
                 fullWidth: true,
@@ -109,7 +109,7 @@ function h(e) {
                 loading: O,
                 disabled: y
               })
-            }), (0, a.jsx)(d.zxk, {
+            }), (0, a.jsx)(d.Button, {
               variant: "secondary",
               text: p.intl.string(p.t.s5vZlZ),
               fullWidth: true,

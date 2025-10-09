@@ -16,28 +16,28 @@ function o(t) {
   let {
     onClose: r,
     transitionState: o
-  } = t, c = null == (e = (0, s.hp)(s.u.STREAM_FULL)) ? true : e.errorCode, u = a.intl.formatToPlainString(a.t["ejOT9/"], {
+  } = t, c = null == (e = (0, a.hp)(a.u.STREAM_FULL)) ? true : e.errorCode, u = s.intl.formatToPlainString(s.t["ejOT9/"], {
     errorCode: c
   });
-  return (0, i.jsxs)(l.Y0X, {
-    size: l.CgR.SMALL,
+  return (0, i.jsxs)(n.Y0X, {
+    size: n.CgR.SMALL,
     transitionState: o,
     parentComponent: "StreamFullModal",
-    children: [(0, i.jsxs)(l.xBx, {
-      justify: n.Z.Justify.BETWEEN,
-      children: [(0, i.jsx)(l.X6q, {
+    children: [(0, i.jsxs)(n.xBx, {
+      justify: l.Z.Justify.BETWEEN,
+      children: [(0, i.jsx)(n.Heading, {
         variant: "heading-md/semibold",
         className: d.header,
-        children: a.intl.string(a.t.GzjdOz)
-      }), (0, i.jsx)(l.olH, {
+        children: s.intl.string(s.t.GzjdOz)
+      }), (0, i.jsx)(n.olH, {
         onClick: r,
         className: d.modalCloseButton
       })]
-    }), (0, i.jsxs)(l.hzk, {
-      children: [(0, i.jsx)(l.Text, {
+    }), (0, i.jsxs)(n.hzk, {
+      children: [(0, i.jsx)(n.Text, {
         variant: "text-md/medium",
-        children: a.intl.string(a.t.VVZDBA)
-      }), (0, i.jsx)(l.Text, {
+        children: s.intl.string(s.t.VVZDBA)
+      }), (0, i.jsx)(n.Text, {
         variant: "text-md/medium",
         selectable: true,
         color: "text-muted",
@@ -46,10 +46,10 @@ function o(t) {
       }), (0, i.jsx)("div", {
         className: d.fullArt
       })]
-    }), (0, i.jsx)(l.mzw, {
-      children: (0, i.jsx)(l.zxk, {
+    }), (0, i.jsx)(n.mzw, {
+      children: (0, i.jsx)(n.Button, {
         variant: "primary",
-        text: a.intl.string(a.t.BddRzc),
+        text: s.intl.string(s.t.BddRzc),
         onClick: r
       })
     })]

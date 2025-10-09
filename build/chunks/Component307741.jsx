@@ -120,7 +120,7 @@ function T(e) {
           children: b.intl.string(b.t.lBeKY2)
         })
       })]
-    }), (0, r.jsx)(u.zxk, {
+    }), (0, r.jsx)(u.Button, {
       variant: "secondary",
       size: "sm",
       onClick: i,

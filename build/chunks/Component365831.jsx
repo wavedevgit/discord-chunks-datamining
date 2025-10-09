@@ -243,7 +243,7 @@ function w(e) {
         tooltipContentClassName: y.tooltipContent,
         shouldShow: k,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: "heading-sm/normal",
             color: "header-primary",
             className: y.tooltipHeader,

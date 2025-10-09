@@ -38,7 +38,7 @@ function x(e) {
     className: v.empty,
     children: [(0, r.jsxs)("div", {
       className: v.textContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t

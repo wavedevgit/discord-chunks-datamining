@@ -1,12 +1,12 @@
-/** Chunk was on 27978 **/
-/** chunk id: 853268, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 63490 **/
+/** chunk id: 853268, original params: e,c,s (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  default: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388905 = require("./388905.jsx"),
@@ -15,26 +15,26 @@ var Chunk120356 = require("./120356.js"),
 
 function d(e) {
   let {
-    value: t,
-    onChange: n,
-    subText: i,
+    value: c,
+    onChange: s,
+    subText: a,
     muted: d,
-    marginTopStyle: h,
-    subtextClassName: g
+    marginTopStyle: o,
+    subtextClassName: b
   } = e;
-  return (0, r.jsx)(a.Z, {
-    className: null != h ? h : u.marginTop20,
-    align: a.Z.Align.CENTER,
-    children: (0, r.jsx)(s.$q, {
-      value: t,
-      type: s.M0.INVERTED,
-      onChange: (e, t) => n(t),
-      className: c.checkbox,
-      children: (0, r.jsx)(o.i_, {
-        className: l()(g, {
-          [c.subText]: !d
+  return (0, n.jsx)(u.Z, {
+    className: null != o ? o : r.marginTop20,
+    align: u.Z.Align.CENTER,
+    children: (0, n.jsx)(t.$q, {
+      value: c,
+      type: t.M0.INVERTED,
+      onChange: (e, c) => s(c),
+      className: h.checkbox,
+      children: (0, n.jsx)(l.i_, {
+        className: i()(b, {
+          [h.subText]: !d
         }),
-        children: i
+        children: a
       })
     })
   })

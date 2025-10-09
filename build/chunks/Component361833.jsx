@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
 /** chunk id: 361833, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,11 +13,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk780187 = require("./780187.js");
 
-function x(e) {
+function m(e) {
   var t, n;
   let {
-    emailToken: x,
-    isSlideReady: u,
+    emailToken: m,
+    isSlideReady: x,
     onClose: _,
     onBack: E,
     onNext: N
@@ -26,7 +26,7 @@ function x(e) {
     e.preventDefault(), j(true);
     let t = await (0, l.Mn)({
       email: p,
-      emailToken: x,
+      emailToken: m,
       password: A
     });
     if (j(false), null == t ? true : t.ok) N(p);
@@ -36,30 +36,30 @@ function x(e) {
     }
   }
   return s.useEffect(() => {
-    if (u) {
+    if (x) {
       var e;
       null == (e = S.current) || e.focus()
     }
-  }, [u]), (0, a.jsxs)("form", {
+  }, [x]), (0, a.jsxs)("form", {
     onSubmit: v,
     children: [(0, a.jsxs)(i.xBx, {
       separator: false,
-      className: m.header,
-      children: [(0, a.jsx)(i.X6q, {
-        className: m.title,
+      className: u.header,
+      children: [(0, a.jsx)(i.Heading, {
+        className: u.title,
         variant: "heading-xl/extrabold",
         children: d.intl.string(d.t.p3280t)
       }), (0, a.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: m.subtitle,
+        className: u.subtitle,
         children: d.intl.string(d.t["1k44EB"])
       }), (0, a.jsx)(i.olH, {
         onClick: _,
-        className: m.modalCloseButton
+        className: u.modalCloseButton
       })]
     }), (0, a.jsx)(i.hzk, {
-      className: m.content,
+      className: u.content,
       children: (0, a.jsxs)(i.Kqy, {
         gap: 20,
         children: [(0, a.jsx)(i.oil, {
@@ -78,23 +78,23 @@ function x(e) {
         })]
       })
     }), (0, a.jsxs)(i.mzw, {
-      children: [(0, a.jsx)(i.zxk, {
+      children: [(0, a.jsx)(i.Button, {
         variant: "primary",
         text: d.intl.string(d.t.i4jeWV),
         type: "submit",
         loading: f
       }), null != E ? (0, a.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: m.__invalid_cancel,
-        children: (0, a.jsx)(i.zxk, {
+        className: u.__invalid_cancel,
+        children: (0, a.jsx)(i.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["13/7kZ"]),
           onClick: E
         })
       }) : (0, a.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: m.__invalid_cancel,
-        children: (0, a.jsx)(i.zxk, {
+        className: u.__invalid_cancel,
+        children: (0, a.jsx)(i.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["ETE/oK"]),
           onClick: _

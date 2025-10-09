@@ -61,7 +61,7 @@ function T(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: N.headerNoConfigContainer,
-    children: [(0, r.jsx)(u.X6q, {
+    children: [(0, r.jsx)(u.Heading, {
       className: N.headerHeading,
       variant: "eyebrow",
       children: y.intl.string(y.t.nMir29)
@@ -72,7 +72,7 @@ function T(e) {
       children: y.intl.format(y.t.q5f7tL, {
         helpdeskArticleUrl: p.Z.getArticleURL(C.BhN.CONNECTION_DETAILS_ADMIN)
       })
-    }), (0, r.jsx)(u.zxk, {
+    }), (0, r.jsx)(u.Button, {
       disabled: n,
       onClick: t,
       text: y.intl.string(y.t["OSvW5+"]),
@@ -92,15 +92,15 @@ function P(e) {
   } = e, {
     headerHeight: P,
     headerRef: w
-  } = (0, b.Z)(0), {
+  } = (0, x.Z)(0), {
     scrolledToTop: Z,
     handleScroll: R
   } = (0, v.V)(), D = (0, c.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
-  }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
+  }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
-    return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
+    return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
   }), L = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => L === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), G = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
   function M(e) {
@@ -132,7 +132,7 @@ function P(e) {
   else if (k.length > 0) {
     var F;
     let e = null;
-    k.length < 10 && (e = (0, r.jsx)(u.zxk, {
+    k.length < 10 && (e = (0, r.jsx)(u.Button, {
       disabled: l,
       onClick: U,
       text: y.intl.string(y.t["OSvW5+"]),
@@ -145,7 +145,7 @@ function P(e) {
           className: N.headerTitleContainer,
           children: [(0, r.jsx)("div", {
             className: N.headerTitleTextContainer,
-            children: (0, r.jsx)(u.X6q, {
+            children: (0, r.jsx)(u.Heading, {
               variant: "eyebrow",
               children: y.intl.string(y.t.nMir29)
             })

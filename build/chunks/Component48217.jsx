@@ -1,7 +1,7 @@
 /** Chunk was on 72891 **/
 /** chunk id: 48217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => g
+  c: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk131115 = require("./131115.js");
 
-function _(e) {
+function g(e) {
   let {
     guild: t,
     banner: n
@@ -30,7 +30,7 @@ function _(e) {
       children: [(0, i.jsx)(r.Z, {
         guild: t,
         isBannerVisible: true
-      }), (0, i.jsx)(a.X6q, {
+      }), (0, i.jsx)(a.Heading, {
         className: f.guildName,
         variant: "heading-md/semibold",
         children: t.name
@@ -42,7 +42,7 @@ function _(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
@@ -64,7 +64,7 @@ function g(e) {
           targetLevelOrPlan: n
         })
       }(f, o),
-      image: (0, i.jsx)(_, {
+      image: (0, i.jsx)(g, {
         guild: a,
         banner: r
       })

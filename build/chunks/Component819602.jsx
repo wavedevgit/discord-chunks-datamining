@@ -36,7 +36,7 @@ function k(e) {
   var n, t;
   let o, d, N, {
     connectedAccount: A,
-    theme: v,
+    theme: f,
     locale: b,
     userId: y,
     className: k,
@@ -75,7 +75,7 @@ function k(e) {
     size: "md",
     color: "currentColor",
     className: a()(I.__invalid_connectedAccountOpenIconContainer, I.connectedAccountHideIcon)
-  }) : null != Z && (N = (0, c.jsx)(s.eee, {
+  }) : null != Z && (N = (0, c.jsx)(s.Anchor, {
     href: Z,
     "aria-label": (null == R ? true : R.name) != null ? "".concat(R.name, ", ").concat(A.name, ", ").concat(g.intl.string(g.t.q5jLJC)) : "".concat(A.name, ", ").concat(g.intl.string(g.t.q5jLJC)),
     onClick: e => {
@@ -88,9 +88,9 @@ function k(e) {
         trusted: (null == R ? true : R.type) !== _.ABu.DOMAIN
       }, e)
     },
-    children: (0, c.jsx)(f.Z, {
+    children: (0, c.jsx)(v.Z, {
       className: I.connectedAccountOpenIcon,
-      direction: f.Z.Directions.RIGHT
+      direction: v.Z.Directions.RIGHT
     })
   }));
   let L = (0, s.dQu)(l.Z.colors.INTERACTIVE_MUTED).hex(),
@@ -113,7 +113,7 @@ function k(e) {
             name: null == R ? true : R.name
           }),
           className: I.connectedAccountIcon,
-          src: (0, r.wj)(v) ? null == R ? true : R.icon.darkSVG : null == R ? true : R.icon.lightSVG
+          src: (0, r.wj)(f) ? null == R ? true : R.icon.darkSVG : null == R ? true : R.icon.lightSVG
         })
       }), (0, c.jsxs)("div", {
         className: I.connectedAccountNameContainer,
@@ -204,7 +204,7 @@ function E(e) {
             applicationHook: () => (0, c.jsxs)("div", {
               className: I.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, c.jsx)(d.Z, {
-                user: new v.Z(n.application.bot),
+                user: new f.default(n.application.bot),
                 size: s.EFr.SIZE_16
               }) : null, (0, c.jsx)(s.Text, {
                 variant: "text-xs/normal",

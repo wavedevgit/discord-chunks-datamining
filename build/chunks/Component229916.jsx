@@ -18,7 +18,7 @@ let d = e => {
   } = e, d = (0, i.e7)([o.default], () => o.default.getUser(n));
   return null == d ? null : (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       className: c.header,
       variant: "heading-sm/semibold",
       children: s.intl.string(s.t.SpsnDQ)

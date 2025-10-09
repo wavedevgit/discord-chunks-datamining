@@ -262,12 +262,12 @@ var r = function(e) {
     return 0
   }
 
-  function k(e) {
+  function j(e) {
     var t = e.abs();
     return !t.isUnit() && (!!(t.equals(2) || t.equals(3) || t.equals(5)) || !(t.isEven() || t.isDivisibleBy(3) || t.isDivisibleBy(5)) && (!!t.lesser(49) || true))
   }
 
-  function j(e, t) {
+  function k(e, t) {
     for (var n, i, a, o = e.prev(), s = o, l = 0; s.isEven();) s = s.divide(2), l++;
     t: for (i = 0; i < t.length; i++)
       if (!e.lesser(t[i]) && !((a = r(t[i]).modPow(s, e)).isUnit() || a.equals(o))) {
@@ -483,18 +483,18 @@ var r = function(e) {
     var t = ea(e);
     return !t.isZero() && (!!t.isUnit() || (0 === t.compareAbs(2) ? this.isEven() : this.mod(t).isZero()))
   }, d.prototype.isDivisibleBy = u.prototype.isDivisibleBy = c.prototype.isDivisibleBy, c.prototype.isPrime = function(e) {
-    var t = k(this);
+    var t = j(this);
     if (true !== t) return t;
     var n = this.abs(),
       i = n.bitLength();
-    if (i <= 64) return j(n, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+    if (i <= 64) return k(n, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
     for (var a = Math.log(2) * i.toJSNumber(), o = Math.ceil(true === e ? 2 * Math.pow(a, 2) : a), s = [], l = 0; l < o; l++) s.push(r(l + 2));
-    return j(n, s)
+    return k(n, s)
   }, d.prototype.isPrime = u.prototype.isPrime = c.prototype.isPrime, c.prototype.isProbablePrime = function(t, n) {
-    var i = k(this);
+    var i = j(this);
     if (true !== i) return i;
     for (var a = this.abs(), o = e === t ? 5 : t, s = [], l = 0; l < o; l++) s.push(r.randBetween(2, a.minus(2), n));
-    return j(a, s)
+    return k(a, s)
   }, d.prototype.isProbablePrime = u.prototype.isProbablePrime = c.prototype.isProbablePrime, c.prototype.modInv = function(e) {
     for (var t, n, i, a = r.zero, o = r.one, s = ea(e), l = this.abs(); !l.isZero();) t = s.divide(l), n = a, i = s, a = o, s = l, o = n.subtract(t.multiply(o)), l = i.subtract(t.multiply(l));
     if (!s.isUnit()) throw Error(this.toString() + " and " + e.toString() + " are not co-prime");

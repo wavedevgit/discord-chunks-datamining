@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 665578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk591086 = require("./591086.js");
 
-function P(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -82,7 +82,7 @@ function E(e) {
       commandLevelPermissions: A,
       defaultMemberPermissions: null == R ? true : R.defaultMemberPermissions
     })
-  }, [j, R, k, A]), U = null != l ? l : t, [B, W] = r.useMemo(() => {
+  }, [j, R, k, A]), B = null != l ? l : t, [U, W] = r.useMemo(() => {
     let e = {},
       t = {};
     for (let [n, i] of Object.entries(E)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
@@ -124,7 +124,7 @@ function E(e) {
         i = null != e ? e.name : "role"
       }
     }(0, y._)(n, i)
-  }, [j, E]), z = r.useCallback((e, n) => {
+  }, [j, E]), K = r.useCallback((e, n) => {
     let i = {};
     for (let [e, t] of Object.entries(E)) i[e] = {
       id: t.id,
@@ -132,15 +132,15 @@ function E(e) {
       type: t.type
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
-    h.W4(t, U, i)
-  }, [t, E, U, H, G]), K = r.useCallback(() => {
-    let e = Object.keys(B);
+    h.W4(t, B, i)
+  }, [t, E, B, H, G]), F = r.useCallback(() => {
+    let e = Object.keys(U);
     return (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, i.jsx)(t, P({
-        editPermissions: z,
+      return n => (0, i.jsx)(t, w({
+        editPermissions: K,
         guildId: j,
         headerText: S.intl.string(S.t["i1c+kZ"]),
         hasMemberSearch: false,
@@ -150,14 +150,14 @@ function E(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, B, j, D]), F = r.useCallback(() => {
+  }, [K, U, j, D]), z = r.useCallback(() => {
     let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, i.jsx)(t, P({
-        editPermissions: z,
+      return n => (0, i.jsx)(t, w({
+        editPermissions: K,
         guildId: j,
         hasMemberSearch: true,
         headerText: S.intl.string(S.t["56jRn5"]),
@@ -167,24 +167,24 @@ function E(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [K, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(P({}, n), {
+    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(w({}, n), {
       defaultMemberPermissions: t
     }))
   }), [R]), V = D - N._n, Y = V >= 0, J = [{
-    buttonClick: F,
+    buttonClick: z,
     buttonText: S.intl.string(S.t["56jRn5"]),
     noneSelectedText: S.intl.string(S.t.C0rYfn),
     overwrites: W,
     title: null == l ? S.intl.string(S.t["vPWe+/"]) : S.intl.string(S.t["1jLVGB"])
   }, {
-    buttonClick: K,
+    buttonClick: F,
     buttonText: S.intl.string(S.t["i1c+kZ"]),
     noneSelectedText: S.intl.string(S.t.UBJhCw),
-    overwrites: B,
+    overwrites: U,
     title: null == l ? S.intl.string(S.t.OGiMXF) : S.intl.string(S.t.Ujbaqq)
   }];
   return (0, i.jsxs)(r.Fragment, {
@@ -194,15 +194,15 @@ function E(e) {
         removeCount: V
       })
     }) : null, L ? (0, i.jsxs)("div", {
-      className: w.requiredPermissionsBanner,
+      className: P.requiredPermissionsBanner,
       children: [(0, i.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor",
-        className: w.icon
+        className: P.icon
       }), (0, i.jsx)("span", {
-        className: w.message,
+        className: P.message,
         children: S.intl.format(S.t["2889Gh"], {})
-      }), (0, i.jsx)(c.zxk, {
+      }), (0, i.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
         onClick: q,
@@ -212,10 +212,10 @@ function E(e) {
       let n = null;
       return M ? Y && (n = S.intl.string(S.t.XTwtW1)) : n = null != l ? S.intl.string(S.t.tybdam) : S.intl.string(S.t.z2hjk5), (0, i.jsx)(_.Z, {
         bar: (0, i.jsx)(c.ua7, {
-          tooltipClassName: w.tooltip,
+          tooltipClassName: P.tooltip,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.zxk, I(P({}, t), {
+          children: t => (0, i.jsx)(c.Button, I(w({}, t), {
             variant: "secondary",
             disabled: Y || !M,
             onClick: e.buttonClick,
@@ -226,13 +226,13 @@ function E(e) {
         inModal: v,
         title: e.title,
         children: (0, i.jsx)("div", {
-          className: v ? true : w.listContainer,
+          className: v ? true : P.listContainer,
           children: (0, i.jsx)(O.Z, {
             guildId: j,
             commandId: l,
             noneSelectedText: e.noneSelectedText,
             overwrites: e.overwrites,
-            editPermissions: z,
+            editPermissions: K,
             hasAccessToMutatePermissions: M
           })
         })
@@ -243,8 +243,8 @@ function E(e) {
 
 function T(e) {
   let t = (0, j.w)(e);
-  return I(P({}, t), {
-    results: t.results.map(e => I(P({}, e), {
+  return I(w({}, t), {
+    results: t.results.map(e => I(w({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -252,10 +252,10 @@ function T(e) {
 
 function Z(e) {
   let t = (0, v.U)(e);
-  return I(P({}, t), {
-    results: t.results.roles.map(e => I(P({}, e), {
+  return I(w({}, t), {
+    results: t.results.roles.map(e => I(w({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => I(P({}, e), {
+    })).concat(t.results.members.map(e => I(w({}, e), {
       type: d.Kw.USER
     })))
   })

@@ -31,7 +31,7 @@ function s(e) {
         size: "xxs",
         color: "text-danger" === c ? i.TVs.colors.TEXT_DANGER : i.TVs.colors.INTERACTIVE_ACTIVE
       })
-    }), (0, r.jsx)(i.X6q, {
+    }), (0, r.jsx)(i.Heading, {
       variant: "text-md/semibold",
       color: c,
       children: s

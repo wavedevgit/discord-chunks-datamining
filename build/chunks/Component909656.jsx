@@ -38,21 +38,21 @@ function T(e) {
     isGuildProducts: l = false
   } = e, {
     format: s
-  } = (0, C.Z)(n.id), d = (0, j.YB)(n.id), b = i.useCallback(() => {
+  } = (0, C.Z)(n.id), d = (0, j.YB)(n.id), x = i.useCallback(() => {
     var e;
-    return (null == d || null == (e = d.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(d.cover_image_asset.application_id, d.cover_image_asset, S)
-  }, [d]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == d ? true : d.description) ? t : ""), [R, D] = i.useState(b), [A, L] = i.useState(null == d ? true : d.store_page_guild_products_default_sort), [k, G] = i.useState(null == d ? true : d.server_shop_tab_order), {
+    return (null == d || null == (e = d.cover_image_asset) ? true : e.application_id) == null ? null : (0, b._W)(d.cover_image_asset.application_id, d.cover_image_asset, S)
+  }, [d]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == d ? true : d.description) ? t : ""), [R, D] = i.useState(x), [A, L] = i.useState(null == d ? true : d.store_page_guild_products_default_sort), [k, G] = i.useState(null == d ? true : d.server_shop_tab_order), {
     loading: M,
     error: U,
     updateSubscriptionsSettings: B
   } = (0, j.QV)(), {
     imageCTA: F,
     imageAriaLabel: H,
-    setFilename: z
+    setFilename: W
   } = (0, _.Z)(null == d ? true : d.cover_image_asset), V = (0, p.Dt)();
 
-  function W(e, t) {
-    a()(null != e, "Null value not allowed"), null != t && z(t.name), D(e)
+  function z(e, t) {
+    a()(null != e, "Null value not allowed"), null != t && W(t.name), D(e)
   }
   let K = i.useMemo(() => {
       var e;
@@ -61,14 +61,14 @@ function T(e) {
     Y = null != w && "" !== w && null != R;
   i.useEffect(() => {
     var e;
-    (null == d || null == (e = d.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(d.cover_image_asset.application_id, d.cover_image_asset, S))
+    (null == d || null == (e = d.cover_image_asset) ? true : e.application_id) != null && D((0, b._W)(d.cover_image_asset.application_id, d.cover_image_asset, S))
   }, [null == d ? true : d.cover_image_asset]);
   let q = (0, v.mY)(),
     X = i.useMemo(() => N.kL.map(e => ({
       label: (0, N.eJ)(e),
       value: e
     })), []),
-    J = i.useMemo(() => [{
+    Q = i.useMemo(() => [{
       label: E.intl.string(E.t.X6h2g4),
       value: N.a3.PRODUCTS_FIRST
     }, {
@@ -167,11 +167,11 @@ function T(e) {
         iconWrapperClassName: I.coverImageUploaderIconWrapper,
         imageClassName: I.coverImageUploaderInner,
         iconClassName: I.coverImageUploaderIcon,
-        onChange: W,
+        onChange: z,
         "aria-label": H,
         disabled: q
       }), (0, r.jsx)(f.Z, {
-        onChange: W,
+        onChange: z,
         "aria-label": H,
         disabled: q,
         text: F,
@@ -189,7 +189,7 @@ function T(e) {
         options: X,
         onChange: e => L(e)
       })]
-    }) : null, J.length > 0 && (0, r.jsxs)(r.Fragment, {
+    }) : null, Q.length > 0 && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.izJ, {
         className: I.divider
       }), (0, r.jsx)(g.q4e, {
@@ -197,7 +197,7 @@ function T(e) {
         description: E.intl.string(E.t.n8WSWF),
         value: k,
         placeholder: E.intl.string(E.t.XqMe3N),
-        options: J,
+        options: Q,
         onChange: e => G(e)
       })]
     }), (0, r.jsx)(c.W, {
@@ -209,7 +209,7 @@ function T(e) {
           disabled: !Y,
           onReset: () => {
             var e;
-            P(s), Z(null != (e = null == d ? true : d.description) ? e : ""), D(b), L(null == d ? true : d.store_page_guild_products_default_sort), G(null == d ? true : d.server_shop_tab_order)
+            P(s), Z(null != (e = null == d ? true : d.description) ? e : ""), D(x), L(null == d ? true : d.store_page_guild_products_default_sort), G(null == d ? true : d.server_shop_tab_order)
           },
           onSave: () => {
             a()(null != d, "Settings must be defined");

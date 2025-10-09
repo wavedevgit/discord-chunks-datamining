@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 37607, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -31,7 +31,7 @@ function x(e) {
       children: [(0, i.jsx)(u.Z, {
         game: r,
         size: u.A.XSMALL
-      }), (0, i.jsx)(o.X6q, {
+      }), (0, i.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         children: null == r ? true : r.name
       })]

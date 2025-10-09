@@ -155,7 +155,7 @@ class m extends(r = Chunk647438.Component) {
       inputProps: m,
       focusAfterReady: g
     } = this.props, E = false, b = [];
-    return null != f && f.length > 0 && ("string" == typeof f[0] ? f.forEach((e, t) => b.push((0, i.jsxs)(l.eee, {
+    return null != f && f.length > 0 && ("string" == typeof f[0] ? f.forEach((e, t) => b.push((0, i.jsxs)(l.Anchor, {
       focusProps: {
         offset: 4
       },
@@ -167,7 +167,7 @@ class m extends(r = Chunk647438.Component) {
         className: d.close,
         "aria-label": u.intl.string(u.t.N86XcH)
       })]
-    }, t))) : (E = true, f.forEach((e, t) => b.push((0, i.jsxs)(l.eee, {
+    }, t))) : (E = true, f.forEach((e, t) => b.push((0, i.jsxs)(l.Anchor, {
       className: s()(d.tag, d.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
       children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, i.jsx)(l.qEK, {

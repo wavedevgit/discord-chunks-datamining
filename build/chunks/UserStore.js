@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => I,
-  default: () => ek,
+  default: () => ej,
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
@@ -103,7 +103,7 @@ function R(e) {
   let t, n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = O[e.id],
     i = true !== e.id && e.id === m.default.getId();
-  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = w((0, f.QI)(r), r.premiumType));
+  if (null == r) true !== (t = (r = new _.default(e)).premiumType) && i && (r.premiumType = w((0, f.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = C(e);
@@ -164,7 +164,7 @@ function x(e) {
     e.members.forEach(t => {
       T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
-  }), null != O[m.default.getId()] && (O[I] = new _.Z({
+  }), null != O[m.default.getId()] && (O[I] = new _.default({
     id: I,
     username: "Wumpus",
     discriminator: "0",
@@ -190,13 +190,13 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   return !("incomplete" in e)
 }
 
-function j(e) {
+function k(e) {
   if (null != e.users)
-    for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t))
+    for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.default(t))
 }
 
 function U(e) {
@@ -532,7 +532,7 @@ function ey(e) {
     users: t
   } = e;
   t.forEach(e => {
-    null == O[e.id] && (O[e.id] = new _.Z(e))
+    null == O[e.id] && (O[e.id] = new _.default(e))
   })
 }
 
@@ -666,9 +666,9 @@ class eM extends Chunk750041.Z {
   handleLoadCache(e) {
     let t = this.readSnapshot(eM.LATEST_SNAPSHOT_VERSION);
     if (null != t)
-      for (let e of t.users) O[e.id] = new _.Z(e);
+      for (let e of t.users) O[e.id] = new _.default(e);
     if (null != e.users)
-      for (let t of e.users) t.id in O && k(t) || (O[t.id] = new _.Z(t));
+      for (let t of e.users) t.id in O && j(t) || (O[t.id] = new _.default(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -711,7 +711,7 @@ class eM extends Chunk750041.Z {
       CONNECTION_OPEN: x,
       CONNECTION_OPEN_SUPPLEMENTAL: M,
       UPDATE_CLIENT_PREMIUM_TYPE: Z,
-      OVERLAY_INITIALIZE: j,
+      OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: U,
       USER_PROFILE_FETCH_SUCCESS: G,
@@ -776,4 +776,4 @@ class eM extends Chunk750041.Z {
   }
 }
 y(eM, "displayName", "UserStore"), y(eM, "LATEST_SNAPSHOT_VERSION", 1);
-let ek = new eM
+let ej = new eM

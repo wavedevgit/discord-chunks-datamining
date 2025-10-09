@@ -4,12 +4,12 @@ require.d(exports, {
   $R: () => K,
   A0: () => et,
   GU: () => Y,
-  H8: () => J,
-  HI: () => X,
-  HW: () => G,
+  H8: () => X,
+  HI: () => J,
+  HW: () => B,
   Ib: () => eo,
   KB: () => eu,
-  S2: () => W,
+  S2: () => H,
   W6: () => ea,
   XM: () => er,
   YC: () => ep,
@@ -17,7 +17,7 @@ require.d(exports, {
   h9: () => es,
   iw: () => en,
   jC: () => V,
-  jQ: () => z,
+  jQ: () => G,
   lT: () => q,
   rd: () => ed,
   t4: () => ec,
@@ -90,7 +90,7 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = {
+let B = {
     sRGB: Chunk216397.Z,
     A98RGB: Chunk764160.Z,
     ACEScc: Chunk808131.Z,
@@ -118,13 +118,13 @@ let G = {
     XYZ_D50: Chunk341901.Z,
     XYZ_D65: Chunk856308.Z
   },
-  z = Object.fromEntries(Object.keys(G).map(e => [e, e]));
-Object.values(G).forEach(e => w.Z.register(e));
+  G = Object.fromEntries(Object.keys(B).map(e => [e, e]));
+Object.values(B).forEach(e => k.Z.register(e));
 let {
-  SemanticColors: B
-} = Chunk521904.V, V = B, W = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: z
+} = Chunk521904.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
-function H(e, t) {
+function W(e, t) {
   let [n, a] = i.useState(() => {
     let n = D.K.get(e);
     return null != n ? n : t
@@ -138,7 +138,7 @@ function K(e) {
   let t = V[e];
   return {
     name: e,
-    colors: Object.fromEntries(Object.values(M.BR).map(e => [e, {
+    colors: Object.fromEntries(Object.values(L.BR).map(e => [e, {
       color: t[e].raw,
       opacity: t[e].opacity
     }])),
@@ -165,16 +165,16 @@ function Y(e) {
   })
 }
 
-function X(e) {
+function J(e) {
   return (0, R.Z)((0, A.Z)(e, l.Z), {
     format: "hex"
   })
 }
-var J = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
+var X = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
 
 function Q() {
   return function(e, t) {
-    let [n, a] = H("".concat(e, "-states"), [t]), [r, l] = H("".concat(e, "-index"), 0), s = n[r], o = i.useCallback(e => {
+    let [n, a] = W("".concat(e, "-states"), [t]), [r, l] = W("".concat(e, "-index"), 0), s = n[r], o = i.useCallback(e => {
       a(["function" == typeof e ? e(s) : e, ...n].slice(0, 20)), l(0)
     }, [l, a, n, s]), c = i.useCallback(() => {
       l(Math.min(n.length - 1, r + 1))
@@ -217,7 +217,7 @@ function er(e) {
     darkness: r,
     lightness: i,
     easingStrength: s = 1
-  } = e, o = G[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
+  } = e, o = B[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: l.Z
   }), u = (0, Z.CD)(c, "black", 1 - i, {

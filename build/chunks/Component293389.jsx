@@ -68,12 +68,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
+let k = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
     theme: Chunk210887.Z.theme
   }))(Chunk481060.ubH),
   U = (0, Chunk358085.isWindows)(),
@@ -121,7 +121,7 @@ function Z(e) {
         color: c.Tt.PRIMARY,
         onClick: t,
         children: N.intl.string(N.t["ETE/oK"])
-      }), (0, r.jsx)(u.zxk, {
+      }), (0, r.jsx)(u.Button, {
         variant: "primary",
         text: N.intl.string(N.t.GTCx0t),
         disabled: null == a,
@@ -145,9 +145,9 @@ function F(e) {
   } = (0, s.cj)([h.ZP], () => ({
     canToggleDetection: null == I || h.ZP.isDetectionEnabled(I),
     isCurrentGameDetectionEnabled: h.ZP.isDetectionEnabled(T)
-  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [L, M] = i.useState(false), j = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
+  })), P = (0, p.P6)("UserSettingsGameActivity"), D = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()), [L, M] = i.useState(false), k = i.useMemo(() => (0, b.le)(T) ? E ? T.gameName : N.intl.formatToPlainString(N.t.G6BGd3, {
     subgameName: T.gameName
-  }) : T.name, [T, E]), [B, Z] = i.useState(null != j ? j : "???"), V = o()(w.flexCenter, {
+  }) : T.name, [T, E]), [B, Z] = i.useState(null != k ? k : "???"), V = o()(w.flexCenter, {
     [R.game]: !a,
     [R.activeGame]: a,
     [R.nowPlaying]: null != T && a,
@@ -178,12 +178,12 @@ function F(e) {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
-      return t => (0, r.jsx)(e, k(x({}, t), {
+      return t => (0, r.jsx)(e, j(x({}, t), {
         title: N.intl.formatToPlainString(N.t.PZ4fKS, {
-          platform: j
+          platform: k
         }),
         subtitle: N.intl.formatToPlainString(N.t.ZIQbfX, {
-          platform: j
+          platform: k
         }),
         actions: [{
           text: N.intl.string(N.t["ETE/oK"]),
@@ -212,7 +212,7 @@ function F(e) {
       } = await n.e("82077").then(n.bind(n, 953848));
       return n => {
         var i, a, o;
-        return (0, r.jsx)(t, k(x({}, n), {
+        return (0, r.jsx)(t, j(x({}, n), {
           detectedActivity: {
             name: null != (i = T.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : T.id) ? o : true,
@@ -231,11 +231,11 @@ function F(e) {
       className: R.detectedApplication,
       children: [(0, r.jsx)("div", {
         className: R.gameName,
-        children: j
+        children: k
       }), (0, r.jsx)(u.ua7, {
         "data-migration-pending": true,
         text: N.intl.string(N.t["4PJP5u"]),
-        children: e => (0, r.jsx)(g.Z, k(x({
+        children: e => (0, r.jsx)(g.Z, j(x({
           className: R.gameVerifiedIcon,
           size: G,
           color: l.Z.unsafe_rawColors.BRAND_500.css
@@ -437,7 +437,7 @@ function H(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsxs)(j, {
+  return (0, r.jsxs)(k, {
     className: D.marginTop40,
     children: [(0, r.jsx)(u.oxh, {
       darkSrc: n(879601),
@@ -511,7 +511,7 @@ let Y = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(u.Avr, k(x({}, e), {
+          children: e => (0, r.jsx)(u.Avr, j(x({}, e), {
             buttonRef: _,
             variant: "primary",
             textVariant: "text-sm/medium",

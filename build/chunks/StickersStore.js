@@ -146,7 +146,7 @@ let L = function(e) {
       false !== t ? r[t] = e : r.push(e), S = r
     }(t || n) && e.stickers.forEach(e => L(e))
   },
-  k = () => {
+  j = () => {
     N.forEach((e, t) => {
       let n = _.Z.getGuild(t);
       null != n && e.forEach(e => x(e, n))
@@ -154,7 +154,7 @@ let L = function(e) {
       e.stickers.forEach(e => x(e))
     })
   },
-  j = e => {
+  k = e => {
     let {
       guilds: t
     } = e;
@@ -253,7 +253,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     return O
   }
   get stickerMetadata() {
-    return w(), null == T && (T = new Map, k()), T
+    return w(), null == T && (T = new Map, j()), T
   }
   get hasLoadedStickerPacks() {
     return null != A && A + P > Date.now()
@@ -289,7 +289,7 @@ class X extends(r = Chunk442837.ZP.Store) {
 g(X, "displayName", "StickersStore");
 let Q = new X(Chunk570140.Z, {
   BACKGROUND_SYNC: U,
-  CONNECTION_OPEN: j,
+  CONNECTION_OPEN: k,
   GUILD_CREATE: B,
   GUILD_DELETE: Z,
   LOGOUT: F,

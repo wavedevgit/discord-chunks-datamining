@@ -1,7 +1,7 @@
 /** Chunk was on 74240 **/
 /** chunk id: 200305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => Z
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -54,7 +54,7 @@ let w = e => {
           src: R,
           className: E.applicationIcon
         })
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(a.Heading, {
         id: t,
         variant: "heading-xl/semibold",
         className: E.header,
@@ -97,7 +97,7 @@ let w = e => {
         alt: P.intl.string(P.t.wNAbl5),
         src: S,
         className: E.applicationIcon
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(a.Heading, {
         id: t,
         variant: "heading-xl/semibold",
         className: E.header,
@@ -117,7 +117,7 @@ let w = e => {
       })]
     })
   },
-  q = e => {
+  A = e => {
     var t;
     let {
       guildId: n,
@@ -136,7 +136,7 @@ let w = e => {
       disableVerification: o
     })
   },
-  A = e => {
+  q = e => {
     let {
       guildId: t,
       headerId: n,
@@ -149,7 +149,7 @@ let w = e => {
     } = e;
     return (0, r.jsxs)("div", {
       className: E.content,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         id: n,
         variant: "heading-xxl/normal",
         className: E.header,
@@ -160,7 +160,7 @@ let w = e => {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: o ? P.intl.string(P.t["3smSPD"]) : P.intl.string(P.t["7D3C5u"])
-      }), (0, r.jsx)(q, {
+      }), (0, r.jsx)(A, {
         guildId: t,
         formState: l,
         updateFormState: i,
@@ -169,25 +169,25 @@ let w = e => {
       })]
     })
   },
-  k = e => {
+  Z = e => {
     var t, n, o, N;
     let {
       verificationForm: R,
       headerId: S,
-      guildId: q,
-      onClose: k,
-      onComplete: Z,
-      isPreview: L = false
-    } = e, B = (0, O.N0)(q, null == R ? true : R.guild, L), {
+      guildId: A,
+      onClose: Z,
+      onComplete: k,
+      isPreview: B = false
+    } = e, L = (0, O.N0)(A, null == R ? true : R.guild, B), {
       guildProfile: D,
       fetchGuildProfile: U
-    } = (0, m.u)(q), G = (0, i.e7)([g.ZP, x.default], () => g.ZP.isMember(q, x.default.getId())), [K, J] = l.useState(false);
+    } = (0, m.u)(A), G = (0, i.e7)([g.ZP, x.default], () => g.ZP.isMember(A, x.default.getId())), [H, K] = l.useState(false);
     l.useEffect(() => {
-      G && !K && null == D && U().finally(() => J(true))
-    }, [U, D, K, G]);
-    let V = null == R ? true : R.formFields.some(e => e.field_type !== _.QJ.TERMS),
-      [z, H] = l.useState(null != (o = null == R ? true : R.formFields) ? o : []),
-      [Q, W] = l.useState(false),
+      G && !H && null == D && U().finally(() => K(true))
+    }, [U, D, H, G]);
+    let J = null == R ? true : R.formFields.some(e => e.field_type !== _.QJ.TERMS),
+      [V, Q] = l.useState(null != (o = null == R ? true : R.formFields) ? o : []),
+      [W, z] = l.useState(false),
       [X, Y] = l.useState(null),
       [$, ee] = l.useState(""),
       [et, en] = l.useState(""),
@@ -197,39 +197,39 @@ let w = e => {
         storeMemberCount: ea,
         storeOnlineCount: eo
       } = (0, i.cj)([p.Z], () => ({
-        storeMemberCount: p.Z.getMemberCount(q),
-        storeOnlineCount: p.Z.getOnlineCount(q)
+        storeMemberCount: p.Z.getMemberCount(A),
+        storeOnlineCount: p.Z.getOnlineCount(A)
       })),
       ec = null != eo ? eo : null == R || null == (t = R.guild) ? true : t.approximate_presence_count,
       eu = null != ea ? ea : null == R || null == (n = R.guild) ? true : n.approximate_member_count,
-      ed = null != V && V;
+      ed = null != J && J;
     l.useEffect(() => {
-      null != R && H(R.formFields)
+      null != R && Q(R.formFields)
     }, [R]), l.useEffect(() => {
-      null != q && b.default.track(T.rMx.OPEN_MODAL, {
+      null != A && b.default.track(T.rMx.OPEN_MODAL, {
         type: F.N4,
-        guild_id: q
+        guild_id: A
       })
-    }, [q]);
+    }, [A]);
     let em = (0, i.e7)([v.default], () => v.default.getCurrentUser()),
       {
         currentStep: ef,
         setCurrentStep: eh
       } = (0, O.k3)(em);
-    (0, O.lk)(z);
+    (0, O.lk)(V);
     let ex = null == em ? true : em.verified,
       ep = null == em ? true : em.isPhoneVerified(),
       {
         invalidFormFields: eg,
         hasInvalidTermsFormField: ev
       } = l.useMemo(() => ({
-        invalidFormFields: z.some(e => !(0, I.OA)(e)),
-        hasInvalidTermsFormField: z.some(e => e.field_type === _.QJ.TERMS && !(0, I.OA)(e))
-      }), [z]),
+        invalidFormFields: V.some(e => !(0, I.OA)(e)),
+        hasInvalidTermsFormField: V.some(e => e.field_type === _.QJ.TERMS && !(0, I.OA)(e))
+      }), [V]),
       eb = l.useMemo(() => {
-        if (null == Z || eg) returntrue;
+        if (null == k || eg) returntrue;
         if (ed || (null == em ? true : em.isStaff())) returnfalse;
-        switch (null == B ? true : B.verificationLevel) {
+        switch (null == L ? true : L.verificationLevel) {
           case T.sFg.VERY_HIGH:
             return !ep;
           case T.sFg.LOW:
@@ -240,7 +240,7 @@ let w = e => {
           default:
             returnfalse
         }
-      }, [Z, eg, ed, em, null == B ? true : B.verificationLevel, ep, ex]),
+      }, [k, eg, ed, em, null == L ? true : L.verificationLevel, ep, ex]),
       ej = (0, i.e7)([u.Z], () => u.Z.useReducedMotion),
       eC = l.useRef(null),
       e_ = function(e) {
@@ -253,35 +253,35 @@ let w = e => {
           r = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOWEST).hex(),
           [l, i, s] = (0, d.Cf)(t, n, false);
         return "linear-gradient(-45deg, ".concat(l, ", ").concat(null != s ? s : r, ")")
-      }(B),
+      }(L),
       eI = function(e) {
         let t = (0, a.dQu)(a.TVs.colors.BORDER_SUBTLE).hex();
         return "linear-gradient(-45deg, ".concat(t, ", ").concat(e, ")")
       }(null != (N = null == D ? true : D.brandColorPrimary) ? N : "");
-    if (null == B) return (0, r.jsx)(a.$jN, {});
+    if (null == L) return (0, r.jsx)(a.$jN, {});
     let eO = async () => {
-      W(true), el(null), es(null);
+      z(true), el(null), es(null);
       try {
         await (0, c.S2)({
           email: $,
           password: et
-        }), W(false), eh(O.KJ.EMAIL_CONFIRMATION)
+        }), z(false), eh(O.KJ.EMAIL_CONFIRMATION)
       } catch (n) {
         var e, t;
         el(null == n || null == (e = n.body) ? true : e.email), es(null == n || null == (t = n.body) ? true : t.password)
       } finally {
-        W(false)
+        z(false)
       }
     }, ey = async () => {
       var e, t, n, r;
-      W(true), Y(null);
-      let l = null != em ? g.ZP.getMember(q, em.id) : null;
+      z(true), Y(null);
+      let l = null != em ? g.ZP.getMember(A, em.id) : null;
       if (null != l && !l.isPending) {
-        null == k || k(true);
+        null == Z || Z(true);
         return
       }
       try {
-        await (null == Z ? true : Z((e = function(e) {
+        await (null == k ? true : k((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -299,7 +299,7 @@ let w = e => {
           }
           return e
         }({}, null != R ? R : C.t), t = {
-          formFields: z
+          formFields: V
         }, t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -309,12 +309,12 @@ let w = e => {
           return n
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-        }), e))), null == k || k(true)
+        }), e))), null == Z || Z(true)
       } catch (t) {
         let e = null == t ? true : t.body;
         (null == e || null == (n = e.errors) ? true : n.version) != null || (null == e || null == (r = e.errors) ? true : r.form_fields) != null ? Y(P.intl.string(P.t.PD09Sk)) : Y(null == e ? true : e.message)
       } finally {
-        W(false)
+        z(false)
       }
     }, eN = null != D;
     return (0, r.jsxs)(r.Fragment, {
@@ -332,7 +332,7 @@ let w = e => {
           disableGuildNameClick: true
         }) : (0, r.jsx)(h.Z, {
           className: E.guildProfile,
-          guild: B,
+          guild: L,
           presenceCount: ec,
           memberCount: eu
         })]
@@ -361,7 +361,7 @@ let w = e => {
                       setPassword: en,
                       emailError: er,
                       passwordError: ei,
-                      hasManualFormFields: V,
+                      hasManualFormFields: J,
                       isMember: G
                     });
                   case O.KJ.EMAIL_CONFIRMATION:
@@ -370,15 +370,15 @@ let w = e => {
                       email: $
                     });
                   case O.KJ.VERIFICATION_FORM:
-                    return (0, r.jsx)(A, {
+                    return (0, r.jsx)(q, {
                       headerId: S,
-                      guildId: q,
-                      guildName: B.name,
-                      formState: z,
-                      updateFormState: H,
-                      isPreview: L,
+                      guildId: A,
+                      guildName: L.name,
+                      formState: V,
+                      updateFormState: Q,
+                      isPreview: B,
                       useReducedMotion: ej,
-                      hasManualFormFields: V,
+                      hasManualFormFields: J,
                       disableVerification: ed
                     })
                 }
@@ -392,11 +392,11 @@ let w = e => {
                   children: [(0, r.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": true,
                     className: E.submitButton,
-                    children: (0, r.jsx)(a.zxk, {
+                    children: (0, r.jsx)(a.Button, {
                       variant: "primary",
                       text: P.intl.string(P.t.PDTjLC),
                       type: "submit",
-                      loading: Q,
+                      loading: W,
                       onClick: eO,
                       disabled: 0 === $.length || 0 === et.length
                     })
@@ -413,16 +413,16 @@ let w = e => {
                   className: E.footer,
                   children: [(0, r.jsx)(s.u, {
                     asContainer: true,
-                    shouldShow: eb && eg && V,
+                    shouldShow: eb && eg && J,
                     text: ev ? P.intl.string(P.t.PLNbh4) : P.intl.string(P.t.brWmV1),
                     children: (0, r.jsx)("div", {
                       "data-button-hoisted-classname-wrapper": true,
                       className: E.submitButton,
-                      children: (0, r.jsx)(a.zxk, {
+                      children: (0, r.jsx)(a.Button, {
                         variant: "active",
                         text: P.intl.string(P.t.geKm7u),
                         type: "submit",
-                        loading: Q,
+                        loading: W,
                         onClick: ey,
                         disabled: eb
                       })
@@ -431,7 +431,7 @@ let w = e => {
                     variant: "text-xs/normal",
                     color: "text-danger",
                     children: X
-                  }), null == X && V && (0, r.jsxs)("div", {
+                  }), null == X && J && (0, r.jsxs)("div", {
                     className: E.disclaimerFooter,
                     children: [(0, r.jsx)(a.Text, {
                       color: "header-secondary",

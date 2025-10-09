@@ -26,15 +26,15 @@ function h(e) {
   }), x = (0, i.TH)(), m = r.useCallback(() => {
     (0, s.c$)(x, "user_code_input_unauthorized")
   }, [x]), {
-    manualSubmit: v,
-    error: b,
-    submitting: g
+    manualSubmit: g,
+    error: v,
+    submitting: b
   } = (0, c.c)(h, t, m);
   return (0, a.jsxs)("div", {
     className: f.content,
     children: [(0, a.jsxs)("div", {
       className: f.innerContent,
-      children: [(0, a.jsx)(l.X6q, {
+      children: [(0, a.jsx)(l.Heading, {
         variant: "heading-xl/extrabold",
         className: f.text,
         children: u.intl.string(u.t.KYPNUl)
@@ -54,16 +54,16 @@ function h(e) {
           autoFocus: true,
           value: h,
           onChange: p,
-          error: b,
+          error: v,
           fullWidth: true
         })]
       })]
-    }), (0, a.jsx)(l.zxk, {
+    }), (0, a.jsx)(l.Button, {
       fullWidth: true,
       variant: "primary",
       text: u.intl.string(u.t["3PatS0"]),
-      onClick: v,
-      loading: g,
+      onClick: g,
+      loading: b,
       disabled: h.length !== d.A.USER_CODE_LENGTH
     })]
   })

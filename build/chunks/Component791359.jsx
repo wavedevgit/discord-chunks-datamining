@@ -163,7 +163,7 @@ function w() {
     }, t.id)
   }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk559909.emptyCard,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       className: Chunk559909.emptyHeader,
       children: Chunk388032.intl.string(Chunk388032.t["ngJ/5u"])

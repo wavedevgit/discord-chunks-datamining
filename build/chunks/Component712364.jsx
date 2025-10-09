@@ -51,7 +51,7 @@ class f extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk481060.P3F, {
         className: s()(Chunk914272.spacing, Chunk914272.__invalid_link),
         onClick: this.handleRetry,
-        children: (0, Chunk951288.jsx)(Chunk481060.eee, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           children: h
         })
       })]
@@ -70,7 +70,7 @@ class f extends(r = Chunk647438.PureComponent) {
         onSubmit: this.handleSubmit,
         children: [(0, Chunk951288.jsx)(Chunk481060.xBx, {
           separator: false,
-          children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             children: exports
           })
@@ -99,14 +99,14 @@ class f extends(r = Chunk647438.PureComponent) {
             }) : null, O]
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
-          children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+          children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
             direction: "horizontal-reverse",
-            children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               text: null != require ? require : Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
               type: "submit",
               disabled: d || 0 === g.length
-            }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "secondary",
               text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
               onClick: this.handleCancel,

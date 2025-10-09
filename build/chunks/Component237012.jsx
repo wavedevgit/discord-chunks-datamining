@@ -17,7 +17,7 @@ let s = e => {
   let {
     href: t
   } = e;
-  return (0, a.jsx)(r.eee, {
+  return (0, a.jsx)(r.Anchor, {
     href: t,
     children: t
   })

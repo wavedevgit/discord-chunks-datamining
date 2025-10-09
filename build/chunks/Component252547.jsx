@@ -20,40 +20,40 @@ function f(e) {
     viewId: n,
     officialGuildId: l,
     onClose: f
-  } = e, p = t.length > 7, [x, g] = i.useState(false), h = i.useMemo(() => t.slice(0, p && !x ? 6 : true), [t, p, x]);
-  return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.X6q, {
+  } = e, p = t.length > 7, [g, x] = r.useState(false), h = r.useMemo(() => t.slice(0, p && !g ? 6 : true), [t, p, g]);
+  return (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(s.X6q, {
       className: u.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.ak8OHh)
-    }), 0 === t.length ? (0, r.jsx)(s.xvT, {
+    }), 0 === t.length ? (0, i.jsx)(s.xvT, {
       variant: "text-xs/semibold",
       color: "text-primary",
       className: m.emptyState,
       children: d.intl.string(d.t.R5fYVF)
-    }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
+    }) : (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)("div", {
         className: a()(m.friends, {
-          [m.fadedEntries]: p && !x
+          [m.fadedEntries]: p && !g
         }),
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
           className: u.column,
-          children: h.map(e => (0, r.jsx)(c.Z, {
+          children: h.map(e => (0, i.jsx)(c.Z, {
             entry: e,
             viewId: n,
             onClose: f,
             officialGuildId: l
           }, e.id))
         })
-      }), p && !x && (0, r.jsxs)(o.P3F, {
+      }), p && !g && (0, i.jsxs)(o.P3F, {
         className: m.expandEntriesButton,
-        onClick: () => g(true),
-        children: [(0, r.jsx)(s.xvT, {
+        onClick: () => x(true),
+        children: [(0, i.jsx)(s.xvT, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           children: d.intl.string(d.t.yohc6O)
-        }), (0, r.jsx)(o.CJ0, {
+        }), (0, i.jsx)(o.CJ0, {
           size: "xs"
         })]
       })]

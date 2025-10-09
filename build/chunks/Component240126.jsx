@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 240126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -30,7 +30,7 @@ function s(e) {
       }), c ? null : (0, r.jsx)(l.Z, {
         className: a.stars
       })]
-    }), (0, r.jsx)(i.X6q, {
+    }), (0, r.jsx)(i.Heading, {
       className: a.header,
       variant: "heading-xl/semibold",
       children: n

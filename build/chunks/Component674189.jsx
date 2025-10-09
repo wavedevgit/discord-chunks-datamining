@@ -75,7 +75,7 @@ function f(e) {
     children: [(0, n.jsxs)(s.xBx, {
       className: m.modalHeader,
       separator: false,
-      children: [(0, n.jsx)(s.X6q, {
+      children: [(0, n.jsx)(s.Heading, {
         id: f,
         variant: "heading-lg/medium",
         children: O
@@ -99,7 +99,7 @@ function f(e) {
               onChange: M,
               isGuildIncluded: _
             })
-          }), (0, n.jsx)(s.zxk, {
+          }), (0, n.jsx)(s.Button, {
             variant: "primary",
             text: E,
             onClick: () => {

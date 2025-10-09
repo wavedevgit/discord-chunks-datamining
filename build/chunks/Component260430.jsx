@@ -65,7 +65,7 @@ function h(e) {
     v = h === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
     className: a()(_.scopes, E ? _.noDivider : true),
-    children: [(0, r.jsx)(c.X6q, {
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-sm/normal",
       className: _.sectionLabel,
       children: f.intl.format(O, {

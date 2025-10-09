@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 366598, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -24,7 +24,7 @@ function c(e) {
         className: a()(n.props.className, s.icon),
         height: 24,
         width: 24
-      }), (0, i.jsx)(o.X6q, {
+      }), (0, i.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         className: s.title,
         children: l

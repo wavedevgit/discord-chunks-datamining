@@ -21,7 +21,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, x] = (0, o.VF)(t, f), [b, j] = (0, d.OA)(t, [...f]), v = p ? j.length : x.length, _ = p ? b.length : h.length, C = v < u.md, O = _ >= u.X, y = j.length - x.length, N = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, d.OA)(t, [...f]), v = p ? j.length : b.length, _ = p ? x.length : h.length, C = v < u.md, O = _ >= u.X, y = j.length - b.length, N = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
@@ -96,7 +96,7 @@ function p(e) {
           color: "text-muted",
           children: g.intl.format(g.t["8Geut7"], {
             count: y,
-            prejoinHook: e => (0, r.jsx)(a.eee, {
+            prejoinHook: e => (0, r.jsx)(a.Anchor, {
               onClick: n,
               children: (0, r.jsx)(a.Text, {
                 tag: "span",

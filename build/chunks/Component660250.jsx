@@ -24,7 +24,7 @@ let j = function(e) {
     streamKey: h,
     channelId: m,
     onClose: g
-  } = e, v = (0, l.e7)([s.Z], () => {
+  } = e, v = (0, i.e7)([s.Z], () => {
     var e;
     return null == (e = s.Z.getSecureFramesState(h)) ? true : e.epochAuthenticator
   }), x = (0, d.W)({
@@ -44,14 +44,14 @@ let j = function(e) {
       className: y.verification,
       children: [(0, n.jsxs)("div", {
         className: y.header,
-        children: [(0, n.jsx)(i.X6q, {
+        children: [(0, n.jsx)(l.Heading, {
           variant: "text-sm/bold",
           color: "header-primary",
           children: O.intl.string(O.t.cgBTyM)
         }), null != x && (0, n.jsx)(p.H, {
           className: y.copyIcon,
           chunks: x,
-          color: i.TVs.colors.INTERACTIVE_NORMAL,
+          color: l.TVs.colors.INTERACTIVE_NORMAL,
           onCopy: P
         })]
       }), (0, n.jsx)(f.b, {
@@ -59,7 +59,7 @@ let j = function(e) {
         chunks: x,
         columns: b.WK
       })]
-    }), (0, n.jsx)(i.Text, {
+    }), (0, n.jsx)(l.Text, {
       className: y.footer,
       variant: "text-sm/normal",
       color: "text-muted",

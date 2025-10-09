@@ -23,7 +23,7 @@ function g(e) {
     guildId: n,
     textClassName: g,
     tooltipDelay: m
-  } = e, b = (0, i.e7)([c.default], () => c.default.locale), y = (0, i.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), _ = (0, i.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t) : null), j = (0, s.FI)(h.default.extractTimestamp(t), b), x = (0, s.FI)(null == _ ? true : _.joinedAt, b);
+  } = e, b = (0, i.e7)([c.default], () => c.default.locale), y = (0, i.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), _ = (0, i.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t) : null), j = (0, s.FI)(h.default.extractTimestamp(t), b), O = (0, s.FI)(null == _ ? true : _.joinedAt, b);
   return null == y || null == _ ? (0, r.jsx)(a.Text, {
     variant: "text-sm/normal",
     className: g,
@@ -62,7 +62,7 @@ function g(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: g,
-        children: x
+        children: O
       })]
     })]
   })

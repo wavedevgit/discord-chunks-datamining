@@ -22,16 +22,16 @@ function f(e) {
   let {
     guild: n,
     formFields: c
-  } = e, [f, x] = i.useState(c);
-  i.useEffect(() => x(c), [c]);
-  let b = null != (t = (0, s.A)({
+  } = e, [f, b] = i.useState(c);
+  i.useEffect(() => b(c), [c]);
+  let x = null != (t = (0, s.A)({
       guildId: n.id
     })) ? t : 0,
     [j, v] = i.useState(null),
     _ = i.useMemo(() => null == f ? true : f.some(e => (0, a.J)(e)), [f]),
     C = i.useMemo(() => f.length === g.nx, [f]),
     O = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && v(null)
+      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && v(null)
     }, [j, n.id]),
     y = i.useCallback(e => {
       O([...f, e])
@@ -47,7 +47,7 @@ function f(e) {
     I = i.useCallback((e, t, n) => {
       let r = f.indexOf(e),
         i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), x(i)), n ? (O(i), null !== j && v(null)) : j !== t && v(t)
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (O(i), null !== j && v(null)) : j !== t && v(t)
     }, [j, f, O]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
@@ -64,7 +64,7 @@ function f(e) {
       guild: n,
       index: f.indexOf(e),
       isDragEnabled: f.length > 1,
-      submittedGuildJoinRequestsCount: b,
+      submittedGuildJoinRequestsCount: x,
       removeFormField: N,
       updateFormField: E,
       updateFormFieldOrder: I,

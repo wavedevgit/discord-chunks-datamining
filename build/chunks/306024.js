@@ -30,14 +30,14 @@ function h(e) {
     scopeRef: u
   }), [u]);
   (0, r.b)(() => {
-    let e = h || k.root;
-    if (k.getTreeNode(e.scopeRef) && p && !T(p, e.scopeRef)) {
-      let t = k.getTreeNode(p);
+    let e = h || j.root;
+    if (j.getTreeNode(e.scopeRef) && p && !T(p, e.scopeRef)) {
+      let t = j.getTreeNode(p);
       t && (e = t)
     }
-    e.addChild(g), k.addNode(g)
+    e.addChild(g), j.addNode(g)
   }, [g, h]), (0, r.b)(() => {
-    let e = k.getTreeNode(u);
+    let e = j.getTreeNode(u);
     e && (e.contain = !!n)
   }, [n]), (0, r.b)(() => {
     var e;
@@ -52,13 +52,13 @@ function h(e) {
     let e = (0, i.vY)((0, a.r3)(u.current ? u.current[0] : true)),
       t = null;
     if (v(e, u.current)) {
-      for (let n of k.traverse()) n.scopeRef && v(e, n.scopeRef.current) && (t = n);
-      t === k.getTreeNode(u) && (p = t.scopeRef)
+      for (let n of j.traverse()) n.scopeRef && v(e, n.scopeRef.current) && (t = n);
+      t === j.getTreeNode(u) && (p = t.scopeRef)
     }
   }, [u]), (0, r.b)(() => () => {
     var e, t, n;
-    let r = null != (n = null == (t = k.getTreeNode(u)) || null == (e = t.parent) ? true : e.scopeRef) ? n : null;
-    (u === p || T(u, p)) && (!r || k.getTreeNode(r)) && (p = r), k.removeTreeNode(u)
+    let r = null != (n = null == (t = j.getTreeNode(u)) || null == (e = t.parent) ? true : e.scopeRef) ? n : null;
+    (u === p || T(u, p)) && (!r || j.getTreeNode(r)) && (p = r), j.removeTreeNode(u)
   }, [u]);
   let E = (0, d.useMemo)(() => m(u), []),
     b = (0, d.useMemo)(() => ({
@@ -154,7 +154,7 @@ function g(e) {
 }
 
 function E(e) {
-  let t = k.getTreeNode(p);
+  let t = j.getTreeNode(p);
   for (; t && t.scopeRef !== e;) {
     if (t.contain) returnfalse;
     t = t.parent
@@ -235,14 +235,14 @@ function I(e, t = null) {
   for (let {
       scopeRef: n
     }
-    of k.traverse(k.getTreeNode(t)))
+    of j.traverse(j.getTreeNode(t)))
     if (n && v(e, n.current)) returntrue;
   returnfalse
 }
 
 function T(e, t) {
   var n;
-  let r = null == (n = k.getTreeNode(t)) ? true : n.parent;
+  let r = null == (n = j.getTreeNode(t)) ? true : n.parent;
   for (; r;) {
     if (r.scopeRef === e) returntrue;
     r = r.parent
@@ -305,7 +305,7 @@ function R(e, t, n) {
 }
 
 function P(e) {
-  let t = k.getTreeNode(p);
+  let t = j.getTreeNode(p);
   for (; t && t.scopeRef !== e;) {
     if (t.nodeToRestore) returnfalse;
     t = t.parent
@@ -332,7 +332,7 @@ function w(e, t, n) {
       if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
       let n = r.activeElement;
       if (!I(n, e) || !P(e)) return;
-      let i = k.getTreeNode(e);
+      let i = j.getTreeNode(e);
       if (!i) return;
       let a = i.nodeToRestore,
         o = L(r.body, {
@@ -353,14 +353,14 @@ function w(e, t, n) {
     var n;
     let r = (0, a.r3)(e.current ? e.current[0] : true);
     if (!t) return;
-    let s = k.getTreeNode(e);
+    let s = j.getTreeNode(e);
     if (s) return s.nodeToRestore = null != (n = o.current) ? n : true, () => {
-      let n = k.getTreeNode(e);
+      let n = j.getTreeNode(e);
       if (!n) return;
       let a = n.nodeToRestore,
         o = (0, i.vY)(r);
       if (t && a && (o && I(o, e) || o === r.body && P(e))) {
-        let t = k.clone();
+        let t = j.clone();
         requestAnimationFrame(() => {
           if (r.activeElement === r.body) {
             let n = t.getTreeNode(e);
@@ -369,7 +369,7 @@ function w(e, t, n) {
               n = n.parent
             }
             for (n = t.getTreeNode(e); n;) {
-              if (n.scopeRef && n.scopeRef.current && k.getTreeNode(n.scopeRef)) return void D(A(n.scopeRef.current, true));
+              if (n.scopeRef && n.scopeRef.current && j.getTreeNode(n.scopeRef)) return void D(A(n.scopeRef.current, true));
               n = n.parent
             }
           }
@@ -451,4 +451,4 @@ class M {
     this.children = new Set, this.contain = false, this.scopeRef = e.scopeRef
   }
 }
-let k = new x
+let j = new x

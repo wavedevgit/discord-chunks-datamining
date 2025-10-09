@@ -2,7 +2,7 @@
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,12 +18,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-let x = function(e) {
+let b = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
-    index: x,
-    onDragComplete: b,
+    index: b,
+    onDragComplete: x,
     onDragStart: j,
     onDragReset: v
   } = e, {
@@ -45,9 +45,9 @@ let x = function(e) {
     } = (0, c.Z)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
-      index: x,
+      index: b,
       onDragStart: j,
-      onDragComplete: b,
+      onDragComplete: x,
       onDragReset: v
     }),
     Z = i.useCallback(e => {
@@ -104,8 +104,8 @@ let x = function(e) {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(h.resourceChannel, {
-        [h.dropIndicatorBefore]: null != T && x < T,
-        [h.dropIndicatorAfter]: null != T && x > T,
+        [h.dropIndicatorBefore]: null != T && b < T,
+        [h.dropIndicatorAfter]: null != T && b > T,
         [h.resourceChannelError]: null != N
       }),
       ref: e => {

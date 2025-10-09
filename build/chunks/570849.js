@@ -1,15 +1,15 @@
 /** Chunk was on 9558 **/
 /** chunk id: 570849, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => i,
+  l: () => l,
   u: () => s
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function i(e, t) {
-  r.Z.dispatch({
+function l(e, t) {
+  i.Z.dispatch({
     type: "GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS",
     selectedTemplate: e,
     guildId: t
@@ -17,10 +17,10 @@ function i(e, t) {
 }
 async function s(e) {
   let t = (await a.tn.get({
-    url: l.ANM.GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES(e),
+    url: r.ANM.GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES(e),
     rejectWithError: false
   })).body;
-  null != t.templates && r.Z.dispatch({
+  null != t.templates && i.Z.dispatch({
     type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_TEMPLATES",
     templates: t.templates,
     guildId: e

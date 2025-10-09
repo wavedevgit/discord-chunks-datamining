@@ -77,8 +77,8 @@ function h(e) {
     tagErrors: u = {},
     placeholder: p,
     className: h,
-    maxTags: x
-  } = e, b = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, g.V)(n), {
+    maxTags: b
+  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, g.V)(n), {
     handlePasteEvent: C,
     handleInputChange: O,
     handleKeyDown: y,
@@ -91,7 +91,7 @@ function h(e) {
     handleInputBlurEvent: w
   } = (0, g.Q)(_, {
     scrollerRef: v,
-    mainInputRef: b,
+    mainInputRef: x,
     mainContainerRef: j
   }), {
     state: {
@@ -102,7 +102,7 @@ function h(e) {
     }
   } = _, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
-    G(false), P(), null == (e = b.current) || e.focus({
+    G(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -119,9 +119,9 @@ function h(e) {
       if (t) {
         var n;
         let t = D.includes(R[e]);
-        null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null == (e = b.current) || e.blur(), setTimeout(() => {
+          null == (e = x.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? true : e.focus()
           }, 16)
@@ -150,7 +150,7 @@ function h(e) {
         className: a()(m.mainTextInput, {
           [m.isEditingOtherNodes]: k
         }),
-        ref: b,
+        ref: x,
         onChange: O,
         onKeyDownCapture: y,
         onPaste: C,
@@ -158,11 +158,11 @@ function h(e) {
         placeholder: 0 === R.length ? p : true,
         value: Z
       })]
-    }), null != x && (0, r.jsxs)(s.Text, {
+    }), null != b && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: m.maxTags,
-      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", x]
+      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", b]
     })]
   })
 }

@@ -64,7 +64,7 @@ function f(e) {
     let e = (0, a.Z)(t);
     return window.open(null != e ? e : true)
   };
-  return (0, r.jsx)(i.zxk, c({
+  return (0, r.jsx)(i.Button, c({
     variant: l,
     size: d,
     text: s.intl.string(s.t["I6JG4+"]),

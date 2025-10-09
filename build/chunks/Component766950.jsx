@@ -44,14 +44,14 @@ function w(e) {
     analyticsLocations: M,
     guildId: G,
     onClose: Y
-  } = e, H = (0, s.e7)([C.default], () => C.default.getCurrentUser()), z = null != (t = v.ZP.useName(H)) ? t : "", F = (0, s.e7)([h.Z, S.Z, _.ZP], () => {
+  } = e, H = (0, s.e7)([C.default], () => C.default.getCurrentUser()), F = null != (t = v.ZP.useName(H)) ? t : "", z = (0, s.e7)([h.Z, S.Z, _.ZP], () => {
     var e, t, n;
-    return null != G ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(G, null == H ? true : H.id)) ? t : z : null != (n = S.Z.getPendingGlobalName()) ? n : z
-  }, [G, H, z]), U = (0, s.e7)([b.Z], () => b.Z.getGuild(G)), {
-    userDisplayNameStyles: q,
-    guildDisplayNameStyles: K,
-    pendingDisplayNameStyles: X
-  } = (0, x.mD)(H, G), V = true !== X ? X : null != K ? K : q, [W, $] = o.useState(null != (n = null == V ? true : V.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == V ? true : V.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == V ? true : V.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
+    return null != G ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(G, null == H ? true : H.id)) ? t : F : null != (n = S.Z.getPendingGlobalName()) ? n : F
+  }, [G, H, F]), U = (0, s.e7)([b.Z], () => b.Z.getGuild(G)), {
+    userDisplayNameStyles: K,
+    guildDisplayNameStyles: q,
+    pendingDisplayNameStyles: V
+  } = (0, x.mD)(H, G), X = true !== V ? V : null != q ? q : K, [W, $] = o.useState(null != (n = null == X ? true : X.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == X ? true : X.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == X ? true : X.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
   (0, f.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -62,8 +62,8 @@ function w(e) {
     analyticsLocations: ea
   } = (0, m.ZP)(M, p.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), es = o.useMemo(() => J === i.m.GRADIENT ? er : [el], [J, er, el]), ec = o.useMemo(() => {
     var e;
-    return W !== (null == V ? true : V.fontId) || J !== (null == V ? true : V.effectId) || !(0, c.E)(es, null != (e = null == V ? true : V.colors) ? e : [])
-  }, [V, W, J, es]), ed = o.useCallback(() => {
+    return W !== (null == X ? true : X.fontId) || J !== (null == X ? true : X.effectId) || !(0, c.E)(es, null != (e = null == X ? true : X.colors) ? e : [])
+  }, [X, W, J, es]), ed = o.useCallback(() => {
     if (ec) {
       let e = es;
       J === i.m.SOLID && es.length > 0 && es[0] === ee.defaultColors[0] && (e = []);
@@ -114,14 +114,14 @@ function w(e) {
               "data-migration-pending": true,
               separator: false,
               className: L.sectionHeader,
-              children: (0, l.jsx)(d.X6q, {
+              children: (0, l.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
                 children: I.intl.string(A.default.ZPMAlZ)
               })
             }), (0, l.jsx)(O.Z, {
               selectedFontId: W,
               setSelectedFontId: $,
-              displayName: F,
+              displayName: z,
               className: L.selectionSubSection
             }), (0, l.jsx)(k.Z, {
               selectedEffectId: J,
@@ -137,7 +137,7 @@ function w(e) {
           }), (0, l.jsx)(E.Z, {
             user: H,
             guild: U,
-            displayName: F,
+            displayName: z,
             selectedFontId: W,
             selectedEffectId: J,
             selectedColors: J === i.m.SOLID && (0, c.E)(es, ee.defaultColors) ? [] : es,

@@ -101,8 +101,8 @@ function h() {
           type: "number",
           onChange: e => g(parseFloat(e))
         })
-      }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "critical-primary",
           text: "Clear Override",
           onClick: () => void(null != v && Chunk570140.Z.dispatch({
@@ -110,7 +110,7 @@ function h() {
             feedbackType: v.feedbackType
           })),
           disabled: !y
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Update",
           onClick: () => void(null != v && Chunk570140.Z.dispatch({

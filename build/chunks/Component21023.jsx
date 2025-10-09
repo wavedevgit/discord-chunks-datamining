@@ -282,7 +282,7 @@ let _ = e => {
           withBottomBorder: true
         },
         18: {
-          label: (0, r.jsx)(i.X6q, {
+          label: (0, r.jsx)(i.Heading, {
             className: f.__invalid_textColor,
             variant: "display-sm",
             children: "Make Discord Yours"
@@ -292,7 +292,7 @@ let _ = e => {
           withBottomBorder: false
         },
         19: {
-          label: (0, r.jsx)(i.X6q, {
+          label: (0, r.jsx)(i.Heading, {
             className: f.__invalid_textColor,
             variant: "display-sm",
             children: "Enjoy an Upgraded Discord"
@@ -302,7 +302,7 @@ let _ = e => {
           withBottomBorder: false
         },
         20: {
-          label: (0, r.jsx)(i.X6q, {
+          label: (0, r.jsx)(i.Heading, {
             className: f.__invalid_textColor,
             variant: "display-sm",
             children: "Show Up the Way You Want"

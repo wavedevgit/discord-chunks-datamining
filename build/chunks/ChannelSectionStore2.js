@@ -91,11 +91,11 @@ function M(e) {
   return null != n && n in R && (delete R[n], t = true), t && e ? e : !e
 }
 
-function k() {
+function j() {
   w && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C && (C = M(C)), A = M(A)
 }
 
-function j() {
+function k() {
   A && (A = M(A)), C = M(C)
 }
 
@@ -275,9 +275,9 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
 O(Q, "displayName", "ChannelSectionStore"), O(Q, "persistKey", "ChannelSectionStore2");
 let J = new Q(Chunk570140.Z, {
   SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: X,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: k,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: j,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: U,
-  CHANNEL_TOGGLE_SUMMARIES_SECTION: j,
+  CHANNEL_TOGGLE_SUMMARIES_SECTION: k,
   SIDEBAR_VIEW_CHANNEL: Z,
   SIDEBAR_VIEW_GUILD: G,
   SIDEBAR_CREATE_THREAD: F,

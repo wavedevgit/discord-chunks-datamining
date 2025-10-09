@@ -21,7 +21,7 @@ function s(e) {
   } = e, c = i.useRef(a.Z.reactParserFor(a.Z.defaultRules));
   return s && (null != t || null != n) ? (0, r.jsxs)("div", {
     className: o.container,
-    children: [null != t && (0, r.jsx)(l.X6q, {
+    children: [null != t && (0, r.jsx)(l.Heading, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: o.header,

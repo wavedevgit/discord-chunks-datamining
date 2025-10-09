@@ -63,7 +63,7 @@ let _ = e => {
     m = () => {
       null == _ || _(), o.AC(t, n)
     };
-  return (0, r.jsx)(a.zxk, u({
+  return (0, r.jsx)(a.Button, u({
     variant: c,
     size: f,
     text: l.intl.string(l.t.ZYO5OD),

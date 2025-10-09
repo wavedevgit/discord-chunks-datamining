@@ -28,7 +28,7 @@ function p(e) {
         questContent: l.jn.QUEST_BAR_V2,
         questContentCTA: i.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         sourceQuestContent: d
-      }), (0, a.openUserSettings)(o.n.CONNECTIONS_PANEL, {
+      }), (0, o.openUserSettings)(a.n.CONNECTIONS_PANEL, {
         section: c.oAB.CONNECTIONS
       })
     },

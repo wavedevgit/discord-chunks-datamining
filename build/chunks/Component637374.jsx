@@ -125,12 +125,12 @@ class W extends Chunk647438.PureComponent {
       className: o()(B.invalidPoop, {
         [B.invalidPoopHorizontal]: this.isHorizontal
       })
-    })), Z(this, "renderTitle", () => this.props.isSelfGift ? G.intl.string(G.t["mT9B4+"]) : G.intl.string(G.t.Vo5yHx)), Z(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.zxk, {
+    })), Z(this, "renderTitle", () => this.props.isSelfGift ? G.intl.string(G.t["mT9B4+"]) : G.intl.string(G.t.Vo5yHx)), Z(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
       text: G.intl.string(G.t["jcSP+v"]),
       onClick: this.handleViewInventory
-    }) : (0, r.jsx)(d.zxk, {
+    }) : (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
       text: G.intl.string(G.t.bUvv1d),
@@ -281,7 +281,7 @@ class K extends Chunk647438.Component {
     }) : G.intl.string(G.t.Jdnjjo)
   }
   renderPromotionActions() {
-    return (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    return (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "primary",
       size: "sm",
       text: Chunk388032.intl.string(Chunk388032.t["71nuwc"]),
@@ -338,14 +338,14 @@ class K extends Chunk647438.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(j.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(j.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(k.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(k.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
     }), Z(this, "handleVerificationClick", e => {
       e.stopPropagation(), e.preventDefault(), (0, I.openUserSettings)(v.n.ACCOUNT_PANEL, {
-        section: j.oAB.ACCOUNT
+        section: k.oAB.ACCOUNT
       })
     }), Z(this, "handleAccept", e => {
       let {
@@ -355,13 +355,13 @@ class K extends Chunk647438.Component {
         type: i,
         giftInfo: a
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), w.default.track(j.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), w.default.track(k.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: H(F({}, this.analyticsLocation), {
-          object: j.qAy.BUTTON_CTA
+          object: k.qAy.BUTTON_CTA
         })
       });
-      let o = i !== j.uaV.CUSTOM_GIFT ? true : r;
+      let o = i !== k.uaV.CUSTOM_GIFT ? true : r;
       (0, b.V)({
         processedCode: n,
         channelContext: t,
@@ -373,13 +373,13 @@ class K extends Chunk647438.Component {
         giftCode: t
       } = this.props;
       null != t && t.isSubscription && (e.preventDefault(), (0, I.openUserSettings)(v.n.NITRO_PANEL, {
-        section: j.oAB.PREMIUM
+        section: k.oAB.PREMIUM
       }))
     }), Z(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? true : t.code;
-      null != n && window.open(j.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), Z(this, "renderCustomGiftBox", e => {
       let {
         width: t

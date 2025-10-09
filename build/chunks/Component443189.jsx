@@ -1,5 +1,5 @@
 /** Chunk was on 6074 **/
-/** chunk id: 443189, original params: t,e,n (module,exports,require) **/
+/** chunk id: 443189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -13,20 +13,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk773408 = require("./773408.js"),
   Chunk963705 = require("./963705.js");
 
-function h(t) {
+function h(e) {
   let {
-    source: e,
+    source: t,
     onClose: n,
     transitionState: h
-  } = t;
+  } = e;
   c.useEffect(() => {
     o.default.track(i.rMx.OPEN_MODAL, {
       type: i.jXE.CONTACT_SYNC_NC_MODAL,
       source: {
-        location: e
+        location: t
       }
     })
-  }, [e]);
+  }, [t]);
   let u = (0, s.Dt)();
   return (0, a.jsxs)(r.Y0X, {
     className: d.contactSync,
@@ -38,7 +38,7 @@ function h(t) {
       className: d.modalCloseButton
     }), (0, a.jsxs)("div", {
       className: d.inner,
-      children: [(0, a.jsx)(r.X6q, {
+      children: [(0, a.jsx)(r.Heading, {
         variant: "heading-xl/extrabold",
         color: "header-primary",
         className: d.header,

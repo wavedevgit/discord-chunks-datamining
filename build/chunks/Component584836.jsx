@@ -12,11 +12,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  return t === a.IlC.POPOUT ? null : (0, n.jsx)(o.sNh, {
+  return t === a.IlC.POPOUT ? null : (0, n.jsx)(c.sNh, {
     id: "nav-server-settings",
     label: l.intl.string(l.t["154/bG"]),
     action: () => {
-      (0, c.xf)(), i.Z.open(e, a.pNK.MODERATION)
+      (0, o.xf)(), i.Z.open(e, a.pNK.MODERATION)
     }
   })
 }

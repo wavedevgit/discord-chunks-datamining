@@ -24,10 +24,10 @@ function h(e) {
   let {
     action: n,
     triggerType: h,
-    guildId: x,
-    toggled: b,
+    guildId: b,
+    toggled: x,
     onToggleAction: j
-  } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.L9)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(x)), [x]);
+  } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.getFriendlyDurationString)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
   if (null == _) return null;
   let {
     headerText: N,
@@ -45,14 +45,14 @@ function h(e) {
       })
     }), (0, r.jsxs)("div", {
       className: f.actionTextContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
         children: N
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: E
-      }), b && (0, r.jsxs)(s.Text, {
+      }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKC, {
@@ -74,7 +74,7 @@ function h(e) {
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.$q, {
           type: a.M0.INVERTED,
-          value: b,
+          value: x,
           onChange: v(false),
           disabled: !y,
           className: f.__invalid_actionCheckbox

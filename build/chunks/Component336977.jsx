@@ -79,7 +79,7 @@ function x(t) {
       className: N.body,
       children: (0, i.jsxs)("div", {
         className: N.textContainer,
-        children: [(0, i.jsx)(s.X6q, {
+        children: [(0, i.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
           children: p.intl.string(p.t.L4ifkZ)
@@ -93,7 +93,7 @@ function x(t) {
       "data-migration-pending": true,
       children: (0, i.jsx)("div", {
         className: N.buttonContainer,
-        children: (0, i.jsx)(s.zxk, {
+        children: (0, i.jsx)(s.Button, {
           variant: "primary",
           text: p.intl.string(p.t["8eKkaW"]),
           fullWidth: true,

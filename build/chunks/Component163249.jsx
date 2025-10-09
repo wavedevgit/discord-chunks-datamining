@@ -2,7 +2,7 @@
 /** chunk id: 163249, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,7 +73,7 @@ function h(e) {
   })
 }
 
-function x() {
+function b() {
   let e = Chunk647438.useMemo(() => [{
       backgroundClass: Chunk203552.bannerClubs,
       username: "Wumpus#0000",
@@ -171,7 +171,7 @@ function x() {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -184,12 +184,12 @@ function b(e) {
   return (0, r.jsx)(c.NM, {
     children: (0, r.jsxs)("div", {
       className: p.section,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: m.intl.string(m.t.LPJmLy)
       }), (0, r.jsxs)("div", {
         className: p.container,
-        children: [(0, r.jsx)(x, {}), (0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(b, {}), (0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           children: m.intl.string(m.t.ALlnbm)
         }), (0, r.jsx)(s.Text, {
@@ -200,7 +200,7 @@ function b(e) {
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.button,
-          children: (0, r.jsx)(s.zxk, {
+          children: (0, r.jsx)(s.Button, {
             variant: "primary",
             text: m.intl.string(m.t.JZZjQE),
             onClick: g,

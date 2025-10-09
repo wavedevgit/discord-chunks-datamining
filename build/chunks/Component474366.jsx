@@ -131,7 +131,7 @@ function S() {
       direction: "vertical",
       align: "center",
       justify: "center",
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk65766.header,
         variant: "heading-md/medium",
         children: Chunk388032.intl.string(Chunk764295.default.h6QNk5)

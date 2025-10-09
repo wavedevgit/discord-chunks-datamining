@@ -56,7 +56,7 @@ function p(e) {
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: _.removeButton,
-        children: (0, r.jsx)(s.zxk, {
+        children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
           text: null != p ? f.intl.string(f.t.jHlJNT) : f.intl.string(f.t.tT9n7O),

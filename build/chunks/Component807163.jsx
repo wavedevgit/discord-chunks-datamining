@@ -187,8 +187,8 @@ function eg(e) {
     } = e,
     i = (0, b.ZP)(t.id),
     o = (0, m.e7)([j.Z], () => j.Z.useReducedMotion),
-    l = n === H.PremiumTypes.TIER_1;
-  return s = (null == i ? true : i.premiumType) === H.PremiumTypes.TIER_2 ? (0, r.jsxs)(P.Z, {
+    l = n === W.PremiumTypes.TIER_1;
+  return s = (null == i ? true : i.premiumType) === W.PremiumTypes.TIER_2 ? (0, r.jsxs)(P.Z, {
     user: t,
     displayProfile: i,
     forceShowPremium: true,
@@ -259,9 +259,9 @@ function ej(e) {
     analyticsLocations: m
   } = (0, N.ZP)(C.Z.PREMIUM_UNCANCEL_MODAL), d = (0, D.GG)();
   if (!c || null == d) return null;
-  let f = null != (s = null == u ? true : u.id) ? s : H.VU.PREMIUM_TENURE_1_MONTH,
+  let f = null != (s = null == u ? true : u.id) ? s : W.VU.PREMIUM_TENURE_1_MONTH,
     x = null != (t = null == u ? true : u.status) ? t : D.Vq.UPCOMING,
-    g = null != (n = null == u ? true : u.nameUnformatted) ? n : H.vK[H.VU.PREMIUM_TENURE_1_MONTH].nameUnformatted,
+    g = null != (n = null == u ? true : u.nameUnformatted) ? n : W.vK[W.VU.PREMIUM_TENURE_1_MONTH].nameUnformatted,
     j = (0, z.J)(f),
     h = q.intl.string(g),
     E = x === D.Vq.EARNED,
@@ -302,7 +302,7 @@ function ej(e) {
 function eC(e) {
   let {
     premiumType: s
-  } = e, t = (0, m.e7)([j.Z], () => j.Z.useReducedMotion), n = (0, h.wC)(null).filter(e => e.type === E.B.GUILD && (e.animated || null != e.guildId)).slice(0, 3), a = (0, m.Wu)([T.Z], () => T.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, 3 - n.length)), i = ep().emojiStickersVisual, o = s === H.PremiumTypes.TIER_1;
+  } = e, t = (0, m.e7)([j.Z], () => j.Z.useReducedMotion), n = (0, h.wC)(null).filter(e => e.type === E.B.GUILD && (e.animated || null != e.guildId)).slice(0, 3), a = (0, m.Wu)([T.Z], () => T.Z.stickerFrecencyWithoutFetchingLatest.frequently.slice(0, 3 - n.length)), i = ep().emojiStickersVisual, o = s === W.PremiumTypes.TIER_1;
   return (0, r.jsx)(ef, {
     description: o ? q.intl.format(q.t.couiKC, {}) : q.intl.format(q.t["0hUHi4"], {}),
     onLearnMore: () => {
@@ -358,7 +358,7 @@ function eN(e) {
     c = null != o && l > 0,
     d = ep().boostItemVisual;
   return (0, r.jsx)(ef, {
-    description: s === H.PremiumTypes.TIER_1 ? q.intl.format(q.t["K4Hv6+"], {}) : q.intl.format(q.t.wRxEDQ, {}),
+    description: s === W.PremiumTypes.TIER_1 ? q.intl.format(q.t["K4Hv6+"], {}) : q.intl.format(q.t.wRxEDQ, {}),
     onLearnMore: () => {
       t(), (0, O.openUserSettings)(y.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         section: Y.oAB.GUILD_BOOSTING
@@ -423,7 +423,7 @@ function eE(e) {
     premiumType: s
   } = e, t = ep().uploadsMessagesItemVisual;
   return (0, r.jsx)(ef, {
-    description: s === H.PremiumTypes.TIER_2 ? q.intl.format(q.t.GsOFRE, {}) : q.intl.format(q.t.wFWO6O, {}),
+    description: s === W.PremiumTypes.TIER_2 ? q.intl.format(q.t.GsOFRE, {}) : q.intl.format(q.t.wFWO6O, {}),
     onLearnMore: () => {
       window.open(V.Z.getArticleURL(Y.BhN.PREMIUM_DETAILS)), w.default.track(Y.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "msgs_uploads"
@@ -450,14 +450,14 @@ function e_(e) {
   } = e, c = n.useMemo(() => {
     let e = [];
     switch (t) {
-      case H.PremiumTypes.TIER_0:
+      case W.PremiumTypes.TIER_0:
         e.push((0, r.jsx)(eC, {
           premiumType: t
         }), (0, r.jsx)(eE, {
           premiumType: t
         }));
         break;
-      case H.PremiumTypes.TIER_1:
+      case W.PremiumTypes.TIER_1:
         o ? e.push((0, r.jsx)(eg, {
           currentUser: s,
           premiumType: t,
@@ -478,7 +478,7 @@ function e_(e) {
           onClose: a
         }, "boost-item"));
         break;
-      case H.PremiumTypes.TIER_2:
+      case W.PremiumTypes.TIER_2:
         o ? e.push((0, r.jsx)(eg, {
           currentUser: s,
           premiumType: t,
@@ -546,7 +546,7 @@ let eb = function(e) {
       discount_id: null == x ? true : x.discount_id
     })
   }, [h, d, x]), f) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.Z, {
+    children: [(0, r.jsx)(H.Z, {
       premiumType: s,
       onClose: o
     }), (0, r.jsx)(p.hzk, {
@@ -557,13 +557,13 @@ let eb = function(e) {
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.Z, {
+    children: [(0, r.jsx)(H.Z, {
       premiumType: s,
       onClose: o
     }), (0, r.jsxs)(p.hzk, {
       "data-migration-pending": true,
       className: Q.body,
-      children: [(0, r.jsx)(p.X6q, {
+      children: [(0, r.jsx)(p.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: Q.title,

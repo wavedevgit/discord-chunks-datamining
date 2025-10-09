@@ -16,7 +16,7 @@ let l = e => {
     responsive: i = true,
     children: l
   } = e;
-  return (0, r.jsx)(o.X6q, {
+  return (0, r.jsx)(o.Heading, {
     className: a()(s.header, t, i && s.responsive),
     variant: "display-md",
     color: n,

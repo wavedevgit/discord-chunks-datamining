@@ -1,7 +1,7 @@
-/** Chunk was on 89381 **/
+/** Chunk was on 89279 **/
 /** chunk id: 895563, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  P: () => O,
+  P: () => j,
   l: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
@@ -62,7 +62,7 @@ function Z(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let n = (0, o.e7)([u.Z], () => u.Z.isFavorite(e.id));
   return __OVERLAY__ || !n ? null : (0, r.jsx)(a.sNh, {
     id: "favorite-channel",

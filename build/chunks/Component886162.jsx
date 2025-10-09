@@ -37,7 +37,7 @@ function g(e) {
       id: _
     }), (0, r.jsx)(o.xBx, {
       separator: false,
-      children: (0, r.jsx)(o.X6q, {
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: f.intl.string(f.t["7glvXl"])
       })
@@ -79,7 +79,7 @@ function g(e) {
         children: f.intl.string(f.t["+USXQE"])
       })]
     }), (0, r.jsx)(o.mzw, {
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, r.jsx)(o.Button, {
         variant: "active",
         text: f.intl.string(f.t["+TBKLy"]),
         loading: m,

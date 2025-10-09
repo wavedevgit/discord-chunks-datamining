@@ -68,7 +68,7 @@ function g(e) {
   } = e, E = g ? f : d;
   return (0, r.jsxs)("div", {
     className: o()(E.boxBackdrop, t),
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       className: E.bentoSectionHeader,
       variant: "display-md",
       color: "header-primary",

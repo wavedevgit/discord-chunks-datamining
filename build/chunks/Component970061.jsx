@@ -44,7 +44,7 @@ function m(e) {
     buttonLabel: l,
     buttonCallback: a,
     disabled: o
-  } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, x = (0, c.q_F)({
+  } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, b = (0, c.q_F)({
     width: "".concat(100 * h, "%")
   });
   return (0, r.jsxs)("div", {
@@ -52,7 +52,7 @@ function m(e) {
     children: [(0, r.jsxs)(c.P3F, {
       className: u.headerBar,
       onClick: () => p(e => !e),
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
         className: u.headerText,
         children: t
@@ -64,7 +64,7 @@ function m(e) {
       className: u.progressBarOuter,
       children: (0, r.jsx)(s.animated.div, {
         className: u.progressBarInner,
-        style: x
+        style: b
       })
     }), !m && n.map((e, t) => {
       let {
@@ -91,7 +91,7 @@ function m(e) {
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: u.button,
-        children: (0, r.jsx)(c.zxk, {
+        children: (0, r.jsx)(c.Button, {
           variant: "primary",
           size: "sm",
           text: l,

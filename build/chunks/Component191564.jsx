@@ -42,12 +42,12 @@ function E(e) {
     children: (0, r.jsxs)(o.mzw, {
       "data-migration-pending": true,
       className: _.modalFooter,
-      children: [null != i && (!(0, u.qS)(i) || d) || null === f ? (0, r.jsx)(o.zxk, {
+      children: [null != i && (!(0, u.qS)(i) || d) || null === f ? (0, r.jsx)(o.Button, {
         variant: "primary",
         text: O.intl.string(O.t.Jh8fJy),
         onClick: l,
         disabled: a
-      }) : null == i && (d || !(0, u.G1)(n)) ? (0, r.jsx)(o.zxk, {
+      }) : null == i && (d || !(0, u.G1)(n)) ? (0, r.jsx)(o.Button, {
         variant: "primary",
         text: O.intl.string(O.t.fYfGgI),
         onClick: () => c(null == f ? true : f.skuId)
@@ -60,7 +60,7 @@ function E(e) {
       }), !d && (0, u.G1)(n) ? (0, r.jsx)(p.Z, {
         product: n,
         onClose: s
-      }) : (0, r.jsx)(o.zxk, {
+      }) : (0, r.jsx)(o.Button, {
         variant: "secondary",
         text: O.intl.string(O.t["ETE/oK"]),
         onClick: s
@@ -102,7 +102,7 @@ function C(e) {
   }, [C, P, v]), {
     product: w,
     purchase: N
-  } = (0, d.Z)(null == S ? true : S.skuId), k = i.useRef(null), Z = b.ZP.canUseCollectibles(t), D = true === x ? (null == C ? true : C.skuId) === (null == m ? true : m.skuId) : (null == C ? true : C.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
+  } = (0, d.Z)(null == S ? true : S.skuId), Z = i.useRef(null), k = b.ZP.canUseCollectibles(t), D = true === x ? (null == C ? true : C.skuId) === (null == m ? true : m.skuId) : (null == C ? true : C.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
     I(e)
   }, [I]), U = i.useCallback(e => {
     f(), (0, a.mK)({
@@ -116,7 +116,7 @@ function C(e) {
       "data-migration-pending": true,
       separator: false,
       className: _.modalHeader,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: O.intl.string(O.t["/6nv6O"])
       }), (0, r.jsx)(o.olH, {
@@ -131,7 +131,7 @@ function C(e) {
         user: t,
         guild: n,
         pendingProfileEffect: C,
-        selectedProfileEffectRef: k,
+        selectedProfileEffectRef: Z,
         onSelect: T,
         onOpenShop: U
       }), (0, r.jsx)(y.Z, {
@@ -151,7 +151,7 @@ function C(e) {
       onOpenShop: U,
       product: w,
       purchase: N,
-      canUseCollectibles: Z,
+      canUseCollectibles: k,
       selectedProfileEffect: C,
       disableApplyButton: D,
       analyticsLocations: h

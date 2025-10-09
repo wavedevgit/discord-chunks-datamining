@@ -68,8 +68,8 @@ function h() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.INFO,
       children: "When you are done, please remember to upload the logs."
-    }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: module ? "critical-primary" : "primary",
         onClick: () => p.setState({
           isRecording: !module

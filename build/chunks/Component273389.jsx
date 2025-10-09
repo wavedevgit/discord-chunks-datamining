@@ -33,14 +33,14 @@ let c = e => {
   return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? x = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (x = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
-    children: (0, r.jsxs)(l.hE2, {
+    children: (0, r.jsxs)(l.ButtonGroup, {
       fullWidth: h && f,
-      children: [h && (0, r.jsx)(l.zxk, {
+      children: [h && (0, r.jsx)(l.Button, {
         onClick: m,
         variant: "secondary",
         disabled: c,
         text: o.intl.string(o.t["13/7kZ"])
-      }), f && (0, r.jsx)(l.zxk, {
+      }), f && (0, r.jsx)(l.Button, {
         onClick: () => {
           null != n && u(n)
         },

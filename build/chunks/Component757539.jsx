@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 757539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => u
@@ -34,12 +34,12 @@ function u(e) {
       className: d.eyebrow,
       children: t ? c.intl.string(c.t.DjWsyc) : c.intl.string(c.t.AmwmLi)
     }), (0, i.jsxs)(a.hE2, {
-      children: [(0, i.jsx)(o.zxk, {
+      children: [(0, i.jsx)(o.Button, {
         variant: b ? "primary" : "critical-secondary",
         text: b ? c.intl.string(c.t["/dbw3N"]) : c.intl.string(c.t.Uwsjn5),
         onClick: u,
         disabled: !m
-      }), true === g ? (0, i.jsx)(o.zxk, {
+      }), true === g ? (0, i.jsx)(o.Button, {
         variant: "primary",
         text: c.intl.string(c.t.KmK3q6),
         onClick: p

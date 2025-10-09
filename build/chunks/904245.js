@@ -151,7 +151,7 @@ function eM(e) {
       code: c,
       url: u
     } = e;
-    if (t === b.g.INVITE) ek({
+    if (t === b.g.INVITE) ej({
       inviteKey: c,
       channelId: n,
       messageId: r,
@@ -199,7 +199,7 @@ function eM(e) {
   })
 }
 
-function ek(e) {
+function ej(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -248,7 +248,7 @@ function ek(e) {
   }
 }
 
-function ej(e, t, n, r, i) {
+function ek(e, t, n, r, i) {
   (0, eh.Q_)(e).forEach(e => {
     let a = ea.Z.getChannel(t);
     null != a && d.ZP.trackWithMetadata(eO.rMx.GIFT_CODE_SENT, {
@@ -719,7 +719,7 @@ let eB = {
       });
       let s = () => eZ._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, true);
-      return (k.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (j.Z.recordMessageSendAttempt(e, o, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (eD.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           eD.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -831,7 +831,7 @@ let eB = {
         context: {
           location: eT.dy.GREET
         }
-      }).then(n => (j.Z.donateSentMessage(n.body.content, e), eZ.receiveMessage(e, n.body), s.Z.dispatch({
+      }).then(n => (k.Z.donateSentMessage(n.body.content, e), eZ.receiveMessage(e, n.body), s.Z.dispatch({
         type: "STICKER_TRACK_USAGE",
         stickerIds: [t]
       }), n), t => {
@@ -983,7 +983,7 @@ let eB = {
         eD.info("Queueing message to be sent LogId:".concat(o)), u.ZP.enqueue(eo, o => {
           let c = Date.now() - i;
           if (o.ok) {
-            j.Z.donateSentMessage(d, e), eZ.receiveMessage(e, o.body, true, {
+            k.Z.donateSentMessage(d, e), eZ.receiveMessage(e, o.body, true, {
               sendAnalytics: {
                 duration: c,
                 queueSize: a
@@ -1011,7 +1011,7 @@ let eB = {
                 joinRequestUserId: n
               })
             }
-            k.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
+            j.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ed.S.SendMessage,
               channelId: e
@@ -1033,7 +1033,7 @@ let eB = {
               messageId: o.body.id,
               location: null != m ? m : "chat_input",
               inviteAnalyticsMetadata: g
-            }), ej(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
+            }), ek(d, e, o.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
               type: "UPLOAD_COMPLETE",
               channelId: e,
               file: l._file,
@@ -1251,6 +1251,6 @@ let eB = {
         confirmText: eS.intl.string(eS.t.BddRzc)
       })
     }),
-    trackInvite: ek
+    trackInvite: ej
   },
   eF = eZ

@@ -76,7 +76,7 @@ function E(e, t, n) {
         }
         case o.jj.USER_COMMUNICATION_DISABLED: {
           let e = null != (f = null == t || null == (r = t.metadata) ? true : r.durationSeconds) ? f : 0,
-            n = (0, s.L9)(e);
+            n = (0, s.getFriendlyDurationString)(e);
           if (null == n) return null;
           return c.intl.format(c.t.AFmbfX, {
             duration: n

@@ -24,8 +24,8 @@ function f(e) {
     guild: c,
     canManageGuild: f,
     canViewAuditLog: h,
-    canManageRoles: x,
-    canManageBans: b,
+    canManageRoles: b,
+    canManageBans: x,
     canAccessMembersPage: j,
     canViewGuildAnalytics: v,
     isOwner: _,
@@ -77,7 +77,7 @@ function f(e) {
   }), E.push({
     section: m,
     label: u.intl.string(u.t.m6lkGx)
-  }), E.push(g(d.pNK.EMOJI, N)), E.push(g(d.pNK.STICKERS, N)), E.push(g(d.pNK.SOUNDBOARD, N))), (f || x || j || C) && (E.push({
+  }), E.push(g(d.pNK.EMOJI, N)), E.push(g(d.pNK.STICKERS, N)), E.push(g(d.pNK.SOUNDBOARD, N))), (f || b || j || C) && (E.push({
     section: p
   }), E.push({
     section: m,
@@ -89,7 +89,7 @@ function f(e) {
     label: u.intl.string(u.t.wF3KJy)
   }), E.push(g(d.pNK.INTEGRATIONS, N)), E.push(g(d.pNK.APP_DIRECTORY, N));
   let I = !c.features.has(d.oNc.COMMUNITY) && ((0, l.Nb)(c.id) || (0, l.ze)(c.id));
-  (f || h || b || I) && (E.push({
+  (f || h || x || I) && (E.push({
     section: p
   }), E.push({
     section: m,

@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk161270 = require("./161270.js");
-let B = (0, Chunk313201.hQ)(),
+let z = (0, Chunk313201.hQ)(),
   E = (0, Chunk313201.hQ)(),
   P = (0, Chunk624138.Mg)(Chunk477690.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
 
@@ -42,14 +42,14 @@ function R(e) {
   var t;
   let {
     emojiId: n,
-    emojiName: l,
-    className: r
-  } = e, o = (0, s.e7)([g.ZP], () => null != n ? g.ZP.getCustomEmojiById(n) : true);
+    emojiName: r,
+    className: l
+  } = e, o = (0, s.e7)([j.ZP], () => null != n ? j.ZP.getCustomEmojiById(n) : true);
   return (0, i.jsx)(h.Z, {
     emojiId: n,
-    emojiName: l,
+    emojiName: r,
     animated: null != (t = null == o ? true : o.animated) && t,
-    className: r
+    className: l
   })
 }
 
@@ -57,39 +57,39 @@ function O(e) {
   let {
     icon: t,
     children: n,
-    checked: l,
-    disabled: r = false,
+    checked: r,
+    disabled: l = false,
     onChange: a
-  } = e, s = l || r;
+  } = e, s = r || l;
   return (0, i.jsxs)("label", {
-    className: o()(M.row, {
-      [M.checked]: s,
-      [M.disabled]: r
+    className: o()(B.row, {
+      [B.checked]: s,
+      [B.disabled]: l
     }),
     children: [(0, i.jsx)("div", {
-      className: M.rowIconWrapper,
+      className: B.rowIconWrapper,
       children: t
     }), (0, i.jsx)("div", {
-      className: M.rowText,
+      className: B.rowText,
       children: n
     }), (0, i.jsxs)("div", {
-      className: M.rowCheckbox,
+      className: B.rowCheckbox,
       children: [(0, i.jsx)(m.tEY, {
         children: (0, i.jsx)("input", {
           type: "checkbox",
           checked: s,
-          disabled: r,
-          className: M.checkboxInput,
+          disabled: l,
+          className: B.checkboxInput,
           onChange: function(e) {
             a(e.target.checked)
           }
         })
       }), (0, i.jsx)("div", {
-        className: M.checkboxDisplay,
+        className: B.checkboxDisplay,
         children: (0, i.jsx)(m.dz2, {
           size: "md",
           color: "currentColor",
-          className: M.checkboxIcon,
+          className: B.checkboxIcon,
           "aria-hidden": true
         })
       })]
@@ -101,28 +101,28 @@ function D(e) {
   let {
     title: t,
     selectAllText: n,
-    benefits: l,
-    dupeBenefits: r,
+    benefits: r,
+    dupeBenefits: l,
     selectedBenefits: o,
     onToggleBenefit: a
-  } = e, s = l.every(e => o.has(e));
-  return l.length > 0 ? (0, i.jsxs)("div", {
-    className: M.section,
-    children: [(0, i.jsx)(m.X6q, {
+  } = e, s = r.every(e => o.has(e));
+  return r.length > 0 ? (0, i.jsxs)("div", {
+    className: B.section,
+    children: [(0, i.jsx)(m.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: t
-    }), l.length - r.size > 1 && (0, i.jsx)("div", {
-      className: M.list,
+    }), r.length - l.size > 1 && (0, i.jsx)("div", {
+      className: B.list,
       children: (0, i.jsx)(O, {
         icon: (0, i.jsx)(m.avL, {
           size: "md",
           color: "currentColor",
-          className: M.rowIcon
+          className: B.rowIcon
         }),
         checked: s,
         onChange: function(e) {
-          for (let t of l) r.has(t) || a(t, e)
+          for (let t of r) l.has(t) || a(t, e)
         },
         children: (0, i.jsx)(m.Text, {
           color: "header-primary",
@@ -131,15 +131,15 @@ function D(e) {
         })
       })
     }), (0, i.jsx)("div", {
-      className: M.list,
-      children: l.map(e => (0, i.jsxs)(O, {
+      className: B.list,
+      children: r.map(e => (0, i.jsxs)(O, {
         icon: (0, i.jsx)(R, {
           emojiId: e.emoji_id,
           emojiName: e.emoji_name,
-          className: M.rowIcon
+          className: B.rowIcon
         }),
         checked: o.has(e),
-        disabled: r.has(e),
+        disabled: l.has(e),
         onChange: t => a(e, t),
         children: [(0, i.jsx)(m.Text, {
           color: "header-primary",
@@ -159,11 +159,11 @@ function L(e) {
   let {
     transitionState: t,
     fromSubscriptionListing: n,
-    existingChannelBenefits: r,
+    existingChannelBenefits: l,
     existingIntangibleBenefits: o,
     onSubmit: s,
     onClose: d
-  } = e, h = n.role_benefits.benefits, [u, x] = l.useState(() => new Set(h)), f = l.useMemo(() => h.filter(k.rC), [h]), j = (0, S.Z)(f), g = l.useMemo(() => h.filter(k.lL), [h]), p = l.useMemo(() => new Set(j.filter(e => r.some(t => t.ref_id === e.ref_id))), [j, r]), _ = l.useMemo(() => new Set(g.filter(e => o.some(t => (0, c.Z)(e, t)))), [o, g]);
+  } = e, h = n.role_benefits.benefits, [u, x] = r.useState(() => new Set(h)), f = r.useMemo(() => h.filter(k.rC), [h]), g = (0, S.Z)(f), j = r.useMemo(() => h.filter(k.lL), [h]), p = r.useMemo(() => new Set(g.filter(e => l.some(t => t.ref_id === e.ref_id))), [g, l]), _ = r.useMemo(() => new Set(j.filter(e => o.some(t => (0, c.Z)(e, t)))), [o, j]);
 
   function v(e, t) {
     x(n => {
@@ -182,33 +182,33 @@ function L(e) {
     children: (0, i.jsxs)(a.Modal, {
       transitionState: t,
       onClose: d,
-      title: z.intl.format(z.t["7zpiYG"], {
+      title: M.intl.format(M.t["7zpiYG"], {
         tierName: n.name
       }).toString(),
       actions: [{
         variant: "secondary",
-        text: z.intl.string(z.t["ETE/oK"]),
+        text: M.intl.string(M.t["ETE/oK"]),
         onClick: d
       }, {
         variant: "primary",
-        text: z.intl.string(z.t["27a219"]),
+        text: M.intl.string(M.t["27a219"]),
         disabled: 0 === u.size,
         onClick: b
       }],
-      children: [0 === j.length && 0 === g.length && (0, i.jsx)(m.Text, {
+      children: [0 === g.length && 0 === j.length && (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
-        children: z.intl.string(z.t["I+16xs"])
+        children: M.intl.string(M.t["I+16xs"])
       }), (0, i.jsx)(D, {
-        title: z.intl.string(z.t.S2kKzM),
-        selectAllText: z.intl.string(z.t["5Q/fLC"]),
-        benefits: j,
+        title: M.intl.string(M.t.S2kKzM),
+        selectAllText: M.intl.string(M.t["5Q/fLC"]),
+        benefits: g,
         dupeBenefits: p,
         selectedBenefits: u,
         onToggleBenefit: v
       }), (0, i.jsx)(D, {
-        title: z.intl.string(z.t.RdwKw8),
-        selectAllText: z.intl.string(z.t.aJPLVF),
-        benefits: g,
+        title: M.intl.string(M.t.RdwKw8),
+        selectAllText: M.intl.string(M.t.aJPLVF),
+        benefits: j,
         dupeBenefits: _,
         selectedBenefits: u,
         onToggleBenefit: v
@@ -217,23 +217,23 @@ function L(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   var t;
   let {
     guildId: n,
-    role: l,
-    channelCount: r,
+    role: r,
+    channelCount: l,
     onSelect: o
   } = e, a = (0, p.p9)({
     guildId: n,
-    roleId: l.id,
+    roleId: r.id,
     size: P
   });
   return (0, i.jsxs)(m.P3F, {
-    className: M.roleRow,
+    className: B.roleRow,
     onClick: o,
     children: [(0, i.jsx)("div", {
-      className: M.rowIconWrapper,
+      className: B.rowIconWrapper,
       children: null != a ? (0, i.jsx)(f.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -255,25 +255,25 @@ function F(e) {
         size: "custom",
         width: 23,
         height: 23,
-        color: null != (t = l.colorString) ? t : Z.Pbq,
-        className: M.roleRowIconDefault
+        color: null != (t = r.colorString) ? t : Z.Pbq,
+        className: B.roleRowIconDefault
       })
     }), (0, i.jsxs)("div", {
-      className: M.rowText,
+      className: B.rowText,
       children: [(0, i.jsx)(m.Text, {
         color: "header-primary",
         variant: "text-md/normal",
-        className: M.__invalid_benefitTitle,
-        children: l.name
+        className: B.__invalid_benefitTitle,
+        children: r.name
       }), (0, i.jsx)(m.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: z.intl.format(z.t["2KzH8/"], {
-          num: r
+        children: M.intl.format(M.t["2KzH8/"], {
+          num: l
         })
       })]
     }), (0, i.jsx)("div", {
-      className: M.rowCheckbox,
+      className: B.rowCheckbox,
       children: (0, i.jsx)(I.Z, {
         direction: I.Z.Directions.RIGHT
       })
@@ -281,11 +281,11 @@ function F(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, r = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, s.e7)([b.Z], () => b.Z.getCategories(t.id)), a = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
+  } = e, l = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, s.e7)([b.Z], () => b.Z.getCategories(t.id)), a = r.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
@@ -295,7 +295,7 @@ function H(e) {
       channel: t
     } = e;
     return t
-  })), [o]), c = l.useMemo(() => r.flatMap(e => {
+  })), [o]), c = r.useMemo(() => l.flatMap(e => {
     var t;
     if ((0, v.fI)(e) || (null == (t = e.tags) ? true : t.subscription_listing_id) != null || (0, v._N)(e, Z.TC2)) return [];
     let n = (0, y.Z)(a, e).length;
@@ -303,10 +303,10 @@ function H(e) {
       role: e,
       channelCount: n
     } : []
-  }), [r, a]);
+  }), [l, a]);
   return c.length > 0 ? (0, i.jsx)("div", {
-    className: M.list,
-    children: c.map(e => (0, i.jsx)(F, {
+    className: B.list,
+    children: c.map(e => (0, i.jsx)(H, {
       guildId: t.id,
       role: e.role,
       channelCount: e.channelCount,
@@ -314,36 +314,7 @@ function H(e) {
     }, e.role.id))
   }) : (0, i.jsx)(m.Text, {
     variant: "text-md/normal",
-    children: z.intl.string(z.t.u09gKi)
-  })
-}
-
-function q(e) {
-  let {
-    onClose: t,
-    guildId: n,
-    onSelect: l
-  } = e, r = (0, s.e7)([w.Z], () => w.Z.getGuild(n));
-  return null == r ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(m.xBx, {
-      "data-migration-pending": true,
-      children: [(0, i.jsx)(m.X6q, {
-        id: B,
-        variant: "heading-md/semibold",
-        children: z.intl.string(z.t["3JrZ/P"])
-      }), (0, i.jsx)(m.olH, {
-        "data-migration-pending": true,
-        className: M.modalCloseButton,
-        onClick: t
-      })]
-    }), (0, i.jsx)(m.hzk, {
-      "data-migration-pending": true,
-      className: M.modalContent,
-      children: (0, i.jsx)(H, {
-        guild: r,
-        onSelect: l
-      })
-    })]
+    children: M.intl.string(M.t.u09gKi)
   })
 }
 
@@ -351,12 +322,41 @@ function K(e) {
   let {
     onClose: t,
     guildId: n,
-    role: r,
+    onSelect: r
+  } = e, l = (0, s.e7)([w.Z], () => w.Z.getGuild(n));
+  return null == l ? null : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(m.xBx, {
+      "data-migration-pending": true,
+      children: [(0, i.jsx)(m.Heading, {
+        id: z,
+        variant: "heading-md/semibold",
+        children: M.intl.string(M.t["3JrZ/P"])
+      }), (0, i.jsx)(m.olH, {
+        "data-migration-pending": true,
+        className: B.modalCloseButton,
+        onClick: t
+      })]
+    }), (0, i.jsx)(m.hzk, {
+      "data-migration-pending": true,
+      className: B.modalContent,
+      children: (0, i.jsx)(F, {
+        guild: l,
+        onSelect: r
+      })
+    })]
+  })
+}
+
+function G(e) {
+  let {
+    onClose: t,
+    guildId: n,
+    role: l,
     onCancel: o,
     onImport: a
-  } = e, s = l.useRef(r);
-  null != r && (s.current = r);
-  let c = null != r ? r : s.current,
+  } = e, s = r.useRef(l);
+  null != l && (s.current = l);
+  let c = null != l ? l : s.current,
     d = (0, u.Z)(() => {
       let e = b.Z.getCategories(n);
       return e._categories.flatMap(t => e[t.channel.id].filter(e => {
@@ -371,11 +371,11 @@ function K(e) {
         return t
       }))
     }),
-    h = l.useMemo(() => (0, y.Z)(d, c), [d, c]),
-    [f, j] = l.useState(() => new Set(h.map(e => e.id)));
+    h = r.useMemo(() => (0, y.Z)(d, c), [d, c]),
+    [f, g] = r.useState(() => new Set(h.map(e => e.id)));
 
-  function g(e, t) {
-    j(n => {
+  function j(e, t) {
+    g(n => {
       let i = new Set(n);
       return t ? i.add(e) : i.delete(e), i
     })
@@ -384,25 +384,25 @@ function K(e) {
     onSubmit: function(e) {
       e.preventDefault(), a(h.map(e => e.id).filter(e => f.has(e))), t()
     },
-    className: M.slideForm,
+    className: B.slideForm,
     children: [(0, i.jsxs)(m.xBx, {
       "data-migration-pending": true,
-      children: [(0, i.jsx)(m.X6q, {
+      children: [(0, i.jsx)(m.Heading, {
         id: E,
         variant: "heading-md/semibold",
-        children: z.intl.format(z.t.iuPodH, {
+        children: M.intl.format(M.t.iuPodH, {
           roleName: c.name
         })
       }), (0, i.jsx)(m.olH, {
         "data-migration-pending": true,
-        className: M.modalCloseButton,
+        className: B.modalCloseButton,
         onClick: t
       })]
     }), (0, i.jsxs)(m.hzk, {
       "data-migration-pending": true,
-      className: M.modalContent,
+      className: B.modalContent,
       children: [h.length > 1 && (0, i.jsx)("div", {
-        className: M.list,
+        className: B.list,
         children: (0, i.jsx)(O, {
           icon: (0, i.jsx)(m.avL, {
             size: "md",
@@ -410,22 +410,22 @@ function K(e) {
           }),
           checked: f.size === h.length,
           onChange: function(e) {
-            for (let t of h) g(t.id, e)
+            for (let t of h) j(t.id, e)
           },
           children: (0, i.jsx)(m.Text, {
             color: "header-primary",
             variant: "text-md/normal",
-            children: z.intl.string(z.t["5Q/fLC"])
+            children: M.intl.string(M.t["5Q/fLC"])
           })
         })
       }), (0, i.jsx)("div", {
-        className: M.list,
+        className: B.list,
         children: h.map(e => {
           var t;
           let n = null != (t = (0, x.Th)(e.type)) ? t : m.VL1;
           return (0, i.jsx)(O, {
             icon: (0, i.jsx)("div", {
-              className: M.rowIcon,
+              className: B.rowIcon,
               children: (0, i.jsx)(n, {
                 size: "custom",
                 color: "currentColor",
@@ -434,11 +434,11 @@ function K(e) {
               })
             }),
             checked: f.has(e.id),
-            onChange: t => g(e.id, t),
+            onChange: t => j(e.id, t),
             children: (0, i.jsx)(m.Text, {
               color: "header-primary",
               variant: "text-md/normal",
-              className: M.__invalid_benefitTitle,
+              className: B.__invalid_benefitTitle,
               children: e.name
             })
           }, e.id)
@@ -446,15 +446,15 @@ function K(e) {
       })]
     }), (0, i.jsx)(m.mzw, {
       "data-migration-pending": true,
-      children: (0, i.jsxs)(m.hE2, {
+      children: (0, i.jsxs)(m.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, i.jsx)(m.zxk, {
+        children: [(0, i.jsx)(m.Button, {
           variant: "primary",
-          text: z.intl.string(z.t["1j8So6"]),
+          text: M.intl.string(M.t["1j8So6"]),
           type: "submit"
-        }), (0, i.jsx)(m.zxk, {
+        }), (0, i.jsx)(m.Button, {
           variant: "secondary",
-          text: z.intl.string(z.t["ETE/oK"]),
+          text: M.intl.string(M.t["ETE/oK"]),
           onClick: o
         })]
       })
@@ -466,13 +466,13 @@ function W(e) {
   let {
     transitionState: t,
     guildId: n,
-    onClose: r,
+    onClose: l,
     onImport: o
-  } = e, [a, s] = l.useState();
+  } = e, [a, s] = r.useState();
   return (0, i.jsx)(m.Y0X, {
     "data-migration-pending": true,
     transitionState: t,
-    "aria-labelledby": null == a ? B : E,
+    "aria-labelledby": null == a ? z : E,
     parentComponent: "ImportBenefitsModal",
     children: (0, i.jsxs)(m.MyZ, {
       contentDisplay: "flex",
@@ -480,15 +480,15 @@ function W(e) {
       width: 440,
       children: [(0, i.jsx)(m.Mi4, {
         id: 0,
-        children: (0, i.jsx)(q, {
-          onClose: r,
+        children: (0, i.jsx)(K, {
+          onClose: l,
           guildId: n,
           onSelect: s
         })
       }), (0, i.jsx)(m.Mi4, {
         id: 1,
-        children: (0, i.jsx)(K, {
-          onClose: r,
+        children: (0, i.jsx)(G, {
+          onClose: l,
           guildId: n,
           role: a,
           onCancel: () => s(true),

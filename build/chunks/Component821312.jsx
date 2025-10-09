@@ -1,14 +1,12 @@
-/** Chunk was on 58175 **/
-/** chunk id: 821312, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 61536 **/
+/** chunk id: 821312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk709867 = require("./709867.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk177862 = require("./177862.js"),
@@ -16,90 +14,66 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk882313 = require("./882313.js");
 
-function f(t) {
+function p(e) {
   let {
-    guildId: e,
+    guildId: t,
     transitionState: n,
-    onClose: l
-  } = t, [f, O] = i.useState([]), [h, _] = i.useState(), j = [{
-    text: b.intl.string(b.t["//3pvr"]),
-    value: u.C2.DM_SPAM
+    onClose: p
+  } = e, [f, g] = i.useState([]), [_, O] = i.useState(), h = [{
+    label: d.intl.string(d.t["//3pvr"]),
+    value: c.C2.DM_SPAM
   }, {
-    text: b.intl.string(b.t.SdVsio),
-    value: u.C2.MENTION_SPAM
+    label: d.intl.string(d.t.SdVsio),
+    value: c.C2.MENTION_SPAM
   }, {
-    text: b.intl.string(b.t.uTiSVF),
-    value: u.C2.CHANNEL_SPAM
+    label: d.intl.string(d.t.uTiSVF),
+    value: c.C2.CHANNEL_SPAM
   }, {
-    text: b.intl.string(b.t.GQczU1),
-    value: u.C2.SUS_NEW_MEMBERS
+    label: d.intl.string(d.t.GQczU1),
+    value: c.C2.SUS_NEW_MEMBERS
   }, {
-    text: b.intl.string(b.t.AAgqy8),
-    value: u.C2.CHANGING_SETTINGS
+    label: d.intl.string(d.t.AAgqy8),
+    value: c.C2.CHANGING_SETTINGS
   }, {
-    text: b.intl.string(b.t.ryPKb2),
-    value: u.C2.OTHER
-  }];
-
-  function x(t) {
-    f.includes(t) ? O(e => e.filter(e => e !== t)) : O(e => [...e, t])
-  }
-  return null == e ? (l(), null) : (0, r.jsx)(s.Modal, {
+    label: d.intl.string(d.t.ryPKb2),
+    value: c.C2.OTHER
+  }], y = i.useCallback(e => {
+    g(e)
+  }, []);
+  return null == t ? (p(), null) : (0, r.jsx)(l.Modal, {
     transitionState: n,
-    title: b.intl.string(b.t.f5hd9P),
+    title: d.intl.string(d.t.f5hd9P),
     actions: [{
-      text: b.intl.string(b.t["ETE/oK"]),
-      onClick: l,
+      text: d.intl.string(d.t["ETE/oK"]),
+      onClick: p,
       variant: "secondary"
     }, {
-      text: b.intl.string(b.t.nAt0rK),
+      text: d.intl.string(d.t.nAt0rK),
       onClick: function() {
-        (0, d.yw)(p.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
+        (0, s.yw)(u.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
           raid_lockdown_feedback_type: f,
-          raid_lockdown_feedback_other_reason: h,
-          guild_id: e
-        }), l()
+          raid_lockdown_feedback_other_reason: _,
+          guild_id: t
+        }), p()
       },
       disabled: 0 === f.length
     }],
-    onClose: l,
-    children: (0, r.jsx)(c.Kqy, {
+    onClose: p,
+    children: (0, r.jsxs)(o.Kqy, {
       gap: 8,
-      children: j.map(t => {
-        let {
-          text: e,
-          value: n
-        } = t;
-        return (0, r.jsxs)("div", {
-          className: a()(g.optionContainer, {
-            [g.optionContainerOther]: n === u.C2.OTHER
-          }),
-          children: [(0, r.jsxs)(c.P3F, {
-            className: g.optionText,
-            onClick: () => x(n),
-            children: [(0, r.jsx)("div", {
-              children: (0, r.jsx)(o.$q, {
-                type: o.M0.INVERTED,
-                size: 20,
-                value: f.includes(n),
-                onChange: () => x(n)
-              })
-            }), (0, r.jsx)(c.Text, {
-              variant: "text-md/medium",
-              color: f.includes(n) ? "interactive-active" : "interactive-normal",
-              children: e
-            })]
-          }), n === u.C2.OTHER && f.includes(u.C2.OTHER) && (0, r.jsx)("div", {
-            className: g.textboxContainer,
-            children: (0, r.jsx)(c.Kx8, {
-              placeholder: b.intl.string(b.t["PAM+JS"]),
-              onChange: _,
-              value: h,
-              autoFocus: true
-            })
-          })]
-        }, n)
-      })
+      children: [(0, r.jsx)(a.c, {
+        selectedValues: f,
+        onChange: y,
+        options: h
+      }), f.includes(c.C2.OTHER) && (0, r.jsx)("div", {
+        className: b.textboxContainer,
+        children: (0, r.jsx)(o.Kx8, {
+          placeholder: d.intl.string(d.t["PAM+JS"]),
+          onChange: O,
+          value: _,
+          autoFocus: true
+        })
+      })]
     })
   })
 }

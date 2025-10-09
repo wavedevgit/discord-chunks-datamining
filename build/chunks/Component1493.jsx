@@ -1,7 +1,7 @@
 /** Chunk was on 18259 **/
-/** chunk id: 1493, original params: e,t,r (module,exports,require) **/
+/** chunk id: 1493, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => l
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,72 +9,72 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk30856 = require("./30856.js");
 
-function o(e) {
+function l(t) {
   let {
-    onConfirm: t,
-    onClose: r,
-    validationText: o,
+    onConfirm: e,
+    onClose: n,
+    validationText: l,
     errorText: c,
     header: d,
-    className: x,
-    cancelText: u,
-    confirmText: h,
-    instructionText: p,
+    className: u,
+    cancelText: x,
+    confirmText: p,
+    instructionText: h,
     transitionState: m,
     children: j
-  } = e, [b, f] = a.useState(""), [v, C] = a.useState(null), g = a.Children.count(j) > 0 ? (0, n.jsx)(i.Zbd, {
+  } = t, [b, f] = a.useState(""), [g, v] = a.useState(null), C = a.Children.count(j) > 0 ? (0, r.jsx)(i.Zbd, {
     type: i.Zbd.Types.WARNING,
-    className: l.card,
-    children: (0, n.jsx)(i.Text, {
+    className: o.card,
+    children: (0, r.jsx)(i.Text, {
       color: "currentColor",
       variant: "text-md/normal",
       children: j
     })
   }) : null;
-  return (0, n.jsx)(i.Y0X, {
+  return (0, r.jsx)(i.Y0X, {
     transitionState: m,
-    className: x,
+    className: u,
     parentComponent: "TextEntryConfirm",
-    children: (0, n.jsxs)("form", {
-      onSubmit: function(e) {
-        if (e.preventDefault(), b.toLowerCase() !== o.toLowerCase()) return void C(c);
-        null == t || t(), r()
+    children: (0, r.jsxs)("form", {
+      onSubmit: function(t) {
+        if (t.preventDefault(), b.toLowerCase() !== l.toLowerCase()) return void v(c);
+        null == e || e(), n()
       },
-      children: [(0, n.jsx)(i.xBx, {
+      children: [(0, r.jsx)(i.xBx, {
         separator: false,
-        children: (0, n.jsx)(i.X6q, {
+        children: (0, r.jsx)(i.Heading, {
           variant: "heading-lg/semibold",
           children: d
         })
-      }), (0, n.jsxs)(i.hzk, {
-        children: [g, (0, n.jsxs)("div", {
-          className: l.spacing,
-          children: [(0, n.jsx)(i.oil, {
+      }), (0, r.jsxs)(i.hzk, {
+        children: [C, (0, r.jsxs)("div", {
+          className: o.spacing,
+          children: [(0, r.jsx)(i.oil, {
             id: "text-entry-confirm",
             type: "text",
-            label: p,
+            label: h,
             value: b,
             autoComplete: "off",
             onChange: f,
             autoFocus: true
-          }), null != v && "" !== v ? (0, n.jsx)(i.Text, {
+          }), null != g && "" !== g ? (0, r.jsx)(i.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
-            className: l.error,
-            children: v
+            className: o.error,
+            children: g
           }) : null]
         })]
-      }), (0, n.jsx)(i.mzw, {
-        children: (0, n.jsxs)(i.hE2, {
+      }), (0, r.jsx)(i.mzw, {
+        children: (0, r.jsxs)(i.ButtonGroup, {
           direction: "horizontal-reverse",
-          children: [(0, n.jsx)(i.zxk, {
+          children: [(0, r.jsx)(i.Button, {
             variant: "critical-primary",
-            text: null != h ? h : s.intl.string(s.t["cY+Ooa"]),
+            text: null != p ? p : s.intl.string(s.t["cY+Ooa"]),
             type: "submit"
-          }), (0, n.jsx)(i.zxk, {
+          }), (0, r.jsx)(i.Button, {
             variant: "secondary",
-            text: null != u ? u : s.intl.string(s.t["ETE/oK"]),
-            onClick: r
+            text: null != x ? x : s.intl.string(s.t["ETE/oK"]),
+            onClick: n
           })]
         })
       })]

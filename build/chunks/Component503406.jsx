@@ -24,49 +24,49 @@ let h = e => {
   } = e, [s, h] = l.useState(""), [_, v] = l.useState(null), x = l.useCallback(async () => {
     if (null != n) try {
       let e = await d.Z.verifyCode(s, n, t);
-      e.guild && (null == i || i(), (0, m.uL)(f.Z5c.CHANNEL(e.guild.id)))
+      e.guild && (null == i || i(), (0, m.uL)(g.Z5c.CHANNEL(e.guild.id)))
     } catch (e) {
       v(new u.Hx(e))
     }
   }, [s, t, n, i]), N = o().throttle(() => {
     d.Z.sendVerificationEmail(t, true, n)
   }, 1e3), E = async e => {
-    null != s && "" !== s && e.charCode === f.yXg.ENTER && await x()
+    null != s && "" !== s && e.charCode === g.yXg.ENTER && await x()
   };
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: p.container,
     children: [(0, r.jsx)("div", {
-      className: g.topImage
-    }), (0, r.jsx)(c.X6q, {
-      className: a()(g.centerText, g.header),
+      className: p.topImage
+    }), (0, r.jsx)(c.Heading, {
+      className: a()(p.centerText, p.header),
       variant: "heading-xl/semibold",
-      children: p.intl.string(p.t.SJ3Lxc)
+      children: f.intl.string(f.t.SJ3Lxc)
     }), (0, r.jsx)("div", {
-      className: g.descriptionWidth,
+      className: p.descriptionWidth,
       children: (0, r.jsx)(c.Text, {
-        className: g.centerText,
+        className: p.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: p.intl.format(p.t["b+W0oq"], {
+        children: f.intl.format(f.t["b+W0oq"], {
           email: t,
           onClick: N
         })
       })
     }), (0, r.jsx)("div", {
-      className: g.formItem,
+      className: p.formItem,
       children: (0, r.jsx)(c.oil, {
-        label: p.intl.string(p.t.rpWT1t),
+        label: f.intl.string(f.t.rpWT1t),
         onKeyPress: E,
         onChange: e => {
           null != e && "" !== e && h(e)
         },
         error: null == _ ? true : _.getAnyErrorMessage()
       })
-    }), (0, r.jsx)(c.zxk, {
+    }), (0, r.jsx)(c.Button, {
       fullWidth: true,
       onClick: x,
       variant: "primary",
-      text: p.intl.string(p.t.geKm7u)
+      text: f.intl.string(f.t.geKm7u)
     })]
   })
 }

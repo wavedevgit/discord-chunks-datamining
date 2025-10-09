@@ -36,11 +36,11 @@ function w(e) {
     transitionState: n,
     onClose: l,
     guildId: w
-  } = e, I = (0, d.Dt)(), S = (0, c.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, b.Z)(null == S ? true : S.id), T = (0, x.ZP)(w), L = i.useRef(h.ZP.ackMessageId(w, N.W.GUILD_EVENT)), _ = (0, C.Z)();
+  } = e, I = (0, d.Dt)(), S = (0, c.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, b.Z)(null == S ? true : S.id), T = (0, x.ZP)(w), L = i.useRef(h.ZP.ackMessageId(w, P.W.GUILD_EVENT)), _ = (0, C.Z)();
   return i.useEffect(() => {
     T.forEach(e => f.Z.getGuildEventUserCounts(w, e.id, [])), f.Z.getGuildEventsForCurrentUser(w)
   }, [T, w]), (0, u.ZP)(() => {
-    m.default.track(k.rMx.OPEN_MODAL, {
+    m.default.track(N.rMx.OPEN_MODAL, {
       type: Z.zw,
       guild_id: w,
       guild_events_count: T.length
@@ -50,7 +50,7 @@ function w(e) {
       g.Z.requestMember(w, e)
     })
   }, [w, T]), i.useEffect(() => {
-    null != w && (0, s.Ju)(w, N.W.GUILD_EVENT)
+    null != w && (0, s.Ju)(w, P.W.GUILD_EVENT)
   }, [w]), (0, r.jsxs)(o.Y0X, {
     size: o.CgR.MEDIUM,
     transitionState: n,
@@ -64,24 +64,24 @@ function w(e) {
         size: "md",
         color: "currentColor",
         className: E.icon
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(o.Heading, {
         id: I,
         variant: "heading-md/semibold",
-        children: T.length > 0 ? P.intl.formatToPlainString(P.t.IBdqSk, {
+        children: T.length > 0 ? k.intl.formatToPlainString(k.t.IBdqSk, {
           number: T.length
-        }) : P.intl.string(P.t.tlopTE)
+        }) : k.intl.string(k.t.tlopTE)
       }), D && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: E.divider,
           children: "|"
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
           onClick: () => {
             (0, o.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([t.e("36599"), t.e("49049"), t.e("61"), t.e("55324")]).then(t.bind(t, 779250));
+              } = await Promise.all([t.e("49049"), t.e("36599"), t.e("61"), t.e("55324")]).then(t.bind(t, 779250));
               return n => {
                 var t, i;
                 return (0, r.jsx)(e, (t = function(e) {
@@ -116,12 +116,12 @@ function w(e) {
               }
             }, _)
           },
-          text: P.intl.string(P.t["60lJ0N"])
+          text: k.intl.string(k.t["60lJ0N"])
         })]
       }), (0, r.jsx)(o.P3F, {
         onClick: l,
         className: E.iconButton,
-        "aria-label": P.intl.string(P.t.cpT0Cg),
+        "aria-label": k.intl.string(k.t.cpT0Cg),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",

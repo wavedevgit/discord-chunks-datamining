@@ -17,7 +17,7 @@ let c = e => {
     className: s.previewBackground,
     children: (0, r.jsxs)("div", {
       className: s.previewCard,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.Heading, {
         className: s.heading,
         variant: "heading-md/semibold",
         children: o.intl.string(o.t["5wnpFx"])

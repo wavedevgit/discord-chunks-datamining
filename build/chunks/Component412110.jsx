@@ -23,24 +23,24 @@ function o(e, t, o) {
       (0, a.B)(i.intl.string(i.t.MeXDxs), i.t["5q146O"]);
       break;
     case l.evJ.MONETIZATION_TERMS_NOT_ACCEPTED:
-      (0, n.ZD)(async () => {
+      (0, r.ZD)(async () => {
         let {
           default: e
         } = await A.e("31835").then(A.bind(A, 393809));
-        return A => (0, r.jsx)(e, function(e) {
+        return A => (0, n.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var A = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(A);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
+              n = Object.keys(A);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
               return Object.getOwnPropertyDescriptor(A, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = A[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), n.forEach(function(t) {
+              var n;
+              n = A[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = n
             })
           }
           return e

@@ -40,7 +40,7 @@ function _(e) {
     })
   }, []);
   let k = (0, i.jsxs)(i.Fragment, {
-      children: [d || v !== m.O.Tips && v !== m.O.Customize ? null : (0, i.jsx)(a.eee, {
+      children: [d || v !== m.O.Tips && v !== m.O.Customize ? null : (0, i.jsx)(a.Anchor, {
         className: g.dismiss,
         href: "https://dis.gd/better-muting",
         children: (0, i.jsx)(a.Text, {
@@ -161,7 +161,7 @@ function b(e) {
     className: g.content,
     children: [(0, i.jsxs)("div", {
       className: g.header,
-      children: [(0, i.jsx)(a.X6q, {
+      children: [(0, i.jsx)(a.Heading, {
         variant: "heading-xl/bold",
         color: "header-primary",
         children: j.intl.string(j.t["zBC2+f"])

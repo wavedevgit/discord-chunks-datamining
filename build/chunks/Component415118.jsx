@@ -1,7 +1,7 @@
 /** Chunk was on 26976 **/
 /** chunk id: 415118, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -34,36 +34,36 @@ var Chunk481060 = require("./481060.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     showModalItems: o = true,
     showMediaItems: a = false,
     showChatItems: u = true,
-    context: T,
-    onSelect: U
-  } = e, D = {
+    context: _,
+    onSelect: T
+  } = e, U = {
     page: A.ZY5.GUILD_CHANNEL,
     section: A.jXE.CHAT_USERNAME,
     object: A.qAy.CONTEXT_MENU_ITEM
   }, L = (0, M.Z)({
     userId: t.id,
     guildId: n
-  }), w = (0, P.Z)(t, n, T), k = (0, p.Z)(t.id, T), R = (0, N.Z)(t.id), B = (0, v.Z)({
+  }), w = (0, P.Z)(t, n, _), k = (0, p.Z)(t.id, _), R = (0, N.Z)(t.id), B = (0, v.Z)({
     user: t,
-    context: T
+    context: _
   }), q = (0, m.Z)({
     user: t,
     guildId: n,
-    context: T
+    context: _
   }), V = (0, f.Z)({
     user: t
   }), G = (0, x.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
     userId: t.id,
-    analyticsLocation: D,
-    context: T
+    analyticsLocation: U,
+    context: _
   }), H = (0, g.Z)({
     user: t,
     guildId: n
@@ -86,13 +86,13 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     location: "GuildUserContextMenu"
   }), ee = (0, O.Z)(t, n), et = (0, I.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnJ"])
+    label: D.intl.string(D.t["/AXYnJ"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": _.intl.string(_.t.liqwPD),
-    onSelect: U,
+    "aria-label": D.intl.string(D.t.liqwPD),
+    onSelect: T,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
         children: [o && L, u && w, k, B, o && q, o && V, R]

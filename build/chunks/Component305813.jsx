@@ -74,19 +74,19 @@ function A(e) {
     selectedColors: w,
     onClose: B
   } = e, Z = (0, c.ZP)(), M = (0, s.wjy)(Z), [G, Y] = (0, o.useState)(M), H = (0, S.ZP)(t.id, null), {
-    bannerSrc: z
+    bannerSrc: F
   } = (0, C.Z)({
     displayProfile: H,
     size: 413,
     canAnimate: false
-  }), F = (0, a.cj)([v.Z, u.Z], () => null == n ? v.Z.getAllPending() : u.Z.getAllPending()), U = (0, b.SD)({
+  }), z = (0, a.cj)([v.Z, u.Z], () => null == n ? v.Z.getAllPending() : u.Z.getAllPending()), U = (0, b.SD)({
     userId: t.id,
-    image: F.pendingAvatar
+    image: z.pendingAvatar
   }), {
-    userNameplate: q,
-    guildNameplate: K,
-    pendingNameplate: X
-  } = (0, x.Zx)(t, null == n ? true : n.id), V = null != K ? (0, h.Pb)(K) : true, W = G ? N.BRd.DARK : N.BRd.LIGHT;
+    userNameplate: K,
+    guildNameplate: q,
+    pendingNameplate: V
+  } = (0, x.Zx)(t, null == n ? true : n.id), X = null != q ? (0, h.Pb)(q) : true, W = G ? N.BRd.DARK : N.BRd.LIGHT;
   (M && G || !M && !G) && (W = Z);
   let $ = (0, o.useCallback)(() => {
       P.default.track(N.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
@@ -115,7 +115,7 @@ function A(e) {
         onClick: $,
         innerClassName: E.closeButton
       })
-    }), null != z && (0, l.jsx)(j.Z, {
+    }), null != F && (0, l.jsx)(j.Z, {
       user: t,
       displayProfile: H,
       themeType: k.l.MODAL_V2,
@@ -124,7 +124,7 @@ function A(e) {
       children: (0, l.jsx)("div", {
         className: E.bannerBackground,
         style: {
-          backgroundImage: "url(".concat(z, ")")
+          backgroundImage: "url(".concat(F, ")")
         }
       })
     }), (0, l.jsx)(s.f6W, {
@@ -135,7 +135,7 @@ function A(e) {
         children: [(0, l.jsx)(_.Z, R(D({
           user: t,
           guild: n
-        }, F), {
+        }, z), {
           pendingAvatar: U,
           pendingGlobalName: r,
           pendingDisplayNameStyles: Q.displayNameStyles,
@@ -163,8 +163,8 @@ function A(e) {
         }), (0, l.jsx)(d.Z, {
           user: t,
           guildId: null == n ? true : n.id,
-          nameplate: X,
-          nameplateData: null == X ? null != V ? V : q : true,
+          nameplate: V,
+          nameplateData: null == V ? null != X ? X : K : true,
           pendingGlobalName: r,
           pendingDisplayNameStyles: Q.displayNameStyles,
           isHighlighted: true,

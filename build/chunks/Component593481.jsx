@@ -128,14 +128,14 @@ class O extends(i = Chunk647438.PureComponent) {
       }, "footer-custom-content") : null
     }
     return null != require || null != i ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(m, {}), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+      children: [(0, Chunk951288.jsx)(m, {}), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
         fullWidth: true,
-        children: [null != require ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [null != require ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "active",
           size: "sm",
           text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.BddRzc),
           onClick: this.handleConfirmClick
-        }) : null, null != i ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }) : null, null != i ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           size: "sm",
           text: null != module ? module : Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),

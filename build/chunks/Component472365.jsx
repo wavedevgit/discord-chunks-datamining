@@ -113,7 +113,7 @@ function U(e) {
         className: M.errorContent,
         children: [(0, i.jsx)(O, {
           className: M.errorImage
-        }), (0, i.jsx)(c.X6q, {
+        }), (0, i.jsx)(c.Heading, {
           id: t,
           variant: "heading-xl/semibold",
           color: "header-primary",
@@ -175,7 +175,7 @@ function y(e) {
     channel: W,
     inviter: B,
     target_application: w
-  } = j, Y = null != V, H = null == j.guild && null == j.channel && null != j.inviter;
+  } = j, H = null != V, Y = null == j.guild && null == j.channel && null != j.inviter;
   if (null != w) t = null == V ? true : V.name, a = f.ZP.createFromServer(w).getCoverImageURL(1024);
   else if (null != V) t = V.name, a = A.ZP.getGuildSplashURL({
     id: V.id,
@@ -183,7 +183,7 @@ function y(e) {
   });
   else if ((null == (t = W.name) || "" === t) && null != B && (t = B.username), null == t) throw Error("no name for group DM invite");
   let K = (0, E.yU)();
-  return r = H ? Z.intl.string(Z.t["e/6Ogo"]) : Z.intl.format(Z.t["9sWQNT"], {
+  return r = Y ? Z.intl.string(Z.t["e/6Ogo"]) : Z.intl.format(Z.t["9sWQNT"], {
     usernameHook: () => (0, i.jsx)("span", {
       children: O
     })
@@ -212,7 +212,7 @@ function y(e) {
             id: y,
             children: (0, i.jsx)(u.Z, {
               invite: j,
-              disableUser: Y,
+              disableUser: H,
               error: S
             })
           }), (0, i.jsxs)("div", {

@@ -41,14 +41,14 @@ function T(e) {
   var t, n, a, i, d, s, R, T, N, P, Z, w, D, M, G, F;
   let {
     applicationId: U,
-    skuId: Y,
-    variant: H = 0,
+    skuId: H,
+    variant: Y = 0,
     guildId: K
-  } = e, W = l.useRef(null), B = (0, f.e7)([h.Z], () => h.Z.get(Y)), q = (0, f.e7)([_.Z], () => (0, g.wjy)(_.Z.theme)), z = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), {
-    isHoveringOrFocusing: X
+  } = e, W = l.useRef(null), B = (0, f.e7)([h.Z], () => h.Z.get(H)), z = (0, f.e7)([_.Z], () => (0, g.wjy)(_.Z.theme)), $ = (0, f.e7)([m.Z], () => m.Z.useReducedMotion), {
+    isHoveringOrFocusing: q
   } = (0, I.Z)(W), {
-    primaryIconAsset: $,
-    primaryIconLabel: J
+    primaryIconAsset: J,
+    primaryIconLabel: X
   } = l.useMemo(() => (0, j.FE)(B, U), [B, U]), Q = l.useMemo(() => {
     var e, t;
     if ((null == B || null == (t = B.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
@@ -60,26 +60,26 @@ function T(e) {
   }, [null == B || null == (n = B.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), V = (null == B || null == (i = B.tenantMetadata) || null == (a = i.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (Z = O.Z.toURLSafe((0, y._W)(U, null == B ? true : B.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? Z : true, [ee, et] = (0, v.Cf)(null == V ? true : V.toString(), "#000000"), en = l.useMemo(() => {
     let e = o()(ee).darken(1.5).alpha(.9).hex(),
       t = o()(ee).alpha(0).hex(),
-      [n, a] = E[H];
+      [n, a] = E[Y];
     return "linear-gradient(to top, ".concat(e, " ").concat(30 + n, "%, ").concat(t, " ").concat(30 + a, "%)")
-  }, [ee, H]);
+  }, [ee, Y]);
   if (null == B) return null;
   let ea = (null == (s = B.tenantMetadata) || null == (d = s.socialLayer) ? true : d.cardImageAssetId) != null && null != (w = O.Z.toURLSafe((0, y._W)(U, B.tenantMetadata.socialLayer.cardImageAssetId, 512, "png"))) ? w : true;
   return (0, r.jsx)(g.tEY, {
     children: (0, r.jsxs)(p.kL8, {
       onClick: () => {
         null != K && (0, S.g)({
-          skuId: Y,
+          skuId: H,
           applicationId: U,
           guildId: K
         })
       },
       className: c()(A.card, {
-        [A.cardAnimation]: !z,
-        [A.cardDark]: q,
-        [q ? A.cardDarkHighlighted : A.cardHighlighted]: X,
-        [A.cardLarge]: 2 === H,
-        [A.cardMedium]: 1 === H
+        [A.cardAnimation]: !$,
+        [A.cardDark]: z,
+        [z ? A.cardDarkHighlighted : A.cardHighlighted]: q,
+        [A.cardLarge]: 2 === Y,
+        [A.cardMedium]: 1 === Y
       }),
       ref: W,
       "aria-label": B.name,
@@ -110,7 +110,7 @@ function T(e) {
         })
       }), (0, r.jsx)("div", {
         className: c()(A.bottomGradient, {
-          [A.bottomGradientLarge]: 2 === H
+          [A.bottomGradientLarge]: 2 === Y
         }),
         style: {
           background: en
@@ -127,9 +127,9 @@ function T(e) {
           })
         }), (0, r.jsxs)("div", {
           className: A.descriptionContainer,
-          children: [null != $ && (0, r.jsx)("img", {
-            src: $.toString(),
-            alt: J,
+          children: [null != J && (0, r.jsx)("img", {
+            src: J.toString(),
+            alt: X,
             className: A.iconAsset
           }), (0, r.jsx)(p.Text, {
             variant: "text-md/semibold",

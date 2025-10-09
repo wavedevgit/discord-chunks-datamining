@@ -41,7 +41,7 @@ function v() {
         children: Chunk388032.intl.string(Chunk388032.t.TXPK7O)
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 8
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         className: j(module),
         children: Chunk388032.intl.string(Chunk388032.t.LdjJGx)
@@ -189,7 +189,7 @@ function y() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk570734.revenueShareBenefitCard,
     children: [(0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsxs)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Heading, {
         className: j(module),
         style: {
           fontSize: "50px",
@@ -212,7 +212,7 @@ function y() {
 
 function N() {
   return (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t["1QHJaW"])

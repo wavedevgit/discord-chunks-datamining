@@ -40,8 +40,8 @@ let a = {
   L = 65534,
   x = 65535,
   M = "JFIF",
-  k = "Exif",
-  j = "http://ns.adobe.com/xap/1.0/\0",
+  j = "Exif",
+  k = "http://ns.adobe.com/xap/1.0/\0",
   U = "http://ns.adobe.com/xmp/extension/\0",
   G = "Photoshop 3.0";
 
@@ -115,8 +115,8 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  let n = k.length;
-  return e.getUint16(t) === R && (0, r.oH)(e, t + c, n) === k && 0 === e.getUint8(t + c + n)
+  let n = j.length;
+  return e.getUint16(t) === R && (0, r.oH)(e, t + c, n) === j && 0 === e.getUint8(t + c + n)
 }
 
 function z(e, t) {
@@ -124,8 +124,8 @@ function z(e, t) {
 }
 
 function q(e, t) {
-  let n = j.length;
-  return (0, r.oH)(e, t + c, n) === j
+  let n = k.length;
+  return (0, r.oH)(e, t + c, n) === k
 }
 
 function X(e, t) {

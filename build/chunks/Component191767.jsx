@@ -66,7 +66,7 @@ function E() {
         color: "text-feedback-info",
         className: Chunk306197.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(M, {})]
+      }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {})]
     })
   })
 }
@@ -74,7 +74,7 @@ function E() {
 function S() {
   let [e, t] = Chunk647438.useState("discord://".concat(location.host, "/feature/apple-payment-link"));
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Deeplinking"
     }), (0, Chunk951288.jsxs)(Chunk237012.E_, {
@@ -101,7 +101,7 @@ function S() {
 
 function T() {
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Payment Request Components - Google Pay"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
@@ -120,7 +120,7 @@ function T() {
       children: (0, Chunk951288.jsx)(P, {
         paymentRequestWallet: "googlePay"
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Payment Request Components - Apple Pay"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
@@ -219,7 +219,7 @@ function I(e) {
   })
 }
 
-function k() {
+function w() {
   let e = {
     onChooseType: () => {},
     onStripePaymentMethodReceived: e => {
@@ -228,7 +228,7 @@ function k() {
     isEligibleForTrial: false
   };
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Choose Payment Source Type Component"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
@@ -268,7 +268,7 @@ function k() {
     })]
   })
 }
-let w = {
+let k = {
     DEFAULT: "Express Checkout Element - Default (No Config)",
     GPAY_FILTERED: "Express Checkout Element - Filtered for Google Pay",
     APPLE_PAY_FILTERED: "Express Checkout Element - Filtered for Apple Pay",
@@ -317,9 +317,9 @@ let w = {
   },
   D = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
 
-function L() {
+function M() {
   let [e, t] = Chunk647438.useState(D(A)), [n, l] = Chunk647438.useState(A), [s, d] = Chunk647438.useState(D(Z)), [u, p] = Chunk647438.useState(Z), [h, x] = Chunk647438.useState(null), [f, g] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
-    errorLabel: w.CONFIGURABLE,
+    errorLabel: k.CONFIGURABLE,
     elementOptions: A,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
@@ -390,7 +390,7 @@ function L() {
                 className: Chunk306197.labelSpacing,
                 children: ["Element updated at: ", new Date().toString()]
               }), (0, Chunk951288.jsx)(Chunk237012.DS, {
-                errorLabel: w.CONFIGURABLE,
+                errorLabel: k.CONFIGURABLE,
                 elementOptions: exports,
                 children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
                   onConfirm: e => {
@@ -423,16 +423,16 @@ function L() {
   })
 }
 
-function M() {
+function L() {
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Stripe Express Checkout Buttons"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
-      label: w.DEFAULT,
+      label: k.DEFAULT,
       children: (0, Chunk951288.jsx)("div", {
         children: (0, Chunk951288.jsx)(Chunk237012.DS, {
-          errorLabel: w.DEFAULT,
+          errorLabel: k.DEFAULT,
           children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
             onConfirm: e => {
               console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -442,7 +442,7 @@ function M() {
         })
       })
     }), ["GPAY_FILTERED", "APPLE_PAY_FILTERED", "APPLE_AND_GPAY_DISABLED"].map(e => {
-      let t = w[e];
+      let t = k[e];
       return (0, a.jsx)(b.E_, {
         label: t,
         children: (0, a.jsxs)("div", {
@@ -465,8 +465,8 @@ function M() {
         })
       }, e)
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
-      label: w.CONFIGURABLE,
-      children: (0, Chunk951288.jsx)(L, {})
+      label: k.CONFIGURABLE,
+      children: (0, Chunk951288.jsx)(M, {})
     })]
   })
 }

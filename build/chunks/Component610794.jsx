@@ -81,7 +81,7 @@ function O(e) {
       })
     }, "member-since") : null, (0, r.jsx)("div", {
       className: y.metadataRefreshButton,
-      children: (0, r.jsx)(s.zxk, {
+      children: (0, r.jsx)(s.Button, {
         size: "sm",
         variant: o ? "active" : "secondary",
         loading: c,

@@ -69,7 +69,7 @@ function m(e) {
       variant: c ? "text-sm/normal" : "text-lg/medium",
       color: a,
       children: b
-    }) : (0, r.jsx)(l.X6q, {
+    }) : (0, r.jsx)(l.Heading, {
       variant: "heading-xl/medium",
       color: a,
       children: b

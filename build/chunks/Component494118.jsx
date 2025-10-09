@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 494118, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -47,13 +47,13 @@ function g(e) {
           alt: "",
           src: n,
           className: p.emptyStateImage
-        }), (0, i.jsx)(l.X6q, {
+        }), (0, i.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           children: u.intl.string(u.t.gzuVHx)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.emptyStateButton,
-          children: (0, i.jsx)(l.zxk, {
+          children: (0, i.jsx)(l.Button, {
             variant: "primary",
             text: u.intl.string(u.t["ZwSt+f"]),
             onClick: t

@@ -81,7 +81,7 @@ function y(e) {
   }, [r, t]), {
     handleDragStart: N,
     handleDragReset: O,
-    handleDragComplete: Z
+    handleDragComplete: E
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
       availableTags: e
@@ -94,7 +94,7 @@ function y(e) {
       availableTags: t.availableTags,
       canManageChannels: r,
       onTagClick: S,
-      onDragComplete: Z,
+      onDragComplete: E,
       onDragReset: O,
       onDragStart: N
     }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
@@ -109,7 +109,7 @@ function y(e) {
         width: 20,
         height: 20
       })
-    }) : (0, i.jsx)(c.zxk, {
+    }) : (0, i.jsx)(c.Button, {
       variant: "primary",
       text: b.intl.string(b.t["/jubeH"]),
       disabled: !r,

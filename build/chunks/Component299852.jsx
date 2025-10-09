@@ -47,7 +47,7 @@ class v extends(r = Chunk647438.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new g.Z(n);
+      } = e, r = new g.default(n);
       this.setState({
         success: true,
         busy: false,

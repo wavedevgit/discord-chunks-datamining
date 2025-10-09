@@ -1,16 +1,16 @@
-/** Chunk was on 46746 **/
-/** chunk id: 176940, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 4093 **/
+/** chunk id: 176940, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 }), require("./388685.js");
 var Chunk131951 = require("./131951.js");
 
-function i() {
+function r() {
   return Object.entries(Chunk131951.Z.getVideoDevices()).map(e => {
-    let [t, n] = e;
+    let [n, t] = e;
     return {
-      id: "camera:" + n.id,
-      name: n.name,
+      id: "camera:" + t.id,
+      name: t.name,
       url: ""
     }
   })

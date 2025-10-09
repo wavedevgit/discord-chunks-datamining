@@ -39,7 +39,7 @@ function c(e) {
         },
         children: (0, r.jsxs)("div", {
           className: o.header,
-          children: [(0, r.jsx)(l.X6q, {
+          children: [(0, r.jsx)(l.Heading, {
             variant: "text-sm/medium",
             children: s.intl.string(s.t.lbE2Nj)
           }), u ? (0, r.jsx)(l.u04, {

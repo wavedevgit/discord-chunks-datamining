@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk597688 = require("./597688.js"),
@@ -95,7 +95,7 @@ let f = {
     let {
       peaking: t,
       transitioning: n,
-      style: s
+      style: i
     } = e, f = window.innerHeight, [C, h] = l.useState(false), _ = p.map(e => {
       let {
         skuId: t
@@ -107,24 +107,24 @@ let f = {
         h(true)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
-      style: s,
-      className: i()(g.jumbleWrapper, {
+      style: i,
+      className: s()(g.jumbleWrapper, {
         [g.peaking]: t,
         [g.transitioned]: C
       }),
       children: p.map((e, t) => {
-        var l, s;
+        var l, i;
         let {
-          top: i,
+          top: s,
           left: c,
           rotation: p,
           size: C,
           skuId: h
-        } = e, m = null == (l = _[t]) ? true : l.items[0], b = null == (s = _[t]) ? true : s.type, E = b === a.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, m = null == (l = _[t]) ? true : l.items[0], b = null == (i = _[t]) ? true : i.type, E = b === a.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: g.asset,
           style: {
-            top: n ? -f - E : i,
+            top: n ? -f - E : s,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(p, "deg)"),
             height: C.y,

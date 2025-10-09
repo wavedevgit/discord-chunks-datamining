@@ -21,7 +21,7 @@ let m = e => {
     } = e, n = (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: g.tier0Button,
-      children: (0, r.jsx)(l.zxk, {
+      children: (0, r.jsx)(l.Button, {
         variant: "overlay-primary",
         size: "md",
         fullWidth: true,
@@ -33,7 +33,7 @@ let m = e => {
     });
     return (0, r.jsxs)("div", {
       className: g.tier0Container,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         className: g.tier0Heading,
         variant: "heading-xxl/extrabold",
         children: u.intl.string(u.t["qUl+Ky"])

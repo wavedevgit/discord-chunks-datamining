@@ -72,59 +72,59 @@ function v(e) {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
-      children: x.intl.string(x.t.AHJddH)
+      children: b.intl.string(b.t.AHJddH)
     }), (0, r.jsx)(a.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: b.applicationBody,
-      children: x.intl.string(x.t.Z7TCtb)
+      className: x.applicationBody,
+      children: b.intl.string(b.t.Z7TCtb)
     }), (0, r.jsx)(f.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
-      className: b.form,
+      className: x.form,
       children: null != T ? (0, r.jsx)(p.y, {
         guild: n,
         formFields: T
       }) : (0, r.jsx)(o.$jN, {})
     }), (0, r.jsx)("div", {
-      className: b.divider
+      className: x.divider
     }), (0, r.jsxs)("div", {
-      className: b.twoColumnContainer,
+      className: x.twoColumnContainer,
       children: [(0, r.jsxs)("div", {
-        className: b.column,
+        className: x.column,
         children: [(0, r.jsx)(o.rsf, {
-          label: x.intl.string(x.t["N/0239"]),
+          label: b.intl.string(b.t["N/0239"]),
           checked: N,
           onChange: I,
           disabled: y
         }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: x.intl.string(x.t["3TSZYG"])
+          children: b.intl.string(b.t["3TSZYG"])
         }), y && (0, r.jsx)(a.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: x.intl.format(x.t.Bk0VOj, {
-            profileLink: (e, t) => (0, r.jsx)(o.eee, {
+          children: b.intl.format(b.t.Bk0VOj, {
+            profileLink: (e, t) => (0, r.jsx)(o.Anchor, {
               onClick: S,
               children: e
             }, t)
           })
         })]
       }), (0, r.jsx)("div", {
-        className: b.column,
+        className: x.column,
         children: (0, r.jsxs)("div", {
-          className: b.previewWrapper,
+          className: x.previewWrapper,
           children: [(0, r.jsx)("div", {
-            className: b.gradient
+            className: x.gradient
           }), (0, r.jsx)(u.ZP, {
-            className: b.preview,
+            className: x.preview,
             profile: E,
             CTAOverride: (0, r.jsx)(a.zxk, {
               variant: "active",
               size: "sm",
-              text: x.intl.string(x.t["7XdMW1"]),
+              text: b.intl.string(b.t["7XdMW1"]),
               fullWidth: true
             }),
             disableGuildNameClick: true

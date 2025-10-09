@@ -101,7 +101,7 @@ function g() {
       className: Chunk498714.status,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk498714.title,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           color: "header-primary",
           variant: "heading-lg/normal",
           children: Chunk388032.intl.format(O, {

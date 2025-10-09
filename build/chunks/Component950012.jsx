@@ -17,15 +17,15 @@ let u = e => {
     invite: n,
     forceGuildScrollHeight: u = true,
     isNUXFlow: m
-  } = e, [f, p] = l.useState([d.tF.VERIFY_EMAIL]), [g, h] = l.useState(""), [_, v] = l.useState(""), [x, N] = l.useState(true), [E, y] = l.useState([]), S = e => {
-    p(f.concat(e).slice(false))
+  } = e, [g, f] = l.useState([d.tF.VERIFY_EMAIL]), [p, h] = l.useState(""), [_, v] = l.useState(""), [x, N] = l.useState(true), [E, y] = l.useState([]), S = e => {
+    f(g.concat(e).slice(false))
   };
-  switch (f[f.length - 1]) {
+  switch (g[g.length - 1]) {
     case d.tF.VERIFY_EMAIL:
       return (0, r.jsx)(i.Z, {
         setGuildsInfo: y,
         setStep: S,
-        email: g,
+        email: p,
         setEmail: h,
         setGuildId: N,
         invite: n,
@@ -36,23 +36,23 @@ let u = e => {
       return (0, r.jsx)(a.Z, {
         guildsInfo: E,
         setStep: S,
-        email: g,
+        email: p,
         setGuildId: N,
         forceGuildScrollHeight: u
       });
     case d.tF.SUBMIT_SCHOOL:
       return (0, r.jsx)(s.Z, {
         onBack: () => {
-          f.length > 1 && p(f.slice(0, false).slice(false))
+          g.length > 1 && f(g.slice(0, false).slice(false))
         },
         setStep: S,
-        email: g,
+        email: p,
         school: _,
         setSchool: v
       });
     case d.tF.VERIFY_PIN:
       return (0, r.jsx)(o.Z, {
-        email: g,
+        email: p,
         onClose: t,
         guildId: x
       });

@@ -118,7 +118,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       }
     }), (0, i.jsx)(p.u, {
       text: ei.intl.string(ei.t.JVwWvb),
-      children: (0, i.jsx)(f.zxk, {
+      children: (0, i.jsx)(f.Button, {
         size: "sm",
         variant: "secondary",
         icon: f.v3n,
@@ -163,7 +163,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       } = r;
       return (0, i.jsx)(p.u, {
         text: l,
-        children: (0, i.jsx)(f.zxk, {
+        children: (0, i.jsx)(f.Button, {
           size: "sm",
           variant: "secondary",
           icon: f.iWm,
@@ -377,7 +377,7 @@ eO.Header = e_, eO.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, q.EB)(n, 32), g = (0, q.gM)(n);
+  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, Y.EB)(n, 32), g = (0, Y.gM)(n);
   return (0, i.jsx)(eu, {
     children: (0, i.jsxs)("div", {
       className: el.voiceSection,
@@ -690,7 +690,7 @@ eO.Header = e_, eO.Body = e => {
       return s(t)
     })
   }, [u]);
-  let d = (0, c.Wu)([Q.default, Y.default], () => Array.from(a).map(e => Y.default.getId() === e ? null : Q.default.getUser(e)).filter(ee.lm)),
+  let d = (0, c.Wu)([Q.default, q.default], () => Array.from(a).map(e => q.default.getId() === e ? null : Q.default.getUser(e)).filter(ee.lm)),
     p = (0, m.O)(),
     {
       analyticsLocations: h
@@ -739,7 +739,7 @@ eO.Header = e_, eO.Body = e => {
           channelId: n.id
         }), (0, i.jsx)("div", {
           className: el.embeddedActivityJoinWrapper,
-          children: (0, i.jsx)(f.zxk, {
+          children: (0, i.jsx)(f.Button, {
             variant: "primary",
             size: "sm",
             text: ei.intl.string(ei.t.VJlc0d),

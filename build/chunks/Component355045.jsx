@@ -77,7 +77,7 @@ let T = function(e) {
       className: I.guildIcon,
       guild: n,
       size: _.Z.Sizes.LARGER
-    }), (0, r.jsx)(u.X6q, {
+    }), (0, r.jsx)(u.Heading, {
       className: I.guildName,
       color: "always-white",
       variant: "text-lg/bold",

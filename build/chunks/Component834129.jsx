@@ -61,7 +61,7 @@ c.Action = e => {
   } = e;
   return (0, r.jsxs)("span", {
     className: l.action,
-    children: ["—", (0, r.jsx)(o.eee, {
+    children: ["—", (0, r.jsx)(o.Anchor, {
       onClick: t,
       className: l.actionAnchor,
       children: n

@@ -37,7 +37,7 @@ class g extends(a = Chunk647438.PureComponent) {
       children: module.map(e => e === p.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
         onVerify: a,
         theme: n
-      }, t) : (0, r.jsx)(c.zxk, {
+      }, t) : (0, r.jsx)(c.Button, {
         onClick: () => this.handleClick(e),
         text: m.Z.getButtonTitle(e)
       }, e))
@@ -72,7 +72,7 @@ class g extends(a = Chunk647438.PureComponent) {
             align: "center",
             direction: "vertical",
             justify: "center",
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-xl/normal",
               children: Chunk388032.intl.string(Chunk388032.t.Iz0kDg)
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {

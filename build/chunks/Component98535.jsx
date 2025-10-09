@@ -33,26 +33,26 @@ function v(e) {
     updateAnalyticsState: u,
     refreshCategories: h
   } = e, v = S();
-  x(v);
-  let O = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
+  O(v);
+  let x = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     [y, j] = l.useState(true),
-    k = l.useCallback(async (e, t, r) => {
+    T = l.useCallback(async (e, t, r) => {
       u(e, t);
-      let l = r && !n && !O,
-        s = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      j(t), await o(s, l)
-    }, [n, O, o, u]),
-    T = (0, g.FF)("CollectiblesContent"),
+      let l = r && !n && !x,
+        i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
+      j(t), await o(i, l)
+    }, [n, x, o, u]),
+    L = (0, g.FF)("CollectiblesContent"),
     {
-      searchError: L
+      searchError: k
     } = (0, f.a)();
-  return T && null != L ? (0, r.jsx)(m.Z, {}) : null != v ? (0, r.jsx)(C.Z, {
+  return L && null != k ? (0, r.jsx)(m.Z, {}) : null != v ? (0, r.jsx)(C.Z, {
     onRetry: h,
     errorMessage: v,
     errorOrigin: C.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     isFullScreen: n,
-    handleTransition: k,
+    handleTransition: T,
     tab: t,
     transitionState: c
   }) : (0, r.jsx)(p.Z, {
@@ -64,17 +64,17 @@ function v(e) {
   })
 }
 let S = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  x = e => {
-    let t = (0, s.e7)([a.default], () => a.default.getCurrentUser()),
+  O = e => {
+    let t = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, h.Z)();
     l.useEffect(() => {
-      var l, s;
+      var l, i;
       null != e && o.Z.captureMessage(e, {
         tags: {
-          isStaff: null != (s = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? s : "unknown",
+          isStaff: null != (i = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? i : "unknown",
           disableCache: n.toString(),
           includeUnpublished: r.toString()
         }

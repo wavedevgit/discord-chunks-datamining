@@ -39,7 +39,7 @@ function g(e) {
       })
     }), (0, r.jsxs)("div", {
       className: u.actionTextContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-sm/semibold",
         children: d
       }), (0, r.jsx)(l.Text, {

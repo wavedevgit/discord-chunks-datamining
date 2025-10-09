@@ -67,7 +67,7 @@ function _(e) {
       location: "Activity Action"
     })
   };
-  return (0, r.jsx)(a.zxk, u({
+  return (0, r.jsx)(a.Button, u({
     onClick: h,
     variant: n,
     size: c,

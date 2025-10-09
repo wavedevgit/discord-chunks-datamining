@@ -25,7 +25,7 @@ function g(e) {
   return (0, r.jsxs)(a.Kqy, {
     gap: 24,
     className: u.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.Ms33Dg)
@@ -37,7 +37,7 @@ function g(e) {
       text: d.intl.string(d.t.VAIHXV),
       shouldShow: !n,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: d.intl.string(d.t.ZXeJbW),
           disabled: !n,

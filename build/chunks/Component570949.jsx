@@ -20,12 +20,12 @@ function f(e) {
   var t;
   let {
     application: n
-  } = e, l = null != (t = c.Z.getGuildId()) ? t : true;
+  } = e, i = null != (t = c.Z.getGuildId()) ? t : true;
   return (0, o.Z)({
     application: n,
-    guildId: l,
+    guildId: i,
     onItemClick: () => {
-      (0, i.Mr3)(p.e9), (0, u.yT)(d.ti.DISMISSED)
+      (0, l.Mr3)(p.e9), (0, u.yT)(d.ti.DISMISSED)
     }
   })
 }
@@ -40,14 +40,14 @@ function h(e) {
   }), u = f({
     application: t
   });
-  return (0, l.jsxs)(i.v2r, {
+  return (0, i.jsxs)(l.v2r, {
     navId: "activity-shelf-item-context",
     onClose: r.Zy,
     "aria-label": m.intl.string(m.t.WkcHT0),
     onSelect: n,
-    children: [null != u && (0, l.jsxs)(i.kSQ, {
+    children: [null != u && (0, i.jsxs)(l.kSQ, {
       children: [...u]
-    }, "manage-app-actions"), o && (0, l.jsx)(i.kSQ, {
+    }, "manage-app-actions"), o && (0, i.jsx)(l.kSQ, {
       children: c
     }, "developer-actions")]
   })

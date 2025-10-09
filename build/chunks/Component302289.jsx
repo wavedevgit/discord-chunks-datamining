@@ -25,7 +25,7 @@ let p = () => {
     padding: 24,
     children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 8,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
           children: module

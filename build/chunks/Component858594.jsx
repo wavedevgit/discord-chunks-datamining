@@ -41,7 +41,7 @@ function d(e) {
       })]
     }), (0, l.jsxs)("div", {
       className: i()(u.textContainer, m),
-      children: [(0, l.jsx)(r.X6q, {
+      children: [(0, l.jsx)(r.Heading, {
         variant: "heading-sm/semibold",
         lineClamp: 1,
         title: n.name,

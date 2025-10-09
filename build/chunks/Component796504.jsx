@@ -38,7 +38,7 @@ function f(e) {
     parentComponent: "EULA",
     children: [(0, n.jsxs)(o.xBx, {
       justify: i.Z.Justify.BETWEEN,
-      children: [(0, n.jsx)(o.X6q, {
+      children: [(0, n.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: b
       }), (0, n.jsx)(o.olH, {

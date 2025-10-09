@@ -23,7 +23,7 @@ let u = e => {
       description: h
     } = u;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-md/normal",
       color: "header-muted",
       className: c.alignStart,
@@ -41,7 +41,7 @@ let u = e => {
         })
       }), (0, r.jsxs)("div", {
         className: c.guildInfo,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(i.Heading, {
           variant: "heading-sm/semibold",
           children: d
         }), (0, r.jsxs)("div", {

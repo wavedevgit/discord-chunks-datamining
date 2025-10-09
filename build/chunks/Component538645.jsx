@@ -40,7 +40,7 @@ let f = "Make sure you're only uploading text files!",
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
           children: i.name
-        }), (0, a.jsx)(c.zxk, {
+        }), (0, a.jsx)(c.Button, {
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
@@ -76,7 +76,7 @@ function g() {
         className: Chunk558270.col,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk558270.section,
-          children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
           })
@@ -102,7 +102,7 @@ function g() {
             onChange: E,
             multiple: false
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Create New Effect",
           onClick: () => {
@@ -117,7 +117,7 @@ function g() {
         })]
       }), (0, Chunk951288.jsx)("hr", {}), (0, Chunk951288.jsxs)("div", {
         className: Chunk558270.section,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/bold",
           children: "All Effects"
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {

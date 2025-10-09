@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function x(e) {
+function y(e) {
   let {
     onClose: t
   } = e;
@@ -46,7 +46,7 @@ function x(e) {
   })
 }
 
-function y() {
+function x() {
   let e = Chunk647438.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
@@ -60,7 +60,7 @@ function y() {
       compact: true
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk989281.links,
-      children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
         href: Chunk981631.EYA.PRIVACY,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           tag: "span",
@@ -72,7 +72,7 @@ function y() {
         className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
-      }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
         href: Chunk981631.EYA.TERMS,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           tag: "span",
@@ -94,13 +94,13 @@ function y() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(x, {
+          return (0, r.jsx)(y, {
             onClose: t
           })
         },
         children: (t, n) => {
           var l, o;
-          return (0, r.jsx)(a.eee, (l = function(e) {
+          return (0, r.jsx)(a.Anchor, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

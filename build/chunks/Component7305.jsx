@@ -1,7 +1,7 @@
 /** Chunk was on 23404 **/
 /** chunk id: 7305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  STEPS: () => H,
+  STEPS: () => U,
   default: () => D
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -69,7 +69,7 @@ function G(e) {
     initialPlanId: c,
     subscriptionTier: u,
     onClose: _,
-    trialId: b,
+    trialId: g,
     trialFooterMessageOverride: j,
     reviewWarningMessage: y,
     openInvoiceId: v,
@@ -94,13 +94,13 @@ function G(e) {
   let {
     step: F
   } = (0, m.JL)(), {
-    isGift: U,
-    giftMessage: H,
+    isGift: H,
+    giftMessage: U,
     giftRecipient: D
-  } = (0, h.wD)(), z = U && (0, f.pO)(D) && F === x.h8.PLAN_SELECT;
+  } = (0, h.wD)(), z = H && (0, f.pO)(D) && F === x.h8.PLAN_SELECT;
   return (0, r.jsx)(S.Z, {
     isConfirmationStep: F === x.h8.CONFIRM && null == R && null == w,
-    children: (0, r.jsx)(g.PaymentModal, {
+    children: (0, r.jsx)(b.PaymentModal, {
       analyticsLocations: G,
       analyticsLocation: t,
       analyticsObject: n,
@@ -109,11 +109,11 @@ function G(e) {
       onComplete: s,
       transitionState: C,
       initialPlanId: c,
-      giftMessage: H,
+      giftMessage: U,
       subscriptionTier: u,
       onClose: _,
-      trialId: b,
-      isGift: U,
+      trialId: g,
+      isGift: H,
       trialFooterMessageOverride: j,
       reviewWarningMessage: y,
       planGroup: M.Y1,
@@ -174,11 +174,11 @@ function F(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
-let U = function() {
+let H = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return [{
       key: null,
-      renderStep: e => (0, r.jsx)(g.I, N({}, e))
+      renderStep: e => (0, r.jsx)(b.I, N({}, e))
     }, {
       key: Chunk409813.h8.SKU_SELECT,
       renderStep: e => (0, r.jsx)(E.q, N({}, e)),
@@ -235,7 +235,7 @@ let U = function() {
       }
     }]
   },
-  H = U();
+  U = H();
 
 function D(e) {
   let t = (0, a.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
@@ -250,7 +250,7 @@ function D(e) {
       giftMessage: p,
       giftRecipient: f,
       giftStyle: x,
-      isGift: g,
+      isGift: b,
       loadId: j,
       paymentModalBanner: y,
       referralCode: v,
@@ -259,23 +259,23 @@ function D(e) {
   if (null != L && !Object.values(M.Si).includes(L)) throw Error("subscriptionTier must be a premium subscription");
   let S = (0, c.y)({
     location: "PremiumPaymentSelect"
-  }) && null != f && g;
+  }) && null != f && b;
   return (0, r.jsx)(d.Gt, {
     value: i,
     children: (0, r.jsx)(m.PaymentContextProvider, {
       loadId: j,
       activeSubscription: null != e.subscription ? e.subscription : t,
-      stepConfigs: U(S),
+      stepConfigs: H(S),
       skuIDs: [...M.YQ],
-      isGift: g,
+      isGift: b,
       defaultPlanId: null != n ? n : o,
       referralCode: v,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
-      children: (0, r.jsx)(b.c1, {
+      children: (0, r.jsx)(g.c1, {
         confirmationFooter: l,
         paymentModalBanner: y,
         children: (0, r.jsx)(h.KB, {
-          isGift: g,
+          isGift: b,
           giftRecipient: null == f ? true : f,
           giftMessage: p,
           giftStyle: x,

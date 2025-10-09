@@ -130,7 +130,7 @@ function N(e) {
     children: [(0, s.jsxs)(a.xBx, {
       separator: false,
       className: f.modalHeader,
-      children: [(0, s.jsx)(a.X6q, {
+      children: [(0, s.jsx)(a.Heading, {
         variant: "heading-lg/bold",
         className: f.heading,
         children: O.intl.string(O.t.kaYqnp)

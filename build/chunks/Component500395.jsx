@@ -34,7 +34,7 @@ function p(e) {
       alt: u.intl.string(u.t.Af4klJ)
     }), (0, r.jsxs)("div", {
       className: g.__invalid_ctaContent,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: u.intl.string(u.t.PqYfh4)

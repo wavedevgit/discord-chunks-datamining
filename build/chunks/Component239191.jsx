@@ -99,7 +99,7 @@ function k(e) {
     onClose: i
   } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [k, K] = n.useState(() => _ ? "system" : null != a ? "gradient" : o), {
     density: f
-  } = (0, c.TCT)(), q = n.useMemo(() => {
+  } = (0, c.TCT)(), w = n.useMemo(() => {
     if (null == a && !_) return v;
     let e = [...v];
     if (null != a) {
@@ -126,7 +126,7 @@ function k(e) {
       label: b.intl.string(b.t["7rOU6u"]),
       className: N.themeOption
     }), e
-  }, [a, _]), w = (0, h.Z)("(max-height: 800px)");
+  }, [a, _]), I = (0, h.Z)("(max-height: 800px)");
   return (0, s.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
@@ -138,18 +138,18 @@ function k(e) {
     }), (0, s.jsx)(c.xBx, {
       className: N.header,
       children: (0, s.jsxs)(c.Kqy, {
-        gap: w ? 4 : 8,
+        gap: I ? 4 : 8,
         children: [(0, s.jsxs)(c.Kqy, {
-          gap: w ? 8 : 16,
+          gap: I ? 8 : 16,
           children: [(0, s.jsx)("div", {
             className: N.headerImage
-          }), (0, s.jsx)(c.X6q, {
-            variant: w ? "heading-lg/semibold" : "heading-xl/semibold",
+          }), (0, s.jsx)(c.Heading, {
+            variant: I ? "heading-lg/semibold" : "heading-xl/semibold",
             color: "header-primary",
             children: b.intl.string(b.t["7+iCGx"])
           })]
-        }), (0, s.jsx)(c.X6q, {
-          variant: w ? "heading-sm/medium" : "heading-md/medium",
+        }), (0, s.jsx)(c.Heading, {
+          variant: I ? "heading-sm/medium" : "heading-md/medium",
           color: "text-secondary",
           children: b.intl.string(b.t.fZMMqK)
         })]
@@ -157,15 +157,15 @@ function k(e) {
     }), (0, s.jsx)(c.hzk, {
       className: N.content,
       children: (0, s.jsxs)(c.Kqy, {
-        gap: w ? 20 : 24,
+        gap: I ? 20 : 24,
         children: [(0, s.jsxs)(c.Kqy, {
-          gap: w ? 8 : 12,
-          children: [(0, s.jsx)(c.X6q, {
+          gap: I ? 8 : 12,
+          children: [(0, s.jsx)(c.Heading, {
             variant: "heading-md/medium",
             children: b.intl.string(b.t.Ksh3io)
           }), (0, s.jsx)(O, {
             showLabels: false,
-            options: q,
+            options: w,
             selected: k,
             onSelect: e => {
               K(e), "gradient" === e ? null != a && (0, m.ZI)({
@@ -191,14 +191,14 @@ function k(e) {
             })
           })]
         }), (0, s.jsxs)(c.Kqy, {
-          gap: w ? 8 : 12,
+          gap: I ? 8 : 12,
           children: [(0, s.jsxs)(c.Kqy, {
             gap: 0,
             children: [(0, s.jsxs)(c.Kqy, {
               direction: "horizontal",
               gap: 4,
               align: "center",
-              children: [(0, s.jsx)(c.X6q, {
+              children: [(0, s.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 children: b.intl.string(b.t["C/5V0N"])
               }), (0, s.jsx)(c.IGR, {
@@ -231,7 +231,7 @@ function k(e) {
       })
     }), (0, s.jsx)(c.mzw, {
       className: N.footer,
-      children: (0, s.jsx)(c.zxk, {
+      children: (0, s.jsx)(c.Button, {
         variant: "primary",
         text: b.intl.string(b.t["1Qm829"]),
         onClick: i

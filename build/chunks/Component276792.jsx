@@ -102,7 +102,7 @@ function E(e) {
       })
   }
   let Z = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(s.eee, {
+      children: ["\xa0", (0, r.jsx)(s.Anchor, {
         className: b.termsApplyAnchor,
         href: p.Z.getArticleURL(I.helpArticleId),
         children: m.intl.string(m.t["sBp+u7"])

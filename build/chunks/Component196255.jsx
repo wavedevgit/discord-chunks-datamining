@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
 let d = e => {
   var t, n;
   let {
-    message: a,
+    message: l,
     channel: d,
     renderColon: m,
     hasUnreads: h
@@ -23,16 +23,16 @@ let d = e => {
     user: g,
     author: f
   } = (0, o.AJ)(d), x = null != (n = null != (t = null == f ? true : f.nick) ? t : null == g ? true : g.username) ? n : "", j = (0, i.l)({
-    user: null == a ? true : a.author,
+    user: null == l ? true : l.author,
     channelId: d.id,
     guildId: d.guild_id,
-    messageId: null == a ? true : a.id,
+    messageId: null == l ? true : l.id,
     stopPropagation: true,
     ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
       name: x
     })
   })(null != f ? f : true)(x, d.id);
-  return (0, l.jsxs)(r.Text, {
+  return (0, a.jsxs)(r.Text, {
     tag: "span",
     className: s()(u.author, {
       [u.hasUnreads]: h

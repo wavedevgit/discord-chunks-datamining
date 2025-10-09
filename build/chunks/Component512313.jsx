@@ -65,7 +65,7 @@ function x() {
   } = (0, Chunk131051.Z)(Chunk920952.Z, "");
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk547481.root,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
       children: "Settings Tree"
     }), (0, Chunk951288.jsx)(Chunk481060.rsf, {

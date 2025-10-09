@@ -28,7 +28,7 @@ function l() {
       }), (0, Chunk951288.jsx)(Chunk499033.Z, {
         className: Chunk521868.stars
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk521868.header,
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.yJHJen)

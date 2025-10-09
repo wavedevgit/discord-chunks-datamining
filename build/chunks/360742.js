@@ -48,7 +48,7 @@ function l(e, t) {
 class c extends Chunk81825.Z {
   static createFromServer(e) {
     return new c(l(o({}, e), {
-      user: new i.Z(e.user)
+      user: new i.default(e.user)
     }))
   }
   constructor(e) {

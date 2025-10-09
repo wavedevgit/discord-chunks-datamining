@@ -29,7 +29,7 @@ let _ = 3,
     }, [p, h]);
     return 0 === m.length ? null : (0, r.jsxs)("div", {
       className: f.wrapper,
-      children: [t && (0, r.jsx)(o.X6q, {
+      children: [t && (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         className: f.header,
         children: d.intl.string(d.t.r90Wgo)

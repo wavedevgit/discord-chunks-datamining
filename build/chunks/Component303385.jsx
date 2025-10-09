@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
@@ -29,10 +29,10 @@ let g = e => {
     questConfig: t.config
   }), x = null == h ? true : h.progressBlur, _ = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : _ ? false : 6;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.animated.div, {
+    children: [(0, r.jsx)(o.animated.div, {
       className: m.rewardTileContainer,
       style: {
-        transform: (0, a.to)([n.to({
+        transform: (0, o.to)([n.to({
           range: [0, 1],
           output: [0, 0]
         }), n.to({
@@ -59,14 +59,14 @@ let g = e => {
           borderRadius: j / 64 * 8
         }
       })
-    }), (0, r.jsxs)(a.animated.div, {
-      className: o()(m.rewardHighlightLogoCTA, {
+    }), (0, r.jsxs)(o.animated.div, {
+      className: a()(m.rewardHighlightLogoCTA, {
         [m.rewardHighlightLogoCTAHeightBoost]: x,
         [m.rewardHighlightLogoCTALabel]: _
       }),
       style: {
         height: x ? j : true,
-        transform: (0, a.to)([n.to({
+        transform: (0, o.to)([n.to({
           range: [0, 1],
           output: [0, C]
         }), n.to({
@@ -75,11 +75,11 @@ let g = e => {
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, r.jsx)("div", {
-        className: o()({
+        className: a()({
           [m.partnerBranding]: !x && !_
         }),
         children: g
-      }), x && (0, r.jsx)(a.animated.div, {
+      }), x && (0, r.jsx)(o.animated.div, {
         className: m.rewardHighlightLogoCTADivider,
         style: {
           opacity: n.to({
@@ -87,8 +87,8 @@ let g = e => {
             output: [.1, 0]
           })
         }
-      }), (0, r.jsx)(a.animated.div, {
-        className: o()(m.rewardHighlightCTA, {
+      }), (0, r.jsx)(o.animated.div, {
+        className: a()(m.rewardHighlightCTA, {
           [m.rewardHighlightCTALabel]: _
         }),
         style: {

@@ -22,7 +22,7 @@ let s = e => {
       alt: ""
     }), (0, a.jsxs)("div", {
       className: i.innerContent,
-      children: [(0, a.jsx)(r.X6q, {
+      children: [(0, a.jsx)(r.Heading, {
         variant: "heading-xl/extrabold",
         children: o.intl.string(o.t["3dgwPD"])
       }), (0, a.jsx)(r.Text, {
@@ -33,7 +33,7 @@ let s = e => {
     }), (0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: i.footerButton,
-      children: (0, a.jsx)(r.zxk, {
+      children: (0, a.jsx)(r.Button, {
         variant: "primary",
         text: o.intl.string(o.t["7NqTJi"]),
         onClick: t

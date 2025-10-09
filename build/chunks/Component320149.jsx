@@ -60,7 +60,7 @@ function I(e) {
         children: E.intl.string(E.t.XVOKgo)
       }), (0, r.jsx)("div", {
         className: y.hamBannerButton,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(a.Button, {
           size: "sm",
           onClick: () => A(t, j),
           text: E.intl.string(E.t.koqL3d)

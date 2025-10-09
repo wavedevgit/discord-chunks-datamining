@@ -64,7 +64,7 @@ let v = e => {
       leftAlignHeaders: n,
       title: i,
       headerClassname: a
-    } = e, o = (0, r.jsx)(s.X6q, {
+    } = e, o = (0, r.jsx)(s.Heading, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
       className: null != a ? a : g.heading,

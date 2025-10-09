@@ -51,7 +51,7 @@ function h(e) {
           variant: "text-sm/semibold",
           color: "header-secondary",
           children: _.intl.format(_.t.PrtAq6, {
-            unignoreHook: (e, n) => (0, r.jsx)(l.eee, {
+            unignoreHook: (e, n) => (0, r.jsx)(l.Anchor, {
               onClick: () => c.Z.unignoreUser(t.id, "UserProfileRemediatedNotice"),
               children: e
             }, n)

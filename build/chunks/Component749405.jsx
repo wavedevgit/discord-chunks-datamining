@@ -51,7 +51,7 @@ function h(e) {
       children: [(0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: f.button,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: p.intl.string(p.t.B2nygY),
@@ -64,7 +64,7 @@ function h(e) {
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: f.button,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
           text: p.intl.string(p.t.Kz8Pws),

@@ -76,18 +76,18 @@ function v(e) {
   }, [T, N, P, F, O]), i.useEffect(() => {
     (null == T ? true : T.defaultCategory) == null || N || M(T.defaultCategory)
   }, [null == T ? true : T.defaultCategory, N]), l()(null != L, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
-  let U = i.useMemo(() => null != Z && (null != I ? I : []).some(e => e.skuId === Z), [Z, I]),
-    H = i.useMemo(() => null != P && F.some(e => e.skuId === P.skuId), [F, P]),
-    D = i.useMemo(() => 0 === F.length || null == Z || !H || !U, [F, Z, U, H]);
+  let H = i.useMemo(() => null != Z && (null != I ? I : []).some(e => e.skuId === Z), [Z, I]),
+    U = i.useMemo(() => null != P && F.some(e => e.skuId === P.skuId), [F, P]),
+    D = i.useMemo(() => 0 === F.length || null == Z || !U || !H, [F, Z, H, U]);
   i.useEffect(() => {
     if (0 === F.length) {
       B(true), O(true);
       return
     }
-    U && F.some(e => e.skuId === Z) || null == Z || (B(true), O(true))
-  }, [F, U, Z, O]), i.useEffect(() => {
-    G.current === A || H || (O(true), B(true)), G.current = A
-  }, [A, H, O]);
+    H && F.some(e => e.skuId === Z) || null == Z || (B(true), O(true))
+  }, [F, H, Z, O]), i.useEffect(() => {
+    G.current === A || U || (O(true), B(true)), G.current = A
+  }, [A, U, O]);
   let z = e => {
       O(F.find(t => t.skuId === e)), B(e), R(true)
     },
@@ -105,13 +105,13 @@ function v(e) {
         category: A
       }, e.skuId)
     }),
-    K = (0, r.jsx)(b.O3, {
+    K = (0, r.jsx)(g.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: y.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != P && f.default.track(g.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != P && f.default.track(b.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
               reward_sku_id: P.skuId
             }), a(e)
@@ -132,7 +132,7 @@ function v(e) {
       direction: C.Z.Direction.VERTICAL,
       align: C.Z.Align.START,
       separator: false,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/bold",
         color: "header-primary",
         children: j.intl.string(j.t["3JCuX1"])

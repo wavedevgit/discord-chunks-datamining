@@ -19,10 +19,10 @@ function c(e) {
     sectionOverallPosition: d,
     promotionalLabel: p,
     numFriendsWhoPlay: m
-  } = e, f = (0, r.e7)([o.Z], () => o.Z.entrypoint()), h = l.useCallback(() => {
+  } = e, f = (0, r.e7)([o.Z], () => o.Z.entrypoint()), h = i.useCallback(() => {
     (0, a.h)({
-      type: i.ImpressionTypes.VIEW,
-      name: i.ImpressionNames.APP_LAUNCHER_ITEM,
+      type: l.ImpressionTypes.VIEW,
+      name: l.ImpressionNames.APP_LAUNCHER_ITEM,
       properties: {
         application_id: t,
         application_flags: n,

@@ -100,9 +100,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [c, g] = i.useState(true === o.K.get(Z)), p = (0, a.e7)([x.Z], () => {
+    } = e, [c, g] = i.useState(true === o.K.get(Z)), p = (0, a.e7)([b.Z], () => {
       var e;
-      return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
+      return null != (e = b.Z.getMemberCount(l.id)) ? e : 0
     }), [h, j] = i.useState(false);
     (0, m.ZP)(() => {
       s.tn.get({
@@ -112,7 +112,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
-    let v = (0, a.e7)([b.Z], () => b.Z.getGuild("942897714956472401")),
+    let v = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
       _ = l.features.has(E.oNc.COMMUNITY) && p >= 1e3 && h && null == v;
     if (t && n && !_) return null;
     let O = async () => {
@@ -135,7 +135,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           width: 60,
           className: S.upsellImage
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(u.X6q, {
+          children: [(0, r.jsx)(u.Heading, {
             variant: "heading-md/semibold",
             className: S.upsellHeader,
             children: I.intl.string(I.t["pR/BgY"])
@@ -161,7 +161,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         children: [_ && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.zxk, {
+          children: (0, r.jsx)(u.Button, {
             variant: "primary",
             size: "sm",
             text: I.intl.string(I.t.iF1Asr),
@@ -170,7 +170,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.zxk, {
+          children: (0, r.jsx)(u.Button, {
             variant: "primary",
             size: "sm",
             text: I.intl.string(I.t["S/DfiY"]),
@@ -181,7 +181,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), t ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.zxk, {
+          children: (0, r.jsx)(u.Button, {
             variant: "secondary",
             size: "sm",
             text: I.intl.string(I.t["0kmJd3"]),
@@ -192,7 +192,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.zxk, {
+          children: (0, r.jsx)(u.Button, {
             variant: "secondary",
             size: "sm",
             text: I.intl.string(I.t.BQIYTU),
@@ -236,14 +236,14 @@ let Z = "dismissedCommunityFeaturesUpsell",
           publicUpdatesChannelId: null
         })
       },
-      x = e => {
+      b = e => {
         C.Z.updateGuild({
           description: e
         })
       };
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nRtNqq)
       }), Chunk852860 ? (0, Chunk951288.jsx)(D, {
@@ -316,7 +316,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         children: (0, Chunk951288.jsx)(Chunk28664.u, {
           text: require ? null : Chunk388032.intl.string(Chunk388032.t["pjG+T0"]),
           "aria-label": require ? true : Chunk388032.intl.string(Chunk388032.t["pjG+T0"]),
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "critical-primary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.c1BmbG),

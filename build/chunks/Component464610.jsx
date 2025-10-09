@@ -2,7 +2,7 @@
 /** chunk id: 464610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./472816.js"), require("./794429.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function h(e) {
         size: l.EFr.SIZE_40,
         "aria-label": t
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
           children: t
@@ -44,7 +44,7 @@ function h(e) {
           children: n
         })]
       })]
-    }), (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(l.Button, {
       size: "sm",
       variant: "secondary",
       onClick: () => (0, d.K)(a),
@@ -53,24 +53,24 @@ function h(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guild: t
   } = e;
   (0, a.RD)(t.id);
   let d = (0, s.Z6)(t.id),
     {
-      rulesByTriggerType: x
+      rulesByTriggerType: b
     } = (0, a.pH)(t.id),
     {
-      numEnabledRules: b,
+      numEnabledRules: x,
       numRules: j
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == x || Object.values(d).flat().forEach(n => {
+      return null == b || Object.values(d).flat().forEach(n => {
         var r;
-        let i = null == (r = x[n]) ? true : r.filter(c.lm);
+        let i = null == (r = b[n]) ? true : r.filter(c.lm);
         if (null == i || 0 === i.length) return void t++;
         i.forEach(n => {
           n.enabled && e++, t++
@@ -79,14 +79,14 @@ function x(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [d, x]),
+    }, [d, b]),
     v = (0, m.Q)(t),
     _ = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
     C = v[u.u.DM_AND_SPAM_PROTECTION],
     O = v[u.u.PERMISSIONS],
     y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: f.header,
@@ -120,7 +120,7 @@ function x(e) {
           icon: n(145136),
           title: p.intl.string(p.t.uRelg4),
           subtitle: p.intl.formatToPlainString(p.t.TG7NYG, {
-            enabled: b,
+            enabled: x,
             total: j
           }),
           page: u.u.AUTOMOD

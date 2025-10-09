@@ -17,7 +17,7 @@ let s = function(e) {
     className: o.previewBackground,
     children: (0, r.jsxs)("div", {
       className: o.previewCard,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.Heading, {
         className: o.heading,
         variant: "heading-md/semibold",
         children: a.intl.string(a.t.L2mlUV)

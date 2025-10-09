@@ -1,8 +1,8 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 74318 **/
 /** chunk id: 559310, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   am: () => r,
-  s6: () => s
+  s6: () => a
 });
 var Chunk973285 = require("./973285.js");
 let i = (0, require("./818083.js").B)({
@@ -21,19 +21,19 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function s(e) {
+function a(e) {
   let {
     autoTrackExposure: t,
     location: n,
-    guildId: s
+    guildId: a
   } = e, {
     enabled: r
   } = l.W.getCurrentConfig({
-    guildId: s,
+    guildId: a,
     location: n
   });
   return i.getCurrentConfig({
-    guildId: s,
+    guildId: a,
     location: n
   }, {
     autoTrackExposure: t,
@@ -45,15 +45,15 @@ function r(e) {
   let {
     autoTrackExposure: t,
     location: n,
-    guildId: s
+    guildId: a
   } = e, {
     enabled: r
   } = l.W.useExperiment({
-    guildId: s,
+    guildId: a,
     location: n
   });
   return i.useExperiment({
-    guildId: s,
+    guildId: a,
     location: n
   }, {
     autoTrackExposure: t,

@@ -38,7 +38,7 @@ let i = e => {
     children: [(0, r.jsxs)(c.xBx, {
       separator: false,
       className: l.modalHeader,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         id: d,
         variant: "heading-xl/extrabold",
         children: s.intl.string(s.t.EouHws)

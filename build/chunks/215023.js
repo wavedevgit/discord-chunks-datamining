@@ -12,7 +12,7 @@ require.d(exports, {
   RE: () => I,
   Vt: () => L,
   aK: () => T,
-  aP: () => j,
+  aP: () => k,
   bu: () => h,
   cv: () => p,
   f7: () => y,
@@ -22,7 +22,7 @@ require.d(exports, {
   o0: () => M,
   o8: () => D,
   rL: () => _,
-  xg: () => k,
+  xg: () => j,
   yf: () => E
 }), require("./388685.js");
 var Chunk463570 = require("./463570.js"),
@@ -67,8 +67,8 @@ let L = {
   },
   x = new Set(Object.values(L)),
   M = e => x.has(e),
-  k = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
-  j = [{
+  j = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
+  k = [{
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   }, {

@@ -47,7 +47,7 @@ function p(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: d.header,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "text-md/medium",
       color: "header-primary",
       children: (0, r.jsx)("label", {

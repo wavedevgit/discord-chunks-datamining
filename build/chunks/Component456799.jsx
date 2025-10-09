@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk188764 = require("./188764.js");
 let l = function(e) {
@@ -15,9 +15,9 @@ let l = function(e) {
     children: n,
     withBorder: s = false
   } = e;
-  return (0, r.jsx)(a.Rny, {
-    children: (0, r.jsx)(a.Zbd, {
-      className: o()(i.componentPreviewWrapper, {
+  return (0, r.jsx)(o.Rny, {
+    children: (0, r.jsx)(o.Zbd, {
+      className: a()(i.componentPreviewWrapper, {
         [i.componentPreviewWrapperBordered]: s
       }),
       outline: s,

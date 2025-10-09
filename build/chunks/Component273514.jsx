@@ -19,7 +19,7 @@ let d = e => {
   let d = o.Z.getGuild(n.guild_id);
   return null == d ? null : (0, r.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       className: c.header,
       variant: "heading-sm/semibold",
       children: s.intl.string(s.t.nTe4HB)

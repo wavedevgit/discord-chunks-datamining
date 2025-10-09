@@ -110,7 +110,7 @@ function T(e) {
       children: f
     }), null != d && (0, r.jsx)("div", {
       className: I.acknowledgementContainer,
-      children: (0, r.jsx)(s.XZJ, {
+      children: (0, r.jsx)(s.Checkbox, {
         checked: g,
         onChange: k,
         label: d,

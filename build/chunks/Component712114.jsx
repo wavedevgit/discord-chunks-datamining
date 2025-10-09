@@ -33,7 +33,7 @@ function h(e) {
     children: [(0, i.jsx)("div", {
       className: p.thumbnailStackContainer,
       children: (0, i.jsx)(u.Z, {})
-    }), (0, i.jsx)(a.X6q, {
+    }), (0, i.jsx)(a.Heading, {
       className: p.header,
       color: "header-primary",
       variant: "heading-md/extrabold",
@@ -49,14 +49,14 @@ function h(e) {
       })
     }), (0, i.jsx)("div", {
       className: p.buttonsContainer,
-      children: (0, i.jsxs)(a.hE2, {
-        children: [(0, i.jsx)(a.zxk, {
+      children: (0, i.jsxs)(a.ButtonGroup, {
+        children: [(0, i.jsx)(a.Button, {
           variant: "secondary",
           text: d.intl.string(d.t["7r5Z19"]),
           onClick: function() {
             (0, s.Kw)(s.v6.CLIPS_CHANNEL_ATTACH_REMINDER), h()
           }
-        }), (0, i.jsx)(a.zxk, {
+        }), (0, i.jsx)(a.Button, {
           variant: "primary",
           text: d.intl.string(d.t.md4qKy),
           onClick: t

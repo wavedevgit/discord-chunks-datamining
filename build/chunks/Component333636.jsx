@@ -17,7 +17,7 @@ let c = function(e) {
     if (c) {
       p("");
       try {
-        await (0, r.qy)(c, {
+        await (0, i.qy)(c, {
           difficulty: null != u ? u : true,
           should_serve_invisible: null != C ? C : true
         })
@@ -31,7 +31,7 @@ let c = function(e) {
     parentComponent: "CaptchaTestModal",
     children: [(0, n.jsxs)(l.xBx, {
       className: o.header,
-      children: [(0, n.jsx)(l.X6q, {
+      children: [(0, n.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         children: "Captcha Test Tool"
       }), (0, n.jsx)(l.olH, {
@@ -41,24 +41,24 @@ let c = function(e) {
       className: o.content,
       children: [(0, n.jsx)(l.q4e, {
         value: c,
-        options: i.p,
+        options: r.p,
         onChange: e => {
-          e !== r.fw.HCAPTCHA_RQDATA && e !== r.fw.SMITE_RQDATA && T(null), e !== r.fw.HCAPTCHA_RQDATA && d(null), A(e), p("")
+          e !== i.fw.HCAPTCHA_RQDATA && e !== i.fw.SMITE_RQDATA && T(null), e !== i.fw.HCAPTCHA_RQDATA && d(null), A(e), p("")
         }
-      }), c === r.fw.HCAPTCHA_RQDATA && (0, n.jsx)(l.q4e, {
+      }), c === i.fw.HCAPTCHA_RQDATA && (0, n.jsx)(l.q4e, {
         value: u,
-        options: i.Z,
+        options: r.Z,
         onChange: e => {
-          c === r.fw.HCAPTCHA_RQDATA && d(e)
+          c === i.fw.HCAPTCHA_RQDATA && d(e)
         }
-      }), (c === r.fw.HCAPTCHA_RQDATA || c === r.fw.SMITE_RQDATA) && (0, n.jsx)(l.XZJ, {
+      }), (c === i.fw.HCAPTCHA_RQDATA || c === i.fw.SMITE_RQDATA) && (0, n.jsx)(l.Checkbox, {
         checked: null != C && C,
         onChange: e => T(e),
         label: "Should serve invisible?"
       })]
     }), (0, n.jsxs)(l.mzw, {
       className: o.footer,
-      children: [(0, n.jsx)(l.zxk, {
+      children: [(0, n.jsx)(l.Button, {
         variant: "primary",
         text: "Trigger Captcha",
         onClick: f,

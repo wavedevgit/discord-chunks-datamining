@@ -21,8 +21,8 @@ let h = l => {
   } = l, {
     error: h,
     applicationName: x
-  } = (0, t.cj)([c.Z, a.Z], () => {
-    let l = c.Z.getLastError(),
+  } = (0, t.cj)([d.Z, a.Z], () => {
+    let l = d.Z.getLastError(),
       n = null;
     if (null != l && null != l.applicationId) {
       let i = a.Z.getApplication(l.applicationId);
@@ -43,7 +43,7 @@ let h = l => {
       separator: false,
       children: [(0, r.jsx)(s.Z.Child, {
         grow: 1,
-        children: (0, r.jsx)(e.X6q, {
+        children: (0, r.jsx)(e.Heading, {
           variant: "heading-lg/semibold",
           children: u.intl.string(u.t["6kHRYG"])
         })
@@ -74,11 +74,11 @@ let h = l => {
         })]
       })
     }), (0, r.jsxs)(e.mzw, {
-      children: [(0, r.jsx)(e.zxk, {
+      children: [(0, r.jsx)(e.Button, {
         variant: "primary",
         text: u.intl.string(u.t.VdyWmJ),
         onClick: () => {
-          window.open(d.Z.getSubmitRequestURL())
+          window.open(c.Z.getSubmitRequestURL())
         }
       }), (0, r.jsx)(o.zx, {
         look: o.zx.Looks.LINK,

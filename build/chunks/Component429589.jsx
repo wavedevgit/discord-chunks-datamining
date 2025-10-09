@@ -77,7 +77,7 @@ function d(e) {
   } = h;
   return (0, r.jsx)(i.u, {
     text: b,
-    children: (0, r.jsx)(a.zxk, l({
+    children: (0, r.jsx)(a.Button, l({
       variant: f,
       size: _,
       text: E,

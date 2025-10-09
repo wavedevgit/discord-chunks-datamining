@@ -265,7 +265,7 @@ function eM(e) {
   let {
     runningGame: o,
     runningGameApplication: s
-  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([k.default], () => null == o || null == c ? null : k.default.getTrackedGameByPid(c), [o, c], l()), {
+  } = e, c = null == o ? true : o.pid, u = (0, _.e7)([j.default], () => null == o || null == c ? null : j.default.getTrackedGameByPid(c), [o, c], l()), {
     enabledLegacy: d,
     enabledOOP: f
   } = (0, _.cj)([X.Z, J.Z], () => {
@@ -290,7 +290,7 @@ function eM(e) {
     {
       legacyEnabled: D,
       oopEnabled: x
-    } = (0, _.cj)([k.default], () => k.default.getGlobalEnabledStatus()),
+    } = (0, _.cj)([j.default], () => j.default.getGlobalEnabledStatus()),
     M = (e, t) => {
       var n, r, i;
       if (null == o) return;
@@ -310,7 +310,7 @@ function eM(e) {
           b.Z.setEnabled(D, e), (0, w.ou)(e, w.OverlayToggledClientSettingType.OOP, null != (r = o.id) ? r : null)
       }(a || s) && (0, B.l)(a ? w.OverlayToggledClientSettingType.LEGACY_GAME : w.OverlayToggledClientSettingType.OOP_GAME, null != (i = o.id) ? i : null)
     },
-    j = (e, t) => {
+    k = (e, t) => {
       let n = !t && e,
         r = !x && g,
         i = !D && y,
@@ -488,7 +488,7 @@ function eM(e) {
         checked: g && x || y && D,
         disabled: G,
         onChange: e => {
-          U(e, j(e, g && x || y && D))
+          U(e, k(e, g && x || y && D))
         }
       })
     }),
@@ -532,7 +532,7 @@ function eM(e) {
   })
 }
 
-function ek(e) {
+function ej(e) {
   let {
     game: t,
     gameApplication: n
@@ -544,7 +544,7 @@ function ek(e) {
   })
 }
 
-function ej(e) {
+function ek(e) {
   let {
     rawGame: t,
     gameApplication: n,
@@ -566,7 +566,7 @@ function ej(e) {
   };
   return (0, r.jsx)(ew, {
     title: t.name,
-    icon: (0, r.jsx)(ek, {
+    icon: (0, r.jsx)(ej, {
       game: u,
       gameApplication: n
     }),
@@ -635,7 +635,7 @@ function eU() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
       className: Chunk607547.scroller,
-      children: o.map((e, t) => (0, r.jsx)(ej, {
+      children: o.map((e, t) => (0, r.jsx)(ek, {
         rawGame: e,
         clientSettingType: w.OverlayToggledClientSettingType.LEGACY_GAME,
         supportDisabled: l,
@@ -708,7 +708,7 @@ function eG() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
       className: Chunk607547.scroller,
-      children: Chunk348327.map((e, t) => (0, r.jsx)(ej, {
+      children: Chunk348327.map((e, t) => (0, r.jsx)(ek, {
         rawGame: e,
         clientSettingType: w.OverlayToggledClientSettingType.OOP_GAME,
         gameApplication: l[t],
@@ -812,7 +812,7 @@ function eF() {
   }, o = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk607547.notificationSettingsContainer,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t.xOE5bG)
@@ -860,7 +860,7 @@ function eH(e) {
       selfStream: false,
       discoverable: r
     }),
-    user: new z.Z({
+    user: new z.default({
       id: i,
       username: e
     }),
@@ -1038,7 +1038,7 @@ function eK() {
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk607547.mainTitleContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/medium",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk388032.t.jzjJQk)
@@ -1057,7 +1057,7 @@ function eK() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk607547.closeCircleButton,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.Q26diI),
         onClick: () => require()
@@ -1072,7 +1072,7 @@ function ez(e) {
   let {
     runningGame: t,
     runningGameApplication: n
-  } = e, a = null == n ? true : n.id, o = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, j.H8)(t.pid), [t]), l = (0, M.Z)({
+  } = e, a = null == n ? true : n.id, o = (0, _.e7)([U.Z], () => U.Z.isLimitedInteractionOverrideEnabled(a), [a]), s = i.useMemo(() => null != t && (0, k.H8)(t.pid), [t]), l = (0, M.Z)({
     location: "overlay_user_settings"
   }), {
     disableClickableRegions: c,

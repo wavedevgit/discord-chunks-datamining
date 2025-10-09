@@ -1,7 +1,7 @@
 /** Chunk was on 42483 **/
 /** chunk id: 215292, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  F: () => g,
+  F: () => L,
   Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -19,11 +19,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk308250 = require("./308250.js");
 
-function g(t) {
+function L(t) {
   let {
     createdGuildId: n,
     hasFooter: e = true,
-    onClose: g,
+    onClose: L,
     onChannelPromptCompleted: x,
     isSlideReady: T
   } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), U = (0, m.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), f = l.useRef(null);
@@ -46,14 +46,14 @@ function g(t) {
       y(false)
     }, [z, E, x]),
     N = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(r.zxk, {
+      children: [(0, i.jsx)(r.Button, {
         variant: "primary",
         text: _.intl.string(_.t.i4jeWV),
         onClick: j,
         disabled: 0 === E.length,
         loading: D
       }), (0, i.jsx)(s.zx, {
-        className: L.skipButton,
+        className: g.skipButton,
         look: s.zx.Looks.BLANK,
         size: s.zx.Sizes.MIN,
         onClick: x,
@@ -63,31 +63,31 @@ function g(t) {
   return {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(r.xBx, {
-        className: L.header,
+        className: g.header,
         direction: o.Z.Direction.VERTICAL,
         separator: false,
         children: [null != z && (0, i.jsx)(C.Z, {
           guild: z
         }), (0, i.jsx)(r.Text, {
-          className: L.guildName,
+          className: g.guildName,
           color: "header-primary",
           variant: "text-sm/semibold",
           children: null == z ? true : z.name
-        }), (0, i.jsx)(r.X6q, {
-          className: L.title,
+        }), (0, i.jsx)(r.Heading, {
+          className: g.title,
           variant: "heading-sm/semibold",
           children: _.intl.string(_.t["8VRa7e"])
         }), (0, i.jsx)(r.Text, {
-          className: L.subtitle,
+          className: g.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
           children: _.intl.string(_.t["+855Pj"])
-        }), null != g && (0, i.jsx)(r.olH, {
-          className: L.closeButton,
-          onClick: g
+        }), null != L && (0, i.jsx)(r.olH, {
+          className: g.closeButton,
+          onClick: L
         })]
       }), (0, i.jsxs)(r.hzk, {
-        className: L.channelPrompt,
+        className: g.channelPrompt,
         children: [(0, i.jsx)("form", {
           onSubmit: j,
           children: (0, i.jsx)(r.oil, {
@@ -116,6 +116,6 @@ function g(t) {
 function x(t) {
   let {
     content: n
-  } = g(t);
+  } = L(t);
   return n
 }

@@ -18,7 +18,7 @@ let o = e => {
     days: o,
     hours: c,
     minutes: u
-  } = (0, s.Z)(t), d = function(e, t, n) {
+  } = (0, i.Z)(t), d = function(e, t, n) {
     let r = e => "".concat(e.toString().padStart(2, "0"));
     return [r(e), r(t), r(n)].join(":")
   }(o, c, u);
@@ -40,7 +40,7 @@ let o = e => {
       tag: "div",
       children: e
     }, t)), (0, r.jsx)(l.nn4, {
-      children: i.intl.format(i.t.j6IyVV, {
+      children: s.intl.format(s.t.j6IyVV, {
         days: o,
         hours: c,
         minutes: u

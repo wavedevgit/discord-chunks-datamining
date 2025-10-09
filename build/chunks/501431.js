@@ -93,9 +93,9 @@ let p = {
         colorFilters: n,
         themeFilters: r,
         orbEligible: l,
-        searchQuery: s
+        searchQuery: i
       } = t();
-      return [e, n, r].some(e => e.size > 0) || l || "" !== s
+      return [e, n, r].some(e => e.size > 0) || l || "" !== i
     },
     hasRelevanceFilters: () => {
       let {
@@ -221,8 +221,8 @@ let p = {
       colorFilters: n,
       themeFilters: r,
       orbEligible: l,
-      sort: s,
-      searchQuery: i,
+      sort: i,
+      searchQuery: s,
       queryPageSize: a,
       queryPageOffset: o
     } = e;
@@ -233,9 +233,9 @@ let p = {
       orbs_eligible: !!l || true,
       offset: o,
       limit: a,
-      sort_type: s.sortType,
-      sort_direction: s.sortDirection,
-      search: "" !== i ? i : true
+      sort_type: i.sortType,
+      sort_direction: i.sortDirection,
+      search: "" !== s ? s : true
     }
   },
   v = () => {
@@ -246,7 +246,7 @@ let p = {
     } = (0, Chunk149705.a)(), l = (0, Chunk870289.FF)("collectibles_shop_header_bar");
     Chunk647438.useEffect(() => {
       let r = r => {
-        let s = async () => {
+        let i = async () => {
           n(true);
           try {
             let t = await (0, o.y)(r);
@@ -270,13 +270,13 @@ let p = {
             n(false)
           }
         };
-        l && 0 !== r.limit && s()
+        l && 0 !== r.limit && i()
       };
       Chunk647438(E(b.getState()));
-      let s = b.subscribe(E, Chunk647438, {
+      let i = b.subscribe(E, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        i = b.subscribe(e => e.hasFilters(), (e, t) => {
+        s = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

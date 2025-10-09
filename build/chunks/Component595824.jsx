@@ -2,17 +2,17 @@
 /** chunk id: 595824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => f,
-  h: () => _
-});
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk402453 = require("./402453.jsx"),
+  X: () => _,
+  h: () => p
+}), require("./953529.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk402453 = require("./402453.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk982125 = require("./982125.jsx"),
   Chunk910989 = require("./910989.jsx");
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +21,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,30 +45,53 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e) {
-  return (0, i.A)("Checkbox") ? (0, r.jsx)(o.C, c({}, e)) : (0, r.jsx)(_, c({}, e))
+function _(e) {
+  return (0, a.A)("Checkbox") ? (0, r.jsx)(s.C, u({}, e)) : (0, r.jsx)(p, u({}, e))
 }
 
-function _(e) {
+function p(e) {
   let {
     label: t,
     checked: n,
-    onChange: i,
-    labelType: o = "primary"
-  } = e, l = null != t && "" !== t ? (0, r.jsx)(a.x, {
-    variant: "text-md/normal",
-    color: "primary" === o ? "text-primary" : "text-secondary",
-    children: t
+    onChange: a,
+    labelType: s = "primary",
+    description: c,
+    leadingIcon: d
+  } = e, _ = null != t && "" !== t ? (0, r.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
+      style: {
+        display: "flex",
+        alignItems: "center",
+        gap: "8px"
+      },
+      children: [null != d && i.createElement(d, {
+        size: "sm",
+        color: "currentColor",
+        "aria-hidden": true,
+        focusable: false
+      }), (0, r.jsx)(o.x, {
+        variant: "text-md/normal",
+        color: "primary" === s ? "text-primary" : "text-secondary",
+        children: t
+      })]
+    }), null != c && "" !== c && (0, r.jsx)(o.x, {
+      variant: "text-sm/normal",
+      color: "text-secondary",
+      style: {
+        marginTop: "4px"
+      },
+      children: c
+    })]
   }) : null;
-  return (0, r.jsx)(s.$q, d(c({}, e), {
+  return (0, r.jsx)(l.$q, f(u({}, e), {
     value: n,
-    onChange: (e, t) => null == i ? true : i(t),
-    children: l
+    onChange: (e, t) => null == a ? true : a(t),
+    children: _
   }))
 }

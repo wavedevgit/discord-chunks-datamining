@@ -39,19 +39,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk416439 = require("./416439.js");
 
-function j(e) {
+function k(e) {
   let {
     application: t,
     sku: n,
     isEmbeddedIAP: i
   } = e;
   returntrue !== i ? null : (0, r.jsxs)("div", {
-    className: k.skuHeading,
+    className: j.skuHeading,
     children: [(0, r.jsx)(m.Z, {
       game: t
-    }), (0, r.jsx)(c.X6q, {
+    }), (0, r.jsx)(c.Heading, {
       variant: "heading-lg/bold",
-      className: k.skuHeadingText,
+      className: j.skuHeadingText,
       children: n.name
     })]
   })
@@ -112,22 +112,22 @@ function U(e) {
   }, [et, en, Z, er.applicationId, er.id, es, X, J]);
   let ep = null != ei && ei.length > 0 && (Z === I.c || null === e_) && Q ? E.w.SELECT_PAYMENT_METHOD : true;
   return (0, r.jsxs)("div", {
-    className: k.stepBody,
+    className: j.stepBody,
     children: [(0, r.jsx)(E.Y, {
       paymentRestrictionBannerType: ep
     }), el ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.WARNING,
-      className: k.errorBlock,
+      className: j.errorBlock,
       children: M.intl.string(M.t.OvMyMT)
     }, "TEST_MODE") : null, (0, A.yE)(U.flags, x.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
-      className: k.errorBlock,
+      className: j.errorBlock,
       children: M.intl.string(M.t.tAmECg)
-    }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(j, {
+    }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(k, {
       application: U,
       sku: er,
       isEmbeddedIAP: W
@@ -142,7 +142,7 @@ function U(e) {
         skuPricePreview: es
       }) : null == z ? (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.WANDERING_CUBES,
-        className: k.invoiceSpinner
+        className: j.invoiceSpinner
       }) : (0, r.jsx)(L.E, {
         sku: er,
         value: ""
@@ -164,7 +164,7 @@ function U(e) {
         showWithdrawalWaiver: eu,
         disabled: ed,
         subscriptionPlan: null,
-        finePrintClassname: k.fineprint,
+        finePrintClassname: j.fineprint,
         purchaseType: K,
         isGift: J,
         checkboxLabel: er.productLine === x.POd.COLLECTIBLES ? M.intl.format(M.t["1EdAlZ"], {

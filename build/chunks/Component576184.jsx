@@ -40,7 +40,7 @@ class u extends Chunk647438.Component {
       getName: s,
       url: o
     } = this.props.browser;
-    return e = null != Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.eee, {
+    return e = null != Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       className: Chunk827414.btn,
       href: Chunk647438,
       children: Chunk388032.intl.string(Chunk388032.t["1WjMbG"])

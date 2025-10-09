@@ -27,7 +27,7 @@ let c = (r = function(e) {
   return e
 }({}, o().defaultRules.link), i = i = {
   react: function(e, t, n) {
-    return (0, l.jsx)(s.eee, {
+    return (0, l.jsx)(s.Anchor, {
       href: e.target,
       target: "_blank",
       children: t(e.content, n)

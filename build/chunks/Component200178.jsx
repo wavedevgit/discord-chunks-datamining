@@ -48,7 +48,7 @@ function p() {
           onChange: exports,
           onClear: () => exports(""),
           placeholder: "Filter by words starting with..."
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           size: "sm",
           text: "Clear Statistics",

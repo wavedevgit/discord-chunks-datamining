@@ -60,7 +60,7 @@ async function f(e) {
     rejectWithError: false
   })).body.map(e => d(c({}, e), {
     application: "application" in e && null != e.application ? a.ZN.createFromServer(e.application) : true,
-    user: "user" in e && null != e.user ? new o.Z(e.user) : true
+    user: "user" in e && null != e.user ? new o.default(e.user) : true
   }));
   return i.Z.dispatch({
     type: "GUILD_SETTINGS_LOADED_INTEGRATIONS",

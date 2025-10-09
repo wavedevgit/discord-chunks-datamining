@@ -12,11 +12,11 @@ require.d(exports, {
   aE: () => F,
   bu: () => er,
   kb: () => W,
-  s9: () => q,
+  s9: () => Y,
   t9: () => Q,
   tr: () => et,
   vv: () => $,
-  zM: () => Y,
+  zM: () => q,
   zy: () => K
 }), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./388685.js"), require("./539854.js"), require("./415506.js"), require("./704826.js"), require("./997841.js"), require("./642613.js"), require("./392711.js");
 var r, i, Chunk729594 = require("./729594.js"),
@@ -135,7 +135,7 @@ function V(e) {
       channelId: e.channel_id
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
-    r = null != e.author ? new m.Z(e.author) : true,
+    r = null != e.author ? new m.default(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,
@@ -205,7 +205,7 @@ function W(e, t) {
   })
 }
 
-function q(e) {
+function Y(e) {
   let t;
   if (null == e) returnfalse;
   let n = window.location.origin;
@@ -218,7 +218,7 @@ function q(e) {
   return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(D.test(e) && D.test(n))
 }
 
-function Y(e, t, n) {
+function q(e, t, n) {
   let r = _.Z.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }

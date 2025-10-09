@@ -72,9 +72,9 @@ let w = 10,
   L = 4,
   x = 5,
   M = 8,
-  k = 10;
+  j = 10;
 
-function j(e) {
+function k(e) {
   var t;
   let n = {
       [I.S7.PACKAGE_ACTION_ADVENTURE]: S.t.PYFVdX,
@@ -107,7 +107,7 @@ let U = e => {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-primary",
-            children: j(t)
+            children: k(t)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-tertiary",
@@ -222,7 +222,7 @@ function Z(e) {
     y = (0, a.Wu)([f.Z], () => o.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, p.z6)(e.applicationId)).slice(0, w)),
     O = i.useMemo(() => {
       let e = y.length;
-      return e <= L ? L - e : e === x ? 0 : e <= M ? M - e : k - e
+      return e <= L ? L - e : e === x ? 0 : e <= M ? M - e : j - e
     }, [y.length]);
   if (i.useEffect(() => {
       b && (g.default.track(T.rMx.QUEST_GAME_SHEET_ERROR, {

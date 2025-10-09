@@ -44,18 +44,18 @@ function C(e) {
     transitionState: L,
     openedAt: M,
     onClose: U,
-    sourceAnalyticsLocations: k = []
-  } = e, B = C === N.ME ? true : C, F = (0, p.ZP)(t.id, B), V = u.ZP.getName(B, _, t), G = (0, a.Dt)(), {
+    sourceAnalyticsLocations: B = []
+  } = e, k = C === N.ME ? true : C, F = (0, p.ZP)(t.id, k), V = u.ZP.getName(k, _, t), G = (0, a.Dt)(), {
     analyticsLocations: z
-  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), W = (0, m.ZB)({
+  } = (0, s.ZP)([...B, o.Z.USER_PROFILE_MODAL]), W = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
-    guildId: B,
+    guildId: k,
     channelId: _,
     messageId: w,
     roleId: D
-  }), K = i.useRef(null), Y = (0, c.X)(K);
+  }), K = i.useRef(null), H = (0, c.X)(K);
   return (0, l.jsx)(s.Gt, {
     value: z,
     children: (0, l.jsx)(m.Mt, {
@@ -99,7 +99,7 @@ function C(e) {
                 children: (0, l.jsx)(f.Z, {
                   user: t,
                   displayProfile: F,
-                  guildId: B,
+                  guildId: k,
                   channelId: _,
                   themeType: P.l.MODAL
                 })
@@ -109,7 +109,7 @@ function C(e) {
               children: [(0, l.jsx)(y.Z, {
                 className: A.username,
                 user: t,
-                guildId: B,
+                guildId: k,
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",
@@ -145,7 +145,7 @@ function C(e) {
                     heading: T.intl.string(T.t["A//N4u"]),
                     children: (0, l.jsx)(v.Z, {
                       userId: t.id,
-                      guildId: B,
+                      guildId: k,
                       tooltipDelay: O.vB
                     })
                   })]
@@ -155,7 +155,7 @@ function C(e) {
           })
         }), (null == F ? true : F.profileEffect) != null && (0, l.jsx)(d.Z, {
           skuId: null == F || null == (n = F.profileEffect) ? true : n.skuId,
-          isHovering: Y
+          isHovering: H
         })]
       })
     })

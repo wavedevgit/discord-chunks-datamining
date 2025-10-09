@@ -83,14 +83,14 @@ function D() {
     x = Chunk435064.Z.isDecoupledGameClippingEnabled(),
     M = (0, Chunk779618.Z)(Chunk131951.Z),
     {
-      showClipsHeaderEntrypoint: k
+      showClipsHeaderEntrypoint: j
     } = Chunk924557.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     });
   o()(null != L, "Save clip keybind unset");
-  let j = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+  let k = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     U = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
@@ -106,47 +106,47 @@ function D() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
         count: 2
       })
-    }], [j]),
+    }], [k]),
     G = Chunk647438.useMemo(() => [{
-      value: Chunk37113.LY.RESOLUTION_480,
+      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
-        resolution: Chunk37113.LY.RESOLUTION_480
+        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_720,
+      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
-        resolution: Chunk37113.LY.RESOLUTION_720
+        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_1080,
+      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
-        resolution: Chunk37113.LY.RESOLUTION_1080
+        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_1440,
+      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
-        resolution: Chunk37113.LY.RESOLUTION_1440
+        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440
       })
     }, {
-      value: Chunk37113.LY.RESOLUTION_SOURCE,
+      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzs)
-    }], [j]),
+    }], [k]),
     B = Chunk647438.useMemo(() => [{
-      value: Chunk37113.ws.FPS_15,
+      value: Chunk37113.ApplicationStreamFPS.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
-        fps: Chunk37113.ws.FPS_15
+        fps: Chunk37113.ApplicationStreamFPS.FPS_15
       })
     }, {
-      value: Chunk37113.ws.FPS_30,
+      value: Chunk37113.ApplicationStreamFPS.FPS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
-        fps: Chunk37113.ws.FPS_30
+        fps: Chunk37113.ApplicationStreamFPS.FPS_30
       })
     }, {
-      value: Chunk37113.ws.FPS_60,
+      value: Chunk37113.ApplicationStreamFPS.FPS_60,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
-        fps: Chunk37113.ws.FPS_60
+        fps: Chunk37113.ApplicationStreamFPS.FPS_60
       })
-    }], [j]),
+    }], [k]),
     Z = Chunk647438.useCallback(e => {
       c.Z.setKeybind(w(R({}, L), {
         shortcut: e
@@ -188,7 +188,7 @@ function D() {
           trackAnalytics: true
         })
       })]
-    }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["3zwNf3"]),
         description: Chunk388032.intl.string(Chunk388032.t.m4Cjj4),

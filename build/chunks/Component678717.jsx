@@ -406,7 +406,7 @@ function eO(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(B.Gk, {
+  }), (0, a.jsxs)(z.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
       className: eC.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -426,7 +426,7 @@ function eO(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(B.Br, {
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(z.Br, {
       className: ey.layerContainer
     })]
   })

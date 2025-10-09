@@ -1,7 +1,7 @@
 /** Chunk was on 50118 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => D
+  m: () => k
 }), require("./997841.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,9 +36,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk201512 = require("./201512.js");
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
-  k = "vc-activities-".concat((0, Chunk772848.Z)());
+  L = "vc-activities-".concat((0, Chunk772848.Z)());
 
-function L(e) {
+function D(e) {
   var t;
   let n, {
       channel: l,
@@ -110,7 +110,7 @@ function L(e) {
     })]
   }))
 }
-let D = Chunk647438.forwardRef(function(e, t) {
+let k = Chunk647438.forwardRef(function(e, t) {
   var n;
   let {
     channel: l,
@@ -135,7 +135,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
   let E = (0, O.bp)(),
     {
       analyticsLocations: R,
-      newestAnalyticsLocation: D
+      newestAnalyticsLocation: k
     } = (0, m.ZP)(f.Z.ACTIVITIES_MINI_SHELF),
     U = E === A.IlC.POPOUT,
     B = (n = l.getGuildId(), (0, Z.Z)({
@@ -160,9 +160,9 @@ let D = Chunk647438.forwardRef(function(e, t) {
         type: "contextless"
       },
       openInPopout: U,
-      analyticsLocation: D
+      analyticsLocation: k
     }), u(), g()
-  }, [l, D, g, u, U]), F = r.useCallback(e => {
+  }, [l, k, g, u, U]), F = r.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
@@ -173,13 +173,13 @@ let D = Chunk647438.forwardRef(function(e, t) {
     children: (0, i.jsx)(j.Z, {
       children: (0, i.jsxs)(p.VqE, {
         ref: t,
-        "aria-labelledby": k,
+        "aria-labelledby": L,
         className: b,
         children: [(0, i.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, i.jsx)(p.nn4, {
             children: (0, i.jsx)(p.H, {
-              id: k,
+              id: L,
               children: w.intl.string(w.t["2lnYtL"])
             })
           })
@@ -213,7 +213,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
                 className: M.titleRightIcon
               })]
             })]
-          }), (0, i.jsx)(L, {
+          }), (0, i.jsx)(D, {
             openInPopout: U,
             channel: l,
             onClick: () => {

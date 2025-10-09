@@ -53,7 +53,7 @@ function v() {
         src: Chunk492764,
         className: Chunk807284.image,
         alt: ""
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk807284.header,
         variant: "heading-xl/semibold",
         color: "text-default",
@@ -72,7 +72,7 @@ function v() {
         src: Chunk235810,
         className: Chunk807284.image,
         alt: ""
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk807284.header,
         variant: "heading-xl/semibold",
         color: "text-default",

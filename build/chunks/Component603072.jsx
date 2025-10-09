@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 603072, original params: e,t,n (module,exports,require) **/
+/** chunk id: 603072, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => w
 }), require("./388685.js");
@@ -30,19 +30,19 @@ var Chunk951288 = require("./951288.js"),
 
 function I(e) {
   let {
-    guild: t
-  } = e, n = (0, C.Z)(t);
+    guild: n
+  } = e, t = (0, C.Z)(n);
   r.useEffect(() => {
     (0, m.Q3)(s.z.CHANNEL_BROWSER_NEW_BADGE_NUX, {
       dismissAction: y.L.DISMISS
     })
   });
-  let i = n ? O.intl.formatToPlainString(O.t.uqZgYW, {
-      guildName: t.name
+  let i = t ? O.intl.formatToPlainString(O.t.uqZgYW, {
+      guildName: n.name
     }) : O.intl.formatToPlainString(O.t.velJeX, {
-      guildName: t.name
+      guildName: n.name
     }),
-    a = n ? O.intl.string(O.t.h9mGOD) : O.intl.string(O.t.et6wam);
+    a = t ? O.intl.string(O.t.h9mGOD) : O.intl.string(O.t.et6wam);
   return (0, u.Tt)({
     location: i
   }), (0, l.jsxs)(h.Z, {
@@ -50,7 +50,7 @@ function I(e) {
     innerClassname: N.innerHeader,
     hideSearch: true,
     channelId: v.oC.CUSTOMIZE_COMMUNITY,
-    guildId: t.id,
+    guildId: n.id,
     children: [(0, l.jsx)(h.Z.Icon, {
       icon: d.H$4,
       "aria-hidden": true
@@ -62,16 +62,16 @@ function I(e) {
 
 function w(e) {
   let {
-    guildId: t,
-    selectedSection: n
-  } = e, i = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), s = (0, C.Z)(i), [u, m] = r.useState(null != n ? n : j.l7.CUSTOMIZE);
+    guildId: n,
+    selectedSection: t
+  } = e, i = (0, o.e7)([_.Z], () => _.Z.getGuild(n)), s = (0, C.Z)(i), [u, m] = r.useState(null != t ? t : j.l7.CUSTOMIZE);
   r.useEffect(() => {
-    null != n && m(n)
-  }, [n]);
+    null != t && m(t)
+  }, [t]);
   let h = (0, o.e7)([x.ZP], () => x.ZP.getCurrentSidebarChannelId(v.oC.CHANNEL_BROWSER)),
     y = null != h && u === j.l7.BROWSE,
-    w = (0, o.e7)([g.Z], () => g.Z.getNewChannelIds(t).size > 0),
-    P = (0, p.fU)(t);
+    w = (0, o.e7)([g.Z], () => g.Z.getNewChannelIds(n).size > 0),
+    P = (0, p.fU)(n);
   return null == i ? null : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)("div", {
       className: a()(Z.chat, {
@@ -107,13 +107,13 @@ function w(e) {
           switch (u) {
             case j.l7.CUSTOMIZE:
               return (0, l.jsx)(b.Z, {
-                guildId: t,
+                guildId: n,
                 onBrowseChannels: () => m(j.l7.BROWSE)
               });
             case j.l7.BROWSE:
             default:
               return (0, l.jsx)(f.Z, {
-                guildId: t
+                guildId: n
               })
           }
         })()]

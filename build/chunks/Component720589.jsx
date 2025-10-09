@@ -62,15 +62,15 @@ class O extends Chunk647438.PureComponent {
     } = this.state, {
       onClose: r
     } = this.props;
-    return (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+    return (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
       direction: "horizontal-reverse",
-      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t["3aOv+v"]),
         loading: require,
         onClick: this.handleFollow,
         disabled: null == module || null == exports
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "secondary",
         text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
         onClick: Chunk647438
@@ -157,7 +157,7 @@ class O extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk360242.body,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
         children: Chunk388032.intl.string(Chunk388032.t.mvPFbG)

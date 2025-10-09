@@ -69,7 +69,7 @@ function P(e, t) {
 }
 let w = () => (0, Chunk951288.jsx)("div", {
     className: Chunk893296.comparisonTablePill,
-    children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk893296.mostPopularText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4e)
@@ -77,7 +77,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
   }),
   D = () => (0, Chunk951288.jsx)("div", {
     className: Chunk893296.comparisonTablePill,
-    children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk893296.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.IBYG5e)
@@ -158,7 +158,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       title: t,
       rows: n
@@ -179,7 +179,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       }), e.id))]
     })
   },
-  j = e => {
+  k = e => {
     let t, {
         premiumType: n
       } = e,
@@ -198,7 +198,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       children: [(0, Chunk951288.jsx)("th", {
         scope: "col",
         className: Chunk893296.headerLabelCell,
-        children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
           className: Chunk893296.__invalid_textColor,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.XXENra)
@@ -206,13 +206,13 @@ let w = () => (0, Chunk951288.jsx)("div", {
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
         className: Chunk893296.headerCell,
-        children: (0, Chunk951288.jsx)(j, {
+        children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.PremiumTypes.TIER_0
         })
       }), (0, Chunk951288.jsx)("th", {
         scope: "col",
         className: o()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
-        children: (0, Chunk951288.jsx)(j, {
+        children: (0, Chunk951288.jsx)(k, {
           premiumType: Chunk474936.PremiumTypes.TIER_2
         })
       })]
@@ -267,7 +267,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
       L = (0, E.Aq)(y.Xh.PREMIUM_MONTH_TIER_2),
       x = "".concat(L, "/").concat((0, h.eP)(y.rV.MONTH)),
       M = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_0),
-      j = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
+      k = (0, h.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
       B = (0, b.e)();
     if (!I || !T) return null;
     n = l ? null : null != S ? (0, r.jsx)(D, {}) : (0, r.jsx)(w, {});
@@ -295,10 +295,10 @@ let w = () => (0, Chunk951288.jsx)("div", {
             children: [(0, r.jsx)(U, {}), (0, r.jsxs)("tbody", {
               children: [(0, r.jsx)(G, {
                 tier0MonthlyPrice: M,
-                tier2MonthlyPrice: j,
+                tier2MonthlyPrice: k,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: x
-              }), B.map(e => (0, i.createElement)(k, P(N({}, e), {
+              }), B.map(e => (0, i.createElement)(j, P(N({}, e), {
                 key: e.id
               })))]
             })]

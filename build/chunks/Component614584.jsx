@@ -68,9 +68,9 @@ let S = Chunk647438.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, C.Uj)(M), k = (0, u.p)(), L = s.d.useExperiment({
+  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, C.Uj)(M), L = (0, u.p)(), D = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, D = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
+  }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
@@ -99,23 +99,23 @@ let S = Chunk647438.memo(function(e) {
       let t = {
           formatInline: true,
           allowLinks: true,
-          shouldFilterKeywords: k
+          shouldFilterKeywords: L
         },
         n = e.isFirstMessageInForumPost(P) ? E(j({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: L
+          allowGameMentions: D
         }) : E(j({}, t), {
           formatInline: true,
-          allowHeading: D,
-          allowList: D,
-          allowGameMentions: L
+          allowHeading: k,
+          allowList: k,
+          allowGameMentions: D
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, D, k, L]), {
+  }, [M, R, P, k, L, D]), {
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: H
   } = (0, l.cj)([m.Z], () => ({
@@ -126,12 +126,12 @@ let S = Chunk647438.memo(function(e) {
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, C.Uj)(n);
+  }, [N]), Y = (0, C.Uj)(n);
   return (0, i.jsx)(y.Z, {
     repliedAuthor: R,
     baseMessage: n,
     channel: P,
-    baseAuthor: q,
+    baseAuthor: Y,
     referencedMessage: S,
     content: U,
     compact: I,

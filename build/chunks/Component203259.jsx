@@ -26,7 +26,7 @@ function u(e) {
     },
     position: "bottom",
     color: l.FGA.PRIMARY,
-    children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(l.Heading, {
       variant: "heading-md/extrabold",
       children: s.intl.format(s.t["+qxkzM"], {
         count: u.newClipIds.length
@@ -37,7 +37,7 @@ function u(e) {
         color: i.zx.Colors.TRANSPARENT,
         onClick: a.eL,
         children: s.intl.string(s.t.WAI6xs)
-      }), (0, r.jsx)(l.zxk, {
+      }), (0, r.jsx)(l.Button, {
         variant: "primary",
         text: s.intl.string(s.t.tQPBmp),
         onClick: t

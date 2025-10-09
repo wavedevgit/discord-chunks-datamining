@@ -73,7 +73,7 @@ class T extends Chunk647438.PureComponent {
       invite: e,
       hideDiscriminator: t,
       hideInviteCode: s
-    } = this.props, r = new Chunk598077.Z(module.inviter);
+    } = this.props, r = new Chunk598077.default(module.inviter);
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       className: a()(Chunk525717.row, Chunk620842.card),
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
@@ -142,7 +142,7 @@ class A extends Chunk647438.PureComponent {
       oldFormErrors: true,
       rejectWithError: true
     }).then(e => {
-      let t = e.body.map(e => new C.Z(R(S({}, e), {
+      let t = e.body.map(e => new Z.Z(R(S({}, e), {
         maxUses: e.max_uses,
         maxAge: e.max_age,
         createdAt: e.created_at
@@ -187,7 +187,7 @@ class A extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.RMI, {
         items: Chunk120356,
         children: e => {
-          let t = new w.Z(e.inviter);
+          let t = new f.default(e.inviter);
           return (0, n.jsxs)(u.SCH, {
             id: e.code,
             children: [(0, n.jsx)(u.pj1, {

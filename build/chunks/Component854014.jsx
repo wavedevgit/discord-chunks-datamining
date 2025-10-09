@@ -41,27 +41,27 @@ function b(e) {
     stronglyDiscouragedCustomComponent: p,
     icon: j,
     trailing: v
-  } = t, x = l.useMemo(() => t.layout[0], [t]), y = null != o && o.key === (null == x ? true : x.key), h = m(), g = null != x ? () => {
-    i(x.key), b(false)
+  } = t, y = l.useMemo(() => t.layout[0], [t]), x = null != o && o.key === (null == y ? true : y.key), h = m(), g = null != y ? () => {
+    i(y.key), b(false)
   } : t.onClick, O = l.useMemo(() => {
     var e;
-    return null != (e = null == x ? true : x.layout.flatMap(e => e.layout)) ? e : []
-  }, [x]);
+    return null != (e = null == y ? true : y.layout.flatMap(e => e.layout)) ? e : []
+  }, [y]);
   return null != p ? (0, r.jsxs)(f, {
     onClick: g,
-    active: y,
+    active: x,
     children: [(0, r.jsx)(p, {}), null != v && (0, r.jsx)("div", {
       className: d.itemContent,
       children: (0, r.jsx)(c.W, {
         trailing: v,
         visibleContent: n,
-        isSelected: y
+        isSelected: x
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f, {
       onClick: g,
-      active: y,
+      active: x,
       children: [(0, r.jsxs)("div", {
         className: d.itemContent,
         children: [(0, r.jsx)(j, {
@@ -78,10 +78,10 @@ function b(e) {
         children: (0, r.jsx)(c.W, {
           trailing: v,
           visibleContent: n,
-          isSelected: y
+          isSelected: x
         })
       })]
-    }), y && O.length > 1 && (0, r.jsx)(u.Z, {
+    }), x && O.length > 1 && (0, r.jsx)(u.Z, {
       categories: O
     })]
   })

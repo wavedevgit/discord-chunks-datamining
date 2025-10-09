@@ -117,7 +117,7 @@ function h(e) {
     listType: v = "icon",
     index: I,
     noInset: T = false
-  } = e, S = null != p ? (0, r.jsx)(o.zxk, {
+  } = e, S = null != p ? (0, r.jsx)(o.Button, {
     variant: h,
     size: m,
     text: p,
@@ -136,7 +136,7 @@ function h(e) {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === v && null != I ? (0, r.jsx)(o.X6q, {
+      children: ["numbered" === v && null != I ? (0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: s.number,
@@ -191,7 +191,7 @@ function m(e) {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === g && null != E ? (0, r.jsx)(o.X6q, {
+      children: ["numbered" === g && null != E ? (0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: s.number,

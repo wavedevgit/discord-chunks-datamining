@@ -1,7 +1,7 @@
 /** Chunk was on 82560 **/
 /** chunk id: 391312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,9 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557313 = require("./557313.js");
 
-function b(e) {
+function f(e) {
   var t, r;
-  let [b, u] = o.useState(false);
+  let [f, b] = o.useState(false);
   return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -33,23 +33,25 @@ function b(e) {
     }
     return e
   }({}, e), r = r = {
-    header: l.intl.string(l.t.pjYu09),
-    confirmText: l.intl.string(l.t.zVZXRU),
-    cancelText: l.intl.string(l.t["ETE/oK"]),
+    header: a.intl.string(a.t.pjYu09),
+    confirmText: a.intl.string(a.t.zVZXRU),
+    cancelText: a.intl.string(a.t["ETE/oK"]),
     onConfirm: () => {
-      (0, a.l)(true)
+      (0, l.l)(true)
     },
     confirmButtonColor: c.zx.Colors.BRAND,
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: l.intl.format(l.t["0eydys"], {})
-    }), (0, n.jsx)(c.VL, {
-      className: p.checkboxMargin,
-      checked: b,
-      onChange: () => {
-        (0, s.E)(), u(true)
-      },
-      label: l.intl.string(l.t["50TyjY"])
+      children: a.intl.format(a.t["0eydys"], {})
+    }), (0, n.jsx)("div", {
+      className: u.checkboxMargin,
+      children: (0, n.jsx)(i.Checkbox, {
+        checked: f,
+        onChange: () => {
+          (0, s.E)(), b(true)
+        },
+        label: a.intl.string(a.t["50TyjY"])
+      })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

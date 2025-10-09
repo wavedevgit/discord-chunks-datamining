@@ -6,9 +6,9 @@ require.d(exports, {
   Lk: () => Z,
   Xg: () => F,
   ZP: () => M,
-  c7: () => k,
+  c7: () => j,
   j3: () => V,
-  jO: () => j,
+  jO: () => k,
   ks: () => B
 }), require("./358797.js"), require("./539854.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -109,7 +109,7 @@ function M(e) {
     className: N.wrapper,
     children: [s ? (0, r.jsx)(f.$jN, {}) : null, (0, r.jsx)("div", {
       className: o()(N.header, i)
-    }), (0, r.jsx)(f.X6q, {
+    }), (0, r.jsx)(f.Heading, {
       variant: "heading-lg/bold",
       className: N.text,
       children: t
@@ -122,13 +122,13 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   return (0, r.jsx)(M, D(P({}, e), {
     headerClassName: N.headerSuccess
   }))
 }
 
-function j(e) {
+function k(e) {
   var {
     guild: t,
     application: n
@@ -198,7 +198,7 @@ function U(e) {
       className: N.authorizedSuccessSubtext,
       children: s
     });
-  return (0, r.jsx)(k, P({
+  return (0, r.jsx)(j, P({
     message: o,
     footer: l
   }, a))
@@ -241,7 +241,7 @@ function G(e) {
         })
       }), (0, r.jsxs)("div", {
         className: N.authorizedSuccessExternalCopy,
-        children: [(0, r.jsx)(f.X6q, {
+        children: [(0, r.jsx)(f.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
           children: C.intl.format(C.t["1Q+p1t"], {

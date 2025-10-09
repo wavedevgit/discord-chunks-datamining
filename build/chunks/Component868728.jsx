@@ -16,14 +16,14 @@ function d(e) {
     onDismiss: n,
     theme: d
   } = e;
-  return (0, l.jsxs)(i.Fragment, {
-    children: [(0, l.jsx)(a.zxk, {
+  return (0, i.jsxs)(l.Fragment, {
+    children: [(0, i.jsx)(r.Button, {
       variant: "primary",
       text: o.intl.string(o.t.pz1lRE),
       onClick: t
-    }), (0, l.jsx)(r.zx, {
-      look: r.zx.Looks.LINK,
-      color: (0, s.ap)(d) ? r.zx.Colors.PRIMARY : r.zx.Colors.WHITE,
+    }), (0, i.jsx)(a.zx, {
+      look: a.zx.Looks.LINK,
+      color: (0, s.ap)(d) ? a.zx.Colors.PRIMARY : a.zx.Colors.WHITE,
       onClick: n,
       children: o.intl.string(o.t["ETE/oK"])
     })]

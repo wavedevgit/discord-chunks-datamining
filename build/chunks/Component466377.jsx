@@ -4,7 +4,7 @@
 require.d(exports, {
   Cg: () => C,
   Y0: () => P,
-  YA: () => k,
+  YA: () => j,
   fM: () => R,
   hz: () => L,
   mz: () => x,
@@ -133,10 +133,10 @@ function P(e) {
       clamp: true
     },
     onRest: O
-  }, "animate-always"), L = i.useRef(null), x = null != R["aria-label"], M = null != R["aria-labelledby"], k = i.useId(), j = null != (t = R["aria-labelledby"]) ? t : k, U = i.useMemo(() => ({
-    headerId: j,
+  }, "animate-always"), L = i.useRef(null), x = null != R["aria-label"], M = null != R["aria-labelledby"], j = i.useId(), k = null != (t = R["aria-labelledby"]) ? t : j, U = i.useMemo(() => ({
+    headerId: k,
     headerIdIsManaged: M
-  }), [j, M]);
+  }), [k, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
     children: (0, r.jsx)(_.V, T(v({
@@ -231,12 +231,12 @@ function x(e) {
 }
 
 function M(e) {
-  return (0, r.jsx)(f.zx, {
+  return (0, r.jsx)(f.Button, {
     "data-migration-pending": true,
     focusProps: e.focusProps,
     "aria-label": b.intl.string(b.t.cpT0Cg),
-    look: f.zx.Looks.BLANK,
-    size: f.zx.Sizes.NONE,
+    look: f.Button.Looks.BLANK,
+    size: f.Button.Sizes.NONE,
     onClick: e.onClick,
     innerClassName: o()(e.innerClassName, {
       [y.closeWithCircleBackground]: e.withCircleBackground
@@ -253,7 +253,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var {
     className: t,
     scrollerRef: n

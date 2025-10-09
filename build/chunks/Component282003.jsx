@@ -52,7 +52,7 @@ let g = () => {
     let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, S] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [N, P] = Chunk647438.useState(null), [I, k] = Chunk647438.useState(false), [w, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
+    }), [N, P] = Chunk647438.useState(null), [I, w] = Chunk647438.useState(false), [k, R] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
     (0, Chunk647438.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk647438.useEffect)(() => {
@@ -139,7 +139,7 @@ let g = () => {
           intervalCount: 1
         },
         errorOnCancel: I,
-        errorOnRedeem: w,
+        errorOnRedeem: k,
         setActiveStep: e => {
           g(e), t.onClose()
         },
@@ -167,11 +167,11 @@ let g = () => {
           pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [module, j, y, N, I, w, require, T]);
+    }, [module, j, y, N, I, k, require, T]);
     return (0, Chunk647438.useEffect)(() => {
       A && D()
     }, [require, A, D]), (0, Chunk951288.jsxs)(Chunk237012.$0, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-xl/semibold",
         children: "Cancellation Flow"
       }), (0, Chunk951288.jsxs)(Chunk237012.pg, {
@@ -242,7 +242,7 @@ let g = () => {
             popoutLayerContext: Chunk246992.O$
           })]
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
-          children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
             checked: null !== j,
             onChange: () => {
               if (null === j) return void _(v());
@@ -251,25 +251,25 @@ let g = () => {
             label: "Churn Discount"
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
-          children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: w,
+          children: (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
+            checked: k,
             onChange: () => {
-              R(!w)
+              R(!k)
             },
             label: "Error on Redeem Offer"
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
-          children: (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
             checked: I,
             onChange: () => {
-              k(!I)
+              w(!I)
             },
             label: "Error on Cancel"
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk237012.E_, {
         label: "Cancellation Modal",
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           onClick: () => {
             Z(true)
           },

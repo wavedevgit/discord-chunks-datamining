@@ -75,7 +75,7 @@ function m(e) {
         planName: t.hasExternalPlanChange ? (0, l.zL)(i) : l.ZP.getDisplayName(i.planId),
         date: g
       })
-    }), t.isPurchasedExternally ? null : (0, r.jsx)(o.eee, {
+    }), t.isPurchasedExternally ? null : (0, r.jsx)(o.Anchor, {
       onClick: e => {
         e.preventDefault(), (0, o.ZDy)(async () => {
           let {

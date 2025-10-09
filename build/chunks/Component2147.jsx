@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   G: () => eS,
-  Z: () => eZ
+  Z: () => eE
 }), require("./997841.js"), require("./290780.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -281,14 +281,14 @@ class eO extends Chunk647438.PureComponent {
         isThreadModerator: v,
         canManageThread: C,
         guild: N,
-        isForumPost: E,
+        isForumPost: Z,
         isOwner: w,
         showAdvancedSlowModeSetting: T
       } = this.props,
       _ = V.Ec.has(e.type),
       R = e.isForumLikeChannel(),
       I = R && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
-      D = (null == (l = X.default.getCurrentUser()) ? true : l.isStaff()) === true,
+      D = (null == (l = J.default.getCurrentUser()) ? true : l.isStaff()) === true,
       k = V.TK.has(e.type) ? (0, i.jsx)(p.gNt, {
         label: R ? ec.intl.string(ec.t.yR6Hwc) : ec.intl.string(ec.t.X8jMDg),
         children: (0, i.jsx)(O.ZP, {
@@ -344,7 +344,7 @@ class eO extends Chunk647438.PureComponent {
           children: (0, i.jsx)(L.Z, {
             channel: e
           })
-        }), (0, i.jsx)(p.XZJ, {
+        }), (0, i.jsx)(p.Checkbox, {
           disabled: !x || I,
           checked: e.hasFlag(er.zZ.REQUIRE_TAG),
           onChange: e => this.handleRequireTagChanged(e),
@@ -359,7 +359,7 @@ class eO extends Chunk647438.PureComponent {
             className: ed.twoColumnSettings,
             children: [(0, i.jsx)("div", {
               className: s()(ed.settingsLeft, ed.settingsDefaultReaction),
-              children: (0, i.jsxs)(p.hE2, {
+              children: (0, i.jsxs)(p.ButtonGroup, {
                 align: "center",
                 children: [(0, i.jsx)(p.yRy, {
                   targetElementRef: this.defaultReactionButtonRef,
@@ -367,7 +367,7 @@ class eO extends Chunk647438.PureComponent {
                   position: "right",
                   animation: p.yRy.Animation.NONE,
                   align: "center",
-                  children: e => (0, i.jsx)(p.zxk, ep(eg({}, e), {
+                  children: e => (0, i.jsx)(p.Button, ep(eg({}, e), {
                     buttonRef: this.defaultReactionButtonRef,
                     text: ec.intl.string(ec.t["59QgaG"]),
                     disabled: !x,
@@ -439,25 +439,25 @@ class eO extends Chunk647438.PureComponent {
         value: e.getDefaultTagSetting(),
         onChange: this.handleChangeDefaultTagSetting
       }) : null,
-      J = _ ? v : x,
-      Y = null == (r = Z.Z.getCurrentConfig({
+      Y = _ ? v : x,
+      X = null == (r = E.Z.getCurrentConfig({
         guildId: e.guild_id,
         location: "ChannelSettingsOverview"
       })) ? true : r.enabled,
       Q = true === T ? (0, i.jsx)(et.Z, {
         label: ec.intl.string(ec.t["tTHx9/"]),
-        helperText: this.getSlowmodeHelpText(Y),
+        helperText: this.getSlowmodeHelpText(X),
         channel: e,
         onChange: this.handleChangeSlowmode
       }) : (0, i.jsx)(p.iRW, {
         label: ec.intl.string(ec.t["tTHx9/"]),
-        helperText: this.getSlowmodeHelpText(Y),
+        helperText: this.getSlowmodeHelpText(X),
         initialValue: e.rateLimitPerUser,
         markers: el.BiE,
         stickToMarkers: true,
         onValueChange: this.handleChangeSlowmode,
         onMarkerRender: this.getCooldownSliderMarker,
-        disabled: !J,
+        disabled: !Y,
         equidistant: true,
         "aria-labelledby": ef,
         "aria-describedby": eb
@@ -467,13 +467,13 @@ class eO extends Chunk647438.PureComponent {
           label: ec.intl.string(ec.t.O1c02t),
           children: [Q, (0, i.jsx)(p.iRW, {
             label: ec.intl.string(ec.t["fkY5+v"]),
-            helperText: Y ? ec.intl.format(ec.t.nZSuEh, eC) : ec.intl.string(ec.t.kdZU6O),
+            helperText: X ? ec.intl.format(ec.t.nZSuEh, eC) : ec.intl.string(ec.t.kdZU6O),
             initialValue: null != (h = e.defaultThreadRateLimitPerUser) ? h : 0,
             markers: el.BiE,
             stickToMarkers: true,
             onValueChange: this.handleChangeThreadMessageSlowmode,
             onMarkerRender: this.getCooldownSliderMarker,
-            disabled: !J,
+            disabled: !Y,
             equidistant: true,
             "aria-labelledby": ef,
             "aria-describedby": eb
@@ -486,7 +486,7 @@ class eO extends Chunk647438.PureComponent {
           isDisabled: !C,
           autoArchiveDuration: null != (g = e.threadMetadata.autoArchiveDuration) ? g : eo.AX,
           onChange: this.handleAutoArchiveDurationChanged,
-          helperText: E ? ec.intl.string(ec.t["3aJN9P"]) : ec.intl.string(ec.t.YUXr4e)
+          helperText: Z ? ec.intl.string(ec.t["3aJN9P"]) : ec.intl.string(ec.t.YUXr4e)
         })
       }) : null,
       es = e.type === el.d4z.PRIVATE_THREAD && null != e.threadMetadata ? (0, i.jsx)("div", {
@@ -587,7 +587,7 @@ class eO extends Chunk647438.PureComponent {
       canManageChannels: n
     } = this.props;
     if (!this.showVoiceSettings()) return null;
-    let l = (0, J.g7)(t, e),
+    let l = (0, Y.g7)(t, e),
       r = this.getError("bitrate");
     return (0, i.jsx)(p.iRW, {
       label: ec.intl.string(ec.t.w2d0vb),
@@ -693,8 +693,8 @@ class eO extends Chunk647438.PureComponent {
     let t, {
       theme: l
     } = this.props;
-    return t = e.type === el.d4z.GUILD_CATEGORY ? (0, g.wj)(l) ? n(309095) : n(925442) : (0, g.wj)(l) ? n(316491) : n(301358), (0, i.jsx)(E.Z, {
-      justify: E.Z.Justify.CENTER,
+    return t = e.type === el.d4z.GUILD_CATEGORY ? (0, g.wj)(l) ? n(309095) : n(925442) : (0, g.wj)(l) ? n(316491) : n(301358), (0, i.jsx)(Z.Z, {
+      justify: Z.Z.Justify.CENTER,
       className: eu.marginTop60,
       children: (0, i.jsx)("img", {
         alt: "",
@@ -762,7 +762,7 @@ class eO extends Chunk647438.PureComponent {
         channel: i
       } = this.props;
       if (null == i) return;
-      i.isThread() ? e = (0, k.Z)(e, false) : el.TPd.LIMITED_CHANNEL_NAME.has(i.type) && (e = (0, J.Nj)(e));
+      i.isThread() ? e = (0, k.Z)(e, false) : el.TPd.LIMITED_CHANNEL_NAME.has(i.type) && (e = (0, Y.Nj)(e));
       let l = null != (n = null == (t = this.nameInputRef.current) ? true : t.selectionStart) ? n : 0;
       (0, m.pW)({
         name: e
@@ -924,7 +924,7 @@ class eO extends Chunk647438.PureComponent {
   }
 }
 
-function eZ() {
+function eE() {
   let {
     errors: e,
     channel: t,

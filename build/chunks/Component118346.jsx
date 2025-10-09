@@ -38,7 +38,7 @@ function d() {
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: Chunk388032.intl.string(Chunk388032.t.H3Q7U1)
-  }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+  }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
     variant: "primary",
     size: "sm",
     text: Chunk489813 ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
@@ -57,7 +57,7 @@ function m() {
     children: (0, Chunk951288.jsx)(Chunk28664.u, {
       asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,

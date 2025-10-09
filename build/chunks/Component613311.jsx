@@ -306,7 +306,7 @@ class ef extends Chunk647438.PureComponent {
         children: es.intl.format(es.t.tluX4O, {
           name: n.name
         })
-      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(Y.Z, {
+      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(q.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -316,7 +316,7 @@ class ef extends Chunk647438.PureComponent {
     })
   }
   renderApplicationContentRating(e) {
-    return (0, r.jsx)(q.Z, {
+    return (0, r.jsx)(Y.Z, {
       sku: e,
       className: ec.contentRating
     })
@@ -468,11 +468,11 @@ class ef extends Chunk647438.PureComponent {
       null != e && null != t && (0, p.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("74318"), n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(i, ep(ed({}, n), {
           guild: t,
           channel: e,
-          source: ea.t4x.GUILD_CHANNELS
+          source: ea.InstantInviteSources.GUILD_CHANNELS
         }))
       })
     }), eu(this, "renderInviteLink", () => {

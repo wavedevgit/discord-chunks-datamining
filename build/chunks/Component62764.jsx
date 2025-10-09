@@ -83,10 +83,10 @@ function G(e) {
       c(false)
     })
   };
-  return a ? (0, i.jsx)(u.zxk, {
+  return a ? (0, i.jsx)(u.Button, {
     size: "sm",
     variant: "secondary",
-    text: l ? L.intl.string(D.default["2Y4vkp"]) : L.intl.string(D.default.YIbR4u),
+    text: l ? D.intl.string(k.default["2Y4vkp"]) : D.intl.string(k.default.YIbR4u),
     onClick: () => {
       true === s.K.get(S.F) ? d() : (0, u.ZDy)(async () => {
         let {
@@ -120,15 +120,15 @@ function z(e) {
   } = e, {
     ref: O,
     width: j
-  } = (0, h.ZP)(), [S, D] = r.useState(3), [z, W] = r.useState(!n), [q, Y] = (0, f.Z)(false, 2e3), K = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [z, W] = r.useState(!n), [Y, K] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: X
-  } = (0, M.cl)(K), J = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+  } = (0, M.cl)(q), J = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: Q,
     disableReactionCreates: $,
     isLurking: ee,
     isGuest: et,
     isPendingMember: en
-  } = (0, C.Z)(K), ei = (0, E.nw)(K), er = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), el = (0, w.Bs)(er), ea = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), eo = r.useCallback(e => {
+  } = (0, C.Z)(q), ei = (0, E.nw)(q), er = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), el = (0, w.Bs)(er), ea = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), eo = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -148,16 +148,16 @@ function z(e) {
   });
   let [es, ec] = r.useState(true);
   if (r.useEffect(() => {
-      null != j && (D(Math.floor((j - 280) / 58)), ec(false))
-    }, [j]), null == K || null == X) return null;
+      null != j && (k(Math.floor((j - 280) / 58)), ec(false))
+    }, [j]), null == q || null == X) return null;
   let eu = X.reactions.length > 0,
     ed = () => {
       (0, R.B)({
-        postId: K.id,
+        postId: q.id,
         location: {
-          section: k.jXE.CHANNEL_HEADER
+          section: L.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(K, er), () => Y(true))
+      }), (0, A.JG)((0, N.EO)(q, er), () => K(true))
     },
     ep = J ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
@@ -170,7 +170,7 @@ function z(e) {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
           message: X,
-          channel: K
+          channel: q
         })
       }) : (0, i.jsxs)("div", {
         className: a()(U.reactButtons, {
@@ -196,7 +196,7 @@ function z(e) {
           })
         }), (0, i.jsx)(v.Z, {
           message: X,
-          channel: K,
+          channel: q,
           disableReactionCreates: true,
           disableReactionUpdates: Q,
           isLurking: ee,
@@ -210,67 +210,67 @@ function z(e) {
         }), !$ && (0, i.jsx)(y.X, {
           type: b.O.NORMAL,
           message: X,
-          channel: K,
+          channel: q,
           useChatFontScaling: false,
           className: a()(H.secondary, U.addReactButton, {
             [U.hasNoReactions]: !eu
           }),
           isForumToolbar: true,
-          children: !eu && L.intl.string(L.t.xpOyTE)
+          children: !eu && D.intl.string(D.t.xpOyTE)
         })]
       }), (0, i.jsxs)("div", {
         className: U.buttons,
         children: [ei ? (0, i.jsx)(G, {
-          channel: K
+          channel: q
         }) : (0, i.jsx)(c.u, {
-          text: L.intl.string(L.t.F7oeDg),
-          children: (0, i.jsx)(u.zxk, {
+          text: D.intl.string(D.t.F7oeDg),
+          children: (0, i.jsx)(u.Button, {
             icon: ep,
             size: "sm",
             variant: "secondary",
-            text: J ? L.intl.string(L.t["7OkUzs"]) : L.intl.string(L.t["3aOv+v"]),
+            text: J ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+v"]),
             onClick: () => {
-              J ? Z.Z.leaveThread(K, "Forum Toolbar") : Z.Z.joinThread(K, "Forum Toolbar")
+              J ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
             }
           })
         }), (0, i.jsx)(u.ua7, {
           "data-migration-pending": true,
-          text: L.intl.string(L.t.WqhZsr),
-          children: e => q ? (0, i.jsx)(u.zxk, F(V({}, e), {
+          text: D.intl.string(D.t.WqhZsr),
+          children: e => Y ? (0, i.jsx)(u.Button, F(V({}, e), {
             icon: u.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ed,
-            text: L.intl.string(L.t["t5VZ8/"])
+            text: D.intl.string(D.t["t5VZ8/"])
           })) : (0, i.jsx)(u.hU, F(V({}, e), {
             icon: u.xPt,
             size: "sm",
             variant: "secondary",
             onClick: ed,
-            "aria-label": L.intl.string(L.t.WqhZsr)
+            "aria-label": D.intl.string(D.t.WqhZsr)
           }))
         }), !n && (0, i.jsx)(c.u, {
-          text: L.intl.string(L.t.nFP4oa),
+          text: D.intl.string(D.t.nFP4oa),
           children: (0, i.jsx)(u.hU, {
             icon: u.Za2,
             size: "sm",
             variant: "secondary",
             onClick: () => {
               d.Z.jumpToMessage({
-                channelId: K.id,
-                messageId: K.id,
+                channelId: q.id,
+                messageId: q.id,
                 flash: true,
                 jumpType: p.SR.INSTANT
               })
             },
-            "aria-label": L.intl.string(L.t.nFP4oa)
+            "aria-label": D.intl.string(D.t.nFP4oa)
           })
         })]
       })]
     }), ea && (0, i.jsx)(g.Z, {
       threadId: t
     }), (0, i.jsx)(_.Z, {
-      channel: K,
+      channel: q,
       isLastItem: l
     })]
   })

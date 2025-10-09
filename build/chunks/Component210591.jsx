@@ -44,7 +44,7 @@ function f(e) {
     children: t
   } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
     width: "".concat(100 * o, "%")
-  }), x = [g.intl.format(g.t.wtQtXl, {
+  }), b = [g.intl.format(g.t.wtQtXl, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
   }), g.intl.format(g.t["0Fo0wc"], {
     caseStudiesUrl: u.iv.CASE_STUDIES
@@ -52,7 +52,7 @@ function f(e) {
     subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
   }), g.intl.format(g.t.zkXN6O, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
-  })], b = n ? null : (0, r.jsxs)(c.C3N, {
+  })], x = n ? null : (0, r.jsxs)(c.C3N, {
     children: [!f && t.map((e, t) => {
       let {
         title: n,
@@ -74,7 +74,7 @@ function f(e) {
       label: g.intl.string(g.t.FO0AIS),
       children: (0, r.jsx)(c.Kqy, {
         gap: 8,
-        children: x.map((e, t) => (0, r.jsx)("div", {
+        children: b.map((e, t) => (0, r.jsx)("div", {
           className: m.row,
           children: (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -93,7 +93,7 @@ function f(e) {
         children: [(0, r.jsxs)(c.P3F, {
           className: m.headerBar,
           onClick: () => l(e => !e),
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
             className: m.headerText,
             children: g.intl.string(g.t["2Xbd/P"])
@@ -107,7 +107,7 @@ function f(e) {
             className: m.progressBarInner,
             style: h
           })
-        }), b]
+        }), x]
       })
     })
   })

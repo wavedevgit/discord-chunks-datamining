@@ -64,7 +64,7 @@ let b = 1e3,
       null !== S && (m.YQ.includes(S) && ((0, s.GZ)(S), (0, o.jg)()), v(S)), null !== A && O(A), T === C.loadId && I === p.Y.DONE && l()
     }, [v, O, I, T, S, A, C, l]), (0, r.jsxs)("div", {
       className: E.body,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/bold",
         children: g.intl.string(g.t.C4HYf3)
       }), (0, r.jsx)(a.Text, {

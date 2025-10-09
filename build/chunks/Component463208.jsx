@@ -182,8 +182,8 @@ function S(e) {
     size: L = "md",
     fullWidth: x = false,
     clearable: M = false,
-    helperText: k,
-    showCharacterCount: j = false,
+    helperText: j,
+    showCharacterCount: k = false,
     successMessage: U,
     label: G,
     description: B,
@@ -230,7 +230,7 @@ function S(e) {
     accessory: P,
     inputSize: L
   }));
-  let er = j ? (0, r.jsx)(d.H, {
+  let er = k ? (0, r.jsx)(d.H, {
     value: O,
     maxLength: E
   }) : null;
@@ -240,7 +240,7 @@ function S(e) {
     required: F,
     description: B,
     hideLabel: Z,
-    helperText: k,
+    helperText: j,
     errorMessage: Y.hasError && null != (t = Y.errorMessage) ? t : true,
     successMessage: U,
     trailingContent: er,

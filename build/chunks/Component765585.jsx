@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -83,7 +83,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         }), T]
       }), (0, r.jsxs)("div", {
         className: m.body,
-        children: [(0, r.jsxs)(s.X6q, {
+        children: [(0, r.jsxs)(s.Heading, {
           className: o()(S ? m.headerWithPremiumIcon : m.header, _),
           variant: "heading-md/bold",
           color: "always-white",

@@ -24,7 +24,7 @@ function d() {
     children: (0, Chunk951288.jsx)(Chunk28664.u, {
       asContainer: true,
       text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
@@ -44,7 +44,7 @@ function m(e) {
     text: l,
     footnote: c.intl.string(c.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, r.jsx)(i.zxk, {
+    children: (0, r.jsx)(i.Button, {
       variant: "primary",
       size: "sm",
       text: c.intl.string(c.t["13ofGh"]),

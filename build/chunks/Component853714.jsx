@@ -139,7 +139,7 @@ let G = Chunk647438.forwardRef((e, t) => {
       switch (t.targetType) {
         case T.KFR.CHANNEL:
         case T.KFR.CHANNEL_OVERWRITE:
-          let i = b.Z.getChannel(t.targetId),
+          let i = x.Z.getChannel(t.targetId),
             a = j.Z.getGuild(l);
           if (null != i && null != a) return (0, g.jW)(e, async () => {
             let {
@@ -279,7 +279,7 @@ class U extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk912864.customHeader,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.SPWLyc)
         }), this.renderHeaderDropdowns()]
@@ -394,7 +394,7 @@ class U extends Chunk647438.PureComponent {
       }, null != (n = e.key) ? n : t)
     }), D(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
-      if (e.user instanceof x.Z) {
+      if (e.user instanceof b.default) {
         let t = e.user;
         return (0, r.jsxs)(d.lo1, {
           value: t.id,
@@ -455,7 +455,7 @@ class U extends Chunk647438.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        g = [u, ...s].map(e => e instanceof x.Z ? function(e) {
+        g = [u, ...s].map(e => e instanceof b.default ? function(e) {
           return {
             label: e.username,
             value: e.id,
@@ -507,7 +507,7 @@ class U extends Chunk647438.PureComponent {
       if (e && t && !n) return (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: w.loadMore,
-        children: (0, r.jsx)(d.zxk, {
+        children: (0, r.jsx)(d.Button, {
           variant: "secondary",
           text: P.intl.string(P.t["Q/LSXl"]),
           onClick: this.handleFetchNextPage

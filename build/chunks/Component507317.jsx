@@ -88,37 +88,37 @@ let j = function(e) {
     }) : null,
     disabled: !j,
     onChange: v,
-    hint: x.intl.string(x.t.NyXznp),
+    hint: b.intl.string(b.t.NyXznp),
     enabled: j,
     maxFileSizeBytes: h.B
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.sectionHeader,
-      children: [(0, r.jsx)(l.X6q, {
-        className: b.header,
+      className: x.sectionHeader,
+      children: [(0, r.jsx)(l.Heading, {
+        className: x.header,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nZ)
+        children: b.intl.string(b.t.BBj1nZ)
       }), (0, r.jsx)(s.Z, {
-        className: b.boostIndicator,
+        className: x.boostIndicator,
         guild: t,
         guildFeature: m.oNc.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: b.section,
+      className: x.section,
       children: [(0, r.jsxs)("div", {
-        className: b.homeBannerExplainer,
+        className: x.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: x.intl.string(x.t.Vwintr)
+          children: b.intl.string(b.t.Vwintr)
         }), (0, r.jsx)("div", {
-          className: b.uploadButton,
+          className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
             onChange: v,
             maxFileSizeBytes: h.B,
-            text: x.intl.string(x.t.yG2pUl),
+            text: b.intl.string(b.t.yG2pUl),
             size: "md",
             variant: "primary"
           })
@@ -129,30 +129,30 @@ let j = function(e) {
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.sectionHeader,
-      children: [(0, r.jsx)(l.X6q, {
-        className: b.header,
+      className: x.sectionHeader,
+      children: [(0, r.jsx)(l.Heading, {
+        className: x.header,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nZ)
+        children: b.intl.string(b.t.BBj1nZ)
       }), (0, r.jsx)(s.Z, {
-        className: b.boostIndicator,
+        className: x.boostIndicator,
         guild: t,
         guildFeature: m.oNc.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {
-      className: b.section,
+      className: x.section,
       children: [(0, r.jsxs)("div", {
-        className: b.homeBannerExplainer,
+        className: x.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: b.bannerDescription,
-          children: x.intl.string(x.t.Vwintr)
-        }), (0, r.jsx)(l.zxk, {
+          className: x.bannerDescription,
+          children: b.intl.string(b.t.Vwintr)
+        }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l.Ucv,
-          text: x.intl.string(x.t["+7XY39"]),
+          text: b.intl.string(b.t["+7XY39"]),
           onClick: _
         })]
       }), (0, r.jsx)("div", {

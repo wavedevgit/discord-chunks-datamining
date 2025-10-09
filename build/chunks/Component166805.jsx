@@ -45,7 +45,7 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, x.S)(t), [t]), I = i.useMemo(() => (0, x.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !y;
+  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !y;
   i.useEffect(() => {
     O || (0, p.R)(t)
   }, [O, t]), i.useEffect(() => {
@@ -66,7 +66,7 @@ function _(e) {
       className: v.subtext,
       children: j.intl.string(j.t.zCGuJy)
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(b.m, {
+      children: [(0, r.jsx)(x.m, {
         label: j.intl.string(j.t.LUo0Q0),
         description: j.intl.string(j.t.LxVR9P),
         guildId: t,

@@ -1,7 +1,7 @@
 /** Chunk was on 83175 **/
 /** chunk id: 732389, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  p: () => g
+  p: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -17,30 +17,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk851499 = require("./851499.js");
-let g = e => {
+let x = e => {
   let {
     buttonAnalyticsObject: n,
     className: t,
     upsellText: o
-  } = e, g = c.default.getCurrentUser(), h = (0, u.yd)(null == g ? true : g.premiumType, p.PremiumTypes.TIER_2), C = (0, m._)({
+  } = e, x = c.default.getCurrentUser(), h = (0, u.yd)(null == x ? true : x.premiumType, p.PremiumTypes.TIER_2), C = (0, m._)({
     defaultResponse: f.intl.string(f.t["8x0jKS"]),
     onNonTier2Subscriber: f.intl.string(f.t.IJI7ys)
   });
   return h ? null : (0, a.jsxs)("div", {
-    className: r()(x.upsellContainer, t),
+    className: r()(g.upsellContainer, t),
     children: [(0, a.jsxs)("div", {
-      className: x.row,
+      className: g.row,
       children: [(0, a.jsx)(i.SrA, {
         size: "md",
         color: d.JX.PREMIUM_TIER_2
       }), (0, a.jsx)(l.xvT, {
         variant: "text-sm/medium",
         color: "header-primary",
-        className: x.upsellText,
+        className: g.upsellText,
         children: o
       })]
     }), (0, a.jsx)(_.Z, {
-      className: x.button,
+      className: g.button,
       size: s.zx.Sizes.SMALL,
       look: s.zx.Looks.BLANK,
       color: s.zx.Colors.CUSTOM,

@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 104155, original params: e,t,n (module,exports,require) **/
+/** chunk id: 104155, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   I: () => j,
   Z: () => v
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
 
 function j(e) {
   let {
-    channelId: t
+    channelId: n
   } = e;
   return (0, l.jsx)(o.Z, {
     sidebarType: o.y.ThreadSidebar,
     maxWidth: 600,
     children: (0, l.jsx)(s.Z, {
-      channelId: t,
+      channelId: n,
       baseChannelId: _.oC.CHANNEL_BROWSER
     })
   })
@@ -39,49 +39,49 @@ function j(e) {
 
 function v(e) {
   let {
-    guildId: t
-  } = e, [o, s] = r.useState(""), j = (0, i.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(t)), y = (0, i.e7)([d.Z], () => d.Z.getCategories(t)), O = (0, f.Fo)(t, y, v, o), N = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
-    guildId: t
+    guildId: n
+  } = e, [o, s] = r.useState(""), j = (0, i.e7)([m.Z], () => m.Z.getGuild(n)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(n)), y = (0, i.e7)([d.Z], () => d.Z.getCategories(n)), O = (0, f.Fo)(n, y, v, o), N = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
+    guildId: n
   })), Z = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(_.oC.CHANNEL_BROWSER)), I = r.useCallback(() => s(""), [s]), w = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
-      return n => {
+      } = await Promise.all([t.e("45094"), t.e("67133")]).then(t.bind(t, 218613));
+      return t => {
         var r, i;
         return (0, l.jsx)(e, (r = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              l = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), l.forEach(function(t) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
+              l = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), l.forEach(function(n) {
               var l;
-              l = n[t], t in e ? Object.defineProperty(e, t, {
+              l = t[n], n in e ? Object.defineProperty(e, n, {
                 value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = l
+              }) : e[n] = l
             })
           }
           return e
-        }({}, n), i = i = {
+        }({}, t), i = i = {
           channelType: null,
-          guildId: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var n = Object.keys(e);
+          guildId: n
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
+          var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var l = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, l)
+            t.push.apply(t, l)
           }
-          return n
+          return t
         })(Object(i)).forEach(function(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r))
       }
     })
-  }, [t]);
+  }, [n]);
   return null == j ? null : (0, l.jsxs)("div", {
     className: b.pageBody,
     children: [(0, l.jsxs)("div", {
@@ -95,7 +95,7 @@ function v(e) {
         },
         onClear: I,
         placeholder: C.intl.string(C.t.s5MnmJ)
-      }), N ? (0, l.jsx)(a.zxk, {
+      }), N ? (0, l.jsx)(a.Button, {
         icon: a.qJs,
         onClick: w,
         text: C.intl.string(C.t.CumH4u)

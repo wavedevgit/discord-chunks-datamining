@@ -25,8 +25,8 @@ function j(e) {
     onClose: b,
     emptyState: j
   } = e, {
-    showNavigationMobile: x
-  } = (0, d.t)(), y = l.useMemo(() => {
+    showNavigationMobile: y
+  } = (0, d.t)(), x = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -53,7 +53,7 @@ function j(e) {
   return (0, r.jsx)(s.f6W, {
     theme: O,
     children: e => (0, r.jsx)(c.ZP, {
-      contentTypes: y,
+      contentTypes: x,
       children: t => {
         let {
           visibleContent: l
@@ -61,7 +61,7 @@ function j(e) {
         return (0, r.jsxs)("div", {
           className: i()(p.sidebar, e, {
             [p.mobile]: a.tq,
-            [p.mobileNavigationOpen]: x
+            [p.mobileNavigationOpen]: y
           }),
           children: [(0, r.jsxs)("div", {
             className: p.fixedContent,
@@ -107,7 +107,7 @@ function v(e) {
     className: p.section,
     children: [null != o && (0, r.jsx)("div", {
       className: p.sectionLabel,
-      children: (0, r.jsx)(s.X6q, {
+      children: (0, r.jsx)(s.Heading, {
         className: p.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",

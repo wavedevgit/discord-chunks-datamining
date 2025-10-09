@@ -148,7 +148,7 @@ function w(e) {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: E.intl.format(E.t.BI4ukJ, {
-            helpdeskArticle: b.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
+            helpdeskArticle: x.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(O.Z, {
@@ -200,7 +200,7 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == a ? {
@@ -209,7 +209,7 @@ function D(e) {
   } : {
     isGuildOwnerWithMFA: (0, p.yn)(t, a),
     showMFAUserTooltip: !a.mfaEnabled && (0, p.eM)(t, a)
-  }, [a, t]), h = n === N.BpS.ELEVATED, b = (0, s.throttle)(async e => {
+  }, [a, t]), h = n === N.BpS.ELEVATED, x = (0, s.throttle)(async e => {
     d && (u || await v.Z.updateMFALevel({
       guildId: t.id,
       level: e ? N.BpS.ELEVATED : N.BpS.NONE,
@@ -225,7 +225,7 @@ function D(e) {
         label: E.intl.string(E.t.lbBfER),
         description: E.intl.string(E.t.REr5AA),
         checked: h,
-        onChange: b,
+        onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
@@ -248,7 +248,7 @@ function A() {
     mfaLevel: t
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps(), []), n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
   return null == module ? null : require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk776853.headerContainer,
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t["suhY+f"])

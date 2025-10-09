@@ -1,7 +1,7 @@
 /** Chunk was on 5749 **/
 /** chunk id: 684471, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,37 +16,37 @@ var Chunk481060 = require("./481060.js"),
   Chunk394968 = require("./394968.js"),
   Chunk282668 = require("./282668.js");
 
-function h(t) {
+function g(t) {
   let {
     senderId: e,
     trackAnalyticsEvent: n,
-    onNavigate: h
-  } = t, m = (0, s.e7)([a.default], () => {
+    onNavigate: g
+  } = t, h = (0, s.e7)([a.default], () => {
     let t = a.default.getUser(e);
     return o.ZP.getName(t)
   });
   return (0, i.jsx)(d.Z, {
     header: u.intl.string(u.t.sSMgCw),
     description: u.intl.formatToPlainString(u.t.q2QrTU, {
-      username: m
+      username: h
     }),
-    heroImageSrc: p,
+    heroImageSrc: x,
     heroImageAlt: u.intl.string(u.t["3QhxXF"]),
     children: (0, i.jsxs)("div", {
-      className: x.buttonContainer,
-      children: [(0, i.jsx)(r.zxk, {
+      className: p.buttonContainer,
+      children: [(0, i.jsx)(r.Button, {
         text: u.intl.string(u.t["+o4Q7e"]),
         variant: "primary",
         fullWidth: true,
         onClick: () => {
-          h(l.x.TAKE_ACTION), n(c.NM.USER_TAKEOVER_MODAL_TAKE_ACTION)
+          g(l.x.TAKE_ACTION), n(c.NM.USER_TAKEOVER_MODAL_TAKE_ACTION)
         }
-      }), (0, i.jsx)(r.zxk, {
+      }), (0, i.jsx)(r.Button, {
         text: u.intl.string(u.t.xLkGzM),
         variant: "secondary",
         fullWidth: true,
         onClick: () => {
-          h(l.x.SAFETY_TIPS), n(c.NM.USER_TAKEOVER_MODAL_SAFETY_TIPS)
+          g(l.x.SAFETY_TIPS), n(c.NM.USER_TAKEOVER_MODAL_SAFETY_TIPS)
         }
       })]
     })

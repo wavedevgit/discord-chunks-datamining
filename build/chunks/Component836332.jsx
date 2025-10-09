@@ -38,7 +38,7 @@ let y = (e, t) => {
       children: (0, r.jsxs)("div", {
         ref: t,
         className: o()(m.container, n),
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           className: m.footerHeader,
           variant: "display-md",
           color: "header-primary",

@@ -143,7 +143,7 @@ let _ = () => {
             className: C.__invalid_icon
           }), o]
         }), h && f.Z.supports(O.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsxs)(s.eee, {
+          children: [(0, l.jsxs)(s.Anchor, {
             className: a()(C.debugButton, C.textWithIcon),
             onClick: t,
             children: [y.intl.string(y.t.KBoWg4), (0, l.jsx)(s.rgF, {
@@ -151,7 +151,7 @@ let _ = () => {
               color: "currentColor",
               className: C.__invalid_icon
             })]
-          }), (0, l.jsxs)(s.eee, {
+          }), (0, l.jsxs)(s.Anchor, {
             className: a()(C.copyStatsButton, C.textWithIcon),
             onClick: _,
             title: "Copy to clipboard",
@@ -161,7 +161,7 @@ let _ = () => {
               className: C.__invalid_icon
             })]
           })]
-        }), !h && !__OVERLAY__ && (0, l.jsx)(s.eee, {
+        }), !h && !__OVERLAY__ && (0, l.jsx)(s.Anchor, {
           className: C.debugButton,
           href: p.Z.getArticleURL(N.BhN.VOICE_VIDEO_TROUBLESHOOTING),
           children: y.intl.string(y.t.hvVgAQ)

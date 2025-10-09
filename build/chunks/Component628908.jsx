@@ -1,5 +1,5 @@
 /** Chunk was on 92229 **/
-/** chunk id: 628908, original params: e,t,r (module,exports,require) **/
+/** chunk id: 628908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => k
 }), require("./388685.js");
@@ -22,87 +22,87 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505198 = require("./505198.js");
 
-function y(e, t, r) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
 let O = e => {
-  var t, r, {
+  var t, n, {
       label: s,
       text: i,
       children: o
     } = e,
     a = function(e, t) {
       if (null == e) return {};
-      var r, n, s = function(e, t) {
+      var n, r, s = function(e, t) {
         if (null == e) return {};
-        var r, n, s = {},
+        var n, r, s = {},
           i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (s[r] = e[r]);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
         return s
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r])
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
       }
       return s
     }(e, ["label", "text", "children"]);
-  return (0, n.jsxs)(h.Z, (t = function(e) {
+  return (0, r.jsxs)(h.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        y(e, t, r[t])
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        y(e, t, n[t])
       })
     }
     return e
   }({
     direction: h.Z.Direction.VERTICAL
-  }, a), r = r = {
-    children: [(0, n.jsx)(l.X6q, {
+  }, a), n = n = {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/semibold",
       children: s
-    }), null != i ? (0, n.jsx)(l.Text, {
+    }), null != i ? (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      className: g.sectionBody,
+      className: C.sectionBody,
       children: i
-    }) : null, (0, n.jsx)(h.Z.Child, {
+    }) : null, (0, r.jsx)(h.Z.Child, {
       wrap: true,
       children: o
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 };
 class P extends Chunk647438.PureComponent {
   renderBackupCodesSection(e) {
-    return (0, n.jsx)(O, {
-      label: C.intl.string(C.t.qZZUy8),
+    return (0, r.jsx)(O, {
+      label: j.intl.string(j.t.qZZUy8),
       text: e,
-      children: (0, n.jsx)(d.Z, {
+      children: (0, r.jsx)(d.Z, {
         fileContents: this.getDownloadFileContents,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
         onDownload: () => c.Z.dispatch({
           type: "MFA_SEEN_BACKUP_CODE_PROMPT"
         }),
-        children: (0, n.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "active",
           size: "sm",
-          text: C.intl.string(C.t.qZZUy8)
+          text: j.intl.string(j.t.qZZUy8)
         })
       })
     })
@@ -117,7 +117,7 @@ class P extends Chunk647438.PureComponent {
         children: Chunk388032.intl.format(Chunk388032.t.OeGXVl, {
           learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SETTING_UP_TWO_FACTOR)
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "active",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.NIFmCA),
@@ -126,23 +126,23 @@ class P extends Chunk647438.PureComponent {
     })
   }
   renderHeader(e, t) {
-    return (0, n.jsxs)(l.xBx, {
+    return (0, r.jsxs)(l.xBx, {
       separator: false,
-      children: [(0, n.jsxs)(h.Z.Child, {
+      children: [(0, r.jsxs)(h.Z.Child, {
         grow: 1,
         shrink: 1,
-        children: [(0, n.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
-          className: g.header,
-          children: p.Z.parse(e)
-        }), (0, n.jsx)(l.Text, {
+          className: C.header,
+          children: u.Z.parse(e)
+        }), (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
-          className: g.subHeader,
+          className: C.subHeader,
           children: t
         })]
-      }), (0, n.jsx)(h.Z.Child, {
+      }), (0, r.jsx)(h.Z.Child, {
         grow: 0,
-        children: (0, n.jsx)(l.olH, {
+        children: (0, r.jsx)(l.olH, {
           onClick: this.handleCloseModal
         })
       })]
@@ -152,11 +152,11 @@ class P extends Chunk647438.PureComponent {
     let {
       onClose: t
     } = this.props;
-    return (0, n.jsx)(l.sYh, {
+    return (0, r.jsx)(l.sYh, {
       dismissable: true,
-      header: C.intl.string(C.t.mwVXnJ),
-      confirmText: C.intl.string(C.t.MwSEo6),
-      cancelText: C.intl.string(C.t["ETE/oK"]),
+      header: j.intl.string(j.t.mwVXnJ),
+      confirmText: j.intl.string(j.t.MwSEo6),
+      cancelText: j.intl.string(j.t["ETE/oK"]),
       onCancel: () => this.setState({
         showConfirmModal: false
       }),
@@ -165,7 +165,7 @@ class P extends Chunk647438.PureComponent {
           type: "MFA_SEEN_BACKUP_CODE_PROMPT"
         }), t()
       },
-      children: (0, n.jsx)(l.Text, {
+      children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: e
@@ -224,16 +224,16 @@ class P extends Chunk647438.PureComponent {
         showConfirmModal: true
       })
     }), y(this, "handleAddPasskey", () => {
-      this.props.onClose(), u.ef()
+      this.props.onClose(), p.ef()
     }), y(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
-            code: r
+            code: n
           } = e;
-          return "* ".concat(r.substr(0, 4), "-").concat(r.substr(4), " ").concat(t ? "(".concat(C.intl.string(C.t["ycME+/"]), ")") : "")
+          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(j.intl.string(j.t["ycME+/"]), ")") : "")
         }).join("\r\n"),
-        t = C.intl.formatToPlainString(C.t.uYWwh4, {
+        t = j.intl.formatToPlainString(j.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)

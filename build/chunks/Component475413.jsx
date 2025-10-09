@@ -83,7 +83,7 @@ var E = function(e) {
 let b = e => {
   var {
     action: t,
-    color: n = s.zx.Colors.PRIMARY,
+    color: n = s.Button.Colors.PRIMARY,
     themeColor: i = "primary",
     className: a,
     innerClassName: l,
@@ -97,13 +97,13 @@ let b = e => {
       action: t
     }), null == d || d(e)
   };
-  return (0, r.jsx)(s.zx, p(f({
+  return (0, r.jsx)(s.Button, p(f({
     buttonRef: _,
     className: o()(u.button, a),
     innerClassName: o()(u.buttonInner, l),
     color: o()(n, g[i]),
-    look: s.zx.Looks.FILLED,
-    size: s.zx.Sizes.SMALL,
+    look: s.Button.Looks.FILLED,
+    size: s.Button.Sizes.SMALL,
     onClick: b
   }, m), {
     "data-migration-pending": true
@@ -153,8 +153,8 @@ let O = Chunk647438.forwardRef(function(e, t) {
         buttonRef: t,
         className: o()(u.icon, E),
         innerClassName: o()(u.icon, y),
-        look: s.zx.Looks.FILLED,
-        size: s.zx.Sizes.NONE,
+        look: s.Button.Looks.FILLED,
+        size: s.Button.Sizes.NONE,
         grow: false,
         "aria-label": "string" == typeof i && null == g ? i : g
       }, v), {

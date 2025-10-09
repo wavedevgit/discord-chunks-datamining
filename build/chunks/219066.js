@@ -17,7 +17,7 @@ function p(e) {
   var t;
   let {
     context: n
-  } = e, i = "channel" === n.type ? n.channel : true, p = (0, s.LD)(null == i ? true : i.guild_id, true), {
+  } = e, l = "channel" === n.type ? n.channel : true, p = (0, s.LD)(null == l ? true : l.guild_id, true), {
     commandsByActiveSection: m,
     loading: f
   } = c.wi({
@@ -31,13 +31,13 @@ function p(e) {
       includeFrecency: true
     },
     allowFetch: true
-  }), h = l.useMemo(() => m.reduce((e, t) => {
+  }), h = i.useMemo(() => m.reduce((e, t) => {
     let {
       section: n,
-      data: l
+      data: i
     } = t;
-    return l.length > 0 && e.add(n.id), e
-  }, new Set), [m]), v = l.useMemo(() => {
+    return i.length > 0 && e.add(n.id), e
+  }, new Set), [m]), v = i.useMemo(() => {
     var e, t;
     return Object.values(null != (t = null == (e = p.result) ? true : e.sections) ? t : {}).map(e => {
       let {
@@ -45,16 +45,16 @@ function p(e) {
       } = e;
       return t
     }).filter(e => !(e.id in o.Tm) && h.has(e.id))
-  }, [null == (t = p.result) ? true : t.sections, h]), x = (0, u.h)(v);
+  }, [null == (t = p.result) ? true : t.sections, h]), y = (0, u.h)(v);
   return {
-    appsInThisServer: l.useMemo(() => r().compact(x.map(e => {
+    appsInThisServer: i.useMemo(() => r().compact(y.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [x]),
+    })), [y]),
     isLoading: p.fetchState.fetching || f
   }
 }

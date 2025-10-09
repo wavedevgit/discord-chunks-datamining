@@ -44,7 +44,7 @@ function m(e, t) {
   }), e
 }
 
-function f(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, l = function(e, t) {
     if (null == e) return {};
@@ -60,21 +60,21 @@ function f(e, t) {
   return l
 }
 
-function p(e) {
+function f(e) {
   var t = function(e, t) {
-    if ("object" !== g(e) || null === e) return e;
+    if ("object" !== p(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
     if (true !== n) {
       var r = n.call(e, t || "default");
-      if ("object" !== g(r)) return r;
+      if ("object" !== p(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === g(t) ? t : String(t)
+  return "symbol" === p(t) ? t : String(t)
 }
 
-function g(e) {
+function p(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
 let h = "UserFlowAnalyticsStore_current",
@@ -86,7 +86,7 @@ function v(e) {
   if (null == t) return null;
   let {
     version: n
-  } = t, r = f(t, ["version"]);
+  } = t, r = g(t, ["version"]);
   return 1 !== n ? null : r
 }
 new Chunk710845.Z("UserFlowAnalytics");
@@ -109,7 +109,7 @@ function N(e, t) {
     {
       [e]: r
     } = n,
-    l = f(n, [e].map(p)),
+    l = g(n, [e].map(f)),
     a = null != r ? r : v(e);
   ((null == a ? true : a.currentStep) == null || a.currentStep !== t) && (0, i.j)(() => {
     x.setState({
@@ -139,7 +139,7 @@ function E(e, t) {
     {
       [r]: s
     } = a,
-    o = f(a, [r].map(p)),
+    o = g(a, [r].map(f)),
     d = null != s ? s : v(r);
   null != d && null != d.currentStep && d.currentStep !== t && (0, i.j)(() => {
     x.setState({

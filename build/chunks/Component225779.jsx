@@ -140,7 +140,7 @@ function I(e) {
     children: t,
     href: n
   } = e, i = m(e, ["children", "href"]);
-  return (0, r.jsx)(s.eee, h(_({}, i), {
+  return (0, r.jsx)(s.Anchor, h(_({}, i), {
     className: d.button,
     href: n,
     children: t

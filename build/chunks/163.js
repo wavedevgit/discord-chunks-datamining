@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 163, original params: e,t,n (module,exports,require) **/
+/** chunk id: 163, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
@@ -21,18 +21,18 @@ function m(e) {
 }
 
 function h(e) {
-  let t = (0, r.e7)([s.ZP], () => s.ZP.getPendingChannelUpdates(e));
+  let n = (0, r.e7)([s.ZP], () => s.ZP.getPendingChannelUpdates(e));
   return l.useEffect(() => (m(e), () => m(e)), [e]), l.useEffect(() => {
-    null != t && (0, c.C1)(e, t)
-  }, [e, t]), {
-    onChannelClick: l.useCallback((e, t, n) => {
-      let l = s.ZP.isChannelOptedIn(e, t),
-        r = t === n;
-      !l && o.Z.isCollapsed(n) && null != n && (0, a.mJ)(n), (0, d.hi)(e) ? r ? (0, d.rz)(e, {
-        include: new Set([t])
+    null != n && (0, c.C1)(e, n)
+  }, [e, n]), {
+    onChannelClick: l.useCallback((e, n, t) => {
+      let l = s.ZP.isChannelOptedIn(e, n),
+        r = n === t;
+      !l && o.Z.isCollapsed(t) && null != t && (0, a.mJ)(t), (0, d.hi)(e) ? r ? (0, d.rz)(e, {
+        include: new Set([n])
       }) : (0, d.rz)(e, {
-        exclude: new Set([t])
-      }) : (0, c.k$)(e, t, !l, {
+        exclude: new Set([n])
+      }) : (0, c.k$)(e, n, !l, {
         section: u.jXE.CHANNEL_BROWSER
       })
     }, [])

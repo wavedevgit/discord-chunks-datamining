@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890644 = require("./890644.js");
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,12 +64,12 @@ function v(e) {
   if ((null == g ? true : g.application) != null) o()(null != g.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
     size: d.EFr.SIZE_24,
     user: g.application.bot,
-    className: x.verifiedIcon
+    className: b.verifiedIcon
   });
   else if (null != s) {
     let e = (0, c.ap)(l) ? s.icon.lightSVG : s.icon.darkSVG;
     i = (0, r.jsx)("img", {
-      className: x.verifiedIcon,
+      className: b.verifiedIcon,
       src: e,
       alt: h.intl.formatToPlainString(h.t.rtm15O, {
         name: s.name
@@ -77,17 +77,17 @@ function v(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: a()(x.verifiedRow, (null == s ? true : s.hasMetadata) === true || (null == g ? true : g.role_connections_metadata) != null && (null == g ? true : g.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
+    className: a()(b.verifiedRow, (null == s ? true : s.hasMetadata) === true || (null == g ? true : g.role_connections_metadata) != null && (null == g ? true : g.role_connections_metadata.length) > 0 ? b.verifiedRowWithMetadata : null),
     children: [i, (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
-      className: x.verifiedText,
+      className: b.verifiedText,
       children: h.intl.format(h.t.Nj0a3t, {
         platformName: null != (n = null == s ? true : s.name) ? n : null == g || null == (t = g.application) ? true : t.name
       })
     }), (0, r.jsx)(d.ua7, {
       "data-migration-pending": true,
       text: h.intl.string(h.t.N86XcH),
-      children: e => (0, r.jsx)("div", j(b({}, e), {
+      children: e => (0, r.jsx)("div", j(x({}, e), {
         children: (0, r.jsx)(d.hU, {
           "aria-label": h.intl.string(h.t.N86XcH),
           variant: "icon-only",
@@ -113,7 +113,7 @@ function _(e) {
     locked: u
   } = e, g = i.useId();
   return (0, r.jsxs)("tr", {
-    className: x.ruleContainer,
+    className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(d.nn4, {
@@ -123,13 +123,13 @@ function _(e) {
         })
       })
     }), (0, r.jsxs)("td", {
-      className: x.ruleContainerLabel,
+      className: b.ruleContainerLabel,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: t
       }), (0, r.jsx)("div", {
-        className: x.numericalRuleSubItemContainer,
+        className: b.numericalRuleSubItemContainer,
         children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: n
@@ -168,20 +168,20 @@ function C(e) {
     applicationId: g,
     onConfigurationChange: m,
     locked: p,
-    operator: b
+    operator: x
   } = e, j = (null == c ? true : c.configuration) != null, v = null != (n = null == c ? true : c.index) ? n : false, [_, C] = function(e, t) {
     let n = null != t ? t : f.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === f.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === f.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? true : t.value, b), [O, y] = i.useState(_), N = null != s ? h.intl.format(s, {
+  }(null == c || null == (t = c.configuration) ? true : t.value, x), [O, y] = i.useState(_), N = null != s ? h.intl.format(s, {
     count: O,
     metadataHook: () => O
   }) : (0, r.jsx)("span", {
-    className: x.fieldText,
+    className: b.fieldText,
     children: a
   }), E = i.useId();
   return (0, r.jsxs)("tr", {
-    className: x.ruleContainer,
+    className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(d.nn4, {
@@ -191,13 +191,13 @@ function C(e) {
         })
       })
     }), (0, r.jsxs)("td", {
-      className: x.ruleContainerLabel,
+      className: b.ruleContainerLabel,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: l
       }), (0, r.jsx)("div", {
-        className: x.numericalRuleSubItemContainer,
+        className: b.numericalRuleSubItemContainer,
         children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: N
@@ -205,7 +205,7 @@ function C(e) {
       })]
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)("div", {
-        className: x.numericalRuleInput,
+        className: b.numericalRuleInput,
         children: (0, r.jsx)(d.oil, {
           "aria-label": h.intl.string(h.t["FTmi9/"]),
           type: "number",
@@ -216,7 +216,7 @@ function C(e) {
               let n = null != t ? t : f.iO.GREATER_THAN,
                 r = Math.round(Number(null != e ? e : 0));
               return n === f.iO.GREATER_THAN ? r = Math.max(0, r - 1) : n === f.iO.LESS_THAN && (r = Math.max(1, r + 1)), [r.toString(), n]
-            }(e, b);
+            }(e, x);
             if ("" !== e) {
               var r;
               m({
@@ -257,7 +257,7 @@ function O(e) {
     children: t
   } = e;
   return (0, r.jsxs)("table", {
-    className: x.rulesTable,
+    className: b.rulesTable,
     children: [(0, r.jsx)("thead", {
       children: (0, r.jsxs)("tr", {
         children: [(0, r.jsx)("th", {
@@ -671,33 +671,33 @@ function Z(e) {
     h = null;
   switch (null == d ? true : d.type) {
     case p.ABu.STEAM:
-      h = (0, r.jsx)(N, b({}, f));
+      h = (0, r.jsx)(N, x({}, f));
       break;
     case p.ABu.TWITTER:
-      h = (0, r.jsx)(E, b({}, f));
+      h = (0, r.jsx)(E, x({}, f));
       break;
     case p.ABu.REDDIT:
-      h = (0, r.jsx)(I, b({}, f));
+      h = (0, r.jsx)(I, x({}, f));
       break;
     case p.ABu.BLUESKY:
-      h = (0, r.jsx)(y, b({}, f));
+      h = (0, r.jsx)(y, x({}, f));
       break;
     case p.ABu.PAYPAL:
-      h = (0, r.jsx)(S, b({}, f));
+      h = (0, r.jsx)(S, x({}, f));
       break;
     case p.ABu.EBAY:
-      h = (0, r.jsx)(T, b({}, f));
+      h = (0, r.jsx)(T, x({}, f));
       break;
     case p.ABu.TIKTOK:
-      h = (0, r.jsx)(P, b({}, f));
+      h = (0, r.jsx)(P, x({}, f));
       break;
     default:
-      h = (0, r.jsx)(w, j(b({}, f), {
+      h = (0, r.jsx)(w, j(x({}, f), {
         integration: c
       }))
   }
   return (0, r.jsxs)("div", {
-    className: x.container,
+    className: b.container,
     children: [(0, r.jsx)(v, {
       theme: s,
       platform: d,

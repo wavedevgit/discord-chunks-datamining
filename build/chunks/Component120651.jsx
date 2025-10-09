@@ -8,24 +8,24 @@ require("./647438.js");
 var Chunk952265 = require("./952265.js");
 
 function a(e) {
-  (0, n.ZD)(async () => {
+  (0, r.ZD)(async () => {
     let {
       default: t
     } = await A.e("73322").then(A.bind(A, 776045));
-    return A => (0, r.jsx)(t, function(e) {
+    return A => (0, n.jsx)(t, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var A = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(A);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
+          n = Object.keys(A);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
           return Object.getOwnPropertyDescriptor(A, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = A[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), n.forEach(function(t) {
+          var n;
+          n = A[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e

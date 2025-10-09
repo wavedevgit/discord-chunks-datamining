@@ -70,7 +70,7 @@ function g(e) {
     button: (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: p.button,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(a.Button, {
         variant: "primary",
         text: d.intl.string(f.default.VkItSk),
         onClick: () => {

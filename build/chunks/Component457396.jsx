@@ -54,8 +54,8 @@ let V = e => {
     let t, n, v;
     var F, z, {
         selected: W,
-        nitroTabButtonRef: q,
-        route: Y,
+        nitroTabButtonRef: Y,
+        route: q,
         locationState: K
       } = e,
       Q = function(e, t) {
@@ -190,9 +190,9 @@ let V = e => {
       }
       return e
     }({
-      listItemRef: q,
+      listItemRef: Y,
       selected: W,
-      route: Y,
+      route: q,
       icon: s.SrA,
       text: (0, r.jsx)(f.Z, {
         children: ee ? H.intl.string(H.t["4gwVVl"]) : H.intl.string(H.t.Ipxkoq)
@@ -215,7 +215,7 @@ let V = e => {
     return eu ? (0, r.jsx)(L.C, {
       children: eN
     }) : ed && eC === o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === v ? (0, r.jsx)(A.Z, {
-      targetElementRef: q,
+      targetElementRef: Y,
       discountOffer: ei,
       premiumSubscription: J,
       dismissCoachmark: eS,

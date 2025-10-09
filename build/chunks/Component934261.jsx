@@ -122,12 +122,12 @@ let I = e => {
       pendingAvatar: A,
       pendingAvatarDecoration: w,
       pendingThemeColors: N,
-      pendingAccentColor: k
+      pendingAccentColor: Z
     } = (0, l.cj)([u.Z, j.Z], () => C({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), Z = O.ZP.isPremium(i), D = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), L = {
+    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = O.ZP.isPremium(i), D = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), B = {
       user: i,
       guild: f,
       pendingGlobalName: x,
@@ -142,7 +142,7 @@ let I = e => {
       }),
       pendingAvatarDecoration: w,
       pendingThemeColors: N,
-      pendingAccentColor: k,
+      pendingAccentColor: Z,
       pendingProfileEffect: null != o ? o : null,
       hideFakeActivity: U,
       canUsePremiumCustomization: D,
@@ -151,7 +151,7 @@ let I = e => {
     };
     return (0, r.jsxs)("div", {
       className: E.previewContainer,
-      children: [(0, r.jsx)(p.Z, (t = C({}, L), n = n = {
+      children: [(0, r.jsx)(p.Z, (t = C({}, B), n = n = {
         disabledInputs: true,
         hideCustomStatus: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -168,7 +168,7 @@ let I = e => {
         pendingProfileEffectRecord: o,
         product: c,
         purchase: a,
-        userIsPremium: Z
+        userIsPremium: k
       })]
     })
   }

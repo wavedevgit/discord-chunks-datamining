@@ -32,7 +32,7 @@ function g(t) {
     transitionState: i,
     title: u.intl.string(u.t.G9HG5O),
     subtitle: u.intl.format(u.t.ZtUieH, {
-      openSettingsHook: (t, n) => (0, e.jsx)(o.eee, {
+      openSettingsHook: (t, n) => (0, e.jsx)(o.Anchor, {
         onClick: g,
         children: t
       }, n)

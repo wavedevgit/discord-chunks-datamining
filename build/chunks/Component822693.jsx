@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk800223 = require("./800223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = "NO_CHANNEL",
-  b = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
+let b = "NO_CHANNEL",
+  x = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
 
 function j(e) {
   let {
@@ -40,7 +40,7 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === j || d.Z.can(b, t)
+      return t.id === j || d.Z.can(x, t)
     }).map(e => {
       let {
         channel: t
@@ -51,11 +51,11 @@ function j(e) {
       }
     });
     return e.unshift({
-      value: x,
+      value: b,
       label: h.intl.string(h.t.u197b2)
     }), e
   }, [C, l, j]), y = i.useCallback(e => {
-    _ ? (0, p.c)(l, f, e !== x ? e : null) : m.Z.updateEmbed(l, f, e !== x ? e : null)
+    _ ? (0, p.c)(l, f, e !== b ? e : null) : m.Z.updateEmbed(l, f, e !== b ? e : null)
   }, [l, f, _]);
   return (0, r.jsx)(s.q4e, {
     label: t,

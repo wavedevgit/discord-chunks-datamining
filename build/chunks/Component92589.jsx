@@ -57,19 +57,19 @@ let g = e => {
       className: u.immersiveBannerContent,
       children: (0, r.jsxs)("div", {
         className: u.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(i.R, {
+        children: [null != t.endTime ? (0, r.jsx)(s.R, {
           endDate: t.endTime,
           size: "lg"
-        }) : null, (0, r.jsx)(s.X6q, {
+        }) : null, (0, r.jsx)(i.Heading, {
           variant: "heading-xxl/bold",
           className: u.title,
           color: "header-primary",
           style: d({}, C),
           children: t.title
-        }), h || _ ? (0, r.jsxs)(s.Text, {
+        }), h || _ ? (0, r.jsxs)(i.Text, {
           variant: "text-md/medium",
           style: d({}, C),
-          children: [h && t.body, h && _ && " ", _ && (0, r.jsx)(s.eee, {
+          children: [h && t.body, h && _ && " ", _ && (0, r.jsx)(i.Anchor, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, C),

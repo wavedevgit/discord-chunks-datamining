@@ -1,7 +1,7 @@
 /** Chunk was on 85668 **/
-/** chunk id: 720553, original params: t,e,a (module,exports,require) **/
+/** chunk id: 720553, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => m
 }), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,87 +15,89 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk140080 = require("./140080.js");
 
-function x(t) {
+function m(t) {
   let {
     url: e,
-    trustUrl: a,
-    isProtocol: x,
-    onConfirm: p,
-    onCancel: h,
+    trustUrl: n,
+    isProtocol: m,
+    onConfirm: h,
+    onCancel: p,
     onClose: C,
     transitionState: _
   } = t, {
     protocol: k,
     authorityPrefix: f,
-    hostname: M,
-    theRestOfTheUrl: b,
-    shouldTrustUrl: L,
-    setShouldTrustUrl: g,
-    handleConfirm: D,
-    handleCancel: v
-  } = (0, i.X)({
+    hostname: b,
+    theRestOfTheUrl: M,
+    shouldTrustUrl: g,
+    setShouldTrustUrl: L,
+    handleConfirm: v,
+    handleCancel: D
+  } = (0, s.X)({
     url: e,
-    trustUrl: a,
-    onConfirm: p,
-    onCancel: h,
+    trustUrl: n,
+    onConfirm: h,
+    onCancel: p,
     onClose: C
   });
-  return (0, s.Z)({
+  return (0, i.Z)({
     type: l.ImpressionTypes.MODAL,
     name: l.ImpressionNames.MASKED_LINK_MODAL
-  }), (0, n.jsxs)(r.Modal, {
+  }), (0, a.jsxs)(r.Modal, {
     size: "md",
     transitionState: _,
     onClose: C,
     title: u.intl.string(u.t["3w1QGh"]),
-    subtitle: x ? u.intl.format(u.t.aCYv19, {}) : u.intl.string(u.t.soRxRU),
+    subtitle: m ? u.intl.format(u.t.aCYv19, {}) : u.intl.string(u.t.soRxRU),
     actions: [{
       text: u.intl.string(u.t["/g10LC"]),
       onClick: () => {
-        v(), c.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: L,
+        D(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: g,
           action_type: "cancel"
         })
       },
       variant: "secondary"
     }, {
-      text: x ? u.intl.string(u.t.COq6kp) : u.intl.string(u.t.NcJfJC),
+      text: m ? u.intl.string(u.t.COq6kp) : u.intl.string(u.t.NcJfJC),
       onClick: () => {
-        D(), c.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: L,
+        v(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: g,
           action_type: "confirm"
         })
       },
       variant: "primary"
     }],
-    children: [(0, n.jsxs)(o.Ttm, {
-      className: m.linkCalloutContainer,
-      children: [(0, n.jsxs)(o.Text, {
+    children: [(0, a.jsxs)(c.Ttm, {
+      className: x.linkCalloutContainer,
+      children: [(0, a.jsxs)(c.Text, {
         tag: "span",
-        variant: x ? "text-md/semibold" : "text-md/normal",
-        color: x ? "text-default" : "text-muted",
+        variant: m ? "text-md/semibold" : "text-md/normal",
+        color: m ? "text-default" : "text-muted",
         children: [k, f]
-      }), (0, n.jsx)(o.Text, {
+      }), (0, a.jsx)(c.Text, {
         tag: "span",
-        variant: x ? "text-md/normal" : "text-md/semibold",
-        color: x ? "text-muted" : "text-default",
-        children: M
-      }), (0, n.jsx)(o.Text, {
+        variant: m ? "text-md/normal" : "text-md/semibold",
+        color: m ? "text-muted" : "text-default",
+        children: b
+      }), (0, a.jsx)(c.Text, {
         tag: "span",
         variant: "text-md/normal",
         color: "text-muted",
-        children: b
+        children: M
       })]
-    }), (0, n.jsx)(o.VLL, {
-      className: m.checkboxMana,
-      checked: L,
-      onChange: t => g(t),
-      label: x ? u.intl.format(u.t["haA+X1"], {
-        protocol: k.replace(":", "")
-      }) : u.intl.format(u.t.ZgXDsL, {
-        domain: M
-      }),
-      labelType: "secondary"
+    }), (0, a.jsx)("div", {
+      className: x.checkboxMana,
+      children: (0, a.jsx)(c.Checkbox, {
+        checked: g,
+        onChange: t => L(t),
+        label: m ? u.intl.format(u.t["haA+X1"], {
+          protocol: k.replace(":", "")
+        }) : u.intl.format(u.t.ZgXDsL, {
+          domain: b
+        }),
+        labelType: "secondary"
+      })
     })]
   })
 }

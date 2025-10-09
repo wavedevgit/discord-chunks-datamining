@@ -32,14 +32,14 @@ function b(e) {
     let e = f.r.build(t.config),
       n = e.defaultWatchVideoTask,
       r = null == n ? true : n.messages.videoEndCtaSubtitle;
-    return (0, l.Ew)(r) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, u.Pb)(t) ? v.intl.string(v.t.y8Xf3t) : v.intl.string(v.t.wirwNz) : r
+    return (0, l.Ew)(r) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, u.Pb)(t) ? g.intl.string(g.t.y8Xf3t) : g.intl.string(g.t.wirwNz) : r
   }, [t]), {
     isLoading: T
   } = (0, j.d7)();
   return a.useEffect(() => {
     T || b()
   }, [T, b]), (0, r.jsxs)("div", {
-    className: g.container,
+    className: v.container,
     children: [(0, r.jsx)(j.Fl, {
       id: "hero-display",
       children: e => (0, r.jsx)(h.Z, {
@@ -48,31 +48,31 @@ function b(e) {
           width: 908,
           height: 380
         },
-        containerClassName: g.heroDisplayContainer,
+        containerClassName: v.heroDisplayContainer,
         isInteracting: true,
         assetRef: e
       })
     }), (0, r.jsx)("div", {
-      className: g.partnerLogotypeContainer,
+      className: v.partnerLogotypeContainer,
       children: (0, r.jsx)(j.Fl, {
         id: "partner-logotype",
         children: e => (0, r.jsx)("img", {
           ref: e,
-          className: g.partnerLogotype,
-          alt: v.intl.formatToPlainString(v.t.rtm15O, {
+          className: v.partnerLogotype,
+          alt: g.intl.formatToPlainString(g.t.rtm15O, {
             name: t.config.messages.gameTitle
           }),
           src: (0, C.fh)(t, C.eC.LOGO_TYPE, w).url
         })
       })
     }), (0, r.jsxs)("div", {
-      className: g.partnerContentContainer,
+      className: v.partnerContentContainer,
       children: [(0, r.jsxs)("div", {
-        className: g.partnerCopyContainer,
+        className: v.partnerCopyContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          className: g.partnerTitle,
+          className: v.partnerTitle,
           children: t.config.messages.questName
         }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/medium",
@@ -83,15 +83,15 @@ function b(e) {
         id: "partner-game-tile",
         children: e => (0, r.jsx)("img", {
           ref: e,
-          className: g.partnerGameTile,
-          alt: v.intl.formatToPlainString(v.t.rtm15O, {
+          className: v.partnerGameTile,
+          alt: g.intl.formatToPlainString(g.t.rtm15O, {
             name: t.config.messages.gameTitle
           }),
           src: (0, C.fh)(t, C.eC.GAME_TILE, w).url
         })
       })]
     }), (0, r.jsx)("div", {
-      className: g.partnerCtaContainer,
+      className: v.partnerCtaContainer,
       children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         size: "sm",

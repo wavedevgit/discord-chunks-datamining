@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 125657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -27,7 +27,7 @@ function j(e) {
     applicationIntegration: j
   } = e, {
     application: v
-  } = j, O = null != v.bot ? new b.Z(v.bot) : null, y = (0, a.e7)([g.ZP], () => null != O ? g.ZP.getMember(n.id, O.id) : null, [O, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
+  } = j, O = null != v.bot ? new b.default(v.bot) : null, y = (0, a.e7)([g.ZP], () => null != O ? g.ZP.getMember(n.id, O.id) : null, [O, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
     var e;
     return f.Z.getManyRoles(n.id, null != (e = null == y ? true : y.roles) ? e : [])
   }), N = null == O ? true : O.id;

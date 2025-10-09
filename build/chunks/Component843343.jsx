@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 843343, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -26,7 +26,7 @@ function f() {
         count: require
       }),
       color: Chunk481060.ua7.Colors.RED,
-      children: (0, Chunk951288.jsx)(Chunk481060.eee, (e = function(e) {
+      children: (0, Chunk951288.jsx)(Chunk481060.Anchor, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

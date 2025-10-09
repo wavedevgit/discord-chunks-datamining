@@ -92,7 +92,7 @@ function E() {
       className: Chunk711322.panelInner,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk711322.headerWrapper,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           className: Chunk451429.header,
           children: null != module ? "Active Subscription" : "Subscription Type"
@@ -118,7 +118,7 @@ function E() {
             options: C,
             select: Chunk120356,
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: "Create Subscription",
@@ -128,20 +128,20 @@ function E() {
       }), null != module && (0, Chunk951288.jsx)(Chunk759027.Z, {
         subscription: module,
         onUpdated: T
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         className: Chunk451429.header,
         children: "Bulk Actions"
       }), (0, Chunk951288.jsx)("section", {
         className: l()([Chunk711322.section, Chunk711322.buttons]),
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "End All Subscriptions",
           onClick: P
         })
       }), O.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           className: Chunk451429.header,
           children: "Previous Subscriptions"

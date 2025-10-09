@@ -76,24 +76,24 @@ function k(t) {
     entity_type: L,
     guild_id: V
   } = T, {
-    canManageGuildEvent: X
-  } = (0, s.XJ)(null != k ? k : e), z = X(T), U = (0, Z.ZP)(T), W = (0, E.T)(null == k ? true : k.id, T.id), {
+    canManageGuildEvent: z
+  } = (0, s.XJ)(null != k ? k : e), U = z(T), W = (0, Z.ZP)(T), X = (0, E.T)(null == k ? true : k.id, T.id), {
     withinStartWindow: R
-  } = (0, P.ub)(G), A = (0, i.e7)([p.Z], () => null == k || !k.isGuildVocal() || p.Z.can(_.Plq.CONNECT, k), [k]), q = (0, c.J)(V), B = (0, b.Z)(N, H);
+  } = (0, P.ub)(G), A = (0, i.e7)([p.Z], () => null == k || !k.isGuildVocal() || p.Z.can(_.Plq.CONNECT, k), [k]), B = (0, c.J)(V), J = (0, b.Z)(N, H);
 
-  function J(t) {
+  function M(t) {
     t.stopPropagation(), (0, j.Z)(H, N, V)
   }
-  async function M(t) {
-    t.stopPropagation(), await a.Z.joinGuild(V), h.Z.addConditionalChangeListener(() => null == h.Z.getGuild(V) || (w || J(t), function(t) {
+  async function q(t) {
+    t.stopPropagation(), await u.Z.joinGuild(V), h.Z.addConditionalChangeListener(() => null == h.Z.getGuild(V) || (w || M(t), function(t) {
       t.stopPropagation();
       let e = f.ZP.getDefaultChannel(V);
       (0, r.pTH)(), (0, d.XU)(V, null == e ? true : e.id)
     }(t), false))
   }
   return {
-    onDeleteClick: z ? function(t) {
-      t.stopPropagation(), z && !w && (0, r.h7j)(t => (0, l.jsx)(r.ConfirmModal, S(D({}, t), {
+    onDeleteClick: U ? function(t) {
+      t.stopPropagation(), U && !w && (0, r.h7j)(t => (0, l.jsx)(r.ConfirmModal, S(D({}, t), {
         header: O.intl.string(O.t.R5bpio),
         confirmText: O.intl.string(O.t.oyYWHB),
         cancelText: O.intl.string(O.t["ETE/oK"]),
@@ -105,7 +105,7 @@ function k(t) {
       })))
     } : true,
     onContextMenu: function(t) {
-      t.stopPropagation(), null != e && (0, u.jW)(t, async () => {
+      t.stopPropagation(), null != e && (0, a.jW)(t, async () => {
         let {
           default: t
         } = await Promise.all([n.e("91973"), n.e("470")]).then(n.bind(n, 215269));
@@ -117,14 +117,14 @@ function k(t) {
         }, n))
       })
     },
-    onJoinClick: A || q ? function(t) {
-      if (t.stopPropagation(), q) {
+    onJoinClick: A || B ? function(t) {
+      if (t.stopPropagation(), B) {
         null == I || I(), (0, o.hk)(V);
         return
       }(null == k ? true : k.isGuildStageVoice()) ? ((0, g.Cq)(k), null == I || I()) : (null == k ? true : k.isGuildVoice()) && (y.Z.joinVoiceEvent(k.guild_id, k.id), null == I || I())
     } : true,
-    onRsvpClick: J,
-    onStartClick: z && R && !(null == B ? true : B.is_canceled) ? function(t) {
+    onRsvpClick: M,
+    onStartClick: U && R && !(null == J ? true : J.is_canceled) ? function(t) {
       t.stopPropagation(), (0, r.ZDy)(async () => {
         let {
           default: t
@@ -137,7 +137,7 @@ function k(t) {
     } : true,
     onInviteClick: function(t) {
       if (t.stopPropagation(), null != e) {
-        if (!U || !W) {
+        if (!W || !X) {
           let t = (0, C.H)({
             guildId: V,
             guildEventId: H
@@ -150,18 +150,18 @@ function k(t) {
         }(0, r.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
           return n => (0, l.jsx)(t, S(D({}, n), {
             guild: e,
             channel: k,
             guildScheduledEvent: T,
-            source: _.t4x.GUILD_EVENTS
+            source: _.InstantInviteSources.GUILD_EVENTS
           }))
         })
       }
     },
-    onEndClick: z && L === x.WX.EXTERNAL && w ? function(t) {
-      if (t.stopPropagation(), !z) return;
+    onEndClick: U && L === x.WX.EXTERNAL && w ? function(t) {
+      if (t.stopPropagation(), !U) return;
       let e = () => {
         y.Z.endEvent(H, V), (0, r.pTH)()
       };
@@ -176,6 +176,6 @@ function k(t) {
         })
       })))
     } : true,
-    onJoinGuildClick: M
+    onJoinGuildClick: q
   }
 }

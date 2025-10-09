@@ -93,9 +93,9 @@ function d(e) {
     let {
       jumpSequenceId: M,
       jumpFlash: R,
-      jumpTargetId: k
+      jumpTargetId: L
     } = h;
-    R && e.id === k && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && C.push({
+    R && e.id === L && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && C.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,

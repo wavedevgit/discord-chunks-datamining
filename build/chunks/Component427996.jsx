@@ -19,7 +19,7 @@ function p(e) {
     hideSearch: t,
     className: n
   } = e, {
-    activityUrlOverride: i,
+    activityUrlOverride: l,
     useActivityUrlOverride: p,
     filter: m
   } = (0, a.cj)([c.Z], () => ({
@@ -27,20 +27,20 @@ function p(e) {
     useActivityUrlOverride: c.Z.getUseActivityUrlOverride(),
     filter: c.Z.getFilter()
   }), []);
-  return (0, l.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: r()(d.container, n),
-    children: [(0, l.jsx)(o.XZJ, {
+    children: [(0, i.jsx)(o.Checkbox, {
       checked: p,
       onChange: s.Y$,
       label: u.intl.string(u.t["3TSGuL"])
-    }), p ? (0, l.jsx)(o.oil, {
+    }), p ? (0, i.jsx)(o.oil, {
       label: u.intl.string(u.t["9rnmen"]),
       disabled: !p,
-      value: null != i ? i : true,
+      value: null != l ? l : true,
       onChange: s.jS,
       placeholder: "https://localhost:3000"
-    }) : null, true === t ? null : (0, l.jsx)("div", {
-      children: (0, l.jsx)(o.E1j, {
+    }) : null, true === t ? null : (0, i.jsx)("div", {
+      children: (0, i.jsx)(o.E1j, {
         size: "sm",
         query: m,
         onChange: s.a8,

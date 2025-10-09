@@ -140,7 +140,7 @@ function I(e) {
         children: [(0, a.jsx)(C.M, {
           shouldUseThemeColor: true,
           className: N.orbsIcon
-        }), (0, a.jsx)(l.X6q, {
+        }), (0, a.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
           children: R.intl.formatToPlainString(R.t.YMor7u, {
@@ -160,7 +160,7 @@ function I(e) {
           }, t)
         })
       }) : null]
-    }), (0, a.jsx)(l.zxk, {
+    }), (0, a.jsx)(l.Button, {
       variant: "secondary",
       size: "sm",
       text: R.intl.string(R.t.WYchdX),

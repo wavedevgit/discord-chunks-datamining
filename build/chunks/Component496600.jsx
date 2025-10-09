@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ct: () => x,
-  px: () => k,
+  px: () => j,
   uz: () => L
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -123,8 +123,8 @@ function L(e) {
   }, [M, R]), i.useEffect(() => {
     o || S(null)
   }, [o, S]);
-  let k = i.useMemo(() => "" === R ? L : (0, s.Lu)(L, R, null != b ? b : D), [L, R, b]),
-    j = i.useMemo(() => null == g || Array.isArray(g) && 0 === g.length ? [] : (Array.isArray(g) ? g : [g]).map(e => L.find(t => t.value === e)).filter(e => null != e), [g, L]),
+  let j = i.useMemo(() => "" === R ? L : (0, s.Lu)(L, R, null != b ? b : D), [L, R, b]),
+    k = i.useMemo(() => null == g || Array.isArray(g) && 0 === g.length ? [] : (Array.isArray(g) ? g : [g]).map(e => L.find(t => t.value === e)).filter(e => null != e), [g, L]),
     U = f || _,
     G = i.useCallback(e => {
       if (U || O && 0 === e.length) return;
@@ -137,7 +137,7 @@ function L(e) {
       }
       p && o && (null == l || l(false)), N(false)
     }, [U, d, m, p, o, l, O]),
-    B = j.length > 0;
+    B = k.length > 0;
   return (0, r.jsx)(E.Z.Provider, {
     value: C({
       activeDescendantIndex: T,
@@ -149,8 +149,8 @@ function L(e) {
       hasValue: B,
       value: g,
       options: L,
-      filteredOptions: k,
-      selectedOptions: j,
+      filteredOptions: j,
+      selectedOptions: k,
       maxOptionsVisible: a,
       query: R,
       setQuery: w,
@@ -211,8 +211,8 @@ function M(e) {
     wrapTags: P,
     ref: w
   } = e, D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useContext(u.z), {
-    activeDescendantIndex: k,
-    setActiveDescendantIndex: j,
+    activeDescendantIndex: j,
+    setActiveDescendantIndex: k,
     selectionMode: U,
     disabled: G,
     readOnly: B,
@@ -236,7 +236,7 @@ function M(e) {
     setQuery: ei,
     isEditing: ea,
     setIsEditing: eo
-  } = (0, E.T)(), es = "multiple" === U && q, el = null != k ? (0, O.cA)(H, k) : true;
+  } = (0, E.T)(), es = "multiple" === U && q, el = null != j ? (0, O.cA)(H, j) : true;
   i.useEffect(() => {
     var e;
     null != el && (null == (e = document.getElementById(el)) || e.scrollIntoView({
@@ -285,7 +285,7 @@ function M(e) {
       switch (e.key) {
         case "ArrowDown":
           if (0 === t) return;
-          e.preventDefault(), j(e => {
+          e.preventDefault(), k(e => {
             if (null === e) return 0;
             let n = e + 1;
             return n >= t && (n = W ? 0 : e), n
@@ -293,15 +293,15 @@ function M(e) {
           break;
         case "ArrowUp":
           if (0 === t) return;
-          e.preventDefault(), j(e => {
+          e.preventDefault(), k(e => {
             if (null === e) return 0;
             let n = e - 1;
             return n < 0 && (n = W ? t - 1 : 0), n
           }), null == $ || $(true);
           break;
         case "Enter":
-          if (e.preventDefault(), e.stopPropagation(), null == k || 0 === t) return;
-          let n = en[k];
+          if (e.preventDefault(), e.stopPropagation(), null == j || 0 === t) return;
+          let n = en[j];
           if (true === n.disabled || V && 1 === et.length && et.includes(n)) return;
           X((0, O.cq)(U, et, n));
           break;
@@ -315,10 +315,10 @@ function M(e) {
           q && F && (e.preventDefault(), e.stopPropagation(), eu())
       }
       null == N || N(e)
-    }, [U, V, F, q, W, N, eu, X, et, er, $, en, k, j]),
+    }, [U, V, F, q, W, N, eu, X, et, er, $, en, j, k]),
     eg = i.useCallback(e => {
-      eo(true), ei(e.target.value), null == $ || $(true), null == h || h(e), j(null)
-    }, [h, eo, ei, $, j]),
+      eo(true), ei(e.target.value), null == $ || $(true), null == h || h(e), k(null)
+    }, [h, eo, ei, $, k]),
     eE = i.useMemo(() => {
       if (0 === et.length) return null;
       if ("single" === U) {
@@ -418,7 +418,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     renderListItem: t,
     renderEmptyState: n,

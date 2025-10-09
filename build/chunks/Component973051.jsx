@@ -1,7 +1,7 @@
 /** Chunk was on 37709 **/
 /** chunk id: 973051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function h(e) {
   return e
 }
 
-function x(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,11 +48,11 @@ function x(e, t) {
   }), e
 }
 
-function g(e) {
+function x(e) {
   var t;
   let {
     guild: n,
-    prompts: g,
+    prompts: x,
     completeOnboarding: v,
     setCurrentStep: j,
     disableTracking: _,
@@ -60,8 +60,8 @@ function g(e) {
   } = e, O = l.useRef(null), y = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, C] = l.useState(null != (t = null == y ? true : y.response) && t), P = (0, i.e7)([c.Z], () => c.Z.get(n.id)), E = l.useRef(null), Z = l.useRef(null), I = l.useCallback(async () => {
     if (null != P && null != y) {
       try {
-        await s.ZP.submitVerificationForm(n.id, x(h({}, P), {
-          formFields: [x(h({}, y), {
+        await s.ZP.submitVerificationForm(n.id, g(h({}, P), {
+          formFields: [g(h({}, y), {
             response: N
           })]
         }))
@@ -96,7 +96,7 @@ function g(e) {
           variant: "text-sm/medium",
           color: "text-muted",
           children: f.intl.string(f.t["b1JC+v"])
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
           children: f.intl.string(f.t.prJqwc)
         }), (0, r.jsx)("div", {
@@ -123,21 +123,21 @@ function g(e) {
         className: p.navButtons,
         children: [(0, r.jsx)("div", {
           className: p.leftButtons,
-          children: false !== b && (0, r.jsx)(a.zxk, {
+          children: false !== b && (0, r.jsx)(a.Button, {
             variant: "secondary",
             size: "md",
             text: f.intl.string(f.t["13/7kZ"]),
             onClick: () => {
-              !_ && (d.default.track(m.rMx.GUILD_ONBOARDING_STEP_COMPLETED, x(h({}, (0, o.hH)(n.id)), {
+              !_ && (d.default.track(m.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(h({}, (0, o.hH)(n.id)), {
                 step: false,
                 skipped: false,
                 back: true,
                 options_selected: 0,
                 in_onboarding: true,
                 is_final_step: false
-              })), b >= 0 && d.default.track(m.rMx.GUILD_ONBOARDING_STEP_VIEWED, x(h({}, (0, o.hH)(n.id)), {
+              })), b >= 0 && d.default.track(m.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(h({}, (0, o.hH)(n.id)), {
                 step: b,
-                required: g[b].required
+                required: x[b].required
               }))), j(b)
             },
             icon: a.j9r,
@@ -150,7 +150,7 @@ function g(e) {
             variant: "text-xs/normal",
             color: "text-muted",
             children: N ? f.intl.string(f.t.arAe3N) : f.intl.string(f.t.D0CVAQ)
-          }), (0, r.jsx)(a.zxk, {
+          }), (0, r.jsx)(a.Button, {
             variant: "primary",
             size: "md",
             text: "".concat(f.intl.string(f.t["8SuVoK"]), " \uD83C\uDF89"),

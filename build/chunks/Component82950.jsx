@@ -103,7 +103,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: g.message,
-        children: [null != n ? (0, r.jsx)(s.X6q, {
+        children: [null != n ? (0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
           className: g.title,
           children: n

@@ -54,7 +54,7 @@ let c = {
         layout: c,
         items: f,
         onRemove: n ? p : true
-      }), g = n && (0, r.jsx)(s.zxk, {
+      }), g = n && (0, r.jsx)(s.Button, {
         disabled: f.length === d.length,
         text: "Reset",
         onClick: h

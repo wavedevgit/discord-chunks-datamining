@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 208567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => j,
@@ -83,8 +83,8 @@ class v extends(i = Chunk647438.PureComponent) {
       className: C,
       imageClassName: N,
       iconClassName: S,
-      iconWrapperClassName: w,
-      icon: P,
+      iconWrapperClassName: P,
+      icon: w,
       hideSize: I,
       imageStyle: E,
       showRemoveButton: T,
@@ -93,7 +93,7 @@ class v extends(i = Chunk647438.PureComponent) {
       onOpenImageSelectModal: A,
       "aria-label": D
     } = this.props;
-    if (null != (t = null != Chunk120356 && /^data:/.test(Chunk120356) ? Chunk120356 : f(Chunk120356)) ? n = 'url("'.concat(exports, '")') : null != c && (i = (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    if (null != (t = null != Chunk120356 && /^data:/.test(Chunk120356) ? Chunk120356 : f(Chunk120356)) ? n = 'url("'.concat(exports, '")') : null != c && (i = (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-xxl/normal",
         color: "always-white",
         className: Chunk270956.imageUploaderAcronym,
@@ -107,11 +107,11 @@ class v extends(i = Chunk647438.PureComponent) {
         }),
         children: [i, _ && (0, Chunk951288.jsx)("div", {
           className: o()(Chunk270956.imageUploaderIcon, Chunk270956.imageUploaderIconDisabled, S),
-          children: P
+          children: w
         })]
       })
     });
-    null != Chunk120356 ? l = (0, Chunk951288.jsx)(Chunk481060.eee, {
+    null != Chunk120356 ? l = (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       className: Chunk270956.removeButton,
       onClick: this.handleRemove,
       children: Chunk388032.intl.string(Chunk388032.t.N86XcH)
@@ -127,7 +127,7 @@ class v extends(i = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk481060.tEY, {
         within: true,
         children: (0, Chunk951288.jsxs)("div", {
-          className: y ? o()(Chunk270956.imageUploaderIconWrapper, w) : true,
+          className: y ? o()(Chunk270956.imageUploaderIconWrapper, P) : true,
           children: [(0, Chunk951288.jsxs)("div", {
             className: o()(Chunk270956.imageUploaderInner, N),
             style: x(h({}, E), {
@@ -155,7 +155,7 @@ class v extends(i = Chunk647438.PureComponent) {
             children: Chunk512722
           }), y && (0, Chunk951288.jsx)(j, {
             className: S,
-            icon: P
+            icon: w
           })]
         })
       }), T ? Chunk647438 : null]

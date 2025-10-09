@@ -226,7 +226,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.state, {
       consentRequired: t
     } = this.props;
-    return exports ? (0, Chunk951288.jsx)(Chunk853268.Z, {
+    return exports ? (0, Chunk951288.jsx)(Chunk853268.default, {
       value: module,
       onChange: e => this.setState({
         consent: e
@@ -430,8 +430,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       apiErrors: {
         email: v,
         username: b,
-        global_name: I,
-        password: j,
+        global_name: j,
+        password: I,
         date_of_birth: S
       } = {}
     } = this.state, {
@@ -491,7 +491,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: ec(I),
+        error: ec(j),
         maxLength: en.hy,
         autoComplete: "off",
         setRef: e => {
@@ -545,7 +545,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? er.intl.string(er.t.EkokLy) : null
         }),
-        error: null != f ? f : ec(j),
+        error: null != f ? f : ec(I),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -733,9 +733,9 @@ class eu extends(r = Chunk647438.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([z.Z, B.default, _.Z, L.Z, P.Z], () => ({
+  let t = (0, d.cj)([z.Z, F.default, _.Z, L.Z, P.Z], () => ({
       consentRequired: z.Z.getAuthenticationConsentRequired(),
-      authenticated: B.default.isAuthenticated(),
+      authenticated: F.default.isAuthenticated(),
       isUnderage: _.Z.isUnderageAnonymous(),
       country: L.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()

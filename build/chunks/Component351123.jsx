@@ -2,7 +2,7 @@
 /** chunk id: 351123, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => X
+  Z: () => J
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -214,7 +214,7 @@ function F(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, c = (0, a.e7)([E.Z], () => E.Z.getSortedRoles(t.id)), u = I.RZ(t, c, l, S.yP, r), h = (0, a.e7)([Z.ZP], () => I.cR(Z.ZP.getMemberIds(t.id), l, t, S.yP, r)), g = (0, C.nG)(l.id);
+  } = e, c = (0, a.e7)([Z.Z], () => Z.Z.getSortedRoles(t.id)), u = I.RZ(t, c, l, S.yP, r), h = (0, a.e7)([E.ZP], () => I.cR(E.ZP.getMemberIds(t.id), l, t, S.yP, r)), g = (0, C.nG)(l.id);
   return (0, i.jsxs)("div", {
     className: s()(V.settingCard, V.active),
     children: [(0, i.jsx)(M.Z, {
@@ -240,7 +240,7 @@ function F(e) {
         }), (0, i.jsx)(o.u, {
           text: H.intl.string(H.t.arRuER),
           shouldShow: !g,
-          children: (0, i.jsx)(d.zxk, {
+          children: (0, i.jsx)(d.Button, {
             variant: "primary",
             size: "sm",
             text: H.intl.string(H.t.dMJ3Y2),
@@ -340,11 +340,11 @@ function z(e) {
           justify: x.Z.Justify.BETWEEN,
           align: x.Z.Align.CENTER,
           className: V.folderHeader,
-          children: [(0, i.jsx)(d.X6q, {
+          children: [(0, i.jsx)(d.Heading, {
             variant: "heading-sm/semibold",
             className: V.folderTitle,
             children: f.formLabel
-          }), (0, i.jsx)(d.zxk, {
+          }), (0, i.jsx)(d.Button, {
             variant: "primary",
             size: "sm",
             text: H.intl.string(H.t.dMJ3Y2),
@@ -378,14 +378,14 @@ function q(e) {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(d.izJ, {
       className: V.divider
-    }), (0, i.jsx)(d.X6q, {
+    }), (0, i.jsx)(d.Heading, {
       variant: "heading-sm/semibold",
       className: s()(V.folderTitle, V.sectionTitle),
       children: t
     })]
   })
 }
-let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
+let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.ZP, Chunk430824.Z, Chunk485386.Z], () => {
   let e, t = Chunk277053.Z.channel,
     n = Chunk277053.Z.category,
     i = [],
@@ -432,7 +432,7 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     subtitle: H.intl.string(H.t.XLrZys)
   };
   return s.isCategory() && (b.title = H.intl.string(H.t["/uELTk"]), b.subtitle = H.intl.string(H.t["8iAg3d"])), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(d.X6q, {
+    children: [(0, i.jsx)(d.Heading, {
       variant: "heading-lg/semibold",
       children: b.title
     }), (0, i.jsx)(d.Text, {

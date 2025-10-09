@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 70297, original params: e,t,n (module,exports,require) **/
+/** chunk id: 70297, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => C,
   q: () => _
@@ -27,12 +27,12 @@ function _(e) {
 
 function C(e) {
   let {
-    guild: t
-  } = e, n = (0, m.te)(t.id), r = (0, s.Nj)(a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), _ = n && !r ? a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.z.CHANNEL_BROWSER_NUX;
+    guild: n
+  } = e, t = (0, m.te)(n.id), r = (0, s.Nj)(a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), _ = t && !r ? a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.z.CHANNEL_BROWSER_NUX;
   (0, c.kk)(_);
-  let C = n ? (0, l.jsxs)(l.Fragment, {
+  let C = t ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)("div", {
-      children: [(0, l.jsx)(o.X6q, {
+      children: [(0, l.jsx)(o.Heading, {
         className: g.heading,
         color: "always-white",
         variant: "heading-lg/semibold",
@@ -42,10 +42,10 @@ function C(e) {
         variant: "text-md/normal",
         color: "always-white",
         children: f.intl.string(f.t.CXh95e)
-      }), (0, l.jsx)(o.zxk, {
+      }), (0, l.jsx)(o.Button, {
         variant: "overlay-primary",
         onClick: () => {
-          d.Z.open(t.id, h.pNK.ONBOARDING), (0, s.Q3)(_, {
+          d.Z.open(n.id, h.pNK.ONBOARDING), (0, s.Q3)(_, {
             dismissAction: p.L.PRIMARY
           })
         },
@@ -63,7 +63,7 @@ function C(e) {
       alt: "",
       "aria-hidden": true
     }), (0, l.jsxs)("div", {
-      children: [(0, l.jsx)(o.X6q, {
+      children: [(0, l.jsx)(o.Heading, {
         className: g.heading,
         variant: "heading-lg/semibold",
         color: "header-primary",
@@ -82,7 +82,7 @@ function C(e) {
   });
   return (0, l.jsxs)("div", {
     className: i()(g.container, {
-      [g.adminUpsell]: n
+      [g.adminUpsell]: t
     }),
     children: [(0, l.jsx)(o.P3F, {
       className: g.closeButton,

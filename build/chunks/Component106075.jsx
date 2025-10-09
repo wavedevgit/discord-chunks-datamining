@@ -105,7 +105,7 @@ function C() {
         selectedTab: L ? null : T,
         onTabSelect: B,
         onAvailableWidthChange: D
-      }), L && (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), L && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: Chunk301578.searchResultsHeader,

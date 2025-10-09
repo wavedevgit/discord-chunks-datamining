@@ -1,5 +1,5 @@
 /** Chunk was on 85342 **/
-/** chunk id: 986197, original params: e,t,r (module,exports,require) **/
+/** chunk id: 986197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 }), require("./35282.js");
@@ -23,8 +23,8 @@ let m = {
       type: "POMELO_SUGGESTIONS_RESET"
     });
     try {
-      var r;
-      let n = await i.tn.get({
+      var n;
+      let r = await i.tn.get({
         url: u.ANM.POMELO_SUGGESTIONS_UNAUTHED,
         query: null == e ? true : {
           global_name: e
@@ -33,9 +33,9 @@ let m = {
         rejectWithError: true,
         failImmediatelyWhenRateLimited: true
       });
-      if (n.ok && (null == (r = n.body) ? true : r.username) != null) return o.Z.dispatch({
+      if (r.ok && (null == (n = r.body) ? true : n.username) != null) return o.Z.dispatch({
         type: "POMELO_REGISTRATION_SUGGESTIONS_SUCCESS",
-        suggestion: n.body,
+        suggestion: r.body,
         source: e
       })
     } catch (e) {
@@ -49,14 +49,14 @@ let m = {
         type: "POMELO_SUGGESTIONS_FETCH",
         usernameSuggestionLoading: true
       });
-      let r = await i.tn.get({
+      let n = await i.tn.get({
         url: u.ANM.POMELO_SUGGESTIONS,
         timeout: e,
         rejectWithError: true
       });
-      if (r.ok && (null == (t = r.body) ? true : t.username) != null) return o.Z.dispatch({
+      if (n.ok && (null == (t = n.body) ? true : t.username) != null) return o.Z.dispatch({
         type: "POMELO_SUGGESTIONS_SUCCESS",
-        suggestion: r.body
+        suggestion: n.body
       })
     } catch (e) {
       return
@@ -64,7 +64,7 @@ let m = {
   },
   async attemptPomelo(e) {
     var t;
-    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "modal",
+    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "modal",
       i = arguments.length > 2 && true !== arguments[2] && arguments[2],
       c = arguments.length > 3 && true !== arguments[3] && arguments[3],
       m = false === /^[A-Za-z0-9_.]*$/.test(e) ? d.intl.string(d.t.z7c4bG) : e.includes("..") ? d.intl.string(d.t["C7G+go"]) : e.length < 2 || e.length > 32 ? d.intl.formatToPlainString(d.t.IpijXF, {
@@ -74,7 +74,7 @@ let m = {
     if (null != m) return s.default.track(u.rMx.POMELO_ERRORS, {
       reason: m,
       username_error: true,
-      location: r,
+      location: n,
       one_click_flow: c
     }), o.Z.dispatch({
       type: "POMELO_ATTEMPT_FAILURE",
@@ -88,7 +88,7 @@ let m = {
           username: e
         },
         trackedActionData: {
-          event: n.NetworkActionNames.POMELO_ATTEMPT,
+          event: r.NetworkActionNames.POMELO_ATTEMPT,
           properties: {
             requested_username: e
           }
@@ -98,7 +98,7 @@ let m = {
       t.body.taken && s.default.track(u.rMx.POMELO_ERRORS, {
         reason: "already_taken",
         username_error: true,
-        location: r,
+        location: n,
         one_click_flow: c
       }), o.Z.dispatch({
         type: "POMELO_ATTEMPT_SUCCESS",
@@ -106,29 +106,29 @@ let m = {
         taken: t.body.taken
       })
     } catch (l) {
-      let n = new a.Hx(l),
-        i = null != (t = n.getAnyErrorMessage()) ? t : true;
+      let r = new a.Hx(l),
+        i = null != (t = r.getAnyErrorMessage()) ? t : true;
       s.default.track(u.rMx.POMELO_ERRORS, {
         reason: i,
         username_error: true,
-        location: r,
+        location: n,
         one_click_flow: c
       }), o.Z.dispatch({
         username: e,
         type: "POMELO_ATTEMPT_FAILURE",
-        error: null != n.status && n.status < 500 && 401 !== n.status ? i : true,
-        statusCode: n.status,
-        retryAfter: n.retryAfter
+        error: null != r.status && r.status < 500 && 401 !== r.status ? i : true,
+        statusCode: r.status,
+        retryAfter: r.retryAfter
       })
     }
   },
   async createPomelo(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      r = await l.Z.post({
+      n = await l.Z.post({
         body: e,
         url: u.ANM.POMELO_CREATE,
         trackedActionData: {
-          event: n.NetworkActionNames.POMELO_CREATE,
+          event: r.NetworkActionNames.POMELO_CREATE,
           properties: {
             one_click_flow: t
           }
@@ -137,7 +137,7 @@ let m = {
       });
     return o.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
-      user: r.body
-    }), r.body
+      user: n.body
+    }), n.body
   }
 }

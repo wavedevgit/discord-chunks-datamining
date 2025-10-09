@@ -22,25 +22,25 @@ function h(e) {
     command: n,
     application: h,
     onClick: v,
-    query: x,
-    searchResultsPosition: y
-  } = e, g = i.useCallback(e => {
+    query: y,
+    searchResultsPosition: x
+  } = e, g = l.useCallback(e => {
     if ((0, s.BQ)(h)) {
       let t = h instanceof o.ZP ? h : o.ZP.createFromServer(h);
-      (0, a.vq)(e, e => (0, l.jsx)(u.Z, function(e) {
+      (0, a.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            l = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), l.forEach(function(t) {
-            var l;
-            l = n[t], t in e ? Object.defineProperty(e, t, {
-              value: l,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = l
+            }) : e[t] = i
           })
         }
         return e
@@ -52,9 +52,9 @@ function h(e) {
     iconURL: b,
     name: N,
     description: j
-  } = i.useMemo(() => (0, s.sl)(h, {
+  } = l.useMemo(() => (0, s.sl)(h, {
     fakeAppIconURL: f
-  }), [h]), C = i.useMemo(() => {
+  }), [h]), C = l.useMemo(() => {
     var e;
     let t = null != (e = null == n ? true : n.displayDescription) ? e : j;
     return null == t ? null : (0, c.ae)(t, true)
@@ -63,42 +63,42 @@ function h(e) {
   } = (0, p.Z)({
     applicationId: h.id,
     commandId: null == n ? true : n.id,
-    query: x,
-    searchResultsPosition: y
+    query: y,
+    searchResultsPosition: x
   });
-  return (0, l.jsx)(r.P3F, {
+  return (0, i.jsx)(r.P3F, {
     className: m.clickable,
     innerRef: e => {
       E.current = e
     },
     onClick: v,
     onContextMenu: g,
-    children: (0, l.jsxs)(r.Rny, {
+    children: (0, i.jsxs)(r.Rny, {
       className: m.focusBlock,
-      children: [(0, l.jsx)(d.Z, {
+      children: [(0, i.jsx)(d.Z, {
         src: b,
         className: m.icon,
         "aria-hidden": true,
         rendersPlaceholder: true
-      }), (0, l.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: m.cmdDetails,
-        children: [(0, l.jsx)(r.X6q, {
+        children: [(0, i.jsx)(r.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: null != (t = null == n ? true : n.displayName) ? t : N
-        }), (0, l.jsx)(r.Text, {
+        }), (0, i.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
           children: C
         })]
-      }), null != n ? (0, l.jsx)(r.Text, {
+      }), null != n ? (0, i.jsx)(r.Text, {
         className: m.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
         children: N
-      }) : null, (0, l.jsx)("div", {
+      }) : null, (0, i.jsx)("div", {
         className: m.underline
       })]
     })

@@ -17,9 +17,9 @@ function o(e) {
   return {
     trackSectionImpressionRef: (0, a.Z)({
       onVisible: () => {
-        (0, i.h)({
-          type: l.ImpressionTypes.VIEW,
-          name: l.ImpressionNames.APP_LAUNCHER_SECTION,
+        (0, l.h)({
+          type: i.ImpressionTypes.VIEW,
+          name: i.ImpressionNames.APP_LAUNCHER_SECTION,
           properties: {
             section_name: t,
             num_items: n,

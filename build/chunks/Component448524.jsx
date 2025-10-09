@@ -24,7 +24,7 @@ let h = () => {
     className: Chunk336888.container,
     children: [module.length > 0 && (0, Chunk951288.jsxs)("div", {
       className: Chunk336888.actionSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "text-md/medium",
         className: Chunk336888.sectionHeader,
         children: Chunk388032.intl.string(Chunk345909.default.BxbvS0)
@@ -45,7 +45,7 @@ let h = () => {
       })]
     }), exports.length > 0 && (0, Chunk951288.jsxs)("div", {
       className: Chunk336888.actionSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "text-md/medium",
         className: Chunk336888.sectionHeader,
         children: Chunk388032.intl.string(Chunk345909.default.Lq9Sen)

@@ -248,7 +248,7 @@ function W(e) {
   }
   throw Error("Invalid Dispatch stage")
 }
-class q extends Chunk647438.PureComponent {
+class Y extends Chunk647438.PureComponent {
   get isFocused() {
     let {
       cellProps: e
@@ -458,7 +458,7 @@ class q extends Chunk647438.PureComponent {
     })
   }
 }
-let Y = () => (0, Chunk951288.jsx)(H, {
+let q = () => (0, Chunk951288.jsx)(H, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SU),
     onClick: () => Chunk51025.v4()
@@ -507,7 +507,7 @@ let Y = () => (0, Chunk951288.jsx)(H, {
     cellClassName: Chunk248241.progressCell,
     headerCellClassName: Chunk248241.progressCellHeader,
     bodyCellClassName: Chunk248241.progressCellBody,
-    render: (e, t) => (0, r.jsx)(q, {
+    render: (e, t) => (0, r.jsx)(Y, {
       item: e,
       cellProps: t
     })
@@ -523,7 +523,7 @@ let Y = () => (0, Chunk951288.jsx)(H, {
         source: D.Sbl.APPLICATION_LIBRARY_UPDATES
       }) : null : null != e.state ? e.state.type !== D.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(K, {
+      }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(K, {
         item: e
       }), i = (0, r.jsx)(X, {
         item: e

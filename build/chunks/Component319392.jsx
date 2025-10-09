@@ -21,7 +21,7 @@ function b() {
     className: Chunk99372.getXboxApp,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk99372.getXboxAppBody,
-      children: [(0, Chunk951288.jsxs)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Heading, {
         className: Chunk99372.getXboxAppHeading,
         variant: "text-lg/semibold",
         children: [(0, Chunk951288.jsx)("div", {
@@ -39,7 +39,7 @@ function b() {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: (0, Chunk951288.jsx)(Chunk481060.eee, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
         })

@@ -109,12 +109,12 @@ function M(e) {
   } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
-    canMessage: k
-  } = (0, f.TE)(t, l), L = (0, s.e7)([_.default], () => {
+    canMessage: L
+  } = (0, f.TE)(t, l), D = (0, s.e7)([_.default], () => {
     var e, t;
     return (null == (e = _.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = _.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: D,
+    guildPopulated: k,
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
@@ -131,10 +131,10 @@ function M(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("7654"), n.e("49049"), n.e("98953")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
           return n => (0, i.jsx)(t, A(N({}, n), {
             guild: e,
-            source: P.t4x.CHANNEL_WELCOME,
+            source: P.InstantInviteSources.CHANNEL_WELCOME,
             analyticsLocation: {
               section: P.jXE.CHANNEL_WELCOME_CTA
             }
@@ -194,9 +194,9 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(L || D || U || B), {
-    titleAnimatedStyle: q,
-    opacities: Y
+  }(l), W = !(D || k || U || B), {
+    titleAnimatedStyle: Y,
+    opacities: K
   } = function(e) {
     let t = (0, d.Z)(() => new o.Z.Value(0)),
       n = (0, d.Z)(() => new o.Z.Value(0)),
@@ -233,7 +233,7 @@ function M(e) {
       } : {},
       opacities: i
     }
-  }(W), [K, X] = r.useState([]), J = K.length > 0;
+  }(W), [q, X] = r.useState([]), J = q.length > 0;
   if (r.useEffect(() => {
       (async () => {
         try {
@@ -247,18 +247,18 @@ function M(e) {
   p || (M && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: Y[Q.length]
+      opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0TU),
-      completed: D,
+      completed: k,
       onClick: H
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: Y[Q.length]
+      opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
@@ -266,10 +266,10 @@ function M(e) {
       completed: B,
       onClick: F
     })
-  }, "customize")), k && Q.push((0, i.jsx)(o.Z.div, {
+  }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: Y[Q.length]
+      opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.qMX,
@@ -280,18 +280,18 @@ function M(e) {
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: Y[Q.length]
+      opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNIy),
-      completed: L,
+      completed: D,
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: Y[Q.length]
+      opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.Tg$,
@@ -310,8 +310,8 @@ function M(e) {
       children: (0, i.jsxs)("div", {
         className: T.inner,
         children: [(0, i.jsxs)(o.Z.div, {
-          style: q,
-          children: [(0, i.jsx)(u.X6q, {
+          style: Y,
+          children: [(0, i.jsx)(u.Heading, {
             className: T.titleName,
             variant: "heading-xxl/medium",
             children: Z.intl.format(Z.t.rkHVKS, {

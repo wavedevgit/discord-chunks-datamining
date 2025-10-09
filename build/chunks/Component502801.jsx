@@ -1,12 +1,12 @@
 /** Chunk was on 99617 **/
 /** chunk id: 502801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => H
+  default: () => E
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
   Chunk755721 = require("./755721.js"),
@@ -36,40 +36,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk138715 = require("./138715.js"),
   Chunk979770 = require("./979770.js");
 
-function z(e) {
+function A(e) {
   let {
     channel: t,
     ChannelIcon: n,
     selected: l,
     onClick: a
-  } = e, s = (0, g.ZP)(t);
+  } = e, r = (0, g.ZP)(t);
   return (0, i.jsxs)(c.P3F, {
-    className: R.channelRow,
+    className: k.channelRow,
     onClick: () => a(t.id),
     children: [l ? (0, i.jsx)(N.Z, {
-      className: R.radioIcon
+      className: k.radioIcon
     }) : (0, i.jsx)(y.Z, {
-      className: R.radioIcon
+      className: k.radioIcon
     }), (0, i.jsx)(n, {
-      className: R.icon,
+      className: k.icon,
       size: "xs",
       color: "currentColor"
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "interactive-active",
-      children: s
+      children: r
     })]
   })
 }
 
-function A(e) {
+function B(e) {
   let {
     guildId: t,
     selectedChannelId: n,
     onSelectChannelId: a
-  } = e, d = (0, r.e7)([Z.Z], () => Z.Z.getChannelId()), {
+  } = e, d = (0, s.e7)([Z.Z], () => Z.Z.getChannelId()), {
     guildChannels: o
-  } = (0, r.cj)([f.Z], () => f.Z.getGuildWithoutChangingGuildActionRows(t)), u = l.useMemo(() => {
+  } = (0, s.cj)([f.Z], () => f.Z.getGuildWithoutChangingGuildActionRows(t)), u = l.useMemo(() => {
     let e = [];
     return o.forEachChannel(t => {
       false !== (0, L.W)(t.id) && ((0, p.r8)(t.type) || (0, p.bw)(t.type)) && e.push(t)
@@ -77,12 +77,12 @@ function A(e) {
   }, [o, d]);
   return 0 === u.length ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: s()(R.divider, R.bottomDivider)
+      className: r()(k.divider, k.bottomDivider)
     }), (0, i.jsx)(c.Text, {
       variant: "eyebrow",
       color: "interactive-normal",
-      className: R.contentPadding,
-      children: k.intl.string(k.t.SOtDeX)
+      className: k.contentPadding,
+      children: R.intl.string(R.t.SOtDeX)
     }), (0, i.jsx)(c.aVo, {
       sections: [u.length],
       sectionHeight: 0,
@@ -92,40 +92,40 @@ function A(e) {
           row: l
         } = e;
         if (t > 0) return null;
-        let s = u[l],
-          r = (0, _.KS)(s);
-        return null == r ? null : (0, i.jsx)(z, {
-          channel: s,
-          ChannelIcon: r,
-          selected: n === s.id,
+        let r = u[l],
+          s = (0, _.KS)(r);
+        return null == s ? null : (0, i.jsx)(A, {
+          channel: r,
+          ChannelIcon: s,
+          selected: n === r.id,
           onClick: a
-        }, s.id)
+        }, r.id)
       },
       rowHeight: (e, t) => e > 0 ? 0 : 56 * (null != u[t]),
       renderSection: () => null,
-      className: s()(R.channelList, R.contentPadding),
+      className: r()(k.channelList, k.contentPadding),
       fade: true
     })]
   })
 }
 
-function E(e) {
+function H(e) {
   let {
     friends: t,
     searchQuery: n,
     disabled: a,
     onShareClip: d
-  } = e, u = l.useMemo(() => 0 === n.length ? t : t.filter(e => e.username.toLowerCase().includes(n.toLowerCase())), [t, n]), m = (0, r.e7)([j.Z], () => j.Z.theme);
+  } = e, u = l.useMemo(() => 0 === n.length ? t : t.filter(e => e.username.toLowerCase().includes(n.toLowerCase())), [t, n]), m = (0, s.e7)([j.Z], () => j.Z.theme);
   return 0 === u.length ? (0, i.jsxs)(c.ubH, {
     theme: m,
-    className: R.emptyStateContainer,
+    className: k.emptyStateContainer,
     children: [(0, i.jsx)(c.oxh, {
       width: 415,
       height: 75,
       lightSrc: T,
       darkSrc: D
     }), (0, i.jsx)(c.OZU, {
-      note: k.intl.string(k.t["+Zg0lZ"])
+      note: R.intl.string(R.t["+Zg0lZ"])
     })]
   }) : (0, i.jsx)(c.aVo, {
     sections: [u.length],
@@ -137,46 +137,46 @@ function E(e) {
       } = e;
       if (t > 0) return null;
       let l = u[n],
-        s = u[n].username;
+        r = u[n].username;
       return (0, i.jsxs)("div", {
-        className: R.userRow,
+        className: k.userRow,
         children: [(0, i.jsx)(h.Z, {
           user: l
         }), (0, i.jsx)(c.Text, {
-          className: R.username,
+          className: k.username,
           variant: "text-md/normal",
-          children: s
+          children: r
         }), (0, i.jsx)(o.zx, {
           disabled: a,
           onClick: () => d(l.id),
-          className: R.__invalid_friendShareButton,
+          className: k.__invalid_friendShareButton,
           look: o.iL.OUTLINED,
           size: o.Ph.SMALL,
           color: o.Tt.BRAND,
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            children: k.intl.string(k.t.RDE0SU)
+            children: R.intl.string(R.t.RDE0SU)
           })
         })]
       }, l.id)
     },
     rowHeight: (e, t) => e > 0 ? 0 : 52 * (null != u[t]),
     renderSection: () => null,
-    className: s()(R.friendsList, R.contentPadding),
+    className: r()(k.friendsList, k.contentPadding),
     fade: true
   })
 }
 
-function H(e) {
+function E(e) {
   let {
     clip: t,
     editMetadata: n,
     transitionState: a,
     onClose: o
-  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), Z = (0, r.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, r.Wu)([b.Z, w.default], () => Z.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
+  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), Z = (0, s.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, s.Wu)([b.Z, w.default], () => Z.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
     var n, i, l, a;
     return (null != (l = null == (n = b.Z.getUserAffinity(t.id)) ? true : n.communicationProbability) ? l : 0) - (null != (a = null == (i = b.Z.getUserAffinity(e.id)) ? true : i.communicationProbability) ? a : 0)
-  }), [Z]), N = (0, r.e7)([S.Z], () => S.Z.getGuildId()), {
+  }), [Z]), N = (0, s.e7)([S.Z], () => S.Z.getGuildId()), {
     analyticsLocations: L
   } = (0, x.ZP)(m.Z.CLIPS_SHARE_MODAL);
   async function D(e) {
@@ -204,49 +204,49 @@ function H(e) {
     size: c.CgR.SMALL,
     transitionState: a,
     parentComponent: "ClipsShareModal",
-    children: [(0, i.jsx)(c.X6q, {
-      className: s()(R.title, R.contentPadding),
+    children: [(0, i.jsx)(c.Heading, {
+      className: r()(k.title, k.contentPadding),
       variant: "heading-lg/semibold",
       color: "interactive-active",
-      children: k.intl.string(k.t["6EcIlJ"])
+      children: R.intl.string(R.t["6EcIlJ"])
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      className: s()(R.subtitle, R.contentPadding),
-      children: k.intl.string(k.t.Ey7mOT)
+      className: r()(k.subtitle, k.contentPadding),
+      children: R.intl.string(R.t.Ey7mOT)
     }), (0, i.jsx)("div", {
-      className: R.searchBar,
+      className: k.searchBar,
       children: (0, i.jsx)(c.E1j, {
         query: h,
         onChange: g,
         onClear: function() {
           g("")
         },
-        placeholder: k.intl.string(k.t.CmSHY2)
+        placeholder: R.intl.string(R.t.CmSHY2)
       })
     }), (0, i.jsx)("div", {
-      className: s()(R.divider, R.topDivider)
-    }), (0, i.jsx)(E, {
+      className: r()(k.divider, k.topDivider)
+    }), (0, i.jsx)(H, {
       searchQuery: h,
       friends: y,
       onShareClip: T,
       disabled: _
-    }), null != N && (0, i.jsx)(A, {
+    }), null != N && (0, i.jsx)(B, {
       guildId: N,
       selectedChannelId: j,
       onSelectChannelId: p
     }), (0, i.jsx)(c.mzw, {
-      children: (0, i.jsxs)(c.hE2, {
+      children: (0, i.jsxs)(c.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, i.jsx)(c.zxk, {
+        children: [(0, i.jsx)(c.Button, {
           variant: "primary",
-          text: k.intl.string(k.t.I8lglZ),
+          text: R.intl.string(R.t.I8lglZ),
           disabled: null == j,
           loading: _,
           onClick: () => D()
-        }), (0, i.jsx)(c.zxk, {
+        }), (0, i.jsx)(c.Button, {
           variant: "secondary",
-          text: k.intl.string(k.t["13/7kZ"]),
+          text: R.intl.string(R.t["13/7kZ"]),
           loading: _,
           onClick: o
         })]

@@ -33,16 +33,16 @@ function h(e) {
     guild: t,
     role: f,
     selectedSection: h,
-    setSelectedSection: x
-  } = e, b = i.useCallback(e => {
-    x(e)
-  }, [x]), j = (0, l.e7)([d.Z], () => {
+    setSelectedSection: b
+  } = e, x = i.useCallback(e => {
+    b(e)
+  }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
   }, [f.id, t.id]), v = (0, c.fI)(f), _ = (0, u.Z)(t.id, f);
   i.useEffect(() => {
-    v && x(g.ZI.PERMISSIONS)
-  }, [v, x]);
+    v && b(g.ZI.PERMISSIONS)
+  }, [v, b]);
   let C = (0, o.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ function h(e) {
       selectedItem: h,
       type: "top",
       look: "brand",
-      onItemSelect: b,
+      onItemSelect: x,
       children: [(0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.DISPLAY,

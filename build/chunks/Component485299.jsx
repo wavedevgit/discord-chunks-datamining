@@ -1,4 +1,4 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 485299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -18,12 +18,12 @@ function f(e) {
     hideBackButton: t = false
   } = e, [{
     selectedSource: n
-  }, f] = (0, d.E_)(), [h, m] = i.useState(null);
+  }, f] = (0, d.E_)(), [p, h] = i.useState(null);
   return i.useEffect(() => {
     var e;
     if (null != n) {
       if (null == (e = n.id) ? true : e.startsWith(l.vA.CAMERA)) {
-        "url" in n && m(n.url);
+        "url" in n && h(n.url);
         return
       }(0, c.t)({
         width: 800,
@@ -35,13 +35,13 @@ function f(e) {
           screenSources: r,
           windowSources: i
         } = e, l = null != (t = i.find(e => "windowHandle" in n ? (0, a.Z)(e.id, n.windowHandle) : e.id === n.id)) ? t : r.find(e => n.id === e.id);
-        null != l && m(l.url)
+        null != l && h(l.url)
       })
     }
   }, [n]), (0, r.jsxs)("div", {
     className: u.root,
-    children: [null == h ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)("img", {
-      src: h,
+    children: [null == p ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)("img", {
+      src: p,
       alt: "",
       className: u.largePreview
     }), !t && (0, r.jsx)(s.zx, {

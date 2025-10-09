@@ -41,7 +41,7 @@ class b extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         className: Chunk713970.header,
         separator: false,
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.Dx7im5)
         }), (0, Chunk951288.jsx)(Chunk481060.olH, {
@@ -71,7 +71,7 @@ class b extends Chunk647438.PureComponent {
           })
         })
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.i4jeWV),
           type: "submit",
@@ -102,7 +102,7 @@ class b extends Chunk647438.PureComponent {
       } = this.props, {
         name: r,
         color: n
-      } = this.state, s = a.ZP.getGuildFolders().map(e => e.folderId === t ? function(e, t) {
+      } = this.state, i = a.ZP.getGuildFolders().map(e => e.folderId === t ? function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -128,7 +128,7 @@ class b extends Chunk647438.PureComponent {
         folderName: r,
         folderColor: n
       }) : e);
-      (0, o.V1)(s), this.close()
+      (0, o.V1)(i), this.close()
     })
   }
 }

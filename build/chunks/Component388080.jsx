@@ -40,7 +40,7 @@ class E extends Chunk647438.PureComponent {
   renderFooter() {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk491068.footer,
-      children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiI"]),
         className: Chunk491068.socialLink,
         href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
@@ -49,7 +49,7 @@ class E extends Chunk647438.PureComponent {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/v"]),
         className: Chunk491068.socialLink,
         href: Chunk981631.fK7.FACEBOOK_URL,
@@ -58,7 +58,7 @@ class E extends Chunk647438.PureComponent {
           size: "xs",
           color: "currentColor"
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyc"]),
         className: Chunk491068.socialLink,
         href: Chunk981631.fK7.INSTAGRAM_URL,
@@ -187,7 +187,7 @@ class E extends Chunk647438.PureComponent {
       return (0, r.jsxs)(u.Z.Child, {
         grow: 1,
         shrink: 1,
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           children: C.intl.string(C.t.LRmNAg)
         }), (0, r.jsx)(c.Text, {

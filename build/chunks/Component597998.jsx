@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => U,
-  eJ: () => k,
-  nm: () => j
+  eJ: () => j,
+  nm: () => k
 }), require("./539854.js"), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -117,7 +117,7 @@ let x = 16,
       })
     })
   },
-  k = e => {
+  j = e => {
     let {
       children: t,
       collapsed: n = false,
@@ -130,7 +130,7 @@ let x = 16,
     })
   };
 
-function j(e) {
+function k(e) {
   let {
     className: t,
     mute: n,
@@ -151,8 +151,8 @@ function j(e) {
     application: D,
     guildId: L,
     channelId: x,
-    user: k,
-    disconnected: j,
+    user: j,
+    disconnected: k,
     hangStatusActivity: U,
     showHangStatus: Z,
     isSelf: F,
@@ -191,7 +191,7 @@ function j(e) {
       color: "currentColor",
       className: o()(C.icon, N)
     })
-  }, "video"))), j && K.push((0, r.jsx)(l.u, {
+  }, "video"))), k && K.push((0, r.jsx)(l.u, {
     text: A.intl.string(A.t.HFwRpq),
     children: (0, r.jsx)(c.Mgn, {
       className: o()(C.icon, N),
@@ -238,9 +238,9 @@ function j(e) {
         iconClassName: N,
         guildId: L,
         channelId: x,
-        userId: k.id
-      }, "".concat(k.id, "-game")) : (0, r.jsx)(M, {
-        userId: k.id,
+        userId: j.id
+      }, "".concat(j.id, "-game")) : (0, r.jsx)(M, {
+        userId: j.id,
         hangStatusActivity: U,
         iconClassName: N,
         isSelf: F,
@@ -273,7 +273,7 @@ let U = function(e) {
     mute: L,
     serverMute: x,
     guildId: M,
-    nick: k,
+    nick: j,
     isGuest: U,
     flipped: G,
     className: B,
@@ -327,7 +327,7 @@ let U = function(e) {
         className: o()(i, C.username, W, {
           [C.usernameSpeaking]: !L && !x && N
         }),
-        children: [null != k ? k : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
+        children: [null != j ? j : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
           className: C.guestSuffix,
           children: ["\xa0", A.intl.string(A.t["pFO/Pj"])]
         }) : ""]
@@ -349,7 +349,7 @@ let U = function(e) {
   }
 
   function et() {
-    return (0, r.jsx)(j, R({
+    return (0, r.jsx)(k, R({
       disabled: u
     }, _))
   }
@@ -371,7 +371,7 @@ let U = function(e) {
     onMouseLeave: X,
     onMouseDown: Q,
     onKeyDown: E,
-    "aria-label": null != (t = null != F ? F : k) ? t : H.username,
+    "aria-label": null != (t = null != F ? F : j) ? t : H.username,
     focusProps: {
       offset: {
         right: 4

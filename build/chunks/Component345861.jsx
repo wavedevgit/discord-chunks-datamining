@@ -95,7 +95,7 @@ function p(e) {
         tabIndex: false,
         "aria-hidden": true
       })
-    }), (0, r.jsx)(a.zxk, d(c({}, h), {
+    }), (0, r.jsx)(a.Button, d(c({}, h), {
       disabled: u,
       onClick: g
     }))]

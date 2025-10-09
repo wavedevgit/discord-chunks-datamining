@@ -388,7 +388,7 @@ function ey() {
 
 function eO(e) {
   eb(e), eh.clear(e);
-  let t = j.Z.getGuildEmojis(e);
+  let t = k.Z.getGuildEmojis(e);
   if (null == t) return;
   let n = P.default.getCurrentUser();
   if (null == n) return;
@@ -449,7 +449,7 @@ function ew(e) {
   if (!e.optimistic) returnfalse;
   let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : U.ZP.getByName(U.ZP.convertSurrogateToName(e.emoji.name, false));
   if (null == t) returnfalse;
-  ej([t]), ek([t])
+  ek([t]), ej([t])
 }
 
 function eD(e, t) {
@@ -488,10 +488,10 @@ function eM(e) {
   let {
     emojiUsed: t
   } = e;
-  ek(t)
+  ej(t)
 }
 
-function ek(e) {
+function ej(e) {
   if (null == e) returnfalse;
   for (let r of e) {
     var t, n;
@@ -505,7 +505,7 @@ function ek(e) {
   return r && (3 === en || 1 === en) && em.compute(), r
 }
 
-function ej(e) {
+function ek(e) {
   if (null == e) returnfalse;
   for (let r of e) {
     var t, n;
@@ -551,7 +551,7 @@ function eB(e) {
 }
 class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(p.Z, A.Z, S.ZP, N.Z, I.default, O.Z, G.Z, P.default, E.Z, C.Z, j.Z), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([T.Z], eL)
+    this.waitFor(p.Z, A.Z, S.ZP, N.Z, I.default, O.Z, G.Z, P.default, E.Z, C.Z, k.Z), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([T.Z], eL)
   }
   getState() {
     return X
@@ -641,7 +641,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
           intention: a,
           forceIncludeExternalGuilds: o
         });
-        return r !== Z.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== k.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
+        return r !== Z.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== j.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
       }, {
         unlocked: [],
         locked: []

@@ -68,8 +68,8 @@ function I(e) {
     onKeyDown: o,
     onClear: u,
     onRuleReorder: h,
-    isDropHovered: x,
-    focused: b,
+    isDropHovered: b,
+    focused: x,
     onFocus: j,
     previewEnabled: _,
     isDragEnabled: y,
@@ -111,7 +111,7 @@ function I(e) {
   return (0, r.jsx)("div", {
     ref: I,
     className: a()(O.draggableInputContainer, {
-      [O.dragging]: x
+      [O.dragging]: b
     }),
     "data-dnd-name": A,
     children: (0, r.jsxs)("div", {
@@ -125,7 +125,7 @@ function I(e) {
           richValue: P,
           channel: n,
           placeholder: C.intl.string(C.t["BRkD4+"]),
-          focused: b,
+          focused: x,
           onChange: (e, n, r) => {
             let i = N ? t.value : n;
             i.length > v.fn && (i = i.slice(0, v.fn)), n !== i && (n = i, r = (0, p.JM)(i)), s(n), w({
@@ -171,7 +171,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), m = (0, u.e7)([x.ZP], () => x.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, c = l.features.has(_.oNc.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), m = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
     if (!a && t.length !== v.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -248,11 +248,11 @@ function S(e) {
         isDragEnabled: !a && t.length > 1,
         disabled: a
       }, e.id))
-    }), !R && (0, r.jsx)(b.A, {
+    }), !R && (0, r.jsx)(x.A, {
       text: C.intl.string(C.t.Cq5Jub),
       onClick: P,
       disabled: a
-    }), (0, r.jsx)(g.X6q, {
+    }), (0, r.jsx)(g.Heading, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: O.exampleRulesTitle,

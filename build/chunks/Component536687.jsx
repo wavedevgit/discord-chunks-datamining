@@ -46,10 +46,10 @@ function M(e) {
     quest: Z,
     autoplay: B,
     videoSessionId: F,
-    impressionRef: q,
-    parentModalOpenStartClockTime: U,
+    impressionRef: U,
+    parentModalOpenStartClockTime: q,
     sourceQuestContent: H
-  } = e, Y = (0, b.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([E.Z], () => E.Z.getState().theme), z = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, W = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, O.aM)(), [X, $] = l.useState(Y.progressSeconds), [J, ee] = l.useState(false), {
+  } = e, Y = (0, b.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([E.Z], () => E.Z.getState().theme), W = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, z = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, O.aM)(), [X, $] = l.useState(Y.progressSeconds), [J, ee] = l.useState(false), {
     completedRatio: et,
     completedRatioDisplay: en
   } = (0, h.I)(Z), [er, el] = (0, R.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), eo = null != (0, b.LM)(Z.config), [ei, ea] = l.useState(false), es = l.useRef(null), ec = (0, b.vB)(Z.config), eu = (null == (t = Z.userStatus) ? true : t.claimedAt) != null ? eo ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ed = l.useCallback(() => {
@@ -101,7 +101,7 @@ function M(e) {
     parentComponent: "Modal",
     children: (0, r.jsx)("div", {
       ref: e => {
-        q.current = e
+        U.current = e
       },
       className: L.modalBg,
       children: (0, r.jsx)("div", {
@@ -116,10 +116,10 @@ function M(e) {
               children: [(0, r.jsx)("img", {
                 alt: Z.config.messages.gameTitle,
                 className: i()(L.contentHeaderLogotype, L.accentOnHover),
-                src: (0, _.fh)(Z, _.eC.LOGO_TYPE, z).url
+                src: (0, _.fh)(Z, _.eC.LOGO_TYPE, W).url
               }), (0, r.jsx)(P.Z, {}), (0, r.jsxs)("div", {
                 className: L.questHeading,
-                children: [(0, r.jsx)(f.X6q, {
+                children: [(0, r.jsx)(f.Heading, {
                   variant: "heading-md/semibold",
                   color: "header-primary",
                   children: A.intl.format(A.t.EQa7oq, {
@@ -166,7 +166,7 @@ function M(e) {
             parentTransitionState: M,
             onOptimisticProgressUpdate: $,
             autoplay: B,
-            performanceClockStartTime: U,
+            performanceClockStartTime: q,
             onClose: V,
             sourceQuestContent: H,
             orientation: eO
@@ -174,7 +174,7 @@ function M(e) {
             className: i()(L.contentFooterPortrait, L.contentFooterButtonCont),
             children: [(0, r.jsx)("div", {
               className: L.portraitCtaBtnWrapper,
-              children: (0, r.jsx)(f.zxk, {
+              children: (0, r.jsx)(f.Button, {
                 variant: "secondary",
                 text: A.intl.string(A.t.nL0WvL),
                 onClick: ep,
@@ -186,7 +186,7 @@ function M(e) {
                 className: L.portraitCtaBtn,
                 size: p.zx.Sizes.MEDIUM,
                 quest: Z,
-                useReducedMotion: W,
+                useReducedMotion: z,
                 isExpanded: (null == (a = Z.userStatus) ? true : a.completedAt) != null,
                 disabled: (null == (S = Z.userStatus) ? true : S.completedAt) == null,
                 ctaLabel: eu,
@@ -210,13 +210,13 @@ function M(e) {
             }))]
           }) : (0, r.jsxs)("div", {
             className: L.contentFooter,
-            children: [(0, r.jsx)(f.zxk, {
+            children: [(0, r.jsx)(f.Button, {
               variant: "secondary",
               text: A.intl.string(A.t.cpT0Cg),
               onClick: V
             }), (0, r.jsxs)("div", {
               className: L.contentFooterButtonCont,
-              children: [ec && (0, r.jsx)(f.zxk, {
+              children: [ec && (0, r.jsx)(f.Button, {
                 variant: "secondary",
                 text: er,
                 onClick: ed
@@ -224,7 +224,7 @@ function M(e) {
                 className: L.claimBtn,
                 size: p.zx.Sizes.MEDIUM,
                 quest: Z,
-                useReducedMotion: W,
+                useReducedMotion: z,
                 isExpanded: (null == (T = Z.userStatus) ? true : T.completedAt) != null,
                 disabled: (null == (N = Z.userStatus) ? true : N.completedAt) == null,
                 ctaLabel: eu,

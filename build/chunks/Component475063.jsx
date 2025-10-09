@@ -95,8 +95,8 @@ function T(e) {
       hideLabel: L,
       description: x,
       helperText: M,
-      successMessage: k,
-      inputRef: j
+      successMessage: j,
+      inputRef: k
     } = e,
     U = y(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "disabled", "label", "hideLabel", "description", "helperText", "successMessage", "inputRef"]);
   let G = (0, f.U)("UserSettingsDesignSystems"),
@@ -129,7 +129,7 @@ function T(e) {
     hideLabel: L,
     description: x,
     helperText: M,
-    successMessage: k,
+    successMessage: j,
     trailingContent: V,
     errorMessage: B.hasError && null != (t = B.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {
@@ -152,7 +152,7 @@ function T(e) {
           "data-mana-component": "text-area"
         }, U), {
           onChange: F,
-          ref: j
+          ref: k
         }))
       }), G ? null : (0, r.jsxs)(r.Fragment, {
         children: [N ? (0, r.jsx)(A, {

@@ -44,7 +44,7 @@ function _(t) {
       direction: d.Z.Direction.VERTICAL,
       className: p.header,
       separator: false,
-      children: [(0, i.jsx)(r.X6q, {
+      children: [(0, i.jsx)(r.Heading, {
         className: p.title,
         variant: "heading-xl/semibold",
         children: e ? C.intl.string(C.t["9U0b1t"]) : C.intl.string(C.t["5HZu09"])
@@ -90,14 +90,14 @@ function _(t) {
       })]
     }), null != c && (0, i.jsxs)(r.mzw, {
       className: p.footer,
-      children: [(0, i.jsx)(r.X6q, {
+      children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
         className: p.footerTitle,
         children: C.intl.string(C.t["N+Mi/f"])
       }), (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: p.footerButton,
-        children: (0, i.jsx)(r.zxk, {
+        children: (0, i.jsx)(r.Button, {
           variant: "secondary",
           fullWidth: true,
           text: C.intl.string(C.t.riOUtL),

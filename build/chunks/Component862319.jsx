@@ -79,7 +79,7 @@ function f(e) {
             benefits: e.role_benefits.benefits.filter(c.lL).length
           })
         })]
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: () => {
           (0, a.ZDy)(async () => {

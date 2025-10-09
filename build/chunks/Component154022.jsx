@@ -112,7 +112,7 @@ function er(e) {
     }).enabled,
     i = (0, b.A)("UserSettingsAccessibility"),
     a = (0, U.Z)();
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(k.Z, {
     title: H.intl.string(H.t.G0neg4),
     children: (0, r.jsxs)(u.Kqy, {
       gap: 16,
@@ -201,7 +201,7 @@ function ei() {
       "aria-hidden": true,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk953752.previewHeader,
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["2RHHg4"])
@@ -464,7 +464,7 @@ function ep() {
       description: Chunk388032.intl.format(Chunk388032.t["2l9U2t"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REDUCED_MOTION)
       }),
-      children: [(0, Chunk951288.jsx)(Chunk481060.XZJ, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Checkbox, {
         checked: Chunk419363,
         onChange: Chunk627845,
         label: Chunk388032.intl.string(Chunk388032.t["+Dx+HB"])
@@ -609,7 +609,7 @@ function eg() {
             "aria-labelledby": ee
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk953752.ttsPreviewWrapper,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               size: "sm",
               icon: require ? Chunk481060.fpf : Chunk481060.o1U,
               text: Chunk388032.intl.string(Chunk388032.t.hymc8v),

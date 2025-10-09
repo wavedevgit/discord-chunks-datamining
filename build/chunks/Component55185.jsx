@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => C,
@@ -25,7 +25,7 @@ function b(e) {
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: g.goOnlineButton,
-    children: (0, i.jsx)(s.zxk, {
+    children: (0, i.jsx)(s.Button, {
       variant: "primary",
       size: "sm",
       text: f.intl.string(h.default.Poezn5),
@@ -118,7 +118,7 @@ function v(e) {
       style: {
         marginBottom: 8
       },
-      children: [(0, i.jsx)(s.X6q, {
+      children: [(0, i.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: g.controlTitle,

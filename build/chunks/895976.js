@@ -1,7 +1,7 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 74318 **/
 /** chunk id: 895976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => u
+  B: () => c
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,15 +11,15 @@ var Chunk647438 = require("./647438.js"),
   Chunk245335 = require("./245335.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function c(e) {
   let {
     guild: t,
     inviteChannel: n,
-    inviteTargetType: u,
-    applicationId: c
-  } = e, [g, h, m, p] = (0, i.Wu)([r.Z, a.ZP], () => [r.Z.getInviteSuggestionRows(), r.Z.getTotalSuggestionsCount() >= 1, r.Z.getInitialCounts(), null == n ? null : a.ZP.getVoiceStatesForChannel(n)], [n]), v = l.useMemo(() => {
+    inviteTargetType: c,
+    applicationId: d
+  } = e, [g, m, I, p] = (0, i.Wu)([r.Z, s.ZP], () => [r.Z.getInviteSuggestionRows(), r.Z.getTotalSuggestionsCount() >= 1, r.Z.getInitialCounts(), null == n ? null : s.ZP.getVoiceStatesForChannel(n)], [n]), f = l.useMemo(() => {
     let e = new Set;
-    return u === o.Iq.STREAM && null != p && p.forEach(t => {
+    return c === o.Iq.STREAM && null != p && p.forEach(t => {
       let {
         user: n
       } = t;
@@ -27,16 +27,16 @@ function u(e) {
     }), e
   }, [n]);
   return l.useEffect(() => {
-    (0, s.x)({
-      omitUserIds: v,
+    (0, a.x)({
+      omitUserIds: f,
       guild: t,
       channel: n,
-      applicationId: c,
-      inviteTargetType: u
-    }).catch(d.VqG)
-  }, [v, t, n, c, u]), {
+      applicationId: d,
+      inviteTargetType: c
+    }).catch(u.VqG)
+  }, [f, t, n, d, c]), {
     rows: g,
-    showFriends: h,
-    initialCounts: m
+    showFriends: m,
+    initialCounts: I
   }
 }

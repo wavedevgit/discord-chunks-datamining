@@ -70,7 +70,7 @@ function T() {
       }, e.id)
     }) : (0, Chunk951288.jsx)("div", {
       className: Chunk758746.emptyState,
-      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         children: "No Experiments Found"
       })

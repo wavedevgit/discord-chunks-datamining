@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,17 +36,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk593639 = require("./593639.js");
 
 function b(e) {
-  var t, r, i, d, m;
+  var t, r, i, c, m;
   let {
     transitionState: C,
-    onClose: _,
-    quest: h,
+    onClose: h,
+    quest: x,
     location: g
-  } = e, p = a.useRef(null), [N, j] = a.useState(null), f = a.useRef(new o.qA), v = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), H = (null == (t = h.userStatus) ? true : t.claimedAt) != null, [I, S] = a.useState({
+  } = e, p = a.useRef(null), [N, j] = a.useState(null), f = a.useRef(new s.qA), v = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), k = (null == (t = x.userStatus) ? true : t.claimedAt) != null, [I, S] = a.useState({
     state: "loading"
   });
   a.useEffect(() => {
-    H || (0, k.QB)(h.id, R.y$.CROSS_PLATFORM, g).then(e => {
+    k || (0, R.QB)(x.id, H.y$.CROSS_PLATFORM, g).then(e => {
       if ((null == e ? true : e.claimedAt) != null) return void S({
         state: "claimed",
         entitlements: e
@@ -61,40 +61,40 @@ function b(e) {
         errorReason: 0
       })
     })
-  }, [h, g, H]);
-  let B = "loading" === I.state,
-    L = !v && !H && "claimed" === I.state,
+  }, [x, g, k]);
+  let P = "loading" === I.state,
+    L = !v && !k && "claimed" === I.state,
     M = "claimed" === I.state && null != I.entitlements && I.entitlements.items.some(e => e.consumed);
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(o.O_, {
+    children: [(0, n.jsx)(s.O_, {
       ref: j,
-      className: P.confettiCanvas,
+      className: B.confettiCanvas,
       environment: f.current
     }), (0, n.jsx)("div", {
       ref: p,
-      children: (0, n.jsx)(c.Y0X, {
+      children: (0, n.jsx)(d.Y0X, {
         "data-migration-pending": true,
         transitionState: C,
-        size: c.CgR.DYNAMIC,
-        className: s()(P.rootContainer, {
-          [P.rootContainerLoading]: B
+        size: d.CgR.DYNAMIC,
+        className: o()(B.rootContainer, {
+          [B.rootContainerLoading]: P
         }),
         hideShadow: true,
         parentComponent: "QuestsNitroRewardModal",
-        children: B ? (0, n.jsx)(c.$jN, {
-          type: c.$jN.Type.SPINNING_CIRCLE
+        children: P ? (0, n.jsx)(d.$jN, {
+          type: d.$jN.Type.SPINNING_CIRCLE
         }) : "error" === I.state ? (0, n.jsx)(w, {
           errorReason: I.errorReason,
-          onClose: _
+          onClose: h
         }) : M ? (0, n.jsx)(y, {
-          duration: (0, T.kb)(null != (d = null == (r = I.entitlements) ? true : r.items) ? d : []),
-          onClose: _
+          duration: (0, T.kb)(null != (c = null == (r = I.entitlements) ? true : r.items) ? c : []),
+          onClose: h
         }) : (0, n.jsx)(F, {
           duration: (0, T.kb)(null != (m = null == (i = I.entitlements) ? true : i.items) ? m : []),
-          onClose: _
+          onClose: h
         })
       })
-    }), L && (0, n.jsx)(x.Z, {
+    }), L && (0, n.jsx)(_.Z, {
       confettiTarget: p.current,
       confettiCanvas: N,
       sprites: A.CA,
@@ -108,30 +108,30 @@ function w(e) {
     onClose: t
   } = e, r = S.intl.string(S.t.PbaUtr);
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsxs)(c.xBx, {
+    children: [(0, n.jsxs)(d.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: P.errorHeader,
-      children: [(0, n.jsx)(c.X6q, {
-        className: P.errorTitle,
+      className: B.errorHeader,
+      children: [(0, n.jsx)(d.Heading, {
+        className: B.errorTitle,
         variant: "heading-xl/medium",
         children: S.intl.string(S.t["UleS9/"])
-      }), (0, n.jsx)(c.olH, {
+      }), (0, n.jsx)(d.olH, {
         "data-migration-pending": true,
         onClick: t,
-        className: P.errorModalCloseButton
+        className: B.errorModalCloseButton
       })]
-    }), (0, n.jsx)(c.hzk, {
+    }), (0, n.jsx)(d.hzk, {
       "data-migration-pending": true,
-      className: P.errorContent,
-      children: (0, n.jsx)(c.Text, {
+      className: B.errorContent,
+      children: (0, n.jsx)(d.Text, {
         variant: "text-md/normal",
         children: r
       })
-    }), (0, n.jsx)(c.mzw, {
+    }), (0, n.jsx)(d.mzw, {
       "data-migration-pending": true,
-      className: P.errorModalFooter,
-      children: (0, n.jsx)(c.zxk, {
+      className: B.errorModalFooter,
+      children: (0, n.jsx)(d.Button, {
         variant: "primary",
         text: S.intl.string(S.t.cpT0Cg),
         onClick: t
@@ -146,57 +146,57 @@ function y(e) {
     onClose: r
   } = e, {
     theme: i
-  } = (0, c.TCT)(), s = (0, C.Z)({
+  } = (0, d.TCT)(), o = (0, C.Z)({
     forceFetch: true
-  }), o = (0, f.vc)(s.endsAt, "L"), l = a.useCallback(() => {
-    (0, h.$)(r)
+  }), s = (0, f.vc)(o.endsAt, "L"), l = a.useCallback(() => {
+    (0, x.$)(r)
   }, [r]);
-  return s.fractionalState === I.a$.NONE ? (0, n.jsx)("div", {
-    className: P.spinnerContainer,
-    children: (0, n.jsx)(c.$jN, {
-      type: c.$jN.Type.SPINNING_CIRCLE
+  return o.fractionalState === I.a$.NONE ? (0, n.jsx)("div", {
+    className: B.spinnerContainer,
+    children: (0, n.jsx)(d.$jN, {
+      type: d.$jN.Type.SPINNING_CIRCLE
     })
   }) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
-      className: P.nitroHeaderContainer,
+      className: B.nitroHeaderContainer,
       children: [(0, n.jsx)("div", {
-        className: P.nitroHeaderClouds
+        className: B.nitroHeaderClouds
       }), (0, n.jsx)(j.Z, {
-        className: P.nitroHeaderWordmark
-      }), (0, n.jsx)(c.Eep, {
+        className: B.nitroHeaderWordmark
+      }), (0, n.jsx)(d.Eep, {
         src: L,
         width: 110,
         height: 82,
         zoomable: false,
-        className: P.nitroHeaderWumpus
-      }), (0, n.jsx)(c.olH, {
+        className: B.nitroHeaderWumpus
+      }), (0, n.jsx)(d.olH, {
         "data-migration-pending": true,
-        className: P.nitroHeaderClose,
+        className: B.nitroHeaderClose,
         onClick: r
       })]
-    }), (0, n.jsxs)(c.mzw, {
+    }), (0, n.jsxs)(d.mzw, {
       "data-migration-pending": true,
-      className: P.footerContainer,
+      className: B.footerContainer,
       separator: false,
-      children: [(0, n.jsx)(_.Z, {
-        className: P.beta
+      children: [(0, n.jsx)(h.Z, {
+        className: B.beta
       }), (0, n.jsx)(g.ZP, {
-        className: P.nitroHeading,
+        className: B.nitroHeading,
         premiumType: I.PremiumTypes.TIER_2,
         type: g.ZP.Types.PREMIUM_ACTIVATED,
         theme: i
-      }), (0, n.jsx)(c.Text, {
+      }), (0, n.jsx)(d.Text, {
         variant: "text-md/normal",
-        className: P.text,
+        className: B.text,
         children: S.intl.format(S.t.tgc1oq, {
-          helpCenterLink: v.Z.getArticleURL(H.BhN.FRACTIONAL_PREMIUM_ABOUT),
+          helpCenterLink: v.Z.getArticleURL(k.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
-          expirationDate: o
+          expirationDate: s
         })
       }), (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: P.cta,
-        children: (0, n.jsx)(c.zxk, {
+        className: B.cta,
+        children: (0, n.jsx)(d.Button, {
           variant: "primary",
           text: S.intl.string(S.t["eQX+go"]),
           onClick: l
@@ -212,65 +212,65 @@ function F(e) {
     onClose: r
   } = e, i = (0, C.Z)({
     forceFetch: true
-  }), o = (0, m.ZP)(), l = a.useCallback(() => {
+  }), s = (0, m.ZP)(), l = a.useCallback(() => {
     (0, N.openUserSettings)(p.n.SUBSCRIPTIONS_PANEL, {
-      section: H.oAB.SUBSCRIPTIONS
+      section: k.oAB.SUBSCRIPTIONS
     }), r()
   }, [r]);
   if (!i.fetched) return (0, n.jsx)("div", {
-    className: P.spinnerContainer,
-    children: (0, n.jsx)(c.$jN, {
-      type: c.$jN.Type.SPINNING_CIRCLE
+    className: B.spinnerContainer,
+    children: (0, n.jsx)(d.$jN, {
+      type: d.$jN.Type.SPINNING_CIRCLE
     })
   });
-  let d = i.isFractionalPremiumActive ? S.intl.string(S.t["1ku8i4"]) : S.intl.format(S.t.fI1nLy, {
-    helpCenterLink: v.Z.getArticleURL(H.BhN.FRACTIONAL_PREMIUM_ABOUT),
+  let c = i.isFractionalPremiumActive ? S.intl.string(S.t["1ku8i4"]) : S.intl.format(S.t.fI1nLy, {
+    helpCenterLink: v.Z.getArticleURL(k.BhN.FRACTIONAL_PREMIUM_ABOUT),
     duration: t
   });
-  return (0, n.jsx)(c.f6W, {
-    theme: o,
+  return (0, n.jsx)(d.f6W, {
+    theme: s,
     children: e => (0, n.jsxs)("div", {
-      className: s()(P.claimedRootContainer, e),
+      className: o()(B.claimedRootContainer, e),
       children: [(0, n.jsxs)("div", {
-        className: P.headerContainer,
+        className: B.headerContainer,
         children: [(0, n.jsx)("img", {
-          className: P.headerBackground,
-          src: B,
+          className: B.headerBackground,
+          src: P,
           alt: S.intl.string(S.t["8SsCa2"])
-        }), (0, n.jsx)(_.Z, {
-          className: P.beta
+        }), (0, n.jsx)(h.Z, {
+          className: B.beta
         }), (0, n.jsxs)("div", {
-          className: P.headerForeground,
+          className: B.headerForeground,
           children: [(0, n.jsx)("div", {
-            className: P.rewardAssetContainer,
+            className: B.rewardAssetContainer,
             children: (0, n.jsx)("img", {
               src: M,
               alt: S.intl.string(S.t.OhPMam),
               height: 120
             })
-          }), (0, n.jsx)(c.olH, {
+          }), (0, n.jsx)(d.olH, {
             "data-migration-pending": true,
-            className: P.close,
+            className: B.close,
             withCircleBackground: true,
             onClick: r
           })]
         })]
-      }), (0, n.jsxs)(c.mzw, {
+      }), (0, n.jsxs)(d.mzw, {
         "data-migration-pending": true,
-        className: P.footerContainer,
+        className: B.footerContainer,
         separator: false,
-        children: [(0, n.jsx)(c.X6q, {
+        children: [(0, n.jsx)(d.Heading, {
           variant: "heading-lg/bold",
-          className: P.heading,
+          className: B.heading,
           children: S.intl.string(S.t["+PHEo6"])
-        }), (0, n.jsx)(c.Text, {
+        }), (0, n.jsx)(d.Text, {
           variant: "text-sm/normal",
-          className: P.text,
-          children: d
+          className: B.text,
+          children: c
         }), (0, n.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: P.cta2,
-          children: (0, n.jsx)(c.zxk, {
+          className: B.cta2,
+          children: (0, n.jsx)(d.Button, {
             variant: "primary",
             text: S.intl.string(S.t.LnsQGR),
             onClick: l
@@ -286,16 +286,16 @@ function E(e) {
     quest: t,
     location: r,
     onClose: i,
-    transitionState: s
-  } = e, o = (0, d.Z)(() => {
+    transitionState: o
+  } = e, s = (0, c.Z)(() => {
     var e;
     return (null == (e = t.userStatus) ? true : e.claimedAt) != null
   });
   return (a.useEffect(() => {
-    o && i()
-  }, [i, o]), o) ? null : (0, n.jsx)(b, {
+    s && i()
+  }, [i, s]), s) ? null : (0, n.jsx)(b, {
     onClose: i,
-    transitionState: s,
+    transitionState: o,
     quest: t,
     location: r
   })

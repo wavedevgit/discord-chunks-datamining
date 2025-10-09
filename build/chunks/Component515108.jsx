@@ -51,23 +51,23 @@ function p(e) {
     onClose: d,
     transitionState: i
   });
-  let v = C || y;
+  let g = C || y;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: j,
     sourceQuestContent: n,
     children: e => (0, r.jsxs)(r.Fragment, {
-      children: [v ? (0, r.jsx)(o.$jN, {
+      children: [g ? (0, r.jsx)(o.$jN, {
         className: u.spinner,
         type: o.$jN.Type.WANDERING_CUBES
       }) : null, (0, r.jsx)("div", {
         ref: e,
         style: {
-          visibility: v ? "hidden" : "visible"
+          visibility: g ? "hidden" : "visible"
         },
         children: (0, r.jsxs)(o.Y0X, {
           "data-migration-pending": true,
-          transitionState: v ? o.Dvm.HIDDEN : i,
+          transitionState: g ? o.Dvm.HIDDEN : i,
           size: o.CgR.DYNAMIC,
           className: u.modal,
           parentComponent: "QuestRewardV2ModalBase",

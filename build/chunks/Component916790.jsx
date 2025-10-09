@@ -66,7 +66,7 @@ function I(e) {
     })
   })
 }
-let k = [{
+let w = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -111,11 +111,11 @@ let k = [{
   }
 }];
 
-function w(e) {
+function k(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...k, {
+  } = e, i = r.useMemo(() => t.error ? [...w, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
@@ -147,7 +147,7 @@ function w(e) {
         })]
       })
     }
-  }] : k, [t]), {
+  }] : w, [t]), {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
@@ -287,7 +287,7 @@ function Z() {
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(w, {
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(k, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

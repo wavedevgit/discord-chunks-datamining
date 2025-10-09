@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 707113, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,43 +26,43 @@ function f(e) {
     config: s.config.stiff
   });
   return (0, l.jsx)("div", {
-    className: b.loaderContainer,
+    className: h.loaderContainer,
     children: (0, l.jsx)(s.animated.div, {
-      className: b.loaderBar,
+      className: h.loaderBar,
       style: r
     })
   })
 }
 
-function v(e) {
+function g(e) {
   let {
     guild: t,
     className: n,
     onPageChange: i,
     onMemberSelect: s
-  } = e, v = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(v), [v]), p = (0, d.$j)(v), C = (0, d.M3)(v), _ = r.useCallback(e => {
+  } = e, g = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(g), [g]), v = (0, d.$j)(g), _ = (0, d.M3)(g), C = r.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), T = (0, m.xb)(C, p, g), E = r.useRef(null), N = r.useRef(null), S = r.useCallback(() => {
+  }, [s]), E = (0, m.xb)(_, v, p), N = r.useRef(null), S = r.useRef(null), T = r.useCallback(() => {
     var e;
-    null == (e = E.current) || e.resetSearchText()
+    null == (e = N.current) || e.resetSearchText()
   }, []);
   return (0, l.jsx)("div", {
-    className: a()(b.mainTableContainer, n),
+    className: a()(h.mainTableContainer, n),
     children: (0, l.jsxs)(c.Den, {
-      className: b.horizatonalScroller,
-      ref: N,
+      className: h.horizatonalScroller,
+      ref: S,
       orientation: "horizontal",
-      children: [(0, l.jsx)(h.Z, {
+      children: [(0, l.jsx)(b.Z, {
         guild: t,
-        ref: E
+        ref: N
       }), (0, l.jsx)(f, {
         guild: t
       }), (0, l.jsx)(x.Z, {
         guild: t,
-        onSelectRow: _,
-        searchState: T,
-        onResetForNewMembers: S
-      }), T !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
+        onSelectRow: C,
+        searchState: E,
+        onResetForNewMembers: T
+      }), E !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
         guildId: t.id,
         onPageChange: i
       })]

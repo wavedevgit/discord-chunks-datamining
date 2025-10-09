@@ -137,9 +137,9 @@ function N(e) {
         checked: null != (t = null == n ? true : n.enabled) && t
       }), (0, r.jsx)(a.ua7, {
         "data-migration-pending": true,
-        text: b.intl.string(b.t.UKOtz8),
+        text: x.intl.string(x.t.UKOtz8),
         position: "top",
-        "aria-label": b.intl.string(b.t.PdRCRk),
+        "aria-label": x.intl.string(x.t.PdRCRk),
         children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
           onClick: o,
           className: j.menuIconButton,
@@ -172,14 +172,14 @@ function I(e) {
     saveRule: g
   } = (0, m.w)(), {
     updateRule: f
-  } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
+  } = (0, u.pH)(t.guildId), [h, b] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
     if (!c) {
       let e = _(v({}, t), {
         enabled: !h
       });
-      x(!h);
+      b(!h);
       let n = await g(e, []);
-      null != n && (f(n), x(n.enabled))
+      null != n && (f(n), b(n.enabled))
     }
   }, 300), I = e => {
     O(e), s(e)
@@ -201,7 +201,7 @@ function I(e) {
       })
     }), (0, r.jsxs)("div", {
       className: j.ruleTextContainer,
-      children: [(0, r.jsxs)(a.X6q, {
+      children: [(0, r.jsxs)(a.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
         className: j.ruleTextHeaderContainer,
@@ -228,9 +228,9 @@ function I(e) {
         checked: null != h && h
       }), !n && (0, r.jsx)(a.ua7, {
         "data-migration-pending": true,
-        text: b.intl.string(b.t.UKOtz8),
+        text: x.intl.string(x.t.UKOtz8),
         position: "top",
-        "aria-label": b.intl.string(b.t.PdRCRk),
+        "aria-label": x.intl.string(x.t.PdRCRk),
         children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
           onClick: I,
           className: j.menuIconButton,
@@ -266,7 +266,7 @@ function S(e) {
       })
     }), (0, r.jsxs)("div", {
       className: j.ruleTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         className: j.ruleTextHeader,
         variant: "text-md/semibold",
         color: "header-primary",
@@ -283,10 +283,10 @@ function S(e) {
       })]
     }), (0, r.jsx)(y, {
       className: j.actionContainer,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(a.Button, {
         variant: "primary",
         size: "sm",
-        text: t === x.fX.KEYWORD ? b.intl.string(b.t.CumH4u) : b.intl.string(b.t.oRs6mJ),
+        text: t === b.fX.KEYWORD ? x.intl.string(x.t.CumH4u) : x.intl.string(x.t.oRs6mJ),
         onClick: n
       })
     })]

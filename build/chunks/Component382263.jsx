@@ -52,19 +52,19 @@ function C(e) {
   let {
     onStepChange: t,
     onBackClick: n,
-    showBackButton: l = false,
+    showBackButton: a = false,
     disabled: r = false,
     loading: s = false
   } = e, {
     hasPaymentSources: o
   } = (0, p.JL)(), u = o ? m.h8.REVIEW : m.h8.ADD_PAYMENT_STEPS;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.zxk, {
+    children: [(0, i.jsx)(l.Button, {
       onClick: () => t(u),
       disabled: r,
       loading: s,
-      text: x.intl.string(x.t.XiOHRU)
-    }), l ? (0, i.jsx)(c.Z, {
+      text: y.intl.string(y.t.XiOHRU)
+    }), a ? (0, i.jsx)(c.Z, {
       onClick: n
     }) : null]
   })
@@ -81,40 +81,40 @@ function O(e) {
     giftRecipient: O
   } = (0, h.wD)(), {
     selectedSkuId: I
-  } = (0, p.JL)(), T = (0, l.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, l.e7)([d.Z], () => null != I ? d.Z.get(I) : null, [I]), E = (0, l.e7)([f.Z], () => null != I ? f.Z.getForSKU(I) : null, [I]), P = (null == E ? true : E.headerBackground) != null && (null == _ ? true : _.applicationId) != null ? (0, g._W)(_.applicationId, E.headerBackground, 256) : true, k = async (e, t) => {};
+  } = (0, p.JL)(), T = (0, a.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, a.e7)([d.Z], () => null != I ? d.Z.get(I) : null, [I]), E = (0, a.e7)([f.Z], () => null != I ? f.Z.getForSKU(I) : null, [I]), P = (null == E ? true : E.headerBackground) != null && (null == _ ? true : _.applicationId) != null ? (0, g._W)(_.applicationId, E.headerBackground, 256) : true, k = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(b.C3, {
       children: (0, i.jsxs)("div", {
-        className: y.stepBody,
+        className: x.stepBody,
         children: [(0, i.jsxs)("div", {
-          className: y.bodyColumnLeft,
-          children: [(null == _ ? true : _.name) != null && (0, i.jsx)(a.X6q, {
+          className: x.bodyColumnLeft,
+          children: [(null == _ ? true : _.name) != null && (0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             color: "header-primary",
             children: _.name
           }), null != P && (0, i.jsx)("img", {
             src: P,
             alt: null != (t = null == _ ? true : _.name) ? t : "",
-            className: y.skuImage
+            className: x.skuImage
           })]
         }), (0, i.jsxs)("div", {
-          className: y.bodyColumnRight,
+          className: x.bodyColumnRight,
           children: [(0, i.jsx)(r.Z, {
             selectedSkuId: I,
             validateSelectedGift: k
           }), (0, i.jsx)(o.Z, {
-            sectionTitle: x.intl.string(x.t.B3miEx),
+            sectionTitle: y.intl.string(y.t.B3miEx),
             onTextChange: e => null == v ? true : v(e),
             pendingText: m,
             currentText: m,
             disableThemedBackground: true,
-            className: y.customGiftMessageWrapper,
-            innerClassName: y.customGiftMessage
+            className: x.customGiftMessageWrapper,
+            innerClassName: x.customGiftMessage
           })]
         })]
       })
     }), (0, i.jsx)(b.O3, {
-      children: (0, i.jsx)(a.mzw, {
+      children: (0, i.jsx)(l.mzw, {
         "data-migration-pending": true,
         justify: s.Z.Justify.BETWEEN,
         align: s.Z.Align.CENTER,

@@ -27,7 +27,7 @@ function f(e) {
   }, m = e => {
     "Enter" === e.key && null != f && p && (s(f), u(false), _(null))
   };
-  return a ? (0, r.jsx)(l.X6q, {
+  return a ? (0, r.jsx)(l.Heading, {
     className: d.gap,
     "aria-hidden": true,
     variant: "heading-sm/semibold",
@@ -47,7 +47,7 @@ function f(e) {
     }, t.key)
   }) : (0, r.jsx)(l.P3F, {
     onClick: () => u(true),
-    children: (0, r.jsx)(l.X6q, {
+    children: (0, r.jsx)(l.Heading, {
       className: o()(d.roundButton, d.gap),
       "aria-hidden": true,
       variant: "heading-sm/semibold",
@@ -79,11 +79,11 @@ function _(e) {
       disabled: n,
       navigateToPage: i
     } = e;
-    return (0, r.jsxs)(s.zx, {
+    return (0, r.jsxs)(s.Button, {
       className: d.endButton,
       innerClassName: d.endButtonInner,
-      look: s.zx.Looks.BLANK,
-      color: s.zx.Colors.TRANSPARENT,
+      look: s.Button.Looks.BLANK,
+      color: s.Button.Colors.TRANSPARENT,
       onClick: i,
       disabled: n,
       rel: "prev",
@@ -104,11 +104,11 @@ function _(e) {
       disabled: n,
       navigateToPage: i
     } = e;
-    return (0, r.jsxs)(s.zx, {
+    return (0, r.jsxs)(s.Button, {
       className: d.endButton,
       innerClassName: d.endButtonInner,
-      look: s.zx.Looks.BLANK,
-      color: s.zx.Colors.TRANSPARENT,
+      look: s.Button.Looks.BLANK,
+      color: s.Button.Colors.TRANSPARENT,
       onClick: i,
       disabled: n,
       rel: "next",

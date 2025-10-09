@@ -30,7 +30,7 @@ function d(e) {
     "data-migration-pending": true,
     className: u.headerContainerGift,
     separator: t !== s.h8.CONFIRM,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       children: _
     }), (0, r.jsx)(a.olH, {

@@ -107,12 +107,12 @@ function A(e) {
       p.S.unsubscribe(T.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [H]);
-  let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
+  let W = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
     V = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    W = (0, c.wj)(U) ? z : V,
+    z = (0, c.wj)(U) ? W : V,
     K = F.to({
       range: [0, 1],
-      output: [W, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
+      output: [z, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
     if (D === O.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
@@ -132,7 +132,7 @@ function A(e) {
         });
         else if (D === O.PG.HOME_SETTINGS) {
           let e = j.Z.getSettings();
-          await (0, b.oo)(t.id, e)
+          await (0, x.oo)(t.id, e)
         }
       } catch (e) {
         returnfalse
@@ -143,28 +143,28 @@ function A(e) {
         step: O.PG[D],
         back: false,
         skip: !L
-      })), (0, x.Nb)((0, O.lg)(D)), await q() && (0, x.IG)(f, D)
-    }, J = async () => {
+      })), (0, b.Nb)((0, O.lg)(D)), await q() && (0, b.IG)(f, D)
+    }, Q = async () => {
       m.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, R(Z({}, (0, g.hH)(f)), {
         step: O.PG[D],
         back: true,
         skip: false
-      })), await q() && (0, x.Wy)(f, D)
-    }, Q = null;
-  M && (D === O.PG.SAFETY_CHECK ? Q = (0, r.jsx)(N.j7, {}) : D === O.PG.DEFAULT_CHANNELS ? Q = (0, r.jsx)(N.Io, {}) : D === O.PG.CUSTOMIZATION_QUESTIONS ? Q = (0, r.jsx)(N.cZ, {}) : D === O.PG.HOME_SETTINGS && (Q = (0, r.jsx)(N.g6, {})));
+      })), await q() && (0, b.Wy)(f, D)
+    }, J = null;
+  M && (D === O.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === O.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === O.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === O.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {
       className: M ? w.hidden : true,
-      children: (0, r.jsx)(d.zxk, {
+      children: (0, r.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
         text: P.intl.string(P.t["13/7kZ"]),
         icon: d.whL,
         iconPosition: "start",
-        onClick: J,
+        onClick: Q,
         disabled: M || G
       })
     }),
-    ee = (0, r.jsx)(d.zxk, {
+    ee = (0, r.jsx)(d.Button, {
       size: "sm",
       variant: k ? "primary" : "secondary",
       text: k ? P.intl.string(P.t.PDTjLC) : P.intl.string(P.t["5WxrcX"]),
@@ -193,7 +193,7 @@ function A(e) {
               alt: "wumpus"
             }), (0, r.jsxs)("div", {
               className: w.educationUpsell,
-              children: [Q, (0, r.jsx)("div", {
+              children: [J, (0, r.jsx)("div", {
                 className: w.educationUpsellArrow
               })]
             })]

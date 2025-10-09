@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function I(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function I(e, t) {
   }), e
 }
 Chunk442837.ZP.initialize();
-let j = {
+let I = {
     [Chunk82554.BM.MESSAGE]: Chunk388032.t.fuqnBA,
     [Chunk82554.BM.USER]: Chunk388032.t.F4jrRU,
     [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMj
@@ -74,7 +74,7 @@ let j = {
         let {
           default: e
         } = await n.e("56499").then(n.bind(n, 433570));
-        return n => (0, r.jsx)(e, I(b({}, n), {
+        return n => (0, r.jsx)(e, j(b({}, n), {
           onFormSubmit: s,
           onResend: t,
           onSuccess: o,
@@ -92,7 +92,7 @@ let j = {
         let {
           default: e
         } = await n.e("20670").then(n.bind(n, 993018));
-        return t => (0, r.jsx)(e, I(b({}, t), {
+        return t => (0, r.jsx)(e, j(b({}, t), {
           onSuccess: s,
           headerText: x.intl.string(x.t.ZLRYGR),
           confirmButtonText: x.intl.string(x.t.PDTjLC)
@@ -141,8 +141,8 @@ let j = {
         })
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk325659.container,
-        children: require.map(e => null == j[e] ? null : (0, r.jsx)(N, {
-          title: x.intl.string(j[e]),
+        children: require.map(e => null == I[e] ? null : (0, r.jsx)(N, {
+          title: x.intl.string(I[e]),
           menuType: e
         }, e))
       })]

@@ -74,7 +74,7 @@ let B = Chunk647438.memo(function(e) {
           color: "currentColor"
         })
       })]
-    }), (0, i.jsx)(c.X6q, {
+    }), (0, i.jsx)(c.Heading, {
       color: "header-primary",
       variant: "heading-md/semibold",
       className: G.eventName,
@@ -138,7 +138,7 @@ function V(e) {
     guildEvent: t,
     noticeType: n
   } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([P.Z], () => P.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
-  return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.zxk, {
+  return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.Button, {
     onClick: function() {
       (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), I.default.track(M.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
         guild_id: t.guild_id,
@@ -278,7 +278,7 @@ function W(e) {
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: G.joinButton,
-    children: (0, i.jsx)(c.zxk, {
+    children: (0, i.jsx)(c.Button, {
       variant: "active",
       size: "sm",
       text: U.intl.string(U.t.z4FcDg),
@@ -288,7 +288,7 @@ function W(e) {
   })
 }
 
-function q(e) {
+function Y(e) {
   let {
     channel: t,
     label: n
@@ -296,7 +296,7 @@ function q(e) {
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: G.joinButton,
-    children: (0, i.jsx)(c.zxk, {
+    children: (0, i.jsx)(c.Button, {
       variant: "active",
       size: "sm",
       text: n,
@@ -308,7 +308,7 @@ function q(e) {
   })
 }
 
-function Y(e) {
+function q(e) {
   let {
     stageInstance: t,
     channel: n
@@ -379,7 +379,7 @@ function Q(e) {
         className: G.userNames,
         children: (0, _.ER)(a, d, null == t ? true : t.id, n.length)
       })]
-    }) : null, p && null == f && (0, i.jsx)(q, {
+    }) : null, p && null == f && (0, i.jsx)(Y, {
       channel: t,
       label: h
     })]
@@ -404,10 +404,10 @@ let X = Chunk647438.memo(function(e) {
   if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? h && (d = (0, i.jsx)(Y, {
+  null == l || u ? h && (d = (0, i.jsx)(q, {
     stageInstance: o,
     channel: r
-  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(Y, {
+  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
     stageInstance: o,
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {

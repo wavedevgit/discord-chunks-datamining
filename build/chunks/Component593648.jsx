@@ -485,14 +485,14 @@ function $() {
           },
           children: [(0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.NOTIFICATIONS_RESTORE_MOST_RECENT_SNAPSHOT,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               text: "Restore most recent snapshot",
               onClick: Chunk223683.KP
             })
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               text: "Launch Migration",
               onClick: () => {

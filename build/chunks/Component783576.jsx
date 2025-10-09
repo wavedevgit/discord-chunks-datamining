@@ -29,7 +29,7 @@ function d(t) {
     }), (0, i.jsx)(a.hzk, {
       children: (0, i.jsxs)("div", {
         className: c.modalContent,
-        children: [(0, i.jsx)(a.X6q, {
+        children: [(0, i.jsx)(a.Heading, {
           id: x,
           variant: "heading-lg/semibold",
           className: c.title,
@@ -41,7 +41,7 @@ function d(t) {
         })]
       })
     }), (0, i.jsxs)(a.mzw, {
-      children: [(0, i.jsx)(a.zxk, {
+      children: [(0, i.jsx)(a.Button, {
         variant: "primary",
         text: r.intl.string(r.t.j7Vi2t),
         type: "button",

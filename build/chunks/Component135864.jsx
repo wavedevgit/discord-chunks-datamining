@@ -108,7 +108,7 @@ let T = function() {
     className: Chunk933767.container,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk933767.header,
-      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "text-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t["1KqYnp"])
       })

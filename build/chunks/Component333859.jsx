@@ -44,7 +44,7 @@ let O = () => {
       let e = require ? Chunk980676.tryItOutButtonsV2 : Chunk980676.tryItOutButtons;
       return (0, Chunk951288.jsxs)("div", {
         className: module,
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: exports ? "secondary" : "primary",
           text: Chunk388032.intl.string(Chunk388032.t["hb/wEx"]),
           onClick: () => O()

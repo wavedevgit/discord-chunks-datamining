@@ -20,10 +20,10 @@ let j = function(e) {
     guildId: t,
     formFields: n,
     user: j,
-    showRequirements: h = true
+    showRequirements: b = true
   } = e;
   return null == (0, r.e7)([a.default], () => null != j ? j : a.default.getCurrentUser()) ? null : (0, l.jsxs)(l.Fragment, {
-    children: [h && (0, l.jsx)(o.Ih, {
+    children: [b && (0, l.jsx)(o.Ih, {
       icon: i.b7C,
       text: x.intl.string(x.t.v2z4c3),
       meetsRequirement: true

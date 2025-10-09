@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk755721 = require("./755721.js"),
   Chunk53365 = require("./53365.js"),
   Chunk377176 = require("./377176.js"),
   Chunk388032 = require("./388032.jsx");
@@ -16,7 +16,7 @@ function l(t) {
     guildId: r,
     transitionState: n,
     onClose: l
-  } = t, [A, _] = e.useState(false), [u, N] = e.useState(false), O = async () => {
+  } = t, [A, _] = a.useState(false), [u, N] = a.useState(false), O = async () => {
     _(true);
     try {
       await (0, o.zo)(r), l()
@@ -24,7 +24,7 @@ function l(t) {
       _(false)
     }
   }, s = c.intl.string(c.t["22itmp"]);
-  return (0, i.jsx)(a.Modal, {
+  return (0, i.jsx)(e.Modal, {
     size: "md",
     transitionState: n,
     onClose: l,
@@ -42,12 +42,12 @@ function l(t) {
       onClick: O,
       loading: A
     }],
-    children: (0, i.jsx)(E.XZJ, {
+    children: (0, i.jsx)(E.$q, {
       onChange: () => {
         N(t => !t)
       },
-      checked: u,
-      label: (0, T.f)()
+      value: u,
+      children: (0, T.f)()
     })
   })
 }

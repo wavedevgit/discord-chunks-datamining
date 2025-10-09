@@ -81,7 +81,7 @@ function L(e) {
     className: A.step,
     children: [(0, r.jsx)("div", {
       className: A.stepNumber,
-      children: (0, r.jsx)(c.X6q, {
+      children: (0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
         color: "text-brand",
         children: (0, r.jsx)(c.y5t, {
@@ -89,7 +89,7 @@ function L(e) {
         })
       })
     }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-sm/bold",
         children: (0, r.jsx)(c.y5t, {
           children: t
@@ -109,7 +109,7 @@ function x() {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk790680.linkingBannerUpper,
       children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           className: Chunk197571.marginBottom8,
           variant: "heading-xl/medium",
           children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
@@ -150,7 +150,7 @@ function M() {
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk790680.box, Chunk519279.box, Chunk790680.linkingBanner),
     children: [(0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk197571.marginBottom8,
         variant: "heading-xl/medium",
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
@@ -172,7 +172,7 @@ function M() {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     sectionType: t,
     sectionTitle: n,
@@ -229,7 +229,7 @@ function k(e) {
     })
   })
 }
-let j = () => {
+let k = () => {
     let e = (0, Chunk880257.Z)(),
       t = (0, Chunk631885.zu)(),
       n = module ? Chunk292352.AG : Chunk292352.i0,
@@ -238,7 +238,7 @@ let j = () => {
         max: require
       },
       a = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk345909.default["+tnO39"], Chunk647438), Chunk388032.intl.formatToPlainString(Chunk345909.default["pu6/U1"], Chunk647438));
-    return exports.length > 0 ? (0, Chunk951288.jsx)(k, {
+    return exports.length > 0 ? (0, Chunk951288.jsx)(j, {
       sectionType: Chunk292352.ne.ACTIVE,
       sectionTitle: Chunk120356,
       requests: exports
@@ -291,7 +291,7 @@ let j = () => {
       })).otherwise(() => null);
     return null == require ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk197571.marginTop20,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk790680.supportHeader,
         variant: "heading-sm/semibold",
         children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
@@ -311,7 +311,7 @@ let j = () => {
       }), Chunk388032.intl.formatToPlainString(Chunk345909.default.Q8XnAQ, {
         count: module.length
       }));
-    return 0 === module.length ? null : (0, Chunk951288.jsx)(k, {
+    return 0 === module.length ? null : (0, Chunk951288.jsx)(j, {
       sectionType: Chunk292352.ne.PENDING,
       sectionTitle: exports,
       requests: module
@@ -321,6 +321,6 @@ let j = () => {
     let e = (0, Chunk880257.Z)();
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk790680.container,
-      children: [module ? (0, Chunk951288.jsx)(x, {}) : (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(G, {})]
+      children: [module ? (0, Chunk951288.jsx)(x, {}) : (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(G, {})]
     })
   }

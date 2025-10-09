@@ -97,7 +97,7 @@ let T = e => {
           location: S.ZY5.DM_CHANNEL
         }
       })
-    }, s = (0, i.jsx)(c.zxk, {
+    }, s = (0, i.jsx)(c.Button, {
       size: "sm",
       variant: "secondary",
       onClick: () => {
@@ -112,7 +112,7 @@ let T = e => {
     switch (n) {
       case S.OGo.NONE:
         return (0, i.jsxs)(i.Fragment, {
-          children: [!a && !l && (0, i.jsx)(c.zxk, {
+          children: [!a && !l && (0, i.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
             onClick: o,
@@ -121,7 +121,7 @@ let T = e => {
         });
       case S.OGo.FRIEND:
         return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.zxk, {
+          children: [(0, i.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
@@ -133,7 +133,7 @@ let T = e => {
           }), s]
         });
       case S.OGo.BLOCKED:
-        return (0, i.jsx)(c.zxk, {
+        return (0, i.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
           onClick: () => {
@@ -145,12 +145,12 @@ let T = e => {
         });
       case S.OGo.PENDING_INCOMING:
         return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.zxk, {
+          children: [(0, i.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
             onClick: o,
             text: I.intl.string(I.t["+WbSn5"])
-          }), (0, i.jsx)(c.zxk, {
+          }), (0, i.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
@@ -163,7 +163,7 @@ let T = e => {
         });
       case S.OGo.PENDING_OUTGOING:
         return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(c.zxk, {
+          children: [(0, i.jsx)(c.Button, {
             size: "sm",
             variant: "primary",
             disabled: true,
@@ -198,14 +198,14 @@ let T = e => {
       onRejectSuccess: a
     }), g = d || p || h || f;
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(c.zxk, {
+      children: [(0, i.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
         disabled: g,
         onClick: () => s(t),
         loading: d,
         text: I.intl.string(I.t.Kz8Pws)
-      }), (0, i.jsx)(c.zxk, {
+      }), (0, i.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
         disabled: g,

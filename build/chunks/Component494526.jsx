@@ -107,7 +107,7 @@ function R(e) {
           color: c.Tt.LINK,
           disabled: a,
           onClick: () => (function(e) {
-            let t = v.isPlatformEmbedded && j.ZP.supportsFeature(N.eRX.WEBAUTHN) ? j.ZP.webAuthnAuthenticate : e => {
+            let t = v.isPlatformEmbedded && I.ZP.supportsFeature(N.eRX.WEBAUTHN) ? I.ZP.webAuthnAuthenticate : e => {
               let t = (0, l.wz)(JSON.parse(e));
               return (0, l.U2)(t).then(e => JSON.stringify(e))
             };
@@ -136,7 +136,7 @@ function R(e) {
           children: O.intl.string(O.t.apGCUV)
         }), (0, r.jsx)(p.DK, {
           children: O.intl.format(O.t.Cbl5JC, {
-            username: "".concat(I.ZP.getUserTag(e))
+            username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zx, {
           look: c.zx.Looks.BLANK,

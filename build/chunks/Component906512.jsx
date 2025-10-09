@@ -84,18 +84,18 @@ let N = [{
       body: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: b.featureCard,
+      className: x.featureCard,
       children: [(0, r.jsx)("div", {
-        className: b.featureIcon,
+        className: x.featureIcon,
         children: (0, r.jsx)(t, {
           color: null != n ? n : "currentColor",
           width: i,
           height: i,
           size: "custom"
         })
-      }), (0, r.jsx)(d.X6q, {
+      }), (0, r.jsx)(d.Heading, {
         variant: "heading-md/semibold",
-        className: b.featureHeader,
+        className: x.featureHeader,
         children: l
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
@@ -117,19 +117,19 @@ let N = [{
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: a()(b.guildDetails, {
-        [b.faded]: l
+      className: a()(x.guildDetails, {
+        [x.faded]: l
       }),
       style: c,
       children: [(0, r.jsx)("div", {
-        className: b.guildIcon,
+        className: x.guildIcon,
         children: (0, r.jsx)("img", {
           alt: "",
           src: t,
           width: 24,
           height: 24
         })
-      }), (0, r.jsx)(d.X6q, {
+      }), (0, r.jsx)(d.Heading, {
         variant: "heading-deprecated-12/semibold",
         children: n
       })]
@@ -144,9 +144,9 @@ let N = [{
     }, [T, P, l, _]), i.useEffect(() => {
       (0, u.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []), (0, r.jsxs)("div", {
-      className: b.container,
+      className: x.container,
       children: [(0, r.jsxs)("div", {
-        className: b.banner,
+        className: x.banner,
         ref: e => O(e),
         children: [N.map(e => {
           var t, i;
@@ -165,32 +165,32 @@ let N = [{
         }), (0, r.jsx)("img", {
           alt: "",
           src: j,
-          className: b.image,
+          className: x.image,
           width: 256
         }), (0, r.jsx)("img", {
           alt: "",
           src: v,
-          className: b.sparkles
+          className: x.sparkles
         })]
-      }), (0, r.jsx)(d.X6q, {
+      }), (0, r.jsx)(d.Heading, {
         variant: "heading-xl/semibold",
-        children: x.intl.string(x.t["M/gBcH"])
+        children: b.intl.string(b.t["M/gBcH"])
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: b.body,
-        children: x.intl.format(x.t["52EgsL"], {
+        className: x.body,
+        children: b.intl.format(b.t["52EgsL"], {
           helpdeskArticle: p.Z.getArticleURL(f.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.u, {
-        text: S ? null : x.intl.string(x.t["pjG+T0"]),
-        "aria-label": S ? true : x.intl.string(x.t["pjG+T0"]),
+        text: S ? null : b.intl.string(b.t["pjG+T0"]),
+        "aria-label": S ? true : b.intl.string(b.t["pjG+T0"]),
         children: (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: b.button,
-          children: (0, r.jsx)(d.zxk, {
+          className: x.button,
+          children: (0, r.jsx)(d.Button, {
             variant: "primary",
-            text: x.intl.string(x.t.LhlgY2),
+            text: b.intl.string(b.t.LhlgY2),
             onClick: () => {
               g.Z.open()
             },
@@ -198,54 +198,54 @@ let N = [{
           })
         })
       }), (0, r.jsx)("hr", {
-        className: b.separator
+        className: x.separator
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x.intl.string(x.t.OzLWLC)
+        children: b.intl.string(b.t.OzLWLC)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
-        className: b.body,
+        className: x.body,
         variant: "text-sm/normal",
-        children: x.intl.format(x.t.rjhrqK, {
+        children: b.intl.format(b.t.rjhrqK, {
           helpdeskArticle: p.Z.getArticleURL(f.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
-        className: b.features,
+        className: x.features,
         children: [{
           icon: d.IeX,
           color: o.Z.unsafe_rawColors.GREEN_360.css,
-          header: x.intl.string(x.t.oVQF29),
-          body: x.intl.format(x.t.A6G7am, {
+          header: b.intl.string(b.t.oVQF29),
+          body: b.intl.format(b.t.A6G7am, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: b.featuredText,
+              className: x.featuredText,
               children: e
             }, t)
           })
         }, {
           icon: d.IeX,
           color: o.Z.unsafe_rawColors.PARTNER.css,
-          header: x.intl.string(x.t["0rJl9/"]),
-          body: x.intl.format(x.t.XsCNk5, {
+          header: b.intl.string(b.t["0rJl9/"]),
+          body: b.intl.format(b.t.XsCNk5, {
             infoHook: () => (0, r.jsx)(c.u, {
-              text: x.intl.string(x.t.kPJlTk),
-              "aria-label": x.intl.string(x.t.kPJlTk),
+              text: b.intl.string(b.t.kPJlTk),
+              "aria-label": b.intl.string(b.t.kPJlTk),
               children: (0, r.jsx)(d.d3s, {
                 size: "xs",
                 color: "currentColor",
-                className: b.infoIcon
+                className: x.infoIcon
               })
             }),
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: b.featuredText,
+              className: x.featuredText,
               children: e
             }, t)
           })
         }, {
           icon: d.d3s,
           color: o.Z.unsafe_rawColors.RED_360.css,
-          header: x.intl.string(x.t.W2kLJC),
-          body: x.intl.string(x.t.hyNkHx)
+          header: b.intl.string(b.t.W2kLJC),
+          body: b.intl.string(b.t.hyNkHx)
         }].map((e, t) => (0, r.jsx)(E, y({}, e), t))
       })]
     })

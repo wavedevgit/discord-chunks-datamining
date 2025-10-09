@@ -59,14 +59,14 @@ function O(e) {
         size: "sm",
         color: "currentColor",
         className: b.nitroWheel
-      }), (0, r.jsx)(s.X6q, {
+      }), (0, r.jsx)(s.Heading, {
         variant: "heading-sm/bold",
         children: E.intl.string(E.t.dTbAx8)
       })]
     }), (0, r.jsx)(a.x, {
       variant: "text-sm/normal",
       children: v
-    }), I ? (0, r.jsx)(s.zxk, {
+    }), I ? (0, r.jsx)(s.Button, {
       onClick: T,
       text: E.intl.string(E.t.RzWDqa),
       fullWidth: true

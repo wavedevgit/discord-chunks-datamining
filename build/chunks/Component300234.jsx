@@ -29,7 +29,7 @@ let v = Chunk647438.memo(function(e) {
     onContextMenu: e => (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("90508"), n.e("46154"), n.e("89381")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("90508"), n.e("46154"), n.e("44141")]).then(n.bind(n, 422200));
       return t => {
         var n, l;
         return (0, r.jsx)(e, (n = function(e) {
@@ -65,7 +65,7 @@ let v = Chunk647438.memo(function(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: j.left,
-      children: [(0, r.jsxs)(s.X6q, {
+      children: [(0, r.jsxs)(s.Heading, {
         className: j.threadNameLine,
         variant: "heading-md/semibold",
         children: [(0, r.jsx)("span", {

@@ -72,8 +72,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "???",
-  j = e => {
+let j = "???",
+  k = e => {
     let {
       analyticsLocations: t,
       startingScreen: i
@@ -104,9 +104,9 @@ class U extends Chunk647438.Component {
   }
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : k,
+      t = null != module ? module.username : j,
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : k;
+      r = null != require ? require.username : j;
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t.Mptau7, {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf3"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxM"], {
@@ -127,7 +127,7 @@ class U extends Chunk647438.Component {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk269143.buttonContainer,
       children: [(0, Chunk951288.jsx)("div", {
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           disabled: module,
           size: "sm",
@@ -170,9 +170,9 @@ class U extends Chunk647438.Component {
   render() {
     let e = () => {
         let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-          t = null != module ? module.username : k,
+          t = null != module ? module.username : j,
           n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-          r = null != require ? require.username : k;
+          r = null != require ? require.username : j;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
             headerText: Chunk388032.intl.formatToPlainString(Chunk388032.t.qABVhI, {
@@ -212,13 +212,13 @@ class U extends Chunk647438.Component {
           children: this.renderExpirationDate()
         })]
       }),
-      n = (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      n = (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         disabled: false,
         size: "md",
-        onClick: () => j({
+        onClick: () => k({
           analyticsLocations: [],
-          startingScreen: this.referralsSent.size === Chunk796634.Q ? Chunk656139.K.REMINDER : Chunk656139.K.SELECT_FRIENDS
+          startingScreen: this.referralsSent.size === Chunk796634.Q ? Chunk656139.SelectFriendsModalScreens.REMINDER : Chunk656139.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
         text: Chunk388032.intl.string(Chunk388032.t.Lm2nFR)
       }),
@@ -251,7 +251,7 @@ class U extends Chunk647438.Component {
           className: Chunk269143.contentDMEmbedXP,
           children: [(0, Chunk951288.jsxs)("div", {
             className: Chunk269143.contentTextDMEmbedXP,
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-md/semibold",
               color: "header-primary",
               children: o

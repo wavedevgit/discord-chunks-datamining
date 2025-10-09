@@ -40,7 +40,7 @@ let b = e => {
           className: a()(f.headerContent, {
             [f.headerContentSmall]: p
           }),
-          children: [(0, r.jsx)(s.X6q, {
+          children: [(0, r.jsx)(s.Heading, {
             variant: "heading-xl/semibold",
             className: f.searchTitle,
             children: h.intl.string(h.t.IT7qoK)
@@ -79,7 +79,7 @@ let b = e => {
       handleSelectCategory: y,
       categoryCounts: _,
       allEntriesCount: j,
-      isLoading: x
+      isLoading: O
     } = e;
     return (0, r.jsx)("div", {
       className: p.pageContainer,
@@ -116,7 +116,7 @@ let b = e => {
               }, t)
             })]
           })
-        }), x && null == n ? (0, r.jsx)(s.$jN, {
+        }), O && null == n ? (0, r.jsx)(s.$jN, {
           className: p.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(s.Text, {

@@ -34,7 +34,7 @@ class _ extends Chunk647438.PureComponent {
         size: Chunk219929.Uy.MEDIUM,
         className: Chunk496758.venmoIcon
       }), Chunk647438 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: module.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
           className: Chunk496758.connectionInstructions,
           children: Chunk388032.intl.format(Chunk388032.t.DowIra, {

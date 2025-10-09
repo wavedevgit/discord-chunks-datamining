@@ -136,8 +136,8 @@ let A = e => {
       L = (0, h.rO)(),
       x = i.useRef(null),
       M = i.useRef(0),
-      k = S(n),
-      j = (0, s.debounce)(() => {
+      j = S(n),
+      k = (0, s.debounce)(() => {
         p.default.track(g.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
           box_type: (0, s.snakeCase)(n)
         })
@@ -155,12 +155,12 @@ let A = e => {
         children: [(0, r.jsxs)("div", {
           children: [null != P && (0, r.jsx)("div", {
             className: B.badge,
-            children: (0, r.jsx)(d.X6q, {
+            children: (0, r.jsx)(d.Heading, {
               variant: "eyebrow",
               color: "always-white",
               children: P
             })
-          }), (0, r.jsx)(d.X6q, {
+          }), (0, r.jsx)(d.Heading, {
             variant: t,
             color: "header-primary",
             className: o()(B.header, !D && B["".concat(w)]),
@@ -174,7 +174,7 @@ let A = e => {
         }), null != c && null != R && (0, r.jsx)(A, {
           descriptionCta: c,
           onClick: R,
-          debouncedOnClickAnalytics: j,
+          debouncedOnClickAnalytics: k,
           enablePremiumBrandRefreshDesign: D
         })]
       }),
@@ -203,7 +203,7 @@ let A = e => {
         children: [(0, r.jsx)(F, {}), (0, r.jsx)(Z, {})]
       }),
       Y = {
-        className: o()(D ? y.backgroundColor : k, B.boxContainer, B["".concat(w)], D && y.gradientBackground),
+        className: o()(D ? y.backgroundColor : j, B.boxContainer, B["".concat(w)], D && y.gradientBackground),
         onMouseEnter: U,
         onFocus: U,
         onBlur: G,

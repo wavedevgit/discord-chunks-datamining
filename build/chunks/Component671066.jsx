@@ -24,16 +24,16 @@ function p(e) {
     triggerType: p,
     toggled: f,
     onToggleAction: h
-  } = e, x = e => () => h(e), b = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
+  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
     return null == e ? null : (0, s.F6)(e, d.default, c.Z)
   }, [j]);
-  if (null == b) return null;
+  if (null == x) return null;
   let {
     headerText: _,
     descriptionText: C,
     icon: O
-  } = b;
+  } = x;
   return (0, r.jsxs)("div", {
     className: m.actionContainer,
     children: [(0, r.jsx)("div", {
@@ -45,7 +45,7 @@ function p(e) {
       })
     }), (0, r.jsxs)("div", {
       className: m.actionTextContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
         children: _
       }), (0, r.jsx)(a.Text, {
@@ -58,7 +58,7 @@ function p(e) {
         children: [null != v && g.intl.format(g.t["8Sr/am"], {
           channelName: v
         }), (0, r.jsx)(a.P3F, {
-          onClick: x(true),
+          onClick: b(true),
           className: m.editChannel,
           tag: "span",
           role: "link",
@@ -66,9 +66,9 @@ function p(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(l.VL, {
-        checked: f,
-        onChange: x(false),
+      children: (0, r.jsx)(l.$q, {
+        value: !!f,
+        onChange: b(false),
         className: m.__invalid_actionCheckbox
       })
     })]

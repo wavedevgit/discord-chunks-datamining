@@ -31,16 +31,16 @@ function j(e) {
     isAdopting: C
   } = (0, u.Z)(i), O = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
   if (null != v && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
-    className: b.container,
+    className: x.container,
     children: [(0, r.jsx)(s.Text, {
-      className: b.section,
+      className: x.section,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: O ? x.intl.string(h.default["6xBCpK"]) : x.intl.string(h.default.eSRKe3)
+      children: O ? b.intl.string(h.default["6xBCpK"]) : b.intl.string(h.default.eSRKe3)
     }), (0, r.jsx)("div", {
-      className: b.divider
+      className: x.divider
     }), (0, r.jsxs)("div", {
-      className: l()(b.section, b.body),
+      className: l()(x.section, x.body),
       children: [(0, r.jsx)(f.l, {
         avatar: (0, r.jsx)(o.Z, {
           user: v,
@@ -55,10 +55,10 @@ function j(e) {
           inline: false
         }),
         username: p.ZP.getName(i, null, v),
-        message: x.intl.string(x.t["6OSasb"])
-      }), (0, r.jsx)(s.zxk, {
+        message: b.intl.string(b.t["6OSasb"])
+      }), (0, r.jsx)(s.Button, {
         variant: "primary",
-        text: x.intl.string(x.t.cQDYRk),
+        text: b.intl.string(b.t.cQDYRk),
         onClick: _,
         loading: C,
         disabled: O,

@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function o(e, a) {
-  let [t, o] = r.useState(l.O.LANDING), c = (0, s.Z)(t), [d, x] = r.useState(null), [u, h] = r.useState(null), [m, N] = r.useState(true), C = r.useCallback(() => {
+  let [t, o] = r.useState(l.O.LANDING), c = (0, n.Z)(t), [d, x] = r.useState(null), [u, h] = r.useState(null), [m, N] = r.useState(true), C = r.useCallback(() => {
     switch (t) {
       case l.O.LANDING:
         o(l.O.PRE_CONNECT);
@@ -29,7 +29,7 @@ function o(e, a) {
     x(null), h(e), o(l.O.DISCORD_CONSENT)
   }, []);
   return r.useEffect(() => {
-    t !== c && n.default.track(i.rMx.ACCOUNT_LINK_STEP, {
+    t !== c && s.default.track(i.rMx.ACCOUNT_LINK_STEP, {
       location_stack: e,
       previous_step: c,
       current_step: t,

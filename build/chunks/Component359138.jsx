@@ -36,7 +36,7 @@ function p() {
     className: Chunk745343.cameraWrapper,
     children: (0, Chunk951288.jsx)(Chunk28664.u, {
       text: h ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.JIf4v7),
         onClick: () => p(true),

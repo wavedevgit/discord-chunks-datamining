@@ -37,7 +37,7 @@ let g = () => {
         alt: "",
         className: Chunk503484.splashImage,
         src: exports
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk503484.splashHeader,
         variant: "heading-lg/medium",
         children: Chunk388032.intl.string(Chunk388032.t.m9gRVF)

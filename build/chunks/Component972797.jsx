@@ -20,29 +20,29 @@ function u(e) {
     published: a,
     submitting: u = false,
     onClick: g
-  } = e, f = (0, s.Dt)(), [p, m] = n.useState(a);
-  return n.useEffect(() => {
+  } = e, f = (0, s.Dt)(), [p, m] = r.useState(a);
+  return r.useEffect(() => {
     m(e => e || a)
-  }, [a]), (0, r.jsxs)("div", {
+  }, [a]), (0, n.jsxs)("div", {
     className: l()({
       [c.publishable]: !t && !a,
       [c.wasEverPublished]: p
     }, c.outerContainer),
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: c.container,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, n.jsxs)("div", {
         className: c.explanationColumn,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, n.jsx)(o.Heading, {
           variant: "text-sm/semibold",
           color: "header-primary",
           children: a ? d.intl.string(d.t.VaaagY) : d.intl.string(d.t.oI8aQU)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, n.jsx)(o.Text, {
           id: f,
           variant: "text-sm/normal",
           color: "text-default",
           children: a ? d.intl.string(d.t["0r6pbG"]) : d.intl.string(d.t["8MMHYG"])
         })]
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, n.jsx)(i.zxk, {
         text: a ? d.intl.string(d.t.DlJOvr) : d.intl.string(d.t.X7YGXF),
         icon: a ? o.kZF : o.T$Z,
         iconPosition: "end",
@@ -53,7 +53,7 @@ function u(e) {
         onClick: t ? true : g,
         loading: u
       })]
-    }), t && (0, r.jsx)(o.Text, {
+    }), t && (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: A

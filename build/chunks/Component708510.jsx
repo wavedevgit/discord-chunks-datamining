@@ -45,11 +45,11 @@ function E(e) {
         rules: t.termRules
       });
     case C.A.APPLY:
-      return (0, r.jsx)(x.r, {
+      return (0, r.jsx)(b.r, {
         pendingFields: t.pendingVerificationFields
       });
     case C.A.DISCOVERABLE:
-      return (0, r.jsx)(b.c, {
+      return (0, r.jsx)(x.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,
@@ -118,7 +118,7 @@ function T() {
   } = exports;
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 32,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-primary",
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.YJlvBA)

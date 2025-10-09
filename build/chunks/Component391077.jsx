@@ -27,7 +27,7 @@ function f(e) {
       })
     }), (0, r.jsx)("div", {
       className: d.rowDetails,
-      children: (0, r.jsx)(o.X6q, {
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         children: u.intl.string(u.t.DFMPWV)
       })
@@ -63,7 +63,7 @@ function _(e) {
     className: d.fractionalTimeRemainingRow,
     children: [(0, r.jsxs)("div", {
       className: d.fractionalTimeRemainingRowDetails,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         className: m,
         children: f

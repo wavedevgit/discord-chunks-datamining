@@ -46,7 +46,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk61722 = require("./61722.js"),
   Chunk32482 = require("./32482.js");
 
-function V(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,14 +75,14 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, o = i.useRef(null), d = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([T.Z], () => {
       var e;
       return (null == p ? true : p.colorRoleId) != null ? null == (e = T.Z.getRole(t.guild_id, p.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getStatus() : P.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([P.Z], () => P.Z.isMobileOnline(a)), C = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getActivities() : P.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, h.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getStatus() : P.Z.getStatus(a, t.guild_id)), x = (0, h.e7)([P.Z], () => P.Z.isMobileOnline(a)), C = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getActivities() : P.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, h.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("70675"), n.e("96456")]).then(n.bind(n, 654663));
         return n => {
           var i, l;
-          return (0, r.jsx)(e, (i = V({}, n), l = l = {
+          return (0, r.jsx)(e, (i = z({}, n), l = l = {
             user: b,
             guildId: t.guild_id,
             channel: t
@@ -98,7 +98,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           }), i))
         }
       })
-    }, [b, t]), z = i.useCallback(() => {
+    }, [b, t]), V = i.useCallback(() => {
       if (null == b) return;
       let e = "@".concat(k.ZP.getUserTag(b, {
           decoration: "never"
@@ -111,7 +111,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: n
       }), g.Z.startTyping(t.id)
     }, [b, t]), Y = i.useCallback(e => {
-      e.stopPropagation(), (0, x.f)({
+      e.stopPropagation(), (0, O.f)({
         guildId: t.guild_id,
         location: {
           section: H.jXE.THREAD_MEMBER_LIST,
@@ -132,7 +132,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channelId: t.id,
       position: u.tq ? "window_center" : "left",
       spacing: 16,
-      onShiftClick: z,
+      onShiftClick: V,
       shouldShow: K,
       onRequestClose: () => Q(false),
       children: e => {
@@ -154,7 +154,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           }
           return i
         }(e, ["onClick", "onMouseDown"]);
-        return (0, r.jsx)(G.Z, V({
+        return (0, r.jsx)(G.Z, z({
           ref: o,
           onContextMenu: B,
           shouldAnimateStatus: W,
@@ -169,7 +169,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           isTyping: d,
           channel: t,
           guildId: t.guild_id,
-          isMobile: O,
+          isMobile: x,
           selected: K,
           applicationStream: A,
           premiumSince: null == X ? null : new Date(X),
@@ -179,7 +179,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           isOwner: U,
           nameplate: q,
           onClick: e => {
-            e.shiftKey ? null == z || z() : Q(e => !e)
+            e.shiftKey ? null == V || V() : Q(e => !e)
           },
           onMouseDown: e => {
             K ? e.stopPropagation() : null == i || i(e)
@@ -194,24 +194,24 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       label: n,
       count: i,
       guildId: l
-    } = e, a = (0, O.p9)({
+    } = e, a = (0, x.p9)({
       roleId: t,
       guildId: l,
       size: 16
     });
     return t === H.Skl.UNKNOWN ? (0, r.jsx)("div", {
-      className: z.membersGroup,
+      className: V.membersGroup,
       children: (0, r.jsx)("div", {
-        className: z.memberGroupsPlaceholder
+        className: V.memberGroupsPlaceholder
       })
     }) : (0, r.jsxs)(_.Z, {
-      className: z.membersGroup,
+      className: V.membersGroup,
       "aria-label": F.intl.formatToPlainString(F.t.UaqbkZ, {
         title: n,
         count: i
       }),
-      children: [null != a ? (0, r.jsx)(j.Z, V({
-        className: z.roleIcon
+      children: [null != a ? (0, r.jsx)(j.Z, z({
+        className: V.roleIcon
       }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": true,
         children: [n, " — ", i]
@@ -310,18 +310,18 @@ function X(e) {
     }, [t.guild_id, t.id, t.type]), j) return (0, r.jsx)(J, {
     channel: t
   });
-  let x = o().omit(g.containerProps, ["ref"]),
-    O = M.iJ(n);
+  let O = o().omit(g.containerProps, ["ref"]),
+    x = M.iJ(n);
   return (0, r.jsx)(y.Gt, {
     value: s,
     children: (0, r.jsx)(c.bG, {
       navigator: g,
       children: (0, r.jsx)(p.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: a()(z.membersWrap, z.hiddenMembers, B.container),
-          children: (0, r.jsx)(p.aVo, V({
+          className: a()(V.membersWrap, V.hiddenMembers, B.container),
+          children: (0, r.jsx)(p.aVo, z({
             ref: _,
-            className: z.members,
+            className: V.members,
             paddingTop: 0,
             sectionHeight: 40,
             renderSection: e => {
@@ -348,7 +348,7 @@ function X(e) {
                 channel: t,
                 sectionId: a,
                 userId: l[i],
-                guildOwnerId: O
+                guildOwnerId: x
               }, l[i])
             },
             footerHeight: e => 80 * (u[e] === f && t.type === H.d4z.PRIVATE_THREAD),
@@ -359,7 +359,7 @@ function X(e) {
             innerTag: "ul",
             sections: u.map(e => e.userIds.length),
             fade: true
-          }, x, e), l)
+          }, O, e), l)
         })
       })
     })
@@ -371,7 +371,7 @@ function J(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(z.membersWrap, z.hiddenMembers, z.members, B.emptyState),
+    className: a()(V.membersWrap, V.hiddenMembers, V.members, B.emptyState),
     children: [(0, r.jsx)(p.Text, {
       className: B.emptyStateHeader,
       variant: "text-xs/bold",
@@ -388,7 +388,7 @@ function J(e) {
       }), (0, r.jsx)(A.Z, {
         className: B.emptyStateStars
       })]
-    }), (0, r.jsx)(p.X6q, {
+    }), (0, r.jsx)(p.Heading, {
       variant: "heading-md/semibold",
       children: t.isForumPost() ? F.intl.string(F.t.p0UgNT) : F.intl.string(F.t["9/n5v7"])
     }), (0, r.jsx)(p.Text, {

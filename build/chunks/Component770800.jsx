@@ -110,7 +110,7 @@ class x extends Chunk647438.PureComponent {
       })(e.displayName, e.bitrate, e.lost));
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       className: Chunk966117.allowSelection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
         children: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk647438 ? " - " + Chunk647438 : "")
       }), (0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.izJ, {

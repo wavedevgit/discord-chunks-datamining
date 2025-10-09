@@ -15,7 +15,7 @@ function o() {
     required: e,
     checked: t
   } = (0, Chunk882037.MD)();
-  return module ? (0, Chunk951288.jsx)(Chunk853268.Z, {
+  return module ? (0, Chunk951288.jsx)(Chunk853268.default, {
     value: exports,
     subText: Chunk388032.intl.string(Chunk388032.t["0p3R09"]),
     onChange: Chunk882037.ZJ,

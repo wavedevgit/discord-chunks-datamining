@@ -61,7 +61,7 @@ function m(e) {
     className: a()(g.simpleItemWrapper, g.clickable),
     children: [(0, r.jsxs)("div", {
       className: g.itemContent,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: u.intl.string(u.t.DpRdYG)

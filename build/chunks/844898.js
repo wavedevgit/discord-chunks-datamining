@@ -65,8 +65,8 @@ function p(e) {
     L = w && P && "replace" === n.selectionBehavior,
     x = D || L,
     M = (0, _.useRef)(null),
-    k = x && P,
-    j = (0, _.useRef)(false),
+    j = x && P,
+    k = (0, _.useRef)(false),
     U = (0, _.useRef)(false),
     G = n.getItemProps(p),
     B = e => {
@@ -76,7 +76,7 @@ function p(e) {
       ref: g
     };
   if (E ? (Z.onPressStart = e => {
-      M.current = e.pointerType, j.current = k, "keyboard" === e.pointerType && (!x || m()) && A(e)
+      M.current = e.pointerType, k.current = j, "keyboard" === e.pointerType && (!x || m()) && A(e)
     }, I ? (Z.onPressUp = D ? true : e => {
       "mouse" === e.pointerType && P && A(e)
     }, Z.onPress = D ? B : e => {
@@ -84,7 +84,7 @@ function p(e) {
     }) : Z.onPress = e => {
       D || L && "mouse" !== e.pointerType ? ("keyboard" !== e.pointerType || h()) && B(e) : "keyboard" !== e.pointerType && P && A(e)
     }) : (Z.onPressStart = e => {
-      M.current = e.pointerType, j.current = k, U.current = D, P && ("mouse" === e.pointerType && !D || "keyboard" === e.pointerType && (!w || m())) && A(e)
+      M.current = e.pointerType, k.current = j, U.current = D, P && ("mouse" === e.pointerType && !D || "keyboard" === e.pointerType && (!w || m())) && A(e)
     }, Z.onPress = e => {
       ("touch" === e.pointerType || "pen" === e.pointerType || "virtual" === e.pointerType || "keyboard" === e.pointerType && x && h() || "mouse" === e.pointerType && U.current) && (x ? B(e) : P && A(e))
     }), C["data-collection"] = (0, r.Zx)(n.collection), C["data-key"] = p, Z.preventFocusOnPress = b, b && (Z = (0, s.d)(Z, {
@@ -104,17 +104,17 @@ function p(e) {
   } : true, {
     longPressProps: Y
   } = (0, d.T)({
-    isDisabled: !k,
+    isDisabled: !j,
     onLongPress(e) {
       "touch" === e.pointerType && (A(e), n.setSelectionBehavior("toggle"))
     }
   }), W = e => {
-    "touch" === M.current && j.current && e.preventDefault()
+    "touch" === M.current && k.current && e.preventDefault()
   }, K = "none" !== T && n.isLink(p) ? e => {
     i.nG.isOpening || e.preventDefault()
   } : true;
   return {
-    itemProps: (0, s.d)(C, P || D || b && !O ? F : {}, k ? Y : {}, {
+    itemProps: (0, s.d)(C, P || D || b && !O ? F : {}, j ? Y : {}, {
       onDoubleClick: H,
       onDragStartCapture: W,
       onClick: K,

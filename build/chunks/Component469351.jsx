@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, O.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != Z && (0, b.eM)(Z, R), {
+  } = (0, O.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);
@@ -55,12 +55,12 @@ function w(e) {
       roles: t,
       initialTab: "guild_products",
       returnToSection: I.pNK.GUILD_PRODUCTS
-    }), (0, x.uL)(I.Z5c.CHANNEL(Z.id, S.oC.GUILD_SHOP))
+    }), (0, b.uL)(I.Z5c.CHANNEL(Z.id, S.oC.GUILD_SHOP))
   }, [Z]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == Z) return null;
   let M = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: T.intl.string(T.t.X6h2g4)
       }), (0, r.jsx)(o.Text, {

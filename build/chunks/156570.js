@@ -37,7 +37,7 @@ class s extends Chunk81825.Z {
       assets: null != e.assets ? e.assets.map(i.m) : null,
       staffNotes: null != t ? {
         content: t.content,
-        user: null != t.user ? new a.Z(t.user) : null
+        user: null != t.user ? new a.default(t.user) : null
       } : null,
       guild: null != e.guild ? {
         id: e.guild.id,

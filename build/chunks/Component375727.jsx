@@ -163,7 +163,7 @@ let A = e => {
       ec = A ? S.intl.string(S.t.FOYn8f) : S.intl.string(S.t.DU0dy8);
     return G ? (0, r.jsxs)("main", {
       className: T.main,
-      children: [(0, r.jsx)(u.X6q, {
+      children: [(0, r.jsx)(u.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
         className: T.heading,
@@ -181,7 +181,7 @@ let A = e => {
       className: a()(T.main, {
         [T.checkerboard]: null != Z
       }),
-      children: [(0, r.jsx)(u.X6q, {
+      children: [(0, r.jsx)(u.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
         className: T.heading,
@@ -247,7 +247,7 @@ let A = e => {
             error: H,
             variant: "text-sm/normal",
             color: "text-danger"
-          }), (0, r.jsx)(u.zxk, {
+          }), (0, r.jsx)(u.Button, {
             text: ec,
             onClick: ei,
             disabled: null == Z || null == F || Y.length < 2 || null != V,

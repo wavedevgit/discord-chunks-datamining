@@ -17,7 +17,7 @@ function l(e) {
     title: o
   } = e;
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(r.zxk, {
+    children: [(0, a.jsx)(r.Button, {
       variant: "primary",
       onClick: s,
       loading: t,

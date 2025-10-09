@@ -19,7 +19,7 @@ function s(e) {
     className: o.container,
     children: (0, r.jsxs)("div", {
       className: o.headingContainer,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
         children: s

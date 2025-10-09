@@ -1,7 +1,7 @@
 /** Chunk was on 52030 **/
 /** chunk id: 160511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,15 +12,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function c(e) {
   let {
     mfaChallenge: t,
     finish: n,
-    setSlide: u,
+    setSlide: c,
     onClose: h,
     isSlideReady: f,
     headerAlignStart: g
-  } = e, [m, p] = r.useState(false), [x, b] = r.useState(null), [S, j] = r.useState(false), [y, v] = r.useState(null), [C, Z] = r.useState(""), w = r.useRef(null);
+  } = e, [m, p] = r.useState(false), [b, S] = r.useState(null), [x, j] = r.useState(false), [y, v] = r.useState(null), [C, Z] = r.useState(""), w = r.useRef(null);
   r.useEffect(() => {
     p(true), s.tn.post({
       url: d.ANM.LOGIN_SMS_SEND,
@@ -30,7 +30,7 @@ function u(e) {
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {
-      b(e.body.phone)
+      S(e.body.phone)
     }).catch(e => {
       var t, n;
       v(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
@@ -43,8 +43,8 @@ function u(e) {
       null == (e = w.current) || e.focus()
     }
   }, [f]);
-  let k = null == x ? c.intl.string(c.t.LQdCQE) : c.intl.formatToPlainString(c.t["8r6h7+"], {
-    phoneNumber: x
+  let k = null == b ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
+    phoneNumber: b
   });
   return (0, l.jsxs)("form", {
     onSubmit: e => {
@@ -65,19 +65,19 @@ function u(e) {
     }), (0, l.jsx)(o.Z.SlideContent, {
       children: (0, l.jsxs)(a.NIo, {
         children: [(0, l.jsx)(a.oil, {
-          label: c.intl.string(c.t.HZPBOT),
+          label: u.intl.string(u.t.HZPBOT),
           inputRef: w,
           onChange: Z,
-          placeholder: c.intl.string(c.t.tARzgo),
+          placeholder: u.intl.string(u.t.tARzgo),
           maxLength: 10,
           value: C,
           autoComplete: "one-time-code",
           spellCheck: "false",
-          disabled: S,
+          disabled: x,
           error: y
-        }), (0, l.jsx)(a.zxk, {
+        }), (0, l.jsx)(a.Button, {
           variant: "secondary",
-          text: c.intl.string(c.t.ZF29Ly),
+          text: u.intl.string(u.t.ZF29Ly),
           loading: m,
           onClick: () => {
             s.tn.post({
@@ -88,7 +88,7 @@ function u(e) {
               oldFormErrors: true,
               rejectWithError: false
             }).then(e => {
-              b(e.body.phone)
+              S(e.body.phone)
             }).catch(e => {
               var t;
               v(e.message || (null == (t = e.body) ? true : t.message))
@@ -98,10 +98,10 @@ function u(e) {
       })
     }), (0, l.jsx)(o.Z.SlideFooter, {
       mfaChallenge: t,
-      setSlide: u,
+      setSlide: c,
       showConfirm: true,
       disabled: C.length !== i.Gz,
-      submitting: S
+      submitting: x
     })]
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 516448, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,24 +20,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function x(e) {
   let {
     allSubscriptionListings: t
   } = e, {
     editStateId: n,
-    guildId: b
+    guildId: x
   } = (0, s.N)(), [j, v] = o.UE(n), [_, C] = o.R7(n), O = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: y
-  } = (0, c.Z)(b), N = (0, a.mY)();
+  } = (0, c.Z)(x), N = (0, a.mY)();
   return (0, r.jsx)(d.Z, {
-    title: x.intl.string(x.t.YNw2Sk),
-    description: x.intl.string(x.t.zMW5r6),
+    title: b.intl.string(b.t.YNw2Sk),
+    description: b.intl.string(b.t.zMW5r6),
     children: (0, r.jsxs)(l.Kqy, {
       gap: 24,
       children: [(0, r.jsxs)(l.gNt, {
         disabled: N,
-        label: x.intl.string(x.t.DFlDaG),
-        description: x.intl.string(x.t.kHalVF),
+        label: b.intl.string(b.t.DFlDaG),
+        description: b.intl.string(b.t.kHalVF),
         children: [(0, r.jsx)(u.Z, {
           channelBenefits: j,
           intangibleBenefits: _,
@@ -46,7 +46,7 @@ function b(e) {
             v(t => t.concat(e)), C(e => e.concat(t))
           }
         }), (0, r.jsx)(u.w, {
-          guildId: b,
+          guildId: x,
           onImport: function(e) {
             v(t => {
               let n = new Set(t.map(e => {
@@ -64,8 +64,8 @@ function b(e) {
           disabled: N
         })]
       }), (0, r.jsx)(l.gNt, {
-        label: x.intl.string(x.t.S2kKzM),
-        description: x.intl.string(x.t["5a4Axc"]),
+        label: b.intl.string(b.t.S2kKzM),
+        description: b.intl.string(b.t["5a4Axc"]),
         disabled: N,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [y && (0, r.jsxs)(r.Fragment, {
@@ -78,8 +78,8 @@ function b(e) {
           }), (0, r.jsx)(m.Z, {})]
         })
       }), (0, r.jsx)(l.gNt, {
-        label: x.intl.string(x.t.RdwKw8),
-        description: x.intl.string(x.t.zAww7e),
+        label: b.intl.string(b.t.RdwKw8),
+        description: b.intl.string(b.t.zAww7e),
         disabled: N,
         children: (0, r.jsx)(f.Z, {})
       }), (0, r.jsx)(p.Z, {})]

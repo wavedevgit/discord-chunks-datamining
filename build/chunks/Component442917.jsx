@@ -312,7 +312,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(j.Z, {
       className: eo.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
@@ -338,7 +338,7 @@ class ef extends Chunk647438.PureComponent {
           compact: true
         })
       })
-    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
+    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
       className: eo.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,

@@ -3,32 +3,32 @@
 require.d(exports, {
   Z: () => u
 });
-var l, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk258253 = require("./258253.js"),
-  c = ((l = c || {})[l.VIEW_MORE = 0] = "VIEW_MORE", l[l.VIEW_LESS = 1] = "VIEW_LESS", l);
+  c = ((i = c || {})[i.VIEW_MORE = 0] = "VIEW_MORE", i[i.VIEW_LESS = 1] = "VIEW_LESS", i);
 
 function u(e) {
   let {
     title: t,
     buttonType: n,
-    onClickViewButton: l
+    onClickViewButton: i
   } = e;
-  return (0, i.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: s.header,
-    children: [(0, i.jsx)(a.Text, {
+    children: [(0, l.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "header-primary",
       children: t
-    }), null != n && null != l && (0, i.jsx)(a.P3F, {
+    }), null != n && null != i && (0, l.jsx)(a.P3F, {
       className: s.viewMore,
-      onClick: l,
+      onClick: i,
       "aria-label": o.intl.formatToPlainString(o.t["bj/2kZ"], {
         title: t
       }),
-      children: (0, i.jsx)(a.Text, {
+      children: (0, l.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-brand",
         children: 0 === n ? o.intl.format(o.t.gVw57u, {}) : o.intl.string(o.t.nPGLFR)

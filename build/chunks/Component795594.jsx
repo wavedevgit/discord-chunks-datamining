@@ -203,7 +203,7 @@ let ef = e => {
     };
     return null != t.terms_of_service_url || null != t.privacy_policy_url ? (0, r.jsxs)("div", {
       className: er.tosPrivacy,
-      children: [null != t.terms_of_service_url ? (0, r.jsxs)(g.eee, {
+      children: [null != t.terms_of_service_url ? (0, r.jsxs)(g.Anchor, {
         onClick: i,
         tabIndex: n ? 0 : false,
         className: er.tos,
@@ -220,7 +220,7 @@ let ef = e => {
         className: er.privacy,
         children: [null != t.terms_of_service_url ? (0, r.jsx)("div", {
           className: er.divider
-        }) : null, (0, r.jsxs)(g.eee, {
+        }) : null, (0, r.jsxs)(g.Anchor, {
           onClick: a,
           className: er.privacy,
           tabIndex: n ? 0 : false,
@@ -253,14 +253,14 @@ let ef = e => {
     }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
     }), L = a.bot, M = (0, p.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
-      appDMChannelMuteConfig: k,
+      appDMChannelMuteConfig: j,
       dmChannelMuted: B
-    } = (0, p.cj)([j.ZP], () => null == M ? {
+    } = (0, p.cj)([k.ZP], () => null == M ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: j.ZP.getChannelMuteConfig(null, M),
-      dmChannelMuted: j.ZP.isChannelMuted(null, M)
+      appDMChannelMuteConfig: k.ZP.getChannelMuteConfig(null, M),
+      dmChannelMuted: k.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [X, Q] = i.useState(false), eo = () => {
       let e = [];
       for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRk));
@@ -300,7 +300,7 @@ let ef = e => {
               onClick: e => {
                 Q(!X), n(e)
               },
-              children: [(0, r.jsx)(g.X6q, {
+              children: [(0, r.jsx)(g.Heading, {
                 variant: "heading-sm/medium",
                 color: "header-primary",
                 children: en.intl.string(en.t.xrmhRU)
@@ -351,7 +351,7 @@ let ef = e => {
             onClick: e => {
               H(!V), t(e)
             },
-            children: [(0, r.jsx)(g.X6q, {
+            children: [(0, r.jsx)(g.Heading, {
               variant: "heading-sm/medium",
               color: "header-primary",
               children: en.intl.string(en.t.fcYgiY)
@@ -383,7 +383,7 @@ let ef = e => {
         className: er.headerV2,
         children: [t, (0, r.jsxs)("div", {
           className: er.headerTextContainerV2,
-          children: [(0, r.jsx)(g.X6q, {
+          children: [(0, r.jsx)(g.Heading, {
             variant: "heading-md/semibold",
             className: o()(er.headerText, ea.marginBottom4),
             children: a.name
@@ -430,7 +430,7 @@ let ef = e => {
       })
     }, [M, L, B, a.id]), eg = () => C.enabled ? (0, r.jsxs)("div", {
       className: er.directMessagesSection,
-      children: [(0, r.jsx)(g.X6q, {
+      children: [(0, r.jsx)(g.Heading, {
         variant: "heading-sm/medium",
         color: "header-primary",
         className: er.dmSettingsHeader,
@@ -439,8 +439,8 @@ let ef = e => {
         gap: 20,
         children: [null != L ? (0, r.jsx)(g.rsf, {
           label: en.intl.string(en.t.NkwaBg),
-          description: (null == k ? true : k.end_time) != null ? en.intl.format(en.t.j7h4AA, {
-            endTime: new Date(k.end_time).toLocaleString(en.intl.currentLocale, {
+          description: (null == j ? true : j.end_time) != null ? en.intl.format(en.t.j7h4AA, {
+            endTime: new Date(j.end_time).toLocaleString(en.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
               hour: "numeric",
@@ -474,7 +474,7 @@ let ef = e => {
         })
       }) : null, (0, r.jsx)("div", {
         className: er.deauthorizeButton,
-        children: (0, r.jsx)(g.zxk, {
+        children: (0, r.jsx)(g.Button, {
           variant: "critical-secondary",
           size: "sm",
           text: en.intl.string(en.t.xUqheH),

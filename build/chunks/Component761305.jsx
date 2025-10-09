@@ -44,7 +44,7 @@ class x extends(r = Chunk647438.PureComponent) {
         body: {
           guild: t
         }
-      } = e, n = (0, d.Jh)(t);
+      } = e, n = (0, d.dangerouslyConstructGuildRecordFromUntypedObject)(t);
       this.setState({
         success: true,
         busy: false,

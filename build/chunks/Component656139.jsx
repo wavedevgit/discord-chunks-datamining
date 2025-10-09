@@ -2,7 +2,7 @@
 /** chunk id: 656139, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => R,
+  SelectFriendsModalScreens: () => R,
   default: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -44,7 +44,7 @@ let C = e => {
       selectedUsers: p
     }), [D, L] = i.useState(false), x = (0, s.O)(e => {
       e && !P && N()
-    }), M = C.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
+    }), M = C.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), j = () => (0, r.jsx)(f.Z, {
       className: A.searchbar,
       size: f.Z.Sizes.MEDIUM,
       tags: [...p.values()].map(e => E.ZP.getName(e)),
@@ -59,7 +59,7 @@ let C = e => {
       },
       onQueryChange: b,
       onClear: () => b("")
-    }), j = e => {
+    }), k = e => {
       let i, {
           eligibleRecipients: a
         } = e,
@@ -68,7 +68,7 @@ let C = e => {
         nTrials: p.size
       }), (0, r.jsx)("div", {
         className: o()(A.footer, A.footerSeparator),
-        children: (0, r.jsx)(u.zxk, {
+        children: (0, r.jsx)(u.Button, {
           variant: "primary",
           disabled: 0 === p.size && !s || D,
           text: i,
@@ -86,7 +86,7 @@ let C = e => {
       } = e;
       returntrue == (I.length > 0 && 0 === t.size) ? (0, r.jsxs)("div", {
         className: A.emptySearchResultsContainer,
-        children: [(0, r.jsx)(u.X6q, {
+        children: [(0, r.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
           children: S.intl.string(S.t["8+ywHB"])
@@ -134,9 +134,9 @@ let C = e => {
       title: S.intl.string(S.t["2dVCLi"]),
       subtitle: S.intl.string(S.t.DXgoi4),
       onClose: t,
-      input: k(),
+      input: j(),
       actions: [],
-      actionBarInput: j({
+      actionBarInput: k({
         eligibleRecipients: M
       }),
       children: U({
@@ -165,7 +165,7 @@ let C = e => {
         nTrials: _.size
       }), (0, r.jsx)("div", {
         className: o()(A.footer, A.footerSeparator),
-        children: (0, r.jsx)(u.zxk, {
+        children: (0, r.jsx)(u.Button, {
           variant: "primary",
           disabled: 0 === _.size || h,
           text: e,

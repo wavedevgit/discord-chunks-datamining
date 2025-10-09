@@ -79,7 +79,7 @@ function w(e) {
     return s()(null != e, "GuildContextMenu: user cannot be undefined"), (0, h.eM)(t, e)
   }, [t]), T = (0, x.Z)({
     guild: t,
-    source: G.t4x.GUILD_CONTEXT_MENU,
+    source: G.InstantInviteSources.GUILD_CONTEXT_MENU,
     channel: I.isGuildEntrypointEnabled ? null : w
   }), R = (0, m.Z)(u), C = (0, P.Z)(t), B = (0, L.Z)(t), Q = (0, A.Z)(t), Y = (0, y.Z)({
     guildId: t.id,

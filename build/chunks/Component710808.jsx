@@ -190,7 +190,7 @@ function x() {
         children: (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.nJnOHB),
@@ -206,14 +206,14 @@ function x() {
           description: Chunk388032.intl.string(Chunk388032.t["/7ak9f"]),
           checked: require,
           onChange: L
-        }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+        }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
-          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t["3UB9aW"]),
             disabled: module,
             onClick: A
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t.nuPtYm),
             onClick: P

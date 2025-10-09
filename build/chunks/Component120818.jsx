@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 120818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => _
@@ -67,7 +67,7 @@ let _ = Chunk647438.memo(function(e) {
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-sm/bold",
           children: g.intl.string(g.t.SnrR39)
         }), (0, r.jsxs)("div", {

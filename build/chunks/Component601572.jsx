@@ -1,7 +1,7 @@
 /** Chunk was on 91018 **/
 /** chunk id: 601572, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,13 +24,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk142768 = require("./142768.js");
 
-function P(e) {
+function O(e) {
   let {
     transitionState: t,
     videoEnabled: a,
-    onEnable: P,
-    onClose: _
-  } = e, k = w.Z.getCameraComponent(), y = p.qF.useSetting(), [j, S] = n.useState((0, g.P)(b.default.getCurrentUser())), x = (0, s.O)(), {
+    onEnable: O,
+    onClose: P
+  } = e, _ = m.Z.getCameraComponent(), y = p.qF.useSetting(), [j, x] = n.useState((0, g.P)(w.default.getCurrentUser())), S = (0, s.O)(), {
     analyticsLocations: A
   } = (0, u.ZP)(d.Z.CAMERA_PREVIEW);
   n.useEffect(() => {
@@ -40,7 +40,7 @@ function P(e) {
   }, []);
   let M = n.useCallback(async () => {
       try {
-        await (0, m.wG)(j, {
+        await (0, b.wG)(j, {
           location: function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var a = null != arguments[t] ? arguments[t] : {},
@@ -60,28 +60,28 @@ function P(e) {
             return e
           }({
             page: C.ZY5.PREVIEW_CAMERA_MODAL
-          }, x.location)
+          }, S.location)
         })
       } catch (e) {}
-      await _(), (0, h.Up)(j)
-    }, [j, x.location, _]),
-    Z = n.useCallback(async () => {
-      await M(), l.Z.setVideoEnabled(true), null == P || P()
-    }, [M, P]),
-    I = n.useMemo(() => [{
+      await P(), (0, h.Up)(j)
+    }, [j, S.location, P]),
+    I = n.useCallback(async () => {
+      await M(), l.Z.setVideoEnabled(true), null == O || O()
+    }, [M, O]),
+    L = n.useMemo(() => [{
       variant: "primary",
-      text: a ? E.intl.string(E.t.KQENho) : E.intl.string(E.t.kgIe9f),
-      onClick: a ? M : Z
-    }], [M, Z, a]);
+      text: a ? k.intl.string(k.t.KQENho) : k.intl.string(k.t.kgIe9f),
+      onClick: a ? M : I
+    }], [M, I, a]);
   return (0, r.jsx)(u.Gt, {
     value: A,
     children: (0, r.jsx)(o.Z, {
       page: C.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, r.jsx)(i.Modal, {
         size: "md",
-        title: a ? E.intl.string(E.t.LAwwbW) : E.intl.string(E.t["/HITVF"]),
-        actionBarInput: (0, r.jsx)(c.XZJ, {
-          label: E.intl.string(E.t["3Ppr1t"]),
+        title: a ? k.intl.string(k.t.LAwwbW) : k.intl.string(k.t["/HITVF"]),
+        actionBarInput: (0, r.jsx)(c.Checkbox, {
+          label: k.intl.string(k.t["3Ppr1t"]),
           labelType: "secondary",
           checked: y,
           onChange: () => {
@@ -90,8 +90,8 @@ function P(e) {
             })
           }
         }),
-        actions: I,
-        onClose: _,
+        actions: L,
+        onClose: P,
         transitionState: t,
         children: (0, r.jsx)(v.Z, {
           hidePreviewToggle: true,
@@ -99,13 +99,13 @@ function P(e) {
           hideDeviceHeader: true,
           hideCameraSettingsLink: true,
           selectedBackgroundOption: j,
-          onSelectBackgroundOption: S,
+          onSelectBackgroundOption: x,
           hideDeviceSelector: a,
           renderCamera: e => (0, r.jsxs)("div", {
-            className: O.cameraPreview,
+            className: E.cameraPreview,
             children: [(0, r.jsx)("div", {
-              className: O.camera,
-              children: (0, r.jsx)(k, {
+              className: E.camera,
+              children: (0, r.jsx)(_, {
                 disabled: false,
                 deviceId: e,
                 width: 430,
@@ -113,7 +113,7 @@ function P(e) {
               })
             }), (0, r.jsx)(v.S, {})]
           }),
-          onLearnMore: _
+          onLearnMore: P
         })
       })
     })

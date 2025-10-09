@@ -83,8 +83,8 @@ let k = "WELCOME_CHANNEL",
       O = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
       y = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       I = null != O && S.Uu(w.Plq.VIEW_CHANNEL, O),
-      T = null != (t = (0, b.KS)(O)) ? t : g.VL1,
-      P = (0, x.ZP)(O, false),
+      T = null != (t = (0, x.KS)(O)) ? t : g.VL1,
+      P = (0, b.ZP)(O, false),
       G = () => {
         (0, g.ZDy)(async () => {
           let {
@@ -185,7 +185,7 @@ let k = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: a
-    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), s = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [x, b] = i.useState(false), {
+    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), s = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
@@ -196,7 +196,7 @@ let k = "WELCOME_CHANNEL",
     }, k = e => {
       null != t && e !== a.enabled && ((0, O.Es)(t.id, {
         enabled: e
-      }), b(!s), p(true))
+      }), x(!s), p(true))
     }, M = (e, t, n) => {
       if (null == N) return;
       let r = N.indexOf(e),
@@ -228,7 +228,7 @@ let k = "WELCOME_CHANNEL",
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
     return null == t ? null : (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(g.X6q, {
+      children: [(0, r.jsx)(g.Heading, {
         variant: "heading-lg/semibold",
         children: R.intl.string(R.t["2rkmDg"])
       }), (0, r.jsx)("div", {
@@ -263,7 +263,7 @@ let k = "WELCOME_CHANNEL",
         onToggle: S || (null == N ? true : N.length) !== 0 ? () => {
           k(!S)
         } : true,
-        animateStatus: x,
+        animateStatus: b,
         firstLine: S ? R.intl.string(R.t.JbB7Qk) : R.intl.string(R.t["/bd0Qk"]),
         secondLine: S ? R.intl.string(R.t["TA1g7+"]) : R.intl.string(R.t.nc6r1N)
       }), (0, r.jsxs)("div", {
@@ -276,7 +276,7 @@ let k = "WELCOME_CHANNEL",
             guild: t,
             animate: true,
             tabIndex: false
-          }), (0, r.jsx)(g.X6q, {
+          }), (0, r.jsx)(g.Heading, {
             className: D.welcomeTitle,
             variant: "heading-xl/semibold",
             children: R.intl.format(R.t["0aydCA"], {

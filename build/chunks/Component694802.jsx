@@ -25,7 +25,7 @@ function l(e) {
         className: i.icon,
         width: 16,
         height: 16
-      }), (0, r.jsx)(s.X6q, {
+      }), (0, r.jsx)(s.Heading, {
         color: "text-default",
         variant: "heading-sm/medium",
         children: t
@@ -41,14 +41,14 @@ function l(e) {
 let c = function(e) {
   let {
     quest: t
-  } = e, n = (0, o.qb)(t);
+  } = e, n = (0, a.qb)(t);
   if (0 === n.length) return null;
   let s = n.at(0);
-  return s === a.intl.string(a.t.BV6xDg) ? (0, r.jsx)(l, {
-    header: a.intl.string(a.t.onh6cn),
-    children: a.intl.string(a.t.arVHRE)
-  }) : s === a.intl.string(a.t.MFGxFB) ? (0, r.jsx)(l, {
-    header: a.intl.string(a.t.JPihZG),
-    children: a.intl.string(a.t.MFGxFB)
+  return s === o.intl.string(o.t.BV6xDg) ? (0, r.jsx)(l, {
+    header: o.intl.string(o.t.onh6cn),
+    children: o.intl.string(o.t.arVHRE)
+  }) : s === o.intl.string(o.t.MFGxFB) ? (0, r.jsx)(l, {
+    header: o.intl.string(o.t.JPihZG),
+    children: o.intl.string(o.t.MFGxFB)
   }) : null
 }

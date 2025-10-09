@@ -91,12 +91,12 @@ i.prototype.parse = function(e, t, n) {
       for (var w = this.hostname.split(/\./), N = 0, D = w.length; N < D; N++) {
         var L = w[N];
         if (L && !L.match(f)) {
-          for (var x = "", M = 0, k = L.length; M < k; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
+          for (var x = "", M = 0, j = L.length; M < j; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
           if (!x.match(f)) {
-            var j = w.slice(0, N),
+            var k = w.slice(0, N),
               U = w.slice(N + 1),
               G = L.match(_);
-            G && (j.push(G[1]), U.unshift(G[2])), U.length && (y = "/" + U.join(".") + y), this.hostname = j.join(".");
+            G && (k.push(G[1]), U.unshift(G[2])), U.length && (y = "/" + U.join(".") + y), this.hostname = k.join(".");
             break
           }
         }

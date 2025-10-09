@@ -33,18 +33,18 @@ function v(e) {
     className: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(b.label, l),
+    className: a()(x.label, l),
     children: [t, (0, r.jsxs)("div", {
-      className: b.labelText,
+      className: x.labelText,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "none",
-        className: b.labelTitle,
+        className: x.labelTitle,
         children: n
       }), null != i && "" !== i ? (0, r.jsx)(o.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        className: b.labelSubtitle,
+        className: x.labelSubtitle,
         children: i
       }) : null]
     })]
@@ -74,7 +74,7 @@ function C(e) {
     o = null != l ? (0, c.F6)(l, p.default, m.Z) : true;
   return (0, r.jsx)(v, {
     icon: null != a && (0, r.jsx)(a, {
-      className: b.labelIcon
+      className: x.labelIcon
     }),
     title: s,
     subtitle: o
@@ -96,10 +96,10 @@ function y(e) {
     guildId: l,
     value: a,
     initialChannelId: d,
-    omitChannelIds: b,
+    omitChannelIds: x,
     "aria-labelledby": v,
     onChange: _
-  } = e, C = x.intl.string(x.t.d7YJMD), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
+  } = e, C = b.intl.string(b.t.d7YJMD), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
     let e = [{
         value: null,
         label: C
@@ -109,7 +109,7 @@ function y(e) {
       for (let {
           channel: r
         }
-        of y[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== a && (null == b ? true : b.has(r.id)) && (r.id !== d || a === d) || (a === r.id && (t = true), e.push({
+        of y[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== a && (null == x ? true : x.has(r.id)) && (r.id !== d || a === d) || (a === r.id && (t = true), e.push({
         value: r.id,
         label: (0, c.F6)(r, p.default, m.Z)
       })));
@@ -117,10 +117,10 @@ function y(e) {
       value: a,
       label: N.name
     }), e
-  }, [C, a, N, y, b, d]);
+  }, [C, a, N, y, x, d]);
   return (0, r.jsx)(o.PhF, {
     label: t,
-    placeholder: x.intl.string(x.t.r2pts7),
+    placeholder: b.intl.string(b.t.r2pts7),
     options: E,
     select: function(e) {
       null == e ? (0, o.ZDy)(async () => {

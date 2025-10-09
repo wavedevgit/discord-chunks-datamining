@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 511821, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  jM: () => E
+  jM: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk397263 = require("./397263.js");
-let E = {
+let k = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, i.jsx)(Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -62,31 +62,31 @@ function M(e) {
   let {
     onStepChange: t,
     onBackClick: n,
-    showBackButton: l = false,
-    disabled: a = false,
+    showBackButton: a = false,
+    disabled: l = false,
     loading: s = false
   } = e, {
     hasPaymentSources: o
   } = (0, g.JL)(), d = o ? f.h8.REVIEW : f.h8.ADD_PAYMENT_STEPS;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(r.zxk, {
+    children: [(0, i.jsx)(r.Button, {
       onClick: () => t(d),
-      disabled: a,
+      disabled: l,
       loading: s,
       text: O.intl.string(O.t.XiOHRU)
-    }), l ? (0, i.jsx)(x.Z, {
+    }), a ? (0, i.jsx)(h.Z, {
       onClick: n
     }) : null]
   })
 }
 
 function Z(e) {
-  var t, n, f, x, h;
+  var t, n, f, h, x;
   let {
     handleStepChange: y,
     handleClose: N
   } = e, {
-    customGiftMessage: E = "",
+    customGiftMessage: k = "",
     setCustomGiftMessage: Z,
     giftRecipient: A,
     emojiConfetti: B,
@@ -96,31 +96,31 @@ function Z(e) {
   } = (0, u.wD)(), {
     selectedSkuId: D,
     application: U
-  } = (0, g.JL)(), F = (0, a.e7)([j.default], () => j.default.getCurrentUser()), H = (0, a.e7)([_.Z], () => null != D ? _.Z.get(D) : null, [D]), J = null == U ? true : U.guildId, z = (0, a.e7)([b.Z], () => null != J ? b.Z.getGuild(J) : null, [J]);
-  l.useEffect(() => {
+  } = (0, g.JL)(), F = (0, l.e7)([j.default], () => j.default.getCurrentUser()), H = (0, l.e7)([_.Z], () => null != D ? _.Z.get(D) : null, [D]), J = null == U ? true : U.guildId, z = (0, l.e7)([b.Z], () => null != J ? b.Z.getGuild(J) : null, [J]);
+  a.useEffect(() => {
     null == z && null != H && s.ZP.fetchApplication(H.applicationId, true)
   }, [z, H]);
   let K = (null == H || null == (n = H.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) != null && (null == H ? true : H.applicationId) != null ? w.Z.toURLSafe((0, P._W)(H.applicationId, H.tenantMetadata.socialLayer.cardImageAssetId, 512, "png")) : true,
-    V = (null == H || null == (x = H.tenantMetadata) || null == (f = x.socialLayer) ? true : f.cardBackgroundImageAssetId) != null && (null == H ? true : H.applicationId) != null ? w.Z.toURLSafe((0, P._W)(H.applicationId, H.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png")) : true,
-    X = async (e, t) => {};
+    V = (null == H || null == (h = H.tenantMetadata) || null == (f = h.socialLayer) ? true : f.cardBackgroundImageAssetId) != null && (null == H ? true : H.applicationId) != null ? w.Z.toURLSafe((0, P._W)(H.applicationId, H.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png")) : true,
+    Y = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.C3, {
       children: (0, i.jsxs)("div", {
-        className: k.stepBody,
+        className: E.stepBody,
         children: [(0, i.jsxs)("div", {
-          className: k.bodyColumnLeft,
+          className: E.bodyColumnLeft,
           children: [null != K && (0, i.jsx)("div", {
-            className: k.cardContainer,
+            className: E.cardContainer,
             style: null != V ? {
               backgroundImage: "url(".concat(V.toString(), ")")
             } : true,
             children: (0, i.jsx)("img", {
               src: K.toString(),
-              alt: null != (h = null == H ? true : H.name) ? h : "",
-              className: k.skuImage
+              alt: null != (x = null == H ? true : H.name) ? x : "",
+              className: E.skuImage
             })
           }), (0, i.jsxs)("div", {
-            className: k.giftEffectsContainer,
+            className: E.giftEffectsContainer,
             children: [(0, i.jsx)(C.Z, {
               sound: L,
               onSelect: e => {
@@ -132,47 +132,47 @@ function Z(e) {
             })]
           })]
         }), (0, i.jsxs)("div", {
-          className: k.bodyColumnRight,
+          className: E.bodyColumnRight,
           children: [(0, i.jsx)(o.Z, {
             selectedSkuId: D,
-            validateSelectedGift: X,
-            searchableSelectWrapperClassName: k.recipientPickerSelectWrapper
+            validateSelectedGift: Y,
+            searchableSelectWrapperClassName: E.recipientPickerSelectWrapper
           }), (0, i.jsx)(p.Z, {
             sectionTitle: O.intl.string(O.t.B3miEx),
             onTextChange: e => null == Z ? true : Z(e),
-            pendingText: E,
-            currentText: E,
+            pendingText: k,
+            currentText: k,
             disableThemedBackground: true,
-            className: k.customGiftMessageWrapper,
-            innerClassName: k.customGiftMessage
+            className: E.customGiftMessageWrapper,
+            innerClassName: E.customGiftMessage
           }), (() => {
-            var e, t, n, l;
+            var e, t, n, a;
             if (null == H) return null;
-            let a = (0, I.T4)(null != (n = null == (e = H.price) ? true : e.amount) ? n : 0, null != (l = null == (t = H.price) ? true : t.currency) ? l : S.pK.USD);
+            let l = (0, I.T4)(null != (n = null == (e = H.price) ? true : e.amount) ? n : 0, null != (a = null == (t = H.price) ? true : t.currency) ? a : S.pK.USD);
             return (0, i.jsxs)("div", {
-              className: k.giftPreviewContainer,
+              className: E.giftPreviewContainer,
               children: [(0, i.jsx)(r.vwX, {
-                className: k.giftPreviewTitle,
+                className: E.giftPreviewTitle,
                 children: O.intl.string(O.t.PpoJzs)
               }), (0, i.jsxs)("div", {
-                className: k.giftPreviewContent,
+                className: E.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
-                  className: k.giftPreviewImageContainer,
+                  className: E.giftPreviewImageContainer,
                   children: null != K && (0, i.jsx)("div", {
-                    className: k.giftPreviewCardContainer,
+                    className: E.giftPreviewCardContainer,
                     style: null != V ? {
                       backgroundImage: "url(".concat(V.toString(), ")")
                     } : true,
                     children: (0, i.jsx)("img", {
                       src: K.toString(),
                       alt: H.name,
-                      className: k.giftPreviewImage
+                      className: E.giftPreviewImage
                     })
                   })
                 }), (0, i.jsxs)("div", {
-                  className: k.giftPreviewTextContainer,
+                  className: E.giftPreviewTextContainer,
                   children: [null != z && (0, i.jsxs)("div", {
-                    className: k.guildNameContainer,
+                    className: E.guildNameContainer,
                     children: [(0, i.jsx)(c.Z, {
                       guild: z,
                       size: c.Z.Sizes.MINI,
@@ -189,7 +189,7 @@ function Z(e) {
                   })]
                 }), (0, i.jsx)(r.Text, {
                   variant: "text-md/semibold",
-                  children: a
+                  children: l
                 })]
               })]
             })
@@ -205,11 +205,11 @@ function Z(e) {
         "data-migration-pending": true,
         justify: d.Z.Justify.BETWEEN,
         align: d.Z.Align.CENTER,
-        className: k.footer,
+        className: E.footer,
         children: (0, i.jsx)(M, {
           onStepChange: y,
           onBackClick: N,
-          disabled: null == A || A.id === (null == F ? true : F.id) || E.length > T.$n
+          disabled: null == A || A.id === (null == F ? true : F.id) || k.length > T.$n
         })
       })
     })]
@@ -222,11 +222,11 @@ function G(e) {
     guild: n
   } = e;
   return (0, i.jsx)("div", {
-    className: k.viewItemButton,
+    className: E.viewItemButton,
     children: (0, i.jsx)(r.Avr, {
       text: O.intl.string(O.t.ImioFB),
       onClick: function() {
-        t(), (0, r.pTH)(), (0, h.uL)(y.Z5c.CHANNEL(n.id, N.oC.GUILD_SHOP))
+        t(), (0, r.pTH)(), (0, x.uL)(y.Z5c.CHANNEL(n.id, N.oC.GUILD_SHOP))
       },
       textVariant: "text-sm/medium",
       lineClamp: true

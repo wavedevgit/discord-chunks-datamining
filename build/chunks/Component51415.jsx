@@ -27,7 +27,7 @@ let u = function() {
         marginBottom: "8px"
       },
       children: "Click the button below to clear your Minor Reward Capping History."
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       onClick: () => {
         (0, Chunk272008.it)(), (0, Chunk703656.uL)(module ? Chunk981631.Z5c.QUEST_HOME_V2 : Chunk981631.Z5c.QUEST_HOME)
       },

@@ -46,7 +46,7 @@ function g(e) {
           width: 48,
           height: 48
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/bold",
             children: n.summary
           }), (0, r.jsx)(c.Text, {

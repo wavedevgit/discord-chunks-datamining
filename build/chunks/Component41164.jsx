@@ -19,7 +19,7 @@ let m = e => {
     onClose: n,
     classificationId: m,
     source: p
-  } = e, f = (0, s.Z)(), h = () => {
+  } = e, f = (0, r.Z)(), h = () => {
     n(), (0, o.openUserSettings)(l.n.ACCOUNT_PANEL, {
       section: c.oAB.ACCOUNT,
       subsection: d.s6.PRIVACY_AND_SAFETY_STANDING
@@ -40,7 +40,7 @@ let m = e => {
     }), (0, i.jsx)(a.hzk, {
       "data-migration-pending": true,
       className: u.modalContent,
-      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(r.Z, {
+      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(s.Z, {
         classificationId: m,
         source: p,
         onError: h,

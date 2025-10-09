@@ -146,7 +146,7 @@ function _() {
           options: j,
           select: Chunk120356,
           popoutLayerContext: Chunk246992.O$
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Grant Fractional Nitro",
           onClick: () => E(require)

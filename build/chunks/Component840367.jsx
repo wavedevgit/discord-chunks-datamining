@@ -25,7 +25,7 @@ function s(e) {
     className: c.headerRow,
     children: [(0, n.jsxs)("div", {
       className: c.title,
-      children: [(0, n.jsx)(a.X6q, {
+      children: [(0, n.jsx)(a.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         id: r,

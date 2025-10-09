@@ -333,12 +333,12 @@ function M(e, t, n, i) {
     rx: n.stroke
   })
 }
-let k = {
+let j = {
   FireIcon: "M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"
 };
 
-function j(e, t, n, i) {
-  let a = k[i];
+function k(e, t, n, i) {
+  let a = j[i];
   if (null != a) {
     let i = n / 20;
     return (0, r.jsx)("g", {
@@ -387,7 +387,7 @@ function U(e, t, n, i) {
       rx: u.avatarCutoutRadius,
       ry: u.avatarCutoutRadius,
       fill: "black"
-    }), null != i && j(l, c, t.status, i)]
+    }), null != i && k(l, c, t.status, i)]
   })
 }
 
@@ -582,12 +582,12 @@ function H(e) {
     cutoutIconName: P,
     avatarTooltipText: w,
     avatarTooltipTitle: x
-  } = e, k = n !== m.Skl.UNKNOWN ? n : null, j = (0, E.UC)(a), Z = null != k ? Math.ceil((j.status * E.D6 - j.status) / 2) : 0, H = j.size + Z, Y = (0, d.vj)(k, s), W = i.useId();
+  } = e, j = n !== m.Skl.UNKNOWN ? n : null, k = (0, E.UC)(a), Z = null != j ? Math.ceil((k.status * E.D6 - k.status) / 2) : 0, H = k.size + Z, Y = (0, d.vj)(j, s), W = i.useId();
   return (0, r.jsx)(F, T(v({}, e), {
     ariaLabel: A,
     ariaHidden: S,
-    status: k,
-    specs: j,
+    status: j,
+    specs: k,
     typingOffset: Z,
     children: (0, r.jsxs)("svg", {
       ref: N,
@@ -596,42 +596,42 @@ function H(e) {
       viewBox: "0 0 ".concat(H, " ").concat(H),
       className: o()(y.mask, y.svg),
       "aria-hidden": true,
-      children: [null != P && U(W, j, {
-        status: k,
+      children: [null != P && U(W, k, {
+        status: j,
         isMobile: l,
         isTyping: c
       }, P), (0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
-        width: j.size,
-        height: j.size,
-        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(D(k, a, l, c), ")"),
+        width: k.size,
+        height: k.size,
+        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(D(j, a, l, c), ")"),
         children: (0, r.jsx)(V, {
           ref: p,
           src: t,
           isSpeaking: g,
           className: C
         })
-      }), null != k && null != I ? M(I, l, j, k) : null, null != k ? (0, r.jsx)(f.u, {
+      }), null != j && null != I ? M(I, l, k, j) : null, null != j ? (0, r.jsx)(f.u, {
         "data-migration-pending": true,
-        text: b ? (0, h.u5)(k) : null,
+        text: b ? (0, h.u5)(j) : null,
         "aria-label": false,
         position: "top",
-        spacing: 5 + 1.5 * j.stroke,
+        spacing: 5 + 1.5 * k.stroke,
         delay: O,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", T(v({}, e, L(j, k, l, c)), {
+          children: [(0, r.jsx)("rect", T(v({}, e, L(k, j, l, c)), {
             fill: Y,
-            mask: "url(#".concat((0, d.rs)(k, l, c), ")"),
+            mask: "url(#".concat((0, d.rs)(j, l, c), ")"),
             className: y.pointerEvents
           })), c ? (0, r.jsx)(u.b, {
             ref: _,
-            dotRadius: j.status / 4,
-            x: j.size - 1.375 * j.status - j.offset,
-            y: j.size - j.status / 1.333 - j.offset
+            dotRadius: k.status / 4,
+            x: k.size - 1.375 * k.status - k.offset,
+            y: k.size - k.status / 1.333 - k.offset
           }) : null]
         })
-      }) : null, null != R && G(j, R), null != x && B(j, l, c, {
+      }) : null, null != R && G(k, R), null != x && B(k, l, c, {
         avatarTooltipTitle: x,
         avatarTooltipText: w
       })]
@@ -674,7 +674,7 @@ function K(e) {
     "aria-hidden": D = false,
     "aria-label": L,
     imageClassName: x,
-    pulseStatusIcon: k,
+    pulseStatusIcon: j,
     CutoutIcon: U,
     cutoutIconName: H,
     avatarTooltipText: K,
@@ -713,14 +713,14 @@ function K(e) {
     from: {
       scale: 1
     },
-    to: k ? [{
+    to: j ? [{
       scale: .8
     }, {
       scale: 1.1
     }, {
       scale: 1
     }] : []
-  }, N() ? "animate-always" : "animate-never", [k, O]);
+  }, N() ? "animate-always" : "animate-never", [j, O]);
   return (0, r.jsx)(F, T(v({}, e), {
     ariaLabel: L,
     ariaHidden: D,
@@ -749,7 +749,7 @@ function K(e) {
           height: ei,
           rx: ea,
           ry: ea
-        }), null != H && j(ec.size - ec.status - ec.offset, ec.offset, ec.status, H)]
+        }), null != H && k(ec.size - ec.status - ec.offset, ec.offset, ec.status, H)]
       }), (0, r.jsx)("foreignObject", {
         className: y.__invalid_foreignObject,
         x: 0,

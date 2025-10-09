@@ -47,10 +47,10 @@ let S = function(e) {
     var e;
     let t = D.current;
     null != t && t.paused && (t.currentTime = M.current, null == (e = D.current) || e.play())
-  })), A = a.useCallback(() => {
+  })), H = a.useCallback(() => {
     let e = D.current;
     null != e && (e.pause(), e.src = "")
-  }, []), H = a.useCallback(() => {
+  }, []), A = a.useCallback(() => {
     var e;
     S(true), null == (e = R.current) || e.delay()
   }, []), z = a.useCallback(() => {
@@ -77,8 +77,8 @@ let S = function(e) {
         [I.disabled]: u
       }),
       onBlur: B,
-      onFocus: H,
-      onMouseOver: H,
+      onFocus: A,
+      onMouseOver: A,
       onMouseLeave: z,
       children: [(0, l.jsx)(k, {
         clip: o,
@@ -89,7 +89,7 @@ let S = function(e) {
         children: [(0, l.jsx)(Z, {
           clip: o,
           focused: N,
-          onFocus: H
+          onFocus: A
         }), (0, l.jsx)(b.Text, {
           className: I.clipMetadata,
           color: "text-default",
@@ -109,14 +109,14 @@ let S = function(e) {
               var t, n, l, a;
               let r = e.relatedTarget,
                 i = null == (n = e.currentTarget.parentElement) || null == (t = n.parentElement) ? true : t.parentElement;
-              (null == r ? true : r.parentElement) !== i && (null == r || null == (a = r.parentElement) || null == (l = a.parentElement) ? true : l.parentElement) !== i && H()
+              (null == r ? true : r.parentElement) !== i && (null == r || null == (a = r.parentElement) || null == (l = a.parentElement) ? true : l.parentElement) !== i && A()
             },
             "aria-label": E.intl.string(E.t.WTozwc)
           }), N && (0, l.jsx)(L, {
             clip: o,
             actionsDisabled: u,
             exporting: s,
-            onBeforeDelete: A,
+            onBeforeDelete: H,
             onDelete: f,
             onEdit: g,
             onShare: j,
@@ -211,12 +211,12 @@ function Z(e) {
     onClick: e => {
       e.stopPropagation(), d(true)
     },
-    children: [c ? (0, l.jsx)(b.X6q, {
+    children: [c ? (0, l.jsx)(b.Heading, {
       className: I.clipTitle,
       color: "text-muted",
       variant: "heading-lg/medium",
       children: E.intl.string(E.t["x+/nmJ"])
-    }) : (0, l.jsx)(b.X6q, {
+    }) : (0, l.jsx)(b.Heading, {
       className: I.clipTitle,
       color: "text-default",
       variant: "heading-lg/medium",

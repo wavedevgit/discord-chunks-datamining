@@ -74,7 +74,7 @@ function O() {
       verification_types: O
     }
   }, {}, [O.toString()]);
-  let k = () => {
+  let w = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -100,7 +100,7 @@ function O() {
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: k
+      onCloseCallback: w
     })
   }, [O, I]), (0, Chunk951288.jsx)(Chunk762756.Z, {
     types: O,
@@ -119,7 +119,7 @@ function O() {
     },
     theme: exports,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? k() : (0, o.ZDy)(async () => {
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));

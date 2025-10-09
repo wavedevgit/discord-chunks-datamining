@@ -29,7 +29,7 @@ function E(e) {
   } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? m : g;
   return (0, r.jsxs)("div", {
     className: a()(h.container, t),
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       className: h.header,
       variant: "heading-xl/semibold",
       children: p.intl.string(p.t.vwMEHR)

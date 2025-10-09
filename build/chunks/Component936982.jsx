@@ -20,7 +20,7 @@ let f = () => {
     Chunk457330.Z.fetch()
   }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 16,
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t["Ig/XFR"])

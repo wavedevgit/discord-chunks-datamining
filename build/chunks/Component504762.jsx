@@ -20,7 +20,7 @@ function s() {
         alt: Chunk388032.intl.string(Chunk388032.t.MvLOqq)
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 12
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk926440.header,
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.t18lFh)

@@ -12,20 +12,20 @@ let i = function(e) {
     onDesktop: t,
     onConsole: n
   } = e;
-  return (0, r.jsxs)(s.hE2, {
+  return (0, r.jsxs)(s.ButtonGroup, {
     direction: "vertical",
     fullWidth: true,
-    className: a.buttonGroup,
+    className: o.buttonGroup,
     size: "sm",
-    children: [(0, r.jsx)(s.zxk, {
+    children: [(0, r.jsx)(s.Button, {
       onClick: t,
-      text: o.intl.string(o.t.QXc019),
+      text: a.intl.string(a.t.QXc019),
       variant: "secondary",
       icon: s.pzj,
       iconPosition: "end"
-    }), (0, r.jsx)(s.zxk, {
+    }), (0, r.jsx)(s.Button, {
       onClick: n,
-      text: o.intl.string(o.t["8lAfuL"]),
+      text: a.intl.string(a.t["8lAfuL"]),
       variant: "secondary",
       icon: s.iWm,
       iconPosition: "end"

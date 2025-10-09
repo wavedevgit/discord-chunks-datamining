@@ -126,7 +126,7 @@ let y = function(e) {
             children: [(0, a.jsxs)(i.Kqy, {
               direction: "vertical",
               gap: 4,
-              children: [(0, a.jsx)(i.X6q, {
+              children: [(0, a.jsx)(i.Heading, {
                 variant: "heading-xl/semibold",
                 children: g.intl.string(g.t.c6kn6O)
               }), (0, a.jsx)(i.Text, {
@@ -138,14 +138,14 @@ let y = function(e) {
               direction: "horizontal",
               justify: "center",
               align: "center",
-              children: [(0, a.jsx)(i.zxk, {
+              children: [(0, a.jsx)(i.Button, {
                 fullWidth: true,
                 variant: "secondary",
                 text: g.intl.string(g.t["2jxGen"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
-              }), (0, a.jsx)(i.zxk, {
+              }), (0, a.jsx)(i.Button, {
                 fullWidth: true,
                 text: g.intl.string(g.t["7NqTJi"]),
                 onClick: () => {

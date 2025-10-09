@@ -71,7 +71,7 @@ function g() {
   }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk872058.headingWrapper,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/medium",
         children: Chunk388032.intl.string(Chunk388032.t.giYD09)
       }), (0, Chunk951288.jsxs)("div", {

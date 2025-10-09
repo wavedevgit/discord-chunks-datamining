@@ -38,10 +38,10 @@ var Chunk951288 = require("./951288.js"),
 function M(e) {
   let {
     channel: t
-  } = e, [n, l] = r.useState(false), o = (0, f.ZP)(t, true), M = t.guild_id, R = (0, u.e7)([v.Z], () => null != M ? v.Z.getSortedRoles(M) : true), k = (0, u.e7)([j.default, x.Z], () => {
+  } = e, [n, l] = r.useState(false), o = (0, f.ZP)(t, true), M = t.guild_id, R = (0, u.e7)([v.Z], () => null != M ? v.Z.getSortedRoles(M) : true), L = (0, u.e7)([j.default, x.Z], () => {
     var e;
     return j.default.getUser(null == (e = x.Z.getGuild(M)) ? true : e.ownerId)
-  }), L = r.useMemo(() => null != R ? R.filter(e => !(0, _.fI)(e)) : [], [R]), D = r.useMemo(() => s()(L).filter(e => {
+  }), D = r.useMemo(() => null != R ? R.filter(e => !(0, _.fI)(e)) : [], [R]), k = r.useMemo(() => s()(D).filter(e => {
     if (null == M) returnfalse;
     let n = E.I0({
       forceRoles: {
@@ -50,9 +50,9 @@ function M(e) {
       context: t
     });
     return c.Db(n, c.$e(T.Plq.ADMINISTRATOR, T.Plq.VIEW_CHANNEL))
-  }).value(), [t, M, L]), U = (0, u.Wu)([j.default], () => {
+  }).value(), [t, M, D]), U = (0, u.Wu)([j.default], () => {
     let e = {};
-    for (let n of (null != k && (e[k.id] = k), Object.values(t.permissionOverwrites))) {
+    for (let n of (null != L && (e[L.id] = L), Object.values(t.permissionOverwrites))) {
       if (n.type !== h.BN.MEMBER || null != e[n.id]) continue;
       let t = j.default.getUser(n.id);
       null != t && (e[t.id] = t)
@@ -68,7 +68,7 @@ function M(e) {
         l = c.e$(r.allow, T.Plq.VIEW_CHANNEL);
       return i || l
     }).value()
-  }, [t, k]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), H = r.useCallback(() => l(false), []);
+  }, [t, L]), B = O.Z.can(T.Plq.MANAGE_CHANNELS, t) || O.Z.can(T.Plq.MANAGE_ROLES, t), H = r.useCallback(() => l(false), []);
   return (0, i.jsxs)(I.ZP, {
     channelId: t.id,
     children: [(0, i.jsx)(I.Kq, {
@@ -108,7 +108,7 @@ function M(e) {
     }) : null, (0, i.jsxs)("div", {
       className: A.members,
       children: [function() {
-        if (1 !== U.length || D.length > 0) return (0, i.jsx)(Z.Z, {
+        if (1 !== U.length || k.length > 0) return (0, i.jsx)(Z.Z, {
           guildId: t.guild_id,
           className: A.avatars,
           maxUsers: 5,
@@ -134,13 +134,13 @@ function M(e) {
             children: N.intl.string(N.t.rt0ERU)
           })]
         })
-      }(), D.map((e, n) => {
+      }(), k.map((e, n) => {
         var r, l;
         let o = null != (l = e.colorString) ? l : T.Pbq,
           s = (null == (r = e.tags) ? true : r.guild_connections) !== true;
         return B ? (0, i.jsx)(g.Z, {
           className: a()(A.role, {
-            [A.last]: n === D.length - 1
+            [A.last]: n === k.length - 1
           }),
           roleName: e.name,
           roleColor: o,
@@ -151,7 +151,7 @@ function M(e) {
           }
         }, e.id) : (0, i.jsx)(b.Z, {
           className: a()(A.role, {
-            [A.last]: n === D.length - 1
+            [A.last]: n === k.length - 1
           }),
           roleName: e.name,
           roleColor: o,

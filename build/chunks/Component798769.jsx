@@ -49,7 +49,7 @@ function h(e) {
     className: p.modalHeaderCustomGift,
     separator: false,
     "data-migration-pending": true,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       children: C()
     }), (0, r.jsx)(a.olH, {

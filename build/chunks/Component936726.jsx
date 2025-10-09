@@ -1,7 +1,7 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,7 +58,7 @@ function S(e, t) {
   }), e
 }
 
-function w(e, t) {
+function P(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -66,19 +66,19 @@ function w(e, t) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: h,
-    isExpanded: P,
+    isExpanded: w,
     isNew: I,
     errors: E,
     onToggleExpand: T
   } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => w(n, n.avatar), [n]),
+  let D = r.useMemo(() => P(n, n.avatar), [n]),
     R = r.useCallback(() => {
       let e = "".concat((0, o.K0)(false)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -118,7 +118,7 @@ function P(e) {
     text: _.intl.formatToPlainString(_.t["7EcUbm"], {
       user: (e => {
         if (null == e) return null;
-        let t = new g.Z(e);
+        let t = new g.default(e);
         return v.ZP.getUserTag(t)
       })(n.user),
       timestamp: j.default.extractTimestamp(n.id)
@@ -129,8 +129,8 @@ function P(e) {
       timestamp: j.default.extractTimestamp(n.id)
     })
   });
-  let U = null;
-  return P && null != l && (U = (0, i.jsxs)("div", {
+  let B = null;
+  return w && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
@@ -148,7 +148,7 @@ function P(e) {
                 avatar: e
               })
             },
-            makeURL: e => w(n, e),
+            makeURL: e => P(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
           }), null != E.avatar && "" !== E.avatar ? (0, i.jsx)(c.Text, {
@@ -224,7 +224,7 @@ function P(e) {
               return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": true,
                 className: C.copyButton,
-                children: (0, i.jsx)(c.zxk, S(N({
+                children: (0, i.jsx)(c.Button, S(N({
                   variant: "secondary",
                   size: "sm",
                   text: _.intl.string(_.t.Ae9rUV)
@@ -237,7 +237,7 @@ function P(e) {
                 }))
               })
             }
-          }), (0, i.jsx)(c.zxk, {
+          }), (0, i.jsx)(c.Button, {
             variant: "critical-secondary",
             size: "sm",
             text: _.intl.string(_.t.jVrUnJ),
@@ -254,7 +254,7 @@ function P(e) {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": P,
+        "aria-expanded": w,
         onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
@@ -264,11 +264,11 @@ function P(e) {
             details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: P,
+            expanded: w,
             "aria-hidden": true
           })]
         })
-      }), U]
+      }), B]
     })
   })
 }

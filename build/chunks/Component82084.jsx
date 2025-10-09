@@ -21,8 +21,8 @@ function b(e) {
       target: p,
       onPanelChange: j,
       sidebarHeader: v,
-      sidebarFooter: x,
-      emptyState: y
+      sidebarFooter: y,
+      emptyState: x
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -79,8 +79,8 @@ function b(e) {
         target: p,
         onPanelChange: j,
         sidebarHeader: v,
-        emptyState: y,
-        sidebarFooter: x
+        emptyState: x,
+        sidebarFooter: y
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

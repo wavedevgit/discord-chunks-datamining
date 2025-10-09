@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -165,7 +165,7 @@ function V(e) {
               })
             }), P]
           }) : (0, r.jsx)(g.Z, {
-            children: (0, r.jsx)(u.X6q, {
+            children: (0, r.jsx)(u.Heading, {
               variant: "text-md/semibold",
               style: {
                 color: null != O ? O : true

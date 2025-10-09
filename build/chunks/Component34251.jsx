@@ -1,7 +1,7 @@
 /** Chunk was on 76418 **/
 /** chunk id: 34251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ function C(e) {
     className: x.contentContainer,
     children: [(0, r.jsx)("div", {
       className: x.rewardTileContainer,
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(c.Z, {
         autoplay: true,
         className: x.rewardTile,
         learnMoreStyle: null,
@@ -39,7 +39,7 @@ function C(e) {
       })
     }), (0, r.jsxs)("div", {
       className: x.copyContainer,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: x.heading,
@@ -51,7 +51,7 @@ function C(e) {
           rewardName: n
         })
       })]
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
       text: f.intl.string(f.t.OD6Tvb),
@@ -61,36 +61,36 @@ function C(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   var t;
   let {
     quest: n,
     onClose: i,
-    transitionState: d,
+    transitionState: c,
     location: f,
     sourceQuestContent: x
-  } = e, h = a.useMemo(() => (0, s.K)(n.config), [n]), g = (null == (t = n.userStatus) ? true : t.claimedAt) != null, _ = !n.preview && !g, [j, v] = a.useState(_ ? "loading" : "claimed");
+  } = e, g = a.useMemo(() => (0, s.K)(n.config), [n]), h = (null == (t = n.userStatus) ? true : t.claimedAt) != null, _ = !n.preview && !h, [j, v] = a.useState(_ ? "loading" : "claimed");
   a.useEffect(() => {
     if (_) {
-      let e = c.r.build(n.config),
+      let e = d.r.build(n.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : l.y$.CROSS_PLATFORM;
       (0, o.QB)(n.id, t, f).then(() => v("claimed")).catch(() => v("error"))
     }
   }, [n, f, _]);
-  let N = "error" === j || null == h;
+  let N = "error" === j || null == g;
   return (0, r.jsx)(u.Z, {
     onClose: i,
-    transitionState: d,
+    transitionState: c,
     quest: n,
     sourceQuestContent: x,
     location: p.dr.INGAME_REWARD_MODAL,
     isRewardContentLoading: "loading" === j,
     rewardContentHasError: N,
     rewardContent: N ? null : (0, r.jsx)(m.Z, {
-      rewardName: h.messages.name,
+      rewardName: g.messages.name,
       children: (0, r.jsx)(C, {
         quest: n,
-        rewardName: h.messages.name,
+        rewardName: g.messages.name,
         location: f,
         sourceQuestContent: x
       })

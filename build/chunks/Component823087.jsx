@@ -26,7 +26,7 @@ function p() {
       notchBackground: Chunk284056._.GRAY,
       captionVoice: Chunk388032.intl.string(Chunk388032.t.bp3JOT),
       captionNoVoice: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [Chunk388032.intl.string(Chunk388032.t["MA+OZm"]), (0, Chunk951288.jsx)(Chunk481060.eee, {
+        children: [Chunk388032.intl.string(Chunk388032.t["MA+OZm"]), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           className: Chunk830026.micTestHelpLink,
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NO_INPUT_DETECTED),
           children: Chunk388032.intl.string(Chunk388032.t.RYKKo6)

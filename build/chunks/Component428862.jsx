@@ -83,7 +83,7 @@ function C(e) {
         onFlyingComplete: d
       }), (0, l.jsx)("div", {
         className: o()(j.tierCloseHint, f),
-        children: b.intl.format(b.t.qV3Erq, {
+        children: x.intl.format(x.t.qV3Erq, {
           numLeft: i - r
         })
       }), (0, l.jsx)(u.P3F, {
@@ -113,15 +113,15 @@ function O(e) {
     className: p
   } = e, f = e => {
     null == i || i(e)
-  }, [x, b] = a.useState(0);
+  }, [b, x] = a.useState(0);
   return a.useLayoutEffect(() => {
-    n && b(1)
+    n && x(1)
   }, [n]), (0, l.jsx)(u.AMe, {
     from: {
       unlockedTranslateY: 50
     },
     to: {
-      unlockedTranslateY: 50 * (0 === x)
+      unlockedTranslateY: 50 * (0 === b)
     },
     config: v,
     children: e => (0, l.jsx)("div", {
@@ -172,8 +172,8 @@ function y(e) {
     showHeaderLockStatus: v = true
   } = e, _ = (0, d.e7)([f.Z], () => {
     var e, t;
-    return null != (t = null == (e = f.Z.getGuild(h)) ? true : e.premiumTier) ? t : x.Eu4.NONE
-  }), C = x.oCV[i.tier], y = a && i.tier <= _, N = i.tier !== x.Eu4.NONE && i.tier !== x.Eu4.TIER_1;
+    return null != (t = null == (e = f.Z.getGuild(h)) ? true : e.premiumTier) ? t : b.Eu4.NONE
+  }), C = b.oCV[i.tier], y = a && i.tier <= _, N = i.tier !== b.Eu4.NONE && i.tier !== b.Eu4.TIER_1;
   return (0, l.jsxs)("div", {
     className: o()(j.tier, {
       [j.tierBottomMargin]: s
@@ -199,7 +199,7 @@ function y(e) {
       children: null != t ? t : (0, l.jsxs)(l.Fragment, {
         children: [N ? (0, l.jsx)("div", {
           className: j.previousPerks,
-          children: b.intl.string(b.t.oKzyRU)
+          children: x.intl.string(x.t.oKzyRU)
         }) : null, null != i.perks && (0, l.jsx)("div", {
           className: j.perks,
           children: i.perks.map(e => ((e, t) => {
@@ -221,7 +221,7 @@ function y(e) {
                   className: j.perkTitle,
                   children: [e.title, e.isNew ? (0, l.jsx)(u.IGR, {
                     className: j.newBadge,
-                    text: b.intl.string(b.t.y2b7CA)
+                    text: x.intl.string(x.t.y2b7CA)
                   }) : null]
                 }), (0, l.jsx)("div", {
                   className: j.perkDescription,
@@ -257,7 +257,7 @@ let N = e => {
         transform: t
       },
       className: j.tierUnlocked,
-      children: b.intl.string(b.t.dNGM0t)
+      children: x.intl.string(x.t.dNGM0t)
     })
   },
   I = e => {
@@ -267,7 +267,7 @@ let N = e => {
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(u.Text, {
         variant: "text-md/normal",
-        children: b.intl.format(b.t.t2Wbo6, {
+        children: x.intl.format(x.t.t2Wbo6, {
           required: t,
           decorator: ""
         })

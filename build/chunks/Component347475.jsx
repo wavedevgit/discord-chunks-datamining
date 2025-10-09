@@ -36,7 +36,7 @@ let g = e => {
       color: "purple",
       children: [(0, r.jsxs)("div", {
         className: p.textContainer,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/bold",
           className: p.heading,
           children: f.intl.string(f.t.Ve9Ge3)
@@ -63,7 +63,7 @@ let g = e => {
       className: a()(_.container, t),
       children: [(0, r.jsxs)("div", {
         className: _.textContainer,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-lg/extrabold",
           className: _.heading,
           children: f.intl.string(f.t.Ve9Ge3)

@@ -92,8 +92,8 @@ function I(e) {
     })]
   })
 }
-let k = new Set(["client_performance_cpu", "client_performance_memory"]),
-  w = [{
+let w = new Set(["client_performance_cpu", "client_performance_memory"]),
+  k = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -184,7 +184,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, i = k.has(n) ? ((e, t, n) => {
+            let [n, r] = e, i = w.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
@@ -287,7 +287,7 @@ function Z() {
       TabBar: P,
       renderSelectedTab: I
     } = (0, Chunk621060.ZP)({
-      tabs: w
+      tabs: k
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,

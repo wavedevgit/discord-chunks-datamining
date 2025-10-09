@@ -78,7 +78,7 @@ function _() {
       palette: e,
       preview: true
     }))
-  }, []), k = (0, Chunk647438.useCallback)(e => {
+  }, []), w = (0, Chunk647438.useCallback)(e => {
     O(e)
   }, [O]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -86,14 +86,14 @@ function _() {
       className: Chunk30827.controls,
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk30827.toggles,
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           size: "sm",
           onClick: () => {
             Chunk594174(false), Chunk442837(e => !e)
           },
           variant: "secondary",
           text: "Toggle Themes"
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           size: "sm",
           onClick: () => {
             Chunk442837(false), Chunk594174(e => !e)
@@ -138,7 +138,7 @@ function _() {
             return (0, a.jsx)(C, {
               src: t,
               onSetStatic: P,
-              removeAsset: k
+              removeAsset: w
             }, t)
           })
         }), (0, Chunk951288.jsx)(S, {
@@ -234,7 +234,7 @@ function C(e) {
       alt: ""
     }), (0, a.jsx)("div", {
       className: g.uploadedControls,
-      children: (0, a.jsx)(l.zxk, {
+      children: (0, a.jsx)(l.Button, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -254,7 +254,7 @@ function E(e) {
     children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, a.jsx)(l.zxk, {
+    }), (0, a.jsx)(l.Button, {
       variant: "secondary",
       size: "sm",
       text: t,

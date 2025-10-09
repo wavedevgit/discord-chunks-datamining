@@ -30,7 +30,7 @@ let u = () => (0, Chunk951288.jsxs)(Chunk600164.Z, {
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk5146.staffBadge
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk5146.header,
       variant: "heading-md/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.xfAlNz)

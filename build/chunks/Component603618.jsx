@@ -84,7 +84,7 @@ function X(e, t) {
   }), e
 }
 
-function J(e) {
+function q(e) {
   let {
     entry: t,
     currentUserActivity: n,
@@ -182,7 +182,7 @@ function J(e) {
   })
 }
 
-function q(e) {
+function J(e) {
   var t;
   let {
     entry: n,
@@ -273,11 +273,11 @@ function $(e) {
           entry: t
         }, "entry-".concat(n)))
       })]
-    }), (0, i.jsx)(q, {
+    }), (0, i.jsx)(J, {
       entry: t,
       currentUserActivity: n,
       idx: r
-    }), (0, i.jsx)(J, {
+    }), (0, i.jsx)(q, {
       entry: t,
       currentUserActivity: n,
       idx: r

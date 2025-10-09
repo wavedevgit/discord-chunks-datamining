@@ -37,10 +37,10 @@ var Chunk951288 = require("./951288.js"),
 function w(e) {
   let {
     guild: t
-  } = e, s = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, O.Z)(t), x = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), b = h.filter(e => !x.has(e.id)), [_, C] = i.useState(false);
+  } = e, s = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, O.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [_, C] = i.useState(false);
   return (i.useEffect(() => {
     f || s || (0, m.S)(t.id)
-  }, [t.id, f, s]), _ || 0 === b.length) ? null : (0, r.jsxs)("div", {
+  }, [t.id, f, s]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
@@ -68,7 +68,7 @@ function w(e) {
       })]
     }), (0, r.jsx)("div", {
       className: T.recommendedChannels,
-      children: b.map((e, i) => (0, r.jsxs)(r.Fragment, {
+      children: x.map((e, i) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: T.channelRow,
           children: [(0, r.jsxs)("div", {
@@ -98,12 +98,12 @@ function w(e) {
                 })
               })
             }, "topic") : null]
-          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(a.zxk, {
+          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(a.Button, {
             size: "sm",
             variant: "primary",
             text: S.intl.string(S.t.OYkgVl),
             onClick: () => (0, j.pt)(e.id)
-          }) : (0, r.jsx)(a.zxk, {
+          }) : (0, r.jsx)(a.Button, {
             size: "sm",
             variant: "secondary",
             text: S.intl.string(S.t.zA9d1N),
@@ -151,7 +151,7 @@ function w(e) {
               })
             }
           })]
-        }), i < b.length - 1 ? (0, r.jsx)("div", {
+        }), i < x.length - 1 ? (0, r.jsx)("div", {
           className: T.separator
         }) : null]
       }))
@@ -164,7 +164,7 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([b.Z], () => b.Z.getGuild()), s = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), v = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), s = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
     v.current = n
   }), i.useEffect(() => {
@@ -187,12 +187,12 @@ function Z(e) {
       children: [(0, r.jsx)(a.P3F, {
         className: T.collapseButton,
         onClick: () => p(e => !e),
-        children: (0, r.jsx)(x.Z, {
-          direction: m ? x.Z.Directions.DOWN : x.Z.Directions.UP,
+        children: (0, r.jsx)(b.Z, {
+          direction: m ? b.Z.Directions.DOWN : b.Z.Directions.UP,
           height: 16,
           width: 16
         })
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(a.Heading, {
         className: T.header,
         variant: "heading-lg/extrabold",
         children: S.intl.string(S.t["4GSygo"])
@@ -216,7 +216,7 @@ function Z(e) {
       }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: T.largeSeparator
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(a.Heading, {
           className: T.prejoinHeader,
           variant: "heading-lg/extrabold",
           children: S.intl.string(S.t.g2Rnpa)

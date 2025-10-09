@@ -11,12 +11,12 @@ var Chunk544891 = require("./544891.js"),
 let a = async e => {
   try {
     return (await r.tn.get({
-      url: i.ANM.COLLECTIBLES_SEARCH,
+      url: s.ANM.COLLECTIBLES_SEARCH,
       query: e,
       rejectWithError: true
     })).body
   } catch (t) {
     let e = new l.Hx(t);
-    throw (0, s.G)(e), e
+    throw (0, i.G)(e), e
   }
 }

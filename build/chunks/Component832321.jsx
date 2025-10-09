@@ -65,7 +65,7 @@ function g(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, m, p]), x = i.useMemo(() => {
+  }, [n, t, m, p]), b = i.useMemo(() => {
     var e;
     let t = null == h || null == (e = h.emojis) ? true : e[0];
     return null != t ? {
@@ -79,7 +79,7 @@ function g(e) {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
     expressionSourceGuild: h,
-    node: x,
+    node: b,
     closePopout: u.dG,
     nonce: f.current,
     demoMode: true

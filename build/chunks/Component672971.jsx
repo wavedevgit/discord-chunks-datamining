@@ -77,7 +77,7 @@ class y extends Chunk647438.Component {
     } = this.state;
     return (l()(!I || null != A, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk647438 || v) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk442837,
-      children: [v && (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [v && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         className: Chunk209857.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5u)

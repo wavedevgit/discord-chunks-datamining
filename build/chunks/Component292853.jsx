@@ -65,7 +65,7 @@ function g(e) {
       variant: "text-sm/normal",
       color: "text-default",
       children: p.intl.string(p.t.iOWmmJ)
-    }), (0, i.jsx)(o.zxk, {
+    }), (0, i.jsx)(o.Button, {
       size: "sm",
       variant: "primary",
       onClick: () => {

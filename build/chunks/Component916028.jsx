@@ -1,24 +1,24 @@
 /** Chunk was on 17013 **/
 /** chunk id: 916028, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js");
-let a = function(e) {
+let o = function(e) {
   let {
     onSelect: t,
     quest: n
   } = e, {
-    quests: a
-  } = (0, o.J2)({
+    quests: o
+  } = (0, a.J2)({
     fetchPolicy: "cache-and-network",
     callerSource: "prefill_selector"
   }), i = [{
     label: "NONE",
     value: null
-  }, ...a.map(e => ({
+  }, ...o.map(e => ({
     label: e.config.messages.questName,
     value: e
   }))];

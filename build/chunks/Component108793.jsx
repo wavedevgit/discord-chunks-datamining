@@ -1,5 +1,5 @@
 /** Chunk was on 85342 **/
-/** chunk id: 108793, original params: e,t,r (module,exports,require) **/
+/** chunk id: 108793, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
@@ -18,23 +18,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk631936 = require("./631936.js");
 
 function p(e) {
-  var t, r, {
+  var t, n, {
       userRef: p,
       usernameSuggestionLoading: y = false,
       oneClickFlow: O = false
     } = e,
     h = function(e, t) {
       if (null == e) return {};
-      var r, n, i = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var r, n, i = {},
+        var n, r, i = {},
           o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]);
@@ -42,7 +42,7 @@ function p(e) {
     user: b,
     editState: S,
     onClose: _
-  } = h, v = (0, s.ZP)(b.id), j = function(e, t, r) {
+  } = h, v = (0, s.ZP)(b.id), j = function(e, t, n) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
@@ -58,7 +58,7 @@ function p(e) {
             displayName: t
           }), subtitle: f.intl.format(f.t.bWE0ZG, {
             onClick: () => {
-              r(), (0, l.openUserSettings)()
+              n(), (0, l.openUserSettings)()
             }
           })
         };
@@ -86,62 +86,62 @@ function p(e) {
         opacity: 0
       }
     })
-  }, [x, S]), (0, n.jsxs)("div", {
+  }, [x, S]), (0, r.jsxs)("div", {
     className: E.displayNameContainer,
-    children: [(0, n.jsxs)(o.animated.div, {
+    children: [(0, r.jsxs)(o.animated.div, {
       style: {
         opacity: N.opacity,
         y: N.y
       },
-      children: [(0, n.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         className: E.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
         children: j.header
-      }), (0, n.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: E.subtitle,
-        children: [(0, n.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           color: "header-secondary",
           variant: "heading-sm/medium",
           children: j.subtitle
-        }), null != j.link && (0, n.jsx)(a.Text, {
+        }), null != j.link && (0, r.jsx)(a.Text, {
           className: E.link,
           color: "header-secondary",
           variant: "text-sm/medium",
           children: j.link
         })]
       })]
-    }), (0, n.jsx)(d.Z, (t = function(e) {
+    }), (0, r.jsx)(d.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e
-    }({}, h), r = r = {
+    }({}, h), n = n = {
       displayProfile: v,
       ref: p,
       usernameSuggestionLoading: y,
       oneClickFlow: O
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-      var r = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        r.push.apply(r, n)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
-      return r
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))]
   })
 }

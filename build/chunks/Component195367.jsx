@@ -37,19 +37,19 @@ function y(e) {
     description: T,
     name: Z,
     image: w,
-    scheduledEndTime: k,
-    scheduledStartTime: D,
+    scheduledEndTime: D,
+    scheduledStartTime: k,
     recurrenceRule: R
-  } = t, A = (0, u._d)(I), _ = (0, u.K3)(I), z = null != t && (0, m.xt)(t), G = l.useMemo(() => {
-    let e = (0, g.v1)(t);
+  } = t, A = (0, u._d)(I), _ = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = l.useMemo(() => {
+    let e = (0, x.v1)(t);
     return null != e ? e : {
-      startDate: a()(D)
+      startDate: a()(k)
     }
-  }, [t, D]), [U, L] = l.useState(() => (0, g.zi)(a()(D), R)), M = l.useRef(null);
+  }, [t, k]), [L, M] = l.useState(() => (0, x.zi)(a()(k), R)), z = l.useRef(null);
   l.useEffect(() => {
     if (P) {
       var e;
-      null == (e = M.current) || e.focus()
+      null == (e = z.current) || e.focus()
     }
   }, [P]);
   let V = e => {
@@ -93,13 +93,13 @@ function y(e) {
         }, n))
       })
     },
-    X = null == E ? true : E.getFirstFieldErrorMessage("name"),
-    W = null == E ? true : E.getFirstFieldErrorMessage("description"),
-    q = null == X && null == W ? null == E ? true : E.getAnyErrorMessage() : null;
+    W = null == E ? true : E.getFirstFieldErrorMessage("name"),
+    X = null == E ? true : E.getFirstFieldErrorMessage("description"),
+    B = null == W && null == X ? null == E ? true : E.getAnyErrorMessage() : null;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: b.blockedUsersContainer,
-      children: null != I && !z && (A > 0 || _ > 0) && (0, r.jsx)(d.mv, {
+      children: null != I && !G && (A > 0 || _ > 0) && (0, r.jsx)(d.mv, {
         channelId: I
       })
     }), (0, r.jsx)("div", {
@@ -109,7 +109,7 @@ function y(e) {
         children: [(0, r.jsx)(s.oil, {
           label: f.intl.string(f.t["0HbEQ0"]),
           required: true,
-          error: null != X ? X : q,
+          error: null != W ? W : B,
           onChange: e => {
             C({
               name: e
@@ -119,7 +119,7 @@ function y(e) {
           maxLength: p.p,
           value: Z,
           autoComplete: "off",
-          inputRef: M
+          inputRef: z
         }), (0, r.jsx)(v.Z, {
           className: b.formItem,
           onScheduleChange: e => {
@@ -130,25 +130,25 @@ function y(e) {
               scheduledStartTime: null == t ? true : t.toISOString(),
               scheduledEndTime: null == n ? true : n.toISOString()
             };
-            null != t && null != k && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != U && (r.recurrenceRule = (0, g.mF)(U, t)), C(r)
+            null != t && null != D && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != L && (r.recurrenceRule = (0, x.mF)(L, t)), C(r)
           },
           onRecurrenceChange: e => {
-            let t = G.startDate;
+            let t = U.startDate;
             null != t && (C({
-              recurrenceRule: (0, g.mF)(e, t)
-            }), L(e))
+              recurrenceRule: (0, x.mF)(e, t)
+            }), M(e))
           },
-          schedule: G,
+          schedule: U,
           recurrenceRule: R,
           showEndDate: S === p.WX.EXTERNAL,
           requireEndDate: S === p.WX.EXTERNAL,
-          disableStartDateTime: z,
+          disableStartDateTime: G,
           guildId: y
         }), (0, r.jsx)(O, {
           error: N
         }), (0, r.jsx)(s.Kx8, {
           label: f.intl.string(f.t["+gRCCw"]),
-          error: W,
+          error: X,
           placeholder: f.intl.string(f.t["kWO/Ex"]),
           value: T,
           onChange: e => {
@@ -170,14 +170,14 @@ function y(e) {
                 if (null == e) return null;
                 if (null != y) {
                   var n;
-                  return null != (n = (0, h.Z)((0, x.Gb)(t, y, i))) ? n : null
+                  return null != (n = (0, h.Z)((0, m.Gb)(t, y, i))) ? n : null
                 }
               },
               onChange: F,
               hint: f.intl.string(f.t.G44Xmp),
               showRemoveButton: false,
               enabled: true
-            }), (0, r.jsx)(s.zxk, {
+            }), (0, r.jsx)(s.Button, {
               variant: "primary",
               size: "sm",
               text: f.intl.string(f.t.gmUvOz),

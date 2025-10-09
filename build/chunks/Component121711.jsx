@@ -175,7 +175,7 @@ function ef(e) {
       }), (0, r.jsx)(I.Z, {
         title: er.intl.string(er.t.z8YP2N),
         titleColor: "always-white",
-        button: (0, r.jsx)(d.zxk, {
+        button: (0, r.jsx)(d.Button, {
           variant: "overlay-primary",
           text: er.intl.string(er.t.GURBQk),
           onClick: u
@@ -187,7 +187,7 @@ function ef(e) {
       }), (0, r.jsx)(C.Z, {
         children: (0, r.jsxs)("div", {
           className: ei.redirectNoticeContainer,
-          children: [(0, r.jsx)(d.X6q, {
+          children: [(0, r.jsx)(d.Heading, {
             variant: "heading-xl/semibold",
             children: er.intl.string(er.t.z8YP2N)
           }), (0, r.jsx)(d.Text, {
@@ -230,7 +230,7 @@ let eh = function(e) {
     scrollPosition: F
   } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
     location: $.dr.QUEST_HOME_DESKTOP
-  }) ? Y.Z : Y.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
+  }) ? q.Z : q.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
     eo.current = W
   }), i.useEffect(() => {
@@ -329,8 +329,8 @@ let eh = function(e) {
           children: [w !== k.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
             title: eu,
             description: ep,
-            button: es ? (0, r.jsxs)(d.hE2, {
-              children: [(0, r.jsx)(d.zxk, {
+            button: es ? (0, r.jsxs)(d.ButtonGroup, {
+              children: [(0, r.jsx)(d.Button, {
                 variant: "overlay-primary",
                 text: er.intl.string(er.t["1Wm129"]),
                 onClick: () => (0, _.mK)({
@@ -339,12 +339,12 @@ let eh = function(e) {
                   analyticsLocations: [],
                   analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
-              }), (0, r.jsx)(d.zxk, {
+              }), (0, r.jsx)(d.Button, {
                 variant: "overlay-secondary",
                 text: er.intl.string(er.t["7kTAgI"]),
                 onClick: ec
               })]
-            }) : (0, r.jsx)(d.zxk, {
+            }) : (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
               text: er.intl.string(er.t.hvVgAQ),
               onClick: ec,
@@ -364,7 +364,7 @@ let eh = function(e) {
           }), (0, r.jsx)(C.Z, {
             children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
               onSelectTab: L
-            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})
+            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})
           })]
         })]
       }) : (0, r.jsxs)(r.Fragment, {
@@ -385,7 +385,7 @@ let eh = function(e) {
             children: [(0, r.jsxs)(I.Z, {
               title: eu,
               description: ep,
-              button: (0, r.jsx)(d.zxk, {
+              button: (0, r.jsx)(d.Button, {
                 variant: "overlay-primary",
                 text: er.intl.string(er.t.hvVgAQ),
                 onClick: ec,
@@ -412,7 +412,7 @@ let eh = function(e) {
                 })
               }), w === k.e5.CLAIMED ? (0, r.jsx)(el, {
                 onSelectTab: L
-              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(q.Z, {})]
+              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})]
             })]
           })
         })]

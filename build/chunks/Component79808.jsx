@@ -51,8 +51,8 @@ function f(e) {
     target: p,
     onClose: j,
     sidebarHeader: v,
-    sidebarFooter: x,
-    onPanelChange: y,
+    sidebarFooter: y,
+    onPanelChange: x,
     emptyState: h
   } = e, [g, O] = l.useState(true), [C, S] = l.useState(null == (t = m.entry(p)) ? true : t.targetPanel), [P, _] = l.useState(() => m.typedGet(C)), E = l.useCallback(() => k(true), []), [N, k] = l.useState({
     target: p,
@@ -76,7 +76,7 @@ function f(e) {
         T(() => {
           k(d(u({}, n), {
             animateScroll: false
-          })), _(e), S(e), null == y || y(e.key)
+          })), _(e), S(e), null == x || x(e.key)
         })
       } else k(d(u({}, n), {
         animateScroll: true
@@ -85,7 +85,7 @@ function f(e) {
     navTransition: N,
     showNavigationMobile: g,
     setShowNavigationMobile: O
-  }), [m, C, N, g, E, T, y]), Z = () => T(j);
+  }), [m, C, N, g, E, T, x]), Z = () => T(j);
   return (0, r.jsx)(s.j.Provider, {
     value: w,
     children: (0, r.jsxs)("div", {
@@ -93,7 +93,7 @@ function f(e) {
       children: [(0, r.jsx)(i.P, {
         root: b,
         header: v,
-        footer: x,
+        footer: y,
         onClose: Z,
         emptyState: h
       }), (0, r.jsx)(o.Z, {

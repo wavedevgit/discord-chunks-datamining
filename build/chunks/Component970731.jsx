@@ -91,7 +91,7 @@ function v(e) {
   let L = null != v;
   return (0, a.jsxs)("div", {
     className: i()(r, T[t], p.upsellTooltipWrapper, p[j]),
-    children: [y, null == n ? null : (0, a.jsx)(c.X6q, {
+    children: [y, null == n ? null : (0, a.jsx)(c.Heading, {
       color: O[t],
       className: i()(l, p.upsellTooltipHeader),
       variant: "heading-md/semibold",

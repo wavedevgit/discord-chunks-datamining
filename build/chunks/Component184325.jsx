@@ -69,12 +69,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = e => {
+let k = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -155,7 +155,7 @@ function U(e) {
           if (null != n) return null == L || L(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
@@ -164,7 +164,7 @@ function U(e) {
             analyticsLocations: G
           }, B))
         },
-        S = j({
+        S = k({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
@@ -174,7 +174,7 @@ function U(e) {
         "aria-label": e.description,
         forceOpen: null != M && M(e.id),
         delay: A.vB,
-        children: (0, r.jsx)(o.eee, {
+        children: (0, r.jsx)(o.Anchor, {
           onClick: y,
           onMouseEnter: v,
           href: e.link,

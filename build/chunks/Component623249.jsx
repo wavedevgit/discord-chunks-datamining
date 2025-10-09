@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -31,14 +31,14 @@ function O(e) {
   var t;
   let {
     quest: n,
-    errorHints: o,
+    errorHints: a,
     transitionState: j,
     onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
+  } = e, [w, P] = (0, s.useState)(a), N = (0, x.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
-  }), q = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(n), D = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(D) ? C.BRd.DARK : C.BRd.LIGHT, {
+  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, h.Bz)(n), D = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(D) ? C.BRd.DARK : C.BRd.LIGHT, {
     startConsoleQuest: V,
     startingConsoleQuest: Q
   } = (0, x.GI)({
@@ -84,7 +84,7 @@ function O(e) {
           color: "header-secondary",
           children: y.intl.string(y.t["+/hZMz"])
         }), (0, r.jsxs)(u.P3F, {
-          className: a()(E.refreshWrapper, {
+          className: o()(E.refreshWrapper, {
             [E.disabled]: Q
           }),
           onClick: V,
@@ -107,8 +107,8 @@ function O(e) {
             size: "sm"
           }),
           text: y.intl.string(y.t.XF4wuL),
-          errors: I ? true : q.map(e => e.message),
-          gameTile: I ? (0, r.jsx)(c.u, {
+          errors: q ? true : I.map(e => e.message),
+          gameTile: q ? (0, r.jsx)(c.u, {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
               className: E.tooltip,
@@ -138,12 +138,12 @@ function S(e) {
     icon: t,
     text: n,
     errors: s = [],
-    gameTile: o
+    gameTile: a
   } = e, i = s.length > 0, l = i ? u._3e : u.B_b;
   return (0, r.jsxs)("div", {
     className: E.connectionRow,
     children: [(0, r.jsxs)("div", {
-      className: a()(E.connectionRowHeader, {
+      className: o()(E.connectionRowHeader, {
         [E.connectionRowHeaderError]: i
       }),
       children: [(0, r.jsxs)("div", {
@@ -155,10 +155,10 @@ function S(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: E.connectionRowHeaderContent,
-        children: [o, (0, r.jsx)(l, {
+        children: [a, (0, r.jsx)(l, {
           color: "currentColor",
           size: "sm",
-          className: a()({
+          className: o()({
             [E.success]: !i,
             [E.error]: i
           })

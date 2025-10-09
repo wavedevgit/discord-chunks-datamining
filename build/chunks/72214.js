@@ -1,7 +1,7 @@
 /** Chunk was on 83098 **/
 /** chunk id: 72214, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  s: () => p
+  s: () => h
 }), require("./388685.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -26,27 +26,27 @@ function b(e) {
   }
 }
 
-function p(e) {
+function h(e) {
   let {
     targetDestination: t,
     selectedDestinations: n,
     originDestination: i,
     includeMissingDMs: f = false
-  } = e, p = (0, l.e7)([u.default], () => u.default.getId()), h = r.useMemo(() => ({
+  } = e, h = (0, l.e7)([u.default], () => u.default.getId()), p = r.useMemo(() => ({
     searchOptions: {
-      blacklist: new Set(["user:".concat(p)]),
+      blacklist: new Set(["user:".concat(h)]),
       frecencyBoosters: true,
       userFilters: null
     }
-  }), [p]), {
+  }), [h]), {
     search: m,
     query: g,
     results: y
-  } = (0, d.Z)(h), [x, v] = r.useState(b("")), S = r.useCallback(e => v(b(e)), [v]), {
-    queryMode: E
-  } = x, j = r.useRef(null), Z = r.useRef(n), O = g !== j.current ? n : Z.current;
+  } = (0, d.Z)(p), [x, v] = r.useState(b("")), S = r.useCallback(e => v(b(e)), [v]), {
+    queryMode: j
+  } = x, E = r.useRef(null), Z = r.useRef(n), P = g !== E.current ? n : Z.current;
   r.useEffect(() => {
-    g !== j.current && (Z.current = n), j.current = g
+    g !== E.current && (Z.current = n), E.current = g
   }, [g, n]), r.useLayoutEffect(() => {
     let {
       query: e,
@@ -57,22 +57,22 @@ function p(e) {
       resultTypes: t
     })
   }, [m, x]), (0, s.D)();
-  let P = (0, l.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
-    _ = (0, l.e7)([a.Z], () => a.Z.isConnected()),
+  let _ = (0, l.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
+    O = (0, l.e7)([a.Z], () => a.Z.isConnected()),
     C = "" !== g;
   return {
     results: r.useMemo(() => (0, c.ZP)({
       results: y,
       hasQuery: C,
-      queryMode: E,
+      queryMode: j,
       targetDestination: t,
-      frequentChannels: P,
+      frequentChannels: _,
       selectedDestinations: n,
-      pinnedDestinations: O,
+      pinnedDestinations: P,
       originDestination: i,
       includeMissingDMs: f,
-      isConnected: _
-    }), [y, C, E, t, P, n, O, i, f, _]),
+      isConnected: O
+    }), [y, C, j, t, _, n, P, i, f, O]),
     updateSearchText: S
   }
 }

@@ -35,7 +35,7 @@ function _(e) {
   } = (0, f.b8)(e), {
     width: M,
     height: N
-  } = (0, d.Z)(), A = a.useMemo(() => {
+  } = (0, u.Z)(), A = a.useMemo(() => {
     let e = Math.min((N - w - 2 * j) * 16 / 9, g);
     return Math.max(m, Math.min(M - 2 * j, e))
   }, [M, N]);
@@ -77,7 +77,7 @@ function _(e) {
         }), (0, r.jsxs)("div", {
           className: h.flexRow,
           children: [(0, r.jsxs)("div", {
-            children: [(0, r.jsx)(c.X6q, {
+            children: [(0, r.jsx)(c.Heading, {
               variant: "heading-sm/bold",
               children: y
             }), (0, r.jsx)(c.Text, {
@@ -104,7 +104,7 @@ function _(e) {
             className: h.closeIcon
           })
         })]
-      }), (0, r.jsx)(u.Z, {
+      }), (0, r.jsx)(d.Z, {
         aspectRatio: 16 / 9,
         children: (0, r.jsx)(s.J, {
           url: I,

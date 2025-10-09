@@ -96,7 +96,7 @@ let b = function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: g.end,
-      children: [(0, r.jsx)(o.zxk, {
+      children: [(0, r.jsx)(o.Button, {
         onClick: P,
         text: S,
         variant: "primary"

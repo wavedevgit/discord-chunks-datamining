@@ -36,7 +36,7 @@ function d(e) {
     children: t,
     className: n
   } = e;
-  return (0, i.jsx)(a.X6q, {
+  return (0, i.jsx)(a.Heading, {
     "aria-hidden": "true",
     className: l()(n, c.header),
     variant: "heading-xxl/extrabold",

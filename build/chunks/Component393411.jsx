@@ -60,7 +60,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,8 +71,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -207,7 +207,7 @@ let Y = function(e) {
     paymentSource: _,
     busy: C,
     analyticsLocation: x
-  } = e, k = "subscription_header", {
+  } = e, j = "subscription_header", {
     analyticsLocations: H
   } = (0, d.ZP)(u.Z.SUBSCRIPTION_HEADER), {
     fractionalState: Y
@@ -216,7 +216,7 @@ let Y = function(e) {
   }), W = Y === P.a$.FP_SUB_PAUSED, {
     enabled: K
   } = (0, S.ZP)({
-    location: k
+    location: j
   });
   P.pj.has(i.planId) && w.JwP.ALL_PAUSEABLE.has(i.status) && !W || (K = false);
   let z = (0, A.Ng)(),
@@ -238,7 +238,7 @@ let Y = function(e) {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
         } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
-        return n => (0, r.jsx)(t, j(M({}, n), {
+        return n => (0, r.jsx)(t, k(M({}, n), {
           premiumSubscription: i,
           analyticsLocation: x,
           analyticsLocations: H,
@@ -304,10 +304,10 @@ let Y = function(e) {
       } = i;
       if (i.isPurchasedExternally) {
         let e = (0, y.JE)(i.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
-        return (0, r.jsx)(l.eee, {
+        return (0, r.jsx)(l.Anchor, {
           href: e,
           useDefaultUnderlineStyles: false,
-          children: (0, r.jsx)(l.zxk, {
+          children: (0, r.jsx)(l.Button, {
             variant: "overlay-primary",
             size: "sm",
             loading: C,
@@ -341,7 +341,7 @@ let Y = function(e) {
             })
           }), (0, r.jsx)(l.ua7, {
             text: t,
-            children: t => (0, r.jsx)(N.Z, j(M({}, t), {
+            children: t => (0, r.jsx)(N.Z, k(M({}, t), {
               className: a()(L.toolsButton, L.premiumSettingsPushButton),
               disabled: e,
               onClick: () => {
@@ -360,7 +360,7 @@ let Y = function(e) {
       if (y.ZP.isBaseSubscriptionCanceled(i)) return (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: L.toolsButton,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
           size: "sm",
           text: D.intl.string(D.t.iIvF29),
@@ -370,7 +370,7 @@ let Y = function(e) {
       });
       switch (e) {
         case w.O0b.BILLING_RETRY:
-          return (0, r.jsx)(l.zxk, {
+          return (0, r.jsx)(l.Button, {
             variant: "overlay-primary",
             size: "sm",
             onClick: et,
@@ -392,7 +392,7 @@ let Y = function(e) {
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: L.toolsButton,
-              children: (0, r.jsx)(l.zxk, {
+              children: (0, r.jsx)(l.Button, {
                 variant: "overlay-primary",
                 size: "sm",
                 text: D.intl.string(D.t.TgV5QU),
@@ -426,7 +426,7 @@ let Y = function(e) {
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: L.toolsButton,
-              children: (0, r.jsx)(l.zxk, {
+              children: (0, r.jsx)(l.Button, {
                 variant: "overlay-primary",
                 size: "sm",
                 text: D.intl.string(D.t.zpi5pq),

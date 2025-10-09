@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk959078 = require("./959078.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -37,7 +37,7 @@ function E(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, o = (0, g.n)(), l = (0, _.k3)(t.id, x.jn.QUEST_BAR_V2, x.jn.QUEST_BAR_V2), d = (0, _.g2)({
+  } = e, a = (0, g.n)(), l = (0, _.k3)(t.id, x.jn.QUEST_BAR_V2, x.jn.QUEST_BAR_V2), d = (0, _.g2)({
     useReducedMotion: n
   }), b = (0, p.O5)(), j = (0, m.aM)(), {
     errorHints: E,
@@ -68,17 +68,17 @@ function E(e) {
       }),
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
         children: E.map((e, n) => {
-          if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
+          if (e.type === i.K.EXPIRED_CREDENTIAL && a) {
             let s = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              o = (0, f.C9)(e),
-              a = (0, f._j)(e);
+              a = (0, f.C9)(e),
+              o = (0, f._j)(e);
             return (0, r.jsx)(y, {
-              children: v.intl.format(o, {
+              children: v.intl.format(a, {
                 account_name: null == s ? true : s.name,
                 onClick: () => {
                   (0, f.fY)({
                     quest: t,
-                    platformType: a
+                    platformType: o
                   }, {
                     content: x.jn.QUEST_BAR,
                     ctaContent: p.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
@@ -102,7 +102,7 @@ function E(e) {
         })
       })
     }
-  }, [E, t, o, j]);
+  }, [E, t, a, j]);
   return (0, r.jsxs)("div", {
     className: C.microphoneUnit,
     children: [(0, r.jsxs)("div", {
@@ -117,14 +117,14 @@ function E(e) {
         variant: "text-xs/medium",
         children: T
       }), (0, r.jsx)(c.P3F, {
-        className: a()(C.microphoneUnitRefreshIconWrapper, {
+        className: o()(C.microphoneUnitRefreshIconWrapper, {
           [C.disabled]: O
         }),
         onClick: () => S(),
         children: d.render()
       })]
     }), (0, r.jsxs)("div", {
-      className: a()({
+      className: o()({
         [C.opacity_50]: O
       }),
       children: [w(), 0 === E.length ? null : (0, r.jsx)(y, {
@@ -137,7 +137,7 @@ let O = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, h.z6)(), i = s.useMemo(() => (0, f.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), o = (0, h.z6)(), i = s.useMemo(() => (0, f.B3)(t).filter(e => o.xboxAndPlaystationAccounts.find(t => t.type === e)), [o.xboxAndPlaystationAccounts, t]), {
     steps: c,
     hasConnectedAccounts: u,
     isProgressingQuestForLaunchedGame: p,
@@ -145,7 +145,7 @@ let O = function(e) {
   } = s.useMemo(() => {
     var e;
     let s = i.length > 0,
-      o = s && (0, f.Bz)(t),
+      a = s && (0, f.Bz)(t),
       l = t.config.messages.gameTitle,
       c = (null == (e = t.userStatus) ? true : e.completedAt) != null;
     return {
@@ -169,7 +169,7 @@ let O = function(e) {
               })
             }
             return e
-          }({}, a), n = n = {
+          }({}, o), n = n = {
             quest: t,
             sourceQuestContent: x.jn.QUEST_BAR_V2
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -183,14 +183,14 @@ let O = function(e) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
           }), e))
         },
-        isComplete: s || o || c
+        isComplete: s || a || c
       }, {
         renderContent: () => (0, r.jsx)(j.y3, {
           children: (0, f.Pb)(t) ? v.intl.string(v.t["5tXqFR"]) : v.intl.formatToPlainString(v.t["+8JB6e"], {
             gameTitle: l
           })
         }),
-        isComplete: o || c
+        isComplete: a || c
       }, {
         renderContent: () => (0, r.jsx)(j.y3, {
           children: v.intl.formatToPlainString(v.t.HhfrYW, {
@@ -200,15 +200,15 @@ let O = function(e) {
         isComplete: c
       }],
       hasConnectedAccounts: s,
-      isProgressingQuestForLaunchedGame: o,
+      isProgressingQuestForLaunchedGame: a,
       isQuestComplete: c
     }
-  }, [a, i.length, t, n.targetMinutes]);
+  }, [o, i.length, t, n.targetMinutes]);
   return (0, r.jsx)(j.ZP, {
     heading: v.intl.string(v.t.UPWlJi),
     steps: c,
     children: u && !p && !m && (0, r.jsx)(E, {
-      useReducedMotion: o,
+      useReducedMotion: a,
       quest: t
     })
   })

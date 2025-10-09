@@ -99,7 +99,7 @@ let h = {
         spacing: p,
         caretConfig: m
       }, h), {
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me"
         })
@@ -227,7 +227,7 @@ let h = {
         caretConfig: b,
         asset: y
       }, E), {
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me (rich)"
         })

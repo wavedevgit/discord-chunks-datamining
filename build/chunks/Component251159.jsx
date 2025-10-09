@@ -15,7 +15,7 @@ function s(e) {
     analyticsSection: t,
     buttonText: n
   } = e;
-  return (0, r.jsx)(i.zxk, {
+  return (0, r.jsx)(i.Button, {
     variant: "expressive",
     icon: i.SrA,
     text: null != n ? n : o.intl.string(o.t["8Sh5fn"]),

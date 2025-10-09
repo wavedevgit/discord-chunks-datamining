@@ -75,7 +75,7 @@ function v(e) {
   });
   return (0, r.jsxs)("div", {
     className: _.hiddenLibraryApplications,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
       className: _.hiddenLibraryApplicationsTitle,
       children: b.intl.string(b.t["5PJtrK"])

@@ -35,7 +35,7 @@ function o(e) {
       className: s.header,
       children: (0, r.jsxs)(l.Kqy, {
         gap: 4,
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
           children: a.intl.string(a.t.GG6vbm)
         }), (0, r.jsx)(l.Text, {

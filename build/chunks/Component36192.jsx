@@ -85,7 +85,7 @@ function N() {
       children: (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: Chunk844642.logOutAllButton,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "critical-secondary",
           size: "sm",
           text: Chunk313789.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLi"], {
@@ -116,7 +116,7 @@ function N() {
         children: "These tools are only shown to staff users."
       }), (0, Chunk951288.jsx)(Chunk28664.u, {
         text: "Triggers mobile and email suspicious session notifications for the current user",
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           size: "sm",
           text: "Trigger Suspicious Sessions Notification",
@@ -176,7 +176,7 @@ function R(e) {
       })]
     }), c ? null : _ ? (0, r.jsx)("div", {
       className: C.sessionCheckbox,
-      children: (0, r.jsx)(d.XZJ, {
+      children: (0, r.jsx)(d.Cnq, {
         onChange: e => {
           null == u || u(e)
         },

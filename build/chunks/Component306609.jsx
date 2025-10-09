@@ -81,13 +81,13 @@ function z(e) {
     wide: n,
     showOutputDevices: o = false,
     showSearchBar: z = true
-  } = e, [q, B] = i.useState(""), {
+  } = e, [B, q] = i.useState(""), {
     analyticsLocations: W,
-    newestAnalyticsLocation: X
-  } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), K = i.useRef(null), G = (0, d.Z)({
+    newestAnalyticsLocation: K
+  } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), X = i.useRef(null), G = (0, d.Z)({
     minDimension: 400,
     maxDimension: 600,
-    resizableDomNodeRef: K,
+    resizableDomNodeRef: X,
     onElementResize: (e, t) => {},
     onElementResizeEnd: e => {},
     orientation: d.y.VERTICAL_TOP
@@ -124,8 +124,8 @@ function z(e) {
     }),
     ea = (0, c.q_F)({
       to: {
-        bottom: "" !== q ? "translateY(75px)" : "translateY(50px)",
-        opacity: +("" === q)
+        bottom: "" !== B ? "translateY(75px)" : "translateY(50px)",
+        opacity: +("" === B)
       },
       config: {
         tension: 280,
@@ -139,13 +139,13 @@ function z(e) {
       active_voice_filter_id: null != er ? er : null
     })
   });
-  let ec = i.useCallback(() => B(""), [B]),
+  let ec = i.useCallback(() => q(""), [q]),
     eu = i.useRef(null),
     ed = (0, g.bp)() !== M.IlC.OVERLAY;
   return (0, r.jsx)(m.Gt, {
     value: W,
     children: (0, r.jsxs)("div", {
-      ref: K,
+      ref: X,
       className: l()(U.voiceFiltersPopout, {
         [U.wide]: n,
         [U.notResizable]: !ed
@@ -162,11 +162,11 @@ function z(e) {
       }), z && (0, r.jsx)(c.E1j, {
         placeholder: L.intl.string(L.t.hHCZJS),
         autoFocus: true,
-        onChange: B,
-        query: q,
+        onChange: q,
+        query: B,
         onClear: ec
       }), (0, r.jsx)(k.w, {
-        query: q,
+        query: B,
         columns: n ? 5 : 4,
         handleScroll: e => {
           let t = es.current;
@@ -244,7 +244,7 @@ function z(e) {
             renderOutputDevices: o,
             renderOutputVolume: o,
             onClose: t,
-            onInteraction: (0, b.u)("AudioDeviceMenu", X, {
+            onInteraction: (0, b.u)("AudioDeviceMenu", K, {
               entrypoint: A.A5.THREE_DOT
             }),
             minimal: true

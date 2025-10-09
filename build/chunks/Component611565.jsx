@@ -109,37 +109,35 @@ function b() {
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
       className: Chunk326588.content,
       children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Inbox"
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Inbox Message Count: ", C.length]
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Dev Overrides"
-        }), (0, Chunk951288.jsxs)("div", {
+        }), (0, Chunk951288.jsx)("div", {
           style: {
             display: "flex",
             alignItems: "center",
-            gap: 8,
             marginTop: 8
           },
-          children: [(0, Chunk951288.jsx)("div", {
-            children: "Nav On Click"
-          }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            checked: E,
+          children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
+            label: "Nav On Click",
+            checked: !!E,
             onChange: e => {
               o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
                 navOnClick: e
               })
             }
-          })]
+          })
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Unreads and Badging"
         }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
@@ -161,7 +159,7 @@ function b() {
           })
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Store State"
         }), (0, Chunk951288.jsxs)("div", {
@@ -178,7 +176,7 @@ function b() {
           children: ["Last Loading Trigger: ", null == v ? true : v.loadingTrigger]
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Channel Info Map"
         }), (0, Chunk951288.jsxs)("div", {

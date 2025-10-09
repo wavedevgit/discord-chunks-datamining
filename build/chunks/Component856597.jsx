@@ -31,7 +31,7 @@ let p = {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         direction: "vertical",
         justify: "space-between",
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "display-md",
           className: Chunk133023.title,
           children: Chunk388032.intl.string(Chunk241945.default["/OpRAA"])

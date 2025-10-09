@@ -207,8 +207,8 @@ function k(e) {
     }), t.forEach(e => {
       e in n && (r[e] = P(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, N] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
-    sections: B,
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, N] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), B = l.useRef(null), {
+    sections: F,
     sectionCounts: q
   } = l.useMemo(() => {
     let e = "" !== y ? i.filter(e => s()(y, e.display.toLocaleLowerCase())) : i,
@@ -219,7 +219,7 @@ function k(e) {
       sections: r,
       sectionCounts: l
     }
-  }, [y, i, n]), z = l.useCallback(e => {
+  }, [y, i, n]), G = l.useCallback(e => {
     let t = Object.values(e),
       n = t.filter(e => {
         let {
@@ -234,7 +234,7 @@ function k(e) {
         return L(t)
       }).map(e => e.row.record.id);
     m(new Set(n), new Set(r))
-  }, [m]), G = () => {
+  }, [m]), z = () => {
     M(false), k(false)
   };
   l.useEffect(() => {
@@ -250,21 +250,21 @@ function k(e) {
     },
     W = l.useCallback(e => {
       let t = _({}, g);
-      I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), z(t), N(""), G(), setTimeout(() => {
+      I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), G(t), N(""), z(), setTimeout(() => {
         var e;
-        let t = null == (e = F.current) ? true : e.containerRef.current,
+        let t = null == (e = B.current) ? true : e.containerRef.current,
           n = null == t ? true : t.firstChild;
         null != n && n.scrollTo({
           top: n.scrollHeight,
           behavior: "smooth"
         })
       }, 16)
-    }, [z, g]),
+    }, [G, g]),
     K = l.useCallback(e => {
       let {
         section: n,
         row: l
-      } = e, i = B[n][l];
+      } = e, i = F[n][l];
       return (0, r.jsx)(u.P3F, {
         className: o()(H.selectableSearchRow, H.rowHeight),
         onClick: e => {
@@ -275,7 +275,7 @@ function k(e) {
           children: T(i, t, H.searchRowLabel)
         })
       }, i.id)
-    }, [t, W, B]),
+    }, [t, W, F]),
     Q = l.useMemo(() => v.map(e => {
       var n;
       return n = g[e], w(_({}, n.tag), {
@@ -291,13 +291,13 @@ function k(e) {
         maxHeight: 98,
         size: d.Z.Sizes.MEDIUM,
         query: y,
-        ref: F,
+        ref: B,
         onRemoveTag: e => {
           let t = v[e],
             {
               [t]: n
             } = g;
-          z(function(e, t) {
+          G(function(e, t) {
             if (null == e) return {};
             var n, r, l = function(e, t) {
               if (null == e) return {};
@@ -311,7 +311,7 @@ function k(e) {
               for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
-          }(g, [t].map(S))), N(""), G()
+          }(g, [t].map(S))), N(""), z()
         },
         onQueryChange: e => {
           N(e.trim().toLocaleLowerCase())
@@ -340,11 +340,11 @@ function k(e) {
             let {
               section: t
             } = e;
-            return 0 === t ? (0, r.jsx)(u.X6q, {
+            return 0 === t ? (0, r.jsx)(u.Heading, {
               variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
               children: O.intl.string(O.t.OGiMXF)
-            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.X6q, {
+            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.Heading, {
               variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
               children: O.intl.string(O.t.LPJmLy)

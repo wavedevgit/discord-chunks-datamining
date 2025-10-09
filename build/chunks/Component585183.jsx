@@ -21,43 +21,43 @@ function C(e) {
   let {
     platformType: a,
     clientId: t,
-    scopes: n,
+    scopes: s,
     authToken: d,
     onContinue: C,
     onError: j,
     onClose: p,
     redirectUri: v
-  } = e, [k, f] = s.useState(false), b = s.useCallback(async e => {
+  } = e, [f, k] = n.useState(false), b = n.useCallback(async e => {
     let t, r, {
-        location: s
+        location: n
       } = e,
       {
-        callbackCode: n,
+        callbackCode: s,
         callbackState: l
       } = d;
     try {
-      t = await o.Z.completeTwoWayLink(a, s, n, l)
+      t = await o.Z.completeTwoWayLink(a, n, s, l)
     } catch (e) {
       var i;
       N.error("".concat(a, " link error:"), e), r = null == (i = e.body) ? true : i.code
     }
     null != t ? C() : j(r)
   }, [a, d, C, j]), {
-    header: E,
-    body: T,
-    appDetails: g,
+    header: g,
+    body: E,
+    appDetails: T,
     sendAuthorize: O
   } = (0, x.useOAuth2AuthorizeForm)({
     clientId: t,
-    scopes: n,
+    scopes: s,
     responseType: "code",
     callback: b,
     isTrustedName: true,
     isEmbeddedFlow: true,
     redirectUri: v,
     isTwoWayLinkDiscordConsent: true
-  }), y = s.useCallback(() => {
-    l()(null != O, "sendAuthorize not available"), f(true), O(true)
+  }), y = n.useCallback(() => {
+    l()(null != O, "sendAuthorize not available"), k(true), O(true)
   }, [O]);
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsxs)(i.xBx, {
@@ -81,17 +81,17 @@ function C(e) {
       paddingFix: false,
       children: [(0, r.jsx)("div", {
         className: m.consentHeader,
-        children: E
-      }), T, g]
+        children: g
+      }), E, T]
     }), (0, r.jsx)(i.mzw, {
       className: m.footer,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: m.footerButton,
-        children: (0, r.jsx)(i.zxk, {
+        children: (0, r.jsx)(i.Button, {
           variant: "primary",
           text: h.intl.string(h.t.ZN4hkZ),
-          loading: k,
+          loading: f,
           onClick: y
         })
       })

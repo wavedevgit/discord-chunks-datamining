@@ -80,7 +80,7 @@ function m(e) {
       null == m || m(), E(false)
     }
   }, [I, m]);
-  return null == v ? null : (0, r.jsx)(a.zxk, {
+  return null == v ? null : (0, r.jsx)(a.Button, {
     variant: "active",
     size: "sm",
     text: v,

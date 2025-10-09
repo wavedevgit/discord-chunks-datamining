@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74830 = require("./74830.js"),
   Chunk13299 = require("./13299.js");
 Chunk442837.ZP.initialize();
-let N = Chunk873546.tq || Chunk873546.Em;
+let k = Chunk873546.tq || Chunk873546.Em;
 
 function f(e) {
   let {
@@ -41,7 +41,7 @@ function f(e) {
     }, [a, e]), t
   }(i);
   n.useEffect(() => {
-    if (!N) {
+    if (!k) {
       if (null == a) g.Z.openNativeAppModal("quest-preview", _.Etm.DEEP_LINK, {
         type: T.jE.QUEST_PREVIEW_TOOL,
         params: {
@@ -58,16 +58,16 @@ function f(e) {
     }
   }, [a, i]);
   let b = n.useCallback(() => (0, u.openAppWithQuestPreview)(i), [i]);
-  if (N) return (0, s.jsxs)("div", {
+  if (k) return (0, s.jsxs)("div", {
     className: E.page,
     children: [(0, s.jsx)("img", {
       className: E.bgImg,
-      src: v.ZP,
+      src: N.ZP,
       alt: ""
     }), (0, s.jsx)("div", {
       className: E.logoContainer,
       children: (0, s.jsx)("img", {
-        src: k,
+        src: v,
         alt: ""
       })
     }), null != f && (0, s.jsx)("div", {
@@ -80,7 +80,7 @@ function f(e) {
             alt: "",
             className: E.gameTileImg
           })
-        }), (0, s.jsx)(r.X6q, {
+        }), (0, s.jsx)(r.Heading, {
           variant: "heading-lg/semibold",
           color: "text-default",
           className: E.headingText,
@@ -89,14 +89,14 @@ function f(e) {
           variant: "text-md/normal",
           className: E.bodyText,
           children: j.intl.string(j.t.bWuKqq)
-        }), (0, s.jsx)(r.zxk, {
+        }), (0, s.jsx)(r.Button, {
           variant: "primary",
           text: j.intl.string(j.t.UQvCf3),
           fullWidth: true,
           onClick: b
         })]
       }) : (0, s.jsxs)(s.Fragment, {
-        children: [(0, s.jsx)(r.X6q, {
+        children: [(0, s.jsx)(r.Heading, {
           variant: "heading-lg/semibold",
           color: "text-default",
           className: E.headingText,

@@ -75,7 +75,7 @@ function I() {
     className: Chunk617659.container,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk617659.section,
-      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(exports)
       })
@@ -85,7 +85,7 @@ function I() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Notification Indicators"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Reset",
         onClick: () => {
@@ -98,7 +98,7 @@ function I() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Progress Bar State"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Reset",
         onClick: Chunk667815.q
@@ -109,13 +109,13 @@ function I() {
         variant: "eyebrow",
         children: "Set Warning State"
       }), (0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
             N(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
@@ -176,14 +176,14 @@ function I() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Send Powerups System Message"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Send System Message",
         onClick: () => {
           P(module)
         }
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "primary",
       text: "Reset GameServer ToS",
       onClick: () => {

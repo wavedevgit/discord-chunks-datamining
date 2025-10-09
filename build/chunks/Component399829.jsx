@@ -66,7 +66,7 @@ class w extends Chunk647438.Component {
     let a = {
         numRequired: 0,
         y: 0,
-        key: b.x
+        key: x.x
       },
       s = e.map(e => {
         var n;
@@ -77,7 +77,7 @@ class w extends Chunk647438.Component {
           key: e.tier
         }
       });
-    return (0, r.jsx)(b.Z, {
+    return (0, r.jsx)(x.Z, {
       currentTier: l,
       className: i > 0 ? S.progressWithSubscriptions : S.progress,
       progress: i,

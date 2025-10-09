@@ -289,7 +289,7 @@ function q(e) {
       start: e,
       end: t
     } = i.timestamps;
-    return (0, r.jsx)(j.Z, {
+    return (0, r.jsx)(k.Z, {
       start: e,
       end: t
     })
@@ -303,7 +303,7 @@ function q(e) {
       }), ep(e)
     },
     children: [eg(), eE(), eb()]
-  }), eI = () => null == K || null == q ? null : (0, r.jsx)(k.Z, {
+  }), eI = () => null == K || null == q ? null : (0, r.jsx)(j.Z, {
     user: t,
     guild: K,
     channel: q,

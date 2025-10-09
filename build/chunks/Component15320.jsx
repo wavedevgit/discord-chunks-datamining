@@ -77,20 +77,20 @@ function E(e) {
     currentPrompt: u,
     selectOption: m,
     gotoPrevPrompt: f,
-    gotoNextPrompt: g,
+    gotoNextPrompt: x,
     completeOnboarding: j
   } = e, _ = (0, i.Wu)([p.Z], () => p.Z.getOnboardingResponsesForPrompt(n.id, u.id)), N = 0 === _.length && (null == u ? true : u.required), P = null == u ? true : u.options.filter(e => _.includes(e.id)), E = (0, h.L6)(P), Z = (0, h.dX)(P), I = 0 === _.length, {
     helpText: w,
     helpTextAdditional: T
-  } = (0, x.Z)({
+  } = (0, g.Z)({
     guild: n,
     prompt: u,
     selectedRoleIds: E,
     selectedChannelIds: Z,
     itemHook: C
-  }), D = (0, d.Z)(n.id, 1e3), k = u.options.map(e => y({
+  }), D = (0, d.Z)(n.id, 1e3), S = u.options.map(e => y({
     value: e.id
-  }, e)), S = u.options.filter(e => _.includes(e.id)).map(e => e.id);
+  }, e)), B = u.options.filter(e => _.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
     className: O.prompt,
     children: (0, r.jsxs)("div", {
@@ -117,15 +117,15 @@ function E(e) {
               children: b.intl.string(b.t.Ur8Vrq)
             })]
           }) : null]
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(o.Heading, {
           className: O.title,
           variant: "heading-xl/semibold",
           color: "header-primary",
           id: t,
           children: u.title
         }), (0, r.jsx)(v.Z, {
-          options: k,
-          value: S,
+          options: S,
+          value: B,
           onChange: e => {
             let t = e.find(e => !_.includes(e.id)),
               n = e.map(e => e.id);
@@ -143,7 +143,7 @@ function E(e) {
         className: O.navButtons,
         children: [(0, r.jsx)("div", {
           className: O.leftButtons,
-          children: l > 0 && (0, r.jsx)(o.zxk, {
+          children: l > 0 && (0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "md",
             text: b.intl.string(b.t["13/7kZ"]),
@@ -161,11 +161,11 @@ function E(e) {
           }), (0, r.jsx)(a.u, {
             asContainer: true,
             text: N ? b.intl.string(b.t.dA1dSU) : null,
-            children: (0, r.jsx)(o.zxk, {
+            children: (0, r.jsx)(o.Button, {
               variant: I ? "secondary" : "primary",
               size: "md",
               text: s ? "".concat(b.intl.string(b.t["8SuVoK"]), " \uD83C\uDF89") : I ? b.intl.string(b.t["5WxrcX"]) : b.intl.string(b.t.PDTjLC),
-              onClick: () => s ? j() : g(_.length),
+              onClick: () => s ? j() : x(_.length),
               disabled: N,
               icon: s ? true : o.d4D,
               iconPosition: "end"
@@ -192,7 +192,7 @@ function Z(e) {
   } = e, j = (0, i.Wu)([p.Z], () => p.Z.getOnboardingResponsesForPrompt(n.id, u.id)), _ = 0 === j.length && (null == u ? true : u.required), y = null == u ? true : u.options.filter(e => j.includes(e.id)), N = (0, h.L6)(y), P = (0, h.dX)(y), E = 0 === j.length, {
     helpText: Z,
     helpTextAdditional: I
-  } = (0, x.Z)({
+  } = (0, g.Z)({
     guild: n,
     prompt: u,
     selectedRoleIds: N,
@@ -225,7 +225,7 @@ function Z(e) {
               children: b.intl.string(b.t.Ur8Vrq)
             })]
           }) : null]
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(o.Heading, {
           className: O.title,
           variant: "heading-xl/semibold",
           color: "header-primary",
@@ -233,7 +233,7 @@ function Z(e) {
           children: u.title
         }), (0, r.jsx)("div", {
           className: O.promptOptions,
-          children: u.options.map(e => (0, r.jsx)(g.Z, {
+          children: u.options.map(e => (0, r.jsx)(x.Z, {
             guildId: n.id,
             option: e,
             onSelect: t => d(u.id, e.id, null != t && t),
@@ -244,7 +244,7 @@ function Z(e) {
         className: O.navButtons,
         children: [(0, r.jsx)("div", {
           className: O.leftButtons,
-          children: l > 0 && (0, r.jsx)(o.zxk, {
+          children: l > 0 && (0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "md",
             text: b.intl.string(b.t["13/7kZ"]),
@@ -262,7 +262,7 @@ function Z(e) {
           }), (0, r.jsx)(a.u, {
             asContainer: true,
             text: _ ? b.intl.string(b.t.dA1dSU) : null,
-            children: (0, r.jsx)(o.zxk, {
+            children: (0, r.jsx)(o.Button, {
               variant: E ? "secondary" : "primary",
               size: "md",
               text: s ? "".concat(b.intl.string(b.t["8SuVoK"]), " \uD83C\uDF89") : E ? b.intl.string(b.t["5WxrcX"]) : b.intl.string(b.t.PDTjLC),
@@ -287,22 +287,22 @@ function I(e) {
     completeOnboarding: d,
     setCurrentStep: p,
     headerId: h,
-    disableTracking: x
-  } = e, g = (0, i.e7)([u.Z], () => u.Z.getRulesPrompt(t.id));
+    disableTracking: g
+  } = e, x = (0, i.e7)([u.Z], () => u.Z.getRulesPrompt(t.id));
   l.useEffect(() => {
     t.features.has(_.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.ZP.fetchVerificationForm(t.id)
   }, [t]);
   let v = n[a],
-    b = a + 1 >= n.length && !P(t, g),
+    b = a + 1 >= n.length && !P(t, x),
     O = n[0].required;
   l.useEffect(() => {
-    x || m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
+    g || m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
       step: 0,
       required: O
     }))
-  }, [t.id, O, x]);
+  }, [t.id, O, g]);
   let C = e => {
-      !x && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
+      !g && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
         step: a,
         options_selected: e,
         skipped: 0 === e,
@@ -312,10 +312,10 @@ function I(e) {
       })), a < n.length - 1 && m.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, N(y({}, (0, s.hH)(t.id)), {
         step: a,
         required: n[a + 1].required
-      }))), a + 1 < n.length ? p(a + 1) : P(t, g) && p("rules")
+      }))), a + 1 < n.length ? p(a + 1) : P(t, x) && p("rules")
     },
     I = e => {
-      !x && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
+      !g && (m.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, N(y({}, (0, s.hH)(t.id)), {
         step: a,
         skipped: false,
         back: true,

@@ -82,16 +82,16 @@ let D = new WeakSet,
   L = null,
   x = 0,
   M = e => e && (e.host || M(e.parentNode)),
-  k = (e, t) => t.map(t => {
+  j = (e, t) => t.map(t => {
     if (e.contains(t)) return t;
     let n = M(t);
     return e.contains(n) ? n : null
   }).filter(e => null != e);
 
-function j(e, t, n, r) {
+function k(e, t, n, r) {
   let i = "data-floating-ui-inert",
     a = r ? "inert" : n ? "aria-hidden" : null,
-    o = k(t, e),
+    o = j(t, e),
     s = new Set,
     l = new Set(o),
     c = [];

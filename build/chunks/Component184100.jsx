@@ -19,7 +19,7 @@ function h(e) {
     numActions: h
   } = e, [l, p] = a.useState(i), {
     createMultipleConfetti: m
-  } = a.useContext(s.h);
+  } = a.useContext(r.h);
   return a.useEffect(() => {
     setTimeout(() => p(1), 200), setTimeout(() => {
       let e = window.innerWidth / 2,
@@ -39,7 +39,7 @@ function h(e) {
       }, 25)
     }, 700), setTimeout(t, 2e3)
   }, [m, t]), (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(o.X6q, {
+    children: [(0, n.jsx)(o.Heading, {
       className: c.heading,
       variant: "heading-xl/semibold",
       color: "header-primary",
@@ -47,7 +47,7 @@ function h(e) {
         count: h
       })
     }), (0, n.jsx)(o.Exd, {
-      foregroundGradientColor: [(0, r.Lq)(d.Ilk.GREEN_300), (0, r.Lq)(d.Ilk.GREEN_230)],
+      foregroundGradientColor: [(0, d.Lq)(s.Ilk.GREEN_300), (0, d.Lq)(s.Ilk.GREEN_230)],
       percent: 100 * l,
       animate: true
     })]

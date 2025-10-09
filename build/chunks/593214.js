@@ -1,10 +1,10 @@
 /** Chunk was on 95257 **/
 /** chunk id: 593214, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Mt: () => x,
-  li: () => h,
-  s4: () => f,
-  up: () => m,
+  Mt: () => C,
+  li: () => f,
+  s4: () => h,
+  up: () => p,
   zv: () => v
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
@@ -19,16 +19,16 @@ var Chunk853856 = require("./853856.js"),
   Chunk434065 = require("./434065.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function f(e) {
   let {
     favoritesEnabled: n,
     hasStaffPrivileges: t
-  } = (0, o.z)("useCanFavoriteChannel"), a = (0, l.e7)([c.Z], () => c.Z.isFavorite(e.id)), i = e.isDM() || e.isThread();
+  } = (0, c.z)("useCanFavoriteChannel"), a = (0, l.e7)([d.Z], () => d.Z.isFavorite(e.id)), i = e.isDM() || e.isThread();
   return n && !__OVERLAY__ && !a && (!i || t)
 }
 
-function f(e) {
-  return (0, l.e7)([c.Z], () => c.Z.getFavorite(e))
+function h(e) {
+  return (0, l.e7)([d.Z], () => d.Z.getFavorite(e))
 }
 
 function v() {
@@ -38,11 +38,11 @@ function v() {
   }))
 }
 
-function x() {
+function C() {
   return (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()) === Chunk981631.I_8
 }
 
-function m() {
+function p() {
   let {
     isFavoritesPerk: e
   } = (0, Chunk362658.z)("useFavoriteAdded"), n = (0, Chunk434065.r)(), t = Chunk647438.useCallback(() => {

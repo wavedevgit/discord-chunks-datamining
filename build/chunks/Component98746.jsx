@@ -45,8 +45,8 @@ function x() {
     label: Chunk388032.intl.string(Chunk388032.t.FA7IUl)
   }]
 }
-let O = x()[1].value,
-  C = x()[0].value;
+let C = x()[1].value,
+  O = x()[0].value;
 
 function S(t) {
   let {
@@ -56,14 +56,14 @@ function S(t) {
     userIds: b,
     onBanMultiple: S,
     transitionState: R,
-    onClose: Z,
-    canBulkBan: k = false,
-    modReportId: y
-  } = t, [E, M] = r.useState(null != y ? C : O), [T, _] = r.useState(""), [P, A] = r.useState(null), {
+    onClose: k,
+    canBulkBan: y = false,
+    modReportId: E
+  } = t, [M, Z] = r.useState(null != E ? O : C), [T, _] = r.useState(""), [P, A] = r.useState(null), {
     isModReportClosed: K,
     isModReport: N
   } = (0, o.cj)([v.Z], () => {
-    let t = v.Z.getChannel(y);
+    let t = v.Z.getChannel(E);
     return {
       isModReportClosed: null == t ? true : t.isArchivedThread(),
       isModReport: null == t ? true : t.isModeratorReportChannel()
@@ -75,23 +75,23 @@ function S(t) {
   }), I = r.useCallback(() => {
     let t = null != P ? P : T;
     if (null != S) {
-      if (!(null != b && (null == b ? true : b.size) > 0 && k) || w) return;
+      if (!(null != b && (null == b ? true : b.size) > 0 && y) || w) return;
       if ("" === T.trim() && !w) return void D(true);
-      S(e, [...b], E, t)
+      S(e, [...b], M, t)
     } else {
       if (null == n) return;
-      c.Z.banUser(e, null == n ? true : n.id, E, t, y).then(() => {
-        F && null != y && g.Z.resolveFlag(y)
+      c.Z.banUser(e, null == n ? true : n.id, M, t, E).then(() => {
+        F && null != E && g.Z.resolveFlag(E)
       })
     }
-    Y(d.jQ.BAN), Z()
-  }, [P, T, S, Y, Z, b, k, w, e, E, n, y, F]), X = r.useCallback(t => {
-    M(t)
+    Y(d.jQ.BAN), k()
+  }, [P, T, S, Y, k, b, y, w, e, M, n, E, F]), X = r.useCallback(t => {
+    Z(t)
   }, []), q = r.useCallback(t => {
     _(t), D(false), A(null)
-  }, []), J = r.useCallback(t => {
+  }, []), L = r.useCallback(t => {
     A(t), w && D(false)
-  }, [w]), L = N && !K && null != y, W = [{
+  }, [w]), W = N && !K && null != E, B = [{
     name: f.intl.string(f.t.tamLhY),
     value: f.intl.string(f.t.tamLhY)
   }, {
@@ -103,34 +103,34 @@ function S(t) {
   }, {
     name: f.intl.string(f.t.BcZTKi),
     value: "other"
-  }], B = (() => {
+  }], H = (() => {
     if (null != S && null != b) return f.intl.formatToPlainString(f.t.HVJexc, {
       count: null == b ? true : b.size
     });
     if (null == n) return "";
     let t = h.ZP.getName(e, null, n);
-    return f.intl.formatToPlainString(null != y ? f.t.WDR8XV : f.t.jeKpoq, {
+    return f.intl.formatToPlainString(null != E ? f.t.WDR8XV : f.t.jeKpoq, {
       username: "@".concat(t)
     })
-  })(), H = null == y ? null : f.intl.string(f.t.pQjhIC);
+  })(), J = null == E ? null : f.intl.string(f.t.pQjhIC);
   return (0, l.jsx)(u.Modal, {
-    onClose: Z,
+    onClose: k,
     transitionState: R,
-    title: B,
-    subtitle: null != H ? H : true,
+    title: H,
+    subtitle: null != J ? J : true,
     actions: (() => {
       let t = [];
       return N || t.push({
         variant: "secondary",
         text: f.intl.string(f.t["ETE/oK"]),
-        onClick: Z
+        onClick: k
       }), t.push({
         variant: "critical-primary",
         text: f.intl.string(f.t["5MBJ5O"]),
         onClick: I
       }), t
     })(),
-    actionBarInput: L ? (0, l.jsx)(s.XZJ, {
+    actionBarInput: W ? (0, l.jsx)(s.Checkbox, {
       checked: F,
       onChange: t => U(t),
       label: f.intl.string(j.default["8yIKen"])
@@ -146,9 +146,9 @@ function S(t) {
           children: f.intl.string(f.t.IrYX19)
         }), (0, l.jsx)(s.FXm, {
           required: true,
-          label: f.intl.string(null != y ? f.t["+KCLVl"] : f.t.w4Ivys),
+          label: f.intl.string(null != E ? f.t["+KCLVl"] : f.t.w4Ivys),
           value: T,
-          options: W.map(t => (function(t) {
+          options: B.map(t => (function(t) {
             for (var e = 1; e < arguments.length; e++) {
               var n = null != arguments[e] ? arguments[e] : {},
                 l = Object.keys(n);
@@ -173,16 +173,16 @@ function S(t) {
           }),
           children: (0, l.jsx)(s.Kx8, {
             maxLength: p.GNZ,
-            onChange: J,
+            onChange: L,
             value: null != P ? P : "",
             rows: 5,
             autoFocus: true
           })
         })]
       }), (0, l.jsx)(s.q4e, {
-        label: f.intl.string(null != y ? f.t.ERSM8P : f.t["8l3W09"]),
+        label: f.intl.string(null != E ? f.t.ERSM8P : f.t["8l3W09"]),
         options: x(),
-        value: E,
+        value: M,
         onChange: X
       })]
     })

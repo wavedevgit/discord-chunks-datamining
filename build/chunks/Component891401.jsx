@@ -40,7 +40,7 @@ function m() {
       })]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk715639.tenureBadgeControls,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Reset Level Up DC",
         onClick: module

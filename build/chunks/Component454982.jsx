@@ -21,7 +21,7 @@ function _(e) {
     transitionState: n
   } = e, i = () => (0, r.jsxs)("div", {
     className: f.errorBody,
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xl/semibold",
       children: d.intl.string(d.t.iufib2)
     }), (0, r.jsx)(s.Text, {
@@ -70,7 +70,7 @@ let p = function(e) {
     className: f.headerContainer,
     children: [(0, r.jsx)("div", {
       className: f.art
-    }), (0, r.jsx)(s.X6q, {
+    }), (0, r.jsx)(s.Heading, {
       variant: "heading-xl/semibold",
       children: d.intl.string(d.t["23BfZm"])
     }), (0, r.jsx)(s.Text, {

@@ -50,7 +50,7 @@ function x(e) {
     isHoveringOrFocusing: b
   } = (0, _.Z)(D), V = t.collectiblesItem, {
     analyticsLocations: z
-  } = (0, I.ZP)(), B = (0, a.TH)(), G = V.type, [K] = (0, d.Wu)([Z.Z], () => [Z.Z.hasSentGift(t.skuId, i.id)], [t.skuId, i.id]), Q = !K && b, Y = K ? true : t.skuName, J = x ? N.t.FdGl5O : N.t.ilhtIS, X = x ? true : h.OgN, $ = (0, l.jsx)("div", {
+  } = (0, I.ZP)(), B = (0, a.TH)(), G = V.type, [K] = (0, o.Wu)([Z.Z], () => [Z.Z.hasSentGift(t.skuId, i.id)], [t.skuId, i.id]), Q = !K && b, Y = K ? true : t.skuName, J = x ? N.t.FdGl5O : N.t.ilhtIS, X = x ? true : h.OgN, $ = (0, l.jsx)("div", {
     className: R.cardStateIconWrapper,
     children: (0, l.jsx)(h.sV5, {
       size: "custom",
@@ -61,7 +61,7 @@ function x(e) {
     })
   }), q = (0, l.jsx)("div", {
     className: R.overlay,
-    children: (0, l.jsx)(h.zxk, {
+    children: (0, l.jsx)(h.Button, {
       focusProps: {
         ringTarget: D
       },
@@ -116,7 +116,7 @@ function x(e) {
   return (0, l.jsxs)("div", {
     ref: F,
     className: R.container,
-    children: [(0, l.jsxs)(o.u, {
+    children: [(0, l.jsxs)(d.u, {
       asContainer: true,
       text: Y,
       children: [(0, l.jsxs)("div", {

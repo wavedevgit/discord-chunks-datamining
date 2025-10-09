@@ -30,12 +30,12 @@ function Z(e) {
     applicationId: t,
     customId: n,
     linkId: Z,
-    message: O,
-    onClose: P,
-    onCopyLink: _,
+    message: P,
+    onClose: _,
+    onCopyLink: O,
     onShare: C,
     transitionState: L
-  } = e, [T] = (0, c.Z)([t]), N = (0, i.e7)([h.default], () => h.default.getCurrentUser()), [w, D] = l.useState(false), [R, M] = l.useState(""), [k, A] = l.useState("");
+  } = e, [T] = (0, c.Z)([t]), N = (0, i.e7)([p.default], () => p.default.getCurrentUser()), [w, D] = l.useState(false), [R, k] = l.useState(""), [M, A] = l.useState("");
   l.useEffect(() => {
     A((0, o.H)({
       applicationId: t,
@@ -46,28 +46,28 @@ function Z(e) {
   }, [t, N, n, Z, A]);
   let I = l.useRef(0),
     [U, H] = l.useState([]),
-    q = U.length,
-    F = q >= 5;
+    F = U.length,
+    q = F >= 5;
   l.useEffect(() => {
     if ("" === R) {
       var e;
-      null == (e = G.current) || e.focus()
+      null == (e = z.current) || e.focus()
     }
   }, [R]);
-  let z = l.useCallback(() => {
-      M("")
-    }, [M]),
-    G = l.useRef(null),
+  let G = l.useCallback(() => {
+      k("")
+    }, [k]),
+    z = l.useRef(null),
     {
-      results: V,
-      updateSearchText: W
+      results: W,
+      updateSearchText: V
     } = (0, b.s)({
       selectedDestinations: U,
       includeMissingDMs: true
     }),
     Q = l.useCallback(e => {
-      M(e), W(e)
-    }, [M, W]),
+      k(e), V(e)
+    }, [k, V]),
     X = l.useCallback(e => {
       H(t => {
         let n = t.findIndex(t => {
@@ -77,40 +77,40 @@ function Z(e) {
           } = t;
           return n === e.type && r === e.id
         });
-        if (false === n) return F ? t : (M(""), I.current += 1, [e, ...t]);
+        if (false === n) return q ? t : (k(""), I.current += 1, [e, ...t]);
         let r = [...t];
         return r.splice(n, 1), I.current += 1, r
       })
-    }, [F]),
+    }, [q]),
     J = l.useCallback(async e => {
       if (null == T) return;
-      let t = (0, y.P)(O, T, k);
+      let t = (0, y.P)(P, T, M);
       D(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
-        let n = p.Z.getChannel(e);
+        let n = h.Z.getChannel(e);
         null != n && await u.Z.sendMessage(e, d.ZP.parse(n, t), false, {
           location: v.dy.ACTIVITY_SHARE
         })
       }), (0, s.showToast)((0, s.createToast)(S.intl.formatToPlainString(S.t.jQULqK, {
         applicationName: T.name
-      }), s.ToastType.SUCCESS)), C(true), P()
-    }, [O, k, P, C, T]),
+      }), s.ToastType.SUCCESS)), C(true), _()
+    }, [P, M, _, C, T]),
     B = l.useCallback(() => {
-      (0, m.JG)(k, () => {
-        _(), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t["t5VZ8/"]), s.ToastType.SUCCESS))
+      (0, m.JG)(M, () => {
+        O(), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t["t5VZ8/"]), s.ToastType.SUCCESS))
       })
-    }, [k, _]),
-    K = V.length > 0 ? (0, r.jsx)(x.Q, {
+    }, [M, O]),
+    K = W.length > 0 ? (0, r.jsx)(x.Q, {
       paddingBottom: 8,
       paddingTop: 8,
-      rowData: V,
+      rowData: W,
       handleToggleDestination: X,
       selectedDestinations: U,
-      disableSelection: F
+      disableSelection: q
     }) : (0, r.jsxs)("div", {
-      className: E.noResults,
+      className: j.noResults,
       children: [(0, r.jsx)("img", {
-        className: E.noResultsImg,
-        src: j,
+        className: j.noResultsImg,
+        src: E,
         alt: ""
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
@@ -120,15 +120,15 @@ function Z(e) {
     });
   return (0, r.jsx)(a.Modal, {
     transitionState: L,
-    onClose: P,
+    onClose: _,
     title: S.intl.string(S.t.r9qKo6),
-    subtitle: O,
+    subtitle: P,
     size: "md",
     input: (0, r.jsx)(s.E1j, {
-      ref: G,
+      ref: z,
       query: R,
       onChange: Q,
-      onClear: z,
+      onClear: G,
       placeholder: S.intl.string(S.t["5h0QOD"]),
       "aria-label": S.intl.string(S.t["5h0QOD"]),
       autoFocus: true
@@ -142,7 +142,7 @@ function Z(e) {
       variant: "primary",
       onClick: () => J(U),
       loading: w,
-      disabled: !(q > 0)
+      disabled: !(F > 0)
     }],
     children: K
   })

@@ -28,7 +28,7 @@ function p(e) {
   }, []);
   return null == t.categories || 0 === t.categories.length ? null : (0, r.jsxs)("div", {
     className: n,
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.s7ialZ)

@@ -51,7 +51,7 @@ function v(e) {
     });
   return (0, r.jsxs)(l.Modal, {
     title: y.name,
-    subtitle: b.intl.format(b.t.xImSen, {
+    subtitle: g.intl.format(g.t.xImSen, {
       productType: C,
       personName: null != (n = null == L ? true : L.name) ? n : ""
     }),
@@ -69,26 +69,26 @@ function v(e) {
     children: [(0, r.jsx)(x.e, {
       height: 267,
       listing: y,
-      className: g.headerImage,
+      className: b.headerImage,
       alt: ""
     }), (0, r.jsxs)("div", {
-      className: g.body,
+      className: b.body,
       children: [(0, r.jsx)(j.Z, {
         listing: y
       }), (0, r.jsx)(c.LZC, {
         size: 16
       }), (0, r.jsx)("div", {
-        className: g.seperator
+        className: b.seperator
       }), (0, r.jsx)(c.LZC, {
         size: 16
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, r.jsx)(c.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        children: b.intl.string(b.t.TNnDJi)
+        children: g.intl.string(g.t.TNnDJi)
       }), (0, r.jsx)(c.LZC, {
         size: 12
       }), (0, r.jsx)(m.Z, {
-        className: g.description,
+        className: b.description,
         variant: "text-md/normal",
         color: "text-muted",
         text: y.description

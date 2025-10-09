@@ -39,7 +39,7 @@ function S(e) {
     totalNumberOfParticipants: N
   } = e, A = (0, m.bp)() === j.IlC.POPOUT, w = (0, o.e7)([C.Z], () => C.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: M
-  } = (0, x.d)(), R = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), L = r.useCallback(() => {
+  } = (0, x.d)(), R = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), L = (0, b.bt)(I.id, t), D = r.useCallback(() => {
     (0, a.j)(() => {
       x.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
@@ -53,14 +53,14 @@ function S(e) {
       })
     })
   }, [I.id, M]);
-  let D = (0, o.e7)([y.Z], () => I.isPrivate() || (0, f.b)(y.Z, w, I), [w, I]),
+  let k = (0, o.e7)([y.Z], () => I.isPrivate() || (0, f.b)(y.Z, w, I), [w, I]),
     U = (null == w ? true : w.afkChannelId) === I.id,
     B = I.userLimit <= 0 || I.userLimit > 1,
     H = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
     V = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     F = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     G = null != M && M === I.id,
-    z = k.map(e => t => (0, i.jsx)(v.ZP, {
+    z = L.map(e => t => (0, i.jsx)(v.ZP, {
       participant: e,
       channel: I,
       className: E.tile,
@@ -76,18 +76,18 @@ function S(e) {
     name: l.ImpressionNames.CHANNEL_CALL_VIDEO_GRID_VIEW,
     properties: {
       total_participants: N,
-      can_invite: D,
+      can_invite: k,
       is_afk_channel: U,
       channel_user_limit: I.userLimit
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(R >= 2) || !H || F || V || G ? B && 1 === R && D && (H && !F ? z.push(e => (0, i.jsx)(_.h, {
+  }, []), null != w && !U && (!(R >= 2) || !H || F || V || G ? B && 1 === R && k && (H && !F ? z.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: L,
+    handleClose: D,
     userParticipantCount: R
   })) : z.push(e => (0, i.jsx)(O.Z, {
     width: e,
@@ -99,13 +99,13 @@ function S(e) {
     guild: w,
     width: e,
     inPopout: A,
-    handleClose: L,
+    handleClose: D,
     userParticipantCount: R
   })));
   let W = r.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = k[e]) ? true : t.id) ? n : "empty-tile"
-  }, [k]);
+    return null != (n = null == (t = L[e]) ? true : t.id) ? n : "empty-tile"
+  }, [L]);
   return (0, i.jsx)(g.Z, {
     className: Z,
     keyExtractor: W,

@@ -76,7 +76,7 @@ let T = e => {
         guildName: null == n ? true : n.name
       }))
     }, [t, n]);
-    return (0, i.jsx)(c.X6q, {
+    return (0, i.jsx)(c.Heading, {
       variant: "heading-xl/normal",
       children: l
     })
@@ -132,7 +132,7 @@ let T = e => {
       classificationTypeText: t,
       policyExplainerLink: n
     } = e;
-    return (0, i.jsxs)(c.eee, {
+    return (0, i.jsxs)(c.Anchor, {
       href: n,
       className: P.classificationPolicyCard,
       useDefaultUnderlineStyles: false,
@@ -140,7 +140,7 @@ let T = e => {
         className: P.classificationPolicyCardIcon,
         children: (0, i.jsx)(c.b7C, {
           size: "md",
-          color: r.Z.colors.FOCUS_PRIMARY
+          color: s.Z.colors.FOCUS_PRIMARY
         })
       }), (0, i.jsx)("div", {
         className: P.classificationPolicyDescriptionContainer,
@@ -154,7 +154,7 @@ let T = e => {
         className: P.classificationPolicyLinkIcon,
         children: (0, i.jsx)(c.Fbu, {
           size: "md",
-          color: r.Z.colors.INTERACTIVE_NORMAL
+          color: s.Z.colors.INTERACTIVE_NORMAL
         })
       })]
     })
@@ -168,7 +168,7 @@ let T = e => {
     variant: "text-md/normal",
     color: "text-muted",
     children: A.intl.format(A.t.IFxUaW, {
-      letUsKnowHook: (t, n) => (0, i.jsx)(c.eee, {
+      letUsKnowHook: (t, n) => (0, i.jsx)(c.Anchor, {
         href: e.isAppealEligible ? true : e.appealLink,
         onClick: e.letUsKnowClick,
         children: t
@@ -214,7 +214,7 @@ let T = e => {
     let {
       classificationId: n,
       source: l,
-      onError: r,
+      onError: s,
       onClose: c
     } = e, {
       classification: m,
@@ -250,7 +250,7 @@ let T = e => {
         is_dsa_eligible: i,
         violation_type: l
       })
-    }, [Z]), null == m && A === h.OY.FAILED) ? (r(), null) : null == m ? null : (0, i.jsxs)("div", {
+    }, [Z]), null == m && A === h.OY.FAILED) ? (s(), null) : null == m ? null : (0, i.jsxs)("div", {
       className: P.classificationContainer,
       children: [(0, i.jsx)("div", {
         className: P.section,
@@ -282,7 +282,7 @@ let T = e => {
                 is_dsa_eligible: w,
                 violation_type: L
               }), M ? f.Z.open(n, c) : C && (u.Z.increment({
-                name: s.V.APPEAL_INGESTION_VIEW
+                name: r.V.APPEAL_INGESTION_VIEW
               }), x.Z.open(n))
             },
             isAppealEligible: C || M

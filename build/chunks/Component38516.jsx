@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 38516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 }), require("./415506.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,26 +21,26 @@ function p(e) {
     website: t,
     trackClick: n
   } = e, {
-    action: i,
+    action: r,
     icon: l,
     title: u
   } = function(e) {
     switch (e.category) {
       case a.p.OFFICIAL:
         return {
-          icon: (0, r.jsx)(o.enf, {
+          icon: (0, i.jsx)(o.enf, {
             colorClass: m.linkIcon
           }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvr)
         };
       case a.p.TWITTER:
         return {
-          icon: (0, r.jsx)(o.TAi, {
+          icon: (0, i.jsx)(o.TAi, {
             colorClass: m.linkIcon
           }), action: c.as.XLink, title: d.intl.string(d.t["INic4+"])
         };
       case a.p.YOUTUBE:
         return {
-          action: c.as.YouTubeLink, icon: (0, r.jsx)(o.$5w, {
+          action: c.as.YouTubeLink, icon: (0, i.jsx)(o.$5w, {
             colorClass: m.linkIcon
           }), title: d.intl.string(d.t.lNmxbG)
         };
@@ -48,11 +48,11 @@ function p(e) {
         throw Error("Unknown IGDB website category")
     }
   }(t);
-  return (0, r.jsx)(s.u, {
+  return (0, i.jsx)(s.u, {
     __unsupportedReactNodeAsText: t.url,
-    children: (0, r.jsx)(o.eee, {
+    children: (0, i.jsx)(o.Anchor, {
       onClick: () => {
-        n(i)
+        n(r)
       },
       className: m.linkAnchor,
       title: u,
@@ -62,27 +62,27 @@ function p(e) {
     })
   })
 }
-let x = function(e) {
+let g = function(e) {
   let {
     detectedGame: t,
     trackClick: n
   } = e;
   if (null == t.websites) return null;
-  let i = t.websites.filter(e => {
+  let r = t.websites.filter(e => {
     let {
       category: t
     } = e;
     return f.includes(t)
   }).sort((e, t) => e.category - t.category);
-  return 0 === i.length ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.X6q, {
+  return 0 === r.length ? null : (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(o.Heading, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: d.intl.string(d.t.Oj3o19)
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: l()(u.row, u.gapMd),
-      children: i.map(e => (0, r.jsx)(p, {
+      children: r.map(e => (0, i.jsx)(p, {
         website: e,
         trackClick: n
       }, e.url))

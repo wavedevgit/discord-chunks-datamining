@@ -53,7 +53,7 @@ function x() {
   }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [P && (0, Chunk951288.jsxs)("div", {
       className: Chunk755350.gameSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk948208.default.BOWmmZ)
       }), (0, Chunk951288.jsx)("div", {
@@ -68,7 +68,7 @@ function x() {
       className: r()(Chunk755350.gameSection, {
         [Chunk755350.disabled]: h
       }),
-      children: [P && (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [P && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         children: Chunk388032.intl.string(Chunk948208.default.NIwDqa)
       }), (0, Chunk951288.jsx)("div", {

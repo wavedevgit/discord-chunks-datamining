@@ -73,8 +73,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 190,
-  j = 178,
+let j = 190,
+  k = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
     let {
@@ -248,7 +248,7 @@ let F = e => {
         className: P.header,
         children: [(0, r.jsxs)("div", {
           className: P.heading,
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: "heading-lg/bold",
             children: R.intl.string(R.t["5/knv7"])
           }), (0, r.jsx)(p.Z, {})]
@@ -348,7 +348,7 @@ let F = e => {
     } = e;
     return (0, r.jsxs)("div", {
       className: P.footer,
-      children: [(0, r.jsx)(c.zxk, {
+      children: [(0, r.jsx)(c.Button, {
         variant: "secondary",
         text: R.intl.string(R.t.w2Qbd3),
         onClick: () => {
@@ -422,7 +422,7 @@ let F = e => {
       tooltipContentClassName: P.tooltip,
       text: u,
       shouldShow: !!s,
-      children: e => (0, r.jsx)(c.zxk, M(L({}, e), {
+      children: e => (0, r.jsx)(c.Button, M(L({}, e), {
         onClick: o,
         disabled: s,
         text: l
@@ -435,8 +435,8 @@ let F = e => {
       className: Chunk393919.error,
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
-        width: j,
-        height: k
+        width: k,
+        height: j
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)

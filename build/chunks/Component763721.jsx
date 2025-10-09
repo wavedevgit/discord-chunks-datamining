@@ -138,7 +138,7 @@ let h = [{
             leading: b(t),
             trailing: y(n),
             maxLength: 500
-          })), "tags" === t ? (0, r.jsx)(o.zxk, {
+          })), "tags" === t ? (0, r.jsx)(o.Button, {
             text: "Reset Tags",
             size: "sm",
             variant: "secondary",

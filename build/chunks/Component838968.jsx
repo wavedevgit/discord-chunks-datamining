@@ -132,7 +132,7 @@ function p(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         className: g.headerContainer,
-        children: (0, r.jsx)(o.X6q, {
+        children: (0, r.jsx)(o.Heading, {
           color: t,
           variant: "heading-md/bold",
           children: n

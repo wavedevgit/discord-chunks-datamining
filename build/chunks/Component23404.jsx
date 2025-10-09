@@ -62,7 +62,7 @@ function x(e) {
       src: (0, b.fh)(n, b.eC.GAME_TILE, u).url
     }), (0, r.jsxs)("div", {
       className: j.headingCopy,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
         children: d ? N.intl.string(N.t.XBboAA) : N.intl.formatToPlainString(N.t.EQa7oq, {
@@ -192,28 +192,28 @@ function A(e) {
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
       className: j.ctas,
-      children: [!U && (0, r.jsxs)(s.hE2, {
+      children: [!U && (0, r.jsxs)(s.ButtonGroup, {
         size: "sm",
         direction: V ? "vertical" : "horizontal",
         fullWidth: true,
-        children: [(0, r.jsx)(s.zxk, {
+        children: [(0, r.jsx)(s.Button, {
           variant: "secondary",
           text: N.intl.string(N.t.LLLLPD),
           onClick: k
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(s.Button, {
           variant: "primary",
           text: z,
           onClick: R,
           loading: O,
           icon: (0, I.gF)(b)
         })]
-      }), U && !G && (0, r.jsx)(s.zxk, {
+      }), U && !G && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
         text: N.intl.string(N.t.VN1Ajo),
         onClick: D
-      }), G && (0, r.jsx)(s.zxk, {
+      }), G && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,

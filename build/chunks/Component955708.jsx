@@ -2,7 +2,7 @@
 /** chunk id: 955708, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => _,
-  x: () => g
+  x: () => m
 }), require("./388685.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +15,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk35853 = require("./35853.js");
 
-function h(t) {
+function g(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       i = Object.keys(n);
@@ -34,7 +34,7 @@ function h(t) {
   return t
 }
 
-function m(t, e) {
+function h(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -46,13 +46,13 @@ function m(t, e) {
     Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
   }), t
 }
-var g = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
+var m = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
 let _ = t => {
   let {
     warningId: e,
     warningType: n,
     senderId: i,
-    modalProps: g,
+    modalProps: m,
     channelId: _
   } = t, [f, b] = s.useState(0), O = s.useMemo(() => ({
     channelId: _,
@@ -62,12 +62,12 @@ let _ = t => {
     isNudgeWarning: false
   }), [_, i, e, n]);
   s.useEffect(() => {
-    (0, c.KQ)(m(h({}, O), {
+    (0, c.KQ)(h(g({}, O), {
       viewName: c.pb.SAFETY_TAKEOVER_MODAL
     }))
   }, [O]);
   let v = s.useCallback(t => {
-      (0, c.qc)(m(h({}, O), {
+      (0, c.qc)(h(g({}, O), {
         cta: t
       }))
     }, [O]),
@@ -78,10 +78,10 @@ let _ = t => {
   }
   return (0, r.jsxs)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: g.transitionState,
+    transitionState: m.transitionState,
     parentComponent: "InappropriateConversationModal",
     children: [(0, r.jsx)("div", {
-      className: p.container,
+      className: x.container,
       children: (0, r.jsxs)(a.MyZ, {
         width: 440,
         activeSlide: f,
@@ -119,19 +119,19 @@ let _ = t => {
       })
     }), (0, r.jsxs)(a.mzw, {
       "data-migration-pending": true,
-      className: p.footer,
+      className: x.footer,
       children: [(0, r.jsx)(a.Avr, {
         variant: "secondary",
         size: "sm",
-        text: x.intl.string(x.t.cpT0Cg),
+        text: p.intl.string(p.t.cpT0Cg),
         onClick: function() {
-          g.onClose(), (0, o.T)(_, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
+          m.onClose(), (0, o.T)(_, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
         },
         textVariant: "text-sm/normal"
       }), 0 !== f && (0, r.jsx)(a.Avr, {
         variant: "secondary",
         size: "sm",
-        text: x.intl.string(x.t["13/7kZ"]),
+        text: p.intl.string(p.t["13/7kZ"]),
         textVariant: "text-sm/normal",
         onClick: () => E(0)
       })]

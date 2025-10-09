@@ -26,7 +26,7 @@ class u extends Chunk647438.PureComponent {
       }, t)
     });
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
         children: Chunk388032.intl.string(Chunk388032.t["gWbr/f"])
       }), (0, Chunk481250.VE)(exports)]

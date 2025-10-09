@@ -103,7 +103,7 @@ let b = function(e) {
   }) : null, [l, s]);
   return null == o ? null : (0, r.jsxs)("div", {
     className: m.overviewContainer,
-    children: [(0, r.jsx)(c.X6q, {
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: p.intl.string(p.t.txraKS)

@@ -18,7 +18,7 @@ function l(e) {
     children: [(0, a.jsxs)(s.xBx, {
       separator: false,
       className: i.header,
-      children: [(0, a.jsx)(s.X6q, {
+      children: [(0, a.jsx)(s.Heading, {
         className: i.title,
         variant: "heading-xl/semibold",
         children: r.intl.string(r.t["8O+nFx"])
@@ -47,7 +47,7 @@ function l(e) {
       children: (0, a.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: i.__invalid_submit,
-        children: (0, a.jsx)(s.zxk, {
+        children: (0, a.jsx)(s.Button, {
           variant: "primary",
           text: r.intl.string(r.t.BddRzc),
           onClick: n

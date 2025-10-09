@@ -48,7 +48,7 @@ function _() {
         action: Chunk292352.YC.ShowQRCodeModal
       })
     };
-  return (0, Chunk951288.jsx)(Chunk481060.zxk, {
+  return (0, Chunk951288.jsx)(Chunk481060.Button, {
     icon: Chunk481060.IkH,
     variant: "primary",
     text: module,

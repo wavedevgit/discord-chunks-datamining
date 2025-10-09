@@ -2,7 +2,7 @@
 /** chunk id: 474024, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,32 +20,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk109229 = require("./109229.js");
 
-function b(e) {
+function x(e) {
   var t;
   let {
     profile: n,
     canManageGuild: l
-  } = e, b = n.id, j = s.Y.VISIBLE.has(n.visibility), v = (0, o.e7)([d.Z], () => {
+  } = e, x = n.id, j = s.Y.VISIBLE.has(n.visibility), v = (0, o.e7)([d.Z], () => {
     var e;
-    return (null == (e = d.Z.getProfile(b)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
-  }, [b]), _ = i.useRef(null);
+    return (null == (e = d.Z.getProfile(x)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
+  }, [x]), _ = i.useRef(null);
   (0, p.Z)(_, f.KsC.PROFILE_VISIBILITY);
   let C = i.useCallback(() => {
-      j ? m.Z.updateGuildProfile(b, {
+      j ? m.Z.updateGuildProfile(x, {
         visibility: u.k.RESTRICTED
-      }) : m.Z.updateGuildProfile(b, {
+      }) : m.Z.updateGuildProfile(x, {
         visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
-    }, [b, v, j]),
+    }, [x, v, j]),
     O = i.useCallback(() => {
       m.Z.setSection(f.pNK.ACCESS, f.KsC.ACCESS_DISCOVERABLE)
     }, []),
     y = null == (t = n.features) ? true : t.includes(f.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: x.twoColumnContainer,
+    className: b.twoColumnContainer,
     ref: _,
     children: [(0, r.jsxs)("div", {
-      className: x.column,
+      className: b.column,
       children: [(0, r.jsx)(c.rsf, {
         label: h.intl.string(h.t.fjHWen),
         description: h.intl.string(h.t.J1YOV1),
@@ -56,18 +56,18 @@ function b(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: h.intl.format(h.t.R8jY9v, {
-          accessLink: (e, t) => (0, r.jsx)(c.eee, {
+          accessLink: (e, t) => (0, r.jsx)(c.Anchor, {
             onClick: O,
             children: e
           }, t)
         })
       })]
     }), (0, r.jsx)("div", {
-      className: a()(x.column, {
-        [x.profileViewDisabled]: j
+      className: a()(b.column, {
+        [b.profileViewDisabled]: j
       }),
       children: (0, r.jsx)(g.Z, {
-        guildId: b,
+        guildId: x,
         name: null
       })
     })]

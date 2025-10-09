@@ -114,7 +114,7 @@ function S(e) {
             src: E,
             alt: "",
             className: g.asset
-          }), (0, r.jsx)(l.X6q, {
+          }), (0, r.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             children: n.title
           }), (0, r.jsx)(l.Text, {
@@ -139,7 +139,7 @@ function S(e) {
             src: E,
             alt: "",
             className: g.asset
-          }), (0, r.jsx)(l.X6q, {
+          }), (0, r.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             children: m.intl.string(m.t.KTjjrK)
           }), (0, r.jsx)(l.Text, {
@@ -151,7 +151,7 @@ function S(e) {
           "data-migration-pending": true,
           children: (0, r.jsxs)("div", {
             className: g.closeButtonContainer,
-            children: [(0, r.jsx)(l.zxk, {
+            children: [(0, r.jsx)(l.Button, {
               variant: "primary",
               text: m.intl.string(m.t.cpT0Cg),
               onClick: o

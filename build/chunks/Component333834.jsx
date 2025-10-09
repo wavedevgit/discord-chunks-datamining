@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -52,7 +52,7 @@ function T(e) {
       gap: 4,
       direction: "horizontal",
       align: "center",
-      children: [(0, r.jsx)(p.X6q, {
+      children: [(0, r.jsx)(p.Heading, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: Z.messagesGroupHeader,

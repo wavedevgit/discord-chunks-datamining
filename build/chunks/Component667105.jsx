@@ -5,9 +5,9 @@ require.d(exports, {
   DH: () => Z,
   Ks: () => B,
   Ws: () => V,
-  g2: () => j,
+  g2: () => k,
   gF: () => H,
-  hf: () => k,
+  hf: () => j,
   k3: () => U,
   qN: () => F
 }), require("./388685.js");
@@ -81,7 +81,7 @@ function M(e, t) {
   }), e
 }
 
-function k(e) {
+function j(e) {
   let {
     quest: t,
     questContent: n,
@@ -105,7 +105,7 @@ function k(e) {
     }) : (0, C.B)())
   }, [t, d, n, r, a, c, u, s])
 }
-let j = e => {
+let k = e => {
     let {
       useReducedMotion: t,
       className: n
@@ -188,7 +188,7 @@ function B(e) {
     isVideoQuest: b,
     inGameQuest: y,
     sourceQuestContent: v
-  } = e, I = k({
+  } = e, I = j({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -198,7 +198,7 @@ function B(e) {
     quest: n
   }), D = (0, E.Rf)(n), x = i.useCallback(() => {
     (0, u.$)()
-  }, []), j = i.useCallback(() => {
+  }, []), k = i.useCallback(() => {
     (0, d.Y)({
       pageType: R.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: R.jXE.QUEST_TILE_CTA,
@@ -367,13 +367,13 @@ function B(e) {
         else if ((0, m.xN)(n.config)) return {
           tooltipText: null,
           text: w.intl.string(w.t.WYchdX),
-          onClick: j
+          onClick: k
         };
         return M(L({}, i), {
           text: w.intl.string(w.t.bAGFz8)
         })
     }
-  }, [r, b, C, _, I, a, n, o, s, f, U, D, x, j, y, B, v, F, Z])
+  }, [r, b, C, _, I, a, n, o, s, f, U, D, x, k, y, B, v, F, Z])
 }
 
 function Z() {

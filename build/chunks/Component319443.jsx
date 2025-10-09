@@ -1,7 +1,7 @@
 /** Chunk was on 69844 **/
 /** chunk id: 319443, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => U
+  default: () => z
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,7 +57,7 @@ function B(e) {
         icon: c.j9r,
         onClick: i
       })
-    }), (0, r.jsx)(c.X6q, {
+    }), (0, r.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: G.detailHeader,
@@ -78,7 +78,7 @@ function B(e) {
   })
 }
 
-function z() {
+function U() {
   let e = Chunk647438.useCallback(() => {
       (0, Chunk881294.qF)()
     }, []),
@@ -112,7 +112,7 @@ function z() {
     })]
   })
 }
-let U = function() {
+let z = function() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk314897.default], () => !Chunk314897.default.isAuthenticated()),
     {
@@ -121,19 +121,19 @@ let U = function() {
       resetScrollPosition: y
     } = (0, Chunk979233.M)(),
     R = (0, Chunk258971.Xh)(),
-    U = (0, Chunk881294.nu)(),
+    z = (0, Chunk881294.nu)(),
     F = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.CATEGORY ? Chunk548514.categoryId : true,
     {
-      applicationId: V,
-      section: H
+      applicationId: H,
+      section: V
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.APPLICATION ? Chunk548514 : {},
     {
       query: Y,
       categoryId: W
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH ? Chunk548514 : {},
-    X = (0, Chunk442837.e7)([Chunk678694.Z], () => Chunk678694.Z.getCategories()),
-    q = Chunk647438.useMemo(() => [(0, Chunk216780.KQ)(), ...X], [X]),
-    K = Chunk647438.useMemo(() => q.find(e => e.id === Number(W)), [q, W]),
+    K = (0, Chunk442837.e7)([Chunk678694.Z], () => Chunk678694.Z.getCategories()),
+    X = Chunk647438.useMemo(() => [(0, Chunk216780.KQ)(), ...K], [K]),
+    q = Chunk647438.useMemo(() => X.find(e => e.id === Number(W)), [X, W]),
     {
       tabs: Q,
       selectedTab: J,
@@ -162,8 +162,8 @@ let U = function() {
   }, [er, en, null == ea ? true : ea.id]), Chunk647438.useEffect(() => {
     Chunk471518.CP()
   }, []), Chunk647438.useEffect(() => {
-    U && Chunk471518.g5()
-  }, [U]), Chunk647438.useEffect(() => Chunk258971.aQ.setState({
+    z && Chunk471518.g5()
+  }, [z]), Chunk647438.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
   let {
@@ -172,7 +172,7 @@ let U = function() {
     location: "GlobalDiscoveryAppsRoot"
   }, {
     autoTrackExposure: true
-  }), el = null != V, es = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH, {
+  }), el = null != H, es = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH, {
     searchQuery: eo,
     onSearchTextChange: ec,
     onClearSearch: ed,
@@ -203,7 +203,7 @@ let U = function() {
       scrollHeight: r,
       location: a
     } = e;
-    t > 0 && (0, P.zZ)(D.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
+    t > 0 && (0, P.zZ)(k.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })
@@ -219,14 +219,14 @@ let U = function() {
     className: l()(Chunk813525.outerContainer, {
       [Chunk813525.loggedOutContainer]: exports
     }),
-    children: [exports ? (0, Chunk951288.jsx)(z, {}) : null, (0, Chunk951288.jsxs)("div", {
+    children: [exports ? (0, Chunk951288.jsx)(U, {}) : null, (0, Chunk951288.jsxs)("div", {
       className: Chunk813525.innerContainer,
       children: [(0, Chunk951288.jsxs)(Chunk611928.ZP, {
         variant: eb ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
         children: [!eb && (0, Chunk951288.jsx)(Chunk611928.z6, {
           scrollPosition: Chunk120356
         }), el ? (0, Chunk951288.jsx)(B, {
-          applicationId: V,
+          applicationId: H,
           hideDetailHeaderButtons: ee,
           onClickBack: ex
         }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -235,14 +235,14 @@ let U = function() {
             onClick: ex
           }) : (0, Chunk951288.jsx)(Chunk611928.aV, {
             icon: ej
-          }), es ? (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          }), es ? (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             color: "header-primary",
             className: Chunk813525.searchHeader,
             children: null != Y && "" !== Y ? Chunk388032.intl.formatToPlainString(Chunk388032.t.zHdzqa, {
               query: Y
             }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.Qhj5Bg, {
-              categoryName: null != (e = null == K ? true : K.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b2)
+              categoryName: null != (e = null == q ? true : q.name) ? module : Chunk388032.intl.string(Chunk388032.t.E407b2)
             })
           }) : (0, Chunk951288.jsx)(h.Z, {
             tabs: Q,
@@ -263,8 +263,8 @@ let U = function() {
       }), el ? (0, Chunk951288.jsx)(Chunk666697.Z, {
         onScroll: e => eC(e, N.m_.APPLICATION),
         onSelectApplication: ef,
-        applicationId: V,
-        initialTab: H,
+        applicationId: H,
+        initialTab: V,
         onButtonsVisibilityChange: et
       }) : es ? (0, Chunk951288.jsx)(Chunk569527.Z, {
         onSelectApplication: ef,

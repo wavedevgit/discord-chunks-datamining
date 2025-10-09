@@ -150,7 +150,7 @@ function D(e) {
   }, [d]);
   return null == c || null == n || 0 === n.length ? null : (0, l.jsxs)("div", {
     className: j.container,
-    children: [(0, l.jsx)(o.X6q, {
+    children: [(0, l.jsx)(o.Heading, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: _.intl.string(_.t.LhlgY2)

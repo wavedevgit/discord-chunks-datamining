@@ -47,7 +47,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
       className: Chunk204089.bannerUpsell,
       children: [(0, Chunk951288.jsx)(Chunk587446.Z, {
         className: Chunk204089.premiumIcon
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         color: "always-white",
         children: Chunk388032.intl.string(Chunk388032.t.POSLGR)
@@ -58,7 +58,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
     let {
       markAsDismissed: t
     } = e, n = (0, D.q)(), i = () => {
-      null != t && t(k.L.DISMISS), n(M.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)()
+      null != t && t(j.L.DISMISS), n(M.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)()
     };
     return (0, r.jsxs)("div", {
       className: G.editorHeader,
@@ -70,7 +70,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
           color: "currentColor",
           className: G.closeCircle
         })
-      }), (0, r.jsx)(f.X6q, {
+      }), (0, r.jsx)(f.Heading, {
         variant: "heading-lg/extrabold",
         children: U.intl.string(U.t["xSR+a2"])
       })]
@@ -90,8 +90,8 @@ let B = () => (0, Chunk951288.jsx)("div", {
     }), E = (0, N.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
-    }), b = f ? U.intl.string(U.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === j.Si.TIER_2 ? E : U.intl.string(U.t.mr4K7O), I = e => {
-      e && (null == a || a(), null != o && o(k.L.PRIMARY), null != u && ((0, x.Yk)({
+    }), b = f ? U.intl.string(U.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === k.Si.TIER_2 ? E : U.intl.string(U.t.mr4K7O), I = e => {
+      e && (null == a || a(), null != o && o(j.L.PRIMARY), null != u && ((0, x.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -101,7 +101,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
       })))
     };
     return h ? (0, r.jsx)(O.Z, {
-      subscriptionTier: j.Si.TIER_2,
+      subscriptionTier: k.Si.TIER_2,
       defaultTextOverride: b,
       premiumModalAnalyticsLocation: {
         object: M.qAy.BUTTON_CTA,
@@ -114,7 +114,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
       textOptions: {
         textOverride: b
       },
-      subscriptionTier: j.Si.TIER_2,
+      subscriptionTier: k.Si.TIER_2,
       onSubscribeModalClose: I
     })
   },
@@ -131,7 +131,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
     } = P.Mc.useExperiment({
       location: "ClientThemesEditor"
     }), [c, d] = i.useState(false), f = (0, D.q)(), _ = () => {
-      null != t && t(k.L.DISMISS), f(M.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)(), n || (0, S.openUserSettings)(T.n.APPEARANCE_PANEL, {
+      null != t && t(j.L.DISMISS), f(M.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, w.C)(), n || (0, S.openUserSettings)(T.n.APPEARANCE_PANEL, {
         section: M.oAB.APPEARANCE
       })
     }, p = (0, b.B)({
@@ -185,7 +185,7 @@ function H(e) {
   })), d = (0, E.oq)().activePanel === E.wh.CLIENT_THEMES, _ = (0, D.q)();
   i.useEffect(() => _(M.rMx.CLIENT_THEME_PREVIEW_VIEWED), [_]), i.useEffect(() => {
     c && C.default.track(M.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: j.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      type: k.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [c, a]);

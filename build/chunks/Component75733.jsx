@@ -93,7 +93,7 @@ function h(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t,
     trait: n,
@@ -140,7 +140,7 @@ function x(e) {
     })
   })
 }
-let b = [0, 1, 2, 3, 4];
+let x = [0, 1, 2, 3, 4];
 
 function j(e) {
   let {
@@ -157,9 +157,9 @@ function j(e) {
     description: g.intl.string(g.t.l7Ig5e),
     children: (0, r.jsx)("div", {
       className: m.grid,
-      children: b.map(e => {
+      children: x.map(e => {
         var i;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(b, {
           guildId: t.id,
           trait: null != (i = a[e]) ? i : f,
           index: e,

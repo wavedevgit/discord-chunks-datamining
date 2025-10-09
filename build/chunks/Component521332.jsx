@@ -50,7 +50,7 @@ function x(e) {
   } = e, v = (0, l.e7)([_.Z], () => _.Z.getChannel(n)), j = (0, m.jc)(t, null == v ? true : v.type), y = (0, p.i_)(c, x, o);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
     className: h.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
       className: h.header,
       children: f.intl.string(f.t["1yxTIC"])

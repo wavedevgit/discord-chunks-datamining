@@ -39,7 +39,7 @@ function _(e) {
       }
       return r
     }(e, ["guildId", "powerup", "onClose"]);
-  let [j, g] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
+  let [g, j] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
   return (0, i.$)(a, _, i.w.DETAIL), (0, n.jsxs)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var o = null != arguments[t] ? arguments[t] : {},
@@ -73,15 +73,15 @@ function _(e) {
         className: f.boostImage
       }), (0, n.jsxs)("div", {
         className: f.contentContainer,
-        children: [(0, n.jsx)(s.X6q, {
+        children: [(0, n.jsx)(s.Heading, {
           variant: "heading-xl/extrabold",
           children: _.title
         }), (0, n.jsx)(u.Z, {
           powerup: _
-        }), null != j && (0, n.jsx)(s.Text, {
+        }), null != g && (0, n.jsx)(s.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
-          children: j
+          children: g
         }), (0, n.jsxs)("div", {
           className: c()(f.footer, {
             [f.disabled]: C
@@ -89,10 +89,10 @@ function _(e) {
           children: [!x && y && (0, n.jsx)(p.ZP, {
             guildId: a,
             powerup: _,
-            onError: g,
+            onError: j,
             grow: false,
             compact: !C
-          }), (0, n.jsx)(s.zxk, {
+          }), (0, n.jsx)(s.Button, {
             variant: C ? "secondary" : "primary",
             onClick: O,
             text: m.intl.string(m.t.cpT0Cg)

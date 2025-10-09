@@ -245,7 +245,7 @@ function w(e) {
           variant: "text-sm/semibold",
           color: "header-primary",
           children: "—"
-        }), (0, r.jsx)(c.X6q, {
+        }), (0, r.jsx)(c.Heading, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: b.intl.string(p.default["95qQRE"])

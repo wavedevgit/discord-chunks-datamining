@@ -100,7 +100,7 @@ function w() {
     n = (0, Chunk15640.V)();
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nLovSU)
       }), null != exports && null != module ? (0, Chunk951288.jsx)(T, {

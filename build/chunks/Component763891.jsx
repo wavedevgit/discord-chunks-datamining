@@ -43,59 +43,59 @@ function A(e) {
     isFullScreen: A,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: H,
+  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+    noCache: F,
     includeUnpublished: D
-  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), W = (0, i.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), G = (0, c.Fg)(), z = (0, a.ap)(G), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case S.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), G ? L.Z : T.Z, s.Z.AVATAR_DECORATION];
+        return [x.intl.string(x.t.dRZYND), z ? k.Z : L.Z, i.Z.AVATAR_DECORATION];
       case S.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, s.Z.PROFILE_EFFECT];
+        return [x.intl.string(x.t["1cNjt7"]), z ? N.Z : P.Z, i.Z.PROFILE_EFFECT];
       case S.AW.NAMEPLATES:
-        return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, s.Z.NAMEPLATE];
+        return [x.intl.string(x.t.V68Fq6), z ? B.Z : I.Z, i.Z.NAMEPLATE];
       case S.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? k.Z : j.Z, s.Z.BUNDLE]
+        return [x.intl.string(x.t.FYFppq), z ? T.Z : j.Z, i.Z.BUNDLE]
     }
-  }, [Z, G]), Q = (0, C.a)(), X = l.useMemo(() => Q(W.filter(e => {
+  }, [Z, z]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
-    return e.type === Y || e.type === s.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
-  })), [W, Y, Q]), J = (0, h.l)(X);
+    return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
+  })), [W, q, Q]), X = (0, h.l)(J);
   l.useEffect(() => {
     (0, _.n)({
-      sessionId: F,
+      sessionId: H,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: D,
-      cacheDisabled: H
+      cacheDisabled: F
     })
   }, []), l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: F,
+      sessionId: H,
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: D,
-      cacheDisabled: H
+      cacheDisabled: F
     })
-  }, [F, A, D, H, n, Z]);
+  }, [H, A, D, F, n, Z]);
   let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
   return n || null == M ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
-        backgroundImage: "url(".concat(q, ")")
+        backgroundImage: "url(".concat(Y, ")")
       },
       className: y.bannerContainer,
-      children: (0, r.jsx)(o.X6q, {
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
       className: y.products,
-      children: J.slice(40 * (U - 1), 40 * U).map((e, t) => {
+      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => {
         let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
@@ -111,16 +111,16 @@ function A(e) {
           }, e.skuId)
         }, e.skuId)
       })
-    }), J.length > 40 && (0, r.jsx)("div", {
+    }), X.length > 40 && (0, r.jsx)("div", {
       className: y.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
           currentPage: U,
-          totalCount: J.length,
+          totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            d.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == w ? true : w.sessionId,
               page_section: null == w ? true : w.pageSection,
               page_category: null == w ? true : w.pageCategory,

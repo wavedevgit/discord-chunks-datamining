@@ -2,7 +2,7 @@
 /** chunk id: 178106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -166,7 +166,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
-let k = new M(Chunk570140.Z, {
+let j = new M(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
   USER_SETTINGS_PROTO_UPDATE: D

@@ -190,7 +190,7 @@ let y = e => {
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != a ? C.intl.formatToPlainString(C.t.I6YOjY, {
                   payoutDate: a
-                }) : C.intl.string(C.t.G5ATX1), (0, r.jsx)(b.Z, {
+                }) : C.intl.string(C.t.G5ATX1), (0, r.jsx)(x.Z, {
                   className: O.statusScheduledIcon
                 })]
               });
@@ -228,7 +228,7 @@ let y = e => {
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != a ? C.intl.formatToPlainString(C.t.I6YOjY, {
                   payoutDate: a
-                }) : C.intl.string(C.t.ubdQTk), (0, r.jsx)(b.Z, {
+                }) : C.intl.string(C.t.ubdQTk), (0, r.jsx)(x.Z, {
                   className: O.statusScheduledIcon
                 })]
               });
@@ -245,7 +245,7 @@ let y = e => {
             case _.jw.REJECTED:
             case _.jw.RISK_REVIEW:
               return (0, r.jsxs)(r.Fragment, {
-                children: [x.Z.getStatusErrorText(t), (0, r.jsx)(u.k$p, {
+                children: [b.Z.getStatusErrorText(t), (0, r.jsx)(u.k$p, {
                   size: "md",
                   color: "currentColor",
                   className: O.statusErrorIcon

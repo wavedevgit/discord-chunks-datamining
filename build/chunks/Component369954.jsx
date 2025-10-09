@@ -41,7 +41,7 @@ let v = e => {
       children: [(0, r.jsx)(a.xvT, {
         variant: "text-md/medium",
         children: t
-      }), (0, r.jsx)(o.zxk, {
+      }), (0, r.jsx)(o.Button, {
         text: n,
         onClick: i,
         variant: "secondary",
@@ -74,13 +74,13 @@ let v = e => {
           variant: "text-md/medium",
           color: "text-tertiary",
           children: Chunk388032.intl.format(Chunk345909.default.X9rW0t, {
-            openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
+            openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
               onClick: n,
               children: e
             }, t)
           })
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         text: Chunk388032.intl.formatToPlainString(Chunk345909.default.ggcjPT, {
           count: module.length
         }),

@@ -33,12 +33,12 @@ function f(e) {
           active: true,
           size: a.Z.Sizes.SMOL,
           className: h.guildIcon
-        }), (0, i.jsx)(l.X6q, {
+        }), (0, i.jsx)(l.Heading, {
           variant: "heading-sm/semibold",
           color: "header-primary",
           children: s.name
         })]
-      }), null != c && (0, i.jsx)(l.X6q, {
+      }), null != c && (0, i.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: p.intl.format(p.t.jDV3i4, {

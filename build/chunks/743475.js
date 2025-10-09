@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   BG: () => f,
-  DO: () => x,
+  DO: () => b,
   pt: () => h
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
@@ -31,13 +31,13 @@ function h(e) {
     channelId: e
   })
 }
-async function x(e) {
+async function b(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = g.Z.advancedMode,
     [f, h] = (0, s.d9)(e.id, [...t]),
-    x = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
-    b = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (h.length < m.md || f.length < m.X) || n && (x.length < m.md || b.length < m.X))) return void i.Z.show({
+    b = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
+    x = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
+  if (a.Z.getEnabled(e.id) && (!n && (h.length < m.md || f.length < m.X) || n && (b.length < m.md || x.length < m.X))) return void i.Z.show({
     title: p.intl.string(p.t.iLdiqa),
     body: p.intl.string(p.t.JOT74e)
   });

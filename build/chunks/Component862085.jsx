@@ -36,7 +36,7 @@ function c(e) {
       })
     }), (0, r.jsxs)("div", {
       className: o.actionTextContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-sm/semibold",
         children: m
       }), (0, r.jsx)(l.Text, {
@@ -55,8 +55,8 @@ function c(e) {
         })]
       }) : null]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(i.VL, {
-        checked: c,
+      children: (0, r.jsx)(i.$q, {
+        value: c,
         onChange: u(false),
         className: o.__invalid_actionCheckbox
       })

@@ -87,7 +87,7 @@ async function b(e) {
   if (s && c) {
     if (h && null !== r) {
       let [e] = await (0, u.Z)(t, {
-        preset: O.tI.PRESET_VIDEO
+        preset: O.ApplicationStreamPresets.PRESET_VIDEO
       });
       if (e) {
         null == f || f();
@@ -100,7 +100,7 @@ async function b(e) {
     null == p || p(), (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("38697"), n.e("46746"), n.e("53448")]).then(n.bind(n, 60594));
+      } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("53448")]).then(n.bind(n, 60594));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = function(e) {

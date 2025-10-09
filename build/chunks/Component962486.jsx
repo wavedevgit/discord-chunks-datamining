@@ -49,7 +49,7 @@ function g(e) {
       description: O,
       children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsxs)(s.Z, {
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         className: f.sectionTitle,
         variant: "heading-lg/semibold",
         color: "header-primary",

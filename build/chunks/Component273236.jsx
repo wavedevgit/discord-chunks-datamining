@@ -33,7 +33,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
         color: "currentColor",
         width: 40,
         height: 40
-      }), (0, i.jsx)(c.X6q, {
+      }), (0, i.jsx)(c.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: d.intl.string(d.t.c0Fhpa)

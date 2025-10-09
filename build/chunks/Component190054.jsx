@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk572004 = require("./572004.js"),
@@ -43,9 +43,9 @@ function f(e) {
     }, [p, O]),
     m = y ? s.owK : s.TIy;
   return (0, n.jsx)(s.P3F, {
-    className: l()(d.container, f),
+    className: i()(d.container, f),
     onClick: h,
-    children: (0, n.jsx)(i.u, {
+    children: (0, n.jsx)(l.u, {
       text: y ? u.intl.string(u.t["t5VZ8/"]) : u.intl.string(u.t.OpuAlJ),
       children: (0, n.jsx)(m, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {

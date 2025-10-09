@@ -250,7 +250,7 @@ function B(e) {
     modalTitle: I = P.intl.string(P.t.DToW4e),
     uploadOptionTitle: k = P.intl.string(P.t["MsUY/f"]),
     allowRecentAvatarsSelection: D = true
-  } = e, M = (0, s.e7)([C.default], () => C.default.getCurrentUser()), B = (0, s.e7)([y.Z], () => y.Z.getGuildId()), H = (0, s.e7)([x.Z], () => x.Z.getGuild(B)), V = (0, c.vRw)(), z = o === w.pC.AVATAR || o === w.pC.BANNER, G = !O.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, q = (0, g.M)(!z), W = (0, h.T)({
+  } = e, M = (0, s.e7)([C.default], () => C.default.getCurrentUser()), B = (0, s.e7)([y.Z], () => y.Z.getGuildId()), H = (0, s.e7)([x.Z], () => x.Z.getGuild(B)), V = (0, c.vRw)(), z = o === w.pC.AVATAR || o === w.pC.BANNER, G = !O.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, W = (0, g.M)(!z), q = (0, h.T)({
     location: "NewSelectImageModal"
   }) && D, {
     analyticsLocations: Y,
@@ -328,8 +328,8 @@ function B(e) {
       upload_type: o
     })
   }, [G, E, Y, o]);
-  let ee = p && q,
-    et = o === w.pC.AVATAR && W;
+  let ee = p && W,
+    et = o === w.pC.AVATAR && q;
   return (0, r.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
@@ -338,7 +338,7 @@ function B(e) {
     children: [(0, r.jsxs)(c.xBx, {
       className: _.modalHeader,
       separator: false,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
         children: I
       }), (0, r.jsx)(c.olH, {

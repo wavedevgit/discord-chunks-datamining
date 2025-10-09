@@ -54,7 +54,7 @@ function _(e) {
       children: [(0, r.jsx)(v, {
         size: "xs",
         color: "white"
-      }), (0, r.jsx)(i.X6q, {
+      }), (0, r.jsx)(i.Heading, {
         variant: "text-sm/medium",
         color: "always-white",
         children: O || I ? d.intl.string(d.t.N0bC3N) : d.intl.string(d.t.O1sT5u)

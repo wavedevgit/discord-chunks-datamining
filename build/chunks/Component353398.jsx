@@ -63,7 +63,7 @@ class I extends(r = Chunk442837.ZP.Store) {
     }), E(this, "setError", e => {
       this.error = e, this.emitChange()
     }), E(this, "save", async () => {
-      await b.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
+      await x.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
@@ -90,7 +90,7 @@ function w() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk197571.marginBottom4,
     children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
-      component: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      component: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.KUw7Sk)
       }),
@@ -121,9 +121,9 @@ function Z() {
         !async function() {
           n(true);
           try {
-            await b.Z.loadTemplatesForGuild(e), n(false)
+            await x.Z.loadTemplatesForGuild(e), n(false)
           } catch (e) {
-            S.setError(new x.Hx(e))
+            S.setError(new b.Hx(e))
           }
         }()
       }, [e]), {
@@ -168,7 +168,7 @@ function R() {
     className: Chunk86477.descriptionBox,
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk86477.descriptionSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["f8u+VF"])
       }), (0, Chunk951288.jsxs)("div", {
@@ -198,7 +198,7 @@ function R() {
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk86477.descriptionSection,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["8zhJEh"])
       }), (0, Chunk951288.jsxs)("div", {
@@ -336,13 +336,13 @@ function k(e) {
   } = e, n = (0, d.e7)([S], () => S.name), [r, a] = l.useState(false), s = async () => {
     S.setError(null), a(true);
     try {
-      await b.Z.createGuildTemplate(t.id, S.name, S.description)
+      await x.Z.createGuildTemplate(t.id, S.name, S.description)
     } catch (e) {
-      S.setError(new x.Hx(e))
+      S.setError(new b.Hx(e))
     }
     a(false)
   };
-  return (0, i.jsx)(m.zxk, {
+  return (0, i.jsx)(m.Button, {
     variant: "primary",
     text: O.intl.string(O.t.Wxdi8P),
     loading: r,
@@ -358,16 +358,16 @@ function G(e) {
   } = e, [r, a] = l.useState(false), s = async () => {
     S.setError(null), a(true);
     try {
-      await b.Z.syncGuildTemplate(t.id, n.code)
+      await x.Z.syncGuildTemplate(t.id, n.code)
     } catch (e) {
-      S.setError(new x.Hx(e))
+      S.setError(new b.Hx(e))
     }
     a(false)
   };
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: y.button,
-    children: (0, i.jsx)(m.zxk, {
+    children: (0, i.jsx)(m.Button, {
       variant: "primary",
       text: O.intl.string(O.t["Nw+0Y2"]),
       loading: r,
@@ -383,9 +383,9 @@ function M(e) {
   } = e, [r, a] = l.useState(false), s = async () => {
     S.setError(null);
     try {
-      await b.Z.deleteGuildTemplate(t.id, n.code), S.setName(""), S.setDescription("")
+      await x.Z.deleteGuildTemplate(t.id, n.code), S.setName(""), S.setDescription("")
     } catch (e) {
-      S.setError(new x.Hx(e))
+      S.setError(new b.Hx(e))
     }
     a(false)
   };
@@ -393,7 +393,7 @@ function M(e) {
     children: [(0, i.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: y.button,
-      children: (0, i.jsx)(m.zxk, {
+      children: (0, i.jsx)(m.Button, {
         variant: "critical-secondary",
         text: O.intl.string(O.t["cN/RFB"]),
         onClick: () => a(true)
@@ -412,7 +412,7 @@ function U(e) {
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
     className: y.button,
-    children: (0, i.jsx)(m.zxk, {
+    children: (0, i.jsx)(m.Button, {
       variant: "secondary",
       text: O.intl.string(O.t.YI3iV1),
       onClick: () => (0, m.ZDy)(async () => {

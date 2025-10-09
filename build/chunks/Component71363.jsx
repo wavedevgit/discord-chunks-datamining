@@ -45,12 +45,12 @@ let A = e => {
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [L, x] = i.useState(false),
     M = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
-    k = (0, O.mN)(),
+    j = (0, O.mN)(),
     {
-      fractionalState: j
+      fractionalState: k
     } = (0, _.Z)(),
     U = (0, h.W)();
-  k ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
+  j ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
   let G = () => {
     A(false), p.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: y.MQ.SEE_ALL,
@@ -80,7 +80,7 @@ let A = e => {
           className: o()(T.column, {
             [T.premiumBrandRefresh]: N
           }),
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: T.heading,
@@ -90,13 +90,13 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_FIRST_ROW,
-              isPremiumSubscriber: k,
+              isPremiumSubscriber: j,
               hideCardsOnNarrowScreen: true,
-              fractionalState: j,
+              fractionalState: k,
               isInReverseTrial: U
             }),
             cardType: y.gM.CARD_CAROUSEL_FIRST_ROW
-          }), (0, r.jsx)(c.X6q, {
+          }), (0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: T.heading,
@@ -106,13 +106,13 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_SECOND_ROW,
-              isPremiumSubscriber: k,
+              isPremiumSubscriber: j,
               hideCardsOnNarrowScreen: true,
-              fractionalState: j,
+              fractionalState: k,
               isInReverseTrial: U
             }),
             cardType: y.gM.CARD_CAROUSEL_SECOND_ROW
-          }), (0, r.jsx)(c.X6q, {
+          }), (0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: T.heading,
@@ -122,9 +122,9 @@ let A = e => {
             cards: (0, O.ZM)({
               perksCards: w,
               variant: y.gM.CARD_CAROUSEL_THIRD_ROW,
-              isPremiumSubscriber: k,
+              isPremiumSubscriber: j,
               hideCardsOnNarrowScreen: true,
-              fractionalState: j,
+              fractionalState: k,
               isInReverseTrial: U
             }),
             cardType: y.gM.CARD_CAROUSEL_THIRD_ROW

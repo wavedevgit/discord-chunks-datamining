@@ -18,7 +18,7 @@ let c = e => {
       onClick: n,
       children: i
     } = e;
-    return (0, r.jsx)(o.eee, {
+    return (0, r.jsx)(o.Anchor, {
       onClick: n,
       className: a()(l.link, t),
       children: i

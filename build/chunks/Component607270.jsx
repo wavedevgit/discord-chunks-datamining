@@ -51,7 +51,7 @@ function g() {
       })
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk640744.textContent,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "text-primary",
         children: exports

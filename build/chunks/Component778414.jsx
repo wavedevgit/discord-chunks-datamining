@@ -171,8 +171,8 @@ function B(e) {
   (0, x.r)({
     container: l.current
   });
-  let s = (0, k.h)(t.id);
-  return (0, r.jsxs)(D.F, {
+  let s = (0, D.h)(t.id);
+  return (0, r.jsxs)(k.F, {
     "data-scroller": true,
     scrollerRef: l,
     className: a()(R.scroller, {

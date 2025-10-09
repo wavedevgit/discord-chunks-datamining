@@ -91,7 +91,7 @@ let I = e => {
         "data-testid": "v2-marketing-page-hero-header",
         children: [(0, r.jsxs)("div", {
           className: S ? v.fullscreenTextContainer : v.settingsTextContainer,
-          children: [(0, r.jsx)(c.X6q, {
+          children: [(0, r.jsx)(c.Heading, {
             variant: S ? "display-lg" : "display-md",
             color: "always-white",
             children: R

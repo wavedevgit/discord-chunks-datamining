@@ -1,4 +1,4 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 289989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -55,26 +55,26 @@ function b(e) {
   let {
     onSourceSelect: t
   } = e;
-  (0, f.UB)(), (0, h.Z)(t, x.Vq);
+  (0, f.UB)(), (0, p.Z)(t, g.Vq);
   let [{
     nativeSourceType: n
-  }, i] = (0, p.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, g.jR);
+  }, i] = (0, m.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, _.jR);
   return (0, r.jsxs)("div", {
     className: v.root,
     children: [(0, r.jsx)(a.X6q, {
       className: v.header,
       variant: "heading-lg/semibold",
       color: "text-default",
-      children: _.intl.string(_.t.XyYoFR)
+      children: x.intl.string(x.t.XyYoFR)
     }), l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xvT, {
         className: v.body,
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: _.intl.format(_.t.sbbPhY, {
-          buttonName: _.intl.string(_.t.FiBjwc)
+        children: x.intl.format(x.t.sbbPhY, {
+          buttonName: x.intl.string(x.t.FiBjwc)
         })
-      }), (0, r.jsx)(m.Z, {})]
+      }), (0, r.jsx)(h.Z, {})]
     }) : (0, r.jsxs)("div", {
       className: v.sourceTypeButtons,
       children: [(0, r.jsx)(j, {
@@ -86,7 +86,7 @@ function b(e) {
           })
         },
         id: "screen",
-        text: _.intl.string(_.t.cVUFXV),
+        text: x.intl.string(x.t.cVUFXV),
         icon: c.pzj
       }), (0, r.jsx)(j, {
         selected: "window" === n,
@@ -97,7 +97,7 @@ function b(e) {
           })
         },
         id: "window",
-        text: _.intl.string(_.t.dG2A1N),
+        text: x.intl.string(x.t.dG2A1N),
         icon: c.GON
       })]
     })]

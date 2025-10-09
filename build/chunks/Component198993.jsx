@@ -1,7 +1,7 @@
 /** Chunk was on 90688 **/
 /** chunk id: 198993, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => h,
+  ZP: () => y,
   c2: () => g,
   cK: () => m
 });
@@ -103,4 +103,4 @@ f(g, "defaultProps", {
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-let h = b
+let y = b

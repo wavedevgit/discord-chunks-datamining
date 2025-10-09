@@ -74,7 +74,7 @@ function ed(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: a
-  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === $.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = $.GP[t.planIdFromItems], _ = j.ZP.formatPriceString(j.ZP.getDefaultPrice(d.id), d.interval), {
+  } = e, o = t.hasActiveTrial, s = t.planIdFromItems === $.Xh.PREMIUM_YEAR_TIER_2, c = n || o, u = null != t.trialEndsAt ? l()(t.trialEndsAt).diff(l()(), "d") : 0, d = $.GP[t.planIdFromItems], _ = k.ZP.formatPriceString(k.ZP.getDefaultPrice(d.id), d.interval), {
     enabled: h
   } = B.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
@@ -99,7 +99,7 @@ function ed(e) {
       colorOptions: (0, f.wj)(a) ? z.VE.PREMIUM_TIER_2_WHITE_FILL : z.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
     }), (o || !s) && (0, r.jsx)("div", {
       className: en.rimGlowTier2
-    }), (0, r.jsx)(p.X6q, {
+    }), (0, r.jsx)(p.Heading, {
       variant: "heading-md/normal",
       color: "always-white",
       className: en.trialHeader,
@@ -134,7 +134,7 @@ function ef() {
         text: Chunk388032.intl.string(Chunk388032.t.uXF4c3),
         className: Chunk458622.fractionalPremiumTopRimPill,
         colorOptions: Chunk382791.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/normal",
         color: "always-white",
         className: Chunk458622.fractionalPremiumSubheader,
@@ -152,7 +152,7 @@ function ef() {
         text: Chunk388032.intl.string(Chunk388032.t.qYKftb),
         className: Chunk458622.topRimPillWithSparkles,
         colorOptions: (0, Chunk780384.wj)(require) ? Chunk382791.VE.PREMIUM_TIER_2_WHITE_FILL : Chunk382791.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
-      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/normal",
         color: "always-white",
         className: Chunk458622.trialHeader,
@@ -247,7 +247,7 @@ function e_(e) {
       src: u
     }), (0, r.jsxs)("div", {
       className: en.giftInfoPromotion,
-      children: [(0, r.jsx)(p.X6q, {
+      children: [(0, r.jsx)(p.Heading, {
         className: en.giftInfoTitlePromotion,
         style: _,
         variant: "text-lg/bold",
@@ -286,7 +286,7 @@ function ep() {
       src: Chunk434691
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk458622.giftInfo,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk458622.giftTitle,
         variant: "heading-xl/extrabold",
         children: Chunk388032.intl.string(Chunk388032.t["3KomGR"])
@@ -344,7 +344,7 @@ let eh = function() {
     note: null
   });
   if (!Chunk947889 && !Chunk483444 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
-  let k = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
+  let j = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

@@ -1,5 +1,5 @@
 /** Chunk was on 85342 **/
-/** chunk id: 119848, original params: e,t,r (module,exports,require) **/
+/** chunk id: 119848, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./314940.js");
@@ -14,11 +14,11 @@ var Chunk278074 = require("./278074.js"),
 function c(e) {
   let {
     username: t,
-    oneClickFlow: r = false
-  } = e, c = (0, s.M)((0, a.R_)(t), true, false, r);
+    oneClickFlow: n = false
+  } = e, c = (0, s.M)((0, a.R_)(t), true, false, n);
   if (null == c) return null;
   let u = (0, i.EQ)(c.type).with(o.K.RATE_LIMIT, () => "info").with(o.K.ERROR, () => "error").with(o.K.AVAILABLE, () => "success").with(o.K.INTERNAL_ERROR, () => null).exhaustive();
-  return null == u ? null : (0, n.jsx)(l.Z, {
+  return null == u ? null : (0, r.jsx)(l.Z, {
     type: u,
     children: c.message
   })

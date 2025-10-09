@@ -32,9 +32,9 @@ function v(e) {
   if (null == I) return null;
   let {
     is_canceled: y = false
-  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, S = (0, g.DK)(I), E = y ? b.p1.CANCELED : b.p1.SCHEDULED;
-  S === n && (E = I.status);
-  let P = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
+  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, S = (0, g.DK)(I), P = y ? b.p1.CANCELED : b.p1.SCHEDULED;
+  S === n && (P = I.status);
+  let E = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
     Z = e => {
       e.stopPropagation(), null != k && (0, s.jW)(e, async () => {
         let {
@@ -79,7 +79,7 @@ function v(e) {
     "aria-label": "",
     children: [(0, i.jsx)(m.z, {
       startTime: N.toISOString(),
-      status: null != P ? P : E,
+      status: null != E ? E : P,
       eventType: I.entity_type,
       guildEventId: I.id,
       recurrenceId: n,

@@ -102,7 +102,7 @@ let z = e => {
   function u() {
     h.Z.joinServer(a.id, () => {})
   }
-  return null == (0, l.e7)([N.Z], () => N.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(_.zxk, {
+  return null == (0, l.e7)([N.Z], () => N.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(_.Button, {
     size: "sm",
     onClick: u,
     disabled: o,
@@ -122,7 +122,7 @@ let z = e => {
           variant: "text-md/semibold",
           color: "header-primary",
           children: a.guild.name
-        }), (0, r.jsx)(_.eee, {
+        }), (0, r.jsx)(_.Anchor, {
           href: null == (n = b.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
           children: (0, r.jsx)(_.Text, {
             variant: "text-xs/normal",
@@ -146,7 +146,7 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [k, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [j, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
   i.useEffect(() => {
     p(n.friendSync), g(n.visibility), T(n.metadataVisibility), C(n.showActivity)
   }, [n]);
@@ -220,7 +220,7 @@ function q(e) {
       children: (0, r.jsx)(U.Y, {})
     }) : e.type === G.ABu.PLAYSTATION ? (0, r.jsx)("div", {
       className: V.upsellWrapper,
-      children: (0, r.jsx)(j.t, {})
+      children: (0, r.jsx)(k.t, {})
     }) : null
   }
 
@@ -274,11 +274,11 @@ function q(e) {
       }, "label")], s = F.intl.string(F.t["LVh3//"]);
     return o && (s = F.intl.string(F.t.i4jeWV)), i.push((0, r.jsx)("div", {
       className: V.metadataRefreshButton,
-      children: (0, r.jsx)(_.zxk, {
+      children: (0, r.jsx)(_.Button, {
         text: s,
         variant: "secondary",
         size: "sm",
-        loading: k,
+        loading: j,
         disabled: o,
         "aria-label": F.intl.string(F.t.sCkLYG),
         onClick: o ? true : () => {

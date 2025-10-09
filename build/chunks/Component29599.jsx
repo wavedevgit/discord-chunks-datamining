@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk666707 = require("./666707.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -125,7 +125,7 @@ function B(e) {
               className: M.promotionIconImage
             })
           }), (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(d.X6q, {
+            children: [(0, r.jsx)(d.Heading, {
               variant: "heading-md/semibold",
               children: C
             }), (0, r.jsx)(d.Text, {
@@ -152,7 +152,7 @@ function B(e) {
         })
       })]
     }), _ && (0, r.jsx)(d.u_l, {
-      renderModal: e => (0, r.jsx)(y.Z, G(j({}, e), {
+      renderModal: e => (0, r.jsx)(y.Z, G(k({}, e), {
         onClose: A,
         onClaim: s,
         code: a,
@@ -183,13 +183,13 @@ let Z = function() {
     activeOutboundPromotions: g,
     claimedEndedOutboundPromotions: E,
     claimedOutboundPromotionCodeMap: y,
-    addClaimedOutboundPromotionCode: k
-  } = (0, Chunk725727.lG)(), j = Chunk178100.length + Chunk518638.length > 0, U = Chunk163684.g.useExperiment({
+    addClaimedOutboundPromotionCode: j
+  } = (0, Chunk725727.lG)(), k = Chunk178100.length + Chunk518638.length > 0, U = Chunk163684.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: false,
     disable: Chunk120356
-  }).enabled && j, G = (0, Chunk947889.Z)();
+  }).enabled && k, G = (0, Chunk947889.Z)();
 
   function Z() {
     G(Chunk313789.n.NITRO_PANEL, {
@@ -207,9 +207,9 @@ let Z = function() {
         } = e;
         return t === L.Xh.PREMIUM_YEAR_TIER_2
       }),
-      u = (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      u = (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        children: j ? Chunk388032.intl.string(Chunk388032.t.wFsj3N) : true
+        children: k ? Chunk388032.intl.string(Chunk388032.t.wFsj3N) : true
       }),
       f = U ? (0, Chunk951288.jsxs)("div", {
         className: Chunk666707.promoHeaderContainer,
@@ -236,7 +236,7 @@ let Z = function() {
       }) : null;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk666707.marginContainer,
-      children: [Chunk755721, j ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
+      children: [Chunk755721, k ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk666707.divider
       }) : null, (0, Chunk951288.jsx)(Chunk504983.Z, {
         className: Chunk666707.gradientContainer,
@@ -255,13 +255,13 @@ let Z = function() {
             return (0, r.jsx)(B, {
               outboundPromotion: n,
               code: t,
-              addClaimedOutboundPromotionCode: k,
+              addClaimedOutboundPromotionCode: j,
               disabled: !a
             }, n.id)
           }), Chunk178100.map(e => (0, r.jsx)(B, {
             outboundPromotion: e,
             code: y[e.id],
-            addClaimedOutboundPromotionCode: k,
+            addClaimedOutboundPromotionCode: j,
             disabled: !a
           }, e.id)), null != exports ? (0, Chunk951288.jsx)(Chunk317941.Z, {
             className: Chunk666707.skuCard,
@@ -307,7 +307,7 @@ let Z = function() {
     children: [F(), (0, Chunk951288.jsx)("div", {
       className: Chunk666707.marginContainer,
       children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
-        component: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+        component: (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: Chunk388032.intl.string(Chunk388032.t["9KeUbW"])
         }),

@@ -1,35 +1,36 @@
 /** Chunk was on 47435 **/
 /** chunk id: 529840, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
+  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk715156 = require("./715156.js");
 
-function C(e) {
+function d(e) {
   var t;
   let {
     user: r,
     checked: i,
-    onChange: C,
-    disabled: d
+    onChange: d,
+    disabled: c
   } = e, {
-    avatarSrc: c,
-    eventHandlers: x
-  } = (0, l.Z)({
+    avatarSrc: x,
+    eventHandlers: p
+  } = (0, o.Z)({
     userId: null == r ? true : r.id,
-    size: n.EFr.SIZE_32
-  }), p = null != (t = r.globalName) ? t : r.username;
+    size: l.EFr.SIZE_32
+  }), h = null != (t = r.globalName) ? t : r.username;
   return (0, a.jsxs)("div", {
-    className: o.container,
+    className: C.container,
     children: [(0, a.jsxs)("div", {
-      className: o.user,
-      children: [(0, a.jsx)(n.qEK, function(e) {
+      className: C.user,
+      children: [(0, a.jsx)(l.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(r);
@@ -48,22 +49,22 @@ function C(e) {
         return e
       }({
         className: s()({
-          [o.muted]: d
+          [C.muted]: c
         }),
-        src: c,
-        "aria-label": p,
-        size: n.EFr.SIZE_32
-      }, x)), (0, a.jsx)(n.Text, {
-        color: d ? "text-muted" : "text-default",
+        src: x,
+        "aria-label": h,
+        size: l.EFr.SIZE_32
+      }, p)), (0, a.jsx)(l.Text, {
+        color: c ? "text-muted" : "text-default",
         variant: "text-md/semibold",
-        children: p
+        children: h
       })]
     }), (0, a.jsx)("div", {
-      className: o.checkbox,
-      children: (0, a.jsx)(n.XZJ, {
-        disabled: d,
-        checked: i,
-        onChange: e => C(r, e)
+      className: C.checkbox,
+      children: (0, a.jsx)(n.$q, {
+        disabled: c,
+        value: i,
+        onChange: (e, t) => d(r, t)
       })
     })]
   })

@@ -44,7 +44,7 @@ function O(e) {
       className: b.title,
       children: [(0, a.jsx)(M, {
         className: b.titleImage
-      }), (0, a.jsx)(p.X6q, {
+      }), (0, a.jsx)(p.Heading, {
         variant: "heading-xl/bold",
         children: S.intl.string(S.t.Lm2nFR)
       })]
@@ -61,7 +61,7 @@ function U() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk107785.title,
-      children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-xl/bold",
         children: Chunk388032.intl.string(Chunk388032.t["PFp+aG"])
       })
@@ -95,7 +95,7 @@ function R(e) {
       className: n()(b.erroredHeader, b.headerSeparator),
       children: [(0, a.jsx)("div", {
         className: b.title,
-        children: (0, a.jsx)(p.X6q, {
+        children: (0, a.jsx)(p.Heading, {
           variant: "heading-xl/bold",
           children: S.intl.string(S.t.a9HOKi)
         })
@@ -145,7 +145,7 @@ function B(e) {
         className: b.title,
         children: [(0, a.jsx)(M, {
           className: b.titleImage
-        }), (0, a.jsx)(p.X6q, {
+        }), (0, a.jsx)(p.Heading, {
           variant: "heading-xl/bold",
           children: S.intl.string(S.t.SY9tyM)
         })]

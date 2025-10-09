@@ -1,7 +1,7 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 717298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Y
+  Z: () => J
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,65 +48,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk468918 = require("./468918.js");
 
-function Y(e) {
+function J(e) {
   var t;
   let {
     onClose: n,
     transitionState: l,
     sourceApplication: o,
-    analyticsLocations: Y = [],
+    analyticsLocations: J = [],
     selectSource: X = true
-  } = e, J = i.useRef(performance.now()), K = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, z.jR))), {
+  } = e, K = i.useRef(performance.now()), Y = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, H.jR))), {
     analyticsLocations: q
-  } = (0, _.ZP)(Y, x.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
+  } = (0, x.ZP)(J, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
-  } = (0, k.Ti)(o, Q, $, (0, O.isWindows)() && null != o && X ? "confirm" : "source_select");
-  (0, W.Z)(K, et, "confirm" === ee.modalStep);
+  } = (0, M.Ti)(o, Q, $, (0, C.isWindows)() && null != o && X ? "confirm" : "source_select");
+  (0, F.Z)(Y, et, "confirm" === ee.modalStep);
   let en = !w.ZP.canStreamQuality(w.ZP.StreamQuality.HIGH, Q),
-    er = !(0, O.isLinux)(),
+    er = !(0, C.isLinux)(),
     ei = "confirm" === ee.modalStep,
     el = !X && null != o && !ei,
-    es = K && ee.sourceType !== u.vA.CAMERA,
+    es = Y && ee.sourceType !== u.vA.CAMERA,
     eo = i.useMemo(() => {
       let e = [{
-        name: H.intl.string(H.t.tHoi7u),
+        name: z.intl.string(z.t.tHoi7u),
         value: u.vA.WINDOW,
-        icon: h.GON
+        icon: p.GON
       }, {
-        name: H.intl.string(H.t.MhJ43N),
+        name: z.intl.string(z.t.MhJ43N),
         value: u.vA.CAMERA,
-        icon: h.Odl
+        icon: p.Odl
       }];
-      return K || e.splice(1, 0, {
-        name: H.intl.string(H.t.slM8rK),
+      return Y || e.splice(1, 0, {
+        name: z.intl.string(z.t.slM8rK),
         value: u.vA.SCREEN,
-        icon: h.pzj
+        icon: p.pzj
       }), e
-    }, [K]),
+    }, [Y]),
     {
       sourceType: ea
     } = ee,
     ec = i.useCallback(async e => {
       j.eo.updateSetting(ee.notifyFriends), j.I0.updateSetting(ee.hidePreview);
-      let [t, r] = await (0, N.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
+      let [t, r] = await (0, E.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: ee.preset,
         fps: ee.fps,
         resolution: ee.resolution,
         soundshareEnabled: !ee.muteStreamAudio,
         previewDisabled: ee.hidePreview,
-        goLiveModalDurationMs: performance.now() - J.current,
+        goLiveModalDurationMs: performance.now() - K.current,
         audioSourceId: ee.audioSourceId,
         analyticsLocations: q
       });
       if (t) return n();
-      "no permission" === r && m.Z.show({
-        title: H.intl.string(H.t["X+mXen"]),
-        body: H.intl.string(H.t.MIJCzs)
+      "no permission" === r && h.Z.show({
+        title: z.intl.string(z.t["X+mXen"]),
+        body: z.intl.string(z.t.MIJCzs)
       }), n()
     }, [n, ee, q]);
   async function ed(e) {
-    await (0, g.Z)({
+    await (0, _.Z)({
       channelId: e
     }) && null != o && ec(o)
   }
@@ -114,40 +114,40 @@ function Y(e) {
     var e;
     ec({
       id: "prepicked:" + ee.nativeSourceType,
-      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : H.intl.string(H.t["KKcy9/"]),
+      name: null != (e = Z.ZP.getLastPickedContentTitle()) ? e : z.intl.string(z.t["KKcy9/"]),
       url: ""
     })
   }, [ec, ee.nativeSourceType]);
-  return (0, r.jsx)(k.Yw, {
+  return (0, r.jsx)(M.Yw, {
     state: ee,
     dispatch: et,
-    children: (0, r.jsxs)(h.Y0X, {
+    children: (0, r.jsxs)(p.Y0X, {
       impression: {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: q,
-          application_id: (0, O.isWindows)() ? null == (t = (0, P.Z)(v.ZP, C.Z)) ? true : t.id : true,
+          application_id: (0, C.isWindows)() ? null == (t = (0, I.Z)(v.ZP, O.Z)) ? true : t.id : true,
           parent_media_session_id: S.Z.getMediaSessionId()
         }
       },
       className: s()(V.root, {
-        [V.nativePicker]: K && null == o,
+        [V.nativePicker]: Y && null == o,
         [V.channelSelector]: el,
         [V.confirmStep]: ei
       }),
-      size: h.CgR.DYNAMIC,
+      size: p.CgR.DYNAMIC,
       transitionState: l,
       parentComponent: "GoLiveModalV2",
-      children: [el ? (0, r.jsx)(R.Z, {
+      children: [el ? (0, r.jsx)(A.Z, {
         className: s()(V.channelSelectorComponent, V.withFooter),
         onSelectChannel: ed
-      }) : ei ? (0, r.jsx)(A.Z, {
+      }) : ei ? (0, r.jsx)(R.Z, {
         hideBackButton: null != o
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.xBx, {
+        children: [(0, r.jsx)(p.xBx, {
           separator: false,
           className: V.header,
-          children: (0, r.jsx)(h.sY7, {
+          children: (0, r.jsx)(p.sY7, {
             className: V.segmentedControl,
             value: ea,
             look: "pill",
@@ -163,9 +163,9 @@ function Y(e) {
             },
             options: eo
           })
-        }), (0, r.jsx)(h.hzk, {
+        }), (0, r.jsx)(p.hzk, {
           className: V.content,
-          children: K && ea !== u.vA.CAMERA ? (0, r.jsx)(M.Z, {
+          children: Y && ea !== u.vA.CAMERA ? (0, r.jsx)(k.Z, {
             onSourceSelect: eu
           }) : (0, r.jsx)(D.Z, {
             onClick: function(e) {
@@ -173,7 +173,7 @@ function Y(e) {
             }
           })
         })]
-      }), (0, r.jsxs)(h.mzw, {
+      }), (0, r.jsxs)(p.mzw, {
         className: s()(V.footer, {
           [V.footerShadow]: !en && ei
         }),
@@ -181,31 +181,31 @@ function Y(e) {
         direction: d.k.Direction.VERTICAL,
         children: [(0, r.jsxs)("div", {
           className: V.footerContent,
-          children: [(0, r.jsx)(G.Z, {}), (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(U.Z, {}), (0, r.jsxs)("div", {
             className: V.rightButtonGroup,
-            children: [en && (0, r.jsx)(B.Z, {
+            children: [en && (0, r.jsx)(L.Z, {
               onClose: n
-            }), es && !ei && (0, r.jsx)(E.Z, {
+            }), es && !ei && (0, r.jsx)(N.Z, {
               mainCTADisabled: !er && "" === ee.nativeSourceType,
               mainCTAOnClick: () => {
-                (0, Z.t)(), (0, Z.T)(ee.nativeSourceType)
+                (0, P.t)(), (0, P.T)(ee.nativeSourceType)
               },
               align: "right",
-              ctaText: H.intl.string(H.t.FiBjwc),
+              ctaText: z.intl.string(z.t.FiBjwc),
               hideOptionsButton: !en
-            }), ei && !es && (0, r.jsx)(E.Z, {
+            }), ei && !es && (0, r.jsx)(N.Z, {
               mainCTADisabled: null == ee.selectedSource,
               mainCTAOnClick: () => {
                 null != ee.selectedChannel ? ed(ee.selectedChannel) : null != ee.selectedSource && ec(ee.selectedSource)
               },
               align: "right",
               hideOptionsButton: !en,
-              ctaText: H.intl.string(F.default["5AyH/v"])
-            }), (!en || !(ei || es)) && (0, r.jsx)(L.Z, {
+              ctaText: z.intl.string(W.default["5AyH/v"])
+            }), (!en || !(ei || es)) && (0, r.jsx)(B.Z, {
               align: "right"
             })]
           })]
-        }), en && (0, r.jsx)(U.Z, {
+        }), en && (0, r.jsx)(G.Z, {
           onClose: n
         })]
       })]

@@ -72,7 +72,7 @@ function S() {
           })
         },
         popoutLayerContext: Chunk246992.O$
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk432877 ? "Clear NUX Flag" : "Set NUX Flag",
@@ -89,7 +89,7 @@ function T() {
       recipientIds: [Chunk37812.I]
     })
   }, []);
-  return (0, Chunk951288.jsx)(Chunk481060.zxk, {
+  return (0, Chunk951288.jsx)(Chunk481060.Button, {
     variant: "primary",
     size: "sm",
     text: "Open System DM",

@@ -102,21 +102,21 @@ let b = function(e) {
       })
     }), null != _ && null != E && (0, r.jsx)("div", {
       className: m.controlsSection,
-      children: (0, r.jsxs)(a.hE2, {
+      children: (0, r.jsxs)(a.ButtonGroup, {
         className: m.controlButtons,
-        children: [(0, r.jsx)(a.zxk, {
+        children: [(0, r.jsx)(a.Button, {
           onClick: A,
           disabled: y,
           loading: y,
           variant: "secondary",
           text: g.intl.string(g.t.jQEfRU)
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(a.Button, {
           onClick: Z,
           disabled: y,
           loading: y,
           variant: "secondary",
           text: g.intl.string(g.t.taqkwM)
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(a.Button, {
           onClick: w,
           disabled: y,
           loading: y,

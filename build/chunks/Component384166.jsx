@@ -99,13 +99,13 @@ function O(e) {
         children: b.intl.string(b.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
         className: j.actions,
-        children: [(0, r.jsx)(c.zxk, {
+        children: [(0, r.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
           text: b.intl.string(b.t.yBZMsb),
           onClick: N,
           disabled: !S || w
-        }), (0, r.jsx)(c.zxk, {
+        }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
           text: b.intl.string(b.t.R3BPHx),

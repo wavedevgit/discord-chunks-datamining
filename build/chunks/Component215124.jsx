@@ -25,11 +25,11 @@ function g(e) {
     publishedOnly: false
   }), {
     allowSelfRemoveMonetization: h
-  } = (0, a.gX)(t), x = g.filter(e => {
+  } = (0, a.gX)(t), b = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), b = p.length > 0, j = f.length > 0, v = x.length > 0;
+  }), x = p.length > 0, j = f.length > 0, v = b.length > 0;
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -38,10 +38,10 @@ function g(e) {
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
-    }), (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSk),
-      disabled: !h || b || j || v,
+      disabled: !h || x || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

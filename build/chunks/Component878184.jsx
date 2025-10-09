@@ -41,7 +41,7 @@ function u(e) {
       })
     }), (0, r.jsxs)("div", {
       className: c.header,
-      children: [(0, r.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
         children: f

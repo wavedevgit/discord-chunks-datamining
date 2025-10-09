@@ -119,8 +119,8 @@ class L extends Chunk665012.M {
 }
 let x = (0, Chunk647438.createContext)(null),
   M = (0, Chunk647438.createContext)(null),
-  k = (0, Chunk647438.createContext)(null),
   j = (0, Chunk647438.createContext)(null),
+  k = (0, Chunk647438.createContext)(null),
   U = (0, Chunk647438.forwardRef)(function(e, t) {
     var n;
     [e, t] = (0, o.pE)(e, t, M);
@@ -248,8 +248,8 @@ function G({
     });
   return D.createElement(o.zt, {
     values: [
-      [k, f],
-      [j, Y],
+      [j, f],
+      [k, Y],
       [s.Ed, {
         dragAndDropHooks: I,
         dragState: l,
@@ -284,7 +284,7 @@ function B(e) {
 }
 let Z = (0, Chunk647438.createContext)(null),
   F = (0, Chunk873954.IW)("tableheader", (e, t) => {
-    let n = (0, D.useContext)(k).collection,
+    let n = (0, D.useContext)(j).collection,
       r = (0, u.H)({
         items: n.headerRows,
         children: (0, D.useCallback)(e => {
@@ -331,7 +331,7 @@ function V({
   item: e
 }) {
   let t = (0, D.useRef)(null),
-    n = (0, D.useContext)(k),
+    n = (0, D.useContext)(j),
     {
       isVirtualized: r,
       CollectionBranch: s
@@ -365,7 +365,7 @@ function V({
 let H = (0, Chunk873954.G5)("column", (e, t, n) => {
     var r, i;
     let s = (0, C.B)(t),
-      l = (0, D.useContext)(k),
+      l = (0, D.useContext)(j),
       {
         isVirtualized: c
       } = (0, D.useContext)(a.Qk),
@@ -380,7 +380,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
         isFocusVisible: f,
         focusProps: _
       } = (0, m.F)(),
-      p = (0, D.useContext)(j),
+      p = (0, D.useContext)(k),
       h = false;
     p && (h = p.resizingColumn === n.key);
     let {
@@ -441,7 +441,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
   Y = (0, Chunk647438.createContext)(null),
   W = (0, Chunk873954.IW)("tablebody", (e, t) => {
     var n;
-    let r, i = (0, D.useContext)(k),
+    let r, i = (0, D.useContext)(j),
       {
         isVirtualized: l
       } = (0, D.useContext)(a.Qk),
@@ -505,7 +505,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
   }),
   K = (0, Chunk873954.IW)("item", (e, t, n) => {
     let l, c, u = (0, C.B)(t),
-      d = (0, D.useContext)(k),
+      d = (0, D.useContext)(j),
       {
         dragAndDropHooks: f,
         dragState: _,
@@ -552,7 +552,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
       key: n.key,
       hasDragButton: true
     }, _));
-    let j = (0, D.useRef)(null),
+    let k = (0, D.useRef)(null),
       {
         visuallyHiddenProps: U
       } = (0, S.S)();
@@ -562,7 +562,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
         key: n.key,
         dropPosition: "on"
       }
-    }, p, j));
+    }, p, k));
     let G = (0, D.useRef)(null);
     (0, D.useEffect)(() => {
       _ && G.current
@@ -609,7 +609,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
       role: "button",
       ...U,
       ...c.dropIndicatorProps,
-      ref: j
+      ref: k
     }))), D.createElement(Y, {
       ...(0, E.d)(K, H, b, N, L, null == l ? true : l.dragProps, w),
       ref: u,
@@ -659,7 +659,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
   }),
   z = (0, Chunk873954.G5)("cell", (e, t, n) => {
     let r = (0, C.B)(t),
-      i = (0, D.useContext)(k),
+      i = (0, D.useContext)(j),
       {
         dragState: l
       } = (0, D.useContext)(s.Ed),
@@ -731,7 +731,7 @@ function X(e, t) {
     isDropTarget: r,
     buttonRef: i,
     ...a
-  } = e, s = (0, D.useContext)(k), {
+  } = e, s = (0, D.useContext)(j), {
     visuallyHiddenProps: l
   } = (0, S.S)(), c = (0, o.aX)({
     ...a,
@@ -764,7 +764,7 @@ function X(e, t) {
 let Q = (0, Chunk647438.forwardRef)(X);
 
 function J() {
-  let e = (0, Chunk647438.useContext)(k),
+  let e = (0, Chunk647438.useContext)(j),
     {
       dragAndDropHooks: t,
       dropState: n
@@ -804,7 +804,7 @@ function J() {
     ref: Chunk267603
   })))
 }(0, Chunk873954.G5)("loader", function(e, t, n) {
-  let r = (0, D.useContext)(k),
+  let r = (0, D.useContext)(j),
     {
       isVirtualized: i
     } = (0, D.useContext)(a.Qk),

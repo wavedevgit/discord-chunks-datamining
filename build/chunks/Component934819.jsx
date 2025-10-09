@@ -65,7 +65,7 @@ function m() {
     label: "Diff User State",
     description: "Click to generate a diff between the client user state and the user worker state.",
     children: (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         onClick: p,
         text: "Diff User State",
         loading: exports,

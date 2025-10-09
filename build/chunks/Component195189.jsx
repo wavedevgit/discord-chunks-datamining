@@ -22,7 +22,7 @@ function d(e) {
     className: c.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
       className: c.itemContent,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: t

@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
@@ -22,9 +22,9 @@ function p(e) {
   } = e, m = (0, i.B6)(t.config.expiresAt);
   return (0, r.jsxs)("div", {
     className: u.questAcceptedHeader,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-xxs/medium",
-      className: o()(u.flex, u.headerText),
+      className: a()(u.flex, u.headerText),
       children: d.intl.format(d.t["pX+fmp"], {
         expirationDate: m
       })
@@ -39,7 +39,7 @@ function p(e) {
       sourceQuestContent: l.jn.QUEST_BAR_V2,
       children: e => {
         var t, n;
-        return (0, r.jsx)(a.P3F, (t = function(e) {
+        return (0, r.jsx)(o.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -59,10 +59,10 @@ function p(e) {
         }({}, e), n = n = {
           className: u.submenuWrapper,
           "aria-label": d.intl.string(d.t.DEoVWV),
-          children: (0, r.jsx)(a.xhG, {
+          children: (0, r.jsx)(o.xhG, {
             size: "md",
             color: "currentColor",
-            className: o()(u.submenuIcon, u.interactiveNormal)
+            className: a()(u.submenuIcon, u.interactiveNormal)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

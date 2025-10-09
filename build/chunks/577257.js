@@ -1,4 +1,4 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 577257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -21,13 +21,13 @@ function f(e, t) {
       location: "usePollSources"
     }),
     f = (0, l.e7)([o.ZP], () => o.ZP.getRunningGames().length > 0),
-    h = r.useRef(0),
-    m = f ? 2e3 : 1e3,
-    p = r.useRef(new s.V7);
+    p = r.useRef(0),
+    h = f ? 2e3 : 1e3,
+    m = r.useRef(new s.V7);
   r.useEffect(() => {
     if (n) return;
-    let r = p.current,
-      l = h.current,
+    let r = m.current,
+      l = p.current,
       s = {
         width: 376 * i,
         height: 212 * i,
@@ -39,15 +39,15 @@ function f(e, t) {
         windowSources: n,
         cameraSources: i
       } = await (0, c.t)(s);
-      h.current > l || (t({
+      p.current > l || (t({
         type: "set_source_candidates",
         screenSources: e,
         windowSources: n,
         deviceSources: i
-      }), r.start(m, o))
+      }), r.start(h, o))
     }
     return o(), () => {
-      h.current += 1, r.stop()
+      p.current += 1, r.stop()
     }
-  }, [t, m, e, n, i])
+  }, [t, h, e, n, i])
 }

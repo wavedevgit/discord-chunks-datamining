@@ -82,7 +82,7 @@ function d(t) {
         value: E,
         onChange: S
       })
-    }), (0, a.jsx)(r.XZJ, {
+    }), (0, a.jsx)(r.Checkbox, {
       checked: I,
       onChange: t => N(t),
       label: u.intl.string(u.t["3vPFQk"]),

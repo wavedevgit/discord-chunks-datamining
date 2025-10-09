@@ -84,7 +84,7 @@ let ec = Chunk647438.memo(function(e) {
       overrideMedia: n
     } = e, r = (0, h.e7)([X.Z], () => X.Z.getChannel(t));
     o()(null != r, "the thread should not be null here, a store must have missed an update");
-    let a = (0, h.e7)([W.ZP], () => W.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
+    let a = (0, h.e7)([q.ZP], () => q.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
       {
         firstMessage: l
       } = (0, N.cl)(r),
@@ -96,7 +96,7 @@ let ec = Chunk647438.memo(function(e) {
         } = e, a = (0, A.p)(), l = i.useMemo(() => null != t ? (0, k.Z)(t, null == t ? true : t.messageSnapshots[0]) : null, [t]), {
           hasSpoilerEmbeds: s,
           content: o
-        } = i.useMemo(() => (null == l ? true : l.content) != null && "" !== l.content ? (0, H.ZP)(l, {
+        } = i.useMemo(() => (null == l ? true : l.content) != null && "" !== l.content ? (0, z.ZP)(l, {
           formatInline: n,
           noStyleAndInteraction: r,
           allowHeading: true,
@@ -183,7 +183,7 @@ let ec = Chunk647438.memo(function(e) {
       return i
     }(R, ["role", "onFocus"]),
     {
-      isFocused: z,
+      isFocused: H,
       handleFocus: B,
       handleBlur: U
     } = (0, M.Z)(F);
@@ -242,7 +242,7 @@ let ec = Chunk647438.memo(function(e) {
           })]
         })
       }), (0, r.jsx)(f.Rny, {
-        enabled: !z,
+        enabled: !H,
         children: (0, r.jsx)(em, {
           channel: d,
           firstMessage: j,
@@ -288,7 +288,7 @@ let eu = Chunk647438.memo(function(e) {
     hasMediaAttachment: a,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, h.e7)([P.Z], () => P.Z.isLoading(n.id)), d = (0, h.e7)([Y.Z], () => Y.Z.can(er.Plq.MANAGE_MESSAGES, n)), u = q.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
+  } = e, c = (0, h.e7)([P.Z], () => P.Z.isLoading(n.id)), d = (0, h.e7)([Y.Z], () => Y.Z.can(er.Plq.MANAGE_MESSAGES, n)), u = W.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
     contentPlaceholder: g,
     renderedContent: x
   } = null == t ? {
@@ -310,7 +310,7 @@ let eu = Chunk647438.memo(function(e) {
     children: null == t ? c ? null : ea.intl.string(ea.t.mE3KJC) : g
   });
   return (0, r.jsxs)(y.aQ.Provider, {
-    value: (0, z.Z)(u, d),
+    value: (0, H.Z)(u, d),
     children: [null != o ? (0, r.jsx)(f.qEK, {
       size: f.EFr.SIZE_40,
       src: o.getAvatarURL(m, (0, f.pxk)(f.EFr.SIZE_40)),
@@ -506,7 +506,7 @@ function ep(e) {
     } = e,
     c = (0, h.e7)([$.Z], () => $.Z.isFocused()),
     d = (0, L.d$)(i.src),
-    u = q.QK.useSetting(),
+    u = W.QK.useSetting(),
     m = (0, F.MC)(s),
     {
       src: g,

@@ -75,7 +75,7 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: h = false,
     initialSlide: y = O.x.INIT
-  } = e, S = (0, u.Dt)(), [A, C] = i.useState(""), [N, R] = i.useState(true), [P, w] = i.useState(y), [D, L] = i.useState(""), [x, M] = i.useState(null), k = async () => {
+  } = e, S = (0, u.Dt)(), [A, C] = i.useState(""), [N, R] = i.useState(true), [P, w] = i.useState(y), [D, L] = i.useState(""), [x, M] = i.useState(null), j = async () => {
     let e;
     w(O.x.REGISTER);
     let t = m.isPlatformEmbedded && E.ZP.supportsFeature(v.eRX.WEBAUTHN) ? E.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -94,7 +94,7 @@ function R(e) {
     children: [(0, r.jsxs)(l.xBx, {
       className: T.header,
       separator: false,
-      children: [(0, r.jsxs)(l.X6q, {
+      children: [(0, r.jsxs)(l.Heading, {
         id: S,
         variant: "heading-lg/semibold",
         children: [P === O.x.INIT && I.intl.string(I.t.vrOCCg), P === O.x.REGISTER && I.intl.string(I.t.wePEBA), P === O.x.NAME && I.intl.string(I.t["cY/IOj"]), P === O.x.SUCCESS && d.Z.parse(I.intl.string(I.t.FXC7ZG))]
@@ -128,10 +128,10 @@ function R(e) {
             })
           })]
         }), (0, r.jsx)(l.mzw, {
-          children: (0, r.jsx)(l.zxk, {
+          children: (0, r.jsx)(l.Button, {
             variant: "primary",
             text: I.intl.string(I.t.oibaQU),
-            onClick: k
+            onClick: j
           })
         })]
       }), (0, r.jsxs)(l.Mi4, {
@@ -151,7 +151,7 @@ function R(e) {
             })
           })]
         }), (0, r.jsx)(l.mzw, {
-          children: (0, r.jsx)(l.zxk, {
+          children: (0, r.jsx)(l.Button, {
             variant: "primary",
             text: "",
             loading: true
@@ -191,14 +191,14 @@ function R(e) {
             })]
           }), (0, r.jsx)(l.mzw, {
             className: T.footer,
-            children: (0, r.jsxs)(l.hE2, {
+            children: (0, r.jsxs)(l.ButtonGroup, {
               direction: "horizontal-reverse",
-              children: [(0, r.jsx)(l.zxk, {
+              children: [(0, r.jsx)(l.Button, {
                 variant: "primary",
                 text: I.intl.string(I.t["5dyZ1d"]),
                 type: "submit",
                 disabled: N
-              }), (0, r.jsx)(l.zxk, {
+              }), (0, r.jsx)(l.Button, {
                 variant: "secondary",
                 text: I.intl.string(I.t["13/7kZ"]),
                 onClick: () => {
@@ -226,9 +226,9 @@ function R(e) {
           })]
         }), (0, r.jsx)(l.mzw, {
           className: T.footer,
-          children: (0, r.jsxs)(l.hE2, {
+          children: (0, r.jsxs)(l.ButtonGroup, {
             direction: "horizontal-reverse",
-            children: [(0, r.jsx)(l.zxk, {
+            children: [(0, r.jsx)(l.Button, {
               variant: "primary",
               text: I.intl.string(I.t.MubYGx),
               onClick: () => {
@@ -236,7 +236,7 @@ function R(e) {
                   section: v.oAB.ACCOUNT
                 })
               }
-            }), (0, r.jsx)(l.zxk, {
+            }), (0, r.jsx)(l.Button, {
               variant: "secondary",
               text: I.intl.string(I.t.i4jeWV),
               onClick: o
@@ -345,7 +345,7 @@ function w() {
         })]
       }, e.id))
     }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.vrOCCg),

@@ -6,7 +6,6 @@ module.exports = {
   messagesWrapper: "messagesWrapper_fb64c9",
   scroller: "scroller_fb64c9",
   scrollerInner: "scrollerInner_fb64c9",
-  checkbox: "checkbox_fb64c9",
   form: "form_fb64c9",
   channelTextArea: "channelTextArea_fb64c9",
   channelTextAreaInner: "channelTextAreaInner_fb64c9",

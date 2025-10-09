@@ -57,7 +57,7 @@ function m() {
           status: h.state
         })
       }) : null]
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: Chunk358085 ? "critical-secondary" : "primary",
       loading: exports,
       onClick: m,
@@ -81,7 +81,7 @@ class g extends Chunk647438.PureComponent {
     } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTU"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZoq);
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: Chunk647438

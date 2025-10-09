@@ -50,7 +50,7 @@ function E(e) {
       children: h.intl.string(h.t.B9JNsr)
     }), (0, l.jsxs)("div", {
       className: p.header,
-      children: [(0, l.jsx)(a.X6q, {
+      children: [(0, l.jsx)(a.Heading, {
         variant: "text-sm/bold",
         color: "header-primary",
         children: h.intl.string(h.t.cTQI5u)

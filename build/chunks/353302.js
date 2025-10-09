@@ -1,5 +1,5 @@
-/** Chunk was on 57486 **/
-/** chunk id: 353302, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 45739 **/
+/** chunk id: 353302, original params: e,o,t (module,exports,require) **/
 module.exports = {
   container: "container_ef2eb4",
   content: "content_ef2eb4",
@@ -23,6 +23,5 @@ module.exports = {
   permissionsTable: "permissionsTable_ef2eb4",
   permissionRow: "permissionRow_ef2eb4",
   bullet: "bullet_ef2eb4",
-  bulletWarning: "bulletWarning_ef2eb4 bullet_ef2eb4",
-  acceptText: "acceptText_ef2eb4"
+  bulletWarning: "bulletWarning_ef2eb4 bullet_ef2eb4"
 }

@@ -12,9 +12,9 @@ function o(e) {
   let {
     sectionId: t,
     commandsByActiveSection: n
-  } = e, [o, s] = l.useState(a.bS.ALPHABETICAL), c = l.useMemo(() => {
-    var e, l;
-    return null != (l = null == (e = n.find(e => e.section.id === t)) ? true : e.data) ? l : []
+  } = e, [o, s] = i.useState(a.bS.ALPHABETICAL), c = i.useMemo(() => {
+    var e, i;
+    return null != (i = null == (e = n.find(e => e.section.id === t)) ? true : e.data) ? i : []
   }, [n, t]), {
     popularSortedCommands: u,
     canSort: d
@@ -22,7 +22,7 @@ function o(e) {
     let {
       alphabeticalSortedCommands: t
     } = e;
-    return l.useMemo(() => {
+    return i.useMemo(() => {
       if (t.length <= 1) return {
         popularSortedCommands: t,
         canSort: false
@@ -34,11 +34,11 @@ function o(e) {
         }));
       return e ? (n.sort((e, t) => {
         let n = e.command.global_popularity_rank,
-          l = t.command.global_popularity_rank;
-        if (null != n && null != l) {
-          if (n !== l) return n - l
+          i = t.command.global_popularity_rank;
+        if (null != n && null != i) {
+          if (n !== i) return n - i
         } else if (null != n) return false;
-        else if (null != l) return 1;
+        else if (null != i) return 1;
         return e.alphabeticalSortIndex - t.alphabeticalSortIndex
       }), {
         popularSortedCommands: n.map(e => {
@@ -56,11 +56,11 @@ function o(e) {
   }({
     alphabeticalSortedCommands: c
   });
-  l.useEffect(() => {
-    i.i6(t, {
+  i.useEffect(() => {
+    l.i6(t, {
       dontRefetchMs: r.Z.Millis.DAY
     })
-  }, [t]), l.useLayoutEffect(() => {
+  }, [t]), i.useLayoutEffect(() => {
     d && s(a.bS.POPULAR)
   }, [d]);
   let p = c;

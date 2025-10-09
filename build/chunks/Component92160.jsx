@@ -56,14 +56,14 @@ function c(e) {
       children: [null == c ? null : (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: o.previewButton,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(a.Button, {
           variant: "secondary",
           size: "sm",
           text: null != i ? i : s.intl.string(s.t["5U0kLy"]),
           onClick: c,
           disabled: p
         })
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(a.Button, {
         variant: n ? "critical-primary" : "primary",
         size: "sm",
         disabled: null == d || !n || p,

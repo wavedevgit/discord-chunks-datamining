@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 670199, original params: e,n,i (module,exports,require) **/
+/** chunk id: 670199, original params: n,e,i (module,exports,require) **/
 require.d(exports, {
   Z: () => h
 }), require("./953529.js");
@@ -18,8 +18,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186425 = require("./186425.js");
 
-function h(e) {
-  var n, i;
+function h(n) {
+  var e, i;
   let {
     classification: a,
     isDsaEligible: h = false,
@@ -29,14 +29,14 @@ function h(e) {
     className: _,
     onClose: E,
     onNext: v
-  } = e, I = (0, d.n)(), T = null != (n = null == a ? true : a.explainer_link) ? n : "", S = null != a && null != a.flagged_content && a.flagged_content.length > 0, k = (0, c.c7)(null == a ? true : a.description), A = !N && !C && (null == j || j === o.j4.IN_APP), Z = null != a && ((0, c.FB)(a) || S);
+  } = n, I = (0, d.n)(), T = null != (e = null == a ? true : a.explainer_link) ? e : "", S = null != a && null != a.flagged_content && a.flagged_content.length > 0, A = (0, c.c7)(null == a ? true : a.description), k = !N && !C && (null == j || j === o.j4.IN_APP), Z = null != a && ((0, c.FB)(a) || S);
   return (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsxs)(l.xBx, {
       "data-migration-pending": true,
       direction: r.Z.Direction.VERTICAL,
       className: u.header,
       separator: false,
-      children: [(0, t.jsx)(l.X6q, {
+      children: [(0, t.jsx)(l.Heading, {
         className: u.title,
         variant: "heading-xl/semibold",
         children: p.intl.string(p.t["C5q+pa"])
@@ -65,7 +65,7 @@ function h(e) {
         className: u.policyContainer,
         children: (0, t.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: k
+          children: A
         })
       }), C && (0, t.jsx)(x.Z, {
         url: g.sQ.AGE_VERIFICATION_LINK,
@@ -79,14 +79,14 @@ function h(e) {
         text: p.intl.string(p.t["Vtyn//"]),
         url: T,
         onClick: () => I(g.n0.ClickLearnMoreLink)
-      }), A && h && (0, t.jsx)(l.Text, {
+      }), k && h && (0, t.jsx)(l.Text, {
         className: u.learnMore,
         variant: "text-xs/normal",
         children: p.intl.format(p.t.WMUgCQ, {})
       })]
-    }), A && (0, t.jsx)(l.mzw, {
+    }), k && (0, t.jsx)(l.mzw, {
       "data-migration-pending": true,
-      children: (0, t.jsx)(l.zxk, {
+      children: (0, t.jsx)(l.Button, {
         variant: "primary",
         text: p.intl.string(p.t.PDTjLC),
         onClick: v

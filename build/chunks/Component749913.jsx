@@ -121,7 +121,7 @@ function ed(e) {
     }
   }, c.X), [p, b] = i.useState(null), j = i.useContext(B.oo), v = i.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), _ = (0, g.e7)([F.Z], () => F.Z.can(er.Plq.ATTACH_FILES, t)), C = (0, g.Wu)([z.Z], () => z.Z.getUploads(t.id, L.d.FirstThreadMessage)), y = f && _ && u, T = (null == t ? true : t.isMediaChannel()) === true, O = function(e, t) {
+  }, [j]), _ = (0, g.e7)([F.Z], () => F.Z.can(er.Plq.ATTACH_FILES, t)), C = (0, g.Wu)([H.Z], () => H.Z.getUploads(t.id, L.d.FirstThreadMessage)), y = f && _ && u, T = (null == t ? true : t.isMediaChannel()) === true, O = function(e, t) {
     let n = (0, Q.AF)(),
       r = (0, X.ql)(e);
     return i.useCallback(() => {
@@ -137,7 +137,7 @@ function ed(e) {
           var e, n;
           null == (e = t.current) || e.setSelectionRange(l.length, l.length), null == (n = t.current) || n.focus()
         }
-      }, 0), (o && l.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== r || z.Z.getUploads(e.id, L.d.FirstThreadMessage).length > 0) && a())
+      }, 0), (o && l.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== r || H.Z.getUploads(e.id, L.d.FirstThreadMessage).length > 0) && a())
     }, [n, e.id, r, t])
   }(t, d), P = function(e) {
     let {
@@ -172,7 +172,7 @@ function ed(e) {
         var o;
         r = null == (o = E.Z.getStickerPreview(e.id, ec.drafts.type)) ? true : o.map(e => e.id)
       }
-      if ((null == i || 0 === i.length) && (i = z.Z.getUploads(e.id, L.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
+      if ((null == i || 0 === i.length) && (i = H.Z.getUploads(e.id, L.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
         let e = i.findIndex(e => true === e.isThumbnail);
         if (e > false) {
           let t = i[e];
@@ -200,7 +200,7 @@ function ed(e) {
         setPreviewing: h,
         setFormOpenFromUserAction: g,
         setGuidelinesOpen: f
-      } = n.getState(), x = W.Z.hasSeen(e.id);
+      } = n.getState(), x = q.Z.hasSeen(e.id);
       if (!u) return (0, K.P_)({
         guildId: e.guild_id,
         channelId: e.id
@@ -235,7 +235,7 @@ function ed(e) {
           shouldRefocus: true
         };
         let n = await r(p, b, j);
-        return (0, Z.ok)(n), q.Z.resort(e.id), (0, R.qB)(e.id, ec.drafts.type), d(), m(false), h(false), W.Z.markAsSeen(e.id), f(false), {
+        return (0, Z.ok)(n), W.Z.resort(e.id), (0, R.qB)(e.id, ec.drafts.type), d(), m(false), h(false), q.Z.markAsSeen(e.id), f(false), {
           shouldClear: true,
           shouldRefocus: false
         }
@@ -340,7 +340,7 @@ let eu = Chunk647438.memo(function(e) {
         guildId: t.guild_id,
         channelId: t.id
       })
-    }, [m, t.id, t.guild_id, a]), f = i.useMemo(() => !l && (s.trim().length > 0 || o.textValue.trim().length > 0 && o.textValue.trim() !== h || z.Z.getUploads(t.id, L.d.FirstThreadMessage).length > 0) && d ? (0, r.jsx)(p.vdY, {
+    }, [m, t.id, t.guild_id, a]), f = i.useMemo(() => !l && (s.trim().length > 0 || o.textValue.trim().length > 0 && o.textValue.trim() !== h || H.Z.getUploads(t.id, L.d.FirstThreadMessage).length > 0) && d ? (0, r.jsx)(p.vdY, {
       size: "md",
       color: "currentColor",
       className: el.pencilIcon
@@ -388,7 +388,7 @@ let eu = Chunk647438.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), j = (0, Q.AF)(), v = null != t.topic && 0 !== t.topic.length, _ = W.Z.hasSeen(t.id), C = (0, X.ql)(t), y = (0, g.e7)([H.default], () => H.default.getCurrentUser());
+    }, c.X), j = (0, Q.AF)(), v = null != t.topic && 0 !== t.topic.length, _ = q.Z.hasSeen(t.id), C = (0, X.ql)(t), y = (0, g.e7)([z.default], () => z.default.getCurrentUser());
     o()(null != y, "current user cannot be null"), (0, B.yp)({
       event: er.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
@@ -408,7 +408,7 @@ let eu = Chunk647438.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: el.titleContainer,
       onPaste: T,
-      children: [u && b ? (0, r.jsx)(p.X6q, {
+      children: [u && b ? (0, r.jsx)(p.Heading, {
         variant: "heading-md/semibold",
         className: el.title,
         children: h
@@ -426,7 +426,7 @@ let eu = Chunk647438.memo(function(e) {
             let i = 0 === r.trim().length,
               a = 0 === x.textValue.trim().length,
               l = x.textValue.trim() === C;
-            i && (a || l) && j.getState().setHasClickedForm(false), u || q.Z.updateForumSearchQuery(t.id, r)
+            i && (a || l) && j.getState().setHasClickedForm(false), u || W.Z.updateForumSearchQuery(t.id, r)
           },
           onFocus: () => {
             j.getState().setTitleFocused(true), j.getState().setBodyFocused(false)
@@ -434,13 +434,13 @@ let eu = Chunk647438.memo(function(e) {
           onBlur: () => {
             j.getState().setTitleFocused(false);
             let e = (0, M.Z)(h, true);
-            e !== h && (j.getState().setName(e), u || q.Z.updateForumSearchQuery(t.id, e))
+            e !== h && (j.getState().setName(e), u || W.Z.updateForumSearchQuery(t.id, e))
           },
           onKeyDown: e => {
             "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), u && h.length > 0 ? null == l || l.focus() : a && e.shiftKey ? ((0, K.nH)({
               guildId: t.guild_id,
               channelId: t.id
-            }), v && !_ && j.getState().setGuidelinesOpen(true), j.getState().setFormOpenFromUserAction(), h.trim().length > 0 && (j.getState().setBodyFocused(true), null == l || l.focus())) : u || !(h.length > 0) || null != d || s || q.Z.updateForumSearchQuery(t.id, h));
+            }), v && !_ && j.getState().setGuidelinesOpen(true), j.getState().setFormOpenFromUserAction(), h.trim().length > 0 && (j.getState().setBodyFocused(true), null == l || l.focus())) : u || !(h.length > 0) || null != d || s || W.Z.updateForumSearchQuery(t.id, h));
             let r = n.current;
             if ("Home" === e.key || "End" === e.key) {
               if (null == r) return;
@@ -537,7 +537,7 @@ let eg = Chunk647438.memo(function(e) {
       disabled: a = false,
       editorRef: s,
       setEditorRef: d
-    } = e, u = (0, g.e7)([H.default], () => H.default.getCurrentUser());
+    } = e, u = (0, g.e7)([z.default], () => z.default.getCurrentUser());
     o()(null != u, "current user cannot be null");
     let {
       messageError: m,
@@ -656,7 +656,7 @@ function ep(e) {
     return {
       textAreaState: t
     }
-  }, c.X), n = (0, g.Wu)([z.Z], () => z.Z.getUploads(e.id, L.d.FirstThreadMessage));
+  }, c.X), n = (0, g.Wu)([H.Z], () => H.Z.getUploads(e.id, L.d.FirstThreadMessage));
   return i.useMemo(() => t.textValue.trim().length > 0 || n.length > 0, [t.textValue, n])
 }
 
@@ -792,7 +792,7 @@ function e_(e) {
       formOpen: r
     }
   }, c.X), u = ep(t), m = !eb(t) && u && o.trim().length > 0;
-  return __OVERLAY__ || l ? null : (0, r.jsx)(p.zxk, {
+  return __OVERLAY__ || l ? null : (0, r.jsx)(p.Button, {
     variant: "primary",
     type: "submit",
     size: "sm",
@@ -930,7 +930,7 @@ function ey(e) {
         style: {
           left: C
         },
-        children: (0, r.jsx)(p.zxk, eo(es({}, e), {
+        children: (0, r.jsx)(p.Button, eo(es({}, e), {
           size: "sm",
           variant: "secondary",
           icon: p.CJ0,
@@ -940,7 +940,7 @@ function ey(e) {
       })
     }), (0, r.jsx)("div", {
       className: l()(el.tagsButton, el.tagsButtonPlaceholder),
-      children: (0, r.jsx)(p.zxk, {
+      children: (0, r.jsx)(p.Button, {
         size: "sm",
         variant: "secondary",
         icon: p.CJ0,

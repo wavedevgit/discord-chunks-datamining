@@ -76,7 +76,7 @@ let m = function(e) {
             className: p.titleContainer,
             children: (0, r.jsx)("div", {
               className: p.title,
-              children: (0, r.jsx)(l.X6q, {
+              children: (0, r.jsx)(l.Heading, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
                 className: p.appName,

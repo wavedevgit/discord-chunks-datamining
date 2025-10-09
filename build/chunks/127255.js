@@ -16,16 +16,16 @@ function c(e) {
     enableFilter: n = false
   } = e, {
     filter: c
-  } = (0, i.cj)([r.Z], () => ({
+  } = (0, l.cj)([r.Z], () => ({
     filter: r.Z.getFilter()
   })), u = (0, a.E)(t), d = (0, o.Z)(u), p = (0, s.o)();
-  return l.useMemo(() => {
+  return i.useMemo(() => {
     function e(e) {
       return !!(!n || "" === c || e.application.name.toLowerCase().includes(c.toLowerCase()))
     }
     let t = [...p].filter(e),
-      l = new Set(t.map(e => e.application.id));
-    for (let n of d) !l.has(n.application.id) && e(n) && t.push(n);
+      i = new Set(t.map(e => e.application.id));
+    for (let n of d) !i.has(n.application.id) && e(n) && t.push(n);
     return t
   }, [p, n, c, d])
 }

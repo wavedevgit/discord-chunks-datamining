@@ -1,7 +1,7 @@
 /** Chunk was on 40897 **/
 /** chunk id: 507294, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => Z,
+  default: () => S,
   g: () => C
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -60,12 +60,12 @@ function C(e, t) {
     }, r))
   })
 }
-let Z = function(e) {
+let S = function(e) {
   let {
     guildId: t,
     transitionState: l,
-    onClose: Z
-  } = e, S = (0, c.e7)([y.Z], () => y.Z.getSortedRoles(t)), D = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([h.ZP], () => h.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
+    onClose: S
+  } = e, Z = (0, c.e7)([y.Z], () => y.Z.getSortedRoles(t)), D = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([h.ZP], () => h.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
   if (i.useEffect(() => {
       0 !== I.length && O.default.track(P.rMx.PASSPORT_ENTRY_VIEWED, k({
         role_ids: I.map(e => {
@@ -78,11 +78,11 @@ let Z = function(e) {
     }, [t, I]), i.useEffect(() => {
       f.Z.getGuildRoleConnectionsConfigurations(t).then(e => A(e))
     }, [t]), null == E) return null;
-  let U = S.filter(e => null === e.tags.guild_connections);
+  let U = Z.filter(e => null === e.tags.guild_connections);
   return (0, n.jsx)(a.Modal, {
     transitionState: l,
     title: N.intl.string(N.t.ghtnsr),
-    onClose: Z,
+    onClose: S,
     subtitle: N.intl.format(N.t["Y+TsER"], {
       helpdeskArticleUrl: x.Z.getArticleURL(P.BhN.CONNECTION_DETAILS)
     }),
@@ -105,7 +105,7 @@ let Z = function(e) {
                 var l;
                 let i = null == (l = r.applications) ? true : l[e.application_id];
                 a = (null == i ? true : i.bot) != null ? (0, n.jsx)("img", {
-                  src: new g.Z(i.bot).getAvatarURL(t, 24),
+                  src: new g.default(i.bot).getAvatarURL(t, 24),
                   alt: "",
                   className: o()(_.botAvatar, w.avatar)
                 }) : null

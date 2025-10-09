@@ -163,7 +163,7 @@ class T extends Chunk647438.PureComponent {
       onEditClick: this.handleEditClick
     }, t.id));
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsxs)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
           size: "sm",

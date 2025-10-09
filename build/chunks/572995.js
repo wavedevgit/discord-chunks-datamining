@@ -107,11 +107,11 @@ let eo = (e, t) => er({
     },
     showYourStyle: {
       thumbnail: M.Z,
-      assetUrl: e ? x.Z : k.Z
+      assetUrl: e ? x.Z : j.Z
     },
     yourSpace: {
       thumbnail: U.Z,
-      assetUrl: e ? j.Z : G.Z
+      assetUrl: e ? k.Z : G.Z
     },
     emojis: {
       thumbnail: A.Z,

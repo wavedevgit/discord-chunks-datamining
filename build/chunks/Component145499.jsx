@@ -40,7 +40,7 @@ let w = e => {
       tier: l
     } = e, a = n < l, s = (0, _.ig)(l);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(d.X6q, {
+      children: [(0, r.jsx)(d.Heading, {
         color: "header-primary",
         variant: "heading-md/semibold",
         children: t
@@ -69,7 +69,7 @@ let w = e => {
     } = (0, g.O)(), {
       canCreateExpressions: l
     } = (0, h.XJ)(t);
-    return (0, r.jsx)(d.zxk, {
+    return (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
       text: T.intl.string(T.t.O1REe3),
@@ -123,7 +123,7 @@ let w = e => {
       return null != (e = C.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: v
-    } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
+    } = (0, m.ZP)(), D = (0, x.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [g]), l) return (0, r.jsx)(d.$jN, {});
@@ -166,7 +166,7 @@ let w = e => {
         var i;
         let l, s, {
             isAnimatedTo: m,
-            onSetRef: b,
+            onSetRef: x,
             tier: j,
             tiers: C,
             tierIndex: O
@@ -181,16 +181,16 @@ let w = e => {
           B = (0, _.ig)(j.tier),
           F = g.slice(M, U),
           H = F.length > 0,
-          z = A < j.tier,
+          W = A < j.tier,
           V = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
-          W = N && !z && V === j.tier && U !== F.length,
-          K = W || F.length > 0,
+          z = N && !W && V === j.tier && U !== F.length,
+          K = z || F.length > 0,
           Y = U - M,
           q = n(872732),
           X = B - F.length,
-          J = W ? Math.min(5 - (F.length + 0) % 5, X) : 0,
-          Q = [];
-        for (let e = 0; e < J; e++) Q.push((0, r.jsx)(Z, {}, "placeholder-".concat(e)));
+          Q = z ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          J = [];
+        for (let e = 0; e < Q; e++) J.push((0, r.jsx)(Z, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < j.tier && D >= I.oCV[j.tier],
           ee = T.intl.string(T.t.dtFw5e),
           et = () => {
@@ -211,10 +211,10 @@ let w = e => {
           en = false;
         $ && (k ? (et = () => {
           let e = S.Cp[j.tier];
-          null != e && (0, x.H6)(t.id, e)
+          null != e && (0, b.H6)(t.id, e)
         }, ee = T.intl.string(T.t.g7lkra), t.premiumTier + 1 !== j.tier && (en = true, l = T.intl.string(T.t.mTMkY2))) : (en = true, l = T.intl.string(T.t.hwPEJS)));
         let er = V === O + 1 && V > A,
-          ei = W || er || O > A;
+          ei = z || er || O > A;
         return er ? s = (0, r.jsx)(p.Z, {
           guild: t,
           size: c.zx.Sizes.SMALL,
@@ -227,12 +227,12 @@ let w = e => {
             object: I.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, _.ge)(j.tier)
           }
-        }) : W && (s = (0, r.jsx)(R, {
+        }) : z && (s = (0, r.jsx)(R, {
           guild: t
         })), (0, r.jsxs)(E.Z, {
           subscriptionCount: L,
           tier: j,
-          onSetRef: b,
+          onSetRef: x,
           isAnimatedTo: m,
           hasBottomMargin: O !== C.length - 1,
           withCardBody: !K,
@@ -242,18 +242,18 @@ let w = e => {
           children: [K && (0, r.jsxs)("div", {
             className: P.grid,
             children: [F.map(e => (0, r.jsx)(y.Z, {
-              isDisabled: z,
+              isDisabled: W,
               sticker: e,
               canManageSticker: w(e)
-            }, e.id)), Q]
-          }), !z && !W && 0 === F.length && (0, r.jsx)("div", {
+            }, e.id)), J]
+          }), !W && !z && 0 === F.length && (0, r.jsx)("div", {
             className: a()(P.emptyTierWrapper, P.unusedTierWrapper),
             children: (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
               children: T.intl.string(T.t.lqwv0N)
             })
-          }), z && !H && (0, r.jsxs)("div", {
+          }), W && !H && (0, r.jsxs)("div", {
             className: P.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
               alt: T.intl.string(T.t.BAhsws),
@@ -272,7 +272,7 @@ let w = e => {
             }), (0, r.jsx)(o.u, {
               text: l,
               shouldShow: en,
-              children: (0, r.jsx)(d.zxk, {
+              children: (0, r.jsx)(d.Button, {
                 variant: "active",
                 text: ee,
                 disabled: en,

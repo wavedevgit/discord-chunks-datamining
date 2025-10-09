@@ -64,7 +64,7 @@ let y = [{
     } = e, r = (0, p.nY)({
       grow: true
     });
-    return (0, n.jsx)(m.eee, {
+    return (0, n.jsx)(m.Anchor, {
       useDefaultUnderlineStyles: false,
       href: a,
       className: s()(r, v.refreshDownloadButton),
@@ -119,7 +119,7 @@ let y = [{
             className: s()(v.active, _)
           })]
         }), (0, n.jsxs)("div", {
-          children: [(0, n.jsx)(m.X6q, {
+          children: [(0, n.jsx)(m.Heading, {
             className: v.platformName,
             variant: "heading-lg/semibold",
             children: f
@@ -202,7 +202,7 @@ function k(e) {
         })
       }), !c.tq && (0, n.jsxs)("div", {
         className: v.platformsWrap,
-        children: [(0, n.jsx)(m.X6q, {
+        children: [(0, n.jsx)(m.Heading, {
           variant: "heading-lg/semibold",
           className: v.header,
           children: N.intl.string(N.t["0KK0bG"])
@@ -218,7 +218,7 @@ function k(e) {
         })]
       }), (0, n.jsxs)("div", {
         className: v.platformsWrap,
-        children: [!c.tq && (0, n.jsx)(m.X6q, {
+        children: [!c.tq && (0, n.jsx)(m.Heading, {
           variant: "heading-lg/semibold",
           className: v.header,
           children: N.intl.string(N.t.RdSNWV)

@@ -99,9 +99,9 @@ function S(e) {
     } = e,
     x = i.useId(),
     M = null != n ? n : x,
-    [k, j] = i.useState(null != E ? E : []),
+    [j, k] = i.useState(null != E ? E : []),
     U = null != y,
-    G = U ? y : k,
+    G = U ? y : j,
     B = (0, s.ZP)({
       id: M,
       async scrollToEnd() {},
@@ -113,7 +113,7 @@ function S(e) {
     Z = i.useCallback(e => {
       if (true === a && 1 === G.length && G.includes(e)) return;
       let t = (0, m.cq)(u, G, e);
-      U || j(t), null == I || I(t)
+      U || k(t), null == I || I(t)
     }, [a, G, I, U, u]),
     F = i.useCallback(e => (0, r.jsx)("div", {
       className: g.listBoxItemContent,

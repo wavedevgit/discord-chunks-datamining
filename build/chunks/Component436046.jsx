@@ -24,7 +24,7 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, N] = o.useState(null), [x, T] = o.useState(null), [A, C] = o.useState(false), j = (0, l.e7)([p.default], () => p.default.getCurrentUser()), O = o.useRef(null);
+  } = e, [s, N] = o.useState(null), [x, T] = o.useState(null), [A, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), O = o.useRef(null);
   async function y(e) {
     e.preventDefault(), r()(null != s, "Cannot submit null birthday."), C(true);
     try {
@@ -56,8 +56,8 @@ function N(e) {
       width: 56,
       height: 40,
       className: E.logo,
-      color: i.Z.unsafe_rawColors.BRAND_500.css
-    }), (0, a.jsx)(u.X6q, {
+      color: l.Z.unsafe_rawColors.BRAND_500.css
+    }), (0, a.jsx)(u.Heading, {
       className: E.title,
       variant: "heading-xl/semibold",
       children: b.intl.string(b.t.n7i7sr)

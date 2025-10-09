@@ -1,4 +1,4 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 351152, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -27,11 +27,11 @@ function b(e) {
   let {
     guildId: t,
     onClick: n
-  } = e, i = (0, a.e7)([f.Z], () => f.Z.getGuild(t)), l = (0, a.e7)([u.ZP, f.Z, h.Z], () => u.ZP.getChannels(t)[u.Zb].some(e => {
+  } = e, i = (0, a.e7)([f.Z], () => f.Z.getGuild(t)), l = (0, a.e7)([u.ZP, f.Z, p.Z], () => u.ZP.getChannels(t)[u.Zb].some(e => {
     let {
       channel: t
     } = e;
-    return (0, g.JL)(t, f.Z, h.Z)
+    return (0, _.JL)(t, f.Z, p.Z)
   }));
   return null != i && l ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
@@ -44,8 +44,8 @@ function b(e) {
       variant: "text-md/normal",
       className: j.guildName,
       children: i.name
-    }), (0, r.jsx)(p.Z, {
-      direction: p.Z.Directions.RIGHT,
+    }), (0, r.jsx)(m.Z, {
+      direction: m.Z.Directions.RIGHT,
       className: j.guildArrow
     })]
   }) : null
@@ -54,9 +54,9 @@ function b(e) {
 function S(e) {
   let {
     onSelectGuild: t
-  } = e, n = (0, a.e7)([m.ZP], () => m.ZP.getGuildFolders());
-  return (0, r.jsx)(x.Z, {
-    title: _.intl.string(_.t.JsqeEh),
+  } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
+  return (0, r.jsx)(g.Z, {
+    title: x.intl.string(x.t.JsqeEh),
     scrollerClassName: l()(j.guildScroller, v.marginBottom),
     children: o().flatMap(n, e => {
       let {

@@ -62,7 +62,7 @@ function g(e) {
       within: true,
       children: (0, r.jsxs)("div", {
         className: u.iconInput,
-        children: [(0, r.jsx)(a.zxk, {
+        children: [(0, r.jsx)(a.Button, {
           tabIndex: false,
           size: "sm",
           variant: "primary",
@@ -74,7 +74,7 @@ function g(e) {
           disabled: !o
         })]
       })
-    }), null != t.icon ? (0, r.jsx)(a.zxk, {
+    }), null != t.icon ? (0, r.jsx)(a.Button, {
       variant: "critical-secondary",
       size: "sm",
       text: d.intl.string(d.t.x8AlTk),

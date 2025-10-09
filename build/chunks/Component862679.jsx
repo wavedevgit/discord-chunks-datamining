@@ -47,7 +47,7 @@ let d = function(e) {
       className: u.content,
       children: [j, (0, i.jsxs)("div", {
         className: u.text,
-        children: [(0, i.jsx)(o.X6q, {
+        children: [(0, i.jsx)(o.Heading, {
           variant: "heading-md/semibold",
           className: u.title,
           children: t
@@ -68,7 +68,7 @@ let d = function(e) {
         })
       }), null != p && (0, i.jsx)("div", {
         className: u.button,
-        children: (0, i.jsx)(o.zxk, {
+        children: (0, i.jsx)(o.Button, {
           text: p,
           size: "sm",
           variant: null != x ? x : "secondary",

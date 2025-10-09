@@ -86,9 +86,9 @@ function E(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == o ? (0, n.jsx)(s.X6q, S(I({}, a), {
+  return null == o ? (0, n.jsx)(s.Heading, S(I({}, a), {
     children: i
-  })) : (0, n.jsx)(s.X6q, S(I({}, a), {
+  })) : (0, n.jsx)(s.Heading, S(I({}, a), {
     children: (0, n.jsx)(s.P3F, {
       onClick: o,
       className: P.clickableText,
@@ -263,7 +263,7 @@ function C(e) {
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: P.details,
-      children: [l ? (0, n.jsx)(s.X6q, S(I({}, m), {
+      children: [l ? (0, n.jsx)(s.Heading, S(I({}, m), {
         children: u
       })) : (0, n.jsx)(E, I({
         applicationId: f,

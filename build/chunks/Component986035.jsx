@@ -55,11 +55,11 @@ let o = function(e) {
       justify: "center",
       align: "center",
       gap: 16,
-      children: [null != c && null != u ? (0, r.jsx)(l.zxk, {
+      children: [null != c && null != u ? (0, r.jsx)(l.Button, {
         variant: "secondary",
         text: c,
         onClick: g
-      }) : null, null != o && null != d ? (0, r.jsx)(l.zxk, {
+      }) : null, null != o && null != d ? (0, r.jsx)(l.Button, {
         onClick: m,
         text: o
       }) : null]

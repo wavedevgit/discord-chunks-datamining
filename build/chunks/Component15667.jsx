@@ -21,7 +21,7 @@ let c = e => {
   }).filter(e => null != e);
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       className: s.breadcrumbsHeader,
       color: "header-secondary",
       variant: "heading-sm/semibold",

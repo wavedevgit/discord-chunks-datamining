@@ -22,8 +22,8 @@ function f(e) {
   let {
     changeTitle: f,
     value: h,
-    options: x,
-    className: b,
+    options: b,
+    className: x,
     onChange: j
   } = e, [v, _] = i.useState(h), [C, O] = i.useState(false), [y, N] = i.useState(false), E = i.useRef(null);
   i.useEffect(() => {
@@ -31,7 +31,7 @@ function f(e) {
   }, [h]), i.useEffect(() => () => {
     clearTimeout(E.current)
   }, []);
-  let I = x.find(e => e.value === v);
+  let I = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
     title: C ? f : null != (t = null == I ? true : I.title) ? t : f,
     description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
@@ -43,8 +43,8 @@ function f(e) {
       children: m.intl.string(m.t.GEgsAw)
     }),
     loading: y,
-    className: b,
-    children: x.map((e, t) => (0, r.jsx)(g.Z, {
+    className: x,
+    children: b.map((e, t) => (0, r.jsx)(g.Z, {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,

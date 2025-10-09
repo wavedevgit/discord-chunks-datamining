@@ -227,7 +227,7 @@ function d() {
           onChange: e => u(Number(e)),
           label: "Height"
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         size: "sm",
         disabled: null == module,
         onClick: async () => {

@@ -77,8 +77,8 @@ function S(e) {
     (null == w ? true : w.visibility) != null && C(w.visibility === l.f.PUBLIC)
   }, [null == w ? true : w.visibility]);
   let {
-    wishlist: k,
-    error: D
+    wishlist: D,
+    error: k
   } = (0, g.kZ)(n, t.id), Z = i.useCallback(() => {
     if (null == n) return;
     let e = N ? l.f.PRIVATE : l.f.PUBLIC;
@@ -94,13 +94,13 @@ function S(e) {
       openInLayer: false
     })
   }, [E]);
-  return null != D ? null : null == k || 0 === k.items.length ? (0, r.jsx)(v.F, {
+  return null != k ? null : null == D || 0 === D.items.length ? (0, r.jsx)(v.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: x.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
         className: x.emptyStateText,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: O.intl.string(O.t.HGnLLS)
@@ -109,7 +109,7 @@ function S(e) {
           color: "header-secondary",
           children: O.intl.string(O.t["/X1ny8"])
         })]
-      }), T && (0, r.jsx)(o.zxk, {
+      }), T && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         icon: o.EOn,
@@ -128,7 +128,7 @@ function S(e) {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: O.intl.format(O.t.r6Y1Li, {
-            count: k.items.length
+            count: D.items.length
           })
         }), !N && (0, r.jsx)(o.ua7, {
           "data-migration-pending": true,
@@ -163,7 +163,7 @@ function S(e) {
         })]
       }), T ? (0, r.jsxs)("div", {
         className: x.headerActions,
-        children: [(0, r.jsx)(o.zxk, {
+        children: [(0, r.jsx)(o.Button, {
           variant: "secondary",
           size: "sm",
           icon: o.qJs,
@@ -174,7 +174,7 @@ function S(e) {
           isWishlistPublic: N,
           onToggleVisibility: Z
         })]
-      }) : (0, r.jsx)(o.zxk, {
+      }) : (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
         icon: o.EOn,
@@ -182,7 +182,7 @@ function S(e) {
         onClick: _
       })]
     }), (0, r.jsx)(y.Z, {
-      items: k.items,
+      items: D.items,
       profileOwner: t,
       isOwner: T
     })]

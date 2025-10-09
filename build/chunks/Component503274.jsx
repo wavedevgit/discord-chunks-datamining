@@ -31,7 +31,7 @@ function f(e) {
       var i, s;
       return (0, l.jsx)("div", {
         className: g.disableButton,
-        children: (0, l.jsx)(r.zxk, (i = function(e) {
+        children: (0, l.jsx)(r.Button, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               l = Object.keys(n);
@@ -94,7 +94,7 @@ function b(e) {
       src: P
     }), (0, l.jsxs)("div", {
       className: g.textContainer,
-      children: [(0, l.jsx)(r.X6q, {
+      children: [(0, l.jsx)(r.Heading, {
         variant: "heading-sm/semibold",
         children: p.name
       }), O ? (0, l.jsx)(s.rL, {

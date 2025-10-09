@@ -29,21 +29,21 @@ function C(e) {
   } = (0, l.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
-  })), [N, T] = a.useState(false), [b, A] = a.useState(_.lds), [p, v] = a.useState(null);
+  })), [N, T] = a.useState(false), [b, A] = a.useState(f.lds), [p, v] = a.useState(null);
   return a.useEffect(() => {
     if (N) v((0, s.jsx)(c.Wn, {
       messageType: c.QYI.ERROR,
       className: g.infoMessage,
-      children: f.intl.format(f.t.HAuRSE, {
+      children: _.intl.format(_.t.HAuRSE, {
         maxNumAccounts: h.$H
       })
-    })), A(_.lds);
+    })), A(f.lds);
     else if (null != b) {
       let e = d.default.getUser(b);
       null != e && v((0, s.jsx)(c.Wn, {
         messageType: c.QYI.POSITIVE,
         className: g.infoMessage,
-        children: f.intl.format(f.t["09qidX"], {
+        children: _.intl.format(_.t["09qidX"], {
           username: e.username
         })
       })), T(false)
@@ -57,11 +57,11 @@ function C(e) {
     onClose: n,
     transitionState: t,
     size: "md",
-    "aria-label": f.intl.string(f.t.WbFpq6),
-    title: f.intl.string(f.t.WbFpq6),
-    subtitle: f.intl.string(f.t["+1Uk3d"]),
+    "aria-label": _.intl.string(_.t.WbFpq6),
+    title: _.intl.string(_.t.WbFpq6),
+    subtitle: _.intl.string(_.t["+1Uk3d"]),
     actions: [{
-      text: f.intl.string(f.t["9g2mqa"]),
+      text: _.intl.string(_.t["9g2mqa"]),
       variant: "secondary",
       onClick: () => {
         if (E.length >= h.$H) return void T(true);
@@ -69,7 +69,7 @@ function C(e) {
       }
     }],
     children: [p, (0, s.jsx)(m.Z, {
-      actionText: f.intl.string(f.t.Wf421N),
+      actionText: _.intl.string(_.t.Wf421N),
       onAction: (e, t) => {
         switch (e) {
           case m.W.LOGIN_REQUIRED:

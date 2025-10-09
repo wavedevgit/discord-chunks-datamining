@@ -49,7 +49,7 @@ function f(e, t) {
 }
 let h = [];
 
-function x() {
+function b() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk197530.actionItemContainer,
     children: (0, Chunk951288.jsxs)("div", {
@@ -74,7 +74,7 @@ function x() {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guildId: t,
     onAddAction: l
@@ -138,7 +138,7 @@ let j = function(e) {
       onDragStart: C,
       onDragReset: O,
       onDragComplete: y
-    }, e.channelId)), (0, r.jsx)(x, {}), n.length < o.O9 && (0, r.jsx)(b, {
+    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
       guildId: t,
       onAddAction: a
     })]

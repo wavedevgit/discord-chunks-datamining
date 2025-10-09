@@ -2,8 +2,8 @@
 /** chunk id: 987509, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => S,
-  dL: () => p,
-  hC: () => h,
+  dL: () => h,
+  hC: () => p,
   hl: () => m,
   qx: () => g
 }), require("./388685.js"), require("./539854.js");
@@ -19,7 +19,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk41837 = require("./41837.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e) {
+function h(e) {
   let t = u.Z.getChannel(e);
   return (null == t ? true : t.type) === b.d4z.DM ? {
     type: "user",
@@ -30,7 +30,7 @@ function p(e) {
   }
 }
 
-function h(e) {
+function p(e) {
   return "".concat(e.type, "-").concat(e.id)
 }
 
@@ -96,12 +96,12 @@ function S(e) {
   } = e;
   if (n) return x(v(t, f));
   let b = null != c && c.length > 0 ? c.map(e => y(e)) : [],
-    p = s.Z.getChannelHistory(),
-    h = p.length > 0 ? p.map(e => (0, i.Z)(e)) : [],
+    h = s.Z.getChannelHistory(),
+    p = h.length > 0 ? h.map(e => (0, i.Z)(e)) : [],
     m = a.length > 0 ? a.map(e => (0, i.Z)(e.id)) : [],
-    g = v([...b, null != u ? y(u) : null, ...h, ...m], f),
+    g = v([...b, null != u ? y(u) : null, ...p, ...m], f),
     S = (null == o ? true : o.find(e => (0, r.isEqual)(e, d))) != null,
-    E = null == d || S ? [] : [d.id];
-  return null != l ? x(g.filter(e => e.type === l)) : x(g, E).slice(0, 15)
+    j = null == d || S ? [] : [d.id];
+  return null != l ? x(g.filter(e => e.type === l)) : x(g, j).slice(0, 15)
 }
 require("./388032.jsx")

@@ -47,7 +47,7 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
       }), (0, i.jsx)(r.fef, {
         children: (0, i.jsxs)("div", {
           className: s.manaContainer,
-          children: [(0, i.jsx)(l.X6q, {
+          children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             className: s.header,
             id: u,

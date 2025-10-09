@@ -44,7 +44,7 @@ function v() {
     }
   };
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Balance Widget Components"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
@@ -134,7 +134,7 @@ function v() {
 function j() {
   let [e, t] = Chunk647438.useState("1144308439720394944");
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Orb Checkout Components"
     }), (0, Chunk951288.jsxs)(Chunk237012.E_, {
@@ -178,7 +178,7 @@ function _() {
     resetOnboardingExperience: e
   } = (0, Chunk52647.Z)();
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: "Onboarding Components"
     }), (0, Chunk951288.jsxs)(Chunk237012.E_, {

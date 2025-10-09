@@ -16,7 +16,7 @@ function a() {
       src: "https://cdn.discordapp.com/assets/content/a72233587aaf964fc327663677974641a235719ad6445da58f931094cb799f66.png",
       alt: Chunk388032.intl.string(Chunk388032.t.oezC39),
       className: Chunk634804.img
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.oezC39)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {

@@ -20,19 +20,19 @@ let E = function(t) {
   let {
     onClose: e,
     channelId: n
-  } = t, [E, A] = s.useState(false), O = s.useCallback(() => {
+  } = t, [E, g] = s.useState(false), A = s.useCallback(() => {
     (0, a.openUserSettings)(l.n.CONTENT_AND_SOCIAL_PANEL, {
       section: u.oAB.CONTENT_AND_SOCIAL,
       scrollPosition: S.FY.DM_SAFETY_ALERTS_V2
     }), e()
-  }, [e]), h = s.useCallback(() => {
-    E || (A(true), (0, c.Uj)(n).then(() => {
+  }, [e]), O = s.useCallback(() => {
+    E || (g(true), (0, c.Uj)(n).then(() => {
       e(), (0, d.t)({
         text: x.intl.string(x.t.FhgVWl),
         id: "safety-tools-report-false-positive"
       })
     }).catch(() => {
-      A(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRU), r.ToastType.FAILURE))
+      g(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRU), r.ToastType.FAILURE))
     }))
   }, [n, e, E]);
   return (0, i.jsxs)(T.Z, {
@@ -44,8 +44,8 @@ let E = function(t) {
         learnMoreLink: o.Z.getArticleURL(u.BhN.SAFETY_ALERTS)
       })
     }), (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(r.zxk, {
-        onClick: O,
+      children: [(0, i.jsx)(r.Button, {
+        onClick: A,
         fullWidth: true,
         text: x.intl.string(x.t.qpWnyM)
       }), (0, i.jsx)(r.Text, {
@@ -56,7 +56,7 @@ let E = function(t) {
           reportFalsePositiveHook: (t, e) => (0, i.jsx)(r.P3F, {
             className: _.reportFalsePositiveButton,
             tag: "span",
-            onClick: h,
+            onClick: O,
             children: t
           }, e)
         })

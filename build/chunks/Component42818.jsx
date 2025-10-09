@@ -2,8 +2,8 @@
 /** chunk id: 42818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  As: () => k,
-  By: () => j,
+  As: () => j,
+  By: () => k,
   Lu: () => U,
   e9: () => Y,
   hG: () => Z,
@@ -177,7 +177,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     label: t,
     tooltipText: n,
@@ -200,7 +200,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     invoice: t,
     isPrepaidPaymentSource: n
@@ -248,7 +248,7 @@ function U(e) {
       isPrepaidPaymentSource: i,
       referralTrialOfferId: a
     }), 0 === h || f ? null : (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: A.intl.formatToPlainString(A.t.ZSVgeX, {
           planName: (0, g.PV)(n.id) ? (0, g.aq)(n.id) : n.name
         }),
@@ -256,7 +256,7 @@ function U(e) {
       }),
       value: (0, E.T4)(h, t.currency)
     }), 0 !== m ? (0, r.jsx)(v.B1, {
-      label: (0, r.jsx)(k, {
+      label: (0, r.jsx)(j, {
         label: A.intl.string(A.t["+as5ZW"]),
         tooltipText: A.intl.format(A.t.UDop9f, {}),
         tooltipAriaLabel: A.intl.string(A.t.P68ePD)
@@ -464,7 +464,7 @@ function Y(e) {
     planName: (0, g.Gf)(n.id, false, a)
   }), (0, r.jsxs)("div", {
     className: i,
-    children: [(0, r.jsx)(u.X6q, {
+    children: [(0, r.jsx)(u.Heading, {
       variant: "heading-md/semibold",
       children: A.intl.string(A.t.PEjaCw)
     }), l >= 0 && false === c ? (0, r.jsxs)(r.Fragment, {
@@ -487,7 +487,7 @@ function Y(e) {
           className: C.subscriptionCostRow
         })]
       })]
-    }) : (0, r.jsx)(u.X6q, {
+    }) : (0, r.jsx)(u.Heading, {
       variant: "text-md/normal",
       children: "".concat(t, " - ").concat(h)
     })]

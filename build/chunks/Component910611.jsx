@@ -2,7 +2,7 @@
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => H,
-  ud: () => L,
+  ud: () => D,
   v0: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97009 = require("./97009.js");
 
-function k(e) {
+function L(e) {
   var t;
   let {
     channel: n,
@@ -94,7 +94,7 @@ function k(e) {
   }, a)
 }
 
-function L(e) {
+function D(e) {
   let {
     channel: t,
     channelName: n,
@@ -170,7 +170,7 @@ function L(e) {
     case A.d4z.GUILD_TEXT:
     case A.d4z.GUILD_FORUM:
     case A.d4z.GUILD_MEDIA:
-      return null != t.linkedLobby ? (0, i.jsxs)(k, {
+      return null != t.linkedLobby ? (0, i.jsxs)(L, {
         channel: t,
         children: [B(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSE) : M.intl.string(M.t.Pnajj4)), (0, i.jsx)(T.Z.Title, {
           level: y,
@@ -255,7 +255,7 @@ function L(e) {
       return null
   }
 }
-let D = e => {
+let k = e => {
   var t, n, l;
   let {
     channel: a
@@ -277,7 +277,7 @@ function U(e, t) {
   switch (e.type) {
     case A.d4z.DM:
       return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(D, {
+        children: [(0, i.jsx)(k, {
           channel: e
         }), (0, i.jsx)(P.Z, {
           channel: e

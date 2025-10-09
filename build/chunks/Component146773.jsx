@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 146773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => S
@@ -152,7 +152,7 @@ function S(e) {
       if ((0, p.r1)(i.id) && _.Z.can(j.Plq.MANAGE_CHANNELS, i)) return (0, d.N)() && (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("82560").then(n.bind(n, 391312));
+        } = await n.e("22016").then(n.bind(n, 391312));
         return t => (0, r.jsx)(e, x({}, t))
       }), false;
       if (t.type === j.d4z.GUILD_CATEGORY) return _.Z.can(j.Plq.MANAGE_CHANNELS, i) && !(0, p.r1)(i.id);

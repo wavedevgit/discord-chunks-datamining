@@ -37,7 +37,7 @@ function x(e) {
         alt: "",
         className: p.asset
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(l.X6q, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-primary",
           className: p.title,
@@ -47,7 +47,7 @@ function x(e) {
           color: "text-secondary",
           children: m.intl.string(m.t.RSHtFx)
         })]
-      }), f ? (0, a.jsx)(l.zxk, {
+      }), f ? (0, a.jsx)(l.Button, {
         text: m.intl.string(m.t.LhcHi4),
         fullWidth: true,
         onClick: () => {

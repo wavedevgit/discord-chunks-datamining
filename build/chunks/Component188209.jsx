@@ -75,7 +75,7 @@ function A(e) {
     rewardCode: d,
     selectedPlatformType: u,
     sharedQuestFields: m
-  })) ? t : "", v = a.useMemo(() => {
+  })) ? t : "", g = a.useMemo(() => {
     var e;
     let t = null == (e = (0, x.o9)({
       quest: n,
@@ -84,11 +84,11 @@ function A(e) {
     if ((0, j.Ew)(t)) return null;
     let r = null == d ? true : d.code;
     return (0, j.Ew)(r) ? t : t.replace(T.Dp, encodeURIComponent(r))
-  }, [n, null == d ? true : d.code]), g = (0, b.In)({
+  }, [n, null == d ? true : d.code]), v = (0, b.In)({
     quest: n,
     questContent: o,
     questContentPosition: s,
-    redemptionLink: v,
+    redemptionLink: g,
     sourceQuestContent: c
   });
   return (0, r.jsx)("div", {
@@ -96,10 +96,10 @@ function A(e) {
     children: (0, r.jsx)(i.Modal, {
       size: "md",
       title: E.intl.string(E.t.NkZ7OT),
-      actions: [null != v ? {
+      actions: [null != g ? {
         variant: "primary",
         text: E.intl.string(E.t["+zx47e"]),
-        onClick: g
+        onClick: v
       } : {
         variant: "primary",
         text: E.intl.string(E.t["/g10LC"]),
@@ -153,7 +153,7 @@ function q(e) {
       })
     }), (0, r.jsxs)("div", {
       className: I.copyContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: I.heading,
@@ -184,14 +184,14 @@ function R(e) {
     preview: s,
     sourceQuestContent: c,
     questContentPosition: C
-  } = e, f = _.r.build(t.config), h = f.rewardPlatforms[0], j = g.jn.REWARD_MODAL, {
+  } = e, f = _.r.build(t.config), h = f.rewardPlatforms[0], j = v.jn.REWARD_MODAL, {
     questStoreRewardCode: y,
     isFetchingRewardCode: x,
     isClaimingReward: O
-  } = (0, o.cj)([v.Z], () => ({
-    questStoreRewardCode: v.Z.getRewardCode(t.id),
-    isFetchingRewardCode: v.Z.isFetchingRewardCode(t.id),
-    isClaimingReward: v.Z.isClaimingReward(t.id)
+  } = (0, o.cj)([g.Z], () => ({
+    questStoreRewardCode: g.Z.getRewardCode(t.id),
+    isFetchingRewardCode: g.Z.isFetchingRewardCode(t.id),
+    isClaimingReward: g.Z.isClaimingReward(t.id)
   })), E = true === s ? (0, p.b)(t) : y, {
     hasError: I,
     setHasError: D

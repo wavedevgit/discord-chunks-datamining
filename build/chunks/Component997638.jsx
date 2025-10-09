@@ -101,7 +101,7 @@ class O extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk206659.buttonContainer,
         justify: Chunk626135 ? Chunk600164.Z.Justify.BETWEEN : Chunk600164.Z.Justify.CENTER,
-        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["+IrDzM"]),

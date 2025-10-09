@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk786040 = require("./786040.jsx"),
   Chunk29121 = require("./29121.js"),
@@ -17,9 +17,9 @@ let u = e => {
     skuId: t,
     className: n
   } = e, l = (0, a.LJ)(t), u = (0, o.To)(l);
-  return (0, r.jsx)(i.Text, {
+  return (0, r.jsx)(s.Text, {
     variant: "text-lg/bold",
-    className: s()(n, c.productName),
+    className: i()(n, c.productName),
     children: u
   })
 }

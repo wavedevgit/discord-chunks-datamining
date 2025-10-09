@@ -16,21 +16,21 @@ function c(e) {
     onComplete: t
   } = e;
   return (0, a.jsxs)(r.P3F, {
-    className: i.container,
+    className: l.container,
     onClick: t,
-    children: [(0, a.jsx)(r.X6q, {
+    children: [(0, a.jsx)(r.Heading, {
       variant: "heading-xl/bold",
       color: "always-white",
-      className: i.title,
-      children: l.intl.string(l.t["Deps4+"])
-    }), (0, a.jsx)(r.X6q, {
+      className: l.title,
+      children: i.intl.string(i.t["Deps4+"])
+    }), (0, a.jsx)(r.Heading, {
       variant: "heading-lg/bold",
       color: "always-white",
-      className: s()(i.title, i.subtitle),
-      children: l.intl.string(l.t.xv5g7O)
-    }), (0, a.jsx)(r.zxk, {
+      className: s()(l.title, l.subtitle),
+      children: i.intl.string(i.t.xv5g7O)
+    }), (0, a.jsx)(r.Button, {
       variant: "overlay-primary",
-      text: l.intl.string(l.t["6X9YKC"]),
+      text: i.intl.string(i.t["6X9YKC"]),
       onClick: t
     })]
   })

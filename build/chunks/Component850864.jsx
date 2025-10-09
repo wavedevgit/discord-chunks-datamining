@@ -47,7 +47,7 @@ function N(e) {
     className: v.page,
     children: [(0, r.jsxs)("div", {
       className: v.leftColumn,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         className: v.header,
         variant: "heading-lg/extrabold",
         children: j.intl.string(j.t.tbUZVl)
@@ -60,12 +60,12 @@ function N(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.section,
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(x.Z, {
           guildId: t.id
         })
       }), (0, r.jsx)("div", {
         className: v.sectionSeparator
-      }), (0, r.jsx)(s.X6q, {
+      }), (0, r.jsx)(s.Heading, {
         className: v.header,
         variant: "heading-lg/extrabold",
         children: j.intl.string(j.t["roY/ws"])
@@ -83,7 +83,7 @@ function N(e) {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: v.sectionSeparator
-      }), (0, r.jsx)(s.X6q, {
+      }), (0, r.jsx)(s.Heading, {
         className: v.header,
         variant: "heading-lg/extrabold",
         children: j.intl.string(j.t.hEjHyM)
@@ -120,7 +120,7 @@ function N(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: v.section,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(b.Z, {
           guildId: t.id
         }), (0, r.jsx)(h.Z, {
           guildId: t.id

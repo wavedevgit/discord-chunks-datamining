@@ -63,7 +63,7 @@ function f(e) {
     text: p ? u.intl.string(u.t.mSqazM) : u.intl.string(u.t.YFFVMz)
   })), 0 === f.length) ? null : (0, r.jsxs)("div", {
     className: d.applicationEducation,
-    children: [null != t ? (0, r.jsx)(o.X6q, {
+    children: [null != t ? (0, r.jsx)(o.Heading, {
       variant: "heading-sm/normal",
       className: d.sectionLabel,
       children: t

@@ -232,7 +232,7 @@ function Q(e) {
   i.useEffect(() => {
     el === x.X1.SOUNDBOARD && eC(true)
   }, [el]), i.useEffect(() => () => {
-    eA && eS(k.L.TAKE_ACTION)
+    eA && eS(j.L.TAKE_ACTION)
   }, [eA, eS]), i.useEffect(() => {
     (0, L.ql)("")
   }, []), i.useEffect(() => {
@@ -296,8 +296,8 @@ function Q(e) {
                   role: "tablist",
                   "aria-label": B.intl.string(B.t["2j4VgY"]),
                   children: [eg ? (0, r.jsx)(q, {
-                    id: j._3,
-                    "aria-controls": j.vO,
+                    id: k._3,
+                    "aria-controls": k.vO,
                     "aria-selected": el === x.X1.GIF,
                     isActive: el === x.X1.GIF,
                     viewType: x.X1.GIF,
@@ -314,15 +314,15 @@ function Q(e) {
                       children: B.intl.string(B.t.nf1s3t)
                     })
                   }) : null, (0, r.jsx)(q, {
-                    id: j.td,
-                    "aria-controls": j.cZ,
+                    id: k.td,
+                    "aria-controls": k.cZ,
                     "aria-selected": el === x.X1.EMOJI,
                     isActive: el === x.X1.EMOJI,
                     viewType: x.X1.EMOJI,
                     children: B.intl.string(B.t.Xu3wEx)
                   }), e_ && eP && (0, r.jsx)(q, {
-                    id: j.Hr,
-                    "aria-controls": j.gV,
+                    id: k.Hr,
+                    "aria-controls": k.gV,
                     "aria-selected": el === x.X1.SOUNDBOARD,
                     isActive: el === x.X1.SOUNDBOARD,
                     viewType: x.X1.SOUNDBOARD,
@@ -354,7 +354,7 @@ function Q(e) {
                 channel: W,
                 containerWidth: eo,
                 includeCreateEmojiButton: P,
-                emojiSize: null != eo && eo < z ? j.Su.MEDIUM : j.Su.LARGE,
+                emojiSize: null != eo && eo < z ? k.Su.MEDIUM : k.Su.LARGE,
                 pickerIntention: U.Hz.CHAT,
                 closePopout: eI,
                 onSelectEmoji: V,

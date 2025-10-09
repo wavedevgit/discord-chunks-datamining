@@ -77,7 +77,7 @@ function f(e) {
     action: t,
     onClick: n
   });
-  return (0, r.jsx)(a.zxk, l({
+  return (0, r.jsx)(a.Button, l({
     onClick: u,
     variant: i,
     size: o

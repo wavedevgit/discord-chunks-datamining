@@ -19,7 +19,7 @@ function u(e) {
     className: c.container,
     children: [(0, i.jsx)(o.Z, {}), (0, i.jsxs)("div", {
       className: c.content,
-      children: [(0, i.jsx)(l.X6q, {
+      children: [(0, i.jsx)(l.Heading, {
         variant: "heading-lg/normal",
         children: s.intl.format(s.t.ilLVLi, {})
       }), (0, i.jsx)(r.zx, {

@@ -34,7 +34,7 @@ function c(e) {
         color: "" !== t ? "text-default" : "text-muted",
         lineClamp: 1,
         children: "" !== t ? t : m
-      }), (0, n.jsx)(o.zxk, {
+      }), (0, n.jsx)(o.Button, {
         "aria-hidden": true,
         variant: "secondary",
         size: "sm",

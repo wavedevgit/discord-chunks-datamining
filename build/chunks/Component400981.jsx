@@ -24,9 +24,9 @@ function m(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: m
-  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), b = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
-    analyticsLocations: g
-  } = (0, s.ZP)(), j = l.EFr.SIZE_32, y = (0, d.Z)(null == m ? true : m.assetId, j, !b), v = (0, u.Z)(), L = null == v ? true : v.giftPurchaseConfirmation;
+  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
+    analyticsLocations: b
+  } = (0, s.ZP)(), j = l.EFr.SIZE_32, y = (0, d.Z)(null == m ? true : m.assetId, j, !g), v = (0, u.Z)(), L = null == v ? true : v.giftPurchaseConfirmation;
   return null == n || null == L ? null : (0, r.jsx)(_.O3, {
     children: (0, r.jsx)(l.mzw, {
       align: c.Z.Align.CENTER,
@@ -36,7 +36,7 @@ function m(e) {
         children: [(0, r.jsx)(l.Xo$, {
           "aria-label": null == x ? true : x.username,
           size: j,
-          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(j), !b),
+          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(j), !g),
           avatarDecoration: y
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
@@ -45,7 +45,7 @@ function m(e) {
             t(), (0, C.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: g,
+              analyticsLocations: b,
               purchaseType: f.o8.PROMOTIONAL
             })
           }

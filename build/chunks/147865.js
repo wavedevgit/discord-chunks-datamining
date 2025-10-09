@@ -1,10 +1,10 @@
 /** Chunk was on 35755 **/
 /** chunk id: 147865, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  lY: () => i
+  lY: () => l
 });
 var Chunk388032 = require("./388032.jsx");
 
-function i(e) {
-  return e > 0 ? "1-".concat(e) : l.intl.string(l.t.zMNEiI)
+function l(e) {
+  return e > 0 ? "1-".concat(e) : i.intl.string(i.t.zMNEiI)
 }

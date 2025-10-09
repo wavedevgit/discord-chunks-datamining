@@ -437,7 +437,7 @@ class X extends(r = Chunk647438.PureComponent) {
           })
         })]
       }), (0, i.jsx)(d.y5t, {
-        children: e ? (0, i.jsx)(F.Z, {
+        children: e ? (0, i.jsx)(B.Z, {
           authTokenCallback: this.handleAuthToken,
           conditionalMediationAbortController: this.state.conditionalMediationAbortController
         }) : null
@@ -461,7 +461,7 @@ class X extends(r = Chunk647438.PureComponent) {
     })
   }
   renderGuildTemplate(e) {
-    return (0, i.jsx)(B.Z, {
+    return (0, i.jsx)(F.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
       className: a()(this.props.authBoxClassName, H.horizontalAuthBox),

@@ -52,7 +52,7 @@ function m(e) {
     }), _.current = true)
   }, [t, v, y]), v && false !== O) ? true === O ? (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
       children: h.intl.string(h.t.csrAMD)
     }), (0, r.jsx)(s.Text, {
@@ -65,7 +65,7 @@ function m(e) {
     })]
   }) : (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
       children: h.intl.string(h.t["Z+hCVV"])
     }), (0, r.jsx)(s.$jN, {})]

@@ -31,7 +31,7 @@ function d() {
     children: [(0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk685960.button,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Clear all",
         onClick: Chunk581612.q,

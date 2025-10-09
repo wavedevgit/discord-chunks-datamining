@@ -1,7 +1,7 @@
-/** Chunk was on 46746 **/
-/** chunk id: 148381, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 4093 **/
+/** chunk id: 148381, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,37 +13,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk542257 = require("./542257.js"),
   Chunk308300 = require("./308300.js");
 
-function f(e) {
+function m(e) {
   let {
-    title: t,
-    scrollerClassName: n,
-    scrollerInnerClassName: l,
-    children: f
-  } = e, h = i.useRef(null), [m, p] = i.useState(false), [g, x] = i.useState(false), _ = i.useCallback(() => {
+    title: n,
+    scrollerClassName: t,
+    scrollerInnerClassName: i,
+    children: m
+  } = e, x = r.useRef(null), [g, h] = r.useState(false), [j, p] = r.useState(false), v = r.useCallback(() => {
     let {
       current: e
-    } = h;
-    null != e && (p(!e.isScrolledToTop()), x(!e.isScrolledToBottom()))
+    } = x;
+    null != e && (h(!e.isScrolledToTop()), p(!e.isScrolledToBottom()))
   }, []);
-  return (0, a.Ng)(() => _()), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: s()(u.title, u.scrollWrapper),
-      children: [(0, r.jsx)(o.Text, {
+  return (0, c.Ng)(() => v()), (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsxs)("div", {
+      className: s()(d.title, d.scrollWrapper),
+      children: [(0, l.jsx)(a.Text, {
         variant: "text-md/medium",
-        className: d.formItemTitle,
-        children: t
-      }), (0, r.jsx)(c.Z, {
-        separator: m
+        className: u.formItemTitle,
+        children: n
+      }), (0, l.jsx)(o.Z, {
+        separator: g
       })]
-    }), (0, r.jsx)("div", {
-      className: n,
-      children: (0, r.jsx)(o.Den, {
-        ref: h,
-        className: s()(u.scrollerInner, l, {
-          [u.bottomSeparator]: g
+    }), (0, l.jsx)("div", {
+      className: t,
+      children: (0, l.jsx)(a.Den, {
+        ref: x,
+        className: s()(d.scrollerInner, i, {
+          [d.bottomSeparator]: j
         }),
-        onScroll: _,
-        children: f
+        onScroll: v,
+        children: m
       })
     })]
   })

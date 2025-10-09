@@ -156,7 +156,7 @@ let eW = {
   }
 };
 
-function eq(e) {
+function eY(e) {
   let t = e.currentTarget;
   eN.default.track(eL.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -167,7 +167,7 @@ function eq(e) {
   })
 }
 
-function eY() {
+function eq() {
   let e = Chunk647438.useRef(null);
   (0, Chunk481060.Tbt)(module), Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
@@ -218,16 +218,16 @@ function eY() {
         children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.BETWEEN,
           className: Chunk890332.__invalid_footer,
-          children: [(0, Chunk951288.jsx)(Chunk481060.eee, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
             href: Chunk981631.EYA.KRISP,
-            onClick: e => eq(e),
+            onClick: e => eY(e),
             children: (0, Chunk951288.jsx)("div", {
               className: Chunk890332.krispLogo
             })
-          }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
             href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
             className: Chunk890332.krispLink,
-            onClick: e => eq(e),
+            onClick: e => eY(e),
             children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
           })]
         })
@@ -262,11 +262,11 @@ function eQ(e) {
     limit: O
   } = (0, eo.Z)(t), E = i.useCallback(() => {
     (0, eu.Z)()
-  }, []), v = (0, q.bp)(), y = i.useCallback(e => {
+  }, []), v = (0, Y.bp)(), y = i.useCallback(e => {
     if (eE.Z.isVideoEnabled() === e) return;
     let n = () => {
       var n;
-      b.Z.setVideoEnabled(e), e && (0, Y.uL)(eL.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eL.ME, t.id))
+      b.Z.setVideoEnabled(e), e && (0, q.uL)(eL.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eL.ME, t.id))
     };
     (0, L.v)(s, L.d.CAMERA, e), e ? (0, ef.Z)(n, v) : n()
   }, [t, v, s]), C = p || n || h, {
@@ -367,7 +367,7 @@ function eX(e) {
   let {
     channel: t,
     enableActivities: n
-  } = e, i = (0, q.bp)(), {
+  } = e, i = (0, Y.bp)(), {
     parentAnalyticsLocation: l,
     newestAnalyticsLocation: o
   } = (0, x.ZP)(), s = i === eL.IlC.POPOUT, c = (0, T.KF)(t.id), p = (0, T.g5)(c), {
@@ -613,7 +613,7 @@ class e$ extends Chunk647438.PureComponent {
       targetElementRef: this.krispButtonRef,
       position: "top",
       align: "center",
-      renderPopout: () => (0, Chunk951288.jsx)(eY, {}),
+      renderPopout: () => (0, Chunk951288.jsx)(eq, {}),
       children: (t, n) => {
         let {
           isShown: i
@@ -744,7 +744,7 @@ class e$ extends Chunk647438.PureComponent {
       F.Kw(ek.v.VOICE_PANEL_INTRODUCTION)
     }), eH(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(eG.voicePanelIntroductionWrapper, "theme-light"),
-      children: [(0, r.jsx)(m.X6q, {
+      children: [(0, r.jsx)(m.Heading, {
         className: eG.voicePanelIntroductionHeader,
         variant: "heading-md/semibold",
         children: eU.intl.string(eU.t["ba/rLy"])

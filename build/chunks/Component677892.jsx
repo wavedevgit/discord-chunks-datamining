@@ -2,7 +2,7 @@
 /** chunk id: 677892, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $$: () => b,
+  $$: () => x,
   P_: () => _,
   ap: () => v,
   ku: () => j
@@ -83,7 +83,7 @@ function h(e) {
         children: l
       }), (0, r.jsxs)("div", {
         className: f.onboardingStepText,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: n
         }), (0, r.jsx)(a.Text, {
@@ -96,12 +96,12 @@ function h(e) {
       className: f.rightContainer,
       children: [t, d, (0, r.jsx)("div", {
         className: f.cta,
-        children: s ? (0, r.jsx)(a.zxk, {
+        children: s ? (0, r.jsx)(a.Button, {
           size: "sm",
           variant: "secondary",
           onClick: c,
           text: p.intl.string(p.t.bt75u7)
-        }) : (0, r.jsx)(a.zxk, {
+        }) : (0, r.jsx)(a.Button, {
           icon: a.ZSh,
           iconPosition: "end",
           size: "sm",
@@ -114,15 +114,15 @@ function h(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let t = (0, l.e7)([s.Z], () => s.Z.getDefaultChannelIds(e)),
     n = i.useMemo(() => new Set(t), [t]),
     [r, a] = (0, o.VF)(e, n);
   return a.length >= m.md && r.length >= m.X
 }
 
-function b(e) {
-  let t = x(e),
+function x(e) {
+  let t = b(e),
     n = (0, g.O4)(e);
   return t || n
 }
@@ -132,7 +132,7 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), v = j.length, _ = x(t), C = (0, g.O4)(t), O = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), y = O ? p.intl.formatToPlainString(p.t.nHwnLC, {
+  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), v = j.length, _ = b(t), C = (0, g.O4)(t), O = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), y = O ? p.intl.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: v,
     numFromQuestions: u - v
   }) : _ ? p.intl.formatToPlainString(p.t.HxEwSk, {
@@ -160,12 +160,12 @@ function v(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [g, m] = (0, o.dF)(t, d, c), x = g.length, b = g.length + m.length, j = x / b * 100, v = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), _ = u > 0, C = "none";
+  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [g, m] = (0, o.dF)(t, d, c), b = g.length, x = g.length + m.length, j = b / x * 100, v = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), _ = u > 0, C = "none";
   return _ && (j >= 85 && !i ? C = "good" : j < 85 && (C = "warning")), (0, r.jsx)(h, {
     title: v ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
-      numChannels: x,
-      numTotalChannels: b,
+      numChannels: b,
+      numTotalChannels: x,
       channelsHook: (e, t) => (0, r.jsx)("span", {
         style: {
           color: j > 85 ? "var(--header-primary)" : "var(--status-warning)"
@@ -189,19 +189,19 @@ function _(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
-  } = e, g = (0, l.e7)([u.Z], () => u.Z.getSettings()), m = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), x = (0, c.uo)(g), b = g.enabled, j = i.useCallback(() => {
-    (0, d.To)(t, !b)
-  }, [t, b]), v = !(0, c.av)(g), _ = "none";
-  v && (x && !o ? _ = "good" : x || (_ = "required"));
+  } = e, g = (0, l.e7)([u.Z], () => u.Z.getSettings()), m = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), b = (0, c.uo)(g), x = g.enabled, j = i.useCallback(() => {
+    (0, d.To)(t, !x)
+  }, [t, x]), v = !(0, c.av)(g), _ = "none";
+  v && (b && !o ? _ = "good" : b || (_ = "required"));
   let C = p.intl.string(p.t.GMOwOD);
-  x ? v || (C = p.intl.string(p.t.wHOoyM)) : C = p.intl.string(p.t.wXFbgY);
+  b ? v || (C = p.intl.string(p.t.wHOoyM)) : C = p.intl.string(p.t.wXFbgY);
   let O = null;
   return v && m && (O = (0, r.jsx)("div", {
     className: f.inlineSwitch,
     children: (0, r.jsx)(a.rsf, {
-      checked: b,
+      checked: x,
       onChange: j,
-      disabled: !x
+      disabled: !b
     })
   })), (0, r.jsx)(h, {
     title: p.intl.string(p.t.mRHqsr),

@@ -45,7 +45,7 @@ function m() {
   return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
     children: [(0, Chunk951288.jsxs)("header", {
       className: Chunk184904.header,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.IuMx1d)

@@ -15,14 +15,14 @@ function l(t) {
     transitionState: e,
     onClose: n
   } = t;
-  return (0, a.jsxs)(s.Y0X, {
+  return (0, a.jsxs)(i.Y0X, {
     transitionState: e,
     className: o.root,
     parentComponent: "InsufficientInvitePermission",
-    children: [(0, a.jsxs)(s.xBx, {
+    children: [(0, a.jsxs)(i.xBx, {
       separator: false,
       className: o.noScroll,
-      children: [(0, a.jsx)(s.olH, {
+      children: [(0, a.jsx)(i.olH, {
         className: o.closeButton,
         onClick: n
       }), (0, a.jsx)("div", {
@@ -33,22 +33,22 @@ function l(t) {
           alt: ""
         })
       })]
-    }), (0, a.jsx)(s.hzk, {
+    }), (0, a.jsx)(i.hzk, {
       children: (0, a.jsxs)("div", {
         className: o.content,
-        children: [(0, a.jsx)(s.X6q, {
+        children: [(0, a.jsx)(i.Heading, {
           variant: "heading-xl/semibold",
           className: o.title,
-          children: i.intl.string(i.t.xSV3nZ)
-        }), (0, a.jsx)(s.Text, {
+          children: s.intl.string(s.t.xSV3nZ)
+        }), (0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           className: o.text,
-          children: i.intl.string(i.t.jPMGbG)
+          children: s.intl.string(s.t.jPMGbG)
         }), (0, a.jsx)("div", {
           className: o.buttonContainer,
-          children: (0, a.jsx)(s.zxk, {
+          children: (0, a.jsx)(i.Button, {
             variant: "primary",
-            text: i.intl.string(i.t["NX+WJC"]),
+            text: s.intl.string(s.t["NX+WJC"]),
             onClick: n
           })
         })]

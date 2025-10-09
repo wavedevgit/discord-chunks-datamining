@@ -98,12 +98,12 @@ class v extends Chunk647438.PureComponent {
             children: [(0, Chunk951288.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: Chunk422622.retryButton,
-              children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+              children: (0, Chunk951288.jsx)(Chunk481060.Button, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["5911LS"]),
                 onClick: () => this.handlePlay()
               })
-            }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               text: Chunk388032.intl.string(Chunk388032.t["359PbW"]),
               onClick: () => this.handlePlay(false)
@@ -155,7 +155,7 @@ class v extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.olH, {
           className: Chunk422622.closeButton,
           onClick: this.onClose
-        }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           className: Chunk197571.marginReset,
           children: require

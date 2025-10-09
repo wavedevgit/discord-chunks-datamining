@@ -85,7 +85,7 @@ class Z extends Chunk647438.PureComponent {
       shrink: 0,
       className: Chunk476828.header,
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           className: Chunk476828.headerTitle,
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mj"])

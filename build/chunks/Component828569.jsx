@@ -105,7 +105,7 @@ let N = e => {
     return (0, t.jsxs)(a.mzw, {
       "data-migration-pending": true,
       className: E.footer,
-      children: [(0, t.jsx)(a.zxk, {
+      children: [(0, t.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: S.intl.string(S.t.cpT0Cg),

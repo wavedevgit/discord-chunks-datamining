@@ -24,7 +24,7 @@ function d() {
       src: Chunk322221,
       alt: "",
       className: Chunk433155.image
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk433155.topSpacing,
       variant: "heading-lg/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.Z1OZCQ)
@@ -35,7 +35,7 @@ function d() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk433155.topSpacing,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.jQ3pqq),
         onClick: module

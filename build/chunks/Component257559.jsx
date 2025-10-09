@@ -129,25 +129,25 @@ class T extends Chunk647438.PureComponent {
               children: [(0, Chunk951288.jsx)(Chunk481060.olH, {
                 className: Chunk477425.closeButton,
                 onClick: Chunk933557.onClose
-              }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+              }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
                 variant: "heading-xl/bold",
                 children: Chunk388032.intl.string(Chunk388032.t.MWMcg4)
               })]
             })
           }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-md/medium",
               className: Chunk477425.spacing,
               children: Chunk501517
             }), Chunk699516]
           }), (0, Chunk951288.jsxs)(Chunk481060.mzw, {
-            children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "critical-primary",
               size: "sm",
               text: Chunk388032.intl.string(Chunk388032.t.oyYWHB),
               type: "submit",
               onClick: this.handleDelete
-            }), !module && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+            }), !module && (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
               checked: Chunk647438,
               label: Chunk388032.intl.string(Chunk764295.default["8yIKen"]),
               onChange: e => this.handleToggleResolveFlag(e)

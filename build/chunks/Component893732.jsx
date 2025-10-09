@@ -27,7 +27,7 @@ function o(e) {
       })
     }), (0, i.jsxs)("div", {
       className: a.header,
-      children: [(0, i.jsx)(r.X6q, {
+      children: [(0, i.jsx)(r.Heading, {
         variant: "heading-md/semibold",
         className: a.headerText,
         children: l.intl.string(l.t.LIIyeH)
@@ -39,7 +39,7 @@ function o(e) {
       }), (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: a.button,
-        children: (0, i.jsx)(r.zxk, {
+        children: (0, i.jsx)(r.Button, {
           variant: "primary",
           text: l.intl.string(l.t.BddRzc),
           onClick: t

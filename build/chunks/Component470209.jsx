@@ -18,17 +18,17 @@ var Chunk951288 = require("./951288.js"),
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var A = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(A);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
+      n = Object.keys(A);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
       return Object.getOwnPropertyDescriptor(A, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = A[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), n.forEach(function(t) {
+      var n;
+      n = A[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -38,8 +38,8 @@ function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var A = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      A.push.apply(A, r)
+      var n = Object.getOwnPropertySymbols(e);
+      A.push.apply(A, n)
     }
     return A
   })(Object(t)).forEach(function(A) {
@@ -52,15 +52,15 @@ function h(e) {
   let {
     newRoleParams: t,
     setNewRoleParams: A
-  } = e, a = n.useRef(null), {
+  } = e, a = r.useRef(null), {
     name: s,
     color: h
   } = t, v = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
     color: e
   })));
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: g.roleInputContainer,
-    children: [(0, r.jsx)(o.oil, {
+    children: [(0, n.jsx)(o.oil, {
       autoFocus: true,
       value: s,
       onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
@@ -69,26 +69,26 @@ function h(e) {
       id: m,
       placeholder: u.intl.string(u.t.oNauur),
       maxLength: c.VKK
-    }), (0, r.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: g.roleColorContainer,
-      children: [(0, r.jsx)(o.nn4, {
+      children: [(0, n.jsx)(o.nn4, {
         children: u.intl.format(u.t["Vlq/pK"], {
           color: (0, i.Rf)(h)
         })
-      }), (0, r.jsx)(o.yRy, {
+      }), (0, n.jsx)(o.yRy, {
         targetElementRef: a,
-        renderPopout: e => (0, r.jsx)(o.Z$W, p(f({}, e), {
+        renderPopout: e => (0, n.jsx)(o.Z$W, p(f({}, e), {
           value: h,
           onChange: v
         })),
-        children: e => (0, r.jsx)(o.hU, p(f({}, e), {
+        children: e => (0, n.jsx)(o.hU, p(f({}, e), {
           variant: "secondary",
           icon: o.ilE,
           buttonRef: a,
           "aria-label": u.intl.string(u.t.QLgdlZ)
         }))
       })]
-    }), (0, r.jsx)(d.Z, {
+    }), (0, n.jsx)(d.Z, {
       role: t
     })]
   })

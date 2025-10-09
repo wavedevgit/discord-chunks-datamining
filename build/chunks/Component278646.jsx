@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 278646, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -55,7 +55,7 @@ function d(e, t) {
       }) : (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: u.button,
-        children: (0, r.jsx)(i.zxk, {
+        children: (0, r.jsx)(i.Button, {
           variant: "primary",
           text: c.intl.string(c.t.cpT0Cg),
           onClick: n.onClose

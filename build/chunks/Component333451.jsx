@@ -1,7 +1,7 @@
 /** Chunk was on 24920 **/
 /** chunk id: 333451, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,43 +28,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk22706 = require("./22706.js");
 
-function M(e) {
+function T(e) {
   let {
     shouldUpsellFromNoneTier: n
   } = e, t = (0, a.e7)([S.default], () => S.default.locale);
   return (0, i.jsxs)("div", {
-    className: x.perksList,
+    className: M.perksList,
     children: [(0, i.jsx)(h.Z, {
       icon: u.Ucv,
-      iconClassName: x.perkIconGuild,
+      iconClassName: M.perkIconGuild,
       description: b.intl.formatToPlainString(b.t.sQBgs7, {
         numFreeGuildSubscriptions: O.cb
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), (0, i.jsx)(h.Z, {
       icon: u.Ucv,
-      iconClassName: x.perkIconGuild,
+      iconClassName: M.perkIconGuild,
       description: b.intl.formatToPlainString(b.t["1A6vXl"], {
         percent: (0, y.T3)(t, O.Rr / 100)
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), n ? (0, i.jsx)(h.Z, {
       icon: u.EO4,
-      iconClassName: x.perkIconChatPerks,
+      iconClassName: M.perkIconChatPerks,
       description: b.intl.string(b.t.Z9b2x8)
     }) : null, (0, i.jsx)(h.Z, {
       icon: u.hGI,
-      iconClassName: x.perkIconStream,
+      iconClassName: M.perkIconStream,
       description: b.intl.string(b.t["8dqG5O"])
     }), (0, i.jsx)(h.Z, {
       icon: u.rG2,
-      iconClassName: x.perkIconUpload,
+      iconClassName: M.perkIconUpload,
       description: b.intl.string(b.t.cBorIy)
     })]
   })
 }
 
-function T(e) {
+function x(e) {
   var n;
   let {
     premiumSubscriptionPlan: t,
@@ -73,14 +73,14 @@ function T(e) {
     onSkip: h,
     onSubscriptionConfirmation: S,
     analyticsLocation: y,
-    analyticsSourceLocation: T,
+    analyticsSourceLocation: x,
     priceOptions: L
   } = e, {
     analyticsLocations: j,
     sourceAnalyticsLocations: C
   } = (0, p.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), k = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == t || null == t.premiumSubscriptionType, v = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, L), D = (0, I.T4)(v.amount, v.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
+  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, k = null == t || null == t.premiumSubscriptionType, v = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, L), D = (0, I.T4)(v.amount, v.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
   return l.useEffect(() => {
     g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -89,38 +89,38 @@ function T(e) {
   }, [C]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(u.hzk, {
       "data-migration-pending": true,
-      className: x.content,
+      className: M.content,
       children: [(0, i.jsx)(u.olH, {
         "data-migration-pending": true,
         onClick: r,
-        className: x.closeButton
+        className: M.closeButton
       }), U && (0, i.jsx)(_.dz, {
-        className: x.premiumTrialBadge
+        className: M.premiumTrialBadge
       }), (0, i.jsx)("div", {
-        className: s()(x.upsellImage, {
-          [x.upsellImageWithTrialOffer]: U
+        className: s()(M.upsellImage, {
+          [M.upsellImageWithTrialOffer]: U
         })
       }), (0, i.jsx)("div", {
-        className: x.bodyText,
+        className: M.bodyText,
         children: null != w ? b.intl.string(b.t.AoSzEh) : b.intl.format(b.t["7vePZW"], {
           monthlyPrice: D
         })
-      }), (0, i.jsx)(M, {
-        shouldUpsellFromNoneTier: R
+      }), (0, i.jsx)(T, {
+        shouldUpsellFromNoneTier: k
       })]
     }), (0, i.jsxs)(u.mzw, {
       "data-migration-pending": true,
       align: m.Z.Align.CENTER,
       justify: m.Z.Justify.END,
       children: [(0, i.jsxs)("div", {
-        className: x.footerRight,
+        className: M.footerRight,
         children: [(0, i.jsx)(c.zx, {
           "data-migration-pending": true,
           look: c.zx.Looks.LINK,
-          color: k,
+          color: R,
           onClick: h,
           children: b.intl.string(b.t["SI/adn"])
-        }), (0, i.jsx)(u.zxk, {
+        }), (0, i.jsx)(u.Button, {
           variant: "active",
           text: null != w ? b.intl.string(b.t["Gd/XHB"]) : b.intl.string(b.t.p2moio),
           type: "submit",
@@ -159,17 +159,17 @@ function T(e) {
               })(Object(n)).forEach(function(t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               }), e),
-              analyticsSourceLocation: T,
+              analyticsSourceLocation: x,
               onSubscriptionConfirmation: S,
               trialId: w
             })
           }
         })]
       }), (0, i.jsx)("div", {
-        className: x.backStep,
+        className: M.backStep,
         children: (0, i.jsx)(c.zx, {
           "data-migration-pending": true,
-          color: k,
+          color: R,
           look: c.zx.Looks.LINK,
           size: c.zx.Sizes.NONE,
           onClick: () => a(),

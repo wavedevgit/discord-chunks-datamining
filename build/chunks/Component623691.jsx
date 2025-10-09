@@ -47,7 +47,7 @@ function E(e) {
   }, [a, n.id]);
   return (0, r.jsxs)("div", {
     ref: u,
-    children: [(0, r.jsx)(d.X6q, {
+    children: [(0, r.jsx)(d.Heading, {
       variant: "heading-lg/semibold",
       children: y.intl.string(y.t.LPJmLy)
     }), (0, r.jsx)(d.Text, {
@@ -97,7 +97,7 @@ function I(e) {
             cancelText: y.intl.string(y.t["ETE/oK"]),
             confirmText: y.intl.string(y.t["cY+Ooa"]),
             onConfirm: () => {
-              b.Z.migratePinPermission(t.id)
+              x.Z.migratePinPermission(t.id)
             }
           })
         },
@@ -138,7 +138,7 @@ function S(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: y.intl.format(y.t.xkC3YW, {
-        articleURL: x.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
+        articleURL: b.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
       className: N.rolesTable,
@@ -186,7 +186,7 @@ function T(e) {
         onClear: c,
         placeholder: y.intl.string(y.t.Sojqsr),
         "aria-label": y.intl.string(y.t.Sojqsr)
-      }), (0, r.jsx)(d.zxk, {
+      }), (0, r.jsx)(d.Button, {
         size: "sm",
         onClick: u,
         loading: a,

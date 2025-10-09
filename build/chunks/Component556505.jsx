@@ -14,13 +14,13 @@ function c(e) {
   let {
     labelType: t,
     collapsed: n = false
-  } = e, c = t === a.ww.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkp"]), u = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [d, p] = i.useState(n ? "" : c);
-  return (i.useEffect(() => {
+  } = e, c = t === a.ww.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkp"]), u = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [d, p] = l.useState(n ? "" : c);
+  return (l.useEffect(() => {
     n ? p("") : t === a.ww.NEW ? p(o.intl.string(o.t.y2b7CA)) : t === a.ww.UPDATED && p(o.intl.string(o.t["/qdhkp"]))
-  }, [n, t]), t === a.ww.NONE) ? null : (0, l.jsx)(r.IGR, {
+  }, [n, t]), t === a.ww.NONE) ? null : (0, i.jsx)(r.IGR, {
     className: u,
     disableColor: true,
-    text: (0, l.jsx)("span", {
+    text: (0, i.jsx)("span", {
       children: d
     })
   })

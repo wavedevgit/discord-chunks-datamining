@@ -55,7 +55,7 @@ function h(e) {
     className: f.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
     className: f.emptyStateContainer,
-    children: [(0, r.jsx)(c.X6q, {
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
       children: p.intl.string(h ? p.t.PBfFn5 : p.t["NqFP6+"])
     }), (0, r.jsx)(c.Text, {

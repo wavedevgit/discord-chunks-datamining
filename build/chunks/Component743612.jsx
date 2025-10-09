@@ -22,7 +22,7 @@ let l = e => {
     subtitleClassName: h
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xl/extrabold",
       className: a()(s.cardHeading, _),
       children: c

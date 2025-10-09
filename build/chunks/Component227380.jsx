@@ -89,7 +89,7 @@ let N = e => {
       children: d
     }), (0, r.jsxs)("div", {
       className: C.checklistText,
-      children: [(0, r.jsx)(p.X6q, {
+      children: [(0, r.jsx)(p.Heading, {
         variant: "heading-md/semibold",
         children: c
       }), (0, r.jsx)(p.Text, {
@@ -133,7 +133,7 @@ let I = e => {
   }, [t.id, P], E);
   if (I || null == g) return (0, r.jsxs)("div", {
     className: a()(C.container, C.loaderContainer, s),
-    children: [(0, r.jsx)(p.X6q, {
+    children: [(0, r.jsx)(p.Heading, {
       className: C.loadingText,
       variant: "heading-md/semibold",
       color: "header-secondary",
@@ -172,7 +172,7 @@ let I = e => {
       }),
       failingDescription: _.intl.formatToPlainString(_.t.jYwM1d, {
         minimumGuildAge: Math.ceil(g.minimumGuildAge / 7),
-        passDate: d()(x.default.extractTimestamp(l)).add(g.minimumGuildAge, "days").format("LL")
+        passDate: d()(b.default.extractTimestamp(l)).add(g.minimumGuildAge, "days").format("LL")
       }),
       checked: null == g ? true : g.age
     }, {
@@ -299,7 +299,7 @@ let I = e => {
       failingName: _.intl.string(_.t.awA3PT),
       description: _.intl.string(_.t.QbBJ7e),
       failingDescription: _.intl.format(_.t.kBXInZ, {
-        onClick: () => b.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
+        onClick: () => x.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
       }),
       checked: null == g ? true : g.protected
     }];

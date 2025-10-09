@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 309081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -90,7 +90,7 @@ function w(e) {
   })
 }
 
-function k(e) {
+function C(e) {
   let {
     channelId: t,
     localCreationAnswerId: n,
@@ -99,9 +99,9 @@ function k(e) {
     onEmojiRemove: f,
     answerIndex: m,
     shouldShowEmojiPicker: g,
-    toggleEmojiPicker: k,
-    containerRef: C
-  } = e, x = l.useRef(null), R = (0, o.e7)([d.Z], () => d.Z.getChannel(t)), {
+    toggleEmojiPicker: C,
+    containerRef: k
+  } = e, R = l.useRef(null), x = (0, o.e7)([d.Z], () => d.Z.getChannel(t)), {
     emoji: E,
     isLoadingMedia: _,
     hasUpload: S,
@@ -128,7 +128,7 @@ function k(e) {
     return (0, r.jsx)("div", {
       className: h.emojiPicker,
       children: (0, r.jsx)(u.Z, {
-        channel: R,
+        channel: x,
         pickerIntention: j.Hz.POLLS,
         closePopout: t,
         onNavigateAway: t,
@@ -141,17 +141,17 @@ function k(e) {
         }
       })
     })
-  }, [R, s, m]), T = l.useCallback(e => {
+  }, [x, s, m]), T = l.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)(w, {
       onSelect: t,
-      onEditMedia: k,
+      onEditMedia: C,
       onDeleteMedia: N,
       closePopout: t
     })
-  }, [N, k]), Z = _ ? (0, r.jsx)(c.$jN, {
+  }, [N, C]), Z = _ ? (0, r.jsx)(c.$jN, {
     className: h.spinnerWrapperDefault
   }) : (0, r.jsx)(P, {
     hasUpload: S,
@@ -169,10 +169,10 @@ function k(e) {
     [h.canEditMedia]: I
   });
   return (0, r.jsx)(c.yRy, {
-    targetElementRef: C,
+    targetElementRef: k,
     renderPopout: L,
     shouldShow: g,
-    onRequestClose: k,
+    onRequestClose: C,
     animation: c.yRy.Animation.NONE,
     position: "bottom",
     spacing: 2,
@@ -182,7 +182,7 @@ function k(e) {
         "aria-expanded": n
       } = e;
       return v(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.yRy, {
-        targetElementRef: x,
+        targetElementRef: R,
         animation: c.yRy.Animation.NONE,
         position: "bottom",
         renderPopout: T,
@@ -211,10 +211,10 @@ function k(e) {
             }
             return e
           }({
-            innerRef: x
+            innerRef: R
           }, u), a = a = {
             className: B,
-            onClick: I && !g ? i : k,
+            onClick: I && !g ? i : C,
             "aria-label": U,
             "aria-controls": null != t ? t : o,
             "aria-expanded": n || s,
@@ -240,7 +240,7 @@ function k(e) {
   })
 }
 
-function C(e) {
+function k(e) {
   let {
     channelId: t,
     answer: n,
@@ -256,7 +256,7 @@ function C(e) {
     error: O,
     ref: h,
     answerRowRefs: v
-  } = e, P = l.useRef(null), w = l.useRef(null), C = l.useRef(null);
+  } = e, P = l.useRef(null), w = l.useRef(null), k = l.useRef(null);
   l.useImperativeHandle(h, () => ({
     focusDeleteButton: () => {
       var e;
@@ -264,11 +264,11 @@ function C(e) {
     },
     focusInput: () => {
       var e;
-      return null == (e = C.current) ? true : e.focus()
+      return null == (e = k.current) ? true : e.focus()
     }
   }));
-  let [x, R] = l.useState(false), E = l.useCallback(() => {
-    R(e => !e)
+  let [R, x] = l.useState(false), E = l.useCallback(() => {
+    x(e => !e)
   }, []), _ = l.useCallback(e => {
     let t = e.ctrlKey && !(e.altKey || e.metaKey || e.shiftKey),
       r = e.metaKey && !(e.altKey || e.ctrlKey || e.shiftKey);
@@ -280,7 +280,7 @@ function C(e) {
       case "e":
         ("macos" === (0, m.getOS)() ? r : t) && (e.preventDefault(), e.stopPropagation(), E())
     }
-  }, [b, n, v, a, i, j, E]), S = (0, r.jsx)(k, {
+  }, [b, n, v, a, i, j, E]), S = (0, r.jsx)(C, {
     containerRef: P,
     channelId: t,
     buttonImage: n.image,
@@ -288,7 +288,7 @@ function C(e) {
     onEmojiRemove: u,
     localCreationAnswerId: n.localCreationAnswerId,
     answerIndex: a,
-    shouldShowEmojiPicker: x,
+    shouldShowEmojiPicker: R,
     toggleEmojiPicker: E
   });
   return (0, r.jsx)("div", {
@@ -319,7 +319,7 @@ function C(e) {
       }),
       onKeyDown: _,
       maxLength: g.WA,
-      inputRef: C
+      inputRef: k
     })
   })
 }

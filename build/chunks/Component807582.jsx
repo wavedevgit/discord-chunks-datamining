@@ -21,8 +21,8 @@ let m = e => {
       guild: p,
       className: f,
       hideTooltip: h = false,
-      tooltipPosition: x = "left",
-      onClick: b
+      tooltipPosition: b = "left",
+      onClick: x
     } = e,
     j = p.features.has(m),
     v = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
@@ -31,7 +31,7 @@ let m = e => {
     children: [(0, r.jsx)(s.Ucv, {
       color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: g.unlockedIcon
-    }), (0, r.jsx)(s.X6q, {
+    }), (0, r.jsx)(s.Heading, {
       variant: "eyebrow",
       className: g.description,
       children: u.intl.string(u.t["0O+87u"])
@@ -40,7 +40,7 @@ let m = e => {
     children: [(0, r.jsx)(s.Ucv, {
       color: "currentColor",
       className: g.icon
-    }), (0, r.jsx)(s.X6q, {
+    }), (0, r.jsx)(s.Heading, {
       variant: "eyebrow",
       className: g.description,
       children: null != _ && (0, c.e9)(_)
@@ -49,14 +49,14 @@ let m = e => {
     className: l()(g.availabilityIndicator, f),
     children: t
   }) : (0, r.jsx)(a.u, {
-    position: x,
+    position: b,
     text: i,
     children: (0, r.jsx)("div", {
       className: l()(g.availabilityIndicator, f),
       children: t
     })
-  }), null == b || j) ? n : (0, r.jsx)(s.P3F, {
-    onClick: b,
+  }), null == x || j) ? n : (0, r.jsx)(s.P3F, {
+    onClick: x,
     className: g.clickable,
     children: n
   })

@@ -116,7 +116,7 @@ function A(e) {
       comparator: i
     })
   }
-  O = n, D.emitChange()
+  O = n, k.emitChange()
 }
 
 function w() {
@@ -130,13 +130,13 @@ function M(e) {
 
 function R(e) {
   if (e.key !== y.vTt) returnfalse;
-  k()
+  L()
 }
 
-function k() {
+function L() {
   null != i && (i.destroy(), i = null), P()
 }
-class L extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
@@ -161,13 +161,13 @@ class L extends(r = Chunk442837.ZP.Store) {
       hasFriends: j
     }
   }
-}(l = "displayName") in L ? Object.defineProperty(L, l, {
+}(l = "displayName") in D ? Object.defineProperty(D, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : L[l] = "PrivateChannelRecipientsInviteStore";
-let D = new L(Chunk570140.Z, {
+}) : D[l] = "PrivateChannelRecipientsInviteStore";
+let k = new D(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
       P()
     },
@@ -187,7 +187,7 @@ let D = new L(Chunk570140.Z, {
     },
     MODAL_POP: R,
     HIDE_ACTION_SHEET: R,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: k,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
       S = e.channelId, I(e.query)
     },
@@ -207,4 +207,4 @@ let D = new L(Chunk570140.Z, {
       E.delete(t), E = new Set(E)
     }
   }),
-  U = D
+  U = k

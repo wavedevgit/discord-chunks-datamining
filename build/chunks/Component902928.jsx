@@ -26,7 +26,7 @@ let f = e => {
       "aria-labelledby": f
     }) : null, (0, a.jsxs)("div", {
       className: c.innerContent,
-      children: [(0, a.jsx)(i.X6q, {
+      children: [(0, a.jsx)(i.Heading, {
         variant: "heading-xl/extrabold",
         id: f,
         children: s.intl.string(s.t.qDtJmJ)
@@ -38,7 +38,7 @@ let f = e => {
     }), (0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: c.footerButton,
-      children: (0, a.jsx)(i.zxk, {
+      children: (0, a.jsx)(i.Button, {
         variant: "primary",
         text: s.intl.string(s.t.i4jeWV),
         onClick: t

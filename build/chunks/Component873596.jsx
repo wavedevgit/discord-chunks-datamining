@@ -133,7 +133,7 @@ function I(e) {
     h && s(E.tu.RTC_DEBUG_PANEL)
   }, [h]), (0, l.jsxs)("div", {
     className: O.container,
-    children: [(0, l.jsx)(a.X6q, {
+    children: [(0, l.jsx)(a.Heading, {
       className: O.title,
       variant: "heading-lg/bold",
       color: "header-primary",

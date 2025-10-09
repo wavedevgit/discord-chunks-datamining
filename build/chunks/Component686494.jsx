@@ -19,8 +19,8 @@ function d(n) {
     expectedCallbackState: d,
     onAuthToken: u,
     onError: C,
-    onClose: _
-  } = n, h = e ? (0, o.jsx)("img", {
+    onClose: h
+  } = n, _ = e ? (0, o.jsx)("img", {
     src: c,
     width: "168",
     height: "124",
@@ -38,8 +38,8 @@ function d(n) {
     expectedCallbackState: d,
     onAuthToken: u,
     onError: C,
-    onClose: _,
-    img: h,
+    onClose: h,
+    img: _,
     title: p,
     body: x,
     redirectDestination: r.pY

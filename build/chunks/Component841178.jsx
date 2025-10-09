@@ -24,34 +24,34 @@ function d(t) {
     parentComponent: "SpotifyPremiumUpgradeModal",
     children: [(0, e.jsx)(a.xBx, {
       separator: false,
-      children: (0, e.jsx)(a.X6q, {
+      children: (0, e.jsx)(a.Heading, {
         id: d,
         variant: "heading-lg/semibold",
-        children: c.intl.formatToMarkdownString(c.t.DQsSGh, {})
+        children: l.intl.formatToMarkdownString(l.t.DQsSGh, {})
       })
     }), (0, e.jsxs)(a.hzk, {
       children: [(0, e.jsx)(r.Z, {
         justify: r.Z.Justify.CENTER,
         children: (0, e.jsx)("div", {
-          className: o.image
+          className: c.image
         })
       }), (0, e.jsx)(a.Text, {
-        className: o.text,
+        className: c.text,
         variant: "text-sm/normal",
-        children: c.intl.string(c.t.xGMwi4)
+        children: l.intl.string(l.t.xGMwi4)
       })]
     }), (0, e.jsx)(a.mzw, {
-      children: (0, e.jsxs)(a.hE2, {
+      children: (0, e.jsxs)(a.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, e.jsx)(a.zxk, {
+        children: [(0, e.jsx)(a.Button, {
           variant: "primary",
-          text: c.intl.string(c.t.n8U5jY),
+          text: l.intl.string(l.t.n8U5jY),
           onClick: function() {
-            (0, l.KK)(), n()
+            (0, o.KK)(), n()
           }
-        }), (0, e.jsx)(a.zxk, {
+        }), (0, e.jsx)(a.Button, {
           variant: "secondary",
-          text: c.intl.string(c.t["ETE/oK"]),
+          text: l.intl.string(l.t["ETE/oK"]),
           onClick: n
         })]
       })

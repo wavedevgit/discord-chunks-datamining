@@ -79,7 +79,7 @@ function y(t) {
           children: (0, r.jsx)(c.t6m, {})
         })]
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "heading-xl/bold",
           color: "header-primary",
           children: b.intl.format(b.t.CIbzHR, {

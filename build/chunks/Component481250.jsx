@@ -106,7 +106,7 @@ function R(e) {
         }(e, n, a, i), x(o)]
       }, "".concat(e.type, " + ").concat(e.ssrc))
     }(V, 0, i, R, S),
-    _ = I && "video" === V.type && null != i && null != R && null != S && (0, r.jsx)(m.Z, {
+    H = I && "video" === V.type && null != i && null != R && null != S && (0, r.jsx)(m.Z, {
       className: j.marginBottom20,
       children: (0, r.jsx)(m.Z.Child, {
         basis: "100%",
@@ -125,7 +125,7 @@ function R(e) {
     });
   return (0, r.jsxs)(c.Kqy, {
     gap: 16,
-    children: [(0, r.jsx)(c.X6q, {
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-md/medium",
       children: T
     }), (0, r.jsx)(c.njP, {
@@ -135,6 +135,6 @@ function R(e) {
       onItemSelect: w,
       className: P.tabBar,
       children: O
-    }), G, _]
+    }), G, H]
   })
 }

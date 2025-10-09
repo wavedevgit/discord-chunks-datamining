@@ -174,7 +174,7 @@ function R(e) {
         eventType: n.entity_type,
         guildEventId: n.id,
         recurrenceId: h
-      }), (0, l.jsx)(o.X6q, {
+      }), (0, l.jsx)(o.Heading, {
         id: s,
         variant: "heading-lg/semibold",
         color: "header-primary",

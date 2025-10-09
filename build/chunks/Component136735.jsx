@@ -63,11 +63,11 @@ let Z = e => {
   })
 };
 async function T(e) {
-  let t = await (0, v.fD)(e),
+  let t = await (0, x.fD)(e),
     l = new Image;
   l.src = t, await l.decode();
   let n = (0, s.Ae)(l, 320, 320);
-  return (0, v.Bo)(n, e.name, "image/png")
+  return (0, x.Bo)(n, e.name, "image/png")
 }
 
 function R(e) {
@@ -90,7 +90,7 @@ function R(e) {
     });
     let n = e;
     if ("image/jpeg" === l || "image/jpg" === l) n = await T(e);
-    else if ("image/png" === l && e.size > M && !await (0, v.c0)(e)) {
+    else if ("image/png" === l && e.size > M && !await (0, x.c0)(e)) {
       let t = (n = await T(e)).size > M;
       p.default.track(I.rMx.STICKER_FILE_RESIZED, {
         original_file_size_bytes: e.size,
@@ -116,7 +116,7 @@ function R(e) {
     if (i === b.u3.LOTTIE) {
       if (!es) return void ei({
         message: w.intl.format(w.t.RNNjy8, {
-          articleURL: x.Z.getArticleURL(I.BhN.STICKERS_UPLOAD)
+          articleURL: v.Z.getArticleURL(I.BhN.STICKERS_UPLOAD)
         }),
         isBlocking: true
       });
@@ -129,7 +129,7 @@ function R(e) {
         }), ei(null)
       }), e.readAsText(n)
     } else {
-      let e = await (0, v.fD)(n);
+      let e = await (0, x.fD)(n);
       Y({
         id: (0, r.Z)(),
         formatType: i,

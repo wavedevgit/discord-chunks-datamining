@@ -44,12 +44,12 @@ function b(e) {
         width: 48,
         height: 48
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xl/semibold",
           children: n.name
         }), (0, r.jsxs)("div", {
           className: E.subInfo,
-          children: [(0, r.jsxs)(o.X6q, {
+          children: [(0, r.jsxs)(o.Heading, {
             variant: "heading-md/normal",
             className: E.subInfoType,
             children: [(0, r.jsx)(S, {
@@ -65,7 +65,7 @@ function b(e) {
               children: [(0, r.jsx)(u.Z, {
                 guild: N,
                 size: u.Z.Sizes.SMOL
-              }), (0, r.jsx)(o.X6q, {
+              }), (0, r.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-muted",
                 children: g.intl.format(g.t["7ZD8p6"], {

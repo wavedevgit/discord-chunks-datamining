@@ -90,7 +90,7 @@ function A(e) {
     }),
     h = (0, f.T4)(p.amount, p.currency);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       color: "text-primary",
       children: E.intl.format(E.t["50bA2N"], {
@@ -119,7 +119,7 @@ function C(e) {
     premiumSubscription: n
   } = e, a = (0, _._n)(n, m.Xh.PREMIUM_MONTH_TIER_2, t);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       color: "text-primary",
       children: E.intl.format(E.t.sFO20N, {
@@ -164,7 +164,7 @@ let N = function(e) {
   }, w = () => {
     let e = d.ZP.isSwitchingPlansDisabled(t),
       n = d.ZP.getSwitchingPlansDisabledMessage(t);
-    return d.ZP.isBaseSubscriptionCanceled(t) ? (0, r.jsx)(i.zxk, {
+    return d.ZP.isBaseSubscriptionCanceled(t) ? (0, r.jsx)(i.Button, {
       variant: "expressive",
       icon: i.SrA,
       size: "md",
@@ -175,7 +175,7 @@ let N = function(e) {
       className: b.activeSubButtons,
       children: [(0, r.jsx)(i.ua7, {
         text: n,
-        children: n => (0, r.jsx)(i.zxk, T(v({}, n), {
+        children: n => (0, r.jsx)(i.Button, T(v({}, n), {
           variant: "expressive",
           disabled: e,
           text: E.intl.string(E.t["dylp//"]),
@@ -189,7 +189,7 @@ let N = function(e) {
             })
           }
         }))
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, r.jsx)(i.Button, {
         variant: "secondary",
         size: "md",
         text: E.intl.string(E.t["ETE/oK"]),

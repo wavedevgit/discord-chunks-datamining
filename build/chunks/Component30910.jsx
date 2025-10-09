@@ -41,7 +41,7 @@ function f(e) {
   let {
     onNext: t
   } = (0, u.JL)();
-  return (0, l.jsx)(c.zxk, g({
+  return (0, l.jsx)(c.Button, g({
     variant: "primary",
     text: m.intl.string(m.t["3PatS0"]),
     onClick: t,
@@ -58,7 +58,7 @@ function b(e) {
     availableBoostCount: i,
     planCost: r
   } = (0, u.JL)(), s = r > 0 && i < r, o = r > 0 ? null != a ? m.intl.string(d.default.e3Q5Ky) : s ? m.intl.string(d.default.H4tu7u) : m.intl.string(d.default["cmSy/f"]) : m.intl.string(m.t.K344S0);
-  return (0, l.jsx)(c.zxk, g({
+  return (0, l.jsx)(c.Button, g({
     variant: s || r > 0 ? "expressive" : "primary",
     text: o,
     onClick: t,
@@ -97,7 +97,7 @@ function j(e) {
     case "close":
       i = m.intl.string(m.t.cpT0Cg)
   }
-  return s()(null != i, "Invalid stepType ".concat(d)), (0, l.jsx)(c.zxk, (n = g({}, e), a = a = {
+  return s()(null != i, "Invalid stepType ".concat(d)), (0, l.jsx)(c.Button, (n = g({}, e), a = a = {
     variant: "secondary",
     text: i,
     onClick: r,

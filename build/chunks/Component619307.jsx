@@ -2,11 +2,11 @@
 /** chunk id: 619307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ph: () => j,
+  Ph: () => k,
   UN: () => P,
   cY: () => C,
   gz: () => N,
-  q4: () => k,
+  q4: () => j,
   s6: () => R
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -178,8 +178,8 @@ function L(e) {
     popoutPosition: P = "bottom",
     popoutLayerContext: L,
     optionClassName: M,
-    closeOnSelect: k,
-    select: j,
+    closeOnSelect: j,
+    select: k,
     isSelected: U,
     serialize: G,
     clear: B,
@@ -209,11 +209,11 @@ function L(e) {
     }, [en, Q]),
     ei = (0, c.O)(er),
     ea = i.useCallback(e => {
-      if (j(e), k) {
+      if (k(e), j) {
         var t;
         null == (t = $.current) || t.focus()
       }
-    }, [j, k, $]),
+    }, [k, j, $]),
     eo = i.useCallback(e => {
       e.stopPropagation(), null == B || B()
     }, [B]),
@@ -242,7 +242,7 @@ function L(e) {
       } = e;
       return (0, r.jsx)(x, {
         className: R,
-        closeOnSelect: k,
+        closeOnSelect: j,
         maxVisibleItems: l,
         width: "auto" === m ? true : null != m ? m : ee,
         isSelected: U,
@@ -461,7 +461,7 @@ function M(e) {
   }))
 }
 
-function k(e) {
+function j(e) {
   var {
     renderLeading: t,
     renderTrailing: n,
@@ -494,8 +494,8 @@ function k(e) {
       variant: x,
       renderOptionLabel: M
     } = o,
-    k = "text-only" === x || null != M;
-  if (s && !k) {
+    j = "text-only" === x || null != M;
+  if (s && !j) {
     let e = null == v && null != D;
     return (0, r.jsx)(_.P, {
       id: c,
@@ -539,18 +539,18 @@ function k(e) {
     })
   }
 
-  function j() {
+  function k() {
     if (null != t || null != n) return e => (0, r.jsxs)("div", {
       className: b.newOptionLabel,
       children: [null == t ? true : t(e), e.label, null == n ? true : n(e)]
     })
   }
   return (0, r.jsx)(L, I(O({}, o, l), {
-    renderOptionLabel: null != M ? M : j()
+    renderOptionLabel: null != M ? M : k()
   }))
 }
 
-function j(e) {
+function k(e) {
   var t, n, {
       renderLeading: i,
       renderTrailing: a
@@ -579,10 +579,10 @@ function j(e) {
       successMessage: D,
       "aria-label": x,
       variant: M,
-      isSelected: k,
-      renderOptionLabel: j
+      isSelected: j,
+      renderOptionLabel: k
     } = o,
-    U = "text-only" === M || null != j;
+    U = "text-only" === M || null != k;
   if (s && !U) {
     let e = null == S && null != x;
     return (0, r.jsx)(_.P, {
@@ -591,7 +591,7 @@ function j(e) {
       onSelectionChange: e => {
         d(e)
       },
-      value: null != (n = null == u || null == (t = u.find(e => null == k ? true : k(e.value))) ? true : t.value) ? n : true,
+      value: null != (n = null == u || null == (t = u.find(e => null == j ? true : j(e.value))) ? true : t.value) ? n : true,
       options: u,
       formatOption: e => {
         let {
@@ -635,6 +635,6 @@ function j(e) {
     })
   }
   return (0, r.jsx)(L, I(O({}, o), {
-    renderOptionLabel: null != j ? j : G()
+    renderOptionLabel: null != k ? k : G()
   }))
 }

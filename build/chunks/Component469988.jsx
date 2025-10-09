@@ -32,7 +32,7 @@ let o = e => {
       children: t ? l.intl.string(l.t.FZ2J3d) : l.intl.string(l.t.TvHcv7)
     }), (0, r.jsx)("div", {
       className: a.gap
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)(i.Button, {
       fullWidth: true,
       variant: t ? "secondary" : "active",
       onClick: () => (0, i.ZDy)(async () => {

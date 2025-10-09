@@ -77,35 +77,35 @@ function _(e) {
     f(j(C))
   }, [f, j, C]), (0, r.jsxs)("div", {
     ref: C,
-    className: a()(b.separatorSection, {
-      [b.dropIndicatorBefore]: null != v && g < v,
-      [b.dropIndicatorAfter]: null != v && g > v
+    className: a()(x.separatorSection, {
+      [x.dropIndicatorBefore]: null != v && g < v,
+      [x.dropIndicatorAfter]: null != v && g > v
     }),
     children: [!l && u.length < h.b3 ? (0, r.jsxs)(o.P3F, {
-      className: b.addPrompt,
+      className: x.addPrompt,
       onClick: () => (0, m.tS)(t, [...c, (0, h.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
-        className: b.plusIcon,
+        className: x.plusIcon,
         width: 20,
         height: 20
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-brand",
-        children: x.intl.string(x.t.ujFqu7)
+        children: b.intl.string(b.t.ujFqu7)
       })]
     }) : null, n ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: b.divider
-      }), (0, r.jsx)(o.X6q, {
+        className: x.divider
+      }), (0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
-        children: x.intl.string(x.t.tjrGcX)
+        children: b.intl.string(b.t.tjrGcX)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: b.subtitle,
-        children: x.intl.string(x.t.XFa6Q0)
+        className: x.subtitle,
+        children: b.intl.string(b.t.XFa6Q0)
       })]
     })]
   })
@@ -141,8 +141,8 @@ function C(e) {
         required: false
       }));
     if (n.length > h.b3) return void c.Z.show({
-      title: x.intl.string(x.t["Cxtq5+"]),
-      body: x.intl.formatToPlainString(x.t["pkbZ+f"], {
+      title: b.intl.string(b.t["Cxtq5+"]),
+      body: b.intl.formatToPlainString(b.t["pkbZ+f"], {
         numQuestions: h.b3
       })
     });
@@ -151,14 +151,14 @@ function C(e) {
   return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
       children: [n ? null : (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/bold",
-          children: x.intl.string(x.t["24Qm4O"])
+          children: b.intl.string(b.t["24Qm4O"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: b.subtitle,
-          children: x.intl.string(x.t.QvCcYW)
+          className: x.subtitle,
+          children: b.intl.string(b.t.QvCcYW)
         })]
       }), O.map((e, t) => (0, r.jsx)(f.Z, {
         guild: d,
@@ -186,18 +186,18 @@ function C(e) {
         onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id)), C.length < h.YW ? (0, r.jsxs)(o.P3F, {
-        className: b.addPrompt,
+        className: x.addPrompt,
         onClick: () => (0, m.tS)(d, [...C, (0, h.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",
-          className: b.plusIcon,
+          className: x.plusIcon,
           width: 20,
           height: 20
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-brand",
-          children: x.intl.string(x.t.ujFqu7)
+          children: b.intl.string(b.t.ujFqu7)
         })]
       }) : null]
     })]

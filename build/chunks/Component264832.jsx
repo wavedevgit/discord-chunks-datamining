@@ -14,7 +14,7 @@ function s(e) {
     children: t,
     href: n
   } = e;
-  return null == n ? t : (0, r.jsx)(i.eee, {
+  return null == n ? t : (0, r.jsx)(i.Anchor, {
     className: o.link,
     href: n,
     onClick: e => {

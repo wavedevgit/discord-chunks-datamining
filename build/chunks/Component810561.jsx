@@ -29,7 +29,7 @@ function _(e) {
   } = (0, c.Z)(a, n, t), f = p ? "div" : l.Ttm;
   return (0, i.jsxs)("div", {
     className: u.recurrences,
-    children: [(0, i.jsx)(l.X6q, {
+    children: [(0, i.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
       children: d.intl.string(d.t["D/jjoa"])

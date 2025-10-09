@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     guild: t
-  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(d.oNc.COMMUNITY), [f, h] = i.useState(t.features.has(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
+  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(d.oNc.COMMUNITY), [f, h] = i.useState(t.features.has(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
     h(e), await (0, s.fp)(t, e)
   }, [t]);
   return p ? null : (0, r.jsxs)("div", {
@@ -28,7 +28,7 @@ function m(e) {
       height: 64
     }), (0, r.jsxs)("div", {
       className: g.headingContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "always-white",
         children: u.intl.string(u.t.jDarm5)
@@ -42,7 +42,7 @@ function m(e) {
       children: (0, r.jsx)(a.rsf, {
         id: n,
         checked: f,
-        onChange: x,
+        onChange: b,
         disabled: !m
       })
     })]

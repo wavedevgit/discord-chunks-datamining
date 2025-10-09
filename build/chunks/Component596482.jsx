@@ -51,7 +51,7 @@ function h(e) {
         color: i.Z.RED_345
       }), (0, r.jsxs)("div", {
         className: p.subHeaderText,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-danger",
@@ -66,12 +66,12 @@ function h(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: p.buttonContainer,
-      children: [(0, r.jsx)(a.zxk, {
+      children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: l,
         text: b.intl.string(b.t.ISiXbW),
         size: "sm"
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(a.Button, {
         variant: "critical-primary",
         onClick: n,
         size: "sm",
@@ -97,7 +97,7 @@ function g(e) {
         color: i.Z.BRAND_360
       }), (0, r.jsxs)("div", {
         className: p.subHeaderText,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
@@ -108,7 +108,7 @@ function g(e) {
           children: (0, u.OY)(n, l)
         })]
       })]
-    }), (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(a.Button, {
       color: o.zx.Colors.BRAND,
       onClick: t,
       text: b.intl.string(b.t.e1bMNT),
@@ -134,7 +134,7 @@ function j(e) {
         color: i.Z.BRAND_360
       }), (0, r.jsxs)("div", {
         className: p.subHeaderText,
-        children: [(0, r.jsx)(a.X6q, {
+        children: [(0, r.jsx)(a.Heading, {
           className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
@@ -147,12 +147,12 @@ function j(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: p.buttonContainer,
-      children: [(0, r.jsx)(a.zxk, {
+      children: [(0, r.jsx)(a.Button, {
         onClick: n,
         text: b.intl.string(b.t.ISiXbW),
         variant: "secondary",
         size: "sm"
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(a.Button, {
         onClick: t,
         text: b.intl.string(b.t.e1bMNT),
         size: "sm"

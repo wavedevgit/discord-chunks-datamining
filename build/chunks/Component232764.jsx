@@ -24,7 +24,7 @@ function o() {
       children: Chunk388032.intl.format(Chunk388032.t.tCQ3Hx, {
         number: 1
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: Chunk275811.header,
@@ -36,7 +36,7 @@ function o() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk275811.button,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.TbzK39),
         onClick: () => (0, Chunk983135.Nb)("Safety Check")
@@ -55,7 +55,7 @@ function c() {
       children: Chunk388032.intl.format(Chunk388032.t.tCQ3Hx, {
         number: 2
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: Chunk275811.header,
@@ -67,7 +67,7 @@ function c() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk275811.button,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.TbzK39),
         onClick: () => (0, Chunk983135.Nb)("Default Channels")
@@ -86,7 +86,7 @@ function d() {
       children: Chunk388032.intl.format(Chunk388032.t.tCQ3Hx, {
         number: 3
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: Chunk275811.header,
@@ -98,7 +98,7 @@ function d() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk275811.button,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.TbzK39),
         onClick: () => (0, Chunk983135.Nb)("Customization Questions")
@@ -117,7 +117,7 @@ function u() {
       children: Chunk388032.intl.format(Chunk388032.t.tCQ3Hx, {
         number: 4
       })
-    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: Chunk275811.header,
@@ -129,7 +129,7 @@ function u() {
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk275811.button,
-      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.TbzK39),
         onClick: () => (0, Chunk983135.Nb)("Home Settings")

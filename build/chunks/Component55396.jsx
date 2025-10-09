@@ -1,7 +1,7 @@
 /** Chunk was on 46923 **/
 /** chunk id: 55396, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => y
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk406479 = require("./406479.js");
 
-function b(e) {
+function C(e) {
   let {
     showOutdatedInfoOption: t,
     onChoice: a
@@ -40,17 +40,17 @@ function b(e) {
     value: 3
   }];
   return (0, n.jsxs)(d.hzk, {
-    className: k.content,
-    children: [(0, n.jsx)(d.X6q, {
+    className: b.content,
+    children: [(0, n.jsx)(d.Heading, {
       variant: "heading-xl/bold",
-      className: k.header,
+      className: b.header,
       children: _.intl.string(_.t["8itBsL"])
     }), (0, n.jsx)(d.Text, {
-      className: k.tip,
+      className: b.tip,
       variant: "text-md/normal",
       children: _.intl.string(_.t.X7ab09)
     }), (0, n.jsx)(c.Gu, {
-      className: k.radioGroup,
+      className: b.radioGroup,
       options: i,
       onChange: e => {
         let {
@@ -62,7 +62,7 @@ function b(e) {
   })
 }
 
-function C(e) {
+function k(e) {
   let {
     applicationId: t,
     onSubmitted: a,
@@ -70,19 +70,19 @@ function C(e) {
   } = e, l = (0, g.q)(t);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(d.hzk, {
-      className: k.content,
-      children: [(0, n.jsx)(d.X6q, {
+      className: b.content,
+      children: [(0, n.jsx)(d.Heading, {
         variant: "heading-xl/bold",
-        className: k.header,
+        className: b.header,
         children: _.intl.string(_.t.lWk2u7)
       }), (0, n.jsx)(d.Text, {
-        className: k.tip,
+        className: b.tip,
         variant: "text-md/normal",
         children: _.intl.string(_.t.ZQfxS0)
       })]
     }), (0, n.jsx)(d.mzw, {
-      className: k.footer,
-      children: (0, n.jsx)(d.zxk, {
+      className: b.footer,
+      children: (0, n.jsx)(d.Button, {
         variant: "primary",
         text: _.intl.string(_.t.RSATCA),
         fullWidth: true,
@@ -107,12 +107,12 @@ let w = e => {
     applicationRecord: i
   } = e;
   return (0, n.jsxs)("div", {
-    className: k.gameSuggestion,
+    className: b.gameSuggestion,
     children: [null != t ? (0, n.jsx)(p.Z, {
       game: i,
-      className: k.smolGameIcon
+      className: b.smolGameIcon
     }) : (0, n.jsx)(d.vdY, {
-      className: k.customGameNameIcon,
+      className: b.customGameNameIcon,
       size: "sm"
     }), a]
   })
@@ -123,24 +123,24 @@ function S(e) {
   let {
     applicationId: p,
     onSubmitted: j,
-    viewId: b
-  } = e, [C, S] = i.useState(""), G = (0, o.e7)([u.Z], () => u.Z.getApplication(p)), [z, L] = i.useState(""), y = (0, o.e7)([x.Z], () => x.Z.getGame(p)), Z = null != (a = null != (t = null == y ? true : y.name) ? t : null == G ? true : G.name) ? a : "", q = null == G ? true : G.getIconURL(I.Si.LARGE), {
+    viewId: C
+  } = e, [k, S] = i.useState(""), G = (0, o.e7)([u.Z], () => u.Z.getApplication(p)), [L, y] = i.useState(""), z = (0, o.e7)([x.Z], () => x.Z.getGame(p)), Z = null != (a = null != (t = null == z ? true : z.name) ? t : null == G ? true : G.name) ? a : "", B = null == G ? true : G.getIconURL(I.Si.LARGE), {
     primaryColor: R,
     secondaryColor: T
-  } = (0, h.Z)(q);
+  } = (0, h.Z)(B);
   i.useEffect(() => {
     m.Z.getDetectableGames()
   }, []);
-  let F = (0, o.Wu)([f.Z], () => {
-      let e = ((null == C ? true : C.length) > 0 ? C : Z).toLowerCase(),
-        t = null != z ? f.Z.getDetectableGame(z) : true;
+  let H = (0, o.Wu)([f.Z], () => {
+      let e = ((null == k ? true : k.length) > 0 ? k : Z).toLowerCase(),
+        t = null != L ? f.Z.getDetectableGame(L) : true;
       return (0, r.chain)(f.Z.games).filter(t => s()(e, t.name.toLowerCase())).filter(e => e.id !== p).take(4).concat(null != t ? [t] : []).compact().uniqBy("id").value()
-    }, [p, z, Z, C]),
-    X = (0, g.Z)(F.map(e => e.id)),
-    A = (0, r.chain)(X).compact().keyBy("id").value(),
-    B = C.length > 0 && !F.map(e => e.name.toLowerCase()).includes(C.toLowerCase()),
-    W = z === p || null === z && 0 === C.length,
-    O = F.map(e => {
+    }, [p, L, Z, k]),
+    F = (0, g.Z)(H.map(e => e.id)),
+    A = (0, r.chain)(F).compact().keyBy("id").value(),
+    W = k.length > 0 && !H.map(e => e.name.toLowerCase()).includes(k.toLowerCase()),
+    O = L === p || null === L && 0 === k.length,
+    q = H.map(e => {
       let {
         name: t,
         id: a
@@ -154,85 +154,85 @@ function S(e) {
         value: a
       }
     });
-  return B && O.push({
+  return W && q.push({
     name: (0, n.jsx)(w, {
-      name: C
+      name: k
     }),
     value: v.default.cast("")
   }), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(d.hzk, {
-      className: k.content,
-      children: [(0, n.jsx)(d.X6q, {
+      className: b.content,
+      children: [(0, n.jsx)(d.Heading, {
         variant: "heading-xl/bold",
-        className: k.header,
+        className: b.header,
         children: _.intl.string(_.t.tJzB6O)
       }), (0, n.jsx)(d.Text, {
-        className: k.tip,
+        className: b.tip,
         variant: "text-md/normal",
         children: _.intl.string(_.t["44R0Iy"])
       }), (0, n.jsxs)("div", {
-        className: k.gameInfoBox,
+        className: b.gameInfoBox,
         style: {
           background: "linear-gradient(45deg, ".concat(R, ", ").concat(T, ")")
         },
-        children: [null != q && (0, n.jsx)("img", {
-          className: k.gameIcon,
-          src: q,
+        children: [null != B && (0, n.jsx)("img", {
+          className: b.gameIcon,
+          src: B,
           alt: ""
-        }), (0, n.jsx)(d.X6q, {
+        }), (0, n.jsx)(d.Heading, {
           variant: "heading-lg/semibold",
-          className: k.gameTitle,
-          children: null != (l = null == y ? true : y.name) ? l : null == G ? true : G.name
+          className: b.gameTitle,
+          children: null != (l = null == z ? true : z.name) ? l : null == G ? true : G.name
         })]
       }), (0, n.jsxs)("div", {
-        className: k.applicationSearch,
+        className: b.applicationSearch,
         children: [(0, n.jsx)(d.E1j, {
-          query: C,
+          query: k,
           onChange: e => {
-            if (0 === e.length) null === z && L(p);
+            if (0 === e.length) null === L && y(p);
             else {
               var t;
-              let a = F.find(t => t.name.toLowerCase() === e.toLowerCase());
-              L(null != (t = null == a ? true : a.id) ? t : "")
+              let a = H.find(t => t.name.toLowerCase() === e.toLowerCase());
+              y(null != (t = null == a ? true : a.id) ? t : "")
             }
             S(e)
           },
           onClear: () => {
-            null === z && L(p), S("")
+            null === L && y(p), S("")
           },
           placeholder: _.intl.string(_.t.UedRLy)
         }), (0, n.jsx)(c.Gu, {
           size: c.l7.NONE,
           radioPosition: "right",
           withTransparentBackground: true,
-          radioItemClassName: k.gameSuggestionRadioItem,
-          value: z,
-          options: O,
+          radioItemClassName: b.gameSuggestionRadioItem,
+          value: L,
+          options: q,
           onChange: e => {
             let {
               value: t
             } = e;
-            return L(t)
+            return y(t)
           }
         })]
       })]
     }), (0, n.jsx)(d.mzw, {
-      className: k.footer,
-      children: (0, n.jsx)(d.zxk, {
+      className: b.footer,
+      children: (0, n.jsx)(d.Button, {
         variant: "primary",
         text: _.intl.string(_.t.geKm7u),
         fullWidth: true,
         onClick: () => {
-          let e = null != z && z.length > 0;
+          let e = null != L && L.length > 0;
           (0, N.MH)({
             applicationId: p,
-            suggestedGameApplicationId: e ? z : true,
-            suggestedGameName: e ? true : C,
+            suggestedGameApplicationId: e ? L : true,
+            suggestedGameName: e ? true : k,
             submitted: true,
-            viewId: b
+            viewId: C
           }), j()
         },
-        disabled: W
+        disabled: O
       })
     })]
   })
@@ -246,17 +246,17 @@ function G(e) {
   } = e, [s, r] = i.useState("");
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(d.hzk, {
-      className: k.content,
-      children: [(0, n.jsx)(d.X6q, {
+      className: b.content,
+      children: [(0, n.jsx)(d.Heading, {
         variant: "heading-xl/bold",
-        className: k.header,
+        className: b.header,
         children: _.intl.string(_.t["/nALeX"])
       }), (0, n.jsx)(d.Text, {
-        className: k.tip,
+        className: b.tip,
         variant: "text-md/normal",
         children: _.intl.string(_.t.WOuJ8v)
       }), (0, n.jsx)("div", {
-        className: k.otherFeedbackInput,
+        className: b.otherFeedbackInput,
         children: (0, n.jsx)(d.Kx8, {
           value: s,
           onChange: e => r(e),
@@ -265,8 +265,8 @@ function G(e) {
         })
       })]
     }), (0, n.jsx)(d.mzw, {
-      className: k.footer,
-      children: (0, n.jsx)(d.zxk, {
+      className: b.footer,
+      children: (0, n.jsx)(d.Button, {
         variant: "primary",
         text: _.intl.string(_.t.geKm7u),
         fullWidth: true,
@@ -284,25 +284,25 @@ function G(e) {
   })
 }
 
-function z(e) {
+function L(e) {
   let {
     onClose: t
   } = e;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(d.hzk, {
-      className: k.content,
-      children: [(0, n.jsx)(d.X6q, {
+      className: b.content,
+      children: [(0, n.jsx)(d.Heading, {
         variant: "heading-xl/bold",
-        className: k.header,
+        className: b.header,
         children: _.intl.string(_.t["pelg/f"])
       }), (0, n.jsx)(d.Text, {
-        className: k.tip,
+        className: b.tip,
         variant: "text-md/normal",
         children: _.intl.string(_.t["55S/OD"])
       })]
     }), (0, n.jsx)(d.mzw, {
-      className: k.footer,
-      children: (0, n.jsx)(d.zxk, {
+      className: b.footer,
+      children: (0, n.jsx)(d.Button, {
         variant: "primary",
         text: _.intl.string(_.t.i4jeWV),
         fullWidth: true,
@@ -312,7 +312,7 @@ function z(e) {
   })
 }
 
-function L(e) {
+function y(e) {
   let {
     applicationId: t,
     viewId: a,
@@ -327,7 +327,7 @@ function L(e) {
     children: (() => {
       switch (o) {
         case 0:
-          return (0, n.jsx)(b, {
+          return (0, n.jsx)(C, {
             showOutdatedInfoOption: r,
             onChoice: e => c(e)
           });
@@ -338,7 +338,7 @@ function L(e) {
             onSubmitted: () => c(4)
           });
         case 2:
-          return (0, n.jsx)(C, {
+          return (0, n.jsx)(k, {
             applicationId: t,
             viewId: a,
             onSubmitted: () => s()
@@ -350,7 +350,7 @@ function L(e) {
             onSubmitted: () => c(4)
           });
         case 4:
-          return (0, n.jsx)(z, {
+          return (0, n.jsx)(L, {
             onClose: s
           })
       }

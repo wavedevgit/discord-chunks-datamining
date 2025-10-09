@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let w = [{
+let k = [{
   key: "type",
   cellClassName: l()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
@@ -76,7 +76,7 @@ function R(e) {
   let {
     type: r
   } = e, i = (0, u.e7)([S.Z], () => S.Z.getFilters()), l = null != (n = null == i || null == (t = i.types) ? true : t.has(r)) && n;
-  return (0, a.jsx)(p.XZJ, {
+  return (0, a.jsx)(p.rsf, {
     checked: l,
     onChange: function() {
       l ? h.Z.dispatch({
@@ -117,19 +117,19 @@ function A() {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
     }, [R]),
-    L = (0, Chunk168524.Z)({
+    M = (0, Chunk168524.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
       source: Chunk810568.m1.DevTools
     }),
-    M = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
+    L = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
+    U = (0, Chunk835473.Z)(L).filter(Chunk823379.lm),
     F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
@@ -141,9 +141,9 @@ function A() {
           variant: "text-md/semibold",
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: w,
+          columns: k,
           data: Chunk392711
-        }), (0, Chunk951288.jsx)(Chunk789086.Z, {}), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk789086.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Refresh Now",
           fullWidth: true,
@@ -161,7 +161,7 @@ function A() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           children: "Impression Capping"
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Clear Impressions",
           fullWidth: true,
@@ -170,7 +170,7 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Log Impressions",
           fullWidth: true,
@@ -179,7 +179,7 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk120356 ? "Enable Impression Capping" : "Disable Impression Capping",
           fullWidth: true,
@@ -188,7 +188,7 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
             })
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: l ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
           fullWidth: true,
@@ -207,10 +207,10 @@ function A() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (R === e.currentTarget.value ? null == M || M(e) : A(e.currentTarget.value))
           },
-          error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
-          successMessage: null != L ? "Game profile found" : true
+          error: R.length > 0 && null == M ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
+          successMessage: null != M ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(Z, {

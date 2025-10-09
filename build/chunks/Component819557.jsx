@@ -46,7 +46,7 @@ function u(e) {
             className: l()(o.icon, s)
           })
         });
-        else return (0, i.jsx)(a.X6q, {
+        else return (0, i.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: o.number,

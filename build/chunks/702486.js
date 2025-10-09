@@ -13,16 +13,16 @@ var Chunk647438 = require("./647438.js"),
 let c = (e, t, n, r) => {
     let {
       scrollTop: l = 0,
-      scrollOffset: s = 0,
-      scrollHeight: i = 0,
+      scrollOffset: i = 0,
+      scrollHeight: s = 0,
       scrollWidth: o = 0
     } = r;
-    if (i > 0) {
-      let r = (l + s) / i;
+    if (s > 0) {
+      let r = (l + i) / s;
       r > 0 && a.default.track(e, {
         scroll_visible_percent: r,
         source: n,
-        page_height: Math.round(i),
+        page_height: Math.round(s),
         page_width: Math.round(o),
         page_session_id: t
       })
@@ -31,9 +31,9 @@ let c = (e, t, n, r) => {
   u = (e, t) => {
     let {
       analyticsSource: n
-    } = (0, i.MV)(t), a = (0, l.h)(c, 5e3, [], {
+    } = (0, s.MV)(t), a = (0, l.h)(c, 5e3, [], {
       trailing: true
-    }), u = (0, s.sp)(), d = null == u ? true : u.sessionId;
+    }), u = (0, i.sp)(), d = null == u ? true : u.sessionId;
     return {
       handleScroll: r.useCallback(() => {
         if (null != e.current) {

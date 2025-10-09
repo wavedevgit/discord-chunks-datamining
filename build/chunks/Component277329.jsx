@@ -50,7 +50,7 @@ function g() {
       }
     };
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk830260.heading,
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.URyqtL)

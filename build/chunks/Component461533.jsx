@@ -1,60 +1,50 @@
 /** Chunk was on 9354 **/
 /** chunk id: 461533, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => s
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk709867 = require("./709867.jsx"),
   Chunk369994 = require("./369994.js"),
   Chunk781208 = require("./781208.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk66532 = require("./66532.js");
+  Chunk388032 = require("./388032.jsx");
 
-function _(t) {
+function s(t) {
   let {
     guildId: e,
     transitionState: n,
-    onClose: _
-  } = t, [b, S] = i.useState([]), f = i.useCallback(() => {
-    (0, a.KK)(e, b), (0, a.C4)(e), _()
-  }, [e, _, b]), h = i.useCallback(t => () => {
-    S(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
-  }, []), p = i.useCallback(() => {
-    open(s.RI)
-  }, []);
-  return (0, r.jsx)(c.Modal, {
+    onClose: s
+  } = t, [d, S] = l.useState([]), _ = l.useCallback(() => {
+    (0, o.KK)(e, d), (0, o.C4)(e), s()
+  }, [e, s, d]), p = l.useCallback(t => {
+    S(t)
+  }, []), I = l.useCallback(() => {
+    open(c.RI)
+  }, []), O = l.useMemo(() => c.Ud.map(t => ({
+    label: String((0, c.$l)(t)),
+    value: t
+  })), []);
+  return (0, r.jsx)(i.Modal, {
     transitionState: n,
-    title: u.intl.string(u.t.uYPGsb),
-    subtitle: u.intl.format(u.t.Hg8Ee3, {
-      onClick: p
+    title: a.intl.string(a.t.uYPGsb),
+    subtitle: a.intl.format(a.t.Hg8Ee3, {
+      onClick: I
     }),
     actions: [{
-      text: u.intl.string(u.t["ETE/oK"]),
-      onClick: _,
+      text: a.intl.string(a.t["ETE/oK"]),
+      onClick: s,
       variant: "secondary"
     }, {
-      text: u.intl.string(u.t.geKm7u),
-      onClick: f
+      text: a.intl.string(a.t.geKm7u),
+      onClick: _
     }],
-    onClose: _,
-    children: (0, r.jsx)(o.Kqy, {
-      gap: 8,
-      className: d.mainCheckboxContainer,
-      children: s.Ud.map(t => (0, r.jsxs)(o.P3F, {
-        className: d.checkboxContainer,
-        onClick: h(t),
-        children: [(0, r.jsx)(l.VL, {
-          className: d.checkbox,
-          checked: b.includes(t),
-          isIndicator: true
-        }), (0, r.jsx)(o.Text, {
-          variant: "text-sm/normal",
-          children: (0, s.$l)(t)
-        })]
-      }, t))
+    onClose: s,
+    children: (0, r.jsx)(u.c, {
+      selectedValues: d,
+      onChange: p,
+      options: O
     })
   })
 }

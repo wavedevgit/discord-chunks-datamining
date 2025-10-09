@@ -1,7 +1,7 @@
 /** Chunk was on 61 **/
 /** chunk id: 366815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -36,7 +36,7 @@ let d = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
   })]
 });
 
-function m(e) {
+function g(e) {
   let {
     onClick: t
   } = e;
@@ -46,7 +46,7 @@ function m(e) {
       className: c.content,
       children: [(0, r.jsxs)("div", {
         className: c.textContainer,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(i.Heading, {
           variant: "heading-md/semibold",
           children: o.intl.string(o.t.Sx8Ezs)
         }), (0, r.jsx)(i.Text, {
@@ -70,10 +70,10 @@ function m(e) {
       })]
     }), (0, r.jsx)("div", {
       className: c.footer,
-      children: (0, r.jsxs)(i.hE2, {
+      children: (0, r.jsxs)(i.ButtonGroup, {
         direction: "horizontal",
         size: "sm",
-        children: [(0, r.jsx)(i.zxk, {
+        children: [(0, r.jsx)(i.Button, {
           onClick: t,
           variant: "secondary",
           text: o.intl.string(o.t["X/3SyM"])

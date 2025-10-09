@@ -18,7 +18,7 @@ let d = e => {
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("81404")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("74318"), n.e("7654"), n.e("81404")]).then(n.bind(n, 560114));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -40,7 +40,7 @@ let d = e => {
           return e
         }({}, n), l = l = {
           guild: t,
-          source: s.t4x.HUB_DIRECTORY,
+          source: s.InstantInviteSources.HUB_DIRECTORY,
           analyticsLocation: {
             section: s.jXE.HUB_WELCOME_CTA
           }
@@ -63,7 +63,7 @@ let d = e => {
       className: c.emptyImage,
       alt: "",
       src: n(705845)
-    }), (0, r.jsx)(l.X6q, {
+    }), (0, r.jsx)(l.Heading, {
       className: c.emptyTitle,
       variant: "heading-xl/semibold",
       children: o.intl.format(o.t.vyvrpK, {

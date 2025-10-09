@@ -36,11 +36,11 @@ function j(e) {
     currentUser: i,
     hidePrivateData: r,
     isAuthenticated: T
-  } = (0, c.cj)([f.default, _.Z, h.default], () => ({
-    currentUser: f.default.getCurrentUser(),
-    hidePrivateData: _.Z.hidePersonalInformation,
+  } = (0, c.cj)([_.default, f.Z, h.default], () => ({
+    currentUser: _.default.getCurrentUser(),
+    hidePrivateData: f.Z.hidePersonalInformation,
     isAuthenticated: h.default.isAuthenticated()
-  })), v = new x.Z(n), j = T && (null == i ? true : i.id) === v.id, I = n.tokenStatus === N.q.INVALID, U = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
+  })), v = new x.default(n), j = T && (null == i ? true : i.id) === v.id, I = n.tokenStatus === N.q.INVALID, U = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
   return m.Z.useConfig({
     location: "Account card load"
   }), j ? M = (0, a.jsx)(o.Text, {
@@ -83,7 +83,7 @@ function j(e) {
         }), M]
       }), (0, a.jsxs)("div", {
         className: p.userActions,
-        children: [!j && (0, a.jsx)(o.zxk, {
+        children: [!j && (0, a.jsx)(o.Button, {
           variant: "secondary",
           text: I ? A.intl.string(A.t["DSN+h4"]) : t,
           onClick: function() {

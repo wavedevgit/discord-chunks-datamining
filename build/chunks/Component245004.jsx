@@ -60,7 +60,7 @@ function d(e) {
     isEnabled: l
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(i.Heading, {
       className: o.topPerksCardHeading,
       variant: "heading-lg/extrabold",
       children: t

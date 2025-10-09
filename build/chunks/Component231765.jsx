@@ -137,7 +137,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     settings: {
       enabled: t,
@@ -170,7 +170,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     settings: {
       enabled: t,
@@ -367,7 +367,7 @@ function B(e) {
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: v.hideButton,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
           text: O.intl.string(O.t.qz65yc),
@@ -393,7 +393,7 @@ function Z(e) {
       })
     }), (0, r.jsxs)("div", {
       className: v.achievementTextContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
         children: O.intl.string(O.t["6jI0hY"])
@@ -464,10 +464,10 @@ function V(e) {
     };
   return i.useEffect(() => (window.addEventListener("mousemove", E), () => window.removeEventListener("mousemove", E)), []), (0, r.jsxs)(l.Kqy, {
     gap: 24,
-    children: [(0, r.jsx)(l.X6q, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       children: O.intl.string(O.t.AtCukJ)
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(j, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(Z, {
@@ -478,7 +478,7 @@ function V(e) {
     }), (0, r.jsx)(G, {
       settings: a,
       updateSettings: h
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(B, {

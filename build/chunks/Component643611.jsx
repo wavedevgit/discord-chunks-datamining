@@ -55,11 +55,11 @@ function _(t) {
     onEditChannel: j,
     onClose: o,
     transitionState: _
-  } = t, [S, C] = r.useState(n.metadata.channelId), [h, I] = r.useState(null), L = (0, a.e7)([c.Z], () => c.Z.getChannel(S), [S]), g = (0, A.c)(n.type, n, e);
-  if (null == g) return null;
+  } = t, [S, C] = r.useState(n.metadata.channelId), [h, g] = r.useState(null), I = (0, a.e7)([c.Z], () => c.Z.getChannel(S), [S]), L = (0, A.c)(n.type, n, e);
+  if (null == L) return null;
   let {
     headerText: T
-  } = g;
+  } = L;
   return (0, l.jsx)(i.Modal, {
     onClose: o,
     transitionState: _,
@@ -74,7 +74,7 @@ function _(t) {
     }, {
       text: d ? E.intl.string(E.t.bt75u7) : E.intl.string(E.t.R3BPHx),
       onClick: () => {
-        if (null == S) return void I(E.intl.string(E.t.lM1NLi));
+        if (null == S) return void g(E.intl.string(E.t.lM1NLi));
         j(S)
       }
     }],
@@ -83,7 +83,7 @@ function _(t) {
       direction: "vertical",
       children: [(0, l.jsx)(N, {
         guildId: s,
-        channel: L,
+        channel: I,
         onSelectChannel: t => {
           null != t && C(t.id)
         }

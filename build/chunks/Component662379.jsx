@@ -51,7 +51,7 @@ function g() {
     description: Chunk388032.intl.string(Chunk388032.t.c8krDQ)
   }];
   return (0, Chunk951288.jsxs)("div", {
-    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t.R9rNIi)

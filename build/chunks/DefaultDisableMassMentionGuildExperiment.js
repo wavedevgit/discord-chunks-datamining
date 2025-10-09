@@ -35,7 +35,7 @@ function o(e) {
 
 function c(e) {
   var t;
-  let i = (0, n.e7)([s.Z], () => s.Z.can(a.Plq.MANAGE_GUILD, e)),
+  let i = (0, s.e7)([n.Z], () => n.Z.can(a.Plq.MANAGE_GUILD, e)),
     {
       enabled: l
     } = r.useExperiment({

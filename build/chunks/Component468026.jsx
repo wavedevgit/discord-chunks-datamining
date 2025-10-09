@@ -31,7 +31,7 @@ let p = e => {
       transitionState: S,
       titleClassName: A
     } = e,
-    C = s.zx.Sizes.MEDIUM,
+    C = s.Button.Sizes.MEDIUM,
     [N, R] = i.useState(false);
   i.useEffect(() => () => {
     N && (null == I || I())
@@ -42,21 +42,21 @@ let p = e => {
     w = e => {
       null != e && e.preventDefault(), null == O || O(), null == v || v()
     };
-  return null != h && "" !== h && (t = (0, r.jsx)(s.zx, {
+  return null != h && "" !== h && (t = (0, r.jsx)(s.Button, {
     type: "button",
     size: C,
-    color: s.zx.Colors.PRIMARY,
+    color: s.Button.Colors.PRIMARY,
     onClick: P,
     className: _.secondaryButton,
     children: h
-  })), null != E && "" !== E && (n = (0, r.jsx)(s.zx, {
+  })), null != E && "" !== E && (n = (0, r.jsx)(s.Button, {
     type: "submit",
     color: g,
     size: C,
     className: _.primaryButton,
     autoFocus: true,
     children: E
-  })), null != b && "" !== b && (a = (0, r.jsx)(u.XZJ, {
+  })), null != b && "" !== b && (a = (0, r.jsx)(u.Checkbox, {
     checked: N,
     onChange: e => R(e),
     label: b,
@@ -71,11 +71,11 @@ let p = e => {
       onSubmit: w,
       className: _.form,
       children: [(0, r.jsx)(l.xB, {
-        children: null != T ? (0, r.jsx)(u.X6q, {
+        children: null != T ? (0, r.jsx)(u.Heading, {
           variant: "heading-lg/semibold",
           className: o()(_.title, A),
           children: T
-        }) : (0, r.jsx)(u.X6q, {
+        }) : (0, r.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           className: o()(_.title, A),
           children: T

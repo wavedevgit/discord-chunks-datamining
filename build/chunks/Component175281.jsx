@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -79,7 +79,7 @@ function Z() {
       return (0, r.jsxs)("div", {
         className: C.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(f.X6q, {
+          children: [(0, r.jsx)(f.Heading, {
             variant: "heading-lg/semibold",
             children: i
           }), null != l && (0, r.jsx)(f.Text, {

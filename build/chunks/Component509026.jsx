@@ -50,10 +50,10 @@ function p(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), x = (0, d.Z)(t) - h.length, b = (0, c.mY)();
+  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), b = (0, d.Z)(t) - h.length, x = (0, c.mY)();
   return (0, r.jsxs)(l.gNt, {
     label: g.intl.string(g.t.LDT0Q0),
-    disabled: b,
+    disabled: x,
     description: g.intl.format(g.t.H9Jxp6, {
       maxSlots: (0, d.Z)(t)
     }),
@@ -72,7 +72,7 @@ function f(e) {
           }))
         })
       },
-      disabled: b || f || 0 === x,
+      disabled: x || f || 0 === b,
       size: "md",
       variant: "primary",
       text: g.intl.string(g.t.AuPtoq),
@@ -97,7 +97,7 @@ function f(e) {
             }))
           })
         },
-        editingDisabled: b
+        editingDisabled: x
       })
     })]
   })

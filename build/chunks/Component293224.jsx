@@ -424,7 +424,7 @@ function eh(e) {
     h = (0, l.cj)([Y.Z], () => (0, C.Z)(Y.Z)),
     p = (0, l.e7)([F.Z], () => F.Z.getCurrentUserActiveStream()),
     f = (0, ee.P)({
-      pid: (0, q.getPID)(),
+      pid: (0, J.getPID)(),
       allowOneClickGoLive: true,
       analyticsLocation: ei.Sbl.UNLOCKED_OVERLAY
     }),
@@ -731,7 +731,7 @@ function ey(e) {
     quality: Q.Z.getQuality(),
     state: Q.Z.getState(),
     lastPing: Q.Z.getLastPing()
-  })), s = (0, l.e7)([J.Z], () => null != o && J.Z.hasVideo(o), [o]);
+  })), s = (0, l.e7)([q.Z], () => null != o && q.Z.hasVideo(o), [o]);
   return null != o && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(T.Z, (t = eo({}, a), n = n = {
       channelId: o,

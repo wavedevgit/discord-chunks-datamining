@@ -144,20 +144,20 @@ function K(e) {
     children: [(0, r.jsxs)("div", {
       className: U.badgeAndCloseRow,
       children: [(0, r.jsx)(f.lBU, {
-        text: j.intl.string(j.t.oW0eUV)
+        text: k.intl.string(k.t.oW0eUV)
       }), (0, r.jsx)(H, {
         markAsDismissed: t
       })]
     }), (0, r.jsxs)("div", {
       className: U.coachmarkHeaderTextContainer,
-      children: [(0, r.jsx)(f.X6q, {
+      children: [(0, r.jsx)(f.Heading, {
         variant: "heading-lg/extrabold",
-        children: j.intl.string(k.default["23QUzs"])
+        children: k.intl.string(j.default["23QUzs"])
       }), (0, r.jsx)(f.Text, {
         className: U.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: j.intl.string(n ? k.default.TRCE4u : k.default["UV/Vtr"])
+        children: k.intl.string(n ? j.default.TRCE4u : j.default["UV/Vtr"])
       })]
     })]
   })
@@ -175,7 +175,7 @@ function z(e) {
     className: o()(U.sliderContainer, U.gradientDirectionSliderContainer),
     children: [(0, r.jsx)(f.Text, {
       variant: "text-sm/medium",
-      children: j.intl.string(k.default.dZkwg4)
+      children: k.intl.string(j.default.dZkwg4)
     }), (0, r.jsx)(f.iRW, {
       initialValue: t,
       defaultValue: 0,
@@ -202,7 +202,7 @@ function q(e) {
     className: U.sliderContainer,
     children: [(0, r.jsx)(f.Text, {
       variant: "text-sm/medium",
-      children: j.intl.string(k.default.xlXkaG)
+      children: k.intl.string(j.default.xlXkaG)
     }), (0, r.jsx)(f.iRW, {
       initialValue: t,
       defaultValue: A.BH,
@@ -231,12 +231,12 @@ function X(e) {
   }, []);
   return (0, r.jsx)(f.ua7, {
     "data-migration-pending": true,
-    text: j.intl.string(k.default.c9MBEB),
+    text: k.intl.string(j.default.c9MBEB),
     children: e => "with-text" === t ? (0, r.jsx)(u.zxk, F(B({}, e), {
       variant: "secondary",
       onClick: n,
       icon: f.T$Z,
-      text: j.intl.string(k.default.c9MBEB),
+      text: k.intl.string(j.default.c9MBEB),
       fullWidth: true
     })) : (0, r.jsx)("div", {
       className: U.surpriseMeButton,
@@ -245,7 +245,7 @@ function X(e) {
         size: "md",
         onClick: n,
         icon: f.T$Z,
-        "aria-label": j.intl.string(k.default.c9MBEB)
+        "aria-label": k.intl.string(j.default.c9MBEB)
       }))
     })
   })
@@ -258,13 +258,13 @@ function Q(e) {
     fullWidth: i
   } = e;
   return (0, r.jsx)(c.u, {
-    text: j.intl.string(k.default.SFyHIC),
+    text: k.intl.string(j.default.SFyHIC),
     shouldShow: n,
     children: (0, r.jsx)(u.zxk, {
       variant: "primary",
       onClick: t,
       disabled: n,
-      text: j.intl.string(j.t["1Qm829"]),
+      text: k.intl.string(k.t["1Qm829"]),
       fullWidth: i
     })
   })
@@ -289,7 +289,7 @@ function J(e) {
         section: L.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
       },
       textOptions: {
-        subscribeText: j.intl.string(j.t.JST6jo)
+        subscribeText: k.intl.string(k.t.JST6jo)
       },
       subscriptionTier: M.Si.TIER_2,
       showGradient: true,
@@ -317,7 +317,7 @@ function $(e) {
     }), (0, r.jsx)(u.Avr, {
       variant: "secondary",
       onClick: o,
-      text: j.intl.string(j.t["13/7kZ"])
+      text: k.intl.string(k.t["13/7kZ"])
     }), a ? (0, r.jsx)(Q, {
       disabled: !n,
       onApply: t
@@ -331,7 +331,7 @@ function $(e) {
         section: L.jXE.CUSTOM_THEMES_FOOTER
       },
       textOptions: {
-        textOverride: j.intl.string(j.t.pj0XBA)
+        textOverride: k.intl.string(k.t.pj0XBA)
       }
     })]
   })
@@ -352,7 +352,7 @@ function ee(e) {
     gradientAngle: C,
     setColors: L,
     setChassisMixAmount: M,
-    setGradientAngle: k
+    setGradientAngle: j
   } = (0, A.Ig)(), [G, B] = i.useState(null != (t = T[0]) ? t : A.Dp), Z = (0, s.e7)([I.Z], () => I.Z.theme), F = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: V
   } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), H = async () => {
@@ -396,7 +396,7 @@ function ee(e) {
             setColors: L
           }), T.length > 1 && (0, r.jsx)(z, {
             gradientAngle: C,
-            setGradientAngle: k
+            setGradientAngle: j
           }), (0, r.jsx)(q, {
             chassisMixAmount: S,
             setChassisMixAmount: e => {
@@ -406,7 +406,7 @@ function ee(e) {
             variant: "secondary",
             onClick: Y,
             icon: f.Oe7,
-            text: j.intl.string(j.t.yBZMsb),
+            text: k.intl.string(k.t.yBZMsb),
             fullWidth: true
           })]
         })

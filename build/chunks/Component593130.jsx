@@ -65,7 +65,7 @@ function Z(e) {
           size: "md",
           color: "currentColor",
           className: b.threadIcon
-        }), (0, r.jsx)(c.X6q, {
+        }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/semibold",
           className: b.title,
           children: p.intl.string(p.t.E3H5lJ)

@@ -1,4 +1,4 @@
-/** Chunk was on 51727 **/
+/** Chunk was on 32118 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => G
@@ -42,7 +42,7 @@ function D(e) {
     item: c
   } = e, u = null == (t = c.message) ? true : t.content;
   if (null == u) return (0, r.jsx)("div", {});
-  let d = null != (a = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? a : new m.Z(null == (l = c.message) ? true : l.author),
+  let d = null != (a = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? a : new m.default(null == (l = c.message) ? true : l.author),
     h = p.Z.parse(u);
   return (0, r.jsxs)("div", {
     className: T.messagePreviewContainer,

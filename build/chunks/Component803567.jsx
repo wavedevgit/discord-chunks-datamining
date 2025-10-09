@@ -85,7 +85,7 @@ function T() {
         height: 40
       },
       align: Chunk600164.Z.Align.CENTER,
-      body: (0, Chunk951288.jsx)(Chunk481060.eee, {
+      body: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
         href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
         onClick: I,
         children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)

@@ -82,7 +82,7 @@ function d(t) {
             children: d[n]
           })]
         })]
-      }), (0, a.jsx)(i.X6q, {
+      }), (0, a.jsx)(i.Heading, {
         color: "header-primary",
         variant: "heading-md/semibold",
         className: l.title,
@@ -186,7 +186,7 @@ function u(t) {
         size: "md",
         color: "currentColor",
         className: l.forumPostIcon
-      }), (0, a.jsx)(i.X6q, {
+      }), (0, a.jsx)(i.Heading, {
         color: "header-primary",
         variant: "heading-lg/semibold",
         className: l.header,

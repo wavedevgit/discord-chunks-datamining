@@ -124,10 +124,10 @@ function ea(e) {
       canAnimate: false,
       size: 1024
     }),
-    ek = (0, f.p)({
+    eB = (0, f.p)({
       location: "UserProfileModalV2"
     }),
-    eB = i.useMemo(() => null != ej ? ej : (0, h.Z)(), [ej]),
+    ek = i.useMemo(() => null != ej ? ej : (0, h.Z)(), [ej]),
     eF = (0, et.Z)({
       user: t,
       currentUser: ea
@@ -139,7 +139,7 @@ function ea(e) {
     ez = (0, C.Z)(t.id),
     eW = (0, S.Z)(t.id),
     eK = (0, m.Dt)(),
-    eY = eo.intl.format(eo.t.KRe1Fh, {
+    eH = eo.intl.format(eo.t.KRe1Fh, {
       name: eD
     });
   return i.useEffect(() => {
@@ -173,17 +173,17 @@ function ea(e) {
             intensity: 1.4,
             children: [eI ? (0, l.jsxs)("div", {
               className: es.previewBar,
-              children: [(0, l.jsxs)(s.X6q, {
+              children: [(0, l.jsxs)(s.Heading, {
                 id: eK,
                 variant: "heading-sm/normal",
                 color: "text-primary",
                 children: [(0, l.jsx)(s.nn4, {
-                  children: "".concat(eo.intl.string(eo.t.apViam), ": ").concat(eY)
+                  children: "".concat(eo.intl.string(eo.t.apViam), ": ").concat(eH)
                 }), (0, l.jsx)("span", {
                   "aria-hidden": true,
                   children: eo.intl.string(eo.t.apViam)
                 })]
-              }), (0, l.jsx)(s.zxk, {
+              }), (0, l.jsx)(s.Button, {
                 size: "sm",
                 variant: "secondary",
                 text: eo.intl.string(eo.t.ojM1xM),
@@ -193,7 +193,7 @@ function ea(e) {
             }) : (0, l.jsx)(s.nn4, {
               children: (0, l.jsx)(s.H, {
                 id: eK,
-                children: eY
+                children: eH
               })
             }), (0, l.jsx)(s.y5t, {
               children: (0, l.jsxs)(z.Z, {
@@ -237,7 +237,7 @@ function ea(e) {
                       channelId: ed,
                       themeType: er.l.MODAL_V2,
                       hasEntered: ex === s.Dvm.ENTERED,
-                      prompt: ek && t.id === ea.id ? eB : null,
+                      prompt: eB && t.id === ea.id ? ek : null,
                       disableToolbar: eI
                     })]
                   }), (0, l.jsxs)(s.Ttm, {
@@ -261,7 +261,7 @@ function ea(e) {
                       })
                     }), eR === ei.OGo.PENDING_INCOMING && (0, l.jsx)(z.Z.Overlay, {
                       className: es.profileOverlay,
-                      children: (0, l.jsx)(B.Z, {
+                      children: (0, l.jsx)(k.Z, {
                         user: t,
                         applicationId: eL,
                         guildId: null != (n = null == ew ? true : ew.guildId) ? n : true,
@@ -275,7 +275,7 @@ function ea(e) {
                       } = e;
                       return (0, l.jsx)(z.Z.Overlay, {
                         className: es.profileOverlay,
-                        children: (0, l.jsx)(B.Z, {
+                        children: (0, l.jsx)(k.Z, {
                           user: t,
                           guildId: null != (n = null == ew ? true : ew.guildId) ? n : true,
                           channelId: ed,
@@ -321,7 +321,7 @@ function ea(e) {
                       setLineClamp: false
                     }), eV.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: eo.intl.string(eo.t["Uv/eT0"]),
-                      children: (0, l.jsx)(k.Z, {
+                      children: (0, l.jsx)(B.Z, {
                         applicationIds: eV
                       })
                     }), (0, l.jsx)(Q.Z, {
@@ -331,7 +331,7 @@ function ea(e) {
                         guildId: null == ew ? true : ew.guildId,
                         tooltipDelay: el.vB
                       })
-                    }), (null == ew ? true : ew.guildId) != null && (0, l.jsx)(Y.Z, {
+                    }), (null == ew ? true : ew.guildId) != null && (0, l.jsx)(H.Z, {
                       user: t,
                       currentUser: ea,
                       guildId: ew.guildId,
@@ -350,7 +350,7 @@ function ea(e) {
                     }), eW.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: eo.intl.string(eo.t.PHjkRE),
                       scrollIntoView: eh === el.Tb.APPS,
-                      children: (0, l.jsx)(H.Z, {
+                      children: (0, l.jsx)(Y.Z, {
                         applicationRoleConnections: eW,
                         onClose: eg,
                         className: es.profileAppConnections

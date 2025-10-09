@@ -115,7 +115,7 @@ function ei() {
       let {
         row: o
       } = e, s = n[o], c = null == (i = n[o + 1]) || null == (t = i.channel) ? true : t.id, u = s.channel.id;
-      return (0, r.jsx)(q.Z, {
+      return (0, r.jsx)(Y.Z, {
         index: o,
         className: a()({
           [ee.selected]: null != h && h === u,
@@ -265,7 +265,7 @@ function eo(e) {
   let {
     section: t
   } = e;
-  return t === K.pS.SPAM ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(ei, {})
+  return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
 }
 let es = (0, Chunk112724.Z)(function(e) {
   let {

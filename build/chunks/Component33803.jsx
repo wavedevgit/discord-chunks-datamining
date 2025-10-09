@@ -107,7 +107,7 @@ function q(e, t) {
     popouts: n,
     selected: r,
     setPopout: a
-  } = (0, x.Z)(e.id, j.d$), {
+  } = (0, x.Z)(e.id, k.d$), {
     usernameProfile: o,
     avatarProfile: s
   } = n, l = (0, L.wq)(e.author.id, t.id), c = (0, L.RN)(e.author.id, t.id, e.id), u = (0, L.XO)(e, t, o, a);
@@ -318,7 +318,7 @@ function ei(e) {
   } = A, R = K(A, ["onFocus"]), {
     isFocused: D,
     handleFocus: x,
-    handleBlur: j
+    handleBlur: k
   } = (0, L.bb)(N), V = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: z,
     embedChannel: X,
@@ -349,11 +349,11 @@ function ei(e) {
     }), (0, O.Kh)(e))
   }, [s, X]), ey = i.useCallback(() => {
     (0, b.Xx)(s.id, l, m.d.DELETE_USER_MESSAGE)
-  }, [l, s.id]), eO = (0, B.L9)(Number(eo)), ev = null != es, eI = Y && null != ea && (null == el || !el.actions.hasOwnProperty(m.d.DELETE_USER_MESSAGE)), eT = s.embeds.length > 0 ? null == (t = s.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eS = null != eT;
+  }, [l, s.id]), eO = (0, B.getFriendlyDurationString)(Number(eo)), ev = null != es, eI = Y && null != ea && (null == el || !el.actions.hasOwnProperty(m.d.DELETE_USER_MESSAGE)), eT = s.embeds.length > 0 ? null == (t = s.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eS = null != eT;
   return (0, r.jsx)("div", {
     onMouseEnter: T,
     onMouseLeave: S,
-    children: (0, r.jsx)(k.Z, {
+    children: (0, r.jsx)(j.Z, {
       className: o()(F.mainContainer, {
         [F.compact]: a
       }),
@@ -467,7 +467,7 @@ function ei(e) {
             popoutProps: ep,
             zalgo: true,
             onFocus: x,
-            onBlur: j,
+            onBlur: k,
             onClick: eE
           }))
         }), (0, r.jsx)(Q, {

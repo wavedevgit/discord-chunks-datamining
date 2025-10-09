@@ -55,7 +55,7 @@ function V(e) {
   if (y.Ec.has(n.type)) return (0, i.jsx)(R.Z, {
     channel: n
   });
-  if (a) return (0, i.jsx)(k.Z, {
+  if (a) return (0, i.jsx)(L.Z, {
     channel: n
   });
   if (r) return (0, i.jsx)(A.Z, {
@@ -77,28 +77,28 @@ function F(e) {
     canManageRoles: M,
     canReadMessageHistory: R
   } = (0, l.cj)([x.Z], () => ({
-    canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), k = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
+    canManageRoles: x.Z.can(D.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: x.Z.can(D.Plq.READ_MESSAGE_HISTORY, p)
+  })), L = (0, l.e7)([b.Z], () => v === D.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
     systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
-  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : L.lds), {
+  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : D.lds), {
     authorizedAppToken: z,
     authorizedAppsFetchState: W
   } = (0, l.cj)([_.Z], () => ({
     authorizedAppToken: _.Z.getNewestTokenForApplication(null == G ? true : G.id),
     authorizedAppsFetchState: _.Z.getFetchState()
-  })), q = c.Z.useExperiment({
+  })), Y = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
-      v === L.d4z.DM && null == k && null != P && o.Z.wait(() => (0, C.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
+      v === D.d4z.DM && null == L && null != P && o.Z.wait(() => (0, C.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [k, v, p, P]), r.useEffect(() => {
+    }, [L, v, p, P]), r.useEffect(() => {
       (null == P ? true : P.bot) && W === _.M.NOT_FETCHED && s.Z.fetch()
     }, [null == P ? true : P.bot, W]), p.isSystemDM()) return F ? (0, i.jsx)(w.Z, {
     channel: p
@@ -106,7 +106,7 @@ function F(e) {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
-  if (v === L.d4z.DM) {
+  if (v === D.d4z.DM) {
     let e;
     return null != P && null != G ? null != z && (e = (0, i.jsxs)("div", {
       className: B.buttonContainer,
@@ -120,7 +120,7 @@ function F(e) {
         application: G,
         channel: p,
         oauth2Token: z
-      }), q && (0, i.jsx)(f.Z, {
+      }), Y && (0, i.jsx)(f.Z, {
         channel: p
       })]
     })) : e = (0, i.jsx)(E.Z, {
@@ -130,7 +130,7 @@ function F(e) {
     }), (0, i.jsxs)(N.Z, {
       channel: p,
       user: P,
-      children: [null != P && !P.isProvisional && (0, i.jsx)(a.X6q, {
+      children: [null != P && !P.isProvisional && (0, i.jsx)(a.Heading, {
         variant: "heading-xl/medium",
         className: H.marginBottom20,
         children: A
@@ -152,7 +152,7 @@ function F(e) {
         children: U.intl.string(U.t.M8Ao6O)
       })]
     });
-    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
+    else if (p.hasFlag(k.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
     channel: p
   });
   else return (0, i.jsx)(N.Z, {

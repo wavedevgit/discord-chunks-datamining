@@ -20,7 +20,7 @@ function o(e) {
     children: [(0, a.jsxs)(s.xBx, {
       separator: false,
       className: l.header,
-      children: [(0, a.jsx)(s.X6q, {
+      children: [(0, a.jsx)(s.Heading, {
         variant: "heading-xl/extrabold",
         children: i.intl.string(i.t.hhR7gY)
       }), (0, a.jsx)(s.olH, {
@@ -42,13 +42,13 @@ function o(e) {
       })]
     }), (0, a.jsx)(s.mzw, {
       className: l.modalFooter,
-      children: (0, a.jsxs)(s.hE2, {
+      children: (0, a.jsxs)(s.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, a.jsx)(s.zxk, {
+        children: [(0, a.jsx)(s.Button, {
           variant: "primary",
           text: i.intl.string(i.t["ETE/oK"]),
           onClick: n
-        }), (0, a.jsx)(s.zxk, {
+        }), (0, a.jsx)(s.Button, {
           variant: "secondary",
           text: i.intl.string(i.t.rwTBFh),
           onClick: t

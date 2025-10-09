@@ -18,7 +18,7 @@ async function v(e, n) {
   let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     i = [];
   i.push(...t);
-  let l = await a.Z.createChannel({
+  let l = await r.Z.createChannel({
     guildId: e.id,
     type: h.d4z.GUILD_STAGE_VOICE,
     name: n.substring(0, 100),
@@ -39,8 +39,8 @@ async function g(e, n) {
         channel_id: i
       } = e, l = o.Z.getGuild(t);
       if (null == l) return Promise.resolve(null);
-      let a = c.Z.getChannel(i);
-      return null == a ? v(l, e.name, n) : Promise.resolve(a)
+      let r = c.Z.getChannel(i);
+      return null == r ? v(l, e.name, n) : Promise.resolve(r)
     }(e, n);
     l()(null != t, "could not find or create channel")
   }
@@ -50,13 +50,13 @@ async function m(e) {
     {
       channel_id: t,
       entity_type: i,
-      name: a,
+      name: r,
       id: s,
       guild_id: c
     } = e;
   switch (i) {
     case d.WX.STAGE_INSTANCE:
-      l()(null != t, "channel_id is required"), await (0, r.me)(t, a, d.j8.GUILD_ONLY, n, s);
+      l()(null != t, "channel_id is required"), await (0, a.me)(t, r, d.j8.GUILD_ONLY, n, s);
       break;
     case d.WX.VOICE:
       l()(null != t, "channel_id is required"), await u.Z.startEvent(s, c);

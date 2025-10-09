@@ -233,7 +233,7 @@ class el extends Chunk647438.Component {
     }, i))
   }
   renderRefreshButton() {
-    return !this.state.didSave || this.isDirty() ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    return !this.state.didSave || this.isDirty() ? null : (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "secondary",
       text: "Reload App",
       onClick: () => location.reload()
@@ -260,12 +260,12 @@ class el extends Chunk647438.Component {
       buildOverrides: t
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "critical-primary",
         text: "Discard Changes",
         onClick: this.handleDiscardChanges,
         disabled: module
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Save Build Overrides",
         disabled: eo(null != exports ? exports : {}),
@@ -306,7 +306,7 @@ class el extends Chunk647438.Component {
             })),
             onChange: this.handleAddBuildOverride,
             isDisabled: !Chunk120356
-          }), o, module, (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+          }), o, module, (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
             justify: "end",
             children: [this.renderRefreshButton(), this.renderLinkButton(), this.renderSaveButton()]
           })]
@@ -941,11 +941,11 @@ function eh() {
       className: [Chunk674336.buttonsContainer, Chunk197571.marginBottom20].join(" "),
       children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY,
-        children: l ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: l ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Open Overlay",
           onClick: () => (0, Chunk398269.f)(exports)
-        }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Open Overlay",
           onClick: () => window.open(o, "_blank"),
@@ -953,7 +953,7 @@ function eh() {
         })
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_RESET_SOCKET,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Reset Socket",
           onClick: () => {
@@ -962,7 +962,7 @@ function eh() {
         })
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_CLEAR_CACHES,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Clear Caches",
           onClick: () => {
@@ -976,7 +976,7 @@ function eh() {
         })
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.DEVELOPER_OPTIONS_SHOW_TOTP_SUCCESS,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Show TOTP Success",
           onClick: () => (0, Chunk202858.Yn)(true)
@@ -1026,11 +1026,11 @@ function eh() {
               label: "Exception in main process"
             }],
             onChange: e => null != e ? ep(e) : true
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "React Crash",
             onClick: () => Chunk120356(true)
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "onClick Throw",
             onClick: e_
@@ -1062,7 +1062,7 @@ function em() {
             fullWidth: true,
             value: exports,
             onChange: require
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Save Override",
             type: "submit"
@@ -1098,7 +1098,7 @@ function eg() {
           fullWidth: true,
           value: require,
           onChange: Chunk120356
-        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Update Changelog",
           onClick: o,
@@ -1107,7 +1107,7 @@ function eg() {
       }), (0, Chunk951288.jsx)(Chunk793030.gNt, {
         label: "Reset Changelog",
         description: "This will reset the changelog, so it will show again on the next startup.",
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Reset Changelog",
           onClick: Chunk392711

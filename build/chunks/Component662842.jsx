@@ -57,8 +57,8 @@ function D(e) {
   }, [F]);
   let {
     noticeType: W,
-    title: q,
-    location: Y,
+    title: Y,
+    location: q,
     locationIcon: K,
     canListenIn: Q,
     buttonText: X,
@@ -290,19 +290,19 @@ function D(e) {
       variant: "text-md/medium",
       color: "header-primary",
       className: a()(R.title, R.live),
-      children: q
+      children: Y
     }), (0, r.jsxs)("div", {
       className: R.locationContainer,
       children: [K, (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: R.location,
-        children: Y
+        children: q
       })]
     }), Q || 1 === W ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: R.button,
-      children: (0, r.jsx)(c.zxk, {
+      children: (0, r.jsx)(c.Button, {
         variant: "active",
         size: "sm",
         text: X,

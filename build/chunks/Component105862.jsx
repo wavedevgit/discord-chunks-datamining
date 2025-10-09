@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 /** chunk id: 105862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,11 +18,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk983008 = require("./983008.js"),
   Chunk478408 = require("./478408.js");
 
-function x(e) {
+function y(e) {
   let {
     showImage: t = true,
     padding: n = false
-  } = e, x = (0, o.ZP)(), y = (0, r.ap)(x) ? v : h, g = i.useCallback(() => {
+  } = e, y = (0, o.ZP)(), x = (0, r.ap)(y) ? v : h, g = l.useCallback(() => {
     (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
     trackSectionImpressionRef: b
@@ -31,30 +31,30 @@ function x(e) {
     numItems: 1,
     numVisibleItems: 1
   });
-  return (0, l.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: n ? f.containerPadding : true,
-    children: (0, l.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       ref: e => {
         b.current = e
       },
       className: f.container,
-      children: [t && (0, l.jsx)("img", {
+      children: [t && (0, i.jsx)("img", {
         className: f.image,
-        src: y,
+        src: x,
         alt: "",
         "aria-hidden": true
-      }), (0, l.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: f.body,
-        children: [(0, l.jsx)(a.X6q, {
+        children: [(0, i.jsx)(a.Heading, {
           variant: "heading-lg/bold",
           color: "header-primary",
           children: m.intl.string(m.t["kw8/ER"])
-        }), (0, l.jsx)(a.Text, {
+        }), (0, i.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-default",
           children: m.intl.string(m.t.GZoV1N)
         })]
-      }), (0, l.jsx)(a.zxk, {
+      }), (0, i.jsx)(a.Button, {
         variant: "primary",
         text: m.intl.string(m.t.Ye51oa),
         "aria-label": m.intl.formatToPlainString(m.t.xx5Sur, {

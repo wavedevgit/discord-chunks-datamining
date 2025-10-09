@@ -16,7 +16,7 @@ let d = e => {
       children: i,
       className: s
     } = e,
-    c = function(e, r) {
+    a = function(e, r) {
       if (null == e) return {};
       var t, n, o = function(e, r) {
         if (null == e) return {};
@@ -51,7 +51,7 @@ let d = e => {
   }({
     "data-migration-pending": true,
     className: s
-  }, c), t = t = {
+  }, a), t = t = {
     parentComponent: "FamilyCenterCommonModal",
     children: i
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
@@ -77,22 +77,22 @@ d.ButtonFooter = e => {
   let {
     icon: r,
     currentUser: t,
-    otherUser: c,
-    header: a
+    otherUser: a,
+    header: c
   } = e;
   return (0, n.jsxs)("div", {
     className: l.header,
     children: [(0, n.jsx)(i.Z, {
       currentUser: t,
-      otherUser: c,
+      otherUser: a,
       children: r
     }), (0, n.jsxs)("div", {
       className: l.heading,
-      children: [(0, n.jsx)(o.X6q, {
+      children: [(0, n.jsx)(o.Heading, {
         variant: "text-lg/bold",
-        children: a
+        children: c
       }), (0, n.jsx)(s.Z, {
-        user: c
+        user: a
       })]
     })]
   })
@@ -113,7 +113,7 @@ d.ButtonFooter = e => {
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
       color: "header-primary",
-      children: a.intl.string(c.default.cXgKMD)
+      children: c.intl.string(a.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",

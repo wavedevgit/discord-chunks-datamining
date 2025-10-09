@@ -115,7 +115,7 @@ let m = [{
           children: p.intl.string(p.t["9JbE3N"])
         }), (0, r.jsxs)("div", {
           className: h.tierCardHeader,
-          children: [(0, r.jsx)(s.X6q, {
+          children: [(0, r.jsx)(s.Heading, {
             className: h.tierCardHeading,
             variant: "heading-xxl/semibold",
             color: "always-white",

@@ -24,7 +24,7 @@ function _() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS,
       children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "critical-secondary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["4iKQ//"]),

@@ -29,7 +29,7 @@ function v(e) {
   if (i.useEffect(() => {
       null == Z && null != E && (0, s.PR)(E)
     }, [Z, E]), !(0, d.a)(e)) return null;
-  null == A && (A = new b.Z(null == (j = e.interactionMetadata) ? true : j.user));
+  null == A && (A = new b.default(null == (j = e.interactionMetadata) ? true : j.user));
   let N = null;
   return null != T ? N = (0, r.jsx)(o.sNh, {
     className: h.interactionInfoMenuItem,

@@ -62,7 +62,7 @@ let m = e => {
       src: n(64395)
     }), (0, r.jsxs)("div", {
       className: p.content,
-      children: [(0, r.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         id: E,
         children: v
@@ -72,7 +72,7 @@ let m = e => {
         children: I
       }), (0, r.jsxs)("div", {
         className: p.buttonContainer,
-        children: [(0, r.jsx)(s.zxk, {
+        children: [(0, r.jsx)(s.Button, {
           variant: "primary",
           text: _.intl.string(_.t["9VLmlZ"]),
           buttonRef: g,

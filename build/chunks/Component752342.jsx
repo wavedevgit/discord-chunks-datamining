@@ -45,12 +45,12 @@ function C(e) {
     initialSection: L,
     initialSubsection: M,
     transitionState: U,
-    openedAt: k,
-    onClose: B,
+    openedAt: B,
+    onClose: k,
     sourceAnalyticsLocations: F = []
   } = e, V = C === T.ME ? true : C, G = (0, u.ZP)(n.id, V), z = c.ZP.getName(V, _, n), W = (0, a.Dt)(), {
     analyticsLocations: K
-  } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), Y = (0, d.ZB)({
+  } = (0, s.ZP)([...F, o.Z.USER_PROFILE_MODAL]), H = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: R,
@@ -58,12 +58,12 @@ function C(e) {
     channelId: _,
     messageId: w,
     roleId: D
-  }), H = (0, N.Z)(n);
+  }), Y = (0, N.Z)(n);
   return (0, l.jsx)(s.Gt, {
     value: K,
     children: (0, l.jsx)(d.Mt, {
-      value: Y,
-      openedAt: k,
+      value: H,
+      openedAt: B,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,
@@ -91,7 +91,7 @@ function C(e) {
               children: (0, l.jsx)(g.Z, {
                 user: n,
                 guildId: V,
-                onCloseProfile: B
+                onCloseProfile: k
               })
             }), (0, l.jsxs)("div", {
               children: [(0, l.jsx)(f.Z, {
@@ -110,7 +110,7 @@ function C(e) {
                   user: n,
                   themeType: A.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
-                  onCloseProfile: B,
+                  onCloseProfile: k,
                   disableToolbar: true
                 }), (0, l.jsxs)("div", {
                   className: S.headerButtons,
@@ -148,17 +148,17 @@ function C(e) {
                 tags: (0, l.jsx)(p.Z, {
                   displayProfile: G,
                   themeType: A.l.MODAL,
-                  onClose: B
+                  onClose: k
                 })
               }), (0, l.jsx)(O.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: G,
                 guildId: V,
-                items: H,
+                items: Y,
                 initialSection: null != L ? L : P.oh.BOT_INFO,
                 initialSubsection: M,
-                onClose: B
+                onClose: k
               })]
             })]
           })

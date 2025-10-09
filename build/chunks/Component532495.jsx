@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,14 +70,14 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function U() {
-  var e, t, n, i, x, k, U, G;
+  var e, t, n, i, x, j, U, G;
   let B = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
@@ -97,7 +97,7 @@ function U() {
     } = (0, Chunk442837.cj)([Chunk25990.Z], () => {
       let e = Chunk25990.Z.getAllPending(),
         t = Chunk25990.Z.getErrors();
-      return j(M({}, module), {
+      return k(M({}, module), {
         errors: exports
       })
     }),
@@ -112,7 +112,7 @@ function U() {
     er = (0, Chunk687158.ZP)(B.id),
     ei = null == er ? true : er.getLegacyUsername(),
     ea = (null != (n = null == (e = Q.global_name) ? true : module.length) ? require : 0) > 0 ? Q.global_name : null != (i = null == $ ? true : $.nick) ? Chunk512722 : [],
-    eo = (null != (x = null == (t = Q.bio) ? true : exports.length) ? x : 0) > 0 ? Q.bio : null != (k = null == $ ? true : $.bio) ? k : [],
+    eo = (null != (x = null == (t = Q.bio) ? true : exports.length) ? x : 0) > 0 ? Q.bio : null != (j = null == $ ? true : $.bio) ? j : [],
     es = (0, Chunk396402.w)(),
     el = (0, Chunk477448.Z)({
       location: "DefaultCustomizationSections"

@@ -29,7 +29,7 @@ let b = () => {
       } = (0, Chunk841409.Z)();
     return (0, Chunk631885.VM)() || exports && module ? null : (0, Chunk951288.jsx)("div", {
       className: Chunk26919.button,
-      children: exports ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      children: exports ? (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.LhlgY2),
         onClick: () => require(Chunk292352.dG.REQUESTS)
@@ -50,7 +50,7 @@ let b = () => {
         children: [(0, Chunk951288.jsx)("div", {
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk26919.headerText,
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-xl/medium",
               children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
                 children: exports

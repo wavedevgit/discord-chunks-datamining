@@ -107,7 +107,7 @@ function f(t) {
         id: N
       })]
     }), y && (0, a.jsx)(i.Go$, {
-      leading: (0, a.jsx)(o.zxk, {
+      leading: (0, a.jsx)(o.Button, {
         variant: "secondary",
         text: x.intl.string(x.t.hvVgAQ),
         icon: o.Gr1,

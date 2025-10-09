@@ -2,7 +2,7 @@
 /** chunk id: 806742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,13 +19,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk535907 = require("./535907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-let b = function(e) {
+let x = function(e) {
   let {
     guildId: t
   } = e, l = (0, s.cj)([p.Z], () => {
     var e;
     return null != (e = p.Z.getSettings().welcomeMessage) ? e : f.z
-  }), b = i.useCallback(() => (0, c.ZDy)(async () => {
+  }), x = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("36371").then(n.bind(n, 893626));
@@ -64,14 +64,14 @@ let b = function(e) {
       }), i))
     }
   }), [t, l]), j = (0, s.e7)([g.default], () => g.default.getId());
-  return (0, d.pw)(l) ? (0, r.jsx)(c.zxk, {
+  return (0, d.pw)(l) ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
     text: h.intl.string(h.t["9Z+aEB"]),
-    onClick: b
+    onClick: x
   }) : (0, r.jsxs)(c.P3F, {
-    className: x.editWelcomeSection,
-    onClick: b,
+    className: b.editWelcomeSection,
+    onClick: x,
     children: [(0, r.jsx)(u.Z, {
       guildId: t,
       welcomeMessage: {
@@ -81,7 +81,7 @@ let b = function(e) {
     }), (0, r.jsx)(o.u, {
       text: h.intl.string(h.t.bt75u7),
       children: (0, r.jsxs)("div", {
-        className: a()(x.actionItemEditButton, x.editWelcomeButton),
+        className: a()(b.actionItemEditButton, b.editWelcomeButton),
         children: [(0, r.jsx)(c.vdY, {
           size: "md",
           color: "currentColor"

@@ -25,12 +25,12 @@ let s = (0, Chunk818083.B)({
 function r(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     {
-      enabled: l
+      enabled: a
     } = s.useExperiment({
       guildId: e,
       location: t
     }, {
       autoTrackExposure: n
     });
-  return l
+  return a
 }

@@ -35,11 +35,11 @@ let v = function(e) {
   } = e, w = (0, s.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(O)), {
     customEmoji: R,
     unicodeEmoji: D
-  } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = x.ZP.getNewMemberActionIconURL({
+  } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = b.ZP.getNewMemberActionIconURL({
     channelId: y.channelId,
     icon: y.icon
   }), k = null;
-  null != w && (0, m.kb)(w) ? A || (k = b.intl.string(b.t.wAkIZW)) : k = b.intl.string(b.t.CbTEKC);
+  null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKC);
   let {
     drag: G,
     dragSourcePosition: M,
@@ -143,18 +143,18 @@ let v = function(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: b.intl.format(b.t.Ngk8Nj, {
+          children: x.intl.format(x.t.Ngk8Nj, {
             channelName: w.name
           })
         })]
       }), (0, r.jsx)(o.u, {
-        text: b.intl.string(b.t.bt75u7),
+        text: x.intl.string(x.t.bt75u7),
         children: (0, r.jsx)(c.hU, {
           icon: c.vdY,
           size: "sm",
           variant: "primary",
           onClick: F,
-          "aria-label": b.intl.string(b.t.bt75u7)
+          "aria-label": x.intl.string(x.t.bt75u7)
         })
       })]
     }), null != k && (0, r.jsx)(c.Text, {

@@ -1,8 +1,8 @@
 /** Chunk was on 95468 **/
 /** chunk id: 650233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => g,
-  default: () => p
+  H: () => p,
+  default: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,16 +16,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk759137 = require("./759137.js");
 
-function p(e) {
+function f(e) {
   let {
     transitionState: t,
     onClose: n,
-    isNUXFlow: p
+    isNUXFlow: f
   } = e;
   return l.useEffect(() => {
-    o.Z.hideHubUpsell(), p && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
-  }, [p]), (0, r.jsx)(a.Y0X, {
-    className: f.modalRoot,
+    o.Z.hideHubUpsell(), f && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
+  }, [f]), (0, r.jsx)(a.Y0X, {
+    className: g.modalRoot,
     transitionState: t,
     "aria-label": m.intl.string(m.t["3khS8P"]),
     impression: {
@@ -38,19 +38,19 @@ function p(e) {
         paddingRight: "0px"
       },
       paddingFix: false,
-      className: f.modalContent,
+      className: g.modalContent,
       children: (0, r.jsxs)("div", {
-        className: f.container,
+        className: g.container,
         children: [(0, r.jsx)("div", {
-          className: f.sidebarContainer,
+          className: g.sidebarContainer,
           children: (0, r.jsx)(d.Z, {})
         }), (0, r.jsxs)("div", {
-          className: f.contentContainer,
+          className: g.contentContainer,
           children: [(0, r.jsx)(a.olH, {
             onClick: n,
-            className: f.closeButton
+            className: g.closeButton
           }), (0, r.jsx)(c.Z, {
-            isNUXFlow: p,
+            isNUXFlow: f,
             onClose: n
           })]
         })]
@@ -58,17 +58,17 @@ function p(e) {
     })
   })
 }
-let g = e => {
+let p = e => {
   let {
     invite: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: g.container,
     children: [(0, r.jsx)("div", {
-      className: f.sidebarContainer,
+      className: g.sidebarContainer,
       children: (0, r.jsx)(d.Z, {})
     }), (0, r.jsx)("div", {
-      className: f.contentContainer,
+      className: g.contentContainer,
       children: (0, r.jsx)(c.Z, {
         invite: t
       })

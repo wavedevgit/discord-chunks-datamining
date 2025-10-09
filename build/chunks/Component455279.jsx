@@ -86,7 +86,7 @@ class b extends Chunk647438.PureComponent {
             })
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk151028.buttonContainer,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
               text: module,

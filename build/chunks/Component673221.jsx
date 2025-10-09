@@ -127,8 +127,8 @@ function w(e) {
     placeholder: w = y.intl.string(b.default["A+pfVV"]),
     label: x,
     name: M,
-    form: k,
-    autoComplete: j,
+    form: j,
+    autoComplete: k,
     maxOptionsVisible: U = 5,
     options: G,
     formatOption: B,
@@ -287,9 +287,9 @@ function w(e) {
       })
     })), (0, r.jsx)(p.M, {
       name: M,
-      form: k,
+      form: j,
       disabled: ea,
-      autoComplete: j,
+      autoComplete: k,
       selectionMode: t,
       selectedItems: ef,
       onSelectionChange: ep,

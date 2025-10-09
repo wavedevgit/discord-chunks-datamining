@@ -329,7 +329,7 @@ class Y extends Chunk647438.PureComponent {
             className: Chunk894462.ctaContainer,
             children: [this.renderKeybindWarning(), (0, Chunk951288.jsx)("div", {
               className: Chunk894462.addButton,
-              children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+              children: (0, Chunk951288.jsx)(Chunk481060.Button, {
                 size: "md",
                 onClick: this.handleAddKeybind,
                 text: Chunk388032.intl.string(Chunk388032.t.zk6Xbm),

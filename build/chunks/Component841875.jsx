@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk990705 = require("./990705.js"),
   Chunk335818 = require("./335818.js"),
   Chunk255835 = require("./255835.js"),
@@ -29,7 +29,7 @@ function S() {
     onToggleOrbEligible: e,
     orbEligible: t,
     reset: n,
-    hasFilters: s
+    hasFilters: i
   } = (0, Chunk501431.S)(), a = Chunk120356(), {
     enabled: o
   } = (0, Chunk825102.WX)({
@@ -48,26 +48,26 @@ function S() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk587635.filterBar,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: i()(Chunk587635.filterSection, Chunk587635.itemType),
+      className: s()(Chunk587635.filterSection, Chunk587635.itemType),
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/semibold",
         className: Chunk587635.filterTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Qk6r1d)
-      }), Chunk215023.xg.map(e => (0, r.jsx)(x, {
+      }), Chunk215023.xg.map(e => (0, r.jsx)(O, {
         filter: e,
         trackFilterAction: u
-      }, e)), Chunk335818 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+      }, e)), Chunk335818 && (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
         checked: exports,
         onChange: () => {
           Chunk28664("filter orb eligible ".concat(false === exports ? "on" : "off")), module()
         },
         label: Chunk388032.intl.string(Chunk388032.t.AHHHgI)
       })]
-    }), (0, Chunk951288.jsx)(O, {
+    }), (0, Chunk951288.jsx)(x, {
       trackFilterAction: Chunk28664
-    }), (0, Chunk951288.jsx)(k, {
+    }), (0, Chunk951288.jsx)(T, {
       trackFilterAction: Chunk28664
-    }), Chunk990705 && (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), Chunk990705 && (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "secondary",
       onClick: () => {
         Chunk28664("filter reset"), require()
@@ -77,31 +77,31 @@ function S() {
     })]
   })
 }
-let x = e => {
+let O = e => {
     var t;
     let {
       filter: n,
       trackFilterAction: l
-    } = e, s = {
+    } = e, i = {
       [o.G.AVATAR_DECORATION]: E.intl.string(E.t.dRZYND),
       [o.G.PROFILE_EFFECT]: E.intl.string(E.t["1cNjt7"]),
       [o.G.NAMEPLATE]: E.intl.string(E.t.V68Fq6),
       [o.G.BUNDLE]: E.intl.string(E.t.FYFppq)
     }, {
-      itemTypeFilters: i,
+      itemTypeFilters: s,
       onToggleItemType: a
     } = (0, h.S)();
-    return (0, r.jsx)(d.XZJ, {
-      checked: i.has(n),
+    return (0, r.jsx)(d.Checkbox, {
+      checked: s.has(n),
       onChange: () => {
         var e;
-        let t = (null == (e = s[n]) ? true : e.toLowerCase()) != null ? s[n].toLowerCase() : n;
-        l("filter item type ".concat(t, " ").concat(false === i.has(n) ? "on" : "off")), a(n)
+        let t = (null == (e = i[n]) ? true : e.toLowerCase()) != null ? i[n].toLowerCase() : n;
+        l("filter item type ".concat(t, " ").concat(false === s.has(n) ? "on" : "off")), a(n)
       },
-      label: null != (t = s[n]) ? t : ""
+      label: null != (t = i[n]) ? t : ""
     })
   },
-  O = e => {
+  x = e => {
     let {
       trackFilterAction: t
     } = e, n = l.useMemo(() => [{
@@ -124,7 +124,7 @@ let x = e => {
       color: "#F1C40F",
       label: E.intl.string(E.t["0fevY2"]),
       enum: a.x.YELLOW
-    }], []), s = l.useMemo(() => [{
+    }], []), i = l.useMemo(() => [{
       color: "#E67E22",
       label: E.intl.string(E.t.ZE7weH),
       enum: a.x.ORANGE
@@ -155,7 +155,7 @@ let x = e => {
         colors: n,
         trackFilterAction: t
       }), (0, r.jsx)(y, {
-        colors: s,
+        colors: i,
         trackFilterAction: t
       })]
     })
@@ -166,22 +166,22 @@ let x = e => {
       trackFilterAction: n
     } = e, {
       colorFilters: l,
-      onToggleColor: s
+      onToggleColor: i
     } = (0, h.S)();
     return (0, r.jsx)("div", {
       className: v.colorSwatchRow,
       children: t.map(e => {
         let {
           color: t,
-          label: i,
+          label: s,
           enum: a
         } = e;
         return (0, r.jsx)(j, {
           color: t,
-          label: i,
+          label: s,
           enum: a,
           isToggled: l.has(a),
-          onToggleColor: s,
+          onToggleColor: i,
           trackFilterAction: n
         }, a)
       })
@@ -192,7 +192,7 @@ let x = e => {
       color: t,
       label: n,
       enum: l,
-      isToggled: s,
+      isToggled: i,
       onToggleColor: a,
       trackFilterAction: o
     } = e;
@@ -200,17 +200,17 @@ let x = e => {
       text: n,
       asContainer: true,
       children: (0, r.jsx)(d.P3F, {
-        className: i()(v.circle, {
-          [v.circleToggled]: s
+        className: s()(v.circle, {
+          [v.circleToggled]: i
         }),
         style: {
           backgroundColor: t
         },
         "aria-label": n,
         onClick: () => {
-          o("filter color ".concat(n.toLowerCase(), " ").concat(s ? "off" : "on")), a(l)
+          o("filter color ".concat(n.toLowerCase(), " ").concat(i ? "off" : "on")), a(l)
         },
-        children: s && (0, r.jsx)("div", {
+        children: i && (0, r.jsx)("div", {
           className: v.checkIcon,
           children: (0, r.jsx)(d.sV5, {
             size: "xs",
@@ -220,12 +220,12 @@ let x = e => {
       }, t)
     }, n)
   },
-  k = e => {
+  T = e => {
     let {
       trackFilterAction: t
     } = e, {
       themeFilters: n,
-      onToggleTheme: s
+      onToggleTheme: i
     } = (0, h.S)(), a = (0, g.ZP)() === b.BR.DARK, o = l.useCallback(e => {
       if (n.has(e) || a) return "always-white"
     }, [n, a]), u = l.useCallback(e => n.has(e) || a ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_NORMAL, [n, a]), f = l.useMemo(() => [{
@@ -314,12 +314,12 @@ let x = e => {
             enum: c
           } = e;
           return (0, r.jsxs)(d.P3F, {
-            className: i()(v.theme, {
+            className: s()(v.theme, {
               [v.themeToggled]: n.has(c)
             }),
             onClick: () => {
               let e = n.has(c);
-              t("filter theme ".concat(l.toLowerCase(), " ").concat(e ? "off" : "on")), s(c)
+              t("filter theme ".concat(l.toLowerCase(), " ").concat(e ? "off" : "on")), i(c)
             },
             children: [a, (0, r.jsx)(d.Text, {
               color: o(c),

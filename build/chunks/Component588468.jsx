@@ -47,7 +47,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function k(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,7 +120,7 @@ class H extends Chunk647438.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(f.P3F, U(k({}, e), {
+    return (0, i.jsx)(f.P3F, U(j({}, e), {
       className: s()(x.clickable, r, n),
       id: null != (t = Z(a)) ? t : true,
       onClick: l ? this.handleClick : true,
@@ -218,7 +218,7 @@ function K(e) {
   } = e, o = a.useContext(V);
   return (0, i.jsx)("div", {
     className: x.base,
-    children: (0, i.jsxs)(f.X6q, {
+    children: (0, i.jsxs)(f.Heading, {
       id: F(o.id),
       className: s()(x.contentTitle, n),
       variant: "heading-deprecated-12/semibold",
@@ -347,7 +347,7 @@ class Q extends H {
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
-    }), h = Chunk392711 ? k({}, Chunk91192 ? Chunk313666 : {
+    }), h = Chunk392711 ? j({}, Chunk91192 ? Chunk313666 : {
       color: null != r ? r : true
     }) : true;
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
@@ -534,7 +534,7 @@ class ei extends H {
 }
 class ea extends H {
   renderContent() {
-    return (0, Chunk951288.jsx)(Chunk887120.Z, k({}, this.props))
+    return (0, Chunk951288.jsx)(Chunk887120.Z, j({}, this.props))
   }
 }
 class eo extends H {
@@ -577,7 +577,7 @@ class es extends(r = Chunk647438.PureComponent) {
       },
       children: (0, Chunk951288.jsx)("div", {
         className: s()(Chunk512746.autocomplete, require),
-        children: (0, Chunk951288.jsx)("div", U(k({
+        children: (0, Chunk951288.jsx)("div", U(j({
           className: s()(Chunk512746.autocompleteInner, r)
         }, Chunk392711), {
           children: exports

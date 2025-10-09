@@ -67,7 +67,7 @@ let b = e => {
           className: f.noticeBody,
           children: [(0, a.jsx)("span", {
             children: " You can pop out the DevTools to see the full layout. "
-          }), (0, a.jsx)(c.zxk, {
+          }), (0, a.jsx)(c.Button, {
             size: "sm",
             icon: s.rgF,
             variant: "secondary",
@@ -87,7 +87,7 @@ let b = e => {
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "ShopKeeper"
-        }), 0 !== module && (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        }), 0 !== module && (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           onClick: () => exports(0),
           text: "Back"

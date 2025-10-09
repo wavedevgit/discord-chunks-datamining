@@ -69,7 +69,7 @@ class S extends Chunk647438.Component {
       hasError: e,
       hasAcceptedNeccessaryTerms: s
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    return (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "active",
       text: Chunk388032.intl.string(Chunk388032.t.nL0WvL),
       disabled: exports || null == module || !require,
@@ -99,7 +99,7 @@ class S extends Chunk647438.Component {
         justify: Chunk600164.Z.Justify.BETWEEN,
         children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 1,
-          children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+          children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.PphjtL)
           })

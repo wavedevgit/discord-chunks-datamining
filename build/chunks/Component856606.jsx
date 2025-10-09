@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => ee,
-  n: () => X
+  n: () => J
 }), require("./539854.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,7 +80,7 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
+let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   let e = Chunk388610.Z.getChannel();
   return {
     submitting: Chunk277053.Z.formState === Chunk981631.QZA.SUBMITTING,
@@ -90,7 +90,7 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
     onSave() {
       if (null == module) return;
       let t = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
-        let n = E.Z.getPermissionOverwrite(t);
+        let n = Z.Z.getPermissionOverwrite(t);
         return null != n && e.push(n), e
       }, []);
       (0, Chunk741361.hw)(module.id, exports)
@@ -98,10 +98,10 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   }
 })(Chunk852860.Z);
 
-function J(e) {
+function Y(e) {
   let {
     overwrite: t
-  } = e, n = (0, o.e7)([E.Z], () => E.Z.channel), l = (0, o.e7)([R.Z], () => null != n ? R.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === x.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.N.useExperiment({
+  } = e, n = (0, o.e7)([Z.Z], () => Z.Z.channel), l = (0, o.e7)([R.Z], () => null != n ? R.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === x.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = S.N.useExperiment({
     guildId: null == n ? true : n.guild_id,
     location: "ChannelSettingsPermissions"
   }).enabled;
@@ -151,10 +151,10 @@ function J(e) {
   }, j = e => {
     let t = P.Z.can(G.Plq.ADMINISTRATOR, l) || P.Z.can(G.Plq.MANAGE_ROLES, n, true, true, true);
     return n.isGuildStageVoice() && N.xS.has(e) ? W.intl.string(W.t.bTS5lZ) : !((!a.fS(e, G.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && W.intl.string(W.t.nOtPMD)
-  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, G.Plq.SEND_MESSAGES), O = a.e$(t.deny, G.Plq.SEND_MESSAGES), Z = a.e$(t.deny, G.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, v, {
+  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, G.Plq.SEND_MESSAGES), O = a.e$(t.deny, G.Plq.SEND_MESSAGES), E = a.e$(t.deny, G.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, v, {
     createPostsDisabled: y,
     sendMessagesDisabled: O,
-    readMessageHistoryDisabled: Z,
+    readMessageHistoryDisabled: E,
     inGameMentionsExperiment: s
   });
   return (0, i.jsxs)(C.ZP.Content, {
@@ -166,7 +166,7 @@ function J(e) {
       onChange: b,
       permissionRender: j,
       className: F.permissionsForm
-    }, n)), c === t.id ? null : (0, i.jsx)(d.zxk, {
+    }, n)), c === t.id ? null : (0, i.jsx)(d.Button, {
       variant: "critical-secondary",
       text: W.intl.format(W.t.txPV7u, {
         name: m()
@@ -186,7 +186,7 @@ function J(e) {
   })
 }
 
-function Y(e) {
+function X(e) {
   let {
     guildId: t,
     channelId: n,
@@ -250,7 +250,7 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof Z.Z) return (0, i.jsx)(Y, {
+      if (e instanceof E.default) return (0, i.jsx)(X, {
         guildId: t.id,
         channelId: n.id,
         user: e
@@ -261,7 +261,7 @@ function K(e) {
       M.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (Q(e) ? a(e.id, x.BN.ROLE) : e instanceof Z.Z && a(e.id, x.BN.MEMBER))
+      null != e && (Q(e) ? a(e.id, x.BN.ROLE) : e instanceof E.default && a(e.id, x.BN.MEMBER))
     },
     onClose: r,
     position: c
@@ -289,7 +289,7 @@ function $() {
     }, [Chunk144991]),
     S = (0, Chunk188857.Z)(Chunk144991, Chunk392711),
     N = (0, Chunk410030.ZP)(),
-    Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
+    E = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
     w = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
       (0, p.jW)(e, async () => {
@@ -345,7 +345,7 @@ function $() {
       return (null == (t = r[e.id]) ? true : t.type) === x.BN.ROLE
     }).map(e => (0, i.jsx)(m.Z, {
       theme: N,
-      roleStyle: Z,
+      roleStyle: E,
       id: e.id,
       role: e,
       guild: b,
@@ -364,7 +364,7 @@ function $() {
         id: e.id,
         guild: b,
         theme: N,
-        roleStyle: Z,
+        roleStyle: E,
         "aria-label": H.ZP.getUserTag(e, {
           decoration: "never"
         }),
@@ -422,7 +422,7 @@ function $() {
             marginTop: 20,
             marginBottom: 14
           }
-        }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PERMISSIONS_TUTORIAL),
           target: "_blank",
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -446,7 +446,7 @@ function ee() {
   let l = exports[require];
   return (0, Chunk951288.jsxs)(Chunk325476.ZP, {
     className: Chunk198750.container,
-    children: [(0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(J, {
+    children: [(0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(Y, {
       overwrite: Chunk647438
     })]
   })

@@ -60,7 +60,7 @@ let d = function(e) {
                 className: c.churnFooterClaimCopy,
                 children: l.intl.string(l.t.zrCzVF)
               })]
-            }), (0, r.jsx)(i.zxk, {
+            }), (0, r.jsx)(i.Button, {
               variant: "primary",
               text: l.intl.string(l.t["3PatS0"]),
               onClick: () => null == d ? true : d()

@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function k(e) {
   let {
     code: {
       code: t,
@@ -127,14 +127,14 @@ class U extends Chunk647438.PureComponent {
           variant: "text-sm/normal",
           children: [Chunk388032.intl.format(Chunk388032.t.PXVoEB, {
             phoneNumber: module
-          }), (0, Chunk951288.jsx)(Chunk481060.eee, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
             onClick: this.togglePhoneNumberVisibility,
             className: Chunk343396.phoneRevealer,
             children: require ? Chunk388032.intl.string(Chunk388032.t.FfltIC) : Chunk388032.intl.string(Chunk388032.t.llArAg)
           })]
         })
       }
-      if (Chunk755721) e = (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      if (Chunk755721) e = (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "critical-secondary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.KLWnio),
@@ -143,16 +143,16 @@ class U extends Chunk647438.PureComponent {
       });
       else {
         let t = (0, Chunk714565.c)(Chunk647438);
-        e = (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+        e = (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
-          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
             text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.DZQe29),
             onClick: this.handleEnableSMS,
             loading: Chunk512722,
             disabled: null != exports
-          }), Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.Ulqq6O),
@@ -176,7 +176,7 @@ class U extends Chunk647438.PureComponent {
       } = this.props,
       n = (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_VIEW_BACKUP_CODES,
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.xZEzbm),
@@ -188,13 +188,13 @@ class U extends Chunk647438.PureComponent {
         fileContents: this.getDownloadFileContents,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
         })
       });
-      let i = e => e.map(e => (0, r.jsx)(j, {
+      let i = e => e.map(e => (0, r.jsx)(k, {
         code: e
       }, e.code));
       e = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -226,11 +226,11 @@ class U extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
         description: Chunk388032.intl.string(Chunk388032.t.bQwxiY),
-        children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
           children: [require, (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.ACCOUNT_REMOVE_2FA,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "critical-secondary",
               size: "sm",
               text: Chunk388032.intl.string(Chunk388032.t["D+aE7u"]),
@@ -238,7 +238,7 @@ class U extends Chunk647438.PureComponent {
             })
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.ACCOUNT_ENABLE_2FA,
-            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               size: "sm",
               text: Chunk388032.intl.string(Chunk388032.t.cDgKtb),
@@ -257,7 +257,7 @@ class U extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
         description: Chunk388032.intl.string(Chunk388032.t["8aDa1t"]),
-        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.cDgKtb),
@@ -311,7 +311,7 @@ class U extends Chunk647438.PureComponent {
       let e = O.Z.getVerificationKey();
       await u.Z.confirmViewBackupCodes(e, true)
     }), L(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, c.h7j)(e => (0, r.jsx)(p.Z, k(x({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, j(x({}, e), {
         handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -319,7 +319,7 @@ class U extends Chunk647438.PureComponent {
         actionText: P.intl.string(P.t.ajkYcH)
       })))
     }), L(this, "viewBackupCodes", e => {
-      (0, c.h7j)(t => (0, r.jsx)(_.Z, k(x({}, t), {
+      (0, c.h7j)(t => (0, r.jsx)(_.Z, j(x({}, t), {
         handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
         title: P.intl.string(P.t.mGppp6),
@@ -353,7 +353,7 @@ class U extends Chunk647438.PureComponent {
         onAddedPhone: u.Z.enableSMS
       }) : u.Z.enableSMS()
     }), L(this, "handleDisableSMS", () => {
-      (0, c.h7j)(e => (0, r.jsx)(p.Z, k(x({}, e), {
+      (0, c.h7j)(e => (0, r.jsx)(p.Z, j(x({}, e), {
         handleSubmit: u.Z.disableSMS,
         title: P.intl.string(P.t.KLWnio),
         children: P.intl.string(P.t["W0/Dub"])

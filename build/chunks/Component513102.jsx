@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 function s(e) {
   let {
     enabled: t
-  } = l.c.useExperiment({
+  } = a.c.useExperiment({
     location: "useApplicationDirectoryItem"
   }, {
     autoTrackExposure: true
@@ -27,7 +27,7 @@ function s(e) {
     }),
     icon: n,
     action: () => {
-      (0, a.transitionToGlobalDiscovery)({
+      (0, l.transitionToGlobalDiscovery)({
         tab: c.GlobalDiscoveryTab.APPS,
         newSessionState: {
           entrypoint: {

@@ -19,7 +19,7 @@ let a = Chunk647438.memo(function(e) {
     null == s || s()
   }, [s]), (0, r.jsxs)(o.Kqy, {
     gap: 24,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-lg/semibold",
       children: c
     }), a.map(e => (0, r.jsx)(i.Z, {

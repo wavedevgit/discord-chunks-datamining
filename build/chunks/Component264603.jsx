@@ -71,7 +71,7 @@ function C() {
     className: l()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk441900.container,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Settings"
       }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
@@ -84,14 +84,14 @@ function C() {
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk441900.container,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Application"
       }), (0, Chunk951288.jsx)(Chunk481060.oil, {
         label: "Application ID",
         value: require,
         onChange: Chunk120356
-      }), null != Chunk524437 && null != Chunk524437.id ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), null != Chunk524437 && null != Chunk524437.id ? (0, Chunk951288.jsx)(Chunk481060.Button, {
         onClick: () => Chunk120356(Chunk524437.id),
         variant: "primary",
         text: "Use detected game: ".concat(Chunk524437.name, " (").concat(Chunk524437.id, ")")
@@ -107,10 +107,10 @@ function C() {
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk441900.container,
-      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Authorization"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         disabled: !O.canStartAuthorization,
         onClick: O.startAuthorization,
         variant: "primary",
@@ -119,17 +119,17 @@ function C() {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         disabled: !S.canStartAuthorization,
         onClick: S.startAuthorization,
         variant: "secondary",
         text: "Start In-App Authorization"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         disabled: !T.canStartAuthorization,
         onClick: T.startAuthorization,
         variant: "secondary",
         text: "Start Web Authorization"
-      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         disabled: !N,
         onClick: P,
         variant: "critical-primary",

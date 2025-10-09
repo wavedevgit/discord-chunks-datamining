@@ -50,7 +50,7 @@ function y(e) {
     children: [(0, i.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbG),
       shouldShow: S,
-      children: (0, i.jsx)(a.zxk, {
+      children: (0, i.jsx)(a.Button, {
         variant: "active",
         size: "sm",
         text: b.intl.string(b.t.BzjDQE),
@@ -58,13 +58,13 @@ function y(e) {
         onClick: P,
         disabled: S
       })
-    }), (0, i.jsx)(a.zxk, {
+    }), (0, i.jsx)(a.Button, {
       variant: "critical-primary",
       size: "sm",
       text: b.intl.string(b.t.hDtbs7),
       onClick: I,
       disabled: Z || v.applicationStatus !== f.wB.SUBMITTED
-    }), n && (0, i.jsx)(a.zxk, {
+    }), n && (0, i.jsx)(a.Button, {
       onClick: () => {
         (0, s.openUserProfileModal)({
           userId: v.userId,

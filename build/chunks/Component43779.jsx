@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk137317 = require("./137317.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
 let O = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function S(e) {
-  var t, n, o, S, w;
+  var t, n, a, S, w;
   let {
     quest: P,
     questContent: N,
@@ -36,13 +36,13 @@ function S(e) {
     contentPosition: A,
     rowIndex: B,
     isVisibleInViewport: k,
-    onReceiveErrorHints: q,
-    sourceQuestContent: I
+    onReceiveErrorHints: I,
+    sourceQuestContent: q
   } = e, D = s.useRef(null), L = s.useMemo(() => f.r.build(P.config), [P.config]), V = L.defaultRewardName, Q = L.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: Z,
     scrollHeight: W
-  } = (0, d.kE)(), U = 104 !== W, {
-    onAssetLoadComplete: H
+  } = (0, d.kE)(), H = 104 !== W, {
+    onAssetLoadComplete: U
   } = s.useContext(_.k), {
     expansionSpring: F
   } = (0, c.q_F)({
@@ -76,36 +76,36 @@ function S(e) {
     })(Object(w)).forEach(function(e) {
       Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(w, e))
     }), S)
-  }), z = (null == (n = P.userStatus) ? true : n.completedAt) != null, X = (null == (o = P.userStatus) ? true : o.claimedAt) != null, K = (0, m.xN)(P.config), G = (0, m.LM)(P.config), {
+  }), z = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = (null == (a = P.userStatus) ? true : a.claimedAt) != null, G = (0, m.xN)(P.config), X = (0, m.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: J
-  } = (0, g.I)(P), $ = (0, g.Bd)(P, I, D), ee = s.useMemo(() => X && K ? y.intl.format(y.t["8Op4c3"], {
+  } = (0, g.I)(P), $ = (0, g.Bd)(P, q, D), ee = s.useMemo(() => K && G ? y.intl.format(y.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), G]
+      }), X]
     })
-  }) : X ? (0, r.jsx)(T, {
+  }) : K ? (0, r.jsx)(T, {
     questId: P.id,
     children: V
-  }) : K ? y.intl.format(y.t.ro1szc, {
+  }) : G ? y.intl.format(y.t.ro1szc, {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), G]
+      }), X]
     })
   }) : y.intl.format(y.t["0IUT4e"], {
     rewardWithArticleHook: () => (0, r.jsx)(T, {
       questId: P.id,
       children: Q
     })
-  }), [V, X, Q, P.id, G, K]), et = s.useMemo(() => {
+  }), [V, K, Q, P.id, X, G]), et = s.useMemo(() => {
     if (null != $) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -127,9 +127,9 @@ function S(e) {
         height: 80,
         children: (0, r.jsxs)("div", {
           className: E.assetWrapper,
-          children: [!X && z && (0, r.jsx)("div", {
+          children: [!K && z && (0, r.jsx)("div", {
             className: E.completionAnimation
-          }), M && !X ? (0, r.jsxs)("div", {
+          }), M && !K ? (0, r.jsxs)("div", {
             className: E.progressWrapper,
             children: [z && (0, r.jsx)(c.Fmz, {
               importData: O,
@@ -150,9 +150,9 @@ function S(e) {
                   className: E.circularQuestRewardTileAsset,
                   location: v.dr.QUEST_HOME_DESKTOP,
                   autoplay: R,
-                  onLoadComplete: H,
+                  onLoadComplete: U,
                   lazyLoad: true,
-                  sourceQuestContent: I
+                  sourceQuestContent: q
                 })
               })
             })]
@@ -162,17 +162,17 @@ function S(e) {
             questContent: N,
             className: E.questRewardTileAsset,
             location: v.dr.QUEST_HOME_DESKTOP,
-            onLoadComplete: H,
+            onLoadComplete: U,
             lazyLoad: true,
-            sourceQuestContent: I
+            sourceQuestContent: q
           })]
         })
       }), (0, r.jsxs)("div", {
         ref: Z,
-        className: a()(E.textContainer, {
-          [E.justifyCenter]: !U
+        className: o()(E.textContainer, {
+          [E.justifyCenter]: !H
         }),
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "eyebrow",
           color: "text-brand",
           className: E.questName,
@@ -185,7 +185,7 @@ function S(e) {
           className: E.header,
           children: ee
         }), et]
-      }), U && (0, r.jsx)(i.animated.div, {
+      }), H && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: F.to([0, 1], [1, 0])
         },
@@ -196,8 +196,8 @@ function S(e) {
       questContent: N,
       contentPosition: A,
       rowIndex: B,
-      onReceiveErrorHints: q,
-      sourceQuestContent: I
+      onReceiveErrorHints: I,
+      sourceQuestContent: q
     })]
   })
 }

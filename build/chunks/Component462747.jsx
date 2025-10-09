@@ -77,7 +77,7 @@ function I(e) {
 
 function Z() {
   return (0, Chunk951288.jsx)(I, {
-    children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-primary",
       variant: "heading-xl/semibold",
       className: Chunk200608.title,
@@ -88,7 +88,7 @@ function Z() {
 
 function y() {
   return (0, Chunk951288.jsx)(I, {
-    children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-secondary",
       variant: "heading-md/semibold",
       className: Chunk200608.errorTitle,

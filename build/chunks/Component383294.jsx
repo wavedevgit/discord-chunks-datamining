@@ -48,7 +48,7 @@ function Z() {
       null == (n = Chunk100527.current) || require.play()
     }
   }, [exports, module]);
-  let y = (0, Chunk481060.q_F)({
+  let g = (0, Chunk481060.q_F)({
     from: {
       y: 50
     },
@@ -126,13 +126,13 @@ function T(e) {
         type: l.RAz.SPINNING_CIRCLE
       })
     }) : "success" === c ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(Z, {}), (0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(Z, {}), (0, r.jsx)(l.Heading, {
         variant: "heading-lg/medium",
         className: O.title,
-        children: R.intl.format(R.t["8l9H0t"], {
+        children: x.intl.format(x.t["8l9H0t"], {
           balanceHook: () => (0, r.jsxs)("span", {
             className: O.orbsBalance,
-            children: [(0, r.jsx)(y.Z, {
+            children: [(0, r.jsx)(g.Z, {
               shouldUseThemeColor: true,
               className: O.orbsBalanceIcon
             }), n]
@@ -141,22 +141,22 @@ function T(e) {
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: O.subtext,
-        children: R.intl.string(R.t.EDUOIC)
-      }), (0, r.jsxs)(l.hE2, {
+        children: x.intl.string(x.t.EDUOIC)
+      }), (0, r.jsxs)(l.ButtonGroup, {
         className: O.buttonContainer,
         fullWidthContainer: true,
         fullWidth: true,
         direction: "vertical",
-        children: [(0, r.jsx)(l.zxk, {
+        children: [(0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
-          text: R.intl.string(R.t.WYchdX),
+          text: x.intl.string(x.t.WYchdX),
           onClick: a
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)(l.Button, {
           variant: "secondary",
           fullWidth: true,
-          text: R.intl.string(R.t["7kTAgI"]),
-          onClick: () => window.open(v.EYA.PAID_TERMS_ORBS)
+          text: x.intl.string(x.t["7kTAgI"]),
+          onClick: () => window.open(j.EYA.PAID_TERMS_ORBS)
         })]
       })]
     }) : (0, r.jsxs)("div", {
@@ -167,21 +167,21 @@ function T(e) {
         src: A
       }), (0, r.jsxs)("div", {
         className: O.errorContentContainer,
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xl/medium",
           className: O.errorHeader,
-          children: R.intl.string(R.t.tWYWJy)
+          children: x.intl.string(x.t.tWYWJy)
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: R.intl.string(R.t.JNQRU1)
+          children: x.intl.string(x.t.JNQRU1)
         })]
       }), (0, r.jsx)("div", {
         className: O.buttonContainer,
-        children: (0, r.jsx)(l.zxk, {
+        children: (0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
-          text: R.intl.string(R.t.cpT0Cg),
+          text: x.intl.string(x.t.cpT0Cg),
           onClick: o
         })
       })]
@@ -225,7 +225,7 @@ function w(e) {
     }, [r, t]), a.useEffect(() => {
       !c && null != s && null != l && s > l && i(true)
     }, [s, l, c]), a.useEffect(() => {
-      (0, g.QB)(e, E.y$.CROSS_PLATFORM, n).then(e => {
+      (0, y.QB)(e, E.y$.CROSS_PLATFORM, n).then(e => {
         if ((null == e ? true : e.claimedAt) != null) return void o("success");
         o("error")
       }).catch(() => {
@@ -234,14 +234,14 @@ function w(e) {
     }, [e, n]), "error" === r) ? r : "success" === r && (c || u) ? "success" : "loading"
   }(o.id, o.preview, i.location), u = a.useCallback(() => {
     c(), (0, m.Y)({
-      pageType: v.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: v.jXE.ORBS_REWARD_MODAL,
-      ctaObject: v.qAy.CTA_TO_ORBS_SHOP
+      pageType: j.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: j.jXE.ORBS_REWARD_MODAL,
+      ctaObject: j.qAy.CTA_TO_ORBS_SHOP
     }), (0, p.mK)({
       openInLayer: false,
-      tab: j.AW.ORBS,
+      tab: R.AW.ORBS,
       analyticsLocations: [],
-      analyticsSource: o.id === x.V6 ? b.Z.INTRO_TO_ORBS_QUEST : b.Z.QUEST_HOME_PAGE
+      analyticsSource: o.id === v.V6 ? b.Z.INTRO_TO_ORBS_QUEST : b.Z.QUEST_HOME_PAGE
     })
   }, [c, o.id]);
   return (0, r.jsxs)(r.Fragment, {

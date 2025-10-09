@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk740202 = require("./740202.js");
 
-function H(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -161,11 +161,11 @@ function V(e) {
     onClick: P,
     onFocus: U,
     onContextMenu: R,
-    className: l()(z.container, m, {
-      [z.isOpen]: j
+    className: l()(H.container, m, {
+      [H.isOpen]: j
     }),
-    style: H({}, h),
-    children: [(0, r.jsx)(d.P3F, H({
+    style: z({}, h),
+    children: [(0, r.jsx)(d.P3F, z({
       onClick: P,
       focusProps: {
         ringTarget: b
@@ -175,31 +175,31 @@ function V(e) {
         title: n.name,
         count: y
       }),
-      className: z.focusTarget
+      className: H.focusTarget
     }, V)), (0, r.jsxs)("div", {
-      className: z.header,
+      className: H.header,
       children: [(0, r.jsxs)("div", {
-        className: z.authorRow,
+        className: H.authorRow,
         children: [(0, r.jsxs)("div", {
-          className: z.rowGroup,
+          className: H.rowGroup,
           children: [(0, r.jsx)(M.Z, {
             channel: n,
             message: v
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            className: z.postCreationTimestamp,
+            className: H.postCreationTimestamp,
             children: Z
           })]
         }), T ? (0, r.jsx)(d.IGR, {
-          className: z.newBadge,
+          className: H.newBadge,
           color: c.Z.unsafe_rawColors.BRAND_260.css,
           text: D.intl.string(D.t.y2b7CA)
         }) : null]
       }), (0, r.jsx)(d.y5t, {
-        children: (0, r.jsx)(d.X6q, {
+        children: (0, r.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
-          className: z.title,
+          className: H.title,
           color: w ? "header-primary" : "text-muted",
           style: {
             width: "".concat(h.width - 2 * E.I8, "px")
@@ -208,7 +208,7 @@ function V(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: z.postBody,
+      className: H.postBody,
       children: (0, r.jsx)(d.Rny, {
         children: (0, r.jsx)(G, {
           channel: n,
@@ -219,9 +219,9 @@ function V(e) {
         })
       })
     }), (0, r.jsx)("div", {
-      className: z.footer,
+      className: H.footer,
       children: (0, r.jsx)(d.Rny, {
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(q, {
           channel: n,
           firstMessage: v,
           facepileRef: O
@@ -253,7 +253,7 @@ function G(e) {
     message: D.intl.string(D.t.yWK7ZG),
     containerWidth: l.width,
     channel: t
-  }) : (0, r.jsx)(q, {
+  }) : (0, r.jsx)(W, {
     channel: t,
     firstMessage: n,
     isFirstMessageLoaded: i,
@@ -262,7 +262,7 @@ function G(e) {
   })
 }
 
-function q(e) {
+function W(e) {
   let {
     channel: t,
     firstMessage: n,
@@ -293,27 +293,27 @@ function q(e) {
       canAutoPlay: m,
       shouldMaintainAspectRatio: x
     }), (0, r.jsx)("div", {
-      className: z.tagsRow,
+      className: H.tagsRow,
       children: (0, r.jsx)(Z.ZP, {
         channel: t,
-        tagsClassName: z.tagPill
+        tagsClassName: H.tagPill
       })
     })]
   })
 }
 
-function W(e) {
+function q(e) {
   let {
     channel: t,
     facepileRef: n,
     firstMessage: i
   } = e, a = (0, m.Q)(t.id), l = (null == i ? true : i.reactions) != null && i.reactions.length > 0;
   return (0, r.jsxs)("div", {
-    className: z.forumPostControls,
+    className: H.forumPostControls,
     children: [(0, r.jsxs)("div", {
-      className: z.controlsGroup,
+      className: H.controlsGroup,
       children: [(0, r.jsx)("div", {
-        className: z.messageCountContainer,
+        className: H.messageCountContainer,
         children: (0, r.jsx)(I.m9, {
           channel: t,
           iconSize: 16,
@@ -321,29 +321,29 @@ function W(e) {
         })
       }), a.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("span", {
-          className: z.bullet,
+          className: H.bullet,
           children: "•"
         }), (0, r.jsxs)("div", {
-          className: z.typing,
+          className: H.typing,
           children: [(0, r.jsx)(I.og, {
             channel: t,
             userIds: a,
             facepileRef: n
           }), (0, r.jsx)("div", {
-            className: z.dots,
+            className: H.dots,
             children: (0, r.jsx)(d.bbz, {
               themed: true,
               dotRadius: 2
             })
           }), (0, r.jsx)(u.ZP, {
             channel: t,
-            className: z.typingUsers,
+            className: H.typingUsers,
             renderDots: false
           })]
         })]
       }) : null]
     }), (0, r.jsxs)("div", {
-      className: z.controlsGroup,
+      className: H.controlsGroup,
       children: [l || null == i ? null : (0, r.jsx)(I.kZ, {
         firstMessage: i,
         channel: t
@@ -357,7 +357,7 @@ function W(e) {
 let X = e => e.preventDefault(),
   K = Chunk647438.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
-      children: (0, v.Yi)(B(H({}, e), {
+      children: (0, v.Yi)(B(z({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
       }))
     })
@@ -383,7 +383,7 @@ let X = e => e.preventDefault(),
       containerHeight: s
     }), _ = (0, f.kh)(g.n.GUILD), C = i.useMemo(() => b.map((e, t) => {
       var i;
-      let [a, s] = (0, p.As)(e, !n, _), g = (0, p.MC)(s), f = B(H({}, v[t]), {
+      let [a, s] = (0, p.As)(e, !n, _), g = (0, p.MC)(s), f = B(z({}, v[t]), {
         src: e.src,
         width: e.width,
         height: e.height,
@@ -392,65 +392,65 @@ let X = e => e.preventDefault(),
         shouldRenderAccessory: !m && !u
       }), b = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, C = o && !a ? e.src : b;
       return (0, r.jsxs)("div", {
-        className: z.bodyMediaFrame,
+        className: H.bodyMediaFrame,
         style: j[t],
-        children: [c ? (0, r.jsx)(h.Z, B(H({}, f), {
+        children: [c ? (0, r.jsx)(h.Z, B(z({}, f), {
           src: C,
           backgroundSrc: b,
           aspectRatio: f.maxWidth / f.maxHeight,
           alt: null != (i = f.alt) ? i : "",
-          className: l()(z.mediaPostContainer, {
-            [z.obscured]: a
+          className: l()(H.mediaPostContainer, {
+            [H.obscured]: a
           }),
-          imageChildClassName: z.mediaPostThumbnail
-        })) : e.src.startsWith("data:") ? (0, r.jsx)(d.Eep, B(H({}, f), {
-          className: z.mediaContainer,
-          imageClassName: l()(z.thumbnailOverride, {
-            [z.obscured]: a
+          imageChildClassName: H.mediaPostThumbnail
+        })) : e.src.startsWith("data:") ? (0, r.jsx)(d.Eep, B(z({}, f), {
+          className: H.mediaContainer,
+          imageClassName: l()(H.thumbnailOverride, {
+            [H.obscured]: a
           })
-        })) : (0, r.jsx)(K, B(H({}, f), {
+        })) : (0, r.jsx)(K, B(z({}, f), {
           autoPlay: o && !a,
-          containerClassName: z.mosaicMediaContainer,
-          imageClassName: l()(z.imageCover, {
-            [z.obscured]: a
+          containerClassName: H.mosaicMediaContainer,
+          imageClassName: l()(H.imageCover, {
+            [H.obscured]: a
           }),
           responsive: true
         })), a && (0, r.jsx)("div", {
-          className: z.obscuredTagContainer,
+          className: H.obscuredTagContainer,
           children: (0, r.jsx)(P.Z, {
             obscureReason: s,
-            iconClassname: z.obscuredTag
+            iconClassname: H.obscuredTag
           })
         })]
       }, e.src)
     }), [o, m, u, n, j, v, b, c, _]);
     return (0, r.jsxs)("div", {
-      className: z.bodyMedia,
+      className: H.bodyMedia,
       style: {
         width: a,
         height: s
       },
       children: [C, (m || u) && (0, r.jsxs)("div", {
-        className: z.mediaIconsRow,
+        className: H.mediaIconsRow,
         children: [u && (0, r.jsx)(d.o1U, {
           color: "currentColor",
           size: "custom",
           width: 22,
           height: 22,
-          className: z.mediaIcon
+          className: H.mediaIcon
         }), m && (0, r.jsx)(d.OUq, {
           size: "custom",
           width: 29,
           height: 29,
           color: "currentColor",
-          className: z.mediaIcon
+          className: H.mediaIcon
         })]
       }), t.length > R.Vn && (0, r.jsx)(J, {
         text: (t.length - R.Vn).toString(),
         icon: d.XBm,
-        pillClassName: z.moreImagesPill,
-        iconClassName: z.moreImagesPillIcon,
-        textClassName: z.moreImagesPillText
+        pillClassName: H.moreImagesPill,
+        iconClassName: H.moreImagesPillIcon,
+        textClassName: H.moreImagesPillText
       })]
     })
   });
@@ -497,12 +497,12 @@ function Q(e) {
   }), f = i.useMemo(() => ({
     width: u,
     height: m
-  }), [u, m]), x = o ? z.textContentUnread : z.textContentRead;
+  }), [u, m]), x = o ? H.textContentUnread : H.textContentRead;
   return (0, r.jsxs)("div", {
-    className: z.contentPreview,
+    className: H.contentPreview,
     style: f,
     children: [(0, r.jsxs)("div", {
-      className: z.content,
+      className: H.content,
       children: [a && null == n && (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: o ? "header-secondary" : "text-muted",
@@ -514,12 +514,12 @@ function Q(e) {
         compact: c
       })]
     }), (0, r.jsx)("div", {
-      className: l()(z.textContentFooter, {
-        [z.noTags]: !g
+      className: l()(H.textContentFooter, {
+        [H.noTags]: !g
       }),
       children: g ? (0, r.jsx)(Z.ZP, {
         channel: t,
-        tagsClassName: z.tagPill
+        tagsClassName: H.tagPill
       }) : null
     })]
   })
@@ -540,23 +540,23 @@ function $(e) {
     height: o
   }), [s, o]);
   return (0, r.jsxs)("div", {
-    className: z.contentPreview,
+    className: H.contentPreview,
     style: u,
     children: [(0, r.jsx)("div", {
-      className: z.content,
+      className: H.content,
       children: (0, r.jsx)(d.Text, {
-        className: z.blockedMessage,
+        className: H.blockedMessage,
         variant: "text-sm/medium",
         color: "text-muted",
         children: t
       })
     }), (0, r.jsx)("div", {
-      className: l()(z.textContentFooter, {
-        [z.noTags]: !c
+      className: l()(H.textContentFooter, {
+        [H.noTags]: !c
       }),
       children: c ? (0, r.jsx)(Z.ZP, {
         channel: a,
-        tagsClassName: z.tagPill
+        tagsClassName: H.tagPill
       }) : null
     })]
   })

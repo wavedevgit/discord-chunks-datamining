@@ -1,7 +1,7 @@
-/** Chunk was on 46746 **/
+/** Chunk was on 47863 **/
 /** chunk id: 173044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,49 +20,49 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk312518 = require("./312518.js");
 
-function _(e) {
-  var t, n, _;
+function x(e) {
+  var t, n, x;
   let {
     onClose: v
   } = e, {
     analyticsLocations: j
-  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), y = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2 || (0, c.Wp)(S, m.Si.TIER_2), C = g.intl.string(p.default["+f+cqq"]);
-  return y && (null != b ? C = (0, f.Rt)({
+  } = (0, o.ZP)(s.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), y = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(S, h.Si.TIER_2), O = _.intl.string(m.default["+f+cqq"]);
+  return y && (null != b ? O = (0, f.Rt)({
     intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
-    intervalCount: null == b || null == (_ = b.subscription_trial) ? true : _.interval_count
-  }) : null != S && (C = g.intl.formatToPlainString(g.t.bkQ4bG, {
+    intervalCount: null == b || null == (x = b.subscription_trial) ? true : x.interval_count
+  }) : null != S && (O = _.intl.formatToPlainString(_.t.bkQ4bG, {
     percent: S.discount.amount
   }))), (0, r.jsxs)("div", {
-    className: x.root,
+    className: g.root,
     children: [(0, r.jsxs)(l.Text, {
-      className: x.infoText,
+      className: g.infoText,
       variant: "text-xs/normal",
       color: "always-white",
       children: [(0, r.jsx)(l.mBM, {
         size: "xxs",
         color: "currentColor"
-      }), g.intl.format(g.t.sLJ3ER, {
+      }), _.intl.format(_.t.sLJ3ER, {
         onNitroClick: function() {
-          (0, h.E)({
+          (0, p.E)({
             analyticsLocation: j[0],
             onClose: v
           })
         }
       })]
     }), (0, r.jsx)(u.Z, {
-      className: x.ctaButton,
-      iconClassName: x.premiumIcon,
+      className: g.ctaButton,
+      iconClassName: g.premiumIcon,
       size: i.zx.Sizes.TINY,
       color: i.zx.Colors.BRAND_INVERTED,
-      subscriptionTier: m.Si.TIER_2,
-      buttonShineClassName: x.premiumShine,
+      subscriptionTier: h.Si.TIER_2,
+      buttonShineClassName: g.premiumShine,
       iconColor: a.JX.PREMIUM_TIER_2,
       onClick: () => {
         v()
       },
       textOptions: {
-        subscribeText: C,
-        textClassName: x.ctaButtonText
+        subscribeText: O,
+        textClassName: g.ctaButtonText
       }
     })]
   })

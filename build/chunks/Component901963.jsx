@@ -57,7 +57,7 @@ let O = "premiumRetentionEmojiPickerNotice",
             endsAt: A.toDate()
           })
         }), (0, r.jsx)("div", {
-          children: (0, r.jsx)(c.eee, {
+          children: (0, r.jsx)(c.Anchor, {
             onClick: () => {
               (0, m.A3)(n), t(), (0, _.openUserSettings)(f.n.NITRO_PANEL, {
                 section: g.oAB.PREMIUM

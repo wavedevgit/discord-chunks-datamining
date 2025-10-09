@@ -34,7 +34,7 @@ function d() {
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.kCj5pq)
       })]
-    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "secondary",
       text: Chunk388032.intl.string(Chunk388032.t.JFlifn),
       onClick: module

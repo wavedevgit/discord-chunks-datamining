@@ -20,9 +20,9 @@ function p() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, p] = Chunk290348.p9(module, exports), [f, h] = Chunk290348.Ek(module, exports), x = Chunk290348.qs(module, exports);
+  } = (0, Chunk727843.N)(), [, p] = Chunk290348.p9(module, exports), [f, h] = Chunk290348.Ek(module, exports), b = Chunk290348.qs(module, exports);
 
-  function b() {
+  function x() {
     (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -92,13 +92,13 @@ function p() {
           direction: "horizontal",
           gap: 16,
           children: [(0, Chunk951288.jsx)(Chunk553204.Z, {
-            role: x,
+            role: b,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
-            onClick: b,
+            onClick: x,
             disabled: j
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
-            onClick: b,
+            onClick: x,
             disabled: j,
             text: Chunk388032.intl.string(Chunk388032.t.mD1oGB)
           })]
@@ -109,12 +109,12 @@ function p() {
           "aria-hidden": true,
           children: [(0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: x,
+            role: b,
             className: Chunk549556.messageContainer,
             theme: "light"
           }), (0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: x,
+            role: b,
             className: Chunk549556.messageContainer,
             theme: "dark"
           })]

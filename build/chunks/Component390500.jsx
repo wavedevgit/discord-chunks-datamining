@@ -26,7 +26,7 @@ let c = function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: s.statusTextContainer,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: (null == n ? true : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu//"], {
@@ -37,7 +37,7 @@ let c = function(e) {
         color: "header-secondary",
         children: o.intl.string(o.t.FdsK4u)
       })]
-    }), (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(l.Button, {
       fullWidth: true,
       onClick: t,
       variant: "critical-primary",

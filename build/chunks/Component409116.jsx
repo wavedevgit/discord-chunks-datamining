@@ -95,7 +95,7 @@ let f = e => {
         size: u,
         color: "currentColor",
         className: p.icon
-      }) : null, j, O && (0, r.jsxs)(o.X6q, {
+      }) : null, j, O && (0, r.jsxs)(o.Heading, {
         variant: "heading-md/semibold",
         className: p.discountPill,
         children: [(0, r.jsx)(o.nn4, {

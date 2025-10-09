@@ -76,7 +76,7 @@ function d(e) {
           ref: y,
           children: [b, (0, r.jsxs)("div", {
             className: f.contentContainer,
-            children: [(0, r.jsx)(c.X6q, {
+            children: [(0, r.jsx)(c.Heading, {
               variant: "heading-xl/extrabold",
               children: d
             }), (0, r.jsx)(c.Text, {

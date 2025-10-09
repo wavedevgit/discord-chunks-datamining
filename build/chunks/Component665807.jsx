@@ -37,7 +37,7 @@ let h = function(e) {
       alt: "",
       src: f,
       className: p.image
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(a.Heading, {
       variant: "heading-xl/semibold",
       className: p.header,
       children: m

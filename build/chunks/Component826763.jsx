@@ -27,7 +27,7 @@ function h(e) {
         alt: ""
       }), (0, r.jsxs)("div", {
         className: d.upsellContent,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(i.Heading, {
           variant: "heading-xl/semibold",
           children: c.intl.string(c.t["8gJGPj"])
         }), (0, r.jsx)(i.Text, {
@@ -37,7 +37,7 @@ function h(e) {
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: d.__invalid_button,
-          children: (0, r.jsx)(i.zxk, {
+          children: (0, r.jsx)(i.Button, {
             variant: "primary",
             text: c.intl.string(c.t["I/XhUl"]),
             onClick: () => {

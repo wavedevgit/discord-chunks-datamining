@@ -16,14 +16,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h(t) {
-  let n = (0, a.e7)([u.Z], () => u.Z.getChannel(t.parent_id)),
+  let n = (0, l.e7)([u.Z], () => u.Z.getChannel(t.parent_id)),
     e = (0, d.Xb)(t),
     h = (0, o.kF)(t);
-  return (null == n ? true : n.isForumLikeChannel()) && e ? t.hasFlag(c.zZ.PINNED) ? (0, i.jsx)(l.sNh, {
+  return (null == n ? true : n.isForumLikeChannel()) && e ? t.hasFlag(c.zZ.PINNED) ? (0, i.jsx)(a.sNh, {
     id: "unpin-thread",
     label: f.intl.string(f.t.trD8am),
     action: () => s.Z.unpin(t)
-  }) : (0, i.jsx)(l.sNh, {
+  }) : (0, i.jsx)(a.sNh, {
     id: "pin-thread",
     label: f.intl.string(f.t.EnaWho),
     action: function() {

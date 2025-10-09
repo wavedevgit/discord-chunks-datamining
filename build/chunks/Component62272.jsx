@@ -22,7 +22,7 @@ let c = e => {
     justify: "start",
     padding: s.h,
     className: o.container,
-    children: [(0, a.jsx)(i.X6q, {
+    children: [(0, a.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       className: o.heading,
       children: d

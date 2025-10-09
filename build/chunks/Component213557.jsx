@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
-/** chunk id: 213557, original params: e,t,n (module,exports,require) **/
+/** chunk id: 213557, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => A
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,61 +34,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk10832 = require("./10832.js");
 
 function T(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+  for (var n = 1; n < arguments.length; n++) {
+    var t = null != arguments[n] ? arguments[n] : {},
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), l.forEach(function(n) {
       var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
+      l = t[n], n in e ? Object.defineProperty(e, n, {
         value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[n] = l
     })
   }
   return e
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+function B(e, n) {
+  return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      t.push.apply(t, l)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return t
+  })(Object(n)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
 
-function B(e) {
+function A(e) {
   let {
-    channelId: t,
-    baseChannelId: B,
-    channelViewSource: A = "Split View",
-    isResourceChannelView: R
-  } = e, D = (0, i.e7)([y.Z], () => y.Z.getChannel(t)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == D ? true : D.getGuildId())), M = (0, I.ZP)(D), H = (0, i.e7)([b.Z], () => (null == L ? true : L.id) != null && b.Z.isLurking(L.id), [L]), U = (0, g.Z)(t), G = (0, i.e7)([f.Z], () => {
+    channelId: n,
+    baseChannelId: A,
+    channelViewSource: R = "Split View",
+    isResourceChannelView: k
+  } = e, D = (0, i.e7)([y.Z], () => y.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == D ? true : D.getGuildId())), M = (0, I.ZP)(D), H = (0, i.e7)([b.Z], () => (null == L ? true : L.id) != null && b.Z.isLurking(L.id), [L]), U = (0, g.Z)(n), G = (0, i.e7)([f.Z], () => {
     var e;
-    return null == (e = f.Z.getResourceForChannel(null == L ? true : L.id, t)) ? true : e.title
-  }), W = (0, d.$5)(D), q = r.useRef(false);
+    return null == (e = f.Z.getResourceForChannel(null == L ? true : L.id, n)) ? true : e.title
+  }), W = (0, d.$5)(D), F = r.useRef(false);
   if (r.useEffect(() => {
-      null == D || q.current || (q.current = true, (0, u.yw)(P.rMx.CHANNEL_OPENED, k(T({}, (0, u.$H)(D.id)), {
-        channel_view: A
+      null == D || F.current || (F.current = true, (0, u.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, u.$H)(D.id)), {
+        channel_view: R
       })), (0, m.a)(P.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: D.id
       }))
-    }, [D, A]), null == D || null == L) return null;
-  let F = [];
-  return (H || F.push((0, l.jsx)(_.Z, {
+    }, [D, R]), null == D || null == L) return null;
+  let q = [];
+  return (H || q.push((0, l.jsx)(_.Z, {
     channel: D
-  }, "notifications")), F.push((0, l.jsx)(x.ZP.Icon, {
+  }, "notifications")), q.push((0, l.jsx)(x.ZP.Icon, {
     icon: a.Dio,
     tooltip: E.intl.string(E.t.cpT0Cg),
-    onClick: () => v.Z.closeChannelSidebar(B)
+    onClick: () => v.Z.closeChannelSidebar(A)
   }, "close")), W) ? (0, l.jsx)(c.Z, {
     guild: L,
     channelId: D.id
@@ -97,7 +97,7 @@ function B(e) {
       channel: D,
       draftType: O.d.ChannelMessage
     }), (0, l.jsx)(x.ZP, {
-      toolbar: F,
+      toolbar: q,
       "aria-label": E.intl.string(E.t.BIYAqa),
       children: (0, C.ud)({
         channel: D,
@@ -108,8 +108,8 @@ function B(e) {
           (0, o.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("24783"), n.e("41815")]).then(n.bind(n, 439635));
-            return t => (0, l.jsx)(e, k(T({}, t), {
+            } = await Promise.all([t.e("24783"), t.e("41815")]).then(t.bind(t, 439635));
+            return n => (0, l.jsx)(e, B(T({}, n), {
               channel: D,
               guild: L
             }))
@@ -117,7 +117,7 @@ function B(e) {
         },
         handleClick: () => {
           let e = Z.Z.getMessages(D.id);
-          if (R) {
+          if (k) {
             (0, j.uL)(P.Z5c.CHANNEL(D.guild_id, D.id)), (0, p.C3)(D.guild_id, null);
             return
           }(0, j.XU)(D.guild_id, D.id, e.jumpTargetId)
@@ -129,7 +129,7 @@ function B(e) {
         channel: D,
         guild: L,
         chatInputType: h.Ie.SIDEBAR
-      }, t)
+      }, n)
     })]
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 74318 **/
 /** chunk id: 630810, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h,
-  m: () => c
+  Z: () => m,
+  m: () => d
 });
 var l, Chunk493683 = require("./493683.js"),
   Chunk904245 = require("./904245.js"),
@@ -10,11 +10,11 @@ var l, Chunk493683 = require("./493683.js"),
   Chunk592125 = require("./592125.js"),
   Chunk70956 = require("./70956.js"),
   Chunk651655 = require("./651655.js");
-let u = +Chunk70956.Z.Millis.SECOND + 10;
-var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
+let c = +Chunk70956.Z.Millis.SECOND + 10;
+var d = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
 class g extends Chunk651655.Z {
   _sendInvite(e, t, n, l, i) {
-    s.Z.sendInvite(e.id, t, n, l).then(() => i(null, true), () => i(null, false))
+    a.Z.sendInvite(e.id, t, n, l).then(() => i(null, true), () => i(null, false))
   }
   drain(e, t) {
     let {
@@ -28,13 +28,13 @@ class g extends Chunk651655.Z {
         break;
       case 1:
         i.Z.ensurePrivateChannel(e.user.id).then(i => {
-          let s = a.Z.getChannel(i);
-          null != s && this._sendInvite(s, e.inviteKey, n, l, t)
+          let a = s.Z.getChannel(i);
+          null != a && this._sendInvite(a, e.inviteKey, n, l, t)
         }, () => t(null, false))
     }
   }
   constructor() {
-    super(new Chunk710845.Z("InviteQueue"), u)
+    super(new Chunk710845.Z("InviteQueue"), c)
   }
 }
-let h = new g
+let m = new g

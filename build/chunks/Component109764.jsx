@@ -15,8 +15,8 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f(t, n, e) {
-  let f = (0, a.e7)([o.Z], () => null != t ? o.Z.getChannel(t.parent_id) : null);
-  return null == t ? null : (0, i.jsx)(l.sNh, {
+  let f = (0, l.e7)([o.Z], () => null != t ? o.Z.getChannel(t.parent_id) : null);
+  return null == t ? null : (0, i.jsx)(a.sNh, {
     id: "channel-copy-link",
     label: c.intl.string(c.t.WqhZsr),
     action: () => {

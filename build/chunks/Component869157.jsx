@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 59077 **/
 /** chunk id: 869157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -44,8 +44,8 @@ function Z(e) {
   } = e, g = (0, o.e7)([j.Z], () => j.Z.getGuild(l));
   a()(null != g, "");
   let h = (0, o.e7)([x.Z], () => x.Z.getSortedRoles(l)),
-    [O, w] = r.useState(new Set),
-    P = r.useMemo(() => {
+    [O, P] = r.useState(new Set),
+    w = r.useMemo(() => {
       let e = (0, b.bD)(l),
         t = h.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(c).filter(e => e.canRead).sort((n, i) => {
@@ -92,15 +92,15 @@ function Z(e) {
     }, [n, c]);
   r.useEffect(() => {
     let e = Object.values(c).filter(e => e.type === m.Kw.USER && !e.canRead && !O.has(e.id)).map(e => e.id);
-    0 !== e.length && (u.Z.requestMembersById(l, e, false), w(t => new Set([...t, ...e])))
-  }, [l, c, O, w]);
+    0 !== e.length && (u.Z.requestMembersById(l, e, false), P(t => new Set([...t, ...e])))
+  }, [l, c, O, P]);
   let Z = (0, o.e7)([N.Z], () => N.Z.getApplicationId()),
     A = (0, o.e7)([C.default], () => null == Z ? true : C.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? true : t.id) === Z
     })),
     D = (0, o.e7)([f.Z], () => true !== A && f.Z.canShowToggleTooltip(A.id));
-  return P.length > 0 ? P.map(e => (0, i.jsx)(k, {
+  return w.length > 0 ? w.map(e => (0, i.jsx)(k, {
     guild: g,
     commandId: t,
     onChange: t => E(e.id, e.type, t),
@@ -179,7 +179,7 @@ function k(e) {
       position: "left",
       children: (0, i.jsx)("div", {
         ref: k,
-        children: (0, i.jsx)(P.Z, {
+        children: (0, i.jsx)(w.Z, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: Z ? e => {
@@ -207,7 +207,7 @@ function k(e) {
     className: T.entryItem,
     children: [(0, i.jsx)("div", {
       className: T.entryName,
-      children: (0, i.jsx)(w.Z, {
+      children: (0, i.jsx)(P.Z, {
         guild: o,
         id: x.id,
         type: x.type,

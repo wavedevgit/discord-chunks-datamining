@@ -36,8 +36,8 @@ let C = 10,
   L = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
   x = /^\/activities\/([0-9-]+)\/?$/,
   M = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-  k = /^\/channels\/([0-9]+)\/shop$/,
-  j = /^\/quests\/([0-9-]+)\/?$/,
+  j = /^\/channels\/([0-9]+)\/shop$/,
+  k = /^\/quests\/([0-9-]+)\/?$/,
   U = /^\/oauth2\/authorize/,
   G = /^#itemSkuId=([0-9]+)$/,
   B = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
@@ -201,7 +201,7 @@ function eo(e) {
     }
     let g = null == c ? true : c.match(M);
     null != g && u(S.g.GUILD_PRODUCT, "".concat(g[1], "-").concat(g[2]));
-    let I = null == c ? true : c.match(k);
+    let I = null == c ? true : c.match(j);
     null != I && u(S.g.SERVER_SHOP, I[1]);
     let T = es(e);
     if (null != T && u(S.g.QUESTS_EMBED, T), "/shop" === c) {
@@ -216,7 +216,7 @@ function eo(e) {
 function es(e) {
   var t, n;
   let r = ei(e),
-    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(j);
+    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(k);
   return null != (n = null == i ? true : i[1]) ? n : null
 }
 

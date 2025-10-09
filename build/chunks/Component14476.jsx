@@ -24,14 +24,14 @@ let h = e => {
     claimed: h,
     onSelect: m,
     productName: x,
-    a11yLabel: b,
-    selectedSkuId: g,
+    a11yLabel: g,
+    selectedSkuId: b,
     category: j
   } = e, y = i.useRef(null), {
     isHoveringOrFocusing: v
   } = (0, c.Z)(y), L = !h && v, S = (0, C.ZP)(), w = (0, s.wj)(S), O = {
     type: o.Z.AVATAR_DECORATION,
-    label: b,
+    label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
@@ -44,7 +44,7 @@ let h = e => {
       className: l()(w ? f.shopCardDark : f.shopCard, {
         [f.shopCardAnimation]: !h,
         [w ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: L,
-        [f.shopCardSelected]: g === t
+        [f.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
         className: l()(f.preview, {
@@ -67,7 +67,7 @@ let h = e => {
         className: f.claimedIcon
       }), (0, r.jsxs)("div", {
         className: f.productName,
-        children: [(0, r.jsx)(d.X6q, {
+        children: [(0, r.jsx)(d.Heading, {
           variant: "text-md/bold",
           children: x
         }), (0, r.jsx)(d.Text, {

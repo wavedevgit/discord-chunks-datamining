@@ -143,7 +143,7 @@ function L(e) {
     onIconClick: w,
     children: (0, r.jsx)("div", {
       className: R.openStoreButton,
-      children: (0, r.jsx)(l.zxk, {
+      children: (0, r.jsx)(l.Button, {
         onClick: D,
         text: N.intl.string(N.t.kRvlKC)
       })
@@ -175,8 +175,8 @@ function x(e) {
     initialSubscribeForGuild: O
   });
   if (!w || null == b || null == m) return null;
-  let k = m.type === A.epS.SUBSCRIPTION,
-    j = !!k && (0, _.KW)(m.flags),
+  let j = m.type === A.epS.SUBSCRIPTION,
+    k = !!j && (0, _.KW)(m.flags),
     U = () => {
       (0, l.ZDy)(async () => {
         let {
@@ -192,8 +192,8 @@ function x(e) {
     },
     G = () => {
       (0, l.ZDy)(async () => {
-        let e = k ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
-          t = k ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
+        let e = j ? (await Promise.resolve().then(n.bind(n, 519896))).SubscriptionDetailsModal : null,
+          t = j ? null : (await Promise.resolve().then(n.bind(n, 147496))).ItemDetailsModal;
         return n => {
           let i = () => {
             n.onClose(), U()
@@ -203,7 +203,7 @@ function x(e) {
             appId: b.id,
             skuId: m.id,
             guildId: O,
-            subscriptionType: j ? "user" : "guild",
+            subscriptionType: k ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
           }) : null != t ? (0, r.jsx)(t, {
@@ -217,7 +217,7 @@ function x(e) {
       })
     },
     B = 12,
-    Z = k ? j ? (0, r.jsxs)(r.Fragment, {
+    Z = j ? k ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "custom",
         width: B,
@@ -265,20 +265,20 @@ function x(e) {
     onIconClick: F,
     children: (0, r.jsxs)("div", {
       className: R.skuPurchaseButtons,
-      children: [(0, r.jsx)(l.zxk, {
+      children: [(0, r.jsx)(l.Button, {
         variant: "secondary",
         onClick: V,
         text: N.intl.string(N.t.DXYfjI)
-      }), k ? null != g ? (0, r.jsx)(S.pV, {
+      }), j ? null != g ? (0, r.jsx)(S.pV, {
         onClick: L,
         appId: b.id,
-        subscriptionType: j ? "user" : "guild",
+        subscriptionType: k ? "user" : "guild",
         skuId: m.id,
         icon: l.EOn,
         onHasClicked: H,
         subscriptionPlan: g,
         state: x
-      }) : (0, r.jsx)(l.zxk, {
+      }) : (0, r.jsx)(l.Button, {
         variant: "primary",
         text: N.intl.string(N.t.uuzaAA),
         onClick: G

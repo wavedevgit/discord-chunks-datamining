@@ -40,30 +40,30 @@ function j(e) {
     return null == v ? true : v.filter(t => !e.includes(t))
   }, [j, N, v]), T = null == E, P = null != (t = null == E ? true : E.published) && t, w = null != (n = null == E ? true : E.archived) && n;
   return (0, r.jsxs)("div", {
-    className: b.body,
+    className: x.body,
     children: [null != C && (0, r.jsx)(u.Z, {
       children: C.getAnyErrorMessage()
     }), !P && !I && !w && (0, r.jsxs)("div", {
-      className: b.publishListing,
+      className: x.publishListing,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
-          className: b.publishListingInfoHeader,
-          children: x.intl.string(x.t.WOlcS0)
+          className: x.publishListingInfoHeader,
+          children: b.intl.string(b.t.WOlcS0)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: x.intl.string(x.t.rMulDQ)
+          children: b.intl.string(b.t.rMulDQ)
         })]
       }), (0, r.jsx)(a.u, {
         shouldShow: T,
-        text: x.intl.string(x.t.v7lRIi),
+        text: b.intl.string(b.t.v7lRIi),
         children: (0, r.jsx)("div", {
-          children: (0, r.jsx)(s.zxk, {
+          children: (0, r.jsx)(s.Button, {
             disabled: T,
             variant: "secondary",
             onClick: O,
             loading: _,
-            text: x.intl.string(x.t.Lj6R5u)
+            text: b.intl.string(b.t.Lj6R5u)
           })
         })
       })]

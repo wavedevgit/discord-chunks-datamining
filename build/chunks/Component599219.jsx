@@ -87,26 +87,26 @@ function S(e) {
     {
       onClose: S
     } = s,
-    [L, k] = o.useState(false),
-    w = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
-    M = null != w && null == w.nsfwAllowed,
-    [P, U] = o.useState(M ? O.F.AGE_GATE : O.F.CHOOSE_TEMPLATE),
-    [R, Z] = o.useState(null);
+    [L, w] = o.useState(false),
+    M = (0, l.e7)([b.default], () => b.default.getCurrentUser()),
+    k = null != M && null == M.nsfwAllowed,
+    [P, U] = o.useState(k ? O.F.AGE_GATE : O.F.CHOOSE_TEMPLATE),
+    [R, B] = o.useState(null);
   o.useEffect(() => {
     n(L ? O.F.COMPLETE : P)
   }, [n, P, L]);
-  let [B, z] = o.useState(null), [W, H] = o.useState(null), [Y, V] = o.useState(false), q = (0, i.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), J = o.useCallback(e => {
-    H(e), U(O.F.CREATION_INTENT), E.default.track(y.rMx.GUILD_TEMPLATE_SELECTED, {
+  let [Z, H] = o.useState(null), [W, z] = o.useState(null), [Y, V] = o.useState(false), J = (0, l.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), q = o.useCallback(e => {
+    z(e), U(O.F.CREATION_INTENT), E.default.track(y.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
     })
-  }, [H, U]), {
+  }, [z, U]), {
     content: K,
     footer: X
   } = (0, f.v)({
     hasFooter: false,
     onBack: () => {
-      H(null), U(O.F.CHOOSE_TEMPLATE)
+      z(null), U(O.F.CHOOSE_TEMPLATE)
     },
     onCreationIntentChosen: e => {
       V(e === I.lr.COMMUNITY), U(O.F.CUSTOMIZE_GUILD)
@@ -119,7 +119,7 @@ function S(e) {
     titleClassName: G.customizeGuildTitle,
     hasFooter: false,
     onGuildCreated: e => {
-      z(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : k(true)
+      H(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : w(true)
     },
     onBack: () => {
       U(O.F.CREATION_INTENT)
@@ -130,10 +130,10 @@ function S(e) {
     content: ee,
     footer: et
   } = (0, p.F)({
-    createdGuildId: B,
+    createdGuildId: Z,
     hasFooter: false,
     onChannelPromptCompleted: () => {
-      k(true)
+      w(true)
     },
     isSlideReady: R === O.F.CHANNEL_PROMPT
   }), {
@@ -173,8 +173,8 @@ function S(e) {
       onComplete: S
     })
   }));
-  let el = {
-    impression_group: l.ImpressionGroups.GUILD_ADD_NUF
+  let ei = {
+    impression_group: i.ImpressionGroups.GUILD_ADD_NUF
   };
   return (0, a.jsxs)(c.Y0X, D(F({}, s), {
     size: c.CgR.MEDIUM,
@@ -195,7 +195,7 @@ function S(e) {
           className: G.slidesContainer,
           children: (0, a.jsxs)(c.MyZ, {
             activeSlide: P,
-            onSlideReady: e => Z(e),
+            onSlideReady: e => B(e),
             centered: false,
             width: er,
             children: [(0, a.jsx)(c.Mi4, {
@@ -204,51 +204,51 @@ function S(e) {
                 className: G.container,
                 children: (0, a.jsx)(x.Z, {
                   onComplete: () => {
-                    q ? S() : U(O.F.CHOOSE_TEMPLATE)
+                    J ? S() : U(O.F.CHOOSE_TEMPLATE)
                   },
                   onClose: S
                 })
               })
             }), (0, a.jsx)(c.Mi4, {
               id: O.F.CHOOSE_TEMPLATE,
-              impressionName: l.ImpressionNames.GUILD_ADD_LANDING,
-              impressionProperties: el,
+              impressionName: i.ImpressionNames.GUILD_ADD_LANDING,
+              impressionProperties: ei,
               children: (0, a.jsx)("div", {
                 className: r()(G.container, G.shortFooter),
                 children: (0, a.jsx)(h.Z, {
                   className: G.templates,
-                  onChooseTemplate: J,
+                  onChooseTemplate: q,
                   isNewUser: true
                 })
               })
             }), (0, a.jsx)(c.Mi4, {
               id: O.F.CREATION_INTENT,
-              impressionName: l.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
-              impressionProperties: el,
+              impressionName: i.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
+              impressionProperties: ei,
               children: (0, a.jsx)("div", {
                 className: r()(G.container, G.standardFooter),
                 children: K
               })
             }), (0, a.jsx)(c.Mi4, {
               id: O.F.CUSTOMIZE_GUILD,
-              impressionName: l.ImpressionNames.GUILD_ADD_CUSTOMIZE,
-              impressionProperties: el,
+              impressionName: i.ImpressionNames.GUILD_ADD_CUSTOMIZE,
+              impressionProperties: ei,
               children: (0, a.jsx)("div", {
                 className: r()(G.container, G.standardFooter),
                 children: Q
               })
             }), (0, a.jsx)(c.Mi4, {
               id: O.F.CHANNEL_PROMPT,
-              impressionName: l.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
-              impressionProperties: el,
+              impressionName: i.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
+              impressionProperties: ei,
               children: (0, a.jsx)("div", {
                 className: r()(G.container, G.standardFooter),
                 children: ee
               })
             }), (0, a.jsx)(c.Mi4, {
               id: O.F.JOIN_GUILD,
-              impressionName: l.ImpressionNames.GUILD_ADD_JOIN,
-              impressionProperties: el,
+              impressionName: i.ImpressionNames.GUILD_ADD_JOIN,
+              impressionProperties: ei,
               children: (0, a.jsx)("div", {
                 className: r()(G.container, G.standardFooter),
                 children: en
@@ -261,7 +261,7 @@ function S(e) {
         }) : null, P === O.F.CHOOSE_TEMPLATE ? (0, a.jsx)(c.mzw, {
           justify: d.Z.Justify.BETWEEN,
           className: r()(G.footer, G.join),
-          children: (0, a.jsx)(c.eee, {
+          children: (0, a.jsx)(c.Anchor, {
             className: G.joinCTA,
             onClick: () => {
               U(O.F.JOIN_GUILD)
