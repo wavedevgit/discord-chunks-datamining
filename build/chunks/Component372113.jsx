@@ -189,18 +189,24 @@ function G(e) {
     ctaConfig: i,
     tooltipProps: a
   } = e, {
-    shouldUseShinyButton: o
+    shouldUseShinyButton: s
   } = y.Z.useConfig({
     location: "QuestsCardFooter"
-  });
-  return o ? (0, r.jsx)(u.gtL, L(D({}, a), {
-    "data-migration-pending": true,
-    wrapperClassName: P.ctaButtonWrapper,
-    color: c.Tt.BRAND,
-    disabled: null == i.onClick,
-    onClick: null != (t = i.onClick) ? t : true,
-    children: i.text
-  })) : (0, r.jsx)(u.zxk, L(D({}, a), {
+  }), l = (0, u.MgI)(), d = !!(null == l ? true : l.fullWidth);
+  return s ? (0, r.jsx)("div", {
+    className: o()({
+      [P.fullWidthShinyCtaButtonWrapper]: d
+    }),
+    children: (0, r.jsx)(u.gtL, L(D({}, a), {
+      "data-migration-pending": true,
+      fullWidth: true,
+      wrapperClassName: P.ctaButtonWrapper,
+      color: c.Tt.BRAND,
+      disabled: null == i.onClick,
+      onClick: null != (t = i.onClick) ? t : true,
+      children: i.text
+    }))
+  }) : (0, r.jsx)(u.zxk, L(D({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,

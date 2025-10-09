@@ -27,7 +27,7 @@ function _(e) {
     subtitle: _,
     onClick: y,
     enableHangStatus: O,
-    allowChannelTopic: v
+    showEmptyChannelTopic: v
   } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!O || !!v) && C, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
       x && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {

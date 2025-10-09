@@ -16,7 +16,7 @@ let o = (0, Chunk818083.B)({
   defaultConfig: {
     enableHangStatus: false,
     setDefaultStatus: false,
-    allowChannelTopic: true,
+    showEmptyChannelTopic: true,
     allowPermanentClear: false,
     defaultStatusVariant: "twemoji"
   },
@@ -27,7 +27,7 @@ let o = (0, Chunk818083.B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
-      allowChannelTopic: true,
+      showEmptyChannelTopic: false,
       allowPermanentClear: false,
       defaultStatusVariant: "illocons"
     }
@@ -37,7 +37,7 @@ let o = (0, Chunk818083.B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
-      allowChannelTopic: true,
+      showEmptyChannelTopic: false,
       allowPermanentClear: false,
       defaultStatusVariant: "twemoji"
     }
@@ -47,7 +47,7 @@ let o = (0, Chunk818083.B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
-      allowChannelTopic: true,
+      showEmptyChannelTopic: false,
       allowPermanentClear: false,
       defaultStatusVariant: "twemojimild"
     }
@@ -57,29 +57,9 @@ let o = (0, Chunk818083.B)({
     config: {
       enableHangStatus: true,
       setDefaultStatus: true,
-      allowChannelTopic: true,
+      showEmptyChannelTopic: false,
       allowPermanentClear: true,
       defaultStatusVariant: "twemojimild"
-    }
-  }, {
-    id: 5,
-    label: "Enable Hang Status with Twemoji - no default, allow clearing statuses",
-    config: {
-      enableHangStatus: true,
-      setDefaultStatus: false,
-      allowChannelTopic: true,
-      allowPermanentClear: true,
-      defaultStatusVariant: "twemoji"
-    }
-  }, {
-    id: 6,
-    label: "Enable Hang Status with original icons - chilling default",
-    config: {
-      enableHangStatus: true,
-      setDefaultStatus: true,
-      allowChannelTopic: true,
-      allowPermanentClear: false,
-      defaultStatusVariant: "original"
     }
   }]
 });

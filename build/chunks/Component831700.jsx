@@ -124,7 +124,7 @@ class er extends Chunk98597.ZP {
       channel: t,
       connected: n,
       enableHangStatus: i,
-      allowChannelTopic: l
+      showEmptyChannelTopic: l
     } = this.props, o = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
       hovered: a
     } = this.state;
@@ -135,7 +135,7 @@ class er extends Chunk98597.ZP {
       subtitle: o,
       hovered: Chunk442837,
       enableHangStatus: Chunk647438,
-      allowChannelTopic: Chunk120356
+      showEmptyChannelTopic: Chunk120356
     })
   }
   renderVoiceUsers() {
@@ -432,7 +432,7 @@ function el(e) {
     needSubscriptionToAccess: E
   } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([B.ZP], () => B.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
-    allowChannelTopic: R
+    showEmptyChannelTopic: R
   } = (0, Z.bN)({
     guildId: n.guild_id,
     location: "VoiceChannel"
@@ -468,7 +468,7 @@ function el(e) {
     channelInfo: M,
     resolvedUnreadSetting: d,
     enableHangStatus: A,
-    allowChannelTopic: R,
+    showEmptyChannelTopic: R,
     enableOpenTIVForPing: D,
     hasChannelInfo: null != M,
     hasStartTime: j

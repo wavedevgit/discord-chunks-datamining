@@ -24,7 +24,7 @@ let u = new Set([Chunk657707.GsA.name, Chunk657707.iWm.name, Chunk657707.FLu.nam
       hangStatusActivity: a,
       size: f,
       animate: _ = true,
-      fallbackVariant: p = "original",
+      fallbackVariant: p = "twemoji",
       userId: h
     } = e, m = (0, l.F)(h, null == a ? true : a.state), g = (0, s.tV)(h, a, p);
     if ((m[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {

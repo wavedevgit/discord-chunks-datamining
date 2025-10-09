@@ -2,9 +2,9 @@
 /** chunk id: 833858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O8: () => S,
-  V: () => I,
-  tV: () => T
+  O8: () => b,
+  V: () => g,
+  tV: () => E
 });
 var Chunk970683 = require("./970683.js"),
   Chunk797156 = require("./797156.js"),
@@ -12,14 +12,9 @@ var Chunk970683 = require("./970683.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk829290 = require("./829290.js"),
-  Chunk136779 = require("./136779.js"),
-  Chunk33346 = require("./33346.js"),
-  Chunk857042 = require("./857042.js"),
-  Chunk558532 = require("./558532.js"),
-  Chunk346554 = require("./346554.js"),
-  Chunk444305 = require("./444305.js");
+  Chunk136779 = require("./136779.js");
 
-function h(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +23,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,34 +47,12 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = () => ({
-    [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t["vkpn7+"]),
-      icon: Chunk857042
-    },
-    [Chunk505905.tN.GAMING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.lZslwM),
-      icon: Chunk558532
-    },
-    [Chunk505905.tN.FOCUSING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.b6AscH),
-      icon: Chunk346554
-    },
-    [Chunk505905.tN.BRB]: {
-      title: Chunk388032.intl.string(Chunk388032.t["30yqZW"]),
-      icon: Chunk33346
-    },
-    [Chunk505905.tN.WATCHING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.di6IFx),
-      icon: Chunk444305
-    }
-  }),
-  y = () => ({
+let p = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       icon: Chunk136779
@@ -101,7 +74,7 @@ let b = () => ({
       icon: Chunk970683.Nl
     }
   }),
-  O = () => ({
+  h = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
       emoji: {
@@ -138,7 +111,7 @@ let b = () => ({
       }
     }
   }),
-  v = () => E(m({}, O()), {
+  m = () => _(d({}, h()), {
     [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t.IeolFR),
       emoji: {
@@ -147,30 +120,28 @@ let b = () => ({
       }
     }
   }),
-  I = e => {
+  g = e => {
     switch (e) {
-      case "original":
-      default:
-        return b();
       case "illocons":
-        return y();
+        return p();
       case "twemoji":
-        return O();
+      default:
+        return h();
       case "twemojimild":
-        return v()
+        return m()
     }
   },
-  T = function(e, t) {
-    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "original";
+  E = function(e, t) {
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "twemoji";
     if ((null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null) return null;
     let r = (0, i.F)(e, t.state),
       s = r[0];
     if (s === a.tN.CUSTOM) return null;
-    let l = I(r.length > 1 ? r[1] : n);
+    let l = g(r.length > 1 ? r[1] : n);
     return s in l ? l[s] : null
   },
-  S = function(e, t) {
+  b = function(e, t) {
     var n;
-    let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "original";
-    return (null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null ? null : (0, i.F)(e, t.state)[0] === a.tN.CUSTOM ? null == t ? true : t.details : null == (n = T(e, t, r)) ? true : n.title
+    let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "twemoji";
+    return (null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null ? null : (0, i.F)(e, t.state)[0] === a.tN.CUSTOM ? null == t ? true : t.details : null == (n = E(e, t, r)) ? true : n.title
   }
