@@ -2,7 +2,7 @@
 /** chunk id: 841875, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587635 = require("./587635.js");
 
-function S() {
+function v() {
   let {
     onToggleOrbEligible: e,
     orbEligible: t,
@@ -146,10 +146,10 @@ let x = e => {
       enum: a.x.BLACK
     }], []);
     return (0, r.jsxs)("div", {
-      className: v.filterSection,
+      className: S.filterSection,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/semibold",
-        className: v.filterTitle,
+        className: S.filterTitle,
         children: E.intl.string(E.t.K1xGoK)
       }), (0, r.jsx)(y, {
         colors: n,
@@ -169,7 +169,7 @@ let x = e => {
       onToggleColor: s
     } = (0, h.S)();
     return (0, r.jsx)("div", {
-      className: v.colorSwatchRow,
+      className: S.colorSwatchRow,
       children: t.map(e => {
         let {
           color: t,
@@ -200,8 +200,8 @@ let x = e => {
       text: n,
       asContainer: true,
       children: (0, r.jsx)(d.P3F, {
-        className: i()(v.circle, {
-          [v.circleToggled]: s
+        className: i()(S.circle, {
+          [S.circleToggled]: s
         }),
         style: {
           backgroundColor: t
@@ -211,7 +211,7 @@ let x = e => {
           o("filter color ".concat(n.toLowerCase(), " ").concat(s ? "off" : "on")), a(l)
         },
         children: s && (0, r.jsx)("div", {
-          className: v.checkIcon,
+          className: S.checkIcon,
           children: (0, r.jsx)(d.sV5, {
             size: "xs",
             color: d.TVs.colors.WHITE
@@ -300,13 +300,13 @@ let x = e => {
       enum: c.h.DARK_MOODY
     }], [u]);
     return (0, r.jsxs)("div", {
-      className: v.filterSection,
+      className: S.filterSection,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/semibold",
-        className: v.filterTitle,
+        className: S.filterTitle,
         children: E.intl.string(E.t.t1Ztrq)
       }), (0, r.jsx)("div", {
-        className: v.themeRow,
+        className: S.themeRow,
         children: f.map(e => {
           let {
             name: l,
@@ -314,8 +314,8 @@ let x = e => {
             enum: c
           } = e;
           return (0, r.jsxs)(d.P3F, {
-            className: i()(v.theme, {
-              [v.themeToggled]: n.has(c)
+            className: i()(S.theme, {
+              [S.themeToggled]: n.has(c)
             }),
             onClick: () => {
               let e = n.has(c);

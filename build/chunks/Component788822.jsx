@@ -25,17 +25,17 @@ let C = e => {
     handleTransition: E
   } = e;
   null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let v = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
+  let S = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
     {
-      handleCardVisibilityChange: S
-    } = (0, u.E)(v, "home", "marketing featured block"),
+      handleCardVisibilityChange: v
+    } = (0, u.E)(S, "home", "marketing featured block"),
     x = (0, d.YG)(_, m),
     O = l.useRef(null),
     y = null == m ? true : m.bodyText,
     T = (0, o.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: O,
-    onChange: S,
+    onChange: v,
     threshold: 0,
     children: (0, r.jsxs)(i.P3F, {
       className: p.featuredBlock,
@@ -61,9 +61,9 @@ let C = e => {
         backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
-        E("shop marketing tile", v), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        E("shop marketing tile", S), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == T ? true : T.sessionId,
-          sku_id: v,
+          sku_id: S,
           page_type: "home",
           page_section: null == T ? true : T.pageSection,
           page_category: null == T ? true : T.pageCategory,
@@ -93,9 +93,9 @@ let C = e => {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", v), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            E("shop marketing take me there button", S), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == T ? true : T.sessionId,
-              sku_id: v,
+              sku_id: S,
               page_type: "home",
               page_section: null == T ? true : T.pageSection,
               page_category: null == T ? true : T.pageCategory,

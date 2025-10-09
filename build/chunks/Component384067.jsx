@@ -24,9 +24,9 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), S = l.useRef(null), [x, O] = l.useState();
+  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, S = l.useRef(null), v = l.useRef(null), [x, O] = l.useState();
   l.useEffect(() => {
-    let e = S.current;
+    let e = v.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && O(1080 * (e.naturalHeight / e.naturalWidth))
@@ -45,11 +45,11 @@ let _ = e => {
   if (null == j) return null;
   let k = b === f.AW.ORBS;
   return (0, r.jsx)(a.$, {
-    innerRef: v,
+    innerRef: S,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: v,
+      ref: S,
       className: i()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: k
       }),
@@ -58,7 +58,7 @@ let _ = e => {
           [h.extraRounded]: k
         }),
         children: (0, r.jsx)("img", {
-          ref: S,
+          ref: v,
           src: j,
           alt: _.title,
           className: i()(h.wideBannerArt, {

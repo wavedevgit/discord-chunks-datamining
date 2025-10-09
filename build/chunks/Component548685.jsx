@@ -50,7 +50,12 @@ let P = e => {
     sortOptions: U,
     shuffleProducts: V,
     showRecommendationOption: z
-  } = (0, O.Z)(P, F, A), G = (0, y.St)(W), K = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, a.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
+  } = (0, O.Z)({
+    sortedSkuIds: P,
+    isPremiumUser: F,
+    prioritizeUserDiscounts: A,
+    tab: R
+  }), G = (0, y.St)(W), K = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, a.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
     animationPhase: Q,
     startAnimation: X
   } = (0, x.y)(), J = (0, h.sp)(), $ = null != (t = null == J ? true : J.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {
@@ -156,14 +161,14 @@ let P = e => {
     }), (0, r.jsx)("div", {
       className: I.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => en ? (0, r.jsx)(S.Z, {}, t + 1) : (0, r.jsx)(b.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => en ? (0, r.jsx)(v.Z, {}, t + 1) : (0, r.jsx)(b.K, {}, t + 1))
       }) : G.slice(0, N).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Y)
           if (Q === x.g.SHUFFLE_OUT) return en ? (0, r.jsx)("div", {
             className: I.shuffleOutro,
-            children: (0, r.jsx)(S.Z, {
+            children: (0, r.jsx)(v.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t)) : (0, r.jsx)("div", {
@@ -181,7 +186,7 @@ let P = e => {
           },
           children: en && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
             className: n,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(S.Z, {
               skuId: null == e ? true : e.skuId
             })
           }) : (0, r.jsx)(E.Z, {

@@ -85,7 +85,7 @@ let I = e => {
       errorMessage: A.message
     }) : B || 0 === R.length ? (0, r.jsxs)("div", {
       className: i()(L.loadingContainer, L.feedContent),
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(S.Z, {
         isLoading: B,
         handleTransition: n,
         tab: c
@@ -107,7 +107,7 @@ let I = e => {
           f = false;
         switch (e.type) {
           case a.z.HERO:
-            d = (0, r.jsx)(v.Z, {
+            d = (0, r.jsx)(S.Z, {
               isLoading: B,
               handleTransition: n,
               heroBlock: e,
@@ -129,7 +129,7 @@ let I = e => {
               numVisibleItems: s,
               sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === a.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
-              hasSorting: c === T.AW.HOME,
+              hasSorting: c === T.AW.HOME || c === T.AW.ORBS,
               prioritizeUserDiscounts: c === T.AW.HOME,
               tab: c
             }, l);
@@ -156,7 +156,7 @@ let I = e => {
             }, l), f = true;
             break;
           case a.z.IMMERSIVE_BANNER:
-            d = (0, r.jsx)(S.Z, {
+            d = (0, r.jsx)(v.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => I(!e)
             }, l);

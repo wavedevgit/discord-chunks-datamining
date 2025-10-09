@@ -2,7 +2,7 @@
 /** chunk id: 819882, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,13 +23,13 @@ var Chunk873546 = require("./873546.js"),
   Chunk956472 = require("./956472.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
-let v = e => {
+let S = e => {
     let {
       product: t,
       selectedVariantIndex: n,
       cardRef: h,
-      onClick: v,
-      icon: S
+      onClick: S,
+      icon: v
     } = e, x = (0, d.Nd)(), O = null == x ? true : x.tab, y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), T = c.ZP.canUseCollectibles(y), j = (0, u.sp)(), {
       isPurchased: k,
       isPartiallyOwnedBundle: L
@@ -45,12 +45,12 @@ let v = e => {
       tab: O,
       hasDiscountOffer: null != B
     }), R = (0, C.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-    return P || l.tq || A || !N || O === b.AW.ORBS ? null : I || null != v || null != S ? (0, r.jsx)(i.hU, {
+    return P || l.tq || A || !N || O === b.AW.ORBS ? null : I || null != S || null != v ? (0, r.jsx)(i.hU, {
       variant: "primary",
       "aria-label": E.intl.string(E.t.SKNnqq),
-      icon: null != S ? S : i.tEF,
+      icon: null != v ? v : i.tEF,
       onClick: e => {
-        e.stopPropagation(), null != v ? v(t.skuId) : R(e)
+        e.stopPropagation(), null != S ? S(t.skuId) : R(e)
       }
     }) : (0, r.jsx)(u.k0, {
       newValue: {
@@ -65,7 +65,7 @@ let v = e => {
       })
     })
   },
-  S = e => {
+  v = e => {
     let {
       skuId: t,
       cardRef: n,
@@ -75,7 +75,7 @@ let v = e => {
     } = e, a = (0, C.LJ)(t);
     if (null == a) return null;
     let o = (0, h.W)(a, l);
-    return (0, r.jsx)(v, {
+    return (0, r.jsx)(S, {
       product: o,
       cardRef: n,
       selectedVariantIndex: l,

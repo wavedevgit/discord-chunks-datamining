@@ -2,7 +2,7 @@
 /** chunk id: 719075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,21 +24,21 @@ var Chunk951288 = require("./951288.js"),
 let E = e => {
     let {
       product: t
-    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, s.e7)([a.default], () => a.default.getCurrentUser()), v = o.ZP.canUseCollectibles(E), {
-      isDisabled: S
+    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, s.e7)([a.default], () => a.default.getCurrentUser()), S = o.ZP.canUseCollectibles(E), {
+      isDisabled: v
     } = (0, d.G)(t.skuId), {
       isPurchased: x,
       isPartiallyOwnedBundle: O
-    } = (0, g.L)(t), y = (0, u.G1)(t), T = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, v), [t, v]), k = (0, C.Iw)(t), {
+    } = (0, g.L)(t), y = (0, u.G1)(t), T = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, S), [t, S]), k = (0, C.Iw)(t), {
       displayPrices: L,
       hasSufficientOrbs: I
     } = (0, h.Ip)({
       product: t,
-      isPremiumUser: v,
+      isPremiumUser: S,
       tab: p,
       hasDiscountOffer: null != k
-    }), P = y && !v;
-    return S ? (0, r.jsx)(i.Text, {
+    }), P = y && !S;
+    return v ? (0, r.jsx)(i.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
       children: m.intl.string(m.t.wu4gyc)
@@ -57,13 +57,13 @@ let E = e => {
     }) : 0 === L.length ? null : (0, r.jsx)(f.F, {
       price: L[0],
       discount: j,
-      nitroIconType: v ? "default" : true,
+      nitroIconType: S ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: k,
       className: L[0].currency !== _.pK.DISCORD_ORB || I ? true : b.insufficientOrbs
     })
   },
-  v = e => {
+  S = e => {
     let {
       skuId: t
     } = e, n = (0, p.LJ)(t);

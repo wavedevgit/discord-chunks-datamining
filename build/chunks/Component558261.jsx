@@ -226,9 +226,9 @@ let B = e => {
     } = e, u = (0, m.Nd)(), d = null == u ? true : u.tab, g = (0, s.e7)([f.default], () => f.default.getCurrentUser()), C = p.ZP.canUseCollectibles(g), {
       isPurchased: O,
       isPartiallyOwnedBundle: y
-    } = (0, S.L)(t), k = (0, b.G1)(t), I = (0, b.rN)(t), {
+    } = (0, v.L)(t), k = (0, b.G1)(t), I = (0, b.rN)(t), {
       isDisabled: P
-    } = (0, v.G)(t.skuId), N = (0, b.ne)({
+    } = (0, S.G)(t.skuId), N = (0, b.ne)({
       product: t,
       isPartiallyOwnedBundle: y,
       isPurchased: O

@@ -45,8 +45,8 @@ function y(e) {
       setCategoryRef: m,
       handleScrollToCategory: b
     } = (0, C.xV)(p.current),
-    [E, v] = l.useState(f),
-    [S, x] = l.useState(false);
+    [E, S] = l.useState(f),
+    [v, x] = l.useState(false);
   return l.useEffect(() => {
     null != c && b(c)
   }, [c, b]), l.useEffect(() => () => {
@@ -57,8 +57,8 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    f || v(false)
-  }, [f, v]), (0, r.jsx)("div", {
+    f || S(false)
+  }, [f, S]), (0, r.jsx)("div", {
     className: i()(O.pageWrapper, {
       [O.pageWrapperFilter]: f
     }),
@@ -72,17 +72,17 @@ function y(e) {
         onScroll: h,
         children: (0, r.jsx)(T, {
           isFullScreen: t,
-          isSmallScreen: S,
+          isSmallScreen: v,
           filterBarOpen: E,
-          setFilterBarOpen: v,
+          setFilterBarOpen: S,
           tab: n,
           scrollerRef: p,
           sortedCategories: s,
           setCategoryRef: m
         })
-      }), E && !S && (0, r.jsx)("div", {
+      }), E && !v && (0, r.jsx)("div", {
         className: O.divider
-      }), E && !S && (0, r.jsx)(a.Ttm, {
+      }), E && !v && (0, r.jsx)(a.Ttm, {
         className: O.filterBar,
         children: (0, r.jsx)(_.Z, {})
       })]
@@ -106,7 +106,7 @@ let T = e => {
     scrollerRef: y,
     sortedCategories: T
   }), A = l.useCallback(e => {
-    c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == P ? true : P.sessionId,
       page_section: null == P ? true : P.pageSection,
       page_category: null == P ? true : P.pageCategory,
@@ -120,7 +120,7 @@ let T = e => {
     if (!n || !s) return;
     let e = e => {
       let t = e.target;
-      null === L.current || null === R.current || L.current.contains(t) || R.current.contains(t) || (c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      null === L.current || null === R.current || L.current.contains(t) || R.current.contains(t) || (c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == P ? true : P.sessionId,
         page_section: null == P ? true : P.pageSection,
         page_category: null == P ? true : P.pageCategory,
@@ -158,7 +158,7 @@ let T = e => {
             children: (0, r.jsx)(a.zxk, {
               onClick: () => {
                 let e = !s;
-                c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == P ? true : P.sessionId,
                   page_section: null == P ? true : P.pageSection,
                   page_category: null == P ? true : P.pageCategory,
@@ -186,7 +186,7 @@ let T = e => {
         isFullScreen: t,
         scrollerRef: y,
         tab: C
-      }, C) : (0, v.RE)(C) ? (0, r.jsx)(E.Z, {
+      }, C) : (0, S.RE)(C) ? (0, r.jsx)(E.Z, {
         isFullScreen: t,
         scrollerRef: y,
         tab: C

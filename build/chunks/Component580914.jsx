@@ -114,7 +114,7 @@ let M = (0, Chunk884697.IC)(90),
         }, [s, i, e]),
         totalCards: e ? t : 4
       }
-    })(z !== w.AW.ORBS), eh = (0, y.a)()(eg), e_ = (0, T.l)(eh).slice(0, eC), em = (0, B.St)(e_), eb = z === w.AW.ORBS ? H.intl.string(H.t["1CdL8f"]) : Y ? H.intl.string(H.t.guWAg4) : ee ? H.intl.string(H.t["/QvRam"]) : H.intl.string(H.t.xYKa1d), eE = (0, S.FF)("CollectiblesContent"), ev = (0, E.$2)(et.categorySkuId), eS = v.Z.useConfig({
+    })(z !== w.AW.ORBS), eh = (0, y.a)()(eg), e_ = (0, T.l)(eh).slice(0, eC), em = (0, B.St)(e_), eb = z === w.AW.ORBS ? H.intl.string(H.t["1CdL8f"]) : Y ? H.intl.string(H.t.guWAg4) : ee ? H.intl.string(H.t["/QvRam"]) : H.intl.string(H.t.xYKa1d), eE = (0, v.FF)("CollectiblesContent"), eS = (0, E.$2)(et.categorySkuId), ev = S.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ex = () => {
       z === w.AW.ORBS ? ((0, C.Y)({
@@ -123,7 +123,7 @@ let M = (0, Chunk884697.IC)(90),
         ctaObject: F.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: o.j.ORBS_SHOP_HERO_CTA
-      })) : (s("shop latest category hero", !eE || ev ? et.categorySkuId : true), _.default.track(F.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      })) : (s("shop latest category hero", !eE || eS ? et.categorySkuId : true), _.default.track(F.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == J ? true : J.sessionId,
         sku_id: et.categorySkuId,
         page_type: z,
@@ -189,8 +189,8 @@ let M = (0, Chunk884697.IC)(90),
                 color: "header-primary",
                 children: et.title
               }), "" !== et.summary && (0, r.jsx)(d.Text, {
-                variant: ev ? "text-lg/medium" : "text-md/normal",
-                className: ev ? D.orbsSubHeaderText : D.subHeaderText,
+                variant: eS ? "text-lg/medium" : "text-md/normal",
+                className: eS ? D.orbsSubHeaderText : D.subHeaderText,
                 style: null != et.bannerTextColor ? {
                   color: et.bannerTextColor
                 } : true,
@@ -212,7 +212,7 @@ let M = (0, Chunk884697.IC)(90),
           }),
           ref: ep,
           children: n || ef ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(eC)].map((e, t) => eS ? (0, r.jsx)(I.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
+            children: [...Array(eC)].map((e, t) => ev ? (0, r.jsx)(I.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: em.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
@@ -222,7 +222,7 @@ let M = (0, Chunk884697.IC)(90),
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: eS && (null == e ? true : e.skuId) != null ? (0, r.jsx)(L.Z, {
+                children: ev && (null == e ? true : e.skuId) != null ? (0, r.jsx)(L.Z, {
                   skuId: null == e ? true : e.skuId
                 }, e.skuId) : (0, r.jsx)(k.Z, {
                   product: e,

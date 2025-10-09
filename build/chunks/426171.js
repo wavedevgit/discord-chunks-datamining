@@ -2,8 +2,8 @@
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kp: () => S,
-  u9: () => v,
+  Kp: () => v,
+  u9: () => S,
   xV: () => x
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk647438 = require("./647438.js"),
 let m = "".concat("#").concat("itemSkuId", "="),
   b = new RegExp("^".concat(m, "(\\d+)$")),
   E = [Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
-  v = e => {
+  S = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && E.includes(t.pathname)) return () => {
@@ -32,7 +32,7 @@ let m = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  S = () => {
+  v = () => {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.COLLECTIBLES_SHOP)),
       t = (0, Chunk258939.R)(),
       n = Chunk647438.useRef(null),
@@ -41,17 +41,17 @@ let m = "".concat("#").concat("itemSkuId", "="),
       {
         analyticsLocations: E
       } = (0, Chunk906732.ZP)(m),
-      v = (0, Chunk410127.Z)();
+      S = (0, Chunk410127.Z)();
     Chunk647438.useEffect(() => {
       if (module) return;
       let t = b.exec(Chunk607070.hash);
       null != exports ? require.current = exports[1] : require.current = null
-    }, [v, module, Chunk607070.hash]);
-    let S = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    }, [S, module, Chunk607070.hash]);
+    let v = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk647438.useEffect(() => {
       if (exports) return;
       let r = null;
-      if (null != (r = module ? S : require.current)) {
+      if (null != (r = module ? v : require.current)) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -87,12 +87,12 @@ let m = "".concat("#").concat("itemSkuId", "="),
             productSkuId: Chunk647438,
             analyticsLocations: E,
             analyticsSource: m,
-            tab: v
+            tab: S
           })
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [module, E, m, exports, S, v])
+    }, [module, E, m, exports, v, S])
   },
   x = e => {
     let t = r.useRef({}),
