@@ -12,7 +12,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk526156 = require("./526156.jsx"),
   Chunk924356 = require("./924356.jsx"),
   Chunk901151 = require("./901151.jsx"),
-  Chunk931461 = require("./931461.jsx"),
   Chunk24400 = require("./24400.jsx"),
   Chunk122897 = require("./122897.jsx"),
   Chunk694569 = require("./694569.jsx"),
@@ -26,6 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk301812 = require("./301812.jsx"),
   Chunk988043 = require("./988043.jsx"),
   Chunk919539 = require("./919539.jsx"),
+  Chunk441007 = require("./441007.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk583139 = require("./583139.js"),
   Chunk981631 = require("./981631.js"),
@@ -65,7 +65,9 @@ function L() {
     }];
   return (0, Chunk951288.jsx)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
-    notice: (0, Chunk951288.jsx)(Chunk931461.I, {}),
+    notice: (0, Chunk951288.jsx)(Chunk441007.Z, {
+      page: Chunk441007.N.CONTENT_AND_SOCIAL
+    }),
     children: (0, Chunk951288.jsx)(Chunk526156.Z, {
       parentSetting: Chunk726985.s6.CONTENT_SOCIAL,
       settingsSection: Chunk981631.oAB.CONTENT_AND_SOCIAL,

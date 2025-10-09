@@ -1,0 +1,29 @@
+/** Chunk was on web.js **/
+/** chunk id: 116233, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => u
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk493683 = require("./493683.js"),
+  Chunk631885 = require("./631885.js"),
+  Chunk907995 = require("./907995.jsx"),
+  Chunk342386 = require("./342386.js"),
+  Chunk484710 = require("./484710.js"),
+  Chunk345909 = require("./345909.js");
+
+function u() {
+  let e = (0, Chunk631885.ZM)(),
+    t = () => {
+      (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
+        recipientIds: module
+      })
+    };
+  return (0, Chunk951288.jsx)(Chunk907995.f, {
+    label: Chunk345909.default.i284fX,
+    labelHook: exports,
+    noticeType: Chunk484710.nq.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
+    count: module.length
+  })
+}
