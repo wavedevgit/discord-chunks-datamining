@@ -106,12 +106,11 @@ class z extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk343396.accountWarningBodyText,
           children: Chunk388032.intl.string(Chunk388032.t.qKs3vr)
-        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-          look: Chunk755721.iL.OUTLINED,
-          size: Chunk755721.Ph.SMALL,
-          color: Chunk755721.zx.Colors.WHITE,
-          onClick: () => Chunk952306.Z.openClaimAccountModal(),
-          children: Chunk388032.intl.string(Chunk388032.t["7psymp"])
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          variant: "secondary",
+          size: "sm",
+          text: Chunk388032.intl.string(Chunk388032.t["7psymp"]),
+          onClick: () => Chunk952306.Z.openClaimAccountModal()
         })]
       });
       return (0, Chunk951288.jsx)(Chunk481060.ToO, {
