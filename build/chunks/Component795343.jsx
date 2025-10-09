@@ -38,7 +38,7 @@ function j(e) {
   } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: P
-  } = (0, v.Z)(), N = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, S.Z)(), N = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: A,
     totalCount: R,
@@ -107,7 +107,7 @@ function j(e) {
           [y.loadIn]: G
         }),
         ref: W,
-        children: [q && [...Array(z)].map((e, t) => X ? (0, r.jsx)(S.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !q && M.map((e, t) => {
+        children: [q && [...Array(z)].map((e, t) => X ? (0, r.jsx)(v.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !q && M.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {

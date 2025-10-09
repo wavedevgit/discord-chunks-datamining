@@ -2,7 +2,7 @@
 /** chunk id: 501431, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => S,
+  A: () => v,
   S: () => b
 }), require("./388685.js"), require("./781311.js"), require("./642613.js"), require("./49124.js");
 var Chunk647438 = require("./647438.js"),
@@ -238,7 +238,7 @@ let p = {
       search: "" !== i ? i : true
     }
   },
-  S = () => {
+  v = () => {
     let {
       onSetResponse: e,
       setSearchError: t,

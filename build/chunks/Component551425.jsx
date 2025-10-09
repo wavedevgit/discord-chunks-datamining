@@ -116,23 +116,26 @@ let b = Chunk481060.EFr.SIZE_152,
       product: n,
       isFetching: l
     } = (0, f.T)(t.skuId, true);
-    if (l || null == n) return null;
+    if (l || null == n) return (0, i.jsx)("div", {
+      className: h.spinnerContainer,
+      children: (0, i.jsx)(a.$jN, {})
+    });
     if (n.type === r.Z.BUNDLE) return 0 === n.items.length ? null : (0, i.jsx)(j, {
       product: n
     });
-    let a = null == n ? true : n.items[0];
-    switch (null == a ? true : a.type) {
+    let s = null == n ? true : n.items[0];
+    switch (null == s ? true : s.type) {
       case r.Z.AVATAR_DECORATION:
         return (0, i.jsx)(O, {
-          item: a
+          item: s
         });
       case r.Z.PROFILE_EFFECT:
         return (0, i.jsx)(v, {
-          item: a
+          item: s
         });
       case r.Z.NAMEPLATE:
         return (0, i.jsx)(P, {
-          item: a
+          item: s
         });
       default:
         return null != t.giftStyle ? (0, i.jsx)(c.Z, {

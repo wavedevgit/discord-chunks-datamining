@@ -23,12 +23,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk213301 = require("./213301.js");
-let v = Chunk647438.memo(function(e) {
+let S = Chunk647438.memo(function(e) {
     let {
       product: t,
       hideProductName: n,
       hideVariantSwitcher: s,
-      hidePrice: v,
+      hidePrice: S,
       hidePrimaryCTA: x,
       hideSecondaryCTA: O,
       badgeOverride: y,
@@ -52,43 +52,43 @@ let v = Chunk647438.memo(function(e) {
       onChange: W,
       threshold: 0,
       children: (0, r.jsx)("div", {
-        className: S.baseProductCardHoverContainer,
+        className: v.baseProductCardHoverContainer,
         children: (0, r.jsx)(o.kL8, {
           ref: M,
           onClick: null != j ? j : U,
           "aria-label": D,
-          className: i()(w, S.baseProductCardContainer),
+          className: i()(w, v.baseProductCardContainer),
           onFocus: () => null == P ? true : P(t.skuId),
           onBlur: () => null == N ? true : N(t.skuId),
           onMouseEnter: () => null == L ? true : L(t.skuId),
           onMouseLeave: () => null == I ? true : I(t.skuId),
           children: (0, r.jsxs)("div", {
-            className: S.baseProductCardContentContainer,
+            className: v.baseProductCardContentContainer,
             children: [(0, r.jsx)(g.Z, {
               skuId: t.skuId,
               badgeOverride: y,
               className: Z
             }), (0, r.jsxs)("div", {
-              className: S.innerContainer,
+              className: v.innerContainer,
               children: [(0, r.jsxs)("div", {
-                className: i()(S.baseProductCardDetailsContainer, {
-                  [S.hasVariantSwitcher]: G
+                className: i()(v.baseProductCardDetailsContainer, {
+                  [v.hasVariantSwitcher]: G
                 }),
                 children: [!n && (0, r.jsx)(f.Z, {
                   skuId: t.skuId,
                   className: R
                 }), G && (0, r.jsx)("div", {
-                  className: S.hoveredVariantSwitcher,
+                  className: v.hoveredVariantSwitcher,
                   children: z
                 })]
               }), (0, r.jsxs)("div", {
-                className: S.baseProductCardFooter,
-                children: [!v && (0, r.jsx)(p.Z, {
+                className: v.baseProductCardFooter,
+                children: [!S && (0, r.jsx)(p.Z, {
                   skuId: t.skuId
                 }), G && z]
               })]
             }), (0, r.jsx)("div", {
-              className: S.innerHover,
+              className: v.innerHover,
               children: (!x || !O) && (0, r.jsxs)(o.hE2, {
                 wrap: false,
                 fullWidth: true,
@@ -132,7 +132,7 @@ let v = Chunk647438.memo(function(e) {
       }
       return l
     }(e, ["skuId"]), l = (0, _.LJ)(t);
-    return null == l ? null : (0, r.jsx)(v, function(e) {
+    return null == l ? null : (0, r.jsx)(S, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

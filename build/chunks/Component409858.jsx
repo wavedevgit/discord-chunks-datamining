@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
-function $(e, t, n) {
+function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -78,8 +78,8 @@ let J = e => {
     return r.useEffect(() => {
       var e;
       if (t !== V.wZ8.CONFIRM) return;
-      let i = T.Z.getSoundById(n);
-      (0, A.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
+      let i = A.Z.getSoundById(n);
+      (0, C.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
     }, [t, n]), null
   };
 class ee extends Chunk647438.Component {
@@ -304,7 +304,7 @@ class ee extends Chunk647438.Component {
       opened: v,
       emojiURL: j,
       isPremiumAppGift: x
-    } = this.state, S = Chunk594174.default.getCurrentUser(), _ = this.step === Chunk981631.wZ8.ERROR, A = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk120356.userId === Chunk313201.id;
+    } = this.state, S = Chunk594174.default.getCurrentUser(), w = this.step === Chunk981631.wZ8.ERROR, C = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk120356.userId === Chunk313201.id;
     switch (this.step) {
       case Chunk981631.wZ8.ERROR:
         null == Chunk533307 || Chunk533307(Chunk120356, false);
@@ -312,7 +312,7 @@ class ee extends Chunk647438.Component {
       case Chunk981631.wZ8.SUCCESS:
         null == Chunk533307 || Chunk533307(Chunk120356, true)
     }
-    let T = (0, Chunk164670.K$)(module);
+    let A = (0, Chunk164670.K$)(module);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {
@@ -415,7 +415,7 @@ class ee extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), $(this, "state", {
+    super(...e), X(this, "state", {
       error: null,
       accepted: false,
       opened: false,
@@ -424,11 +424,11 @@ class ee extends Chunk647438.Component {
       step: true,
       emojiURL: true,
       isPremiumAppGift: false
-    }), $(this, "modalRef", r.createRef()), $(this, "handleOpen", () => {
+    }), X(this, "modalRef", r.createRef()), X(this, "handleOpen", () => {
       this.setState({
         opened: true
       })
-    }), $(this, "handleAccept", async () => {
+    }), X(this, "handleAccept", async () => {
       let {
         giftCode: e,
         channelContext: t,
@@ -449,17 +449,17 @@ class ee extends Chunk647438.Component {
           error: e
         })
       }
-    }), $(this, "handleGoToLibrary", () => {
+    }), X(this, "handleGoToLibrary", () => {
       let {
         onClose: e,
         libraryApplication: t
       } = this.props;
-      (0, _.uL)(V.Z5c.APPLICATION_LIBRARY, {
+      (0, w.uL)(V.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       }), e()
-    }), $(this, "getDefaultAnimationStatus", () => this.step === V.wZ8.OPEN ? H.SR.IDLE : H.SR.ACTION), $(this, "getIdleAnimationStatus", () => {
+    }), X(this, "getDefaultAnimationStatus", () => this.step === V.wZ8.OPEN ? H.SR.IDLE : H.SR.ACTION), X(this, "getIdleAnimationStatus", () => {
       if (this.step !== V.wZ8.OPEN) return H.SR.LOOP
     })
   }
@@ -470,10 +470,10 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
     } = e, n = R.Z.get(t.skuId), i = null != n ? b.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
     return {
       sku: n,
-      libraryApplication: null != n && (null == t ? true : t.entitlementBranches) != null ? (0, L.z2)(t.entitlementBranches, n, E.Z) : null,
+      libraryApplication: null != n && (null == t ? true : t.entitlementBranches) != null ? (0, L.z2)(t.entitlementBranches, n, N.Z) : null,
       application: i,
       subscriptionPlan: null != t.subscriptionPlanId ? (0, M.oE)(t.subscriptionPlanId) : null,
-      accepting: C.Z.getIsAccepting(t.code),
+      accepting: T.Z.getIsAccepting(t.code),
       useReducedMotion: r
     }
   })(ee),
@@ -502,7 +502,7 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         return r
       }(e, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]);
     let h = (0, S.Dt)(),
-      b = (0, o.e7)([C.Z], () => C.Z.get(l)),
+      b = (0, o.e7)([T.Z], () => T.Z.get(l)),
       y = (0, p.ZP)(),
       {
         analyticsLocations: P
@@ -517,7 +517,7 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          $(e, t, n[t])
+          X(e, t, n[t])
         })
       }
       return e

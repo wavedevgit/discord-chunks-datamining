@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js");
 let E = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function S(e) {
+function v(e) {
   let {
     tab: t,
     isFullScreen: n,
@@ -32,8 +32,8 @@ function S(e) {
     transitionState: c,
     updateAnalyticsState: u,
     refreshCategories: h
-  } = e, S = v();
-  x(S);
+  } = e, v = S();
+  x(v);
   let O = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
     [y, j] = l.useState(true),
     k = l.useCallback(async (e, t, r) => {
@@ -46,9 +46,9 @@ function S(e) {
     {
       searchError: L
     } = (0, f.a)();
-  return T && null != L ? (0, r.jsx)(m.Z, {}) : null != S ? (0, r.jsx)(C.Z, {
+  return T && null != L ? (0, r.jsx)(m.Z, {}) : null != v ? (0, r.jsx)(C.Z, {
     onRetry: h,
-    errorMessage: S,
+    errorMessage: v,
     errorOrigin: C.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     isFullScreen: n,
@@ -63,7 +63,7 @@ function S(e) {
     onUnmount: () => j(true)
   })
 }
-let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+let S = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   x = e => {
     let t = (0, s.e7)([a.default], () => a.default.getCurrentUser()),
       {

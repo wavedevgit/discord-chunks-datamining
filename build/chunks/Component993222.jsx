@@ -2,7 +2,7 @@
 /** chunk id: 993222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,26 +27,26 @@ let E = e => {
       product: t,
       badgeOverride: n,
       className: l
-    } = e, E = (0, d.Nd)(), S = null == E ? true : E.tab, {
-      isPurchased: v,
+    } = e, E = (0, d.Nd)(), v = null == E ? true : E.tab, {
+      isPurchased: S,
       isPartiallyOwnedBundle: x
     } = (0, f.L)(t), O = (0, i.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (0, i.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
       isOrbExclusive: T
     } = (0, h.Ip)({
       product: t,
       isPremiumUser: j,
-      tab: S,
+      tab: v,
       hasDiscountOffer: null != k
     }), L = (0, g.Yq)(t.skuId), I = (null == O ? true : O.skuId) === _.bu && (0, g.WW)(t.skuId);
     if (n === p.Zh.NONE) return null;
     let P = null;
-    return (n === p.Zh.NEW ? P = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? P = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (P = m.intl.string(m.t.S6kE9v)), null == P && (x || v || !L ? T ? P = m.intl.string(m.t["0TmQRE"]) : I && (P = m.intl.string(m.t.S6kE9v)) : P = m.intl.string(m.t.y2b7CA)), null == P) ? null : (0, r.jsx)(a.IGR, {
+    return (n === p.Zh.NEW ? P = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? P = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (P = m.intl.string(m.t.S6kE9v)), null == P && (x || S || !L ? T ? P = m.intl.string(m.t["0TmQRE"]) : I && (P = m.intl.string(m.t.S6kE9v)) : P = m.intl.string(m.t.y2b7CA)), null == P) ? null : (0, r.jsx)(a.IGR, {
       text: P,
       disableColor: true,
       className: s()(l, b.productCardBadge)
     })
   },
-  S = e => {
+  v = e => {
     let {
       skuId: t,
       badgeOverride: n,
