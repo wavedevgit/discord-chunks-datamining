@@ -83,7 +83,7 @@ function l(e) {
     function r() {
       return "function" == typeof n ? n(_) : Promise.resolve(n)
     }
-    return t && null !== _ && r().then(t => {
+    return (t && null !== _ && o || !o) && r().then(t => {
       e || (null != i && (t = t.map(i)), c(e => s(a({}, e), {
         options: t,
         loading: false
@@ -91,7 +91,7 @@ function l(e) {
     }), () => {
       e = true
     }
-  }, [t, n, _, i]), {
+  }, [t, n, _, i, o]), {
     options: u,
     loading: d,
     onQueryChange: r.useCallback(e => {

@@ -74,17 +74,17 @@ function p(e) {
     hideLabel: n,
     hideTags: l,
     placeholder: u,
-    required: _,
-    description: p,
-    helperText: h,
-    errorMessage: m,
-    successMessage: g,
-    wrapTags: E,
-    maxOptionsVisible: b = 5
-  } = e, y = f(e, ["label", "hideLabel", "hideTags", "placeholder", "required", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "maxOptionsVisible"]);
+    description: _,
+    helperText: p,
+    errorMessage: h,
+    successMessage: m,
+    wrapTags: g,
+    maxOptionsVisible: E = 5
+  } = e, b = f(e, ["label", "hideLabel", "hideTags", "placeholder", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "maxOptionsVisible"]);
   let {
-    disabled: O
-  } = y, {
+    disabled: y,
+    required: O
+  } = b, {
     isOpen: v,
     setIsOpen: I,
     refs: T,
@@ -95,7 +95,7 @@ function p(e) {
     placement: "bottom",
     matchReferenceWidth: true
   });
-  return (0, r.jsxs)(a.uz, d(c({}, y), {
+  return (0, r.jsxs)(a.uz, d(c({}, b), {
     isCollapsible: true,
     isOpen: v,
     setIsOpen: I,
@@ -104,13 +104,13 @@ function p(e) {
       hideLabel: n,
       hideTags: l,
       placeholder: u,
-      required: _,
-      disabled: O,
-      description: p,
-      helperText: h,
-      errorMessage: m,
-      successMessage: g,
-      wrapTags: E,
+      required: O,
+      disabled: y,
+      description: _,
+      helperText: p,
+      errorMessage: h,
+      successMessage: m,
+      wrapTags: g,
       showChevronButton: true,
       ref: T.setReference
     }, C())), v && (0, r.jsx)("div", d(c({
@@ -120,7 +120,7 @@ function p(e) {
     }, A()), {
       children: (0, r.jsx)(a.px, {
         renderListItem: e => (0, r.jsx)(o.W, c({}, e)),
-        maxVisibleItems: b
+        maxVisibleItems: E
       })
     }))]
   }))

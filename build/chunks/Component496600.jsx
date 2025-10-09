@@ -107,26 +107,27 @@ function x(e) {
     formatOption: h,
     onSelectionChange: m,
     value: g,
-    matchSorterOptions: b
-  } = u, O = i.useId(), v = i.useRef(null), [I, T] = i.useState(null), [S, A] = i.useState(false), [N, R] = i.useState(""), {
-    options: w,
-    loading: x,
-    onQueryChange: L
+    matchSorterOptions: b,
+    required: O
+  } = u, v = i.useId(), I = i.useRef(null), [T, S] = i.useState(null), [A, N] = i.useState(false), [R, w] = i.useState(""), {
+    options: x,
+    loading: L,
+    onQueryChange: M
   } = (0, y.U)({
     active: null == o || o,
     options: c,
     renderOption: h
   });
   i.useEffect(() => {
-    L(N)
-  }, [L, N]), i.useEffect(() => {
-    o || T(null)
-  }, [o, T]);
-  let M = i.useMemo(() => "" === N ? w : (0, s.Lu)(w, N, null != b ? b : D), [w, N, b]),
-    k = i.useMemo(() => null == g || Array.isArray(g) && 0 === g.length ? [] : (Array.isArray(g) ? g : [g]).map(e => w.find(t => t.value === e)).filter(e => null != e), [g, w]),
-    j = f || _,
-    U = i.useCallback(e => {
-      if (j) return;
+    M(R)
+  }, [M, R]), i.useEffect(() => {
+    o || S(null)
+  }, [o, S]);
+  let k = i.useMemo(() => "" === R ? x : (0, s.Lu)(x, R, null != b ? b : D), [x, R, b]),
+    j = i.useMemo(() => null == g || Array.isArray(g) && 0 === g.length ? [] : (Array.isArray(g) ? g : [g]).map(e => x.find(t => t.value === e)).filter(e => null != e), [g, x]),
+    U = f || _,
+    G = i.useCallback(e => {
+      if (U || O && 0 === e.length) return;
       let t = Array.from(e);
       if ("multiple" === d && t.length < 1) m([]);
       else if ("multiple" === d) m(t.map(e => e.value));
@@ -134,31 +135,31 @@ function x(e) {
         var n, r;
         m(null != (r = null == (n = t[0]) ? true : n.value) ? r : null)
       }
-      p && o && (null == l || l(false)), A(false)
-    }, [j, d, m, p, o, l]),
-    G = k.length > 0;
+      p && o && (null == l || l(false)), N(false)
+    }, [U, d, m, p, o, l, O]),
+    B = j.length > 0;
   return (0, r.jsx)(E.Z.Provider, {
     value: C({
-      activeDescendantIndex: I,
-      setActiveDescendantIndex: T,
-      listBoxId: O,
-      inputFieldRef: v,
-      isInert: j,
+      activeDescendantIndex: T,
+      setActiveDescendantIndex: S,
+      listBoxId: v,
+      inputFieldRef: I,
+      isInert: U,
       isCollapsible: n,
-      hasValue: G,
+      hasValue: B,
       value: g,
-      options: w,
-      filteredOptions: M,
-      selectedOptions: k,
+      options: x,
+      filteredOptions: k,
+      selectedOptions: j,
       maxOptionsVisible: a,
-      query: N,
-      setQuery: R,
-      loading: x,
-      handleSelectionChange: U,
+      query: R,
+      setQuery: w,
+      loading: L,
+      handleSelectionChange: G,
       isOpen: o,
       setIsOpen: l,
-      isEditing: S,
-      setIsEditing: A
+      isEditing: A,
+      setIsEditing: N
     }, u),
     children: t
   })

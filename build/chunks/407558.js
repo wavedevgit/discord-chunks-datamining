@@ -43,7 +43,8 @@ function s(e) {
           elements: n
         } = e;
         h.current && Object.assign(n.floating.style, {
-          minWidth: "".concat(t.reference.width, "px")
+          minWidth: "".concat(t.reference.width, "px"),
+          width: "".concat(t.reference.width, "px")
         }), null != p.current && Object.assign(n.floating.style, {
           width: "".concat(p.current(t.reference), "px")
         }), null != _.current && Object.assign(n.floating.style, {

@@ -8,7 +8,7 @@ require.d(exports, {
 
 function r(e, t, n) {
   let r = [...t];
-  return t.includes(n) ? r = t.filter(e => e.id !== n.id) : "multiple" === e ? r.push(n) : r = [n], r
+  return "multiple" === e ? t.includes(n) ? r = t.filter(e => e.id !== n.id) : r.push(n) : r = [n], r
 }
 
 function i() {

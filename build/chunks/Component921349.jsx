@@ -538,52 +538,53 @@ function B(e) {
       options: i,
       required: a,
       disabled: o,
-      value: s,
-      multi: l,
-      clearable: c,
-      closeOnSelect: u,
-      filter: d,
-      matchSorterOptions: f,
-      "aria-required": _,
-      onChange: p,
-      onSearchChange: h,
-      onKeyDown: m,
-      onFocus: g,
-      onBlur: E,
-      debounceTime: b,
-      label: O,
-      hideLabel: v,
-      placeholder: I,
-      hidePills: T,
-      badge: A,
-      icon: C,
-      description: N,
-      helperText: P,
-      errorMessage: w,
-      successMessage: D,
-      renderOptionLabel: x,
-      renderOptionPrefix: L,
-      renderOptionSuffix: M
+      isDisabled: s,
+      value: l,
+      multi: c,
+      clearable: u,
+      closeOnSelect: d = true,
+      filter: f,
+      matchSorterOptions: _,
+      "aria-required": p,
+      onChange: h,
+      onSearchChange: m,
+      onKeyDown: g,
+      onFocus: E,
+      onBlur: b,
+      debounceTime: O,
+      label: v,
+      hideLabel: I,
+      placeholder: T,
+      hidePills: A,
+      badge: C,
+      icon: N,
+      description: P,
+      helperText: w,
+      errorMessage: D,
+      successMessage: x,
+      renderOptionLabel: L,
+      renderOptionPrefix: M,
+      renderOptionSuffix: k
     } = e,
-    k = null != b || "function" == typeof i || null != x;
-  if (t && !k) {
-    let e = null != d && "function" == typeof d ? d : true;
+    j = null != O || "function" == typeof i || null != L;
+  if (t && !j) {
+    let e = null != f && "function" == typeof f ? f : true;
     return (0, r.jsx)(y.V, {
       id: n,
-      selectionMode: l ? "multiple" : "single",
-      required: a || _,
-      disabled: o,
-      label: O,
-      hideTags: T,
-      hideLabel: v,
-      placeholder: I,
-      badge: A,
-      icon: C,
-      description: N,
-      helperText: P,
-      errorMessage: w,
-      successMessage: D,
-      value: s,
+      selectionMode: c ? "multiple" : "single",
+      required: a || p,
+      disabled: o || s,
+      label: v,
+      hideTags: A,
+      hideLabel: I,
+      placeholder: T,
+      badge: C,
+      icon: N,
+      description: P,
+      helperText: w,
+      errorMessage: D,
+      successMessage: x,
+      value: l,
       options: i,
       formatOption: e => {
         let {
@@ -597,25 +598,25 @@ function B(e) {
           value: n,
           label: r,
           disabled: i,
-          leading: null == L ? true : L(e, {
+          leading: null == M ? true : M(e, {
             inPill: false,
             inDropdown: true
           }),
-          trailing: null == M ? true : M(e, {
+          trailing: null == k ? true : k(e, {
             inPill: false,
             inDropdown: true
           })
         }
       },
-      onSelectionChange: p,
+      onSelectionChange: h,
       customMatchSorter: e,
-      matchSorterOptions: f,
-      onQueryChange: e => null == h ? true : h(e.target.value),
-      onKeyDown: m,
-      onFocus: g,
-      onBlur: E,
-      clearable: c,
-      closeOnSelect: u
+      matchSorterOptions: _,
+      onQueryChange: e => null == m ? true : m(e.target.value),
+      onKeyDown: g,
+      onFocus: E,
+      onBlur: b,
+      clearable: u,
+      closeOnSelect: d
     })
   }
   return (0, r.jsx)(G, R({}, e))
