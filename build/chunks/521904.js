@@ -2837,19 +2837,19 @@ let {
     CHECKBOX_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       }
     },
@@ -8075,19 +8075,19 @@ let {
     RADIO_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       }
     },
@@ -9940,19 +9940,19 @@ let {
     SWITCH_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "BLURPLE_50",
+        raw: "BLURPLE_65",
         opacity: 1
       }
     },
