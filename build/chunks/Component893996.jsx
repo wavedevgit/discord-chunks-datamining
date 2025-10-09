@@ -22,6 +22,8 @@ function o(e) {
       label: n,
       description: o,
       children: t
-    }), (0, r.jsx)(i.izJ, {})]
+    }), (0, r.jsx)(i.izJ, {
+      gap: 32
+    })]
   })
 }

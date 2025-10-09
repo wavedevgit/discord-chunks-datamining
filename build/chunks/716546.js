@@ -2,14 +2,15 @@
 /** chunk id: 716546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 }), require("./388685.js");
 var Chunk668781 = require("./668781.js"),
+  Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk58406 = require("./58406.js"),
   Chunk761274 = require("./761274.js");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,25 +18,25 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class l extends Chunk58406.g {
+class c extends Chunk58406.g {
   requestPermissionCore(e, t) {
     var n;
-    return this.asyncify(null == (n = this.nativeUtils) ? true : n.nativePermssionRequestAuthorization, e, t)
+    return this.asyncify(this.platformAlwaysPermits || null == (n = this.nativeUtils) ? true : n.nativePermssionRequestAuthorization, e, t)
   }
   hasPermissionCore(e, t) {
     var n;
-    return this.asyncify(null == (n = this.nativeUtils) ? true : n.nativePermssionHasAuthorization, e, t)
+    return this.asyncify(this.platformAlwaysPermits || null == (n = this.nativeUtils) ? true : n.nativePermssionHasAuthorization, e, t)
   }
   asyncify(e, t, n) {
-    let r = l.requestTypeLookup[t];
+    let r = c.requestTypeLookup[t];
     if (true === r) return Promise.resolve(true);
-    let i = () => null == e ? Promise.resolve(o.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
+    let i = () => null == e ? Promise.resolve(s.NZ.AUTHORIZED) : new Promise((t, n) => e(t, r));
     return this.requestAuthorization(t, i, n)
   }
   openSettings(e) {
     var t;
     if ((null == (t = this.nativeUtils) ? true : t.nativePermissionOpenSettings) == null) return;
-    let n = l.requestTypeLookup[e];
+    let n = c.requestTypeLookup[e];
     true !== n && this.nativeUtils.nativePermissionOpenSettings(n)
   }
   didHavePermission(e) {
@@ -58,14 +59,14 @@ class l extends Chunk58406.g {
     })
   }
   constructor(...e) {
-    super(...e), s(this, "nativeUtils", i.ZP.getDiscordUtils())
+    super(...e), l(this, "nativeUtils", a.ZP.getDiscordUtils()), l(this, "platformAlwaysPermits", (0, i.isLinux)() || (0, i.isWindows)())
   }
 }
-s(l, "requestTypeLookup", {
+l(c, "requestTypeLookup", {
   [Chunk761274.Eu.CAMERA]: Chunk998502.jK.Camera,
   [Chunk761274.Eu.AUDIO]: Chunk998502.jK.Microphone,
   [Chunk761274.Eu.PHOTOS]: Chunk998502.jK.Photo,
   [Chunk761274.Eu.INPUT_MONITORING]: Chunk998502.jK.InputMonitoring,
   [Chunk761274.Eu.SCREEN_RECORDING]: Chunk998502.jK.ScreenRecording
 });
-let c = new l
+let u = new c
