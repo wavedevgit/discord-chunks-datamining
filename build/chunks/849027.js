@@ -12,7 +12,7 @@ var Chunk430198 = require("./430198.js"),
   Chunk931261 = require("./931261.js"),
   Chunk994592 = require("./994592.js"),
   Chunk444230 = require("./444230.js"),
-  Chunk634952 = require("./634952.js"),
+  Chunk755458 = require("./755458.js"),
   Chunk953252 = require("./953252.js"),
   Chunk911560 = require("./911560.js"),
   Chunk592125 = require("./592125.js"),
@@ -52,8 +52,8 @@ async function O(e) {
       returntrue;
     case y.oC.REPORT_TO_MOD:
       return null != O && (0, f.Z)(O);
-    case y.oC.PORTKEY:
-      return (0, d.ZO)(t, "isAccessibleChannelOrThreadPath") && null != O && O.features.has(b.oNc.GAME_SERVERS);
+    case y.oC.GAME_SERVERS:
+      return (0, d.v$)(t, "isAccessibleChannelOrThreadPath") && null != O && O.features.has(b.oNc.GAME_SERVERS);
     default:
       (0, g.vE)(n)
   }

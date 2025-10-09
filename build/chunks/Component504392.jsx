@@ -13,9 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk984370 = require("./984370.jsx"),
   Chunk703656 = require("./703656.js"),
-  Chunk744993 = require("./744993.js"),
-  Chunk634952 = require("./634952.js"),
-  Chunk248641 = require("./248641.jsx"),
+  Chunk905551 = require("./905551.js"),
+  Chunk755458 = require("./755458.js"),
+  Chunk773149 = require("./773149.jsx"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
   Chunk639777 = require("./639777.js"),
@@ -41,9 +41,9 @@ function L(e) {
   let {
     guildId: t,
     powerupListingId: o
-  } = e, L = (0, m.A0)(t, "GuildPowerupsOverview");
+  } = e, L = (0, m.BU)(t, "GuildPowerupsOverview");
   i.useEffect(() => {
-    L && (0, f.po)(t)
+    L && (0, f.ce)(t)
   }, [t, L]), i.useEffect(() => {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, y.Wj)(t);
@@ -196,10 +196,10 @@ function L(e) {
                       group: e.group,
                       powerups: e.powerups
                     }, "powerup-group-".concat(e.group));
-                  case "portkey":
+                  case "gameServer":
                     return (0, r.jsx)(g.Z, {
                       guildId: t
-                    }, "powerup-portkey")
+                    }, "powerup-game-server")
                 }
               })
             })]
@@ -209,9 +209,9 @@ function L(e) {
         className: k.sidebarContainer,
         children: [M ? (0, r.jsx)(I.Z, {
           guildId: t
-        }) : (0, r.jsx)(w.Z, {
+        }) : (0, r.jsx)(E.Z, {
           guildId: t
-        }), (0, r.jsx)(E.Z, {
+        }), (0, r.jsx)(w.Z, {
           guildId: t
         })]
       })]

@@ -46,7 +46,7 @@ function a(e, t, n) {
     })
   }
   return n && e === i.Us.PERK && o.push({
-      type: "portkey"
+      type: "gameServer"
     }),
     function(e) {
       let t = e.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === r.IN),

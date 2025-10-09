@@ -40,7 +40,7 @@ function b(e) {
     notificationConfig: C
   } = (0, f._)(t, "GuildPowerupNotificationContainer"), I = [];
   j && I.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [w, E] = (0, a.ZT)(I, t), Z = null != w && null != C, P = [];
+  let [E, w] = (0, a.ZT)(I, t), Z = null != E && null != C, P = [];
   Z || h || P.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
   let [y, T] = (0, a.US)(P), N = (e => {
     let n = [];
@@ -50,7 +50,7 @@ function b(e) {
     }, "expiring-powerups")), Z && n.push((0, r.jsx)(d.Z, {
       notificationConfig: C,
       markAsDismissed: e => {
-        E(e)
+        w(e)
       }
     }, "rollback-notification")), null != e && e === l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(u.Z, {
       markAsDismissed: T

@@ -38,6 +38,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk645973 = require("./645973.jsx"),
   Chunk903502 = require("./903502.jsx"),
   Chunk604776 = require("./604776.jsx"),
+  Chunk895182 = require("./895182.jsx"),
   Chunk912072 = require("./912072.jsx"),
   Chunk272193 = require("./272193.jsx"),
   Chunk685560 = require("./685560.jsx"),
@@ -57,7 +58,6 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk178821 = require("./178821.jsx"),
   Chunk891401 = require("./891401.jsx"),
   Chunk958328 = require("./958328.jsx"),
-  Chunk113231 = require("./113231.jsx"),
   Chunk315384 = require("./315384.jsx"),
   Chunk107606 = require("./107606.jsx"),
   Chunk514866 = require("./514866.jsx"),
@@ -305,10 +305,10 @@ function eE() {
       group: Chunk621060.v0.BOOSTING,
       render: () => (0, Chunk951288.jsx)(Chunk685560.Z, {})
     }), module.push({
-      id: "portkey",
-      name: "Portkey",
+      id: "game_server",
+      name: "GameServer",
       group: Chunk621060.v0.BOOSTING,
-      render: () => (0, Chunk951288.jsx)(Chunk113231.Z, {})
+      render: () => (0, Chunk951288.jsx)(Chunk895182.Z, {})
     }), module.push({
       id: "language",
       name: "Language",
@@ -406,7 +406,7 @@ function eO(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(z.Gk, {
+  }), (0, a.jsxs)(B.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
       className: eC.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -426,7 +426,7 @@ function eO(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(z.Br, {
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(B.Br, {
       className: ey.layerContainer
     })]
   })

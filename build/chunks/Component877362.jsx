@@ -57,10 +57,10 @@ function T(e) {
       className: Z.textContainer,
       children: [(0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
-        children: E.intl.string(S ? w.default.KSWK1d : w.default.XXXX5u)
+        children: w.intl.string(S ? E.default.KSWK1d : E.default.XXXX5u)
       }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
-        children: E.intl.format(S ? w.default["7fWTg4"] : w.default["7PXeeX"], {
+        children: w.intl.format(S ? E.default["7fWTg4"] : E.default["7PXeeX"], {
           onClick: () => {
             (0, p.f)({
               guildId: i,
@@ -114,7 +114,7 @@ function T(e) {
         colorStrings: C.colorStrings
       }),
       className: o()(Z.content, Z.exampleMessage),
-      message: E.intl.string(E.t["6OSasb"]),
+      message: w.intl.string(w.t["6OSasb"]),
       decorations: (0, r.jsx)(c.Ucv, {
         color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
         className: Z.boostIcon

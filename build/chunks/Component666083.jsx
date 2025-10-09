@@ -1,7 +1,7 @@
-/** Chunk was on 61268 **/
+/** Chunk was on 23735 **/
 /** chunk id: 666083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => d
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,34 +13,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk372654 = require("./372654.js"),
   Chunk477487 = require("./477487.js");
 
-function p(e) {
+function d(e) {
   var t, n, {
-      title: p,
-      description: d,
+      title: d,
+      description: p,
       image: b,
-      button: m
+      button: g
     } = e,
-    g = function(e, t) {
+    m = function(e, t) {
       if (null == e) return {};
       var n, r, a = function(e, t) {
         if (null == e) return {};
         var n, r, a = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
         return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
       return a
     }(e, ["title", "description", "image", "button"]);
-  let O = (0, i.e7)([l.Z], () => l.Z.useReducedMotion),
+  let O = (0, o.e7)([l.Z], () => l.Z.useReducedMotion),
     y = a.useRef(null),
-    j = a.useRef(new o.qA),
+    j = a.useRef(new i.qA),
     [v, h] = a.useState(null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.O_, {
+    children: [(0, r.jsx)(i.O_, {
       ref: h,
       className: f.confettiCanvas,
       environment: j.current
@@ -65,7 +65,7 @@ function p(e) {
       "data-migration-pending": true,
       className: f.modal,
       size: c.CgR.DYNAMIC
-    }, g), n = n = {
+    }, m), n = n = {
       parentComponent: "GuildPowerupActivateModal",
       children: [(0, r.jsx)(c.hzk, {
         "data-migration-pending": true,
@@ -78,19 +78,19 @@ function p(e) {
             className: f.contentContainer,
             children: [(0, r.jsx)(c.X6q, {
               variant: "heading-xl/extrabold",
-              children: p
+              children: d
             }), (0, r.jsx)(c.Text, {
               tag: "span",
               className: f.description,
               variant: "text-sm/normal",
-              children: d
-            }), m]
+              children: p
+            }), g]
           })]
         })
       }), (0, r.jsx)(c.olH, {
         "data-migration-pending": true,
         className: f.close,
-        onClick: g.onClose
+        onClick: m.onClose
       }), !O && (0, r.jsx)(s.Z, {
         confettiTarget: y.current,
         confettiCanvas: v,

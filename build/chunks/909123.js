@@ -9,7 +9,7 @@ var Chunk179360 = require("./179360.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
   Chunk914010 = require("./914010.js"),
-  Chunk634952 = require("./634952.js"),
+  Chunk755458 = require("./755458.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
   Chunk158638 = require("./158638.js"),
@@ -33,7 +33,7 @@ class m extends Chunk147913.Z {
     null != exports && (Chunk158638.sT.trackExposure({
       guildId: exports.id,
       location: "GuildPowerupsManager"
-    }), Chunk634952.Lz.trackExposure({
+    }), Chunk755458.u7.trackExposure({
       guildId: exports.id,
       location: "GuildPowerupsManager"
     }), (0, Chunk639777.D)(Chunk496675.Z, exports) && (Chunk905128.Z.shouldFetchCatalogForGuild(module) && (0, Chunk713081.Sn)(module), Chunk905128.Z.shouldFetchPowerupsForGuild(module) && (0, Chunk713081.BN)(module)))

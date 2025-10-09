@@ -163,9 +163,9 @@ let eL = (0, Chunk608787.Un)({
     renderLoader: eR
   }),
   eF = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("952"), require.e("85683")]).then(require.bind(require, 15133)),
-    webpackId: 15133,
-    name: "PortkeyPage",
+    createPromise: () => Promise.all([require.e("63639"), require.e("62934")]).then(require.bind(require, 109838)),
+    webpackId: 109838,
+    name: "GameServerPage",
     renderLoader: eR
   }),
   ez = e => {
@@ -245,7 +245,7 @@ let eL = (0, Chunk608787.Un)({
           guildId: l,
           powerupListingId: null != (g = n.get("powerupId")) ? g : n.get("powerupSkuId")
         });
-      case ej.oC.PORTKEY:
+      case ej.oC.GAME_SERVERS:
         return (0, r.jsx)(eF, {
           guildId: l
         });

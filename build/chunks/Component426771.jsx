@@ -26,13 +26,13 @@ function x(e) {
       powerups: j
     } = e,
     [C, I] = i.useState(false),
-    w = (0, c.Gv)(b, j),
-    E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
+    E = (0, c.Gv)(b, j),
+    w = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
     Z = (0, d.Z)(h, b);
   if (true === Z || j.length <= 0) return null;
-  let P = w.some(e => e.type !== f.A3.INACTIVE),
+  let P = E.some(e => e.type !== f.A3.INACTIVE),
     y = (0, p.d)(P),
-    T = w.reduce((e, t) => {
+    T = E.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
@@ -45,21 +45,21 @@ function x(e) {
     type: "active",
     statusText: g.intl.string(m.default.FFLkm5)
   });
-  let N = w.reduce((e, t) => {
+  let N = E.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === f.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    O = w.reduce((e, t) => {
+    O = E.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (x = null == (n = w[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
-    S = w.reduce((e, t) => {
+    }, null != (x = null == (n = E[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
+    S = E.reduce((e, t) => {
       var n;
       let {
         powerup: r
@@ -68,7 +68,7 @@ function x(e) {
     }, 0),
     A = P ? N : O,
     k = !P && S > A ? "+" : true,
-    R = !E && C ? Z.image.animatedUrl : Z.image.staticUrl,
+    R = !w && C ? Z.image.animatedUrl : Z.image.staticUrl,
     L = null != Z.viewCta && "" !== Z.viewCta ? Z.viewCta : g.intl.string(m.default["27GkOj"]),
     U = null != Z.viewCtaTooltip && "" !== Z.viewCtaTooltip ? Z.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {

@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk87454 = require("./87454.jsx"),
   Chunk667815 = require("./667815.js"),
   Chunk645041 = require("./645041.js"),
-  Chunk744993 = require("./744993.js"),
+  Chunk905551 = require("./905551.js"),
   Chunk713081 = require("./713081.js"),
   Chunk675478 = require("./675478.js"),
   Chunk581883 = require("./581883.js"),
@@ -185,9 +185,9 @@ function I() {
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
       variant: "primary",
-      text: "Reset Portkey ToS",
+      text: "Reset GameServer ToS",
       onClick: () => {
-        (0, Chunk744993.g$)(false)
+        (0, Chunk905551.WY)(false)
       }
     })]
   })

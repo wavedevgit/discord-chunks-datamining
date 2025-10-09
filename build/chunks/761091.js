@@ -14,7 +14,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk994592 = require("./994592.js"),
   Chunk265418 = require("./265418.js"),
   Chunk398758 = require("./398758.js"),
-  Chunk634952 = require("./634952.js"),
+  Chunk755458 = require("./755458.js"),
   Chunk639777 = require("./639777.js"),
   Chunk330791 = require("./330791.js"),
   Chunk443063 = require("./443063.js"),
@@ -36,7 +36,7 @@ function y(e) {
     N = (0, m.l)(!(0, h.r1)(e.id)),
     Z = e.features.has(_.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     w = (0, g.Z)(e.id),
-    T = (0, f.A0)(e.id, "useGuildActionRows"),
+    T = (0, f.BU)(e.id, "useGuildActionRows"),
     A = e.features.has(_.oNc.GAME_SERVERS);
-  return I && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && v && x && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !I && v && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !I && P && N && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), O && S.push(b.z.GUILD_SHOP), (E && (P || Z) || n && e.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), w && S.push(b.z.GUILD_BOOSTS), T && A && S.push(b.z.PORTKEY), S
+  return I && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !C && v && x && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !I && v && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !I && P && N && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), O && S.push(b.z.GUILD_SHOP), (E && (P || Z) || n && e.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), w && S.push(b.z.GUILD_BOOSTS), T && A && S.push(b.z.GAME_SERVERS), S
 }

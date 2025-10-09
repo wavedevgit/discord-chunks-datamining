@@ -24,7 +24,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk258871 = require("./258871.jsx"),
   Chunk216306 = require("./216306.js"),
   Chunk398758 = require("./398758.js"),
-  Chunk601328 = require("./601328.jsx"),
+  Chunk737982 = require("./737982.jsx"),
   Chunk486311 = require("./486311.jsx"),
   Chunk620304 = require("./620304.jsx"),
   Chunk220444 = require("./220444.js"),
@@ -616,11 +616,11 @@ class eh extends(r = Chunk647438.PureComponent) {
               guildId: r.id,
               selected: a === eo.oC.GUILD_BOOSTS
             }, er.z.GUILD_BOOSTS);
-          case er.z.PORTKEY:
+          case er.z.GAME_SERVERS:
             return (0, i.jsx)(C.Z, {
               guildId: r.id,
-              selected: a === eo.oC.PORTKEY
-            }, er.z.PORTKEY);
+              selected: a === eo.oC.GAME_SERVERS
+            }, er.z.GAME_SERVERS);
           default:
             return null
         }
