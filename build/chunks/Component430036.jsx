@@ -237,7 +237,7 @@ class el extends Chunk647438.Component {
         let l = h.Z.getSendMessageOptionsForReply(i);
         return (h.Z.sendMessage(n.id, w.ZP.parse(n, t), true, er(ei({}, l), {
           location: $.dy.OVERLAY
-        })), this.setState((0, Z.H2)()), (0, N.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
+        })), this.setState((0, Z.H2)()), (0, T.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
           shouldClear: false,
           shouldRefocus: false
         }) : {
@@ -504,7 +504,7 @@ function ec(e) {
     } = (0, O.Z)({
       channel: o
     });
-  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(b.Z, {}) : (0, i.jsx)(ea, ei({
+  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(v.Z, {}) : (0, i.jsx)(ea, ei({
     guild: h,
     channel: o,
     user: y,

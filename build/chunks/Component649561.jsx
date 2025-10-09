@@ -41,7 +41,7 @@ function P(e, t, n) {
 }
 let w = 10 * Chunk70956.Z.Millis.SECOND;
 
-function T() {
+function N() {
   let e = (0, Chunk145597.getPID)(),
     t = (0, Chunk145597.getRPCAuthToken)();
   (0, Chunk490029.lW)({
@@ -55,7 +55,7 @@ function T() {
     }]
   })
 }
-class N extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   componentDidMount() {
     this.notificationTimer = setTimeout(this.hideNotification, w), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
@@ -121,7 +121,7 @@ class N extends Chunk647438.PureComponent {
       showTrace: false,
       busy: false
     }), P(this, "notificationTimer", true), P(this, "contentDomRef", r.createRef()), P(this, "hideNotification", () => {
-      T();
+      N();
       let {
         notificationTimer: e
       } = this;
@@ -129,7 +129,7 @@ class N extends Chunk647438.PureComponent {
     }), P(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), T(), h.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+      }), N(), h.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: Z.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
@@ -159,11 +159,11 @@ class k extends Chunk647438.PureComponent {
       error: e,
       info: t
     });
-    let i = (0, b.getPID)(),
-      r = (0, b.getRPCAuthToken)();
+    let i = (0, v.getPID)(),
+      r = (0, v.getRPCAuthToken)();
     (0, f.lW)({
       type: C.BmY.DISPATCH,
-      pid: (0, b.getPID)(),
+      pid: (0, v.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -174,8 +174,8 @@ class k extends Chunk647438.PureComponent {
         locked: true,
         pid: i
       }]
-    }), setImmediate(() => window.addEventListener("click", T));
-    let s = (0, v.V6)(e, E.gl.Hook, {
+    }), setImmediate(() => window.addEventListener("click", N));
+    let s = (0, b.V6)(e, E.gl.Hook, {
       extra: t
     });
     h.Z.track(C.rMx.APP_CRASHED, {
@@ -195,7 +195,7 @@ class k extends Chunk647438.PureComponent {
       error: n,
       info: r
     } = this.state;
-    return null != require ? (0, Chunk951288.jsx)(N, {
+    return null != require ? (0, Chunk951288.jsx)(T, {
       error: require,
       info: Chunk647438
     }) : (0, Chunk951288.jsx)("div", {

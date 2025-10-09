@@ -70,7 +70,7 @@ function g(e) {
     notifType: p.n0.OopWelcomeNudge
   }, e), {
     trackView: O,
-    trackClick: b
+    trackClick: v
   } = (0, u.R)(_, {
     notif_type: _
   });
@@ -88,16 +88,16 @@ function g(e) {
     }),
     confirmText: t ? h.intl.string(h.t.TxyTbm) : true,
     onConfirmClick: t ? () => {
-      b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
+      v("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
       O(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      b("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
+      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      b("dismiss")
+      v("dismiss")
     }
   }
 }

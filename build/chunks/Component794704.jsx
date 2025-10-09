@@ -799,11 +799,11 @@ function eF() {
     })
   })
 }
-let eV = (e, t, n, r) => [{
+let eV = (e, t, n) => [{
   title: e_.t.eVE4LS,
   description: e_.t["72WNqq"],
   disabledSetting: D.i.TEXT_CHAT
-}, r && {
+}, {
   title: e_.t.oifnSk,
   description: e_.t.bgU5r6,
   disabledSetting: D.i.WELCOME_GENERAL
@@ -831,18 +831,16 @@ function eH() {
     allowNowPlaying: t
   } = (0, Chunk32300.o4)("user_settings"), {
     enabled: n
-  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), {
-    disableWelcomeNotification: i
-  } = (0, Chunk32300.pN)("OverlayNotificationSettings"), a = eV(module, exports, require, Chunk647438), o = e => t => {
+  } = (0, Chunk32300.aq)("OverlayV3StreamWatchNudge"), i = eV(module, exports, require), a = e => t => {
     b.Z.setNotificationDisabledSetting(e, !t)
-  }, s = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
+  }, o = (0, Chunk442837.e7)([Chunk624864.Z], () => Chunk624864.Z.getDisabledNotifications());
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk607547.notificationSettingsContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk388032.t.xOE5bG)
-    }), Chunk120356.map(e => (0, r.jsxs)(eD, {
+    }), Chunk647438.map(e => (0, r.jsxs)(eD, {
       className: ep.notificationItem,
       children: [(0, r.jsxs)("div", {
         className: ep.notificationDescriptionContainer,
@@ -856,8 +854,8 @@ function eH() {
           children: e_.intl.string(e.description)
         })]
       }), (0, r.jsx)(h.rsf, {
-        checked: !s.has(e.disabledSetting),
-        onChange: o(e.disabledSetting)
+        checked: !o.has(e.disabledSetting),
+        onChange: a(e.disabledSetting)
       })]
     }, e.disabledSetting))]
   })

@@ -77,11 +77,11 @@ function O(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   return "auto" === e || null == e ? "auto" : "".concat(e, "px")
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = 0;
   return {
     width: n = "auto" === t.width ? null != e ? e.clientWidth : 0 : t.width,
@@ -168,13 +168,13 @@ class x extends(i = Chunk647438.Component) {
     let {
       width: g,
       height: m
-    } = v(n, this.size), y = t - h, _ = e - p, O = (0, d.ou)((0, d.PY)({
+    } = b(n, this.size), y = t - h, _ = e - p, O = (0, d.ou)((0, d.PY)({
       top: y,
       left: _,
       bottom: true,
       right: true
-    }, r, s, g, m)), b = u ? (0, d.R)(O) : E("RESIZE_SOUTH_EAST", O);
-    this.setDOMPositions(b), f || (null != a && a(), this.setState({
+    }, r, s, g, m)), v = u ? (0, d.R)(O) : E("RESIZE_SOUTH_EAST", O);
+    this.setDOMPositions(v), f || (null != a && a(), this.setState({
       operationStarted: true
     })), null != c && c(i, "MOVE", this.anchor, this.size)
   }
@@ -247,7 +247,7 @@ class x extends(i = Chunk647438.Component) {
       left: n,
       bottom: i,
       right: r
-    }, null != s && (s.style.top = b(t), s.style.bottom = b(i), s.style.left = b(n), s.style.right = b(r))
+    }, null != s && (s.style.top = v(t), s.style.bottom = v(i), s.style.left = v(n), s.style.right = v(r))
   }
   setDOMSize(e) {
     let {
@@ -259,7 +259,7 @@ class x extends(i = Chunk647438.Component) {
     t = "auto" === this.size.width ? "auto" : t, n = "auto" === this.size.height ? "auto" : n, this.size = {
       width: t,
       height: n
-    }, null != i && (i.style.width = b(t), i.style.height = b(n))
+    }, null != i && (i.style.width = v(t), i.style.height = v(n))
   }
   renderResizeHandles() {
     let {
@@ -402,7 +402,7 @@ class x extends(i = Chunk647438.Component) {
       let {
         width: a,
         height: c
-      } = v(i, this.size), u = (0, d.PY)(this.anchor, o, l, a, c);
+      } = b(i, this.size), u = (0, d.PY)(this.anchor, o, l, a, c);
       if ("MOVE" === e) {
         let {
           x: e,
@@ -452,7 +452,7 @@ class x extends(i = Chunk647438.Component) {
           onUpdate: t,
           id: n
         } = this.props;
-        t(e, n, this.anchor, this.size, v(this.ref.current, this.size))
+        t(e, n, this.anchor, this.size, b(this.ref.current, this.size))
       } : true;
       if (t) {
         let {
@@ -461,7 +461,7 @@ class x extends(i = Chunk647438.Component) {
         } = this.props.container, {
           width: n,
           height: r
-        } = v(this.ref.current, this.size), s = (0, d.PY)(this.anchor, e, t, n, r), o = (0, d.R)(s);
+        } = b(this.ref.current, this.size), s = (0, d.PY)(this.anchor, e, t, n, r), o = (0, d.R)(s);
         this.setDOMPositions(o), this.setDOMSize({
           width: n,
           height: r
