@@ -116,11 +116,10 @@ let O = e => {
               })), y()
             }
           })
-        }) : null, v || x || j ? (0, i.jsx)(o.zx, {
+        }) : null, v || x || j ? (0, i.jsx)(a.Avr, {
           onClick: y,
-          look: o.zx.Looks.BLANK,
-          className: b.cancel,
-          children: m.intl.string(m.t.oEAioK)
+          text: m.intl.string(m.t.oEAioK),
+          variant: "secondary"
         }) : null]
       })]
     })]
