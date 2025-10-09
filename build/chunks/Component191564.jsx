@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 191564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -84,7 +84,7 @@ function C(e) {
   } = (0, g.bd)(n), [P, v] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
-  }, [l, c]), [C, S] = i.useState(() => null != p ? p : true !== x ? x : null == m ? null : null != m ? m : null), [I, A] = i.useMemo(() => {
+  }, [l, c]), [C, I] = i.useState(() => null != p ? p : true !== x ? x : null == m ? null : null != m ? m : null), [S, A] = i.useMemo(() => {
     var e;
     let t = P.find(e => {
         let {
@@ -102,9 +102,9 @@ function C(e) {
   }, [C, P, v]), {
     product: w,
     purchase: N
-  } = (0, d.Z)(null == I ? true : I.skuId), Z = i.useRef(null), k = b.ZP.canUseCollectibles(t), D = (null == C ? true : C.skuId) === (true === x ? null == m ? true : m.skuId : null == x ? true : x.skuId), T = i.useCallback(e => {
-    S(e)
-  }, [S]), U = i.useCallback(e => {
+  } = (0, d.Z)(null == S ? true : S.skuId), k = i.useRef(null), Z = b.ZP.canUseCollectibles(t), D = true === x ? (null == C ? true : C.skuId) === (null == m ? true : m.skuId) : (null == C ? true : C.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
+    I(e)
+  }, [I]), U = i.useCallback(e => {
     f(), (0, a.mK)({
       analyticsLocations: h,
       analyticsSource: s.Z.EDIT_PROFILE_EFFECT_MODAL,
@@ -131,13 +131,13 @@ function C(e) {
         user: t,
         guild: n,
         pendingProfileEffect: C,
-        selectedProfileEffectRef: Z,
+        selectedProfileEffectRef: k,
         onSelect: T,
         onOpenShop: U
       }), (0, r.jsx)(y.Z, {
         user: t,
         canApplySelectedChange: A,
-        pendingProfileEffectRecord: I,
+        pendingProfileEffectRecord: S,
         product: w,
         purchase: N,
         guild: n
@@ -151,7 +151,7 @@ function C(e) {
       onOpenShop: U,
       product: w,
       purchase: N,
-      canUseCollectibles: k,
+      canUseCollectibles: Z,
       selectedProfileEffect: C,
       disableApplyButton: D,
       analyticsLocations: h
@@ -159,7 +159,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     transitionState: t,
     analyticsLocations: n,

@@ -78,7 +78,7 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     },
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
-      dismissibleContentTypes: (0, Chunk620163.OF)(),
+      getDismissibleContentTypes: Chunk620163.OF,
       badgeComponent: Chunk620163.W8
     }
   })

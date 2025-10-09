@@ -46,21 +46,21 @@ function A(e) {
   } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: F,
     includeUnpublished: D
-  } = (0, S.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, i.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = (0, S.Z)(), M = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, i.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
       case v.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, a.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, s.Z.AVATAR_DECORATION];
       case v.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, a.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, s.Z.PROFILE_EFFECT];
       case v.AW.NAMEPLATES:
-        return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, a.Z.NAMEPLATE];
+        return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, s.Z.NAMEPLATE];
       case v.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? L.Z : T.Z, a.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFppq), G ? L.Z : T.Z, s.Z.BUNDLE]
     }
-  }, [Z, G]), X = (0, C.a)(), Q = l.useMemo(() => X(W.filter(e => {
+  }, [Z, G]), Q = (0, C.a)(), X = l.useMemo(() => Q(W.filter(e => {
     var t;
-    return e.type === Y || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
-  })), [W, Y, X]), J = (0, h.l)(Q);
+    return e.type === Y || e.type === s.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Y)) === true
+  })), [W, Y, Q]), J = (0, h.l)(X);
   l.useEffect(() => {
     (0, _.n)({
       sessionId: H,
@@ -80,7 +80,7 @@ function A(e) {
       cacheDisabled: F
     })
   }, [H, A, D, F, n, Z]);
-  let $ = f.Z.useConfig({
+  let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
   return n || null == M ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
@@ -96,7 +96,7 @@ function A(e) {
     }), (0, r.jsx)("div", {
       className: y.products,
       children: J.slice(40 * (U - 1), 40 * U).map((e, t) => {
-        let n = p.Z.getCategory(e.categorySkuId);
+        let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t

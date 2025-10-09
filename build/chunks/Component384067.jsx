@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let _ = e => {
-  var t, n, a;
+  var t, n, s;
   let {
     wideBannerBlock: _,
     handleTransition: m,
@@ -43,25 +43,25 @@ let _ = e => {
       bannerURL: L
     } = (0, g.UI)(_);
   if (null == L) return null;
-  let j = b === p.AW.ORBS;
+  let j = b === f.AW.ORBS;
   return (0, r.jsx)(i.$, {
     innerRef: S,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: S,
-      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: j
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(h.wideBannerBackgroundImg, {
+        className: a()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: j
         }),
         children: (0, r.jsx)("img", {
           ref: v,
           src: L,
           alt: _.title,
-          className: s()(h.wideBannerArt, {
+          className: a()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: j
           }),
           style: {
@@ -84,12 +84,12 @@ let _ = e => {
             children: _.title
           }), (0, r.jsx)(o.Text, {
             style: {
-              color: null != (a = _.bannerTextColor) ? a : "var(--text-muted)"
+              color: null != (s = _.bannerTextColor) ? s : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: j ? "text-md/medium" : "text-sm/medium",
             children: j ? C.intl.format(C.t.SFFP7O, {
-              helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+              helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]
         })

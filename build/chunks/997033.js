@@ -2,5 +2,5 @@
 /** chunk id: 997033, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
-  priceTag: "priceTag__3b1b0"
+  insufficientOrbs: "insufficientOrbs__3b1b0"
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
   Chunk626135 = require("./626135.js"),
@@ -31,21 +31,21 @@ function y(e) {
   let {
     isFullScreen: t,
     tab: n,
-    sortedCategories: a,
+    sortedCategories: s,
     initialCategoryId: c,
     onUnmount: u
   } = e;
   (0, g.A)();
-  let p = (0, d.FF)("CollectiblesBrowse"),
-    f = l.useRef(null),
+  let f = (0, d.FF)("CollectiblesBrowse"),
+    p = l.useRef(null),
     {
       handleScroll: h
-    } = (0, o.z)(f, n),
+    } = (0, o.z)(p, n),
     {
       setCategoryRef: m,
       handleScrollToCategory: b
-    } = (0, C.xV)(f.current),
-    [E, S] = l.useState(p),
+    } = (0, C.xV)(p.current),
+    [E, S] = l.useState(f),
     [v, x] = l.useState(false);
   return l.useEffect(() => {
     null != c && b(c)
@@ -57,18 +57,18 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    p || S(false)
-  }, [p, S]), (0, r.jsx)("div", {
-    className: s()(O.pageWrapper, {
-      [O.pageWrapperFilter]: p
+    f || S(false)
+  }, [f, S]), (0, r.jsx)("div", {
+    className: a()(O.pageWrapper, {
+      [O.pageWrapperFilter]: f
     }),
     children: (0, r.jsxs)("main", {
-      className: s()(O.page, {
-        [O.pageFilter]: p
+      className: a()(O.page, {
+        [O.pageFilter]: f
       }),
       children: [(0, r.jsx)(i.yWw, {
         className: O.shopScroll,
-        ref: f,
+        ref: p,
         onScroll: h,
         children: (0, r.jsx)(T, {
           isFullScreen: t,
@@ -76,8 +76,8 @@ function y(e) {
           filterBarOpen: E,
           setFilterBarOpen: S,
           tab: n,
-          scrollerRef: f,
-          sortedCategories: a,
+          scrollerRef: p,
+          sortedCategories: s,
           setCategoryRef: m
         })
       }), E && !v && (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ let T = e => {
   let {
     isFullScreen: t,
     isSmallScreen: n,
-    filterBarOpen: a,
+    filterBarOpen: s,
     setFilterBarOpen: o,
     tab: C,
     scrollerRef: y,
@@ -117,7 +117,7 @@ let T = e => {
     }), N(e)
   }, [P, N]), R = l.useRef(null);
   return l.useEffect(() => {
-    if (!n || !a) return;
+    if (!n || !s) return;
     let e = e => {
       let t = e.target;
       null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -131,10 +131,10 @@ let T = e => {
       }), o(false))
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [n, a, o, P]), (0, r.jsx)("div", {
+  }, [n, s, o, P]), (0, r.jsx)("div", {
     className: O.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: s()(O.inventory, {
+      className: a()(O.inventory, {
         [O.inventoryFilter]: j,
         [O.pageFullscreen]: t
       }),
@@ -142,9 +142,9 @@ let T = e => {
         className: O.controls,
         children: [(0, r.jsx)("div", {
           className: O.controlsLeftSide,
-          children: (0, r.jsx)(p.Z, {})
+          children: (0, r.jsx)(f.Z, {})
         }), (0, r.jsxs)("div", {
-          className: s()(O.controlsRightSide, {
+          className: a()(O.controlsRightSide, {
             [O.controlsRightSideResponsive]: n
           }),
           children: [(0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ let T = e => {
             ref: R,
             children: (0, r.jsx)(i.zxk, {
               onClick: () => {
-                let e = !a;
+                let e = !s;
                 c.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == P ? true : P.sessionId,
                   page_section: null == P ? true : P.pageSection,
@@ -169,12 +169,12 @@ let T = e => {
                 }), o(e)
               },
               variant: "secondary",
-              text: x.intl.string(a ? x.t.fYtm6e : x.t.TeTYEx),
+              text: x.intl.string(s ? x.t.fYtm6e : x.t.TeTYEx),
               icon: i.gXV,
               iconPosition: "end"
             })
           })]
-        }), a && n && (0, r.jsx)("div", {
+        }), s && n && (0, r.jsx)("div", {
           className: O.filterOverlay,
           ref: k,
           children: (0, r.jsx)(i.Den, {
@@ -194,7 +194,7 @@ let T = e => {
         newValue: {
           pageIndex: B
         },
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(p.Z, {
           isFullScreen: t,
           sortedCategories: T,
           setCategoryRef: L,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -36,7 +36,7 @@ let P = e => {
   var t;
   let {
     isLoading: n,
-    title: a,
+    title: s,
     sortedSkuIds: P,
     numVisibleItems: N,
     hasSorting: B,
@@ -51,28 +51,28 @@ let P = e => {
     shuffleProducts: V,
     showRecommendationOption: z
   } = (0, O.Z)(P, H, A), G = (0, y.St)(W), K = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, i.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
-    animationPhase: X,
-    startAnimation: Q
+    animationPhase: Q,
+    startAnimation: X
   } = (0, x.y)(), J = (0, h.sp)(), $ = null != (t = null == J ? true : J.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {
-    Q({
+    X({
       isShuffling: false,
       onOutroComplete: () => M(e)
-    }), p.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), f.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: $,
       sort_type: e
     })
-  }, [Q, M, $]), en = m.Z.useConfig({
+  }, [X, M, $]), en = m.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
   return null == w ? null : (0, r.jsxs)("div", {
-    className: s()(I.popularPicksSection, I.centeredSection),
+    className: a()(I.popularPicksSection, I.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: I.blockHeader,
       children: [(0, r.jsxs)("div", {
         className: I.headerLeft,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
-          children: a
+          children: s
         }), z && (0, r.jsx)(o.ua7, {
           "data-migration-pending": true,
           text: j.intl.string(j.t["3taPdn"]),
@@ -98,7 +98,7 @@ let P = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(f.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(p.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: I.informationIcon,
               children: (0, r.jsx)(o.d3s, {
                 size: "sm"
@@ -116,7 +116,7 @@ let P = e => {
           }
         })]
       }), B ? (0, r.jsxs)("div", {
-        className: s()(I.headerRight, {
+        className: a()(I.headerRight, {
           [k.shopTakeOver]: F
         }),
         children: [(0, r.jsx)(o.Text, {
@@ -128,7 +128,7 @@ let P = e => {
             options: U,
             select: et,
             className: I.sortSelect,
-            popoutClassName: s()({
+            popoutClassName: a()({
               [k.shopTakeOver]: F
             }),
             isSelected: e => e === D,
@@ -141,15 +141,15 @@ let P = e => {
             text: j.intl.string(j.t.X3tnc3),
             buttonRef: ee,
             onClick: () => {
-              Q({
+              X({
                 isShuffling: true,
                 onOutroComplete: V,
                 returnRef: ee
-              }), p.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), f.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: $
               })
             },
-            disabled: X !== x.g.MOUNTED && X !== x.g.FINISHED
+            disabled: Q !== x.g.MOUNTED && Q !== x.g.FINISHED
           })
         })]
       }) : null]
@@ -161,7 +161,7 @@ let P = e => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Y)
-          if (X === x.g.SHUFFLE_OUT) return en ? (0, r.jsx)("div", {
+          if (Q === x.g.SHUFFLE_OUT) return en ? (0, r.jsx)("div", {
             className: I.shuffleOutro,
             children: (0, r.jsx)(v.Z, {
               skipPulseAnimation: true
@@ -172,7 +172,7 @@ let P = e => {
               className: I.placeholderCard
             })
           }, "".concat(e.skuId, "-").concat(t));
-          else X === x.g.SORT_OUT ? n = I.sortChangedOutro : X === x.g.SHUFFLE_IN ? n = I.shuffleIntro : X === x.g.SORT_IN && (n = I.sortChangedIntro);
+          else Q === x.g.SORT_OUT ? n = I.sortChangedOutro : Q === x.g.SHUFFLE_IN ? n = I.shuffleIntro : Q === x.g.SORT_IN && (n = I.sortChangedIntro);
         return (0, r.jsx)(h.k0, {
           newValue: {
             tilePosition: t,

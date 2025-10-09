@@ -32,19 +32,19 @@ function O(e) {
   let {
     quest: n,
     errorHints: o,
-    transitionState: v,
+    transitionState: j,
     onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, j.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
-  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, h.Bz)(n), D = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(D) ? C.BRd.DARK : C.BRd.LIGHT, {
+  }), q = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(n), D = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(D) ? C.BRd.DARK : C.BRd.LIGHT, {
     startConsoleQuest: V,
     startingConsoleQuest: Q
   } = (0, x.GI)({
     questId: n.id,
     beforeRequest: () => {
-      k.startAnimation(), A({
+      k.startAnimation(), R({
         questId: n.id,
         questContent: _.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
@@ -56,7 +56,7 @@ function O(e) {
     }
   });
   return (0, r.jsx)(i.Modal, {
-    transitionState: v,
+    transitionState: j,
     onClose: O,
     title: y.intl.string(y.t.W5lmKi),
     subtitle: N.message,
@@ -67,7 +67,7 @@ function O(e) {
       }, {
         content: _.jn.CONNECTIONS_MODAL,
         ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        impressionId: R,
+        impressionId: A,
         sourceQuestContent: T
       })),
       text: y.intl.string(y.t["qiS+xs"])
@@ -107,8 +107,8 @@ function O(e) {
             size: "sm"
           }),
           text: y.intl.string(y.t.XF4wuL),
-          errors: q ? true : I.map(e => e.message),
-          gameTile: q ? (0, r.jsx)(c.u, {
+          errors: I ? true : q.map(e => e.message),
+          gameTile: I ? (0, r.jsx)(c.u, {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
               className: E.tooltip,
@@ -188,7 +188,7 @@ function T(e) {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
     return function(n) {
-      return (0, r.jsx)(v.A, {
+      return (0, r.jsx)(j.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
         questContent: _.jn.CONNECTIONS_MODAL,

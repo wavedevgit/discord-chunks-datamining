@@ -36,8 +36,8 @@ function j(e) {
         if (null != t.trailing) switch (t.trailing.type) {
           case f.PU.BADGE_NEW:
           case f.PU.STRONGLY_DISCOURAGED_CUSTOM:
-            var n;
-            null == (n = t.trailing.dismissibleContentTypes) || n.forEach(t => {
+            var n, r, l;
+            null == (r = (l = t.trailing).getDismissibleContentTypes) || null == (n = r.call(l)) || n.forEach(t => {
               e.push(t)
             })
         }

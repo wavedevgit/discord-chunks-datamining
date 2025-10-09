@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,12 +40,12 @@ function B(e) {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: a
+    handleTransition: s
   } = e;
   return (0, r.jsx)(C.Z.Title, {
-    onClick: () => a(t),
+    onClick: () => s(t),
     wrapperClassName: N.tabWrapper,
-    className: s()(N.tab, {
+    className: a()(N.tab, {
       [N.selected]: l
     }),
     children: n
@@ -56,12 +56,12 @@ function A(e) {
   let {
     tab: t,
     selected: n,
-    displayText: a,
+    displayText: s,
     handleTransition: i
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), m = e => {
     clearTimeout(g), h(setTimeout(() => {
       u(e)
-    }, 100)), e && (_.current = f.Z.keyboardModeEnabled)
+    }, 100)), e && (_.current = p.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), m(true))
   };
@@ -77,7 +77,7 @@ function A(e) {
       onRequestOpen: () => m(true),
       onRequestClose: () => {
         var e;
-        _.current && !f.Z.keyboardModeEnabled && (0, p.Qj)(), m(false), null == (e = d.current) || e.focus()
+        _.current && !p.Z.keyboardModeEnabled && (0, f.Qj)(), m(false), null == (e = d.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -115,12 +115,12 @@ function A(e) {
           onClick: () => i(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: s()(N.tab, {
+          className: a()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
             className: N.tabWithChevron,
-            children: [a, g ? (0, r.jsx)(c.u04, {
+            children: [s, g ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
             }) : (0, r.jsx)(c.CJ0, {
@@ -147,9 +147,9 @@ function R(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: a,
-    selectedTab: p,
-    handleTransition: f
+    onClose: s,
+    selectedTab: f,
+    handleTransition: p
   } = e, T = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
     enabled: w
   } = (0, E.WX)({
@@ -167,8 +167,8 @@ function R(e) {
     tab: j.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
-  let D = n ? O.DR : a,
-    M = p === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
+  let D = n ? O.DR : s,
+    M = f === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     W = l.useCallback(() => {
       t && (D(), (0, u.Ou)()), (0, b.Y)({
         pageType: M,
@@ -190,14 +190,14 @@ function R(e) {
     theme: T,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: s()(e, N.headerBar, {
+      className: a()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,
       toolbar: t || !Z ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: N.shopHomeLink,
-        onClick: () => f(j.AW.HOME),
+        onClick: () => p(j.AW.HOME),
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: N.discordLogo
@@ -213,21 +213,21 @@ function R(e) {
           } = e;
           return t === j.AW.CATALOG ? (0, r.jsx)(A, {
             tab: t,
-            selected: (0, j.RE)(p) || p === t,
+            selected: (0, j.RE)(f) || f === t,
             displayText: n,
-            handleTransition: f
+            handleTransition: p
           }, t) : (0, r.jsx)(B, {
             tab: t,
             displayText: n,
-            selected: p === t,
-            handleTransition: f
+            selected: f === t,
+            handleTransition: p
           }, t)
         })
       }), (w || t || U || H) && (0, r.jsxs)("div", {
         className: N.alignedRightContent,
         children: [U && (0, r.jsx)(L.Z, {
-          handleTransition: f,
-          selectedTab: p
+          handleTransition: p,
+          selectedTab: f
         }), H && (0, r.jsx)(c.P3F, {
           className: N.wishlistButton,
           onClick: V,

@@ -23,7 +23,6 @@ let f = e => {
       if ((0, c.H)(null == n ? true : n.items[0])) return n.items[0]
     }),
     f = r.useMemo(() => null != n ? {
-      id: n.id,
       skuId: n.skuId,
       config: n
     } : t, [n, t]),

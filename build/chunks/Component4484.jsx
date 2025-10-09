@@ -69,7 +69,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     disableEnterToSubmit: es,
     allowNewLines: el,
     isEditorIdle: ec,
-    isAutocompleteVisible: eu,
+    currentAutocompleteType: eu,
     "aria-owns": ed,
     "aria-expanded": ef,
     "aria-haspopup": e_,
@@ -215,7 +215,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }, [k, eN, eR]);
   let ej = i.useCallback(e => [...(0, v.Z)(eN, e, k.guild_id), ...(0, y.Z)(eN, e), ...(0, O.Z)(eN, e), ...(0, I.Z)(eN, e, k, {
       isIdle: ec,
-      isVisible: eu
+      currentAutocompleteType: eu
     })], [eN, k, ec, eu]),
     eU = i.useCallback(e => {
       let t = (0, w.Z)(eN, e, k.id);

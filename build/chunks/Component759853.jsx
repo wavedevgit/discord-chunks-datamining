@@ -25,20 +25,20 @@ let _ = ["#51BC9D"],
       expansionSpring: n,
       overlayRef: o,
       quest: b,
-      progressBarRef: v,
-      isExpanded: j,
+      progressBarRef: j,
+      isExpanded: v,
       isHovered: C
     } = e, {
       completionSpring: y,
       startCompletionAnimation: E
-    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [A, R] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
+    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [R, A] = s.useState(null), [B, k] = s.useState(null), q = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(A, B), D = s.useCallback(() => {
+    })), I = (0, i.uR)(R, B), D = s.useCallback(() => {
       if (T) return;
-      let e = v.current,
+      let e = j.current,
         t = w.current;
-      if (null != t && null != e && q.isReady) {
+      if (null != t && null != e && I.isReady) {
         var n, r, s, o, a, i;
         let {
           x: l,
@@ -47,7 +47,7 @@ let _ = ["#51BC9D"],
           x: d,
           y: u
         } = t.getBoundingClientRect();
-        q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        I.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -112,16 +112,16 @@ let _ = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, w, q, T]), L = (0, u.Z)(j);
+    }, [j, w, I, T]), L = (0, u.Z)(v);
     return (s.useEffect(() => {
-      O && j && !L && (E(), D())
-    }, [j, O, E, D, L]), s.useEffect(() => {
+      O && v && !L && (E(), D())
+    }, [v, O, E, D, L]), s.useEffect(() => {
       O && !P && N && setTimeout(() => {
         E(), D()
       }, 200)
     }, [O, N, P, E, D]), s.useEffect(() => {
-      q.isReady && (!S.current && O && (E(), D()), S.current = O)
-    }, [O, S, D, E, q]), s.useEffect(() => {
+      I.isReady && (!S.current && O && (E(), D()), S.current = O)
+    }, [O, S, D, E, I]), s.useEffect(() => {
       C && O && (E(), D())
     }, [C, O, E, D]), T) ? null : (0, r.jsxs)("div", {
       className: h.wrapper,
@@ -146,9 +146,9 @@ let _ = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: R,
+          ref: A,
           className: h.confetti,
-          environment: I.current
+          environment: q.current
         }), (0, r.jsx)(i.Ji, {
           ref: k,
           sprites: [x],

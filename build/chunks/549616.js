@@ -83,16 +83,17 @@ class p extends Chunk803358.Z {
       hero_banner_display_config: b,
       hero_banner_url: y,
       hero_banner_animated_url: O,
-      hero_logo_url: v,
-      catalog_banner_url: I,
-      catalog_banner_animated_url: T,
-      featured_block_url: S,
-      logo_url: A,
-      pdp_bg_url: C,
-      mobile_banner_url: N,
-      mobile_bg_url: R
-    } = e, P = d(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "catalog_banner_asset", "hero_banner_asset", "featured_block", "hero_logo", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
-    return new p(u(l({}, super.fromServer(P)), {
+      hero_rive_url: v,
+      hero_logo_url: I,
+      catalog_banner_url: T,
+      catalog_banner_animated_url: S,
+      featured_block_url: A,
+      logo_url: C,
+      pdp_bg_url: N,
+      mobile_banner_url: R,
+      mobile_bg_url: P
+    } = e, w = d(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "catalog_banner_asset", "hero_banner_asset", "featured_block", "hero_logo", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
+    return new p(u(l({}, super.fromServer(w)), {
       products: t.reduce((e, t) => {
         let n = a.Z.fromServer(t);
         return (_(n.type) || 0 !== n.items.length) && e.push(n), e
@@ -110,17 +111,18 @@ class p extends Chunk803358.Z {
       heroBannerDisplayConfig: (0, i.QG)(b),
       heroBannerUrl: y,
       heroBannerAnimatedUrl: O,
-      heroLogoUrl: v,
-      catalogBannerUrl: I,
-      catalogBannerAnimatedUrl: T,
-      featuredBlockUrl: S,
-      logoUrl: A,
-      pdpBgUrl: C,
-      mobileBannerUrl: N,
-      mobileBgUrl: R
+      heroRiveUrl: v,
+      heroLogoUrl: I,
+      catalogBannerUrl: T,
+      catalogBannerAnimatedUrl: S,
+      featuredBlockUrl: A,
+      logoUrl: C,
+      pdpBgUrl: N,
+      mobileBannerUrl: R,
+      mobileBgUrl: P
     }))
   }
   constructor(e) {
-    super(e), s(this, "products", true), s(this, "heroRanking", true), s(this, "logo", true), s(this, "pdpBg", true), s(this, "mobileBg", true), s(this, "mobileBanner", true), s(this, "catalogBannerAsset", true), s(this, "heroBannerAsset", true), s(this, "featuredBlock", true), s(this, "heroLogo", true), s(this, "heroLogoDisplayConfig", true), s(this, "heroBannerDisplayConfig", true), s(this, "heroBannerUrl", true), s(this, "heroBannerAnimatedUrl", true), s(this, "heroLogoUrl", true), s(this, "catalogBannerUrl", true), s(this, "catalogBannerAnimatedUrl", true), s(this, "featuredBlockUrl", true), s(this, "logoUrl", true), s(this, "pdpBgUrl", true), s(this, "mobileBannerUrl", true), s(this, "mobileBgUrl", true), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.catalogBannerAsset = e.catalogBannerAsset, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig, this.heroBannerDisplayConfig = e.heroBannerDisplayConfig, this.heroBannerUrl = e.heroBannerUrl, this.heroBannerAnimatedUrl = e.heroBannerAnimatedUrl, this.heroLogoUrl = e.heroLogoUrl, this.catalogBannerUrl = e.catalogBannerUrl, this.catalogBannerAnimatedUrl = e.catalogBannerAnimatedUrl, this.featuredBlockUrl = e.featuredBlockUrl, this.logoUrl = e.logoUrl, this.pdpBgUrl = e.pdpBgUrl, this.mobileBannerUrl = e.mobileBannerUrl, this.mobileBgUrl = e.mobileBgUrl
+    super(e), s(this, "products", true), s(this, "heroRanking", true), s(this, "logo", true), s(this, "pdpBg", true), s(this, "mobileBg", true), s(this, "mobileBanner", true), s(this, "catalogBannerAsset", true), s(this, "heroBannerAsset", true), s(this, "featuredBlock", true), s(this, "heroLogo", true), s(this, "heroLogoDisplayConfig", true), s(this, "heroBannerDisplayConfig", true), s(this, "heroBannerUrl", true), s(this, "heroBannerAnimatedUrl", true), s(this, "heroRiveUrl", true), s(this, "heroLogoUrl", true), s(this, "catalogBannerUrl", true), s(this, "catalogBannerAnimatedUrl", true), s(this, "featuredBlockUrl", true), s(this, "logoUrl", true), s(this, "pdpBgUrl", true), s(this, "mobileBannerUrl", true), s(this, "mobileBgUrl", true), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.catalogBannerAsset = e.catalogBannerAsset, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig, this.heroBannerDisplayConfig = e.heroBannerDisplayConfig, this.heroBannerUrl = e.heroBannerUrl, this.heroBannerAnimatedUrl = e.heroBannerAnimatedUrl, this.heroRiveUrl = e.heroRiveUrl, this.heroLogoUrl = e.heroLogoUrl, this.catalogBannerUrl = e.catalogBannerUrl, this.catalogBannerAnimatedUrl = e.catalogBannerAnimatedUrl, this.featuredBlockUrl = e.featuredBlockUrl, this.logoUrl = e.logoUrl, this.pdpBgUrl = e.pdpBgUrl, this.mobileBannerUrl = e.mobileBannerUrl, this.mobileBgUrl = e.mobileBgUrl
   }
 }

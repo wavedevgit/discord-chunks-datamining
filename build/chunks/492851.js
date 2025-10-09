@@ -1,4 +1,4 @@
-/** Chunk was on 81487 **/
+/** Chunk was on 21885 **/
 /** chunk id: 492851, original params: e,t,n (module,exports,require) **/
 module.exports = {
   priceTagsContainer: "priceTagsContainer_f73e93",

@@ -399,16 +399,15 @@ let eL = e => {
   },
   eM = () => {
     let {
-      enabled: e,
-      onlyExactMatch: t
+      enabled: e
     } = (0, Chunk657871.zM)("ChannelTextAreaContainer", {
       autoTrackExposure: false
-    }), [n, r] = Chunk647438.useState(false);
+    }), [t, n] = Chunk647438.useState(null);
     return {
-      isAutocompleteVisible: require,
-      handleAutocompleteVisibilityChange: Chunk647438.useCallback(n => {
-        e && !t && r(n), n && (0, C._Q)()
-      }, [module, exports])
+      currentAutocompleteType: exports,
+      handleAutocompleteVisibilityChange: Chunk647438.useCallback((t, r) => {
+        e && n(r), t && (0, C._Q)()
+      }, [module])
     }
   };
 
@@ -532,7 +531,7 @@ function ek(e, t) {
     shouldHideExpressionPicker: tN,
     handleOuterClick: tR
   } = ew(j, eQ), tP = ex(tc, eQ), tw = eL(f), {
-    isAutocompleteVisible: tD,
+    currentAutocompleteType: tD,
     handleAutocompleteVisibilityChange: tx
   } = eM();
   (0, X.S)(tc, k.guild_id, k.id);
@@ -658,7 +657,7 @@ function ek(e, t) {
                 spellcheckEnabled: to,
                 canOnlyUseTextCommands: tL,
                 isEditorIdle: tw,
-                isAutocompleteVisible: tD,
+                currentAutocompleteType: tD,
                 className: o()({
                   [ed.textAreaThreadCreation]: j === Q.Ie.THREAD_CREATION,
                   [ed.profileBioInput]: j === Q.Ie.PROFILE_BIO_INPUT,

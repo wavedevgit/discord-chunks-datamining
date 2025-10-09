@@ -99,7 +99,7 @@ function v(e, t, n) {
       emojiIntention: D === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
       currentWord: null != (N = null == F ? true : F.word) ? N : "",
       currentWordIsAtStart: (null == F ? true : F.isAtStart) === true,
-      fullWord: null != (R = null == F ? true : F.fullWord) ? R : "",
+      currentFullWord: null != (R = null == F ? true : F.fullWord) ? R : "",
       optionText: null != B ? (0, o.KF)({
         [B.name]: null != (P = null == (I = e.editorRef.current) ? true : I.getCurrentCommandOptionValue()) ? P : []
       }, B.name) : ""

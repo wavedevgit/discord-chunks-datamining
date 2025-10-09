@@ -17,29 +17,30 @@ var Chunk512722 = require("./512722.js"),
   Chunk185923 = require("./185923.js");
 
 function f(e, t) {
-  var n;
+  var n, r;
   let {
-    activeCommandOption: r,
-    canMentionUsers: i = true,
-    canMentionRoles: l = true,
-    canMentionChannels: c = true,
-    canMentionEveryone: d,
-    useNewSlashCommands: f,
-    canOnlyUseTextCommands: _,
-    canSendStickers: p,
-    canSendSoundmoji: h,
-    hideMentionDescription: m,
-    hidePersonalInformation: g,
-    type: E,
-    emojiIntention: b,
-    editorRef: y,
-    onSendMessage: O,
-    onSendSticker: v,
-    setValue: I,
-    isEditorIdle: T
+    activeCommandOption: i,
+    canMentionUsers: l = true,
+    canMentionRoles: c = true,
+    canMentionChannels: d = true,
+    canMentionEveryone: f,
+    useNewSlashCommands: _,
+    canOnlyUseTextCommands: p,
+    canSendStickers: h,
+    canSendSoundmoji: m,
+    hideMentionDescription: g,
+    hidePersonalInformation: E,
+    type: b,
+    emojiIntention: y,
+    editorRef: O,
+    onSendMessage: v,
+    onSendSticker: I,
+    setValue: T,
+    isEditorIdle: S,
+    currentFullWord: A
   } = e, {
-    isVisible: S
-  } = t, A = {
+    query: C
+  } = t, N = {
     mentions: {
       channel: u.nS.DENY,
       global: u.VV.DENY,
@@ -47,43 +48,44 @@ function f(e, t) {
       user: u.h3.DENY
     },
     commands: u.L8.DISABLED,
-    allowStickers: true === p,
-    allowSoundmoji: true === h,
-    forNonStringCommandOption: null != r && r.type !== a.jw.STRING,
-    hideMentionDescription: true === m,
-    hidePersonalInformation: true === g,
-    chatInputType: E,
-    emojiIntention: b,
-    sendMessage: O,
-    sendSticker: v,
-    isEditorIdle: T,
-    isVisible: S,
+    allowStickers: true === h,
+    allowSoundmoji: true === m,
+    forNonStringCommandOption: null != i && i.type !== a.jw.STRING,
+    hideMentionDescription: true === g,
+    hidePersonalInformation: true === E,
+    chatInputType: b,
+    emojiIntention: y,
+    sendMessage: v,
+    sendSticker: I,
+    currentFullWord: A,
+    isEditorIdle: S,
+    currentAutocompleteType: null != (r = null == C ? true : C.type) ? r : null,
     insertText: function(e, t) {
       var n;
       let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-      null == (n = y.current) || n.insertAutocomplete(e, null != t ? t : e, r)
+      null == (n = O.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
-      I(e, null != t ? t : (0, s.JM)(e))
+      T(e, null != t ? t : (0, s.JM)(e))
     },
     insertAutocompleteInput: e => {
       var t;
-      null == (t = y.current) || t.insertInlineAutocompleteElement(e)
+      null == (t = O.current) || t.insertInlineAutocompleteElement(e)
     },
     replaceInlineInput: (e, t, n) => {
       var r;
-      null == (r = y.current) || r.replaceInlineAutocompleteInput(e, t, null != n ? n : t)
+      null == (r = O.current) || r.replaceInlineAutocompleteInput(e, t, null != n ? n : t)
     },
     getCommandOptionValues: () => {
       var e;
-      return null == (e = y.current) ? true : e.getCommandOptionValues()
+      return null == (e = O.current) ? true : e.getCommandOptionValues()
     }
   };
-  if (null != r) {
-    let e = (0, o.$z)(r);
-    e.canMentionChannels && (A.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (A.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (A.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (A.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), A.hideMentionDescription = true
-  } else c && (A.mentions.channel = u.nS.ALLOW_SELECTABLE), l && (A.mentions.role = u.Fw.ALLOW_MENTIONABLE), i && (A.mentions.user = u.h3.ALLOW_CHANNEL), d && (A.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
-  return (null == (n = E.commands) ? true : n.enabled) && (f ? A.commands = _ ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : A.commands = u.L8.OLD_BUILT_INS), null != r && null != r.channelTypes && (A.allowedChannelTypes = r.channelTypes), A
+  if (null != i) {
+    let e = (0, o.$z)(i);
+    e.canMentionChannels && (N.mentions.channel = u.nS.ALLOW_SELECTABLE), e.canMentionEveryone && (N.mentions.global = e.canMentionHere ? u.VV.ALLOW_EVERYONE_OR_HERE : u.VV.ALLOW_EVERYONE), e.canMentionRoles && (N.mentions.role = e.canMentionNonMentionableRoles ? u.Fw.ALLOW_ALL : u.Fw.ALLOW_MENTIONABLE), e.canMentionUsers && (N.mentions.user = e.canMentionAnyGuildUser ? u.h3.ALLOW_GUILD : u.h3.ALLOW_CHANNEL), N.hideMentionDescription = true
+  } else d && (N.mentions.channel = u.nS.ALLOW_SELECTABLE), c && (N.mentions.role = u.Fw.ALLOW_MENTIONABLE), l && (N.mentions.user = u.h3.ALLOW_CHANNEL), f && (N.mentions.global = u.VV.ALLOW_EVERYONE_OR_HERE);
+  return (null == (n = b.commands) ? true : n.enabled) && (_ ? N.commands = p ? u.L8.NEW_TEXT_ONLY : u.L8.NEW : N.commands = u.L8.OLD_BUILT_INS), null != i && null != i.channelTypes && (N.allowedChannelTypes = i.channelTypes), N
 }
 
 function _(e) {
@@ -109,29 +111,28 @@ function p(e) {
     options: r,
     currentWord: a,
     currentWordIsAtStart: o,
-    fullWord: s,
-    textValue: f,
-    optionText: p,
-    parentAutocompleteInputType: h,
-    parentAutocompleteInputValue: m
-  } = e, g = null;
+    textValue: s,
+    optionText: f,
+    parentAutocompleteInputType: p,
+    parentAutocompleteInputValue: h
+  } = e, m = null;
   for (let e of c.R) {
-    var E, b, y, O, v, I;
-    let T = c.W[e];
+    var g, E, b, y, O, v;
+    let I = c.W[e];
     if (e === u.eq.GIFS || e === u.eq.CHOICES) {
       if (r.commands === u.L8.OLD_BUILT_INS) {
         if (_({
             type: e,
             channel: t,
             guild: n,
-            query: f,
+            query: s,
             isAtStart: false,
             options: r
           })) {
-          g = {
+          m = {
             type: e,
-            typeInfo: T,
-            query: f
+            typeInfo: I,
+            query: s
           };
           break
         }
@@ -139,40 +140,40 @@ function p(e) {
           type: e,
           channel: t,
           guild: n,
-          query: p,
+          query: f,
           isAtStart: false,
           options: r
         })) return {
         type: e,
-        typeInfo: T,
-        query: p
+        typeInfo: I,
+        query: f
       }
     } else if (e === u.eq.STICKERS) {
       if (_({
           type: e,
           channel: t,
           guild: n,
-          query: p,
+          query: f,
           isAtStart: false,
           options: r
         })) return {
         type: e,
-        typeInfo: T,
-        query: p
+        typeInfo: I,
+        query: f
       }
     } else if (e === u.eq.COMMANDS && r.commands !== u.L8.OLD_BUILT_INS) {
       if (_({
           type: e,
           channel: t,
           guild: n,
-          query: f,
+          query: s,
           isAtStart: true,
           options: r
         })) {
-        g = {
+        m = {
           type: e,
-          typeInfo: T,
-          query: f.substring(null != (b = null == (E = T.sentinel) ? true : E.length) ? b : 0)
+          typeInfo: I,
+          query: s.substring(null != (E = null == (g = I.sentinel) ? true : g.length) ? E : 0)
         };
         break
       }
@@ -181,14 +182,14 @@ function p(e) {
           type: e,
           channel: t,
           guild: n,
-          query: f,
+          query: s,
           isAtStart: o,
           options: r
         })) {
-        g = {
+        m = {
           type: e,
-          typeInfo: T,
-          query: f
+          typeInfo: I,
+          query: s
         };
         break
       }
@@ -201,38 +202,35 @@ function p(e) {
           isAtStart: o,
           options: r
         })) {
-        g = {
+        m = {
           type: e,
-          typeInfo: T,
-          query: a.substring(null != (O = null == (y = T.sentinel) ? true : y.length) ? O : 0)
+          typeInfo: I,
+          query: a.substring(null != (y = null == (b = I.sentinel) ? true : b.length) ? y : 0)
         };
         break
       }
-    } else if (null != T.autocompleteInputElementType) T.autocompleteInputElementType === h && (i()(null != m, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), g = {
+    } else if (null != I.autocompleteInputElementType) I.autocompleteInputElementType === p && (i()(null != h, "parentAutocompleteInputValue is null, but we're in an inline autocomplete object"), m = {
       type: e,
-      typeInfo: T,
-      query: m
+      typeInfo: I,
+      query: h
     });
-    else {
-      let i = T.useFullWord && null != s ? s : a;
-      if (null != i && _({
-          type: e,
-          channel: t,
-          guild: n,
-          query: i,
-          isAtStart: o,
-          options: r
-        })) {
-        g = {
-          type: e,
-          typeInfo: T,
-          query: i.substring(null != (I = null == (v = T.sentinel) ? true : v.length) ? I : 0)
-        };
-        break
-      }
+    else if (null != a && _({
+        type: e,
+        channel: t,
+        guild: n,
+        query: a,
+        isAtStart: o,
+        options: r
+      })) {
+      m = {
+        type: e,
+        typeInfo: I,
+        query: a.substring(null != (v = null == (O = I.sentinel) ? true : O.length) ? v : 0)
+      };
+      break
     }
   }
-  return null == g ? null : (g.query = g.query.toLocaleLowerCase(), g)
+  return null == m ? null : (m.query = m.query.toLocaleLowerCase(), m)
 }
 
 function h(e, t) {

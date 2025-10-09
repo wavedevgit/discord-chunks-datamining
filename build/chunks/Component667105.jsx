@@ -6,6 +6,7 @@ require.d(exports, {
   Ks: () => B,
   Ws: () => V,
   g2: () => j,
+  gF: () => H,
   hf: () => k,
   k3: () => U,
   qN: () => F
@@ -451,4 +452,8 @@ function V(e) {
     isQuestBarEmpty: !n,
     hasLoadedQuestBar: 0 !== r && 0 !== i
   }
+}
+
+function H(e) {
+  if ((0, m.Rt)(e)) return e.config.features.includes(N.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : s.iWm
 }

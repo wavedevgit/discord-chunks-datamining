@@ -1,13 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 998076, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 998076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o,
-  f: () => a
+  f: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let l = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_premium_brand_refresh_upsell_roadblocks_experiment",
   label: "Premium Brand Refresh Upsell Roadblocks Experiment",
@@ -28,15 +26,4 @@ let a = (0, Chunk818083.B)({
       enabled: true
     }
   }]
-});
-
-function o(e) {
-  let {
-    location: t
-  } = e;
-  return a.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: true
-  }).enabled
-}
+})

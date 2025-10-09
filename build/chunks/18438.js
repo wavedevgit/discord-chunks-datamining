@@ -25,40 +25,39 @@ var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 async function o(e, t) {
+  var n;
   let {
-    nick: n,
-    avatar: o,
-    avatarDescription: s,
-    avatarId: l,
-    avatarDecoration: c,
-    nameplate: u,
-    displayNameStyles: d
+    nick: o,
+    avatar: s,
+    avatarDescription: l,
+    avatarId: c,
+    avatarDecoration: u,
+    nameplate: d,
+    displayNameStyles: f
   } = t;
   if (null == e) throw Error("Need guildId");
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SUBMIT"
   });
-  let f = {
-    nick: n,
-    avatar: o,
-    avatar_description: s,
-    avatar_id: l,
-    avatar_decoration_id: null === c ? null : null == c ? true : c.id,
-    avatar_decoration_sku_id: null === c ? null : null == c ? true : c.skuId,
-    collectibles: true !== u ? {
-      nameplate: null === u ? null : {
-        id: u.id,
-        sku_id: u.skuId
+  let _ = {
+    nick: o,
+    avatar: s,
+    avatar_description: l,
+    avatar_id: c,
+    avatar_decoration_sku_id: true !== u ? null != (n = null == u ? true : u.skuId) ? n : null : true,
+    collectibles: true !== d ? {
+      nameplate: null === d ? null : {
+        sku_id: d.skuId
       }
     } : true,
-    display_name_font_id: true !== d ? null !== d ? d.fontId : null : true,
-    display_name_effect_id: true !== d ? null !== d ? d.effectId : null : true,
-    display_name_colors: true !== d ? null !== d ? d.colors : null : true
+    display_name_font_id: true !== f ? null !== f ? f.fontId : null : true,
+    display_name_effect_id: true !== f ? null !== f ? f.effectId : null : true,
+    display_name_colors: true !== f ? null !== f ? f.colors : null : true
   };
   try {
     let t = await r.tn.patch({
         url: a.ANM.SET_GUILD_MEMBER(e),
-        body: f,
+        body: _,
         oldFormErrors: true,
         rejectWithError: false
       }),
@@ -69,7 +68,7 @@ async function o(e, t) {
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildMember: n,
       guildId: e
-    }), (null != o || null != l) && i.Z.dispatch({
+    }), (null != s || null != c) && i.Z.dispatch({
       type: "RECENT_AVATARS_UPDATE"
     }), t
   } catch (t) {

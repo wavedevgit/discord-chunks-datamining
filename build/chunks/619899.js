@@ -100,7 +100,7 @@ let y = (0, Chunk191336.U)(e => ({
     collectionAssets: {},
     avatarDecorationAssets: {},
     previewProfileEffectSkuId: null,
-    previewAvatarDecorationId: null,
+    previewAvatarDecorationSkuId: null,
     setPreviewEnabled: t => e({
       previewEnabled: t
     }),
@@ -176,16 +176,16 @@ let y = (0, Chunk191336.U)(e => ({
         avatarDecorationAssets: {},
         previewEnabled: false,
         previewProfileEffectSkuId: null,
-        previewAvatarDecorationId: null
+        previewAvatarDecorationSkuId: null
       }))
     }),
     setPreviewProfileEffectSkuId: t => (0, s.j)(() => e({
       previewProfileEffectSkuId: t,
       previewEnabled: null != t
     })),
-    setPreviewAvatarDecorationId: t => (0, s.j)(() => e({
-      previewAvatarDecorationId: t,
-      previewEnabled: true
+    setPreviewAvatarDecorationSkuId: t => (0, s.j)(() => e({
+      previewAvatarDecorationSkuId: t,
+      previewEnabled: null != t
     }))
   })),
   O = () => {
@@ -244,7 +244,7 @@ let y = (0, Chunk191336.U)(e => ({
   C = e => {
     let {
       previewEnabled: t,
-      previewAvatarDecorationId: n
+      previewAvatarDecorationSkuId: n
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       let r = Object.values(i);
@@ -262,7 +262,7 @@ let y = (0, Chunk191336.U)(e => ({
   N = e => {
     let {
       previewEnabled: t,
-      previewAvatarDecorationId: n
+      previewAvatarDecorationSkuId: n
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e || e.type !== o.Z.AVATAR_DECORATION || 0 === e.items.length) return e;
@@ -273,7 +273,7 @@ let y = (0, Chunk191336.U)(e => ({
   R = e => {
     let {
       previewEnabled: t,
-      previewAvatarDecorationId: n
+      previewAvatarDecorationSkuId: n
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e) return null;

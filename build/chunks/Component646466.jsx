@@ -1,4 +1,4 @@
-/** Chunk was on 81487 **/
+/** Chunk was on 22981 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => S
@@ -105,8 +105,8 @@ let h = [{
   },
   j = () => {
     let {
-      previewAvatarDecorationId: e,
-      setPreviewAvatarDecorationId: t
+      previewAvatarDecorationSkuId: e,
+      setPreviewAvatarDecorationSkuId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
     } = (0, Chunk619899.xq)(), l = Chunk647438.useMemo(() => [f, ...require.map(e => ({

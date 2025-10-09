@@ -32,12 +32,12 @@ function S(e) {
   let {
     quest: P,
     questContent: N,
-    isHovering: A,
-    contentPosition: R,
+    isHovering: R,
+    contentPosition: A,
     rowIndex: B,
     isVisibleInViewport: k,
-    onReceiveErrorHints: I,
-    sourceQuestContent: q
+    onReceiveErrorHints: q,
+    sourceQuestContent: I
   } = e, D = s.useRef(null), L = s.useMemo(() => f.r.build(P.config), [P.config]), V = L.defaultRewardName, Q = L.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: Z,
     scrollHeight: W
@@ -46,7 +46,7 @@ function S(e) {
   } = s.useContext(_.k), {
     expansionSpring: F
   } = (0, c.q_F)({
-    expansionSpring: +!!A,
+    expansionSpring: +!!R,
     config: (S = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -76,36 +76,36 @@ function S(e) {
     })(Object(w)).forEach(function(e) {
       Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(w, e))
     }), S)
-  }), z = (null == (n = P.userStatus) ? true : n.completedAt) != null, X = (null == (o = P.userStatus) ? true : o.claimedAt) != null, G = (0, m.xN)(P.config), K = (0, m.LM)(P.config), {
+  }), z = (null == (n = P.userStatus) ? true : n.completedAt) != null, X = (null == (o = P.userStatus) ? true : o.claimedAt) != null, K = (0, m.xN)(P.config), G = (0, m.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: J
-  } = (0, g.I)(P), $ = (0, g.Bd)(P, q, D), ee = s.useMemo(() => X && G ? y.intl.format(y.t["8Op4c3"], {
+  } = (0, g.I)(P), $ = (0, g.Bd)(P, I, D), ee = s.useMemo(() => X && K ? y.intl.format(y.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), K]
+      }), G]
     })
   }) : X ? (0, r.jsx)(T, {
     questId: P.id,
     children: V
-  }) : G ? y.intl.format(y.t.ro1szc, {
+  }) : K ? y.intl.format(y.t.ro1szc, {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), K]
+      }), G]
     })
   }) : y.intl.format(y.t["0IUT4e"], {
     rewardWithArticleHook: () => (0, r.jsx)(T, {
       questId: P.id,
       children: Q
     })
-  }), [V, X, Q, P.id, K, G]), et = s.useMemo(() => {
+  }), [V, X, Q, P.id, G, K]), et = s.useMemo(() => {
     if (null != $) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -141,30 +141,30 @@ function S(e) {
               quest: P,
               size: 76,
               percentComplete: Y,
-              percentCompleteText: A && !(0, m.zi)(P) ? J : true,
+              percentCompleteText: R && !(0, m.zi)(P) ? J : true,
               children: (0, r.jsx)("div", {
                 className: E.circularRewardTileWrapper,
                 children: (0, r.jsx)(x.Z, {
                   quest: P,
                   questContent: N,
                   className: E.circularQuestRewardTileAsset,
-                  location: j.dr.QUEST_HOME_DESKTOP,
-                  autoplay: A,
+                  location: v.dr.QUEST_HOME_DESKTOP,
+                  autoplay: R,
                   onLoadComplete: H,
                   lazyLoad: true,
-                  sourceQuestContent: q
+                  sourceQuestContent: I
                 })
               })
             })]
           }) : (0, r.jsx)(x.Z, {
             quest: P,
-            autoplay: A,
+            autoplay: R,
             questContent: N,
             className: E.questRewardTileAsset,
-            location: j.dr.QUEST_HOME_DESKTOP,
+            location: v.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: H,
             lazyLoad: true,
-            sourceQuestContent: q
+            sourceQuestContent: I
           })]
         })
       }), (0, r.jsxs)("div", {
@@ -191,13 +191,13 @@ function S(e) {
         },
         className: E.textOverflowBlur
       })]
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(j.Z, {
       quest: P,
       questContent: N,
-      contentPosition: R,
+      contentPosition: A,
       rowIndex: B,
-      onReceiveErrorHints: I,
-      sourceQuestContent: q
+      onReceiveErrorHints: q,
+      sourceQuestContent: I
     })]
   })
 }

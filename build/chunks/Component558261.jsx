@@ -39,7 +39,7 @@ let B = e => {
     let {
       product: t,
       cardRef: n,
-      analyticsLocations: a,
+      analyticsLocations: s,
       selectedVariantIndex: i,
       hasDiscountOffer: o,
       discountOfferAmount: u
@@ -48,7 +48,7 @@ let B = e => {
     }) : P.intl.formatToPlainString(P.t["cNSL/v"], {
       price: d
     });
-    return (0, r.jsx)(s.zxk, {
+    return (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), (0, c.Z)({
@@ -57,7 +57,7 @@ let B = e => {
             selectedVariantIndex: i
           }),
           returnRef: n,
-          analyticsLocations: a,
+          analyticsLocations: s,
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
@@ -69,23 +69,21 @@ let B = e => {
     let {
       isClaimPremiumProductDisabled: t
     } = e;
-    return (0, r.jsx)("div", {
-      children: (0, r.jsx)(u.Z, {
-        fullWidth: true,
-        disabled: t,
-        onClick: e => e.stopPropagation(),
-        textOptions: {
-          textOverride: P.intl.string(P.t.sEAnVF)
-        },
-        subscriptionTier: I.Si.TIER_2
-      })
+    return (0, r.jsx)(u.Z, {
+      fullWidth: true,
+      disabled: t,
+      onClick: e => e.stopPropagation(),
+      textOptions: {
+        textOverride: P.intl.string(P.t.sEAnVF)
+      },
+      subscriptionTier: I.Si.TIER_2
     })
   },
   R = e => {
     let {
       handlePreviewButtonClick: t
     } = e;
-    return (0, r.jsx)(s.zxk, {
+    return (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t(e)
@@ -99,7 +97,7 @@ let B = e => {
       handleUseNow: t,
       isApplying: n
     } = e;
-    return (0, r.jsx)(s.zxk, {
+    return (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t()
@@ -114,17 +112,17 @@ let B = e => {
       product: t,
       isClaimPremiumProductDisabled: n,
       isClaiming: l,
-      tab: a,
+      tab: s,
       analyticsLocations: i,
       analyticsContext: o
     } = e, c = async () => {
-      (0, x.oc)(t, a, o, "claim premium product button"), await (0, C.fK)(t.skuId), (0, j.Z)({
+      (0, x.oc)(t, s, o, "claim premium product button"), await (0, C.fK)(t.skuId), (0, j.Z)({
         product: t,
         analyticsLocations: i,
         purchaseType: k.o8.PREMIUM_PURCHASE
       })
     };
-    return (0, r.jsx)(s.zxk, {
+    return (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), c()
@@ -141,15 +139,15 @@ let B = e => {
     let {
       product: t,
       tab: n,
-      checkoutEligiblePrices: a,
+      checkoutEligiblePrices: s,
       analyticsLocations: i,
       analyticsContext: o,
       selectedVariantIndex: c
     } = e;
-    return (0, r.jsx)(s.zxk, {
+    return (0, r.jsx)(a.zxk, {
       variant: "primary",
       text: P.intl.format(P.t.kAgx5O, {
-        orbPrice: a[0].amount,
+        orbPrice: s[0].amount,
         orbIconHook: () => (0, r.jsx)(d.Z, {
           className: N.orbIconAligned
         })
@@ -178,7 +176,7 @@ let B = e => {
         })
       },
       "aria-label": P.intl.formatToPlainString(P.t["fNG/09"], {
-        orbPrice: a[0].amount
+        orbPrice: s[0].amount
       }),
       fullWidth: true
     })
@@ -187,7 +185,7 @@ let B = e => {
     let {
       handlePreviewButtonClick: t
     } = e;
-    return (0, r.jsx)(s.zxk, {
+    return (0, r.jsx)(a.zxk, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t(e)
@@ -201,7 +199,7 @@ let B = e => {
       product: t,
       cardRef: n,
       selectedVariantIndex: l
-    } = e, s = (0, m.Nd)(), c = null == s ? true : s.tab, u = (0, a.e7)([p.default], () => p.default.getCurrentUser()), d = f.ZP.canUseCollectibles(u), {
+    } = e, a = (0, m.Nd)(), c = null == a ? true : a.tab, u = (0, s.e7)([f.default], () => f.default.getCurrentUser()), d = p.ZP.canUseCollectibles(u), {
       isPurchased: g,
       isPartiallyOwnedBundle: C
     } = (0, v.L)(t), O = (0, b.G1)(t), y = (0, b.rN)(t), {
@@ -221,7 +219,7 @@ let B = e => {
       hasDiscountOffer: N
     }), U = (0, h.sp)(), {
       analyticsLocations: V
-    } = (0, o.ZP)(i.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, a.Wu)([_.Z], () => [_.Z.isClaiming === t.skuId, null != _.Z.isClaiming && _.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(i.Z.COLLECTIBLES_SHOP_CARD), z = (0, x.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), [G, K] = (0, s.Wu)([_.Z], () => [_.Z.isClaiming === t.skuId, null != _.Z.isClaiming && _.Z.isClaiming !== t.skuId]), {
       handleUseNow: q,
       isApplying: Y
     } = (0, E.W)({
@@ -266,11 +264,11 @@ let B = e => {
       skuId: t,
       cardRef: n,
       selectedVariantIndex: l
-    } = e, a = (0, x.LJ)(t);
-    if (null == a) return null;
-    let s = (0, y.W)(a, l);
+    } = e, s = (0, x.LJ)(t);
+    if (null == s) return null;
+    let a = (0, y.W)(s, l);
     return (0, r.jsx)(D, {
-      product: s,
+      product: a,
       cardRef: n,
       selectedVariantIndex: l
     })

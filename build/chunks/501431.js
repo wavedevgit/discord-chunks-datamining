@@ -46,11 +46,11 @@ function g(e, t) {
   }), e
 }
 
-function p(e, t) {
+function f(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let f = {
+let p = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
@@ -67,7 +67,7 @@ let f = {
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: false,
-    sort: f,
+    sort: p,
     searchQuery: "",
     queryPageSize: 0,
     queryPageOffset: 0,
@@ -83,19 +83,19 @@ let f = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? h : l.size > 0 ? C : f
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? h : l.size > 0 ? C : p
   },
   b = (0, Chunk191336.U)((0, Chunk180059.XR)((e, t) => g(d({}, _), {
-    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === p.sortType && t().sort.sortDirection === p.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
         colorFilters: n,
         themeFilters: r,
         orbEligible: l,
-        searchQuery: a
+        searchQuery: s
       } = t();
-      return [e, n, r].some(e => e.size > 0) || l || "" !== a
+      return [e, n, r].some(e => e.size > 0) || l || "" !== s
     },
     hasRelevanceFilters: () => {
       let {
@@ -107,7 +107,7 @@ let f = {
     },
     onToggleItemType: t => {
       e(e => {
-        let n = p(e.itemTypeFilters, t),
+        let n = f(e.itemTypeFilters, t),
           r = g(d({}, e), {
             itemTypeFilters: n,
             queryPageOffset: 0
@@ -117,7 +117,7 @@ let f = {
     },
     onToggleColor: t => {
       e(e => {
-        let n = p(e.colorFilters, t),
+        let n = f(e.colorFilters, t),
           r = g(d({}, e), {
             colorFilters: n,
             queryPageOffset: 0
@@ -127,7 +127,7 @@ let f = {
     },
     onToggleTheme: t => {
       e(e => {
-        let n = p(e.themeFilters, t),
+        let n = f(e.themeFilters, t),
           r = g(d({}, e), {
             themeFilters: n,
             queryPageOffset: 0
@@ -221,8 +221,8 @@ let f = {
       colorFilters: n,
       themeFilters: r,
       orbEligible: l,
-      sort: a,
-      searchQuery: s,
+      sort: s,
+      searchQuery: a,
       queryPageSize: i,
       queryPageOffset: o
     } = e;
@@ -233,9 +233,9 @@ let f = {
       orbs_eligible: !!l || true,
       offset: o,
       limit: i,
-      sort_type: a.sortType,
-      sort_direction: a.sortDirection,
-      search: "" !== s ? s : true
+      sort_type: s.sortType,
+      sort_direction: s.sortDirection,
+      search: "" !== a ? a : true
     }
   },
   S = () => {
@@ -246,7 +246,7 @@ let f = {
     } = (0, Chunk149705.a)(), l = (0, Chunk870289.FF)("collectibles_shop_header_bar");
     Chunk647438.useEffect(() => {
       let r = r => {
-        let a = async () => {
+        let s = async () => {
           n(true);
           try {
             let t = await (0, o.y)(r);
@@ -270,13 +270,13 @@ let f = {
             n(false)
           }
         };
-        l && 0 !== r.limit && a()
+        l && 0 !== r.limit && s()
       };
       Chunk647438(E(b.getState()));
-      let a = b.subscribe(E, Chunk647438, {
+      let s = b.subscribe(E, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        s = b.subscribe(e => e.hasFilters(), (e, t) => {
+        a = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

@@ -51,13 +51,13 @@ function c(e) {
 
 function u(e) {
   let {
-    dismissibleContentTypes: t,
+    getDismissibleContentTypes: t,
     badgeComponent: n,
     visibleContent: o
-  } = e, a = null != o && t.includes(o), s = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(l.IGR, {
+  } = e, a = null == t ? true : t(), s = null != o && a.includes(o), c = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(l.IGR, {
     text: i.intl.string(i.t.y2b7CA)
   });
-  return a ? s : null
+  return s ? c : null
 }
 
 function d(e) {

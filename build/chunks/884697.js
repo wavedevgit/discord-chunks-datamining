@@ -146,15 +146,15 @@ let y = e => (null == e ? true : e.premiumType) != null,
   L = (e, t) => {
     if (t === i.Z.AVATAR_DECORATION) {
       let t = (0, r.flatMap)([...e.values()], "items").filter(c.M);
-      return (0, r.uniqBy)(t, "id")
+      return (0, r.uniqBy)(t, "skuId")
     }
     if (t === i.Z.PROFILE_EFFECT) {
       let t = (0, r.flatMap)([...e.values()], "items").filter(d.H);
-      return (0, r.uniqBy)(t, "id")
+      return (0, r.uniqBy)(t, "skuId")
     }
     if (t === i.Z.NAMEPLATE) {
       let t = (0, r.flatMap)([...e.values()], "items").filter(u.k);
-      return (0, r.uniqBy)(t, "id")
+      return (0, r.uniqBy)(t, "skuId")
     }
     return []
   },
@@ -162,15 +162,15 @@ let y = e => (null == e ? true : e.premiumType) != null,
     let n = x(e, true);
     if (t === i.Z.AVATAR_DECORATION) {
       let e = (0, r.flatMap)(n, "items").filter(c.M);
-      return (0, r.uniqBy)(e, "id")
+      return (0, r.uniqBy)(e, "skuId")
     }
     if (t === i.Z.PROFILE_EFFECT) {
       let e = (0, r.flatMap)(n, "items").filter(d.H);
-      return (0, r.uniqBy)(e, "id")
+      return (0, r.uniqBy)(e, "skuId")
     }
     if (t === i.Z.NAMEPLATE) {
       let e = (0, r.flatMap)(n, "items").filter(u.k);
-      return (0, r.uniqBy)(e, "id")
+      return (0, r.uniqBy)(e, "skuId")
     }
     return []
   },
@@ -188,17 +188,17 @@ let y = e => (null == e ? true : e.premiumType) != null,
   j = e => null != e ? f.X.fromServer(e) : true,
   U = e => L(e, i.Z.AVATAR_DECORATION),
   G = e => M(e, i.Z.AVATAR_DECORATION),
-  B = (e, t) => (0, r.uniqBy)([...U(e), ...G(t)], "id"),
+  B = (e, t) => (0, r.uniqBy)([...U(e), ...G(t)], "skuId"),
   Z = e => L(e, i.Z.PROFILE_EFFECT),
   F = e => M(e, i.Z.PROFILE_EFFECT),
-  V = (e, t) => (0, r.uniqBy)([...Z(e), ...F(t)], "id"),
+  V = (e, t) => (0, r.uniqBy)([...Z(e), ...F(t)], "skuId"),
   H = (e, t) => {
     let n = Z(t),
       r = F(e).filter(e => {
         let {
-          id: t
+          skuId: t
         } = e;
-        return !n.some(e => e.id === t)
+        return !n.some(e => e.skuId === t)
       });
     return {
       purchased: n,
@@ -207,7 +207,7 @@ let y = e => (null == e ? true : e.premiumType) != null,
   },
   Y = e => L(e, i.Z.NAMEPLATE),
   W = e => M(e, i.Z.NAMEPLATE),
-  K = (e, t) => (0, r.uniqBy)([...Y(e), ...W(t)], "id"),
+  K = (e, t) => (0, r.uniqBy)([...Y(e), ...W(t)], "skuId"),
   z = e => e.applicationId === p.XAJ,
   q = 3.8,
   X = e => q * e,

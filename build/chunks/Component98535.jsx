@@ -34,18 +34,18 @@ function S(e) {
     refreshCategories: h
   } = e, S = v();
   x(S);
-  let O = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
+  let O = (0, s.e7)([a.Z], () => a.Z.useReducedMotion),
     [y, T] = l.useState(true),
     L = l.useCallback(async (e, t, r) => {
       u(e, t);
       let l = r && !n && !O,
-        a = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      T(t), await o(a, l)
+        s = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
+      T(t), await o(s, l)
     }, [n, O, o, u]),
     j = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
-    } = (0, p.a)();
+    } = (0, f.a)();
   return j && null != k ? (0, r.jsx)(m.Z, {}) : null != S ? (0, r.jsx)(C.Z, {
     onRetry: h,
     errorMessage: S,
@@ -55,7 +55,7 @@ function S(e) {
     handleTransition: L,
     tab: t,
     transitionState: c
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(p.Z, {
     isFullScreen: n,
     tab: t,
     sortedCategories: i,
@@ -65,16 +65,16 @@ function S(e) {
 }
 let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   x = e => {
-    let t = (0, a.e7)([i.default], () => i.default.getCurrentUser()),
+    let t = (0, s.e7)([i.default], () => i.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, h.Z)();
     l.useEffect(() => {
-      var l, a;
+      var l, s;
       null != e && o.Z.captureMessage(e, {
         tags: {
-          isStaff: null != (a = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? a : "unknown",
+          isStaff: null != (s = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? s : "unknown",
           disableCache: n.toString(),
           includeUnpublished: r.toString()
         }

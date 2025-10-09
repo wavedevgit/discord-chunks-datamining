@@ -57,7 +57,7 @@ function k(e) {
   return e
 }
 
-function I(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,8 +69,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let q = ["png", "gif", "webp"],
-  D = [...q, "jpg", "jpeg"],
+let I = ["png", "gif", "webp"],
+  D = [...I, "jpg", "jpeg"],
   L = Array.from(new Set([...D, "gif", "mp4", "webm"]));
 
 function V(e) {
@@ -178,22 +178,22 @@ let M = "1193992107035983872",
 function W() {
   var e, t, o, d, u, B, V, M;
   let [W, U] = Chunk647438.useState(Z), H = Chunk647438.useCallback(e => {
-    U(I(k({}, e), {
+    U(q(k({}, e), {
       preview: true
     }))
-  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [X, G] = Chunk647438.useState(false), [K, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [X, K] = Chunk647438.useState(false), [G, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function et(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      H(I(k({}, W), {
+      H(q(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => I(k({}, e), {
+        }, e => q(k({}, e), {
           assets: k({}, e.assets, r)
         })).exhaustive())
       }))
@@ -217,18 +217,18 @@ function W() {
         };
         break;
       case "videoPlayerThumbnail":
-        s.video = I(k({}, s.video), {
+        s.video = q(k({}, s.video), {
           thumbnail: t
         });
         break;
       default:
         return
     }
-    H(I(k({}, W), {
-      config: I(k({}, W.config), {
-        taskConfigV2: I(k({}, W.config.taskConfigV2), {
-          tasks: I(k({}, n), {
-            [l.X.WATCH_VIDEO]: I(k({}, r), {
+    H(q(k({}, W), {
+      config: q(k({}, W.config), {
+        taskConfigV2: q(k({}, W.config.taskConfigV2), {
+          tasks: q(k({}, n), {
+            [l.X.WATCH_VIDEO]: q(k({}, r), {
               assets: s
             })
           })
@@ -239,11 +239,11 @@ function W() {
 
   function er(e, t) {
     var n, r, s;
-    H(I(k({}, W), {
-      config: I(k({}, W.config), {
-        videoMetadata: I(k({}, W.config.videoMetadata), {
+    H(q(k({}, W), {
+      config: q(k({}, W.config), {
+        videoMetadata: q(k({}, W.config.videoMetadata), {
           messages: null != (s = null == (n = W.config.videoMetadata) ? true : n.messages) ? s : {},
-          assets: I(k({}, null == (r = W.config.videoMetadata) ? true : r.assets), {
+          assets: q(k({}, null == (r = W.config.videoMetadata) ? true : r.assets), {
             [e]: t
           })
         })
@@ -254,12 +254,12 @@ function W() {
   function es(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      H(I(k({}, W), {
+      H(q(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => I(k({}, e), {
+        }, e => q(k({}, e), {
           messages: k({}, e.messages, r)
         })).exhaustive())
       }))
@@ -270,14 +270,14 @@ function W() {
     let n = W.config.taskConfigV2.tasks,
       r = n[l.X.WATCH_VIDEO];
     if (null == r) return;
-    let s = I(k({}, r.messages), {
+    let s = q(k({}, r.messages), {
       [e]: t
     });
-    H(I(k({}, W), {
-      config: I(k({}, W.config), {
-        taskConfigV2: I(k({}, W.config.taskConfigV2), {
-          tasks: I(k({}, n), {
-            [l.X.WATCH_VIDEO]: I(k({}, r), {
+    H(q(k({}, W), {
+      config: q(k({}, W.config), {
+        taskConfigV2: q(k({}, W.config.taskConfigV2), {
+          tasks: q(k({}, n), {
+            [l.X.WATCH_VIDEO]: q(k({}, r), {
               messages: s
             })
           })
@@ -289,14 +289,14 @@ function W() {
   function ea(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, s;
-      H(I(k({}, W), {
+      H(q(k({}, W), {
         config: (r = W.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
           configVersion: 2
-        }, e => I(k({}, e), {
-          rewardsConfig: I(k({}, e.rewardsConfig), {
-            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? I(k({}, e), {
+        }, e => q(k({}, e), {
+          rewardsConfig: q(k({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? q(k({}, e), {
               messages: k({}, e.messages, s)
             }) : e)
           })
@@ -306,9 +306,9 @@ function W() {
   }
 
   function ei(e, t) {
-    H(I(k({}, W), {
-      config: I(k({}, W.config), {
-        colors: I(k({}, W.config.colors), {
+    H(q(k({}, W), {
+      config: q(k({}, W.config), {
+        colors: q(k({}, W.config.colors), {
           [e]: t
         })
       })
@@ -364,8 +364,8 @@ function W() {
         taskDuration: ec,
         taskConfigV2: W.config.taskConfigV2,
         onSelect: function(e) {
-          H(I(k({}, W), {
-            config: I(k({}, W.config), {
+          H(q(k({}, W), {
+            config: q(k({}, W.config), {
               taskConfigV2: e
             })
           }))
@@ -450,7 +450,7 @@ function W() {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: et,
-        filters: [...q, "svg"],
+        filters: [...I, "svg"],
         initialValue: W.config.assets.logotype
       }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
@@ -488,32 +488,32 @@ function W() {
     }), ee.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.X6q, {
         variant: "heading-md/semibold",
-        className: R.subheading,
+        className: A.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: R.fields,
-        children: [(0, r.jsx)(j.Z, {
+        className: A.fields,
+        children: [(0, r.jsx)(v.Z, {
           title: "Name",
           assetKey: "name",
           onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.name
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(v.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.nameWithArticle
-        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(v.Z, {
+        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(j.Z, {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 config: (r = W.config, (0, i.EQ)(r).with({
                   configVersion: 2
-                }, e => I(k({}, e), {
-                  rewardsConfig: I(k({}, e.rewardsConfig), {
-                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? I(k({}, e), {
+                }, e => q(k({}, e), {
+                  rewardsConfig: q(k({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? q(k({}, e), {
                       asset: t,
                       skuId: ""
                     }) : e)
@@ -566,19 +566,19 @@ function W() {
         onChange: function(e) {
           switch (z(e), e) {
             case O.a.UNENROLLED:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: null
               }));
               break;
             case O.a.ENROLLED:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case O.a.COMPLETED_25:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * ec
@@ -586,7 +586,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_50:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * ec
@@ -594,7 +594,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_75:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * ec
@@ -602,7 +602,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_100:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: Q({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -611,7 +611,7 @@ function W() {
               }));
               break;
             case O.a.CLAIMED:
-              H(I(k({}, W), {
+              H(q(k({}, W), {
                 userStatus: Q({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -703,7 +703,7 @@ function W() {
           label: "Is Participating:",
           checked: X,
           onChange: function(e) {
-            G(e)
+            K(e)
           }
         })
       }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
@@ -711,7 +711,7 @@ function W() {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-sm/semibold",
           children: "Quest Card Embed"
-        }), K ? (0, Chunk951288.jsx)(Chunk683650.o, {
+        }), G ? (0, Chunk951288.jsx)(Chunk683650.o, {
           questId: W.id
         }) : (0, Chunk951288.jsx)(Chunk37303.Z, {
           quest: W,
@@ -722,7 +722,7 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Invalid Quests Embed:",
-          checked: K,
+          checked: G,
           onChange: Y
         })
       }), ed && (0, Chunk951288.jsxs)(Chunk456799.Z, {
@@ -741,7 +741,7 @@ function W() {
               } = await Promise.all([require.e("73877"), require.e("32249"), require.e("58396")]).then(require.bind(require, 536687));
               return t => {
                 var n;
-                return (0, r.jsx)(e, I(k({}, t), {
+                return (0, r.jsx)(e, q(k({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
                   questId: null != (n = W.id) ? n : "fake-quest-id",

@@ -37,7 +37,7 @@ function p(e, t) {
         category_position: null == p ? true : p.categoryPosition
       })
     }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, m, t, g, e, i]),
-    f = l.useCallback(e => {
+    C = l.useCallback(e => {
       e ? null === v.current && (v.current = setTimeout(() => {
         x(), v.current = null
       }, 1e3)) : null !== v.current && (clearTimeout(v.current), v.current = null)
@@ -45,6 +45,6 @@ function p(e, t) {
   return l.useEffect(() => () => {
     null !== v.current && (clearTimeout(v.current), v.current = null)
   }, []), {
-    handleCardVisibilityChange: f
+    handleCardVisibilityChange: C
   }
 }

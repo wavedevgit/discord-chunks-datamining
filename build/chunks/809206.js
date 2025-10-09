@@ -134,7 +134,8 @@ function b(e) {
   return o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   }), (0, l.Z)(e => {
-    let o = p({
+    var o, l;
+    let f = p({
       username: t,
       email: r,
       email_token: a,
@@ -147,12 +148,12 @@ function b(e) {
       legacy_username: y,
       new_password: g
     }, e);
-    null === m && (o.avatar_decoration_id = null), null != m && (o.avatar_decoration_id = m.id, o.avatar_decoration_sku_id = m.skuId), null === O && (o.nameplate_id = null), null != O && (o.nameplate_id = O.id, o.nameplate_sku_id = O.skuId), true !== v && (o.primary_guild_id = v), null != I ? (o.display_name_font_id = I.fontId, o.display_name_effect_id = I.effectId, o.display_name_colors = I.colors) : null === I && (o.display_name_font_id = null, o.display_name_effect_id = null, o.display_name_colors = null);
-    let l = i.K.get(u.JkL),
-      f = (0, d.xJ)();
-    null != f && null != l && (o.push_provider = f, o.push_token = l);
-    let T = i.K.get(u.scU);
-    return null != d.mv && null != T && (o.push_voip_provider = d.mv, o.push_voip_token = T), E(o)
+    true !== m && (f.avatar_decoration_sku_id = null != (o = null == m ? true : m.skuId) ? o : null), true !== O && (f.nameplate_sku_id = null != (l = null == O ? true : O.skuId) ? l : null), true !== v && (f.primary_guild_id = v), null != I ? (f.display_name_font_id = I.fontId, f.display_name_effect_id = I.effectId, f.display_name_colors = I.colors) : null === I && (f.display_name_font_id = null, f.display_name_effect_id = null, f.display_name_colors = null);
+    let T = i.K.get(u.JkL),
+      S = (0, d.xJ)();
+    null != S && null != T && (f.push_provider = S, f.push_token = T);
+    let A = i.K.get(u.scU);
+    return null != d.mv && null != A && (f.push_voip_provider = d.mv, f.push_voip_token = A), E(f)
   }, {
     checkEnabled: false,
     modalProps: {

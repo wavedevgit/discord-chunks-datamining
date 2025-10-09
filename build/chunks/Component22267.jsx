@@ -82,7 +82,7 @@ let C = {
           hovered: w,
           placement: m.i.PREVIEW,
           content: x ? true : Y
-        }, null == a ? true : a.id), (0, r.jsxs)("div", {
+        }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
             className: o()(T.avatarContainer, !x && T.avatarVisible),

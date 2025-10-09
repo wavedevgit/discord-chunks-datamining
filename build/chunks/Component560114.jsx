@@ -341,7 +341,7 @@ class eI extends(l = Chunk647438.PureComponent) {
     }) : require && null != exports ? (0, Chunk951288.jsx)(Chunk481060.YAO, {
       style: {
         "--custom-invite-section-header-height": 24,
-        "--custom-invite-section-header-gap": 16
+        "--custom-invite-section-header-gap": 12
       },
       className: Chunk451964.scroller,
       sections: exports.map(e => e.length),
@@ -636,7 +636,7 @@ class eI extends(l = Chunk647438.PureComponent) {
         default:
           return null
       }
-    }), ec(this, "getSectionHeight", e => 0 === e ? 24 : 40), ec(this, "renderSection", e => {
+    }), ec(this, "getSectionHeight", e => 0 === e ? 24 : 36), ec(this, "renderSection", e => {
       let {
         section: t
       } = e, {
@@ -666,7 +666,7 @@ function ex(e) {
   return (0, i.jsxs)(x.P3F, {
     style: {
       "--custom-invite-section-header-height": 24,
-      "--custom-invite-section-header-gap": 16 * (0 !== t),
+      "--custom-invite-section-header-gap": 12 * (0 !== t),
       "--custom-icon-collapse-rotate": l ? "0deg" : "-90deg"
     },
     className: ea.inviteSectionHeader,

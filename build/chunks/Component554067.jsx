@@ -24,7 +24,7 @@ function C(e) {
   } = e, {
     searchQuery: C,
     onSetSearchQuery: h
-  } = (0, u.S)(), [_, m] = l.useState(""), b = (0, c.sp)(), E = (0, a.e7)([i.default], () => i.default.locale);
+  } = (0, u.S)(), [_, m] = l.useState(""), b = (0, c.sp)(), E = (0, s.e7)([i.default], () => i.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
       h(_)
@@ -32,9 +32,9 @@ function C(e) {
     return () => clearTimeout(e)
   }, [_, h]), l.useEffect(() => {
     m(C)
-  }, [C]), (0, r.jsx)(s.P3F, {
+  }, [C]), (0, r.jsx)(a.P3F, {
     ignoreKeyPress: true,
-    className: f.searchBar,
+    className: p.searchBar,
     onClick: () => {
       n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
@@ -46,7 +46,7 @@ function C(e) {
         page_type: n
       })
     },
-    children: (0, r.jsx)(s.E1j, {
+    children: (0, r.jsx)(a.E1j, {
       size: "sm",
       onKeyDown: e => {
         "Enter" === e.key && h(_)
@@ -64,7 +64,7 @@ function C(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === E ? p.intl.string(p.t.arz34O) : p.intl.string(p.t["hIt/Nj"])
+      placeholder: "en-US" === E ? f.intl.string(f.t.arz34O) : f.intl.string(f.t["hIt/Nj"])
     })
   })
 }

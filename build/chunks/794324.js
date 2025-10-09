@@ -1,4 +1,4 @@
-/** Chunk was on 66882 **/
+/** Chunk was on 21885 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Oi: () => m,
@@ -25,18 +25,23 @@ let u = e => {
       var r, l;
       let o = null != n || null != i,
         s = null != n && null == i;
-      return a ? {
+      if (a) return {
         bannerStyleOverrides: o ? true : e.bannerDisplayConfig,
         logoStyleOverrides: o ? true : e.logoDisplayConfig,
         heroLogo: null != t ? t : e.heroLogoUrl,
         heroBannerStatic: null != n ? n : e.heroBannerUrl,
-        heroBannerAnimated: s ? true : null != i ? i : e.heroBannerAnimatedUrl
-      } : {
+        heroBannerAnimated: s ? true : null != i ? i : e.heroBannerAnimatedUrl,
+        heroBannerRive: null != i ? i : e.heroRiveUrl
+      };
+      let c = null == (r = e.bannerAsset) ? true : r.animated,
+        u = (null == c ? true : c.endsWith(".riv")) ? c : e.heroRiveUrl;
+      return {
         bannerStyleOverrides: o ? true : e.bannerDisplayConfig,
         logoStyleOverrides: o ? true : e.logoDisplayConfig,
         heroLogo: null != t ? t : e.logoUrl,
-        heroBannerStatic: null != n ? n : null == (r = e.bannerAsset) ? true : r.static,
-        heroBannerAnimated: s ? true : null != i ? i : null == (l = e.bannerAsset) ? true : l.animated
+        heroBannerStatic: null != n ? n : null == (l = e.bannerAsset) ? true : l.static,
+        heroBannerAnimated: s ? true : null != i ? i : c,
+        heroBannerRive: s ? true : null != i ? i : u
       }
     }, [t, n, i, e, a])
   },

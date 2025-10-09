@@ -23,22 +23,22 @@ let h = Chunk647438.forwardRef(function(e, t) {
     expansionSpring: x,
     isExpanded: _,
     isExpansionAnimationComplete: b,
-    quest: v,
-    taskDetails: j,
+    quest: j,
+    taskDetails: v,
     useReducedMotion: C,
     onCtxMenuOpen: y,
     onCtxMenuClose: E,
     onCtxMenuSelect: O,
     overlayRef: S
-  } = e, T = (null == (n = v.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(v), P = s.useRef(null), N = (null == (o = v.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : j.percentComplete, [R, B] = s.useState(false);
+  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (o = j.userStatus) ? true : o.enrolledAt) != null, R = null != w ? w.percentComplete : v.percentComplete, [A, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [T && (0, r.jsx)(u.Z, {
       expansionSpring: x,
       overlayRef: S,
       progressBarRef: P,
-      quest: v,
+      quest: j,
       isExpanded: _,
-      isHovered: R
+      isHovered: A
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
       "aria-hidden": _ && b,
@@ -59,7 +59,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
         className: f.contentCollapsedWrapper,
         children: [T && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
-            quest: v,
+            quest: j,
             onCtxMenuOpen: y,
             onCtxMenuClose: E,
             onCtxMenuSelect: O
@@ -68,12 +68,12 @@ let h = Chunk647438.forwardRef(function(e, t) {
           })]
         }), N ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
-          quest: v,
+          quest: j,
           progressBarRef: P,
           isExpanded: false,
-          percentComplete: A
+          percentComplete: R
         }) : null, T && (0, r.jsx)(d.y, {
-          quest: v,
+          quest: j,
           useReducedMotion: C,
           isExpanded: false,
           awaitingConsoleConnections: false,
@@ -82,7 +82,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
           activeScreen: c.LI.DESKTOP,
           showBackButton: false,
           onBack: () => {},
-          taskDetails: j,
+          taskDetails: v,
           sourceQuestContent: c.jn.QUEST_BAR_V2
         })]
       })

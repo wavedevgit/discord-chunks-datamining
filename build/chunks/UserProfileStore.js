@@ -232,7 +232,6 @@ function J(e) {
       popoutAnimationParticleType: null == (c = z.user_profile) ? true : c.popout_animation_particle_type,
       bio: null != (O = null == (u = z.user_profile) ? true : u.bio) ? O : "",
       profileEffect: null != en ? {
-        id: en.id,
         skuId: en.sku_id,
         expiresAt: en.expires_at
       } : true,
@@ -273,7 +272,6 @@ function J(e) {
         themeColors: null == (B = z.guild_member_profile) ? true : B.theme_colors,
         popoutAnimationParticleType: null == (Z = z.guild_member_profile) ? true : Z.popout_animation_particle_type,
         profileEffect: null != e ? {
-          id: e.id,
           skuId: e.sku_id,
           expiresAt: e.expires_at
         } : true,
@@ -370,7 +368,6 @@ function en(e) {
       popoutAnimationParticleType: s,
       themeColors: l,
       profileEffect: null != c ? {
-        id: c.id,
         skuId: c.sku_id,
         expiresAt: c.expires_at
       } : true
@@ -403,7 +400,6 @@ function er(e) {
       popoutAnimationParticleType: l,
       themeColors: c,
       profileEffect: null != u ? {
-        id: u.id,
         skuId: u.sku_id,
         expiresAt: u.expires_at
       } : true

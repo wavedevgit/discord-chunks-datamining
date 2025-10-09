@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk636977 = require("./636977.js"),
   Chunk685816 = require("./685816.js"),
@@ -58,14 +58,14 @@ let M = (0, Chunk884697.IC)(90),
     var t;
     let {
       isLoading: n,
-      handleTransition: a,
+      handleTransition: s,
       category: U,
       heroBlock: V,
       tab: z,
       onVisibilityChange: G
     } = e, K = (0, i.O)(e => {
       null == G || G(e)
-    }, .1, null != G), q = l.useRef(null), Y = (0, R.G)("HeroBlock"), X = (0, u.e7)([h.default], () => h.default.getCurrentUser()), Q = (0, N.Z)(), J = (0, m.sp)(), $ = x.Z.useConfig({
+    }, .1, null != G), q = l.useRef(null), Y = (0, R.G)("HeroBlock"), Q = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), J = (0, m.sp)(), $ = x.Z.useConfig({
       location: "HeroBlock"
     }).showButtonLeftAligned && z !== w.AW.ORBS, ee = (0, O.x)("HeroBlock"), et = l.useMemo(() => {
       var e, t;
@@ -91,38 +91,39 @@ let M = (0, Chunk884697.IC)(90),
       bannerStyleOverrides: en,
       logoStyleOverrides: er,
       heroLogo: el,
-      heroBannerStatic: ea,
-      heroBannerAnimated: es
-    } = (0, P.hr)(et), ei = null != (t = null == en ? true : en.responsive) && t, eo = null == en ? true : en.backgroundStyle, ec = (0, A.Dp)(es), eu = (0, u.e7)([b.Z], () => b.Z.products), ed = l.useMemo(() => n ? [] : eu.size > 0 ? Q(et.rankedSkuIds) : [], [n, Q, et.rankedSkuIds, eu]), eg = l.useMemo(() => !n && 0 !== et.rankedSkuIds.length && !(ed.length > 0) && et.rankedSkuIds.every(e => {
+      heroBannerStatic: es,
+      heroBannerAnimated: ea,
+      heroBannerRive: ei
+    } = (0, P.hr)(et), eo = null != (t = null == en ? true : en.responsive) && t, ec = null == en ? true : en.backgroundStyle, eu = null != ei, ed = (0, u.e7)([b.Z], () => b.Z.products), eg = l.useMemo(() => n ? [] : ed.size > 0 ? X(et.rankedSkuIds) : [], [n, X, et.rankedSkuIds, ed]), ef = l.useMemo(() => !n && 0 !== et.rankedSkuIds.length && !(eg.length > 0) && et.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [n, et.rankedSkuIds, ed.length]), {
+    }), [n, et.rankedSkuIds, eg.length]), {
       cardContainerRef: ep,
-      totalCards: ef
+      totalCards: eC
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), a = (0, p.Z)(() => {
-        (null == s ? true : s.current) != null && n(Math.max(1, Math.floor((s.current.offsetWidth + r) / (246 + r))))
-      }), s = (0, g.y)(a, [r, e], {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), s = (0, f.Z)(() => {
+        (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
+      }), a = (0, g.y)(s, [r, e], {
         fireOnMount: true,
         fireOnDepsChange: true,
         enabled: e
       });
       return {
         cardContainerRef: l.useCallback(t => {
-          s.current = t, null != t && e && a()
-        }, [a, s, e]),
+          a.current = t, null != t && e && s()
+        }, [s, a, e]),
         totalCards: e ? t : 4
       }
-    })(z !== w.AW.ORBS), eC = (0, y.a)()(ed), eh = (0, T.l)(eC).slice(0, ef), e_ = (0, B.St)(eh), em = z === w.AW.ORBS ? F.intl.string(F.t["1CdL8f"]) : Y ? F.intl.string(F.t.guWAg4) : ee ? F.intl.string(F.t["/QvRam"]) : F.intl.string(F.t.xYKa1d), eb = (0, v.FF)("CollectiblesContent"), eE = (0, E.$2)(et.categorySkuId), eS = S.Z.useConfig({
+    })(z !== w.AW.ORBS), eh = (0, y.a)()(eg), e_ = (0, T.l)(eh).slice(0, eC), em = (0, B.St)(e_), eb = z === w.AW.ORBS ? F.intl.string(F.t["1CdL8f"]) : Y ? F.intl.string(F.t.guWAg4) : ee ? F.intl.string(F.t["/QvRam"]) : F.intl.string(F.t.xYKa1d), eE = (0, v.FF)("CollectiblesContent"), eS = (0, E.$2)(et.categorySkuId), ev = S.Z.useConfig({
       location: "HeroBlock"
-    }).showCardsV2, ev = () => {
+    }).showCardsV2, ex = () => {
       z === w.AW.ORBS ? ((0, C.Y)({
         pageType: H.ZY5.SHOP_ORBS_TAB,
         sectionType: H.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: H.qAy.CTA_TO_QUEST_HOME
-      }), (0, f.navigateToQuestHome)({
+      }), (0, p.navigateToQuestHome)({
         fromContent: o.j.ORBS_SHOP_HERO_CTA
-      })) : (a("shop latest category hero", !eb || eE ? et.categorySkuId : true), _.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      })) : (s("shop latest category hero", !eE || eS ? et.categorySkuId : true), _.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == J ? true : J.sessionId,
         sku_id: et.categorySkuId,
         page_type: z,
@@ -131,38 +132,39 @@ let M = (0, Chunk884697.IC)(90),
         cta_name: "shop latest category hero button"
       }))
     };
-    return null != X && (n || et !== W) ? (0, r.jsxs)("div", {
+    return null != Q && (n || et !== W) ? (0, r.jsxs)("div", {
       ref: K,
       className: D.heroBlock,
-      children: [ec ? (0, A.gT)({
+      children: [eu ? (0, A.gT)({
         isCustomCursorEnabled: Y,
         className: D.riveEventOverlay,
         riveEventTargetRef: q
       }) : null, (0, r.jsx)("div", {
-        className: s()(D.banner, {
-          [D.rivBanner]: ec
+        className: a()(D.banner, {
+          [D.rivBanner]: eu
         }),
-        style: null != eo ? {
-          background: eo
+        style: null != ec ? {
+          background: ec
         } : true,
-        children: null != ea && (0, r.jsx)(Z.Z, {
-          bannerStatic: ea,
-          bannerAnimated: es,
-          isResponsive: ei,
+        children: null != es && (0, r.jsx)(Z.Z, {
+          bannerStatic: es,
+          bannerAnimated: ea,
+          bannerRive: ei,
+          isResponsive: eo,
           eventTargetRef: q
         })
       }), (0, r.jsxs)("div", {
         className: D.heroBlockContent,
-        children: [ec ? (0, r.jsx)("div", {
+        children: [eu ? (0, r.jsx)("div", {
           className: D.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.zxk, {
             variant: "overlay-primary",
-            onClick: ev,
-            text: em
+            onClick: ex,
+            text: eb
           })
         }) : (0, r.jsxs)("div", {
-          className: s()($ ? D.heroHeaderContainerStacked : D.heroHeaderContainer, {
-            [D.responsive]: ei
+          className: a()($ ? D.heroHeaderContainerStacked : D.heroHeaderContainer, {
+            [D.responsive]: eo
           }),
           children: [n ? (0, r.jsx)("div", {
             className: D.heroHeaderBadgeLogoSummaryContainer
@@ -173,7 +175,7 @@ let M = (0, Chunk884697.IC)(90),
               text: F.intl.string(F.t["h/uBCQ"]),
               className: D.limitedTimeBadge
             }), (0, r.jsxs)("div", {
-              className: s()(D.heroLogoNameContainer, {
+              className: a()(D.heroLogoNameContainer, {
                 [D.heroLogoNameContainerStacked]: $
               }),
               children: [null != el && (0, r.jsx)("img", {
@@ -187,8 +189,8 @@ let M = (0, Chunk884697.IC)(90),
                 color: "header-primary",
                 children: et.title
               }), "" !== et.summary && (0, r.jsx)(d.Text, {
-                variant: eE ? "text-lg/medium" : "text-md/normal",
-                className: eE ? D.orbsSubHeaderText : D.subHeaderText,
+                variant: eS ? "text-lg/medium" : "text-md/normal",
+                className: eS ? D.orbsSubHeaderText : D.subHeaderText,
                 style: null != et.bannerTextColor ? {
                   color: et.bannerTextColor
                 } : true,
@@ -199,20 +201,20 @@ let M = (0, Chunk884697.IC)(90),
             className: $ ? D.heroHeaderButtonContainerStacked : D.heroHeaderButtonContainer,
             children: (0, r.jsx)(d.zxk, {
               variant: "overlay-primary",
-              onClick: ev,
-              text: em
+              onClick: ex,
+              text: eb
             })
           })]
         }), (0, r.jsx)("div", {
-          className: s()({
+          className: a()({
             [D.row]: z === w.AW.HOME,
             [D.feed]: z === w.AW.ORBS
           }),
           ref: ep,
-          children: n || eg ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(ef)].map((e, t) => eS ? (0, r.jsx)(I.Z, {}, t) : (0, r.jsx)(L.K, {}, t))
+          children: n || ef ? (0, r.jsx)(r.Fragment, {
+            children: [...Array(eC)].map((e, t) => ev ? (0, r.jsx)(I.Z, {}, t) : (0, r.jsx)(L.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
-            children: e_.map((e, t) => {
+            children: em.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(m.k0, {
                 newValue: {
@@ -220,12 +222,12 @@ let M = (0, Chunk884697.IC)(90),
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: eS && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
+                children: ev && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
                   skuId: null == e ? true : e.skuId
                 }, e.skuId) : (0, r.jsx)(j.Z, {
                   product: e,
                   category: n,
-                  user: X,
+                  user: Q,
                   tab: z,
                   shopBlockType: c.z.HERO
                 }, e.skuId)

@@ -72,6 +72,6 @@ class u extends Chunk81825.Z {
     }))
   }
   constructor(e) {
-    super(), i(this, "id", true), i(this, "skuId", true), this.id = e.id, this.skuId = e.skuId
+    super(), i(this, "skuId", true), this.skuId = e.skuId
   }
 }

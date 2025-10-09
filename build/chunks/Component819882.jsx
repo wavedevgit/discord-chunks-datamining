@@ -28,10 +28,10 @@ let S = e => {
       product: t,
       selectedVariantIndex: n,
       cardRef: h
-    } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, a.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), y = (0, u.sp)(), {
+    } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, s.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), y = (0, u.sp)(), {
       isPurchased: T,
       isPartiallyOwnedBundle: L
-    } = (0, p.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
+    } = (0, f.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
       product: t,
       isPartiallyOwnedBundle: L,
       isPurchased: T
@@ -43,10 +43,10 @@ let S = e => {
       tab: v,
       hasDiscountOffer: null != P
     }), B = (0, C.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-    return k || l.tq || N || !I || v === b.AW.ORBS ? null : j ? (0, r.jsx)(s.hU, {
+    return k || l.tq || N || !I || v === b.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
       variant: "primary",
       "aria-label": E.intl.string(E.t.SKNnqq),
-      icon: s.tEF,
+      icon: a.tEF,
       onClick: e => {
         e.stopPropagation(), B(e)
       }
@@ -54,7 +54,7 @@ let S = e => {
       newValue: {
         pageCategory: v === b.AW.HOME || null == y ? true : y.pageCategory
       },
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(p.Z, {
         primary: true,
         product: t,
         selectedVariantIndex: n,
@@ -68,11 +68,11 @@ let S = e => {
       skuId: t,
       cardRef: n,
       selectedVariantIndex: l
-    } = e, a = (0, C.LJ)(t);
-    if (null == a) return null;
-    let s = (0, h.W)(a, l);
+    } = e, s = (0, C.LJ)(t);
+    if (null == s) return null;
+    let a = (0, h.W)(s, l);
     return (0, r.jsx)(S, {
-      product: s,
+      product: a,
       cardRef: n,
       selectedVariantIndex: l
     })

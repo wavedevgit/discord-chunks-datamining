@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -26,9 +26,9 @@ var Chunk951288 = require("./951288.js"),
 let v = Chunk647438.memo(function(e) {
     let {
       product: t
-    } = e, n = (0, u.Nd)(), a = null == n ? true : n.tab, v = (0, b.zQ)(t), x = l.useRef(null), {
+    } = e, n = (0, u.Nd)(), s = null == n ? true : n.tab, v = (0, b.zQ)(t), x = l.useRef(null), {
       handleCardVisibilityChange: O
-    } = (0, d.E)(t.skuId, a === E.AW.CATALOG ? "full" : a), y = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [T, L] = (0, _.SS)(t);
+    } = (0, d.E)(t.skuId, s === E.AW.CATALOG ? "full" : s), y = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [T, L] = (0, _.SS)(t);
     return (0, r.jsx)(i.$, {
       innerRef: x,
       onChange: O,
@@ -47,10 +47,10 @@ let v = Chunk647438.memo(function(e) {
             }), (0, r.jsxs)("div", {
               className: S.innerContainer,
               children: [(0, r.jsxs)("div", {
-                className: s()(S.baseProductCardDetailsContainer, {
+                className: a()(S.baseProductCardDetailsContainer, {
                   [S.hasVariantSwitcher]: null != L
                 }),
-                children: [(0, r.jsx)(p.Z, {
+                children: [(0, r.jsx)(f.Z, {
                   skuId: t.skuId
                 }), null != L && (0, r.jsx)("div", {
                   className: S.hoveredVariantSwitcher,
@@ -58,7 +58,7 @@ let v = Chunk647438.memo(function(e) {
                 })]
               }), (0, r.jsxs)("div", {
                 className: S.baseProductCardFooter,
-                children: [(0, r.jsx)(f.Z, {
+                children: [(0, r.jsx)(p.Z, {
                   skuId: t.skuId
                 }), L]
               })]

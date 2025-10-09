@@ -87,8 +87,8 @@ let f = [{
     } = e, g = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id)), {
       product: P,
       purchase: b
-    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), C = (0, u.qS)(b), A = (0, u.G1)(P), I = !E && C, w = (0, p.M)(!A || E), T = (0, m.kd)(P), N = i.useMemo(() => I ? y.intl.string(y.t["7vkeu7"]) : (0, a.EQ)([A, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYKy)).with([true, false, true], () => y.intl.string(y.t.q0PlFh)).with([true, false, false], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [I, A, E, w]);
-    return null != P && (null == b || I) ? (0, n.jsxs)("div", {
+    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), I = (0, u.qS)(b), C = (0, u.G1)(P), A = !E && I, w = (0, p.M)(!C || E), T = (0, m.kd)(P), N = i.useMemo(() => A ? y.intl.string(y.t["7vkeu7"]) : (0, a.EQ)([C, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYKy)).with([true, false, true], () => y.intl.string(y.t.q0PlFh)).with([true, false, false], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [A, C, E, w]);
+    return null != P && (null == b || A) ? (0, n.jsxs)("div", {
       className: s()(O.modalPreview, O.shopPreviewContainer, h),
       children: [(0, n.jsx)("div", {
         className: O.shopPreviewBanner,

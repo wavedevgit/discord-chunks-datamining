@@ -28,6 +28,6 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
     buildLayout: () => [T],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
-      dismissibleContentTypes: [Chunk704215.z.AUTH_SESSIONS_NEW]
+      getDismissibleContentTypes: () => [Chunk704215.z.AUTH_SESSIONS_NEW]
     }
   })

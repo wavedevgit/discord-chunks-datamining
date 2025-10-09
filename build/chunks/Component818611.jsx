@@ -174,7 +174,7 @@ let O = () => 80,
             children: x.intl.string(x.t.pWG4zc)
           })]
         }, y)).otherwise(e => {
-          let r = (null == i ? true : i.id) === e.id;
+          let r = (null == i ? true : i.skuId) === e.skuId;
           return (0, n.jsx)(S, {
             style: v({}, j),
             user: t,
@@ -203,7 +203,7 @@ let O = () => 80,
         })
       },
       getSectionHeight: e => u[e].height,
-      getItemKey: (e, t) => u[e].items[t].id,
+      getItemKey: (e, t) => u[e].items[t].skuId,
       getItemHeight: O
     })
   }

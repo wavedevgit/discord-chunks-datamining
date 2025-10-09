@@ -261,7 +261,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     shouldHideExpressionPicker: e9,
     handleOuterClick: te
   } = (0, F.iV)(D, ew), tt = (0, F.aT)(p), {
-    isAutocompleteVisible: tn,
+    currentAutocompleteType: tn,
     handleAutocompleteVisibilityChange: ti
   } = (0, F.vB)(), tr = (0, F.ae)(ew), tl = (0, F.Sg)(eJ, D, ew), ta = (0, F.O1)({
     editorRef: ew,
@@ -388,7 +388,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     spellcheckEnabled: eW,
                     canOnlyUseTextCommands: false,
                     isEditorIdle: tt,
-                    isAutocompleteVisible: tn,
+                    currentAutocompleteType: tn,
                     "aria-labelledby": eC
                   })
                 })

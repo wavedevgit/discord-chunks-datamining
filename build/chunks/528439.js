@@ -14,10 +14,10 @@ var r, Chunk647438 = require("./647438.js"),
   Chunk388032 = require("./388032.jsx"),
   u = ((r = {}).PURCHASE = "purchase", r.PREMIUM_PURCHASE = "premium_purchase", r.PREVIEW = "preview", r);
 let d = {
-    id: "None"
+    skuId: "None"
   },
   f = {
-    id: "Shop"
+    skuId: "Shop"
   },
   p = () => {
     let e = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),

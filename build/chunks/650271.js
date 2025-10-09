@@ -27,7 +27,7 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.APPEARANCE_PANE, {
     buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
-      dismissibleContentTypes: (0, Chunk620163.$Z)(),
+      getDismissibleContentTypes: Chunk620163.$Z,
       badgeComponent: Chunk620163.c$
     }
   })

@@ -67,7 +67,7 @@ let u = Chunk647438.createContext({
       unregisterComponent: f,
       expansionSpring: h,
       mountPoints: x
-    } = s.useContext(u), _ = s.useRef(null), b = s.useRef(null), v = s.useRef(true);
+    } = s.useContext(u), _ = s.useRef(null), b = s.useRef(null), j = s.useRef(true);
     s.useEffect(() => {
       m()
     }, [m]), s.useLayoutEffect(() => {
@@ -76,13 +76,13 @@ let u = Chunk647438.createContext({
         null != e && f(c, d)
       }
     }, [c, d, g, f]);
-    let j = s.useCallback(e => {
+    let v = s.useCallback(e => {
       let {
         height: t
       } = e;
-      v.current !== t && (m(), v.current = t)
+      j.current !== t && (m(), j.current = t)
     }, [m]);
-    (0, i.PM)(_, j);
+    (0, i.PM)(_, v);
     let C = null == (n = x.get(c)) ? true : n.current,
       y = null;
     return null == C ? y = null : p && null != h ? y = (0, r.jsxs)(r.Fragment, {
