@@ -2,18 +2,16 @@
 /** chunk id: 217702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jj: () => a,
-  OF: () => o,
+  Jj: () => o,
+  OF: () => s,
   WW: () => l,
-  Y9: () => i,
-  hV: () => s,
-  mT: () => r
+  Y9: () => a,
+  hV: () => Chunk531057.h,
+  mT: () => i
 });
-let r = 550,
-  i = 600,
-  a = 350,
-  o = 40;
-var s = function(e) {
-  return e.STATIC = "STATIC", e.RESPONSIVE = "RESPONSIVE", e.MOSAIC = "MOSAIC", e
-}({});
-let l = 20
+var Chunk531057 = require("./531057.js");
+let i = 550,
+  a = 600,
+  o = 350,
+  s = 40,
+  l = 20
