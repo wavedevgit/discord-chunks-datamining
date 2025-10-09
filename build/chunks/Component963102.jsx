@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -45,7 +45,7 @@ function B(e) {
   return (0, r.jsx)(C.Z.Title, {
     onClick: () => s(t),
     wrapperClassName: N.tabWrapper,
-    className: a()(N.tab, {
+    className: i()(N.tab, {
       [N.selected]: l
     }),
     children: n
@@ -57,7 +57,7 @@ function A(e) {
     tab: t,
     selected: n,
     displayText: s,
-    handleTransition: i
+    handleTransition: a
   } = e, [o, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), m = e => {
     clearTimeout(g), h(setTimeout(() => {
       u(e)
@@ -84,7 +84,7 @@ function A(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(T.Z, {
-          handleTransition: i,
+          handleTransition: a,
           onClose: t
         })
       },
@@ -112,10 +112,10 @@ function A(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => i(t),
+          onClick: () => a(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: a()(N.tab, {
+          className: i()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -150,32 +150,32 @@ function R(e) {
     onClose: s,
     selectedTab: f,
     handleTransition: p
-  } = e, T = (0, g.ZP)(), R = (0, o.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
+  } = e, T = (0, g.ZP)(), R = (0, o.e7)([S.default], () => S.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
-  }), H = (0, _.Y)({
+  }), F = (0, _.Y)({
     location: "CollectiblesShopHeaderBar"
-  }), F = [{
-    tab: j.AW.HOME,
+  }), H = [{
+    tab: k.AW.HOME,
     displayText: P.intl.string(P.t.ijDDw8)
   }, {
-    tab: j.AW.CATALOG,
+    tab: k.AW.CATALOG,
     displayText: P.intl.string(P.t.Ah5sJi)
   }];
-  w && F.push({
-    tab: j.AW.ORBS,
+  w && H.push({
+    tab: k.AW.ORBS,
     displayText: P.intl.string(P.t.EBYkzs)
   });
   let D = n ? O.DR : s,
-    M = f === j.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
+    M = f === k.AW.ORBS ? L.ZY5.SHOP_ORBS_TAB : L.ZY5.COLLECTIBLES_SHOP,
     W = l.useCallback(() => {
       t && (D(), (0, u.Ou)()), (0, b.Y)({
         pageType: M,
-        sectionType: k.jXE.ORBS_BALANCE_MENU,
-        ctaObject: k.qAy.CTA_TO_QUEST_HOME
+        sectionType: L.jXE.ORBS_BALANCE_MENU,
+        ctaObject: L.qAy.CTA_TO_QUEST_HOME
       }), (0, h.navigateToQuestHome)({
-        fromContent: i.j.ORBS_BALANCE_MENU
+        fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [D, t, M]),
     U = (0, y.eN)("collectibles_shop_header_bar"),
@@ -190,14 +190,14 @@ function R(e) {
     theme: T,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: a()(e, N.headerBar, {
+      className: i()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,
       toolbar: t || !Z ? null : (0, r.jsx)(l.Fragment, {}),
       children: [(0, r.jsxs)(c.P3F, {
         className: N.shopHomeLink,
-        onClick: () => p(j.AW.HOME),
+        onClick: () => p(k.AW.HOME),
         "aria-label": P.intl.string(P.t.pWG4zc) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: N.discordLogo
@@ -206,14 +206,14 @@ function R(e) {
         })]
       }), (0, r.jsx)("div", {
         className: N.tabs,
-        children: F.map(e => {
+        children: H.map(e => {
           let {
             tab: t,
             displayText: n
           } = e;
-          return t === j.AW.CATALOG ? (0, r.jsx)(A, {
+          return t === k.AW.CATALOG ? (0, r.jsx)(A, {
             tab: t,
-            selected: (0, j.RE)(f) || f === t,
+            selected: (0, k.RE)(f) || f === t,
             displayText: n,
             handleTransition: p
           }, t) : (0, r.jsx)(B, {
@@ -223,12 +223,12 @@ function R(e) {
             handleTransition: p
           }, t)
         })
-      }), (w || t || U || H) && (0, r.jsxs)("div", {
+      }), (w || t || U || F) && (0, r.jsxs)("div", {
         className: N.alignedRightContent,
-        children: [U && (0, r.jsx)(L.Z, {
+        children: [U && (0, r.jsx)(j.Z, {
           handleTransition: p,
           selectedTab: f
-        }), H && (0, r.jsx)(c.P3F, {
+        }), F && (0, r.jsx)(c.P3F, {
           className: N.wishlistButton,
           onClick: V,
           "aria-label": P.intl.string(P.t["7lZ31N"]),
@@ -236,10 +236,10 @@ function R(e) {
             size: "xs",
             color: "currentColor"
           })
-        }), w && (0, r.jsx)(S.V9, {
+        }), w && (0, r.jsx)(v.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: M,
-          cardAlignment: S.V9.CardAlignment.END,
+          cardAlignment: v.V9.CardAlignment.END,
           ctaText: P.intl.string(P.t.VC4Mq6),
           ctaOnClick: W,
           className: N.balanceWidgetMenu

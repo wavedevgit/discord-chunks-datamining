@@ -2,7 +2,7 @@
 /** chunk id: 819882, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,36 +23,38 @@ var Chunk873546 = require("./873546.js"),
   Chunk956472 = require("./956472.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
-let S = e => {
+let v = e => {
     let {
       product: t,
       selectedVariantIndex: n,
-      cardRef: h
-    } = e, S = (0, d.Nd)(), v = null == S ? true : S.tab, x = (0, s.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(x), y = (0, u.sp)(), {
-      isPurchased: T,
+      cardRef: h,
+      onClick: v,
+      icon: S
+    } = e, x = (0, d.Nd)(), O = null == x ? true : x.tab, y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), T = c.ZP.canUseCollectibles(y), j = (0, u.sp)(), {
+      isPurchased: k,
       isPartiallyOwnedBundle: L
-    } = (0, f.L)(t), j = (0, g.rN)(t), k = (0, g.G1)(t), I = (0, g.ne)({
+    } = (0, f.L)(t), I = (0, g.rN)(t), P = (0, g.G1)(t), N = (0, g.ne)({
       product: t,
       isPartiallyOwnedBundle: L,
-      isPurchased: T
-    }), P = (0, _.Iw)(t), {
-      isOrbExclusive: N
+      isPurchased: k
+    }), B = (0, _.Iw)(t), {
+      isOrbExclusive: A
     } = (0, m.Ip)({
       product: t,
-      isPremiumUser: O,
-      tab: v,
-      hasDiscountOffer: null != P
-    }), B = (0, C.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-    return k || l.tq || N || !I || v === b.AW.ORBS ? null : j ? (0, r.jsx)(a.hU, {
+      isPremiumUser: T,
+      tab: O,
+      hasDiscountOffer: null != B
+    }), R = (0, C.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+    return P || l.tq || A || !N || O === b.AW.ORBS ? null : I || null != v || null != S ? (0, r.jsx)(i.hU, {
       variant: "primary",
       "aria-label": E.intl.string(E.t.SKNnqq),
-      icon: a.tEF,
+      icon: null != S ? S : i.tEF,
       onClick: e => {
-        e.stopPropagation(), B(e)
+        e.stopPropagation(), null != v ? v(t.skuId) : R(e)
       }
     }) : (0, r.jsx)(u.k0, {
       newValue: {
-        pageCategory: v === b.AW.HOME || null == y ? true : y.pageCategory
+        pageCategory: O === b.AW.HOME || null == j ? true : j.pageCategory
       },
       children: (0, r.jsx)(p.Z, {
         primary: true,
@@ -63,17 +65,21 @@ let S = e => {
       })
     })
   },
-  v = e => {
+  S = e => {
     let {
       skuId: t,
       cardRef: n,
-      selectedVariantIndex: l
-    } = e, s = (0, C.LJ)(t);
-    if (null == s) return null;
-    let a = (0, h.W)(s, l);
-    return (0, r.jsx)(S, {
-      product: a,
+      selectedVariantIndex: l,
+      onClick: s,
+      icon: i
+    } = e, a = (0, C.LJ)(t);
+    if (null == a) return null;
+    let o = (0, h.W)(a, l);
+    return (0, r.jsx)(v, {
+      product: o,
       cardRef: n,
-      selectedVariantIndex: l
+      selectedVariantIndex: l,
+      onClick: s,
+      icon: i
     })
   }

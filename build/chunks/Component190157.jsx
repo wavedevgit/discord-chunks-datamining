@@ -25,7 +25,7 @@ let l = e => {
       isCustomCursorEnabled: t,
       className: n,
       riveEventTargetRef: s
-    } = e, a = e => {
+    } = e, i = e => {
       let {
         button: n
       } = l(e), r = e.currentTarget;
@@ -34,7 +34,7 @@ let l = e => {
     return (0, r.jsx)("div", {
       ref: s,
       className: n,
-      onMouseMove: a,
+      onMouseMove: i,
       onMouseDown: e => {
         let {
           button: t

@@ -21,53 +21,53 @@ var Chunk647438 = require("./647438.js"),
 
 function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    l = (0, i.e7)([o.Z], () => o.Z.hasConsented(C.pjP.PERSONALIZATION)),
+    l = (0, a.e7)([o.Z], () => o.Z.hasConsented(C.pjP.PERSONALIZATION)),
     _ = r.useMemo(() => {
       var t;
-      return null != (t = null == e ? true : e[a.m.RECOMMENDED]) ? t : []
+      return null != (t = null == e ? true : e[i.m.RECOMMENDED]) ? t : []
     }, [e]),
     m = r.useMemo(() => {
       var t;
-      return null != (t = null == e ? true : e[a.m.POPULAR]) ? t : []
+      return null != (t = null == e ? true : e[i.m.POPULAR]) ? t : []
     }, [e]),
     b = _.length > 0 && l,
-    [E, S] = r.useState(b ? a.m.RECOMMENDED : a.m.POPULAR),
-    v = (0, p.Z)(),
-    x = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
-    O = (0, i.e7)([u.Z], () => u.Z.getUserDiscounts()),
+    [E, v] = r.useState(b ? i.m.RECOMMENDED : i.m.POPULAR),
+    S = (0, p.Z)(),
+    x = (0, a.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
+    O = (0, a.e7)([u.Z], () => u.Z.getUserDiscounts()),
     y = (0, g.a)(),
-    [T, L] = r.useState([]),
-    j = r.useCallback(() => {
-      S(a.m.RANDOM), L(s().shuffle(x))
+    [T, j] = r.useState([]),
+    k = r.useCallback(() => {
+      v(i.m.RANDOM), j(s().shuffle(x))
     }, [x]);
   r.useEffect(() => {
-    L(s().shuffle(x))
+    j(s().shuffle(x))
   }, [x]);
-  let k = r.useMemo(() => {
+  let L = r.useMemo(() => {
     let e = [];
-    return E === a.m.RECENT ? e = x : E === a.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...x], t) : E === a.m.RECOMMENDED ? e = n ? (0, d.Qf)(v(_), O) : v(_) : E === a.m.POPULAR ? e = n ? (0, d.Qf)(v(m), O) : v(m) : E === a.m.RANDOM && (e = T), y(e)
-  }, [E, y, x, T, t, v, _, m, O, n]);
+    return E === i.m.RECENT ? e = x : E === i.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...x], t) : E === i.m.RECOMMENDED ? e = n ? (0, d.Qf)(S(_), O) : S(_) : E === i.m.POPULAR ? e = n ? (0, d.Qf)(S(m), O) : S(m) : E === i.m.RANDOM && (e = T), y(e)
+  }, [E, y, x, T, t, S, _, m, O, n]);
   return {
     sortType: E,
-    setSortType: S,
-    sortedItems: (0, f.l)(k),
+    setSortType: v,
+    sortedItems: (0, f.l)(L),
     sortOptions: r.useMemo(() => {
       let e = [{
-        value: a.m.POPULAR,
+        value: i.m.POPULAR,
         label: h.intl.string(h.t["1wQj4O"])
       }, {
-        value: a.m.RECENT,
+        value: i.m.RECENT,
         label: h.intl.string(h.t["6NZpt7"])
       }, {
-        value: a.m.PRICE_LOW_TO_HIGH,
+        value: i.m.PRICE_LOW_TO_HIGH,
         label: h.intl.string(h.t.RTG4yM)
       }];
       return b && e.unshift({
-        value: a.m.RECOMMENDED,
+        value: i.m.RECOMMENDED,
         label: h.intl.string(h.t.JrlKlp)
       }), e
     }, [b]),
     showRecommendationOption: b,
-    shuffleProducts: j
+    shuffleProducts: k
   }
 }

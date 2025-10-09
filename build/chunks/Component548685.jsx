@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
@@ -43,21 +43,21 @@ let P = e => {
     prioritizeUserDiscounts: A,
     tab: R,
     buttonContainerClassName: Z
-  } = e, w = (0, i.e7)([d.default], () => d.default.getCurrentUser()), H = C.ZP.canUseCollectibles(w), F = (0, T.G)("FeedBlock"), {
+  } = e, w = (0, a.e7)([d.default], () => d.default.getCurrentUser()), F = C.ZP.canUseCollectibles(w), H = (0, T.G)("FeedBlock"), {
     sortType: D,
     setSortType: M,
     sortedItems: W,
     sortOptions: U,
     shuffleProducts: V,
     showRecommendationOption: z
-  } = (0, O.Z)(P, H, A), G = (0, y.St)(W), K = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, i.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
+  } = (0, O.Z)(P, F, A), G = (0, y.St)(W), K = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, a.e7)([g.Z], () => g.Z.isFocused()), Y = !K && q, {
     animationPhase: Q,
     startAnimation: X
   } = (0, x.y)(), J = (0, h.sp)(), $ = null != (t = null == J ? true : J.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => M(e)
-    }), f.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), f.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: $,
       sort_type: e
     })
@@ -65,7 +65,7 @@ let P = e => {
     location: "FeedBlock"
   }).showCardsV2;
   return null == w ? null : (0, r.jsxs)("div", {
-    className: a()(I.popularPicksSection, I.centeredSection),
+    className: i()(I.popularPicksSection, I.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: I.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -75,9 +75,9 @@ let P = e => {
           children: s
         }), z && (0, r.jsx)(o.ua7, {
           "data-migration-pending": true,
-          text: j.intl.string(j.t["3taPdn"]),
+          text: k.intl.string(k.t["3taPdn"]),
           position: "top",
-          "aria-label": j.intl.string(j.t["3taPdn"]),
+          "aria-label": k.intl.string(k.t["3taPdn"]),
           children: e => {
             var t, n;
             return (0, r.jsx)(o.P3F, (t = function(e) {
@@ -98,7 +98,7 @@ let P = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(p.Z.getArticleURL(L.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(p.Z.getArticleURL(j.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: I.informationIcon,
               children: (0, r.jsx)(o.d3s, {
                 size: "sm"
@@ -116,20 +116,20 @@ let P = e => {
           }
         })]
       }), B ? (0, r.jsxs)("div", {
-        className: a()(I.headerRight, {
-          [k.shopTakeOver]: F
+        className: i()(I.headerRight, {
+          [L.shopTakeOver]: H
         }),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          children: j.intl.string(j.t.uaX709)
+          children: k.intl.string(k.t.uaX709)
         }), (0, r.jsx)("div", {
           className: Z,
           children: (0, r.jsx)(o.PhF, {
             options: U,
             select: et,
             className: I.sortSelect,
-            popoutClassName: a()({
-              [k.shopTakeOver]: F
+            popoutClassName: i()({
+              [L.shopTakeOver]: H
             }),
             isSelected: e => e === D,
             serialize: e => e
@@ -138,14 +138,14 @@ let P = e => {
           className: Z,
           children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
-            text: j.intl.string(j.t.X3tnc3),
+            text: k.intl.string(k.t.X3tnc3),
             buttonRef: ee,
             onClick: () => {
               X({
                 isShuffling: true,
                 onOutroComplete: V,
                 returnRef: ee
-              }), f.default.track(L.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), f.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: $
               })
             },
@@ -156,14 +156,14 @@ let P = e => {
     }), (0, r.jsx)("div", {
       className: I.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => en ? (0, r.jsx)(v.Z, {}, t + 1) : (0, r.jsx)(b.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => en ? (0, r.jsx)(S.Z, {}, t + 1) : (0, r.jsx)(b.K, {}, t + 1))
       }) : G.slice(0, N).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Y)
           if (Q === x.g.SHUFFLE_OUT) return en ? (0, r.jsx)("div", {
             className: I.shuffleOutro,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(S.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t)) : (0, r.jsx)("div", {
@@ -181,7 +181,7 @@ let P = e => {
           },
           children: en && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
             className: n,
-            children: (0, r.jsx)(S.Z, {
+            children: (0, r.jsx)(v.Z, {
               skuId: null == e ? true : e.skuId
             })
           }) : (0, r.jsx)(E.Z, {

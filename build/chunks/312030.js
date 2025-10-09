@@ -2,32 +2,32 @@
 /** chunk id: 312030, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => a
+  h: () => i
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk884697 = require("./884697.js"),
   Chunk215023 = require("./215023.js");
-let a = e => {
+let i = e => {
   let {
     scrollerRef: t,
     sortedCategories: n
-  } = e, [a, i] = r.useState(1), o = r.useCallback(e => {
+  } = e, [i, a] = r.useState(1), o = r.useCallback(e => {
     let t = n.findIndex(t => t.skuId === e);
     return false === t ? 1 : Math.floor(t / s.kN) + 1
   }, [n]), c = r.useCallback(e => {
     if (null != e && !(0, l.$2)(e)) {
       let t = o(e);
-      t !== a && i(t)
+      t !== i && a(t)
     }
-  }, [o, a, i]);
+  }, [o, i, a]);
   return {
-    currentPage: a,
+    currentPage: i,
     handlePageChange: r.useCallback(e => {
       var n;
-      i(e), null == (n = t.current) || n.scrollTo({
+      a(e), null == (n = t.current) || n.scrollTo({
         to: 0
       })
-    }, [t, i]),
+    }, [t, a]),
     scrollToCategory: c
   }
 }

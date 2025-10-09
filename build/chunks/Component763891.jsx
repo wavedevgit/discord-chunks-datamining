@@ -43,19 +43,19 @@ function A(e) {
     isFullScreen: A,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: F,
+  } = e, w = (0, g.sp)(), F = null != (t = null == w ? true : w.sessionId) ? t : "", {
+    noCache: H,
     includeUnpublished: D
-  } = (0, S.Z)(), M = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, i.ap)(z), [K, q, Y] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), W = (0, i.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, q, Y] = l.useMemo(() => {
     switch (Z) {
-      case v.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYND), G ? k.Z : j.Z, s.Z.AVATAR_DECORATION];
-      case v.AW.PROFILE_EFFECTS:
+      case S.AW.AVATAR_DECORATIONS:
+        return [O.intl.string(O.t.dRZYND), G ? L.Z : k.Z, s.Z.AVATAR_DECORATION];
+      case S.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjt7"]), G ? B.Z : N.Z, s.Z.PROFILE_EFFECT];
-      case v.AW.NAMEPLATES:
+      case S.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fq6), G ? P.Z : I.Z, s.Z.NAMEPLATE];
-      case v.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFppq), G ? L.Z : T.Z, s.Z.BUNDLE]
+      case S.AW.BUNDLES:
+        return [O.intl.string(O.t.FYFppq), G ? j.Z : T.Z, s.Z.BUNDLE]
     }
   }, [Z, G]), Q = (0, C.a)(), X = l.useMemo(() => Q(W.filter(e => {
     var t;
@@ -63,23 +63,23 @@ function A(e) {
   })), [W, Y, Q]), J = (0, h.l)(X);
   l.useEffect(() => {
     (0, _.n)({
-      sessionId: H,
+      sessionId: F,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: D,
-      cacheDisabled: F
+      cacheDisabled: H
     })
   }, []), l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: H,
+      sessionId: F,
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
       isFullScreen: A,
       unpublishedCategoriesShown: D,
-      cacheDisabled: F
+      cacheDisabled: H
     })
-  }, [H, A, D, F, n, Z]);
+  }, [F, A, D, H, n, Z]);
   let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;

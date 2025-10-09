@@ -22,10 +22,10 @@ function _(e, t) {
     _ = (0, u.$R)(t),
     g = (0, l.e7)([c.Z], () => c.Z.can(f.Plq.MANAGE_MESSAGES, t), [t]),
     {
-      firstMessage: N
+      firstMessage: S
     } = (0, l.e7)([o.Z], () => o.Z.getMessage(t.id), [t.id]),
-    S = g || null != n && e.canDeleteOwnMessage(n.id);
-  return e.state === f.yb.SENDING || !S || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == N ? true : N.id) || (0, E.Z)(e)) ? null : (0, i.jsx)(s.sNh, {
+    N = g || null != n && e.canDeleteOwnMessage(n.id);
+  return e.state === f.yb.SENDING || !N || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == S ? true : S.id) || (0, E.Z)(e)) ? null : (0, i.jsx)(s.sNh, {
     id: "delete",
     label: m.intl.string(m.t.xwMqDw),
     action: function(n) {

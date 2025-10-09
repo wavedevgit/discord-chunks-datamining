@@ -25,19 +25,19 @@ let C = e => {
     handleTransition: E
   } = e;
   null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let S = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
+  let v = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
     {
-      handleCardVisibilityChange: v
-    } = (0, u.E)(S, "home", "marketing featured block"),
+      handleCardVisibilityChange: S
+    } = (0, u.E)(v, "home", "marketing featured block"),
     x = (0, d.YG)(_, m),
     O = l.useRef(null),
     y = null == m ? true : m.bodyText,
     T = (0, o.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: O,
-    onChange: v,
+    onChange: S,
     threshold: 0,
-    children: (0, r.jsxs)(a.P3F, {
+    children: (0, r.jsxs)(i.P3F, {
       className: p.featuredBlock,
       innerRef: O,
       style: function(e) {
@@ -61,9 +61,9 @@ let C = e => {
         backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
-        E("shop marketing tile", S), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        E("shop marketing tile", v), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == T ? true : T.sessionId,
-          sku_id: S,
+          sku_id: v,
           page_type: "home",
           page_section: null == T ? true : T.pageSection,
           page_category: null == T ? true : T.pageCategory,
@@ -72,13 +72,13 @@ let C = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(a.IGR, {
+      children: [null != b && (0, r.jsx)(i.IGR, {
         disableColor: true,
         text: b,
         className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(a.X6q, {
+        children: null != y && (0, r.jsx)(i.X6q, {
           lineClamp: 4,
           className: p.featuredBlockBodyText,
           style: {
@@ -89,13 +89,13 @@ let C = e => {
         })
       }), (0, r.jsx)("div", {
         className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(i.zxk, {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", S), e.stopPropagation(), i.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            E("shop marketing take me there button", v), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == T ? true : T.sessionId,
-              sku_id: S,
+              sku_id: v,
               page_type: "home",
               page_section: null == T ? true : T.pageSection,
               page_category: null == T ? true : T.pageCategory,

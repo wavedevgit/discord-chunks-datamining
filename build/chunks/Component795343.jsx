@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -34,36 +34,36 @@ function T(e) {
     isFetchingCategories: n,
     isFullScreen: s,
     scrollerRef: T,
-    tab: L
-  } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
+    tab: j
+  } = e, k = (0, d.sp)(), L = null != (t = null == k ? true : k.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: P
-  } = (0, v.Z)(), N = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, S.Z)(), N = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: A,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, h.a)(), w = (0, i.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), H = l.useCallback(() => {
+  } = (0, h.a)(), w = (0, a.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), F = l.useCallback(() => {
     var e;
     null == T || null == (e = T.current) || e.scrollToTop({
       animate: true
     })
-  }, [T]), F = null == B ? true : B.join("");
+  }, [T]), H = null == B ? true : B.join("");
   l.useEffect(() => {
-    H()
-  }, [F, H]);
+    F()
+  }, [H, F]);
   let D = (0, p.a)(),
     M = l.useMemo(() => D(w), [D, w]);
   l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: k,
+      sessionId: L,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: L,
+      tab: j,
       isFullScreen: s,
       unpublishedCategoriesShown: P,
       cacheDisabled: I
     })
-  }, [k, s, P, I, n, L]);
+  }, [L, s, P, I, n, j]);
   let W = l.useRef(null),
     {
       setQueryPageSize: U,
@@ -85,29 +85,29 @@ function T(e) {
   }, [U]);
   let Q = l.useCallback(e => {
       u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == j ? true : j.sessionId,
-        page_section: null == j ? true : j.pageSection,
-        page_category: null == j ? true : j.pageCategory,
+        collectibles_shop_session_id: null == k ? true : k.sessionId,
+        page_section: null == k ? true : k.pageSection,
+        page_category: null == k ? true : k.pageCategory,
         page_index: e,
         page_size: z,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
       }), V((e - 1) * z)
-    }, [j, z, V]),
+    }, [k, z, V]),
     X = f.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()({
+      className: i()({
         [y.productsEmpty]: Y
       }),
       children: [Y && (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
-        className: a()(y.products, {
+        className: i()(y.products, {
           [y.loadIn]: G
         }),
         ref: W,
-        children: [q && [...Array(z)].map((e, t) => X ? (0, r.jsx)(S.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !q && M.map((e, t) => {
+        children: [q && [...Array(z)].map((e, t) => X ? (0, r.jsx)(v.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !q && M.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
@@ -119,7 +119,7 @@ function T(e) {
               product: e,
               user: N,
               category: n,
-              tab: L
+              tab: j
             }, e.skuId)
           }, e.skuId)
         })]

@@ -21,8 +21,8 @@ let g = e => {
     bannerRive: l,
     isResponsive: g = false,
     eventTargetRef: f
-  } = e, p = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), C = (0, a.e7)([u.Z], () => u.Z.isFocused()), h = null != n && !p && C;
-  return null != l ? (0, r.jsx)(i.B, {
+  } = e, p = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), C = (0, i.e7)([u.Z], () => u.Z.isFocused()), h = null != n && !p && C;
+  return null != l ? (0, r.jsx)(a.B, {
     src: l,
     fit: "fit-width",
     eventTargetRef: f
