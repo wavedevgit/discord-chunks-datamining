@@ -163,7 +163,7 @@ function x(e) {
     handleSeekForwardBtnClick: L,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, Z = (0, f.km)(e => e.volume), B = (0, f.km)(e => e.setVolume), F = (0, f.km)(e => e.muted), q = (0, f.km)(e => e.setMuted), U = (0, f.km)(e => e.transcriptEnabled), H = (0, f.km)(e => e.captionEnabled), Q = (0, f.km)(e => e.fullScreenEnabled), Y = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), G = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [z, W] = l.useState(F ? 0 : Z), [K, X] = l.useState(false), [$, J] = l.useState(false), [{
+  } = e, Z = (0, f.km)(e => e.volume), B = (0, f.km)(e => e.setVolume), F = (0, f.km)(e => e.muted), q = (0, f.km)(e => e.setMuted), U = (0, f.km)(e => e.transcriptEnabled), H = (0, f.km)(e => e.captionEnabled), Y = (0, f.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), G = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [z, W] = l.useState(F ? 0 : Z), [K, X] = l.useState(false), [$, J] = l.useState(false), [{
     volumeAnimSpring: ee
   }, et] = (0, d.q_F)(() => ({
     from: {
@@ -210,10 +210,10 @@ function x(e) {
     null != en.current && en.current.focus()
   }, []), l.useEffect(() => (et({
     volumeAnimSpring: $ || K ? 1 : 0,
-    immediate: Y
+    immediate: Q
   }), () => {
     ee.stop()
-  }), [$, K, et, Y, ee]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
+  }), [$, K, et, Q, ee]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
     window.removeEventListener("keydown", es)
   }), [es]);
   let ec = 0 === z ? d.OyP : z < .5 ? d.X2j : d.gj8,
@@ -332,7 +332,7 @@ function x(e) {
         tooltipLabel: h.intl.string(h.t.bDSZOz),
         shortcut: O.Y1.CAPTION
       }), (0, r.jsx)(j, {
-        iconComponent: Q ? d.wvt : d.NpZ,
+        iconComponent: Y ? d.wvt : d.NpZ,
         animationTime: C,
         visible: x,
         onClick: w,

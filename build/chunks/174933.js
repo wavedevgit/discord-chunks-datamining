@@ -1,5 +1,5 @@
-/** Chunk was on 11416 **/
-/** chunk id: 745200, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 73877 **/
+/** chunk id: 174933, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => tx
 });
@@ -2004,10 +2004,16 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
           var s, a = (null != (s = r.mux_sample_number) ? s : 0) >= this.sampleRate,
             n = e3(this._deduplicateBeaconData(e, r));
           if (this.lastEventTime = this.mux.utils.now(), a) return q.info("Not sending event due to sample rate restriction", e, r, n);
-          if (this.envKey || q.info("Missing environment key (envKey) - beacons will be dropped if the video source is not a valid mux video URL", e, r, n), !this.rateLimited) {
+          if (this.envKey || q.info("Missing environment key (envKey) - beacons will be dropped if the video source is not a valid mux video URL", e, r, n), !this.rateLimited)
             if (q.info("Sending event", e, r, n), this.rateLimited = !this.eventQueue.queueEvent(e, n), this.mux.WINDOW_UNLOADING && "viewend" === e) this.eventQueue.destroy(true);
-            else if (this.mux.WINDOW_HIDDEN && "hb" === e ? this.eventQueue.flushEvents(true) : ts.indexOf(e) >= 0 && this.eventQueue.flushEvents(), this.rateLimited) return r.event = "eventrateexceeded", n = e3(r), this.eventQueue.queueEvent(r.event, n), q.error("Beaconing disabled due to rate limit.")
-          }
+            else {
+              if (this.mux.WINDOW_HIDDEN && "hb" === e) this.eventQueue.flushEvents(true);
+              else if (ts.indexOf(e) >= 0) {
+                if ("error" === e && "warning" === t.player_error_severity) return;
+                this.eventQueue.flushEvents()
+              }
+              if (this.rateLimited) return r.event = "eventrateexceeded", n = e3(r), this.eventQueue.queueEvent(r.event, n), q.error("Beaconing disabled due to rate limit.")
+            }
         }
       }
     }, {
@@ -2495,7 +2501,7 @@ var tT = function(e, t) {
   tw = {
     loaded: B(),
     NAME: "mux-embed",
-    VERSION: "5.11.0",
+    VERSION: "5.12.0",
     API_VERSION: "2.1",
     PLAYER_TRACKED: false,
     monitor: function(e, t) {

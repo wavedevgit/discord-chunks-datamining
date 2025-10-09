@@ -49,7 +49,7 @@ function M(e) {
     impressionRef: q,
     parentModalOpenStartClockTime: U,
     sourceQuestContent: H
-  } = e, Q = (0, b.il)(Z), Y = (0, h.tP)(Z), G = (0, u.e7)([E.Z], () => E.Z.getState().theme), z = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, W = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, O.aM)(), [X, $] = l.useState(Q.progressSeconds), [J, ee] = l.useState(false), {
+  } = e, Y = (0, b.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([E.Z], () => E.Z.getState().theme), z = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, W = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, O.aM)(), [X, $] = l.useState(Y.progressSeconds), [J, ee] = l.useState(false), {
     completedRatio: et,
     completedRatioDisplay: en
   } = (0, h.I)(Z), [er, el] = (0, R.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), eo = null != (0, b.LM)(Z.config), [ei, ea] = l.useState(false), es = l.useRef(null), ec = (0, b.vB)(Z.config), eu = (null == (t = Z.userStatus) ? true : t.claimedAt) != null ? eo ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ed = l.useCallback(() => {
@@ -131,7 +131,7 @@ function M(e) {
                   children: Z.config.messages.gameTitle
                 })]
               })]
-            }), !Y && (0, r.jsx)(d.u, {
+            }), !Q && (0, r.jsx)(d.u, {
               position: "left",
               text: eE,
               onTooltipShow: () => {

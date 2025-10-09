@@ -157,7 +157,7 @@ function ee(e) {
     visible: eb,
     visibleChanged: eh,
     targetRef: eS
-  } = (0, q.Yy)(), [eC, e_] = l.useState(true === eo ? Z.rq.PLAYING : Z.rq.PAUSED), [ey, ej] = l.useState(false), [ex, eT] = l.useState(false), eD = (0, y.il)(et), [eR, eP] = l.useState(eD.percentComplete), [eI, eN] = l.useState(false), [ek, ew] = l.useState(true), [eA, eL] = l.useState(false), [eM, eV] = l.useState([]), [eZ, eB] = l.useState(h.Z.getEffectiveConnectionSpeed()), [eF, eq] = l.useState(0), [eU, eH] = l.useState(0), [eQ, eY] = l.useState(false), [eG, ez] = l.useState(false), eW = l.useRef(true), eK = l.useRef(null), eX = l.useRef(null), e$ = (0, T.km)(e => {
+  } = (0, q.Yy)(), [eC, e_] = l.useState(true === eo ? Z.rq.PLAYING : Z.rq.PAUSED), [ey, ej] = l.useState(false), [ex, eT] = l.useState(false), eD = (0, y.il)(et), [eR, eP] = l.useState(eD.percentComplete), [eI, eN] = l.useState(false), [ek, ew] = l.useState(true), [eA, eL] = l.useState(false), [eM, eV] = l.useState([]), [eZ, eB] = l.useState(h.Z.getEffectiveConnectionSpeed()), [eF, eq] = l.useState(0), [eU, eH] = l.useState(0), [eY, eQ] = l.useState(false), [eG, ez] = l.useState(false), eW = l.useRef(true), eK = l.useRef(null), eX = l.useRef(null), e$ = (0, T.km)(e => {
     var t;
     return null != (t = e.videoProgress[et.id]) ? t : {
       timestampSec: 0,
@@ -323,13 +323,13 @@ function ee(e) {
     }
   }, [eC, tq]);
   let tH = !tV && (ex || ey || eC === Z.rq.ENDED),
-    tQ = l.useCallback(() => {
+    tY = l.useCallback(() => {
       var e;
       ti.info("[QV] | handleFullScreenExit");
       let t = (0, C.fn)(null == (e = e8.current) ? true : e.parentNode, e8.current);
-      null == t || (0, C.rB)(t) || (t.removeEventListener(C.NO, tQ), eE(false), tj(false))
+      null == t || (0, C.rB)(t) || (t.removeEventListener(C.NO, tY), eE(false), tj(false))
     }, [eE, ti, tj]),
-    tY = () => {
+    tQ = () => {
       if (null == e8.current) return;
       let e = Math.max(e8.current.currentTime - 10, 0);
       ti.info("[QV] | handleSeekBackIncrement | newTime: ".concat(e)), tz(e), eC === Z.rq.ENDED && tL(Z.rq.PAUSED), th(x.jn.VIDEO_MODAL, _.jZ.SEEK_BACKWARD)
@@ -343,9 +343,9 @@ function ee(e) {
     let e = e8.current;
     return () => {
       let t = (0, C.fn)(null == e ? true : e.parentNode, e);
-      null != t && t.removeEventListener(C.NO, tQ)
+      null != t && t.removeEventListener(C.NO, tY)
     }
-  }, [tQ]);
+  }, [tY]);
   let tz = l.useCallback(e => {
       null != e8.current && (ti.info("[QV] | seekTimeline | timeSec: ".concat(e)), tA(), eN(true), tn(false), e8.current.currentTime = e, eJ(et.id, e, e8.current.duration))
     }, [e8, eJ, et.id, tA, ti]),
@@ -427,19 +427,19 @@ function ee(e) {
       t4.stop()
     }
   }, [ep, t6, e2, tr, t4]), l.useEffect(() => (t2({
-    controlBarAnimSpring: tH || eQ ? 1 : 0,
+    controlBarAnimSpring: tH || eY ? 1 : 0,
     immediate: e2
   }), () => {
     t1.stop()
-  }), [tH, t2, e2, eQ, t1]);
+  }), [tH, t2, e2, eY, t1]);
   let t7 = eC === Z.rq.ENDED,
     t3 = l.useCallback(async e => {
       if (ev) {
         var t;
         let e = (0, C.fn)(null == (t = e8.current) ? true : t.parentNode, e8.current);
-        null != e && (e.removeEventListener(C.NO, tQ), (0, C.Pr)(e), eE(false), tj(false))
+        null != e && (e.removeEventListener(C.NO, tY), (0, C.Pr)(e), eE(false), tj(false))
       }
-      if (th(e, _.jZ.LEARN_MORE), et.id === H.V6) return void window.open(S.Z.getArticleURL(Q.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      if (th(e, _.jZ.LEARN_MORE), et.id === H.V6) return void window.open(S.Z.getArticleURL(Y.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       if (null != es) {
         let e = k.r.build(et.config).application.link;
         await (0, B.qP)(e) && es()
@@ -448,7 +448,7 @@ function ee(e) {
         ctaContent: _.jZ.OPEN_GAME_LINK,
         sourceQuestContent: ec
       })
-    }, [th, et, es, ev, e8, tQ, eE, tj, ec]),
+    }, [th, et, es, ev, e8, tY, eE, tj, ec]),
     t9 = l.useMemo(() => (0, N.z0)(et, u.X.WATCH_VIDEO, N.n1.VIDEO, N.O.THUMBNAIL), [et]),
     t5 = l.useMemo(() => (0, N.z0)(et, u.X.WATCH_VIDEO, N.n1.VIDEO, N.O.CAPTION), [et]),
     ne = e7 || e$.maxTimestampSec >= (null != (F = null == (p = e8.current) ? true : p.currentTime) ? F : 0) + 1,
@@ -506,7 +506,7 @@ function ee(e) {
         },
         autoPlay: eo,
         playsInline: true,
-        mediaLayoutType: ev ? Y.hV.STATIC : Y.hV.RESPONSIVE,
+        mediaLayoutType: ev ? Q.hV.STATIC : Q.hV.RESPONSIVE,
         className: i()({
           [z.hidden]: t7,
           [z.videoInner]: true
@@ -661,7 +661,7 @@ function ee(e) {
             tz(e), eC === Z.rq.ENDED && tL(Z.rq.PLAYING)
           },
           onScrubBack: () => {
-            tY()
+            tQ()
           },
           onScrubForward: () => {
             tG()
@@ -705,11 +705,11 @@ function ee(e) {
               let t = !ev;
               ti.info("[QV] | handleFullScreenButtonClick | shouldBeEnabled: ".concat(t));
               let n = (0, C.fn)(null == (e = e8.current) ? true : e.parentNode, e8.current);
-              t && null != n ? ((0, C.Dj)(n), n.addEventListener(C.NO, tQ), tj(true)) : t || null == n || (n.removeEventListener(C.NO, tQ), tj(false), (0, C.Pr)(n)), eE(t)
+              t && null != n ? ((0, C.Dj)(n), n.addEventListener(C.NO, tY), tj(true)) : t || null == n || (n.removeEventListener(C.NO, tY), tj(false), (0, C.Pr)(n)), eE(t)
             },
-            handleSeekBackBtnClick: tY,
+            handleSeekBackBtnClick: tQ,
             handleSeekForwardBtnClick: tG,
-            handleControlBarPendingInteraction: eY,
+            handleControlBarPendingInteraction: eQ,
             onVolumeChange: tT
           })
         })]
