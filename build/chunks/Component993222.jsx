@@ -30,17 +30,17 @@ let E = e => {
     } = e, E = (0, d.Nd)(), v = null == E ? true : E.tab, {
       isPurchased: S,
       isPartiallyOwnedBundle: O
-    } = (0, f.L)(t), x = (0, s.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), T = (0, C.Iw)(t), {
+    } = (0, f.L)(t), x = (0, s.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (0, s.e7)([a.default], () => a.default.getCurrentUser()), T = c.ZP.canUseCollectibles(y), j = (0, C.Iw)(t), {
       isOrbExclusive: L
     } = (0, h.Ip)({
       product: t,
-      isPremiumUser: j,
+      isPremiumUser: T,
       tab: v,
-      hasDiscountOffer: null != T
+      hasDiscountOffer: null != j
     }), k = (0, g.Yq)(t.skuId), I = (null == x ? true : x.skuId) === _.bu && (0, g.WW)(t.skuId);
     if (n === p.Zh.NONE) return null;
     let B = null;
-    return (n === p.Zh.NEW ? B = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? B = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (B = m.intl.string(m.t.S6kE9v)), null == B && (O || S || !k ? L ? B = m.intl.string(m.t["0TmQRE"]) : I && (B = m.intl.string(m.t.S6kE9v)) : B = m.intl.string(m.t.y2b7CA)), null == B) ? null : (0, r.jsx)(a.IGR, {
+    return (n === p.Zh.NEW ? B = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? B = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (B = m.intl.string(m.t.S6kE9v)), null == B && (O || S || !k ? L ? B = m.intl.string(m.t["0TmQRE"]) : I && (B = m.intl.string(m.t.S6kE9v)) : B = m.intl.string(m.t.y2b7CA)), null == B) ? null : (0, r.jsx)(o.IGR, {
       text: B,
       disableColor: true,
       className: i()(l, b.productCardBadge)

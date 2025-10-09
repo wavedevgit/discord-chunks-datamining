@@ -2,7 +2,7 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,27 +28,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function j(e) {
+function T(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: i,
-    scrollerRef: j,
-    tab: T
+    scrollerRef: T,
+    tab: j
   } = e, L = (0, d.sp)(), k = null != (t = null == L ? true : L.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: B
-  } = (0, S.Z)(), P = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: N,
+  } = (0, S.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+    skus: P,
     currentPage: A,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, h.a)(), w = (0, a.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), H = l.useCallback(() => {
+  } = (0, h.a)(), w = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(P)), H = l.useCallback(() => {
     var e;
-    null == j || null == (e = j.current) || e.scrollToTop({
+    null == T || null == (e = T.current) || e.scrollToTop({
       animate: true
     })
-  }, [j]), F = null == N ? true : N.join("");
+  }, [T]), F = null == P ? true : P.join("");
   l.useEffect(() => {
     H()
   }, [F, H]);
@@ -58,12 +58,12 @@ function j(e) {
     n || (0, _.n)({
       sessionId: k,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: T,
+      tab: j,
       isFullScreen: i,
       unpublishedCategoriesShown: B,
       cacheDisabled: I
     })
-  }, [k, i, B, I, n, T]);
+  }, [k, i, B, I, n, j]);
   let W = l.useRef(null),
     {
       setQueryPageSize: U,
@@ -71,7 +71,7 @@ function j(e) {
       queryPageSize: G
     } = (0, C.S)(),
     [z, K] = l.useState(false),
-    Y = n || Z || null == P;
+    Y = n || Z || null == N;
   l.useEffect(() => {
     if (Y) return void K(false);
     M.length > 0 && K(true)
@@ -117,9 +117,9 @@ function j(e) {
               skuId: e.skuId
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
-              user: P,
+              user: N,
               category: n,
-              tab: T
+              tab: j
             }, e.skuId)
           }, e.skuId)
         })]
@@ -127,7 +127,7 @@ function j(e) {
     }), R > G && (0, r.jsx)("div", {
       className: y.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
+        children: (0, r.jsx)(a.DsT, {
           currentPage: A,
           totalCount: R,
           pageSize: G,

@@ -46,16 +46,16 @@ function A(e) {
   } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: F,
     includeUnpublished: D
-  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), G = (0, c.Fg)(), z = (0, a.ap)(G), [K, Y, q] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), G = (0, c.Fg)(), z = (0, o.ap)(G), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case S.AW.AVATAR_DECORATIONS:
         return [x.intl.string(x.t.dRZYND), z ? k.Z : L.Z, i.Z.AVATAR_DECORATION];
       case S.AW.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjt7"]), z ? N.Z : P.Z, i.Z.PROFILE_EFFECT];
+        return [x.intl.string(x.t["1cNjt7"]), z ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
       case S.AW.NAMEPLATES:
         return [x.intl.string(x.t.V68Fq6), z ? B.Z : I.Z, i.Z.NAMEPLATE];
       case S.AW.BUNDLES:
-        return [x.intl.string(x.t.FYFppq), z ? T.Z : j.Z, i.Z.BUNDLE]
+        return [x.intl.string(x.t.FYFppq), z ? j.Z : T.Z, i.Z.BUNDLE]
     }
   }, [Z, z]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
@@ -89,7 +89,7 @@ function A(e) {
         backgroundImage: "url(".concat(Y, ")")
       },
       className: y.bannerContainer,
-      children: (0, r.jsx)(o.Heading, {
+      children: (0, r.jsx)(a.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
@@ -114,7 +114,7 @@ function A(e) {
     }), X.length > 40 && (0, r.jsx)("div", {
       className: y.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
+        children: (0, r.jsx)(a.DsT, {
           currentPage: U,
           totalCount: X.length,
           pageSize: 40,

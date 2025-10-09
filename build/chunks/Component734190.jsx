@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk239091 = require("./239091.js"),
@@ -34,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk509612 = require("./509612.js"),
   Chunk113914 = require("./113914.js");
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +54,7 @@ function A(e) {
   return e
 }
 
-function R(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,24 +67,24 @@ function R(e, t) {
   }), e
 }
 
-function D(e) {
+function L(e) {
   let {
     style: t,
     withGuildIcon: n,
     inverted: i
   } = e, l = {
-    className: o()(T.spine, {
-      [T.spineWithGuildIcon]: n
+    className: o()(A.spine, {
+      [A.spineWithGuildIcon]: n
     }, {
-      [T.invertedSpine]: i
+      [A.invertedSpine]: i
     }),
     style: t
   }, {
     density: a
-  } = (0, c.TCT)();
+  } = (0, u.TCT)();
   switch (a) {
     case "cozy":
-      return (0, r.jsxs)("svg", R(A({}, l), {
+      return (0, r.jsxs)("svg", D(R({}, l), {
         width: "10",
         height: "20",
         viewBox: "0 0 10 20",
@@ -98,7 +99,7 @@ function D(e) {
         })]
       }));
     case "compact":
-      return (0, r.jsxs)("svg", R(A({}, l), {
+      return (0, r.jsxs)("svg", D(R({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -113,7 +114,7 @@ function D(e) {
         })]
       }));
     default:
-      return (0, r.jsxs)("svg", R(A({}, l), {
+      return (0, r.jsxs)("svg", D(R({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -130,56 +131,56 @@ function D(e) {
   }
 }
 
-function L(e) {
+function M(e) {
   let {
     thread: t
   } = e, n = i.useMemo(() => {
     var e;
-    return null != (e = (0, h.KS)(t)) ? e : c.or_
-  }, [t]), l = (0, h.bT)(t);
-  return (0, r.jsx)(c.ua7, {
-    "data-migration-pending": true,
+    return null != (e = (0, f.KS)(t)) ? e : u.or_
+  }, [t]), l = (0, f.bT)(t);
+  return (0, r.jsx)(c.u, {
     text: l,
     delay: 500,
-    children: e => (0, r.jsx)("div", R(A({}, e), {
+    asContainer: true,
+    children: (0, r.jsx)("div", {
       role: "img",
       "aria-label": "".concat(l, " icon"),
-      className: w.iconContainer,
+      className: T.iconContainer,
       children: (0, r.jsx)(n, {
-        className: w.icon,
+        className: T.icon,
         color: "currentColor"
       })
-    }))
+    })
   })
 }
-let M = Chunk647438.memo(function(e) {
+let k = Chunk647438.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: h,
-    isLast: T,
-    withGuildIcon: M
-  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([O.Z], () => O.Z.hasVideo(t.id)), {
+    isSelectedVoice: c,
+    isLast: f,
+    withGuildIcon: A
+  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
     unread: G,
     mentionCount: B,
     isMentionLowImportance: F
-  } = (0, s.cj)([_.ZP], () => ({
-    unread: _.ZP.hasUnread(t.id),
-    mentionCount: _.ZP.getMentionCount(t.id),
-    isMentionLowImportance: _.ZP.getIsMentionLowImportance(t.id)
-  })), V = (0, s.e7)([g.Z], () => g.Z.isMuted(t.id)), H = (0, j.p)({
+  } = (0, s.cj)([y.ZP], () => ({
+    unread: y.ZP.hasUnread(t.id),
+    mentionCount: y.ZP.getMentionCount(t.id),
+    isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
+  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
-  }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
-    (0, m.ok)(t, !e.shiftKey, P.on.CHANNEL_LIST)
+  }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
+    (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
-    u.Z.preload(t.guild_id, t.id)
+    d.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
-    let i = b.Z.getChannel(t.id);
-    null != i && (0, d.jW)(e, async () => {
+    let i = _.Z.getChannel(t.id);
+    null != i && (0, p.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, R(A({}, t), {
+      return t => (0, r.jsx)(e, D(R({}, t), {
         channel: i
       }))
     })
@@ -199,28 +200,28 @@ let M = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? N.intl.formatToPlainString(N.t["ZL7+Iy"], {
+  }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? Z.intl.formatToPlainString(Z.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: B
-  }) : G ? N.intl.formatToPlainString(N.t.YlVvmZ, {
+  }) : G ? Z.intl.formatToPlainString(Z.t.YlVvmZ, {
     channelName: t.name
-  }) : N.intl.formatToPlainString(N.t["0nZpiI"], {
+  }) : Z.intl.formatToPlainString(Z.t["0nZpiI"], {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
     role: Q,
-    className: o()(Z.containerDefault, {
-      [Z.selected]: l
+    className: o()(w.containerDefault, {
+      [w.selected]: l
     }),
-    children: [(0, r.jsx)(D, {
-      withGuildIcon: M
-    }), T ? null : (0, r.jsx)(D, {
-      withGuildIcon: M,
+    children: [(0, r.jsx)(L, {
+      withGuildIcon: A
+    }), f ? null : (0, r.jsx)(L, {
+      withGuildIcon: A,
       inverted: true,
       style: {
         transform: "rotateX(180deg) translateY(-9px)"
       }
-    }), (0, r.jsx)(c.tEY, {
+    }), (0, r.jsx)(u.tEY, {
       focusTarget: $,
       ringTarget: $,
       offset: {
@@ -229,50 +230,50 @@ let M = Chunk647438.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(Z.iconVisibility, w.wrapper, w.typeThread, {
-          [w.modeSelected]: l,
-          [w.modeMuted]: !l && V,
-          [w.modeUnreadImportant]: !V && !l && G,
-          [w.withGuildIcon]: M,
-          [w.threadsInChannelListQoLExperiment]: H.enabled,
-          [w.withThreadAvatar]: "icon-with-avatar" === H.variant,
-          [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
+        className: o()(w.iconVisibility, T.wrapper, T.typeThread, {
+          [T.modeSelected]: l,
+          [T.modeMuted]: !l && V,
+          [T.modeUnreadImportant]: !V && !l && G,
+          [T.withGuildIcon]: A,
+          [T.threadsInChannelListQoLExperiment]: H.enabled,
+          [T.withThreadAvatar]: "icon-with-avatar" === H.variant,
+          [T.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
         onMouseDown: K,
         onContextMenu: Y,
         children: [!G || V || l ? null : (0, r.jsx)("div", {
-          className: o()(w.unread, w.unreadImportant)
-        }), (0, r.jsx)(c.P3F, R(A({}, J), {
+          className: o()(T.unread, T.unreadImportant)
+        }), (0, r.jsx)(u.P3F, D(R({}, J), {
           innerRef: $,
-          className: w.link,
+          className: T.link,
           onClick: W,
           "aria-label": ee,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: o()(w.linkTop, w.__invalid_threadMainContent),
+            className: o()(T.linkTop, T.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
-              className: w.threadIconWithAvatar,
-              children: [(0, r.jsx)(L, {
+              className: T.threadIconWithAvatar,
+              children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(p.Z, {
+              }), null == z ? null : (0, r.jsx)(h.Z, {
                 user: z,
-                size: c.EFr.SIZE_16
+                size: u.EFr.SIZE_16
               })]
-            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(L, {
+            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
               thread: t
-            }) : null, (0, r.jsx)(f.Z, {
-              className: w.name,
+            }) : null, (0, r.jsx)(g.Z, {
+              className: T.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: w.children,
-              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(C.Z, {
+              className: T.children,
+              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(E.Z, {
                 userCount: q,
                 video: U,
                 channel: t
-              }) : null, (0, x.Z)(B) ? (0, r.jsx)(E.Z, {
+              }) : null, (0, C.Z)(B) ? (0, r.jsx)(S.Z, {
                 mentionsCount: B,
                 isMentionLowImportance: F
               }) : null]
@@ -280,12 +281,12 @@ let M = Chunk647438.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(S.Z, {
+    }), (0, r.jsx)(I.Z, {
       channel: t,
-      collapsed: !h,
+      collapsed: !c,
       collapsedMax: 6,
       voiceStates: k,
-      location: I.Sbl.GUILD_CHANNEL_LIST
+      location: P.Sbl.GUILD_CHANNEL_LIST
     })]
   })
 })

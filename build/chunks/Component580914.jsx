@@ -63,9 +63,9 @@ let M = (0, Chunk884697.IC)(90),
       heroBlock: V,
       tab: G,
       onVisibilityChange: z
-    } = e, K = (0, a.O)(e => {
+    } = e, K = (0, o.O)(e => {
       null == z || z(e)
-    }, .1, null != z), Y = l.useRef(null), q = (0, R.G)("HeroBlock"), Q = (0, u.e7)([h.default], () => h.default.getCurrentUser()), J = (0, P.Z)(), X = (0, m.sp)(), $ = O.Z.useConfig({
+    }, .1, null != z), Y = l.useRef(null), q = (0, R.G)("HeroBlock"), Q = (0, u.e7)([h.default], () => h.default.getCurrentUser()), J = (0, N.Z)(), X = (0, m.sp)(), $ = O.Z.useConfig({
       location: "HeroBlock"
     }).showButtonLeftAligned && G !== w.AW.ORBS, ee = (0, x.x)("HeroBlock"), et = l.useMemo(() => {
       var e, t;
@@ -93,8 +93,8 @@ let M = (0, Chunk884697.IC)(90),
       heroLogo: el,
       heroBannerStatic: ei,
       heroBannerAnimated: es,
-      heroBannerRive: ea
-    } = (0, B.hr)(et), eo = null != (t = null == en ? true : en.responsive) && t, ec = null == en ? true : en.backgroundStyle, eu = null != ea, ed = (0, u.e7)([b.Z], () => b.Z.products), eg = l.useMemo(() => n ? [] : ed.size > 0 ? J(et.rankedSkuIds) : [], [n, J, et.rankedSkuIds, ed]), ef = l.useMemo(() => !n && 0 !== et.rankedSkuIds.length && !(eg.length > 0) && et.rankedSkuIds.every(e => {
+      heroBannerRive: eo
+    } = (0, B.hr)(et), ea = null != (t = null == en ? true : en.responsive) && t, ec = null == en ? true : en.backgroundStyle, eu = null != eo, ed = (0, u.e7)([b.Z], () => b.Z.products), eg = l.useMemo(() => n ? [] : ed.size > 0 ? J(et.rankedSkuIds) : [], [n, J, et.rankedSkuIds, ed]), ef = l.useMemo(() => !n && 0 !== et.rankedSkuIds.length && !(eg.length > 0) && et.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, et.rankedSkuIds, eg.length]), {
@@ -114,7 +114,7 @@ let M = (0, Chunk884697.IC)(90),
         }, [i, s, e]),
         totalCards: e ? t : 4
       }
-    })(G !== w.AW.ORBS), eh = (0, y.a)()(eg), e_ = (0, j.l)(eh).slice(0, eC), em = (0, N.St)(e_), eb = G === w.AW.ORBS ? F.intl.string(F.t["1CdL8f"]) : q ? F.intl.string(F.t.guWAg4) : ee ? F.intl.string(F.t["/QvRam"]) : F.intl.string(F.t.xYKa1d), eE = (0, S.FF)("CollectiblesContent"), ev = (0, E.$2)(et.categorySkuId), eS = v.Z.useConfig({
+    })(G !== w.AW.ORBS), eh = (0, y.a)()(eg), e_ = (0, T.l)(eh).slice(0, eC), em = (0, P.St)(e_), eb = G === w.AW.ORBS ? F.intl.string(F.t["1CdL8f"]) : q ? F.intl.string(F.t.guWAg4) : ee ? F.intl.string(F.t["/QvRam"]) : F.intl.string(F.t.xYKa1d), eE = (0, S.FF)("CollectiblesContent"), ev = (0, E.$2)(et.categorySkuId), eS = v.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eO = () => {
       G === w.AW.ORBS ? ((0, C.Y)({
@@ -122,7 +122,7 @@ let M = (0, Chunk884697.IC)(90),
         sectionType: H.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: H.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
-        fromContent: o.j.ORBS_SHOP_HERO_CTA
+        fromContent: a.j.ORBS_SHOP_HERO_CTA
       })) : (i("shop latest category hero", !eE || ev ? et.categorySkuId : true), _.default.track(H.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == X ? true : X.sessionId,
         sku_id: et.categorySkuId,
@@ -149,8 +149,8 @@ let M = (0, Chunk884697.IC)(90),
         children: null != ei && (0, r.jsx)(Z.Z, {
           bannerStatic: ei,
           bannerAnimated: es,
-          bannerRive: ea,
-          isResponsive: eo,
+          bannerRive: eo,
+          isResponsive: ea,
           eventTargetRef: Y
         })
       }), (0, r.jsxs)("div", {
@@ -164,7 +164,7 @@ let M = (0, Chunk884697.IC)(90),
           })
         }) : (0, r.jsxs)("div", {
           className: s()($ ? D.heroHeaderContainerStacked : D.heroHeaderContainer, {
-            [D.responsive]: eo
+            [D.responsive]: ea
           }),
           children: [n ? (0, r.jsx)("div", {
             className: D.heroHeaderBadgeLogoSummaryContainer
@@ -212,7 +212,7 @@ let M = (0, Chunk884697.IC)(90),
           }),
           ref: ep,
           children: n || ef ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(eC)].map((e, t) => eS ? (0, r.jsx)(I.Z, {}, t) : (0, r.jsx)(T.K, {}, t))
+            children: [...Array(eC)].map((e, t) => eS ? (0, r.jsx)(I.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: em.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);

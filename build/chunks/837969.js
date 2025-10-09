@@ -44,7 +44,7 @@ function E(e) {
   }), {
     itemCount: R,
     focusedIndex: S
-  } = O, [C] = r.useState(() => (0, s.P2)(f, 16));
+  } = O, [p] = r.useState(() => (0, s.P2)(f, 16));
   return r.useEffect(() => {
       f({
         type: l.G.UPDATE_ITEM_COUNT,
@@ -72,7 +72,7 @@ function E(e) {
       r.useEffect(() => {
         S.current = N
       }, [N]);
-      let [C, p] = r.useState(false), [D] = r.useState(() => new s.$o(e => () => {
+      let [p, C] = r.useState(false), [D] = r.useState(() => new s.$o(e => () => {
         let t = null != R.current && "string" == typeof e ? R.current(e) : e;
         "number" != typeof t || t < 0 || T({
           type: l.G.SET_FOCUSED_INDEX,
@@ -136,15 +136,15 @@ function E(e) {
           }
         }, [h, t, T, E, x, d]),
         v = r.useCallback(() => {
-          C || p(true)
-        }, [C]),
+          p || C(true)
+        }, [p]),
         P = r.useCallback(() => {
-          C || (I ? L(h(t, E), E) : x(true))
-        }, [h, t, L, I, C, E, x]),
+          p || (I ? L(h(t, E), E) : x(true))
+        }, [h, t, L, I, p, E, x]),
         j = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
             if (null == u(o(h, t, E))) return void L(t);
-            p(false)
+            C(false)
           })
         }, [h, t, E, L]),
         y = r.useRef(null);
@@ -156,11 +156,11 @@ function E(e) {
       }, [P, v, j]);
       let G = r.useCallback(() => ({
           role: "list",
-          tabIndex: C && I ? false : 0,
+          tabIndex: p && I ? false : 0,
           id: t,
           onKeyDown: b,
           ref: y
-        }), [t, C, b, I]),
+        }), [t, p, b, I]),
         k = r.useCallback(e => {
           let {
             index: n
@@ -183,7 +183,7 @@ function E(e) {
       navId: t,
       itemCount: R,
       focusedIndex: S,
-      dispatch: C,
+      dispatch: p,
       onSelect: d,
       setFocus: _,
       getNewFocusIndex: A,

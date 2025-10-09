@@ -23,17 +23,17 @@ let h = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, h = (0, s.e7)([o.default], () => o.default.getCurrentUser()), _ = d.Z.useConfig({
+  } = e, h = (0, s.e7)([a.default], () => a.default.getCurrentUser()), _ = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
   return null == h ? null : (0, r.jsxs)("div", {
     className: i()(C.shelfBlockContainer, C.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: C.blockHeader,
-      children: [(0, r.jsx)(a.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(a.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "secondary",
         text: p.intl.formatToPlainString(p.t.bc9RBA, {
           category_name: t.name

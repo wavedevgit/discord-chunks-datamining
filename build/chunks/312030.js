@@ -11,23 +11,23 @@ let s = e => {
   let {
     scrollerRef: t,
     sortedCategories: n
-  } = e, [s, a] = r.useState(1), o = r.useCallback(e => {
+  } = e, [s, o] = r.useState(1), a = r.useCallback(e => {
     let t = n.findIndex(t => t.skuId === e);
     return false === t ? 1 : Math.floor(t / i.kN) + 1
   }, [n]), c = r.useCallback(e => {
     if (null != e && !(0, l.$2)(e)) {
-      let t = o(e);
-      t !== s && a(t)
+      let t = a(e);
+      t !== s && o(t)
     }
-  }, [o, s, a]);
+  }, [a, s, o]);
   return {
     currentPage: s,
     handlePageChange: r.useCallback(e => {
       var n;
-      a(e), null == (n = t.current) || n.scrollTo({
+      o(e), null == (n = t.current) || n.scrollTo({
         to: 0
       })
-    }, [t, a]),
+    }, [t, o]),
     scrollToCategory: c
   }
 }

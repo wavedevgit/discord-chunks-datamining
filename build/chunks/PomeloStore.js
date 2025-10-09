@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => g
 });
 var r, i, Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
+  o = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk70956 = require("./70956.js");
@@ -14,7 +14,7 @@ let u = {
     rateLimited: true
   },
   d = {
-    validations: new(a())({
+    validations: new(o())({
       max: 100,
       maxAge: 6e4
     }),

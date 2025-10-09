@@ -177,22 +177,22 @@ function ey(e) {
     onReaction: a,
     entry: o,
     buttons: s = [],
-    header: f,
-    onVoiceChannelPreview: h
-  } = e, [m, g] = i.useState(false), [E, b] = i.useState(null), O = i.useRef(null), v = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [T, S] = i.useState(false), [A, C] = i.useState(false), {
-    voiceBar: N,
-    joinVoiceButton: R
+    header: h,
+    onVoiceChannelPreview: m
+  } = e, [g, E] = i.useState(false), [b, O] = i.useState(null), v = i.useRef(null), T = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [S, A] = i.useState(false), [C, N] = i.useState(false), {
+    voiceBar: R,
+    joinVoiceButton: P
   } = eC({
     channel: t,
     entry: o,
-    onVoiceChannelPreview: h
+    onVoiceChannelPreview: m
   }), {
-    embeddedActivity: P
-  } = (0, $.Z)(o), w = eA(P), D = null != R && 0 === s.length ? [R] : s, L = D.length > 0, x = D.length >= 2, [M, j] = i.useState(!L), U = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && m ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
+    embeddedActivity: w
+  } = (0, $.Z)(o), D = eA(w), L = null != P && 0 === s.length ? [P] : s, x = L.length > 0, M = L.length >= 2, [j, U] = i.useState(!x), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAw"], {
-    channel: "@".concat(U)
-  }), Z = m ? ec.intl.string(ec.t.Z2CUgo) : ec.intl.string(ec.t.XLGiTE), F = async e => {
+    channel: "@".concat(B)
+  }), F = g ? ec.intl.string(ec.t.Z2CUgo) : ec.intl.string(ec.t.XLGiTE), V = async e => {
     let r, {
       emoji: i
     } = e;
@@ -201,27 +201,27 @@ function ey(e) {
           surface_type: eo.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
-        }), (0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), S(true), C(false), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), A(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var o;
         let e = await p.Z.getOrEnsurePrivateChannel(n.id);
         r = null != (o = k.Z.getChannel(e)) ? o : null
       }
-      return l()(null != r, "Send channel must be defined"), H({
+      return l()(null != r, "Send channel must be defined"), W({
         reply: ":".concat(i.name, ":"),
         sendToChannel: r,
         onComplete: (e, t) => {
-          C(true), setTimeout(() => {
-            S(false), a(e, t)
+          N(true), setTimeout(() => {
+            A(false), a(e, t)
           }, 600)
         },
         interactionType: eo.xP.REACTION_EMOJI_REACT_SENT,
         requiresChannelReadiness: false
       })
     }
-  }, V = async e => {
+  }, H = async e => {
     let r;
-    if ((0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), m) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+    if ((0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
     else {
       let e = await p.Z.openPrivateChannel({
           recipientIds: n.id
@@ -230,14 +230,14 @@ function ey(e) {
       l()(null != t, "DM channel must be defined"), r = t
     }
     let i = r.type === es.d4z.DM ? eo.xP.DM_REACTION_MESSAGE_SENT : eo.xP.CHANNEL_REACTION_MESSAGE_SENT;
-    return H({
+    return W({
       reply: e,
       sendToChannel: r,
       interactionType: i,
       onComplete: a,
       requiresChannelReadiness: true
     })
-  }, H = async e => {
+  }, W = async e => {
     let {
       reply: t,
       sendToChannel: n,
@@ -245,7 +245,7 @@ function ey(e) {
       interactionType: i,
       requiresChannelReadiness: a
     } = e;
-    null == E || E.focus(), await (0, J.p)({
+    null == b || b.focus(), await (0, J.p)({
       channel: n,
       content: t,
       entry: o,
@@ -253,49 +253,49 @@ function ey(e) {
       doNotNotifyOnError: false,
       location: el.dy.CONTENT_INVENTORY_MEMBERLIST
     }), null == r || r(i, n)
-  }, W = null != f ? f : null != N ? N : null != w ? w : true, z = () => {
-    g(e => !e), M && (null == E || E.focus())
-  }, q = e => {
-    j(e), e && (null == E || E.focus())
+  }, z = null != h ? h : null != R ? R : null != D ? D : true, q = () => {
+    E(e => !e), j && (null == b || b.focus())
+  }, X = e => {
+    U(e), e && (null == b || b.focus())
   };
   return (0, r.jsx)("div", {
-    ref: O,
+    ref: v,
     style: {
-      pointerEvents: T ? "none" : "all"
+      pointerEvents: S ? "none" : "all"
     },
     children: (0, r.jsx)(_.EqS, {
-      containerRef: O,
+      containerRef: v,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(ea.Z, {
-          sent: A,
-          shown: T,
+          sent: C,
+          shown: S,
           className: eu.toastContainer
-        }), null != W ? W : (0, r.jsx)(er.Z, {
+        }), null != z ? z : (0, r.jsx)(er.Z, {
           children: (0, r.jsxs)("div", {
             className: eu.emojiHotrailShareToChannel,
             children: [(0, r.jsx)(eO, {
               channel: t,
-              onClickSuggestion: F
+              onClickSuggestion: V
             }), (0, r.jsx)(y.dE, {
-              onSelectEmoji: F
+              onSelectEmoji: V
             })]
           })
         }), (0, r.jsxs)("div", {
-          className: M ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
+          className: j ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
           children: [(0, r.jsx)(y.A7, {
-            placeholder: B,
-            onEnter: V,
-            setEditorRef: e => b(e),
-            channel: m ? t : true,
-            showEmojiButton: null != W,
+            placeholder: Z,
+            onEnter: H,
+            setEditorRef: e => O(e),
+            channel: g ? t : true,
+            showEmojiButton: null != z,
             className: eu.replyInput,
             autoFocus: false,
-            renderAttachButton: v ? () => (0, r.jsx)(_.ua7, {
-              text: Z,
-              children: e => (0, r.jsx)(_.P3F, ep(ef({}, e), {
+            renderAttachButton: T ? () => (0, r.jsx)(f.u, {
+              text: F,
+              children: (0, r.jsx)(_.P3F, {
                 className: eu.shareToChannelButton,
-                onClick: z,
-                children: m ? (0, r.jsx)(_.VL1, {
+                onClick: q,
+                children: g ? (0, r.jsx)(_.VL1, {
                   size: "custom",
                   width: 20,
                   height: 20
@@ -304,10 +304,10 @@ function ey(e) {
                   width: 20,
                   height: 20
                 })
-              }))
+              })
             }) : true
-          }), L && (0, r.jsx)(_.P3F, {
-            onClick: () => q(false),
+          }), x && (0, r.jsx)(_.P3F, {
+            onClick: () => X(false),
             className: eu.primaryActionPopoutMessageCloseIcon,
             children: (0, r.jsx)(_.Dio, {
               size: "custom",
@@ -316,15 +316,15 @@ function ey(e) {
               color: d.Z.colors.ICON_PRIMARY
             })
           })]
-        }), false === M && (0, r.jsxs)("div", {
+        }), false === j && (0, r.jsxs)("div", {
           className: eu.primaryActionPopoutActionButtons,
-          children: [!x && (0, r.jsx)(_.Button, {
+          children: [!M && (0, r.jsx)(_.Button, {
             fullWidth: true,
             variant: "secondary",
-            onClick: () => q(true),
-            size: x ? "sm" : "md",
+            onClick: () => X(true),
+            size: M ? "sm" : "md",
             text: ec.intl.string(ec.t.OAJQlJ)
-          }, "toggleMessageMode"), D]
+          }, "toggleMessageMode"), L]
         })]
       })
     })
@@ -718,32 +718,32 @@ function eC(e) {
     channel: s
   } = (0, et.Z)(n), {
     needSubscriptionToAccess: l
-  } = (0, D.Z)(null == t ? true : t.id), u = (0, c.e7)([U.Z], () => null != s ? U.Z.getGuild(s.guild_id) : true), f = (0, c.Wu)([H.ZP], () => null != s ? H.ZP.getVoiceStatesForChannel(s) : [], [s]), p = (0, c.e7)([V.Z], () => V.Z.isInChannel(null == s ? true : s.id)), m = i.useMemo(() => {
-    for (let e of f) {
+  } = (0, D.Z)(null == t ? true : t.id), u = (0, c.e7)([U.Z], () => null != s ? U.Z.getGuild(s.guild_id) : true), p = (0, c.Wu)([H.ZP], () => null != s ? H.ZP.getVoiceStatesForChannel(s) : [], [s]), m = (0, c.e7)([V.Z], () => V.Z.isInChannel(null == s ? true : s.id)), g = i.useMemo(() => {
+    for (let e of p) {
       let t = k.Z.getDMFromUserId(e.user.id),
         n = null != t && Z.ZP.isChannelMuted(null, t),
         r = B.Z.isBlockedOrIgnored(e.user.id);
       if (n || r) returntrue
     }
     returnfalse
-  }, [f]);
+  }, [p]);
   if (null == s || null == u) return {
     voiceBar: true,
     joinVoiceButton: true
   };
-  let g = null != o,
-    E = () => {
+  let E = null != o,
+    b = () => {
       h.Z.updateChatOpen(s.id, true), (0, L.Kh)(s.id), null == a || a(s)
     },
-    b = () => {
+    y = () => {
       O.Z.handleVoiceConnect({
         channel: s,
-        connected: p,
+        connected: m,
         needSubscriptionToAccess: l,
         routeDirectlyToChannel: true
       })
     },
-    y = e => {
+    v = e => {
       let {
         children: t,
         text: n,
@@ -756,9 +756,9 @@ function eC(e) {
           className: eu.popoutBlockedWarningIcon
         }), ec.intl.string(ec.t.d6DpXF)]
       }) : n;
-      return (0, r.jsx)(_.ua7, {
+      return (0, r.jsx)(f.u, {
         "aria-label": i ? ec.intl.string(ec.t.d6DpXF) : null != n && n,
-        text: a,
+        __unsupportedReactNodeAsText: a,
         shouldShow: true,
         children: t
       }, "voice-preview")
@@ -767,12 +767,12 @@ function eC(e) {
     voiceBar: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: eu.voiceChannelPopoutReactorHeader,
-        children: [(0, r.jsx)(y, {
+        children: [(0, r.jsx)(v, {
           text: ec.intl.string(ec.t.WIVYqK),
-          hasRestrictedOrMutedVCParticipant: m,
-          children: e => (0, r.jsxs)(_.P3F, ep(ef({}, e), {
+          hasRestrictedOrMutedVCParticipant: g,
+          children: (0, r.jsxs)(_.P3F, {
             "aria-label": ec.intl.string(ec.t.WIVYqK),
-            onClick: E,
+            onClick: b,
             className: eu.voiceChannelPopoutReactorChannel,
             children: [(0, r.jsx)(w.Z, {
               guild: u,
@@ -791,10 +791,10 @@ function eC(e) {
               className: eu.voiceChannelName,
               children: s.name
             })]
-          }))
+          })
         }), (0, r.jsx)(M.Z, {
           guildId: u.id,
-          users: f,
+          users: p,
           max: 3,
           renderUser: (e, t) => (0, r.jsx)(_.qEK, {
             src: e.user.getAvatarURL(u.id, 16),
@@ -815,16 +815,16 @@ function eC(e) {
         size: 16
       })]
     }),
-    joinVoiceButton: p ? null : (0, r.jsx)(y, {
-      hasRestrictedOrMutedVCParticipant: m,
-      children: e => (0, r.jsx)(_.Button, ep(ef({}, e), {
-        onClick: b,
+    joinVoiceButton: m ? null : (0, r.jsx)(v, {
+      hasRestrictedOrMutedVCParticipant: g,
+      children: (0, r.jsx)(_.Button, {
+        onClick: y,
         fullWidth: true,
-        text: g ? ec.intl.string(ec.t["I6JG4+"]) : ec.intl.string(ec.t.VJlc0d),
-        icon: g ? _.pzj : _.gj8,
+        text: E ? ec.intl.string(ec.t["I6JG4+"]) : ec.intl.string(ec.t.VJlc0d),
+        icon: E ? _.pzj : _.gj8,
         variant: "active",
         size: "md"
-      }))
+      })
     })
   }
 }

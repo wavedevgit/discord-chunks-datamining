@@ -1,5 +1,5 @@
 /** Chunk was on 36529 **/
-/** chunk id: 112794, original params: e,t,r (module,exports,require) **/
+/** chunk id: 112794, original params: e,t,n (module,exports,require) **/
 module.exports = {
   cardList: "cardList__2357e"
 }

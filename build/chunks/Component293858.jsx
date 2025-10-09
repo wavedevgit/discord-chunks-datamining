@@ -28,15 +28,15 @@ function y(e) {
       handleClose: n,
       planGroup: a,
       onSubscriptionConfirmation: y,
-      renderPurchaseConfirmation: v,
-      postSuccessGuild: L,
+      renderPurchaseConfirmation: L,
+      postSuccessGuild: v,
       followupSKUInfo: S,
       continueSessionToInitialStep: w
     } = e,
     {
-      activeSubscription: O,
+      activeSubscription: I,
       paymentSources: P,
-      paymentSourceId: I,
+      paymentSourceId: O,
       selectedPlan: E,
       selectedSkuId: k,
       step: T,
@@ -61,7 +61,7 @@ function y(e) {
     K = (0, d.Z)(),
     Y = (0, C.a5)(E),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, g.$)(P, I),
+    q = (0, g.$)(P, O),
     J = B && null != D && Y;
   l()(null != E, "Expected plan to selected"), l()(null != k, "Expected selectedSkuId"), l()(null != T, "Step should be set");
   let Q = i.useCallback(() => {
@@ -73,22 +73,22 @@ function y(e) {
     })
   }, [H, B, N, R, G, F, y]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
-      dismissAction: j.L.INDIRECT_ACTION
+      dismissAction: b.L.INDIRECT_ACTION
     })
   }, [K, W]);
   let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != v) t = v(E, Q, A);
+  if (null != L) t = L(E, Q, A);
   else if (B) t = (0, r.jsx)(c.TB, {
     planId: E.id,
     onClose: Q
   });
   else {
     let e = M.current === E.id ? {
-      postSuccessGuild: L
+      postSuccessGuild: v
     } : {
       followupSKUInfo: S,
       startingPremiumSubscriptionPlanId: M.current,
-      isDowngrade: null != O && (0, p.GY)(O, E.id, a)
+      isDowngrade: null != I && (0, p.GY)(I, E.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -118,7 +118,7 @@ function y(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.C3, {
-      children: [(0, r.jsx)(b.Z, {}), t]
+      children: [(0, r.jsx)(j.Z, {}), t]
     }), null != z && z, J && null != V && (0, r.jsx)(x.Z, {
       onClose: Q,
       selectedPromotionalDecoPurchaseRecord: V,

@@ -141,13 +141,13 @@ function D(e) {
       }
     }, [y.result, V]);
   return null == G || null == k || null == B ? null : (0, r.jsxs)("div", {
-    className: s()(C.container, U),
+    className: s()(p.container, U),
     children: [(0, r.jsx)(f.Z, {
       guildId: D,
       userId: i,
       onNavigate: M
     }), (0, r.jsx)(u.Den, {
-      className: p.innerContainer,
+      className: C.innerContainer,
       ref: x,
       onScroll: w,
       children: (0, r.jsx)(T.Z, {

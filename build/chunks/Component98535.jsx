@@ -27,21 +27,21 @@ function v(e) {
   let {
     tab: t,
     isFullScreen: n,
-    sortedCategories: a,
-    transitionToTab: o,
+    sortedCategories: o,
+    transitionToTab: a,
     transitionState: c,
     updateAnalyticsState: u,
     refreshCategories: h
   } = e, v = S();
   O(v);
   let x = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    [y, j] = l.useState(true),
-    T = l.useCallback(async (e, t, r) => {
+    [y, T] = l.useState(true),
+    j = l.useCallback(async (e, t, r) => {
       u(e, t);
       let l = r && !n && !x,
         i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      j(t), await o(i, l)
-    }, [n, x, o, u]),
+      T(t), await a(i, l)
+    }, [n, x, a, u]),
     L = (0, g.FF)("CollectiblesContent"),
     {
       searchError: k
@@ -52,27 +52,27 @@ function v(e) {
     errorOrigin: C.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     isFullScreen: n,
-    handleTransition: T,
+    handleTransition: j,
     tab: t,
     transitionState: c
   }) : (0, r.jsx)(p.Z, {
     isFullScreen: n,
     tab: t,
-    sortedCategories: a,
+    sortedCategories: o,
     initialCategoryId: y,
-    onUnmount: () => j(true)
+    onUnmount: () => T(true)
   })
 }
 let S = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   O = e => {
-    let t = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
+    let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, h.Z)();
     l.useEffect(() => {
       var l, i;
-      null != e && o.Z.captureMessage(e, {
+      null != e && a.Z.captureMessage(e, {
         tags: {
           isStaff: null != (i = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? i : "unknown",
           disableCache: n.toString(),

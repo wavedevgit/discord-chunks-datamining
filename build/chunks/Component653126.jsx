@@ -32,80 +32,74 @@ let S = Chunk647438.memo(function(e) {
       hidePrimaryCTA: O,
       hideSecondaryCTA: x,
       badgeOverride: y,
-      onClickCard: j,
-      onClickPrimaryCTA: T,
+      onClickCard: T,
+      onClickPrimaryCTA: j,
       onClickSecondaryCTA: L,
       onMouseEnter: k,
       onMouseLeave: I,
       onFocus: B,
-      onBlur: P,
-      primaryCTAText: N,
+      onBlur: N,
+      primaryCTAText: P,
       secondaryCTAIcon: A,
       productNameClassName: R,
       badgeClassName: Z,
       cardClassName: w
     } = e, H = (0, u.Nd)(), F = null == H ? true : H.tab, D = (0, b.zQ)(t), M = l.useRef(null), {
       handleCardVisibilityChange: W
-    } = (0, d.E)(t.skuId, F === E.AW.CATALOG ? "full" : F), U = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [V, G] = (0, _.SS)(t), z = null != G && !i;
-    return (0, r.jsx)(a.$, {
+    } = (0, d.E)(t.skuId, F === E.AW.CATALOG ? "full" : F), U = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [V, G] = (0, _.SS)(t), z = null != G && !i, K = !O || !x, Y = !S || z, q = K || z;
+    return (0, r.jsx)(o.$, {
       innerRef: M,
       onChange: W,
       threshold: 0,
       children: (0, r.jsx)("div", {
-        className: v.baseProductCardHoverContainer,
-        children: (0, r.jsx)(o.kL8, {
+        className: v.productCardHoverContainer,
+        children: (0, r.jsx)(a.kL8, {
           ref: M,
-          onClick: null != j ? j : U,
+          onClick: null != T ? T : U,
           "aria-label": D,
-          className: s()(w, v.baseProductCardContainer),
+          className: s()(w, v.productCardContainer),
           onFocus: () => null == B ? true : B(t.skuId),
-          onBlur: () => null == P ? true : P(t.skuId),
+          onBlur: () => null == N ? true : N(t.skuId),
           onMouseEnter: () => null == k ? true : k(t.skuId),
           onMouseLeave: () => null == I ? true : I(t.skuId),
           children: (0, r.jsxs)("div", {
-            className: v.baseProductCardContentContainer,
+            className: v.productCardContentContainer,
             children: [(0, r.jsx)(g.Z, {
               skuId: t.skuId,
               badgeOverride: y,
               className: Z
             }), (0, r.jsxs)("div", {
-              className: v.innerContainer,
-              children: [(0, r.jsxs)("div", {
-                className: s()(v.baseProductCardDetailsContainer, {
-                  [v.hasVariantSwitcher]: z
+              className: v.footerContainer,
+              children: [!n && (0, r.jsx)(f.Z, {
+                skuId: t.skuId,
+                className: R
+              }), Y && (0, r.jsxs)("div", {
+                className: s()(v.footerInfoContainer, {
+                  [v.footerHideOnHover]: q
                 }),
-                children: [!n && (0, r.jsx)(f.Z, {
-                  skuId: t.skuId,
-                  className: R
-                }), z && (0, r.jsx)("div", {
-                  className: v.hoveredVariantSwitcher,
-                  children: G
-                })]
-              }), (0, r.jsxs)("div", {
-                className: v.baseProductCardFooter,
                 children: [!S && (0, r.jsx)(p.Z, {
                   skuId: t.skuId
                 }), z && G]
-              })]
-            }), (0, r.jsx)("div", {
-              className: v.innerHover,
-              children: (!O || !x) && (0, r.jsxs)(o.ButtonGroup, {
-                wrap: false,
-                fullWidth: true,
-                children: [!O && (0, r.jsx)(C.Z, {
-                  skuId: t.skuId,
-                  cardRef: M,
-                  selectedVariantIndex: V,
-                  onClick: T,
-                  text: N
-                }), !x && (0, r.jsx)(h.Z, {
-                  skuId: t.skuId,
-                  cardRef: M,
-                  selectedVariantIndex: V,
-                  onClick: L,
-                  icon: A
+              }), q && (0, r.jsxs)("div", {
+                className: s()(v.footerInteractibleContainer, v.footerShowOnHover),
+                children: [z && G, K && (0, r.jsxs)(a.ButtonGroup, {
+                  wrap: false,
+                  fullWidth: true,
+                  children: [!O && (0, r.jsx)(C.Z, {
+                    skuId: t.skuId,
+                    cardRef: M,
+                    selectedVariantIndex: V,
+                    onClick: j,
+                    text: P
+                  }), !x && (0, r.jsx)(h.Z, {
+                    skuId: t.skuId,
+                    cardRef: M,
+                    selectedVariantIndex: V,
+                    onClick: L,
+                    icon: A
+                  })]
                 })]
-              })
+              })]
             }), (0, r.jsx)(m.Z, {
               skuId: t.skuId
             })]

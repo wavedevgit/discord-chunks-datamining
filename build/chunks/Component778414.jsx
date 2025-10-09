@@ -104,9 +104,9 @@ function W(e) {
     user: t
   } = e, {
     application: n
-  } = (0, O.G)(), {
+  } = (0, x.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), l = (0, S.Z)(t.id), a = (0, b.k)({
+  } = (0, d.o)(null == n ? true : n.id), l = (0, S.Z)(t.id), a = (0, j.k)({
     location: "ApplicationWidgetUpsell"
   }), s = l.some(e => e instanceof v.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !a || null == i || s ? null : (0, r.jsx)(f.ZP, {
@@ -135,12 +135,12 @@ function F(e) {
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, b.k)({
+  })(), d = (0, j.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === a.length && o, O = i.useMemo(() => a.filter(y.Wc), [a]), x = i.useMemo(() => a.filter(e => e instanceof v.q), [a]);
-  (0, I.ZP)(O), (0, j.J)(o, O);
+  }), f = 0 === a.length && o, x = i.useMemo(() => a.filter(y.Wc), [a]), O = i.useMemo(() => a.filter(e => e instanceof v.q), [a]);
+  (0, I.ZP)(x), (0, b.J)(o, x);
   var w = t.id;
-  (0, P.s)(x);
+  (0, P.s)(O);
   let {
     data: E,
     refetch: A
@@ -168,7 +168,7 @@ function B(e) {
     user: t
   } = e, n = G(e, ["user"]);
   let l = i.useRef(null);
-  (0, x.r)({
+  (0, O.r)({
     container: l.current
   });
   let s = (0, D.h)(t.id);

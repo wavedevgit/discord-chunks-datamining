@@ -1013,37 +1013,37 @@ function eO(e, t) {
             return t;
           case x.KFR.CHANNEL:
           case x.KFR.CHANNEL_OVERWRITE:
-            return eC(e, x.zUn.NAME, e => f.Z.getChannel(e), e => (0, _.F6)(e, C.default, S.Z, true));
+            return ep(e, x.zUn.NAME, e => f.Z.getChannel(e), e => (0, _.F6)(e, p.default, S.Z, true));
           case x.KFR.USER:
-            return eC(e, x.zUn.NICK, e => C.default.getUser(e), e => e);
+            return ep(e, x.zUn.NICK, e => p.default.getUser(e), e => e);
           case x.KFR.ROLE:
-            return eC(e, x.zUn.NAME, e => R.Z.getRole(t.id, e), e => e.name);
+            return ep(e, x.zUn.NAME, e => R.Z.getRole(t.id, e), e => e.name);
           case x.KFR.ONBOARDING_PROMPT:
-            let n = eC(e, x.zUn.ID, e => m.Z.getOnboardingPrompt(e), e => e.title);
+            let n = ep(e, x.zUn.ID, e => m.Z.getOnboardingPrompt(e), e => e.title);
             return null == n || "" === n ? j.intl.string(j.t.ZNQyiY) : n;
           case x.KFR.GUILD_ONBOARDING:
           case x.KFR.GUILD_MEMBER_VERIFICATION:
             return t;
           case x.KFR.INVITE:
-            return eC(e, x.zUn.CODE, x.VqG);
+            return ep(e, x.zUn.CODE, x.VqG);
           case x.KFR.INTEGRATION:
-            return eC(e, x.zUn.TYPE, e => M.Z.integrations.find(t => t.id === e), e => e.name);
+            return ep(e, x.zUn.TYPE, e => M.Z.integrations.find(t => t.id === e), e => e.name);
           case x.KFR.WEBHOOK:
-            return eC(e, x.zUn.NAME, e => M.Z.webhooks.find(t => t.id === e), e => e.name);
+            return ep(e, x.zUn.NAME, e => M.Z.webhooks.find(t => t.id === e), e => e.name);
           case x.KFR.EMOJI:
-            return eC(e, x.zUn.NAME, e => T.ZP.getGuildEmoji(t.id).find(t => t.id === e), e => e.name);
+            return ep(e, x.zUn.NAME, e => T.ZP.getGuildEmoji(t.id).find(t => t.id === e), e => e.name);
           case x.KFR.STICKER:
-            return eC(e, x.zUn.NAME, e => h.Z.getStickerById(e), e => e.name);
+            return ep(e, x.zUn.NAME, e => h.Z.getStickerById(e), e => e.name);
           case x.KFR.STAGE_INSTANCE:
-            return eC(e, x.zUn.TOPIC, e => {
+            return ep(e, x.zUn.TOPIC, e => {
               var n;
               return null == (n = Object.values(N.Z.getStageInstancesByGuild(t.id))) ? true : n.find(t => t.id === e)
             }, e => e.topic);
           case x.KFR.GUILD_SCHEDULED_EVENT:
           case x.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION:
-            return eC(e, x.zUn.NAME, e => M.Z.guildScheduledEvents.find(t => t.id === e), e => e.name);
+            return ep(e, x.zUn.NAME, e => M.Z.guildScheduledEvents.find(t => t.id === e), e => e.name);
           case x.KFR.THREAD:
-            return eC(e, x.zUn.NAME, e => M.Z.threads.find(t => t.id === e), e => e.name);
+            return ep(e, x.zUn.NAME, e => M.Z.threads.find(t => t.id === e), e => e.name);
           case x.KFR.APPLICATION_COMMAND:
             if (e.targetId === e.options.application_id) {
               let t = M.Z.integrations.find(t => {
@@ -1053,39 +1053,39 @@ function eO(e, t) {
               if (null != t) return t.name;
               return e.targetId
             }
-            return eC(e, x.zUn.NAME, e => M.Z.applicationCommands.find(t => t.id === e), e => {
+            return ep(e, x.zUn.NAME, e => M.Z.applicationCommands.find(t => t.id === e), e => {
               let t = null != e.name_localized && "" !== e.name_localized ? e.name_localized : e.name;
               return e.type === d.yU.CHAT ? "/⁠".concat(t) : t
             });
           case x.KFR.AUTO_MODERATION_RULE:
-            return eC(e, x.zUn.NAME, e => M.Z.automodRules.find(t => t.id === e), e => e.name);
+            return ep(e, x.zUn.NAME, e => M.Z.automodRules.find(t => t.id === e), e => e.name);
           case x.KFR.GUILD_SOUNDBOARD:
-            return eC(e, x.zUn.NAME, x.VqG);
+            return ep(e, x.zUn.NAME, x.VqG);
           case x.KFR.HOME_SETTINGS:
-            return eC(e, x.zUn.GUILD_ID, e => g.Z.getSettings(e), () => j.intl.string(j.t.VbpLyc), t.id);
+            return ep(e, x.zUn.GUILD_ID, e => g.Z.getSettings(e), () => j.intl.string(j.t.VbpLyc), t.id);
           case x.KFR.VOICE_CHANNEL_STATUS:
-            return eC(e, x.zUn.STATUS, e => f.Z.getChannel(e), e => (0, _.F6)(e, C.default, S.Z, true));
+            return ep(e, x.zUn.STATUS, e => f.Z.getChannel(e), e => (0, _.F6)(e, p.default, S.Z, true));
           default:
             return k.warn("Unknown targetType for log", e), null
         }
       }(e, t),
-      i = C.default.getUser(e.userId);
+      i = p.default.getUser(e.userId);
     if (null != r || [x.rsA.MEMBER_PRUNE, x.rsA.MEMBER_DISCONNECT, x.rsA.MEMBER_MOVE, x.rsA.CREATOR_MONETIZATION_REQUEST_CREATED, x.rsA.CREATOR_MONETIZATION_TERMS_ACCEPTED].includes(e.action)) {
       if (null != (e = (e = (e = e.set("user", i)).set("target", r)).set("options", function(e) {
           if (null != e.options) {
             let n = y({}, e.options);
             switch (e.options.type) {
               case x.jwA.USER:
-                n.subtarget = ep(e.options.id, e => C.default.getUser(e), e => e.tag);
+                n.subtarget = eC(e.options.id, e => p.default.getUser(e), e => e.tag);
                 break;
               case x.jwA.ROLE:
-                n.subtarget = ep(e.options.role_name, x.VqG)
+                n.subtarget = eC(e.options.role_name, x.VqG)
             }
-            if (null != e.options.channel_id && (n.channel = eC(e, "", e => f.Z.getChannel(e), e => e, e.options.channel_id)), null != e.options.members_removed && 0 !== e.options.members_removed && (n.count = e.options.members_removed), null != e.options.event_exception_id) {
+            if (null != e.options.channel_id && (n.channel = ep(e, "", e => f.Z.getChannel(e), e => e, e.options.channel_id)), null != e.options.members_removed && 0 !== e.options.members_removed && (n.count = e.options.members_removed), null != e.options.event_exception_id) {
               var t;
               let r = M.Z.guildScheduledEvents.find(t => t.id === e.targetId),
                 l = null == r ? true : r.guild_scheduled_event_exceptions.find(t => t.event_exception_id === e.options.event_exception_id);
-              n.subtarget = (0, p.vc)(s()(U.default.extractTimestamp(null != (t = null == l ? true : l.event_exception_id) ? t : "0")), "LL")
+              n.subtarget = (0, C.vc)(s()(U.default.extractTimestamp(null != (t = null == l ? true : l.event_exception_id) ? t : "0")), "LL")
             }
             return n
           }
@@ -1098,25 +1098,25 @@ function eO(e, t) {
               let t = e.newValue || e.oldValue;
               switch (t.type) {
                 case x.ecB.ROLE:
-                  e.subtarget = ep(t.id, e => R.Z.getRole(n.id, e), e => e.name);
+                  e.subtarget = eC(t.id, e => R.Z.getRole(n.id, e), e => e.name);
                   break;
                 case x.ecB.USER:
-                  e.subtarget = ep(t.id, e => C.default.getUser(e), e => e.tag);
+                  e.subtarget = eC(t.id, e => p.default.getUser(e), e => e.tag);
                   break;
                 case x.ecB.CHANNEL:
-                  t.id === l()(n.id).subtract(1).toString() ? e.subtarget = j.intl.string(j.t.MSYhgo) : e.subtarget = ep(t.id, e => f.Z.getChannel(e), e => (0, _.F6)(e, C.default, S.Z, true))
+                  t.id === l()(n.id).subtract(1).toString() ? e.subtarget = j.intl.string(j.t.MSYhgo) : e.subtarget = eC(t.id, e => f.Z.getChannel(e), e => (0, _.F6)(e, p.default, S.Z, true))
               }
               return e
             }
             switch (e.key) {
               case x.zUn.OWNER_ID:
-                return eS(e, e => C.default.getUser(e));
+                return eS(e, e => p.default.getUser(e));
               case x.zUn.CHANNEL_ID:
               case x.zUn.AFK_CHANNEL_ID:
               case x.zUn.SYSTEM_CHANNEL_ID:
               case x.zUn.RULES_CHANNEL_ID:
               case x.zUn.PUBLIC_UPDATES_CHANNEL_ID:
-                return eS(e, e => f.Z.getChannel(e), e => (0, _.F6)(e, C.default, S.Z, true));
+                return eS(e, e => f.Z.getChannel(e), e => (0, _.F6)(e, p.default, S.Z, true));
               case x.zUn.AFK_TIMEOUT:
                 return eS(e, e => e / 60);
               case x.zUn.BITRATE:
@@ -1239,7 +1239,7 @@ function eO(e, t) {
                 if (t.targetType === x.KFR.AUTO_MODERATION_RULE) return eS(e, e => null != e && Array.isArray(e) ? e.map(e => "'".concat(e, "'")).join(", ") : JSON.stringify(e));
                 break;
               case x.zUn.AUTO_MODERATION_EXEMPT_CHANNELS:
-                if (t.targetType === x.KFR.AUTO_MODERATION_RULE) return eS(e, e => e.map(f.Z.getChannel).filter(e => null != e).map(e => (0, _.F6)(e, C.default, S.Z, true)), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
+                if (t.targetType === x.KFR.AUTO_MODERATION_RULE) return eS(e, e => e.map(f.Z.getChannel).filter(e => null != e).map(e => (0, _.F6)(e, p.default, S.Z, true)), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
                 break;
               case x.zUn.AUTO_MODERATION_EXEMPT_ROLES:
                 if (t.targetType === x.KFR.AUTO_MODERATION_RULE) return eS(e, e => e.map(e => R.Z.getRole(n.id, e)).filter(e => null != e).map(e => e.name), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
@@ -1274,7 +1274,7 @@ function eO(e, t) {
                 }(e);
               case x.zUn.SCHEDULED_START_TIME:
               case x.zUn.SCHEDULED_END_TIME:
-                return eS(e, e => (0, p.vc)(s()(new Date(e)), "LLLL"))
+                return eS(e, e => (0, C.vc)(s()(new Date(e)), "LLLL"))
             }
             return e
           }(r, e, t);
@@ -1319,7 +1319,7 @@ function eS(e, t, n) {
   return null != e.newValue && (r = t(e.newValue), null != n && null != r && (r = n(r))), null != e.oldValue && (l = t(e.oldValue), null != n && null != l && (l = n(l))), new O.ms(e.key, l || e.oldValue, r || e.newValue)
 }
 
-function eC(e, t, n, r, l) {
+function ep(e, t, n, r, l) {
   let i = null,
     s = n(l = null != l ? l : e.targetId);
   if (null != s && null != r && (i = r(s)), null == i) {
@@ -1333,7 +1333,7 @@ function eC(e, t, n, r, l) {
   return null != i ? i : l
 }
 
-function ep(e, t, n) {
+function eC(e, t, n) {
   let r = e,
     l = t(e);
   return null != l && null != n && (r = n(l)), r

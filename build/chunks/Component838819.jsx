@@ -61,13 +61,13 @@ let M = e => {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, C.z)(p.f), (0, T.f)();
-    let i = (0, g.Z)((0, a.Z)()),
-      c = (0, o.e7)([E.default], () => E.default.getCurrentUser()),
+    (0, C.z)(p.f), (0, j.f)();
+    let i = (0, g.Z)((0, o.Z)()),
+      c = (0, a.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: H,
         wishlistId: W
-      } = (0, o.cj)([h.Z], () => ({
+      } = (0, a.cj)([h.Z], () => ({
         userProfile: null != c ? h.Z.getUserProfile(c.id) : null,
         wishlistId: null != c ? h.Z.getFirstWishlistId(c.id) : null
       }), [c]);
@@ -77,7 +77,7 @@ let M = e => {
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, N.Db)(),
+      } = (0, P.Db)(),
       {
         currentTab: G,
         hasFilters: z
@@ -93,9 +93,9 @@ let M = e => {
         tab: K,
         isFullScreen: t
       }),
-      Q = (0, j.O)(Y),
+      Q = (0, T.O)(Y),
       [J, X] = l.useState(),
-      $ = (0, o.e7)([S.Z], () => {
+      $ = (0, a.e7)([S.Z], () => {
         var e;
         return null == (e = S.Z.getCategory(J)) ? true : e.name
       }),
@@ -118,10 +118,10 @@ let M = e => {
     }, [es]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let ea = (0, o.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
-      eo = l.useRef(null),
+    let eo = (0, a.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
+      ea = l.useRef(null),
       ec = l.useRef(null);
-    (0, u.Tbt)(eo);
+    (0, u.Tbt)(ea);
     let {
       setFullScreenOpen: eu,
       fullScreenOpen: ed
@@ -148,16 +148,16 @@ let M = e => {
           tab: er,
           children: (0, r.jsx)(M, {
             onClose: V,
-            shouldAddEventListener: t && !ea,
+            shouldAddEventListener: t && !eo,
             children: (0, r.jsxs)("div", {
               className: s()(F.shop, {
                 [D.shopTakeOver]: U
               }),
-              ref: t ? eo : ec,
+              ref: t ? ea : ec,
               tabIndex: false,
-              children: [(0, r.jsx)(P.I, {
+              children: [(0, r.jsx)(N.I, {
                 isFullScreen: t,
-                isLayer: ea,
+                isLayer: eo,
                 onClose: V,
                 handleTransition: ei,
                 selectedTab: er

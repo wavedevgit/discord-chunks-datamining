@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,19 +21,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk66582 = require("./66582.js");
 
-function j() {
+function b() {
   let {
     trackUserProfileEditAction: e
   } = (0, Chunk785717.KZ)(), t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
-    application: j,
-    config: O
+    application: b,
+    config: x
   } = (0, Chunk50130.G)(), {
-    token: x,
+    token: O,
     loading: P
-  } = (0, Chunk491662.o)(null == O ? true : O.application_id), I = Chunk647438.useMemo(() => (null == O ? true : O.application_id) != null ? new Chunk931847.q({
+  } = (0, Chunk491662.o)(null == x ? true : x.application_id), I = Chunk647438.useMemo(() => (null == x ? true : x.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
-    applicationId: O.application_id
-  }) : null, [null == O ? true : O.application_id]), S = Chunk647438.useCallback(() => {
+    applicationId: x.application_id
+  }) : null, [null == x ? true : x.application_id]), S = Chunk647438.useCallback(() => {
     module({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
@@ -76,11 +76,11 @@ function j() {
       stackingBehavior: "stack"
     })
   }, [module]);
-  if (null == exports || null == j || null == I || P) return (0, Chunk951288.jsx)("div", {
+  if (null == exports || null == b || null == I || P) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  if (null == x) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
+  if (null == O) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
   let w = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk66582.header,
@@ -92,7 +92,7 @@ function j() {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.YnNFWV, {
-        applicationName: j.name
+        applicationName: b.name
       })
     })]
   });
@@ -113,7 +113,7 @@ function j() {
               size: 32
             }), w, (0, r.jsx)(m.Z, {
               user: t,
-              application: j,
+              application: b,
               onDismiss: i
             }), (0, r.jsx)(h.Z, {})]
           });

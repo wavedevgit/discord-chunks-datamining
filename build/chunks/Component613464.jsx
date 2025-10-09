@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 613464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,13 +26,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk327250 = require("./327250.jsx"),
   Chunk345226 = require("./345226.js");
 
-function C(e) {
+function p(e) {
   let {
     userId: t,
     guildId: n,
     onClose: i,
-    className: C,
-    infoPanelClassName: p,
+    className: p,
+    infoPanelClassName: C,
     style: D
   } = e, L = (0, O.m)(n), U = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [x, b] = l.useState(null == U || null == M), v = (0, c.Z)(M), P = l.useRef(null), {
     analyticsLocations: j
@@ -59,7 +59,7 @@ function C(e) {
       await Promise.all(e), b(false)
     }()
   }, [n, t]), L) ? x || null == U || null == M ? (0, r.jsx)("div", {
-    className: s()(S.sidebarContainer, S.loadingContainer, C),
+    className: s()(S.sidebarContainer, S.loadingContainer, p),
     style: D,
     children: (0, r.jsx)(o.$jN, {
       animated: true,
@@ -68,7 +68,7 @@ function C(e) {
   }) : (0, r.jsx)(A.Gt, {
     value: j,
     children: (0, r.jsx)("div", {
-      className: s()(S.sidebarContainer, C),
+      className: s()(S.sidebarContainer, p),
       style: D,
       children: (0, r.jsx)(g.Z, {
         user: U,
@@ -87,7 +87,7 @@ function C(e) {
             userId: t,
             guildId: n,
             onClose: i,
-            className: p
+            className: C
           })]
         })
       })

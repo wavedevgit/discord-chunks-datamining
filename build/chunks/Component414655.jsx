@@ -1,13 +1,14 @@
 /** Chunk was on 56848 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk370523 = require("./370523.js"),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -24,167 +25,133 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10094 = require("./10094.js");
 
-function P(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function S(e) {
+function I(e) {
   let {
     profileOwner: t
   } = e, {
     wishlistId: n,
-    currentUser: S,
-    wishlistSettings: w
-  } = (0, a.cj)([h.Z, p.default], () => {
-    let e = h.Z.getFirstWishlistId(t.id);
+    currentUser: I,
+    wishlistSettings: S
+  } = (0, a.cj)([v.Z, m.default], () => {
+    let e = v.Z.getFirstWishlistId(t.id);
     return {
       wishlistId: e,
-      currentUser: p.default.getCurrentUser(),
-      wishlistSettings: null != e ? h.Z.getWishlistSettings(t.id, e) : null
+      currentUser: m.default.getCurrentUser(),
+      wishlistSettings: null != e ? v.Z.getWishlistSettings(t.id, e) : null
     }
   }), {
-    analyticsLocations: E
-  } = (0, u.ZP)(), T = (null == S ? true : S.id) === t.id, A = false === t.nsfwAllowed, [N, C] = i.useState(true);
+    analyticsLocations: w
+  } = (0, d.ZP)(), E = (null == I ? true : I.id) === t.id, T = false === t.nsfwAllowed, [A, N] = i.useState(true);
   i.useEffect(() => {
-    (null == w ? true : w.visibility) != null && C(w.visibility === l.f.PUBLIC)
-  }, [null == w ? true : w.visibility]);
+    (null == S ? true : S.visibility) != null && N(S.visibility === l.f.PUBLIC)
+  }, [null == S ? true : S.visibility]);
   let {
-    wishlist: D,
-    error: k
-  } = (0, g.kZ)(n, t.id), Z = i.useCallback(() => {
+    wishlist: C,
+    error: D
+  } = (0, p.kZ)(n, t.id), k = i.useCallback(() => {
     if (null == n) return;
-    let e = N ? l.f.PRIVATE : l.f.PUBLIC;
-    C(!N), f.Z.updateWishlistVisibility(n, e), (0, m.Er)({
+    let e = A ? l.f.PRIVATE : l.f.PUBLIC;
+    N(!A), g.Z.updateWishlistVisibility(n, e), (0, h.Er)({
       wishlistId: n,
-      action: N ? j.NW.WISHLIST_TOGGLE_PRIVATE : j.NW.WISHLIST_TOGGLE_PUBLIC,
-      analyticsLocations: E
+      action: A ? x.NW.WISHLIST_TOGGLE_PRIVATE : x.NW.WISHLIST_TOGGLE_PUBLIC,
+      analyticsLocations: w
     })
-  }, [n, N, E]), _ = i.useCallback(() => {
-    (0, s.pT)(), (0, d.mK)({
-      analyticsLocations: E,
-      analyticsSource: c.Z.USER_PROFILE_WISHLIST,
+  }, [n, A, w]), Z = i.useCallback(() => {
+    (0, s.pT)(), (0, f.mK)({
+      analyticsLocations: w,
+      analyticsSource: u.Z.USER_PROFILE_WISHLIST,
       openInLayer: false
     })
-  }, [E]);
-  return null != k ? null : null == D || 0 === D.items.length ? (0, r.jsx)(v.F, {
+  }, [w]);
+  return null != D ? null : null == C || 0 === C.items.length ? (0, r.jsx)(y.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
-      className: x.emptyStateContainer,
+      className: P.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
-        className: x.emptyStateText,
-        children: [(0, r.jsx)(o.Heading, {
+        className: P.emptyStateText,
+        children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: O.intl.string(O.t.HGnLLS)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: O.intl.string(O.t["/X1ny8"])
         })]
-      }), T && (0, r.jsx)(o.Button, {
+      }), E && (0, r.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
-        icon: o.EOn,
+        icon: c.EOn,
         text: O.intl.string(O.t.ZbS4QE),
-        onClick: _
+        onClick: Z
       })]
     })
-  }) : (0, r.jsxs)(v.F, {
-    className: x.scroller,
+  }) : (0, r.jsxs)(y.F, {
+    className: P.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
-      className: x.headerRow,
+      className: P.headerRow,
       children: [(0, r.jsxs)("div", {
-        className: x.teenDisclaimer,
-        children: [(0, r.jsx)(o.Text, {
+        className: P.teenDisclaimer,
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: O.intl.format(O.t.r6Y1Li, {
-            count: D.items.length
+            count: C.items.length
           })
-        }), !N && (0, r.jsx)(o.ua7, {
-          "data-migration-pending": true,
+        }), !A && (0, r.jsx)(o.u, {
           text: O.intl.string(O.t.RX7D9v),
-          children: e => (0, r.jsx)(o.tEY, {
-            children: (0, r.jsx)("div", I(P({
+          asContainer: true,
+          children: (0, r.jsx)(c.tEY, {
+            children: (0, r.jsx)("div", {
               role: "tooltip",
-              tabIndex: 0
-            }, e), {
-              children: (0, r.jsx)(o.kZF, {
+              tabIndex: 0,
+              children: (0, r.jsx)(c.kZF, {
                 size: "custom",
                 width: 16,
                 height: 16
               })
-            }))
+            })
           })
-        }), N && A && (0, r.jsx)(o.ua7, {
-          "data-migration-pending": true,
+        }), A && T && (0, r.jsx)(o.u, {
           text: O.intl.string(O.t.d78ChY),
-          children: e => (0, r.jsx)(o.tEY, {
-            children: (0, r.jsx)("div", I(P({
+          asContainer: true,
+          children: (0, r.jsx)(c.tEY, {
+            children: (0, r.jsx)("div", {
               role: "tooltip",
-              tabIndex: 0
-            }, e), {
-              children: (0, r.jsx)(o.d3s, {
+              tabIndex: 0,
+              children: (0, r.jsx)(c.d3s, {
                 size: "custom",
                 width: 16,
                 height: 16
               })
-            }))
+            })
           })
         })]
-      }), T ? (0, r.jsxs)("div", {
-        className: x.headerActions,
-        children: [(0, r.jsx)(o.Button, {
+      }), E ? (0, r.jsxs)("div", {
+        className: P.headerActions,
+        children: [(0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
-          icon: o.qJs,
+          icon: c.qJs,
           text: O.intl.string(O.t.SDUwMz),
-          onClick: _
+          onClick: Z
         }), (0, r.jsx)(b.Z, {
-          isOwner: T,
-          isWishlistPublic: N,
-          onToggleVisibility: Z
+          isOwner: E,
+          isWishlistPublic: A,
+          onToggleVisibility: k
         })]
-      }) : (0, r.jsx)(o.Button, {
+      }) : (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        icon: o.EOn,
+        icon: c.EOn,
         text: O.intl.string(O.t["i/yzHh"]),
-        onClick: _
+        onClick: Z
       })]
-    }), (0, r.jsx)(y.Z, {
-      items: D.items,
+    }), (0, r.jsx)(j.Z, {
+      items: C.items,
       profileOwner: t,
-      isOwner: T
+      isOwner: E
     })]
   })
 }

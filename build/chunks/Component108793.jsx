@@ -20,29 +20,29 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   var t, n, {
       userRef: p,
-      usernameSuggestionLoading: y = false,
-      oneClickFlow: O = false
+      usernameSuggestionLoading: h = false,
+      oneClickFlow: y = false
     } = e,
-    h = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]);
   let {
-    user: b,
-    editState: S,
+    user: S,
+    editState: b,
     onClose: _
-  } = h, v = (0, s.ZP)(b.id), j = function(e, t, n) {
+  } = O, N = (0, s.ZP)(S.id), v = function(e, t, n) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
@@ -73,12 +73,12 @@ function p(e) {
           header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
         }
     }
-  }(S, u.ZP.getName(b), _), [N, x] = (0, a.q_F)(() => ({
+  }(b, u.ZP.getName(S), _), [x, T] = (0, o.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
   return i.useEffect(() => {
-    x({
+    T({
       y: 0,
       opacity: 1,
       from: {
@@ -86,29 +86,29 @@ function p(e) {
         opacity: 0
       }
     })
-  }, [x, S]), (0, r.jsxs)("div", {
+  }, [T, b]), (0, r.jsxs)("div", {
     className: E.displayNameContainer,
-    children: [(0, r.jsxs)(o.animated.div, {
+    children: [(0, r.jsxs)(a.animated.div, {
       style: {
-        opacity: N.opacity,
-        y: N.y
+        opacity: x.opacity,
+        y: x.y
       },
-      children: [(0, r.jsx)(a.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         className: E.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
-        children: j.header
+        children: v.header
       }), (0, r.jsxs)("div", {
         className: E.subtitle,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           color: "header-secondary",
           variant: "heading-sm/medium",
-          children: j.subtitle
-        }), null != j.link && (0, r.jsx)(a.Text, {
+          children: v.subtitle
+        }), null != v.link && (0, r.jsx)(o.Text, {
           className: E.link,
           color: "header-secondary",
           variant: "text-sm/medium",
-          children: j.link
+          children: v.link
         })]
       })]
     }), (0, r.jsx)(d.Z, (t = function(e) {
@@ -128,11 +128,11 @@ function p(e) {
         })
       }
       return e
-    }({}, h), n = n = {
-      displayProfile: v,
+    }({}, O), n = n = {
+      displayProfile: N,
       ref: p,
-      usernameSuggestionLoading: y,
-      oneClickFlow: O
+      usernameSuggestionLoading: h,
+      oneClickFlow: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

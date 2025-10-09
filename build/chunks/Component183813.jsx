@@ -1,7 +1,7 @@
 /** Chunk was on 23404 **/
 /** chunk id: 183813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => v
+  S: () => L
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,21 +24,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk950174 = require("./950174.js");
 
-function v(e) {
+function L(e) {
   var t, n;
   let {
     handleStepChange: a,
-    handleClose: v
+    handleClose: L
   } = e, {
-    selectedPlan: L,
+    selectedPlan: v,
     selectedSkuId: S,
     step: w
   } = (0, m.JL)(), {
-    setSelectedGiftingPromotionReward: O,
+    setSelectedGiftingPromotionReward: I,
     selectedGiftingPromotionReward: P,
-    claimableRewards: I,
+    claimableRewards: O,
     claimableVariants: E
-  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(I, E, P), [A, M] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(A), F = i.useMemo(() => null == E ? null != I ? I : [] : E.flatMap(e => {
+  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(O, E, P), [A, M] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(A), F = i.useMemo(() => null == E ? null != O ? O : [] : E.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -69,27 +69,27 @@ function v(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [E, I, A]);
+  }), [E, O, A]);
   i.useEffect(() => {
     let e = null == T ? true : T.defaultHighlightedReward;
-    !N && null == P && null != e && null != e && F.some(t => t.skuId === e.skuId) && (O(e), B(e.skuId))
-  }, [T, N, P, F, O]), i.useEffect(() => {
+    !N && null == P && null != e && null != e && F.some(t => t.skuId === e.skuId) && (I(e), B(e.skuId))
+  }, [T, N, P, F, I]), i.useEffect(() => {
     (null == T ? true : T.defaultCategory) == null || N || M(T.defaultCategory)
-  }, [null == T ? true : T.defaultCategory, N]), l()(null != L, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
-  let H = i.useMemo(() => null != Z && (null != I ? I : []).some(e => e.skuId === Z), [Z, I]),
+  }, [null == T ? true : T.defaultCategory, N]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
+  let H = i.useMemo(() => null != Z && (null != O ? O : []).some(e => e.skuId === Z), [Z, O]),
     U = i.useMemo(() => null != P && F.some(e => e.skuId === P.skuId), [F, P]),
     D = i.useMemo(() => 0 === F.length || null == Z || !U || !H, [F, Z, H, U]);
   i.useEffect(() => {
     if (0 === F.length) {
-      B(true), O(true);
+      B(true), I(true);
       return
     }
-    H && F.some(e => e.skuId === Z) || null == Z || (B(true), O(true))
-  }, [F, H, Z, O]), i.useEffect(() => {
-    G.current === A || U || (O(true), B(true)), G.current = A
-  }, [A, U, O]);
+    H && F.some(e => e.skuId === Z) || null == Z || (B(true), I(true))
+  }, [F, H, Z, I]), i.useEffect(() => {
+    G.current === A || U || (I(true), B(true)), G.current = A
+  }, [A, U, I]);
   let z = e => {
-      O(F.find(t => t.skuId === e)), B(e), R(true)
+      I(F.find(t => t.skuId === e)), B(e), R(true)
     },
     W = F.map(e => {
       var t, n;
@@ -98,7 +98,7 @@ function v(e) {
         assetId: e.assetId,
         productName: null == (t = e.name) ? true : t.call(e),
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
-        claimed: null != I && I.every(t => t.skuId !== e.skuId),
+        claimed: null != O && O.every(t => t.skuId !== e.skuId),
         user: k,
         onSelect: z,
         selectedSkuId: Z,
@@ -111,7 +111,7 @@ function v(e) {
         className: y.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != P && f.default.track(b.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != P && f.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
               reward_sku_id: P.skuId
             }), a(e)
@@ -119,8 +119,8 @@ function v(e) {
           onBackClick: () => a(x.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
-          planOptions: [L.id],
-          selectedPlanId: L.id,
+          planOptions: [v.id],
+          selectedPlanId: v.id,
           isNextDisabled: D
         })
       })
@@ -135,16 +135,16 @@ function v(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/bold",
         color: "header-primary",
-        children: j.intl.string(j.t["3JCuX1"])
+        children: b.intl.string(b.t["3JCuX1"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.headerSubtitle,
-        children: j.intl.string(j.t.MhwtRU)
+        children: b.intl.string(b.t.MhwtRU)
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: y.closeButton,
-        onClick: v
+        onClick: L
       })]
     }), (0, r.jsx)(s.hzk, {
       "data-migration-pending": true,

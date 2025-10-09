@@ -242,7 +242,7 @@ function G(e) {
       })]
     }), Z(i) ? (0, r.jsx)("div", {
       className: A.heroImageContainer,
-      children: (0, r.jsx)(O.ZP, {
+      children: (0, r.jsx)(x.ZP, {
         src: i.proxyUrl,
         alt: "",
         width: i.width,
@@ -287,7 +287,7 @@ function W(e) {
   let {
     content: t
   } = e, n = i.useId(), l = (0, v._)();
-  return null != t ? (0, r.jsx)(b.Z, {
+  return null != t ? (0, r.jsx)(j.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
@@ -303,7 +303,7 @@ function F(e) {
     imagePosition: i
   } = e, l = (0, v._)(), s = Z(n) ? (0, r.jsx)("div", {
     className: a()(A.image, l.className),
-    children: (0, r.jsx)(O.ZP, {
+    children: (0, r.jsx)(x.ZP, {
       src: n.proxyUrl,
       alt: "",
       width: n.width,
@@ -449,18 +449,18 @@ let J = Object.assign(function(e) {
     application: u,
     game: f,
     config: m
-  } = q(n), h = null == u ? true : u.getIconURL(16), v = (0, x.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), b = (0, p.Z)({
+  } = q(n), h = null == u ? true : u.getIconURL(16), v = (0, O.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == f ? true : f.id,
     source: g.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
-    loading: O,
+    loading: x,
     hasAlreadyLinked: P,
     canStartAuthorization: S,
     startAuthorization: E
-  } = (0, d.FG)(u), D = null == s && !O && !P && S, Z = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(u), D = null == s && !x && !P && S, Z = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: A.appIcon,
       src: h,
@@ -483,7 +483,7 @@ let J = Object.assign(function(e) {
     text: T.intl.string(T.t.ajHoOj),
     children: (0, r.jsx)(c.P3F, {
       className: a()(A.header, A.headerClickable),
-      onClick: b,
+      onClick: j,
       "aria-label": T.intl.string(T.t.ajHoOj),
       children: Z
     })
@@ -501,7 +501,7 @@ let J = Object.assign(function(e) {
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
             type: "unfurled_media",
-            media: (0, j.ym)(n)
+            media: (0, b.ym)(n)
           }]
         } else if ("string" == typeof n) return [t, {
           type: "string",
@@ -553,7 +553,7 @@ let J = Object.assign(function(e) {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: c.iWm,
-      action: b
+      action: j
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,

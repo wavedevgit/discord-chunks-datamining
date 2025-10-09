@@ -37,16 +37,16 @@ let _ = e => {
   }, []);
   let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: j
+      handleCardVisibilityChange: T
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: T
+      bannerURL: j
     } = (0, g.UI)(_);
-  if (null == T) return null;
+  if (null == j) return null;
   let L = b === f.AW.ORBS;
-  return (0, r.jsx)(a.$, {
+  return (0, r.jsx)(o.$, {
     innerRef: v,
-    onChange: j,
+    onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
@@ -59,7 +59,7 @@ let _ = e => {
         }),
         children: (0, r.jsx)("img", {
           ref: S,
-          src: T,
+          src: j,
           alt: _.title,
           className: s()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: L
@@ -75,14 +75,14 @@ let _ = e => {
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
-          children: [(0, r.jsx)(o.Heading, {
+          children: [(0, r.jsx)(a.Heading, {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: L ? h.wideBannerOrbsHeading : true,
             variant: L ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
@@ -95,7 +95,7 @@ let _ = e => {
         })
       }), true !== _.disableCta && (0, r.jsx)("div", {
         className: h.wideBannerBlockButton,
-        children: (0, r.jsx)(o.Button, {
+        children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y),
           text: C.intl.string(C.t.jVcuVV)

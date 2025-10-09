@@ -27,15 +27,15 @@ function _() {
     } = (0, Chunk987209.wD)();
   if (null == m || null == x) return null;
   let g = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, f),
-    b = (0, Chunk717401.Yr)(g),
-    j = null == (t = m.gradientConfig) ? true : exports.call(m, {
+    j = (0, Chunk717401.Yr)(g),
+    b = null == (t = m.gradientConfig) ? true : exports.call(m, {
       isDarkMode: f,
       isAndroid: false
     }),
-    y = (0, Chunk717401.Tl)(j);
+    y = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != b ? b : y,
+    style: null != j ? j : y,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {

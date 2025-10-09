@@ -24,11 +24,11 @@ let g = {
       enabled: n
     } = (0, s.WX)({
       location: "useShopViewTransition"
-    }), i = (0, a.FF)("CollectiblesBrowse"), {
+    }), i = (0, o.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: f,
       reset: p,
       setCurrentTab: C
-    } = (0, o.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [_, m] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
+    } = (0, a.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [_, m] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
       C(_)
     }, [_, C]), r.useEffect(() => {

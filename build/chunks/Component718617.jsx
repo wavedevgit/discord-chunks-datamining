@@ -37,7 +37,7 @@ function N(e) {
     onClose: h,
     analyticsLocation: O,
     className: f
-  } = e, R = (0, a.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, C = (0, u.Z)(n), p = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, s.Z)(p), {
+  } = e, R = (0, a.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, p = (0, u.Z)(n), C = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, s.Z)(C), {
     reducedMotion: L
   } = l.useContext(o.Sfi), U = l.useCallback(e => {
     null != R && (0, d.r)(N, n, R.baseChannelId, {
@@ -62,7 +62,7 @@ function N(e) {
     leave: {
       value: false
     }
-  }, C !== n ? "animate-never" : "animate-always");
+  }, p !== n ? "animate-never" : "animate-always");
   return (0, r.jsx)(i.animated.div, {
     style: {
       position: "relative",

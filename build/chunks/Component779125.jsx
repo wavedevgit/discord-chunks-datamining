@@ -50,6 +50,7 @@ function O(e) {
     openChatWithoutConnecting: d
   } = e, f = (0, i.e7)([m.default, h.Z], () => null == t ? "" : (0, c.F6)(t, m.default, h.Z), [t]);
   return (0, r.jsx)(a.u, {
+    "data-pending-richtooltip-migration": true,
     __unsupportedReactNodeAsText: f,
     position: "top",
     children: (0, r.jsx)(u.Z, {

@@ -87,8 +87,8 @@ function G(e) {
   } = e, k = f.cC.useSetting(), F = (0, I.p)(), w = l.useCallback(e => {
     if (e === L.Z.getChannelId()) return;
     let t = S.Z.getChannel(e);
-    null != t && (p.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
-  }, []), z = null != s ? (0, _.F6)(s, U.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = C.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = p.Z.can(v.Plq.MANAGE_MESSAGES, s), {
+    null != t && (C.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
+  }, []), z = null != s ? (0, _.F6)(s, U.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = p.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = C.Z.can(v.Plq.MANAGE_MESSAGES, s), {
     content: W
   } = (0, g.ZP)({
     content: z,
@@ -166,8 +166,8 @@ let k = Chunk647438.memo(function(e) {
     paginationTotalCount: O,
     renderPageWrapper: f,
     onBlockedResultsClick: R,
-    searchRequestAnalyticsId: C,
-    searchResultsQuery: p,
+    searchRequestAnalyticsId: p,
+    searchResultsQuery: C,
     isFavoritesSearch: L
   } = e, {
     offset: U,
@@ -179,10 +179,10 @@ let k = Chunk647438.memo(function(e) {
       let t = S.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
-        search_id: C
+        search_id: p
       }), (0, h.uL)(v.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
-  }, [g, C]), w = l.useMemo(() => {
+  }, [g, p]), w = l.useMemo(() => {
     let e, t = 0;
     return A.reduce((n, r) => {
       if (!k && (D.Z.isBlockedForMessage(r) || D.Z.isIgnoredForMessage(r))) return n;
@@ -212,7 +212,7 @@ let k = Chunk647438.memo(function(e) {
     focusedIndex: 0,
     setFocus: Z,
     onSelect: B
-  }), K = (0, E.nC)(null != (t = (0, M.UP)(p)) ? t : ""), W = w.map(e => {
+  }), K = (0, E.nC)(null != (t = (0, M.UP)(C)) ? t : ""), W = w.map(e => {
     let {
       channel: t,
       messages: n,

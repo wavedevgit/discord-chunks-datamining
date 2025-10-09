@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let x = {
+let O = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({
       variant: "details",
@@ -62,7 +62,7 @@ let x = {
     },
     getAriaLabel: e => {
       var t, n;
-      return j.intl.formatToPlainString(j.t.KfGahI, {
+      return b.intl.formatToPlainString(b.t.KfGahI, {
         applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
@@ -75,13 +75,13 @@ function P(e) {
       onAddWidget: l,
       size: c = "default",
       loading: d = false,
-      trackUserProfileEditAction: j
+      trackUserProfileEditAction: b
     } = e,
     {
       placeholder: P,
       getAriaLabel: I,
       icon: S
-    } = x[n],
+    } = O[n],
     w = "small" === c,
     {
       config: E
@@ -106,15 +106,15 @@ function P(e) {
       }
     }, [n, null == E ? true : E.application_id]),
     A = i.useCallback(() => {
-      d || null == T || ((0, p.qH)(n, T), j({
+      d || null == T || ((0, p.qH)(n, T), b({
         action: "WIDGET_ADDED",
         widgetEdited: n
-      }), (0, h.L$)(b.qb.WIDGET_ADDED), null == l || l())
-    }, [d, n, T, j, l]);
+      }), (0, h.L$)(j.qb.WIDGET_ADDED), null == l || l())
+    }, [d, n, T, b, l]);
   return (null != T && null != S && (t = S(T)), null == T) ? null : (0, r.jsxs)("div", {
-    className: O.addButtonContainer,
+    className: x.addButtonContainer,
     children: [(0, r.jsxs)(o.P3F, {
-      className: a()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
+      className: a()(x.addButtonContent, w && x.sizeSmall, d && x.loading),
       onClick: A,
       "aria-label": I(T),
       "aria-busy": d,
@@ -124,13 +124,13 @@ function P(e) {
         switch (e.variant) {
           case "details":
             return (0, r.jsx)(v.i, {
-              className: O.placeholderPadding,
+              className: x.placeholderPadding,
               applicationId: e.applicationId,
               size: c
             });
           case "grid":
             return (0, r.jsx)(v.c, {
-              className: O.placeholderPadding,
+              className: x.placeholderPadding,
               applicationIds: e.applicationIds,
               size: c
             });
@@ -143,13 +143,13 @@ function P(e) {
             return (0, u.vE)(e)
         }
       })(), (0, r.jsxs)("div", {
-        className: O.overlay,
+        className: x.overlay,
         children: [(0, r.jsx)(o.oFk, {
           size: "md",
           color: "currentColor",
-          className: O.addButton
+          className: x.addButton
         }), (0, r.jsxs)("div", {
-          className: O.title,
+          className: x.title,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "header-primary",
@@ -159,7 +159,7 @@ function P(e) {
             alt: "",
             width: 16,
             height: 16,
-            className: O.icon
+            className: x.icon
           }) : null]
         })]
       })]

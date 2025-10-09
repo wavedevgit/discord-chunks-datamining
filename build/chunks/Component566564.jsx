@@ -36,16 +36,16 @@ let I = e => {
     let {
       handleTransition: n,
       numVisibleItems: i,
-      isFetchingCategories: o,
+      isFetchingCategories: a,
       tab: c,
       isFullScreen: u
     } = e, {
       noCache: h,
       includeUnpublished: x
-    } = (0, _.Z)(), [T, I] = l.useState(false), B = (0, d.sp)(), P = null != (t = null == B ? true : B.sessionId) ? t : "";
+    } = (0, _.Z)(), [j, I] = l.useState(false), B = (0, d.sp)(), N = null != (t = null == B ? true : B.sessionId) ? t : "";
     l.useEffect(() => {
       (0, p.n)({
-        sessionId: P,
+        sessionId: N,
         checkpoint: p.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
@@ -54,7 +54,7 @@ let I = e => {
       })
     }, [c]);
     let {
-      isFetchingShopHome: N,
+      isFetchingShopHome: P,
       fetchShopHomeError: A,
       shopBlocks: R,
       refreshShopHome: Z
@@ -64,40 +64,40 @@ let I = e => {
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: P,
+      sessionId: N,
       tab: c,
       isFullScreen: u
     }), w = l.useCallback(() => {
       Z()
     }, [Z]);
     return (l.useEffect(() => {
-      null != A || N || 0 === R.length || (0, p.n)({
-        sessionId: P,
+      null != A || P || 0 === R.length || (0, p.n)({
+        sessionId: N,
         checkpoint: p.a.SHOP_RENDERED,
         tab: c,
         isFullScreen: u,
         unpublishedCategoriesShown: x,
         cacheDisabled: h
       })
-    }, [A, N, R.length, x, h, P, c, u]), null != A) ? (0, r.jsx)(C.Z, {
+    }, [A, P, R.length, x, h, N, c, u]), null != A) ? (0, r.jsx)(C.Z, {
       onRetry: w,
       errorOrigin: C.i.SHOP_PAGE,
       errorMessage: A.message
-    }) : N || 0 === R.length ? (0, r.jsxs)("div", {
+    }) : P || 0 === R.length ? (0, r.jsxs)("div", {
       className: s()(k.loadingContainer, k.feedContent),
       children: [(0, r.jsx)(v.Z, {
-        isLoading: N,
+        isLoading: P,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(b.Z, {
-        isLoading: N,
+        isLoading: P,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(E.Z, {
-        isLoading: N,
-        title: c === j.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
+        isLoading: P,
+        title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
         numVisibleItems: i,
-        hasSorting: c === j.AW.HOME,
+        hasSorting: c === T.AW.HOME,
         tab: c
       })]
     }) : (0, r.jsx)(r.Fragment, {
@@ -106,56 +106,56 @@ let I = e => {
         let d = null,
           f = false;
         switch (e.type) {
-          case a.z.HERO:
+          case o.z.HERO:
             d = (0, r.jsx)(v.Z, {
-              isLoading: N,
+              isLoading: P,
               handleTransition: n,
               heroBlock: e,
               tab: c
             }, l);
             break;
-          case a.z.FEATURED:
+          case o.z.FEATURED:
             d = (0, r.jsx)(b.Z, {
-              isLoading: N,
+              isLoading: P,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
             break;
-          case a.z.FEED:
+          case o.z.FEED:
             let p = e.sortedSkuIds;
             d = (0, r.jsx)(E.Z, {
-              title: c === j.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
-              isLoading: N || o,
+              title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
+              isLoading: P || a,
               numVisibleItems: i,
               sortedSkuIds: p,
-              buttonContainerClassName: (null == t ? true : t.type) === a.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
-              hasSorting: c === j.AW.HOME,
-              prioritizeUserDiscounts: c === j.AW.HOME,
+              buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
+              hasSorting: c === T.AW.HOME,
+              prioritizeUserDiscounts: c === T.AW.HOME,
               tab: c
             }, l);
             break;
-          case a.z.WIDE_BANNER:
+          case o.z.WIDE_BANNER:
             d = (0, r.jsx)(y.Z, {
               handleTransition: n,
               wideBannerBlock: e,
               tab: c
             }, l);
             break;
-          case a.z.SHELF:
+          case o.z.SHELF:
             d = (0, r.jsx)(O.Z, {
               handleTransition: n,
               shelf: e,
               tab: c
             }, l);
             break;
-          case a.z.COUNTDOWN_TIMER:
+          case o.z.COUNTDOWN_TIMER:
             d = (0, r.jsx)(m.J, {
               countdownTimerBlock: e,
-              isVisible: T,
+              isVisible: j,
               isFullScreen: u
             }, l), f = true;
             break;
-          case a.z.IMMERSIVE_BANNER:
+          case o.z.IMMERSIVE_BANNER:
             d = (0, r.jsx)(S.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => I(!e)
@@ -182,24 +182,24 @@ let I = e => {
       handleTransition: n,
       tab: i,
       transitionState: s
-    } = e, a = l.useRef(null), {
+    } = e, o = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(a, i), f = (0, h.R)(), p = (0, d.sp)(), [C, _] = l.useState(j.IV), [m, b] = l.useState(false);
+    } = (0, c.z)(o, i), f = (0, h.R)(), p = (0, d.sp)(), [C, _] = l.useState(T.IV), [m, b] = l.useState(false);
     return l.useEffect(() => {
-      if (null != a.current) {
+      if (null != o.current) {
         let e = () => {
-            if (null == a.current) return;
-            let e = a.current.getDistanceFromBottom();
-            C >= 36 ? b(e < 20) : e <= 200 && _(e => e + j.IV)
+            if (null == o.current) return;
+            let e = o.current.getDistanceFromBottom();
+            C >= 36 ? b(e < 20) : e <= 200 && _(e => e + T.IV)
           },
-          t = a.current.getScrollerNode();
+          t = o.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, C, _, b]), (0, r.jsx)(o.Den, {
+    }, [o, C, _, b]), (0, r.jsx)(a.Den, {
       className: k.shopScroll,
-      ref: a,
+      ref: o,
       onScroll: g,
       children: (0, r.jsxs)("div", {
         className: k.shop,
@@ -211,19 +211,19 @@ let I = e => {
             isFetchingCategories: f,
             tab: i,
             isFullScreen: t
-          }), i !== j.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
+          }), i !== T.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
             className: k.endOfFeed,
-            children: [(0, r.jsx)(o.Heading, {
+            children: [(0, r.jsx)(a.Heading, {
               variant: "heading-md/semibold",
               children: L.intl.string(L.t.Yr70c3)
-            }), (0, r.jsx)(o.Button, {
+            }), (0, r.jsx)(a.Button, {
               variant: "primary",
               text: L.intl.string(L.t.AfrvRE),
               onClick: () => {
-                n("shop all button", true, true), u.default.track(T.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                n("shop all button", true, true), u.default.track(j.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == p ? true : p.sessionId,
                   page_type: i,
-                  page_category: i === j.AW.HOME || null == p ? true : p.pageCategory,
+                  page_category: i === T.AW.HOME || null == p ? true : p.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },
@@ -233,13 +233,13 @@ let I = e => {
         }), !t && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(x.Z, {
             peaking: m,
-            transitioning: s === j.f7.OUT
+            transitioning: s === T.f7.OUT
           }), (0, r.jsx)(x.Z, {
             style: {
               left: 1850
             },
             peaking: m,
-            transitioning: s === j.f7.OUT
+            transitioning: s === T.f7.OUT
           })]
         })]
       })

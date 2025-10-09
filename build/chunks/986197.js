@@ -19,7 +19,7 @@ let m = {
   }),
   async fetchSuggestionsRegistration(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1500;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "POMELO_SUGGESTIONS_RESET"
     });
     try {
@@ -33,7 +33,7 @@ let m = {
         rejectWithError: true,
         failImmediatelyWhenRateLimited: true
       });
-      if (r.ok && (null == (n = r.body) ? true : n.username) != null) return o.Z.dispatch({
+      if (r.ok && (null == (n = r.body) ? true : n.username) != null) return a.Z.dispatch({
         type: "POMELO_REGISTRATION_SUGGESTIONS_SUCCESS",
         suggestion: r.body,
         source: e
@@ -45,7 +45,7 @@ let m = {
   async fetchSuggestions(e) {
     if ((0, c.P)()) try {
       var t;
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "POMELO_SUGGESTIONS_FETCH",
         usernameSuggestionLoading: true
       });
@@ -54,7 +54,7 @@ let m = {
         timeout: e,
         rejectWithError: true
       });
-      if (n.ok && (null == (t = n.body) ? true : t.username) != null) return o.Z.dispatch({
+      if (n.ok && (null == (t = n.body) ? true : t.username) != null) return a.Z.dispatch({
         type: "POMELO_SUGGESTIONS_SUCCESS",
         suggestion: n.body
       })
@@ -76,7 +76,7 @@ let m = {
       username_error: true,
       location: n,
       one_click_flow: c
-    }), o.Z.dispatch({
+    }), a.Z.dispatch({
       type: "POMELO_ATTEMPT_FAILURE",
       username: e,
       error: m
@@ -100,20 +100,20 @@ let m = {
         username_error: true,
         location: n,
         one_click_flow: c
-      }), o.Z.dispatch({
+      }), a.Z.dispatch({
         type: "POMELO_ATTEMPT_SUCCESS",
         username: e,
         taken: t.body.taken
       })
     } catch (l) {
-      let r = new a.Hx(l),
+      let r = new o.Hx(l),
         i = null != (t = r.getAnyErrorMessage()) ? t : true;
       s.default.track(u.rMx.POMELO_ERRORS, {
         reason: i,
         username_error: true,
         location: n,
         one_click_flow: c
-      }), o.Z.dispatch({
+      }), a.Z.dispatch({
         username: e,
         type: "POMELO_ATTEMPT_FAILURE",
         error: null != r.status && r.status < 500 && 401 !== r.status ? i : true,
@@ -135,7 +135,7 @@ let m = {
         },
         rejectWithError: false
       });
-    return o.Z.dispatch({
+    return a.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
       user: n.body
     }), n.body

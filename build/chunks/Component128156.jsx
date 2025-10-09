@@ -77,9 +77,9 @@ function A(e) {
   });
   if (!V && !q && !F) {
     var X;
-    return B ? (0, r.jsx)(x.Uf, {
+    return B ? (0, r.jsx)(O.Uf, {
       onClose: k
-    }) : (0, r.jsx)(x.P9, {
+    }) : (0, r.jsx)(O.P9, {
       user: t,
       guildId: null != (X = null == A ? true : A.guildId) ? X : N,
       channelId: C,
@@ -100,14 +100,14 @@ function A(e) {
               variant: "horizontal"
             })
           }), !_ && Y && (0, r.jsx)("li", {
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(x.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
               onClose: k
             })
           }), null != U && (0, r.jsx)("li", {
-            children: (0, r.jsx)(j.Z, {
+            children: (0, r.jsx)(b.Z, {
               user: t,
               currentUser: n,
               stream: U,
@@ -121,7 +121,7 @@ function A(e) {
               onClose: k
             })
           }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(x.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
@@ -147,7 +147,7 @@ function A(e) {
       children: (0, r.jsx)("ul", {
         className: T.cards,
         children: G.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(j.Z, {
             user: t,
             entry: e,
             onClose: k

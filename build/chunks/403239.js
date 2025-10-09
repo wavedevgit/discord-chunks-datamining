@@ -1,5 +1,5 @@
 /** Chunk was on 36529 **/
-/** chunk id: 403239, original params: e,t,r (module,exports,require) **/
+/** chunk id: 403239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
 }), require("./388685.js");
@@ -14,7 +14,7 @@ var Chunk647438 = require("./647438.js"),
 function u(e) {
   let {
     dropRef: t,
-    dragRef: r,
+    dragRef: n,
     userId: u,
     widget: d,
     index: f,
@@ -25,10 +25,10 @@ function u(e) {
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     currentItem: e.getItem()
-  })), O = (0, n.useCallback)((e, t) => {
-    let r = p.slice(),
-      [n] = r.splice(e, 1);
-    r.splice(t, 0, n), c.Z.setPendingWidgets(r)
+  })), O = (0, r.useCallback)((e, t) => {
+    let n = p.slice(),
+      [r] = n.splice(e, 1);
+    n.splice(t, 0, r), c.Z.setPendingWidgets(n)
   }, [p]), [, y, j] = (0, a.c)({
     type: "WIDGET",
     item: {
@@ -44,7 +44,7 @@ function u(e) {
       isDragging: e.isDragging()
     })
   });
-  (0, n.useEffect)(() => {
+  (0, r.useEffect)(() => {
     j((0, l.r)(), {
       captureDraggingState: true
     })
@@ -56,8 +56,8 @@ function u(e) {
     canDrop: () => !g,
     collect: e => {
       let t = null,
-        r = e.getItem();
-      return null != r && e.isOver() && e.canDrop() && r.widgetType !== d.type && (t = r.originalIndex), {
+        n = e.getItem();
+      return null != n && e.isOver() && e.canDrop() && n.widgetType !== d.type && (t = n.originalIndex), {
         handlerId: e.getHandlerId(),
         dragSourcePosition: t
       }
@@ -70,7 +70,7 @@ function u(e) {
   return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (y(r), v(t), {
+  } : (y(n), v(t), {
     isDragging: b && (null == m ? true : m.widgetType) === d.type,
     dragSourcePosition: x
   })

@@ -38,7 +38,7 @@ let f = e => {
                 returnfalse
             }
           })(n) ? d.intl.string(d.t["soka7+"]) : true;
-          return (0, r.jsx)(o.k0, {
+          return (0, r.jsx)(a.k0, {
             newValue: {
               categoryPosition: 1,
               pageCategory: e.name,
@@ -61,7 +61,7 @@ let f = e => {
       handleTransition: t,
       categories: n
     } = e, l = (0, c.QH)("collectibles_featured_block");
-    if (null == n || n.length < 2) return a.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    if (null == n || n.length < 2) return o.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
     let [s, f] = n, p = (null == s ? true : s.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
       switch (l) {
         case c.pj.FIRST_BLOCK_ONLY:
@@ -81,7 +81,7 @@ let f = e => {
     })() && (null == f ? true : f.storeListingId) != null && "" !== f.storeListingId ? d.intl.string(d.t["soka7+"]) : d.intl.string(d.t["o/oRJC"]);
     return (0, r.jsx)("div", {
       className: i()(g.col2, g.centeredSection),
-      children: (0, r.jsxs)(o.k0, {
+      children: (0, r.jsxs)(a.k0, {
         newValue: {
           categoryPosition: 1,
           pageCategory: null != s ? s.name : null == f ? true : f.name,

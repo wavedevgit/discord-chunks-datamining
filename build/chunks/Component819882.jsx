@@ -30,22 +30,22 @@ let v = e => {
       cardRef: h,
       onClick: v,
       icon: S
-    } = e, O = (0, d.Nd)(), x = null == O ? true : O.tab, y = (0, i.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), T = (0, u.sp)(), {
+    } = e, O = (0, d.Nd)(), x = null == O ? true : O.tab, y = (0, i.e7)([a.default], () => a.default.getCurrentUser()), T = c.ZP.canUseCollectibles(y), j = (0, u.sp)(), {
       isPurchased: L,
       isPartiallyOwnedBundle: k
-    } = (0, f.L)(t), I = (0, g.rN)(t), B = (0, g.G1)(t), P = (0, g.ne)({
+    } = (0, f.L)(t), I = (0, g.rN)(t), B = (0, g.G1)(t), N = (0, g.ne)({
       product: t,
       isPartiallyOwnedBundle: k,
       isPurchased: L
-    }), N = (0, _.Iw)(t), {
+    }), P = (0, _.Iw)(t), {
       isOrbExclusive: A
     } = (0, m.Ip)({
       product: t,
-      isPremiumUser: j,
+      isPremiumUser: T,
       tab: x,
-      hasDiscountOffer: null != N
-    }), R = (0, C.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
-    return B || l.tq || A || !P || x === b.AW.ORBS ? null : I || null != v || null != S ? (0, r.jsx)(s.hU, {
+      hasDiscountOffer: null != P
+    }), R = (0, C.J7)(t, o.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON);
+    return B || l.tq || A || !N || x === b.AW.ORBS ? null : I || null != v || null != S ? (0, r.jsx)(s.hU, {
       variant: "primary",
       "aria-label": E.intl.string(E.t.SKNnqq),
       icon: null != S ? S : s.tEF,
@@ -54,7 +54,7 @@ let v = e => {
       }
     }) : (0, r.jsx)(u.k0, {
       newValue: {
-        pageCategory: x === b.AW.HOME || null == T ? true : T.pageCategory
+        pageCategory: x === b.AW.HOME || null == j ? true : j.pageCategory
       },
       children: (0, r.jsx)(p.Z, {
         primary: true,
@@ -72,11 +72,11 @@ let v = e => {
       selectedVariantIndex: l,
       onClick: i,
       icon: s
-    } = e, a = (0, C.LJ)(t);
-    if (null == a) return null;
-    let o = (0, h.W)(a, l);
+    } = e, o = (0, C.LJ)(t);
+    if (null == o) return null;
+    let a = (0, h.W)(o, l);
     return (0, r.jsx)(v, {
-      product: o,
+      product: a,
       cardRef: n,
       selectedVariantIndex: l,
       onClick: i,

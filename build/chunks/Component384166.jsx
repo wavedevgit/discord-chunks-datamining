@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,12 +22,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461671 = require("./461671.js");
 
-function O(e) {
+function x(e) {
   let {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [l, O] = i.useState(false), x = (0, o.Wu)([m.Z], () => {
+  } = (0, f.KZ)(), [l, x] = i.useState(false), O = (0, o.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
   }), P = (0, o.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, o.Wu)([m.Z], () => m.Z.getRemovedWidgets()), S = (0, o.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, o.e7)([m.Z], () => m.Z.isSubmitting), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, c.Yzy)(S, {
@@ -48,17 +48,17 @@ function O(e) {
     let e = null;
 
     function t() {
-      O(true), e = setTimeout(() => O(false), 500)
+      x(true), e = setTimeout(() => x(false), 500)
     }
     return d.S.subscribe(y.CkL.EMPHASIZE_NOTICE, t), () => {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    S && c.uvj.announce(b.intl.string(b.t["0Y/qkJ"]))
+    S && c.uvj.announce(j.intl.string(j.t["0Y/qkJ"]))
   }, [S]);
   let A = i.useCallback(async () => {
       try {
-        await p.Z.savePendingWidgets(x)
+        await p.Z.savePendingWidgets(O)
       } catch (e) {
         (0, h.L$)(v.qb.WIDGET_SAVE_FAILURE);
         return
@@ -80,7 +80,7 @@ function O(e) {
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, P, I, n]),
+    }, [O, P, I, n]),
     N = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
@@ -88,27 +88,27 @@ function O(e) {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(j.content, {
-        [j.emphasized]: l
+      className: a()(b.content, {
+        [b.emphasized]: l
       }),
-      "aria-label": b.intl.string(b.t["odDw+/"]),
+      "aria-label": j.intl.string(j.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
-        className: j.message,
-        children: b.intl.string(b.t["/lQiX1"])
+        className: b.message,
+        children: j.intl.string(j.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
-        className: j.actions,
+        className: b.actions,
         children: [(0, r.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
-          text: b.intl.string(b.t.yBZMsb),
+          text: j.intl.string(j.t.yBZMsb),
           onClick: N,
           disabled: !S || w
         }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
-          text: b.intl.string(b.t.R3BPHx),
+          text: j.intl.string(j.t.R3BPHx),
           onClick: A,
           loading: w,
           disabled: !S || w

@@ -1,62 +1,31 @@
 /** Chunk was on 83243 **/
 /** chunk id: 178821, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  MC: () => g,
+  MC: () => p,
   Y5: () => v,
-  ZF: () => y,
-  ZP: () => C,
+  ZF: () => j,
+  ZP: () => S,
   d6: () => k,
   m8: () => w,
-  nU: () => P,
-  tO: () => h
+  nU: () => O,
+  tO: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk38618 = require("./38618.js"),
   Chunk499504 = require("./499504.js"),
   Chunk451429 = require("./451429.js");
-
-function m(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = n
-    })
-  }
-  return e
-}
-
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
-  }), e
-}
-let h = 1e3 / 60,
-  p = 1e3 / 30,
-  g = 5e3,
-  b = 1e3 / 60 * 3,
-  j = Math.ceil(3e3 / (1e3 / 60));
+let x = 1e3 / 60,
+  h = 1e3 / 30,
+  p = 5e3,
+  g = 1e3 / 60 * 3,
+  b = Math.ceil(3e3 / (1e3 / 60));
 
 function v(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : window,
@@ -82,8 +51,8 @@ function v(e, t) {
   }, [s, o]), s]
 }
 
-function y(e) {
-  let t = a.useRef(Array(j).fill(0)),
+function j(e) {
+  let t = a.useRef(Array(b).fill(0)),
     r = a.useRef(performance.now()),
     n = a.useRef(0),
     c = a.useRef(0),
@@ -97,7 +66,7 @@ function y(e) {
   }), [a.useCallback(function() {
     let e = performance.now(),
       a = e - r.current;
-    r.current = e, s.current || (n.current -= t.current[l.current], t.current[l.current] = a, n.current += a, c.current < j && (c.current += 1), l.current = (l.current + 1) % j)
+    r.current = e, s.current || (n.current -= t.current[l.current], t.current[l.current] = a, n.current += a, c.current < b && (c.current += 1), l.current = (l.current + 1) % b)
   }, []), (e, t) => {
     var r;
     let a = null != (r = c.current) ? r : 1;
@@ -109,7 +78,7 @@ function y(e) {
 
 function k(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    n = a.useRef(Array(j).fill(0)),
+    n = a.useRef(Array(b).fill(0)),
     c = a.useRef(performance.now()),
     l = a.useRef(0),
     u = a.useRef(0),
@@ -124,19 +93,19 @@ function k(e, t) {
       let a = performance.now(),
         f = a - c.current;
       if (c.current = a, t.current && !r) return;
-      if (u.current -= n.current[i.current], n.current[i.current] = f, u.current += f, o.current < j && (o.current += 1), i.current = (i.current + 1) % j, f > b) {
-        let t = 0 === o.current ? h : u.current / o.current,
-          r = Math.min(2 * h, t),
-          n = Math.floor(f / (e ? r : h));
+      if (u.current -= n.current[i.current], n.current[i.current] = f, u.current += f, o.current < b && (o.current += 1), i.current = (i.current + 1) % b, f > g) {
+        let t = 0 === o.current ? x : u.current / o.current,
+          r = Math.min(2 * x, t),
+          n = Math.floor(f / (e ? r : x));
         n > 0 && (d.current = performance.now()), l.current += n
       }
-      let m = 0 === o.current ? h : u.current / o.current;
+      let m = 0 === o.current ? x : u.current / o.current;
       s.current += f / m
     }, [e, t, r]),
-    x = 0 === o.current ? 0 : u.current / o.current;
+    h = 0 === o.current ? 0 : u.current / o.current;
   return {
-    currentFPS: 0 === x ? 0 : h / x * 60,
-    averageFrameTime: x,
+    currentFPS: 0 === h ? 0 : x / h * 60,
+    averageFrameTime: h,
     timeSinceLastDrop: (performance.now() - d.current) / 1e3,
     droppedFramesRef: l,
     bufferFramecountRef: o,
@@ -156,119 +125,113 @@ function w(e) {
   }), [r, n]
 }
 
-function O(e) {
+function y(e) {
   let {
     socket: t,
     isAverageFrameTime: r
   } = e, [c, l] = w(t), {
     currentFPS: u,
-    averageFrameTime: i,
-    timeSinceLastDrop: f,
-    onResetFrameData: p,
-    droppedFramesRef: b,
-    renderedFrameCount: j,
-    bufferFramecountRef: O,
+    averageFrameTime: d,
+    timeSinceLastDrop: m,
+    onResetFrameData: h,
+    droppedFramesRef: g,
+    renderedFrameCount: b,
+    bufferFramecountRef: y,
     frameCheckerEffect: T
-  } = k(r, c), [R, S, P] = y(t), [C, E] = v(R, T), F = performance.now() - l.current < g, I = S(i, O.current);
-  (0, o.ZP)(() => (C(), () => {
+  } = k(r, c), [R, C, O] = j(t), [S, E] = v(R, T), F = performance.now() - l.current < p, P = C(d, y.current);
+  (0, i.ZP)(() => (S(), () => {
     E()
   }));
-  let D = a.useCallback(() => {
-    p(), P(), C()
-  }, [p, P, C]);
+  let I = a.useCallback(() => {
+    h(), O(), S()
+  }, [h, O, S]);
   return (0, n.jsxs)("div", {
-    className: d.panelGroup,
-    children: [(0, n.jsxs)(s.Text, {
+    className: f.panelGroup,
+    children: [(0, n.jsxs)(o.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: ["FPS (~3sec):", " ", (0, n.jsx)(s.Text, {
+      children: ["FPS (~3sec):", " ", (0, n.jsx)(o.Text, {
         tag: "span",
         variant: "text-md/bold",
         color: u < 30 ? "text-danger" : u < 45 ? "text-feedback-warning" : "text-primary",
         children: u.toFixed(2)
       })]
-    }), (0, n.jsxs)(s.Text, {
+    }), (0, n.jsxs)(o.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: ["Dropped Frames:", " ", (0, n.jsx)(s.Text, {
+      children: ["Dropped Frames:", " ", (0, n.jsx)(o.Text, {
         tag: "span",
         variant: "text-md/bold",
-        color: f < 2 ? "text-danger" : f < 5 ? "text-feedback-warning" : "text-primary",
-        children: b.current
-      }), (0, n.jsxs)(s.Text, {
+        color: m < 2 ? "text-danger" : m < 5 ? "text-feedback-warning" : "text-primary",
+        children: g.current
+      }), (0, n.jsxs)(o.Text, {
         tag: "span",
         variant: "text-sm/normal",
         color: "text-muted",
-        className: d.secondaryInfoText,
-        children: ["(Dropped: ", (b.current / j.current * 100).toFixed(4), "%)"]
-      }), F && (0, n.jsx)(s.ua7, {
-        "data-migration-pending": true,
+        className: f.secondaryInfoText,
+        children: ["(Dropped: ", (g.current / b.current * 100).toFixed(4), "%)"]
+      }), F && (0, n.jsx)(s.u, {
         position: "left",
         text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-        children: e => (0, n.jsx)("span", x(m({}, e), {
-          children: (0, n.jsx)(s.Text, {
-            tag: "span",
-            variant: "text-xs/bold",
-            color: "text-danger",
-            className: d.secondaryInfoText,
-            children: "(Backgrounded)"
-          })
-        }))
+        asContainer: true,
+        children: (0, n.jsx)(o.Text, {
+          tag: "span",
+          variant: "text-xs/bold",
+          color: "text-danger",
+          className: f.secondaryInfoText,
+          children: "(Backgrounded)"
+        })
       })]
-    }), (0, n.jsxs)(s.Text, {
+    }), (0, n.jsxs)(o.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: ["Rendered Frames:", " ", (0, n.jsx)(s.Text, {
+      children: ["Rendered Frames:", " ", (0, n.jsx)(o.Text, {
         tag: "span",
         variant: "text-md/semibold",
         color: "text-secondary",
-        children: j.current.toFixed(0)
+        children: b.current.toFixed(0)
       })]
-    }), (0, n.jsxs)(s.Text, {
+    }), (0, n.jsxs)(o.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: ["Frame Times (~3sec):", " ", (0, n.jsxs)(s.Text, {
+      children: ["Frame Times (~3sec):", " ", (0, n.jsxs)(o.Text, {
         tag: "span",
         variant: "text-md/semibold",
-        color: i > 1.1 * h ? "text-feedback-warning" : "text-secondary",
-        children: [i.toFixed(2), "ms"]
+        color: d > 1.1 * x ? "text-feedback-warning" : "text-secondary",
+        children: [d.toFixed(2), "ms"]
       })]
-    }), (0, n.jsx)(s.ua7, {
-      "data-migration-pending": true,
+    }), (0, n.jsx)(s.u, {
       position: "left",
       text: "The average amount of 'lag' between us rendering a frame and being able to process background tasks. Values constantly above 1-2ms means our main thread is being burried by work and is taking all of its time in animation frames, most likely producing user interaciton blocking jank. (This doesn't work when the app is backgrounded though)",
-      children: e => (0, n.jsx)("div", x(m({}, e), {
-        children: (0, n.jsxs)(s.Text, {
-          variant: "text-md/normal",
-          color: "text-muted",
-          children: ["Idle Frame Delta (~3sec):", " ", (0, n.jsxs)(s.Text, {
+      asContainer: true,
+      children: (0, n.jsxs)(o.Text, {
+        variant: "text-md/normal",
+        color: "text-muted",
+        children: ["Idle Frame Delta (~3sec):", " ", (0, n.jsxs)(o.Text, {
+          tag: "span",
+          variant: "text-md/semibold",
+          color: P > 1 ? "text-danger" : "text-secondary",
+          children: [P.toFixed(2), "ms"]
+        }), F && (0, n.jsx)(s.u, {
+          position: "left",
+          text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
+          asContainer: true,
+          children: (0, n.jsx)(o.Text, {
             tag: "span",
-            variant: "text-md/semibold",
-            color: I > 1 ? "text-danger" : "text-secondary",
-            children: [I.toFixed(2), "ms"]
-          }), F && (0, n.jsx)(s.ua7, {
-            "data-migration-pending": true,
-            position: "left",
-            text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-            children: e => (0, n.jsx)("span", x(m({}, e), {
-              children: (0, n.jsx)(s.Text, {
-                tag: "span",
-                variant: "text-xs/bold",
-                color: "text-danger",
-                className: d.secondaryInfoText,
-                children: "(Backgrounded)"
-              })
-            }))
-          })]
-        })
-      }))
+            variant: "text-xs/bold",
+            color: "text-danger",
+            className: f.secondaryInfoText,
+            children: "(Backgrounded)"
+          })
+        })]
+      })
     }), (0, n.jsx)("div", {
-      className: d.bottomPanelButton,
-      children: (0, n.jsx)(s.Button, {
+      className: f.bottomPanelButton,
+      children: (0, n.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         text: "Reset Frame Data",
-        onClick: D
+        onClick: I
       })
     })]
   })
@@ -279,25 +242,23 @@ function T(e) {
     socket: t,
     isAverageFrameTime: r,
     onToggleAverageFrameTime: c
-  } = e, [l, u] = a.useState(t.dispatcher.getIsRequestIdleCallbackEnabled()), o = a.useRef(null);
-  return a.useEffect(() => (o.current = setInterval(() => {
+  } = e, [l, u] = a.useState(t.dispatcher.getIsRequestIdleCallbackEnabled()), i = a.useRef(null);
+  return a.useEffect(() => (i.current = setInterval(() => {
     u(t.dispatcher.getIsRequestIdleCallbackEnabled())
-  }, p), () => {
-    null != o.current && clearInterval(o.current)
+  }, h), () => {
+    null != i.current && clearInterval(i.current)
   }), [t.dispatcher]), (0, n.jsxs)("div", {
-    className: d.panelGroup,
-    children: [(0, n.jsx)(s.ua7, {
-      "data-migration-pending": true,
+    className: f.panelGroup,
+    children: [(0, n.jsx)(s.u, {
       position: "left",
       text: "Instead of using 60fps to calculate the number of dropped frames, we use the average framerate to more accurately determine the number of actual dropped frames. Turn this off when benchmarking to get better comparsion between two different runtimes, where higher FPS might result in a higher dropped frame count.",
-      children: e => (0, n.jsx)("div", x(m({}, e), {
-        children: (0, n.jsx)(s.Checkbox, {
-          label: "Use Average Frame Time",
-          checked: r,
-          onChange: () => c(!r)
-        })
-      }))
-    }), (0, n.jsx)(s.Checkbox, {
+      asContainer: true,
+      children: (0, n.jsx)(o.Checkbox, {
+        label: "Use Average Frame Time",
+        checked: r,
+        onChange: () => c(!r)
+      })
+    }), (0, n.jsx)(o.Checkbox, {
       label: "Enable New Dispatch Scheduler (requestIdleCallback)",
       checked: l,
       onChange: () => {
@@ -313,16 +274,16 @@ function R(e) {
     socket: t
   } = e, r = t.dispatcher.getDispatchTimings(), [c, u] = a.useState(false);
   return (0, n.jsxs)("div", {
-    className: d.panelGroup,
+    className: f.panelGroup,
     children: [(0, n.jsx)("div", {
-      className: l()(c && d.topPanelToggle),
-      children: (0, n.jsx)(s.Checkbox, {
+      className: l()(c && f.topPanelToggle),
+      children: (0, n.jsx)(o.Checkbox, {
         label: "Show Dispatch Timings",
         checked: c,
         onChange: () => u(e => !e)
       })
     }), c ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: "Gateway Dispatch Timings:"
@@ -332,20 +293,20 @@ function R(e) {
           let [t, [r, a]] = e;
           return (0, n.jsxs)("tr", {
             children: [(0, n.jsx)("td", {
-              children: (0, n.jsx)(s.Text, {
+              children: (0, n.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
                 children: t
               })
             }), (0, n.jsx)("td", {
-              children: (0, n.jsxs)(s.Text, {
+              children: (0, n.jsxs)(o.Text, {
                 tag: "span",
                 variant: "text-xs/bold",
                 color: "text-default",
                 children: [r.toFixed(2), "ms"]
               })
             }), (0, n.jsx)("td", {
-              children: (0, n.jsxs)(s.Text, {
+              children: (0, n.jsxs)(o.Text, {
                 tag: "span",
                 variant: "text-xs/normal",
                 color: "text-muted",
@@ -359,32 +320,32 @@ function R(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     socket: t
-  } = e, r = t.dispatcher.getSchedulerTelemetry(), [c, u] = a.useState(r.isTelemetryEnabled), [o, i] = a.useState(r.isTelemetryEnabled), f = e => {
+  } = e, r = t.dispatcher.getSchedulerTelemetry(), [c, u] = a.useState(r.isTelemetryEnabled), [s, i] = a.useState(r.isTelemetryEnabled), d = e => {
     i(e), r.toggleTelemetry(e)
   };
   return (0, n.jsxs)("div", {
-    className: d.panelGroup,
-    children: [(0, n.jsx)(s.Checkbox, {
+    className: f.panelGroup,
+    children: [(0, n.jsx)(o.Checkbox, {
       label: "Enable Dispatch Telemetry",
-      checked: o,
-      onChange: () => f(!o)
+      checked: s,
+      onChange: () => d(!s)
     }), (0, n.jsx)("div", {
-      className: l()(c && d.topPanelToggle),
-      children: (0, n.jsx)(s.Checkbox, {
+      className: l()(c && f.topPanelToggle),
+      children: (0, n.jsx)(o.Checkbox, {
         label: "Show Dispatch Scheduler Telemetry",
         checked: c,
         onChange: () => {
           u(e => {
             let t = !e;
-            return t && f(true), t
+            return t && d(true), t
           })
         }
       })
     }), c ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, n.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: "Dispatch Scheduler Telemetry:"
@@ -394,13 +355,13 @@ function S(e) {
           let [t, r] = e;
           return (0, n.jsxs)("tr", {
             children: [(0, n.jsx)("td", {
-              children: (0, n.jsx)(s.Text, {
+              children: (0, n.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
                 children: t
               })
             }), (0, n.jsx)("td", {
-              children: (0, n.jsx)(s.Text, {
+              children: (0, n.jsx)(o.Text, {
                 tag: "span",
                 variant: "text-xs/bold",
                 color: "text-default",
@@ -410,8 +371,8 @@ function S(e) {
           }, t)
         })
       }), (0, n.jsx)("div", {
-        className: d.bottomPanelButton,
-        children: (0, n.jsx)(s.Button, {
+        className: f.bottomPanelButton,
+        children: (0, n.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset Scheduler Telemetry",
@@ -424,26 +385,26 @@ function S(e) {
   })
 }
 
-function P() {
+function O() {
   let [, e] = Chunk647438.useState({});
   Chunk647438.useEffect(() => {
     let t = setInterval(() => {
       module({})
-    }, p);
+    }, h);
     return () => {
       clearInterval(exports)
     }
   }, [])
 }
 
-function C() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
     [t, r] = Chunk647438.useState(false);
-  return P(), (0, Chunk951288.jsx)("div", {
+  return O(), (0, Chunk951288.jsx)("div", {
     className: l()(Chunk451429.panel, Chunk499504.panel),
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
       className: Chunk499504.panel,
-      children: [(0, Chunk951288.jsx)(O, {
+      children: [(0, Chunk951288.jsx)(y, {
         socket: module,
         isAverageFrameTime: exports
       }), (0, Chunk951288.jsx)(T, {
@@ -452,7 +413,7 @@ function C() {
         onToggleAverageFrameTime: require
       }), (0, Chunk951288.jsx)(R, {
         socket: module
-      }), (0, Chunk951288.jsx)(S, {
+      }), (0, Chunk951288.jsx)(C, {
         socket: module
       })]
     })

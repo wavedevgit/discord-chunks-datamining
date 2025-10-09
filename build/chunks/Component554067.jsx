@@ -24,7 +24,7 @@ function C(e) {
   } = e, {
     searchQuery: C,
     onSetSearchQuery: h
-  } = (0, u.S)(), [_, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([a.default], () => a.default.locale);
+  } = (0, u.S)(), [_, m] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([o.default], () => o.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
       h(_)
@@ -36,7 +36,7 @@ function C(e) {
     ignoreKeyPress: true,
     className: p.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -54,7 +54,7 @@ function C(e) {
       query: _,
       onChange: m,
       onClear: () => {
-        m(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        m(""), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,

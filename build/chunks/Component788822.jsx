@@ -32,7 +32,7 @@ let C = e => {
     O = (0, d.YG)(_, m),
     x = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    j = (0, o.sp)();
+    T = (0, a.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: x,
     onChange: S,
@@ -61,14 +61,14 @@ let C = e => {
         backgroundImage: "url(".concat(O, ")")
       }),
       onClick: () => {
-        E("shop marketing tile", v), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == j ? true : j.sessionId,
+        E("shop marketing tile", v), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == T ? true : T.sessionId,
           sku_id: v,
           page_type: "home",
-          page_section: null == j ? true : j.pageSection,
-          page_category: null == j ? true : j.pageCategory,
+          page_section: null == T ? true : T.pageSection,
+          page_category: null == T ? true : T.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == j ? true : j.tilePosition),
+          tile_position: String(null == T ? true : T.tilePosition),
           cta_name: null
         })
       },
@@ -93,14 +93,14 @@ let C = e => {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", v), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == j ? true : j.sessionId,
+            E("shop marketing take me there button", v), e.stopPropagation(), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == T ? true : T.sessionId,
               sku_id: v,
               page_type: "home",
-              page_section: null == j ? true : j.pageSection,
-              page_category: null == j ? true : j.pageCategory,
+              page_section: null == T ? true : T.pageSection,
+              page_category: null == T ? true : T.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == j ? true : j.tilePosition),
+              tile_position: String(null == T ? true : T.tilePosition),
               cta_name: "Take me there button"
             })
           }

@@ -1,5 +1,5 @@
 /** Chunk was on 36529 **/
-/** chunk id: 781040, original params: e,t,r (module,exports,require) **/
+/** chunk id: 781040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
 });
@@ -21,18 +21,18 @@ var Chunk120356 = require("./120356.js"),
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -40,33 +40,33 @@ function O(e) {
 
 function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let j = e => {
     let {
       widgetTitle: t,
-      children: r
+      children: n
     } = e, {
       isDragging: i
     } = (0, o.f)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, n.jsx)(l.ua7, {
+    return (0, r.jsx)(l.ua7, {
       "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
         widgetTitle: t
       }),
-      text: (0, n.jsx)(x, {}),
+      text: (0, r.jsx)(x, {}),
       position: "top",
       shouldShow: true !== i,
-      children: r
+      children: n
     })
   },
   x = () => (0, Chunk951288.jsxs)("div", {
@@ -74,14 +74,14 @@ let j = e => {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["7cdwho"], {
-        emphasizeHook: e => (0, n.jsx)("strong", {
+        emphasizeHook: e => (0, r.jsx)("strong", {
           children: e
         })
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["4e0rMz"], {
-        emphasizeHook: e => (0, n.jsx)("strong", {
+        emphasizeHook: e => (0, r.jsx)("strong", {
           children: e
         })
       })
@@ -105,8 +105,8 @@ let j = e => {
       }(0, l.ZDy)(async () => {
         let {
           default: e
-        } = await r.e("70887").then(r.bind(r, 37668));
-        return t => (0, n.jsx)(e, y(O({}, t), {
+        } = await n.e("70887").then(n.bind(n, 37668));
+        return t => (0, r.jsx)(e, y(O({}, t), {
           userId: u.default.getId(),
           widget: i,
           trackUserProfileEditAction: s
@@ -115,7 +115,7 @@ let j = e => {
         stackingBehavior: "stack"
       })
     };
-    return (0, n.jsx)(l.yRy, {
+    return (0, r.jsx)(l.yRy, {
       targetElementRef: a,
       align: "top",
       position: "right",
@@ -124,15 +124,15 @@ let j = e => {
         let {
           closePopout: t
         } = e;
-        return (0, n.jsx)(l.v2r, {
+        return (0, r.jsx)(l.v2r, {
           navId: "user-profile-widget-context-menu",
           onClose: () => {
             (0, c.Zy)(), t()
           },
           onSelect: () => {},
           "aria-label": b.intl.string(b.t.xpSHSk),
-          children: (0, n.jsxs)(l.kSQ, {
-            children: [o, (0, n.jsx)(l.sNh, {
+          children: (0, r.jsxs)(l.kSQ, {
+            children: [o, (0, r.jsx)(l.sNh, {
               id: "remove-widget",
               label: b.intl.string(b.t.Mm07YW),
               action: m,
@@ -148,28 +148,28 @@ let j = e => {
   h = e => {
     let {
       widget: t,
-      className: r,
+      className: n,
       buttonRef: i,
       additionalMenuItems: o
     } = e, c = (0, f.mR)(t), u = (0, s.Dt)();
-    return (0, n.jsx)(j, {
+    return (0, r.jsx)(j, {
       widgetTitle: c,
-      children: e => (0, n.jsx)(v, {
+      children: e => (0, r.jsx)(v, {
         targetRef: i,
         widget: t,
         additionalMenuItems: o,
-        children: t => (0, n.jsxs)(l.P3F, y(O({
+        children: t => (0, r.jsxs)(l.P3F, y(O({
           innerRef: i,
-          className: a()(m.dragHandleButton, r),
+          className: a()(m.dragHandleButton, n),
           "data-dnd-name": c,
           "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
             widgetTitle: c
           }),
           "aria-describedby": u
         }, e, t), {
-          children: [(0, n.jsx)(l.Vni, {
+          children: [(0, r.jsx)(l.Vni, {
             size: "sm"
-          }), (0, n.jsx)(l.nn4, {
+          }), (0, r.jsx)(l.nn4, {
             id: u,
             children: b.intl.string(b.t.bsuqFh)
           })]

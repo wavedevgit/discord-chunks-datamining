@@ -16,7 +16,7 @@ let u = e => {
   let {
     skuId: t,
     className: n
-  } = e, l = (0, a.LJ)(t), u = (0, o.To)(l);
+  } = e, l = (0, o.LJ)(t), u = (0, a.To)(l);
   return (0, r.jsx)(s.Text, {
     variant: "text-lg/bold",
     className: i()(n, c.productName),

@@ -1,11 +1,12 @@
 /** Chunk was on 56848 **/
 /** chunk id: 28671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk296009 = require("./296009.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk931847 = require("./931847.js"),
@@ -16,89 +17,57 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function v(e) {
+function h(e) {
   let {
     user: t,
     application: n,
-    onDismiss: v
+    onDismiss: h
   } = e, {
-    trackUserProfileEditAction: y
-  } = (0, s.KZ)(), b = i.useMemo(() => new o.q({
+    trackUserProfileEditAction: v
+  } = (0, o.KZ)(), y = i.useMemo(() => new c.q({
     type: l.l.APPLICATION,
     applicationId: n.id
   }), [n.id]), j = i.useCallback(() => {
-    null != b && ((0, c.qH)(b.type, b, true), y({
+    null != y && ((0, u.qH)(y.type, y, true), v({
       action: "WIDGET_ADDED",
-      widgetEdited: b.type
-    }), (0, u.L$)(f.qb.WIDGET_ADDED))
-  }, [b, y]);
-  return (0, r.jsx)(d.Z, {
+      widgetEdited: y.type
+    }), (0, d.L$)(g.qb.WIDGET_ADDED))
+  }, [y, v]);
+  return (0, r.jsx)(f.Z, {
     user: t,
-    widget: b,
-    cta: (0, r.jsx)(d.Z.Cta, {
-      heading: p.intl.format(p.t.OIzLCw, {
+    widget: y,
+    cta: (0, r.jsx)(f.Z.Cta, {
+      heading: m.intl.format(m.t.OIzLCw, {
         applicationName: n.name
       }),
-      content: p.intl.format(p.t.BQySrq, {
+      content: m.intl.format(m.t.BQySrq, {
         applicationName: n.name
       }),
       buttons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.ua7, {
-          text: p.intl.string(p.t.WAI6xs),
-          children: e => (0, r.jsx)(a.Yd2, h(m({}, e), {
+        children: [(0, r.jsx)(a.u, {
+          text: m.intl.string(m.t.WAI6xs),
+          children: (0, r.jsx)(s.Yd2, {
             variant: "secondary",
             size: "sm",
-            icon: a.Dio,
-            "aria-label": p.intl.string(p.t.WAI6xs),
+            icon: s.Dio,
+            "aria-label": m.intl.string(m.t.WAI6xs),
             onClick: () => {
-              v(g.L.USER_DISMISS)
+              h(p.L.USER_DISMISS)
             }
-          }))
-        }), (0, r.jsx)(a.ua7, {
-          text: p.intl.string(p.t.lBG2s7),
-          children: e => (0, r.jsx)(a.Yd2, h(m({}, e), {
+          })
+        }), (0, r.jsx)(a.u, {
+          text: m.intl.string(m.t.lBG2s7),
+          children: (0, r.jsx)(s.Yd2, {
             variant: "primary",
             size: "sm",
-            icon: a.kmB,
-            "aria-label": p.intl.formatToPlainString(p.t.KfGahI, {
+            icon: s.kmB,
+            "aria-label": m.intl.formatToPlainString(m.t.KfGahI, {
               applicationName: n.name
             }),
             onClick: () => {
-              v(g.L.TAKE_ACTION), j()
+              h(p.L.TAKE_ACTION), j()
             }
-          }))
+          })
         })]
       })
     })

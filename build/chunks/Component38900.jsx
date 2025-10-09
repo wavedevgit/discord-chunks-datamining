@@ -41,15 +41,15 @@ let g = () => (0, Chunk951288.jsx)("div", {
       }).map((t, n) => (0, r.jsxs)("div", {
         className: c.cardsContainer,
         children: [e ? (0, r.jsx)("div", {
-          className: i()(o.catalogBanner, u.bannerSkeletonV2)
+          className: i()(a.catalogBanner, u.bannerSkeletonV2)
         }) : (0, r.jsx)("div", {
-          className: i()(u.skeleton, u.bannerSkeleton, o.catalogBanner),
+          className: i()(u.skeleton, u.bannerSkeleton, a.catalogBanner),
           children: (0, r.jsx)("div", {
             className: u.bannerBody
           })
         }), Array.from({
           length: 12
-        }, (t, n) => e ? (0, r.jsx)(a.Z, {}, n) : (0, r.jsx)(g, {}, n))]
+        }, (t, n) => e ? (0, r.jsx)(o.Z, {}, n) : (0, r.jsx)(g, {}, n))]
       }, n))
     })
   }

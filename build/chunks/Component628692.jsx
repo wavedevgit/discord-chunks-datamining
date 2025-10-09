@@ -130,6 +130,7 @@ let A = function(e) {
     soundmojiVisualEffectRef: C
   }, "".concat(O.soundId)) : (0, r.jsx)(l.u, {
     "aria-label": O.name,
+    "data-pending-richtooltip-migration": true,
     __unsupportedReactNodeAsText: (0, r.jsx)(p.Dp, {
       sound: O
     }),

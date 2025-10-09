@@ -1,5 +1,5 @@
 /** Chunk was on 36529 **/
-/** chunk id: 982072, original params: e,t,r (module,exports,require) **/
+/** chunk id: 982072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 }), require("./388685.js");
@@ -9,12 +9,12 @@ var Chunk647438 = require("./647438.js"),
 function a(e) {
   let {
     widgetType: t,
-    onAction: r
-  } = e, [a, o] = (0, n.useState)(false), l = (0, n.useCallback)(e => {
-    e && (r({
+    onAction: n
+  } = e, [a, o] = (0, r.useState)(false), l = (0, r.useCallback)(e => {
+    e && (n({
       action: "VIEW_WIDGET",
       widgetType: t
     }), o(true))
-  }, [r, t]);
+  }, [n, t]);
   return (0, i.O)(l, true, !a)
 }

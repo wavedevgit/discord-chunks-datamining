@@ -62,6 +62,7 @@ function U(e, t) {
 }
 let M = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)(Chunk28664.u, {
+      "data-pending-richtooltip-migration": true,
       text: Chunk388032.intl.string(Chunk388032.t["vu/MiY"]),
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
@@ -158,9 +159,9 @@ let M = Chunk647438.memo(function() {
     },
     [Chunk327999.gq.MANUAL_MEMBER_VERIFICATION]: {
       type: Chunk327999.gq.MANUAL_MEMBER_VERIFICATION,
-      getJoinTypeLabel: e => null != e ? p.intl.formatToPlainString(p.t["VHLp+v"], {
+      getJoinTypeLabel: e => null != e ? C.intl.formatToPlainString(C.t["VHLp+v"], {
         code: e
-      }) : p.intl.string(p.t.vdu7oa),
+      }) : C.intl.string(C.t.vdu7oa),
       icon: (0, Chunk951288.jsx)(Chunk785195.Z, {
         height: 12,
         width: 12
@@ -195,7 +196,7 @@ function v(e) {
     className: s()(D.inviterTooltipContainer, d),
     children: [(0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
-      children: c !== C.gq.BOT ? p.intl.string(p.t.azhY2t) : p.intl.string(p.t["2ByN2t"])
+      children: c !== p.gq.BOT ? C.intl.string(C.t.azhY2t) : C.intl.string(C.t["2ByN2t"])
     }), (0, r.jsxs)(u.P3F, {
       className: s()(D.inviterUserContainer, null != _ && D.clickable),
       onClick: m,
@@ -223,8 +224,8 @@ function P(e) {
     className: s()(D.inviterUserContainer, n),
     children: (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
-      children: p.intl.format(p.t["2VQq2t"], {
-        channelName: null != l ? l : p.intl.string(p.t.zLZPmp)
+      children: C.intl.format(C.t["2VQq2t"], {
+        channelName: null != l ? l : C.intl.string(C.t.zLZPmp)
       })
     })
   })
@@ -236,35 +237,30 @@ function j(e) {
     hasTooltip: n,
     guildId: i,
     inviterUser: s,
-    joinSourceType: o,
+    joinSourceType: u,
     joinSourceChannelId: c
-  } = e, E = (0, a.e7)([m.Z], () => m.Z.getChannel(c)), d = (0, _.ZP)(E, true), A = !!n && (o === C.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL || null != s), T = l.useMemo(() => o === C.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? (0, r.jsx)(P, {
+  } = e, E = (0, a.e7)([m.Z], () => m.Z.getChannel(c)), d = (0, _.ZP)(E, true), A = !!n && (u === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL || null != s), T = l.useMemo(() => u === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? (0, r.jsx)(P, {
     channel: E
   }) : (0, r.jsx)(v, {
     guildId: i,
     inviterUser: s,
-    joinSourceType: o
-  }), [o, i, s, E]);
-  if (!A) return (0, r.jsx)(r.Fragment, {
-    children: t({})
-  });
-  let I = o === C.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? p.intl.formatToPlainString(p.t["2VQq2t"], {
-    channelName: null != d ? d : p.intl.string(p.t.zLZPmp)
-  }) : o === C.gq.BOT ? p.intl.string(p.t["2ByN2t"]) : p.intl.string(p.t.azhY2t);
-  return (0, r.jsx)(u.ua7, {
+    joinSourceType: u
+  }), [u, i, s, E]);
+  if (!A) return t;
+  let I = u === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? C.intl.formatToPlainString(C.t["2VQq2t"], {
+    channelName: null != d ? d : C.intl.string(C.t.zLZPmp)
+  }) : u === p.gq.BOT ? C.intl.string(C.t["2ByN2t"]) : C.intl.string(C.t.azhY2t);
+  return (0, r.jsx)(o.u, {
     "aria-label": I,
-    allowOverflow: true,
-    text: T,
-    children: e => (0, r.jsx)(r.Fragment, {
-      children: t(e)
-    })
+    __unsupportedReactNodeAsText: T,
+    children: t
   })
 }
 
 function y(e) {
   let {
     type: t
-  } = e, n = (0, C.Ph)(t);
+  } = e, n = (0, p.Ph)(t);
   return null == n ? null : (0, r.jsx)("div", {
     className: D.integrationIcon,
     style: {
@@ -302,7 +298,7 @@ function G(e) {
     return l
   }(e, ["sourceInviteCode", "joinSourceType", "joinSourceApplicationId", "integrationType", "joinSourceChannelId", "showJoinMethodContextAsFooter", "guildId", "inviterUser", "onClickInviter"]);
   let N = null != n ? b[n] : null,
-    h = n === C.gq.INTEGRATION && null != o,
+    h = n === p.gq.INTEGRATION && null != o,
     O = (0, d.q)(i),
     f = (0, a.e7)([m.Z], () => m.Z.getChannel(c)),
     R = l.useCallback(e => {
@@ -310,7 +306,7 @@ function G(e) {
         case null == t && null == n:
         case null == n:
           return;
-        case n === C.gq.INVITE && null != t:
+        case n === p.gq.INVITE && null != t:
           var r;
           (0, S.Dr)(_, {
             selectedSourceInviteCode: null != (r = null == t ? true : t.trim()) ? r : true,
@@ -327,13 +323,13 @@ function G(e) {
   switch (true) {
     case null == N:
     case null == n:
-    case n === C.gq.UNSPECIFIED:
+    case n === p.gq.UNSPECIFIED:
       return (0, r.jsx)(M, L({}, g));
     case null != o && h:
       return (0, r.jsxs)(u.P3F, U(L({
         className: D.inviteContainer
       }, g), {
-        "aria-label": (0, C.MS)(o),
+        "aria-label": (0, p.MS)(o),
         role: "button",
         tabIndex: 0,
         onClick: R,
@@ -341,10 +337,10 @@ function G(e) {
           type: o
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
-          children: (0, C.MS)(o)
+          children: (0, p.MS)(o)
         })]
       }));
-    case n === C.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL && null != O:
+    case n === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL && null != O:
       return (0, r.jsxs)("div", {
         className: s()(E && D.footerAlignment),
         children: [(0, r.jsxs)(u.P3F, U(L({
@@ -413,14 +409,14 @@ let k = Chunk647438.memo(function(e) {
     joinSourceChannelId: g,
     joinSourceApplicationId: O,
     integrationType: f
-  } = E, S = null != m ? b[m] : null, p = null != (n = null == S ? true : S.hasTooltip) && n;
-  return (m === C.gq.INVITE || m === C.gq.VANITY_URL || m === C.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
-    hasTooltip: p && !o,
+  } = E, S = null != m ? b[m] : null, C = null != (n = null == S ? true : S.hasTooltip) && n;
+  return (m === p.gq.INVITE || m === p.gq.VANITY_URL || m === p.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
+    hasTooltip: C && !o,
     inviterUser: null != _ ? _ : null,
     guildId: s,
     joinSourceType: m,
     joinSourceChannelId: g,
-    children: e => (0, r.jsx)(G, L({
+    children: (0, r.jsx)(G, {
       sourceInviteCode: T,
       joinSourceType: m,
       joinSourceApplicationId: O,
@@ -430,6 +426,6 @@ let k = Chunk647438.memo(function(e) {
       inviterUser: null != _ ? _ : null,
       guildId: s,
       onClickInviter: u
-    }, e))
+    })
   })
 })

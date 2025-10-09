@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 153349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk99690 = require("./99690.jsx"),
@@ -31,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk112848 = require("./112848.js");
 
-function P(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +51,7 @@ function P(e) {
   return e
 }
 
-function N(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,79 +63,71 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = Chunk647438.memo(function(e) {
+let w = Chunk647438.memo(function(e) {
     let {
       toggleRequestToSpeakSidebar: t,
       chatOpen: n
-    } = e, i = (0, r.jsx)(g.ZP.Icon, {
-      icon: d.Dio,
-      tooltip: Z.intl.string(Z.t.cpT0Cg),
+    } = e, i = (0, r.jsx)(m.ZP.Icon, {
+      icon: u.Dio,
+      tooltip: T.intl.string(T.t.cpT0Cg),
       onClick: t
     });
-    return (0, r.jsxs)(g.ZP, {
+    return (0, r.jsxs)(m.ZP, {
       toolbar: i,
-      className: a()(T.headerContainer, {
-        [T.chatOpen]: n
+      className: a()(P.headerContainer, {
+        [P.chatOpen]: n
       }),
-      children: [(0, r.jsx)(g.ZP.Icon, {
-        icon: d.V9,
+      children: [(0, r.jsx)(m.ZP.Icon, {
+        icon: u.V9,
         disabled: true,
-        "aria-label": Z.intl.string(Z.t.TYZgzc)
-      }), (0, r.jsx)(g.ZP.Title, {
-        children: Z.intl.string(Z.t.TYZgzc)
+        "aria-label": T.intl.string(T.t.TYZgzc)
+      }), (0, r.jsx)(m.ZP.Title, {
+        children: T.intl.string(T.t.TYZgzc)
       })]
     })
   }),
-  w = Chunk647438.memo(function(e) {
+  A = Chunk647438.memo(function(e) {
     var t;
     let {
       channel: l,
       participant: a,
       tempDisableOnInit: s = false
-    } = e, g = i.useRef(null), [_, x] = i.useState(s);
-    (0, p.ZP)(() => {
-      if (!_) return;
-      let e = setTimeout(() => x(false), 1e3);
+    } = e, m = i.useRef(null), [j, v] = i.useState(s);
+    (0, f.ZP)(() => {
+      if (!j) return;
+      let e = setTimeout(() => v(false), 1e3);
       return () => clearTimeout(e)
     });
-    let I = l.getGuildId();
-    o()(null != I, "Channel cannot be guildless");
+    let S = l.getGuildId();
+    o()(null != S, "Channel cannot be guildless");
     let {
-      isMobile: S,
-      status: E
-    } = (0, c.cj)([j.Z], () => ({
-      isMobile: j.Z.isMobileOnline(a.user.id),
-      status: j.Z.getStatus(a.user.id, I)
-    })), R = (0, c.e7)([y.ZP], () => y.ZP.getMember(I, a.user.id)), w = (0, m.X7)(l.guild_id, null == R ? true : R.userId, null != (t = null == R ? true : R.colorStrings) ? t : null), A = i.useMemo(() => ({
-      [I]: [a.user.id]
-    }), [I, a.user.id]);
-    (0, f.$)(A, "RequestToSpeakSidebar");
-    let D = a.rtsState === C.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-
-    function L() {
-      (0, O.DT)(l, a.user.id, false)
-    }
-
-    function M() {
-      (0, O.DT)(l, a.user.id, true)
-    }
-    let k = e => {
-      (0, u.jW)(e, async () => {
-        let {
-          default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-        return t => (0, r.jsx)(e, N(P({}, t), {
-          user: a.user,
-          guildId: I,
-          channel: l,
-          showMediaItems: true
-        }))
-      })
-    };
+      isMobile: E,
+      status: Z
+    } = (0, c.cj)([O.Z], () => ({
+      isMobile: O.Z.isMobileOnline(a.user.id),
+      status: O.Z.getStatus(a.user.id, S)
+    })), w = (0, c.e7)([_.ZP], () => _.ZP.getMember(S, a.user.id)), A = (0, b.X7)(l.guild_id, null == w ? true : w.userId, null != (t = null == w ? true : w.colorStrings) ? t : null), D = i.useMemo(() => ({
+      [S]: [a.user.id]
+    }), [S, a.user.id]);
+    (0, g.$)(D, "RequestToSpeakSidebar");
+    let L = a.rtsState === I.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
+      M = e => {
+        (0, h.jW)(e, async () => {
+          let {
+            default: e
+          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
+          return t => (0, r.jsx)(e, R(N({}, t), {
+            user: a.user,
+            guildId: S,
+            channel: l,
+            showMediaItems: true
+          }))
+        })
+      };
     return (0, r.jsxs)("div", {
-      className: T.participantRowContainer,
-      children: [(0, r.jsx)(b.Z, {
-        targetElementRef: g,
+      className: P.participantRowContainer,
+      children: [(0, r.jsx)(y.Z, {
+        targetElementRef: m,
         user: a.user,
         guildId: l.guild_id,
         channelId: l.id,
@@ -143,72 +136,72 @@ let R = Chunk647438.memo(function(e) {
         clickTrap: true,
         children: e => {
           var t;
-          return (0, r.jsxs)(d.P3F, N(P({
-            innerRef: g,
-            className: T.participantMemberContainer,
-            onContextMenu: k
+          return (0, r.jsxs)(u.P3F, R(N({
+            innerRef: m,
+            className: P.participantMemberContainer,
+            onContextMenu: M
           }, e), {
-            children: [(0, r.jsx)(h.Z, {
-              size: d.EFr.SIZE_40,
-              className: T.participantAvatar,
+            children: [(0, r.jsx)(p.Z, {
+              size: u.EFr.SIZE_40,
+              className: P.participantAvatar,
               user: a.user,
-              isMobile: S,
-              status: E
+              isMobile: E,
+              status: Z
             }), (0, r.jsxs)("div", {
-              className: T.participantTextContainer,
-              children: [(0, r.jsx)(d.PUh, {
+              className: P.participantTextContainer,
+              children: [(0, r.jsx)(u.PUh, {
                 name: a.userNick,
-                colorString: null != (t = null == R ? true : R.colorString) ? t : null,
-                colorStrings: w,
-                className: T.participantName
-              }), (0, r.jsx)(d.Text, {
+                colorString: null != (t = null == w ? true : w.colorString) ? t : null,
+                colorStrings: A,
+                className: P.participantName
+              }), (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: (0, v.$)(a)
+                children: (0, C.$)(a)
               })]
             })]
           }))
         }
       }), (0, r.jsxs)("div", {
-        className: T.buttonContainer,
-        children: [(0, r.jsx)(d.ua7, {
-          "data-migration-pending": true,
-          text: D ? Z.intl.string(Z.t.h9rsTU) : Z.intl.string(Z.t.f0T7hI),
-          children: e => (0, r.jsx)("div", N(P({}, e), {
-            children: (0, r.jsx)(d.hU, {
-              onClick: L,
-              disabled: D || _,
-              icon: d.Lrb,
-              variant: "secondary",
-              "aria-label": D ? Z.intl.string(Z.t.h9rsTU) : Z.intl.string(Z.t.f0T7hI)
-            })
-          }))
-        }), (0, r.jsx)(d.ua7, {
-          "data-migration-pending": true,
-          text: Z.intl.string(Z.t.moABMz),
-          children: e => (0, r.jsx)("div", N(P({}, e), {
-            children: (0, r.jsx)(d.hU, {
-              "aria-label": Z.intl.string(Z.t.moABMz),
-              onClick: M,
-              icon: d.Dio,
-              variant: "secondary"
-            })
-          }))
+        className: P.buttonContainer,
+        children: [(0, r.jsx)(d.u, {
+          text: L ? T.intl.string(T.t.h9rsTU) : T.intl.string(T.t.f0T7hI),
+          asContainer: true,
+          children: (0, r.jsx)(u.hU, {
+            onClick: function() {
+              (0, x.DT)(l, a.user.id, false)
+            },
+            disabled: L || j,
+            icon: u.Lrb,
+            variant: "secondary",
+            "aria-label": L ? T.intl.string(T.t.h9rsTU) : T.intl.string(T.t.f0T7hI)
+          })
+        }), (0, r.jsx)(d.u, {
+          text: T.intl.string(T.t.moABMz),
+          asContainer: true,
+          children: (0, r.jsx)(u.hU, {
+            "aria-label": T.intl.string(T.t.moABMz),
+            onClick: function() {
+              (0, x.DT)(l, a.user.id, true)
+            },
+            icon: u.Dio,
+            variant: "secondary"
+          })
         })]
       })]
     })
   }),
-  A = Chunk647438.memo(function(e) {
+  D = Chunk647438.memo(function(e) {
     let {
       channel: t
-    } = e, [n, i] = (0, I.h)(t.id);
-    return (0, r.jsx)(d.rsf, {
-      label: Z.intl.string(Z.t.GYCh0d),
+    } = e, [n, i] = (0, S.h)(t.id);
+    return (0, r.jsx)(u.rsf, {
+      label: T.intl.string(T.t.GYCh0d),
       checked: n,
       onChange: i
     })
   }),
-  D = Chunk647438.memo(function() {
+  L = Chunk647438.memo(function() {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk112848.emptyStateContainer,
       children: [(0, Chunk951288.jsx)(Chunk618896.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -225,21 +218,21 @@ let R = Chunk647438.memo(function(e) {
     })
   });
 
-function L(e) {
+function M(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, x.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(E.Pl.MANAGE_CHANNELS, t) || _.Z.can(E.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([j.Z], () => j.Z.can(Z.Pl.MANAGE_CHANNELS, t) || j.Z.can(Z.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: a()(T.container, {
-      [T.chatOpen]: i
+    className: a()(P.container, {
+      [P.chatOpen]: i
     }),
-    children: [(0, r.jsx)(R, {
+    children: [(0, r.jsx)(w, {
       toggleRequestToSpeakSidebar: n,
       chatOpen: i
-    }), (0, r.jsx)(d.aVo, {
-      className: T.contentContainer,
+    }), (0, r.jsx)(u.aVo, {
+      className: P.contentContainer,
       sections: s,
       sectionHeight: function(e) {
         return 40 * (1 === e)
@@ -261,13 +254,13 @@ function L(e) {
         } = e;
         switch (n) {
           case 0:
-            return (0, r.jsx)(A, {
+            return (0, r.jsx)(D, {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === l.length) return (0, r.jsx)(D, {}, "participants-empty");
+            if (0 === l.length) return (0, r.jsx)(L, {}, "participants-empty");
             let e = l[i];
-            return (0, r.jsx)(w, {
+            return (0, r.jsx)(A, {
               channel: t,
               participant: e,
               tempDisableOnInit: true
@@ -280,13 +273,13 @@ function L(e) {
         let {
           section: t
         } = e;
-        return 1 === t ? (0, r.jsx)(d.Text, {
-          className: T.listTitle,
+        return 1 === t ? (0, r.jsx)(u.Text, {
+          className: P.listTitle,
           variant: "text-xs/bold",
           color: "header-secondary",
-          children: l.length > 0 ? Z.intl.formatToPlainString(Z.t["5z7q5e"], {
+          children: l.length > 0 ? T.intl.formatToPlainString(T.t["5z7q5e"], {
             numHands: l.length
-          }) : Z.intl.string(Z.t.TYZgzc)
+          }) : T.intl.string(T.t.TYZgzc)
         }, "participants-section") : null
       }
     })]

@@ -23,8 +23,8 @@ let m = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS
   f = [],
   R = [],
   S = [],
-  C = [],
   p = [],
+  C = [],
   D = true,
   L = false,
   U = false,
@@ -122,10 +122,10 @@ class F extends(r = Chunk442837.ZP.Store) {
     return S
   }
   get threads() {
-    return C
+    return p
   }
   get applicationCommands() {
-    return p
+    return C
   }
   get isInitialLoading() {
     return D
@@ -172,7 +172,7 @@ let w = new F(Chunk570140.Z, {
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, D = false, L = false, M = true, x = false, N = G(e.logs), h = e.integrations, f = e.webhooks, R = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], C = e.threads, p = e.applicationCommands, e.logs.length < I.Rg9 && (M = false)
+    y = 0, D = false, L = false, M = true, x = false, N = G(e.logs), h = e.integrations, f = e.webhooks, R = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], p = e.threads, C = e.applicationCommands, e.logs.length < I.Rg9 && (M = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
     L = false, x = true, N = []
@@ -193,7 +193,7 @@ let w = new F(Chunk570140.Z, {
       threads: s,
       applicationCommands: a
     } = e;
-    if (U = false, h = n, f = r, R = l, S = i, C = s, p = a, (0 === t.length || t.length < I.Rg9) && (M = false), t.length > 0) {
+    if (U = false, h = n, f = r, R = l, S = i, p = s, C = a, (0 === t.length || t.length < I.Rg9) && (M = false), t.length > 0) {
       let e = G(t);
       N = [...N, ...e]
     }
@@ -230,6 +230,6 @@ let w = new F(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    N = [], O = [], v = Chunk981631.rsA.ALL, b = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], C = []
+    N = [], O = [], v = Chunk981631.rsA.ALL, b = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], p = []
   }
 })

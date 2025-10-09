@@ -1,7 +1,7 @@
 /** Chunk was on 59077 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => E
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,29 +58,29 @@ function S(e, t) {
   }), e
 }
 
-function P(e, t) {
+function I(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
-    discriminator: y.fo$
+    discriminator: O.fo$
   })
 }
 
-function w(e) {
+function E(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: h,
-    isExpanded: w,
-    isNew: I,
-    errors: E,
+    isExpanded: E,
+    isNew: P,
+    errors: w,
     onToggleExpand: T
   } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => P(n, n.avatar), [n]),
+  let D = r.useMemo(() => I(n, n.avatar), [n]),
     R = r.useCallback(() => {
-      let e = "".concat((0, o.K0)(false)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      let e = "".concat((0, o.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
     L = r.useCallback(() => {
@@ -130,7 +130,7 @@ function w(e) {
     })
   });
   let B = null;
-  return w && null != l && (B = (0, i.jsxs)("div", {
+  return E && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
@@ -148,13 +148,13 @@ function w(e) {
                 avatar: e
               })
             },
-            makeURL: e => P(n, e),
+            makeURL: e => I(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != E.avatar && "" !== E.avatar ? (0, i.jsx)(c.Text, {
+          }), null != w.avatar && "" !== w.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: E.avatar
+            children: w.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function w(e) {
                 })
               },
               maxLength: 80,
-              error: E.name
+              error: w.name
             })
           }), (0, i.jsx)(m.Z.Child, {
             basis: "50%",
@@ -249,22 +249,22 @@ function w(e) {
   })), (0, i.jsx)(c.Zbd, {
     editable: true,
     id: t,
-    className: a()(C.card, I ? C.pulse : null),
+    className: a()(C.card, P ? C.pulse : null),
     children: (0, i.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": w,
+        "aria-expanded": E,
         onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: [(0, i.jsx)(O.Z, {
+          children: [(0, i.jsx)(y.Z, {
             name: n.name,
             imageSrc: D,
             details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: w,
+            expanded: E,
             "aria-hidden": true
           })]
         })

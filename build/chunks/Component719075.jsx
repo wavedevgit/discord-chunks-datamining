@@ -24,12 +24,12 @@ var Chunk951288 = require("./951288.js"),
 let E = e => {
     let {
       product: t
-    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, i.e7)([a.default], () => a.default.getCurrentUser()), v = o.ZP.canUseCollectibles(E), {
+    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, i.e7)([o.default], () => o.default.getCurrentUser()), v = a.ZP.canUseCollectibles(E), {
       isDisabled: S
     } = (0, d.G)(t.skuId), {
       isPurchased: O,
       isPartiallyOwnedBundle: x
-    } = (0, g.L)(t), y = (0, u.G1)(t), j = (0, u.rN)(t), T = l.useMemo(() => (0, u.BH)(t, v), [t, v]), L = (0, C.Iw)(t), {
+    } = (0, g.L)(t), y = (0, u.G1)(t), T = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, v), [t, v]), L = (0, C.Iw)(t), {
       displayPrices: k,
       hasSufficientOrbs: I
     } = (0, h.Ip)({
@@ -48,7 +48,7 @@ let E = e => {
     }) : O && !B ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t["6cfuDg"])
-    }) : j ? (0, r.jsx)(s.Text, {
+    }) : T ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: m.intl.string(m.t.nBtvYG)
     }) : y ? (0, r.jsx)(s.Text, {
@@ -56,7 +56,7 @@ let E = e => {
       children: m.intl.string(m.t.rt69oq)
     }) : 0 === k.length ? null : (0, r.jsx)(f.F, {
       price: k[0],
-      discount: T,
+      discount: j,
       nitroIconType: v ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: L,

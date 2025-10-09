@@ -97,7 +97,7 @@ function F(e) {
       basis: 0,
       align: S.Z.Align.CENTER,
       className: U.text,
-      children: [null != n && (0, i.jsx)(O.Z, {
+      children: [null != n && (0, i.jsx)(y.Z, {
         user: n,
         size: g.EFr.SIZE_24,
         className: U.avatar
@@ -209,9 +209,9 @@ function q(e) {
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: U.linkedChannelJoinSource,
-      children: [(0, i.jsx)(P.Z, {
+      children: [(0, i.jsx)(I.Z, {
         game: o,
-        size: P.A.XXSMALL
+        size: I.A.XXSMALL
       }), (0, i.jsx)(g.Text, {
         className: U.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
@@ -250,34 +250,34 @@ function V(e) {
     loading: f = false
   } = e;
   s()(null != l, "guild is required");
-  let h = (0, y.ZP)(),
+  let h = (0, O.ZP)(),
     x = (0, R.MQ)(l),
     j = (0, R.O4)(l),
-    O = r.useMemo(() => null == t || f ? [] : d()(t).sortBy(e => {
+    y = r.useMemo(() => null == t || f ? [] : d()(t).sortBy(e => {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? true : t.username) ? n : "").toLowerCase()
     }).value(), [t, f]),
     _ = (0, p.Wu)([Z.Z], () => Z.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
-    C = r.useMemo(() => f ? [] : [...O.map(e => ({
+    C = r.useMemo(() => f ? [] : [...y.map(e => ({
       type: "invite",
       data: e
     })), ..._.map(e => ({
       type: "channel",
       data: e
-    }))], [O, _, f]),
+    }))], [y, _, f]),
     N = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(E.default, K(G({}, e), {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(w.default, K(G({}, e), {
         channel: u,
         guild: l,
         source: M.InstantInviteSources.SETTINGS_INVITE
       })))
     },
-    [P, T] = r.useState(62),
+    [I, T] = r.useState(62),
     k = () => {
       let e = {
-        source: w.Zu.GUILD_SETTINGS
+        source: E.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, K(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, K(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -383,7 +383,7 @@ function V(e) {
         })]
       });
       if (2 === t) return (0, i.jsx)(L.Y, {
-        hasInvites: O.length > 0,
+        hasInvites: y.length > 0,
         setHeight: T,
         onShowDisableInvites: k,
         onShowInviteModal: N,
@@ -418,7 +418,7 @@ function V(e) {
         }
       }
     },
-    rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? P : 3 === e ? 0 === C.length && 0 === t && f ? 62 : 62 * (null != C[t]) : 0,
+    rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? I : 3 === e ? 0 === C.length && 0 === t && f ? 62 : 62 * (null != C[t]) : 0,
     sectionHeight: e => 3 === e ? 0 !== C.length || f ? 28 : 240 : 0
   })
 }
