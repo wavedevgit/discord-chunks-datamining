@@ -96,7 +96,7 @@ function R(e) {
   }, [y, T]), (0, r.jsxs)("div", {
     className: O.votesData,
     children: [a ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(d.u, {
+      children: ["" !== g ? (0, r.jsx)(d.u, {
         __unsupportedReactNodeAsText: (0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
@@ -116,6 +116,15 @@ function R(e) {
           variant: "secondary",
           textVariant: "text-xs/semibold"
         })
+      }) : (0, r.jsx)(f.Avr, {
+        onMouseEnter: S,
+        onMouseLeave: A,
+        onFocus: S,
+        onBlur: A,
+        onClick: C,
+        text: n,
+        variant: "secondary",
+        textVariant: "text-xs/semibold"
       }), I && (0, r.jsx)(s.T, {
         id: l,
         children: g

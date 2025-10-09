@@ -1,92 +1,77 @@
 /** Chunk was on 13859 **/
 /** chunk id: 403239, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  q: () => d
+  q: () => u
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk79116 = require("./79116.js"),
   Chunk100568 = require("./100568.js"),
   Chunk417865 = require("./417865.js"),
   Chunk665379 = require("./665379.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk592183 = require("./592183.js"),
   Chunk517157 = require("./517157.js");
 
-function d(e) {
+function u(e) {
   let {
     dropRef: t,
     dragRef: r,
-    userId: d,
-    widget: f,
-    index: g,
-    disableInteraction: p = false
-  } = e, b = (0, u.Z)(d), m = (0, c.zPA)(), {
-    isDragging: O,
-    currentItem: y
+    userId: u,
+    widget: d,
+    index: f,
+    disableInteraction: g = false
+  } = e, p = (0, s.Z)(u), {
+    isDragging: b,
+    currentItem: m
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     currentItem: e.getItem()
-  })), j = (0, n.useCallback)((e, t) => {
-    let r = b.slice(),
+  })), O = (0, n.useCallback)((e, t) => {
+    let r = p.slice(),
       [n] = r.splice(e, 1);
-    r.splice(t, 0, n), s.Z.setPendingWidgets(r)
-  }, [b]), [, x, h] = (0, o.c)({
+    r.splice(t, 0, n), c.Z.setPendingWidgets(r)
+  }, [p]), [, y, j] = (0, o.c)({
     type: "WIDGET",
     item: {
-      widgetType: f.type,
-      index: g,
-      widget: f,
-      originalIndex: null != g ? g : 0
+      widgetType: d.type,
+      index: f,
+      widget: d,
+      originalIndex: null != f ? f : 0,
+      type: "WIDGET"
     },
-    canDrag: () => !p,
+    canDrag: () => !g,
     collect: e => ({
       handlerId: e.getHandlerId(),
       isDragging: e.isDragging()
     })
   });
   (0, n.useEffect)(() => {
-    h((0, l.r)(), {
+    j((0, l.r)(), {
       captureDraggingState: true
     })
-  }, [h]);
+  }, [j]);
   let [{
-    dragSourcePosition: v
-  }, _] = (0, a.L)({
+    dragSourcePosition: x
+  }, h] = (0, a.L)({
     accept: "WIDGET",
-    canDrop: () => !p,
+    canDrop: () => !g,
     collect: e => {
       let t = null,
         r = e.getItem();
-      return null != r && e.isOver() && e.canDrop() && r.widgetType !== f.type && (t = r.originalIndex), {
+      return null != r && e.isOver() && e.canDrop() && r.widgetType !== d.type && (t = r.originalIndex), {
         handlerId: e.getHandlerId(),
         dragSourcePosition: t
       }
     },
     drop: e => {
-      let t = null != g ? g : 0;
-      j(e.index, t), e.index = t
-    },
-    hover: (e, r) => {
-      var n;
-      if (p || m || null == t.current || !r.isOver({
-          shallow: true
-        })) return;
-      let i = e.index,
-        o = null != g ? g : 0;
-      if (i === o) return;
-      let a = null == (n = t.current) ? true : n.getBoundingClientRect(),
-        l = (a.bottom - a.top) / 2,
-        c = r.getClientOffset();
-      if (null == c) return;
-      let s = c.y - a.top;
-      (!(i < o) || !(s < l)) && (i > o && s > l || (j(i, o), e.index = o))
+      let t = null != f ? f : 0;
+      O(e.index, t), e.index = t
     }
   });
-  return null == g || p ? {
+  return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (x(r), _(t), {
-    isDragging: O && (null == y ? true : y.widgetType) === f.type,
-    dragSourcePosition: v
+  } : (y(r), h(t), {
+    isDragging: b && (null == m ? true : m.widgetType) === d.type,
+    dragSourcePosition: x
   })
 }
