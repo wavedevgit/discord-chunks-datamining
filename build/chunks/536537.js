@@ -12,5 +12,6 @@ module.exports = {
   avatarSpeaking: "avatarSpeaking__44b0c",
   pointerEvents: "pointerEvents__44b0c",
   avatarDecoration: "avatarDecoration__44b0c",
-  cutoutIcon: "cutoutIcon__44b0c"
+  cutoutIcon: "cutoutIcon__44b0c",
+  largeEmoji: "largeEmoji__44b0c"
 }
