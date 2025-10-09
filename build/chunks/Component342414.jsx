@@ -144,7 +144,7 @@ let X = (e, t, i) => {
             containerVisibilityPercentage: J
           }), k && null != y.expires_at && (0, r.jsx)(w.Z, {
             expiresAt: y.expires_at
-          }), (0, r.jsx)(L.Z, {
+          }), (0, r.jsx)(x.Z, {
             children: k ? Z.intl.format(Z.t["3yZP0N"], {
               percent: y.discount.amount
             }) : m
@@ -169,7 +169,7 @@ let X = (e, t, i) => {
             icon: l.SrA,
             size: "md",
             text: Z.intl.string(Z.t.zrCzVF),
-            onClick: () => X(C, D, x.R.CONFIRM_DISCOUNT)
+            onClick: () => X(C, D, L.R.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(R.Z, {
             variant: z || k ? "secondary" : "expressive",
             size: "md",
@@ -233,7 +233,7 @@ let X = (e, t, i) => {
               icon: l.SrA,
               size: "md",
               text: Z.intl.string(Z.t.zrCzVF),
-              onClick: () => X(b, y, x.R.CONFIRM_DISCOUNT),
+              onClick: () => X(b, y, L.R.CONFIRM_DISCOUNT),
               fullWidth: true
             }), (0, r.jsx)(R.Z, {
               variant: "overlay-secondary",

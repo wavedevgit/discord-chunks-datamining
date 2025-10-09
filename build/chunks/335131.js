@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   B1: () => V,
-  DR: () => L,
+  DR: () => x,
   F$: () => U,
   Ov: () => Y,
   R2: () => H,
-  Sm: () => x,
+  Sm: () => L,
   fK: () => F,
   fi: () => W,
   jr: () => B,
@@ -95,15 +95,15 @@ let D = e => {
       let {
         default: e
       } = n(342386);
-      x(i), (0, _.yP)("closeUserSettings") && e(), t ? (0, l.jN)(C.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(r ? C.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r) : C.Z5c.COLLECTIBLES_SHOP)
+      L(i), (0, _.yP)("closeUserSettings") && e(), t ? (0, l.jN)(C.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(r ? C.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r) : C.Z5c.COLLECTIBLES_SHOP)
     }
   },
-  x = e => {
+  L = e => {
     s.Z.dispatch(R({
       type: "COLLECTIBLES_SHOP_OPEN"
     }, e))
   },
-  L = () => {
+  x = () => {
     Chunk570140.Z.dispatch({
       type: "COLLECTIBLES_SHOP_CLOSE"
     }), (0, Chunk37234.xf)()

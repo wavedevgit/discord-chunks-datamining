@@ -37,7 +37,7 @@ let j = (0, Chunk112724.Z)(e => {
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), I = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), S = (0, l.e7)([o.Z], () => null != O ? o.Z.getParticipant(a.id, O) : null), Z = (0, c.w8)(a.id, d.pV.SPEAKER), T = Z.filter(_), P = null != Z.find(e => e.type === d.Ui.STREAM), N = Math.floor((j - 32) / 102), R = j < 424 ? 1 : j < 624 ? 2 : j < 824 || C ? 3 : 4, w = {
+  }), [a.id]), I = (0, c.Io)(a.id), S = (0, c.Rk)(a.id, d.pV.AUDIENCE), E = (0, l.e7)([o.Z], () => null != O ? o.Z.getParticipant(a.id, O) : null), Z = (0, c.w8)(a.id, d.pV.SPEAKER), T = Z.filter(_), P = null != Z.find(e => e.type === d.Ui.STREAM), N = Math.floor((j - 32) / 102), R = j < 424 ? 1 : j < 624 ? 2 : j < 824 || C ? 3 : 4, w = {
     [d.pV.SPEAKER]: R,
     [d.pV.AUDIENCE]: N,
     [d.pV.SELECTED]: 1
@@ -51,8 +51,8 @@ let j = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(j, R), G = v ? j - 32 : Math.min(j - 64, 3 * k + 8), H = e => e === D.length - 1 || 0 === E && 1 === e, [F, B] = i.useState(false), [z, V] = i.useState(false);
-  return (0, r.jsx)(h.Z, {
+  })(j, R), G = v ? j - 32 : Math.min(j - 64, 3 * k + 8), H = e => e === D.length - 1 || 0 === S && 1 === e, [F, B] = i.useState(false), [z, V] = i.useState(false);
+  return (0, r.jsx)(p.Z, {
     sections: M,
     renderSection: e => {
       let {
@@ -67,8 +67,8 @@ let j = (0, Chunk112724.Z)(e => {
         speakers: T,
         channel: a,
         isStreamLive: P
-      }, "speaker-header-".concat(t)) : 2 === t ? 0 === E ? null : (0, r.jsx)(g.Z, {
-        participantCount: E,
+      }, "speaker-header-".concat(t)) : 2 === t ? 0 === S ? null : (0, r.jsx)(g.Z, {
+        participantCount: S,
         label: b.intl.string(b.t["3foUu7"]),
         className: y.header,
         onClick: () => V(!z),
@@ -101,12 +101,12 @@ let j = (0, Chunk112724.Z)(e => {
               tileWidth: k,
               channel: a,
               participants: l,
-              selectedParticipant: S
+              selectedParticipant: E
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
           if (z) return null;
-          return (0, r.jsx)(p.Z, {
+          return (0, r.jsx)(h.Z, {
             channel: a,
             participants: l,
             maxTiles: N

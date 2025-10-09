@@ -344,7 +344,7 @@ let w = async function(e) {
 function D(e) {
   return "rtl" === (0, a.Dx)(e).direction
 }
-let x = {
+let L = {
   convertOffsetParentRelativeRectToViewportRelativeRect: h,
   getDocumentElement: Chunk274676.tF,
   getClippingRect: S,
@@ -357,7 +357,7 @@ let x = {
   isRTL: D
 };
 
-function L(e, t) {
+function x(e, t) {
   return e.x === t.x && e.y === t.y && e.width === t.width && e.height === t.height
 }
 
@@ -396,7 +396,7 @@ function M(e, t) {
           l(false, 1e-7)
         }, 1e3)
       }
-      1 !== r || L(u, e.getBoundingClientRect()) || l(), E = false
+      1 !== r || x(u, e.getBoundingClientRect()) || l(), E = false
     }
     try {
       i = new IntersectionObserver(b, {
@@ -440,7 +440,7 @@ function k(e, t, n, r) {
 
   function b() {
     let t = f(e);
-    E && !L(E, t) && n(), E = t, i = requestAnimationFrame(b)
+    E && !x(E, t) && n(), E = t, i = requestAnimationFrame(b)
   }
   return d && b(), n(), () => {
     var e;
@@ -457,7 +457,7 @@ let j = Chunk393347.cv,
   F = (e, t, n) => {
     let r = new Map,
       a = {
-        platform: x,
+        platform: L,
         ...n
       },
       o = {

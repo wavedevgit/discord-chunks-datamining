@@ -52,7 +52,7 @@ function A(e) {
     isEmpty: P,
     showAllButtons: w,
     children: D
-  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), L = C(N.id, O, P), {
+  } = e, L = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), x = C(N.id, O, P), {
     activeCommand: M,
     activeCommandOption: k
   } = (0, o.cj)([c.Z], () => ({
@@ -80,9 +80,9 @@ function A(e) {
   }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != k && k.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
     disabled: A,
     type: O
-  }, "emoji")), null != D && U.push(D), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || x) && U.push((0, r.jsx)(v.Z, {
+  }, "emoji")), null != D && U.push(D), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {
     onClick: R,
-    disabled: A || L
+    disabled: A || x
   }, "submit")), 0 === U.length) ? null : (0, r.jsx)("div", {
     className: T.buttons,
     children: U

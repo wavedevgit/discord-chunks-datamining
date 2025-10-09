@@ -111,7 +111,7 @@ function S(e, t) {
   }, [t, R, S, A]);
   if (null == e) return null;
   let D = n === g.tI.PRESET_DOCUMENTS ? g.ws.FPS_30 : v,
-    x = g.af.map(e => {
+    L = g.af.map(e => {
       let {
         value: t,
         label: n
@@ -124,7 +124,7 @@ function S(e, t) {
         action: () => w(i, y, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
-    L = g.km.map(e => {
+    x = g.km.map(e => {
       let {
         value: t,
         label: n
@@ -140,10 +140,10 @@ function S(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.SkkeIi),
-      children: x
+      children: L
     }), (0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.rHyPXl),
-      children: L
+      children: x
     })]
   })
 }

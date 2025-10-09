@@ -78,11 +78,11 @@ let C = e => {
     giftRecipientError: R
   } = (0, f.wD)(), P = (0, u.e7)([h.default], () => h.default.getCurrentUser()), w = (0, y.kd)(C), D = i.useRef(null);
   if (null == C) return null;
-  let [x] = C.items;
-  l()(null != x, "Product item should not be empty");
-  let L = () => {
+  let [L] = C.items;
+  l()(null != L, "Product item should not be empty");
+  let x = () => {
       if ((null == C ? true : C.type) === c.Z.BUNDLE) return null;
-      switch (x.type) {
+      switch (L.type) {
         case c.Z.AVATAR_DECORATION:
           return O.intl.string(O.t["7v0T9P"]);
         case c.Z.PROFILE_EFFECT:
@@ -93,7 +93,7 @@ let C = e => {
           return null
       }
     },
-    M = null != N && N.id !== (null == P ? true : P.id) && C.type !== c.Z.BUNDLE && x.type !== c.Z.NAMEPLATE,
+    M = null != N && N.id !== (null == P ? true : P.id) && C.type !== c.Z.BUNDLE && L.type !== c.Z.NAMEPLATE,
     k = () => {
       null != t && null != s && s(t)
     };
@@ -109,8 +109,8 @@ let C = e => {
           renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
             user: N,
             pendingAvatar: N.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
-            pendingAvatarDecoration: (0, g.M)(x) ? x : null,
-            pendingProfileEffect: (0, E.H)(x) ? x : null,
+            pendingAvatarDecoration: (0, g.M)(L) ? L : null,
+            pendingProfileEffect: (0, E.H)(L) ? L : null,
             canUsePremiumCustomization: true,
             disabledInputs: true,
             hideExampleButton: true
@@ -148,7 +148,7 @@ let C = e => {
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: L()
+            children: x()
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",

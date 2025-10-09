@@ -93,7 +93,7 @@ function I(e) {
   let P = E >= v.length - 1,
     w = P ? s.FGA.RED : s.FGA.GREEN,
     D = T ? w : s.FGA.PRIMARY,
-    x = () => {
+    L = () => {
       var e;
       if (!T) return t;
       let n = (0, a.clamp)(E - 1, 0, v.length - 1),
@@ -103,7 +103,7 @@ function I(e) {
         children: i()
       })
     },
-    L = (e, t) => {
+    x = (e, t) => {
       !A && T && t.phase === d.UkZ.LEAVE && S(false)
     },
     M = () => {
@@ -111,12 +111,12 @@ function I(e) {
     };
   return (0, r.jsx)(s.ua7, {
     "data-migration-pending": true,
-    text: x(),
+    text: L(),
     delay: h,
     "aria-label": _,
     color: D,
     forceOpen: A,
-    onAnimationRest: L,
+    onAnimationRest: x,
     children: e => {
       var {
         onClick: t,

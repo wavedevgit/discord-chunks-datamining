@@ -143,11 +143,12 @@ var v = function(e) {
     return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
   }({}),
   I = function(e) {
-    return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e
+    return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e[e.GAME_SERVER_HOSTING = 3] = "GAME_SERVER_HOSTING", e
   }({});
 let T = new Set([Chunk494497.MB, Chunk494497.Vk]),
   S = {
     1: new Set([Chunk494497.A$]),
-    2: T
+    2: T,
+    3: new Set
   },
   A = "powerupId"

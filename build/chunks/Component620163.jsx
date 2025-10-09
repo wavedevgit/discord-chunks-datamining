@@ -172,7 +172,7 @@ let eB = () => {
       searchParams: b,
       numOfPendingFamilyRequests: T,
       isOverlaySupported: S,
-      isClipsBetaTagShowing: L = false,
+      isClipsBetaTagShowing: x = false,
       shouldMergeGameSettings: ek,
       isKeywordFilteringEnabled: eU,
       isStaff: eY,
@@ -570,9 +570,9 @@ let eB = () => {
       },
       [eN.s6.PRIVACY_FAMILY_CENTER]: {
         section: eP.oAB.FAMILY_CENTER,
-        searchableTitles: [eD.intl.string(eL.default.gntCQU)],
-        label: eD.intl.string(eL.default.gntCQU),
-        ariaLabel: eD.intl.string(eL.default.gntCQU),
+        searchableTitles: [eD.intl.string(ex.default.gntCQU)],
+        label: eD.intl.string(ex.default.gntCQU),
+        ariaLabel: eD.intl.string(ex.default.gntCQU),
         element: es.Z,
         badgeCount: T,
         newIndicator: (0, r.jsx)(s.IGR, {
@@ -637,7 +637,7 @@ let eB = () => {
         searchableTitles: [eD.intl.string(eD.t.z2jK6e)],
         label: eD.intl.string(eD.t.z2jK6e),
         ariaLabel: eD.intl.string(eD.t.z2jK6e),
-        icon: L ? (0, r.jsx)(y.Z, {}) : true,
+        icon: x ? (0, r.jsx)(y.Z, {}) : true,
         element: O.Z,
         predicate: () => !ek,
         url: eP.Z5c.SETTINGS("clips")
@@ -792,7 +792,7 @@ let eB = () => {
         section: eP.oAB.APPEARANCE,
         searchableTitles: [eD.intl.string(eD.t.dyamEB), eD.intl.string(eD.t.p8NOws), eD.intl.string(eD.t["+o/sOj"])],
         parent: eN.s6.APPEARANCE,
-        predicate: () => x.Z.getCurrentConfig({
+        predicate: () => L.Z.getCurrentConfig({
           location: "SettingsRendererConfig"
         }, {
           autoTrackExposure: false
@@ -844,7 +844,7 @@ let eB = () => {
       },
       [eN.s6.ACCESSIBILITY_DISPLAY_NAME_STYLES]: {
         section: eP.oAB.ACCESSIBILITY,
-        searchableTitles: [eD.intl.string(ex.default["2gFUEx"])],
+        searchableTitles: [eD.intl.string(eL.default["2gFUEx"])],
         parent: eN.s6.ACCESSIBILITY
       },
       [eN.s6.ACCESSIBILITY_PROFILE_COLORS]: {

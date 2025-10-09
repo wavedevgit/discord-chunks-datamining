@@ -51,7 +51,7 @@ function g(e) {
     highContrastMode: R,
     isPopoutWindow: P,
     children: w
-  } = e, D = window.CSS.supports("selector(::-webkit-scrollbar)"), x = (0, l.e7)([u.Z], () => u.Z.zoom), L = P ? "" : "--custom-zoom: ".concat(x, ";"), M = "font-size: ".concat(E, "%; --saturation-factor: ").concat(v, "; ").concat(L), k = (0, p.Z)("highlight_mana_buttons"), j = (0, p.Z)("highlight_mana_components"), U = (0, p.Z)("highlight_void_toggleables"), G = (0, p.Z)("highlight_void_buttons"), B = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(m), b, {
+  } = e, D = window.CSS.supports("selector(::-webkit-scrollbar)"), L = (0, l.e7)([u.Z], () => u.Z.zoom), x = P ? "" : "--custom-zoom: ".concat(L, ";"), M = "font-size: ".concat(E, "%; --saturation-factor: ").concat(v, "; ").concat(x), k = (0, p.Z)("highlight_mana_buttons"), j = (0, p.Z)("highlight_mana_components"), U = (0, p.Z)("highlight_void_toggleables"), G = (0, p.Z)("highlight_void_buttons"), B = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(m), b, {
     "low-saturation": v <= c.AEw,
     "keyboard-mode": O,
     "decorate-links": C,

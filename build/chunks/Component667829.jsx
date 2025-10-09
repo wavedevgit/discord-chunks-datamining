@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,14 +44,14 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -229,7 +229,7 @@ class G extends Chunk647438.Component {
       id: A,
       required: R,
       maxCharacterCount: w,
-      allowNewLines: x,
+      allowNewLines: L,
       isEditorIdle: M,
       currentAutocompleteType: j,
       "aria-describedby": U,
@@ -260,7 +260,7 @@ class G extends Chunk647438.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: x,
+      allowNewLines: L,
       onChange: Chunk729594,
       onResize: Chunk166459,
       onKeyDown: Chunk430742,
@@ -285,14 +285,14 @@ class G extends Chunk647438.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, k(L({
+    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, k(x({
       ref: this.ref
     }, H), {
       type: Chunk476326,
       value: u && !Z ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk403182
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, k(L({
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, k(x({
       ref: this.ref
     }, H), {
       value: u && !Z ? "" : l
@@ -309,12 +309,12 @@ class G extends Chunk647438.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, x(this, "ref", i.createRef()), x(this, "_focusBlurQueue", Promise.resolve()), x(this, "_unsubscribe", true), x(this, "_initTimeoutId", null), x(this, "_cachedEditorWindow", null), x(this, "handleSelectionChange", () => {
+    super(e), t = this, L(this, "ref", i.createRef()), L(this, "_focusBlurQueue", Promise.resolve()), L(this, "_unsubscribe", true), L(this, "_initTimeoutId", null), L(this, "_cachedEditorWindow", null), L(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? true : e.toString())
       }
-    }), x(this, "focus", () => {
+    }), L(this, "focus", () => {
       var e;
       null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
@@ -324,41 +324,41 @@ class G extends Chunk647438.Component {
           null != e && e.focus()
         })
       })
-    }), x(this, "saveCurrentText", function() {
+    }), L(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), x(this, "handleBeforeUnload", () => this.saveCurrentText()), x(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), x(this, "handleEnter", e => {
+    }), L(this, "handleBeforeUnload", () => this.saveCurrentText()), L(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), L(this, "handleEnter", e => {
       var t, n;
       return null == (t = (n = this.props).onEnter) ? true : t.call(n, e)
-    }), x(this, "handleTab", () => {
+    }), L(this, "handleTab", () => {
       var e, t;
       return null == (e = (t = this.props).onTab) ? true : e.call(t)
-    }), x(this, "handleMoveSelection", e => {
+    }), L(this, "handleMoveSelection", e => {
       var t, n;
       return null == (t = (n = this.props).onMoveSelection) ? true : t.call(n, e)
-    }), x(this, "maybeShowAutocomplete", () => {
+    }), L(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onMaybeShowAutocomplete) ? true : e.call(t)
-    }), x(this, "hideAutocomplete", () => {
+    }), L(this, "hideAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? true : e.call(t)
-    }), x(this, "handleSaveCurrentText", e => {
+    }), L(this, "handleSaveCurrentText", e => {
       _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), x(this, "handleClearText", () => {
+    }), L(this, "handleClearText", () => {
       var e, t;
       null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, T.JM)(""))
-    }), x(this, "handleInsertText", e => {
+    }), L(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = false
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), x(this, "handleFocus", e => {
+    }), L(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -367,7 +367,7 @@ class G extends Chunk647438.Component {
       null == t || t(e), n || this.setState({
         focused: true
       })
-    }), x(this, "handleBlur", e => {
+    }), L(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -376,7 +376,7 @@ class G extends Chunk647438.Component {
       null == t || t(e), n && this.setState({
         focused: false
       })
-    }), x(this, "handlePaste", e => {
+    }), L(this, "handlePaste", e => {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? true : t.defaultView,
         {

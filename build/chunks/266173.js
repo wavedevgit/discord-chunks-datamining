@@ -2,7 +2,7 @@
 /** chunk id: 266173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk579092 = require("./579092.js"),
   Chunk433517 = require("./433517.js"),
@@ -179,7 +179,7 @@ function w() {
   return Object.values(Chunk486016.i)
 }
 let D = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]);
-class x extends Chunk147913.Z {
+class L extends Chunk147913.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, h(this, "_settings", new P), h(this, "_hasInitialized", false), h(this, "_hasInitializedLegacyOverlay", false), h(this, "_isProcessing", false), h(this, "getWidgetExperimentSettings", e => {
@@ -270,4 +270,4 @@ class x extends Chunk147913.Z {
     })
   }
 }
-let L = new x
+let x = new L

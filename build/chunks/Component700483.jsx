@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 700483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ep
+  Z: () => eh
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -120,11 +120,11 @@ function es(e) {
     onSelect: n
   } = e, d = (0, x.bp)(), {
     canManageGuildEvent: u
-  } = (0, O.XJ)(t), p = (0, l.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
+  } = (0, O.XJ)(t), h = (0, l.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id), [t.id]), p = (0, l.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == h ? true : h.guild_scheduled_event_id)), {
     suppress: m
-  } = (0, E.Z)(t), b = D.default.getId(), [_] = (0, $.Z)(t), j = z.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
+  } = (0, S.Z)(t), b = D.default.getId(), [_] = (0, $.Z)(t), j = z.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(p), {
     parentAnalyticsLocation: I
-  } = (0, c.ZP)(), S = i.useRef(null), Z = () => (function(e) {
+  } = (0, c.ZP)(), E = i.useRef(null), Z = () => (function(e) {
     let {
       channel: t,
       appContext: n
@@ -135,8 +135,8 @@ function es(e) {
     channel: t,
     appContext: d
   });
-  return (j || C) && null != p ? (0, r.jsx)(a.yRy, {
-    targetElementRef: S,
+  return (j || C) && null != h ? (0, r.jsx)(a.yRy, {
+    targetElementRef: E,
     renderPopout: e => {
       let {
         closePopout: i
@@ -171,7 +171,7 @@ function es(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(R.Z, {
-        ref: S,
+        ref: E,
         label: en.intl.string(en.t.c6qKws),
         onClick: Z,
         onPopoutClick: n,
@@ -238,7 +238,7 @@ let ed = Chunk647438.memo(function(e) {
     suppress: s,
     selfMute: o,
     mute: f
-  } = (0, E.Z)(t), y = (0, F.B)(t.id), _ = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
+  } = (0, S.Z)(t), y = (0, F.B)(t.id), _ = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: j,
     enabled: x
   } = (0, v.Z)(), O = (0, I.Z)(t), {
@@ -255,7 +255,7 @@ let ed = Chunk647438.memo(function(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(P.Z, {
-        children: (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(h.Z, {
           onClose: t,
           minimal: true,
           onInteraction: (0, g.u)("VideoDeviceMenu", n, {
@@ -280,7 +280,7 @@ let ed = Chunk647438.memo(function(e) {
         hasPermission: O,
         enabled: x,
         cameraUnavailable: j,
-        onChange: S.r,
+        onChange: E.r,
         onCameraUnavailable: T.Z,
         channelLimitReached: R,
         channelLimit: N,
@@ -331,14 +331,14 @@ let ed = Chunk647438.memo(function(e) {
             serverMute: f,
             suppress: s,
             popoutOpen: i,
-            onClick: () => (0, h.Z)(f, s, "Stage Channel Controls"),
+            onClick: () => (0, p.Z)(f, s, "Stage Channel Controls"),
             awaitingRemote: _
           })
         }
       }), z && Q]
     }) : null, (0, r.jsxs)("div", {
       className: er.buttonSection,
-      children: [G && !s && z ? (0, r.jsx)(S.NZ, {
+      children: [G && !s && z ? (0, r.jsx)(E.NZ, {
         channel: t,
         currentUser: D,
         exitFullScreen: () => null,
@@ -378,7 +378,7 @@ function eu(e) {
     })]
   })
 }
-let ep = Chunk647438.memo(function(e) {
+let eh = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n

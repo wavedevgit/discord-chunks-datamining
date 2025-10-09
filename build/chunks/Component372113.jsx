@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -171,7 +171,7 @@ function U(e) {
       return y ? (0, r.jsx)(G, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(u.zxk, L(D({}, e), {
+      }) : (0, r.jsx)(u.zxk, x(D({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -197,7 +197,7 @@ function G(e) {
     className: o()({
       [P.fullWidthShinyCtaButtonWrapper]: d
     }),
-    children: (0, r.jsx)(u.gtL, L(D({}, a), {
+    children: (0, r.jsx)(u.gtL, x(D({}, a), {
       "data-migration-pending": true,
       fullWidth: true,
       wrapperClassName: P.ctaButtonWrapper,
@@ -206,7 +206,7 @@ function G(e) {
       onClick: null != (t = i.onClick) ? t : true,
       children: i.text
     }))
-  }) : (0, r.jsx)(u.zxk, L(D({}, a), {
+  }) : (0, r.jsx)(u.zxk, x(D({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -230,7 +230,7 @@ let B = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), D = N >= g.OH.ACCEPTED, x = N >= g.OH.COMPLETED, L = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), D = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
@@ -247,7 +247,7 @@ let B = e => {
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
-  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !x;
+  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !L;
   return (0, r.jsx)("div", {
     className: P.root,
     children: (0, r.jsxs)("div", {
@@ -329,7 +329,7 @@ let B = e => {
         }), !z && (0, r.jsx)(U, {
           quest: n,
           progressState: N,
-          isCollectibleQuest: L,
+          isCollectibleQuest: x,
           questContent: a,
           sourceQuestContent: A
         })]

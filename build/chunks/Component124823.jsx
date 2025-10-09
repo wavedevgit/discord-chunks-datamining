@@ -87,8 +87,8 @@ function w(e) {
         themeType: Z.l.SIDEBAR,
         themeOverride: L,
         children: [(0, r.jsxs)(l.u2D, {
-          children: [(0, r.jsx)(S.Z, {
-            children: (0, r.jsx)(E.Z, {
+          children: [(0, r.jsx)(E.Z, {
+            children: (0, r.jsx)(S.Z, {
               user: n
             })
           }), (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function w(e) {
             children: [(0, r.jsx)(I.Z, {
               user: n,
               guildId: w.guild_id,
-              nickname: h.ZP.getName(null, w.id, n),
+              nickname: p.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
               onOpenProfile: A ? true : B,
               tags: (0, r.jsx)(_.Z, {
@@ -149,7 +149,7 @@ function w(e) {
             className: P.footerButton,
             children: T.intl.string(T.t["+Xp3ho"])
           })
-        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
+        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(h.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,
           isHovering: F
         })]

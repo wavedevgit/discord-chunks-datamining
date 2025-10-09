@@ -38,22 +38,22 @@ function I(e) {
   })), N = (0, m.M)(), {
     selectedTab: R,
     handleTabChange: P
-  } = (0, h.Z)(), w = f.default.getCurrentUser(), D = null != I, x = A && null != w && !D;
+  } = (0, h.Z)(), w = f.default.getCurrentUser(), D = null != I, L = A && null != w && !D;
   (0, s.ZP)(() => {
     (0, d.e)("family-center"), null != n && n(), S || (0, c.Q3)(o.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: v.L.AUTO,
       forceTrack: true
     })
   });
-  let L = {
+  let x = {
       isConsideredAdult: I,
       numOfAcceptedRequests: T,
       selectedTab: R,
       selectedTeenId: N
     },
-    M = r.useRef(L);
+    M = r.useRef(x);
   return r.useEffect(() => {
-    M.current = L
+    M.current = x
   }), r.useEffect(() => {
     if (A && D) {
       let {
@@ -73,11 +73,11 @@ function I(e) {
       })
     }
   }, [A, D, t]), r.useEffect(() => {
-    x && (0, l.mN)(O.L0.FAMILY_CENTER)
-  }, [x]), {
+    L && (0, l.mN)(O.L0.FAMILY_CENTER)
+  }, [L]), {
     isLoading: C,
     selectedTab: R,
     handleTabChange: P,
-    showAgeGateModal: x
+    showAgeGateModal: L
   }
 }

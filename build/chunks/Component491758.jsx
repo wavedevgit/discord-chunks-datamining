@@ -79,8 +79,8 @@ function D() {
       clipsQuality: P
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
     D = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
-    x = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
-    L = Chunk435064.Z.isDecoupledGameClippingEnabled(),
+    L = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
+    x = Chunk435064.Z.isDecoupledGameClippingEnabled(),
     M = (0, Chunk779618.Z)(Chunk131951.Z),
     {
       showClipsHeaderEntrypoint: k
@@ -89,7 +89,7 @@ function D() {
     }, {
       autoTrackExposure: false
     });
-  o()(null != x, "Save clip keybind unset");
+  o()(null != L, "Save clip keybind unset");
   let j = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     U = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
@@ -148,10 +148,10 @@ function D() {
       })
     }], [j]),
     Z = Chunk647438.useCallback(e => {
-      c.Z.setKeybind(w(R({}, x), {
+      c.Z.setKeybind(w(R({}, L), {
         shortcut: e
       }))
-    }, [x]);
+    }, [L]);
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 24,
     children: [!module && (0, Chunk951288.jsx)(Chunk494620.Z, {
@@ -177,7 +177,7 @@ function D() {
       })
     }), module && (0, Chunk951288.jsx)(Chunk494620.Z, {
       children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
-    }), L && M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), x && M && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.yXvykp),
         description: Chunk388032.intl.string(Chunk388032.t.YP3ujo),
@@ -228,7 +228,7 @@ function D() {
         children: (0, Chunk951288.jsx)("div", {
           className: Chunk556865.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
-            defaultValue: x.shortcut,
+            defaultValue: L.shortcut,
             onChange: Z
           })
         })

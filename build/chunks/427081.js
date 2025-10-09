@@ -2,7 +2,7 @@
 /** chunk id: 427081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk754700 = require("./754700.js"),
   Chunk670081 = require("./670081.js"),
@@ -63,7 +63,7 @@ function w(e, t) {
 function D(e) {
   return null != e && e.config.features.includes(i.S.MANUAL_HEARTBEAT_INITIALIZATION)
 }
-class x extends Chunk147913.Z {
+class L extends Chunk147913.Z {
   syncHeartbeats(e, t, n) {
     for (let r of ("VOICE_STATE_UPDATES" !== t && "PASSIVE_UPDATE_V2" !== t && N.log("~ syncHeartbeats -> syncing heartbeats for taskTypes: ".concat(e.join(", "), " (triggered by: ").concat(t, ")")), e)) {
       let e = this.heartbeats[r],
@@ -249,4 +249,4 @@ class x extends Chunk147913.Z {
     })
   }
 }
-let L = new x
+let x = new L

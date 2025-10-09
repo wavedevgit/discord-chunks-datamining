@@ -108,7 +108,7 @@ function V(e) {
     })) : null,
     selectedParticipant: null != _ ? g.Z.getSelectedParticipant(_.id) : null,
     participantsOpen: null != _ && g.Z.getParticipantsOpen(_.id)
-  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === x.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === L.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function eo() {
     if (null != _) {
@@ -117,7 +117,7 @@ function V(e) {
         applicationId: B.applicationId,
         instanceId: B.compositeInstanceId
       }));
-      let t = null != (e = _.getGuildId()) ? e : L.ME;
+      let t = null != (e = _.getGuildId()) ? e : x.ME;
       d.Z.channelListScrollTo(t, _.id), (0, E.XU)(t, _.id)
     }
     null == q && (0, f.Ou)()
@@ -154,7 +154,7 @@ function V(e) {
       onMouseDown: n,
       onMouseLeave: i,
       onJumpToChannel: () => {
-        eo(), (0, T.tg)(x.Ez.PANEL)
+        eo(), (0, T.tg)(L.Ez.PANEL)
       },
       channel: _,
       applicationId: B.applicationId,

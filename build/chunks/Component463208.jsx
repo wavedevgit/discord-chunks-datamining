@@ -179,8 +179,8 @@ function S(e) {
     leading: P,
     trailing: w,
     validateOn: D = "change",
-    size: x = "md",
-    fullWidth: L = false,
+    size: L = "md",
+    fullWidth: x = false,
     clearable: M = false,
     helperText: k,
     showCharacterCount: j = false,
@@ -219,16 +219,16 @@ function S(e) {
   null == ee && false === a && (ee = true);
   let et = null;
   ("boolean" == typeof M ? M && null != O && "" !== O && !ee : M.show) ? et = (0, r.jsx)(T, {
-    inputSize: x,
+    inputSize: L,
     onClick: J
   }): null != w && (et = (0, r.jsx)(I, {
     accessory: w,
-    inputSize: x
+    inputSize: L
   }));
   let en = null;
   null != P && (en = (0, r.jsx)(I, {
     accessory: P,
-    inputSize: x
+    inputSize: L
   }));
   let er = j ? (0, r.jsx)(d.H, {
     value: O,
@@ -248,9 +248,9 @@ function S(e) {
       ref: $,
       disabled: n,
       validation: Y,
-      fullWidth: L,
+      fullWidth: x,
       readOnly: ee,
-      className: o()(h.container, h[x], {
+      className: o()(h.container, h[L], {
         [h.hasLeading]: null != en,
         [h.hasTrailing]: null != et,
         [h.hasTags]: z

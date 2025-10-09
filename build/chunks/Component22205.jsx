@@ -49,9 +49,9 @@ let D = o().throttle(() => {
   }, 100, {
     trailing: false
   }),
-  x = 10 * Chunk70956.Z.Millis.SECOND;
+  L = 10 * Chunk70956.Z.Millis.SECOND;
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     error: a,
@@ -60,7 +60,7 @@ function L(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(T, x), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
+  (0, h.ZP)(() => (m.current = setTimeout(T, L), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
@@ -77,7 +77,7 @@ function L(e) {
     D = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
-    L = i.useCallback(e => {
+    x = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
@@ -119,7 +119,7 @@ function L(e) {
     }),
     onNotificationClick: D,
     onConfirmClick: w,
-    onCancelClick: null != M ? L : true,
+    onCancelClick: null != M ? x : true,
     onDismissClick: o,
     expand: true,
     locked: true,
@@ -166,7 +166,7 @@ class M extends Chunk647438.PureComponent {
     } = this.state;
     return null != require ? Chunk647438 ? (0, Chunk951288.jsx)(Chunk333031.Z, {
       className: Chunk534887.errorClickNotification,
-      children: (0, Chunk951288.jsx)(L, {
+      children: (0, Chunk951288.jsx)(x, {
         error: require,
         onLock: () => {
           var e;

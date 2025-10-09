@@ -92,7 +92,7 @@ let R = Chunk647438.memo(function(e) {
       participant: a,
       tempDisableOnInit: s = false
     } = e, g = i.useRef(null), [_, O] = i.useState(s);
-    (0, h.ZP)(() => {
+    (0, p.ZP)(() => {
       if (!_) return;
       let e = setTimeout(() => O(false), 1e3);
       return () => clearTimeout(e)
@@ -100,8 +100,8 @@ let R = Chunk647438.memo(function(e) {
     let I = l.getGuildId();
     o()(null != I, "Channel cannot be guildless");
     let {
-      isMobile: E,
-      status: S
+      isMobile: S,
+      status: E
     } = (0, c.cj)([j.Z], () => ({
       isMobile: j.Z.isMobileOnline(a.user.id),
       status: j.Z.getStatus(a.user.id, I)
@@ -148,12 +148,12 @@ let R = Chunk647438.memo(function(e) {
             className: T.participantMemberContainer,
             onContextMenu: k
           }, e), {
-            children: [(0, r.jsx)(p.Z, {
+            children: [(0, r.jsx)(h.Z, {
               size: d.EFr.SIZE_40,
               className: T.participantAvatar,
               user: a.user,
-              isMobile: E,
-              status: S
+              isMobile: S,
+              status: E
             }), (0, r.jsxs)("div", {
               className: T.participantTextContainer,
               children: [(0, r.jsx)(d.PUh, {
@@ -230,7 +230,7 @@ function L(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, O.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(S.Pl.MANAGE_CHANNELS, t) || _.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, O.Fd)(t.id), s = [+!!(0, c.e7)([_.Z], () => _.Z.can(E.Pl.MANAGE_CHANNELS, t) || _.Z.can(E.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: a()(T.container, {
       [T.chatOpen]: i

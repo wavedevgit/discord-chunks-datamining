@@ -54,7 +54,7 @@ let _ = {
     screenSources: [],
     windowSources: [],
     deviceSources: [],
-    hasPermission: false,
+    hasPermission: true,
     muteStreamAudio: false,
     notifyFriends: false,
     hidePreview: false,

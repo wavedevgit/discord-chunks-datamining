@@ -40,7 +40,7 @@ function v(e) {
     pendingErrors: R
   } = (0, h.mD)(t, n), P = [];
   I && P.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(P), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
+  let [w, D] = (0, c.US)(P), L = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, x = (0, i.useCallback)(() => {
     D(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
       analyticsLocations: S,
       guildId: n
@@ -54,7 +54,7 @@ function v(e) {
   let U = true !== N ? N : C;
   return (0, r.jsx)(m.Z, {
     title: b.intl.string(y.default["86GtGB"]),
-    titleIcon: x ? (0, r.jsx)(o.IGR, {
+    titleIcon: L ? (0, r.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: O.newBadge
     }) : true,
@@ -67,7 +67,7 @@ function v(e) {
         variant: "primary",
         size: "sm",
         text: b.intl.string(y.default.vJqrIi),
-        onClick: L
+        onClick: x
       }), null == n && j && (0, r.jsx)(o.zxk, {
         variant: "secondary",
         size: "sm",

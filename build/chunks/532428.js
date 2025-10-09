@@ -81,11 +81,11 @@ function D() {
   return new Set(l().months().map(e => e.toLowerCase()))
 }
 
-function x() {
+function L() {
   return new Set(l().weekdays().map(e => e.toLowerCase()))
 }
 
-function L() {
+function x() {
   let e = new Date().getFullYear();
   return new Set(o().range(2015, module + 1).map(e => e.toString()))
 }
@@ -136,7 +136,7 @@ function K(e) {
 function z(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
     a = U()[i];
-  return null != a ? [n, r] = a() : D().has(i) ? [n, r] = j(i, "MMMM", "month") : x().has(i) ? [n, r] = j(i, "dddd", "day") : L().has(i) ? [n, r] = j(i, "YYYY", "year") : [n, r] = j(i, A.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
+  return null != a ? [n, r] = a() : D().has(i) ? [n, r] = j(i, "MMMM", "month") : L().has(i) ? [n, r] = j(i, "dddd", "day") : x().has(i) ? [n, r] = j(i, "YYYY", "year") : [n, r] = j(i, A.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
 function q(e, t, n) {
@@ -202,7 +202,7 @@ function $(e) {
 }
 
 function ee() {
-  return [...Array.from(D()), ...Array.from(x()), ...Array.from(L()), ...Object.keys(U())]
+  return [...Array.from(D()), ...Array.from(L()), ...Array.from(x()), ...Object.keys(U())]
 }
 
 function et() {

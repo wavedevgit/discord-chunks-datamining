@@ -158,7 +158,7 @@ function D(e) {
   return e.map(e => w(e)).join(", ")
 }
 
-function x(e) {
+function L(e) {
   let {
     options: t,
     placeholder: n = E.intl.string(E.t.XqMe3N),
@@ -176,7 +176,7 @@ function x(e) {
     renderOptionValue: N = D,
     popoutClassName: R,
     popoutPosition: P = "bottom",
-    popoutLayerContext: x,
+    popoutLayerContext: L,
     optionClassName: M,
     closeOnSelect: k,
     select: j,
@@ -240,7 +240,7 @@ function x(e) {
         position: i,
         updatePosition: a
       } = e;
-      return (0, r.jsx)(L, {
+      return (0, r.jsx)(x, {
         className: R,
         closeOnSelect: k,
         maxVisibleItems: l,
@@ -258,7 +258,7 @@ function x(e) {
       })
     },
     position: P,
-    layerContext: x,
+    layerContext: L,
     children: (e, t) => {
       var {
         onClick: i,
@@ -339,7 +339,7 @@ function x(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     onSelect: n,
@@ -377,7 +377,7 @@ function L(e) {
   let D = i.useCallback((e, t) => {
       n(e), c && !t && a()
     }, [a, n, c]),
-    x = i.useMemo(() => f.map((e, t) => {
+    L = i.useMemo(() => f.map((e, t) => {
       var n;
       return (0, r.jsx)(M, {
         isSelected: d(e.value),
@@ -390,7 +390,7 @@ function L(e) {
         serialize: g
       }, null != (n = e.key) ? n : t)
     }), [D, d, E, f, h, g]),
-    L = f.length <= p ? u.xVE : u.h21;
+    x = f.length <= p ? u.xVE : u.h21;
   return (0, r.jsx)(l.bG, {
     navigator: P,
     children: (0, r.jsx)(l.SJ, {
@@ -399,7 +399,7 @@ function L(e) {
           ref: n
         } = e, i = T(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(L, I(O({
+          children: [(0, r.jsx)(x, I(O({
             className: o()(b.popout, t, {
               [b.popoutPositionTop]: "top" === S
             }),
@@ -414,12 +414,12 @@ function L(e) {
             }
           }, i), {
             role: "listbox",
-            children: x
+            children: L
           })), (0, r.jsx)("div", {
             "aria-hidden": true,
             ref: N,
             className: b.measurement,
-            children: x.slice(0, p)
+            children: L.slice(0, p)
           })]
         })
       }
@@ -491,10 +491,10 @@ function k(e) {
       errorMessage: P,
       successMessage: w,
       "aria-label": D,
-      variant: L,
+      variant: x,
       renderOptionLabel: M
     } = o,
-    k = "text-only" === L || null != M;
+    k = "text-only" === x || null != M;
   if (s && !k) {
     let e = null == v && null != D;
     return (0, r.jsx)(_.P, {
@@ -545,7 +545,7 @@ function k(e) {
       children: [null == t ? true : t(e), e.label, null == n ? true : n(e)]
     })
   }
-  return (0, r.jsx)(x, I(O({}, o, l), {
+  return (0, r.jsx)(L, I(O({}, o, l), {
     renderOptionLabel: null != M ? M : j()
   }))
 }
@@ -577,14 +577,14 @@ function j(e) {
       helperText: P,
       errorMessage: w,
       successMessage: D,
-      "aria-label": L,
+      "aria-label": x,
       variant: M,
       isSelected: k,
       renderOptionLabel: j
     } = o,
     U = "text-only" === M || null != j;
   if (s && !U) {
-    let e = null == S && null != L;
+    let e = null == S && null != x;
     return (0, r.jsx)(_.P, {
       id: l,
       selectionMode: "single",
@@ -617,7 +617,7 @@ function j(e) {
       clearable: E,
       closeOnSelect: y,
       maxOptionsVisible: v,
-      label: e ? L : S,
+      label: e ? x : S,
       layout: A,
       hideLabel: true === C || e,
       placeholder: N,
@@ -634,7 +634,7 @@ function j(e) {
       children: [null == i ? true : i(e), e.label, null == a ? true : a(e)]
     })
   }
-  return (0, r.jsx)(x, I(O({}, o), {
+  return (0, r.jsx)(L, I(O({}, o), {
     renderOptionLabel: null != j ? j : G()
   }))
 }

@@ -43,7 +43,7 @@ function _(e) {
     x = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
     O = i.useCallback(() => {
       let e = x ? g.MI.NO_CHAT : g.MI.RESIZABLE;
-      (0, h.gC)(e)
+      (0, p.gC)(e)
     }, [x]),
     {
       unreadCount: v,
@@ -67,15 +67,15 @@ function _(e) {
       var e;
       null == (e = j.current) || e.focus()
     }, []);
-  (0, p.yp)({
+  (0, h.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: I
   });
-  let E = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
-    S = [E];
-  C > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+  let S = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+    E = [S];
+  C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: C
-  })), v > 0 && S.push(b.intl.string(b.t.x5zAGR));
+  })), v > 0 && E.push(b.intl.string(b.t.x5zAGR));
   let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     T = C > 0 ? C : v,
     P = T > 0;
@@ -102,8 +102,8 @@ function _(e) {
       isTrayButton: true,
       buttonRef: j,
       onClick: O,
-      label: E,
-      "aria-label": S.join(", "),
+      label: S,
+      "aria-label": E.join(", "),
       tooltipPosition: "top",
       iconComponent: Z === g.MI.NO_CHAT ? s.sXD : s.hic,
       themeable: true,

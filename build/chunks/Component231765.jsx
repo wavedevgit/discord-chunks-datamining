@@ -90,7 +90,7 @@ let C = {
     title: Chunk388032.intl.string(Chunk388032.t.V66giY),
     description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
   }],
-  x = () => [{
+  L = () => [{
     location: Chunk524484.oZ.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.vUcvPD),
     description: Chunk388032.intl.string(Chunk388032.t.y00OrK)
@@ -104,7 +104,7 @@ let C = {
     description: Chunk388032.intl.string(Chunk388032.t["mqfw/P"])
   }];
 
-function L(e) {
+function x(e) {
   let {
     disabled: t,
     locations: n,
@@ -231,7 +231,7 @@ function j(e) {
         }, 0),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(x, {
       disabled: c,
       locations: D(),
       settingsLocations: o,
@@ -338,9 +338,9 @@ function G(e) {
         }, 1),
         onMarkerRender: e => e === R[R.length - 1] ? O.intl.string(O.t["4rbMWV"]) : "".concat(100 * e, "%")
       })]
-    }), (0, r.jsx)(L, {
+    }), (0, r.jsx)(x, {
       disabled: d,
-      locations: x(),
+      locations: L(),
       settingsLocations: a,
       onChange: e => s({
         screenshakeEnabledLocations: e

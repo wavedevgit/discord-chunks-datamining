@@ -78,12 +78,12 @@ function D(e, t, n, i) {
   }, i)
 }
 
-function x(e, t) {
+function L(e, t) {
   var n, r;
   return e > 0 ? "" : null != (r = null == (n = R[t]) ? true : n.id) ? r : ""
 }
 
-function L(e) {
+function x(e) {
   return e === u.EO.VIDEO
 }
 
@@ -176,7 +176,7 @@ class U extends Chunk647438.PureComponent {
       style: S({
         backgroundColor: Chunk392711 ? true : o
       }, Chunk647438),
-      children: [L(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
+      children: [x(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
     })
   }
   constructor(e) {
@@ -200,7 +200,7 @@ class U extends Chunk647438.PureComponent {
     this.state = {
       color: null == n ? l().sample(A) : n,
       loaded: false
-    }, L(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
+    }, x(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: true
     }), this._image.src = e.src)
   }
@@ -397,7 +397,7 @@ class G extends Chunk647438.PureComponent {
         sections: [R.length],
         columns: e,
         itemGutter: 12,
-        getItemKey: x,
+        getItemKey: L,
         getItemHeight: w,
         renderItem: D,
         chunkSize: 128

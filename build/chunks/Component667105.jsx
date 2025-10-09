@@ -51,7 +51,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,7 +64,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,7 +76,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -196,7 +196,7 @@ function B(e) {
     sourceQuestContent: v
   }), C = (0, E._s)({
     quest: n
-  }), D = (0, E.Rf)(n), L = i.useCallback(() => {
+  }), D = (0, E.Rf)(n), x = i.useCallback(() => {
     (0, u.$)()
   }, []), j = i.useCallback(() => {
     (0, d.Y)({
@@ -353,15 +353,15 @@ function B(e) {
           onClick: I,
           text: (0, m.wj)(n.config) ? w.intl.string(w.t.bAGFz8) : w.intl.string(w.t.vTgCW1)
         };
-        if (a) return M(x({}, i), {
+        if (a) return M(L({}, i), {
           text: w.intl.string(w.t.MAS7uL)
         });
-        if ((0, m.vQ)(n.config)) return M(x({}, i), {
+        if ((0, m.vQ)(n.config)) return M(L({}, i), {
           text: w.intl.string(w.t.vTgCW1)
         });
         if ((0, m.Bg)(n.config)) return {
           tooltipText: null,
-          onClick: L,
+          onClick: x,
           text: w.intl.string(w.t["eQX+go"])
         };
         else if ((0, m.xN)(n.config)) return {
@@ -369,11 +369,11 @@ function B(e) {
           text: w.intl.string(w.t.WYchdX),
           onClick: j
         };
-        return M(x({}, i), {
+        return M(L({}, i), {
           text: w.intl.string(w.t.bAGFz8)
         })
     }
-  }, [r, b, C, _, I, a, n, o, s, f, U, D, L, j, y, B, v, F, Z])
+  }, [r, b, C, _, I, a, n, o, s, f, U, D, x, j, y, B, v, F, Z])
 }
 
 function Z() {

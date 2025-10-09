@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk108626 = require("./108626.js");
-let L = 500;
+let x = 500;
 
 function M(e) {
   var t, n;
@@ -94,12 +94,12 @@ function M(e) {
     } = (0, b.zb)();
   o()(null != eu, "Step should be set");
   let eA = i.useRef(null),
-    [eC, eN] = (0, l.Z)(false, L),
+    [eC, eN] = (0, l.Z)(false, x),
     eR = null != (n = null != k ? k : V) ? n : null,
     eP = null != eR && (!ef || P.nG[eR].skus.includes(ei)) ? eR : null,
     ew = (0, f.N)(V),
     eD = (0, d.Ng)(),
-    ex = {
+    eL = {
       user_trial_offer_id: null == ew ? true : ew.id
     };
   i.useEffect(() => {
@@ -107,7 +107,7 @@ function M(e) {
       behavior: "smooth"
     })
   }, [ee]);
-  let eL = i.useCallback((e, t, n) => {
+  let ex = i.useCallback((e, t, n) => {
       z(e), null != t && eh(t), null != n && em(n), M(E.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
@@ -189,7 +189,7 @@ function M(e) {
       isEligibleForTrial: eB
     }), (0, r.jsxs)(R.C3, {
       children: [ey && eY && (0, r.jsx)("div", {
-        className: x.bodyGradientPadding
+        className: L.bodyGradientPadding
       }), null != eS && eS, (0, r.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
@@ -200,7 +200,7 @@ function M(e) {
         premiumSubscription: null != K ? K : null,
         setPurchaseState: el,
         onBack: eq,
-        onNext: eL,
+        onNext: ex,
         onPurchaseError: e => ec(e),
         legalTermsNodeRef: ej,
         flashLegalTerms: () => eN(true),
@@ -214,7 +214,7 @@ function M(e) {
         purchaseTokenAuthState: en,
         openInvoiceId: B,
         backButtonEligible: eK,
-        metadata: ex,
+        metadata: eL,
         isTrial: eB,
         disablePurchase: eX,
         onPaymentSourceAdd: eQ

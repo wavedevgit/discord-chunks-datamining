@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk706800 = require("./706800.js"),
   Chunk883760 = require("./883760.js");
 
-function S(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,7 +69,7 @@ let T = e => {
     className: I.addEntryCard,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: E
+      src: S
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
@@ -89,16 +89,16 @@ function P(e) {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
     }),
-    children: (0, r.jsxs)(h.ZP, {
+    children: (0, r.jsxs)(p.ZP, {
       children: [u ? (0, r.jsx)(o.u, {
         text: C.intl.string(C.t.XnuOvL),
-        children: (0, r.jsx)(h.zx, {
+        children: (0, r.jsx)(p.zx, {
           onClick: () => {
             (0, c.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("34191").then(n.bind(n, 303647));
-              return n => (0, r.jsx)(e, Z(S({}, n), {
+              return n => (0, r.jsx)(e, Z(E({}, n), {
                 entry: t
               }))
             })
@@ -136,7 +136,7 @@ function P(e) {
           }(e, ["onClick"]);
           return (0, r.jsx)(o.u, {
             text: C.intl.string(C.t.UKOtz8),
-            children: (0, r.jsx)(h.zx, Z(S({}, n), {
+            children: (0, r.jsx)(p.zx, Z(E({}, n), {
               onClick: e => {
                 t(e)
               },
@@ -158,10 +158,10 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
+  } = e, [a, o] = i.useState(false), p = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
     o(true);
     try {
-      h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+      p ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
         source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
@@ -171,19 +171,19 @@ let N = e => {
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
-  }), E = null != (t = _.ZP.getGuildIconURL({
+  }), S = null != (t = _.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
   })) ? t : true, T = C.intl.string(C.t.VJlc0d);
-  return h && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+  return p && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
     className: I.card,
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, Z(S({}, t), {
+        return t => (0, r.jsx)(e, Z(E({}, t), {
           entry: l
         }))
       })
@@ -199,15 +199,15 @@ let N = e => {
         })
       }), (0, r.jsx)("div", {
         className: I.guildIcon,
-        children: (0, r.jsx)(p.ZP, {
-          mask: p.ZP.Masks.SQUIRCLE,
+        children: (0, r.jsx)(h.ZP, {
+          mask: h.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
             className: I.iconMask,
             children: (0, r.jsx)(f.Z, {
               className: I.icon,
-              iconSrc: E,
+              iconSrc: S,
               guild: (0, j.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
@@ -262,7 +262,7 @@ let N = e => {
         className: I.joinButton,
         children: (0, r.jsx)(c.zxk, {
           loading: a,
-          variant: h ? "secondary" : "active",
+          variant: p ? "secondary" : "active",
           onClick: x,
           text: T,
           fullWidth: true

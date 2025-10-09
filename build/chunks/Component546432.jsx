@@ -45,7 +45,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -203,8 +203,8 @@ function V(e) {
     renderPlaintextFilePreview: A,
     renderGenericFileComponent: w,
     renderVisualPlaceholderComponent: D,
-    className: x,
-    imgContainerClassName: L,
+    className: L,
+    imgContainerClassName: x,
     imgClassName: M,
     focusable: k,
     hiddenSpoilers: j,
@@ -289,7 +289,7 @@ function V(e) {
       })
     }, [U, l, Q, eo, J, eu, ee, el, n, ec, es, K, ed, H, ei, u]);
   if (z) return (0, r.jsx)(c.Eep, {
-    className: x,
+    className: L,
     readyState: N.zo9.READY,
     src: "",
     width: null != q ? q : 350,
@@ -314,8 +314,8 @@ function V(e) {
           shouldHideMediaOptions: eo,
           renderAccessory: e,
           renderAdjacentContent: e_,
-          containerClassName: x,
-          className: L,
+          containerClassName: L,
+          className: x,
           imageClassName: M,
           shouldLink: k,
           hiddenSpoilers: j,
@@ -341,7 +341,7 @@ function V(e) {
         renderAdjacentContent: e_,
         naturalWidth: q,
         naturalHeight: X,
-        className: o()(x, {
+        className: o()(L, {
           [P.hasFooter]: Z
         }),
         playable: k,
@@ -361,7 +361,7 @@ function V(e) {
       return (0, r.jsx)(D, {
         item: n,
         message: t,
-        className: L,
+        className: x,
         imageClassName: M,
         maxWidth: G,
         maxHeight: B,
@@ -372,7 +372,7 @@ function V(e) {
       return (0, r.jsx)(T, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         playable: k,
         mimeType: el,
         renderAdjacentContent: e_,
@@ -384,7 +384,7 @@ function V(e) {
       return (0, r.jsx)(A, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         onClick: _,
         onContextMenu: h,
         renderAdjacentContent: e_
@@ -393,7 +393,7 @@ function V(e) {
       return (0, r.jsx)(w, {
         item: n,
         message: t,
-        className: x,
+        className: L,
         onClick: _,
         onContextMenu: h,
         renderAdjacentContent: e_
@@ -417,7 +417,7 @@ function H(e, t, n) {
     });
     r = t
   }
-  return M(x({}, n !== C.hV.MOSAIC && {
+  return M(L({}, n !== C.hV.MOSAIC && {
     maxWidth: null != r ? r : "400px"
   }), {
     width: "100%",
@@ -441,13 +441,13 @@ let Y = function(e) {
     width: h,
     height: b,
     type: y
-  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [L, j] = i.useState(false), Z = () => {
+  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [x, j] = i.useState(false), Z = () => {
     j(true)
   }, F = () => {
     j(false)
   }, Y = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (0, r.jsx)(V, M(x({}, _), {
+    return (0, r.jsx)(V, M(L({}, _), {
       item: n,
       message: a,
       getObscureReason: s,
@@ -489,7 +489,7 @@ let Y = function(e) {
       obscured: v,
       containerStyles: H(n, R, c),
       obscurityControlClassName: o()({
-        [P.obscureVideoSpacing]: "VIDEO" === y && u && !v && L
+        [P.obscureVideoSpacing]: "VIDEO" === y && u && !v && x
       }),
       onToggleObscurity: () => I(e => !e),
       children: e => Y(e)

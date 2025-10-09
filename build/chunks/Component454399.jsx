@@ -93,24 +93,24 @@ function O(e) {
   } = e, P = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "positionKey"]);
   let w = (0, _.c)(N),
     D = i.useId(),
-    x = null != h && ("string" != typeof h || "" !== h),
-    L = i.useMemo(() => (0, r.jsxs)("div", {
+    L = null != h && ("string" != typeof h || "" !== h),
+    x = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
       children: [null != y && (0, r.jsx)("div", {
         className: p.assetContainer,
         children: y
       }), (0, r.jsxs)("div", {
         className: p.textContent,
-        children: [x && (0, r.jsx)(o.Text, {
+        children: [L && (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           children: h
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
-          color: x ? "text-secondary" : "text-primary",
+          color: L ? "text-secondary" : "text-primary",
           children: g
         })]
       })]
-    }), [y, h, g, x]),
+    }), [y, h, g, L]),
     {
       isVisible: M,
       triggerProps: k
@@ -159,7 +159,7 @@ function O(e) {
       isRendered: true,
       targetElementRef: w.targetElementRef,
       id: D,
-      content: L,
+      content: x,
       position: I,
       align: T,
       spacing: S,
@@ -171,9 +171,9 @@ function O(e) {
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != L ? (0, r.jsx)(a.n, {
+    children: [t, null != x ? (0, r.jsx)(a.n, {
       id: D,
-      children: L
+      children: x
     }) : null, G]
   })
 }

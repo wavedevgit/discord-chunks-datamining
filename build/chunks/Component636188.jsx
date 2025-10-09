@@ -65,13 +65,13 @@ function D(e, t) {
   return n
 }
 
-function x(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -180,7 +180,7 @@ function Z(e) {
     isAnimatedImage: f,
     isVideo: b,
     hotspotLocation: y
-  } = e, v = L(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
+  } = e, v = x(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
   let I = (0, d.O)(),
     {
       analyticsLocations: S
@@ -205,7 +205,7 @@ function Z(e) {
       location_stack: S
     }))
   }
-  return (0, r.jsxs)(c.P3F, x(w({}, v), {
+  return (0, r.jsxs)(c.P3F, L(w({}, v), {
     className: o()(R.backgroundOption, {
       [R.backgroundOptionSelected]: a
     }),
@@ -214,7 +214,7 @@ function Z(e) {
       let {
         default: e
       } = await n.e("99414").then(n.bind(n, 187658));
-      return n => (0, r.jsx)(e, x(w({}, n), {
+      return n => (0, r.jsx)(e, L(w({}, n), {
         backgroundOption: t,
         optionIsInUse: a
       }))
@@ -401,7 +401,7 @@ function W(e) {
             assetHash: e.asset,
             size: j
           });
-          return null == n ? null : (0, i.createElement)(Z, x(w({}, t), {
+          return null == n ? null : (0, i.createElement)(Z, L(w({}, t), {
             key: e.id,
             option: e,
             source: n,

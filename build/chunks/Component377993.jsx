@@ -58,7 +58,7 @@ function w(e) {
     channel: s,
     status: d,
     activities: u
-  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, h.Z)(t.id), T = i.useRef(null), N = e => {
+  } = e, h = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, p.Z)(t.id), T = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    O.S.dispatch(S.CkL.TEXTAREA_FOCUS, {
+    O.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
       channelId: s.id
-    }), O.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
+    }), O.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(s.id)
@@ -122,14 +122,14 @@ function w(e) {
         }
         return i
       }(e, ["onClick", "onMouseDown"]);
-      return (0, r.jsx)(E.Z, P({
+      return (0, r.jsx)(S.Z, P({
         ref: T,
         user: t,
         currentUser: f,
         isOwner: t.id === s.ownerId,
         ownerTooltipText: Z.intl.string(Z.t["MRXZ+/"]),
         shouldAnimateStatus: R,
-        isTyping: p,
+        isTyping: h,
         status: d,
         activities: u,
         applicationStream: I,
@@ -173,10 +173,10 @@ function D(e) {
     for (let t of e) {
       var r, i, l;
       y.Z.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
-        status: null != (i = b.Z.getStatus(t.id)) ? i : S.Skl.OFFLINE,
+        status: null != (i = b.Z.getStatus(t.id)) ? i : E.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
-        status: S.Skl.OFFLINE,
+        status: E.Skl.OFFLINE,
         activities: N
       }
     }
@@ -194,13 +194,13 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    x.default.track(S.rMx.MEMBER_LIST_VIEWED, {
+    x.default.track(E.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id, t.type]);
-  let h = l && c.every(e => e.user.isStaff());
+  let p = l && c.every(e => e.user.isStaff());
   return (0, r.jsx)(u.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
@@ -212,8 +212,8 @@ function D(e) {
           fade: true,
           children: [(0, r.jsxs)(f.Z, {
             className: T.membersGroup,
-            children: ["".concat(Z.intl.string(Z.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
-              type: p.Z.Types.STAFF_ONLY_DM
+            children: ["".concat(Z.intl.string(Z.t["9Oq93t"]), "—").concat(c.length, " "), p && (0, r.jsx)(h.Z, {
+              type: h.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {
             user: e.user,

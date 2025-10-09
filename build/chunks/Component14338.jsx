@@ -58,11 +58,11 @@ function j(e) {
     className: g
   } = e, j = i.useRef(null), {
     newestAnalyticsLocation: x
-  } = (0, u.ZP)(), O = (0, h.bp)(), {
+  } = (0, u.ZP)(), O = (0, p.bp)(), {
     reducedMotion: v
   } = i.useContext(o.Sfi), C = (0, d.Z)({
     userId: l.id
-  }), I = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
+  }), I = null != l.member ? (0, m.CA)(l.member) : null, S = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -74,7 +74,7 @@ function j(e) {
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", x)
+        onInteraction: (0, h.u)("GuildChannelUserContextMenu", x)
       }))
     }, {
       context: O
@@ -95,7 +95,7 @@ function j(e) {
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
-        onContextMenu: E,
+        onContextMenu: S,
         children: (0, r.jsx)(o.qEK, {
           src: null != I ? I : l.user.getAvatarURL(t.guild_id, 24),
           size: o.EFr.SIZE_24,

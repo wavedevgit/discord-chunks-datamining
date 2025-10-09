@@ -6,7 +6,7 @@ require.d(exports, {
   Sg: () => eO,
   TE: () => eP,
   ZP: () => ej,
-  aT: () => eL,
+  aT: () => ex,
   ae: () => ev,
   bL: () => ey,
   hJ: () => eS,
@@ -138,7 +138,7 @@ function ey(e, t, a, o, s) {
     c(true);
     let y = null != (E = null == (g = M.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = H.Z.getUploads(s, t.drafts.type)) ? b : [],
-      v = (0, L.q5)(s);
+      v = (0, x.q5)(s);
     if (null == d && !_ && !m && (0, R.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
         let {
@@ -374,7 +374,7 @@ function eD(e, t, n) {
   }
 }
 
-function ex(e, t) {
+function eL(e, t) {
   let [n, r] = i.useState(null), a = i.useCallback(() => {
     var e, n;
     let i, a = null == (e = t.current) ? true : e.getSlateEditor();
@@ -384,7 +384,7 @@ function ex(e, t) {
     e.off("selection-changed", a)
   }), [a, e]), n
 }
-let eL = e => {
+let ex = e => {
     let {
       enabled: t,
       onlyExactMatch: n
@@ -422,7 +422,7 @@ function ek(e, t) {
     id: R,
     required: P,
     disabled: w,
-    placeholder: L,
+    placeholder: x,
     accessibilityLabel: M,
     channel: k,
     type: j,
@@ -530,15 +530,15 @@ function ek(e, t) {
     expressionPickerView: tC,
     shouldHideExpressionPicker: tN,
     handleOuterClick: tR
-  } = ew(j, eQ), tP = ex(tc, eQ), tw = eL(f), {
+  } = ew(j, eQ), tP = eL(tc, eQ), tw = ex(f), {
     currentAutocompleteType: tD,
-    handleAutocompleteVisibilityChange: tx
+    handleAutocompleteVisibilityChange: tL
   } = eM();
   (0, X.S)(tc, k.guild_id, k.id);
-  let tL = null != Y,
+  let tx = null != Y,
     tM = e6 && !((e8 || e5) && te) || td && (null == (s = j.submit) ? true : s.useDisabledStylesOnSubmit),
     tk = null;
-  null != e3 ? tk = null == F ? true : F(e3, e4, ed.attachButton) : (!e6 || e9) && (tk = null == Z ? true : Z(tL, ed.attachButton));
+  null != e3 ? tk = null == F ? true : F(e3, e4, ed.attachButton) : (!e6 || e9) && (tk = null == Z ? true : Z(tx, ed.attachButton));
   let tj = tn && null != h && !e6 && j.showCharacterCount && null == e3,
     tU = tn && !__OVERLAY__ && null != h && null == e3 && j.toolbarType !== Q.OW.NONE && !e6,
     tG = (0, et.c)({
@@ -629,7 +629,7 @@ function ek(e, t) {
                 textValue: f,
                 richValue: h,
                 disabled: e6,
-                placeholder: L,
+                placeholder: x,
                 required: P,
                 accessibilityLabel: M,
                 isPreviewing: (e8 || e5) && te,
@@ -655,7 +655,7 @@ function ek(e, t) {
                 promptToUpload: ef,
                 fontSize: ta,
                 spellcheckEnabled: to,
-                canOnlyUseTextCommands: tL,
+                canOnlyUseTextCommands: tx,
                 isEditorIdle: tw,
                 currentAutocompleteType: tD,
                 className: o()({
@@ -671,14 +671,14 @@ function ek(e, t) {
         }), tr ? null : (0, r.jsx)(I.Z, {
           ref: eX,
           channel: k,
-          canOnlyUseTextCommands: tL
+          canOnlyUseTextCommands: tx
         }), (0, r.jsx)(T.Z, {
           ref: tp,
           channel: k,
           canMentionRoles: ep,
           canMentionChannels: eh,
           useNewSlashCommands: tn,
-          canOnlyUseTextCommands: tL,
+          canOnlyUseTextCommands: tx,
           canSendStickers: null == (l = j.stickers) ? true : l.allowSending,
           canSendSoundmoji: null == (u = j.soundmoji) ? true : u.allowSending,
           textValue: f,
@@ -690,13 +690,13 @@ function ek(e, t) {
           editorRef: eQ,
           onSendMessage: tf,
           onSendSticker: tb,
-          onVisibilityChange: tx,
+          onVisibilityChange: tL,
           editorScrollerRef: eJ,
           editorHeight: tv,
           barsHeight: 40 * tG.floating.length,
           setValue: (e, t) => null == tl ? true : tl(null, e, t),
           position: eB
-        }), (0, r.jsx)(x.Z, {
+        }), (0, r.jsx)(L.Z, {
           textValue: f,
           editorHeight: tv,
           channelId: k.id

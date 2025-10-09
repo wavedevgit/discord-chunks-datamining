@@ -72,8 +72,8 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   P = C(5, 3),
   w = "WUMP-?",
   D = [N, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  x = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
-  L = "-";
+  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
+  x = "-";
 var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
 }({});
@@ -277,10 +277,10 @@ function J(e, t, n) {
 }
 
 function $(e) {
-  let t = e.trim().split("/").pop().match(x);
+  let t = e.trim().split("/").pop().match(L);
   if (null == t) return null;
   let [n, r, i] = t;
-  return null == i ? null : i.replace(RegExp(L, "g"), "")
+  return null == i ? null : i.replace(RegExp(x, "g"), "")
 }
 let ee = (e, t) => (0, a.e7)([l.Z], () => {
   if (null == e || !t) return null;

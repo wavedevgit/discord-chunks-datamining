@@ -276,18 +276,18 @@ function $(e) {
     [O] = (0, w.ED)(y);
   O = null != d ? d : O;
   let v = (0, b.Z)(),
-    I = (0, L.$)(),
+    I = (0, x.$)(),
     T = (0, D.lr)(),
     S = R.ZP.isBaseSubscriptionCanceled(t),
     A = (0, M.P)(t, i);
   if (null == E || null == O) return (0, r.jsx)(p.$jN, {});
   let C = A ? (0, D.Yi)(O) : null,
     N = null != C || null != T && (T.discountId === Z.dT || T.discountId === Z.dB),
-    x = A && (S && null != I || !S && N);
+    L = A && (S && null != I || !S && N);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: Y.subscriptionRows,
-      children: [x ? (0, r.jsx)(k.Z, {
+      children: [L ? (0, r.jsx)(k.Z, {
         subscription: t,
         invoicePreview: O,
         paymentSource: i,
@@ -381,7 +381,7 @@ function en(e) {
   null != o && null != o[0] && (a = o[0]);
   let {
     analyticsLocations: E
-  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), b = (0, L.$)(), y = null != o ? o.slice(1) : [], [O, v] = i.useState(0);
+  } = (0, g.ZP)(m.Z.SUBSCRIPTION_DETAILS), b = (0, x.$)(), y = null != o ? o.slice(1) : [], [O, v] = i.useState(0);
   i.useEffect(() => {
     if (!_) return;
     let e = e => {
@@ -408,7 +408,7 @@ function en(e) {
   }), C = null == s ? true : s.invalid, N = (0, f.e7)([A.default], () => {
     var e;
     return null == (e = A.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), R = u()(a.currentPeriodEnd), P = null != a.paymentSourceId, D = null != (t = null == T ? true : T.total) ? t : 0, M = !P && D > 0 && (7 >= R.diff(u()(), "days") || a.status === F.O0b.PAST_DUE) && !N && !a.isPurchasedExternally, k = C && a.status === F.O0b.PAST_DUE && !N && !a.isPurchasedExternally, j = (0, x.U)(), U = !N && j, G = (null == a ? true : a.status) === F.O0b.PAST_DUE, Z = G ? u()().diff(u()(a.currentPeriodStart), "days") : 0, [V] = (0, w.Ox)({
+  }), R = u()(a.currentPeriodEnd), P = null != a.paymentSourceId, D = null != (t = null == T ? true : T.total) ? t : 0, M = !P && D > 0 && (7 >= R.diff(u()(), "days") || a.status === F.O0b.PAST_DUE) && !N && !a.isPurchasedExternally, k = C && a.status === F.O0b.PAST_DUE && !N && !a.isPurchasedExternally, j = (0, L.U)(), U = !N && j, G = (null == a ? true : a.status) === F.O0b.PAST_DUE, Z = G ? u()().diff(u()(a.currentPeriodStart), "days") : 0, [V] = (0, w.Ox)({
     subscriptionId: a.id,
     preventFetch: !(U || G)
   });

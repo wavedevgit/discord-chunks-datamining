@@ -70,7 +70,7 @@ function w(e, t) {
 var D = function(e) {
   return e.PLAY = "play", e.NOW_PLAYING = "now_playing", e.INSTALL = "install", e.UPDATE = "update", e.PAUSED = "paused", e.LOCATE = "locate", e.UNINSTALLING = "uninstalling", e.QUEUED = "queued", e.DOWNLOADING = "downloading", e.UNSUPPORTED_OS = "unsupported_os", e.ADD_TO_LIBRARY = "add_to_library", e.PREORDER_WAIT = "preorder_wait", e
 }(D || {});
-let x = Object.freeze({
+let L = Object.freeze({
     [Chunk981631.apO.PLAY]: "play",
     [Chunk981631.apO.INSTALL]: "install",
     [Chunk981631.apO.UPDATE]: "update",
@@ -78,7 +78,7 @@ let x = Object.freeze({
     [Chunk981631.apO.MOVE_UP]: "queued",
     [Chunk981631.apO.RESUME]: "paused"
   }),
-  L = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
+  x = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
 
 function M(e) {
   let t = v.en(e.sku);
@@ -104,7 +104,7 @@ class k extends(r = Chunk647438.Component) {
       case "locate":
         return A.intl.string(A.t["nIj+a2"]);
       case "uninstalling":
-        let t = L();
+        let t = x();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
         return A.intl.string(A.t.TiJg5u);
@@ -126,7 +126,7 @@ class k extends(r = Chunk647438.Component) {
     } = this.props;
     if (module.isHidden()) return "add_to_library";
     if (module.isPreorder()) return "preorder_wait";
-    let r = null != require ? x[require] : null;
+    let r = null != require ? L[require] : null;
     return null != r ? r : null != exports && exports.type === Chunk981631.vxO.UNINSTALLING ? "uninstalling" : (0, Chunk358085.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {

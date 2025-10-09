@@ -72,10 +72,10 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: a,
       guildOwnerId: s
-    } = e, o = i.useRef(null), d = (0, p.e7)([R.Z], () => R.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([T.Z], () => {
+    } = e, o = i.useRef(null), d = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([T.Z], () => {
       var e;
-      return (null == h ? true : h.colorRoleId) != null ? null == (e = T.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), y = (0, p.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, p.e7)([P.Z, N.Z], () => _ ? N.Z.getStatus() : P.Z.getStatus(a, t.guild_id)), O = (0, p.e7)([P.Z], () => P.Z.isMobileOnline(a)), C = (0, p.e7)([P.Z, N.Z], () => _ ? N.Z.getActivities() : P.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([S.Z], () => S.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+      return (null == p ? true : p.colorRoleId) != null ? null == (e = T.Z.getRole(t.guild_id, p.colorRoleId)) ? true : e.name : true
+    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getStatus() : P.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([P.Z], () => P.Z.isMobileOnline(a)), C = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getActivities() : P.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, h.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -124,8 +124,8 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       location: "ThreadMembers"
     }), [K, Q] = i.useState(false);
     if (null == b) return null;
-    let X = null == h ? true : h.premiumSince;
-    return (0, r.jsx)(E.Z, {
+    let X = null == p ? true : p.premiumSince;
+    return (0, r.jsx)(S.Z, {
       targetElementRef: o,
       user: b,
       guildId: t.guild_id,
@@ -160,11 +160,11 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           shouldAnimateStatus: W,
           user: b,
           currentUser: y,
-          nick: null == h ? true : h.nick,
+          nick: null == p ? true : p.nick,
           status: j,
           activities: C,
-          colorString: null == h ? true : h.colorString,
-          colorStrings: null == h ? true : h.colorStrings,
+          colorString: null == p ? true : p.colorString,
+          colorStrings: null == p ? true : p.colorStrings,
           colorRoleName: m,
           isTyping: d,
           channel: t,
@@ -225,15 +225,15 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     return t.type === H.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: B.divider
-      }), (0, r.jsxs)(h.Text, {
+      }), (0, r.jsxs)(p.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
         className: B.private,
-        children: [(0, r.jsx)(h.mBM, {
+        children: [(0, r.jsx)(p.mBM, {
           size: "xxs",
           color: "currentColor"
         }), "\xa0", F.intl.string(F.t.BTLTAg)]
-      }), (0, r.jsx)(h.Text, {
+      }), (0, r.jsx)(p.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: B.instructions,
@@ -252,7 +252,7 @@ function X(e) {
     navigator: g,
     listRef: _
   } = function(e, t) {
-    let n = (0, p.e7)([m.Z], () => m.Z.keyboardModeEnabled),
+    let n = (0, h.e7)([m.Z], () => m.Z.keyboardModeEnabled),
       r = i.useRef(null),
       l = i.useCallback((e, n) => {
         let i = r.current;
@@ -316,10 +316,10 @@ function X(e) {
     value: s,
     children: (0, r.jsx)(c.bG, {
       navigator: g,
-      children: (0, r.jsx)(h.Wdt, {
+      children: (0, r.jsx)(p.Wdt, {
         children: e => (0, r.jsx)("div", {
           className: a()(z.membersWrap, z.hiddenMembers, B.container),
-          children: (0, r.jsx)(h.aVo, V({
+          children: (0, r.jsx)(p.aVo, V({
             ref: _,
             className: z.members,
             paddingTop: 0,
@@ -372,7 +372,7 @@ function J(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(z.membersWrap, z.hiddenMembers, z.members, B.emptyState),
-    children: [(0, r.jsx)(h.Text, {
+    children: [(0, r.jsx)(p.Text, {
       className: B.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-normal",
@@ -381,17 +381,17 @@ function J(e) {
       className: B.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
         className: B.emptyStateIcon,
-        children: (0, r.jsx)(h.BFJ, {
+        children: (0, r.jsx)(p.BFJ, {
           size: "lg",
           color: "currentColor"
         })
       }), (0, r.jsx)(A.Z, {
         className: B.emptyStateStars
       })]
-    }), (0, r.jsx)(h.X6q, {
+    }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
       children: t.isForumPost() ? F.intl.string(F.t.p0UgNT) : F.intl.string(F.t["9/n5v7"])
-    }), (0, r.jsx)(h.Text, {
+    }), (0, r.jsx)(p.Text, {
       className: B.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "header-secondary",

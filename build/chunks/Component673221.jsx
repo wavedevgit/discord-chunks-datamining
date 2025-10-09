@@ -125,7 +125,7 @@ function w(e) {
     closeOnSelect: C = true,
     shouldFocusWrap: P,
     placeholder: w = y.intl.string(b.default["A+pfVV"]),
-    label: L,
+    label: x,
     name: M,
     form: k,
     autoComplete: j,
@@ -251,7 +251,7 @@ function w(e) {
       handleClear: eu
     }, q()), {
       children: (0, r.jsxs)(f.kL8, {
-        "aria-label": L,
+        "aria-label": x,
         buttonRef: et,
         buttonProps: S(I({}, null != n ? {
           id: n
@@ -276,8 +276,8 @@ function w(e) {
         "aria-errormessage": null == ee ? true : ee.errorMessageId,
         "aria-invalid": (null == ee ? true : ee.errorMessageId) != null,
         children: [(0, r.jsxs)(u.n, {
-          children: [L, ", "]
-        }), (0, r.jsx)(x, {
+          children: [x, ", "]
+        }), (0, r.jsx)(L, {
           tagGroupRef: H,
           placeholder: w,
           selectionMode: t,
@@ -347,7 +347,7 @@ function D(e, t) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     placeholder: t,
     selectionMode: n,

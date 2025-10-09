@@ -9,7 +9,7 @@ require.d(exports, {
   JM: () => w,
   NZ: () => M,
   ZP: () => et,
-  aN: () => L,
+  aN: () => x,
   ay: () => Q,
   ff: () => E,
   gT: () => C,
@@ -186,13 +186,13 @@ function D(e) {
   })
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = D(e, n);
   return null != r ? ee(r) : t.getAvatarSource(e.guildId, n)
 }
 
-function L(e) {
+function x(e) {
   let t, {
     id: n,
     banner: r,
@@ -475,9 +475,9 @@ let et = {
   getDefaultAvatarURL: N,
   getGuildMemberAvatarURL: D,
   getGuildMemberAvatarURLSimple: w,
-  getGuildMemberAvatarSource: x,
+  getGuildMemberAvatarSource: L,
   getGuildMemberBannerURL: k,
-  getUserBannerURL: L,
+  getUserBannerURL: x,
   getAvatarDecorationURL: M,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? true : e.icon)

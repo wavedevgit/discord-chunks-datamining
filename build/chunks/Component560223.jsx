@@ -106,10 +106,10 @@ let v = e => {
       D = (0, u.bg)({
         location: "PremiumPerks"
       }),
-      x = c.wL.useConfig({
+      L = c.wL.useConfig({
         location: "PremiumPerks"
       }).enabled,
-      L = (0, h.ZM)({
+      x = (0, h.ZM)({
         perksCards: N,
         variant: n,
         hideCardsOnNarrowScreen: false,
@@ -117,9 +117,9 @@ let v = e => {
         fractionalState: P,
         isInReverseTrial: w,
         showProfileWidgets: D,
-        showDisplayNameStyles: x
+        showDisplayNameStyles: L
       }),
-      M = L.some(e => null != e.pillText);
+      M = x.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: T,
       className: o()(g.section, {
@@ -148,7 +148,7 @@ let v = e => {
         children: y
       }), (0, r.jsx)("div", {
         className: g.cardContainer,
-        children: L.map((e, t) => (0, r.jsx)(m.Z, O(b({}, e), {
+        children: x.map((e, t) => (0, r.jsx)(m.Z, O(b({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

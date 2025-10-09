@@ -105,11 +105,11 @@ let P = function(e) {
     "aria-controls": T,
     focusProps: S,
     ref: P
-  } = e, [w, D] = i.useState(false), [x, L] = i.useState(50), M = w || y, k = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), j = R(x), U = i.useCallback(() => {
+  } = e, [w, D] = i.useState(false), [L, x] = i.useState(50), M = w || y, k = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), j = R(L), U = i.useCallback(() => {
     if (M) return;
     let e = Math.floor(Math.random() * A);
-    D(true), L(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
-  }, [M, D, L]), G = i.useCallback(() => {
+    D(true), x(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
+  }, [M, D, x]), G = i.useCallback(() => {
     D(false)
   }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
   return (0, r.jsx)(u.ua7, {

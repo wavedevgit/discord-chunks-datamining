@@ -36,18 +36,18 @@ let v = e => {
     [A, C] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
     [N, R] = i.useState(S[0]),
     [P, w] = i.useState(false),
-    [D, x] = i.useState(n),
-    [L, M] = i.useState(null != t ? t : T.slice(0, 1)),
-    k = i.useMemo(() => null == L ? [] : L.map(e => {
+    [D, L] = i.useState(n),
+    [x, M] = i.useState(null != t ? t : T.slice(0, 1)),
+    k = i.useMemo(() => null == x ? [] : x.map(e => {
       let {
         premiumGuildSubscription: t
       } = e;
       return f.Z.getGuild(null == t ? true : t.guildId)
-    }).filter(e => null != e), [L]),
+    }).filter(e => null != e), [x]),
     j = i.useMemo(() => {
       var e;
-      return (null == L || null == (e = L[0]) ? true : e.premiumGuildSubscription) != null
-    }, [L]),
+      return (null == x || null == (e = x[0]) ? true : e.premiumGuildSubscription) != null
+    }, [x]),
     U = () => (I("SUCCESS" === N), p.default.track(b.rMx.MODAL_DISMISSED, {
       type: b.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
@@ -76,7 +76,7 @@ let v = e => {
           }), (0, r.jsxs)("div", {
             className: O.quantitySelectorWrapper,
             children: [(0, r.jsx)(c.FiK, {
-              value: L.length,
+              value: x.length,
               onChange: e => M(T.slice(0, e)),
               minValue: 1,
               maxValue: T.length
@@ -91,7 +91,7 @@ let v = e => {
       GUILD_SELECT: () => (0, r.jsx)(g.default, {
         onClose: U,
         onSelectGuild: e => {
-          x(e), R("CONFIRM")
+          L(e), R("CONFIRM")
         },
         transitionState: v,
         isTransfer: j,
@@ -99,20 +99,20 @@ let v = e => {
       }),
       CONFIRM() {
         if (null == D) return null;
-        let e = L.filter(e => (0, h.tl)(e)).length,
-          t = L.length,
+        let e = x.filter(e => (0, h.tl)(e)).length,
+          t = x.length,
           n = k.length,
           i = "CONFIRM" === S[0] ? U : () => R(S[S.indexOf(N) - 1]),
           a = async () => {
-            if (null != D && (null == L ? true : L.length) !== 0) {
-              o()(!L.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
+            if (null != D && (null == x ? true : x.length) !== 0) {
+              o()(!x.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
               try {
-                await Promise.all(L.map(e => {
+                await Promise.all(x.map(e => {
                   let {
                     premiumGuildSubscription: t
                   } = e;
                   return null != t ? (0, u.dG)(t.guildId, t.id) : Promise.resolve()
-                })), await (0, u.W3)(D.id, L.map(e => {
+                })), await (0, u.W3)(D.id, x.map(e => {
                   let {
                     id: t
                   } = e;
@@ -181,7 +181,7 @@ let v = e => {
           children: (0, r.jsx)(E.R7, {
             guild: D,
             isTransfer: j,
-            guildBoostQuantity: L.length,
+            guildBoostQuantity: x.length,
             onClose: U,
             didPurchaseOnFractionalPremium: false
           })

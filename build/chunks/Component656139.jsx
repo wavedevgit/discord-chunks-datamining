@@ -42,7 +42,7 @@ let C = e => {
     } = (0, O.q)({
       searchQuery: I,
       selectedUsers: p
-    }), [D, x] = i.useState(false), L = (0, s.O)(e => {
+    }), [D, L] = i.useState(false), x = (0, s.O)(e => {
       e && !P && N()
     }), M = C.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), k = () => (0, r.jsx)(f.Z, {
       className: A.searchbar,
@@ -76,7 +76,7 @@ let C = e => {
           fullWidth: true,
           onClick: async () => {
             if (s) return void t();
-            x(true), await n([...p.values()]), x(false)
+            L(true), await n([...p.values()]), L(false)
           }
         })
       })
@@ -108,7 +108,7 @@ let C = e => {
             })
           }
         }, e.id)), P && (0, r.jsx)(u.$jN, {}), (0, r.jsx)("div", {
-          ref: L
+          ref: x
         })]
       })
     };

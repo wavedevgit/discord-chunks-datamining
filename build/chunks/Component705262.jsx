@@ -239,7 +239,7 @@ let Y = Object.freeze({
           }), g && a.v2EditorEnabled && "SETTINGS" === l ? M(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
-            useSystemTheme: g ? x.KW.OFF : true
+            useSystemTheme: g ? L.KW.OFF : true
           }, h), null != t) {
           if (b && y(false), t <= O || 0 === t) return void v(0);
           v(e => e + 1)
@@ -249,8 +249,8 @@ let Y = Object.freeze({
         await (0, u.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
-          useSystemTheme: g ? x.KW.OFF : true
-        }, L.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
+          useSystemTheme: g ? L.KW.OFF : true
+        }, x.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
       }, k = () => {
         if (!b) return null;
         let e = P.qt[s.Us.EASTER_EGG];
@@ -331,7 +331,7 @@ let Y = Object.freeze({
       delay: a
     } = i.useContext(W), {
       analyticsLocations: s
-    } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === x.KW.ON]), p = e => {
+    } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === L.KW.ON]), p = e => {
       (0, S.xs)(), K({
         isPersisted: true,
         analyticsLocations: s,

@@ -81,10 +81,10 @@ function I(e) {
   let P = (0, f.a)(T).find(e => e.value === c),
     w = +(null != P),
     D = null != S && null != P && S.variantId === P.value,
-    x = () => {
+    L = () => {
       null != P && (D ? (0, d.rX)(T.system, n, null) : (0, d.rX)(T.system, n, P.value))
     },
-    L = (0, r.jsx)(v, {
+    x = (0, r.jsx)(v, {
       url: t
     }),
     M = null;
@@ -117,14 +117,14 @@ function I(e) {
                 children: T.title
               }), M]
             })]
-          }), L]
+          }), x]
         })
       })
     }), null != P ? (0, r.jsx)(o.zxk, {
       fullWidth: true,
       variant: D ? "critical-primary" : "primary",
       text: D ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),
-      onClick: x
+      onClick: L
     }) : (0, r.jsx)("div", {
       className: m.experimentOverride,
       children: (0, r.jsx)(f.y, {

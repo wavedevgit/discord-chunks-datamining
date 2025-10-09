@@ -34,7 +34,7 @@ var r, Chunk658722 = require("./658722.js"),
   Chunk7956 = require("./7956.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let L = 5,
+let x = 5,
   M = c()().subtract(1, "week"),
   k = [],
   j = "",
@@ -157,7 +157,7 @@ function Q() {
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, k) && (k = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(k).map(e => e.application).slice(0, L)), true)
+  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, k) && (k = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(k).map(e => e.application).slice(0, x)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -188,7 +188,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return U
   }
 }
-x(J, "displayName", "ApplicationViewStore");
+L(J, "displayName", "ApplicationViewStore");
 let $ = new J(Chunk570140.Z, {
   LIBRARY_APPLICATION_FILTER_UPDATE: z
 })

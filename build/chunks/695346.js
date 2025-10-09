@@ -5,14 +5,14 @@ require.d(exports, {
   A2: () => e0,
   AY: () => en,
   CM: () => eo,
-  CW: () => eL,
+  CW: () => ex,
   Cr: () => em,
   DC: () => es,
   Eo: () => eW,
   Ex: () => eU,
   Fg: () => J,
   G6: () => e_,
-  H1: () => x,
+  H1: () => L,
   HV: () => e1,
   I0: () => k,
   JG: () => eZ,
@@ -31,14 +31,14 @@ require.d(exports, {
   RS: () => eO,
   R_: () => eG,
   Rt: () => eJ,
-  SE: () => ex,
+  SE: () => eL,
   Sb: () => eC,
   Sh: () => eY,
   T4: () => D,
   UP: () => ed,
   Wp: () => ew,
   Xc: () => B,
-  Xk: () => L,
+  Xk: () => x,
   Xr: () => ef,
   YC: () => e$,
   Yk: () => eP,
@@ -165,13 +165,13 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   P = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : R, e => e),
   w = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : R, e => e),
   D = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : R, e => e),
-  x = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
+  L = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
     value: e
   })),
-  L = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
+  x = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -518,8 +518,8 @@ let eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     return null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
   })),
   eD = [],
-  ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e),
-  eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, {
+  eL = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e),
+  ex = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eD, e => e, {
     delay: Chunk526761.fy.FREQUENT_USER_ACTION
   }),
   eM = [],

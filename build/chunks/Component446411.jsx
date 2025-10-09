@@ -132,7 +132,7 @@ function ea(e) {
     onVolumeChange: N,
     onMute: P,
     href: D,
-    placeholder: x,
+    placeholder: L,
     placeholderVersion: M,
     sourceMetadata: k
   } = e, [U, G] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => G(false), [G]), H = e => {
@@ -146,7 +146,7 @@ function ea(e) {
     height: W
   } = u;
   null != d && (Y = d.width, W = d.height);
-  let K = (0, L.Tj)({
+  let K = (0, x.Tj)({
     width: Y,
     height: W,
     maxWidth: l,
@@ -159,7 +159,7 @@ function ea(e) {
     children: m({
       poster: z,
       src: d.proxyURL,
-      placeholder: x,
+      placeholder: L,
       placeholderVersion: M,
       width: Y,
       height: W,
@@ -243,7 +243,7 @@ function ea(e) {
       responsive: p,
       containerClassName: V.embedVideoImageComponent,
       imageClassName: V.embedVideoImageComponentInner,
-      placeholder: x,
+      placeholder: L,
       placeholderVersion: M,
       onClick: E && null != d ? H : null,
       sourceMetadata: k,
@@ -941,7 +941,7 @@ class es extends(r = Chunk647438.PureComponent) {
     if (null == l) return;
     let {
       width: c
-    } = (0, L.Tj)({
+    } = (0, x.Tj)({
       width: l.width,
       height: l.height,
       maxWidth: o,
@@ -953,7 +953,7 @@ class es extends(r = Chunk647438.PureComponent) {
       var u, d, f, _;
       let {
         width: e
-      } = (0, L.Tj)({
+      } = (0, x.Tj)({
         width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
         height: null != (_ = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? _ : 0,
         maxWidth: o,
@@ -1030,7 +1030,7 @@ class es extends(r = Chunk647438.PureComponent) {
           minHeight: r
         } = null != (t = this.getMinSize()) ? t : {}, {
           width: i
-        } = (0, L.Tj)({
+        } = (0, x.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: l,
@@ -1116,7 +1116,7 @@ class es extends(r = Chunk647438.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, x.vP)(this.props.embed))), W(this, "onReveal", () => {
+    }, (0, L.vP)(this.props.embed))), W(this, "onReveal", () => {
       this.setState({
         isVisible: true
       })

@@ -143,7 +143,7 @@ function et(e) {
   } = e;
   c = Date.now(), r = false, o = new Map;
   let a = new Map;
-  for (let e of t) o.set(e.id, e), a.set(e.id, (0, D.zi)(e)), e.targetedContent.includes(x.jn.QUEST_BAR) && (0, M.T)({
+  for (let e of t) o.set(e.id, e), a.set(e.id, (0, D.zi)(e)), e.targetedContent.includes(L.jn.QUEST_BAR) && (0, M.T)({
     location: k.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (s = new Map, n)) s.set(e.id, e);
@@ -359,7 +359,7 @@ function eR(e) {
   } = e;
   K(t.questId, {
     userStatus: t
-  }), null == t.claimedAt && (g = new Map(g)).delete(t.questId), null == t.enrolledAt && ((O = new Map(O)).delete(t.questId), L.ZP.getState().resetQuest(t.questId));
+  }), null == t.claimedAt && (g = new Map(g)).delete(t.questId), null == t.enrolledAt && ((O = new Map(O)).delete(t.questId), x.ZP.getState().resetQuest(t.questId));
   let n = o.get(t.questId);
   if (null != n) {
     let e = (0, D.zi)(n);
@@ -392,14 +392,14 @@ function eD(e) {
   a.set(r, i), Z.set(n, a)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     questId: t
   } = e;
-  Z.has(t) && Z.delete(t), L.ZP.getState().resetQuest(t)
+  Z.has(t) && Z.delete(t), x.ZP.getState().resetQuest(t)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     quest: t,
     placement: n,
@@ -543,7 +543,7 @@ let eZ = new eB(Chunk570140.Z, {
     QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: el,
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: ec,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: er,
-    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eL,
+    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: ex,
     QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eM,
     QUESTS_FETCH_PREVIEW_BEGIN: ei,
     QUESTS_FETCH_PREVIEW_SUCCESS: ea,
@@ -569,7 +569,7 @@ let eZ = new eB(Chunk570140.Z, {
     QUESTS_DELIVERY_OVERRIDE: eP,
     QUESTS_SELECT_TASK_PLATFORM: ew,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eD,
-    QUESTS_RESET_OPTIMISTIC_PROGRESS: ex,
+    QUESTS_RESET_OPTIMISTIC_PROGRESS: eL,
     QUESTS_USER_COMPLETION_UPDATE: eG
   }),
   eF = eZ

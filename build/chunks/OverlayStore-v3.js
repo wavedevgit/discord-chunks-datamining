@@ -42,7 +42,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,7 +67,7 @@ function L(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -231,7 +231,7 @@ function ef(e, t) {
   var n, r;
   let i = null == (n = F[e]) ? true : n.error,
     a = null == (r = F[e]) ? true : r.error_description;
-  F[e] = x({}, F[e], t), null != i && (F[e].error = i), null != a && (F[e].error_description = a)
+  F[e] = L({}, F[e], t), null != i && (F[e].error = i), null != a && (F[e].error_description = a)
 }
 
 function e_(e) {
@@ -383,7 +383,7 @@ async function eS(e) {
     ef(e, n), eo(), Q = null, U(e, "renderer_window_mounting_started", {
       mountingAnalyticsData: n,
       popoutInitializationStages: ea
-    }), await (0, C.f)(en), ea = M(x({}, ea), {
+    }), await (0, C.f)(en), ea = M(L({}, ea), {
       popoutOpened: true
     });
     let r = {
@@ -406,7 +406,7 @@ async function eS(e) {
       popoutInitializationStages: ea
     }), ef(e, a), eY(false), S.Z.resetWindowState(), (null == Y ? true : Y.setOnWindowHandleInitializedCallback) == null && eV(true), i
   } catch (t) {
-    j.error("failed to create out of process overlay host window", t), em(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ea = M(x({}, ea), {
+    j.error("failed to create out of process overlay host window", t), em(e, t), c.Z.updateOverlayState(e, I.mM.OVERLAY_CRASHED_DISABLED), ea = M(L({}, ea), {
       errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + t
     }), U(e, "renderer_window_mounting_failed", {
       error: t,
@@ -431,7 +431,7 @@ function eA() {
   } catch (e) {
     j.error("Error setting background throttling:", module), eh(null != X ? X : Chunk145597.UNSET_PID, module)
   }
-  eL(), Z.clear(), Chunk503522.Z.resetWindowState(false), null != X && eC(X), X = null, (0, Chunk145597.setPID)(null != X ? X : Chunk145597.UNSET_PID), eo(), tr.emitChange()
+  ex(), Z.clear(), Chunk503522.Z.resetWindowState(false), null != X && eC(X), X = null, (0, Chunk145597.setPID)(null != X ? X : Chunk145597.UNSET_PID), eo(), tr.emitChange()
 }
 
 function eC(e) {
@@ -499,14 +499,14 @@ function eD(e) {
   }), ew(e), tr.emitChange(), e !== K && j.info("OverlayStore: Focused new PID", e)
 }
 
-function ex(e) {
+function eL(e) {
   null != K && U(K, "focus_lost_callback", {
     focusedPID: K,
     lostPid: e
-  }), eL(), tr.emitChange()
+  }), ex(), tr.emitChange()
 }
 
-function eL() {
+function ex() {
   ew(null, true), tr.emitChange()
 }
 
@@ -527,13 +527,13 @@ function ek(e) {
 
 function ej() {
   var e;
-  ea = M(x({}, ea), {
+  ea = M(L({}, ea), {
     showInactiveCalled: true
   }), null == Y || null == (e = Y.onPopoutShowInactive) || module.call(Y)
 }
 
 function eU() {
-  ea = M(x({}, ea), {
+  ea = M(L({}, ea), {
     allDone: true
   }), H.forEach(e => {
     ek(e)
@@ -544,7 +544,7 @@ function eG(e) {
   let {
     update: t
   } = e;
-  ea = x({}, ea, t)
+  ea = L({}, ea, t)
 }
 
 function eB(e) {
@@ -567,7 +567,7 @@ function eF(e) {
 }
 
 function eV(e) {
-  ea = M(x({}, ea), {
+  ea = M(L({}, ea), {
     windowHandleSentToNative: e
   }), e && c.Z.updateOverlayState((0, b.getPID)(), I.mM.WAITING_FOR_REACT_INITIALIZATION), tr.emitChange()
 }
@@ -580,7 +580,7 @@ let eH = (() => {
       var e, t, n, r;
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let i = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      null == i || null == (e = i.init) || module.call(i), i.setCaptureZoneCallback(eP), i.setHostWindowCallbacks(eS, eA, eN), i.setFocusCallback(eD), null == (t = i.setFocusLostCallback) || exports.call(i, ex), null == (n = i.setSuccessfullyShownCallback) || require.call(i, eF), null == (r = i.setOnWindowHandleInitializedCallback) || r.call(i, eV), Y = i, (0, Chunk145597.setOutOfProcessSupport)(true), eO(), Chunk13245.Z.setRenderDebugMode(true, Chunk837268.GO.TrackFocusPIDs), j.info("OverlayV3 Module Loaded"), U((0, Chunk145597.getPID)(), "overlay_v3_module_loaded")
+      null == i || null == (e = i.init) || module.call(i), i.setCaptureZoneCallback(eP), i.setHostWindowCallbacks(eS, eA, eN), i.setFocusCallback(eD), null == (t = i.setFocusLostCallback) || exports.call(i, eL), null == (n = i.setSuccessfullyShownCallback) || require.call(i, eF), null == (r = i.setOnWindowHandleInitializedCallback) || r.call(i, eV), Y = i, (0, Chunk145597.setOutOfProcessSupport)(true), eO(), Chunk13245.Z.setRenderDebugMode(true, Chunk837268.GO.TrackFocusPIDs), j.info("OverlayV3 Module Loaded"), U((0, Chunk145597.getPID)(), "overlay_v3_module_loaded")
     } catch (e) {
       throw j.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk41534.V6)(module, Chunk837268.gl.OutOfProcess, {
         extra: ep(null != X ? X : Chunk145597.UNSET_PID, "module_load")

@@ -134,7 +134,7 @@ function B(e) {
     isApplicationHome: T = false
   } = e, M = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), k = (0, s.e7)([h.default], () => h.default.getCurrentUser()), j = (0, v.N)(), U = null == j || null == (t = j.subscription_trial) ? true : t.sku_id, G = (null == M ? true : M.hasActiveTrial) ? null == k ? true : k.premiumType : null, B = (0, O.Ng)(), Z = (0, b.t7)(), F = null != U || null != G ? R.C.PREMIUM_TRIAL : null != B || Z ? R.C.PREMIUM_DISCOUNT : null, V = (0, c.ap)((0, d.ZP)()), H = (0, A.A1)(Z, G, B, j, U), Y = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      src: x,
+      src: L,
       alt: "",
       className: a()(w.bigCloud, w[I])
     }), (0, r.jsx)("img", {
@@ -142,7 +142,7 @@ function B(e) {
       alt: "",
       className: a()(w.smallCloud, w[I])
     }), (0, r.jsx)("img", {
-      src: L,
+      src: x,
       alt: "",
       className: a()(w.wumpus, w[I])
     })]

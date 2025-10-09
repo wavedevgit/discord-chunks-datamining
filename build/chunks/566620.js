@@ -268,7 +268,7 @@ async function el(e) {
     }
   }
   let y = D.Z.getChannel(r),
-    O = null != i ? x.Z.getGuild(i) : null;
+    O = null != i ? L.Z.getGuild(i) : null;
   if (null == y) return {
     result: "failure",
     reason: 3
@@ -365,8 +365,8 @@ async function ec(e) {
   let p = (0, W.e4)({
     channelId: i,
     ChannelStore: D.Z,
-    GuildStore: x.Z,
-    PermissionStore: L.Z,
+    GuildStore: L.Z,
+    PermissionStore: x.Z,
     VoiceStateStore: k.Z
   });
   if (p !== W.jy.CAN_LAUNCH) {

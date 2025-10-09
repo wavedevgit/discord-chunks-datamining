@@ -185,7 +185,7 @@ function W(e) {
             onThemeColorsChange: I.rf,
             showPremiumIcon: false,
             preventDisabled: true
-          }), (0, r.jsx)(x.Z, {
+          }), (0, r.jsx)(L.Z, {
             className: Z.customizationSection,
             isTryItOutFlow: true,
             showRemoveBannerButton: null != J,
@@ -206,7 +206,7 @@ function W(e) {
           }, "decoration"), (0, r.jsx)(w.Z, {
             user: F,
             className: Z.customizationSection
-          }), (0, r.jsx)(L.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: Z.customizationSection,
             isTryItOutFlow: true,
             initialSelectedEffect: et,

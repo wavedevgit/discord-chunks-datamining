@@ -68,8 +68,8 @@ function w(e) {
       title: R,
       type: w,
       guildBoostProps: D,
-      analyticsSource: x,
-      analyticsLocation: L,
+      analyticsSource: L,
+      analyticsLocation: x,
       body: M,
       context: k,
       glowUp: j,
@@ -113,9 +113,9 @@ function w(e) {
       analyticsLocations: eb
     } = (0, f.ZP)(d.Z.PREMIUM_UPSELL_MODAL),
     ey = {
-      analyticsLocation: L,
+      analyticsLocation: x,
       analyticsLocations: eb,
-      analyticsSource: x,
+      analyticsSource: L,
       guildBoostProps: D,
       type: w
     },
@@ -153,7 +153,7 @@ function w(e) {
   }, [eT]);
   let eS = () => {
       if (eh) return (0, r.jsx)(p.Z, {
-        analyticsLocation: L,
+        analyticsLocation: x,
         guild: D.guild,
         onClose: Y
       });
@@ -171,7 +171,7 @@ function w(e) {
       return (0, r.jsx)(y.Z, {
         className: es,
         showGradient: ea || eo,
-        premiumModalAnalyticsLocation: L,
+        premiumModalAnalyticsLocation: x,
         subscriptionTier: et,
         size: l.zx.Sizes.SMALL,
         color: ea || eo ? l.zx.Colors.CUSTOM : l.zx.Colors.GREEN,
@@ -213,7 +213,7 @@ function w(e) {
         subscriptionTier: null != (a = null == em || null == (n = em.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
         headingText: R,
         context: k,
-        analyticsLocationObject: L,
+        analyticsLocationObject: x,
         discountOffer: eg,
         trialOffer: em,
         children: j

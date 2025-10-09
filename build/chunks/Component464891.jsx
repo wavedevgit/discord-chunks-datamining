@@ -181,10 +181,10 @@ let $ = Chunk647438.memo(function(e) {
     className: H.roleIcon
   }), "role-icon-children") : null, [N, c, A]), w = (0, l.e7)([R.default], () => R.default.getCurrentUser()), D = i.useMemo(() => {
     let e = [],
-      n = x.ZP.isPremium(t.author),
-      i = x.ZP.isPremium(w),
+      n = L.ZP.isPremium(t.author),
+      i = L.ZP.isPremium(w),
       o = null == a ? true : a.isPrivate();
-    return (0, L.R)(null != c, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ea, {
+    return (0, x.R)(null != c, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ea, {
       currentUserIsPremium: i,
       author: t.author
     }, "nitro-author")), null != P && e.push(P), null != A && e.push((0, r.jsx)(g.Z, {
@@ -286,14 +286,14 @@ function et(e) {
   } = (0, f.ZP)(d.Z.AVATAR), D = (0, l.e7)([A.ZP], () => {
     var e;
     return null != (e = a.displayCompactAvatars) ? e : A.ZP.displayCompactAvatars
-  }), x = (0, Z.Z)(p), L = m ? X : Q, {
+  }), L = (0, Z.Z)(p), x = m ? X : Q, {
     avatarSrc: M,
     avatarDecorationSrc: k,
     eventHandlers: j
   } = (0, I.Z)({
     userId: p.author.id,
     guildId: o,
-    size: L,
+    size: x,
     animateOnHover: null != g ? !C : !E,
     showPending: true
   }), U = p.isInteractionPlaceholder(), G = i.useMemo(() => {
@@ -301,15 +301,15 @@ function et(e) {
     return U && null == p.author.avatar && null == h.guildMemberAvatar && (null == (e = p.application) ? true : e.icon) != null ? null != (t = P.ZP.getApplicationIconURL({
       id: p.application.id,
       icon: p.application.icon,
-      size: L,
+      size: x,
       fallbackAvatar: false
     })) ? t : M : null != p.webhookId && null == h.guildMemberAvatar ? P.ZP.getUserAvatarURL({
       avatar: p.author.avatar,
       id: p.author.id,
       discriminator: p.author.discriminator,
       bot: true
-    }, false, L) : M
-  }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, M, L, h.guildMemberAvatar]);
+    }, false, x) : M
+  }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, M, x, h.guildMemberAvatar]);
   if (i.useEffect(() => {
       if (null != g) return w.S.subscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N), () => void w.S.unsubscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N)
     }, [p.author.id, g]), !m || D) return null != c && null != v ? (0, r.jsx)(f.Gt, {
@@ -321,7 +321,7 @@ function et(e) {
       channelId: p.channel_id,
       messageId: p.id,
       shouldShow: v,
-      shouldPreload: x,
+      shouldPreload: L,
       renderPopout: c,
       position: s.tq ? "window_center" : "right",
       avatarUrl: G,
@@ -462,13 +462,13 @@ let ea = Chunk647438.memo(function(e) {
     }), w = (0, l.e7)([A.ZP], () => {
       var t;
       return null != (t = e.displayCompactAvatars) ? t : A.ZP.displayCompactAvatars
-    }), x = i.useMemo(() => (0, B.b)({
+    }), L = i.useMemo(() => (0, B.b)({
       message: t,
       channel: b,
       user: null == t ? true : t.author,
       compact: a,
       isRepliedMessage: false
-    }), [t, b, a]), L = (0, l.e7)([C.Z], () => ei(a, w, f, C.Z.getGuild(e.guildId)), [a, w, f, e.guildId]), M = i.useMemo(() => {
+    }), [t, b, a]), x = (0, l.e7)([C.Z], () => ei(a, w, f, C.Z.getGuild(e.guildId)), [a, w, f, e.guildId]), M = i.useMemo(() => {
       let e = [];
       return (0, D.yE)(t.flags, F.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(O.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(E.Z, {
         message: t
@@ -502,8 +502,8 @@ let ea = Chunk647438.memo(function(e) {
       }),
       usernameSpanId: (0, j.XX)(t, _),
       usernameClassName: o()(H.headerText, {
-        [H.hasRoleIcon]: 0 !== L,
-        [H.hasBadges]: null != x || M.length > 0
+        [H.hasRoleIcon]: 0 !== x,
+        [H.hasBadges]: null != L || M.length > 0
       }),
       compact: a,
       showTimestamp: Y,

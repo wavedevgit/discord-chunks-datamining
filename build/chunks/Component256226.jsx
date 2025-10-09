@@ -88,8 +88,8 @@ let N = Chunk647438.forwardRef(function(e, t) {
       role: P,
       onRemove: w,
       guildId: D,
-      disableBorderColor: x,
-      onMouseDown: L
+      disableBorderColor: L,
+      onMouseDown: x
     } = e,
     M = (0, s.JA)(P.id),
     {
@@ -140,9 +140,9 @@ let N = Chunk647438.forwardRef(function(e, t) {
   let z = i.useMemo(() => {
       var t;
       return I({
-        borderColor: x ? true : H
+        borderColor: L ? true : H
       }, null != (t = e.style) ? t : {})
-    }, [H, x, e.style]),
+    }, [H, L, e.style]),
     q = () => N ? (0, r.jsx)(d.u, {
       asContainer: true,
       text: y.intl.string(y.t.u3RVsL),
@@ -182,7 +182,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       className: o()(O.role, R),
       style: z,
       onContextMenu: Z,
-      onMouseDown: L,
+      onMouseDown: x,
       "aria-label": P.name,
       tabIndex: k
     }, j), {

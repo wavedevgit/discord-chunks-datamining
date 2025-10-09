@@ -155,8 +155,8 @@ class I extends(r = Chunk647438.PureComponent) {
       onValueRender: P,
       renderMarker: w,
       getAriaValueText: D,
-      barClassName: x,
-      grabberClassName: L,
+      barClassName: L,
+      grabberClassName: x,
       grabberStyles: M = {},
       markerPosition: k = 0,
       "aria-hidden": j,
@@ -249,7 +249,7 @@ class I extends(r = Chunk647438.PureComponent) {
                 className: h.track,
                 children: q
               }), (0, i.jsx)("div", {
-                className: s()(h.bar, x),
+                className: s()(h.bar, L),
                 style: I,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
@@ -266,7 +266,7 @@ class I extends(r = Chunk647438.PureComponent) {
                   text: C || y ? null : X,
                   forceOpen: n || r && p.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
-                    className: s()(h.grabber, L),
+                    className: s()(h.grabber, x),
                     style: b(g({}, M), {
                       left: z
                     }),

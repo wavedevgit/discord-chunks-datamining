@@ -194,7 +194,7 @@ let e5 = [Chunk981631.hBH.GIFV],
       height: a,
       flags: o
     } = e, s = (0, ey.yE)(o, W.hR.IS_ANIMATED);
-    return null != r && null != a && (K.uo.test(n) || s && (K.YG.test(n) || K.FH.test(n))) ? (0, i.jsx)(eL.Z, {
+    return null != r && null != a && (K.uo.test(n) || s && (K.YG.test(n) || K.FH.test(n))) ? (0, i.jsx)(ex.Z, {
       width: r,
       height: a,
       src: n,
@@ -289,7 +289,7 @@ class tt extends(r = Chunk647438.Component) {
         code: r,
         message: e
       }, r);
-      if (n === S.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(L.Z, {
+      if (n === S.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(x.Z, {
         code: r,
         message: e
       }, r);
@@ -523,7 +523,7 @@ class tt extends(r = Chunk647438.Component) {
     })
   }
   renderEphemeralAccessories(e) {
-    return (0, eS.Pv)(e) ? (0, i.jsx)(ex.Z, {
+    return (0, eS.Pv)(e) ? (0, i.jsx)(eL.Z, {
       message: e,
       onDeleteMessage: () => {
         _.Z.dismissAutomatedMessage(e)
@@ -733,7 +733,7 @@ class tt extends(r = Chunk647438.Component) {
       } = this.props, h = (0, eT.BP)(e, r, d, f);
       if (e.type === ez.hBH.GIFT) return null;
       let m = e5.includes(e.type) ? e.url : null != (s = null == (a = e.image) ? true : a.url) ? s : null == (o = e.video) ? true : o.url;
-      return (0, i.jsx)(x.h.Provider, {
+      return (0, i.jsx)(L.h.Provider, {
         value: (0, eW.P)(m, e.image, e.video),
         children: (0, i.jsx)(I.ZP, e0({
           embed: e,
@@ -805,14 +805,14 @@ function tn(e) {
     communicationDisabled: O,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
-  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), x = (0, R.v)(r), L = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
+  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
   return (0, i.jsx)(tt, e2(e0(e2(e0({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, N), {
     disableReactionReads: !!A || N.disableReactionReads
   }), e), {
-    hasSpoilerEmbeds: e.hasSpoilerEmbeds && L,
+    hasSpoilerEmbeds: e.hasSpoilerEmbeds && x,
     isLurking: h && p,
     isGuest: m && p,
     isPendingMember: g && p,
@@ -826,7 +826,7 @@ function tn(e) {
     showListsAndHeaders: P,
     showMaskedLinks: P,
     shouldHideMediaOptions: w,
-    enabledContentHarmTypeFlags: x,
+    enabledContentHarmTypeFlags: L,
     ctaButtonType: j,
     shouldAgeVerify: U
   }))

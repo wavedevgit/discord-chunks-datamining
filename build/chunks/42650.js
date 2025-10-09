@@ -110,8 +110,8 @@ let v = (0, Chunk647438.createContext)(null),
       validationBehavior: m
     }, (0, g.l)(e), T), {
       isFocused: D,
-      isFocusVisible: x,
-      focusProps: L
+      isFocusVisible: L,
+      focusProps: x
     } = (0, _.F)(), M = N || R, {
       hoverProps: k,
       isHovered: j
@@ -127,7 +127,7 @@ let v = (0, Chunk647438.createContext)(null),
         isPressed: P,
         isHovered: j,
         isFocused: D,
-        isFocusVisible: x,
+        isFocusVisible: L,
         isDisabled: N,
         isReadOnly: R,
         isInvalid: w,
@@ -145,7 +145,7 @@ let v = (0, Chunk647438.createContext)(null),
       "data-pressed": P || true,
       "data-hovered": j || true,
       "data-focused": D || true,
-      "data-focus-visible": x || true,
+      "data-focus-visible": L || true,
       "data-disabled": N || true,
       "data-readonly": R || true,
       "data-invalid": w || true,
@@ -153,7 +153,7 @@ let v = (0, Chunk647438.createContext)(null),
     }, O.createElement(h.T, {
       elementType: "span"
     }, O.createElement("input", {
-      ...(0, u.d)(A, L),
+      ...(0, u.d)(A, x),
       ref: T
     })), U.children)
   })

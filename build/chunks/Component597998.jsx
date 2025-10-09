@@ -73,7 +73,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function D(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let L = 16,
+let x = 16,
   M = e => {
     let {
       hangStatusActivity: t,
@@ -111,7 +111,7 @@ let L = 16,
       className: C.icons,
       children: (0, r.jsx)(E.Z, {
         userId: s,
-        size: L,
+        size: x,
         hangStatusActivity: t,
         className: o()(C.icon, n)
       })
@@ -149,8 +149,8 @@ function j(e) {
     otherClientSessionType: P,
     voicePlatform: w,
     application: D,
-    guildId: x,
-    channelId: L,
+    guildId: L,
+    channelId: x,
     user: k,
     disconnected: j,
     hangStatusActivity: U,
@@ -236,8 +236,8 @@ function j(e) {
       children: Q ? (0, r.jsx)(G, {
         application: D,
         iconClassName: N,
-        guildId: x,
-        channelId: L,
+        guildId: L,
+        channelId: x,
         userId: k.id
       }, "".concat(k.id, "-game")) : (0, r.jsx)(M, {
         userId: k.id,
@@ -270,8 +270,8 @@ let U = function(e) {
     priority: S,
     speaking: N,
     collapsed: P,
-    mute: x,
-    serverMute: L,
+    mute: L,
+    serverMute: x,
     guildId: M,
     nick: k,
     isGuest: U,
@@ -303,7 +303,7 @@ let U = function(e) {
       text: A.intl.string(A.t.BVK71t),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {
-          [C.iconPriortySpeakerSpeaking]: !x && !L && N
+          [C.iconPriortySpeakerSpeaking]: !L && !x && N
         })
       })
     }) : null
@@ -325,7 +325,7 @@ let U = function(e) {
   function ee() {
     let e = (0, r.jsxs)("div", {
         className: o()(i, C.username, W, {
-          [C.usernameSpeaking]: !x && !L && N
+          [C.usernameSpeaking]: !L && !x && N
         }),
         children: [null != k ? k : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
           className: C.guestSuffix,

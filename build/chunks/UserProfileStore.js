@@ -69,8 +69,8 @@ let S = Symbol("NO GUILD ID"),
   P = 0x7fffffff,
   w = new Map,
   D = new Map,
-  x = new Map,
   L = new Map,
+  x = new Map,
   M = new Map,
   k = new Map,
   j = new Map,
@@ -114,10 +114,10 @@ function Y(e) {
   if ((null == n ? true : n.expiresAt) == null) return;
   let r = 1e3 * n.expiresAt + b.Cm - Date.now();
   if (r <= 0) {
-    t.profileEffect = true, x.delete(e), eg.emitChange();
+    t.profileEffect = true, L.delete(e), eg.emitChange();
     return
   }
-  let i = x.get(e);
+  let i = L.get(e);
   null != i && i.start(Math.min(P, r), () => Y(e))
 }
 
@@ -133,10 +133,10 @@ function W(e, t) {
   if (s <= 0) {
     i.set(t, T(v({}, a), {
       profileEffect: true
-    })), null == (r = L.get(e)) || r.delete(t), eg.emitChange();
+    })), null == (r = x.get(e)) || r.delete(t), eg.emitChange();
     return
   }
-  let l = null == (n = L.get(e)) ? true : n.get(t);
+  let l = null == (n = x.get(e)) ? true : n.get(t);
   null != l && l.start(Math.min(P, s), () => W(e, t))
 }
 
@@ -260,7 +260,7 @@ function J(e) {
       wishlistSettings: z.wishlist_settings
     }), (null == (E = z.user_profile) || null == (g = E.profile_effect) ? true : g.expires_at) != null) {
     let e = new o.V7;
-    x.set(z.user.id, e), Y(z.user.id)
+    L.set(z.user.id, e), Y(z.user.id)
   }
   if (null != z.guild_member_profile) {
     let e = z.guild_member_profile.profile_effect,
@@ -287,11 +287,11 @@ function J(e) {
     }
     if ((null == (K = z.guild_member_profile) || null == (V = K.profile_effect) ? true : V.expires_at) != null) {
       let e = new o.V7,
-        t = L.get(z.user.id);
+        t = x.get(z.user.id);
       if (null != t) t.set(z.guild_member_profile.guild_id, e);
       else {
         let t = new Map;
-        t.set(z.guild_member_profile.guild_id, e), L.set(z.user.id, t)
+        t.set(z.guild_member_profile.guild_id, e), x.set(z.user.id, t)
       }
       W(z.user.id, z.guild_member_profile.guild_id)
     }
@@ -373,7 +373,7 @@ function en(e) {
       } : true
     })), (null == c ? true : c.expires_at) != null) {
     let e = new o.V7;
-    x.set(t, e), Y(t)
+    L.set(t, e), Y(t)
   }
 }
 
@@ -405,11 +405,11 @@ function er(e) {
       } : true
     })), (null == u ? true : u.expires_at) != null) {
     let e = new o.V7,
-      r = L.get(t);
+      r = x.get(t);
     if (null != r) r.set(n, e);
     else {
       let r = new Map;
-      r.set(n, e), L.set(t, r)
+      r.set(n, e), x.set(t, r)
     }
     W(t, n)
   }

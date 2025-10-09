@@ -172,7 +172,7 @@ class em extends(r = Chunk647438.PureComponent) {
         }],
         opacity: this.opacity
       },
-      x = Chunk120356 ? r : require;
+      L = Chunk120356 ? r : require;
     if (Chunk120356 && null != Chunk647438) {
       var M;
       let {
@@ -216,7 +216,7 @@ class em extends(r = Chunk647438.PureComponent) {
               className: w.reactionInner,
               onClick: this.handleClick,
               "aria-disabled": u,
-              "aria-label": (0, L.iD)(this.isMe(), x, c, o),
+              "aria-label": (0, x.iD)(this.isMe(), L, c, o),
               "aria-pressed": this.isMe(),
               children: [(0, i.jsx)("div", {
                 className: s()({
@@ -252,11 +252,11 @@ class em extends(r = Chunk647438.PureComponent) {
                 })]
               }), l ? null : (0, i.jsx)(b.Z, {
                 className: w.reactionCount,
-                value: x,
+                value: L,
                 color: e,
                 digitWidth: ec
               }), (0, i.jsx)(P.Z, {
-                count: x,
+                count: L,
                 reactionRef: N
               })]
             }))
@@ -294,16 +294,16 @@ class em extends(r = Chunk647438.PureComponent) {
         return
       }
       let f = t.getChannelId(),
-        _ = l ? x.TW.FORUM_TOOLBAR : x.TW.MESSAGE_INLINE_BUTTON;
+        _ = l ? L.TW.FORUM_TOOLBAR : L.TW.MESSAGE_INLINE_BUTTON;
       if (i && !this.userCanBurstReact()) return void(0, D.m)({
         analytics: {
           type: $.cd.BURST_REACTION_UPSELL,
           page: (null == c ? true : c.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
-          section: null != c ? (0, L.s4)(c) : true,
+          section: null != c ? (0, x.s4)(c) : true,
           object: J.qAy.EMOJI_REACTION_UPSELL
         }
       });
-      a ? this.handleShowVerificationGate() : r || (this.isMe() ? (0, x.WO)({
+      a ? this.handleShowVerificationGate() : r || (this.isMe() ? (0, L.WO)({
         channelId: f,
         messageId: t.id,
         emoji: n,
@@ -311,7 +311,7 @@ class em extends(r = Chunk647438.PureComponent) {
         options: {
           burst: i
         }
-      }) : (0, x.rU)(f, t.id, n, _, {
+      }) : (0, L.rU)(f, t.id, n, _, {
         burst: i
       }))
     }), ea(this, "handleEnter", e => {
@@ -323,7 +323,7 @@ class em extends(r = Chunk647438.PureComponent) {
         animateEmoji: a,
         autoUnfurlReactionTooltip: o
       } = this.props, s = r === Y.O.BURST;
-      s && !this.isReactionEventActive && !i && a && (0, x.T6)({
+      s && !this.isReactionEventActive && !i && a && (0, L.T6)({
         channelId: n.getChannelId(),
         messageId: n.id,
         emoji: t,
@@ -520,7 +520,7 @@ class em extends(r = Chunk647438.PureComponent) {
         type: $.cd.BURST_REACTION_UPSELL,
         location: {
           page: (null == i ? true : i.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
-          section: (0, L.s4)(i),
+          section: (0, x.s4)(i),
           object: J.qAy.EMOJI_REACTION_TOOLTIP_UPSELL
         }
       })
@@ -631,13 +631,13 @@ let eg = Chunk647438.memo(e => {
           O(false), S(true), r()
         })()
       }, [n, E, v, r]), C) return null;
-    let x = () => {
+    let L = () => {
         b(!E)
       },
-      L = () => {
+      x = () => {
         let e = ee.intl.string(ee.t["Igv+LS"]);
         return (0, i.jsxs)(h.P3F, {
-          onClick: x,
+          onClick: L,
           className: et.reactionEmojiDetailsClickable,
           children: [(0, i.jsx)(h.Text, {
             variant: "text-sm/normal",
@@ -664,7 +664,7 @@ let eg = Chunk647438.memo(e => {
         })]
       });
     return (0, i.jsxs)("div", {
-      children: [M ? k() : L(), y ? (0, i.jsx)(z.SE, {
+      children: [M ? k() : x(), y ? (0, i.jsx)(z.SE, {
         className: et.emojiDetailsLoader
       }) : M && (0, i.jsx)(eE, {
         emojiId: n,

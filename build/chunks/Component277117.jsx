@@ -51,18 +51,18 @@ function w(e) {
     originApplicationId: d.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, o.Y)({
     userId: t.id
-  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([h.Z], () => {
+  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([p.Z], () => {
     var e;
-    return null == (e = h.Z.getUserProfile(t.id)) ? true : e.application
+    return null == (e = p.Z.getUserProfile(t.id)) ? true : e.application
   }), B = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
   return (0, r.jsxs)("div", {
     className: R.body,
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(E.Z, {
       user: t,
       guildId: A.guild_id,
-      nickname: p.ZP.getName(null, A.id, t),
+      nickname: h.ZP.getName(null, A.id, t),
       pronouns: null == w ? true : w.pronouns,
       onOpenProfile: L,
       tags: (0, r.jsx)(m.Z, {
@@ -78,13 +78,13 @@ function w(e) {
           onOpenProfile: L
         })]
       })
-    }), M === T.OGo.PENDING_INCOMING && (0, r.jsx)(E.Z.Overlay, {
+    }), M === T.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
-    }), U.map(e => (0, r.jsx)(E.Z.Overlay, {
+    }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(x.Z, {
         user: t,
         isGameRelationship: true,
@@ -94,7 +94,7 @@ function w(e) {
     }, e.applicationId)), (0, r.jsx)(v.Z, {
       user: t,
       className: R.card
-    }), t.isProvisional && (0, r.jsx)(E.Z.Overlay, {
+    }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: R.card,
       children: (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t.Iyka0d),
@@ -115,7 +115,7 @@ function w(e) {
       user: t,
       currentUser: n,
       className: R.card
-    }), (0, r.jsxs)(E.Z.Overlay, {
+    }), (0, r.jsxs)(S.Z.Overlay, {
       className: R.overlay,
       children: [!H && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["61W33d"]),

@@ -108,7 +108,7 @@ function N(e) {
     innerRef: y
   } = e, {
     reducedMotion: O
-  } = i.useContext(u.S), v = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), N = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), R = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), P = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), w = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT).spring(), D = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), x = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), L = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), M = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER).spring(), k = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), j = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), U = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), G = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), B = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), [Z, F] = i.useState(false), [V, H] = i.useState(false), Y = i.useRef(null), W = i.useRef(null), {
+  } = i.useContext(u.S), v = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), N = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), R = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), P = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), w = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT).spring(), D = (0, c.d)(s.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), L = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), x = (0, c.d)(s.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), M = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER).spring(), k = (0, c.d)(s.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), j = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), U = (0, c.d)(s.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), G = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), B = (0, c.d)(s.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), [Z, F] = i.useState(false), [V, H] = i.useState(false), Y = i.useRef(null), W = i.useRef(null), {
     state: K,
     opacity: z
   } = (0, l.q)({
@@ -157,7 +157,7 @@ function N(e) {
           opacity: z,
           backgroundColor: K.to({
             range: T,
-            output: [Z ? N : V ? x : v, Z ? N : V ? x : v, Z ? P : V ? L : R, Z ? P : V ? L : R],
+            output: [Z ? N : V ? L : v, Z ? N : V ? L : v, Z ? P : V ? x : R, Z ? P : V ? x : R],
             extrapolate: "clamp"
           }),
           border: "1px solid",

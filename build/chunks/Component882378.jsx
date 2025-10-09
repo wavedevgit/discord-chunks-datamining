@@ -22,32 +22,32 @@ var Chunk951288 = require("./951288.js"),
 let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), x = (0, p.M)(t.id), O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != x ? b.intl.string(b.t.kCN9i4) : null, [j, x]), I = i.useMemo(() => (j || null != x) && !O && !v, [j, x, O, v]), [E, S] = i.useState(C());
+  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), x = (0, h.M)(t.id), O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != x ? b.intl.string(b.t.kCN9i4) : null, [j, x]), I = i.useMemo(() => (j || null != x) && !O && !v, [j, x, O, v]), [S, E] = i.useState(C());
   i.useEffect(() => {
     null != x && null != _ && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [x.id])
-    }, 5e3), (0, h.KQ)({
+    }, 5e3), (0, p.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: x.id,
       warningType: x.type,
       isNudgeWarning: null != x,
-      viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
+      viewName: p.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
     })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
   }, [t, x, _, j]), (0, o.ZP)(() => {
-    null != _ && (0, h.KQ)({
+    null != _ && (0, p.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: _.id,
       warningType: _.type,
       isNudgeWarning: null != x,
-      viewName: h.pb.SAFETY_TOOLS_BUTTON
+      viewName: p.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = C();
-    null != e && S(e)
+    null != e && E(e)
   }, [j, x, C]);
   let Z = i.useCallback(() => {
     null != x && (0, c.T)(t.id, [x.id]), null != _ && ((0, s.ZDy)(async () => {
@@ -70,19 +70,19 @@ let _ = Chunk647438.memo(function(e) {
       }
     }, {
       modalKey: m.X_
-    }), (0, h.qc)({
+    }), (0, p.qc)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: _.id,
       warningType: _.type,
-      cta: h.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
+      cta: p.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
       isNudgeWarning: null != x
     }))
   }, [x, _, t]);
   return null == _ ? null : (0, r.jsx)(s.ua7, {
     "data-migration-pending": true,
     forceOpen: I,
-    text: E,
+    text: S,
     color: s.FGA.BRAND,
     position: "bottom",
     tooltipClassName: y.tooltip,

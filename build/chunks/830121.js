@@ -33,8 +33,8 @@ let C = 10,
   P = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
   w = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
   D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
-  x = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
-  L = /^\/activities\/([0-9-]+)\/?$/,
+  L = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
+  x = /^\/activities\/([0-9-]+)\/?$/,
   M = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   k = /^\/channels\/([0-9]+)\/shop$/,
   j = /^\/quests\/([0-9-]+)\/?$/,
@@ -185,7 +185,7 @@ function eo(e) {
       let e = _[2];
       u(S.g.APP_DIRECTORY_PROFILE, e)
     }
-    let h = null == c ? true : c.match(x);
+    let h = null == c ? true : c.match(L);
     if (null != h) {
       let e = h[2],
         t = h[3];
@@ -194,7 +194,7 @@ function eo(e) {
         u(S.g.APP_DIRECTORY_STOREFRONT_SKU, n)
       } else u(S.g.APP_DIRECTORY_STOREFRONT, e)
     }
-    let m = null == c ? true : c.match(L);
+    let m = null == c ? true : c.match(x);
     if (null != m) {
       let e = m[1];
       u(S.g.ACTIVITY_BOOKMARK, e)

@@ -318,7 +318,7 @@ function $(e) {
       sourceQuestContent: o
     });
     let e = O.ZP.getState().getVideoProgress(n.id);
-    null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(x.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
+    null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(L.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
       source_quest_content: (0, m._b)(o),
       source_quest_content_cta: l,
@@ -366,7 +366,7 @@ function ee(e) {
 function et(e) {
   let t = ee(e),
     n = (0, a.zS)(t);
-  null != n && p.default.track(x.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(L.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
@@ -378,7 +378,7 @@ function et(e) {
         location: D.dr.QUEST_DEEP_LINK_UTIL
       });
       (0, d.dL)({
-        pathname: t ? x.Z5c.QUEST_HOME_V2 : x.Z5c.QUEST_HOME,
+        pathname: t ? L.Z5c.QUEST_HOME_V2 : L.Z5c.QUEST_HOME,
         hash: e
       })
     }
@@ -405,7 +405,7 @@ function en(e) {
 function er(e) {
   let t = en(e),
     n = (0, a.zS)(t);
-  null != n && p.default.track(x.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(L.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
@@ -417,7 +417,7 @@ function er(e) {
         location: D.dr.QUEST_DEEP_LINK_UTIL
       });
       (0, d.dL)({
-        pathname: t ? x.Z5c.QUEST_HOME_V2 : x.Z5c.QUEST_HOME,
+        pathname: t ? L.Z5c.QUEST_HOME_V2 : L.Z5c.QUEST_HOME,
         hash: e
       })
     }

@@ -49,26 +49,26 @@ function I(e) {
     user: t,
     channel: n,
     onHide: I
-  } = e, E = (0, g.ZP)(t.id), S = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
+  } = e, S = (0, g.ZP)(t.id), E = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
     analyticsLocations: T
-  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), P = (0, h.ZB)({
+  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), P = (0, p.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), N = i.useRef(null);
   return (0, r.jsx)(d.Gt, {
     value: T,
-    children: (0, r.jsx)(h.Mt, {
+    children: (0, r.jsx)(p.Mt, {
       value: P,
-      fetchStartedAt: null == E ? true : E.fetchStartedAt,
-      fetchEndedAt: null == E ? true : E.fetchEndedAt,
-      isLoaded: null == E ? true : E.isLoaded,
+      fetchStartedAt: null == S ? true : S.fetchStartedAt,
+      fetchEndedAt: null == S ? true : S.fetchEndedAt,
+      isLoaded: null == S ? true : S.isLoaded,
       children: (0, r.jsx)(b.Z, {
         ref: N,
         user: t,
-        displayProfile: E,
+        displayProfile: S,
         themeType: j.l.SIDEBAR,
-        themeOverride: S,
+        themeOverride: E,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
             className: O.container,
@@ -89,7 +89,7 @@ function I(e) {
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
                   children: x.intl.format(Z ? x.t["8F+WNz"] : x.t["/cZp5u"], {
-                    username: p.ZP.getName(n.guild_id, n.id, t)
+                    username: h.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
               }), (0, r.jsxs)(s.Kqy, {

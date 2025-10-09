@@ -33,10 +33,10 @@ function _(e) {
     mutualFriendsCount: O,
     mutualFriends: v,
     mutualGuilds: C
-  } = (0, c.Z)(t), I = !t.bot && null != O && O > 0, E = null != C && C.length > 0;
-  return I || E ? (0, r.jsxs)(g.Z.Overlay, {
+  } = (0, c.Z)(t), I = !t.bot && null != O && O > 0, S = null != C && C.length > 0;
+  return I || S ? (0, r.jsxs)(g.Z.Overlay, {
     className: y.overlay,
-    children: [E && (0, r.jsx)(m.Z, {
+    children: [S && (0, r.jsx)(m.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZm"]),
       listClassName: y.list,
@@ -52,7 +52,7 @@ function _(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), E && I && (0, r.jsx)(p.Z, {
+    }), S && I && (0, r.jsx)(h.Z, {
       className: y.divider
     }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
@@ -76,7 +76,7 @@ function _(e) {
           user: i,
           status: l
         } = e;
-        return (0, r.jsx)(h.Z, {
+        return (0, r.jsx)(p.Z, {
           user: i,
           status: l,
           channelId: n,

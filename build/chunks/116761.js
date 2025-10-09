@@ -193,7 +193,7 @@ module.exports = function(e) {
       P = u.encode(R, 0, 0),
       w = S(r, o),
       D = w.CustomComponent,
-      x = null != D ? d.createElement(D, i({}, this.props, {
+      L = null != D ? d.createElement(D, i({}, this.props, {
         tree: h.getBlockTree(R),
         blockProps: w.customProps,
         offsetKey: P,
@@ -211,9 +211,9 @@ module.exports = function(e) {
         selection: y,
         tree: C
       });
-    if (r.getParentKey()) return x;
-    var L = T(r, a).Element,
+    if (r.getParentKey()) return L;
+    var x = T(r, a).Element,
       M = A(r, p, P, l, w, this.wrapperRef);
-    return d.createElement(L, M, x)
+    return d.createElement(x, M, L)
   }, t
 }(Chunk647438.Component)

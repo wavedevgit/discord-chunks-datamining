@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
 function S(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), S = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, w = S.length > 0, D = i.useMemo(() => S.filter(e => null != e.premiumGuildSubscription), [S]), x = D.length > 0, L = S.length > D.length, M = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), S = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, w = S.length > 0, D = i.useMemo(() => S.filter(e => null != e.premiumGuildSubscription), [S]), L = D.length > 0, x = S.length > D.length, M = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: k
   } = (0, o.Z)({
     forceFetch: true
@@ -40,11 +40,11 @@ function S(e) {
       className: T.blockedPaymentsWarning
     }), (0, r.jsx)(E.Z, {
       hasGuildBoostSlots: w,
-      hasAppliedGuildBoosts: x,
+      hasAppliedGuildBoosts: L,
       hasBoostPerk: G,
       canAddBoosts: U
     }), k === I.a$.NONE && (0, r.jsx)(O.Z, {
-      hasAppliedGuildBoosts: x,
+      hasAppliedGuildBoosts: L,
       hasBoostPerk: G,
       hasGuildAffinitiesOrInGuild: P,
       subscriptionIsPausedOrPausePending: j
@@ -58,8 +58,8 @@ function S(e) {
       guildBoostSlots: S,
       fractionalPremiumState: k
     }), (0, r.jsx)(y.Z, {
-      canAddBoosts: x && U,
-      canApplyBoosts: L
+      canAddBoosts: L && U,
+      canApplyBoosts: x
     }), (0, r.jsx)(u.Z, {
       className: T.tierComparisonTable,
       hideHeading: true,

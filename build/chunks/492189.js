@@ -108,7 +108,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     };
   Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), M(function() {
-      return O(t) ? $(t) ? true !== r ? new _(t, m(n, o), r) : true !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? x(E, t) : a(C, E, t) : new _(h(t))
+      return O(t) ? $(t) ? true !== r ? new _(t, m(n, o), r) : true !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(C, E, t) : new _(h(t))
     }(), e, E)
   }), S && S(E, K), N(A(_), function(e) {
     e in E || f(E, e, _[e])
@@ -124,7 +124,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
           if (f % o || (s = f - d) < 0) throw new Z(Q)
         } else if ((s = p(r) * o) + d > f) throw new Z(Q);
         l = s / o
-      } else if (q(t)) return x(E, t);
+      } else if (q(t)) return L(E, t);
     else return a(C, E, t);
     else i = new F(s = (l = h(t)) * o);
     for (j(e, {

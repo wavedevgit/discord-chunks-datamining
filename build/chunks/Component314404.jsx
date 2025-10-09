@@ -204,23 +204,23 @@ function Q(e) {
       location: "5f89bb_1"
     })
   }, [J]);
-  let ex = (null == eA ? true : eA.id) != null && Q.includes(eA.id);
+  let eL = (null == eA ? true : eA.id) != null && Q.includes(eA.id);
   i.useEffect(() => {
-    if (!ex) {
+    if (!eL) {
       if (null == eb || ed) eC(Q[0]);
       else if (null != eb) {
         let e = Q.find(e => e !== eb.id);
         null != e && eC(e)
       }
     }
-  }, [ex, ed, Q, eb, eC]), i.useEffect(() => {
+  }, [eL, ed, Q, eb, eC]), i.useEffect(() => {
     eE && null != em && em.length > 0 && eg(em[0])
   }, [em, eg, eE]);
-  let eL = (0, l.Jb)(),
+  let ex = (0, l.Jb)(),
     {
       ref: eM
-    } = eL,
-    ek = z(eL, ["ref"]),
+    } = ex,
+    ek = z(ex, ["ref"]),
     ej = (null == eA ? true : eA.id) != null ? (0, O.aS)(eA.id, false, ed, eN) : true,
     {
       ipCountryCode: eU
@@ -305,7 +305,7 @@ function Q(e) {
     eq = eR.isFractionalPremiumActive && (null == E || ez) && !ed && null != k && G.dJ.has(k);
   if (ed) {
     let e = () => {
-        if ((0, b.MY)(ef) === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != eh) return (0, r.jsx)(x.Z, {
+        if ((0, b.MY)(ef) === b.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != eh) return (0, r.jsx)(L.Z, {
           sectionTitle: F.intl.string(F.t.B3miEx),
           className: V.customGiftMessageWrapper,
           innerClassName: V.customGiftMessage,
@@ -322,7 +322,7 @@ function Q(e) {
       className: V.stepBodyCustomGift,
       children: [(0, r.jsx)("div", {
         className: eu ? V.bodyColumnMiddleCentered : V.bodyColumnMiddle,
-        children: null != e_ && (0, r.jsx)(L.q, {})
+        children: null != e_ && (0, r.jsx)(x.q, {})
       }), (0, r.jsxs)("div", {
         className: V.bodyColumnRight,
         children: [(0, r.jsx)(U.s, {
@@ -333,7 +333,7 @@ function Q(e) {
         })]
       })]
     });
-    let n = ex && et;
+    let n = eL && et;
     return (0, r.jsxs)("div", {
       className: V.stepBody,
       children: [(0, r.jsx)(U.s, {
@@ -344,7 +344,7 @@ function Q(e) {
       })]
     })
   }
-  let eX = !eP && !ew && ex && et;
+  let eX = !eP && !ew && eL && et;
   return (0, r.jsxs)("div", {
     className: V.stepBody,
     children: [eq && (0, r.jsx)(D.n, {

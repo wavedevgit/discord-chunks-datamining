@@ -5,10 +5,10 @@ require.d(exports, {
   $I: () => eX,
   B4: () => eU,
   B6: () => ep,
-  Bd: () => eL,
+  Bd: () => ex,
   GI: () => eN,
   Gd: () => eF,
-  I: () => ex,
+  I: () => eL,
   J2: () => V,
   Jf: () => eO,
   KX: () => eP,
@@ -607,7 +607,7 @@ function eD(e) {
   return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
 }
 
-function ex(e) {
+function eL(e) {
   let t = (0, c.e7)([h.default], () => h.default.locale),
     {
       percentComplete: n
@@ -625,11 +625,11 @@ function ex(e) {
   }
 }
 
-function eL(e, t, n) {
+function ex(e, t, n) {
   var r, i;
   let a = ey(e),
     o = (0, C.b7)(e),
-    s = (0, L.DD)({
+    s = (0, x.DD)({
       quest: e,
       taskDetails: a,
       location: j.dr.QUEST_HOME_DESKTOP,
@@ -782,7 +782,7 @@ function eZ(e) {
     popoutTargetElementRef: l,
     onGameSheetOpened: c,
     onGameSheetClosed: u
-  } = e, d = ep(r.useMemo(() => k.r.build(i.config).rewardsExpireAt, [i.config])), f = ey(i), _ = eO(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eE(i), E = (0, L.DD)({
+  } = e, d = ep(r.useMemo(() => k.r.build(i.config).rewardsExpireAt, [i.config])), f = ey(i), _ = eO(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eE(i), E = (0, x.DD)({
     quest: i,
     location: j.dr.QUESTS_BAR,
     questContent: P.jn.QUEST_BAR_V2,

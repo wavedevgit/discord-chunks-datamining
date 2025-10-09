@@ -121,7 +121,7 @@ function U(e) {
       color: f.Z.Colors.WARNING,
       className: k.errorBlock,
       children: M.intl.string(M.t.OvMyMT)
-    }, "TEST_MODE") : null, (0, A.yE)(U.flags, L.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
+    }, "TEST_MODE") : null, (0, A.yE)(U.flags, x.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
@@ -137,13 +137,13 @@ function U(e) {
       giftRecipient: $
     }) : null, (0, r.jsx)(c.gNt, {
       label: J ? M.intl.string(M.t.PEjaCw) : M.intl.string(M.t.sail9P),
-      children: null != es ? (0, r.jsx)(x.B, {
+      children: null != es ? (0, r.jsx)(L.B, {
         sku: er,
         skuPricePreview: es
       }) : null == z ? (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.WANDERING_CUBES,
         className: k.invoiceSpinner
-      }) : (0, r.jsx)(x.E, {
+      }) : (0, r.jsx)(L.E, {
         sku: er,
         value: ""
       })
@@ -167,8 +167,8 @@ function U(e) {
         finePrintClassname: k.fineprint,
         purchaseType: K,
         isGift: J,
-        checkboxLabel: er.productLine === L.POd.COLLECTIBLES ? M.intl.format(M.t["1EdAlZ"], {
-          paidURL: L.EYA.PAID_TERMS
+        checkboxLabel: er.productLine === x.POd.COLLECTIBLES ? M.intl.format(M.t["1EdAlZ"], {
+          paidURL: x.EYA.PAID_TERMS
         }) : true,
         finePrint: (0, r.jsx)(d.Z, {
           paymentSourceType: e_,

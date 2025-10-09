@@ -95,10 +95,10 @@ function S(e) {
       maxVisibleItems: P = 5,
       loading: w = false,
       onBlur: D,
-      onFocus: x
+      onFocus: L
     } = e,
-    L = i.useId(),
-    M = null != n ? n : L,
+    x = i.useId(),
+    M = null != n ? n : x,
     [k, j] = i.useState(null != E ? E : []),
     U = null != y,
     G = U ? y : k,
@@ -173,7 +173,7 @@ function S(e) {
         } = e, i = v(e, ["ref"]);
         return (0, r.jsx)("div", O(b({
           onBlur: D,
-          onFocus: x,
+          onFocus: L,
           "aria-busy": w,
           ref: n
         }, i), {

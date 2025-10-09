@@ -22,7 +22,7 @@ function b(e) {
   var t, n;
   let {
     channel: b
-  } = e, y = i.useContext(p.AnalyticsContext), _ = (0, c.Aq)(), j = g.intl.string(m.default["Beo/7u"]), {
+  } = e, y = i.useContext(h.AnalyticsContext), _ = (0, c.Aq)(), j = g.intl.string(m.default["Beo/7u"]), {
     firstMessage: x
   } = (0, a.cl)(b), O = null == x || null == (t = x.messageSnapshots) ? true : t[0], v = null == O || null == (n = O.moderatorReport) ? true : n.reported_user_id;
   return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(o.ZP.Icon, {
@@ -30,7 +30,7 @@ function b(e) {
       (0, u.Kh)(b.id), (0, d.i)(), (0, s.r)(b.guild_id, v, b.id, {
         modViewPanel: f.k.INFO,
         sourceLocation: null != location ? location : y.location
-      }), _.dispatch(h.CkL.POPOUT_CLOSE)
+      }), _.dispatch(p.CkL.POPOUT_CLOSE)
     },
     tooltip: j,
     icon: l.HI3,

@@ -20,8 +20,8 @@ function d(e) {
   } = e, {
     horizontalScrollNotice: d,
     handleScroll: u,
-    handleSetScrollerRef: p,
-    handleSetContainerRef: h
+    handleSetScrollerRef: h,
+    handleSetContainerRef: p
   } = (0, o.Z)(t), f = (0, r.jsx)("div", {
     className: c.tierPreviewsContainer,
     children: (0, r.jsx)("div", {
@@ -33,13 +33,13 @@ function d(e) {
     children: [d, (0, r.jsx)(s.Den, {
       className: c.scroller,
       orientation: "horizontal",
-      ref: p,
+      ref: h,
       onScroll: u,
       children: f
     })]
   })), (0, r.jsx)("div", {
     className: c.carouselMaxWidth,
-    ref: h,
+    ref: p,
     children: f
   })
 }

@@ -107,16 +107,16 @@ function q(e, t) {
     popouts: n,
     selected: r,
     setPopout: a
-  } = (0, L.Z)(e.id, j.d$), {
+  } = (0, x.Z)(e.id, j.d$), {
     usernameProfile: o,
     avatarProfile: s
-  } = n, l = (0, x.wq)(e.author.id, t.id), c = (0, x.RN)(e.author.id, t.id, e.id), u = (0, x.XO)(e, t, o, a);
+  } = n, l = (0, L.wq)(e.author.id, t.id), c = (0, L.RN)(e.author.id, t.id, e.id), u = (0, L.XO)(e, t, o, a);
   return {
     selected: r,
     onContextMenu: l,
     onContextMenuModerateUser: c,
     onClickUsername: u,
-    onClickAvatar: (0, x.R9)(s, a),
+    onClickAvatar: (0, L.R9)(s, a),
     onPopoutRequestClose: i.useCallback(() => a({
       usernameProfile: false,
       avatarProfile: false,
@@ -317,9 +317,9 @@ function ei(e) {
     onFocus: N
   } = A, R = K(A, ["onFocus"]), {
     isFocused: D,
-    handleFocus: L,
+    handleFocus: x,
     handleBlur: j
-  } = (0, x.bb)(N), V = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
+  } = (0, L.bb)(N), V = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: z,
     embedChannel: X,
     decisionId: $,
@@ -466,7 +466,7 @@ function ei(e) {
             }),
             popoutProps: ep,
             zalgo: true,
-            onFocus: L,
+            onFocus: x,
             onBlur: j,
             onClick: eE
           }))

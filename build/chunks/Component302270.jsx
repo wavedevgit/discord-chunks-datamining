@@ -46,18 +46,18 @@ function M(e) {
   } = e, {
     analyticsLocations: l,
     newestAnalyticsLocation: o
-  } = (0, p.ZP)(u.Z.VOICE_CHANNEL_HEADER), {
+  } = (0, h.ZP)(u.Z.VOICE_CHANNEL_HEADER), {
     chatOpen: c,
     participantsListOpen: m
-  } = (0, s.cj)([h.Z], () => ({
-    chatOpen: h.Z.getChatOpen(t.id),
-    participantsListOpen: h.Z.getParticipantsListOpen(t.id)
-  }), [t.id]), y = (0, Z.B)(t.id), _ = (0, E.Rk)(t.id, S.pV.REQUESTED_TO_SPEAK_ONLY), {
+  } = (0, s.cj)([p.Z], () => ({
+    chatOpen: p.Z.getChatOpen(t.id),
+    participantsListOpen: p.Z.getParticipantsListOpen(t.id)
+  }), [t.id]), y = (0, Z.B)(t.id), _ = (0, S.Rk)(t.id, E.pV.REQUESTED_TO_SPEAK_ONLY), {
     hasParticipantsPanel: j
   } = (0, f.Z)({
     location: "StageChannelCallHeader"
   }), v = j && m;
-  return (0, r.jsxs)(p.Gt, {
+  return (0, r.jsxs)(h.Gt, {
     value: l,
     children: [(0, r.jsx)(b.Z, {
       channelId: t.id
@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: u
-  } = e, p = (0, m.ZP)(n), h = (0, s.e7)([P.Z], () => P.Z.getStageInstanceByChannel(n.id)), f = (0, E.Io)(n.id), g = (0, E.Rk)(n.id, S.pV.AUDIENCE), b = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id), [n.guild_id]), x = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, O = null != b && b.features.has(w.oNc.COMMUNITY) ? x < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && x <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(T.yP, n)), k = () => {
+  } = e, h = (0, m.ZP)(n), p = (0, s.e7)([P.Z], () => P.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id), [n.guild_id]), x = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, O = null != b && b.features.has(w.oNc.COMMUNITY) ? x < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && x <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(T.yP, n)), k = () => {
     d.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), I.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: A.cd.VIDEO_STAGE_LIMIT,
@@ -144,11 +144,11 @@ function k(e) {
           disabled: true,
           "aria-label": D.intl.string(D.t.EErMzM),
           className: L.icon,
-          color: null != h ? o.Z.colors.HEADER_MUTED.css : true
+          color: null != p ? o.Z.colors.HEADER_MUTED.css : true
         }), (0, r.jsx)(_.ZP.Title, {
           className: L.channelName,
           wrapperClassName: L.channelNameWrapper,
-          children: null != (t = null == h ? true : h.topic) ? t : p
+          children: null != (t = null == p ? true : p.topic) ? t : h
         }), (0, r.jsx)(_.ZP.Divider, {
           className: L.divider
         }), (0, r.jsxs)(_.ZP.Title, {

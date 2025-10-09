@@ -395,7 +395,7 @@ let es = Chunk442837.ZP.connectStores([Chunk542578.Z], e => {
     message: t,
     reaction: n,
     reactionType: r
-  } = e, i = x.Z.getReactions(t.getChannelId(), t.id, n.emoji, V.pTL, r);
+  } = e, i = L.Z.getReactions(t.getChannelId(), t.id, n.emoji, V.pTL, r);
   if (null == i) return {
     reactors: [],
     hasMore: false
@@ -445,9 +445,9 @@ function eu(e) {
     onClose: s,
     transitionState: l,
     "aria-label": c = H.intl.string(H.t.gHp0Cw)
-  } = e, d = (0, u.e7)([w.Z], () => w.Z.getChannel(t.getChannelId())), p = null == d ? true : d.getGuildId(), h = (0, u.e7)([L.Z, O.Z], () => {
+  } = e, d = (0, u.e7)([w.Z], () => w.Z.getChannel(t.getChannelId())), p = null == d ? true : d.getGuildId(), h = (0, u.e7)([x.Z, O.Z], () => {
     var e, n;
-    let r = null != (n = L.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = O.Z.getMessage(Z.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;
+    let r = null != (n = x.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = O.Z.getMessage(Z.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;
     return null != r ? r.reactions : []
   }, [t]), m = el(h), E = m[0], [b, T] = ec(n, null != E ? {
     emoji: E.emoji,

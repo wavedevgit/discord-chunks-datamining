@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  default: () => ex
+  default: () => eL
 }), require("./539854.js"), require("./358797.js"), require("./415506.js");
 var a, Chunk213919 = require("./213919.js"),
   Chunk756647 = require("./756647.js"),
@@ -40,8 +40,8 @@ let N = new Chunk710845.Z("AuthenticationStore"),
   P = "user_id_cache",
   w = null,
   D = null,
-  x = null,
   L = null,
+  x = null,
   M = null,
   k = null,
   j = null,
@@ -249,7 +249,7 @@ function ey(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  Q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, x = i, L = s, en(a), w = n.id, true !== o && (B = o.authenticator_types), u.K.set(P, n.id)
+  Q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, L = i, x = s, en(a), w = n.id, true !== o && (B = o.authenticator_types), u.K.set(P, n.id)
 }
 
 function eO(e) {
@@ -289,7 +289,7 @@ function eT(e) {
   let {
     authSessionIdHash: t
   } = e;
-  null != t && (x = t)
+  null != t && (L = t)
 }
 
 function eS() {
@@ -347,10 +347,10 @@ class eD extends(a = Chunk442837.ZP.Store) {
     return D
   }
   getAuthSessionIdHash() {
-    return x
+    return L
   }
   getStaticAuthSessionId() {
-    return L
+    return x
   }
   getToken() {
     return (0, Chunk449934.LP)()
@@ -394,7 +394,7 @@ class eD extends(a = Chunk442837.ZP.Store) {
   }
 }
 C(eD, "displayName", "AuthenticationStore");
-let ex = new eD(Chunk570140.Z, {
+let eL = new eD(Chunk570140.Z, {
   CONNECTION_OPEN: ey,
   OVERLAY_INITIALIZE: eO,
   CONNECTION_CLOSED: ev,

@@ -89,10 +89,10 @@ function O(e) {
         messageId: T.messageId
       }), w.current = true
     }
-  }, true), x = null != h, L = null != E && false === P, M = x || L, k = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, j = i.useRef(null), U = i.useCallback(() => {
+  }, true), L = null != h, x = null != E && false === P, M = L || x, k = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, j = i.useRef(null), U = i.useCallback(() => {
     let e = j.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), G = i.useMemo(() => !!L && new URL(E).pathname.endsWith(".gif"), [L, E]), B = i.useMemo(() => {
+  }, []), G = i.useMemo(() => !!x && new URL(E).pathname.endsWith(".gif"), [x, E]), B = i.useMemo(() => {
     if (null != S) return e => {
       S(e), (0, p.KX)(T.id, T.linkType, p.j_.CONTENT, T.referrerId, T.activityCustomId)
     }
@@ -107,9 +107,9 @@ function O(e) {
     children: [M && (0, r.jsxs)(y, {
       onClick: Z,
       className: o()(g.bannerWrapper, k, {
-        [g.showVideoOnFocus]: L
+        [g.showVideoOnFocus]: x
       }),
-      children: [L && (G ? (0, r.jsx)("div", {
+      children: [x && (G ? (0, r.jsx)("div", {
         className: g.videoBanner,
         style: {
           backgroundImage: "url(".concat(E, ")")
@@ -121,7 +121,7 @@ function O(e) {
         loop: true,
         muted: true,
         className: g.videoBanner
-      })), x && (0, r.jsx)("div", {
+      })), L && (0, r.jsx)("div", {
         className: g.staticBanner,
         style: {
           backgroundImage: "url(".concat(h, ")")

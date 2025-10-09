@@ -84,8 +84,8 @@ function P(e, t) {
 }
 let w = new Chunk710845.Z("OverlayRenderStore"),
   D = Chunk837268.R5.UNSET,
-  x = false,
   L = false,
+  x = false,
   M = false,
   k = (0, Chunk358085.isWindows)() && Chunk358085.isPlatformEmbedded && !__OVERLAY__,
   j = null,
@@ -103,11 +103,11 @@ function Y(e, t, n) {
 }
 
 function W() {
-  return x
+  return L
 }
 
 function K() {
-  return L
+  return x
 }
 
 function z() {
@@ -454,21 +454,21 @@ async function em(e, t) {
     newLegacyEnabled: e,
     newOopEnabled: t
   });
-  let n = e !== x,
-    r = t !== L;
-  if (x = e, L = t, E.v.update({
-      legacyEnabled: x,
-      oopEnabled: L
+  let n = e !== L,
+    r = t !== x;
+  if (L = e, x = t, E.v.update({
+      legacyEnabled: L,
+      oopEnabled: x
     }), w.info("setOverlayEnabled", {
       newOopEnabled: t,
       newLegacyEnabled: e
-    }), L && r && (0, m.setOutOfProcessSupport)(true), x || L) n && w.info("Legacy change"), r && w.info("OOP change"), ev();
+    }), x && r && (0, m.setOutOfProcessSupport)(true), L || x) n && w.info("Legacy change"), r && w.info("OOP change"), ev();
   else
     for (let e of X()) await eo(e), await (0, a._v)(16)
 }
 
 function eg() {
-  eu(), M = false, B = null, ex()
+  eu(), M = false, B = null, eL()
 }
 
 function eE(e) {
@@ -579,11 +579,11 @@ function eD(e) {
   null != t && s.Z.updateTrackedGame(e.pid, t)
 }
 
-function ex() {
+function eL() {
   Chunk353926.Z.hasLoadedExperiments && !M && (M = true, em(Chunk454991.v.legacyEnabled, Chunk454991.v.oopEnabled))
 }
 
-function eL() {
+function ex() {
   M = false, B = null
 }
 
@@ -592,7 +592,7 @@ function eM() {
 }
 class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594190.ZP, Chunk314897.default, Chunk353926.Z, Chunk624864.Z), this.syncWith([Chunk353926.Z], ex)
+    this.waitFor(Chunk594190.ZP, Chunk314897.default, Chunk353926.Z, Chunk624864.Z), this.syncWith([Chunk353926.Z], eL)
   }
   getDevToolsFocusedPidsWithTimestamp() {
     return H
@@ -668,7 +668,7 @@ class ek extends(r = Chunk442837.ZP.Store) {
 S(ek, "displayName", "OverlayRenderStore");
 let ej = new ek(Chunk570140.Z, !k ? {} : {
     CONNECTION_OPEN: eg,
-    LOGIN: eL,
+    LOGIN: ex,
     LOGOUT: eM,
     EXPERIMENT_OVERRIDE_BUCKET: eg,
     OVERLAY_SET_ENABLED: eE,

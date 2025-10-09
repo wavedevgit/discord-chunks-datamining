@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk491856 = require("./491856.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,7 +52,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -127,7 +127,7 @@ function j(e) {
     channel: o,
     imageUrl: s,
     mimeType: T
-  } = e, L = (0, a.e7)([A.Z], () => A.Z.getGuild(o.guild_id)), {
+  } = e, x = (0, a.e7)([A.Z], () => A.Z.getGuild(o.guild_id)), {
     fetchState: k,
     imageRecCommandContexts: j
   } = (0, R.h)({
@@ -233,11 +233,11 @@ function j(e) {
         },
         context: {
           channel: o,
-          guild: L
+          guild: x
         },
         commandOrigin: t === m.Vh.IMAGE_RECS_SUBMENU ? m.bB.IMAGE_RECS_SUBMENU : m.bB.IMAGE_RECS_MENU
       }))
-    }, [o, L, B, Z, F]);
+    }, [o, x, B, Z, F]);
   return (0, r.jsxs)(l.v2r, {
     onSelect: t,
     navId: "image-context-commands-popout",
@@ -246,7 +246,7 @@ function j(e) {
     children: [(0, r.jsx)(l.sNh, {
       id: "menu-image-rec-header",
       render: () => (0, r.jsx)(l.Text, {
-        className: x.title,
+        className: L.title,
         variant: "text-md/bold",
         color: "header-primary",
         children: D.intl.string(D.t.emnnEB)

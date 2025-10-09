@@ -2,7 +2,7 @@
 /** chunk id: 678334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,13 +36,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk62868 = require("./62868.js"),
   Chunk133529 = require("./133529.js");
 
-function L(e) {
+function x(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: a,
     onNext: s,
-    legalTermsNodeRef: L,
+    legalTermsNodeRef: x,
     flashLegalTerms: M,
     invoiceError: k,
     planError: j,
@@ -98,8 +98,8 @@ function L(e) {
     } = (0, E.H)(ev, ef),
     ew = (0, v.Ap)(J.paymentSourceId),
     eD = eP || eI,
-    ex = (0, m.U)(),
-    eL = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
+    eL = (0, m.U)(),
+    ex = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
     eM = null,
     ek = null;
   if (et === P.GZQ.ONE_TIME) {
@@ -129,7 +129,7 @@ function L(e) {
         trialId: Z,
         priceOptions: J,
         paymentSource: eS,
-        isPrepaidPaymentPastDue: ex,
+        isPrepaidPaymentPastDue: eL,
         openInvoiceId: Y,
         premiumSubscription: t,
         onNext: s,
@@ -141,7 +141,7 @@ function L(e) {
         loadId: el.loadId,
         giftInfoOptions: eO,
         invoicePreview: ec,
-        orderId: eL
+        orderId: ex
       })
     }, eZ = {
       baseAnalyticsData: G,
@@ -171,11 +171,11 @@ function L(e) {
       [D.modalFooterDiscount]: eG
     }, ed, D.modalFooter),
     children: [eG && (0, r.jsx)("img", {
-      src: x.Z,
+      src: L.Z,
       alt: "",
       className: D.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
-      legalTermsNodeRef: L,
+      legalTermsNodeRef: x,
       invoiceError: k,
       planError: j,
       disablePurchase: z,

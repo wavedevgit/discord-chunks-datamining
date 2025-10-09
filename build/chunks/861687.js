@@ -341,7 +341,7 @@ class eC extends Chunk47770.Z {
     this.recordEvent({
       c: 9
     });
-    let t = L.Z.getChannel(this.channelId),
+    let t = x.Z.getChannel(this.channelId),
       n = null == t ? true : t.type;
     this.logger.info("Updating channel: ".concat(e, "(").concat(n, ")")), this._nextChannelId = e, this.channelIds.add(e)
   }
@@ -384,7 +384,7 @@ class eC extends Chunk47770.Z {
   }
   _handleConnecting(e) {
     if (null != this.endpoint) {
-      let e = L.Z.getChannel(this.channelId),
+      let e = x.Z.getChannel(this.channelId),
         t = null == e ? true : e.type;
       this.logger.info("Connecting to RTC server ".concat(this.endpoint, ", rtc-connection-id: ").concat(this.getRTCConnectionId(), ", channel: ").concat(this.channelId, "(").concat(t, ")"))
     }
@@ -474,7 +474,7 @@ class eC extends Chunk47770.Z {
       });
       let n = U.Z.shouldIncludePreferredRegion() ? U.Z.getPreferredRegion() : null,
         i = M.Z.getSettings(),
-        a = L.Z.getChannel(this.channelId),
+        a = x.Z.getChannel(this.channelId),
         o = null == (u = N.Z.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : c.sampleRateMismatchPercent,
         s = ef(eu(ef(eu({}, this._getAnalyticsProperties()), {
           hostname: this.hostname,
@@ -566,7 +566,7 @@ class eC extends Chunk47770.Z {
     });
     let l = M.Z.getMediaEngine(),
       c = D.Z.getPersistentCodesEnabled(),
-      u = null != (s = x.default.getStaticAuthSessionId()) ? s : true,
+      u = null != (s = L.default.getStaticAuthSessionId()) ? s : true,
       d = (0, _.zO)(),
       h = l.connect(this.context, this.userId, eu({
         ssrc: i,
@@ -1285,7 +1285,7 @@ class eC extends Chunk47770.Z {
       camera_device: this.getVideoDeviceName(),
       camera_device_count: Object.keys(M.Z.getVideoDevices()).length
     })), ec(this, "_trackVoiceConnectionConnecting", () => {
-      let e = L.Z.getChannel(this.channelId),
+      let e = x.Z.getChannel(this.channelId),
         t = null == e ? true : e.type;
       B.default.track(es.rMx.VOICE_CONNECTION_CONNECTING, ef(eu({}, this.getAudioDeviceStates(), this.getVideoDeviceStates()), {
         guild_id: this.guildId,
@@ -1314,7 +1314,7 @@ class eC extends Chunk47770.Z {
     let f = M.Z.supports(el.AN.FIRST_FRAME_CALLBACK) && M.Z.supports(el.AN.REMOTE_USER_MULTI_STREAM);
     if (i === el.Yn.DEFAULT) {
       var p;
-      let t = (null == (p = L.Z.getChannel(this.channelId)) ? true : p.type) === es.d4z.GUILD_STAGE_VOICE;
+      let t = (null == (p = x.Z.getChannel(this.channelId)) ? true : p.type) === es.d4z.GUILD_STAGE_VOICE;
       this._localMediaSinkWantsManager = new J.ZP(e, t, f), this._localMediaSinkWantsManager.on(J.ai.Update, e => {
         if (this.state === es.hes.RTC_CONNECTED && null != this._socket) {
           var t;

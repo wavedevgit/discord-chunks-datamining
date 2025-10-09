@@ -118,7 +118,7 @@ function N(e) {
   i.useEffect(() => ((0, m.Ky)(), m.P7), []);
   let D = i.useMemo(() => E ? [...n].sort((e, t) => (0, S.ov)(t, null == M ? true : M.source.id, I, A) - (0, S.ov)(e, null == M ? true : M.source.id, I, A)) : n, [M, E, n, I, A]);
   if (x) {
-    if (!N) {
+    if (false === N) {
       let e = false;
       if ((0, _.isMac)()) {
         var L, B;

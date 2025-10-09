@@ -87,16 +87,16 @@ function D(e) {
   for (let [e, n] of t)
     if (f.Z.isMember(e) && !N.has(e)) {
       let t = _.Z.getGuild(e);
-      for (let e of n) x(e, true, t);
+      for (let e of n) L(e, true, t);
       R(e, n)
     }
 }
-let x = function(e) {
+let L = function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
-    I.set(e.id, e), t && L(e, n)
+    I.set(e.id, e), t && x(e, n)
   },
-  L = function(e) {
+  x = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     if (null == T) return;
     let {
@@ -144,14 +144,14 @@ let x = function(e) {
     if (t) {
       let t = r.findIndex(t => t.id === e.id);
       false !== t ? r[t] = e : r.push(e), S = r
-    }(t || n) && e.stickers.forEach(e => x(e))
+    }(t || n) && e.stickers.forEach(e => L(e))
   },
   k = () => {
     N.forEach((e, t) => {
       let n = _.Z.getGuild(t);
-      null != n && e.forEach(e => L(e, n))
+      null != n && e.forEach(e => x(e, n))
     }), S.forEach(e => {
-      e.stickers.forEach(e => L(e))
+      e.stickers.forEach(e => x(e))
     })
   },
   j = e => {
@@ -166,7 +166,7 @@ let x = function(e) {
 
 function G(e) {
   let t = _.Z.getGuild(e.id);
-  null != t && null != e.stickers.items && (e.stickers.items.forEach(e => x(e, true, t)), R(t.id, e.stickers.items))
+  null != t && null != e.stickers.items && (e.stickers.items.forEach(e => L(e, true, t)), R(t.id, e.stickers.items))
 }
 
 function B(e) {
@@ -209,7 +209,7 @@ let F = () => {
       guildId: t,
       stickers: n
     } = e;
-    n.forEach(e => x(e)), R(t, n)
+    n.forEach(e => L(e)), R(t, n)
   },
   K = e => {
     var t, n;
@@ -217,13 +217,13 @@ let F = () => {
       guildId: r,
       sticker: i
     } = e, a = null != (t = N.get(r)) ? t : [];
-    R(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), x(i)
+    R(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
   },
   z = e => {
     let {
       sticker: t
     } = e;
-    x(t, false)
+    L(t, false)
   },
   q = e => {
     var t;
@@ -240,7 +240,7 @@ let F = () => {
       I.delete(e.id), null != T && T.delete(e.id)
     });
     let a = r.map(e => i(e));
-    a.forEach(e => x(e)), R(n, a)
+    a.forEach(e => L(e)), R(n, a)
   };
 class X extends(r = Chunk442837.ZP.Store) {
   initialize() {

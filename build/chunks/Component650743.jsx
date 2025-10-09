@@ -80,14 +80,14 @@ function T(e) {
     },
     w = (0, c.zu)(a.z.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.Q3)(a.z.SOUNDBOARD_KEYBIND_TIP),
-    x = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTtr, {
+    L = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTtr, {
       keybind: (0, g.BB)(R.shortcut, true),
       openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
         onClick: P,
         children: e
       }, t)
     }) : null;
-  return null == x ? null : (0, r.jsxs)("div", {
+  return null == L ? null : (0, r.jsxs)("div", {
     className: O.keybindHint,
     children: [(0, r.jsx)(o.Mgn, {
       size: "custom",
@@ -99,7 +99,7 @@ function T(e) {
       variant: "text-sm/medium",
       color: "text-default",
       className: O.keybindHintText,
-      children: x
+      children: L
     }), (0, r.jsx)(o.P3F, {
       className: O.closeButton,
       onClick: D,

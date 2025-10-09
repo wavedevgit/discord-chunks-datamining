@@ -59,10 +59,10 @@ let N = 100,
   w = .5,
   D = new Set;
 
-function x(e, t) {
+function L(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class L {
+class x {
   getId() {
     return this.id
   }
@@ -142,7 +142,7 @@ class L {
         let t = false,
           n = (0, y.Zp)(this.questContent);
         if (null != n) {
-          let r = x(e.id, n);
+          let r = L(e.id, n);
           (t = !D.has(r) && (0, y.VB)(this.questContent)) && D.add(r)
         }
         let r = (0, y.jY)(this.questContent);
@@ -192,7 +192,7 @@ class L {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new L({
+      return this.stop(), new x({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -261,7 +261,7 @@ function B(e) {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new L({
+    (i || o) && null != f.current && f.current.stop(), i && (f.current = new x({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,

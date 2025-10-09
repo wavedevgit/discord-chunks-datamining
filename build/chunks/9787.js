@@ -79,8 +79,8 @@ function w(e) {
   return "inert" === e ? P.inert : "aria-hidden" === e ? P["aria-hidden"] : P.none
 }
 let D = new WeakSet,
-  x = null,
-  L = 0,
+  L = null,
+  x = 0,
   M = e => e && (e.host || M(e.parentNode)),
   k = (e, t) => t.map(t => {
     if (e.contains(t)) return t;
@@ -95,8 +95,8 @@ function j(e, t, n, r) {
     s = new Set,
     l = new Set(o),
     c = [];
-  x[i] || (x[i] = new WeakMap);
-  let u = x[i];
+  L[i] || (L[i] = new WeakMap);
+  let u = L[i];
 
   function d(e) {
     !(!e || s.has(e)) && (s.add(e), e.parentNode && d(e.parentNode))
@@ -116,13 +116,13 @@ function j(e, t, n, r) {
         }
     })
   }
-  return o.forEach(d), f(t), s.clear(), L++, () => {
+  return o.forEach(d), f(t), s.clear(), x++, () => {
     c.forEach(e => {
       let t = w(a),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
       t.set(e, n), u.set(e, r), n || (!D.has(e) && a && e.removeAttribute(a), D.delete(e)), r || e.removeAttribute(i)
-    }), --L || (P.inert = new WeakMap, P["aria-hidden"] = new WeakMap, P.none = new WeakMap, D = new WeakSet, x = {})
+    }), --x || (P.inert = new WeakMap, P["aria-hidden"] = new WeakMap, P.none = new WeakMap, D = new WeakSet, L = {})
   }
 }
 let U = null,
@@ -214,7 +214,7 @@ function K(e, t) {
       _ = e
     }
     if (d.length && (0, o.kK)(c) && !(0, a.ex)(c) && !(0, a.r3)(c, s.floating) && Array.from(d).every(e => !(0, a.r3)(_, e))) return;
-    if ((0, o.Re)(c) && L) {
+    if ((0, o.Re)(c) && x) {
       let t = (0, o.Py)(c),
         n = (0, o.Dx)(c),
         r = /auto|scroll/,
@@ -289,7 +289,7 @@ function K(e, t) {
   }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, w, C, D]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
-  let x = i.useMemo(() => ({
+  let L = i.useMemo(() => ({
       onKeyDown: R,
       ..._ && {
         [H[p]]: e => {
@@ -302,7 +302,7 @@ function K(e, t) {
         }
       }
     }), [R, r, _, p]),
-    L = i.useMemo(() => ({
+    x = i.useMemo(() => ({
       onKeyDown: R,
       onMouseDown() {
         O.current = true
@@ -315,9 +315,9 @@ function K(e, t) {
       }
     }), [R, f, l]);
   return i.useMemo(() => c ? {
-    reference: x,
-    floating: L
-  } : {}, [c, x, L])
+    reference: L,
+    floating: x
+  } : {}, [c, L, x])
 }
 
 function z(e) {

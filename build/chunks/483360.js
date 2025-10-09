@@ -134,8 +134,8 @@ let eb = new Chunk710845.Z("AutocompleteUtils"),
   eP = 11,
   ew = 6,
   eD = 8,
-  ex = 1,
-  eL = 1e3,
+  eL = 1,
+  ex = 1e3,
   eM = .2,
   ek = .1,
   ej = 50,
@@ -150,7 +150,7 @@ let eb = new Chunk710845.Z("AutocompleteUtils"),
 function eY() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : true;
-  return eL * module * (null != exports ? exports : 1)
+  return ex * module * (null != exports ? exports : 1)
 }
 
 function eW(e) {
@@ -168,23 +168,23 @@ function eW(e) {
       a = r.filter(e => (0, et.lM)(e));
       break;
     case ec.h8.USER:
-      a = r.filter(e => e instanceof x.Sf && e.type === el.d4z.DM);
+      a = r.filter(e => e instanceof L.Sf && e.type === el.d4z.DM);
       break;
     case ec.h8.GROUP_DM:
-      a = r.filter(e => e instanceof x.Sf && e.isMultiUserDM());
+      a = r.filter(e => e instanceof L.Sf && e.isMultiUserDM());
       break;
     case ec.h8.TEXT_CHANNEL:
-      a = r.filter(e => e instanceof x.Sf && (0, x.r8)(e.type));
+      a = r.filter(e => e instanceof L.Sf && (0, L.r8)(e.type));
       break;
     case ec.h8.VOICE_CHANNEL:
-      a = r.filter(e => e instanceof x.Sf && e.isGuildVocal())
+      a = r.filter(e => e instanceof L.Sf && e.isGuildVocal())
   }
   let o = {};
   for (let t of a) {
     let {
       id: n
     } = t, r = U.Z.getScoreWithoutFetchingLatest(n);
-    if (e === ec.h8.USER && t instanceof x.mn) {
+    if (e === ec.h8.USER && t instanceof L.mn) {
       if (t.type === el.d4z.DM) o[n = t.getRecipientId()] = 1 + r / i;
       else if (t.type === el.d4z.GROUP_DM) {
         let e = t.recipients.length;
@@ -285,7 +285,7 @@ function e$(e) {
     case R.MO.CORRELATED_EMOJI:
       return ew;
     case R.MO.TAG:
-      return ex;
+      return eL;
     case R.MO.GUILD_NAME:
     case R.MO.PACK_NAME:
       return eD;
@@ -295,15 +295,15 @@ function e$(e) {
 }
 
 function e0(e) {
-  return e === B.sH || e !== B.Zb && !!(0, x.Q5)(e)
+  return e === B.sH || e !== B.Zb && !!(0, L.Q5)(e)
 }
 
 function e1(e, t, n) {
-  return e === t || (!!n || !!(0, x.Km)(t)) && (e === B.sH ? (0, x.r8)(t) || (0, x.bw)(t) : e === B.Zb && (0, x.bw)(t))
+  return e === t || (!!n || !!(0, L.Km)(t)) && (e === B.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === B.Zb && (0, L.bw)(t))
 }
 
 function e2(e, t) {
-  return e === B.sH && (0, x.bw)(t)
+  return e === B.sH && (0, L.bw)(t)
 }
 
 function e3(e) {
@@ -551,7 +551,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         y = U.Z.getMaxScore();
       for (let e of t) {
         var O;
-        if (!e1(l, e.type, null != r) || (0, x.Km)(e.type) && !Y.Z.can(u ? e.accessPermissions : el.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
+        if (!e1(l, e.type, null != r) || (0, L.Km)(e.type) && !Y.Z.can(u ? e.accessPermissions : el.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
         let t = [...m],
           i = e.name.toLocaleLowerCase(),
           s = p && n === e.id,
@@ -566,7 +566,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
             c = Math.min(ev - eS, c)
           }
           0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e2(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
-            type: (0, x.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
+            type: (0, L.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
             record: e,
             score: eY(c, d[e.id]),
             comparator: (0, _.F6)(e, X.default, K.Z),
@@ -845,7 +845,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
       })) : [], u = c.length, d = t.toLowerCase(), f = [];
       if (u < el.rnv && o) {
         let e = V.Z.getGuild(n);
-        null != e && (s()(F.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, L.fI)(e)).take(el.rnv - u).forEach(e => {
+        null != e && (s()(F.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, x.fI)(e)).take(el.rnv - u).forEach(e => {
           f.push(e)
         }), u += f.length)
       }
@@ -894,7 +894,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         id: eu.HY.CUSTOMIZE_COMMUNITY,
         name: ef.intl.string(ef.t.h9mGOD)
       }], c = [];
-      for (let e of l)(e.id !== eu.HY.SERVER_GUIDE || a) && (e.id !== eu.HY.CHANNEL_BROWSER || o) && (e.id !== eu.HY.CUSTOMIZE_COMMUNITY || s) && eq(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new x.nl({
+      for (let e of l)(e.id !== eu.HY.SERVER_GUIDE || a) && (e.id !== eu.HY.CHANNEL_BROWSER || o) && (e.id !== eu.HY.CUSTOMIZE_COMMUNITY || s) && eq(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new L.nl({
         id: e.id,
         name: e.name,
         type: el.d4z.UNKNOWN,

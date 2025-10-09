@@ -82,10 +82,10 @@ function N(e) {
   if (i.useEffect(() => {
       if (null == R || M.current) return;
       M.current = true;
-      let e = (0, p.K)(j.Z.getChannel(R.id), true);
-      (0, u.yw)(E.rMx.CHANNEL_OPENED, P(T({}, e, (0, u.$H)(R.id)), {
+      let e = (0, h.K)(j.Z.getChannel(R.id), true);
+      (0, u.yw)(S.rMx.CHANNEL_OPENED, P(T({}, e, (0, u.$H)(R.id)), {
         channel_view: N
-      })), (0, h.a)(E.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, p.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: R.id
       })
     }, [R, N]), null == R || null == w) return null;
@@ -99,7 +99,7 @@ function N(e) {
       draftType: x.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
       toolbar: k,
-      "aria-label": S.intl.string(S.t.Pwe8tL),
+      "aria-label": E.intl.string(E.t.Pwe8tL),
       children: (0, y.ud)({
         channel: R,
         channelName: A,

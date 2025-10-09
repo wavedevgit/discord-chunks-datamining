@@ -43,15 +43,15 @@ function d(e, t) {
   }), e
 }
 let u = Object.freeze({}),
-  p = false,
-  h = {},
+  h = false,
+  p = {},
   f = {},
   g = {},
   m = {},
   b = {};
 class y extends(r = Chunk442837.ZP.Store) {
   isFetching() {
-    return p
+    return h
   }
   getCurrentCategoryId(e) {
     var t;
@@ -59,15 +59,15 @@ class y extends(r = Chunk442837.ZP.Store) {
   }
   getDirectoryEntries(e, t) {
     var n;
-    return null != t ? null == (n = g[e]) ? true : n[t] : h[e]
+    return null != t ? null == (n = g[e]) ? true : n[t] : p[e]
   }
   getDirectoryEntry(e, t) {
     var n;
-    return null == (n = h[e]) ? true : n[t]
+    return null == (n = p[e]) ? true : n[t]
   }
   getDirectoryAllEntriesCount(e) {
     var t;
-    return Object.keys(null != (t = h[e]) ? t : {}).length
+    return Object.keys(null != (t = p[e]) ? t : {}).length
   }
   getDirectoryCategoryCounts(e) {
     var t;
@@ -80,14 +80,14 @@ class y extends(r = Chunk442837.ZP.Store) {
 o(y, "displayName", "GuildDirectoryStore");
 let _ = new y(Chunk570140.Z, {
   GUILD_DIRECTORY_FETCH_START: function() {
-    p = true
+    h = true
   },
   GUILD_DIRECTORY_FETCH_SUCCESS: function(e) {
     let {
       channelId: t,
       entries: n
     } = e;
-    p = false;
+    h = false;
     let r = {},
       i = {};
     n.forEach(e => {
@@ -95,25 +95,25 @@ let _ = new y(Chunk570140.Z, {
       r[t.guildId] = t, null != i[t.primaryCategoryId] ? i[t.primaryCategoryId][t.guildId] = t : i[t.primaryCategoryId] = {
         [t.guildId]: t
       }
-    }), h[t] = r, g[t] = i
+    }), p[t] = r, g[t] = i
   },
   GUILD_DIRECTORY_FETCH_FAILURE: function() {
-    p = false
+    h = false
   },
   GUILD_DIRECTORY_ENTRY_CREATE: function(e) {
     var t, n, r, i, l;
     let {
       channelId: o,
       entry: u
-    } = e, p = (0, a.MQ)(u);
-    if (null == p || (null == (t = h[o]) ? true : t[p.guildId]) != null) return;
-    h[o] = d(c({}, h[o]), {
-      [p.guildId]: p
+    } = e, h = (0, a.MQ)(u);
+    if (null == h || (null == (t = p[o]) ? true : t[h.guildId]) != null) return;
+    p[o] = d(c({}, p[o]), {
+      [h.guildId]: h
     });
-    let f = null != (r = p.primaryCategoryId) ? r : s.AR.UNCATEGORIZED;
+    let f = null != (r = h.primaryCategoryId) ? r : s.AR.UNCATEGORIZED;
     if (g[o] = d(c({}, g[o]), {
         [f]: d(c({}, null == (n = g[o]) ? true : n[f]), {
-          [p.guildId]: p
+          [h.guildId]: h
         })
       }), null != m[o]) {
       let e = null != (l = null == (i = m[o]) ? true : i[f]) ? l : 0;
@@ -127,11 +127,11 @@ let _ = new y(Chunk570140.Z, {
     let {
       channelId: r,
       guildId: i
-    } = e, l = null == (t = h[r]) ? true : t[i];
+    } = e, l = null == (t = p[r]) ? true : t[i];
     if (null == l) return;
     let a = l.primaryCategoryId,
-      s = Object.assign({}, h[r]);
-    delete s[i], null == (n = b[r]) || n.delete(i), b[r] = new Set(b[r]), h[r] = s;
+      s = Object.assign({}, p[r]);
+    delete s[i], null == (n = b[r]) || n.delete(i), b[r] = new Set(b[r]), p[r] = s;
     let o = Object.assign({}, g[r][a]);
     if (delete o[i], g[r] = d(c({}, g[r]), {
         [a]: o
@@ -143,12 +143,12 @@ let _ = new y(Chunk570140.Z, {
     }
   },
   GUILD_DIRECTORY_ENTRY_UPDATE: function(e) {
-    var t, n, r, i, l, o, u, p, f;
+    var t, n, r, i, l, o, u, h, f;
     let {
       channelId: b,
       entry: y
-    } = e, _ = (0, a.MQ)(y), j = null == (t = h[b]) ? true : t[_.guildId];
-    h[b] = d(c({}, h[b]), {
+    } = e, _ = (0, a.MQ)(y), j = null == (t = p[b]) ? true : t[_.guildId];
+    p[b] = d(c({}, p[b]), {
       [_.guildId]: c({}, j, _)
     });
     let x = null != (i = null == j ? true : j.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
@@ -161,7 +161,7 @@ let _ = new y(Chunk570140.Z, {
       })
     }), O !== x && null != m[b] && (m[b] = d(c({}, m[b]), {
       [x]: (null == (o = m[b]) ? true : o[x]) > 0 ? (null == (u = m[b]) ? true : u[x]) - 1 : 0,
-      [O]: (null != (f = null == (p = m[b]) ? true : p[O]) ? f : 0) + 1
+      [O]: (null != (f = null == (h = m[b]) ? true : h[O]) ? f : 0) + 1
     }))
   },
   GUILD_DIRECTORY_CATEGORY_SELECT: function(e) {

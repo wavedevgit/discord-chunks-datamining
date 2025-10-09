@@ -115,10 +115,10 @@ function R(e) {
         e[I] = t, s(e)
       }
     },
-    x = i.useCallback(e => {
+    L = i.useCallback(e => {
       P(e.hex)
     }, []),
-    L = e => {
+    x = e => {
       if ((0, b.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
         t[I] = e.hex, s(t)
@@ -175,8 +175,8 @@ function R(e) {
       selectedIndex: I,
       onColorSelect: U
     }), (0, r.jsx)(T, {
-      onChange: x,
-      onChangeComplete: L,
+      onChange: L,
+      onChangeComplete: x,
       color: R
     }), (0, r.jsxs)("div", {
       className: v.hexInputContainer,

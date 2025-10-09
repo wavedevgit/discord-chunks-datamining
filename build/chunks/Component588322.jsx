@@ -29,7 +29,7 @@ function x(e) {
   if (i.useEffect(() => {
       null == x || I.current || (I.current = true, (0, y.lN)(x))
     }, [x]), null == x || null == v) return null;
-  let E = (0, r.jsx)(f.Z, {
+  let S = (0, r.jsx)(f.Z, {
     channel: x
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -37,9 +37,9 @@ function x(e) {
       channel: x,
       draftType: m.d.ChannelMessage
     }), (0, r.jsx)(u.ZP, {
-      toolbar: E,
+      toolbar: S,
       "aria-label": _.intl.string(_.t.Pwe8tL),
-      children: (0, p.ud)({
+      children: (0, h.ud)({
         channel: x,
         parentChannel: O,
         channelName: C,
@@ -85,7 +85,7 @@ function x(e) {
           })
         },
         handleClick: function() {
-          null != x && (0, h.XU)(x.guild_id, x.id)
+          null != x && (0, p.XU)(x.guild_id, x.id)
         }
       })
     }), (0, r.jsx)("div", {

@@ -190,7 +190,7 @@ function V(e) {
     guildId: d
   } = e;
   i.useEffect(() => {
-    S.default.track(x.rMx.PASSPORT_ROLE_POPOUT_VIEWED, U({
+    S.default.track(L.rMx.PASSPORT_ROLE_POPOUT_VIEWED, U({
       other_user_id: s,
       role_id: l
     }, (0, b.JS)(u), (0, b.hH)(d)))
@@ -265,7 +265,7 @@ function H(e) {
             guildId: a.id,
             channelId: s.id,
             roleId: u.id,
-            subsection: L.Tb.CONNECTIONS,
+            subsection: x.Tb.CONNECTIONS,
             sourceAnalyticsLocations: l
           }), i()
         }

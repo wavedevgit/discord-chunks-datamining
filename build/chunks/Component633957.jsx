@@ -48,7 +48,7 @@ function B(e) {
       application: d,
       channelId: I,
       guildId: w,
-      message: x
+      message: L
     } = e,
     {
       analyticsLocations: B
@@ -87,7 +87,7 @@ function B(e) {
       application: $
     }),
     et = null == W,
-    en = (0, L.NL)({
+    en = (0, x.NL)({
       embeddedActivity: W,
       joinability: ee,
       currentEmbeddedActivity: K,
@@ -199,14 +199,14 @@ function B(e) {
       linkType: j.U.ACTIVITY_INSTANCE,
       guildId: w,
       channelId: I,
-      messageId: x.id
+      messageId: L.id
     }
   })
 }
 let Z = Chunk647438.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
+  } = e, [n, r] = i.useState(0), a = (0, L.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {

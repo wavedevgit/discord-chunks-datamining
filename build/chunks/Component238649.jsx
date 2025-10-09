@@ -36,7 +36,7 @@ let S = (e, t) => {
     } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), A = (0, _.Nx)(), C = (0, E.$)(), N = (0, p.Z)(), R = null != N, P = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
       visibilityPercentageRef: w,
       visibilityPercentage: D
-    } = (0, y.E)(!P), x = (0, s.e7)([f.Z], () => f.Z.affinities), L = !R && x.length > 0;
+    } = (0, y.E)(!P), L = (0, s.e7)([f.Z], () => f.Z.affinities), x = !R && L.length > 0;
     return (0, r.jsx)(d.Gt, {
       value: S,
       children: (0, r.jsx)("div", {
@@ -70,7 +70,7 @@ let S = (e, t) => {
                   referrer: N,
                   enablePremiumBrandRefresh: true
                 })
-              }), L && (0, r.jsx)("div", {
+              }), x && (0, r.jsx)("div", {
                 className: T.affinitiesContainer,
                 children: (0, r.jsx)(g.Z, {
                   textColor: "text-primary",

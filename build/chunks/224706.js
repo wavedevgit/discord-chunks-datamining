@@ -34,8 +34,8 @@ var Chunk664751 = require("./664751.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx");
-let x = 3,
-  L = 20,
+let L = 3,
+  x = 20,
   M = new Chunk710845.Z("GamesActionCreators");
 
 function k(e) {
@@ -282,7 +282,7 @@ let B = {
         })
       }
     };
-    for (; n.length > 0;) r(n.splice(0, L))
+    for (; n.length > 0;) r(n.splice(0, x))
   },
   getDetectableGames() {
     if (!Chunk77498.Z.canFetchDetectableGames()) return;
@@ -360,7 +360,7 @@ let B = {
         distributor_application: j(i, a),
         executable: c,
         publisher: r,
-        report_version: x
+        report_version: L
       },
       retries: 1,
       oldFormErrors: true,

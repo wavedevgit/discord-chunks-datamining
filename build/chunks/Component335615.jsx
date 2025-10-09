@@ -122,8 +122,8 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isOwner: o,
       nick: c,
       user: d,
-      currentUser: p,
-      activities: h,
+      currentUser: h,
+      activities: p,
       applicationStream: g,
       status: y,
       channel: _,
@@ -132,7 +132,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: O,
       premiumSince: v,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), E = i.useRef(null), [S, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -165,7 +165,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       }))
     }, [j]);
     return (0, r.jsx)(A.Z, {
-      targetElementRef: E,
+      targetElementRef: S,
       user: d,
       guildId: j,
       channelId: _.id,
@@ -173,7 +173,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       position: u.tq ? "window_center" : "left",
       spacing: 16,
       onShiftClick: R,
-      shouldShow: S,
+      shouldShow: E,
       onRequestClose: () => {
         Z(false)
       },
@@ -183,15 +183,15 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           onMouseDown: i
         } = e, s = J(e, ["onClick", "onMouseDown"]);
         return (0, r.jsx)(b.Z, Q({
-          ref: E,
+          ref: S,
           className: q.member,
           onContextMenu: N,
           shouldAnimateStatus: $,
           user: d,
-          currentUser: p,
+          currentUser: h,
           nick: c,
           status: y,
-          activities: h,
+          activities: p,
           applicationStream: g,
           isOwner: o,
           premiumSince: T,
@@ -203,14 +203,14 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           guildId: j,
           isMobile: O,
           onClickPremiumGuildIcon: w,
-          selected: S,
+          selected: E,
           itemProps: I,
           nameplate: C,
           onClick: e => {
             e.shiftKey ? null == R || R() : Z(e => !e)
           },
           onMouseDown: e => {
-            S ? e.stopPropagation() : null == i || i(e)
+            E ? e.stopPropagation() : null == i || i(e)
           }
         }, s))
       }
@@ -223,10 +223,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channel: i,
       user: l,
       index: a
-    } = e, s = (0, c.JA)("".concat(a)), o = (0, p.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, p.e7)([G.default], () => G.default.getCurrentUser()), u = (0, p.e7)([M.Z], () => {
+    } = e, s = (0, c.JA)("".concat(a)), o = (0, h.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, h.e7)([G.default], () => G.default.getCurrentUser()), u = (0, h.e7)([M.Z], () => {
       var e;
       return null != t ? null == (e = M.Z.getRole(i.guild_id, t)) ? true : e.name : true
-    }, [i, t]), h = (0, R.K)({
+    }, [i, t]), p = (0, R.K)({
       user: l,
       guildId: i.guild_id,
       location: "ChannelMembers"
@@ -235,7 +235,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isTyping: o,
       currentUser: d,
       colorRoleName: u,
-      nameplate: h
+      nameplate: p
     }))
   }),
   er = Chunk647438.memo(function(e) {
@@ -248,15 +248,15 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       roleId: t,
       guildId: l,
       size: 16
-    }), s = (0, p.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
+    }), s = (0, h.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
     return t === W.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: q.membersGroup,
       children: (0, r.jsx)("div", {
         className: q.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(S.Z, {
+    }) : (0, r.jsxs)(E.Z, {
       className: q.membersGroup,
-      children: [(0, r.jsx)(h.nn4, {
+      children: [(0, r.jsx)(p.nn4, {
         children: Y.intl.format(Y.t.UaqbkZ, {
           title: n,
           count: i
@@ -333,9 +333,9 @@ class el extends Chunk647438.Component {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,
-          children: (0, r.jsx)(h.y5t, {
-            component: (0, r.jsx)(h.nn4, {
-              children: (0, r.jsx)(h.H, {
+          children: (0, r.jsx)(p.y5t, {
+            component: (0, r.jsx)(p.nn4, {
+              children: (0, r.jsx)(p.H, {
                 id: s,
                 children: Y.intl.format(Y.t.JBQxV1, {
                   channel: n.name
@@ -348,7 +348,7 @@ class el extends Chunk647438.Component {
                   ref: s,
                   role: o
                 } = n, c = J(n, ["ref", "role"]);
-                return (0, r.jsx)(h.aVo, Q({
+                return (0, r.jsx)(p.aVo, Q({
                   innerRole: o,
                   innerAriaLabel: Y.intl.string(Y.t["9Oq93t"]),
                   ref: e => {
@@ -452,8 +452,8 @@ class el extends Chunk647438.Component {
             isOwner: c,
             isMobileOnline: d,
             nick: u,
-            activities: p,
-            applicationStream: h,
+            activities: h,
+            applicationStream: p,
             premiumSince: f
           } = a;
           return (0, r.jsx)(en, {
@@ -464,8 +464,8 @@ class el extends Chunk647438.Component {
             status: o,
             isOwner: c,
             nick: u,
-            activities: this._areActivitiesExperimentallyHidden ? [] : p,
-            applicationStream: h,
+            activities: this._areActivitiesExperimentallyHidden ? [] : h,
+            applicationStream: p,
             channel: l,
             guildId: l.guild_id,
             premiumSince: f,
@@ -499,7 +499,7 @@ class el extends Chunk647438.Component {
       } = e.getScrollerState(), r = n + t - this.props.sectionHeight;
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), K(this, "getContentFeedGroup", () => {
-      let e = this.props.groups[E.T];
+      let e = this.props.groups[S.T];
       if ((0, v.R)(e)) return e
     }), K(this, "hasContentFeed", () => null != this.getContentFeedGroup()), K(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
@@ -511,7 +511,7 @@ class el extends Chunk647438.Component {
           rows: n
         } = this.props, r = e.index;
         return function(e, i) {
-          if (e === E.T) {
+          if (e === S.T) {
             let e = n[r + 1 + i];
             return (0, I.iZ)(e)
           }
@@ -546,7 +546,7 @@ class el extends Chunk647438.Component {
           rowsVisible: n
         } = this.getDimensions();
       if (true === n || 0 === n || null == t) return;
-      this.hasContentFeed() && (t = t.filter(e => e.section !== E.T));
+      this.hasContentFeed() && (t = t.filter(e => e.section !== S.T));
       let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(B.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
@@ -571,16 +571,16 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, x.ZP)(_.Z.MEMBER_LIST), s = (0, p.e7)([y.Z], () => y.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, x.ZP)(_.Z.MEMBER_LIST), s = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), o = (0, h.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
     updateMaxRowSeen: m
-  } = (0, E.H)({
+  } = (0, S.H)({
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), j = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), O = i.useCallback((e, t) => {
+  }), b = i.useRef(null), j = (0, p.UBm)("lg") + (0, p.UBm)("xxs"), O = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),

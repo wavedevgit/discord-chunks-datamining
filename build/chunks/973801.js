@@ -40,7 +40,7 @@ var Chunk267603 = require("./267603.js"),
   Chunk328289 = require("./328289.js"),
   Chunk647438 = require("./647438.js");
 require("./603113.js");
-class x extends Chunk665012.M {
+class L extends Chunk665012.M {
   addNode(e) {
     super.addNode(e), this.columnsDirty || (this.columnsDirty = "column" === e.type), "tableheader" === e.type && (this.head = e), "tablebody" === e.type && (this.body = e)
   }
@@ -117,7 +117,7 @@ class x extends Chunk665012.M {
     super(...e), this.headerRows = [], this.columns = [], this.rows = [], this.rowHeaderColumnKeys = new Set, this.head = new(0, l.S)("tableheader", false), this.body = new(0, l.S)("tablebody", false), this.columnsDirty = true
   }
 }
-let L = (0, Chunk647438.createContext)(null),
+let x = (0, Chunk647438.createContext)(null),
   M = (0, Chunk647438.createContext)(null),
   k = (0, Chunk647438.createContext)(null),
   j = (0, Chunk647438.createContext)(null),
@@ -142,7 +142,7 @@ let L = (0, Chunk647438.createContext)(null),
       }, D.createElement(c.FE, e));
     return D.createElement(c.yF, {
       content: d,
-      createCollection: () => new x
+      createCollection: () => new L
     }, n => D.createElement(G, {
       props: e,
       forwardedRef: t,
@@ -158,7 +158,7 @@ function G({
   collection: r
 }) {
   var i;
-  let l, c, u, d = (0, D.useContext)(L);
+  let l, c, u, d = (0, D.useContext)(x);
   t = (0, C.B)((0, D.useMemo)(() => (0, N.l)(t, null == d ? true : d.tableRef), [t, null == d ? true : d.tableRef]));
   let f = (0, _.o)({
       ...e,
@@ -187,7 +187,7 @@ function G({
     P = !!(null == I ? true : I.useDroppableCollectionState);
   (0, D.useRef)(A), (0, D.useRef)(P), (0, D.useEffect)(() => {}, [A, P]);
   let w = false,
-    x = null,
+    L = null,
     M = (0, D.useRef)(null);
   if (A && I) {
     l = I.useDraggableCollectionState({
@@ -196,7 +196,7 @@ function G({
       preview: I.renderDragPreview ? M : true
     }), I.useDraggableCollection({}, l, t);
     let e = I.DragPreview;
-    x = I.renderDragPreview ? D.createElement(e, {
+    L = I.renderDragPreview ? D.createElement(e, {
       ref: M
     }, I.renderDragPreview) : null
   }
@@ -273,7 +273,7 @@ function G({
     collection: r,
     scrollRef: null != (i = null == d ? true : d.scrollRef) ? i : t,
     persistedKeys: (0, s.y)(S, I, c)
-  }))), x)
+  }))), L)
 }
 
 function B(e) {
@@ -535,8 +535,8 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
         within: true
       }),
       {
-        hoverProps: x,
-        isHovered: L
+        hoverProps: L,
+        isHovered: x
       } = (0, y.X)({
         isDisabled: !O.allowsSelection && !O.hasAction,
         onHoverStart: e.onHoverStart,
@@ -578,7 +578,7 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
         defaultClassName: "react-aria-Row",
         values: {
           ...O,
-          isHovered: L,
+          isHovered: x,
           isFocused: I,
           isFocusVisible: A,
           selectionMode: d.selectionManager.selectionMode,
@@ -611,11 +611,11 @@ let H = (0, Chunk873954.G5)("column", (e, t, n) => {
       ...c.dropIndicatorProps,
       ref: j
     }))), D.createElement(Y, {
-      ...(0, E.d)(K, H, b, N, x, null == l ? true : l.dragProps, w),
+      ...(0, E.d)(K, H, b, N, L, null == l ? true : l.dragProps, w),
       ref: u,
       "data-disabled": O.isDisabled || true,
       "data-selected": O.isSelected || true,
-      "data-hovered": L || true,
+      "data-hovered": x || true,
       "data-focused": O.isFocused || true,
       "data-focus-visible": A || true,
       "data-pressed": O.isPressed || true,

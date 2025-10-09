@@ -6,14 +6,14 @@ require.d(exports, {
   AA: () => C,
   Db: () => M,
   Dx: () => S,
-  R: () => x,
+  R: () => L,
   TB: () => N,
   XE: () => w,
   hs: () => R,
   w: () => T,
   xR: () => D,
   xU: () => P,
-  xz: () => L
+  xz: () => x
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -177,7 +177,7 @@ function D(e, t) {
   })
 }
 
-function x(e, t) {
+function L(e, t) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,
@@ -185,7 +185,7 @@ function x(e, t) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   o.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
     volume: e,

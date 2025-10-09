@@ -54,8 +54,8 @@ function b(e) {
   } = e, n = i.useRef(null), [b, y] = (0, l.Wu)([o.ZP], () => [o.ZP.isChannelMuted(t.getGuildId(), t.id), o.ZP.resolvedMessageNotifications(t)], [t]), [_, j] = i.useState(false);
   i.useEffect(() => {
     let e = () => j(true);
-    return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    return c.S.subscribe(p.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      c.S.unsubscribe(p.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
   let x = e => {
@@ -72,7 +72,7 @@ function b(e) {
     align: "right",
     autoInvert: false,
     onRequestClose: () => j(false),
-    renderPopout: e => (0, r.jsx)(p.Z, m(g({}, e), {
+    renderPopout: e => (0, r.jsx)(h.Z, m(g({}, e), {
       channel: t,
       navId: "channel-context",
       label: f.intl.string(f.t.Xm41aW)
@@ -86,7 +86,7 @@ function b(e) {
         ref: n,
         onClick: x,
         tooltip: i ? null : O,
-        icon: b || y !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
+        icon: b || y !== p.bL.ALL_MESSAGES ? a.owu : a.Dkj,
         "aria-label": O,
         selected: i
       }))

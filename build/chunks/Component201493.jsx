@@ -30,19 +30,19 @@ let v = e => {
   } = e, {
     currentCategoryId: C,
     directoryEntries: I,
-    categoryCounts: E,
-    allEntriesCount: S,
+    categoryCounts: S,
+    allEntriesCount: E,
     isLoading: Z
-  } = (0, l.cj)([h.Z], () => {
-    let e = h.Z.getCurrentCategoryId(t.id),
-      n = h.Z.getDirectoryEntries(t.id, e === _.AR.ALL ? null : e),
-      r = h.Z.getDirectoryCategoryCounts(t.id);
+  } = (0, l.cj)([p.Z], () => {
+    let e = p.Z.getCurrentCategoryId(t.id),
+      n = p.Z.getDirectoryEntries(t.id, e === _.AR.ALL ? null : e),
+      r = p.Z.getDirectoryCategoryCounts(t.id);
     return {
       currentCategoryId: e,
       directoryEntries: n,
       categoryCounts: r,
-      allEntriesCount: h.Z.getDirectoryAllEntriesCount(t.id),
-      isLoading: h.Z.isFetching()
+      allEntriesCount: p.Z.getDirectoryAllEntriesCount(t.id),
+      isLoading: p.Z.isFetching()
     }
   });
   i.useEffect(() => () => {
@@ -59,15 +59,15 @@ let v = e => {
       mostRecentQuery: P,
       searchFetching: N,
       searchResults: R
-    } = (0, l.cj)([p.Z], () => {
+    } = (0, l.cj)([h.Z], () => {
       let {
         mostRecentQuery: e,
         fetching: n
-      } = p.Z.getSearchState(t.id);
+      } = h.Z.getSearchState(t.id);
       return {
         mostRecentQuery: e,
         searchFetching: n,
-        searchResults: p.Z.getSearchResults(t.id, e)
+        searchResults: h.Z.getSearchResults(t.id, e)
       }
     }),
     [w, A] = i.useState(P),
@@ -173,8 +173,8 @@ let v = e => {
       u.Su(t.id, e)
     },
     directoryEntries: T,
-    categoryCounts: E,
-    allEntriesCount: S,
+    categoryCounts: S,
+    allEntriesCount: E,
     isLoading: Z
   })
 }

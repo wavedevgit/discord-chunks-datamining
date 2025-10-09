@@ -26,14 +26,14 @@ function y(e) {
   } = e, {
     items: _,
     state: j
-  } = (0, l.cj)([p.Z], () => {
+  } = (0, l.cj)([h.Z], () => {
     var e, n;
-    let r = p.Z.getPins(t.id);
+    let r = h.Z.getPins(t.id);
     return {
       items: null != (e = null == r ? true : r.items) ? e : b,
-      state: null != (n = null == r ? true : r.state) ? n : p.M.LOADING
+      state: null != (n = null == r ? true : r.state) ? n : h.M.LOADING
     }
-  }), x = i.useMemo(() => _.map(e => e.message), [_]), O = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
+  }), x = i.useMemo(() => _.map(e => e.message), [_]), O = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     O && o.Z.ackPins(t.id)
   }, [O, t.id]), (0, c.ZP)(() => {
@@ -57,8 +57,8 @@ function y(e) {
       channel: t,
       onFetch: v,
       messages: x,
-      loading: j === p.M.LOADING,
-      hasMore: j === p.M.LOADED_HAS_MORE,
+      loading: j === h.M.LOADING,
+      hasMore: j === h.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (_.length > 0) return;

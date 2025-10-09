@@ -40,10 +40,7 @@ function g() {
             showHeader: false
           });
         case Chunk332325.Z.ACTIVITY_PRIVACY:
-          return (0, Chunk951288.jsx)(Chunk309739.Z, {
-            className: Chunk830260.body,
-            showHeader: false
-          });
+          return (0, Chunk951288.jsx)(Chunk309739.Z, {});
         case Chunk332325.Z.MY_GAMES:
         default:
           return (0, Chunk951288.jsx)(Chunk293389.Z, {

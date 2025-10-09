@@ -152,7 +152,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       if (n.length > 0) {
         var a, o;
         let e = n[0];
-        E.Q.selectCommandOption(eN, e.name), i = true, (0, l.yw)(L.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+        E.Q.selectCommandOption(eN, e.name), i = true, (0, l.yw)(x.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == r ? true : r.applicationId,
           command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
           argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
@@ -166,7 +166,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       }, {
         at: t
       });
-    if (i) return void f.S.dispatch(L.CkL.SHAKE_APP, {
+    if (i) return void f.S.dispatch(x.CkL.SHAKE_APP, {
       duration: 200,
       intensity: 2
     });
@@ -192,8 +192,8 @@ let k = Chunk647438.forwardRef(function(e, t) {
     hideAutocomplete: et,
     moveSelection: en
   }), {
-    handlePaste: ex,
-    handleGlobalPaste: eL
+    handlePaste: eL,
+    handleGlobalPaste: ex
   } = (0, C.Z)(eN, eT, Y), eM = i.useCallback(e => {
     null == ee || ee()
   }, [ee]), ek = i.useCallback(e => {
@@ -219,13 +219,13 @@ let k = Chunk647438.forwardRef(function(e, t) {
     })], [eN, k, ec, eu]),
     eU = i.useCallback(e => {
       let t = (0, w.Z)(eN, e, k.id);
-      return null == t && (t = (0, x.Z)(eN, e)), t
+      return null == t && (t = (0, L.Z)(eN, e)), t
     }, [k.id, eN]),
     eG = i.useCallback(e => (0, D.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
-      event: L.CkL.GLOBAL_CLIPBOARD_PASTE,
-      handler: eL
+      event: x.CkL.GLOBAL_CLIPBOARD_PASTE,
+      handler: ex
     }), (0, r.jsx)("div", {
       ref: ey,
       className: o()(j, M.slateContainer),
@@ -244,7 +244,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         onFocus: K,
         onBlur: z,
         onClick: eM,
-        onPaste: ex,
+        onPaste: eL,
         onKeyDown: ew,
         onKeyUp: eD,
         decorate: ej,

@@ -75,13 +75,13 @@ function Y(e) {
     maxHeight: q,
     connectedLocation: K,
     renderExternalHeader: Q
-  } = e, X = (0, w.Z)(), J = (0, s.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([j.Z], () => j.Z.getChannel($)), et = (0, T.gb)(J), en = (0, T.uF)(et), er = i.useCallback(() => {
-    (0, E.tg)(G.Ez.PIP)
-  }, []), ei = i.useRef(null), el = (0, s.e7)([S.ZP], () => S.ZP.getFocusedLayout()), ea = el !== G.MI.NO_CHAT, [es, eo] = i.useState(null != (l = null != (t = m.ZP.activityPanelHeight) ? t : q) ? l : null), ec = i.useCallback(e => {
+  } = e, X = (0, w.Z)(), J = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([j.Z], () => j.Z.getChannel($)), et = (0, T.gb)(J), en = (0, T.uF)(et), er = i.useCallback(() => {
+    (0, S.tg)(G.Ez.PIP)
+  }, []), ei = i.useRef(null), el = (0, s.e7)([E.ZP], () => E.ZP.getFocusedLayout()), ea = el !== G.MI.NO_CHAT, [es, eo] = i.useState(null != (l = null != (t = m.ZP.activityPanelHeight) ? t : q) ? l : null), ec = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
-  }, []), ed = i.useRef(null), [eu, ep] = i.useState({
+  }, []), ed = i.useRef(null), [eu, eh] = i.useState({
     width: 0,
     height: 0
   });
@@ -89,21 +89,21 @@ function Y(e) {
     if (null == ed.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      ep({
+      eh({
         width: null != (n = null == (e = ed.current) ? true : e.clientWidth) ? n : 0,
         height: null != (r = null == (t = ed.current) ? true : t.clientHeight) ? r : 0
       })
     });
     return e.observe(ed.current), () => e.disconnect()
   }, []);
-  let eh = eu.width / Math.max(eu.height, 1) < G.I0,
+  let ep = eu.width / Math.max(eu.height, 1) < G.I0,
     ef = 0,
     eg = 0,
     em = (0, P.Z)(null == X ? true : X.id);
   if (!em) {
     let e = eu.width,
       t = eu.height;
-    eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
+    ep ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
     ey = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
@@ -118,7 +118,7 @@ function Y(e) {
       }), e
     }, [e_]),
     ex = function(e, t, n) {
-      let r = (0, p.Z)(e),
+      let r = (0, h.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
       i.useEffect(() => {
@@ -126,7 +126,7 @@ function Y(e) {
         let e = setTimeout(() => s(false), 50);
         return () => clearTimeout(e)
       }, [e]);
-      let o = !h.Z.useReducedMotion && (l || a);
+      let o = !p.Z.useReducedMotion && (l || a);
       return i.useMemo(() => {
         var r, i;
         let l = o ? {
@@ -158,7 +158,7 @@ function Y(e) {
   let eC = null == ev ? true : ev.isFortniteActivity(X.id),
     eI = [];
   null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
-  let eE = e => {
+  let eS = e => {
     var t;
     if (null == e || true === e || e === D.ag) return null;
     let n = ej.get(e.id),
@@ -212,7 +212,7 @@ function Y(e) {
             users: eI,
             size: V,
             max: 6,
-            renderUser: eE
+            renderUser: eS
           }), (0, r.jsxs)("div", {
             className: B.footerButtons,
             children: [(0, r.jsxs)("div", {
@@ -256,7 +256,7 @@ function Y(e) {
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({
                 onConfirm: async () => {
-                  (null == X ? true : X.id) != null && null != $ && await (0, E.nJ)(X.id, $), (0, E.Gj)()
+                  (null == X ? true : X.id) != null && null != $ && await (0, S.nJ)(X.id, $), (0, S.Gj)()
                 }
               })
             },

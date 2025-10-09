@@ -24,10 +24,10 @@ function g(e) {
     sortOrder: b,
     tagFilter: y,
     tagSetting: _
-  } = (0, c.H)(t.id), j = (0, i.e7)([o.Z, p.Z], () => !!(o.Z.getThreadIds(t.id, b, y, _).length > 0) || !!(p.Z.getThreads(t.id, b, y, _).length > 0), [t.id, b, y, _]), x = t.isMediaChannel();
+  } = (0, c.H)(t.id), j = (0, i.e7)([o.Z, h.Z], () => !!(o.Z.getThreadIds(t.id, b, y, _).length > 0) || !!(h.Z.getThreads(t.id, b, y, _).length > 0), [t.id, b, y, _]), x = t.isMediaChannel();
   if (!n || m || x && j) return null;
   let O = g ? x ? f.intl.string(f.t["WP/IEx"]) : f.intl.string(f.t.zfq9V1) : x ? f.intl.string(f.t.p60yFx) : f.intl.string(f.t.SNOqYG);
-  return (0, r.jsx)(h.JO, {
+  return (0, r.jsx)(p.JO, {
     tooltip: O,
     icon: l.d3s,
     onClick: () => s.Z.hideAdminOnboarding(t.id, !g),

@@ -61,15 +61,15 @@ require.d(exports, {
   hQ: () => el,
   iQ: () => ee,
   il: () => e1,
-  jY: () => tL,
+  jY: () => tx,
   lQ: () => J,
   nc: () => eV,
   o9: () => eF,
-  oo: () => ex,
+  oo: () => eL,
   pO: () => ej,
   q6: () => et,
   q8: () => tt,
-  qe: () => tx,
+  qe: () => tL,
   t2: () => em,
   u7: () => tI,
   uN: () => tM,
@@ -182,7 +182,7 @@ let K = e => e.application_id === U.Ev || e.platform === j.M7m.XBOX,
 function q(e, t) {
   if (null == e) returnfalse;
   let n = e.name.toLowerCase(),
-    r = L.r.build(t.config).application.name.toLowerCase();
+    r = x.r.build(t.config).application.name.toLowerCase();
   return K(e) || z(e) ? n === r : null != e.application_id && Q(e.application_id, t)
 }
 
@@ -192,7 +192,7 @@ function X(e, t) {
 }
 
 function Q(e, t) {
-  let n = L.r.build(t.config).applications;
+  let n = x.r.build(t.config).applications;
   return null != n && n.some(t => t.id === e)
 }
 
@@ -524,7 +524,7 @@ function eD(e, t) {
   return null
 }
 
-function ex(e) {
+function eL(e) {
   let {
     quest: {
       config: t
@@ -533,7 +533,7 @@ function ex(e) {
   return n.assignmentMethod === s.j.TIERED && n.rewards.length > 0 && n.rewards.every(e => e.type === c.w.REWARD_CODE)
 }
 
-function eL(e) {
+function ex(e) {
   return null != e.taskConfigV2.tasks[o.X.PLAY_ON_DESKTOP]
 }
 
@@ -541,7 +541,7 @@ function eM(e) {
   let {
     quest: t
   } = e;
-  return eL(t.config)
+  return ex(t.config)
 }
 
 function ek(e) {
@@ -562,18 +562,18 @@ function eU(e) {
 }
 
 function eG(e) {
-  if (!(0, x.CD)("QuestUtils") || null == e) returnfalse;
-  let t = L.r.build(e.config).applications;
+  if (!(0, L.CD)("QuestUtils") || null == e) returnfalse;
+  let t = x.r.build(e.config).applications;
   return null != t && t.length > 1
 }
 
 function eB(e) {
-  let t = L.r.build(e.config).application.id;
+  let t = x.r.build(e.config).application.id;
   return ej(e) && t === k.Ts
 }
 
 function eZ(e, t) {
-  return L.r.build(e.config).features.has(t)
+  return x.r.build(e.config).features.has(t)
 }
 
 function eF(e) {
@@ -587,7 +587,7 @@ function eF(e) {
 }
 
 function eV(e, t) {
-  let n = L.r.build(e.config).application.link;
+  let n = x.r.build(e.config).application.link;
   (0, N._3)({
     questId: e.id,
     questContent: t.content,
@@ -719,7 +719,7 @@ let eW = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
 
 function e2(e) {
   var t, n, r, i;
-  let a = L.r.build(e.config).defaultInGameTask;
+  let a = x.r.build(e.config).defaultInGameTask;
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
     s = eW(a.target, o);
@@ -877,7 +877,7 @@ function tg(e) {
     rewardCode: o,
     selectedPlatformType: s,
     sharedQuestFields: l
-  } = e, c = ex({
+  } = e, c = eL({
     quest: a
   }), u = null != s ? s : null == o ? true : o.platform, d = c ? eF({
     quest: a,
@@ -898,7 +898,7 @@ function tE(e) {
   }) : G.intl.formatToPlainString(G.t.DV47Gx, {
     gamePublisher: n,
     cosponsorName: i
-  }) : G.intl.formatToPlainString(x.m8.getConfig({
+  }) : G.intl.formatToPlainString(L.m8.getConfig({
     location: k.dr.QUEST_DISCLOSURE_MODAL
   }).enabled ? G.t.euizJS : G.t.tOWwxM, {
     gamePublisher: n,
@@ -986,11 +986,11 @@ function tw(e, t) {
 
 function tD(e) {
   var t, n;
-  let r = L.r.build(e).defaultWatchVideoTask;
+  let r = x.r.build(e).defaultWatchVideoTask;
   return null != (n = null != (t = null == r ? true : r.messages.videoEndCtaButtonLabel) ? t : null == r ? true : r.messages.videoEndCtaTitle) ? n : G.intl.string(G.t.iiTtpK)
 }
 
-function tx(e, t) {
+function tL(e, t) {
   var n;
   let {
     quest: r,
@@ -999,7 +999,7 @@ function tx(e, t) {
   return null != i && (null == r ? true : r.id) === e ? i : k.Jp
 }
 
-function tL(e) {
+function tx(e) {
   var t;
   let {
     metadataRaw: n

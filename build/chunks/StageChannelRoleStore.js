@@ -129,7 +129,7 @@ function D() {
   E = {}
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
@@ -138,7 +138,7 @@ function x(e) {
     (null == n || n.guild_id === t.id) && delete E[e]
   }
 }
-class L extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk271383.ZP, Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk979651.Z, Chunk485386.Z)
   }
@@ -164,8 +164,8 @@ class L extends(r = Chunk442837.ZP.Store) {
     return I(e, t, r)
   }
 }
-g(L, "displayName", "StageChannelRoleStore");
-let M = new L(Chunk570140.Z, {
+g(x, "displayName", "StageChannelRoleStore");
+let M = new x(Chunk570140.Z, {
   CHANNEL_UPDATES: C,
   CONNECTION_OPEN: D,
   GUILD_MEMBER_REMOVE: R,
@@ -173,6 +173,6 @@ let M = new L(Chunk570140.Z, {
   GUILD_ROLE_UPDATE: N,
   PASSIVE_UPDATE_V2: w,
   VOICE_STATE_UPDATES: P,
-  GUILD_CREATE: x,
-  GUILD_DELETE: x
+  GUILD_CREATE: L,
+  GUILD_DELETE: L
 })

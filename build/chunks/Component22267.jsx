@@ -43,8 +43,8 @@ let C = {
       innerClassName: P,
       isHighlighted: w,
       showStatus: D,
-      showPlaceholderUser: x,
-      pendingGlobalName: L,
+      showPlaceholderUser: L,
+      pendingGlobalName: x,
       pendingDisplayNameStyles: M,
       avatarDecorationOverride: k,
       nameplatePreviewSize: j = "default",
@@ -53,7 +53,7 @@ let C = {
       width: B
     } = e, Z = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), F = null != a ? (0, v.EU)(a) : N, V = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), H = Z ? "#706F74" : "#aaaab2", Y = i.useRef(null), W = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), K = null != t ? (0, E.Ly)({
       pendingNickname: true,
-      pendingGlobalName: L,
+      pendingGlobalName: x,
       user: t,
       guildMember: W
     }) : true, z = i.useMemo(() => C[j], [j]), q = (0, f.Z)({
@@ -81,11 +81,11 @@ let C = {
           nameplate: F,
           hovered: w,
           placement: m.i.PREVIEW,
-          content: x ? true : Y
+          content: L ? true : Y
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(T.avatarContainer, !x && T.avatarVisible),
+            className: o()(T.avatarContainer, !L && T.avatarVisible),
             children: (0, r.jsx)(u.Z, {
               ref: Y,
               avatar: (0, r.jsx)(d.Z, {
@@ -113,7 +113,7 @@ let C = {
               withDisplayNameStyles: null != q
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(T.avatarContainer, x && T.avatarVisible),
+            className: o()(T.avatarContainer, L && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: Z ? S : A,
               size: z,

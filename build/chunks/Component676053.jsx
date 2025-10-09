@@ -104,10 +104,10 @@ function I(e) {
       height: 720,
       className: m.media
     }), [g, t]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       null !== P.current && P.current.pause(), null == C || C()
     }, [C]),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       null !== P.current && P.current.pause(), null == C || C()
     }, [C]),
     M = i.useCallback(() => {
@@ -146,12 +146,12 @@ function I(e) {
       })]
     });
   return (0, r.jsx)(c.m, y(E({}, R), {
-    onRequestClose: x,
+    onRequestClose: L,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
       ref: N,
       children: [(0, r.jsx)(_.N, {
-        onClick: L
+        onClick: x
       }), (0, r.jsx)(d.$, {
         caretConfig: I
       }), (0, r.jsx)("div", {

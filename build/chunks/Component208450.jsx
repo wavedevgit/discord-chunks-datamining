@@ -211,7 +211,7 @@ class Y extends Chunk647438.PureComponent {
         searchContext: this.props.searchContext,
         navId: V,
         onSelectedIndexChanged: this.handleSelectedIndexChanged
-      }) : (0, r.jsx)(x.ZP, {
+      }) : (0, r.jsx)(L.ZP, {
         ref: this._searchPopoutRef,
         searchContext: this.props.searchContext,
         navId: V,
@@ -522,10 +522,10 @@ function W(e) {
     P = (0, C.KS)({
       location: "Search"
     }),
-    x = A || P,
-    L = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : x ? G.intl.formatToPlainString(G.t.LDZtFB, {
+    L = A || P,
+    x = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : L ? G.intl.formatToPlainString(G.t.LDZtFB, {
       name: I
-    }) : G.intl.string(G.t["5h0QOD"]), [t.type, x, I]);
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, L, I]);
   return (0, r.jsx)(Y, {
     className: n,
     searchContext: t,
@@ -535,8 +535,8 @@ function W(e) {
     keyboardModeEnabled: o,
     onSearch: y,
     isSearchActive: _,
-    placeholder: L,
-    isSearchFiltersRedesignEnabled: x
+    placeholder: x,
+    isSearchFiltersRedesignEnabled: L
   })
 }
 
@@ -545,7 +545,7 @@ function K(e) {
     className: t,
     guildId: n,
     channelId: i
-  } = e, a = (0, L.H)({
+  } = e, a = (0, x.H)({
     guildId: n,
     channelId: i
   });

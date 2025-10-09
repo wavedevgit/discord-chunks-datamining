@@ -61,8 +61,8 @@ function N(e) {
     children: n,
     initialTab: a,
     guildId: o
-  } = e, T = (0, s.e7)([m.Z], () => m.Z.getGuild(o)), C = (0, s.e7)([_.Z], () => _.Z.isViewingServerShop(o)), N = (0, b.g)(T, "guild_shop_page"), R = (0, E.RF)(o, "guild_shop_page"), P = (null == T ? true : T.features.has(I.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, w = (0, f.mY)(null == T ? true : T.id), D = w && R, x = null == (t = (0, d.YB)(o)) ? true : t.server_shop_tab_order, L = [], M = y.y.GUILD_SHOP_FULL_PREVIEW;
-  C || P && w ? (L.push(x === O.a3.PRODUCTS_FIRST ? y.y.GUILD_PRODUCTS : y.y.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.a3.PRODUCTS_FIRST ? y.y.GUILD_ROLE_SUBSCRIPTIONS : y.y.GUILD_PRODUCTS), M = L[0]) : P && !w ? (L.push(y.y.GUILD_PRODUCTS), M = y.y.GUILD_PRODUCTS) : !P && w && (L.push(y.y.GUILD_ROLE_SUBSCRIPTIONS), M = y.y.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(y.y.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : M;
+  } = e, T = (0, s.e7)([m.Z], () => m.Z.getGuild(o)), C = (0, s.e7)([_.Z], () => _.Z.isViewingServerShop(o)), N = (0, b.g)(T, "guild_shop_page"), R = (0, E.RF)(o, "guild_shop_page"), P = (null == T ? true : T.features.has(I.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, w = (0, f.mY)(null == T ? true : T.id), D = w && R, L = null == (t = (0, d.YB)(o)) ? true : t.server_shop_tab_order, x = [], M = y.y.GUILD_SHOP_FULL_PREVIEW;
+  C || P && w ? (x.push(L === O.a3.PRODUCTS_FIRST ? y.y.GUILD_PRODUCTS : y.y.GUILD_ROLE_SUBSCRIPTIONS), x.push(L === O.a3.PRODUCTS_FIRST ? y.y.GUILD_ROLE_SUBSCRIPTIONS : y.y.GUILD_PRODUCTS), M = x[0]) : P && !w ? (x.push(y.y.GUILD_PRODUCTS), M = y.y.GUILD_PRODUCTS) : !P && w && (x.push(y.y.GUILD_ROLE_SUBSCRIPTIONS), M = y.y.GUILD_ROLE_SUBSCRIPTIONS, N && x.push(y.y.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : M;
   let [k, j] = i.useState(a), U = N && !D || k === y.y.GUILD_PRODUCTS_PREVIEW;
   i.useEffect(() => {
     j(a)
@@ -81,7 +81,7 @@ function N(e) {
     value: {
       selectedTab: k,
       setSelectedTab: j,
-      categoryTabs: L,
+      categoryTabs: x,
       isPhantomPreview: U,
       handlePreviewDismiss: G
     },

@@ -92,8 +92,8 @@ function T(e) {
       rows: P = 3,
       disabled: w,
       label: D,
-      hideLabel: x,
-      description: L,
+      hideLabel: L,
+      description: x,
       helperText: M,
       successMessage: k,
       inputRef: j
@@ -126,8 +126,8 @@ function T(e) {
     }) : null;
   return (0, r.jsx)(s.gNt, {
     label: D,
-    hideLabel: x,
-    description: L,
+    hideLabel: L,
+    description: x,
     helperText: M,
     successMessage: k,
     trailingContent: V,

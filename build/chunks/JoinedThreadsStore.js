@@ -77,7 +77,7 @@ function y(e) {
 function O(e) {
   let t = h[e];
   m.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-    h[e].muted = false, (g = new Set(g)).delete(e), L.emitChange()
+    h[e].muted = false, (g = new Set(g)).delete(e), x.emitChange()
   }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
@@ -210,7 +210,7 @@ function D(e) {
     }, O(e.id), r = true)
   }), r
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   hasJoined(e) {
     return e in h
   }
@@ -236,8 +236,8 @@ class x extends(r = Chunk442837.ZP.Store) {
     return g.has(e)
   }
 }
-d(x, "displayName", "JoinedThreadsStore");
-let L = new x(Chunk570140.Z, {
+d(L, "displayName", "JoinedThreadsStore");
+let x = new L(Chunk570140.Z, {
     CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: I,
     GUILD_CREATE: T,
@@ -253,4 +253,4 @@ let L = new x(Chunk570140.Z, {
     THREAD_MEMBER_LOCAL_UPDATE: w,
     THREAD_MEMBERS_UPDATE: D
   }),
-  M = L
+  M = x

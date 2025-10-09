@@ -16,7 +16,7 @@ require.d(exports, {
   gU: () => ee,
   gl: () => Z,
   is: () => D,
-  it: () => x,
+  it: () => L,
   lL: () => $,
   lx: () => X,
   m0: () => M,
@@ -25,7 +25,7 @@ require.d(exports, {
   qm: () => q,
   w: () => Q,
   wF: () => j,
-  xw: () => L
+  xw: () => x
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
@@ -139,13 +139,13 @@ async function D(e) {
     rejectWithError: false
   })
 }
-async function x() {
+async function L() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: false
   })
 }
-async function L() {
+async function x() {
   if (!Chunk569984.Z.isFetchingCurrentQuests) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"

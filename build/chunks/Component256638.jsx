@@ -2,7 +2,7 @@
 /** chunk id: 256638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eL,
+  Z: () => ex,
   c: () => ew
 });
 var Chunk951288 = require("./951288.js"),
@@ -122,7 +122,7 @@ let eA = e => {
     let {
       error: n,
       allowClick: i = false
-    } = e, a = null == (t = (0, x.hp)(n)) ? true : t.errorCode, o = ey.intl.formatToPlainString(ey.t["ejOT9/"], {
+    } = e, a = null == (t = (0, L.hp)(n)) ? true : t.errorCode, o = ey.intl.formatToPlainString(ey.t["ejOT9/"], {
       errorCode: a
     }), s = (0, r.jsx)(c.Text, {
       variant: "text-sm/bold",
@@ -200,13 +200,13 @@ function ew(e) {
 function eD(e) {
   return null != e ? eu.m9[e] : null
 }
-let ex = Chunk647438.memo(function() {
+let eL = Chunk647438.memo(function() {
   var e, t;
   let a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     p = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     I = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.getNotice()),
     {
-      analyticsLocations: x
+      analyticsLocations: L
     } = (0, Chunk906732.ZP)(),
     ed = null == Chunk100527 ? true : Chunk100527.type,
     eh = (0, Chunk281956.J)(Chunk254854);
@@ -226,7 +226,7 @@ let ex = Chunk647438.memo(function() {
   let ev = null != Chunk626135 ? Chunk933429.zD[Chunk626135] : null,
     eT = null != Chunk626135 ? Chunk933429.o[Chunk626135] : null,
     eA = null != Chunk626135 ? Chunk933429.nA[Chunk626135] : null,
-    ex = eD(Chunk626135);
+    eL = eD(Chunk626135);
   if (null == Chunk100527) return null;
   if (null != ev) return (0, Chunk951288.jsx)(Chunk132144.W, {
     dismissibleContent: ev,
@@ -239,11 +239,11 @@ let ex = Chunk647438.memo(function() {
   if (null != eA) return (0, Chunk951288.jsx)(Chunk196068.c, {
     dismissibleContent: eA
   });
-  if (null != ex) return (0, Chunk951288.jsx)(Chunk749277.A, {
-    dismissibleContent: ex,
+  if (null != eL) return (0, Chunk951288.jsx)(Chunk749277.A, {
+    dismissibleContent: eL,
     noticeType: Chunk100527.type
   });
-  let eL = null == (e = Chunk100527.metadata) ? true : module.premiumType;
+  let ex = null == (e = Chunk100527.metadata) ? true : module.premiumType;
   switch (Chunk100527.type) {
     case Chunk981631.kVF.LURKING_GUILD:
       return (0, Chunk951288.jsx)(Chunk859428.Z, {});
@@ -698,7 +698,7 @@ let ex = Chunk647438.memo(function() {
       return (0, Chunk951288.jsx)(Chunk918658.Z, {});
     case Chunk981631.kVF.PREMIUM_UNCANCEL:
       return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
-        color: eL === Chunk474936.PremiumTypes.TIER_1 ? Chunk481060.DM8.PREMIUM_TIER_1 : eL === Chunk474936.PremiumTypes.TIER_0 ? Chunk481060.DM8.PREMIUM_TIER_0 : Chunk481060.DM8.PREMIUM_TIER_2,
+        color: ex === Chunk474936.PremiumTypes.TIER_1 ? Chunk481060.DM8.PREMIUM_TIER_1 : ex === Chunk474936.PremiumTypes.TIER_0 ? Chunk481060.DM8.PREMIUM_TIER_0 : Chunk481060.DM8.PREMIUM_TIER_2,
         children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
           noticeType: Chunk981631.kVF.PREMIUM_UNCANCEL,
           onClick: () => {
@@ -709,9 +709,9 @@ let ex = Chunk647438.memo(function() {
           size: "md",
           color: "currentColor",
           className: Chunk50953.premiumIcon
-        }), eL === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.fXv4ws, {
+        }), ex === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.fXv4ws, {
           daysLeft: Chunk100527.metadata.daysLeft
-        }) : eL === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZOHZMj, {
+        }) : ex === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZOHZMj, {
           daysLeft: Chunk100527.metadata.daysLeft
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.outyHh, {
           daysLeft: Chunk100527.metadata.daysLeft
@@ -725,13 +725,13 @@ let ex = Chunk647438.memo(function() {
               } = await Promise.all([require.e("17938"), require.e("84992"), require.e("11394")]).then(require.bind(require, 561623));
               return t => (0, r.jsx)(e, eS(eI({}, t), {
                 daysLeft: I.metadata.daysLeft,
-                premiumType: eL,
+                premiumType: ex,
                 analyticsSource: "Nag Bar",
                 premiumSubscription: I.metadata.premiumSubscription
               }))
             })
           },
-          children: eL === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.BkbUPD) : eL === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.string(Chunk388032.t.Px978f) : Chunk388032.intl.string(Chunk388032.t.LW5tCA)
+          children: ex === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.BkbUPD) : ex === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.string(Chunk388032.t.Px978f) : Chunk388032.intl.string(Chunk388032.t.LW5tCA)
         })]
       });
     case Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT:
@@ -806,9 +806,9 @@ let ex = Chunk647438.memo(function() {
             var e, t;
             ew(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd)
           }
-        }), eL === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.b6QUvb, {
+        }), ex === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.b6QUvb, {
           daysLeft: Chunk100527.metadata.daysLeft
-        }) : eL === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["tURZ/P"], {
+        }) : ex === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["tURZ/P"], {
           daysLeft: Chunk100527.metadata.daysLeft
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.AyC74O, {
           daysLeft: Chunk100527.metadata.daysLeft
@@ -820,7 +820,7 @@ let ex = Chunk647438.memo(function() {
               section: Chunk981631.oAB.SUBSCRIPTIONS
             })
           },
-          children: eL === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.lboF5O) : eL === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.string(Chunk388032.t["4UPwOj"]) : Chunk388032.intl.string(Chunk388032.t["P/VvGR"])
+          children: ex === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.string(Chunk388032.t.lboF5O) : ex === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.string(Chunk388032.t["4UPwOj"]) : Chunk388032.intl.string(Chunk388032.t["P/VvGR"])
         })]
       });
     case Chunk981631.kVF.BACK_TO_PREVIOUS_SCREEN:
@@ -958,12 +958,12 @@ let ex = Chunk647438.memo(function() {
   }
 });
 
-function eL() {
+function ex() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTICE);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk951288.jsx)(ex, {})
+    children: (0, Chunk951288.jsx)(eL, {})
   })
 }

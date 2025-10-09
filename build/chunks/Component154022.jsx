@@ -169,7 +169,7 @@ function er(e) {
           variant: "text-md/normal",
           children: H.intl.format(H.t.DHpTjY, {
             onAppearanceClick() {
-              a(L.n.APPEARANCE_PANEL, {
+              a(x.n.APPEARANCE_PANEL, {
                 section: Z.oAB.APPEARANCE
               })
             }
@@ -500,7 +500,7 @@ function eh() {
   let e = Chunk695346.Wp.useSetting(),
     t = (0, Chunk442837.e7)([Chunk263937.Z], () => Chunk263937.Z.getAppliedOverrideReasonKey("animateStickers")),
     n = Chunk647438.useCallback(e => {
-      x.Wp.updateSetting(e)
+      L.Wp.updateSetting(e)
     }, []);
   return (0, Chunk951288.jsx)(Chunk538534.E, {
     label: Chunk388032.intl.string(Chunk388032.t["6NtAuL"]),
@@ -548,7 +548,7 @@ function em() {
               location: {
                 section: Z.jXE.SETTINGS_ACCESSIBILITY
               }
-            }), x.dN.updateSetting(e)
+            }), L.dN.updateSetting(e)
           }
         })
       })]

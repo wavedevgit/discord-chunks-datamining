@@ -74,8 +74,8 @@ function T(e) {
     (0, u.XV)()
   }, []);
   let D = (0, a.cj)([d.Z], () => w ? d.Z.videoFilterAssets : {}),
-    x = i.useMemo(() => Object.values(D).filter(e => e.type === m.xV.BACKGROUND), [D]),
-    L = (0, s.O)(),
+    L = i.useMemo(() => Object.values(D).filter(e => e.type === m.xV.BACKGROUND), [D]),
+    x = (0, s.O)(),
     M = {
       isVideoBackgroundSupported: P,
       onSelectBackgroundOption: v,
@@ -108,10 +108,10 @@ function T(e) {
     },
     U = e => {
       v(e), (0, _.FU)(e, T, {
-        location: L.location
+        location: x.location
       }).then(() => R(null)).catch(() => {
         R(b.intl.string(b.t.ejrSLS)), (0, _.FU)(null, T, {
-          location: L.location
+          location: x.location
         })
       })
     },
@@ -122,7 +122,7 @@ function T(e) {
         } = await n.e("87200").then(n.bind(n, 592163));
         return n => (0, r.jsx)(e, I(O({}, n), {
           onLearnMore: t,
-          analyticsSource: I(O({}, L.location), {
+          analyticsSource: I(O({}, x.location), {
             object: g.qAy.BUTTON_CTA
           })
         }))
@@ -135,7 +135,7 @@ function T(e) {
       errorMessage: N,
       children: (0, r.jsx)(h.Z, {
         canUseCustomBackgrounds: w,
-        customBackgroundOptions: x,
+        customBackgroundOptions: L,
         selectedOption: y,
         onSelectOption: U,
         onUpsellClick: G,

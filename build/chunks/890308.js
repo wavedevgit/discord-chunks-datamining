@@ -68,7 +68,7 @@ e = require.nmd(module),
       return I(r + (v + 1) * e / (e + _))
     }
 
-    function x(e) {
+    function L(e) {
       var t, n, r, i, a, o, s, l, _, p, E = [],
         b = e.length,
         y = 0,
@@ -82,7 +82,7 @@ e = require.nmd(module),
       return R(E)
     }
 
-    function L(e) {
+    function x(e) {
       var t, n, r, i, a, o, s, l, _, p, E, b, y, O, v, A = [];
       for (o = 0, b = (e = N(e)).length, t = m, n = 0, a = h; o < b; ++o)(E = e[o]) < 128 && A.push(T(E));
       for (r = i = A.length, i && A.push(g); r < b;) {
@@ -98,13 +98,13 @@ e = require.nmd(module),
 
     function M(e) {
       return C(e, function(e) {
-        return E.test(e) ? x(e.slice(4).toLowerCase()) : e
+        return E.test(e) ? L(e.slice(4).toLowerCase()) : e
       })
     }
 
     function k(e) {
       return C(e, function(e) {
-        return b.test(e) ? "xn--" + L(e) : e
+        return b.test(e) ? "xn--" + x(e) : e
       })
     }
     if (s = {
@@ -113,8 +113,8 @@ e = require.nmd(module),
           decode: N,
           encode: R
         },
-        decode: x,
-        encode: L,
+        decode: L,
+        encode: x,
         toASCII: k,
         toUnicode: M
       }, "function" == typeof define && "object" == typeof define.amd && define.amd) define("punycode", function() {
