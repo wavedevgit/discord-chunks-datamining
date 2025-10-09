@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 611611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -50,15 +50,10 @@ function w(e) {
     selectedDuration: t,
     onSelect: n
   } = e, l = (0, b.Z)(), a = l[t];
-  return (0, r.jsxs)("div", {
+  return (0, r.jsx)("div", {
     className: v.duration,
-    children: [(0, r.jsx)(s.Text, {
-      variant: "text-md/medium",
-      color: "header-secondary",
-      tag: "label",
-      "aria-hidden": true,
-      children: h.intl.string(h.t.bGHzxc)
-    }), (0, r.jsx)(s.PhF, {
+    children: (0, r.jsx)(s.PhF, {
+      label: h.intl.string(h.t.bGHzxc),
       "aria-label": h.intl.formatToPlainString(h.t.nXNHND, {
         duration: a
       }),
@@ -73,25 +68,21 @@ function w(e) {
       isSelected: e => e === t,
       select: n,
       serialize: e => "".concat(e),
-      renderOptionLabel: e => (0, r.jsx)(s.Text, {
-        variant: "text-sm/normal",
-        children: e.label
-      }),
       popoutPosition: "top"
-    })]
+    })
   })
 }
 
-function x(e) {
+function k(e) {
   let {
     channel: t,
     transitionState: n,
     onClose: b,
-    initialQuestion: k,
-    initialAnswers: C,
+    initialQuestion: C,
+    initialAnswers: x,
     initialDuration: R
   } = e;
-  (0, d.Z)({
+  (0, f.Z)({
     type: y.n.MODAL,
     name: a.z.POLL_EDITOR_VIEWED
   });
@@ -110,8 +101,8 @@ function x(e) {
       answers: A,
       question: I,
       allowMultiSelect: N,
-      setAllowMultiSelect: L,
-      duration: U,
+      setAllowMultiSelect: U,
+      duration: L,
       setDuration: T,
       handleQuestionChange: Z,
       handleAnswerTextChange: B,
@@ -128,8 +119,8 @@ function x(e) {
       shouldFocusOnInvalidField: X,
       setShouldFocusOnInvalidField: J
     } = (0, p.Z)(t, b, D, {
-      initialQuestion: k,
-      initialAnswers: C,
+      initialQuestion: C,
+      initialAnswers: x,
       initialDuration: R
     }),
     {
@@ -156,7 +147,7 @@ function x(e) {
   l.useEffect(() => {
     (0, s.oav)(O.$z, e => {
       var n, l;
-      return (0, r.jsx)(x, (n = function(e) {
+      return (0, r.jsx)(k, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -206,7 +197,7 @@ function x(e) {
   let en = l.useCallback(() => {
       n === s.Dvm.ENTERED && F()
     }, [F, n]),
-    er = (0, f.Z)({
+    er = (0, d.Z)({
       disabled: V,
       onSubmit: en
     }),
@@ -224,7 +215,7 @@ function x(e) {
     actionBarInput: (0, r.jsx)(c.VL, {
       className: v.checkbox,
       checked: N,
-      onChange: e => L(e),
+      onChange: e => U(e),
       label: h.intl.string(h.t["Ux+iQU"])
     }),
     children: (0, r.jsxs)("div", {
@@ -274,7 +265,7 @@ function x(e) {
       }), (0, r.jsx)(s.LZC, {
         size: 18
       }), (0, r.jsx)(w, {
-        selectedDuration: U,
+        selectedDuration: L,
         onSelect: T
       })]
     })

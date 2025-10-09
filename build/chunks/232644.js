@@ -1,8 +1,10 @@
-/** Chunk was on 82928 **/
-/** chunk id: 232644, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 84071 **/
+/** chunk id: 232644, original params: e,t,n (module,exports,require) **/
 module.exports = {
   card: "card__39b32",
   container: "container__39b32",
+  smallCard: "smallCard__39b32",
+  largeCard: "largeCard__39b32",
   giftSent: "giftSent__39b32",
   cardPreview: "cardPreview__39b32",
   cardStateIconWrapper: "cardStateIconWrapper__39b32",

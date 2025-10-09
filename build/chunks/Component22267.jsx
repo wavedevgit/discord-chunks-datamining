@@ -33,7 +33,7 @@ let C = {
     large: Chunk481060.EFr.SIZE_40,
     default: Chunk481060.EFr.SIZE_32
   },
-  N = e => {
+  N = Chunk647438.memo(function(e) {
     let {
       user: t,
       guildId: n,
@@ -56,13 +56,13 @@ let C = {
       pendingGlobalName: x,
       user: t,
       guildMember: W
-    }) : true, z = C[k], q = (0, f.Z)({
+    }) : true, z = i.useMemo(() => C[k], [k]), q = (0, f.Z)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: M
-    }), X = null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
+    }), X = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
       a11y_text: a.label
-    }) : I.intl.string(I.t.SZeUdX);
+    }) : I.intl.string(I.t.SZeUdX), [a]);
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": X,
@@ -128,4 +128,4 @@ let C = {
         })]
       })
     })
-  }
+  })

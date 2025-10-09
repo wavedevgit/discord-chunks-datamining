@@ -1,4 +1,4 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk624238 = require("./624238.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -22,48 +22,48 @@ function O(e) {
   var t;
   let {
     tags: r,
-    isCurrentUser: o,
+    isCurrentUser: a,
     widgetType: c,
     applicationId: s,
     className: u,
     disableInteraction: O = false
-  } = e, v = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], _ = v.length > 0, w = l.qH, P = o && !O && (0, f.M8)(c) && v.length < w, {
-    trackUserProfileAction: E
-  } = (0, d.KZ)(), I = (0, i.useRef)(new Map), S = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [k, C] = (0, i.useState)(false), Z = h(S, T, v, I, N);
+  } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], _ = h.length > 0, w = l.qH, P = a && !O && (0, f.M8)(c) && h.length < w, {
+    trackUserProfileAction: I
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, k] = (0, i.useState)(0), [N, C] = (0, i.useState)(false), Z = v(E, T, h, S, k);
   if ((0, i.useEffect)(() => (Z(), window.addEventListener("resize", Z), () => {
       window.removeEventListener("resize", Z)
-    }), [Z, null == v ? true : v.join("")]), !_ && !P) return null;
-  let A = k ? v : v.slice(0, v.length - D);
+    }), [Z, null == h ? true : h.join("")]), !_ && !P) return null;
+  let A = N ? h : h.slice(0, h.length - D);
   return (0, n.jsxs)("div", {
-    className: a()(m.tagListContainer, u),
+    className: o()(m.tagListContainer, u),
     children: [_ && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("ul", {
         className: m.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
         children: A.map(e => (0, n.jsx)(y, {
           tag: e,
-          isCurrentUser: o,
+          isCurrentUser: a,
           applicationId: s,
           widgetType: c,
           ref: t => {
-            null != t && I.current.set(e, t)
+            null != t && S.current.set(e, t)
           },
           disableInteraction: O
         }, e))
-      }), D > 0 && (k ? (0, n.jsx)(x, {
+      }), D > 0 && (N ? (0, n.jsx)(x, {
         onClick: () => {
-          C(false), E({
+          C(false), I({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, n.jsx)(j, {
         numHidden: D,
         onClick: () => {
-          C(true), E({
+          C(true), I({
             action: "EXPAND_GAME_TAGS"
           })
         },
-        ref: S,
+        ref: E,
         disableInteraction: O
       }))]
     }), P && (0, n.jsx)(g.Z, {
@@ -79,8 +79,8 @@ let y = e => {
       tag: t,
       isCurrentUser: r,
       applicationId: i,
-      widgetType: o,
-      disableInteraction: a,
+      widgetType: a,
+      disableInteraction: o,
       ref: l
     } = e, {
       trackUserProfileEditAction: u
@@ -99,13 +99,13 @@ let y = e => {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: O()
-      }), r && !a && (0, n.jsx)(c.u, {
+      }), r && !o && (0, n.jsx)(c.u, {
         text: b.intl.string(b.t.Otv9fH),
         children: (0, n.jsx)(s.P3F, {
           onClick: () => {
-            (0, f.RZ)(o, i, t), u({
+            (0, f.RZ)(a, i, t), u({
               action: "TAG_REMOVED",
-              widgetEdited: o,
+              widgetEdited: a,
               gameId: i
             })
           },
@@ -126,7 +126,7 @@ let y = e => {
       numHidden: t,
       onClick: r,
       disableInteraction: i,
-      ref: o
+      ref: a
     } = e;
     return i ? (0, n.jsx)("div", {
       className: m.expandButton,
@@ -141,7 +141,7 @@ let y = e => {
       children: (0, n.jsx)(s.P3F, {
         onClick: r,
         className: m.expandButton,
-        innerRef: o,
+        innerRef: a,
         "aria-label": b.intl.string(b.t.mriLXF),
         children: (0, n.jsx)(s.Text, {
           variant: "text-xxs/medium",
@@ -171,11 +171,11 @@ let y = e => {
       })
     })
   },
-  h = (e, t, r, n, o) => (0, i.useCallback)(() => {
-    var i, a, l, c;
-    if (null == r) return void o(0);
+  v = (e, t, r, n, a) => (0, i.useCallback)(() => {
+    var i, o, l, c;
+    if (null == r) return void a(0);
     let s = null != (l = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? l : 0,
-      u = null != (c = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? c : 0,
+      u = null != (c = null == (o = t.current) ? true : o.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
       f = 0,
       g = 0,
@@ -195,5 +195,5 @@ let y = e => {
         f++
       }
     }
-    o(r.length - f)
-  }, [e, t, null == r ? true : r.join(""), n, o])
+    a(r.length - f)
+  }, [e, t, null == r ? true : r.join(""), n, a])

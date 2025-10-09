@@ -1,4 +1,4 @@
-/** Chunk was on 31417 **/
+/** Chunk was on 73705 **/
 /** chunk id: 816342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,7 +21,7 @@ let g = e => {
     channelId: n,
     reportId: g,
     reportType: f
-  } = e, b = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), x = i.useMemo(() => _.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = i.useCallback(() => {
+  } = e, h = (0, l.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), b = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), x = i.useMemo(() => _.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), v = i.useCallback(() => {
     o.ZP.trackWithMetadata(m.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
@@ -36,9 +36,9 @@ let g = e => {
       username: x
     }),
     description: p.intl.string(p.t.G08MKi),
-    buttonText: b ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),
-    buttonDisabled: b,
+    buttonText: h ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),
+    buttonDisabled: h,
     onButtonPress: v,
-    buttonVariant: "application" === f.name && b ? "secondary" : "critical-primary"
+    buttonVariant: "application" === f.name && h ? "secondary" : "critical-primary"
   })
 }

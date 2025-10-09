@@ -1,4 +1,4 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 403239, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -29,7 +29,7 @@ function u(e) {
     let r = p.slice(),
       [n] = r.splice(e, 1);
     r.splice(t, 0, n), c.Z.setPendingWidgets(r)
-  }, [p]), [, y, j] = (0, o.c)({
+  }, [p]), [, y, j] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetType: d.type,
@@ -51,7 +51,7 @@ function u(e) {
   }, [j]);
   let [{
     dragSourcePosition: x
-  }, h] = (0, a.L)({
+  }, v] = (0, o.L)({
     accept: "WIDGET",
     canDrop: () => !g,
     collect: e => {
@@ -70,7 +70,7 @@ function u(e) {
   return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (y(r), h(t), {
+  } : (y(r), v(t), {
     isDragging: b && (null == m ? true : m.widgetType) === d.type,
     dragSourcePosition: x
   })

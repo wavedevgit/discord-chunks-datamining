@@ -1,7 +1,7 @@
 /** Chunk was on 84071 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => h
+  c: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,63 +16,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632939 = require("./632939.js");
-let h = e => {
+let f = e => {
   let {
     skuId: t,
     assetId: n,
     user: a,
-    claimed: h,
+    claimed: f,
     onSelect: m,
     productName: x,
-    a11yLabel: j,
-    selectedSkuId: g,
+    a11yLabel: g,
+    selectedSkuId: j,
     category: b
-  } = e, y = i.useRef(null), {
-    isHoveringOrFocusing: L
-  } = (0, c.Z)(y), v = !h && L, S = (0, C.ZP)(), O = (0, s.wj)(S), P = {
+  } = e, v = i.useRef(null), {
+    isHoveringOrFocusing: y
+  } = (0, C.Z)(v), S = !f && y, L = (0, c.ZP)(), I = (0, s.wj)(L), w = {
     type: o.Z.AVATAR_DECORATION,
-    label: j,
+    label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: y,
+      ref: v,
       "aria-label": null != x ? x : "",
       onClick: () => {
-        null == t || null == m || h || m(t)
+        null == t || null == m || f || m(t)
       },
-      className: l()(O ? f.shopCardDark : f.shopCard, {
-        [f.shopCardAnimation]: !h,
-        [O ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: v,
-        [f.shopCardSelected]: g === t
+      className: l()(I ? h.shopCardDark : h.shopCard, {
+        [h.shopCardAnimation]: !f,
+        [I ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: S,
+        [h.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
-        className: l()(f.preview, {
-          [f.previewTrick]: b === u.KN.Trick,
-          [f.previewTreat]: b === u.KN.Treat,
-          [f.shopCardClaimed]: h
+        className: l()(h.preview, {
+          [h.previewTrick]: b === u.KN.Trick,
+          [h.previewTreat]: b === u.KN.Treat,
+          [h.shopCardClaimed]: f
         }),
         children: (0, r.jsx)(p.R, {
-          item: P,
+          item: w,
           user: a,
-          isHighlighted: v,
+          isHighlighted: S,
           avatarSize: d.EFr.SIZE_120,
-          isPurchased: h
+          isPurchased: f
         })
-      }), h && (0, r.jsx)(d.dz2, {
+      }), f && (0, r.jsx)(d.dz2, {
         size: "custom",
         width: 48,
         height: 48,
         color: d.TVs.colors.WHITE,
-        className: f.claimedIcon
+        className: h.claimedIcon
       }), (0, r.jsxs)("div", {
-        className: f.productName,
+        className: h.productName,
         children: [(0, r.jsx)(d.X6q, {
           variant: "text-md/bold",
           children: x
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: h ? _.intl.string(_.t["6cfuDg"]) : _.intl.string(_.t.QQsaCQ)
+          children: f ? _.intl.string(_.t["6cfuDg"]) : _.intl.string(_.t.QQsaCQ)
         })]
       })]
     })

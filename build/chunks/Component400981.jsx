@@ -24,29 +24,29 @@ function m(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: m
-  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
-    analyticsLocations: g
-  } = (0, s.ZP)(), b = l.EFr.SIZE_32, y = (0, d.Z)(null == m ? true : m.assetId, b, !j), L = (0, u.Z)(), v = null == L ? true : L.giftPurchaseConfirmation;
-  return null == n || null == v ? null : (0, r.jsx)(_.O3, {
+  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
+    analyticsLocations: j
+  } = (0, s.ZP)(), b = l.EFr.SIZE_32, v = (0, d.Z)(null == m ? true : m.assetId, b, !g), y = (0, u.Z)(), S = null == y ? true : y.giftPurchaseConfirmation;
+  return null == n || null == S ? null : (0, r.jsx)(_.O3, {
     children: (0, r.jsx)(l.mzw, {
-      align: c.Z.Align.CENTER,
+      align: C.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: h.promotionalFooter,
+        className: f.promotionalFooter,
         children: [(0, r.jsx)(l.Xo$, {
           "aria-label": null == x ? true : x.username,
           size: b,
-          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(b), !j),
-          avatarDecoration: y
+          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(b), !g),
+          avatarDecoration: v
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          text: v.collectRewardButtonText(),
+          text: S.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, C.Z)({
+            t(), (0, c.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: g,
-              purchaseType: f.o8.PROMOTIONAL
+              analyticsLocations: j,
+              purchaseType: h.o8.PROMOTIONAL
             })
           }
         })]

@@ -72,51 +72,55 @@ function p(e) {
   var {
     label: t,
     hideLabel: n,
-    required: l,
-    description: u,
-    helperText: _,
-    errorMessage: p,
-    successMessage: h,
-    wrapTags: m,
-    maxOptionsVisible: g = 5
-  } = e, E = f(e, ["label", "hideLabel", "required", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "maxOptionsVisible"]);
+    hideTags: l,
+    placeholder: u,
+    required: _,
+    description: p,
+    helperText: h,
+    errorMessage: m,
+    successMessage: g,
+    wrapTags: E,
+    maxOptionsVisible: b = 5
+  } = e, y = f(e, ["label", "hideLabel", "hideTags", "placeholder", "required", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "maxOptionsVisible"]);
   let {
-    disabled: b
-  } = E, {
-    isOpen: y,
-    setIsOpen: O,
-    refs: v,
-    floatingStyles: I,
-    getFloatingProps: T,
-    getReferenceProps: S
+    disabled: O
+  } = y, {
+    isOpen: v,
+    setIsOpen: I,
+    refs: T,
+    floatingStyles: S,
+    getFloatingProps: A,
+    getReferenceProps: C
   } = (0, i.ON0)({
     placement: "bottom",
     matchReferenceWidth: true
   });
-  return (0, r.jsxs)(a.uz, d(c({}, E), {
+  return (0, r.jsxs)(a.uz, d(c({}, y), {
     isCollapsible: true,
-    isOpen: y,
-    setIsOpen: O,
+    isOpen: v,
+    setIsOpen: I,
     children: [(0, r.jsx)(a.Ct, c({
       label: t,
       hideLabel: n,
-      required: l,
-      disabled: b,
-      description: u,
-      helperText: _,
-      errorMessage: p,
-      successMessage: h,
-      wrapTags: m,
+      hideTags: l,
+      placeholder: u,
+      required: _,
+      disabled: O,
+      description: p,
+      helperText: h,
+      errorMessage: m,
+      successMessage: g,
+      wrapTags: E,
       showChevronButton: true,
-      ref: v.setReference
-    }, S())), y && (0, r.jsx)("div", d(c({
-      ref: v.setFloating,
+      ref: T.setReference
+    }, C())), v && (0, r.jsx)("div", d(c({
+      ref: T.setFloating,
       className: s.selectDropdown,
-      style: I
-    }, T()), {
+      style: S
+    }, A()), {
       children: (0, r.jsx)(a.px, {
         renderListItem: e => (0, r.jsx)(o.W, c({}, e)),
-        maxVisibleItems: g
+        maxVisibleItems: b
       })
     }))]
   }))

@@ -1,12 +1,12 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 781040, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -56,7 +56,7 @@ let j = e => {
       children: r
     } = e, {
       isDragging: i
-    } = (0, a.f)(e => ({
+    } = (0, o.f)(e => ({
       isDragging: e.isDragging()
     }));
     return (0, n.jsx)(l.ua7, {
@@ -87,12 +87,12 @@ let j = e => {
       })
     })]
   }),
-  h = e => {
+  v = e => {
     let {
       children: t,
       widget: i,
-      targetRef: o,
-      additionalMenuItems: a
+      targetRef: a,
+      additionalMenuItems: o
     } = e, {
       trackUserProfileEditAction: s
     } = (0, d.KZ)(), m = e => {
@@ -116,7 +116,7 @@ let j = e => {
       })
     };
     return (0, n.jsx)(l.yRy, {
-      targetElementRef: o,
+      targetElementRef: a,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -132,7 +132,7 @@ let j = e => {
           onSelect: () => {},
           "aria-label": b.intl.string(b.t.xpSHSk),
           children: (0, n.jsxs)(l.kSQ, {
-            children: [a, (0, n.jsx)(l.sNh, {
+            children: [o, (0, n.jsx)(l.sNh, {
               id: "remove-widget",
               label: b.intl.string(b.t.Mm07YW),
               action: m,
@@ -145,22 +145,22 @@ let j = e => {
       children: t
     })
   },
-  v = e => {
+  h = e => {
     let {
       widget: t,
       className: r,
       buttonRef: i,
-      additionalMenuItems: a
+      additionalMenuItems: o
     } = e, c = (0, f.mR)(t), u = (0, s.Dt)();
     return (0, n.jsx)(j, {
       widgetTitle: c,
-      children: e => (0, n.jsx)(h, {
+      children: e => (0, n.jsx)(v, {
         targetRef: i,
         widget: t,
-        additionalMenuItems: a,
+        additionalMenuItems: o,
         children: t => (0, n.jsxs)(l.P3F, y(O({
           innerRef: i,
-          className: o()(m.dragHandleButton, r),
+          className: a()(m.dragHandleButton, r),
           "data-dnd-name": c,
           "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
             widgetTitle: c

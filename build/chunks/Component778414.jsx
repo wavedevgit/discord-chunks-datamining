@@ -106,7 +106,7 @@ function W(e) {
     application: n
   } = (0, O.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), l = (0, S.Z)(t.id), a = (0, b.k)({
+  } = (0, d.o)(null == n ? true : n.id), l = (0, S.Z)(t.id), a = (0, j.k)({
     location: "ApplicationWidgetUpsell"
   }), s = l.some(e => e instanceof v.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !a || null == i || s ? null : (0, r.jsx)(f.ZP, {
@@ -135,10 +135,10 @@ function F(e) {
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, b.k)({
+  })(), d = (0, j.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === a.length && o, O = i.useMemo(() => a.filter(y.Wc), [a]), x = i.useMemo(() => a.filter(e => e instanceof v.q), [a]);
-  (0, I.ZP)(O), (0, j.J)(o, O);
+  (0, I.ZP)(O), (0, b.J)(o, O);
   var w = t.id;
   (0, P.s)(x);
   let {

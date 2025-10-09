@@ -1,4 +1,4 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -22,20 +22,20 @@ var Chunk120356 = require("./120356.js"),
 function O(e) {
   var t, r, {
       gameName: i,
-      onClick: o
+      onClick: a
     } = e,
     s = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["gameName", "onClick"]);
@@ -43,14 +43,14 @@ function O(e) {
     O = p.intl.formatToPlainString(p.t["3mb1s7"], {
       game: g
     }),
-    y = (0, a.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
+    y = (0, o.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
   return (0, d.kO)(s.applicationId) || y ? (0, n.jsx)("div", {
     className: b.loadingCover
   }) : (0, n.jsx)(l.u, {
     text: O,
     children: (0, n.jsxs)(c.P3F, {
       className: m.addButton,
-      onClick: o,
+      onClick: a,
       children: [(0, n.jsx)(f.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -96,11 +96,11 @@ function y(e) {
     userId: t,
     games: r,
     onDismiss: i,
-    onClick: a,
+    onClick: o,
     className: l
   } = e, u = (0, s.Dt)();
   return (0, n.jsxs)("aside", {
-    className: o()(m.container, l),
+    className: a()(m.container, l),
     "aria-labelledby": u,
     children: [(0, n.jsxs)("div", {
       className: m.header,
@@ -124,14 +124,14 @@ function y(e) {
         let {
           applicationId: r,
           gameName: i,
-          imageSrc: o
+          imageSrc: a
         } = e;
         return (0, n.jsx)(O, {
-          onClick: () => a(r, i, o),
+          onClick: () => o(r, i, a),
           userId: t,
           applicationId: r,
           gameName: i,
-          imageSrc: o
+          imageSrc: a
         })
       }
     })]

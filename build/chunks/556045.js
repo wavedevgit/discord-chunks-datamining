@@ -1,4 +1,4 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 556045, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   h: () => c
@@ -10,11 +10,11 @@ var Chunk647438 = require("./647438.js"),
   Chunk86419 = require("./86419.js");
 
 function c(e) {
-  let [t, r] = n.useState(false), c = e.type, s = (0, i.e7)([o.default, a.Z], () => {
+  let [t, r] = n.useState(false), c = e.type, s = (0, i.e7)([a.default, o.Z], () => {
     var e;
-    let t = o.default.getId();
+    let t = a.default.getId();
     if (null == t) returnfalse;
-    let r = a.Z.getUserProfile(t);
+    let r = o.Z.getUserProfile(t);
     return (null != (e = null == r ? true : r.widgets) ? e : []).some(e => e.type === c)
   }), u = (0, l.kQ)(e);
   return {

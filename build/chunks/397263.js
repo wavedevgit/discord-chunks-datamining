@@ -18,5 +18,6 @@ module.exports = {
   giftPreviewTextContainer: "giftPreviewTextContainer__7b8d0",
   guildNameContainer: "guildNameContainer__7b8d0",
   recipientPickerSelectWrapper: "recipientPickerSelectWrapper__7b8d0",
-  footer: "footer__7b8d0"
+  footer: "footer__7b8d0",
+  viewItemButton: "viewItemButton__7b8d0"
 }

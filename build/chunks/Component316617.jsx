@@ -1,4 +1,4 @@
-/** Chunk was on 31417 **/
+/** Chunk was on 73705 **/
 /** chunk id: 316617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -31,12 +31,12 @@ let x = e => {
       leadingIcon: e,
       trailingIcon: n
     } = (0, _.f)(t, j, false, false, "", {
-      leadingIconClass: h.attachmentIcon,
-      trailingIconClass: h.attachmentIcon,
+      leadingIconClass: b.attachmentIcon,
+      trailingIconClass: b.attachmentIcon,
       iconSize: f.WW
     });
     return (0, r.jsxs)("div", {
-      className: h.contentContainer,
+      className: b.contentContainer,
       children: [e, (0, r.jsx)(d.ZP, {
         message: t,
         content: j,
@@ -45,13 +45,13 @@ let x = e => {
     })
   }, [t, j, y]);
   return null == x ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: b.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: h.header,
+      className: b.header,
       variant: "heading-sm/semibold",
-      children: b.intl.string(b.t.iouM3d)
+      children: h.intl.string(h.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
-      className: h.messagePreviewContainer,
+      className: b.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
         childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {

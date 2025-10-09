@@ -50,7 +50,7 @@ function Q(e) {
     hasTieredRewardCodes: o,
     sourceQuestContent: s
   } = e, i = (0, d.wj)((0, h.ZP)()), u = (0, I.n)({
-    location: k.dr.REWARD_CODE_MODAL,
+    location: L.dr.REWARD_CODE_MODAL,
     questConfig: n.config
   }).enabled, m = (0, p.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(), f = u ? m : n.config.colors.primary, b = {
     border: "1px solid ".concat(f),
@@ -64,7 +64,7 @@ function Q(e) {
       quest: o,
       rewardCode: l,
       hasTieredRewardCodes: s
-    } = e, i = (null == (t = o.userStatus) ? true : t.claimedAt) != null || null != l, c = s ? "" : M.intl.string(M.t.UUKbio), d = s ? (0, _.o9)({
+    } = e, i = (null == (t = o.userStatus) ? true : t.claimedAt) != null || null != l, c = s ? "" : M.intl.string(M.t.UUKbio), d = s ? (0, T.o9)({
       quest: o,
       idx: null != (r = null == l ? true : l.tier) ? r : null == (n = o.userStatus) ? true : n.claimedTier
     }) : null, u = D.r.build(o.config), p = null != d && null != (a = d.messages.name) ? a : u.defaultRewardName, m = s ? M.intl.string(M.t.cfY4PD) : u.defaultRewardName;
@@ -79,7 +79,7 @@ function Q(e) {
   }), {
     hasError: y,
     isLoading: j
-  } = (0, L.d7)();
+  } = (0, k.d7)();
   return (0, r.jsxs)("div", {
     style: b,
     className: B.rewardTile,
@@ -99,7 +99,7 @@ function Q(e) {
         }),
         quest: n,
         questContent: R.jn.QUEST_BAR_V2,
-        location: k.dr.REWARD_CODE_MODAL,
+        location: L.dr.REWARD_CODE_MODAL,
         sourceQuestContent: s
       })]
     }), (0, r.jsxs)("div", {
@@ -188,7 +188,7 @@ function W(e) {
     questStoreRewardCode: N.Z.getRewardCode(l.id),
     isFetchingRewardCode: N.Z.isFetchingRewardCode(l.id),
     isClaimingReward: N.Z.isClaimingReward(l.id)
-  })), ee = (0, A.O5)(), et = (0, _.oo)({
+  })), ee = (0, A.O5)(), et = (0, T.oo)({
     quest: l
   }), en = true === S ? (0, j.b)(l) : J, er = z && (null == (t = l.userStatus) ? true : t.claimedAt) == null && null == en, {
     claimCode: ea,
@@ -240,7 +240,7 @@ function W(e) {
           rewardName: s.defaultRewardName
         })
       });
-      let i = (0, _.C1)({
+      let i = (0, T.C1)({
         quest: t,
         rewardCode: o,
         selectedPlatformType: n,
@@ -262,7 +262,7 @@ function W(e) {
       hasTieredRewardCodes: et
     }),
     ep = a.useMemo(() => Z.map(e => ({
-      label: (0, _.t2)(e),
+      label: (0, T.t2)(e),
       value: e
     })), [Z]),
     em = null;
@@ -275,39 +275,33 @@ function W(e) {
         es(false), U(e)
       },
       isSelected: e => e === W,
-      serialize: e => (0, _.t2)(e),
+      serialize: e => (0, T.t2)(e),
       className: ei ? B.errorInput : "",
       isDisabled: K,
-      renderOptionLabel: e => {
-        let t = function(e) {
-          switch (e) {
-            case R.y$.CROSS_PLATFORM:
-              return (0, r.jsx)(p.Che, {
-                className: B.platformSelectionOptionIcon
-              });
-            case R.y$.PC:
-              return (0, r.jsx)(p.pzj, {
-                className: B.platformSelectionOptionIcon
-              });
-            case R.y$.PLAYSTATION:
-              return (0, r.jsx)(p.Tsp, {
-                className: B.platformSelectionOptionIcon
-              });
-            case R.y$.SWITCH:
-              return (0, r.jsx)(p.aPH, {
-                className: B.platformSelectionOptionIcon
-              });
-            case R.y$.XBOX:
-              return (0, r.jsx)(p.Mko, {
-                className: B.platformSelectionOptionIcon
-              })
-          }
-        }(e.value);
-        return (0, r.jsxs)("div", {
-          className: B.platformSelectionOptionLabelContainer,
-          children: [t, e.label]
-        })
-      }
+      renderLeading: e => (function(e) {
+        switch (e) {
+          case R.y$.CROSS_PLATFORM:
+            return (0, r.jsx)(p.Che, {
+              className: B.platformSelectionOptionIcon
+            });
+          case R.y$.PC:
+            return (0, r.jsx)(p.pzj, {
+              className: B.platformSelectionOptionIcon
+            });
+          case R.y$.PLAYSTATION:
+            return (0, r.jsx)(p.Tsp, {
+              className: B.platformSelectionOptionIcon
+            });
+          case R.y$.SWITCH:
+            return (0, r.jsx)(p.aPH, {
+              className: B.platformSelectionOptionIcon
+            });
+          case R.y$.XBOX:
+            return (0, r.jsx)(p.Mko, {
+              className: B.platformSelectionOptionIcon
+            })
+        }
+      })(e.value)
     }), ei ? (0, r.jsx)(p.pdY, {
       error: M.intl.string(M.t.rbZBMT)
     }) : null]
@@ -336,14 +330,14 @@ function W(e) {
     disabled: true,
     error: M.intl.string(M.t.rbZBMT)
   }));
-  let eh = a.useMemo(() => et ? (0, _.o9)({
+  let eh = a.useMemo(() => et ? (0, T.o9)({
       quest: l,
       idx: null == en ? true : en.tier
-    }) : (0, _.o9)({
+    }) : (0, T.o9)({
       quest: l,
       idx: 0
     }), [et, l, null == en ? true : en.tier]),
-    eC = a.useMemo(() => (null == eh ? true : eh.redemptionLink) == null || "" === eh.redemptionLink ? null : (null == en ? true : en.code) == null || "" === en.code ? eh.redemptionLink : eh.redemptionLink.replace(k.Dp, encodeURIComponent(en.code)), [eh, en]),
+    eC = a.useMemo(() => (null == eh ? true : eh.redemptionLink) == null || "" === eh.redemptionLink ? null : (null == en ? true : en.code) == null || "" === en.code ? eh.redemptionLink : eh.redemptionLink.replace(L.Dp, encodeURIComponent(en.code)), [eh, en]),
     ew = (0, E.G$)({
       claimCode: ea,
       fetchCode: eo,
@@ -364,7 +358,7 @@ function W(e) {
   er ? ev = M.intl.string(M.t.SLZMi4) : !er && ei ? ev = M.intl.string(M.t.gNJHHh) : ex && (ev = M.intl.string(M.t["+zx47e"]));
   let eO = !X && null != en && !P && !ei,
     eS = null != eb && et,
-    eA = (0, T.Gd)(l.id);
+    eA = (0, _.Gd)(l.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: Y,
@@ -385,8 +379,8 @@ function W(e) {
             "data-migration-pending": true,
             className: B.closeButton,
             onClick: () => o()
-          }), !eS && (0, r.jsx)(L.p, {
-            source: k.dr.REWARD_CODE_MODAL,
+          }), !eS && (0, r.jsx)(k.p, {
+            source: L.dr.REWARD_CODE_MODAL,
             questId: l.id,
             children: (0, r.jsx)(Q, {
               quest: l,

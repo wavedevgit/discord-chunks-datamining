@@ -15,7 +15,7 @@ function c(e) {
     channelId: c,
     localCreationAnswerId: s,
     image: u
-  } = e, d = null == u ? true : u.emoji, f = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o._.PREPARING, m = (0, l.e7)([i.Z], () => i.Z.getUpload(c, s, a.d.Poll)), [p, b] = r.useState(), [g, j] = r.useState("");
+  } = e, f = null == u ? true : u.emoji, d = (null == u || null == (t = u.mediaAttachmentState) ? true : t.status) === o._.PREPARING, m = (0, l.e7)([i.Z], () => i.Z.getUpload(c, s, a.d.Poll)), [p, b] = r.useState(), [g, j] = r.useState("");
   return r.useEffect(() => {
     var e;
     if ((null == m || null == (e = m.item) ? true : e.file) == null) return;
@@ -24,8 +24,8 @@ function c(e) {
       URL.revokeObjectURL(t)
     }
   }, [null == m || null == (n = m.item) ? true : n.file]), {
-    emoji: d,
-    isLoadingMedia: f,
+    emoji: f,
+    isLoadingMedia: d,
     hasUpload: null != m,
     upload: m,
     mediaUrl: p,

@@ -54,19 +54,19 @@ function b(e, t, n, b) {
       return null != (t = null == b || null == (e = b.initialAnswers) ? true : e.map(e => m({}, (0, u.Uu)(), e))) ? t : [(0, u.Uu)(), (0, u.Uu)()]
     }),
     [P, w] = r.useState(null != (j = null == b ? true : b.initialQuestion) ? j : ""),
-    [x, k] = r.useState(false),
-    [C, R] = r.useState(null != (O = null == b ? true : b.initialDuration) ? O : d.lc.ONE_DAY),
+    [k, C] = r.useState(false),
+    [x, R] = r.useState(null != (O = null == b ? true : b.initialDuration) ? O : f.lc.ONE_DAY),
     [E, _] = r.useState({}),
     [S, D] = r.useState(false),
     A = h.filter(e => (0, u.cS)(e)),
     I = h.filter(e => (0, u.uY)(e)),
-    N = P.length > 0 && A.length >= d.gY && 0 === I.length,
-    [L, {
-      error: U,
+    N = P.length > 0 && A.length >= f.gY && 0 === I.length,
+    [U, {
+      error: L,
       loading: T
     }] = (0, a.Z)(s.Z.createPoll),
-    Z = h.length < d.fw,
-    B = h.length > d.gY,
+    Z = h.length < f.fw,
+    B = h.length > f.gY,
     Y = r.useCallback(e => {
       _(e => {
         let t = m({}, e);
@@ -148,21 +148,21 @@ function b(e, t, n, b) {
   let X = r.useCallback(() => {
       let e = true,
         t = {};
-      return 0 === P.trim().length && (e = false, t.question = f.intl.string(f.t.gPX3oK)), h.filter(e => (0, u.cS)(e)).length < d.gY && (e = false, t["answer-".concat(h[0].localCreationAnswerId)] = f.intl.string(f.t.fYvzER)), h.forEach(n => {
-        (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = f.intl.string(f.t["8Qqkc3"]))
+      return 0 === P.trim().length && (e = false, t.question = d.intl.string(d.t.gPX3oK)), h.filter(e => (0, u.cS)(e)).length < f.gY && (e = false, t["answer-".concat(h[0].localCreationAnswerId)] = d.intl.string(d.t.fYvzER)), h.forEach(n => {
+        (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = d.intl.string(d.t["8Qqkc3"]))
       }), _(t), D(!e), e
     }, [h, P]),
     J = r.useCallback(async () => {
-      await L({
+      await U({
         channel: e,
         question: P,
         answers: A,
-        allowMultiSelect: x,
-        duration: C,
+        allowMultiSelect: k,
+        duration: x,
         layout: l.C.DEFAULT,
         onClose: t
       })
-    }, [P, A, x, C, L, e, t]),
+    }, [P, A, k, x, U, e, t]),
     Q = r.useCallback(() => {
       !T && X() && J()
     }, [J, T, X]);
@@ -170,9 +170,9 @@ function b(e, t, n, b) {
     answers: h,
     question: P,
     setQuestion: w,
-    allowMultiSelect: x,
-    setAllowMultiSelect: k,
-    duration: C,
+    allowMultiSelect: k,
+    setAllowMultiSelect: C,
+    duration: x,
     setDuration: R,
     canPost: N,
     canAddMoreAnswers: Z,
@@ -189,7 +189,7 @@ function b(e, t, n, b) {
     createPoll: J,
     handleSubmitPoll: Q,
     submitting: T,
-    createPollError: U,
+    createPollError: L,
     shouldFocusOnInvalidField: S,
     setShouldFocusOnInvalidField: D
   }

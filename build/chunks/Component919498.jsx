@@ -1,4 +1,4 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 919498, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -15,9 +15,9 @@ function l(e) {
     channelId: l,
     className: c,
     visuallyHideLabel: s
-  } = e, u = (0, o.Z)(t);
+  } = e, u = (0, a.Z)(t);
   return u.length > 0 ? (0, n.jsx)(i.Z, {
-    label: a.intl.formatToPlainString(a.t.ujhJdH, {
+    label: o.intl.formatToPlainString(o.t.ujhJdH, {
       numFriends: u.length
     }),
     className: c,

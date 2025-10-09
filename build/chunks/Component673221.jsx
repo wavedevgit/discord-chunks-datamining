@@ -85,28 +85,30 @@ let N = 24,
 
 function P(e) {
   var {
-    hideLabel: t,
-    description: n,
-    helperText: i,
-    errorMessage: a,
-    successMessage: o
-  } = e, s = A(e, ["hideLabel", "description", "helperText", "errorMessage", "successMessage"]);
+    layout: t,
+    hideLabel: n,
+    description: i,
+    helperText: a,
+    errorMessage: o,
+    successMessage: s
+  } = e, c = A(e, ["layout", "hideLabel", "description", "helperText", "errorMessage", "successMessage"]);
   let {
-    id: c,
-    required: u,
-    label: d
-  } = s;
+    id: u,
+    required: d,
+    label: f
+  } = c;
   return (0, r.jsx)(l.g, {
-    id: c,
-    required: u,
-    label: d,
-    hideLabel: t,
-    description: n,
-    helperText: i,
-    errorMessage: a,
-    successMessage: o,
+    id: u,
+    required: d,
+    layout: t,
+    label: f,
+    hideLabel: n,
+    description: i,
+    helperText: a,
+    errorMessage: o,
+    successMessage: s,
     "data-mana-component": "select",
-    children: (0, r.jsx)(w, I({}, s))
+    children: (0, r.jsx)(w, I({}, c))
   })
 }
 
@@ -129,7 +131,7 @@ function w(e) {
     autoComplete: k,
     maxOptionsVisible: U = 5,
     options: G,
-    renderOption: B,
+    formatOption: B,
     onSelectionChange: Z,
     value: F,
     wrapTags: V = false
@@ -160,8 +162,8 @@ function w(e) {
     W(false), null == (e = et.current) || e.focus()
   }, [W]), eu = i.useCallback(() => {
     var e;
-    Z(null), null == (e = et.current) || e.focus()
-  }, [Z]);
+    "multiple" === t ? Z([]) : Z(null), null == (e = et.current) || e.focus()
+  }, [Z, t]);
   i.useEffect(() => {
     if (v) {
       var e;
@@ -197,7 +199,7 @@ function w(e) {
     ep = i.useCallback(e => {
       if (ea) return;
       let n = Array.from(e);
-      if ("multiple" === t && n.length < 1) Z(null);
+      if ("multiple" === t && n.length < 1) Z([]);
       else if ("multiple" === t) Z(n.map(e => e.value));
       else {
         var r, i;

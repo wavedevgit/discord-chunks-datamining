@@ -1,4 +1,4 @@
-/** Chunk was on 31417 **/
+/** Chunk was on 73705 **/
 /** chunk id: 273389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -21,21 +21,21 @@ let c = e => {
     } = e,
     g = i.useRef(null),
     f = null != n && "cancel" !== n.type,
-    b = _ && (null == n ? true : n.type) !== "done",
-    h = f || b;
+    h = _ && (null == n ? true : n.type) !== "done",
+    b = f || h;
   if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
         null == (e = g.current) || e.focus()
       }
-    }, [null == n ? true : n.type]), !h) return null;
+    }, [null == n ? true : n.type]), !b) return null;
   let x = o.intl.string(o.t.i4jeWV);
   return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? x = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (x = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
     children: (0, r.jsxs)(l.hE2, {
-      fullWidth: b && f,
-      children: [b && (0, r.jsx)(l.zxk, {
+      fullWidth: h && f,
+      children: [h && (0, r.jsx)(l.zxk, {
         onClick: m,
         variant: "secondary",
         disabled: c,

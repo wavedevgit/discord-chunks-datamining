@@ -38,5 +38,6 @@ module.exports = {
   checked: "checked__3f413",
   disabled: "disabled__3f413",
   iconsContainer: "iconsContainer__3f413",
-  container: "container__3f413"
+  container: "container__3f413",
+  newOptionLabel: "newOptionLabel__3f413"
 }

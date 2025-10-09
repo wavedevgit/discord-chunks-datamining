@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 309081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,7 +55,7 @@ function P(e) {
   }) : null != i ? (0, r.jsx)(s.Z, {
     className: o,
     emojiId: i.id,
-    emojiName: i.type === d.B.UNICODE ? i.optionallyDiverseSequence : i.name,
+    emojiName: i.type === f.B.UNICODE ? i.optionallyDiverseSequence : i.name,
     animated: i.animated
   }) : c
 }
@@ -90,18 +90,18 @@ function w(e) {
   })
 }
 
-function x(e) {
+function k(e) {
   let {
     channelId: t,
     localCreationAnswerId: n,
     buttonImage: a,
     onEmojiSelect: s,
-    onEmojiRemove: d,
+    onEmojiRemove: f,
     answerIndex: m,
     shouldShowEmojiPicker: g,
-    toggleEmojiPicker: x,
-    containerRef: k
-  } = e, C = l.useRef(null), R = (0, o.e7)([f.Z], () => f.Z.getChannel(t)), {
+    toggleEmojiPicker: k,
+    containerRef: C
+  } = e, x = l.useRef(null), R = (0, o.e7)([d.Z], () => d.Z.getChannel(t)), {
     emoji: E,
     isLoadingMedia: _,
     hasUpload: S,
@@ -112,8 +112,8 @@ function x(e) {
     localCreationAnswerId: n,
     image: a
   }), I = S || null != E, N = l.useCallback(() => {
-    d(m)
-  }, [d, m]), L = l.useMemo(() => S ? y.intl.formatToPlainString(y.t.vcC7Qk, {
+    f(m)
+  }, [f, m]), U = l.useMemo(() => S ? y.intl.formatToPlainString(y.t.vcC7Qk, {
     imageName: (0, p.fw)(A),
     answerNumber: m + 1
   }) : null != E ? y.intl.formatToPlainString(y.t.ncOAhY, {
@@ -121,7 +121,7 @@ function x(e) {
     answerNumber: m + 1
   }) : y.intl.formatToPlainString(y.t.emdpNj, {
     answerNumber: m + 1
-  }), [S, E, m, A]), U = l.useCallback(e => {
+  }), [S, E, m, A]), L = l.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -147,11 +147,11 @@ function x(e) {
     } = e;
     return (0, r.jsx)(w, {
       onSelect: t,
-      onEditMedia: x,
+      onEditMedia: k,
       onDeleteMedia: N,
       closePopout: t
     })
-  }, [N, x]), Z = _ ? (0, r.jsx)(c.$jN, {
+  }, [N, k]), Z = _ ? (0, r.jsx)(c.$jN, {
     className: h.spinnerWrapperDefault
   }) : (0, r.jsx)(P, {
     hasUpload: S,
@@ -169,10 +169,10 @@ function x(e) {
     [h.canEditMedia]: I
   });
   return (0, r.jsx)(c.yRy, {
-    targetElementRef: k,
-    renderPopout: U,
+    targetElementRef: C,
+    renderPopout: L,
     shouldShow: g,
-    onRequestClose: x,
+    onRequestClose: k,
     animation: c.yRy.Animation.NONE,
     position: "bottom",
     spacing: 2,
@@ -182,7 +182,7 @@ function x(e) {
         "aria-expanded": n
       } = e;
       return v(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.yRy, {
-        targetElementRef: C,
+        targetElementRef: x,
         animation: c.yRy.Animation.NONE,
         position: "bottom",
         renderPopout: T,
@@ -211,11 +211,11 @@ function x(e) {
             }
             return e
           }({
-            innerRef: C
+            innerRef: x
           }, u), a = a = {
             className: B,
-            onClick: I && !g ? i : x,
-            "aria-label": L,
+            onClick: I && !g ? i : k,
+            "aria-label": U,
             "aria-controls": null != t ? t : o,
             "aria-expanded": n || s,
             children: [Z, I && (0, r.jsx)(c.vdY, {
@@ -240,7 +240,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function C(e) {
   let {
     channelId: t,
     answer: n,
@@ -249,14 +249,14 @@ function k(e) {
     onAnswerTextChange: o,
     onEmojiSelect: s,
     onEmojiRemove: u,
-    canRemoveAnswer: d,
-    onRemoveAnswer: f,
+    canRemoveAnswer: f,
+    onRemoveAnswer: d,
     addAnswer: b,
     submitPoll: j,
     error: O,
     ref: h,
     answerRowRefs: v
-  } = e, P = l.useRef(null), w = l.useRef(null), k = l.useRef(null);
+  } = e, P = l.useRef(null), w = l.useRef(null), C = l.useRef(null);
   l.useImperativeHandle(h, () => ({
     focusDeleteButton: () => {
       var e;
@@ -264,10 +264,10 @@ function k(e) {
     },
     focusInput: () => {
       var e;
-      return null == (e = k.current) ? true : e.focus()
+      return null == (e = C.current) ? true : e.focus()
     }
   }));
-  let [C, R] = l.useState(false), E = l.useCallback(() => {
+  let [x, R] = l.useState(false), E = l.useCallback(() => {
     R(e => !e)
   }, []), _ = l.useCallback(e => {
     let t = e.ctrlKey && !(e.altKey || e.metaKey || e.shiftKey),
@@ -280,7 +280,7 @@ function k(e) {
       case "e":
         ("macos" === (0, m.getOS)() ? r : t) && (e.preventDefault(), e.stopPropagation(), E())
     }
-  }, [b, n, v, a, i, j, E]), S = (0, r.jsx)(x, {
+  }, [b, n, v, a, i, j, E]), S = (0, r.jsx)(k, {
     containerRef: P,
     channelId: t,
     buttonImage: n.image,
@@ -288,7 +288,7 @@ function k(e) {
     onEmojiRemove: u,
     localCreationAnswerId: n.localCreationAnswerId,
     answerIndex: a,
-    shouldShowEmojiPicker: C,
+    shouldShowEmojiPicker: x,
     toggleEmojiPicker: E
   });
   return (0, r.jsx)("div", {
@@ -299,12 +299,12 @@ function k(e) {
         type: "emoji",
         button: S
       },
-      trailing: d ? {
+      trailing: f ? {
         "aria-label": y.intl.formatToPlainString(y.t["22fjER"], {
           answerNumber: a + 1
         }),
         icon: c.XHJ,
-        onClick: () => f(a),
+        onClick: () => d(a),
         buttonRef: w
       } : true,
       "aria-label": y.intl.formatToPlainString(y.t["3+V8Gx"], {
@@ -319,7 +319,7 @@ function k(e) {
       }),
       onKeyDown: _,
       maxLength: g.WA,
-      inputRef: k
+      inputRef: C
     })
   })
 }

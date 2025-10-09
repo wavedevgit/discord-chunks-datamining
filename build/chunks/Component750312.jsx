@@ -1,4 +1,4 @@
-/** Chunk was on 13859 **/
+/** Chunk was on 36529 **/
 /** chunk id: 750312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk313201 = require("./313201.js"),
@@ -23,61 +23,61 @@ function y(e) {
   let {
     userId: t,
     widget: r,
-    children: o,
+    children: a,
     disableInteraction: m,
     className: y,
     index: x,
-    trailingContent: h,
-    headerTitle: v,
+    trailingContent: v,
+    headerTitle: h,
     headerSubtitle: _,
     headerActionButtons: w,
     dragHandleAdditionalMenuItems: P
-  } = e, E = (0, s.Dt)(), I = (0, c.e7)([u.default], () => u.default.getId() === t), S = i.useRef(null), T = i.useRef(null), {
+  } = e, I = (0, s.Dt)(), S = (0, c.e7)([u.default], () => u.default.getId() === t), E = i.useRef(null), T = i.useRef(null), {
     trackUserProfileAction: D
-  } = (0, d.KZ)(), N = (0, g.Z)({
+  } = (0, d.KZ)(), k = (0, g.Z)({
     widgetType: r.type,
     onAction: D
-  }), k = I && null != x && !m, {
+  }), N = S && null != x && !m, {
     isDragging: C,
     dragSourcePosition: Z
   } = (0, f.q)({
-    dropRef: S,
+    dropRef: E,
     dragRef: T,
     userId: t,
     widget: r,
     index: x,
-    disableInteraction: !k
+    disableInteraction: !N
   }), [A, R] = i.useState(false);
   return (0, n.jsx)(j, {
-    ref: S,
-    disableInteraction: !k,
+    ref: E,
+    disableInteraction: !N,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
     dragSourcePosition: Z,
     index: null != x ? x : 0,
     children: (0, n.jsxs)("section", {
-      ref: N,
-      className: a()(O.container, y, {
+      ref: k,
+      className: o()(O.container, y, {
         [O.isDragging]: C
       }),
-      "aria-labelledby": E,
-      children: [k && (0, n.jsx)(p.Z, {
+      "aria-labelledby": I,
+      children: [N && (0, n.jsx)(p.Z, {
         buttonRef: T,
         widget: r,
-        className: a()(O.dragHandleButton, {
+        className: o()(O.dragHandleButton, {
           [O.opacity]: A || C
         }),
         additionalMenuItems: P
       }), (0, n.jsx)(b.Z, {
         userId: t,
-        headingId: E,
-        title: v,
+        headingId: I,
+        title: h,
         subtitle: _,
         actionButtons: w,
         widget: r,
         disableInteraction: m
       }), (0, n.jsxs)(l.y5t, {
-        children: [o, h]
+        children: [a, v]
       })]
     })
   })
@@ -87,18 +87,18 @@ let j = e => {
     ref: t,
     children: r,
     disableInteraction: i,
-    onMouseEnter: o,
+    onMouseEnter: a,
     onMouseLeave: l,
     dragSourcePosition: c,
     index: s
   } = e, u = null != c, d = u && s < c, f = u && s > c;
   return i ? r : (0, n.jsx)("div", {
     ref: t,
-    className: a()(O.dragAndDropHitbox, {
+    className: o()(O.dragAndDropHitbox, {
       [O.dropIndicatorBefore]: d,
       [O.dropIndicatorAfter]: f
     }),
-    onMouseEnter: o,
+    onMouseEnter: a,
     onMouseLeave: l,
     "aria-label": m.intl.formatToPlainString(m.t.YLczh4, {
       positionNumber: s + 1

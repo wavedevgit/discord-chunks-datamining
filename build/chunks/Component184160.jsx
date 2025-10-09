@@ -23,21 +23,21 @@ function _(e) {
   } = e, {
     activeSubscription: i,
     selectedSkuId: _,
-    setSelectedPlanId: f,
-    startedPaymentFlowWithPaymentSourcesRef: h
-  } = (0, C.JL)(), {
+    setSelectedPlanId: h,
+    startedPaymentFlowWithPaymentSourcesRef: f
+  } = (0, c.JL)(), {
     isGift: m
-  } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, j = null != x ? (0, s.gq)(x.planId) : null, g = null != x ? (0, s.Rd)(x.planId) : null, b = (0, u.Kp)({
+  } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, g = null != x ? (0, s.gq)(x.planId) : null, j = null != x ? (0, s.Rd)(x.planId) : null, b = (0, u.Kp)({
     isTrial: false,
     isGift: m,
     selectedSkuId: _,
-    startedPaymentFlowWithPaymentSources: h.current
+    startedPaymentFlowWithPaymentSources: f.current
   });
-  return a()(null != g, "Expected premium type"), (0, r.jsx)(o.Z, {
-    premiumType: g,
+  return a()(null != j, "Expected premium type"), (0, r.jsx)(o.Z, {
+    premiumType: j,
     titleText: p.intl.string(p.t["7VcWW1"]),
     subtitleText: p.intl.format(p.t.Qk34Ii, {
-      subscriptionName: j
+      subscriptionName: g
     }),
     footer: (0, r.jsxs)(l.hE2, {
       direction: "horizontal-reverse",
@@ -46,7 +46,7 @@ function _(e) {
         variant: "primary",
         text: p.intl.string(p.t["3PatS0"]),
         onClick: () => {
-          b ? (f((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
+          b ? (h((0, u.nA)(_, i)), t(C.h8.REVIEW)) : t(C.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(l.zxk, {
         variant: "secondary",

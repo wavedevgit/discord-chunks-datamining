@@ -19,28 +19,28 @@ function _() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     _ = (0, Chunk410030.ZP)(),
-    f = (0, Chunk780384.wj)(_),
-    h = (0, Chunk347896.Z)(),
-    m = null == h ? true : h.planSelectionBanner,
+    h = (0, Chunk780384.wj)(_),
+    f = (0, Chunk347896.Z)(),
+    m = null == f ? true : f.planSelectionBanner,
     {
       claimableRewards: x
     } = (0, Chunk987209.wD)();
   if (null == m || null == x) return null;
-  let j = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, f),
-    g = (0, Chunk717401.Yr)(j),
+  let g = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, h),
+    j = (0, Chunk717401.Yr)(g),
     b = null == (t = m.gradientConfig) ? true : exports.call(m, {
-      isDarkMode: f,
+      isDarkMode: h,
       isAndroid: false
     }),
-    y = (0, Chunk717401.Tl)(b);
+    v = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != g ? g : y,
+    style: null != j ? j : v,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         claimableRewards: x,
-        maxRewardImageSrc: m.getImageUrl(f, require),
+        maxRewardImageSrc: m.getImageUrl(h, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
       })

@@ -107,7 +107,7 @@ function A(e) {
               onClose: D
             })
           }), null != U && (0, r.jsx)("li", {
-            children: (0, r.jsx)(j.Z, {
+            children: (0, r.jsx)(b.Z, {
               user: t,
               currentUser: n,
               stream: U,
@@ -147,7 +147,7 @@ function A(e) {
       children: (0, r.jsx)("ul", {
         className: T.cards,
         children: G.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(j.Z, {
             user: t,
             entry: e,
             onClose: D

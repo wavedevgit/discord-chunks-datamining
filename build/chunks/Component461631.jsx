@@ -1,12 +1,12 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 84071 **/
 /** chunk id: 461631, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk277511 = require("./277511.js"),
@@ -15,27 +15,27 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk747615 = require("./747615.js");
 
-function g(e) {
+function p(e) {
   let {
     item: t,
     wishlistId: n,
     iconSize: i = "refresh_sm",
-    className: g
+    className: p
   } = e, {
-    analyticsLocations: p
-  } = (0, s.ZP)(), m = async () => {
+    analyticsLocations: _
+  } = (0, o.ZP)(), h = async () => {
     try {
-      await o.Z.removeSkuFromWishlist(n, t.skuId, p)
+      await s.Z.removeSkuFromWishlist(n, t.skuId, _)
     } catch (e) {
-      (0, c.L$)(u.qb.SOMETHING_WENT_WRONG)
+      (0, d.L$)(c.qb.SOMETHING_WENT_WRONG)
     }
   };
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(l.ua7, {
     "data-migration-pending": true,
-    text: d.intl.string(d.t.jTW019),
+    text: C.intl.string(C.t.jTW019),
     children: e => {
       var t, n;
-      return (0, r.jsx)(a.P3F, (t = function(e) {
+      return (0, r.jsx)(l.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -53,13 +53,13 @@ function g(e) {
         }
         return e
       }({}, e), n = n = {
-        onClick: m,
-        "aria-label": d.intl.string(d.t.jTW019),
-        className: l()(g, f.clickable),
-        children: (0, r.jsx)(a.XHJ, {
+        onClick: h,
+        "aria-label": C.intl.string(C.t.jTW019),
+        className: a()(p, u.clickable),
+        children: (0, r.jsx)(l.XHJ, {
           size: i,
-          className: f.icon,
-          color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
+          className: u.icon,
+          color: l.TVs.colors.ICON_FEEDBACK_CRITICAL
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
