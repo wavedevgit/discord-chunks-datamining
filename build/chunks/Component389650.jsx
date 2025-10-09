@@ -20,7 +20,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk612226 = require("./612226.js"),
   Chunk714338 = require("./714338.js"),
   Chunk924557 = require("./924557.js"),
-  Chunk600164 = require("./600164.jsx"),
   Chunk74299 = require("./74299.js"),
   Chunk577153 = require("./577153.js"),
   Chunk365023 = require("./365023.js"),
@@ -31,6 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk358085 = require("./358085.js"),
   Chunk13140 = require("./13140.js"),
+  Chunk526665 = require("./526665.js"),
   Chunk659947 = require("./659947.jsx"),
   Chunk273313 = require("./273313.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -110,57 +110,54 @@ class H extends Chunk647438.PureComponent {
       managed: e,
       enabled: t
     } = this.props.keybind;
-    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
-      direction: Chunk600164.Z.Direction.VERTICAL,
-      className: o()(Chunk894462.keybindGroup, Chunk620842.card),
-      children: [!module && (0, Chunk951288.jsx)(Chunk225433.Z, {
+    return (0, Chunk951288.jsxs)("div", {
+      className: o()(Chunk894462.keybindGroup, {
+        [Chunk620842.card]: !this.props.isUserSettingsRedesignEnabled
+      }),
+      children: [!module && !this.props.isUserSettingsRedesignEnabled && (0, Chunk951288.jsx)(Chunk225433.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ),
-        className: Chunk894462.removeKeybind,
+        className: Chunk894462.removeKeybindFloating,
         onClick: this.handleDeleteKeybind
-      }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
-        className: Chunk197571.marginBottom8,
-        children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-          basis: "45%",
-          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t.UUpADw),
-            className: Chunk894462.item,
-            children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-              value: this.props.keybind.action,
-              options: this.props.keybindActionTypes,
-              onChange: this.handleActionChanged,
-              isDisabled: module
-            })
+      }), (0, Chunk951288.jsxs)("div", {
+        className: Chunk894462.keybindGroupContent,
+        children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
+          title: Chunk388032.intl.string(Chunk388032.t.UUpADw),
+          className: Chunk894462.item,
+          children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
+            value: this.props.keybind.action,
+            options: this.props.keybindActionTypes,
+            onChange: this.handleActionChanged,
+            isDisabled: module
           })
-        }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-          basis: "45%",
-          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-            title: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
-            className: Chunk894462.item,
-            children: (0, Chunk951288.jsx)(Chunk825209.Z, {
-              defaultValue: this.props.keybind.shortcut,
-              onChange: this.handleShortcutChange
-            })
+        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          title: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
+          className: Chunk894462.item,
+          children: (0, Chunk951288.jsx)(Chunk825209.Z, {
+            defaultValue: this.props.keybind.shortcut,
+            onChange: this.handleShortcutChange
           })
-        }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-          grow: 0,
-          shrink: 0,
-          children: (0, Chunk951288.jsx)("div", {
-            className: Chunk894462.switch,
-            children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
-              "data-migration-pending": true,
-              text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
-              children: e => (0, r.jsx)("div", Z(G({}, e), {
-                children: (0, r.jsx)(d.rsf, {
-                  checked: t,
-                  onChange: this.handleEnableDisable
-                })
-              }))
-            })
+        }), !module && this.props.isUserSettingsRedesignEnabled && (0, Chunk951288.jsx)("div", {
+          className: Chunk894462.removeKeybind,
+          children: (0, Chunk951288.jsx)(Chunk481060.hU, {
+            variant: "icon-only",
+            onClick: this.handleDeleteKeybind,
+            icon: Chunk481060.XHJ,
+            "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ)
+          })
+        }), (0, Chunk951288.jsx)("div", {
+          className: Chunk894462.switch,
+          children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
+            "data-migration-pending": true,
+            text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
+            children: e => (0, r.jsx)("div", Z(G({}, e), {
+              children: (0, r.jsx)(d.rsf, {
+                checked: t,
+                onChange: this.handleEnableDisable
+              })
+            }))
           })
         })]
-      }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-        children: this.renderMessage()
-      }), this.renderExtraSettings()]
+      }), this.renderMessage(), this.renderExtraSettings()]
     })
   }
   renderExtraSettings() {
@@ -298,7 +295,8 @@ class Y extends Chunk647438.PureComponent {
       children: [(0, r.jsx)(H, {
         keybind: t,
         keybindDescriptions: this.keybindDescriptions,
-        keybindActionTypes: this.keybindActionTypes
+        keybindActionTypes: this.keybindActionTypes,
+        isUserSettingsRedesignEnabled: this.props.isUserSettingsRedesignEnabled
       }, t.id), n !== e.length - 1 ? (0, r.jsx)(d.izJ, {}) : null]
     }, t.id))
   }
@@ -413,12 +411,14 @@ function W() {
   let e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getState()),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
     n = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.isSupported()),
-    i = (0, Chunk924557.Go)();
+    i = (0, Chunk924557.Go)(),
+    a = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
   return (0, Chunk951288.jsx)(Y, {
     keybinds: module,
     canGoLive: exports,
     overlaySupported: require,
     allowSoundboard: (0, Chunk358085.isWindows)(),
-    enableClips: Chunk647438
+    enableClips: Chunk647438,
+    isUserSettingsRedesignEnabled: Chunk120356
   })
 }
