@@ -10,6 +10,7 @@ module.exports = {
   selectButton: "selectButton__5fa2f",
   selectFieldContent: "selectFieldContent__5fa2f",
   wrapTags: "wrapTags__5fa2f",
+  multiSelect: "multiSelect__5fa2f",
   placeholder: "placeholder__5fa2f",
   singleSelectOption: "singleSelectOption__5fa2f",
   comboBoxInputScroller: "comboBoxInputScroller__5fa2f",

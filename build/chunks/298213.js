@@ -2,17 +2,18 @@
 /** chunk id: 298213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 });
 var Chunk570140 = require("./570140.js"),
   Chunk194359 = require("./194359.js"),
   Chunk855796 = require("./855796.js"),
   Chunk128064 = require("./128064.js"),
+  Chunk738155 = require("./738155.js"),
   Chunk699516 = require("./699516.js"),
   Chunk801195 = require("./801195.jsx"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +22,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,13 +46,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function h(e) {
   let {
     userId: t,
     applicationId: n,
@@ -70,17 +71,17 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     userId: t,
     applicationId: n,
     location: r,
     onConfirm: i,
     onCancel: a
-  } = e, c = (0, o.c_)("useFriendRequestActions"), u = s.Z.isStranger(t);
-  return null == n && c && false !== u ? u && c ? void(0, l.c)({
+  } = e, u = (0, o.c_)("useFriendRequestActions"), d = (0, s.q)(r), f = u || d, _ = l.Z.isStranger(t);
+  return null == n && f && false !== _ ? _ && f ? void(0, c.c)({
     onConfirm: () => {
-      p({
+      h({
         userId: t,
         applicationId: n,
         location: r,
@@ -90,12 +91,12 @@ function h(e) {
     onCancel: () => {
       null == a || a()
     }
-  }) : c ? void p({
+  }) : f ? void h({
     userId: t,
     applicationId: n,
     location: r
   }).then(e => {
-    m(e, {
+    g(e, {
       userId: t,
       applicationId: n,
       location: r,
@@ -103,14 +104,14 @@ function h(e) {
       onCancel: a
     }) || null == i || i()
   }).catch(e => {
-    m(e, {
+    g(e, {
       userId: t,
       applicationId: n,
       location: r,
       onConfirm: i,
       onCancel: a
     })
-  }) : true : p({
+  }) : true : h({
     userId: t,
     applicationId: n,
     location: r,
@@ -120,16 +121,16 @@ function h(e) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   var n;
-  return (null == (n = e.body) ? true : n.code) === c.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION ? (r.Z.dispatch({
+  return (null == (n = e.body) ? true : n.code) === u.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION ? (r.Z.dispatch({
     type: "UPDATE_STRANGER_STATUS",
     userId: t.userId,
     isStranger: true
-  }), (0, l.c)({
+  }), (0, c.c)({
     onConfirm: () => {
       var e;
-      p(_(d({}, t), {
+      h(p(f({}, t), {
         confirmStrangerRequest: true
       })), null == (e = t.onConfirm) || e.call(t)
     },
@@ -143,7 +144,7 @@ function m(e, t) {
     isStranger: false
   }), false)
 }
-let g = {
+let E = {
   removeFriend: function(e) {
     let {
       userId: t,
@@ -170,6 +171,6 @@ let g = {
       location: r
     })
   },
-  acceptFriendRequest: p,
-  maybeConfirmFriendRequestAccept: h
+  acceptFriendRequest: h,
+  maybeConfirmFriendRequestAccept: m
 }

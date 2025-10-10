@@ -481,7 +481,7 @@ function j(e) {
       isDisabled: p,
       isProcessing: h,
       clearable: m,
-      closeOnSelect: E,
+      closeOnSelect: E = true,
       maxVisibleItems: y,
       label: v,
       hideLabel: S,

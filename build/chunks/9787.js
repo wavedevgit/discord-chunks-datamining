@@ -2,41 +2,42 @@
 /** chunk id: 9787, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NI: () => Q,
-  YF: () => q,
-  bQ: () => K
+  NI: () => J,
+  YF: () => X,
+  Y_: () => ea,
+  bQ: () => z
 });
 var r, Chunk647438 = require("./647438.js"),
   Chunk71448 = require("./71448.js");
 require("./951288.js");
-var Chunk274676 = require("./274676.js");
-require("./603113.js");
-var Chunk863785 = require("./863785.js");
-let l = "data-floating-ui-focusable",
-  c = "active",
-  u = "selected",
-  d = "ArrowLeft",
-  f = "ArrowRight",
-  _ = "ArrowUp",
-  p = "ArrowDown",
-  h = {
+var Chunk274676 = require("./274676.js"),
+  Chunk603113 = require("./603113.js"),
+  Chunk863785 = require("./863785.js");
+let c = "data-floating-ui-focusable",
+  u = "active",
+  d = "selected",
+  f = "ArrowLeft",
+  _ = "ArrowRight",
+  p = "ArrowUp",
+  h = "ArrowDown",
+  m = {
     ...r || (r = require.t(Chunk647438, 2))
   },
-  m = false,
-  g = 0,
-  E = () => "floating-ui-" + Math.random().toString(36).slice(2, 6) + g++;
+  g = false,
+  E = 0,
+  b = () => "floating-ui-" + Math.random().toString(36).slice(2, 6) + E++;
 
-function b() {
-  let [e, t] = Chunk647438.useState(() => m ? E() : true);
+function y() {
+  let [e, t] = Chunk647438.useState(() => g ? b() : true);
   return (0, Chunk71448.Xj)(() => {
-    null == module && exports(E())
+    null == module && exports(b())
   }, []), Chunk647438.useEffect(() => {
-    m = true
+    g = true
   }, []), module
 }
-let y = h.useId || b;
+let O = m.useId || y;
 
-function O() {
+function v() {
   let e = new Map;
   return {
     emit(t, n) {
@@ -52,51 +53,51 @@ function O() {
     }
   }
 }
-let v = Chunk647438.createContext(null),
-  I = Chunk647438.createContext(null),
-  T = () => {
+let I = Chunk647438.createContext(null),
+  T = Chunk647438.createContext(null),
+  S = () => {
     var e;
-    return (null == (e = Chunk647438.useContext(v)) ? true : module.id) || null
+    return (null == (e = Chunk647438.useContext(I)) ? true : module.id) || null
   },
-  S = () => Chunk647438.useContext(I);
+  A = () => Chunk647438.useContext(T);
 
-function A(e) {
+function C(e) {
   return "data-floating-ui-" + e
 }
-let C = null,
-  N = 0;
+let N = null,
+  R = 0;
 
-function R(e) {
+function P(e) {
   return (null == e ? true : e.ownerDocument) || document
 }
-let P = {
+let w = {
   inert: new WeakMap,
   "aria-hidden": new WeakMap,
   none: new WeakMap
 };
 
-function w(e) {
-  return "inert" === e ? P.inert : "aria-hidden" === e ? P["aria-hidden"] : P.none
+function D(e) {
+  return "inert" === e ? w.inert : "aria-hidden" === e ? w["aria-hidden"] : w.none
 }
-let D = new WeakSet,
-  L = null,
-  x = 0,
-  M = e => e && (e.host || M(e.parentNode)),
-  j = (e, t) => t.map(t => {
+let L = new WeakSet,
+  x = null,
+  M = 0,
+  j = e => e && (e.host || j(e.parentNode)),
+  k = (e, t) => t.map(t => {
     if (e.contains(t)) return t;
-    let n = M(t);
+    let n = j(t);
     return e.contains(n) ? n : null
   }).filter(e => null != e);
 
-function k(e, t, n, r) {
+function U(e, t, n, r) {
   let i = "data-floating-ui-inert",
     a = r ? "inert" : n ? "aria-hidden" : null,
-    o = j(t, e),
+    o = k(t, e),
     s = new Set,
     l = new Set(o),
     c = [];
-  L[i] || (L[i] = new WeakMap);
-  let u = L[i];
+  x[i] || (x[i] = new WeakMap);
+  let u = x[i];
 
   function d(e) {
     !(!e || s.has(e)) && (s.add(e), e.parentNode && d(e.parentNode))
@@ -109,42 +110,42 @@ function k(e, t, n, r) {
         else {
           let t = a ? e.getAttribute(a) : null,
             n = null !== t && "false" !== t,
-            r = w(a),
+            r = D(a),
             o = (r.get(e) || 0) + 1,
             s = (u.get(e) || 0) + 1;
-          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && D.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
+          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && L.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
         }
     })
   }
-  return o.forEach(d), f(t), s.clear(), x++, () => {
+  return o.forEach(d), f(t), s.clear(), M++, () => {
     c.forEach(e => {
-      let t = w(a),
+      let t = D(a),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
-      t.set(e, n), u.set(e, r), n || (!D.has(e) && a && e.removeAttribute(a), D.delete(e)), r || e.removeAttribute(i)
-    }), --x || (P.inert = new WeakMap, P["aria-hidden"] = new WeakMap, P.none = new WeakMap, D = new WeakSet, L = {})
+      t.set(e, n), u.set(e, r), n || (!L.has(e) && a && e.removeAttribute(a), L.delete(e)), r || e.removeAttribute(i)
+    }), --M || (w.inert = new WeakMap, w["aria-hidden"] = new WeakMap, w.none = new WeakMap, L = new WeakSet, x = {})
   }
 }
-let U = null,
-  G = null,
-  B = () => React.useContext(U),
-  Z = 20,
-  F = null;
+let G = null,
+  B = null,
+  Z = () => React.useContext(G),
+  F = 20,
+  V = null;
 
-function V() {
-  F = F.filter(e => e.isConnected)
+function H() {
+  V = V.filter(e => e.isConnected)
 }
-let H = {
+let Y = {
     pointerdown: "onPointerDown",
     mousedown: "onMouseDown",
     click: "onClick"
   },
-  Y = {
+  W = {
     pointerdown: "onPointerDownCapture",
     mousedown: "onMouseDownCapture",
     click: "onClickCapture"
   },
-  W = e => {
+  K = e => {
     var t, n;
     return {
       escapeKey: "boolean" == typeof e ? e : null != (t = null == e ? true : e.escapeKey) && t,
@@ -152,7 +153,7 @@ let H = {
     }
   };
 
-function K(e, t) {
+function z(e, t) {
   true === t && (t = {});
   let {
     open: n,
@@ -169,13 +170,13 @@ function K(e, t) {
     ancestorScroll: h = false,
     bubbles: m,
     capture: g
-  } = t, E = S(), b = (0, a.iW)("function" == typeof d ? d : () => false), y = "function" == typeof d ? b : d, O = i.useRef(false), {
+  } = t, E = A(), b = (0, a.iW)("function" == typeof d ? d : () => false), y = "function" == typeof d ? b : d, O = i.useRef(false), {
     escapeKey: v,
     outsidePress: I
-  } = W(m), {
+  } = K(m), {
     escapeKey: T,
-    outsidePress: C
-  } = W(g), N = i.useRef(false), R = (0, a.iW)(e => {
+    outsidePress: S
+  } = K(g), N = i.useRef(false), R = (0, a.iW)(e => {
     var t;
     if (!n || !c || !u || "Escape" !== e.key || N.current) return;
     let i = null == (t = l.current.floatingContext) ? true : t.nodeId,
@@ -205,7 +206,7 @@ function K(e, t) {
     let i = O.current;
     if (O.current = false, "click" === f && i || n || "function" == typeof y && !y(e)) return;
     let c = (0, a.U9)(e),
-      u = "[" + A("inert") + "]",
+      u = "[" + C("inert") + "]",
       d = (0, a.Me)(s.floating).querySelectorAll(u),
       _ = (0, o.kK)(c) ? c : null;
     for (; _ && !(0, o.Py)(_);) {
@@ -272,7 +273,7 @@ function K(e, t) {
       }, 5 * !!(0, o.Pf)())
     }
     let _ = (0, a.Me)(s.floating);
-    u && (_.addEventListener("keydown", T ? P : R, T), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, C ? D : w, C);
+    u && (_.addEventListener("keydown", T ? P : R, T), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, S ? D : w, S);
     let p = [];
     return h && ((0, o.kK)(s.domReference) && (p = (0, o.Kx)(s.domReference)), (0, o.kK)(s.floating) && (p = p.concat((0, o.Kx)(s.floating))), !(0, o.kK)(s.reference) && s.reference && s.reference.contextElement && (p = p.concat((0, o.Kx)(s.reference.contextElement)))), (p = p.filter(e => {
       var t;
@@ -282,17 +283,17 @@ function K(e, t) {
         passive: true
       })
     }), () => {
-      u && (_.removeEventListener("keydown", T ? P : R, T), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, C ? D : w, C), p.forEach(e => {
+      u && (_.removeEventListener("keydown", T ? P : R, T), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, S ? D : w, S), p.forEach(e => {
         e.removeEventListener("scroll", t)
       }), window.clearTimeout(e)
     }
-  }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, w, C, D]), i.useEffect(() => {
+  }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, w, S, D]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
   let L = i.useMemo(() => ({
       onKeyDown: R,
       ..._ && {
-        [H[p]]: e => {
+        [Y[p]]: e => {
           r(false, e.nativeEvent, "reference-press")
         },
         ..."click" !== p && {
@@ -310,7 +311,7 @@ function K(e, t) {
       onMouseUp() {
         O.current = true
       },
-      [Y[f]]: () => {
+      [W[f]]: () => {
         l.current.insideReactTree = true
       }
     }), [R, f, l]);
@@ -320,12 +321,12 @@ function K(e, t) {
   } : {}, [c, L, x])
 }
 
-function z(e) {
+function q(e) {
   let {
     open: t = false,
     onOpenChange: n,
     elements: r
-  } = e, o = y(), s = i.useRef({}), [l] = i.useState(() => O()), c = null != T(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
+  } = e, o = O(), s = i.useRef({}), [l] = i.useState(() => v()), c = null != S(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
     s.current.openEvent = e ? t : true, l.emit("openchange", {
       open: e,
       event: t,
@@ -350,25 +351,25 @@ function z(e) {
   }), [t, f, p, l, o, _])
 }
 
-function q(e) {
+function X(e) {
   true === e && (e = {});
   let {
     nodeId: t
-  } = e, n = z({
+  } = e, n = q({
     ...e,
     elements: {
       reference: null,
       floating: null,
       ...e.elements
     }
-  }), r = e.rootContext || n, l = r.elements, [c, u] = i.useState(null), [d, f] = i.useState(null), _ = (null == l ? true : l.domReference) || c, p = i.useRef(null), h = S();
+  }), r = e.rootContext || n, s = r.elements, [c, u] = i.useState(null), [d, f] = i.useState(null), _ = (null == s ? true : s.domReference) || c, p = i.useRef(null), h = A();
   (0, a.Xj)(() => {
     _ && (p.current = _)
   }, [_]);
-  let m = (0, s.YF)({
+  let m = (0, l.YF)({
       ...e,
       elements: {
-        ...l,
+        ...s,
         ...d && {
           reference: d
         }
@@ -414,20 +415,20 @@ function q(e) {
   }), [m, b, y, O])
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   let r = new Map,
     i = "item" === n,
     a = e;
   if (i && e) {
     let {
-      [c]: t, [u]: n, ...r
+      [u]: t, [d]: n, ...r
     } = e;
     a = r
   }
   return {
     ..."floating" === n && {
       tabIndex: false,
-      [l]: ""
+      [c]: ""
     },
     ...a,
     ...t.map(t => {
@@ -435,7 +436,7 @@ function X(e, t, n) {
       return "function" == typeof r ? e ? r(e) : null : r
     }).concat(e).reduce((e, t) => (t && Object.entries(t).forEach(t => {
       let [n, a] = t;
-      if (!(i && [c, u].includes(n)))
+      if (!(i && [u, d].includes(n)))
         if (0 === n.indexOf("on")) {
           if (r.has(n) || r.set(n, []), "function" == typeof a) {
             var o;
@@ -449,23 +450,23 @@ function X(e, t, n) {
   }
 }
 
-function Q(e) {
+function J(e) {
   true === e && (e = []);
   let t = e.map(e => null == e ? true : e.reference),
     n = e.map(e => null == e ? true : e.floating),
     r = e.map(e => null == e ? true : e.item),
-    a = i.useCallback(t => X(t, e, "reference"), t),
-    o = i.useCallback(t => X(t, e, "floating"), n),
-    s = i.useCallback(t => X(t, e, "item"), r);
+    a = i.useCallback(t => Q(t, e, "reference"), t),
+    o = i.useCallback(t => Q(t, e, "floating"), n),
+    s = i.useCallback(t => Q(t, e, "item"), r);
   return i.useMemo(() => ({
     getReferenceProps: a,
     getFloatingProps: o,
     getItemProps: s
   }), [a, o, s])
 }
-let J = "Escape";
+let $ = "Escape";
 
-function $(e, t, n) {
+function ee(e, t, n) {
   switch (e) {
     case "vertical":
       return t;
@@ -475,13 +476,100 @@ function $(e, t, n) {
       return t || n
   }
 }
+let et = e => e.replace(/[A-Z]+(?![a-z])|[A-Z]/g, (e, t) => (t ? "-" : "") + e.toLowerCase());
 
-function ee(e, t) {
-  let [n, r] = React.useState(e);
-  return e && !n && r(true), React.useEffect(() => {
+function en(e, t) {
+  return "function" == typeof e ? e(t) : e
+}
+
+function er(e, t) {
+  let [n, r] = i.useState(e);
+  return e && !n && r(true), i.useEffect(() => {
     if (!e && n) {
       let e = setTimeout(() => r(false), t);
       return () => clearTimeout(e)
     }
   }, [e, n, t]), n
+}
+
+function ei(e, t) {
+  true === t && (t = {});
+  let {
+    open: n,
+    elements: {
+      floating: r
+    }
+  } = e, {
+    duration: o = 250
+  } = t, l = ("number" == typeof o ? o : o.close) || 0, [c, u] = i.useState("unmounted"), d = er(n, l);
+  return d || "close" !== c || u("unmounted"), (0, a.Xj)(() => {
+    if (r) {
+      if (n) {
+        u("initial");
+        let e = requestAnimationFrame(() => {
+          s.flushSync(() => {
+            u("open")
+          })
+        });
+        return () => {
+          cancelAnimationFrame(e)
+        }
+      }
+      u("close")
+    }
+  }, [n, r]), {
+    isMounted: d,
+    status: c
+  }
+}
+
+function ea(e, t) {
+  true === t && (t = {});
+  let {
+    initial: n = {
+      opacity: 0
+    },
+    open: r,
+    close: o,
+    common: s,
+    duration: l = 250
+  } = t, c = e.placement, u = c.split("-")[0], d = i.useMemo(() => ({
+    side: u,
+    placement: c
+  }), [u, c]), f = "number" == typeof l, _ = (f ? l : l.open) || 0, p = (f ? l : l.close) || 0, [h, m] = i.useState(() => ({
+    ...en(s, d),
+    ...en(n, d)
+  })), {
+    isMounted: g,
+    status: E
+  } = ei(e, {
+    duration: l
+  }), b = (0, a.II)(n), y = (0, a.II)(r), O = (0, a.II)(o), v = (0, a.II)(s);
+  return (0, a.Xj)(() => {
+    let e = en(b.current, d),
+      t = en(O.current, d),
+      n = en(v.current, d),
+      r = en(y.current, d) || Object.keys(e).reduce((e, t) => (e[t] = "", e), {});
+    if ("initial" === E && m(t => ({
+        transitionProperty: t.transitionProperty,
+        ...n,
+        ...e
+      })), "open" === E && m({
+        transitionProperty: Object.keys(r).map(et).join(","),
+        transitionDuration: _ + "ms",
+        ...n,
+        ...r
+      }), "close" === E) {
+      let r = t || e;
+      m({
+        transitionProperty: Object.keys(r).map(et).join(","),
+        transitionDuration: p + "ms",
+        ...n,
+        ...r
+      })
+    }
+  }, [p, O, b, y, v, _, E, d]), {
+    isMounted: g,
+    styles: h
+  }
 }

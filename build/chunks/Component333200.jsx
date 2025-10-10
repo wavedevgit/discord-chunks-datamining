@@ -6,9 +6,9 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk793030 = require("./793030.js"),
-  Chunk496600 = require("./496600.jsx"),
+var Chunk496600 = require("./496600.jsx"),
   Chunk713072 = require("./713072.jsx"),
+  Chunk345729 = require("./345729.js"),
   Chunk680765 = require("./680765.js");
 
 function l(e, t, n) {
@@ -90,16 +90,14 @@ function p(e) {
     refs: T,
     floatingStyles: S,
     getFloatingProps: A,
-    getReferenceProps: C
-  } = (0, i.ON0)({
-    placement: "bottom",
-    matchReferenceWidth: true
-  });
-  return (0, r.jsxs)(a.uz, d(c({}, b), {
+    getReferenceProps: C,
+    transitionStyles: N
+  } = (0, o.C)();
+  return (0, r.jsxs)(i.uz, d(c({}, b), {
     isCollapsible: true,
     isOpen: v,
     setIsOpen: I,
-    children: [(0, r.jsx)(a.Ct, c({
+    children: [(0, r.jsx)(i.Ct, c({
       label: t,
       hideLabel: n,
       hideTags: l,
@@ -116,10 +114,10 @@ function p(e) {
     }, C())), v && (0, r.jsx)("div", d(c({
       ref: T.setFloating,
       className: s.selectDropdown,
-      style: S
+      style: c({}, S, N)
     }, A()), {
-      children: (0, r.jsx)(a.px, {
-        renderListItem: e => (0, r.jsx)(o.W, c({}, e)),
+      children: (0, r.jsx)(i.px, {
+        renderListItem: e => (0, r.jsx)(a.W, c({}, e)),
         maxVisibleItems: E
       })
     }))]
