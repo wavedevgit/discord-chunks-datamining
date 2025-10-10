@@ -40,9 +40,9 @@ function y(e) {
     {
       analyticsLocations: T
     } = (0, r.ZP)(N),
-    [E, L] = a.useState(null != (n = I.initialStep) ? n : Object.keys(I.steps)[0]),
+    [L, E] = a.useState(null != (n = I.initialStep) ? n : Object.keys(I.steps)[0]),
     B = (0, v.Td)(P, true),
-    D = I.steps[E],
+    D = I.steps[L],
     [G, F] = a.useState(null == k ? true : k.id);
   a.useEffect(() => {
     var e, t, n;
@@ -53,7 +53,7 @@ function y(e) {
   let [J, z] = a.useState(true), H = a.useMemo(() => {
     var e;
     if (null != G) return Object.values(null != (e = null == Z ? true : Z.catalog) ? e : {}).find(e => e.id === G)
-  }, [null == Z ? true : Z.catalog, G]), [A, K] = a.useState(S), [R, U] = a.useState(null != (u = null == k || null == (t = k.plans[0]) ? true : t.id) ? u : null == S ? true : S.planId), X = function(e, t, n, l) {
+  }, [null == Z ? true : Z.catalog, G]), [A, K] = a.useState(S), [R, M] = a.useState(null != (u = null == k || null == (t = k.plans[0]) ? true : t.id) ? u : null == S ? true : S.planId), U = function(e, t, n, l) {
     var a, r, s, o, c, u, d, m;
     let v = (0, i.e7)([f.Z], () => {
         var t;
@@ -61,14 +61,14 @@ function y(e) {
       }),
       g = null != (d = null == t || null == (a = t.plans.find(e => e.id === n)) ? true : a.cost) ? d : 0;
     return null == l ? g : g - (null != (m = null == v || null == (u = v[l.entitlementId]) || null == (c = u.sku) || null == (o = c.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
-  }(P, H, R, A), Y = a.useCallback((e, t) => {
+  }(P, H, R, A), X = a.useCallback((e, t) => {
     var n;
-    F(null == e ? true : e.id), U(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
-  }, []), M = a.useCallback(e => {
+    F(null == e ? true : e.id), M(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
+  }, []), Y = a.useCallback(e => {
     var t, n, l;
     K(e);
     let a = null == Z || null == (l = Z.entitlements) || null == (n = l[e.entitlementId]) || null == (t = n.sku) ? true : t.product_id;
-    null != a && F(a), U(e.planId), Q(e.name), ee(e.regionId)
+    null != a && F(a), M(e.planId), Q(e.name), ee(e.regionId)
   }, [null == Z ? true : Z.entitlements]), [q, W] = a.useState(), [$, Q] = a.useState(null != (x = null == S ? true : S.name) ? x : ""), [V, ee] = a.useState(null != (y = null == S ? true : S.regionId) ? y : ""), [et, en] = a.useState(false), el = a.useCallback(() => {
     if (z(true), null == _ || null == H || "" === $ || "" === V || null == R) return;
     let e = () => {
@@ -85,9 +85,9 @@ function y(e) {
         en(false)
       })
     };
-    B < X ? (0, s.u)({
+    B < U ? (0, s.u)({
       analyticsLocation: N,
-      numberOfBoostsToAdd: X - B,
+      numberOfBoostsToAdd: U - B,
       analyticsLocations: T,
       guild: _,
       intent: o.P.PERK,
@@ -96,13 +96,13 @@ function y(e) {
       },
       onSubscribeComplete: e
     }) : e()
-  }, [T, _, B, R, N, H, $, V, C, X, A]), ea = a.useCallback(e => {
+  }, [T, _, B, R, N, H, $, V, C, U, A]), ea = a.useCallback(e => {
     switch (e.type) {
       case "close":
         C();
         break;
       case "go-to-step":
-        L(e.step);
+        E(e.step);
         break;
       case "save":
         el()
@@ -118,7 +118,7 @@ function y(e) {
   return (0, l.jsx)(j.Provider, {
     value: {
       guildId: P,
-      step: E,
+      step: L,
       stepAction: D,
       stepLoading: et,
       onBack: ei,
@@ -126,16 +126,16 @@ function y(e) {
       gameServerGames: null != (O = null == Z ? true : Z.catalog) ? O : {},
       instances: Object.values(null != (h = null == Z ? true : Z.instances) ? h : {}),
       currentGame: H,
-      setCurrentGame: Y,
+      setCurrentGame: X,
       gameServerInstance: A,
-      setGameServerInstance: M,
+      setGameServerInstance: Y,
       name: $,
       setName: Q,
       regionId: V,
       setRegionId: ee,
-      planCost: X,
+      planCost: U,
       planId: R,
-      setPlanId: U,
+      setPlanId: M,
       footerNode: q,
       setFooterNode: W,
       availableBoostCount: B,

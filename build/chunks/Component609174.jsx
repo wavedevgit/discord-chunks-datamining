@@ -65,7 +65,7 @@ let m = Chunk185514.Nx.binds["0"],
     }));
     return (0, r.jsxs)("div", {
       className: f.backForwardButtons,
-      children: [(0, r.jsx)(o.ua7, {
+      children: [(0, r.jsx)(o.aML, {
         "data-migration-pending": true,
         "aria-label": p.intl.string(p.t.B9vzIC),
         tooltipContentClassName: f.navigationTooltip,
@@ -87,7 +87,7 @@ let m = Chunk185514.Nx.binds["0"],
             color: "currentColor"
           })
         }))
-      }), (0, r.jsx)(o.ua7, {
+      }), (0, r.jsx)(o.aML, {
         "data-migration-pending": true,
         "aria-label": p.intl.string(p.t["9KJ29f"]),
         tooltipContentClassName: f.navigationTooltip,

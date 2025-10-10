@@ -18,14 +18,14 @@ function u(e) {
     clipIconRef: n,
     lastClipsSession: u
   } = e;
-  return (0, r.jsxs)(l.Cys, {
+  return (0, r.jsxs)(l.gqK, {
     tooltipClassName: c.reminderTooltip,
     tooltipContentClassName: c.tooltipContent,
     targetElementRef: {
       current: n
     },
     position: "bottom",
-    color: l.FGA.PRIMARY,
+    color: l.r6K.PRIMARY,
     children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(l.Heading, {
       variant: "heading-md/extrabold",
       children: s.intl.format(s.t["+qxkzM"], {

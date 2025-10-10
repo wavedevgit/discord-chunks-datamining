@@ -44,9 +44,9 @@ let g = Chunk647438.memo(function(e) {
       }
     }, [e, t]), e
   }();
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(a.aML, {
     forceOpen: l,
-    color: a.FGA.GREEN,
+    color: a.r6K.GREEN,
     hideOnClick: true,
     spacing: 12,
     position: "right",

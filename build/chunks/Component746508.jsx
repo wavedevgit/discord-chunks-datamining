@@ -180,7 +180,7 @@ function eq() {
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: Chunk890332.noiseCancellationPopout,
-    children: [(0, Chunk951288.jsx)(Chunk481060.ua7, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
       text: Chunk388032.intl.formatToPlainString(Chunk388032.t["/tqmfH"], {
         enabled: exports ? "true" : "false",
@@ -318,7 +318,7 @@ function eQ(e) {
           } = e, c = ez(e, ["onClick"]), {
             isShown: p
           } = l;
-          return (0, r.jsx)(m.ua7, {
+          return (0, r.jsx)(m.aML, {
             "data-migration-pending": true,
             text: i,
             children: e => (0, r.jsx)(g.zx, eF(eV({
@@ -382,7 +382,7 @@ function eX(e) {
     events: O,
     play: E
   } = (0, Z.Z)("RTCConnection");
-  return n ? (0, r.jsx)(m.ua7, {
+  return n ? (0, r.jsx)(m.aML, {
     "data-migration-pending": true,
     text: p,
     children: e => (0, r.jsx)(M.Xf, {
@@ -508,7 +508,7 @@ function eJ(e) {
         onClick: n,
         onMouseEnter: i
       } = e, l = ez(e, ["onClick", "onMouseEnter"]);
-      return (0, r.jsx)(m.ua7, {
+      return (0, r.jsx)(m.aML, {
         "data-migration-pending": true,
         text: N,
         children: e => (0, r.jsx)(g.zx, eF(eV(eF(eV({
@@ -593,7 +593,7 @@ class e$ extends Chunk647438.PureComponent {
       channel: l,
       voiceStates: a
     } = this.props;
-    return null != Chunk647438 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === em.default.getId() && (0, ei.gf)(e.voiceState) === ei.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk951288.jsx)(eK, {}) : !require && exports ? (0, Chunk951288.jsx)(Chunk481060.ua7, {
+    return null != Chunk647438 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === em.default.getId() && (0, ei.gf)(e.voiceState) === ei.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk951288.jsx)(eK, {}) : !require && exports ? (0, Chunk951288.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
       text: Chunk388032.intl.string(Chunk388032.t["i+SO/f"]),
       tooltipClassName: Chunk890332.noiseCancellationTooltip,

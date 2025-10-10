@@ -103,7 +103,7 @@ let I = Chunk647438.memo(function(e) {
               size: 24,
               guild: n,
               tooltipPosition: "bottom",
-              tooltipColor: c.ua7.Colors.PRIMARY
+              tooltipColor: c.aML.Colors.PRIMARY
             }), y && (0, l.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: j.inviteButton,

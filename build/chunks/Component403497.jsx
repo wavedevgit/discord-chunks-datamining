@@ -97,7 +97,7 @@ function N(e) {
       (0, m.ZN)("fast-travel")
     }, []),
     H = (null == t || "" === t) && n ? C.intl.string(C.t.ZvKwYW) : t;
-  return null == H || "" === H ? null : (0, r.jsx)(c.ua7, {
+  return null == H || "" === H ? null : (0, r.jsx)(c.aML, {
     "data-migration-pending": true,
     shouldShow: n,
     "aria-label": C.intl.string(C.t["7P/+q6"]),

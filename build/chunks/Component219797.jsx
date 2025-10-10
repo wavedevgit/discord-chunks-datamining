@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk993365 = require("./993365.js"),
-  Chunk981729 = require("./981729.jsx"),
+  Chunk506802 = require("./506802.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk543651 = require("./543651.jsx"),
   Chunk177751 = require("./177751.js"),
@@ -102,7 +102,7 @@ function A(e) {
   let n = e.item.originalItem,
     a = i.useCallback(() => {
       var e;
-      return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.DY, {
+      return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.jS, {
         text: b.intl.string(b.t["/fgfWl"]),
         className: y.clipPill,
         children: [(0, r.jsx)(l.AlX, {

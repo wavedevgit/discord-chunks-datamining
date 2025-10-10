@@ -81,14 +81,14 @@ function v(e) {
   }, [S, A]);
   let L = C ? m.intl.string(m.t["Osi/u7"]) : O(t),
     x = C ? m.intl.string(m.t.ORK94u) : true;
-  return (0, r.jsxs)(u.DY3, {
+  return (0, r.jsxs)(u.jSM, {
     position: "top",
     text: (0, r.jsx)(y, {
       textColor: "always-white",
       tooltipText: L,
       headingText: x
     }),
-    color: u.ua7.Colors.BRAND,
+    color: u.aML.Colors.BRAND,
     forceOpen: C,
     "aria-label": L,
     tooltipClassName: g.tooltip,

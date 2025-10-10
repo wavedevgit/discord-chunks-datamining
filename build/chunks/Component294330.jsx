@@ -164,7 +164,7 @@ function N(e) {
             children: [(0, r.jsx)(m.Z, {
               className: I.guildBadge,
               guild: t,
-              tooltipColor: c.ua7.Colors.PRIMARY
+              tooltipColor: c.aML.Colors.PRIMARY
             }), (0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
               className: I.guildName,

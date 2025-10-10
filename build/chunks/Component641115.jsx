@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 641115, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -107,7 +107,7 @@ function w(e) {
       value: g,
       label: h
     } = r;
-  return a ? (n = (0, l.jsx)(d.DY3, {
+  return a ? (n = (0, l.jsx)(d.jSM, {
     tooltipClassName: E.tooltip,
     spacing: 6,
     "aria-label": T.intl.string(T.t.sEAnVF),
@@ -145,7 +145,7 @@ function w(e) {
   }
 }
 
-function D(e) {
+function _(e) {
   let {
     onClose: n,
     selectedPreset: t,
@@ -154,8 +154,8 @@ function D(e) {
     onResolutionChange: a,
     onFPSChange: j,
     onPresetChange: R,
-    targetGuildPremiumTier: D,
-    captureDeviceSelected: _
+    targetGuildPremiumTier: _,
+    captureDeviceSelected: D
   } = e, M = (0, o.e7)([Z.default], () => {
     let e = Z.default.getCurrentUser();
     return c()(null != e, "StreamSettings: user cannot be undefined"), e
@@ -163,15 +163,15 @@ function D(e) {
     location: z
   } = (0, x.O)(), G = (0, g.Zq)({
     autoTrackExposure: false
-  }), W = (0, p.B4)(), V = !L && !G, [B, F] = r.useState(false), H = _ ? b.z8 : b.WC, Y = A(y({}, z), {
+  }), W = (0, p.B4)(), V = !L && !G, [B, F] = r.useState(false), H = D ? b.z8 : b.WC, X = A(y({}, z), {
     section: P.jXE.STREAM_SETTINGS
-  }), X = (0, l.jsx)(u.hE, {
+  }), Y = (0, l.jsx)(u.hE, {
     buttons: H.map(e => w({
       type: e,
       selected: e.value === i,
-      needsPremium: !(0, S.Z)(t, e.value, s, M, D, U),
+      needsPremium: !(0, S.Z)(t, e.value, s, M, _, U),
       needsDemo: W && e.value !== b.ApplicationStreamResolutions.RESOLUTION_720,
-      analyticsLocation: Y,
+      analyticsLocation: X,
       onClick: () => a(e.value),
       onClose: n,
       setIsHovering: F
@@ -180,9 +180,9 @@ function D(e) {
     buttons: b.k0.map(e => w({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, S.Z)(t, i, e.value, M, D, U),
+      needsPremium: !(0, S.Z)(t, i, e.value, M, _, U),
       needsDemo: W && e.value === b.ApplicationStreamFPS.FPS_60,
-      analyticsLocation: Y,
+      analyticsLocation: X,
       onClick: () => j(e.value),
       onClose: n,
       setIsHovering: F
@@ -190,7 +190,7 @@ function D(e) {
   }), K = [{
     value: b.ApplicationStreamPresets.PRESET_VIDEO,
     label: T.intl.string(T.t.HcwHc3)
-  }, ..._ ? [] : [{
+  }, ...D ? [] : [{
     value: b.ApplicationStreamPresets.PRESET_DOCUMENTS,
     label: T.intl.string(T.t["/RfohI"])
   }], {
@@ -217,7 +217,7 @@ function D(e) {
     children: [(0, l.jsxs)(d.NIo, {
       children: [(0, l.jsx)(d.gNt, {
         label: T.intl.string(T.t.rHyPXl),
-        children: X
+        children: Y
       }), (0, l.jsx)(d.gNt, {
         label: T.intl.string(T.t.SkkeIi),
         children: q
@@ -228,7 +228,7 @@ function D(e) {
       glow: B
     }) : null, W && (0, l.jsx)(C.c, {})]
   });
-  return (0, l.jsx)(m.Z, A(y({}, Y), {
+  return (0, l.jsx)(m.Z, A(y({}, X), {
     children: (0, l.jsx)("div", {
       className: I.modalContent,
       children: (0, l.jsxs)("div", {

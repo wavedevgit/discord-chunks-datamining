@@ -201,7 +201,7 @@ function M(e) {
   let t, n;
   var a, {
     guild: o,
-    tooltipColor: l = u.ua7.Colors.BRAND,
+    tooltipColor: l = u.aML.Colors.BRAND,
     tooltipPosition: d,
     className: g,
     flowerStarClassName: E,
@@ -246,7 +246,7 @@ function M(e) {
     q = (0, c.wj)(M) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;
   let X = Math.floor(.75 * w) - (null != K ? K : 0);
-  return (0, r.jsx)(u.ua7, {
+  return (0, r.jsx)(u.aML, {
     color: l,
     position: d,
     "aria-label": N,

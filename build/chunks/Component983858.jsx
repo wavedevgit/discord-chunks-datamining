@@ -39,8 +39,8 @@ let h = [16, 16, 14, 14, 12, 10, 8],
       })
     });
     let {
-      name: R
-    } = r, L = null != r.discoverySplash && /^data:/.test(r.discoverySplash) ? r.discoverySplash : f.ZP.getGuildDiscoverySplashURL({
+      name: L
+    } = r, R = null != r.discoverySplash && /^data:/.test(r.discoverySplash) ? r.discoverySplash : f.ZP.getGuildDiscoverySplashURL({
       id: r.id,
       splash: r.discoverySplash,
       size: 240 * (0, E.x_)()
@@ -48,15 +48,15 @@ let h = [16, 16, 14, 14, 12, 10, 8],
       id: r.id,
       icon: r.icon,
       size: 40
-    })) ? i : true, V = null != r.description ? r.description : A, G = null != N ? N : null == r ? true : r.memberCount, x = null != C ? C : null == r ? true : r.presenceCount, M = null;
-    if (null != j) M = (0, n.jsx)("img", {
+    })) ? i : true, V = null != r.description ? r.description : A, G = null != N ? N : null == r ? true : r.memberCount, M = null != C ? C : null == r ? true : r.presenceCount, x = null;
+    if (null != j) x = (0, n.jsx)("img", {
       src: j,
       alt: "",
       className: S.avatar
     });
     else {
       let e = (0, I.Zg)(r.name);
-      M = (0, n.jsx)("div", {
+      x = (0, n.jsx)("div", {
         className: S.defaultIcon,
         children: (0, n.jsx)(u.Text, {
           className: S.acronym,
@@ -79,7 +79,7 @@ let h = [16, 16, 14, 14, 12, 10, 8],
         children: [(0, n.jsx)("div", {
           className: S.splash,
           children: (0, n.jsx)("img", {
-            src: null != L ? L : b,
+            src: null != R ? R : b,
             alt: "",
             className: S.splashImage,
             onLoad: () => P(true)
@@ -96,7 +96,7 @@ let h = [16, 16, 14, 14, 12, 10, 8],
                 mask: c.ZP.Masks.SQUIRCLE,
                 width: 40,
                 height: 40,
-                children: null != M ? M : null
+                children: null != x ? x : null
               })
             })
           })
@@ -108,12 +108,12 @@ let h = [16, 16, 14, 14, 12, 10, 8],
           children: [(0, n.jsx)(d.Z, {
             className: S.verifiedIcon,
             guild: r,
-            tooltipColor: u.ua7.Colors.PRIMARY
+            tooltipColor: u.aML.Colors.PRIMARY
           }), (0, n.jsx)(u.Text, {
             className: S.guildName,
             variant: "text-md/normal",
             children: (0, n.jsx)("span", {
-              children: R
+              children: L
             })
           })]
         }), (0, n.jsx)("div", {
@@ -127,16 +127,16 @@ let h = [16, 16, 14, 14, 12, 10, 8],
           })
         }), (0, n.jsxs)("div", {
           className: S.memberInfo,
-          children: [null != x && (0, n.jsxs)("div", {
+          children: [null != M && (0, n.jsxs)("div", {
             className: S.memberCount,
             children: [(0, n.jsx)("div", {
               className: S.dotOnline
             }), (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
               children: T ? _.intl.formatToPlainString(_.t.YMor7u, {
-                count: x
+                count: M
               }) : _.intl.formatToPlainString(_.t["LC+S+v"], {
-                membersOnline: x
+                membersOnline: M
               })
             })]
           }), null != G && (0, n.jsxs)("div", {

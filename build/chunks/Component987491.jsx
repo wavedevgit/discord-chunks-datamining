@@ -65,7 +65,7 @@ function A(e) {
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     sortOrder: t,
     onSortChange: n
@@ -108,7 +108,7 @@ function Z(e) {
     })
   })
 }
-let M = Chunk647438.memo(function(e) {
+let Z = Chunk647438.memo(function(e) {
     let {
       joinRequest: t,
       user: n
@@ -179,7 +179,7 @@ let M = Chunk647438.memo(function(e) {
         [w.selected]: (null == h ? true : h.joinRequestId) === t.joinRequestId
       }),
       children: [(0, l.jsx)("td", {
-        children: (0, l.jsx)(M, {
+        children: (0, l.jsx)(Z, {
           joinRequest: t,
           user: b
         })
@@ -322,7 +322,7 @@ function G(e) {
       orientation: "horizontal",
       children: (0, l.jsxs)("table", {
         className: I.table,
-        children: [(0, l.jsx)(Z, {
+        children: [(0, l.jsx)(M, {
           sortOrder: s,
           onSortChange: x
         }), (0, l.jsx)("tbody", {

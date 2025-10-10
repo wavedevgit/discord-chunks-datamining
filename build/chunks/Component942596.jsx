@@ -277,7 +277,7 @@ class $ extends(r = Chunk647438.PureComponent) {
         href: e.url,
         children: h
       })]
-    })), (0, C.dS)(e) || null == f.small_image || (l = (0, i.jsx)(d.ua7, {
+    })), (0, C.dS)(e) || null == f.small_image || (l = (0, i.jsx)(d.aML, {
       text: "" !== f.small_text ? f.small_text : null,
       position: "top",
       children: e => {
@@ -293,7 +293,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       children: l
     }) : (0, i.jsxs)("div", {
       className: F.assets,
-      children: [(0, i.jsx)(d.ua7, {
+      children: [(0, i.jsx)(d.aML, {
         text: null != f.large_text ? f.large_text : null,
         position: "top",
         children: e => {

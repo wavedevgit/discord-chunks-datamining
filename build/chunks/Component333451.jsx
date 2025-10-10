@@ -1,7 +1,7 @@
 /** Chunk was on 24920 **/
 /** chunk id: 333451, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk22706 = require("./22706.js");
 
-function T(e) {
+function L(e) {
   let {
     shouldUpsellFromNoneTier: n
   } = e, t = (0, a.e7)([S.default], () => S.default.locale);
@@ -64,7 +64,7 @@ function T(e) {
   })
 }
 
-function x(e) {
+function T(e) {
   var n;
   let {
     premiumSubscriptionPlan: t,
@@ -73,14 +73,14 @@ function x(e) {
     onSkip: h,
     onSubscriptionConfirmation: S,
     analyticsLocation: y,
-    analyticsSourceLocation: x,
-    priceOptions: L
+    analyticsSourceLocation: T,
+    priceOptions: x
   } = e, {
     analyticsLocations: j,
     sourceAnalyticsLocations: C
   } = (0, p.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, k = null == t || null == t.premiumSubscriptionType, v = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, L), D = (0, I.T4)(v.amount, v.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
+  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, k = null == t || null == t.premiumSubscriptionType, v = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, x), D = (0, I.T4)(v.amount, v.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
   return l.useEffect(() => {
     g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -105,7 +105,7 @@ function x(e) {
         children: null != w ? b.intl.string(b.t.AoSzEh) : b.intl.format(b.t["7vePZW"], {
           monthlyPrice: D
         })
-      }), (0, i.jsx)(T, {
+      }), (0, i.jsx)(L, {
         shouldUpsellFromNoneTier: k
       })]
     }), (0, i.jsxs)(u.mzw, {
@@ -159,7 +159,7 @@ function x(e) {
               })(Object(n)).forEach(function(t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               }), e),
-              analyticsSourceLocation: x,
+              analyticsSourceLocation: T,
               onSubscriptionConfirmation: S,
               trialId: w
             })

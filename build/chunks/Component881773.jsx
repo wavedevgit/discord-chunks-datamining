@@ -134,7 +134,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
         className: S.videoControlsBtnTooltipKeyCombo
       })]
     });
-    return (0, r.jsx)(d.ua7, {
+    return (0, r.jsx)(d.aML, {
       text: e,
       "aria-label": p,
       tooltipContentClassName: S.videoControlsBtnTooltip,

@@ -25,7 +25,7 @@ let u = function(e, t) {
     shouldShowExpressiveModal: true
   });
   return a.useEffect(() => {
-    null == n && (0, s.J)()
+    null == n && (0, s.Jh)()
   }, [n]), {
     ageVerificationMethods: null == n ? true : n.map(e => {
       let n = c.ed[e];

@@ -107,7 +107,7 @@ function w(e) {
       } : x,
       delay: 100 * !!A
     }, "respect-motion-settings"),
-    F = (0, c.Yzy)(null == w ? true : w.id, {
+    L = (0, c.Yzy)(null == w ? true : w.id, {
       key: Z,
       from: {
         opacity: 0,
@@ -126,7 +126,7 @@ function w(e) {
         duration: A ? 250 : 200
       }
     }, "respect-motion-settings"),
-    [L] = (0, c.bYB)(2, e => ({
+    [F] = (0, c.bYB)(2, e => ({
       from: A ? {
         translateY: 0,
         opacity: 1
@@ -207,7 +207,7 @@ function w(e) {
     style: V,
     children: [(0, r.jsx)("div", {
       className: l()([y.bgGradient, y.bgGradientHighlight])
-    }), F(e => (0, r.jsx)(a.animated.div, {
+    }), L(e => (0, r.jsx)(a.animated.div, {
       className: y.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
@@ -236,7 +236,7 @@ function w(e) {
       }))
     }), (0, r.jsxs)("div", {
       className: y.buttonWrapper,
-      children: [(0, r.jsx)(c.ua7, {
+      children: [(0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         "aria-label": H,
         tooltipClassName: y.tooltip,
@@ -256,7 +256,7 @@ function w(e) {
         }),
         children: e => (0, r.jsx)(a.animated.div, {
           className: y.buttonWrapper,
-          style: L[0],
+          style: F[0],
           children: (0, r.jsx)(c.P3F, O(j({
             className: l()(y.button, {
               [y.loopbackEnabled]: E
@@ -276,13 +276,13 @@ function w(e) {
             })
           }))
         })
-      }), (0, r.jsx)(c.ua7, {
+      }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         shouldShow: k,
         text: v.intl.string(v.t.UvMx7O),
         children: e => (0, r.jsx)(a.animated.div, {
           className: y.buttonWrapper,
-          style: L[1],
+          style: F[1],
           children: (0, r.jsx)(c.P3F, O(j({
             className: y.button,
             "aria-hidden": M,

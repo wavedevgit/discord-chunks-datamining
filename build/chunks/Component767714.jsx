@@ -145,7 +145,7 @@ let y = function(e) {
       }
     }))
   }
-  return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
+  return null != x.buttonTooltipText ? (0, r.jsx)(l.aML, {
     text: x.buttonTooltipText,
     children: j
   }) : j()

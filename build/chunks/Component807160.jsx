@@ -143,7 +143,7 @@ function ed(e) {
       c(true), s(true)
     })
   };
-  return (0, i.jsx)(p.ua7, {
+  return (0, i.jsx)(p.aML, {
     forceOpen: l,
     text: o ? r : n,
     children: e => {
@@ -553,7 +553,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         className: Chunk982710.date,
         children: (0, Chunk55935.vc)(c()(r.createdAt), "MM/DD/YYYY")
       }),
-      E = r.isGift ? (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      E = r.isGift ? (0, Chunk951288.jsx)(Chunk481060.aML, {
         text: Chunk388032.intl.string(Chunk388032.t.QddTpq),
         children: e => (0, i.jsx)(p.OgN, Q({
           size: "md",

@@ -68,7 +68,7 @@ function E(e) {
     id: t.id,
     animated: !!i,
     size: 20
-  }) : null == a && (a = p.ZP.getURL(s)), (0, r.jsx)(o.ua7, {
+  }) : null == a && (a = p.ZP.getURL(s)), (0, r.jsx)(o.aML, {
     text: (0, p.nY)(t),
     hideOnClick: true,
     spacing: 16,

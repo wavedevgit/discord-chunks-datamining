@@ -150,7 +150,7 @@ function M(e) {
     className: C.invoiceItemLabelWithIcon,
     children: [(0, r.jsxs)("div", {
       children: [b, " "]
-    }), (0, r.jsx)(u.ua7, {
+    }), (0, r.jsx)(u.aML, {
       text: A.intl.format(A.t.UDop9f, {}),
       "aria-label": A.intl.string(A.t.P68ePD),
       tooltipClassName: C.invoiceItemTooltip,
@@ -185,7 +185,7 @@ function j(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: C.invoiceItemLabelWithIcon,
-    children: [t, (0, r.jsx)(u.ua7, {
+    children: [t, (0, r.jsx)(u.aML, {
       clickableOnMobile: true,
       text: n,
       "aria-label": i,

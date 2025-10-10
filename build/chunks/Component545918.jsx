@@ -87,7 +87,7 @@ function U(e) {
     sortOrder: D
   });
   r.useEffect(() => {
-    (null == v ? true : v.features.has(M.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(S.e.ALL_MEMBERS)
+    (null == v ? true : v.features.has(Z.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(S.e.ALL_MEMBERS)
   }, [v]);
   let U = (0, T.n2)(n),
     F = (0, m.m)(n),
@@ -133,7 +133,7 @@ function U(e) {
           children: u === S.e.ALL_MEMBERS ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(y.Z, {
               guild: v
-            }), (0, l.jsx)(Z.Z, {
+            }), (0, l.jsx)(M.Z, {
               guild: v
             })]
           }) : (0, l.jsx)(I.Z, {

@@ -38,7 +38,7 @@ function f(e) {
       variant: "text-md/normal",
       className: p.itemText,
       children: t
-    }), g && null != m && (0, i.jsx)(c.ua7, {
+    }), g && null != m && (0, i.jsx)(c.aML, {
       "data-migration-pending": true,
       text: C && !f ? d.intl.string(d.t.YSDH9v) : true,
       children: e => {

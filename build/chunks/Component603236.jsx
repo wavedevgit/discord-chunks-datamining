@@ -56,9 +56,9 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       code: T,
       guildScheduledEvent: b,
       disabled: _,
-      application: P
+      application: M
     } = e, {
-      maxAge: M,
+      maxAge: P,
       maxUses: Z,
       networkError: A,
       showVanityURL: w,
@@ -71,9 +71,9 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         location: E,
         code: T,
         guild_scheduled_event_id: null == b ? true : b.id,
-        application_id: null == P ? true : P.id
+        application_id: null == M ? true : M.id
       })
-    }, [null == P ? true : P.id, f, E, T, b]);
+    }, [null == M ? true : M.id, f, E, T, b]);
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(y, {
@@ -90,7 +90,7 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       }), n || w ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [(0, m.Vg)(M, Z), " ", a ? (0, i.jsx)(o.Anchor, {
+        children: [(0, m.Vg)(P, Z), " ", a ? (0, i.jsx)(o.Anchor, {
           onClick: () => N(v.RV.SETTINGS),
           children: I.intl.string(I.t.VNe8Pz)
         }) : null]

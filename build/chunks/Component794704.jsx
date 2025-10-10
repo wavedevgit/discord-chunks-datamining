@@ -446,7 +446,7 @@ function eM(e) {
     onExpand: S,
     className: T ? ep.expandedContainer : true,
     title: (0, r.jsxs)(r.Fragment, {
-      children: [null != (a = null != (n = null != (t = null == s ? true : s.name) ? t : null == p ? true : p.name) ? n : null == o ? true : o.gameName) ? a : "", null != p && p.verified ? (0, r.jsx)(h.ua7, {
+      children: [null != (a = null != (n = null != (t = null == s ? true : s.name) ? t : null == p ? true : p.name) ? n : null == o ? true : o.gameName) ? a : "", null != p && p.verified ? (0, r.jsx)(h.aML, {
         "data-migration-pending": true,
         text: e_.intl.string(e_.t["4PJP5u"]),
         children: e => (0, r.jsx)(P.Z, ey(eE({

@@ -141,7 +141,7 @@ let T = {
       V = Z ? {
         onClick: B
       } : {};
-    return (0, r.jsx)(s.ua7, {
+    return (0, r.jsx)(s.aML, {
       tooltipClassName: E.tooltip,
       text: x ? m.intl.formatToPlainString(m.t["1o48kp"], {
         tierName: (0, d.nW)(A, {

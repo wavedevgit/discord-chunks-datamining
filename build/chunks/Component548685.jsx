@@ -78,7 +78,7 @@ let B = e => {
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/semibold",
           children: i
-        }), G && (0, r.jsx)(a.ua7, {
+        }), G && (0, r.jsx)(a.aML, {
           "data-migration-pending": true,
           text: L.intl.string(L.t["3taPdn"]),
           position: "top",

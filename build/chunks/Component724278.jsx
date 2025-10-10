@@ -93,7 +93,7 @@ function T(e) {
     }), (0, l.jsx)(_.Z, {
       guild: n,
       tooltipPosition: "top",
-      tooltipColor: o.ua7.Colors.PRIMARY,
+      tooltipColor: o.aML.Colors.PRIMARY,
       size: 16,
       className: k.guildBadge
     }), (0, l.jsx)(o.Text, {

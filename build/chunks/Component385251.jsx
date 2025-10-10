@@ -173,7 +173,7 @@ let N = function(e) {
       onClick: () => P(h.R.CONFIRM_DISCOUNT)
     }) : (0, r.jsxs)("div", {
       className: b.activeSubButtons,
-      children: [(0, r.jsx)(i.ua7, {
+      children: [(0, r.jsx)(i.aML, {
         text: n,
         children: n => (0, r.jsx)(i.Button, T(v({}, n), {
           variant: "expressive",

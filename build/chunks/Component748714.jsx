@@ -97,12 +97,12 @@ let _ = e => {
       "data-testid": "submitButton",
       text: h.intl.string(h.t.wmcDys)
     }, s);
-    return null === n ? (0, r.jsx)(a.ua7, {
+    return null === n ? (0, r.jsx)(a.aML, {
       text: h.intl.string(h.t["c/rcUl"]),
       children: e => (0, r.jsx)(i.zxk, E(x({}, e, c), {
         disabled: true
       }))
-    }) : null === t || n > t ? (0, r.jsx)(a.ua7, {
+    }) : null === t || n > t ? (0, r.jsx)(a.aML, {
       text: h.intl.string(h.t.keFvXF),
       children: e => (0, r.jsx)(i.zxk, E(x({}, e, c), {
         disabled: true

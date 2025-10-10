@@ -58,7 +58,7 @@ function x(e) {
     transitionState: n,
     onClose: x,
     analyticsData: v
-  } = e, C = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), N = !!(null == C ? true : C.features.has(_.oNc.INVITES_DISABLED)), [S] = i.useState(false), [m, E] = i.useState(g.Fl), I = (0, a.e7)([p.Z], () => p.Z.getGuildIncident(t)), A = (0, d.BT)(C), D = (0, b.SG)(I) || N, T = (0, b.sN)(I), [P, w] = i.useState(D), [k, M] = i.useState(T), [R, G] = i.useState(false), L = P !== D || k !== T || R, U = N && !A;
+  } = e, C = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), N = !!(null == C ? true : C.features.has(_.oNc.INVITES_DISABLED)), [S] = i.useState(false), [m, E] = i.useState(g.Fl), I = (0, a.e7)([p.Z], () => p.Z.getGuildIncident(t)), A = (0, d.BT)(C), D = (0, b.SG)(I) || N, T = (0, b.sN)(I), [P, w] = i.useState(D), [M, k] = i.useState(T), [R, G] = i.useState(false), L = P !== D || M !== T || R, U = N && !A;
   if (null == C) return x(), null;
 
   function Z() {
@@ -75,9 +75,9 @@ function x(e) {
     }, {
       text: O.intl.string(O.t["pwm/z8"]),
       onClick: () => {
-        (D || T) && !P && !k ? ((0, u.n)(C.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, r.jsx)(f.default, j(y({}, e), {
+        (D || T) && !P && !M ? ((0, u.n)(C.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, r.jsx)(f.default, j(y({}, e), {
           guildId: t
-        }))))) : (0, u.n)(C.id, P, k, m);
+        }))))) : (0, u.n)(C.id, P, M, m);
         let {
           source: e,
           alertType: n,
@@ -88,8 +88,8 @@ function x(e) {
           source: e,
           raid_alert_id: i,
           raid_alert_type: n,
-          intervention_type_enabled: (0, b.sO)(P, k),
-          intervention_type_disabled: (0, b.lk)(P, k),
+          intervention_type_enabled: (0, b.sO)(P, M),
+          intervention_type_disabled: (0, b.lk)(P, M),
           duration: 60 * m
         }), x()
       },
@@ -120,7 +120,7 @@ function x(e) {
             color: "text-muted",
             children: O.intl.string(O.t.qPJkZm)
           })]
-        }), (0, r.jsx)(o.ua7, {
+        }), (0, r.jsx)(o.aML, {
           "data-migration-pending": true,
           text: O.intl.string(O.t["9GPbsb"]),
           shouldShow: N,
@@ -150,9 +150,9 @@ function x(e) {
           className: h.toggle,
           children: (0, r.jsx)(o.rsf, {
             onChange: function() {
-              M(e => !e)
+              k(e => !e)
             },
-            checked: k
+            checked: M
           })
         })]
       })]

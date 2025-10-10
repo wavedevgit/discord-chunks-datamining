@@ -59,7 +59,7 @@ function b(e) {
   function O() {
     v.stop(), S(true)
   }
-  return (0, r.jsx)(c.ua7, {
+  return (0, r.jsx)(c.aML, {
     forceOpen: h,
     disableTooltipPointerEvents: false,
     text: (0, r.jsx)(f.Z, {
@@ -75,7 +75,7 @@ function b(e) {
       })
     }),
     position: "bottom",
-    color: c.FGA.GREY,
+    color: c.r6K.GREY,
     "aria-label": b,
     children: e => {
       var t, i;

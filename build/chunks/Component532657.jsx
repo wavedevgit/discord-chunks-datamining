@@ -77,7 +77,7 @@ function p(e) {
     color: "none",
     className: o()(h && c.truncated, u)
   }, O = null != t && null == n && h, v = !m && (null != n || O || g);
-  return null == p && g ? null : v ? (0, r.jsx)(s.ua7, {
+  return null == p && g ? null : v ? (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: b(),
     "aria-label": f,

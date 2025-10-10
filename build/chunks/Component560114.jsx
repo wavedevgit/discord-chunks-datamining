@@ -427,7 +427,7 @@ class ex extends(i = Chunk647438.PureComponent) {
           variant: "text-sm/normal",
           children: Chunk388032.intl.string(Chunk388032.t.QKJru7)
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      }), (0, Chunk951288.jsx)(Chunk481060.aML, {
         "data-migration-pending": true,
         text: Chunk388032.intl.string(Chunk388032.t.Yx4IiI),
         children: e => {
@@ -707,8 +707,8 @@ let eS = Chunk647438.forwardRef(function(e, t) {
     let e = B.Z.getChannelId(),
       t = null == e || (0, es.AB)(e) ? true : R.Z.getChannel(e);
     return (null == t ? true : t.isThread()) && (t = R.Z.getChannel(t.parent_id)), null != t ? t : O.ZP.getDefaultChannel(r.id, true, el.Plq.CREATE_INSTANT_INVITE)
-  }, [a, r.id]), P = null;
-  null != u ? P = ei.Iq.STREAM : null != c && (P = ei.Iq.EMBEDDED_APPLICATION);
+  }, [a, r.id]), M = null;
+  null != u ? M = ei.Iq.STREAM : null != c && (M = ei.Iq.EMBEDDED_APPLICATION);
   let A = null != a ? a.getGuildId() : null != r ? r.id : null,
     w = (0, K.xU)({
       guildId: A,
@@ -721,11 +721,11 @@ let eS = Chunk647438.forwardRef(function(e, t) {
     F = (0, m.e7)([L.Z], () => {
       let e = null != _ ? _.id : null;
       return null == e ? null : L.Z.getInvite(e, {
-        targetType: P,
+        targetType: M,
         targetUserId: u,
         targetApplicationId: c
       })
-    }, [_, P, u, c]),
+    }, [_, M, u, c]),
     {
       isFriendsInVCInvitesEnabled: H
     } = (0, W.am)({
@@ -747,7 +747,7 @@ let eS = Chunk647438.forwardRef(function(e, t) {
           user: n
         } = t;
         e.add(n.id)
-      }) : null != A && null != ee && P !== ei.Iq.EMBEDDED_APPLICATION && ee.rows.forEach(t => {
+      }) : null != A && null != ee && M !== ei.Iq.EMBEDDED_APPLICATION && ee.rows.forEach(t => {
         t.type === V.so.MEMBER && e.add(t.userId)
       }), e
     }),
@@ -759,9 +759,9 @@ let eS = Chunk647438.forwardRef(function(e, t) {
       guild: r,
       channel: a,
       applicationId: c,
-      inviteTargetType: P
+      inviteTargetType: M
     }).catch(el.VqG)
-  }, [ea, a, r, c, P]);
+  }, [ea, a, r, c, M]);
   let [ed] = (0, f.Z)(null != c ? [c] : []), eu = null != F ? F.code : true, ec = null == F ? true : F.maxAge, eg = null == F ? true : F.maxUses, eI = null == F ? true : F.temporary, eS = r.vanityURLCode, ey = null != eS && eS.length > 0, ej = !et && !(null == _ ? true : _.isGuildVocal()) && ey, eC = null != (n = null == F ? true : F.flags) ? n : 0, eN = (null == _ ? true : _.type) === el.d4z.GUILD_VOICE, ef = (0, E.Z)(_);
   et || (null == eo ? true : eo.invite_code) == null || (eu = eo.invite_code);
   let eE = s.useMemo(() => H && eN ? (0, q.Qq)(Y, A) : null, [H, eN, Y, A]),
@@ -783,20 +783,20 @@ let eS = Chunk647438.forwardRef(function(e, t) {
     e_ = s.useCallback(e => {
       eb(t => eh({}, t, e))
     }, []),
-    eP = s.useCallback(e => {
+    eM = s.useCallback(e => {
       e_({
         currentPage: e,
         lastPage: eT.currentPage
       })
     }, [eT.currentPage, e_]),
-    eM = eN && !ej && !en && !ef,
+    eP = eN && !ej && !en && !ef,
     {
       enabled: eZ
-    } = M.o.useExperiment({
+    } = P.o.useExperiment({
       guildId: null == r ? true : r.id,
       location: "acc417_3"
     }, {
-      autoTrackExposure: eM
+      autoTrackExposure: eP
     }),
     {
       maxAge: eA,
@@ -810,8 +810,8 @@ let eS = Chunk647438.forwardRef(function(e, t) {
         currentPage: e,
         lastPage: t
       } = eT;
-      e === ei.RV.SETTINGS && null != t ? eP(t) : v()
-    }, [eP, eT, v]),
+      e === ei.RV.SETTINGS && null != t ? eM(t) : v()
+    }, [eM, eT, v]),
     ek = s.useCallback(() => {
       let e = null == _ ? true : _.id;
       0 === ew && 0 === eA && !eV && ej ? e_({
@@ -823,7 +823,7 @@ let eS = Chunk647438.forwardRef(function(e, t) {
       }), S.ZP.createInvite(e, {
         max_age: eA,
         max_uses: ew,
-        target_type: P,
+        target_type: M,
         target_user_id: u,
         target_application_id: null == ed ? true : ed.id,
         temporary: eV,
@@ -834,7 +834,7 @@ let eS = Chunk647438.forwardRef(function(e, t) {
       }))), eA !== em.value && eR !== em.value && e_({
         savedMaxAge: em.value
       })
-    }, [ej, et, _, o, null == ed ? true : ed.id, P, u, eA, ew, eV, e_, eR, eO]),
+    }, [ej, et, _, o, null == ed ? true : ed.id, M, u, eA, ew, eV, e_, eR, eO]),
     eU = (0, j.Z)(_),
     eD = (0, j.Z)((0, G.yE)(eO, g.$.IS_APPLICATION_BYPASS)),
     eB = null != eU && eU !== _,
@@ -857,7 +857,7 @@ let eS = Chunk647438.forwardRef(function(e, t) {
       guildScheduledEvent: d,
       streamUserId: u,
       vanityURLCode: eS,
-      targetType: P,
+      targetType: M,
       targetUserId: u,
       application: ed,
       rows: Y,
@@ -873,11 +873,11 @@ let eS = Chunk647438.forwardRef(function(e, t) {
       transitionState: h,
       onClose: v,
       canShowVanityURL: ej,
-      isGuestInviteCreationToggleEnabled: eZ && eM,
-      shouldHideTemporaryInviteToggle: eZ && eM || eH,
+      isGuestInviteCreationToggleEnabled: eZ && eP,
+      shouldHideTemporaryInviteToggle: eZ && eP || eH,
       modalState: eT,
       setModalState: e_,
-      changePage: eP,
+      changePage: eM,
       onGenerateNewLink: ek,
       handleDone: eL,
       isApplicationBypassToggleEnabled: ez && !en

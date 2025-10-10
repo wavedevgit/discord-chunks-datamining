@@ -200,7 +200,7 @@ let k = e => {
         P(false), null == e || e()
       }, []),
       H = I.title();
-    return (0, r.jsx)(c.ua7, {
+    return (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: (0, r.jsx)(B, {
         displayOptions: I,
@@ -252,7 +252,7 @@ let k = e => {
         }), t.title()]
       })
     }, [t]);
-    return (0, r.jsx)(c.ua7, {
+    return (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: l,
       tooltipClassName: w.marketingBadgeTooltip,

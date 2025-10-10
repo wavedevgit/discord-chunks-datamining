@@ -378,7 +378,7 @@ function er() {
       }), [...exports].reverse().map(e => {
         let [t, n, i] = e;
         return (0, a.jsx)(r.Fragment, {
-          children: (0, a.jsx)(m.ua7, {
+          children: (0, a.jsx)(m.aML, {
             "data-migration-pending": true,
             position: "left",
             text: i === y.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
@@ -441,7 +441,7 @@ let ei = Chunk647438.memo(function(e) {
           timestamp: l
         }]), e
       }, q({}, e)))
-    }, +Chunk70956.Z.Millis.SECOND), () => clearInterval(Chunk120356.current)), []), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+    }, +Chunk70956.Z.Millis.SECOND), () => clearInterval(Chunk120356.current)), []), (0, Chunk951288.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
       position: "left",
       text: "The most recent screen types we've logged, indexed by pid",
@@ -576,7 +576,7 @@ let ei = Chunk647438.memo(function(e) {
     let e = (0, Chunk442837.cj)([Chunk371651.default], () => Chunk371651.default.getTrackedGames()),
       t = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getRunningGames()).filter(t => null == e[t.pid]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [exports.length > 0 && (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      children: [exports.length > 0 && (0, Chunk951288.jsx)(Chunk481060.aML, {
         "data-migration-pending": true,
         position: "left",
         text: "Games that are running but not tracked by the overlay",
@@ -598,7 +598,7 @@ let ei = Chunk647438.memo(function(e) {
             }))]
           })
         }))
-      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      }), (0, Chunk951288.jsx)(Chunk481060.aML, {
         "data-migration-pending": true,
         position: "left",
         text: "The current running games process information",
@@ -638,7 +638,7 @@ let ei = Chunk647438.memo(function(e) {
       }].map(t => Y(q({}, t), {
         label: "".concat(t.label, " ").concat(e === t.value ? "(current)" : "")
       }));
-    return (0, Chunk951288.jsx)(Chunk481060.ua7, {
+    return (0, Chunk951288.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
       position: "left",
       text: "Override the overlay render mode",

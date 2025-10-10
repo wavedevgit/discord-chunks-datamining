@@ -60,7 +60,7 @@ function m(e) {
       E.current = e
     }
   };
-  return p ? (0, r.jsx)(l.Z, h({}, y)) : (0, r.jsx)(s.ua7, {
+  return p ? (0, r.jsx)(l.Z, h({}, y)) : (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     targetElementRef: E,
     text: b,

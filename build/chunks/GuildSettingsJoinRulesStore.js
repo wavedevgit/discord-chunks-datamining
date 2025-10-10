@@ -2,7 +2,7 @@
 /** chunk id: 658666, original params: e,i,t (module,exports,require) **/
 let n;
 require.d(exports, {
-  Z: () => x
+  Z: () => M
 }), require("./388685.js"), require("./781311.js");
 var l, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -138,7 +138,7 @@ function P(e, i) {
   return !s().isEqual(d, E)
 }
 
-function R() {
+function L() {
   let e = Chunk999382.Z.getGuild();
   if (null == module || null == n) {
     p = T;
@@ -179,13 +179,13 @@ function R() {
   }
 }
 
-function L() {
+function R() {
   if (null == Chunk999382.Z.getGuildId() || null == n) returnfalse;
   n = n.joinType === Chunk384632.A.APPLY ? v(h({}, n), {
     pendingVerificationFields: D()
   }) : v(h({}, n), {
     termRules: C()
-  }), R()
+  }), L()
 }
 
 function b(e) {
@@ -197,7 +197,7 @@ function b(e) {
   let l = E.Z.getGuild();
   if (null == l) returnfalse;
   let r = t === S.KsC.ACCESS_DISCOVERABLE && l.features.has(S.oNc.COMMUNITY) ? I.A.DISCOVERABLE : y(l);
-  n = O(l, r), R()
+  n = O(l, r), L()
 }
 
 function j() {
@@ -208,12 +208,12 @@ function V() {
   if ((null == n ? true : n.joinType) !== Chunk384632.A.DISCOVERABLE) returnfalse;
   n = v(h({}, n), {
     settingsView: A()
-  }), R()
+  }), L()
 }
 class G extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk944163.Z, Chunk733895.ZP), this.syncWith([Chunk999382.Z, Chunk944163.Z], () => {
-      R()
+      L()
     })
   }
   get pendingState() {
@@ -227,7 +227,7 @@ class G extends(l = Chunk442837.ZP.Store) {
   }
 }
 m(G, "displayName", "GuildSettingsJoinRulesStore");
-let x = new G(Chunk570140.Z, {
+let M = new G(Chunk570140.Z, {
   GUILD_SETTINGS_JOIN_RULES_INVITE_SET_PENDING_RULES: function(e) {
     let {
       guildId: i,
@@ -238,7 +238,7 @@ let x = new G(Chunk570140.Z, {
     n = v(h({}, n), {
       requireTerms: t,
       termRules: l
-    }), R()
+    }), L()
   },
   GUILD_SETTINGS_JOIN_RULES_APPLY_SET_PENDING_FORM_FIELDS: function(e) {
     let {
@@ -248,7 +248,7 @@ let x = new G(Chunk570140.Z, {
     if (i !== E.Z.getGuildId() || (null == n ? true : n.joinType) !== I.A.APPLY) returnfalse;
     n = v(h({}, n), {
       pendingVerificationFields: t
-    }), R()
+    }), L()
   },
   GUILD_SETTINGS_JOIN_RULES_SET_SELECTED_TYPE: function(e) {
     let {
@@ -256,7 +256,7 @@ let x = new G(Chunk570140.Z, {
       joinType: t
     } = e, l = E.Z.getGuild();
     if (i !== (null == l ? true : l.id)) returnfalse;
-    n = O(l, t), R()
+    n = O(l, t), L()
   },
   GUILD_SETTINGS_JOIN_RULES_SET_CONTENT_LEVEL: function(e) {
     let {
@@ -266,10 +266,10 @@ let x = new G(Chunk570140.Z, {
     if (i !== (null == l ? true : l.id)) returnfalse;
     n = v(h({}, null != n ? n : O(l, y(l))), {
       isAgeRestricted: t
-    }), R()
+    }), L()
   },
-  MEMBER_VERIFICATION_FORM_UPDATE: L,
-  MEMBER_VERIFICATION_FORM_FETCH_FAIL: L,
+  MEMBER_VERIFICATION_FORM_UPDATE: R,
+  MEMBER_VERIFICATION_FORM_FETCH_FAIL: R,
   GUILD_SETTINGS_INIT: b,
   GUILD_SETTINGS_SET_SECTION: b,
   GUILD_SETTINGS_CLOSE: j,

@@ -156,7 +156,7 @@ let y = 24,
       colorClass: null != m ? m : true,
       color: null != p ? p : "currentColor"
     }, k)), G = w;
-    return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.ua7, {
+    return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: I,
       color: T,

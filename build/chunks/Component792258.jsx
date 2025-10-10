@@ -46,7 +46,7 @@ let E = Chunk647438.memo(e => {
         children: [m ? (0, r.jsx)(c.Z, {
           guild: a,
           tooltipPosition: "bottom",
-          tooltipColor: l.ua7.Colors.PRIMARY,
+          tooltipColor: l.aML.Colors.PRIMARY,
           className: h.guildBadge
         }) : null, (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",

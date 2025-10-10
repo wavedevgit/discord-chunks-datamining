@@ -81,22 +81,22 @@ function z(e) {
     focused: k,
     wrapperClassName: B,
     paused: z = false
-  } = e, q = j.Z.getVideoComponent(), Y = (0, o.e7)([C.default], () => C.default.getId()), G = (0, b.Z)(), {
-    stream: K,
+  } = e, q = j.Z.getVideoComponent(), Y = (0, o.e7)([C.default], () => C.default.getId()), K = (0, b.Z)(), {
+    stream: G,
     user: Q,
     streamId: X
-  } = t, J = (0, o.e7)([w.Z], () => w.Z.getChannel(K.channelId)), $ = (0, o.e7)([I.Z], () => I.Z.getActiveStreamForUser(Q.id, K.guildId), [Q.id, K.guildId]), {
+  } = t, J = (0, o.e7)([w.Z], () => w.Z.getChannel(G.channelId)), $ = (0, o.e7)([I.Z], () => I.Z.getActiveStreamForUser(Q.id, G.guildId), [Q.id, G.guildId]), {
     defaultWatchMultipleStreams: ee
   } = (0, E.P)({
     location: "StreamTile"
   }), et = (0, o.e7)([I.Z], () => I.Z.getAllActiveStreams().length > 0), en = (0, o.e7)([Z.Z], () => Z.Z.isFocused()), er = (null == $ ? true : $.ownerId) === Y, ei = er && !en && !_, el = null != $ ? (0, g.Z)($, Q, Q.id === Y, ei) : null, ea = M < 195;
   (0, d.ZP)(() => {
-    !et && (null == J ? true : J.isGuildStageVoice()) && !er && ((0, u.rn)(K), s.Z.updateStageStreamSize(K.channelId, false))
+    !et && (null == J ? true : J.isGuildStageVoice()) && !er && ((0, u.rn)(G), s.Z.updateStageStreamSize(G.channelId, false))
   });
   let eo = (0, m.c)(V.Yn.STREAM, t.user.id);
   if (i.useEffect(() => {
       H.info("Stream Tile State - activeStream: ".concat(null != $, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(j.Z.supports(V.AN.VIDEO)))
-    }, [q, $, n]), G) return (0, r.jsx)(D.Z, {
+    }, [q, $, n]), K) return (0, r.jsx)(D.Z, {
     stream: t.stream,
     isSmall: ea,
     selected: n,
@@ -142,7 +142,7 @@ function z(e) {
         className: W.addCTA,
         tooltip: U.intl.string(U.t.wCrzur),
         onClick: e => {
-          e.stopPropagation(), (0, u.rn)(K, {
+          e.stopPropagation(), (0, u.rn)(G, {
             forceMultiple: true
           })
         },
@@ -162,7 +162,7 @@ function z(e) {
       guildId: J.guild_id,
       streamerId: Q.id,
       hasScreenMessage: null != el,
-      stream: K
+      stream: G
     }) : null, (0, r.jsx)(S.Z, {
       onResize: l,
       wrapperClassName: a()(W.videoWrapper, B),
@@ -194,7 +194,7 @@ function z(e) {
     }({
       size: (0, x.L)(M)
     }, el)) : null, (0, r.jsx)(A.Z, {
-      stream: K,
+      stream: G,
       inPopout: _
     })]
   })

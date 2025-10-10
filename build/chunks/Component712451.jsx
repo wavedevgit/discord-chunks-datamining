@@ -555,7 +555,7 @@ function M(e) {
               color: "currentColor",
               className: T.zoomIcon
             })]
-          }), (0, n.jsx)(u.ua7, {
+          }), (0, n.jsx)(u.aML, {
             "data-migration-pending": true,
             text: w.intl.string(w.t.E36Wd3),
             "aria-label": w.intl.string(w.t.LzFiKC),

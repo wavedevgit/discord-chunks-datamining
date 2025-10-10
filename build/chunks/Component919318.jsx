@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 919318, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => H
+  ZP: () => L
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430864 = require("./430864.js"),
   Chunk931057 = require("./931057.js");
 
-function k(e) {
+function M(e) {
   let n, t, {
       firstMedia: r,
       channelId: a
@@ -77,7 +77,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     resource: n
   } = e, t = (0, s.e7)([j.Z], () => j.Z.getChannel(n.channelId)), a = (0, s.e7)([v.Z], () => v.Z.getMessages(n.channelId)), u = (0, s.e7)([_.Z], () => _.Z.can(P.Plq.VIEW_CHANNEL, t)), h = a.first(), f = (0, N.Z)(h), g = (0, d.zy)(h, false), p = (null == g ? true : g.length) > 0 ? g[0] : null, b = null != t && null == a.first() && !a.loadingMore && !a.ready && !a.hasFetched && u;
@@ -137,14 +137,14 @@ function M(e) {
         alt: "",
         "aria-hidden": true
       })
-    }) : null, null == C && null != p ? (0, l.jsx)(k, {
+    }) : null, null == C && null != p ? (0, l.jsx)(M, {
       firstMedia: p,
       channelId: n.channelId
     }) : null]
   })
 }
 
-function H(e) {
+function L(e) {
   let {
     guild: n,
     isNewMember: t
@@ -178,7 +178,7 @@ function H(e) {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: w.intl.string(w.t.xwY4LS)
-    }), r.map(e => (0, l.jsx)(M, {
+    }), r.map(e => (0, l.jsx)(k, {
       resource: e
     }, e.channelId))]
   })

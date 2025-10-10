@@ -84,7 +84,7 @@ function v(e) {
       children: h.intl.format(h.t.Nj0a3t, {
         platformName: null != (n = null == s ? true : s.name) ? n : null == g || null == (t = g.application) ? true : t.name
       })
-    }), (0, r.jsx)(d.ua7, {
+    }), (0, r.jsx)(d.aML, {
       "data-migration-pending": true,
       text: h.intl.string(h.t.N86XcH),
       children: e => (0, r.jsx)("div", j(x({}, e), {

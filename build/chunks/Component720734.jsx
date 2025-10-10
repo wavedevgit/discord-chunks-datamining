@@ -978,7 +978,7 @@ function tb(e) {
   return _ = null != l ? f.bgT : s ? f.Ncx : y.Component, (0, a.jsx)(e2.Z, ts(tl({
     ref: x,
     tooltipText: t,
-    tooltipColor: g ? f.FGA.GREEN : true,
+    tooltipColor: g ? f.r6K.GREEN : true,
     tooltipForceOpen: g,
     tooltipClassName: tr.accountButtonsTooltip,
     tooltipContentClassName: tr.accountButtonsTooltipContent,
@@ -1174,7 +1174,7 @@ function tg(e) {
             plated: null != v,
             redGlow: E,
             role: "switch",
-            tooltipColor: _ ? f.FGA.GREEN : true,
+            tooltipColor: _ ? f.r6K.GREEN : true,
             tooltipForceOpen: _,
             tooltipText: t
           }), (0, a.jsx)(e2.Z, {
@@ -1200,7 +1200,7 @@ function tg(e) {
             plated: null != v,
             redGlow: E,
             tooltipClassName: tr.accountButtonsTooltip,
-            tooltipColor: y ? f.FGA.GREEN : true,
+            tooltipColor: y ? f.r6K.GREEN : true,
             tooltipContentClassName: tr.accountButtonsTooltipContent,
             tooltipForceOpen: y,
             tooltipPositionKeyStemOverride: y ? ta.intl.formatToPlainString(ta.t["18wnuL"], {
@@ -1223,7 +1223,7 @@ function tg(e) {
       }),
       children: [(0, a.jsx)(e2.Z, {
         tooltipText: t,
-        tooltipColor: _ ? f.FGA.GREEN : true,
+        tooltipColor: _ ? f.r6K.GREEN : true,
         tooltipForceOpen: _,
         plated: null != v,
         onMouseEnter: () => {
@@ -1314,7 +1314,7 @@ function tg(e) {
                   ref: T,
                   plated: null != v,
                   tooltipForceOpen: en,
-                  tooltipColor: en ? f.FGA.GREEN : true,
+                  tooltipColor: en ? f.r6K.GREEN : true,
                   tooltipContentClassName: en ? tr.voiceFilterWarning : true,
                   tooltipText: en ? (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)("img", {
@@ -1473,7 +1473,7 @@ function tv(e) {
             plated: null != d,
             redGlow: h,
             tooltipClassName: tr.accountButtonsTooltip,
-            tooltipColor: u ? f.FGA.GREEN : true,
+            tooltipColor: u ? f.r6K.GREEN : true,
             tooltipContentClassName: tr.accountButtonsTooltipContent,
             tooltipForceOpen: u,
             tooltipPositionKeyStemOverride: u ? ta.intl.formatToPlainString(ta.t["f+DDY2"], {

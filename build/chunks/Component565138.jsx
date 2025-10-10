@@ -183,7 +183,7 @@ class R extends Chunk647438.PureComponent {
       showTooltip: t,
       tooltipPosition: n
     } = this.props;
-    return exports ? (0, Chunk951288.jsx)(Chunk481060.ua7, {
+    return exports ? (0, Chunk951288.jsx)(Chunk481060.aML, {
       text: module.name,
       position: require,
       "aria-label": false,

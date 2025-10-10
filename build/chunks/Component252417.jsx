@@ -34,11 +34,11 @@ function _(e) {
     themeType: k
   } = (0, v.z)(), Z = n.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
     activities: S,
-    isMobileOnline: A
+    isMobileOnline: E
   } = (0, a.cj)([b.Z], () => ({
     activities: b.Z.getActivities(t.id),
     isMobileOnline: b.Z.isMobileOnline(t.id)
-  })), E = (0, p.Z)(t.id), {
+  })), A = (0, p.Z)(t.id), {
     voiceActivityStatusEnabled: M
   } = (0, l.a)({
     location: "UserProfileMutualFriendRow"
@@ -107,7 +107,7 @@ function _(e) {
       size: g,
       status: Z ? j.Skl.UNKNOWN : _,
       statusBackdropColor: Z ? true : (0, o.QFD)(w),
-      isMobile: A,
+      isMobile: E,
       className: y.avatar
     }), (0, i.jsxs)("div", {
       className: y.details,
@@ -118,7 +118,7 @@ function _(e) {
       }), (0, i.jsx)(d.Z, {
         user: t,
         activities: S,
-        applicationStream: E,
+        applicationStream: A,
         voiceChannel: C
       })]
     })]

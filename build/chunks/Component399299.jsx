@@ -86,7 +86,7 @@ function H(e) {
   })
 }
 
-function Y(e) {
+function X(e) {
   let {
     onChange: n,
     guildId: t
@@ -115,7 +115,7 @@ function Y(e) {
   })
 }
 
-function X(e) {
+function Y(e) {
   let {
     text: n
   } = e;
@@ -233,27 +233,27 @@ function Q(e) {
         sourceChanged: o,
         onChangeSource: y,
         selectedSource: n
-      }), null != en ? (0, l.jsx)(X, {
+      }), null != en ? (0, l.jsx)(Y, {
         text: en
       }) : null, null != n && null == en ? (0, l.jsx)(K, {
         enabled: h,
         onChange: L,
         screen: n.id.startsWith("screen")
       }) : null]
-    }), g && null != u ? (0, l.jsx)(Y, {
+    }), g && null != u ? (0, l.jsx)(X, {
       guildId: u,
       onChange: M
-    }) : null, null != F ? (0, l.jsx)(_.Z, {
+    }) : null, null != F ? (0, l.jsx)(D.Z, {
       channel: F
-    }) : (0, l.jsx)(D.Z, {
+    }) : (0, l.jsx)(_.Z, {
       guildId: u,
       selectedChannelId: i,
       onChangeSelectedChannelId: E
     }), null != u && el && er ? (0, l.jsx)(q, {
       guildId: u
-    }) : null, Q ? (0, l.jsx)(X, {
+    }) : null, Q ? (0, l.jsx)(Y, {
       text: V.intl.string(V.t.q65tS0)
-    }) : null, $ ? (0, l.jsx)(X, {
+    }) : null, $ ? (0, l.jsx)(Y, {
       text: V.intl.format(V.t.RrLvub, {
         helpCenterLink: O.Z.getArticleURL(G.BhN.NVIDIA_DRIVER_ISSUES)
       })

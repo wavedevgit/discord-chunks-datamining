@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 333323, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,8 +63,8 @@ function A(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let k = Chunk404488.q + 300 + 64,
-  M = Chunk647438.memo(function(e) {
+let M = Chunk404488.q + 300 + 64,
+  k = Chunk647438.memo(function(e) {
     let {
       guild: n
     } = e;
@@ -84,12 +84,12 @@ let k = Chunk404488.q + 300 + 64,
     })
   });
 
-function H(e) {
+function L(e) {
   var n, t;
   let {
     guild: a,
     width: h
-  } = e, P = (0, s.e7)([g.ZP], () => g.ZP.getSection(O.oC.GUILD_HOME)), [H, L] = r.useState(false), [T, D] = r.useState(N.$Y6), R = P === N.ULH.SIDEBAR_CHAT, B = (0, c.mFp)(), W = (0, s.e7)([b.Z], () => b.Z.getSettings(a.id)), U = null == W ? true : W.welcomeMessage, G = (0, C.Z)(a.id), F = !G && (null != (t = null == W || null == (n = W.resourceChannels) ? true : n.length) ? t : 0) === 0, z = (0, d.Z)("(max-width: 1300px)"), V = h - N.PrS - T, q = R && V < k || z || F;
+  } = e, P = (0, s.e7)([g.ZP], () => g.ZP.getSection(O.oC.GUILD_HOME)), [L, H] = r.useState(false), [T, D] = r.useState(N.$Y6), R = P === N.ULH.SIDEBAR_CHAT, B = (0, c.mFp)(), W = (0, s.e7)([b.Z], () => b.Z.getSettings(a.id)), U = null == W ? true : W.welcomeMessage, G = (0, C.Z)(a.id), F = !G && (null != (t = null == W || null == (n = W.resourceChannels) ? true : n.length) ? t : 0) === 0, z = (0, d.Z)("(max-width: 1300px)"), V = h - N.PrS - T, q = R && V < M || z || F;
   return (r.useEffect(() => {
     if (W === b.P)(0, x.cP)(a.id);
     else if (null != W) {
@@ -108,9 +108,9 @@ function H(e) {
     children: [(0, l.jsxs)("div", {
       className: i()(E.chat, w.background, {
         [E.threadSidebarOpen]: R,
-        [E.threadSidebarFloating]: R && H
+        [E.threadSidebarFloating]: R && L
       }),
-      children: [(0, l.jsx)(M, {
+      children: [(0, l.jsx)(k, {
         guild: a
       }), (0, l.jsx)(c.yWw, A(S({}, B), {
         children: (0, l.jsxs)("div", {
@@ -146,7 +146,7 @@ function H(e) {
     }), R ? (0, l.jsx)(v.Z, {
       pageWidth: h,
       onSidebarResize: (e, n) => {
-        L(n), D(e)
+        H(n), D(e)
       }
     }) : null]
   })

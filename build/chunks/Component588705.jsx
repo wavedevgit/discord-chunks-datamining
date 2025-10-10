@@ -71,22 +71,22 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         error: C,
         flatActivityCount: A = false,
         isRegister: T = false,
-        inUnclaimedFlow: P = false
+        inUnclaimedFlow: L = false
       } = e,
       {
-        currentUser: b
+        currentUser: P
       } = (0, a.cj)([x.default], () => ({
         currentUser: x.default.getCurrentUser()
       }));
     if (null == c) return null;
-    let L = null != c.guild ? g.lM(c.guild) ? c.guild : g.Qs(c.guild) : null,
+    let b = null != c.guild ? g.lM(c.guild) ? c.guild : g.Qs(c.guild) : null,
       R = null != c.channel ? (0, _.jD)(c.channel) : null,
       z = null != c.target_application ? new m.ZP(c.target_application) : null,
       Z = j || null == c.inviter ? null : new p.default(c.inviter),
-      M = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != L && L.features.has(f.oNc.COMMUNITY)) && null != Z,
+      M = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != b && b.features.has(f.oNc.COMMUNITY)) && null != Z,
       D = null,
       k = false;
-    if (null != L) D = null == Z ? I.intl.string(I.t["3rE1Pz"]) : I.intl.formatToPlainString(I.t["5u47vb"], {
+    if (null != b) D = null == Z ? I.intl.string(I.t["3rE1Pz"]) : I.intl.formatToPlainString(I.t["5u47vb"], {
       username: N.ZP.getFormattedName(Z)
     }), c.target_type === E.Iq.STREAM && null != c.target_user && (D = I.intl.formatToPlainString(I.t.x2L32d, {
       username: N.ZP.getFormattedName(c.target_user)
@@ -94,23 +94,23 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       username: N.ZP.getFormattedName(Z)
     }) : I.intl.string(I.t.ENSuNz)), M && null == z && (t = (0, i.jsx)(s.Vj, {
       className: v.icon,
-      guild: L,
+      guild: b,
       size: s.Vj.Sizes.SMALL
-    })), l = L.name, null != z && (l = z.name, o = (0, i.jsxs)("div", {
+    })), l = b.name, null != z && (l = z.name, o = (0, i.jsxs)("div", {
       children: [(0, i.jsx)(s.DK, {
         className: v.appIn,
         children: I.intl.string(I.t["3gg9fH"])
       }), (0, i.jsxs)("div", {
         className: v.guildContainer,
         children: [(0, i.jsx)(s.Vj, {
-          guild: L,
+          guild: b,
           size: s.Vj.Sizes.SMALL
         }), (0, i.jsx)(r.Text, {
           tag: "span",
           variant: "text-lg/normal",
           color: "header-primary",
           className: v.appGuildName,
-          children: L.name
+          children: b.name
         })]
       })]
     }));
@@ -140,7 +140,7 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       className: v.container,
       children: [(0, i.jsx)(S, {
         application: z,
-        guild: L,
+        guild: b,
         user: M ? Z : null,
         compact: k
       }), null != C ? (0, i.jsxs)(i.Fragment, {
@@ -154,8 +154,8 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: D
         }), (0, i.jsxs)(s.Dx, {
           className: v.title,
-          children: [null != L ? (0, i.jsx)(u.Z, {
-            guild: L,
+          children: [null != b ? (0, i.jsx)(u.Z, {
+            guild: b,
             className: v.guildBadge,
             tooltipPosition: "left"
           }) : null, t, l]
@@ -165,8 +165,8 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         online: c.approximate_presence_count,
         total: c.approximate_member_count,
         flat: A
-      }), P || null == b ? (0, i.jsx)(s.jQ, {
-        user: b
+      }), L || null == P ? (0, i.jsx)(s.jQ, {
+        user: P
       }) : (0, i.jsx)(d.R, {})]
     })
   }

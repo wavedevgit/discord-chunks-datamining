@@ -59,7 +59,7 @@ let j = e => {
     } = (0, o.f)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, r.jsx)(l.ua7, {
+    return (0, r.jsx)(l.aML, {
       "aria-label": b.intl.formatToPlainString(b.t.HWNJJC, {
         widgetTitle: t
       }),

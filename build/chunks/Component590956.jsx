@@ -76,7 +76,7 @@ let I = e => {
       animated: false,
       channelId: u,
       messageId: d
-    })), I = e => (0, r.jsx)(l.ua7, v(y({
+    })), I = e => (0, r.jsx)(l.aML, v(y({
       text: (0, p.Y)(n.name, s),
       "aria-label": m
     }, p.b_), {
@@ -139,7 +139,7 @@ let I = e => {
         channelId: g,
         messageId: b
       }))
-    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.ua7, v(y({
+    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.aML, v(y({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {

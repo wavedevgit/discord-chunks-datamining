@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk981729 = require("./981729.jsx"),
+  Chunk506802 = require("./506802.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk320582 = require("./320582.js"),
   Chunk621853 = require("./621853.js"),
@@ -24,7 +24,7 @@ function _(e) {
     var e;
     return null == (e = c.Z.getUserProfile(t)) ? true : e.fetchError
   });
-  return _.length > 0 || p.length > 0 || null == h ? null : (0, r.jsx)(o.DY, {
+  return _.length > 0 || p.length > 0 || null == h ? null : (0, r.jsx)(o.jS, {
     className: f.container,
     text: d.intl.string(d.t.p3Q9Y2),
     delay: u.vB,

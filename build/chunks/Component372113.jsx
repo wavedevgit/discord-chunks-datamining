@@ -163,7 +163,7 @@ function U(e) {
     inGameQuest: h,
     sourceQuestContent: l
   }), y = c && !f;
-  return (0, r.jsx)(u.ua7, {
+  return (0, r.jsx)(u.aML, {
     text: b.tooltipText,
     tooltipContentClassName: P.ctaTooltipText,
     children: e => {

@@ -88,7 +88,7 @@ function O(e) {
       showBadge: true,
       className: null != O.icon ? v.icon : v.noIcon,
       badgeStrokeColor: (0, c.Lq)((0, n.wj)(m) ? p.Ilk.PRIMARY_600 : p.Ilk.WHITE_500),
-      badgeTooltipColor: a.FGA.PRIMARY,
+      badgeTooltipColor: a.r6K.PRIMARY,
       badgeTooltipDelay: f.vB,
       size: l.Z.Sizes.MEDIUM,
       active: true

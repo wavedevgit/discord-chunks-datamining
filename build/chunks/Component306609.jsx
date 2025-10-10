@@ -92,7 +92,7 @@ function z(e) {
     onElementResizeEnd: e => {},
     orientation: d.y.VERTICAL_TOP
   });
-  (0, L.useSyncMessages)(F.messagesLoader);
+  (0, F.useSyncMessages)(L.messagesLoader);
   let Q = (0, s.e7)([h.default], () => (0, P.I5)(h.default.getCurrentUser())),
     J = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()),
     [$, ee] = i.useState(false),
@@ -160,7 +160,7 @@ function z(e) {
           className: U.resizePill
         })
       }), z && (0, r.jsx)(c.E1j, {
-        placeholder: L.intl.string(L.t.hHCZJS),
+        placeholder: F.intl.string(F.t.hHCZJS),
         autoFocus: true,
         onChange: q,
         query: B,
@@ -198,11 +198,11 @@ function z(e) {
             },
             children: (0, r.jsx)(y.p, {
               showUpsell: true,
-              text: L.intl.format(L.t["XMDm8/"], {
+              text: F.intl.format(F.t["XMDm8/"], {
                 nitroTierName: (0, _.Px)(R.PremiumTypes.TIER_2),
                 onClick: () => (0, j.i)()
               }),
-              button: L.intl.string(L.t.cRCCJy),
+              button: F.intl.string(F.t.cRCCJy),
               buttonAnalyticsObject: {
                 section: M.jXE.VOICE_FILTERS_FLOATING_UPSELL
               },
@@ -260,7 +260,7 @@ function z(e) {
                 active_voice_filter_id: null != er ? er : null
               }), null == (n = e.onClick) || n.call(e, t)
             },
-            "aria-label": L.intl.string(L.t["ClGM/P"])
+            "aria-label": F.intl.string(F.t["ClGM/P"])
           }))
         })]
       })]

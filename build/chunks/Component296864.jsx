@@ -33,17 +33,17 @@ function j(e) {
   } = j, E = (0, a.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), b = (0, a.e7)([h.Z], () => h.Z.getGuild(N), [N]), {
     canManageGuildEvent: w
   } = (0, o.XJ)(null != E ? E : b), I = w(j), S = (0, a.e7)([c.Z], () => c.Z.isLurking(N), [N]), Z = j.entity_type === x.WX.STAGE_INSTANCE, [O, _] = l.useState(Z), [T, {
-    loading: P,
-    error: G
+    loading: L,
+    error: P
   }] = (0, v.Z)();
   if (!I) return null;
-  let A = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
-    L = () => {
+  let G = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
+    A = () => {
       null == f || f(), y(), (0, u.Ku)(false)
     },
     X = async () => {
       await T(j, O, {
-        onSuccess: L
+        onSuccess: A
       })
     };
   return (0, i.jsxs)(r.Modal, {
@@ -51,7 +51,7 @@ function j(e) {
     onClose: y,
     title: j.name,
     subtitle: p.intl.format(p.t.UMajoq, {
-      privacyLevel: A,
+      privacyLevel: G,
       privacyLevelHook: (e, n) => k !== x.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: C.privacyLevel,
         children: [(0, i.jsx)(s.enf, {
@@ -74,7 +74,7 @@ function j(e) {
       variant: "active",
       text: p.intl.string(p.t.cK1GGR),
       onClick: X,
-      loading: P
+      loading: L
     }],
     children: [(0, i.jsx)(m.Z, {
       guild: b,
@@ -96,11 +96,11 @@ function j(e) {
         label: p.intl.string(p.t.dGNtgI),
         labelType: "secondary"
       })
-    }), null != G && null != G.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
+    }), null != P && null != P.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
       color: "text-danger",
       variant: "text-sm/normal",
       className: C.errorMessage,
-      children: G.getAnyErrorMessage()
+      children: P.getAnyErrorMessage()
     }) : null]
   })
 }

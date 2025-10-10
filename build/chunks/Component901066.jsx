@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 901066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -240,7 +240,7 @@ function A(e) {
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     user: t,
     joinRequest: n
@@ -280,7 +280,7 @@ function Z(e) {
   })
 }
 
-function M(e) {
+function Z(e) {
   let {
     guildId: t
   } = e, n = (0, b.L)({
@@ -321,7 +321,7 @@ function M(e) {
             formFields: s,
             user: o,
             showRequirements: false
-          }), (0, l.jsx)(Z, {
+          }), (0, l.jsx)(M, {
             guildId: t,
             user: o,
             joinRequest: n

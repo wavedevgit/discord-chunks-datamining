@@ -50,7 +50,7 @@ function m(e) {
       onContextMenu: e.handleContextMenu,
       className: null != e.handleClick ? g.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o.DY3, {
+        children: [(0, r.jsx)(o.jSM, {
           text: O,
           position: "bottom",
           className: v,

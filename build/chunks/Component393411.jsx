@@ -339,7 +339,7 @@ let Y = function(e) {
               size: "sm",
               text: D.intl.string(D.t["ETE/oK"])
             })
-          }), (0, r.jsx)(l.ua7, {
+          }), (0, r.jsx)(l.aML, {
             text: t,
             children: t => (0, r.jsx)(N.Z, k(M({}, t), {
               className: a()(L.toolsButton, L.premiumSettingsPushButton),

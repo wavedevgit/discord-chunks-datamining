@@ -63,7 +63,7 @@ function _(e) {
     size: "custom",
     color: _,
     className: a()(l.icon, c)
-  }) : (0, r.jsx)(o.ua7, {
+  }) : (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
     text: n,
     "aria-label": i,

@@ -97,7 +97,7 @@ function T(e) {
     });
   return (0, r.jsx)("div", {
     className: b.guildIconContainer,
-    children: (0, r.jsx)(s.ua7, {
+    children: (0, r.jsx)(s.aML, {
       "data-migration-pending": true,
       text: y,
       position: "bottom",
@@ -132,7 +132,7 @@ function S(e) {
       guild: t,
       size: 18,
       tooltipPosition: "bottom",
-      tooltipColor: s.ua7.Colors.PRIMARY,
+      tooltipColor: s.aML.Colors.PRIMARY,
       className: a()(b.guildBadge, {
         [b.disableColor]: n
       }),
@@ -146,7 +146,7 @@ function S(e) {
       guild: t,
       size: 18,
       tooltipPosition: "bottom",
-      tooltipColor: s.ua7.Colors.PRIMARY,
+      tooltipColor: s.aML.Colors.PRIMARY,
       className: a()(b.guildBadge, {
         [b.disableColor]: n
       })

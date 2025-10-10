@@ -36,14 +36,14 @@ let d = Chunk647438.forwardRef(function(e, t) {
     tooltipPositionKeyStemOverride: w,
     tooltipShouldShow: Z,
     plated: T
-  } = e, I = "function" == typeof f ? (0, r.jsx)(f, {
+  } = e, M = "function" == typeof f ? (0, r.jsx)(f, {
     width: 20,
     height: 20,
     size: "custom",
     colorClass: null != m ? m : "",
     color: "currentColor"
   }) : f;
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     tooltipClassName: g,
     text: n,
@@ -130,8 +130,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
           width: 20,
           height: 20,
           mask: c.ZP.Masks.PANEL_BUTTON,
-          children: I
-        }) : I, i]
+          children: M
+        }) : M, i]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

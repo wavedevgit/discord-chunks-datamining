@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk981729 = require("./981729.jsx");
+  Chunk506802 = require("./506802.jsx");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ function f(e) {
     className: l,
     onMouseEnter: 0 !== t ? h : () => {},
     onMouseLeave: 0 !== t ? m : () => {},
-    children: (0, r.jsx)(a.u, c(s({
+    children: (0, r.jsx)(a.aM, c(s({
       forceOpen: _,
       disableTooltipPointerEvents: false
     }, d), {

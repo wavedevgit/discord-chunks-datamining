@@ -77,7 +77,7 @@ function m(e) {
     position: c,
     delay: d
   } = e, p = _(e, ["children", "aria-label", "className", "position", "delay"]), m = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
-  return (0, r.jsx)(s.ua7, f(u({}, p), {
+  return (0, r.jsx)(s.aML, f(u({}, p), {
     position: null != c ? c : "top",
     delay: null != d ? d : h,
     text: t,

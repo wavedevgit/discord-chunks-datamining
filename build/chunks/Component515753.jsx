@@ -255,11 +255,11 @@ function em(e) {
     animateOnHover: !(o || ee || em || eO)
   }), eS = t.isMultiUserDM(), eP = t.isSystemDM(), eC = (0, H.Q)(), eE = !eS && !eP && t.type === et.d4z.DM, ew = eE && (null == p ? true : p.primaryGuild) != null, eZ = (0, m.e7)([J.ZP], () => J.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eT,
-    blocked: eI
+    blocked: eM
   } = (0, m.cj)([V.Z], () => ({
     ignored: V.Z.isIgnored(t.getRecipientId()),
     blocked: V.Z.isBlocked(t.getRecipientId())
-  })), eM = eE && eT, eD = eE && eI, ek = (eZ || eM || eD) && !(o || ee), e_ = (0, m.e7)([Y.ZP], () => Y.ZP.getMentionCount(t.id) > 0), eR = (0, Z.ZP)(t), eL = (0, m.e7)([_.Z], () => _.Z.isFavorite(t.id)), {
+  })), eI = eE && eT, eD = eE && eM, ek = (eZ || eI || eD) && !(o || ee), e_ = (0, m.e7)([Y.ZP], () => Y.ZP.getMentionCount(t.id) > 0), eR = (0, Z.ZP)(t), eL = (0, m.e7)([_.Z], () => _.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eU,
     rearrangeContextMenu: eA
   } = L.Z.useExperiment({
@@ -353,7 +353,7 @@ function em(e) {
         [er.clanTagMuted]: ek
       })
     })]
-  }) : eX, e0 = i.useRef(null), e1 = (0, M.Y)({
+  }) : eX, e0 = i.useRef(null), e1 = (0, I.Y)({
     location: "PrivateChannel"
   }) && (null == p ? true : p.displayNameStyles) != null, e8 = (0, f.Z)();
   return (0, r.jsx)(d.mh, {
@@ -463,7 +463,7 @@ function em(e) {
                 textClassName: er.activityStatusText,
                 iconClassName: ek ? er.mutedIcon : true
               }) : null,
-              name: (0, r.jsx)(I.Z, {
+              name: (0, r.jsx)(M.Z, {
                 className: a()(er.overflowTooltip, {
                   [er.withDisplayNameStyles]: e1
                 }),
@@ -480,7 +480,7 @@ function em(e) {
             className: a()(er.iconsContainer, {
               [er.nameplated]: eG
             }),
-            children: [eL && !eO ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, eU && !e8 ? (0, r.jsx)(b.u, {
+            children: [eL && !eO ? (0, r.jsx)(eu, {}) : null, eI ? (0, r.jsx)(ed, {}) : null, eD ? (0, r.jsx)(ep, {}) : null, eU && !e8 ? (0, r.jsx)(b.u, {
               asContainer: true,
               text: en.intl.string(eS ? en.t.Et8qws : en.t["d+e27u"]),
               delay: 500,

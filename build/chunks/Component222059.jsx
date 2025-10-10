@@ -142,7 +142,7 @@ function D(e) {
           hovered: _,
           className: A.pill
         }), (0, r.jsx)(I.Z, {
-          color: s.ua7.Colors.PRIMARY,
+          color: s.aML.Colors.PRIMARY,
           hideOnClick: true,
           text: k,
           selected: o,

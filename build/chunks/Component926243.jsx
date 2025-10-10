@@ -229,7 +229,7 @@ function w(e) {
       inNitroLockedSection: B
     }))
   };
-  return I ? (0, r.jsx)(l.ua7, {
+  return I ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
     text: O.intl.formatToPlainString(O.t.glqNsb, {
       key: (0, b.isMac)() ? "Opt" : "Alt"

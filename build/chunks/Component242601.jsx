@@ -175,9 +175,9 @@ class em extends Chunk647438.PureComponent {
         inlineSpecs: eg,
         children: this.renderGuildHeaderDropdownButton(e)
       })
-    }) : t ? (0, r.jsx)(f.ua7, {
+    }) : t ? (0, r.jsx)(f.aML, {
       forceOpen: true,
-      color: f.FGA.BRAND,
+      color: f.r6K.BRAND,
       position: "bottom",
       shouldShow: !e && !i,
       text: es.intl.string(es.t.sFSrFB),

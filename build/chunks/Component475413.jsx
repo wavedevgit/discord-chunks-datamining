@@ -122,7 +122,7 @@ let b = e => {
       innerClassName: y,
       shouldShowTooltip: O = true
     } = e, v = h(e, ["icon", "tooltipText", "tooltipPosition", "tooltipAlign", "tooltipDelay", "tooltipClassName", "tooltipContainerClassName", "ariaLabel", "className", "innerClassName", "shouldShowTooltip"]);
-    return (0, r.jsx)(l.DY3, {
+    return (0, r.jsx)(l.jSM, {
       text: i,
       position: a,
       align: c,

@@ -19,7 +19,7 @@ let c = e => {
     isTrendingUp: d,
     isTrendingDown: u,
     tooltipText: g
-  } = e, m = null != g ? (0, r.jsx)(l.ua7, {
+  } = e, m = null != g ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
     text: g,
     position: "top",

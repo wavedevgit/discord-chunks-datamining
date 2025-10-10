@@ -169,7 +169,7 @@ function U(e) {
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
         });
-      return (0, r.jsx)(o.DY3, {
+      return (0, r.jsx)(o.jSM, {
         text: S,
         "aria-label": e.description,
         forceOpen: null != M && M(e.id),

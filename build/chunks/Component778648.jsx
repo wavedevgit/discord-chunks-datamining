@@ -191,25 +191,18 @@ let D = function() {
               placeholder: "Promotion Code",
               value: F,
               onChange: e => B(e)
-            }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+            }), (0, Chunk951288.jsx)(Chunk481060.aML, {
               text: "Need Promotion Code",
               shouldShow: F.length < 1,
-              children: e => {
-                let {
-                  onMouseEnter: t,
-                  onMouseLeave: n
-                } = e;
-                return (0, a.jsx)(d.Button, {
-                  variant: "primary",
-                  text: "Open Link",
-                  disabled: F.length < 1,
-                  onMouseEnter: t,
-                  onMouseLeave: n,
-                  onClick: () => {
-                    window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(F))
-                  }
-                })
-              }
+              children: e => (0, a.jsx)(d.Button, A(R({
+                variant: "primary",
+                text: "Open Link",
+                disabled: F.length < 1
+              }, e), {
+                onClick: () => {
+                  window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(F))
+                }
+              }))
             })]
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
@@ -246,25 +239,18 @@ let D = function() {
             })),
             popoutLayerContext: Chunk246992.O$
           })]
-        }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
+        }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           text: "Already subscribed",
           shouldShow: V,
-          children: e => {
-            let {
-              onMouseEnter: t,
-              onMouseLeave: n
-            } = e;
-            return (0, a.jsx)(d.Button, {
-              variant: "primary",
-              text: "Open Link",
-              onMouseLeave: n,
-              onMouseEnter: t,
-              disabled: V,
-              onClick: () => {
-                window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
-              }
-            })
-          }
+          children: e => (0, a.jsx)(d.Button, A(R({
+            variant: "primary",
+            text: "Open Link"
+          }, e), {
+            disabled: V,
+            onClick: () => {
+              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
+            }
+          }))
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
           label: "Redeem Virtual Currency for SKU",
           children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {

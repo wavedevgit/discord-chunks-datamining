@@ -108,7 +108,7 @@ let _ = e => {
   if (!C && !Z || null == T || V) return null;
   if (z || H || G) {
     let e = h.intl.string(h.t["50TX9v"]);
-    return H ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.ua7, {
+    return H ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: e,
       children: e => (0, r.jsx)(c.P3F, E(x({}, e), {
@@ -135,7 +135,7 @@ let _ = e => {
         children: h.intl.string(h.t.PXjA0d)
       })]
     }) : X;
-  return (0, r.jsx)(c.ua7, {
+  return (0, r.jsx)(c.aML, {
     "data-migration-pending": true,
     text: J,
     "aria-label": X,

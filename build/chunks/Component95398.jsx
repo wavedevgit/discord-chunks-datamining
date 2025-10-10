@@ -144,7 +144,7 @@ let v = e => {
   A = Chunk647438.createContext(false);
 class C extends Chunk647438.PureComponent {
   renderWithTooltip(e) {
-    return (0, r.jsx)(l.ua7, {
+    return (0, r.jsx)(l.aML, {
       position: "left",
       text: this.state.visible ? null : this.tooltipText,
       children: t => {

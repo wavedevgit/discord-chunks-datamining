@@ -53,9 +53,9 @@ function M(e) {
     renderUser: e => {
       if (null == e || e === h.ag) return null;
       let t = T.ZP.getName(n, i, e);
-      return (0, r.jsx)(s.DY3, {
+      return (0, r.jsx)(s.jSM, {
         text: t,
-        color: s.FGA.GREY,
+        color: s.r6K.GREY,
         children: (0, r.jsx)("img", {
           src: e.getAvatarURL(n, o),
           alt: t,

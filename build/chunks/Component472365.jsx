@@ -123,7 +123,7 @@ function U(e) {
           children: Z.intl.string(Z.t.FWkU6O)
         }), (0, i.jsx)(p.zx, {
           size: p.zx.Sizes.LARGE,
-          onClick: () => b.Z.close(),
+          onClick: () => P.Z.close(),
           color: p.zx.Colors.BRAND,
           children: Z.intl.string(Z.t.wcqOoK)
         })]
@@ -146,7 +146,7 @@ function y(e) {
       invite: j,
       error: S,
       submitting: z
-    } = (0, o.cj)([L.Z], () => L.Z.getProps());
+    } = (0, o.cj)([b.Z], () => b.Z.getProps());
   l.useEffect(() => {
     if (null != j && null != j.guild) {
       var e;
@@ -155,7 +155,7 @@ function y(e) {
   }, [j, null == j ? true : j.approximate_member_count, null == j ? true : j.code, null == j || null == (n = j.guild) ? true : n.id]);
   let O = (0, f.yr)();
   l.useEffect(() => {
-    !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? P.ZP.minimize() : P.ZP.restore(), P.ZP.focus())
+    !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? L.ZP.minimize() : L.ZP.restore(), L.ZP.focus())
   }, []);
   let y = (0, N.Dt)(),
     {
@@ -168,7 +168,7 @@ function y(e) {
   if (null == j.channel) return null;
 
   function G() {
-    null != j && b.Z.acceptInvite(j)
+    null != j && P.Z.acceptInvite(j)
   }
   let {
     guild: V,
@@ -217,7 +217,7 @@ function y(e) {
             })
           }), (0, i.jsxs)("div", {
             className: M.ctas,
-            children: [K ? (0, i.jsx)(k, {}) : null, null == w ? (0, i.jsx)(c.ua7, {
+            children: [K ? (0, i.jsx)(k, {}) : null, null == w ? (0, i.jsx)(c.aML, {
               "data-migration-pending": true,
               text: K ? Z.intl.string(Z.t.iLyuDA) : null,
               position: "bottom",
@@ -273,7 +273,7 @@ function y(e) {
                   C.default.track(R.rMx.INVITE_ACCEPT_DISMISSED, {
                     invite_code: null == j ? true : j.code,
                     guild_id: null == j || null == (e = j.guild) ? true : e.id
-                  }), b.Z.close()
+                  }), P.Z.close()
                 },
                 color: p.zx.Colors.TRANSPARENT,
                 children: Z.intl.string(Z.t.ndsK4e)

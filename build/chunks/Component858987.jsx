@@ -142,7 +142,7 @@ function T(e) {
       disabled: true
     })
   }
-  if (N && G) return (0, r.jsx)(o.ua7, {
+  if (N && G) return (0, r.jsx)(o.aML, {
     text: g.intl.string(g.t.L7jbQU),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "primary",
@@ -153,7 +153,7 @@ function T(e) {
       onClick: w
     }))
   });
-  if (N && !G) return (0, r.jsx)(o.ua7, {
+  if (N && !G) return (0, r.jsx)(o.aML, {
     text: g.intl.string(g.t.L7jbQU),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "active",
@@ -164,7 +164,7 @@ function T(e) {
       disabled: true
     }))
   });
-  if ((0, u.yE)(null != (t = null == D ? true : D.flags) ? t : 0, h.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(o.ua7, {
+  if ((0, u.yE)(null != (t = null == D ? true : D.flags) ? t : 0, h.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(o.aML, {
     text: g.intl.string(g.t.cjA5tr),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "active",
@@ -186,7 +186,7 @@ function T(e) {
       color: "currentColor"
     })
   });
-  else if (!x) return (0, r.jsx)(o.ua7, {
+  else if (!x) return (0, r.jsx)(o.aML, {
     text: g.intl.string(g.t.XdvBLS),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "active",

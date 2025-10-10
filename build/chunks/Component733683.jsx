@@ -93,10 +93,10 @@ class y extends(r = Chunk647438.Component) {
     let l = exports[this.getCurrentTierIndex() + 1],
       a = null != Chunk647438 ? Chunk647438.numRequired : null,
       s = null != Chunk120356 ? Chunk120356 - module : null;
-    return (0, Chunk951288.jsxs)(Chunk481060.Cys, {
+    return (0, Chunk951288.jsxs)(Chunk481060.gqK, {
       targetElementRef: this.foregroundTooltipElementRef,
       position: "right",
-      color: Chunk481060.ua7.Colors.PRIMARY,
+      color: Chunk481060.aML.Colors.PRIMARY,
       tooltipClassName: Chunk31441.foregroundTooltip,
       children: [(0, Chunk951288.jsx)("div", {
         children: Chunk388032.intl.format(Chunk388032.t.gDsyBw, {
@@ -149,7 +149,7 @@ class y extends(r = Chunk647438.Component) {
     let f = e.y - (m ? 0 : _ / 2),
       h = this.state.tierMarkerActive >= t,
       j = !m && u && h;
-    return (0, i.jsx)(g.ua7, {
+    return (0, i.jsx)(g.aML, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
       "aria-label": null != (r = e.name) ? r : "",

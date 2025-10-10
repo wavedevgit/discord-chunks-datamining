@@ -255,7 +255,7 @@ function Z(e) {
     ei = () => 0 === Q ? null : J && !W ? D ? (0, r.jsxs)("div", {
       className: o()(w.activityContainer, $ && w.iconOnly),
       children: [et(), er()]
-    }) : (0, r.jsx)(u.ua7, {
+    }) : (0, r.jsx)(u.aML, {
       "data-migration-pending": true,
       tooltipContentClassName: o()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
       delay: N.X,

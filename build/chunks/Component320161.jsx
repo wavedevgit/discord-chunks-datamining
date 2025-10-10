@@ -91,8 +91,8 @@ function I(e) {
     children: u({})
   });
   let P = E >= v.length - 1,
-    w = P ? s.FGA.RED : s.FGA.GREEN,
-    D = T ? w : s.FGA.PRIMARY,
+    w = P ? s.r6K.RED : s.r6K.GREEN,
+    D = T ? w : s.r6K.PRIMARY,
     L = () => {
       var e;
       if (!T) return t;
@@ -109,7 +109,7 @@ function I(e) {
     M = () => {
       null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(E + 1), C(true), S(true), N.start(b, () => C(false)), R.start(y, () => I(0))
     };
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: L(),
     delay: h,

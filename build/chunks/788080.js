@@ -11,7 +11,8 @@ require.d(exports, {
   c7: () => E,
   eS: () => p,
   fr: () => h,
-  ox: () => g
+  ox: () => g,
+  yF: () => I
 }), require("./35282.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -74,4 +75,8 @@ function O(e) {
     return null
   }
 }
-let v = () => null != (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getSuspendedUserToken())
+let v = () => null != (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getSuspendedUserToken());
+
+function I() {
+  return null != Chunk314897.default.getSuspendedUserToken()
+}

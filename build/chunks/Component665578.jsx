@@ -211,7 +211,7 @@ function w(e) {
     }) : null, J.map((e, t) => {
       let n = null;
       return M ? Y && (n = S.intl.string(S.t.XTwtW1)) : n = null != l ? S.intl.string(S.t.tybdam) : S.intl.string(S.t.z2hjk5), (0, i.jsx)(_.Z, {
-        bar: (0, i.jsx)(c.ua7, {
+        bar: (0, i.jsx)(c.aML, {
           tooltipClassName: I.tooltip,
           text: n,
           shouldShow: null != n,

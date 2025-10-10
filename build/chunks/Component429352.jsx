@@ -45,7 +45,7 @@ let y = e => {
   let {
     game: a
   } = e, r = (0, s.e7)([d.Z], () => d.Z.getApplication(a.applicationId));
-  return (0, i.jsx)(_.ua7, {
+  return (0, i.jsx)(_.aML, {
     text: a.name,
     children: e => {
       var t, n;
