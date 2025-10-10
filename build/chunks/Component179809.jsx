@@ -119,7 +119,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "data-dnd-name": er,
           children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
-          }) : (0, r.jsx)(y.Z, {
+          }) : (0, r.jsx)(O.Z, {
             folderNode: t,
             expanded: s,
             sorting: R,
@@ -138,7 +138,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": F
           })
         })
-      }), A ? (0, r.jsx)(O.ZP, {
+      }), A ? (0, r.jsx)(y.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
@@ -172,7 +172,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => G(t, n, W.length, e.height))
         }, l)
-      }), A && s ? (0, r.jsx)(O.Zu, {
+      }), A && s ? (0, r.jsx)(y.Zu, {
         name: er,
         targetNode: t
       }) : null]

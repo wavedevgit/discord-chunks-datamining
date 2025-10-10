@@ -22,7 +22,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
     onClick: m,
     questId: b,
     className: _
-  } = e, y = i.useCallback(() => {
+  } = e, O = i.useCallback(() => {
     (0, a.k5)({
       source: p.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
@@ -61,7 +61,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
     ref: t,
     className: _,
     onClick: () => {
-      y(), true !== m && m()
+      O(), true !== m && m()
     },
     selected: n,
     tooltip: g.intl.string(g.t["4nEZLi"]),

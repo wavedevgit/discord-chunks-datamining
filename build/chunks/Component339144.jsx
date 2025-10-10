@@ -124,7 +124,7 @@ let D = Chunk647438.memo(function(e) {
         })
       }, [J]),
       er = i.useCallback(e => () => {
-        (0, _.v)(J, _.d.LEAVE_ACTIVITY), O.Z.stopFrame({
+        (0, _.v)(J, _.d.LEAVE_ACTIVITY), y.Z.stopFrame({
           applicationId: e
         })
       }, [J]),
@@ -207,8 +207,8 @@ let D = Chunk647438.memo(function(e) {
         onClick: er(z.applicationId),
         icon: c.PBZ
       }),
-      ey = null == M ? null : (0, r.jsx)(y.Z, {}),
-      eO = ed && ea && !ec ? (0, r.jsx)(L, {
+      eO = null == M ? null : (0, r.jsx)(O.Z, {}),
+      ey = ed && ea && !ec ? (0, r.jsx)(L, {
         runningGame: F,
         startAuthorization: () => {
           ef(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
@@ -237,9 +237,9 @@ let D = Chunk647438.memo(function(e) {
           ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null)
         }
       }) : null;
-    return null == eg && null == em && null == eb && null == e_ && null == eO && null == ev ? null : (0, r.jsxs)("div", {
+    return null == eg && null == em && null == eb && null == e_ && null == ey && null == ev ? null : (0, r.jsxs)("div", {
       className: w.actions,
-      children: [null != eO ? eO : em, eg, null != (t = null != eb ? eb : e_) ? t : ey, ev, ej]
+      children: [null != ey ? ey : em, eg, null != (t = null != eb ? eb : e_) ? t : eO, ev, ej]
     })
   }),
   L = Chunk647438.forwardRef(function(e, t) {

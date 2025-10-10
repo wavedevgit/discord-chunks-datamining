@@ -287,7 +287,7 @@ function A(e) {
     onClose: n
   } = e, [l, a] = i.useState(false), [s, c] = i.useState(false), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, g.Rv)(), []), {
     keyboardModeEnabled: d,
-    useReducedMotion: y
+    useReducedMotion: O
   } = (0, p.cj)([_.Z], () => ({
     keyboardModeEnabled: _.Z.keyboardModeEnabled,
     useReducedMotion: _.Z.useReducedMotion
@@ -313,7 +313,7 @@ function A(e) {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {
-            y || (b.Z.disable(), a(true), c(true))
+            O || (b.Z.disable(), a(true), c(true))
           }
         }, "modal")
       })

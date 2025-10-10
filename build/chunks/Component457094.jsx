@@ -452,6 +452,22 @@ let ts = [{
   path: [Chunk981631.Z5c.APPLICATION_DIRECTORY],
   render: tl,
   isSessionRequired: true
+}, {
+  path: [Chunk981631.Z5c.GAME_SHOP(Chunk893607.Hw.guildId(), ":shopPageIndex?", ":shopSkuId?", ":shopSlug?")],
+  render: function(e) {
+    let {
+      match: t
+    } = e, {
+      guildId: n,
+      shopPageIndex: i,
+      shopSkuId: l,
+      shopSlug: o
+    } = t.params, s = parseInt(i, 10);
+    return s = isNaN(s) ? 0 : s, (0, r.jsx)(a.l_, {
+      to: e5.Z5c.CHANNELS_GAME_SHOP(n, s, l, o)
+    })
+  },
+  isSessionRequired: true
 }];
 
 function tc(e) {
@@ -552,14 +568,14 @@ class td extends Chunk647438.PureComponent {
               let e = {
                 type: eT.Ff.THREAD
               };
-              null != o && (e.initialMessageId = o), eS.Z.openThreadAsSidebar({
+              null != o && (e.initialMessageId = o), eC.Z.openThreadAsSidebar({
                 guildId: r,
                 baseChannelId: i,
                 channelId: s,
                 details: e
               })
             }
-        } else null == i || a || eS.Z.closeChannelSidebar(i);
+        } else null == i || a || eC.Z.closeChannelSidebar(i);
         let c = es.Z.getIsOpen();
         if (i === e2.oC.ROLE_SUBSCRIPTIONS) eo.Z.closeSidebar();
         else if (g && c) {
@@ -603,7 +619,7 @@ class td extends Chunk647438.PureComponent {
           guildId: r,
           pathname: t
         }));
-        else if ((null == n ? true : n.parent_id) !== i) return eS.Z.closeChannelSidebar(i), {
+        else if ((null == n ? true : n.parent_id) !== i) return eC.Z.closeChannelSidebar(i), {
           path: e5.Z5c.CHANNEL(r, i),
           state: e.state
         }

@@ -74,7 +74,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     children: t
   } = e, n = (0, l.useRef)(null);
@@ -88,11 +88,11 @@ function y(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(y, {
+  return (0, i.jsxs)(O, {
     children: [(0, i.jsx)(_, {
       showCurrentGame: n
     }), (0, i.jsx)(s.Text, {
@@ -111,7 +111,7 @@ function v(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(y, {
+  return (0, i.jsxs)(O, {
     children: [(0, i.jsxs)(s.Kqy, {
       align: "start",
       gap: 0,
@@ -148,7 +148,7 @@ function j(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(y, {
+  return (0, i.jsxs)(O, {
     children: [(0, i.jsx)(_, {
       showCurrentGame: n,
       shouldShowStatus: true
@@ -172,7 +172,7 @@ function C(e) {
     handleClose: r,
     popoutTargetRef: o,
     children: d
-  } = e, [g, b] = (0, l.useState)(n), _ = (0, l.useRef)(null), y = function(e) {
+  } = e, [g, b] = (0, l.useState)(n), _ = (0, l.useRef)(null), O = function(e) {
     if (null === e) return null;
     switch (e) {
       case 0:
@@ -214,7 +214,7 @@ function C(e) {
         };
       case 3:
         return {
-          type: "popout", children: O
+          type: "popout", children: y
         };
       case 4:
         return {
@@ -230,15 +230,15 @@ function C(e) {
   }(g), x = (0, l.useRef)(t);
   if ((0, l.useEffect)(() => {
       t && !x.current && b(n), t !== x.current && (x.current = t)
-    }, [n, t]), null == y || !t) return d;
-  if ("popover" === y.type) {
+    }, [n, t]), null == O || !t) return d;
+  if ("popover" === O.type) {
     var C, E;
     let {
       action: e,
       title: t,
       body: n,
       textLink: l
-    } = y;
+    } = O;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(a.J2, {
         targetElementRef: o,
@@ -291,7 +291,7 @@ function C(e) {
   }
   let {
     children: S
-  } = y;
+  } = O;
   return (0, i.jsx)(s.yRy, {
     targetElementRef: _,
     shouldShow: true,

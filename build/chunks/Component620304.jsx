@@ -121,7 +121,7 @@ function j(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
-            children: O.intl.string(y.default.NI6IhY)
+            children: y.intl.string(O.default.NI6IhY)
           }), t.premiumSubscriberCount >= j && (0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
@@ -132,9 +132,9 @@ function j(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
-            children: N ? O.intl.formatToPlainString(y.default["Ehpq+/"], {
+            children: N ? y.intl.formatToPlainString(O.default["Ehpq+/"], {
               appliedBoostCount: E
-            }) : O.intl.formatToPlainString(y.default["/rbPDg"], {
+            }) : y.intl.formatToPlainString(O.default["/rbPDg"], {
               appliedBoostCount: E,
               maxBoostCount: j
             })

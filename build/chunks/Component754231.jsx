@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk51144 = require("./51144.js"),
   Chunk506914 = require("./506914.js");
-let O = Chunk884338.u8.SIZE_24;
+let y = Chunk884338.u8.SIZE_24;
 
 function v(e) {
   var t, n;
@@ -45,19 +45,19 @@ function v(e) {
         children: (0, r.jsx)("img", {
           alt: t,
           src: e,
-          className: y.applicationLargeImage
+          className: O.applicationLargeImage
         })
       })
     } let h = null != (t = d.large_image) ? t : d.small_image,
     f = (0, u.Z)(i),
-    b = f ? y.spotifyLargeImage : y.applicationLargeImage,
+    b = f ? O.spotifyLargeImage : O.applicationLargeImage,
     _ = null != h ? (0, r.jsx)("img", {
       alt: null != (n = d.large_text) ? n : "",
       src: (0, g.xF)(p, h, [128, 128]),
       className: b
     }) : null;
   return f && null != a ? (_ = (0, r.jsx)(c.P3F, {
-    className: y.clickable,
+    className: O.clickable,
     onClick: () => {
       a(i, l.id)
     },
@@ -79,7 +79,7 @@ function j(e) {
   else {
     if (!(null != t && (0, u.Z)(t)) || null == t.sync_id || null == l || null == i) return null;
     o = l, a = (0, r.jsx)(c.P3F, {
-      className: y.headerLink,
+      className: O.headerLink,
       onClick: () => {
         i(t)
       },
@@ -89,7 +89,7 @@ function j(e) {
   return (0, r.jsx)(c.Heading, {
     variant: "heading-sm/semibold",
     color: "header-primary",
-    className: y.header,
+    className: O.header,
     children: a
   })
 }
@@ -102,13 +102,13 @@ function x(e) {
   } = e, l = null == t ? true : t.details, a = null == t ? true : t.state, s = l;
   return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
-    linkClassName: y.bodyLink,
+    linkClassName: O.bodyLink,
     canOpen: null != t.sync_id,
     onOpenSpotifyArtist: e => {
       null == i || i(t, n.id, e)
     }
   }, a)]), null == s || "" === s) ? null : (0, r.jsx)("div", {
-    className: o()(y.ellipsisRow, y.colorHeaderSecondary, y.bodyTextSize),
+    className: o()(O.ellipsisRow, O.colorHeaderSecondary, O.bodyTextSize),
     children: s
   })
 }
@@ -118,7 +118,7 @@ function C(e) {
     activity: t
   } = e, n = null == t ? true : t.state;
   return null == n || "" === n || (0, u.Z)(t) ? null : (0, r.jsx)("div", {
-    className: o()(y.ellipsisRow, y.colorHeaderSecondary, y.bodyTextSize, y.__invalid_activity),
+    className: o()(O.ellipsisRow, O.colorHeaderSecondary, O.bodyTextSize, O.__invalid_activity),
     children: n
   })
 }
@@ -139,7 +139,7 @@ function E(e) {
   return (0, r.jsx)(d.Z, {
     start: i,
     end: l,
-    className: y.timeBar,
+    className: O.timeBar,
     themed: true,
     singleLine: true
   })
@@ -167,16 +167,16 @@ function S(e) {
       }), e
     }, [c, I]);
   return I ? (0, r.jsxs)("div", {
-    className: y.flexColumn,
+    className: O.flexColumn,
     children: [(0, r.jsxs)("div", {
-      className: y.flexRow,
+      className: O.flexRow,
       children: [(0, r.jsx)(v, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
-        className: y.detailsAndAvatarsContainer,
+        className: O.detailsAndAvatarsContainer,
         children: [(0, r.jsx)(j, {
           activity: t,
           embeddedApp: n,
@@ -188,10 +188,10 @@ function S(e) {
         }), (0, r.jsx)(C, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(p.ZP, {
-          className: y.usersSummary,
+          className: O.usersSummary,
           guildId: o.guild_id,
           users: S,
-          size: O,
+          size: y,
           max: 7,
           renderUser: e => {
             var t;
@@ -203,9 +203,9 @@ function S(e) {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, O),
+                src: e.getAvatarURL(o.guild_id, y),
                 alt: i,
-                className: y.avatar
+                className: O.avatar
               }, e.id)
             }, e.id)
           }

@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk188784 = require("./188784.js");
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function S(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -144,7 +144,7 @@ function P(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return S(C({}, e), {
+          return C(S({}, e), {
             src: i
           })
         });
@@ -273,7 +273,7 @@ function P(e) {
           className: a()(I.featureCardGroup, {
             [I.wideStyle]: H
           }),
-          children: R.map((e, t) => (0, r.jsx)(j, S(C({}, e), {
+          children: R.map((e, t) => (0, r.jsx)(j, C(S({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

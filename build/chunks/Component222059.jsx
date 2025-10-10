@@ -55,12 +55,12 @@ function D(e) {
     badge: h,
     link: f,
     showProgressBadge: b
-  } = e, [_, y] = i.useState(false), [O, v] = i.useState(false), [j, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
+  } = e, [_, O] = i.useState(false), [y, v] = i.useState(false), [j, x] = i.useState(null), [C, Z] = i.useState(0), D = (0, l.Ie)("home"), L = (0, p.oq)().activePanel === p.wh.APP_ICON, M = () => {
     x(null), Z(0), clearTimeout(j)
   };
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
-  O && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  y && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let G = null;
   !o && b && (G = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
@@ -92,8 +92,8 @@ function D(e) {
         }
         return e
       }({
-        onMouseEnter: () => y(true),
-        onMouseLeave: () => y(false),
+        onMouseEnter: () => O(true),
+        onMouseLeave: () => O(false),
         onClick: () => {
           if (!__OVERLAY__ && (null != j && clearTimeout(j), x(setTimeout(M, 500)), Z(C + 1), 15 === C)) {
             M();

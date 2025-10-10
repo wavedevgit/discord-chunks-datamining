@@ -67,11 +67,11 @@ let _ = Chunk647438.memo(function(e) {
     return i
   }(e, ["folderNode"]);
   let {
-    id: y,
-    name: O,
+    id: O,
+    name: y,
     color: v,
     children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -90,20 +90,20 @@ let _ = Chunk647438.memo(function(e) {
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
   })), w = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(y)
-  }, [y]), T = i.useCallback(e => {
+    a.Z.toggleGuildFolderExpand(O)
+  }, [O]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: y,
-        folderName: O,
+        folderId: O,
+        folderName: y,
         folderColor: v,
         unread: Z || P > 0
       }))
     })
-  }, [y, O, v, Z, P]);
+  }, [O, y, v, Z, P]);
   return (0, r.jsx)(h.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,

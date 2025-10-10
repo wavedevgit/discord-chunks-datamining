@@ -139,14 +139,14 @@ let k = Chunk647438.memo(function(e) {
     [ef, eg] = i.useState(false),
     em = !ee && ef,
     [eb, e_] = i.useState(false),
-    [ey, eO] = i.useState(false),
-    [ev] = i.useState(() => new d.sW(70, () => eO(true)));
+    [eO, ey] = i.useState(false),
+    [ev] = i.useState(() => new d.sW(70, () => ey(true)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let ej = i.useCallback(() => {
       if (null != F) return void(0, _.uL)(F, {
         state: L
       });
-      (0, y.X)(eo, {
+      (0, O.X)(eo, {
         state: L
       })
     }, [eo, F]),
@@ -167,22 +167,22 @@ let k = Chunk647438.memo(function(e) {
     }, [ea]),
     eI = i.useCallback(e => {
       if (e) return void ev.delay();
-      ev.cancel(), eO(false)
+      ev.cancel(), ey(false)
     }, [ev]),
     eP = i.useCallback(e => {
       null == U || U(eo, e)
     }, [eo, U]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let eZ = ey || eb ? (0, r.jsx)(E.Z, {
+  let eZ = eO || eb ? (0, r.jsx)(E.Z, {
       guild: H,
-      show: ey,
+      show: eO,
       active: W,
       onAnimationStart: function() {
-        e_(ey)
+        e_(eO)
       },
       onAnimationRest: function() {
-        ey || e_(false)
+        eO || e_(false)
       }
     }) : (0, r.jsx)(p.LYs, D(R({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
@@ -200,7 +200,7 @@ let k = Chunk647438.memo(function(e) {
       onMouseDown: ex,
       onContextMenu: eE,
       onKeyDown: eS,
-      icon: (0, O.EB)(H, 2 * eN, em && z, true),
+      icon: (0, y.EB)(H, 2 * eN, em && z, true),
       selected: W || em
     }, eh), {
       "aria-setsize": ei,
@@ -217,11 +217,11 @@ let k = Chunk647438.memo(function(e) {
       style: {
         scale: null == er ? 1 : er
       },
-      "data-drop-hovering": ey,
+      "data-drop-hovering": eO,
       className: o()(A.blobContainer, {
         [A.sorting]: ee,
-        [A.wobble]: ey,
-        [A.selected]: ey || W
+        [A.wobble]: eO,
+        [A.selected]: eO || W
       }),
       children: (0, r.jsx)(p.aRk, {
         selected: true,

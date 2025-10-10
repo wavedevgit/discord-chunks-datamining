@@ -428,7 +428,7 @@ class B extends(r = Chunk647438.PureComponent) {
 }
 
 function H(e) {
-  let t = l.useContext(S.AnalyticsContext),
+  let t = l.useContext(C.AnalyticsContext),
     n = (0, s.TH)(),
     {
       applicationViewItems: r,
@@ -444,11 +444,11 @@ function H(e) {
       sortDirection: d,
       activeRowKey: p,
       isNavigatingByKeyboard: f
-    } = (0, c.cj)([C.Z], () => ({
-      sortKey: C.Z.sortKey,
-      sortDirection: C.Z.sortDirection,
-      activeRowKey: C.Z.activeRowKey,
-      isNavigatingByKeyboard: C.Z.isNavigatingByKeyboard
+    } = (0, c.cj)([S.Z], () => ({
+      sortKey: S.Z.sortKey,
+      sortDirection: S.Z.sortDirection,
+      activeRowKey: S.Z.activeRowKey,
+      isNavigatingByKeyboard: S.Z.isNavigatingByKeyboard
     }));
   return (0, i.jsx)(B, L(w({}, e), {
     analyticsContext: t,

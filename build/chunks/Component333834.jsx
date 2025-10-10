@@ -114,10 +114,10 @@ function D(e) {
     className: g,
     listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, O.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: G
-  } = (0, y.pN)({
+  } = (0, O.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: U,
@@ -210,7 +210,7 @@ function D(e) {
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, O.RZ)({
+            z(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
@@ -256,7 +256,7 @@ function D(e) {
       size: e
     })
   }, [en]);
-  return (0, O.vU)({
+  return (0, y.vU)({
     notificationCenterVariant: G,
     entrypoint: k,
     messages: t,

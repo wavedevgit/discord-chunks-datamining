@@ -61,16 +61,16 @@ function E(e) {
     return t === g.jP.LEGACY ? {
       badge: i ? (0, r.jsx)(a.fWl, {
         style: {
-          height: O.zw,
-          width: O.zw,
+          height: y.zw,
+          width: y.zw,
           position: "relative"
         },
         color: s.Z.STATUS_DANGER
       }) : null,
       unreadChannelsCount: 0,
       badgeDimensions: {
-        height: O.zw,
-        width: O.zw
+        height: y.zw,
+        width: y.zw
       }
     } : {
       badge: l,
@@ -88,7 +88,7 @@ function E(e) {
       unread: T > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: P || E,
         lowerBadge: Z,

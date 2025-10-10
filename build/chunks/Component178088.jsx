@@ -44,9 +44,9 @@ function Z(e) {
     dialogClassName: D
   } = e, {
     analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [G, U] = [(0, s.e7)([y.Z], () => {
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [G, U] = [(0, s.e7)([O.Z], () => {
     var e, t;
-    return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
+    return null != (t = null == (e = O.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
     _.hW.updateAsync("inbox", t => {
       if (t.currentTab === e) returnfalse;
@@ -56,9 +56,9 @@ function Z(e) {
     showTutorial: B,
     setSeenTutorial: V
   } = function(e) {
-    let t = (0, s.e7)([y.Z], () => {
+    let t = (0, s.e7)([O.Z], () => {
         var e, t;
-        return null != (t = null == (e = y.Z.settings.inbox) ? true : e.viewedTutorial) && t
+        return null != (t = null == (e = O.Z.settings.inbox) ? true : e.viewedTutorial) && t
       }),
       n = i.useCallback(() => {
         _.hW.updateAsync("inbox", e => {
@@ -74,7 +74,7 @@ function Z(e) {
   }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
   }, [n, t, M]);
-  i.useEffect(() => (O.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void O.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
+  i.useEffect(() => (y.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
     inInbox: W

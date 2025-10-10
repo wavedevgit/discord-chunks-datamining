@@ -65,7 +65,7 @@ function C(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.Wu)([f.Z], () => f.Z.getGuildsArray()), C = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => a.some(e => (0, h.eM)(e, C)), [a, C]), S = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
+  } = e, a = (0, l.Wu)([f.Z], () => f.Z.getGuildsArray()), C = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => a.some(e => (0, h.eM)(e, C)), [a, C]), S = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
     analyticsLocations: I
   } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
     showPill: false,
@@ -86,7 +86,7 @@ function C(e) {
     },
     selected: S,
     onContextMenu: x,
-    tooltip: O.intl.string(O.t.l5WIbW),
+    tooltip: y.intl.string(y.t.l5WIbW),
     icon: o.oFk
   });
   return t ? P : (0, r.jsx)("div", {
@@ -96,7 +96,7 @@ function C(e) {
       inlineSpecs: j,
       position: "right",
       children: [P, null != n && (0, r.jsx)(m.ZP, {
-        name: O.intl.string(O.t["45xjMz"]),
+        name: y.intl.string(y.t["45xjMz"]),
         targetNode: n,
         below: true,
         noCombine: true

@@ -422,12 +422,12 @@ function el(e) {
       bypassLimit: G.Z.can(X.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([V.Z], () => V.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
-    enabled: O
+  }), h = (0, a.e7)([V.Z], () => V.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
+    enabled: y
   } = b.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
-  }), j = (0, a.e7)([_.Z], () => !!O && null != _.Z.getStartTime(n), [n, O]), {
+  }), j = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
     isSubscriptionGated: x,
     needSubscriptionToAccess: E
   } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([B.ZP], () => B.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
@@ -458,7 +458,7 @@ function el(e) {
     embeddedApps: f,
     embeddedActivityType: X.IIU.PLAYING,
     video: h,
-    hasActiveEvent: null != y,
+    hasActiveEvent: null != O,
     isSubscriptionGated: x,
     needSubscriptionToAccess: E
   }, u, p, e), {

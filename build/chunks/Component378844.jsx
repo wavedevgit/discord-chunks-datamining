@@ -1,8 +1,8 @@
 /** Chunk was on 32118 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => y,
-  Z: () => O
+  R: () => O,
+  Z: () => y
 });
 var r, Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -38,13 +38,13 @@ function _(e) {
   }
   return e
 }
-var y = ((r = {})[r.VOICE = 0] = "VOICE", r);
-let O = e => {
+var O = ((r = {})[r.VOICE = 0] = "VOICE", r);
+let y = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: y
-  } = e, O = (0, u.Dt)(), {
+    closePopout: O
+  } = e, y = (0, u.Dt)(), {
     notClaimed: v,
     notEmailVerified: j,
     notPhoneVerified: x,
@@ -57,7 +57,7 @@ let O = e => {
     min: f.YeM.ACCOUNT_AGE
   }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
-    "aria-labelledby": O,
+    "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
       alt: "",
       className: b.image,
@@ -66,7 +66,7 @@ let O = e => {
       className: b.content,
       children: [(0, i.jsx)(a.Heading, {
         variant: "heading-md/semibold",
-        id: O,
+        id: y,
         children: S
       }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
@@ -113,11 +113,11 @@ let O = e => {
                 })(Object(r)).forEach(function(e) {
                   Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
                 }), n))
-              })), y()
+              })), O()
             }
           })
         }) : null, v || x || j ? (0, i.jsx)(a.Avr, {
-          onClick: y,
+          onClick: O,
           text: m.intl.string(m.t.oEAioK),
           variant: "secondary"
         }) : null]

@@ -236,7 +236,7 @@ function ec(e) {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
   }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), {
-    isSorting: y,
+    isSorting: O,
     startSorting: C,
     stopSorting: E
   } = (0, L.Z)(), w = i.useRef(false), [T] = i.useState(() => new f.V7), A = i.useRef(null), U = i.useRef(null), B = (0, u.OP)(), {
@@ -284,7 +284,7 @@ function ec(e) {
   }), [eh]);
   let {
     analyticsLocations: ef
-  } = (0, v.ZP)(O.Z.GUILDS_LIST), eg = el(ec);
+  } = (0, v.ZP)(y.Z.GUILDS_LIST), eg = el(ec);
   (0, _.Ng)(() => {
     if (!w.current && 0 !== s.size) {
       if (!eg) {
@@ -324,7 +324,7 @@ function ec(e) {
             folderNode: t,
             setNodeRef: eh.setNodeRef,
             draggable: true,
-            sorting: y,
+            sorting: O,
             onDragStart: C,
             onDragEnd: E,
             renderChildNode: e,
@@ -336,7 +336,7 @@ function ec(e) {
             guildNode: t,
             setRef: eh.setNodeRef,
             draggable: true,
-            sorting: y,
+            sorting: O,
             onDragStart: C,
             onDragEnd: E,
             "aria-setsize": i,
@@ -345,12 +345,12 @@ function ec(e) {
         default:
           return null
       }
-    }, [C, E, y, eh.setNodeRef]),
+    }, [C, E, O, eh.setNodeRef]),
     e_ = (0, r.jsx)(H.Z, {
       selected: eg,
       className: et.discoveryIcon
     }),
-    ey = ed === I.u3.SERVER_RAIL_BOTTOM;
+    eO = ed === I.u3.SERVER_RAIL_BOTTOM;
   return (0, r.jsx)(v.Gt, {
     value: ef,
     children: (0, r.jsx)(m.f6W, {
@@ -394,7 +394,7 @@ function ec(e) {
                   renderTreeNode: eb,
                   lurkingGuildIds: h
                 })]
-              }), ey && (0, r.jsxs)("div", {
+              }), eO && (0, r.jsxs)("div", {
                 children: [(0, r.jsx)(K.Z, {
                   fullWidth: true
                 }), (0, r.jsx)("div", {
@@ -418,8 +418,8 @@ function ec(e) {
             isVisible: eh.isItemVisible,
             onJumpTo: eh.handleJumpToGuild,
             className: o()(et.unreadMentionsIndicatorBottom, {
-              [et.unreadMentionsFixedFooter]: !n && !ey,
-              [et.unreadMentionsFixedFooterBottomNotifCenterEntrypoint]: !n && ey
+              [et.unreadMentionsFixedFooter]: !n && !eO,
+              [et.unreadMentionsFixedFooterBottomNotifCenterEntrypoint]: !n && eO
             }),
             barClassName: et.unreadMentionsBar
           })]
@@ -429,7 +429,7 @@ function ec(e) {
   })
 }
 let eu = Chunk647438.memo(function(e) {
-  let t = (0, y.Z)("guildsnav");
+  let t = (0, O.Z)("guildsnav");
   return (0, r.jsx)(u.bG, {
     navigator: t,
     children: (0, r.jsx)(ec, er({}, e))

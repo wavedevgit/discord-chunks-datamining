@@ -188,7 +188,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       name: a
     } = t, {
       data: o
-    } = (0, P.IX)(l), s = (0, S.Z)({
+    } = (0, P.IX)(l), s = (0, C.Z)({
       application: o,
       analyticsLocations: n
     }), c = (0, k.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), d = (0, H.F)(l);
@@ -480,7 +480,7 @@ eO.Header = e_, eO.Body = e => {
   } = ef({
     activity: s,
     user: u
-  }), O = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), I = (0, S.Z)({
+  }), O = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), I = (0, C.Z)({
     application: p,
     analyticsLocations: d
   });
@@ -661,7 +661,7 @@ eO.Header = e_, eO.Body = e => {
       color: "always-white",
       children: (0, U.P9)(p)
     })]
-  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ei.intl.string(ei.t.eXan7O);
+  }), g = null != (n = null == (t = (0, S.Z)(r, a)) ? true : t.activityText) ? n : ei.intl.string(ei.t.eXan7O);
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: el.applicationStreamingSection,

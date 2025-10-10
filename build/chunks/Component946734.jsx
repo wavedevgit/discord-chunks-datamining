@@ -73,14 +73,14 @@ class S {
     channelId: n,
     analyticsLocations: i
   }) {
-    E(this, "userId", true), E(this, "user", true), E(this, "channelId", true), E(this, "analyticsLocations", true), E(this, "generateNicknameGuildPairs", (0, y.oH)(e => {
+    E(this, "userId", true), E(this, "user", true), E(this, "channelId", true), E(this, "analyticsLocations", true), E(this, "generateNicknameGuildPairs", (0, O.oH)(e => {
       var t;
       return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
           return null == (t = b.Z.getGuild(e)) ? true : t.name
-        }).filter(O.lm)]
+        }).filter(y.lm)]
       }).filter(t => {
         let [n] = t;
         return n !== (null == e ? true : e.globalName)
@@ -136,11 +136,11 @@ function I(e) {
     userId: n,
     analyticsLocations: g,
     channelId: t.id
-  }), [y, O] = i.useState(false), j = i.useCallback(() => {
-    O(true)
-  }, [O]), E = i.useCallback(() => {
-    O(false)
-  }, [O]);
+  }), [O, y] = i.useState(false), j = i.useCallback(() => {
+    y(true)
+  }, [y]), E = i.useCallback(() => {
+    y(false)
+  }, [y]);
   return 0 === m.getNicknameGuildPairs().length && 0 === l.length ? (0, r.jsx)("div", {
     className: C.spacer
   }) : (0, r.jsxs)(p.Gt, {
@@ -182,7 +182,7 @@ function I(e) {
       delay: 0,
       onTooltipShow: j,
       onTooltipHide: E,
-      children: m.renderNicknamePairs(!y)
+      children: m.renderNicknamePairs(!O)
     }) : null]
   })
 }

@@ -26,8 +26,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk937615 = require("./937615.js"),
   Chunk73346 = require("./73346.js"),
   Chunk591759 = require("./591759.js"),
+  Chunk210218 = require("./210218.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk176505 = require("./176505.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -62,8 +62,8 @@ function M(e) {
   let {
     onStepChange: t,
     onBackClick: n,
-    showBackButton: a = false,
-    disabled: l = false,
+    showBackButton: l = false,
+    disabled: a = false,
     loading: s = false
   } = e, {
     hasPaymentSources: o
@@ -71,10 +71,10 @@ function M(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(r.Button, {
       onClick: () => t(d),
-      disabled: l,
+      disabled: a,
       loading: s,
-      text: O.intl.string(O.t.XiOHRU)
-    }), a ? (0, i.jsx)(h.Z, {
+      text: E.intl.string(E.t.XiOHRU)
+    }), l ? (0, i.jsx)(h.Z, {
       onClick: n
     }) : null]
   })
@@ -88,91 +88,91 @@ function Z(e) {
   } = e, {
     customGiftMessage: k = "",
     setCustomGiftMessage: Z,
-    giftRecipient: A,
+    giftRecipient: G,
     emojiConfetti: B,
     soundEffect: L,
     setEmojiConfetti: W,
     setSoundEffect: R
   } = (0, u.wD)(), {
     selectedSkuId: D,
-    application: U
-  } = (0, g.JL)(), F = (0, l.e7)([j.default], () => j.default.getCurrentUser()), H = (0, l.e7)([_.Z], () => null != D ? _.Z.get(D) : null, [D]), J = null == U ? true : U.guildId, z = (0, l.e7)([b.Z], () => null != J ? b.Z.getGuild(J) : null, [J]);
-  a.useEffect(() => {
-    null == z && null != H && s.ZP.fetchApplication(H.applicationId, true)
-  }, [z, H]);
-  let K = (null == H || null == (n = H.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) != null && (null == H ? true : H.applicationId) != null ? w.Z.toURLSafe((0, P._W)(H.applicationId, H.tenantMetadata.socialLayer.cardImageAssetId, 512, "png")) : true,
-    V = (null == H || null == (h = H.tenantMetadata) || null == (f = h.socialLayer) ? true : f.cardBackgroundImageAssetId) != null && (null == H ? true : H.applicationId) != null ? w.Z.toURLSafe((0, P._W)(H.applicationId, H.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png")) : true,
+    application: H
+  } = (0, g.JL)(), U = (0, a.e7)([_.default], () => _.default.getCurrentUser()), F = (0, a.e7)([j.Z], () => null != D ? j.Z.get(D) : null, [D]), J = null == H ? true : H.guildId, z = (0, a.e7)([b.Z], () => null != J ? b.Z.getGuild(J) : null, [J]);
+  l.useEffect(() => {
+    null == z && null != F && s.ZP.fetchApplication(F.applicationId, true)
+  }, [z, F]);
+  let K = (null == F || null == (n = F.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) != null && (null == F ? true : F.applicationId) != null ? w.Z.toURLSafe((0, P._W)(F.applicationId, F.tenantMetadata.socialLayer.cardImageAssetId, 512, "png")) : true,
+    V = (null == F || null == (h = F.tenantMetadata) || null == (f = h.socialLayer) ? true : f.cardBackgroundImageAssetId) != null && (null == F ? true : F.applicationId) != null ? w.Z.toURLSafe((0, P._W)(F.applicationId, F.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png")) : true,
     Y = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.C3, {
       children: (0, i.jsxs)("div", {
-        className: E.stepBody,
+        className: O.stepBody,
         children: [(0, i.jsxs)("div", {
-          className: E.bodyColumnLeft,
+          className: O.bodyColumnLeft,
           children: [null != K && (0, i.jsx)("div", {
-            className: E.cardContainer,
+            className: O.cardContainer,
             style: null != V ? {
               backgroundImage: "url(".concat(V.toString(), ")")
             } : true,
             children: (0, i.jsx)("img", {
               src: K.toString(),
-              alt: null != (x = null == H ? true : H.name) ? x : "",
-              className: E.skuImage
+              alt: null != (x = null == F ? true : F.name) ? x : "",
+              className: O.skuImage
             })
           }), (0, i.jsxs)("div", {
-            className: E.giftEffectsContainer,
+            className: O.giftEffectsContainer,
             children: [(0, i.jsx)(C.Z, {
               sound: L,
               onSelect: e => {
                 null != R && R(null == e ? true : e)
               }
-            }), (0, i.jsx)(v.Z, {
+            }), (0, i.jsx)(p.Z, {
               setEmojiConfetti: W,
               emojiConfetti: null == B ? true : B
             })]
           })]
         }), (0, i.jsxs)("div", {
-          className: E.bodyColumnRight,
+          className: O.bodyColumnRight,
           children: [(0, i.jsx)(o.Z, {
             selectedSkuId: D,
             validateSelectedGift: Y,
-            searchableSelectWrapperClassName: E.recipientPickerSelectWrapper
-          }), (0, i.jsx)(p.Z, {
-            sectionTitle: O.intl.string(O.t.B3miEx),
+            searchableSelectWrapperClassName: O.recipientPickerSelectWrapper
+          }), (0, i.jsx)(v.Z, {
+            sectionTitle: E.intl.string(E.t.B3miEx),
             onTextChange: e => null == Z ? true : Z(e),
             pendingText: k,
             currentText: k,
             disableThemedBackground: true,
-            className: E.customGiftMessageWrapper,
-            innerClassName: E.customGiftMessage
+            className: O.customGiftMessageWrapper,
+            innerClassName: O.customGiftMessage
           }), (() => {
-            var e, t, n, a;
-            if (null == H) return null;
-            let l = (0, I.T4)(null != (n = null == (e = H.price) ? true : e.amount) ? n : 0, null != (a = null == (t = H.price) ? true : t.currency) ? a : S.pK.USD);
+            var e, t, n, l;
+            if (null == F) return null;
+            let a = (0, I.T4)(null != (n = null == (e = F.price) ? true : e.amount) ? n : 0, null != (l = null == (t = F.price) ? true : t.currency) ? l : T.pK.USD);
             return (0, i.jsxs)("div", {
-              className: E.giftPreviewContainer,
+              className: O.giftPreviewContainer,
               children: [(0, i.jsx)(r.vwX, {
-                className: E.giftPreviewTitle,
-                children: O.intl.string(O.t.PpoJzs)
+                className: O.giftPreviewTitle,
+                children: E.intl.string(E.t.PpoJzs)
               }), (0, i.jsxs)("div", {
-                className: E.giftPreviewContent,
+                className: O.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
-                  className: E.giftPreviewImageContainer,
+                  className: O.giftPreviewImageContainer,
                   children: null != K && (0, i.jsx)("div", {
-                    className: E.giftPreviewCardContainer,
+                    className: O.giftPreviewCardContainer,
                     style: null != V ? {
                       backgroundImage: "url(".concat(V.toString(), ")")
                     } : true,
                     children: (0, i.jsx)("img", {
                       src: K.toString(),
-                      alt: H.name,
-                      className: E.giftPreviewImage
+                      alt: F.name,
+                      className: O.giftPreviewImage
                     })
                   })
                 }), (0, i.jsxs)("div", {
-                  className: E.giftPreviewTextContainer,
+                  className: O.giftPreviewTextContainer,
                   children: [null != z && (0, i.jsxs)("div", {
-                    className: E.guildNameContainer,
+                    className: O.guildNameContainer,
                     children: [(0, i.jsx)(c.Z, {
                       guild: z,
                       size: c.Z.Sizes.MINI,
@@ -185,17 +185,17 @@ function Z(e) {
                     })]
                   }), (0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
-                    children: H.name
+                    children: F.name
                   })]
                 }), (0, i.jsx)(r.Text, {
                   variant: "text-md/semibold",
-                  children: l
+                  children: a
                 })]
               })]
             })
-          })(), null != z && (0, i.jsx)(G, {
+          })(), null != z && null != F && (0, i.jsx)(A, {
             handleClose: N,
-            selectedSkuId: D,
+            sku: F,
             guild: z
           })]
         })]
@@ -205,28 +205,32 @@ function Z(e) {
         "data-migration-pending": true,
         justify: d.Z.Justify.BETWEEN,
         align: d.Z.Align.CENTER,
-        className: E.footer,
+        className: O.footer,
         children: (0, i.jsx)(M, {
           onStepChange: y,
           onBackClick: N,
-          disabled: null == A || A.id === (null == F ? true : F.id) || k.length > T.$n
+          disabled: null == G || G.id === (null == U ? true : U.id) || k.length > S.$n
         })
       })
     })]
   })
 }
 
-function G(e) {
+function A(e) {
   let {
     handleClose: t,
-    guild: n
+    guild: n,
+    sku: l
   } = e;
   return (0, i.jsx)("div", {
-    className: E.viewItemButton,
+    className: O.viewItemButton,
     children: (0, i.jsx)(r.Avr, {
-      text: O.intl.string(O.t.ImioFB),
+      text: E.intl.string(E.t.ImioFB),
       onClick: function() {
-        t(), (0, r.pTH)(), (0, x.uL)(y.Z5c.CHANNEL(n.id, N.oC.GUILD_SHOP))
+        var e;
+        t();
+        let i = null == (e = y.Z.getStorefrontState(n.id)) ? true : e.activePage;
+        window.location.pathname.includes(N.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id)) || ((0, r.pTH)(), (0, x.uL)(N.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id, l.slug)))
       },
       textVariant: "text-sm/medium",
       lineClamp: true

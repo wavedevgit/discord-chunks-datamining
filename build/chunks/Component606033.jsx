@@ -24,7 +24,7 @@ let b = function(e) {
     setQuestId: O,
     quest: E,
     refreshQuest: v
-  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), P = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), x = i.useMemo(() => {
+  } = e, [y, I] = i.useState(false), [S, C] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), P = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), x = i.useMemo(() => {
     let e = N.map(e => {
       var t, n, r;
       return {
@@ -124,8 +124,8 @@ let b = function(e) {
           text: g.intl.string(g.t.cKSLr6)
         }), (0, r.jsx)(a.yRy, {
           targetElementRef: T,
-          shouldShow: C,
-          onRequestClose: () => S(false),
+          shouldShow: S,
+          onRequestClose: () => C(false),
           position: "bottom",
           align: "center",
           renderPopout: () => (0, r.jsx)("div", {
@@ -140,7 +140,7 @@ let b = function(e) {
           }),
           children: () => (0, r.jsx)(a.hU, {
             buttonRef: T,
-            onClick: () => S(!C),
+            onClick: () => C(!S),
             "aria-label": g.intl.string(g.t.rNGQfH),
             icon: a.TIy,
             variant: "secondary"

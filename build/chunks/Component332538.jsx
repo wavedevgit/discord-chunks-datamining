@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
 
 function Z(e) {
   let t = (0, o.e7)([_.Z], () => _.Z.getNotificationStateForGuild(e), [e]),
-    n = (0, o.e7)([y.Z], () => y.Z.getStateForGuild(e)),
+    n = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     {
       trailing: b,
       showUnread: N
@@ -102,7 +102,7 @@ function Z(e) {
           }
           return 0
         }, [n, e, t, r, a])
-      }(e, t), [_, y] = (0, d.XR)(null != t && !s && b > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, b), C = _ === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, E = i.useMemo(() => {
+      }(e, t), [_, O] = (0, d.XR)(null != t && !s && b > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, b), C = _ === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, E = i.useMemo(() => {
         if (null == t || s || C) return;
         let n = function(e, t) {
           let n = g.Oe.find(e => {
@@ -116,7 +116,7 @@ function Z(e) {
           let i = I.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
-            type: O.J.LEVEL_REACHED,
+            type: y.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
               (0, p.Qd)(r, e, true, t)
@@ -137,14 +137,14 @@ function Z(e) {
             })).filter(f.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: O.J.PERKS_PURCHASABLE,
+              type: y.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
             if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: O.J.PERKS_PURCHASABLE,
+              type: y.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
@@ -155,7 +155,7 @@ function Z(e) {
         if (null != r) return r;
         let i = function(e, t, n) {
           if ((0, m.v$)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && n >= S.xn && !(0, p.OY)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
-            type: O.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
+            type: y.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
             markAsDismissed: t => {
               (0, p.Qd)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
             }
@@ -163,26 +163,26 @@ function Z(e) {
         }(e, u, c);
         if (null != i) return i
       }, [e, t, s, C, c, u]), [N, Z] = (0, d.bf)(null != E ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
-        cooldownDurationMs: O.d
+        cooldownDurationMs: y.d
       });
       return i.useMemo(() => {
         if (null != t) {
           if (s) return {
-            type: O.J.PERKS_AVAILABLE,
+            type: y.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
           if (C) {
             if (b === I.Du.GAME_SERVER_HOSTING) return {
-              type: O.J.GAME_SERVER_HOSTING_AVAILABLE,
-              markAsDismissed: y
+              type: y.J.GAME_SERVER_HOSTING_AVAILABLE,
+              markAsDismissed: O
             };
             let e = I.os[b],
               n = Object.values(t.allPowerups).filter(t => e.has(t.skuId));
             if (0 === n.length) return;
             return {
               powerups: n,
-              type: O.J.NEW_PERK_AVAILABLE,
-              markAsDismissed: y
+              type: y.J.NEW_PERK_AVAILABLE,
+              markAsDismissed: O
             }
           }
           if (N === a.z.GUILD_POWERUP_NOTIFICATION && null != E) {
@@ -220,7 +220,7 @@ function Z(e) {
             }), e
           }
         }
-      }, [t, s, r, E, N, Z, C, y, b])
+      }, [t, s, r, E, N, Z, C, O, b])
     }(e, n);
   if (null !== n && (null != b || N || null != Z)) return {
     trailing: b,
@@ -230,7 +230,7 @@ function Z(e) {
 }
 
 function w(e) {
-  let t = (0, o.e7)([y.Z], () => y.Z.getStateForGuild(e)),
+  let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = Z(e);
   i.useEffect(() => {
     (0, b.jd)(e)

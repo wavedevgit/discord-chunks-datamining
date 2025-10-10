@@ -84,12 +84,12 @@ function R() {
     z = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([y.Z], () => {
+        r = (0, s.e7)([O.Z], () => {
           if (!n) returnfalse;
-          let t = y.Z.getCurrentUserActiveStream();
+          let t = O.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([y.Z], () => y.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
         l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
         o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {

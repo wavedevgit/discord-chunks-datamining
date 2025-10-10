@@ -84,8 +84,8 @@ function b(e) {
     isMentionLowImportance: g,
     tooltipName: b,
     folderGroupId: _,
-    folderButtonContent: y,
-    onClick: O,
+    folderButtonContent: O,
+    onClick: y,
     onContextMenu: v,
     onHoverChange: j,
     onKeyDown: x,
@@ -133,7 +133,7 @@ function b(e) {
       return e
     }({
       className: f.folderButton,
-      onClick: O,
+      onClick: y,
       onContextMenu: v,
       onMouseEnter: Z,
       onMouseLeave: w,
@@ -163,9 +163,9 @@ function b(e) {
         },
         children: (0, r.jsx)("div", {
           className: f.folderButtonInner,
-          children: null != y ? (0, r.jsx)("div", {
+          children: null != O ? (0, r.jsx)("div", {
             className: f.folderIconWrapper,
-            children: y
+            children: O
           }) : (0, r.jsx)(m, {
             folderNode: l,
             hovered: P,

@@ -12,12 +12,12 @@ function i(e) {
     leaderboard: t
   } = e;
   return null == t ? null : (0, a.jsxs)("div", {
-    className: l.textContainer,
-    children: [(0, a.jsx)(r.Text, {
+    className: r.textContainer,
+    children: [(0, a.jsx)(l.Text, {
       variant: "display-lg",
       color: "text-primary",
       children: t.title
-    }), (0, a.jsx)(r.Heading, {
+    }), (0, a.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "text-secondary",
       children: t.description

@@ -328,7 +328,7 @@ class V extends(r = Chunk647438.Component) {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, O.X)()), {
+      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, y.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -437,14 +437,14 @@ let F = e => {
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, h = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), _ = (0, P.k1)(g), O = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+  } = e, h = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), _ = (0, P.k1)(g), y = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds();
     return (0, P.tU)(e, [I.Z, N.Z])
   }, []);
   (0, E.z)(C.R);
   let {
     analyticsLocations: v
-  } = (0, y.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
+  } = (0, O.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
     keyboardModeEnabled: S,
     version: T
   } = (0, p.cj)([m.Z, w.Z], () => ({
@@ -486,14 +486,14 @@ let F = e => {
     defaultFocused: (h + +!!a).toString(),
     setFocus: L
   });
-  return (0, i.jsx)(y.Gt, {
+  return (0, i.jsx)(O.Gt, {
     value: v,
     children: (0, i.jsx)(u.bG, {
       navigator: F,
       children: (0, i.jsx)(V, U(G({}, e), {
         density: t,
         channels: _,
-        privateChannelIds: O,
+        privateChannelIds: y,
         listRef: D,
         theme: null != j ? j : r,
         version: T,

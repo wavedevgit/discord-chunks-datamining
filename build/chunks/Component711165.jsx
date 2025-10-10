@@ -157,7 +157,7 @@ let A = Chunk647438.memo(function(e) {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: l
-  } = e, a = new O.ZP({
+  } = e, a = new y.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
     author: j.default.getUser(t.userId),
@@ -221,7 +221,7 @@ let A = Chunk647438.memo(function(e) {
           message: a,
           channel: n,
           className: P.message,
-          compact: y.jU.getSetting(),
+          compact: O.jU.getSetting(),
           animateAvatar: false,
           focusProps: N
         }, a.id), (0, r.jsx)(d.P3F, {

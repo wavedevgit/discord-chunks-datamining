@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 663701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eS,
-  d: () => eC
+  Z: () => eC,
+  d: () => eS
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -288,7 +288,7 @@ let eh = e => {
       })
     }) : (0, r.jsx)("div", {
       className: eu.familyCenterButtonContainer,
-      children: (0, r.jsx)(C.ZP, {
+      children: (0, r.jsx)(S.ZP, {
         contentTypes: [p.z.FAMILY_CENTER_NEW_BADGE],
         children: e => {
           let {
@@ -396,18 +396,18 @@ let eI = Chunk647438.memo(function(e) {
         selected: null != l && l.startsWith(ei.Z5c.FAMILY_CENTER) || null != b && b.startsWith(ei.Z5c.FAMILY_CENTER)
       }, "family-center") : null, f ? (0, r.jsx)(H.Z, {
         selected: null == b ? null != l && l.startsWith(ei.Z5c.QUEST_HOME_V2) : b === ei.Z5c.QUEST_HOME_V2
-      }, "quests") : null, (0, r.jsx)(eC, {}, "section-divider-top"), (0, r.jsx)(S.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(em, {}, "create-dm")]
+      }, "quests") : null, (0, r.jsx)(eS, {}, "section-divider-top"), (0, r.jsx)(C.Z, {}, "frequent-friends"), "full-width" === g && (0, r.jsx)(em, {}, "create-dm")]
     }))]
   })
 });
 
-function eC() {
+function eS() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk686918.sectionDivider
   })
 }
 
-function eS() {
+function eC() {
   let e = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink()),
     t = (0, Chunk442837.e7)([Chunk55563.Z], () => {
       if (module === Chunk981631.Z5c.APPLICATION_STORE) returntrue;

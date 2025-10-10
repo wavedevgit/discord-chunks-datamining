@@ -65,11 +65,11 @@ function N(e) {
     G = null;
   null != k && M ? (t = k.name, G = (0, r.jsx)("img", {
     className: T.appIcon,
-    alt: C.intl.string(C.t.X4IxWF),
+    alt: S.intl.string(S.t.X4IxWF),
     src: U,
     "aria-hidden": true,
     draggable: false
-  })) : L ? (t = C.intl.string(C.t.HcoRu7), G = (0, r.jsx)(c.Dkj, {
+  })) : L ? (t = S.intl.string(S.t.HcoRu7), G = (0, r.jsx)(c.Dkj, {
     size: R
   })) : null != Z ? (G = w ? (0, r.jsx)(c.r7p, {
     size: R
@@ -78,32 +78,32 @@ function N(e) {
     size: D,
     active: true,
     className: T.guildIcon
-  }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RE), G = (0, r.jsx)(c.gw7, {
+  }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = S.intl.string(S.t.YUU0RE), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
+  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = S.intl.string(S.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
+  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = S.intl.string(S.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
+  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = S.intl.string(S.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
+  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = S.intl.string(S.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = S.intl.string(C.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2N), G = (0, r.jsx)(c.qDn, {
+  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = S.intl.string(S.t.JALI2N), G = (0, r.jsx)(c.qDn, {
     size: R
   }));
   let B = i.useCallback(e => {
       (0, m.ZN)("fast-travel")
     }, []),
-    H = (null == t || "" === t) && n ? C.intl.string(C.t.ZvKwYW) : t;
+    H = (null == t || "" === t) && n ? S.intl.string(S.t.ZvKwYW) : t;
   return null == H || "" === H ? null : (0, r.jsx)(c.aML, {
     "data-migration-pending": true,
     shouldShow: n,
-    "aria-label": C.intl.string(C.t["7P/+q6"]),
+    "aria-label": S.intl.string(S.t["7P/+q6"]),
     tooltipContentClassName: T.navigationTooltip,
     text: (0, r.jsxs)(r.Fragment, {
-      children: [C.intl.string(C.t["7P/+q6"]), (0, r.jsx)(c.M2$, {
+      children: [S.intl.string(S.t["7P/+q6"]), (0, r.jsx)(c.M2$, {
         shortcut: ["mod", "k"]
       })]
     }),

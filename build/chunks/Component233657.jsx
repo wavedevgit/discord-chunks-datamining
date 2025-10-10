@@ -55,8 +55,8 @@ function _(e) {
     guild: t,
     selected: _
   } = e, {
-    hasUnread: y,
-    mentionCount: O
+    hasUnread: O,
+    mentionCount: y
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
@@ -95,11 +95,11 @@ function _(e) {
         }))
       })
     },
-    showUnread: y && !v,
-    trailing: !v && O > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: O && !v,
+    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,
-      count: O
+      count: y
     }) : null
   })
 }

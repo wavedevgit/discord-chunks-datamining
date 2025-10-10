@@ -24,8 +24,8 @@ let _ = (0, Chunk146773.B)(function(e) {
     selectedChannelId: l,
     position: c,
     disableManageChannels: _,
-    sorting: y,
-    sortingType: O,
+    sorting: O,
+    sortingType: y,
     sortingPosition: v,
     connectChannelDragSource: j,
     connectChannelDropTarget: x,
@@ -74,7 +74,7 @@ let _ = (0, Chunk146773.B)(function(e) {
   }, [E]);
   if (null == E) return null;
   let Z = (0, h.jo)(c, v),
-    w = (0, h.CN)(E, y, O),
+    w = (0, h.CN)(E, O, y),
     T = (0, r.jsx)("div", {
       className: o()(Z, {
         [b.disabled]: w,

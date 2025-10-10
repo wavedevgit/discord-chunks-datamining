@@ -103,7 +103,7 @@ let j = {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
           ref: T,
-          className: O.container,
+          className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.Ucv, {
             size: "md",
@@ -111,10 +111,10 @@ let j = {
             color: "currentColor"
           }),
           background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
-            className: O.lottieContainer,
+            className: y.lottieContainer,
             children: (0, r.jsx)(s.kci, {
               nextScene: Z,
-              className: O.lottie,
+              className: y.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: w,
@@ -125,9 +125,9 @@ let j = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [O.textImportant]: (null == x ? true : x.showUnread) === true
+              [y.textImportant]: (null == x ? true : x.showUnread) === true
             }),
-            children: y.intl.string(_.default.yv3DJC)
+            children: O.intl.string(_.default.yv3DJC)
           }),
           selected: l,
           onClick: C,

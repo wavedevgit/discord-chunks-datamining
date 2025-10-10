@@ -230,7 +230,7 @@ class R extends(r = Chunk647438.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === S.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === S.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -264,8 +264,8 @@ let D = Chunk647438.forwardRef(function(e, t) {
     o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
     p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
-    O = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
+    g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
+    y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: v
     } = f.Z.useExperiment({
@@ -281,9 +281,9 @@ let D = Chunk647438.forwardRef(function(e, t) {
   return (0, i.jsx)(R, w(Z({}, e), {
     ref: t,
     channelName: r,
-    unread: O > 0,
+    unread: y > 0,
     selected: g === n,
-    badge: O,
+    badge: y,
     audio: x,
     video: C,
     stream: p,

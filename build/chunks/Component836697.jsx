@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk264096 = require("./264096.js");
 
-function y(e) {
+function O(e) {
   let {
     onActivate: t,
     children: n
@@ -104,10 +104,10 @@ function y(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     onActivate: t
-  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, f.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
+  } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, f.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
     let e = (0, h.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
@@ -122,8 +122,8 @@ function O(e) {
   }, [n, j]);
   let S = null != v && x.includes(v);
   return (i.useEffect(() => {
-    !n && S && C !== v && O(true)
-  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
+    !n && S && C !== v && y(true)
+  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: E,
@@ -132,7 +132,7 @@ function O(e) {
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
-        O(!n), c.ZP.clearCoachmark()
+        y(!n), c.ZP.clearCoachmark()
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {

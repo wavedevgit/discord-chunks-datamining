@@ -52,13 +52,13 @@ function N(e, t, n) {
 function Z(e) {
   let {
     onJump: t
-  } = e, n = (0, a.e7)([_.Z, O.Z], () => _.Z.getChannel(O.Z.getChannelId())), {
+  } = e, n = (0, a.e7)([_.Z, y.Z], () => _.Z.getChannel(y.Z.getChannelId())), {
     messages: l,
     hasMore: s,
     loading: h,
     guildFilter: g,
     roleFilter: b,
-    everyoneFilter: y
+    everyoneFilter: O
   } = (0, a.cj)([v.ZP], () => ({
     messages: v.ZP.getMentions(),
     hasMore: v.ZP.hasMore,
@@ -68,11 +68,11 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), x = (0, p.Z)(g), C = (0, p.Z)(b), P = (0, p.Z)(y);
+  }), x = (0, p.Z)(g), C = (0, p.Z)(b), P = (0, p.Z)(O);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != x && g !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
-  }, [x, g, C, b, P, y, n, true]), (0, d.ZP)(() => {
+    (null != x && g !== x || null != C && b !== C || null != P && O !== P) && N(n, true)
+  }, [x, g, C, b, P, O, n, true]), (0, d.ZP)(() => {
     (null == l ? true : l.some(f.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
@@ -122,7 +122,7 @@ function T(e) {
   if (null == t) return null;
   let l = _.Z.getChannel(t.channel_id);
   if (null == l || (0, h._t)(l) || (0, h.ft)(l)) return null;
-  let o = y.Z.didAgree(l.getGuildId()),
+  let o = O.Z.didAgree(l.getGuildId()),
     a = !!(0, h.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,

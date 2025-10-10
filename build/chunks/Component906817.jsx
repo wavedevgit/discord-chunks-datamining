@@ -60,9 +60,9 @@ let _ = Chunk647438.memo(function(e) {
     guildChannels: m,
     guildChannelsVersion: b,
     selectedChannelId: _,
-    disableManageChannels: y
+    disableManageChannels: O
   } = e, {
-    isFavoritesPerk: O
+    isFavoritesPerk: y
   } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
@@ -88,7 +88,7 @@ let _ = Chunk647438.memo(function(e) {
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: O ? f.intl.string(f.t.mlPMCw) : f.intl.string(f.t.k8fFjo)
+        name: y ? f.intl.string(f.t.mlPMCw) : f.intl.string(f.t.k8fFjo)
       });
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
@@ -115,7 +115,7 @@ let _ = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: y,
+        disableManageChannels: O,
         children: (0, r.jsx)(c.Z, {
           inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
@@ -130,7 +130,7 @@ let _ = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: y
+        disableManageChannels: O
       })
     }
   }

@@ -2,7 +2,7 @@
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Po: () => b,
-  ZP: () => y
+  ZP: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,14 +80,14 @@ function _(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     guildId: t,
     powerup: n,
     compact: l,
     iconSize: b,
-    size: y,
-    grow: O,
+    size: O,
+    grow: y,
     className: v,
     onError: j
   } = e, {
@@ -112,8 +112,8 @@ function y(e) {
       var t, i;
       return (0, r.jsx)("div", (t = m({}, e), i = i = {
         className: o()(g.secondaryButton, {
-          [g.buttonWrapper]: O,
-          [g.noGrow]: !O
+          [g.buttonWrapper]: y,
+          [g.noGrow]: !y
         }, v),
         children: (() => {
           let {
@@ -155,8 +155,8 @@ function y(e) {
             disabled: P,
             onClick: I ? S : x,
             loading: C,
-            fullWidth: O,
-            size: null != y ? y : l ? "md" : true,
+            fullWidth: y,
+            size: null != O ? O : l ? "md" : true,
             text: e,
             minWidth: 0
           }, l ? {

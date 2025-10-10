@@ -75,7 +75,7 @@ function w(e) {
     onClick: () => i ? (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
       location: {
-        section: O.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
+        section: y.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
       }
     }),
     markAsDismissed: n,
@@ -140,7 +140,7 @@ function A(e) {
     markAsDismissed: i,
     buttonCTA: C.intl.string(C.t.RzWDqa)
   });
-  let a = n.find(e => y.NL.has(e.skuId));
+  let a = n.find(e => O.NL.has(e.skuId));
   return null != a ? (0, r.jsx)(D, {
     header: C.intl.string(x.default["kA2c+v"]),
     content: C.intl.string(x.default.TUilLi),

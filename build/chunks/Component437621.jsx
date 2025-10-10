@@ -101,8 +101,8 @@ class k extends Chunk98597.ZP {
       connectDragPreview: h,
       canReorderChannel: f,
       isSubscriptionGated: b,
-      isFavoriteSuggestion: y,
-      subtitle: O,
+      isFavoriteSuggestion: O,
+      subtitle: y,
       forceTopLevelThread: v,
       embeddedApps: j,
       resolvedUnreadSetting: x,
@@ -276,7 +276,7 @@ function U(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, O.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
+  } = (0, y.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
     unread: C.ZP.hasUnread(t.id),
     ackMessageId: C.ZP.ackMessageId(t.id),
     isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
@@ -286,7 +286,7 @@ function U(e) {
       canManageChannel: x.Z.can(T.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: true !== i && (n.id === A._ || (null != e ? x.Z.can(T.Plq.MANAGE_CHANNELS, e) : x.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
-  }), _ = (0, a.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
+  }), _ = (0, a.e7)([O.Z], () => O.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: j,
     isSubscriptionGated: S
   } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), P = (0, f.$5)(t), Z = (0, p.NX)(t.id), w = (0, N.Z)({

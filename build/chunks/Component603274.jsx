@@ -47,7 +47,7 @@ function I() {
     t = module.map(e => e.id),
     n = module.filter(e => e.type === x.d4z.GUILD_VOICE),
     i = module.filter(e => e.type === x.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => y.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;

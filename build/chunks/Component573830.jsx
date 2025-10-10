@@ -67,31 +67,29 @@ let y = "M4.10585 5.3837L5.37864 4.11091L11.884 10.61632L10.6112 11.88912L4.1058
   N = [0, .1, .2, .5, .7, 1],
   R = [0, .3, .5, .8, .9, 1];
 
-function P(e, t, n, i) {
-  let a = e.to({
-      range: C,
-      output: [t, t, n, n],
-      extrapolate: "clamp"
-    }),
-    o = i ? [y, y, T, T] : [y, v, v, T],
-    l = i ? [O, O, S, S] : [O, I, I, S];
+function P(e, t, n) {
+  let i = e.to({
+    range: C,
+    output: [t, t, n, n],
+    extrapolate: "clamp"
+  });
   return (0, r.jsx)("svg", {
     viewBox: "0 0 24 24",
     fill: "none",
     children: (0, r.jsxs)("g", {
       transform: "translate(4 4)",
       children: [(0, r.jsx)(s.animated.path, {
-        fill: a,
+        fill: i,
         d: e.to({
           range: C,
-          output: o,
+          output: [y, v, v, T],
           extrapolate: "clamp"
         })
       }), (0, r.jsx)(s.animated.path, {
-        fill: a,
+        fill: i,
         d: e.to({
           range: C,
-          output: l,
+          output: [O, I, I, S],
           extrapolate: "clamp"
         })
       })]
@@ -133,7 +131,7 @@ function w(e) {
     opacity: ee
   } = (0, u.q)({
     config: {
-      duration: 300
+      duration: T.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
     state: j ? t ? R[R.length - 2] : N[1] : +!!t
@@ -178,7 +176,10 @@ function w(e) {
           viewBox: "0 0 24 24",
           preserveAspectRatio: "xMidYMin meet",
           style: {
-            left: $.to({
+            left: $.to(T.enabled ? {
+              range: C,
+              output: [1, 1, 24, 24]
+            } : {
               range: A,
               output: [1, 1, 1, 24, 24, 24]
             })
@@ -189,12 +190,12 @@ function w(e) {
               range: C,
               output: [Q, Q, J, J]
             }),
-            x: et([4, 4, 2.5, 1, 2.5, 4]),
-            y: et([4, 7, 2.5, 7, 2.5, 4]),
-            width: et([16, 16, 19, 22, 19, 16]),
-            height: et([16, 10, 19, 10, 19, 16]),
-            rx: et([8, 5, 9.5, 5, 9.5, 8])
-          }), O && P($, q, X, T.enabled)]
+            x: T.enabled ? 4 : et([4, 4, 2.5, 1, 2.5, 4]),
+            y: T.enabled ? 4 : et([4, 7, 2.5, 7, 2.5, 4]),
+            width: T.enabled ? 16 : et([16, 16, 19, 22, 19, 16]),
+            height: T.enabled ? 16 : et([16, 10, 19, 10, 19, 16]),
+            rx: T.enabled ? 8 : et([8, 5, 9.5, 5, 9.5, 8])
+          }), O && P($, q, X)]
         })
       })), (0, r.jsx)(p.n, {
         children: (0, r.jsx)("input", b(g({}, x), {

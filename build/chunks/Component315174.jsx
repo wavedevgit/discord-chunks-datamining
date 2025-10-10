@@ -184,7 +184,7 @@ function T(e) {
     children: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
     }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
@@ -220,7 +220,7 @@ function R(e) {
     ariaControls: p,
     ariaExpanded: h,
     children: m
-  } = e, _ = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, o)), y = i.useCallback(() => {
+  } = e, _ = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, o)), O = i.useCallback(() => {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
@@ -248,7 +248,7 @@ function R(e) {
       onClick: a,
       children: [(0, r.jsxs)("div", {
         className: C.guildBadgeAndName,
-        children: [(0, r.jsx)(O.Z, {
+        children: [(0, r.jsx)(y.Z, {
           guild: o,
           isBannerVisible: l
         }), o.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
@@ -265,7 +265,7 @@ function R(e) {
       children: (0, r.jsx)(d.P3F, {
         className: C.inviteButton,
         onClick: () => {
-          y()
+          O()
         },
         children: (0, r.jsx)(d.ejJ, {
           size: "refresh_sm",
@@ -286,7 +286,7 @@ let D = Chunk647438.memo(function(e) {
     onMouseDown: f,
     disableBannerAnimation: g,
     "aria-expanded": b,
-    "aria-controls": O,
+    "aria-controls": y,
     guild: j,
     guildBanner: x,
     animationOverlayHeight: N,
@@ -294,7 +294,7 @@ let D = Chunk647438.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
       F(false)
@@ -319,7 +319,7 @@ let D = Chunk647438.memo(function(e) {
       guild: j,
       onClick: c,
       onContextMenu: u,
-      ariaControls: O,
+      ariaControls: y,
       ariaExpanded: b,
       guildHeaderRef: W
     };

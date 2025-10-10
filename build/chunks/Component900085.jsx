@@ -300,7 +300,7 @@ class Q extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "scrollerRef", l.createRef()), U(this, "inputRef", l.createRef()), U(this, "_listId", (0, y.hQ)()), U(this, "state", {
+    super(...e), U(this, "scrollerRef", l.createRef()), U(this, "inputRef", l.createRef()), U(this, "_listId", (0, O.hQ)()), U(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: true
     }), U(this, "handleInputChange", () => {
@@ -590,7 +590,7 @@ class Q extends Chunk647438.PureComponent {
 
 function J(e) {
   let t = (0, c.cj)([A.Z], () => A.Z.getProps()),
-    n = (0, O.Pt)(),
+    n = (0, y.Pt)(),
     r = L.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

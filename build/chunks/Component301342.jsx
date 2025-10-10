@@ -77,9 +77,9 @@ let N = Chunk647438.memo(function(e) {
         hideIcon: w,
         children: T
       } = e,
-      A = (0, s.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      A = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
       R = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
-      D = (0, s.e7)([y.Z], () => y.Z.can(x.Plq.MANAGE_CHANNELS, l));
+      D = (0, s.e7)([O.Z], () => O.Z.can(x.Plq.MANAGE_CHANNELS, l));
     t = null != Z ? N > Z ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let L = i.useCallback(() => {
         R ? (0, p.mJ)(l.id) : (0, p.c4)(l.id)

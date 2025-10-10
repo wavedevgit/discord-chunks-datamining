@@ -83,20 +83,24 @@ function p(e) {
   } = e, b = f(e, ["label", "hideLabel", "hideTags", "placeholder", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "maxOptionsVisible"]);
   let {
     disabled: y,
-    required: O
+    required: O,
+    onQueryChange: v,
+    onKeyDown: I,
+    onFocus: T,
+    onBlur: S
   } = b, {
-    isOpen: v,
-    setIsOpen: I,
-    refs: T,
-    floatingStyles: S,
-    getFloatingProps: A,
-    getReferenceProps: C,
-    transitionStyles: N
+    isOpen: A,
+    setIsOpen: C,
+    refs: N,
+    floatingStyles: R,
+    getFloatingProps: P,
+    getReferenceProps: w,
+    transitionStyles: D
   } = (0, o.C)();
   return (0, r.jsxs)(i.uz, d(c({}, b), {
     isCollapsible: true,
-    isOpen: v,
-    setIsOpen: I,
+    isOpen: A,
+    setIsOpen: C,
     children: [(0, r.jsx)(i.Ct, c({
       label: t,
       hideLabel: n,
@@ -109,13 +113,17 @@ function p(e) {
       errorMessage: h,
       successMessage: m,
       wrapTags: g,
+      onBlur: S,
+      onQueryChange: v,
+      onFocus: T,
+      onKeyDown: I,
       showChevronButton: true,
-      ref: T.setReference
-    }, C())), v && (0, r.jsx)("div", d(c({
-      ref: T.setFloating,
+      ref: N.setReference
+    }, w())), A && (0, r.jsx)("div", d(c({
+      ref: N.setFloating,
       className: s.selectDropdown,
-      style: c({}, S, N)
-    }, A()), {
+      style: c({}, R, D)
+    }, P()), {
       children: (0, r.jsx)(i.px, {
         renderListItem: e => (0, r.jsx)(a.W, c({}, e)),
         maxVisibleItems: E

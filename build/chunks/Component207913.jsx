@@ -83,8 +83,8 @@ function F(e) {
     isUnread: s,
     groupedMessages: d
   } = e, p = n.type === M.d4z.UNKNOWN ? u.VL1 : (0, f.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
-    nick: y,
-    colorString: O
+    nick: O,
+    colorString: y
   } = (0, _.ZP)(t), {
     avatarSrc: x,
     eventHandlers: C
@@ -158,7 +158,7 @@ function F(e) {
             children: [(0, r.jsx)("div", {
               className: U.username,
               style: {
-                color: null != O ? O : true
+                color: null != y ? y : true
               },
               children: (0, r.jsx)(g.Z, {
                 children: w
@@ -168,7 +168,7 @@ function F(e) {
             children: (0, r.jsx)(u.Heading, {
               variant: "text-md/semibold",
               style: {
-                color: null != O ? O : true
+                color: null != y ? y : true
               },
               className: U.username,
               children: b.name
@@ -210,7 +210,7 @@ function F(e) {
               [U.unread]: s,
               [U.selected]: a
             }),
-            children: [m, !S && " \xb7 ".concat(y)]
+            children: [m, !S && " \xb7 ".concat(O)]
           })]
         }), (0, r.jsx)(W, {
           message: t,
@@ -259,7 +259,7 @@ function z(e) {
   let {
     message: t
   } = e, n = (0, C.a3)(t.timestamp.getTime());
-  return (0, r.jsx)(O.Z, {
+  return (0, r.jsx)(y.Z, {
     timestamp: t.timestamp,
     className: U.timestamp,
     isEdited: t.isEdited(),
@@ -308,19 +308,19 @@ function W(e) {
         g = t.type === M.uaV.USER_JOIN,
         _ = null;
       1 === s ? _ = u.XBm : s > 1 ? _ = u.Ka2 : c ? _ = b.Z : p || h ? _ = u.QDj : d ? _ = u.SlE : f && (_ = u.gj8);
-      let O = true,
+      let y = true,
         v = null;
       if (e)
         if (c) v = G.intl.string(G.t["9ddYKi"]);
         else if (p) {
         var j;
-        O = false, v = null == (j = t.poll) ? true : j.question.text
+        y = false, v = null == (j = t.poll) ? true : j.question.text
       } else v = h ? G.intl.string(G.t.sad2PD) : i ? G.intl.string(G.t.p0oZm5) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKi, {
         count: s
       }) : 1 === s ? G.intl.string(G.t.tCcq5u) : d ? G.intl.format(G.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
       }) : f ? G.intl.string(G.t.slFYgo) : g ? G.intl.string(G.t.Yvvfw8) : G.intl.string(G.t.sDqZHB);
-      else O = false, v = (0, r.jsx)(y.ZP, {
+      else y = false, v = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
         compact: false,
@@ -333,7 +333,7 @@ function W(e) {
         className: o()(U.message, {
           [U.unread]: n,
           [U.selected]: l,
-          [U.descriptionMessage]: O
+          [U.descriptionMessage]: y
         }),
         children: v
       })), {
@@ -387,9 +387,9 @@ let K = (0, Chunk647438.memo)(function(e) {
     notificationCenterVariant: _
   } = (0, w.pN)({
     location: "NotificationsInboxMessageUnit"
-  }), y = i.useMemo(() => "".concat(null == h ? true : h.author.username, ": ").concat(null == m ? true : m.name), [null == h ? true : h.author.username, null == m ? true : m.name]), O = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
+  }), O = i.useMemo(() => "".concat(null == h ? true : h.author.username, ": ").concat(null == m ? true : m.name), [null == h ? true : h.author.username, null == m ? true : m.name]), y = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == h || null == m ? null : (0, r.jsx)(u.kL8, {
-    "aria-label": y,
+    "aria-label": O,
     className: o()(U.messageClickableContainer, {
       [U.selected]: h.id === g.messageId,
       [U.actionMenuOpen]: b
@@ -423,7 +423,7 @@ let K = (0, Chunk647438.memo)(function(e) {
       message: h,
       channel: m,
       isSelected: h.id === g.messageId,
-      groupedMessages: O,
+      groupedMessages: y,
       isUnread: p
     })
   })

@@ -103,8 +103,8 @@ function S(e) {
     Menu: c,
     interactionType: u,
     actionType: d
-  } = e, p = (0, g.fJ)(), [h, f] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
-    openMenu: O,
+  } = e, p = (0, g.fJ)(), [h, f] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), O = (0, i.useRef)(null), {
+    openMenu: y,
     closeMenu: C
   } = (0, b.z)();
   return (0, r.jsx)(a.yRy, {
@@ -113,13 +113,13 @@ function S(e) {
     position: "right",
     align: "top",
     autoInvert: false,
-    targetElementRef: y,
+    targetElementRef: O,
     onRequestClose: () => {
       _(false), C(n.id, d)
     },
     renderPopout: e => (0, r.jsx)(a.VqE, {
       onClick: e => e.stopPropagation(),
-      returnRef: y,
+      returnRef: O,
       children: (0, r.jsx)(c, {
         renderPopoutProps: e,
         channel: t,
@@ -134,7 +134,7 @@ function S(e) {
       onTooltipShow: () => f(true),
       onTooltipHide: () => f(false),
       children: (0, r.jsx)(a.P3F, {
-        innerRef: y,
+        innerRef: O,
         className: v.action,
         onClick: e => {
           (0, g.Qz)({
@@ -143,7 +143,7 @@ function S(e) {
             viewId: p
           }), e.stopPropagation();
           let t = !m;
-          _(t), t ? O(n.id, d) : C(n.id, d)
+          _(t), t ? y(n.id, d) : C(n.id, d)
         },
         children: (0, r.jsx)(s, x(j({}, e), {
           message: n,
@@ -166,8 +166,8 @@ let I = {
         messageId: e.id,
         channelId: e.channel_id
       }), c.In(e.channel_id, {
-        object: y.qAy.MARK_MESSAGE_AS_READ_BUTTON,
-        objectType: y.Qqv.ACK_MANUAL
+        object: O.qAy.MARK_MESSAGE_AS_READ_BUTTON,
+        objectType: O.Qqv.ACK_MANUAL
       }, true, true, e.id)
     },
     interactionType: Chunk804932.s_.ACK
@@ -187,12 +187,12 @@ let I = {
       });
       return (0, r.jsxs)(a.v2r, x(j({}, n), {
         navId: "message-reminder-create",
-        "aria-label": O.intl.string(O.t.mJ3P0N),
+        "aria-label": y.intl.string(y.t.mJ3P0N),
         onClose: n.closePopout,
         onSelect: () => null,
         children: [null != i ? (0, r.jsx)(a.sNh, {
           id: "remove-from-for-later",
-          label: O.intl.string(O.t.SvXS1d),
+          label: y.intl.string(y.t.SvXS1d),
           icon: a.plf,
           action: () => (0, p.x)({
             channelId: t.channel_id,
@@ -202,7 +202,7 @@ let I = {
           })
         }) : (0, r.jsx)(a.sNh, {
           id: "create-bookmark",
-          label: O.intl.string(O.t["9p3D9v"]),
+          label: y.intl.string(y.t["9p3D9v"]),
           icon: a.gt9,
           action: () => (0, p.z)({
             channelId: t.channel_id,
@@ -226,11 +226,11 @@ let I = {
       return t.isThread() ? (0, r.jsx)(f.Z, x(j({}, n), {
         channel: t,
         navId: "thread-context",
-        label: O.intl.string(O.t["1NBjqa"])
+        label: y.intl.string(y.t["1NBjqa"])
       })) : (0, r.jsx)(u.Z, x(j({}, n), {
         channel: t,
         navId: "channel-context",
-        label: O.intl.string(O.t.Xm41aW)
+        label: y.intl.string(y.t.Xm41aW)
       }))
     }
   }

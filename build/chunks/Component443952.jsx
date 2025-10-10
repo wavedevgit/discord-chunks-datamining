@@ -262,7 +262,7 @@ let G = {
           if ((0, p.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
           else {
             var r;
-            let e = C.Z.getLastFocusedWindowId();
+            let e = S.Z.getLastFocusedWindowId();
             n = null == e ? null : null == (r = (0, _.g0)(e)) ? true : r.renderWindow
           }
           if (null == n) throw new x.Z({
@@ -311,7 +311,7 @@ let G = {
       if (null == i) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "No application.");
-      if (!(0, S.yE)(null != (t = n.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
+      if (!(0, C.yE)(null != (t = n.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let l = (0, w.Z)();
@@ -350,7 +350,7 @@ let G = {
       if (!M.Cr.includes(p)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "Unsupported application.");
-      if (!(0, S.yE)(null != (t = r.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
+      if (!(0, C.yE)(null != (t = r.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let f = (0, w.Z)();

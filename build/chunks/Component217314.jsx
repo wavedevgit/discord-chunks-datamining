@@ -24,8 +24,8 @@ function m(e) {
     m = (0, i.e7)([d.default], () => d.default.getUser(t)),
     b = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
     _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
-    y = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
-    O = p.ZP.useUserTag(m),
+    O = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
+    y = p.ZP.useUserTag(m),
     v = (0, a.j)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
@@ -51,10 +51,10 @@ function m(e) {
       className: null != e.handleClick ? g.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.jSM, {
-          text: O,
+          text: y,
           position: "bottom",
           className: v,
-          children: null != y ? y : p.ZP.getName(m)
+          children: null != O ? O : p.ZP.getName(m)
         }), j && (0, r.jsx)(l.u, {
           text: f.intl.string(f.t.QyZ4TU),
           children: (0, r.jsx)(o.tQf, {

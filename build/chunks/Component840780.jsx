@@ -161,7 +161,7 @@ class eN extends Chunk647438.PureComponent {
       canStartAuthorization: f,
       accountLinkButtonRef: g,
       startAuthorization: b
-    } = this.props, _ = (0, Chunk339144.y)(Chunk647438, Chunk120356, o), y = [];
+    } = this.props, _ = (0, Chunk339144.y)(Chunk647438, Chunk120356, o), O = [];
     return require || !module ? null : (exports ? Chunk925549 && null == o ? Chunk438139.push(Chunk704215.z.ACCOUNT_LINK_INVITE_FRIENDS) : Chunk438139.push(Chunk704215.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : Chunk481060 && null != Chunk647438 && Chunk438139.push(Chunk704215.z.ACCOUNT_LINK_PROMPT), (0, Chunk951288.jsx)(Chunk243778.ZP, {
       contentTypes: Chunk438139,
       groupName: Chunk921944.R.ACCOUNT_NAME_ZONE,
@@ -177,7 +177,7 @@ class eN extends Chunk647438.PureComponent {
           targetElementRef: this.inviteButtonRef,
           align: "right",
           shouldShow: true,
-          onRequestClose: () => n(eO.L.USER_DISMISS),
+          onRequestClose: () => n(ey.L.USER_DISMISS),
           caretConfig: {
             align: "end"
           },
@@ -185,7 +185,7 @@ class eN extends Chunk647438.PureComponent {
             text: ex.intl.string(ex.t.YdkBCA),
             onClick: () => {
               var e;
-              n(eO.L.TAKE_ACTION), s()(null != l, "Received null activity"), eu.default.track(e_.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+              n(ey.L.TAKE_ACTION), s()(null != l, "Received null activity"), eu.default.track(e_.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
                 game_id: null != (e = null == c ? true : c.id) ? e : null,
                 application_id: l.application_id
@@ -208,11 +208,11 @@ class eN extends Chunk647438.PureComponent {
           actions: [{
             text: ex.intl.string(ex.t.aRIFWF),
             onClick: () => {
-              n(eO.L.TAKE_ACTION), window.open(ed.Z.getArticleURL(e_.BhN.IN_GAME_FEATURES), "_blank")
+              n(ey.L.TAKE_ACTION), window.open(ed.Z.getArticleURL(e_.BhN.IN_GAME_FEATURES), "_blank")
             }
           }],
           shouldShow: true,
-          onRequestClose: () => n(eO.L.USER_DISMISS)
+          onRequestClose: () => n(ey.L.USER_DISMISS)
         }) : t === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(h.J2, {
           graphic: {
             type: "dynamic",
@@ -229,14 +229,14 @@ class eN extends Chunk647438.PureComponent {
           align: "right",
           shouldShow: true,
           gradientColor: "purple",
-          onRequestClose: () => n(eO.L.USER_DISMISS),
+          onRequestClose: () => n(ey.L.USER_DISMISS),
           caretConfig: {
             align: "end"
           },
           actions: [{
             text: ex.intl.string(ex.t.lw71NT),
             onClick: () => {
-              n(eO.L.TAKE_ACTION), b()
+              n(ey.L.TAKE_ACTION), b()
             }
           }]
         }) : true
@@ -442,7 +442,7 @@ class eN extends Chunk647438.PureComponent {
       s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), _.Z.channelListScrollTo(null != (e = t.guild_id) ? e : e_.ME, t.id), !r && ((0, Q.vd)(t.type) && b.Z.selectParticipant(t.id, (0, Z.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, Q.Qm)(t.type) && (0, x.tg)(ey.Ez.PANEL))
+      })), (0, Q.Qm)(t.type) && (0, x.tg)(eO.Ez.PANEL))
     }), eE(this, "handleFrameLinkClick", () => {
       let {
         frame: e
@@ -483,8 +483,8 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     m = (0, u.e7)([v.Z], () => v.Z.useReducedMotion),
     b = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     _ = (0, u.e7)([k.Z], () => k.Z.getConnectedFrame()),
-    y = (0, u.e7)([en.Z, ei.Z, et.ZP], () => null != s ? B.JL(s, en.Z, ei.Z, false) : null != n && B.h_(et.ZP.getChannels(n), en.Z, ei.Z).length > 0),
-    [O] = (0, N.Z)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != _ ? _.applicationId : true) ? t : ""]),
+    O = (0, u.e7)([en.Z, ei.Z, et.ZP], () => null != s ? B.JL(s, en.Z, ei.Z, false) : null != n && B.h_(et.ZP.getChannels(n), en.Z, ei.Z).length > 0),
+    [y] = (0, N.Z)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != _ ? _.applicationId : true) ? t : ""]),
     x = (0, u.e7)([R.Z], () => R.Z.getFakeGameData()),
     S = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     Z = (0, E.Z)() && null != S && (0, j.R)(),
@@ -500,7 +500,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       canStartAuthorization: q,
       connectionApp: Q,
       startAuthorization: ed
-    } = (0, P.FG)(O, {
+    } = (0, P.FG)(y, {
       allowedFlows: [P.ro.RPC]
     }),
     {
@@ -515,7 +515,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     {
       parentAnalyticsLocation: eb
     } = (0, I.ZP)(),
-    ey = (0, c.O)(e => {
+    eO = (0, c.O)(e => {
       if (e && null != Q) {
         var t;
         eu.default.track(e_.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED, {
@@ -532,11 +532,11 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     frame: _,
     userId: o,
     runningGame: null != x ? x : a,
-    application: O,
+    application: y,
     useReducedMotion: m,
     isStreaming: D,
     channel: p,
-    canStream: y,
+    canStream: O,
     stream: f,
     streamMetadata: g,
     channelName: L,
@@ -550,7 +550,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     accountLinkExperimentEnabled: em,
     parentAnalyticsLocation: eb,
     canStartAuthorization: q,
-    accountLinkButtonRef: ey,
+    accountLinkButtonRef: eO,
     startAuthorization: ed
   }))
 })

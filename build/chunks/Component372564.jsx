@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ function b(e) {
 function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk647438.Component {
+class O extends Chunk647438.Component {
   render() {
     let {
       channel: e
@@ -121,4 +121,4 @@ class y extends Chunk647438.Component {
     })
   }
 }
-let O = y
+let y = O

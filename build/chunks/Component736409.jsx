@@ -23,8 +23,8 @@ let _ = e => {
     children: t,
     isForceShowSharingPopout: n,
     setIsForceShowSharingPopout: _,
-    popoutTargetRef: y
-  } = e, O = function(e) {
+    popoutTargetRef: O
+  } = e, y = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
@@ -59,11 +59,11 @@ let _ = e => {
       } = e, a = i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n;
       return (0, r.jsx)(f.I, {
         showPopout: a,
-        popoutState: O,
+        popoutState: y,
         handleClose: () => {
           l(m.L.USER_DISMISS), _(false)
         },
-        popoutTargetRef: y,
+        popoutTargetRef: O,
         children: t
       })
     }

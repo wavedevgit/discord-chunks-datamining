@@ -67,7 +67,7 @@ function E(e) {
       className: x.messageContainer,
       onKeyDown: m
     }, g), l = l = {
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(O.Z, {
         className: x.jumpButton,
         onJump: e => h(e, s.id)
       }), (0, r.jsx)(f.Z, {
@@ -106,11 +106,11 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), y = g.jU.useSetting(), C = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), O = g.jU.useSetting(), C = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
-      n = i.messages.slice(0, O.hC);
+      n = i.messages.slice(0, y.hC);
     n.forEach(n => {
       if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, _.vc)(n.timestamp, "LL");
@@ -123,12 +123,12 @@ function S(e) {
       t = n, S = S || (0, p.DQ)(n), N.push((0, r.jsx)(E, {
         channel: l,
         message: n,
-        compact: y,
+        compact: O,
         isGroupStart: i,
         treatSpam: !P && f && (0, p.DQ)(n) && C,
         gotoChannel: a
       }, n.id))
-    }), i.messages.length >= O.hC && N.push((0, r.jsxs)(s.zx, {
+    }), i.messages.length >= y.hC && N.push((0, r.jsxs)(s.zx, {
       color: s.zx.Colors.LINK,
       look: s.zx.Looks.LINK,
       onClick: e => a(e, n[n.length - 1].id),

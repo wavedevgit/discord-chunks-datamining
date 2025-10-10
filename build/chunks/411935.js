@@ -1,8 +1,8 @@
 /** Chunk was on 77033 **/
 /** chunk id: 411935, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => d,
-  Y: () => o
+  Y: () => o,
+  m: () => d
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -11,7 +11,7 @@ var Chunk544891 = require("./544891.js"),
 async function o(e) {
   try {
     var t;
-    r.Z.dispatch({
+    l.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD",
       guildId: e
     });
@@ -20,27 +20,28 @@ async function o(e) {
       rejectWithError: true
     });
     if (null == n.body || !n.ok) throw Error("Failed to fetch social layer storefront");
-    let o = (0, l.Uc)(n.body);
-    r.Z.dispatch({
+    let o = (0, r.Uc)(n.body);
+    l.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS",
       guildId: e,
       storefront: o
-    }), r.Z.dispatch({
+    }), l.Z.dispatch({
       type: "STORE_LISTINGS_FETCH_SUCCESS",
       storeListings: null != (t = n.body.store_listings) ? t : []
     })
   } catch (t) {
-    r.Z.dispatch({
+    l.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE",
       guildId: e
     })
   }
 }
 
-function d(e, t) {
-  r.Z.dispatch({
-    type: "SOCIAL_LAYER_STOREFRONT_SELECT_PAGE",
+function d(e, t, n) {
+  l.Z.dispatch({
+    type: "SET_SOCIAL_LAYER_STOREFRONT_STATE",
     guildId: e,
-    pageIndex: t
+    pageIndex: t,
+    skuId: n
   })
 }

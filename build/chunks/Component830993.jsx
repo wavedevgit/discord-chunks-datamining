@@ -37,7 +37,7 @@ function P(e) {
     onAction: f,
     voiceStates: g,
     isChannelSelected: b,
-    shouldShowSettingNudge: y
+    shouldShowSettingNudge: O
   } = e, v = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
@@ -78,7 +78,7 @@ function P(e) {
       className: S.headerDivider
     }), x.map((e, t) => {
       var n;
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(y.Z, {
         embeddedApp: e,
         presenceActivity: null != (n = e.presenceActivity) ? n : true,
         channel: o,
@@ -89,13 +89,13 @@ function P(e) {
         members: n,
         activity: i
       } = e;
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(y.Z, {
         presenceActivity: i,
         channel: o,
         members: n,
         onAction: f
       }, t)
-    }), y && (0, r.jsxs)(r.Fragment, {
+    }), O && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: S.headerDivider
       }), (0, r.jsx)("div", {
@@ -155,7 +155,7 @@ function N(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(C.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
+  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(C.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, O.ZP)({
     channel: t,
     locked: l,
     video: s,

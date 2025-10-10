@@ -24,12 +24,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk445202 = require("./445202.js");
-let C = {
+let S = {
     cozy: 0,
     default: 0,
     compact: 0
   },
-  S = {
+  C = {
     cozy: 36,
     default: 24,
     compact: 14
@@ -63,7 +63,7 @@ function N(e) {
     badgeType: R
   } = (0, O.h6)({
     isSelected: j
-  }), D = (0, m.isDesktop)() && x, k = (0, h.A)(), M = (0, m.isMac)() ? C[k] : D ? S[k] : T[k];
+  }), D = (0, m.isDesktop)() && x, k = (0, h.A)(), M = (0, m.isMac)() ? S[k] : D ? C[k] : T[k];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",

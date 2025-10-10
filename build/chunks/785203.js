@@ -32,12 +32,12 @@ function b(e) {
     } = (0, c.s)(e),
     y = E.length > 0,
     I = v && !(null == e ? true : e.features.has(g.oNc.HUB)),
-    C = (0, s.Vm)(n);
+    S = (0, s.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)
     }, [n]), r) return 0;
   if (m) return 1;
-  if (b || null != C) return 2;
+  if (b || null != S) return 2;
   if (_) return 3;
   if (O) return 4;
   else if (y) return 5;

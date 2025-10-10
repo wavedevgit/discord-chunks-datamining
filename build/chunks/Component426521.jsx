@@ -137,12 +137,12 @@ let G = Chunk647438.memo(function(e) {
         }, t))
       });
       if (null != l.deeplink) {
-        let t = O.Z.safeParseWithQuery(l.deeplink);
+        let t = y.Z.safeParseWithQuery(l.deeplink);
         if (null == t) return;
         let n = t.hostname,
           r = t.path;
         if (null == n || null == r) return;
-        if (O.Z.isDiscordHostname(n)) {
+        if (y.Z.isDiscordHostname(n)) {
           let t = r.match("^/users/(\\d+)");
           if (null != t && 2 === t.length) {
             var e;
@@ -211,7 +211,7 @@ let G = Chunk647438.memo(function(e) {
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: h ? "text-muted" : "header-secondary",
-            children: (0, x.a3)(y.default.extractTimestamp(l.id))
+            children: (0, x.a3)(O.default.extractTimestamp(l.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.z, {

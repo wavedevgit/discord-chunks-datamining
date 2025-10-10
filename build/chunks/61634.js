@@ -33,7 +33,7 @@ function E(e, t) {
 
 function S(e) {
   var t;
-  let n = (0, i.e7)([O.ZP], () => O.ZP.isMuted(e)),
+  let n = (0, i.e7)([y.ZP], () => y.ZP.isMuted(e)),
     r = x.Z.useConfig({
       location: "useGuildMediaState"
     }).enabled,
@@ -46,9 +46,9 @@ function S(e) {
       guildHasVoice: Z,
       guildHasVideo: w,
       selectedVoiceChannelHasVideo: T
-    } = (0, i.cj)([y.Z, v.Z, m.Z, b.Z, g.Z], () => {
+    } = (0, i.cj)([O.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
-      let n = y.Z.getVoiceChannelId(),
+      let n = O.Z.getVoiceChannelId(),
         r = null == (t = m.Z.getGuild(e)) ? true : t.afkChannelId,
         i = v.Z.getUsersWithVideo(e),
         l = (0, s.DX)(v.Z.getVoiceStates(e));
@@ -71,20 +71,20 @@ function S(e) {
       }
     }, [e, C]),
     A = f.default.getId();
-  return (0, i.cj)([y.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
+  return (0, i.cj)([O.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
     var t, n, r;
-    let i = y.Z.getVoiceChannelId(),
+    let i = O.Z.getVoiceChannelId(),
       l = (null == (t = g.Z.getChannel(i)) ? true : t.guild_id) === e,
       c = false,
       f = false,
       m = false,
       _ = false,
-      O = false,
+      y = false,
       v = false;
     if (!l && C) return {
       audio: c,
       video: _,
-      screenshare: O,
+      screenshare: y,
       liveStage: m,
       activeEvent: f,
       activity: v,
@@ -107,10 +107,10 @@ function S(e) {
         returnfalse
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, _ = D, O = P, v = M) : (c = Z, f = null != S, m = x, _ = w, O = R, v = L), {
+    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, f = null != S, m = x, _ = w, y = R, v = L), {
       audio: c,
       video: _,
-      screenshare: O,
+      screenshare: y,
       liveStage: m,
       activeEvent: f,
       activity: v,

@@ -82,7 +82,7 @@ let F = e => {
       er = (0, P.N)(),
       ei = (0, j.Ng)(),
       el = (0, N.$)(),
-      ea = (0, C.W)(),
+      ea = (0, S.W)(),
       eo = (0, I.Vi)(),
       es = (0, A.HI)({
         trialOffer: er
@@ -102,7 +102,7 @@ let F = e => {
         showAfterTimestamp: eh.valueOf(),
         cooldownDurationMs: 0
       }),
-      e_ = (0, S.Z)({
+      e_ = (0, C.Z)({
         location: "NitroTabButton"
       }),
       eO = (null == er ? true : er.trial_id) === G.a7,
@@ -113,19 +113,19 @@ let F = e => {
       ey = [],
       eI = [];
     (0, h.Kl)() && (eo && ey.push(o.z.BOGO_2025_NITRO_TAB_BADGE), e_ && ey.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ea && ey.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eE && ey.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), ev && ey.push(o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
-    let [eC, eS] = (0, m.US)(ey, true, true);
+    let [eS, eC] = (0, m.US)(ey, true, true);
     ep && eI.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
     let [eT, eN] = (0, m.US)(eI, true, true);
     if (i.useEffect(() => {
-        true === Y && null != eC && eS(H.L.AUTO_DISMISS), true === Y && null != eT && eN(H.L.AUTO_DISMISS)
-      }, [eS, Y, eC, eN, eT]), !F({
+        true === Y && null != eS && eC(H.L.AUTO_DISMISS), true === Y && null != eT && eN(H.L.AUTO_DISMISS)
+      }, [eC, Y, eS, eN, eT]), !F({
         selected: Y
       })) return null;
     let ej = () => {
       em === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eb(H.L.TAKE_ACTION), E.default.track(B.rMx.NITRO_TAB_VISITED, {
         badge_decorator: y,
         has_premium: ee
-      }), null != eC && eS(H.L.USER_DISMISS)
+      }), null != eS && eC(H.L.USER_DISMISS)
     };
     if (ef === G.a$.NONE || ea || (y = 7, n = (0, r.jsx)(T.Z, {
         className: "",
@@ -141,7 +141,7 @@ let F = e => {
         badgeCopy: V.intl.string(V.t.OS9KPj),
         offerExpiresAt: true === e ? null == er ? true : er.expires_at : null
       }), y = 4
-    } else eC === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || eC === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE || eC === o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(L._y, {
+    } else eS === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || eS === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE || eS === o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(L._y, {
       isTabSelected: Y,
       badgeCopy: V.intl.string(V.t.y2b7CA),
       offerExpiresAt: null

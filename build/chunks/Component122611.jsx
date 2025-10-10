@@ -36,7 +36,7 @@ function j(e) {
   var t;
   let {
     guild: n
-  } = e, [p, h] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
+  } = e, [p, h] = i.useState(null != (t = o.K.get(S.Iv)) ? t : 0), g = (0, l.Wu)(S.HG, () => S.XN.filter(e => {
     let {
       dismissibleContentType: t,
       store: r
@@ -45,14 +45,14 @@ function j(e) {
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
     contentTypes: g,
-    groupName: S.R.CHANNEL_NOTICES,
+    groupName: C.R.CHANNEL_NOTICES,
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: i
       } = e, l = () => {
         var e;
-        e = Date.now(), o.K.set(C.Iv, e), h(e), i(S.L.UNKNOWN)
+        e = Date.now(), o.K.set(S.Iv, e), h(e), i(C.L.UNKNOWN)
       }, c = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
@@ -83,7 +83,7 @@ function j(e) {
           case a.z.LINKED_ROLE_ADMIN_GUILD:
             return (0, r.jsx)(s.Z, {
               guild: n,
-              markAsDismissed: () => i(S.L.UNKNOWN)
+              markAsDismissed: () => i(C.L.UNKNOWN)
             });
           default:
             return null

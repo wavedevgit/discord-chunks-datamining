@@ -83,10 +83,10 @@ function N(e) {
         giftMessage: D()
       })
     },
-    D = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
+    D = () => n === y.hX.FRIEND_ANNIVERSARY ? S.intl.formatToPlainString(S.t["L2s/Nz"], {
       numberOfYears: O.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
-    k = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
+    k = () => n === y.hX.FRIEND_ANNIVERSARY ? S.intl.string(S.t["4LohBA"]) : (0, b.Ou)(n),
     M = i.useRef(null);
   return (0, r.jsx)(u.yRy, {
     targetElementRef: M,
@@ -116,15 +116,15 @@ function N(e) {
       innerRef: M,
       "aria-label": k(),
       onClick: R,
-      className: a()(T.actionButton, S.popoutButton, {
+      className: a()(T.actionButton, C.popoutButton, {
         [T.highlight]: N
       }),
       onMouseEnter: L,
       onMouseLeave: Z,
       children: (0, r.jsx)(o.animated.div, {
-        className: S.spriteContainer,
+        className: C.spriteContainer,
         children: (0, r.jsx)("div", {
-          className: S.sprite
+          className: C.sprite
         })
       })
     }) : (0, r.jsx)(c.zx, {
@@ -134,7 +134,7 @@ function N(e) {
       onMouseEnter: L,
       onMouseLeave: Z,
       children: (0, r.jsxs)("div", {
-        className: S.pillContentContainer,
+        className: C.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {
           size: "custom",
           width: 14,
@@ -143,7 +143,7 @@ function N(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
           color: "always-white",
-          className: S.pillButtonText,
+          className: C.pillButtonText,
           children: k()
         })]
       })

@@ -1,12 +1,12 @@
-/** Chunk was on 77033 **/
+/** Chunk was on 32118 **/
 /** chunk id: 210218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
-var a, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function i(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,30 +15,30 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      i(e, t, n[t])
+    }))), r.forEach(function(t) {
+      o(e, t, n[t])
     })
   }
   return e
 }
-let d = {},
+let s = {},
   c = {};
-class s extends(a = Chunk442837.ZP.Store) {
+class u extends(r = Chunk442837.ZP.Store) {
   getStorefrontData(e) {
     return c[e]
   }
   getStorefrontState(e) {
-    return d[e]
+    return s[e]
   }
 }
-i(s, "displayName", "SocialLayerStorefrontStore");
-let u = new s(Chunk570140.Z, {
+o(u, "displayName", "SocialLayerStorefrontStore");
+let d = new u(Chunk570140.Z, {
   SOCIAL_LAYER_STOREFRONT_LOAD: function(e) {
     let {
       guildId: t
@@ -47,7 +47,7 @@ let u = new s(Chunk570140.Z, {
       storefront: null,
       loading: true,
       error: false
-    }, c = o({}, c)
+    }, c = a({}, c)
   },
   SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: function(e) {
     let {
@@ -58,7 +58,7 @@ let u = new s(Chunk570140.Z, {
       storefront: n,
       loading: false,
       error: false
-    }, c = o({}, c)
+    }, c = a({}, c)
   },
   SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: function(e) {
     let {
@@ -68,28 +68,17 @@ let u = new s(Chunk570140.Z, {
       storefront: null,
       loading: false,
       error: true
-    }, c = o({}, c)
+    }, c = a({}, c)
   },
-  SOCIAL_LAYER_STOREFRONT_SELECT_PAGE: function(e) {
-    var t;
+  SET_SOCIAL_LAYER_STOREFRONT_STATE: function(e) {
     let {
-      guildId: n,
-      pageIndex: a
-    } = e;
-    d[n] = {
-      activePage: a,
-      activeSkuId: null == (t = d[n]) ? true : t.activeSkuId
-    }
-  },
-  SOCIAL_LAYER_STOREFRONT_SELECT_SKU: function(e) {
-    var t, n;
-    let {
-      guildId: a,
+      guildId: t,
+      pageIndex: n,
       skuId: r
     } = e;
-    d[a] = {
-      activePage: null != (n = null == (t = d[a]) ? true : t.activePage) ? n : 0,
+    s[t] = {
+      activePage: n,
       activeSkuId: r
-    }
+    }, s = a({}, s)
   }
 })

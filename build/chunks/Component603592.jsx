@@ -22,8 +22,8 @@ let h = Chunk647438.forwardRef(function(e, t) {
     icon: m,
     selected: b,
     tooltip: _,
-    upperBadge: y,
-    lowerBadge: O,
+    upperBadge: O,
+    lowerBadge: y,
     lowerBadgeSize: v,
     showPill: j = true,
     className: x,
@@ -45,8 +45,8 @@ let h = Chunk647438.forwardRef(function(e, t) {
       selected: b,
       children: (0, r.jsx)(s.aRk, {
         selected: true,
-        upperBadge: y,
-        lowerBadge: O,
+        upperBadge: O,
+        lowerBadge: y,
         lowerBadgeSize: v,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {

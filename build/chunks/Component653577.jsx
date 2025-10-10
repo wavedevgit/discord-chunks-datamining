@@ -25,10 +25,10 @@ function _(e) {
     connected: n,
     hovered: l,
     subtitle: _,
-    onClick: y,
-    enableHangStatus: O,
+    onClick: O,
+    enableHangStatus: y,
     showEmptyChannelTopic: v
-  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!O || !!v) && C, S = null != _ && _.length > 0;
+  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!y || !!v) && C, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
       x && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
@@ -38,7 +38,7 @@ function _(e) {
   let I = o()(m.statusDiv, n && E ? m.hoverable : null);
   return x ? (0, r.jsx)(s.P3F, {
     className: I,
-    onClick: E ? y : true,
+    onClick: E ? O : true,
     children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
@@ -50,7 +50,7 @@ function _(e) {
     })
   }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
     className: I,
-    onClick: y,
+    onClick: O,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,

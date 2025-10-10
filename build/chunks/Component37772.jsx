@@ -123,7 +123,7 @@ let B = Chunk647438.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, O.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, y.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
     className: M,
     compact: R,
     count: 1,
@@ -131,7 +131,7 @@ let B = Chunk647438.memo(function e(t) {
   }) : (0, r.jsx)(C.Z, {
     compact: R,
     className: o()(M, {
-      [k.ephemeral]: (0, y.Pv)(s),
+      [k.ephemeral]: (0, O.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
     }),

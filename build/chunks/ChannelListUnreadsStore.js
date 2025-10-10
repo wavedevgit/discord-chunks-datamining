@@ -50,7 +50,7 @@ function N(e) {
 }
 
 function Z(e) {
-  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : y.ZP.getVoiceStatesForChannel(e).length > 0)
+  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : O.ZP.getVoiceStatesForChannel(e).length > 0)
 }
 
 function w(e) {
@@ -68,23 +68,23 @@ function w(e) {
     h = false,
     f = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
     g = null != (n = null == f ? true : f.getShownChannelIds()) ? n : [],
-    [b, _, y] = i.getSlicedChannels(l);
+    [b, _, O] = i.getSlicedChannels(l);
   for (let e = 0; e < _.length; e++) {
     let t = _[e];
     if ((P(t.id) || a().some(t.threadIds, P)) && (p = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (h = true), !p && !d && h) break
   }
-  let O = 0,
+  let y = 0,
     j = false,
     x = 0,
     E = false;
   if (p || d)
     for (let e = b.length - 1; e >= 0; e--) {
       let t = b[e];
-      (P(t.id) || a().some(t.threadIds, P)) && (null == s && (s = t.id), j = true), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), O += m.ZP.getMentionCount(t.id), O += a().sumBy(t.threadIds, m.ZP.getMentionCount))
+      (P(t.id) || a().some(t.threadIds, P)) && (null == s && (s = t.id), j = true), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), y += m.ZP.getMentionCount(t.id), y += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   if (p || d)
-    for (let e = 0; e < y.length; e++) {
-      let t = y[e];
+    for (let e = 0; e < O.length; e++) {
+      let t = O[e];
       if (!p && !d) break;
       (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), x += m.ZP.getMentionCount(t.id), x += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
@@ -103,9 +103,9 @@ function w(e) {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
-  }), d && O > 0 ? T = {
+  }), d && y > 0 ? T = {
     mode: "mentions",
-    mentionCount: O,
+    mentionCount: y,
     targetChannelId: o
   } : p && j && (T = {
     mode: "unread",
@@ -193,7 +193,7 @@ let G = new k(Chunk570140.Z, {
         channelId: n
       } = e;
       return null == (t = f.Z.getChannel(n)) ? true : t.guild_id
-    }).filter(O.lm).uniq().forEach(e => {
+    }).filter(y.lm).uniq().forEach(e => {
       let t = g.Z.getGuild(e);
       null != t && t.features.has(j.oNc.COMMUNITY) && T(e) && (n = true)
     }), n

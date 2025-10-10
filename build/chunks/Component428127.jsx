@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,7 +61,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     position: t,
     guildChannels: n,
@@ -70,17 +70,17 @@ function y(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: h,
-    topBar: y
-  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
+    topBar: O
+  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
     mode: v,
     mentionCount: j,
     targetChannelId: x
-  } = "bottom" === t ? h : y, C = v === f.x.HIDDEN, E = (0, c.q_F)({
+  } = "bottom" === t ? h : O, C = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, O ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
+  }, y ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != x && d(x)
   }, [d, x]);
   return (0, r.jsx)("div", {

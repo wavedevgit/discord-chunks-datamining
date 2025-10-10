@@ -1,16 +1,16 @@
 /** Chunk was on 77033 **/
 /** chunk id: 594914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => l
+  P: () => r
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
 
-function l(e, t) {
+function r(e, t) {
   let {
-    isGift: l
+    isGift: r
   } = t;
-  (0, r.ZDy)(async () => {
+  (0, l.ZDy)(async () => {
     let {
       default: t
     } = await n.e("45227").then(n.bind(n, 556266));
@@ -35,7 +35,7 @@ function l(e, t) {
       skuId: e.id,
       applicationId: e.applicationId,
       analyticsLocations: [],
-      isGift: l
+      isGift: r
     }, n))
   }, {
     modalKey: "slayers-payment-modal"

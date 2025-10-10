@@ -142,8 +142,8 @@ class Y extends Chunk98597.ZP {
       isSubscriptionGated: m,
       needSubscriptionToAccess: b,
       unread: _,
-      resolvedUnreadSetting: y,
-      mentionCount: O,
+      resolvedUnreadSetting: O,
+      mentionCount: y,
       isFavoriteSuggestion: v
     } = this.props, {
       shouldShowGuildVerificationPopout: j
@@ -214,13 +214,13 @@ class Y extends Chunk98597.ZP {
       } = this.props, i = e.getGuildId();
       null != i && (0, b.n)(i) && (0, m.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: true
-      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, O.Kh)(e.id)
+      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
     }), z(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
-      __OVERLAY__ || t || (0, O.Kh)(e.id)
+      __OVERLAY__ || t || (0, y.Kh)(e.id)
     }), z(this, "handleContextMenu", e => {
       let {
         channel: t
@@ -240,8 +240,8 @@ class Y extends Chunk98597.ZP {
       } = this.props, {
         shouldShowGuildVerificationPopout: t
       } = this.state;
-      if (t) return (0, r.jsx)(y.Z, {
-        type: y.R.VOICE,
+      if (t) return (0, r.jsx)(O.Z, {
+        type: O.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -309,14 +309,14 @@ function X(e) {
   }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), f = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
-  } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, M.Z)({
+  } = (0, _.Z)(n.id), O = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), v = (0, M.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,
     voiceStates: s,
     isSubscriptionGated: m,
     needSubscriptionToAccess: b,
-    enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < U.xGv
+    enableConnectedUserLimit: y || n.userLimit > 0 && n.userLimit < U.xGv
   }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: p,
@@ -326,7 +326,7 @@ function X(e) {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   }, c, d, e), {
-    isFavoriteSuggestion: l && !y,
+    isFavoriteSuggestion: l && !O,
     forceShowButtons: N,
     channelInfo: v,
     resolvedUnreadSetting: u

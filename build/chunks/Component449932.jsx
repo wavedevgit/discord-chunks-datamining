@@ -36,7 +36,7 @@ function v(e) {
     children: (0, r.jsx)(s.qEK, {
       src: null != c ? c : i.user.getAvatarURL(n, 16),
       size: s.EFr.SIZE_16,
-      className: l()(o, O.partyAvatar),
+      className: l()(o, y.partyAvatar),
       "aria-label": null != (t = i.nick) ? t : _.ZP.getName(i.user)
     })
   })
@@ -48,7 +48,7 @@ function j(e) {
     guildId: n
   } = e;
   return (0, r.jsx)(h.Z, {
-    className: O.partyMembers,
+    className: y.partyMembers,
     guildId: n,
     users: t,
     max: 6,
@@ -58,7 +58,7 @@ function j(e) {
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: l()(O.morePartyMembers, t),
+      className: l()(y.morePartyMembers, t),
       children: e
     }, n)
   })
@@ -81,10 +81,10 @@ let x = e => {
   let _ = s || (0, u.Z)(n),
     v = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
-    className: O.activity,
+    className: y.activity,
     children: [(0, r.jsx)("div", {
-      className: O.channelActivityContainer,
-      children: _ ? (0, r.jsx)(y.Z, {
+      className: y.channelActivityContainer,
+      children: _ ? (0, r.jsx)(O.Z, {
         activity: n,
         embeddedApp: l,
         user: b,
@@ -105,7 +105,7 @@ let x = e => {
         }) : true
       })
     }), (0, r.jsx)("div", {
-      className: O.activityActionsContainer,
+      className: y.activityActionsContainer,
       children: (0, r.jsx)(d.Z, {
         type: c.P.VOICE_CHANNEL,
         activity: n,

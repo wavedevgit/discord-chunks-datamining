@@ -37,21 +37,21 @@ function T(e) {
     splash: null == t ? true : t.splash
   }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), o = (0, u.N)(a);
   return null == a ? (0, r.jsx)("div", {
-    className: S.defaultGradient
+    className: C.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
-      className: S.splash,
+      className: C.splash,
       src: a,
-      imageClassName: S.cover,
+      imageClassName: C.cover,
       width: n,
       height: l
     }), null != o && (0, r.jsx)("div", {
-      className: S.splashGradient,
+      className: C.splashGradient,
       style: {
         background: "linear-gradient(180deg, ".concat((0, h.aD)(o, .16), " 0%, ").concat((0, h.aD)(o, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
-      className: S.splashGradient
+      className: C.splashGradient
     })]
   })
 }
@@ -98,10 +98,10 @@ let N = e => {
           }
           return e
         }({
-          header: C.intl.string(C.t.y0CVen),
-          cancelText: C.intl.string(C.t.oEAioK),
+          header: S.intl.string(S.t.y0CVen),
+          cancelText: S.intl.string(S.t.oEAioK),
           onConfirm: t,
-          confirmText: C.intl.string(C.t.p89ACg),
+          confirmText: S.intl.string(S.t.p89ACg),
           confirmButtonColor: a.zx.Colors.RED
         }, n), l = l = {
           children: (0, r.jsx)(o.Text, {
@@ -123,20 +123,20 @@ let N = e => {
     },
     w = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = Z(C.intl.format(C.t["9ZezpK"], {
+    }, L = Z(S.intl.format(S.t["9ZezpK"], {
       name: null == x ? true : x.name
-    }), A), R = Z(C.intl.format(C.t.fJwWVl, {
+    }), A), R = Z(S.intl.format(S.t.fJwWVl, {
       name: null == x ? true : x.name
     }), A);
   return (0, r.jsxs)("div", {
-    className: S.page,
+    className: C.page,
     ref: n,
     children: [(0, r.jsx)(T, {
       guild: x,
       height: u,
       width: c
     }), (0, r.jsx)("div", {
-      className: S.contentWrapper,
+      className: C.contentWrapper,
       children: (() => {
         if (null == N) return null;
         switch (N.applicationStatus) {
@@ -147,9 +147,9 @@ let N = e => {
             });
           case b.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
-              reapplyText: C.intl.string(C.t.I1LYVl),
+              reapplyText: S.intl.string(S.t.I1LYVl),
               onReapply: w,
-              confirmText: C.intl.string(C.t.g9tK0t),
+              confirmText: S.intl.string(S.t.g9tK0t),
               onWithdrawApplication: L,
               rejectionReason: N.rejectionReason,
               guild: x
@@ -163,7 +163,7 @@ let N = e => {
         }
       })()
     }), (0, r.jsx)("div", {
-      className: S.dragRegion
+      className: C.dragRegion
     })]
   })
 }

@@ -16,11 +16,11 @@ function d(e) {
     guildId: n,
     sectionTitle: d,
     skuIds: c,
-    variant: s = l.Z.SMALL
+    variant: s = r.Z.SMALL
   } = e;
   return null == c || 0 === c.length ? null : (0, a.jsxs)("div", {
     className: o.sectionContainer,
-    children: [null != d && (0, a.jsx)(r.Heading, {
+    children: [null != d && (0, a.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       lineClamp: 1,

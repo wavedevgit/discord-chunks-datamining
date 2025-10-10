@@ -23,8 +23,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     header: l,
     artClassName: b,
     headerClassName: _,
-    contentClassName: y,
-    tryItText: O,
+    contentClassName: O,
+    tryItText: y,
     dismissText: v,
     onTryFeature: j,
     onClose: x,
@@ -68,7 +68,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
     className: C,
     ref: t,
     children: (0, r.jsxs)("div", {
-      className: o()(m.content, y, {
+      className: o()(m.content, O, {
         [m.contentNoArt]: null == b || E,
         [m.contentPremium]: S || A
       }),
@@ -120,7 +120,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
               null == x || x(e), j(e), W(f.L.PRIMARY)
             },
             color: null != U ? U : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
-            children: null != O ? O : g.intl.string(g.t.IHf1RE)
+            children: null != y ? y : g.intl.string(g.t.IHf1RE)
           }), !D && (0, r.jsx)(a.zx, {
             className: m.button,
             size: B,

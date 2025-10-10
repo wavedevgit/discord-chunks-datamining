@@ -122,7 +122,7 @@ function A(e) {
     R || k(!D)
   }, [R, D]);
   return (0, v.yp)({
-    event: S.CkL.TOGGLE_SOUNDBOARD,
+    event: C.CkL.TOGGLE_SOUNDBOARD,
     handler: K
   }), (0, r.jsx)(g.Gt, {
     value: H,
@@ -140,7 +140,7 @@ function A(e) {
           let {
             closePopout: n
           } = e;
-          return (0, r.jsx)(C.Z, {
+          return (0, r.jsx)(S.Z, {
             guildId: M,
             channel: t,
             onClose: n,

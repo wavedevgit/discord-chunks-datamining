@@ -586,9 +586,9 @@ class ef extends Chunk647438.PureComponent {
         sku: n,
         pageSize: i
       } = this.props;
-      return null == e || null == n || null == t || t.isSlimDirectoryVersion() ? (0, r.jsx)(C.Z, {
-        align: C.Z.Align.CENTER,
-        justify: C.Z.Justify.CENTER,
+      return null == e || null == n || null == t || t.isSlimDirectoryVersion() ? (0, r.jsx)(S.Z, {
+        align: S.Z.Align.CENTER,
+        justify: S.Z.Justify.CENTER,
         children: (0, r.jsx)(p.$jN, {})
       }) : i === el.b.SMALL ? this.renderSmall(e, t, n) : this.renderLarge(e, t, n)
     })

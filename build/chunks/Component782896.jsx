@@ -63,8 +63,8 @@ function m(e) {
   } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), a = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), m = (0, i.useMemo)(() => a.filter(e => null != e), [a]), {
     visibleGuilds: b,
     numTruncated: _,
-    visibleGuildsTooltip: y,
-    numTruncatedTooltipGuilds: O
+    visibleGuildsTooltip: O,
+    numTruncatedTooltipGuilds: y
   } = (0, i.useMemo)(() => {
     let e = [...m];
     if (null != n) {
@@ -86,8 +86,8 @@ function m(e) {
   return (0, r.jsx)(o.jSM, {
     "aria-label": p.intl.string(d.default.TG0Qsb),
     text: (0, r.jsx)(g, {
-      guilds: y,
-      numTruncated: O
+      guilds: O,
+      numTruncated: y
     }),
     position: "top",
     children: (0, r.jsxs)("div", {

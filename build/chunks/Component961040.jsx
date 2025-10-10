@@ -26,16 +26,16 @@ function b(e) {
     targetElementRef: h,
     spacing: b = 0
   } = e, {
-    isOpen: y,
-    setIsOpen: O
+    isOpen: O,
+    setIsOpen: y
   } = (0, p.Z)(), v = i.useCallback(() => {
-    O(false)
-  }, [O]), j = i.useCallback(() => {
-    O(!y)
-  }, [y, O]);
+    y(false)
+  }, [y]), j = i.useCallback(() => {
+    y(!O)
+  }, [O, y]);
   (0, c.ZP)(() => {
     let e = () => {
-      O(false)
+      y(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
   }), i.useEffect(() => (u.S.subscribe(f.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(f.CkL.TOGGLE_INBOX, j)), [j]);
@@ -46,7 +46,7 @@ function b(e) {
   });
   return (0, r.jsx)(a.yRy, {
     targetElementRef: h,
-    shouldShow: y,
+    shouldShow: O,
     align: l,
     animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
     animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",

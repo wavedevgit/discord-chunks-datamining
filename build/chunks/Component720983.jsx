@@ -1,31 +1,32 @@
 /** Chunk was on 77033 **/
 /** chunk id: 720983, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk703656 = require("./703656.js"),
   Chunk73346 = require("./73346.js"),
-  Chunk411935 = require("./411935.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk260999 = require("./260999.js");
 
-function s(e) {
+function u(e) {
   let {
     guildId: t,
     storefront: n,
-    selectedPageIndex: r
+    selectedPageIndex: l
   } = e;
   if (null == n) return null;
-  let s = null != n.logoAssetId ? (0, o._W)(n.applicationId, n.logoAssetId, 75) : null;
+  let u = null != n.logoAssetId ? (0, d._W)(n.applicationId, n.logoAssetId, 75) : null;
   return (0, a.jsxs)("div", {
-    className: c.headerContainer,
+    className: s.headerContainer,
     children: [(0, a.jsxs)("div", {
-      className: c.titleContainer,
-      children: [null != s && (0, a.jsx)("img", {
-        className: c.logo,
-        src: s,
+      className: s.titleContainer,
+      children: [null != u && (0, a.jsx)("img", {
+        className: s.logo,
+        src: u,
         alt: n.title
       }), (0, a.jsx)(i.Text, {
         variant: "text-md/medium",
@@ -35,10 +36,10 @@ function s(e) {
       })]
     }), n.pages.map((e, n) => (0, a.jsx)(i.P3F, {
       onClick: () => {
-        (0, d.K)(t, n)
+        (0, o.uL)(c.Z5c.CHANNELS_GAME_SHOP(t, n))
       },
-      className: l()(c.pageTitleContainer, {
-        [c.selectedPageIndicator]: r === n
+      className: r()(s.pageTitleContainer, {
+        [s.selectedPageIndicator]: l === n
       }),
       children: (0, a.jsx)(i.Heading, {
         variant: "heading-md/semibold",

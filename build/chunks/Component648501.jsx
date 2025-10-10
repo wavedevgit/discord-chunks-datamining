@@ -54,7 +54,7 @@ function N(e) {
     var e, t;
     return null != (t = null == (e = f.Z.getGuild(n.guild_id)) ? true : e.features.has(E.oNc.COMMUNITY)) && t
   });
-  if ((0, O.Z)(G)) return (0, r.jsx)(C.Z, {
+  if ((0, y.Z)(G)) return (0, r.jsx)(C.Z, {
     mentionsCount: G,
     isMentionLowImportance: U
   });
@@ -91,7 +91,7 @@ function N(e) {
     entry: {
       start: F
     }
-  }) : null != A && A && (0, y.u)(B) ? (0, r.jsx)(j.Z, {
+  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(j.Z, {
     embeddedApps: B,
     muted: M
   }) : null

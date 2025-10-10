@@ -164,13 +164,13 @@ let k = Chunk647438.memo(function(e) {
     unread: U,
     mentionCount: B,
     isMentionLowImportance: V
-  } = (0, s.cj)([y.ZP], () => ({
-    unread: y.ZP.hasUnread(t.id),
-    mentionCount: y.ZP.getMentionCount(t.id),
-    isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
+  } = (0, s.cj)([O.ZP], () => ({
+    unread: O.ZP.hasUnread(t.id),
+    mentionCount: O.ZP.getMentionCount(t.id),
+    isMentionLowImportance: O.ZP.getIsMentionLowImportance(t.id)
   })), F = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
-  }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
+  }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
     d.Z.preload(t.guild_id, t.id)

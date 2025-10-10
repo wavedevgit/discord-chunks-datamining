@@ -71,7 +71,7 @@ let x = e => {
           position: "top",
           header: (0, r.jsx)("div", {
             className: v.header,
-            children: O.intl.format(O.t["o+srEx"], {
+            children: y.intl.format(y.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
                 className: v.keybindHintKeys,
@@ -87,7 +87,7 @@ let x = e => {
             variant: "text-sm/normal",
             color: "always-white",
             className: v.bodyText,
-            children: O.intl.format(O.t.DWeRm5, {
+            children: y.intl.format(y.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
                 className: v.keyCombo,
                 children: t

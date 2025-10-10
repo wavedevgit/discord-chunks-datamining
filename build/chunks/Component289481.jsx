@@ -112,7 +112,7 @@ let S = Chunk647438.memo(function(e) {
     return (0, r.jsx)("div", {
       className: C.channel,
       children: (0, r.jsx)(d.y5t, {
-        component: (0, r.jsxs)(y.Z, {
+        component: (0, r.jsxs)(O.Z, {
           channel: a,
           gotoChannel: s,
           mentionCount: t.mentionCount,
@@ -126,7 +126,7 @@ let S = Chunk647438.memo(function(e) {
           channel: t,
           channelRecord: a,
           gotoChannel: s
-        }) : "forum" === t.type ? (0, r.jsx)(O.Z, {
+        }) : "forum" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
           channelRecord: a,
           deleteChannel: l

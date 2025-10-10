@@ -92,8 +92,8 @@ async function et(e) {
     gameName: v,
     gameId: y,
     exe: I,
-    distributor: C
-  } = (0, O.G8)(a), S = (0, j.NW)("ChatAutoAnalytics", false), P = d.enabledLegacy || S && d.enabledOOP, Z = T.v.legacyEnabled || S && T.v.oopEnabled, L = d.source;
+    distributor: S
+  } = (0, O.G8)(a), C = (0, j.NW)("ChatAutoAnalytics", false), P = d.enabledLegacy || C && d.enabledOOP, Z = T.v.legacyEnabled || C && T.v.oopEnabled, L = d.source;
   K.default.track(J.rMx.LAUNCH_GAME, {
     game: v,
     game_id: y,
@@ -102,7 +102,7 @@ async function et(e) {
     is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
     game_platform: J.M7m.DESKTOP,
     detection_method: s,
-    distributor: C,
+    distributor: S,
     is_overlay_enabled: Z,
     is_overlay_game_enabled: P,
     is_overlay_game_source: L,
@@ -135,8 +135,8 @@ class en extends Chunk647438.PureComponent {
       isScreenSharing: g,
       runningGame: v,
       runningGamePid: y,
-      selectedChannelId: C,
-      selectedGuildId: S,
+      selectedChannelId: S,
+      selectedGuildId: C,
       connected: T
     } = this.props;
     if (e.voiceChannelId !== o && null != e.voiceChannelId) {
@@ -193,20 +193,20 @@ class en extends Chunk647438.PureComponent {
       m = null != p ? "custom_override" : null != a ? "verified_game" : "launcher";
       let b = P.default.getTrackedGameByPid(v.pid),
         I = (0, E.b6)(v),
-        C = {
+        S = {
           enabledOOP: null != (t = null == b ? true : b.oopEnabled) ? t : I.enabledOOP,
           enabledLegacy: null != (n = null == b ? true : b.legacyEnabled) ? n : I.enabledLegacy,
           overlayMethod: null != (r = null == b ? true : b.overlayMethod) ? r : I.overlayMethod,
           source: null != (i = null == b ? true : b.source) ? i : I.source
         },
-        S = null != (l = P.default.getOverlayMethod(v.pid)) ? l : C.overlayMethod;
+        C = null != (l = P.default.getOverlayMethod(v.pid)) ? l : S.overlayMethod;
       if (setTimeout(() => {
           (v.distributor === J.GQo.ROBLOX ? this.debouncedRobloxAnalytics : et)({
             runningGame: v,
             game: a,
             detectionMethod: m,
-            overlayStatus: C,
-            overlayMethod: S,
+            overlayStatus: S,
+            overlayMethod: C,
             sharedGuildIds: g,
             voiceChannelId: o,
             voiceChannelType: u,
@@ -229,7 +229,7 @@ class en extends Chunk647438.PureComponent {
         preview_enabled: w.qF.getSetting()
       }, n, this.getGameMetadata(), (0, p.AB)(o)))
     }
-    if (T && null != C && (!e.connected || C !== e.selectedChannelId || S !== e.selectedGuildId)) {
+    if (T && null != S && (!e.connected || S !== e.selectedChannelId || C !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = L.Z.getChannel(t),
         r = k.Z.getGuild(null == n ? true : n.getGuildId());

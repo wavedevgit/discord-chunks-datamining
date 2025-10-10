@@ -2,7 +2,7 @@
 /** chunk id: 262212, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  ms: () => y
+  ms: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -49,7 +49,7 @@ function _(e) {
   return e
 }
 
-function y(e) {
+function O(e) {
   let {
     className: t,
     guildId: n,
@@ -71,7 +71,7 @@ function y(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     className: t,
     guildId: n,
@@ -108,7 +108,7 @@ function v(e) {
       onError: o,
       grow: f,
       compact: !f
-    }), s && (0, r.jsx)(y, {
+    }), s && (0, r.jsx)(O, {
       guildId: n,
       powerup: i
     })]
@@ -120,5 +120,5 @@ function j(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, s.Z)(t.guildId) ? (0, r.jsx)(v, _({}, t)) : (0, r.jsx)(O, _({}, t))
+  return (0, s.Z)(t.guildId) ? (0, r.jsx)(v, _({}, t)) : (0, r.jsx)(y, _({}, t))
 }

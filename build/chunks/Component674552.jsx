@@ -83,7 +83,7 @@ function b(e) {
     if (!c) return null;
     t = m
   }
-  return y({
+  return O({
     icon: t,
     isCurrentUserConnected: l
   })
@@ -104,13 +104,13 @@ function _(e) {
         return [true, o.vdY]
     }
   }(t);
-  return y({
+  return O({
     icon: r,
     color: n
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     icon: t,
     color: n,
