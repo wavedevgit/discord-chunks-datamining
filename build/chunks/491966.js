@@ -10,27 +10,38 @@ let r = (0, require("./427164.js").le)({
   defaultConfig: {
     settings_updates: true,
     power_events: true,
+    system_wide_input: true,
     generic_inputs: false
   },
   variations: {
     1: {
       settings_updates: false,
       power_events: true,
+      system_wide_input: true,
       generic_inputs: false
     },
     2: {
       settings_updates: true,
       power_events: false,
+      system_wide_input: true,
       generic_inputs: false
     },
     3: {
       settings_updates: false,
       power_events: false,
+      system_wide_input: true,
       generic_inputs: false
     },
     4: {
       settings_updates: false,
       power_events: false,
+      system_wide_input: true,
+      generic_inputs: true
+    },
+    5: {
+      settings_updates: false,
+      power_events: false,
+      system_wide_input: false,
       generic_inputs: true
     }
   }

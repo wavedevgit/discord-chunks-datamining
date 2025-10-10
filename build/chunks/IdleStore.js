@@ -67,8 +67,13 @@ function N() {
 function R() {
   var e;
   let t = e => {
-    let t = Date.now() - e;
-    (null == r || t > r) && (b = Math.max(t, b), r = null), N(), setTimeout(R, 10 * _.Z.Millis.SECOND)
+    if (d.Z.getConfig({
+        location: "checkNativeIdle"
+      }).system_wide_input) {
+      let t = Date.now() - e;
+      (null == r || t > r) && (b = Math.max(t, b), r = null)
+    }
+    N(), setTimeout(R, 10 * _.Z.Millis.SECOND)
   };
   if ((null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.remotePowerMonitor) ? true : module.getSystemIdleTimeMs) != null) {
     let e = Chunk579806.Z.remotePowerMonitor.getSystemIdleTimeMs();
