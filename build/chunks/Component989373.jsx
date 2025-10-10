@@ -130,18 +130,19 @@ let Z = Chunk647438.memo(function(e) {
     }, [k, l, e, a, n]), (0, c.zq)(() => {
       clearInterval(Z.current), S.current = true
     });
-    let A = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, C.ZY)(a) : true));
+    let A = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, C.ZY)(a) : true)),
+      E = (0, r.e7)([x.ZP], () => x.ZP.getFocusedWindowHandle());
     return o.useEffect(() => {
       if (null == a || !u || a.innerHeight !== A.height || a.innerWidth !== A.width) return;
       let e = a.requestAnimationFrame(() => {
         e = a.requestAnimationFrame(() => {
-          i.Z.overlayUIFocusedPid(null != _ ? _ : m.UNSET_PID)
+          i.Z.overlayUIFocusedPid(null != _ ? _ : m.UNSET_PID, E)
         })
       });
       return () => {
         a.cancelAnimationFrame(e)
       }
-    }, [u, a, _, A]), u
+    }, [u, a, _, E, A]), u
   }(n, S.$S), g = (0, r.e7)([h.default], () => h.default.isFocusedPidInputLocked());
   return l ? (0, a.jsxs)(u.Z, {
     themeOverride: W.BRd.MIDNIGHT,
