@@ -1,5 +1,5 @@
-/** Chunk was on 36529 **/
-/** chunk id: 753436, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 36073 **/
+/** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   S: () => p
 });
@@ -19,29 +19,29 @@ var Chunk120356 = require("./120356.js"),
 function p(e) {
   let {
     game: t,
-    userId: n,
+    userId: r,
     widgetType: i,
     guildId: p,
     channelId: b,
     disableInteraction: m = false
-  } = e, O = (0, d.Z)(t.applicationId).length > 0, y = o.default.getCurrentUser(), j = (null == y ? true : y.id) === n;
-  return (0, l.kO)(t.applicationId) ? (0, r.jsx)("div", {
+  } = e, O = (0, d.Z)(t.applicationId).length > 0, y = o.default.getCurrentUser(), j = (null == y ? true : y.id) === r;
+  return (0, l.kO)(t.applicationId) ? (0, n.jsx)("div", {
     className: f.loadingCover
-  }) : (0, r.jsxs)("div", {
+  }) : (0, n.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(c.Z, {
+    children: [(0, n.jsx)(c.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
-      userId: n,
+      userId: r,
       disableInteraction: m,
       className: a()(O ? g.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || m ? true : f.hoverActiveEffect)
-    }), !m && j && (0, r.jsx)(s.Z, {
+    }), !m && j && (0, n.jsx)(s.Z, {
       game: t,
       widgetType: i,
       className: g.removeGameButton,
       iconSize: "xs"
-    }), !m && (0, r.jsx)(u.Z, {
+    }), !m && (0, n.jsx)(u.Z, {
       className: g.socialProof,
       applicationId: t.applicationId,
       guildId: p,

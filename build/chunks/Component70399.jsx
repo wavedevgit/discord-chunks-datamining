@@ -67,7 +67,7 @@ function p(e) {
     hasAlreadyLinked: l,
     canStartAuthorization: s,
     startAuthorization: u,
-    loading: g
+    fetched: g
   } = (0, o.FG)(i);
   return "default" !== n || null == i ? null : (0, r.jsxs)("div", {
     className: f.footer,
@@ -76,13 +76,13 @@ function p(e) {
     }), (0, r.jsx)(a.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: g ? (0, r.jsx)("div", {
-        className: f.footerPlaceholder
-      }) : l ? d.intl.format(d.t.wiyuGx, {
+      children: g ? l ? d.intl.format(d.t.wiyuGx, {
         applicationName: i.name
       }) : s ? d.intl.format(d.t.RNWFOT, {
         onConnect: u
-      }) : d.intl.string(d.t["9TX4UV"])
+      }) : d.intl.string(d.t["9TX4UV"]) : (0, r.jsx)("div", {
+        className: f.footerPlaceholder
+      })
     })]
   })
 }

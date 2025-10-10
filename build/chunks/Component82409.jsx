@@ -139,8 +139,8 @@ function U(e) {
         message: n
       }]
     }), [K]),
-    q = V(Z, h, P),
-    X = V(D, h, null);
+    q = F(Z, h, P),
+    X = F(D, h, null);
   (0, p.ZP)(() => {
     var e;
     u.Z.dispatch({
@@ -241,7 +241,7 @@ function U(e) {
         messages: h === A.V5.BOOKMARKS ? Y : q,
         unreadMessages: h === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
-        renderLoadingState: F,
+        renderLoadingState: V,
         ignoreGrouping: h === A.V5.BOOKMARKS,
         loadMore: U
       })]
@@ -255,7 +255,7 @@ function B(e) {
   })
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   return i.useMemo(() => 0 === e.length || t === A.V5.BOOKMARKS ? k : e.filter(e => {
     let {
       id: r
@@ -264,7 +264,7 @@ function V(e, t, n) {
   }), [e, t, n])
 }
 
-function F() {
+function V() {
   return (0, Chunk951288.jsx)(Chunk862149.Z, {})
 }
 

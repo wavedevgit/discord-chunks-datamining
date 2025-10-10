@@ -76,9 +76,9 @@ function R() {
     })),
     U = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(Chunk981631.I_8)),
     B = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(U)),
-    V = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
+    F = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
     {
-      badge: F,
+      badge: V,
       unread: H
     } = (0, Chunk919755.Z)(G),
     z = function(e) {
@@ -112,13 +112,13 @@ function R() {
         activity: g
       })
     }(G),
-    W = F > 0 ? (0, Chunk593364.N)(F) : null,
+    W = V > 0 ? (0, Chunk593364.N)(V) : null,
     K = Chunk647438.useCallback(() => {
       D()
     }, [D]);
   return (0, Chunk951288.jsxs)(Chunk682662.H, {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
-      selected: V,
+      selected: F,
       hovered: L,
       unread: H && !k,
       className: Chunk499951.pill
@@ -132,14 +132,14 @@ function R() {
           children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRsr"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWycn),
-              mentions: F
+              mentions: V
             }),
-            "aria-selected": V,
+            "aria-selected": F,
             to: {
               pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, U),
               state: A
             },
-            selected: V || L,
+            selected: F || L,
             onMouseEnter: () => M(true),
             onMouseLeave: () => M(false),
             onMouseDown: function() {

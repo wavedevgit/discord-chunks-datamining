@@ -31,13 +31,11 @@ function _(e) {
     allowedFlows: t = ["rpc", "web"]
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = r.useMemo(() => f(e), [e]), i = (0, o.t)(null == n ? true : n.id, "AUTHORIZE_REQUEST"), l = t.includes("rpc") && i, s = t.includes("web") && (null == n ? true : n.connectionEntrypointUrl) != null, d = l || s, {
     token: p,
-    loading: _
-  } = (0, c.o)(null == n ? true : n.id, {
-    disableFetch: !d
-  });
+    fetched: _
+  } = (0, c.o)(null == n ? true : n.id);
   return {
-    loading: _,
-    hasAlreadyLinked: !_ && null != p,
+    fetched: _,
+    hasAlreadyLinked: _ && null != p,
     canStartAuthorization: d,
     startAuthorization: r.useCallback(() => null == n ? null : l ? (a.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === n.id, {}), "rpc") : s ? ((0, u.q)({
       href: n.connectionEntrypointUrl

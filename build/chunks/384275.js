@@ -23,6 +23,24 @@ let o = {
       tokens: []
     }))
   },
+  fetchByApplicationId(e) {
+    i.Z.dispatch({
+      type: "USER_AUTHORIZED_APPS_REQUEST_BY_ID",
+      applicationId: e
+    }), r.tn.get({
+      url: a.ANM.GET_APPLICATION_TOKENS(e),
+      oldFormErrors: true,
+      rejectWithError: true
+    }).then(t => i.Z.dispatch({
+      type: "USER_AUTHORIZED_APPS_UPDATE_BY_ID",
+      tokens: t.body,
+      applicationId: e
+    }), () => i.Z.dispatch({
+      type: "USER_AUTHORIZED_APPS_UPDATE_BY_ID",
+      tokens: [],
+      applicationId: e
+    }))
+  },
   delete(e) {
     r.tn.del({
       url: a.ANM.OAUTH2_TOKEN(e),

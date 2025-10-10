@@ -29,8 +29,8 @@ function b() {
     config: x
   } = (0, Chunk50130.G)(), {
     token: O,
-    loading: P
-  } = (0, Chunk491662.o)(null == x ? true : x.application_id), I = Chunk647438.useMemo(() => (null == x ? true : x.application_id) != null ? new Chunk931847.q({
+    fetched: I
+  } = (0, Chunk491662.o)(null == x ? true : x.application_id), P = Chunk647438.useMemo(() => (null == x ? true : x.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
     applicationId: x.application_id
   }) : null, [null == x ? true : x.application_id]), S = Chunk647438.useCallback(() => {
@@ -76,7 +76,7 @@ function b() {
       stackingBehavior: "stack"
     })
   }, [module]);
-  if (null == exports || null == b || null == I || P) return (0, Chunk951288.jsx)("div", {
+  if (null == exports || null == b || null == P || !I) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });

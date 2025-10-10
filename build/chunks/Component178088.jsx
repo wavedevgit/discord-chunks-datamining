@@ -54,7 +54,7 @@ function Z(e) {
     }, _.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: B,
-    setSeenTutorial: V
+    setSeenTutorial: F
   } = function(e) {
     let t = (0, s.e7)([O.Z], () => {
         var e, t;
@@ -69,7 +69,7 @@ function Z(e) {
       showTutorial: !t && e === c.X.UNREADS,
       setSeenTutorial: n
     }
-  }(G), F = i.useCallback(() => {
+  }(G), V = i.useCallback(() => {
     k(false), M && (null == n || n())
   }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
@@ -89,8 +89,8 @@ function Z(e) {
     G !== c.X.BOOKMARKS || z || W || U(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
-      e.shiftKey || F()
-    }, [F]),
+      e.shiftKey || V()
+    }, [V]),
     X = (0, b.Us)({
       location: "ForYou"
     });
@@ -103,7 +103,7 @@ function Z(e) {
       align: T,
       autoInvert: false,
       shouldShow: M,
-      onRequestClose: F,
+      onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
           "aria-label": P.intl.string(P.t.GSmTKC),
@@ -117,19 +117,19 @@ function Z(e) {
                 tab: G,
                 setTab: U,
                 badgeState: Z,
-                closePopout: F
+                closePopout: V
               }),
               children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
-                closePopout: F
+                closePopout: V
               }) : G === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(E.h6, {}),
                 children: (0, r.jsx)(E.ZP, {
                   onJump: q,
                   showTutorial: B,
-                  setSeenTutorial: V,
-                  closePopout: F
+                  setSeenTutorial: F,
+                  closePopout: V
                 })
               })
             })

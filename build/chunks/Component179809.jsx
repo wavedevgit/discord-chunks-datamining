@@ -50,8 +50,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       renderChildNode: G,
       folderButtonSize: U,
       folderButtonContent: B,
-      "aria-setsize": V,
-      "aria-posinset": F
+      "aria-setsize": F,
+      "aria-posinset": V
     } = e, {
       id: H,
       name: z,
@@ -134,8 +134,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,
-            "aria-setsize": V,
-            "aria-posinset": F
+            "aria-setsize": F,
+            "aria-posinset": V
           })
         })
       }), A ? (0, r.jsx)(y.ZP, {

@@ -56,10 +56,10 @@ function A(e) {
   } = (0, h.Z)({
     userId: t.id,
     guildId: N
-  }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
+  }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, H = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != U, Y = Z && null == U && null == W && null != M, V = !z && (H || Y), q = G.length > 0, K = L.some(e => (0, a.Z)(e));
+  }), z = L.length > 0 || null != U, Y = Z && null == U && null == W && null != M, V = !H && (z || Y), q = G.length > 0, K = L.some(e => (0, a.Z)(e));
   if (!V && !q && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
@@ -86,12 +86,12 @@ function A(e) {
       onClose: k
     })
   }
-  return (0, r.jsxs)(I.F, {
+  return (0, r.jsxs)(P.F, {
     className: T.scroller,
     fade: true,
     children: [(() => {
       let e = B && R && !K;
-      return V ? (0, r.jsx)(P.Z, {
+      return V ? (0, r.jsx)(I.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: T.cards,
@@ -129,13 +129,13 @@ function A(e) {
             })
           })]
         })
-      }) : e ? (0, r.jsx)(P.Z, {
+      }) : e ? (0, r.jsx)(I.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
-    })(), q ? (0, r.jsx)(P.Z, {
+    })(), q ? (0, r.jsx)(I.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.Anchor, {

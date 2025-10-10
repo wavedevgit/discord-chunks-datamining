@@ -1,5 +1,5 @@
-/** Chunk was on 36529 **/
-/** chunk id: 461631, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 36073 **/
+/** chunk id: 461631, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -19,25 +19,25 @@ var Chunk120356 = require("./120356.js"),
 function p(e) {
   let {
     item: t,
-    wishlistId: n,
+    wishlistId: r,
     iconSize: i = "refresh_sm",
     className: p
   } = e, {
     analyticsLocations: b
   } = (0, c.ZP)(), m = async () => {
     try {
-      await s.Z.removeSkuFromWishlist(n, t.skuId, b)
+      await s.Z.removeSkuFromWishlist(r, t.skuId, b)
     } catch (e) {
       (0, u.L$)(d.qb.SOMETHING_WENT_WRONG)
     }
   };
-  return (0, r.jsx)(o.u, {
+  return (0, n.jsx)(o.u, {
     text: f.intl.string(f.t.jTW019),
-    children: (0, r.jsx)(l.P3F, {
+    children: (0, n.jsx)(l.P3F, {
       onClick: m,
       "aria-label": f.intl.string(f.t.jTW019),
       className: a()(p, g.clickable),
-      children: (0, r.jsx)(l.XHJ, {
+      children: (0, n.jsx)(l.XHJ, {
         size: i,
         className: g.icon,
         color: l.TVs.colors.ICON_FEEDBACK_CRITICAL

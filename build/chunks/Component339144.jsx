@@ -83,8 +83,8 @@ let D = Chunk647438.memo(function(e) {
         guildId: G,
         isStreaming: U,
         channel: B,
-        canStream: V,
-        runningGame: F,
+        canStream: F,
+        runningGame: V,
         embeddedActivity: H,
         frame: z,
         activity: W,
@@ -108,14 +108,14 @@ let D = Chunk647438.memo(function(e) {
         var e;
         o()(null != W, "Received null activity"), S.default.track(N.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
-          game_id: null != (e = null == F ? true : F.id) ? e : null,
+          game_id: null != (e = null == V ? true : V.id) ? e : null,
           application_id: W.application_id
         }), (0, _.v)(J, _.d.INVITE), S.default.track(N.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: W.application_id,
           location: Y.location
         }), (0, u.h7)(W, false)
-      }, [W, Y, J, F]),
+      }, [W, Y, J, V]),
       en = i.useCallback((e, t) => () => {
         (0, _.v)(J, _.d.LEAVE_ACTIVITY), g.Z.leaveActivity({
           location: t,
@@ -139,13 +139,13 @@ let D = Chunk647438.memo(function(e) {
             default: e
           } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
           return n => (0, r.jsx)(e, A(T({}, n), {
-            sourcePID: null == F ? true : F.pid,
+            sourcePID: null == V ? true : V.pid,
             selectSource: !!Q && null != E.Z.getVoiceChannelId(),
             guildId: t,
             analyticsLocation: N.Sbl.ACTIVITY_PANEL
           }))
         })
-      }, [B, G, F, Q]),
+      }, [B, G, V, Q]),
       eo = i.useCallback(e => {
         (0, d.jW)(e, async () => {
           let {
@@ -176,12 +176,12 @@ let D = Chunk647438.memo(function(e) {
     }, []), i.useEffect(() => {
       ec && (ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null))
     }, [ec]);
-    let eg = (null != F || null == H || (0, p.R)()) && (U || k) ? (U ? (l = false, a = () => {
+    let eg = (null != V || null == H || (0, p.R)()) && (U || k) ? (U ? (l = false, a = () => {
         ei(), (0, _.v)(J, _.d.STREAM, false)
-      }, h = c.g5r, D = Z.intl.string(Z.t.S5anIS)) : V ? (l = false, a = () => {
+      }, h = c.g5r, D = Z.intl.string(Z.t.S5anIS)) : F ? (l = false, a = () => {
         el(), (0, _.v)(J, _.d.STREAM, true)
-      }, h = c.hGI, D = null != F ? Z.intl.formatToPlainString(Z.t.AB5gT0, {
-        game: F.name
+      }, h = c.hGI, D = null != V ? Z.intl.formatToPlainString(Z.t.AB5gT0, {
+        game: V.name
       }) : Z.intl.string(Z.t.FeUKeH)) : (l = true, a = null, h = c.hGI, D = null != B && (0, C.vd)(B.type) ? Z.intl.string(Z.t.uQn9Bw) : null != G ? Z.intl.string(Z.t.fBXEoK) : Z.intl.string(Z.t.n3feND)), (0, r.jsx)("div", {
         className: w.panelButtonContainer,
         children: (0, r.jsx)(P.Z, {
@@ -209,7 +209,7 @@ let D = Chunk647438.memo(function(e) {
       }),
       eO = null == M ? null : (0, r.jsx)(O.Z, {}),
       ey = ed && ea && !ec ? (0, r.jsx)(L, {
-        runningGame: F,
+        runningGame: V,
         startAuthorization: () => {
           ef(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
             ef(false)

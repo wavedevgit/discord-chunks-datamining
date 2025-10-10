@@ -28,12 +28,12 @@ function g(e) {
     config: y,
     application: C
   } = (0, u.G)(), {
-    loading: S,
+    fetched: S,
     hasAlreadyLinked: E,
     canStartAuthorization: T,
     startAuthorization: O
   } = (0, o.FG)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
-  return null == y || null == y.edit_profile_upsell_image || null == C || S ? null : (0, a.jsx)(c.ZP, {
+  return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
     contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
@@ -79,5 +79,5 @@ function g(e) {
         }]
       })
     }
-  })
+  }) : null
 }

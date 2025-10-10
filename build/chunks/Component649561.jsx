@@ -129,8 +129,8 @@ class T extends Chunk647438.PureComponent {
     }), P(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), N(), h.Z.track(C.rMx.NOTIFICATION_CLICKED, {
-        notif_type: Z.n0.OverlayCrashed,
+      }), N(), h.Z.track(Z.rMx.NOTIFICATION_CLICKED, {
+        notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), P(this, "handleNotificationClick", e => {
@@ -162,7 +162,7 @@ class k extends Chunk647438.PureComponent {
     let i = (0, b.getPID)(),
       r = (0, b.getRPCAuthToken)();
     (0, f.lW)({
-      type: C.BmY.DISPATCH,
+      type: Z.BmY.DISPATCH,
       pid: (0, b.getPID)(),
       token: r,
       payloads: [{
@@ -178,7 +178,7 @@ class k extends Chunk647438.PureComponent {
     let s = (0, v.V6)(e, E.gl.Hook, {
       extra: t
     });
-    h.Z.track(C.rMx.APP_CRASHED, {
+    h.Z.track(Z.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

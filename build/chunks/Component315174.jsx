@@ -294,10 +294,10 @@ let D = Chunk647438.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
-      F(false)
+    if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
+      V(false)
     }, 5e3), () => {
       clearTimeout(K.current)
     }
@@ -364,16 +364,16 @@ let D = Chunk647438.memo(function(e) {
           guild: j,
           controller: l,
           guildBanner: x,
-          animate: V
+          animate: F
         }) : null, (0, r.jsx)(L, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
         className: C.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          F(true), clearTimeout(K.current)
+          V(true), clearTimeout(K.current)
         },
-        onMouseLeave: () => F(false),
+        onMouseLeave: () => V(false),
         style: {
           height: N
         }

@@ -133,7 +133,7 @@ function b(e) {
     section: b,
     subsection: x,
     text: O
-  }, P] = i.useState(v(h({}, null != (t = d.find(e => {
+  }, I] = i.useState(v(h({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -156,7 +156,7 @@ function b(e) {
           y({
             action: "PRESS_SECTION",
             section: e
-          }), P(t => {
+          }), I(t => {
             var n;
             return null != (n = d.find(t => t.section === e)) ? n : t
           })

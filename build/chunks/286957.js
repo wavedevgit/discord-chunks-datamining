@@ -1,12 +1,12 @@
-/** Chunk was on 36529 **/
-/** chunk id: 286957, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 36073 **/
+/** chunk id: 286957, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   XV: () => l,
   aE: () => u,
   kd: () => s,
   zK: () => c
 });
-var r, Chunk379405 = require("./379405.js"),
+var n, Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 let l = {
@@ -63,7 +63,7 @@ let l = {
     let t = l[e];
     return null != t ? t : null
   };
-var s = ((r = {}).RADIO = "radio", r.CHECKBOX = "checkbox", r);
+var s = ((n = {}).RADIO = "radio", n.CHECKBOX = "checkbox", n);
 let u = {
   skill_level: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),

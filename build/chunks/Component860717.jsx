@@ -205,7 +205,7 @@ function _(e) {
     case "SEPARATOR":
       return (0, r.jsx)(B, N({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(z, {})
+      return (0, r.jsx)(H, {})
   }
 }
 
@@ -334,7 +334,7 @@ function B(e) {
   })
 }
 
-function z() {
+function H() {
   let e = function() {
       let e = Chunk647438.useContext(V);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
@@ -351,7 +351,7 @@ function z() {
   })
 }
 
-function H(e, t) {
+function z(e, t) {
   if (null == e) return null;
   let n = e.split(D);
   if (1 === n.length) return n[0];
@@ -380,11 +380,11 @@ function Y(e, t) {
 let V = Chunk647438.createContext(null);
 
 function q(e) {
-  return (0, s.cj)([f.Z, S.Z, P.Z], () => {
+  return (0, s.cj)([f.Z, S.Z, I.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
-      game: null != t ? P.Z.getGameByApplication(t) : null,
+      game: null != t ? I.Z.getGameByApplication(t) : null,
       config: S.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
@@ -456,11 +456,11 @@ let J = Object.assign(function(e) {
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
-    loading: x,
-    hasAlreadyLinked: P,
+    fetched: x,
+    hasAlreadyLinked: I,
     canStartAuthorization: S,
     startAuthorization: E
-  } = (0, d.FG)(u), D = null == s && !x && !P && S, Z = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(u), D = null == s && x && !I && S, Z = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: A.appIcon,
       src: h,
@@ -496,7 +496,7 @@ let J = Object.assign(function(e) {
       mode: "from_data",
       variables: Object.fromEntries(Object.entries(N({
         username: null == (n = e.profile) ? true : n.username
-      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(I.V5).map(e => {
+      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(P.V5).map(e => {
         let [t, n] = e;
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -512,7 +512,7 @@ let J = Object.assign(function(e) {
           value: n
         }];
         return null
-      }).filter(I.lm)),
+      }).filter(P.lm)),
       config: t
     });
     return k.map(function e(t) {
@@ -520,7 +520,7 @@ let J = Object.assign(function(e) {
         case "HERO":
           var n;
           return {
-            type: "HERO", body: t.body.map(e), title: H(t.title, l), image: Y(t.image, l), imagePlaceholder: null == (n = l.config) ? true : n.hero_placeholder_image
+            type: "HERO", body: t.body.map(e), title: z(t.title, l), image: Y(t.image, l), imagePlaceholder: null == (n = l.config) ? true : n.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -532,11 +532,11 @@ let J = Object.assign(function(e) {
           };
         case "TEXT":
           return {
-            type: "TEXT", content: H(t.content, l)
+            type: "TEXT", content: z(t.content, l)
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: H(t.content, l), image: Y(t.image, l), imagePosition: t.imagePosition
+            type: "TEXT_WITH_IMAGE", content: z(t.content, l), image: Y(t.image, l), imagePosition: t.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
