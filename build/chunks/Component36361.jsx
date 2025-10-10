@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -32,11 +32,11 @@ function j(e) {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(b.Z, {
         node: t
       });
     case l.Jq.LIST:
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case l.Jq.CATEGORY:
@@ -71,7 +71,7 @@ function j(e) {
   }
 }
 
-function v(e) {
+function x(e) {
   let {
     node: t
   } = e;

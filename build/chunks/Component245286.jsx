@@ -32,9 +32,9 @@ function C(e) {
   (0, p.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: b.Z.getSubsection(),
-    source: b.Z.getAnalyticsLocation(),
-    locationStack: b.Z.getAnalyticsLocations()
+    subsection: m.Z.getSubsection(),
+    source: m.Z.getAnalyticsLocation(),
+    locationStack: m.Z.getAnalyticsLocations()
   })
 }
 
@@ -61,16 +61,16 @@ function S(e) {
     {
       node: c,
       directory: u
-    } = (0, f.Z)(x.Z, a),
-    p = (t = v.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
+    } = (0, f.Z)(y.Z, a),
+    p = (t = x.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
     g = l.useRef(null);
   return ((0, s.ZP)(() => {
-    let e = b.Z.getSection();
+    let e = m.Z.getSection();
     null != e && (C({
       destinationPanel: e,
       originPanel: null
     }), g.current = e)
-  }), (0, o.e7)([m.default], () => null != m.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+  }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -90,9 +90,9 @@ function S(e) {
   }({
     root: c,
     directory: u,
-    sidebarHeader: P,
-    emptyState: _,
-    sidebarFooter: y.Z,
+    sidebarHeader: _,
+    emptyState: P,
+    sidebarFooter: v.Z,
     onPanelChange: e => {
       let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (C({
@@ -104,7 +104,7 @@ function S(e) {
   }, i)) : null
 }
 
-function P() {
+function _() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk647438.useRef(null),
     [n, o] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
@@ -148,7 +148,7 @@ function P() {
   })
 }
 
-function _() {
+function P() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk942408.emptySearchResultsContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

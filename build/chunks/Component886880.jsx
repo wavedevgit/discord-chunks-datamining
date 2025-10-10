@@ -16,11 +16,11 @@ function s(e) {
     visibleContent: s,
     markAsDismissed: c,
     props: u
-  } = e, [d, f] = l.useState(false), b = l.useRef(null);
-  (0, i.ZP)(() => (b.current = setTimeout(() => f(true), 250), () => {
-    clearTimeout(b.current), c(a.L.AUTO_DISMISS)
+  } = e, [d, f] = l.useState(false), m = l.useRef(null);
+  (0, i.ZP)(() => (m.current = setTimeout(() => f(true), 250), () => {
+    clearTimeout(m.current), c(a.L.AUTO_DISMISS)
   }));
-  let m = l.useCallback(e => {
+  let b = l.useCallback(e => {
     c("user:explicit" === e ? a.L.USER_DISMISS : a.L.AUTO_DISMISS)
   }, [c]);
   return (0, r.jsx)(o.Z, function(e) {
@@ -43,6 +43,6 @@ function s(e) {
   }({
     targetElementRef: n,
     shouldShow: d && s === t,
-    onRequestClose: m
+    onRequestClose: b
   }, u))
 }

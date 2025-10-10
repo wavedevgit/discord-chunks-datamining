@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989281 = require("./989281.js");
 
-function y(e) {
+function v(e) {
   let {
     onClose: t
   } = e;
@@ -46,7 +46,7 @@ function y(e) {
   })
 }
 
-function x() {
+function y() {
   let e = Chunk647438.useRef(null),
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
@@ -94,7 +94,7 @@ function x() {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(y, {
+          return (0, r.jsx)(v, {
             onClose: t
           })
         },
@@ -120,8 +120,8 @@ function x() {
           }({}, t), o = o = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: i()(v.moreButton, {
-              [v.active]: n.isShown
+            className: i()(x.moreButton, {
+              [x.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",

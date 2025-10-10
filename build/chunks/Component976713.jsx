@@ -1,26 +1,29 @@
 /** Chunk was on 75685 **/
 /** chunk id: 976713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => i
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk755721 = require("./755721.js");
+  Chunk755721 = require("./755721.js"),
+  Chunk550964 = require("./550964.jsx");
 
-function o(e) {
+function i(e) {
   let {
     node: t
   } = e, {
     useValue: n,
-    setValue: o,
-    useTitle: i,
-    useSubtitle: a,
-    useOptions: s
-  } = t, c = i(), u = null == a ? true : a(), d = n(), f = s();
-  return (0, r.jsx)(l.Gu, {
-    label: c,
-    description: u,
-    options: f,
-    value: d,
-    onChange: e => o(e.value)
+    setValue: i,
+    useTitle: a,
+    useSubtitle: s,
+    useOptions: c
+  } = t, u = a(), d = null == s ? true : s(), f = n(), m = c();
+  return (0, r.jsx)(o.X, {
+    children: (0, r.jsx)(l.Gu, {
+      label: u,
+      description: d,
+      options: m,
+      value: f,
+      onChange: e => i(e.value)
+    })
   })
 }

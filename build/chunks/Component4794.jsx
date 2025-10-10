@@ -17,18 +17,18 @@ let c = Chunk647438.memo(function(e) {
     layout: c,
     useSubtitle: u
   } = t, [d, f] = l.useState(false), {
-    navTransition: b
+    navTransition: m
   } = (0, o.t)();
   l.useEffect(() => {
     var e;
-    (null == b || null == (e = b.targetAccordion) ? true : e.key) === t.key && f(true)
-  }, [null == b ? true : b.targetAccordion, t.key]);
-  let m = null == n ? true : n(d),
+    (null == m || null == (e = m.targetAccordion) ? true : e.key) === t.key && f(true)
+  }, [null == m ? true : m.targetAccordion, t.key]);
+  let b = null == n ? true : n(d),
     p = null == u ? true : u();
   return (0, r.jsx)("div", {
     className: s.accordion,
     children: (0, r.jsx)(a.I, {
-      title: m,
+      title: b,
       subtitle: p,
       isOpen: d,
       setIsOpen: f,

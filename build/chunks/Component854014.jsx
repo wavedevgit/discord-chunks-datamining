@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => b
+  y: () => m
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,40 +28,40 @@ function f(e) {
   })
 }
 
-function b(e) {
+function m(e) {
   let {
     node: t,
     visibleContent: n
   } = e, {
     currentPanel: o,
     navigateTo: i,
-    setShowNavigationMobile: b
+    setShowNavigationMobile: m
   } = (0, s.t)(), {
-    useTitle: m,
+    useTitle: b,
     stronglyDiscouragedCustomComponent: p,
     icon: j,
-    trailing: v
-  } = t, y = l.useMemo(() => t.layout[0], [t]), x = null != o && o.key === (null == y ? true : y.key), h = m(), g = null != y ? () => {
-    i(y.key), b(false)
+    trailing: x
+  } = t, v = l.useMemo(() => t.layout[0], [t]), y = null != o && o.key === (null == v ? true : v.key), h = b(), g = null != v ? () => {
+    i(v.key), m(false)
   } : t.onClick, O = l.useMemo(() => {
     var e;
-    return null != (e = null == y ? true : y.layout.flatMap(e => e.layout)) ? e : []
-  }, [y]);
+    return null != (e = null == v ? true : v.layout.flatMap(e => e.layout)) ? e : []
+  }, [v]);
   return null != p ? (0, r.jsxs)(f, {
     onClick: g,
-    active: x,
-    children: [(0, r.jsx)(p, {}), null != v && (0, r.jsx)("div", {
+    active: y,
+    children: [(0, r.jsx)(p, {}), null != x && (0, r.jsx)("div", {
       className: d.itemContent,
       children: (0, r.jsx)(c.W, {
-        trailing: v,
+        trailing: x,
         visibleContent: n,
-        isSelected: x
+        isSelected: y
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f, {
       onClick: g,
-      active: x,
+      active: y,
       children: [(0, r.jsxs)("div", {
         className: d.itemContent,
         children: [(0, r.jsx)(j, {
@@ -73,15 +73,15 @@ function b(e) {
           color: "currentColor",
           children: h
         })]
-      }), null != v && (0, r.jsx)("div", {
+      }), null != x && (0, r.jsx)("div", {
         className: d.itemContent,
         children: (0, r.jsx)(c.W, {
-          trailing: v,
+          trailing: x,
           visibleContent: n,
-          isSelected: x
+          isSelected: y
         })
       })]
-    }), x && O.length > 1 && (0, r.jsx)(u.Z, {
+    }), y && O.length > 1 && (0, r.jsx)(u.Z, {
       categories: O
     })]
   })

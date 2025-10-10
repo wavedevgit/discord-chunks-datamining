@@ -19,13 +19,13 @@ function c(e) {
     secondaryTitle: u,
     description: d,
     compact: f = false,
-    onClick: b
+    onClick: m
   } = e;
   return (0, r.jsxs)(a.P3F, {
     className: o()(s.baseControlItem, {
       [s.compact]: f
     }),
-    onClick: b,
+    onClick: m,
     children: [null != t && (0, r.jsx)("div", {
       className: s.baseControlItemLeadingElement,
       children: t

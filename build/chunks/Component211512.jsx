@@ -1,31 +1,35 @@
 /** Chunk was on 75685 **/
 /** chunk id: 211512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => o
+  I: () => i
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk481060 = require("./481060.js");
+  Chunk481060 = require("./481060.js"),
+  Chunk550964 = require("./550964.jsx");
 
-function o(e) {
+function i(e) {
   let {
     node: t
   } = e, {
     useLabel: n,
-    useTitle: o,
-    useSubtitle: i,
-    useVariant: a,
-    useDisabled: s,
-    onClick: c
-  } = t, u = o(), d = null == i ? true : i(), f = n(), b = null == a ? true : a(), m = null == s ? true : s();
-  return (0, r.jsx)(l.gNt, {
-    label: u,
-    description: d,
-    disabled: m,
-    children: (0, r.jsx)(l.Button, {
-      onClick: c,
-      text: f,
-      variant: b,
-      disabled: m
+    useTitle: i,
+    useSubtitle: a,
+    useVariant: s,
+    useDisabled: c,
+    onClick: u
+  } = t, d = i(), f = null == a ? true : a(), m = n(), b = null == s ? true : s(), p = null == c ? true : c();
+  return (0, r.jsx)(o.X, {
+    children: (0, r.jsx)(l.gNt, {
+      label: d,
+      description: f,
+      disabled: p,
+      layout: "horizontal",
+      children: (0, r.jsx)(l.Button, {
+        onClick: u,
+        text: m,
+        variant: b,
+        disabled: p
+      })
     })
   })
 }

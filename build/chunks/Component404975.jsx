@@ -22,11 +22,11 @@ function j(e) {
     root: t,
     header: n,
     footer: o,
-    onClose: b,
+    onClose: m,
     emptyState: j
   } = e, {
-    showNavigationMobile: y
-  } = (0, d.t)(), x = l.useMemo(() => {
+    showNavigationMobile: v
+  } = (0, d.t)(), y = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -53,7 +53,7 @@ function j(e) {
   return (0, r.jsx)(s.f6W, {
     theme: O,
     children: e => (0, r.jsx)(c.ZP, {
-      contentTypes: x,
+      contentTypes: y,
       children: t => {
         let {
           visibleContent: l
@@ -61,7 +61,7 @@ function j(e) {
         return (0, r.jsxs)("div", {
           className: i()(p.sidebar, e, {
             [p.mobile]: a.tq,
-            [p.mobileNavigationOpen]: y
+            [p.mobileNavigationOpen]: v
           }),
           children: [(0, r.jsxs)("div", {
             className: p.fixedContent,
@@ -69,13 +69,13 @@ function j(e) {
               className: p.mobileCloseButton,
               children: (0, r.jsx)(s.hU, {
                 icon: s.Uz9,
-                onClick: b,
+                onClick: m,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": m.intl.string(m.t.cpT0Cg)
+                "aria-label": b.intl.string(b.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
-              children: h.map(e => (0, r.jsx)(v, {
+              children: h.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -85,7 +85,7 @@ function j(e) {
             fade: true,
             children: [(0, r.jsx)("nav", {
               className: p.nav,
-              children: g.map(e => (0, r.jsx)(v, {
+              children: g.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -97,7 +97,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     section: n,
@@ -114,7 +114,7 @@ function v(e) {
         children: o
       })
     }), n.layout.map(e => (0, r.jsx)("li", {
-      children: (0, r.jsx)(b.y, {
+      children: (0, r.jsx)(m.y, {
         node: e,
         visibleContent: l
       })

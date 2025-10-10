@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 82084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,15 +14,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk79808 = require("./79808.jsx"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
+function m(e) {
   var t, n, {
-      root: b,
-      directory: m,
+      root: m,
+      directory: b,
       target: p,
       onPanelChange: j,
-      sidebarHeader: v,
-      sidebarFooter: y,
-      emptyState: x
+      sidebarHeader: x,
+      sidebarFooter: v,
+      emptyState: y
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -39,19 +39,19 @@ function b(e) {
       }
       return l
     }(e, ["root", "directory", "target", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [g, O] = l.useState(false), [C, S] = l.useState(1.4), P = l.useRef(null), _ = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, o.e7)([c.Z], () => c.Z.isFocused());
+  let [g, O] = l.useState(false), [C, S] = l.useState(1.4), _ = l.useRef(null), P = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, o.e7)([c.Z], () => c.Z.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !_ && E && (O(true), S(null != t ? t : 1.4), clearTimeout(P.current), P.current = setTimeout(() => O(false), null != n ? n : 1e3))
+      !P && E && (O(true), S(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => O(false), null != n ? n : 1e3))
     };
     return u.S.subscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), () => {
-      u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(P.current)
+      u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
     }
-  }, [_, E]), (0, r.jsx)(a.UkV, {
+  }, [P, E]), (0, r.jsx)(a.UkV, {
     isShaking: g,
     intensity: C,
     children: (0, r.jsx)(i.A, (t = function(e) {
@@ -74,13 +74,13 @@ function b(e) {
     }({}, h), n = n = {
       children: (0, r.jsx)(d.Z, {
         onClose: h.onClose,
-        root: b,
-        directory: m,
+        root: m,
+        directory: b,
         target: p,
         onPanelChange: j,
-        sidebarHeader: v,
-        emptyState: x,
-        sidebarFooter: y
+        sidebarHeader: x,
+        emptyState: y,
+        sidebarFooter: v
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
