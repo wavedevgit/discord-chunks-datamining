@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421200 = require("./421200.js");
 
-function A(e) {
+function P(e) {
   let {
     tab: t,
     displayText: n,
@@ -45,19 +45,19 @@ function A(e) {
   return (0, r.jsx)(C.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: N.tabWrapper,
-    className: o()(N.tab, {
+    className: s()(N.tab, {
       [N.selected]: l
     }),
     children: n
   })
 }
 
-function P(e) {
+function A(e) {
   let {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: s
+    handleTransition: o
   } = e, [a, u] = l.useState(false), d = l.useRef(null), [g, h] = l.useState(0), _ = l.useRef(false), m = e => {
     clearTimeout(g), h(setTimeout(() => {
       u(e)
@@ -83,8 +83,8 @@ function P(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(T.Z, {
-          handleTransition: s,
+        return (0, r.jsx)(j.Z, {
+          handleTransition: o,
           onClose: t
         })
       },
@@ -112,10 +112,10 @@ function P(e) {
           return e
         }({}, e), u = u = {
           ref: d,
-          onClick: () => s(t),
+          onClick: () => o(t),
           onKeyDown: b,
           wrapperClassName: N.tabWrapper,
-          className: o()(N.tab, {
+          className: s()(N.tab, {
             [N.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -150,7 +150,7 @@ function R(e) {
     onClose: i,
     selectedTab: f,
     handleTransition: p
-  } = e, T = (0, g.ZP)(), R = (0, a.e7)([v.default], () => v.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
+  } = e, j = (0, g.ZP)(), R = (0, a.e7)([S.default], () => S.default.getCurrentUser()), Z = (null == R ? true : R.isStaff()) || (null == R ? true : R.isStaffPersonal()) || false, {
     enabled: w
   } = (0, E.WX)({
     location: "collectibles_shop_header_bar"
@@ -175,7 +175,7 @@ function R(e) {
         sectionType: k.jXE.ORBS_BALANCE_MENU,
         ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, h.navigateToQuestHome)({
-        fromContent: s.j.ORBS_BALANCE_MENU
+        fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [D, t, M]),
     U = (0, y.eN)("collectibles_shop_header_bar"),
@@ -187,10 +187,10 @@ function R(e) {
       })
     }, [null == R ? true : R.id]);
   return (0, r.jsx)(c.f6W, {
-    theme: T,
+    theme: j,
     children: e => (0, r.jsxs)(C.Z, {
       disableDoubleClick: true,
-      className: o()(e, N.headerBar, {
+      className: s()(e, N.headerBar, {
         [N.fullscreenHeaderBar]: t
       }),
       innerClassname: w ? N.headerBarInner : true,
@@ -211,12 +211,12 @@ function R(e) {
             tab: t,
             displayText: n
           } = e;
-          return t === L.AW.CATALOG ? (0, r.jsx)(P, {
+          return t === L.AW.CATALOG ? (0, r.jsx)(A, {
             tab: t,
             selected: (0, L.RE)(f) || f === t,
             displayText: n,
             handleTransition: p
-          }, t) : (0, r.jsx)(A, {
+          }, t) : (0, r.jsx)(P, {
             tab: t,
             displayText: n,
             selected: f === t,
@@ -225,7 +225,7 @@ function R(e) {
         })
       }), (w || t || U || H) && (0, r.jsxs)("div", {
         className: N.alignedRightContent,
-        children: [U && (0, r.jsx)(j.Z, {
+        children: [U && (0, r.jsx)(T.Z, {
           handleTransition: p,
           selectedTab: f
         }), H && (0, r.jsx)(c.P3F, {
@@ -236,10 +236,10 @@ function R(e) {
             size: "xs",
             color: "currentColor"
           })
-        }), w && (0, r.jsx)(S.V9, {
+        }), w && (0, r.jsx)(v.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: M,
-          cardAlignment: S.V9.CardAlignment.END,
+          cardAlignment: v.V9.CardAlignment.END,
           ctaText: B.intl.string(B.t.VC4Mq6),
           ctaOnClick: W,
           className: N.balanceWidgetMenu

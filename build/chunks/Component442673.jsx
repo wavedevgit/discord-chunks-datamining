@@ -18,9 +18,9 @@ let b = e => {
     otherUser: r,
     transitionState: b,
     onClose: f
-  } = e, h = o.useCallback(() => {
+  } = e, h = i.useCallback(() => {
     f()
-  }, [f]), p = (0, s.Z)(), [j, g] = o.useState(false), [m, x] = o.useState(false), y = o.useCallback(() => {
+  }, [f]), p = (0, a.Z)(), [j, g] = i.useState(false), [m, x] = i.useState(false), y = i.useCallback(() => {
     x(true), g(false)
   }, []), {
     disconnectLinkRequest: O,
@@ -29,32 +29,33 @@ let b = e => {
     onSuccess: h,
     onError: y
   });
-  return (0, n.jsx)(a.Z, {
+  return (0, n.jsx)(s.Z, {
     transitionState: b,
     children: (0, n.jsxs)("form", {
       onSubmit: e => {
-        e.preventDefault(), O(r.id)
+        x(false), e.preventDefault(), O(r.id)
       },
-      children: [(0, n.jsx)(a.Z.Error, {
-        error: m ? d.intl.string(l.default.krIDd3) : true
-      }), (0, n.jsxs)(i.hzk, {
+      children: [m && (0, n.jsx)(o.M14, {
+        type: "critical",
+        children: d.intl.string(l.default.krIDd3)
+      }), (0, n.jsxs)(o.hzk, {
         "data-migration-pending": true,
-        children: [(0, n.jsx)(a.Z.Header, {
+        children: [(0, n.jsx)(s.Z.Header, {
           currentUser: t,
           otherUser: r,
           header: d.intl.formatToPlainString(l.default.NMSTb2, {
             isAdult: String(p)
           }),
-          icon: (0, n.jsx)(i.Dio, {
+          icon: (0, n.jsx)(o.Dio, {
             size: "md",
             color: "currentColor",
             className: u.closeIcon
           })
-        }), (0, n.jsx)(a.Z.Notice, {
+        }), (0, n.jsx)(s.Z.Notice, {
           notice: p ? d.intl.string(l.default.EvMGLS) : d.intl.string(l.default.f1SUeX)
         }), (0, n.jsx)("div", {
           className: u.acknowledgementCheckbox,
-          children: (0, n.jsx)(i.Checkbox, {
+          children: (0, n.jsx)(o.Checkbox, {
             checked: j,
             onChange: e => {
               g(e), x(false)
@@ -62,19 +63,19 @@ let b = e => {
             label: p ? d.intl.string(l.default["/MYCeX"]) : d.intl.string(l.default.VJaHUV)
           })
         })]
-      }), (0, n.jsx)(i.mzw, {
+      }), (0, n.jsx)(o.mzw, {
         "data-migration-pending": true,
-        children: (0, n.jsx)(a.Z.ButtonFooter, {
-          children: (0, n.jsxs)(i.ButtonGroup, {
+        children: (0, n.jsx)(s.Z.ButtonFooter, {
+          children: (0, n.jsxs)(o.ButtonGroup, {
             direction: "horizontal-reverse",
-            children: [(0, n.jsx)(i.Button, {
+            children: [(0, n.jsx)(o.Button, {
               variant: "secondary",
               size: "sm",
               text: d.intl.string(d.t["ETE/oK"]),
               type: "button",
               onClick: f,
               disabled: v
-            }), (0, n.jsx)(i.Button, {
+            }), (0, n.jsx)(o.Button, {
               variant: "critical-primary",
               size: "sm",
               text: d.intl.string(l.default["c5L+sr"]),

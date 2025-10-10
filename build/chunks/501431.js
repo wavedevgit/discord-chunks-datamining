@@ -2,7 +2,7 @@
 /** chunk id: 501431, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => S,
+  A: () => v,
   S: () => b
 }), require("./388685.js"), require("./781311.js"), require("./642613.js"), require("./49124.js");
 var Chunk647438 = require("./647438.js"),
@@ -222,8 +222,8 @@ let p = {
       themeFilters: r,
       orbEligible: l,
       sort: i,
-      searchQuery: o,
-      queryPageSize: s,
+      searchQuery: s,
+      queryPageSize: o,
       queryPageOffset: a
     } = e;
     return {
@@ -232,13 +232,13 @@ let p = {
       themes: Array.from(r),
       orbs_eligible: !!l || true,
       offset: a,
-      limit: s,
+      limit: o,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
-      search: "" !== o ? o : true
+      search: "" !== s ? s : true
     }
   },
-  S = () => {
+  v = () => {
     let {
       onSetResponse: e,
       setSearchError: t,
@@ -276,7 +276,7 @@ let p = {
       let i = b.subscribe(E, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        o = b.subscribe(e => e.hasFilters(), (e, t) => {
+        s = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

@@ -1,12 +1,12 @@
 /** Chunk was on 69015 **/
-/** chunk id: 247265, original params: e,r,t (module,exports,require) **/
+/** chunk id: 247265, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  c = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk880257 = require("./880257.js"),
@@ -14,44 +14,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk490839 = require("./490839.js");
-let p = e => {
+let f = e => {
   let {
-    currentUser: r,
-    otherUser: t,
+    currentUser: t,
+    otherUser: r,
     transitionState: i,
-    onClose: p
+    onClose: f
   } = e, [h, j] = o.useState(false), m = o.useCallback(() => {
     j(true)
   }, []), y = o.useCallback(() => {
-    j(false)
-  }, []), g = o.useCallback(() => {
-    p()
-  }, [p]), x = (0, l.Z)(), {
-    cancelLinkRequest: O,
-    isCancelLoading: v
-  } = (0, c.G)({
+    f()
+  }, [f]), g = (0, l.Z)(), {
+    cancelLinkRequest: x,
+    isCancelLoading: O
+  } = (0, s.G)({
     onError: m,
-    onSuccess: g
+    onSuccess: y
   });
-  return s()(x, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsx)(d.Z, {
+  return c()(g, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsx)(d.Z, {
     transitionState: i,
     children: (0, n.jsxs)("form", {
       onSubmit: e => {
-        e.preventDefault(), O(t.id)
+        j(false), e.preventDefault(), x(r.id)
       },
-      children: [(0, n.jsx)(d.Z.Error, {
-        error: h ? b.intl.string(u.default["6gyAQU"]) : true,
-        onDismiss: y
+      children: [h && (0, n.jsx)(a.M14, {
+        type: "critical",
+        children: b.intl.string(u.default["6gyAQU"])
       }), (0, n.jsx)(a.hzk, {
         "data-migration-pending": true,
         children: (0, n.jsx)(d.Z.Header, {
-          currentUser: r,
-          otherUser: t,
+          currentUser: t,
+          otherUser: r,
           header: b.intl.string(u.default.HynllZ),
           icon: (0, n.jsx)(a.Dio, {
             size: "md",
             color: "currentColor",
-            className: f.closeIcon
+            className: p.closeIcon
           })
         })
       }), (0, n.jsx)(a.mzw, {
@@ -64,15 +62,15 @@ let p = e => {
               size: "sm",
               text: b.intl.string(u.default.czincX),
               type: "button",
-              disabled: v,
-              onClick: p
+              disabled: O,
+              onClick: f
             }), (0, n.jsx)(a.Button, {
               variant: "critical-primary",
               size: "sm",
               text: b.intl.string(u.default.mK40bm),
               type: "submit",
-              disabled: v || h,
-              loading: v
+              disabled: O || h,
+              loading: O
             })]
           })
         })

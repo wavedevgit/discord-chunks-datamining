@@ -153,7 +153,8 @@ function O(t) {
       loading: P,
       autoFocus: true
     }],
-    children: [E, A, null != v && "" !== v && (0, r.jsx)(l.kzN, {
+    children: [E, A, null != v && "" !== v && (0, r.jsx)(l.M14, {
+      type: "critical",
       children: v
     })]
   })

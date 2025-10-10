@@ -180,9 +180,12 @@ function M(e) {
     }), (0, r.jsxs)(c.hzk, {
       "data-migration-pending": true,
       className: w.body,
-      children: [null !== R && (0, r.jsx)(c.kzN, {
+      children: [null !== R && (0, r.jsx)("div", {
         className: w.error,
-        children: R
+        children: (0, r.jsx)(c.M14, {
+          type: "critical",
+          children: R
+        })
       }), (0, r.jsx)("div", {
         children: z
       }), (0, r.jsxs)(E.aO, {

@@ -38,9 +38,12 @@ function v(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: y.body,
-    children: [null !== t && (0, r.jsx)(c.kzN, {
+    children: [null !== t && (0, r.jsx)("div", {
       className: y.error,
-      children: t
+      children: (0, r.jsx)(c.M14, {
+        type: "critical",
+        children: t
+      })
     }), (0, r.jsx)("div", {
       children: b.intl.string(b.t.DY2CXl)
     })]

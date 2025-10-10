@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,26 +36,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function P(e) {
+function A(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: P,
+    isFullScreen: A,
     scrollerRef: R,
     tab: Z
   } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: F,
     includeUnpublished: D
-  } = (0, S.Z)(), M = (0, o.e7)([u.default], () => u.default.getCurrentUser()), W = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
-      case v.AW.AVATAR_DECORATIONS:
+      case S.AW.AVATAR_DECORATIONS:
         return [x.intl.string(x.t.dRZYND), G ? k.Z : L.Z, i.Z.AVATAR_DECORATION];
-      case v.AW.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjt7"]), G ? A.Z : N.Z, i.Z.PROFILE_EFFECT];
-      case v.AW.NAMEPLATES:
+      case S.AW.PROFILE_EFFECTS:
+        return [x.intl.string(x.t["1cNjt7"]), G ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
+      case S.AW.NAMEPLATES:
         return [x.intl.string(x.t.V68Fq6), G ? B.Z : I.Z, i.Z.NAMEPLATE];
-      case v.AW.BUNDLES:
-        return [x.intl.string(x.t.FYFppq), G ? j.Z : T.Z, i.Z.BUNDLE]
+      case S.AW.BUNDLES:
+        return [x.intl.string(x.t.FYFppq), G ? T.Z : j.Z, i.Z.BUNDLE]
     }
   }, [Z, G]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
@@ -66,7 +66,7 @@ function P(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
-      isFullScreen: P,
+      isFullScreen: A,
       unpublishedCategoriesShown: D,
       cacheDisabled: F
     })
@@ -75,11 +75,11 @@ function P(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
-      isFullScreen: P,
+      isFullScreen: A,
       unpublishedCategoriesShown: D,
       cacheDisabled: F
     })
-  }, [H, P, D, F, n, Z]);
+  }, [H, A, D, F, n, Z]);
   let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;

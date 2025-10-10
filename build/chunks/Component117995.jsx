@@ -1,0 +1,33 @@
+/** Chunk was on web.js **/
+/** chunk id: 117995, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  M: () => o
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk861974 = require("./861974.jsx");
+
+function a(e) {
+  switch (e) {
+    case "critical":
+      return i.Q.ERROR;
+    case "warning":
+      return i.Q.WARNING;
+    case "info":
+      return i.Q.INFO;
+    case "success":
+      return i.Q.POSITIVE
+  }
+}
+
+function o(e) {
+  let {
+    type: t,
+    children: n
+  } = e;
+  return (0, r.jsx)(i.W, {
+    messageType: a(t),
+    children: n
+  })
+}

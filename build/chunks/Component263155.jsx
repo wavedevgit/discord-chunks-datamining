@@ -2,7 +2,7 @@
 /** chunk id: 263155, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => G
 }), require("./388685.js"), require("./953529.js"), require("./781311.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ function L(e, t) {
   }), e
 }
 let k = "WELCOME_CHANNEL",
-  G = e => {
+  M = e => {
     var t;
     let l, {
         guildId: s,
@@ -85,7 +85,7 @@ let k = "WELCOME_CHANNEL",
       I = null != O && S.Uu(w.Plq.VIEW_CHANNEL, O),
       T = null != (t = (0, x.KS)(O)) ? t : g.VL1,
       P = (0, b.ZP)(O, false),
-      G = () => {
+      M = () => {
         (0, g.ZDy)(async () => {
           let {
             default: e
@@ -100,7 +100,7 @@ let k = "WELCOME_CHANNEL",
           onCloseRequest: () => Z.Vq
         })
       },
-      [, M] = (0, c.c)({
+      [, G] = (0, c.c)({
         type: k,
         item: {
           channel: o,
@@ -119,9 +119,9 @@ let k = "WELCOME_CHANNEL",
           h(e.channel, _, true)
         }
       });
-    return i.useLayoutEffect(() => (M(U(C)), () => {
-      M(null), U(null)
-    }), [M, U]), l = I ? null != y || null != o.emoji_name ? (0, r.jsx)(p.Z, {
+    return i.useLayoutEffect(() => (G(U(C)), () => {
+      G(null), U(null)
+    }), [G, U]), l = I ? null != y || null != o.emoji_name ? (0, r.jsx)(p.Z, {
       emojiId: null == y ? true : y.id,
       emojiName: null != y ? y.name : o.emoji_name,
       animated: !!(null == y ? true : y.animated)
@@ -148,7 +148,7 @@ let k = "WELCOME_CHANNEL",
             guildId: s,
             welcomeChannel: o,
             onChannelReorder: h,
-            onShowDeleteModal: G,
+            onShowDeleteModal: M,
             index: _
           }))
         })
@@ -175,11 +175,11 @@ let k = "WELCOME_CHANNEL",
         variant: "icon-only",
         icon: g.XHJ,
         "aria-label": R.intl.string(R.t.JYBc3N),
-        onClick: G
+        onClick: M
       })]
     })
   },
-  M = e => {
+  G = e => {
     let {
       guild: t
     } = e, {
@@ -197,7 +197,7 @@ let k = "WELCOME_CHANNEL",
       null != t && e !== a.enabled && ((0, O.Es)(t.id, {
         enabled: e
       }), x(!s), p(true))
-    }, M = (e, t, n) => {
+    }, G = (e, t, n) => {
       if (null == N) return;
       let r = N.indexOf(e),
         i = [...N];
@@ -320,7 +320,7 @@ let k = "WELCOME_CHANNEL",
           children: (0, r.jsx)(g.gNt, {
             label: R.intl.string(R.t.euJXzc),
             description: R.intl.string(R.t.VOnnn5),
-            children: null == N ? true : N.map((e, n) => (0, r.jsx)(G, {
+            children: null == N ? true : N.map((e, n) => (0, r.jsx)(M, {
               guildId: t.id,
               welcomeChannel: e,
               onEdit: e => {
@@ -331,7 +331,7 @@ let k = "WELCOME_CHANNEL",
                   enabled: false
                 }), k(false))
               },
-              onChannelReorder: M,
+              onChannelReorder: G,
               isDropHovered: n === c,
               index: n
             }, n))

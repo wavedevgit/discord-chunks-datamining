@@ -24,9 +24,9 @@ let h = () => {
     confettiCanvas: h,
     churnUserDiscountOffer: x,
     discountedPrice: P
-  } = (0, Chunk594135.a)(), C = (0, Chunk647438.useRef)(null), [v, y] = (0, Chunk647438.useState)(false), T = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
+  } = (0, Chunk594135.a)(), C = (0, Chunk647438.useRef)(null), [y, v] = (0, Chunk647438.useState)(false), T = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   if ((0, Chunk647438.useEffect)(() => {
-      null !== C.current && null !== P && y(true)
+      null !== C.current && null !== P && v(true)
     }, [C, P]), null === x) return null;
   let E = require === Chunk474936.PremiumTypes.TIER_2;
   return (0, Chunk951288.jsxs)("div", {
@@ -47,7 +47,7 @@ let h = () => {
           userDiscountOffer: x
         })
       })
-    }), !T && v && (0, Chunk951288.jsx)(Chunk530618.Z, {
+    }), !T && y && (0, Chunk951288.jsx)(Chunk530618.Z, {
       confettiTarget: C.current,
       confettiCanvas: h,
       confettiVelocityMultiplier: .75

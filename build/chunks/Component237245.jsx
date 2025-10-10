@@ -77,7 +77,7 @@ function E(e) {
     } finally {
       w(false)
     }
-  }, []), G = i.useCallback(async e => {
+  }, []), M = i.useCallback(async e => {
     try {
       await f.Z.saveGuild(T, e, {
         throwErr: true
@@ -87,7 +87,7 @@ function E(e) {
         statusPageURL: _.yXt.STATUS
       })), e
     }
-  }, [T]), M = i.useCallback(async (e, t, n) => {
+  }, [T]), G = i.useCallback(async (e, t, n) => {
     try {
       await d.ZP.updateVerificationForm(T, e, t, n)
     } catch (e) {
@@ -100,11 +100,11 @@ function E(e) {
       values: t,
       required: true
     }] : [];
-    await M(r, e, n)
-  }, [M]), B = i.useCallback(e => {
+    await G(r, e, n)
+  }, [G]), B = i.useCallback(e => {
     if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
         let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
-        await G({
+        await M({
           ownerConfiguredContentLevel: e
         })
       }), l.joinType === j.A.INVITE) {
@@ -115,7 +115,7 @@ function E(e) {
       k(async () => {
         if (E.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(E.features);
-          e.delete(_.oNc.DISCOVERABLE), await G({
+          e.delete(_.oNc.DISCOVERABLE), await M({
             features: e
           })
         }
@@ -129,11 +129,11 @@ function E(e) {
       k(async () => {
         if (E.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(E.features);
-          e.delete(_.oNc.DISCOVERABLE), await G({
+          e.delete(_.oNc.DISCOVERABLE), await M({
             features: e
           })
         }
-        h.verificationDirty && await M([...t], true, e), h.profileDirty && null != S && await (0, p.pV)(E.id, {
+        h.verificationDirty && await G([...t], true, e), h.profileDirty && null != S && await (0, p.pV)(E.id, {
           visibility: S.visibility
         })
       })
@@ -146,7 +146,7 @@ function E(e) {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
           (0, b.UA)(E, x);
           let e = new Set(E.features);
-          e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
+          e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
             features: e,
             discoverySplash: E.discoverySplash,
             description: E.description,
@@ -162,7 +162,7 @@ function E(e) {
         }
       })
     }
-  }, [l, k, E, h, G, U, S, M, x, I]), F = i.useCallback(() => {
+  }, [l, k, E, h, M, U, S, G, x, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {

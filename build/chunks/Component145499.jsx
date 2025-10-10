@@ -127,7 +127,7 @@ let w = e => {
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [g]), l) return (0, r.jsx)(d.$jN, {});
-    let G = [{
+    let M = [{
       tier: I.Eu4.NONE,
       title: (0, r.jsx)(w, {
         guildStickers: g,
@@ -161,7 +161,7 @@ let w = e => {
       })
     }];
     return (0, r.jsx)(N.Z, {
-      tiers: G,
+      tiers: M,
       renderTier: e => {
         var i;
         let l, s, {
@@ -175,17 +175,17 @@ let w = e => {
             canCreateExpressions: N,
             canManageGuildExpression: w
           } = (0, h.Gw)(t),
-          G = C[O - 1],
-          M = null != G ? (0, _.A3)(G.tier) : 0,
+          M = C[O - 1],
+          G = null != M ? (0, _.A3)(M.tier) : 0,
           U = (0, _.A3)(j.tier, t),
           B = (0, _.ig)(j.tier),
-          F = g.slice(M, U),
+          F = g.slice(G, U),
           H = F.length > 0,
           W = A < j.tier,
           V = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
           z = N && !W && V === j.tier && U !== F.length,
           K = z || F.length > 0,
-          Y = U - M,
+          Y = U - G,
           q = n(872732),
           X = B - F.length,
           Q = z ? Math.min(5 - (F.length + 0) % 5, X) : 0,

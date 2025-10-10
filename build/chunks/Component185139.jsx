@@ -86,8 +86,9 @@ function O(e) {
         className: b.bodyWrapper,
         children: [null == M ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
-          children: (0, r.jsx)(c.kzN, {
-            ref: P,
+          ref: P,
+          children: (0, r.jsx)(c.M14, {
+            type: "critical",
             children: j
           })
         }), N ? (0, r.jsx)(c.$jN, {

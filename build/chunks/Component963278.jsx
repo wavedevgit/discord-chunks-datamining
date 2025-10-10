@@ -25,17 +25,17 @@ let m = e => {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, m = (0, o.e7)([a.default], () => a.default.getCurrentUser()), b = d.Z.useConfig({
+  } = e, m = (0, s.e7)([a.default], () => a.default.getCurrentUser()), b = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
   return null == m ? null : (0, r.jsxs)("div", {
     className: i()(_.shelfBlockContainer, _.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: _.blockHeader,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(s.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "secondary",
         text: h.intl.formatToPlainString(h.t.bc9RBA, {
           category_name: t.name
@@ -47,8 +47,8 @@ let m = e => {
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let i = u.Z.getCategoryForProduct(e),
-            o = u.Z.getProduct(e);
-          return null == i || null == o ? null : (0, r.jsx)(c.k0, {
+            s = u.Z.getProduct(e);
+          return null == i || null == s ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
@@ -58,7 +58,7 @@ let m = e => {
               skuId: e,
               prioritizedCurrency: l === C.AW.ORBS ? p.tA.ORBS : true
             }, e) : (0, r.jsx)(g.Z, {
-              product: o,
+              product: s,
               category: i,
               user: m,
               tab: l

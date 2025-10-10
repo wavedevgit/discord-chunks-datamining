@@ -185,10 +185,12 @@ function eO(e) {
   } = e, i = (0, l.e7)([j.Z], () => j.Z.error);
   return (0, r.jsxs)("div", {
     className: J.body,
-    children: [null != n && (0, r.jsx)(c.kzN, {
+    children: [null != n && (0, r.jsx)("div", {
       className: J.infoNotice,
-      backgroundColor: c.mTc.BACKGROUND_TERTIARY,
-      children: n
+      children: (0, r.jsx)(c.M14, {
+        type: "info",
+        children: n
+      })
     }), (0, r.jsx)(b.j, {
       billingError: i,
       onCardInfoChange: t

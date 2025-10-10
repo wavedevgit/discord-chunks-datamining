@@ -100,9 +100,9 @@ function h(e) {
       selections: D,
       isSelecting: A
     }
-  } = _, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = _, L = (0, o.Z)(R), [k, M] = i.useState(false), G = i.useCallback(() => {
     var e;
-    G(false), P(), null == (e = x.current) || e.focus({
+    M(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -113,8 +113,8 @@ function h(e) {
   }, [c, Z, k]);
   let U = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      e && M(), G(false)
-    }, [M]),
+      e && G(), M(false)
+    }, [G]),
     B = i.useCallback(e => t => {
       if (t) {
         var n;
@@ -126,7 +126,7 @@ function h(e) {
             return null == (e = j.current) ? true : e.focus()
           }, 16)
         }))
-      } else T(e, true), G(true)
+      } else T(e, true), M(true)
     }, [S, T, D, R]);
   return (0, r.jsxs)("div", {
     className: a()(m.mainContainer, h),
@@ -135,7 +135,7 @@ function h(e) {
     onKeyUp: N,
     children: [(0, r.jsxs)(f, {
       ref: v,
-      onClick: M,
+      onClick: G,
       children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: I(t),

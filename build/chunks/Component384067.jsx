@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -24,9 +24,9 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, S = l.useRef(null), v = l.useRef(null), [O, x] = l.useState();
+  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), S = l.useRef(null), [O, x] = l.useState();
   l.useEffect(() => {
-    let e = v.current;
+    let e = S.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
@@ -37,31 +37,31 @@ let _ = e => {
   }, []);
   let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: T
+      handleCardVisibilityChange: j
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: j
+      bannerURL: T
     } = (0, g.UI)(_);
-  if (null == j) return null;
+  if (null == T) return null;
   let L = b === f.AW.ORBS;
-  return (0, r.jsx)(s.$, {
-    innerRef: S,
-    onChange: T,
+  return (0, r.jsx)(o.$, {
+    innerRef: v,
+    onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: S,
-      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      ref: v,
+      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(h.wideBannerBackgroundImg, {
+        className: s()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
-          ref: v,
-          src: j,
+          ref: S,
+          src: T,
           alt: _.title,
-          className: o()(h.wideBannerArt, {
+          className: s()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: L
           }),
           style: {

@@ -22,9 +22,9 @@ let g = {
   f = (e, t) => {
     let {
       enabled: n
-    } = (0, o.WX)({
+    } = (0, s.WX)({
       location: "useShopViewTransition"
-    }), i = (0, s.FF)("CollectiblesBrowse"), {
+    }), i = (0, o.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: f,
       reset: p,
       setCurrentTab: C
@@ -35,9 +35,9 @@ let g = {
       m(h)
     }, [h]);
     let {
-      clearError: S
-    } = (0, c.a)(), v = (0, l.k6)(), O = r.useCallback(async (e, n) => {
-      if (S(), e === u.AW.CATALOG) p();
+      clearError: v
+    } = (0, c.a)(), S = (0, l.k6)(), O = r.useCallback(async (e, n) => {
+      if (v(), e === u.AW.CATALOG) p();
       else if ((0, u.RE)(e) && e !== _) {
         let t = g[e];
         null != t ? f(t) : p()
@@ -48,10 +48,10 @@ let g = {
         E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
       }
       let r = i && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
-      m(r), n && E(u.f7.IN), t || v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
+      m(r), n && E(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
         shallow: true
       }), E(u.f7.VISIBLE)
-    }, [v, t, i, f, p, _, S]);
+    }, [S, t, i, f, p, _, v]);
     return {
       selectedTab: _,
       transitionState: b,

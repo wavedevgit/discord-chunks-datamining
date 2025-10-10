@@ -5,6 +5,7 @@ module.exports = {
   productCardHoverContainer: "productCardHoverContainer_fcbddd",
   productCardContainer: "productCardContainer_fcbddd",
   productCardContentContainer: "productCardContentContainer_fcbddd",
+  headerContainer: "headerContainer_fcbddd",
   footerContainer: "footerContainer_fcbddd",
   footerHideOnHover: "footerHideOnHover_fcbddd",
   footerShowOnHover: "footerShowOnHover_fcbddd",

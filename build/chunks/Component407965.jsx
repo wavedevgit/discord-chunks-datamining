@@ -1,7 +1,7 @@
 /** Chunk was on 69432 **/
 /** chunk id: 407965, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  n: () => v
+  n: () => y
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ let C = t => {
       })
     })
   },
-  v = () => {
+  y = () => {
     let {
       transitionState: t,
       onClose: e,
@@ -38,15 +38,15 @@ let C = t => {
       setStep: a,
       churnUserDiscountOffer: p,
       isFetchingChurnDiscountOffer: P
-    } = (0, Chunk594135.a)(), v = (0, Chunk442837.e7)([Chunk594174.default], () => {
+    } = (0, Chunk594135.a)(), y = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let t = Chunk594174.default.getCurrentUser();
       return l()(null != module, "ProfileItem: currentUser cannot be undefined"), module
     });
     Chunk647438.useEffect(() => {
-      (0, Chunk484459.Z)(v.id, v.getAvatarURL(null, 80))
-    }, [v]);
-    let y = (0, Chunk847903.Z)(),
-      T = "US" === y.ipCountryCode && "CA" === y.ipSubdivisionCode;
+      (0, Chunk484459.Z)(y.id, y.getAvatarURL(null, 80))
+    }, [y]);
+    let v = (0, Chunk847903.Z)(),
+      T = "US" === v.ipCountryCode && "CA" === v.ipSubdivisionCode;
     if (Chunk181679) return (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: "",
@@ -79,7 +79,7 @@ let C = t => {
       }),
       onClose: async () => exports(),
       children: (0, Chunk951288.jsx)(Chunk807163.g, {
-        currentUser: v,
+        currentUser: y,
         premiumType: require,
         onClose: exports,
         isDowngrade: false,

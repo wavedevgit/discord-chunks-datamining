@@ -29,18 +29,18 @@ let b = e => {
       prioritizedCurrency: b
     } = e, {
       isPurchased: E,
-      isPartiallyOwnedBundle: S
-    } = (0, g.L)(t), v = (0, o.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (0, o.e7)([a.default], () => a.default.getCurrentUser()), x = c.ZP.canUseCollectibles(O), y = (0, p.Iw)(t), {
-      isOrbExclusive: T
+      isPartiallyOwnedBundle: v
+    } = (0, g.L)(t), S = (0, s.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (0, s.e7)([a.default], () => a.default.getCurrentUser()), x = c.ZP.canUseCollectibles(O), y = (0, p.Iw)(t), {
+      isOrbExclusive: j
     } = (0, C.Ip)({
       product: t,
       isPremiumUser: x,
       prioritizedCurrency: b,
       hasDiscountOffer: null != y
-    }), j = (0, d.Yq)(t.skuId), L = (null == v ? true : v.skuId) === h.bu && (0, d.WW)(t.skuId);
+    }), T = (0, d.Yq)(t.skuId), L = (null == S ? true : S.skuId) === h.bu && (0, d.WW)(t.skuId);
     if (n === f.Zh.NONE) return null;
     let k = null;
-    return (n === f.Zh.NEW ? k = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? k = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (k = _.intl.string(_.t.S6kE9v)), null == k && (S || E || !j ? T ? k = _.intl.string(_.t["0TmQRE"]) : L && (k = _.intl.string(_.t.S6kE9v)) : k = _.intl.string(_.t.y2b7CA)), null == k) ? null : (0, r.jsx)(s.IGR, {
+    return (n === f.Zh.NEW ? k = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? k = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (k = _.intl.string(_.t.S6kE9v)), null == k && (v || E || !T ? j ? k = _.intl.string(_.t["0TmQRE"]) : L && (k = _.intl.string(_.t.S6kE9v)) : k = _.intl.string(_.t.y2b7CA)), null == k) ? null : (0, r.jsx)(o.IGR, {
       text: k,
       disableColor: true,
       className: i()(l, m.productCardBadge)
@@ -52,9 +52,9 @@ let b = e => {
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i
-    } = e, o = (0, f.LJ)(t);
-    return null == o ? null : (0, r.jsx)(b, {
-      product: o,
+    } = e, s = (0, f.LJ)(t);
+    return null == s ? null : (0, r.jsx)(b, {
+      product: s,
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i

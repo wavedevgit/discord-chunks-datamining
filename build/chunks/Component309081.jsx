@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 309081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -100,20 +100,20 @@ function C(e) {
     answerIndex: m,
     shouldShowEmojiPicker: g,
     toggleEmojiPicker: C,
-    containerRef: k
-  } = e, R = l.useRef(null), x = (0, o.e7)([d.Z], () => d.Z.getChannel(t)), {
+    containerRef: R
+  } = e, k = l.useRef(null), x = (0, o.e7)([d.Z], () => d.Z.getChannel(t)), {
     emoji: E,
-    isLoadingMedia: _,
-    hasUpload: S,
+    isLoadingMedia: S,
+    hasUpload: _,
     mediaUrl: D,
     mediaFilename: A
   } = (0, b.Z)({
     channelId: t,
     localCreationAnswerId: n,
     image: a
-  }), I = S || null != E, N = l.useCallback(() => {
+  }), I = _ || null != E, N = l.useCallback(() => {
     f(m)
-  }, [f, m]), U = l.useMemo(() => S ? y.intl.formatToPlainString(y.t.vcC7Qk, {
+  }, [f, m]), U = l.useMemo(() => _ ? y.intl.formatToPlainString(y.t.vcC7Qk, {
     imageName: (0, p.fw)(A),
     answerNumber: m + 1
   }) : null != E ? y.intl.formatToPlainString(y.t.ncOAhY, {
@@ -121,7 +121,7 @@ function C(e) {
     answerNumber: m + 1
   }) : y.intl.formatToPlainString(y.t.emdpNj, {
     answerNumber: m + 1
-  }), [S, E, m, A]), L = l.useCallback(e => {
+  }), [_, E, m, A]), L = l.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -151,10 +151,10 @@ function C(e) {
       onDeleteMedia: N,
       closePopout: t
     })
-  }, [N, C]), Z = _ ? (0, r.jsx)(c.$jN, {
+  }, [N, C]), Z = S ? (0, r.jsx)(c.$jN, {
     className: h.spinnerWrapperDefault
   }) : (0, r.jsx)(P, {
-    hasUpload: S,
+    hasUpload: _,
     mediaUrl: D,
     mediaFilename: A,
     imageClassName: i()(h.media, h.gifDefault),
@@ -165,11 +165,11 @@ function C(e) {
       color: "currentColor",
       className: h.expressionPickerIconDefault
     })
-  }), B = i()(O.CT, h.expressionPickerButtonDefault, {
+  }), Y = i()(O.CT, h.expressionPickerButtonDefault, {
     [h.canEditMedia]: I
   });
   return (0, r.jsx)(c.yRy, {
-    targetElementRef: k,
+    targetElementRef: R,
     renderPopout: L,
     shouldShow: g,
     onRequestClose: C,
@@ -182,7 +182,7 @@ function C(e) {
         "aria-expanded": n
       } = e;
       return v(e, ["aria-controls", "aria-expanded"]), (0, r.jsx)(c.yRy, {
-        targetElementRef: R,
+        targetElementRef: k,
         animation: c.yRy.Animation.NONE,
         position: "bottom",
         renderPopout: T,
@@ -211,9 +211,9 @@ function C(e) {
             }
             return e
           }({
-            innerRef: R
+            innerRef: k
           }, u), a = a = {
-            className: B,
+            className: Y,
             onClick: I && !g ? i : C,
             "aria-label": U,
             "aria-controls": null != t ? t : o,
@@ -240,7 +240,7 @@ function C(e) {
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     channelId: t,
     answer: n,
@@ -256,7 +256,7 @@ function k(e) {
     error: O,
     ref: h,
     answerRowRefs: v
-  } = e, P = l.useRef(null), w = l.useRef(null), k = l.useRef(null);
+  } = e, P = l.useRef(null), w = l.useRef(null), R = l.useRef(null);
   l.useImperativeHandle(h, () => ({
     focusDeleteButton: () => {
       var e;
@@ -264,12 +264,12 @@ function k(e) {
     },
     focusInput: () => {
       var e;
-      return null == (e = k.current) ? true : e.focus()
+      return null == (e = R.current) ? true : e.focus()
     }
   }));
-  let [R, x] = l.useState(false), E = l.useCallback(() => {
+  let [k, x] = l.useState(false), E = l.useCallback(() => {
     x(e => !e)
-  }, []), _ = l.useCallback(e => {
+  }, []), S = l.useCallback(e => {
     let t = e.ctrlKey && !(e.altKey || e.metaKey || e.shiftKey),
       r = e.metaKey && !(e.altKey || e.ctrlKey || e.shiftKey);
     switch (e.key.toLowerCase()) {
@@ -280,7 +280,7 @@ function k(e) {
       case "e":
         ("macos" === (0, m.getOS)() ? r : t) && (e.preventDefault(), e.stopPropagation(), E())
     }
-  }, [b, n, v, a, i, j, E]), S = (0, r.jsx)(C, {
+  }, [b, n, v, a, i, j, E]), _ = (0, r.jsx)(C, {
     containerRef: P,
     channelId: t,
     buttonImage: n.image,
@@ -288,7 +288,7 @@ function k(e) {
     onEmojiRemove: u,
     localCreationAnswerId: n.localCreationAnswerId,
     answerIndex: a,
-    shouldShowEmojiPicker: R,
+    shouldShowEmojiPicker: k,
     toggleEmojiPicker: E
   });
   return (0, r.jsx)("div", {
@@ -297,7 +297,7 @@ function k(e) {
       error: O,
       leading: {
         type: "emoji",
-        button: S
+        button: _
       },
       trailing: f ? {
         "aria-label": y.intl.formatToPlainString(y.t["22fjER"], {
@@ -317,9 +317,9 @@ function k(e) {
         index: a,
         localCreationAnswerId: n.localCreationAnswerId
       }),
-      onKeyDown: _,
+      onKeyDown: S,
       maxLength: g.WA,
-      inputRef: k
+      inputRef: R
     })
   })
 }

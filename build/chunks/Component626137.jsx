@@ -59,13 +59,14 @@ let E = function(e, t, n) {
   },
   I = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
-      icon: c.d3s,
+    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)("div", {
       className: y.notEnoughMembersError,
-      backgroundColor: c.mTc.BACKGROUND_ACCENT,
-      children: O.intl.string(O.t["FsgE/P"])
-    }) : null == e ? null : (0, r.jsx)(c.kzN, {
-      backgroundColor: c.mTc.BACKGROUND_ACCENT,
+      children: (0, r.jsx)(c.M14, {
+        type: "info",
+        children: O.intl.string(O.t["FsgE/P"])
+      })
+    }) : null == e ? null : (0, r.jsx)(c.M14, {
+      type: "critical",
       children: O.intl.string(O.t.Iju63d)
     })
   },

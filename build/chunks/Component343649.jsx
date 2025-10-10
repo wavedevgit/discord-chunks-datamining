@@ -125,18 +125,18 @@ function ep(e) {
       customCheckoutFlow: eN
     } = (0, x.JL)(),
     eO = (0, d.e7)([Y.Z], () => Y.Z.hasFetchedSubscriptions()),
-    eb = null != eg ? eg.paymentSourceId : null,
-    eM = (0, d.e7)([W.Z], () => null != eg ? (0, q.oE)(eg.planId) : null),
+    eM = null != eg ? eg.paymentSourceId : null,
+    eb = (0, d.e7)([W.Z], () => null != eg ? (0, q.oE)(eg.planId) : null),
     eL = (0, d.e7)([W.Z], () => null == eg || null != W.Z.get(eg.planId)),
-    eT = (0, d.e7)([W.Z], () => null == eM ? W.Z.get(eo) : eM),
+    eT = (0, d.e7)([W.Z], () => null == eb ? W.Z.get(eo) : eb),
     ex = (0, d.e7)([U.Z], () => U.Z.theme),
     ej = r.useRef((0, V.vx)(F.Z.boostSlots)).current,
     eC = (0, d.e7)([T.Z], () => null != ep ? T.Z.getGuild(ep) : true, [ep]),
     eA = (0, d.e7)([B.Z], () => B.Z.defaultPaymentSourceId),
-    eR = (0, Z.fL)(null != eb ? eb : eO ? eA : null),
+    eR = (0, Z.fL)(null != eM ? eM : eO ? eA : null),
     {
-      paymentSources: ek,
-      setPurchaseError: ev,
+      paymentSources: ev,
+      setPurchaseError: ek,
       paymentSourceId: eD,
       setIsSubmittingCurrentStep: eZ,
       paymentAuthenticationState: ew,
@@ -146,12 +146,12 @@ function ep(e) {
       purchaseError: ez,
       purchaseErrorBlockRef: eB
     } = eR,
-    eW = Object.keys(ek).length > 0,
+    eW = Object.keys(ev).length > 0,
     [eY, eH] = r.useState(eE - ej.length),
     [eV, eX] = r.useState(false),
     eK = (0, d.e7)([z.Z], () => z.Z.popupCallbackCalled),
     eq = (0, N.V)(),
-    e$ = r.useMemo(() => null != eg && eL && eq ? (0, v.g)(eg, eY) : [{
+    e$ = r.useMemo(() => null != eg && eL && eq ? (0, k.g)(eg, eY) : [{
       planId: en.Xh.PREMIUM_MONTH_GUILD,
       quantity: eY
     }], [eg, eL, eY, eq]),
@@ -183,7 +183,7 @@ function ep(e) {
     (0, K.i1)(eD)
   }, [eD]);
   let [e1, e2] = r.useState(j.h8.PLAN_SELECT), e4 = r.useMemo(() => Date.now(), [e1]), e7 = r.useCallback((e, n) => {
-    e2(e), ev(null);
+    e2(e), ek(null);
     let t = Date.now();
     H.default.track(ee.rMx.PAYMENT_FLOW_STEP, es(er({}, e3), {
       from_step: null != n ? n : e1,
@@ -193,7 +193,7 @@ function ep(e) {
       guild_id: ep,
       application_id: eh
     }))
-  }, [ev, e3, e1, e4, e0, ep, eh]), e6 = {
+  }, [ek, e3, e1, e4, e0, ep, eh]), e6 = {
     baseAnalyticsData: e3,
     flowStartTime: e0,
     guildId: ep,
@@ -201,7 +201,7 @@ function ep(e) {
     onSubscribeComplete: em,
     paymentSourceId: eD,
     setIsSubmittingCurrentStep: eZ,
-    setPurchaseError: ev
+    setPurchaseError: ek
   }, e5 = r.useRef(e6);
   r.useEffect(() => {
     e5.current = e6
@@ -232,7 +232,7 @@ function ep(e) {
       }
     })()
   }, [eK, eS]), (0, g.ZP)(() => {
-    Y.Z.hasFetchedSubscriptions() || (0, P.jg)(), null != ep && null == G.Z.getGuild(ep) && null == T.Z.getGuild(ep) && (0, L.Q)(ep), (0, M.U)(es(er({}, e3), {
+    Y.Z.hasFetchedSubscriptions() || (0, P.jg)(), null != ep && null == G.Z.getGuild(ep) && null == T.Z.getGuild(ep) && (0, L.Q)(ep), (0, b.U)(es(er({}, e3), {
       guild_id: ep,
       application_id: eh,
       custom_checkout_flow: eN
@@ -245,8 +245,8 @@ function ep(e) {
     i(nn === C.A.COMPLETED)
   }, ns = null != eg && eg.isPurchasedExternally;
   r.useEffect(() => {
-    ew !== D.wr.PENDING && e1 !== j.h8.CONFIRM && null != eb && (e9 !== ec && ne(ec), ec.includes(e1) || e1 === j.h8.PREMIUM_UPSELL || e7(j.h8.REVIEW)), e1 === j.h8.ADD_PAYMENT_STEPS && e9 !== eu && ne(eu), ns && e1 !== j.h8.PLAN_SELECT && e2(j.h8.PLAN_SELECT)
-  }, [e1, e7, ns, ew, eg, eb, e9]), (0, D.bp)(e1, ew, e7, nt), (0, j.dZ)(e1, nn, nt);
+    ew !== D.wr.PENDING && e1 !== j.h8.CONFIRM && null != eM && (e9 !== ec && ne(ec), ec.includes(e1) || e1 === j.h8.PREMIUM_UPSELL || e7(j.h8.REVIEW)), e1 === j.h8.ADD_PAYMENT_STEPS && e9 !== eu && ne(eu), ns && e1 !== j.h8.PLAN_SELECT && e2(j.h8.PLAN_SELECT)
+  }, [e1, e7, ns, ew, eg, eM, e9]), (0, D.bp)(e1, ew, e7, nt), (0, j.dZ)(e1, nn, nt);
   let na = r.useRef(null),
     [no, nc] = (0, y.Z)(false, 500),
     [nu, nd] = r.useState(null),
@@ -265,7 +265,7 @@ function ep(e) {
     breadcrumpSteps: e9,
     currentBreadcrumpStep: e1,
     onReturn: () => {
-      e7(Object.values(ek).length < 1 ? j.h8.PLAN_SELECT : j.h8.REVIEW, j.h8.PAYMENT_TYPE)
+      e7(Object.values(ev).length < 1 ? j.h8.PLAN_SELECT : j.h8.REVIEW, j.h8.PAYMENT_TYPE)
     },
     onComplete: e => {
       e7(j.h8.REVIEW, e)
@@ -316,7 +316,7 @@ function ep(e) {
       analyticsSourceLocation: ea,
       onClose: nr,
       onBack: () => e7(j.h8.PLAN_SELECT),
-      onSkip: () => e7(null != eb || eW ? j.h8.REVIEW : j.h8.ADD_PAYMENT_STEPS),
+      onSkip: () => e7(null != eM || eW ? j.h8.REVIEW : j.h8.ADD_PAYMENT_STEPS),
       onSubscriptionConfirmation: e_,
       priceOptions: e
     })
@@ -345,12 +345,13 @@ function ep(e) {
               window.location.href = "discord://app/settings/nitro";
               return
             }
-            nr(), null != s && s(), (0, k.z)()
+            nr(), null != s && s(), (0, v.z)()
           },
           priceOptions: a
-        }), ns && null != eg && null != eg.paymentGateway ? e = (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)(E.kzN, {
-            className: el.externalErrorBlock,
+        }), ns && null != eg && null != eg.paymentGateway ? e = (0, l.jsxs)("div", {
+          className: el.externalErrorBlock,
+          children: [(0, l.jsx)(E.M14, {
+            type: "critical",
             children: ei.intl.format(ei.t["/m3Y3t"], {
               paymentGatewayName: et.Vz[eg.paymentGateway]
             })
@@ -373,8 +374,8 @@ function ep(e) {
           type: "submit",
           disabled: ni || 0 === eY || ns || u,
           onClick: () => {
-            if (!eP && (null == eM || eM.premiumSubscriptionType !== en.PremiumTypes.TIER_2)) return void e7(j.h8.PREMIUM_UPSELL);
-            e7(null != eb || eW ? j.h8.REVIEW : j.h8.ADD_PAYMENT_STEPS)
+            if (!eP && (null == eb || eb.premiumSubscriptionType !== en.PremiumTypes.TIER_2)) return void e7(j.h8.PREMIUM_UPSELL);
+            e7(null != eM || eW ? j.h8.REVIEW : j.h8.ADD_PAYMENT_STEPS)
           }
         });
         break;
@@ -387,10 +388,10 @@ function ep(e) {
         break;
       case j.h8.REVIEW:
         c()(null != eT, "Missing nextPremiumSubscriptionPlan"), e = (0, l.jsx)(Q.Gq, {
-          paymentSources: ek,
+          paymentSources: ev,
           priceOptions: a,
           currentPremiumSubscription: eg,
-          premiumSubscriptionPaymentSourceId: eb,
+          premiumSubscriptionPaymentSourceId: eM,
           premiumSubscriptionPlan: eT,
           newAdditionalPlans: e$,
           onPaymentSourceChange: e => eU(null != e ? e.id : null),
@@ -407,8 +408,8 @@ function ep(e) {
           loading: eG,
           onClick: async () => {
             c()(null != e$, "Missing newAdditionalPlans");
-            let e = (0, A.m)(ek, eD);
-            ev(null);
+            let e = (0, A.m)(ev, eD);
+            ek(null);
             try {
               nt(C.A.PURCHASING), eZ(true), c()(null != eD, "Missing paymentSourceId"), c()(null != eI, "Missing invoicePreview");
               let n = {
@@ -421,7 +422,7 @@ function ep(e) {
                   guild_id: ep,
                   application_id: eh
                 })), nE) return;
-              if (null == eg || null == eM) {
+              if (null == eg || null == eb) {
                 c()(null != e, "Missing paymentSource");
                 let i = await (0, P.XW)({
                   items: e$,
@@ -435,13 +436,13 @@ function ep(e) {
                 let i = {
                   items: (0, X.MY)(eg, e$)
                 };
-                i.currency = eg.currency, null == i.currency && (i.currency = a.currency), i.paymentSource = null != eb ? ek[eb] : true, null == i.paymentSource && (c()(null != e, "Missing paymentSource"), i.paymentSource = e, i.currency = a.currency);
+                i.currency = eg.currency, null == i.currency && (i.currency = a.currency), i.paymentSource = null != eM ? ev[eM] : true, null == i.paymentSource && (c()(null != e, "Missing paymentSource"), i.paymentSource = e, i.currency = a.currency);
                 let l = await (0, P.Mg)(eg, i, n, t, e8);
                 if (l.redirectConfirmation) return void nP(null != l.redirectURL)
               }
               0 === eS && e7(j.h8.CONFIRM), nt(C.A.COMPLETED), null != ep && await ed(ep, 0 !== eS), 0 !== eS && nr(), null == em || em()
             } catch (n) {
-              nt(C.A.FAIL), ev(n), H.default.track(ee.rMx.PAYMENT_FLOW_FAILED, es(er({}, e3), {
+              nt(C.A.FAIL), ek(n), H.default.track(ee.rMx.PAYMENT_FLOW_FAILED, es(er({}, e3), {
                 payment_error_code: null == n ? true : n.code,
                 payment_gateway: null != e ? e.type === ee.HeQ.CARD ? ee.gg$.STRIPE : ee.gg$.BRAINTREE : null,
                 payment_source_id: eD,
@@ -469,8 +470,8 @@ function ep(e) {
       case j.h8.CONFIRM:
         var nS;
         let d = null != (nS = null == o ? true : o.name) ? nS : null == eC ? true : eC.name,
-          _ = (0, A.$)(ek, eD),
-          S = (0, q.qH)(ef.current) && null != eM && !en.F$.has(eM.id);
+          _ = (0, A.$)(ev, eD),
+          S = (0, q.qH)(ef.current) && null != eb && !en.F$.has(eb.id);
         e = (0, l.jsx)(Q.R7, {
           guild: o,
           guildBoostQuantity: eY + ej.length,
@@ -493,9 +494,9 @@ function ep(e) {
       body: e,
       footer: e1 !== j.h8.CONFIRM ? (0, l.jsxs)(E.mzw, {
         "data-migration-pending": true,
-        direction: b.Z.Direction.HORIZONTAL,
-        align: b.Z.Align.CENTER,
-        justify: b.Z.Justify.END,
+        direction: M.Z.Direction.HORIZONTAL,
+        align: M.Z.Align.CENTER,
+        justify: M.Z.Justify.END,
         children: [null != t ? (0, l.jsx)("div", {
           className: el.backStep,
           children: (0, l.jsx)(m.zx, {

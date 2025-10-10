@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -61,8 +61,8 @@ let M = e => {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, C.z)(p.f), (0, j.f)();
-    let i = (0, g.Z)((0, s.Z)()),
+    (0, C.z)(p.f), (0, T.f)();
+    let i = (0, g.Z)((0, o.Z)()),
       c = (0, a.e7)([E.default], () => E.default.getCurrentUser()),
       {
         userProfile: H,
@@ -77,7 +77,7 @@ let M = e => {
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, A.Db)(),
+      } = (0, P.Db)(),
       {
         currentTab: z,
         hasFilters: G
@@ -93,11 +93,11 @@ let M = e => {
         tab: K,
         isFullScreen: t
       }),
-      Q = (0, T.O)(Y),
+      Q = (0, j.O)(Y),
       [J, X] = l.useState(),
-      $ = (0, a.e7)([v.Z], () => {
+      $ = (0, a.e7)([S.Z], () => {
         var e;
-        return null == (e = v.Z.getCategory(J)) ? true : e.name
+        return null == (e = S.Z.getCategory(J)) ? true : e.name
       }),
       [ee, et] = l.useState();
     (0, B.Kp)();
@@ -111,14 +111,14 @@ let M = e => {
       } = (0, L.B)(K, t);
     (0, x.q3)(i, er, $, el, ee), (0, x.EB)(er, c);
     let {
-      dismissShopButtonDC: eo
-    } = (0, P.Z)();
+      dismissShopButtonDC: es
+    } = (0, A.Z)();
     l.useEffect(() => {
-      eo()
-    }, [eo]), l.useEffect(() => {
+      es()
+    }, [es]), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let es = (0, a.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
+    let eo = (0, a.e7)([b.Z], () => b.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
       ea = l.useRef(null),
       ec = l.useRef(null);
     (0, u.Tbt)(ea);
@@ -138,7 +138,7 @@ let M = e => {
     } = (0, x.MV)(er);
     return ed && !t ? null : (0, r.jsx)(f.Gt, {
       value: eg,
-      children: (0, r.jsx)(S.k0, {
+      children: (0, r.jsx)(v.k0, {
         newValue: {
           sessionId: i,
           pageCategory: $,
@@ -148,21 +148,21 @@ let M = e => {
           tab: er,
           children: (0, r.jsx)(M, {
             onClose: V,
-            shouldAddEventListener: t && !es,
+            shouldAddEventListener: t && !eo,
             children: (0, r.jsxs)("div", {
-              className: o()(F.shop, {
+              className: s()(F.shop, {
                 [D.shopTakeOver]: U
               }),
               ref: t ? ea : ec,
               tabIndex: false,
               children: [(0, r.jsx)(N.I, {
                 isFullScreen: t,
-                isLayer: es,
+                isLayer: eo,
                 onClose: V,
                 handleTransition: ei,
                 selectedTab: er
               }), (0, r.jsx)("div", {
-                className: o()(F.shopViewWrapper, {
+                className: s()(F.shopViewWrapper, {
                   [F.visible]: el === Z.f7.VISIBLE,
                   [F.in]: el === Z.f7.IN,
                   [F.out]: el === Z.f7.OUT

@@ -71,7 +71,7 @@ function H(e) {
     claimableRewards: ed
   } = (0, w.wD)(), {
     paymentModalBanner: eC
-  } = (0, O.zb)(), ec = (0, _.a5)(ee), eu = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ep = el && ec && null != ed && ed.length > 0 && eu, e_ = (0, A.m)(X, Q), {
+  } = (0, O.zb)(), ec = (0, _.a5)(ee), eu = (null == (t = (0, p.Z)()) ? true : t.planSelectionBanner) != null, ep = el && ec && null != ed && ed.length > 0 && eu, e_ = (0, M.m)(X, Q), {
     newPlans: ef
   } = c.ZP.useExperiment({
     location: "d17fd6_3"
@@ -107,20 +107,21 @@ function H(e) {
     }
   });
   let eT = null != (H = null == ek ? true : ek.message) ? H : G.intl.string(G.t.R0RpRU),
-    eA = eL && null == ek,
-    eM = eL && null != ek,
-    eZ = eA && null == q && !!eL && (null == eE ? true : eE.subscriptionPeriodEnd) == null,
+    eM = eL && null == ek,
+    eA = eL && null != ek,
+    eZ = eM && null == q && !!eL && (null == eE ? true : eE.subscriptionPeriodEnd) == null,
     eB = !el && (null == ew ? true : ew.skuId) === R.Si.TIER_2 && (null == ex ? true : ex.referrer_id) != null,
     eN = null;
   return (eN = null != eC ? eC : eB ? (0, r.jsx)(g.Z, {}) : (0, r.jsx)(x.Z, {}), eZ) ? (0, r.jsx)(k.Z, {}) : (l()(null != et, "Step should be set"), l()(ev.length > 0, "Premium plan options should be set"), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(M.P, {
+    children: [(0, r.jsx)(A.P, {
       giftMessage: es
     }), !(el && (0, L.pO)(eo)) && (0, r.jsx)(E.Z, {
       isEligibleForTrial: eg
     }), (0, r.jsxs)(T.C3, {
-      children: [eA && (0, r.jsx)("hr", {
+      children: [eM && (0, r.jsx)("hr", {
         className: F.planSelectSeparatorUpper
-      }), eN, (0, r.jsx)(B.Z, {}), (0, r.jsx)(Z.Z, {}), eM ? (0, r.jsx)(s.kzN, {
+      }), eN, (0, r.jsx)(B.Z, {}), (0, r.jsx)(Z.Z, {}), eA ? (0, r.jsx)(s.M14, {
+        type: "critical",
         children: eT
       }) : (0, r.jsx)(j.O, {
         planOptions: ev,
@@ -132,7 +133,7 @@ function H(e) {
         discountInvoiceItems: ey ? null == eE ? true : eE.invoiceItems : true,
         useCompactGiftComponents: ep,
         handleClose: V
-      }), eA && (0, r.jsxs)(r.Fragment, {
+      }), eM && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("hr", {
           className: F.planSelectSeparatorLower
         }), (0, r.jsx)(s.Text, {
@@ -153,7 +154,7 @@ function H(e) {
           onBackClick: () => U(P.h8.SKU_SELECT),
           showBackButton: null == D && null == W,
           planOptions: ev,
-          shouldRenderUpdatedPaymentModal: eA,
+          shouldRenderUpdatedPaymentModal: eM,
           isTrial: eg
         })
       })]

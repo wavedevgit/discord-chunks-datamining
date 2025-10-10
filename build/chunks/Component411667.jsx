@@ -2,41 +2,48 @@
 /** chunk id: 411667, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk346163 = require("./346163.js"),
-  Chunk587431 = require("./587431.jsx"),
-  Chunk539290 = require("./539290.jsx"),
+var Chunk951288 = require("./951288.js"),
+  Chunk793030 = require("./793030.js"),
+  Chunk346163 = require("./346163.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk515444 = require("./515444.js");
 
-function d(e) {
+function c(e) {
   let t, {
       guild: n
     } = e,
     {
-      resubmittingEnableRequest: d,
-      resubmissionError: u,
-      createEnableRequest: g,
-      resubmittedRequest: m,
-      requestRejectedNoticeText: p,
-      reapplyNoticeText: f
-    } = (0, i.Z)(n),
-    h = n.features.has(s.oNc.CREATOR_MONETIZABLE_RESTRICTED),
-    b = n.features.has(s.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
-  if (null != u) return (0, r.jsx)(l.Z, {
-    className: c.noticeContainer,
-    children: u.getAnyErrorMessage()
+      resubmittingEnableRequest: c,
+      resubmissionError: d,
+      createEnableRequest: u,
+      resubmittedRequest: g,
+      requestRejectedNoticeText: m,
+      reapplyNoticeText: p
+    } = (0, l.Z)(n),
+    f = n.features.has(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    h = n.features.has(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+  if (null != d) return (0, r.jsx)("div", {
+    className: o.noticeContainer,
+    children: (0, r.jsx)(i.M14, {
+      type: "critical",
+      children: d.getAnyErrorMessage()
+    })
   });
-  let x = null;
-  return null != p ? x = p : m ? x = o.intl.string(o.t.MyJpJS) : null != f ? (x = f, t = o.intl.string(o.t["YKw/NT"])) : b ? x = o.intl.string(o.t.e2g9sb) : h && (x = o.intl.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
-    className: c.noticeContainer,
-    notice: x,
-    ctaLabel: t,
-    ctaLoading: d,
-    onClick: g
+  let b = null;
+  return null != m ? b = m : g ? b = s.intl.string(s.t.MyJpJS) : null != p ? (b = p, t = s.intl.string(s.t["YKw/NT"])) : h ? b = s.intl.string(s.t.e2g9sb) : f && (b = s.intl.string(s.t.rxI9sr)), null != b ? (0, r.jsx)("div", {
+    className: o.noticeContainer,
+    children: (0, r.jsx)(i.Wn, {
+      messageType: i.QYI.WARNING,
+      action: (0, r.jsx)(i.zxk, {
+        variant: "overlay-secondary",
+        text: t,
+        onClick: u,
+        loading: c
+      }),
+      children: b
+    })
   }) : null
 }

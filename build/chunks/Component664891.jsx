@@ -320,7 +320,8 @@ function q(e) {
   let R = null != S ? S : C;
   if (i.useEffect(() => {
       s(R)
-    }, [s, R]), null != R) return (0, r.jsx)(d.kzN, {
+    }, [s, R]), null != R) return (0, r.jsx)(d.M14, {
+    type: "critical",
     children: R.message
   });
   let P = (0, v.Kp)({
@@ -392,7 +393,8 @@ function X(e) {
     A = null != T ? T : O;
   return (i.useEffect(() => {
     o(A)
-  }, [o, A]), null != A) ? (0, r.jsx)(d.kzN, {
+  }, [o, A]), null != A) ? (0, r.jsx)(d.M14, {
+    type: "critical",
     children: A.message
   }) : (null != v && (t = {
     amount: v.subtotal,
@@ -454,7 +456,8 @@ function Q(e) {
   let E = null != _ ? _ : h;
   if (i.useEffect(() => {
       s(E)
-    }, [s, E]), null != E) return (0, r.jsx)(d.kzN, {
+    }, [s, E]), null != E) return (0, r.jsx)(d.M14, {
+    type: "critical",
     children: E.message
   });
   if (null == f || null == p) return (0, r.jsx)(d.$jN, {
@@ -511,7 +514,8 @@ function J(e) {
     });
   if (i.useEffect(() => {
       f(h)
-    }, [f, h]), null != m) return (0, r.jsx)(d.kzN, {
+    }, [f, h]), null != m) return (0, r.jsx)(d.M14, {
+    type: "critical",
     children: m.message
   });
   if (null == h) return (0, r.jsx)("div", {

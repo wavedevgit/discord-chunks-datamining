@@ -2,12 +2,12 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => j
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -28,27 +28,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function T(e) {
+function j(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: i,
-    scrollerRef: T,
-    tab: j
+    scrollerRef: j,
+    tab: T
   } = e, L = (0, d.sp)(), k = null != (t = null == L ? true : L.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: B
-  } = (0, v.Z)(), N = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
-    skus: A,
-    currentPage: P,
+  } = (0, S.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+    skus: P,
+    currentPage: A,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, h.a)(), w = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), H = l.useCallback(() => {
+  } = (0, h.a)(), w = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(P)), H = l.useCallback(() => {
     var e;
-    null == T || null == (e = T.current) || e.scrollToTop({
+    null == j || null == (e = j.current) || e.scrollToTop({
       animate: true
     })
-  }, [T]), F = null == A ? true : A.join("");
+  }, [j]), F = null == P ? true : P.join("");
   l.useEffect(() => {
     H()
   }, [F, H]);
@@ -58,12 +58,12 @@ function T(e) {
     n || (0, _.n)({
       sessionId: k,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: j,
+      tab: T,
       isFullScreen: i,
       unpublishedCategoriesShown: B,
       cacheDisabled: I
     })
-  }, [k, i, B, I, n, j]);
+  }, [k, i, B, I, n, T]);
   let W = l.useRef(null),
     {
       setQueryPageSize: U,
@@ -99,15 +99,15 @@ function T(e) {
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()({
+      className: s()({
         [y.productsEmpty]: q
       }),
       children: [q && (0, r.jsx)(O.Z, {}), (0, r.jsxs)("div", {
-        className: o()(y.products, {
+        className: s()(y.products, {
           [y.loadIn]: G
         }),
         ref: W,
-        children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(S.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && M.map((e, t) => {
+        children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(v.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && M.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
@@ -119,7 +119,7 @@ function T(e) {
               product: e,
               user: N,
               category: n,
-              tab: j
+              tab: T
             }, e.skuId)
           }, e.skuId)
         })]
@@ -128,7 +128,7 @@ function T(e) {
       className: y.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
-          currentPage: P,
+          currentPage: A,
           totalCount: R,
           pageSize: z,
           onPageChange: Q,

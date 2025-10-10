@@ -101,9 +101,9 @@ function P(e) {
   }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), L = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => L === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), G = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
+  }), L = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => L === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), M = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
-  function M(e) {
+  function G(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
       r = [...k];
     r.push({
@@ -118,10 +118,10 @@ function P(e) {
   function U() {
     g.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: e => M(e),
-      excludedPlatformTypes: G,
+      onComplete: e => G(e),
+      excludedPlatformTypes: M,
       integrations: o,
-      onCompleteApplication: e => M(O.Kt, e)
+      onCompleteApplication: e => G(O.Kt, e)
     })
   }
   let B = null;

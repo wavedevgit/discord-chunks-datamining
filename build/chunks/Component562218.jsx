@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk434333 = require("./434333.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk74538 = require("./74538.js"),
   Chunk45474 = require("./45474.js"),
@@ -25,12 +25,12 @@ let p = () => {
       paymentsBlocked: h,
       planId: x,
       handleCancellation: P
-    } = (0, Chunk594135.a)(), [C, v] = (0, Chunk647438.useState)(false), [y, T] = (0, Chunk647438.useState)(false), E = async () => {
-      v(true), T(false);
+    } = (0, Chunk594135.a)(), [C, y] = (0, Chunk647438.useState)(false), [v, T] = (0, Chunk647438.useState)(false), E = async () => {
+      y(true), T(false);
       try {
         await P(), require()
       } catch (t) {
-        T(true), v(false)
+        T(true), y(false)
       }
     }, S = p.items.some(t => {
       let {
@@ -68,7 +68,8 @@ let p = () => {
       subtitle: g(h, Chunk63063, p),
       actions: _,
       onClose: async () => require(),
-      children: y ? (0, Chunk951288.jsx)(Chunk434333.k, {
+      children: v ? (0, Chunk951288.jsx)(Chunk481060.M14, {
+        type: "critical",
         children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
       }) : null
     })

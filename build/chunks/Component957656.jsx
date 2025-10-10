@@ -1,5 +1,5 @@
 /** Chunk was on 69015 **/
-/** chunk id: 957656, original params: e,r,t (module,exports,require) **/
+/** chunk id: 957656, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -12,123 +12,113 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk167154 = require("./167154.js");
 let d = e => {
-  var r, t, {
+  var t, r, {
       children: i,
-      className: s
+      className: c
     } = e,
-    a = function(e, r) {
+    a = function(e, t) {
       if (null == e) return {};
-      var t, n, o = function(e, r) {
+      var r, n, o = function(e, t) {
         if (null == e) return {};
-        var t, n, o = {},
+        var r, n, o = {},
           i = Object.keys(e);
-        for (n = 0; n < i.length; n++) t = i[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
+        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
         return o
-      }(e, r);
+      }(e, t);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) t = i[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
     }(e, ["children", "className"]);
-  return (0, n.jsx)(o.Y0X, (r = function(e) {
-    for (var r = 1; r < arguments.length; r++) {
-      var t = null != arguments[r] ? arguments[r] : {},
-        n = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), n.forEach(function(r) {
+  return (0, n.jsx)(o.Y0X, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
         var n;
-        n = t[r], r in e ? Object.defineProperty(e, r, {
+        n = r[t], t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[r] = n
+        }) : e[t] = n
       })
     }
     return e
   }({
     "data-migration-pending": true,
-    className: s
-  }, a), t = t = {
+    className: c
+  }, a), r = r = {
     parentComponent: "FamilyCenterCommonModal",
     children: i
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
-    var t = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var n = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, n)
+      r.push.apply(r, n)
     }
-    return t
-  })(Object(t)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(t, e))
-  }), r))
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t))
 };
 d.ButtonFooter = e => {
   let {
-    children: r
+    children: t
   } = e;
   return (0, n.jsx)("div", {
     className: l.footer,
-    children: r
+    children: t
   })
 }, d.Header = e => {
   let {
-    icon: r,
-    currentUser: t,
+    icon: t,
+    currentUser: r,
     otherUser: a,
-    header: c
+    header: s
   } = e;
   return (0, n.jsxs)("div", {
     className: l.header,
     children: [(0, n.jsx)(i.Z, {
-      currentUser: t,
+      currentUser: r,
       otherUser: a,
-      children: r
+      children: t
     }), (0, n.jsxs)("div", {
       className: l.heading,
       children: [(0, n.jsx)(o.Heading, {
         variant: "text-lg/bold",
-        children: c
-      }), (0, n.jsx)(s.Z, {
+        children: s
+      }), (0, n.jsx)(c.Z, {
         user: a
       })]
     })]
   })
 }, d.Content = e => {
   let {
-    children: r
+    children: t
   } = e;
   return (0, n.jsx)("div", {
     className: l.content,
-    children: r
+    children: t
   })
 }, d.Notice = e => {
   let {
-    notice: r
+    notice: t
   } = e;
   return (0, n.jsxs)("div", {
     className: l.notice,
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
       color: "header-primary",
-      children: c.intl.string(a.default.cXgKMD)
+      children: s.intl.string(a.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: r
+      children: t
     })]
-  })
-}, d.Error = e => {
-  let {
-    error: r,
-    onDismiss: t
-  } = e;
-  return null == r ? null : (0, n.jsx)(o.kzN, {
-    className: l.error,
-    onDismiss: t,
-    children: r
   })
 };
 let u = d

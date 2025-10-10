@@ -28,17 +28,17 @@ function m(t) {
     value: t.id
   })), [C]), f = (null == m || null == (i = m.team) ? true : i.id) !== h, [Z, {
     loading: j,
-    error: k
-  }] = (0, u.Z)(o.ZP.transferApplication), y = async () => {
+    error: y
+  }] = (0, u.Z)(o.ZP.transferApplication), k = async () => {
     s()(null != m, "no application"), s()(null != h, "no team selected"), null != await Z({
       applicationId: m.id,
       teamId: h
     }) && x()
-  }, N = (null == m ? true : m.team) != null;
+  }, I = (null == m ? true : m.team) != null;
   return (0, l.jsxs)(r.Modal, {
     transitionState: a,
-    title: N ? g.intl.string(g.t["4TveVl"]) : g.intl.string(g.t.feBUAQ),
-    subtitle: N ? g.intl.string(g.t.c7HS0t) : g.intl.string(g.t.atZ50N),
+    title: I ? g.intl.string(g.t["4TveVl"]) : g.intl.string(g.t.feBUAQ),
+    subtitle: I ? g.intl.string(g.t.c7HS0t) : g.intl.string(g.t.atZ50N),
     onClose: x,
     actions: [{
       variant: "secondary",
@@ -49,9 +49,9 @@ function m(t) {
       text: g.intl.string(g.t.R3BPHx),
       loading: j,
       disabled: !f,
-      onClick: y
+      onClick: k
     }],
-    children: [N ? (0, l.jsxs)(d.Wn, {
+    children: [I ? (0, l.jsxs)(d.Wn, {
       messageType: d.QYI.WARNING,
       children: [g.intl.string(g.t.Caz8nJ), (0, l.jsx)(d.LZC, {
         size: 4
@@ -59,12 +59,13 @@ function m(t) {
         variant: "text-sm/normal",
         children: g.intl.string(g.t.u4ddHR)
       })]
-    }) : null, null != k ? (0, l.jsx)(d.kzN, {
-      children: k.message
+    }) : null, null != y ? (0, l.jsx)(d.M14, {
+      type: "critical",
+      children: y.message
     }) : null, (0, l.jsx)(d.LZC, {
       size: 16
     }), (0, l.jsx)(d.q4e, {
-      label: N ? g.intl.string(g.t.xZ6ZLy) : g.intl.string(g.t.bfmKdH),
+      label: I ? g.intl.string(g.t.xZ6ZLy) : g.intl.string(g.t.bfmKdH),
       required: true,
       options: b,
       placeholder: g.intl.string(g.t.QXf93N),

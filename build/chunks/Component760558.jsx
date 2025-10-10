@@ -104,7 +104,7 @@ let v = e => {
           n = j.length,
           i = "CONFIRM" === S[0] ? U : () => R(S[S.indexOf(N) - 1]),
           a = async () => {
-            if (null != D && (null == x ? true : x.length) !== 0) {
+            if (w(false), null != D && (null == x ? true : x.length) !== 0) {
               o()(!x.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
               try {
                 await Promise.all(x.map(e => {
@@ -152,7 +152,6 @@ let v = e => {
             }),
             imageClass: O.transferConfirmImage,
             error: P ? C : null,
-            onDismissError: () => w(false),
             slotCount: t,
             canceledCount: e
           }) : (0, r.jsx)(m.Z.ApplyBody, {
@@ -164,7 +163,6 @@ let v = e => {
             }),
             imageClass: O.confirmImage,
             error: P ? C : null,
-            onDismissError: () => w(false),
             slotCount: t,
             canceledCount: e
           })

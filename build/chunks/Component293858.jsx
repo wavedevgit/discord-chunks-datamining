@@ -40,8 +40,8 @@ function y(e) {
       selectedPlan: E,
       selectedSkuId: k,
       step: T,
-      updatedSubscription: A,
-      startingPremiumSubscriptionPlanIdRef: M,
+      updatedSubscription: M,
+      startingPremiumSubscriptionPlanIdRef: A,
       startingFractionalPremiumEndsAtRef: Z
     } = (0, f.JL)(),
     {
@@ -77,17 +77,17 @@ function y(e) {
     })
   }, [K, W]);
   let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != L) t = L(E, Q, A);
+  if (null != L) t = L(E, Q, M);
   else if (B) t = (0, r.jsx)(c.TB, {
     planId: E.id,
     onClose: Q
   });
   else {
-    let e = M.current === E.id ? {
+    let e = A.current === E.id ? {
       postSuccessGuild: v
     } : {
       followupSKUInfo: S,
-      startingPremiumSubscriptionPlanId: M.current,
+      startingPremiumSubscriptionPlanId: A.current,
       isDowngrade: null != I && (0, p.GY)(I, E.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {

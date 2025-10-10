@@ -22,8 +22,8 @@ function h(t) {
     onClose: a
   } = t, h = (0, u.Dt)(), [x, {
     loading: g,
-    error: k
-  }] = (0, c.Z)(d.oL), m = async () => {
+    error: m
+  }] = (0, c.Z)(d.oL), E = async () => {
     e()(null != n, "no guild"), null != await x(n.id) && a()
   };
   return (0, l.jsx)(r.Modal, {
@@ -33,7 +33,7 @@ function h(t) {
       variant: "critical-primary",
       text: p.intl.string(p.t.R3BPHx),
       loading: g,
-      onClick: m
+      onClick: E
     }],
     title: p.intl.string(p.t.rRpcEx),
     subtitle: p.intl.format(p.t["Oa5P6+"], {
@@ -41,9 +41,10 @@ function h(t) {
       url: o.EYA.DEVELOPER_PORTAL_TEAMS
     }),
     onClose: a,
-    children: null != k ? (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(s.kzN, {
-        children: k.message
+    children: null != m ? (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)(s.M14, {
+        type: "critical",
+        children: m.message
       }), (0, l.jsx)(s.LZC, {
         size: 24
       })]

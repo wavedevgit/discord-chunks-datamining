@@ -251,7 +251,7 @@ let e_ = {
       case ef.pNK.ONBOARDING:
         return {
           section: ef.pNK.ONBOARDING, label: eb.intl.string(eb.t.LdxCKy), element: F.Z, ariaLabel: eb.intl.string(eb.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
-            stores: [M.Z, G.Z],
+            stores: [G.Z, M.Z],
             element: H.Z
           }, predicate: () => (0, f.wC)(t.guild.id), decoration: function(e, t) {
             if (p.Z.getEnabled(e)) return eb.intl.string(eb.t.pPSmxs).toUpperCase();

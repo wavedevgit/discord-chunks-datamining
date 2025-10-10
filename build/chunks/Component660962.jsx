@@ -65,7 +65,7 @@ function Y(e) {
     required: true,
     type: "text",
     value: l,
-    maxLength: G.VKK,
+    maxLength: M.VKK,
     onChange: function(e) {
       a(e), K(t.id, e)
     },
@@ -224,13 +224,13 @@ function Q(e) {
       description: U.intl.string(U.t["9UCxlZ"]),
       required: true,
       children: (0, r.jsx)(z, {
-        defaultColor: G.p6O,
-        colors: a === T.g.GRADIENT && s ? M.tl : G.pmI,
+        defaultColor: M.p6O,
+        colors: a === T.g.GRADIENT && s ? G.tl : M.pmI,
         value: i.color,
         disabled: l,
         onChange: e => {
           var t;
-          return t = e, void(i.color !== t && (t !== G.p6O || 0 !== i.color) && (t === G.p6O && (t = 0), (0, S.OW)(i.id, t)))
+          return t = e, void(i.color !== t && (t !== M.p6O || 0 !== i.color) && (t === M.p6O && (t = 0), (0, S.OW)(i.id, t)))
         },
         secondaryValue: a === T.g.GRADIENT && s && (null == (t = i.colors) ? true : t.secondary_color) != null ? null == (n = i.colors) ? true : n.secondary_color : true,
         onChangeGradientColors: e => {
@@ -266,7 +266,7 @@ function J(e) {
   }, d = {
     src: V,
     name: t.name
-  }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
+  }, u = (0, v.oC)(n, t), p = [M.BRd.DARK, M.BRd.DARKER, M.BRd.MIDNIGHT, M.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {
     children: (0, r.jsx)("div", {
       className: a()(F.previewContainer, {
@@ -287,7 +287,7 @@ function J(e) {
               previewGuildId: n,
               isGroupStart: true
             })
-          }), e === G.BRd.LIGHT && i !== T.g.SOLID && (0, r.jsx)(m.Text, {
+          }), e === M.BRd.LIGHT && i !== T.g.SOLID && (0, r.jsx)(m.Text, {
             variant: "text-xs/medium",
             color: "text-secondary",
             className: F.lightThemeNotice,

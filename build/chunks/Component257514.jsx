@@ -34,7 +34,7 @@ function O(t) {
     error: g,
     submitting: m
   } = (t => {
-    let [e, n] = i.useState(false), [a, l] = i.useState(null);
+    let [e, n] = a.useState(false), [i, l] = a.useState(null);
     return {
       cancelSubscription: async e => {
         try {
@@ -45,24 +45,24 @@ function O(t) {
           n(false)
         }
       },
-      error: a,
+      error: i,
       submitting: e
     }
   })(T), b = async () => {
-    await f(E.id) && (u.ZP.disableApplicationSubscriptionCancellationSurvey ? P() : (0, r.ZDy)(async () => (await P(), t => (0, a.jsx)(p.Z, function(t) {
+    await f(E.id) && (u.ZP.disableApplicationSubscriptionCancellationSurvey ? P() : (0, r.ZDy)(async () => (await P(), t => (0, i.jsx)(p.Z, function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
-          a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
           return Object.getOwnPropertyDescriptor(n, t).enumerable
-        }))), a.forEach(function(e) {
-          var a;
-          a = n[e], e in t ? Object.defineProperty(t, e, {
-            value: a,
+        }))), i.forEach(function(e) {
+          var i;
+          i = n[e], e in t ? Object.defineProperty(t, e, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : t[e] = a
+          }) : t[e] = i
         })
       }
       return t
@@ -71,17 +71,17 @@ function O(t) {
       subscriptionId: E.id
     }, t)))))
   };
-  i.useEffect(() => {
+  a.useEffect(() => {
     C.default.track(I.rMx.CANCELLATION_FLOW_STARTED, {
       location_stack: T
     })
   }, [T]);
   let L = (0, _.KW)(O.skuFlags);
-  return (0, a.jsx)(l.ExpressiveModal, {
+  return (0, i.jsx)(l.ExpressiveModal, {
     actions: [{
       loading: m,
       onClick: b,
-      text: N.intl.string(N.t.KSqyfX),
+      text: A.intl.string(A.t.KSqyfX),
       variant: "critical-primary"
     }],
     graphic: {
@@ -90,28 +90,29 @@ function O(t) {
       aspectRatio: "16/9",
       props: {
         application: n,
-        className: A.largeAppIcon
+        className: N.largeAppIcon
       }
     },
-    title: N.intl.string(N.t.CeCHk5),
-    subtitle: L ? N.intl.format(N.t.fZP9QE, {
+    title: A.intl.string(A.t.CeCHk5),
+    subtitle: L ? A.intl.format(A.t.fZP9QE, {
       applicationName: n.name,
       timestamp: E.currentPeriodEnd.getTime()
-    }) : N.intl.format(N.t["3LeWBA"], {
+    }) : A.intl.format(A.t["3LeWBA"], {
       guild: null == S ? true : S.name,
       applicationName: n.name,
       timestamp: E.currentPeriodEnd.getTime()
     }),
     transitionState: e,
     onClose: P,
-    children: (0, a.jsxs)("div", {
-      className: A.cancelModalBody,
-      children: [null != g ? (0, a.jsx)(r.kzN, {
+    children: (0, i.jsxs)("div", {
+      className: N.cancelModalBody,
+      children: [null != g ? (0, i.jsx)(l.M14, {
+        type: "critical",
         children: g.message
-      }) : null, (0, a.jsx)(d.G9, {
+      }) : null, (0, i.jsx)(d.G9, {
         applicationId: n.id,
         storeListingBenefits: O.benefits,
-        className: A.benefitsContainer
+        className: N.benefitsContainer
       })]
     })
   })

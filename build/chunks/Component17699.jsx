@@ -318,33 +318,33 @@ function k() {
       null != e && E(t)(e) && r.push(e)
     }
     return r
-  }, [Chunk740903]), R = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, k = R.length % 1e3 == 0 && R.length > 0 && D, G = 0 === R.length, [M, U] = Chunk647438.useState({
+  }, [Chunk740903]), R = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, k = R.length % 1e3 == 0 && R.length > 0 && D, M = 0 === R.length, [G, U] = Chunk647438.useState({
     currentPage: 1,
     pageSize: 100
   });
   Chunk647438.useEffect(() => {
-    Chunk218867 && 1 !== M.currentPage && U(e => Z(w({}, e), {
+    Chunk218867 && 1 !== G.currentPage && U(e => Z(w({}, e), {
       currentPage: 1
     }))
-  }, [Chunk218867, M.currentPage]);
+  }, [Chunk218867, G.currentPage]);
   let B = Chunk647438.useCallback(e => {
       d.Z.fetchGuildBansBatch(O, 1e3, e)
     }, [Chunk434404]),
-    F = Chunk647438.useMemo(() => a().chunk(R, M.pageSize), [M.pageSize, R]),
+    F = Chunk647438.useMemo(() => a().chunk(R, G.pageSize), [G.pageSize, R]),
     H = Chunk647438.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (W.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > R.length && k && !p && (W.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
         currentPage: e
       }))
-    }, [M.pageSize, R, k, F, B, Chunk367907]),
+    }, [G.pageSize, R, k, F, B, Chunk367907]),
     W = Chunk647438.useRef(null);
   Chunk647438.useEffect(() => {
     B(W.current)
   }, [B]);
   let V = Chunk647438.useMemo(() => {
     var e;
-    return null != (e = F[M.currentPage - 1]) ? module : []
-  }, [F, M.currentPage]);
+    return null != (e = F[G.currentPage - 1]) ? module : []
+  }, [F, G.currentPage]);
   return null == Chunk239091 ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk40175.container,
     children: [(0, Chunk951288.jsx)(L, {
@@ -352,12 +352,12 @@ function k() {
       storedSearchQuery: Chunk479531
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk40175.scrollerContainer,
-      children: [!G && (0, Chunk951288.jsx)(A, {
+      children: [!M && (0, Chunk951288.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
         sortedBans: V,
         ref: Chunk84613
-      }), !k && G && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
+      }), !k && M && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,
         className: Chunk40175.emptyState,
         children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
@@ -376,9 +376,9 @@ function k() {
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)(Chunk481060.DsT, {
         className: Chunk40175.paginationInput,
-        totalCount: R.length + (k ? M.pageSize : 0),
-        pageSize: M.pageSize,
-        currentPage: M.currentPage,
+        totalCount: R.length + (k ? G.pageSize : 0),
+        pageSize: G.pageSize,
+        currentPage: G.currentPage,
         onPageChange: H,
         maxVisiblePages: 9
       })

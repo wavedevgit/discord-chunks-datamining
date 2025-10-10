@@ -58,7 +58,8 @@ function _(e) {
       className: d.downloadRefundInvoice,
       onClick: () => p(true),
       children: u.intl.formatToPlainString(u.t["3x6NGx"], {})
-    }) : null, null != l && "" !== l && (0, r.jsx)(o.kzN, {
+    }) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
+      type: "critical",
       children: l
     })]
   }) : t.hasInvoiceURL && null != n ? (0, r.jsxs)("div", {
@@ -70,7 +71,8 @@ function _(e) {
       className: d.downloadRefundInvoice,
       href: e,
       children: u.intl.formatToPlainString(u.t["3x6NGx"], {})
-    }, t)) : null, null != l && "" !== l && (0, r.jsx)(o.kzN, {
+    }, t)) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
+      type: "critical",
       children: l
     })]
   }) : m ? (0, r.jsx)("div", {

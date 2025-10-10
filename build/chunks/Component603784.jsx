@@ -97,15 +97,15 @@ let w = Chunk647438.forwardRef((e, t) => {
       onUserContextMenu: L,
       theme: k
     } = e,
-    G = i.useRef(null),
-    M = function() {
+    M = i.useRef(null),
+    G = function() {
       let {
         changes: e
       } = l;
       return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
     }(),
     U = I.headerDefault;
-  f ? U = I.headerExpanded : M && (U = I.headerClickable);
+  f ? U = I.headerExpanded : G && (U = I.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
   n = B === F ? (0, r.jsx)(d.Text, {
@@ -117,7 +117,7 @@ let w = Chunk647438.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let H = M ? D : N.dG4;
+  let H = G ? D : N.dG4;
   return (0, r.jsx)(s.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
@@ -141,14 +141,14 @@ let w = Chunk647438.forwardRef((e, t) => {
             }
           } = l;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
-            targetElementRef: G,
+            targetElementRef: M,
             user: e,
             guildId: _,
             newAnalyticsLocations: [g.Z.AVATAR],
             children: e => {
               var t;
               return (0, r.jsx)(d.qEK, T(S({}, e), {
-                ref: G,
+                ref: M,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
@@ -219,7 +219,7 @@ let w = Chunk647438.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), M ? (0, r.jsx)(j.Z, {
+        }), G ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: f,

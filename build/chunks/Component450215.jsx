@@ -37,7 +37,7 @@ function y(e) {
     groupListingId: I,
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: T
-  } = e, [P, w] = i.useState(s), Z = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), R = null == Z, [D, A] = i.useState(R), L = null == Z ? true : Z.subscription_plans[0], k = null != (t = null == Z ? true : Z.published) && t, G = null != (n = null == Z ? true : Z.archived) && n, M = !G && !k && true !== Z, U = true === Z, B = (0, h.mY)(), [F] = x._T(P), [H] = x.mR(P), [W] = x.PK(P), [V] = x.d9(P, 1024), z = "" !== F ? F : C.intl.string(C.t.QWhe9P), K = "" !== F && null != V && "" !== W && null != H && !B, Y = x.rU(P), {
+  } = e, [P, w] = i.useState(s), Z = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), R = null == Z, [D, A] = i.useState(R), L = null == Z ? true : Z.subscription_plans[0], k = null != (t = null == Z ? true : Z.published) && t, M = null != (n = null == Z ? true : Z.archived) && n, G = !M && !k && true !== Z, U = true === Z, B = (0, h.mY)(), [F] = x._T(P), [H] = x.mR(P), [W] = x.PK(P), [V] = x.d9(P, 1024), z = "" !== F ? F : C.intl.string(C.t.QWhe9P), K = "" !== F && null != V && "" !== W && null != H && !B, Y = x.rU(P), {
     loading: q,
     error: X,
     handleCreateOrUpdateFromEditState: Q
@@ -72,11 +72,11 @@ function y(e) {
           size: 2
         }), (0, r.jsxs)("div", {
           className: O.headerDescriptionContainer,
-          children: [M && (0, r.jsx)(d.IGR, {
+          children: [G && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.YELLOW_300),
             text: C.intl.string(C.t.vosPk5),
             className: O.draftBadge
-          }), G && (0, r.jsx)(d.IGR, {
+          }), M && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.PRIMARY_500),
             text: C.intl.string(C.t.nhbtEh),
             className: O.archivedBadge

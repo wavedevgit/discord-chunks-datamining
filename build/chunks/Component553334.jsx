@@ -35,33 +35,33 @@ function d(t) {
     subscriptionId: n,
     onClose: d,
     transitionState: p
-  } = t, [I, N] = i.useState(false), [A, O] = i.useState(null), [E, S] = i.useState(""), P = i.useCallback(() => {
-    null != A && (o.default.track(c.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
-      answer: A,
+  } = t, [I, A] = a.useState(false), [N, O] = a.useState(null), [E, S] = a.useState(""), P = a.useCallback(() => {
+    null != N && (o.default.track(c.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
+      answer: N,
       application_id: e.id,
       reason: E,
       subscription_id: n
     }), d())
-  }, [e.id, n, A, d, E]);
-  return i.useEffect(() => {
+  }, [e.id, n, N, d, E]);
+  return a.useEffect(() => {
     s.ZP.updatedUnsyncedSettings({
       disableApplicationSubscriptionCancellationSurvey: I
     })
-  }, [I]), (0, a.jsxs)(l.Modal, {
+  }, [I]), (0, i.jsxs)(l.Modal, {
     title: u.intl.string(u.t.zPxMdX),
     subtitle: u.intl.string(u.t.QJGdBw),
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.geKm7u),
       onClick: P,
-      disabled: null == A
+      disabled: null == N
     }],
     onClose: d,
     transitionState: p,
-    children: [(0, a.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       className: C.answerChoicesContainer,
-      children: (0, a.jsx)(r.FXm, {
-        value: A,
+      children: (0, i.jsx)(r.FXm, {
+        value: N,
         options: _.map(t => {
           let {
             nameGetter: e,
@@ -74,17 +74,17 @@ function d(t) {
         }),
         onChange: t => O(t)
       })
-    }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === A && (0, a.jsx)("div", {
+    }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === N && (0, i.jsx)("div", {
       className: C.otherField,
-      children: (0, a.jsx)(r.oil, {
+      children: (0, i.jsx)(r.oil, {
         autoFocus: true,
         placeholder: u.intl.string(u.t.s6tM8f),
         value: E,
         onChange: S
       })
-    }), (0, a.jsx)(r.Checkbox, {
+    }), (0, i.jsx)(r.Checkbox, {
       checked: I,
-      onChange: t => N(t),
+      onChange: t => A(t),
       label: u.intl.string(u.t["3vPFQk"]),
       labelType: "secondary"
     })]

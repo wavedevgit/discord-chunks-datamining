@@ -78,7 +78,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: Z
     } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
       canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk852860)
-    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [G, M] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
+    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [M, G] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
     Chunk647438.useEffect(() => {
       if (null !== D) {
         let e = [],
@@ -99,7 +99,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             })(n);
             null !== i ? (t[r] = i, e[r] = true) : e[r] = false
           } else e[r] = true
-        }), H(exports), k(module), M(module.every(e => true === e))
+        }), H(exports), k(module), G(module.every(e => true === e))
       }
     }, [D]);
     let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
@@ -350,7 +350,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               let n = [...D.socialLinks],
                                 r = [...F],
                                 i = [...L];
-                              r[t] = e, n[t] = N.z[e].baseUrl, i[t] = true, k(i), H(r), M(i.every(e => true === e)), (0, m.t$)(d.id, n)
+                              r[t] = e, n[t] = N.z[e].baseUrl, i[t] = true, k(i), H(r), G(i.every(e => true === e)), (0, m.t$)(d.id, n)
                             })(e, t),
                             isDisabled: !Z
                           }), (0, r.jsx)(o.oil, {
@@ -423,7 +423,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     children: Y,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
                     buttonCallback: () => z(true),
-                    disabled: !Z || !G
+                    disabled: !Z || !M
                   })
                 })]
               })

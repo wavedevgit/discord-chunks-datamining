@@ -309,12 +309,12 @@ function L(e) {
       children: O.intl.string(O.t.aWsjtL)
     }), (0, i.jsxs)("div", {
       className: s()(N.marginTop20, y.buttonContainer),
-      children: [n.isDirty && (0, i.jsx)(G, {
+      children: [n.isDirty && (0, i.jsx)(M, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
         className: y.rightButtonContainer,
-        children: [(0, i.jsx)(M, {
+        children: [(0, i.jsx)(G, {
           guild: t,
           guildTemplate: n
         }), (0, i.jsx)(U, {
@@ -351,7 +351,7 @@ function k(e) {
   })
 }
 
-function G(e) {
+function M(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -376,7 +376,7 @@ function G(e) {
   })
 }
 
-function M(e) {
+function G(e) {
   let {
     guild: t,
     guildTemplate: n

@@ -54,10 +54,10 @@ function b(e, t, n, b) {
       return null != (t = null == b || null == (e = b.initialAnswers) ? true : e.map(e => m({}, (0, u.Uu)(), e))) ? t : [(0, u.Uu)(), (0, u.Uu)()]
     }),
     [P, w] = r.useState(null != (j = null == b ? true : b.initialQuestion) ? j : ""),
-    [C, k] = r.useState(false),
-    [R, x] = r.useState(null != (O = null == b ? true : b.initialDuration) ? O : f.lc.ONE_DAY),
-    [E, _] = r.useState({}),
-    [S, D] = r.useState(false),
+    [C, R] = r.useState(false),
+    [k, x] = r.useState(null != (O = null == b ? true : b.initialDuration) ? O : f.lc.ONE_DAY),
+    [E, S] = r.useState({}),
+    [_, D] = r.useState(false),
     A = h.filter(e => (0, u.cS)(e)),
     I = h.filter(e => (0, u.uY)(e)),
     N = P.length > 0 && A.length >= f.gY && 0 === I.length,
@@ -66,20 +66,20 @@ function b(e, t, n, b) {
       loading: T
     }] = (0, a.Z)(s.Z.createPoll),
     Z = h.length < f.fw,
-    B = h.length > f.gY,
-    Y = r.useCallback(e => {
-      _(e => {
+    Y = h.length > f.gY,
+    K = r.useCallback(e => {
+      S(e => {
         let t = m({}, e);
         return delete t.question, t
       }), w(e)
     }, []),
-    K = r.useCallback(e => {
+    B = r.useCallback(e => {
       let {
         text: t,
         index: n,
         localCreationAnswerId: r
       } = e;
-      _(e => {
+      S(e => {
         let t = m({}, e);
         return delete t["answer-".concat(r)], t
       }), v(e => {
@@ -89,7 +89,7 @@ function b(e, t, n, b) {
         }), r
       })
     }, []),
-    z = r.useCallback((e, t) => {
+    M = r.useCallback((e, t) => {
       v(n => {
         let r = [...n];
         return r[t] = p(m({}, r[t]), {
@@ -97,7 +97,7 @@ function b(e, t, n, b) {
         }), r
       })
     }, []),
-    M = r.useCallback((e, t, n) => {
+    z = r.useCallback((e, t, n) => {
       var r;
       let l = h[t],
         a = null == (r = l.image) ? true : r.mediaAttachmentState;
@@ -105,21 +105,21 @@ function b(e, t, n, b) {
     }, [h]),
     H = r.useCallback(async (e, t, n) => {
       let r = h[t].localCreationAnswerId;
-      if (M(e, t), z(g(n, o._.PREPARING), t), null == await c.IV(e, r, n)) return void z(g(n, o._.ERROR), t);
-      z(g(n, o._.READY_TO_UPLOAD), t)
-    }, [h, z, M]),
+      if (z(e, t), M(g(n, o._.PREPARING), t), null == await c.IV(e, r, n)) return void M(g(n, o._.ERROR), t);
+      M(g(n, o._.READY_TO_UPLOAD), t)
+    }, [h, M, z]),
     q = r.useCallback((e, t, n) => {
       let r = h[t].localCreationAnswerId,
         l = URL.createObjectURL(n);
-      M(e, t), z(g(l, o._.PREPARING), t), c.fH(e, r, n), z(g(l, o._.READY_TO_UPLOAD), t)
-    }, [h, z, M]),
+      z(e, t), M(g(l, o._.PREPARING), t), c.fH(e, r, n), M(g(l, o._.READY_TO_UPLOAD), t)
+    }, [h, M, z]),
     W = r.useCallback((e, t) => {
-      M(y, t), z({
+      z(y, t), M({
         emoji: e,
         stickerId: true,
         mediaAttachmentState: true
       }, t)
-    }, [y, z, M]),
+    }, [y, M, z]),
     F = r.useCallback(e => {
       v(t => {
         let n = [...t];
@@ -132,16 +132,16 @@ function b(e, t, n, b) {
       Z && v(e => [...e, (0, u.Uu)()])
     }, [Z]),
     V = r.useCallback(e => {
-      if (!B) return;
+      if (!Y) return;
       let t = h.length;
-      M(y, e), v(t => {
+      z(y, e), v(t => {
         let n = [...t];
         return n.splice(e, 1), n
       }), null == n || n({
         indexToRemove: e,
         numberOfAnswers: t
       })
-    }, [h.length, B, y, n, M]);
+    }, [h.length, Y, y, n, z]);
   r.useEffect(() => () => {
     c.xt(y)
   }, [y]);
@@ -150,7 +150,7 @@ function b(e, t, n, b) {
         t = {};
       return 0 === P.trim().length && (e = false, t.question = d.intl.string(d.t.gPX3oK)), h.filter(e => (0, u.cS)(e)).length < f.gY && (e = false, t["answer-".concat(h[0].localCreationAnswerId)] = d.intl.string(d.t.fYvzER)), h.forEach(n => {
         (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = d.intl.string(d.t["8Qqkc3"]))
-      }), _(t), D(!e), e
+      }), S(t), D(!e), e
     }, [h, P]),
     J = r.useCallback(async () => {
       await U({
@@ -158,11 +158,11 @@ function b(e, t, n, b) {
         question: P,
         answers: A,
         allowMultiSelect: C,
-        duration: R,
+        duration: k,
         layout: l.C.DEFAULT,
         onClose: t
       })
-    }, [P, A, C, R, U, e, t]),
+    }, [P, A, C, k, U, e, t]),
     Q = r.useCallback(() => {
       !T && X() && J()
     }, [J, T, X]);
@@ -171,14 +171,14 @@ function b(e, t, n, b) {
     question: P,
     setQuestion: w,
     allowMultiSelect: C,
-    setAllowMultiSelect: k,
-    duration: R,
+    setAllowMultiSelect: R,
+    duration: k,
     setDuration: x,
     canPost: N,
     canAddMoreAnswers: Z,
-    canRemoveMoreAnswers: B,
-    handleQuestionChange: Y,
-    handleAnswerTextChange: K,
+    canRemoveMoreAnswers: Y,
+    handleQuestionChange: K,
+    handleAnswerTextChange: B,
     handleGifSelect: H,
     handleEmojiSelect: W,
     handleCustomUpload: q,
@@ -190,7 +190,7 @@ function b(e, t, n, b) {
     handleSubmitPoll: Q,
     submitting: T,
     createPollError: L,
-    shouldFocusOnInvalidField: S,
+    shouldFocusOnInvalidField: _,
     setShouldFocusOnInvalidField: D
   }
 }

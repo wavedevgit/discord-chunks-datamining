@@ -165,7 +165,8 @@ let _ = e => {
     } = e;
     if (null == t) return;
     let n = "";
-    return n = t.code === c.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? h.intl.string(h.t.keFvXF) : t.code === c.SM.ALREADY_PURCHASED ? h.intl.string(h.t.m371Mz) : h.intl.string(h.t.fqJZ19), (0, r.jsx)(a.kzN, {
+    return n = t.code === c.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? h.intl.string(h.t.keFvXF) : t.code === c.SM.ALREADY_PURCHASED ? h.intl.string(h.t.m371Mz) : h.intl.string(h.t.fqJZ19), (0, r.jsx)(a.M14, {
+      type: "critical",
       children: n
     })
   },

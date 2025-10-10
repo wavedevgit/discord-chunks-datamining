@@ -66,9 +66,12 @@ let m = e => {
   }
   let y = (0, a.e7)([c.Z], () => c.Z.ipCountryCode);
   return 0 === n.country.length && (n.country = null != y ? y : ""), (0, r.jsxs)(i.Fragment, {
-    children: [E ? (0, r.jsx)(o.kzN, {
+    children: [E ? (0, r.jsx)("div", {
       className: _.errorBlock,
-      children: f.intl.string(f.t.vZ8y7u)
+      children: (0, r.jsx)(o.M14, {
+        type: "critical",
+        children: f.intl.string(f.t.vZ8y7u)
+      })
     }) : null, (0, r.jsx)(s.ZP, h({
       className: _.__invalid_formItem,
       onBillingAddressChange: m,

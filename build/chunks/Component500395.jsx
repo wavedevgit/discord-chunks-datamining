@@ -2,22 +2,19 @@
 /** chunk id: 500395, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk990547 = require("./990547.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
   Chunk787051 = require("./787051.js"),
-  Chunk696936 = require("./696936.jsx"),
-  Chunk539290 = require("./539290.jsx"),
   Chunk975464 = require("./975464.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk370511 = require("./370511.js"),
   Chunk270395 = require("./270395.js");
 
-function p(e) {
+function g(e) {
   let {
     config: t
   } = e, {
@@ -27,46 +24,47 @@ function p(e) {
     onCtaClicked: s
   } = t;
   return (0, r.jsxs)("div", {
-    className: g.__invalid_ctaContainer,
+    className: d.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: g.__invalid_heroBanner,
-      src: m,
-      alt: u.intl.string(u.t.Af4klJ)
+      className: d.__invalid_heroBanner,
+      src: u,
+      alt: c.intl.string(c.t.Af4klJ)
     }), (0, r.jsxs)("div", {
-      className: g.__invalid_ctaContent,
+      className: d.__invalid_ctaContent,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: u.intl.string(u.t.PqYfh4)
+        children: c.intl.string(c.t.PqYfh4)
       }), (0, r.jsx)(l.LZC, {
         size: 12
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: u.intl.string(u.t["41wkMT"])
+        children: c.intl.string(c.t["41wkMT"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(c.Z, {
-        className: g.waitlist,
-        color: o.W.BROWN,
-        buttonPosition: c.E.RIGHT,
-        notice: n,
-        ctaLabel: i,
-        ctaDisabled: !a,
-        onClick: s
+      }), (0, r.jsx)(l.Wn, {
+        messageType: l.QYI.INFO,
+        action: (0, r.jsx)(l.Button, {
+          variant: "overlay-secondary",
+          text: i,
+          onClick: s,
+          disabled: !a
+        }),
+        children: n
       })]
     })]
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     guild: t,
     config: n
   } = e, {
-    isLoading: o,
-    error: c,
-    creatorMonetizationOnboardingMarketing: u
+    isLoading: c,
+    error: u,
+    creatorMonetizationOnboardingMarketing: m
   } = (0, s.Z)(t.id);
   return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
@@ -74,13 +72,13 @@ function f(e) {
     properties: {
       guild_id: t.id
     }
-  }), o) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
-    className: g.__invalid_container,
-    children: [(0, r.jsx)(p, {
+  }), c) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
+    className: d.__invalid_container,
+    children: [(0, r.jsx)(g, {
       config: n
-    }), (0, r.jsx)(d.C, {
-      onboardingMarketing: u,
-      onboardingMarketingError: c
+    }), (0, r.jsx)(o.C, {
+      onboardingMarketing: m,
+      onboardingMarketingError: u
     })]
   })
 }

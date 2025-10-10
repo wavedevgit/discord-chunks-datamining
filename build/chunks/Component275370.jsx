@@ -1,7 +1,7 @@
 /** Chunk was on 59716 **/
-/** chunk id: 275370, original params: e,r,t (module,exports,require) **/
+/** chunk id: 275370, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,49 +16,50 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk986360 = require("./986360.js");
-let h = e => {
+let m = e => {
   let {
-    currentUser: r,
-    otherUser: t,
-    transitionState: i,
-    onClose: h
-  } = e, j = o.useCallback(() => {
-    h()
-  }, [h]), x = (0, d.Z)(), [g, y] = o.useState(false), O = o.useCallback(() => {
+    currentUser: t,
+    otherUser: r,
+    transitionState: o,
+    onClose: m
+  } = e, j = i.useCallback(() => {
+    m()
+  }, [m]), x = (0, d.Z)(), [g, y] = i.useState(false), O = i.useCallback(() => {
     y(true)
   }, []), {
     acceptLinkRequest: v,
-    isAcceptLoading: _
+    isAcceptLoading: w
   } = (0, c.G)({
     onError: O,
     onSuccess: j
   });
   return a()(!x, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(u.Z, {
-    transitionState: i,
-    "aria-label": p.intl.string(b.default.rlNJwc),
-    className: m.root,
-    children: [(0, n.jsx)(u.Z.Error, {
-      error: g ? p.intl.string(b.default.pegSMz) : true
+    transitionState: o,
+    "aria-label": b.intl.string(p.default.rlNJwc),
+    className: h.root,
+    children: [g && (0, n.jsx)(s.M14, {
+      type: "critical",
+      children: b.intl.string(p.default.pegSMz)
     }), (0, n.jsxs)(s.hzk, {
       "data-migration-pending": true,
       children: [(0, n.jsx)(u.Z.Header, {
-        currentUser: r,
-        otherUser: t,
-        header: p.intl.string(b.default.rlNJwc),
+        currentUser: t,
+        otherUser: r,
+        header: b.intl.string(p.default.rlNJwc),
         icon: (0, n.jsx)(s.xPt, {
           size: "md",
           color: "currentColor",
-          className: m.linkIcon
+          className: h.linkIcon
         })
       }), (0, n.jsxs)(u.Z.Content, {
         children: [(0, n.jsx)(f.Z, {
           inModal: true
         }), (0, n.jsx)(s.Text, {
-          className: m.disclaimer,
+          className: h.disclaimer,
           variant: "text-xs/normal",
           color: "text-default",
-          children: p.intl.format(b.default.snlFqa, {
-            username: l.ZP.getName(t)
+          children: b.intl.format(p.default.snlFqa, {
+            username: l.ZP.getName(r)
           })
         })]
       })]
@@ -66,7 +67,7 @@ let h = e => {
       "data-migration-pending": true,
       children: (0, n.jsx)("form", {
         onSubmit: e => {
-          e.preventDefault(), v(t.id)
+          y(false), e.preventDefault(), v(r.id)
         },
         children: (0, n.jsx)(u.Z.ButtonFooter, {
           children: (0, n.jsxs)(s.ButtonGroup, {
@@ -74,17 +75,17 @@ let h = e => {
             children: [(0, n.jsx)(s.Button, {
               variant: "secondary",
               size: "sm",
-              text: p.intl.string(p.t["ETE/oK"]),
+              text: b.intl.string(b.t["ETE/oK"]),
               type: "button",
-              disabled: _,
-              onClick: h
+              disabled: w,
+              onClick: m
             }), (0, n.jsx)(s.Button, {
               variant: "primary",
               size: "sm",
-              text: p.intl.string(b.default["wI/jo6"]),
+              text: b.intl.string(p.default["wI/jo6"]),
               type: "submit",
-              disabled: _,
-              loading: _
+              disabled: w,
+              loading: w
             })]
           })
         })

@@ -75,12 +75,18 @@ class R extends(r = Chunk647438.PureComponent) {
       updateError: e,
       removeError: t
     } = this.props;
-    return null == module || module.hasCardError() || module.hasAddressError() ? null != exports ? (0, Chunk951288.jsx)(Chunk481060.kzN, {
+    return null == module || module.hasCardError() || module.hasAddressError() ? null != exports ? (0, Chunk951288.jsx)("div", {
       className: Chunk719221.formError,
-      children: exports.message
-    }) : null : (0, Chunk951288.jsx)(Chunk481060.kzN, {
+      children: (0, Chunk951288.jsx)(Chunk481060.M14, {
+        type: "critical",
+        children: exports.message
+      })
+    }) : null : (0, Chunk951288.jsx)("div", {
       className: Chunk719221.formError,
-      children: module.message
+      children: (0, Chunk951288.jsx)(Chunk481060.M14, {
+        type: "critical",
+        children: module.message
+      })
     })
   }
   renderBillingAddressSection() {

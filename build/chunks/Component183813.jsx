@@ -38,7 +38,7 @@ function L(e) {
     selectedGiftingPromotionReward: P,
     claimableRewards: O,
     claimableVariants: E
-  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(O, E, P), [A, M] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(A), F = i.useMemo(() => null == E ? null != O ? O : [] : E.flatMap(e => {
+  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(O, E, P), [M, A] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(M), F = i.useMemo(() => null == E ? null != O ? O : [] : E.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function L(e) {
         })
       }
       return e
-    }({}, e.variants[A]), n = n = {
+    }({}, e.variants[M]), n = n = {
       name: e.name
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -69,12 +69,12 @@ function L(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [E, O, A]);
+  }), [E, O, M]);
   i.useEffect(() => {
     let e = null == T ? true : T.defaultHighlightedReward;
     !N && null == P && null != e && null != e && F.some(t => t.skuId === e.skuId) && (I(e), B(e.skuId))
   }, [T, N, P, F, I]), i.useEffect(() => {
-    (null == T ? true : T.defaultCategory) == null || N || M(T.defaultCategory)
+    (null == T ? true : T.defaultCategory) == null || N || A(T.defaultCategory)
   }, [null == T ? true : T.defaultCategory, N]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
   let H = i.useMemo(() => null != Z && (null != O ? O : []).some(e => e.skuId === Z), [Z, O]),
     U = i.useMemo(() => null != P && F.some(e => e.skuId === P.skuId), [F, P]),
@@ -86,8 +86,8 @@ function L(e) {
     }
     H && F.some(e => e.skuId === Z) || null == Z || (B(true), I(true))
   }, [F, H, Z, I]), i.useEffect(() => {
-    G.current === A || U || (I(true), B(true)), G.current = A
-  }, [A, U, I]);
+    G.current === M || U || (I(true), B(true)), G.current = M
+  }, [M, U, I]);
   let z = e => {
       I(F.find(t => t.skuId === e)), B(e), R(true)
     },
@@ -102,7 +102,7 @@ function L(e) {
         user: k,
         onSelect: z,
         selectedSkuId: Z,
-        category: A
+        category: M
       }, e.skuId)
     }),
     K = (0, r.jsx)(g.O3, {
@@ -153,8 +153,8 @@ function L(e) {
         justify: "center",
         align: "center",
         children: [null != E && E.length > 1 && (0, r.jsx)(u.Z, {
-          defaultCategory: A,
-          onCategoryChange: M
+          defaultCategory: M,
+          onCategoryChange: A
         }), (0, r.jsx)("div", {
           className: y.giftRewardShopCardsGrid,
           children: W

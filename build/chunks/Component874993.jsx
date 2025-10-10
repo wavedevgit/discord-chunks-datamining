@@ -55,7 +55,7 @@ function y(e) {
     } = k.current;
     e && t(null)
   }, [P]);
-  let G = i.useCallback((e, t) => {
+  let M = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
         return null != (r = null == (n = A.find(t => {
@@ -67,13 +67,13 @@ function y(e) {
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
     }, [A]),
-    M = i.useMemo(() => {
+    G = i.useMemo(() => {
       var e, t;
-      return G(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
-    }, [G, E]);
+      return M(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
+    }, [M, E]);
   i.useEffect(() => {
-    N(w, (0, j.af)(M))
-  }, [N, w, M]);
+    N(w, (0, j.af)(G))
+  }, [N, w, G]);
   let U = (0, p.Z6)(P);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Heading, {

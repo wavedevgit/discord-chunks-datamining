@@ -41,9 +41,10 @@ function _(e) {
   return (i.useEffect(() => {
     null != b && E(null)
   }, [b, E]), null == b) ? null : (0, r.jsx)("div", {
+    ref: n,
     className: _,
-    children: (0, r.jsx)(a.kzN, {
-      ref: n,
+    children: (0, r.jsx)(a.M14, {
+      type: "critical",
       children: O
     })
   })

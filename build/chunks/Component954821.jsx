@@ -95,7 +95,8 @@ let b = "MMMM Do, YYYY",
       onClose: c,
       children: (0, r.jsxs)(l.Kqy, {
         gap: 8,
-        children: [null != v ? (0, r.jsx)(l.kzN, {
+        children: [null != v ? (0, r.jsx)(l.M14, {
+          type: "critical",
           children: v.message
         }) : null, (0, r.jsx)(_.c, {
           listingId: i.id,
