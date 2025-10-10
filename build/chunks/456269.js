@@ -3,7 +3,7 @@
 require.d(exports, {
   AJ: () => V,
   Bs: () => J,
-  ES: () => G,
+  ES: () => x,
   IN: () => B,
   J$: () => et,
   MC: () => W,
@@ -13,7 +13,7 @@ require.d(exports, {
   eZ: () => ei,
   iM: () => Y,
   jR: () => eu,
-  kF: () => H,
+  kF: () => G,
   kn: () => el,
   ku: () => eo,
   mX: () => X,
@@ -63,7 +63,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk176505 = require("./176505.js"),
   Chunk124368 = require("./124368.js");
 
-function G(e, t, n, l) {
+function x(e, t, n, l) {
   let u = (0, a.e7)([E.Z], () => E.Z.hasLoaded(e.guild_id));
   r.useEffect(() => {
     if (!u) return;
@@ -81,7 +81,7 @@ function G(e, t, n, l) {
   }, [e.id, e.guild_id, u, n, t, l])
 }
 
-function H(e) {
+function G(e) {
   return (0, a.e7)([E.Z, M.Z], () => {
     let t = u()(E.Z.getThreadsForParent(e.guild_id, e.parent_id)).keys().filter(e => {
       var t;
@@ -90,7 +90,7 @@ function H(e) {
     return M.Z.getChannel(t)
   })
 }
-let x = [];
+let H = [];
 
 function Q(e) {
   let t = function(e) {
@@ -134,7 +134,7 @@ function Q(e) {
   }(e);
   return r.useMemo(() => {
     var n, r, l;
-    let u = null != (l = null == e || null == (r = e.appliedTags) || null == (n = r.map(e => t[e])) ? true : n.filter(T.lm)) ? l : x;
+    let u = null != (l = null == e || null == (r = e.appliedTags) || null == (n = r.map(e => t[e])) ? true : n.filter(T.lm)) ? l : H;
     return (null == e ? true : e.isModeratorReportChannel()) ? (0, h.iq)(u) : u
   }, [t, e])
 }
@@ -232,28 +232,30 @@ function X(e) {
   let {
     firstMessage: t,
     formatInline: n = true,
-    noStyleAndInteraction: l = true
-  } = e, u = (0, g.p)(), i = f.d.useExperiment({
+    noStyleAndInteraction: l = true,
+    hasUnreads: u = true
+  } = e, i = (0, g.p)(), a = f.d.useExperiment({
     location: "modules/forums/ForumHooks"
-  }).enabled, {
-    hasSpoilerEmbeds: a,
-    content: o
+  }).enabled, o = u ? "text-normal" : "text-muted", {
+    hasSpoilerEmbeds: d,
+    content: s
   } = r.useMemo(() => (null == t ? true : t.content) != null && "" !== t.content ? (0, Z.ZP)(t, {
     formatInline: n,
     noStyleAndInteraction: l,
     allowHeading: true,
     allowList: true,
-    allowGameMentions: i,
-    shouldFilterKeywords: u
+    allowGameMentions: a,
+    shouldFilterKeywords: i,
+    textColor: o
   }) : {
     hasSpoilerEmbeds: false,
     content: null
-  }, [t, n, l, u, i]), d = (0, y.eL)(t, a), s = (0, y.vg)(t, a);
+  }, [t, n, l, i, a, o]), c = (0, y.eL)(t, d), m = (0, y.vg)(t, d);
   return {
-    hasSpoilerEmbeds: a,
-    content: o,
-    firstMedia: d,
-    firstMediaIsEmbed: s
+    hasSpoilerEmbeds: d,
+    content: s,
+    firstMedia: c,
+    firstMediaIsEmbed: m
   }
 }
 

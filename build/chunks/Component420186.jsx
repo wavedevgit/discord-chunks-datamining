@@ -1,5 +1,5 @@
 /** Chunk was on 86872 **/
-/** chunk id: 47343, original params: e,n,t (module,exports,require) **/
+/** chunk id: 420186, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   R: () => N
 }), require("./388685.js");
@@ -13,28 +13,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk51331 = require("./51331.jsx"),
   Chunk259580 = require("./259580.jsx"),
   Chunk626135 = require("./626135.js"),
-  Chunk731971 = require("./731971.js"),
+  Chunk978986 = require("./978986.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk152143 = require("./152143.js");
+  Chunk181174 = require("./181174.js");
 let N = () => {
   var e;
   let [n, t] = Chunk647438.useState(false), a = Chunk695346.G6.useSetting(), {
     nickname: N,
-    dmsAllowed: h,
-    showActivity: E,
-    setNickname: I,
-    setDmsAllowed: f,
+    dmsAllowed: f,
+    showActivity: h,
+    setNickname: E,
+    setDmsAllowed: I,
     setShowActivity: v,
     guildId: j,
     inviteCode: S
-  } = (0, Chunk731971.XW)(), C = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable;
+  } = (0, Chunk978986.XW)(), C = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable;
   return (0, Chunk951288.jsxs)("div", {
-    className: r()(Chunk152143.editProfileContainer, {
-      [Chunk152143.opened]: exports
+    className: r()(Chunk181174.editProfileContainer, {
+      [Chunk181174.opened]: exports
     }),
     children: [(0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: Chunk152143.header,
+      className: Chunk181174.header,
       onClick: () => {
         exports || Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
           guild_id: j,
@@ -42,12 +42,12 @@ let N = () => {
         }), require(!exports)
       },
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk152143.headerIconWrapper,
+        className: Chunk181174.headerIconWrapper,
         children: (0, Chunk951288.jsx)(Chunk481060.ewm, {
           size: "md"
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk152143.title,
+        className: Chunk181174.title,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",
@@ -58,8 +58,8 @@ let N = () => {
           children: Chunk388032.intl.string(Chunk388032.t.UKCSER)
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk152143.caret, {
-          [Chunk152143.opened]: exports
+        className: r()(Chunk181174.caret, {
+          [Chunk181174.opened]: exports
         }),
         children: (0, Chunk951288.jsx)(Chunk259580.Z, {
           width: 18,
@@ -68,11 +68,11 @@ let N = () => {
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: r()(Chunk152143.customizationSection, {
-        [Chunk152143.opened]: exports
-      }, C ? null : Chunk152143.condensed),
+      className: r()(Chunk181174.customizationSection, {
+        [Chunk181174.opened]: exports
+      }, C ? null : Chunk181174.condensed),
       children: [C && (0, Chunk951288.jsxs)("div", {
-        className: Chunk152143.serverNickname,
+        className: Chunk181174.serverNickname,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",
@@ -81,15 +81,15 @@ let N = () => {
           placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
           maxLength: Chunk981631.l$U,
           value: N,
-          onChange: I
+          onChange: E
         })]
       }), (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t["/2ed39"]),
-        value: h,
-        onChange: f
+        value: f,
+        onChange: I
       }), Chunk120356 && (0, Chunk951288.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.bN4m1N),
-        value: E,
+        value: h,
         onChange: v
       })]
     })]

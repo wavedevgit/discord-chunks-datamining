@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk436774 = require("./436774.jsx"),
   Chunk313201 = require("./313201.js"),
-  Chunk731971 = require("./731971.js"),
+  Chunk978986 = require("./978986.js"),
   Chunk451603 = require("./451603.js"),
   Chunk885714 = require("./885714.jsx"),
   Chunk973616 = require("./973616.js"),
@@ -123,7 +123,7 @@ function U(e) {
           children: Z.intl.string(Z.t.FWkU6O)
         }), (0, i.jsx)(p.zx, {
           size: p.zx.Sizes.LARGE,
-          onClick: () => L.Z.close(),
+          onClick: () => b.Z.close(),
           color: p.zx.Colors.BRAND,
           children: Z.intl.string(Z.t.wcqOoK)
         })]
@@ -141,19 +141,19 @@ function y(e) {
     var e;
     return null == (e = v.default.getCurrentUser()) ? true : e.premiumType
   });
-  let I = (0, o.e7)([v.default], () => v.default.getCurrentUser()),
+  let E = (0, o.e7)([v.default], () => v.default.getCurrentUser()),
     {
       invite: j,
       error: S,
       submitting: z
-    } = (0, o.cj)([b.Z], () => b.Z.getProps());
+    } = (0, o.cj)([L.Z], () => L.Z.getProps());
   l.useEffect(() => {
     if (null != j && null != j.guild) {
       var e;
-      (0, h.pB)(null != (e = j.approximate_member_count) ? e : 0, j.code, j.guild.id)
+      (0, f.pB)(null != (e = j.approximate_member_count) ? e : 0, j.code, j.guild.id)
     }
   }, [j, null == j ? true : j.approximate_member_count, null == j ? true : j.code, null == j || null == (n = j.guild) ? true : n.id]);
-  let O = (0, h.yr)();
+  let O = (0, f.yr)();
   l.useEffect(() => {
     !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? P.ZP.minimize() : P.ZP.restore(), P.ZP.focus())
   }, []);
@@ -161,14 +161,14 @@ function y(e) {
     {
       analyticsLocations: F
     } = (0, _.ZP)(m.Z.INVITE_MODAL);
-  if (null == j || null == I) return null;
+  if (null == j || null == E) return null;
   if (j.state === R.r2o.EXPIRED || j.state === R.r2o.BANNED || j.state === R.r2o.ERROR) return (0, i.jsx)(U, {
     transitionState: g
   });
   if (null == j.channel) return null;
 
   function G() {
-    null != j && L.Z.acceptInvite(j)
+    null != j && b.Z.acceptInvite(j)
   }
   let {
     guild: V,
@@ -176,13 +176,13 @@ function y(e) {
     inviter: B,
     target_application: w
   } = j, H = null != V, Y = null == j.guild && null == j.channel && null != j.inviter;
-  if (null != w) t = null == V ? true : V.name, a = f.ZP.createFromServer(w).getCoverImageURL(1024);
+  if (null != w) t = null == V ? true : V.name, a = I.ZP.createFromServer(w).getCoverImageURL(1024);
   else if (null != V) t = V.name, a = A.ZP.getGuildSplashURL({
     id: V.id,
     splash: V.splash
   });
   else if ((null == (t = W.name) || "" === t) && null != B && (t = B.username), null == t) throw Error("no name for group DM invite");
-  let K = (0, E.yU)();
+  let K = (0, h.yU)();
   return r = Y ? Z.intl.string(Z.t["e/6Ogo"]) : Z.intl.format(Z.t["9sWQNT"], {
     usernameHook: () => (0, i.jsx)("span", {
       children: O
@@ -239,7 +239,7 @@ function y(e) {
                     children: [(0, i.jsx)(d.Z, {
                       "aria-hidden": true,
                       size: c.EFr.SIZE_16,
-                      user: I,
+                      user: E,
                       className: M.acceptAsAvatar
                     }), (0, i.jsx)("span", {
                       className: M.acceptAsName,
@@ -273,7 +273,7 @@ function y(e) {
                   C.default.track(R.rMx.INVITE_ACCEPT_DISMISSED, {
                     invite_code: null == j ? true : j.code,
                     guild_id: null == j || null == (e = j.guild) ? true : e.id
-                  }), L.Z.close()
+                  }), b.Z.close()
                 },
                 color: p.zx.Colors.TRANSPARENT,
                 children: Z.intl.string(Z.t.ndsK4e)

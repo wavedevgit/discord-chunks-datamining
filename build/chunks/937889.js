@@ -98,7 +98,8 @@ function g(e) {
     muted: false,
     unknownUserMentionPlaceholder: true,
     viewingChannelId: r.viewingChannelId,
-    forceWhite: !!r.forceWhite
+    forceWhite: !!r.forceWhite,
+    textColor: r.textColor
   }
 }
 

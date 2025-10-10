@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js"),
   Chunk447543 = require("./447543.js"),
   Chunk18438 = require("./18438.js"),
-  Chunk731971 = require("./731971.js"),
+  Chunk978986 = require("./978986.js"),
   Chunk695346 = require("./695346.js"),
   Chunk626135 = require("./626135.js"),
   Chunk782605 = require("./782605.js"),
@@ -58,13 +58,13 @@ let p = {
     })
   },
   close() {
-    let e = (0, Chunk731971.e7)(),
-      t = (0, Chunk731971._J)();
-    if ((0, Chunk731971.NQ)()) {
-      let n = (0, Chunk731971.y)(),
-        r = (0, Chunk731971.h6)(),
-        i = (0, Chunk731971.U1)(),
-        l = (0, Chunk731971.aP)();
+    let e = (0, Chunk978986.e7)(),
+      t = (0, Chunk978986._J)();
+    if ((0, Chunk978986.NQ)()) {
+      let n = (0, Chunk978986.y)(),
+        r = (0, Chunk978986.h6)(),
+        i = (0, Chunk978986.U1)(),
+        l = (0, Chunk978986.aP)();
       Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: module,
         guild_id: exports,
@@ -73,7 +73,7 @@ let p = {
         activity_status_shown: Chunk447543,
         changed_from_default: Chunk18438
       })
-    }(0, Chunk731971.oE)(), Chunk570140.Z.dispatch({
+    }(0, Chunk978986.oE)(), Chunk570140.Z.dispatch({
       type: "INVITE_MODAL_CLOSE"
     })
   }

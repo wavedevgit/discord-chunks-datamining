@@ -4,4 +4,4 @@
 require.d(exports, {
   K: () => r
 });
-let r = require("./70956.js").Z.Millis.DAY
+let r = 8 * require("./70956.js").Z.Millis.HOUR
