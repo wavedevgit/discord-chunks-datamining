@@ -2,21 +2,23 @@
 /** chunk id: 74869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => O
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
   o = require.n(Chunk658722),
   Chunk481060 = require("./481060.js"),
+  Chunk887580 = require("./887580.jsx"),
   Chunk492435 = require("./492435.js"),
   Chunk667344 = require("./667344.js"),
   Chunk493075 = require("./493075.js"),
   Chunk438159 = require("./438159.js"),
+  Chunk572004 = require("./572004.js"),
   Chunk878209 = require("./878209.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +27,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,41 +51,54 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e) {
+function y(e) {
   let {
     id: t,
     experiment: n,
     currentBucket: i,
     system: a
-  } = e, o = (0, d.v)(n);
+  } = e, o = (0, f.v)(n);
   return (0, r.jsxs)(s.sNh, {
     id: t.replaceAll("--", "__"),
     label: n.title,
-    action: () => (0, l.rX)(a, t, null),
+    action: () => (0, c.rX)(a, t, null),
     children: [o.map(e => (0, r.jsx)(s.S89, {
       id: "".concat(e.id),
       label: e.shortLabel,
       checked: e.id === (null == i ? true : i.variantId),
-      action: () => (0, l.rX)(a, t, e.id)
-    }, "".concat(e.id))), (0, r.jsx)(s.kSQ, {
-      children: null != i && (0, r.jsx)(s.sNh, {
+      action: () => (0, c.rX)(a, t, e.id)
+    }, "".concat(e.id))), (0, r.jsxs)(s.kSQ, {
+      children: [_.wS && (0, r.jsx)(s.sNh, {
+        id: "copy-link",
+        label: "Copy Link",
+        action: () => {
+          let e = (0, l.sZ)(t);
+          (0, _.JG)(e, () => {
+            (0, s.showToast)({
+              id: "experiment-link-copied",
+              message: "Copied experiment link",
+              type: s.ToastType.SUCCESS
+            })
+          })
+        }
+      }), null != i && (0, r.jsx)(s.sNh, {
         id: "clear-override",
         label: "Clear Override",
         color: "danger",
         icon: s.XHJ,
-        action: () => (0, l.rX)(a, t, null)
-      })
+        action: () => (0, c.rX)(a, t, null)
+      })]
     })]
   }, t)
 }
 
-function b() {
+function O() {
   let {
     experiments: e,
     overridesInfo: t
@@ -91,8 +106,8 @@ function b() {
     experiments: n,
     overridesInfo: a
   } = (0, Chunk667344.Q)(), l = Chunk647438.useMemo(() => {
-    let r = h({}, module, require),
-      i = h({}, exports, Chunk658722);
+    let r = g({}, module, require),
+      i = g({}, exports, Chunk658722);
     return (0, Chunk878209.Tc)((0, Chunk878209.Cg)(Chunk951288), Chunk647438).map(e => {
       let {
         id: t,
@@ -105,32 +120,32 @@ function b() {
         system: n.system
       }
     })
-  }, [module, exports, require, Chunk658722]), [d, p] = Chunk647438.useState(""), [m, b] = Chunk647438.useState([]);
+  }, [module, exports, require, Chunk658722]), [c, f] = Chunk647438.useState(""), [_, m] = Chunk647438.useState([]);
   Chunk647438.useEffect(() => {
-    if (0 === Chunk438159.trim().length) return void b(Chunk492435);
-    b(Chunk492435.filter(e => o()(d, e.experiment.title.toLowerCase())))
-  }, [Chunk492435, Chunk438159]);
-  let y = Chunk647438.useMemo(() => Chunk492435.filter(e => {
+    if (0 === Chunk492435.trim().length) return void m(Chunk887580);
+    m(Chunk887580.filter(e => o()(c, e.experiment.title.toLowerCase())))
+  }, [Chunk887580, Chunk492435]);
+  let E = Chunk647438.useMemo(() => Chunk887580.filter(e => {
       let {
         currentBucket: t
       } = e;
       return null != t
-    }), [Chunk492435]),
-    O = Chunk647438.useMemo(() => m.filter(e => {
+    }), [Chunk887580]),
+    O = Chunk647438.useMemo(() => Chunk572004.filter(e => {
       let {
         currentBucket: t
       } = e;
       return null == t
-    }), [m]),
-    v = Chunk647438.useMemo(() => y.map(E), [y]),
-    I = Chunk647438.useMemo(() => O.map(E), [O]),
+    }), [Chunk572004]),
+    v = Chunk647438.useMemo(() => E.map(y), [E]),
+    I = Chunk647438.useMemo(() => O.map(y), [O]),
     T = (0, Chunk951288.jsx)(Chunk481060.II_, {
       id: "experiments-search",
-      control: (e, t) => (0, r.jsx)(s.ne, g(h({}, e), {
-        query: d,
-        onChange: p,
+      control: (e, t) => (0, r.jsx)(s.ne, b(g({}, e), {
+        query: c,
+        onChange: f,
         ref: t,
-        placeholder: _.intl.string(_.t["5h0QOD"])
+        placeholder: h.intl.string(h.t["5h0QOD"])
       }))
     }, "experiments-search");
   return v.length > 0 ? [(0, Chunk951288.jsx)(Chunk481060.kSQ, {
