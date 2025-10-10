@@ -15,14 +15,16 @@ var Chunk647438 = require("./647438.js"),
 function d() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = (0, Chunk517157.Z)(null == module ? true : module.id),
-    n = (0, Chunk172416.Un)({
+    n = exports.some(e => s.Ki.includes(e.type)),
+    d = (0, Chunk172416.Un)({
       location: "useAvailableWidgetTypes"
     }),
-    d = (0, Chunk880421.k)({
+    f = (0, Chunk880421.k)({
       location: "useAvailableWidgetTypes"
-    });
+    }),
+    g = d || require;
   return Chunk647438.useMemo(() => {
     let e = new Set(exports.map(e => e.type));
-    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!d) && (!s.Ki.includes(t) || !!n) && !e.has(t))
-  }, [exports, require, d])
+    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!f) && (!s.Ki.includes(t) || !!g) && !e.has(t))
+  }, [exports, g, f])
 }

@@ -197,7 +197,7 @@ function A(e) {
               children: T.intl.string(P.default.bDdi7u)
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
-              children: "".concat(null != t.onlineConnectionsCount ? t.onlineConnectionsCount : "—", " / ").concat(null != t.maxConnectionsCount ? t.maxConnectionsCount : "—")
+              children: "".concat(null != t.onlineConnectionsCount && t.onlineConnectionsCount >= 0 ? t.onlineConnectionsCount : "—", " / ").concat(null != t.maxConnectionsCount && t.maxConnectionsCount >= 0 ? t.maxConnectionsCount : "—")
             })]
           }), (0, r.jsxs)("div", {
             className: w.detailItem,
