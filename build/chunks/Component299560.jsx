@@ -47,7 +47,7 @@ let O = {
   [Chunk296009.l.WANT_TO_PLAY_GAMES]: {
     placeholder: () => ({
       variant: "grid",
-      applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.RUST, Chunk804919.L.DELTA_FORCE]
+      applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.BATTLEFIELD_6, Chunk804919.L.RUST]
     }),
     getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.NtoBi4)
   },

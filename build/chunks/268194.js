@@ -22,13 +22,13 @@ function c(e, t, n) {
 let u = false;
 class d extends Chunk147913.Z {
   handlePossibleCredentialFetch() {
-    if (u || __OVERLAY__ || Chunk314897.default.getLoginStatus() !== Chunk981631.u34.NONE) return;
-    if (Chunk15980.Z.hasFetchedCredentials()) {
-      u = true;
-      return
+    if (!(u || __OVERLAY__) && Chunk314897.default.getLoginStatus() === Chunk981631.u34.NONE) {
+      if (Chunk15980.Z.hasFetchedCredentials()) {
+        u = true;
+        return
+      }
+      true !== Chunk594174.default.getCurrentUser() && (u = true, (0, Chunk365007.hL)())
     }
-    let e = Chunk594174.default.getCurrentUser();
-    true !== module && module.verified && (u = true, (0, Chunk365007.hL)())
   }
   handleLogout() {
     u = false
