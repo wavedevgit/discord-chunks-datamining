@@ -2,7 +2,7 @@
 /** chunk id: 15980, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -25,13 +25,44 @@ function d() {
 }
 
 function f() {
+  if (u) returnfalse;
   u = true
 }
 
 function _() {
+  if (!u) returnfalse;
   u = false
 }
-class p extends(r = Chunk442837.ZP.Store) {
+
+function p(e) {
+  let t = false;
+  return c !== e.credentials && (c = e.credentials, t = true), l || (l = true, t = true), t
+}
+
+function h(e) {
+  let {
+    credential: t
+  } = e;
+  if (t.type !== o.Pi.WEBAUTHN || true !== c.find(e => e.id === t.id)) returnfalse;
+  c = [...c, t]
+}
+
+function m(e) {
+  let {
+    credential: t
+  } = e;
+  if (t.type !== o.Pi.WEBAUTHN) returnfalse;
+  c = c.map(e => e.id === t.id ? t : e)
+}
+
+function g(e) {
+  let {
+    credential: t
+  } = e;
+  if (t.type !== o.Pi.WEBAUTHN) returnfalse;
+  c = c.filter(e => e.id !== t.id)
+}
+class E extends(r = Chunk442837.ZP.Store) {
   hasFetchedCredentials() {
     return l
   }
@@ -45,30 +76,13 @@ class p extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-s(p, "displayName", "WebAuthnStore");
-let h = new p(Chunk570140.Z, {
+s(E, "displayName", "WebAuthnStore");
+let b = new E(Chunk570140.Z, {
   LOGOUT: d,
-  MFA_WEBAUTHN_CREDENTIALS_LOADED(e) {
-    c = e.credentials, l = true
-  },
-  AUTHENTICATOR_CREATE(e) {
-    let {
-      credential: t
-    } = e;
-    t.type === o.Pi.WEBAUTHN && true === c.find(e => e.id === t.id) && (c = [...c, t])
-  },
-  AUTHENTICATOR_UPDATE(e) {
-    let {
-      credential: t
-    } = e;
-    t.type === o.Pi.WEBAUTHN && (c = c.map(e => e.id === t.id ? t : e))
-  },
-  AUTHENTICATOR_DELETE(e) {
-    let {
-      credential: t
-    } = e;
-    t.type === o.Pi.WEBAUTHN && (c = c.filter(e => e.id !== t.id))
-  },
+  MFA_WEBAUTHN_CREDENTIALS_LOADED: p,
+  AUTHENTICATOR_CREATE: h,
+  AUTHENTICATOR_UPDATE: m,
+  AUTHENTICATOR_DELETE: g,
   WEBAUTHN_TRIGGER_REGISTER: f,
   WEBAUTHN_CLEAR_REGISTER_TRIGGER: _
 })

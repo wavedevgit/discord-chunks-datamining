@@ -42,7 +42,7 @@ let f = {
       }), E(e ? d.b.SELECTED : d.b.DEFAULT), T(e)
     }, [S, g]), w = r.useCallback(() => {
       S && I()
-    }, [S, I]), k = (0, s.Z)(null, w), R = r.useMemo(() => (0, a.jsx)(u.L, {
+    }, [S, I]), R = (0, s.Z)(null, w), k = r.useMemo(() => (0, a.jsx)(u.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
@@ -70,8 +70,8 @@ let f = {
           [x.hidden]: O,
           [x.visible]: !O
         }),
-        ref: k,
-        children: R
+        ref: R,
+        children: k
       })]
     })
   };

@@ -1,7 +1,7 @@
 /** Chunk was on 62934 **/
 /** chunk id: 941762, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,13 +28,13 @@ let x = {
   }
 };
 
-function b(e) {
+function _(e) {
   let {
     guildId: n,
     instance: t
-  } = e, b = a.useRef(null);
+  } = e, _ = a.useRef(null);
   return (0, c.Z)(n) ? (0, r.jsx)(i.yRy, {
-    targetElementRef: b,
+    targetElementRef: _,
     align: "top",
     position: "right",
     animationPosition: "bottom",
@@ -99,7 +99,7 @@ function b(e) {
         "aria-label": g.intl.string(g.t.UKOtz8),
         className: f.clickable
       }, e), t = t = {
-        innerRef: b,
+        innerRef: _,
         children: (0, r.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"

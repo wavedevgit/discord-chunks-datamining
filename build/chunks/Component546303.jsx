@@ -83,7 +83,7 @@ function C(e) {
       children: j.intl.string(p.default["3vWDMz"])
     }), o && (0, i.jsx)("div", {
       className: h.maxInstancesWarning,
-      children: (0, i.jsx)(b.C, {})
+      children: (0, i.jsx)(_.C, {})
     }), (0, i.jsx)(c.zJl, {
       className: l()(h.gameContainerWrapper, {
         [h.disabled]: o
@@ -92,7 +92,7 @@ function C(e) {
         className: h.gameContainer,
         children: r.map((e, t) => (0, i.jsx)(x.Z, {
           game: e,
-          onClick: () => (0, _.Z)({
+          onClick: () => (0, b.Z)({
             guildId: n,
             stepConfig: y,
             initialGameServerGame: e,

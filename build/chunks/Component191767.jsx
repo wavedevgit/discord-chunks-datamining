@@ -268,14 +268,14 @@ function w() {
     })]
   })
 }
-let k = {
+let R = {
     DEFAULT: "Express Checkout Element - Default (No Config)",
     GPAY_FILTERED: "Express Checkout Element - Filtered for Google Pay",
     APPLE_PAY_FILTERED: "Express Checkout Element - Filtered for Apple Pay",
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  R = {
+  k = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -319,7 +319,7 @@ let k = {
 
 function M() {
   let [e, t] = Chunk647438.useState(D(A)), [n, l] = Chunk647438.useState(A), [s, d] = Chunk647438.useState(D(Z)), [u, p] = Chunk647438.useState(Z), [h, x] = Chunk647438.useState(null), [f, g] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
-    errorLabel: k.CONFIGURABLE,
+    errorLabel: R.CONFIGURABLE,
     elementOptions: A,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
@@ -390,7 +390,7 @@ function M() {
                 className: Chunk306197.labelSpacing,
                 children: ["Element updated at: ", new Date().toString()]
               }), (0, Chunk951288.jsx)(Chunk237012.DS, {
-                errorLabel: k.CONFIGURABLE,
+                errorLabel: R.CONFIGURABLE,
                 elementOptions: exports,
                 children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
                   onConfirm: e => {
@@ -429,10 +429,10 @@ function L() {
       variant: "heading-xl/semibold",
       children: "Stripe Express Checkout Buttons"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
-      label: k.DEFAULT,
+      label: R.DEFAULT,
       children: (0, Chunk951288.jsx)("div", {
         children: (0, Chunk951288.jsx)(Chunk237012.DS, {
-          errorLabel: k.DEFAULT,
+          errorLabel: R.DEFAULT,
           children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
             onConfirm: e => {
               console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -442,7 +442,7 @@ function L() {
         })
       })
     }), ["GPAY_FILTERED", "APPLE_PAY_FILTERED", "APPLE_AND_GPAY_DISABLED"].map(e => {
-      let t = k[e];
+      let t = R[e];
       return (0, a.jsx)(b.E_, {
         label: t,
         children: (0, a.jsxs)("div", {
@@ -452,20 +452,20 @@ function L() {
             children: "expressCheckoutElement.options:"
           }), (0, a.jsx)(m.Z, {
             className: j.markdown,
-            children: "".concat("``").concat(D(R[e]), " ").concat("``")
+            children: "".concat("``").concat(D(k[e]), " ").concat("``")
           }), (0, a.jsx)(b.DS, {
             errorLabel: t,
             children: (0, a.jsx)(i.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },
-              options: R[e]
+              options: k[e]
             })
           })]
         })
       }, e)
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
-      label: k.CONFIGURABLE,
+      label: R.CONFIGURABLE,
       children: (0, Chunk951288.jsx)(M, {})
     })]
   })

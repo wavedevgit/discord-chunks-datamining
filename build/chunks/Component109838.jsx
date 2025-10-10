@@ -40,10 +40,10 @@ function p(e) {
         icon: i.Ucv,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
-        children: _.intl.string(b.default.vCzwMz)
+        children: b.intl.string(_.default.vCzwMz)
       }), (0, r.jsx)(o.IGR, {
         disableColor: true,
-        text: _.intl.string(_.t.oW0eUV),
+        text: b.intl.string(b.t.oW0eUV),
         className: v.badge
       })]
     }), (0, r.jsxs)("div", {

@@ -111,7 +111,7 @@ let w = [{
   }
 }];
 
-function k(e) {
+function R(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -187,7 +187,7 @@ function k(e) {
     })]
   })
 }
-let R = [{
+let k = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -283,11 +283,11 @@ function Z() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: R,
+      columns: k,
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(k, {
+    }), null != Chunk55935 && (0, Chunk951288.jsx)(R, {
       actionLog: Chunk55935,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]

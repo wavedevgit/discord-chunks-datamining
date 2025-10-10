@@ -64,7 +64,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [S, T] = r.useState(true), O = r.useRef(null), [N, P] = r.useState(false), [I, w] = r.useState(false), [k, R] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [M, L] = r.useState(t.name), U = M.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
+    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [S, T] = r.useState(true), O = r.useRef(null), [N, P] = r.useState(false), [I, w] = r.useState(false), [R, k] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [M, L] = r.useState(t.name), U = M.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
       id: E,
       skuId: E,
       title: E,
@@ -72,9 +72,9 @@ let C = {
       accessibilityLabel: E,
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
-      effects: k,
+      effects: R,
       animationType: s.y.ANIMATION_TYPE_UNSPECIFIED
-    }), [k]), B = e => {
+    }), [R]), B = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
     }, G = (e, t) => {
@@ -87,7 +87,7 @@ let C = {
     };
     r.useEffect(() => {
       let e = t.config.effects;
-      e.length > 0 && R([...e].map(e => {
+      e.length > 0 && k([...e].map(e => {
         if (null != e.base64) {
           let t = (0, f.$j)(e.base64);
           e.src = t, D.current.push(t)
@@ -122,11 +122,11 @@ let C = {
         skuId: e.skuId,
         name: M,
         config: {
-          effects: k,
+          effects: R,
           stillFrames: A
         }
       })
-    }, [k, A, M]), r.useEffect(() => () => {
+    }, [R, A, M]), r.useEffect(() => () => {
       D.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), D.current = []
@@ -196,8 +196,8 @@ let C = {
                 onChange: e => {
                   let t = B(e);
                   null != t && (0, f.i0)(t, async e => {
-                    let n = await (0, f.Xv)(e, t, k.length);
-                    R(e => [...e, n])
+                    let n = await (0, f.Xv)(e, t, R.length);
+                    k(e => [...e, n])
                   })
                 },
                 multiple: false
@@ -254,7 +254,7 @@ let C = {
             }), (0, a.jsxs)("div", {
               className: g.row,
               children: [(0, a.jsx)(u.Z, {
-                fileContents: () => (0, f.yR)(k),
+                fileContents: () => (0, f.yR)(R),
                 contentType: "text/plain",
                 fileName: "".concat(U, "_timing_config.txt"),
                 children: (0, a.jsx)(d.Button, {
@@ -266,7 +266,7 @@ let C = {
                 fileContents: () => JSON.stringify(y(_({}, t), {
                   name: M,
                   config: y(_({}, t.config), {
-                    effects: k,
+                    effects: R,
                     stillFrames: A
                   })
                 })),
@@ -311,7 +311,7 @@ let C = {
                 }, t)
               })
             })]
-          }), k.some(e => {
+          }), R.some(e => {
             var t;
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, a.jsxs)("div", {
@@ -352,10 +352,10 @@ let C = {
               variant: "critical-secondary",
               text: "Clear Assets",
               onClick: () => {
-                R([]), Z(C)
+                k([]), Z(C)
               }
             })
-          }), k.map((e, t) => (0, a.jsxs)("div", {
+          }), R.map((e, t) => (0, a.jsxs)("div", {
             className: g.layerForm,
             children: [(0, a.jsxs)("div", {
               className: g.layerPreviewContainer,
@@ -396,7 +396,7 @@ let C = {
                   value: e.start,
                   className: g.input,
                   onChange: e => {
-                    R(n => {
+                    k(n => {
                       let a = [...n],
                         r = n[t];
                       return r.start = +e.target.value, a[t] = r, a
@@ -414,7 +414,7 @@ let C = {
                   value: e.duration,
                   className: g.input,
                   onChange: e => {
-                    R(n => {
+                    k(n => {
                       let a = [...n],
                         r = n[t];
                       return r.duration = +e.target.value, a[t] = r, a
@@ -435,7 +435,7 @@ let C = {
                   checked: e.loop,
                   className: g.checkBox,
                   onChange: e => {
-                    R(n => {
+                    k(n => {
                       let a = [...n],
                         r = n[t];
                       return r.loop = e.target.checked, a[t] = r, a
@@ -453,7 +453,7 @@ let C = {
                     value: e.loopDelay,
                     className: g.input,
                     onChange: e => {
-                      R(n => {
+                      k(n => {
                         let a = [...n],
                           r = n[t];
                         return r.loopDelay = +e.target.value, a[t] = r, a
@@ -476,7 +476,7 @@ let C = {
                   onChange: e => ((e, t) => {
                     let n = B(e);
                     null != n && (0, f.i0)(n, e => {
-                      R(a => {
+                      k(a => {
                         let r = [...a],
                           i = a[t];
                         if (null == i) return a;
@@ -494,7 +494,7 @@ let C = {
                 variant: "critical-secondary",
                 text: "Remove Layer",
                 onClick: () => {
-                  R(t => t.filter(t => t !== e))
+                  k(t => t.filter(t => t !== e))
                 }
               })]
             })]

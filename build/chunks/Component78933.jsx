@@ -129,10 +129,10 @@ function ec(e) {
       analyticsLocations: ef
     }),
     ew = (0, W.I5)(t),
-    ek = (0, h.p)({
+    eR = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
-    eR = (0, E.b)({
+    ek = (0, E.b)({
       location: "UserProfileAccountPopout"
     }),
     eA = r.useRef(null),
@@ -202,7 +202,7 @@ function ec(e) {
               user: t,
               themeType: er.l.POPOUT,
               onCloseProfile: n,
-              prompt: ek ? eM : null
+              prompt: eR ? eM : null
             })]
           }), (0, a.jsxs)(c.Ttm, {
             className: el.body,
@@ -223,7 +223,7 @@ function ec(e) {
                 shouldGlowTenureBadge: eD.current
               }),
               nicknameIcons: (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(R.Z, {
+                children: [(0, a.jsx)(k.Z, {
                   userId: t.id
                 }), (0, a.jsx)(M.Z, {
                   user: t,
@@ -245,12 +245,12 @@ function ec(e) {
             }), (0, a.jsx)(w.Z, {
               isPremiumUser: ew,
               onInteraction: n
-            }), eR ? (0, a.jsx)(A.Z, {
+            }), ek ? (0, a.jsx)(A.Z, {
               user: t,
               currentUser: t,
               onOpenUserProfileModal: eF,
               onClose: n
-            }) : (0, a.jsx)(k.Z, {
+            }) : (0, a.jsx)(R.Z, {
               user: t,
               currentUser: t,
               onClose: n

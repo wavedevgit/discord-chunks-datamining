@@ -507,6 +507,12 @@ let i = {
   AutoQualityStreamingManager: {
     actions: ["MEDIA_ENGINE_CONNECTION_STATS"],
     inlineRequire: () => require("./216405.js").Z
+  },
+  WebAuthnCredentialManager: {
+    actions: ["POST_CONNECTION_OPEN", "LOGIN_RESET", "LOGOUT"],
+    inlineRequire: () => require("./268194.js").Z,
+    neverLoadBeforeConnectionOpen: true,
+    hasStoreChangeListeners: true
   }
 };
 (0, Chunk132454.j)(i)

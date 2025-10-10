@@ -102,7 +102,7 @@ function A(e) {
     (0, x.JG)(null != i ? i : ""), (0, u.showToast)((0, u.createToast)(T.intl.string(T.t["+5kSoa"]), u.ToastType.SUCCESS))
   }, [i]), M = (0, C.Z)(t.gameId, "cover"), W = (0, v.Z)(n), z = a.useCallback(() => {
     var e;
-    (0, _.q)({
+    (0, b.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
   }, [t.gameServerPanelUrl]), U = a.useCallback(() => {
@@ -150,7 +150,7 @@ function A(e) {
     }
   }, [t, B, W, z, U]), K = a.useMemo(() => {
     if (null == t.gameConfig) return null;
-    let e = [t.gameConfig.type, t.gameConfig.version].filter(b.lm).join(" ");
+    let e = [t.gameConfig.type, t.gameConfig.version].filter(_.lm).join(" ");
     return "" === e ? null : e
   }, [t.gameConfig]), q = a.useMemo(() => {
     switch (t.status) {
@@ -183,7 +183,7 @@ function A(e) {
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: [null == V ? true : V.name, K].filter(b.lm).join(" • ")
+            children: [null == V ? true : V.name, K].filter(_.lm).join(" • ")
           })]
         })]
       }), (0, r.jsx)("div", {

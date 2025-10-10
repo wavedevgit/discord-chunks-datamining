@@ -30,12 +30,12 @@ let C = function(e) {
     onClose: C,
     onComplete: E,
     dismissable: S
-  } = e, [T, O] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), N = r.useRef(T), [P, I] = (0, c.US)([T], true, true), w = r.useMemo(() => (0, i.Z)(), []), k = r.useRef(false);
+  } = e, [T, O] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), N = r.useRef(T), [P, I] = (0, c.US)([T], true, true), w = r.useMemo(() => (0, i.Z)(), []), R = r.useRef(false);
   r.useEffect(() => {
     N.current = P
   }, [P]);
   let {
-    loading: R,
+    loading: k,
     ageVerificationMethods: A
   } = (0, b.Z)(() => {
     null == E || E(), C()
@@ -43,9 +43,9 @@ let C = function(e) {
     O(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
   return r.useLayoutEffect(() => () => {
-    if (k.current) return;
+    if (R.current) return;
     let e = N.current;
-    null != e && (k.current = true, m.Z.maybeOpenAgeVerificationUserFeedback({
+    null != e && (R.current = true, m.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
@@ -126,7 +126,7 @@ let C = function(e) {
             variant: "clickable",
             title: t,
             description: n,
-            buttonDisabled: R,
+            buttonDisabled: k,
             onButtonPress: () => r(w)
           }, t)
         })

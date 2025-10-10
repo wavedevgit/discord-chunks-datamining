@@ -22,6 +22,7 @@ require.r(module.exports = {
   online: "online__9ca53",
   deleted: "deleted__9ca53",
   missing_stock: "missing_stock__9ca53",
+  provider_errored: "provider_errored__9ca53",
   sleeping: "sleeping__9ca53",
   overflowMenu: "overflowMenu__9ca53"
 })

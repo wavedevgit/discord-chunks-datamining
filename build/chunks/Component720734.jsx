@@ -1016,14 +1016,14 @@ function tg(e) {
     E = n || s || i,
     S = r.useRef(null),
     T = r.useRef(null),
-    P = (0, ek.b)(E),
+    P = (0, eR.b)(E),
     {
       activeVoice: I,
       mostRecentlyRequestedVoiceId: w,
-      lastInitAttemptMayHaveCrashed: k
+      lastInitAttemptMayHaveCrashed: R
     } = (0, eS.o)(),
     {
-      showSilentLagWarning: R
+      showSilentLagWarning: k
     } = (0, eE.Y)(),
     A = null != I,
     Z = (0, eC.z)(I),
@@ -1035,7 +1035,7 @@ function tg(e) {
     } = P,
     V = i || s ? f.v0G : F,
     H = (0, D.Z)(n, i, s, o),
-    K = R ? ta.intl.string(ta.t.ARRV6u) : null;
+    K = k ? ta.intl.string(ta.t.ARRV6u) : null;
   t = _ ? ta.intl.string(ta.t["29gnR0"]) : null != K ? (0, a.jsxs)("div", {
     className: tr.tooltipWithSubtext,
     children: [(0, a.jsx)(f.Text, {
@@ -1083,10 +1083,10 @@ function tg(e) {
     }
   }, [U]);
   let er = r.useCallback(() => {
-      k || (0, eT.r5)()
-    }, [k]),
-    ei = E ? f.TVs.colors.STATUS_DANGER : R ? f.TVs.colors.STATUS_WARNING : "currentColor",
-    el = E || R,
+      R || (0, eT.r5)()
+    }, [R]),
+    ei = E ? f.TVs.colors.STATUS_DANGER : k ? f.TVs.colors.STATUS_WARNING : "currentColor",
+    el = E || k,
     es = (0, eo.Z)({
       location: "Account"
     }),
@@ -1170,7 +1170,7 @@ function tg(e) {
             onMouseLeave: () => {
               h(), B.onMouseLeave()
             },
-            orangeGlow: R,
+            orangeGlow: k,
             plated: null != v,
             redGlow: E,
             role: "switch",
@@ -1196,7 +1196,7 @@ function tg(e) {
             onContextMenu: r,
             onMouseEnter: p,
             onMouseLeave: h,
-            orangeGlow: R,
+            orangeGlow: k,
             plated: null != v,
             redGlow: E,
             tooltipClassName: tr.accountButtonsTooltip,
@@ -1245,7 +1245,7 @@ function tg(e) {
         className: l()({
           [tr.micButtonWithMenu]: Y
         }),
-        orangeGlow: R,
+        orangeGlow: k,
         redGlow: E,
         "aria-label": ta.intl.string(ta.t["w4m94+"]),
         "aria-checked": E,
@@ -1336,12 +1336,12 @@ function tg(e) {
                   }),
                   role: "button",
                   className: tr.buttonChevron,
-                  orangeGlow: R,
+                  orangeGlow: k,
                   redGlow: E,
                   "aria-label": ta.intl.string(ta.t.Hapb4O),
                   disabled: o,
                   onClick: e => {
-                    i(te.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, ew.$)(() => $(true)) : $(!Q)
+                    i(te.L.INDIRECT_ACTION), n(e), null != w && !Q && R ? (0, ew.$)(() => $(true)) : $(!Q)
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(f.yRy, {
