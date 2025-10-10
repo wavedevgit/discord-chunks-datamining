@@ -148,6 +148,7 @@ class R extends(r = Chunk647438.PureComponent) {
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk719221.disabledTooltipWrapper,
             children: [require ? (0, Chunk951288.jsx)(Chunk481060.aML, {
+              "data-migration-pending": true,
               text: Chunk388032.intl.string(Chunk388032.t["v6/z29"]),
               children: e => (0, i.jsx)("div", T({
                 "aria-hidden": true,

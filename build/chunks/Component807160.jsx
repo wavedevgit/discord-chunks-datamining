@@ -143,6 +143,7 @@ function eu(e) {
     })
   };
   return (0, i.jsx)(p.aML, {
+    "data-migration-pending": true,
     forceOpen: l,
     text: o ? r : n,
     children: e => {
@@ -553,6 +554,7 @@ class ep extends(r = Chunk647438.PureComponent) {
         children: (0, Chunk55935.vc)(c()(r.createdAt), "MM/DD/YYYY")
       }),
       E = r.isGift ? (0, Chunk951288.jsx)(Chunk481060.aML, {
+        "data-migration-pending": true,
         text: Chunk388032.intl.string(Chunk388032.t.QddTpq),
         children: e => (0, i.jsx)(p.OgN, X({
           size: "md",

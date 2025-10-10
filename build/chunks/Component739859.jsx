@@ -24,12 +24,12 @@ function y(e) {
   var t;
   let {
     levelUpData: n
-  } = e, [i, y] = a.useState(false), [h, O] = a.useState(false), [T, j] = a.useState(false), v = (0, p.GG)(), E = a.useRef(null), w = a.useRef(null), {
+  } = e, [i, y] = a.useState(false), [h, O] = a.useState(false), [T, j] = a.useState(false), v = (0, b.GG)(), E = a.useRef(null), w = a.useRef(null), {
     currentBadge: P,
     prevBadge: N,
     levelUpVideoSrc: U
   } = n, k = a.useCallback(() => {
-    let e = 700 * (P.id !== f.VU.PREMIUM_TENURE_1_MONTH);
+    let e = 700 * (P.id !== g.VU.PREMIUM_TENURE_1_MONTH);
     w.current.currentTime = 0, setTimeout(() => {
       j(true), w.current.play()
     }, e)
@@ -48,7 +48,7 @@ function y(e) {
     null != w.current && w.current.load()
   }, []);
   let B = a.useCallback(() => {
-      O(false), j(false), k(), E.current.style.display = "none", E.current.offsetWidth, E.current.style.display = "", _.default.track(g.rMx.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED, {
+      O(false), j(false), k(), E.current.style.display = "none", E.current.offsetWidth, E.current.style.display = "", _.default.track(f.rMx.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED, {
         new_badge_id: P.id
       })
     }, [P.id, k]),
@@ -88,12 +88,13 @@ function y(e) {
         variant: "text-xs/medium",
         className: x.subscribedText,
         children: m.intl.formatToPlainString(m.t["f/OGgI"], {
-          timeFrame: (0, b.q)(P.id, P.tenureReqNumMonths),
+          timeFrame: (0, p.q)(P.id, P.tenureReqNumMonths),
           date: v
         })
       }), (0, r.jsx)("div", {
         className: x.actionButtons,
         children: (0, r.jsx)(o.aML, {
+          "data-migration-pending": true,
           text: m.intl.string(m.t.hsvh0t),
           children: e => {
             var t, n;

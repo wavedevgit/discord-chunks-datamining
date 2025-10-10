@@ -594,6 +594,7 @@ let ex = Chunk647438.memo(function(e) {
         onClick: eO,
         "aria-label": t.name,
         children: [X && (0, l.jsx)(h.aML, {
+          "data-migration-pending": true,
           tooltipContentClassName: eo.premiumWheelTooltipContent,
           color: h.aML.Colors.PRIMARY,
           text: es.intl.string(es.t.nKdAlJ),

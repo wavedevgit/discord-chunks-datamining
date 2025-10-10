@@ -144,6 +144,7 @@ function T() {
           className: Chunk944658.frequentFriendsTitle,
           children: Chunk388032.intl.string(Chunk388032.t.QEh90N)
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
+          "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcX),
           children: e => {
             var t, n;

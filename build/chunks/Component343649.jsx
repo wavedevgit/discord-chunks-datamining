@@ -453,6 +453,7 @@ function ep(e) {
             }
           }
         }) : (0, l.jsx)(E.aML, {
+          "data-migration-pending": true,
           text: ei.intl.string(ei.t.XdvBLS),
           children: e => (0, l.jsx)(E.Button, es(er({
             variant: "active",

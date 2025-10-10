@@ -235,6 +235,7 @@ function ed(e) {
         children: [ee.intl.format(ee.t.F8xlho, {
           slotCount: g.length
         }), ev > 0 && null != p ? (0, r.jsx)(_.aML, {
+          "data-migration-pending": true,
           text: ee.intl.formatToPlainString(ee.t.SFpsCA, {
             canceledCount: ev,
             date: p.currentPeriodEnd

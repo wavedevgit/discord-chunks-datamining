@@ -192,6 +192,7 @@ let D = function() {
               value: F,
               onChange: e => B(e)
             }), (0, Chunk951288.jsx)(Chunk481060.aML, {
+              "data-migration-pending": true,
               text: "Need Promotion Code",
               shouldShow: F.length < 1,
               children: e => (0, a.jsx)(d.Button, A(k({
@@ -240,6 +241,7 @@ let D = function() {
             popoutLayerContext: Chunk246992.O$
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
+          "data-migration-pending": true,
           text: "Already subscribed",
           shouldShow: V,
           children: e => (0, a.jsx)(d.Button, A(k({

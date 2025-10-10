@@ -98,6 +98,7 @@ let _ = e => {
       text: h.intl.string(h.t.wmcDys)
     }, s);
     return null === n ? (0, r.jsx)(a.aML, {
+      "data-migration-pending": true,
       text: h.intl.string(h.t["c/rcUl"]),
       children: e => (0, r.jsx)(i.zxk, E(x({}, e, c), {
         disabled: true
