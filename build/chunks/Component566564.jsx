@@ -97,7 +97,6 @@ let I = e => {
         isLoading: P,
         title: c === T.AW.ORBS ? L.intl.string(L.t.dFgeub) : L.intl.string(L.t.NSv5KS),
         numVisibleItems: i,
-        hasSorting: c === T.AW.HOME,
         tab: c
       })]
     }) : (0, r.jsx)(r.Fragment, {
@@ -129,9 +128,9 @@ let I = e => {
               numVisibleItems: i,
               sortedSkuIds: p,
               buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? k.feedblockInteractiveBackground : true,
-              hasSorting: c === T.AW.HOME,
               prioritizeUserDiscounts: c === T.AW.HOME,
-              tab: c
+              tab: c,
+              orbsSupportedOnly: c === T.AW.ORBS
             }, l);
             break;
           case o.z.WIDE_BANNER:

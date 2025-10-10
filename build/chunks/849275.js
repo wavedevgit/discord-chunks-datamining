@@ -2,7 +2,7 @@
 /** chunk id: 849275, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js"), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -14,60 +14,65 @@ var Chunk647438 = require("./647438.js"),
   Chunk615006 = require("./615006.js"),
   Chunk884697 = require("./884697.js"),
   Chunk370039 = require("./370039.js"),
+  Chunk309956 = require("./309956.js"),
   Chunk937510 = require("./937510.js"),
   Chunk934760 = require("./934760.js"),
+  Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    l = (0, o.e7)([a.Z], () => a.Z.hasConsented(C.pjP.PERSONALIZATION)),
-    _ = r.useMemo(() => {
-      var t;
-      return null != (t = null == e ? true : e[s.m.RECOMMENDED]) ? t : []
-    }, [e]),
-    m = r.useMemo(() => {
-      var t;
-      return null != (t = null == e ? true : e[s.m.POPULAR]) ? t : []
-    }, [e]),
-    b = _.length > 0 && l,
-    [E, v] = r.useState(b ? s.m.RECOMMENDED : s.m.POPULAR),
-    S = (0, p.Z)(),
-    O = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
-    x = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()),
-    y = (0, g.a)(),
-    [T, j] = r.useState([]),
-    L = r.useCallback(() => {
-      v(s.m.RANDOM), j(i().shuffle(O))
-    }, [O]);
+function b(e) {
+  let {
+    sortedSkuIds: t,
+    isPremiumUser: n,
+    prioritizeUserDiscounts: l,
+    orbsSupportedOnly: b
+  } = e, E = (0, o.e7)([a.Z], () => a.Z.hasConsented(_.pjP.PERSONALIZATION)), v = r.useMemo(() => {
+    var e;
+    return null != (e = null == t ? true : t[s.m.RECOMMENDED]) ? e : []
+  }, [t]), S = r.useMemo(() => {
+    var e;
+    return null != (e = null == t ? true : t[s.m.POPULAR]) ? e : []
+  }, [t]), O = v.length > 0 && E, [x, y] = r.useState(O ? s.m.RECOMMENDED : s.m.POPULAR), T = (0, C.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), L = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), k = (0, g.a)(), I = (0, f.s)([h.cv]), [B, N] = r.useState([]), P = r.useCallback(() => {
+    y(s.m.RANDOM), N(i().shuffle(j))
+  }, [j]);
   r.useEffect(() => {
-    j(i().shuffle(O))
-  }, [O]);
-  let k = r.useMemo(() => {
+    N(i().shuffle(j))
+  }, [j]);
+  let A = r.useMemo(() => {
     let e = [];
-    return E === s.m.RECENT ? e = O : E === s.m.PRICE_LOW_TO_HIGH ? e = (0, d.hC)([...O], t) : E === s.m.RECOMMENDED ? e = n ? (0, d.Qf)(S(_), x) : S(_) : E === s.m.POPULAR ? e = n ? (0, d.Qf)(S(m), x) : S(m) : E === s.m.RANDOM && (e = T), y(e)
-  }, [E, y, O, T, t, S, _, m, x, n]);
+    if (x === s.m.RECENT) e = j;
+    else if (x === s.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, b);
+    else if (x === s.m.RECOMMENDED) {
+      let t = T(v);
+      e = l ? (0, d.Qf)(t, L) : t
+    } else if (x === s.m.POPULAR) {
+      let t = T(S);
+      e = l ? (0, d.Qf)(t, L) : t
+    } else x === s.m.RANDOM && (e = B);
+    return b ? I(k(e), n) : k(e)
+  }, [x, b, I, k, n, j, T, v, l, L, S, B]);
   return {
-    sortType: E,
-    setSortType: v,
-    sortedItems: (0, f.l)(k),
+    sortType: x,
+    setSortType: y,
+    sortedItems: (0, p.l)(A),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: s.m.POPULAR,
-        label: h.intl.string(h.t["1wQj4O"])
+        label: m.intl.string(m.t["1wQj4O"])
       }, {
         value: s.m.RECENT,
-        label: h.intl.string(h.t["6NZpt7"])
+        label: m.intl.string(m.t["6NZpt7"])
       }, {
         value: s.m.PRICE_LOW_TO_HIGH,
-        label: h.intl.string(h.t.RTG4yM)
+        label: m.intl.string(m.t.RTG4yM)
       }];
-      return b && e.unshift({
+      return O && e.unshift({
         value: s.m.RECOMMENDED,
-        label: h.intl.string(h.t.JrlKlp)
+        label: m.intl.string(m.t.JrlKlp)
       }), e
-    }, [b]),
-    showRecommendationOption: b,
-    shuffleProducts: L
+    }, [O]),
+    showRecommendationOption: O,
+    shuffleProducts: P
   }
 }

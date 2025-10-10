@@ -39,10 +39,10 @@ let B = e => {
     title: i,
     sortedSkuIds: B,
     numVisibleItems: N,
-    hasSorting: P,
-    prioritizeUserDiscounts: A,
-    tab: R,
-    buttonContainerClassName: Z
+    prioritizeUserDiscounts: P,
+    tab: A,
+    buttonContainerClassName: R,
+    orbsSupportedOnly: Z
   } = e, w = (0, o.e7)([d.default], () => d.default.getCurrentUser()), H = C.ZP.canUseCollectibles(w), F = (0, T.G)("FeedBlock"), {
     sortType: D,
     setSortType: M,
@@ -50,7 +50,12 @@ let B = e => {
     sortOptions: U,
     shuffleProducts: V,
     showRecommendationOption: G
-  } = (0, x.Z)(B, H, A), z = (0, y.St)(W), K = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), Y = (0, o.e7)([g.Z], () => g.Z.isFocused()), q = !K && Y, {
+  } = (0, x.Z)({
+    sortedSkuIds: B,
+    isPremiumUser: H,
+    prioritizeUserDiscounts: P,
+    orbsSupportedOnly: Z
+  }), z = (0, y.St)(W), K = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), Y = (0, o.e7)([g.Z], () => g.Z.isFocused()), q = !K && Y, {
     animationPhase: Q,
     startAnimation: J
   } = (0, O.y)(), X = (0, h.sp)(), $ = null != (t = null == X ? true : X.sessionId) ? t : "", ee = l.useRef(null), et = l.useCallback(e => {
@@ -115,7 +120,7 @@ let B = e => {
             }), t))
           }
         })]
-      }), P ? (0, r.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: s()(I.headerRight, {
           [k.shopTakeOver]: F
         }),
@@ -123,7 +128,7 @@ let B = e => {
           variant: "text-md/medium",
           children: L.intl.string(L.t.uaX709)
         }), (0, r.jsx)("div", {
-          className: Z,
+          className: R,
           children: (0, r.jsx)(a.PhF, {
             options: U,
             select: et,
@@ -135,7 +140,7 @@ let B = e => {
             serialize: e => e
           })
         }), (0, r.jsx)("div", {
-          className: Z,
+          className: R,
           children: (0, r.jsx)(a.Button, {
             variant: "secondary",
             text: L.intl.string(L.t.X3tnc3),
@@ -152,7 +157,7 @@ let B = e => {
             disabled: Q !== O.g.MOUNTED && Q !== O.g.FINISHED
           })
         })]
-      }) : null]
+      })]
     }), (0, r.jsx)("div", {
       className: I.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
@@ -188,7 +193,7 @@ let B = e => {
             product: e,
             category: l,
             user: w,
-            tab: R,
+            tab: A,
             className: n
           })
         }, null == e ? true : e.skuId)
