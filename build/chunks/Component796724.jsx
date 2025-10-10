@@ -76,14 +76,14 @@ function O(e) {
         className: N.labelContainer,
         children: i ? (0, r.jsx)("span", {
           children: E.intl.string(C.default.aCyHe3)
-        }) : (0, r.jsxs)(r.Fragment, {
+        }) : "" !== n.pingUrl ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: a()(N.pingCircle, s)
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             children: o
           })]
-        })
+        }) : null
       })]
     }), !t && (0, r.jsx)("div", {
       className: N.optionSpacer

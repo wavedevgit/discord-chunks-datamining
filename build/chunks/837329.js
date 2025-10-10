@@ -13,7 +13,7 @@ function s(e) {
   let n = (0, i.e7)([a.Z], () => a.Z.getRegionStateForPingUrl(e)),
     t = r.useRef(null),
     s = r.useCallback(async n => {
-      if (null == e) return;
+      if ("" === e) return;
       let r = [],
         i = false;
       try {
@@ -66,7 +66,7 @@ function s(e) {
   }, []);
   let c = null != n;
   return r.useEffect(() => {
-    if (null == e || c) return;
+    if ("" === e || c) return;
     let n = a.Z.getRegionStateForPingUrl(e);
     if ((null == n ? true : n.rtt) != null || (null == n ? true : n.loading) === true) return;
     (0, l.hz)(e, {

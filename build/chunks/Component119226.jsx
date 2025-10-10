@@ -2,7 +2,7 @@
 /** chunk id: 119226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => L
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,13 +18,15 @@ var Chunk278074 = require("./278074.js"),
   Chunk981632 = require("./981632.jsx"),
   Chunk731896 = require("./731896.js"),
   Chunk680295 = require("./680295.jsx"),
+  Chunk848118 = require("./848118.jsx"),
   Chunk998502 = require("./998502.js"),
   Chunk987209 = require("./987209.jsx"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk610868 = require("./610868.js"),
   Chunk241822 = require("./241822.js");
 
-function O(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +35,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,14 +59,14 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let C = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function A(e) {
+function N(e) {
   let {
     avatarDecoration: t
   } = e, {
@@ -76,86 +78,108 @@ function A(e) {
     size: (0, s.y9)(o.EFr.SIZE_152)
   });
   return (0, r.jsx)("div", {
-    className: b.giftMainAnimationWrapper,
-    children: (0, r.jsx)(S, T(v({}, i), {
+    className: O.giftMainAnimationWrapper,
+    children: (0, r.jsx)(C, A(T({}, i), {
       avatarDecoration: n,
       src: a,
-      className: b.avatar,
+      className: O.avatar,
       size: o.EFr.SIZE_152,
-      "aria-label": E.intl.string(E.t.lqaIxM)
+      "aria-label": y.intl.string(y.t.lqaIxM)
     }))
   })
 }
 
-function C(e) {
+function R(e) {
   var t;
   let {
     skuId: n
   } = e, i = null == (t = (0, p.V)(n)) ? true : t.config;
   return (0, r.jsxs)("div", {
-    className: b.profileEffectContainer,
+    className: O.profileEffectContainer,
     children: [(0, r.jsx)("img", {
-      src: y,
+      src: v,
       alt: null == i ? true : i.accessibilityLabel,
-      className: b.profileEffectBackground
+      className: O.profileEffectBackground
     }), (0, r.jsx)(h.Z, {
       skuId: n
     })]
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     nameplate: t
   } = e;
   return (0, r.jsx)("div", {
-    className: b.nameplateContainer,
+    className: O.nameplateContainer,
     children: (0, r.jsx)(d.Z, {
       nameplate: t,
-      className: b.nameplate,
+      className: O.nameplate,
       nameplatePreviewSize: "xlarge",
       isHighlighted: true,
       showPlaceholderUser: true
     })
   })
 }
+let w = e => {
+    let {
+      sku: t
+    } = e, {
+      selectedGiftStyle: n
+    } = (0, E.wD)(), {
+      product: o
+    } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0];
+    if ((null == o ? true : o.type) === a.Z.BUNDLE) return (0, r.jsx)("div", {
+      className: O.bundlePreviewWrapper,
+      children: (0, r.jsx)(u.d, {
+        product: o,
+        isPurchased: false,
+        isHighlighted: false
+      })
+    });
+    let l = (0, i.EQ)(s).with({
+      type: a.Z.AVATAR_DECORATION
+    }, e => (0, r.jsx)(N, {
+      avatarDecoration: e
+    })).with({
+      type: a.Z.PROFILE_EFFECT
+    }, e => (0, r.jsx)(R, {
+      skuId: e.skuId
+    })).with({
+      type: a.Z.NAMEPLATE
+    }, e => (0, r.jsx)(P, {
+      nameplate: e
+    })).otherwise(() => null);
+    return null != n && null == l ? (0, r.jsx)("div", {
+      className: O.giftMainAnimationWrapper,
+      children: (0, r.jsx)(_.Z, {
+        defaultAnimationState: f.SR.LOOP,
+        giftStyle: n,
+        shouldAnimate: true,
+        className: O.__invalid_giftMainAnimation
+      })
+    }) : l
+  },
+  D = e => {
+    let {
+      sku: t
+    } = e;
+    return (0, r.jsx)("div", {
+      className: O.slayerStorefrontReviewImageWrapper,
+      children: (0, r.jsx)(m.A, {
+        className: O.slayerStorefrontReviewImage,
+        sku: t
+      })
+    })
+  };
 
-function R(e) {
+function L(e) {
   let {
     sku: t
-  } = e, {
-    selectedGiftStyle: n
-  } = (0, g.wD)(), {
-    product: o
-  } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0];
-  if ((null == o ? true : o.type) === a.Z.BUNDLE) return (0, r.jsx)("div", {
-    className: b.bundlePreviewWrapper,
-    children: (0, r.jsx)(u.d, {
-      product: o,
-      isPurchased: false,
-      isHighlighted: false
-    })
-  });
-  let l = (0, i.EQ)(s).with({
-    type: a.Z.AVATAR_DECORATION
-  }, e => (0, r.jsx)(A, {
-    avatarDecoration: e
-  })).with({
-    type: a.Z.PROFILE_EFFECT
-  }, e => (0, r.jsx)(C, {
-    skuId: e.skuId
-  })).with({
-    type: a.Z.NAMEPLATE
-  }, e => (0, r.jsx)(N, {
-    nameplate: e
-  })).otherwise(() => null);
-  return null != n && null == l ? (0, r.jsx)("div", {
-    className: b.giftMainAnimationWrapper,
-    children: (0, r.jsx)(_.Z, {
-      defaultAnimationState: f.SR.LOOP,
-      giftStyle: n,
-      shouldAnimate: true,
-      className: b.__invalid_giftMainAnimation
-    })
-  }) : l
+  } = e;
+  return t.productLine === b.POd.COLLECTIBLES ? (0, r.jsx)(w, {
+    sku: t
+  }) : t.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM ? (0, r.jsx)(D, {
+    sku: t
+  }) : null
 }

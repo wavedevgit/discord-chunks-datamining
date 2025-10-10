@@ -110,7 +110,9 @@ function U(e) {
       X(e)
     })
   }, [et, en, Z, er.applicationId, er.id, es, X, J]);
-  let ep = null != ei && ei.length > 0 && (Z === I.c || null === e_) && Q ? E.w.SELECT_PAYMENT_METHOD : true;
+  let ep = null != ei && ei.length > 0 && (Z === I.c || null === e_) && Q ? E.w.SELECT_PAYMENT_METHOD : true,
+    eh = er.productLine === x.POd.SOCIAL_LAYER_GAME_ITEM,
+    em = ee || eh;
   return (0, r.jsxs)("div", {
     className: j.stepBody,
     children: [(0, r.jsx)(E.Y, {
@@ -131,7 +133,7 @@ function U(e) {
       application: U,
       sku: er,
       isEmbeddedIAP: W
-    }), ee && (0, r.jsx)(D.Z, {
+    }), em && (0, r.jsx)(D.Z, {
       sku: er
     }), null != $ ? (0, r.jsx)(b.s, {
       giftRecipient: $
@@ -139,7 +141,8 @@ function U(e) {
       label: J ? M.intl.string(M.t.PEjaCw) : M.intl.string(M.t.sail9P),
       children: null != es ? (0, r.jsx)(L.B, {
         sku: er,
-        skuPricePreview: es
+        skuPricePreview: es,
+        application: U
       }) : null == z ? (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.WANDERING_CUBES,
         className: j.invoiceSpinner
@@ -147,6 +150,17 @@ function U(e) {
         sku: er,
         value: ""
       })
+    }), eh && (0, r.jsxs)("div", {
+      className: j.socialLayerGameItemDisclaimer,
+      children: [(0, r.jsx)(c.aNP, {
+        size: "custom",
+        width: 16,
+        height: 16
+      }), (0, r.jsx)(c.Text, {
+        variant: "text-xs/normal",
+        color: "text-secondary",
+        children: M.intl.string(M.t["6fBC//"])
+      })]
     }), (0, r.jsx)(_.ZP, {
       label: M.intl.string(M.t.mmDvV1),
       paymentSources: Object.values(B),
@@ -175,7 +189,8 @@ function U(e) {
           isEmbeddedIAP: W,
           purchaseType: K,
           productLine: er.productLine,
-          isGift: J
+          isGift: J,
+          applicationName: U.name
         })
       })
     })]

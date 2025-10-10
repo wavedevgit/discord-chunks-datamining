@@ -2,9 +2,11 @@
 /** chunk id: 164670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Do: () => d,
   FE: () => u,
   K$: () => o,
   Uc: () => l,
+  a7: () => f,
   wK: () => s,
   x6: () => c
 }), require("./953529.js");
@@ -72,4 +74,16 @@ function u(e, t) {
     primaryIconAsset: null != (o = i.Z.toURLSafe((0, r._W)(t, s.labelIconAssetId, 512, "png"))) ? o : true,
     primaryIconLabel: s.label
   }
+}
+
+function d(e) {
+  var t, n, a;
+  let o = null == e ? true : e.applicationId,
+    s = null != (a = null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) ? a : null == e ? true : e.thumbnailAssetId;
+  if (null != s && null != o) return i.Z.toURLSafe((0, r._W)(o, s, 512, "png"))
+}
+
+function f(e) {
+  var t, n;
+  if ((null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardBackgroundImageAssetId) != null && (null == e ? true : e.applicationId) != null) return i.Z.toURLSafe((0, r._W)(e.applicationId, e.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))
 }

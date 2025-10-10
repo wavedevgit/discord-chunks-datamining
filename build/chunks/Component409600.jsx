@@ -1,7 +1,7 @@
 /** Chunk was on 61670 **/
-/** chunk id: 409600, original params: e,t,n (module,exports,require) **/
+/** chunk id: 409600, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,77 +13,71 @@ var Chunk100527 = require("./100527.js"),
   Chunk791785 = require("./791785.jsx"),
   Chunk961830 = require("./961830.jsx"),
   Chunk382263 = require("./382263.jsx"),
-  Chunk137440 = require("./137440.jsx"),
   Chunk231338 = require("./231338.js");
-let h = (e, t, n) => (0, i.jsx)(f.Z, {
-  step: n,
-  onClose: () => t(false)
-});
 
-function p(e) {
+function g(e) {
   let {
-    onClose: t,
-    onComplete: n,
-    transitionState: a,
+    onClose: n,
+    onComplete: t,
+    transitionState: i,
     applicationId: r,
     analyticsLocationObject: o,
     skuId: u
   } = e, {} = (0, s.JL)(), {
     analyticsLocations: d
-  } = (0, l.ZP)();
-  return (0, i.jsx)(c.PaymentModal, {
-    onClose: t,
-    onComplete: n,
+  } = (0, a.ZP)();
+  return (0, l.jsx)(c.PaymentModal, {
+    onClose: n,
+    onComplete: t,
     applicationId: r,
     skuId: u,
-    renderHeader: h,
     initialPlanId: null,
     analyticsObject: o,
     analyticsLocations: d,
-    transitionState: a
+    transitionState: i
   })
 }
 
-function m(e) {
+function p(e) {
   let {
-    loadId: t,
-    applicationId: n,
+    loadId: n,
+    applicationId: t,
     skuId: c,
-    analyticsLocations: f,
-    isGift: h = false
+    analyticsLocations: p,
+    isGift: m = false
   } = e, {
-    analyticsLocations: m
-  } = (0, l.ZP)(f, a.Z.PREMIUM_PAYMENT_MODAL);
-  return (0, i.jsx)(l.Gt, {
-    value: m,
-    children: (0, i.jsx)(s.PaymentContextProvider, {
-      loadId: t,
+    analyticsLocations: b
+  } = (0, a.ZP)(p, i.Z.PREMIUM_PAYMENT_MODAL);
+  return (0, l.jsx)(a.Gt, {
+    value: b,
+    children: (0, l.jsx)(s.PaymentContextProvider, {
+      loadId: n,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
         return [u.WA, ...e ? [d.PT] : [], u.s2, ...u.yp, u.wo, u.F7]
-      }(h),
-      applicationId: n,
+      }(m),
+      applicationId: t,
       skuIDs: [c],
       activeSubscription: null,
-      purchaseType: g.GZ.ONE_TIME,
-      isGift: h,
-      children: (0, i.jsx)(o.c1, {
-        children: (0, i.jsx)(r.KB, {
-          isGift: h,
-          children: (0, i.jsx)(p, function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var n = null != arguments[t] ? arguments[t] : {},
-                i = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), i.forEach(function(t) {
-                var i;
-                i = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: i,
+      purchaseType: f.GZ.ONE_TIME,
+      isGift: m,
+      children: (0, l.jsx)(o.c1, {
+        children: (0, l.jsx)(r.KB, {
+          isGift: m,
+          children: (0, l.jsx)(g, function(e) {
+            for (var n = 1; n < arguments.length; n++) {
+              var t = null != arguments[n] ? arguments[n] : {},
+                l = Object.keys(t);
+              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(t, e).enumerable
+              }))), l.forEach(function(n) {
+                var l;
+                l = t[n], n in e ? Object.defineProperty(e, n, {
+                  value: l,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = i
+                }) : e[n] = l
               })
             }
             return e

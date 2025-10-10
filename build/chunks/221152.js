@@ -9,5 +9,6 @@ module.exports = {
   invoiceRegularText: "invoiceRegularText__25766",
   invoiceDiscountText: "invoiceDiscountText__25766",
   invoiceDiscountTag: "invoiceDiscountTag__25766",
-  totalRow: "totalRow__25766"
+  totalRow: "totalRow__25766",
+  slayerStorefrontProductPreview: "slayerStorefrontProductPreview__25766"
 }
