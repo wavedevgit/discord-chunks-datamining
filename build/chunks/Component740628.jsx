@@ -71,8 +71,8 @@ function b(e) {
     guildId: p,
     items: f,
     initialSection: b = h.oh.USER_INFO,
-    initialSubsection: y,
-    onClose: I
+    initialSubsection: I,
+    onClose: y
   } = e, {
     trackUserProfileAction: Z
   } = (0, a.KZ)(), O = (0, r.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
@@ -85,7 +85,7 @@ function b(e) {
       } = e;
       return n === b
     })) ? true : n.section) ? c : null == (t = f[0]) ? true : t.section,
-    subsection: y
+    subsection: I
   });
   i.useEffect(() => {
     null == f.find(e => e.section === N) && T({
@@ -143,7 +143,7 @@ function b(e) {
       currentUser: u,
       displayProfile: m,
       guildId: p,
-      onClose: I
+      onClose: y
     })]
   })
 }

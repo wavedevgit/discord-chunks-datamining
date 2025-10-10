@@ -87,10 +87,10 @@ function T(e) {
   } = e, x = m && null != c, j = i.useRef(null), g = i.useMemo(() => "roles-".concat((0, r.Z)()), []), T = (0, o.ZP)({
     id: g,
     isEnabled: true,
-    scrollToStart: y.Cyb,
-    scrollToEnd: y.Cyb,
+    scrollToStart: I.Cyb,
+    scrollToEnd: I.Cyb,
     wrap: true
-  }), A = d.length, E = 0 === A ? I.intl.string(I.t["vR7M+/"]) : I.intl.formatToPlainString(I.t.PCs0oq, {
+  }), A = d.length, E = 0 === A ? y.intl.string(y.t["vR7M+/"]) : y.intl.formatToPlainString(y.t.PCs0oq, {
     numRoles: A
   }), S = d.map(e => {
     var i;
@@ -136,7 +136,7 @@ function A(e) {
   } = e, o = P(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: s
-  } = (0, x.KZ)(), v = (0, a.e7)([p.Z], () => p.Z.getGuild(r)), b = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), Z = null == b ? true : b.roles, A = (0, a.Wu)([m.Z], () => m.Z.getManyRoles(r, null != Z ? Z : []).sort(j.Z), [Z, r]), [E] = (0, a.Wu)([f.Z], () => [f.Z.can(y.Plq.MANAGE_ROLES, v), f.Z.getGuildVersion(r)]), S = i.useCallback(e => {
+  } = (0, x.KZ)(), v = (0, a.e7)([p.Z], () => p.Z.getGuild(r)), b = (0, a.e7)([u.ZP], () => u.ZP.getMember(r, n.id)), Z = null == b ? true : b.roles, A = (0, a.Wu)([m.Z], () => m.Z.getManyRoles(r, null != Z ? Z : []).sort(j.Z), [Z, r]), [E] = (0, a.Wu)([f.Z], () => [f.Z.can(I.Plq.MANAGE_ROLES, v), f.Z.getGuildVersion(r)]), S = i.useCallback(e => {
     var t, l;
     s({
       action: "REMOVE_ROLE"
@@ -153,7 +153,7 @@ function A(e) {
   if (null == v) return null;
   let _ = E && null != b;
   return 0 !== A.length || _ ? (0, l.jsx)(g.Z, N(O({
-    heading: I.intl.string(I.t.LPJmLy)
+    heading: y.intl.string(y.t.LPJmLy)
   }, o), {
     children: (0, l.jsx)(T, {
       user: n,

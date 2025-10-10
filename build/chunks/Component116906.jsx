@@ -52,14 +52,14 @@ function O(e) {
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, U = T && null == C && null == w && null != _, B = !L && (M || U), k = S.length > 0;
-  return B || k || !D ? (0, l.jsxs)(r.zJl, {
-    className: I.scroller,
+  }), M = E.length > 0 || null != C, U = T && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
+  return k || B || !D ? (0, l.jsxs)(r.zJl, {
+    className: y.scroller,
     fade: true,
-    children: [B ? (0, l.jsx)(f.Z, {
-      "aria-label": y.intl.string(y.t.J6STd3),
+    children: [k ? (0, l.jsx)(f.Z, {
+      "aria-label": I.intl.string(I.t.J6STd3),
       children: (0, l.jsxs)("ul", {
-        className: I.activityList,
+        className: y.activityList,
         children: [!A && U && (0, l.jsx)("li", {
           children: (0, l.jsx)(v.Z, {
             user: n,
@@ -83,9 +83,9 @@ function O(e) {
           })
         }, "live-".concat(i)))]
       })
-    }) : null, k ? (0, l.jsx)(f.Z, {
-      heading: y.intl.string(y.t.M0zgnZ),
-      introText: R ? y.intl.format(y.t["4bk9Ag"], {
+    }) : null, B ? (0, l.jsx)(f.Z, {
+      heading: I.intl.string(I.t.M0zgnZ),
+      introText: R ? I.intl.format(I.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, l.jsx)(r.Anchor, {
           href: d.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -93,7 +93,7 @@ function O(e) {
       }) : true,
       scrollIntoView: N === g.Tb.RECENT_ACTIVITY,
       children: (0, l.jsx)("ul", {
-        className: I.activityList,
+        className: y.activityList,
         children: S.map(e => (0, l.jsx)("li", {
           children: (0, l.jsx)(x.Z, {
             user: n,

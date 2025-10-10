@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk335131 = require("./335131.js"),
   Chunk592183 = require("./592183.js"),
   Chunk224724 = require("./224724.js"),
-  Chunk475413 = require("./475413.jsx"),
+  Chunk732380 = require("./732380.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function m(e) {
@@ -36,7 +36,7 @@ function m(e) {
     analyticsLocations: m,
     newestAnalyticsLocation: p
   } = (0, o.ZP)(), f = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
-  return (0, l.jsx)(d.ef, function(e) {
+  return (0, l.jsx)(d.pt, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         l = Object.keys(t);
@@ -57,7 +57,6 @@ function m(e) {
     action: "VISIT_SHOP",
     icon: r.EOn,
     tooltipText: u.intl.string(u.t.b2d0Nz),
-    themeColor: "secondary",
     onClick: () => {
       if (f) return void a.Z.notifyPendingWidgets();
       (0, s.mK)({

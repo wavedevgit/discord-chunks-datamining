@@ -106,12 +106,10 @@ function L(e) {
             children: [(0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)(I.Z, {
                 user: n,
-                themeType: R.l.SIDEBAR,
-                shouldShowTooltip: null === W.interactionType
+                themeType: R.l.SIDEBAR
               }), n.bot ? (0, r.jsx)(v.Z, {
                 user: n
-              }) : (0, r.jsx)(S.Z, {
-                type: "banner",
+              }) : (0, r.jsx)(S.Cn, {
                 user: n
               })]
             }), (0, r.jsxs)("div", {

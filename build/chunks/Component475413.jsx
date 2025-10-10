@@ -2,10 +2,9 @@
 /** chunk id: 475413, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ef: () => O,
+  ef: () => y,
   j8: () => E,
-  oY: () => v,
-  tG: () => y
+  oY: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,52 +80,35 @@ var E = function(e) {
   return e.TEXT = "text", e.ICON = "icon", e.BANNER = "banner", e.HOVER = "hover", e
 }({});
 let b = e => {
-  var {
-    action: t,
-    color: n = s.Button.Colors.PRIMARY,
-    themeColor: i = "primary",
-    className: a,
-    innerClassName: l,
-    onClick: d,
-    ref: _
-  } = e, m = h(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick", "ref"]);
-  let {
-    trackUserProfileAction: E
-  } = (0, c.KZ)(), b = e => {
-    null != t && E({
-      action: t
-    }), null == d || d(e)
-  };
-  return (0, r.jsx)(s.Button, p(f({
-    buttonRef: _,
-    className: o()(u.button, a),
-    innerClassName: o()(u.buttonInner, l),
-    color: o()(n, g[i]),
-    look: s.Button.Looks.FILLED,
-    size: s.Button.Sizes.SMALL,
-    onClick: b
-  }, m), {
-    "data-migration-pending": true
-  }))
-};
-
-function y(e) {
-  var {
-    text: t,
-    icon: n,
-    ref: i
-  } = e, a = h(e, ["text", "icon", "ref"]);
-  return (0, r.jsxs)(b, p(f({
-    "aria-label": t
-  }, a), {
-    ref: i,
-    children: [null != n && (0, r.jsx)(n, {
-      size: "xs",
-      color: "currentColor"
-    }), t]
-  }))
-}
-let O = Chunk647438.forwardRef(function(e, t) {
+    var {
+      action: t,
+      color: n = s.Button.Colors.PRIMARY,
+      themeColor: i = "primary",
+      className: a,
+      innerClassName: l,
+      onClick: d,
+      ref: _
+    } = e, m = h(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick", "ref"]);
+    let {
+      trackUserProfileAction: E
+    } = (0, c.KZ)(), b = e => {
+      null != t && E({
+        action: t
+      }), null == d || d(e)
+    };
+    return (0, r.jsx)(s.Button, p(f({
+      buttonRef: _,
+      className: o()(u.button, a),
+      innerClassName: o()(u.buttonInner, l),
+      color: o()(n, g[i]),
+      look: s.Button.Looks.FILLED,
+      size: s.Button.Sizes.SMALL,
+      onClick: b
+    }, m), {
+      "data-migration-pending": true
+    }))
+  },
+  y = Chunk647438.forwardRef(function(e, t) {
     var {
       icon: n,
       tooltipText: i,
@@ -165,12 +147,12 @@ let O = Chunk647438.forwardRef(function(e, t) {
       }))
     })
   }),
-  v = Chunk647438.forwardRef(function(e, t) {
+  O = Chunk647438.forwardRef(function(e, t) {
     var {
       className: n,
       innerClassName: i
     } = e, a = h(e, ["className", "innerClassName"]);
-    return (0, r.jsx)(O, f({
+    return (0, r.jsx)(y, f({
       ref: t,
       className: o()(u.banner, n),
       innerClassName: o()(u.banner, i),

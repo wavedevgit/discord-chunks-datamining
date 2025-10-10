@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk359110 = require("./359110.js"),
   Chunk314897 = require("./314897.js"),
   Chunk944486 = require("./944486.js"),
-  Chunk475413 = require("./475413.jsx"),
+  Chunk732380 = require("./732380.jsx"),
   Chunk176505 = require("./176505.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx");
@@ -27,20 +27,18 @@ function E(e) {
     guildId: n,
     channelId: E,
     onClose: b,
-    appContext: y,
-    shouldShowTooltip: O
+    appContext: y
   } = e, {
-    newestAnalyticsLocation: v
-  } = (0, o.ZP)(), I = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), T = (0, l.m)(null != n ? n : null), S = (0, i.e7)([_.Z], () => null != E ? E : _.Z.getChannelId(n, true), [E, n]);
-  return null == n || !T || I ? null : (0, r.jsx)(p.oY, {
+    newestAnalyticsLocation: O
+  } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), I = (0, l.m)(null != n ? n : null), T = (0, i.e7)([_.Z], () => null != E ? E : _.Z.getChannelId(n, true), [E, n]);
+  return null == n || !I || v ? null : (0, r.jsx)(p.f6, {
     action: "PRESS_MOD_VIEW",
     icon: a.HI3,
-    shouldShowTooltip: O,
     tooltipText: g.intl.string(g.t.kj3tz8),
     onClick: () => {
-      c.Z.close(), null != S && (0, d.Kh)(S), (0, u.i)(y), (0, s.r)(n, t.id, null != S ? S : h.oC.MEMBER_SAFETY, {
+      c.Z.close(), null != T && (0, d.Kh)(T), (0, u.i)(y), (0, s.r)(n, t.id, null != T ? T : h.oC.MEMBER_SAFETY, {
         modViewPanel: m.k.INFO,
-        sourceLocation: v
+        sourceLocation: O
       }), null == b || b()
     }
   })

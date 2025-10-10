@@ -29,10 +29,10 @@ function h(e) {
   } = (0, s.ZP)(), {
     context: g,
     trackUserProfileAction: b
-  } = (0, a.KZ)(), y = (0, o.Z)();
+  } = (0, a.KZ)(), I = (0, o.Z)();
   return i.useEffect(() => {
-    (0, d.Z)(n.id, y)
-  }, [n.id, y]), (0, l.jsx)(r.zJl, {
+    (0, d.Z)(n.id, I)
+  }, [n.id, I]), (0, l.jsx)(r.zJl, {
     className: f.listScroller,
     fade: true,
     children: null == j ? (0, l.jsx)("div", {

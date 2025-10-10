@@ -48,9 +48,9 @@ function O(e) {
       user: n,
       currentUser: t,
       guildId: O.guildId,
-      scrollIntoView: N === y.Tb.ROLES
+      scrollIntoView: N === I.Tb.ROLES
     }), n.isProvisional && (0, l.jsx)(g.Z, {
-      heading: I.intl.string(I.t.Iyka0d),
+      heading: y.intl.string(y.t.Iyka0d),
       headingIcon: (0, l.jsx)(r.Mgn, {
         size: "xxs",
         color: r.TVs.colors.HEADER_PRIMARY
@@ -60,20 +60,20 @@ function O(e) {
         userId: n.id
       })
     }), E.length > 0 && (0, l.jsx)(g.Z, {
-      heading: I.intl.string(I.t["Uv/eT0"]),
+      heading: y.intl.string(y.t["Uv/eT0"]),
       children: (0, l.jsx)(j.Z, {
         applicationIds: E
       })
     }), (0, l.jsx)(g.Z, {
-      heading: I.intl.string(I.t.a6XYDw),
+      heading: y.intl.string(y.t.a6XYDw),
       children: (0, l.jsx)(v.Z, {
         userId: n.id,
         guildId: null == O ? true : O.guildId,
-        tooltipDelay: y.vB
+        tooltipDelay: I.vB
       })
     }), _.length > 0 && (0, l.jsx)(g.Z, {
-      heading: I.intl.string(I.t["3fe7U1"]),
-      scrollIntoView: N === y.Tb.CONNECTIONS,
+      heading: y.intl.string(y.t["3fe7U1"]),
+      scrollIntoView: N === I.Tb.CONNECTIONS,
       children: (0, l.jsx)(x.ZP, {
         connectedAccounts: _,
         className: Z.connections,
@@ -81,7 +81,7 @@ function O(e) {
         locale: C
       })
     }), w.length > 0 && (0, l.jsx)(g.Z, {
-      heading: I.intl.string(I.t.PHjkRE),
+      heading: y.intl.string(y.t.PHjkRE),
       children: w.map(e => (0, l.jsx)(x.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
@@ -94,12 +94,12 @@ function O(e) {
         selectedGuildId: null != A ? A : true
       }, e.application.id))
     }), (0, l.jsx)(g.Z, {
-      heading: I.intl.string(I.t["mQKv+v"]),
-      scrollIntoView: N === y.Tb.NOTE,
+      heading: y.intl.string(y.t["mQKv+v"]),
+      scrollIntoView: N === I.Tb.NOTE,
       children: (0, l.jsx)(o.Z, {
         userId: n.id,
         className: Z.note,
-        autoFocus: N === y.Tb.NOTE,
+        autoFocus: N === I.Tb.NOTE,
         onUpdate: () => T({
           action: "SET_NOTE"
         })

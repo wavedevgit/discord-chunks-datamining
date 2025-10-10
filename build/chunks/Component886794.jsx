@@ -44,26 +44,26 @@ function C(e) {
     transitionState: L,
     openedAt: M,
     onClose: U,
-    sourceAnalyticsLocations: B = []
-  } = e, k = C === N.ME ? true : C, F = (0, p.ZP)(t.id, k), V = u.ZP.getName(k, _, t), G = (0, a.Dt)(), {
+    sourceAnalyticsLocations: k = []
+  } = e, B = C === N.ME ? true : C, V = (0, p.ZP)(t.id, B), F = u.ZP.getName(B, _, t), G = (0, a.Dt)(), {
     analyticsLocations: z
-  } = (0, s.ZP)([...B, o.Z.USER_PROFILE_MODAL]), W = (0, m.ZB)({
+  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_MODAL]), H = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
-    guildId: k,
+    guildId: B,
     channelId: _,
     messageId: w,
     roleId: D
-  }), K = i.useRef(null), H = (0, c.X)(K);
+  }), W = i.useRef(null), K = (0, c.X)(W);
   return (0, l.jsx)(s.Gt, {
     value: z,
     children: (0, l.jsx)(m.Mt, {
-      value: W,
+      value: H,
       openedAt: M,
-      fetchStartedAt: null == F ? true : F.fetchStartedAt,
-      fetchEndedAt: null == F ? true : F.fetchEndedAt,
-      isLoaded: null == F ? true : F.isLoaded,
+      fetchStartedAt: null == V ? true : V.fetchStartedAt,
+      fetchEndedAt: null == V ? true : V.fetchEndedAt,
+      isLoaded: null == V ? true : V.isLoaded,
       children: (0, l.jsxs)(r.Y0X, {
         "data-migration-pending": true,
         transitionState: L,
@@ -76,45 +76,45 @@ function C(e) {
             children: (0, l.jsx)(r.H, {
               id: G,
               children: T.intl.format(T.t.KRe1Fh, {
-                name: V
+                name: F
               })
             })
           }),
           children: (0, l.jsxs)(b.Z, {
             user: t,
-            displayProfile: F,
+            displayProfile: V,
             themeType: P.l.MODAL,
-            ref: (null == F ? true : F.profileEffect) != null ? K : true,
+            ref: (null == V ? true : V.profileEffect) != null ? W : true,
             children: [(0, l.jsx)(Z.Z, {
-              children: (0, l.jsx)(I.Z, {
+              children: (0, l.jsx)(y.Z, {
                 user: t
               })
             }), (0, l.jsxs)("div", {
               children: [(0, l.jsx)(x.Z, {
                 user: t,
-                displayProfile: F,
+                displayProfile: V,
                 themeType: P.l.MODAL
               }), (0, l.jsx)("div", {
                 className: A.headerInner,
                 children: (0, l.jsx)(f.Z, {
                   user: t,
-                  displayProfile: F,
-                  guildId: k,
+                  displayProfile: V,
+                  guildId: B,
                   channelId: _,
                   themeType: P.l.MODAL
                 })
               })]
             }), (0, l.jsxs)("div", {
               className: A.body,
-              children: [(0, l.jsx)(y.Z, {
+              children: [(0, l.jsx)(I.Z, {
                 className: A.username,
                 user: t,
-                guildId: k,
-                nickname: V,
-                pronouns: null == F ? true : F.pronouns,
+                guildId: B,
+                nickname: F,
+                pronouns: null == V ? true : V.pronouns,
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(h.Z, {
-                  displayProfile: F,
+                  displayProfile: V,
                   themeType: P.l.MODAL,
                   onClose: U
                 })
@@ -139,13 +139,13 @@ function C(e) {
                   className: E.scroller,
                   children: [(0, l.jsx)(j.Z, {
                     userId: t.id,
-                    userBio: null == F ? true : F.bio,
+                    userBio: null == V ? true : V.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(g.Z, {
                     heading: T.intl.string(T.t["A//N4u"]),
                     children: (0, l.jsx)(v.Z, {
                       userId: t.id,
-                      guildId: k,
+                      guildId: B,
                       tooltipDelay: O.vB
                     })
                   })]
@@ -153,9 +153,9 @@ function C(e) {
               })]
             })]
           })
-        }), (null == F ? true : F.profileEffect) != null && (0, l.jsx)(d.Z, {
-          skuId: null == F || null == (n = F.profileEffect) ? true : n.skuId,
-          isHovering: H
+        }), (null == V ? true : V.profileEffect) != null && (0, l.jsx)(d.Z, {
+          skuId: null == V || null == (n = V.profileEffect) ? true : n.skuId,
+          isHovering: K
         })]
       })
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 31553 **/
 /** chunk id: 574887, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,25 +23,25 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk20163 = require("./20163.js");
 
-function y(e) {
+function I(e) {
   var n;
   let {
     account: t,
     locale: i,
     userId: r
-  } = e, o = null != (n = t.metadata) ? n : {}, h = (0, m.FI)(o[v.PC.CREATED_AT], i), y = c.Z.get((0, u.rR)(t.type));
+  } = e, o = null != (n = t.metadata) ? n : {}, h = (0, m.FI)(o[v.PC.CREATED_AT], i), I = c.Z.get((0, u.rR)(t.type));
   return (0, l.jsxs)("li", {
     className: b.connection,
     children: [(0, l.jsx)(s.u, {
-      __unsupportedReactNodeAsText: null == y ? true : y.name,
+      __unsupportedReactNodeAsText: null == I ? true : I.name,
       children: (0, l.jsx)("div", {
         className: b.platformIconContainer,
         children: (0, l.jsx)("img", {
           alt: g.intl.formatToPlainString(g.t.rtm15O, {
-            name: null == y ? true : y.name
+            name: null == I ? true : I.name
           }),
           className: b.platformIcon,
-          src: null == y ? true : y.icon.lightPNG
+          src: null == I ? true : I.icon.lightPNG
         })
       })
     }), (0, l.jsxs)("div", {
@@ -49,7 +49,7 @@ function y(e) {
       children: [(0, l.jsxs)("div", {
         children: [(() => {
           var e;
-          let n = null == y || null == (e = y.getPlatformUserUrl) ? true : e.call(y, t);
+          let n = null == I || null == (e = I.getPlatformUserUrl) ? true : e.call(I, t);
           return null == n ? (0, l.jsx)(s.u, {
             overflowOnly: true,
             text: t.name,
@@ -62,14 +62,14 @@ function y(e) {
             href: n,
             className: b.platformUrlAnchor,
             useDefaultUnderlineStyles: false,
-            "aria-label": (null == y ? true : y.name) != null ? "".concat(y.name, ", ").concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)) : "".concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)),
+            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)) : "".concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)),
             onClick: e => {
               (0, d.yw)(j.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
                 other_user_id: r
               }), (0, x.q)({
                 href: n,
-                trusted: (null == y ? true : y.type) !== j.ABu.DOMAIN
+                trusted: (null == I ? true : I.type) !== j.ABu.DOMAIN
               }, e)
             },
             children: (0, l.jsxs)("div", {
@@ -102,7 +102,7 @@ function y(e) {
   })
 }
 
-function I(e) {
+function y(e) {
   let {
     connections: n,
     userId: t,
@@ -110,7 +110,7 @@ function I(e) {
   } = e, s = (0, o.e7)([h.default], () => h.default.locale);
   return 0 === n.length ? null : (0, l.jsx)("ul", {
     className: r()(b.container, i),
-    children: n.map(e => (0, l.jsx)(y, {
+    children: n.map(e => (0, l.jsx)(I, {
       account: e,
       userId: t,
       locale: s

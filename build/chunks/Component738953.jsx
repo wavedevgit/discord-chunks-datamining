@@ -187,11 +187,9 @@ function Z(e) {
                 onClose: Y,
                 appContext: q
               }), (0, r.jsx)(N.Z, {
-                shouldShowTooltip: null === ea.interactionType,
                 themeType: x.l.POPOUT,
                 user: n
-              }), !el && (0, r.jsx)(P.Z, {
-                type: "banner",
+              }), !el && (0, r.jsx)(P.Cn, {
                 user: n,
                 guildId: G,
                 viewProfileItem: ef(),

@@ -27,7 +27,7 @@ function g(e) {
   } = e, {
     mutualFriendsCount: g,
     mutualGuilds: b
-  } = (0, p.Z)(n), y = null == b ? true : b.length, I = (0, m.Z)(n), Z = (0, d.Z)({
+  } = (0, p.Z)(n), I = null == b ? true : b.length, y = (0, m.Z)(n), Z = (0, d.Z)({
     location: "useUserProfileModalV2TabBarItems"
   }), O = (0, u.Z)({
     location: "useUserProfileModalV2TabBarItems"
@@ -52,12 +52,12 @@ function g(e) {
     text: v.intl.string(v.t["7lZ31N"]),
     section: j.oh.WISHLIST,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && I && (E.push({
+  }), n.id !== (null == t ? true : t.id) && y && (E.push({
     text: (0, h.Z)(g),
     section: j.oh.MUTUAL_FRIENDS,
     subsection: true
   }), E.push({
-    text: (0, x.Z)(y),
+    text: (0, x.Z)(I),
     section: j.oh.MUTUAL_GUILDS,
     subsection: true
   })), E
