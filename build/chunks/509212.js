@@ -587,7 +587,7 @@ function eF(e) {
 }
 
 function eV(e, t) {
-  let n = x.r.build(e.config).application.link;
+  let n = x.r.build(e.config).ctaLink;
   (0, N._3)({
     questId: e.id,
     questContent: t.content,
@@ -985,9 +985,9 @@ function tw(e, t) {
 }
 
 function tD(e) {
-  var t, n;
-  let r = x.r.build(e).defaultWatchVideoTask;
-  return null != (n = null != (t = null == r ? true : r.messages.videoEndCtaButtonLabel) ? t : null == r ? true : r.messages.videoEndCtaTitle) ? n : G.intl.string(G.t.iiTtpK)
+  var t, n, r, i;
+  let a = x.r.build(e).defaultWatchVideoTask;
+  return null != (i = null != (r = null != (n = null == (t = e.ctaConfig) ? true : t.buttonLabel) ? n : null == a ? true : a.messages.videoEndCtaButtonLabel) ? r : null == a ? true : a.messages.videoEndCtaTitle) ? i : G.intl.string(G.t.iiTtpK)
 }
 
 function tL(e, t) {

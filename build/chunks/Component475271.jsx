@@ -33,8 +33,8 @@ let c = {
     let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
       {
         sitekey: c,
-        captchaService: d,
-        options: u
+        captchaService: u,
+        options: d
       } = e;
     (0, a.ZDy)(async () => {
       let {
@@ -45,9 +45,9 @@ let c = {
           captcha_key: e,
           captcha_rqtoken: n
         }),
-        captchaService: d,
+        captchaService: u,
         sitekey: c
-      }, o, u, n))
+      }, o, d, n))
     }, {
       Layer: i.ZP,
       modalKey: s.A
@@ -57,8 +57,8 @@ let c = {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
         sitekey: c,
-        captchaService: d,
-        captchaSessionId: u,
+        captchaService: u,
+        captchaSessionId: d,
         options: m
       } = e;
     return new Promise((e, p) => {
@@ -70,9 +70,9 @@ let c = {
           onCaptchaVerify: (t, n) => e({
             captcha_key: t,
             captcha_rqtoken: n,
-            captcha_session_id: u
+            captcha_session_id: d
           }),
-          captchaService: d,
+          captchaService: u,
           sitekey: c,
           onReject: e => {
             e === o.CaptchaError.CANCEL ? p(new o.CaptchaCancelError) : p(Error("cancel captcha"))

@@ -2,13 +2,14 @@
 /** chunk id: 312046, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => o,
-  s: () => s
+  Q: () => s,
+  s: () => l
 });
-var Chunk418793 = require("./418793.js"),
+var Chunk666977 = require("./666977.js"),
+  Chunk418793 = require("./418793.js"),
   Chunk460597 = require("./460597.js"),
   Chunk608591 = require("./608591.js");
-let o = e => ({
+let s = e => ({
   id: e.id,
   configVersion: 2,
   startsAt: e.starts_at,
@@ -40,14 +41,15 @@ let o = e => ({
     gameTitle: e.messages.game_title,
     gamePublisher: e.messages.game_publisher
   },
-  taskConfigV2: (0, i._)(e.task_config_v2),
-  rewardsConfig: (0, r.v)(e.rewards_config),
-  videoMetadata: (0, a.FG)(e.video_metadata),
-  cosponsorMetadata: s(e.cosponsor_metadata),
-  sharePolicy: e.share_policy
+  taskConfigV2: (0, a._)(e.task_config_v2),
+  rewardsConfig: (0, i.v)(e.rewards_config),
+  videoMetadata: (0, o.FG)(e.video_metadata),
+  cosponsorMetadata: l(e.cosponsor_metadata),
+  sharePolicy: e.share_policy,
+  ctaConfig: (0, r.D)(e.cta_config)
 });
 
-function s(e) {
+function l(e) {
   if (null != e) return {
     name: e.name,
     logotype: e.logotype,

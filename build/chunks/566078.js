@@ -82,6 +82,10 @@ class d {
     var e, t;
     return null != (t = null == (e = this.quest.taskConfigV2.tasks[Chunk754700.X.PLAY_ON_DESKTOP]) ? true : module.applications) ? exports : null
   }
+  get ctaLink() {
+    var e, t;
+    return null != (t = null == (e = this.quest.ctaConfig) ? true : module.link) ? exports : this.application.link
+  }
   get rewardPlatforms() {
     return this.quest.rewardsConfig.platforms
   }

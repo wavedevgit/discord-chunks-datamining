@@ -34,17 +34,17 @@ function w(e) {
     onUseNow: i,
     user: l,
     mode: o
-  } = e, c = (0, h.fh)(t, h.eC.REWARD).url, u = (0, C.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
+  } = e, d = (0, h.fh)(t, h.eC.REWARD).url, u = (0, x.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
   return (0, r.jsxs)("div", {
     className: b.contentContainer,
     children: [(0, r.jsx)("div", {
       className: b.previewContainer,
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(c.Z, {
         user: l,
         guildId: null,
         avatarDecorationOverride: a,
         avatarSize: s.EFr.SIZE_152,
-        questPreviewRewardAssetUrl: c
+        questPreviewRewardAssetUrl: d
       })
     }), (0, r.jsxs)("div", {
       className: b.copyContainer,
@@ -74,8 +74,8 @@ function T(e) {
   var n, t;
   let {
     quest: s,
-    onClose: d,
-    transitionState: C,
+    onClose: c,
+    transitionState: x,
     preview: h,
     location: N,
     sourceQuestContent: b
@@ -83,7 +83,7 @@ function T(e) {
     let {
       product: n,
       isFetching: t
-    } = (0, c.T)(e), r = a.useMemo(() => {
+    } = (0, d.T)(e), r = a.useMemo(() => {
       if (null == n || t) return null;
       let e = n.items.find(e => e.type === i.Z.AVATAR_DECORATION);
       return null != e ? e : null
@@ -100,7 +100,7 @@ function T(e) {
     return [r, l]
   }(null != (t = null == T ? true : T.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, O = !h && !D, [L, S] = a.useState(O ? "loading" : "claimed");
   a.useEffect(() => {
-    O && (0, x.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
+    O && (0, C.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
   }, [s.id, N, O]);
   let R = true === h && null === A && (null == T ? true : T.skuId) !== "",
     I = null == E,
@@ -110,8 +110,8 @@ function T(e) {
       S("applying"), S(await P() ? "applied" : "claimed")
     };
   return (0, r.jsx)(j.Z, {
-    onClose: d,
-    transitionState: C,
+    onClose: c,
+    transitionState: x,
     quest: s,
     sourceQuestContent: b,
     location: y.dr.COLLECTIBLE_REWARD_MODAL,

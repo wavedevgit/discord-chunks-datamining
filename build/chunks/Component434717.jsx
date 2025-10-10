@@ -28,11 +28,14 @@ function b(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: b
-  } = e, _ = (0, s.ZP)(), w = (0, o.wjy)(_) ? x.BR.DARK : x.BR.LIGHT, O = (0, m.ly)(t), N = (0, d.aM)(), P = a.useMemo(() => {
-    let e = f.r.build(t.config),
-      n = e.defaultWatchVideoTask,
-      r = null == n ? true : n.messages.videoEndCtaSubtitle;
-    return (0, l.Ew)(r) ? e.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, u.Pb)(t) ? g.intl.string(g.t.y8Xf3t) : g.intl.string(g.t.wirwNz) : r
+  } = e, _ = (0, s.ZP)(), w = (0, o.wjy)(_) ? x.BR.DARK : x.BR.LIGHT, O = (0, m.ly)(t), N = (0, u.aM)(), P = a.useMemo(() => {
+    var e;
+    let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
+    if (null != n) return n;
+    let r = f.r.build(t.config),
+      a = r.defaultWatchVideoTask,
+      o = null == a ? true : a.messages.videoEndCtaSubtitle;
+    return (0, l.Ew)(o) ? r.questType !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, d.Pb)(t) ? g.intl.string(g.t.y8Xf3t) : g.intl.string(g.t.wirwNz) : o
   }, [t]), {
     isLoading: T
   } = (0, j.d7)();
@@ -97,7 +100,7 @@ function b(e) {
         size: "sm",
         text: O,
         onClick: () => {
-          (0, u.nc)(t, {
+          (0, d.nc)(t, {
             content: p.jn.REWARD_MODAL,
             ctaContent: c.jZ.OPEN_GAME_LINK,
             impressionId: N,

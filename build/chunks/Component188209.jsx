@@ -39,15 +39,15 @@ function D(e) {
     questId: a,
     sourceQuestContent: i,
     className: l,
-    inputClassName: d
-  } = e, u = (0, o.e7)([f.Z], () => f.Z.hidePersonalInformation), m = (0, y.O5)();
+    inputClassName: u
+  } = e, d = (0, o.e7)([f.Z], () => f.Z.hidePersonalInformation), m = (0, y.O5)();
   return null == t ? null : (0, r.jsx)(c.Z, {
     className: l,
-    inputClassName: d,
-    value: u ? E.intl.string(E.t["0n2u0t"]) : t.code,
+    inputClassName: u,
+    value: d ? E.intl.string(E.t["0n2u0t"]) : t.code,
     buttonColor: s.Tt.PRIMARY,
     onCopy: () => {
-      u && (0, h.JG)(t.code), m({
+      d && (0, h.JG)(t.code), m({
         questId: a,
         questContent: n,
         questContentCTA: y.jZ.COPY_REWARD_CODE,
@@ -64,16 +64,16 @@ function A(e) {
     questContent: o,
     questContentPosition: s,
     sourceQuestContent: c,
-    rewardCode: d,
-    rewardPlatform: u,
+    rewardCode: u,
+    rewardPlatform: d,
     sharedQuestFields: m,
     onClose: p,
     transitionState: f,
     impressionRef: h
   } = e, y = null != (t = (0, x.C1)({
     quest: n,
-    rewardCode: d,
-    selectedPlatformType: u,
+    rewardCode: u,
+    selectedPlatformType: d,
     sharedQuestFields: m
   })) ? t : "", g = a.useMemo(() => {
     var e;
@@ -82,9 +82,9 @@ function A(e) {
       idx: 0
     })) ? true : e.redemptionLink;
     if ((0, j.Ew)(t)) return null;
-    let r = null == d ? true : d.code;
+    let r = null == u ? true : u.code;
     return (0, j.Ew)(r) ? t : t.replace(T.Dp, encodeURIComponent(r))
-  }, [n, null == d ? true : d.code]), v = (0, b.In)({
+  }, [n, null == u ? true : u.code]), v = (0, b.In)({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -112,7 +112,7 @@ function A(e) {
           className: I.claimInstructionsCodeInputTitle,
           children: E.intl.string(E.t.srzsU1)
         }), (0, r.jsx)(D, {
-          rewardCode: d,
+          rewardCode: u,
           questContent: o,
           questId: n.id,
           sourceQuestContent: c
@@ -206,9 +206,9 @@ function R(e) {
     preview: s
   });
   ! function(e) {
-    let t = (0, u.Z)(e),
+    let t = (0, d.Z)(e),
       n = m.default.useIsCaptchaModalOpen(),
-      r = (0, d.Z)(n),
+      r = (0, u.Z)(n),
       i = !!(!n && r);
     a.useEffect(() => {
       i && t()

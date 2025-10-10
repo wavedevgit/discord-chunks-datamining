@@ -14,11 +14,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk412331 = require("./412331.js");
 
-function p(e, t, n) {
+function f(e, t, n) {
   return n * (Math.max(e - t.left, 0) / t.width)
 }
 
-function f(e, t, n) {
+function p(e, t, n) {
   return n.left + e / t * n.width
 }
 
@@ -28,18 +28,18 @@ function v(e) {
     animate: n,
     interactionEnabled: o,
     backgroundColor: v,
-    preloadedBuffers: E,
-    duration: g,
-    maxSeekableTime: O,
-    onClick: b,
+    preloadedBuffers: g,
+    duration: E,
+    maxSeekableTime: b,
+    onClick: O,
     onScrubBack: h,
-    onScrubForward: S
-  } = e, [C, _] = l.useState(null), [y, j] = l.useState(null), [x, T] = l.useState(null), [D, R] = l.useState(false), P = l.useRef(null), I = e => {
+    onScrubForward: C
+  } = e, [S, _] = l.useState(null), [y, j] = l.useState(null), [x, T] = l.useState(null), [D, R] = l.useState(false), P = l.useRef(null), I = e => {
     P.current = e, _(e)
   };
   l.useEffect(() => {
-    null != C && (null == O ? T(null) : T(f(O, g, C)))
-  }, [C, O, g]);
+    null != S && (null == b ? T(null) : T(p(b, E, S)))
+  }, [S, b, E]);
   let N = (0, c.Z)(e => {
       I(e.contentRect)
     }),
@@ -59,13 +59,13 @@ function v(e) {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != h ? (e.preventDefault(), e.stopPropagation(), h()) : t === d.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
-    }, [h, S]),
-    L = null != y && null != C ? p(y, C, g) : 0,
+      t === d.mR.ArrowLeft && null != h ? (e.preventDefault(), e.stopPropagation(), h()) : t === d.mR.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
+    }, [h, C]),
+    L = null != y && null != S ? f(y, S, E) : 0,
     M = (0, u.yv)(L),
-    V = null != C ? C.right - f(t / 100 * g, g, C) : null,
-    Z = null != y && null != C ? C.right - y : null,
-    B = null != x && null != C ? C.right - x : null;
+    V = null != S ? S.right - p(t / 100 * E, E, S) : null,
+    Z = null != y && null != S ? S.right - y : null,
+    B = null != x && null != S ? S.right - x : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
     ref: k,
@@ -75,7 +75,7 @@ function v(e) {
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        o && null != b && b(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
+        o && null != O && O(f(e.clientX, e.currentTarget.getBoundingClientRect(), E))
       },
       onMouseEnter: e => {
         o && (null != k.current && I(k.current.getBoundingClientRect()), R(true), w(e))
@@ -94,7 +94,7 @@ function v(e) {
           bottom: 12
         }
       },
-      children: [null == E ? true : E.map(e => (0, r.jsx)("div", {
+      children: [null == g ? true : g.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
           [m.bufferHovered]: D
         }),

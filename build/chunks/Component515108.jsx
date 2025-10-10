@@ -20,10 +20,10 @@ function m(e) {
   } = e;
   return (0, r.jsx)(i.Modal, {
     size: "md",
-    title: d.intl.string(d.t.Hd3D8f),
+    title: u.intl.string(u.t.Hd3D8f),
     actions: [{
       variant: "primary",
-      text: d.intl.string(d.t.cpT0Cg),
+      text: u.intl.string(u.t.cpT0Cg),
       onClick: t
     }],
     onClose: t,
@@ -31,7 +31,7 @@ function m(e) {
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-secondary",
-      children: d.intl.string(d.t.Ij97SE)
+      children: u.intl.string(u.t.Ij97SE)
     })
   })
 }
@@ -41,14 +41,14 @@ function p(e) {
     quest: t,
     sourceQuestContent: n,
     transitionState: i,
-    onClose: d,
+    onClose: u,
     rewardContent: p,
     isRewardContentLoading: C,
     rewardContentHasError: f,
     location: h
   } = e, j = s.jn.REWARD_MODAL, [y, x] = a.useState(true);
   if (f) return (0, r.jsx)(m, {
-    onClose: d,
+    onClose: u,
     transitionState: i
   });
   let g = C || y;
@@ -58,7 +58,7 @@ function p(e) {
     sourceQuestContent: n,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [g ? (0, r.jsx)(o.$jN, {
-        className: u.spinner,
+        className: d.spinner,
         type: o.$jN.Type.WANDERING_CUBES
       }) : null, (0, r.jsx)("div", {
         ref: e,
@@ -69,20 +69,20 @@ function p(e) {
           "data-migration-pending": true,
           transitionState: g ? o.Dvm.HIDDEN : i,
           size: o.CgR.DYNAMIC,
-          className: u.modal,
+          className: d.modal,
           parentComponent: "QuestRewardV2ModalBase",
           children: [(0, r.jsx)(o.olH, {
             "data-migration-pending": true,
-            className: u.closeButton,
-            onClick: d,
+            className: d.closeButton,
+            onClick: u,
             withCircleBackground: true
           }), (0, r.jsxs)("div", {
-            className: u.modalContent,
+            className: d.modalContent,
             children: [(0, r.jsx)("div", {
-              className: u.leftPanel,
+              className: d.leftPanel,
               children: p
             }), (0, r.jsx)("div", {
-              className: u.rightPanel,
+              className: d.rightPanel,
               children: (0, r.jsx)(c.Z, {
                 quest: t,
                 sourceQuestContent: n,

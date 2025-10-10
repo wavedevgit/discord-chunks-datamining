@@ -22,12 +22,12 @@ let p = Chunk647438.forwardRef((e, t) => {
     percentCompleteText: x,
     percentCompleteTextVariant: g = "text-lg/medium",
     children: j
-  } = e, m = (0, c.E)(n, s > 0), h = o / 2, C = o / 2 - p / 2, y = 2 * Math.PI * C, b = y - s * y, O = {
-    strokeDasharray: "".concat(y, " ").concat(y),
-    strokeDashoffset: b
-  }, v = {
-    strokeDasharray: "".concat(y, " ").concat(y),
-    strokeDashoffset: -s * y
+  } = e, m = (0, c.E)(n, s > 0), h = o / 2, C = o / 2 - p / 2, b = 2 * Math.PI * C, y = b - s * b, v = {
+    strokeDasharray: "".concat(b, " ").concat(b),
+    strokeDashoffset: y
+  }, O = {
+    strokeDasharray: "".concat(b, " ").concat(b),
+    strokeDashoffset: -s * b
   }, k = {
     boxShadow: "0 0 30px 0px ".concat(m.glow)
   }, {
@@ -99,7 +99,7 @@ let p = Chunk647438.forwardRef((e, t) => {
         cx: h,
         cy: h,
         stroke: "url(#linear)",
-        style: v
+        style: O
       }), (0, r.jsx)("circle", {
         className: d.progress,
         strokeWidth: p,
@@ -108,7 +108,7 @@ let p = Chunk647438.forwardRef((e, t) => {
         cx: h,
         cy: h,
         stroke: m.foreground,
-        style: O
+        style: v
       })]
     })]
   })

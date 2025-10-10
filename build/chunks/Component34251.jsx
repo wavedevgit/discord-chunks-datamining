@@ -28,7 +28,7 @@ function C(e) {
     className: x.contentContainer,
     children: [(0, r.jsx)("div", {
       className: x.rewardTileContainer,
-      children: (0, r.jsx)(c.Z, {
+      children: (0, r.jsx)(d.Z, {
         autoplay: true,
         className: x.rewardTile,
         learnMoreStyle: null,
@@ -66,13 +66,13 @@ function g(e) {
   let {
     quest: n,
     onClose: i,
-    transitionState: c,
+    transitionState: d,
     location: f,
     sourceQuestContent: x
   } = e, g = a.useMemo(() => (0, s.K)(n.config), [n]), h = (null == (t = n.userStatus) ? true : t.claimedAt) != null, _ = !n.preview && !h, [j, v] = a.useState(_ ? "loading" : "claimed");
   a.useEffect(() => {
     if (_) {
-      let e = d.r.build(n.config),
+      let e = c.r.build(n.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : l.y$.CROSS_PLATFORM;
       (0, o.QB)(n.id, t, f).then(() => v("claimed")).catch(() => v("error"))
     }
@@ -80,7 +80,7 @@ function g(e) {
   let N = "error" === j || null == g;
   return (0, r.jsx)(u.Z, {
     onClose: i,
-    transitionState: c,
+    transitionState: d,
     quest: n,
     sourceQuestContent: x,
     location: p.dr.INGAME_REWARD_MODAL,

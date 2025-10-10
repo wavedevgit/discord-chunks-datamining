@@ -1,5 +1,5 @@
 /** Chunk was on 36073 **/
-/** chunk id: 890814, original params: e,t,r (module,exports,require) **/
+/** chunk id: 890814, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -10,12 +10,12 @@ var Chunk956636 = require("./956636.js");
 function a(e) {
   let {
     games: t,
-    renderGame: r
+    renderGame: n
   } = e;
-  return (0, n.jsx)("ul", {
+  return (0, r.jsx)("ul", {
     className: i.coverList,
-    children: t.map((e, t) => (0, n.jsx)("li", {
-      children: r(e)
+    children: t.map((e, t) => (0, r.jsx)("li", {
+      children: n(e)
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

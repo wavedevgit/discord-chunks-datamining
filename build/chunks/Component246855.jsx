@@ -55,10 +55,10 @@ function w(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), f = (0, c.ZP)(), _ = (0, l.apv)(f), C = _ ? S.Z : A.Z, b = _ ? L.Z : T.Z, h = r.useRef(null), x = r.useRef(null), [y, g] = r.useState(false), [j, v] = r.useState(false), [E, R] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), f = (0, c.ZP)(), C = (0, l.apv)(f), _ = C ? S.Z : A.Z, b = C ? L.Z : T.Z, h = r.useRef(null), x = r.useRef(null), [g, y] = r.useState(false), [j, v] = r.useState(false), [E, R] = r.useState(false);
   r.useEffect(() => {
-    y && j && E && t()
-  }, [y, j, E, t]), r.useEffect(() => {
+    g && j && E && t()
+  }, [g, j, E, t]), r.useEffect(() => {
     n || i || setTimeout(() => {
       var e;
       null == (e = h.current) || e.play()
@@ -94,10 +94,10 @@ function w(e) {
       playsInline: true,
       className: N.centerOrb,
       controls: false,
-      onCanPlayThrough: r.useCallback(() => g(true), []),
+      onCanPlayThrough: r.useCallback(() => y(true), []),
       onEnded: O,
       children: (0, a.jsx)("source", {
-        src: C,
+        src: _,
         type: "video/webm"
       })
     }), (0, a.jsxs)("div", {
@@ -137,7 +137,7 @@ function I(e) {
       className: N.copyContainer,
       children: [(0, a.jsxs)("div", {
         className: N.heading,
-        children: [(0, a.jsx)(C.M, {
+        children: [(0, a.jsx)(_.M, {
           shouldUseThemeColor: true,
           className: N.orbsIcon
         }), (0, a.jsx)(l.Heading, {
@@ -181,15 +181,15 @@ function P(e) {
   } = e, c = (null == (t = n.userStatus) ? true : t.claimedAt) != null, {
     balance: d,
     error: u
-  } = (0, _.A)(), m = (0, b.LM)(n.config), [p, f] = r.useState(c ? "success" : "loading"), [C, v] = r.useState(false), E = r.useCallback(() => {
+  } = (0, C.A)(), m = (0, b.LM)(n.config), [p, f] = r.useState(c ? "success" : "loading"), [_, v] = r.useState(false), E = r.useCallback(() => {
     v(true)
   }, []);
   r.useEffect(() => {
     c || "loading" !== p || (0, h.QB)(n.id, x.y$.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
   }, [n.id, c, p, l]);
-  let N = !C || "loading" === p || null == d && null == u,
+  let N = !_ || "loading" === p || null == d && null == u,
     A = "error" === p || null == m || null == d && null != u;
-  return (0, a.jsx)(y.Z, {
+  return (0, a.jsx)(g.Z, {
     onClose: i,
     transitionState: s,
     quest: n,
@@ -197,7 +197,7 @@ function P(e) {
     location: j.dr.ORBS_REWARD_MODAL,
     isRewardContentLoading: N,
     rewardContentHasError: A,
-    rewardContent: A ? null : (0, a.jsx)(g.Z, {
+    rewardContent: A ? null : (0, a.jsx)(y.Z, {
       rewardName: R.intl.string(R.t.Lmysvb),
       children: (0, a.jsx)(I, {
         onClose: i,

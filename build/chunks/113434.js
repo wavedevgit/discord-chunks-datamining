@@ -339,7 +339,11 @@ function ef(e, t, n) {
 }
 
 function e_(e) {
-  return r.useMemo(() => (0, C.q8)(e) || (0, C.Pb)(e) || (0, C.pO)(e) || (0, C.Vl)(e) || e.config.features.includes(k.S7.NON_GAMING_PLAY_QUEST) ? B.intl.string(B.t.hvVgAQ) : B.intl.string(B.t.lwQdjI), [e])
+  return r.useMemo(() => {
+    var t;
+    let n = null == (t = e.config.ctaConfig) ? true : t.buttonLabel;
+    return null != n ? n : (0, C.q8)(e) || (0, C.Pb)(e) || (0, C.pO)(e) || (0, C.Vl)(e) || e.config.features.includes(k.S7.NON_GAMING_PLAY_QUEST) ? B.intl.string(B.t.hvVgAQ) : B.intl.string(B.t.lwQdjI)
+  }, [e])
 }
 
 function ep(e) {
