@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => u,
   j: () => d
-});
+}), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
@@ -26,7 +26,10 @@ function u(e) {
     onClick: () => t(l.e5.ALL)
   }) : (0, r.jsx)("div", {
     className: c.gridContainer,
-    children: n.map(e => (0, r.jsx)(a.Z, {
+    children: [...n].sort((e, t) => {
+      var n, r, i, l;
+      return (null != (i = null == (n = t.userStatus) ? true : n.claimedAt) ? i : "").localeCompare(null != (l = null == (r = e.userStatus) ? true : r.claimedAt) ? l : "")
+    }).map(e => (0, r.jsx)(a.Z, {
       quest: e
     }, e.id))
   })

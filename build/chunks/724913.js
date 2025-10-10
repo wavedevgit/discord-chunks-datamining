@@ -77,6 +77,7 @@ module.exports = {
   isSending: "isSending_c19a55",
   isFailed: "isFailed_c19a55",
   isUnsupported: "isUnsupported_c19a55",
+  markupBidi: "markupBidi_c19a55",
   edited: "edited_c19a55",
   communicationDisabled: "communicationDisabled_c19a55",
   compactCommunicationDisabled: "compactCommunicationDisabled_c19a55",
