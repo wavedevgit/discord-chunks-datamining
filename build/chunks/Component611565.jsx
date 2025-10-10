@@ -103,7 +103,7 @@ function b() {
   }), y = (0, Chunk399606.cj)([Chunk592125.Z], () => exports.reduce((e, t) => {
     let n = d.Z.getChannel(t);
     return e[t] = null != n ? n : null, e
-  }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), E = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
+  }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), S = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
@@ -127,7 +127,7 @@ function b() {
           },
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: "Nav On Click",
-            checked: !!E,
+            checked: !!S,
             onChange: e => {
               o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",

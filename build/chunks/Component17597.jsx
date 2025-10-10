@@ -28,8 +28,8 @@ let C = function(e) {
     transitionState: t,
     entryPoint: n,
     onClose: C,
-    onComplete: E,
-    dismissable: S
+    onComplete: S,
+    dismissable: E
   } = e, [T, O] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), N = r.useRef(T), [P, I] = (0, c.US)([T], true, true), w = r.useMemo(() => (0, i.Z)(), []), R = r.useRef(false);
   r.useEffect(() => {
     N.current = P
@@ -38,7 +38,7 @@ let C = function(e) {
     loading: k,
     ageVerificationMethods: A
   } = (0, b.Z)(() => {
-    null == E || E(), C()
+    null == S || S(), C()
   }, () => {
     O(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
@@ -55,7 +55,7 @@ let C = function(e) {
     transitionState: t,
     onClose: C,
     gradientColor: "blue",
-    dismissable: S,
+    dismissable: E,
     graphic: {
       type: "image",
       src: y.Z

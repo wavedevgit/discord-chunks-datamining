@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function U(e) {
   return e
 }
 
-function G(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -199,7 +199,7 @@ let B = Chunk647438.memo(function() {
     })]
   })
 });
-class F extends(r = Chunk647438.Component) {
+class V extends(r = Chunk647438.Component) {
   static getDerivedStateFromProps(e) {
     let {
       children: t,
@@ -279,7 +279,7 @@ class F extends(r = Chunk647438.Component) {
           return i
         }(r, ["ref", "role"]);
         return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, U({
+          children: r => (0, i.jsx)(f.aVo, G({
             fade: true,
             innerRole: o,
             innerAriaLabel: L.intl.string(L.t.YUU0RE),
@@ -328,7 +328,7 @@ class F extends(r = Chunk647438.Component) {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, O.X)()), {
+      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, O.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -424,10 +424,10 @@ class F extends(r = Chunk647438.Component) {
     })
   }
 }
-k(F, "defaultProps", {
+k(V, "defaultProps", {
   padding: 8
 });
-let V = e => {
+let F = e => {
   let {
     density: t
   } = (0, f.TCT)(), {
@@ -478,7 +478,7 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), B = (0, x.Dt)(), V = (0, d.ZP)({
+  }), [D]), B = (0, x.Dt)(), F = (0, d.ZP)({
     id: "private-channels-".concat(B),
     isEnabled: S,
     scrollToStart: M,
@@ -489,8 +489,8 @@ let V = e => {
   return (0, i.jsx)(y.Gt, {
     value: v,
     children: (0, i.jsx)(u.bG, {
-      navigator: V,
-      children: (0, i.jsx)(F, G(U({}, e), {
+      navigator: F,
+      children: (0, i.jsx)(V, U(G({}, e), {
         density: t,
         channels: _,
         privateChannelIds: O,

@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./49124.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,18 +58,18 @@ let C = {
     [Chunk489495.cq.STATIC]: null,
     [Chunk489495.cq.REDUCED_MOTION]: null
   },
-  E = "debug",
-  S = e => {
+  S = "debug",
+  E = e => {
     let {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [S, T] = r.useState(true), O = r.useRef(null), [N, P] = r.useState(false), [I, w] = r.useState(false), [R, k] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [M, L] = r.useState(t.name), U = M.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
-      id: E,
-      skuId: E,
-      title: E,
-      description: E,
-      accessibilityLabel: E,
+    } = (0, x.n6)(), i = (0, o.e7)([h.default], () => h.default.getCurrentUser()), [E, T] = r.useState(true), O = r.useRef(null), [N, P] = r.useState(false), [I, w] = r.useState(false), [R, k] = r.useState([]), [A, Z] = r.useState(C), D = r.useRef([]), [M, L] = r.useState(t.name), U = M.toLowerCase().replace(/\s+/g, "_"), F = r.useMemo(() => ({
+      id: S,
+      skuId: S,
+      title: S,
+      description: S,
+      accessibilityLabel: S,
       reducedMotionSrc: "",
       thumbnailPreviewSrc: "",
       effects: R,
@@ -140,7 +140,7 @@ let C = {
             src: N ? v : j,
             alt: "",
             width: 450
-          }), S && (0, a.jsx)(b.Z, {
+          }), E && (0, a.jsx)(b.Z, {
             config: F
           })]
         }), (0, a.jsxs)("div", {

@@ -122,7 +122,7 @@ function R(e) {
         className: T.errorIcon
       }), "Error"]
     }),
-    group: E.v0.NONE,
+    group: S.v0.NONE,
     render(e) {
       let {
         actionLog: t
@@ -150,7 +150,7 @@ function R(e) {
   }] : w, [t]), {
     TabBar: s,
     renderSelectedTab: o
-  } = (0, E.ZP)({
+  } = (0, S.ZP)({
     tabs: i
   }, [i]);
   return (0, a.jsxs)(y.Z, {
@@ -173,7 +173,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], S.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], E.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, g.JG)(n, () => (0, m.showToast)({
             id: "copy-action-log-name",
@@ -258,8 +258,8 @@ function Z() {
   let y = Chunk647438.useCallback(e => {
       u(o), g(e)
     }, [Chunk913527]),
-    E = exports.trim().length > 0,
-    S = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
+    S = exports.trim().length > 0,
+    E = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
     N = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,

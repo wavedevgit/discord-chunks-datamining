@@ -4,7 +4,7 @@ require.d(exports, {
   EY: () => _,
   NE: () => j,
   UM: () => g,
-  WX: () => E,
+  WX: () => S,
   WY: () => b,
   _k: () => C,
   ce: () => h,
@@ -171,7 +171,7 @@ function C(e) {
   })
 }
 
-function E(e, t) {
+function S(e, t) {
   return a.tn.post({
     url: p.ANM.GAME_SERVER_WAKE(e, t),
     rejectWithError: true

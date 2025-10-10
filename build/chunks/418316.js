@@ -56,11 +56,11 @@ function g(e) {
       let L = I.guild_scheduled_event_id,
         M = null != L ? l.ZP.getGuildScheduledEvent(L) : null,
         k = null == M ? true : M.name,
-        U = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
-        G = (0, l.Z2)(null != M ? M : true);
-      return (0, c.Ew)(U) || (0, c.Ew)(k) || !G ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXV, {
+        G = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
+        U = (0, l.Z2)(null != M ? M : true);
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXV, {
         event_name: k,
-        guild_name: U
+        guild_name: G
       });
     case d.O7.INCOMING_FRIEND_REQUESTS:
       return f({

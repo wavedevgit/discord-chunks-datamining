@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 let k = [],
-  U = {
+  G = {
     controller: new Chunk599273.Controller({
       value: 1,
       immediate: true
@@ -73,7 +73,7 @@ let k = [],
     disableBannerAnimation: true
   };
 
-function G(e) {
+function U(e) {
   var t, n;
   let {
     includePanelSpacing: l
@@ -91,7 +91,7 @@ function G(e) {
     guildId: e.guildId,
     ReadStateStore_: O.ZP,
     GuildStore_: _.Z
-  }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), G = i.useCallback(e => {
+  }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), U = i.useCallback(e => {
     h !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
@@ -104,8 +104,8 @@ function G(e) {
     canLoadMore: S.Z.canLoadMore({})
   }));
   i.useEffect(() => {
-      W && !B && G(A.X.ON_OPEN)
-    }, [W, B, G]),
+      W && !B && U(A.X.ON_OPEN)
+    }, [W, B, U]),
     function(e) {
       let {
         unreadChannelIds: t
@@ -139,8 +139,8 @@ function G(e) {
         message: n
       }]
     }), [K]),
-    q = F(Z, h, P),
-    X = F(D, h, null);
+    q = V(Z, h, P),
+    X = V(D, h, null);
   (0, p.ZP)(() => {
     var e;
     u.Z.dispatch({
@@ -212,7 +212,7 @@ function G(e) {
       component: (0, r.jsx)(f.ZP, (t = M({
         hasSubheader: true,
         guild: ee
-      }, U), n = n = {
+      }, G), n = n = {
         children: (0, r.jsx)(c.Kqy, {
           direction: "horizontal",
           gap: 4,
@@ -241,9 +241,9 @@ function G(e) {
         messages: h === A.V5.BOOKMARKS ? Y : q,
         unreadMessages: h === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
-        renderLoadingState: V,
+        renderLoadingState: F,
         ignoreGrouping: h === A.V5.BOOKMARKS,
-        loadMore: G
+        loadMore: U
       })]
     })
   })
@@ -251,11 +251,11 @@ function G(e) {
 
 function B(e) {
   return (0, r.jsx)(C.HP, {
-    children: (0, r.jsx)(G, M({}, e))
+    children: (0, r.jsx)(U, M({}, e))
   })
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   return i.useMemo(() => 0 === e.length || t === A.V5.BOOKMARKS ? k : e.filter(e => {
     let {
       id: r
@@ -264,7 +264,7 @@ function F(e, t, n) {
   }), [e, t, n])
 }
 
-function V() {
+function F() {
   return (0, Chunk951288.jsx)(Chunk862149.Z, {})
 }
 

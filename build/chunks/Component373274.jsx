@@ -444,7 +444,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         optInEnabled: l,
         guildChannelsVersion: o
       } = this.props;
-      return (0, F.dt)({
+      return (0, V.dt)({
         sectionIndex: e,
         guildChannels: t,
         guildChannelsVersion: o,
@@ -601,7 +601,7 @@ class eh extends(r = Chunk647438.PureComponent) {
               selected: a === eo.oC.CHANNEL_BROWSER || a === eo.oC.CUSTOMIZE_COMMUNITY
             }, er.z.CHANNELS_AND_ROLES);
           case er.z.GUILD_DIRECTORY:
-            return (0, i.jsx)(V.Z, {
+            return (0, i.jsx)(F.Z, {
               guild: r,
               selectedChannelId: a,
               disableManageChannels: p
@@ -697,7 +697,7 @@ class eh extends(r = Chunk647438.PureComponent) {
           }, x);
         case el.d4z.GUILD_CATEGORY:
           if (t !== u.voiceChannelsSectionNumber) return null;
-          return (0, i.jsx)(G.kw, {
+          return (0, i.jsx)(U.kw, {
             channel: j
           }, "readonly-".concat(j.id));
         case el.d4z.PUBLIC_THREAD:
@@ -729,7 +729,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         optInEnabled: s,
         guildId: c
       } = this.props;
-      return (0, i.jsx)(F.ZP, {
+      return (0, i.jsx)(V.ZP, {
         guildId: c,
         guildChannels: n,
         guildChannelsVersion: r,
@@ -738,7 +738,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         selectedChannelId: o,
         selectedVoiceChannelId: a,
         optInEnabled: s
-      }, (0, F.eo)(t, n, s))
+      }, (0, V.eo)(t, n, s))
     }), ec(this, "getAnchorId", (e, t) => {
       var n, r, i;
       let {
@@ -844,7 +844,7 @@ function eg(e) {
 }
 
 function em(e) {
-  let t = (0, U.Z)(e.guild),
+  let t = (0, G.Z)(e.guild),
     n = (0, u.cj)([L.Z], () => L.Z.getGuild(e.guildId, {
       guildActionRows: t
     })),

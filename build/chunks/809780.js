@@ -1,10 +1,10 @@
 /** Chunk was on 32118 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  As: () => F,
+  As: () => V,
   ZP: () => Q,
   hC: () => H,
-  jd: () => V
+  jd: () => F
 }), require("./539854.js"), require("./388685.js");
 var r, i, Chunk647438 = require("./647438.js"),
   Chunk836560 = require("./836560.js"),
@@ -41,7 +41,7 @@ var r, i, Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js");
 
-function U(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,14 +50,14 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function G(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      U(e, t, n[t])
+      G(e, t, n[t])
     })
   }
   return e
@@ -75,8 +75,8 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var F = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
-  V = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
+var V = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
+  F = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
 let H = 25;
 class z extends Chunk836560.EventEmitter {
   loadMore() {
@@ -89,7 +89,7 @@ class z extends Chunk836560.EventEmitter {
       r = exports.map(e => {
         if (e.isFullyLoaded || e.deleted || n) return e;
         if (e.collapsed)
-          if (!e.hasLoadedAnything) return B(G({}, e), {
+          if (!e.hasLoadedAnything) return B(U({}, e), {
             hasLoadedAnything: true
           });
           else return e;
@@ -102,13 +102,13 @@ class z extends Chunk836560.EventEmitter {
   }
   populateInitialStateFromStore(e) {
     if ("messages" === e.type) return W(e, false);
-    if ("nsfw" === e.type) return B(G({}, e), {
+    if ("nsfw" === e.type) return B(U({}, e), {
       isFullyLoaded: true,
       hasLoadedAnything: true
     });
     if ("forum" === e.type) {
       let t = O.Z.hasLoaded(e.guildId);
-      return B(G({}, e), {
+      return B(U({}, e), {
         isFullyLoaded: t,
         hasLoadedAnything: true
       })
@@ -137,7 +137,7 @@ class z extends Chunk836560.EventEmitter {
         channels: this.updateChannel(e.channelId, e => {
           s()("messages" === e.type, "channel cannot change type");
           let n = W(e, true);
-          return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = B(G({}, n), {
+          return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = B(U({}, n), {
             hasLoadedAnything: true,
             isFullyLoaded: true,
             hasError: !t
@@ -149,7 +149,7 @@ class z extends Chunk836560.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           var t;
-          return s()("messages" === e.type, "channel cannot change type"), B(G({}, W(e, true)), {
+          return s()("messages" === e.type, "channel cannot change type"), B(U({}, W(e, true)), {
             isFullyLoaded: true,
             hasError: true,
             hasLoadedAnything: true,
@@ -165,12 +165,12 @@ class z extends Chunk836560.EventEmitter {
   setState(e) {
     for (let t in e)
       if (e[t] !== this.state[t]) {
-        this.state = G({}, this.state, e), this.emit("change", this.state);
+        this.state = U({}, this.state, e), this.emit("change", this.state);
         return
       }
   }
   constructor(e, t) {
-    super(), U(this, "state", true), U(this, "scrollerRef", true), U(this, "undoStack", true), U(this, "maybeLoadMore", true), U(this, "reloadMessages", true), U(this, "getNumUnreadChannels", true), U(this, "markChannelRead", true), U(this, "undoMarkChannelRead", true), U(this, "markGuildRead", true), U(this, "deleteChannel", true), U(this, "markAllRead", true), U(this, "toggle", true), U(this, "handleUserGuildSettingsStoreChange", true), U(this, "handleJoinedThreadsStoreChange", true), U(this, "handleActiveThreadsStoreChange", true), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
+    super(), G(this, "state", true), G(this, "scrollerRef", true), G(this, "undoStack", true), G(this, "maybeLoadMore", true), G(this, "reloadMessages", true), G(this, "getNumUnreadChannels", true), G(this, "markChannelRead", true), G(this, "undoMarkChannelRead", true), G(this, "markGuildRead", true), G(this, "deleteChannel", true), G(this, "markAllRead", true), G(this, "toggle", true), G(this, "handleUserGuildSettingsStoreChange", true), G(this, "handleJoinedThreadsStoreChange", true), G(this, "handleActiveThreadsStoreChange", true), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
       var e;
       let t = null == (e = this.scrollerRef.current) ? true : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 2e3 && this.loadMore()
@@ -191,7 +191,7 @@ class z extends Chunk836560.EventEmitter {
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) return void this.deleteChannel(t);
       this.setState({
-        channels: this.updateChannel(t, e => B(G({}, e), {
+        channels: this.updateChannel(t, e => B(U({}, e), {
           deleted: true
         }))
       }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
@@ -241,7 +241,7 @@ class z extends Chunk836560.EventEmitter {
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",
-        channels: this.updateChannel(t, e => B(G({}, e), {
+        channels: this.updateChannel(t, e => B(U({}, e), {
           collapsed: s
         }))
       }), a.collapsed ? a.isFullyLoaded || this.loadMore() : this.maybeLoadMore()
@@ -261,7 +261,7 @@ class z extends Chunk836560.EventEmitter {
         {
           if (!e.hasLoadedAnything) return e;
           let t = O.Z.hasLoaded(e.guildId);
-          return B(G({}, e), {
+          return B(U({}, e), {
             isFullyLoaded: t,
             hasLoadedAnything: true
           })
@@ -284,7 +284,7 @@ function W(e, t) {
   let o = null != i.getAfter(e.oldestReadMessageId) || (null == (n = l[0]) ? true : n.id) === e.oldestUnreadMessageId,
     a = l[l.length - 1],
     s = L.default.compare(null == a ? true : a.id, e.newestUnreadMessageId) >= 0 || l.length >= H;
-  return B(G({}, e), {
+  return B(U({}, e), {
     messages: l,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
     hasLoadedFirst: e.hasLoadedFirst || o || t,
@@ -383,11 +383,11 @@ function Y(e, t, n, r) {
     }(n, r, a),
     order: 0
   };
-  (0, g.Y3)(i) ? t.push(B(G({}, u), {
+  (0, g.Y3)(i) ? t.push(B(U({}, u), {
     type: "nsfw"
-  })): i.isForumLikeChannel() ? t.push(B(G({}, u), {
+  })): i.isForumLikeChannel() ? t.push(B(U({}, u), {
     type: "forum"
-  })) : t.push(B(G({}, u), {
+  })) : t.push(B(U({}, u), {
     type: "messages",
     messages: []
   }))

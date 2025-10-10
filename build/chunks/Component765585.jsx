@@ -43,9 +43,9 @@ let b = Chunk647438.forwardRef(function(e, t) {
     pointerClassName: L,
     dismissIconClassName: M,
     dismissIcon: k,
-    onDismissIconClick: U,
-    tryItButtonColor: G
-  } = e, B = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [F, V] = i.useState(false), {
+    onDismissIconClick: G,
+    tryItButtonColor: U
+  } = e, B = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [V, F] = i.useState(false), {
     ref: H,
     width: z
   } = (0, c.ZP)();
@@ -61,8 +61,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
   return i.useEffect(() => {
     var e, t;
     let n = (null != (t = null == (e = H.current) ? true : e.scrollWidth) ? t : 0) + 64;
-    !F && n > R && V(true)
-  }, [F, z, H, R]), i.useEffect(() => {
+    !V && n > R && F(true)
+  }, [V, z, H, R]), i.useEffect(() => {
     (0, p.kk)(N)
   }, [N]), (0, r.jsx)("div", {
     className: C,
@@ -73,7 +73,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         [m.contentPremium]: S || A
       }),
       children: [null != k && (0, r.jsx)(s.P3F, {
-        onClick: U,
+        onClick: G,
         className: M,
         children: k
       }), (0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         }) : n]
       }), (0, r.jsx)("div", {
         ref: H,
-        className: F || !I ? m.buttonContainerVertical : m.buttonContainerHorizontal,
+        className: V || !I ? m.buttonContainerVertical : m.buttonContainerHorizontal,
         children: null != j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,
@@ -119,7 +119,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             onClick: e => {
               null == x || x(e), j(e), W(f.L.PRIMARY)
             },
-            color: null != G ? G : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
+            color: null != U ? U : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != O ? O : g.intl.string(g.t.IHf1RE)
           }), !D && (0, r.jsx)(a.zx, {
             className: m.button,

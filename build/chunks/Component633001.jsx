@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eS
+  Z: () => eE
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -168,7 +168,7 @@ let $ = Chunk647438.memo(function(e) {
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: ["fullscreenType: ", (0, E.sS)(t.fullscreenType)]
+        children: ["fullscreenType: ", (0, S.sS)(t.fullscreenType)]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
         color: "text-default",
@@ -194,7 +194,7 @@ let $ = Chunk647438.memo(function(e) {
         }), (0, a.jsxs)(m.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: ["overlayMethod: ", (0, E.P_)(t.overlayMethod)]
+          children: ["overlayMethod: ", (0, S.P_)(t.overlayMethod)]
         })]
       }), null != i && (0, a.jsxs)("div", {
         className: W.panelGroup,
@@ -213,7 +213,7 @@ let $ = Chunk647438.memo(function(e) {
         }), (0, a.jsxs)(m.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: ["raw overlayMethod: ", (0, E.P_)(i.overlayMethod)]
+          children: ["raw overlayMethod: ", (0, S.P_)(i.overlayMethod)]
         })]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
@@ -416,7 +416,7 @@ let ei = Chunk647438.memo(function(e) {
       variant: "text-sm/normal",
       color: "text-secondary",
       tag: "span",
-      children: ["Original Screen Type: ", null != n ? (0, E.sS)(n) : "Unknown"]
+      children: ["Original Screen Type: ", null != n ? (0, S.sS)(n) : "Unknown"]
     })
   }),
   el = Chunk647438.memo(function() {
@@ -466,7 +466,7 @@ let ei = Chunk647438.memo(function(e) {
               return (0, a.jsx)(m.Text, {
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: "".concat(n, ":").concat((0, E.sS)(n), " @ ").concat(en(r))
+                children: "".concat(n, ":").concat((0, S.sS)(n), " @ ").concat(en(r))
               }, "".concat(e.pid, "-").concat(n, "-").concat(r))
             })]
           }, e.pid))]
@@ -521,7 +521,7 @@ let ei = Chunk647438.memo(function(e) {
   }),
   eo = Chunk647438.memo(function() {
     let [e, t] = et(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = et(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ClickZones)), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WidgetAreas)), o = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WindowContainer)), c = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.DisabledGPUBoost)), u = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.ForceGPUBoost)), p = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.OverlayRafManagerForceEnabled)), h = e => {
-      x.Z.setRenderDebugMode(!S.ZP.hasRenderDebugMode(e), e)
+      x.Z.setRenderDebugMode(!E.ZP.hasRenderDebugMode(e), e)
     }, [f, b] = Chunk647438.useState({});
     return Chunk647438.useEffect(() => {
       let e = setInterval(() => {
@@ -974,7 +974,7 @@ function e_() {
   Chunk647438.useEffect(() => {
     0 !== Chunk371651 && (o ? Chunk570140(Chunk837268.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : Chunk570140(null))
   }, [o, Chunk837268, Chunk371651]);
-  let [E, T] = Chunk647438.useState(""), O = Chunk647438.useMemo(() => 0 === Chunk371651 ? [] : Chunk837268.filter(e => {
+  let [S, T] = Chunk647438.useState(""), O = Chunk647438.useMemo(() => 0 === Chunk371651 ? [] : Chunk837268.filter(e => {
     if (o && null != u && e.timestamp < u) returnfalse;
     for (let t of h) {
       let {
@@ -1154,7 +1154,7 @@ let ey = Chunk647438.memo(function() {
     })
   });
 
-function eE() {
+function eS() {
   return (0, Chunk951288.jsx)(Chunk481060.w0Z, {
     children: (0, Chunk951288.jsxs)("div", {
       className: l()(Chunk451429.panel, Chunk454741.subPanel),
@@ -1163,7 +1163,7 @@ function eE() {
   })
 }
 
-function eS() {
+function eE() {
   let [e, t] = Chunk647438.useState("state");
   return Chunk647438.useEffect(() => (Chunk570140.Z.dispatch({
     type: "OVERLAY_SET_DETAILED_LOGGING",
@@ -1194,6 +1194,6 @@ function eS() {
           children: "Logging"
         })
       })]
-    }), "state" === module && (0, Chunk951288.jsx)(eE, {}), "logging" === module && (0, Chunk951288.jsx)(e_, {})]
+    }), "state" === module && (0, Chunk951288.jsx)(eS, {}), "logging" === module && (0, Chunk951288.jsx)(e_, {})]
   })
 }

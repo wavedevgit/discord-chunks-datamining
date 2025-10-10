@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => G
+  U: () => U
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -103,7 +103,7 @@ function k(e) {
     application: n
   }, n.id)
 }
-let U = Chunk647438.memo(function(e) {
+let G = Chunk647438.memo(function(e) {
     var t;
     let {
       item: l,
@@ -219,12 +219,12 @@ let U = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  G = Chunk647438.memo(function(e) {
+  U = Chunk647438.memo(function(e) {
     let {
       items: t
     } = e, n = g.d$.useSetting();
     return (0, E.c)(t), (0, r.jsx)(r.Fragment, {
-      children: t.map(e => (0, r.jsx)(U, {
+      children: t.map(e => (0, r.jsx)(G, {
         item: e,
         ackedBeforeId: n
       }, e.id))

@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 191767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => E
+  f: () => S
 }), require("./388685.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,13 +55,13 @@ function C(e, t) {
   }), e
 }
 
-function E() {
+function S() {
   return (0, Chunk951288.jsx)(Chunk563132.PaymentContextProvider, {
     stepConfigs: [],
     skuIDs: [],
     activeSubscription: null,
     children: (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",
         className: Chunk306197.labelSpacing,
@@ -71,7 +71,7 @@ function E() {
   })
 }
 
-function S() {
+function E() {
   let [e, t] = Chunk647438.useState("discord://".concat(location.host, "/feature/apple-payment-link"));
   return (0, Chunk951288.jsxs)(Chunk237012.$0, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {

@@ -141,14 +141,14 @@ function _() {
               removeAsset: w
             }, t)
           })
-        }), (0, Chunk951288.jsx)(S, {
+        }), (0, Chunk951288.jsx)(E, {
           label: "gradient override",
           onChange: e => I({
             name: m._j,
             darkBackground: e,
             lightBackground: e
           })
-        }), (0, Chunk951288.jsx)(E, {
+        }), (0, Chunk951288.jsx)(S, {
           label: "set",
           onClick: () => {}
         })]
@@ -244,7 +244,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     label: t,
     onClick: n
@@ -264,7 +264,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     label: t,
     onChange: n

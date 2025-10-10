@@ -294,10 +294,10 @@ let D = Chunk647438.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), U = !k && (0, y.Z)(j), G = !k && A, B = (0, _.xR)(x) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
-      V(false)
+    if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
+      F(false)
     }, 5e3), () => {
       clearTimeout(K.current)
     }
@@ -337,7 +337,7 @@ let D = Chunk647438.memo(function(e) {
           [C.hasBanner]: q(),
           [C.bannerVisible]: n,
           [e]: false,
-          [C.communityInfoVisible]: G || D && U,
+          [C.communityInfoVisible]: U || D && G,
           [C.invitesRefresh]: X.isGuildEntrypointEnabled
         }),
         onMouseDown: f,
@@ -354,7 +354,7 @@ let D = Chunk647438.memo(function(e) {
             })) : (0, r.jsx)(T, S(E({}, Q), {
               children: Z
             }))
-          }), U && (0, r.jsx)(P, {
+          }), G && (0, r.jsx)(P, {
             guild: j,
             controller: l,
             hasBanner: null != x,
@@ -364,16 +364,16 @@ let D = Chunk647438.memo(function(e) {
           guild: j,
           controller: l,
           guildBanner: x,
-          animate: F
+          animate: V
         }) : null, (0, r.jsx)(L, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
         className: C.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          V(true), clearTimeout(K.current)
+          F(true), clearTimeout(K.current)
         },
-        onMouseLeave: () => V(false),
+        onMouseLeave: () => F(false),
         style: {
           height: N
         }

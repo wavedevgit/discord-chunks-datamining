@@ -64,7 +64,7 @@ function g() {
     if (!a.includes("text/plain")) return (0, u.Eo)(f);
     let i = JSON.parse(atob(r));
     i.skuId = (0, s.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
-  }, [exports]), E = Chunk647438.useCallback(e => {
+  }, [exports]), S = Chunk647438.useCallback(e => {
     var t;
     if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, u.Eo)("Error uploading file. Try again!");
     (0, u.Kr)(e.currentTarget.files, C, u.Eo)
@@ -99,7 +99,7 @@ function g() {
             children: "Import Shared Config"
           }), (0, Chunk951288.jsx)(Chunk53281.Z, {
             ref: g,
-            onChange: E,
+            onChange: S,
             multiple: false
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {

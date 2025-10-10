@@ -1,6 +1,6 @@
-/** Chunk was on 22981 **/
+/** Chunk was on 64853 **/
 /** chunk id: 763600, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => i
 });
-var a, r = ((a = {}).SHOCKBYTE = "shockbyte", a)
+var r, i = ((r = {}).SHOCKBYTE = "shockbyte", r)

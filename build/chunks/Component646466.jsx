@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => S
+  O: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -297,7 +297,7 @@ let h = [{
       })]
     })
   },
-  E = () => {
+  S = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -340,7 +340,7 @@ let h = [{
       })]
     })
   },
-  S = () => {
+  E = () => {
     let [e, t] = Chunk647438.useState("preview");
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk198764.container,
@@ -357,7 +357,7 @@ let h = [{
         optionClassName: Chunk198764.panelModeControlOption
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 8
-      }), "preview" === module && (0, Chunk951288.jsx)(E, {}), "validate" === module && (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
+      }), "preview" === module && (0, Chunk951288.jsx)(S, {}), "validate" === module && (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 16
       })]
     })

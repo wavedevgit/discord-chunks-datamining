@@ -112,12 +112,12 @@ let N = Chunk647438.memo(function(e) {
           }))
         })
       }, [l]),
-      U = (0, a.JA)(l.id),
+      G = (0, a.JA)(l.id),
       {
-        role: G,
+        role: U,
         tabIndex: B
-      } = U,
-      F = function(e, t) {
+      } = G,
+      V = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -131,14 +131,14 @@ let N = Chunk647438.memo(function(e) {
           for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(U, ["role", "tabIndex"]),
-      V = i.useRef(null),
+      }(G, ["role", "tabIndex"]),
+      F = i.useRef(null),
       H = i.useRef(null),
       z = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
         children: [(0, r.jsx)(d.tEY, {
-          focusTarget: V,
+          focusTarget: F,
           ringTarget: H,
           offset: {
             left: 4,
@@ -153,10 +153,10 @@ let N = Chunk647438.memo(function(e) {
             }),
             onContextMenu: M,
             children: [(0, r.jsxs)(d.P3F, I(S({
-              innerRef: V,
+              innerRef: F,
               className: E.mainContent,
               tabIndex: B
-            }, F), {
+            }, V), {
               onClick: L,
               "aria-label": C.intl.formatToPlainString(C.t.y5l3Jy, {
                 categoryName: l.name

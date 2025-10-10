@@ -77,6 +77,7 @@ let j = {
             guildId: t
           }, x.popout));
         case h.J.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
             guildId: t
           }, x.popout));

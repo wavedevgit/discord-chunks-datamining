@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 437621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -263,9 +263,9 @@ class k extends Chunk98597.ZP {
     })
   }
 }
-let U = (0, Chunk146773.B)(k);
+let G = (0, Chunk146773.B)(k);
 
-function G(e) {
+function U(e) {
   let {
     channel: t,
     guild: n,
@@ -300,7 +300,7 @@ function G(e) {
     enableActivities: Z,
     resolvedUnreadSetting: g
   }), R = (0, h.ZP)(t);
-  return (0, r.jsx)(U, M(L({}, d, m, e), {
+  return (0, r.jsx)(G, M(L({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: S,

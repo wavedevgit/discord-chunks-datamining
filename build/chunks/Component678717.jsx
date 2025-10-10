@@ -3,7 +3,7 @@
 require.r(exports), require.d(exports, {
   default: () => eI,
   openDevToolsPopout: () => eT,
-  useDevToolsTabConfig: () => eE
+  useDevToolsTabConfig: () => eS
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -82,7 +82,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk552883 = require("./552883.js"),
   Chunk451429 = require("./451429.js");
 
-function eE() {
+function eS() {
   return Chunk647438.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -350,7 +350,7 @@ function eE() {
   }, [])
 }
 
-function eS(e) {
+function eE(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -387,7 +387,7 @@ function eO(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, r = eE(), {
+  } = e, r = eS(), {
     TabBar: i,
     renderSelectedTab: l,
     selectedTabId: o
@@ -449,7 +449,7 @@ function eN() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk951288.jsx)(eS, {
+    children: [(0, Chunk951288.jsx)(eE, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: l

@@ -42,11 +42,11 @@ function C() {
     [n, i] = Chunk647438.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     C = (0, Chunk835473.q)(require),
-    E = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+    S = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
       return null != (t = null == C || null == (e = C.linkedGames) ? true : module.map(e => m.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    S = (0, Chunk20471.FG)(C, {
+    E = (0, Chunk20471.FG)(C, {
       allowedFlows: [Chunk20471.ro.RPC]
     }),
     T = (0, Chunk20471.FG)(C, {
@@ -100,7 +100,7 @@ function C() {
         children: ["Application Name: ", null != C ? C.name : "N/A"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Linked Games:", " ", E.length > 0 ? E.map(e => {
+        children: ["Linked Games:", " ", S.length > 0 ? S.map(e => {
           var t;
           return (null == (t = (0, u.ju)(C)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
@@ -120,8 +120,8 @@ function C() {
         color: "text-secondary",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
-        disabled: !S.canStartAuthorization,
-        onClick: S.startAuthorization,
+        disabled: !E.canStartAuthorization,
+        onClick: E.startAuthorization,
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {

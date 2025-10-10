@@ -24,7 +24,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk943323 = require("./943323.js"),
   Chunk958657 = require("./958657.js"),
   Chunk605493 = require("./605493.js");
-let E = {
+let S = {
     [Chunk474936.VU.PREMIUM_TENURE_1_MONTH]: {
       dark: " #D76C1F, #F79C53",
       light: " #8E2A0B, #D4681C"
@@ -58,7 +58,7 @@ let E = {
       light: " #6881D4, #956CB8, #5491A0"
     }
   },
-  S = {
+  E = {
     [Chunk474936.VU.PREMIUM_TENURE_1_MONTH]: {
       dark: Chunk538092.Z,
       light: Chunk131664.Z
@@ -97,8 +97,8 @@ function T() {
   let e = (0, Chunk804413.Z)(),
     t = (0, Chunk780384.wj)((0, Chunk410030.ZP)());
   if (!module) return null;
-  let n = E[module],
-    o = S[module],
+  let n = S[module],
+    o = E[module],
     c = {
       currentBadge: (0, Chunk291175.fv)(module),
       currentBadgeTextGradient: exports ? null == require ? true : require.dark : null == require ? true : require.light,
@@ -107,7 +107,7 @@ function T() {
     d = Chunk474936.Qh.indexOf(module);
   if (Chunk799974 > 0) {
     let e = Chunk474936.Qh[Chunk799974 - 1],
-      n = E[module];
+      n = S[module];
     Chunk533577.prevBadge = (0, Chunk291175.fv)(module), Chunk533577.prevBadgeTextGradient = exports ? null == require ? true : require.dark : null == require ? true : require.light
   }
   return Chunk533577

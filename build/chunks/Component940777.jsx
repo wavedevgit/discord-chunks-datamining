@@ -69,18 +69,18 @@ function R() {
     [L, M] = Chunk647438.useState(false),
     {
       favoriteServerMuted: k,
-      favoriteChannels: U
+      favoriteChannels: G
     } = (0, Chunk442837.cj)([Chunk853856.Z], () => ({
       favoriteChannels: Chunk853856.Z.getFavoriteChannels(),
       favoriteServerMuted: Chunk853856.Z.favoriteServerMuted
     })),
-    G = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(Chunk981631.I_8)),
-    B = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(G)),
-    F = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
+    U = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(Chunk981631.I_8)),
+    B = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(U)),
+    V = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
     {
-      badge: V,
+      badge: F,
       unread: H
-    } = (0, Chunk919755.Z)(U),
+    } = (0, Chunk919755.Z)(G),
     z = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
@@ -111,14 +111,14 @@ function R() {
         isCurrentUserConnected: n,
         activity: g
       })
-    }(U),
-    W = V > 0 ? (0, Chunk593364.N)(V) : null,
+    }(G),
+    W = F > 0 ? (0, Chunk593364.N)(F) : null,
     K = Chunk647438.useCallback(() => {
       D()
     }, [D]);
   return (0, Chunk951288.jsxs)(Chunk682662.H, {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
-      selected: F,
+      selected: V,
       hovered: L,
       unread: H && !k,
       className: Chunk499951.pill
@@ -132,14 +132,14 @@ function R() {
           children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRsr"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWycn),
-              mentions: V
+              mentions: F
             }),
-            "aria-selected": F,
+            "aria-selected": V,
             to: {
-              pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, G),
+              pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, U),
               state: A
             },
-            selected: F || L,
+            selected: V || L,
             onMouseEnter: () => M(true),
             onMouseLeave: () => M(false),
             onMouseDown: function() {

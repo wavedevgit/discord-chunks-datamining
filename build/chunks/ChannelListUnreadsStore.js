@@ -1,7 +1,7 @@
 /** Chunk was on 32118 **/
 /** chunk id: 968847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U,
+  Z: () => G,
   x: () => x
 }), require("./388685.js");
 var r, i, l, Chunk392711 = require("./392711.js"),
@@ -175,7 +175,7 @@ class k extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : k[l] = "ChannelListUnreadsStore";
-let U = new k(Chunk570140.Z, {
+let G = new k(Chunk570140.Z, {
   UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
     let {
       guildId: t,

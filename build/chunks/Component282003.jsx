@@ -49,7 +49,7 @@ function b(e, t) {
   }), e
 }
 let g = () => {
-    let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [E, S] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
+    let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, g] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [S, E] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
     }), [N, P] = Chunk647438.useState(null), [I, w] = Chunk647438.useState(false), [R, k] = Chunk647438.useState(false), [A, Z] = Chunk647438.useState(false);
@@ -72,7 +72,7 @@ let g = () => {
     }, [y]), (0, Chunk647438.useEffect)(() => {
       switch (module) {
         case Chunk474936.PremiumTypes.TIER_0:
-          S([{
+          E([{
             label: "Nitro Basic Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0
           }, {
@@ -81,7 +81,7 @@ let g = () => {
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_0);
           break;
         case Chunk474936.PremiumTypes.TIER_1:
-          S([{
+          E([{
             label: "Nitro Classic Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_1
           }, {
@@ -90,7 +90,7 @@ let g = () => {
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_1);
           break;
         case Chunk474936.PremiumTypes.TIER_2:
-          S([{
+          E([{
             label: "Nitro Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_2
           }, {
@@ -198,7 +198,7 @@ let g = () => {
             }],
             popoutLayerContext: Chunk246992.O$
           })]
-        }), E.length > 0 && (0, Chunk951288.jsxs)(Chunk237012.BZ, {
+        }), S.length > 0 && (0, Chunk951288.jsxs)(Chunk237012.BZ, {
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/semibold",
             children: "Subscription Interval"
@@ -209,7 +209,7 @@ let g = () => {
             },
             isSelected: e => y === e,
             serialize: e => e,
-            options: E,
+            options: S,
             popoutLayerContext: Chunk246992.O$
           })]
         }), (0, Chunk951288.jsxs)(Chunk237012.BZ, {

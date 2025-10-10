@@ -408,21 +408,21 @@ function el(e) {
     selected: o,
     collapsed: s,
     voiceStates: c
-  } = e, u = (0, a.cj)([G.ZP], () => ({
-    unread: G.ZP.hasUnread(n.id),
-    mentionCount: G.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([B.ZP], () => B.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([L.Z, k.Z, U.Z], () => {
+  } = e, u = (0, a.cj)([U.ZP], () => ({
+    unread: U.ZP.hasUnread(n.id),
+    mentionCount: U.ZP.getMentionCount(n.id)
+  })), d = (0, a.e7)([B.ZP], () => B.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([L.Z, k.Z, G.Z], () => {
     let e = L.Z.getChannel(n.parent_id),
       r = k.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: U.Z.can(X.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === Q._ || (null != e ? U.Z.can(X.Plq.MANAGE_CHANNELS, e) : U.Z.can(X.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: U.Z.can(X.Plq.MOVE_MEMBERS, n),
-      locked: !U.Z.can(X.Plq.CONNECT, n),
-      bypassLimit: U.Z.can(X.Plq.MOVE_MEMBERS, n),
+      canManageChannel: G.Z.can(X.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== i && (t.id === Q._ || (null != e ? G.Z.can(X.Plq.MANAGE_CHANNELS, e) : G.Z.can(X.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: G.Z.can(X.Plq.MOVE_MEMBERS, n),
+      locked: !G.Z.can(X.Plq.CONNECT, n),
+      bypassLimit: G.Z.can(X.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([F.Z], () => F.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
+  }), h = (0, a.e7)([V.Z], () => V.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), {
     enabled: O
   } = b.W.useExperiment({
     guildId: t.id,
@@ -452,7 +452,7 @@ function el(e) {
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), V = w && null == M;
+  }), F = w && null == M;
   return (0, r.jsx)(ei, en(et({
     channelName: m,
     embeddedApps: f,
@@ -464,7 +464,7 @@ function el(e) {
   }, u, p, e), {
     connected: w,
     isFavoriteSuggestion: l && !N,
-    forceShowButtons: V,
+    forceShowButtons: F,
     channelInfo: M,
     resolvedUnreadSetting: d,
     enableHangStatus: A,

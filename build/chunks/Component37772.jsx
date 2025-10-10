@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk378661 = require("./378661.js"),
   Chunk360514 = require("./360514.js");
 
-function U(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function U(e) {
   return e
 }
 
-function G(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ let B = Chunk647438.memo(function e(t) {
       compact: R = false,
       className: M,
       onContextMenu: B,
-      onClick: V,
+      onClick: F,
       disableInteraction: H = false,
       hasThread: z,
       treatSpam: W
@@ -119,11 +119,11 @@ let B = Chunk647438.memo(function e(t) {
     ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
     eh = (0, E.iG)(s);
-  return ea ? (0, r.jsx)(e, G(U({}, t), {
+  return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, O.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, O.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
     className: M,
     compact: R,
     count: 1,
@@ -136,7 +136,7 @@ let B = Chunk647438.memo(function e(t) {
       [k.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
-    childrenHeader: (0, Z.Z)(G(U({}, t), {
+    childrenHeader: (0, Z.Z)(U(G({}, t), {
       author: el,
       guildId: l.guild_id
     })),
@@ -167,7 +167,7 @@ let B = Chunk647438.memo(function e(t) {
     childrenMessageContent: (0, N.Z)(t, er),
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
-    onClick: V,
+    onClick: F,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),
@@ -178,7 +178,7 @@ let B = Chunk647438.memo(function e(t) {
   })
 });
 
-function F(e) {
+function V(e) {
   let {
     className: t,
     count: n,

@@ -69,7 +69,7 @@ function p(e) {
   } = e, g = null != n, v = (0, s.Q1)({
     action: t,
     onClick: n
-  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != b ? b : y, E = null != f, S = E && g, T = {
+  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != b ? b : y, S = null != f, E = S && g, T = {
     offset: {
       top: false,
       left: false,
@@ -104,7 +104,7 @@ function p(e) {
     })]
   }), I = e => {
     let t;
-    return t = S ? (0, a.jsxs)(a.Fragment, {
+    return t = E ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(l.P3F, {
         className: c.menuItemContent,
         onClick: v,
@@ -125,7 +125,7 @@ function p(e) {
           color: "currentColor"
         })
       }))]
-    }) : E ? (0, a.jsxs)(l.P3F, u(d({
+    }) : S ? (0, a.jsxs)(l.P3F, u(d({
       className: c.menuItemContent
     }, e), {
       onClick: O,
@@ -148,7 +148,7 @@ function p(e) {
       children: t
     })
   };
-  return E ? (0, a.jsx)("li", {
+  return S ? (0, a.jsx)("li", {
     className: c.menuItem,
     onMouseEnter: O,
     onMouseLeave: N,

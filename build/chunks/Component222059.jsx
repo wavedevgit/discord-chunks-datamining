@@ -61,16 +61,16 @@ function D(e) {
   if (null == d) return null;
   let k = T.intl.string(T.t.YUU0RE);
   O && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
-  let U = null;
-  !o && b && (U = (0, r.jsx)(c.Z, {
+  let G = null;
+  !o && b && (G = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: false
   }));
-  let G = o || _ || L,
+  let U = o || _ || L,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
       lowerBadge: h > 0 ? (0, P.Ne)(h) : null,
-      upperBadge: U,
+      upperBadge: G,
       lowerBadgeSize: {
         width: (0, s.OVM)(h)
       },
@@ -103,7 +103,7 @@ function D(e) {
             }, 1e3)
           }
         },
-        selected: G,
+        selected: U,
         ariaLabel: T.intl.string(T.t.YUU0RE),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o

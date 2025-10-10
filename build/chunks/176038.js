@@ -2,8 +2,8 @@
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => T,
-  aB: () => E,
-  th: () => S,
+  aB: () => S,
+  th: () => E,
   ub: () => O
 }), require("./388685.js"), require("./457542.js");
 var Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ let _ = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Ch
 function C(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
-async function E() {
+async function S() {
   let e = function() {
       let e = Chunk594174.default.getCurrentUser();
       return Chunk74538.ZP.canUseClientThemes(module) ? Object.keys(Chunk469115.qt).map(e => Number(e)) : []
@@ -60,7 +60,7 @@ async function E() {
     }
   } catch (e) {}
 }
-async function S() {
+async function E() {
   let e = Chunk1870.Z.purchases,
     t = (0, Chunk884697.Ad)(module),
     n = (0, Chunk884697.jT)(module),
@@ -102,10 +102,10 @@ function O() {
       _ = (0, Chunk884697.jT)(Chunk469115),
       y = Chunk210887.Z.theme,
       C = Chunk981631.backgroundGradientPresetId,
-      E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
-      S = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      T = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk647438 : null,
-      O = null != S && null != (r = _.find(e => e.skuId === S)) ? Chunk524437 : null,
+      S = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
+      E = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+      T = null != S && null != (a = Chunk959517.find(e => e.skuId === S)) ? Chunk647438 : null,
+      O = null != E && null != (r = _.find(e => e.skuId === E)) ? Chunk524437 : null,
       N = Chunk607070.Z.fontSize,
       P = Chunk607070.Z.messageGroupSpacing,
       I = Chunk695346.YC.getSetting();

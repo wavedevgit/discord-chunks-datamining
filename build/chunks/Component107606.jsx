@@ -24,9 +24,9 @@ function g() {
   var e, t, n, g, v, j, _, y;
   (0, Chunk223143.mw)();
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    E = Chunk695346.L1.useSetting(),
-    S = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    T = E.backgroundGradientPresetId,
+    S = Chunk695346.L1.useSetting(),
+    E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+    T = S.backgroundGradientPresetId,
     O = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
     N = (0, Chunk884697.Ad)(O),
     P = (0, Chunk884697.jT)(O),
@@ -70,7 +70,7 @@ function g() {
         children: "Current Settings"
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Theme: ", S]
+        children: ["Theme: ", E]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Client Theme ID:", " ", null != T ? null == (g = Chunk469115.qt[T]) ? true : g.getName() : "None"]

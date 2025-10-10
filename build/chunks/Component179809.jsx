@@ -47,11 +47,11 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       onDragEnd: L,
       onExpandCollapse: M,
       onContextMenu: k,
-      renderChildNode: U,
-      folderButtonSize: G,
+      renderChildNode: G,
+      folderButtonSize: U,
       folderButtonContent: B,
-      "aria-setsize": F,
-      "aria-posinset": V
+      "aria-setsize": V,
+      "aria-posinset": F
     } = e, {
       id: H,
       name: z,
@@ -113,7 +113,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             ee(e)
           } : true,
           className: o()(S.folderHeader, {
-            [S.folderHeaderSmall]: "icon" === G || J,
+            [S.folderHeaderSmall]: "icon" === U || J,
             [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
@@ -134,8 +134,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,
-            "aria-setsize": F,
-            "aria-posinset": V
+            "aria-setsize": V,
+            "aria-posinset": F
           })
         })
       }), A ? (0, r.jsx)(O.ZP, {
@@ -170,7 +170,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
-          children: W.map((t, n) => U(t, n, W.length, e.height))
+          children: W.map((t, n) => G(t, n, W.length, e.height))
         }, l)
       }), A && s ? (0, r.jsx)(O.Zu, {
         name: er,

@@ -102,7 +102,7 @@ function _(e) {
 function y() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [i, l] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk647438.useState(null), E = Chunk647438.useRef(null), S = Chunk647438.useRef(null), [T, O] = Chunk647438.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk647438.useState(false), [i, l] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk647438.useState(null), S = Chunk647438.useRef(null), E = Chunk647438.useRef(null), [T, O] = Chunk647438.useState(.5), {
     krispModels: N,
     krispModelOverride: P,
     inputMode: I,
@@ -132,7 +132,7 @@ function y() {
     vadDuringPreProcess: Chunk131951.Z.getModeOptions().vadDuringPreProcess
   })), B = Z ? "KRISP" : D ? "STANDARD" : "NONE", G = (0, Chunk304809.N)(), z = Chunk647438.useCallback(() => {
     var e;
-    null == (e = E.current) || module.stop(), E.current = null, C(null)
+    null == (e = S.current) || module.stop(), S.current = null, C(null)
   }, []);
 
   function V() {
@@ -142,7 +142,7 @@ function y() {
   function H(e) {
     if (t && V(), z(), null == G) return;
     let n = G.createBufferSource();
-    n.buffer = e.audioBuffer, S.current = G.createGain(), S.current.gain.value = T, n.connect(S.current), S.current.connect(G.destination), n.loop = true, n.start(), E.current = n, C(e)
+    n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = T, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
   }
   Chunk647438.useEffect(() => {
     z()
@@ -279,7 +279,7 @@ function y() {
         label: "Volume",
         initialValue: T,
         asValueChanges: function(e) {
-          null != S.current && (S.current.gain.value = e, O(e))
+          null != E.current && (E.current.gain.value = e, O(e))
         },
         minValue: 0,
         maxValue: 1

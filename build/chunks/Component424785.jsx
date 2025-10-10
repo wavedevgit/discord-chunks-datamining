@@ -254,17 +254,17 @@ class Y extends Chunk98597.ZP {
       } = this.props;
       if (!t) return (0, r.jsx)(s.u, {
         asContainer: true,
-        text: F.intl.string(F.t.ZXxLQk),
+        text: V.intl.string(V.t.ZXxLQk),
         children: (0, r.jsx)(c.P3F, {
-          className: o()(V.iconItem, n ? V.alwaysShown : null),
+          className: o()(F.iconItem, n ? F.alwaysShown : null),
           onClick: () => {
             u.Z.updateChatOpen(e.id, true), this.handleClickChat()
           },
-          "aria-label": F.intl.string(F.t.ZXxLQk),
+          "aria-label": V.intl.string(V.t.ZXxLQk),
           children: (0, r.jsx)(c.kBi, {
             size: "xs",
             color: "currentColor",
-            className: V.actionIcon
+            className: F.actionIcon
           })
         })
       })
@@ -272,7 +272,7 @@ class Y extends Chunk98597.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? F.intl.string(F.t.rZfiNj) : null
+      return this.isFull() && !e ? V.intl.string(V.t.rZfiNj) : null
     }), z(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
@@ -299,11 +299,11 @@ function X(e) {
     let e = P.Z.getChannel(n.parent_id),
       r = Z.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: null != t && w.Z.can(G.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === B._ || (null != e ? w.Z.can(G.Plq.MANAGE_CHANNELS, e) : w.Z.can(G.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: w.Z.can(G.Plq.MOVE_MEMBERS, n),
-      locked: !w.Z.can(G.Plq.CONNECT, n),
-      bypassLimit: w.Z.can(G.Plq.MOVE_MEMBERS, n),
+      canManageChannel: null != t && w.Z.can(U.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== i && (t.id === B._ || (null != e ? w.Z.can(U.Plq.MANAGE_CHANNELS, e) : w.Z.can(U.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: w.Z.can(U.Plq.MOVE_MEMBERS, n),
+      locked: !w.Z.can(U.Plq.CONNECT, n),
+      bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), f = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
@@ -316,7 +316,7 @@ function X(e) {
     voiceStates: s,
     isSubscriptionGated: m,
     needSubscriptionToAccess: b,
-    enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < G.xGv
+    enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < U.xGv
   }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: p,

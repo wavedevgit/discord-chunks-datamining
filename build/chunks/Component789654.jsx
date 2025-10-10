@@ -58,11 +58,11 @@ let {
   SemanticColors: C
 } = Chunk521904.V;
 
-function E(e) {
+function S(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function S(e) {
+function E(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
@@ -85,7 +85,7 @@ function O() {
     {
       semanticColorOverrides: g,
       rawColorOverrides: C,
-      tab: S,
+      tab: E,
       scales: O
     } = exports,
     P = Chunk647438.useMemo(() => {
@@ -95,9 +95,9 @@ function O() {
             highlight: i
           } = a, l = r[e];
           if (null == l) return "";
-          let s = E(n);
+          let s = S(n);
           if (i) return "--".concat(s, ": magenta !important;");
-          let o = E(l.color),
+          let o = S(l.color),
             c = l.opacity,
             d = c < 1 ? "hsl(var(--".concat(o, "-hsl) / ").concat(c, ")") : "var(--".concat(o, ")");
           return "--".concat(s, ": color-mix(\n        in oklab,\n        ").concat(d, " 100%,\n        var(--theme-base-color, black) var(--theme-base-color-amount, 0%)\n      );")
@@ -144,7 +144,7 @@ function O() {
         className: Chunk416825.tabBar,
         type: "top",
         look: "brand",
-        selectedItem: S,
+        selectedItem: E,
         onItemSelect: e => {
           n(t => y(_({}, t), {
             tab: e
@@ -215,14 +215,14 @@ function O() {
       })]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk416825.tab,
-      hidden: S !== Chunk500949.H8.TOKENS,
+      hidden: E !== Chunk500949.H8.TOKENS,
       children: (0, Chunk951288.jsx)(N, {
         state: exports,
         setState: require
       })
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk416825.tab,
-      hidden: S !== Chunk500949.H8.PALETTES,
+      hidden: E !== Chunk500949.H8.PALETTES,
       children: (0, Chunk951288.jsx)(Chunk58755.P, {
         state: exports,
         setState: require
@@ -294,7 +294,7 @@ function N(e) {
     })
   }, [n]), f = Object.keys(C).map(e => ({
     value: e,
-    label: E(e)
+    label: S(e)
   })), b = Object.keys(u.b).map(e => ({
     value: e,
     label: e
@@ -321,12 +321,12 @@ function N(e) {
       children: Object.entries(l).map(e => {
         let [t, r] = e, l = r.colors[i];
         if (null == l) return null;
-        let s = S(l.color),
+        let s = E(l.color),
           c = l.opacity,
           d = v.jC[t][i];
         return (0, a.jsx)(P, {
-          title: E(t),
-          subtitle: 1 === d.opacity ? S(d.raw) : "".concat(S(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          title: S(t),
+          subtitle: 1 === d.opacity ? E(d.raw) : "".concat(E(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
           onReset: () => {
             n(e => {

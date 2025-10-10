@@ -165,11 +165,11 @@ function _(e) {
   }), C = v({
     status: p.Skl.ONLINE,
     currentStatus: e
-  }), E = v({
+  }), S = v({
     status: p.Skl.IDLE,
     currentStatus: e,
     description: _(p.Skl.IDLE)
-  }), S = v({
+  }), E = v({
     status: p.Skl.DND,
     currentStatus: e,
     description: _(p.Skl.DND)
@@ -179,7 +179,7 @@ function _(e) {
     description: _(p.Skl.INVISIBLE)
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), E, S, T, u || d ? (0, a.jsxs)(a.Fragment, {
+    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), S, E, T, u || d ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

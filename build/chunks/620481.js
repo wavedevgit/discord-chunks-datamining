@@ -2,8 +2,8 @@
 /** chunk id: 620481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FB: () => _,
-  Jt: () => S,
-  OC: () => E,
+  Jt: () => E,
+  OC: () => S,
   Sr: () => C,
   V_: () => O,
   lG: () => y,
@@ -129,7 +129,7 @@ function C() {
   }), v(), g.info("END Frecency\n")
 }
 
-function E() {
+function S() {
   let e = Chunk823385.Z.getProps();
   g.info("START Quick Switcher State"), g.info("Query: ".concat(module.query)), module.results.forEach(e => {
     switch (g.info("Result Type: ".concat(e.type)), e.type) {
@@ -158,7 +158,7 @@ function E() {
     g.info("frecency score: ".concat(o.Z.getScoreWithoutFetchingLatest(e.record.id))), v()
   }), g.info("END Quick Switcher State\n")
 }
-async function S() {
+async function E() {
   g.info("START User Search Worker State");
   let e = await Chunk279779.Z.requestDebugState();
   if (null == module) return void g.info("Unable to get debug state from User Search Worker");

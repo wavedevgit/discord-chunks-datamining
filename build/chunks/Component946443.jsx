@@ -41,7 +41,7 @@ function S(e) {
     channels: M
   } = R, {
     maybeLoadMore: k
-  } = D, U = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
+  } = D, G = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
   t = A, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
@@ -87,7 +87,7 @@ function S(e) {
   }), [T]), (0, h.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
-  let G = (0, g.Z)("unreads", A);
+  let U = (0, g.Z)("unreads", A);
   if (0 === M.length) {
     return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
@@ -96,7 +96,7 @@ function S(e) {
     })
   }
   return (0, r.jsx)(c.bG, {
-    navigator: G,
+    navigator: U,
     children: (0, r.jsx)(c.SJ, {
       children: e => {
         var t, n, {
@@ -141,7 +141,7 @@ function S(e) {
           }
         }, l), n = n = {
           onScroll: L === j.jd.Done ? true : k,
-          className: o()(E.scroller, "group-spacing-".concat(U)),
+          className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: w
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {

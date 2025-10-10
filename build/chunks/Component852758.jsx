@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -79,7 +79,7 @@ function O() {
       let {
         default: e
       } = await require.e("35401").then(require.bind(require, 284549));
-      return t => (0, a.jsx)(e, S({}, t))
+      return t => (0, a.jsx)(e, E({}, t))
     }, {
       modalKey: Chunk308569.F0,
       Layer: Chunk429142.ZP
@@ -92,10 +92,10 @@ function O() {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
-      return t => (0, a.jsx)(e, T(S({}, t), {
-        title: E.intl.string(E.t.KLnLIC),
-        body: E.intl.string(E.t.XGbCq6),
-        confirmText: E.intl.string(E.t["3oK4q6"])
+      return t => (0, a.jsx)(e, T(E({}, t), {
+        title: S.intl.string(S.t.KLnLIC),
+        body: S.intl.string(S.t.XGbCq6),
+        confirmText: S.intl.string(S.t["3oK4q6"])
       }))
     }, {
       modalKey: Chunk308569.HR,
@@ -123,7 +123,7 @@ function O() {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, a.jsx)(e, S({
+        return t => (0, a.jsx)(e, E({
           layerContext: x.mK,
           reason: f.L.USER_ACTION_REQUIRED
         }, t))
@@ -138,15 +138,15 @@ function O() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(require.bind(require, 481060));
-        return n => (0, a.jsx)(e, T(S({
-          header: E.intl.string(E.t["2jxGen"]),
-          confirmText: E.intl.string(E.t["2jxGen"]),
-          cancelText: E.intl.string(E.t["ETE/oK"]),
+        return n => (0, a.jsx)(e, T(E({
+          header: S.intl.string(S.t["2jxGen"]),
+          confirmText: S.intl.string(S.t["2jxGen"]),
+          cancelText: S.intl.string(S.t["ETE/oK"]),
           onConfirm: () => c.Z.logout("verification")
         }, n), {
           children: (0, a.jsx)(t, {
             variant: "text-md/normal",
-            children: E.intl.string(E.t.SUnWBA)
+            children: S.intl.string(S.t.SUnWBA)
           })
         }))
       }, {

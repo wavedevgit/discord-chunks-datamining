@@ -160,15 +160,15 @@ let k = Chunk647438.memo(function(e) {
     isSelectedVoice: c,
     isLast: f,
     withGuildIcon: A
-  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), U = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
-    unread: G,
+  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
+    unread: U,
     mentionCount: B,
-    isMentionLowImportance: F
+    isMentionLowImportance: V
   } = (0, s.cj)([y.ZP], () => ({
     unread: y.ZP.hasUnread(t.id),
     mentionCount: y.ZP.getMentionCount(t.id),
     isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
-  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
+  })), F = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
@@ -203,7 +203,7 @@ let k = Chunk647438.memo(function(e) {
   }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? Z.intl.formatToPlainString(Z.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: B
-  }) : G ? Z.intl.formatToPlainString(Z.t.YlVvmZ, {
+  }) : U ? Z.intl.formatToPlainString(Z.t.YlVvmZ, {
     channelName: t.name
   }) : Z.intl.formatToPlainString(Z.t["0nZpiI"], {
     channelName: t.name
@@ -232,8 +232,8 @@ let k = Chunk647438.memo(function(e) {
       children: (0, r.jsxs)("div", {
         className: o()(w.iconVisibility, T.wrapper, T.typeThread, {
           [T.modeSelected]: l,
-          [T.modeMuted]: !l && V,
-          [T.modeUnreadImportant]: !V && !l && G,
+          [T.modeMuted]: !l && F,
+          [T.modeUnreadImportant]: !F && !l && U,
           [T.withGuildIcon]: A,
           [T.threadsInChannelListQoLExperiment]: H.enabled,
           [T.withThreadAvatar]: "icon-with-avatar" === H.variant,
@@ -241,7 +241,7 @@ let k = Chunk647438.memo(function(e) {
         }),
         onMouseDown: K,
         onContextMenu: Y,
-        children: [!G || V || l ? null : (0, r.jsx)("div", {
+        children: [!U || F || l ? null : (0, r.jsx)("div", {
           className: o()(T.unread, T.unreadImportant)
         }), (0, r.jsx)(u.P3F, D(R({}, J), {
           innerRef: $,
@@ -271,11 +271,11 @@ let k = Chunk647438.memo(function(e) {
               className: T.children,
               children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(E.Z, {
                 userCount: q,
-                video: U,
+                video: G,
                 channel: t
               }) : null, (0, C.Z)(B) ? (0, r.jsx)(S.Z, {
                 mentionsCount: B,
-                isMentionLowImportance: F
+                isMentionLowImportance: V
               }) : null]
             })]
           })

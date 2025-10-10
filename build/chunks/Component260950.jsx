@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 260950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,17 +55,17 @@ let y = async () => (await Chunk544891.tn.get({
   value: Chunk474936.xT
 }];
 
-function E() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
     t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     [n, i] = Chunk647438.useState("511651880837840896"),
     [p, v] = Chunk647438.useState([]),
-    [E, S] = Chunk647438.useState(false),
+    [S, E] = Chunk647438.useState(false),
     T = Chunk647438.useCallback(async () => {
       try {
-        S(true), await (0, Chunk355467.jg)(), await (0, Chunk232567.In)(exports.id), Chunk474936(await y())
+        E(true), await (0, Chunk355467.jg)(), await (0, Chunk232567.In)(exports.id), Chunk474936(await y())
       } finally {
-        S(false)
+        E(false)
       }
     }, [exports]);
   Chunk647438.useEffect(() => {
@@ -97,7 +97,7 @@ function E() {
           className: Chunk451429.header,
           children: null != module ? "Active Subscription" : "Subscription Type"
         }), (0, Chunk951288.jsx)(Chunk755721.zx, {
-          disabled: E,
+          disabled: S,
           look: Chunk755721.zx.Looks.BLANK,
           size: Chunk755721.zx.Sizes.ICON,
           onClick: T,

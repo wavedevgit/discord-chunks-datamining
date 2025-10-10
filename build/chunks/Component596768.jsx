@@ -72,7 +72,7 @@ let T = [{
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(x.ZP, {
-          className: l()(S.headerBar, E.subPanelHeaderBar),
+          className: l()(E.headerBar, S.subPanelHeaderBar),
           children: [(0, a.jsx)(x.ZP.Icon, {
             icon: p.IeX,
             tooltip: t
@@ -80,7 +80,7 @@ let T = [{
             children: t
           })]
         }), (0, a.jsxs)(v.E, {
-          className: E.commonProperties,
+          className: S.commonProperties,
           children: [(0, a.jsx)(v.Z9, {
             name: "Timestamp (local)",
             children: (0, a.jsx)("time", {

@@ -44,7 +44,7 @@ function Z(e) {
     dialogClassName: D
   } = e, {
     analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([y.Z], () => {
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [G, U] = [(0, s.e7)([y.Z], () => {
     var e, t;
     return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
@@ -54,7 +54,7 @@ function Z(e) {
     }, _.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: B,
-    setSeenTutorial: F
+    setSeenTutorial: V
   } = function(e) {
     let t = (0, s.e7)([y.Z], () => {
         var e, t;
@@ -69,7 +69,7 @@ function Z(e) {
       showTutorial: !t && e === c.X.UNREADS,
       setSeenTutorial: n
     }
-  }(U), V = i.useCallback(() => {
+  }(G), F = i.useCallback(() => {
     k(false), M && (null == n || n())
   }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
@@ -86,11 +86,11 @@ function Z(e) {
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    U !== c.X.BOOKMARKS || z || W || G(c.X.MENTIONS)
+    G !== c.X.BOOKMARKS || z || W || U(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
-      e.shiftKey || V()
-    }, [V]),
+      e.shiftKey || F()
+    }, [F]),
     X = (0, b.Us)({
       location: "ForYou"
     });
@@ -103,7 +103,7 @@ function Z(e) {
       align: T,
       autoInvert: false,
       shouldShow: M,
-      onRequestClose: V,
+      onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
           "aria-label": P.intl.string(P.t.GSmTKC),
@@ -114,22 +114,22 @@ function Z(e) {
             }),
             children: (0, r.jsx)(u.y5t, {
               component: (0, r.jsx)(x.Z, {
-                tab: U,
-                setTab: G,
+                tab: G,
+                setTab: U,
                 badgeState: Z,
-                closePopout: V
+                closePopout: F
               }),
-              children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
+              children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
-              }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
-                closePopout: V
-              }) : U === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
+              }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
+                closePopout: F
+              }) : G === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(E.h6, {}),
                 children: (0, r.jsx)(E.ZP, {
                   onJump: q,
                   showTutorial: B,
-                  setSeenTutorial: F,
-                  closePopout: V
+                  setSeenTutorial: V,
+                  closePopout: F
                 })
               })
             })

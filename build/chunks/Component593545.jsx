@@ -220,7 +220,6 @@ function N(e) {
             })),
             value: t,
             children: [(0, r.jsx)(l.Ct, {
-              label: m.intl.string(m.t.utm4qq),
               placeholder: m.intl.string(m.t.Gofftb)
             }), (0, r.jsx)(l.px, {})]
           })
