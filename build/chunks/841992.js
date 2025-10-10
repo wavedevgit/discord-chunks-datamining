@@ -1,5 +1,5 @@
-/** Chunk was on 73877 **/
-/** chunk id: 174933, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 13193 **/
+/** chunk id: 841992, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => tx
 });
@@ -44,11 +44,11 @@ var r = Object.create,
 function g(e, t) {
   return null != t && "undefined" != typeof Symbol && t[Symbol.hasInstance] ? !!t[Symbol.hasInstance](e) : g(e, t)
 }
-var m = h(function() {
-  m()
+var p = h(function() {
+  p()
 });
 
-function p(e) {
+function v(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
 var y = h(function() {}),
@@ -68,7 +68,7 @@ var y = h(function() {}),
       if (!g(this, i)) return new i(e, t);
       this.data = e, this.nodeValue = e, this.length = e.length, this.ownerDocument = t || null
     }
-    m(), t.exports = i, i.prototype.nodeType = 8, i.prototype.nodeName = "#comment", i.prototype.toString = function() {
+    p(), t.exports = i, i.prototype.nodeType = 8, i.prototype.nodeName = "#comment", i.prototype.toString = function() {
       return "[object Comment]"
     }
   }),
@@ -77,7 +77,7 @@ var y = h(function() {}),
       if (!g(this, i)) return new i(e);
       this.data = e || "", this.length = this.data.length, this.ownerDocument = t || null
     }
-    m(), t.exports = i, i.prototype.type = "DOMTextNode", i.prototype.nodeType = 3, i.prototype.nodeName = "#text", i.prototype.toString = function() {
+    p(), t.exports = i, i.prototype.type = "DOMTextNode", i.prototype.nodeType = 3, i.prototype.nodeName = "#text", i.prototype.toString = function() {
       return this.data
     }, i.prototype.replaceData = function(e, t, i) {
       var r = this.data,
@@ -124,7 +124,7 @@ var y = h(function() {}),
           return n = [], l = (a = t).tagName, "http://www.w3.org/1999/xhtml" === a.namespaceURI && (l = l.toLowerCase()), n.push("<" + l + function(e) {
             var t = [];
             for (var i in e)(function(e, t) {
-              var i = p(e[t]);
+              var i = v(e[t]);
               return "style" === t && Object.keys(e.style).length > 0 || e.hasOwnProperty(t) && ("string" === i || "boolean" === i || "number" === i) && "nodeName" !== t && "className" !== t && "tagName" !== t && "textContent" !== t && "innerText" !== t && "namespaceURI" !== t && "innerHTML" !== t
             })(e, i) && t.push({
               name: i,
@@ -180,7 +180,7 @@ var y = h(function() {}),
     }
   }),
   R = d(function(e, t) {
-    m();
+    p();
     var i = E(),
       r = S(),
       s = b(),
@@ -258,7 +258,7 @@ var y = h(function() {}),
     }
   }),
   k = d(function(e, t) {
-    m();
+    p();
     var i = R();
 
     function r(e) {
@@ -278,7 +278,7 @@ var y = h(function() {}),
     }, i.prototype.preventDefault = function() {}
   }),
   D = d(function(e, t) {
-    m();
+    p();
     var i = E(),
       r = T(),
       s = _(),
@@ -448,8 +448,8 @@ var q = function(e) {
       get level() {
         return f
       },
-      set level(v) {
-        v !== this.level && (f = null != v ? v : n)
+      set level(m) {
+        m !== this.level && (f = null != m ? m : n)
       }
     }
   }("[mux]"),
@@ -512,7 +512,7 @@ function ee(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
-m(), y();
+p(), y();
 var et = function(e) {
     return ei(e)[0]
   },
@@ -653,13 +653,13 @@ var eg = function(e) {
           c = u.bytesLoaded,
           f = u.requestStart,
           g = u.responseStart,
-          m = u.responseEnd;
+          p = u.responseEnd;
         l("requestcompleted", eh(eo({}, eg(o)), {
           request_event_type: e,
           request_bytes_loaded: c,
           request_start: f,
           request_response_start: g,
-          request_response_end: m,
+          request_response_end: p,
           request_type: "manifest",
           request_hostname: et(s),
           request_response_headers: ep(n),
@@ -786,7 +786,7 @@ var eg = function(e) {
       })
     };
     i.on(r.Events.FRAG_LOAD_EMERGENCY_ABORTED, g);
-    var m = function(e, t) {
+    var p = function(e, t) {
       var r = t.level,
         a = i.levels[r];
       if (a && a.attrs && a.attrs.BANDWIDTH) {
@@ -802,8 +802,8 @@ var eg = function(e) {
         }) : s.warn("missing BANDWIDTH from HLS manifest parsed by HLS.js")
       }
     };
-    i.on(r.Events.LEVEL_SWITCHED, m), i._stopMuxMonitor = function() {
-      i.off(r.Events.MANIFEST_LOADED, o), i.off(r.Events.LEVEL_LOADED, h), i.off(r.Events.AUDIO_TRACK_LOADED, d), i.off(r.Events.FRAG_LOADED, u), i.off(r.Events.FRAG_CHANGED, c), i.off(r.Events.ERROR, f), i.off(r.Events.FRAG_LOAD_EMERGENCY_ABORTED, g), i.off(r.Events.LEVEL_SWITCHED, m), i.off(r.Events.DESTROYING, i._stopMuxMonitor), delete i._stopMuxMonitor
+    i.on(r.Events.LEVEL_SWITCHED, p), i._stopMuxMonitor = function() {
+      i.off(r.Events.MANIFEST_LOADED, o), i.off(r.Events.LEVEL_LOADED, h), i.off(r.Events.AUDIO_TRACK_LOADED, d), i.off(r.Events.FRAG_LOADED, u), i.off(r.Events.FRAG_CHANGED, c), i.off(r.Events.ERROR, f), i.off(r.Events.FRAG_LOAD_EMERGENCY_ABORTED, g), i.off(r.Events.LEVEL_SWITCHED, p), i.off(r.Events.DESTROYING, i._stopMuxMonitor), delete i._stopMuxMonitor
     }, i.on(r.Events.DESTROYING, i._stopMuxMonitor)
   },
   ey = function(e) {
@@ -903,8 +903,8 @@ var eg = function(e) {
           c = u.requestStart,
           f = u.requestResponseStart,
           g = u.requestResponseEnd,
-          m = u.requestResponseHeaders,
-          p = u.requestMediaDuration,
+          p = u.requestResponseHeaders,
+          v = u.requestMediaDuration,
           y = u.requestHostname,
           E = u.requestUrl;
         a("requestcompleted", {
@@ -914,11 +914,11 @@ var eg = function(e) {
           request_response_end: g,
           request_bytes_loaded: false,
           request_type: o + "_init",
-          request_response_headers: m,
+          request_response_headers: p,
           request_hostname: y,
           request_id: u.requestId,
           request_url: E,
-          request_media_duration: p,
+          request_media_duration: v,
           request_rendition_lists: l
         })
       };
@@ -945,8 +945,8 @@ var eg = function(e) {
         c = d.requestResponseStart,
         f = d.requestResponseEnd,
         g = d.requestBytesLoaded,
-        m = d.requestResponseHeaders,
-        p = d.requestMediaDuration,
+        p = d.requestResponseHeaders,
+        v = d.requestMediaDuration,
         y = d.requestHostname,
         E = d.requestUrl,
         T = d.requestId,
@@ -961,12 +961,12 @@ var eg = function(e) {
         request_response_end: f,
         request_bytes_loaded: g,
         request_type: h,
-        request_response_headers: m,
+        request_response_headers: p,
         request_hostname: y,
         request_id: T,
         request_url: E,
         request_media_start_time: o,
-        request_media_duration: p,
+        request_media_duration: v,
         request_current_level: S,
         request_labeled_bitrate: _.renditionBitrate,
         request_video_width: b,
@@ -1027,7 +1027,7 @@ var eg = function(e) {
       })
     };
     i.on("fragmentLoadingAbandoned", g);
-    var m = function(e) {
+    var p = function(e) {
       var t, i, r = e.error,
         s = (null == r || null == (t = r.data) ? true : t.request) || {},
         n = (null == r || null == (i = r.data) ? true : i.response) || {};
@@ -1046,8 +1046,8 @@ var eg = function(e) {
         player_error_context: l
       })
     };
-    i.on("error", m), i._stopMuxMonitor = function() {
-      i.off("manifestLoaded", n), i.off("initFragmentLoaded", h), i.off("mediaFragmentLoaded", d), i.off("qualityChangeRendered", f), i.off("error", m), i.off("fragmentLoadingAbandoned", g), delete i._stopMuxMonitor
+    i.on("error", p), i._stopMuxMonitor = function() {
+      i.off("manifestLoaded", n), i.off("initFragmentLoaded", h), i.off("mediaFragmentLoaded", d), i.off("qualityChangeRendered", f), i.off("error", p), i.off("fragmentLoadingAbandoned", g), delete i._stopMuxMonitor
     }
   },
   eA = function(e) {
@@ -1176,11 +1176,13 @@ var eg = function(e) {
   ew = function() {
     function e(t) {
       var i = this;
-      Y(this, e), z(this, "_playbackTimeTrackerLastPlayheadPosition", true), z(this, "_lastTime", true), z(this, "_isAdPlaying", true), z(this, "_callbackUpdatePlaybackTime", true), z(this, "pm", true), this.pm = t, this._playbackTimeTrackerLastPlayheadPosition = false, this._lastTime = B(), this._isAdPlaying = false, this._callbackUpdatePlaybackTime = null;
+      Y(this, e), z(this, "_playbackTimeTrackerLastPlayheadPosition", true), z(this, "_lastTime", true), z(this, "_isAdPlaying", true), z(this, "_callbackUpdatePlaybackTime", true), z(this, "pm", true), this.pm = t, this._playbackTimeTrackerLastPlayheadPosition = false, this._lastTime = B(), this._isAdPlaying = false, this._callbackUpdatePlaybackTime = null, t.on("viewinit", function() {
+        i.pm.data.view_playing_time_ms_cumulative = 0
+      });
       var r = this._startPlaybackTimeTracking.bind(this);
-      t.on("playing", r), t.on("adplaying", r), t.on("seeked", r);
+      t.on("playing", r), t.on("adplaying", r), t.on("seeked", r), t.on("rebufferend", r);
       var s = this._stopPlaybackTimeTracking.bind(this);
-      t.on("playbackheartbeatend", s), t.on("seeking", s), t.on("adplaying", function() {
+      t.on("playbackheartbeatend", s), t.on("seeking", s), t.on("rebufferstart", s), t.on("adplaying", function() {
         i._isAdPlaying = true
       }), t.on("adended", function() {
         i._isAdPlaying = false
@@ -1199,7 +1201,7 @@ var eg = function(e) {
     return X(module, [{
       key: "_startPlaybackTimeTracking",
       value: function() {
-        null === this._callbackUpdatePlaybackTime && (this._callbackUpdatePlaybackTime = this._updatePlaybackTime.bind(this), this._playbackTimeTrackerLastPlayheadPosition = this.pm.data.player_playhead_time, this.pm.on("playbackheartbeat", this._callbackUpdatePlaybackTime))
+        null === this._callbackUpdatePlaybackTime && (this._callbackUpdatePlaybackTime = this._updatePlaybackTime.bind(this), this._playbackTimeTrackerLastPlayheadPosition = this.pm.data.player_playhead_time, this._lastTime = B(), this.pm.on("playbackheartbeat", this._callbackUpdatePlaybackTime))
       }
     }, {
       key: "_stopPlaybackTimeTracking",
@@ -1209,10 +1211,11 @@ var eg = function(e) {
     }, {
       key: "_updatePlaybackTime",
       value: function() {
-        var e = this.pm.data.player_playhead_time,
+        var e = this.pm.data.player_playhead_time || 0,
           t = B(),
-          i = false;
-        this._playbackTimeTrackerLastPlayheadPosition >= 0 && module > this._playbackTimeTrackerLastPlayheadPosition ? i = module - this._playbackTimeTrackerLastPlayheadPosition : this._isAdPlaying && (i = exports - this._lastTime), require > 0 && require <= 1e3 && el(this.pm.data, "view_content_playback_time", require), this._playbackTimeTrackerLastPlayheadPosition = module, this._lastTime = exports
+          i = exports - this._lastTime,
+          r = false;
+        this._playbackTimeTrackerLastPlayheadPosition >= 0 && module > this._playbackTimeTrackerLastPlayheadPosition ? r = module - this._playbackTimeTrackerLastPlayheadPosition : this._isAdPlaying && (r = require), r > 0 && r <= 1e3 && el(this.pm.data, "view_content_playback_time", r), null !== this._callbackUpdatePlaybackTime && require > 0 && require <= 1e3 && (this._isAdPlaying && el(this.pm.data, "ad_playing_time_ms_cumulative", require), el(this.pm.data, "view_playing_time_ms_cumulative", require)), this._playbackTimeTrackerLastPlayheadPosition = module, this._lastTime = exports
       }
     }]), module
   }(),
@@ -1351,7 +1354,7 @@ var eg = function(e) {
     var i = this;
     Y(this, e), z(this, "_lastPlayerHeight", true), z(this, "_lastPlayerWidth", true), z(this, "_lastPlayheadPosition", true), z(this, "_lastSourceHeight", true), z(this, "_lastSourceWidth", true), t.on("viewinit", function() {
       i._lastPlayheadPosition = false
-    }), ["pause", "rebufferstart", "seeking", "error", "adbreakstart", "hb", "renditionchange", "orientationchange", "viewend"].forEach(function(e) {
+    }), ["pause", "rebufferstart", "seeking", "error", "adbreakstart", "hb", "renditionchange", "orientationchange", "viewend", "playbackmodechange"].forEach(function(e) {
       t.on(e, function() {
         if (i._lastPlayheadPosition >= 0 && t.data.player_playhead_time >= 0 && i._lastPlayerWidth >= 0 && i._lastSourceWidth > 0 && i._lastPlayerHeight >= 0 && i._lastSourceHeight > 0) {
           var e = t.data.player_playhead_time - i._lastPlayheadPosition;
@@ -1366,7 +1369,7 @@ var eg = function(e) {
         }
         i._lastPlayheadPosition = false
       })
-    }), ["playing", "hb", "renditionchange", "orientationchange"].forEach(function(e) {
+    }), ["playing", "hb", "renditionchange", "orientationchange", "playbackmodechange"].forEach(function(e) {
       t.on(e, function() {
         i._lastPlayheadPosition = t.data.player_playhead_time, i._lastPlayerWidth = t.data.player_width, i._lastPlayerHeight = t.data.player_height, i._lastSourceWidth = t.data.video_source_width, i._lastSourceHeight = t.data.video_source_height
       })
@@ -1463,39 +1466,13 @@ var eg = function(e) {
               l = a[1];
             this.pm.data.view_preroll_ad_asset_domain = l, this.pm.data.view_preroll_ad_asset_hostname = n
           }
+          this.pm.data.ad_type = "preroll"
         }
-        this.pm.data.ad_asset_url = null == t ? true : t.ad_asset_url, this.pm.data.ad_tag_url = null == t ? true : t.ad_tag_url, this.pm.data.ad_creative_id = null == t ? true : t.ad_creative_id, this.pm.data.ad_id = null == t ? true : t.ad_id, this.pm.data.ad_universal_id = null == t ? true : t.ad_universal_id
+        this.pm.data.ad_asset_url = null == t ? true : t.ad_asset_url, this.pm.data.ad_tag_url = null == t ? true : t.ad_tag_url, this.pm.data.ad_creative_id = null == t ? true : t.ad_creative_id, this.pm.data.ad_id = null == t ? true : t.ad_id, this.pm.data.ad_universal_id = null == t ? true : t.ad_universal_id, null != t && t.ad_type && (this.pm.data.ad_type = null == t ? true : t.ad_type)
       }
     }]), module
   }(),
-  eG = c(f()),
-  eH = function e(t) {
-    Y(this, e);
-    var i, r, s = function() {
-        t.disableRebufferTracking || (el(t.data, "view_waiting_rebuffer_count", 1), i = B(), r = eG.default.setInterval(function() {
-          if (i) {
-            var e = B();
-            el(t.data, "view_waiting_rebuffer_duration", e - i), i = e
-          }
-        }, 250))
-      },
-      a = function() {
-        t.disableRebufferTracking || i && (el(t.data, "view_waiting_rebuffer_duration", B() - i), i = false, eG.default.clearInterval(r))
-      },
-      n = false,
-      l = function() {
-        n = true
-      },
-      o = function() {
-        n = false, a()
-      };
-    t.on("waiting", function() {
-      n && s()
-    }), t.on("playing", function() {
-      a(), l()
-    }), t.on("pause", o), t.on("seeking", o)
-  },
-  eK = function e(t) {
+  eG = function e(t) {
     var i = this;
     Y(this, e), z(this, "lastWallClockTime", true);
     var r = function() {
@@ -1518,8 +1495,8 @@ var eg = function(e) {
       t.off("before*", s), t.one("playbackheartbeat", r)
     })
   },
-  eq = c(f()),
-  eV = (th = function() {
+  eH = c(f()),
+  eK = (tl = function() {
     for (var e = 0, t = {}; module < arguments.length; module++) {
       var i = arguments[module];
       for (var r in require) exports[r] = require[r]
@@ -1530,7 +1507,7 @@ var eg = function(e) {
       var a;
       if ("undefined" != typeof document) {
         if (arguments.length > 1) {
-          if ("number" == typeof(s = th({
+          if ("number" == typeof(s = tl({
               path: "/"
             }, i.defaults, s)).expires) {
             var n = new Date;
@@ -1568,16 +1545,16 @@ var eg = function(e) {
         json: true
       }, [].slice.call(arguments))
     }, i.defaults = {}, i.remove = function(e, t) {
-      i(e, "", th(t, {
+      i(e, "", tl(t, {
         expires: false
       }))
     }, i.withConverter = e, i
   }(function() {})),
-  ej = "muxData",
-  eW = function() {
+  eq = "muxData",
+  eV = function() {
     var e;
     try {
-      e = (eV.get(ej) || "").split("&").reduce(function(e, t) {
+      e = (eK.get(eq) || "").split("&").reduce(function(e, t) {
         var i = O(t.split("="), 2),
           r = i[0],
           s = i[1],
@@ -1589,9 +1566,9 @@ var eg = function(e) {
     }
     return module
   },
-  eY = function(e) {
+  ej = function(e) {
     try {
-      eV.set(ej, Object.entries(e).map(function(e) {
+      eK.set(eq, Object.entries(e).map(function(e) {
         var t = O(e, 2),
           i = t[0],
           r = t[1];
@@ -1601,26 +1578,26 @@ var eg = function(e) {
       })
     } catch (e) {}
   },
-  eQ = function() {
-    var e = eW();
-    return module.mux_viewer_id = module.mux_viewer_id || U(), module.msn = module.msn || Math.random(), eY(module), {
+  eW = function() {
+    var e = eV();
+    return module.mux_viewer_id = module.mux_viewer_id || U(), module.msn = module.msn || Math.random(), ej(module), {
       mux_viewer_id: module.mux_viewer_id,
       mux_sample_number: module.msn
     }
   },
-  eX = function() {
-    var e = eW(),
+  eY = function() {
+    var e = eV(),
       t = B();
-    return module.session_start && (module.sst = module.session_start, delete module.session_start), module.session_id && (module.sid = module.session_id, delete module.session_id), module.session_expires && (module.sex = module.session_expires, delete module.session_expires), (!module.sex || module.sex < exports) && (module.sid = U(), module.sst = exports), module.sex = exports + 15e5, eY(module), {
+    return module.session_start && (module.sst = module.session_start, delete module.session_start), module.session_id && (module.sid = module.session_id, delete module.session_id), module.session_expires && (module.sex = module.session_expires, delete module.session_expires), (!module.sex || module.sex < exports) && (module.sid = U(), module.sst = exports), module.sex = exports + 15e5, ej(module), {
       session_id: module.sid,
       session_start: module.sst,
       session_expires: module.sex
     }
   },
-  ez = c(f()),
-  eJ = function() {
+  eQ = c(f()),
+  eX = function() {
     var e;
-    switch (eZ()) {
+    switch (ez()) {
       case "cellular":
         e = "cellular";
         break;
@@ -1637,13 +1614,13 @@ var eg = function(e) {
     }
     return module
   },
-  eZ = function() {
-    var e = ez.default.navigator,
+  ez = function() {
+    var e = eQ.default.navigator,
       t = module && (module.connection || module.mozConnection || module.webkitConnection);
     return exports && exports.type
   };
-eJ.getConnectionFromAPI = eZ;
-var e0 = e2({
+eX.getConnectionFromAPI = ez;
+var eJ = e0({
     a: "env",
     b: "beacon",
     c: "custom",
@@ -1664,7 +1641,7 @@ var e0 = e2({
     x: "view",
     y: "sub"
   }),
-  e1 = e2({
+  eZ = e0({
     ad: "ad",
     af: "affiliate",
     ag: "aggregate",
@@ -1700,8 +1677,10 @@ var e0 = e2({
     cs: "captions",
     ct: "content",
     cu: "current",
+    cv: "cumulative",
     cx: "connection",
     cz: "context",
+    da: "data",
     dg: "downscaling",
     dm: "domain",
     dn: "cdn",
@@ -1762,6 +1741,8 @@ var e0 = e2({
     mm: "min",
     mn: "manufacturer",
     mo: "model",
+    mp: "mode",
+    ms: "ms",
     mx: "mux",
     ne: "newest",
     nm: "name",
@@ -1839,13 +1820,13 @@ var e0 = e2({
     wt: "waiting"
   });
 
-function e2(e) {
+function e0(e) {
   var t = {};
   for (var i in e) e.hasOwnProperty(i) && (t[e[i]] = i);
   return t
 }
 
-function e3(e) {
+function e1(e) {
   var t = {},
     i = {};
   return Object.keys(e).forEach(function(r) {
@@ -1853,45 +1834,45 @@ function e3(e) {
     if (e.hasOwnProperty(r) && true !== e[r]) {
       var a = r.split("_"),
         n = a[0],
-        l = e0[n];
+        l = eJ[n];
       l || (q.info("Data key word `" + a[0] + "` not expected in " + r), l = n + "_"), a.splice(1).forEach(function(e) {
-        "url" === e && (s = true), e1[e] ? l += e1[e] : Number.isInteger(Number(e)) ? l += e : (q.info("Data key word `" + e + "` not expected in " + r), l += "_" + e + "_")
+        "url" === e && (s = true), eZ[e] ? l += eZ[e] : Number.isInteger(Number(e)) ? l += e : (q.info("Data key word `" + e + "` not expected in " + r), l += "_" + e + "_")
       }), s ? i[l] = e[r] : t[l] = e[r]
     }
   }), Object.assign(t, i)
 }
-var e4 = c(f()),
-  e5 = c(w()),
-  e8 = {
+var e2 = c(f()),
+  e3 = c(w()),
+  e4 = {
     maxBeaconSize: 300,
     maxQueueLength: 3600,
     baseTimeBetweenBeacons: 1e4,
     maxPayloadKBSize: 500
   },
-  e6 = ["hb", "requestcompleted", "requestfailed", "requestcanceled"],
-  e9 = function(e) {
+  e5 = ["hb", "requestcompleted", "requestfailed", "requestcanceled"],
+  e8 = function(e) {
     var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    this._beaconUrl = e || "https://img.litix.io", this._eventQueue = [], this._postInFlight = false, this._resendAfterPost = false, this._failureCount = 0, this._sendTimeout = false, this._options = Object.assign({}, e8, t)
+    this._beaconUrl = e || "https://img.litix.io", this._eventQueue = [], this._postInFlight = false, this._resendAfterPost = false, this._failureCount = 0, this._sendTimeout = false, this._options = Object.assign({}, e4, t)
   };
-e9.prototype.queueEvent = function(e, t) {
+e8.prototype.queueEvent = function(e, t) {
   var i = Object.assign({}, t);
   return (this._eventQueue.length <= this._options.maxQueueLength || "eventrateexceeded" === e) && (this._eventQueue.push(i), this._sendTimeout || this._startBeaconSending(), this._eventQueue.length <= this._options.maxQueueLength)
-}, e9.prototype.flushEvents = function() {
+}, e8.prototype.flushEvents = function() {
   var e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   if (module && 1 === this._eventQueue.length) return void this._eventQueue.pop();
   this._eventQueue.length && this._sendBeaconQueue(), this._startBeaconSending()
-}, e9.prototype.destroy = function() {
+}, e8.prototype.destroy = function() {
   var e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  this.destroyed = true, module ? this._clearBeaconQueue() : this.flushEvents(), e4.default.clearTimeout(this._sendTimeout)
-}, e9.prototype._clearBeaconQueue = function() {
+  this.destroyed = true, module ? this._clearBeaconQueue() : this.flushEvents(), e2.default.clearTimeout(this._sendTimeout)
+}, e8.prototype._clearBeaconQueue = function() {
   var e = this._eventQueue.length > this._options.maxBeaconSize ? this._eventQueue.length - this._options.maxBeaconSize : 0,
     t = this._eventQueue.slice(module);
-  module > 0 && Object.assign(exports[exports.length - 1], e3({
+  module > 0 && Object.assign(exports[exports.length - 1], e1({
     mux_view_message: "event queue truncated"
   }));
   var i = this._createPayload(exports);
-  te(this._beaconUrl, require, true, function() {})
-}, e9.prototype._sendBeaconQueue = function() {
+  e9(this._beaconUrl, require, true, function() {})
+}, e8.prototype._sendBeaconQueue = function() {
   var e = this;
   if (this._postInFlight) {
     this._resendAfterPost = true;
@@ -1901,19 +1882,19 @@ e9.prototype.queueEvent = function(e, t) {
   this._eventQueue = this._eventQueue.slice(this._options.maxBeaconSize), this._postInFlight = true;
   var i = this._createPayload(exports),
     r = B();
-  te(this._beaconUrl, require, false, function(i, s) {
+  e9(this._beaconUrl, require, false, function(i, s) {
     s ? (e._eventQueue = t.concat(e._eventQueue), e._failureCount += 1, q.info("Error sending beacon: " + s)) : e._failureCount = 0, e._roundTripTime = B() - r, e._postInFlight = false, e._resendAfterPost && (e._resendAfterPost = false, e._eventQueue.length > 0 && e._sendBeaconQueue())
   })
-}, e9.prototype._getNextBeaconTime = function() {
+}, e8.prototype._getNextBeaconTime = function() {
   if (!this._failureCount) return this._options.baseTimeBetweenBeacons;
   var e = Math.pow(2, this._failureCount - 1);
   return (1 + (e *= Math.random())) * this._options.baseTimeBetweenBeacons
-}, e9.prototype._startBeaconSending = function() {
+}, e8.prototype._startBeaconSending = function() {
   var e = this;
-  e4.default.clearTimeout(this._sendTimeout), this.destroyed || (this._sendTimeout = e4.default.setTimeout(function() {
+  e2.default.clearTimeout(this._sendTimeout), this.destroyed || (this._sendTimeout = e2.default.setTimeout(function() {
     module._eventQueue.length && module._sendBeaconQueue(), module._startBeaconSending()
   }, this._getNextBeaconTime()))
-}, e9.prototype._createPayload = function(e) {
+}, e8.prototype._createPayload = function(e) {
   var t = this,
     i = {
       transmission_timestamp: Math.round(B())
@@ -1929,7 +1910,7 @@ e9.prototype.queueEvent = function(e, t) {
       return a <= t._options.maxPayloadKBSize
     };
   return n(), l() || (q.info("Payload size is too big (" + a + " kb). Removing unnecessary events."), s = e.filter(function(e) {
-    return false === e6.indexOf(e.e)
+    return false === e5.indexOf(e.e)
   }), n()), l() || (q.info("Payload size still too big (" + a + " kb). Cropping fields.."), s.forEach(function(e) {
     for (var t in e) {
       var i = e[t];
@@ -1937,27 +1918,27 @@ e9.prototype.queueEvent = function(e, t) {
     }
   }), n()), r
 };
-var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
+var e6 = "function" == typeof e3.default.exitPictureInPicture ? function(e) {
     return e.length <= 57344
   } : function(e) {
     returnfalse
   },
-  te = function(e, t, i, r) {
+  e9 = function(e, t, i, r) {
     if (i && navigator && navigator.sendBeacon && navigator.sendBeacon(e, t)) return void r();
-    if (e4.default.fetch) return void e4.default.fetch(e, {
+    if (e2.default.fetch) return void e2.default.fetch(e, {
       method: "POST",
       body: t,
       headers: {
         "Content-Type": "text/plain"
       },
-      keepalive: e7(t)
+      keepalive: e6(t)
     }).then(function(e) {
       return r(null, e.ok ? null : "Error")
     }).catch(function(e) {
       return r(null, e)
     });
-    if (e4.default.XMLHttpRequest) {
-      var s = new e4.default.XMLHttpRequest;
+    if (e2.default.XMLHttpRequest) {
+      var s = new e2.default.XMLHttpRequest;
       s.onreadystatechange = function() {
         if (4 === s.readyState) return r(null, 200 !== s.status ? "error" : true)
       }, s.open("POST", e), s.setRequestHeader("Content-Type", "text/plain"), s.send(t);
@@ -1965,14 +1946,14 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
     }
     r()
   },
-  tt = ["env_key", "view_id", "view_sequence_number", "player_sequence_number", "beacon_domain", "player_playhead_time", "viewer_time", "mux_api_version", "event", "video_id", "player_instance_id", "player_error_code", "player_error_message", "player_error_context", "player_error_severity", "player_error_business_exception"],
-  ti = ["adplay", "adplaying", "adpause", "adfirstquartile", "admidpoint", "adthirdquartile", "adended", "adresponse", "adrequest"],
-  tr = ["ad_id", "ad_creative_id", "ad_universal_id"],
-  ts = ["viewstart", "error", "ended", "viewend"],
-  ta = function() {
+  e7 = ["env_key", "view_id", "view_sequence_number", "player_sequence_number", "beacon_domain", "player_playhead_time", "viewer_time", "mux_api_version", "event", "video_id", "player_instance_id", "player_error_code", "player_error_message", "player_error_context", "player_error_severity", "player_error_business_exception", "view_playing_time_ms_cumulative", "ad_playing_time_ms_cumulative"],
+  te = ["adplay", "adplaying", "adpause", "adfirstquartile", "admidpoint", "adthirdquartile", "adended", "adresponse", "adrequest"],
+  tt = ["ad_id", "ad_creative_id", "ad_universal_id"],
+  ti = ["viewstart", "error", "ended", "viewend"],
+  tr = function() {
     function e(t, i) {
-      var r, s, a, n, l, o, h, d, u, c, f, g, m, p, y, E, T, _, S, b = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-      Y(this, e), z(this, "mux", true), z(this, "envKey", true), z(this, "options", true), z(this, "eventQueue", true), z(this, "sampleRate", true), z(this, "disableCookies", true), z(this, "respectDoNotTrack", true), z(this, "previousBeaconData", true), z(this, "lastEventTime", true), z(this, "rateLimited", true), z(this, "pageLevelData", true), z(this, "viewerData", true), this.mux = t, this.envKey = i, this.options = b, this.previousBeaconData = null, this.lastEventTime = 0, this.rateLimited = false, this.eventQueue = new e9((r = this.envKey, a = (s = this.options).beaconCollectionDomain, n = s.beaconDomain, a ? "https://" + a : (r = r || "inferred").match(/^[a-z0-9]+$/) ? "https://" + r + "." + (n || "litix.io") : "https://img.litix.io/a.gif")), this.sampleRate = null != (T = this.options.sampleRate) ? T : 1, this.disableCookies = null != (_ = this.options.disableCookies) && _, this.respectDoNotTrack = null != (S = this.options.respectDoNotTrack) && S, this.previousBeaconData = null, this.lastEventTime = 0, this.rateLimited = false, this.pageLevelData = {
+      var r, s, a, n, l, o, h, d, u, c, f, g, p, v, y, E, T, _, S, b = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+      Y(this, e), z(this, "mux", true), z(this, "envKey", true), z(this, "options", true), z(this, "eventQueue", true), z(this, "sampleRate", true), z(this, "disableCookies", true), z(this, "respectDoNotTrack", true), z(this, "previousBeaconData", true), z(this, "lastEventTime", true), z(this, "rateLimited", true), z(this, "pageLevelData", true), z(this, "viewerData", true), this.mux = t, this.envKey = i, this.options = b, this.previousBeaconData = null, this.lastEventTime = 0, this.rateLimited = false, this.eventQueue = new e8((r = this.envKey, a = (s = this.options).beaconCollectionDomain, n = s.beaconDomain, a ? "https://" + a : (r = r || "inferred").match(/^[a-z0-9]+$/) ? "https://" + r + "." + (n || "litix.io") : "https://img.litix.io/a.gif")), this.sampleRate = null != (T = this.options.sampleRate) ? T : 1, this.disableCookies = null != (_ = this.options.disableCookies) && _, this.respectDoNotTrack = null != (S = this.options.respectDoNotTrack) && S, this.previousBeaconData = null, this.lastEventTime = 0, this.rateLimited = false, this.pageLevelData = {
         mux_api_version: this.mux.API_VERSION,
         mux_embed: this.mux.NAME,
         mux_embed_version: this.mux.VERSION,
@@ -1983,11 +1964,11 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
         viewer_device_category: "",
         viewer_device_manufacturer: null == (u = this.options.platform) ? true : u.manufacturer,
         viewer_os_family: null == (f = this.options.platform) || null == (c = f.os) ? true : c.family,
-        viewer_os_architecture: null == (m = this.options.platform) || null == (g = m.os) ? true : g.architecture,
-        viewer_os_version: null == (y = this.options.platform) || null == (p = y.os) ? true : p.version,
-        viewer_connection_type: eJ(),
-        page_url: null === eq.default || true === eq.default || null == (E = eq.default.location) ? true : E.href
-      }, this.viewerData = this.disableCookies ? {} : eQ()
+        viewer_os_architecture: null == (p = this.options.platform) || null == (g = p.os) ? true : g.architecture,
+        viewer_os_version: null == (y = this.options.platform) || null == (v = y.os) ? true : v.version,
+        viewer_connection_type: eX(),
+        page_url: null === eH.default || true === eH.default || null == (E = eH.default.location) ? true : E.href
+      }, this.viewerData = this.disableCookies ? {} : eW()
     }
     return X(module, [{
       key: "send",
@@ -1995,24 +1976,24 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
         if (!(!e || !(null != t && t.view_id))) {
           if (this.respectDoNotTrack && j()) return q.info("Not sending `" + e + "` because Do Not Track is enabled");
           if (!t || "object" != typeof t) return q.error("A data object was expected in send() but was not provided");
-          var i = this.disableCookies ? {} : eX(),
+          var i = this.disableCookies ? {} : eY(),
             r = eh(eo({}, this.pageLevelData, t, i, this.viewerData), {
               event: e,
               env_key: this.envKey
             });
           r.user_id && (r.viewer_user_id = r.user_id, delete r.user_id);
           var s, a = (null != (s = r.mux_sample_number) ? s : 0) >= this.sampleRate,
-            n = e3(this._deduplicateBeaconData(e, r));
+            n = e1(this._deduplicateBeaconData(e, r));
           if (this.lastEventTime = this.mux.utils.now(), a) return q.info("Not sending event due to sample rate restriction", e, r, n);
           if (this.envKey || q.info("Missing environment key (envKey) - beacons will be dropped if the video source is not a valid mux video URL", e, r, n), !this.rateLimited)
             if (q.info("Sending event", e, r, n), this.rateLimited = !this.eventQueue.queueEvent(e, n), this.mux.WINDOW_UNLOADING && "viewend" === e) this.eventQueue.destroy(true);
             else {
               if (this.mux.WINDOW_HIDDEN && "hb" === e) this.eventQueue.flushEvents(true);
-              else if (ts.indexOf(e) >= 0) {
+              else if (ti.indexOf(e) >= 0) {
                 if ("error" === e && "warning" === t.player_error_severity) return;
                 this.eventQueue.flushEvents()
               }
-              if (this.rateLimited) return r.event = "eventrateexceeded", n = e3(r), this.eventQueue.queueEvent(r.event, n), q.error("Beaconing disabled due to rate limit.")
+              if (this.rateLimited) return r.event = "eventrateexceeded", n = e1(r), this.eventQueue.queueEvent(r.event, n), q.error("Beaconing disabled due to rate limit.")
             }
         }
       }
@@ -2034,7 +2015,7 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
             var s = O(t, 2),
               n = s[0],
               l = s[1];
-            i.previousBeaconData && (l !== i.previousBeaconData[n] || tt.indexOf(n) > false || i.objectHasChanged(a, n, l, i.previousBeaconData[n]) || i.eventRequiresKey(e, n)) && (r[n] = l, i.previousBeaconData[n] = l)
+            i.previousBeaconData && (l !== i.previousBeaconData[n] || e7.indexOf(n) > false || i.objectHasChanged(a, n, l, i.previousBeaconData[n]) || i.eventRequiresKey(e, n)) && (r[n] = l, i.previousBeaconData[n] = l)
           })
         }
         return r
@@ -2047,11 +2028,11 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
     }, {
       key: "eventRequiresKey",
       value: function(e, t) {
-        return !!("renditionchange" === e && 0 === t.indexOf("video_source_") || tr.includes(t) && ti.includes(e))
+        return !!("renditionchange" === e && 0 === t.indexOf("video_source_") || tt.includes(t) && te.includes(e))
       }
     }]), module
   }(),
-  tn = function e(t) {
+  ts = function e(t) {
     Y(this, e);
     var i = 0,
       r = 0,
@@ -2075,7 +2056,7 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
       a++, o++, t.data.view_request_count = a, t.data.view_request_canceled_count = o
     })
   },
-  tl = function e(t) {
+  ta = function e(t) {
     var i = this;
     Y(this, e), z(this, "_lastEventTime", true), t.on("before*", function(e, r) {
       var s = r.viewer_time,
@@ -2098,15 +2079,15 @@ var e7 = "function" == typeof e5.default.exitPictureInPicture ? function(e) {
     })
   };
 
-function to(e, t) {
+function tn(e, t) {
   return (null == e ? true : e.toLowerCase()) === (null == t ? true : t.toLowerCase())
 }
-var th, td, tu = function e(t) {
+var tl, to, th = function e(t) {
     Y(this, e);
     var i = function(e) {
         var i, r, s, l = null != (i = e) && i.request_type && ("media" === i.request_type || "video" === i.request_type) && null != (r = i.request_response_headers) && r["x-cdn"] ? i.request_response_headers["x-cdn"] : null != i && i.video_cdn ? i.video_cdn : null,
           o = null != (s = e) && s.request_start ? s.request_start : null != s && s.viewer_time ? s.viewer_time : Date.now();
-        null != l && !to(l, a) && n <= o && (a = l, n = o, t.emit("cdnchange", {
+        null != l && !tn(l, a) && n <= o && (a = l, n = o, t.emit("cdnchange", {
           video_cdn: l
         }))
       },
@@ -2118,12 +2099,32 @@ var th, td, tu = function e(t) {
       r = null, s = null, a = null, n = 0
     }), t.on("beforecdnchange", function(e, t) {
       var i = null == t ? true : t.video_cdn;
-      i && (true === t.video_previous_cdn || null === t.video_previous_cdn) && (to(i, s) ? t.video_previous_cdn = null != r ? r : true : (t.video_previous_cdn = null != s ? s : true, r = s, s = i))
+      i && (true === t.video_previous_cdn || null === t.video_previous_cdn) && (tn(i, s) ? t.video_previous_cdn = null != r ? r : true : (t.video_previous_cdn = null != s ? s : true, r = s, s = i))
     }), t.on("requestcompleted", function(e, t) {
       i(t)
     })
   },
-  tc = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange", "cdnchange"],
+  td = function(e) {
+    try {
+      return JSON.parse(e), true
+    } catch (e) {
+      returnfalse
+    }
+  },
+  tu = function e(t) {
+    var i = this;
+    Y(this, e), z(this, "_emittingAutomaticEvent", false), z(this, "_hasInitialized", false), t.on("viewstart", function() {
+      i._hasInitialized || (i._hasInitialized = true, i._emittingAutomaticEvent = true, t.emit("playbackmodechange", {
+        player_playback_mode: "standard",
+        player_playback_mode_data: "{}"
+      }), i._emittingAutomaticEvent = false)
+    }), t.on("viewend", function() {
+      i._hasInitialized = false
+    }), t.on("playbackmodechange", function(e, r) {
+      i._emittingAutomaticEvent || (r.player_playback_mode_data ? td(r.player_playback_mode_data) || (t.mux.log.warn("Invalid JSON string for player_playback_mode_data"), r.player_playback_mode_data = "{}") : r.player_playback_mode_data = "{}", t.data.player_playback_mode_data = r.player_playback_mode_data, t.data.player_playback_mode = r.player_playback_mode)
+    })
+  },
+  tc = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange", "cdnchange", "playbackmodechange"],
   tf = new Set(["requestcompleted", "requestfailed", "requestcanceled"]),
   tg = function(e) {
     if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
@@ -2144,7 +2145,7 @@ var th, td, tu = function e(t) {
       }
     }(), function() {
       var e, i = J(r);
-      return e = t ? Reflect.construct(i, arguments, J(this).constructor) : i.apply(this, arguments), e && ("object" === p(e) || "function" == typeof e) ? e : W(this)
+      return e = t ? Reflect.construct(i, arguments, J(this).constructor) : i.apply(this, arguments), e && ("object" === v(e) || "function" == typeof e) ? e : W(this)
     });
 
     function r(e, t, s) {
@@ -2171,7 +2172,7 @@ var th, td, tu = function e(t) {
         }
       }, s)).data = s.data || {}, s.data.property_key && (s.data.env_key = s.data.property_key, delete s.data.property_key), q.level = s.debug ? 1 : 3, a.getPlayheadTime = s.getPlayheadTime, a.getStateData = s.getStateData || function() {
         return {}
-      }, a.getAdData = s.getAdData || function() {}, a.minimumRebufferDuration = s.minimumRebufferDuration, a.sustainedRebufferThreshold = s.sustainedRebufferThreshold, a.playbackHeartbeatTime = s.playbackHeartbeatTime, a.disableRebufferTracking = s.disableRebufferTracking, a.disableRebufferTracking && a.mux.log.warn("Disabling rebuffer tracking. This should only be used in specific circumstances as a last resort when your player is known to unreliably track rebuffering."), a.disablePlayheadRebufferTracking = s.disablePlayheadRebufferTracking, a.errorTranslator = s.errorTranslator, a.emitTranslator = s.emitTranslator, a.stateDataTranslator = s.stateDataTranslator, a.playbackEventDispatcher = new ta(e, s.data.env_key, s), a.data = {
+      }, a.getAdData = s.getAdData || function() {}, a.minimumRebufferDuration = s.minimumRebufferDuration, a.sustainedRebufferThreshold = s.sustainedRebufferThreshold, a.playbackHeartbeatTime = s.playbackHeartbeatTime, a.disableRebufferTracking = s.disableRebufferTracking, a.disableRebufferTracking && a.mux.log.warn("Disabling rebuffer tracking. This should only be used in specific circumstances as a last resort when your player is known to unreliably track rebuffering."), a.disablePlayheadRebufferTracking = s.disablePlayheadRebufferTracking, a.errorTranslator = s.errorTranslator, a.emitTranslator = s.emitTranslator, a.stateDataTranslator = s.stateDataTranslator, a.playbackEventDispatcher = new tr(e, s.data.env_key, s), a.data = {
         player_instance_id: U(),
         mux_sample_rate: s.sampleRate,
         beacon_domain: s.beaconCollectionDomain || s.beaconDomain
@@ -2215,7 +2216,7 @@ var th, td, tu = function e(t) {
       }), a.one("playerready", function(e) {
         var t = this.mux.utils.now();
         this.data.player_init_time && (this.data.player_startup_time = t - this.data.player_init_time), this.pageLoadInitTime = this.data.page_load_init_time || this.pageLoadInitTime, this.pageLoadEndTime = this.data.page_load_end_time || this.pageLoadEndTime, !this.mux.PLAYER_TRACKED && this.pageLoadInitTime && (this.mux.PLAYER_TRACKED = true, (this.data.player_init_time || this.pageLoadEndTime) && (this.data.page_load_time = Math.min(this.data.player_init_time || 1 / 0, this.pageLoadEndTime || 1 / 0) - this.pageLoadInitTime)), this.send("playerready"), delete this.data.player_startup_time, delete this.data.page_load_time
-      }), a.longResumeTracker = new tl(W(a)), a.errorTracker = new eD(W(a)), new eK(W(a)), a.seekingTracker = new eN(W(a)), a.playheadTime = new ex(W(a)), a.playbackHeartbeat = new eI(W(a)), new eF(W(a)), a.watchTimeTracker = new eP(W(a)), new ew(W(a)), a.adTracker = new e$(W(a)), new eO(W(a)), new eC(W(a)), new eM(W(a)), new eH(W(a)), new tn(W(a)), new tu(W(a)), s.hlsjs && a.addHLSJS(s), s.dashjs && a.addDashJS(s), a.emit("viewinit", s.data), a
+      }), a.longResumeTracker = new ta(W(a)), a.errorTracker = new eD(W(a)), new eG(W(a)), a.seekingTracker = new eN(W(a)), a.playheadTime = new ex(W(a)), a.playbackHeartbeat = new eI(W(a)), new eF(W(a)), a.watchTimeTracker = new eP(W(a)), new ew(W(a)), a.adTracker = new e$(W(a)), new eO(W(a)), new eC(W(a)), new eM(W(a)), new ts(W(a)), new th(W(a)), new tu(W(a)), s.hlsjs && a.addHLSJS(s), s.dashjs && a.addDashJS(s), a.emit("viewinit", s.data), a
     }
     return X(r, [{
       key: "emit",
@@ -2365,7 +2366,7 @@ var th, td, tu = function e(t) {
     4: "MEDIA_ERR_SRC_NOT_SUPPORTED"
   },
   ty = c(f());
-ty.default && ty.default.WeakMap && (td = new WeakMap);
+ty.default && ty.default.WeakMap && (to = new WeakMap);
 var tE = function(e) {
   return this.buffer = "", this.manifest = {
     segments: [],
@@ -2473,7 +2474,7 @@ var tT = function(e, t) {
     safeIncrement: el,
     getComputedStyle: function(e, t) {
       var i;
-      return e && t && ty.default && "function" == typeof ty.default.getComputedStyle ? (td && td.has(e) && (i = td.get(e)), i || (i = ty.default.getComputedStyle(e, null), td && td.set(e, i)), i.getPropertyValue(t)) : ""
+      return e && t && ty.default && "function" == typeof ty.default.getComputedStyle ? (to && to.has(e) && (i = to.get(e)), i || (i = ty.default.getComputedStyle(e, null), to && to.set(e, i)), i.getPropertyValue(t)) : ""
     },
     secondsToMs: function(e) {
       return Math.floor(1e3 * e)
@@ -2501,7 +2502,7 @@ var tT = function(e, t) {
   tw = {
     loaded: B(),
     NAME: "mux-embed",
-    VERSION: "5.12.0",
+    VERSION: "5.13.0",
     API_VERSION: "2.1",
     PLAYER_TRACKED: false,
     monitor: function(e, t) {
@@ -2663,6 +2664,7 @@ var tT = function(e, t) {
       ENDED: "ended",
       RENDITION_CHANGE: "renditionchange",
       ORIENTATION_CHANGE: "orientationchange",
+      PLAYBACK_MODE_CHANGE: "playbackmodechange",
       AD_REQUEST: "adrequest",
       AD_RESPONSE: "adresponse",
       AD_BREAK_START: "adbreakstart",

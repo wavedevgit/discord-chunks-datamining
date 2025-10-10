@@ -31,9 +31,11 @@ function v(e) {
     t(h.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
       section: p.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
-    }), (0, m.I)({
-      analyticsLocations: v
-    })
+    }), setTimeout(() => {
+      (0, m.I)({
+        analyticsLocations: v
+      })
+    }, 200)
   }, [t, v]), C = (0, r.useCallback)(() => {
     t(h.L.USER_DISMISS)
   }, [t]);

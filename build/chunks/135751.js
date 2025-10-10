@@ -3,7 +3,7 @@
 require.d(exports, {
   c: () => c
 });
-var Chunk174933 = require("./174933.js"),
+var Chunk841992 = require("./841992.js"),
   Chunk579092 = require("./579092.js"),
   Chunk82328 = require("./82328.js"),
   Chunk869950 = require("./869950.js");
@@ -28,21 +28,21 @@ class c {
     };
     null != this.hlsInstance && (exports.hlsjs = this.hlsInstance, exports.Hls = this.hlsInstance.constructor);
     try {
-      Chunk174933.Z.monitor(this.videoElement, exports), this.isMonitoring = true
+      Chunk841992.Z.monitor(this.videoElement, exports), this.isMonitoring = true
     } catch (e) {
       s.error("Error creating Mux monitor", module), this.isMonitoring = false
     }
   }
   endSession() {
     if (this.isMonitoring) try {
-      "function" == typeof Chunk174933.Z.destroyMonitor && Chunk174933.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
+      "function" == typeof Chunk841992.Z.destroyMonitor && Chunk841992.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
     } catch (e) {
       s.error("Error ending Mux session", module)
     }
   }
   destroy() {
     if (this.isMonitoring) try {
-      "function" == typeof Chunk174933.Z.destroyMonitor && Chunk174933.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
+      "function" == typeof Chunk841992.Z.destroyMonitor && Chunk841992.Z.destroyMonitor(this.videoElement), this.isMonitoring = false
     } catch (e) {
       s.error("Error destroying Mux monitor", module)
     }

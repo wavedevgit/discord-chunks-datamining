@@ -2,9 +2,9 @@
 /** chunk id: 572995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NA: () => ea,
-  ZP: () => es,
-  y$: () => ei
+  NA: () => el,
+  ZP: () => eu,
+  y$: () => es
 });
 var Chunk647438 = require("./647438.js"),
   Chunk100527 = require("./100527.js"),
@@ -28,6 +28,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk985443 = require("./985443.js"),
   Chunk612253 = require("./612253.js"),
   Chunk872532 = require("./872532.js"),
+  Chunk184071 = require("./184071.js"),
+  Chunk368243 = require("./368243.js"),
+  Chunk119121 = require("./119121.js"),
   Chunk404583 = require("./404583.js"),
   Chunk295349 = require("./295349.js"),
   Chunk631572 = require("./631572.js"),
@@ -60,7 +63,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk377679 = require("./377679.js"),
   Chunk825087 = require("./825087.js");
 
-function en(e, t, n) {
+function ea(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -69,81 +72,81 @@ function en(e, t, n) {
   }) : e[t] = n, e
 }
 
-function er(e) {
+function eo(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      en(e, t, n[t])
+      ea(e, t, n[t])
     })
   }
   return e
 }
-var ei = function(e) {
+var es = function(e) {
     return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e
   }({}),
-  ea = function(e) {
+  el = function(e) {
     return e.REFERRAL_PROGRAM = "referralProgram", e.SERVER_PROFILES = "serverProfiles", e.SHOW_YOUR_STYLE = "showYourStyle", e.YOUR_SPACE = "yourSpace", e.EMOJIS = "emojis", e.NO_LIMITS = "noLimits", e.CUSTOM_THEMES = "customThemes", e.DISPLAY_NAME_STYLES = "displayNameStyles", e
   }({});
-let eo = (e, t) => er({
+let ec = (e, t) => eo({
     serverProfiles: {
       thumbnail: T,
-      assetUrl: e ? X.ZP : Q.ZP
+      assetUrl: e ? $.ZP : ee.ZP
     },
     customThemes: {
-      thumbnail: Z.Z,
-      assetUrl: e ? B.Z : F.Z
+      thumbnail: H.Z,
+      assetUrl: e ? V.Z : Y.Z
     },
     displayNameStyles: {
-      thumbnail: Z.Z,
-      assetUrl: e ? B.Z : F.Z
+      thumbnail: A.Z,
+      assetUrl: e ? S.Z : C.Z
     }
   }, t ? {
     referralProgram: {
-      thumbnail: D.Z,
-      assetUrl: e ? w.Z : L.Z
-    },
-    showYourStyle: {
       thumbnail: M.Z,
       assetUrl: e ? x.Z : j.Z
     },
-    yourSpace: {
+    showYourStyle: {
       thumbnail: U.Z,
       assetUrl: e ? k.Z : G.Z
     },
-    emojis: {
-      thumbnail: A.Z,
-      assetUrl: e ? S.Z : C.Z
+    yourSpace: {
+      thumbnail: Z.Z,
+      assetUrl: e ? B.Z : F.Z
     },
-    noLimits: {
+    emojis: {
       thumbnail: R.Z,
       assetUrl: e ? N.Z : P.Z
+    },
+    noLimits: {
+      thumbnail: D.Z,
+      assetUrl: e ? w.Z : L.Z
     }
   } : {
     referralProgram: {
-      thumbnail: z.Z,
-      assetUrl: e ? K.ZP : q.ZP
+      thumbnail: Q.Z,
+      assetUrl: e ? X.ZP : J.ZP
     },
     showYourStyle: {
       thumbnail: I,
-      assetUrl: e ? J.Z : $.Z
+      assetUrl: e ? et.Z : en.Z
     },
     yourSpace: {
       thumbnail: v,
-      assetUrl: e ? ee.Z : et.Z
+      assetUrl: e ? er.Z : ei.Z
     },
     emojis: {
       thumbnail: y,
-      assetUrl: e ? V.ZP : H.ZP
+      assetUrl: e ? W.ZP : K.ZP
     },
     noLimits: {
       thumbnail: O,
-      assetUrl: e ? Y.ZP : W.ZP
+      assetUrl: e ? z.ZP : q.ZP
     }
   }),
-  es = () => {
+  eu = () => {
     let e, {
         analyticsLocations: t
       } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_BENTO_BOX),
@@ -158,9 +161,11 @@ let eo = (e, t) => er({
         (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
           section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
           analyticsLocations: exports
-        }), (0, Chunk829716.I)({
-          analyticsLocations: exports
-        })
+        }), setTimeout(() => {
+          (0, Chunk829716.I)({
+            analyticsLocations: exports
+          })
+        }, 200)
       }, [exports]),
       I = () => {
         {
@@ -173,7 +178,7 @@ let eo = (e, t) => er({
       },
       T = (0, Chunk526167.rO)(),
       S = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM),
-      A = eo(Chunk872532, (0, Chunk47280.ZP)({
+      A = ec(Chunk872532, (0, Chunk47280.ZP)({
         location: "useBentoBoxes"
       })),
       C = {
@@ -182,83 +187,83 @@ let eo = (e, t) => er({
         description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
         descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
         onClick: Chunk509614,
-        previewImage: Chunk295349.serverProfiles.thumbnail,
-        videoUrl: Chunk295349.serverProfiles.assetUrl
+        previewImage: Chunk368243.serverProfiles.thumbnail,
+        videoUrl: Chunk368243.serverProfiles.assetUrl
       },
       N = {
         name: "referralProgram",
         title: Chunk388032.intl.string(Chunk388032.t.tPY4o6),
         description: Chunk388032.intl.format(Chunk388032.t.jRPQUF, {
-          learnMoreLink: Chunk404583
+          learnMoreLink: Chunk184071
         }),
-        previewImage: Chunk295349.referralProgram.thumbnail,
-        videoUrl: Chunk295349.referralProgram.assetUrl
+        previewImage: Chunk368243.referralProgram.thumbnail,
+        videoUrl: Chunk368243.referralProgram.assetUrl
       },
       R = {
         name: "customThemes",
         title: Chunk388032.intl.string(Chunk119475.default.XokIHB),
         description: Chunk388032.intl.string(Chunk119475.default["7esQMD"]),
         descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-        previewImage: Chunk295349.customThemes.thumbnail,
+        previewImage: Chunk368243.customThemes.thumbnail,
         onClick: () => {
           (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
         },
-        videoUrl: Chunk295349.customThemes.assetUrl
+        videoUrl: Chunk368243.customThemes.assetUrl
       },
       P = {
         name: "displayNameStyles",
         title: Chunk388032.intl.string(Chunk693450.default.ABtBDQ),
         description: Chunk388032.intl.string(Chunk693450.default.MFNXZm),
         descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-        previewImage: Chunk295349.displayNameStyles.thumbnail,
+        previewImage: Chunk368243.displayNameStyles.thumbnail,
         onClick: Chunk985443,
         badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
-        videoUrl: Chunk295349.displayNameStyles.assetUrl
+        videoUrl: Chunk368243.displayNameStyles.assetUrl
       },
       w = {
         name: "showYourStyle",
         title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmp),
         description: Chunk388032.intl.string(Chunk388032.t.UsOUxc),
         descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-        previewImage: Chunk295349.showYourStyle.thumbnail,
+        previewImage: Chunk368243.showYourStyle.thumbnail,
         onClick: Chunk509614,
-        videoUrl: Chunk295349.showYourStyle.assetUrl
+        videoUrl: Chunk368243.showYourStyle.assetUrl
       },
       D = {
         name: "yourSpace",
         title: Chunk388032.intl.string(Chunk388032.t.Wme3nZ),
         description: Chunk388032.intl.string(Chunk388032.t["/aAIqa"]),
         descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-        previewImage: Chunk295349.yourSpace.thumbnail,
+        previewImage: Chunk368243.yourSpace.thumbnail,
         onClick: Chunk612253,
-        videoUrl: Chunk295349.yourSpace.assetUrl
+        videoUrl: Chunk368243.yourSpace.assetUrl
       },
       L = {
         name: "emojis",
         title: Chunk388032.intl.string(Chunk388032.t.zY5PPT),
         description: Chunk388032.intl.string(Chunk388032.t.R5Xag4),
-        previewImage: Chunk295349.emojis.thumbnail,
-        videoUrl: Chunk295349.emojis.assetUrl
+        previewImage: Chunk368243.emojis.thumbnail,
+        videoUrl: Chunk368243.emojis.assetUrl
       },
       x = [
-        [Chunk138431],
-        [Chunk305516],
-        [Chunk980984, {
+        [Chunk999675],
+        [Chunk238027],
+        [Chunk997585, {
           name: "noLimits",
           title: Chunk388032.intl.string(Chunk388032.t["6b3ydH"]),
           description: Chunk388032.intl.string(Chunk388032.t["Y+IJys"]),
-          previewImage: Chunk295349.noLimits.thumbnail,
-          videoUrl: Chunk295349.noLimits.assetUrl
+          previewImage: Chunk368243.noLimits.thumbnail,
+          videoUrl: Chunk368243.noLimits.assetUrl
         }]
       ];
     return {
       whatsNewBoxes: e = Chunk880511 ? [
-        [Chunk997585],
-        [Chunk238027, Chunk999675]
+        [Chunk631572],
+        [Chunk295349, Chunk404583]
       ] : [
-        [Chunk238027],
-        [Chunk631572, Chunk999675]
+        [Chunk295349],
+        [Chunk119121, Chunk404583]
       ],
-      bestOfBoxes: Chunk952842
+      bestOfBoxes: Chunk138431
     }
   }
