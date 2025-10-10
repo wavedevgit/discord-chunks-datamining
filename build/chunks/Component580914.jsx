@@ -66,7 +66,7 @@ let W = (0, Chunk884697.IC)(90),
       onVisibilityChange: K
     } = e, Y = (0, o.O)(e => {
       null == K || K(e)
-    }, .1, null != K), q = l.useRef(null), Q = (0, Z.G)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, P.Z)(), $ = (0, m.sp)(), ee = O.Z.useConfig({
+    }, .1, null != K), q = l.useRef(null), Q = (0, Z.G)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), $ = (0, m.sp)(), ee = O.Z.useConfig({
       location: "HeroBlock"
     }).showButtonLeftAligned && G !== H.AW.ORBS, et = (0, x.x)("HeroBlock"), en = l.useMemo(() => {
       var e, t;
@@ -95,7 +95,7 @@ let W = (0, Chunk884697.IC)(90),
       heroBannerStatic: es,
       heroBannerAnimated: eo,
       heroBannerRive: ea
-    } = (0, N.hr)(en), ec = null != (t = null == er ? true : er.responsive) && t, eu = null == er ? true : er.backgroundStyle, ed = null != ea, eg = (0, u.e7)([b.Z], () => b.Z.products), ef = l.useMemo(() => n ? [] : eg.size > 0 ? X(en.rankedSkuIds) : [], [n, X, en.rankedSkuIds, eg]), ep = l.useMemo(() => !n && 0 !== en.rankedSkuIds.length && !(ef.length > 0) && en.rankedSkuIds.every(e => {
+    } = (0, A.hr)(en), ec = null != (t = null == er ? true : er.responsive) && t, eu = null == er ? true : er.backgroundStyle, ed = null != ea, eg = (0, u.e7)([b.Z], () => b.Z.products), ef = l.useMemo(() => n ? [] : eg.size > 0 ? X(en.rankedSkuIds) : [], [n, X, en.rankedSkuIds, eg]), ep = l.useMemo(() => !n && 0 !== en.rankedSkuIds.length && !(ef.length > 0) && en.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, en.rankedSkuIds, ef.length]), {
@@ -115,7 +115,7 @@ let W = (0, Chunk884697.IC)(90),
         }, [i, s, e]),
         totalCards: e ? t : 4
       }
-    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, j.l)(e_).slice(0, eh), eb = (0, A.St)(em), eE = G === H.AW.ORBS ? D.intl.string(D.t["1CdL8f"]) : Q ? D.intl.string(D.t.guWAg4) : et ? D.intl.string(D.t["/QvRam"]) : D.intl.string(D.t.xYKa1d), ev = (0, S.FF)("CollectiblesContent"), eS = (0, E.$2)(en.categorySkuId), eO = v.Z.useConfig({
+    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, j.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? D.intl.string(D.t["1CdL8f"]) : Q ? D.intl.string(D.t.guWAg4) : et ? D.intl.string(D.t["/QvRam"]) : D.intl.string(D.t.xYKa1d), ev = (0, S.FF)("CollectiblesContent"), eS = (0, E.$2)(en.categorySkuId), eO = v.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ex = () => {
       G === H.AW.ORBS ? ((0, C.Y)({
@@ -213,7 +213,7 @@ let W = (0, Chunk884697.IC)(90),
           }),
           ref: eC,
           children: n || ep ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(eh)].map((e, t) => eO ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(T.K, {}, t))
+            children: [...Array(eh)].map((e, t) => eO ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(k.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eb.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
@@ -223,10 +223,11 @@ let W = (0, Chunk884697.IC)(90),
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: eO && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
+                children: eO && (null == e ? true : e.skuId) != null ? (0, r.jsx)(L.Z, {
                   skuId: null == e ? true : e.skuId,
-                  prioritizedCurrency: G === H.AW.ORBS ? I.tA.ORBS : true
-                }, e.skuId) : (0, r.jsx)(L.Z, {
+                  prioritizedCurrency: G === H.AW.ORBS ? I.tA.ORBS : true,
+                  onClickAnalytics: (0, I.wO)(e, G, $)
+                }, e.skuId) : (0, r.jsx)(T.Z, {
                   product: e,
                   category: n,
                   user: J,

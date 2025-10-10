@@ -98,14 +98,14 @@ let j = e => {
     tab: C,
     scrollerRef: y,
     sortedCategories: j,
-    setCategoryRef: T
-  } = e, L = (0, d.FF)("CollectiblesBrowse"), k = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), B = (0, u.sp)(), {
-    handlePageChange: N,
-    currentPage: P
+    setCategoryRef: k
+  } = e, T = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), B = (0, u.sp)(), {
+    handlePageChange: A,
+    currentPage: N
   } = (0, m.h)({
     scrollerRef: y,
     sortedCategories: j
-  }), A = l.useCallback(e => {
+  }), P = l.useCallback(e => {
     c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == B ? true : B.sessionId,
       page_section: null == B ? true : B.pageSection,
@@ -114,13 +114,13 @@ let j = e => {
       page_size: null == B ? true : B.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), N(e)
-  }, [B, N]), R = l.useRef(null);
+    }), A(e)
+  }, [B, A]), R = l.useRef(null);
   return l.useEffect(() => {
     if (!n || !i) return;
     let e = e => {
       let t = e.target;
-      null === k.current || null === R.current || k.current.contains(t) || R.current.contains(t) || (c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      null === L.current || null === R.current || L.current.contains(t) || R.current.contains(t) || (c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == B ? true : B.sessionId,
         page_section: null == B ? true : B.pageSection,
         page_category: null == B ? true : B.pageCategory,
@@ -135,10 +135,10 @@ let j = e => {
     className: x.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: s()(x.inventory, {
-        [x.inventoryFilter]: L,
+        [x.inventoryFilter]: T,
         [x.pageFullscreen]: t
       }),
-      children: [L && (0, r.jsxs)("div", {
+      children: [T && (0, r.jsxs)("div", {
         className: x.controls,
         children: [(0, r.jsx)("div", {
           className: x.controlsLeftSide,
@@ -176,13 +176,13 @@ let j = e => {
           })]
         }), i && n && (0, r.jsx)("div", {
           className: x.filterOverlay,
-          ref: k,
+          ref: L,
           children: (0, r.jsx)(o.Den, {
             className: x.filterOverlayContent,
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), L && !I ? (0, r.jsx)(b.Z, {
+      }), T && !I ? (0, r.jsx)(b.Z, {
         isFullScreen: t,
         scrollerRef: y,
         tab: C
@@ -192,14 +192,14 @@ let j = e => {
         tab: C
       }, C) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: P
+          pageIndex: N
         },
         children: (0, r.jsx)(p.Z, {
           isFullScreen: t,
           sortedCategories: j,
-          setCategoryRef: T,
-          currentPage: P,
-          handlePageChange: A
+          setCategoryRef: k,
+          currentPage: N,
+          handlePageChange: P
         })
       })]
     })

@@ -61,7 +61,7 @@ let M = e => {
       isFullScreen: t = true,
       tab: n = Z.AW.HOME
     } = e;
-    (0, C.z)(p.f), (0, T.f)();
+    (0, C.z)(p.f), (0, k.f)();
     let i = (0, g.Z)((0, o.Z)()),
       c = (0, a.e7)([E.default], () => E.default.getCurrentUser()),
       {
@@ -77,11 +77,11 @@ let M = e => {
     let U = (0, R.G)("CollectiblesShop"),
       {
         onClose: V
-      } = (0, P.Db)(),
+      } = (0, N.Db)(),
       {
         currentTab: z,
         hasFilters: G
-      } = (0, k.S)(),
+      } = (0, L.S)(),
       K = l.useMemo(() => n === Z.AW.HOME && z && G() ? z : n, [n, z, G]),
       {
         categories: Y,
@@ -108,11 +108,11 @@ let M = e => {
         selectedTab: er,
         transitionState: el,
         transitionToTab: ei
-      } = (0, L.B)(K, t);
+      } = (0, T.B)(K, t);
     (0, x.q3)(i, er, $, el, ee), (0, x.EB)(er, c);
     let {
       dismissShopButtonDC: es
-    } = (0, A.Z)();
+    } = (0, P.Z)();
     l.useEffect(() => {
       es()
     }, [es]), l.useEffect(() => {
@@ -125,7 +125,7 @@ let M = e => {
     let {
       setFullScreenOpen: eu,
       fullScreenOpen: ed
-    } = (0, k.S)();
+    } = (0, L.S)();
     l.useEffect(() => {
       if (t) return eu(true), () => eu(false);
       if (!t) {
@@ -155,7 +155,7 @@ let M = e => {
               }),
               ref: t ? ea : ec,
               tabIndex: false,
-              children: [(0, r.jsx)(N.I, {
+              children: [(0, r.jsx)(A.I, {
                 isFullScreen: t,
                 isLayer: eo,
                 onClose: V,

@@ -2,7 +2,7 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,99 +22,101 @@ var Chunk951288 = require("./951288.js"),
   Chunk38900 = require("./38900.jsx"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
+  Chunk786040 = require("./786040.jsx"),
   Chunk401975 = require("./401975.jsx"),
   Chunk81136 = require("./81136.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function j(e) {
+function k(e) {
   var t;
   let {
     isFetchingCategories: n,
     isFullScreen: i,
-    scrollerRef: j,
+    scrollerRef: k,
     tab: T
-  } = e, L = (0, d.sp)(), k = null != (t = null == L ? true : L.sessionId) ? t : "", {
-    noCache: I,
-    includeUnpublished: B
-  } = (0, S.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = e, L = (0, d.sp)(), I = null != (t = null == L ? true : L.sessionId) ? t : "", {
+    noCache: B,
+    includeUnpublished: A
+  } = (0, O.Z)(), N = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: P,
-    currentPage: A,
-    totalCount: R,
-    isFetchingResults: Z
-  } = (0, h.a)(), w = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(P)), H = l.useCallback(() => {
+    currentPage: R,
+    totalCount: Z,
+    isFetchingResults: w
+  } = (0, h.a)(), H = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(P)), F = l.useCallback(() => {
     var e;
-    null == j || null == (e = j.current) || e.scrollToTop({
+    null == k || null == (e = k.current) || e.scrollToTop({
       animate: true
     })
-  }, [j]), F = null == P ? true : P.join("");
+  }, [k]), D = null == P ? true : P.join("");
   l.useEffect(() => {
-    H()
-  }, [F, H]);
-  let D = (0, p.a)(),
-    M = l.useMemo(() => D(w), [D, w]);
+    F()
+  }, [D, F]);
+  let M = (0, p.a)(),
+    W = l.useMemo(() => M(H), [M, H]);
   l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: k,
+      sessionId: I,
       checkpoint: _.a.SHOP_RENDERED,
       tab: T,
       isFullScreen: i,
-      unpublishedCategoriesShown: B,
-      cacheDisabled: I
+      unpublishedCategoriesShown: A,
+      cacheDisabled: B
     })
-  }, [k, i, B, I, n, T]);
-  let W = l.useRef(null),
+  }, [I, i, A, B, n, T]);
+  let U = l.useRef(null),
     {
-      setQueryPageSize: U,
-      setQueryPageOffset: V,
-      queryPageSize: z
+      setQueryPageSize: V,
+      setQueryPageOffset: z,
+      queryPageSize: G
     } = (0, C.S)(),
-    [G, K] = l.useState(false),
-    Y = n || Z || null == N;
+    [K, Y] = l.useState(false),
+    q = n || w || null == N;
   l.useEffect(() => {
-    if (Y) return void K(false);
-    M.length > 0 && K(true)
-  }, [Y, M.length]);
-  let q = z > 0 && !Y && 0 === M.length;
+    if (q) return void Y(false);
+    W.length > 0 && Y(true)
+  }, [q, W.length]);
+  let Q = G > 0 && !q && 0 === W.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null != W.current && U(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
+      null != U.current && V(Math.floor(5 * getComputedStyle(U.current).gridTemplateColumns.split(/\s+/).length))
     });
-    if (null != W.current) return e.observe(W.current), () => e.disconnect()
-  }, [U]);
-  let Q = l.useCallback(e => {
-      u.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    if (null != U.current) return e.observe(U.current), () => e.disconnect()
+  }, [V]);
+  let J = l.useCallback(e => {
+      u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == L ? true : L.sessionId,
         page_section: null == L ? true : L.pageSection,
         page_category: null == L ? true : L.pageCategory,
         page_index: e,
-        page_size: z,
+        page_size: G,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
-      }), V((e - 1) * z)
-    }, [L, z, V]),
-    J = f.Z.useConfig({
+      }), z((e - 1) * G)
+    }, [L, G, z]),
+    X = f.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s()({
-        [y.productsEmpty]: q
+        [j.productsEmpty]: Q
       }),
-      children: [q && (0, r.jsx)(O.Z, {}), (0, r.jsxs)("div", {
-        className: s()(y.products, {
-          [y.loadIn]: G
+      children: [Q && (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
+        className: s()(j.products, {
+          [j.loadIn]: K
         }),
-        ref: W,
-        children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(v.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && M.map((e, t) => {
+        ref: U,
+        children: [q && [...Array(G)].map((e, t) => X ? (0, r.jsx)(S.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !q && W.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
               tilePosition: t
             },
-            children: J ? (0, r.jsx)(E.Z, {
-              skuId: e.skuId
+            children: X ? (0, r.jsx)(E.Z, {
+              skuId: e.skuId,
+              onClickAnalytics: (0, v.wO)(e, T, L)
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
               user: N,
@@ -124,14 +126,14 @@ function j(e) {
           }, e.skuId)
         })]
       })]
-    }), R > z && (0, r.jsx)("div", {
-      className: y.paginationContainer,
+    }), Z > G && (0, r.jsx)("div", {
+      className: j.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
-          currentPage: A,
-          totalCount: R,
-          pageSize: z,
-          onPageChange: Q,
+          currentPage: R,
+          totalCount: Z,
+          pageSize: G,
+          onPageChange: J,
           disablePaginationGap: true
         })
       })

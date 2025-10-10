@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,6 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk38900 = require("./38900.jsx"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
+  Chunk786040 = require("./786040.jsx"),
   Chunk81136 = require("./81136.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
@@ -36,99 +37,100 @@ var Chunk951288 = require("./951288.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function A(e) {
+function R(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: A,
-    scrollerRef: R,
-    tab: Z
-  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: F,
-    includeUnpublished: D
-  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
-    switch (Z) {
-      case S.AW.AVATAR_DECORATIONS:
-        return [x.intl.string(x.t.dRZYND), G ? k.Z : L.Z, i.Z.AVATAR_DECORATION];
-      case S.AW.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjt7"]), G ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
-      case S.AW.NAMEPLATES:
-        return [x.intl.string(x.t.V68Fq6), G ? B.Z : I.Z, i.Z.NAMEPLATE];
-      case S.AW.BUNDLES:
-        return [x.intl.string(x.t.FYFppq), G ? T.Z : j.Z, i.Z.BUNDLE]
+    isFullScreen: R,
+    scrollerRef: Z,
+    tab: w
+  } = e, H = (0, g.sp)(), F = null != (t = null == H ? true : H.sessionId) ? t : "", {
+    noCache: D,
+    includeUnpublished: M
+  } = (0, S.Z)(), W = (0, s.e7)([u.default], () => u.default.getCurrentUser()), U = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [V, z] = l.useState(1), G = (0, c.Fg)(), K = (0, o.ap)(G), [Y, q, Q] = l.useMemo(() => {
+    switch (w) {
+      case O.AW.AVATAR_DECORATIONS:
+        return [y.intl.string(y.t.dRZYND), K ? I.Z : L.Z, i.Z.AVATAR_DECORATION];
+      case O.AW.PROFILE_EFFECTS:
+        return [y.intl.string(y.t["1cNjt7"]), K ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
+      case O.AW.NAMEPLATES:
+        return [y.intl.string(y.t.V68Fq6), K ? A.Z : B.Z, i.Z.NAMEPLATE];
+      case O.AW.BUNDLES:
+        return [y.intl.string(y.t.FYFppq), K ? T.Z : k.Z, i.Z.BUNDLE]
     }
-  }, [Z, G]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
+  }, [w, K]), J = (0, C.a)(), X = l.useMemo(() => J(U.filter(e => {
     var t;
-    return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [W, q, Q]), X = (0, h.l)(J);
+    return e.type === Q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Q)) === true
+  })), [U, Q, J]), $ = (0, h.l)(X);
   l.useEffect(() => {
     (0, _.n)({
-      sessionId: H,
+      sessionId: F,
       checkpoint: _.a.SHOP_MOUNTED,
-      tab: Z,
-      isFullScreen: A,
-      unpublishedCategoriesShown: D,
-      cacheDisabled: F
+      tab: w,
+      isFullScreen: R,
+      unpublishedCategoriesShown: M,
+      cacheDisabled: D
     })
   }, []), l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: H,
+      sessionId: F,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: Z,
-      isFullScreen: A,
-      unpublishedCategoriesShown: D,
-      cacheDisabled: F
+      tab: w,
+      isFullScreen: R,
+      unpublishedCategoriesShown: M,
+      cacheDisabled: D
     })
-  }, [H, A, D, F, n, Z]);
-  let $ = p.Z.useConfig({
+  }, [F, R, M, D, n, w]);
+  let ee = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
-  return n || null == M ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return n || null == W ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
-        backgroundImage: "url(".concat(Y, ")")
+        backgroundImage: "url(".concat(q, ")")
       },
-      className: y.bannerContainer,
+      className: j.bannerContainer,
       children: (0, r.jsx)(a.Heading, {
         variant: "heading-xxl/extrabold",
-        children: K
+        children: Y
       })
     }), (0, r.jsx)("div", {
-      className: y.products,
-      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => {
+      className: j.products,
+      children: $.slice(40 * (V - 1), 40 * V).map((e, t) => {
         let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: $ ? (0, r.jsx)(E.Z, {
-            skuId: e.skuId
+          children: ee ? (0, r.jsx)(E.Z, {
+            skuId: e.skuId,
+            onClickAnalytics: (0, v.wO)(e, w, H)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
-            user: M,
+            user: W,
             category: n,
-            tab: Z
+            tab: w
           }, e.skuId)
         }, e.skuId)
       })
-    }), X.length > 40 && (0, r.jsx)("div", {
-      className: y.paginationContainer,
+    }), $.length > 40 && (0, r.jsx)("div", {
+      className: j.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
-          currentPage: U,
-          totalCount: X.length,
+          currentPage: V,
+          totalCount: $.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == w ? true : w.sessionId,
-              page_section: null == w ? true : w.pageSection,
-              page_category: null == w ? true : w.pageCategory,
+            d.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == H ? true : H.sessionId,
+              page_section: null == H ? true : H.pageSection,
+              page_category: null == H ? true : H.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(Z, " page ").concat(e),
-              page_type: Z
-            }), V(e), null == R || null == (t = R.current) || t.scrollToTop({
+              cta_name: "".concat(w, " page ").concat(e),
+              page_type: w
+            }), z(e), null == Z || null == (t = Z.current) || t.scrollToTop({
               animate: true
             })
           },

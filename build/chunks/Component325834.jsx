@@ -76,11 +76,11 @@ let h = e => {
       onLeave: x
     } = e, {
       isPurchased: E
-    } = (0, f.L)(n), _ = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
-      onFocus: P
-    } = _, C = j(_, ["onFocus"]), A = l.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, p.$)(t, i), P()
-    }, [P, t, i]), S = (0, b.SQ)(n);
+    } = (0, f.L)(n), P = (0, o.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
+      onFocus: _
+    } = P, C = j(P, ["onFocus"]), S = l.useCallback(e => {
+      e.preventDefault(), e.stopPropagation(), (0, p.$)(t, i), _()
+    }, [_, t, i]), A = (0, b.SQ)(n);
     return (0, r.jsx)(c.u, {
       asContainer: true,
       text: y.intl.string(y.t["6cfuDg"]),
@@ -100,9 +100,9 @@ let h = e => {
         onBlur: () => {
           x()
         },
-        onClick: A,
+        onClick: S,
         onKeyDown: e => {
-          e.key === s.R8.ENTER && A(e)
+          e.key === s.R8.ENTER && S(e)
         },
         className: m.thumbnailVariant,
         children: (0, r.jsxs)("div", {
@@ -112,8 +112,8 @@ let h = e => {
           style: {
             zIndex: d - i
           },
-          children: [null != S && "" !== S && (0, r.jsx)("img", {
-            src: S,
+          children: [null != A && "" !== A && (0, r.jsx)("img", {
+            src: A,
             alt: n.variantLabel,
             className: m.thumbnailImg,
             onError: e => {

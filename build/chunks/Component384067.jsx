@@ -40,10 +40,10 @@ let _ = e => {
       handleCardVisibilityChange: j
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: T
+      bannerURL: k
     } = (0, g.UI)(_);
-  if (null == T) return null;
-  let L = b === f.AW.ORBS;
+  if (null == k) return null;
+  let T = b === f.AW.ORBS;
   return (0, r.jsx)(o.$, {
     innerRef: v,
     onChange: j,
@@ -51,18 +51,18 @@ let _ = e => {
     children: (0, r.jsxs)("div", {
       ref: v,
       className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: L
+        [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
         className: s()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: L
+          [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: S,
-          src: T,
+          src: k,
           alt: _.title,
           className: s()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: L
+            [h.wideBannerArtOrbs]: T
           }),
           style: {
             height: null != O ? "".concat(O, "px") : "auto"
@@ -79,16 +79,16 @@ let _ = e => {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: L ? h.wideBannerOrbsHeading : true,
-            variant: L ? "heading-xl/bold" : "heading-lg/semibold",
+            className: T ? h.wideBannerOrbsHeading : true,
+            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
           }), (0, r.jsx)(a.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: L ? "text-md/medium" : "text-sm/medium",
-            children: L ? C.intl.format(C.t.SFFP7O, {
+            variant: T ? "text-md/medium" : "text-sm/medium",
+            children: T ? C.intl.format(C.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]

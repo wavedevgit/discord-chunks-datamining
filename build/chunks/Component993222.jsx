@@ -37,11 +37,11 @@ let b = e => {
       isPremiumUser: x,
       prioritizedCurrency: b,
       hasDiscountOffer: null != y
-    }), T = (0, d.Yq)(t.skuId), L = (null == S ? true : S.skuId) === h.bu && (0, d.WW)(t.skuId);
+    }), k = (0, d.Yq)(t.skuId), T = (null == S ? true : S.skuId) === h.bu && (0, d.WW)(t.skuId);
     if (n === f.Zh.NONE) return null;
-    let k = null;
-    return (n === f.Zh.NEW ? k = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? k = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (k = _.intl.string(_.t.S6kE9v)), null == k && (v || E || !T ? j ? k = _.intl.string(_.t["0TmQRE"]) : L && (k = _.intl.string(_.t.S6kE9v)) : k = _.intl.string(_.t.y2b7CA)), null == k) ? null : (0, r.jsx)(o.IGR, {
-      text: k,
+    let L = null;
+    return (n === f.Zh.NEW ? L = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? L = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (L = _.intl.string(_.t.S6kE9v)), null == L && (v || E || !k ? j ? L = _.intl.string(_.t["0TmQRE"]) : T && (L = _.intl.string(_.t.S6kE9v)) : L = _.intl.string(_.t.y2b7CA)), null == L) ? null : (0, r.jsx)(o.IGR, {
+      text: L,
       disableColor: true,
       className: i()(l, m.productCardBadge)
     })

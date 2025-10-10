@@ -4,7 +4,7 @@ require.d(exports, {
   A3: () => I,
   f4: () => N,
   f9: () => L,
-  gY: () => S
+  gY: () => A
 });
 var Chunk951288 = require("./951288.js"),
   Chunk74655 = require("./74655.jsx"),
@@ -57,7 +57,7 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = e => {
+let P = e => {
     let {
       orbAmount: t
     } = e;
@@ -70,7 +70,7 @@ let _ = e => {
       }), null === t ? "--" : t]
     })
   },
-  P = e => {
+  _ = e => {
     var {
       orbBalance: t,
       orbPriceAmount: n,
@@ -133,12 +133,12 @@ let _ = e => {
       })
     }) : (0, r.jsx)(y.E, {
       sku: i,
-      value: (0, r.jsx)(_, {
+      value: (0, r.jsx)(P, {
         orbAmount: t
       })
     })
   },
-  A = e => {
+  S = e => {
     let {
       orbBalance: t
     } = e;
@@ -153,14 +153,14 @@ let _ = e => {
         }), (0, r.jsx)(a.Text, {
           className: v.displayFlex,
           variant: "text-md/medium",
-          children: (0, r.jsx)(_, {
+          children: (0, r.jsx)(P, {
             orbAmount: t
           })
         })]
       })
     })
   },
-  S = e => {
+  A = e => {
     let {
       error: t
     } = e;
@@ -196,7 +196,7 @@ let _ = e => {
           skuId: t,
           orbPriceAmount: n
         })
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(S, {
         orbBalance: l
       }), (0, r.jsx)(s.Z, {
         forceShow: true,
@@ -219,7 +219,7 @@ let _ = e => {
     return (0, r.jsxs)(a.mzw, {
       align: d.Z.Align.CENTER,
       "data-migration-pending": true,
-      children: [(0, r.jsx)(P, {
+      children: [(0, r.jsx)(_, {
         orbBalance: n,
         orbPriceAmount: t,
         loading: l,

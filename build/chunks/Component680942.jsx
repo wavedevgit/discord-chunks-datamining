@@ -29,14 +29,14 @@ let h = e => {
     onSuccess: x,
     tooltipDelay: E
   } = e, {
-    analyticsLocations: _
-  } = (0, c.ZP)(), P = l.useRef(null), C = (0, p.sp)(), A = (0, y.Z)(), S = (0, b.t)("collectibles-shop-gift-button");
-  return (0, f.x6)(t) && !S ? null : (0, r.jsx)(o.u, {
+    analyticsLocations: P
+  } = (0, c.ZP)(), _ = l.useRef(null), C = (0, p.sp)(), S = (0, y.Z)(), A = (0, b.t)("collectibles-shop-gift-button");
+  return (0, f.x6)(t) && !A ? null : (0, r.jsx)(o.u, {
     text: j.intl.string(j.t["JCFN//"]),
     delay: E,
     children: (0, r.jsx)(s.hU, {
       "aria-label": j.intl.string(j.t["JCFN//"]),
-      buttonRef: P,
+      buttonRef: _,
       variant: n ? "primary" : "secondary",
       icon: s.OgN,
       size: "md",
@@ -49,7 +49,7 @@ let h = e => {
           tile_type: i.Z[t.type],
           tile_position: String(null == C ? true : C.tilePosition),
           cta_name: "gift button",
-          page_type: A || "home"
+          page_type: S || "home"
         }), (0, u.Z)({
           skuId: (0, m.S)({
             product: t,
@@ -57,7 +57,7 @@ let h = e => {
           }),
           isGift: true,
           giftingOrigin: g.Wt.SHOP_PAGE,
-          analyticsLocations: _,
+          analyticsLocations: P,
           returnRef: v,
           variantsReturnStyle: a.v.VARIANTS_GROUP,
           onClose: null != x ? e => {

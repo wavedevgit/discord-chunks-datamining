@@ -33,29 +33,29 @@ function b(e) {
   }, [t]), S = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[s.m.POPULAR]) ? e : []
-  }, [t]), O = v.length > 0 && E, [x, y] = r.useState(O ? s.m.RECOMMENDED : s.m.POPULAR), j = (0, C.Z)(), T = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), L = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), k = (0, g.a)(), I = (0, f.s)([h.cv]), [B, N] = r.useState([]), P = r.useCallback(() => {
-    y(s.m.RANDOM), N(i().shuffle(T))
-  }, [T]);
+  }, [t]), O = v.length > 0 && E, [x, y] = r.useState(O ? s.m.RECOMMENDED : s.m.POPULAR), j = (0, C.Z)(), k = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), T = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), L = (0, g.a)(), I = (0, f.s)([h.cv]), [B, A] = r.useState([]), N = r.useCallback(() => {
+    y(s.m.RANDOM), A(i().shuffle(k))
+  }, [k]);
   r.useEffect(() => {
-    N(i().shuffle(T))
-  }, [T]);
-  let A = r.useMemo(() => {
+    A(i().shuffle(k))
+  }, [k]);
+  let P = r.useMemo(() => {
     let e = [];
-    if (x === s.m.RECENT) e = T;
-    else if (x === s.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...T], n, b);
+    if (x === s.m.RECENT) e = k;
+    else if (x === s.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...k], n, b);
     else if (x === s.m.RECOMMENDED) {
       let t = j(v);
-      e = l ? (0, d.Qf)(t, L) : t
+      e = l ? (0, d.Qf)(t, T) : t
     } else if (x === s.m.POPULAR) {
       let t = j(S);
-      e = l ? (0, d.Qf)(t, L) : t
+      e = l ? (0, d.Qf)(t, T) : t
     } else x === s.m.RANDOM && (e = B);
-    return b ? I(k(e), n) : k(e)
-  }, [x, b, I, k, n, T, j, v, l, L, S, B]);
+    return b ? I(L(e), n) : L(e)
+  }, [x, b, I, L, n, k, j, v, l, T, S, B]);
   return {
     sortType: x,
     setSortType: y,
-    sortedItems: (0, p.l)(A),
+    sortedItems: (0, p.l)(P),
     sortOptions: r.useMemo(() => {
       let e = [{
         value: s.m.POPULAR,
@@ -73,6 +73,6 @@ function b(e) {
       }), e
     }, [O]),
     showRecommendationOption: O,
-    shuffleProducts: P
+    shuffleProducts: N
   }
 }

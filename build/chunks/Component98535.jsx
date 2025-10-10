@@ -36,23 +36,23 @@ function v(e) {
   O(v);
   let x = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     [y, j] = l.useState(true),
-    T = l.useCallback(async (e, t, r) => {
+    k = l.useCallback(async (e, t, r) => {
       u(e, t);
       let l = r && !n && !x,
         i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
       j(t), await a(i, l)
     }, [n, x, a, u]),
-    L = (0, g.FF)("CollectiblesContent"),
+    T = (0, g.FF)("CollectiblesContent"),
     {
-      searchError: k
+      searchError: L
     } = (0, f.a)();
-  return L && null != k ? (0, r.jsx)(m.Z, {}) : null != v ? (0, r.jsx)(C.Z, {
+  return T && null != L ? (0, r.jsx)(m.Z, {}) : null != v ? (0, r.jsx)(C.Z, {
     onRetry: h,
     errorMessage: v,
     errorOrigin: C.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     isFullScreen: n,
-    handleTransition: T,
+    handleTransition: k,
     tab: t,
     transitionState: c
   }) : (0, r.jsx)(p.Z, {
