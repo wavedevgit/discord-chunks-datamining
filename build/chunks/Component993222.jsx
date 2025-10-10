@@ -2,7 +2,7 @@
 /** chunk id: 993222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,7 +13,6 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk597688 = require("./597688.js"),
-  Chunk994587 = require("./994587.jsx"),
   Chunk884697 = require("./884697.js"),
   Chunk724994 = require("./724994.js"),
   Chunk786040 = require("./786040.jsx"),
@@ -22,39 +21,42 @@ var Chunk120356 = require("./120356.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk944525 = require("./944525.js");
-let E = e => {
+let b = e => {
     let {
       product: t,
       badgeOverride: n,
-      className: l
-    } = e, E = (0, d.Nd)(), v = null == E ? true : E.tab, {
-      isPurchased: S,
-      isPartiallyOwnedBundle: O
-    } = (0, f.L)(t), x = (0, s.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (0, s.e7)([a.default], () => a.default.getCurrentUser()), T = c.ZP.canUseCollectibles(y), j = (0, C.Iw)(t), {
-      isOrbExclusive: L
-    } = (0, h.Ip)({
+      className: l,
+      prioritizedCurrency: b
+    } = e, {
+      isPurchased: E,
+      isPartiallyOwnedBundle: S
+    } = (0, g.L)(t), v = (0, o.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (0, o.e7)([a.default], () => a.default.getCurrentUser()), x = c.ZP.canUseCollectibles(O), y = (0, p.Iw)(t), {
+      isOrbExclusive: T
+    } = (0, C.Ip)({
       product: t,
-      isPremiumUser: T,
-      tab: v,
-      hasDiscountOffer: null != j
-    }), k = (0, g.Yq)(t.skuId), I = (null == x ? true : x.skuId) === _.bu && (0, g.WW)(t.skuId);
-    if (n === p.Zh.NONE) return null;
-    let B = null;
-    return (n === p.Zh.NEW ? B = m.intl.string(m.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? B = m.intl.string(m.t["0TmQRE"]) : n === p.Zh.NEW_COLOR_VARIANT && (B = m.intl.string(m.t.S6kE9v)), null == B && (O || S || !k ? L ? B = m.intl.string(m.t["0TmQRE"]) : I && (B = m.intl.string(m.t.S6kE9v)) : B = m.intl.string(m.t.y2b7CA)), null == B) ? null : (0, r.jsx)(o.IGR, {
-      text: B,
+      isPremiumUser: x,
+      prioritizedCurrency: b,
+      hasDiscountOffer: null != y
+    }), j = (0, d.Yq)(t.skuId), L = (null == v ? true : v.skuId) === h.bu && (0, d.WW)(t.skuId);
+    if (n === f.Zh.NONE) return null;
+    let k = null;
+    return (n === f.Zh.NEW ? k = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? k = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (k = _.intl.string(_.t.S6kE9v)), null == k && (S || E || !j ? T ? k = _.intl.string(_.t["0TmQRE"]) : L && (k = _.intl.string(_.t.S6kE9v)) : k = _.intl.string(_.t.y2b7CA)), null == k) ? null : (0, r.jsx)(s.IGR, {
+      text: k,
       disableColor: true,
-      className: i()(l, b.productCardBadge)
+      className: i()(l, m.productCardBadge)
     })
   },
-  v = e => {
+  E = e => {
     let {
       skuId: t,
       badgeOverride: n,
-      className: l
-    } = e, i = (0, p.LJ)(t);
-    return null == i ? null : (0, r.jsx)(E, {
-      product: i,
+      className: l,
+      prioritizedCurrency: i
+    } = e, o = (0, f.LJ)(t);
+    return null == o ? null : (0, r.jsx)(b, {
+      product: o,
       badgeOverride: n,
-      className: l
+      className: l,
+      prioritizedCurrency: i
     })
   }

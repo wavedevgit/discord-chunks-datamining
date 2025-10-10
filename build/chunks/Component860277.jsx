@@ -20,8 +20,8 @@ function h(i) {
   let {
     slide: t
   } = i, {
-    sidekicks: r
-  } = (0, s.e7)([c.Z], () => c.Z.getCheckpointData()), h = (0, n.useMemo)(() => r.map(i => {
+    users: r
+  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), h = (0, n.useMemo)(() => r.map(i => {
     let {
       userId: t
     } = i;
@@ -34,7 +34,7 @@ function h(i) {
         color: "text-primary",
         children: m.intl.string(p.default["4xZpq6"])
       }), h.slice(1).map(i => (0, e.jsxs)("div", {
-        children: [(0, e.jsx)(l.Z, {
+        children: [(0, e.jsx)(s.Z, {
           user: i,
           size: u.EF.SIZE_120
         }), (0, e.jsx)(a.xvT, {
@@ -48,7 +48,7 @@ function h(i) {
         variant: "display-md",
         color: "text-primary",
         children: m.intl.string(p.default.d5HUsL)
-      }), (0, e.jsx)(l.Z, {
+      }), (0, e.jsx)(s.Z, {
         user: h[0],
         size: u.EF.SIZE_120
       }), (0, e.jsx)(a.xvT, {

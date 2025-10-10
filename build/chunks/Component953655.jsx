@@ -23,7 +23,7 @@ let f = e => {
     return (0, r.jsx)("div", {
       className: i()(g.col2, g.centeredSection),
       children: null == n ? true : n.subblocks.map((e, n) => {
-        if (e.type === s.O.CATEGORY) {
+        if (e.type === o.O.CATEGORY) {
           let i = null != e.unpublishedAt ? d.intl.string(d.t["h/uBCQ"]) : (e => {
             switch (l) {
               case c.pj.NO_BADGE:
@@ -61,8 +61,8 @@ let f = e => {
       handleTransition: t,
       categories: n
     } = e, l = (0, c.QH)("collectibles_featured_block");
-    if (null == n || n.length < 2) return o.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [s, f] = n, p = (null == s ? true : s.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
+    if (null == n || n.length < 2) return s.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    let [o, f] = n, p = (null == o ? true : o.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
       switch (l) {
         case c.pj.FIRST_BLOCK_ONLY:
         case c.pj.BOTH_BLOCKS:
@@ -70,7 +70,7 @@ let f = e => {
         default:
           returnfalse
       }
-    })() && (null == s ? true : s.storeListingId) != null && "" !== s.storeListingId ? d.intl.string(d.t["soka7+"]) : true, C = (null == f ? true : f.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
+    })() && (null == o ? true : o.storeListingId) != null && "" !== o.storeListingId ? d.intl.string(d.t["soka7+"]) : true, C = (null == f ? true : f.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
       switch (l) {
         case c.pj.RIGHT_BLOCK_ONLY:
         case c.pj.BOTH_BLOCKS:
@@ -84,12 +84,12 @@ let f = e => {
       children: (0, r.jsxs)(a.k0, {
         newValue: {
           categoryPosition: 1,
-          pageCategory: null != s ? s.name : null == f ? true : f.name,
+          pageCategory: null != o ? o.name : null == f ? true : f.name,
           pageSection: "featured_block",
-          tilePosition: +(null == s)
+          tilePosition: +(null == o)
         },
-        children: [null != s && (0, r.jsx)(u.q, {
-          category: s,
+        children: [null != o && (0, r.jsx)(u.q, {
+          category: o,
           badgeText: p,
           handleTransition: t
         }), null != f && (0, r.jsx)(u.q, {
@@ -105,7 +105,7 @@ let f = e => {
       isLoading: t,
       handleTransition: n,
       categories: l,
-      featuredBlockRecord: s
+      featuredBlockRecord: o
     } = e;
     return t ? (0, r.jsxs)("div", {
       className: i()(g.col2, g.centeredSection),
@@ -120,8 +120,8 @@ let f = e => {
           className: g.skeletonBody
         })
       })]
-    }) : null != s ? (0, r.jsx)(f, {
-      featuredBlockRecord: s,
+    }) : null != o ? (0, r.jsx)(f, {
+      featuredBlockRecord: o,
       handleTransition: n,
       isLoading: false
     }) : (0, r.jsx)(p, {

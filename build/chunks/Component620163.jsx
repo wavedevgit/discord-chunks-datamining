@@ -479,6 +479,16 @@ let eB = () => {
         searchableTitles: [eD.intl.string(eD.t["Hj/Bur"]), eD.intl.string(eD.t["N/oRIy"]), eD.intl.string(eD.t.QVdYsL), eD.intl.string(eD.t["aWD+tr"]), eD.intl.string(eD.t.K0OWPz)],
         parent: eN.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY
       },
+      [eN.s6.PARENTAL_CONTROLS_SEXUALLY_EXPLICIT_MEDIA_REDACTION]: {
+        section: eP.oAB.FAMILY_CENTER_PARENTAL_CONTROLS,
+        parent: eN.s6.PRIVACY_FAMILY_CENTER,
+        predicate: () => false
+      },
+      [eN.s6.PARENTAL_CONTROLS_GORE_MEDIA_REDACTION]: {
+        section: eP.oAB.FAMILY_CENTER_PARENTAL_CONTROLS,
+        parent: eN.s6.PRIVACY_FAMILY_CENTER,
+        predicate: () => false
+      },
       [eN.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2]: {
         section: eP.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eD.intl.string(eD.t.JzaP4u), eD.intl.string(eD.t.H9XOl5), eD.intl.string(eD.t.k4W40N)],

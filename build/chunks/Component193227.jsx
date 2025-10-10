@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -33,7 +33,7 @@ function T(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), s = (0, O.St)(t), o = g.Z.useConfig({
+  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), o = (0, O.St)(t), s = g.Z.useConfig({
     location: "Products"
   }).showCardsV2;
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -46,11 +46,11 @@ function T(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: y.cardsContainer,
-      children: s.map((e, t) => (0, r.jsx)(d.k0, {
+      children: o.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
-        children: o ? (0, r.jsx)(E.Z, {
+        children: s ? (0, r.jsx)(E.Z, {
           skuId: e.skuId
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
@@ -77,8 +77,8 @@ function L(e) {
   let {
     category: t,
     isFullScreen: n
-  } = e, [i, s] = l.useState(false), a = (0, o.O)(e => {
-    s(e)
+  } = e, [i, o] = l.useState(false), a = (0, s.O)(e => {
+    o(e)
   }, n ? .13 : .15);
   return (0, r.jsxs)("div", {
     className: y.categoryWrapper,
@@ -96,13 +96,13 @@ function k(e) {
   let {
     sortedCategories: n,
     setCategoryRef: i,
-    isFullScreen: o,
+    isFullScreen: s,
     currentPage: a,
     handlePageChange: u
-  } = e, g = (0, d.sp)(), p = (0, v.R)(), C = null != (t = null == g ? true : g.sessionId) ? t : "", {
+  } = e, g = (0, d.sp)(), p = (0, S.R)(), C = null != (t = null == g ? true : g.sessionId) ? t : "", {
     noCache: _,
     includeUnpublished: b
-  } = (0, S.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, v.Z)(), E = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
@@ -116,7 +116,7 @@ function k(e) {
       sessionId: C,
       checkpoint: h.a.SHOP_MOUNTED,
       tab: x.AW.CATALOG,
-      isFullScreen: o,
+      isFullScreen: s,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
@@ -125,14 +125,14 @@ function k(e) {
       sessionId: C,
       checkpoint: h.a.SHOP_RENDERED,
       tab: x.AW.CATALOG,
-      isFullScreen: o,
+      isFullScreen: s,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
-  }, [C, o, b, _, p, O.length]);
+  }, [C, s, b, _, p, O.length]);
   let T = (0, f.FF)("CollectiblesBrowse");
   return p ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: s()(y.categories, {
+    className: o()(y.categories, {
       [y.categoriesNoFilter]: !T
     }),
     children: [O.map((e, t) => (0, r.jsx)("div", {
@@ -143,7 +143,7 @@ function k(e) {
         },
         children: (0, r.jsx)(L, {
           category: e,
-          isFullScreen: o
+          isFullScreen: s
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {

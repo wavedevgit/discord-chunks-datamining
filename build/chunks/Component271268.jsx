@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
 function o() {
   let {
     voice: {
-      numMinutesInVoice: i,
-      numMinutesInVoicePercentile: t
+      totalVoiceMinutes: i,
+      totalVoiceMinutesPercentile: t
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {

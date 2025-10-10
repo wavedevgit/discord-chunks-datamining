@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -24,9 +24,9 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), S = l.useRef(null), [O, x] = l.useState();
+  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, S = l.useRef(null), v = l.useRef(null), [O, x] = l.useState();
   l.useEffect(() => {
-    let e = S.current;
+    let e = v.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
@@ -44,24 +44,24 @@ let _ = e => {
     } = (0, g.UI)(_);
   if (null == j) return null;
   let L = b === f.AW.ORBS;
-  return (0, r.jsx)(o.$, {
-    innerRef: v,
+  return (0, r.jsx)(s.$, {
+    innerRef: S,
     onChange: T,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: v,
-      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      ref: S,
+      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: L
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(h.wideBannerBackgroundImg, {
+        className: o()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: L
         }),
         children: (0, r.jsx)("img", {
-          ref: S,
+          ref: v,
           src: j,
           alt: _.title,
-          className: s()(h.wideBannerArt, {
+          className: o()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: L
           }),
           style: {

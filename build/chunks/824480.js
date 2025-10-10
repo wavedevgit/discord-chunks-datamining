@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
 function c() {
   let i = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getFetchState()),
     {
-      sidekicks: t
+      users: t
     } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
     r = (0, Chunk516373.D)();
   (0, Chunk647438.useEffect)(() => {

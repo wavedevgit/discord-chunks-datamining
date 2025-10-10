@@ -2,7 +2,7 @@
 /** chunk id: 719075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,7 +10,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
-  Chunk994587 = require("./994587.jsx"),
   Chunk884697 = require("./884697.js"),
   Chunk290175 = require("./290175.js"),
   Chunk724994 = require("./724994.js"),
@@ -21,53 +20,56 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk997033 = require("./997033.js");
-let E = e => {
+let b = e => {
     let {
-      product: t
-    } = e, n = (0, c.Nd)(), p = null == n ? true : n.tab, E = (0, i.e7)([o.default], () => o.default.getCurrentUser()), v = a.ZP.canUseCollectibles(E), {
-      isDisabled: S
-    } = (0, d.G)(t.skuId), {
-      isPurchased: O,
-      isPartiallyOwnedBundle: x
-    } = (0, g.L)(t), y = (0, u.G1)(t), T = (0, u.rN)(t), j = l.useMemo(() => (0, u.BH)(t, v), [t, v]), L = (0, C.Iw)(t), {
-      displayPrices: k,
-      hasSufficientOrbs: I
-    } = (0, h.Ip)({
       product: t,
-      isPremiumUser: v,
-      tab: p,
-      hasDiscountOffer: null != L
-    }), B = y && !v;
-    return S ? (0, r.jsx)(s.Text, {
+      prioritizedCurrency: n
+    } = e, f = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = a.ZP.canUseCollectibles(f), {
+      isDisabled: E
+    } = (0, u.G)(t.skuId), {
+      isPurchased: S,
+      isPartiallyOwnedBundle: v
+    } = (0, d.L)(t), O = (0, c.G1)(t), x = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), T = (0, p.Iw)(t), {
+      displayPrices: j,
+      hasSufficientOrbs: L
+    } = (0, C.Ip)({
+      product: t,
+      isPremiumUser: b,
+      prioritizedCurrency: n,
+      hasDiscountOffer: null != T
+    }), k = O && !b;
+    return E ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
-      children: m.intl.string(m.t.wu4gyc)
-    }) : x ? (0, r.jsx)(s.Text, {
+      children: _.intl.string(_.t.wu4gyc)
+    }) : v ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: m.intl.string(m.t.BEjTio)
-    }) : O && !B ? (0, r.jsx)(s.Text, {
+      children: _.intl.string(_.t.BEjTio)
+    }) : S && !k ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: m.intl.string(m.t["6cfuDg"])
-    }) : T ? (0, r.jsx)(s.Text, {
+      children: _.intl.string(_.t["6cfuDg"])
+    }) : x ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: m.intl.string(m.t.nBtvYG)
-    }) : y ? (0, r.jsx)(s.Text, {
+      children: _.intl.string(_.t.nBtvYG)
+    }) : O ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: m.intl.string(m.t.rt69oq)
-    }) : 0 === k.length ? null : (0, r.jsx)(f.F, {
-      price: k[0],
-      discount: j,
-      nitroIconType: v ? "default" : true,
+      children: _.intl.string(_.t.rt69oq)
+    }) : 0 === j.length ? null : (0, r.jsx)(g.F, {
+      price: j[0],
+      discount: y,
+      nitroIconType: b ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: L,
-      className: k[0].currency !== _.pK.DISCORD_ORB || I ? true : b.insufficientOrbs
+      discountOfferAmount: T,
+      className: j[0].currency !== h.pK.DISCORD_ORB || L ? true : m.insufficientOrbs
     })
   },
-  v = e => {
+  E = e => {
     let {
-      skuId: t
-    } = e, n = (0, p.LJ)(t);
-    return null == n ? null : (0, r.jsx)(E, {
-      product: n
+      skuId: t,
+      prioritizedCurrency: n
+    } = e, l = (0, f.LJ)(t);
+    return null == l ? null : (0, r.jsx)(b, {
+      product: l,
+      prioritizedCurrency: n
     })
   }

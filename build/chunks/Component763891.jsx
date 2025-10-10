@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,28 +36,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function A(e) {
+function P(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: A,
+    isFullScreen: P,
     scrollerRef: R,
     tab: Z
   } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: F,
     includeUnpublished: D
-  } = (0, v.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), G = (0, c.Fg)(), z = (0, o.ap)(G), [K, Y, q] = l.useMemo(() => {
+  } = (0, S.Z)(), M = (0, o.e7)([u.default], () => u.default.getCurrentUser()), W = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
-      case S.AW.AVATAR_DECORATIONS:
-        return [x.intl.string(x.t.dRZYND), z ? k.Z : L.Z, i.Z.AVATAR_DECORATION];
-      case S.AW.PROFILE_EFFECTS:
-        return [x.intl.string(x.t["1cNjt7"]), z ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
-      case S.AW.NAMEPLATES:
-        return [x.intl.string(x.t.V68Fq6), z ? B.Z : I.Z, i.Z.NAMEPLATE];
-      case S.AW.BUNDLES:
-        return [x.intl.string(x.t.FYFppq), z ? j.Z : T.Z, i.Z.BUNDLE]
+      case v.AW.AVATAR_DECORATIONS:
+        return [x.intl.string(x.t.dRZYND), G ? k.Z : L.Z, i.Z.AVATAR_DECORATION];
+      case v.AW.PROFILE_EFFECTS:
+        return [x.intl.string(x.t["1cNjt7"]), G ? A.Z : N.Z, i.Z.PROFILE_EFFECT];
+      case v.AW.NAMEPLATES:
+        return [x.intl.string(x.t.V68Fq6), G ? B.Z : I.Z, i.Z.NAMEPLATE];
+      case v.AW.BUNDLES:
+        return [x.intl.string(x.t.FYFppq), G ? j.Z : T.Z, i.Z.BUNDLE]
     }
-  }, [Z, z]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
+  }, [Z, G]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
     return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
   })), [W, q, Q]), X = (0, h.l)(J);
@@ -66,7 +66,7 @@ function A(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
-      isFullScreen: A,
+      isFullScreen: P,
       unpublishedCategoriesShown: D,
       cacheDisabled: F
     })
@@ -75,11 +75,11 @@ function A(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
-      isFullScreen: A,
+      isFullScreen: P,
       unpublishedCategoriesShown: D,
       cacheDisabled: F
     })
-  }, [H, A, D, F, n, Z]);
+  }, [H, P, D, F, n, Z]);
   let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;

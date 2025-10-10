@@ -2,7 +2,7 @@
 /** chunk id: 963278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,48 +16,51 @@ var Chunk120356 = require("./120356.js"),
   Chunk128922 = require("./128922.js"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
+  Chunk786040 = require("./786040.jsx"),
+  Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let h = e => {
+let m = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, h = (0, s.e7)([a.default], () => a.default.getCurrentUser()), _ = d.Z.useConfig({
+  } = e, m = (0, o.e7)([a.default], () => a.default.getCurrentUser()), b = d.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2;
-  return null == h ? null : (0, r.jsxs)("div", {
-    className: i()(C.shelfBlockContainer, C.centeredSection),
+  return null == m ? null : (0, r.jsxs)("div", {
+    className: i()(_.shelfBlockContainer, _.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: C.blockHeader,
-      children: [(0, r.jsx)(o.Heading, {
+      className: _.blockHeader,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(s.Button, {
         variant: "secondary",
-        text: p.intl.formatToPlainString(p.t.bc9RBA, {
+        text: h.intl.formatToPlainString(h.t.bc9RBA, {
           category_name: t.name
         }),
         onClick: () => n("shelf block see all", t.categorySkuId)
       })]
     }), (0, r.jsx)("div", {
-      className: C.feed,
+      className: _.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
           let i = u.Z.getCategoryForProduct(e),
-            s = u.Z.getProduct(e);
-          return null == i || null == s ? null : (0, r.jsx)(c.k0, {
+            o = u.Z.getProduct(e);
+          return null == i || null == o ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: _ ? (0, r.jsx)(f.Z, {
-              skuId: e
+            children: b ? (0, r.jsx)(f.Z, {
+              skuId: e,
+              prioritizedCurrency: l === C.AW.ORBS ? p.tA.ORBS : true
             }, e) : (0, r.jsx)(g.Z, {
-              product: s,
+              product: o,
               category: i,
-              user: h,
+              user: m,
               tab: l
             }, e)
           }, e)

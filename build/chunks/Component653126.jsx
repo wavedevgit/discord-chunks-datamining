@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -23,12 +23,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk213301 = require("./213301.js");
-let S = Chunk647438.memo(function(e) {
+let v = Chunk647438.memo(function(e) {
     let {
       product: t,
       hideProductName: n,
       hideVariantSwitcher: i,
-      hidePrice: S,
+      hidePrice: v,
       hidePrimaryCTA: O,
       hideSecondaryCTA: x,
       badgeOverride: y,
@@ -39,64 +39,69 @@ let S = Chunk647438.memo(function(e) {
       onMouseLeave: I,
       onFocus: B,
       onBlur: N,
-      primaryCTAText: P,
-      secondaryCTAIcon: A,
+      primaryCTAText: A,
+      secondaryCTAIcon: P,
       productNameClassName: R,
       badgeClassName: Z,
-      cardClassName: w
-    } = e, H = (0, u.Nd)(), F = null == H ? true : H.tab, D = (0, b.zQ)(t), M = l.useRef(null), {
-      handleCardVisibilityChange: W
-    } = (0, d.E)(t.skuId, F === E.AW.CATALOG ? "full" : F), U = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [V, G] = (0, _.SS)(t), z = null != G && !i, K = !O || !x, Y = !S || z, q = K || z;
-    return (0, r.jsx)(o.$, {
-      innerRef: M,
-      onChange: W,
+      cardClassName: w,
+      prioritizedCurrency: H
+    } = e, F = (0, u.Nd)(), D = null == F ? true : F.tab, M = (0, b.zQ)(t), W = l.useRef(null), {
+      handleCardVisibilityChange: U
+    } = (0, d.E)(t.skuId, D === E.AW.CATALOG ? "full" : D), V = (0, _.J7)(t, c.Z.COLLECTIBLES_SHOP_CARD), [z, G] = (0, _.SS)(t), K = null != G && !i, Y = !O || !x, q = !v || K, Q = Y || K;
+    return (0, r.jsx)(s.$, {
+      innerRef: W,
+      onChange: U,
       threshold: 0,
       children: (0, r.jsx)("div", {
-        className: v.productCardHoverContainer,
+        className: S.productCardHoverContainer,
         children: (0, r.jsx)(a.kL8, {
-          ref: M,
-          onClick: null != T ? T : U,
-          "aria-label": D,
-          className: s()(w, v.productCardContainer),
+          ref: W,
+          onClick: null != T ? T : V,
+          "aria-label": M,
+          className: o()(w, S.productCardContainer),
           onFocus: () => null == B ? true : B(t.skuId),
           onBlur: () => null == N ? true : N(t.skuId),
           onMouseEnter: () => null == k ? true : k(t.skuId),
           onMouseLeave: () => null == I ? true : I(t.skuId),
           children: (0, r.jsxs)("div", {
-            className: v.productCardContentContainer,
+            className: S.productCardContentContainer,
             children: [(0, r.jsx)(g.Z, {
               skuId: t.skuId,
               badgeOverride: y,
-              className: Z
+              className: Z,
+              prioritizedCurrency: H
             }), (0, r.jsxs)("div", {
-              className: v.footerContainer,
+              className: S.footerContainer,
               children: [!n && (0, r.jsx)(f.Z, {
                 skuId: t.skuId,
                 className: R
-              }), Y && (0, r.jsxs)("div", {
-                className: s()(v.footerInfoContainer, {
-                  [v.footerHideOnHover]: q
-                }),
-                children: [!S && (0, r.jsx)(p.Z, {
-                  skuId: t.skuId
-                }), z && G]
               }), q && (0, r.jsxs)("div", {
-                className: s()(v.footerInteractibleContainer, v.footerShowOnHover),
-                children: [z && G, K && (0, r.jsxs)(a.ButtonGroup, {
+                className: o()(S.footerInfoContainer, {
+                  [S.footerHideOnHover]: Q
+                }),
+                children: [!v && (0, r.jsx)(p.Z, {
+                  skuId: t.skuId,
+                  prioritizedCurrency: H
+                }), K && G]
+              }), Q && (0, r.jsxs)("div", {
+                className: o()(S.footerInteractibleContainer, S.footerShowOnHover),
+                children: [K && G, Y && (0, r.jsxs)(a.ButtonGroup, {
                   wrap: false,
                   fullWidth: true,
                   children: [!O && (0, r.jsx)(C.Z, {
                     skuId: t.skuId,
-                    cardRef: M,
-                    selectedVariantIndex: V,
+                    cardRef: W,
+                    selectedVariantIndex: z,
                     onClick: j,
-                    text: P
+                    text: A,
+                    prioritizedCurrency: H
                   }), !x && (0, r.jsx)(h.Z, {
                     skuId: t.skuId,
-                    cardRef: M,
-                    selectedVariantIndex: V,
+                    cardRef: W,
+                    selectedVariantIndex: z,
                     onClick: L,
-                    icon: A
+                    icon: P,
+                    prioritizedCurrency: H
                   })]
                 })]
               })]
@@ -126,7 +131,7 @@ let S = Chunk647438.memo(function(e) {
       }
       return l
     }(e, ["skuId"]), l = (0, _.LJ)(t);
-    return null == l ? null : (0, r.jsx)(S, function(e) {
+    return null == l ? null : (0, r.jsx)(v, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

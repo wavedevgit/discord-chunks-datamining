@@ -22,9 +22,9 @@ function p() {
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), r = (0, Chunk647438.useMemo)(() => module.map(i => {
     let {
-      guildId: t
+      guild: t
     } = i;
-    return d.Z.getGuild(t)
+    return d.Z.getGuild(t.id)
   }).filter(i => null != i), [module]);
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
@@ -35,9 +35,9 @@ function p() {
         guildCount: require.length
       })
     }), require.map((t, r) => (0, e.jsxs)("div", {
-      children: [(0, e.jsx)(l.Z, {
+      children: [(0, e.jsx)(s.Z, {
         guild: t,
-        size: l.Z.Sizes.XLARGE
+        size: s.Z.Sizes.XLARGE
       }), (0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
@@ -54,7 +54,7 @@ function p() {
         }), (0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: i[0].numMinutesListening + i[0].numMinutesSpeaking
+          children: i[0].numVoiceMinutes
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",

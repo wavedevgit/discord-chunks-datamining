@@ -59,4 +59,16 @@ let i = (0, Chunk427164.le)({
         enabled: true
       }
     }
-  })
+  });
+(0, Chunk427164.le)({
+  name: "2025-10-mobile-quest-home-v2-entrypoint-relocation",
+  kind: "user",
+  defaultConfig: {
+    enabled: false
+  },
+  variations: {
+    1: {
+      enabled: true
+    }
+  }
+})
