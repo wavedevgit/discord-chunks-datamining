@@ -219,7 +219,7 @@ function ep() {
 function eh(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     r = W.get(e);
-  (null === n || r === n) && r !== t && (null == t ? W.delete(e) : W.set(e, t), (null == t || "CRASHED" === t) && (f.Z.setFocusedPID(null, null), ep()), ee.delete(e), eo.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), W))
+  (null === n || r === n) && r !== t && (null == t ? W.delete(e) : W.set(e, t), (null == t || "CRASHED" === t) && (f.Z.setFocusedPID(null), ep()), ee.delete(e), eo.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), W))
 }
 async function em(e) {
   try {
@@ -356,7 +356,7 @@ let eI = e_("setOverlayEnabled", async e => {
 });
 
 function eT(e) {
-  f.Z.setFocusedPID(0 === e ? null : e, null)
+  f.Z.setFocusedPID(0 === e ? null : e)
 }
 
 function eS(e, t, n) {
@@ -480,7 +480,7 @@ function eM(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "84f530efcaf7ba68801a81f6d32bbcd3bbd58ef5"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "63500cfc4750f3a7944d0abb1162296d968aaa1e"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ej(e) {
@@ -520,7 +520,7 @@ function eG() {
 }
 
 function eB() {
-  X = false, Chunk13245.Z.setFocusedPID(null, null), ey(true), eo.verbose("OverlayBridgeStore: handleConnectionClosed")
+  X = false, Chunk13245.Z.setFocusedPID(null), ey(true), eo.verbose("OverlayBridgeStore: handleConnectionClosed")
 }
 
 function eZ() {

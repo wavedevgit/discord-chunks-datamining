@@ -151,11 +151,11 @@ function et() {
 }
 
 function en() {
-  Chunk13245.Z.setFocusedPID(Chunk145597.DEV_PID, null)
+  Chunk13245.Z.setFocusedPID(Chunk145597.DEV_PID)
 }
 
 function ei() {
-  Chunk13245.Z.setFocusedPID(null, null)
+  Chunk13245.Z.setFocusedPID(null)
 }
 
 function er(e) {
@@ -213,7 +213,7 @@ function eo(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, w.getPID)()), n.addEventListener("keydown", er), n.addEventListener("keyup", er), Q && (n.document.hasFocus() && d.Z.setFocusedPID(w.DEV_PID, null), n.addEventListener("focus", en), n.addEventListener("blur", ei))
+    d.Z.overlayReady((0, w.getPID)()), n.addEventListener("keydown", er), n.addEventListener("keyup", er), Q && (n.document.hasFocus() && d.Z.setFocusedPID(w.DEV_PID), n.addEventListener("focus", en), n.addEventListener("blur", ei))
   }, () => {
     n.removeEventListener("keydown", er), n.removeEventListener("keyup", er), Q && (n.removeEventListener("focus", en), n.removeEventListener("blur", ei))
   });
