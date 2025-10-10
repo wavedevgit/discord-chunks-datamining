@@ -276,7 +276,7 @@ let H = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return eb && eZ ? c = ek : ee ? c = eB : eT && h.id !== I.default.getId() && (c = eU), (0, i.jsx)(s.yRy, {
+          return eb && eZ ? c = ek : ee ? c = eB : eT && h.id !== I.default.getId() ? c = eU : eb && (c = ek), (0, i.jsx)(s.yRy, {
             targetElementRef: eC,
             position: "right",
             renderPopout: c,
