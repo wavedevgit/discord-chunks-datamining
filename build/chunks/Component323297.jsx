@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, n) {
+function x(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,13 +47,13 @@ function p(e, n) {
   }), e
 }
 
-function x(e) {
+function p(e) {
   let {
     step: n,
     setFooterNode: t
   } = (0, c.JL)(), {
     title: a,
-    subtitle: x
+    subtitle: p
   } = function(e) {
     switch (e) {
       case d.EK.SELECT_GAME:
@@ -66,11 +66,11 @@ function x(e) {
         }
     }
   }(n);
-  return (0, r.jsxs)(i.IX, p(f({}, e), {
+  return (0, r.jsxs)(i.IX, x(f({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
       title: a,
-      subtitle: x
+      subtitle: p
     }), (0, r.jsx)(l.zJl, {
       className: m.modalContent,
       style: {
@@ -104,8 +104,8 @@ function v(e) {
   } = (0, a.ZP)();
   return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(c.BT, p(f({}, e), {
-      children: (0, r.jsx)(x, f({}, e))
+    children: (0, r.jsx)(c.BT, x(f({}, e), {
+      children: (0, r.jsx)(p, f({}, e))
     }))
   })
 }
