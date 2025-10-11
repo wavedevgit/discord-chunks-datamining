@@ -29,7 +29,7 @@ function p(e, t) {
   let n = function(e, t) {
     var n, o;
     if (u.get(t.id) === e.id) return d(e, t.id);
-    if (null == e.applicationId || !(0, a.yE)(e.flags, c.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === l.default.getId() || (0, a.yE)(null != (n = t.recipientFlags) ? n : 0, i.V.DISMISSED_IN_GAME_MESSAGE_NUX) || u.has(t.id)) return null;
+    if (null == e.applicationId || !(0, a.yE)(e.flags, c.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === l.default.getId() || null != e.activity || (0, a.yE)(null != (n = t.recipientFlags) ? n : 0, i.V.DISMISSED_IN_GAME_MESSAGE_NUX) || u.has(t.id)) return null;
     let s = d(e, t.id);
     u.set(t.id, e.id);
     let p = (0, a.mB)(null != (o = t.recipientFlags) ? o : 0, i.V.DISMISSED_IN_GAME_MESSAGE_NUX, true);
