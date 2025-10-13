@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   d = require.n(Chunk392711),
-  Chunk599273 = require("./599273.js"),
+  Chunk258536 = require("./258536.js"),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -395,7 +395,7 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
         emojis: Chunk471613.Z.getEmojis(exports.id),
         autoOpen: Chunk471613.Z.getEmojiFileInputAutoOpen()
       })),
-      x = (0, Chunk110924.Z)(Chunk599273),
+      x = (0, Chunk110924.Z)(Chunk258536),
       [j, v] = Chunk647438.useState(false),
       [y, P] = Chunk647438.useState(false),
       A = Chunk647438.useRef(null),
@@ -430,8 +430,8 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
     }, [Chunk668781, er]), Chunk647438.useEffect(() => {
       q(exports.id)
     }, [exports.id]), Chunk647438.useEffect(() => {
-      null != Chunk80932 && Chunk80932 < Chunk599273 && q(exports.id)
-    }, [Chunk599273, Chunk80932, exports.id]), Chunk647438.useEffect(() => {
+      null != Chunk80932 && Chunk80932 < Chunk258536 && q(exports.id)
+    }, [Chunk258536, Chunk80932, exports.id]), Chunk647438.useEffect(() => {
       if (null != Chunk28664 && null == $) return void en(Chunk28664)
     }, [Chunk28664, $]);
     let ei = Chunk647438.useMemo(() => J.isEmojiEditingExperimentEnabled && null != $ ? new Set(d().differenceBy(Chunk28664, $, "id").map(e => e.id)) : new Set, [J.isEmojiEditingExperimentEnabled, Chunk28664, $]),
