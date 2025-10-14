@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
-/** chunk id: 504876, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 480218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => r
+  _: () => r
 });
 let r = (0, require("./987170.js").Z)({
   kind: "user",
-  id: "2025-01_media_infra_holdout",
-  label: "Media Infra Holdout - H1 2025",
+  id: "2025-07_media_infra_holdout",
+  label: "Media Infra Holdout - H2 2025",
   defaultConfig: {
     isInHoldout: false
   },
