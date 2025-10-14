@@ -106,9 +106,9 @@ let v = e => {
       D = (0, u.bg)({
         location: "PremiumPerks"
       }),
-      L = c.wL.useConfig({
+      L = (0, c.cL)({
         location: "PremiumPerks"
-      }).enabled,
+      }),
       x = (0, h.ZM)({
         perksCards: N,
         variant: n,

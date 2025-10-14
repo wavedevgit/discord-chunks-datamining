@@ -26,9 +26,7 @@ function m(e) {
     username: g,
     user: E,
     guild: b
-  } = e, y = null != n ? n : m, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(_.PremiumTypes.TIER_2), {
-    enabled: I
-  } = o.wL.useConfig({
+  } = e, y = null != n ? n : m, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(_.PremiumTypes.TIER_2), I = (0, o.cL)({
     location: "NicknameSection"
   });
 

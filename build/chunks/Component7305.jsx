@@ -73,7 +73,7 @@ function G(e) {
     trialFooterMessageOverride: b,
     reviewWarningMessage: y,
     openInvoiceId: L,
-    onSubscriptionConfirmation: v,
+    onSubscriptionConfirmation: S,
     renderPurchaseConfirmation: w,
     postSuccessGuild: I,
     followupSKUInfo: O,
@@ -98,7 +98,7 @@ function G(e) {
     giftMessage: U,
     giftRecipient: D
   } = (0, h.wD)(), z = H && (0, f.pO)(D) && F === x.h8.PLAN_SELECT;
-  return (0, r.jsx)(S.Z, {
+  return (0, r.jsx)(v.Z, {
     isConfirmationStep: F === x.h8.CONFIRM && null == R && null == w,
     children: (0, r.jsx)(j.PaymentModal, {
       analyticsLocations: G,
@@ -118,7 +118,7 @@ function G(e) {
       reviewWarningMessage: y,
       planGroup: A.Y1,
       openInvoiceId: L,
-      onSubscriptionConfirmation: v,
+      onSubscriptionConfirmation: S,
       renderPurchaseConfirmation: w,
       postSuccessGuild: I,
       followupSKUInfo: O,
@@ -218,7 +218,7 @@ let H = function() {
       renderStep: () => (0, Chunk951288.jsx)(Chunk793541.Z, {})
     }, {
       key: Chunk409813.h8.REVIEW,
-      renderStep: e => (0, r.jsx)(v.l, N({}, e)),
+      renderStep: e => (0, r.jsx)(S.l, N({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, O.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHh)
@@ -254,10 +254,10 @@ function D(e) {
       loadId: b,
       paymentModalBanner: y,
       referralCode: L,
-      subscriptionTier: v
+      subscriptionTier: S
     } = e;
-  if (null != v && !Object.values(A.Si).includes(v)) throw Error("subscriptionTier must be a premium subscription");
-  let S = (0, c.y)({
+  if (null != S && !Object.values(A.Si).includes(S)) throw Error("subscriptionTier must be a premium subscription");
+  let v = (0, c.y)({
     location: "PremiumPaymentSelect"
   }) && null != f && j;
   return (0, r.jsx)(d.Gt, {
@@ -265,7 +265,7 @@ function D(e) {
     children: (0, r.jsx)(m.PaymentContextProvider, {
       loadId: b,
       activeSubscription: null != e.subscription ? e.subscription : t,
-      stepConfigs: H(S),
+      stepConfigs: H(v),
       skuIDs: [...A.YQ],
       isGift: j,
       defaultPlanId: null != n ? n : o,

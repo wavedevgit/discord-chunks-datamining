@@ -13,7 +13,8 @@ let r = (0, require("./818083.js").B)({
     enabled: false,
     suggestionDesign: "horizontal",
     highlightDesign: "mention",
-    onlyExactMatch: false
+    onlyExactMatch: false,
+    eagerRecentSenders: false
   },
   treatments: [{
     id: 1,
@@ -22,7 +23,8 @@ let r = (0, require("./818083.js").B)({
       enabled: true,
       suggestionDesign: "vertical",
       highlightDesign: "simple",
-      onlyExactMatch: false
+      onlyExactMatch: false,
+      eagerRecentSenders: false
     }
   }, {
     id: 2,
@@ -31,7 +33,8 @@ let r = (0, require("./818083.js").B)({
       enabled: true,
       suggestionDesign: "vertical",
       highlightDesign: "simple",
-      onlyExactMatch: true
+      onlyExactMatch: true,
+      eagerRecentSenders: false
     }
   }, {
     id: 3,
@@ -40,7 +43,8 @@ let r = (0, require("./818083.js").B)({
       enabled: true,
       suggestionDesign: "vertical",
       highlightDesign: "mention",
-      onlyExactMatch: false
+      onlyExactMatch: false,
+      eagerRecentSenders: false
     }
   }, {
     id: 4,
@@ -49,7 +53,18 @@ let r = (0, require("./818083.js").B)({
       enabled: true,
       suggestionDesign: "horizontal",
       highlightDesign: "simple",
-      onlyExactMatch: false
+      onlyExactMatch: false,
+      eagerRecentSenders: false
+    }
+  }, {
+    id: 5,
+    label: "Exact match + eager recent senders",
+    config: {
+      enabled: true,
+      suggestionDesign: "vertical",
+      highlightDesign: "simple",
+      onlyExactMatch: true,
+      eagerRecentSenders: true
     }
   }]
 });

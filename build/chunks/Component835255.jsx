@@ -44,12 +44,13 @@ function N(e) {
     isOwner: N,
     size: x = "lg",
     showIcons: O = false,
-    collectibleSource: j = L.lr.WISHLIST
-  } = e, M = s.useRef(null), F = s.useRef(null), {
-    isHoveringOrFocusing: D
-  } = (0, T.Z)(F), b = t.collectiblesItem, {
-    analyticsLocations: V
-  } = (0, I.ZP)(), z = (0, a.TH)(), B = b.type, [G] = (0, o.Wu)([k.Z], () => [k.Z.hasSentGift(t.skuId, i.id)], [t.skuId, i.id]), K = !G && D, Q = N ? U.t.FdGl5O : U.t.ilhtIS, Y = N ? true : d.OgN, J = (0, l.jsx)("div", {
+    collectibleSource: j = L.lr.WISHLIST,
+    giftingOrigin: M = A.Wt.USER_PROFILE_WISHLIST
+  } = e, F = s.useRef(null), D = s.useRef(null), {
+    isHoveringOrFocusing: b
+  } = (0, T.Z)(D), V = t.collectiblesItem, {
+    analyticsLocations: z
+  } = (0, I.ZP)(), B = (0, a.TH)(), G = V.type, [K] = (0, o.Wu)([k.Z], () => [k.Z.hasSentGift(t.skuId, i.id)], [t.skuId, i.id]), Q = !K && b, Y = N ? U.t.FdGl5O : U.t.ilhtIS, J = N ? true : d.OgN, X = (0, l.jsx)("div", {
     className: R.cardStateIconWrapper,
     children: (0, l.jsx)(d.sV5, {
       size: "custom",
@@ -58,23 +59,23 @@ function N(e) {
       height: 38,
       className: n()(R.cardStateIcon, R.checkmark)
     })
-  }), X = (0, l.jsx)("div", {
+  }), $ = (0, l.jsx)("div", {
     className: R.overlay,
     children: (0, l.jsx)(d.Button, {
       focusProps: {
-        ringTarget: F
+        ringTarget: D
       },
       variant: "primary",
       size: "sm",
-      text: U.intl.string(Q),
-      icon: Y,
+      text: U.intl.string(Y),
+      icon: J,
       onClick: e => {
-        e.stopPropagation(), q()
+        e.stopPropagation(), ee()
       },
       fullWidth: true
     })
-  }), $ = s.useCallback(() => {
-    if (z.pathname.startsWith(H.Z5c.COLLECTIBLES_SHOP)) {
+  }), q = s.useCallback(() => {
+    if (B.pathname.startsWith(H.Z5c.COLLECTIBLES_SHOP)) {
       let e = S.Z.getProduct(t.skuId),
         i = S.Z.getCategoryForProduct(t.skuId);
       if (null != e && null != i) {
@@ -84,7 +85,7 @@ function N(e) {
           shouldCheckoutWithOrbs: (0, E.oQ)({
             product: e
           }),
-          analyticsLocations: V,
+          analyticsLocations: z,
           analyticsSource: h.Z.USER_PROFILE_WISHLIST,
           returnRef: true,
           tab: true,
@@ -93,40 +94,40 @@ function N(e) {
         return
       }
     }(0, y.closeUserProfileModal)(), (0, Z.uL)("".concat(H.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(t.skuId))
-  }, [z.pathname, t.skuId, V]), q = () => {
+  }, [B.pathname, t.skuId, z]), ee = () => {
     if ((0, P.Er)({
         wishlistId: r,
         action: w.NW.WISHLIST_ITEM_CLICKED,
         skuId: t.skuId,
-        analyticsLocations: V
-      }), N) $();
+        analyticsLocations: z
+      }), N) q();
     else {
-      if (G) return;
+      if (K) return;
       (0, _.Z)({
         skuId: t.skuId,
         isGift: true,
-        giftingOrigin: A.Wt.USER_PROFILE_WISHLIST,
-        analyticsLocations: V,
+        giftingOrigin: M,
+        analyticsLocations: z,
         giftRecipient: i,
         variantsReturnStyle: c.v.VARIANTS_GROUP
       })
     }
   };
   return (0, l.jsxs)("div", {
-    ref: M,
+    ref: F,
     className: R.container,
     children: [(0, l.jsxs)("div", {
-      ref: F,
+      ref: D,
       className: n()(R.card, {
-        [R.giftSent]: G,
+        [R.giftSent]: K,
         [R.smallCard]: "sm" === x,
         [R.largeCard]: "lg" === x
       }),
-      onClick: q,
+      onClick: ee,
       children: [(0, l.jsx)(d.nn4, {
         children: (0, l.jsx)(d.H, {
           children: (() => {
-            switch (B) {
+            switch (G) {
               case u.Z.AVATAR_DECORATION:
                 return U.intl.formatToPlainString(U.t.IQQYeX, {
                   itemName: t.skuName
@@ -140,20 +141,20 @@ function N(e) {
                   itemName: t.skuName
                 });
               default:
-                (0, v.vE)(B)
+                (0, v.vE)(G)
             }
           })()
         })
       }), (0, l.jsx)("div", {
         className: R.cardPreview,
         children: (() => {
-          switch (b.type) {
+          switch (V.type) {
             case u.Z.PROFILE_EFFECT:
               return (0, l.jsx)("div", {
                 className: R.profileEffectPreview,
                 children: (0, l.jsx)(g.Z, {
-                  skuId: b.skuId,
-                  isHighlighted: K,
+                  skuId: V.skuId,
+                  isHighlighted: Q,
                   isPurchased: false,
                   removeSetHeight: true
                 })
@@ -162,9 +163,9 @@ function N(e) {
               return (0, l.jsx)("div", {
                 className: R.avatarDecorationPreview,
                 children: (0, l.jsx)(f.R, {
-                  item: b,
+                  item: V,
                   user: i,
-                  isHighlighted: K,
+                  isHighlighted: Q,
                   isPurchased: false,
                   avatarSize: d.EFr.SIZE_80
                 })
@@ -176,8 +177,8 @@ function N(e) {
                   className: R.nameplateTopLeft,
                   children: (0, l.jsx)(p.Z, {
                     user: i,
-                    nameplate: b,
-                    isHighlighted: K,
+                    nameplate: V,
+                    isHighlighted: Q,
                     showPlaceholderUser: true,
                     showStatus: true,
                     isPurchased: false,
@@ -189,8 +190,8 @@ function N(e) {
                   "aria-hidden": true,
                   children: (0, l.jsx)(p.Z, {
                     user: i,
-                    nameplate: b,
-                    isHighlighted: K,
+                    nameplate: V,
+                    isHighlighted: Q,
                     showPlaceholderUser: true,
                     showStatus: true,
                     isPurchased: false,
@@ -203,7 +204,7 @@ function N(e) {
               return null
           }
         })()
-      }), G && J, !G && X]
+      }), K && X, !K && $]
     }), O ? j === L.lr.WISHLIST ? (0, l.jsx)("div", {
       className: R.itemIcon,
       children: (0, l.jsx)(d.h_8, {

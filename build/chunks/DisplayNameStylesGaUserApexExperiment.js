@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   JH: () => s,
+  cL: () => c,
   fN: () => o,
   wL: () => l
 });
@@ -68,4 +69,15 @@ let o = (0, Chunk818083.B)({
         enabled: true
       }
     }
-  })
+  });
+
+function c(e) {
+  let {
+    location: t
+  } = e, n = s.useExperiment({
+    location: t
+  }).enabled;
+  return l.useConfig({
+    location: t
+  }).enabled && n
+}

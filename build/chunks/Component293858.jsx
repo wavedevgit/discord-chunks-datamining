@@ -29,8 +29,8 @@ function y(e) {
       planGroup: a,
       onSubscriptionConfirmation: y,
       renderPurchaseConfirmation: L,
-      postSuccessGuild: v,
-      followupSKUInfo: S,
+      postSuccessGuild: S,
+      followupSKUInfo: v,
       continueSessionToInitialStep: w
     } = e,
     {
@@ -84,9 +84,9 @@ function y(e) {
   });
   else {
     let e = A.current === E.id ? {
-      postSuccessGuild: v
+      postSuccessGuild: S
     } : {
-      followupSKUInfo: S,
+      followupSKUInfo: v,
       startingPremiumSubscriptionPlanId: A.current,
       isDowngrade: null != I && (0, p.GY)(I, E.id, a)
     };

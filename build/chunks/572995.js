@@ -154,9 +154,9 @@ let ec = (e, t) => eo({
         scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
         analyticsLocations: exports
       }),
-      O = Chunk594928.wL.useConfig({
+      O = (0, Chunk594928.cL)({
         location: "useBentoBoxes"
-      }).enabled,
+      }),
       v = (0, Chunk647438.useCallback)(() => {
         (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
           section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,

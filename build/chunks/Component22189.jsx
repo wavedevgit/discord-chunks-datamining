@@ -85,9 +85,9 @@ let eE = () => {
     isFractionalPremiumActive: eT
   } = (0, Chunk975298.Z)(), eS = null != eg && eg.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eA = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eC = Chunk803038.Mc.useExperiment({
     location: "usePremiumPerksCards"
-  }).v2EditorEnabled, eN = Chunk594928.wL.useConfig({
+  }).v2EditorEnabled, eN = (0, Chunk594928.cL)({
     location: "usePremiumPerksCards"
-  }).enabled, eR = (0, Chunk300284.Z)({
+  }), eR = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
     analyticsLocations: module
   }), eP = () => {

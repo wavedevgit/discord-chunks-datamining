@@ -40,6 +40,9 @@ function p() {
         variant: "text-md/semibold",
         className: Chunk603473.sectionTitle,
         children: ["Word Frequencies (", Chunk120356.length, " unique words)"]
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        children: "This is a list of the most common short words found in messages sent and received by this client. They're ignored by the mention suggestions experiment to avoid distracting suggestions. These statistics are stored locally only."
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk603473.headerSection,
         children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {

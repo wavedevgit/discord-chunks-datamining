@@ -26,8 +26,8 @@ function m(e) {
     selectedGiftingPromotionReward: m
   } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
     analyticsLocations: j
-  } = (0, s.ZP)(), b = l.EFr.SIZE_32, y = (0, d.Z)(null == m ? true : m.assetId, b, !g), L = (0, u.Z)(), v = null == L ? true : L.giftPurchaseConfirmation;
-  return null == n || null == v ? null : (0, r.jsx)(_.O3, {
+  } = (0, s.ZP)(), b = l.EFr.SIZE_32, y = (0, d.Z)(null == m ? true : m.assetId, b, !g), L = (0, u.Z)(), S = null == L ? true : L.giftPurchaseConfirmation;
+  return null == n || null == S ? null : (0, r.jsx)(_.O3, {
     children: (0, r.jsx)(l.mzw, {
       align: c.Z.Align.CENTER,
       "data-migration-pending": true,
@@ -40,7 +40,7 @@ function m(e) {
           avatarDecoration: y
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          text: v.collectRewardButtonText(),
+          text: S.collectRewardButtonText(),
           onClick: () => {
             t(), (0, C.Z)({
               product: n,

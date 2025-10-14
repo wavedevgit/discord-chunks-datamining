@@ -22,31 +22,31 @@ function h(e) {
     giftRecipient: t
   } = e, n = (0, l.ZP)(null == t ? true : t.id), {
     defaultWishlistId: c,
-    wishlist: u,
-    popularProducts: h,
-    isFetchingWishlist: m,
-    isFetchingShopHome: x,
-    isFetchingCategories: g,
-    wishlistError: j,
-    fetchShopHomeError: b
+    wishlist: h,
+    popularProducts: m,
+    isFetchingWishlist: x,
+    isFetchingShopHome: g,
+    isFetchingCategories: j,
+    wishlistError: b,
+    fetchShopHomeError: y
   } = (0, d.ZL)(t), {
-    displayItems: y,
-    wishlistLength: L
+    displayItems: L,
+    wishlistLength: S
   } = (0, d.UD)({
-    wishlist: u,
+    wishlist: h,
     defaultWishlistId: c,
-    popularProducts: h,
-    wishlistError: j,
-    fetchShopHomeError: b
+    popularProducts: m,
+    wishlistError: b,
+    fetchShopHomeError: y
   }), v = i.useCallback(() => {
     (0, o.openUserProfileModal)({
       userId: t.id,
       section: p.oh.WISHLIST
     })
   }, [t.id]);
-  if (null == c || null != j || null != b) return null;
-  let S = C.ZP.getName(t),
-    w = null == n ? true : n.getBannerURL({
+  if (null == c || null != b || null != y) return null;
+  let w = C.ZP.getName(t),
+    I = null == n ? true : n.getBannerURL({
       canAnimate: false,
       size: 714
     });
@@ -55,10 +55,10 @@ function h(e) {
     style: {
       width: 714
     },
-    children: [null != w && (0, r.jsx)("div", {
+    children: [null != I && (0, r.jsx)("div", {
       className: f.backgroundImage,
       style: {
-        backgroundImage: "url(".concat(w, ")")
+        backgroundImage: "url(".concat(I, ")")
       }
     }), (0, r.jsxs)("div", {
       className: f.wishlistBannerHeader,
@@ -72,20 +72,20 @@ function h(e) {
           variant: "text-sm/medium",
           color: "always-white",
           children: _.intl.format(_.t.BjEX39, {
-            username: S
+            username: w
           })
         })]
       }), (0, r.jsx)(a.Button, {
         variant: "overlay-secondary",
         text: _.intl.format(_.t["8uYD+P"], {
-          username: S
+          username: w
         }),
         onClick: v,
         disabled: (null == t ? true : t.id) == null
       })]
     }), (0, r.jsx)("div", {
       className: f.wishlistBannerGrid,
-      children: m || x || g || null == u || 0 === y.length ? (0, r.jsx)("div", {}) : y.map(e => {
+      children: x || g || j || null == h || 0 === L.length ? (0, r.jsx)("div", {}) : L.map(e => {
         let {
           item: n,
           source: i
@@ -96,8 +96,9 @@ function h(e) {
           wishlistId: c,
           isOwner: false,
           size: "sm",
-          showIcons: L < d.zL,
-          collectibleSource: i
+          showIcons: S < d.zL,
+          collectibleSource: i,
+          giftingOrigin: i === d.lr.WISHLIST ? u.Wt.DM_CHANNEL_WISHLIST : u.Wt.DM_CHANNEL
         }, n.skuId)
       })
     })]

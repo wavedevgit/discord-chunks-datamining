@@ -23,7 +23,7 @@ function d(e, t, n, d) {
   }), h = e.selection, {
     currentAutocompleteType: m
   } = d, g = null !== m && m !== i.eq.MENTION_SUGGESTIONS;
-  if (!_ || g || l.bN.areStylesDisabled(e) || !(null == (f = e.chatInputType.autocomplete) ? true : f.mentionSuggestions) || !s.HV.getSetting() || null == h || l.M8.isExpanded(h)) return u;
+  if (!_ || n.isDM() || g || l.bN.areStylesDisabled(e) || !(null == (f = e.chatInputType.autocomplete) ? true : f.mentionSuggestions) || !s.HV.getSetting() || null == h || l.M8.isExpanded(h)) return u;
   let [E, b] = t;
   if (!l.LC.isText(E)) return u;
   let [y] = l.bN.node(e, l.C0.parent(b));

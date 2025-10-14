@@ -13,9 +13,9 @@ var Chunk594928 = require("./594928.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk693450 = require("./693450.js");
 let d = () => {
-  let e = Chunk594928.wL.useConfig({
+  let e = (0, Chunk594928.cL)({
       location: "useGetPlanComparisonTableRowsApplicationHome"
-    }).enabled,
+    }),
     t = [{
       id: 10,
       label: Chunk388032.intl.string(Chunk388032.t["svn/YW"]),

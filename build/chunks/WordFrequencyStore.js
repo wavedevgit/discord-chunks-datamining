@@ -116,6 +116,9 @@ class C extends(r = Chunk442837.ZP.PersistedStore) {
       wordSketchData: _.toJSON()
     }
   }
+  getMaxWordCount() {
+    return h
+  }
   getAllWordsSorted() {
     return E(p)
   }

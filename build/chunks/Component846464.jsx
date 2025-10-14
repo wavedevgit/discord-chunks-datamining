@@ -38,7 +38,7 @@ function y(e) {
   } = (0, f.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.ZP)({
+  } = (0, _.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(L, {
@@ -80,7 +80,7 @@ function y(e) {
       setSelectedSkuId: a,
       handleStepChange: t,
       isGift: b,
-      userTrialOffer: S,
+      userTrialOffer: v,
       startedPaymentFlowWithPaymentSources: d.current,
       setSelectedPlanId: c,
       defaultPlanId: j
@@ -89,7 +89,7 @@ function y(e) {
     isGift: b,
     inOfferExperience: w,
     priceOptions: u,
-    showPromotionalGiftBanner: v,
+    showPromotionalGiftBanner: S,
     enablePremiumBrandRefresh: I
   })
 }

@@ -30,8 +30,8 @@ function L(e) {
     handleStepChange: a,
     handleClose: L
   } = e, {
-    selectedPlan: v,
-    selectedSkuId: S,
+    selectedPlan: S,
+    selectedSkuId: v,
     step: w
   } = (0, m.JL)(), {
     setSelectedGiftingPromotionReward: I,
@@ -75,7 +75,7 @@ function L(e) {
     !N && null == O && null != e && null != e && F.some(t => t.skuId === e.skuId) && (I(e), B(e.skuId))
   }, [k, N, O, F, I]), i.useEffect(() => {
     (null == k ? true : k.defaultCategory) == null || N || A(k.defaultCategory)
-  }, [null == k ? true : k.defaultCategory, N]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
+  }, [null == k ? true : k.defaultCategory, N]), l()(null != S, "Expected plan to selected"), l()(null != v, "Expected selectedSkuId"), l()(null != w, "Step should be set");
   let H = i.useMemo(() => null != Z && (null != P ? P : []).some(e => e.skuId === Z), [Z, P]),
     U = i.useMemo(() => null != O && F.some(e => e.skuId === O.skuId), [F, O]),
     D = i.useMemo(() => 0 === F.length || null == Z || !U || !H, [F, Z, H, U]);
@@ -119,8 +119,8 @@ function L(e) {
           onBackClick: () => a(x.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
-          planOptions: [v.id],
-          selectedPlanId: v.id,
+          planOptions: [S.id],
+          selectedPlanId: S.id,
           isNextDisabled: D
         })
       })

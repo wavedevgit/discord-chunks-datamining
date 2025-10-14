@@ -29,7 +29,7 @@ let h = e => {
     category: b
   } = e, y = i.useRef(null), {
     isHoveringOrFocusing: L
-  } = (0, c.Z)(y), v = !h && L, S = (0, C.ZP)(), w = (0, s.wj)(S), I = {
+  } = (0, c.Z)(y), S = !h && L, v = (0, C.ZP)(), w = (0, s.wj)(v), I = {
     type: o.Z.AVATAR_DECORATION,
     label: g,
     asset: n
@@ -43,7 +43,7 @@ let h = e => {
       },
       className: l()(w ? f.shopCardDark : f.shopCard, {
         [f.shopCardAnimation]: !h,
-        [w ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: v,
+        [w ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: S,
         [f.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
@@ -55,7 +55,7 @@ let h = e => {
         children: (0, r.jsx)(p.R, {
           item: I,
           user: a,
-          isHighlighted: v,
+          isHighlighted: S,
           avatarSize: d.EFr.SIZE_120,
           isPurchased: h
         })

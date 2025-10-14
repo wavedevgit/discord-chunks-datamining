@@ -94,32 +94,29 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  let {
-    enabled: n
-  } = s.wL.useConfig({
+  (0, s.cL)({
     location: "useGuildMemberOrUserPendingDisplayNameStyles"
-  });
-  n || (t = true);
-  let r = (0, i.e7)([f.ZP], () => true === t || null == e ? null : f.ZP.getMember(t, e.id)),
+  }) || (t = true);
+  let n = (0, i.e7)([f.ZP], () => true === t || null == e ? null : f.ZP.getMember(t, e.id)),
     {
-      pendingUserDisplayNameStyles: a,
-      userErrors: o
+      pendingUserDisplayNameStyles: r,
+      userErrors: a
     } = (0, i.cj)([_.Z], () => ({
       pendingUserDisplayNameStyles: _.Z.getPendingDisplayNameStyles(),
       userErrors: _.Z.getErrors().displayNameStyles
     })),
     {
-      pendingGuildDisplayNameStyles: l,
-      guildErrors: u
+      pendingGuildDisplayNameStyles: o,
+      guildErrors: l
     } = (0, i.cj)([c.Z], () => ({
       pendingGuildDisplayNameStyles: c.Z.getPendingDisplayNameStyles(),
       guildErrors: c.Z.getErrors().displayNameStyles
     }));
   return {
     userDisplayNameStyles: null == e ? true : e.displayNameStyles,
-    guildDisplayNameStyles: null == r ? true : r.displayNameStyles,
-    pendingDisplayNameStyles: null != t ? l : a,
-    pendingErrors: null != t ? u : o
+    guildDisplayNameStyles: null == n ? true : n.displayNameStyles,
+    pendingDisplayNameStyles: null != t ? o : r,
+    pendingErrors: null != t ? l : a
   }
 }
 

@@ -96,7 +96,7 @@ function A(e) {
     confettiColors: N
   } = (0, d.Z)(null == C ? true : C.styles);
   return i.useEffect(() => {
-    t && null != p && null != A && y === O.Wt.USER_PROFILE_WISHLIST && l.Z.dispatch({
+    t && null != p && null != A && (y === O.Wt.USER_PROFILE_WISHLIST || y === O.Wt.DM_CHANNEL_WISHLIST) && l.Z.dispatch({
       type: "WISHLIST_GIFT_SENT",
       skuId: A,
       recipientId: p.id
