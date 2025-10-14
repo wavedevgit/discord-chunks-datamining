@@ -22,16 +22,16 @@ function c(e) {
       clearTimeout(e)
     }
   }, [t]), (0, a.jsxs)(i.P3F, {
-    className: o.container,
+    className: s.container,
     onClick: () => {
       t(l.L.USER_DISMISS)
     },
     children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "always-white",
-      children: s.intl.string(s.t.fJNqJi)
+      children: o.intl.string(o.t.fJNqJi)
     }), (0, a.jsx)("div", {
-      className: o.pointer
+      className: s.pointer
     })]
   })
 }
@@ -41,19 +41,19 @@ function d(e) {
     children: t,
     markAsDismissed: n,
     targetElementRef: l
-  } = e, [s, o] = r.useState(false);
+  } = e, [o, s] = r.useState(false);
   return r.useEffect(() => {
     let e = setTimeout(() => {
-      o(true)
+      s(true)
     }, 1e3);
     return () => {
       clearTimeout(e)
     }
-  }, [o]), (0, a.jsx)(i.yRy, {
+  }, [s]), (0, a.jsx)(i.yRy, {
     targetElementRef: l,
     position: "top",
     align: "left",
-    shouldShow: s,
+    shouldShow: o,
     renderPopout: () => (0, a.jsx)(c, {
       markAsDismissed: n
     }),

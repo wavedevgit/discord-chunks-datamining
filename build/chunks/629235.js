@@ -20,12 +20,12 @@ let u = function(e, t) {
     loading: l.Z.loading
   })), {
     initiateAgeVerification: m
-  } = (0, o.WD)({
+  } = (0, s.WD)({
     onComplete: e,
     shouldShowExpressiveModal: true
   });
   return a.useEffect(() => {
-    null == n && (0, s.Jh)()
+    null == n && (0, o.Jh)()
   }, [n]), {
     ageVerificationMethods: null == n ? true : n.map(e => {
       let n = c.ed[e];

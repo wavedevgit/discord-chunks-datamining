@@ -20,7 +20,7 @@ let d = Chunk647438.memo(function(e) {
     handleToggleDismissState: p
   } = (0, c.Z)(u), [h, x] = r.useState(false), f = r.useCallback(() => {
     null == d || d(n), p()
-  }, [d, p, n]), b = r.useCallback(e => {
+  }, [d, p, n]), g = r.useCallback(e => {
     e.preventDefault(), x(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
@@ -32,26 +32,26 @@ let d = Chunk647438.memo(function(e) {
         size: "sm",
         variant: "icon-only",
         icon: h ? l.C2q : l.zTD,
-        onClick: b,
+        onClick: g,
         "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(l.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(i.z[n], ")"),
-        description: (0, o.qh)(u) ? function(e) {
+        description: (0, s.qh)(u) ? function(e) {
           var t, n;
-          let a = null == (n = s.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e];
+          let a = null == (n = o.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e];
           if (null == a) return null;
           let r = [],
             {
               lastDismissedVersion: i,
               lastDismissedAtMs: l,
-              lastDismissedObjectId: o
+              lastDismissedObjectId: s
             } = a;
           if (true !== i && 0 !== i && r.push("last_dismissed_version: ".concat(i)), true !== l) {
             let e = Number(l),
               t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
             r.push("last_dismissed_at: ".concat(t))
           }
-          return (true !== o && "0" !== o && r.push("last_dismissed_object_id: ".concat(o)), 0 === r.length) ? null : r.join(", ")
+          return (true !== s && "0" !== s && r.push("last_dismissed_object_id: ".concat(s)), 0 === r.length) ? null : r.join(", ")
         }(u) : null,
         checked: m,
         onChange: f

@@ -48,7 +48,7 @@ let j = () => {
       ctaText: t,
       ctaOnClick: n,
       analyticsPage: i,
-      linkPreText: s = x.intl.string(x.t["5qZv9P"]),
+      linkPreText: o = x.intl.string(x.t["5qZv9P"]),
       linkText: d = x.intl.string(x.t.XRdyj4)
     } = e, u = r.useCallback(() => {
       null != i && (0, p.Y)({
@@ -58,8 +58,8 @@ let j = () => {
       })
     }, [i]);
     return (0, a.jsxs)("div", {
-      className: l()(f.container, b.baseCardOutline),
-      children: [(0, a.jsx)(j, {}), (0, a.jsx)(o.zxk, {
+      className: l()(f.container, g.baseCardOutline),
+      children: [(0, a.jsx)(j, {}), (0, a.jsx)(s.zxk, {
         text: t,
         variant: "primary",
         size: "sm",
@@ -67,10 +67,10 @@ let j = () => {
         fullWidth: true
       }), (0, a.jsxs)("div", {
         className: f.linkContainer,
-        children: [true !== s && (0, a.jsxs)(c.Text, {
+        children: [true !== o && (0, a.jsxs)(c.Text, {
           variant: "text-xs/normal",
           className: f.linkPreText,
-          children: [s, "\xa0"]
+          children: [o, "\xa0"]
         }), (0, a.jsx)(c.Anchor, {
           target: "_blank",
           rel: "author",

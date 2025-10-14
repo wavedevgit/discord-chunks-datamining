@@ -25,8 +25,8 @@ let v = Chunk70956.Z.Millis.HOUR,
   _ = 4 * Chunk70956.Z.Millis.DAY;
 
 function y() {
-  let [e, t] = Chunk647438.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), a = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), s = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, p = Chunk695346.Cr.useSetting(), b = Chunk951288 === Chunk231338.Sk.DND && null != Chunk246133 && module - Chunk246133 > j && "0" === Chunk70956, {
-    enabled: g
+  let [e, t] = Chunk647438.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), a = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), o = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, p = Chunk695346.Cr.useSetting(), g = Chunk951288 === Chunk231338.Sk.DND && null != Chunk246133 && module - Chunk246133 > j && "0" === Chunk70956, {
+    enabled: b
   } = (0, Chunk809930.a)({
     location: "useDoNotDisturbReminderPopoverDismissibleContent",
     autoTrackExposure: Chunk388032,
@@ -52,22 +52,22 @@ function C(e) {
   } = e, {
     enabled: i,
     titleText: l,
-    bodyText: o
+    bodyText: s
   } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
   return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
-    children: [r, (0, a.jsx)(s.J2, {
+    children: [r, (0, a.jsx)(o.J2, {
       targetElementRef: t,
-      title: b.intl.string(l),
-      body: b.intl.string(o),
+      title: g.intl.string(l),
+      body: g.intl.string(s),
       caretConfig: {
         align: "start"
       },
       gradientColor: "purple",
       actions: [{
-        text: b.intl.string(b.t.fwPura),
+        text: g.intl.string(g.t.fwPura),
         onClick: () => {
           (0, c.Z)({
             nextStatus: f.Sk.ONLINE
@@ -76,7 +76,7 @@ function C(e) {
       }],
       graphic: {
         type: "image",
-        src: g
+        src: b
       },
       onRequestClose: () => null == n ? true : n(x.L.DISMISS)
     })]

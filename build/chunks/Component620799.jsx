@@ -20,13 +20,13 @@ function h(e) {
     targetElementRef: t,
     markAsDismissed: n,
     children: h
-  } = e, x = (0, r.e7)([o.default], () => o.default.getId()), f = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), b = (0, c.bg)({
+  } = e, x = (0, r.e7)([s.default], () => s.default.getId()), f = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), g = (0, c.bg)({
     location: "GameWidgetsPopover"
   });
   return (0, a.jsxs)(a.Fragment, {
     children: [h, (0, a.jsx)(i.J2, {
       targetElementRef: t,
-      badge: b ? {
+      badge: g ? {
         type: "early_access",
         variant: "expressive"
       } : true,
@@ -52,7 +52,7 @@ function h(e) {
         onClick: () => {
           n(m.L.TAKE_ACTION), (0, d.openUserProfileModal)({
             userId: x,
-            sourceAnalyticsLocations: [s.Z.ACCOUNT],
+            sourceAnalyticsLocations: [o.Z.ACCOUNT],
             hideRestrictedProfile: true,
             section: u.oh.WIDGETS
           })

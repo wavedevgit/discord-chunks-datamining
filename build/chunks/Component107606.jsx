@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,8 +20,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk469115 = require("./469115.js"),
   Chunk685960 = require("./685960.js");
 
-function g() {
-  var e, t, n, g, v, j, _, y;
+function b() {
+  var e, t, n, b, v, j, _, y;
   (0, Chunk223143.mw)();
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     S = Chunk695346.L1.useSetting(),
@@ -35,8 +35,8 @@ function g() {
     R = null != I && null != (v = N.find(e => e.skuId === I)) ? v : null,
     k = null != w && null != (j = P.find(e => e.skuId === w)) ? j : null,
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
-    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
-    D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
+    D = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
+    Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     M = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     L = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
@@ -73,16 +73,16 @@ function g() {
         children: ["Theme: ", E]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != T ? null == (g = Chunk469115.qt[T]) ? true : g.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != T ? null == (b = Chunk469115.qt[T]) ? true : b.getName() : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == A ? true : A.name) ? _ : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Nameplate: ", null != (y = null == Z ? true : Z.name) ? y : "None"]
+        children: ["Nameplate: ", null != (y = null == D ? true : D.name) ? y : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Font Size: ", D, "px"]
+        children: ["Font Size: ", Z, "px"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", M]

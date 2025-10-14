@@ -30,17 +30,17 @@ let C = function(e) {
     onClose: C,
     onComplete: S,
     dismissable: E
-  } = e, [T, O] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), N = r.useRef(T), [P, I] = (0, c.US)([T], true, true), w = r.useMemo(() => (0, i.Z)(), []), R = r.useRef(false);
+  } = e, [T, O] = r.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), N = r.useRef(T), [P, I] = (0, c.US)([T], true, true), w = r.useMemo(() => (0, i.Z)(), []), R = r.useRef(false);
   r.useEffect(() => {
     N.current = P
   }, [P]);
   let {
     loading: k,
     ageVerificationMethods: A
-  } = (0, b.Z)(() => {
+  } = (0, g.Z)(() => {
     null == S || S(), C()
   }, () => {
-    O(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+    O(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
   });
   return r.useLayoutEffect(() => () => {
     if (R.current) return;
@@ -63,10 +63,10 @@ let C = function(e) {
     title: j.intl.string(j.t.JHNunp),
     subtitle: j.intl.format(v.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        h.Z.openUrl(p.Z.getArticleURL(g.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
+        h.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
       }
     }),
-    actionBarInput: (0, a.jsx)(o.Avr, {
+    actionBarInput: (0, a.jsx)(s.Avr, {
       size: "sm",
       textVariant: "text-sm/medium",
       text: j.intl.string(j.t["2jxGen"]),
@@ -74,10 +74,10 @@ let C = function(e) {
         (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
-    children: (0, a.jsxs)(o.Kqy, {
+    children: (0, a.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 16,
-      children: [(0, a.jsxs)(o.Kqy, {
+      children: [(0, a.jsxs)(s.Kqy, {
         fullWidth: false,
         direction: "horizontal",
         gap: 8,
@@ -89,23 +89,23 @@ let C = function(e) {
         },
         align: "center",
         className: _.dataAssurance,
-        children: [(0, a.jsx)(o.d3s, {
+        children: [(0, a.jsx)(s.d3s, {
           size: "lg",
           color: "currentColor"
-        }), (0, a.jsx)(o.Text, {
+        }), (0, a.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
           children: j.intl.string(v.default.ar3a3t)
         })]
-      }), null == A || 0 === A.length ? (0, a.jsxs)(o.Kqy, {
+      }), null == A || 0 === A.length ? (0, a.jsxs)(s.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
-        children: [(0, a.jsx)(o.Text, {
+        children: [(0, a.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
           children: j.intl.string(v.default.cR6339)
-        }), (0, a.jsx)(o.Button, {
+        }), (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
           text: j.intl.string(v.default.hDvmYG),
@@ -113,7 +113,7 @@ let C = function(e) {
             (0, f.Jh)()
           }
         })]
-      }) : (0, a.jsx)(o.Kqy, {
+      }) : (0, a.jsx)(s.Kqy, {
         direction: "vertical",
         gap: 8,
         children: A.map(e => {

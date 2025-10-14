@@ -13,16 +13,16 @@ function l(e) {
     isUploading: t,
     isSuccess: n,
     errorMessage: l,
-    onClick: s,
-    title: o
+    onClick: o,
+    title: s
   } = e;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(r.Button, {
       variant: "primary",
-      onClick: s,
+      onClick: o,
       loading: t,
       disabled: t,
-      text: t ? "Uploading…" : o
+      text: t ? "Uploading…" : s
     }), null != l && (0, a.jsx)(r.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",

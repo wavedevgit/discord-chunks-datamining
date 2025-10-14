@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk876215 = require("./876215.js"),
   Chunk126313 = require("./126313.js"),
   Chunk442837 = require("./442837.js"),
@@ -97,8 +97,8 @@ function A() {
   let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     i = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
     l = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
-    s = function(e) {
-      let t = o().groupBy(e, e => e.content_type);
+    o = function(e) {
+      let t = s().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
         let n = t[e];
         return {
@@ -113,12 +113,12 @@ function A() {
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
     [k, A] = Chunk647438.useState(""),
-    D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
+    Z = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
       return parseInt(k) > 0 ? k : null != (n = null == (e = Chunk77498.Z.getGameByName(k)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(k)) ? true : exports.id
     }, [k]),
     M = (0, Chunk168524.Z)({
-      applicationId: D,
+      applicationId: Z,
       location: "DevToolsContentInventory",
       source: Chunk810568.m1.DevTools
     }),
@@ -209,11 +209,11 @@ function A() {
           onKeyDown: e => {
             "Enter" === e.key && (k === e.currentTarget.value ? null == M || M(e) : A(e.currentTarget.value))
           },
-          error: k.length > 0 && null == M ? "No game profile for ".concat(null != D ? D : k + " - try by id", ".") : true,
+          error: k.length > 0 && null == M ? "No game profile for ".concat(null != Z ? Z : k + " - try by id", ".") : true,
           successMessage: null != M ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
-            children: (0, a.jsx)(Z, {
+            children: (0, a.jsx)(D, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -245,7 +245,7 @@ function A() {
     })
   })
 }
-let Z = e => {
+let D = e => {
   let {
     application: t
   } = e, n = (0, j.Z)({

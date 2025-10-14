@@ -22,7 +22,7 @@ function p(e) {
   } = e, {
     trackUserProfileAction: r
   } = (0, d.KZ)();
-  return o.wS ? (0, a.jsx)(s.Z, {
+  return s.wS ? (0, a.jsx)(o.Z, {
     text: u.intl.string(u.t.y5MwJy),
     delay: 0,
     "aria-label": false,

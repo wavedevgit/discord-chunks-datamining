@@ -30,22 +30,22 @@ let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERU
 
 function O(e) {
   switch (e) {
-    case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
+    case s.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
-    case o.C.GUILD_POWERUP_LEVEL_2_COACHMARK:
+    case s.C.GUILD_POWERUP_LEVEL_2_COACHMARK:
       return "GUILD_POWERUP_LEVEL_2_COACHMARK";
-    case o.C.GUILD_POWERUP_LEVEL_3_COACHMARK:
+    case s.C.GUILD_POWERUP_LEVEL_3_COACHMARK:
       return "GUILD_POWERUP_LEVEL_3_COACHMARK";
-    case o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK:
+    case s.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK:
       return "GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK";
-    case o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK:
+    case s.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK:
       return "GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK";
-    case o.C.ADOPT_CLAN_IDENTITY_NOTICE:
+    case s.C.ADOPT_CLAN_IDENTITY_NOTICE:
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
 async function N(e, t, n) {
-  await Promise.all(t.map(e => s.tn.patch({
+  await Promise.all(t.map(e => o.tn.patch({
     url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
       ends_at: i()().add(1, "day")
@@ -54,7 +54,7 @@ async function N(e, t, n) {
   }))), (0, d.C0)(e), (0, x.BN)(e, true)
 }
 async function P(e) {
-  await s.tn.post({
+  await o.tn.post({
     url: _.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: true
   })
@@ -133,8 +133,8 @@ function I() {
         gap: 16,
         children: C.map(e => (0, a.jsx)(u.Z, {
           className: y.formSwitch,
-          content: o.z[e]
-        }, o.z[e]))
+          content: s.z[e]
+        }, s.z[e]))
       })]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk617659.section,
@@ -144,7 +144,7 @@ function I() {
           label: O(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })
@@ -156,7 +156,7 @@ function I() {
           label: O(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })
@@ -168,8 +168,8 @@ function I() {
         children: "Reset Powerup Rollback DCs"
       }), T.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
-        content: o.z[e]
-      }, o.z[e]))]
+        content: s.z[e]
+      }, s.z[e]))]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk617659.section,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

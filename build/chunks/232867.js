@@ -8,7 +8,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk959546 = require("./959546.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let o = async () => (await Chunk544891.tn.get({
+let s = async () => (await Chunk544891.tn.get({
   url: Chunk981631.ANM.ENTITLEMENTS_FOR_APPLICATION(Chunk474936.CL),
   oldFormErrors: true,
   query: {
@@ -40,7 +40,7 @@ let o = async () => (await Chunk544891.tn.get({
   let [e, t] = Chunk647438.useState([]), [n, r] = Chunk647438.useState(false), i = (0, Chunk647438.useCallback)(async () => {
     try {
       Chunk544891(true);
-      let e = await o();
+      let e = await s();
       exports(module)
     } finally {
       Chunk544891(false)

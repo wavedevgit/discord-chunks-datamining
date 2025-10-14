@@ -28,13 +28,13 @@ function p() {
   let e = m.useField("includeFrecency"),
     t = m.useField("includeFriends"),
     n = m.useField("includeDMs"),
-    s = m.useField("includeGDMs"),
+    o = m.useField("includeGDMs"),
     p = m.useField("includeQuickSwitcherState"),
     h = m.useField("includeUserSearchWorkerState"),
     x = m.useField("isUploading"),
     f = m.useField("isSuccess"),
-    b = m.useField("errorMessage"),
-    g = Chunk647438.useCallback(async () => {
+    g = m.useField("errorMessage"),
+    b = Chunk647438.useCallback(async () => {
       let {
         includeFrecency: e,
         includeFriends: t,
@@ -42,7 +42,7 @@ function p() {
         includeDMs: a,
         includeQuickSwitcherState: r,
         includeUserSearchWorkerState: i,
-        isUploading: s
+        isUploading: o
       } = m.getState();
       if (!Chunk972959) try {
         m.setState({
@@ -112,8 +112,8 @@ function p() {
     }), (0, Chunk951288.jsx)(Chunk608934.a, {
       isUploading: x,
       isSuccess: f,
-      errorMessage: b,
-      onClick: g,
+      errorMessage: g,
+      onClick: b,
       title: "Upload Snapshot Logs"
     })]
   })

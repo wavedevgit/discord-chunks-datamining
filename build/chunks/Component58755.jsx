@@ -47,11 +47,11 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = Object.keys(Chunk500949.jQ).map(e => ({
+let g = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
-  g = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
+  b = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
     let [n] = t.split(".");
     return e.add(n), e
   }, new Set))).map(e => ({
@@ -65,10 +65,10 @@ function v(e) {
     setState: n
   } = e, {
     scales: i
-  } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
+  } = t, [l, o] = r.useState(null), s = (0, a.jsxs)("div", {
     className: h.section,
     children: [(0, a.jsx)(d.VcW, {
-      options: g,
+      options: b,
       placeholder: "Select a scale to edit...",
       value: true,
       onChange: e => {
@@ -93,7 +93,7 @@ function v(e) {
       className: h.overrides,
       children: i.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
-          onClick: () => s(e.name),
+          onClick: () => o(e.name),
           style: {
             cursor: "pointer"
           },
@@ -106,13 +106,13 @@ function v(e) {
         })
       }, e.name))
     })]
-  }), u = i.find(e => e.name === l), b = null != u ? (0, a.jsx)(j, {
-    onClose: () => s(null),
+  }), u = i.find(e => e.name === l), g = null != u ? (0, a.jsx)(j, {
+    onClose: () => o(null),
     scale: u,
     setState: n
-  }) : o;
+  }) : s;
   return (0, a.jsx)("div", {
-    children: b
+    children: g
   })
 }
 
@@ -125,7 +125,7 @@ function j(e) {
     name: c,
     base: x,
     lightness: f,
-    showColumnarPalettePreview: g,
+    showColumnarPalettePreview: b,
     colorSpace: v,
     easingStrength: j = 1,
     useP3ColorSpace: _,
@@ -175,7 +175,7 @@ function j(e) {
     }), (0, a.jsx)(d.q4e, {
       label: "Color Space",
       description: "The color space used to generate the palette. Different color spaces will produce different results.",
-      options: b,
+      options: g,
       value: v,
       onChange: e => (0, p.t4)(c, e, n),
       popoutLayerContext: m.O$
@@ -217,7 +217,7 @@ function j(e) {
     }), (0, a.jsx)(d.rsf, {
       label: "Show columnar palette preview",
       description: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      checked: g,
+      checked: b,
       onChange: e => (0, p.KB)(c, e, n)
     }), (0, a.jsx)(d.rsf, {
       label: "Use P3 Color Space",
@@ -241,22 +241,22 @@ function j(e) {
         children: "Palette Preview"
       }), (0, a.jsx)("div", {
         className: h.paletteOverrides,
-        "data-columnar": g,
+        "data-columnar": b,
         children: Object.entries(S).map((e, n) => {
-          let [r, c] = e, u = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+          let [r, c] = e, u = (0, p.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: u
             },
             children: [(0, a.jsxs)(d.Text, {
-              variant: g ? "text-sm/medium" : "text-xs/medium",
+              variant: b ? "text-sm/medium" : "text-xs/medium",
               style: {
                 color: m
               },
-              children: [t.name, ".", n + 1, g && null != h ? (0, a.jsx)("strong", {
+              children: [t.name, ".", n + 1, b && null != h ? (0, a.jsx)("strong", {
                 children: " - ".concat(h)
               }) : ""]
-            }), g && (0, a.jsxs)(d.Text, {
+            }), b && (0, a.jsxs)(d.Text, {
               variant: "text-xxs/medium",
               style: {
                 opacity: .75,
@@ -277,7 +277,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, s = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
+  } = e, o = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {
@@ -303,7 +303,7 @@ function _(e) {
       })]
     }), (0, a.jsx)("div", {
       className: h.palettePreview,
-      children: s.map(e => (0, a.jsx)("span", {
+      children: o.map(e => (0, a.jsx)("span", {
         style: {
           width: 16,
           height: 16,

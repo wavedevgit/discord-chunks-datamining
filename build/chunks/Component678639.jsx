@@ -21,7 +21,7 @@ function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function b(e) {
+function g(e) {
   let {
     store: t,
     dataGetter: n
@@ -31,14 +31,14 @@ function b(e) {
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
-  }, [t, n]), (0, a.jsx)(o.zJl, {
+  }, [t, n]), (0, a.jsx)(s.zJl, {
     className: x.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: i
     })
   })
 }
-let g = [{
+let b = [{
     key: "name",
     cellClassName: Chunk104444.__invalid_eventColumn,
     render(e) {
@@ -61,7 +61,7 @@ let g = [{
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, a.jsx)(b, {
+      }) : (0, a.jsx)(g, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let g = [{
       let {
         store: t
       } = e;
-      return (0, a.jsx)(b, {
+      return (0, a.jsx)(g, {
         store: t,
         dataGetter: e => e
       })
@@ -98,7 +98,7 @@ function j(e) {
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
       className: l()(h.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
-        icon: o.lO_,
+        icon: s.lO_,
         tooltip: t.getName()
       }), (0, a.jsx)(c.ZP.Title, {
         children: t.getName()
@@ -138,7 +138,7 @@ function _() {
         "aria-label": "Search stores"
       })
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: g,
+      columns: b,
       data: Chunk665149,
       selectedRowKey: Chunk185910,
       onClickRow: e => u(e.key)

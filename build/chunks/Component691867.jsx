@@ -20,7 +20,7 @@ function d() {
           label: r,
           description: t,
           checked: n,
-          onChange: e => (0, s.Z)(t, e)
+          onChange: e => (0, o.Z)(t, e)
         }, t), (0, a.jsx)(l.izJ, {
           gap: 16
         })]

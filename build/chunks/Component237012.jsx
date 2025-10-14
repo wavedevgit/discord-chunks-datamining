@@ -5,7 +5,7 @@ require.d(exports, {
   BZ: () => Chunk606201.BZ,
   DS: () => Chunk761911.D,
   E_: () => Chunk606201.E_,
-  lD: () => s,
+  lD: () => o,
   pg: () => Chunk606201.pg
 });
 var Chunk951288 = require("./951288.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk606201 = require("./606201.jsx");
 require("./955926.jsx");
 var Chunk761911 = require("./761911.jsx");
-let s = e => {
+let o = e => {
   let {
     href: t
   } = e;

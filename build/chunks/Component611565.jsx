@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -22,7 +22,7 @@ let x = [{
       let {
         channelName: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -34,7 +34,7 @@ let x = [{
       let {
         channelId: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -47,7 +47,7 @@ let x = [{
       let {
         channelName: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -59,7 +59,7 @@ let x = [{
       let {
         loadState: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -71,14 +71,14 @@ let x = [{
       let {
         channelId: t
       } = e;
-      return (0, a.jsx)(s.Text, {
+      return (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
       })
     }
   }];
 
-function b() {
+function g() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -86,8 +86,8 @@ function b() {
     isLoading: n,
     hasLoadedEver: r,
     hasPreloaded: i,
-    hasMoreToLoad: b,
-    isLoadingComplete: g
+    hasMoreToLoad: g,
+    isLoadingComplete: b
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
     hasLoadedEver: Chunk787879.Z.hasLoadedEver,
@@ -129,7 +129,7 @@ function b() {
             label: "Nav On Click",
             checked: !!S,
             onChange: e => {
-              o.Z.dispatch({
+              s.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
                 navOnClick: e
               })
@@ -169,9 +169,9 @@ function b() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", g ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Is Loading Complete: ", g ? "✅" : "❌"]
+          children: ["Is Loading Complete: ", b ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Last Loading Trigger: ", null == v ? true : v.loadingTrigger]
         })]

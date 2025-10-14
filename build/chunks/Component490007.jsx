@@ -41,7 +41,7 @@ function f() {
       look: "brand",
       type: "top",
       orientation: "horizontal",
-      children: h.map(e => (0, a.jsx)(o.njP.Item, {
+      children: h.map(e => (0, a.jsx)(s.njP.Item, {
         id: e.id,
         children: e.name
       }, e.id))

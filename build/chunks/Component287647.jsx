@@ -18,16 +18,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk693450 = require("./693450.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk374104 = require("./374104.js");
-let g = new Chunk710845.Z("DisplayNameStylesCoachmark");
+let b = new Chunk710845.Z("DisplayNameStylesCoachmark");
 
 function v(e) {
   let {
     markAsDismissed: t,
     targetElementRef: n,
-    children: o
+    children: s
   } = e, {
     analyticsLocations: v
-  } = (0, s.ZP)(), j = (0, r.useRef)(null), _ = (0, i.e7)([u.Z], () => u.Z.isFocused()), y = (0, r.useCallback)(() => {
+  } = (0, o.ZP)(), j = (0, r.useRef)(null), _ = (0, i.e7)([u.Z], () => u.Z.isFocused()), y = (0, r.useCallback)(() => {
     t(h.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
       section: p.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
@@ -41,9 +41,9 @@ function v(e) {
   }, [t]);
   return (0, r.useEffect)(() => {
     var e, t, n;
-    _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(g.error) : _ || null == (n = j.current) || n.pause()
+    _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(b.error) : _ || null == (n = j.current) || n.pause()
   }, [_]), (0, a.jsxs)(a.Fragment, {
-    children: [o, (0, a.jsx)(l.J, {
+    children: [s, (0, a.jsx)(l.J, {
       targetElementRef: n,
       shouldShow: true,
       onRequestClose: C,
@@ -56,7 +56,7 @@ function v(e) {
       graphic: {
         type: "video",
         ref: j,
-        src: b.Z,
+        src: g.Z,
         aspectRatio: "21/9",
         loop: true
       },

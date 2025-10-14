@@ -65,11 +65,11 @@ function p(e) {
     sublabel: h,
     trailing: x,
     renderSubmenu: f,
-    ref: b
-  } = e, g = null != n, v = (0, s.Q1)({
+    ref: g
+  } = e, b = null != n, v = (0, o.Q1)({
     action: t,
     onClick: n
-  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != b ? b : y, S = null != f, E = S && g, T = {
+  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != g ? g : y, S = null != f, E = S && b, T = {
     offset: {
       top: false,
       left: false,
@@ -116,7 +116,7 @@ function p(e) {
         children: P()
       }), (0, a.jsx)(l.P3F, u(d({
         className: c.submenuIconWrapper,
-        "aria-label": o.intl.string(o.t.PdRCRk)
+        "aria-label": s.intl.string(s.t.PdRCRk)
       }, e), {
         onClick: O,
         focusProps: T,

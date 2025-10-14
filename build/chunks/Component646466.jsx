@@ -47,7 +47,7 @@ let h = [{
     label: "[preview all]",
     value: null
   },
-  b = () => {
+  g = () => {
     (0, Chunk481060.nfh)(Chunk637443.g) ? (0, Chunk481060.Mr3)(Chunk637443.g) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -58,7 +58,7 @@ let h = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
     })
   },
-  g = () => {
+  b = () => {
     (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -75,7 +75,7 @@ let h = [{
         previewProfileEffectSkuId: t,
         setPreviewProfileEffectSkuId: n
       } = (0, Chunk619899.N9)(),
-      s = Chunk647438.useMemo(() => [x, ...module.map(e => ({
+      o = Chunk647438.useMemo(() => [x, ...module.map(e => ({
         label: e.name,
         value: e.skuId
       }))], [module]);
@@ -91,7 +91,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: g,
+          onClick: b,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
@@ -134,13 +134,13 @@ let h = [{
       clearIgnoredFiles: n
     } = e, {
       collectionAssets: l
-    } = (0, o.xq)(), {
-      deleteCollectionAsset: s,
+    } = (0, s.xq)(), {
+      deleteCollectionAsset: o,
       clearAssets: c
-    } = (0, o.N9)(), d = r.useMemo(() => Object.values(l).map(e => ({
+    } = (0, s.N9)(), d = r.useMemo(() => Object.values(l).map(e => ({
       label: e.name,
       value: e.type
-    })), [l]), u = r.useCallback(e => s(e), [s]), p = r.useCallback(() => {
+    })), [l]), u = r.useCallback(e => o(e), [o]), p = r.useCallback(() => {
       c(), t(), n()
     }, [c, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
@@ -210,8 +210,8 @@ let h = [{
       reset: t,
       validationComplete: n,
       warnings: l,
-      errors: s
-    } = (0, Chunk206878.g)(), o = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
+      errors: o
+    } = (0, Chunk206878.g)(), s = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
       t(), e(n)
     }, [module, exports]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -304,7 +304,7 @@ let h = [{
       clearAssets: n
     } = (0, Chunk619899.N9)(), {
       ignoredFilenames: l,
-      clearAssets: s,
+      clearAssets: o,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: p
     } = (0, Chunk281598.hm)(), h = Chunk647438.useCallback(e => {
@@ -327,7 +327,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: b,
+          onClick: g,
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]

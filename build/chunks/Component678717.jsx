@@ -390,8 +390,8 @@ function eO(e) {
   } = e, r = eS(), {
     TabBar: i,
     renderSelectedTab: l,
-    selectedTabId: o
-  } = (0, eg.ZP)({
+    selectedTabId: s
+  } = (0, eb.ZP)({
     tabs: r,
     initialSelectedTabId: null != (t = C.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
@@ -401,10 +401,10 @@ function eO(e) {
     }
   }, [r]);
   return (0, u.Z)({
-    type: s.ImpressionTypes.PANE,
-    name: s.ImpressionNames.VIEW_PANEL_DEVTOOLS,
+    type: o.ImpressionTypes.PANE,
+    name: o.ImpressionNames.VIEW_PANEL_DEVTOOLS,
     properties: {
-      panel: o
+      panel: s
     }
   }), (0, a.jsxs)(z.Gk, {
     children: [(0, a.jsxs)(h.ZP, {

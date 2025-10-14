@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk696450 = require("./696450.js"),
   Chunk711322 = require("./711322.js"),
   Chunk451429 = require("./451429.js");
-let g = {
+let b = {
     [Chunk981631.kNB.QUEST_REWARD]: "Quest Reward",
     [Chunk981631.kNB.DEVELOPER_GIFT]: "Developer Gift",
     [Chunk981631.kNB.INVOICE]: "Invoice",
@@ -32,7 +32,7 @@ let g = {
       entitlement: n,
       active: r,
       onDelete: i
-    } = e, s = e => null != e ? (0, u.vc)(e, "LLL") : "---";
+    } = e, o = e => null != e ? (0, u.vc)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
       className: l()(x.card, r ? f.gradientWrapperTier2 : ""),
       children: [(0, a.jsxs)(c.Text, {
@@ -44,22 +44,22 @@ let g = {
       }), null != n.startsAt && null != n.endsAt && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(c.Text, {
           variant: "text-md/normal",
-          children: ["Start: ", s(n.startsAt), " "]
+          children: ["Start: ", o(n.startsAt), " "]
         }), (0, a.jsxs)(c.Text, {
           variant: "text-md/normal",
-          children: ["End: ", s(n.endsAt), " "]
+          children: ["End: ", o(n.endsAt), " "]
         })]
       }), (0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["Entitlement source type: ", (() => {
           let e = n.sourceType;
-          return null != e && e in g ? g[e] : "Unknown source type ".concat(e)
+          return null != e && e in b ? b[e] : "Unknown source type ".concat(e)
         })()]
-      }), r && null != i && (0, a.jsx)(o.zx, {
+      }), r && null != i && (0, a.jsx)(s.zx, {
         className: x.deleteEntitlementButton,
-        size: o.zx.Sizes.TINY,
-        color: o.zx.Colors.RED,
-        look: o.zx.Looks.OUTLINED,
+        size: s.zx.Sizes.TINY,
+        color: s.zx.Colors.RED,
+        look: s.zx.Looks.OUTLINED,
         onClick: i,
         children: "Delete"
       })]
@@ -77,7 +77,7 @@ let g = {
   }];
 
 function _() {
-  let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, g] = Chunk647438.useState([]), [_, y] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, b] = Chunk647438.useState([]), [_, y] = Chunk647438.useState([]), {
     refreshEntitlementList: C,
     grantFractionalPremium: S,
     deleteFractionalPremium: E,
@@ -88,7 +88,7 @@ function _() {
   return Chunk647438.useEffect(() => {
     C()
   }, [C]), Chunk647438.useEffect(() => {
-    g(O.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(O.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
+    b(O.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(O.filter(e => Object.values(o.a).includes(e.skuId) && null == e.startsAt))
   }, [O]), (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)("div", {

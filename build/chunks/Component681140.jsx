@@ -23,7 +23,7 @@ let f = (0, Chunk972959.H)(() => ({
   error: null
 }));
 
-function b(e) {
+function g(e) {
   let {
     title: t,
     guildIds: n
@@ -60,16 +60,16 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   var t;
   let {
     userState: n
   } = e, {
     user: l,
-    searchWorkerUser: s,
+    searchWorkerUser: o,
     guildMembers: d,
     guildMemberRequests: f
-  } = n, g = r.useCallback(e => {
+  } = n, b = r.useCallback(e => {
     let {
       ok: t
     } = e;
@@ -85,7 +85,7 @@ function g(e) {
     className: x.detailsList,
     children: [(0, a.jsxs)("div", {
       className: x.detailsRow,
-      children: [g({
+      children: [b({
         ok: null != l
       }), (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
@@ -102,25 +102,25 @@ function g(e) {
       })
     }), (0, a.jsxs)("div", {
       className: x.detailsRow,
-      children: [g({
-        ok: null != s
+      children: [b({
+        ok: null != o
       }), (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
-        children: null != s ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
+        children: null != o ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
       })]
-    }), null != s && (0, a.jsxs)("div", {
+    }), null != o && (0, a.jsxs)("div", {
       className: x.nestedDetailsList,
       children: [(0, a.jsx)("div", {
         className: x.detailsRow,
         children: (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "username: ".concat(s.username)
+          children: "username: ".concat(o.username)
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
         children: (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "global name: ".concat(null != (t = s.globalName) ? t : "—")
+          children: "global name: ".concat(null != (t = o.globalName) ? t : "—")
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
@@ -130,13 +130,13 @@ function g(e) {
         })
       }), (0, a.jsxs)("div", {
         className: x.nestedDetailsList,
-        children: [0 === Object.keys(s.nicknames).length && (0, a.jsx)("div", {
+        children: [0 === Object.keys(o.nicknames).length && (0, a.jsx)("div", {
           className: x.detailsRow,
           children: (0, a.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: "None"
           })
-        }), Object.entries(s.nicknames).map(e => {
+        }), Object.entries(o.nicknames).map(e => {
           let [t, n] = e, r = m.Z.getGuild(t), l = u.Z.getChannel(t);
           return (0, a.jsxs)("div", {
             className: x.detailsRow,
@@ -148,7 +148,7 @@ function g(e) {
               children: r.name
             }), null == r && null != l && (0, a.jsx)(i.Text, {
               variant: "text-sm/normal",
-              children: (0, o.F6)(l, h.default, p.Z)
+              children: (0, s.F6)(l, h.default, p.Z)
             }), (0, a.jsx)(i.Text, {
               variant: "text-sm/normal",
               children: " (".concat(t, ")")
@@ -161,7 +161,7 @@ function g(e) {
       })]
     }), (0, a.jsxs)("div", {
       className: x.detailsRow,
-      children: [g({
+      children: [b({
         ok: d.length > 0
       }), (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
@@ -195,13 +195,13 @@ function g(e) {
       })]
     }), null != f && (0, a.jsxs)("div", {
       className: x.nestedDetailsList,
-      children: [(0, a.jsx)(b, {
+      children: [(0, a.jsx)(g, {
         title: "Pending Guild Member Requests:",
         guildIds: f.pendingRequestGuildIds
-      }), (0, a.jsx)(b, {
+      }), (0, a.jsx)(g, {
         title: "Sent Guild Member Requests:",
         guildIds: f.sentRequestGuildIds
-      }), (0, a.jsx)(b, {
+      }), (0, a.jsx)(g, {
         title: "Unacknowledged Guild Member Requests:",
         guildIds: f.unacknowledgedRequestGuildIds
       })]
@@ -271,7 +271,7 @@ function j() {
       color: "text-feedback-critical",
       className: Chunk530146.statusText,
       children: exports
-    }), null != module && (0, Chunk951288.jsx)(g, {
+    }), null != module && (0, Chunk951288.jsx)(b, {
       userState: module
     })]
   })

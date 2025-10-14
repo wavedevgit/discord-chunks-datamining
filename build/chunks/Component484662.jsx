@@ -52,7 +52,7 @@ function m() {
                 let {
                   closeLayer: t
                 } = e;
-                return (0, a.jsx)(s.Z, {
+                return (0, a.jsx)(o.Z, {
                   onClose: t
                 })
               }, {

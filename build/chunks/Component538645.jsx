@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js"), require("./953529.js"), require("./35282.js"), require("./853839.js"), require("./570086.js"), require("./479048.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk782691 = require("./782691.jsx"),
   Chunk558270 = require("./558270.js");
 let f = "Make sure you're only uploading text files!",
-  b = e => {
+  g = e => {
     var t, n, r;
     let {
       effect: i,
       onClick: l
     } = e, {
-      deleteConfig: s
+      deleteConfig: o
     } = (0, p.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: x.previewCard,
@@ -44,18 +44,18 @@ let f = "Make sure you're only uploading text files!",
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), s(i.skuId)
+            e.preventDefault(), e.stopPropagation(), o(i.skuId)
           }
         })]
       })]
     })
   };
 
-function g() {
+function b() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, Chunk373071.n6)(), [n, i] = Chunk647438.useState(), g = Chunk647438.useRef(null), v = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [j, _] = Chunk647438.useState(""), y = Chunk647438.useMemo(() => "" === j ? v : v.filter(e => {
+  } = (0, Chunk373071.n6)(), [n, i] = Chunk647438.useState(), b = Chunk647438.useRef(null), v = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [j, _] = Chunk647438.useState(""), y = Chunk647438.useMemo(() => "" === j ? v : v.filter(e => {
     let t = j.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
   }), [j, v]), C = Chunk647438.useCallback((e, n) => {
@@ -63,7 +63,7 @@ function g() {
     let [a, r] = n.split(",");
     if (!a.includes("text/plain")) return (0, u.Eo)(f);
     let i = JSON.parse(atob(r));
-    i.skuId = (0, s.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
+    i.skuId = (0, o.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
   }, [exports]), S = Chunk647438.useCallback(e => {
     var t;
     if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, u.Eo)("Error uploading file. Try again!");
@@ -82,7 +82,7 @@ function g() {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk558270.customEffectsGrid,
-          children: Object.values(module).map(e => (0, a.jsx)(b, {
+          children: Object.values(module).map(e => (0, a.jsx)(g, {
             effect: e,
             onClick: e => {
               i(e)
@@ -98,7 +98,7 @@ function g() {
             color: "always-white",
             children: "Import Shared Config"
           }), (0, Chunk951288.jsx)(Chunk53281.Z, {
-            ref: g,
+            ref: b,
             onChange: S,
             multiple: false
           })]

@@ -25,17 +25,17 @@ function v(e) {
   let {
     title: t,
     can: n
-  } = e, r = n ? o.dz2 : o.Dio, l = (0, a.jsx)("div", {
-    className: i()(b.iconOuter, n ? b.iconCheck : b.iconCross),
+  } = e, r = n ? s.dz2 : s.Dio, l = (0, a.jsx)("div", {
+    className: i()(g.iconOuter, n ? g.iconCheck : g.iconCross),
     children: (0, a.jsx)(r, {
-      className: b.icon
+      className: g.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: b.scope,
+    className: g.scope,
     children: [l, (0, a.jsx)("div", {
-      className: b.scopeInner,
-      children: (0, a.jsx)(o.Text, {
+      className: g.scopeInner,
+      children: (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })

@@ -6,7 +6,7 @@ require.d(exports, {
 var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk599857 = require("./599857.jsx"),
@@ -24,8 +24,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let b = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
-class g extends(a = Chunk647438.PureComponent) {
+let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
+class b extends(a = Chunk647438.PureComponent) {
   renderFields() {
     let {
       types: e,
@@ -53,7 +53,7 @@ class g extends(a = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: s()(Chunk222198.container, {
+        className: o()(Chunk222198.container, {
           [Chunk222198.isMobile]: Chunk873546.tq
         }),
         align: "center",
@@ -78,7 +78,7 @@ class g extends(a = Chunk647438.PureComponent) {
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
               children: Chunk388032.intl.format(Chunk388032.t["0rqMV1"], {
-                helpCenterURL: b
+                helpCenterURL: g
               })
             })]
           })]
@@ -110,7 +110,7 @@ class g extends(a = Chunk647438.PureComponent) {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: s()(Chunk222198.footer, Chunk222198.footerBullet),
+            className: o()(Chunk222198.footer, Chunk222198.footerBullet),
             children: "•"
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
@@ -132,9 +132,9 @@ class g extends(a = Chunk647438.PureComponent) {
     })
   }
 }
-f(g, "defaultProps", {
+f(b, "defaultProps", {
   types: [Chunk981631.PUi.CAPTCHA],
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4
 });
-let v = g
+let v = b

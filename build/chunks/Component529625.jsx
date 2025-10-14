@@ -24,7 +24,7 @@ function h() {
   let e = p.useField("isRecording"),
     t = p.useField("isUploading"),
     n = p.useField("isSuccess"),
-    s = p.useField("errorMessage"),
+    o = p.useField("errorMessage"),
     h = Chunk647438.useRef([]),
     x = Chunk647438.useRef(""),
     f = Chunk647438.useCallback(() => {
@@ -37,7 +37,7 @@ function h() {
   Chunk647438.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(f), () => Chunk823385.Z.removeChangeListener(f)
   }, [f, module]);
-  let b = Chunk647438.useCallback(async () => {
+  let g = Chunk647438.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
@@ -79,7 +79,7 @@ function h() {
         isUploading: exports,
         isSuccess: require,
         errorMessage: Chunk972959,
-        onClick: b,
+        onClick: g,
         title: "Upload Session Logs"
       })]
     })]

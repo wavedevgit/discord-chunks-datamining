@@ -4,7 +4,7 @@ require.d(exports, {
   ShopAssetsPreviewInstructionModal: () => d,
   ShopPFXPreviewInstructionModal: () => u,
   c: () => c,
-  g: () => o
+  g: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +12,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk281598 = require("./281598.js"),
   Chunk117910 = require("./117910.js");
-let o = "shop-assets-preview-instructions-modal",
+let s = "shop-assets-preview-instructions-modal",
   c = "shop-pfx-preview-instructions-modal",
   d = e => {
     let {
@@ -29,7 +29,7 @@ let o = "shop-assets-preview-instructions-modal",
       }],
       onClose: n,
       children: (0, a.jsxs)("div", {
-        className: s.modalContent,
+        className: o.modalContent,
         children: [(0, a.jsx)(i.Text, {
           variant: "text-md/bold",
           children: "Upload Shop assets for preview in the app!"
@@ -43,7 +43,7 @@ let o = "shop-assets-preview-instructions-modal",
           variant: "heading-md/bold",
           children: "Valid Upload Types"
         }), (0, a.jsxs)("ul", {
-          className: s.instructionsList,
+          className: o.instructionsList,
           children: [(0, a.jsx)("li", {
             children: "One or more image or video files (jpg, png, webm)"
           }), (0, a.jsx)("li", {
@@ -53,7 +53,7 @@ let o = "shop-assets-preview-instructions-modal",
           variant: "heading-md/bold",
           children: "Valid File Names"
         }), (0, a.jsx)("ul", {
-          className: s.instructionsList,
+          className: o.instructionsList,
           children: Object.keys(l.Kj).map(e => (0, a.jsx)("li", {
             children: e
           }, e))
@@ -76,7 +76,7 @@ let o = "shop-assets-preview-instructions-modal",
       }],
       onClose: n,
       children: (0, a.jsxs)("div", {
-        className: s.modalContent,
+        className: o.modalContent,
         children: [(0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "1. Draft your PFX in the PFX Editor (in User Settings)"

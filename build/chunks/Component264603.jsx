@@ -40,7 +40,7 @@ function C() {
   let e = Chunk647438.useRef(null),
     t = Chunk695346.JG.useSetting(),
     [n, i] = Chunk647438.useState(""),
-    o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
+    s = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     C = (0, Chunk835473.q)(require),
     S = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
@@ -57,7 +57,7 @@ function C() {
       canDeauthorize: N,
       deauthorize: P
     } = function(e) {
-      let t = (0, s.e7)([b.Z], () => b.Z.getNewestTokenForApplication(e)),
+      let t = (0, o.e7)([g.Z], () => g.Z.getNewestTokenForApplication(e)),
         n = r.useCallback(() => {
           null != t && d.Z.delete(t.id)
         }, [t]);

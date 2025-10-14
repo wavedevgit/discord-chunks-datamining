@@ -27,14 +27,14 @@ function _(e) {
     task: t,
     handleSubmit: n,
     disabled: i
-  } = e, [l, s] = r.useState(t), o = r.useMemo(() => ({
+  } = e, [l, o] = r.useState(t), s = r.useMemo(() => ({
     task: l,
-    setTask: s
-  }), [l, s]);
+    setTask: o
+  }), [l, o]);
   return r.useEffect(() => {
-    s(t)
+    o(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
-    value: o,
+    value: s,
     children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
       disabled: i
@@ -66,7 +66,7 @@ let y = function(e) {
         }
       })
     } catch (e) {
-      C(g.intl.string(b.default["/f++3t"]))
+      C(b.intl.string(g.default["/f++3t"]))
     } finally {
       x(false)
     }
@@ -81,7 +81,7 @@ let y = function(e) {
         };
         await (0, d.Wl)(t), T()
       } catch (e) {
-        C(g.intl.string(b.default["+QRSxc"]))
+        C(b.intl.string(g.default["+QRSxc"]))
       } finally {
         E(false)
       }
@@ -97,9 +97,9 @@ let y = function(e) {
       className: v.artwork,
       src: j,
       alt: ""
-    }), N ? (0, a.jsx)(o.Z, {
+    }), N ? (0, a.jsx)(s.Z, {
       transitionState: i.Dvm.ENTERED,
-      entryPoint: s.cU.SAFETY_FLOWS,
+      entryPoint: o.cU.SAFETY_FLOWS,
       onClose: f.dG,
       onComplete: async () => {
         await O({
@@ -128,11 +128,11 @@ let y = function(e) {
               gap: 4,
               children: [(0, a.jsx)(i.Heading, {
                 variant: "heading-xl/semibold",
-                children: g.intl.string(g.t.c6kn6O)
+                children: b.intl.string(b.t.c6kn6O)
               }), (0, a.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: g.intl.string(g.t.ZUEGFh)
+                children: b.intl.string(b.t.ZUEGFh)
               })]
             }), (0, a.jsxs)(i.Kqy, {
               direction: "horizontal",
@@ -141,13 +141,13 @@ let y = function(e) {
               children: [(0, a.jsx)(i.Button, {
                 fullWidth: true,
                 variant: "secondary",
-                text: g.intl.string(g.t["2jxGen"]),
+                text: b.intl.string(b.t["2jxGen"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
               }), (0, a.jsx)(i.Button, {
                 fullWidth: true,
-                text: g.intl.string(g.t["7NqTJi"]),
+                text: b.intl.string(b.t["7NqTJi"]),
                 onClick: () => {
                   T()
                 }

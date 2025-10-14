@@ -50,10 +50,10 @@ let m = () => {
       className: t,
       onDrop: n
     } = e, [i, h] = r.useState(false), x = r.useRef(null), f = r.useCallback(e => {
-      p(e), h(true), (0, s.Mr3)(c.A)
-    }, []), b = r.useCallback(e => {
+      p(e), h(true), (0, o.Mr3)(c.A)
+    }, []), g = r.useCallback(e => {
       p(e), h(false)
-    }, []), g = r.useCallback(async e => {
+    }, []), b = r.useCallback(async e => {
       p(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -67,30 +67,30 @@ let m = () => {
       ref: x,
       className: l()(t, u.uploadArea),
       onDragEnter: f,
-      onDragLeave: b,
-      onDrop: g,
+      onDragLeave: g,
+      onDrop: b,
       children: (0, a.jsx)("div", {
         className: l()(u.uploadModal, {
           [u.droppable]: i
         }),
         children: (0, a.jsxs)("div", {
           className: u.inner,
-          children: [(0, a.jsx)(o.Z, {
+          children: [(0, a.jsx)(s.Z, {
             icons: d.J6
-          }), (0, a.jsx)(s.Heading, {
+          }), (0, a.jsx)(o.Heading, {
             variant: "heading-lg/bold",
             children: "Upload Shop Assets"
           }), (0, a.jsxs)("div", {
             className: u.instructions,
-            children: [(0, a.jsx)(s.Text, {
+            children: [(0, a.jsx)(o.Text, {
               variant: "text-sm/normal",
               children: "Drop file(s) into this panel to preview Shop assets!"
-            }), (0, a.jsxs)(s.Text, {
+            }), (0, a.jsxs)(o.Text, {
               variant: "text-sm/normal",
-              children: ["Click", (0, a.jsx)(s.idN, {
+              children: ["Click", (0, a.jsx)(o.idN, {
                 className: u.questionIcon,
                 size: "xs",
-                color: s.TVs.colors.TEXT_DEFAULT
+                color: o.TVs.colors.TEXT_DEFAULT
               }), "above for more instructions."]
             })]
           })]

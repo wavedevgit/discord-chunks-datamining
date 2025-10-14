@@ -10,8 +10,8 @@ var Chunk647438 = require("./647438.js"),
 function l() {
   let e = (0, Chunk442837.e7)([Chunk709706.Z], () => Chunk709706.Z.getLastReportedLagTimestamp()),
     [t, n] = Chunk647438.useState(false),
-    [l, s] = Chunk647438.useState(false),
-    o = Chunk647438.useRef(null);
+    [l, o] = Chunk647438.useState(false),
+    s = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
     let t = null != module;
     require(exports);
@@ -20,11 +20,11 @@ function l() {
       clearTimeout(Chunk647438), require(false)
     }
   }, [module]), Chunk647438.useEffect(() => {
-    let t = null != module && null == o.current;
-    s(exports);
+    let t = null != module && null == s.current;
+    o(exports);
     let n = null;
-    return exports && (o.current = Date.now(), n = setTimeout(() => s(false), 4e3)), () => {
-      clearTimeout(require), s(false)
+    return exports && (s.current = Date.now(), n = setTimeout(() => o(false), 4e3)), () => {
+      clearTimeout(require), o(false)
     }
   }, [module]), {
     showSilentLagWarning: exports,

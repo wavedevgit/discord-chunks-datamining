@@ -61,10 +61,10 @@ function _(e) {
     }),
     children: e => {
       let {
-        onClick: s
+        onClick: o
       } = e;
       return (0, a.jsxs)(c.P3F, {
-        onClick: s,
+        onClick: o,
         children: [(0, a.jsxs)(c.Text, {
           variant: "text-sm/bold",
           tag: "span",
@@ -110,8 +110,8 @@ function y() {
     autoThreshold: R,
     vadUseKrisp: k,
     vadKrispActivationThreshold: A,
-    noiseCancellation: Z,
-    noiseSuppression: D,
+    noiseCancellation: D,
+    noiseSuppression: Z,
     noiseSuppressionSupported: M,
     noiseCancellationSupported: L,
     noiseCancellationEnableStats: U,
@@ -130,7 +130,7 @@ function y() {
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats(),
     vadDuringPreProcess: Chunk131951.Z.getModeOptions().vadDuringPreProcess
-  })), B = Z ? "KRISP" : D ? "STANDARD" : "NONE", G = (0, Chunk304809.N)(), z = Chunk647438.useCallback(() => {
+  })), B = D ? "KRISP" : Z ? "STANDARD" : "NONE", G = (0, Chunk304809.N)(), z = Chunk647438.useCallback(() => {
     var e;
     null == (e = S.current) || module.stop(), S.current = null, C(null)
   }, []);
@@ -213,20 +213,20 @@ function y() {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: R,
-          onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             autoThreshold: e
           })
         }), R && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: "Use Krisp VAD",
             checked: k,
-            onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
           }), k && (0, Chunk951288.jsx)(Chunk481060.iRW, {
             label: "Krisp VAD Activation Threshold",
             initialValue: A,
-            onValueChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onValueChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),
             minValue: 0,
@@ -235,7 +235,7 @@ function y() {
         }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
           checked: null != F && F,
-          onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
         })]

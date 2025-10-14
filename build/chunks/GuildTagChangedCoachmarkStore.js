@@ -14,20 +14,20 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {
+let o = {
     lastSeenInfos: {}
   },
-  o = s;
+  s = o;
 class c extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    o = null != e ? e : s
+    s = null != e ? e : o
   }
   getState() {
-    return o
+    return s
   }
   getGuildLastSeenInfo(e) {
     var t;
-    return null != (t = o.lastSeenInfos[e]) ? t : null
+    return null != (t = s.lastSeenInfos[e]) ? t : null
   }
 }
 l(c, "displayName", "GuildTagChangedCoachmarkStore"), l(c, "persistKey", "GuildTagChangedCoachmarkStore");
@@ -37,9 +37,9 @@ let d = new c(Chunk570140.Z, {
       guildId: t,
       lastSeenInfo: n
     } = e;
-    o.lastSeenInfos[t] = n
+    s.lastSeenInfos[t] = n
   },
   LOGOUT: function() {
-    o = s
+    s = o
   }
 })

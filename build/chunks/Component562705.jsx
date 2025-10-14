@@ -25,8 +25,8 @@ function j(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, r = (0, h.Z)(), s = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(b.S9g.USER_SETTINGS));
-  return s || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
+  } = e, r = (0, h.Z)(), o = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(g.S9g.USER_SETTINGS));
+  return o || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
     contentType: l.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: 12096e5
@@ -53,15 +53,15 @@ function _(e) {
     recentlyLeveledTenureBadge: n,
     markAsDismissed: i,
     targetElementRef: l,
-    shouldShow: o
+    shouldShow: s
   } = e, c = f.Qh.indexOf(n), u = (0, x.J)(f.Qh[c > 0 ? c - 1 : c], {
     ambient: true
   }), h = (0, r.useCallback)(() => {
-    i(g.L.TAKE_ACTION), d.Z.setState({
+    i(b.L.TAKE_ACTION), d.Z.setState({
       shouldRenderTenureLevelUp: true
-    }), m.S.dispatch(b.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+    }), m.S.dispatch(g.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
   }, [i]), j = (0, r.useCallback)(() => {
-    i(g.L.USER_DISMISS)
+    i(b.L.USER_DISMISS)
   }, [i]), _ = f.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVV, {
     timeMilestone: null == (t = (0, p.q)(_.id, _.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), C = [{
@@ -69,10 +69,10 @@ function _(e) {
     variant: "primary",
     onClick: h
   }];
-  return (0, a.jsx)(s.J, {
+  return (0, a.jsx)(o.J, {
     targetElementRef: l,
     onRequestClose: j,
-    shouldShow: o,
+    shouldShow: s,
     caretConfig: {
       align: "center"
     },

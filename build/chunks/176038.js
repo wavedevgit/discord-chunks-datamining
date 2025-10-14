@@ -95,8 +95,8 @@ function T() {
 function O() {
   Chunk647438.useEffect(() => {
     var e, t, n, a, r;
-    let b = Chunk594174.default.getCurrentUser(),
-      g = Chunk695346.L1.getSetting(),
+    let g = Chunk594174.default.getCurrentUser(),
+      b = Chunk695346.L1.getSetting(),
       v = Chunk1870.Z.purchases,
       j = (0, Chunk884697.Ad)(Chunk469115),
       _ = (0, Chunk884697.jT)(Chunk469115),
