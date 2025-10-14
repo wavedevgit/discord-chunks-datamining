@@ -20,8 +20,8 @@ function m(e) {
       directory: b,
       target: p,
       onPanelChange: j,
-      sidebarHeader: x,
-      sidebarFooter: v,
+      sidebarHeader: v,
+      sidebarFooter: x,
       emptyState: y
     } = e,
     h = function(e, t) {
@@ -78,9 +78,9 @@ function m(e) {
         directory: b,
         target: p,
         onPanelChange: j,
-        sidebarHeader: x,
+        sidebarHeader: v,
         emptyState: y,
-        sidebarFooter: v
+        sidebarFooter: x
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

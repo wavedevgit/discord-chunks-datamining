@@ -62,7 +62,7 @@ function S(e) {
       node: c,
       directory: u
     } = (0, f.Z)(y.Z, a),
-    p = (t = x.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
+    p = (t = v.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
     g = l.useRef(null);
   return ((0, s.ZP)(() => {
     let e = m.Z.getSection();
@@ -92,7 +92,7 @@ function S(e) {
     directory: u,
     sidebarHeader: _,
     emptyState: P,
-    sidebarFooter: v.Z,
+    sidebarFooter: x.Z,
     onPanelChange: e => {
       let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (C({

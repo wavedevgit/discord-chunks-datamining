@@ -50,8 +50,8 @@ function f(e) {
     directory: b,
     target: p,
     onClose: j,
-    sidebarHeader: x,
-    sidebarFooter: v,
+    sidebarHeader: v,
+    sidebarFooter: x,
     onPanelChange: y,
     emptyState: h
   } = e, [g, O] = l.useState(true), [C, S] = l.useState(null == (t = b.entry(p)) ? true : t.targetPanel), [_, P] = l.useState(() => b.typedGet(C)), E = l.useCallback(() => T(true), []), [N, T] = l.useState({
@@ -92,8 +92,8 @@ function f(e) {
       className: c.container,
       children: [(0, r.jsx)(i.P, {
         root: m,
-        header: x,
-        footer: v,
+        header: v,
+        footer: x,
         onClose: Z,
         emptyState: h
       }), (0, r.jsx)(o.Z, {

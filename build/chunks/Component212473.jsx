@@ -1,29 +1,31 @@
 /** Chunk was on 9452 **/
 /** chunk id: 212473, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  K: () => d
+  K: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
+  Chunk703288 = require("./703288.jsx"),
   Chunk574755 = require("./574755.jsx"),
   Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let c = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
+let E = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6e),
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk574755.Z, {
       showHeader: false
     })
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6e),
-    buildLayout: () => [c]
+    useBadge: () => (0, Chunk951288.jsx)(Chunk703288.Z, {}),
+    buildLayout: () => [E]
   }),
-  d = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
+  T = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
     icon: Chunk657707.AlX,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6e),
     legacySearchKey: Chunk726985.s6.CLIPS,
-    buildLayout: () => [E]
+    buildLayout: () => [d]
   })

@@ -23,12 +23,12 @@ function u(e) {
       ContextProvider: p,
       useCollapsibleTitle: j
     } = u,
-    x = m.filter(e => {
+    v = m.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    v = null != b ? x.slice(0, b) : x,
-    y = null != b ? x.slice(b) : [],
+    x = null != b ? v.slice(0, b) : v,
+    y = null != b ? v.slice(b) : [],
     h = null != p ? p : l.Fragment,
     g = null != (t = null == j ? true : j(d, y.length)) ? t : (n = y.length, d ? s.intl.formatToPlainString(s.t["3SHL+f"], {
       count: n
@@ -38,10 +38,10 @@ function u(e) {
   return (0, r.jsx)(h, {
     children: (0, r.jsxs)(o.Kqy, {
       gap: 8,
-      children: [v.map((e, t) => (0, r.jsxs)(l.Fragment, {
+      children: [x.map((e, t) => (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)(i.Z, {
           node: e
-        }), y.length > 0 && t !== v.length - 1 && (0, r.jsx)(o.izJ, {})]
+        }), y.length > 0 && t !== x.length - 1 && (0, r.jsx)(o.izJ, {})]
       }, e.key)), y.length > 0 && (0, r.jsxs)("div", {
         className: c.collapsibleContainer,
         children: [(0, r.jsx)(o.izJ, {

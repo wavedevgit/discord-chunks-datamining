@@ -25,7 +25,7 @@ function j(e) {
     onClose: m,
     emptyState: j
   } = e, {
-    showNavigationMobile: v
+    showNavigationMobile: x
   } = (0, d.t)(), y = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
@@ -61,7 +61,7 @@ function j(e) {
         return (0, r.jsxs)("div", {
           className: i()(p.sidebar, e, {
             [p.mobile]: a.tq,
-            [p.mobileNavigationOpen]: v
+            [p.mobileNavigationOpen]: x
           }),
           children: [(0, r.jsxs)("div", {
             className: p.fixedContent,
@@ -75,7 +75,7 @@ function j(e) {
                 "aria-label": b.intl.string(b.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
-              children: h.map(e => (0, r.jsx)(x, {
+              children: h.map(e => (0, r.jsx)(v, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -85,7 +85,7 @@ function j(e) {
             fade: true,
             children: [(0, r.jsx)("nav", {
               className: p.nav,
-              children: g.map(e => (0, r.jsx)(x, {
+              children: g.map(e => (0, r.jsx)(v, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -97,7 +97,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   var t;
   let {
     section: n,

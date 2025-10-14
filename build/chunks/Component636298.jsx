@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,52 +34,55 @@ function p(e) {
 function j(e) {
   let {
     title: t,
-    onClose: n
+    badge: n,
+    onClose: l
   } = e, {
-    setShowNavigationMobile: l
-  } = (0, d.t)(), o = (0, u.Ll)();
+    setShowNavigationMobile: o
+  } = (0, d.t)(), s = (0, u.Ll)();
   return (0, r.jsx)(c.f6W, {
-    theme: o,
+    theme: s,
     children: e => (0, r.jsxs)("div", {
       className: i()(b.contentHeader, e),
       children: [(0, r.jsxs)("div", {
         className: b.contentHeaderLeft,
         children: [a.tq && (0, r.jsx)(p, {
           icon: c.yFM,
-          onClick: () => l(true),
+          onClick: () => o(true),
           label: m.intl.string(m.t["13/7kZ"])
         }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-secondary",
           children: t
-        })]
+        }), null != n && n]
       }), (0, r.jsx)(p, {
         icon: c.Uz9,
-        onClick: n,
+        onClick: l,
         label: m.intl.string(m.t.cpT0Cg)
       })]
     })
   })
 }
-let x = Chunk647438.memo(function(e) {
+let v = Chunk647438.memo(function(e) {
+  var t, n;
   let {
-    onClose: t,
-    setting: n
-  } = e, l = null == n ? true : n.useTitle(), {
-    showNavigationMobile: o
+    onClose: l,
+    setting: o
+  } = e, s = null != (n = null == o ? true : o.useTitle()) ? n : "", c = null == o || null == (t = o.useBadge) ? true : t.call(o), {
+    showNavigationMobile: u
   } = (0, d.t)();
   return (0, r.jsxs)("div", {
     className: i()(b.content, {
       [b.mobile]: a.tq,
-      [b.mobileNavigationOpen]: o
+      [b.mobileNavigationOpen]: u
     }),
     children: [(0, r.jsx)(j, {
-      title: l,
-      onClose: t
+      title: s,
+      badge: c,
+      onClose: l
     }), (0, r.jsx)("div", {
       className: b.contentBody,
-      children: null != n && (0, r.jsx)(f.Z, {
-        node: n
+      children: null != o && (0, r.jsx)(f.Z, {
+        node: o
       })
     })]
   })
