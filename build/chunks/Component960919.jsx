@@ -18,7 +18,7 @@ let Chunk17702 = require("./17702.js"),
       shouldUseThemeColor: n = false,
       loading: r,
       className: u
-    } = e, p = (0, s.ZP)(), _ = n && (0, a.ap)(p) ? c : d;
+    } = e, p = (0, s.ZP)(), _ = n && (0, a.ap)(p) ? d : c;
     return (0, i.jsx)("img", {
       className: l()(o.orbIconSVG, u, {
         [o.loading]: r

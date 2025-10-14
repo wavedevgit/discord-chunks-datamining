@@ -1,7 +1,7 @@
 /** Chunk was on 93210 **/
 /** chunk id: 653079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -17,15 +17,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk763740 = require("./763740.js");
-let f = e => {
+let I = e => {
   let {
     user: t,
     guildId: n,
     selectedNameplate: r
-  } = e, f = (0, a.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
-    product: I,
-    purchase: b
-  } = (0, d.Z)(null == r ? true : r.skuId), v = (0, p.kd)(I), S = h.ZP.canUseCollectibles(t), x = (0, o.qS)(b), C = (0, o.G1)(I), E = !S && x, y = null == b || E;
+  } = e, I = (0, a.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
+    product: b,
+    purchase: f
+  } = (0, c.Z)(null == r ? true : r.skuId), v = (0, p.kd)(b), S = h.ZP.canUseCollectibles(t), x = (0, o.qS)(f), C = (0, o.G1)(b), E = !S && x, y = null == f || E;
   return (0, i.jsxs)("div", {
     className: l()(g.previewBorder, {
       [g.upsell]: null != r && y
@@ -37,22 +37,22 @@ let f = e => {
       children: (0, i.jsxs)("div", {
         className: g.previewContents,
         "aria-hidden": true,
-        children: [(0, i.jsx)(c.d, {
+        children: [(0, i.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, i.jsx)(c.d, {
+        }), (0, i.jsx)(d.d, {
           width: 124,
           opacity: .9
         }), (0, i.jsx)(u.Z, {
           user: t,
           guildId: n,
           nameplate: r,
-          pendingGlobalName: f,
+          pendingGlobalName: I,
           isHighlighted: true
-        }), (0, i.jsx)(c.d, {
+        }), (0, i.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, i.jsx)(c.d, {
+        }), (0, i.jsx)(d.d, {
           width: 124,
           opacity: .9
         })]

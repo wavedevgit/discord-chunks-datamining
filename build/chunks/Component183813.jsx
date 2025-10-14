@@ -35,10 +35,10 @@ function L(e) {
     step: w
   } = (0, m.JL)(), {
     setSelectedGiftingPromotionReward: I,
-    selectedGiftingPromotionReward: P,
-    claimableRewards: O,
+    selectedGiftingPromotionReward: O,
+    claimableRewards: P,
     claimableVariants: E
-  } = (0, h.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(O, E, P), [M, A] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(M), F = i.useMemo(() => null == E ? null != O ? O : [] : E.flatMap(e => {
+  } = (0, h.wD)(), T = (0, o.e7)([_.default], () => _.default.getCurrentUser()), k = (0, c.ZP)(P, E, O), [M, A] = i.useState(null != (n = null == k ? true : k.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == k || null == (t = k.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(M), F = i.useMemo(() => null == E ? null != P ? P : [] : E.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -69,15 +69,15 @@ function L(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [E, O, M]);
+  }), [E, P, M]);
   i.useEffect(() => {
-    let e = null == T ? true : T.defaultHighlightedReward;
-    !N && null == P && null != e && null != e && F.some(t => t.skuId === e.skuId) && (I(e), B(e.skuId))
-  }, [T, N, P, F, I]), i.useEffect(() => {
-    (null == T ? true : T.defaultCategory) == null || N || A(T.defaultCategory)
-  }, [null == T ? true : T.defaultCategory, N]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
-  let H = i.useMemo(() => null != Z && (null != O ? O : []).some(e => e.skuId === Z), [Z, O]),
-    U = i.useMemo(() => null != P && F.some(e => e.skuId === P.skuId), [F, P]),
+    let e = null == k ? true : k.defaultHighlightedReward;
+    !N && null == O && null != e && null != e && F.some(t => t.skuId === e.skuId) && (I(e), B(e.skuId))
+  }, [k, N, O, F, I]), i.useEffect(() => {
+    (null == k ? true : k.defaultCategory) == null || N || A(k.defaultCategory)
+  }, [null == k ? true : k.defaultCategory, N]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
+  let H = i.useMemo(() => null != Z && (null != P ? P : []).some(e => e.skuId === Z), [Z, P]),
+    U = i.useMemo(() => null != O && F.some(e => e.skuId === O.skuId), [F, O]),
     D = i.useMemo(() => 0 === F.length || null == Z || !U || !H, [F, Z, H, U]);
   i.useEffect(() => {
     if (0 === F.length) {
@@ -98,8 +98,8 @@ function L(e) {
         assetId: e.assetId,
         productName: null == (t = e.name) ? true : t.call(e),
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
-        claimed: null != O && O.every(t => t.skuId !== e.skuId),
-        user: k,
+        claimed: null != P && P.every(t => t.skuId !== e.skuId),
+        user: T,
         onSelect: z,
         selectedSkuId: Z,
         category: M
@@ -111,9 +111,9 @@ function L(e) {
         className: y.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != P && f.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: k.id,
-              reward_sku_id: P.skuId
+            null != T && null != O && f.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: T.id,
+              reward_sku_id: O.skuId
             }), a(e)
           },
           onBackClick: () => a(x.h8.PLAN_SELECT),

@@ -44,12 +44,12 @@ function N(e) {
     isOwner: N,
     size: x = "lg",
     showIcons: O = false,
-    collectibleSource: j = v.lr.WISHLIST
+    collectibleSource: j = L.lr.WISHLIST
   } = e, M = s.useRef(null), F = s.useRef(null), {
     isHoveringOrFocusing: D
   } = (0, T.Z)(F), b = t.collectiblesItem, {
     analyticsLocations: V
-  } = (0, S.ZP)(), z = (0, a.TH)(), B = b.type, [G] = (0, o.Wu)([k.Z], () => [k.Z.hasSentGift(t.skuId, i.id)], [t.skuId, i.id]), K = !G && D, Q = N ? U.t.FdGl5O : U.t.ilhtIS, Y = N ? true : d.OgN, J = (0, l.jsx)("div", {
+  } = (0, I.ZP)(), z = (0, a.TH)(), B = b.type, [G] = (0, o.Wu)([k.Z], () => [k.Z.hasSentGift(t.skuId, i.id)], [t.skuId, i.id]), K = !G && D, Q = N ? U.t.FdGl5O : U.t.ilhtIS, Y = N ? true : d.OgN, J = (0, l.jsx)("div", {
     className: R.cardStateIconWrapper,
     children: (0, l.jsx)(d.sV5, {
       size: "custom",
@@ -75,8 +75,8 @@ function N(e) {
     })
   }), $ = s.useCallback(() => {
     if (z.pathname.startsWith(H.Z5c.COLLECTIBLES_SHOP)) {
-      let e = I.Z.getProduct(t.skuId),
-        i = I.Z.getCategoryForProduct(t.skuId);
+      let e = S.Z.getProduct(t.skuId),
+        i = S.Z.getCategoryForProduct(t.skuId);
       if (null != e && null != i) {
         (0, y.closeUserProfileModal)(), (0, m.T)({
           product: e,
@@ -140,7 +140,7 @@ function N(e) {
                   itemName: t.skuName
                 });
               default:
-                (0, L.vE)(B)
+                (0, v.vE)(B)
             }
           })()
         })
@@ -204,7 +204,7 @@ function N(e) {
           }
         })()
       }), G && J, !G && X]
-    }), O ? j === v.lr.WISHLIST ? (0, l.jsx)("div", {
+    }), O ? j === L.lr.WISHLIST ? (0, l.jsx)("div", {
       className: R.itemIcon,
       children: (0, l.jsx)(d.h_8, {
         size: "custom",
@@ -213,7 +213,7 @@ function N(e) {
         color: "currentColor",
         colorClass: R.itemIconHeart
       })
-    }) : j === v.lr.POPULAR ? (0, l.jsx)("div", {
+    }) : j === L.lr.POPULAR ? (0, l.jsx)("div", {
       className: R.itemIcon,
       children: (0, l.jsx)(d.EOn, {
         size: "custom",

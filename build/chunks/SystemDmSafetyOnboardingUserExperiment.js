@@ -2,9 +2,9 @@
 /** chunk id: 986081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => l,
-  Z: () => r
+  Z: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
     kind: "user",
     id: "2022-07_system_dm_safety_onboarding",
     label: "System DM Safety Onboarding",
@@ -25,10 +25,10 @@ let i = (0, require("./818083.js").B)({
       }
     }]
   }),
-  r = i;
+  i = r;
 
 function l() {
-  return i.getCurrentConfig({
+  return r.getCurrentConfig({
     location: "0a5674_1"
   }, {
     autoTrackExposure: false

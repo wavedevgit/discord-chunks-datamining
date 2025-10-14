@@ -15,9 +15,9 @@ function s(e) {
   let {
     children: t
   } = e;
-  return (0, i.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: o.cellGroup,
-    children: (0, i.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: o.content,
       children: t
     })
@@ -28,53 +28,53 @@ function u(e) {
   let {
     icon: t,
     title: n,
-    description: r,
+    description: i,
     iconClassName: s,
     color: u,
     listType: c = "icon",
     completed: d = false,
     index: p
   } = e;
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: o.cell,
     children: [(() => {
       if ("numbered" === c && null != p)
-        if (d) return (0, i.jsx)("div", {
+        if (d) return (0, r.jsx)("div", {
           className: o.number,
-          children: (0, i.jsx)(a.sV5, {
+          children: (0, r.jsx)(a.sV5, {
             color: "green",
             className: l()(o.icon, s)
           })
         });
-        else return (0, i.jsx)(a.Heading, {
+        else return (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: o.number,
           children: p + 1
         });
-      if (null != t) return (0, i.jsx)("div", {
+      if (null != t) return (0, r.jsx)("div", {
         className: o.iconContainer,
-        children: (0, i.jsx)(t, {
+        children: (0, r.jsx)(t, {
           color: null != u ? u : "currentColor",
           className: l()(o.icon, s)
         })
       })
-    })(), (0, i.jsxs)("div", {
+    })(), (0, r.jsxs)("div", {
       className: o.textContainer,
-      children: [(0, i.jsx)(a.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         className: l()({
           [o.completedText]: d
         }),
         children: n
-      }), null != r && (0, i.jsx)(a.Text, {
+      }), null != i && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
         className: l()({
           [o.completedText]: d
         }),
-        children: r
+        children: i
       })]
     })]
   })

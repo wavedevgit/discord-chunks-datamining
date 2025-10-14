@@ -40,15 +40,15 @@ function p(e) {
     newestAnalyticsLocation: _
   } = (0, a.ZP)(), h = t.type === r.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t.type === r.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t.type === r.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
   return null == h ? null : (0, i.jsxs)("div", {
-    className: c.nitroUpsellContainer,
+    className: d.nitroUpsellContainer,
     children: [(0, i.jsx)(l.SrA, {
-      className: c.nitroWheel,
+      className: d.nitroWheel,
       size: "md",
       color: s.JX.PREMIUM_TIER_2
     }), (0, i.jsx)(l.Text, {
-      className: c.nitroText,
+      className: d.nitroText,
       variant: "text-md/medium",
-      children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? d.intl.format(d.t["aFR/EB"], {
+      children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EB"], {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
@@ -56,15 +56,15 @@ function p(e) {
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, i.jsx)(e, u({
               premiumUpsellType: h,
-              title: d.intl.string(d.t.JI7uhY),
-              body: d.intl.string(d.t["5XvsdX"]),
-              glowUp: d.intl.string(d.t["5XvsdX"]),
+              title: c.intl.string(c.t.JI7uhY),
+              body: c.intl.string(c.t["5XvsdX"]),
+              glowUp: c.intl.string(c.t["5XvsdX"]),
               analyticsSource: _,
               onSecondaryClick: p
             }, t))
           })
         }
-      }) : h === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? d.intl.format(d.t.eWNOND, {
+      }) : h === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNOND, {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
@@ -72,15 +72,15 @@ function p(e) {
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, i.jsx)(e, u({
               premiumUpsellType: h,
-              title: d.intl.string(d.t.sYm15e),
-              body: d.intl.string(d.t["Hza+Bg"]),
-              glowUp: d.intl.string(d.t["Hza+Bg"]),
+              title: c.intl.string(c.t.sYm15e),
+              body: c.intl.string(c.t["Hza+Bg"]),
+              glowUp: c.intl.string(c.t["Hza+Bg"]),
               analyticsSource: _,
               onSecondaryClick: p
             }, t))
           })
         }
-      }) : h === o.cd.NAMEPLATE_MODAL_UPSELL ? d.intl.format(d.t.G6b8TE, {
+      }) : h === o.cd.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TE, {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
@@ -88,9 +88,9 @@ function p(e) {
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, i.jsx)(e, u({
               premiumUpsellType: h,
-              title: d.intl.string(d.t.k7UN4u),
-              body: d.intl.string(d.t["0/QPxM"]),
-              glowUp: d.intl.string(d.t["0/QPxM"]),
+              title: c.intl.string(c.t.k7UN4u),
+              body: c.intl.string(c.t["0/QPxM"]),
+              glowUp: c.intl.string(c.t["0/QPxM"]),
               analyticsSource: _,
               onSecondaryClick: p
             }, t))

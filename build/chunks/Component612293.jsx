@@ -29,21 +29,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk886020 = require("./886020.js");
 
-function k(e) {
+function w(e) {
   var t, n;
   let {
-    currentUser: d,
+    currentUser: c,
     categories: _,
-    purchases: b,
+    purchases: f,
     analyticsLocations: v,
     onClose: E,
-    guildId: k,
+    guildId: w,
     initialSelectedNameplate: P
-  } = e, Z = (0, l.e7)([I.ZP], () => null != k && null != d ? I.ZP.getMember(k, d.id) : null), A = null != Z ? null == Z || null == (t = Z.collectibles) ? true : t.nameplate : null == d || null == (n = d.collectibles) ? true : n.nameplate, {
+  } = e, Z = (0, l.e7)([b.ZP], () => null != w && null != c ? b.ZP.getMember(w, c.id) : null), A = null != Z ? null == Z || null == (t = Z.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
     pendingNameplate: L
-  } = (0, f.Zx)(d, k), [j, U] = (0, r.useState)(() => {
+  } = (0, I.Zx)(c, w), [j, U] = (0, r.useState)(() => {
     var e;
-    return null != P ? P : true !== L ? L : null == A ? null : null != (e = (0, u.Y)(b, _).find(e => {
+    return null != P ? P : true !== L ? L : null == A ? null : null != (e = (0, u.Y)(f, _).find(e => {
       let {
         skuId: t
       } = e;
@@ -52,8 +52,8 @@ function k(e) {
   }), {
     product: B,
     purchase: N
-  } = (0, p.Z)(null == j ? true : j.skuId), O = S.ZP.canUseCollectibles(d), M = true === L ? (null == j ? true : j.skuId) === (null == A ? true : A.skuId) : (null == j ? true : j.skuId) === (null == L ? true : L.skuId), W = (0, r.useCallback)(e => {
-    E(), (0, c.mK)({
+  } = (0, p.Z)(null == j ? true : j.skuId), O = S.ZP.canUseCollectibles(c), M = true === L ? (null == j ? true : j.skuId) === (null == A ? true : A.skuId) : (null == j ? true : j.skuId) === (null == L ? true : L.skuId), W = (0, r.useCallback)(e => {
+    E(), (0, d.mK)({
       analyticsLocations: v,
       analyticsSource: o.Z.EDIT_NAMEPLATE_MODAL,
       initialProductSkuId: e
@@ -63,38 +63,38 @@ function k(e) {
     children: [(0, i.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
-      className: w.header,
+      className: k.header,
       children: [(0, i.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         children: T.intl.string(T.t.BwdeMz)
       }), (0, i.jsx)(a.olH, {
         "data-migration-pending": true,
-        className: w.closeButton,
+        className: k.closeButton,
         onClick: E
       })]
     }), (0, i.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: w.content,
+      className: k.content,
       scrollbarType: "none",
       children: [(0, i.jsx)(C.Z, {
-        currentUser: d,
+        currentUser: c,
         selectedNameplate: j,
-        guildId: k,
+        guildId: w,
         onSelect: U,
         onOpenShop: W
       }), (0, i.jsx)(x.Z, {
-        user: d,
-        guildId: k,
+        user: c,
+        guildId: w,
         selectedNameplate: j
       })]
     }), (0, i.jsxs)(a.mzw, {
       "data-migration-pending": true,
-      className: w.modalFooter,
+      className: k.modalFooter,
       children: [null != N && (!(0, u.qS)(N) || O) || null === j ? (0, i.jsx)(a.Button, {
         variant: "primary",
         text: T.intl.string(T.t.Jh8fJy),
         onClick: () => {
-          null != k ? (0, h.RH)(j) : (0, s.Rx)(j), E()
+          null != w ? (0, h.RH)(j) : (0, s.Rx)(j), E()
         },
         disabled: M
       }) : null == N && (O || !(0, u.G1)(B)) ? (0, i.jsx)(a.Button, {
@@ -105,7 +105,7 @@ function k(e) {
         subscriptionTier: y.Si.TIER_2,
         showGradient: !O,
         textOptions: {
-          textOverride: S.ZP.isPremium(d) ? T.intl.string(T.t.KXLX7u) : O ? T.intl.string(T.t.mr4K7O) : T.intl.string(T.t.pj0XBA)
+          textOverride: S.ZP.isPremium(c) ? T.intl.string(T.t.KXLX7u) : O ? T.intl.string(T.t.mr4K7O) : T.intl.string(T.t.pj0XBA)
         }
       }), !O && (0, u.G1)(B) ? (0, i.jsx)(m.Z, {
         product: B,
@@ -124,22 +124,22 @@ function P(e) {
     transitionState: t,
     analyticsLocations: n,
     onClose: s,
-    guildId: c,
+    guildId: d,
     initialSelectedNameplate: u
-  } = e, p = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, p = (0, l.e7)([f.default], () => f.default.getCurrentUser()), {
     analyticsLocations: h
-  } = (0, d.ZP)(n, o.Z.EDIT_NAMEPLATE_MODAL), {
+  } = (0, c.ZP)(n, o.Z.EDIT_NAMEPLATE_MODAL), {
     categories: m,
     purchases: g,
-    isFetchingCategories: f,
-    isFetchingPurchases: I
-  } = (0, _.ZP)(), S = f || I && 0 === g.size;
+    isFetchingCategories: I,
+    isFetchingPurchases: b
+  } = (0, _.ZP)(), S = I || b && 0 === g.size;
   return ((0, r.useEffect)(() => {
     v.default.track(E.rMx.OPEN_MODAL, {
       type: E.jXE.NAMEPLATE_CUSTOMIZATION,
       location_stack: h
     })
-  }, [h]), null == p) ? null : (0, i.jsx)(d.Gt, {
+  }, [h]), null == p) ? null : (0, i.jsx)(c.Gt, {
     value: h,
     children: (0, i.jsx)(a.Y0X, {
       transitionState: t,
@@ -147,14 +147,14 @@ function P(e) {
       parentComponent: "NameplateModal",
       "data-migration-pending": true,
       children: S ? (0, i.jsx)(a.$jN, {
-        className: w.spinner,
+        className: k.spinner,
         type: a.$jN.Type.SPINNING_CIRCLE
-      }) : (0, i.jsx)(k, {
+      }) : (0, i.jsx)(w, {
         currentUser: p,
         categories: m,
         purchases: g,
         analyticsLocations: h,
-        guildId: c,
+        guildId: d,
         initialSelectedNameplate: u,
         onClose: s
       })

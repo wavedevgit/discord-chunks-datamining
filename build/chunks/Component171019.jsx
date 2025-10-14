@@ -22,13 +22,13 @@ let u = e => {
     return (0, o.G1)(e)
   });
   return t || n && u ? null : _ ? (0, i.jsx)(a.lBU, {
-    className: c.newBadge,
+    className: d.newBadge,
     text: (0, i.jsxs)("div", {
-      className: c.newBadgeText,
+      className: d.newBadgeText,
       children: [(0, i.jsx)(a.mBM, {
         size: "xxs",
         color: "currentColor"
-      }), d.intl.string(d.t.y2b7CA)]
+      }), c.intl.string(c.t.y2b7CA)]
     })
   }) : (0, i.jsx)(a.G2e, {
     icon: h ? () => (0, i.jsx)(a.SrA, {
@@ -41,6 +41,6 @@ let u = e => {
       color: "currentColor"
     }),
     color: r.Z.BACKGROUND_ACCENT,
-    className: c.iconBadge
+    className: d.iconBadge
   })
 }

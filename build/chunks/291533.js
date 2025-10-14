@@ -15,15 +15,15 @@ let d = 12633 == require.j ? 18e4 : null;
 
 function p(e) {
   let t = (0, u.A2)(e),
-    n = (0, i.e7)([a.Z], () => a.Z.isOpen()),
-    p = (0, i.e7)([s.Z], () => s.Z.hasLayers()),
+    n = (0, r.e7)([a.Z], () => a.Z.isOpen()),
+    p = (0, r.e7)([s.Z], () => s.Z.hasLayers()),
     {
       isQuestBarEmpty: f,
       hasLoadedQuestBar: _
     } = (0, o.Ws)({
       location: c.dr.QUESTS_BAR
     });
-  return (0, l.bf)(t && !n && !p && f && _ ? r.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+  return (0, l.bf)(t && !n && !p && f && _ ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
     cooldownDurationMs: d
   })
 }

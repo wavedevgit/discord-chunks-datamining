@@ -76,11 +76,11 @@ function G(e) {
     onSubscriptionConfirmation: v,
     renderPurchaseConfirmation: w,
     postSuccessGuild: I,
-    followupSKUInfo: P,
-    renderHeader: O,
+    followupSKUInfo: O,
+    renderHeader: P,
     applicationId: E,
-    guildId: k,
-    referralTrialOfferId: T,
+    guildId: T,
+    referralTrialOfferId: k,
     skuId: Z,
     returnRef: B,
     skipConfirm: N = false,
@@ -121,11 +121,11 @@ function G(e) {
       onSubscriptionConfirmation: v,
       renderPurchaseConfirmation: w,
       postSuccessGuild: I,
-      followupSKUInfo: P,
-      renderHeader: O,
+      followupSKUInfo: O,
+      renderHeader: P,
       applicationId: E,
-      guildId: k,
-      referralTrialOfferId: T,
+      guildId: T,
+      referralTrialOfferId: k,
       skuId: Z,
       shakeWhilePurchasing: true,
       isDynamicModal: z,
@@ -149,11 +149,11 @@ function F(e) {
   } = (0, m.JL)(), {
     isGift: C,
     claimableRewards: c
-  } = (0, h.wD)(), p = (0, T.Z)({
+  } = (0, h.wD)(), p = (0, k.Z)({
     isGift: C,
     skuId: s,
     referralTrialOfferId: l
-  }), _ = (0, P.Fv)(p), f = (0, u.id)(d, C, c);
+  }), _ = (0, O.Fv)(p), f = (0, u.id)(d, C, c);
   return (0, r.jsx)(b.J, (t = N({}, e), n = n = {
     breadcrumbSteps: R,
     onReturn: () => {
@@ -190,17 +190,17 @@ let H = function() {
       }
     }, {
       key: Chunk409813.h8.WHAT_YOU_LOSE,
-      renderStep: e => (0, r.jsx)(k.x, N({}, e)),
+      renderStep: e => (0, r.jsx)(T.x, N({}, e)),
       options: {
         renderHeader: false,
         hideSlider: true
       }
     }, {
       key: Chunk409813.h8.PLAN_SELECT,
-      renderStep: e => (0, r.jsx)(O.x, N({}, e)),
+      renderStep: e => (0, r.jsx)(P.x, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : Z.intl.string(Z.t["r+SebW"]),
+        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : Z.intl.string(Z.t["r+SebW"]),
         sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
       }
     }, {
@@ -208,7 +208,7 @@ let H = function() {
       renderStep: e => (0, r.jsx)(F, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : Z.intl.string(Z.t.Sb6wIy)
+        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : Z.intl.string(Z.t.Sb6wIy)
       }
     }, {
       key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -221,7 +221,7 @@ let H = function() {
       renderStep: e => (0, r.jsx)(v.l, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, P.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHh)
+        useBreadcrumbLabel: e => (0, O.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHh)
       }
     }, {
       key: Chunk409813.h8.CONFIRM,

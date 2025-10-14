@@ -1,7 +1,7 @@
 /** Chunk was on 93210 **/
 /** chunk id: 576386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,25 +24,25 @@ let g = e => {
       section: o,
       canUsePremiumCollectibles: p,
       isSelected: g,
-      onClick: f
-    } = e, I = (0, r.useRef)(null), {
-      isHoveringOrFocusing: b
-    } = (0, u.Z)(I);
+      onClick: I
+    } = e, b = (0, r.useRef)(null), {
+      isHoveringOrFocusing: f
+    } = (0, u.Z)(b);
     return (0, i.jsxs)(s.P3F, {
-      innerRef: I,
+      innerRef: b,
       "aria-label": null != (t = l.label) ? t : h.intl.string(h.t.x5CoXV),
       className: m.nameplateItem,
-      onClick: f,
-      children: [(0, i.jsx)(c.Z, {
+      onClick: I,
+      children: [(0, i.jsx)(d.Z, {
         nameplate: l,
         user: n,
         showPlaceholderUser: true,
-        isHighlighted: b
+        isHighlighted: f
       }), (0, i.jsx)("div", {
         className: a()(m.nameplateItemOverlay, {
           [m.selected]: g
         })
-      }), (0, i.jsx)(d.Z, {
+      }), (0, i.jsx)(c.Z, {
         isPurchaseSection: o === _.$0.PURCHASE,
         isPremiumSection: o === _.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: p,
@@ -50,14 +50,14 @@ let g = e => {
       })]
     })
   },
-  f = e => {
+  I = e => {
     let {
       currentUser: t,
       selectedNameplate: n,
       guildId: r,
       onSelect: l,
-      onOpenShop: d
-    } = e, c = p.ZP.canUseCollectibles(t), u = (0, _.ZP)();
+      onOpenShop: c
+    } = e, d = p.ZP.canUseCollectibles(t), u = (0, _.ZP)();
     return (0, i.jsx)(s.u2D, {
       className: m.inventory,
       children: u.map(e => (0, i.jsxs)(s.Kqy, {
@@ -81,7 +81,7 @@ let g = e => {
             })]
           }), (0, i.jsxs)(s.P3F, {
             className: m.inventoryControlsButton,
-            onClick: d,
+            onClick: c,
             children: [(0, i.jsx)(s.EOn, {
               size: "md",
               color: "currentColor"
@@ -96,7 +96,7 @@ let g = e => {
             currentUser: t,
             nameplate: r,
             section: e.section,
-            canUsePremiumCollectibles: c,
+            canUsePremiumCollectibles: d,
             isSelected: (null == n ? true : n.skuId) === r.skuId,
             onClick: () => l(r)
           }, r.skuId))

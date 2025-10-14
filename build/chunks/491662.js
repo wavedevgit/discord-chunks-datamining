@@ -9,13 +9,13 @@ var Chunk647438 = require("./647438.js"),
   Chunk881998 = require("./881998.js");
 
 function o(e, t) {
-  let n = (0, r.e7)([a.Z], () => a.Z.getNewestTokenForApplication(e)),
-    o = (0, r.e7)([a.Z], () => null != e ? a.Z.getFetchStateForApplication(e) : a.M.NOT_FETCHED),
+  let n = (0, i.e7)([a.Z], () => a.Z.getNewestTokenForApplication(e)),
+    o = (0, i.e7)([a.Z], () => null != e ? a.Z.getFetchStateForApplication(e) : a.M.NOT_FETCHED),
     s = o === a.M.FETCHED,
     {
       disableFetch: u = false
     } = null != t ? t : {};
-  return i.useEffect(() => {
+  return r.useEffect(() => {
     u || o !== a.M.NOT_FETCHED || null != e && l.Z.fetchByApplicationId(e)
   }, [u, o, e]), {
     token: n,

@@ -235,7 +235,6 @@ let k = {
           }), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.FEATURES:
-        case Z.jE.SHOP:
           (null == n ? true : n.path) != null && ((0, I.dL)({
             pathname: n.path
           }), D(n.fingerprint, (0, Z.O)(t)));
