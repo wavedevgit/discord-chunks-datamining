@@ -57,12 +57,12 @@ function h(e) {
     inPopout: n
   } = e, {
     reducedMotion: h
-  } = i.useContext(o.Sf), y = (0, i.useRef)(null), S = d.n.getState().clipsButtonRef, O = (0, f.V9)(t), I = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), C = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(O)), w = (0, i.useRef)(true);
+  } = i.useContext(o.Sf), S = (0, i.useRef)(null), y = d.n.getState().clipsButtonRef, O = (0, f.V9)(t), I = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), C = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(O)), w = (0, i.useRef)(true);
   i.useEffect(() => () => {
     (0, u.Gh)(O)
   }, [O]);
   let j = e => {
-      let t = null == S ? true : S.getBoundingClientRect();
+      let t = null == y ? true : y.getBoundingClientRect();
       if (w.current = t, e.timestamp !== I || null == t || n) return g;
       let {
         top: r,
@@ -97,7 +97,7 @@ function h(e) {
         opacity: 1
       }, h.enabled ? j(e) : (() => {
         var e;
-        let t = null == (e = y.current) ? true : e.getBoundingClientRect();
+        let t = null == (e = S.current) ? true : e.getBoundingClientRect();
         return null == t || n ? g : {
           width: t.width,
           height: t.height,
@@ -128,7 +128,7 @@ function h(e) {
   return (0, l.useChain)([Z, x], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: _.hidden,
-      ref: y
+      ref: S
     }), P((e, t) => null != t && (0, r.jsx)(l.animated.div, {
       className: _.whiteFlash,
       style: e

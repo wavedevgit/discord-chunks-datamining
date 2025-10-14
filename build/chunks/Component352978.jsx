@@ -28,13 +28,13 @@ let _ = Chunk647438.memo(function(e) {
     videoSpinnerContext: b,
     userId: v,
     streamKey: h
-  } = e, [y, S] = l.useState(true);
+  } = e, [S, y] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
     videoSpinnerContext: b,
     userId: v,
     streamId: t,
-    loading: y,
+    loading: S,
     paused: g
   });
   let {
@@ -42,12 +42,12 @@ let _ = Chunk647438.memo(function(e) {
   } = (0, s.Z)({
     streamId: t,
     userId: v,
-    loading: y,
+    loading: S,
     videoSpinnerContext: b,
     streamKey: h,
     paused: g
   }), I = l.useCallback(() => {
-    S(false), O()
+    y(false), O()
   }, [O]);
   return (0, i.jsxs)("div", {
     className: o()(f.wrapper, r),
@@ -61,9 +61,9 @@ let _ = Chunk647438.memo(function(e) {
       paused: g
     }), g ? null : (0, i.jsx)("div", {
       className: o()(f.previewWrapper, {
-        [f.loading]: y
+        [f.loading]: S
       }),
-      children: y && (0, i.jsxs)(l.Fragment, {
+      children: S && (0, i.jsxs)(l.Fragment, {
         children: [null != E ? (0, i.jsx)("img", {
           src: E,
           alt: "",

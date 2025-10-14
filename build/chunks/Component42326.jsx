@@ -48,16 +48,16 @@ function g(e) {
     }
   }(l);
   null != t && null != E ? g = "".concat(t, " ").concat(E) : null != t && (g = t);
-  let [v] = i.useState(new o.V7), [h, y] = i.useState(false);
+  let [v] = i.useState(new o.V7), [h, S] = i.useState(false);
 
-  function S() {
+  function y() {
     v.start(250, () => {
-      y(false)
+      S(false)
     })
   }
 
   function O() {
-    v.stop(), y(true)
+    v.stop(), S(true)
   }
   return (0, r.jsx)(c.aML, {
     forceOpen: h,
@@ -65,7 +65,7 @@ function g(e) {
     text: (0, r.jsx)(f.Z, {
       children: (0, r.jsxs)("div", {
         onMouseEnter: O,
-        onMouseLeave: S,
+        onMouseLeave: y,
         children: [t, null != b && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
@@ -98,12 +98,12 @@ function g(e) {
         return e
       }({}, e), i = i = {
         onMouseEnter: O,
-        onMouseLeave: S,
+        onMouseLeave: y,
         className: a()(n, m.root),
         children: (0, r.jsx)(f.Z, {
           children: (0, r.jsx)(c.Mgn, {
             onMouseEnter: O,
-            onMouseLeave: S,
+            onMouseLeave: y,
             size: "custom",
             width: 20,
             height: 20,

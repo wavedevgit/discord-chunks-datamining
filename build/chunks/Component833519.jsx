@@ -58,7 +58,7 @@ function B(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n || i ? null : (0, r.jsx)(M.Z, {
       participant: t
-    }), i || null == s || s.state === F.jm8.ENDED || s.state === F.jm8.FAILED ? null : (0, r.jsx)(y.Z, {
+    }), i || null == s || s.state === F.jm8.ENDED || s.state === F.jm8.FAILED ? null : (0, r.jsx)(S.Z, {
       size: _.ZP.Sizes.SMALL,
       className: W.liveIndicator,
       participant: t,
@@ -76,7 +76,7 @@ function q(e) {
     onVideoResize: l,
     fit: _,
     inPopout: m,
-    inOverlayPopout: y = false,
+    inOverlayPopout: S = false,
     width: M,
     focused: k,
     wrapperClassName: B,
@@ -165,7 +165,7 @@ function q(e) {
       streamerId: Q.id,
       hasScreenMessage: null != el,
       stream: G
-    }) : null, (0, r.jsx)(S.Z, {
+    }) : null, (0, r.jsx)(y.Z, {
       onResize: l,
       wrapperClassName: a()(W.videoWrapper, B),
       className: W.content,

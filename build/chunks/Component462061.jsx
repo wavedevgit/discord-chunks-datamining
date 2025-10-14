@@ -71,11 +71,11 @@ function M(e) {
     pulseSpeakingIndicator: F = false,
     inOverlayPopout: L = false,
     paused: V = false
-  } = e, U = O.Z.getVideoComponent(), W = (0, o.e7)([y.default], () => y.default.getId()), {
+  } = e, U = O.Z.getVideoComponent(), W = (0, o.e7)([S.default], () => S.default.getId()), {
     user: H,
     streamId: B,
     speaking: q
-  } = t, Y = H.id === W, z = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([S.ZP], () => S.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = q && (G || K), ee = c < 124 ? N : R, {
+  } = t, Y = H.id === W, z = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = q && (G || K), ee = c < 124 ? N : R, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, v.Z)({

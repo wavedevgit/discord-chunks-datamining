@@ -22,8 +22,8 @@ function E(e, t, n, E) {
   let b = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
     v = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     h = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
-    y = r.useRef({}),
-    S = r.useRef(new i.Xp),
+    S = r.useRef({}),
+    y = r.useRef(new i.Xp),
     O = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
@@ -105,7 +105,7 @@ function E(e, t, n, E) {
         canvasRef: e,
         drawables: n,
         fallbackColor: b,
-        linesDrawnAt: y,
+        linesDrawnAt: S,
         streamerId: t,
         outlineColorDark: v,
         outlineColorLight: h,
@@ -128,10 +128,10 @@ function E(e, t, n, E) {
     let t = u.Z.getDrawables(n),
       r = p.U.getState().particles,
       i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == S.current._ref && (null == S.current._ref ? (O(n), S.current.start(g, () => O(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
+    i && null == y.current._ref && (null == y.current._ref ? (O(n), y.current.start(g, () => O(n))) : i || null == y.current._ref || (y.current.stop(), (0, f.UN)(e)))
   }, [e, O, n]);
   r.useEffect(() => {
-    let e = S.current;
+    let e = y.current;
     return u.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, m.Ks)), () => {
       u.Z.removeChangeListener(I), e.stop()
     }

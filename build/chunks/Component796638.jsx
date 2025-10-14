@@ -53,7 +53,7 @@ function E(e, t) {
   let v = i.useRef({}),
     {
       visibleParticipants: h,
-      participantTileWidth: y
+      participantTileWidth: S
     } = i.useMemo(() => {
       let n = Date.now(),
         i = (0, l.sortBy)(t, e => (function(e) {
@@ -78,10 +78,10 @@ function E(e, t) {
         b = null;
       false !== E && (b = p[E], p.splice(E, 1));
       let h = null == b || f ? e : e - r - c,
-        y = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
-        S = Math.min((h - c) / y - c, r),
-        O = Math.max(0, y - _.length),
-        I = _.slice(0, y),
+        S = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
+        y = Math.min((h - c) / S - c, r),
+        O = Math.max(0, S - _.length),
+        I = _.slice(0, S),
         C = p.slice(0, O),
         w = Array(O);
       if (O > 0) {
@@ -100,14 +100,14 @@ function E(e, t) {
       let j = w.filter(s.lm);
       v.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
       let Z = [...I, ...j];
-      return null != b && (f && Z.length >= y ? Z[Math.max(0, Z.length - 1)] = b : Z.push(b)), {
+      return null != b && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = b : Z.push(b)), {
         visibleParticipants: Z,
-        participantTileWidth: S
+        participantTileWidth: y
       }
     }, [e, t, E, p, f, u, c, o, r]);
   return {
     visibleParticipants: h,
-    participantTileWidth: y
+    participantTileWidth: S
   }
 }
 

@@ -3,7 +3,7 @@
 let r;
 require.d(exports, {
   H: () => g,
-  Z: () => y
+  Z: () => S
 }), require("./388685.js"), require("./290780.js");
 var i, l, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -46,7 +46,7 @@ class h extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : h[l] = "VoiceChannelEffectsStore";
-let y = new h(Chunk570140.Z, {
+let S = new h(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t

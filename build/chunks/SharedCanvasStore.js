@@ -1,7 +1,7 @@
 /** Chunk was on 38319 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => S
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -66,7 +66,7 @@ class h extends(r = Chunk442837.ZP.Store) {
   }
 }
 f(h, "displayName", "SharedCanvasStore");
-let y = new h(Chunk570140.Z, {
+let S = new h(Chunk570140.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,

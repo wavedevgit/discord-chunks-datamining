@@ -67,13 +67,13 @@ function u(e, t, n, i, a) {
   })
 }
 
-function d(e, t, n, r) {
-  var i;
-  switch (null == (i = e.activity) ? true : i.type) {
+function d(e, t, n, r, i) {
+  var s;
+  switch (null == (s = e.activity) ? true : s.type) {
     case a.mFx.LISTEN:
     case a.mFx.WATCH:
     case a.mFx.JOIN:
-      return o.intl.string(o.t.x1UXGR);
+      return o.intl.string(i ? o.t.x1UXGR : o.t["Ek+51t"]);
     case a.mFx.STREAM_REQUEST:
       return c(e, n, r);
     case a.mFx.JOIN_REQUEST:

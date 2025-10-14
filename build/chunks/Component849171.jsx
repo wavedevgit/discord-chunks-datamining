@@ -76,8 +76,8 @@ function M(e) {
     var e;
     return null != (e = u.ZP.getEmbeddedActivitiesForChannel(m.id).find(e => e.applicationId === p.id)) ? e : u.ZP.getEmbeddedActivitiesForStartingChannel(m.id).find(e => e.applicationId === p.id)
   }), {
-    analyticsLocations: y
-  } = (0, O.ZP)(), S = (0, s.O)(), C = A.ZP.getName(m.getGuildId(), m.id, null == v ? true : v[0]), w = (0, _.s5)({
+    analyticsLocations: S
+  } = (0, O.ZP)(), y = (0, s.O)(), C = A.ZP.getName(m.getGuildId(), m.id, null == v ? true : v[0]), w = (0, _.s5)({
     userId: null == (t = P.default.getCurrentUser()) ? true : t.id,
     channelId: m.id,
     application: p
@@ -125,8 +125,8 @@ function M(e) {
           e.stopPropagation(), null != h && (0, d.Z)({
             applicationId: h.applicationId,
             activityChannelId: m.id,
-            locationObject: S.location,
-            analyticsLocations: y,
+            locationObject: y.location,
+            analyticsLocations: S,
             componentId: N
           })
         },
@@ -147,7 +147,7 @@ function k(e) {
     channel: c
   } = e, {
     analyticsLocations: s
-  } = (0, O.ZP)(S.Z.ACTIVITY_TILE), {
+  } = (0, O.ZP)(y.Z.ACTIVITY_TILE), {
     applicationId: u
   } = t, d = (0, m.Z)(), f = null != d && (0, p.p)(d.location) === c.id && d.applicationId === u, [_] = (0, C.Z)([u]), {
     url: v
@@ -155,7 +155,7 @@ function k(e) {
     applicationId: u,
     names: N,
     size: 1024
-  }), I = !l && f, j = !f, P = !f && !l, x = (0, o.e7)([Z.Z, w.Z], () => (0, y.Z)({
+  }), I = !l && f, j = !f, P = !f && !l, x = (0, o.e7)([Z.Z, w.Z], () => (0, S.Z)({
     LayerStore: Z.Z,
     PopoutWindowStore: w.Z
   }));

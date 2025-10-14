@@ -34,9 +34,9 @@ function d(e) {
     }
   }, [_, E, b]), h = r.useCallback(e => {
     p && null != g && (e.stopPropagation(), m.current = true, v("handleMouseDown", g, e))
-  }, [v, g, p]), y = r.useCallback(e => {
-    p && null != g && (e.stopPropagation(), m.current && v("handleMouseMove", g, e))
   }, [v, g, p]), S = r.useCallback(e => {
+    p && null != g && (e.stopPropagation(), m.current && v("handleMouseMove", g, e))
+  }, [v, g, p]), y = r.useCallback(e => {
     p && null != g && (e.stopPropagation(), m.current = false, v("handleMouseUp", g, e))
   }, [v, g, p]), O = r.useCallback(e => {
     m.current && null != g && v("handleMouseEnter", g, e)
@@ -52,7 +52,7 @@ function d(e) {
     }, [g, p]),
     handleMouseDown: h,
     handleMouseEnter: O,
-    handleMouseMove: y,
-    handleMouseUp: S
+    handleMouseMove: S,
+    handleMouseUp: y
   }
 }

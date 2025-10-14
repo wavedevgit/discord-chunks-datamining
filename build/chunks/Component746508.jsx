@@ -176,7 +176,7 @@ function eq() {
   }, []);
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getNoiseCancellation()),
     n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile()),
-    l = require !== Chunk345655._.CUSTOM;
+    l = null != require && require !== Chunk345655._.CUSTOM;
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: Chunk890332.noiseCancellationPopout,

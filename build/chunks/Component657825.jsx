@@ -32,7 +32,7 @@ let _ = Chunk647438.memo(e => {
           variant: "text-md/semibold",
           color: "interactive-active",
           children: u.ZP.getName(a)
-        }), (0, r.jsx)(l.Text, {
+        }), null != n && (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: n

@@ -20,7 +20,6 @@ module.exports = {
   experimentOverlayTitle: "experimentOverlayTitle__2f4f7",
   overlayTitleText: "overlayTitleText__2f4f7",
   overlayButton: "overlayButton__2f4f7",
-  overlayButtonInner: "overlayButtonInner__2f4f7",
   overlayButtonContainer: "overlayButtonContainer__2f4f7",
   hideWhenInactive: "hideWhenInactive__2f4f7",
   experimentTitleIcon: "experimentTitleIcon__2f4f7",

@@ -101,14 +101,14 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         analyticsLocations: N
       } = (0, m.ZP)(),
-      D = null != (0, S.Z)(o);
+      D = null != (0, y.Z)(o);
     try {
-      t = (0, y.nG)(R)
+      t = (0, S.nG)(R)
     } catch (e) {
       t = false
     }
     try {
-      l = (0, y.tR)(R)
+      l = (0, S.tR)(R)
     } catch (e) {
       l = false
     }
@@ -150,9 +150,9 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: w.qualityResolution,
-          children: (0, y.ml)(R.maxResolution)
+          children: (0, S.ml)(R.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, y.bp)(R.maxFrameRate)
+          children: (0, S.bp)(R.maxFrameRate)
         })]
       })
     });
@@ -173,7 +173,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: c,
       className: s,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), _ = (0, y.W3)(t), {
+    } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
       reducedMotion: m
     } = i.useContext(p.Sfi), b = n && null != _;
     i.useEffect(() => {

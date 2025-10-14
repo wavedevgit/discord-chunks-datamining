@@ -28,7 +28,7 @@ function h() {
   }, false)
 }
 
-function y() {
+function S() {
   var e;
   let t = null != (e = Chunk19780.Z.getUserIds()) ? module : new Set,
     n = Chunk314897.default.getId(),
@@ -41,7 +41,7 @@ function y() {
   return b = r, i
 }
 
-function S(e) {
+function y(e) {
   let {
     userId: t
   } = e;
@@ -57,7 +57,7 @@ function S(e) {
       return g.set(e, l), a
     }(t),
     r = h(),
-    i = y();
+    i = S();
   return n || r || i
 }
 
@@ -102,7 +102,7 @@ let C = new I(Chunk570140.Z, {
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return E.delete(t), y();
+        return E.delete(t), S();
       case a.Yn.DEFAULT:
         O()
     }
@@ -110,14 +110,14 @@ let C = new I(Chunk570140.Z, {
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!S({
+    } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!y({
       userId: t
-    }) || e, false), i = h(), l = y();
+    }) || e, false), i = h(), l = S();
     return r || i || l
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: S,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: S,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: S,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: S,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: S
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: y,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: y,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: y,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: y,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: y
 })
