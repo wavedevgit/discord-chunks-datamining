@@ -190,7 +190,8 @@ function L(e) {
           channelId: E,
           id: n,
           file: r,
-          draftType: y.d.InteractionModal
+          draftType: y.d.InteractionModal,
+          allowOptimization: false
         }), n
       });
       L(v.concat(n))

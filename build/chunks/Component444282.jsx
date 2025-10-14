@@ -48,7 +48,8 @@ function b(e) {
       channelId: t,
       id: n.name,
       file: i,
-      draftType: d.d.SlashCommand
+      draftType: d.d.SlashCommand,
+      allowOptimization: false
     })
   }, [t, n]);
   i.useEffect(() => {
@@ -70,7 +71,8 @@ function b(e) {
         channelId: t,
         id: n.name,
         file: r,
-        draftType: d.d.SlashCommand
+        draftType: d.d.SlashCommand,
+        allowOptimization: false
       }), e.currentTarget.value = ""
     }
   };

@@ -32,14 +32,16 @@ let i = {
       file: t,
       channelId: n,
       showLargeMessageDialog: i,
-      draftType: a
+      draftType: a,
+      allowOptimization: o
     } = e;
     r.Z.dispatch({
       type: "UPLOAD_ATTACHMENT_ADD_FILES",
       channelId: n,
       files: [t],
       showLargeMessageDialog: i,
-      draftType: a
+      draftType: a,
+      allowOptimization: o
     })
   },
   remove(e, t, n) {
@@ -102,14 +104,16 @@ let i = {
       file: t,
       channelId: n,
       id: i,
-      draftType: a
+      draftType: a,
+      allowOptimization: o
     } = e;
     r.Z.dispatch({
       type: "UPLOAD_ATTACHMENT_SET_FILE",
       channelId: n,
       id: i,
       file: t,
-      draftType: a
+      draftType: a,
+      allowOptimization: o
     })
   }
 }

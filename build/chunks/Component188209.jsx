@@ -1,7 +1,7 @@
 /** Chunk was on 96861 **/
 /** chunk id: 188209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => R
+  default: () => q
 }), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -132,7 +132,7 @@ function A(e) {
   })
 }
 
-function q(e) {
+function R(e) {
   let {
     quest: t,
     questContent: n,
@@ -176,7 +176,7 @@ function q(e) {
   })
 }
 
-function R(e) {
+function q(e) {
   let {
     quest: t,
     onClose: n,
@@ -216,7 +216,7 @@ function R(e) {
   }(() => {
     D(true)
   });
-  let R = null == E && (x || O),
+  let q = null == E && (x || O),
     S = I && !O && !x;
   return (0, r.jsx)(N.Z, {
     onClose: n,
@@ -224,11 +224,11 @@ function R(e) {
     quest: t,
     sourceQuestContent: c,
     location: T.dr.REWARD_CODE_MODAL,
-    isRewardContentLoading: R,
+    isRewardContentLoading: q,
     rewardContentHasError: S,
     rewardContent: S ? null : (0, r.jsx)(P.Z, {
       rewardName: f.defaultRewardName,
-      children: (0, r.jsx)(q, {
+      children: (0, r.jsx)(R, {
         quest: t,
         questContent: j,
         rewardCode: E,

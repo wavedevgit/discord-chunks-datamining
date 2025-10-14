@@ -92,20 +92,21 @@ async function et(e) {
     gameName: v,
     gameId: y,
     exe: I,
-    distributor: S
-  } = (0, O.G8)(a), C = (0, j.NW)("ChatAutoAnalytics", false), P = d.enabledLegacy || C && d.enabledOOP, Z = T.v.legacyEnabled || C && T.v.oopEnabled, L = d.source;
+    distributor: S,
+    rawExePath: C
+  } = (0, O.G8)(a), P = (0, j.NW)("ChatAutoAnalytics", false), Z = d.enabledLegacy || P && d.enabledOOP, L = T.v.legacyEnabled || P && T.v.oopEnabled, R = d.source;
   K.default.track(J.rMx.LAUNCH_GAME, {
     game: v,
     game_id: y,
-    verified: null != o && (0, O.vp)(I, null == o ? true : o.executables),
+    verified: null != o && (0, O.vp)(C, null == o ? true : o.executables),
     elevated: a.elevated,
     is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
     game_platform: J.M7m.DESKTOP,
     detection_method: s,
     distributor: S,
-    is_overlay_enabled: Z,
-    is_overlay_game_enabled: P,
-    is_overlay_game_source: L,
+    is_overlay_enabled: L,
+    is_overlay_game_enabled: Z,
+    is_overlay_game_source: R,
     fullscreen_type: null != _ ? c.Jx[_] : c.Jx.UNKNOWN.toString(),
     hardware_display_count: null != (i = await (null === u.Z || true === u.Z || null == (n = u.Z.hardware) || null == (t = n.getDisplayCount) ? true : t.call(n))) ? i : null,
     overlay_method: null != (l = N.gl[p]) ? l : __OVERLAY__ ? N.gl[N.gl.Hook] : null,
