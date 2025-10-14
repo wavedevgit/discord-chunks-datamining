@@ -172,7 +172,8 @@ function w(e) {
         items: t,
         currentIndex: f,
         onGalleryItemClick: P,
-        className: e
+        className: e,
+        enabledContentHarmTypeFlags: l
       })
     })]
   })
