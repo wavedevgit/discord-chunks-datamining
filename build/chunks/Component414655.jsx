@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,12 +25,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10094 = require("./10094.js");
 
-function I(e) {
+function P(e) {
   let {
     profileOwner: t
   } = e, {
     wishlistId: n,
-    currentUser: I,
+    currentUser: P,
     wishlistSettings: S
   } = (0, a.cj)([v.Z, m.default], () => {
     let e = v.Z.getFirstWishlistId(t.id);
@@ -41,7 +41,7 @@ function I(e) {
     }
   }), {
     analyticsLocations: w
-  } = (0, d.ZP)(), E = (null == I ? true : I.id) === t.id, T = false === t.nsfwAllowed, [A, N] = i.useState(true);
+  } = (0, d.ZP)(), E = (null == P ? true : P.id) === t.id, T = false === t.nsfwAllowed, [A, N] = i.useState(true);
   i.useEffect(() => {
     (null == S ? true : S.visibility) != null && N(S.visibility === l.f.PUBLIC)
   }, [null == S ? true : S.visibility]);
@@ -65,9 +65,9 @@ function I(e) {
   return null != D ? null : null == C || 0 === C.items.length ? (0, r.jsx)(y.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
-      className: P.emptyStateContainer,
+      className: I.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
-        className: P.emptyStateText,
+        className: I.emptyStateText,
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
@@ -86,12 +86,12 @@ function I(e) {
       })]
     })
   }) : (0, r.jsxs)(y.F, {
-    className: P.scroller,
+    className: I.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
-      className: P.headerRow,
+      className: I.headerRow,
       children: [(0, r.jsxs)("div", {
-        className: P.teenDisclaimer,
+        className: I.teenDisclaimer,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
@@ -128,7 +128,7 @@ function I(e) {
           })
         })]
       }), E ? (0, r.jsxs)("div", {
-        className: P.headerActions,
+        className: I.headerActions,
         children: [(0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",

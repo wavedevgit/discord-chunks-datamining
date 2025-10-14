@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ let O = {
   }
 };
 
-function P(e) {
+function I(e) {
   let t, {
       widgetType: n,
       onAddWidget: l,
@@ -78,8 +78,8 @@ function P(e) {
       trackUserProfileEditAction: b
     } = e,
     {
-      placeholder: P,
-      getAriaLabel: I,
+      placeholder: I,
+      getAriaLabel: P,
       icon: S
     } = O[n],
     w = "small" === c,
@@ -116,11 +116,11 @@ function P(e) {
     children: [(0, r.jsxs)(o.P3F, {
       className: a()(x.addButtonContent, w && x.sizeSmall, d && x.loading),
       onClick: A,
-      "aria-label": I(T),
+      "aria-label": P(T),
       "aria-busy": d,
       children: [(() => {
         if (null == T) return null;
-        let e = P(T);
+        let e = I(T);
         switch (e.variant) {
           case "details":
             return (0, r.jsx)(v.i, {
@@ -165,7 +165,7 @@ function P(e) {
       })]
     }), (() => {
       if (null == T) return null;
-      let e = P(T);
+      let e = I(T);
       return "application-widget" === e.variant ? (0, r.jsx)(y.T, {
         applicationId: e.applicationId,
         size: c

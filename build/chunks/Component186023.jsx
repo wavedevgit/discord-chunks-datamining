@@ -1,4 +1,4 @@
-/** Chunk was on 73705 **/
+/** Chunk was on 25244 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => b
@@ -32,7 +32,7 @@ let b = e => {
     root_node_id: I,
     success_node_id: Z,
     fail_node_id: S
-  } = n, [T, N] = i.useState(I), [P, E] = i.useState(true), [k, w] = i.useState(true), [D, R] = i.useState([]), [M, A] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
+  } = n, [T, P] = i.useState(I), [N, E] = i.useState(true), [w, k] = i.useState(true), [D, R] = i.useState([]), [M, A] = i.useState(true), [B, L] = i.useState(true), U = (0, _.PO)("in_app_report_modal");
   (0, o.ZP)(() => {
     U && (0, u.k0)()
   });
@@ -73,7 +73,7 @@ let b = e => {
       })(Object(i)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r));
-      if (R([...D, e]), null != c.key && (null == v || v(c.key)), E(true), w(true), t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
+      if (R([...D, e]), null != c.key && (null == v || v(c.key)), E(true), k(true), t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
         let e = t.record.id;
         s.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
           message_id: e,
@@ -83,7 +83,7 @@ let b = e => {
           next_node: c.id
         })
       }
-      N(o)
+      P(o)
     },
     H = async e => {
       var r;
@@ -106,7 +106,7 @@ let b = e => {
           next_node: C[l].id
         })
       }
-      E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), N(l), R(r), null == v || v("..")
+      E(null == i || null == (e = i.multiSelect) ? true : e.state), k(null == i ? true : i.textInput), P(l), R(r), null == v || v("..")
     }, z = i.useMemo(() => {
       let e = [],
         t = [];
@@ -148,8 +148,8 @@ let b = e => {
             onModalClose: b.onClose,
             onSelectChild: G,
             onNavigateBack: W,
-            multiSelect: P,
-            textInput: k,
+            multiSelect: N,
+            textInput: w,
             successNodeId: Z,
             failNodeId: S,
             onSubmit: H,

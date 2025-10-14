@@ -15,14 +15,16 @@ function a(e) {
     power: s = 2.2
   } = e, o = (0, r.useRef)(null), c = (0, r.useRef)(0), u = (0, r.useCallback)(e => ({
     isDragging: e.isDragging(),
-    clientOffset: e.getClientOffset()
+    clientOffset: e.getClientOffset(),
+    itemType: e.getItemType()
   }), []), {
     isDragging: d,
-    clientOffset: f
-  } = (0, i.f)(u), g = (0, l.zPA)();
+    clientOffset: f,
+    itemType: g
+  } = (0, i.f)(u), p = (0, l.zPA)();
   (0, r.useEffect)(() => (o.current = requestAnimationFrame(function e(r) {
-    if (g || null == t) return;
-    if (o.current = requestAnimationFrame(e), false === d || null == f) {
+    if (p || null == t) return;
+    if (o.current = requestAnimationFrame(e), false === d || null == f || "WIDGET" !== g) {
       t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto", c.current = r;
       return
     }
@@ -31,11 +33,11 @@ function a(e) {
     c.current = r;
     let l = t.getBoundingClientRect(),
       u = f.y,
-      p = u - l.top,
-      m = l.bottom - u,
-      h = 0;
-    p >= 0 && p < n ? h = -a * Math.pow(1 - p / n, s) : m >= 0 && m < n && (h = a * Math.pow(1 - m / n, s)), 0 !== h && (t.scrollTop += h * i)
+      m = u - l.top,
+      h = l.bottom - u,
+      v = 0;
+    m >= 0 && m < n ? v = -a * Math.pow(1 - m / n, s) : h >= 0 && h < n && (v = a * Math.pow(1 - h / n, s)), 0 !== v && (t.scrollTop += v * i)
   }), () => {
     null !== o.current && cancelAnimationFrame(o.current), o.current = null, c.current = 0
-  }), [t, d, f, n, a, s, g])
+  }), [t, d, f, g, n, a, s, p])
 }

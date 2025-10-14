@@ -1,4 +1,4 @@
-/** Chunk was on 73705 **/
+/** Chunk was on 25244 **/
 /** chunk id: 255514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ee
@@ -121,7 +121,7 @@ let ee = e => {
       value: t,
       isValid: n
     }, eC(r)
-  }, eN = e => {
+  }, eP = e => {
     en(eZ(e))
   };
   i.useEffect(() => {
@@ -148,12 +148,12 @@ let ee = e => {
   }, [es]), i.useEffect(() => {
     t.is_auto_submit && !eh && (eb(true), ei(eZ(["", t.id])))
   }, [t.is_auto_submit, eh, ei, eZ, t.id]);
-  let eP = (0, u.fW)(ee),
+  let eN = (0, u.fW)(ee),
     eE = null != X(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
-    ek = (0, d.U)(),
-    ew = (0, s.PO)("share_with_parent_element"),
+    ew = (0, d.U)(),
+    ek = (0, s.PO)("share_with_parent_element"),
     eD = (0, c.zu)(),
-    eR = ek && eD.length > 0 && ew && null != X(t, "share_with_parents");
+    eR = ew && eD.length > 0 && ek && null != X(t, "share_with_parents");
   return (0, r.jsxs)("div", {
     className: J.container,
     children: [(0, r.jsxs)(a.xBx, {
@@ -166,7 +166,7 @@ let ee = e => {
       }), (0, r.jsx)(T.Z, {
         node: t,
         isModeratorReport: ep
-      }), (0, r.jsx)(P.Z, {
+      }), (0, r.jsx)(N.Z, {
         node: t
       })]
     }), (0, r.jsxs)(a.hzk, {
@@ -176,7 +176,7 @@ let ee = e => {
         element: ec
       }), null != em && (0, r.jsx)(G.Z, {
         element: em
-      }), null != X(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(k.Z, {
+      }), null != X(t, "message_preview") && ("message" === n.name || "first_dm" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(w.Z, {
         message: n.record
       }), null != X(t, "user_preview") && "user" === n.name ? (0, r.jsx)(W.Z, {
         user: n.record
@@ -199,7 +199,7 @@ let ee = e => {
           return F.O.includes(t)
         })
       }(t) && (0, r.jsxs)(R.Z, {
-        children: [eE && (0, r.jsx)(N.Z, {
+        children: [eE && (0, r.jsx)(P.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea
@@ -227,8 +227,8 @@ let ee = e => {
           application: n.record,
           reportId: ea
         })]
-      }), null != X(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eP && (0, r.jsx)(A.Z, {
-        settingsUpsells: eP,
+      }), null != X(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eN && (0, r.jsx)(A.Z, {
+        settingsUpsells: eN,
         channelId: n.record.channel_id,
         onModalClose: er,
         reportId: ea,
@@ -244,7 +244,7 @@ let ee = e => {
         entry: n.record
       }), null != X(t, "app_preview") && "application" === n.name && (0, r.jsx)(p.Z, {
         entry: n.record
-      }), null != es && (0, r.jsx)(w.Z, {
+      }), null != es && (0, r.jsx)(k.Z, {
         element: es,
         onChange: (e, t) => {
           let n = Y({}, ej);
@@ -263,7 +263,7 @@ let ee = e => {
         className: J.listContainer,
         children: [(0, r.jsx)(h.Z, {
           node: t,
-          onSelectChild: eN,
+          onSelectChild: eP,
           nodeMap: e.nodeMap
         }), null != ed && ed.length > 0 ? (0, r.jsx)(y.Z, {
           elements: ed
@@ -286,13 +286,13 @@ let ee = e => {
             er();
             break;
           case "next":
-            eN(["", t.target]);
+            eP(["", t.target]);
             break;
           case "submit":
             ef(true);
             let n = ["", e.successNodeId];
             ei(eZ(n)).then(() => {
-              ev(""), eN(n)
+              ev(""), eP(n)
             }).catch(e => {
               var t;
               (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuL)) : ep ? ev(Q.intl.string(K.default.psKFdH)) : ev(Q.intl.string(Q.t.h6D8V1))

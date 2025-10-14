@@ -1,8 +1,11 @@
 /** Chunk was on 36073 **/
-/** chunk id: 133458, original params: e,t,n (module,exports,require) **/
+/** chunk id: 133458, original params: e,t,r (module,exports,require) **/
 module.exports = {
   container: "container_a62a28",
   socialProof: "socialProof_a62a28",
   socialProofBackdrop: "socialProofBackdrop_a62a28",
-  removeGameButton: "removeGameButton_a62a28"
+  removeGameButton: "removeGameButton_a62a28",
+  dropIndicatorAfter: "dropIndicatorAfter_a62a28",
+  dropIndicatorBefore: "dropIndicatorBefore_a62a28",
+  isDragging: "isDragging_a62a28"
 }

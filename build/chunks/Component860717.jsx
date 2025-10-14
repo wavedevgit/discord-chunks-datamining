@@ -190,11 +190,11 @@ function _(e) {
         body: L(n)
       }));
     case "GRID":
-      return (0, r.jsx)(U, {
+      return (0, r.jsx)(M, {
         children: L(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(U, {
         value: R(t.value),
         name: R(t.name)
       });
@@ -263,7 +263,7 @@ function G(e) {
   })
 }
 
-function U(e) {
+function M(e) {
   let {
     children: t
   } = e;
@@ -273,7 +273,7 @@ function U(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     name: t,
     value: n
@@ -380,11 +380,11 @@ function Y(e, t) {
 let V = Chunk647438.createContext(null);
 
 function q(e) {
-  return (0, s.cj)([f.Z, S.Z, P.Z], () => {
+  return (0, s.cj)([f.Z, S.Z, I.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
-      game: null != t ? P.Z.getGameByApplication(t) : null,
+      game: null != t ? I.Z.getGameByApplication(t) : null,
       config: S.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
@@ -457,10 +457,10 @@ let J = Object.assign(function(e) {
     trackEntryPointImpression: true
   }), {
     fetched: x,
-    hasAlreadyLinked: P,
+    hasAlreadyLinked: I,
     canStartAuthorization: S,
     startAuthorization: E
-  } = (0, d.FG)(u), D = null == s && x && !P && S, Z = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(u), D = null == s && x && !I && S, Z = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: A.appIcon,
       src: h,
@@ -496,7 +496,7 @@ let J = Object.assign(function(e) {
       mode: "from_data",
       variables: Object.fromEntries(Object.entries(N({
         username: null == (n = e.profile) ? true : n.username
-      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(I.V5).map(e => {
+      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(P.V5).map(e => {
         let [t, n] = e;
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -512,7 +512,7 @@ let J = Object.assign(function(e) {
           value: n
         }];
         return null
-      }).filter(I.lm)),
+      }).filter(P.lm)),
       config: t
     });
     return k.map(function e(t) {

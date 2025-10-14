@@ -1,7 +1,7 @@
 /** Chunk was on 36073 **/
-/** chunk id: 825354, original params: e,t,n (module,exports,require) **/
+/** chunk id: 825354, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,17 +13,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk595342 = require("./595342.js");
 
-function f(e) {
+function g(e) {
   let {
     widget: t,
-    userId: n,
+    userId: r,
     className: a,
-    menuItems: f
-  } = e, g = i.useRef(null), p = () => {
-    (0, s.G1)(n, t)
+    menuItems: g
+  } = e, f = i.useRef(null), p = () => {
+    (0, s.G1)(r, t)
   };
-  return (0, r.jsx)(l.yRy, {
-    targetElementRef: g,
+  return (0, n.jsx)(l.yRy, {
+    targetElementRef: f,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -31,60 +31,60 @@ function f(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(l.v2r, {
+      return (0, n.jsx)(l.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
           (0, c.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),
-        children: (0, r.jsxs)(l.kSQ, {
-          children: [(0, r.jsx)(l.sNh, {
+        children: (0, n.jsxs)(l.kSQ, {
+          children: [(0, n.jsx)(l.sNh, {
             id: "flag-widget",
             label: u.intl.string(u.t.D4GvHB),
             action: p,
             color: "danger",
             icon: l.U65
-          }, "flag-widget"), f]
+          }, "flag-widget"), g]
         })
       })
     },
     children: e => {
-      var t, n;
-      return (0, r.jsx)(l.P3F, (t = function(e) {
+      var t, r;
+      return (0, n.jsx)(l.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
-      }({}, e), n = n = {
-        innerRef: g,
+      }({}, e), r = r = {
+        innerRef: f,
         "aria-label": u.intl.string(u.t.xpSHSk),
         className: o()(d.button, a),
-        children: (0, r.jsx)(l.xhG, {
+        children: (0, n.jsx)(l.xhG, {
           size: "sm",
           color: "currentColor"
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        return r
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }
   })

@@ -2,7 +2,7 @@
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => B,
-  Z: () => U
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk860717 = require("./860717.jsx"),
   Chunk28671 = require("./28671.jsx"),
   Chunk430790 = require("./430790.jsx"),
-  Chunk640078 = require("./640078.jsx"),
+  Chunk683881 = require("./683881.jsx"),
   Chunk190862 = require("./190862.jsx"),
   Chunk682085 = require("./682085.jsx"),
   Chunk996921 = require("./996921.jsx"),
@@ -74,7 +74,7 @@ function G(e, t) {
   return i
 }
 
-function U(e) {
+function M(e) {
   var {
     widget: t
   } = e, n = G(e, ["widget"]);
@@ -85,7 +85,7 @@ function U(e) {
   }, n)) : null
 }
 
-function M() {
+function U() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -138,9 +138,9 @@ function F(e) {
   })(), d = (0, j.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === a.length && o, x = i.useMemo(() => a.filter(y.Wc), [a]), O = i.useMemo(() => a.filter(e => e instanceof v.q), [a]);
-  (0, I.ZP)(x), (0, b.J)(o, x);
+  (0, P.ZP)(x), (0, b.J)(o, x);
   var w = t.id;
-  (0, P.s)(O);
+  (0, I.s)(O);
   let {
     data: E,
     refetch: A
@@ -151,9 +151,9 @@ function F(e) {
     if (d) return (0, r.jsx)(C.Z, {});
     else return (0, r.jsx)(Z.Z, {});
   return (0, r.jsxs)(r.Fragment, {
-    children: [o && c && (0, r.jsx)(M, {}), o && (0, r.jsx)(W, {
+    children: [o && c && (0, r.jsx)(U, {}), o && (0, r.jsx)(W, {
       user: t
-    }), a.map((e, i) => (0, r.jsx)(U, {
+    }), a.map((e, i) => (0, r.jsx)(M, {
       widget: e,
       user: t,
       guildId: n,

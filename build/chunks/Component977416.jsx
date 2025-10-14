@@ -1,5 +1,5 @@
 /** Chunk was on 36073 **/
-/** chunk id: 977416, original params: e,t,n (module,exports,require) **/
+/** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => y
 });
@@ -20,69 +20,69 @@ var Chunk120356 = require("./120356.js"),
   Chunk845859 = require("./845859.js");
 
 function O(e) {
-  var t, n, {
+  var t, r, {
       gameName: i,
       onClick: a
     } = e,
     s = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var r, n, i = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
+        var r, n, i = {},
           a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["gameName", "onClick"]);
-  let g = null != i ? i : p.intl.string(p.t.GIWFlJ),
+  let f = null != i ? i : p.intl.string(p.t.GIWFlJ),
     O = p.intl.formatToPlainString(p.t["3mb1s7"], {
-      game: g
+      game: f
     }),
     y = (0, o.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
-  return (0, d.kO)(s.applicationId) || y ? (0, r.jsx)("div", {
+  return (0, d.kO)(s.applicationId) || y ? (0, n.jsx)("div", {
     className: b.loadingCover
-  }) : (0, r.jsx)(l.u, {
+  }) : (0, n.jsx)(l.u, {
     text: O,
-    children: (0, r.jsxs)(c.P3F, {
+    children: (0, n.jsxs)(c.P3F, {
       className: m.addButton,
       onClick: a,
-      children: [(0, r.jsx)(f.Z, (t = function(e) {
+      children: [(0, n.jsx)(g.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = n
           })
         }
         return e
       }({
         className: m.cover,
         gameName: i
-      }, s), n = n = {
+      }, s), r = r = {
         disableInteraction: true
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t)), (0, r.jsx)(c.svS, {
+        return r
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      }), t)), (0, n.jsx)(c.svS, {
         size: "md",
         className: m.addIcon,
         color: c.TVs.colors.WHITE
@@ -94,42 +94,42 @@ function O(e) {
 function y(e) {
   let {
     userId: t,
-    games: n,
+    games: r,
     onDismiss: i,
     onClick: o,
     className: l
   } = e, u = (0, s.Dt)();
-  return (0, r.jsxs)("aside", {
+  return (0, n.jsxs)("aside", {
     className: a()(m.container, l),
     "aria-labelledby": u,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, n.jsxs)("div", {
       className: m.header,
-      children: [(0, r.jsx)(c.P3F, {
+      children: [(0, n.jsx)(c.P3F, {
         className: m.dismissButton,
         "aria-label": p.intl.string(p.t["pUR+3t"]),
         onClick: i,
-        children: (0, r.jsx)(c.Dio, {
+        children: (0, n.jsx)(c.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, r.jsx)(c.Heading, {
+      }), (0, n.jsx)(c.Heading, {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
         children: p.intl.string(p.t.zMUr6e)
       })]
-    }), (0, r.jsx)(g.Z, {
-      games: n,
+    }), (0, n.jsx)(f.Z, {
+      games: r,
       renderGame: e => {
         let {
-          applicationId: n,
+          applicationId: r,
           gameName: i,
           imageSrc: a
         } = e;
-        return (0, r.jsx)(O, {
-          onClick: () => o(n, i, a),
+        return (0, n.jsx)(O, {
+          onClick: () => o(r, i, a),
           userId: t,
-          applicationId: n,
+          applicationId: r,
           gameName: i,
           imageSrc: a
         })
