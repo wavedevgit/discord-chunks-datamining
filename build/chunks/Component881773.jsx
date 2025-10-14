@@ -163,7 +163,7 @@ function x(e) {
     handleSeekForwardBtnClick: L,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, Z = (0, p.km)(e => e.volume), B = (0, p.km)(e => e.setVolume), F = (0, p.km)(e => e.muted), U = (0, p.km)(e => e.setMuted), q = (0, p.km)(e => e.transcriptEnabled), H = (0, p.km)(e => e.captionEnabled), Y = (0, p.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), G = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [z, W] = l.useState(F ? 0 : Z), [K, X] = l.useState(false), [$, J] = l.useState(false), [{
+  } = e, Z = (0, p.km)(e => e.volume), B = (0, p.km)(e => e.setVolume), F = (0, p.km)(e => e.muted), U = (0, p.km)(e => e.setMuted), q = (0, p.km)(e => e.transcriptEnabled), H = (0, p.km)(e => e.captionEnabled), Y = (0, p.km)(e => e.fullScreenEnabled), Q = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), G = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [W, z] = l.useState(F ? 0 : Z), [K, X] = l.useState(false), [$, J] = l.useState(false), [{
     volumeAnimSpring: ee
   }, et] = (0, d.q_F)(() => ({
     from: {
@@ -175,10 +175,10 @@ function x(e) {
       clamp: true
     }
   })), en = l.useRef(null), er = (0, f.ZS)(P), el = l.useCallback(e => {
-    null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== z && W(e))
-  }, [o, z]), eo = l.useCallback(() => {
-    null != o.current && (0 === z ? (el(Z), U(false), V(Z)) : (B(z), el(0), U(true), V(0)))
-  }, [o, z, el, Z, U, B, V]), ei = () => {
+    null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== W && z(e))
+  }, [o, W]), eo = l.useCallback(() => {
+    null != o.current && (0 === W ? (el(Z), U(false), V(Z)) : (B(W), el(0), U(true), V(0)))
+  }, [o, W, el, Z, U, B, V]), ei = () => {
     X(true)
   }, ea = () => {
     X(false)
@@ -216,7 +216,7 @@ function x(e) {
   }), [$, K, et, Q, ee]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
     window.removeEventListener("keydown", es)
   }), [es]);
-  let ec = 0 === z ? d.OyP : z < .5 ? d.X2j : d.gj8,
+  let ec = 0 === W ? d.OyP : W < .5 ? d.X2j : d.gj8,
     {
       icon: eu,
       label: ed
@@ -290,7 +290,7 @@ function x(e) {
           },
           children: (0, r.jsx)(u.i, {
             mini: true,
-            initialValue: z,
+            initialValue: W,
             keyboardStep: .1,
             minValue: 0,
             maxValue: 1,

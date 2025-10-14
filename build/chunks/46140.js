@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Dp: () => O,
-  Ew: () => L,
+  Ew: () => x,
   HO: () => E,
   Jp: () => N,
   Lv: () => A,
@@ -12,14 +12,15 @@ require.d(exports, {
   R4: () => p,
   S7: () => Chunk670081.S,
   Ts: () => y,
+  UP: () => w,
   V6: () => I,
   V_: () => v,
-  XJ: () => P,
   XZ: () => _,
   a_: () => Chunk438954.a,
   cd: () => h,
   dr: () => d,
   l$: () => S,
+  oH: () => P,
   tD: () => g,
   tt: () => C,
   v6: () => T,
@@ -73,9 +74,12 @@ var R = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
   P = function(e) {
-    return e.REWARD_VIRTUAL_CURRENCY = "reward_virtual_currency", e.REWARD_COLLECTIBLE = "reward_collectible", e.REWARD_IN_GAME = "reward_in_game", e.TASK_VIDEO = "task_video", e.TASK_PLAY = "task_play", e
+    return e.VIDEO = "task_video", e.PLAY = "task_play", e
+  }({}),
+  w = function(e) {
+    return e.VIRTUAL_CURRENCY = "reward_virtual_currency", e.COLLECTIBLE = "reward_collectible", e.IN_GAME = "reward_in_game", e
   }({});
-let w = [{
+let D = [{
     group: "task",
     filter: "task_play"
   }, {
@@ -91,9 +95,9 @@ let w = [{
     group: "reward",
     filter: "reward_in_game"
   }],
-  D = ["reward", "task"],
-  L = Object.entries((0, Chunk392711.groupBy)(w, "group")).sort((e, t) => {
-    let n = D.indexOf(e[0]),
-      r = D.indexOf(t[0]);
+  L = ["reward", "task"],
+  x = Object.entries((0, Chunk392711.groupBy)(D, "group")).sort((e, t) => {
+    let n = L.indexOf(e[0]),
+      r = L.indexOf(t[0]);
     return n < r ? false : +(r < n)
   })

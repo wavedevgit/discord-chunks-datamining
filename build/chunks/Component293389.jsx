@@ -299,11 +299,10 @@ function Z(e) {
       children: [i, (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["1+O+Tk"]),
-        children: t => (0, r.jsx)(c.P3F, M(L({
+        children: t => (0, r.jsx)(c.P3F, M(L({}, t), {
           "aria-label": C.intl.string(C.t["1+O+Tk"]),
           className: N.toggleIcon,
-          onClick: () => K(!e)
-        }, t), {
+          onClick: () => K(!e),
           children: n
         }))
       })]
@@ -329,11 +328,10 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t.QmitzM),
-        children: e => S ? (0, r.jsx)(c.P3F, M(L({
+        children: e => S ? (0, r.jsx)(c.P3F, M(L({}, e), {
           "aria-label": C.intl.string(C.t.QmitzM),
           className: N.toggleIcon,
-          onClick: z
-        }, e), {
+          onClick: z,
           children: t
         })) : t
       })
@@ -346,11 +344,10 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["y0B+lp"]),
-        children: e => (0, r.jsx)(c.P3F, M(L({
+        children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
           "aria-label": C.intl.string(C.t["y0B+lp"]),
           className: N.toggleIcon,
-          onClick: q
-        }, e), {
+          onClick: q,
           children: (0, r.jsx)(c.U65, {
             size: "md",
             color: "currentColor",

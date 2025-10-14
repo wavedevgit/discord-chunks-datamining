@@ -1,26 +1,27 @@
 /** Chunk was on 32249 **/
 /** chunk id: 604162, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G6: () => d,
-  JC: () => c,
-  qP: () => m,
-  yv: () => u
+  G6: () => m,
+  JC: () => u,
+  PW: () => p,
+  yv: () => d
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk447543 = require("./447543.js"),
   Chunk960904 = require("./960904.js"),
   Chunk830121 = require("./830121.js"),
   Chunk701190 = require("./701190.js"),
-  Chunk771845 = require("./771845.js");
-let c = e => null != e.text;
+  Chunk771845 = require("./771845.js"),
+  Chunk591759 = require("./591759.js");
+let u = e => null != e.text;
 
-function u(e) {
+function d(e) {
   let t = 0 | Math.round(e),
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
 }
 
-function d(e, t) {
+function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 2e3,
     [l, o] = (0, r.useState)(e),
     i = (0, r.useRef)(null);
@@ -32,7 +33,7 @@ function d(e, t) {
     }, n)
   }]
 }
-async function m(e) {
+async function f(e) {
   try {
     var t;
     let n = (0, i.zO)(e);
@@ -48,6 +49,14 @@ async function m(e) {
     let c = s.ZP.getFlattenedGuildIds(),
       u = null == r || null == (t = r.guild) ? true : t.id;
     return null != u && c.includes(u)
+  } catch (e) {
+    returnfalse
+  }
+}
+async function p(e) {
+  try {
+    if (c.Z.isDiscordUrl(e)) returntrue;
+    return await f(e)
   } catch (e) {
     returnfalse
   }

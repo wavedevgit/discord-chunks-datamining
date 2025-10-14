@@ -171,15 +171,27 @@ function H(e) {
   };
   if (null != w && w.type === m.g.QUESTS_EMBED && (0, A.c)({
       location: B.dr.EMBED_MOBILE
-    })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 110560)).then(e => {
+    })) return e => {
+    var t, r, a;
+    let o, s;
+    null == e || e.preventDefault();
     let {
-      navigateToQuestHome: t
-    } = e;
-    t({
-      fromContent: i.j.QUEST_SHARE_LINK,
-      questId: w.code
-    })
-  }), true);
+      search: l
+    } = null != (t = j.Z.toURLSafe(w.url)) ? t : {};
+    if (null != l) {
+      let e = new URLSearchParams(l);
+      o = null != (r = e.get("sort")) ? r : true, s = null != (a = e.get("filter")) ? a : true
+    }
+    return Promise.resolve().then(n.bind(n, 110560)).then(e => {
+      let {
+        navigateToQuestHome: t
+      } = e;
+      t({
+        fromContent: i.j.QUEST_SHARE_LINK,
+        questId: w.code
+      })
+    }), true
+  };
   let {
     host: x,
     hostname: Z,

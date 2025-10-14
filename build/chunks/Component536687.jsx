@@ -49,7 +49,7 @@ function M(e) {
     impressionRef: U,
     parentModalOpenStartClockTime: q,
     sourceQuestContent: H
-  } = e, Y = (0, O.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([g.Z], () => g.Z.getState().theme), z = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, W = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, b.aM)(), [X, $] = l.useState(Y.progressSeconds), [J, ee] = l.useState(false), {
+  } = e, Y = (0, O.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([g.Z], () => g.Z.getState().theme), W = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, z = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, b.aM)(), [X, $] = l.useState(Y.progressSeconds), [J, ee] = l.useState(false), {
     completedRatio: et,
     completedRatioDisplay: en
   } = (0, h.I)(Z), [er, el] = (0, R.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), eo = null != (0, O.LM)(Z.config), [ei, ea] = l.useState(false), es = l.useRef(null), ec = (0, O.vB)(Z.config), eu = (null == (t = Z.userStatus) ? true : t.claimedAt) != null ? eo ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ed = l.useCallback(() => {
@@ -75,7 +75,7 @@ function M(e) {
   let ef = async () => {
     if (null != V) {
       let e = y.r.build(Z.config).ctaLink;
-      await (0, R.qP)(e) && V()
+      await (0, R.PW)(e) && V()
     }(0, O.nc)(Z, {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.OPEN_GAME_LINK,
@@ -116,7 +116,7 @@ function M(e) {
               children: [(0, r.jsx)("img", {
                 alt: Z.config.messages.gameTitle,
                 className: i()(L.contentHeaderLogotype, L.accentOnHover),
-                src: (0, _.fh)(Z, _.eC.LOGO_TYPE, z).url
+                src: (0, _.fh)(Z, _.eC.LOGO_TYPE, W).url
               }), (0, r.jsx)(P.Z, {}), (0, r.jsxs)("div", {
                 className: L.questHeading,
                 children: [(0, r.jsx)(p.Heading, {
@@ -186,7 +186,7 @@ function M(e) {
                 className: L.portraitCtaBtn,
                 size: f.zx.Sizes.MEDIUM,
                 quest: Z,
-                useReducedMotion: W,
+                useReducedMotion: z,
                 isExpanded: (null == (a = Z.userStatus) ? true : a.completedAt) != null,
                 disabled: (null == (C = Z.userStatus) ? true : C.completedAt) == null,
                 ctaLabel: eu,
@@ -224,7 +224,7 @@ function M(e) {
                 className: L.claimBtn,
                 size: f.zx.Sizes.MEDIUM,
                 quest: Z,
-                useReducedMotion: W,
+                useReducedMotion: z,
                 isExpanded: (null == (T = Z.userStatus) ? true : T.completedAt) != null,
                 disabled: (null == (N = Z.userStatus) ? true : N.completedAt) == null,
                 ctaLabel: eu,
