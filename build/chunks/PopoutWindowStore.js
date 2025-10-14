@@ -114,6 +114,7 @@ function U(e) {
 }
 
 function G(e) {
+  A.info("Unmounting popout window", e);
   let t = R[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", x), t.removeEventListener("blur", x), t.removeEventListener("resize", M);
   let n = P[e];

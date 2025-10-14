@@ -752,12 +752,11 @@ class e$ extends Chunk647438.PureComponent {
         className: eG.voicePanelIntroductionText,
         variant: "text-sm/normal",
         children: eU.intl.string(eU.t.Ne1Ee3)
-      }), (0, r.jsx)(g.zx, {
-        className: eG.voicePanelIntroductionButton,
-        color: g.zx.Colors.BRAND,
+      }), (0, r.jsx)(m.Button, {
+        fullWidth: true,
         onClick: this.handleCloseVoicePanelIntroduction,
-        focusProps: eW,
-        children: eU.intl.string(eU.t.shaBeH)
+        text: eU.intl.string(eU.t.shaBeH),
+        focusProps: eW
       })]
     }))
   }
@@ -824,16 +823,16 @@ let e1 = (0, Chunk730749.Z)(function(e) {
       canGoLive: (0, H.Z)(eE.Z)
     })),
     h = (0, u.e7)([eE.Z, z.Z], () => z.Z.hasHotspot(ek.v.VOICE_PANEL_INTRODUCTION) && (0, eP.EO)(l) && !eE.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
-    b = (0, u.e7)([eS.Z], () => null != o && eS.Z.hasVideo(o), [o]),
-    _ = (0, u.e7)([eg.Z], () => eg.Z.getCurrentUserActiveStream()),
-    O = (0, u.e7)([eO.Z], () => eO.Z.hasLayers()),
-    E = (0, u.e7)([W.Z], () => W.Z.isViewingRoles(d)),
-    v = (0, u.e7)([ev.Z], () => E && !ev.Z.can(eL.Plq.VIEW_CHANNEL, c), [E, c]),
-    y = el.Fg.useSetting(),
-    [I, S, T] = (0, u.Wu)([eT.ZP, J.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [J.Z.getMutableParticipants(c.id, $.pV.SPEAKER), J.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eT.ZP.getVoiceStatesForChannel(c) : null], [c]),
-    j = i.useMemo(() => {
+    g = (0, u.e7)([eS.Z], () => null != o && eS.Z.hasVideo(o), [o]),
+    b = (0, u.e7)([eg.Z], () => eg.Z.getCurrentUserActiveStream()),
+    _ = (0, u.e7)([eO.Z], () => eO.Z.hasLayers()),
+    O = (0, u.e7)([W.Z], () => W.Z.isViewingRoles(d)),
+    E = (0, u.e7)([ev.Z], () => O && !ev.Z.can(eL.Plq.VIEW_CHANNEL, c), [O, c]),
+    v = el.Fg.useSetting(),
+    [y, I, S] = (0, u.Wu)([eT.ZP, J.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [J.Z.getMutableParticipants(c.id, $.pV.SPEAKER), J.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eT.ZP.getVoiceStatesForChannel(c) : null], [c]),
+    T = i.useMemo(() => {
       var e, t;
-      return null != (t = null != (e = null == I ? true : I.map(e => {
+      return null != (t = null != (e = null == y ? true : y.map(e => {
         let {
           user: t,
           userNick: n,
@@ -844,49 +843,49 @@ let e1 = (0, Chunk730749.Z)(function(e) {
           nick: n,
           voiceState: r
         }
-      })) ? e : T) ? t : []
-    }, [I, S, T]),
-    [A, Z] = i.useState(false);
+      })) ? e : S) ? t : []
+    }, [y, I, S]),
+    [j, A] = i.useState(false);
   i.useEffect(() => {
-    (E || v) && Z(false)
-  }, [E, v, Z]);
+    (O || E) && A(false)
+  }, [O, E, A]);
   let {
-    analyticsLocations: w
-  } = (0, x.ZP)(P.Z.RTC_PANEL), L = (0, C.Z)(null != d ? d : eL.lds, null == c ? true : c.id), R = (0, N.Z)(null == c ? true : c.id);
+    analyticsLocations: Z
+  } = (0, x.ZP)(P.Z.RTC_PANEL), w = (0, C.Z)(null != d ? d : eL.lds, null == c ? true : c.id), L = (0, N.Z)(null == c ? true : c.id);
   return (0, r.jsx)(x.Gt, {
-    value: w,
+    value: Z,
     children: (0, r.jsxs)("div", {
       className: eG.wrapper,
       children: [null != t || null != n ? (0, r.jsx)(B.Z, {
         voiceState: t,
         awaitingRemoteSessionInfo: n
       }) : null, (0, r.jsx)(e$, eF(eV({}, e, f, s), {
-        enableActivities: L,
+        enableActivities: w,
         remoteVoiceState: t,
         guild: p,
         channel: c,
-        hasVideo: b,
-        selfStream: _,
-        hasLayers: O,
-        voiceStates: j,
-        showVoiceStates: y,
+        hasVideo: g,
+        selfStream: b,
+        hasLayers: _,
+        voiceStates: T,
+        showVoiceStates: v,
         shouldShowVoicePanelIntroduction: h,
-        isPrivateChannelWithEnabledActivities: R,
-        analyticsLocations: w
-      })), !A && E && null != d ? (0, r.jsxs)("div", {
+        isPrivateChannelWithEnabledActivities: L,
+        analyticsLocations: Z
+      })), !j && O && null != d ? (0, r.jsxs)("div", {
         className: eG.viewAsRolesWarning,
         children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/normal",
           className: eG.viewAsRolesWarningText,
-          children: v ? eU.intl.string(eU.t.efjuQE) : eU.intl.string(eU.t.br8H2N)
-        }), (0, r.jsx)(g.zx, {
-          className: eG.viewAsRolesWarningButton,
-          size: g.zx.Sizes.MIN,
+          children: E ? eU.intl.string(eU.t.efjuQE) : eU.intl.string(eU.t.br8H2N)
+        }), (0, r.jsx)(m.Button, {
+          size: "sm",
+          fullWidth: true,
           onClick: () => {
-            Z(true)
+            A(true)
           },
-          focusProps: eW,
-          children: eU.intl.string(eU.t.WAI6xs)
+          text: eU.intl.string(eU.t.WAI6xs),
+          focusProps: eW
         })]
       }) : null]
     })

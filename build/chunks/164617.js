@@ -3,6 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   AVSurveyFacesRive: () => Chunk47985.m,
+  DiceRive: () => Chunk58231.q,
   FistBumpRive: () => Chunk582559.p,
   GlowButtonRive: () => Chunk551488.Q,
   JetpackWumpusWithTrinketsRive: () => Chunk343276.z,
@@ -10,7 +11,8 @@ require.r(exports), require.d(exports, {
   PulseGradientRive: () => Chunk984696.z,
   WandAndSparklesRive: () => Chunk963969.x
 });
-var Chunk582559 = require("./582559.jsx"),
+var Chunk58231 = require("./58231.jsx"),
+  Chunk582559 = require("./582559.jsx"),
   Chunk343276 = require("./343276.jsx"),
   Chunk963969 = require("./963969.jsx"),
   Chunk984696 = require("./984696.jsx"),
