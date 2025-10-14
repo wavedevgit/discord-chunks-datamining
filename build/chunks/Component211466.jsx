@@ -2,7 +2,7 @@
 /** chunk id: 211466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => p
+  n: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,9 +15,10 @@ var Chunk925513 = require("./925513.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk20492 = require("./20492.js");
 
-function p() {
+function h() {
   let e = (0, Chunk925513.v6)(),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t.GYpoAg),
@@ -42,7 +43,8 @@ function p() {
       parentSetting: Chunk726985.s6.CONTENT_SOCIAL,
       settingsSection: Chunk981631.oAB.CONTENT_AND_SOCIAL,
       tabs: exports,
-      orientation: "vertical"
+      orientation: "vertical",
+      tabsClassName: Chunk20492.tabs
     })]
   })
 }

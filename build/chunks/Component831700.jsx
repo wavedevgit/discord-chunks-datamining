@@ -422,7 +422,7 @@ function el(e) {
       bypassLimit: G.Z.can(X.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([F.Z], () => F.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
+  }), h = (0, a.e7)([V.Z], () => V.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
     enabled: y
   } = b.W.useExperiment({
     guildId: t.id,
@@ -452,7 +452,7 @@ function el(e) {
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), V = w && null == M;
+  }), F = w && null == M;
   return (0, r.jsx)(ei, en(et({
     channelName: m,
     embeddedApps: f,
@@ -464,7 +464,7 @@ function el(e) {
   }, u, p, e), {
     connected: w,
     isFavoriteSuggestion: l && !N,
-    forceShowButtons: V,
+    forceShowButtons: F,
     channelInfo: M,
     resolvedUnreadSetting: d,
     enableHangStatus: A,

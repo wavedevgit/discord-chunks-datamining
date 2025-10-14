@@ -79,7 +79,7 @@ let B = Chunk647438.memo(function e(t) {
       compact: R = false,
       className: M,
       onContextMenu: B,
-      onClick: V,
+      onClick: F,
       disableInteraction: H = false,
       hasThread: z,
       treatSpam: W
@@ -123,7 +123,7 @@ let B = Chunk647438.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, y.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, y.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(V, {
     className: M,
     compact: R,
     count: 1,
@@ -167,7 +167,7 @@ let B = Chunk647438.memo(function e(t) {
     childrenMessageContent: (0, N.Z)(t, er),
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
-    onClick: V,
+    onClick: F,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),
@@ -178,7 +178,7 @@ let B = Chunk647438.memo(function e(t) {
   })
 });
 
-function F(e) {
+function V(e) {
   let {
     className: t,
     count: n,

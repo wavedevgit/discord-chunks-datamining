@@ -1,14 +1,19 @@
-/** Chunk was on 80451 **/
-/** chunk id: 652525, original params: e,r,t (module,exports,require) **/
+/** Chunk was on 82821 **/
+/** chunk id: 380696, original params: e,r,t (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => i
+  $: () => o,
+  Z: () => s
 });
-var Chunk147693 = require("./147693.js"),
-  o = {
+var Chunk145268 = require("./145268.js");
+
+function o(e) {
+  var r;
+  return null != (r = e.localName) ? r : e.tagName.toLowerCase()
+}
+var n = {
     article: "article",
     aside: "complementary",
-    body: "document",
     button: "button",
     datalist: "listbox",
     dd: "definition",
@@ -27,6 +32,7 @@ var Chunk147693 = require("./147693.js"),
     h6: "heading",
     header: "banner",
     hr: "separator",
+    html: "document",
     legend: "legend",
     li: "listitem",
     math: "math",
@@ -50,13 +56,14 @@ var Chunk147693 = require("./147693.js"),
     tr: "row",
     ul: "list"
   },
-  n = {
+  l = {
     caption: new Set(["aria-label", "aria-labelledby"]),
     code: new Set(["aria-label", "aria-labelledby"]),
     deletion: new Set(["aria-label", "aria-labelledby"]),
     emphasis: new Set(["aria-label", "aria-labelledby"]),
     generic: new Set(["aria-label", "aria-labelledby", "aria-roledescription"]),
     insertion: new Set(["aria-label", "aria-labelledby"]),
+    none: new Set(["aria-label", "aria-labelledby"]),
     paragraph: new Set(["aria-label", "aria-labelledby"]),
     presentation: new Set(["aria-label", "aria-labelledby"]),
     strong: new Set(["aria-label", "aria-labelledby"]),
@@ -64,14 +71,14 @@ var Chunk147693 = require("./147693.js"),
     superscript: new Set(["aria-label", "aria-labelledby"])
   };
 
-function l(e, r) {
-  return ["aria-atomic", "aria-busy", "aria-controls", "aria-current", "aria-describedby", "aria-details", "aria-dropeffect", "aria-flowto", "aria-grabbed", "aria-hidden", "aria-keyshortcuts", "aria-label", "aria-labelledby", "aria-live", "aria-owns", "aria-relevant", "aria-roledescription"].some(function(t) {
+function i(e, r) {
+  return ["aria-atomic", "aria-busy", "aria-controls", "aria-current", "aria-description", "aria-describedby", "aria-details", "aria-dropeffect", "aria-flowto", "aria-grabbed", "aria-hidden", "aria-keyshortcuts", "aria-label", "aria-labelledby", "aria-live", "aria-owns", "aria-relevant", "aria-roledescription"].some(function(t) {
     var a;
-    return e.hasAttribute(t) && !(null != (a = n[r]) && a.has(t))
+    return e.hasAttribute(t) && !(null != (a = l[r]) && a.has(t))
   })
 }
 
-function i(e) {
+function s(e) {
   var r = function(e) {
     var r = e.getAttribute("role");
     if (null !== r) {
@@ -80,18 +87,18 @@ function i(e) {
     }
     return null
   }(e);
-  if (null === r || "presentation" === r) {
+  if (null === r || false !== a.y7.indexOf(r)) {
     var t = function(e) {
-      var r = o[(0, a.$Q)(e)];
+      var r = n[o(e)];
       if (true !== r) return r;
-      switch ((0, a.$Q)(e)) {
+      switch (o(e)) {
         case "a":
         case "area":
         case "link":
           if (e.hasAttribute("href")) return "link";
           break;
         case "img":
-          if ("" === e.getAttribute("alt") && !l(e, "img")) return "presentation";
+          if ("" === e.getAttribute("alt") && !i(e, "img")) return "presentation";
           return "img";
         case "input":
           var t = e.type;
@@ -115,6 +122,8 @@ function i(e) {
             case "search":
               if (e.hasAttribute("list")) return "combobox";
               return "searchbox";
+            case "number":
+              return "spinbutton";
             default:
               return null
           }
@@ -124,7 +133,7 @@ function i(e) {
       }
       return null
     }(e);
-    if ("presentation" !== r || l(e, t || "")) return t
+    if (false === a.y7.indexOf(r || "") || i(e, t || "")) return t
   }
   return r
 }
