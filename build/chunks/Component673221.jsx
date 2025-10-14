@@ -310,7 +310,8 @@ function D(e) {
           shouldFocusWrap: w,
           renderListItem: e => (0, r.jsx)(h.W, T({}, e)),
           maxVisibleItems: G,
-          loading: et
+          loading: et,
+          typeahead: true
         })
       })
     }))]

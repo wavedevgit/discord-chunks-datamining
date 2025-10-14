@@ -2,13 +2,14 @@
 /** chunk id: 448814, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => S
+  w: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk924826 = require("./924826.js"),
+  Chunk260866 = require("./260866.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk692547 = require("./692547.js"),
   Chunk571155 = require("./571155.jsx"),
@@ -20,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk199197 = require("./199197.js"),
   Chunk95632 = require("./95632.js");
 
-function E(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +30,20 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,15 +54,15 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, i = I(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -69,118 +70,134 @@ function v(e, t) {
   return i
 }
 
-function I(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = Chunk692547.Z.modules.select.OPTION_HEIGHT.resolve();
+let S = Chunk692547.Z.modules.select.OPTION_HEIGHT.resolve();
 
-function S(e) {
+function A(e) {
   let t, {
       id: n,
       required: a = false,
-      disabled: c = false,
-      selectionMode: u = "single",
-      items: d,
-      defaultSelectedItems: E,
-      selectedItems: y,
-      onSelectionChange: I,
-      activeDescendantIndex: S,
-      shouldFocusWrap: C = false,
-      renderListItem: N,
-      renderEmptyState: R,
-      maxVisibleItems: P = 5,
-      loading: w = false,
-      onBlur: D,
-      onFocus: L
+      disabled: u = false,
+      selectionMode: d = "single",
+      items: f,
+      defaultSelectedItems: b,
+      selectedItems: O,
+      onSelectionChange: T,
+      activeDescendantIndex: A,
+      shouldFocusWrap: R = false,
+      renderListItem: P,
+      renderEmptyState: w,
+      maxVisibleItems: D = 5,
+      loading: L = false,
+      onBlur: x,
+      onFocus: M,
+      typeahead: j = false
     } = e,
-    x = i.useId(),
-    M = null != n ? n : x,
-    [j, k] = i.useState(null != E ? E : []),
-    U = null != y,
-    G = U ? y : j,
-    B = (0, s.ZP)({
-      id: M,
+    k = i.useId(),
+    U = null != n ? n : k,
+    [G, B] = i.useState(null != b ? b : []),
+    Z = null != O,
+    F = Z ? O : G,
+    V = (0, s.ZP)({
+      id: U,
       async scrollToEnd() {},
       async scrollToStart() {},
-      isEnabled: !c,
-      wrap: C,
+      isEnabled: !u,
+      wrap: R,
       preserveFocusPosition: true
     }),
-    Z = i.useCallback(e => {
-      if (true === a && 1 === G.length && G.includes(e)) return;
-      let t = (0, m.cq)(u, G, e);
-      U || k(t), null == I || I(t)
-    }, [a, G, I, U, u]),
-    F = i.useCallback(e => (0, r.jsx)("div", {
-      className: g.listBoxItemContent,
-      children: (0, r.jsx)(p.x, {
+    {
+      activeIndex: H,
+      handleKeyDown: Y
+    } = N(f);
+  i.useEffect(() => {
+    if (null != H && j) {
+      let e = (0, l.jb)(U, (0, g.cA)(U, H)),
+        t = document.querySelector((0, l.P1)(e));
+      null == t || t.focus()
+    }
+  }, [H, f, j, U]);
+  let W = i.useCallback(e => {
+      if (true === a && 1 === F.length && F.includes(e)) return;
+      let t = (0, g.cq)(d, F, e);
+      Z || B(t), null == T || T(t)
+    }, [a, F, T, Z, d]),
+    K = i.useCallback(e => (0, r.jsx)("div", {
+      className: E.listBoxItemContent,
+      children: (0, r.jsx)(h.x, {
         variant: "text-md/medium",
         color: "currentColor",
-        className: g.listBoxItemLabel,
+        className: E.listBoxItemLabel,
         children: e.label
       })
     }), []);
-  if (w) t = (0, r.jsx)("div", {
-    className: g.loadingSpinnerWrapper,
+  if (L) t = (0, r.jsx)("div", {
+    className: E.loadingSpinnerWrapper,
     "aria-busy": true,
-    children: (0, r.jsx)(_.$, {
-      type: _.R.PULSING_ELLIPSIS,
-      className: g.loadingSpinner,
-      itemClassName: g.loadingSpinnerInner
+    children: (0, r.jsx)(p.$, {
+      type: p.R.PULSING_ELLIPSIS,
+      className: E.loadingSpinner,
+      itemClassName: E.loadingSpinnerInner
     })
   });
-  else if (d.length > 0) t = (0, r.jsx)(f._2, {
+  else if (f.length > 0) t = (0, r.jsx)(_._2, {
     style: {
-      height: null != P ? "".concat(Math.min(d.length, P) * T, "px") : "100%"
+      height: null != D ? "".concat(Math.min(f.length, D) * S, "px") : "100%"
     },
     role: true,
-    rowHeight: T,
-    sections: [d.length],
+    rowHeight: S,
+    sections: [f.length],
     sectionHeight: 0,
     renderSection: () => null,
     renderRow: e => {
       var t;
       let {
         row: n
-      } = e, i = d[n], a = (0, m.cA)(M, n), o = 0 !== G.length && null != G.find(e => e.id === i.id);
-      return (0, r.jsx)(A, O(b({}, i), {
+      } = e, i = f[n], a = (0, g.cA)(U, n), o = 0 !== F.length && null != F.find(e => e.id === i.id);
+      return (0, r.jsx)(C, v(y({}, i), {
         id: a,
-        selectionMode: u,
+        selectionMode: d,
         selected: o,
-        disabled: c || i.disabled,
-        focused: n === S,
+        disabled: u || i.disabled,
+        focused: n === A,
         onClick: () => {
-          c || i.disabled || Z(i)
+          u || i.disabled || W(i)
         },
-        children: null != (t = null == N ? true : N(i)) ? t : F(i)
+        children: null != (t = null == P ? true : P(i)) ? t : K(i)
       }), i.id)
     }
   });
   else {
-    var V;
-    t = null != (V = null == R ? true : R()) ? V : (0, r.jsx)(h.z, {})
+    var z;
+    t = null != (z = null == w ? true : w()) ? z : (0, r.jsx)(m.z, {})
   }
-  return (0, r.jsx)(l.bG, {
-    navigator: B,
-    children: (0, r.jsx)(l.SJ, {
+  return (0, r.jsx)(c.bG, {
+    navigator: V,
+    children: (0, r.jsx)(c.SJ, {
       children: e => {
         var {
-          ref: n
-        } = e, i = v(e, ["ref"]);
-        return (0, r.jsx)("div", O(b({
-          onBlur: D,
-          onFocus: L,
-          "aria-busy": w,
-          ref: n
-        }, i), {
+          ref: n,
+          onKeyDown: i
+        } = e, a = I(e, ["ref", "onKeyDown"]);
+        return (0, r.jsx)("div", v(y({
+          onBlur: x,
+          onFocus: M,
+          "aria-busy": L,
+          ref: n,
+          onKeyDown: e => {
+            null == i || i(e), Y(e)
+          }
+        }, a), {
           role: "listbox",
-          "aria-multiselectable": "multiple" === u,
-          className: o()(g.listBox, {
-            [g.scrollable]: d.length > P
+          "aria-multiselectable": "multiple" === d,
+          className: o()(E.listBox, {
+            [E.scrollable]: f.length > D
           }),
           "data-mana-component": "listbox",
           children: t
@@ -190,7 +207,7 @@ function S(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     children: t,
     id: n,
@@ -198,30 +215,48 @@ function A(e) {
     disabled: a,
     focused: o,
     selectionMode: s,
-    onClick: c
-  } = e, f = (0, l.JA)(n);
+    onClick: l
+  } = e, u = (0, c.JA)(n);
 
   function _() {
-    return "multiple" === s ? (0, r.jsx)(u.F, {
+    return "multiple" === s ? (0, r.jsx)(d.F, {
       checked: i
-    }) : i ? (0, r.jsx)(d.k, {
+    }) : i ? (0, r.jsx)(f.k, {
       color: "currentColor",
       size: "refresh_sm"
     }) : null
   }
-  return (0, r.jsxs)("div", O(b({}, f), {
+  return (0, r.jsxs)("div", v(y({}, u), {
     id: n,
-    className: g.listBoxItem,
+    className: E.listBoxItem,
     role: "option",
-    tabIndex: f.tabIndex,
-    onClick: c,
+    tabIndex: u.tabIndex,
+    onClick: l,
     "aria-disabled": a,
     "aria-selected": i,
     "data-focus-visible": o,
     children: [t, (0, r.jsx)("div", {
-      className: g.selectedIcon,
+      className: E.selectedIcon,
       "aria-hidden": true,
       children: _()
     })]
   }))
+}
+
+function N(e) {
+  let [t, n] = i.useState(""), r = i.useMemo(() => e.map(e => e.label.toLowerCase()), [e]), a = i.useCallback(e => {
+    e.metaKey || e.ctrlKey || e.altKey || e.shiftKey || e.key.length > 1 || n(t => t + e.key)
+  }, []), o = i.useRef(null);
+  return i.useEffect(() => (o.current = setTimeout(() => {
+    n("")
+  }, 750), () => {
+    clearTimeout(o.current)
+  }), [t]), {
+    activeIndex: i.useMemo(() => {
+      if ("" === t) return null;
+      let e = r.findIndex(e => e.startsWith(t.toLowerCase()));
+      return e >= 0 ? e : null
+    }, [r, t]),
+    handleKeyDown: a
+  }
 }
