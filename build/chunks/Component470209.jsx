@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -55,7 +55,7 @@ function h(e) {
   } = e, a = r.useRef(null), {
     name: s,
     color: h
-  } = t, v = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+  } = t, v = e => A(t => (i()(null != t, "newRoleParams should be defined"), p(f({}, t), {
     color: e
   })));
   return (0, n.jsxs)("div", {
@@ -63,17 +63,17 @@ function h(e) {
     children: [(0, n.jsx)(o.oil, {
       autoFocus: true,
       value: s,
-      onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+      onChange: e => A(t => (i()(null != t, "newRoleParams should be defined"), p(f({}, t), {
         name: e
       }))),
       id: m,
-      placeholder: u.intl.string(u.t.oNauur),
-      maxLength: c.VKK
+      placeholder: c.intl.string(c.t.oNauur),
+      maxLength: u.VKK
     }), (0, n.jsxs)("div", {
       className: g.roleColorContainer,
       children: [(0, n.jsx)(o.nn4, {
-        children: u.intl.format(u.t["Vlq/pK"], {
-          color: (0, i.Rf)(h)
+        children: c.intl.format(c.t["Vlq/pK"], {
+          color: (0, l.Rf)(h)
         })
       }), (0, n.jsx)(o.yRy, {
         targetElementRef: a,
@@ -85,7 +85,7 @@ function h(e) {
           variant: "secondary",
           icon: o.ilE,
           buttonRef: a,
-          "aria-label": u.intl.string(u.t.QLgdlZ)
+          "aria-label": c.intl.string(c.t.QLgdlZ)
         }))
       })]
     }), (0, n.jsx)(d.Z, {

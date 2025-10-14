@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk377089 = require("./377089.js"),
   Chunk231338 = require("./231338.js");
@@ -377,100 +377,77 @@ let h = [{
           label: t,
           hideLabel: n,
           description: i,
-          required: c,
-          error: d,
-          disabled: _,
-          placeholder: p,
-          value: m = "",
-          readOnly: g,
-          helperText: E,
-          successMessage: b,
-          showCharacterCount: y
-        } = e, O = (0, s.U)("UserSettingsDesignSystems"), v = {
+          required: s,
+          error: c,
+          disabled: d,
+          placeholder: _,
+          value: p = "",
+          readOnly: m,
+          helperText: g,
+          successMessage: E,
+          showCharacterCount: b
+        } = e, y = {
           label: t,
           hideLabel: n,
           description: i,
-          required: c,
-          value: m,
-          error: d,
-          disabled: _,
-          placeholder: p,
-          readOnly: g,
-          helperText: E,
-          showCharacterCount: y,
-          successMessage: b
+          required: s,
+          value: p,
+          error: c,
+          disabled: d,
+          placeholder: _,
+          readOnly: m,
+          helperText: g,
+          showCharacterCount: b,
+          successMessage: E
         };
         return (0, r.jsxs)(o.Kqy, {
-          children: [(0, r.jsxs)(o.Kqy, {
-            children: [(0, r.jsx)(o.xJW, {
-              title: "Text Input",
-              children: (0, r.jsxs)(o.Kqy, {
-                children: [(0, r.jsx)(o.oil, u({}, v)), (0, r.jsx)(o.oil, f(u({}, v), {
-                  clearable: true
-                })), O && (0, r.jsxs)(r.Fragment, {
-                  children: [(0, r.jsx)(o.xJW, {
-                    title: "Leading Icons",
-                    children: (0, r.jsxs)(o.Kqy, {
-                      children: [(0, r.jsx)(o.oil, f(u({}, v), {
-                        leading: {
-                          icon: o.lOy,
-                          onClick: l.dG,
-                          "aria-label": "At"
-                        }
-                      })), (0, r.jsx)(o.oil, f(u({}, v), {
-                        leading: o.lOy
-                      })), (0, r.jsx)(o.oil, f(u({}, v), {
-                        leading: "https://discord.gg/"
-                      }))]
-                    })
-                  }), (0, r.jsx)(o.xJW, {
-                    title: "Trailing Icons",
-                    children: (0, r.jsxs)(o.Kqy, {
-                      children: [(0, r.jsx)(o.oil, f(u({}, v), {
-                        trailing: {
-                          icon: o.lOy,
-                          onClick: l.dG,
-                          "aria-label": "At"
-                        }
-                      })), (0, r.jsx)(o.oil, f(u({}, v), {
-                        trailing: o.lOy
-                      }))]
-                    })
-                  }), (0, r.jsx)(o.oil, f(u({}, v), {
-                    leading: {
-                      type: "tags",
-                      label: "Tags",
-                      items: h.slice(0, 3)
-                    }
-                  }))]
-                })]
-              })
-            }), (0, r.jsx)(o.xJW, {
-              title: "Text Input (Legacy)",
-              children: (0, r.jsx)(a.Is, u({}, v))
+          gap: 24,
+          children: [(0, r.jsxs)(a.C3N, {
+            label: "Text Input",
+            children: [(0, r.jsx)(o.oil, u({}, y)), (0, r.jsx)(o.oil, f(u({}, y), {
+              clearable: true
+            })), (0, r.jsx)(o.oil, f(u({}, y), {
+              leading: {
+                icon: o.lOy,
+                onClick: l.dG,
+                "aria-label": "At"
+              }
+            })), (0, r.jsx)(o.oil, f(u({}, y), {
+              leading: o.lOy
+            })), (0, r.jsx)(o.oil, f(u({}, y), {
+              leading: "https://discord.gg/"
+            })), (0, r.jsx)(o.oil, f(u({}, y), {
+              trailing: {
+                icon: o.lOy,
+                onClick: l.dG,
+                "aria-label": "At"
+              }
+            })), (0, r.jsx)(o.oil, f(u({}, y), {
+              trailing: o.lOy
+            })), (0, r.jsx)(o.oil, f(u({}, y), {
+              leading: {
+                type: "tags",
+                label: "Tags",
+                items: h.slice(0, 3)
+              }
+            }))]
+          }), (0, r.jsx)(a.izJ, {}), (0, r.jsxs)(a.C3N, {
+            label: "Search Bar",
+            children: [(0, r.jsx)(o.E1j, {
+              query: p,
+              onChange: l.dG,
+              disabled: d,
+              placeholder: _
+            }), (0, r.jsx)(o.E1j, {
+              query: p,
+              onChange: l.dG,
+              size: "sm",
+              disabled: d,
+              placeholder: _
             })]
-          }), (0, r.jsx)(o.xJW, {
-            title: "Search Bar",
-            children: (0, r.jsxs)(o.Kqy, {
-              children: [(0, r.jsx)(o.E1j, {
-                query: m,
-                onChange: l.dG,
-                disabled: _,
-                placeholder: p
-              }), (0, r.jsx)(o.E1j, {
-                query: m,
-                onChange: l.dG,
-                size: "sm",
-                disabled: _,
-                placeholder: p
-              })]
-            })
-          }), (0, r.jsx)(o.xJW, {
-            title: "Text Area",
-            children: (0, r.jsx)(o.Kx8, u({}, v))
-          }), (0, r.jsx)(o.xJW, {
-            title: "Text Area (Legacy)",
-            children: (0, r.jsx)(a.iS, u({}, v))
+          }), (0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
+            label: "Text Area",
+            children: (0, r.jsx)(o.Kx8, u({}, y))
           })]
         })
       },

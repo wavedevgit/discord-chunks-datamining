@@ -2,15 +2,14 @@
 /** chunk id: 275846, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => c
+  i: () => l
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk49800 = require("./49800.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk540863 = require("./540863.jsx"),
   Chunk383838 = require("./383838.jsx"),
   Chunk512983 = require("./512983.jsx");
-let c = {
+let l = {
   title: "Form Components",
   stories: [{
     id: "formnotice",
@@ -20,11 +19,11 @@ let c = {
         type: t,
         title: n,
         body: i,
-        hasButton: o
-      } = e, l = o ? (0, r.jsx)(a.Button, {
+        hasButton: s
+      } = e, l = s ? (0, r.jsx)(a.Button, {
         text: "Action"
       }) : true;
-      return (0, r.jsx)(s.To, {
+      return (0, r.jsx)(o.To, {
         type: t,
         title: n,
         body: i,
@@ -73,77 +72,6 @@ let c = {
       }
     }
   }, {
-    id: "formitem",
-    name: "FormItem",
-    component: function(e) {
-      let {
-        title: t,
-        errorMessage: n,
-        disabled: i,
-        required: s,
-        tag: l
-      } = e, c = (null == n ? true : n.trim()) === "" ? true : n;
-      return (0, r.jsx)(o.x, {
-        title: t,
-        error: c,
-        disabled: i,
-        required: s,
-        tag: l,
-        children: (0, r.jsx)(a.oil, {
-          placeholder: "Enter text here..."
-        })
-      })
-    },
-    controls: {
-      title: {
-        type: "text",
-        label: "Title",
-        defaultValue: "Form Field"
-      },
-      errorMessage: {
-        type: "text",
-        label: "Error Message",
-        defaultValue: ""
-      },
-      disabled: {
-        type: "boolean",
-        label: "Disabled",
-        defaultValue: false
-      },
-      required: {
-        type: "boolean",
-        label: "Required",
-        defaultValue: false
-      },
-      tag: {
-        type: "select",
-        label: "Title Tag",
-        defaultValue: "h5",
-        options: [{
-          label: "H1",
-          value: "h1"
-        }, {
-          label: "H2",
-          value: "h2"
-        }, {
-          label: "H3",
-          value: "h3"
-        }, {
-          label: "H4",
-          value: "h4"
-        }, {
-          label: "H5",
-          value: "h5"
-        }, {
-          label: "Label",
-          value: "label"
-        }, {
-          label: "Legend",
-          value: "legend"
-        }]
-      }
-    }
-  }, {
     id: "formtitle",
     name: "FormTitle",
     component: function(e) {
@@ -152,14 +80,14 @@ let c = {
         disabled: n,
         required: i,
         errorMessage: a
-      } = e, o = (null == a ? true : a.trim()) === "" ? true : a, s = ["h1", "h2", "h3", "h4", "h5", "legend"];
+      } = e, o = (null == a ? true : a.trim()) === "" ? true : a, l = ["h1", "h2", "h3", "h4", "h5", "legend"];
       return (0, r.jsx)("div", {
         style: {
           display: "flex",
           flexDirection: "column",
           gap: "16px"
         },
-        children: s.map(e => (0, r.jsxs)("div", {
+        children: l.map(e => (0, r.jsxs)("div", {
           style: {
             display: "flex",
             alignItems: "center",
@@ -172,7 +100,7 @@ let c = {
               color: "#666"
             },
             children: [e, ":"]
-          }), (0, r.jsx)(l.v, {
+          }), (0, r.jsx)(s.v, {
             tag: e,
             disabled: n,
             required: i,

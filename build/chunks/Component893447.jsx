@@ -2,15 +2,16 @@
 /** chunk id: 893447, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => f
+  Q: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk375316 = require("./375316.js"),
+  Chunk590154 = require("./590154.js"),
   Chunk179067 = require("./179067.jsx"),
   Chunk571527 = require("./571527.js");
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,20 +20,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,40 +44,42 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e) {
+function _(e) {
   let {
     listRef: t,
     label: n,
-    disabledKeys: l,
-    selectionMode: u = "none",
-    layout: f = "default",
-    items: _,
-    onRemove: p,
-    children: h
-  } = e, [m, g] = i.useState(() => new Set);
+    disabledKeys: c,
+    selectionMode: d = "none",
+    layout: _ = "default",
+    items: p,
+    onRemove: h,
+    children: m
+  } = e, [g, E] = i.useState(() => new Set), b = i.useContext(o.z);
   return (0, r.jsxs)(a.QS, {
     "aria-label": n,
-    "data-layout": f,
-    className: s.tagGroup,
-    selectionMode: u,
-    selectedKeys: m,
-    onSelectionChange: g,
-    disabledKeys: l,
-    onRemove: p,
+    id: null == b ? true : b.controlId,
+    "aria-describedby": null == b ? true : b.describedById,
+    "data-layout": _,
+    className: l.tagGroup,
+    selectionMode: d,
+    selectedKeys: g,
+    onSelectionChange: E,
+    disabledKeys: c,
+    onRemove: h,
     children: [(0, r.jsx)(a.PS, {
       ref: t,
-      className: s.tagList,
-      children: _.map(e => (0, i.createElement)(o.V, d(c({}, e), {
+      className: l.tagList,
+      children: p.map(e => (0, i.createElement)(s.V, f(u({}, e), {
         key: e.id,
-        layout: f,
+        layout: _,
         accessibilityHint: e.accessibilityHint
       })))
-    }), h]
+    }), m]
   })
 }

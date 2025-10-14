@@ -2,14 +2,12 @@
 /** chunk id: 996341, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => s
+  n: () => o
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk793030 = require("./793030.js"),
-  Chunk540863 = require("./540863.jsx"),
+var Chunk951288 = require("./951288.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk525605 = require("./525605.js");
-let s = {
+let o = {
   title: "HelpMessage",
   stories: [{
     name: "HelpMessage",
@@ -20,9 +18,9 @@ let s = {
       } = e;
       return (0, r.jsx)(i.Kqy, {
         gap: 16,
-        children: Object.values(o.Q).map(e => (0, r.jsx)(a.x, {
-          title: e,
-          children: (0, r.jsx)(o.W, {
+        children: Object.values(a.Q).map(e => (0, r.jsx)(i.gNt, {
+          label: e,
+          children: (0, r.jsx)(a.W, {
             messageType: e,
             children: t
           }, e)

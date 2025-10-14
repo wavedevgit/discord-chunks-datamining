@@ -23,15 +23,13 @@ function _() {
       children: (0, Chunk951288.jsx)(Chunk710808.Z, {})
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS,
-      children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
-          variant: "critical-secondary",
-          size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t["4iKQ//"]),
-          onClick: () => {
-            (0, Chunk680924.Z)(Chunk388032.intl.string(Chunk388032.t["4iKQ//"]), Chunk388032.intl.string(Chunk388032.t.sQ42iY), Chunk846027.Z.reset)
-          }
-        })
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        variant: "critical-secondary",
+        size: "sm",
+        text: Chunk388032.intl.string(Chunk388032.t["4iKQ//"]),
+        onClick: () => {
+          (0, Chunk680924.Z)(Chunk388032.intl.string(Chunk388032.t["4iKQ//"]), Chunk388032.intl.string(Chunk388032.t.sQ42iY), Chunk846027.Z.reset)
+        }
       })
     })]
   })

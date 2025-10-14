@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752305 = require("./752305.js"),
@@ -40,7 +40,7 @@ function b(e) {
     text: a
   } = e;
   return (0, n.jsxs)("div", {
-    className: l()(m.maxLength, {
+    className: i()(m.maxLength, {
       [m.errorOverflow]: A
     }),
     "aria-hidden": "true",
@@ -53,20 +53,20 @@ function C(e) {
   let {
     "aria-labelledby": A,
     className: a,
-    id: i,
-    autoFocus: c,
+    id: l,
+    autoFocus: u,
     maxLength: g,
     onChange: m,
     onSubmit: C,
-    showCharacterCount: j = false,
-    placeholder: U,
-    required: x,
-    value: V,
+    showCharacterCount: U = false,
+    placeholder: j,
+    required: V,
+    value: x,
     enableThemedBackground: O = false,
     parentModalKey: P,
     label: F,
     errorMessage: y
-  } = e, I = (0, o.Gc0)(), [N, K] = r.useState(() => (0, s.JM)(V)), T = r.useRef(true === c), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : h;
+  } = e, I = (0, o.Gc0)(), [N, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === u), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : h;
 
   function X(e, t, A) {
     m(t), K(A)
@@ -77,9 +77,9 @@ function C(e) {
       alwaysUseLayer: true,
       small: true
     },
-    disableAutoFocus: true !== c,
+    disableAutoFocus: true !== u,
     drafts: {
-      type: u.d.ChannelMessage
+      type: c.d.ChannelMessage
     },
     emojis: {
       button: true
@@ -91,28 +91,28 @@ function C(e) {
       useDisabledStylesOnSubmit: true,
       disableEnterToSubmit: true
     }
-  }), [c]);
+  }), [u]);
   return (0, n.jsx)(o.gNt, {
     label: F,
     errorMessage: y,
-    id: i,
-    required: x,
+    id: l,
+    required: V,
     children: e => {
       var t, A;
       return (0, n.jsxs)(d.ZP, {
-        id: null != (t = null == e ? true : e.controlId) ? t : i,
+        id: null != (t = null == e ? true : e.controlId) ? t : l,
         "aria-describedby": null != (A = null == e ? true : e.describedById) ? A : W,
         "aria-labelledby": Z,
         "aria-errormessage": null == e ? true : e.errorMessageId,
         "aria-invalid": (null == e ? true : e.errorMessageId) != null,
         className: p.textArea,
-        innerClassName: l()(a, p.textAreaInner),
+        innerClassName: i()(a, p.textAreaInner),
         maxCharacterCount: g,
         onChange: X,
-        placeholder: U,
-        required: x,
+        placeholder: j,
+        required: V,
         channel: v,
-        textValue: V,
+        textValue: x,
         richValue: N,
         type: Q,
         onBlur: () => {
@@ -126,9 +126,9 @@ function C(e) {
         disableThemedBackground: !O,
         parentModalKey: P,
         emojiPickerCloseOnModalOuterClick: true,
-        children: [true === j && (0, n.jsx)(b, {
-          hasError: null != I.error || null != g && V.length > g,
-          text: V,
+        children: [true === U && (0, n.jsx)(b, {
+          hasError: null != I.error || null != g && x.length > g,
+          text: x,
           maxLength: g
         }), null != g && (0, n.jsx)(o.nn4, {
           id: h,
