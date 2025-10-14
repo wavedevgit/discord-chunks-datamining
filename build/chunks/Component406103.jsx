@@ -20,60 +20,61 @@ let c = {
         disabled: t,
         optionCount: n,
         label: c,
-        description: u,
-        showIcons: d,
-        withMixedDisabledOptions: f
-      } = e, [_, p] = i.useState(["option1"]), h = i.useMemo(() => [{
-        label: "Option 1",
+        optionLabel: u,
+        description: d,
+        showIcons: f,
+        withMixedDisabledOptions: _
+      } = e, [p, h] = i.useState(["option1"]), m = i.useMemo(() => [{
+        label: null != u ? "".concat(u, " 1") : "Option 1",
         value: "option1",
-        description: null != u || "" === u ? u : true,
-        leadingIcon: d ? a.d3s : true,
-        disabled: !f && true
+        description: null == d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !_ && true
       }, {
-        label: "Option 2",
+        label: null != u ? "".concat(u, " 2") : "Option 2",
         value: "option2",
-        description: null != u || "" === u ? u : true,
-        leadingIcon: d ? a.d3s : true,
-        disabled: !!f || true
+        description: null == d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !!_ || true
       }, {
-        label: "Option 3",
+        label: null != u ? "".concat(u, " 3") : "Option 3",
         value: "option3",
-        description: null != u || "" === u ? u : true,
-        leadingIcon: d ? a.d3s : true,
-        disabled: !f && true
+        description: null == d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !_ && true
       }, {
-        label: "Option 4",
+        label: null != u ? "".concat(u, " 4") : "Option 4",
         value: "option4",
-        description: null != u || "" === u ? u : true,
-        leadingIcon: d ? a.d3s : true,
-        disabled: !!f || true
+        description: null == d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !!_ || true
       }, {
-        label: "Option 5",
+        label: null != u ? "".concat(u, " 5") : "Option 5",
         value: "option5",
-        description: null != u || "" === u ? u : true,
-        leadingIcon: d ? a.d3s : true,
-        disabled: !f && true
-      }].slice(0, Math.max(1, Math.min(5, n))), [n, u, d, f]), m = i.useCallback(e => {
-        p(e)
-      }, []), g = i.useCallback(() => {
-        p(h.map(e => e.value))
-      }, [h]), E = i.useCallback(() => {
-        p([])
-      }, []), b = i.useCallback(() => {
-        h.length > 0 && p([h[0].value])
-      }, [h]);
+        description: null == d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !_ && true
+      }].slice(0, Math.max(1, Math.min(5, n))), [n, u, d, f, _]), g = i.useCallback(e => {
+        h(e)
+      }, []), E = i.useCallback(() => {
+        h(m.map(e => e.value))
+      }, [m]), b = i.useCallback(() => {
+        h([])
+      }, []), y = i.useCallback(() => {
+        m.length > 0 && h([m[0].value])
+      }, [m]);
       return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(l.c, {
-          selectedValues: _,
+          selectedValues: p,
           label: c,
-          onChange: m,
-          options: h,
+          onChange: g,
+          options: m,
           disabled: t
         }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
-          children: ["Current selection: ", _.length > 0 ? _.join(", ") : "None"]
+          children: ["Current selection: ", p.length > 0 ? p.join(", ") : "None"]
         }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
@@ -81,19 +82,19 @@ let c = {
             variant: "secondary",
             size: "sm",
             text: "Select All",
-            onClick: g,
-            disabled: t || 0 === h.length
+            onClick: E,
+            disabled: t || 0 === m.length
           }), (0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select First",
-            onClick: b,
-            disabled: t || 0 === h.length
+            onClick: y,
+            disabled: t || 0 === m.length
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear All",
-            onClick: E,
+            onClick: b,
             disabled: t
           })]
         })]
@@ -130,6 +131,11 @@ let c = {
           value: 5
         }],
         defaultValue: 3
+      },
+      optionLabel: {
+        type: "text",
+        label: "Option Label",
+        defaultValue: "Option"
       },
       description: {
         type: "text",

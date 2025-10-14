@@ -66,7 +66,7 @@ function U(e) {
 }
 
 function F(e, t, n, r) {
-  let i = (0, O.isWindows)() ? (0, E.Z)(_.ZP, y.Z) : null,
+  let i = (0, C.isWindows)() ? (0, E.Z)(_.ZP, y.Z) : null,
     l = _.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
@@ -104,9 +104,9 @@ function W(e) {
     onChangeSelectedSource: n
   } = e, {
     enableGoLiveCaptureCard: l
-  } = C.Z.useExperiment({
+  } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, O] = i.useState(null), w = null != y && y.length > 0, [P, Z] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
+  }), o = b.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [P, Z] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
   i.useEffect(() => {
     let e = M.current;
     return (0, I.t)({
@@ -118,7 +118,7 @@ function W(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      p(t), j(n), O(r)
+      p(t), j(n), C(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -128,7 +128,7 @@ function W(e) {
         width: 176,
         height: 99
       });
-      p(e), j(t), O(n)
+      p(e), j(t), C(n)
     }), () => {
       e.stop()
     }
@@ -214,7 +214,7 @@ function W(e) {
         let e = A.current;
         null != e && T(!e.isScrolledToTop())
       },
-      children: [P === c.vA.WINDOW && null != U && (0, r.jsx)(b.Z, {
+      children: [P === c.vA.WINDOW && null != U && (0, r.jsx)(S.Z, {
         quest: U.quest
       }), (0, r.jsx)(m.Z, {
         layout: m.Z.Layout.WRAP,
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = h.current,
       t = () => {
-        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(b.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });
@@ -329,13 +329,13 @@ function J(e) {
         url: ""
       })
     }, [t, c]),
-    _ = (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR),
-    g = (0, O.isMac)(),
+    _ = (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR),
+    g = (0, C.isMac)(),
     [x, v] = i.useState(false),
     j = i.useCallback(() => {
       v(!x)
     }, [x]),
-    b = _ ? (0, r.jsx)(z, {
+    S = _ ? (0, r.jsx)(z, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
@@ -366,7 +366,7 @@ function J(e) {
       variant: "text-md/semibold",
       color: "interactive-normal",
       children: L.intl.string(L.t.XyYoFR)
-    }), b, 0 === l.length ? null : (0, r.jsxs)("div", {
+    }), S, 0 === l.length ? null : (0, r.jsxs)("div", {
       className: s()(G.nativePickerCaptureSection, x ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
         onClick: j,
@@ -410,7 +410,7 @@ function X(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return i.useEffect(() => {
-    (0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR) ? (0, P.T)(l) : (0, P.t)()
+    (0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR) ? (0, P.T)(l) : (0, P.t)()
   }, [l]), s === Z.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",

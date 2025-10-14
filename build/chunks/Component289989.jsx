@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 289989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -51,7 +51,7 @@ function j(e) {
   })
 }
 
-function b(e) {
+function S(e) {
   let {
     onSourceSelect: t
   } = e;

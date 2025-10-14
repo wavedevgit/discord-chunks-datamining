@@ -1,9 +1,9 @@
 /** Chunk was on 47863 **/
 /** chunk id: 615161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E_: () => O,
+  E_: () => C,
   Ti: () => y,
-  Yw: () => S
+  Yw: () => b
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -75,7 +75,7 @@ let x = {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
-function b(e, t) {
+function S(e, t) {
   switch (t.type) {
     case "set_mute_audio":
       return g(_({}, e), {
@@ -148,7 +148,7 @@ function b(e, t) {
   }
 }
 
-function S(e) {
+function b(e) {
   let {
     dispatch: t,
     state: n,
@@ -168,26 +168,26 @@ function y(e, t, n) {
   let v = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "source_select",
     {
       defaultAutoQuality: j,
-      allowAutoQuality: S
+      allowAutoQuality: b
     } = (0, f._)({
       location: "useCreateGoLiveModalState"
     }),
     {
       preset: y,
-      resolution: O,
-      fps: C,
+      resolution: C,
+      fps: O,
       soundshareEnabled: w
     } = (0, s.cj)([d.Z], () => d.Z.getState());
   j && (y = h.ApplicationStreamPresets.PRESET_AUTO);
   let P = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
     Z = null != (r = c.I0.useSetting()) && r,
     I = null != (l = c.eo.useSetting()) && l;
-  y in h.ApplicationStreamPresets && (y !== h.ApplicationStreamPresets.PRESET_AUTO || S) || (y = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, O, C, t, n) || (O = h.ApplicationStreamResolutions.RESOLUTION_720, C = h.ApplicationStreamFPS.FPS_30);
-  let [E, T] = i.useReducer(b, g(_({}, x), {
+  y in h.ApplicationStreamPresets && (y !== h.ApplicationStreamPresets.PRESET_AUTO || b) || (y = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, C, O, t, n) || (C = h.ApplicationStreamResolutions.RESOLUTION_720, O = h.ApplicationStreamFPS.FPS_30);
+  let [E, T] = i.useReducer(S, g(_({}, x), {
     muteStreamAudio: !w,
     preset: y,
-    resolution: O,
-    fps: C,
+    resolution: C,
+    fps: O,
     hidePreview: Z,
     notifyFriends: I,
     selectedSource: e,
@@ -213,6 +213,6 @@ function y(e, t, n) {
   }
 }
 
-function O() {
+function C() {
   return [Chunk647438.useContext(v), Chunk647438.useContext(j)]
 }

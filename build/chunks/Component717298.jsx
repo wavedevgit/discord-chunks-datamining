@@ -56,15 +56,15 @@ function J(e) {
     sourceApplication: o,
     analyticsLocations: J = [],
     selectSource: X = true
-  } = e, K = i.useRef(performance.now()), Y = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, H.jR))), {
+  } = e, K = i.useRef(performance.now()), Y = (0, f.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, H.jR))), {
     analyticsLocations: q
   } = (0, x.ZP)(J, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
     state: ee,
     dispatch: et
-  } = (0, M.Ti)(o, Q, $, (0, C.isWindows)() && null != o && X ? "confirm" : "source_select");
+  } = (0, M.Ti)(o, Q, $, (0, O.isWindows)() && null != o && X ? "confirm" : "source_select");
   (0, F.Z)(Y, et, "confirm" === ee.modalStep);
   let en = !w.ZP.canStreamQuality(w.ZP.StreamQuality.HIGH, Q),
-    er = !(0, C.isLinux)(),
+    er = !(0, O.isLinux)(),
     ei = "confirm" === ee.modalStep,
     el = !X && null != o && !ei,
     es = Y && ee.sourceType !== u.vA.CAMERA,
@@ -126,8 +126,8 @@ function J(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: q,
-          application_id: (0, C.isWindows)() ? null == (t = (0, I.Z)(v.ZP, O.Z)) ? true : t.id : true,
-          parent_media_session_id: S.Z.getMediaSessionId()
+          application_id: (0, O.isWindows)() ? null == (t = (0, I.Z)(v.ZP, C.Z)) ? true : t.id : true,
+          parent_media_session_id: b.Z.getMediaSessionId()
         }
       },
       className: s()(V.root, {

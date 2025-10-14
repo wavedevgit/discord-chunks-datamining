@@ -102,7 +102,7 @@ function E(e) {
     screenSources: s,
     sourceType: o,
     fetchingSources: g,
-    selectedSource: C,
+    selectedSource: O,
     discordSourceId: Z,
     hasPermission: E
   }] = (0, y.E_)(), {
@@ -114,9 +114,9 @@ function E(e) {
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, A, n);
+  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, b.jx)(M, A, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, Z, R) - (0, S.ov)(e, null == k ? true : k.source.id, Z, R)) : n, [k, N, n, Z, R]);
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, Z, R) - (0, b.ov)(e, null == k ? true : k.source.id, Z, R)) : n, [k, N, n, Z, R]);
   if (g) {
     if (false === E) {
       let e = false;
@@ -135,7 +135,7 @@ function E(e) {
         }), e && (0, r.jsx)(u.Button, {
           text: w.intl.string(w.t["XgZk+v"]),
           onClick: () => {
-            m.Z.openSettings(O.Eu.SCREEN_RECORDING)
+            m.Z.openSettings(C.Eu.SCREEN_RECORDING)
           }
         })]
       })
@@ -151,7 +151,7 @@ function E(e) {
     children: G.map(e => (0, r.jsx)(I, {
       onClick: t,
       source: e,
-      selected: null != C && "windowHandle" in C ? (0, b.Z)(e.id, C.windowHandle) : (null == C ? true : C.id) === e.id
+      selected: null != O && "windowHandle" in O ? (0, S.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
     }, e.id))
   })
 }

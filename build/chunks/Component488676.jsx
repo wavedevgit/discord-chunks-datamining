@@ -2,19 +2,15 @@
 /** chunk id: 488676, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => _
-}), require("./388685.js");
+  t: () => c
+}), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk30717 = require("./30717.jsx"),
-  Chunk895070 = require("./895070.jsx"),
-  Chunk632140 = require("./632140.jsx"),
-  Chunk125455 = require("./125455.jsx"),
-  Chunk966649 = require("./966649.jsx"),
+  Chunk657707 = require("./657707.js"),
   Chunk793030 = require("./793030.js"),
   Chunk538534 = require("./538534.jsx"),
   Chunk159691 = require("./159691.js");
-let _ = {
+let c = {
   title: "RadioGroup",
   stories: [{
     id: "radiogroup",
@@ -23,84 +19,82 @@ let _ = {
       let {
         disabled: t,
         optionCount: n,
-        label: _,
-        desc: p,
-        helperText: h,
-        required: m,
-        withDescriptions: g,
-        withIcons: E
-      } = e, [b, y] = i.useState("option1"), O = i.useMemo(() => {
-        let e = [s.x, o.A, a.d, l.e, c.U];
-        return [{
-          name: "Option 1",
-          value: "option1",
-          desc: g ? "This is the first option with some descriptive text" : true,
-          leadingIcon: E ? e[0] : true
-        }, {
-          name: "Option 2",
-          value: "option2",
-          desc: g ? "This is the second option with different content" : true,
-          leadingIcon: E ? e[1] : true
-        }, {
-          name: "Option 3",
-          value: "option3",
-          desc: g ? "This is the third option for comparison" : true,
-          leadingIcon: E ? e[2] : true
-        }, {
-          name: "Option 4",
-          value: "option4",
-          desc: g ? "This is the fourth option" : true,
-          leadingIcon: E ? e[3] : true
-        }, {
-          name: "Option 5",
-          value: "option5",
-          desc: g ? "This is the fifth option" : true,
-          leadingIcon: E ? e[4] : true
-        }].slice(0, Math.max(1, Math.min(5, n)))
-      }, [n, g, E]), v = i.useCallback(e => {
-        y(e)
-      }, []), I = i.useCallback(() => {
-        O.length > 0 && y(O[0].value)
-      }, [O]), T = i.useCallback(() => {
-        O.length > 0 && y(O[O.length - 1].value)
-      }, [O]), S = i.useCallback(() => {
-        y(true)
+        label: c,
+        optionLabel: u,
+        description: d,
+        showIcons: f,
+        withMixedDisabledOptions: _
+      } = e, [p, h] = i.useState("option1"), m = i.useMemo(() => [{
+        name: null != u ? "".concat(u, " 1") : "Option 1",
+        value: "option1",
+        desc: null != d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !_ && true
+      }, {
+        name: null != u ? "".concat(u, " 2") : "Option 2",
+        value: "option2",
+        desc: null != d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !!_ || true
+      }, {
+        name: null != u ? "".concat(u, " 3") : "Option 3",
+        value: "option3",
+        desc: null != d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !_ && true
+      }, {
+        name: null != u ? "".concat(u, " 4") : "Option 4",
+        value: "option4",
+        desc: null != d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !!_ || true
+      }, {
+        name: null != u ? "".concat(u, " 5") : "Option 5",
+        value: "option5",
+        desc: null != d || "" === d ? true : d,
+        leadingIcon: f ? a.d3s : true,
+        disabled: !_ && true
+      }].slice(0, Math.max(1, Math.min(5, n))), [n, u, d, f, _]), g = i.useCallback(e => {
+        h(e)
+      }, []), E = i.useCallback(() => {
+        m.length > 0 && h(m[0].value)
+      }, [m]), b = i.useCallback(() => {
+        m.length > 0 && h(m[m.length - 1].value)
+      }, [m]), y = i.useCallback(() => {
+        h(true)
       }, []);
-      return (0, r.jsxs)(u.Kqy, {
+      return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(d.E, {
-          value: b,
-          label: _,
-          description: p,
-          helperText: h,
-          required: m,
-          onChange: v,
-          options: O,
+        children: [(0, r.jsx)(s.E, {
+          value: p,
+          label: c,
+          onChange: g,
+          options: m,
           disabled: t
-        }), (0, r.jsxs)(u.xvT, {
+        }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
-          children: ["Current selection: ", "string" == typeof b && "" !== b ? b : "None"]
-        }), (0, r.jsxs)(u.Kqy, {
+          children: ["Current selection: ", "string" == typeof p && "" !== p ? p : "None"]
+        }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(f.zxk, {
+          children: [(0, r.jsx)(l.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select First",
-            onClick: I,
-            disabled: t || 0 === O.length
-          }), (0, r.jsx)(f.zxk, {
+            onClick: E,
+            disabled: t || 0 === m.length
+          }), (0, r.jsx)(l.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select Last",
-            onClick: T,
-            disabled: t || 0 === O.length
-          }), (0, r.jsx)(f.zxk, {
+            onClick: b,
+            disabled: t || 0 === m.length
+          }), (0, r.jsx)(l.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear",
-            onClick: S,
+            onClick: y,
             disabled: t
           })]
         })]
@@ -112,21 +106,6 @@ let _ = {
         label: "Label",
         defaultValue: "Mana Radio Group"
       },
-      desc: {
-        type: "text",
-        label: "Description",
-        defaultValue: "This is a description for the radio group"
-      },
-      helperText: {
-        type: "text",
-        label: "Helper Text",
-        defaultValue: "This is a helper text for the radio group"
-      },
-      required: {
-        type: "boolean",
-        label: "Required",
-        defaultValue: false
-      },
       disabled: {
         type: "boolean",
         label: "Disabled",
@@ -135,29 +114,42 @@ let _ = {
       optionCount: {
         type: "select",
         label: "Number of Options",
-        defaultValue: 3,
         options: [{
-          label: "2 Options",
+          label: "1",
+          value: 1
+        }, {
+          label: "2",
           value: 2
         }, {
-          label: "3 Options",
+          label: "3",
           value: 3
         }, {
-          label: "4 Options",
+          label: "4",
           value: 4
         }, {
-          label: "5 Options",
+          label: "5",
           value: 5
-        }]
+        }],
+        defaultValue: 3
       },
-      withDescriptions: {
-        type: "boolean",
-        label: "Show Descriptions",
-        defaultValue: true
+      optionLabel: {
+        type: "text",
+        label: "Option Label",
+        defaultValue: "Option"
       },
-      withIcons: {
+      description: {
+        type: "text",
+        label: "Description",
+        defaultValue: ""
+      },
+      showIcons: {
         type: "boolean",
         label: "Show Icons",
+        defaultValue: false
+      },
+      withMixedDisabledOptions: {
+        type: "boolean",
+        label: "Mixed Disabled Options",
         defaultValue: false
       }
     }
