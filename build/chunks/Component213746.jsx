@@ -128,7 +128,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            O() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         });
       case b.epS.SUBSCRIPTION:
@@ -146,7 +146,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            O() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }
@@ -182,6 +182,6 @@ function S(e) {
   })
 }
 
-function O() {
+function P() {
   return window.location.pathname.startsWith("/login")
 }

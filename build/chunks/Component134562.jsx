@@ -1,59 +1,49 @@
 /** Chunk was on 9343 **/
-/** chunk id: 134562, original params: e,t,n (module,exports,require) **/
+/** chunk id: 134562, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => c
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk308569 = require("./308569.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk780187 = require("./780187.js");
+  Chunk780187 = require("./780187.js"),
+  Chunk75277 = require("./75277.js");
 
-function o(e) {
+function c(t) {
   let {
-    onNext: t,
-    onClose: n
-  } = e;
-  return (0, a.jsxs)("form", {
-    onSubmit: t,
-    children: [(0, a.jsxs)(s.xBx, {
-      separator: false,
-      className: l.header,
-      children: [(0, a.jsx)(s.Heading, {
-        variant: "heading-xl/extrabold",
-        children: i.intl.string(i.t.hhR7gY)
-      }), (0, a.jsx)(s.olH, {
-        onClick: n,
-        className: l.modalCloseButton
-      })]
-    }), (0, a.jsxs)(s.hzk, {
-      className: l.content,
-      children: [(0, a.jsx)(s.Text, {
-        className: l.description,
-        variant: "text-md/normal",
-        children: i.intl.format(i.t.rqWXUV, {
-          hcArticle: r.j1
-        })
-      }), (0, a.jsx)(s.Text, {
-        className: l.description,
-        variant: "text-md/normal",
-        children: i.intl.string(i.t["3LW10N"])
-      })]
-    }), (0, a.jsx)(s.mzw, {
-      className: l.modalFooter,
-      children: (0, a.jsxs)(s.ButtonGroup, {
-        direction: "horizontal-reverse",
-        children: [(0, a.jsx)(s.Button, {
-          variant: "primary",
-          text: i.intl.string(i.t["ETE/oK"]),
-          onClick: n
-        }), (0, a.jsx)(s.Button, {
-          variant: "secondary",
-          text: i.intl.string(i.t.rwTBFh),
-          onClick: t
-        })]
+    onNext: e,
+    onClose: n,
+    transitionState: c
+  } = t;
+  return (0, a.jsxs)(r.Ioy, {
+    graphic: {
+      type: "image",
+      src: o
+    },
+    title: l.intl.string(l.t.hhR7gY),
+    onClose: n,
+    transitionState: c,
+    actions: [{
+      variant: "secondary",
+      text: l.intl.string(l.t.rwTBFh),
+      onClick: e
+    }, {
+      variant: "primary",
+      text: l.intl.string(l.t["ETE/oK"]),
+      onClick: n
+    }],
+    children: [(0, a.jsx)(r.Text, {
+      className: s.description,
+      variant: "text-md/normal",
+      children: l.intl.format(l.t.rqWXUV, {
+        hcArticle: i.j1
       })
+    }), (0, a.jsx)(r.Text, {
+      className: s.description,
+      variant: "text-md/normal",
+      children: l.intl.string(l.t["3LW10N"])
     })]
   })
 }

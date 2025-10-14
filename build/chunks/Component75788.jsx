@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
-/** chunk id: 75788, original params: e,t,n (module,exports,require) **/
+/** chunk id: 75788, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,88 +11,74 @@ var Chunk951288 = require("./951288.js"),
   Chunk393869 = require("./393869.js"),
   Chunk25990 = require("./25990.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk780187 = require("./780187.js");
+  Chunk780187 = require("./780187.js"),
+  Chunk800010 = require("./800010.js");
 
-function m(e) {
-  var t;
+function d(t) {
+  var e;
   let {
-    isSlideReady: n,
-    error: m,
-    setEmailToken: x,
-    setError: _,
-    onNext: E,
-    onClose: N
-  } = e, [p, h] = s.useState(false), [A, C] = s.useState(""), [f, j] = s.useState(false), g = (0, r.e7)([c.Z], () => c.Z.getErrors()), S = s.useRef(null);
-  s.useEffect(() => {
-    if (n) {
-      var e;
-      null == (e = S.current) || e.focus()
-    }
-  }, [n]);
-  let v = async e => {
-    e.preventDefault(), _(null), h(true);
+    error: n,
+    setEmailToken: d,
+    setError: A,
+    onNext: x,
+    onClose: C,
+    transitionState: g
+  } = t, [p, S] = r.useState(false), [N, f] = r.useState(""), [m, h] = r.useState(false), T = (0, i.e7)([c.Z], () => c.Z.getErrors()), v = r.useRef(null);
+  r.useEffect(() => {
+    var t;
+    null == (t = v.current) || t.focus()
+  }, []);
+  let y = async t => {
+    t.preventDefault(), A(null), S(true);
     try {
       let {
-        token: e
-      } = await (0, o.w)(A);
-      x(e), E()
-    } catch (e) {
-      _(new l.Z(e).getAnyErrorMessage())
+        token: t
+      } = await (0, o.w)(N);
+      d(t), x()
+    } catch (t) {
+      A(new s.Z(t).getAnyErrorMessage())
     } finally {
-      h(false)
+      S(false)
     }
-  }, O = async () => {
-    if (!f) {
-      j(true);
+  }, M = async () => {
+    if (!m) {
+      h(true);
       try {
-        await (0, o.i)(true), (0, i.showToast)((0, i.createToast)(d.intl.string(d.t["84yeo6"]), i.ToastType.SUCCESS))
-      } catch (t) {
-        let e = new l.Z(t).getAnyErrorMessage();
-        null != e && (0, i.showToast)((0, i.createToast)(e, i.ToastType.FAILURE))
+        await (0, o.i)(true), (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["84yeo6"]), l.ToastType.SUCCESS))
+      } catch (e) {
+        let t = new s.Z(e).getAnyErrorMessage();
+        null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
       } finally {
-        j(false)
+        h(false)
       }
     }
   };
-  return (0, a.jsxs)("form", {
-    onSubmit: v,
-    children: [(0, a.jsxs)(i.xBx, {
-      separator: false,
-      className: u.header,
-      children: [(0, a.jsx)(i.Heading, {
-        className: u.title,
-        variant: "heading-xl/extrabold",
-        children: d.intl.string(d.t.jMGc4O)
-      }), (0, a.jsx)(i.Text, {
-        color: "header-secondary",
-        variant: "text-md/normal",
-        className: u.subtitle,
-        children: d.intl.string(d.t.SZJow8)
-      }), (0, a.jsx)(i.olH, {
-        onClick: N,
-        className: u.modalCloseButton
-      })]
-    }), (0, a.jsxs)(i.hzk, {
-      className: u.content,
-      children: [(0, a.jsx)(i.oil, {
-        label: d.intl.string(d.t["8mZX6O"]),
-        error: null != m ? m : null == g || null == (t = g.email_token) ? true : t[0],
-        value: A,
-        onChange: C,
-        inputRef: S
-      }), (0, a.jsx)(i.Text, {
-        className: u.help,
-        variant: "text-sm/normal",
-        children: d.intl.format(d.t.P0sak5, {
-          onResend: O
-        })
-      })]
-    }), (0, a.jsx)(i.mzw, {
-      children: (0, a.jsx)(i.Button, {
-        variant: "primary",
-        text: d.intl.string(d.t.PDTjLC),
-        type: "submit",
-        loading: p
+  return (0, a.jsxs)(l.Ioy, {
+    title: u.intl.string(u.t.jMGc4O),
+    subtitle: u.intl.string(u.t.SZJow8),
+    graphic: {
+      type: "image",
+      src: _
+    },
+    transitionState: g,
+    onClose: C,
+    actions: [{
+      variant: "primary",
+      text: u.intl.string(u.t.PDTjLC),
+      loading: p,
+      onClick: y
+    }],
+    children: [(0, a.jsx)(l.oil, {
+      label: u.intl.string(u.t["8mZX6O"]),
+      error: null != n ? n : null == T || null == (e = T.email_token) ? true : e[0],
+      value: N,
+      onChange: f,
+      inputRef: v
+    }), (0, a.jsx)(l.Text, {
+      className: E.help,
+      variant: "text-sm/normal",
+      children: u.intl.format(u.t.P0sak5, {
+        onResend: M
       })
     })]
   })

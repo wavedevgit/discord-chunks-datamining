@@ -88,10 +88,10 @@ function w(e) {
     onClickInstallApplication: o,
     canInstall: d
   } = function(e) {
-    let t = (0, O.nu)(),
+    let t = (0, P.nu)(),
       n = a.useCallback(() => {
         var t;
-        let n = null != (t = P.z8.getField("guildId")) ? t : true;
+        let n = null != (t = O.z8.getField("guildId")) ? t : true;
         (0, S.L)({
           applicationId: e.id,
           customInstallUrl: e.custom_install_url,
@@ -110,7 +110,7 @@ function w(e) {
       }
     }, [t, n]), {
       onClickInstallApplication: a.useCallback(() => {
-        if ((0, O.zZ)(N.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
+        if ((0, P.zZ)(N.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
             application_id: e.id
           }), (s.tq || s.Em) && null == e.custom_install_url) {
           let t = (0, S.E)({
@@ -123,14 +123,14 @@ function w(e) {
         }
         if (t) n();
         else {
-          let t = P.z8.getField("guildId");
+          let t = O.z8.getField("guildId");
           y.default.track(N.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
             application_id: e.id,
             guild_id: t,
             auth_type: null != e.custom_install_url ? "custom_url" : "in_app",
             source: "product_page",
             device_platform: s.tq ? "mobile_web" : "desktop_web"
-          }), (0, O.rf)({
+          }), (0, P.rf)({
             [L]: "true"
           })
         }
@@ -192,10 +192,10 @@ let k = Chunk647438.forwardRef(function(e, t) {
     analyticsLocations: f
   } = (0, m.ZP)(), y = a.useCallback(() => {
     let e;
-    (0, O.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+    (0, P.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
     }), (0, I.JG)((e = n.id, "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e))), () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
-  }, [n.id]), S = (0, o.e7)([C.default], () => C.default.locale), P = a.useCallback(() => {
+  }, [n.id]), S = (0, o.e7)([C.default], () => C.default.locale), O = a.useCallback(() => {
     (0, d.Z)((0, E.G)({
       id: n.id,
       name: n.name,
@@ -208,7 +208,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }), k = (0, x.Z)({
     application: n,
     onItemClick: () => {
-      (0, O.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+      (0, P.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
         application_id: n.id
       })
     }
@@ -231,12 +231,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
         id: "report",
         label: T.intl.string(T.t.NgA5vr),
         color: "danger",
-        action: P
+        action: O
       })
     }), null != L ? (0, r.jsx)(c.kSQ, {
       children: L
     }) : null]
-  }), [L, P, y, s, k]), {
+  }), [L, O, y, s, k]), {
     onClickLaunchActivity: G,
     isSubmitting: B
   } = function(e, t) {
@@ -245,7 +245,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       i = null == e || null == (n = e.bot) ? true : n.id,
       l = null != i && (0, _.BQ)(e) && (0, _.ye)(e),
       [s, c] = a.useState(false),
-      d = (0, O.nu)(),
+      d = (0, P.nu)(),
       m = (0, o.e7)([j.default], () => j.default.getCurrentUser()),
       h = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
       f = a.useCallback(async (t, n, r) => {
@@ -275,9 +275,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
     }, [d, l, i, r, t, m, f]);
     let b = a.useCallback(async () => {
       if (null != i) {
-        if ((0, O.zZ)(N.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
+        if ((0, P.zZ)(N.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
             application_id: r
-          }), !d) return void(0, O.rf)({
+          }), !d) return void(0, P.rf)({
           [R]: "true"
         });
         await f(i, r, t)
@@ -287,7 +287,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       onClickLaunchActivity: l ? b : true,
       isSubmitting: s
     }
-  }(n, f), U = null != G, z = U ? "secondary" : "primary";
+  }(n, f), U = null != G, F = U ? "secondary" : "primary";
   return (0, r.jsxs)("div", {
     ref: t,
     children: [(0, r.jsxs)("div", {
@@ -301,7 +301,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         application: n,
         size: i,
         contentWidth: "normal",
-        variant: z
+        variant: F
       }), I.wS ? (0, r.jsx)(c.hU, {
         variant: "secondary",
         size: i,
@@ -323,7 +323,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         application: n,
         size: i,
         contentWidth: "small",
-        variant: z
+        variant: F
       }), (0, r.jsx)(Z, {
         renderDropdown: e => M(I.wS, e),
         size: i
@@ -339,7 +339,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         application: n,
         size: i,
         contentWidth: "icon",
-        variant: z
+        variant: F
       }), (0, r.jsx)(Z, {
         renderDropdown: e => M(I.wS, e),
         size: i

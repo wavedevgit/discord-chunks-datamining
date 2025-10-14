@@ -42,7 +42,7 @@ class O extends Chunk147913.Z {
     var e, t;
     if (!y()) return;
     let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
-    ("development" === require || "canary" === require) && (this._checkInterval = setInterval(async () => {
+    ("development" === require || "canary" === require) && (clearInterval(this._checkInterval), this._checkInterval = setInterval(async () => {
       await this.trackPerformanceStats()
     }, _))
   }

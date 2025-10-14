@@ -1,7 +1,7 @@
 /** Chunk was on 69844 **/
 /** chunk id: 666697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => O
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,11 +27,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk352677 = require("./352677.js");
-let P = function(e) {
+let O = function(e) {
   let {
     applicationId: t,
     onSelectApplication: n,
-    onScroll: P,
+    onScroll: O,
     initialTab: E,
     onButtonsVisibilityChange: N
   } = e, T = a.useRef(null), A = (0, i.e7)([u.Z], () => u.Z.getApplication(t)), L = (0, i.e7)([u.Z], () => u.Z.getApplicationFetchState(t));
@@ -70,14 +70,14 @@ let P = function(e) {
       displayedSimilarApplications: B,
       previousView: k
     },
-    z = a.useRef(U);
+    F = a.useRef(U);
   a.useEffect(() => {
-    z.current = U
+    F.current = U
   }), a.useEffect(() => {
     let {
       displayedSimilarApplications: e,
       previousView: t
-    } = z.current;
+    } = F.current;
     (null == A ? true : A.id) != null && M !== p.M.FETCHING && (0, m.zZ)(I.rMx.APP_DIRECTORY_PAGE_VIEWED, {
       current_page: _.m_.APPLICATION,
       previous_page: null == t ? true : t.type,
@@ -86,7 +86,7 @@ let P = function(e) {
       suggested_application_ids: null == e ? true : e.map(e => e.id)
     })
   }, [null == A ? true : A.id, M]);
-  let F = a.useMemo(() => [{
+  let z = a.useMemo(() => [{
       id: y.GlobalDiscoveryAppsSections.ABOUT,
       label: S.intl.string(S.t.DkyHMD)
     }, {
@@ -114,32 +114,32 @@ let P = function(e) {
     }, [t]),
     Y = Z === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
-    onScroll: P,
+    onScroll: O,
     ref: T,
     children: (0, r.jsx)(s.Z, {
       children: null == A ? null == L || L === u.M.FETCHING ? (0, r.jsx)("div", {
-        className: O.centerContainer,
+        className: P.centerContainer,
         children: (0, r.jsx)(h.Z, {
           loading: true
         })
       }) : (0, r.jsx)("div", {
-        className: O.centerContainer,
+        className: P.centerContainer,
         children: (0, r.jsx)(g.Z, {
-          className: O.error
+          className: P.error
         })
       }) : (0, r.jsxs)("div", {
-        className: O.detailContainer,
+        className: P.detailContainer,
         children: [(0, r.jsx)(x.Z, {
           application: A,
           onButtonsVisibilityChange: N
         }), (0, r.jsxs)("div", {
-          className: O.contentContainer,
+          className: P.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: O.contentTabsContainer,
+            className: P.contentTabsContainer,
             children: [R && (0, r.jsx)("div", {
-              className: O.contentTabs,
+              className: P.contentTabs,
               children: (0, r.jsx)(o.Z, {
-                tabs: F,
+                tabs: z,
                 onTabSelect: V,
                 selectedTab: Z
               })
@@ -151,7 +151,7 @@ let P = function(e) {
               similarLoadId: null == G ? true : G.loadId
             })]
           }), Y && (0, r.jsx)(v.Z, {
-            className: O.sidebar,
+            className: P.sidebar,
             application: A,
             view: "side"
           })]

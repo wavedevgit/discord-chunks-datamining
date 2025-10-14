@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
-/** chunk id: 22150, original params: e,t,n (module,exports,require) **/
+/** chunk id: 22150, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => d
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,65 +11,49 @@ var Chunk951288 = require("./951288.js"),
   Chunk393869 = require("./393869.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk780187 = require("./780187.js");
+  Chunk780187 = require("./780187.js"),
+  Chunk800010 = require("./800010.js");
 
-function m(e) {
+function d(t) {
   let {
-    onNext: t,
-    onClose: n
-  } = e, [m, x] = s.useState(false), _ = (0, r.e7)([c.default], () => c.default.getCurrentUser()), E = async e => {
-    e.preventDefault(), x(true);
+    onNext: e,
+    onClose: n,
+    transitionState: d
+  } = t, [A, x] = r.useState(false), C = (0, i.e7)([c.default], () => c.default.getCurrentUser()), g = async t => {
+    t.preventDefault(), x(true);
     try {
-      await (0, o.i)(), t()
-    } catch (t) {
-      let e = new l.Z(t).getAnyErrorMessage();
-      null != e && (0, i.showToast)((0, i.createToast)(e, i.ToastType.FAILURE))
+      await (0, o.i)(), e()
+    } catch (e) {
+      let t = new s.Z(e).getAnyErrorMessage();
+      null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
     } finally {
       x(false)
     }
   };
-  return (0, a.jsxs)("form", {
-    onSubmit: E,
-    children: [(0, a.jsxs)(i.xBx, {
-      separator: false,
-      className: u.header,
-      children: [(0, a.jsx)(i.Heading, {
-        className: u.title,
-        variant: "heading-xl/extrabold",
-        children: d.intl.string(d.t.uFxYq6)
-      }), (0, a.jsx)(i.olH, {
-        onClick: n,
-        className: u.modalCloseButton
-      })]
-    }), (0, a.jsx)(i.hzk, {
-      className: u.content,
-      children: (0, a.jsx)(i.Text, {
-        className: u.description,
-        variant: "text-md/normal",
-        children: d.intl.format(d.t.oMFSgo, {
-          oldEmail: null == _ ? true : _.email
-        })
+  return (0, a.jsx)(l.Ioy, {
+    graphic: {
+      type: "image",
+      src: _
+    },
+    title: u.intl.string(u.t.uFxYq6),
+    onClose: n,
+    transitionState: d,
+    actions: [{
+      variant: "secondary",
+      text: u.intl.string(u.t["ETE/oK"]),
+      onClick: n
+    }, {
+      variant: "primary",
+      text: u.intl.string(u.t.rXV81N),
+      loading: A,
+      onClick: g
+    }],
+    children: (0, a.jsx)(l.Text, {
+      className: E.description,
+      variant: "text-md/normal",
+      children: u.intl.format(u.t.oMFSgo, {
+        oldEmail: null == C ? true : C.email
       })
-    }), (0, a.jsxs)(i.mzw, {
-      className: u.modalFooter,
-      children: [(0, a.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: u.__invalid_submit,
-        children: (0, a.jsx)(i.Button, {
-          variant: "primary",
-          text: d.intl.string(d.t.rXV81N),
-          type: "submit",
-          loading: m
-        })
-      }), (0, a.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: u.__invalid_cancel,
-        children: (0, a.jsx)(i.Button, {
-          variant: "secondary",
-          text: d.intl.string(d.t["ETE/oK"]),
-          onClick: n
-        })
-      })]
-    })]
+    })
   })
 }
