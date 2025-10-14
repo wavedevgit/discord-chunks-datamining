@@ -1,4 +1,4 @@
-/** Chunk was on 14209 **/
+/** Chunk was on 16859 **/
 /** chunk id: 143941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => P
@@ -79,8 +79,8 @@ let P = e => {
       isPurchased: V
     } = (0, g.L)(k),
     z = (0, O.fp)(k),
-    H = (0, O.x6)(k),
-    G = (0, O.G1)(k),
+    G = (0, O.x6)(k),
+    H = (0, O.G1)(k),
     K = l.useCallback(async e => {
       if (e.stopPropagation(), Z && null != R) {
         U(false);
@@ -106,9 +106,9 @@ let P = e => {
       }
     }, [L, Z, w, k, I, N, R, U]);
   if (!C && !Z || null == T || V) return null;
-  if (z || H || G) {
+  if (z || G || H) {
     let e = h.intl.string(h.t["50TX9v"]);
-    return H ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.aML, {
+    return G ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: e,
       children: e => (0, r.jsx)(c.P3F, E(x({}, e), {

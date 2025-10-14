@@ -1,7 +1,7 @@
-/** Chunk was on 14209 **/
+/** Chunk was on 16859 **/
 /** chunk id: 680942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,55 +13,53 @@ var Chunk951288 = require("./951288.js"),
   Chunk333867 = require("./333867.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
-  Chunk884697 = require("./884697.js"),
-  Chunk152563 = require("./152563.js"),
   Chunk410127 = require("./410127.js"),
   Chunk67409 = require("./67409.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => {
+let g = e => {
   let {
     product: t,
     primary: n,
-    selectedVariantIndex: h,
-    returnRef: v,
-    onSuccess: x,
-    tooltipDelay: E
+    selectedVariantIndex: g,
+    returnRef: j,
+    onSuccess: h,
+    tooltipDelay: v
   } = e, {
-    analyticsLocations: P
-  } = (0, c.ZP)(), _ = l.useRef(null), C = (0, p.sp)(), S = (0, y.Z)(), A = (0, b.t)("collectibles-shop-gift-button");
-  return (0, f.x6)(t) && !A ? null : (0, r.jsx)(o.u, {
-    text: j.intl.string(j.t["JCFN//"]),
-    delay: E,
+    analyticsLocations: x
+  } = (0, c.ZP)(), E = l.useRef(null), P = (0, p.sp)(), _ = (0, f.Z)();
+  return (0, r.jsx)(o.u, {
+    text: O.intl.string(O.t["JCFN//"]),
+    delay: v,
     children: (0, r.jsx)(s.hU, {
-      "aria-label": j.intl.string(j.t["JCFN//"]),
-      buttonRef: _,
+      "aria-label": O.intl.string(O.t["JCFN//"]),
+      buttonRef: E,
       variant: n ? "primary" : "secondary",
       icon: s.OgN,
       size: "md",
       onClick: e => {
-        e.stopPropagation(), d.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == C ? true : C.sessionId,
+        e.stopPropagation(), d.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == P ? true : P.sessionId,
           sku_id: t.skuId,
-          page_section: null == C ? true : C.pageSection,
-          page_category: null == C ? true : C.pageCategory,
+          page_section: null == P ? true : P.pageSection,
+          page_category: null == P ? true : P.pageCategory,
           tile_type: i.Z[t.type],
-          tile_position: String(null == C ? true : C.tilePosition),
+          tile_position: String(null == P ? true : P.tilePosition),
           cta_name: "gift button",
-          page_type: S || "home"
+          page_type: _ || "home"
         }), (0, u.Z)({
-          skuId: (0, m.S)({
+          skuId: (0, b.S)({
             product: t,
-            selectedVariantIndex: h
+            selectedVariantIndex: g
           }),
           isGift: true,
-          giftingOrigin: g.Wt.SHOP_PAGE,
-          analyticsLocations: P,
-          returnRef: v,
+          giftingOrigin: m.Wt.SHOP_PAGE,
+          analyticsLocations: x,
+          returnRef: j,
           variantsReturnStyle: a.v.VARIANTS_GROUP,
-          onClose: null != x ? e => {
-            e && x()
+          onClose: null != h ? e => {
+            e && h()
           } : true
         })
       }

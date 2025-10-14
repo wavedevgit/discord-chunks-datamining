@@ -2,8 +2,9 @@
 /** chunk id: 27123, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => a,
-  v: () => i
+  T4: () => a,
+  vH: () => i,
+  yB: () => o
 });
 var Chunk981631 = require("./981631.js");
 let i = e => {
@@ -24,4 +25,11 @@ let i = e => {
       product: n,
       isPremiumUser: a
     }).find(e => e.currency === r.pKx.DISCORD_ORB)) ? t : null
+  },
+  o = e => {
+    let t = i({
+      product: e,
+      isPremiumUser: false
+    });
+    return 1 === t.length && t[0].currency === r.pKx.DISCORD_ORB
   }

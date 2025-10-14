@@ -301,11 +301,11 @@ let O = e => (null == e ? true : e.premiumType) != null,
   },
   eu = (e, t, n) => e.sort((e, r) => {
     var i, a;
-    let o = n ? (0, _.T)({
+    let o = n ? (0, _.T4)({
         product: e,
         isPremiumUser: t
       }) : S(e, t, false),
-      s = n ? (0, _.T)({
+      s = n ? (0, _.T4)({
         product: r,
         isPremiumUser: t
       }) : S(r, t, false);
