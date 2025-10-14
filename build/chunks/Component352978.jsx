@@ -23,31 +23,31 @@ let _ = Chunk647438.memo(function(e) {
     className: p,
     fit: _ = "contain",
     mirror: m = false,
-    paused: b = false,
+    paused: g = false,
     streamPreviewURL: E,
-    videoSpinnerContext: g,
+    videoSpinnerContext: b,
     userId: v,
     streamKey: h
-  } = e, [S, y] = l.useState(true);
+  } = e, [y, S] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
-    videoSpinnerContext: g,
+    videoSpinnerContext: b,
     userId: v,
     streamId: t,
-    loading: S,
-    paused: b
+    loading: y,
+    paused: g
   });
   let {
     onReady: O
   } = (0, s.Z)({
     streamId: t,
     userId: v,
-    loading: S,
-    videoSpinnerContext: g,
+    loading: y,
+    videoSpinnerContext: b,
     streamKey: h,
-    paused: b
+    paused: g
   }), I = l.useCallback(() => {
-    y(false), O()
+    S(false), O()
   }, [O]);
   return (0, i.jsxs)("div", {
     className: o()(f.wrapper, r),
@@ -58,12 +58,12 @@ let _ = Chunk647438.memo(function(e) {
       streamId: t,
       onResize: n,
       onReady: I,
-      paused: b
-    }), b ? null : (0, i.jsx)("div", {
+      paused: g
+    }), g ? null : (0, i.jsx)("div", {
       className: o()(f.previewWrapper, {
-        [f.loading]: S
+        [f.loading]: y
       }),
-      children: S && (0, i.jsxs)(l.Fragment, {
+      children: y && (0, i.jsxs)(l.Fragment, {
         children: [null != E ? (0, i.jsx)("img", {
           src: E,
           alt: "",

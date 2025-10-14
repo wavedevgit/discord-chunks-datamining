@@ -88,15 +88,15 @@ function F(e) {
   } = e, {
     ref: O,
     width: j
-  } = (0, h.ZP)(), [S, k] = r.useState(3), [F, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), Y = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
-    firstMessage: K
-  } = (0, M.cl)(Y), q = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [F, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), K = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+    firstMessage: Y
+  } = (0, M.cl)(K), q = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
     disableReactionCreates: J,
     isLurking: Q,
     isGuest: $,
     isPendingMember: ee
-  } = (0, C.Z)(Y), et = (0, E.nw)(Y), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, C.Z)(K), et = (0, E.nw)(K), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -117,15 +117,15 @@ function F(e) {
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
       null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == Y || null == K) return null;
-  let es = K.reactions.length > 0,
+    }, [j]), null == K || null == Y) return null;
+  let es = Y.reactions.length > 0,
     ec = () => {
       (0, R.B)({
-        postId: Y.id,
+        postId: K.id,
         location: {
           section: L.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(Y, en), () => W(true))
+      }), (0, A.JG)((0, N.EO)(K, en), () => W(true))
     },
     eu = q ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
@@ -137,8 +137,8 @@ function F(e) {
       children: [et ? (0, i.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
-          message: K,
-          channel: Y
+          message: Y,
+          channel: K
         })
       }) : (0, i.jsxs)("div", {
         className: a()(U.reactButtons, {
@@ -147,7 +147,7 @@ function F(e) {
         children: [!es && !J && null != ei && (0, i.jsx)("div", {
           className: B.reactions,
           children: (0, i.jsx)(x.le, {
-            message: K,
+            message: Y,
             readOnly: false,
             useChatFontScaling: false,
             isLurking: Q,
@@ -163,8 +163,8 @@ function F(e) {
             emojiSize: "reaction"
           })
         }), (0, i.jsx)(v.Z, {
-          message: K,
-          channel: Y,
+          message: Y,
+          channel: K,
           disableReactionCreates: true,
           disableReactionUpdates: X,
           isLurking: Q,
@@ -177,8 +177,8 @@ function F(e) {
           forceHideReactionCreates: true
         }), !J && (0, i.jsx)(y.X, {
           type: b.O.NORMAL,
-          message: K,
-          channel: Y,
+          message: Y,
+          channel: K,
           useChatFontScaling: false,
           className: a()(H.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
@@ -189,7 +189,7 @@ function F(e) {
       }), (0, i.jsxs)("div", {
         className: U.buttons,
         children: [et ? (0, i.jsx)(V, {
-          channel: Y
+          channel: K
         }) : (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.F7oeDg),
           children: (0, i.jsx)(u.Button, {
@@ -198,7 +198,7 @@ function F(e) {
             variant: "secondary",
             text: q ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+v"]),
             onClick: () => {
-              q ? Z.Z.leaveThread(Y, "Forum Toolbar") : Z.Z.joinThread(Y, "Forum Toolbar")
+              q ? Z.Z.leaveThread(K, "Forum Toolbar") : Z.Z.joinThread(K, "Forum Toolbar")
             }
           })
         }), (0, i.jsx)(c.u, {
@@ -224,8 +224,8 @@ function F(e) {
             variant: "secondary",
             onClick: () => {
               d.Z.jumpToMessage({
-                channelId: Y.id,
-                messageId: Y.id,
+                channelId: K.id,
+                messageId: K.id,
                 flash: true,
                 jumpType: p.SR.INSTANT
               })
@@ -237,7 +237,7 @@ function F(e) {
     }), er && (0, i.jsx)(g.Z, {
       threadId: t
     }), (0, i.jsx)(_.Z, {
-      channel: Y,
+      channel: K,
       isLastItem: l
     })]
   })

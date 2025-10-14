@@ -82,8 +82,8 @@ function I(e) {
     F = h.Z.getVideoComponent(),
     G = p.default.getId(),
     [z, W] = r.useState(null),
-    Y = (0, c.Z)(z),
-    [K, q] = r.useState(true),
+    K = (0, c.Z)(z),
+    [Y, q] = r.useState(true),
     [X, J] = r.useState(false),
     Q = R.type === v.fO.ACTIVITY,
     $ = (0, u.Z)(Q ? R.applicationId : true),
@@ -110,7 +110,7 @@ function I(e) {
       clearTimeout(e)
     }
   }, []);
-  let ef = K || null == Y,
+  let ef = Y || null == K,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!en,
@@ -171,7 +171,7 @@ function I(e) {
     children: [(0, i.jsxs)("div", {
       className: O.tileWrapper,
       style: {
-        opacity: ee && K ? 0 : 1
+        opacity: ee && Y ? 0 : 1
       },
       children: [(0, i.jsxs)(o.animated.div, {
         className: O.videoFrame,

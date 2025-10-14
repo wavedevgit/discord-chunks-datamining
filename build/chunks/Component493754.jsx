@@ -1,8 +1,8 @@
 /** Chunk was on 50118 **/
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => _,
-  Z: () => v
+  W: () => b,
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +11,6 @@ var Chunk120356 = require("./120356.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk924301 = require("./924301.js"),
   Chunk786915 = require("./786915.jsx"),
@@ -21,39 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk811130 = require("./811130.js");
 
-function C(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
-    })
-  }
-  return e
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function _(e) {
+function b(e) {
   let {
     guild: t,
     channel: r,
@@ -61,86 +28,98 @@ function _(e) {
     applicationId: a,
     appContext: o,
     exitFullScreen: s,
-    analyticsLocation: c,
+    analyticsLocation: u,
     guildScheduledEvent: d
   } = e;
-  null == s || s(), (0, u.ZDy)(async () => {
+  null == s || s(), (0, c.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
-    return n => (0, i.jsx)(e, y(C({}, n), {
-      guild: t,
-      channel: r,
-      streamUserId: l,
-      applicationId: a,
-      analyticsLocation: c,
-      source: r.isGuildStageVoice() ? m.InstantInviteSources.STAGE_CHANNEL : m.InstantInviteSources.STREAM_INVITE,
-      guildScheduledEvent: d
-    }))
+    return n => {
+      var o, s;
+      return (0, i.jsx)(e, (o = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = i
+          })
+        }
+        return e
+      }({}, n), s = s = {
+        guild: t,
+        channel: r,
+        streamUserId: l,
+        applicationId: a,
+        analyticsLocation: u,
+        source: r.isGuildStageVoice() ? f.InstantInviteSources.STAGE_CHANNEL : f.InstantInviteSources.STREAM_INVITE,
+        guildScheduledEvent: d
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
+        }
+        return n
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
+      }), o))
+    }
   }, {
     modalKey: "stream-invite-modal",
-    contextKey: o === m.IlC.POPOUT ? u.u1M : u.z1l
+    contextKey: o === f.IlC.POPOUT ? c.u1M : c.z1l
   })
 }
 
-function v(e) {
-  var t, {
-      stream: n,
-      applicationId: r,
-      channel: a,
-      exitFullScreen: u,
-      appContext: v,
-      analyticsLocation: x,
-      className: O
-    } = e,
-    j = function(e, t) {
-      if (null == e) return {};
-      var n, i, r = function(e, t) {
-        if (null == e) return {};
-        var n, i, r = {},
-          l = Object.keys(e);
-        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-        return r
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-      }
-      return r
-    }(e, ["stream", "applicationId", "channel", "exitFullScreen", "appContext", "analyticsLocation", "className"]);
-  let E = null == a ? true : a.getGuildId(),
-    S = null == a ? true : a.id,
-    P = (0, s.e7)([h.Z], () => null != E ? h.Z.getGuild(E) : null, [E]),
-    I = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(S), [S]);
-  if (!(null != P && null != a && f.Z.can(m.Plq.CREATE_INSTANT_INVITE, a))) return null;
-  let Z = g.intl.string(g.t.VINpSE);
-  return null != n ? Z = g.intl.string(g.t["6VQaqa"]) : null != r && (Z = g.intl.string(g.t["OzOM/v"])), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(c.zx, y(C({
-      size: null != (t = j.size) ? t : c.zx.Sizes.SMALL,
-      color: b.buttonColor,
-      onClick: () => {
-        o()(null != P, "guild cannot be null"), o()(null != a, "channel cannot be null"), _({
-          guild: P,
-          channel: a,
-          streamUserId: null == n ? true : n.ownerId,
-          applicationId: r,
-          appContext: v,
-          exitFullScreen: u,
-          analyticsLocation: x,
-          guildScheduledEvent: I
-        })
-      },
-      className: l()(O, b.textButton)
-    }, j), {
-      children: Z
-    })), (0, i.jsx)(p.Z, {
-      channel: a,
-      stream: n,
-      appContext: v,
-      className: l()(O, b.iconButton),
-      exitFullScreen: u,
-      analyticsLocation: x,
-      guildScheduledEvent: I
+function C(e) {
+  let {
+    stream: t,
+    applicationId: n,
+    channel: r,
+    exitFullScreen: a,
+    appContext: C,
+    analyticsLocation: y,
+    className: _,
+    size: v = "sm"
+  } = e, x = null == r ? true : r.getGuildId(), O = null == r ? true : r.id, j = (0, s.e7)([p.Z], () => null != x ? p.Z.getGuild(x) : null, [x]), E = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(O), [O]);
+  if (!(null != j && null != r && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, r))) return null;
+  let S = m.intl.string(m.t.VINpSE);
+  return null != t ? S = m.intl.string(m.t["6VQaqa"]) : null != n && (S = m.intl.string(m.t["OzOM/v"])), (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)("div", {
+      className: l()(_, g.textButton),
+      children: (0, i.jsx)(c.Button, {
+        size: v,
+        variant: "secondary",
+        text: S,
+        onClick: () => {
+          o()(null != j, "guild cannot be null"), o()(null != r, "channel cannot be null"), b({
+            guild: j,
+            channel: r,
+            streamUserId: null == t ? true : t.ownerId,
+            applicationId: n,
+            appContext: C,
+            exitFullScreen: a,
+            analyticsLocation: y,
+            guildScheduledEvent: E
+          })
+        }
+      })
+    }), (0, i.jsx)(d.Z, {
+      channel: r,
+      stream: t,
+      appContext: C,
+      className: l()(_, g.iconButton),
+      exitFullScreen: a,
+      analyticsLocation: y,
+      guildScheduledEvent: E
     })]
   })
 }

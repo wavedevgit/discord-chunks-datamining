@@ -119,7 +119,7 @@ let ef = Chunk647438.memo(function(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, b.q5)(t.guild_id).filter(e => !K.ZP.isEmojiFilteredOrLocked({
+  } = e, r = (0, b.q5)(t.guild_id).filter(e => !Y.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: eo.Hz.REACTION,
@@ -190,7 +190,7 @@ function em(e) {
     canForward: w,
     isExpanded: M,
     showMoreUtilities: H,
-    showEmojiPicker: K,
+    showEmojiPicker: Y,
     showMessageBookmarksActions: q,
     isMessageBookmark: er,
     setPopout: eo,
@@ -222,7 +222,7 @@ function em(e) {
       H = (0, Q.Z)(n, t),
       W = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
-        disableReactionCreates: K
+        disableReactionCreates: Y
       } = (0, ee.Z)({
         channel: t,
         canChat: O,
@@ -257,9 +257,9 @@ function em(e) {
       canStartThread: I,
       canViewThread: Z,
       canForward: ei,
-      canCopy: Y.wS,
+      canCopy: K.wS,
       hasDeveloperMode: x,
-      canReact: !K && y,
+      canReact: !Y && y,
       canPublish: q,
       canConfigureJoin: en,
       isExpanded: eo && !es && !i && !r && !l,
@@ -280,9 +280,9 @@ function em(e) {
     })
   }, [H, eo, n]), eg = r.useCallback(() => {
     eo({
-      emojiPicker: !K
+      emojiPicker: !Y
     })
-  }, [K, eo]), eb = (0, k.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = r.useState(false), eE = r.useCallback(() => {
+  }, [Y, eo]), eb = (0, k.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = r.useState(false), eE = r.useCallback(() => {
     ej(true)
   }, []), eS = r.useCallback(() => {
     ej(false)
@@ -339,7 +339,7 @@ function em(e) {
       }), (0, i.jsx)(ei.Z, {
         togglePopout: eg,
         renderEmojiPicker: eC,
-        shouldShow: K,
+        shouldShow: Y,
         isFocused: ed,
         channel: t,
         message: n

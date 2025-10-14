@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk716600 = require("./716600.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js");
-let b = (e, t) => {
+let g = (e, t) => {
   a.Z.wait(() => {
     (0, o.Cz)(e, t)
   })
@@ -29,36 +29,36 @@ function E(e) {
       style: o
     } = e,
     E = (0, l.e7)([c.Z], () => c.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
-    g = (0, p.Z)(),
+    b = (0, p.Z)(),
     v = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == g || (0, f.Z)((0, d.p)(g.location)) || v !== _.Ez.PANEL) {
+  if (null == b || (0, f.Z)((0, d.p)(b.location)) || v !== _.Ez.PANEL) {
     var h;
     t = null != (h = null == E ? true : E.window) ? h : window
   } else t = window;
-  let S = i.useRef(null),
-    y = i.useMemo(() => {
+  let y = i.useRef(null),
+    S = i.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          b(n, null != (r = null == (t = S.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
+          g(n, null != (r = null == (t = y.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(m.CkL.REMEASURE_TARGET, y), () => {
-    t.removeEventListener("resize", y), s.S.unsubscribe(m.CkL.REMEASURE_TARGET, y)
-  }), [y, t]), i.useLayoutEffect(() => {
-    let e = S.current;
+  return i.useEffect(() => (t.addEventListener("resize", S), s.S.subscribe(m.CkL.REMEASURE_TARGET, S), () => {
+    t.removeEventListener("resize", S), s.S.unsubscribe(m.CkL.REMEASURE_TARGET, S)
+  }), [S, t]), i.useLayoutEffect(() => {
+    let e = y.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    y();
-    let r = new t.ResizeObserver(y);
+    S();
+    let r = new t.ResizeObserver(S);
     return r.observe(e), () => {
-      r.disconnect(), b(n, null)
+      r.disconnect(), g(n, null)
     }
-  }, [n, y]), (0, r.jsx)("div", {
-    ref: S,
+  }, [n, S]), (0, r.jsx)("div", {
+    ref: y,
     style: o,
     className: a
   })

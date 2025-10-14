@@ -24,9 +24,9 @@ function _(e) {
   } = e, _ = i.useRef(null), m = (0, o.e7)([s.default], () => s.default.getCurrentUser());
   a()(null != m, "user cannot be null"), (0, f.Z)(_, m, l, n);
   let {
-    handleClick: b,
+    handleClick: g,
     handleMouseDown: E,
-    handleMouseEnter: g,
+    handleMouseEnter: b,
     handleMouseMove: v,
     handleMouseUp: h
   } = (0, d.Z)({
@@ -40,9 +40,9 @@ function _(e) {
   return (0, r.jsx)(c.Z, {
     children: (0, r.jsx)("canvas", {
       ref: _,
-      onClick: b,
+      onClick: g,
       onMouseDown: E,
-      onMouseEnter: g,
+      onMouseEnter: b,
       onMouseMove: v,
       onMouseUp: h,
       className: p.sharedCanvas

@@ -586,7 +586,7 @@ class ti extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(es.Z, {
             channel: e,
-            tooltip: e6.intl.string(e6.t.Xjlbvr),
+            tooltip: e5.intl.string(e5.t.Xjlbvr),
             location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), s.push((0, r.jsx)(ed.Z, {
             channel: e,
@@ -601,7 +601,7 @@ class ti extends Chunk647438.PureComponent {
             }, "calls")), s.push((0, r.jsx)(et.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e6.intl.string(e6.t.Xjlbvr);
+            let t = e5.intl.string(e5.t.Xjlbvr);
             s.push((0, r.jsx)(es.Z, {
               channel: e,
               tooltip: t,
@@ -709,7 +709,7 @@ class ti extends Chunk647438.PureComponent {
         children: (0, r.jsx)(g.Button, {
           variant: "secondary",
           size: "sm",
-          text: e6.intl.string(e6.t["3aOv+v"]),
+          text: e5.intl.string(e5.t["3aOv+v"]),
           onClick: () => (0, g.ZDy)(async () => {
             let {
               default: e
@@ -756,7 +756,7 @@ class ti extends Chunk647438.PureComponent {
             }),
             transparent: y,
             hidden: d,
-            "aria-label": e6.intl.string(e6.t.BIYAqa),
+            "aria-label": e5.intl.string(e5.t.BIYAqa),
             children: [h && (0, r.jsx)(el.TS, {
               channel: e,
               guild: i,
@@ -778,7 +778,7 @@ class ti extends Chunk647438.PureComponent {
                 onClick: () => (0, em.XU)(e.guild_id, e.id),
                 variant: "secondary",
                 size: "sm",
-                text: e6.intl.string(e6.t.k5WiPT)
+                text: e5.intl.string(e5.t.k5WiPT)
               })
             }) : (0, el.v0)(e, i)]
           }, "header-".concat(e.id))
@@ -847,7 +847,7 @@ let tl = (0, Chunk112724.Z)(ti),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, em.s1)();
-      if ((null == r || null == (e = r.location) ? true : e.state) === e5.Df) {
+      if ((null == r || null == (e = r.location) ? true : e.state) === e6.Df) {
         let {
           channelId: e
         } = null != (n = (0, eh.Qj)(null == r || null == (t = r.location) ? true : t.pathname)) ? n : {};

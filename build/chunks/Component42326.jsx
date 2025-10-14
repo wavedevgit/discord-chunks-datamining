@@ -1,7 +1,7 @@
 /** Chunk was on 38319 **/
 /** chunk id: 42326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk606630 = require("./606630.js");
 
-function b(e) {
+function g(e) {
   let {
     errorMessage: t,
     className: n,
     avError: l
-  } = e, b = "", {
+  } = e, g = "", {
     text: E,
-    node: g
+    node: b
   } = function(e) {
     var t;
     if (null == e) return {
@@ -47,17 +47,17 @@ function b(e) {
       }) : l
     }
   }(l);
-  null != t && null != E ? b = "".concat(t, " ").concat(E) : null != t && (b = t);
-  let [v] = i.useState(new o.V7), [h, S] = i.useState(false);
+  null != t && null != E ? g = "".concat(t, " ").concat(E) : null != t && (g = t);
+  let [v] = i.useState(new o.V7), [h, y] = i.useState(false);
 
-  function y() {
+  function S() {
     v.start(250, () => {
-      S(false)
+      y(false)
     })
   }
 
   function O() {
-    v.stop(), S(true)
+    v.stop(), y(true)
   }
   return (0, r.jsx)(c.aML, {
     forceOpen: h,
@@ -65,18 +65,18 @@ function b(e) {
     text: (0, r.jsx)(f.Z, {
       children: (0, r.jsxs)("div", {
         onMouseEnter: O,
-        onMouseLeave: y,
-        children: [t, null != g && (0, r.jsx)(c.Text, {
+        onMouseLeave: S,
+        children: [t, null != b && (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           className: m.errorCodeMessage,
-          children: g
+          children: b
         })]
       })
     }),
     position: "bottom",
     color: c.r6K.GREY,
-    "aria-label": b,
+    "aria-label": g,
     children: e => {
       var t, i;
       return (0, r.jsx)("div", (t = function(e) {
@@ -98,17 +98,17 @@ function b(e) {
         return e
       }({}, e), i = i = {
         onMouseEnter: O,
-        onMouseLeave: y,
+        onMouseLeave: S,
         className: a()(n, m.root),
         children: (0, r.jsx)(f.Z, {
           children: (0, r.jsx)(c.Mgn, {
             onMouseEnter: O,
-            onMouseLeave: y,
+            onMouseLeave: S,
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            "aria-label": b,
+            "aria-label": g,
             className: m.warningIcon
           })
         })

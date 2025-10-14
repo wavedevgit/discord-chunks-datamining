@@ -16,14 +16,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk262433 = require("./262433.js"),
   Chunk400321 = require("./400321.js"),
   Chunk813900 = require("./813900.js");
-let b = 1e3 / 60;
+let g = 1e3 / 60;
 
 function E(e, t, n, E) {
-  let g = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
+  let b = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
     v = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     h = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
-    S = r.useRef({}),
-    y = r.useRef(new i.Xp),
+    y = r.useRef({}),
+    S = r.useRef(new i.Xp),
     O = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
@@ -44,11 +44,11 @@ function E(e, t, n, E) {
         let m = f.getContext("2d");
         if (null == m) return;
         let {
-          width: b,
+          width: g,
           height: E
-        } = f.getBoundingClientRect(), g = [];
+        } = f.getBoundingClientRect(), b = [];
         n.forEach(e => {
-          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void g.push(e);
+          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void b.push(e);
           ! function(e) {
             let {
               drawable: t,
@@ -91,27 +91,27 @@ function E(e, t, n, E) {
           }({
             drawable: e,
             context: m,
-            canvasWidth: b,
+            canvasWidth: g,
             canvasHeight: E,
             fallbackColor: r,
             outlineColorDark: o,
             outlineColorLight: u,
             linesDrawnAt: i,
-            deadDrawables: g,
+            deadDrawables: b,
             streamerId: l
           })
-        }), g.length > 0 && (0, s.fW)(g, l)
+        }), b.length > 0 && (0, s.fW)(b, l)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: g,
-        linesDrawnAt: S,
+        fallbackColor: b,
+        linesDrawnAt: y,
         streamerId: t,
         outlineColorDark: v,
         outlineColorLight: h,
         channelId: E
       })
-    }, [e, E, g, v, h]);
+    }, [e, E, b, v, h]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -128,10 +128,10 @@ function E(e, t, n, E) {
     let t = u.Z.getDrawables(n),
       r = p.U.getState().particles,
       i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == y.current._ref && (null == y.current._ref ? (O(n), y.current.start(b, () => O(n))) : i || null == y.current._ref || (y.current.stop(), (0, f.UN)(e)))
+    i && null == S.current._ref && (null == S.current._ref ? (O(n), S.current.start(g, () => O(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
   }, [e, O, n]);
   r.useEffect(() => {
-    let e = y.current;
+    let e = S.current;
     return u.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, m.Ks)), () => {
       u.Z.removeChangeListener(I), e.stop()
     }

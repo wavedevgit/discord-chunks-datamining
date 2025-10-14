@@ -170,7 +170,7 @@ function et(e) {
         }) : (0, i.jsx)(V.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
-          id: l ? K.j1 : true,
+          id: l ? Y.j1 : true,
           children: e.content
         }, "divider-".concat(null != (r = null != (n = e.contentKey) ? n : e.unreadId) ? r : t))
       }
@@ -183,7 +183,7 @@ function et(e) {
       if (e.type === q.ys_.MESSAGE_GROUP_BLOCKED || e.type === q.ys_.MESSAGE_GROUP_IGNORED || e.type === q.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
         return t = e.type === q.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYMz"] : e.type === q.ys_.MESSAGE_GROUP_IGNORED ? J.t.VFWjc3 : J.t.xfkfTE, (0, i.jsx)(H.Z, {
-          unreadId: K.j1,
+          unreadId: Y.j1,
           messages: e,
           channel: U,
           compact: er,
@@ -223,7 +223,7 @@ function et(e) {
     }), et.hasMoreBefore && null == ec) {
     et.length > 0 && eI.unshift((0, i.jsx)("div", {
       style: {
-        height: K.D4,
+        height: Y.D4,
         flex: "0 0 auto"
       }
     }, "buffer"));
@@ -245,7 +245,7 @@ function et(e) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(U.id),
       l = 0 !== n ? n : M.default.extractTimestamp(U.id),
       o = (0, A.KC)(new Date, new Date(l));
-    if (Z.ZP.isEstimated(U.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtr, t = J.t.vaPWFR) : (e = o ? J.t.BctFHx : J.t["3wXb9P"], t = J.t["4H8ldH"]), eb && (0, s.tW)(U) && ex.includes(Y.E.SUMMARIES)) {
+    if (Z.ZP.isEstimated(U.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtr, t = J.t.vaPWFR) : (e = o ? J.t.BctFHx : J.t["3wXb9P"], t = J.t["4H8ldH"]), eb && (0, s.tW)(U) && ex.includes(K.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(U.id),
         o = (0, S.q)(U.id, Z.ZP.getOldestUnreadMessageId(U.id));
       if ((0, u.yw)(q.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
@@ -333,7 +333,7 @@ function et(e) {
           })
         }
       }
-    } else ex.includes(Y.E.NEW_MESSAGES) && (r = (0, i.jsx)(F.LE, {
+    } else ex.includes(K.E.NEW_MESSAGES) && (r = (0, i.jsx)(F.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -341,7 +341,7 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == r && (0, s.Lp)(U) && eC && ex.includes(Y.E.SUMMARIES) && (r = (0, i.jsx)(F.BO, {
+  if (null == r && (0, s.Lp)(U) && eC && ex.includes(K.E.SUMMARIES) && (r = (0, i.jsx)(F.BO, {
       channel: U,
       scrollManager: eo
     })), et.error) h = (0, i.jsx)(F.Rp, {

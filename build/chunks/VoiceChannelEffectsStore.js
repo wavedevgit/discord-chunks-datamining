@@ -2,8 +2,8 @@
 /** chunk id: 456631, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  H: () => b,
-  Z: () => S
+  H: () => g,
+  Z: () => y
 }), require("./388685.js"), require("./290780.js");
 var i, l, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,14 +15,14 @@ var i, l, Chunk392711 = require("./392711.js"),
 let p = [],
   _ = {},
   m = [],
-  b = e => {
+  g = e => {
     null != e && s.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
       userId: e
     })
   },
   E = [],
-  g = 10 * Chunk70956.Z.Millis.SECOND,
+  b = 10 * Chunk70956.Z.Millis.SECOND,
   v = (0, Chunk392711.debounce)(() => {
     let e = (0, Chunk963838.cX)(m);
     Chunk780384.uv.announce(module, "polite"), m = []
@@ -46,7 +46,7 @@ class h extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : h[l] = "VoiceChannelEffectsStore";
-let S = new h(Chunk570140.Z, {
+let y = new h(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
@@ -79,7 +79,7 @@ let S = new h(Chunk570140.Z, {
     if ((E = [module, ...E].slice(0, 20)).length >= 20) {
       let t = E[E.length - 1],
         n = module.getTime() - exports.getTime();
-      require < g && (r = new Date(module.getTime() + g - require))
+      require < b && (r = new Date(module.getTime() + b - require))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

@@ -13,6 +13,7 @@ require.d(exports, {
   XE: () => u,
   YB: () => g,
   Yo: () => d,
+  ZU: () => A,
   aq: () => I,
   dj: () => f,
   eV: () => C,
@@ -299,22 +300,28 @@ function S(e) {
     autoTrackExposure: t
   })
 }
-let A = (0, Chunk427164.le)({
-  name: "2025-09-overlay-default-keybind",
+let A = (0, Chunk818083.B)({
+  id: "2025-10_overlay_default_keybind",
+  label: "Overlay Default Keybind",
   kind: "user",
   defaultConfig: {
     keybindOverride: true
   },
-  variations: {
-    1: {
+  treatments: [{
+    id: 1,
+    label: "alt + a Keybind",
+    config: {
       keybindOverride: "alt+a"
     }
-  }
+  }]
 });
 
 function C(e) {
-  return A.getConfig({
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return A.getCurrentConfig({
     location: e
+  }, {
+    autoTrackExposure: t
   })
 }
 let N = (0, Chunk818083.B)({

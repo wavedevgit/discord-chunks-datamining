@@ -264,7 +264,7 @@ class ez extends Chunk647438.PureComponent {
       screenMessage: this.screenMessage,
       disableGradients: !r || y,
       idle: !m && r && !y && e.idle,
-      children: r && this.popoutOpen && !this.inPopout ? null : (0, i.jsx)(Y.Z, {
+      children: r && this.popoutOpen && !this.inPopout ? null : (0, i.jsx)(K.Z, {
         ref: this._contentRef,
         inCall: r,
         channel: p,
@@ -568,7 +568,7 @@ class ez extends Chunk647438.PureComponent {
           canChangeLayout: g,
           canInvite: b
         } = this.viewProperties,
-        C = l ? (0, i.jsx)(K.Z, {
+        C = l ? (0, i.jsx)(Y.Z, {
           channel: n,
           stream: (null == o ? true : o.type) === eL.fO.STREAM ? (0, k.my)(o.id) : true,
           applicationId: (null == o ? true : o.type) === eL.fO.ACTIVITY ? o.applicationId : true,
@@ -759,7 +759,7 @@ let eW = function(e) {
     selectedStream: G
   } = (0, u.cj)([ea.Z], () => ({
     selectedStream: null != H ? ea.Z.getActiveStreamForStreamKey(H.id) : null
-  }), [H]), W = (0, u.e7)([eu.Z], () => eu.Z.getGuild(n.getGuildId())), Y = (0, u.e7)([ec.Z], () => ec.Z.getCall(n.id), [n.id]), K = (0, u.e7)([ep.ZP], () => ep.ZP.getMentionCount(n.id), [n.id]), q = (0, u.e7)([eo.default], () => eo.default.getId()), {
+  }), [H]), W = (0, u.e7)([eu.Z], () => eu.Z.getGuild(n.getGuildId())), K = (0, u.e7)([ec.Z], () => ec.Z.getCall(n.id), [n.id]), Y = (0, u.e7)([ep.ZP], () => ep.ZP.getMentionCount(n.id), [n.id]), q = (0, u.e7)([eo.default], () => eo.default.getId()), {
     popoutWindow: X,
     popoutWindowAlwaysOnTop: J
   } = (0, u.cj)([V.Z], () => ({
@@ -812,10 +812,10 @@ let eW = function(e) {
             participantsListOpen: k && eb,
             renderExternalHeader: l,
             appContext: b,
-            call: Y,
+            call: K,
             popoutWindow: X,
             popoutWindowAlwaysOnTop: J,
-            mentionCount: K,
+            mentionCount: Y,
             selectedStream: G,
             mode: N,
             inCall: _,

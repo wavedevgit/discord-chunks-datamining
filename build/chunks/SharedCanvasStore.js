@@ -1,7 +1,7 @@
 /** Chunk was on 38319 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -35,9 +35,9 @@ function p(e) {
 }
 let _ = {},
   m = {},
-  b = {},
+  g = {},
   E = true,
-  g = null;
+  b = null;
 
 function v(e) {
   if (null == m[e]) {
@@ -59,14 +59,14 @@ class h extends(r = Chunk442837.ZP.Store) {
     return m[e]
   }
   getEmojiImage(e) {
-    return b[e]
+    return g[e]
   }
   getDrawMode() {
-    return g
+    return b
   }
 }
 f(h, "displayName", "SharedCanvasStore");
-let S = new h(Chunk570140.Z, {
+let y = new h(Chunk570140.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
@@ -115,9 +115,9 @@ let S = new h(Chunk570140.Z, {
       e >= 0 ? _[u][e] = p({}, _[u][e], m) : _[u].push(m)
     }
     let E = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
-    if (null == b[E]) {
+    if (null == g[E]) {
       let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
-      b[E] = new Image, b[E].src = (0, c.qc)({
+      g[E] = new Image, g[E].src = (0, c.qc)({
         id: o.emojiId,
         name: null != (r = null != e ? e : o.emojiName) ? r : "",
         animated: false
@@ -139,7 +139,7 @@ let S = new h(Chunk570140.Z, {
     let {
       drawMode: t
     } = e;
-    g = t
+    b = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;

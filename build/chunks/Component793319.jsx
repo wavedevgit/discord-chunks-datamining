@@ -336,7 +336,7 @@ let eP = Chunk647438.memo(function(e) {
           switch (S) {
             case "ACTIVITY":
               if (null == s || null == t || s.type !== eC.fO.ACTIVITY || null == a) return;
-              return (0, i.jsx)(Y.Z, eO(ex({}, c), {
+              return (0, i.jsx)(K.Z, eO(ex({}, c), {
                 applicationId: s.applicationId,
                 color: "disconnect",
                 location: a.location,
@@ -354,7 +354,7 @@ let eP = Chunk647438.memo(function(e) {
                 isSelfStream: false
               }));
             case "CALL":
-              return (0, i.jsx)(K.Z, eO(ex({}, c), {
+              return (0, i.jsx)(Y.Z, eO(ex({}, c), {
                 color: "disconnect",
                 onClick: () => {
                   (0, P.v)(o, P.d.DISCONNECT), null == n || n()
@@ -457,15 +457,15 @@ let eT = function(e) {
     reachedLimit: z,
     limit: W
   } = (0, eo.Z)(n), {
-    analyticsLocations: Y
-  } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), K = (0, $.Hu)({
+    analyticsLocations: K
+  } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), Y = (0, $.Hu)({
     location: _.Z.VOICE_CONTROL_TRAY,
     autoTrackExposure: true
   }), {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: _.Z.VOICE_CONTROL_TRAY
-  }), et = (0, V.Z)(n), en = r.useRef(null), eu = r.useRef(null), ep = K ? e => {
+  }), et = (0, V.Z)(n), en = r.useRef(null), eu = r.useRef(null), ep = Y ? e => {
     (0, f.jW)(e, () => Promise.resolve(() => (0, i.jsx)(O.default, {
       onClose: f.Zy,
       renderInputDevices: true,
@@ -479,7 +479,7 @@ let eT = function(e) {
     })))
   } : true;
   return H ? (0, i.jsx)(v.Gt, {
-    value: Y,
+    value: K,
     children: (0, i.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,
       children: [(0, i.jsx)("div", {
@@ -498,7 +498,7 @@ let eT = function(e) {
               let t, {
                 closePopout: n
               } = e;
-              return t = K ? (0, i.jsx)(ee.l, {
+              return t = Y ? (0, i.jsx)(ee.l, {
                 wide: true,
                 showOutputDevices: true,
                 onSettingsButtonClick: n
@@ -623,7 +623,7 @@ let eT = function(e) {
       })]
     })
   }) : (0, i.jsx)(v.Gt, {
-    value: Y,
+    value: K,
     children: (0, i.jsx)(eI, {
       channel: n,
       cameraUnavailable: x,

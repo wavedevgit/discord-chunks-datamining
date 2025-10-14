@@ -873,7 +873,7 @@ class te extends Chunk647438.PureComponent {
       }) : null != l && (0, q.J)(l) && null != r && !eI.Z.can(eJ.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(J.T, {
         guild: r,
         disabledUntil: l
-      }) : a ? (0, i.jsx)(K.h, {
+      }) : a ? (0, i.jsx)(Y.h, {
         guild: r
       }) : null
     }), e2(this, "renderAppLauncherButton", () => {
@@ -921,7 +921,7 @@ let tt = Chunk647438.memo(function(e) {
     accessibilityLabel: s
   } = (0, eV.Z)({
     channel: t
-  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, X.AB)(null == n ? true : n.id), h = (0, Y.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
+  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, X.AB)(null == n ? true : n.id), h = (0, K.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
     var e, t, i;
     return null != f && null != (i = null == (e = eS.ZP.getMember(null != (t = null == n ? true : n.id) ? t : eJ.lds, null == f ? true : f.id)) ? true : e.isPending) && i
   }), g = (0, d.e7)([eo.Z], () => eo.Z.isEnabled()), C = (0, eu.Z)(t.id), y = (0, Q.Z)(t.id), _ = (0, Z.R)({
@@ -960,7 +960,7 @@ let tt = Chunk647438.memo(function(e) {
     {
       showLinkedLobbyApplicationLoadingIndicator: W
     } = (0, eH.Z)(t.linkedLobby),
-    K = (0, z.Z)("ChannelChat");
+    Y = (0, z.Z)("ChannelChat");
   return (0, i.jsx)(te, {
     channel: t,
     isEditing: null != (0, d.e7)([eE.Z], () => eE.Z.getEditingMessageId(t.id)),
@@ -989,6 +989,6 @@ let tt = Chunk647438.memo(function(e) {
     voiceChannel: U,
     messagesTypingGradient: G,
     showLinkedLobbyApplicationLoadingIndicator: W,
-    announcementComposerEnabled: K
+    announcementComposerEnabled: Y
   })
 })

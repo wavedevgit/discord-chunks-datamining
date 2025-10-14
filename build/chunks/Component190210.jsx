@@ -160,15 +160,15 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: eU,
     canAttachFiles: eB,
     canEveryoneSendMessages: eH
-  } = (0, F.TE)(L, k, eL, I), eV = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== Y.GI, eG = (0, T.Z)(), {
+  } = (0, F.TE)(L, k, eL, I), eV = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== K.GI, eG = (0, T.Z)(), {
     fontSize: ez
   } = (0, d.cj)([C.Z], () => ({
     fontSize: C.Z.fontSize,
     isSubmitButtonEnabled: C.Z.isSubmitButtonEnabled
-  })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eY = (0, N.NE)(L);
+  })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eK = (0, N.NE)(L);
   (0, F.hJ)(k, eU);
   let {
-    eventEmitter: eK,
+    eventEmitter: eY,
     handleEditorSelectionChanged: eq
   } = (0, F.x2)(ew, p, h), eX = r.useCallback(e => {
     let t = e => {
@@ -185,7 +185,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       i = eS.length > 0 ? eS : e.value.length > 0 ? e.value.slice(0, 80) : X.intl.string(X.t["7Xm5QE"]);
     if (null == eP) return ed(ee($({}, e), {
       announcementSendOptions: {
-        createThread: eY && eZ,
+        createThread: eK && eZ,
         threadName: i,
         publish: eI
       }
@@ -193,11 +193,11 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     n.push({
       type: g.re.MEDIA_GALLERY,
       items: [et("attachment://".concat(en(eP.name)), false)],
-      id: "".concat(K.Vm)
+      id: "".concat(Y.Vm)
     }), e.value.length > 0 && n.push({
       type: g.re.TEXT_DISPLAY,
       content: e.value,
-      id: "".concat(K.Kb)
+      id: "".concat(Y.Kb)
     });
     let r = R.Z.getUploads(L.id, w.d.ChannelMessage),
       l = r.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eP ? true : eP.name)),
@@ -206,24 +206,24 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     return o.length > 0 && n.push({
       type: g.re.MEDIA_GALLERY,
       items: o,
-      id: "".concat(K.m2)
+      id: "".concat(Y.m2)
     }), a.forEach((e, t) => {
       n.push({
         type: g.re.FILE,
         file: et("attachment://".concat(en(e.filename)), false).media,
-        id: "".concat(K.kn + t),
+        id: "".concat(Y.kn + t),
         name: en(e.filename),
         size: null
       })
     }), ed(ee($({}, e), {
       components: n,
       announcementSendOptions: {
-        createThread: eY && eZ,
+        createThread: eK && eZ,
         threadName: i,
         publish: eI
       }
     })).then(t)
-  }, [ed, eS, eP, L.id, eZ, eI, eY]), {
+  }, [ed, eS, eP, L.id, eZ, eI, eK]), {
     submit: eJ,
     handleSubmit: eQ
   } = (0, F.bL)(eX, k, ew, eR, L.id), {
@@ -271,7 +271,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     chatInputType: k,
     submit: eX
   });
-  (0, U.S)(eK, L.guild_id, L.id);
+  (0, U.S)(eY, L.guild_id, L.id);
   let [to, ts] = r.useState(false), tc = G || to || p.length > 0 || null != eP || eS.length > 0, {
     editorHeaderHeight: tu,
     paddingTop: td
@@ -304,7 +304,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     })
   }, [L.id, eP, k.drafts.type]);
   return (0, i.jsx)(j.f6, {
-    value: eK,
+    value: eY,
     children: (0, i.jsxs)(_.Gt, {
       value: eT,
       children: [(0, i.jsxs)("div", {
@@ -431,7 +431,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 targetElementRef: tp,
                 renderPopout: () => (0, i.jsx)(er, {
                   channelId: L.id,
-                  canCreateThread: eY
+                  canCreateThread: eK
                 }),
                 shouldShow: th,
                 autoInvert: true,
@@ -457,7 +457,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                       children: [(0, i.jsx)(f.Uuj, {
                         size: "xs",
                         color: "white"
-                      }), eY && eZ ? (0, i.jsx)(f.or_, {
+                      }), eK && eZ ? (0, i.jsx)(f.or_, {
                         size: "xxs",
                         color: "white",
                         className: J.subIcon

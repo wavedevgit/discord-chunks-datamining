@@ -14,34 +14,34 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk729303 = require("./729303.js"),
   Chunk651941 = require("./651941.js"),
   Chunk981631 = require("./981631.js");
-let b = new Map,
+let g = new Map,
   E = new Map,
-  g = false,
+  b = false,
   v = null;
 
 function h() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
-    } = (0, c.my)(t), r = true === b.get(n), i = E.get(t) !== r;
+    } = (0, c.my)(t), r = true === g.get(n), i = E.get(t) !== r;
     return E.set(t, r), !!i || e
   }, false)
 }
 
-function S() {
+function y() {
   var e;
   let t = null != (e = Chunk19780.Z.getUserIds()) ? module : new Set,
     n = Chunk314897.default.getId(),
     r = true;
   for (let e of exports)
-    if (require !== module && true !== b.get(module)) {
+    if (require !== module && true !== g.get(module)) {
       r = false;
       break
-    } let i = r !== g;
-  return g = r, i
+    } let i = r !== b;
+  return b = r, i
 }
 
-function y(e) {
+function S(e) {
   let {
     userId: t
   } = e;
@@ -53,29 +53,29 @@ function y(e) {
         r = _.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
         i = (0, f.UB)(e, [u.Z, d.Z]),
         l = r && !i,
-        a = l !== b.get(e);
-      return b.set(e, l), a
+        a = l !== g.get(e);
+      return g.set(e, l), a
     }(t),
     r = h(),
-    i = S();
+    i = y();
   return n || r || i
 }
 
 function O() {
-  b.clear(), E.clear(), g = false
+  g.clear(), E.clear(), b = false
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk729303.Z, Chunk651941.Z, Chunk19780.Z, Chunk959457.Z)
   }
   isCallVerified() {
-    return g
+    return b
   }
   isStreamVerified(e) {
     return E.get(e)
   }
   isUserVerified(e) {
-    return b.get(e)
+    return g.get(e)
   }
 }(i = "displayName") in I ? Object.defineProperty(I, i, {
   value: "SecureFramesVerifiedStore",
@@ -102,7 +102,7 @@ let C = new I(Chunk570140.Z, {
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return E.delete(t), S();
+        return E.delete(t), y();
       case a.Yn.DEFAULT:
         O()
     }
@@ -110,14 +110,14 @@ let C = new I(Chunk570140.Z, {
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!y({
+    } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!S({
       userId: t
-    }) || e, false), i = h(), l = S();
+    }) || e, false), i = h(), l = y();
     return r || i || l
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: y,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: y,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: y,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: y,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: y
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: S,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: S,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: S,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: S,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: S
 })

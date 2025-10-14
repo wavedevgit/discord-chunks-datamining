@@ -92,8 +92,8 @@ function W(e, t) {
   }
   return r
 }
-let Y = (0, Chunk258536.animated)(Chunk481060.eTT),
-  K = Chunk647438.memo(function(e) {
+let K = (0, Chunk258536.animated)(Chunk481060.eTT),
+  Y = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -115,7 +115,7 @@ let Y = (0, Chunk258536.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [D, K] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), q = r.useMemo(() => y ? (0, L.aJ)({
+    } = e, [D, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), q = r.useMemo(() => y ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -137,8 +137,8 @@ let Y = (0, Chunk258536.animated)(Chunk481060.eTT),
       focusId: S,
       placeholderHeight: q.totalHeight,
       canLoadMore: null == T,
-      handleScrollToBottom: r.useCallback(() => K(true), [K]),
-      handleScrollFromBottom: r.useCallback(() => K(false), [K]),
+      handleScrollToBottom: r.useCallback(() => Y(true), [Y]),
+      handleScrollFromBottom: r.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48
     }), J = (0, k.Z)({
       scrollerRef: X.ref,
@@ -224,7 +224,7 @@ let Y = (0, Chunk258536.animated)(Chunk481060.eTT),
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
         className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == ei && ee, (0, i.jsxs)(Y, z(G({
+        children: [null == ei && ee, (0, i.jsxs)(K, z(G({
           ref: es,
           customTheme: true,
           className: a()(p, F.scroller, ec ? ed : true),
@@ -381,7 +381,7 @@ let Y = (0, Chunk258536.animated)(Chunk481060.eTT),
     return (0, i.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
-        children: (0, i.jsx)(K, z(G({}, u), {
+        children: (0, i.jsx)(Y, z(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,

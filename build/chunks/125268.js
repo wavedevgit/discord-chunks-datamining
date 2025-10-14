@@ -3,7 +3,7 @@
 require.d(exports, {
   AX: () => s,
   BR: () => d,
-  Bo: () => b,
+  Bo: () => g,
   Df: () => f,
   LT: () => E,
   ZZ: () => p,
@@ -94,7 +94,7 @@ function m(e, t) {
   })
 }
 
-function b(e) {
+function g(e) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_SET_DRAW_MODE",
     drawMode: e

@@ -101,14 +101,14 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         analyticsLocations: N
       } = (0, m.ZP)(),
-      D = null != (0, y.Z)(o);
+      D = null != (0, S.Z)(o);
     try {
-      t = (0, S.nG)(R)
+      t = (0, y.nG)(R)
     } catch (e) {
       t = false
     }
     try {
-      l = (0, S.tR)(R)
+      l = (0, y.tR)(R)
     } catch (e) {
       l = false
     }
@@ -116,7 +116,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: k
       } = (0, _.O)(),
-      F = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
+      F = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
       L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
       V = i.useCallback(() => {
         L && M && (0, p.ZDy)(async () => {
@@ -141,7 +141,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
         onClick: V,
-        className: a()(w.qualityIndicator, E, b.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
+        className: a()(w.qualityIndicator, E, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && M
         }),
         children: [M ? (0, r.jsx)(p.SrA, {
@@ -150,9 +150,9 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: w.qualityResolution,
-          children: (0, S.ml)(R.maxResolution)
+          children: (0, y.ml)(R.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, S.bp)(R.maxFrameRate)
+          children: (0, y.bp)(R.maxFrameRate)
         })]
       })
     });
@@ -162,7 +162,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         [w.qualityIndicatorBadgePremium]: M && T
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
-      shape: b.eE[f]
+      shape: g.eE[f]
     })
   },
   F = e => {
@@ -173,15 +173,15 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: c,
       className: s,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
+    } = e, [d, f] = i.useState(false), _ = (0, y.W3)(t), {
       reducedMotion: m
-    } = i.useContext(p.Sfi), g = n && null != _;
+    } = i.useContext(p.Sfi), b = n && null != _;
     i.useEffect(() => {
       (0, E.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let v = (0, p.Yzy)(g, {
+    let v = (0, p.Yzy)(b, {
         enter: {
           from: m.enabled ? T : x,
           to: m.enabled ? R : A
@@ -190,7 +190,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
-        to: g ? D : N,
+        to: b ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -217,10 +217,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         }) : null), (0, r.jsx)(o.animated.div, {
           style: h,
           className: w.liveIndicator,
-          children: (0, r.jsx)(b.ZP, {
-            look: b.jZ.RED,
+          children: (0, r.jsx)(g.ZP, {
+            look: g.jZ.RED,
             size: c,
-            shape: g ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: b ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

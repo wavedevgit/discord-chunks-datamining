@@ -60,7 +60,7 @@ function P(e) {
   }, [t, H, F, V]), z = [];
   A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let W = r.useRef(false),
-    Y = r.useRef(null);
+    K = r.useRef(null);
   return (0, i.jsx)(y.ZP, {
     contentTypes: z,
     children: e => {
@@ -69,7 +69,7 @@ function P(e) {
         markAsDismissed: l
       } = e, c = r === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !w;
       return W.current && !c && l(E.L.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(s.yRy, {
-        targetElementRef: Y,
+        targetElementRef: K,
         fixed: true,
         shouldShow: w && (P === O.D.ACTIVITY || null == P),
         animation: s.yRy.Animation.FADE,
@@ -111,7 +111,7 @@ function P(e) {
                 forceOpen: true,
                 shouldShow: c,
                 children: (0, i.jsx)("div", {
-                  ref: Y,
+                  ref: K,
                   children: (0, i.jsx)(x.Z, {
                     disabled: A,
                     "aria-label": N,

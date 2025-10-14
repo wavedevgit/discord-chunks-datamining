@@ -78,12 +78,12 @@ function B(e) {
     setIsHangStatusInputFocused: H,
     setPopoutRef: V
   } = e, F = r.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.getCustomHangStatus()), z = (0, E.Z)(), W = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses()), {
-    defaultStatusVariant: Y,
-    allowPermanentClear: K
+    defaultStatusVariant: K,
+    allowPermanentClear: Y
   } = (0, y.bN)({
     guildId: B.guild_id,
     location: "HangStatusPicker"
-  }), q = (0, v.V)(Y), X = r.useRef(null), [J, Q] = r.useState(null != (n = null == G ? true : G.status) ? n : ""), [$, ee] = r.useState(null != (l = null == G ? true : G.emoji) ? l : null), [et, en] = r.useState(false), ei = (0, u.e7)([_.Z], () => _.Z.getCurrentHangStatus()), er = q[ei], el = W.length > 0, ea = null == J || "" === J.trim(), eo = (0, j.Z)(B), es = J.trim().length > 0 && J.trim() !== (null == G || null == (t = G.status) ? true : t.trim()) || null != $ && !s()($, null == G ? true : G.emoji), [ec, eu] = r.useState(false), ed = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses().length >= _.o), ep = J.length > 0 || null != $, [eh, ef] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
+  }), q = (0, v.V)(K), X = r.useRef(null), [J, Q] = r.useState(null != (n = null == G ? true : G.status) ? n : ""), [$, ee] = r.useState(null != (l = null == G ? true : G.emoji) ? l : null), [et, en] = r.useState(false), ei = (0, u.e7)([_.Z], () => _.Z.getCurrentHangStatus()), er = q[ei], el = W.length > 0, ea = null == J || "" === J.trim(), eo = (0, j.Z)(B), es = J.trim().length > 0 && J.trim() !== (null == G || null == (t = G.status) ? true : t.trim()) || null != $ && !s()($, null == G ? true : G.emoji), [ec, eu] = r.useState(false), ed = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses().length >= _.o), ep = J.length > 0 || null != $, [eh, ef] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
     b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, x.Z)(B.id)), {
       num_favorites: W.length,
@@ -162,7 +162,7 @@ function B(e) {
             type: A.IIU.HANG_STATUS,
             state: e
           },
-          fallbackVariant: Y,
+          fallbackVariant: K,
           className: R.icon
         }) : null != e.emoji && (0, i.jsx)(f.Z, {
           emoji: e.emoji,
@@ -178,10 +178,10 @@ function B(e) {
         isFavorited: o,
         onFavoriteClick: () => e_(o, e)
       }, "".concat(n, "-").concat(t))
-    }, [Y, eb, em, q, e_]),
+    }, [K, eb, em, q, e_]),
     ej = r.useCallback(() => {
-      (0, C.Sc)(true, K), ee(null), Q(""), en(false)
-    }, [K]),
+      (0, C.Sc)(true, Y), ee(null), Q(""), en(false)
+    }, [Y]),
     eE = r.useCallback(e => {
       en(true), Q(e.substring(0, N.s0))
     }, []);
@@ -223,7 +223,7 @@ function B(e) {
                 customStatusEmoji: $,
                 setCustomStatusEmoji: ee,
                 selectedDefaultStatus: et || ep ? null : ei,
-                defaultStatusVariant: Y
+                defaultStatusVariant: K
               })
             },
             trailing: null == G && null == ei || es ? es ? {

@@ -2,7 +2,7 @@
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZB: () => E,
-  ZP: () => g,
+  ZP: () => b,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -19,7 +19,7 @@ let p = 112,
   _ = 16 / 9 * 112 + 8,
   m = 10 * Chunk70956.Z.Millis.SECOND;
 
-function b(e) {
+function g(e) {
   var t;
   let n = o.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? true : t.selfVideo)
@@ -41,10 +41,10 @@ function E(e, t) {
       cropSelfVideo: f,
       version: p
     } = n,
-    [E, g] = i.useState(Date.now());
+    [E, b] = i.useState(Date.now());
   i.useEffect(() => {
     let e = setTimeout(() => {
-      g(Date.now())
+      b(Date.now())
     }, m);
     return () => {
       clearTimeout(e)
@@ -53,7 +53,7 @@ function E(e, t) {
   let v = i.useRef({}),
     {
       visibleParticipants: h,
-      participantTileWidth: S
+      participantTileWidth: y
     } = i.useMemo(() => {
       let n = Date.now(),
         i = (0, l.sortBy)(t, e => (function(e) {
@@ -74,14 +74,14 @@ function E(e, t) {
           }
         })(e, n)),
         [p, _] = (0, l.partition)(i, d.Io),
-        E = p.findIndex(b),
-        g = null;
-      false !== E && (g = p[E], p.splice(E, 1));
-      let h = null == g || f ? e : e - r - c,
-        S = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
-        y = Math.min((h - c) / S - c, r),
-        O = Math.max(0, S - _.length),
-        I = _.slice(0, S),
+        E = p.findIndex(g),
+        b = null;
+      false !== E && (b = p[E], p.splice(E, 1));
+      let h = null == b || f ? e : e - r - c,
+        y = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
+        S = Math.min((h - c) / y - c, r),
+        O = Math.max(0, y - _.length),
+        I = _.slice(0, y),
         C = p.slice(0, O),
         w = Array(O);
       if (O > 0) {
@@ -100,18 +100,18 @@ function E(e, t) {
       let j = w.filter(s.lm);
       v.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
       let Z = [...I, ...j];
-      return null != g && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = g : Z.push(g)), {
+      return null != b && (f && Z.length >= y ? Z[Math.max(0, Z.length - 1)] = b : Z.push(b)), {
         visibleParticipants: Z,
-        participantTileWidth: y
+        participantTileWidth: S
       }
     }, [e, t, E, p, f, u, c, o, r]);
   return {
     visibleParticipants: h,
-    participantTileWidth: S
+    participantTileWidth: y
   }
 }
 
-function g(e) {
+function b(e) {
   let {
     participants: t,
     participantTileWidth: n,
@@ -128,7 +128,7 @@ function g(e) {
     className: f.root,
     children: t.map(e => {
       if (null == e) return null;
-      let t = b(e);
+      let t = g(e);
       return (0, r.jsx)("div", {
         className: f.tileSizer,
         style: t ? {

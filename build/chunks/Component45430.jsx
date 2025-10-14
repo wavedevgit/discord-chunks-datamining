@@ -1,34 +1,33 @@
 /** Chunk was on 50118 **/
 /** chunk id: 45430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
   Chunk841397 = require("./841397.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk427538 = require("./427538.js");
 
-function u(e) {
+function c(e) {
   let {
     channelId: t
   } = e;
   return (0, i.jsxs)("div", {
-    className: c.container,
-    children: [(0, i.jsx)(o.Z, {}), (0, i.jsxs)("div", {
-      className: c.content,
-      children: [(0, i.jsx)(l.Heading, {
+    className: s.container,
+    children: [(0, i.jsx)(a.Z, {}), (0, i.jsxs)("div", {
+      className: s.content,
+      children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/normal",
-        children: s.intl.format(s.t.ilLVLi, {})
-      }), (0, i.jsx)(r.zx, {
-        size: r.zx.Sizes.LARGE,
-        color: r.zx.Colors.PRIMARY,
+        children: o.intl.format(o.t.ilLVLi, {})
+      }), (0, i.jsx)(r.Button, {
+        variant: "secondary",
+        size: "md",
         onClick: e => {
-          e.stopPropagation(), a.Z.toggleVoiceParticipantsHidden(t, false)
+          e.stopPropagation(), l.Z.toggleVoiceParticipantsHidden(t, false)
         },
-        children: s.intl.string(s.t.kLQySE)
+        text: o.intl.string(o.t.kLQySE)
       })]
     })]
   })

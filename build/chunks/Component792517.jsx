@@ -9,12 +9,12 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk872810 = require("./872810.js"),
   Chunk595816 = require("./595816.js"),
   Chunk199902 = require("./199902.js"),
   Chunk314897 = require("./314897.js"),
-  Chunk685203 = require("./685203.jsx"),
   Chunk112560 = require("./112560.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk866752 = require("./866752.js");
@@ -30,18 +30,16 @@ function b(e) {
     selected: b = false
   } = e, y = n < g, {
     defaultWatchMultipleStreams: O
-  } = (0, c.P)({
+  } = (0, u.P)({
     location: "StreamHidden"
-  }), v = (0, o.e7)([u.Z, d.default], () => u.Z.getAllActiveStreams().some(e => {
+  }), v = (0, o.e7)([d.Z, f.default], () => d.Z.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
-    return t !== d.default.getId()
+    return t !== f.default.getId()
   }));
   return (0, r.jsx)("div", {
-    className: a()(h.content, h.streamHidden, {
-      [h.__invalid_small]: y
-    }),
+    className: a()(h.content, h.streamHidden),
     children: (0, r.jsx)(_.Z, {
       className: h.streamHiddenEmptyState,
       artURL: E,
@@ -53,26 +51,28 @@ function b(e) {
         className: a()(h.streamHiddenCTA, {
           [h.largePaddingTop]: !y
         }),
-        children: [(0, r.jsx)(f.a, {
-          isSmall: y,
-          children: (0, r.jsx)(s.Text, {
-            variant: y ? "text-sm/semibold" : "text-md/semibold",
-            color: "none",
-            children: n < m ? p.intl.string(p.t["I6JG4+"]) : p.intl.string(p.t["7Xq/nZ"])
+        children: [(0, r.jsx)("div", {
+          className: h.cta,
+          children: (0, r.jsx)(l.Button, {
+            variant: "secondary",
+            size: y ? "sm" : "md",
+            text: n < m ? p.intl.string(p.t["I6JG4+"]) : p.intl.string(p.t["7Xq/nZ"])
           })
-        }), v && !O ? (0, r.jsx)(f.a, {
-          className: h.addCTA,
-          tooltip: p.intl.string(p.t.wCrzur),
-          onClick: e => {
-            e.stopPropagation(), (0, l.rn)(t.stream, {
-              forceMultiple: true
+        }), v && !O ? (0, r.jsx)("div", {
+          className: a()(h.cta, h.addCta),
+          children: (0, r.jsx)(s.u, {
+            text: p.intl.string(p.t.wCrzur),
+            children: (0, r.jsx)(l.hU, {
+              variant: "secondary",
+              size: y ? "sm" : "md",
+              icon: l.OgY,
+              "aria-label": p.intl.string(p.t.wCrzur),
+              onClick: e => {
+                e.stopPropagation(), (0, c.rn)(t.stream, {
+                  forceMultiple: true
+                })
+              }
             })
-          },
-          isSmall: y,
-          children: (0, r.jsx)(s.OgY, {
-            size: "xs",
-            color: "currentColor",
-            className: h.addStreamIcon
           })
         }) : null]
       })

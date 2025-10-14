@@ -2,14 +2,13 @@
 /** chunk id: 822296, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk872810 = require("./872810.js"),
   Chunk493773 = require("./493773.js"),
@@ -19,50 +18,43 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk15456 = require("./15456.js");
 
-function m(e) {
+function h(e) {
+  var t;
   let {
-    stream: t,
-    width: n
-  } = e, i = (0, o.e7)([f.Z], () => f.Z.getChannel(t.channelId));
-
-  function m(e) {
-    return e < 550 ? "small" : e < 1e3 ? "medium" : "large"
-  }(0, u.ZP)(() => {
-    (null == i ? true : i.isGuildStageVoice()) && (0, c.aP)((0, d.V9)(t), false)
+    stream: n,
+    width: i
+  } = e, h = (0, o.e7)([d.Z], () => d.Z.getChannel(n.channelId));
+  (0, c.ZP)(() => {
+    (null == h ? true : h.isGuildStageVoice()) && (0, l.aP)((0, u.V9)(n), false)
   });
-  let g = () => (0, c.aP)((0, d.V9)(t)),
-    E = p.intl.string(p.t["4EGMWF"]),
-    b = m(n);
-  return (0, r.jsx)(l.f6W, {
+  let m = () => (0, l.aP)((0, u.V9)(n)),
+    g = (t = i) < 550 ? "small" : t < 1e3 ? "medium" : "large";
+  return (0, r.jsx)(s.f6W, {
     disableAdaptiveTheme: true,
-    theme: _.BR.MIDNIGHT,
+    theme: f.BR.MIDNIGHT,
     children: e => (0, r.jsx)("div", {
-      className: a()(h.container, e),
+      className: a()(p.container, e),
       children: (0, r.jsxs)("div", {
-        className: h.content,
+        className: p.content,
         children: [(0, r.jsx)("div", {
-          className: a()(h.artContainer, h[b]),
+          className: a()(p.artContainer, p[g]),
           children: (0, r.jsx)("div", {
-            className: a()(h.art, h[b])
+            className: a()(p.art, p[g])
           })
         }), (0, r.jsxs)("div", {
-          className: h.cta,
-          children: [(0, r.jsx)(l.Heading, {
+          className: p.cta,
+          children: [(0, r.jsx)(s.Heading, {
             color: "none",
-            variant: "small" === b ? "heading-md/normal" : "heading-lg/normal",
-            className: h.header,
-            children: p.intl.formatToMarkdownString(p.t.Kb4Ukp, {})
-          }), (0, r.jsx)(s.zx, {
-            size: "small" === b ? s.zx.Sizes.MEDIUM : s.zx.Sizes.LARGE,
-            color: s.zx.Colors.PRIMARY,
+            variant: "small" === g ? "heading-md/normal" : "heading-lg/normal",
+            className: p.header,
+            children: _.intl.formatToMarkdownString(_.t.Kb4Ukp, {})
+          }), (0, r.jsx)(s.Button, {
+            variant: "secondary",
+            size: "small" === g ? "sm" : "md",
             onClick: e => {
-              e.stopPropagation(), g()
+              e.stopPropagation(), m()
             },
-            children: (0, r.jsx)(l.Text, {
-              color: "none",
-              variant: "text-md/semibold",
-              children: E
-            })
+            text: _.intl.string(_.t["4EGMWF"])
           })]
         })]
       })

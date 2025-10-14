@@ -91,7 +91,7 @@ function F(e) {
   } = (0, l.cj)([_.Z], () => ({
     authorizedAppToken: _.Z.getNewestTokenForApplication(null == G ? true : G.id),
     authorizedAppsFetchState: _.Z.getFetchState()
-  })), Y = c.Z.useExperiment({
+  })), K = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
@@ -120,7 +120,7 @@ function F(e) {
         application: G,
         channel: p,
         oauth2Token: z
-      }), Y && (0, i.jsx)(f.Z, {
+      }), K && (0, i.jsx)(f.Z, {
         channel: p
       })]
     })) : e = (0, i.jsx)(E.Z, {
