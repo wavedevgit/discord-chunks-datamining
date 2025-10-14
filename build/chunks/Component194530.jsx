@@ -6,14 +6,14 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk809206 = require("./809206.js"),
   Chunk25990 = require("./25990.js"),
   Chunk155433 = require("./155433.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk879488 = require("./879488.js");
+  Chunk388032 = require("./388032.jsx");
 
 function _(e) {
   var t, n, _, p;
@@ -21,97 +21,73 @@ function _(e) {
     transitionState: h,
     onSuccess: m,
     onClose: g,
-    requirementsUpdated: E,
-    noSkip: b = false
-  } = e, [y, O] = i.useState(""), [v, I] = i.useState(""), [T, S] = i.useState(""), [A, C] = i.useState(null), [N, R] = i.useState(null), P = (0, a.e7)([l.Z], () => l.Z.getErrors()), w = (0, a.e7)([l.Z], () => l.Z.getFormState()), D = i.useRef(null);
-  async function L(e) {
-    e.preventDefault(), (0, s.b9)();
+    requirementsUpdated: E
+  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [I, T] = i.useState(""), [S, A] = i.useState(null), [C, N] = i.useState(null), R = (0, o.e7)([c.Z], () => c.Z.getErrors()), P = (0, o.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
+  async function D(e) {
+    e.preventDefault(), (0, l.b9)();
     let t = false;
-    if ("" === v ? (C(d.intl.string(d.t["/7/oPT"])), t = true) : C(null), v !== T ? (R(d.intl.string(d.t.IEKYZ2)), t = true) : R(null), t) return;
-    let n = await (0, s.Mn)({
-      password: y,
-      newPassword: v
+    if ("" === O ? (A(f.intl.string(f.t["/7/oPT"])), t = true) : A(null), O !== I ? (N(f.intl.string(f.t.IEKYZ2)), t = true) : N(null), t) return;
+    let n = await (0, l.Mn)({
+      password: b,
+      newPassword: O
     });
     if (null == n ? true : n.ok) m();
     else {
       var r;
-      (null == n || null == (r = n.body) ? true : r.username) != null && (0, c.P)()
+      (null == n || null == (r = n.body) ? true : r.username) != null && (0, u.P)()
     }
   }
   return i.useEffect(() => {
-    if (h === o.Dvm.ENTERED) {
+    if (h === s.Dvm.ENTERED) {
       var e;
-      null == (e = D.current) || e.focus()
+      null == (e = w.current) || e.focus()
     }
-  }, [h]), (0, r.jsxs)(o.Y0X, {
-    transitionState: h,
-    parentComponent: "ChangePasswordModal",
-    children: [(0, r.jsxs)(o.xBx, {
-      separator: false,
-      className: f.header,
-      children: [(0, r.jsx)(o.Heading, {
-        color: "header-primary",
-        variant: "heading-xl/bold",
-        className: f.title,
-        children: d.intl.string(d.t["geta7+"])
-      }), (0, r.jsx)(o.Text, {
-        color: "header-secondary",
-        variant: "text-md/normal",
-        className: f.subtitle,
-        children: E ? d.intl.string(d.t["37iHbW"]) : d.intl.string(d.t.iOurYm)
-      }), true !== b && (0, r.jsx)(o.olH, {
-        onClick: g,
-        className: f.modalCloseButton
-      })]
-    }), (0, r.jsxs)("form", {
-      onSubmit: L,
-      children: [(0, r.jsx)(o.hzk, {
-        className: f.content,
-        children: (0, r.jsxs)(o.Kqy, {
-          gap: 20,
-          children: [(0, r.jsx)(o.oil, {
-            label: d.intl.string(d.t.WBqMRU),
-            error: null == P || null == (t = P.password) ? true : t[0],
-            type: "password",
-            value: y,
-            onChange: O,
-            inputRef: D,
-            autoComplete: "current-password",
-            required: true
-          }), (0, r.jsx)(o.oil, {
-            label: d.intl.string(d.t["8dM4FB"]),
-            error: null != (p = null != (_ = null == P || null == (n = P.new_password) ? true : n[0]) ? _ : A) ? p : true,
-            type: "password",
-            value: v,
-            onChange: I,
-            autoComplete: "new-password",
-            required: true
-          }), (0, r.jsx)(o.oil, {
-            label: d.intl.string(d.t.iQG2KC),
-            error: null != N ? N : true,
-            type: "password",
-            value: T,
-            onChange: S,
-            autoComplete: "new-password",
-            required: true
-          })]
-        })
-      }), (0, r.jsxs)(o.mzw, {
-        children: [(0, r.jsx)(o.Button, {
-          variant: "primary",
-          text: d.intl.string(d.t.i4jeWV),
-          type: "submit",
-          loading: w === u.QZA.SUBMITTING
-        }), true !== b && (0, r.jsx)("div", {
-          "data-button-hoisted-classname-wrapper": true,
-          className: f.cancel,
-          children: (0, r.jsx)(o.Button, {
-            variant: "secondary",
-            text: d.intl.string(d.t["ETE/oK"]),
-            onClick: g
-          })
+  }, [h]), (0, r.jsx)("form", {
+    onSubmit: D,
+    children: (0, r.jsx)(a.Modal, {
+      transitionState: h,
+      onClose: g,
+      title: f.intl.string(f.t["geta7+"]),
+      subtitle: E ? f.intl.string(f.t["37iHbW"]) : f.intl.string(f.t.iOurYm),
+      actions: [{
+        variant: "secondary",
+        text: f.intl.string(f.t["ETE/oK"]),
+        onClick: g
+      }, {
+        variant: "primary",
+        text: f.intl.string(f.t.i4jeWV),
+        loading: P === d.QZA.SUBMITTING,
+        onClick: D
+      }],
+      children: (0, r.jsxs)(s.Kqy, {
+        gap: 20,
+        children: [(0, r.jsx)(s.oil, {
+          label: f.intl.string(f.t.WBqMRU),
+          error: null == R || null == (t = R.password) ? true : t[0],
+          type: "password",
+          value: b,
+          onChange: y,
+          inputRef: w,
+          autoComplete: "current-password",
+          required: true
+        }), (0, r.jsx)(s.oil, {
+          label: f.intl.string(f.t["8dM4FB"]),
+          error: null != (p = null != (_ = null == R || null == (n = R.new_password) ? true : n[0]) ? _ : S) ? p : true,
+          type: "password",
+          value: O,
+          onChange: v,
+          autoComplete: "new-password",
+          required: true
+        }), (0, r.jsx)(s.oil, {
+          label: f.intl.string(f.t.iQG2KC),
+          error: null != C ? C : true,
+          type: "password",
+          value: I,
+          onChange: T,
+          autoComplete: "new-password",
+          required: true
         })]
-      })]
-    })]
+      })
+    })
   })
 }

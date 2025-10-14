@@ -134,11 +134,9 @@ let eE = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
       section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: module
-    }), setTimeout(() => {
-      (0, Chunk829716.I)({
-        analyticsLocations: module
-      })
-    }, 200)
+    }, () => (0, Chunk829716.I)({
+      analyticsLocations: module
+    }))
   }, [module]), eB = {
     clientThemes: {
       name: "clientThemes",

@@ -65,12 +65,11 @@ class E extends Chunk147913.Z {
         default: e
       } = await Promise.resolve().then(require.bind(require, 194530));
       return function(t) {
-        let n = () => {
-            t.onClose(), a.Z.logout("login_required_account_manager", d.Z5c.LOGIN)
-          },
-          i = () => {
-            l.default.track(d.rMx.FORCED_UPDATE_PASSWORD_SUCCEEDED), t.onClose()
-          };
+        let n = async () => {
+          await t.onClose(), a.Z.logout("login_required_account_manager", d.Z5c.LOGIN)
+        }, i = () => {
+          l.default.track(d.rMx.FORCED_UPDATE_PASSWORD_SUCCEEDED), t.onClose()
+        };
         return (0, r.jsx)(e, m(p({}, t), {
           onSuccess: i,
           onClose: n,

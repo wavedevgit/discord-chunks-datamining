@@ -161,11 +161,9 @@ let ec = (e, t) => eo({
         (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
           section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
           analyticsLocations: exports
-        }), setTimeout(() => {
-          (0, Chunk829716.I)({
-            analyticsLocations: exports
-          })
-        }, 200)
+        }, () => (0, Chunk829716.I)({
+          analyticsLocations: exports
+        }))
       }, [exports]),
       I = () => {
         {
