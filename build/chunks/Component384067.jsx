@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -24,12 +24,12 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), S = l.useRef(null), [O, x] = l.useState();
+  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
   l.useEffect(() => {
-    let e = S.current;
+    let e = O.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -37,41 +37,41 @@ let _ = e => {
   }, []);
   let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: j
+      handleCardVisibilityChange: k
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: k
+      bannerURL: j
     } = (0, g.UI)(_);
-  if (null == k) return null;
+  if (null == j) return null;
   let T = b === f.AW.ORBS;
-  return (0, r.jsx)(o.$, {
+  return (0, r.jsx)(s.$, {
     innerRef: v,
-    onChange: j,
+    onChange: k,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
-      className: s()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(h.wideBannerBackgroundImg, {
+        className: o()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
-          ref: S,
-          src: k,
+          ref: O,
+          src: j,
           alt: _.title,
-          className: s()(h.wideBannerArt, {
+          className: o()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T
           }),
           style: {
-            height: null != O ? "".concat(O, "px") : "auto"
+            height: null != x ? "".concat(x, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != O ? "".concat(O, "px") : "auto"
+          maxHeight: null != x ? "".concat(x, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,

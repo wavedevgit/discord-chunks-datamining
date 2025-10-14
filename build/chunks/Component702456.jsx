@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk944658 = require("./944658.js");
 
-function C(e) {
+function S(e) {
   var t, n;
   let {
     user: i,
@@ -55,7 +55,7 @@ function C(e) {
     })
   }, E = l ? s.YqE : a ? s.XcD : true, v = l ? I.intl.string(I.t.aI4VOD) : a ? I.intl.string(I.t.kABl29) : true;
   return (0, r.jsx)(s.P3F, {
-    className: S.frequentFriendAvatarButton,
+    className: C.frequentFriendAvatarButton,
     onClick: O,
     onMouseEnter: b.onMouseEnter,
     onMouseLeave: b.onMouseLeave,
@@ -166,7 +166,7 @@ function T() {
               }
               return e
             }({}, e), n = n = {
-              className: S.frequentFriendsInfoIcon
+              className: C.frequentFriendsInfoIcon
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -187,7 +187,7 @@ function T() {
         }),
         paddingFix: false,
         orientation: "horizontal",
-        children: Chunk592125.map((e, t) => (0, r.jsx)(C, {
+        children: Chunk592125.map((e, t) => (0, r.jsx)(S, {
           user: e,
           isFirst: 0 === t,
           isCompetitive: t === h.length - 1 && m

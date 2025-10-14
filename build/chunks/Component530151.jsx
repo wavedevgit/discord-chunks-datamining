@@ -493,10 +493,10 @@ let q = () => (0, Chunk951288.jsx)(H, {
     cellClassName: Chunk248241.nameCell,
     render: e => (0, r.jsxs)(I.Z, {
       align: I.Z.Align.CENTER,
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(S.Z, {
         game: e.application,
         className: M.__invalid_gameIcon,
-        size: C.A.SMALL
+        size: S.A.SMALL
       }), (0, r.jsx)("div", {
         className: M.nameCellText,
         children: e.application.name

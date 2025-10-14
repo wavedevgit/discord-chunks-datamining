@@ -41,18 +41,18 @@ let O = [],
   v = false,
   y = Chunk981631.QZA.CLOSED,
   I = {},
-  S = false,
-  C = null;
+  C = false,
+  S = null;
 
 function T() {
   if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, O = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
     let e = j(E.id);
     null != module && (E = module)
   }
-  y = Chunk981631.QZA.OPEN, I = {}, S = false
+  y = Chunk981631.QZA.OPEN, I = {}, C = false
 }
 let N = s().debounce(() => {
-  S && ((null == E || s().isEqual(E, j(E.id))) && (S = false), S || x.emitChange())
+  C && ((null == E || s().isEqual(E, j(E.id))) && (C = false), C || x.emitChange())
 }, 500);
 
 function j(e) {
@@ -68,7 +68,7 @@ class P extends(a = Chunk442837.ZP.Store) {
     this.waitFor(Chunk388610.Z, Chunk430824.Z, Chunk855674.Z, Chunk496675.Z)
   }
   hasChanges() {
-    return S
+    return C
   }
   get webhooks() {
     return O
@@ -91,7 +91,7 @@ class P extends(a = Chunk442837.ZP.Store) {
       webhooks: O,
       editedWebhook: E,
       section: l,
-      sectionId: C,
+      sectionId: S,
       hasChanges: this.hasChanges(),
       isFetching: v,
       errors: I
@@ -118,24 +118,24 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
         section: t,
         sectionId: n
       } = e;
-      l = t, C = n
+      l = t, S = n
     },
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
       let {
         webhookId: t
       } = e, n = j(t);
       if (null == n) returnfalse;
-      E = n, I = {}, S = false
+      E = n, I = {}, C = false
     },
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: function() {
-      E = null, I = {}, S = false
+      E = null, I = {}, C = false
     },
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: function(e) {
       let {
         settings: t
       } = e;
       if (null == E) returnfalse;
-      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, S = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, S = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, S = true), S && N()
+      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, C = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, C = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, C = true), C && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
       i = null, r = null, O = [], E = null, y = Chunk981631.QZA.CLOSED
@@ -158,7 +158,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
           });
           if (null != r) {
             let n = _({}, t, r);
-            O[e] = n, S || (null == E ? true : E.id) !== n.id || (E = n)
+            O[e] = n, C || (null == E ? true : E.id) !== n.id || (E = n)
           } else(null == E ? true : E.id) === t.id && (E = null), O.splice(e, 1)
         }
         for (let e of l) null == O.find(t => {

@@ -88,7 +88,7 @@ let N = e => {
     } = e, s = (0, d.aM)(), l = (() => {
       var e;
       let n = null == (e = t.config.ctaConfig) ? true : e.buttonLabel;
-      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? v.intl.string(v.t.hvVgAQ) : v.intl.string(v.t.lwQdjI)
+      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? y.intl.string(y.t.hvVgAQ) : y.intl.string(y.t.lwQdjI)
     })();
     return (0, r.jsx)(o.zxk, {
       size: "sm",
@@ -119,7 +119,7 @@ let N = e => {
         sourceQuestContent: s
       }),
       size: "sm",
-      text: v.intl.string(v.t.csptqa)
+      text: y.intl.string(y.t.csptqa)
     })
   },
   _ = e => {
@@ -161,7 +161,7 @@ let N = e => {
         variant: "secondary",
         fullWidth: true,
         size: "sm",
-        text: v.intl.string(v.t["93PTEh"])
+        text: y.intl.string(y.t["93PTEh"])
       }, e))
     })
   },
@@ -200,8 +200,7 @@ let N = e => {
       z = s.useCallback(e => {
         var t;
         null == b || b(e), (0, p.xN)(d.config) && (null == (t = d.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
-          openInLayer: false,
-          tab: y.AW.ORBS,
+          tab: v.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: a.Z.QUEST_HOME_PAGE
         }) : P()
@@ -220,11 +219,11 @@ let N = e => {
       buttonShineClassName: O.shine,
       "data-migration-pending": true
     }, w), {
-      children: null != C ? C : v.intl.string(v.t.cfY4PD)
+      children: null != C ? C : y.intl.string(y.t.cfY4PD)
     })) : (0, r.jsx)(o.zxk, S(k({
       fullWidth: true,
       onClick: z,
-      text: null != C ? C : v.intl.string(v.t.cfY4PD)
+      text: null != C ? C : y.intl.string(y.t.cfY4PD)
     }, w), {
       size: w.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
@@ -282,7 +281,7 @@ function B(e) {
     ref: t,
     children: [e.showBackButton && (0, r.jsx)(o.hU, {
       size: "sm",
-      "aria-label": v.intl.string(v.t["13/7kZ"]),
+      "aria-label": y.intl.string(y.t["13/7kZ"]),
       onClick: e.onBack,
       icon: i.V7D,
       variant: "secondary"

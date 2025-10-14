@@ -72,7 +72,6 @@ let p = {
     queryPageSize: 0,
     queryPageOffset: 0,
     isFetchingResults: false,
-    fullScreenOpen: false,
     userHasSelectedSort: false,
     currentTab: null
   },
@@ -204,11 +203,6 @@ let p = {
         queryPageOffset: r
       }))
     },
-    setFullScreenOpen: t => {
-      e({
-        fullScreenOpen: t
-      })
-    },
     setCurrentTab: t => {
       e({
         currentTab: t
@@ -222,8 +216,8 @@ let p = {
       themeFilters: r,
       orbEligible: l,
       sort: i,
-      searchQuery: s,
-      queryPageSize: o,
+      searchQuery: o,
+      queryPageSize: s,
       queryPageOffset: a
     } = e;
     return {
@@ -232,10 +226,10 @@ let p = {
       themes: Array.from(r),
       orbs_eligible: !!l || true,
       offset: a,
-      limit: o,
+      limit: s,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
-      search: "" !== s ? s : true
+      search: "" !== o ? o : true
     }
   },
   v = () => {
@@ -276,7 +270,7 @@ let p = {
       let i = b.subscribe(E, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        s = b.subscribe(e => e.hasFilters(), (e, t) => {
+        o = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

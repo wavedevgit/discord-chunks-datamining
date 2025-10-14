@@ -39,8 +39,8 @@ function C(e) {
     compact: y,
     guildIconSize: I = b.LARGE,
     guildsClassName: S,
-    children: P
-  } = e, O = (0, o.e7)([m.default], () => m.default.locale), E = new Intl.ListFormat(O), N = null != (n = null == (t = l.directory_entry) ? true : t.guild_count) ? n : 0, T = null != (r = null == d ? true : d.length) ? r : 0, A = Math.max(0, N - T), {
+    children: O
+  } = e, P = (0, o.e7)([m.default], () => m.default.locale), E = new Intl.ListFormat(P), N = null != (n = null == (t = l.directory_entry) ? true : t.guild_count) ? n : 0, T = null != (r = null == d ? true : d.length) ? r : 0, A = Math.max(0, N - T), {
     shownMutualGuilds: L,
     hiddenMutualGuilds: R
   } = i.useMemo(() => {
@@ -67,9 +67,9 @@ function C(e) {
       mutualGuildCount: t,
       nonMutualGuildCount: l.format(n)
     })
-  }(N, T, A, O, y);
+  }(N, T, A, P, y);
   return 0 === L.length && null == w ? null : (0, a.jsxs)(a.Fragment, {
-    children: [P, (0, a.jsxs)("div", {
+    children: [O, (0, a.jsxs)("div", {
       className: s()(C, f.wrapper),
       children: [(0, a.jsx)("div", {
         className: s()(f.icons, S),

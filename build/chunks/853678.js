@@ -24,20 +24,20 @@ var Chunk45792 = require("./45792.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk674563 = require("./674563.js");
-let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
-  C = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
+let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
+  S = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
   T = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "www.fortnite.com", "www.nvidia.com"]),
   N = new Map([
     [Chunk674563.Vt, {
-      trustedHosts: C,
+      trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.fd, {
-      trustedHosts: C,
+      trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.He, {
-      trustedHosts: C,
+      trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.Zs, {
@@ -125,7 +125,7 @@ let S = new Set([Chunk701488.Fu, Chunk701488.JT]),
         } = e;
         (0, _.bu)(t.transport);
         let r = (0, _._f)(t.application);
-        if (!S.has(r)) throw new b.Z({
+        if (!C.has(r)) throw new b.Z({
           errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {

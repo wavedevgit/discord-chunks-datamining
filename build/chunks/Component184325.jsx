@@ -120,7 +120,6 @@ function U(e) {
               badge: e.id,
               analyticsLocations: G
             }, B)), i) return void(0, u.mK)({
-            openInLayer: false,
             tab: N.AW.ORBS,
             analyticsLocations: G,
             analyticsSource: l.Z.VIRTUAL_CURRENCY_ORB_PROFILE_BADGE

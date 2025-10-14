@@ -180,7 +180,7 @@ function F(e) {
     children: [(0, i.jsxs)("div", {
       className: G.textBlock,
       children: [(0, i.jsx)(c.P3F, {
-        onClick: () => (0, C.bO)({
+        onClick: () => (0, S.bO)({
           eventId: n.id
         }),
         className: G.eventNameClickable,
@@ -271,7 +271,7 @@ function W(e) {
   let {
     guildEvent: t
   } = e, n = l.useCallback(() => {
-    (0, C.bO)({
+    (0, S.bO)({
       eventId: t.id
     })
   }, [t]);
@@ -363,7 +363,7 @@ function Q(e) {
       h = U.intl.string(U.t.wBoE6O);
       break;
     default:
-      (0, S.vE)(r)
+      (0, C.vE)(r)
   }
   return null == a ? null : (0, i.jsxs)(i.Fragment, {
     children: [d.length > 0 ? (0, i.jsxs)("div", {

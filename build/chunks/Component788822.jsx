@@ -27,19 +27,19 @@ let C = e => {
   null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
   let v = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
     {
-      handleCardVisibilityChange: S
+      handleCardVisibilityChange: O
     } = (0, u.E)(v, "home", "marketing featured block"),
-    O = (0, d.YG)(_, m),
-    x = l.useRef(null),
+    x = (0, d.YG)(_, m),
+    S = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    j = (0, a.sp)();
+    k = (0, a.sp)();
   return (0, r.jsx)(i.$, {
-    innerRef: x,
-    onChange: S,
+    innerRef: S,
+    onChange: O,
     threshold: 0,
-    children: (0, r.jsxs)(s.P3F, {
+    children: (0, r.jsxs)(o.P3F, {
       className: p.featuredBlock,
-      innerRef: x,
+      innerRef: S,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,28 +57,28 @@ let C = e => {
           })
         }
         return e
-      }({}, null != O && {
-        backgroundImage: "url(".concat(O, ")")
+      }({}, null != x && {
+        backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
-        E("shop marketing tile", v), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == j ? true : j.sessionId,
+        E("shop marketing tile", v), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == k ? true : k.sessionId,
           sku_id: v,
           page_type: "home",
-          page_section: null == j ? true : j.pageSection,
-          page_category: null == j ? true : j.pageCategory,
+          page_section: null == k ? true : k.pageSection,
+          page_category: null == k ? true : k.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == j ? true : j.tilePosition),
+          tile_position: String(null == k ? true : k.tilePosition),
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(s.IGR, {
+      children: [null != b && (0, r.jsx)(o.IGR, {
         disableColor: true,
         text: b,
         className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(s.Heading, {
+        children: null != y && (0, r.jsx)(o.Heading, {
           lineClamp: 4,
           className: p.featuredBlockBodyText,
           style: {
@@ -89,18 +89,18 @@ let C = e => {
         })
       }), (0, r.jsx)("div", {
         className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(s.Button, {
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", v), e.stopPropagation(), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == j ? true : j.sessionId,
+            E("shop marketing take me there button", v), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == k ? true : k.sessionId,
               sku_id: v,
               page_type: "home",
-              page_section: null == j ? true : j.pageSection,
-              page_category: null == j ? true : j.pageCategory,
+              page_section: null == k ? true : k.pageSection,
+              page_category: null == k ? true : k.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == j ? true : j.tilePosition),
+              tile_position: String(null == k ? true : k.tilePosition),
               cta_name: "Take me there button"
             })
           }

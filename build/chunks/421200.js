@@ -4,7 +4,6 @@
 module.exports = {
   headerBar: "headerBar__80679",
   headerBarInner: "headerBarInner__80679",
-  fullscreenHeaderBar: "fullscreenHeaderBar__80679",
   tabs: "tabs__80679",
   tabWrapper: "tabWrapper__80679",
   tab: "tab__80679",

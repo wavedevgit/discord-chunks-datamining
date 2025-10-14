@@ -1,7 +1,7 @@
 /** Chunk was on 93964 **/
 /** chunk id: 976845, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j
+  ZP: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,11 +58,11 @@ function f(e, t) {
   }
   return o
 }
-let O = {
+let p = {
     width: 60,
     height: 60
   },
-  p = e => {
+  O = e => {
     let {
       currentAnimationType: t,
       animationTypeRef: r,
@@ -84,15 +84,15 @@ let O = {
       {
         Component: l
       } = o;
-    return p(s({
+    return O(s({
       currentAnimationType: t
-    }, r, f(o, ["Component"]))), (0, n.jsx)(l, b(s({}, O), {
+    }, r, f(o, ["Component"]))), (0, n.jsx)(l, b(s({}, p), {
       size: "custom",
       className: i.orbsLottie,
       useLottieDefaultColors: true
     }))
   },
-  g = e => {
+  j = e => {
     var {
       currentAnimationType: t
     } = e, r = f(e, ["currentAnimationType"]);
@@ -100,15 +100,15 @@ let O = {
       {
         Component: u
       } = o;
-    return p(s({
+    return O(s({
       currentAnimationType: t
-    }, r, f(o, ["Component"]))), (0, n.jsx)(u, b(s({}, O), {
+    }, r, f(o, ["Component"]))), (0, n.jsx)(u, b(s({}, p), {
       size: "custom",
       className: i.orbsLottie,
       useLottieDefaultColors: true
     }))
   },
-  j = e => {
+  d = e => {
     let t = (0, c.ZP)();
-    return (0, a.ap)(t) ? (0, n.jsx)(g, s({}, e)) : (0, n.jsx)(y, s({}, e))
+    return (0, a.ap)(t) ? (0, n.jsx)(j, s({}, e)) : (0, n.jsx)(y, s({}, e))
   }

@@ -204,7 +204,6 @@ function B(e) {
       sectionType: R.jXE.QUEST_TILE_CTA,
       ctaObject: R.qAy.CTA_TO_ORBS_SHOP
     }), (0, c.mK)({
-      openInLayer: false,
       tab: P.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE

@@ -1,7 +1,7 @@
 /** Chunk was on 69844 **/
 /** chunk id: 666697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => P
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,11 +27,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk352677 = require("./352677.js");
-let O = function(e) {
+let P = function(e) {
   let {
     applicationId: t,
     onSelectApplication: n,
-    onScroll: O,
+    onScroll: P,
     initialTab: E,
     onButtonsVisibilityChange: N
   } = e, T = a.useRef(null), A = (0, i.e7)([u.Z], () => u.Z.getApplication(t)), L = (0, i.e7)([u.Z], () => u.Z.getApplicationFetchState(t));
@@ -114,30 +114,30 @@ let O = function(e) {
     }, [t]),
     Y = Z === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
-    onScroll: O,
+    onScroll: P,
     ref: T,
     children: (0, r.jsx)(s.Z, {
       children: null == A ? null == L || L === u.M.FETCHING ? (0, r.jsx)("div", {
-        className: P.centerContainer,
+        className: O.centerContainer,
         children: (0, r.jsx)(h.Z, {
           loading: true
         })
       }) : (0, r.jsx)("div", {
-        className: P.centerContainer,
+        className: O.centerContainer,
         children: (0, r.jsx)(g.Z, {
-          className: P.error
+          className: O.error
         })
       }) : (0, r.jsxs)("div", {
-        className: P.detailContainer,
+        className: O.detailContainer,
         children: [(0, r.jsx)(x.Z, {
           application: A,
           onButtonsVisibilityChange: N
         }), (0, r.jsxs)("div", {
-          className: P.contentContainer,
+          className: O.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: P.contentTabsContainer,
+            className: O.contentTabsContainer,
             children: [R && (0, r.jsx)("div", {
-              className: P.contentTabs,
+              className: O.contentTabs,
               children: (0, r.jsx)(o.Z, {
                 tabs: F,
                 onTabSelect: V,
@@ -151,7 +151,7 @@ let O = function(e) {
               similarLoadId: null == G ? true : G.loadId
             })]
           }), Y && (0, r.jsx)(v.Z, {
-            className: P.sidebar,
+            className: O.sidebar,
             application: A,
             view: "side"
           })]

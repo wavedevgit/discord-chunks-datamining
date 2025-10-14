@@ -30,17 +30,17 @@ let b = e => {
     } = e, {
       isPurchased: E,
       isPartiallyOwnedBundle: v
-    } = (0, g.L)(t), S = (0, s.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), O = (0, s.e7)([a.default], () => a.default.getCurrentUser()), x = c.ZP.canUseCollectibles(O), y = (0, p.Iw)(t), {
-      isOrbExclusive: j
+    } = (0, g.L)(t), O = (0, o.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), x = (0, o.e7)([a.default], () => a.default.getCurrentUser()), S = c.ZP.canUseCollectibles(x), y = (0, p.Iw)(t), {
+      isOrbExclusive: k
     } = (0, C.Ip)({
       product: t,
-      isPremiumUser: x,
+      isPremiumUser: S,
       prioritizedCurrency: b,
       hasDiscountOffer: null != y
-    }), k = (0, d.Yq)(t.skuId), T = (null == S ? true : S.skuId) === h.bu && (0, d.WW)(t.skuId);
+    }), j = (0, d.Yq)(t.skuId), T = (null == O ? true : O.skuId) === h.bu && (0, d.WW)(t.skuId);
     if (n === f.Zh.NONE) return null;
     let L = null;
-    return (n === f.Zh.NEW ? L = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? L = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (L = _.intl.string(_.t.S6kE9v)), null == L && (v || E || !k ? j ? L = _.intl.string(_.t["0TmQRE"]) : T && (L = _.intl.string(_.t.S6kE9v)) : L = _.intl.string(_.t.y2b7CA)), null == L) ? null : (0, r.jsx)(o.IGR, {
+    return (n === f.Zh.NEW ? L = _.intl.string(_.t.y2b7CA) : n === f.Zh.ORBS_EXCLUSIVE ? L = _.intl.string(_.t["0TmQRE"]) : n === f.Zh.NEW_COLOR_VARIANT && (L = _.intl.string(_.t.S6kE9v)), null == L && (v || E || !j ? k ? L = _.intl.string(_.t["0TmQRE"]) : T && (L = _.intl.string(_.t.S6kE9v)) : L = _.intl.string(_.t.y2b7CA)), null == L) ? null : (0, r.jsx)(s.IGR, {
       text: L,
       disableColor: true,
       className: i()(l, m.productCardBadge)
@@ -52,9 +52,9 @@ let b = e => {
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i
-    } = e, s = (0, f.LJ)(t);
-    return null == s ? null : (0, r.jsx)(b, {
-      product: s,
+    } = e, o = (0, f.LJ)(t);
+    return null == o ? null : (0, r.jsx)(b, {
+      product: o,
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i

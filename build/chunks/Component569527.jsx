@@ -48,7 +48,7 @@ function T(e) {
     return {
       query: null != (e = n.get("q")) ? e : "",
       page: a,
-      categoryId: null != (t = Number(n.get("category_id"))) ? t : O.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
+      categoryId: null != (t = Number(n.get("category_id"))) ? t : P.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
   }, [R.search]), M = (0, o.e7)([f.Z], () => f.Z.getCategories()), G = a.useMemo(() => null == M ? true : M.find(e => e.id === k), [M, k]), B = a.useCallback(e => {
     (0, v.zZ)(E.rMx.APP_DIRECTORY_SEARCHED, {
@@ -74,7 +74,7 @@ function T(e) {
       options: {
         categoryId: k,
         page: D,
-        pageSize: O.PAGE_SIZE,
+        pageSize: P.PAGE_SIZE,
         source: s.F.APP_DIRECTORY
       },
       onSuccessCallback: B
@@ -88,14 +88,14 @@ function T(e) {
       query: w,
       categoryId: k,
       page: D,
-      pageSize: O.PAGE_SIZE,
+      pageSize: P.PAGE_SIZE,
       source: s.F.APP_DIRECTORY
     }),
     searchResults: b.Z.getSearchResults({
       query: w,
       categoryId: k,
       page: D,
-      pageSize: O.PAGE_SIZE,
+      pageSize: P.PAGE_SIZE,
       source: s.F.APP_DIRECTORY
     })
   })), F = (0, o.cj)([b.Z], () => {
@@ -168,7 +168,7 @@ function T(e) {
               })
             }), (0, r.jsx)(C.Z, {
               loading: U === _.M.FETCHING,
-              children: U === _.M.FETCHED && (null == V || (null == V ? true : V.results.length) === 0) ? (0, r.jsx)(P.Z, {
+              children: U === _.M.FETCHED && (null == V || (null == V ? true : V.results.length) === 0) ? (0, r.jsx)(O.Z, {
                 selectedCategoryId: null != k ? k : X.id,
                 searchAllCategories: () => W(X)
               }) : (0, r.jsx)("div", {
@@ -187,8 +187,8 @@ function T(e) {
               })
             }), (0, r.jsx)(c.DsT, {
               className: N.paginationInput,
-              totalCount: Math.min((null != (t = null == V ? true : V.totalPages) ? t : 0) * O.PAGE_SIZE, O.MAX_PAGES * O.PAGE_SIZE),
-              pageSize: O.PAGE_SIZE,
+              totalCount: Math.min((null != (t = null == V ? true : V.totalPages) ? t : 0) * P.PAGE_SIZE, P.MAX_PAGES * P.PAGE_SIZE),
+              pageSize: P.PAGE_SIZE,
               disablePaginationGap: true,
               hideMaxPage: true,
               currentPage: D,

@@ -203,7 +203,7 @@ let z = function() {
       scrollHeight: r,
       location: a
     } = e;
-    t > 0 && (0, P.zZ)(k.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
+    t > 0 && (0, O.zZ)(k.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })

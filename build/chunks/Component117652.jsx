@@ -250,7 +250,6 @@ function U(e) {
 
   function i() {
     t(), (0, a.pTH)(), (0, c.mK)({
-      openInLayer: false,
       analyticsLocations: n,
       analyticsSource: s.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
     })
@@ -303,7 +302,6 @@ function G(e) {
 
   function o() {
     t(), (0, a.pTH)(), null == n ? (0, c.mK)({
-      openInLayer: false,
       analyticsLocations: i,
       analyticsSource: s.Z.COLLECTIBLES_GIFT_CUSTOMIZATION_MODAL
     }) : (0, b.uL)("".concat(N.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(n))

@@ -160,7 +160,7 @@ let R = {
     },
     [Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
       onTrigger(e, t) {
-        if (!(0, S.I1)(t.shortcut)) return;
+        if (!(0, C.I1)(t.shortcut)) return;
         let n = (0, j.Z)();
         null != n && l.Z.setInputLocked(!T.default.isLocked(n), n)
       },

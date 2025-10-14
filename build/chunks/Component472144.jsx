@@ -22,9 +22,9 @@ let p = Chunk647438.forwardRef((e, t) => {
     percentCompleteText: x,
     percentCompleteTextVariant: g = "text-lg/medium",
     children: j
-  } = e, m = (0, c.E)(n, s > 0), h = o / 2, C = o / 2 - p / 2, b = 2 * Math.PI * C, y = b - s * b, v = {
+  } = e, m = (0, c.E)(n, s > 0), h = o / 2, C = o / 2 - p / 2, b = 2 * Math.PI * C, v = b - s * b, y = {
     strokeDasharray: "".concat(b, " ").concat(b),
-    strokeDashoffset: y
+    strokeDashoffset: v
   }, O = {
     strokeDasharray: "".concat(b, " ").concat(b),
     strokeDashoffset: -s * b
@@ -108,7 +108,7 @@ let p = Chunk647438.forwardRef((e, t) => {
         cx: h,
         cy: h,
         stroke: m.foreground,
-        style: v
+        style: y
       })]
     })]
   })

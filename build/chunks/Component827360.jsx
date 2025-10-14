@@ -43,7 +43,6 @@ let p = e => {
       variant: "primary",
       onClick: () => {
         null == p || p(), (0, s.mK)({
-          openInLayer: false,
           analyticsLocations: f,
           analyticsSource: a.Z.HOME_PAGE_SHOP_TAB,
           tab: c.AW.HOME

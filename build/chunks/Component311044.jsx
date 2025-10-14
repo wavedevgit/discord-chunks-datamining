@@ -31,10 +31,10 @@ function h(e) {
   } = (0, o.KZ)(), {
     mutualFriends: x,
     mutualFriendsCount: O
-  } = (0, c.Z)(t), I = (0, l.Z)();
+  } = (0, c.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
-    (0, u.Z)(t.id, I)
-  }, [t.id, I]), (0, r.jsx)(p.F, {
+    (0, u.Z)(t.id, P)
+  }, [t.id, P]), (0, r.jsx)(p.F, {
     className: m.scroller,
     children: null == x ? Array.from({
       length: null != O ? O : 10

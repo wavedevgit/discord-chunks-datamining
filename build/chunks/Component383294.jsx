@@ -238,7 +238,6 @@ function w(e) {
       sectionType: j.jXE.ORBS_REWARD_MODAL,
       ctaObject: j.qAy.CTA_TO_ORBS_SHOP
     }), (0, p.mK)({
-      openInLayer: false,
       tab: R.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: o.id === v.V6 ? b.Z.INTRO_TO_ORBS_QUEST : b.Z.QUEST_HOME_PAGE

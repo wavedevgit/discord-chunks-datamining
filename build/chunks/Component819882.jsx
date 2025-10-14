@@ -25,15 +25,15 @@ let p = e => {
       icon: C,
       prioritizedCurrency: h,
       onClickAnalytics: _
-    } = e, m = (0, o.Nd)(), b = null == m ? true : m.tab, E = (0, s.sp)(), v = (0, d.J)(t, h), S = (0, c.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
+    } = e, m = (0, s.Nd)(), b = null == m ? true : m.tab, E = (0, o.sp)(), v = (0, d.J)(t, h), O = (0, c.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
     return null != p || null != C ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
       icon: null != C ? C : l.tEF,
       onClick: e => {
-        e.stopPropagation(), null != p ? p(t.skuId) : S(e)
+        e.stopPropagation(), null != p ? p(t.skuId) : O(e)
       }
-    }) : v ? (0, r.jsx)(s.k0, {
+    }) : v ? (0, r.jsx)(o.k0, {
       newValue: {
         pageCategory: b === g.AW.HOME || null == E ? true : E.pageCategory
       },
@@ -52,8 +52,8 @@ let p = e => {
       cardRef: n,
       selectedVariantIndex: l,
       onClick: i,
-      icon: s,
-      prioritizedCurrency: o,
+      icon: o,
+      prioritizedCurrency: s,
       onClickAnalytics: a
     } = e, d = (0, c.LJ)(t);
     if (null == d) return null;
@@ -63,8 +63,8 @@ let p = e => {
       cardRef: n,
       selectedVariantIndex: l,
       onClick: i,
-      icon: s,
-      prioritizedCurrency: o,
+      icon: o,
+      prioritizedCurrency: s,
       onClickAnalytics: a
     })
   }

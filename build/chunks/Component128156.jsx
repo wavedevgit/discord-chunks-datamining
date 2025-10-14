@@ -86,12 +86,12 @@ function A(e) {
       onClose: k
     })
   }
-  return (0, r.jsxs)(P.F, {
+  return (0, r.jsxs)(I.F, {
     className: T.scroller,
     fade: true,
     children: [(() => {
       let e = B && R && !K;
-      return V ? (0, r.jsx)(I.Z, {
+      return V ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: T.cards,
@@ -129,13 +129,13 @@ function A(e) {
             })
           })]
         })
-      }) : e ? (0, r.jsx)(I.Z, {
+      }) : e ? (0, r.jsx)(P.Z, {
         heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
-    })(), q ? (0, r.jsx)(I.Z, {
+    })(), q ? (0, r.jsx)(P.Z, {
       heading: E.intl.string(E.t.jzgEoK),
       introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.Anchor, {

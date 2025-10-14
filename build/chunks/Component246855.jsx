@@ -122,7 +122,6 @@ function I(e) {
       sectionType: v.jXE.ORBS_REWARD_MODAL,
       ctaObject: v.qAy.CTA_TO_ORBS_SHOP
     }), await n(), (0, m.mK)({
-      openInLayer: false,
       tab: E.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: u.Z.QUEST_REWARD_MODAL

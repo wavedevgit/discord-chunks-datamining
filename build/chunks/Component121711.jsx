@@ -184,7 +184,7 @@ function ef(e) {
         children: (0, r.jsx)(ep, {
           onLoadComplete: t
         })
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(C.Z, {
         children: (0, r.jsxs)("div", {
           className: ei.redirectNoticeContainer,
           children: [(0, r.jsx)(d.Heading, {
@@ -269,7 +269,6 @@ let eh = function(e) {
         sectionType: ee.jXE.ORBS_BALANCE_MENU,
         ctaObject: ee.qAy.CTA_TO_ORBS_SHOP
       }), (0, _.mK)({
-        openInLayer: false,
         tab: et.AW.ORBS,
         analyticsLocations: [],
         analyticsSource: h.Z.ORBS_BALANCE_MENU
@@ -334,7 +333,6 @@ let eh = function(e) {
                 variant: "overlay-primary",
                 text: er.intl.string(er.t["1Wm129"]),
                 onClick: () => (0, _.mK)({
-                  openInLayer: false,
                   tab: et.AW.ORBS,
                   analyticsLocations: [],
                   analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
@@ -361,7 +359,7 @@ let eh = function(e) {
             }), (0, r.jsx)(ed, {
               onLoadComplete: ea
             })]
-          }), (0, r.jsx)(S.Z, {
+          }), (0, r.jsx)(C.Z, {
             children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
               onSelectTab: L
             }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})
@@ -402,10 +400,10 @@ let eh = function(e) {
               }), (0, r.jsx)(ed, {
                 onLoadComplete: ea
               })]
-            }), (0, r.jsxs)(S.Z, {
+            }), (0, r.jsxs)(C.Z, {
               children: [(0, r.jsx)("div", {
                 className: ei.tabs,
-                children: (0, r.jsx)(C.Z, {
+                children: (0, r.jsx)(S.Z, {
                   tabs: D,
                   selectedTab: w,
                   onTabSelect: L

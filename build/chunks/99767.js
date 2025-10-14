@@ -19,42 +19,46 @@ let g = {
     [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
     [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
-  f = (e, t) => {
+  f = e => {
     let {
-      enabled: n
-    } = (0, s.WX)({
+      enabled: t
+    } = (0, o.WX)({
       location: "useShopViewTransition"
-    }), i = (0, o.FF)("CollectiblesBrowse"), {
-      setItemTypeFilter: f,
-      reset: p,
-      setCurrentTab: C
-    } = (0, a.S)(), h = r.useMemo(() => e !== u.AW.ORBS || n ? (0, u.RE)(e) && i ? u.AW.CATALOG : e : u.AW.HOME, [e, n, i]), [_, m] = r.useState(h), [b, E] = r.useState(u.f7.VISIBLE);
+    }), n = (0, s.FF)("CollectiblesBrowse"), {
+      setItemTypeFilter: i,
+      reset: f,
+      setCurrentTab: p
+    } = (0, a.S)(), C = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [h, _] = r.useState(C), [m, b] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      C(_)
-    }, [_, C]), r.useEffect(() => {
-      m(h)
-    }, [h]);
-    let {
-      clearError: v
-    } = (0, c.a)(), S = (0, l.k6)(), O = r.useCallback(async (e, n) => {
-      if (v(), e === u.AW.CATALOG) p();
-      else if ((0, u.RE)(e) && e !== _) {
+      p(h)
+    }, [h, p]), r.useEffect(() => {
+      if (_(C), e === u.AW.CATALOG) f();
+      else if ((0, u.RE)(e)) {
         let t = g[e];
-        null != t ? f(t) : p()
+        null != t ? i(t) : f()
       }
-      if (_ === e) return;
-      if (n) {
-        let e;
-        E(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
+    }, [C, e, i, f]);
+    let {
+      clearError: E
+    } = (0, c.a)(), v = (0, l.k6)(), O = r.useCallback(async (e, t) => {
+      if (E(), e === u.AW.CATALOG) f();
+      else if ((0, u.RE)(e) && e !== h) {
+        let t = g[e];
+        null != t ? i(t) : f()
       }
-      let r = i && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
-      m(r), n && E(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(r), {
-        shallow: true
-      }), E(u.f7.VISIBLE)
-    }, [S, t, i, f, p, _, v]);
+      if (h !== e) {
+        if (t) {
+          let e;
+          b(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
+        }
+        _(n && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e), t && b(u.f7.IN), v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
+          shallow: true
+        }), b(u.f7.VISIBLE)
+      }
+    }, [v, i, n, f, h, E]);
     return {
-      selectedTab: _,
-      transitionState: b,
+      selectedTab: h,
+      transitionState: m,
       transitionToTab: O
     }
   }

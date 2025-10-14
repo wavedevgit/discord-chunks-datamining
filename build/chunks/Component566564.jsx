@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk685816 = require("./685816.js"),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
@@ -37,127 +37,122 @@ let I = e => {
       handleTransition: n,
       numVisibleItems: i,
       isFetchingCategories: a,
-      tab: c,
-      isFullScreen: u
+      tab: c
     } = e, {
-      noCache: h,
-      includeUnpublished: x
-    } = (0, _.Z)(), [k, I] = l.useState(false), B = (0, d.sp)(), A = null != (t = null == B ? true : B.sessionId) ? t : "";
+      noCache: u,
+      includeUnpublished: h
+    } = (0, _.Z)(), [S, j] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
     l.useEffect(() => {
       (0, p.n)({
-        sessionId: A,
+        sessionId: B,
         checkpoint: p.a.SHOP_MOUNTED,
         tab: c,
-        isFullScreen: u,
-        unpublishedCategoriesShown: x,
-        cacheDisabled: h
+        unpublishedCategoriesShown: h,
+        cacheDisabled: u
       })
     }, [c]);
     let {
-      isFetchingShopHome: N,
-      fetchShopHomeError: P,
-      shopBlocks: R,
-      refreshShopHome: Z
+      isFetchingShopHome: A,
+      fetchShopHomeError: N,
+      shopBlocks: P,
+      refreshShopHome: R
     } = (0, f.E)(c, {
-      noCache: h,
-      includeUnpublished: x,
+      noCache: u,
+      includeUnpublished: h,
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: A,
-      tab: c,
-      isFullScreen: u
-    }), w = l.useCallback(() => {
-      Z()
-    }, [Z]);
+      sessionId: B,
+      tab: c
+    }), Z = l.useCallback(() => {
+      R()
+    }, [R]);
     return (l.useEffect(() => {
-      null != P || N || 0 === R.length || (0, p.n)({
-        sessionId: A,
+      null != N || A || 0 === P.length || (0, p.n)({
+        sessionId: B,
         checkpoint: p.a.SHOP_RENDERED,
         tab: c,
-        isFullScreen: u,
-        unpublishedCategoriesShown: x,
-        cacheDisabled: h
+        unpublishedCategoriesShown: h,
+        cacheDisabled: u
       })
-    }, [P, N, R.length, x, h, A, c, u]), null != P) ? (0, r.jsx)(C.Z, {
-      onRetry: w,
+    }, [N, A, P.length, h, u, B, c]), null != N) ? (0, r.jsx)(C.Z, {
+      onRetry: Z,
       errorOrigin: C.i.SHOP_PAGE,
-      errorMessage: P.message
-    }) : N || 0 === R.length ? (0, r.jsxs)("div", {
-      className: s()(L.loadingContainer, L.feedContent),
+      errorMessage: N.message
+    }) : A || 0 === P.length ? (0, r.jsxs)("div", {
+      className: o()(L.loadingContainer, L.feedContent),
       children: [(0, r.jsx)(v.Z, {
-        isLoading: N,
+        isLoading: A,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(b.Z, {
-        isLoading: N,
+        isLoading: A,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(E.Z, {
-        isLoading: N,
-        title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+        isLoading: A,
+        title: c === k.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
         numVisibleItems: i,
         tab: c
       })]
     }) : (0, r.jsx)(r.Fragment, {
-      children: R.map((e, t) => ((e, t, l) => {
+      children: P.map((e, t) => ((e, t, l) => {
         if (null == e) return null;
-        let d = null,
-          f = false;
+        let u = null,
+          d = false;
         switch (e.type) {
-          case o.z.HERO:
-            d = (0, r.jsx)(v.Z, {
-              isLoading: N,
+          case s.z.HERO:
+            u = (0, r.jsx)(v.Z, {
+              isLoading: A,
               handleTransition: n,
               heroBlock: e,
               tab: c
             }, l);
             break;
-          case o.z.FEATURED:
-            d = (0, r.jsx)(b.Z, {
-              isLoading: N,
+          case s.z.FEATURED:
+            u = (0, r.jsx)(b.Z, {
+              isLoading: A,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
             break;
-          case o.z.FEED:
-            let p = e.sortedSkuIds;
-            d = (0, r.jsx)(E.Z, {
-              title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
-              isLoading: N || a,
+          case s.z.FEED:
+            let f = e.sortedSkuIds;
+            u = (0, r.jsx)(E.Z, {
+              title: c === k.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+              isLoading: A || a,
               numVisibleItems: i,
-              sortedSkuIds: p,
-              buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
-              prioritizeUserDiscounts: c === j.AW.HOME,
+              sortedSkuIds: f,
+              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
+              prioritizeUserDiscounts: c === k.AW.HOME,
               tab: c,
-              orbsSupportedOnly: c === j.AW.ORBS
+              orbsSupportedOnly: c === k.AW.ORBS
             }, l);
             break;
-          case o.z.WIDE_BANNER:
-            d = (0, r.jsx)(y.Z, {
+          case s.z.WIDE_BANNER:
+            u = (0, r.jsx)(y.Z, {
               handleTransition: n,
               wideBannerBlock: e,
               tab: c
             }, l);
             break;
-          case o.z.SHELF:
-            d = (0, r.jsx)(O.Z, {
+          case s.z.SHELF:
+            u = (0, r.jsx)(x.Z, {
               handleTransition: n,
               shelf: e,
               tab: c
             }, l);
             break;
-          case o.z.COUNTDOWN_TIMER:
-            d = (0, r.jsx)(m.J, {
+          case s.z.COUNTDOWN_TIMER:
+            u = (0, r.jsx)(m.J, {
               countdownTimerBlock: e,
-              isVisible: k,
-              isFullScreen: u
-            }, l), f = true;
+              isVisible: S
+            }, l), d = true;
             break;
-          case o.z.IMMERSIVE_BANNER:
-            d = (0, r.jsx)(S.Z, {
+          case s.z.IMMERSIVE_BANNER:
+            u = (0, r.jsx)(O.Z, {
               immersiveBannerBlock: e,
-              onVisibilityChange: e => I(!e)
+              onVisibilityChange: e => j(!e)
             }, l);
             break;
           default:
@@ -166,51 +161,49 @@ let I = e => {
         return (0, r.jsx)(g.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
-            className: s()(L.blockContainer, L.feedContent, {
-              [L.skipPadding]: 0 === l || f
+            className: o()(L.blockContainer, L.feedContent, {
+              [L.skipPadding]: 0 === l || d
             }),
-            children: d
+            children: u
           }, l)
         })
-      })(e, t > 0 ? R[t - 1] : null, t))
+      })(e, t > 0 ? P[t - 1] : null, t))
     })
   },
   B = e => {
     let {
-      isFullScreen: t,
-      handleTransition: n,
-      tab: i,
-      transitionState: s
+      handleTransition: t,
+      tab: n,
+      transitionState: i
     } = e, o = l.useRef(null), {
-      handleScroll: g
-    } = (0, c.z)(o, i), f = (0, h.R)(), p = (0, d.sp)(), [C, _] = l.useState(j.IV), [m, b] = l.useState(false);
+      handleScroll: s
+    } = (0, c.z)(o, n), g = (0, h.R)(), f = (0, d.sp)(), [p, C] = l.useState(k.IV), [_, m] = l.useState(false);
     return l.useEffect(() => {
       if (null != o.current) {
         let e = () => {
             if (null == o.current) return;
             let e = o.current.getDistanceFromBottom();
-            C >= 36 ? b(e < 20) : e <= 200 && _(e => e + j.IV)
+            p >= 36 ? m(e < 20) : e <= 200 && C(e => e + k.IV)
           },
           t = o.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [o, C, _, b]), (0, r.jsx)(a.Den, {
+    }, [o, p, C, m]), (0, r.jsx)(a.Den, {
       className: L.shopScroll,
       ref: o,
-      onScroll: g,
+      onScroll: s,
       children: (0, r.jsxs)("div", {
         className: L.shop,
         children: [(0, r.jsxs)("div", {
           className: L.mainContent,
           children: [(0, r.jsx)(I, {
-            handleTransition: n,
-            numVisibleItems: C,
-            isFetchingCategories: f,
-            tab: i,
-            isFullScreen: t
-          }), i !== j.AW.CATALOG && C >= 36 && (0, r.jsxs)("div", {
+            handleTransition: t,
+            numVisibleItems: p,
+            isFetchingCategories: g,
+            tab: n
+          }), n !== k.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
             className: L.endOfFeed,
             children: [(0, r.jsx)(a.Heading, {
               variant: "heading-md/semibold",
@@ -219,27 +212,25 @@ let I = e => {
               variant: "primary",
               text: T.intl.string(T.t.AfrvRE),
               onClick: () => {
-                n("shop all button", true, true), u.default.track(k.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == p ? true : p.sessionId,
-                  page_type: i,
-                  page_category: i === j.AW.HOME || null == p ? true : p.pageCategory,
+                t("shop all button", true, true), u.default.track(j.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                  collectibles_shop_session_id: null == f ? true : f.sessionId,
+                  page_type: n,
+                  page_category: n === k.AW.HOME || null == f ? true : f.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },
               fullWidth: true
             })]
           })]
-        }), !t && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(x.Z, {
-            peaking: m,
-            transitioning: s === j.f7.OUT
-          }), (0, r.jsx)(x.Z, {
-            style: {
-              left: 1850
-            },
-            peaking: m,
-            transitioning: s === j.f7.OUT
-          })]
+        }), (0, r.jsx)(S.Z, {
+          peaking: _,
+          transitioning: i === k.f7.OUT
+        }), (0, r.jsx)(S.Z, {
+          style: {
+            left: 1850
+          },
+          peaking: _,
+          transitioning: i === k.f7.OUT
         })]
       })
     })

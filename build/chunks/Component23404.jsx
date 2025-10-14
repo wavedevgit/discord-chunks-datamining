@@ -121,7 +121,7 @@ function A(e) {
   }), U = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, G = (null == (n = b.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(b), H = (0, m.DD)({
     quest: b,
     taskDetails: B,
-    location: C.dr.ACTIVITY_PANEL,
+    location: S.dr.ACTIVITY_PANEL,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
   }), V = (0, d.Rt)(b), F = (0, m.CR)({
@@ -182,12 +182,12 @@ function A(e) {
           children: H
         })
       })]
-    }), U && !G && (0, r.jsx)(S.Z, {
+    }), U && !G && (0, r.jsx)(C.Z, {
       autoplay: T,
       className: j.rewardTileWithInstructions,
       quest: b,
       questContent: g.jn.ACTIVITY_PANEL,
-      location: C.dr.ACTIVITY_PANEL,
+      location: S.dr.ACTIVITY_PANEL,
       taskDetails: B,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {

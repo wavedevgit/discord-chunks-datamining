@@ -34,14 +34,14 @@ function b(e) {
   }, [b.id, _]), {
     acceptMessageRequest: y,
     isAcceptLoading: I,
-    isUserProfileLoading: S,
-    isOptimisticAccepted: C
+    isUserProfileLoading: C,
+    isOptimisticAccepted: S
   } = (0, p.m)({
     user: n,
     onAcceptSuccess: v,
     onRejectSuccess: E,
     onError: O
-  }), T = I || S, N = T || C;
+  }), T = I || C, N = T || S;
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(f.Z, {

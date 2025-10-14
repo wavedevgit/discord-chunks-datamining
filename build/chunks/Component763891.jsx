@@ -41,96 +41,93 @@ function R(e) {
   var t;
   let {
     isFetchingCategories: n,
-    isFullScreen: R,
-    scrollerRef: Z,
-    tab: w
-  } = e, H = (0, g.sp)(), F = null != (t = null == H ? true : H.sessionId) ? t : "", {
+    scrollerRef: R,
+    tab: Z
+  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: D,
     includeUnpublished: M
-  } = (0, S.Z)(), W = (0, s.e7)([u.default], () => u.default.getCurrentUser()), U = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [V, z] = l.useState(1), G = (0, c.Fg)(), K = (0, o.ap)(G), [Y, q, Q] = l.useMemo(() => {
-    switch (w) {
-      case O.AW.AVATAR_DECORATIONS:
-        return [y.intl.string(y.t.dRZYND), K ? I.Z : L.Z, i.Z.AVATAR_DECORATION];
-      case O.AW.PROFILE_EFFECTS:
-        return [y.intl.string(y.t["1cNjt7"]), K ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
-      case O.AW.NAMEPLATES:
-        return [y.intl.string(y.t.V68Fq6), K ? A.Z : B.Z, i.Z.NAMEPLATE];
-      case O.AW.BUNDLES:
-        return [y.intl.string(y.t.FYFppq), K ? T.Z : k.Z, i.Z.BUNDLE]
+  } = (0, O.Z)(), F = (0, o.e7)([u.default], () => u.default.getCurrentUser()), W = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
+    switch (Z) {
+      case x.AW.AVATAR_DECORATIONS:
+        return [y.intl.string(y.t.dRZYND), G ? I.Z : L.Z, i.Z.AVATAR_DECORATION];
+      case x.AW.PROFILE_EFFECTS:
+        return [y.intl.string(y.t["1cNjt7"]), G ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
+      case x.AW.NAMEPLATES:
+        return [y.intl.string(y.t.V68Fq6), G ? A.Z : B.Z, i.Z.NAMEPLATE];
+      case x.AW.BUNDLES:
+        return [y.intl.string(y.t.FYFppq), G ? T.Z : j.Z, i.Z.BUNDLE]
     }
-  }, [w, K]), J = (0, C.a)(), X = l.useMemo(() => J(U.filter(e => {
+  }, [Z, G]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
-    return e.type === Q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === Q)) === true
-  })), [U, Q, J]), $ = (0, h.l)(X);
+    return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
+  })), [W, q, Q]), X = (0, h.l)(J);
   l.useEffect(() => {
     (0, _.n)({
-      sessionId: F,
+      sessionId: H,
       checkpoint: _.a.SHOP_MOUNTED,
-      tab: w,
-      isFullScreen: R,
+      tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: F,
+      sessionId: H,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: w,
-      isFullScreen: R,
+      tab: Z,
       unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
-  }, [F, R, M, D, n, w]);
-  let ee = p.Z.useConfig({
+  }, [H, M, D, n, Z]);
+  let $ = p.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
-  return n || null == W ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return n || null == F ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
-        backgroundImage: "url(".concat(q, ")")
+        backgroundImage: "url(".concat(Y, ")")
       },
-      className: j.bannerContainer,
+      className: k.bannerContainer,
       children: (0, r.jsx)(a.Heading, {
         variant: "heading-xxl/extrabold",
-        children: Y
+        children: K
       })
     }), (0, r.jsx)("div", {
-      className: j.products,
-      children: $.slice(40 * (V - 1), 40 * V).map((e, t) => {
+      className: k.products,
+      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => {
         let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: ee ? (0, r.jsx)(E.Z, {
+          children: $ ? (0, r.jsx)(E.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, v.wO)(e, w, H)
+            onClickAnalytics: (0, v.wO)(e, Z, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
-            user: W,
+            user: F,
             category: n,
-            tab: w
+            tab: Z
           }, e.skuId)
         }, e.skuId)
       })
-    }), $.length > 40 && (0, r.jsx)("div", {
-      className: j.paginationContainer,
+    }), X.length > 40 && (0, r.jsx)("div", {
+      className: k.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
-          currentPage: V,
-          totalCount: $.length,
+          currentPage: U,
+          totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == H ? true : H.sessionId,
-              page_section: null == H ? true : H.pageSection,
-              page_category: null == H ? true : H.pageCategory,
+            d.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == w ? true : w.sessionId,
+              page_section: null == w ? true : w.pageSection,
+              page_category: null == w ? true : w.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(w, " page ").concat(e),
-              page_type: w
-            }), z(e), null == Z || null == (t = Z.current) || t.scrollToTop({
+              cta_name: "".concat(Z, " page ").concat(e),
+              page_type: Z
+            }), V(e), null == R || null == (t = R.current) || t.scrollToTop({
               animate: true
             })
           },

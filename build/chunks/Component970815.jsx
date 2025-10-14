@@ -1,7 +1,7 @@
 /** Chunk was on 93964 **/
 /** chunk id: 970815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  A4: () => p,
+  A4: () => O,
   b6: () => Chunk317257.b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -14,59 +14,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
   Chunk647917 = require("./647917.js");
-let O = () => (0, Chunk951288.jsx)("img", {
+let p = () => (0, Chunk951288.jsx)("img", {
     className: Chunk647917.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),
-  p = (0, Chunk647438.forwardRef)(function(e, t) {
+  O = (0, Chunk647438.forwardRef)(function(e, t) {
     let {
       id: r,
       balance: l,
-      balanceWidgetMode: p = i.b.DEFAULT,
+      balanceWidgetMode: O = i.b.DEFAULT,
       showNotificationBadge: y,
-      onClick: g,
-      onMouseDown: j,
-      disabled: d,
+      onClick: j,
+      onMouseDown: d,
+      disabled: g,
       isInModalOverlay: m,
       className: v
-    } = e, [P, h] = (0, o.useState)(false), w = (0, o.useMemo)(() => p === i.b.SELECTED ? f.selected : P ? f.highlighted : f.default, [p, P]), [S, D] = (0, o.useState)(false), [C, x] = (0, o.useState)(false), [E, k] = (0, o.useState)(.9 * c.D2), L = null === l;
+    } = e, [P, h] = (0, o.useState)(false), w = (0, o.useMemo)(() => O === i.b.SELECTED ? f.selected : P ? f.highlighted : f.default, [O, P]), [D, S] = (0, o.useState)(false), [x, C] = (0, o.useState)(false), [E, k] = (0, o.useState)(.9 * c.D2), R = null === l;
     (0, o.useEffect)(() => {
-      L && !S && (D(true), setTimeout(() => {
-        x(true)
+      R && !D && (S(true), setTimeout(() => {
+        C(true)
       }, 500))
-    }, [L, D, S]), (0, o.useEffect)(() => {
-      C && !L && D(false)
-    }, [L, C]);
-    let R = L || S,
-      M = S ? null : l,
-      [N, A] = (0, o.useState)(null),
+    }, [R, S, D]), (0, o.useEffect)(() => {
+      x && !R && S(false)
+    }, [R, x]);
+    let M = R || D,
+      N = D ? null : l,
+      [L, A] = (0, o.useState)(null),
       Z = (0, o.useRef)(null),
       T = (0, o.useCallback)(() => {
         Z.current = null, A(null)
       }, []),
       F = (0, o.useCallback)(e => {
-        let t = N === Z.current;
-        e > 0 && ("earn" !== N || !t) && A("earn")
-      }, [A, N]);
+        let t = L === Z.current;
+        e > 0 && ("earn" !== L || !t) && A("earn")
+      }, [A, L]);
     return (0, n.jsx)(a.P3F, {
-      onClick: R ? true : g,
+      onClick: M ? true : j,
       className: u()(f.clickable, {
-        [f.disabled]: d
+        [f.disabled]: g
       }),
       id: null != r ? r : "balance-widget-pill",
       children: (0, n.jsxs)("span", {
-        onMouseDown: j,
-        onMouseEnter: d ? true : () => h(true),
-        onMouseLeave: d ? true : () => h(false),
+        onMouseDown: d,
+        onMouseEnter: g ? true : () => h(true),
+        onMouseLeave: g ? true : () => h(false),
         ref: t,
         className: u()(f.container, w, v, {
-          [f.containerLoading]: R,
+          [f.containerLoading]: M,
           [f.inModalOverlay]: m,
-          [f.disabled]: d
+          [f.disabled]: g
         }),
         children: [(0, n.jsx)("div", {
-          className: u()(f.orbsLottieContainer, R ? f.orbIconloading : true),
+          className: u()(f.orbsLottieContainer, M ? f.orbIconloading : true),
           children: (0, n.jsx)(b.ZP, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -85,17 +85,17 @@ let O = () => (0, Chunk951288.jsx)("img", {
             }
             return e
           }({}, {
-            currentAnimationType: N,
+            currentAnimationType: L,
             animationTypeRef: Z,
             onSetAnimationDurationMS: k
           }))
         }), (0, n.jsx)(s.Z, {
-          value: M,
+          value: N,
           onValueChange: F,
           onValueReached: T,
           targetTotalCounterTime: E,
-          className: R ? f.counterLoading : true
-        }), y && (0, n.jsx)(O, {})]
+          className: M ? f.counterLoading : true
+        }), y && (0, n.jsx)(p, {})]
       })
     })
   })

@@ -105,7 +105,6 @@ function w(e) {
         onClick: () => {
           (0, f.mK)({
             analyticsLocations: a,
-            openInLayer: false,
             analyticsSource: o
           }), null == i || i()
         }
