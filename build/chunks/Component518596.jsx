@@ -74,31 +74,32 @@ function g(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let E = "USER_SETTINGS_MODAL_MODAL_KEY",
-  b = function() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk313789.n.ACCOUNT_PANEL,
-      t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
-        section: Chunk981631.oAB.ACCOUNT
-      };
-    var {
-      subsection: s
-    } = exports, l = m(exports, ["subsection"]);
-    Chunk570140.Z.dispatch(_({
-      type: "USER_SETTINGS_MODAL_OPEN",
-      subsection: null != Chunk230711 ? Chunk230711 : null
-    }, Chunk626135)), (0, Chunk526665.yP)("openUserSettings") ? (0, Chunk481060.ZDy)(async () => {
-      let {
-        default: t
-      } = await Promise.all([require.e("9452"), require.e("75685")]).then(require.bind(require, 245286));
-      return n => (0, r.jsx)(t, h(_({}, n), {
-        target: e
-      }))
-    }, {
-      modalKey: E,
-      stackingBehavior: "replaceAll",
-      stackNextByDefault: true
-    }) : (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS)
-  };
+let E = "USER_SETTINGS_MODAL_MODAL_KEY";
+async function b() {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk313789.n.ACCOUNT_PANEL,
+    t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
+      section: Chunk981631.oAB.ACCOUNT
+    },
+    s = arguments.length > 2 ? arguments[2] : true;
+  var {
+    subsection: l
+  } = exports, f = m(exports, ["subsection"]);
+  Chunk570140.Z.dispatch(_({
+    type: "USER_SETTINGS_MODAL_OPEN",
+    subsection: null != Chunk626135 ? Chunk626135 : null
+  }, f)), (0, Chunk526665.yP)("openUserSettings") ? await (0, Chunk481060.ZDy)(async () => {
+    let {
+      default: t
+    } = await Promise.all([require.e("9452"), require.e("75685")]).then(require.bind(require, 245286));
+    return n => (0, r.jsx)(t, h(_({}, n), {
+      target: e
+    }))
+  }, {
+    modalKey: E,
+    stackingBehavior: "replaceAll",
+    stackNextByDefault: true
+  }) : (0, Chunk37234.jN)(Chunk981631.S9g.USER_SETTINGS), null == Chunk230711 || Chunk230711()
+}
 
 function y(e) {
   let {
