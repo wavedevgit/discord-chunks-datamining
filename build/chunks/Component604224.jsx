@@ -27,7 +27,8 @@ function E() {
   } = (0, Chunk906732.ZP)([Chunk100527.Z.USER_SETTINGS_VOICE_AND_VIDEO]), t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), n = [{
     title: Chunk388032.intl.string(Chunk388032.t.K3lovD),
     component: Chunk674116.Z,
-    setting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE_TAB
+    setting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE_TAB,
+    subsection: Chunk526761.CO
   }, {
     title: Chunk388032.intl.string(Chunk388032.t.FlNoSV),
     component: Chunk167540.Z,

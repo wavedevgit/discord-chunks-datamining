@@ -1,7 +1,7 @@
 /** Chunk was on 18831 **/
 /** chunk id: 41164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,14 +13,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk726985 = require("./726985.js"),
   Chunk22860 = require("./22860.js");
-let m = e => {
+let p = e => {
   let {
     transitionState: t,
     onClose: n,
-    classificationId: m,
-    source: p
-  } = e, f = (0, r.Z)(), h = () => {
-    n(), (0, o.openUserSettings)(l.n.ACCOUNT_PANEL, {
+    classificationId: p,
+    source: m
+  } = e, f = (0, s.Z)(), h = () => {
+    n(), (0, l.openUserSettings)(o.n.ACCOUNT_PANEL, {
       section: c.oAB.ACCOUNT,
       subsection: d.s6.PRIVACY_AND_SAFETY_STANDING
     })
@@ -40,9 +40,9 @@ let m = e => {
     }), (0, i.jsx)(a.hzk, {
       "data-migration-pending": true,
       className: u.modalContent,
-      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(s.Z, {
-        classificationId: m,
-        source: p,
+      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(r.Z, {
+        classificationId: p,
+        source: m,
         onError: h,
         onClose: h
       })

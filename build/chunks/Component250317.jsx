@@ -1,7 +1,7 @@
 /** Chunk was on 84802 **/
-/** chunk id: 250317, original params: n,e,t (module,exports,require) **/
+/** chunk id: 250317, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,113 +10,184 @@ var Chunk951288 = require("./951288.js"),
   Chunk55563 = require("./55563.js"),
   Chunk937615 = require("./937615.js"),
   Chunk73346 = require("./73346.js"),
+  Chunk411935 = require("./411935.js"),
+  Chunk210218 = require("./210218.js"),
   Chunk594914 = require("./594914.jsx"),
+  Chunk939716 = require("./939716.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk424215 = require("./424215.js");
 
-function f(n) {
-  var e, t, a, i;
+function C(e) {
+  var t, a, l, r;
   let {
-    sku: r
-  } = n;
-  if (null == r) return null;
-  let c = (0, s.T4)(null != (a = null == (e = r.price) ? true : e.amount) ? a : 0, null != (i = null == (t = r.price) ? true : t.currency) ? i : u.pK.USD);
-  return (0, l.jsxs)("div", {
-    className: x.detailsContainer,
-    children: [(0, l.jsxs)("div", {
-      className: x.titleDescriptionContainer,
-      children: [(0, l.jsx)(o.Heading, {
+    sku: o
+  } = e;
+  if (null == o) return null;
+  let c = (0, s.T4)(null != (l = null == (t = o.price) ? true : t.amount) ? l : 0, null != (r = null == (a = o.price) ? true : a.currency) ? r : g.pK.USD);
+  return (0, n.jsxs)("div", {
+    className: h.detailsContainer,
+    children: [(0, n.jsxs)("div", {
+      className: h.titleDescriptionContainer,
+      children: [(0, n.jsx)(i.Heading, {
         variant: "heading-xl/bold",
         color: "header-primary",
         lineClamp: 2,
-        children: r.name
-      }), (0, l.jsx)(o.Text, {
+        children: o.name
+      }), (0, n.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: r.description
+        children: o.description
       })]
-    }), (0, l.jsx)(o.Heading, {
+    }), (0, n.jsx)(i.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: c
-    }), (0, l.jsxs)("div", {
-      className: x.buttonsContainer,
-      children: [(0, l.jsx)(o.Button, {
+    }), (0, n.jsxs)("div", {
+      className: h.buttonsContainer,
+      children: [(0, n.jsx)(i.Button, {
         variant: "primary",
         onClick: () => {
-          (0, d.P)(r, {
+          (0, m.P)(o, {
             isGift: false
           })
         },
-        text: m.intl.string(m.t.boqtTA),
+        text: b.intl.string(b.t.boqtTA),
         fullWidth: true
-      }), (0, l.jsx)(o.Button, {
-        icon: o.OgN,
+      }), (0, n.jsx)(i.Button, {
+        icon: i.OgN,
         variant: "secondary",
         onClick: () => {
-          (0, d.P)(r, {
+          (0, m.P)(o, {
             isGift: true
           })
         },
-        text: m.intl.string(m.t.QAZA5f),
+        text: b.intl.string(b.t.QAZA5f),
         fullWidth: true
       })]
     })]
   })
 }
 
-function C(n) {
+function _(e) {
+  var t, a, l;
   let {
-    socialLayerTenantMetadata: e,
-    selectedCarouselItemIndex: t,
-    applicationId: a
-  } = n;
-  if (null == e || e.carouselItems.length <= t) return null;
-  let i = e.carouselItems[t];
-  if (null == i) return null;
-  let r = null != i.labelIconAssetId ? (0, c._W)(a, i.labelIconAssetId) : null;
-  return (0, l.jsxs)("div", {
-    className: x.labelIconContainer,
-    children: [null != r && (0, l.jsx)("img", {
-      className: x.labelIcon,
-      src: r,
-      alt: i.label
-    }), (0, l.jsx)(o.Text, {
+    sku: r,
+    applicationId: i,
+    storefront: o
+  } = e;
+  if (null == r) return null;
+  let s = null == (a = r.tenantMetadata) || null == (t = a.socialLayer) ? true : t.carouselItems;
+  if (null == s || 0 === s.length) return null;
+  let u = (l = o.assets, null == s || 0 === s.length ? [] : s.map(e => {
+    let t = null != e.assetId ? l[e.assetId] : null;
+    return null == t ? null : t.mime_type.startsWith("video/") ? {
+      type: "video",
+      src: (0, c._W)(i, t, p.Q, "mp4"),
+      videoThumbnailSrc: (0, c._W)(i, t, p.Q, "webp"),
+      thumbnailSrc: null != e.thumbnailAssetId ? (0, c._W)(i, e.thumbnailAssetId, p.Q, "webp") : true,
+      backgroundSrc: null != e.backgroundAssetId ? (0, c._W)(i, e.backgroundAssetId, p.Q, "webp") : true
+    } : {
+      type: "image",
+      src: (0, c._W)(i, t, p.Q, "webp"),
+      thumbnailSrc: null != e.thumbnailAssetId ? (0, c._W)(i, e.thumbnailAssetId, p.Q, "webp") : true,
+      backgroundSrc: null != e.backgroundAssetId ? (0, c._W)(i, e.backgroundAssetId, p.Q, "webp") : true
+    }
+  }).filter(e => null != e));
+  return 0 === u.length ? null : (0, n.jsx)(p.Z, {
+    className: h.carousel,
+    items: u,
+    paused: true
+  })
+}
+
+function f(e) {
+  let {
+    socialLayerTenantMetadata: t,
+    selectedCarouselItemIndex: a,
+    applicationId: l
+  } = e;
+  if (null == t || t.carouselItems.length <= a) return null;
+  let r = t.carouselItems[a];
+  if (null == r) return null;
+  let o = null != r.labelIconAssetId ? (0, c._W)(l, r.labelIconAssetId) : null;
+  return (0, n.jsxs)("div", {
+    className: h.labelIconContainer,
+    children: [null != o && (0, n.jsx)("img", {
+      className: h.labelIcon,
+      src: o,
+      alt: r.label
+    }), (0, n.jsx)(i.Text, {
       variant: "text-xs/medium",
       color: "text-primary",
-      children: i.label
+      children: r.label
     })]
   })
 }
 
-function h(n) {
-  var e, t;
+function v(e) {
+  let {
+    onClick: t,
+    children: a,
+    "aria-label": l
+  } = e;
+  return (0, n.jsx)(i.P3F, {
+    onClick: t,
+    className: h.modalHeaderButton,
+    "aria-label": l,
+    role: "button",
+    children: a
+  })
+}
+
+function I(e) {
+  var t, a;
   let {
     transitionState: s,
     returnRef: c,
-    skuId: d,
-    applicationId: u
-  } = n, m = (0, i.e7)([r.Z], () => r.Z.get(d)), h = null == m || null == (e = m.tenantMetadata) ? true : e.socialLayer, [p, _] = a.useState(0);
-  return null == h ? null : (0, l.jsx)(o.Y0X, {
+    skuId: m,
+    applicationId: p,
+    guildId: g,
+    onClose: I
+  } = e, x = (0, r.e7)([d.Z], () => d.Z.getStorefrontData(g), [g]), j = (0, r.e7)([o.Z], () => o.Z.get(m)), y = null == j || null == (t = j.tenantMetadata) ? true : t.socialLayer, [k, P] = l.useState(0);
+  return (l.useEffect(() => {
+    null == x && (0, u.Y)(g)
+  }, [g, x]), null == y || null == x || null == x.storefront) ? null : (0, n.jsx)(i.Y0X, {
     transitionState: s,
     "hide-shadow": true,
     parentComponent: "SocialLayerStorefrontProductDetailsModal",
-    className: x.modalRoot,
-    size: o.CgR.DYNAMIC,
+    className: h.modalRoot,
+    size: i.CgR.DYNAMIC,
     returnRef: c,
-    children: (0, l.jsx)(o.hzk, {
-      className: x.modalContent,
-      children: (0, l.jsxs)("div", {
-        className: x.infoContainer,
-        children: [(0, l.jsx)(C, {
-          applicationId: u,
-          socialLayerTenantMetadata: null == m || null == (t = m.tenantMetadata) ? true : t.socialLayer,
-          selectedCarouselItemIndex: p
-        }), (0, l.jsx)(f, {
-          sku: m
+    children: (0, n.jsxs)(i.hzk, {
+      className: h.modalContent,
+      children: [(0, n.jsxs)("div", {
+        className: h.infoContainer,
+        children: [(0, n.jsx)(f, {
+          applicationId: p,
+          socialLayerTenantMetadata: null == j || null == (a = j.tenantMetadata) ? true : a.socialLayer,
+          selectedCarouselItemIndex: k
+        }), (0, n.jsx)(C, {
+          sku: j
         })]
-      })
+      }), (0, n.jsxs)("div", {
+        className: h.carouselContainer,
+        children: [(0, n.jsx)(_, {
+          sku: j,
+          applicationId: p,
+          storefront: x.storefront
+        }), (0, n.jsx)("div", {
+          className: h.modalHeaderButtonsContainer,
+          children: (0, n.jsx)(v, {
+            onClick: I,
+            "aria-label": b.intl.string(b.t.cpT0Cq),
+            children: (0, n.jsx)(i.Dio, {
+              size: "md",
+              color: "currentColor"
+            })
+          })
+        })]
+      })]
     })
   })
 }

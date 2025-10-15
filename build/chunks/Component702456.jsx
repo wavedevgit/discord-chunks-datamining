@@ -108,32 +108,32 @@ function T() {
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), f = (0, Chunk393903.y)(e => {
-    if (null == e.target) return;
-    let t = e.target;
-    c({
-      scrollLeft: t.scrollLeft,
-      scrollWidth: t.scrollWidth,
-      clientWidth: t.clientWidth
+  }), f = Chunk647438.useRef(null), h = Chunk647438.useCallback(() => {
+    var e;
+    let t = null == (e = Chunk518950.current) ? true : module.getScrollerNode();
+    null != exports && Chunk493683({
+      scrollLeft: exports.scrollLeft,
+      scrollWidth: exports.scrollWidth,
+      clientWidth: exports.clientWidth
     })
-  }, [Chunk493683]);
-  if (Chunk647438.useEffect(() => {
-      let e = Chunk518950.current;
-      if (null != module) {
-        let t = setTimeout(() => {
-          Chunk493683({
-            scrollLeft: module.scrollLeft,
-            scrollWidth: module.scrollWidth,
-            clientWidth: module.clientWidth
-          })
-        }, 0);
-        return () => clearTimeout(exports)
-      }
-    }, [exports, Chunk518950]), !module || null == exports || !require) return null;
+  }, []);
+  Chunk647438.useEffect(() => {
+    (null == exports ? true : exports.frequentFriends.length) != null && Chunk592125()
+  }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk592125]);
+  let m = (0, Chunk393903.y)(Chunk592125, []),
+    _ = Chunk647438.useCallback(e => {
+      let t = e.currentTarget;
+      c({
+        scrollLeft: t.scrollLeft,
+        scrollWidth: t.scrollWidth,
+        clientWidth: t.clientWidth
+      })
+    }, [Chunk493683]);
+  if (!module || null == exports || !require) return null;
   let {
-    frequentFriends: h,
-    showCompetitiveSpot: m
-  } = exports, _ = Chunk120356.scrollWidth > Chunk120356.clientWidth, T = Chunk120356.scrollLeft > 0, N = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth;
+    frequentFriends: T,
+    showCompetitiveSpot: N
+  } = exports, j = Chunk120356.scrollWidth > Chunk120356.clientWidth, P = Chunk120356.scrollLeft > 0, x = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk944658.frequentFriendsRow,
@@ -179,18 +179,20 @@ function T() {
             }), t))
           }
         })]
-      }), (0, Chunk951288.jsx)(Chunk481060.u2D, {
-        ref: Chunk518950,
+      }), (0, Chunk951288.jsx)(Chunk481060.xVE, {
+        ref: e => {
+          f.current = e, m.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+        },
         className: a()(Chunk944658.frequentFriendsAvatars, {
-          [Chunk944658.scrollMaskLeft]: Chunk111583 && T,
-          [Chunk944658.scrollMaskRight]: Chunk111583 && N
+          [Chunk944658.scrollMaskLeft]: j && P,
+          [Chunk944658.scrollMaskRight]: j && x
         }),
-        paddingFix: false,
         orientation: "horizontal",
-        children: Chunk592125.map((e, t) => (0, r.jsx)(S, {
+        onScroll: Chunk111583,
+        children: T.map((e, t) => (0, r.jsx)(S, {
           user: e,
           isFirst: 0 === t,
-          isCompetitive: t === h.length - 1 && m
+          isCompetitive: t === T.length - 1 && N
         }, e.id))
       })]
     }), (0, Chunk951288.jsx)(Chunk663701.d, {})]

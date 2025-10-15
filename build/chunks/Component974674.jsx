@@ -336,15 +336,15 @@ let M = {
   "\uD83D\uDD25": "M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"
 };
 
-function j(e, t, n, i) {
-  let a = M[i];
-  if (null != a) {
+function j(e, t, n, i, a) {
+  let o = M[i];
+  if (null != o) {
     let i = n / 20;
     return (0, r.jsx)("g", {
       transform: "translate(".concat(e - 1, ", ").concat(t - 1, ") scale(").concat(i, ")"),
       children: (0, r.jsx)("path", {
-        d: a,
-        fill: "none",
+        d: o,
+        fill: "black",
         stroke: "black",
         strokeWidth: "10",
         strokeLinejoin: "round",
@@ -352,13 +352,14 @@ function j(e, t, n, i) {
       })
     })
   }
-  let o = n / 2,
-    s = e + o,
-    l = t + o;
-  return (0, r.jsx)("circle", {
-    cx: s,
-    cy: l,
-    r: 1.5 * o,
+  let s = L(a, false, false);
+  return (0, r.jsx)("rect", {
+    x: s.avatarCutoutX,
+    y: 0 - a.stroke,
+    width: s.avatarCutoutWidth,
+    height: s.avatarCutoutHeight,
+    rx: s.avatarCutoutRadius - 1,
+    ry: s.avatarCutoutRadius - 1,
     fill: "black"
   })
 }
@@ -386,7 +387,7 @@ function k(e, t, n, i) {
       rx: u.avatarCutoutRadius,
       ry: u.avatarCutoutRadius,
       fill: "black"
-    }), null != i && j(l, c, t.status, i)]
+    }), null != i && j(l, c, t.status, i, t)]
   })
 }
 
@@ -762,7 +763,7 @@ function W(e) {
           height: ei,
           rx: ea,
           ry: ea
-        }), null != W && j(ec.size - ec.status - ec.offset, ec.offset, ec.status, W)]
+        }), null != W && j(ec.size - ec.status - ec.offset, ec.offset, ec.status, W, ec)]
       }), (0, r.jsx)("foreignObject", {
         className: b.__invalid_foreignObject,
         x: 0,

@@ -11,7 +11,8 @@ let r = "social-layer-storefront-product-details-modal",
     let {
       skuId: t,
       applicationId: i,
-      onClose: o
+      guildId: o,
+      onClose: d
     } = e;
     (0, l.ZDy)(async () => {
       let {
@@ -38,7 +39,8 @@ let r = "social-layer-storefront-product-details-modal",
           return e
         }({}, n), r = r = {
           skuId: t,
-          applicationId: i
+          applicationId: i,
+          guildId: o
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -53,7 +55,7 @@ let r = "social-layer-storefront-product-details-modal",
     }, {
       modalKey: r,
       onCloseCallback: () => {
-        null == o || o()
+        null == d || d()
       }
     })
   };

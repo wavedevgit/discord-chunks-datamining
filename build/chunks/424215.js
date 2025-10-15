@@ -1,5 +1,5 @@
 /** Chunk was on 84802 **/
-/** chunk id: 424215, original params: n,e,t (module,exports,require) **/
+/** chunk id: 424215, original params: e,t,a (module,exports,require) **/
 module.exports = {
   modalRoot: "modalRoot__38ccf",
   modalContent: "modalContent__38ccf",
@@ -8,5 +8,9 @@ module.exports = {
   labelIcon: "labelIcon__38ccf",
   buttonsContainer: "buttonsContainer__38ccf",
   detailsContainer: "detailsContainer__38ccf",
-  titleDescriptionContainer: "titleDescriptionContainer__38ccf"
+  titleDescriptionContainer: "titleDescriptionContainer__38ccf",
+  carouselContainer: "carouselContainer__38ccf",
+  carousel: "carousel__38ccf",
+  modalHeaderButtonsContainer: "modalHeaderButtonsContainer__38ccf",
+  modalHeaderButton: "modalHeaderButton__38ccf"
 }

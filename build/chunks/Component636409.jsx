@@ -37,6 +37,7 @@ function h(e) {
     null != d ? (0, p.g)({
       skuId: d.id,
       applicationId: r.applicationId,
+      guildId: i,
       onClose: () => {
         s.current || (0, c.uL)(v.Z5c.CHANNELS_GAME_SHOP(i, o))
       }

@@ -2,27 +2,29 @@
 /** chunk id: 164670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Do: () => d,
-  FE: () => u,
-  K$: () => o,
-  Uc: () => l,
-  a7: () => f,
-  wK: () => s,
-  x6: () => c
+  Do: () => _,
+  FE: () => f,
+  K$: () => l,
+  Uc: () => u,
+  a7: () => p,
+  wK: () => c,
+  x6: () => d
 }), require("./953529.js");
-var Chunk73346 = require("./73346.js"),
+var Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
+  Chunk73346 = require("./73346.js"),
   Chunk591759 = require("./591759.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
-  return null != e && e.productLine === a.POd.SOCIAL_LAYER_GAME_ITEM
-}
-
-function s(e) {
-  return null != e && e.features.has(a.oNc.SOCIAL_LAYER_STOREFRONT)
-}
-
 function l(e) {
+  return null != e && e.productLine === s.POd.SOCIAL_LAYER_GAME_ITEM
+}
+
+function c(e) {
+  return null != e && e.features.has(s.oNc.SOCIAL_LAYER_STOREFRONT)
+}
+
+function u(e) {
   return {
     applicationId: e.application_id,
     title: e.title,
@@ -39,11 +41,12 @@ function l(e) {
         title: e.title,
         skuIds: e.sku_ids
       })) : true
-    }))
+    })),
+    assets: i().keyBy(e.assets, "id")
   }
 }
 
-function c(e) {
+function d(e) {
   if (null != e) return {
     carouselItems: e.carousel_items.map(e => ({
       thumbnailAssetId: e.thumbnail_asset_id,
@@ -60,9 +63,9 @@ function c(e) {
   }
 }
 
-function u(e, t) {
-  var n, a, o;
-  if ((null == e || null == (a = e.tenantMetadata) || null == (n = a.socialLayer) ? true : n.carouselItems) == null || 0 === e.tenantMetadata.socialLayer.carouselItems.length) return {
+function f(e, t) {
+  var n, r, i;
+  if ((null == e || null == (r = e.tenantMetadata) || null == (n = r.socialLayer) ? true : n.carouselItems) == null || 0 === e.tenantMetadata.socialLayer.carouselItems.length) return {
     primaryIconAsset: true,
     primaryIconLabel: true
   };
@@ -71,19 +74,19 @@ function u(e, t) {
     primaryIconAsset: true,
     primaryIconLabel: true
   } : {
-    primaryIconAsset: null != (o = i.Z.toURLSafe((0, r._W)(t, s.labelIconAssetId, 512, "png"))) ? o : true,
+    primaryIconAsset: null != (i = o.Z.toURLSafe((0, a._W)(t, s.labelIconAssetId, 512, "png"))) ? i : true,
     primaryIconLabel: s.label
   }
 }
 
-function d(e) {
-  var t, n, a;
-  let o = null == e ? true : e.applicationId,
-    s = null != (a = null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) ? a : null == e ? true : e.thumbnailAssetId;
-  if (null != s && null != o) return i.Z.toURLSafe((0, r._W)(o, s, 512, "png"))
+function _(e) {
+  var t, n, r;
+  let i = null == e ? true : e.applicationId,
+    s = null != (r = null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) ? r : null == e ? true : e.thumbnailAssetId;
+  if (null != s && null != i) return o.Z.toURLSafe((0, a._W)(i, s, 512, "png"))
 }
 
-function f(e) {
+function p(e) {
   var t, n;
-  if ((null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardBackgroundImageAssetId) != null && (null == e ? true : e.applicationId) != null) return i.Z.toURLSafe((0, r._W)(e.applicationId, e.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))
+  if ((null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardBackgroundImageAssetId) != null && (null == e ? true : e.applicationId) != null) return o.Z.toURLSafe((0, a._W)(e.applicationId, e.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))
 }

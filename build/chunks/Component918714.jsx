@@ -97,7 +97,7 @@ let y = function(e) {
       className: v.artwork,
       src: j,
       alt: ""
-    }), N ? (0, a.jsx)(s.Z, {
+    }), N ? (0, a.jsx)(s.default, {
       transitionState: i.Dvm.ENTERED,
       entryPoint: o.cU.SAFETY_FLOWS,
       onClose: f.dG,
