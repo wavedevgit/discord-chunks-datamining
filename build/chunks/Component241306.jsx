@@ -47,7 +47,7 @@ function u() {
           var t;
           return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
-              className: d.statItem,
+              className: c.statItem,
               children: [(0, r.jsx)(l.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-primary",
@@ -58,7 +58,7 @@ function u() {
                 children: e.description
               })]
             }), n !== (null != (t = null == u ? true : u.specifications.length) ? t : 0) - 1 && (0, r.jsx)("div", {
-              className: d.divider
+              className: c.divider
             })]
           }, n)
         })

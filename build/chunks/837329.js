@@ -64,9 +64,9 @@ function s(e) {
   r.useEffect(() => () => {
     null != t.current && (t.current.close(), t.current = null)
   }, []);
-  let c = null != n;
+  let d = null != n;
   return r.useEffect(() => {
-    if ("" === e || c) return;
+    if ("" === e || d) return;
     let n = a.Z.getRegionStateForPingUrl(e);
     if ((null == n ? true : n.rtt) != null || (null == n ? true : n.loading) === true) return;
     (0, l.hz)(e, {
@@ -76,7 +76,7 @@ function s(e) {
     });
     let r = new WebSocket("wss://".concat(e));
     t.current = r, s(r)
-  }, [e, s, c]), {
+  }, [e, s, d]), {
     pingText: r.useMemo(() => null == n || n.loading ? "—" : n.error ? "Error" : null !== n.rtt ? "".concat(n.rtt, "ms") : "—", [n]),
     pingCircleStyle: r.useMemo(() => {
       if (null == n || n.loading) return o.pingCircleLoading;

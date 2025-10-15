@@ -104,7 +104,8 @@ class h extends Chunk81825.Z {
     return null != this.coverImage ? a.ZP.getApplicationIconURL({
       id: this.id,
       icon: this.coverImage,
-      size: e
+      size: e,
+      keepAspectRatio: true
     }) : null
   }
   constructor(e) {

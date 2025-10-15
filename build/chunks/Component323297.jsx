@@ -51,16 +51,16 @@ function p(e) {
   let {
     step: n,
     setFooterNode: t
-  } = (0, c.JL)(), {
+  } = (0, d.JL)(), {
     title: a,
     subtitle: p
   } = function(e) {
     switch (e) {
-      case d.EK.SELECT_GAME:
+      case c.EK.SELECT_GAME:
         return {
           title: g.intl.string(u.default["3vWDMz"]), subtitle: g.intl.string(u.default.Az5bjs)
         };
-      case d.EK.SERVER_SETTINGS:
+      case c.EK.SERVER_SETTINGS:
         return {
           title: g.intl.string(u.default.RLGW9z)
         }
@@ -74,22 +74,22 @@ function p(e) {
     }), (0, r.jsx)(l.zJl, {
       className: m.modalContent,
       style: {
-        width: d.AK
+        width: c.AK
       },
       children: (0, r.jsx)("div", {
         style: {
-          padding: d.TG
+          padding: c.TG
         },
         children: (0, r.jsxs)(l.MyZ, {
-          width: d.SY,
+          width: c.SY,
           activeSlide: n,
           children: [(0, r.jsx)(l.Mi4, {
-            id: d.EK.SELECT_GAME,
+            id: c.EK.SELECT_GAME,
             children: (0, r.jsx)(o.Z, {})
-          }, d.EK.SELECT_GAME), (0, r.jsx)(l.Mi4, {
-            id: d.EK.SERVER_SETTINGS,
+          }, c.EK.SELECT_GAME), (0, r.jsx)(l.Mi4, {
+            id: c.EK.SERVER_SETTINGS,
             children: (0, r.jsx)(s.Z, {})
-          }, d.EK.SERVER_SETTINGS)]
+          }, c.EK.SERVER_SETTINGS)]
         })
       })
     }), (0, r.jsx)("div", {
@@ -104,7 +104,7 @@ function v(e) {
   } = (0, a.ZP)();
   return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(c.BT, x(f({}, e), {
+    children: (0, r.jsx)(d.BT, x(f({}, e), {
       children: (0, r.jsx)(p, f({}, e))
     }))
   })

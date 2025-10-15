@@ -42,10 +42,10 @@ function I(e) {
         children: n.name
       }), (0, r.jsxs)("div", {
         className: y.labelContainer,
-        children: [(0, r.jsx)(c.Ucv, {
+        children: [(0, r.jsx)(d.Ucv, {
           size: "xs",
-          color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-        }), (0, r.jsx)(c.Text, {
+          color: d.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        }), (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           children: O.intl.format(S.default.kOMlHs, {
             boostCount: n.cost
@@ -82,7 +82,7 @@ function T(e) {
         }) : "" !== n.pingUrl ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: a()(y.pingCircle, s)
-          }), (0, r.jsx)(c.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-xs/medium",
             children: o
           })]
@@ -185,7 +185,7 @@ function P() {
                 className: Chunk817121.sectionHeaderIcon,
                 size: "xs"
               })
-            }), (0, Chunk951288.jsx)("div", {
+            }), !F && (0, Chunk951288.jsx)("div", {
               className: Chunk817121.refresh,
               children: (0, Chunk951288.jsx)(Chunk681715.u, {
                 asContainer: true,
@@ -200,7 +200,11 @@ function P() {
                 })
               })
             })]
-          }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
+          }), F ? (0, Chunk951288.jsx)(Chunk481060.oil, {
+            value: null == Chunk120356 ? true : Chunk120356.regionName,
+            disabled: true,
+            placeholder: Chunk388032.intl.string(Chunk470658.default["k+RTIm"])
+          }) : (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
             isDisabled: Z || F || !U,

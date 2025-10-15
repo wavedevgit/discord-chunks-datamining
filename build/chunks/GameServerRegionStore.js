@@ -17,10 +17,10 @@ function a(e, n, t) {
 let o = {},
   s = [];
 
-function c() {
+function d() {
   o = {}
 }
-class d extends(r = Chunk442837.ZP.Store) {
+class c extends(r = Chunk442837.ZP.Store) {
   getRegionStateForPingUrl(e) {
     if (null != e) return o[e]
   }
@@ -31,9 +31,9 @@ class d extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-a(d, "displayName", "GameServerRegionStore");
-let u = new d(Chunk570140.Z, {
-  LOGOUT: c,
+a(c, "displayName", "GameServerRegionStore");
+let u = new c(Chunk570140.Z, {
+  LOGOUT: d,
   GAME_SERVER_REGION_PING_STATE_UPDATE: function(e) {
     var n, t;
     let {
@@ -64,7 +64,7 @@ let u = new d(Chunk570140.Z, {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
     }), o = n
   },
-  GAME_SERVER_REGION_PING_STATE_RESET: c,
+  GAME_SERVER_REGION_PING_STATE_RESET: d,
   GAME_SERVER_FETCH_REGIONS_SUCCESS: function(e) {
     let {
       regions: n
