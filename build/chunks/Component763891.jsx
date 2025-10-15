@@ -99,9 +99,9 @@ function R(e) {
           newValue: {
             tilePosition: t
           },
-          children: $ ? (0, r.jsx)(E.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, v.wO)(e, Z, w)
+            onClickAnalytics: (0, E.wO)(e, Z, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
             user: F,

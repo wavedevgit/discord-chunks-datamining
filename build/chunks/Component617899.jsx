@@ -25,9 +25,9 @@ function h(e, t, n) {
 }
 class g extends Chunk647438.PureComponent {
   getInviteText() {
-    return (0, Chunk340541.jW)({
+    return (0, Chunk340541.LK)({
       location: "invite_notice"
-    }).entrypoints ? Chunk388032.intl.string(Chunk388032.t.Sd8Ix8) : Chunk388032.intl.string(Chunk388032.t.BN75l5)
+    }).isGuildEntrypointEnabled ? Chunk388032.intl.string(Chunk388032.t.Sd8Ix8) : Chunk388032.intl.string(Chunk388032.t.BN75l5)
   }
   render() {
     let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZW), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/P"])),
@@ -52,7 +52,7 @@ class g extends Chunk647438.PureComponent {
       (0, l.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("74318"), n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(t, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -77,7 +77,7 @@ class g extends Chunk647438.PureComponent {
           return e
         }({}, n), {
           guild: e,
-          source: u.InstantInviteSources.INVITE_NOTICE
+          source: u.t4x.INVITE_NOTICE
         }))
       })
     }), h(this, "handleClose", () => {

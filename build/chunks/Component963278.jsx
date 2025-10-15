@@ -27,7 +27,7 @@ let m = e => {
     tab: l
   } = e, m = (0, o.e7)([a.default], () => a.default.getCurrentUser()), b = d.Z.useConfig({
     location: "ShelfBlock"
-  }).showCardsV2, E = (0, c.sp)();
+  }).showCardsV2, v = (0, c.sp)();
   return null == m ? null : (0, r.jsxs)("div", {
     className: i()(_.shelfBlockContainer, _.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -40,7 +40,7 @@ let m = e => {
         text: h.intl.formatToPlainString(h.t.bc9RBA, {
           category_name: t.name
         }),
-        onClick: () => n("shelf block see all", t.categorySkuId)
+        onClick: () => n("shelf block see all", t.categorySkuId, true, true)
       })]
     }), (0, r.jsx)("div", {
       className: _.feed,
@@ -57,7 +57,7 @@ let m = e => {
             children: b ? (0, r.jsx)(f.Z, {
               skuId: e,
               prioritizedCurrency: l === C.AW.ORBS ? p.tA.ORBS : true,
-              onClickAnalytics: (0, p.wO)(o, l, E)
+              onClickAnalytics: (0, p.wO)(o, l, v)
             }, e) : (0, r.jsx)(g.Z, {
               product: o,
               category: i,

@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 270394, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -209,9 +209,9 @@ function q(e) {
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: U.linkedChannelJoinSource,
-      children: [(0, i.jsx)(I.Z, {
+      children: [(0, i.jsx)(E.Z, {
         game: o,
-        size: I.A.XXSMALL
+        size: E.A.XXSMALL
       }), (0, i.jsx)(g.Text, {
         className: U.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
@@ -269,13 +269,13 @@ function V(e) {
       (0, g.ZDy)(async () => e => (0, i.jsx)(w.default, K(G({}, e), {
         channel: u,
         guild: l,
-        source: M.InstantInviteSources.SETTINGS_INVITE
+        source: M.t4x.SETTINGS_INVITE
       })))
     },
-    [I, T] = r.useState(62),
+    [E, T] = r.useState(62),
     k = () => {
       let e = {
-        source: E.Zu.GUILD_SETTINGS
+        source: I.Zu.GUILD_SETTINGS
       };
       (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, K(G({}, t), {
         guildId: l.id,
@@ -418,7 +418,7 @@ function V(e) {
         }
       }
     },
-    rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? I : 3 === e ? 0 === C.length && 0 === t && f ? 62 : 62 * (null != C[t]) : 0,
+    rowHeight: (e, t) => 0 === e ? 64 : 1 === e ? 109 : 2 === e ? E : 3 === e ? 0 === C.length && 0 === t && f ? 62 : 62 * (null != C[t]) : 0,
     sectionHeight: e => 3 === e ? 0 !== C.length || f ? 28 : 240 : 0
   })
 }

@@ -1,19 +1,19 @@
 /** Chunk was on 99905 **/
 /** chunk id: 108843, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => i
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk906732 = require("./906732.jsx");
 
-function l(n, e) {
+function i(n, e) {
   return function(t) {
     let {
-      analyticsLocations: l
-    } = (0, i.ZP)(e);
-    return (0, r.jsx)(i.Gt, {
-      value: l,
+      analyticsLocations: i
+    } = (0, l.ZP)(e);
+    return (0, r.jsx)(l.Gt, {
+      value: i,
       children: (0, r.jsx)(n, function(n) {
         for (var e = 1; e < arguments.length; e++) {
           var t = null != arguments[e] ? arguments[e] : {},

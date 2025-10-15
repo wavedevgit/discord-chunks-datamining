@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 351644, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -147,13 +147,13 @@ function W(e) {
       return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: I.default.extractTimestamp(l.id),
-          user: E.ZP.getUserTag(l.user)
+          timestamp: E.default.extractTimestamp(l.id),
+          user: I.ZP.getUserTag(l.user)
         })
       }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: I.default.extractTimestamp(l.id)
+          timestamp: E.default.extractTimestamp(l.id)
         })
       }), (0, i.jsx)(w.Z, {
         name: r.name,
@@ -231,8 +231,8 @@ function W(e) {
       });
     return t > 0 ? l : a
   }(ee, ef, null == W ? true : W.id), eS = null);
-  let eI = S.Z.getArticleURL(Z.BhN.INTEGRATIONS),
-    eE = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
+  let eE = S.Z.getArticleURL(Z.BhN.INTEGRATIONS),
+    eI = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
     eP = [];
   if (el) {
     let e, t, r, a, o;
@@ -330,8 +330,8 @@ function W(e) {
     className: a()(null != eS ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/normal",
-      children: A.intl.format(eE, {
-        helpdeskArticle: eI
+      children: A.intl.format(eI, {
+        helpdeskArticle: eE
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider

@@ -93,7 +93,7 @@ class y extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "6899a0e1cc548e9c1459f27b8a32d9b6d07749b3" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "99ca10f9288b393ecad766a573c5a7605e048e75" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : g;
         if (Date.now() - E > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)

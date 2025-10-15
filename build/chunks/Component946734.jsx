@@ -113,7 +113,7 @@ class S {
 function I(e) {
   let {
     channel: t
-  } = e, n = t.getRecipientId(), l = (0, f.gc)(n), o = Array(l.length).fill(null), {
+  } = e, n = t.getRecipientId(), l = (0, h.gc)(n), o = Array(l.length).fill(null), {
     analyticsLocations: g
   } = (0, p.ZP)(d.Z.AKA), m = function(e) {
     let {
@@ -176,7 +176,7 @@ function I(e) {
       guildId: true,
       max: 3,
       className: C.avatars
-    }) : null, m.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(h.Z, {
+    }) : null, m.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(f.Z, {
       position: "bottom",
       className: C.nicknames,
       delay: 0,

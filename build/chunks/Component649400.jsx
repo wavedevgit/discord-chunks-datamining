@@ -23,18 +23,18 @@ let E = (0, Chunk108843.Z)(function(n) {
     id: e.id,
     label: b.intl.string(b.t.gFHI3t)
   });
-  return (0, r.jsxs)(i.v2r, {
+  return (0, r.jsxs)(l.v2r, {
     navId: "channel-context",
-    onClose: l.Zy,
+    onClose: i.Zy,
     "aria-label": b.intl.string(b.t.Xm41aW),
     onSelect: c,
-    children: [(0, r.jsx)(i.kSQ, {
+    children: [(0, r.jsx)(l.kSQ, {
       children: o
-    }), (0, r.jsx)(i.kSQ, {
+    }), (0, r.jsx)(l.kSQ, {
       children: E
-    }), (0, r.jsx)(i.kSQ, {
+    }), (0, r.jsx)(l.kSQ, {
       children: f
-    }), (0, r.jsx)(i.kSQ, {
+    }), (0, r.jsx)(l.kSQ, {
       children: p
     })]
   })

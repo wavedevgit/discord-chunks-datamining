@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk921944 = require("./921944.js"),
   Chunk164208 = require("./164208.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -106,13 +106,13 @@ function y(e) {
         [p.upsellButtonsAdjacent]: 0 === N,
         [p.upsellButtonsStacked]: 1 === N
       }),
-      children: [Z ? (0, l.jsx)(s.zx, f(h({}, C), {
+      children: [Z ? (0, l.jsx)(s.zx, h(f({}, C), {
         fullWidth: 1 === N,
         onClick: () => {
           null == j || j(), null == I || I(d.L.SECONDARY)
         },
         children: y
-      })) : null, null == m ? null : (0, l.jsx)(s.zx, f(h({}, x), {
+      })) : null, null == m ? null : (0, l.jsx)(s.zx, h(f({}, x), {
         fullWidth: !Z || 1 === N,
         onClick: e => {
           v(e), null == I || I(d.L.PRIMARY)

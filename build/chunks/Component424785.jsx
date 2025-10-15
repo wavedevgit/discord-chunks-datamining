@@ -137,7 +137,7 @@ class Y extends Chunk98597.ZP {
       connectUserDropTarget: u,
       connectDragPreview: d,
       canReorderChannel: p,
-      canMoveMembers: h,
+      canMoveMembers: f,
       stageInstance: g,
       isSubscriptionGated: m,
       needSubscriptionToAccess: b,
@@ -306,7 +306,7 @@ function X(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), f = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
+  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   } = (0, _.Z)(n.id), O = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), v = (0, M.Z)({
@@ -320,9 +320,9 @@ function X(e) {
   }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: p,
-    connectAction: h,
+    connectAction: f,
     numAudience: g,
-    stageInstance: f,
+    stageInstance: h,
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   }, c, d, e), {

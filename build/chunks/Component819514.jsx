@@ -223,7 +223,7 @@ let Z = {
       let i, l = (0, p.F6)(e, _.default, b.Z);
       return i = e.isPrivate() ? x.intl.string(x.t.hMRngI) : x.intl.formatToPlainString(x.t["3IRluL"], {
         channelName: l
-      }), (0, r.jsx)(f.Z.Provider, {
+      }), (0, r.jsx)(h.Z.Provider, {
         value: e.guild_id,
         children: (0, r.jsxs)(c.ConfirmModal, P(I({
           header: x.intl.string(x.t.bKMaZW),
@@ -250,7 +250,7 @@ let Z = {
     })
   },
   confirmUnpin: function(e, t) {
-    (0, c.h7j)(n => (0, r.jsx)(f.Z.Provider, {
+    (0, c.h7j)(n => (0, r.jsx)(h.Z.Provider, {
       value: e.guild_id,
       children: (0, r.jsxs)(c.ConfirmModal, P(I({
         header: x.intl.string(x.t.CFF2vL),
@@ -269,7 +269,7 @@ let Z = {
             message: t,
             disableInteraction: true
           })
-        }), (0, r.jsx)(h.Z, {
+        }), (0, r.jsx)(f.Z, {
           children: x.intl.format(x.t.oCVB3d, {})
         })]
       }))

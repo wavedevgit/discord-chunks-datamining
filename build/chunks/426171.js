@@ -2,8 +2,8 @@
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kp: () => v,
-  u9: () => E,
+  Kp: () => E,
+  u9: () => v,
   xV: () => O
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk647438 = require("./647438.js"),
 let _ = "".concat("#").concat("itemSkuId", "="),
   m = new RegExp("^".concat(_, "(\\d+)$")),
   b = [Chunk981631.Z5c.COLLECTIBLES_SHOP],
-  E = e => {
+  v = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && b.includes(t.pathname)) return () => {
@@ -31,7 +31,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  v = () => {
+  E = () => {
     let e = (0, Chunk258939.R)(),
       t = Chunk647438.useRef(null),
       n = (0, Chunk843611.TH)(),
@@ -44,11 +44,11 @@ let _ = "".concat("#").concat("itemSkuId", "="),
       let e = m.exec(require.hash);
       null != module ? exports.current = module[1] : exports.current = null
     }, [b, require.hash]);
-    let E = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    let v = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk647438.useEffect(() => {
       if (module) return;
       let n = null;
-      if (null != E ? n = E : null != exports.current && (n = exports.current), null != require) {
+      if (null != v ? n = v : null != exports.current && (n = exports.current), null != require) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -89,7 +89,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [_, Chunk607070, module, E, b])
+    }, [_, Chunk607070, module, v, b])
   },
   O = e => {
     let t = r.useRef({}),

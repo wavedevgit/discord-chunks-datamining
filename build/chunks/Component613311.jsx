@@ -468,11 +468,11 @@ class ef extends Chunk647438.PureComponent {
       null != e && null != t && (0, p.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("74318"), n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(i, ep(ed({}, n), {
           guild: t,
           channel: e,
-          source: ea.InstantInviteSources.GUILD_CHANNELS
+          source: ea.t4x.GUILD_CHANNELS
         }))
       })
     }), eu(this, "renderInviteLink", () => {

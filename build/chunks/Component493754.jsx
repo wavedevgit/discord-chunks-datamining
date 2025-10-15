@@ -34,7 +34,7 @@ function b(e) {
   null == s || s(), (0, c.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
+    } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
     return n => {
       var o, s;
       return (0, i.jsx)(e, (o = function(e) {
@@ -60,7 +60,7 @@ function b(e) {
         streamUserId: l,
         applicationId: a,
         analyticsLocation: u,
-        source: r.isGuildStageVoice() ? f.InstantInviteSources.STAGE_CHANNEL : f.InstantInviteSources.STREAM_INVITE,
+        source: r.isGuildStageVoice() ? f.t4x.STAGE_CHANNEL : f.t4x.STREAM_INVITE,
         guildScheduledEvent: d
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);

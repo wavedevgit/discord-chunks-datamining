@@ -34,7 +34,7 @@ function m(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.nn4, {
-      children: f.intl.string(f.t.EJRzg4)
+      children: h.intl.string(h.t.EJRzg4)
     }), null != m && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
         status: b,
@@ -44,7 +44,7 @@ function m(e) {
         "aria-label": p.ZP.getName(m),
         src: m.getAvatarURL(true, 20)
       })
-    }), (0, r.jsx)(h.Z.Title, {
+    }), (0, r.jsx)(f.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
@@ -56,10 +56,10 @@ function m(e) {
           className: v,
           children: null != O ? O : p.ZP.getName(m)
         }), j && (0, r.jsx)(l.u, {
-          text: f.intl.string(f.t.QyZ4TU),
+          text: h.intl.string(h.t.QyZ4TU),
           children: (0, r.jsx)(o.tQf, {
             size: "xs",
-            "aria-label": f.intl.string(f.t.VHXh8f),
+            "aria-label": h.intl.string(h.t.VHXh8f),
             color: o.TVs.colors.INTERACTIVE_NORMAL,
             className: g.secureFramesIcon
           })

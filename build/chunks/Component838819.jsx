@@ -92,9 +92,9 @@ let M = e => {
       }),
       Y = (0, y.O)(G),
       [q, Q] = l.useState(),
-      J = (0, a.e7)([v.Z], () => {
+      J = (0, a.e7)([E.Z], () => {
         var e;
-        return null == (e = v.Z.getCategory(q)) ? true : e.name
+        return null == (e = E.Z.getCategory(q)) ? true : e.name
       }),
       [X, $] = l.useState();
     (0, I.Kp)();
@@ -126,7 +126,7 @@ let M = e => {
     } = (0, x.MV)(et);
     return (0, r.jsx)(f.Gt, {
       value: es,
-      children: (0, r.jsx)(E.k0, {
+      children: (0, r.jsx)(v.k0, {
         newValue: {
           sessionId: n,
           pageCategory: J,

@@ -51,9 +51,9 @@ function j(e) {
         newValue: {
           tilePosition: t
         },
-        children: s ? (0, r.jsx)(E.Z, {
+        children: s ? (0, r.jsx)(v.Z, {
           skuId: e.skuId,
-          onClickAnalytics: (0, v.wO)(e, y.AW.CATALOG, f)
+          onClickAnalytics: (0, E.wO)(e, y.AW.CATALOG, f)
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
@@ -107,7 +107,7 @@ function I(e) {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), E = l.useMemo(() => {
+  }), [n]), v = l.useMemo(() => {
     let e = (s - 1) * y.kN;
     return b.slice(e, e + y.kN)
   }, [b, s]);
@@ -120,20 +120,20 @@ function I(e) {
       cacheDisabled: C
     })
   }, []), l.useEffect(() => {
-    g || 0 === E.length || (0, h.n)({
+    g || 0 === v.length || (0, h.n)({
       sessionId: p,
       checkpoint: h.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: _,
       cacheDisabled: C
     })
-  }, [p, _, C, g, E.length]);
-  let v = (0, f.FF)("CollectiblesBrowse");
+  }, [p, _, C, g, v.length]);
+  let E = (0, f.FF)("CollectiblesBrowse");
   return g ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
     className: o()(k.categories, {
-      [k.categoriesNoFilter]: !v
+      [k.categoriesNoFilter]: !E
     }),
-    children: [E.map((e, t) => (0, r.jsx)("div", {
+    children: [v.map((e, t) => (0, r.jsx)("div", {
       ref: t => i(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {

@@ -88,7 +88,7 @@ let b = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(f.rMx.GDM_EDIT_INTERACTED, {
+            f.default.track(h.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: s.Z.HEADER_BAR

@@ -65,7 +65,7 @@ let g = {
           prefixedContent: o,
           location: "RPC_ACTIVITY_INVITE_USER",
           inviteAnalyticsMetadata: {
-            source: f.InstantInviteSources.ACTIVITY_INVITE
+            source: f.t4x.ACTIVITY_INVITE
           }
         })
       } catch (e) {

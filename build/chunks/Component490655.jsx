@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 490655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134850 = require("./134850.js");
 
-function E(e, t) {
+function I(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -246,22 +246,22 @@ let P = Chunk647438.memo(function(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: I.breadcrumbs,
+      className: E.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: E(N.b4C.OVERVIEW)
+        children: I(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: E(e, V[G])
+          label: I(e, V[G])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && q(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.Heading, {
           variant: "heading-lg/semibold",
-          className: t ? I.breadcrumbActive : I.breadcrumbInactive,
+          className: t ? E.breadcrumbActive : E.breadcrumbInactive,
           children: e.label
         })
       })

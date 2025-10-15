@@ -188,12 +188,12 @@ let N = e => {
           },
           children: el && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
             className: n,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(E.Z, {
               skuId: null == e ? true : e.skuId,
               prioritizedCurrency: Z === T.AW.ORBS ? O.tA.ORBS : true,
               onClickAnalytics: (0, O.wO)(e, Z, ee)
             })
-          }) : (0, r.jsx)(E.Z, {
+          }) : (0, r.jsx)(v.Z, {
             product: e,
             category: l,
             user: D,

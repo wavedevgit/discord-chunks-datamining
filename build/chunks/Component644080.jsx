@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 644080, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,13 +51,13 @@ function _(e) {
     })
   })
 }
-let I = Chunk647438.memo(function(e) {
+let Z = Chunk647438.memo(function(e) {
   let {
     guild: n,
     titleClassName: a
   } = e, {
     homeHeaderImage: h,
-    isHomeHeaderImageSet: I
+    isHomeHeaderImageSet: Z
   } = (e => {
     let n = r.useMemo(() => null == e ? null : p.ZP.getGuildHomeHeaderURL({
       id: e.id,
@@ -68,19 +68,19 @@ let I = Chunk647438.memo(function(e) {
       isHomeHeaderImageSet: null != n,
       homeHeaderScroll: 200 * (null != n)
     }
-  })(n), Z = (0, m.b$)(n.id), y = (0, s.e7)([g.Z], () => (0, f.b)(g.Z, n)), N = (0, o.ZP)();
+  })(n), I = (0, m.b$)(n.id), y = (0, s.e7)([g.Z], () => (0, f.b)(g.Z, n)), N = (0, o.ZP)();
   return (0, l.jsxs)("div", {
     className: j.header,
     children: [(0, l.jsxs)("div", {
       className: j.headerArtWrapper,
       children: [(0, l.jsx)("div", {
         className: i()(j.headerArt, {
-          [j.headerArtPlaceholder]: !I
+          [j.headerArtPlaceholder]: !Z
         }),
         style: {
-          backgroundImage: "url(".concat(I ? h : "dark" === N ? C : v, ")")
+          backgroundImage: "url(".concat(Z ? h : "dark" === N ? C : v, ")")
         }
-      }), Z && (0, l.jsx)(_, {
+      }), I && (0, l.jsx)(_, {
         guild: n
       })]
     }), (0, l.jsx)("div", {
@@ -113,7 +113,7 @@ let I = Chunk647438.memo(function(e) {
                 onClick: () => (0, c.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([t.e("74318"), t.e("7654"), t.e("54833")]).then(t.bind(t, 560114));
+                  } = await Promise.all([t.e("7654"), t.e("89772")]).then(t.bind(t, 560114));
                   return t => {
                     var r, a;
                     return (0, l.jsx)(e, (r = function(e) {
@@ -135,7 +135,7 @@ let I = Chunk647438.memo(function(e) {
                       return e
                     }({}, t), a = a = {
                       guild: n,
-                      source: x.InstantInviteSources.GUILD_HOME
+                      source: x.t4x.GUILD_HOME
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
                       var t = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {

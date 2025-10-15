@@ -1,7 +1,7 @@
 /** Chunk was on 56944 **/
 /** chunk id: 600830, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,20 +18,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(n) {
+function g(n) {
   let {
     channel: t,
     onSelect: e,
-    onInteraction: E
-  } = n, g = (0, p.Z)(), y = d.Fg.useSetting(), h = function(n) {
-    let t = (0, i.e7)([s.Z], () => s.Z.getWindow(f.KJ3.CHANNEL_CALL_POPOUT));
+    onInteraction: g
+  } = n, y = (0, p.Z)(), h = d.Fg.useSetting(), j = function(n) {
+    let t = (0, i.e7)([a.Z], () => a.Z.getWindow(f.KJ3.CHANNEL_CALL_POPOUT));
     return null == n || null != t ? null : (0, l.jsx)(r.sNh, {
       id: "popout-call",
-      label: v.intl.string(v.t.JzWez8),
+      label: E.intl.string(E.t.JzWez8),
       icon: r.rgF,
-      action: () => a.hP(n)
+      action: () => s.hP(n)
     })
-  }(null != t ? t : true), j = function(n) {
+  }(null != t ? t : true), O = function(n) {
     let t = (0, i.e7)([b.Z], () => b.Z.getGuild(null == n ? true : n.guild_id)),
       e = (0, c.Z)(null != n ? n : null, null != t ? t : null),
       o = (0, u.Z)(null != n ? n : null);
@@ -41,16 +41,16 @@ function E(n) {
   }(t);
   return (0, l.jsxs)(r.v2r, {
     navId: "rtc-channel",
-    "aria-label": v.intl.string(v.t.ogxXGh),
+    "aria-label": E.intl.string(E.t.ogxXGh),
     onClose: o.Zy,
     onSelect: e,
-    onInteraction: E,
-    children: [g, j, (0, l.jsxs)(r.kSQ, {
-      children: [h, (0, l.jsx)(r.S89, {
+    onInteraction: g,
+    children: [y, O, (0, l.jsxs)(r.kSQ, {
+      children: [j, (0, l.jsx)(r.S89, {
         id: "show-voice-states",
-        checked: y,
-        action: () => d.Fg.updateSetting(!y),
-        label: v.intl.string(v.t.vkbSBw)
+        checked: h,
+        action: () => d.Fg.updateSetting(!h),
+        label: E.intl.string(E.t.vkbSBw)
       })]
     })]
   })

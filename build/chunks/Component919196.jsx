@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 919196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -104,19 +104,19 @@ function S(e) {
     applicationIntegration: s,
     selectableWebhookChannels: d,
     editedWebhook: S,
-    errors: I,
-    canNavigate: E
+    errors: E,
+    canNavigate: I
   } = e, {
     application: P,
     integration: w,
     webhooks: T
   } = s, [Z, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == P.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, P.bot.id, n)], [P.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
-    E() && (0, o.h7j)(e => (0, i.jsx)(N, C({
+    I() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
       application: P,
       integration: w
     }, e)))
-  }, [P, E, n, w]), R = r.useMemo(() => {
+  }, [P, I, n, w]), R = r.useMemo(() => {
     let e = [{
       icon: o.T39,
       text: O.intl.formatToPlainString(O.t.gcdJ8P, {
@@ -155,7 +155,7 @@ function S(e) {
       className: _.headerDescription
     }) : null, Z ? (0, i.jsx)(u.Z, {
       application: P,
-      canNavigate: E,
+      canNavigate: I,
       guildId: n.id
     }) : null, (0, i.jsx)(o.izJ, {
       className: _.headerDivider
@@ -180,8 +180,8 @@ function S(e) {
         webhooks: T,
         editedWebhook: S,
         selectableWebhookChannels: d,
-        errors: I,
-        canNavigate: E
+        errors: E,
+        canNavigate: I
       }) : (0, i.jsx)(o.Zbd, {
         className: _.emptyCard,
         editable: true,

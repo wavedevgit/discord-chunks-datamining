@@ -1,7 +1,7 @@
 /** Chunk was on 92795 **/
 /** chunk id: 522762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk9156 = require("./9156.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function u(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.isGuildCollapsed(e), [e]);
   return (0, r.jsx)(l.S89, {
     id: "hide-muted-channels",

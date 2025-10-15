@@ -18,40 +18,40 @@ function c(e) {
   let {
     shouldHideTemporaryInviteToggle: n,
     maxAgeOptions: c,
-    maxAge: h,
-    maxUses: g,
+    maxAge: g,
+    maxUses: h,
     temporary: m,
-    onGenerateNewLink: p,
-    onToggleTemporary: v,
+    onGenerateNewLink: v,
+    onToggleTemporary: p,
     onSelectMaxAge: x,
     onSelectMaxUses: I,
     isGuestInviteCreationToggleEnabled: S,
-    inviteFlags: y,
-    onSetInviteFlags: j
-  } = e, C = r.ZP.getMaxAgeOptionByValue(h), N = u.find(e => e.value === g);
+    inviteFlags: f,
+    onSetInviteFlags: E
+  } = e, y = r.ZP.getMaxAgeOptionByValue(g), C = u.find(e => e.value === h);
   return (0, i.jsx)("div", {
     className: d.settingsContent,
     children: (0, i.jsxs)("form", {
-      onSubmit: p,
+      onSubmit: v,
       className: d.settingsForm,
       children: [(0, i.jsx)(s.VcW, {
         label: o.intl.string(o.t["60qw29"]),
         options: c,
-        value: null != (t = null == C ? true : C.value) ? t : c[0].value,
+        value: null != (t = null == y ? true : y.value) ? t : c[0].value,
         onChange: x
       }), (0, i.jsx)(s.VcW, {
         label: o.intl.string(o.t.jDqWHR),
         options: u,
-        value: null == N ? true : N.value,
+        value: null == C ? true : C.value,
         onChange: I
       }), !n && (0, i.jsx)(s.rsf, {
         checked: m,
-        onChange: e => v(e),
+        onChange: e => p(e),
         description: o.intl.string(o.t.UN5IRU),
         label: o.intl.string(o.t["wE+9dn"])
       }), S && (0, i.jsx)(s.rsf, {
-        checked: (0, a.yE)(y, l.$.IS_GUEST_INVITE),
-        onChange: e => j((0, a.mB)(y, l.$.IS_GUEST_INVITE, e)),
+        checked: (0, a.yE)(f, l.$.IS_GUEST_INVITE),
+        onChange: e => E((0, a.mB)(f, l.$.IS_GUEST_INVITE, e)),
         description: o.intl.string(o.t["/FeTKy"]),
         label: o.intl.string(o.t.siexRU)
       })]

@@ -1,11 +1,11 @@
-/** Chunk was on 74318 **/
+/** Chunk was on 7654 **/
 /** chunk id: 559310, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  am: () => r,
-  s6: () => a
+  am: () => a,
+  s6: () => s
 });
 var Chunk973285 = require("./973285.js");
-let i = (0, require("./818083.js").B)({
+let l = (0, require("./818083.js").B)({
   id: "2025-10_server_friends_in_vc_invites",
   label: "Server Friends in VC Invites",
   kind: "guild",
@@ -21,42 +21,42 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
+function s(e) {
+  let {
+    autoTrackExposure: t,
+    location: n,
+    guildId: s
+  } = e, {
+    enabled: a
+  } = i.W.getCurrentConfig({
+    guildId: s,
+    location: n
+  });
+  return l.getCurrentConfig({
+    guildId: s,
+    location: n
+  }, {
+    autoTrackExposure: t,
+    disable: !a
+  })
+}
+
 function a(e) {
   let {
     autoTrackExposure: t,
     location: n,
-    guildId: a
+    guildId: s
   } = e, {
-    enabled: r
-  } = l.W.getCurrentConfig({
-    guildId: a,
+    enabled: a
+  } = i.W.useExperiment({
+    guildId: s,
     location: n
   });
-  return i.getCurrentConfig({
-    guildId: a,
+  return l.useExperiment({
+    guildId: s,
     location: n
   }, {
     autoTrackExposure: t,
-    disable: !r
-  })
-}
-
-function r(e) {
-  let {
-    autoTrackExposure: t,
-    location: n,
-    guildId: a
-  } = e, {
-    enabled: r
-  } = l.W.useExperiment({
-    guildId: a,
-    location: n
-  });
-  return i.useExperiment({
-    guildId: a,
-    location: n
-  }, {
-    autoTrackExposure: t,
-    disable: !r
+    disable: !a
   })
 }

@@ -228,7 +228,7 @@ class V extends(r = Chunk647438.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, h.Z)(this.props, e, ["children"])
+    return !(0, f.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -278,8 +278,8 @@ class V extends(r = Chunk647438.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, G({
+        return (0, i.jsx)(h.Wdt, {
+          children: r => (0, i.jsx)(h.aVo, G({
             fade: true,
             innerRole: o,
             innerAriaLabel: L.intl.string(L.t.YUU0RE),
@@ -397,11 +397,11 @@ class V extends(r = Chunk647438.Component) {
           popoutAlign: "left",
           className: M.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: M.privateChannelRecipientsInviteButtonIcon,
-          icon: f.BRu,
+          icon: h.BRu,
           subscribeToGlobalHotkey: true
         }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
-          icon: f.kL_,
+          icon: h.kL_,
           text: L.intl.string(L.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -431,19 +431,19 @@ k(V, "defaultProps", {
 let F = e => {
   let {
     density: t
-  } = (0, f.TCT)(), {
+  } = (0, h.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c,
-    hideAllDMs: h
-  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), y = h ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+    hideAllDMs: f
+  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), y = f ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds(),
       t = (0, P.tU)(e, [I.Z, N.Z]);
-    return h ? [] : t
-  }, [h]);
+    return f ? [] : t
+  }, [f]);
   (0, E.z)(C.R);
   let {
     analyticsLocations: j

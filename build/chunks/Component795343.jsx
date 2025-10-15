@@ -112,9 +112,9 @@ function j(e) {
             newValue: {
               tilePosition: t
             },
-            children: J ? (0, r.jsx)(E.Z, {
+            children: J ? (0, r.jsx)(v.Z, {
               skuId: e.skuId,
-              onClickAnalytics: (0, v.wO)(e, j, T)
+              onClickAnalytics: (0, E.wO)(e, j, T)
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
               user: A,

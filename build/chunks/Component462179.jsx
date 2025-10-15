@@ -150,12 +150,12 @@ function k(t) {
         }(0, r.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
           return n => (0, l.jsx)(t, S(D({}, n), {
             guild: e,
             channel: k,
             guildScheduledEvent: T,
-            source: _.InstantInviteSources.GUILD_EVENTS
+            source: _.t4x.GUILD_EVENTS
           }))
         })
       }

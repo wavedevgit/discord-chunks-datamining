@@ -144,7 +144,7 @@ function A(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, i = (0, u.ZP)(), d = (0, a.e7)([E.default], () => E.default.getCurrentUser()), {
+  } = e, i = (0, u.ZP)(), d = (0, a.e7)([v.default], () => v.default.getCurrentUser()), {
     enabled: g
   } = (0, m.WX)({
     location: "collectibles_shop_header_bar"
@@ -189,7 +189,7 @@ function A(e) {
         className: L.shopHomeLink,
         onClick: () => n(y.AW.HOME),
         "aria-label": T.intl.string(T.t.pWG4zc) + " home",
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(E.Z, {
           className: L.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
           children: T.intl.string(T.t.pWG4zc)

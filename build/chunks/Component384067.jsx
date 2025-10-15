@@ -24,7 +24,7 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
+  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
   l.useEffect(() => {
     let e = O.current;
     if (null == e) return;
@@ -35,7 +35,7 @@ let _ = e => {
       e.onload = null
     }
   }, []);
-  let y = null != E ? E : "",
+  let y = null != v ? v : "",
     {
       handleCardVisibilityChange: k
     } = (0, d.E)(y, "home", "marketing wide banner"),
@@ -45,11 +45,11 @@ let _ = e => {
   if (null == j) return null;
   let T = b === f.AW.ORBS;
   return (0, r.jsx)(s.$, {
-    innerRef: v,
+    innerRef: E,
     onChange: k,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: v,
+      ref: E,
       className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
@@ -97,7 +97,7 @@ let _ = e => {
         className: h.wideBannerBlockButton,
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
-          onClick: () => m("shop wide banner", y),
+          onClick: () => m("shop wide banner", y, true, true),
           text: C.intl.string(C.t.jVcuVV)
         })
       })]

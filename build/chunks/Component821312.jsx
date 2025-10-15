@@ -1,7 +1,7 @@
-/** Chunk was on 61536 **/
+/** Chunk was on 87641 **/
 /** chunk id: 821312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,63 +14,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk882313 = require("./882313.js");
 
-function p(e) {
+function m(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: p
-  } = e, [f, g] = i.useState([]), [_, O] = i.useState(), h = [{
-    label: d.intl.string(d.t["//3pvr"]),
+    onClose: m
+  } = e, [b, g] = r.useState([]), [f, h] = r.useState(), x = [{
+    label: u.intl.string(u.t["//3pvr"]),
     value: c.C2.DM_SPAM
   }, {
-    label: d.intl.string(d.t.SdVsio),
+    label: u.intl.string(u.t.SdVsio),
     value: c.C2.MENTION_SPAM
   }, {
-    label: d.intl.string(d.t.uTiSVF),
+    label: u.intl.string(u.t.uTiSVF),
     value: c.C2.CHANNEL_SPAM
   }, {
-    label: d.intl.string(d.t.GQczU1),
+    label: u.intl.string(u.t.GQczU1),
     value: c.C2.SUS_NEW_MEMBERS
   }, {
-    label: d.intl.string(d.t.AAgqy8),
+    label: u.intl.string(u.t.AAgqy8),
     value: c.C2.CHANGING_SETTINGS
   }, {
-    label: d.intl.string(d.t.ryPKb2),
+    label: u.intl.string(u.t.ryPKb2),
     value: c.C2.OTHER
-  }], y = i.useCallback(e => {
+  }], j = r.useCallback(e => {
     g(e)
   }, []);
-  return null == t ? (p(), null) : (0, r.jsx)(l.Modal, {
+  return null == t ? (m(), null) : (0, i.jsx)(l.Modal, {
     transitionState: n,
-    title: d.intl.string(d.t.f5hd9P),
+    title: u.intl.string(u.t.f5hd9P),
     actions: [{
-      text: d.intl.string(d.t["ETE/oK"]),
-      onClick: p,
+      text: u.intl.string(u.t["ETE/oK"]),
+      onClick: m,
       variant: "secondary"
     }, {
-      text: d.intl.string(d.t.nAt0rK),
+      text: u.intl.string(u.t.nAt0rK),
       onClick: function() {
-        (0, s.yw)(u.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
-          raid_lockdown_feedback_type: f,
-          raid_lockdown_feedback_other_reason: _,
+        (0, s.yw)(d.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
+          raid_lockdown_feedback_type: b,
+          raid_lockdown_feedback_other_reason: f,
           guild_id: t
-        }), p()
+        }), m()
       },
-      disabled: 0 === f.length
+      disabled: 0 === b.length
     }],
-    onClose: p,
-    children: (0, r.jsxs)(o.Kqy, {
+    onClose: m,
+    children: (0, i.jsxs)(o.Kqy, {
       gap: 8,
-      children: [(0, r.jsx)(a.c, {
-        selectedValues: f,
-        onChange: y,
-        options: h
-      }), f.includes(c.C2.OTHER) && (0, r.jsx)("div", {
-        className: b.textboxContainer,
-        children: (0, r.jsx)(o.Kx8, {
-          placeholder: d.intl.string(d.t["PAM+JS"]),
-          onChange: O,
-          value: _,
+      children: [(0, i.jsx)(a.c, {
+        selectedValues: b,
+        onChange: j,
+        options: x
+      }), b.includes(c.C2.OTHER) && (0, i.jsx)("div", {
+        className: p.textboxContainer,
+        children: (0, i.jsx)(o.Kx8, {
+          placeholder: u.intl.string(u.t["PAM+JS"]),
+          onChange: h,
+          value: f,
           autoFocus: true
         })
       })]

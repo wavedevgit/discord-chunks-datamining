@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 462376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => N,
-  k: () => C
+  d: () => C,
+  k: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js");
 
-function j(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,8 +31,8 @@ function j(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = 44;
-class N extends Chunk647438.Component {
+let y = 44;
+class C extends Chunk647438.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
@@ -103,28 +103,28 @@ class N extends Chunk647438.Component {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "state", {
+    super(...e), E(this, "state", {
       sending: false,
       invited: false,
       hovered: false
-    }), j(this, "handleMouseEnter", () => {
+    }), E(this, "handleMouseEnter", () => {
       this.setState({
         hovered: true
       })
-    }), j(this, "handleMouseLeave", () => {
+    }), E(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), j(this, "getInviteAnalyticsMetadata", () => {
+    }), E(this, "getInviteAnalyticsMetadata", () => {
       let {
         row: e,
         source: t
       } = this.props;
       if (null != e) return {
-        suggestionData: g.Z.getSelectedInviteMetadata(e),
+        suggestionData: h.Z.getSelectedInviteMetadata(e),
         source: t
       }
-    }), j(this, "handleClickInvite", () => {
+    }), E(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

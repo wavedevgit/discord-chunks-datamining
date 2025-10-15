@@ -131,10 +131,10 @@ function M(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("74318"), n.e("49049"), n.e("7654"), n.e("98953")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
           return n => (0, i.jsx)(t, A(N({}, n), {
             guild: e,
-            source: P.InstantInviteSources.CHANNEL_WELCOME,
+            source: P.t4x.CHANNEL_WELCOME,
             analyticsLocation: {
               section: P.jXE.CHANNEL_WELCOME_CTA
             }

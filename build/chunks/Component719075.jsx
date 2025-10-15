@@ -2,7 +2,7 @@
 /** chunk id: 719075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,9 +25,9 @@ let b = e => {
       product: t,
       prioritizedCurrency: n
     } = e, f = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = a.ZP.canUseCollectibles(f), {
-      isDisabled: E
+      isDisabled: v
     } = (0, u.G)(t.skuId), {
-      isPurchased: v,
+      isPurchased: E,
       isPartiallyOwnedBundle: O
     } = (0, d.L)(t), x = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), k = (0, p.Iw)(t), {
       displayPrices: j,
@@ -38,14 +38,14 @@ let b = e => {
       prioritizedCurrency: n,
       hasDiscountOffer: null != k
     }), L = x && !b;
-    return E ? (0, r.jsx)(o.Text, {
+    return v ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
       children: _.intl.string(_.t.wu4gyc)
     }) : O ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.BEjTio)
-    }) : v && !L ? (0, r.jsx)(o.Text, {
+    }) : E && !L ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t["6cfuDg"])
     }) : S ? (0, r.jsx)(o.Text, {
@@ -63,7 +63,7 @@ let b = e => {
       className: j[0].currency !== h.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
     })
   },
-  E = e => {
+  v = e => {
     let {
       skuId: t,
       prioritizedCurrency: n

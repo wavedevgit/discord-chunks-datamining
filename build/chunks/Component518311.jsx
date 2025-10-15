@@ -247,7 +247,7 @@ class eg extends(i = Chunk647438.PureComponent) {
     });
     Chunk447543.ZP.createInvite(module.id, {
       max_age: exports
-    }, Chunk981631.InstantInviteSources.GROUP_DM)
+    }, Chunk981631.t4x.GROUP_DM)
   }
   isPartyFull() {
     let {

@@ -1,11 +1,11 @@
 /** Chunk was on 57695 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CN: () => Z,
-  ZP: () => M,
-  eP: () => R,
-  hR: () => A,
-  jo: () => w
+  CN: () => N,
+  ZP: () => D,
+  eP: () => T,
+  hR: () => w,
+  jo: () => Z
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,52 +53,15 @@ function P(e) {
   return e
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function Z(e, t, n) {
+function N(e, t, n) {
   return null != t && !!t && !(0, x.ig)(n, e.type)
 }
 
-function w(e, t) {
+function Z(e, t) {
   return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
 }
 
-function T(e) {
-  let {
-    tabIndex: t,
-    forceShowButtons: n,
-    hasChannelInfo: r,
-    onContextMenu: l
-  } = e;
-  return (0, i.jsx)(c.u, {
-    asContainer: true,
-    text: E.intl.string(E.t.OBr7Cw),
-    children: (0, i.jsx)(u.P3F, {
-      className: a()(S.iconItem, n ? S.alwaysShown : true, r ? S.iconWithChannelInfo : S.iconNoChannelInfo),
-      onClick: l,
-      tabIndex: t,
-      "aria-label": E.intl.string(E.t.OBr7Cw),
-      children: (0, i.jsx)(u.xhG, {
-        size: "xs",
-        color: "currentColor",
-        className: S.actionIcon
-      })
-    })
-  })
-}
-
-function A(e) {
+function w(e) {
   let {
     channel: t,
     disableManageChannels: n,
@@ -125,7 +88,7 @@ function A(e) {
   })
 }
 
-function R(e) {
+function T(e) {
   let {
     channel: t,
     isDefaultChannel: r = false,
@@ -133,28 +96,28 @@ function R(e) {
     tabIndex: d,
     forceShowButtons: g,
     hasChannelInfo: _ = false
-  } = e, j = (0, h._k)({
+  } = e, j = (0, f._k)({
     location: "channel_base"
-  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), Z = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([v.Z], () => (0, f.b)(v.Z, x, t, I)), T = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0N"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXl"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), A = l.useRef(null);
-  if (o || !w || t.isModeratorReportChannel()) return null;
-  let R = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
-    D = (0, i.jsx)(R, {
+  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, x, t, I)), w = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0N"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXl"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = l.useRef(null);
+  if (o || !Z || t.isModeratorReportChannel()) return null;
+  let A = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
+    R = (0, i.jsx)(A, {
       size: "xs",
       className: S.actionIcon,
       "aria-hidden": true,
       color: "currentColor"
     });
-  return r && (D = (0, i.jsx)(b.Z, {
-    childRef: A,
+  return r && (R = (0, i.jsx)(b.Z, {
+    childRef: T,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: A,
-      children: D
+      ref: T,
+      children: R
     })
   })), (0, i.jsx)(c.u, {
     asContainer: true,
-    text: T,
+    text: w,
     children: (0, i.jsx)(u.P3F, {
       className: a()(S.iconItem, g ? S.alwaysShown : true, _ ? S.iconWithChannelInfo : S.iconNoChannelInfo),
       onClick: function() {
@@ -163,25 +126,37 @@ function R(e) {
           (0, u.ZDy)(async () => {
             let {
               default: r
-            } = await Promise.all([n.e("74318"), n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
-            return n => (0, i.jsx)(r, N(P({}, n), {
-              guild: x,
-              channel: t,
-              streamUserId: 1 === e.length ? e[0].ownerId : null,
-              source: C.InstantInviteSources.GUILD_CHANNELS,
-              guildScheduledEvent: Z
-            }))
+            } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
+            return n => {
+              var l, o;
+              return (0, i.jsx)(r, (l = P({}, n), o = o = {
+                guild: x,
+                channel: t,
+                streamUserId: 1 === e.length ? e[0].ownerId : null,
+                source: C.t4x.GUILD_CHANNELS,
+                guildScheduledEvent: N
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var r = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, r)
+                }
+                return n
+              })(Object(o)).forEach(function(e) {
+                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+              }), l))
+            }
           })
         }
       },
       tabIndex: d,
-      "aria-label": T,
-      children: D
+      "aria-label": w,
+      children: R
     })
   })
 }
 
-function D(e) {
+function A(e) {
   let {
     channel: t
   } = e;
@@ -203,7 +178,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function R(e) {
   let {
     channel: t
   } = e;
@@ -226,33 +201,25 @@ function L(e) {
     })
   })
 }
-class M extends(r = Chunk647438.PureComponent) {
-  renderOptionsButton(e) {
-    let {
-      onContextMenu: t
-    } = e;
-    return (0, i.jsx)(T, N(P({}, this.props), {
-      onContextMenu: t
-    }))
-  }
+class D extends(r = Chunk647438.PureComponent) {
   renderEditButton() {
-    return (0, Chunk951288.jsx)(A, P({}, this.props))
+    return (0, Chunk951288.jsx)(w, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk951288.jsx)(R, P({}, this.props))
+    return (0, Chunk951288.jsx)(T, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, Chunk951288.jsx)(D, P({}, this.props))
+    return (0, Chunk951288.jsx)(A, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, Chunk951288.jsx)(L, P({}, this.props))
+    return (0, Chunk951288.jsx)(R, P({}, this.props))
   }
   getClassName() {
     let {
       position: e,
       sortingPosition: t
     } = this.props;
-    return w(module, exports)
+    return Z(module, exports)
   }
   isDisabled() {
     let {
@@ -260,9 +227,9 @@ class M extends(r = Chunk647438.PureComponent) {
       sorting: t,
       sortingType: n
     } = this.props;
-    return Z(module, exports, require)
+    return N(module, exports, require)
   }
 }
-I(M, "defaultProps", {
+I(D, "defaultProps", {
   isDefaultChannel: false
 })

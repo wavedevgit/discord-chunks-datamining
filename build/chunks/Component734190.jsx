@@ -136,8 +136,8 @@ function M(e) {
     thread: t
   } = e, n = i.useMemo(() => {
     var e;
-    return null != (e = (0, f.KS)(t)) ? e : u.or_
-  }, [t]), l = (0, f.bT)(t);
+    return null != (e = (0, h.KS)(t)) ? e : u.or_
+  }, [t]), l = (0, h.bT)(t);
   return (0, r.jsx)(c.u, {
     text: l,
     delay: 500,
@@ -158,7 +158,7 @@ let k = Chunk647438.memo(function(e) {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: c,
-    isLast: f,
+    isLast: h,
     withGuildIcon: A
   } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
     unread: U,
@@ -215,7 +215,7 @@ let k = Chunk647438.memo(function(e) {
     }),
     children: [(0, r.jsx)(L, {
       withGuildIcon: A
-    }), f ? null : (0, r.jsx)(L, {
+    }), h ? null : (0, r.jsx)(L, {
       withGuildIcon: A,
       inverted: true,
       style: {
@@ -257,7 +257,7 @@ let k = Chunk647438.memo(function(e) {
               className: T.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(h.Z, {
+              }), null == z ? null : (0, r.jsx)(f.Z, {
                 user: z,
                 size: u.EFr.SIZE_16
               })]

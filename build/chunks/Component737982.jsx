@@ -23,7 +23,7 @@ let _ = Chunk647438.memo(function(e) {
     guildId: t,
     selected: n
   } = e, _ = (0, o.f9)(), [O, y] = (0, s.ZT)([l.z.GAME_SERVER_HOSTING_NEW_BADGE], t), v = i.useCallback(() => {
-    O === l.z.GAME_SERVER_HOSTING_NEW_BADGE && y(f.L.USER_DISMISS), (0, u.uL)(p.Z5c.CHANNEL(t, h.oC.GAME_SERVERS))
+    O === l.z.GAME_SERVER_HOSTING_NEW_BADGE && y(h.L.USER_DISMISS), (0, u.uL)(p.Z5c.CHANNEL(t, f.oC.GAME_SERVERS))
   }, [t, O, y]), j = i.useRef(null), x = O === l.z.GAME_SERVER_HOSTING_NEW_BADGE;
   return (0, r.jsx)(a.yRy, {
     targetElementRef: j,

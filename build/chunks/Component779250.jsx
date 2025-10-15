@@ -288,7 +288,7 @@ function z(e) {
         null != r && c.ZP.createInvite(r, {
           max_age: _.value,
           max_uses: G.value
-        }, D.InstantInviteSources.GUILD_EVENTS), n ? I(e) : u()
+        }, D.t4x.GUILD_EVENTS), n ? I(e) : u()
       })(e.body), e
     }),
     L = i.useMemo(() => (0, Z.Z)(v, P), [v, P]);

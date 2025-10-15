@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,9 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk566564 = require("./566564.jsx"),
   Chunk795477 = require("./795477.jsx"),
   Chunk215023 = require("./215023.js");
-let E = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
+let v = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function v(e) {
+function E(e) {
   let {
     tab: t,
     sortedCategories: n,
@@ -33,31 +33,35 @@ function v(e) {
     refreshCategories: u
   } = e, h = O();
   x(h);
-  let v = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+  let E = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     [S, y] = l.useState(true),
-    k = l.useCallback(async (e, t, n) => {
+    [k, j] = l.useState(true),
+    T = l.useCallback(async (e, t, n, r) => {
       c(e, t);
-      let r = n && !v,
-        l = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      y(t), await s(l, r)
-    }, [v, s, c]),
-    j = (0, g.FF)("CollectiblesContent"),
+      let l = n && !E,
+        i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
+      y(t), j(!r), await s(i, l)
+    }, [E, s, c]),
+    L = (0, g.FF)("CollectiblesContent"),
     {
-      searchError: T
+      searchError: I
     } = (0, f.a)();
-  return j && null != T ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(C.Z, {
+  return L && null != I ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(C.Z, {
     onRetry: u,
     errorMessage: h,
     errorOrigin: C.i.SHOP_PAGE
-  }) : E.includes(t) ? (0, r.jsx)(_.Z, {
-    handleTransition: k,
+  }) : v.includes(t) ? (0, r.jsx)(_.Z, {
+    handleTransition: T,
     tab: t,
     transitionState: a
   }) : (0, r.jsx)(p.Z, {
     tab: t,
     sortedCategories: n,
     initialCategoryId: S,
-    onUnmount: () => y(true)
+    showFilterInitially: k,
+    onUnmount: () => {
+      y(true), j(true)
+    }
   })
 }
 let O = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),

@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => j,
-  S: () => y
+  I: () => E,
+  S: () => f
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js");
-let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
+let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     hideValue: Chunk246946.Z.hideInstantInvites
   }))(e => {
     let {
@@ -40,7 +40,7 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       disabled: a
     })
   }),
-  j = e => {
+  E = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
@@ -48,59 +48,59 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       onClose: r,
       modalState: d,
       isApplicationBypassToggleEnabled: c,
-      setInviteFlags: j,
-      copyValue: C,
-      changePage: N,
-      inviteChannel: f,
-      source: E,
+      setInviteFlags: E,
+      copyValue: y,
+      changePage: C,
+      inviteChannel: N,
+      source: _,
       code: T,
       guildScheduledEvent: b,
-      disabled: _,
-      application: M
+      disabled: j,
+      application: A
     } = e, {
-      maxAge: P,
-      maxUses: Z,
-      networkError: A,
+      maxAge: Z,
+      maxUses: M,
+      networkError: P,
       showVanityURL: w,
       flags: V
-    } = d, R = l.useCallback(() => {
-      h.default.track(x.rMx.COPY_INSTANT_INVITE, {
+    } = d, O = l.useCallback(() => {
+      g.default.track(x.rMx.COPY_INSTANT_INVITE, {
         server: u.Z.getGuildId(),
-        channel: null == f ? true : f.id,
-        channel_type: null == f ? true : f.type,
-        location: E,
+        channel: null == N ? true : N.id,
+        channel_type: null == N ? true : N.type,
+        location: _,
         code: T,
         guild_scheduled_event_id: null == b ? true : b.id,
-        application_id: null == M ? true : M.id
+        application_id: null == A ? true : A.id
       })
-    }, [null == M ? true : M.id, f, E, T, b]);
+    }, [null == A ? true : A.id, N, _, T, b]);
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
-      children: [(0, i.jsx)(y, {
-        value: C,
+      children: [(0, i.jsx)(f, {
+        value: y,
         autoFocus: a,
-        onCopy: R,
-        disabled: _
+        onCopy: O,
+        disabled: j
       }), c && (0, i.jsx)(o.rsf, {
-        checked: (0, g.yE)(V, s.$.IS_APPLICATION_BYPASS),
-        onChange: e => j((0, g.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
-        disabled: _,
+        checked: (0, h.yE)(V, s.$.IS_APPLICATION_BYPASS),
+        onChange: e => E((0, h.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
+        disabled: j,
         label: I.intl.string(I.t["1i1bUl"]),
         description: I.intl.string(I.t["jvd/LC"])
       }), n || w ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [(0, m.Vg)(P, Z), " ", a ? (0, i.jsx)(o.Anchor, {
-          onClick: () => N(v.RV.SETTINGS),
+        children: [(0, m.Vg)(Z, M), " ", a ? (0, i.jsx)(o.Anchor, {
+          onClick: () => C(p.RV.SETTINGS),
           children: I.intl.string(I.t.VNe8Pz)
         }) : null]
       }), !n && a && w ? (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
         children: [I.intl.string(I.t["0M2U9/"]), " "]
-      }) : null, null != A ? (0, i.jsx)(p.W, {
+      }) : null, null != P ? (0, i.jsx)(v.W, {
         guild: t,
-        error: A,
+        error: P,
         onClose: r
       }) : null]
     })

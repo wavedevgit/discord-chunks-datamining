@@ -32,55 +32,56 @@ function y(e) {
     tab: t,
     sortedCategories: n,
     initialCategoryId: i,
-    onUnmount: c
+    showFilterInitially: c = true,
+    onUnmount: u
   } = e;
   (0, g.A)();
-  let u = (0, d.FF)("CollectiblesBrowse"),
-    f = l.useRef(null),
+  let f = (0, d.FF)("CollectiblesBrowse"),
+    p = l.useRef(null),
     {
-      handleScroll: p
-    } = (0, a.z)(f, t),
+      handleScroll: h
+    } = (0, a.z)(p, t),
     {
-      setCategoryRef: h,
-      handleScrollToCategory: m
-    } = (0, C.xV)(f.current),
-    [b, E] = l.useState(u),
-    [v, O] = l.useState(false);
+      setCategoryRef: m,
+      handleScrollToCategory: b
+    } = (0, C.xV)(p.current),
+    [v, E] = l.useState(f && c),
+    [O, x] = l.useState(false);
   return l.useEffect(() => {
-    null != i && m(i)
-  }, [i, m]), l.useEffect(() => () => {
-    null != c && c()
+    null != i && b(i)
+  }, [i, b]), l.useEffect(() => () => {
+    null != u && u()
   }, []), l.useEffect(() => {
     let e = () => {
-      O(window.innerWidth < 1400)
+      x(window.innerWidth < 1400)
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    u || E(false)
-  }, [u, E]), (0, r.jsx)("div", {
+    f || E(false)
+  }, [f, E]), (0, r.jsx)("div", {
     className: o()(S.pageWrapper, {
-      [S.pageWrapperFilter]: u
+      [S.pageWrapperFilter]: f
     }),
     children: (0, r.jsxs)("main", {
       className: o()(S.page, {
-        [S.pageFilter]: u
+        [S.pageFilter]: f
       }),
       children: [(0, r.jsx)(s.yWw, {
         className: S.shopScroll,
-        ref: f,
-        onScroll: p,
+        ref: p,
+        onScroll: h,
         children: (0, r.jsx)(k, {
-          isSmallScreen: v,
-          filterBarOpen: b,
+          isSmallScreen: O,
+          filterBarOpen: v,
           setFilterBarOpen: E,
           tab: t,
-          scrollerRef: f,
+          scrollerRef: p,
           sortedCategories: n,
-          setCategoryRef: h
+          setCategoryRef: m
         })
-      }), b && !v && (0, r.jsx)("div", {
+      }), v && !O && (0, r.jsx)("div", {
         className: S.divider
-      }), b && !v && (0, r.jsx)(s.Ttm, {
+      }), v && !O && (0, r.jsx)(s.Ttm, {
         className: S.filterBar,
         children: (0, r.jsx)(_.Z, {})
       })]
@@ -181,7 +182,7 @@ let k = e => {
       }), j && !L ? (0, r.jsx)(b.Z, {
         scrollerRef: C,
         tab: a
-      }, a) : (0, v.RE)(a) ? (0, r.jsx)(E.Z, {
+      }, a) : (0, E.RE)(a) ? (0, r.jsx)(v.Z, {
         scrollerRef: C,
         tab: a
       }, a) : (0, r.jsx)(u.k0, {

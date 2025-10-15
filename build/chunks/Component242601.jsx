@@ -211,9 +211,9 @@ class em extends Chunk647438.PureComponent {
       bannerVisibleHeight: d,
       communityInfoVisible: p
     } = this.state, h = i || l || a;
-    return null == t ? null : (0, w.jW)({
+    return null == t ? null : (0, w.LK)({
       location: "guild_sidebar"
-    }).entrypoints ? (0, r.jsx)(O.Gt, {
+    }).isGuildEntrypointEnabled ? (0, r.jsx)(O.Gt, {
       value: o,
       children: (0, r.jsx)(ee.ZP, {
         guild: t,
@@ -372,7 +372,7 @@ class em extends Chunk647438.PureComponent {
       null != t && (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("74318"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("59077"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("36599"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("87641"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
         return n => (0, r.jsx)(e, ep(ed({}, n), {
           guild: t
         }))
@@ -429,9 +429,9 @@ class em extends Chunk647438.PureComponent {
         guild: c,
         renderGuildHeaderDropdownButton: () => this.renderGuildHeaderDropdownButton(e)
       }))
-    }), eu(this, "renderGuildHeaderDropdownButton", e => (0, w.jW)({
+    }), eu(this, "renderGuildHeaderDropdownButton", e => (0, w.LK)({
       location: "guild_sidebar"
-    }).entrypoints ? (0, r.jsx)(ee.wD, {
+    }).isGuildEntrypointEnabled ? (0, r.jsx)(ee.wD, {
       open: e
     }) : (0, r.jsx)(m.Z, {
       open: e,

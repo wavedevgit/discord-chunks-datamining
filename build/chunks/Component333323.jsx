@@ -130,9 +130,9 @@ function L(e) {
               children: [G && (0, l.jsx)(y.Z, {
                 guildId: a.id,
                 welcomeMessage: U
-              }), G && (0, l.jsx)(I.Z, {
+              }), G && (0, l.jsx)(Z.Z, {
                 guildId: a.id
-              }), !G || q ? (0, l.jsx)(Z.ZP, {
+              }), !G || q ? (0, l.jsx)(I.ZP, {
                 guild: a,
                 isNewMember: G
               }) : null]

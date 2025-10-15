@@ -22,13 +22,13 @@ let C = e => {
     category: _,
     subblock: m,
     badgeText: b,
-    handleTransition: E
+    handleTransition: v
   } = e;
   null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let v = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
+  let E = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
     {
       handleCardVisibilityChange: O
-    } = (0, u.E)(v, "home", "marketing featured block"),
+    } = (0, u.E)(E, "home", "marketing featured block"),
     x = (0, d.YG)(_, m),
     S = l.useRef(null),
     y = null == m ? true : m.bodyText,
@@ -61,9 +61,9 @@ let C = e => {
         backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
-        E("shop marketing tile", v), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        v("shop marketing tile", E, true, true), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == k ? true : k.sessionId,
-          sku_id: v,
+          sku_id: E,
           page_type: "home",
           page_section: null == k ? true : k.pageSection,
           page_category: null == k ? true : k.pageCategory,
@@ -93,9 +93,9 @@ let C = e => {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", v), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            v("shop marketing take me there button", E, true, true), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == k ? true : k.sessionId,
-              sku_id: v,
+              sku_id: E,
               page_type: "home",
               page_section: null == k ? true : k.pageSection,
               page_category: null == k ? true : k.pageCategory,

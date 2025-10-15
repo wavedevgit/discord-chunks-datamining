@@ -2,7 +2,7 @@
 /** chunk id: 275850, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => S
+  ZP: () => A
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -106,65 +106,79 @@ function I(e, t) {
   throw Error("Invalid Payment Source")
 }
 
-function T(e, t) {
+function T(e, t, n) {
+  if (t.value === O) return (0, r.jsx)("div", {
+    className: g.paymentSourceLabel,
+    children: t.label
+  });
+  if (null != e) {
+    let {
+      brand: t,
+      label: i
+    } = I(e, n);
+    return (0, r.jsxs)("div", {
+      className: g.paymentSourceSelectedOption,
+      children: [null != t ? (0, r.jsx)(d.ZP, {
+        type: d.ZP.getType(t)
+      }) : null, (0, r.jsx)("div", {
+        className: o()(g.paymentSourceLabel, {
+          [g.error]: e.invalid
+        }),
+        children: i
+      })]
+    })
+  }
+  return (0, r.jsx)("div", {
+    className: g.paymentSourceLabel,
+    children: t.label
+  })
+}
+
+function S(e, t) {
   let n = null;
   return e && null != t && !t.canRedeemTrial() ? n = m.intl.string(m.t.SvheW1) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = m.intl.format(m.t.d7ZLKC, {
     helpDeskArticle: _.Z.getArticleURL(p.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
 
-function S(e) {
+function A(e) {
   let {
     label: t,
     selectedPaymentSourceId: n,
     paymentSources: a,
     prependOption: u,
-    hidePersonalInformation: _,
-    onChange: p,
-    onPaymentSourceAdd: h,
-    isTrial: E = false,
-    disabled: b = false,
-    className: y,
-    optionClassName: S,
+    hidePersonalInformation: d,
+    onChange: _,
+    onPaymentSourceAdd: p,
+    isTrial: h = false,
+    disabled: E = false,
+    className: b,
+    optionClassName: y,
     dropdownLoading: A,
     paymentGatewayRestrictions: C
   } = e, N = 0 === a.length, R = e => {
-    if (e === O) null != h && h();
+    if (e === O) null != p && p();
     else {
       let t = a.find(t => t.id === e);
-      null != p && p(t)
+      null != _ && _(t)
     }
   }, P = [...null != u ? [u] : [], ...a, v].map((e, t) => {
     if (e instanceof f.ZP) {
       let {
-        brand: t,
-        label: n
-      } = I(e, _), i = e === v || null == C || (null == C ? true : C.includes(e.paymentGateway));
+        label: t
+      } = I(e, d), n = e === v || null == C || (null == C ? true : C.includes(e.paymentGateway));
       return {
         value: e.id,
-        label: (0, r.jsxs)("div", {
-          className: g.paymentSourceSelectedOption,
-          children: [null != t ? (0, r.jsx)(d.ZP, {
-            type: d.ZP.getType(t)
-          }) : null, (0, r.jsx)("div", {
-            className: o()(g.paymentSourceLabel, {
-              [g.error]: e.invalid
-            }),
-            children: n
-          })]
-        }),
-        disabled: !i
+        label: t,
+        disabled: !n
       }
     }
     return {
       key: t,
       value: e.value,
-      label: (0, r.jsx)("div", {
-        className: g.paymentSourceLabel,
-        children: e.label
-      })
+      label: e.label
     }
-  }), w = T(E, i.useMemo(() => a.find(e => e.id === n), [a, n]));
+  }), w = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), D = S(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
   if (null == n && null != C && C.length > 0) {
     let e = a.filter(e => C.includes(e.paymentGateway));
     n = 0 === e.length ? O : e[0].id
@@ -173,26 +187,27 @@ function S(e) {
     children: [N ? (0, r.jsx)(l.zxk, {
       variant: "primary",
       fullWidth: true,
-      onClick: h,
+      onClick: p,
       text: m.intl.string(m.t.eQ2bLi)
     }) : (0, r.jsx)(c.q4e, {
       options: P,
       value: n,
       label: t,
       onChange: R,
-      isDisabled: b,
+      isDisabled: E,
       className: o()({
-        [g.paymentSourceHasWarning]: null != w
-      }, y),
-      optionClassName: S,
+        [g.paymentSourceHasWarning]: null != D
+      }, b),
+      optionClassName: y,
       placeholder: m.intl.string(m.t["8lqkf3"]),
       renderOptionValue: e => {
         let [t] = e;
         return A ? (0, r.jsx)(c.$jN, {
           type: c.RAz.SPINNING_CIRCLE
-        }) : t.label
-      }
-    }), null != w ? (0, r.jsxs)("div", {
+        }) : T(null == t.value ? true : w.get(t.value), t, d)
+      },
+      renderOptionLabel: e => T(null == e.value ? true : w.get(e.value), e, d)
+    }), null != D ? (0, r.jsxs)("div", {
       className: g.paymentSourceWarning,
       children: [(0, r.jsx)(c.Mgn, {
         size: "custom",
@@ -202,7 +217,7 @@ function S(e) {
         color: s.Z.unsafe_rawColors.YELLOW_300.css
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
-        children: w
+        children: D
       })]
     }) : null]
   })

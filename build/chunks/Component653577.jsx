@@ -30,7 +30,7 @@ function _(e) {
     showEmptyChannelTopic: v
   } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, c.ZP)(t, true), E = (!y || !!v) && C, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      x && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })

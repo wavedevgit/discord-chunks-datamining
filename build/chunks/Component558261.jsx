@@ -225,7 +225,7 @@ let B = e => {
     } = e, g = (0, i.e7)([f.default], () => f.default.getCurrentUser()), C = p.ZP.canUseCollectibles(g), {
       isPurchased: O,
       isPartiallyOwnedBundle: x
-    } = (0, E.L)(t), k = (0, _.G1)(t), j = (0, _.rN)(t), {
+    } = (0, v.L)(t), k = (0, _.G1)(t), j = (0, _.rN)(t), {
       isDisabled: T
     } = (0, b.G)(t.skuId), L = (0, _.ne)({
       product: t,
@@ -242,7 +242,7 @@ let B = e => {
       hasDiscountOffer: D
     }), {
       analyticsLocations: U
-    } = (0, a.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), V = (0, v.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, G] = (0, i.Wu)([h.Z], () => [h.Z.isClaiming === t.skuId, null != h.Z.isClaiming && h.Z.isClaiming !== t.skuId]), {
+    } = (0, a.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), V = (0, E.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, G] = (0, i.Wu)([h.Z], () => [h.Z.isClaiming === t.skuId, null != h.Z.isClaiming && h.Z.isClaiming !== t.skuId]), {
       handleUseNow: K,
       isApplying: Y
     } = (0, m.W)({
@@ -276,7 +276,7 @@ let B = e => {
     }) : M && !F ? (0, r.jsx)(N, {
       handlePreviewButtonClick: V,
       text: c
-    }) : u === v.tA.ORBS ? (0, r.jsx)(H, {
+    }) : u === E.tA.ORBS ? (0, r.jsx)(H, {
       handlePreviewButtonClick: V,
       text: c
     }) : (0, r.jsx)(B, {
@@ -301,7 +301,7 @@ let B = e => {
       text: o,
       prioritizedCurrency: s,
       onClickAnalytics: a
-    } = e, c = (0, v.LJ)(t);
+    } = e, c = (0, E.LJ)(t);
     if (null == c) return null;
     let u = (0, x.W)(c, l);
     return (0, r.jsx)(D, {

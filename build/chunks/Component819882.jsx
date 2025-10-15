@@ -25,7 +25,7 @@ let p = e => {
       icon: C,
       prioritizedCurrency: h,
       onClickAnalytics: _
-    } = e, m = (0, s.Nd)(), b = null == m ? true : m.tab, E = (0, o.sp)(), v = (0, d.J)(t, h), O = (0, c.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
+    } = e, m = (0, s.Nd)(), b = null == m ? true : m.tab, v = (0, o.sp)(), E = (0, d.J)(t, h), O = (0, c.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
     return null != p || null != C ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
@@ -33,9 +33,9 @@ let p = e => {
       onClick: e => {
         e.stopPropagation(), null != p ? p(t.skuId) : O(e)
       }
-    }) : v ? (0, r.jsx)(o.k0, {
+    }) : E ? (0, r.jsx)(o.k0, {
       newValue: {
-        pageCategory: b === g.AW.HOME || null == E ? true : E.pageCategory
+        pageCategory: b === g.AW.HOME || null == v ? true : v.pageCategory
       },
       children: (0, r.jsx)(a.Z, {
         primary: true,

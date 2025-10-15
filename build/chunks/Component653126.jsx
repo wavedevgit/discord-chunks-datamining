@@ -49,7 +49,7 @@ let S = Chunk647438.memo(function(e) {
       cardClassName: M,
       prioritizedCurrency: F,
       onClickAnalytics: W
-    } = e, U = (0, d.Nd)(), V = null == U ? true : U.tab, z = (0, v.zQ)(t), G = l.useRef(null), {
+    } = e, U = (0, d.Nd)(), V = null == U ? true : U.tab, z = (0, E.zQ)(t), G = l.useRef(null), {
       isHoveringOrFocusing: K
     } = (0, u.Z)(G), {
       handleCardVisibilityChange: Y
@@ -78,7 +78,7 @@ let S = Chunk647438.memo(function(e) {
                 badgeOverride: T,
                 className: D,
                 prioritizedCurrency: F
-              }), !n && (0, r.jsx)(E.Z, {
+              }), !n && (0, r.jsx)(v.Z, {
                 skuId: t.skuId,
                 isCardHovered: K
               })]

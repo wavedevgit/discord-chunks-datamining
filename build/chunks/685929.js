@@ -9,10 +9,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function c(n) {
-  let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : i.Z;
-  return null != n && null != n.linkedLobby && e.can(l.Plq.MANAGE_CHANNELS, n) && e.can(l.Plq.VIEW_CHANNEL, n) && e.can(l.Plq.SEND_MESSAGES, n)
+  let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.Z;
+  return null != n && null != n.linkedLobby && e.can(i.Plq.MANAGE_CHANNELS, n) && e.can(i.Plq.VIEW_CHANNEL, n) && e.can(i.Plq.SEND_MESSAGES, n)
 }
 
 function o(n) {
-  return (0, r.e7)([i.Z], () => c(n, i.Z))
+  return (0, r.e7)([l.Z], () => c(n, l.Z))
 }

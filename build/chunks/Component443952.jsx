@@ -201,7 +201,7 @@ let G = {
       } else(0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("74318"), n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
         return t => {
           var n, a;
           return (0, r.jsx)(e, (n = function(e) {
@@ -226,7 +226,7 @@ let G = {
             channel: l,
             applicationId: i.id,
             analyticsLocation: k.Sbl.ACTIVITY_RPC,
-            source: k.InstantInviteSources.ACTIVITY_INVITE
+            source: k.t4x.ACTIVITY_INVITE
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

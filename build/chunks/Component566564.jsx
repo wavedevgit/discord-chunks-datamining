@@ -81,7 +81,7 @@ let I = e => {
       errorMessage: N.message
     }) : A || 0 === P.length ? (0, r.jsxs)("div", {
       className: o()(L.loadingContainer, L.feedContent),
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(E.Z, {
         isLoading: A,
         handleTransition: n,
         tab: c
@@ -89,7 +89,7 @@ let I = e => {
         isLoading: A,
         handleTransition: n,
         categories: []
-      }), (0, r.jsx)(E.Z, {
+      }), (0, r.jsx)(v.Z, {
         isLoading: A,
         title: c === k.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
         numVisibleItems: i,
@@ -102,7 +102,7 @@ let I = e => {
           d = false;
         switch (e.type) {
           case s.z.HERO:
-            u = (0, r.jsx)(v.Z, {
+            u = (0, r.jsx)(E.Z, {
               isLoading: A,
               handleTransition: n,
               heroBlock: e,
@@ -118,7 +118,7 @@ let I = e => {
             break;
           case s.z.FEED:
             let f = e.sortedSkuIds;
-            u = (0, r.jsx)(E.Z, {
+            u = (0, r.jsx)(v.Z, {
               title: c === k.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
               isLoading: A || a,
               numVisibleItems: i,
@@ -212,7 +212,7 @@ let I = e => {
               variant: "primary",
               text: T.intl.string(T.t.AfrvRE),
               onClick: () => {
-                t("shop all button", true, true), u.default.track(j.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                t("shop all button", true, true, false), u.default.track(j.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == f ? true : f.sessionId,
                   page_type: n,
                   page_category: n === k.AW.HOME || null == f ? true : f.pageCategory,

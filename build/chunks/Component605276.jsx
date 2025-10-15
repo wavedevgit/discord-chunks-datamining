@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 605276, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,14 +41,14 @@ let v = Chunk647438.memo(function(e) {
       channelId: n,
       title: t,
       icon: o
-    } = e, d = (0, a.e7)([m.Z], () => m.Z.getChannel(n)), x = (0, a.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, a.e7)([f.Z], () => f.Z.can(b.Plq.VIEW_CHANNEL, d)), v = x.first(), _ = (0, c.zy)(v, false), I = (null == _ ? true : _.length) > 0 ? _[0] : null, Z = null != d && null == v && !x.loadingMore && !x.ready && !x.hasFetched && j;
+    } = e, d = (0, a.e7)([m.Z], () => m.Z.getChannel(n)), x = (0, a.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, a.e7)([f.Z], () => f.Z.can(b.Plq.VIEW_CHANNEL, d)), v = x.first(), _ = (0, c.zy)(v, false), Z = (null == _ ? true : _.length) > 0 ? _[0] : null, I = null != d && null == v && !x.loadingMore && !x.ready && !x.hasFetched && j;
     return r.useEffect(() => {
-      Z && s.Z.fetchMessages({
+      I && s.Z.fetchMessages({
         channelId: n,
         after: n,
         limit: 5
       })
-    }, [n, Z]), (0, l.jsx)(i.P3F, {
+    }, [n, I]), (0, l.jsx)(i.P3F, {
       className: C.resourceChannel,
       onClick: e => {
         null != d && (e.shiftKey ? (0, p.C3)(d.guild_id, d.id) : u.Z.openResourceChannelAsSidebar({
@@ -67,10 +67,10 @@ let v = Chunk647438.memo(function(e) {
             className: C.resourceImage,
             alt: "",
             "aria-hidden": true
-          }) : null != I ? (0, l.jsx)("img", {
+          }) : null != Z ? (0, l.jsx)("img", {
             className: C.resourceImage,
-            src: I.src,
-            alt: I.alt
+            src: Z.src,
+            alt: Z.alt
           }) : (0, l.jsx)("div", {
             className: C.placeholderImage,
             children: (0, l.jsx)(i.hH0, {
@@ -87,7 +87,7 @@ let v = Chunk647438.memo(function(e) {
       })
     }, n)
   },
-  I = Chunk647438.memo(function(e) {
+  Z = Chunk647438.memo(function(e) {
     let {
       guild: n
     } = e, t = (0, x.Z)(n.id);
@@ -111,7 +111,7 @@ let v = Chunk647438.memo(function(e) {
       })
     })
   }),
-  Z = Chunk647438.memo(function(e) {
+  I = Chunk647438.memo(function(e) {
     let {
       guild: n,
       isNewMember: t
@@ -120,7 +120,7 @@ let v = Chunk647438.memo(function(e) {
       className: C.sidebar,
       children: [(0, l.jsx)(v, {
         guild: n
-      }), t && (0, l.jsx)(I, {
+      }), t && (0, l.jsx)(Z, {
         guild: n
       })]
     })

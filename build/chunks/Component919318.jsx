@@ -45,23 +45,23 @@ function M(e) {
       channel: c
     }),
     m = (0, f.MC)(d),
-    p = (0, s.e7)([I.Z], () => I.Z.isFocused()),
+    p = (0, s.e7)([Z.Z], () => Z.Z.isFocused()),
     x = (0, h.d$)(r.src),
     C = b.QK.useSetting(),
     {
       src: v,
       width: _,
-      height: Z,
+      height: I,
       alt: y
     } = r;
-  return Z > _ ? t = 72 : n = 72, (0, l.jsxs)("div", {
+  return I > _ ? t = 72 : n = 72, (0, l.jsxs)("div", {
     className: E.media,
     children: [(0, g.Yi)({
       src: v,
       maxHeight: n,
       maxWidth: t,
       width: _,
-      height: Z,
+      height: I,
       alt: null != y && o && null != m ? m : y,
       autoPlay: C,
       animated: x && !o && p,
@@ -88,11 +88,11 @@ function k(e) {
         limit: 5
       })
     }, [n.channelId, b]), null == t || null == t.guild_id) return null;
-  let C = Z.ZP.getResourceChannelIconURL({
+  let C = I.ZP.getResourceChannelIconURL({
       channelId: t.id,
       icon: n.icon
     }),
-    I = null == n.description || 0 === n.description.length;
+    Z = null == n.description || 0 === n.description.length;
   return (0, l.jsxs)(c.P3F, {
     className: E.row,
     onClick: e => {
@@ -108,7 +108,7 @@ function k(e) {
         variant: "text-md/bold",
         color: "header-primary",
         children: n.title
-      }), I && null != f && (0, l.jsx)(c.Text, {
+      }), Z && null != f && (0, l.jsx)(c.Text, {
         className: E.messageContent,
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -117,7 +117,7 @@ function k(e) {
           guildId: t.guild_id,
           channelId: t.id
         })
-      }), !I && (0, l.jsx)(c.Text, {
+      }), !Z && (0, l.jsx)(c.Text, {
         className: i()(E.messageContent, S.markup),
         variant: "text-sm/normal",
         color: "header-secondary",

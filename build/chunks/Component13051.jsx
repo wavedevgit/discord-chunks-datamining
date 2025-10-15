@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 13051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -172,10 +172,10 @@ function D(e) {
     }, [o, l.id]), l.enabled && null != l.user) t = [{
     icon: g.T39,
     text: W ? w.intl.formatToPlainString(w.t.gcdJ8P, {
-      timestamp: I.default.extractTimestamp(l.id)
+      timestamp: E.default.extractTimestamp(l.id)
     }) : w.intl.formatToPlainString(w.t.Nu9sam, {
       user: null != l.user ? new y.Z(l.user).tag : null,
-      timestamp: I.default.extractTimestamp(l.id)
+      timestamp: E.default.extractTimestamp(l.id)
     })
   }];
   else {
@@ -191,7 +191,7 @@ function D(e) {
   let ei = (0, i.jsxs)(x.Z, {
       className: T.header,
       align: x.Z.Align.CENTER,
-      children: [(0, i.jsx)(E.Z, {
+      children: [(0, i.jsx)(I.Z, {
         name: "".concat(l.name),
         detailsClassName: T.description,
         details: t

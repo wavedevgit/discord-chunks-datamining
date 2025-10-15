@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 208567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => j,
@@ -83,8 +83,8 @@ class v extends(i = Chunk647438.PureComponent) {
       className: C,
       imageClassName: N,
       iconClassName: S,
-      iconWrapperClassName: I,
-      icon: E,
+      iconWrapperClassName: E,
+      icon: I,
       hideSize: P,
       imageStyle: w,
       showRemoveButton: T,
@@ -107,7 +107,7 @@ class v extends(i = Chunk647438.PureComponent) {
         }),
         children: [i, _ && (0, Chunk951288.jsx)("div", {
           className: o()(Chunk270956.imageUploaderIcon, Chunk270956.imageUploaderIconDisabled, S),
-          children: E
+          children: I
         })]
       })
     });
@@ -127,7 +127,7 @@ class v extends(i = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk481060.tEY, {
         within: true,
         children: (0, Chunk951288.jsxs)("div", {
-          className: O ? o()(Chunk270956.imageUploaderIconWrapper, I) : true,
+          className: O ? o()(Chunk270956.imageUploaderIconWrapper, E) : true,
           children: [(0, Chunk951288.jsxs)("div", {
             className: o()(Chunk270956.imageUploaderInner, N),
             style: x(h({}, w), {
@@ -155,7 +155,7 @@ class v extends(i = Chunk647438.PureComponent) {
             children: Chunk512722
           }), O && (0, Chunk951288.jsx)(j, {
             className: S,
-            icon: E
+            icon: I
           })]
         })
       }), T ? Chunk647438 : null]

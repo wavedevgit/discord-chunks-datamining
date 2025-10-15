@@ -1,4 +1,4 @@
-/** Chunk was on 59077 **/
+/** Chunk was on 87641 **/
 /** chunk id: 995390, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -71,11 +71,11 @@ function O(e, t, n) {
     C = null != n ? n : t,
     N = null != n ? O : a,
     S = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
-    I = i.useMemo(() => Object.keys(S).length, [S]),
-    E = i.useMemo(() => null == N || null == S ? null : !o().isEqual(N, S), [N, S]);
+    E = i.useMemo(() => Object.keys(S).length, [S]),
+    I = i.useMemo(() => null == N || null == S ? null : !o().isEqual(N, S), [N, S]);
   return i.useEffect(() => {
-    C === t && (E ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
-  }, [t, E, C]), {
+    C === t && (I ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
+  }, [t, I, C]), {
     originalApplicationPermissions: a,
     originalCommandPermissions: O,
     editedTargetPermissions: function(e, t) {
@@ -144,7 +144,7 @@ function O(e, t, n) {
         return l
       }, [O, n, r, o, t, _, C])
     }(e, S),
-    hasChanges: E,
-    selectedPermissionCount: I
+    hasChanges: I,
+    selectedPermissionCount: E
   }
 }
