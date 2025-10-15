@@ -5,26 +5,24 @@ require.d(exports, {
   O: () => l,
   Z: () => c
 });
-var Chunk306968 = require("./306968.js"),
+var Chunk629874 = require("./629874.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk586393 = require("./586393.js"),
-  Chunk464912 = require("./464912.js"),
+  Chunk668146 = require("./668146.js"),
+  Chunk90696 = require("./90696.js"),
   l = function(e) {
     return e[e.THROW_EMOJI = 0] = "THROW_EMOJI", e[e.SNOW = 1] = "SNOW", e
   }({});
 let c = {
-  experiment: Chunk306968.Z,
-  startTimeMs: 17346312e5,
-  endTimeMs: 17359524e5,
+  experiment: Chunk629874.Z,
+  startTimeMs: 1760976e6,
+  endTimeMs: 17621892e5,
   isDesktopOnly: true,
-  soundpack: Chunk871465.Y.WINTER_HOLIDAY,
-  soundpackLabel: Chunk388032.t.Z5OQNj,
+  soundpack: Chunk871465.Y.HALLOWEEN,
+  soundpackLabel: Chunk388032.t["+LasFR"],
   appSpinnerSources: {
-    webmDark: Chunk586393,
-    webmLight: Chunk464912
+    webmDark: Chunk668146,
+    webmLight: Chunk90696
   },
-  emojiAnimationType: 1,
-  emojiAnimationTriggers: ["snowflake"],
-  triggerEmojiAnimationFromSentMessage: false
+  getLoadingTips: () => [Chunk388032.intl.string(Chunk388032.t.ydMZ2t), Chunk388032.intl.string(Chunk388032.t["AL/Soa"]), Chunk388032.intl.string(Chunk388032.t.w2pMur), Chunk388032.intl.string(Chunk388032.t.WB9eZm), Chunk388032.intl.string(Chunk388032.t["rE+3z8"]), Chunk388032.intl.string(Chunk388032.t.qvtjMz), Chunk388032.intl.string(Chunk388032.t.irDT8f), Chunk388032.intl.string(Chunk388032.t.TlJKIS), Chunk388032.intl.string(Chunk388032.t["m+xpaG"]), Chunk388032.intl.string(Chunk388032.t.MElQER), Chunk388032.intl.string(Chunk388032.t.aRr1ur)]
 }

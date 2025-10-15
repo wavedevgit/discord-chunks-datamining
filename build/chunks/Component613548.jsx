@@ -43,16 +43,14 @@ function M(e) {
     let e = Date.now();
     return s()(P.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, _.ZP)(e)).sortBy(t => -P.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
-  return 0 === r.length ? null : (0, i.jsx)(i.Fragment, {
-    children: r.map((e, t) => (0, i.jsx)(u.u, {
+  return 0 === r.length ? null : (0, i.jsx)("div", {
+    className: w.speakers,
+    children: r.map(e => (0, i.jsx)(u.u, {
       position: "bottom",
       text: A.intl.formatToPlainString(A.t.JjdizM, {
         username: e.user.username
       }),
       children: (0, i.jsx)(S.ZP, {
-        className: a()(w.speaker, {
-          [w.last]: t === r.length - 1
-        }),
         user: e.user,
         speaking: true,
         collapsed: true,

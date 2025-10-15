@@ -202,10 +202,10 @@ function q(e) {
     _ = null != g.Z.useHolidaySoundpack();
   return (0, r.jsx)(C.F, {
     setting: G.s6.NOTIFICATIONS_SOUNDS,
-    children: (0, r.jsxs)("div", {
-      children: [_ ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsxs)(u.C3N, {
+    children: (0, r.jsx)("div", {
+      children: (0, r.jsxs)(u.C3N, {
         label: F.intl.string(F.t.MKWyKS),
-        children: [(0, r.jsx)(u.rsf, {
+        children: [_ ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(u.rsf, {
           label: F.intl.string(F.t.lF5GGR),
           description: F.intl.string(F.t["7oXUio"]),
           checked: a,
@@ -236,7 +236,7 @@ function q(e) {
             }) : null]
           }, o)
         })]
-      })]
+      })
     })
   })
 }
