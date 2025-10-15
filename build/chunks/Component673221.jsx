@@ -217,6 +217,7 @@ function P(e) {
       isOpen: W,
       isInert: es,
       hasValue: eo,
+      hasError: (null == en ? true : en.errorMessageId) != null,
       width: eh,
       handleToggle: eu,
       handleClear: ef

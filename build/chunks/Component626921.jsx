@@ -25,11 +25,12 @@ function d(e) {
     isOpen: d,
     isInert: p,
     hasValue: h,
-    showChevronButton: m = true,
-    width: g,
-    children: E,
-    handleToggle: b,
-    handleClear: y
+    hasError: m,
+    showChevronButton: g = true,
+    width: E,
+    children: b,
+    handleToggle: y,
+    handleClear: O
   } = e;
   return (0, r.jsxs)(s.U, {
     ref: t,
@@ -41,24 +42,27 @@ function d(e) {
       [u.isInert]: p
     }),
     style: c ? true : {
-      width: "min(".concat(g, ", 100%)")
+      width: "min(".concat(E, ", 100%)")
     },
     "data-mana-component": "select-input-field",
     disabled: n,
     readOnly: i,
     fullWidth: c,
+    validation: m ? {
+      hasError: true
+    } : true,
     "aria-busy": o,
     children: [(0, r.jsx)("div", {
       className: u.selectFieldContent,
-      children: E
+      children: b
     }), (0, r.jsx)(f, {
       show: true === l && !p && true === h,
-      iconSize: m ? "xs" : "sm",
-      onClick: y
+      iconSize: g ? "xs" : "sm",
+      onClick: O
     }), (0, r.jsx)(_, {
-      show: m,
+      show: g,
       isOpen: d,
-      onClick: b
+      onClick: y
     })]
   })
 }

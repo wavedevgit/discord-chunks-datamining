@@ -44,7 +44,8 @@ function h(e) {
       include_unpublished_collection: l
     },
     oldFormErrors: true,
-    rejectWithError: false
+    rejectWithError: false,
+    retries: 2
   }).then(t => {
     let n = t.body.products.reduce((e, t) => {
       let n = (0, d.m)(t);
@@ -68,7 +69,8 @@ function x(e) {
     })
   }, 5e3) : a.tn.get({
     url: p.ANM.GAME_SERVERS(e),
-    rejectWithError: true
+    rejectWithError: true,
+    retries: 2
   }).then(t => {
     if (null != t.body) {
       let n = t.body.reduce((e, t) => (e[t.id] = (0, c.Z)(t), e), {});
@@ -84,7 +86,8 @@ function x(e) {
 function f(e, t) {
   return a.tn.get({
     url: p.ANM.PRODUCT_FOR_SKU(t),
-    rejectWithError: true
+    rejectWithError: true,
+    retries: 3
   }).then(n => {
     if (null != n.body) {
       var a, i, l, o;
@@ -162,7 +165,8 @@ function C(e) {
   return a.tn.get({
     url: p.ANM.GAME_SERVER_REGIONS(e),
     rejectWithError: true,
-    oldFormErrors: true
+    oldFormErrors: true,
+    retries: 3
   }).then(e => {
     r.Z.dispatch({
       type: "GAME_SERVER_FETCH_REGIONS_SUCCESS",

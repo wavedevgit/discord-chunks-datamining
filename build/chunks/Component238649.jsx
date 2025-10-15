@@ -2,7 +2,7 @@
 /** chunk id: 238649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,6 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk431 = require("./431.js"),
   Chunk357355 = require("./357355.js"),
   Chunk140465 = require("./140465.js"),
+  Chunk931118 = require("./931118.js"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
   Chunk105759 = require("./105759.js"),
@@ -31,80 +32,82 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350169 = require("./350169.js");
-let P = (e, t) => {
+let w = (e, t) => {
     var n;
     let {
       className: i,
       subscriptionTier: a,
-      isEligibleForBogoPromotion: P
+      isEligibleForBogoPromotion: w
     } = e, {
-      analyticsLocations: w
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p.Nx)(), L = (0, v.$)(), x = (0, g.Z)(), M = null != x, j = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-      visibilityPercentageRef: k,
-      visibilityPercentage: U
-    } = (0, T.E)(!j), G = (0, s.e7)([_.Z], () => _.Z.affinities), B = !M && G.length > 0, Z = (0, m.N)(), F = (0, h.Ng)(), V = null != (n = null == Z ? true : Z.expires_at) ? n : null == F ? true : F.expires_at, H = f.Z.getAlmostExpiringTrialOffers([C.Si.TIER_2]), Y = f.Z.getAlmostExpiringDiscountOffers([C.Si.TIER_2]), W = null != V && (H.length > 0 || Y.length > 0);
+      analyticsLocations: D
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, p.Nx)(), x = (0, I.$)(), M = (0, E.Z)(), j = null != M, k = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
+      visibilityPercentageRef: U,
+      visibilityPercentage: G
+    } = (0, S.E)(!k), B = (0, s.e7)([_.Z], () => _.Z.affinities), Z = !j && B.length > 0, {
+      variant: F
+    } = (0, h.ZP)("PremiumBrandRefreshMarketingHeroHeading"), V = (0, g.N)(), H = (0, m.Ng)(), Y = null != (n = null == V ? true : V.expires_at) ? n : null == H ? true : H.expires_at, W = f.Z.getAlmostExpiringTrialOffers([N.Si.TIER_2]), K = f.Z.getAlmostExpiringDiscountOffers([N.Si.TIER_2]), z = F === h.tE.HERO_COUNTDOWN && null != Y && (W.length > 0 || K.length > 0);
     return (0, r.jsx)(d.Gt, {
-      value: w,
+      value: D,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(R.container, W && R.containerWithOfferCountdown, i),
+        className: o()(P.container, z && P.containerWithOfferCountdown, i),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
-          ref: k,
+          ref: U,
           children: (0, r.jsxs)("div", {
-            className: R.contentContainer,
-            children: [(0, r.jsx)(A.Z, {
-              containerVisibilityPercentage: U
-            }), D && (W ? (0, r.jsx)(y.Z, {
-              expiresAt: V,
-              className: R.heroOfferCountdown
+            className: P.contentContainer,
+            children: [(0, r.jsx)(C.Z, {
+              containerVisibilityPercentage: G
+            }), L && (z ? (0, r.jsx)(O.Z, {
+              expiresAt: Y,
+              className: P.heroOfferCountdown
             }) : (0, r.jsx)("div", {
-              className: R.offerPillContainer,
-              children: (0, r.jsx)(S.Z, {
+              className: P.offerPillContainer,
+              children: (0, r.jsx)(A.Z, {
                 enablePremiumBrandRefresh: true
               })
             })), (0, r.jsx)("div", {
-              className: R.marketingPageTextContainer,
+              className: P.marketingPageTextContainer,
               children: (0, r.jsx)(l.Heading, {
                 variant: "display-md",
                 color: "header-primary",
-                className: R.header,
-                children: N.intl.string(N.t.YCZldH)
+                className: P.header,
+                children: R.intl.string(R.t.YCZldH)
               })
             }), (0, r.jsxs)("div", {
-              className: R.body,
-              children: [M && (0, r.jsx)("div", {
-                className: R.referrerAttributionContainer,
-                children: (0, r.jsx)(I.Z, {
-                  referrer: x,
+              className: P.body,
+              children: [j && (0, r.jsx)("div", {
+                className: P.referrerAttributionContainer,
+                children: (0, r.jsx)(T.Z, {
+                  referrer: M,
                   enablePremiumBrandRefresh: true
                 })
-              }), B && (0, r.jsx)("div", {
-                className: R.affinitiesContainer,
-                children: (0, r.jsx)(O.Z, {
+              }), Z && (0, r.jsx)("div", {
+                className: P.affinitiesContainer,
+                children: (0, r.jsx)(v.Z, {
                   textColor: "text-primary",
                   smallerText: false,
                   isApplicationHome: true,
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: D ? R.singleButtonContainer : R.twoButtonContainer,
-                children: [(0, r.jsx)(b.Z, {
+                className: L ? P.singleButtonContainer : P.twoButtonContainer,
+                children: [(0, r.jsx)(y.Z, {
                   size: "md",
-                  fullWidth: D,
-                  hasActivePromotion: !!P,
+                  fullWidth: L,
+                  hasActivePromotion: !!w,
                   subscriptionTier: a
-                }), !D && (0, r.jsx)(E.Z, {
+                }), !L && (0, r.jsx)(b.Z, {
                   variant: "secondary",
                   size: "md"
                 })]
               }), (0, r.jsx)("div", {
-                className: R.descriptionContainer,
+                className: P.descriptionContainer,
                 children: (0, r.jsx)(l.Text, {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
-                  children: N.intl.format(N.t.kt9wxs, {
-                    cheapestMonthlyPrice: L
+                  children: R.intl.format(R.t.kt9wxs, {
+                    cheapestMonthlyPrice: x
                   })
                 })
               })]
@@ -114,4 +117,4 @@ let P = (e, t) => {
       })
     })
   },
-  w = Chunk647438.memo(Chunk647438.forwardRef(P))
+  D = Chunk647438.memo(Chunk647438.forwardRef(w))
