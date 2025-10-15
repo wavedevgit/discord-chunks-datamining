@@ -31,15 +31,15 @@ function x(e) {
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
-        label: j.intl.string(j.t.LRmNAg),
+        label: p.intl.string(p.t.LRmNAg),
         action: () => (0, c.Z)(true)
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
-        label: j.intl.string(j.t["0nUKy8"]),
-        action: () => (0, s.Z)(p.EYA.ACKNOWLEDGEMENTS)
+        label: p.intl.string(p.t["0nUKy8"]),
+        action: () => (0, s.Z)(v.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
-        label: j.intl.string(j.t["Yl/Rio"]),
+        label: p.intl.string(p.t["Yl/Rio"]),
         action: () => (0, s.Z)(f.w)
       })]
     })
@@ -120,14 +120,14 @@ function y() {
           }({}, t), o = o = {
             ref: e,
             useDefaultUnderlineStyles: false,
-            className: i()(v.moreButton, {
-              [v.active]: n.isShown
+            className: i()(j.moreButton, {
+              [j.active]: n.isShown
             }),
             children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: j.intl.string(j.t.UKOtz8)
+              children: p.intl.string(p.t.UKOtz8)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);

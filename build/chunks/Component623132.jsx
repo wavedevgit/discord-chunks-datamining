@@ -105,7 +105,7 @@ function E(e) {
   } = e;
   return (0, n.jsx)(c.nn4, {
     id: a,
-    children: h.intl.format(h.t.TM0XDQ, {
+    children: v.intl.format(v.t.TM0XDQ, {
       name: f.ZP.getName(r, i, t)
     })
   })
@@ -159,7 +159,7 @@ function k(e) {
     applicationId: g
   } = e, f = (0, s.Dt)(), m = (0, s.Dt)(), {
     trackUserProfileEditAction: O
-  } = (0, p.KZ)(), [y, j] = i.useState("idle"), [x, v] = i.useState(null != t ? t : ""), _ = i.useRef(null), P = i.useRef(null), I = h.intl.string(h.t.xKSfBQ), S = null != t && "" !== t.trim(), D = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, j] = i.useState("idle"), [x, h] = i.useState(null != t ? t : ""), _ = i.useRef(null), P = i.useRef(null), I = v.intl.string(v.t.xKSfBQ), S = null != t && "" !== t.trim(), D = i.useCallback(() => {
     O({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -173,10 +173,10 @@ function k(e) {
       gameId: g
     })
   }, [d, g, x, t, O]), N = i.useCallback(e => {
-    v(e)
+    h(e)
   }, []);
   return i.useEffect(() => {
-    "editing" === y && v(null != t ? t : "")
+    "editing" === y && h(null != t ? t : "")
   }, [t, y]), i.useEffect(() => {
     if ("completed" === y) {
       var e;
@@ -187,7 +187,7 @@ function k(e) {
     children: [(0, n.jsx)(c.nn4, {
       tag: "label",
       htmlFor: f,
-      children: h.intl.string(h.t.JxKXeX)
+      children: v.intl.string(v.t.JxKXeX)
     }), (0, n.jsx)(c.Kx8, {
       id: f,
       value: x,
@@ -221,7 +221,7 @@ function k(e) {
       className: o()(w.editableCommentText, !S && w.placeholder)
     }), (0, n.jsx)(c.P3F, {
       innerRef: _,
-      "aria-label": h.intl.string(h.t.ppb9MD),
+      "aria-label": v.intl.string(v.t.ppb9MD),
       onClick: e => {
         e.stopPropagation(), D()
       },
@@ -241,7 +241,7 @@ function N(e) {
     widgetType: o,
     disableInteraction: l = false
   } = e, {
-    gameName: s = h.intl.string(h.t.GIWFlJ),
+    gameName: s = v.intl.string(v.t.GIWFlJ),
     imageSrc: u,
     applicationId: d,
     comment: f,
@@ -287,7 +287,7 @@ function N(e) {
         applicationId: d,
         disableInteraction: l,
         className: w.tags
-      }), !l && (0, n.jsx)(v.Z, {
+      }), !l && (0, n.jsx)(h.Z, {
         className: w.socialProof,
         applicationId: d,
         guildId: r,

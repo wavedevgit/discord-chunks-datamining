@@ -16,12 +16,12 @@ function i(e) {
     useTitle: a,
     useSubtitle: s,
     useOptions: c
-  } = t, u = a(), d = null == s ? true : s(), f = n(), m = c();
+  } = t, u = a(), d = null == s ? true : s(), f = n(), b = c();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(l.Gu, {
       label: u,
       description: d,
-      options: m,
+      options: b,
       value: f,
       onChange: e => i(e.value)
     })

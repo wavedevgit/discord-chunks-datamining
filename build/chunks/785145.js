@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk663389 = require("./663389.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
@@ -18,15 +18,14 @@ let u = new Set(Object.values(Chunk526761.NB)),
         let e = Chunk663389.Z.getSubsection();
         return d(module) ? module : Chunk526761.NB.USER_PROFILE
       }),
-      t = (0, Chunk947889.Z)(),
-      n = Chunk647438.useCallback(n => {
-        e !== n && t(a.n.PROFILE_PANEL, {
+      t = Chunk647438.useCallback(t => {
+        e !== t && (0, o.openUserSettings)(a.n.PROFILE_PANEL, {
           section: l.oAB.PROFILE_CUSTOMIZATION,
-          subsection: n
+          subsection: t
         })
-      }, [module, exports]);
+      }, [module]);
     return {
       subsection: module,
-      setSubsection: require
+      setSubsection: exports
     }
   }

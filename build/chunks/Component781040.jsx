@@ -52,7 +52,7 @@ function x(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let v = e => {
+let h = e => {
     let {
       widgetTitle: t,
       children: r
@@ -88,7 +88,7 @@ let v = e => {
       children: r
     })
   },
-  h = e => {
+  v = e => {
     let {
       children: t,
       widget: i,
@@ -153,9 +153,9 @@ let v = e => {
       buttonRef: i,
       additionalMenuItems: o
     } = e, l = (0, p.mR)(t), s = (0, d.Dt)();
-    return (0, n.jsx)(v, {
+    return (0, n.jsx)(h, {
       widgetTitle: l,
-      children: e => (0, n.jsx)(h, {
+      children: e => (0, n.jsx)(v, {
         targetRef: i,
         widget: t,
         additionalMenuItems: o,

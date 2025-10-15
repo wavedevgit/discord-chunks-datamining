@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk358085 = require("./358085.js"),
   Chunk313789 = require("./313789.js"),
   Chunk273313 = require("./273313.jsx"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -51,7 +51,7 @@ function b() {
     disableSounds: y,
     disableNotifications: O,
     enableContentProtection: v
-  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = (0, Chunk947889.Z)(), T = () => (0, Chunk951288.jsx)(Chunk481060.ToO, {
+  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk951288.jsx)(Chunk481060.ToO, {
     iconClassName: Chunk40086.noticeIcon,
     type: Chunk481060.Dd5.PRIMARY,
     imageData: {
@@ -64,19 +64,19 @@ function b() {
     body: Chunk388032.intl.format(Chunk388032.t["4rmZn5"], {
       streamkitURL: Chunk981631.EYA.STREAMKIT
     })
-  }), S = () => {
+  }), T = () => {
     if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.PKDAJy),
       description: Chunk388032.intl.string(Chunk388032.t.ZPi4lJ),
       checked: exports,
-      onChange: e => A("autoToggle", e)
+      onChange: e => S("autoToggle", e)
     })
-  }, A = (e, t) => {
+  }, S = (e, t) => {
     o.Z.update({
       [e]: t
     })
-  }, C = () => {
-    I(Chunk313789.n.KEYBINDS_PANEL, {
+  }, A = () => {
+    (0, Chunk518596.openUserSettings)(Chunk313789.n.KEYBINDS_PANEL, {
       section: Chunk981631.oAB.KEYBINDS
     })
   };
@@ -86,7 +86,7 @@ function b() {
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
-        children: T()
+        children: I()
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
         children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -94,11 +94,11 @@ function b() {
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.p9ZAJS),
             description: Chunk388032.intl.format(Chunk388032.t.MLVL2N, {
-              onClick: C
+              onClick: A
             }),
             checked: module,
-            onChange: e => A("enabled", e)
-          }), S(), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
+            onChange: e => S("enabled", e)
+          }), T(), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
         })
       }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
         label: Chunk388032.intl.string(Chunk388032.t["+1H47u"]),
@@ -109,7 +109,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.UpQziI),
             description: Chunk388032.intl.string(Chunk388032.t["+9Lra2"]),
             checked: b,
-            onChange: e => A("hidePersonalInformation", e)
+            onChange: e => S("hidePersonalInformation", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
@@ -117,7 +117,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.q7WNGh),
             description: Chunk388032.intl.string(Chunk388032.t.m7mS2d),
             checked: g,
-            onChange: e => A("hideInstantInvites", e)
+            onChange: e => S("hideInstantInvites", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
@@ -125,7 +125,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.o56OZm),
             description: Chunk388032.intl.string(Chunk388032.t.eAkaio),
             checked: y,
-            onChange: e => A("disableSounds", e)
+            onChange: e => S("disableSounds", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
@@ -133,7 +133,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.qmYiYW),
             description: Chunk388032.intl.string(Chunk388032.t.ZAmpQ0),
             checked: O,
-            onChange: e => A("disableNotifications", e)
+            onChange: e => S("disableNotifications", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
@@ -141,7 +141,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t["iA81+f"]),
             description: Chunk388032.intl.string(Chunk388032.t.P4vj0t),
             checked: v,
-            onChange: e => A("enableContentProtection", e)
+            onChange: e => S("enableContentProtection", e)
           })
         })]
       })]

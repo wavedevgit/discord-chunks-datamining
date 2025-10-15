@@ -51,7 +51,7 @@ function u(e) {
   }, [j]);
   let [{
     dragSourcePosition: x
-  }, v] = (0, o.L)({
+  }, h] = (0, o.L)({
     accept: "WIDGET",
     canDrop: () => !f,
     collect: e => {
@@ -70,7 +70,7 @@ function u(e) {
   return null == g || f ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (y(r), v(t), {
+  } : (y(r), h(t), {
     isDragging: b && (null == m ? true : m.widgetType) === d.type,
     dragSourcePosition: x
   })

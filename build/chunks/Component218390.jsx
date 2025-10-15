@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk703656 = require("./703656.js"),
   Chunk313789 = require("./313789.js"),
   Chunk342386 = require("./342386.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk246946 = require("./246946.js"),
   Chunk78839 = require("./78839.js"),
   Chunk483444 = require("./483444.jsx"),
@@ -123,13 +123,12 @@ function ef() {
     i = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
     a = (0, Chunk975298.Z)(),
     s = (0, Chunk695349.W)(),
-    l = null !== Chunk647438 && null !== Chunk647438.planIdFromItems,
-    u = (0, Chunk947889.Z)();
+    l = null !== Chunk647438 && null !== Chunk647438.planIdFromItems;
   if (!l && !Chunk120356.isFractionalPremiumActive) return null;
-  let _ = Chunk120356.isFractionalPremiumActive,
-    h = null !== Chunk647438 && Chunk647438.hasActiveTrial,
-    m = module || Chunk570140,
-    g = () => Chunk755721 && !Chunk913527 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+  let u = Chunk120356.isFractionalPremiumActive,
+    _ = null !== Chunk647438 && Chunk647438.hasActiveTrial,
+    h = module || Chunk755721,
+    m = () => Chunk622535 && !Chunk913527 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk382791.mn, {
         text: Chunk388032.intl.string(Chunk388032.t.uXF4c3),
         className: Chunk458622.fractionalPremiumTopRimPill,
@@ -161,7 +160,7 @@ function ef() {
         })
       })]
     }) : null,
-    E = () => Chunk755721 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE2, {
+    g = () => Chunk622535 && !l ? (0, Chunk951288.jsxs)(Chunk159691.hE2, {
       fullWidth: true,
       direction: "vertical",
       children: [(0, Chunk951288.jsx)(Chunk740594.Z, {
@@ -198,7 +197,7 @@ function ef() {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: ea,
             target: eo
-          }), Chunk622535(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+          }), (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
             section: Chunk981631.oAB.SUBSCRIPTIONS
           })
         },
@@ -209,15 +208,15 @@ function ef() {
     });
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk458622.tierCard, {
-      [Chunk458622.withTier2Rim]: Chunk355467
+      [Chunk458622.withTier2Rim]: Chunk570140
     }),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk458622.tierInfo,
       children: [(0, Chunk951288.jsx)(Chunk483444.Z, {
         className: Chunk458622.tierTitle
-      }), Chunk821849(), (0, Chunk951288.jsx)(Chunk823188.nT, {
-        featureSet: Chunk755721 ? Chunk823188.uZ.FRACTIONAL_PREMIUM : Chunk823188.uZ.DEFAULT
-      }), Chunk497321()]
+      }), Chunk355467(), (0, Chunk951288.jsx)(Chunk823188.nT, {
+        featureSet: Chunk622535 ? Chunk823188.uZ.FRACTIONAL_PREMIUM : Chunk823188.uZ.DEFAULT
+      }), Chunk821849()]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk458622.tierImage,
       children: (0, Chunk951288.jsx)("img", {
@@ -339,11 +338,11 @@ let eh = function() {
   if (exports) return (0, Chunk951288.jsx)(Chunk89057.c8, {});
   let w = o && null !== Chunk120356 && Chunk913527,
     x = Chunk780384.fetched && Chunk780384.isFractionalPremiumActive;
-  if (!Chunk947889 && !Chunk483444 && !l) return (0, Chunk951288.jsx)(Chunk406128.Z, {
+  if (!Chunk518596 && !Chunk483444 && !l) return (0, Chunk951288.jsx)(Chunk406128.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.dyq9TU),
     note: null
   });
-  if (!Chunk947889 && !Chunk483444 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
+  if (!Chunk518596 && !Chunk483444 || l) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
   let j = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,

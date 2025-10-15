@@ -17,18 +17,18 @@ function i(e) {
     useVariant: s,
     useDisabled: c,
     onClick: u
-  } = t, d = i(), f = null == a ? true : a(), m = n(), b = null == s ? true : s(), p = null == c ? true : c();
+  } = t, d = i(), f = null == a ? true : a(), b = n(), m = null == s ? true : s(), v = null == c ? true : c();
   return (0, r.jsx)(o.X, {
     children: (0, r.jsx)(l.gNt, {
       label: d,
       description: f,
-      disabled: p,
+      disabled: v,
       layout: "horizontal",
       children: (0, r.jsx)(l.Button, {
         onClick: u,
-        text: m,
-        variant: b,
-        disabled: p
+        text: b,
+        variant: m,
+        disabled: v
       })
     })
   })

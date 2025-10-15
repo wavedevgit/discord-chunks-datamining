@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk856888 = require("./856888.jsx"),
   Chunk921801 = require("./921801.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk246946 = require("./246946.js"),
   Chunk663389 = require("./663389.js"),
   Chunk351402 = require("./351402.js"),
@@ -131,8 +131,7 @@ let J = function() {
     }),
     G = (0, Chunk695349.W)(),
     W = null !== module ? module.currentPeriodEnd : true,
-    z = !(Chunk639056 && !(Chunk391077.unactivatedUnits.length > 0)) && (Chunk391077.fractionalState !== Chunk474936.a$.NONE || Chunk391077.unactivatedUnits.length > 0),
-    J = (0, Chunk947889.Z)();
+    z = !(Chunk639056 && !(Chunk391077.unactivatedUnits.length > 0)) && (Chunk391077.fractionalState !== Chunk474936.a$.NONE || Chunk391077.unactivatedUnits.length > 0);
   return (Chunk647438.useEffect(() => (Chunk570140.Z.wait(() => {
     (0, Chunk821849.Y2)(), Chunk355467.jg(), (0, Chunk179360.X8)(), Chunk355467.tZ()
   }), function() {
@@ -156,7 +155,7 @@ let J = function() {
       }), Chunk74538 > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Q, {}), (0, Chunk951288.jsx)(Chunk406174.Z, {
           count: Chunk74538,
-          onClickManageSubscription: () => J(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+          onClickManageSubscription: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
             section: Chunk981631.oAB.SUBSCRIPTIONS,
             subsection: Chunk526761.cP
           })
@@ -165,7 +164,7 @@ let J = function() {
         children: [(0, Chunk951288.jsx)(Q, {}), (0, Chunk951288.jsx)(Chunk681833.Z, {
           count: Chunk63063,
           onClickManageSubscription: () => {
-            J(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+            (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
               section: Chunk981631.oAB.SUBSCRIPTIONS,
               subsection: Chunk526761.XZ
             }), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)

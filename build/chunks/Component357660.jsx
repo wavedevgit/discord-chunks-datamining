@@ -30,7 +30,7 @@ function d(e) {
       }
     }
   }, [f, d]);
-  let m = l.useMemo(() => {
+  let b = l.useMemo(() => {
     if (null == t || !c) return null;
     let {
       element: e
@@ -43,7 +43,7 @@ function d(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(i.W, {
       component: "div",
-      children: m
+      children: b
     })]
   })
 }

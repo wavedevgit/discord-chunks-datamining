@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk383451 = require("./383451.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk962100 = require("./962100.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -61,12 +61,11 @@ function I(e) {
       enableLatching: b
     } = (0, _.H)({
       location: "PTTTools"
-    }),
-    y = (0, h.Z)();
+    });
   return t = f.isPlatformEmbedded || n !== g.pM4.PUSH_TO_TALK ? (0, r.jsx)(s.Wn, {
     messageType: s.QYI.INFO,
     children: E.intl.format(E.t.HVvn5e, {
-      onClick: () => y(p.n.KEYBINDS_PANEL, {
+      onClick: () => (0, h.openUserSettings)(p.n.KEYBINDS_PANEL, {
         section: g.oAB.KEYBINDS
       })
     })

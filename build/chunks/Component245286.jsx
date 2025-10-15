@@ -29,48 +29,47 @@ function C(e) {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, p.QB)({
+  (0, v.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: m.Z.getSubsection(),
-    source: m.Z.getAnalyticsLocation(),
-    locationStack: m.Z.getAnalyticsLocations()
+    subsection: b.Z.getSubsection(),
+    source: b.Z.getAnalyticsLocation(),
+    locationStack: b.Z.getAnalyticsLocations()
   })
 }
 
 function S(e) {
-  var t, {
-      target: n
-    } = e,
-    i = function(e, t) {
+  var {
+    target: t
+  } = e, n = function(e, t) {
+    if (null == e) return {};
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var n, r, l = function(e, t) {
-        if (null == e) return {};
-        var n, r, l = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-        return l
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
-      }
+      var n, r, l = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
-    }(e, ["target"]);
-  let a = j.Z.useField("query"),
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+    }
+    return l
+  }(e, ["target"]);
+  let i = p.Z.useField("query"),
     {
-      node: c,
-      directory: u
-    } = (0, f.Z)(y.Z, a),
-    p = (t = v.n.ACCOUNT_PANEL, null == u.entry(n) ? t : n),
-    g = l.useRef(null);
+      node: a,
+      directory: c
+    } = (0, f.Z)(y.Z, i),
+    u = null != t && null != c.entry(t) ? t : true,
+    v = l.useRef(null);
   return ((0, s.ZP)(() => {
-    let e = m.Z.getSection();
+    let e = b.Z.getSection();
     null != e && (C({
       destinationPanel: e,
       originPanel: null
-    }), g.current = e)
-  }), (0, o.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+    }), v.current = e)
+  }), (0, o.e7)([m.default], () => null != m.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -88,23 +87,24 @@ function S(e) {
     }
     return e
   }({
-    root: c,
-    directory: u,
-    sidebarHeader: _,
-    emptyState: P,
+    root: a,
+    directory: c,
+    sidebarHeader: P,
+    emptyState: _,
     sidebarFooter: x.Z,
     onPanelChange: e => {
       let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (C({
         destinationPanel: t,
-        originPanel: g.current
-      }), g.current = t)
+        originPanel: v.current
+      }), v.current = t)
     },
-    target: p
-  }, i)) : null
+    target: u,
+    defaultTarget: j.n.ACCOUNT_PANEL
+  }, n)) : null
 }
 
-function _() {
+function P() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk647438.useRef(null),
     [n, o] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
@@ -117,7 +117,7 @@ function _() {
       scrollBehavior: "sticky"
     }), []),
     d = Chunk647438.useCallback(e => {
-      j.Z.setState({
+      p.Z.setState({
         query: e
       })
     }, []),
@@ -148,7 +148,7 @@ function _() {
   })
 }
 
-function P() {
+function _() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk942408.emptySearchResultsContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -23,10 +23,10 @@ function p(e) {
     hasBoostPerk: n,
     hasGuildAffinitiesOrInGuild: r,
     subscriptionIsPausedOrPausePending: i
-  } = e, _ = (0, c.Z)();
+  } = e;
   if (i) return {
     flavor: f.intl.format(f.t.doslJi, {
-      onClick: () => _(l.n.SUBSCRIPTIONS_PANEL, {
+      onClick: () => (0, c.openUserSettings)(l.n.SUBSCRIPTIONS_PANEL, {
         section: u.oAB.SUBSCRIPTIONS
       })
     })
@@ -40,13 +40,13 @@ function p(e) {
       helpdeskArticle: a.Z.getArticleURL(u.BhN.GUILD_SUBSCRIPTIONS)
     })
   };
-  let p = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
-    h = o.ZP.getDefaultPrice(p.id, n),
-    m = (0, s.og)((0, s.T4)(h.amount, h.currency), p.interval, p.intervalCount);
+  let _ = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
+    p = o.ZP.getDefaultPrice(_.id, n),
+    h = (0, s.og)((0, s.T4)(p.amount, p.currency), _.interval, _.intervalCount);
   return {
     subtitle: n ? f.intl.string(f.t.bhPzXV) : f.intl.string(f.t.Zs9h9f),
     flavor: f.intl.formatToPlainString(f.t.PGgTdH, {
-      monthlyGuildBoostPrice: m
+      monthlyGuildBoostPrice: h
     })
   }
 }

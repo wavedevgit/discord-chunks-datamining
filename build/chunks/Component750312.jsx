@@ -27,8 +27,8 @@ function y(e) {
     disableInteraction: m,
     className: y,
     index: x,
-    trailingContent: v,
-    headerTitle: h,
+    trailingContent: h,
+    headerTitle: v,
     headerSubtitle: _,
     headerActionButtons: w,
     dragHandleAdditionalMenuItems: P
@@ -71,13 +71,13 @@ function y(e) {
       }), (0, n.jsx)(b.Z, {
         userId: t,
         headingId: I,
-        title: h,
+        title: v,
         subtitle: _,
         actionButtons: w,
         widget: r,
         disableInteraction: m
       }), (0, n.jsxs)(l.y5t, {
-        children: [a, v]
+        children: [a, h]
       })]
     })
   })

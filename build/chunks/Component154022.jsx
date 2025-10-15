@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk263937 = require("./263937.js"),
   Chunk996073 = require("./996073.js"),
   Chunk273313 = require("./273313.jsx"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
@@ -110,8 +110,7 @@ function er(e) {
     n = O.fN.useExperiment({
       location: "UserSettingsAccessibility"
     }).enabled,
-    i = (0, b.A)("UserSettingsAccessibility"),
-    a = (0, U.Z)();
+    i = (0, b.A)("UserSettingsAccessibility");
   return (0, r.jsx)(k.Z, {
     title: H.intl.string(H.t.G0neg4),
     children: (0, r.jsxs)(u.Kqy, {
@@ -169,7 +168,7 @@ function er(e) {
           variant: "text-md/normal",
           children: H.intl.format(H.t.DHpTjY, {
             onAppearanceClick() {
-              a(x.n.APPEARANCE_PANEL, {
+              (0, U.openUserSettings)(x.n.APPEARANCE_PANEL, {
                 section: Z.oAB.APPEARANCE
               })
             }
@@ -376,9 +375,7 @@ function ed() {
 function ef() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.syncProfileThemeWithUserTheme),
     t = Chunk647438.useRef(null);
-  (0, Chunk996073.Z)(exports, Chunk526761.rP.SYNC_PROFILE_THEME_WITH_USER_THEME);
-  let n = (0, Chunk947889.Z)();
-  return (0, Chunk951288.jsx)("div", {
+  return (0, Chunk996073.Z)(exports, Chunk526761.rP.SYNC_PROFILE_THEME_WITH_USER_THEME), (0, Chunk951288.jsx)("div", {
     ref: exports,
     children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.BT8Bmp),
@@ -388,7 +385,7 @@ function ef() {
           label: Chunk388032.intl.string(Chunk388032.t["sSY+mJ"]),
           description: Chunk388032.intl.format(Chunk388032.t.u6UjrK, {
             onThemeClick() {
-              require(Chunk313789.n.APPEARANCE_PANEL, {
+              (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
                 section: Chunk981631.oAB.APPEARANCE
               })
             }

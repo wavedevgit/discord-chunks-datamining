@@ -18,19 +18,19 @@ function u(e) {
     } = e,
     [d, f] = l.useState(false),
     {
-      layout: m,
-      collapseAfter: b,
-      ContextProvider: p,
-      useCollapsibleTitle: j
+      layout: b,
+      collapseAfter: m,
+      ContextProvider: v,
+      useCollapsibleTitle: p
     } = u,
-    v = m.filter(e => {
+    j = b.filter(e => {
       var t, n;
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
-    x = null != b ? v.slice(0, b) : v,
-    y = null != b ? v.slice(b) : [],
-    h = null != p ? p : l.Fragment,
-    g = null != (t = null == j ? true : j(d, y.length)) ? t : (n = y.length, d ? s.intl.formatToPlainString(s.t["3SHL+f"], {
+    x = null != m ? j.slice(0, m) : j,
+    y = null != m ? j.slice(m) : [],
+    h = null != v ? v : l.Fragment,
+    g = null != (t = null == p ? true : p(d, y.length)) ? t : (n = y.length, d ? s.intl.formatToPlainString(s.t["3SHL+f"], {
       count: n
     }) : s.intl.formatToPlainString(s.t["8JRFyc"], {
       count: n

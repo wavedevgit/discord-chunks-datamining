@@ -58,7 +58,7 @@ function j(e) {
     channelId: s,
     disableInteraction: b = false,
     index: j
-  } = e, x = (0, p.Z)(t.applicationId).length > 0, v = c.default.getCurrentUser(), h = (null == v ? true : v.id) === r, _ = !b && h, w = (0, u.kO)(t.applicationId), {
+  } = e, x = (0, p.Z)(t.applicationId).length > 0, h = c.default.getCurrentUser(), v = (null == h ? true : h.id) === r, _ = !b && v, w = (0, u.kO)(t.applicationId), {
     isDragging: P
   } = (0, l.f)(e => ({
     isDragging: e.isDragging()

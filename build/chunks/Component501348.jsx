@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk329013 = require("./329013.jsx"),
   Chunk333859 = require("./333859.jsx"),
   Chunk273313 = require("./273313.jsx"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
@@ -141,16 +141,13 @@ let J = "cozy",
       })]
     }), (0, Chunk951288.jsx)(Chunk329013.g, {})]
   }),
-  ea = () => {
-    let e = (0, Chunk947889.Z)();
-    return Chunk388032.intl.format(Chunk388032.t.Jae48P, {
-      onClick: () => {
-        module(Chunk313789.n.ACCESSIBILITY_PANEL, {
-          section: Chunk981631.oAB.ACCESSIBILITY
-        })
-      }
-    })
-  };
+  ea = () => Chunk388032.intl.format(Chunk388032.t.Jae48P, {
+    onClick: () => {
+      (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCESSIBILITY_PANEL, {
+        section: Chunk981631.oAB.ACCESSIBILITY
+      })
+    }
+  });
 class eo extends Chunk647438.Component {
   renderZoomSlider() {
     return !Chunk358085.isPlatformEmbedded, (0, Chunk951288.jsx)(Chunk481060.iRW, {

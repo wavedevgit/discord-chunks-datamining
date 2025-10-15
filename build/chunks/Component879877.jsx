@@ -27,13 +27,13 @@ function O(e) {
     applicationId: s,
     className: u,
     disableInteraction: O = false
-  } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], _ = h.length > 0, w = l.qH, P = a && !O && (0, g.M8)(c) && h.length < w, {
+  } = e, v = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], _ = v.length > 0, w = l.qH, P = a && !O && (0, g.M8)(c) && v.length < w, {
     trackUserProfileAction: I
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, k] = (0, i.useState)(0), [N, C] = (0, i.useState)(false), A = v(E, T, h, S, k);
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, k] = (0, i.useState)(0), [N, C] = (0, i.useState)(false), A = h(E, T, v, S, k);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
       window.removeEventListener("resize", A)
-    }), [A, null == h ? true : h.join("")]), !_ && !P) return null;
-  let Z = N ? h : h.slice(0, h.length - D);
+    }), [A, null == v ? true : v.join("")]), !_ && !P) return null;
+  let Z = N ? v : v.slice(0, v.length - D);
   return (0, n.jsxs)("div", {
     className: o()(m.tagListContainer, u),
     children: [_ && (0, n.jsxs)(n.Fragment, {
@@ -171,7 +171,7 @@ let y = e => {
       })
     })
   },
-  v = (e, t, r, n, a) => (0, i.useCallback)(() => {
+  h = (e, t, r, n, a) => (0, i.useCallback)(() => {
     var i, o, l, c;
     if (null == r) return void a(0);
     let s = null != (l = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? l : 0,

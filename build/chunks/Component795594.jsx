@@ -55,7 +55,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk273313 = require("./273313.jsx"),
   Chunk869743 = require("./869743.jsx"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -457,7 +457,7 @@ let ef = e => {
           onChange: eh
         }) : null]
       })]
-    }) : null, eE = (0, q.O)(a.id), eb = (0, N.Z)(a), ey = (0, $.Z)(), eO = () => (0, r.jsxs)("div", {
+    }) : null, eE = (0, q.O)(a.id), eb = (0, N.Z)(a), ey = () => (0, r.jsxs)("div", {
       className: er.footer,
       children: [eb ? (0, r.jsx)(ed, {
         className: er.warningContainer,
@@ -468,7 +468,7 @@ let ef = e => {
         className: er.warningContainer,
         text: en.intl.format(en.t.jUhnwc, {
           applicationName: a.name,
-          onConnectionPress: () => ey(Y.n.CONNECTIONS_PANEL, {
+          onConnectionPress: () => (0, $.openUserSettings)(Y.n.CONNECTIONS_PANEL, {
             section: ee.oAB.CONNECTIONS
           })
         })
@@ -481,16 +481,16 @@ let ef = e => {
           onClick: () => e_(a, c)
         })
       })]
-    }), ev = (0, z.wy)("AuthorizedApps");
+    }), eO = (0, z.wy)("AuthorizedApps");
     return (0, r.jsx)("div", {
       className: o()(er.authedAppV2, {
-        [er.authedAppV2UserSettingsRedesign]: ev
+        [er.authedAppV2UserSettingsRedesign]: eO
       }),
       children: (0, r.jsx)(g.y5t, {
         component: eu(),
         children: (0, r.jsxs)("div", {
           className: er.appDetailsContainer,
-          children: [ec(), eo(), eg(), eO()]
+          children: [ec(), eo(), eg(), ey()]
         })
       })
     })

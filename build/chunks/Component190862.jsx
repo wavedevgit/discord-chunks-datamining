@@ -89,8 +89,8 @@ let j = e => {
         handleDismissSuggestions: p
       } = (0, s.h)(g),
       x = (0, a.e7)([o.default], () => o.default.getId() === r.id),
-      v = x && !i && f,
-      h = (0, l.mR)(g),
+      h = x && !i && f,
+      v = (0, l.mR)(g),
       _ = (0, l.Hy)(g, {
         isCurrentUser: x
       }),
@@ -100,14 +100,14 @@ let j = e => {
       widget: g,
       user: r,
       disableInteraction: i,
-      headerTitle: h,
+      headerTitle: v,
       headerSubtitle: _,
       headerActionButtons: x && !P ? [(0, n.jsx)(u.yX, {
         disabled: w,
         widgetType: g.type,
         widget: g
       }, "".concat(g.type, "-browse-games-popout"))] : true,
-      trailingContent: v && (0, n.jsx)(b.Z, {
+      trailingContent: h && (0, n.jsx)(b.Z, {
         userId: r.id,
         widgetType: g.type,
         onDismiss: p,

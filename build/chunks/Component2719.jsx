@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk313789 = require("./313789.js"),
   Chunk461877 = require("./461877.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk815660 = require("./815660.js"),
@@ -90,12 +90,9 @@ function X(e, t) {
 let Q = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function J() {
-  let e = (0, Chunk947889.Z)();
-  return () => {
-    module(Chunk313789.n.PROFILE_PANEL, {
-      section: Chunk981631.oAB.PROFILE_CUSTOMIZATION
-    })
-  }
+  (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
+    section: Chunk981631.oAB.PROFILE_CUSTOMIZATION
+  })
 }
 
 function $(e) {
@@ -197,11 +194,9 @@ function ee(e) {
     user: a,
     className: s
   } = e, l = (0, O.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, _ = M.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
-  i.useEffect(() => {
+  return i.useEffect(() => {
     m(null != p.current && p.current.scrollWidth > p.current.clientWidth)
-  }, [_]);
-  let g = J();
-  return (0, r.jsxs)("div", {
+  }, [_]), (0, r.jsxs)("div", {
     className: o()(W.field, s),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
@@ -242,7 +237,7 @@ function ee(e) {
         size: "sm",
         text: h ? Y.intl.string(Y.t["16kTw8"]) : Y.intl.string(Y.t.bt75u7),
         "aria-label": Y.intl.string(Y.t.YXeWYG),
-        onClick: g
+        onClick: J
       })
     })]
   })
@@ -514,8 +509,7 @@ function eo() {
       userId: null == exports ? true : exports.id,
       size: Chunk481060.EFr.SIZE_80
     }),
-    p = J(),
-    h = (0, Chunk438976.Z)();
+    p = (0, Chunk438976.Z)();
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk378846.accountProfileCard,
     children: [(0, Chunk951288.jsx)(Chunk867176.b, {
@@ -524,7 +518,7 @@ function eo() {
       avatarSize: Chunk481060.EFr.SIZE_80,
       avatarOffsetX: 16,
       avatarOffsetY: false,
-      bannerWidth: Chunk168107 ? 696 : 660,
+      bannerWidth: Chunk279837 ? 696 : 660,
       bannerHeight: 100,
       themePadding: 0
     }), (0, Chunk951288.jsxs)("div", {
@@ -556,7 +550,7 @@ function eo() {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t["2p2aY2"]),
-        onClick: Chunk279837
+        onClick: J
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk378846.background,

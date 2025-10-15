@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk26621 = require("./26621.js");
@@ -18,8 +18,8 @@ var Chunk120356 = require("./120356.js"),
 function f(e) {
   let {
     disableButton: t
-  } = e, n = (0, l.Z)(), i = () => {
-    true !== t && n(s.n.STREAMER_MODE_PANEL, {
+  } = e, n = () => {
+    true !== t && (0, l.openUserSettings)(s.n.STREAMER_MODE_PANEL, {
       section: c.oAB.STREAMER_MODE
     })
   };
@@ -31,7 +31,7 @@ function f(e) {
       className: a()(d.streamerModeEnabledBtn, {
         [d.disabled]: t
       }),
-      onClick: i,
+      onClick: n,
       children: u.intl.string(u.t.Br1ls7)
     })]
   })

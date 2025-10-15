@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk313789 = require("./313789.js"),
   Chunk749876 = require("./749876.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk546957 = require("./546957.jsx"),
   Chunk838436 = require("./838436.jsx"),
   Chunk51331 = require("./51331.jsx"),
@@ -81,11 +81,11 @@ function S(e) {
         children: "+".concat(t)
       })
     }, "omitted")), e
-  }, [n]), u = (0, h.Z)(), f = i.useCallback(() => {
-    u(_.n.AUTHORIZED_APPS_PANEL, {
+  }, [n]), u = () => {
+    (0, h.openUserSettings)(_.n.AUTHORIZED_APPS_PANEL, {
       section: y.oAB.AUTHORIZED_APPS
     })
-  }, [u]);
+  };
   return (0, r.jsxs)("div", {
     className: v.header,
     children: [(0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ function S(e) {
         color: "header-primary",
         children: a
       }), (0, r.jsxs)(l.P3F, {
-        onClick: f,
+        onClick: u,
         className: v.manageGamesLink,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-xs/normal",

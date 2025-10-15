@@ -1,20 +1,22 @@
 /** Chunk was on 36073 **/
 /** chunk id: 881410, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  wl: () => O,
-  yX: () => m
+  wl: () => j,
+  yX: () => y
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk423802 = require("./423802.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk510231 = require("./510231.js"),
+  Chunk706454 = require("./706454.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk302627 = require("./302627.js");
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -33,7 +35,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +48,7 @@ function f(e, t) {
   }), e
 }
 
-function p(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var r, n, i = function(e, t) {
     if (null == e) return {};
@@ -62,75 +64,74 @@ function p(e, t) {
   return i
 }
 
-function b(e) {
+function O(e) {
   var {
     widgetType: t,
     widget: r,
-    children: b
-  } = e, m = p(e, ["widgetType", "widget", "children"]);
-  let [O] = (0, o.ynZ)(), [y, j] = i.useState(""), x = i.useRef(""), v = i.useMemo(() => new Set(r.games.map(e => e.applicationId)), [r.games]), {
-    trackUserProfileEditAction: h
-  } = (0, c.KZ)(), _ = i.useCallback(e => {
-    (0, s.ES)(t, {
+    children: O
+  } = e, y = m(e, ["widgetType", "widget", "children"]);
+  let [j] = (0, l.ynZ)(), [x, h] = i.useState(""), v = i.useRef(""), _ = i.useMemo(() => new Set(r.games.map(e => e.applicationId)), [r.games]), {
+    trackUserProfileEditAction: w
+  } = (0, u.KZ)(), P = (0, o.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), I = i.useCallback(e => {
+    (0, d.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(u.intl.string(u.t.q0U3DA)), h({
+    }), l.uvj.announce(g.intl.string(g.t.q0U3DA)), w({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     })
-  }, [t, h]), {
-    options: w,
-    matchSorterOptions: P
-  } = (0, l.h)(), I = i.useCallback(e => "" === e.trim() ? w : (0, a.Lu)(w, e, f(g({}, P), {
+  }, [t, w]), {
+    options: S,
+    matchSorterOptions: E
+  } = (0, c.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, b(p({}, E), {
     threshold: a.Lu.rankings.CONTAINS
-  })), [w, P]), S = i.useCallback(e => {
-    "" === y.trim() && "" !== e.trim() && h({
+  })), [S, E]), D = i.useCallback(e => {
+    "" === x.trim() && "" !== e.trim() && w({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
-      numResults: I(e).length
-    }), j(e), x.current = e
-  }, [y, h, t, I]), E = i.useMemo(() => "" !== y.trim() ? u.intl.format(u.t.ZoearK, {
-    searchTerm: y.trim(),
-    surveyUrl: "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C"
-  }) : u.intl.string(u.t.QwSXv7), [y]);
-  return (0, n.jsx)(o.yRy, f(g({}, m), {
+      numResults: T(e).length
+    }), h(e), v.current = e
+  }, [x, w, t, T]), k = i.useMemo(() => "" !== x.trim() && P ? g.intl.format(g.t.jhiTsL, {
+    searchTerm: x.trim()
+  }) : g.intl.string(g.t.QwSXv7), [x, P]);
+  return (0, n.jsx)(l.yRy, b(p({}, y), {
     onRequestOpen: () => {
-      h({
+      w({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), j(""), x.current = ""
+      }), h(""), v.current = ""
     },
     onRequestClose: () => {
-      h({
+      w({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
-        numCharacters: x.current.trim().length,
-        numResults: I(x.current).length
+        numCharacters: v.current.trim().length,
+        numResults: T(v.current).length
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(o.DBG, {
-        className: d.gameSearchCombobox,
-        placeholder: u.intl.string(u.t["5h0QOD"]),
+      return (0, n.jsx)(l.DBG, {
+        className: f.gameSearchCombobox,
+        placeholder: g.intl.string(g.t["5h0QOD"]),
         autoFocus: true,
-        value: O,
+        value: j,
         onChange: e => {
-          _(e), t()
+          I(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,
-        emptyStateText: E,
+        emptyStateText: k,
         emptyStateHeader: "",
-        onQueryChange: S,
-        children: e => I(e).map(e => (0, n.jsx)(o.lo1, {
-          disabled: v.has(e.value),
+        onQueryChange: D,
+        children: e => T(e).map(e => (0, n.jsx)(l.lo1, {
+          disabled: _.has(e.value),
           value: String(e.value),
-          children: (0, n.jsx)(o.lo1.Label, {
-            children: (0, n.jsx)(o.Text, {
+          children: (0, n.jsx)(l.lo1.Label, {
+            children: (0, n.jsx)(l.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -139,44 +140,44 @@ function b(e) {
         }, String(e.value)))
       })
     },
-    children: e => b(e)
+    children: e => O(e)
   }))
 }
 
-function m(e) {
+function y(e) {
   var {
     disabled: t
-  } = e, r = p(e, ["disabled"]);
+  } = e, r = m(e, ["disabled"]);
   let a = i.useRef(null);
-  return (0, n.jsx)(b, f(g({
+  return (0, n.jsx)(O, b(p({
     targetElementRef: a,
     position: "bottom",
     align: "center"
   }, r), {
-    children: e => (0, n.jsx)(o.Button, g({
+    children: e => (0, n.jsx)(l.Button, p({
       buttonRef: a,
       variant: "secondary",
       size: "sm",
-      icon: o.qJs,
-      text: u.intl.string(u.t.SgTOtb),
+      icon: l.qJs,
+      text: g.intl.string(g.t.SgTOtb),
       disabled: t
     }, e))
   }))
 }
 
-function O(e) {
+function j(e) {
   let t = i.useRef(null);
-  return (0, n.jsx)(b, f(g({
+  return (0, n.jsx)(O, b(p({
     targetElementRef: t,
     position: "right",
     align: "top"
   }, e), {
-    children: e => (0, n.jsx)(o.P3F, f(g({
+    children: e => (0, n.jsx)(l.P3F, b(p({
       innerRef: t,
-      className: d.coverButton,
-      "aria-label": u.intl.string(u.t.SgTOtb)
+      className: f.coverButton,
+      "aria-label": g.intl.string(g.t.SgTOtb)
     }, e), {
-      children: (0, n.jsx)(o.svS, {
+      children: (0, n.jsx)(l.svS, {
         color: "currentColor"
       })
     }))

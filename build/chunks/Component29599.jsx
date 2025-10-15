@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk313789 = require("./313789.js"),
   Chunk317941 = require("./317941.jsx"),
   Chunk342386 = require("./342386.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -186,15 +186,15 @@ let B = function() {
   }, {
     autoTrackExposure: false,
     disable: Chunk120356
-  }).enabled && k, B = (0, Chunk947889.Z)();
+  }).enabled && k;
 
-  function Z() {
-    B(Chunk313789.n.NITRO_PANEL, {
+  function B() {
+    (0, Chunk518596.openUserSettings)(Chunk313789.n.NITRO_PANEL, {
       section: Chunk981631.oAB.PREMIUM
     })
   }
 
-  function F() {
+  function Z() {
     var e;
     let t = require.find(e => e.giftCodeBatchId === D.m8 && !e.consumed),
       i = null != (e = require.filter(e => e.giftCodeBatchId === D.rX && !e.consumed)) ? module : [],
@@ -284,7 +284,7 @@ let B = function() {
     })
   }
 
-  function V() {
+  function F() {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk666707.emptyState,
       children: [(0, Chunk951288.jsx)("div", {
@@ -295,13 +295,13 @@ let B = function() {
       }), (0, Chunk951288.jsx)("p", {
         className: Chunk666707.emptyStateSubtext,
         children: Chunk388032.intl.format(Chunk388032.t.HezvJy, {
-          onClick: Z
+          onClick: B
         })
       })]
     })
   }
   return Chunk410030 && Chunk178100 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [F(), (0, Chunk951288.jsx)("div", {
+    children: [Z(), (0, Chunk951288.jsx)("div", {
       className: Chunk666707.marginContainer,
       children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk951288.jsx)(Chunk481060.Heading, {
@@ -310,7 +310,7 @@ let B = function() {
         }),
         children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk666707.divider
-        }), 0 === Object.keys(Chunk392711).length ? V() : l().keys(Chunk392711).map(e => {
+        }), 0 === Object.keys(Chunk392711).length ? F() : l().keys(Chunk392711).map(e => {
           let {
             skuId: t,
             subscriptionPlanId: n,

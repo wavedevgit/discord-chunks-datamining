@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk313789 = require("./313789.js"),
   Chunk10298 = require("./10298.jsx"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -197,7 +197,6 @@ function R(e) {
 }
 
 function P() {
-  let e = (0, Chunk947889.Z)();
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk844642.session, Chunk844642.legacySession),
     children: [(0, Chunk951288.jsx)("div", {
@@ -221,7 +220,7 @@ function P() {
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
           children: Chunk388032.intl.format(Chunk388032.t["044+8v"], {
-            onClick: () => module(Chunk313789.n.ACCOUNT_PANEL, {
+            onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
               section: Chunk981631.oAB.ACCOUNT,
               analyticsLocations: [Chunk100527.Z.USER_SETTINGS_SESSIONS]
             })

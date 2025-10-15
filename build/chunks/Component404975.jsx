@@ -1,7 +1,7 @@
 /** Chunk was on 75685 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => j
+  P: () => p
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,22 +11,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk984802 = require("./984802.js"),
-  Chunk59662 = require("./59662.js"),
   Chunk28682 = require("./28682.js"),
+  Chunk996435 = require("./996435.js"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function j(e) {
+function p(e) {
   let {
     root: t,
     header: n,
     footer: o,
-    onClose: m,
-    emptyState: j
-  } = e, {
-    showNavigationMobile: x
-  } = (0, d.t)(), y = l.useMemo(() => {
+    onClose: b,
+    emptyState: p
+  } = e, x = f.Z.useField("showNavigationMobile"), y = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -34,8 +32,8 @@ function j(e) {
       } = t;
       n.forEach(t => {
         if (null != t.trailing) switch (t.trailing.type) {
-          case f.PU.BADGE_NEW:
-          case f.PU.STRONGLY_DISCOURAGED_CUSTOM:
+          case d.PU.BADGE_NEW:
+          case d.PU.STRONGLY_DISCOURAGED_CUSTOM:
             var n, r, l;
             null == (r = (l = t.trailing).getDismissibleContentTypes) || null == (n = r.call(l)) || n.forEach(t => {
               e.push(t)
@@ -59,33 +57,33 @@ function j(e) {
           visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
-          className: i()(p.sidebar, e, {
-            [p.mobile]: a.tq,
-            [p.mobileNavigationOpen]: x
+          className: i()(v.sidebar, e, {
+            [v.mobile]: a.tq,
+            [v.mobileNavigationOpen]: x
           }),
           children: [(0, r.jsxs)("div", {
-            className: p.fixedContent,
+            className: v.fixedContent,
             children: [a.tq && (0, r.jsx)("div", {
-              className: p.mobileCloseButton,
+              className: v.mobileCloseButton,
               children: (0, r.jsx)(s.hU, {
                 icon: s.Uz9,
-                onClick: m,
+                onClick: b,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": b.intl.string(b.t.cpT0Cg)
+                "aria-label": m.intl.string(m.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
-              children: h.map(e => (0, r.jsx)(v, {
+              children: h.map(e => (0, r.jsx)(j, {
                 section: e,
                 visibleContent: l
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != j && 0 === g.length && (0, r.jsx)(j, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != p && 0 === g.length && (0, r.jsx)(p, {})]
           }), (0, r.jsxs)(s.zJl, {
-            className: p.navScroller,
+            className: v.navScroller,
             fade: true,
             children: [(0, r.jsx)("nav", {
-              className: p.nav,
-              children: g.map(e => (0, r.jsx)(v, {
+              className: v.nav,
+              children: g.map(e => (0, r.jsx)(j, {
                 section: e,
                 visibleContent: l
               }, e.key))
@@ -97,24 +95,24 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   var t;
   let {
     section: n,
     visibleContent: l
   } = e, o = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: p.section,
+    className: v.section,
     children: [null != o && (0, r.jsx)("div", {
-      className: p.sectionLabel,
+      className: v.sectionLabel,
       children: (0, r.jsx)(s.Heading, {
-        className: p.label,
+        className: v.label,
         variant: "heading-sm/medium",
         color: "text-tertiary",
         children: o
       })
     }), n.layout.map(e => (0, r.jsx)("li", {
-      children: (0, r.jsx)(m.y, {
+      children: (0, r.jsx)(b.y, {
         node: e,
         visibleContent: l
       })

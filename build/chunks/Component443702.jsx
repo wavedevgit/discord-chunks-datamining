@@ -2,7 +2,7 @@
 /** chunk id: 443702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk78839 = require("./78839.js"),
   Chunk706454 = require("./706454.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk947889 = require("./947889.js"),
+  Chunk518596 = require("./518596.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -51,25 +51,8 @@ function C(e) {
 }
 
 function N(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function P(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,25 +60,25 @@ function P(e, t) {
   return i
 }
 
-function w(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = () => (0, Chunk951288.jsx)("div", {
+let P = () => (0, Chunk951288.jsx)("div", {
   className: Chunk61365.syncing,
   children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
 });
-class L extends Chunk647438.PureComponent {
+class w extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk570140.Z.wait(() => {
       Chunk355467.tZ(), Chunk355467.jg()
     })
   }
   handleRedemptionRedirect() {
-    this.props.navigateTo(Chunk313789.n.GIFT_PANEL, {
+    (0, Chunk518596.openUserSettings)(Chunk313789.n.GIFT_PANEL, {
       section: Chunk981631.oAB.INVENTORY
     })
   }
@@ -111,7 +94,7 @@ class L extends Chunk647438.PureComponent {
       isUpdatingPaymentSource: p
     } = this.props;
     return exports ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)("div", {
-      children: [module && 0 === Object.keys(require).length ? (0, Chunk951288.jsx)(D, {}) : (0, Chunk951288.jsx)(Chunk921801.F, {
+      children: [module && 0 === Object.keys(require).length ? (0, Chunk951288.jsx)(P, {}) : (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.BILLING_PAYMENT_METHODS,
         children: (0, Chunk951288.jsx)(Chunk390954.Z, {
           paymentSources: require,
@@ -146,32 +129,29 @@ class L extends Chunk647438.PureComponent {
   }
 }
 
-function x() {
+function D() {
   let e = (0, Chunk442837.cj)([Chunk706454.default, Chunk351402.Z, Chunk853872.Z, Chunk594174.default, Chunk246946.Z, Chunk78839.Z], () => {
-      let e = Chunk78839.Z.getPremiumTypeSubscription(),
-        t = Chunk594174.default.getCurrentUser();
-      return null == exports ? {
-        shouldRenderBillingSettings: false
-      } : {
-        shouldRenderBillingSettings: true,
-        locale: Chunk706454.default.locale,
-        hide: Chunk246946.Z.enabled,
-        isClaimed: exports.isClaimed(),
-        isVerified: exports.verified,
-        premiumSubscription: module,
-        defaultPaymentSourceId: Chunk853872.Z.defaultPaymentSourceId,
-        paymentSources: Chunk853872.Z.paymentSources,
-        syncing: Chunk351402.Z.isSyncing,
-        isRemovingPaymentSource: Chunk351402.Z.isRemovingPaymentSource,
-        isUpdatingPaymentSource: Chunk351402.Z.isUpdatingPaymentSource
-      }
-    }),
-    t = (0, Chunk947889.Z)();
-  if (!module.shouldRenderBillingSettings) return (0, Chunk951288.jsx)(D, {});
+    let e = Chunk78839.Z.getPremiumTypeSubscription(),
+      t = Chunk594174.default.getCurrentUser();
+    return null == exports ? {
+      shouldRenderBillingSettings: false
+    } : {
+      shouldRenderBillingSettings: true,
+      locale: Chunk706454.default.locale,
+      hide: Chunk246946.Z.enabled,
+      isClaimed: exports.isClaimed(),
+      isVerified: exports.verified,
+      premiumSubscription: module,
+      defaultPaymentSourceId: Chunk853872.Z.defaultPaymentSourceId,
+      paymentSources: Chunk853872.Z.paymentSources,
+      syncing: Chunk351402.Z.isSyncing,
+      isRemovingPaymentSource: Chunk351402.Z.isRemovingPaymentSource,
+      isUpdatingPaymentSource: Chunk351402.Z.isUpdatingPaymentSource
+    }
+  });
+  if (!module.shouldRenderBillingSettings) return (0, Chunk951288.jsx)(P, {});
   let {
-    shouldRenderBillingSettings: n
-  } = module, i = P(module, ["shouldRenderBillingSettings"]);
-  return (0, Chunk951288.jsx)(L, R(C({}, Chunk647438), {
-    navigateTo: exports
-  }))
+    shouldRenderBillingSettings: t
+  } = module, n = N(module, ["shouldRenderBillingSettings"]);
+  return (0, Chunk951288.jsx)(w, C({}, require))
 }
