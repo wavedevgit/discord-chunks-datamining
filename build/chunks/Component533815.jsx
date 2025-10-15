@@ -25,7 +25,7 @@ function g(e) {
   } = (0, c.KZ)();
   return (0, n.jsx)(o.u, {
     text: u.intl.string(u.t.HUvyDQ),
-    children: (0, n.jsx)(l.kL8, {
+    children: (0, n.jsx)(l.P3F, {
       onClick: () => {
         (0, s.$b)(r, t.applicationId), l.uvj.announce(u.intl.string(u.t["08HmMj"])), f({
           action: "GAME_REMOVED",

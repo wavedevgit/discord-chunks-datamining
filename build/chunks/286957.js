@@ -26,6 +26,10 @@ let l = {
       getText: () => Chunk388032.intl.string(Chunk388032.t.RIOFc3),
       icon: Chunk481060.jrt
     },
+    [Chunk379405._.OBSESSED]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.isPJDg),
+      icon: Chunk481060.lbB
+    },
     [Chunk379405._.LOVE_IT]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t["1rN7BA"]),
       icon: Chunk481060.lbB
@@ -56,6 +60,10 @@ let l = {
     },
     [Chunk379405._.OPEN_TO_TEACH]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t["5HhQo6"]),
+      icon: Chunk481060.iFz
+    },
+    [Chunk379405._.LOOKING_TO_DISCUSS]: {
+      getText: () => Chunk388032.intl.string(Chunk388032.t.GipOCg),
       icon: Chunk481060.iFz
     }
   },
