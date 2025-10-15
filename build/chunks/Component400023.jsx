@@ -1,7 +1,7 @@
 /** Chunk was on 50118 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => K
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,7 +64,7 @@ function G(e) {
   return e
 }
 
-function z(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function z(e, t) {
   }), e
 }
 
-function W(e, t) {
+function z(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -92,7 +92,7 @@ function W(e, t) {
   }
   return r
 }
-let K = (0, Chunk258536.animated)(Chunk481060.eTT),
+let q = (0, Chunk258536.animated)(Chunk481060.eTT),
   Y = Chunk647438.memo(function(e) {
     var t, n;
     let {
@@ -115,7 +115,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [D, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), q = r.useMemo(() => y ? (0, L.aJ)({
+    } = e, [D, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = r.useMemo(() => y ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -135,7 +135,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       compact: y,
       hasUnreads: j,
       focusId: S,
-      placeholderHeight: q.totalHeight,
+      placeholderHeight: K.totalHeight,
       canLoadMore: null == T,
       handleScrollToBottom: r.useCallback(() => Y(true), [Y]),
       handleScrollFromBottom: r.useCallback(() => Y(false), [Y]),
@@ -161,7 +161,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
-      specs: q,
+      specs: K,
       filterAfterTimestamp: null != T ? T : Q,
       showingQuarantineBanner: N,
       hideSummaries: A,
@@ -208,7 +208,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       {
         ref: ea
       } = el,
-      eo = W(el, ["ref"]),
+      eo = z(el, ["ref"]),
       es = (0, h.Z)(e => {
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -224,7 +224,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
         className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == ei && ee, (0, i.jsxs)(K, z(G({
+        children: [null == ei && ee, (0, i.jsxs)(q, W(G({
           ref: es,
           customTheme: true,
           className: a()(p, F.scroller, ec ? ed : true),
@@ -236,11 +236,11 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
         }, er), {
           tabIndex: false,
           role: "group",
-          children: [en, (0, i.jsxs)("ol", z(G({
+          children: [en, (0, i.jsxs)("ol", W(G({
             className: a()(F.scrollerInner, {
               [F.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": V.intl.formatToPlainString(V.t.XarRiI, {
+            "aria-label": V.intl.formatToPlainString(V.t.XarRiL, {
               channelName: m.name
             })
           }, eo), {
@@ -248,7 +248,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
               className: F.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: V.intl.string(V.t.Spb3s7)
+              children: V.intl.string(V.t["Spb3s/"])
             }), $, (0, i.jsx)("div", {
               className: a()({
                 [F.scrollerSpacer]: !N,
@@ -263,7 +263,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  q = Chunk647438.memo(function(e) {
+  K = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -271,7 +271,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       forceCompact: a = false,
       forceCozy: o = false,
       typingGradient: s = false
-    } = e, u = W(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient"]);
+    } = e, u = z(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient"]);
     let {
       canManageMessages: d,
       permissionVersion: h,
@@ -381,7 +381,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
     return (0, i.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
-        children: (0, i.jsx)(Y, z(G({}, u), {
+        children: (0, i.jsx)(Y, W(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,

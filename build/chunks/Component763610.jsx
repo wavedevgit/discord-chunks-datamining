@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk74655 = require("./74655.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk53281 = require("./53281.jsx"),
@@ -24,9 +24,9 @@ function c(e) {
   return (0, n.jsx)(o.tEY, {
     ringTarget: f,
     within: true,
-    children: (0, n.jsxs)(a.U, {
+    children: (0, n.jsxs)(s.U, {
       ref: f,
-      className: s()(l, d.fileUpload),
+      className: a()(l, d.fileUpload),
       children: [(0, n.jsx)(o.rG2, {
         size: "sm"
       }), (0, n.jsx)(o.Text, {

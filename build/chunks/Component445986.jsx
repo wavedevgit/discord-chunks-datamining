@@ -109,7 +109,7 @@ class b extends Chunk647438.Component {
     super(...e), p(this, "handleCurrentItemClick", (e, t) => {
       e.type !== d.s9s.IMG || (0, i.$sL)() || (0, i.h7j)(e => (0, r.jsx)(i.Y0X, h(m({
         size: i.CgR.DYNAMIC,
-        "aria-label": u.intl.string(u.t.X4IxWF)
+        "aria-label": u.intl.string(u.t.X4IxWL)
       }, e), {
         parentComponent: "ApplicationStoreListingCarousel",
         children: (0, r.jsx)(f, h(m({}, e), {

@@ -38,7 +38,7 @@ function y(e) {
   } = (0, f.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, _.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.ZP)({
+  } = (0, _.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), I = (0, o.Nx)(), w = (0, s.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(L, {
@@ -87,10 +87,10 @@ function y(e) {
     }),
     onClose: n,
     isGift: b,
-    inOfferExperience: w,
+    inOfferExperience: I,
     priceOptions: u,
     showPromotionalGiftBanner: S,
-    enablePremiumBrandRefresh: I
+    enablePremiumBrandRefresh: w
   })
 }
 
@@ -105,10 +105,10 @@ function L(e) {
     enablePremiumBrandRefresh: f
   } = e, h = f ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["r+SebW"])
+    children: j.intl.string(j.t["r+SebU"])
   }) : (0, r.jsx)(l.Heading, {
     variant: "heading-md/semibold",
-    children: j.intl.string(j.t["r+SebW"])
+    children: j.intl.string(j.t["r+SebU"])
   }), {
     giftRecipient: m
   } = (0, _.wD)(), x = (0, d.y)({

@@ -34,7 +34,7 @@ function p(e, t) {
           let g = null != i ? i : r;
           n(true);
           let p = null != (u = null != l ? l : null == (c = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : c.name) ? u : g;
-          b.has(e.id) || b.set(e.id, e.content), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.Znl8Z2, {
+          b.has(e.id) || b.set(e.id, e.content), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.Znl8Z8, {
             targetLanguage: p
           }), o.ToastType.AI));
           try {
@@ -53,7 +53,7 @@ function p(e, t) {
                 channel_id: e.channel_id,
                 content: t.body.content
               }
-            }), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.FtVUqq, {
+            }), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.FtVUqm, {
               targetLanguage: p
             }), o.ToastType.SUCCESS)))
           } finally {
@@ -99,13 +99,13 @@ function p(e, t) {
     }(O, m);
   return null != e.content && "" !== e.content.trim() && (null == p ? true : p.enableAIFeatures) ? h ? (0, r.jsx)(o.sNh, {
     id: "revert-translation",
-    label: f.intl.string(f.t.JC9BXl),
+    label: f.intl.string(f.t.JC9BXn),
     icon: o.os0,
     action: y,
     disabled: m
   }) : (0, r.jsx)(o.sNh, {
     id: "translate",
-    label: m ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
+    label: m ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
     action: () => O(),
     disabled: m,
     children: v

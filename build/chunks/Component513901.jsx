@@ -72,14 +72,14 @@ function y(e) {
         className: o()({
           [b.buttonHighlighted]: I
         }),
-        children: E.intl.string(E.t["/dRfCQ"])
+        children: E.intl.string(E.t["/dRfCf"])
       }), L && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: b.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: D ? E.intl.string(E.t.CHf9iI) : E.intl.string(E.t.uMuafH),
+          text: D ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
           onClick: x
         })
       })]

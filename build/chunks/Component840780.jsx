@@ -172,8 +172,8 @@ class eN extends Chunk647438.PureComponent {
           markAsDismissed: n
         } = e;
         return t === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(h.J2, {
-          title: ex.intl.string(ex.t["0l2pEh"]),
-          body: ex.intl.string(ex.t.DSZUKy),
+          title: ex.intl.string(ex.t["0l2pEt"]),
+          body: ex.intl.string(ex.t["DSZUK/"]),
           targetElementRef: this.inviteButtonRef,
           align: "right",
           shouldShow: true,
@@ -182,7 +182,7 @@ class eN extends Chunk647438.PureComponent {
             align: "end"
           },
           actions: [{
-            text: ex.intl.string(ex.t.YdkBCA),
+            text: ex.intl.string(ex.t.YdkBCH),
             onClick: () => {
               var e;
               n(ey.L.TAKE_ACTION), s()(null != l, "Received null activity"), eu.default.track(e_.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
@@ -197,8 +197,8 @@ class eN extends Chunk647438.PureComponent {
             }
           }]
         }) : t === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(h.J2, {
-          title: ex.intl.string(ex.t.MxAlrK),
-          body: ex.intl.string(ex.t["/UTTEh"]),
+          title: ex.intl.string(ex.t.MxAlrB),
+          body: ex.intl.string(ex.t["/UTTEg"]),
           targetElementRef: this.accountLinkUpsellTargetRef,
           position: "top",
           align: "left",
@@ -206,7 +206,7 @@ class eN extends Chunk647438.PureComponent {
             align: "start"
           },
           actions: [{
-            text: ex.intl.string(ex.t.aRIFWF),
+            text: ex.intl.string(ex.t.aRIFWD),
             onClick: () => {
               n(ey.L.TAKE_ACTION), window.open(ed.Z.getArticleURL(e_.BhN.IN_GAME_FEATURES), "_blank")
             }
@@ -224,7 +224,7 @@ class eN extends Chunk647438.PureComponent {
           title: ex.intl.formatToPlainString(ex.t["lo6H6+"], {
             gameName: i.name
           }),
-          body: ex.intl.string(ex.t.qYAzOj),
+          body: ex.intl.string(ex.t.qYAzOp),
           targetElementRef: g,
           align: "right",
           shouldShow: true,
@@ -234,7 +234,7 @@ class eN extends Chunk647438.PureComponent {
             align: "end"
           },
           actions: [{
-            text: ex.intl.string(ex.t.lw71NT),
+            text: ex.intl.string(ex.t.lw71Nf),
             onClick: () => {
               n(ey.L.TAKE_ACTION), b()
             }
@@ -488,12 +488,12 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     x = (0, u.e7)([R.Z], () => R.Z.getFakeGameData()),
     S = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     Z = (0, E.Z)() && null != S && (0, j.R)(),
-    w = (0, u.e7)([er.Z], () => (0, V.Z)(er.Z) && (0, ep.isWindows)()),
+    w = (0, u.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
     A = (0, u.e7)([el.Z], () => null != o ? el.Z.findActivity(o, e => e.type === e_.IIU.PLAYING) : null),
     D = null != f && f.ownerId === o && f.state !== e_.jm8.ENDED,
     L = (0, u.e7)([es.default, eo.Z], () => null != p ? (0, T.F6)(p, es.default, eo.Z) : true),
     M = (0, Y.Z)(),
-    [U, F] = i.useState(false),
+    [U, V] = i.useState(false),
     H = (0, u.e7)([K.Z], () => K.Z.getWindowOpen(e_.KJ3.ACTIVITY_POPOUT)),
     {
       hasAlreadyLinked: W,
@@ -543,7 +543,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     guildForConnectedChannel: h,
     streamQualityIndicator: M,
     isForceShowSharingPopout: U,
-    setIsForceShowSharingPopout: F,
+    setIsForceShowSharingPopout: V,
     isActivityPopoutOpen: H,
     hasAlreadyLinked: W,
     blockAccountLinkDismissibleContent: !eg || !ef,

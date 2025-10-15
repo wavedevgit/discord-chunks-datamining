@@ -136,7 +136,7 @@ let k = e => {
         selected: t,
         route: C,
         icon: null != a ? a : c.EOn,
-        text: Z.intl.string(Z.t.pWG4zc),
+        text: Z.intl.string(Z.t.pWG4ze),
         locationState: n
       }, b, m), {
         onMouseEnter: u,
@@ -211,7 +211,7 @@ let k = e => {
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
-      "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxc),
+      "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxY),
       children: e => (0, r.jsxs)(U, R(L(R(L({
         className: null != I.entryPointClassName ? (0, v.l)(w, I.entryPointClassName) : true
       }, C), {

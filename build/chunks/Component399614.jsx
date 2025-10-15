@@ -95,7 +95,7 @@ let h = [],
         }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "none",
-          children: g.intl.string(g.t["w9/qGR"])
+          children: g.intl.string(g.t["w9/qGY"])
         })]
       })]
     })

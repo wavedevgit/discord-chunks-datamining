@@ -97,7 +97,7 @@ function F(e) {
       basis: 0,
       align: S.Z.Align.CENTER,
       className: U.text,
-      children: [null != n && (0, i.jsx)(y.Z, {
+      children: [null != n && (0, i.jsx)(O.Z, {
         user: n,
         size: g.EFr.SIZE_24,
         className: U.avatar
@@ -174,7 +174,7 @@ function z(e) {
         color: "text-muted",
         children: B.intl.string(B.t["1i1bUl"])
       }), (0, i.jsx)(b.u, {
-        text: B.intl.string(B.t["jvd/LC"]),
+        text: B.intl.string(B.t["jvd/LF"]),
         children: (0, i.jsx)(g.d3s, {
           size: "xxs",
           color: "currentColor",
@@ -218,12 +218,12 @@ function q(e) {
         children: null == o ? true : o.name
       })]
     }),
-    uses: B.intl.string(B.t.jHpxws),
-    expiresAt: B.intl.string(B.t.PqEzn5),
+    uses: B.intl.string(B.t.jHpxwo),
+    expiresAt: B.intl.string(B.t.PqEzn8),
     onRevokeInvite: () => {
       if (!c || null == o) return void h.Z.show({
-        title: B.intl.string(B.t.JmUENj),
-        body: B.intl.string(B.t.SrvsMD)
+        title: B.intl.string(B.t.JmUENg),
+        body: B.intl.string(B.t.SrvsML)
       });
       (0, g.ZDy)(async () => {
         let {
@@ -250,23 +250,23 @@ function V(e) {
     loading: f = false
   } = e;
   s()(null != l, "guild is required");
-  let h = (0, O.ZP)(),
+  let h = (0, y.ZP)(),
     x = (0, R.MQ)(l),
     j = (0, R.O4)(l),
-    y = r.useMemo(() => null == t || f ? [] : d()(t).sortBy(e => {
+    O = r.useMemo(() => null == t || f ? [] : d()(t).sortBy(e => {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? true : t.username) ? n : "").toLowerCase()
     }).value(), [t, f]),
     _ = (0, p.Wu)([Z.Z], () => Z.Z.getSortedLinkedChannelsForGuild(l.id).filter(e => null == u || e.id === u.id)),
-    C = r.useMemo(() => f ? [] : [...y.map(e => ({
+    C = r.useMemo(() => f ? [] : [...O.map(e => ({
       type: "invite",
       data: e
     })), ..._.map(e => ({
       type: "channel",
       data: e
-    }))], [y, _, f]),
+    }))], [O, _, f]),
     N = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(w.default, K(G({}, e), {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(P.default, K(G({}, e), {
         channel: u,
         guild: l,
         source: M.InstantInviteSources.SETTINGS_INVITE
@@ -275,9 +275,9 @@ function V(e) {
     [I, T] = r.useState(62),
     k = () => {
       let e = {
-        source: E.Zu.GUILD_SETTINGS
+        source: w.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, K(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(E.default, K(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -298,7 +298,7 @@ function V(e) {
               width: 256,
               height: 130
             }), (0, i.jsx)(g.OZU, {
-              note: B.intl.string(B.t.F53CAQ),
+              note: B.intl.string(B.t.F53CAc),
               children: B.intl.string(B.t["+nLJkZ"])
             })]
           })
@@ -318,21 +318,21 @@ function V(e) {
             className: H.marginReset,
             children: (0, i.jsx)(g.Text, {
               variant: "text-md/medium",
-              children: _.length > 0 ? B.intl.string(B.t.l7VISU) : B.intl.string(B.t.LBlFEB)
+              children: _.length > 0 ? B.intl.string(B.t.l7VISQ) : B.intl.string(B.t.LBlFEN)
             })
           }), (0, i.jsx)(S.Z.Child, {
             grow: 1,
             basis: 0,
             children: (0, i.jsx)(g.Text, {
               variant: "text-md/medium",
-              children: B.intl.string(B.t.erWrmJ)
+              children: B.intl.string(B.t.erWrmA)
             })
           }), (0, i.jsx)(S.Z.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(g.Text, {
               variant: "text-md/medium",
-              children: B.intl.string(B.t["1aM27e"])
+              children: B.intl.string(B.t["1aM27d"])
             })
           })]
         }, "table-header");
@@ -347,7 +347,7 @@ function V(e) {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: U.header,
-        children: B.intl.string(B.t["9F90iY"])
+        children: B.intl.string(B.t["9F90ic"])
       });
       if (1 === t) return (0, i.jsxs)("div", {
         className: U.actions,
@@ -355,15 +355,15 @@ function V(e) {
           className: H.marginBottom20,
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: true === o ? B.intl.format(B.t["97VdNj"], {
+          children: true === o ? B.intl.format(B.t["97VdNm"], {
             onCreateInvite: N
-          }) : B.intl.string(B.t.WDw38P)
+          }) : B.intl.string(B.t.WDw38H)
         }), (0, i.jsxs)("div", {
           className: U.inviteDisabledContainer,
           children: [(0, i.jsx)(g.Button, {
             size: "sm",
             variant: j ? "primary" : "critical-primary",
-            text: j ? B.intl.string(B.t["/dbw3N"]) : B.intl.string(B.t.Uwsjn5),
+            text: j ? B.intl.string(B.t["/dbw3H"]) : B.intl.string(B.t.Uwsjn6),
             onClick: k,
             disabled: !x
           }), j && (0, i.jsxs)("div", {
@@ -375,7 +375,7 @@ function V(e) {
               color: m.Z.unsafe_rawColors.YELLOW_300.css
             }), (0, i.jsx)(g.Text, {
               variant: "text-sm/normal",
-              children: B.intl.string(B.t["2LLbj4"])
+              children: B.intl.string(B.t["2LLbj9"])
             })]
           })]
         }), (0, i.jsx)(g.izJ, {
@@ -383,7 +383,7 @@ function V(e) {
         })]
       });
       if (2 === t) return (0, i.jsx)(L.Y, {
-        hasInvites: y.length > 0,
+        hasInvites: O.length > 0,
         setHeight: T,
         onShowDisableInvites: k,
         onShowInviteModal: N,

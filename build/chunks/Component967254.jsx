@@ -84,15 +84,15 @@ let C = e => {
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-default",
-          children: "active" === t ? O.intl.formatToPlainString(O.t.IeV2oa, {
+          children: "active" === t ? O.intl.formatToPlainString(O.t.IeV2oY, {
             count: a.toString()
-          }) : O.intl.formatToPlainString(O.t.fZAHBQ, {
+          }) : O.intl.formatToPlainString(O.t.fZAHBT, {
             count: a.toString()
           })
         }), (0, r.jsx)(l.Heading, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: "active" === t ? O.intl.string(O.t.XJ2YVV) : O.intl.string(O.t.SzGV0t)
+          children: "active" === t ? O.intl.string(O.t.XJ2YVR) : O.intl.string(O.t.SzGV0g)
         })]
       }), (0, r.jsx)("div", {
         className: v.caret,
@@ -121,11 +121,11 @@ let C = e => {
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/bold",
       className: Chunk712243.emptyStateText,
-      children: Chunk388032.intl.string(Chunk388032.t.reLFaW)
+      children: Chunk388032.intl.string(Chunk388032.t.reLFaV)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       className: Chunk712243.emptyStateSubtext,
-      children: Chunk388032.intl.string(Chunk388032.t.ERdH1t)
+      children: Chunk388032.intl.string(Chunk388032.t.ERdH1o)
     })]
   }),
   R = () => (0, Chunk951288.jsx)("div", {
@@ -133,7 +133,7 @@ let C = e => {
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       className: Chunk712243.emptyStateSubtext,
-      children: Chunk388032.intl.string(Chunk388032.t.RV3AXV)
+      children: Chunk388032.intl.string(Chunk388032.t.RV3AXf)
     })
   }),
   P = e => {
@@ -149,7 +149,7 @@ let C = e => {
   w = () => (0, Chunk951288.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
     className: Chunk712243.newBadge,
-    children: Chunk388032.intl.string(Chunk388032.t.QKMRCw)
+    children: Chunk388032.intl.string(Chunk388032.t.QKMRC4)
   }),
   D = e => {
     let {
@@ -167,13 +167,13 @@ let C = e => {
           children: e
         })
       };
-      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVl, A(T({}, a), {
+      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVv, A(T({}, a), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
         classification_type: a.description,
         classificationHook: a.descriptionHook
-      }) : O.intl.format(O.t.QY4g5u, a)
+      }) : O.intl.format(O.t.QY4g5t, a)
     }, [t, s]), p = () => {
       (0, l.ZDy)(async () => {
         let {
@@ -242,7 +242,7 @@ let C = e => {
           }), (0, r.jsx)("button", {
             className: v.paginationButton,
             onClick: () => u(e => e + m),
-            children: O.intl.format(O.t["9Ml56O"], {
+            children: O.intl.format(O.t["9Ml56H"], {
               nextPageSize: m
             })
           })]

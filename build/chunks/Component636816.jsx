@@ -27,10 +27,10 @@ function u(e) {
     g()
   }, [t, g]);
   let N = [];
-  if (n === d.d4z.GUILD_ANNOUNCEMENT && (N.push(h.intl.format(h.t.tI7KNT, {
+  if (n === d.d4z.GUILD_ANNOUNCEMENT && (N.push(h.intl.format(h.t.tI7KNX, {
       documentationLink: c.Z.getArticleURL(d.BhN.ANNOUNCEMENT_CHANNELS)
     })), !C && !b)) {
-    let e = h.intl.string(h.t["2Ab4IS"]);
+    let e = h.intl.string(h.t["2Ab4Id"]);
     N.push(e)
   }
   return 0 === N.length ? null : (0, r.jsx)(r.Fragment, {

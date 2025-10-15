@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk461917 = require("./461917.js");
 
@@ -71,9 +71,9 @@ function Z() {
     className: Chunk461917.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk119475.default["AsmU8/"])
+      children: Chunk388032.intl.string(Chunk687101.default.AsmU85)
     }), (0, Chunk951288.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t["5AFxuL"]),
+      text: Chunk388032.intl.string(Chunk388032.t["5AFxuK"]),
       children: (0, Chunk951288.jsx)(Chunk481060.SrA, {
         size: "custom",
         height: 20,
@@ -105,7 +105,7 @@ function V(e) {
     children: [(0, r.jsxs)("div", {
       className: U.badgeAndCloseRow,
       children: [(0, r.jsx)(f.lBU, {
-        text: k.intl.string(k.t.oW0eUV)
+        text: k.intl.string(k.t.oW0eUd)
       }), (0, r.jsx)(B, {
         markAsDismissed: t
       })]
@@ -113,12 +113,12 @@ function V(e) {
       className: U.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(f.Heading, {
         variant: "heading-lg/extrabold",
-        children: k.intl.string(j.default["23QUzs"])
+        children: k.intl.string(j.default["23QUzv"])
       }), (0, r.jsx)(f.Text, {
         className: U.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: k.intl.string(n ? j.default.TRCE4u : j.default["UV/Vtr"])
+        children: k.intl.string(n ? j.default.TRCE4g : j.default["UV/Vtv"])
       })]
     })]
   })
@@ -136,7 +136,7 @@ function H(e) {
     className: o()(U.sliderContainer, U.gradientDirectionSliderContainer),
     children: [(0, r.jsx)(f.Text, {
       variant: "text-sm/medium",
-      children: k.intl.string(j.default.dZkwg4)
+      children: k.intl.string(j.default.dZkwgx)
     }), (0, r.jsx)(f.iRW, {
       initialValue: t,
       defaultValue: 0,
@@ -163,7 +163,7 @@ function Y(e) {
     className: U.sliderContainer,
     children: [(0, r.jsx)(f.Text, {
       variant: "text-sm/medium",
-      children: k.intl.string(j.default.xlXkaG)
+      children: k.intl.string(j.default.xlXkaL)
     }), (0, r.jsx)(f.iRW, {
       initialValue: t,
       defaultValue: A.BH,
@@ -191,12 +191,12 @@ function W(e) {
     })
   }, []);
   return (0, r.jsx)(c.u, {
-    text: k.intl.string(j.default.c9MBEB),
+    text: k.intl.string(j.default.c9MBEH),
     children: "with-text" === t ? (0, r.jsx)(u.zxk, {
       variant: "secondary",
       onClick: n,
       icon: f.T$Z,
-      text: k.intl.string(j.default.c9MBEB),
+      text: k.intl.string(j.default.c9MBEH),
       fullWidth: true
     }) : (0, r.jsx)("div", {
       className: U.surpriseMeButton,
@@ -205,7 +205,7 @@ function W(e) {
         size: "md",
         onClick: n,
         icon: f.T$Z,
-        "aria-label": k.intl.string(j.default.c9MBEB)
+        "aria-label": k.intl.string(j.default.c9MBEH)
       })
     })
   })
@@ -218,13 +218,13 @@ function K(e) {
     fullWidth: i
   } = e;
   return (0, r.jsx)(c.u, {
-    text: k.intl.string(j.default.SFyHIC),
+    text: k.intl.string(j.default.SFyHIP),
     shouldShow: n,
     children: (0, r.jsx)(u.zxk, {
       variant: "primary",
       onClick: t,
       disabled: n,
-      text: k.intl.string(k.t["1Qm829"]),
+      text: k.intl.string(k.t["1Qm822"]),
       fullWidth: i
     })
   })
@@ -249,7 +249,7 @@ function z(e) {
         section: L.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
       },
       textOptions: {
-        subscribeText: k.intl.string(k.t.JST6jo)
+        subscribeText: k.intl.string(k.t.JST6jl)
       },
       subscriptionTier: M.Si.TIER_2,
       showGradient: true,
@@ -277,7 +277,7 @@ function q(e) {
     }), (0, r.jsx)(u.Avr, {
       variant: "secondary",
       onClick: o,
-      text: k.intl.string(k.t["13/7kZ"])
+      text: k.intl.string(k.t["13/7kX"])
     }), a ? (0, r.jsx)(K, {
       disabled: !n,
       onApply: t
@@ -291,7 +291,7 @@ function q(e) {
         section: L.jXE.CUSTOM_THEMES_FOOTER
       },
       textOptions: {
-        textOverride: k.intl.string(k.t.pj0XBA)
+        textOverride: k.intl.string(k.t.pj0XBN)
       }
     })]
   })
@@ -366,7 +366,7 @@ function X(e) {
             variant: "secondary",
             onClick: X,
             icon: f.Oe7,
-            text: k.intl.string(k.t.yBZMsb),
+            text: k.intl.string(k.t.yBZMsQ),
             fullWidth: true
           })]
         })

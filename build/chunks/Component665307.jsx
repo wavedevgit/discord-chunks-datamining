@@ -91,7 +91,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
   },
   U = [{
     key: Chunk981631.iEv.NAME,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.dBfWfX),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.dBfWfc),
     sort: true,
     cellClassName: Chunk117554.nameCell,
     bodyCellClassName: Chunk117554.nameBodyCell,
@@ -107,7 +107,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           className: A.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
-          text: x.intl.string(x.t.tG2SzM),
+          text: x.intl.string(x.t.tG2SzG),
           children: ["(", (0, i.jsx)(h.SrA, {
             size: "md",
             color: "currentColor",
@@ -118,7 +118,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     })
   }, {
     key: Chunk981631.iEv.PLATFORM,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.YR4cHB),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.YR4cHH),
     sort: true,
     cellClassName: Chunk117554.platformCell,
     bodyCellClassName: Chunk117554.textCell,
@@ -126,21 +126,21 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       let t = e.libraryApplication.getDistributor();
       return (0, i.jsx)(O.Z, {
         align: O.Z.Align.CENTER,
-        children: null != t ? P.EOG[t] : x.intl.string(x.t["F+l3Ji"])
+        children: null != t ? P.EOG[t] : x.intl.string(x.t["F+l3Jt"])
       })
     }
   }, {
     key: Chunk981631.iEv.LAST_PLAYED,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.FDDyjY),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.FDDyjS),
     sort: true,
     cellClassName: Chunk117554.lastPlayedCell,
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? x.intl.string(x.t.Md326u) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
+      return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
         location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : x.intl.string(x.t.EoWLrq), (0, i.jsx)(O.Z, {
+      }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(O.Z, {
         align: O.Z.Align.CENTER,
         className: o()({
           [A.lastPlayedCellNew]: e.isNew
@@ -163,12 +163,12 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             flag: P.eHb.PRIVATE,
             item: e,
             icon: h.kZF,
-            tooltip: x.intl.string(x.t.NozAoq)
+            tooltip: x.intl.string(x.t.NozAop)
           }), (0, i.jsx)(M, {
             flag: P.eHb.OVERLAY_DISABLED,
             item: e,
             icon: h.o8v,
-            tooltip: x.intl.string(x.t.Az9eqq)
+            tooltip: x.intl.string(x.t.Az9eqn)
           }), (0, i.jsx)(j.Z, {
             className: o()(A.settingIcon, {
               [A.hidden]: !e.supportsCloudSync
@@ -319,9 +319,9 @@ class B extends(r = Chunk647438.PureComponent) {
         filterQuery: n
       } = this.props,
       r = exports.length > 0;
-    return r ? null : (e = "" !== require ? Chunk388032.intl.format(Chunk388032.t["4Q1TAg"], {
+    return r ? null : (e = "" !== require ? Chunk388032.intl.format(Chunk388032.t["4Q1TAr"], {
       query: require
-    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PT"]), (0, Chunk951288.jsxs)("div", {
+    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PY"]), (0, Chunk951288.jsxs)("div", {
       className: r ? Chunk117554.emptyStateSmall : Chunk117554.emptyStateLarge,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk117554.emptyWumpus
@@ -333,7 +333,7 @@ class B extends(r = Chunk647438.PureComponent) {
           className: Chunk117554.emptyStateText,
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk117554.emptyStateHeader,
-            children: Chunk388032.intl.string(Chunk388032.t.Lw8X2t)
+            children: Chunk388032.intl.string(Chunk388032.t.Lw8X2j)
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk117554.emptyStateDescription,
             children: module

@@ -54,7 +54,7 @@ class u extends(r = Chunk647438.PureComponent) {
             className: Chunk405289.spacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
               type: "password",
-              label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
+              label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
               autoComplete: "current-password",
               autoFocus: true,
               value: d,
@@ -72,12 +72,12 @@ class u extends(r = Chunk647438.PureComponent) {
             direction: "horizontal-reverse",
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
-              text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
+              text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
               type: "submit",
               disabled: u || 0 === d.length
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "secondary",
-              text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+              text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
               onClick: this.handleCancel
             })]
           })

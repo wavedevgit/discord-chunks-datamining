@@ -51,11 +51,11 @@ let b = () => {
         size: "xs",
         color: "currentColor",
         className: Chunk990186.arrow
-      }), Chunk388032.intl.string(Chunk388032.t["13/7kZ"])]
+      }), Chunk388032.intl.string(Chunk388032.t["13/7kX"])]
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk990186.header,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["N/y2WF"])
+      children: Chunk388032.intl.string(Chunk388032.t["N/y2WE"])
     }), (0, Chunk951288.jsx)(Chunk755721.zx, {
       className: Chunk990186.button,
       look: Chunk755721.zx.Looks.OUTLINED,
@@ -63,7 +63,7 @@ let b = () => {
       size: Chunk755721.zx.Sizes.NONE,
       submitting: require,
       onClick: y,
-      children: Chunk388032.intl.format(Chunk388032.t.uHN7n5, {
+      children: Chunk388032.intl.format(Chunk388032.t.uHN7ny, {
         guild: exports.name
       })
     })]

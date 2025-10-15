@@ -33,10 +33,10 @@ let g = e => {
     caretConfig: {
       align: "start"
     },
-    title: f.intl.format(f.t["3yZP0N"], {
+    title: f.intl.format(f.t["3yZP0G"], {
       percent: g.discount.amount
     }).toString(),
-    body: f.intl.format(f.t["3Q4wCw"], {
+    body: f.intl.format(f.t["3Q4wCy"], {
       discountedPrice: E,
       billingPeriod: (0, s.JP)(g.discount.user_usage_limit_interval),
       numMonths: g.discount.user_usage_limit
@@ -47,7 +47,7 @@ let g = e => {
     },
     gradientColor: "nitro-pink",
     actions: [{
-      text: f.intl.string(f.t.zrCzVF),
+      text: f.intl.string(f.t.zrCzVB),
       variant: "expressive",
       onClick: () => {
         b(p.L.TAKE_ACTION), (0, l.ZDy)(async () => {

@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
 function s() {
   let [e, t] = (0, Chunk647438.useState)(""), [n, s] = (0, Chunk647438.useState)([]), [o, l] = (0, Chunk647438.useState)(null), [c, d] = (0, Chunk647438.useState)(false);
   return (0, Chunk647438.useEffect)(() => {
-    if (null != o) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
+    if (null != o) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWrd"], {
       amount: "1 orb",
       errorMessage: o.message
     }));
@@ -19,7 +19,7 @@ function s() {
         var t;
         return null == (t = e.sku) ? true : t.name
       });
-      exports(Chunk388032.intl.format(Chunk388032.t.JxNFam, {
+      exports(Chunk388032.intl.format(Chunk388032.t.JxNFav, {
         amountDescription: "1 orb",
         redeemedItemDescription: "".concat(1 === module.length ? "SKU" : "SKUs", ": ").concat(module.join(", "), ". Entitlement ").concat(1 === require.length ? "ID" : "IDs", ": ").concat(require.map(e => e.id).join(", "))
       }));

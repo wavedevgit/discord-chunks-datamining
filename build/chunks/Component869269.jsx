@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk880193 = require("./880193.jsx"),
   Chunk516448 = require("./516448.jsx"),
   Chunk975331 = require("./975331.jsx"),
-  Chunk66972 = require("./66972.jsx"),
+  Chunk231610 = require("./231610.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk747805 = require("./747805.js");
 
@@ -49,21 +49,21 @@ function x(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
           className: b.publishListingInfoHeader,
-          children: h.intl.string(h.t.WOlcS0)
+          children: h.intl.string(h.t.WOlcS8)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: h.intl.string(h.t.rMulDQ)
+          children: h.intl.string(h.t.rMulDT)
         })]
       }), (0, r.jsx)(a.u, {
         shouldShow: S,
-        text: h.intl.string(h.t.v7lRIi),
+        text: h.intl.string(h.t.v7lRIh),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(s.Button, {
             disabled: S,
             variant: "secondary",
             onClick: C,
             loading: v,
-            text: h.intl.string(h.t.Lj6R5u)
+            text: h.intl.string(h.t.Lj6R5m)
           })
         })
       })]

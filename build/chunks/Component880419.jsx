@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk973772 = require("./973772.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk362320 = require("./362320.js");
 
@@ -44,10 +44,10 @@ function b(e) {
     className: g.tooltipContainer,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: f.intl.string(h.default.TZsu1d)
+      children: f.intl.string(h.default.TZsu1U)
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
-      children: f.intl.formatToPlainString(h.default["5HQUzM"], {
+      children: f.intl.formatToPlainString(h.default["5HQUzD"], {
         boostCount: t
       })
     })]
@@ -68,8 +68,8 @@ function _(e) {
         children: f.intl.string(h.default["9oYuvb"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        children: f.intl.formatToPlainString(h.default.WRRYUV, {
-          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : f.intl.string(f.t.BfF6EB)
+        children: f.intl.formatToPlainString(h.default.WRRYUT, {
+          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : f.intl.string(f.t.BfF6ED)
         })
       })]
     })
@@ -102,7 +102,7 @@ function O(e) {
     null == j || j(E)
   }, [E, j]), (0, r.jsx)(s.aML, {
     delay: 100,
-    "aria-label": null != N ? N : I ? f.intl.string(h.default.TZsu1d) : true,
+    "aria-label": null != N ? N : I ? f.intl.string(h.default.TZsu1U) : true,
     text: null != N ? N : I ? (0, r.jsx)(_, {
       guildId: t,
       powerup: n
@@ -129,7 +129,7 @@ function O(e) {
               text: t.toString(),
               icon: a
             } : {
-              text: f.intl.format(n ? h.default.uzQpQU : h.default.ad2Mfn, {
+              text: f.intl.format(n ? h.default.uzQpQd : h.default.ad2Mfj, {
                 boostCount: t,
                 dotHook: () => (0, r.jsx)("span", {
                   className: g.dot,
@@ -150,7 +150,7 @@ function O(e) {
           });
           return (0, r.jsx)(a.zxk, m({
             variant: I ? "secondary" : "primary",
-            "aria-label": f.intl.string(I ? h.default.TZsu1d : h.default.gSxlHR),
+            "aria-label": f.intl.string(I ? h.default.TZsu1U : h.default.gSxlHf),
             disabled: P,
             onClick: I ? S : x,
             loading: C,

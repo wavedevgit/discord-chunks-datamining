@@ -144,7 +144,7 @@ function K(e) {
     tooltipPosition: a,
     disabled: i,
     onClick: s,
-    text: L.intl.formatToPlainString(L.t["/8fYOz"], {
+    text: L.intl.formatToPlainString(L.t["/8fYO5"], {
       emojiName: t.emojiName,
       soundName: t.name
     }),
@@ -173,7 +173,7 @@ function z(e) {
   return (0, r.jsx)(W, {
     disabled: n,
     onClick: c,
-    text: L.intl.formatToPlainString(s ? L.t.lQLsjY : L.t.Y5DOs7, {
+    text: L.intl.formatToPlainString(s ? L.t.lQLsjc : L.t.Y5DOs4, {
       emojiName: t.emojiName,
       soundName: t.name
     }),
@@ -326,7 +326,7 @@ let X = Chunk647438.forwardRef(function(e, t) {
               }), (0, r.jsx)(f.Text, {
                 variant: "text-xs/medium",
                 color: "header-primary",
-                children: L.intl.string(L.t.QqqXLS)
+                children: L.intl.string(L.t.QqqXLY)
               })]
             }), eR && eZ]
           })]
@@ -361,7 +361,7 @@ let X = Chunk647438.forwardRef(function(e, t) {
           id: eS,
           role: "button"
         }),
-        "aria-label": L.intl.formatToPlainString(L.t.tuMUJy, {
+        "aria-label": L.intl.formatToPlainString(L.t.tuMUJ2, {
           emojiName: T.emojiName,
           soundName: T.name
         }),
@@ -400,7 +400,7 @@ let X = Chunk647438.forwardRef(function(e, t) {
         }), eV()]
       }))
     }), !T.available && (0, r.jsx)(d.u, {
-      text: L.intl.string(L.t.MDOXJS),
+      text: L.intl.string(L.t.MDOXJR),
       children: (0, r.jsx)("div", {
         className: x.unavailableTooltip
       })

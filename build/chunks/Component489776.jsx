@@ -105,7 +105,7 @@ function h(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-link",
-          children: g.intl.format(g.t.dNjRAQ, {
+          children: g.intl.format(g.t.dNjRAf, {
             ruleName: C()
           })
         })]

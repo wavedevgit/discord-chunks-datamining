@@ -45,8 +45,8 @@ function h(e) {
     })
   }, [t.id]);
   if (null == c || null != b || null != y) return null;
-  let w = C.ZP.getName(t),
-    I = null == n ? true : n.getBannerURL({
+  let I = C.ZP.getName(t),
+    w = null == n ? true : n.getBannerURL({
       canAnimate: false,
       size: 714
     });
@@ -55,10 +55,10 @@ function h(e) {
     style: {
       width: 714
     },
-    children: [null != I && (0, r.jsx)("div", {
+    children: [null != w && (0, r.jsx)("div", {
       className: f.backgroundImage,
       style: {
-        backgroundImage: "url(".concat(I, ")")
+        backgroundImage: "url(".concat(w, ")")
       }
     }), (0, r.jsxs)("div", {
       className: f.wishlistBannerHeader,
@@ -67,18 +67,18 @@ function h(e) {
         children: [(0, r.jsx)(a.Heading, {
           variant: "display-md",
           className: f.wishlistBannerTitle,
-          children: _.intl.string(_.t["7lZ31N"])
+          children: _.intl.string(_.t["7lZ31J"])
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "always-white",
-          children: _.intl.format(_.t.BjEX39, {
-            username: w
+          children: _.intl.format(_.t.BjEX38, {
+            username: I
           })
         })]
       }), (0, r.jsx)(a.Button, {
         variant: "overlay-secondary",
-        text: _.intl.format(_.t["8uYD+P"], {
-          username: w
+        text: _.intl.format(_.t["8uYD+I"], {
+          username: I
         }),
         onClick: v,
         disabled: (null == t ? true : t.id) == null

@@ -88,7 +88,7 @@ function T(e) {
     children: (0, r.jsx)(l.kSQ, {
       children: (0, r.jsx)(l.sNh, {
         id: "copy",
-        label: g.intl.string(g.t.uHhnfX),
+        label: g.intl.string(g.t.uHhnfa),
         action: () => (0, _.JG)(t)
       })
     })

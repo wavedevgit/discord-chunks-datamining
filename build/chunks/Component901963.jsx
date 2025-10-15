@@ -52,7 +52,7 @@ let O = "premiumRetentionEmojiPickerNotice",
         className: y.premiumRetentionNoticeContent,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          children: b.intl.format(b.t.bTMjiI, {
+          children: b.intl.format(b.t.bTMjiO, {
             planName: h.ZP.getDisplayPremiumType(T.planId),
             endsAt: A.toDate()
           })
@@ -63,7 +63,7 @@ let O = "premiumRetentionEmojiPickerNotice",
                 section: g.oAB.PREMIUM
               })
             },
-            children: b.intl.string(b.t.W3aavr)
+            children: b.intl.string(b.t.W3aavh)
           })
         })]
       }), (0, r.jsx)(c.P3F, {

@@ -39,7 +39,7 @@ let v = function(e) {
     channelId: y.channelId,
     icon: y.icon
   }), k = null;
-  null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKC);
+  null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKP);
   let {
     drag: M,
     dragSourcePosition: G,
@@ -143,18 +143,18 @@ let v = function(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: x.intl.format(x.t.Ngk8Nj, {
+          children: x.intl.format(x.t.Ngk8Nr, {
             channelName: w.name
           })
         })]
       }), (0, r.jsx)(o.u, {
-        text: x.intl.string(x.t.bt75u7),
+        text: x.intl.string(x.t.bt75uw),
         children: (0, r.jsx)(c.hU, {
           icon: c.vdY,
           size: "sm",
           variant: "primary",
           onClick: F,
-          "aria-label": x.intl.string(x.t.bt75u7)
+          "aria-label": x.intl.string(x.t.bt75uw)
         })
       })]
     }), null != k && (0, r.jsx)(c.Text, {

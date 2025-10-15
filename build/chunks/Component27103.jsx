@@ -59,7 +59,7 @@ function h(e) {
               color: "text-brand",
               tag: "span",
               className: p.username,
-              children: _.intl.string(_.t.hG1StL)
+              children: _.intl.string(_.t.hG1StD)
             }), (0, r.jsx)(s.Z, {
               type: f.Hb.SYSTEM_DM,
               className: p.systemTag
@@ -71,7 +71,7 @@ function h(e) {
           className: a()(p.__invalid_messageContent, {
             [p.compact]: n
           }),
-          children: _.intl.format(_.t.qntXNT, {
+          children: _.intl.format(_.t.qntXNQ, {
             username: h.nick,
             usernameHook: m
           })

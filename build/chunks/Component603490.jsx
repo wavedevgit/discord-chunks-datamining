@@ -34,7 +34,7 @@ function c(e) {
     clickTrap: true,
     children: () => (0, i.jsx)(o.sF, {
       ref: p,
-      label: s.intl.string(s.t.lfIHs7),
+      label: s.intl.string(s.t.lfIHs4),
       icon: a.EO4,
       onClick: c
     }, "add-reaction")

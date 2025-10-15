@@ -88,7 +88,7 @@ require.a(module, async function(e, r) {
           children: [(0, l.jsx)(s.Z, {
             width: 16,
             height: 16
-          }), O.intl.string(O.t.dpFK4O)]
+          }), O.intl.string(O.t.dpFK4M)]
         })]
       })
     }

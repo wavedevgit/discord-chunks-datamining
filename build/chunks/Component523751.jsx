@@ -158,7 +158,7 @@ function L(e) {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: T.intl.format(T.t["dR/SVF"], {
+        children: T.intl.format(T.t["dR/SVH"], {
           count: t.premiumSubscriberCount
         })
       })

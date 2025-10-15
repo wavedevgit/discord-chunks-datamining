@@ -52,7 +52,7 @@ class v extends(r = Chunk647438.PureComponent) {
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           icon: "caret" === Chunk120356 ? Chunk481060.V7D : Chunk481060.whL,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.vgfxaG),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.vgfxaA),
           onClick: this.handlePrevious
         })
       }), (0, Chunk951288.jsx)("div", {
@@ -60,7 +60,7 @@ class v extends(r = Chunk647438.PureComponent) {
         children: d().times(exports, t => (0, i.jsx)(p.P3F, {
           onClick: () => this.handleDotClick(t),
           className: t === e ? o()(b.dotSelected, l) : o()(b.dotNormal, a),
-          "aria-label": f.intl.formatToPlainString(f.t["2SXOrK"], {
+          "aria-label": f.intl.formatToPlainString(f.t["2SXOrM"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
@@ -69,7 +69,7 @@ class v extends(r = Chunk647438.PureComponent) {
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           icon: "caret" === Chunk120356 ? Chunk481060.Fbu : Chunk481060.ZSh,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.XiOHRU),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.XiOHRX),
           onClick: this.handleNext
         })
       })]

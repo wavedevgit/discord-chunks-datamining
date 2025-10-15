@@ -117,12 +117,12 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
         location_stack: n
       }
     }), (0, i.jsx)(p.u, {
-      text: ei.intl.string(ei.t.JVwWvb),
+      text: ei.intl.string(ei.t.JVwWva),
       children: (0, i.jsx)(f.Button, {
         size: "sm",
         variant: "primary",
         icon: f.v3n,
-        text: ei.intl.string(ei.t.YsIsPT),
+        text: ei.intl.string(ei.t.YsIsPU),
         onClick: t
       })
     })
@@ -204,7 +204,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
             color: w.Z.BG_BRAND
           }), (0, i.jsx)(f.Text, {
             variant: "text-xs/medium",
-            children: ei.intl.formatToPlainString(ei.t.RmiYFx, {
+            children: ei.intl.formatToPlainString(ei.t.RmiYF3, {
               gameName: a
             })
           })]
@@ -447,7 +447,7 @@ eO.Header = e_, eO.Body = e => {
         src: t,
         className: el.gameSectionIcon
       }) : null, (0, i.jsxs)("div", {
-        children: [eo(n), es(ei.intl.formatToPlainString(ei.t.C4WXvb, {
+        children: [eo(n), es(ei.intl.formatToPlainString(ei.t.C4WXvc, {
           memberCount: r.totalSize
         }))]
       }), (0, i.jsx)(en.Z, {
@@ -545,7 +545,7 @@ eO.Header = e_, eO.Body = e => {
         className: el.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: el.__invalid_xboxSectionDetails,
-        children: [eo(t), es(ei.intl.string(ei.t["JG9r+/"]))]
+        children: [eo(t), es(ei.intl.string(ei.t["JG9r+9"]))]
       })]
     })
   })
@@ -661,7 +661,7 @@ eO.Header = e_, eO.Body = e => {
       color: "always-white",
       children: (0, U.P9)(p)
     })]
-  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ei.intl.string(ei.t.eXan7O);
+  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ei.intl.string(ei.t.eXan7B);
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: el.applicationStreamingSection,
@@ -742,7 +742,7 @@ eO.Header = e_, eO.Body = e => {
           children: (0, i.jsx)(f.Button, {
             variant: "primary",
             size: "sm",
-            text: ei.intl.string(ei.t.VJlc0d),
+            text: ei.intl.string(ei.t.VJlc0S),
             onClick: e => {
               e.stopPropagation(), (0, _.Z)({
                 applicationId: u,

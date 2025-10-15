@@ -139,10 +139,10 @@ function S(e, t) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.kSQ, {
-      label: b.intl.string(b.t.SkkeIi),
+      label: b.intl.string(b.t.SkkeIt),
       children: L
     }), (0, r.jsx)(o.kSQ, {
-      label: b.intl.string(b.t.rHyPXl),
+      label: b.intl.string(b.t.rHyPXg),
       children: x
     })]
   })

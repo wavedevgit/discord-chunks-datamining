@@ -134,7 +134,7 @@ function Q(e) {
       (0, k.JG)(t, () => i(true))
     },
     className: W.copyId,
-    children: ["Application Id: ", t, " ", n ? H.intl.string(H.t["t5VZ8/"]) : null]
+    children: ["Application Id: ", t, " ", n ? H.intl.string(H.t.t5VZ88) : null]
   })
 }
 let $ = Chunk647438.memo(function(e) {

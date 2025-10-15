@@ -88,7 +88,7 @@ function x() {
   return (0, Chunk951288.jsx)(Chunk481060.Text, {
     variant: "text-xs/medium",
     className: Chunk866579.unpublishedBadge,
-    children: Chunk388032.intl.string(Chunk388032.t.TJ4CCw)
+    children: Chunk388032.intl.string(Chunk388032.t.TJ4CCy)
   })
 }
 

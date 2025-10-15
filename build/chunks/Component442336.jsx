@@ -63,7 +63,7 @@ function b(e) {
         muted: !b
       }, d.UE.muted(!b)) : j(e => !e)
     },
-    x = f.intl.string(f.t.h850Sk);
+    x = f.intl.string(f.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
     shouldShow: _,
@@ -75,7 +75,7 @@ function b(e) {
     renderPopout: e => (0, r.jsx)(h.Z, m(g({}, e), {
       channel: t,
       navId: "channel-context",
-      label: f.intl.string(f.t.Xm41aW)
+      label: f.intl.string(f.t.Xm41aV)
     })),
     clickTrap: true,
     children: (e, t) => {

@@ -67,7 +67,7 @@ function f(e) {
     size: "sm",
     onClick: c,
     icon: a.QJP,
-    text: l.intl.format(l.t.XDRjs7, {
+    text: l.intl.format(l.t.XDRjs5, {
       appName: t.name
     })
   })

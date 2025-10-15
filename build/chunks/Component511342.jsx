@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk437329 = require("./437329.js");
 
@@ -20,7 +20,7 @@ function f(e) {
     markAsDismissed: n,
     renderTargetElement: f
   } = e, h = i.useRef(null), g = {
-    text: d.intl.string(u.default.Xnghq6),
+    text: d.intl.string(u.default.Xnghqy),
     onClick: () => {
       o.Z.open(t.id, s.pNK.BOOST_PERKS, {
         section: a.Z.GUILD_BOOSTING_PROGRESS_BAR
@@ -33,8 +33,8 @@ function f(e) {
       children: f()
     }), (0, r.jsx)(l.Mb, {
       targetElementRef: h,
-      title: d.intl.string(u.default.UuwXRU),
-      body: d.intl.string(u.default.MIwlcX),
+      title: d.intl.string(u.default.UuwXRZ),
+      body: d.intl.string(u.default.MIwlcR),
       caretConfig: {
         position: "top",
         align: "center"

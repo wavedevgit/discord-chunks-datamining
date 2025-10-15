@@ -82,7 +82,7 @@ function E(e) {
         onSubmit: R,
         disableThemedBackground: v
       }), (0, r.jsx)(s.nn4, {
-        children: h.intl.format(h.t["+DFxLS"], {
+        children: h.intl.format(h.t["+DFxLc"], {
           maxLength: _.$n
         })
       })]

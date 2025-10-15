@@ -116,7 +116,7 @@ function p(e) {
         children: P()
       }), (0, a.jsx)(l.P3F, u(d({
         className: c.submenuIconWrapper,
-        "aria-label": s.intl.string(s.t.PdRCRk)
+        "aria-label": s.intl.string(s.t.PdRCRg)
       }, e), {
         onClick: O,
         focusProps: T,

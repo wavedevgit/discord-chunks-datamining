@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function b(e) {
-  if (e === a._.WEEK) return E.t["7TXfc3"]
+  if (e === a._.WEEK) return E.t["7TXfc6"]
 }
 let y = (e, t, n, r) => {
     let i = b(r),
@@ -33,7 +33,7 @@ let y = (e, t, n, r) => {
       userName: a
     }).replaceAll("*", "")
   },
-  O = (e, t) => E.intl.formatToPlainString(E.t.tAwI1t, {
+  O = (e, t) => E.intl.formatToPlainString(E.t.tAwI1k, {
     username: t.username,
     activity: e.extra.game_name
   }),
@@ -61,7 +61,7 @@ let y = (e, t, n, r) => {
         applicationImageSrc: null == v ? true : v.src,
         avatarSrcs: [I.getAvatarURL(null == t ? true : t.guild_id, 128)],
         description: y(n, t, I, R),
-        timestamp: E.intl.formatToPlainString(E.t.YL7UEx, {
+        timestamp: E.intl.formatToPlainString(E.t.YL7UE3, {
           hours: Math.round(N / o.Z.Seconds.HOUR)
         }),
         colors: [A, C],
@@ -75,10 +75,10 @@ let y = (e, t, n, r) => {
         channel: t,
         headerIcons: null == w ? null : (0, r.jsx)(m.Z, {
           Icon: w,
-          "aria-label": E.intl.string(E.t.YR4cHB)
+          "aria-label": E.intl.string(E.t.YR4cHH)
         }),
         entry: n,
-        userDescription: E.t.rPqqtr,
+        userDescription: E.t.rPqqts,
         title: S,
         subtitle: T,
         badges: (0, r.jsx)(p.Gk, {

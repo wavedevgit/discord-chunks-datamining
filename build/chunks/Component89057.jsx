@@ -32,15 +32,15 @@ function E(e) {
     children: [(0, r.jsx)(l.Heading, {
       className: h.header,
       variant: "heading-xl/semibold",
-      children: p.intl.string(p.t.vwMEHR)
+      children: p.intl.string(p.t.vwMEHS)
     }), (0, r.jsxs)(l.Text, {
       className: h.description,
       variant: "text-md/normal",
       color: "header-secondary",
       children: [(0, r.jsx)("p", {
-        children: p.intl.string(p.t.fev8MT)
+        children: p.intl.string(p.t.fev8MQ)
       }), (0, r.jsx)("p", {
-        children: p.intl.format(p.t.IHxEJS, {
+        children: p.intl.format(p.t.IHxEJU, {
           helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
         })
       })]
@@ -96,7 +96,7 @@ function O(e) {
       color: o.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: p.intl.format(p.t.NYkcCg, {
+      children: p.intl.format(p.t.NYkcCh, {
         helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
       })
     })]

@@ -42,25 +42,25 @@ function D(e) {
     onNext: a,
     onClose: o,
     transitionState: l
-  } = e, c = P.intl.format(P.t.otHdfX, {
+  } = e, c = P.intl.format(P.t.otHdfR, {
     endDate: t.currentPeriodEnd
   });
-  t.isPurchasedExternally && null != t.paymentGateway ? c = P.intl.format(P.t.HbpFLi, {
+  t.isPurchasedExternally && null != t.paymentGateway ? c = P.intl.format(P.t.HbpFLg, {
     paymentGatewayName: R.Vz[t.paymentGateway],
     subscriptionManagementLink: (0, S.JE)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
-  }) : t.isPausedForFractionalPremium ? c = P.intl.format(P.t["Hzqe6+"], {
+  }) : t.isPausedForFractionalPremium ? c = P.intl.format(P.t.Hzqe6y, {
     expirationDate: n.endsAt.toDate()
-  }) : i && (c = P.intl.format(P.t.gXSnur, {
+  }) : i && (c = P.intl.format(P.t.gXSnul, {
     endDate: t.currentPeriodEnd
   }));
-  let u = i ? P.intl.string(P.t.iIoSd3) : P.intl.string(P.t.Skzv0t),
+  let u = i ? P.intl.string(P.t.iIoSd6) : P.intl.string(P.t.Skzv0u),
     d = t.isPurchasedExternally ? [] : [{
       variant: "secondary",
-      text: P.intl.string(P.t["ETE/oK"]),
+      text: P.intl.string(P.t["ETE/oC"]),
       onClick: o
     }, {
       variant: "primary",
-      text: P.intl.string(P.t.PDTjLC),
+      text: P.intl.string(P.t.PDTjLN),
       onClick: a
     }];
   return (0, r.jsx)(s.Modal, {
@@ -168,10 +168,10 @@ function M(e) {
       interval: W,
       intervalCount: K
     } = k,
-    z = P.intl.format(P.t["0W23cn"], {
+    z = P.intl.format(P.t["0W23cu"], {
       endDate: F.subscriptionPeriodStart
     });
-  return o.isPausedForFractionalPremium && u.fetched && (z = P.intl.format(P.t.eb0xgY, {
+  return o.isPausedForFractionalPremium && u.fetched && (z = P.intl.format(P.t.eb0xgS, {
     expirationDate: u.endsAt.toDate()
   })), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.Z, {
@@ -191,9 +191,9 @@ function M(e) {
       }), (0, r.jsxs)(E.aO, {
         className: w.invoiceTable,
         children: [(0, r.jsx)(E.Z9, {
-          children: P.intl.string(P.t.iqhIp6)
+          children: P.intl.string(P.t.iqhIp4)
         }), (0, r.jsx)(E.B1, {
-          label: P.intl.format(P.t["Vg+LRk"], {
+          label: P.intl.format(P.t["Vg+LRr"], {
             subscriptionCount: 1
           }),
           value: (0, A.og)((0, A.T4)(Y, o.currency), W, K),
@@ -212,13 +212,13 @@ function M(e) {
       justify: h.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(c.Button, {
         variant: "critical-primary",
-        text: P.intl.string(P.t["/AS/gI"]),
+        text: P.intl.string(P.t["/AS/gM"]),
         disabled: I,
         onClick: async () => {
           try {
             T(true), D(null), await x(o, L, G, s), p()
           } catch (e) {
-            D(P.intl.string(P.t["5mlOCQ"])), T(false)
+            D(P.intl.string(P.t["5mlOCW"])), T(false)
           }
         }
       }), (0, r.jsx)(b.Z, {
@@ -238,21 +238,21 @@ function j(e) {
   t.isPausedForFractionalPremium && (o = n.endsAt.toDate());
   let l = [{
     variant: "primary",
-    text: P.intl.string(P.t.BddRzc),
+    text: P.intl.string(P.t.BddRzS),
     onClick: i
   }];
   return (0, r.jsx)(s.Modal, {
     transitionState: a,
     onClose: i,
     size: "sm",
-    title: P.intl.string(P.t["fZzV/P"]),
+    title: P.intl.string(P.t["fZzV/B"]),
     actions: l,
     children: (0, r.jsxs)("div", {
       className: w.body,
       children: [(0, r.jsx)("div", {
         className: w.cancelImage
       }), (0, r.jsx)("div", {
-        children: P.intl.format(P.t["H+z0np"], {
+        children: P.intl.format(P.t["H+z0ns"], {
           endDate: o
         })
       })]

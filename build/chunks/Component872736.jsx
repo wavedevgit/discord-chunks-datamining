@@ -17,8 +17,8 @@ function l(e) {
     pendingLegacyUsernameDisabled: n
   } = e, l = o.R_.useSetting(), c = true !== n ? n : l;
   return (0, r.jsx)(i.rsf, {
-    label: s.intl.string(s.t["3cWDuL"]),
-    description: c ? null : s.intl.formatToPlainString(s.t.aYhclZ, {
+    label: s.intl.string(s.t["3cWDuO"]),
+    description: c ? null : s.intl.formatToPlainString(s.t.aYhclf, {
       username: t
     }),
     checked: !c,

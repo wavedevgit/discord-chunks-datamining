@@ -25,13 +25,13 @@ function s(e) {
     m = (0, i.Sw)(c, f);
   if (null != m && null != u) {
     let e = u(m);
-    t = o.intl.format(o.t.L2FyVl, {
+    t = o.intl.format(o.t.L2FyVq, {
       username: p,
       usernameHook: h,
       otherUsername: m.nick,
       otherUsernameHook: e
     })
-  } else t = o.intl.format(o.t["5v2xa2"], {
+  } else t = o.intl.format(o.t["5v2xa8"], {
     username: p,
     usernameHook: h
   });

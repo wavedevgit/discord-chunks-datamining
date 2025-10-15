@@ -43,8 +43,8 @@ function C(e) {
     roleId: D,
     sessionId: R,
     initialSection: L,
-    initialSubsection: M,
-    transitionState: U,
+    initialSubsection: U,
+    transitionState: M,
     openedAt: k,
     onClose: B,
     sourceAnalyticsLocations: V = []
@@ -69,7 +69,7 @@ function C(e) {
       isLoaded: null == G ? true : G.isLoaded,
       children: (0, l.jsx)(i.Y0X, {
         "data-migration-pending": true,
-        transitionState: U,
+        transitionState: M,
         className: S.root,
         hideShadow: true,
         "aria-labelledby": H,
@@ -78,7 +78,7 @@ function C(e) {
           component: (0, l.jsx)(i.nn4, {
             children: (0, l.jsx)(i.H, {
               id: H,
-              children: E.intl.format(E.t.KRe1Fh, {
+              children: E.intl.format(E.t.KRe1Fk, {
                 name: z
               })
             })
@@ -109,7 +109,7 @@ function C(e) {
                 }), (0, l.jsx)(Z.Z, {
                   user: n,
                   themeType: A.l.MODAL,
-                  hasEntered: U === i.Dvm.ENTERED,
+                  hasEntered: M === i.Dvm.ENTERED,
                   onCloseProfile: B,
                   disableToolbar: true
                 }), (0, l.jsxs)("div", {
@@ -161,7 +161,7 @@ function C(e) {
                 guildId: F,
                 items: Y,
                 initialSection: null != L ? L : P.oh.BOT_INFO,
-                initialSubsection: M,
+                initialSubsection: U,
                 onClose: B
               })]
             })]

@@ -56,7 +56,7 @@ function _(e) {
 function v(e) {
   let {
     user: n
-  } = e, t = b.ZP.useName(n), r = (0, i.e7)([p.Z], () => p.Z.getNickname(n.id)), c = (0, i.e7)([m.Z], () => m.Z.getStatus(n.id));
+  } = e, t = j.ZP.useName(n), r = (0, i.e7)([p.Z], () => p.Z.getNickname(n.id)), c = (0, i.e7)([m.Z], () => m.Z.getStatus(n.id));
   return (0, l.jsx)(x, {
     icon: (0, l.jsx)(a.Z, {
       "aria-hidden": true,
@@ -88,9 +88,9 @@ function P(e) {
   } = e, {
     channel: t,
     user: r
-  } = (0, i.cj)([f.Z, j.default], () => ({
+  } = (0, i.cj)([f.Z, b.default], () => ({
     channel: "channel" === n.type ? f.Z.getChannel(n.id) : null,
-    user: "user" === n.type ? j.default.getUser(n.id) : null
+    user: "user" === n.type ? b.default.getUser(n.id) : null
   }));
   return (null == t ? true : t.isGroupDM()) ? (0, l.jsx)(_, {
     channel: t
@@ -148,15 +148,15 @@ function S(e) {
     }
     return e
   }({
-    header: y.intl.string(y.t["/OPIaG"]),
-    confirmText: y.intl.string(y.t["5911LS"]),
-    cancelText: y.intl.string(y.t["ETE/oK"]),
+    header: y.intl.string(y.t["/OPIaM"]),
+    confirmText: y.intl.string(y.t["5911Lb"]),
+    cancelText: y.intl.string(y.t["ETE/oC"]),
     confirmButtonColor: c.zx.Colors.BRAND,
     onConfirm: d
   }, u), t = t = {
     children: [(0, l.jsx)(o.Text, {
       variant: "text-md/medium",
-      children: y.intl.format(y.t.cn9vFR, {
+      children: y.intl.format(y.t.cn9vFb, {
         count: a.length
       })
     }), (0, l.jsx)("div", {

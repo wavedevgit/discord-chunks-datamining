@@ -65,14 +65,14 @@ let g = Chunk647438.memo(function(e) {
     onChange: e => i(u(d({}, t), {
       exemptRoles: e
     })),
-    placeholder: o.intl.string(o.t.aFO1Iy),
+    placeholder: o.intl.string(o.t.aFO1I6),
     disableEveryoneRole: true
   })), (0, r.jsxs)("div", {
     children: [g, (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
       className: c.exemptionHint,
-      children: o.intl.string(o.t.GKlYaW)
+      children: o.intl.string(o.t.GKlYaS)
     })]
   })
 })

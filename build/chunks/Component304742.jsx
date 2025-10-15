@@ -19,19 +19,19 @@ function g(e) {
     handleTransition: t,
     onClose: n
   } = e, i = (0, a.G)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
-    label: u.intl.string(u.t.dRZYND),
+    label: u.intl.string(u.t.dRZYNE),
     value: c.AW.AVATAR_DECORATIONS
   }, {
-    label: u.intl.string(u.t["1cNjt7"]),
+    label: u.intl.string(u.t["1cNjtx"]),
     value: c.AW.PROFILE_EFFECTS
   }, {
-    label: u.intl.string(u.t.V68Fq6),
+    label: u.intl.string(u.t.V68Fqz),
     value: c.AW.NAMEPLATES
   }, {
-    label: u.intl.string(u.t.FYFppq),
+    label: u.intl.string(u.t.FYFpps),
     value: c.AW.BUNDLES
   }, {
-    label: u.intl.string(u.t.xFcotb),
+    label: u.intl.string(u.t.xFcotU),
     value: c.AW.CATALOG
   }], []);
   return (0, r.jsx)("div", {
@@ -44,7 +44,7 @@ function g(e) {
         [d.shopTakeOver]: i
       }),
       onClose: n,
-      "aria-label": u.intl.string(u.t.xFcotb),
+      "aria-label": u.intl.string(u.t.xFcotU),
       onSelect: () => {},
       children: g.map(e => (0, r.jsx)(s.sNh, {
         id: e.value,

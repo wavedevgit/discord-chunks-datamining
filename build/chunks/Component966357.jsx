@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314852 = require("./314852.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
-  Chunk659854 = require("./659854.js"),
+  Chunk234786 = require("./234786.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m() {
@@ -21,7 +21,7 @@ function m() {
     n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProfileError()),
     m = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     p = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
-    f = Chunk647438.useMemo(() => (null == require ? true : require.status) === 429 ? Chunk388032.intl.string(Chunk659854.default["bFRS/v"]) : null == require ? true : require.getAnyErrorMessage(), [require]),
+    f = Chunk647438.useMemo(() => (null == require ? true : require.status) === 429 ? Chunk388032.intl.string(Chunk234786.default["bFRS/s"]) : null == require ? true : require.getAnyErrorMessage(), [require]),
     h = Chunk647438.useCallback(() => {
       if (null == module || null == m) return;
       let t = {

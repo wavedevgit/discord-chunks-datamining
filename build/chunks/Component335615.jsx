@@ -132,7 +132,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: x,
       premiumSince: v,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), P = null != v ? new Date(v) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -149,14 +149,14 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           decoration: "never"
         })),
         t = "<@".concat(d.id, ">");
-      F.S.dispatch(W.CkL.TEXTAREA_FOCUS, {
+      B.S.dispatch(W.CkL.TEXTAREA_FOCUS, {
         channelId: _.id
-      }), F.S.dispatchToLastSubscribed(W.CkL.INSERT_TEXT, {
+      }), B.S.dispatchToLastSubscribed(W.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
       }), m.Z.startTyping(_.id)
     }, [d, _.id]), w = i.useCallback(e => {
-      null != j && (e.stopPropagation(), (0, P.f)({
+      null != j && (e.stopPropagation(), (0, T.f)({
         guildId: j,
         location: {
           section: W.jXE.MEMBER_LIST,
@@ -194,7 +194,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           activities: p,
           applicationStream: g,
           isOwner: o,
-          premiumSince: T,
+          premiumSince: P,
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
@@ -257,7 +257,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
     }) : (0, r.jsxs)(E.Z, {
       className: q.membersGroup,
       children: [(0, r.jsx)(p.nn4, {
-        children: Y.intl.format(Y.t.UaqbkZ, {
+        children: Y.intl.format(Y.t.Uaqbke, {
           title: n,
           count: i
         })
@@ -329,7 +329,7 @@ class el extends Chunk647438.Component {
       sectionHeight: i
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
-      children: l => (0, r.jsx)(T.FG, {
+      children: l => (0, r.jsx)(P.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,
@@ -337,7 +337,7 @@ class el extends Chunk647438.Component {
             component: (0, r.jsx)(p.nn4, {
               children: (0, r.jsx)(p.H, {
                 id: s,
-                children: Y.intl.format(Y.t.JBQxV1, {
+                children: Y.intl.format(Y.t.JBQxV6, {
                   channel: n.name
                 })
               })
@@ -350,7 +350,7 @@ class el extends Chunk647438.Component {
                 } = n, c = J(n, ["ref", "role"]);
                 return (0, r.jsx)(p.aVo, Q({
                   innerRole: o,
-                  innerAriaLabel: Y.intl.string(Y.t["9Oq93t"]),
+                  innerAriaLabel: Y.intl.string(Y.t["9Oq93m"]),
                   ref: e => {
                     var t;
                     this._list = e, this.props.listRef.current = e, s.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -547,7 +547,7 @@ class el extends Chunk647438.Component {
         } = this.getDimensions();
       if (true === n || 0 === n || null == t) return;
       this.hasContentFeed() && (t = t.filter(e => e.section !== S.T));
-      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(B.lm);
+      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(F.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;

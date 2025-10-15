@@ -51,7 +51,7 @@ function _(e) {
           children: (0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "sm",
-            text: m ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
+            text: m ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
             onClick: () => {
               (0, c.JG)(l, () => p(true))
             }

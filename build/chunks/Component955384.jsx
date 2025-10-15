@@ -36,7 +36,7 @@ class h extends Chunk647438.PureComponent {
       children: o
     } = this.props, s = (0, Chunk951288.jsx)("div", {
       className: Chunk26896.operations,
-      children: Chunk388032.intl.format(Chunk388032.t.wDsPXl, {
+      children: Chunk388032.intl.format(Chunk388032.t.wDsPXs, {
         onCancel: () => Chunk925975(Chunk911969.id),
         onSave: this.onClickSave
       })

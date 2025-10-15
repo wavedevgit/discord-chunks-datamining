@@ -45,7 +45,7 @@ let g = e => {
           id: n,
           variant: "heading-md/semibold",
           className: s()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
-          children: u.intl.string(u.t.Atdlys)
+          children: u.intl.string(u.t.Atdlyu)
         })
       })]
     }), (0, i.jsx)(o.Z, {

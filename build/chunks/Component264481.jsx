@@ -21,11 +21,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
-let y = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
-  j = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
-  b = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => h.intl.formatToPlainString(h.t.h2g0cH, {
+let y = [() => Chunk388032.intl.string(Chunk388032.t.madJdE), () => Chunk388032.intl.string(Chunk388032.t.NYmfoP), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8h), () => Chunk388032.intl.string(Chunk388032.t.DnsJE8)],
+  j = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeE), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYj"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1g), () => Chunk388032.intl.string(Chunk388032.t["jhBm0+"])],
+  b = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXA), () => Chunk388032.intl.string(Chunk388032.t.aAFW7V), e => h.intl.formatToPlainString(h.t.h2g0cM, {
     name: e
-  }), () => Chunk388032.intl.string(Chunk388032.t["rrYh5+"]), () => Chunk388032.intl.string(Chunk388032.t["HX3K+P"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aW"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v7"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3t), () => Chunk388032.intl.string(Chunk388032.t.HRcTFB), () => Chunk388032.intl.string(Chunk388032.t.NuCqPj), () => Chunk388032.intl.string(Chunk388032.t["M1tw+/"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y8), () => Chunk388032.intl.string(Chunk388032.t.Cu95PT), () => Chunk388032.intl.string(Chunk388032.t["R/wFur"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVV), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
+  }), () => Chunk388032.intl.string(Chunk388032.t.rrYh58), () => Chunk388032.intl.string(Chunk388032.t["HX3K+F"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aY"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v0"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3h), () => Chunk388032.intl.string(Chunk388032.t.HRcTFL), () => Chunk388032.intl.string(Chunk388032.t.NuCqPt), () => Chunk388032.intl.string(Chunk388032.t["M1tw+4"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y2), () => Chunk388032.intl.string(Chunk388032.t.Cu95PQ), () => Chunk388032.intl.string(Chunk388032.t["R/wFuh"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVT), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
   x = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
 
 function O(e) {
@@ -52,7 +52,7 @@ function O(e) {
 }
 
 function I() {
-  let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
+  let e = Chunk388032.intl.string(Chunk388032.t.RnD2yZ),
     [t] = Chunk647438.useState(() => {
       var e;
       return (null != (e = (0, Chunk392711.sample)(y)) ? module : y[0])()
@@ -64,7 +64,7 @@ function I() {
 }
 
 function P() {
-  let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
+  let e = Chunk388032.intl.string(Chunk388032.t.bFgqYJ),
     [t] = Chunk647438.useState(() => {
       var e;
       return (null != (e = (0, Chunk392711.sample)(j)) ? module : j[0])()
@@ -81,7 +81,7 @@ function S(e) {
     guildId: n,
     channelId: o,
     onClose: c
-  } = e, u = g.ZP.getName(n, o, t), d = h.intl.formatToPlainString(h.t.sjSitL, {
+  } = e, u = g.ZP.getName(n, o, t), d = h.intl.formatToPlainString(h.t.sjSitP, {
     name: u
   }), [f] = i.useState(() => {
     var e;
@@ -160,21 +160,21 @@ function E(e) {
     })
   }, []);
   return (0, r.jsxs)(O, {
-    heading: h.intl.string(h.t.VB6LWV),
-    bodyText: h.intl.string(h.t.KpjsU1),
+    heading: h.intl.string(h.t.VB6LWY),
+    bodyText: h.intl.string(h.t.KpjsU9),
     children: [(0, r.jsx)(w, {}), (0, r.jsxs)("div", {
       className: v.buttonRow,
       children: [(0, r.jsx)(p.O1, {
-        text: h.intl.string(h.t["/Hl24e"]),
+        text: h.intl.string(h.t["/Hl24U"]),
         onClick: s
       }), (0, r.jsx)(p.O1, {
-        text: h.intl.string(h.t.GTCx0t),
+        text: h.intl.string(h.t.GTCx0p),
         onClick: o
       })]
     }), l && (0, r.jsx)("div", {
       className: v.reportMissingActivity,
       children: (0, r.jsx)(a.Avr, {
-        text: h.intl.string(h.t["+huUnJ"]),
+        text: h.intl.string(h.t["+huUnG"]),
         onClick: c,
         size: "sm"
       })

@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 483161, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => N
+  z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -24,19 +24,19 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     buildLayout: () => [],
     render: Chunk564344.Z
   }),
-  b = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
+  L = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     buildLayout: () => [_],
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
       element: Chunk398140.Z
     }
   }),
-  N = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
+  b = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
     icon: Chunk657707.tBG,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     legacySearchKey: Chunk726985.s6.PROFILE_CUSTOMIZATION,
-    buildLayout: () => [b],
+    buildLayout: () => [L],
     stronglyDiscouragedCustomComponent: () => {
       var t;
       let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
@@ -53,7 +53,7 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
           src: require,
           avatarDecoration: Chunk778825,
           size: Chunk481060.EFr.SIZE_48,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.lqaIxM)
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.lqaIxI)
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk88651.textContainer,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -67,7 +67,7 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
               variant: "text-sm/normal",
               color: "currentColor",
               lineClamp: 1,
-              children: Chunk388032.intl.string(Chunk388032.t.Ip9nBQ)
+              children: Chunk388032.intl.string(Chunk388032.t.Ip9nBS)
             }), (0, Chunk951288.jsx)(Chunk657707.vdY, {
               size: "xxs",
               color: "currentColor"

@@ -17,7 +17,7 @@ function d(e) {
     orbPrice: t,
     isProductDisabled: n,
     hasSufficientOrbs: l
-  } = e, a = n ? c.intl.string(c.t.wu4gyc) : c.intl.string(c.t.eFNRzc), s = n || !l;
+  } = e, a = n ? c.intl.string(c.t.wu4gyV) : c.intl.string(c.t.eFNRzU), s = n || !l;
   return (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsx)("div", {

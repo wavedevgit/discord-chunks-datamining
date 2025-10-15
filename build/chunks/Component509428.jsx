@@ -1,7 +1,7 @@
 /** Chunk was on 77198 **/
 /** chunk id: 509428, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,21 +25,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk391594 = require("./391594.js"),
   Chunk215023 = require("./215023.js"),
   Chunk222311 = require("./222311.js");
-let k = t => {
+let m = t => {
   let {
     transitionState: e,
     product: n,
-    onClose: k,
-    analyticsLocations: m,
-    overrideTitle: b,
+    onClose: m,
+    analyticsLocations: b,
+    overrideTitle: k,
     overrideDescription: g,
     itemConsumed: S = true,
-    purchaseType: P = L.o8.ORB
+    purchaseType: P = R.o8.ORB
   } = t, v = (0, s.e7)([p.Z], () => p.Z.purchases), N = (0, h.o)(n, v), B = (0, _.W)(n, N), {
     analyticsLocations: M
-  } = (0, o.ZP)([...m, d.Z.COLLECTIBLES_COLLECTED_MODAL]);
+  } = (0, o.ZP)([...b, d.Z.COLLECTIBLES_COLLECTED_MODAL]);
   r.useEffect(() => {
-    L.Vt.ORB_PROFILE_BADGE === B.skuId && (0, c.Ls)([(0, I.X)()], 600)
+    R.Vt.ORB_PROFILE_BADGE === B.skuId && (0, c.Ls)([(0, I.X)()], 600)
   }, [B.skuId]);
   let {
     isLoading: x,
@@ -51,29 +51,29 @@ let k = t => {
     confettiCanvas: F,
     setConfettiCanvas: w,
     customConfettiDisplayOptions: V
-  } = (0, y.$0)(B, P);
-  (0, y.f1)(B, M);
-  let G = (0, T.kd)(B),
+  } = (0, T.$0)(B, P);
+  (0, T.f1)(B, M);
+  let G = (0, y.kd)(B),
     {
       handleUseNow: W,
       isApplying: X
     } = (0, E.W)({
       product: B,
-      onSuccess: k,
-      onError: k
+      onSuccess: m,
+      onError: m
     });
   if (x) return (0, i.jsx)(u.$jN, {
     type: u.$jN.Type.SPINNING_CIRCLE
   });
-  let H = (0, y.Xw)({
+  let H = (0, T.Xw)({
       product: B,
-      overrideTitle: b,
+      overrideTitle: k,
       isVariantsGroupEnabled: false,
       shouldShowPromotionalExperience: false,
       productName: G,
       itemConsumed: S
     }),
-    $ = (0, y.ys)({
+    z = (0, T.ys)({
       product: B,
       overrideDescription: g,
       productName: G,
@@ -81,9 +81,9 @@ let k = t => {
       isFractionalPremiumActive: Z,
       expiresAt: U
     }),
-    z = (0, y.cf)({
+    $ = (0, T.cf)({
       product: B,
-      onClose: k,
+      onClose: m,
       analyticsLocations: M,
       handleUseNow: W,
       isApplying: X,
@@ -95,7 +95,7 @@ let k = t => {
       ref: j,
       children: [(0, i.jsx)(l.O_, {
         ref: w,
-        className: R.confettiCanvas,
+        className: L.confettiCanvas,
         environment: D
       }), (0, i.jsx)(a.ExpressiveModal, {
         graphic: {
@@ -107,10 +107,10 @@ let k = t => {
           }
         },
         title: H,
-        subtitle: null != $ ? $ : true,
-        onClose: k,
+        subtitle: null != z ? z : true,
+        onClose: m,
         transitionState: e,
-        actions: z
+        actions: $
       }), null != V ? (0, i.jsx)(C.i, {
         options: V
       }) : (0, i.jsx)(A.Z, {

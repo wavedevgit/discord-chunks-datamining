@@ -125,7 +125,7 @@ class T extends Chunk647438.PureComponent {
           t.stopPropagation(), (0, _.op)(b, e)
         },
         className: o()(R.reaction, v, R.remainingReactions),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs7),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs4),
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           className: R.reactionInner,
           variant: "text-sm/normal",

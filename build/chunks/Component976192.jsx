@@ -28,9 +28,9 @@ function j(e) {
     analyticsLocations: w,
     context: N,
     icon: v
-  } = e, C = d.Z.getGuild(t), Z = b.default.getId(), _ = (0, a.e7)([O.default], () => O.default.getUser(j)), m = (0, a.e7)([p.ZP], () => p.ZP.isGuestOrLurker(t, j), [t, j]);
-  (0, a.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
-  let A = l.useMemo(() => ({
+  } = e, C = d.Z.getGuild(t), Z = b.default.getId(), _ = (0, l.e7)([O.default], () => O.default.getUser(j)), m = (0, l.e7)([p.ZP], () => p.ZP.isGuestOrLurker(t, j), [t, j]);
+  (0, l.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
+  let A = a.useMemo(() => ({
     [t]: [j]
   }), [t, j]);
   (0, c.$)(A, "useChangeIdentityItem");
@@ -39,34 +39,34 @@ function j(e) {
       guild: C,
       analyticsLocations: w
     }),
-    x = (0, o.Aq)();
+    I = (0, o.Aq)();
   if (null == C || k) return null;
-  let I = Z === j && (f.Z.can(g.Plq.CHANGE_NICKNAME, C) || f.Z.can(g.Plq.MANAGE_NICKNAMES, C)),
-    M = Z === j,
-    S = f.Z.canManageUser(g.Plq.MANAGE_NICKNAMES, j, C);
-  if (!(I || S || M) || null == _ || m) return null;
-  let D = C.features.has(g.oNc.HUB) ? P.intl.string(P.t["+MWrWl"]) : P.intl.string(P.t["PKQB/P"]),
-    G = M ? D : P.intl.string(P.t.dilOFx);
+  let M = Z === j && (f.Z.can(g.Plq.CHANGE_NICKNAME, C) || f.Z.can(g.Plq.MANAGE_NICKNAMES, C)),
+    S = Z === j,
+    x = f.Z.canManageUser(g.Plq.MANAGE_NICKNAMES, j, C);
+  if (!(M || x || S) || null == _ || m) return null;
+  let D = C.features.has(g.oNc.HUB) ? y.intl.string(y.t["+MWrWt"]) : y.intl.string(y.t["PKQB/H"]),
+    G = S ? D : y.intl.string(y.t.dilOF6);
   return (0, n.jsx)(i.sNh, {
     id: "change-nickname",
     label: (0, n.jsx)("div", {
-      className: y.labelWrapper,
+      className: P.labelWrapper,
       children: (0, n.jsx)("span", {
-        className: y.label,
+        className: P.label,
         children: G
       })
     }),
     icon: v,
     action: () => {
-      M ? ((0, u.Z)(_.id, _.getAvatarURL(t, 80), {
+      S ? ((0, u.Z)(_.id, _.getAvatarURL(t, 80), {
         guildId: t
-      }), E(), x.dispatch(g.CkL.POPOUT_CLOSE), (0, i.pTH)()) : (0, i.ZDy)(async () => {
+      }), E(), I.dispatch(g.CkL.POPOUT_CLOSE), (0, i.pTH)()) : (0, i.ZDy)(async () => {
         let {
           default: e
         } = await r.e("17712").then(r.bind(r, 620021));
         return r => {
-          var l, a;
-          return (0, n.jsx)(e, (l = function(e) {
+          var a, l;
+          return (0, n.jsx)(e, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -83,21 +83,21 @@ function j(e) {
               })
             }
             return e
-          }({}, r), a = a = {
+          }({}, r), l = l = {
             guildId: t,
             user: _,
             analyticsSource: h,
             analyticsLocations: w
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var n = Object.getOwnPropertySymbols(e);
               r.push.apply(r, n)
             }
             return r
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-          }), l))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+          }), a))
         }
       })
     }

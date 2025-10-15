@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk5888 = require("./5888.js"),
   Chunk198358 = require("./198358.jsx"),
-  Chunk484718 = require("./484718.js"),
+  Chunk124798 = require("./124798.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p() {
@@ -30,7 +30,7 @@ function p() {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk484718.default.mAroeH, {
+      children: Chunk388032.intl.format(Chunk124798.default.mAroeJ, {
         joinedCount: exports,
         guildCount: require.length
       })
@@ -50,7 +50,7 @@ function p() {
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: u.intl.string(x.default.wWKySE)
+          children: u.intl.string(x.default.wWKySP)
         }), (0, e.jsx)(a.xvT, {
           variant: "display-md",
           color: "text-primary",
@@ -58,7 +58,7 @@ function p() {
         }), (0, e.jsx)(a.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: u.intl.string(x.default.lXT6np)
+          children: u.intl.string(x.default.lXT6ns)
         })]
       })]
     }, t.id))]

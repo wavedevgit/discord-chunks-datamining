@@ -46,10 +46,10 @@ let _ = () => {
     Chunk846027.Z.interact()
   }
   return Chunk647438.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(a.Modal, f({
-    title: u.intl.string(u.t.dLLxCw),
-    subtitle: u.intl.string(u.t["64lmt7"]),
+    title: u.intl.string(u.t.dLLxC2),
+    subtitle: u.intl.string(u.t["64lmtw"]),
     actions: [{
-      text: u.intl.string(u.t.BddRzc),
+      text: u.intl.string(u.t.BddRzS),
       onClick: () => {
         d(), e.onClose()
       }

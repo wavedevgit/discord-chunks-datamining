@@ -43,35 +43,35 @@ let g = function(e) {
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
           className: h.marginBottom8,
-          children: d.intl.string(d.t.qllnGh)
+          children: d.intl.string(d.t.qllnGm)
         }), (0, r.jsx)(c.DK, {
-          children: d.intl.string(d.t.SXCxyc)
+          children: d.intl.string(d.t.SXCxye)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
           onClick: () => p(t, n),
-          children: d.intl.string(d.t.UQvCf3)
+          children: d.intl.string(d.t.UQvCf7)
         }), (0, r.jsx)(c.zx, {
           className: s()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
           onClick: () => (0, u.uL)((0, o.M)()),
-          children: d.intl.string(d.t["2ixEBg"])
+          children: d.intl.string(d.t["2ixEBi"])
         })]
       });
     case 0:
     case 2:
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
-          children: d.intl.string(d.t["Z+hCVV"])
+          children: d.intl.string(d.t["Z+hCVU"])
         }), (0, r.jsx)(c.Hh, {})]
       });
     case 3:
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
           className: h.marginBottom8,
-          children: d.intl.string(d.t.csrAMD)
+          children: d.intl.string(d.t.csrAMJ)
         }), (0, r.jsx)(c.DK, {
-          children: d.intl.string(d.t.ghBJz8)
+          children: d.intl.string(d.t.ghBJz9)
         })]
       })
   }

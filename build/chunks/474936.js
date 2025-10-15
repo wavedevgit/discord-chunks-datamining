@@ -572,14 +572,14 @@ let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
   e5 = {
     premium_tenure_1_month_v2: {
       id: "premium_tenure_1_month_v2",
-      nameUnformatted: Chunk388032.t.LR1C0d,
+      nameUnformatted: Chunk388032.t.LR1C0a,
       tenureReqNumMonths: 1,
       hasWideArt: false,
       glowColor: "#b54913"
     },
     premium_tenure_3_month_v2: {
       id: "premium_tenure_3_month_v2",
-      nameUnformatted: Chunk388032.t["rI1/3N"],
+      nameUnformatted: Chunk388032.t["rI1/3H"],
       tenureReqNumMonths: 3,
       hasWideArt: false,
       glowColor: "#9e9e9e"
@@ -593,35 +593,35 @@ let e8 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     },
     premium_tenure_12_month_v2: {
       id: "premium_tenure_12_month_v2",
-      nameUnformatted: Chunk388032.t.gzUfNT,
+      nameUnformatted: Chunk388032.t.gzUfNS,
       tenureReqNumMonths: 12,
       hasWideArt: false,
       glowColor: "#5eacc2"
     },
     premium_tenure_24_month_v2: {
       id: "premium_tenure_24_month_v2",
-      nameUnformatted: Chunk388032.t.fuwTPj,
+      nameUnformatted: Chunk388032.t.fuwTPm,
       tenureReqNumMonths: 24,
       hasWideArt: false,
       glowColor: "#6d5cf2"
     },
     premium_tenure_36_month_v2: {
       id: "premium_tenure_36_month_v2",
-      nameUnformatted: Chunk388032.t.qNhNk5,
+      nameUnformatted: Chunk388032.t.qNhNk4,
       tenureReqNumMonths: 36,
       hasWideArt: false,
       glowColor: "#32c102"
     },
     premium_tenure_60_month_v2: {
       id: "premium_tenure_60_month_v2",
-      nameUnformatted: Chunk388032.t["wvX+eH"],
+      nameUnformatted: Chunk388032.t["wvX+eD"],
       tenureReqNumMonths: 60,
       hasWideArt: true,
       glowColor: "#f29cc3"
     },
     premium_tenure_72_month_v2: {
       id: "premium_tenure_72_month_v2",
-      nameUnformatted: Chunk388032.t["/menIy"],
+      nameUnformatted: Chunk388032.t["/menIw"],
       tenureReqNumMonths: 72,
       hasWideArt: true,
       glowColor: "#078292"

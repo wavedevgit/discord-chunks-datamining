@@ -28,7 +28,7 @@ function h(e) {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      children: p.intl.string(p.t.l6DP2t)
+      children: p.intl.string(p.t.l6DP2n)
     }), (0, r.jsxs)("div", {
       className: i()(m.list, o),
       children: [c.map((e, t) => (0, r.jsx)(g, {
@@ -37,11 +37,11 @@ function h(e) {
       }, t)), null != a.terms_of_service_url ? (0, r.jsx)(_, {
         icon: s.aAW,
         url: a.terms_of_service_url,
-        children: p.intl.string(p.t.s7STcX)
+        children: p.intl.string(p.t.s7STcY)
       }) : null, null != a.privacy_policy_url ? (0, r.jsx)(_, {
         icon: s.mBM,
         url: a.privacy_policy_url,
-        children: p.intl.string(p.t.kH3JR0)
+        children: p.intl.string(p.t.kH3JR5)
       }) : null]
     })]
   }) : null

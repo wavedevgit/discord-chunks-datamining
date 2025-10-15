@@ -66,8 +66,8 @@ function h(e) {
         className: u.icon,
         onClick: m,
         icon: l.or_,
-        "aria-label": d.intl.string(d.t.B2panJ),
-        tooltip: a ? null : d.intl.string(d.t.B2panJ),
+        "aria-label": d.intl.string(d.t.B2panI),
+        tooltip: a ? null : d.intl.string(d.t.B2panI),
         disabled: f,
         selected: a
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

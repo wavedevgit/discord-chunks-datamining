@@ -31,7 +31,7 @@ let d = function(e) {
   }), b = g ? m : true;
   return h ? (0, r.jsx)("div", {
     className: u.text,
-    children: c.intl.string(c.t.tFY5ZW)
+    children: c.intl.string(c.t.tFY5Zb)
   }) : (0, l.Z)({
     activities: n,
     status: p,

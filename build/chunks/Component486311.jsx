@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk933104 = require("./933104.jsx"),
   Chunk332538 = require("./332538.jsx"),
   Chunk921944 = require("./921944.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969649 = require("./969649.js");
 
@@ -127,7 +127,7 @@ let j = {
             className: o()({
               [y.textImportant]: (null == x ? true : x.showUnread) === true
             }),
-            children: O.intl.string(_.default.yv3DJC)
+            children: O.intl.string(_.default.yv3DJJ)
           }),
           selected: l,
           onClick: C,

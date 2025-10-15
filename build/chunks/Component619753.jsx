@@ -81,14 +81,14 @@ function G(e) {
     scrollTo: h,
     renderEmbeds: R,
     offset: M,
-    jumpToMessage: x,
+    jumpToMessage: b,
     listNavigator: P,
     favoriteSearch: G
   } = e, k = f.cC.useSetting(), F = (0, I.p)(), w = l.useCallback(e => {
-    if (e === L.Z.getChannelId()) return;
+    if (e === U.Z.getChannelId()) return;
     let t = S.Z.getChannel(e);
     null != t && (C.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
-  }, []), z = null != s ? (0, _.F6)(s, U.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = p.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = C.Z.can(v.Plq.MANAGE_MESSAGES, s), {
+  }, []), z = null != s ? (0, _.F6)(s, L.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = p.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = C.Z.can(v.Plq.MANAGE_MESSAGES, s), {
     content: W
   } = (0, g.ZP)({
     content: z,
@@ -132,7 +132,7 @@ function G(e) {
         })
       }), a.map((e, t) => {
         let n = E + t;
-        return (0, r.jsx)(b.Z, {
+        return (0, r.jsx)(x.Z, {
           ref: e => {
             d.current[n] = e
           },
@@ -143,7 +143,7 @@ function G(e) {
           pageResultsLength: a.length,
           message: e,
           index: n,
-          onJump: x,
+          onJump: b,
           listItemProps: P.getItemProps({
             index: n
           })
@@ -168,10 +168,10 @@ let k = Chunk647438.memo(function(e) {
     onBlockedResultsClick: R,
     searchRequestAnalyticsId: p,
     searchResultsQuery: C,
-    isFavoritesSearch: L
+    isFavoritesSearch: U
   } = e, {
-    offset: U,
-    totalResults: b,
+    offset: L,
+    totalResults: x,
     isSearching: y,
     showBlockedResults: k
   } = s, F = l.useCallback((e, t) => {
@@ -224,13 +224,13 @@ let k = Chunk647438.memo(function(e) {
       highlighter: K,
       startIndex: l,
       resultRefs: z,
-      totalResults: b,
+      totalResults: x,
       scrollTo: _,
       renderEmbeds: o,
-      offset: U,
+      offset: L,
       jumpToMessage: F,
       listNavigator: H,
-      favoriteSearch: null != L && L
+      favoriteSearch: null != U && U
     }, "".concat(t.id, "-").concat(l))
   });
   W.push();
@@ -282,25 +282,25 @@ let k = Chunk647438.memo(function(e) {
         className: j.resultsBlockedImage
       }), (0, r.jsx)("div", {
         className: j.__invalid_resultsBlockedText,
-        children: k ? T > 0 && I > 0 ? P.intl.formatToPlainString(P.t["OvJs9/"], {
+        children: k ? T > 0 && I > 0 ? P.intl.formatToPlainString(P.t.OvJs9w, {
           count: T + I
-        }) : T > 0 ? P.intl.formatToPlainString(P.t["n/1QFR"], {
+        }) : T > 0 ? P.intl.formatToPlainString(P.t["n/1QFS"], {
           count: T
-        }) : P.intl.formatToPlainString(P.t.ypezTE, {
+        }) : P.intl.formatToPlainString(P.t.ypezTA, {
           count: I
-        }) : T > 0 && I > 0 ? P.intl.formatToPlainString(P.t.EJHRcX, {
+        }) : T > 0 && I > 0 ? P.intl.formatToPlainString(P.t.EJHRcV, {
           count: T + I
-        }) : T > 0 ? P.intl.formatToPlainString(P.t.HTE8JC, {
+        }) : T > 0 ? P.intl.formatToPlainString(P.t.HTE8JP, {
           count: T
-        }) : P.intl.formatToPlainString(P.t.e7f8r6, {
+        }) : P.intl.formatToPlainString(P.t.e7f8r9, {
           count: I
         })
       })]
-    }) : null, !y && !L && (0, r.jsx)(x.Z, {
+    }) : null, !y && !U && (0, r.jsx)(b.Z, {
       renderPageWrapper: f,
       onPageChange: m,
-      offset: U,
-      totalCount: null != O ? O : b,
+      offset: L,
+      totalCount: null != O ? O : x,
       pageSize: v.vpv
     })]
   })

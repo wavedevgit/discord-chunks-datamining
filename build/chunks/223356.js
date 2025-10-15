@@ -28,23 +28,23 @@ function d(e) {
 
 function m() {
   return [{
-    title: Chunk388032.intl.string(Chunk388032.t.VwIij4),
-    description: Chunk388032.intl.format(Chunk388032.t.DOP8yc, {}),
+    title: Chunk388032.intl.string(Chunk388032.t.VwIij9),
+    description: Chunk388032.intl.format(Chunk388032.t.DOP8yY, {}),
     emoji: "801497159479722084",
     value: 0
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.rYfJoq),
-    description: Chunk388032.intl.format(Chunk388032.t["+LEfDA"], {}),
+    title: Chunk388032.intl.string(Chunk388032.t.rYfJop),
+    description: Chunk388032.intl.format(Chunk388032.t["+LEfDL"], {}),
     emoji: "410336837563973632",
     value: 1
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t["9LSuy8"]),
-    description: Chunk388032.intl.format(Chunk388032.t.nC7pv7, {}),
+    title: Chunk388032.intl.string(Chunk388032.t["9LSuy3"]),
+    description: Chunk388032.intl.format(Chunk388032.t.nC7pvx, {}),
     emoji: "841420679643529296",
     value: 2
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.Ia0skZ),
-    description: Chunk388032.intl.format(Chunk388032.t.D4rbgY, {}),
+    title: Chunk388032.intl.string(Chunk388032.t.Ia0ska),
+    description: Chunk388032.intl.format(Chunk388032.t.D4rbgX, {}),
     emoji: "827645852352512021",
     value: 3
   }]

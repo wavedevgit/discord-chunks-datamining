@@ -21,9 +21,9 @@ let c = () => {
 function u() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("span", {
-      children: Chunk388032.intl.string(Chunk388032.t.OJmNR0)
+      children: Chunk388032.intl.string(Chunk388032.t.OJmNR9)
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)("span", {
-      children: Chunk388032.intl.format(Chunk388032.t.RCYeBA, {
+      children: Chunk388032.intl.format(Chunk388032.t.RCYeBL, {
         blogHook: (e, t) => (0, r.jsx)(i.Anchor, {
           onClick: c,
           target: "_blank",

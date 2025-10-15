@@ -16,8 +16,8 @@ function o(t) {
   let {
     onClose: r,
     transitionState: o
-  } = t, c = null == (e = (0, a.hp)(a.u.STREAM_FULL)) ? true : e.errorCode, u = s.intl.formatToPlainString(s.t["ejOT9/"], {
-    errorCode: c
+  } = t, u = null == (e = (0, a.hp)(a.u.STREAM_FULL)) ? true : e.errorCode, c = s.intl.formatToPlainString(s.t.ejOT95, {
+    errorCode: u
   });
   return (0, i.jsxs)(n.Y0X, {
     size: n.CgR.SMALL,
@@ -28,7 +28,7 @@ function o(t) {
       children: [(0, i.jsx)(n.Heading, {
         variant: "heading-md/semibold",
         className: d.header,
-        children: s.intl.string(s.t.GzjdOz)
+        children: s.intl.string(s.t.GzjdO5)
       }), (0, i.jsx)(n.olH, {
         onClick: r,
         className: d.modalCloseButton
@@ -36,20 +36,20 @@ function o(t) {
     }), (0, i.jsxs)(n.hzk, {
       children: [(0, i.jsx)(n.Text, {
         variant: "text-md/medium",
-        children: s.intl.string(s.t.VVZDBA)
+        children: s.intl.string(s.t.VVZDBL)
       }), (0, i.jsx)(n.Text, {
         variant: "text-md/medium",
         selectable: true,
         color: "text-muted",
         className: d.errorCode,
-        children: u
+        children: c
       }), (0, i.jsx)("div", {
         className: d.fullArt
       })]
     }), (0, i.jsx)(n.mzw, {
       children: (0, i.jsx)(n.Button, {
         variant: "primary",
-        text: s.intl.string(s.t.BddRzc),
+        text: s.intl.string(s.t.BddRzS),
         onClick: r
       })
     })]

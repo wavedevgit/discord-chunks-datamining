@@ -14,14 +14,14 @@ function s() {
     className: Chunk634804.container,
     children: [(0, Chunk951288.jsx)("img", {
       src: "https://cdn.discordapp.com/assets/content/a72233587aaf964fc327663677974641a235719ad6445da58f931094cb799f66.png",
-      alt: Chunk388032.intl.string(Chunk388032.t.oezC39),
+      alt: Chunk388032.intl.string(Chunk388032.t.oezC3x),
       className: Chunk634804.img
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-xl/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.oezC39)
+      children: Chunk388032.intl.string(Chunk388032.t.oezC3x)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
-      children: Chunk388032.intl.string(Chunk388032.t["Tc/Ndn"])
+      children: Chunk388032.intl.string(Chunk388032.t["Tc/Ndl"])
     })]
   })
 }

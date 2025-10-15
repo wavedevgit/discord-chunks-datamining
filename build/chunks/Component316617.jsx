@@ -49,7 +49,7 @@ let x = e => {
     children: [(0, r.jsx)(a.Heading, {
       className: b.header,
       variant: "heading-sm/semibold",
-      children: h.intl.string(h.t.iouM3d)
+      children: h.intl.string(h.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
       className: b.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {

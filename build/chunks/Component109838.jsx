@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk809121 = require("./809121.jsx"),
   Chunk546303 = require("./546303.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk948208 = require("./948208.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk215365 = require("./215365.js");
 
@@ -42,17 +42,17 @@ function h(e) {
         icon: i.Ucv,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
-        children: p.intl.string(v.default.vCzwMz)
+        children: p.intl.string(v.default.vCzwM7)
       }), (0, r.jsx)(o.IGR, {
         disableColor: true,
-        text: p.intl.string(p.t.oW0eUV),
+        text: p.intl.string(p.t.oW0eUd),
         className: j.badge
       }), (0, r.jsx)(c.ZP.Divider, {
         className: j.divider
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: p.intl.format(v.default.LiR4eH, {
+        children: p.intl.format(v.default.LiR4eN, {
           helpCenterUrl: d.Z.getArticleURL(b.BhN.GAME_SERVER_HOSTING)
         })
       })]

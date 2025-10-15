@@ -140,7 +140,7 @@ function Z(e) {
     },
     ef = () => K ? null : (0, r.jsx)(s.sNh, {
       id: "view-profile",
-      label: M.intl.string(M.t["+Xp3ho"]),
+      label: M.intl.string(M.t["+Xp3hq"]),
       action: () => {
         ed(), (0, b.pQ)(U({
           action: "PRESS_VIEW_PROFILE",
@@ -167,7 +167,7 @@ function Z(e) {
           children: [(0, r.jsx)(s.nn4, {
             children: (0, r.jsx)(s.H, {
               id: ep,
-              children: M.intl.format(M.t.KRe1Fh, {
+              children: M.intl.format(M.t.KRe1Fk, {
                 name: eh
               })
             })

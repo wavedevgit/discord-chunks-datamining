@@ -39,7 +39,7 @@ function g(e) {
       separator: false,
       children: (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: f.intl.string(f.t["7glvXl"])
+        children: f.intl.string(f.t["7glvXu"])
       })
     }), (0, r.jsxs)(o.hzk, {
       children: [(0, r.jsx)(o.Text, {
@@ -52,19 +52,19 @@ function g(e) {
         children: [(0, r.jsxs)("ul", {
           className: h.links,
           children: [(0, r.jsx)("li", {
-            children: f.intl.format(f.t.iw0hFh, {
+            children: f.intl.format(f.t.iw0hFi, {
               url: p.EYA.TERMS
             })
           }), (0, r.jsx)("li", {
-            children: f.intl.format(f.t["36klnJ"], {
+            children: f.intl.format(f.t["36klnD"], {
               url: p.EYA.PAID_TERMS
             })
           }), (0, r.jsx)("li", {
-            children: f.intl.format(f.t.TquFBA, {
+            children: f.intl.format(f.t.TquFBF, {
               url: p.EYA.PRIVACY
             })
           }), (0, r.jsx)("li", {
-            children: f.intl.format(f.t.ia96TU, {
+            children: f.intl.format(f.t.ia96Tb, {
               url: p.EYA.GUIDELINES
             })
           })]
@@ -81,7 +81,7 @@ function g(e) {
     }), (0, r.jsx)(o.mzw, {
       children: (0, r.jsx)(o.Button, {
         variant: "active",
-        text: f.intl.string(f.t["+TBKLy"]),
+        text: f.intl.string(f.t["+TBKL1"]),
         loading: m,
         onClick: O
       })

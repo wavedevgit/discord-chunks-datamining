@@ -125,7 +125,7 @@ function q(e) {
     entry: er,
     onClose: Q
   }), eh = () => i.type !== B.IIU.HANG_STATUS || t.id !== n.id || null == q ? null : (0, r.jsx)(o.u, {
-    text: V.intl.string(V.t.QSOBam),
+    text: V.intl.string(V.t.QSOBaq),
     children: (0, r.jsx)(s.d3s, {
       size: "xxs"
     })
@@ -191,7 +191,7 @@ function q(e) {
     if (i.type === B.IIU.HANG_STATUS) return null;
     if ((0, d.Z)(i) && null != K) return (0, r.jsx)(M.Z, {
       variant: "text-xs/normal",
-      text: V.intl.formatToPlainString(V.t["hq/Qzc"], {
+      text: V.intl.formatToPlainString(V.t["hq/Qze"], {
         guildName: K.name
       }),
       onClick: () => {
@@ -226,7 +226,7 @@ function q(e) {
     if (i.type === B.IIU.WATCHING) return null;
     if ((0, u.Z)(i)) return ey();
     if ((0, I.dS)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
-      let e = V.intl.formatToPlainString(V.t["JC/3x8"], {
+      let e = V.intl.formatToPlainString(V.t["JC/3xw"], {
         numSpeakers: null == (a = i.party) ? true : a.size[0],
         numListeners: (null == (o = i.party) ? true : o.size[1]) - (null == (s = i.party) ? true : s.size[0])
       });
@@ -254,7 +254,7 @@ function q(e) {
         })
       }), (0, r.jsx)(M.Z, {
         variant: "text-xs/normal",
-        text: V.intl.formatToPlainString(V.t["u//9Bw"], {
+        text: V.intl.formatToPlainString(V.t["u//9By"], {
           count: "0",
           max: null != (a = null == Y ? true : Y.getMaxParticipants()) ? a : 0
         })
@@ -271,7 +271,7 @@ function q(e) {
         variant: "text-xs/normal",
         text: 0 === i.party.size[1] ? V.intl.formatToPlainString(V.t.IM4J4e, {
           count: i.party.size[0]
-        }) : V.intl.formatToPlainString(V.t["u//9Bw"], {
+        }) : V.intl.formatToPlainString(V.t["u//9By"], {
           count: i.party.size[0],
           max: i.party.size[1]
         })

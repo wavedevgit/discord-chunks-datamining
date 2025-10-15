@@ -55,14 +55,14 @@ function p(e) {
       }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != v && g.intl.format(g.t["8Sr/am"], {
+        children: [null != v && g.intl.format(g.t["8Sr/ar"], {
           channelName: v
         }), (0, r.jsx)(a.P3F, {
           onClick: b(true),
           className: m.editChannel,
           tag: "span",
           role: "link",
-          children: g.intl.string(g.t["3gUsJS"])
+          children: g.intl.string(g.t["3gUsJb"])
         })]
       })]
     }), (0, r.jsx)("div", {

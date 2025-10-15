@@ -80,7 +80,7 @@ class N extends Chunk647438.Component {
       size: Chunk755721.zx.Sizes.SMALL,
       disabled: true,
       color: (0, Chunk780384.wj)(Chunk210887.Z.theme) ? Chunk755721.zx.Colors.WHITE : Chunk755721.zx.Colors.BRAND,
-      children: Chunk388032.intl.string(Chunk388032.t["dVT14+"])
+      children: Chunk388032.intl.string(Chunk388032.t.dVT149)
     }) : (0, Chunk951288.jsx)(Chunk755721.zx, {
       color: Chunk755721.zx.Colors.GREEN,
       look: Chunk630810 ? Chunk755721.zx.Looks.FILLED : Chunk755721.zx.Looks.OUTLINED,
@@ -88,7 +88,7 @@ class N extends Chunk647438.Component {
       size: Chunk755721.zx.Sizes.SMALL,
       submitting: Chunk647438,
       onClick: this.handleClickInvite,
-      children: Chunk388032.intl.string(Chunk388032.t.jYnGPD)
+      children: Chunk388032.intl.string(Chunk388032.t.jYnGPG)
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk451964.inviteRow,
       onMouseEnter: this.handleMouseEnter,

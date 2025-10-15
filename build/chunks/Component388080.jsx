@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk491068 = require("./491068.js"),
   Chunk400167 = require("./400167.js");
 
-function y(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,9 +31,9 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
-  S = {};
-class E extends Chunk647438.PureComponent {
+let y = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
+  E = {};
+class S extends Chunk647438.PureComponent {
   track(e, t, n) {
     this.props.track(e, t, n)
   }
@@ -41,7 +41,7 @@ class E extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk491068.footer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiI"]),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiD"]),
         className: Chunk491068.socialLink,
         href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
         target: "blank",
@@ -50,7 +50,7 @@ class E extends Chunk647438.PureComponent {
           color: "currentColor"
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/v"]),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/l"]),
         className: Chunk491068.socialLink,
         href: Chunk981631.fK7.FACEBOOK_URL,
         target: "blank",
@@ -59,7 +59,7 @@ class E extends Chunk647438.PureComponent {
           color: "currentColor"
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyc"]),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyf"]),
         className: Chunk491068.socialLink,
         href: Chunk981631.fK7.INSTAGRAM_URL,
         target: "blank",
@@ -69,7 +69,7 @@ class E extends Chunk647438.PureComponent {
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.EjVVIy)
+        children: Chunk388032.intl.string(Chunk388032.t.EjVVI7)
       })]
     })
   }
@@ -153,10 +153,10 @@ class E extends Chunk647438.PureComponent {
         children: (0, Chunk951288.jsxs)("div", {
           tabIndex: 0,
           role: "region",
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchI),
-          children: [this.renderVideo(), k(module.body, false, {
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchE),
+          children: [this.renderVideo(), y(module.body, false, {
             changeLog: this,
-            interpolations: S,
+            interpolations: E,
             onLinkClick: this.trackLinkClick
           })]
         })
@@ -167,7 +167,7 @@ class E extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scrollerRef", l.createRef()), y(this, "handleScroll", () => {
+    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -175,12 +175,12 @@ class E extends Chunk647438.PureComponent {
         var t, n;
         null == (t = (n = this.props).onScroll) || t.call(n, e)
       }
-    }), y(this, "trackLinkClick", e => {
+    }), k(this, "trackLinkClick", e => {
       this.props.track(j.rMx.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, false)
-    }), y(this, "renderHeader", () => {
+    }), k(this, "renderHeader", () => {
       let {
         changeLog: e
       } = this.props;
@@ -189,11 +189,11 @@ class E extends Chunk647438.PureComponent {
         shrink: 1,
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
-          children: C.intl.string(C.t.LRmNAg)
+          children: C.intl.string(C.t.LRmNAl)
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           className: b.date,
-          children: C.intl.format(C.t.Fb8xx8, {
+          children: C.intl.format(C.t.Fb8xx2, {
             date: null != e.date && "" !== e.date ? s()(e.date).toDate() : new Date
           })
         })]
@@ -201,4 +201,4 @@ class E extends Chunk647438.PureComponent {
     })
   }
 }
-let _ = E
+let _ = S

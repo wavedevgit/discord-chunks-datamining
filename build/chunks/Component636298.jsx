@@ -48,7 +48,7 @@ function j(e) {
         children: [a.tq && (0, r.jsx)(p, {
           icon: c.yFM,
           onClick: () => o(true),
-          label: m.intl.string(m.t["13/7kZ"])
+          label: m.intl.string(m.t["13/7kX"])
         }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-secondary",
@@ -57,7 +57,7 @@ function j(e) {
       }), (0, r.jsx)(p, {
         icon: c.Uz9,
         onClick: l,
-        label: m.intl.string(m.t.cpT0Cg)
+        label: m.intl.string(m.t.cpT0Cq)
       })]
     })
   })

@@ -96,7 +96,7 @@ function D(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": T.intl.string(T.t.sJpqBQ),
+    "aria-label": T.intl.string(T.t.sJpqBS),
     className: t,
     children: n
   })
@@ -108,7 +108,7 @@ function L(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": T.intl.string(T.t.sJpqBQ),
+    "aria-label": T.intl.string(T.t.sJpqBS),
     role: "group",
     className: t,
     children: n
@@ -125,7 +125,7 @@ function x(e) {
     ref: a
   } = i, o = P(i, ["ref"]);
   return (0, r.jsx)("div", R(C({
-    "aria-label": T.intl.string(T.t.sJpqBQ),
+    "aria-label": T.intl.string(T.t.sJpqBS),
     ref: a
   }, o), {
     className: t,

@@ -152,7 +152,7 @@ let K = Chunk647438.memo(function(e) {
     })
   }, [O, S, T]);
   let N = () => d || !p ? null : (0, r.jsx)(D.E, {
-      emptyText: U.intl.string(U.t.hEh0l5),
+      emptyText: U.intl.string(U.t.hEh0l1),
       icon: l.gj8
     }),
     R = y !== M.Og ? I.slice(0, y) : I,

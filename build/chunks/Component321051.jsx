@@ -37,7 +37,7 @@ function h(e) {
         children: f.intl.string(f.t.aThJz8)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.stGFAw)
+        children: f.intl.string(f.t.stGFA3)
       })]
     }), (0, r.jsx)("div", {
       className: _.searchAndSound,

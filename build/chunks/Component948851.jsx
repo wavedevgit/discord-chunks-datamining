@@ -35,25 +35,25 @@ function c(e) {
       onSubmit: p,
       className: d.settingsForm,
       children: [(0, i.jsx)(s.VcW, {
-        label: o.intl.string(o.t["60qw29"]),
+        label: o.intl.string(o.t["60qw2x"]),
         options: c,
         value: null != (t = null == C ? true : C.value) ? t : c[0].value,
         onChange: x
       }), (0, i.jsx)(s.VcW, {
-        label: o.intl.string(o.t.jDqWHR),
+        label: o.intl.string(o.t.jDqWHW),
         options: u,
         value: null == N ? true : N.value,
         onChange: I
       }), !n && (0, i.jsx)(s.rsf, {
         checked: m,
         onChange: e => v(e),
-        description: o.intl.string(o.t.UN5IRU),
-        label: o.intl.string(o.t["wE+9dn"])
+        description: o.intl.string(o.t.UN5IRX),
+        label: o.intl.string(o.t["wE+9dr"])
       }), S && (0, i.jsx)(s.rsf, {
         checked: (0, a.yE)(y, l.$.IS_GUEST_INVITE),
         onChange: e => j((0, a.mB)(y, l.$.IS_GUEST_INVITE, e)),
-        description: o.intl.string(o.t["/FeTKy"]),
-        label: o.intl.string(o.t.siexRU)
+        description: o.intl.string(o.t["/FeTK6"]),
+        label: o.intl.string(o.t.siexRS)
       })]
     })
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 522 **/
 /** chunk id: 200623, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk5511 = require("./5511.js");
 
-function g(e) {
+function C(e) {
   let {
     step: t,
     instructions: r
@@ -42,23 +42,23 @@ function g(e) {
   })
 }
 
-function C(e) {
+function g(e) {
   let {
     channel: t,
     transitionState: r,
-    onClose: C
+    onClose: g
   } = e, _ = (0, i.e7)([u.default], () => null != u.default.getRemoteSessionId()), j = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    _ && C()
-  }, [_, C]), s.useEffect(() => {
+    _ && g()
+  }, [_, g]), s.useEffect(() => {
     (0, m.Z)(t.id, p.YE.XBOX)
   }, [t.id]), (0, n.jsx)(a.Modal, {
-    title: b.intl.string(b.t["f+Aijo"]),
-    subtitle: b.intl.string(b.t.mYFmDQ),
+    title: b.intl.string(b.t["f+Aijq"]),
+    subtitle: b.intl.string(b.t.mYFmDY),
     actions: [],
-    onClose: C,
+    onClose: g,
     transitionState: r,
     children: (0, n.jsxs)("div", {
       className: h.card,
@@ -70,19 +70,19 @@ function C(e) {
           className: h.cardRow,
           children: [(0, n.jsx)(l.Z, {
             className: h.cardHeaderIcon
-          }), b.intl.string(b.t.ZNlYbG)]
-        }), (0, n.jsx)(g, {
+          }), b.intl.string(b.t.ZNlYbK)]
+        }), (0, n.jsx)(C, {
           step: 1,
-          instructions: b.intl.string(b.t.dDtkl5)
-        }), (0, n.jsx)(g, {
+          instructions: b.intl.string(b.t.dDtkl9)
+        }), (0, n.jsx)(C, {
           step: 2,
-          instructions: b.intl.string(b.t.IWuXjI)
+          instructions: b.intl.string(b.t.IWuXjC)
         }), (0, n.jsx)(c.Text, {
           variant: "text-sm/medium",
           children: (0, n.jsx)(c.Anchor, {
             className: h.learnMore,
             href: d.Z.getArticleURL(x.BhN.XBOX_CONNECTION),
-            children: b.intl.string(b.t.hvVgAQ)
+            children: b.intl.string(b.t.hvVgAZ)
           })
         })]
       }), (0, n.jsx)(o.ZP, {

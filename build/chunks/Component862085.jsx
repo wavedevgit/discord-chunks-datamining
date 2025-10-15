@@ -46,12 +46,12 @@ function c(e) {
       }), c ? (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [s.intl.string(s.t.Oa9oWF), (0, r.jsx)(l.P3F, {
+        children: [s.intl.string(s.t.Oa9oWJ), (0, r.jsx)(l.P3F, {
           onClick: u(true),
           className: o.editChannel,
           tag: "span",
           role: "link",
-          children: s.intl.string(s.t.QupmYW)
+          children: s.intl.string(s.t.QupmYY)
         })]
       }) : null]
     }), (0, r.jsx)("div", {

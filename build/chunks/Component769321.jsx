@@ -66,7 +66,7 @@ function g(e) {
           variant: "text-xxs/normal",
           color: "text-default",
           className: v.connectedAppRoleAccountPoweredBy,
-          children: j.intl.format(j.t.zIT9YG, {
+          children: j.intl.format(j.t.zIT9YA, {
             applicationHook: () => n.application.name
           })
         })]

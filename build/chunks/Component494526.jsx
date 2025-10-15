@@ -40,7 +40,7 @@ function Z(e) {
     let e = new Image;
     e.src = A, e.onload = () => l(true), e.onerror = () => l(true)
   }, [A]), i.useEffect(() => {
-    n && u.uvj.announce(O.intl.string(O.t.j2p129))
+    n && u.uvj.announce(O.intl.string(O.t.j2p125))
   }, [n]), (0, r.jsx)("div", {
     className: y.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
@@ -96,11 +96,11 @@ function R(e) {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(p.Dx, {
           className: C.marginBottom8,
-          children: O.intl.string(O.t.UPiHaG)
+          children: O.intl.string(O.t.UPiHaL)
         }), null != i ? (0, r.jsx)(P, {
           children: i
         }) : (0, r.jsx)(p.DK, {
-          children: O.intl.format(O.t["Qq+A6u"], {})
+          children: O.intl.format(O.t["Qq+A6i"], {})
         }), (0, r.jsx)(c.zx, {
           size: c.Ph.LARGE,
           look: c.iL.LINK,
@@ -116,7 +116,7 @@ function R(e) {
               conditionalMediationAbortController: e
             }).catch(() => {})
           })(s),
-          children: O.intl.string(O.t["/kpMDg"])
+          children: O.intl.string(O.t["/kpMDt"])
         })]
       });
     case 3:
@@ -133,9 +133,9 @@ function R(e) {
           status: S.Sk.ONLINE
         }), (0, r.jsx)(p.Dx, {
           className: C.marginBottom8,
-          children: O.intl.string(O.t.apGCUV)
+          children: O.intl.string(O.t.apGCUT)
         }), (0, r.jsx)(p.DK, {
-          children: O.intl.format(O.t.Cbl5JC, {
+          children: O.intl.format(O.t.Cbl5JK, {
             username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zx, {
@@ -144,7 +144,7 @@ function R(e) {
           size: c.zx.Sizes.MIN,
           onClick: n,
           className: y.startOverButton,
-          children: O.intl.string(O.t.nOOhws)
+          children: O.intl.string(O.t.nOOhwo)
         })]
       })
     }

@@ -33,7 +33,7 @@ let I = e => {
     children: [(0, i.jsx)("div", {
       className: g.previewBox,
       role: "img",
-      "aria-label": m.intl.string(m.t.SZeUdX),
+      "aria-label": m.intl.string(m.t.SZeUdR),
       children: (0, i.jsxs)("div", {
         className: g.previewContents,
         "aria-hidden": true,
@@ -64,7 +64,7 @@ let I = e => {
         children: v
       }), y && (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: E ? m.intl.string(m.t.nD78oa) : C && S ? m.intl.string(m.t.hmyYKy) : C ? m.intl.string(m.t.JY1i0t) : m.intl.string(m.t.fEGjVV)
+        children: E ? m.intl.string(m.t.nD78oa) : C && S ? m.intl.string(m.t.hmyYK8) : C ? m.intl.string(m.t.JY1i0u) : m.intl.string(m.t.fEGjVQ)
       })]
     })]
   })

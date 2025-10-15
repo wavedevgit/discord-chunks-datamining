@@ -141,8 +141,8 @@ let P = {
       autocompletes: t,
       onHover: l,
       onClick: c,
-      titleWithQuery: I.t.HFRoZW,
-      titleWithoutQuery: I.intl.string(I.t["0hKkS0"]),
+      titleWithQuery: I.t.HFRoZR,
+      titleWithoutQuery: I.intl.string(I.t["0hKkS+"]),
       getQuery: e => "".concat(O.GI).concat(e),
       Component: d ? m.ZP.Command : m.ZP.NewCommand,
       getProps: e => {
@@ -164,7 +164,7 @@ let P = {
       headerTrailingContent: d && (0, r.jsx)(i.Avr, {
         size: "xs",
         onClick: N,
-        text: I.intl.string(I.t["8a0P09"])
+        text: I.intl.string(I.t["8a0P0y"])
       })
     })
   },

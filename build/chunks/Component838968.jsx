@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk377171 = require("./377171.js"),
   Chunk192371 = require("./192371.js"),
   Chunk834209 = require("./834209.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk237522 = require("./237522.js");
 
@@ -50,7 +50,7 @@ function x(e) {
     }), (0, r.jsx)(o.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
-      children: m.intl.formatToMarkdownString(u.default["ol/ao6"], {
+      children: m.intl.formatToMarkdownString(u.default["ol/ao/"], {
         dateString: (0, c.Z)(n)
       })
     })]
@@ -69,7 +69,7 @@ function _(e) {
     }), (0, r.jsx)(o.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
-      children: m.intl.formatToPlainString(u.default["6e2ry8"], {
+      children: m.intl.formatToPlainString(u.default["6e2ry1"], {
         dateString: (0, d.Z)(n)
       })
     })]
@@ -95,7 +95,7 @@ function b(e) {
         tag: "div",
         variant: "heading-md/semibold",
         color: "text-secondary",
-        children: m.intl.formatToPlainString(m.t.t2Wbo6, {
+        children: m.intl.formatToPlainString(m.t.t2Wbo1, {
           required: n,
           decorator: null != t ? t : ""
         })
@@ -173,7 +173,7 @@ let j = Chunk647438.forwardRef(function(e, n) {
         text: m.intl.string(m.t.y2b7CA)
       }), "beta" === d && (0, r.jsx)(o.IGR, {
         className: g.new,
-        text: m.intl.string(m.t.oW0eUV),
+        text: m.intl.string(m.t.oW0eUd),
         color: l.Z.BG_BRAND
       })]
     })

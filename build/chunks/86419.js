@@ -78,7 +78,7 @@ function O(e, t) {
   let {
     isCurrentUser: n
   } = t, i = e.games.length > 0;
-  if (n && i) return 1 === r.kp[e.type] ? h.intl.string(h.t.wiXdER) : h.intl.format(h.t["zR1+09"], {
+  if (n && i) return 1 === r.kp[e.type] ? h.intl.string(h.t.wiXdEa) : h.intl.format(h.t["zR1+0/"], {
     numGames: r.kp[e.type]
   })
 }

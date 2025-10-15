@@ -23,7 +23,7 @@ let f = () => {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk388032.t["Ig/XFR"])
+      children: Chunk388032.intl.string(Chunk388032.t["Ig/XFa"])
     }), (0, Chunk951288.jsxs)(Chunk481060.ubH, {
       theme: exports,
       children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
@@ -33,7 +33,7 @@ let f = () => {
         height: 220
       }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
         note: Chunk388032.intl.string(Chunk388032.t.WenGZ2),
-        children: Chunk388032.intl.string(Chunk388032.t["aoLS8/"])
+        children: Chunk388032.intl.string(Chunk388032.t.aoLS84)
       })]
     })]
   })

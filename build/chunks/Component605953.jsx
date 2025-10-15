@@ -30,7 +30,7 @@ function p(e) {
         channel_type: t.type
       }), (0, a.e7)()
     },
-    tooltip: n ? h.intl.string(h.t.nGs3kJ) : h.intl.string(h.t.bIm2sL),
+    tooltip: n ? h.intl.string(h.t.nGs3kO) : h.intl.string(h.t.bIm2sF),
     selected: n,
     "aria-expanded": n
   })

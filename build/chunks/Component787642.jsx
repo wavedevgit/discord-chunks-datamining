@@ -48,11 +48,11 @@ function m() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t.IuMx1d)
+        children: Chunk388032.intl.string(Chunk388032.t.IuMx1Y)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "heading-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.DwevPj)
+        children: Chunk388032.intl.string(Chunk388032.t.DwevPs)
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk184904.grid,
@@ -65,7 +65,7 @@ function m() {
         t = e.id, c.default.track(p.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
           guild_id: t
         }), (0, o.X)(t)
-      })), g(Chunk481060.Jmo, Chunk388032.intl.string(Chunk388032.t.AhKnz8), () => {
+      })), g(Chunk481060.Jmo, Chunk388032.intl.string(Chunk388032.t.AhKnz4), () => {
         Chunk626135.default.track(Chunk981631.rMx.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY)
       })]
     })]

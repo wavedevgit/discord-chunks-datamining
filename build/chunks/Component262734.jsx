@@ -124,7 +124,7 @@ function j(e) {
           iconClassName: T.inviteButtonIcon,
           size: c.zx.Sizes.MEDIUM,
           look: c.zx.Looks.FILLED,
-          buttonText: S.intl.string(S.t["6F9ivr"]),
+          buttonText: S.intl.string(S.t["6F9ivu"]),
           color: c.zx.Colors.TRANSPARENT
         }), (0, r.jsxs)("div", {
           className: T.footerButtons,
@@ -132,14 +132,14 @@ function j(e) {
             className: T.buttonSection,
             children: (0, r.jsx)(m.d, {
               isTrayButton: true,
-              label: S.intl.string(S.t.brPQ5e),
+              label: S.intl.string(S.t.brPQ5U),
               onClick: k,
               iconComponent: u.dOc,
               themeable: true
             })
           }), (0, r.jsx)(m.d, {
             isTrayButton: false,
-            label: S.intl.string(S.t["R/FK4O"]),
+            label: S.intl.string(S.t["R/FK4A"]),
             onClick: M,
             iconComponent: u.PBZ,
             color: "disconnect"

@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk99372 = require("./99372.js"),
   Chunk629582 = require("./629582.js");
 
-function b() {
+function f() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk99372.getXboxApp,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -30,18 +30,18 @@ function b() {
             src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.whiteSVG,
             alt: ""
           })
-        }), Chunk388032.intl.string(Chunk388032.t["12Kx2t"])]
+        }), Chunk388032.intl.string(Chunk388032.t["12Kx2v"])]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.M5yEcX)
+        children: Chunk388032.intl.string(Chunk388032.t.M5yEcb)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION),
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
+          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk198993.ZP, {
@@ -58,14 +58,14 @@ function x(e) {
   } = e;
   return (0, o.jsx)(l.L, {
     img: (0, o.jsx)("img", {
-      src: f.Z,
+      src: b.Z,
       width: "124",
       height: "160",
       alt: ""
     }),
-    title: u.intl.string(u.t["7QsHmp"]),
-    body: u.intl.string(u.t.byYNPT),
-    content: (0, o.jsx)(b, {}),
+    title: u.intl.string(u.t["7QsHmh"]),
+    body: u.intl.string(u.t.byYNPX),
+    content: (0, o.jsx)(f, {}),
     onClose: t
   })
 }

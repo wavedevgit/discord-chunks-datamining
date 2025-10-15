@@ -91,7 +91,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         participant: o,
         isUpsellEnabled: c,
         shape: f,
-        size: E,
+        size: b,
         didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: x,
         className: A,
@@ -116,7 +116,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: k
       } = (0, _.O)(),
-      F = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+      F = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
       L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
       V = i.useCallback(() => {
         L && M && (0, p.ZDy)(async () => {
@@ -137,11 +137,11 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         }), x(true))
       }, [t, l, M, P, x, N]), null == R) return null;
     let U = (0, r.jsx)(d.u, {
-      text: D ? C.intl.string(C.t.q8TiVl) : M ? C.intl.string(C.t.IHgpEh) : C.intl.string(C.t.vLb0VV),
+      text: D ? C.intl.string(C.t.q8TiVt) : M ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
         onClick: V,
-        className: a()(w.qualityIndicator, E, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
+        className: a()(w.qualityIndicator, b, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && M
         }),
         children: [M ? (0, r.jsx)(p.SrA, {
@@ -175,13 +175,13 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       premiumIndicator: u
     } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
       reducedMotion: m
-    } = i.useContext(p.Sfi), b = n && null != _;
+    } = i.useContext(p.Sfi), E = n && null != _;
     i.useEffect(() => {
-      (0, E.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let v = (0, p.Yzy)(b, {
+    let v = (0, p.Yzy)(E, {
         enter: {
           from: m.enabled ? T : x,
           to: m.enabled ? R : A
@@ -190,7 +190,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
-        to: b ? D : N,
+        to: E ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -220,7 +220,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
             size: c,
-            shape: b ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: E ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

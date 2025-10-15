@@ -18,7 +18,7 @@ function s(e) {
       className: a.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
-      children: l.intl.string(l.t["4Byy/P"])
+      children: l.intl.string(l.t["4Byy/G"])
     }), (0, i.jsx)(r.xvT, {
       variant: "text-sm/normal",
       children: t.publishers.join(", ")

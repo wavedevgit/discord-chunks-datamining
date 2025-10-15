@@ -60,15 +60,15 @@ function b(t) {
   }({
     artURL: p.Z,
     type: u.cd.MESSAGE_LENGTH_UPSELL,
-    title: d.intl.string(d.t.TZT3sL),
-    body: d.intl.format(d.t.QhcEAA, {
+    title: d.intl.string(d.t.TZT3sJ),
+    body: d.intl.format(d.t.QhcEAL, {
       maxLength: f.J6R,
       onLearnMore: y
     }),
-    context: d.intl.formatToPlainString(d.t.Fc1uVV, {
+    context: d.intl.formatToPlainString(d.t.Fc1uVe, {
       maxLength: f.J6R
     }),
-    glowUp: d.intl.format(d.t.Mi8kt7, {
+    glowUp: d.intl.format(d.t.Mi8kt1, {
       onLearnMore: y
     }),
     analyticsSource: {

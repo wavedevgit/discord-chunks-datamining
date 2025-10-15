@@ -183,7 +183,7 @@ let x = e => {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
-          }, l = e.sectionCollapsedToThreeRows ? a ? (0, s.wj)(eo) ? er : ea : (0, s.wj)(eo) ? J : $ : a ? (0, s.wj)(eo) ? en : ei : (0, s.wj)(eo) ? ee : et, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zm : A.t["/K2RDA"]);
+          }, l = e.sectionCollapsedToThreeRows ? a ? (0, s.wj)(eo) ? er : ea : (0, s.wj)(eo) ? J : $ : a ? (0, s.wj)(eo) ? en : ei : (0, s.wj)(eo) ? ee : et, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zk : A.t["/K2RDH"]);
           return n({
             handleSelect: o,
             icon: (0, r.jsx)("img", {

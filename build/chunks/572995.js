@@ -21,8 +21,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119475 = require("./119475.js"),
-  Chunk693450 = require("./693450.js"),
+  Chunk687101 = require("./687101.js"),
+  Chunk592186 = require("./592186.js"),
   Chunk509614 = require("./509614.js"),
   Chunk880511 = require("./880511.js"),
   Chunk985443 = require("./985443.js"),
@@ -181,17 +181,17 @@ let ec = (e, t) => eo({
       })),
       C = {
         name: "serverProfiles",
-        title: Chunk388032.intl.string(Chunk388032.t.I9TYMj),
+        title: Chunk388032.intl.string(Chunk388032.t.I9TYMg),
         description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
-        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
         onClick: Chunk509614,
         previewImage: Chunk368243.serverProfiles.thumbnail,
         videoUrl: Chunk368243.serverProfiles.assetUrl
       },
       N = {
         name: "referralProgram",
-        title: Chunk388032.intl.string(Chunk388032.t.tPY4o6),
-        description: Chunk388032.intl.format(Chunk388032.t.jRPQUF, {
+        title: Chunk388032.intl.string(Chunk388032.t.tPY4o9),
+        description: Chunk388032.intl.format(Chunk388032.t.jRPQUH, {
           learnMoreLink: Chunk184071
         }),
         previewImage: Chunk368243.referralProgram.thumbnail,
@@ -199,9 +199,9 @@ let ec = (e, t) => eo({
       },
       R = {
         name: "customThemes",
-        title: Chunk388032.intl.string(Chunk119475.default.XokIHB),
-        description: Chunk388032.intl.string(Chunk119475.default["7esQMD"]),
-        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+        title: Chunk388032.intl.string(Chunk687101.default.XokIHM),
+        description: Chunk388032.intl.string(Chunk687101.default["7esQMC"]),
+        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
         previewImage: Chunk368243.customThemes.thumbnail,
         onClick: () => {
           (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
@@ -210,9 +210,9 @@ let ec = (e, t) => eo({
       },
       P = {
         name: "displayNameStyles",
-        title: Chunk388032.intl.string(Chunk693450.default.ABtBDQ),
-        description: Chunk388032.intl.string(Chunk693450.default.MFNXZm),
-        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+        title: Chunk388032.intl.string(Chunk592186.default.ABtBDQ),
+        description: Chunk388032.intl.string(Chunk592186.default.MFNXZh),
+        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
         previewImage: Chunk368243.displayNameStyles.thumbnail,
         onClick: Chunk985443,
         badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
@@ -220,26 +220,26 @@ let ec = (e, t) => eo({
       },
       w = {
         name: "showYourStyle",
-        title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmp),
-        description: Chunk388032.intl.string(Chunk388032.t.UsOUxc),
-        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+        title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmv),
+        description: Chunk388032.intl.string(Chunk388032.t.UsOUxY),
+        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
         previewImage: Chunk368243.showYourStyle.thumbnail,
         onClick: Chunk509614,
         videoUrl: Chunk368243.showYourStyle.assetUrl
       },
       D = {
         name: "yourSpace",
-        title: Chunk388032.intl.string(Chunk388032.t.Wme3nZ),
-        description: Chunk388032.intl.string(Chunk388032.t["/aAIqa"]),
-        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+        title: Chunk388032.intl.string(Chunk388032.t.Wme3nX),
+        description: Chunk388032.intl.string(Chunk388032.t["/aAIqV"]),
+        descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
         previewImage: Chunk368243.yourSpace.thumbnail,
         onClick: Chunk612253,
         videoUrl: Chunk368243.yourSpace.assetUrl
       },
       L = {
         name: "emojis",
-        title: Chunk388032.intl.string(Chunk388032.t.zY5PPT),
-        description: Chunk388032.intl.string(Chunk388032.t.R5Xag4),
+        title: Chunk388032.intl.string(Chunk388032.t.zY5PPb),
+        description: Chunk388032.intl.string(Chunk388032.t.R5Xag2),
         previewImage: Chunk368243.emojis.thumbnail,
         videoUrl: Chunk368243.emojis.assetUrl
       },
@@ -248,8 +248,8 @@ let ec = (e, t) => eo({
         [Chunk238027],
         [Chunk997585, {
           name: "noLimits",
-          title: Chunk388032.intl.string(Chunk388032.t["6b3ydH"]),
-          description: Chunk388032.intl.string(Chunk388032.t["Y+IJys"]),
+          title: Chunk388032.intl.string(Chunk388032.t["6b3ydG"]),
+          description: Chunk388032.intl.string(Chunk388032.t["Y+IJyg"]),
           previewImage: Chunk368243.noLimits.thumbnail,
           videoUrl: Chunk368243.noLimits.assetUrl
         }]

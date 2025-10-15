@@ -43,7 +43,7 @@ function x(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
-          children: u.intl.string(u.t.uvGmCw)
+          children: u.intl.string(u.t.uvGmCx)
         }), (0, r.jsxs)("div", {
           className: h.notice,
           children: [(0, r.jsx)(l.d3s, {
@@ -53,7 +53,7 @@ function x(e) {
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            children: u.intl.string(u.t.t2GkVV)
+            children: u.intl.string(u.t.t2GkVR)
           })]
         })]
       }), (0, r.jsx)(l.P3F, {
@@ -77,15 +77,15 @@ function x(e) {
           className: a()(g.__invalid_channelName, h.title),
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: u.intl.string(u.t.JtSpDw)
+          children: u.intl.string(u.t.JtSpD0)
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: u.intl.string(u.t.Ajhp09)
+          children: u.intl.string(u.t.Ajhp03)
         })]
       }), (0, r.jsx)("img", {
         src: f,
-        alt: u.intl.string(u.t.gAlJzc),
+        alt: u.intl.string(u.t.gAlJzV),
         width: o.TJ,
         height: o.TJ
       })]

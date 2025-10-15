@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 499493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,28 +19,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk192025 = require("./192025.js"),
   Chunk226788 = require("./226788.js");
-let j = e => {
+let v = e => {
   let {
     entry: t,
     onClose: n,
     onReaction: l,
-    onRequestOpen: j,
+    onRequestOpen: v,
     disableActivityProfileLinks: O,
     customCTA: y,
     popoutClassname: I,
     popoutPosition: b = "right"
-  } = e, E = r.useRef(null), N = (0, s.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), P = (0, s.e7)([u.default], () => u.default.getUser(t.author_id)), {
-    nick: w,
+  } = e, N = r.useRef(null), E = (0, s.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), w = (0, s.e7)([u.default], () => u.default.getUser(t.author_id)), {
+    nick: P,
     avatar: S
   } = r.useMemo(() => {
-    let e = null == P ? true : P.getAvatarURL(null == N ? true : N.guild_id, 48, false);
+    let e = null == w ? true : w.getAvatarURL(null == E ? true : E.guild_id, 48, false);
     return {
-      nick: m.ZP.getName(null == N ? true : N.guild_id, null == N ? true : N.id, P),
+      nick: m.ZP.getName(null == E ? true : E.guild_id, null == E ? true : E.id, w),
       avatar: e
     }
-  }, [P, N]);
-  return null == P ? null : (0, i.jsx)(o.yRy, {
-    targetElementRef: E,
+  }, [w, E]);
+  return null == w ? null : (0, i.jsx)(o.yRy, {
+    targetElementRef: N,
     position: b,
     renderPopout: e => {
       let {
@@ -64,7 +64,7 @@ let j = e => {
     },
     positionKey: "'content-entry-".concat(t.id),
     onRequestOpen: () => {
-      null == j || j()
+      null == v || v()
     },
     children: e => {
       var n, r;
@@ -86,7 +86,7 @@ let j = e => {
         }
         return e
       }({
-        innerRef: E
+        innerRef: N
       }, e), r = r = {
         className: h.profileEntryCard,
         children: (0, i.jsx)(o.tEY, {
@@ -100,18 +100,18 @@ let j = e => {
             children: [(0, i.jsx)("img", {
               className: h.avatar,
               src: S,
-              alt: x.intl.formatToPlainString(x.t.IzVXxc, {
-                userName: w
+              alt: x.intl.formatToPlainString(x.t.IzVXxY, {
+                userName: P
               })
             }), (0, i.jsx)("div", {
               className: h.playerInfo,
               children: (0, i.jsxs)("div", {
-                className: a()(v.column, v.gapXs),
+                className: a()(j.column, j.gapXs),
                 children: [(0, i.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
-                  children: w
+                  children: P
                 }), (0, i.jsx)(g.Gk, {
                   location: g.Gt.APP_LAUNCHER,
                   children: p.W.map((e, n) => (0, i.jsx)(e, {

@@ -30,15 +30,15 @@ function g() {
       role: true,
       ctaComponent: null,
       imageUrl: (0, Chunk357352.b)("server_products/storefront/preview-thumbnail.png"),
-      name: Chunk388032.intl.string(Chunk388032.t.U2hvDg),
-      description: Chunk388032.intl.string(Chunk388032.t["w/TNGR"]),
+      name: Chunk388032.intl.string(Chunk388032.t.U2hvDo),
+      description: Chunk388032.intl.string(Chunk388032.t["w/TNGT"]),
       formattedPrice: (0, Chunk937615.T4)(0, Chunk981631.pKx.USD, {
         localeMatcher: "best fit",
         style: "currency",
         maximumSignificantDigits: 1
       }),
       shouldShowFullDescriptionButton: false,
-      productType: Chunk388032.intl.string(Chunk388032.t.ih4QMT),
+      productType: Chunk388032.intl.string(Chunk388032.t.ih4QMU),
       onTapCard: () => null,
       hideRoleTag: true,
       lineClamp: 3,
@@ -63,7 +63,7 @@ function h() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: Chunk388032.intl.format(Chunk388032.t.umfZ8v, {
+      children: Chunk388032.intl.format(Chunk388032.t.umfZ8q, {
         learnMoreLink: Chunk629481.P4
       })
     })]

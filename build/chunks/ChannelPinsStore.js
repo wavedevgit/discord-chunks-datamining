@@ -20,14 +20,14 @@ var i, l, s, Chunk392711 = require("./392711.js"),
   A = ((l = {}).LOADING = "LOADING", l.LOADED_HAS_MORE = "LOADED_HAS_MORE", l.LOADED_FINISHED = "LOADING_FINISHED", l.FAILED = "FAILED", l);
 let D = {};
 
-function p(e) {
+function h(e) {
   let {
     channel: t
   } = e;
   delete D[t.id]
 }
 
-function h() {
+function p() {
   a().forEach(D, e => {
     e.items.forEach(e => {
       let {
@@ -98,8 +98,8 @@ let I = new O(Chunk570140.Z, {
     if (null == n) returnfalse;
     n.state = "FAILED"
   },
-  CHANNEL_DELETE: p,
-  THREAD_DELETE: p,
+  CHANNEL_DELETE: h,
+  THREAD_DELETE: h,
   GUILD_DELETE: function(e) {
     let {
       guild: t
@@ -182,9 +182,9 @@ let I = new O(Chunk570140.Z, {
     if (false === l) returnfalse;
     i.items = i.items.slice(), i.items.splice(l, 1)
   },
-  RELATIONSHIP_ADD: h,
-  RELATIONSHIP_REMOVE: h,
-  RELATIONSHIP_UPDATE: h,
+  RELATIONSHIP_ADD: p,
+  RELATIONSHIP_REMOVE: p,
+  RELATIONSHIP_UPDATE: p,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function(e) {
     let {
       messageId: t,

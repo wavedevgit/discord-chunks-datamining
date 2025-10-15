@@ -26,7 +26,7 @@ function O(e, t) {
   }, []);
   return !g || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, s.eQ)(e) ? null : (0, r.jsx)(a.sNh, {
     id: "remove-emoji-reactions",
-    label: p.intl.string(p.t["zx/e4O"]),
+    label: p.intl.string(p.t["zx/e4P"]),
     color: "danger",
     children: O.map(i => {
       var l, s;
@@ -35,11 +35,11 @@ function O(e, t) {
         label: null == i.id ? i.name : ":".concat(i.name, ":"),
         action: n => {
           n.shiftKey ? (0, c.$E)(t.id, e.id, i) : o.Z.show({
-            title: p.intl.string(p.t["73GqT0"]),
-            body: p.intl.string(p.t.dmy5bm),
-            confirmText: p.intl.string(p.t.p89ACg),
+            title: p.intl.string(p.t["73GqTz"]),
+            body: p.intl.string(p.t.dmy5bn),
+            confirmText: p.intl.string(p.t.p89ACt),
             confirmVariant: "critical-primary",
-            cancelText: p.intl.string(p.t.gm1Ven),
+            cancelText: p.intl.string(p.t.gm1Vej),
             onConfirm: () => {
               (0, c.$E)(t.id, e.id, i)
             }

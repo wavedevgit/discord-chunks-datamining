@@ -41,21 +41,21 @@ function b(t) {
       action: "WIDGET_REMOVED",
       widgetEdited: i.type
     }), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
-  }, [i.type, b, v]), f = (0, l.e7)([d.default], () => d.default.getUser(u));
+  }, [i.type, b, v]), f = (0, l.e7)([c.default], () => c.default.getUser(u));
   return null == f ? null : (0, n.jsxs)(s.Modal, {
     transitionState: e,
     onClose: b,
-    title: p.intl.string(p.t.Mm07YW),
-    subtitle: p.intl.format(p.t["x+djIy"], {
-      helpUrl: c.w
+    title: p.intl.string(p.t.Mm07Yc),
+    subtitle: p.intl.format(p.t["x+djI4"], {
+      helpUrl: d.w
     }),
     actions: [{
       variant: "secondary",
-      text: p.intl.string(p.t["ETE/oK"]),
+      text: p.intl.string(p.t["ETE/oC"]),
       onClick: b
     }, {
       variant: "critical-primary",
-      text: p.intl.string(p.t.Mm07YW),
+      text: p.intl.string(p.t.Mm07Yc),
       onClick: E
     }],
     children: [(0, n.jsx)("div", {
@@ -69,7 +69,7 @@ function b(t) {
       children: (0, n.jsx)(a.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
-        children: p.intl.string(p.t.bQNGeX)
+        children: p.intl.string(p.t.bQNGeT)
       })
     })]
   })

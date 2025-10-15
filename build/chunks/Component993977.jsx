@@ -78,7 +78,7 @@ function v(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
       className: _.hiddenLibraryApplicationsTitle,
-      children: b.intl.string(b.t["5PJtrK"])
+      children: b.intl.string(b.t["5PJtrH"])
     }), i]
   })
 }
@@ -105,13 +105,13 @@ class y extends Chunk647438.PureComponent {
       children: [(0, Chunk804739.Q)() ? (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["9ID+Ki"]),
-          description: Chunk388032.intl.string(Chunk388032.t.vT61Nz),
+          label: Chunk388032.intl.string(Chunk388032.t["9ID+Kh"]),
+          description: Chunk388032.intl.string(Chunk388032.t.vT61N0),
           checked: exports,
           onChange: this.handleToggleShortcutDesktop
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.vNpUMz),
-          description: Chunk388032.intl.string(Chunk388032.t.cpYp0N),
+          description: Chunk388032.intl.string(Chunk388032.t.cpYp0H),
           checked: require,
           onChange: this.handleToggleShortcutStartMenu
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk34305.Z, {})]

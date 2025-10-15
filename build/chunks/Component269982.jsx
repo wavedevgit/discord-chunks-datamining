@@ -48,7 +48,7 @@ function p(e) {
     }), (0, i.jsx)(l.Text, {
       className: d.nitroText,
       variant: "text-md/medium",
-      children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EB"], {
+      children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
@@ -56,15 +56,15 @@ function p(e) {
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, i.jsx)(e, u({
               premiumUpsellType: h,
-              title: c.intl.string(c.t.JI7uhY),
-              body: c.intl.string(c.t["5XvsdX"]),
-              glowUp: c.intl.string(c.t["5XvsdX"]),
+              title: c.intl.string(c.t.JI7uhc),
+              body: c.intl.string(c.t["5XvsdZ"]),
+              glowUp: c.intl.string(c.t["5XvsdZ"]),
               analyticsSource: _,
               onSecondaryClick: p
             }, t))
           })
         }
-      }) : h === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNOND, {
+      }) : h === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNONM, {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
@@ -72,15 +72,15 @@ function p(e) {
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, i.jsx)(e, u({
               premiumUpsellType: h,
-              title: c.intl.string(c.t.sYm15e),
-              body: c.intl.string(c.t["Hza+Bg"]),
-              glowUp: c.intl.string(c.t["Hza+Bg"]),
+              title: c.intl.string(c.t.sYm15X),
+              body: c.intl.string(c.t["Hza+Bu"]),
+              glowUp: c.intl.string(c.t["Hza+Bu"]),
               analyticsSource: _,
               onSecondaryClick: p
             }, t))
           })
         }
-      }) : h === o.cd.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TE, {
+      }) : h === o.cd.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TF, {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
@@ -88,9 +88,9 @@ function p(e) {
             } = await n.e("43360").then(n.bind(n, 73415));
             return t => (0, i.jsx)(e, u({
               premiumUpsellType: h,
-              title: c.intl.string(c.t.k7UN4u),
-              body: c.intl.string(c.t["0/QPxM"]),
-              glowUp: c.intl.string(c.t["0/QPxM"]),
+              title: c.intl.string(c.t.k7UN4k),
+              body: c.intl.string(c.t["0/QPxO"]),
+              glowUp: c.intl.string(c.t["0/QPxO"]),
               analyticsSource: _,
               onSecondaryClick: p
             }, t))

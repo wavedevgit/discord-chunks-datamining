@@ -213,12 +213,12 @@ let L = e => {
       return [{
         type: E.Ih.FAVORITE,
         id: E.Ih.FAVORITE,
-        name: O.intl.string(O.t.y3LQCA),
+        name: O.intl.string(O.t.y3LQCG),
         stickers: t
       }, {
         type: E.Ih.RECENT,
         id: E.Ih.RECENT,
-        name: O.intl.string(O.t["6hjpXV"]),
+        name: O.intl.string(O.t["6hjpXW"]),
         stickers: null != (r = null == a ? true : a.filter(t => {
           if ((0, b.J8)(t)) {
             var r, i;

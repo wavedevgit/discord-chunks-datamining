@@ -54,9 +54,9 @@ let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
           tag: "div",
           color: "header-secondary",
           variant: "heading-lg/normal",
-          children: 0 === x.length ? b.intl.string(b.t.FUVhyM) : 1 === x.length ? b.intl.formatToPlainString(b.t.EQwZlJ, {
+          children: 0 === x.length ? b.intl.string(b.t.FUVhyC) : 1 === x.length ? b.intl.formatToPlainString(b.t.EQwZlN, {
             a: _(n, x[0])
-          }) : 2 === x.length ? b.intl.formatToPlainString(b.t.zBcKoK, {
+          }) : 2 === x.length ? b.intl.formatToPlainString(b.t.zBcKoA, {
             a: _(n, x[0]),
             b: _(n, x[1])
           }) : x.length > 2 ? b.intl.formatToPlainString(b.t["3AqFaG"], {
@@ -71,7 +71,7 @@ let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
           className: y.joinButton,
           children: (0, r.jsx)(a.Button, {
             variant: "overlay-primary",
-            text: f ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.TVBCKS),
+            text: f ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.TVBCKZ),
             onClick: O,
             disabled: !f
           })

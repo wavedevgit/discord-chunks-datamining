@@ -59,7 +59,7 @@ let f = () => {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/bold",
       className: Chunk908780.bannerHeader,
-      children: Chunk388032.intl.format(Chunk388032.t.oxhCOj, {
+      children: Chunk388032.intl.format(Chunk388032.t.oxhCOl, {
         userName: m
       })
     }), (0, Chunk951288.jsx)(x, {

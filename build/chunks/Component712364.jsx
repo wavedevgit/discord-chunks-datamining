@@ -103,12 +103,12 @@ class f extends(r = Chunk647438.PureComponent) {
             direction: "horizontal-reverse",
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
-              text: null != require ? require : Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
+              text: null != require ? require : Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
               type: "submit",
               disabled: d || 0 === g.length
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "secondary",
-              text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+              text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
               onClick: this.handleCancel,
               disabled: d
             })]
@@ -126,8 +126,8 @@ class f extends(r = Chunk647438.PureComponent) {
       this._input = e
     }), d(this, "getLabelText", () => {
       var e;
-      return null != (e = this.props.label) ? e : this.props.disallowBackupCodes ? c.intl.string(c.t.HZPBOT) : c.intl.string(c.t["+NQopK"])
-    }), d(this, "getSupportedCodeTypes", () => this.props.disallowBackupCodes ? c.intl.string(c.t.tARzgo) : c.intl.string(c.t.yO4lAA)), d(this, "getPlaceholder", () => {
+      return null != (e = this.props.label) ? e : this.props.disallowBackupCodes ? c.intl.string(c.t.HZPBOd) : c.intl.string(c.t["+NQopF"])
+    }), d(this, "getSupportedCodeTypes", () => this.props.disallowBackupCodes ? c.intl.string(c.t.tARzgo) : c.intl.string(c.t.yO4lAM)), d(this, "getPlaceholder", () => {
       var e;
       return this.props.forceNoPlaceholder ? null : null != (e = this.props.placeholder) ? e : this.getSupportedCodeTypes()
     }), d(this, "errorPresent", () => null != this.props.error && "" !== this.props.error || null != this.state.errorMessage && "" !== this.state.errorMessage), d(this, "handleRetry", () => {

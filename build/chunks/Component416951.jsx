@@ -32,25 +32,25 @@ let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: o,
     onSelect: m,
     onInteraction: C
-  } = e, N = (0, s.Z)(t), j = (0, d.ZP)(t, true, false), y = (0, Z.Z)({
+  } = e, N = (0, s.Z)(t), j = (0, d.ZP)(t, true, false), y = (0, O.Z)({
     userId: n.id,
     guildId: null
-  }), I = (0, v.Z)({
+  }), I = (0, h.Z)({
     user: n,
     context: o
-  }), x = (0, p.O)(t.id, u.Z.DM_CONDENSED_MENU), A = (0, p.Z)(n, x), P = (0, f.Z)(n), U = (0, O.Z)(n.id), T = (0, g.Z)({
+  }), x = (0, p.O)(t.id, u.Z.DM_CONDENSED_MENU), A = (0, p.Z)(n, x), P = (0, f.Z)(n), U = (0, Z.Z)(n.id), T = (0, g.Z)({
     user: n
   }), R = (0, _.Z)({
     user: n,
     location: u.Z.DM_CONDENSED_MENU
-  }), S = (0, h.Z)({
+  }), S = (0, v.Z)({
     user: n,
     location: u.Z.DM_CONDENSED_MENU
   }), D = (0, b.Z)(t.id, a), k = (0, c.l)(t), M = n.isNonUserBot(), w = t.isManaged();
   return (0, i.jsxs)(l.v2r, {
     navId: "dm-kebab-context",
     onClose: r.Zy,
-    "aria-label": E.intl.string(E.t.liqwPD),
+    "aria-label": E.intl.string(E.t.liqwPJ),
     onSelect: m,
     onInteraction: C,
     children: [(0, i.jsxs)(l.kSQ, {

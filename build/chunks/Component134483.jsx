@@ -183,7 +183,7 @@ function k(e) {
               children: ei ? (0, v.AV)({
                 quest: k,
                 taskDetails: ex
-              }) : q.intl.formatToPlainString(q.t.EQa7oq, {
+              }) : q.intl.formatToPlainString(q.t.EQa7os, {
                 questName: k.config.messages.questName
               })
             }), (0, r.jsx)(P.r, {
@@ -194,7 +194,7 @@ function k(e) {
               shouldShowDisclosure: (null == (m = k.userStatus) ? true : m.enrolledAt) == null,
               children: e => (0, r.jsx)(u.P3F, V(D({}, e), {
                 className: M.submenuWrapper,
-                "aria-label": q.intl.string(q.t.DEoVWV),
+                "aria-label": q.intl.string(q.t.DEoVWZ),
                 children: (0, r.jsx)(u.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -205,9 +205,9 @@ function k(e) {
           }), (0, r.jsx)(u.Text, {
             color: "header-secondary",
             variant: "text-xs/medium",
-            children: eg ? q.intl.formatToPlainString(q.t.APddvL, {
+            children: eg ? q.intl.formatToPlainString(q.t.APddvF, {
               expirationDate: ec
-            }) : q.intl.formatToPlainString(q.t["pX+fmp"], {
+            }) : q.intl.formatToPlainString(q.t["pX+fmn"], {
               expirationDate: eu
             })
           })]
@@ -244,13 +244,13 @@ function k(e) {
           variant: "primary",
           size: "sm",
           fullWidth: true,
-          text: q.intl.string(q.t.VN1Ajo),
+          text: q.intl.string(q.t.VN1Ajl),
           onClick: ep
         }), eg && (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
           fullWidth: true,
-          text: q.intl.string(q.t.cfY4PD),
+          text: q.intl.string(q.t.cfY4PE),
           onClick: em
         })]
       })]

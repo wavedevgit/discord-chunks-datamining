@@ -25,10 +25,10 @@ function f() {
     e = (0, l.A)(n), (0, a.xz)(e, t)
   }
   return (0, Chunk951288.jsx)(Chunk674343.Z, {
-    description: Chunk388032.intl.format(Chunk388032.t.BPbGq6, {
+    description: Chunk388032.intl.format(Chunk388032.t.BPbGq7, {
       helpCenterArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
     }),
-    label: Chunk388032.intl.string(Chunk388032.t.kbFsAA),
+    label: Chunk388032.intl.string(Chunk388032.t.kbFsAD),
     volume: module,
     onVolumeChange: require
   })

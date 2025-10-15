@@ -25,7 +25,7 @@ function l(e) {
     timestamp: t.timestamp,
     compact: i,
     contentClassName: s.messageContent,
-    children: o.intl.format(o.t.bYdG3d, {
+    children: o.intl.format(o.t.bYdG3f, {
       onClick: l
     })
   })
@@ -41,7 +41,7 @@ function c(e) {
     timestamp: t.timestamp,
     compact: i,
     contentClassName: s.messageContent,
-    children: o.intl.string(o.t.tu6tOT)
+    children: o.intl.string(o.t.tu6tOR)
   })
 }
 
@@ -61,7 +61,7 @@ function u(e) {
     timestamp: t.timestamp,
     compact: n,
     contentClassName: s.messageContent,
-    children: o.intl.string(o.t.vzfXqq)
+    children: o.intl.string(o.t.vzfXql)
   })
 }
 
@@ -81,6 +81,6 @@ function d(e) {
     timestamp: t.timestamp,
     compact: n,
     contentClassName: s.messageContent,
-    children: o.intl.string(o.t["/Tfvyc"])
+    children: o.intl.string(o.t["/TfvyR"])
   })
 }

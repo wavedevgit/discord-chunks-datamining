@@ -28,7 +28,7 @@ function h(e) {
   } = e, g = (0, u.s)(), b = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
     className: f.container,
-    "aria-label": m.intl.formatToPlainString(m.t.iobNIC, {
+    "aria-label": m.intl.formatToPlainString(m.t.iobNIB, {
       sectionTitle: r
     }),
     children: [(0, i.jsxs)("div", {

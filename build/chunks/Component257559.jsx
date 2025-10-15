@@ -1,7 +1,7 @@
 /** Chunk was on 93077 **/
 /** chunk id: 257559, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => D
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk970257 = require("./970257.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk477425 = require("./477425.js");
 
 function M(e, t, n) {
@@ -92,16 +92,16 @@ class T extends Chunk647438.PureComponent {
       m = s.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk630388.yE)(Chunk755721.flags, Chunk981631.iLy.CROSSPOSTED);
     Chunk332148 && (e = (0, Chunk951288.jsx)(Chunk576855.Z, {
       className: Chunk477425.spacingTop,
-      children: Chunk388032.intl.format(Chunk388032.t.IxY7Ex, {})
+      children: Chunk388032.intl.format(Chunk388032.t.IxY7E6, {})
     })), (0, Chunk970257.vc)(Chunk755721) && (t = (0, Chunk951288.jsx)("div", {
       className: Chunk477425.spacingTop,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.x0jzo6),
+        label: Chunk388032.intl.string(Chunk388032.t.x0jzo9),
         checked: require,
         onChange: this.handleToggleReport
       })
     }));
-    let x = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABQ"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS0),
+    let x = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
       j = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk477425.message,
@@ -131,7 +131,7 @@ class T extends Chunk647438.PureComponent {
                 onClick: Chunk933557.onClose
               }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
                 variant: "heading-xl/bold",
-                children: Chunk388032.intl.string(Chunk388032.t.MWMcg4)
+                children: Chunk388032.intl.string(Chunk388032.t.MWMcg7)
               })]
             })
           }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
@@ -144,12 +144,12 @@ class T extends Chunk647438.PureComponent {
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "critical-primary",
               size: "sm",
-              text: Chunk388032.intl.string(Chunk388032.t.oyYWHB),
+              text: Chunk388032.intl.string(Chunk388032.t.oyYWHE),
               type: "submit",
               onClick: this.handleDelete
             }), !module && (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
               checked: Chunk647438,
-              label: Chunk388032.intl.string(Chunk764295.default["8yIKen"]),
+              label: Chunk388032.intl.string(Chunk833540.default["8yIKem"]),
               onChange: e => this.handleToggleResolveFlag(e)
             })]
           })]
@@ -159,14 +159,14 @@ class T extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: s.guild_id,
       children: (0, Chunk951288.jsx)(Chunk793030.Modal, {
-        title: Chunk726521 ? Chunk388032.intl.string(Chunk388032.t.aIz1oa) : Chunk388032.intl.string(Chunk388032.t.MWMcg4),
+        title: Chunk726521 ? Chunk388032.intl.string(Chunk388032.t.aIz1oV) : Chunk388032.intl.string(Chunk388032.t.MWMcg7),
         subtitle: Chunk501517,
         actions: [{
-          text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+          text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
           onClick: Chunk933557.onClose,
           variant: "secondary"
         }, {
-          text: Chunk388032.intl.string(Chunk388032.t.oyYWHB),
+          text: Chunk388032.intl.string(Chunk388032.t.oyYWHE),
           onClick: this.handleDeleteMana,
           variant: "critical-primary"
         }],
@@ -217,18 +217,18 @@ class T extends Chunk647438.PureComponent {
     })
   }
 }
-let I = {
+let D = {
   confirmPin: function(e, t) {
     (0, c.h7j)(n => {
       let r, l = (0, g.F6)(e, v.default, j.Z);
-      return r = e.isPrivate() ? E.intl.string(E.t.hMRngI) : E.intl.formatToPlainString(E.t["3IRluL"], {
+      return r = e.isPrivate() ? E.intl.string(E.t.hMRngA) : E.intl.formatToPlainString(E.t["3IRluI"], {
         channelName: l
       }), (0, i.jsx)(p.Z.Provider, {
         value: e.guild_id,
         children: (0, i.jsxs)(c.ConfirmModal, S(P({
-          header: E.intl.string(E.t.bKMaZW),
-          confirmText: E.intl.string(E.t.rOQ5BQ),
-          cancelText: E.intl.string(E.t["ETE/oK"]),
+          header: E.intl.string(E.t.bKMaZX),
+          confirmText: E.intl.string(E.t.rOQ5BX),
+          cancelText: E.intl.string(E.t["ETE/oC"]),
           confirmButtonColor: o.zx.Colors.BRAND,
           onConfirm: () => d.Z.pinMessage(e, t.id)
         }, n), {
@@ -254,14 +254,14 @@ let I = {
       value: e.guild_id,
       children: (0, i.jsxs)(c.ConfirmModal, S(P({
         header: E.intl.string(E.t.CFF2vL),
-        confirmText: E.intl.string(E.t.lAU5jI),
-        cancelText: E.intl.string(E.t["ETE/oK"]),
+        confirmText: E.intl.string(E.t.lAU5jB),
+        cancelText: E.intl.string(E.t["ETE/oC"]),
         onConfirm: () => d.Z.unpinMessage(e, t.id)
       }, n), {
         children: [(0, i.jsx)(c.Text, {
           variant: "text-md/normal",
           className: N.spacing,
-          children: E.intl.string(E.t.NjEPp6)
+          children: E.intl.string(E.t.NjEPp7)
         }), (0, i.jsx)("div", {
           className: s()(N.message, N.spacing),
           children: (0, i.jsx)(f.Z, {
@@ -270,7 +270,7 @@ let I = {
             disableInteraction: true
           })
         }), (0, i.jsx)(u.Z, {
-          children: E.intl.format(E.t.oCVB3d, {})
+          children: E.intl.format(E.t.oCVB3Y, {})
         })]
       }))
     }))
@@ -287,16 +287,16 @@ let I = {
   },
   confirmEdit: function(e, t, n) {
     (0, c.h7j)(r => (0, i.jsx)(c.ConfirmModal, S(P({
-      header: E.intl.string(E.t.aIz1oa),
-      confirmText: E.intl.string(E.t["cY+Ooa"]),
-      cancelText: E.intl.string(E.t["ETE/oK"]),
+      header: E.intl.string(E.t.aIz1oV),
+      confirmText: E.intl.string(E.t["cY+Oob"]),
+      cancelText: E.intl.string(E.t["ETE/oC"]),
       confirmButtonColor: o.zx.Colors.BRAND,
       onConfirm: () => h.Z.editMessage(e, t, n)
     }, r), {
       children: (0, i.jsx)(c.Text, {
         variant: "text-md/normal",
         className: N.spacing,
-        children: E.intl.string(E.t.grBcMz)
+        children: E.intl.string(E.t.grBcM8)
       })
     })))
   }

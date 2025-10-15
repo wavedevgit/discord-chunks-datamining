@@ -47,11 +47,11 @@ function v(e) {
     }), (0, r.jsx)(a.zx, {
       onClick: e => E(e, t, n),
       className: x.marginTop20,
-      children: _.intl.string(_.t["a3Gl+f"])
+      children: _.intl.string(_.t["a3Gl+e"])
     })]
   }) : (0, r.jsx)(m.Z, {
-    text: _.intl.string(_.t["e/rZ2t"]),
-    buttonCta: _.intl.string(_.t.HAvYn5),
+    text: _.intl.string(_.t["e/rZ2n"]),
+    buttonCta: _.intl.string(_.t.HAvYn0),
     onClick: e => E(e, t, n)
   })
 }

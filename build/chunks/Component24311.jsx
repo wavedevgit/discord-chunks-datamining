@@ -34,11 +34,11 @@ function Z(e) {
         joinCallVideo: v
       }), h.dispatch(f.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
-    N = !s.ZP.disableCallUserConfirmationPrompt;
+    I = !s.ZP.disableCallUserConfirmationPrompt;
   return (0, l.jsx)(r.sNh, {
     id: null != p ? p : "call",
-    label: null != m ? m : b.intl.string(b.t.JJogjo),
-    action: N ? () => {
+    label: null != m ? m : b.intl.string(b.t.JJogjm),
+    action: I ? () => {
       (0, r.ZDy)(async () => {
         let {
           default: e

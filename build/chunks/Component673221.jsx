@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk415540 = require("./415540.js"),
   Chunk345729 = require("./345729.js"),
   Chunk483753 = require("./483753.js"),
-  Chunk490340 = require("./490340.js"),
+  Chunk751611 = require("./751611.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680765 = require("./680765.js");
 
@@ -125,7 +125,7 @@ function D(e) {
     fullWidth: C,
     closeOnSelect: N = true,
     shouldFocusWrap: w,
-    placeholder: D = O.intl.string(y.default["A+pfVV"]),
+    placeholder: D = O.intl.string(y.default["A+pfVR"]),
     label: M,
     name: j,
     form: k,
@@ -366,7 +366,7 @@ function x(e) {
     })
   }) : "multiple" === n ? (0, r.jsx)(f.QSK, {
     listRef: o,
-    label: O.intl.string(y.default.VMNfsb),
+    label: O.intl.string(y.default.VMNfsY),
     items: i,
     layout: "inline",
     onRemove: a

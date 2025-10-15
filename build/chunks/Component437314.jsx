@@ -31,13 +31,13 @@ let g = Object.freeze({
       height: 162,
       renderContent: e => (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsx)(s.OZU, {
-          note: d.intl.string(d.t.Y4vMY2)
+          note: d.intl.string(d.t.Y4vMY8)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.button,
           children: (0, i.jsx)(s.Button, {
             variant: "primary",
-            text: d.intl.string(d.t.w5uwoK),
+            text: d.intl.string(d.t.w5uwoI),
             onClick: e
           })
         })]
@@ -49,7 +49,7 @@ let g = Object.freeze({
       width: 421,
       height: 218,
       renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t.v7HbiY)
+        note: Chunk388032.intl.string(Chunk388032.t.v7HbiQ)
       })
     },
     SECTION_BLOCKED: {
@@ -58,7 +58,7 @@ let g = Object.freeze({
       width: 433,
       height: 232,
       renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t["9xdyWF"])
+        note: Chunk388032.intl.string(Chunk388032.t["9xdyWB"])
       })
     },
     SECTION_PENDING: {
@@ -72,7 +72,7 @@ let g = Object.freeze({
           note: d.intl.string(d.t["aCYQ+P"])
         }), null != e && (0, i.jsx)(s.Button, {
           variant: "secondary",
-          text: t ? d.intl.string(d.t.R40bU1) : d.intl.string(d.t.rXl8fn),
+          text: t ? d.intl.string(d.t.R40bU2) : d.intl.string(d.t.rXl8fj),
           onClick: e,
           size: "sm"
         })]
@@ -84,7 +84,7 @@ let g = Object.freeze({
       width: 415,
       height: 200,
       renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t["vgI/EB"])
+        note: Chunk388032.intl.string(Chunk388032.t["vgI/EF"])
       })
     },
     SECTION_NO_RESULTS: {
@@ -93,14 +93,14 @@ let g = Object.freeze({
       width: 421,
       height: 218,
       renderContent: () => (0, Chunk951288.jsx)(Chunk481060.OZU, {
-        note: Chunk388032.intl.string(Chunk388032.t["7sW4h4"])
+        note: Chunk388032.intl.string(Chunk388032.t["7sW4h1"])
       })
     }
   }),
   m = e => {
     let {
       theme: t
-    } = e, n = d.intl.string(d.t["oi+B4u"]);
+    } = e, n = d.intl.string(d.t["oi+B4p"]);
     return (0, i.jsx)(s.ubH, {
       theme: t,
       children: (0, i.jsx)(s.OZU, {

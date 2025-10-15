@@ -72,7 +72,7 @@ function _(e) {
     variant: n,
     size: c,
     icon: _,
-    text: l.intl.format(l.t.XWSHTU, {
+    text: l.intl.format(l.t.XWSHTb, {
       platform: t.name
     }),
     fullWidth: true

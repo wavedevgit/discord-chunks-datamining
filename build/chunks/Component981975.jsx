@@ -64,12 +64,12 @@ function T(e) {
     children: [(0, r.jsx)(u.Heading, {
       className: N.headerHeading,
       variant: "eyebrow",
-      children: y.intl.string(y.t.nMir29)
+      children: y.intl.string(y.t.nMir27)
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       className: N.headerNoConfigSubtitle,
-      children: y.intl.format(y.t.q5f7tL, {
+      children: y.intl.format(y.t.q5f7tK, {
         helpdeskArticleUrl: p.Z.getArticleURL(C.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(u.Button, {
@@ -147,30 +147,30 @@ function P(e) {
             className: N.headerTitleTextContainer,
             children: (0, r.jsx)(u.Heading, {
               variant: "eyebrow",
-              children: y.intl.string(y.t.nMir29)
+              children: y.intl.string(y.t.nMir27)
             })
           }), (0, r.jsx)(u.Avr, {
             variant: "critical",
             onClick: F,
             disabled: l,
-            text: y.intl.string(y.t.ntW1cX),
+            text: y.intl.string(y.t.ntW1cc),
             textVariant: "text-sm/semibold"
           })]
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: y.intl.format(y.t.q5f7tL, {
+          children: y.intl.format(y.t.q5f7tK, {
             helpdeskArticleUrl: p.Z.getArticleURL(C.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
         let a = S(i, m.O1.OR);
         return (0, r.jsx)(d.E, {
-          label: y.intl.string(y.t.Xs7PHR),
+          label: y.intl.string(y.t.Xs7PHX),
           options: [{
-            name: y.intl.string(y.t["W3iY5+"]),
+            name: y.intl.string(y.t.W3iY58),
             value: m.O1.OR
           }, {
-            name: y.intl.string(y.t.gHXS9P),
+            name: y.intl.string(y.t.gHXS9A),
             value: m.O1.AND
           }],
           onChange: e => l(i, e),
@@ -271,7 +271,7 @@ function P(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: y.intl.string(y.t["2aFeeX"])
+          children: y.intl.string(y.t["2aFeef"])
         })]
       }) : null, B]
     })

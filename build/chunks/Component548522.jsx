@@ -54,7 +54,7 @@ function f(e) {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.title,
-      children: m.intl.format(m.t["sm+75u"], {
+      children: m.intl.format(m.t["sm+75n"], {
         currentCount: f.length,
         maxCount: g.nx
       })
@@ -88,29 +88,29 @@ function h(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
-    text: m.intl.string(m.t.EOwiEh),
+    text: m.intl.string(m.t.EOwiEk),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.EOwiEh),
+        label: m.intl.string(m.t.EOwiEk),
         required: true
       })
     }
   }, {
-    text: m.intl.string(m.t.jqrNDg),
+    text: m.intl.string(m.t.jqrNDh),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.jqrNDg),
+        label: m.intl.string(m.t.jqrNDh),
         required: true
       })
     }
   }, {
-    text: m.intl.string(m.t.I5q8vr),
+    text: m.intl.string(m.t.I5q8vp),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.I5q8vr),
+        label: m.intl.string(m.t.I5q8vp),
         required: true
       })
     }
@@ -120,7 +120,7 @@ function h(e) {
       variant: "text-xs/bold",
       color: "text-muted",
       className: p.examplesHeader,
-      children: m.intl.string(m.t.ID04cH)
+      children: m.intl.string(m.t.ID04cA)
     }), (0, r.jsx)(c.j, {
       pills: n
     })]

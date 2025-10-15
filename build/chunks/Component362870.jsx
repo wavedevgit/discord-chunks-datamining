@@ -41,6 +41,6 @@ let d = function(e) {
     route: c.Z5c.QUEST_HOME_V2,
     selected: t,
     icon: a.qDn,
-    text: u.intl.string(u.t.JALI2N)
+    text: u.intl.string(u.t.JALI2K)
   }, n))
 }

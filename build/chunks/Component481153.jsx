@@ -44,10 +44,10 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: a,
     application: c,
     subscriptionPlan: m
-  } = e, p = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
+  } = e, p = null == l ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
     username: l.username
   }), f = a.name;
-  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
+  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
     skuName: a.name,
     intervalCount: m.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
@@ -61,7 +61,7 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: v.intl.string(v.t.mDFGFh)
+        children: v.intl.string(v.t.mDFGFj)
       }), (0, r.jsx)(u.Dx, {
         children: t
       })]

@@ -29,7 +29,7 @@ let h = e => {
     category: b
   } = e, y = i.useRef(null), {
     isHoveringOrFocusing: L
-  } = (0, c.Z)(y), S = !h && L, v = (0, C.ZP)(), w = (0, s.wj)(v), I = {
+  } = (0, c.Z)(y), S = !h && L, v = (0, C.ZP)(), I = (0, s.wj)(v), w = {
     type: o.Z.AVATAR_DECORATION,
     label: g,
     asset: n
@@ -41,9 +41,9 @@ let h = e => {
       onClick: () => {
         null == t || null == m || h || m(t)
       },
-      className: l()(w ? f.shopCardDark : f.shopCard, {
+      className: l()(I ? f.shopCardDark : f.shopCard, {
         [f.shopCardAnimation]: !h,
-        [w ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: S,
+        [I ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: S,
         [f.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
@@ -53,7 +53,7 @@ let h = e => {
           [f.shopCardClaimed]: h
         }),
         children: (0, r.jsx)(p.R, {
-          item: I,
+          item: w,
           user: a,
           isHighlighted: S,
           avatarSize: d.EFr.SIZE_120,
@@ -72,7 +72,7 @@ let h = e => {
           children: x
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: h ? _.intl.string(_.t["6cfuDg"]) : _.intl.string(_.t.QQsaCQ)
+          children: h ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
         })]
       })]
     })

@@ -53,13 +53,13 @@ function S(e) {
       recipientIds: [i.id],
       location: "frequent_friends_row"
     })
-  }, E = l ? s.YqE : a ? s.XcD : true, v = l ? I.intl.string(I.t.aI4VOD) : a ? I.intl.string(I.t.kABl29) : true;
+  }, E = l ? s.YqE : a ? s.XcD : true, v = l ? I.intl.string(I.t.aI4VOL) : a ? I.intl.string(I.t.kABl2x) : true;
   return (0, r.jsx)(s.P3F, {
     className: C.frequentFriendAvatarButton,
     onClick: O,
     onMouseEnter: b.onMouseEnter,
     onMouseLeave: b.onMouseLeave,
-    "aria-label": I.intl.formatToPlainString(I.t.M5FjCg, {
+    "aria-label": I.intl.formatToPlainString(I.t.M5FjCr, {
       username: i.username
     }),
     children: (0, r.jsx)(s.qEK, {
@@ -142,10 +142,10 @@ function T() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           className: Chunk944658.frequentFriendsTitle,
-          children: Chunk388032.intl.string(Chunk388032.t.QEh90N)
+          children: Chunk388032.intl.string(Chunk388032.t.QEh90H)
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
-          text: Chunk388032.intl.string(Chunk388032.t.tqCMcX),
+          text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
           children: e => {
             var t, n;
             return (0, r.jsx)(s.d3s, (t = function(e) {

@@ -300,11 +300,11 @@ function D() {
         size: Chunk755721.zx.Sizes.ICON,
         onClick: Chunk31336.Zw,
         children: (0, Chunk951288.jsx)("span", {
-          title: Chunk388032.intl.string(Chunk388032.t.VkKicX),
+          title: Chunk388032.intl.string(Chunk388032.t.VkKicb),
           children: (0, Chunk951288.jsx)(Chunk481060.XHJ, {
             size: "md",
             color: "currentColor",
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicX)
+            "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicb)
           })
         })
       }), (0, Chunk951288.jsx)("div", {

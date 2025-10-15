@@ -40,22 +40,22 @@ function m(t) {
     }, (0, p.UX)(n.items, k.currency, n.paymentSourceId), C, I), await m()
   }
   return (0, i.jsx)(l.Modal, {
-    "aria-label": y.intl.string(y.t["E9kB4+"]),
-    title: y.intl.string(y.t["E9kB4+"]),
-    subtitle: (0, d.Q0)(n.planId) ? y.intl.format(y.t.GMp54O, {
+    "aria-label": y.intl.string(y.t.E9kB45),
+    title: y.intl.string(y.t.E9kB45),
+    subtitle: (0, d.Q0)(n.planId) ? y.intl.format(y.t.GMp54C, {
       downgradedPlan: p.ZP.getDisplayName(a.planId),
       existingRate: f
-    }) : y.intl.format(y.t["vx/NZ2"], {
+    }) : y.intl.format(y.t["vx/NZ0"], {
       existingPlan: p.ZP.getDisplayName(n.planId),
       downgradedPlan: p.ZP.getDisplayName(a.planId),
       existingRate: f
     }),
     actions: [{
-      text: y.intl.string(y.t.oEAioK),
+      text: y.intl.string(y.t.oEAioF),
       onClick: m,
       variant: "secondary"
     }, {
-      text: y.intl.string(y.t.frE8KC),
+      text: y.intl.string(y.t.frE8KO),
       onClick: v,
       variant: "primary"
     }],

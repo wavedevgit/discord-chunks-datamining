@@ -19,22 +19,22 @@ var Chunk951288 = require("./951288.js"),
 function h() {
   return [{
     value: "quest_bar",
-    label: Chunk388032.intl.string(Chunk388032.t.rjVPdH)
+    label: Chunk388032.intl.string(Chunk388032.t.rjVPdM)
   }, {
     value: "share_embed",
-    label: Chunk388032.intl.string(Chunk388032.t["D/gSWV"])
+    label: Chunk388032.intl.string(Chunk388032.t["D/gSWS"])
   }, {
     value: "home_card",
-    label: Chunk388032.intl.string(Chunk388032.t["5wnpFx"])
+    label: Chunk388032.intl.string(Chunk388032.t["5wnpF3"])
   }, {
     value: "channel_call_header",
-    label: Chunk388032.intl.string(Chunk388032.t.gWinpa)
+    label: Chunk388032.intl.string(Chunk388032.t.gWinpQ)
   }, {
     value: "members_list",
-    label: Chunk388032.intl.string(Chunk388032.t.wpYimZ)
+    label: Chunk388032.intl.string(Chunk388032.t.wpYima)
   }, {
     value: "activity_panel",
-    label: Chunk388032.intl.string(Chunk388032.t.L2mlUV)
+    label: Chunk388032.intl.string(Chunk388032.t.L2mlUb)
   }]
 }
 let g = e => {

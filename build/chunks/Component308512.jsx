@@ -15,7 +15,7 @@ function c() {
   let e = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
   return (0, Chunk951288.jsx)(Chunk481060.S89, {
     id: "streamer-mode-toggle",
-    label: Chunk388032.intl.string(Chunk388032.t.p9ZAJS),
+    label: Chunk388032.intl.string(Chunk388032.t.p9ZAJZ),
     action: () => {
       Chunk223245.Z.setEnabled(!module)
     },

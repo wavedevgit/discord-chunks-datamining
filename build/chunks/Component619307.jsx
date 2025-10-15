@@ -322,7 +322,7 @@ function L(e) {
                 role: "button",
                 "aria-disabled": s,
                 onClick: eo,
-                "aria-label": E.intl.string(E.t.VkKicX),
+                "aria-label": E.intl.string(E.t.VkKicb),
                 children: (0, r.jsx)(p.Dio, {
                   size: "xs",
                   color: "currentColor",

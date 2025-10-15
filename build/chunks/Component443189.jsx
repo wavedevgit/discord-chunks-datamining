@@ -42,11 +42,11 @@ function h(e) {
         variant: "heading-xl/extrabold",
         color: "header-primary",
         className: d.header,
-        children: l.intl.string(l.t.fdR8HR)
+        children: l.intl.string(l.t.fdR8Hf)
       }), (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: l.intl.string(l.t.JXyNq6)
+        children: l.intl.string(l.t["JXyNq+"])
       })]
     }), (0, a.jsx)("div", {
       className: d.container,

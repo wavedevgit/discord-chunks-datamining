@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 296768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ let b = e => {
     children: (0, i.jsx)(u.P3F, {
       className: I.similarGameImageClickable,
       onClick: async () => {
-        r(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, i.jsx)(j.default, function(e) {
+        r(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v.default, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -57,17 +57,17 @@ let b = e => {
           source: g.m1.SimilarGames
         }, e)))), await new Promise(e => setTimeout(e, 10)), n()
       },
-      children: (0, i.jsx)(v.C, {
+      children: (0, i.jsx)(j.C, {
         game: t,
         application: l,
         className: I.similarGameImage,
-        size: v.Z.SMALL
+        size: j.Z.SMALL
       })
     })
   })
 };
 
-function E(e) {
+function N(e) {
   let {
     applicationId: t,
     onClose: n,
@@ -95,7 +95,7 @@ function E(e) {
       className: y.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: O.intl.string(O.t["6rLyQE"])
+      children: O.intl.string(O.t["6rLyQB"])
     }), (0, i.jsx)("div", {
       className: I.similarGames,
       style: {},

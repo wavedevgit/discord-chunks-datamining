@@ -93,12 +93,12 @@ function A(e) {
     onAcceptInvite: n
   } = e;
   return (null == t ? true : t.state) === j.r2o.BANNED ? (0, r.jsx)(c.u, {
-    text: I.intl.string(I.t["5AkWAQ"]),
-    buttonCta: I.intl.string(I.t["8osdkp"]),
+    text: I.intl.string(I.t["5AkWAd"]),
+    buttonCta: I.intl.string(I.t["8osdkn"]),
     onClick: n
   }) : (0, r.jsx)(c.u, {
-    text: I.intl.string(I.t["usP+MT"]),
-    buttonCta: I.intl.string(I.t["8osdkp"]),
+    text: I.intl.string(I.t["usP+Mb"]),
+    buttonCta: I.intl.string(I.t["8osdkn"]),
     onClick: n
   })
 }

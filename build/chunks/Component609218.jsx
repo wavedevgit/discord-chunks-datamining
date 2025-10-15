@@ -71,7 +71,7 @@ function j(e) {
     z = (0, y.N)(),
     q = i.useCallback(() => {
       var e;
-      return null != (e = (0, g.fr)(z, S.Si.TIER_2)) ? e : C.intl.string(C.t.pj0XBA)
+      return null != (e = (0, g.fr)(z, S.Si.TIER_2)) ? e : C.intl.string(C.t.pj0XBN)
     }, [z]),
     X = (0, b.ZP)({
       location: "PremiumUpsellPickerOverlay"

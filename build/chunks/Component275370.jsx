@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk880257 = require("./880257.js"),
   Chunk957656 = require("./957656.jsx"),
   Chunk130310 = require("./130310.jsx"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk986360 = require("./986360.js");
 let m = e => {
@@ -35,17 +35,17 @@ let m = e => {
   });
   return a()(!x, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(u.Z, {
     transitionState: o,
-    "aria-label": b.intl.string(p.default.rlNJwc),
+    "aria-label": b.intl.string(p.default.rlNJwZ),
     className: h.root,
     children: [g && (0, n.jsx)(s.M14, {
       type: "critical",
-      children: b.intl.string(p.default.pegSMz)
+      children: b.intl.string(p.default.pegSM5)
     }), (0, n.jsxs)(s.hzk, {
       "data-migration-pending": true,
       children: [(0, n.jsx)(u.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: b.intl.string(p.default.rlNJwc),
+        header: b.intl.string(p.default.rlNJwZ),
         icon: (0, n.jsx)(s.xPt, {
           size: "md",
           color: "currentColor",
@@ -58,7 +58,7 @@ let m = e => {
           className: h.disclaimer,
           variant: "text-xs/normal",
           color: "text-default",
-          children: b.intl.format(p.default.snlFqa, {
+          children: b.intl.format(p.default.snlFqR, {
             username: l.ZP.getName(r)
           })
         })]
@@ -75,14 +75,14 @@ let m = e => {
             children: [(0, n.jsx)(s.Button, {
               variant: "secondary",
               size: "sm",
-              text: b.intl.string(b.t["ETE/oK"]),
+              text: b.intl.string(b.t["ETE/oC"]),
               type: "button",
               disabled: w,
               onClick: m
             }), (0, n.jsx)(s.Button, {
               variant: "primary",
               size: "sm",
-              text: b.intl.string(p.default["wI/jo6"]),
+              text: b.intl.string(p.default["wI/jo3"]),
               type: "submit",
               disabled: w,
               loading: w

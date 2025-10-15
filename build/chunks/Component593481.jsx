@@ -75,7 +75,7 @@ class O extends(i = Chunk647438.PureComponent) {
     return "function" == typeof this.props.title ? null : (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: this.handleDismiss,
       className: Chunk866497.dismissButton,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.LnEgqa),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t.LnEgqX),
       children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
         size: "xs",
         color: "currentColor",
@@ -133,12 +133,12 @@ class O extends(i = Chunk647438.PureComponent) {
         children: [null != require ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "active",
           size: "sm",
-          text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.BddRzc),
+          text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.BddRzS),
           onClick: this.handleConfirmClick
         }) : null, null != i ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != module ? module : Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+          text: null != module ? module : Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
           onClick: this.handleCancelClick
         }) : null]
       })]

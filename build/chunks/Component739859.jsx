@@ -87,7 +87,7 @@ function y(e) {
       }), null != v && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         className: x.subscribedText,
-        children: m.intl.formatToPlainString(m.t["f/OGgI"], {
+        children: m.intl.formatToPlainString(m.t["f/OGgM"], {
           timeFrame: (0, p.q)(P.id, P.tenureReqNumMonths),
           date: v
         })
@@ -95,7 +95,7 @@ function y(e) {
         className: x.actionButtons,
         children: (0, r.jsx)(o.aML, {
           "data-migration-pending": true,
-          text: m.intl.string(m.t.hsvh0t),
+          text: m.intl.string(m.t.hsvh0i),
           children: e => {
             var t, n;
             return (0, r.jsx)(o.hU, (t = function(e) {
@@ -120,7 +120,7 @@ function y(e) {
               variant: "secondary",
               size: "sm",
               onClick: B,
-              "aria-label": m.intl.string(m.t.hsvh0t)
+              "aria-label": m.intl.string(m.t.hsvh0i)
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

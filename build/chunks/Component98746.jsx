@@ -1,7 +1,7 @@
 /** Chunk was on 43350 **/
 /** chunk id: 98746, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => O
 }), require("./388685.js"), require("./781311.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,122 +18,122 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk768716 = require("./768716.js");
 
 function x() {
   return [{
     value: 0,
-    label: Chunk388032.intl.string(Chunk388032.t["4obaMT"])
+    label: Chunk388032.intl.string(Chunk388032.t["4obaMS"])
   }, {
     value: +Chunk70956.Z.Seconds.HOUR,
-    label: Chunk388032.intl.string(Chunk388032.t.RKpitb)
+    label: Chunk388032.intl.string(Chunk388032.t.RKpitY)
   }, {
     value: 6 * Chunk70956.Z.Seconds.HOUR,
-    label: Chunk388032.intl.string(Chunk388032.t["8WfJZ2"])
+    label: Chunk388032.intl.string(Chunk388032.t["8WfJZ8"])
   }, {
     value: 12 * Chunk70956.Z.Seconds.HOUR,
     label: Chunk388032.intl.string(Chunk388032.t.p1up7u)
   }, {
     value: +Chunk70956.Z.Seconds.DAY,
-    label: Chunk388032.intl.string(Chunk388032.t.XuVkkJ)
+    label: Chunk388032.intl.string(Chunk388032.t.XuVkkD)
   }, {
     value: 3 * Chunk70956.Z.Seconds.DAY,
-    label: Chunk388032.intl.string(Chunk388032.t.gMcDS0)
+    label: Chunk388032.intl.string(Chunk388032.t["gMcDS+"])
   }, {
     value: 7 * Chunk70956.Z.Seconds.DAY,
-    label: Chunk388032.intl.string(Chunk388032.t.FA7IUl)
+    label: Chunk388032.intl.string(Chunk388032.t.FA7IUk)
   }]
 }
 let C = x()[1].value,
-  O = x()[0].value;
+  S = x()[0].value;
 
-function S(t) {
+function O(t) {
   let {
     guildId: e,
     user: n,
     location: i,
-    userIds: h,
-    onBanMultiple: S,
-    transitionState: R,
-    onClose: y,
+    userIds: p,
+    onBanMultiple: O,
+    transitionState: y,
+    onClose: k,
     canBulkBan: M = false,
-    modReportId: k
-  } = t, [E, Z] = r.useState(null != k ? O : C), [T, P] = r.useState(""), [_, A] = r.useState(null), {
-    isModReportClosed: K,
-    isModReport: w
+    modReportId: R
+  } = t, [E, Z] = r.useState(null != R ? S : C), [T, _] = r.useState(""), [P, A] = r.useState(null), {
+    isModReportClosed: D,
+    isModReport: K
   } = (0, o.cj)([v.Z], () => {
-    let t = v.Z.getChannel(k);
+    let t = v.Z.getChannel(R);
     return {
       isModReportClosed: null == t ? true : t.isArchivedThread(),
       isModReport: null == t ? true : t.isModeratorReportChannel()
     }
-  }), [D, F] = r.useState(false), [U, Y] = r.useState(false), I = (0, d.sE)(e, {
+  }), [w, F] = r.useState(false), [U, I] = r.useState(false), N = (0, d.sE)(e, {
     location: i,
     targetUserId: null == n ? true : n.id,
-    targets: h
-  }), N = r.useCallback(() => {
-    let t = null != _ ? _ : T;
-    if (null != S) {
-      if (!(null != h && (null == h ? true : h.size) > 0 && M) || D) return;
-      if ("" === T.trim() && !D) return void F(true);
-      S(e, [...h], E, t)
+    targets: p
+  }), Y = r.useCallback(() => {
+    let t = null != P ? P : T;
+    if (null != O) {
+      if (!(null != p && (null == p ? true : p.size) > 0 && M) || w) return;
+      if ("" === T.trim() && !w) return void F(true);
+      O(e, [...p], E, t)
     } else {
       if (null == n) return;
-      c.Z.banUser(e, null == n ? true : n.id, E, t, k).then(() => {
-        U && null != k && g.Z.resolveFlag(k)
+      c.Z.banUser(e, null == n ? true : n.id, E, t, R).then(() => {
+        U && null != R && g.Z.resolveFlag(R)
       })
     }
-    I(d.jQ.BAN), y()
-  }, [_, T, S, I, y, h, M, D, e, E, n, k, U]), X = r.useCallback(t => {
+    N(d.jQ.BAN), k()
+  }, [P, T, O, N, k, p, M, w, e, E, n, R, U]), X = r.useCallback(t => {
     Z(t)
-  }, []), q = r.useCallback(t => {
-    P(t), F(false), A(null)
+  }, []), H = r.useCallback(t => {
+    _(t), F(false), A(null)
   }, []), L = r.useCallback(t => {
-    A(t), D && F(false)
-  }, [D]), W = w && !K && null != k, B = [{
-    name: f.intl.string(f.t.tamLhY),
-    value: f.intl.string(f.t.tamLhY)
+    A(t), w && F(false)
+  }, [w]), W = K && !D && null != R, q = [{
+    name: f.intl.string(f.t.tamLhT),
+    value: f.intl.string(f.t.tamLhT)
   }, {
-    name: f.intl.string(f.t.UmxjMj),
-    value: f.intl.string(f.t.UmxjMj)
+    name: f.intl.string(f.t.UmxjMg),
+    value: f.intl.string(f.t.UmxjMg)
   }, {
-    name: f.intl.string(f.t.EXY1d3),
-    value: f.intl.string(f.t.EXY1d3)
+    name: f.intl.string(f.t.EXY1d8),
+    value: f.intl.string(f.t.EXY1d8)
   }, {
-    name: f.intl.string(f.t.BcZTKi),
+    name: f.intl.string(f.t.BcZTKu),
     value: "other"
-  }], H = (() => {
-    if (null != S && null != h) return f.intl.formatToPlainString(f.t.HVJexc, {
-      count: null == h ? true : h.size
+  }], B = (() => {
+    if (null != O && null != p) return f.intl.formatToPlainString(f.t.HVJexf, {
+      count: null == p ? true : p.size
     });
     if (null == n) return "";
-    let t = p.ZP.getName(e, null, n);
-    return f.intl.formatToPlainString(null != k ? f.t.WDR8XV : f.t.jeKpoq, {
+    let t = h.ZP.getName(e, null, n);
+    return f.intl.formatToPlainString(null != R ? f.t.WDR8Xd : f.t.jeKpok, {
       username: "@".concat(t)
     })
-  })(), J = null == k ? null : f.intl.string(f.t.pQjhIC);
+  })(), J = null == R ? null : f.intl.string(f.t.pQjhIK);
   return (0, l.jsx)(u.Modal, {
-    onClose: y,
-    transitionState: R,
-    title: H,
+    onClose: k,
+    transitionState: y,
+    title: B,
     subtitle: null != J ? J : true,
     actions: (() => {
       let t = [];
-      return w || t.push({
+      return K || t.push({
         variant: "secondary",
-        text: f.intl.string(f.t["ETE/oK"]),
-        onClick: y
+        text: f.intl.string(f.t["ETE/oC"]),
+        onClick: k
       }), t.push({
         variant: "critical-primary",
-        text: f.intl.string(f.t["5MBJ5O"]),
-        onClick: N
+        text: f.intl.string(f.t["5MBJ5M"]),
+        onClick: Y
       }), t
     })(),
     actionBarInput: W ? (0, l.jsx)(s.Checkbox, {
       checked: U,
-      onChange: t => Y(t),
-      label: f.intl.string(j.default["8yIKen"])
+      onChange: t => I(t),
+      label: f.intl.string(m.default["8yIKem"])
     }) : true,
     children: (0, l.jsxs)(s.Kqy, {
       direction: "vertical",
@@ -141,14 +141,14 @@ function S(t) {
       children: [(0, l.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: [D && (0, l.jsx)(s.M14, {
+        children: [w && (0, l.jsx)(s.M14, {
           type: "critical",
-          children: f.intl.string(f.t.IrYX19)
+          children: f.intl.string(f.t.IrYX1y)
         }), (0, l.jsx)(s.FXm, {
           required: true,
-          label: f.intl.string(null != k ? f.t["+KCLVl"] : f.t.w4Ivys),
+          label: f.intl.string(null != R ? f.t["+KCLVp"] : f.t.w4Ivys),
           value: T,
-          options: B.map(t => (function(t) {
+          options: q.map(t => (function(t) {
             for (var e = 1; e < arguments.length; e++) {
               var n = null != arguments[e] ? arguments[e] : {},
                 l = Object.keys(n);
@@ -166,21 +166,21 @@ function S(t) {
             }
             return t
           })({}, t)),
-          onChange: q
+          onChange: H
         }), (0, l.jsx)("div", {
-          className: a()(m.reasonFreeText, {
-            [m.hidden]: "other" !== T
+          className: a()(j.reasonFreeText, {
+            [j.hidden]: "other" !== T
           }),
           children: (0, l.jsx)(s.Kx8, {
             maxLength: b.GNZ,
             onChange: L,
-            value: null != _ ? _ : "",
+            value: null != P ? P : "",
             rows: 5,
             autoFocus: true
           })
         })]
       }), (0, l.jsx)(s.q4e, {
-        label: f.intl.string(null != k ? f.t.ERSM8P : f.t["8l3W09"]),
+        label: f.intl.string(null != R ? f.t.ERSM8H : f.t["8l3W0y"]),
         options: x(),
         value: E,
         onChange: X

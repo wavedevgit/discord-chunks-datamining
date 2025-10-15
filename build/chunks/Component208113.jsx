@@ -19,17 +19,17 @@ var Chunk951288 = require("./951288.js"),
 function p(e, t, n) {
   let r = [{
     value: d.iA.STANDARD,
-    label: f.intl.string(f.t.dqb2JS)
+    label: f.intl.string(f.t.dqb2JZ)
   }];
   return e && r.push({
     value: d.iA.LEGACY,
-    label: f.intl.string(f.t["TYfH+/"])
+    label: f.intl.string(f.t["TYfH+5"])
   }), t && r.push({
     value: d.iA.EXPERIMENTAL,
     label: f.intl.string(f.t.liQmtr)
   }), n && r.push({
     value: d.iA.AUTOMATIC,
-    label: f.intl.string(f.t.qNgtOz)
+    label: f.intl.string(f.t.qNgtO1)
   }), r
 }
 
@@ -48,13 +48,13 @@ function h() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
     children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-      label: Chunk388032.intl.string(Chunk388032.t.wVBHr6),
+      label: Chunk388032.intl.string(Chunk388032.t.wVBHr0),
       className: Chunk197571.marginBottom20,
       value: module,
       options: p(exports, require, h),
       onChange: e => {
         let t = () => o.Z.setAudioSubsystem(e);
-        (0, c.Z)(f.intl.string(f.t.uY7AcX), f.intl.string(f.t.gBqik5), t)
+        (0, c.Z)(f.intl.string(f.t.uY7AcQ), f.intl.string(f.t.gBqik6), t)
       }
     })
   })

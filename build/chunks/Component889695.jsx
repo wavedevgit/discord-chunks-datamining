@@ -122,7 +122,7 @@ function A(e) {
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-md/medium",
-    children: v.intl.string(v.t.MNSTbW)
+    children: v.intl.string(v.t.MNSTbY)
   })
 }
 

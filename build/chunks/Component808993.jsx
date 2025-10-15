@@ -21,15 +21,15 @@ function u(e) {
       src: n(26230),
       className: l()(c.marginBottom20, c.marginTop8)
     }), (0, r.jsx)(a.Dx, {
-      children: o.intl.string(o.t.ailkVF)
+      children: o.intl.string(o.t.ailkVG)
     }), (0, r.jsx)(a.DK, {
-      children: o.intl.format(o.t["4ZMVCA"], {
+      children: o.intl.format(o.t["4ZMVCI"], {
         email: t
       })
     }), (0, r.jsx)(s.Text, {
       className: l()(c.marginBottom8, c.marginTop20),
       variant: "text-md/normal",
-      children: o.intl.string(o.t["dpAn+/"])
+      children: o.intl.string(o.t["dpAn+8"])
     })]
   })
 }

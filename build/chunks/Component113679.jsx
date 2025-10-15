@@ -31,11 +31,11 @@ function m(e) {
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: u.intl.string(u.t.jDarm5)
+        children: u.intl.string(u.t.jDarmy)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: u.intl.string(u.t["/ee7yM"])
+        children: u.intl.string(u.t["/ee7yK"])
       })]
     }), (0, r.jsx)("div", {
       className: g.buttonContainer,

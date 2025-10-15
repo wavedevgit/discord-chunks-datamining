@@ -94,7 +94,7 @@ class w extends(r = Chunk647438.Component) {
       className: Chunk550125.actionButton,
       color: Chunk755721.zx.Colors.GREEN,
       size: Chunk755721.zx.Sizes.SMALL,
-      children: Chunk388032.intl.string(Chunk388032.t["W+NB9/"])
+      children: Chunk388032.intl.string(Chunk388032.t["W+NB90"])
     })
   }
   render() {

@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk857666 = require("./857666.jsx"),
   Chunk279475 = require("./279475.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk639560 = require("./639560.js");
 
@@ -26,40 +26,40 @@ function x(e) {
       powerups: j
     } = e,
     [C, I] = i.useState(false),
-    E = (0, c.Gv)(b, j),
-    w = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
+    w = (0, c.Gv)(b, j),
+    E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
     Z = (0, d.Z)(h, b);
   if (true === Z || j.length <= 0) return null;
-  let P = E.some(e => e.type !== f.A3.INACTIVE),
-    y = (0, p.d)(P),
-    T = E.reduce((e, t) => {
+  let P = w.some(e => e.type !== f.A3.INACTIVE),
+    T = (0, p.d)(P),
+    y = w.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== T ? _ = {
+  true !== y ? _ = {
     type: "expiring",
-    expiringAt: T
+    expiringAt: y
   } : P && (_ = {
     type: "active",
-    statusText: g.intl.string(m.default.FFLkm5)
+    statusText: g.intl.string(m.default.FFLkmx)
   });
-  let N = E.reduce((e, t) => {
+  let N = w.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === f.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    O = E.reduce((e, t) => {
+    O = w.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (x = null == (n = E[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
-    S = E.reduce((e, t) => {
+    }, null != (x = null == (n = w[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
+    S = w.reduce((e, t) => {
       var n;
       let {
         powerup: r
@@ -68,8 +68,8 @@ function x(e) {
     }, 0),
     A = P ? N : O,
     k = !P && S > A ? "+" : true,
-    R = !w && C ? Z.image.animatedUrl : Z.image.staticUrl,
-    L = null != Z.viewCta && "" !== Z.viewCta ? Z.viewCta : g.intl.string(m.default["27GkOj"]),
+    R = !E && C ? Z.image.animatedUrl : Z.image.staticUrl,
+    L = null != Z.viewCta && "" !== Z.viewCta ? Z.viewCta : g.intl.string(m.default["27GkOu"]),
     U = null != Z.viewCtaTooltip && "" !== Z.viewCtaTooltip ? Z.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
     label: Z.title,
@@ -84,7 +84,7 @@ function x(e) {
       className: v.image
     }), (0, r.jsx)(u.Q9, {
       title: Z.title,
-      textColor: y,
+      textColor: T,
       footer: (0, r.jsx)(u.uf, {
         status: _,
         cost: A,
@@ -92,7 +92,7 @@ function x(e) {
       }),
       children: (0, r.jsx)(a.Text, {
         className: v.description,
-        color: y,
+        color: T,
         variant: "text-sm/medium",
         children: Z.description
       })

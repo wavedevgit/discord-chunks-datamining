@@ -67,7 +67,7 @@ function R() {
   let M = true,
     j = true;
   return D && 1 === L.length && (L.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (x(Chunk526761.NB.GUILD), j = false) : L.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (x(Chunk526761.NB.USER_PROFILE), M = false)), (0, Chunk951288.jsxs)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
+    header: Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     children: [(0, Chunk951288.jsxs)(Chunk481060.njP, {
       className: Chunk455734.tabBar,
       type: "top",
@@ -80,9 +80,9 @@ function R() {
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])
       }, Chunk526761.NB.USER_PROFILE) : null, M ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         className: o()(Chunk455734.tabBarItem, Chunk455734.guildTabBarItem),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroa),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroX),
         id: Chunk526761.NB.GUILD,
-        children: Chunk388032.intl.string(Chunk388032.t.kPHroa)
+        children: Chunk388032.intl.string(Chunk388032.t.kPHroX)
       }, Chunk526761.NB.GUILD) : null]
     }), P === Chunk526761.NB.GUILD ? (0, Chunk951288.jsx)(Chunk851894.Z, {
       selectedGuild: Chunk120356

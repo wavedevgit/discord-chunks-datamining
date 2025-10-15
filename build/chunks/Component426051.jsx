@@ -53,7 +53,7 @@ function b(e) {
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: g.intl.string(g.t.vicfl5),
+        text: g.intl.string(g.t.vicfl6),
         onClick: e => {
           y(b.id), e.stopPropagation()
         },

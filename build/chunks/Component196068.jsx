@@ -50,12 +50,12 @@ let v = e => {
       size: "md",
       color: "currentColor",
       className: O.premiumIcon
-    }), I ? y.intl.string(y.t["5JMiOj"]) : y.intl.string(y.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
+    }), I ? y.intl.string(y.t["5JMiOo"]) : y.intl.string(y.t["Pzh+G2"]), (0, r.jsx)(s.NoS, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
         T(), null !== e && e(g.L.TAKE_ACTION)
       },
-      children: y.intl.string(y.t.jVcuVV)
+      children: y.intl.string(y.t.jVcuVY)
     })]
   });
   return (0, r.jsx)(m.O1, {

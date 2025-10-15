@@ -17,7 +17,7 @@ function o() {
   } = (0, Chunk882037.MD)();
   return module ? (0, Chunk951288.jsx)(Chunk853268.default, {
     value: exports,
-    subText: Chunk388032.intl.string(Chunk388032.t["0p3R09"]),
+    subText: Chunk388032.intl.string(Chunk388032.t["0p3R0+"]),
     onChange: Chunk882037.ZJ,
     marginTopStyle: Chunk197571.marginTop8,
     muted: true

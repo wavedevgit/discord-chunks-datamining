@@ -85,11 +85,11 @@ function L() {
     "aria-label": "Playground Settings",
     children: [(0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "appearance",
-      label: Chunk388032.intl.string(Chunk388032.t["iHH+k5"]),
+      label: Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
       children: module.filter(e => null != e)
     }), (0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "accessibility",
-      label: Chunk388032.intl.string(Chunk388032.t.G0neg4),
+      label: Chunk388032.intl.string(Chunk388032.t.G0neg7),
       children: exports.filter(e => null != e)
     }), (0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "experiments",

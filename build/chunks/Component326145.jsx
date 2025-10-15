@@ -64,16 +64,16 @@ function v(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: _.intl.string(_.t.CCmhpK)
+          children: _.intl.string(_.t.CCmhpF)
         }), (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: _.intl.string(_.t.gRAHcX)
+          children: _.intl.string(_.t.gRAHcZ)
         })]
       }), (0, r.jsx)(s.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: _.intl.string(_.t.VVFjAA),
+        text: _.intl.string(_.t.VVFjAC),
         onClick: I
       })]
     })]

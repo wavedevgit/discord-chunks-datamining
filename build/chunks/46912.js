@@ -8,8 +8,8 @@ var Chunk524437 = require("./524437.js"),
   Chunk82554 = require("./82554.js"),
   Chunk388032 = require("./388032.jsx");
 let o = {
-  getTitle: () => Chunk388032.intl.string(Chunk388032.t["Gtck/v"]),
-  getDisabledTitle: () => Chunk388032.intl.string(Chunk388032.t.E6UmXV),
+  getTitle: () => Chunk388032.intl.string(Chunk388032.t["Gtck/t"]),
+  getDisabledTitle: () => Chunk388032.intl.string(Chunk388032.t.E6UmXa),
   getDescription: () => Chunk388032.intl.string(Chunk388032.t.jcRSp6),
   eligibleReportSubtypes: [Chunk82554.i5.SUB_CSAM, Chunk82554.i5.SUB_LOLI, Chunk82554.i5.SUB_NCP, Chunk82554.i5.SUB_SEXUALLY_DEGRADING_CONTENT, Chunk82554.i5.SUB_UNSOLICITED_PORN],
   onApply: () => (0, Chunk656577.zj)(function() {

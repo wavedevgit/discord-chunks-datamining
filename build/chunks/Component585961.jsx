@@ -26,6 +26,6 @@ function c(e) {
       height: 16,
       width: 16,
       className: a.premiumUpsellBadge
-    }), l.intl.string(l.t["+7XY39"])]
+    }), l.intl.string(l.t["+7XY31"])]
   })
 }

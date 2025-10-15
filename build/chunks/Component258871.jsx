@@ -53,7 +53,7 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => Chunk388032.intl.string(Chunk388032.t.K50GHR),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.K50GHd),
     handler: (e, t) => (0, s.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
@@ -62,7 +62,7 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => Chunk388032.intl.string(Chunk388032.t.emRpdX),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.emRpdS),
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
@@ -78,7 +78,7 @@ let g = [{
     renderIcon: e => (0, r.jsx)(l.ejJ, {
       className: e
     }),
-    getName: () => Chunk388032.intl.string(Chunk388032.t.MJQOuL),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.MJQOuJ),
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i

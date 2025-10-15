@@ -15,7 +15,7 @@ function s(e) {
   return (0, r.jsx)(a.Text, {
     variant: "text-xs/medium",
     className: o.rewardPill,
-    children: i.intl.format(i.t.loyTio, {
+    children: i.intl.format(i.t.loyTil, {
       rewardName: (e, n) => (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         className: o.rewardName,

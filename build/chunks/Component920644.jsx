@@ -27,19 +27,19 @@ function p(t) {
   return (0, n.jsx)(r.Modal, {
     transitionState: i,
     onClose: g,
-    title: c.intl.string(c.t["NR/zrK"]),
-    subtitle: c.intl.format(c.t.ukclMz, {
-      underageMessage: null != e ? e : c.intl.string(c.t.WqEH4O),
+    title: c.intl.string(c.t["NR/zrG"]),
+    subtitle: c.intl.format(c.t.ukclM1, {
+      underageMessage: null != e ? e : c.intl.string(c.t.WqEH4D),
       days: 30
     }),
     actions: [{
-      text: c.intl.string(c.t.hvVgAQ),
+      text: c.intl.string(c.t.hvVgAZ),
       onClick: () => {
         window.open(o.Z.getArticleURL(u.BhN.AGE_GATE), "_blank")
       },
       variant: "secondary"
     }, {
-      text: c.intl.string(c.t.szzQ6O),
+      text: c.intl.string(c.t.szzQ6H),
       onClick: g
     }],
     trackingProps: {

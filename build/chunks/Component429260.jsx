@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => S,
+  ZP: () => E,
   eH: () => _,
   wY: () => P
 });
@@ -24,21 +24,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk970257 = require("./970257.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js");
+  Chunk833540 = require("./833540.js");
 
-function S(e) {
+function E(e) {
   let t = (0, i.e7)([O.Z], () => O.Z.getGuildId()),
     n = (0, p.Q_)(t);
   return (0, m.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
-    label: n ? v.intl.string(v.t.n5EBAA) : v.intl.string(v.t.GwbdGR),
+    label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
     icon: n ? a.gw7 : a.U65,
     color: "danger"
   }) : null
 }
 
-function E() {
+function S() {
   return (0, Chunk951288.jsx)(Chunk243778.ZP, {
     contentTypes: [Chunk704215.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
@@ -65,13 +65,13 @@ function P(e) {
     })
   }), n) ? (0, r.jsx)(a.sNh, {
     id: "report-to-mod",
-    label: t ? v.intl.string(j.default["8wsdnp"]) : v.intl.string(j.default["1D+vq6"]),
+    label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
     action: () => {
       (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
         dismissAction: h.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
-    icon: (0, r.jsx)(E, {}),
+    icon: (0, r.jsx)(S, {}),
     disabled: t
   }) : null
 }

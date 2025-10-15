@@ -66,7 +66,7 @@ function S(e) {
     rateLimited: true
   }, () => ({
     type: c.K.RATE_LIMIT,
-    message: d.intl.string(d.t.T15lqq)
+    message: d.intl.string(d.t.T15lqn)
   })).with({
     error: a.P.not(a.P.nullish)
   }, e => {
@@ -81,12 +81,12 @@ function S(e) {
     taken: false
   }, () => ({
     type: c.K.AVAILABLE,
-    message: d.intl.string(d.t.PgfBS0)
+    message: d.intl.string(d.t.PgfBSx)
   })).with({
     taken: true
   }, () => ({
     type: c.K.ERROR,
-    message: d.intl.string(d.t.mCrAUV)
+    message: d.intl.string(d.t.mCrAUb)
   })).with({
     error: a.P.nullish
   }, () => ({

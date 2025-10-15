@@ -167,7 +167,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           className: N.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: T.intl.format(T.t.EAYZAg, {
+          children: T.intl.format(T.t.EAYZAr, {
             questName: A.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
@@ -176,7 +176,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           style: {
             opacity: $ ? 1 : .75
           },
-          children: T.intl.format(T.t.kXVcV1, {
+          children: T.intl.format(T.t["kXVcV+"], {
             reward: Y.name,
             claimedDate: z
           })

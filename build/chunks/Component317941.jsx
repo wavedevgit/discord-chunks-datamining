@@ -48,11 +48,11 @@ class D extends Chunk647438.PureComponent {
   get copyButtonText() {
     switch (this.state.copyMode) {
       case Chunk481060.uA3.SUCCESS:
-        return Chunk388032.intl.string(Chunk388032.t.XVvPjY);
+        return Chunk388032.intl.string(Chunk388032.t.XVvPjU);
       case Chunk481060.uA3.ERROR:
-        return Chunk388032.intl.string(Chunk388032.t.i4GM3N);
+        return Chunk388032.intl.string(Chunk388032.t.i4GM3L);
       default:
-        return Chunk388032.intl.string(Chunk388032.t.OpuAlJ)
+        return Chunk388032.intl.string(Chunk388032.t.OpuAlK)
     }
   }
   handleRevoke(e) {
@@ -74,20 +74,20 @@ class D extends Chunk647438.PureComponent {
         text: this.copyButtonText,
         mode: require,
         supportsCopy: Chunk572004.wS,
-        hideMessage: module ? Chunk388032.intl.string(Chunk388032.t["0RLn4+"]) : null,
+        hideMessage: module ? Chunk388032.intl.string(Chunk388032.t["0RLn47"]) : null,
         onCopy: this.handleCopy,
         buttonColor: Chunk755721.Tt.BRAND,
         buttonLook: Chunk755721.iL.FILLED
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk669255.subTextRow,
         children: [null != exports.expiresAt ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-          children: [Chunk388032.intl.format(Chunk388032.t.ltVZcH, {
+          children: [Chunk388032.intl.format(Chunk388032.t.ltVZcJ, {
             hours: exports.expiresAt.diff(o()(), "h")
           }), " —\xa0"]
         }) : null, (0, Chunk951288.jsx)(Chunk481060.P3F, {
           tag: "a",
           onClick: () => this.handleRevoke(exports.code),
-          children: Chunk388032.intl.string(Chunk388032.t.v6Yaz8)
+          children: Chunk388032.intl.string(Chunk388032.t.v6Yazx)
         })]
       })]
     })
@@ -122,10 +122,10 @@ class L extends Chunk647438.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = Chunk647438 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6e) : Chunk647438 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiI : Chunk388032.t.bJW1EB, {
+    return e = Chunk647438 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6W) : Chunk647438 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiJ : Chunk388032.t.bJW1EA, {
       skuName: exports.name,
       intervalCount: require.intervalCount
-    }) : null == require ? exports.name : Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.rCJvqq : Chunk388032.t.Vd3Iu7, {
+    }) : null == require ? exports.name : Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.rCJvqo : Chunk388032.t.Vd3Iu8, {
       skuName: exports.name,
       intervalCount: require.intervalCount
     }), (0, Chunk951288.jsx)("div", {
@@ -144,7 +144,7 @@ class L extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.Q3Qgur),
+        text: Chunk388032.intl.string(Chunk388032.t.Q3Qguo),
         loading: this.state.isCreating,
         onClick: this.handleGenerateGiftCode
       })]
@@ -193,7 +193,7 @@ class L extends Chunk647438.PureComponent {
                 className: Chunk669255.headerText,
                 children: [this.renderTitle(), (0, Chunk951288.jsx)("div", {
                   className: Chunk669255.subTextHeader,
-                  children: Chunk388032.intl.format(Chunk388032.t.zMcvcH, {
+                  children: Chunk388032.intl.format(Chunk388032.t.zMcvcA, {
                     copies: module.length
                   })
                 })]

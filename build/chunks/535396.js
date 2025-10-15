@@ -61,17 +61,17 @@ let u = "1340102344645283891",
   b = () => ({
     [Chunk981631.oNc.VIDEO_BITRATE_ENHANCED]: {
       perkIcon: Chunk267642.Ro.STREAM,
-      description: Chunk388032.intl.string(Chunk388032.t.y4ft4O)
+      description: Chunk388032.intl.string(Chunk388032.t.y4ft4D)
     },
     [Chunk981631.oNc.AUDIO_BITRATE_128_KBPS]: {
       perkIcon: Chunk267642.Ro.AUDIO,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZE, {
         bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.bitrate / 1e3
       })
     },
     [Chunk981631.oNc.INVITE_SPLASH]: {
       perkIcon: Chunk267642.Ro.CUSTOMIZATION,
-      description: Chunk388032.intl.string(Chunk388032.t.Qwlpoq)
+      description: Chunk388032.intl.string(Chunk388032.t.Qwlpov)
     },
     [Chunk981631.oNc.ANIMATED_ICON]: {
       perkIcon: Chunk267642.Ro.ANIMATED,
@@ -79,42 +79,42 @@ let u = "1340102344645283891",
     },
     [Chunk981631.oNc.AUDIO_BITRATE_256_KBPS]: {
       perkIcon: Chunk267642.Ro.AUDIO,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZE, {
         bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.bitrate / 1e3
       })
     },
     [Chunk981631.oNc.ROLE_ICONS]: {
       perkIcon: Chunk267642.Ro.CUSTOM_ROLE_ICON,
-      description: Chunk388032.intl.string(Chunk388032.t["6PV6QU"])
+      description: Chunk388032.intl.string(Chunk388032.t["6PV6Qc"])
     },
     [Chunk981631.oNc.MAX_FILE_SIZE_50_MB]: {
       perkIcon: Chunk267642.Ro.UPLOAD,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
-        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8v)
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
+        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8j)
       })
     },
     [Chunk981631.oNc.BANNER]: {
       perkIcon: Chunk267642.Ro.CUSTOMIZATION,
-      description: Chunk388032.intl.string(Chunk388032.t["1a5rjo"])
+      description: Chunk388032.intl.string(Chunk388032.t["1a5rjl"])
     },
     [Chunk981631.oNc.ANIMATED_BANNER]: {
       perkIcon: Chunk267642.Ro.ANIMATED,
-      description: Chunk388032.intl.string(Chunk388032.t["1+Vmh4"])
+      description: Chunk388032.intl.string(Chunk388032.t["1+Vmh9"])
     },
     [Chunk981631.oNc.AUDIO_BITRATE_384_KBPS]: {
       perkIcon: Chunk267642.Ro.AUDIO,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZE, {
         bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.bitrate / 1e3
       })
     },
     [Chunk981631.oNc.VANITY_URL]: {
       perkIcon: Chunk267642.Ro.VANITY,
-      description: Chunk388032.intl.string(Chunk388032.t["5XZKy8"])
+      description: Chunk388032.intl.string(Chunk388032.t["5XZKy/"])
     },
     [Chunk981631.oNc.MAX_FILE_SIZE_100_MB]: {
       perkIcon: Chunk267642.Ro.UPLOAD,
-      description: Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
-        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8P)
+      description: Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
+        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8D)
       })
     }
   }),

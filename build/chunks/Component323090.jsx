@@ -53,7 +53,7 @@ function g(e) {
       guildId: g.guildId,
       scrollIntoView: I === x.Tb.ROLES
     }), (0, l.jsx)(f.Z, {
-      heading: j.intl.string(j.t["A//N4u"]),
+      heading: j.intl.string(j.t["A//N4k"]),
       children: (0, l.jsx)(p.Z, {
         userId: n.id,
         guildId: b,

@@ -72,10 +72,10 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: a,
       guildOwnerId: s
-    } = e, o = i.useRef(null), d = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([T.Z], () => {
+    } = e, o = i.useRef(null), d = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([P.Z], () => {
       var e;
-      return (null == p ? true : p.colorRoleId) != null ? null == (e = T.Z.getRole(t.guild_id, p.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getStatus() : P.Z.getStatus(a, t.guild_id)), x = (0, h.e7)([P.Z], () => P.Z.isMobileOnline(a)), C = (0, h.e7)([P.Z, N.Z], () => _ ? N.Z.getActivities() : P.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, h.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+      return (null == p ? true : p.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, p.colorRoleId)) ? true : e.name : true
+    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), _ = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, h.e7)([T.Z, N.Z], () => _ ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), x = (0, h.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, h.e7)([T.Z, N.Z], () => _ ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, h.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, F = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -156,7 +156,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
         }(e, ["onClick", "onMouseDown"]);
         return (0, r.jsx)(G.Z, z({
           ref: o,
-          onContextMenu: B,
+          onContextMenu: F,
           shouldAnimateStatus: W,
           user: b,
           currentUser: y,
@@ -175,7 +175,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           premiumSince: null == X ? null : new Date(X),
           onClickPremiumGuildIcon: Y,
           itemProps: D,
-          lostPermissionTooltipText: M ? true : F.intl.string(F.t["/QcoT0"]),
+          lostPermissionTooltipText: M ? true : B.intl.string(B.t["/QcoTz"]),
           isOwner: U,
           nameplate: q,
           onClick: e => {
@@ -206,7 +206,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })
     }) : (0, r.jsxs)(_.Z, {
       className: V.membersGroup,
-      "aria-label": F.intl.formatToPlainString(F.t.UaqbkZ, {
+      "aria-label": B.intl.formatToPlainString(B.t.Uaqbke, {
         title: n,
         count: i
       }),
@@ -224,20 +224,20 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e;
     return t.type === H.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: B.divider
+        className: F.divider
       }), (0, r.jsxs)(p.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
-        className: B.private,
+        className: F.private,
         children: [(0, r.jsx)(p.mBM, {
           size: "xxs",
           color: "currentColor"
-        }), "\xa0", F.intl.string(F.t.BTLTAg)]
+        }), "\xa0", B.intl.string(B.t.BTLTAs)]
       }), (0, r.jsx)(p.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: B.instructions,
-        children: F.intl.string(F.t.Hsd8hI)
+        className: F.instructions,
+        children: B.intl.string(B.t.Hsd8hC)
       })]
     }) : null
   });
@@ -318,7 +318,7 @@ function X(e) {
       navigator: g,
       children: (0, r.jsx)(p.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: a()(V.membersWrap, V.hiddenMembers, B.container),
+          className: a()(V.membersWrap, V.hiddenMembers, F.container),
           children: (0, r.jsx)(p.aVo, z({
             ref: _,
             className: V.members,
@@ -355,7 +355,7 @@ function X(e) {
             renderFooter: e => u[e.section] === f ? (0, r.jsx)(Q, {
               channel: t
             }, "footer") : null,
-            innerAriaLabel: F.intl.string(F.t["9Oq93t"]),
+            innerAriaLabel: B.intl.string(B.t["9Oq93m"]),
             innerTag: "ul",
             sections: u.map(e => e.userIds.length),
             fade: true
@@ -371,31 +371,31 @@ function J(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(V.membersWrap, V.hiddenMembers, V.members, B.emptyState),
+    className: a()(V.membersWrap, V.hiddenMembers, V.members, F.emptyState),
     children: [(0, r.jsx)(p.Text, {
-      className: B.emptyStateHeader,
+      className: F.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-normal",
-      children: F.intl.string(F.t["9Oq93t"])
+      children: B.intl.string(B.t["9Oq93m"])
     }), (0, r.jsxs)("div", {
-      className: B.emptyStateIconContainer,
+      className: F.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
-        className: B.emptyStateIcon,
+        className: F.emptyStateIcon,
         children: (0, r.jsx)(p.BFJ, {
           size: "lg",
           color: "currentColor"
         })
       }), (0, r.jsx)(A.Z, {
-        className: B.emptyStateStars
+        className: F.emptyStateStars
       })]
     }), (0, r.jsx)(p.Heading, {
       variant: "heading-md/semibold",
-      children: t.isForumPost() ? F.intl.string(F.t.p0UgNT) : F.intl.string(F.t["9/n5v7"])
+      children: t.isForumPost() ? B.intl.string(B.t.p0UgNQ) : B.intl.string(B.t["9/n5vz"])
     }), (0, r.jsx)(p.Text, {
-      className: B.emptyStateSubtext,
+      className: F.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: F.intl.string(F.t.emw8UF)
+      children: B.intl.string(B.t.emw8UP)
     })]
   })
 }

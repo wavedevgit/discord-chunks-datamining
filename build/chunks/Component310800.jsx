@@ -31,7 +31,7 @@ function b(e) {
   return (0, r.jsx)("div", {
     className: h.productListingsHeader,
     children: (0, r.jsx)(l.gNt, {
-      label: x ? f.intl.string(f.t.RwuStb) : f.intl.string(f.t.WKMcMT),
+      label: x ? f.intl.string(f.t.RwuStQ) : f.intl.string(f.t.WKMcMW),
       children: e => x ? (0, r.jsx)("ul", {
         className: h.productListings,
         id: e.controlId,
@@ -107,7 +107,7 @@ function x(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.zxk, {
-      text: f.intl.string(f.t.riG6DQ),
+      text: f.intl.string(f.t.riG6Da),
       icon: l.qJs,
       onClick: () => a(null),
       disabled: n

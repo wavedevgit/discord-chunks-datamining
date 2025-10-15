@@ -101,7 +101,7 @@ class R extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk719221.sectionHeader,
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk388032.t["50Auo6"])
+        children: Chunk388032.intl.string(Chunk388032.t["50Auo2"])
       }), (0, Chunk951288.jsx)(Chunk464179.ZP, A(T({}, module), {
         mode: Chunk464179.ZP.Modes.EDIT,
         layout: r,
@@ -122,7 +122,7 @@ class R extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk719221.sectionHeader,
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.Fo2YPz)
+        children: Chunk388032.intl.string(Chunk388032.t.Fo2YP7)
       }), (0, Chunk951288.jsx)(Chunk211667.Z, {
         expirationDate: require,
         onCardInfoChange: this.handleExpirationDateUpdate,
@@ -149,7 +149,7 @@ class R extends(r = Chunk647438.PureComponent) {
             className: Chunk719221.disabledTooltipWrapper,
             children: [require ? (0, Chunk951288.jsx)(Chunk481060.aML, {
               "data-migration-pending": true,
-              text: Chunk388032.intl.string(Chunk388032.t["v6/z29"]),
+              text: Chunk388032.intl.string(Chunk388032.t["v6/z28"]),
               children: e => (0, i.jsx)("div", T({
                 "aria-hidden": true,
                 className: v.disabledTooltipTarget
@@ -161,7 +161,7 @@ class R extends(r = Chunk647438.PureComponent) {
               onClick: this.handleDelete,
               variant: "critical-secondary",
               size: Chunk873546.tq ? "sm" : "md",
-              text: Chunk873546.tq ? Chunk388032.intl.string(Chunk388032.t.oyYWHB) : Chunk388032.intl.string(Chunk388032.t.yk5qfX)
+              text: Chunk873546.tq ? Chunk388032.intl.string(Chunk388032.t.oyYWHE) : Chunk388032.intl.string(Chunk388032.t.yk5qfb)
             })]
           })
         }), (0, Chunk951288.jsxs)(Chunk159691.hE2, {
@@ -171,14 +171,14 @@ class R extends(r = Chunk647438.PureComponent) {
             onClick: this.handleCancel,
             variant: "secondary",
             size: Chunk873546.tq ? "sm" : "md",
-            text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
+            text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"])
           }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
             loading: module,
             disabled: !r || exports || !Chunk647438,
             type: "submit",
             variant: "active",
             size: Chunk873546.tq ? "sm" : "md",
-            text: Chunk388032.intl.string(Chunk388032.t.R3BPHx)
+            text: Chunk388032.intl.string(Chunk388032.t["R3BPH+"])
           })]
         })]
       })
@@ -211,12 +211,12 @@ class R extends(r = Chunk647438.PureComponent) {
             showPaymentSourceIcon: true
           }), module.invalid ? (0, Chunk951288.jsx)("div", {
             className: Chunk719221.errorSubText,
-            children: Chunk388032.intl.string(Chunk388032.t["3R0U0d"])
+            children: Chunk388032.intl.string(Chunk388032.t["3R0U0b"])
           }) : null, (0, Chunk951288.jsx)("div", {
             className: Chunk719221.subText,
-            children: Chunk873546 ? Chunk388032.intl.format(Chunk388032.t.w9WkBg, {
+            children: Chunk873546 ? Chunk388032.intl.format(Chunk388032.t.w9WkBl, {
               paypalURL: C
-            }) : Chunk388032.intl.string(Chunk388032.t.VXndys)
+            }) : Chunk388032.intl.string(Chunk388032.t.VXndyr)
           })]
         }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, Chunk951288.jsx)("div", {
           className: Chunk719221.defaultSection,
@@ -224,7 +224,7 @@ class R extends(r = Chunk647438.PureComponent) {
             value: N,
             checked: Chunk120356,
             onChange: e => this.handleFieldChange(e, N),
-            label: Chunk388032.intl.string(Chunk388032.t.nag9Oj),
+            label: Chunk388032.intl.string(Chunk388032.t.nag9Og),
             labelType: "secondary"
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), this.renderActions()]

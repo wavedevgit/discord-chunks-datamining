@@ -73,14 +73,14 @@ function E(e) {
   }), j = (0, m.KS)({
     location: "SearchHeader"
   }), x = y || j, E = (0, _.I)(t), {
-    totalFilters: T
-  } = (0, b.p4)(E, t), P = i.useMemo(() => {
+    totalFilters: P
+  } = (0, b.p4)(E, t), T = i.useMemo(() => {
     if (t.type === O.aib.DMS) {
       var e, n;
       let t = null != (n = null == (e = (0, f.$G)(E).channel_id) ? true : e.length) ? n : 0;
-      return t > 0 ? v.intl.format(v.t.A2dqWF, {
+      return t > 0 ? v.intl.format(v.t.A2dqWG, {
         filterCount: t
-      }) : v.intl.string(v.t.tc619f)
+      }) : v.intl.string(v.t.tc619d)
     }
     return null
   }, [t.type, E]), N = i.useCallback(() => {
@@ -92,9 +92,9 @@ function E(e) {
         searchContext: t
       }))
     })
-  }, [t]), R = i.useMemo(() => T > 0 ? v.intl.format(v.t.uaR4sL, {
-    filterCount: T
-  }) : v.intl.string(v.t.UdhTtr), [T]), D = (0, g.u5)({
+  }, [t]), R = i.useMemo(() => P > 0 ? v.intl.format(v.t.uaR4sI, {
+    filterCount: P
+  }) : v.intl.string(v.t.UdhTtk), [P]), D = (0, g.u5)({
     location: "SearchHeader"
   }), L = t.type === O.aib.DMS || t.type === O.aib.CHANNEL, M = i.useMemo(() => x && D ? (0, r.jsxs)("div", {
     className: C.searchModeAndFiltersContainer,
@@ -142,27 +142,27 @@ function E(e) {
     children: [(0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
       id: O.QIO.NEWEST,
-      children: v.intl.string(v.t.rLjqbW)
+      children: v.intl.string(v.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
       id: O.QIO.OLDEST,
-      children: v.intl.string(v.t.a1BaUl)
+      children: v.intl.string(v.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
       id: O.QIO.MOST_RELEVANT,
-      children: v.intl.string(v.t.FtR97u)
+      children: v.intl.string(v.t.FtR97k)
     })]
   }), [R, N, x, u, D, L, s, t, l, p]);
   return (0, r.jsxs)("header", {
     className: a()(C.searchHeader, {
-      [C.searchHeaderWithSubtitle]: null != P
+      [C.searchHeaderWithSubtitle]: null != T
     }),
     children: [(0, r.jsx)("div", {
       className: C.totalResults,
       role: "status",
       children: (0, r.jsx)(Z, {
         totalResults: o,
-        subtitle: P,
+        subtitle: T,
         isIndexing: c,
         isSearching: u,
         documentsIndexed: h
@@ -179,7 +179,7 @@ function Z(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(P, {
+  return l ? (0, r.jsx)(T, {
     documentsIndexed: a
   }) : i ? (0, r.jsx)(N, {}) : (0, r.jsx)(R, {
     totalResults: t,
@@ -187,7 +187,7 @@ function Z(e) {
   })
 }
 
-function T() {
+function P() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk865239.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -198,13 +198,13 @@ function T() {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     documentsIndexed: t
   } = e;
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: v.intl.formatToPlainString(v.t["4Y3O+P"], {
+    text: v.intl.formatToPlainString(v.t["4Y3O+O"], {
       count: t
     }),
     children: (0, r.jsxs)("div", {
@@ -215,9 +215,9 @@ function P(e) {
         children: (0, r.jsx)(d.Anchor, {
           className: C.helpdeskLink,
           href: p.Z.getArticleURL(O.BhN.SEARCH_INDEXING),
-          children: v.intl.string(v.t["G3EA+/"])
+          children: v.intl.string(v.t["G3EA+4"])
         })
-      }), (0, r.jsx)(T, {})]
+      }), (0, r.jsx)(P, {})]
     })
   })
 }
@@ -227,8 +227,8 @@ function N() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk951288.jsx)(T, {})]
+      children: Chunk388032.intl.string(Chunk388032.t.uixzLf)
+    }), (0, Chunk951288.jsx)(P, {})]
   })
 }
 
@@ -239,7 +239,7 @@ function R(e) {
   } = e, l = i.useMemo(() => t.toLocaleString(), [t]), a = (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
     color: "header-primary",
-    children: v.intl.format(v.t.ZGVL3t, {
+    children: v.intl.format(v.t.ZGVL3g, {
       count: l
     })
   });
@@ -292,7 +292,7 @@ function w(e) {
     }
   }, [n, l, m]), _ = i.useMemo(() => a ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [a]), C = i.useMemo(() => ({
     align: "end"
-  }), []), [E, Z] = (0, u.US)(_), T = i.useCallback(e => {
+  }), []), [E, Z] = (0, u.US)(_), P = i.useCallback(e => {
     Z("user:explicit" === e ? x.L.USER_DISMISS : x.L.AUTO_DISMISS)
   }, [Z]);
   return (0, r.jsxs)(r.Fragment, {
@@ -310,20 +310,20 @@ function w(e) {
         return (0, r.jsx)(d.v2r, {
           navId: "search-settings-cog",
           onClose: t,
-          "aria-label": v.intl.string(v.t.fb59v7),
+          "aria-label": v.intl.string(v.t.fb59v0),
           onSelect: () => p(false),
           children: (0, r.jsxs)(d.kSQ, {
-            label: v.intl.string(v.t["/tMwrK"]),
+            label: v.intl.string(v.t["/tMwrA"]),
             children: [(0, r.jsx)(d.k5B, {
               id: "xdm-search-disabled",
               group: "xdm-search-items",
-              label: v.intl.string(v.t.jRkYAg),
+              label: v.intl.string(v.t.jRkYAh),
               checked: !m,
               action: () => b(false)
             }), (0, r.jsx)(d.k5B, {
               id: "xdm-search-enabled",
               group: "xdm-search-items",
-              label: v.intl.string(v.t["lWpJ/v"]),
+              label: v.intl.string(v.t["lWpJ/t"]),
               checked: m,
               action: () => b(true)
             })]
@@ -337,15 +337,15 @@ function w(e) {
         onClick: () => {
           p(e => !e)
         },
-        "aria-label": v.intl.string(v.t["3D5yo6"]),
+        "aria-label": v.intl.string(v.t["3D5yo/"]),
         size: "sm"
       }))
     }), (0, r.jsx)(o.J2, {
       targetElementRef: g,
       shouldShow: E === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER,
-      onRequestClose: T,
-      title: v.intl.string(v.t.qha2Zm),
-      body: v.intl.string(v.t.IQWEoa),
+      onRequestClose: P,
+      title: v.intl.string(v.t.qha2Zv),
+      body: v.intl.string(v.t.IQWEoV),
       caretConfig: C
     })]
   })
@@ -356,13 +356,13 @@ function A(e) {
     searchMode: t,
     onSearchModeChange: n
   } = e, l = i.useRef(null), [a, s] = i.useState(false), o = i.useMemo(() => [{
-    label: v.intl.string(v.t.CbaapK),
+    label: v.intl.string(v.t.CbaapP),
     value: O.QIO.NEWEST
   }, {
-    label: v.intl.string(v.t.OukXZm),
+    label: v.intl.string(v.t.OukXZj),
     value: O.QIO.OLDEST
   }, {
-    label: v.intl.string(v.t["q8gB5+"]),
+    label: v.intl.string(v.t.q8gB52),
     value: O.QIO.MOST_RELEVANT
   }], []);
   return (0, r.jsx)(d.yRy, {
@@ -379,7 +379,7 @@ function A(e) {
       return (0, r.jsx)(d.v2r, {
         navId: "search-result-sort-menu",
         onClose: i,
-        "aria-label": v.intl.string(v.t.utp2hY),
+        "aria-label": v.intl.string(v.t.utp2hS),
         onSelect: () => s(false),
         children: (0, r.jsx)(d.kSQ, {
           children: o.map(e => {
@@ -405,7 +405,7 @@ function A(e) {
       onClick: () => {
         s(e => !e)
       },
-      "aria-label": v.intl.string(v.t.XvNMNj),
+      "aria-label": v.intl.string(v.t.XvNMNk),
       size: "sm"
     }))
   })

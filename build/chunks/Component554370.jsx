@@ -58,11 +58,11 @@ let Q = !Chunk358085.isPlatformEmbedded && false,
   }) : null,
   X = null;
 
-function q(e) {
+function J(e) {
   e.preventDefault()
 }
 
-function J(e) {
+function q(e) {
   (0, c.jW)(e, async () => {
     let {
       default: e
@@ -121,7 +121,7 @@ let $ = Chunk647438.memo(function(e) {
         } = e;
         r === B.AeJ.PRIMARY && t === i && n()
       },
-      onContextMenu: J,
+      onContextMenu: q,
       children: r ? null : (0, i.jsx)(L.Z, {
         className: Y.closeContainer,
         children: (0, i.jsx)(A.Z, {
@@ -259,17 +259,17 @@ function eo(e) {
     if (C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), l) {
-      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", q, false), null != X) {
+      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", J, false), null != X) {
         let e = Date.now() - X;
         d.Z.track(B.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
         }), X = null
       }
       return () => {
-        n.removeEventListener("contextmenu", q, false)
+        n.removeEventListener("contextmenu", J, false)
       }
     }
-    n.removeEventListener("contextmenu", q, false), null == X && (X = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
+    n.removeEventListener("contextmenu", J, false), null == X && (X = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
   }, [l, n]), (0, i.jsx)(f.Gt, {
     value: A,
     children: Z || m ? null : (0, i.jsxs)("div", {

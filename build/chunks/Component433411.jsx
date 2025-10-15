@@ -60,14 +60,14 @@ function E(e) {
         className: o()({
           [g.buttonHighlighted]: b
         }),
-        children: m.intl.string(m.t.BVcYCw)
+        children: m.intl.string(m.t.BVcYCx)
       }), P && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: g.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: (0, u.ad)(t, n) ? m.intl.string(m.t.CHf9iI) : m.intl.string(m.t.OrokWl),
+          text: (0, u.ad)(t, n) ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.OrokWm),
           onClick: w
         })
       })]
@@ -95,7 +95,7 @@ let b = "PALUE000000001",
         },
         size: "sm",
         variant: "primary",
-        text: m.intl.string(m.t.a9F1Qk)
+        text: m.intl.string(m.t.a9F1Qu)
       })]
     })
   }

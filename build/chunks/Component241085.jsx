@@ -65,10 +65,10 @@ function P(e) {
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: i > 1 ? i === a ? N.intl.format(N.t.SAr319, {
+        children: i > 1 ? i === a ? N.intl.format(N.t.SAr31z, {
           minValues: i,
           maxSize: c
-        }) : N.intl.format(N.t["ZG+3Cg"], {
+        }) : N.intl.format(N.t["ZG+3Ck"], {
           minValues: i,
           maxValues: a,
           maxSize: c
@@ -85,7 +85,7 @@ function P(e) {
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
         color: "text-primary",
-        children: N.intl.string(N.t["8OJlsL"])
+        children: N.intl.string(N.t["8OJlsH"])
       })]
     })]
   })
@@ -104,7 +104,7 @@ function w() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.HYg2Hh)
+      children: Chunk388032.intl.string(Chunk388032.t.HYg2Hn)
     })]
   })
 }
@@ -126,12 +126,12 @@ function D(e) {
     }), (0, r.jsx)(u.Text, {
       variant: "text-".concat(a ? "md" : "xs", "/medium"),
       className: R.filename,
-      children: null != (t = n.filename) ? t : N.intl.string(N.t.ZMirp6)
+      children: null != (t = n.filename) ? t : N.intl.string(N.t.ZMirp0)
     }), (0, r.jsx)(E.ZP, {
       className: R.miniPopover,
       children: (0, r.jsx)(h.Z, {
         className: R.action,
-        tooltip: N.intl.string(N.t.N86XcH),
+        tooltip: N.intl.string(N.t.N86XcP),
         onClick: () => i(n.id),
         dangerous: true,
         children: (0, r.jsx)(u.XHJ, {
@@ -172,8 +172,8 @@ function L(e) {
     G = i.useCallback((e, t) => {
       if (0 === e.length) return;
       if (v.length + e.length > a) return (0, _.openUploadError)({
-        title: N.intl.string(N.t.wOr6hI),
-        help: N.intl.formatToPlainString(N.t.dy6viI, {
+        title: N.intl.string(N.t.wOr6hB),
+        help: N.intl.formatToPlainString(N.t.dy6viJ, {
           maxValues: a
         })
       });

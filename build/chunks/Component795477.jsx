@@ -13,12 +13,12 @@ let s = () => (0, Chunk951288.jsxs)("div", {
   children: [(0, Chunk951288.jsx)("img", {
     className: Chunk831901.errorImage,
     src: "https://cdn.discordapp.com/assets/content/ca0857da281051f734229e1994112aaa95b21d6f7fce7a1e509357d94c58a949.png",
-    alt: Chunk388032.intl.string(Chunk388032.t["p8+qtb"])
+    alt: Chunk388032.intl.string(Chunk388032.t["p8+qtU"])
   }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
     variant: "heading-xl/semibold",
-    children: Chunk388032.intl.string(Chunk388032.t["p8+qtb"])
+    children: Chunk388032.intl.string(Chunk388032.t["p8+qtU"])
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     variant: "text-md/medium",
-    children: Chunk388032.intl.string(Chunk388032.t.UEiyvr)
+    children: Chunk388032.intl.string(Chunk388032.t.UEiyvs)
   })]
 })

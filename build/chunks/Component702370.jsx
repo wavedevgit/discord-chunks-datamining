@@ -212,7 +212,7 @@ let eB = e => {
     return t === d.a.PREMIUM_TIER_2_3_DAY ? (0, r.jsx)(v.Text, {
       variant: "text-sm/normal",
       className: eR.learnMoreLink,
-      children: ek.intl.format(ek.t.Q1scdH, {
+      children: ek.intl.format(ek.t.Q1scdE, {
         helpdeskArticle: H.Z.getArticleURL(eO.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
     }) : null
@@ -236,11 +236,11 @@ let eB = e => {
       previewingVariantIndex: E
     } = b, w = (0, ex.N)(t, E), A = (0, eP.W)(t, x);
     s()(null != A, "Selected product should not be null");
-    let N = (0, X.L)(t),
+    let N = (0, Q.L)(t),
       {
         isPurchased: k,
         isPartiallyOwnedBundle: R
-      } = (0, X.L)(A),
+      } = (0, Q.L)(A),
       {
         isDisabled: L,
         disabledReason: U
@@ -258,7 +258,7 @@ let eB = e => {
       en = (null == ee ? true : ee.amount) === 0,
       {
         firstAvatarDecoration: er
-      } = (0, Q.Rj)(null != w ? w : A),
+      } = (0, X.Rj)(null != w ? w : A),
       ei = i.useMemo(() => (0, K.BH)(A, T), [A, T]),
       {
         handleUseNow: ed,
@@ -330,7 +330,7 @@ let eB = e => {
           }) : $ ? (0, r.jsx)(v.Text, {
             variant: "text-md/semibold",
             className: eR.priceTag,
-            children: ek.intl.string(ek.t.rt69oq)
+            children: ek.intl.string(ek.t.rt69oo)
           }) : e_ ? (0, r.jsx)(ef.a, {
             prices: ej,
             product: A,
@@ -375,7 +375,7 @@ let eB = e => {
           children: (() => {
             if ($ && !T && !en) {
               let e;
-              return e = ek.intl.string(ek.t.sEAnVF), (0, r.jsx)(O.Z, {
+              return e = ek.intl.string(ek.t.sEAnVH), (0, r.jsx)(O.Z, {
                 subscriptionTier: eA.Si.TIER_2,
                 fullWidth: true,
                 textOptions: {
@@ -398,12 +398,12 @@ let eB = e => {
               variant: "primary",
               onClick: ed,
               loading: em,
-              text: ek.intl.string(ek.t.MAS7uL),
+              text: ek.intl.string(ek.t.MAS7uK),
               fullWidth: true
             }) : $ ? (0, r.jsx)(v.Button, {
               loading: M,
-              loadingStartedLabel: ek.intl.string(ek.t["TYw+9v"]),
-              loadingFinishedLabel: ek.intl.string(ek.t.Pg1UPz),
+              loadingStartedLabel: ek.intl.string(ek.t["TYw+9s"]),
+              loadingFinishedLabel: ek.intl.string(ek.t.Pg1UP5),
               onClick: async () => {
                 await (0, G.fK)(A.skuId), c(), (0, ew.Z)({
                   product: A,
@@ -411,15 +411,15 @@ let eB = e => {
                   purchaseType: ey.o8.PREMIUM_PURCHASE
                 })
               },
-              text: ek.intl.string(ek.t.zp6caG),
+              text: ek.intl.string(ek.t.zp6caO),
               fullWidth: true
             }) : (0, r.jsx)(r.Fragment, {
               children: ej.map((e, t) => {
                 let n, i = 0 === t;
                 if (e.currency === eN.pK.DISCORD_ORB) {
-                  let t = L ? ek.intl.string(ek.t.cTdr39) : ek.intl.string(ek.t.zqh7ZG),
+                  let t = L ? ek.intl.string(ek.t.cTdr3x) : ek.intl.string(ek.t.zqh7ZM),
                     n = !eZ || L,
-                    l = ek.intl.formatToPlainString(ek.t["fNG/09"], {
+                    l = ek.intl.formatToPlainString(ek.t["fNG/05"], {
                       orbPrice: e.amount
                     }),
                     a = n ? "".concat(l, ", ").concat(t) : l;
@@ -452,7 +452,7 @@ let eB = e => {
                       },
                       disabled: n,
                       "aria-label": a,
-                      text: ek.intl.format(ek.t.kAgx5O, {
+                      text: ek.intl.format(ek.t.kAgx5L, {
                         orbPrice: e.amount,
                         orbIconHook: () => (0, r.jsx)(v.aQr, {
                           className: eR.orbIconAligned,
@@ -464,9 +464,9 @@ let eB = e => {
                     })
                   })
                 }
-                return n = (0, K.x6)(A) ? ek.intl.string(ek.t.V1AWw8) : A.type === u.Z.PROFILE_EFFECT ? ek.intl.string(ek.t.kAeDcH) : A.type === u.Z.NAMEPLATE ? ek.intl.string(ek.t.H3vhqa) : ek.intl.string(ek.t.AQ0Ven), eS ? n = ek.intl.formatToPlainString(ek.t["5U5RBw"], {
+                return n = (0, K.x6)(A) ? ek.intl.string(ek.t.V1AWw0) : A.type === u.Z.PROFILE_EFFECT ? ek.intl.string(ek.t.kAeDcK) : A.type === u.Z.NAMEPLATE ? ek.intl.string(ek.t.H3vhqU) : ek.intl.string(ek.t.AQ0Veg), eS ? n = ek.intl.formatToPlainString(ek.t["5U5RB5"], {
                   discountOfferAmount: eb
-                }) : e_ && (n = ek.intl.formatToPlainString(ek.t["cNSL/v"], {
+                }) : e_ && (n = ek.intl.formatToPlainString(ek.t["cNSL/j"], {
                   price: (0, W.T4)(e.amount, e.currency)
                 })), (0, r.jsxs)(v.ButtonGroup, {
                   wrap: false,
@@ -488,7 +488,7 @@ let eB = e => {
         }), (0, r.jsx)(v.Text, {
           className: a()(eR.disclaimer, !z && eR.disclaimerLight),
           variant: "text-xxs/normal",
-          children: $ && !k ? ek.intl.string(ek.t.nKdAlJ) : null
+          children: $ && !k ? ek.intl.string(ek.t.nKdAlO) : null
         })]
       })]
     })
@@ -520,7 +520,7 @@ let eB = e => {
     return (0, r.jsx)("div", {
       className: eR.nameplateRightPanePreviewContainer,
       role: "img",
-      "aria-label": ek.intl.string(ek.t.SZeUdX),
+      "aria-label": ek.intl.string(ek.t.SZeUdR),
       children: (0, r.jsxs)(v.Rny, {
         children: [(0, r.jsx)(eF, {
           user: i.mallow,
@@ -528,7 +528,7 @@ let eB = e => {
         }), (0, r.jsxs)(v.Text, {
           variant: "text-sm/semibold",
           className: eR.nameplateRightPanePreviewSectionGroup,
-          children: [ek.intl.string(ek.t["yzW/fX"]), " - 3"]
+          children: [ek.intl.string(ek.t["yzW/fZ"]), " - 3"]
         }), (0, r.jsx)(eF, {
           user: i.phibi,
           innerClassName: eR.userPink
@@ -549,7 +549,7 @@ let eB = e => {
         }), (0, r.jsxs)(v.Text, {
           variant: "text-sm/semibold",
           className: eR.nameplateRightPanePreviewSectionGroup,
-          children: [ek.intl.string(ek.t["NG43//"]), " - 12"]
+          children: [ek.intl.string(ek.t["NG43/6"]), " - 12"]
         }), (0, r.jsx)(eF, {
           user: i.boom,
           innerClassName: eR.userGreen
@@ -589,7 +589,7 @@ let eB = e => {
       firstAvatarDecoration: g,
       firstProfileEffect: _,
       firstNameplate: x
-    } = (0, Q.Rj)(t), P = null != _, I = () => (0, r.jsxs)(r.Fragment, {
+    } = (0, X.Rj)(t), P = null != _, I = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(A.Z, eZ(eL({}, m), {
         pendingAvatar: f,
         user: n,
@@ -649,7 +649,7 @@ let eB = e => {
       return (0, C.e5)(eZ(eL({}, (0, j.ZP)({
         author: t,
         channelId: "1337",
-        content: ek.intl.string(ek.t.d5YwKy)
+        content: ek.intl.string(ek.t.d5YwK5)
       })), {
         state: eO.yb.SENT,
         id: "0"
@@ -659,7 +659,7 @@ let eB = e => {
     });
     return (0, r.jsx)("div", {
       role: "img",
-      "aria-label": ek.intl.string(ek.t["TN+ZvL"]),
+      "aria-label": ek.intl.string(ek.t["TN+ZvB"]),
       children: (0, r.jsx)(v.Rny, {
         children: (0, r.jsxs)(v.Zbd, {
           className: eR.chatPreview,
@@ -785,7 +785,7 @@ let eB = e => {
                 skuId: E.skuId,
                 tab: g
               }), (0, r.jsx)(v.hU, {
-                "aria-label": ek.intl.string(ek.t.cpT0Cg),
+                "aria-label": ek.intl.string(ek.t.cpT0Cq),
                 onClick: n,
                 icon: v.Uz9,
                 variant: "overlay-secondary",
@@ -806,7 +806,7 @@ let eB = e => {
               children: [(0, r.jsx)(v.Text, {
                 variant: "text-sm/semibold",
                 className: eR.modalFooterText,
-                children: ek.intl.format(ek.t["78ph4e"], {
+                children: ek.intl.format(ek.t["78ph4b"], {
                   discountOfferAmount: U
                 })
               }), (null == Z ? true : Z.expiresAt) != null && (0, r.jsx)(er.R, {

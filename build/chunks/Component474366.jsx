@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk675654 = require("./675654.js"),
   Chunk710111 = require("./710111.js"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk65766 = require("./65766.js");
 
@@ -33,7 +33,7 @@ function T(e) {
     playSound: a,
     isPlaying: s,
     text: d
-  } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = C.intl.formatToPlainString(C.t.tuMUJy, {
+  } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = C.intl.formatToPlainString(C.t.tuMUJ2, {
     emojiName: null == n ? true : n.emojiName,
     soundName: null == n ? true : n.name
   }), h = i.useCallback(() => {
@@ -134,12 +134,12 @@ function S() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk65766.header,
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk764295.default.h6QNk5)
+        children: Chunk388032.intl.string(Chunk833540.default.h6QNky)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk65766.text,
         variant: "text-md/medium",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk764295.default["8N4c5+"], {
+        children: Chunk388032.intl.format(Chunk833540.default["8N4c58"], {
           airhornHook: t => (0, r.jsx)(w, {
             containerRef: e,
             text: t

@@ -180,7 +180,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
           children: (0, i.jsx)(p.nn4, {
             children: (0, i.jsx)(p.H, {
               id: L,
-              children: w.intl.string(w.t["2lnYtL"])
+              children: w.intl.string(w.t["2lnYtB"])
             })
           })
         }), (0, i.jsxs)("div", {
@@ -197,14 +197,14 @@ let k = Chunk647438.forwardRef(function(e, t) {
                 color: "var(--interactive-active)"
               }), (0, i.jsx)(p.Text, {
                 variant: "eyebrow",
-                children: w.intl.string(w.t.f3Cz29)
+                children: w.intl.string(w.t.f3Cz25)
               })]
             }), (0, i.jsxs)(p.P3F, {
               className: M.titleRight,
               onClick: V,
               children: [(0, i.jsx)(p.Text, {
                 variant: "eyebrow",
-                children: w.intl.string(w.t["K8+z4e"])
+                children: w.intl.string(w.t["K8+z4S"])
               }), (0, i.jsx)(p.Fbu, {
                 size: "custom",
                 width: 12,

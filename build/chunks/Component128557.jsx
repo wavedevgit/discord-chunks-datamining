@@ -122,7 +122,7 @@ function M(e) {
     handleMessage: V,
     handlePersonalize: F,
     handleDownload: G,
-    handleAddApplication: z
+    handleAddApplication: W
   } = function(e) {
     let t = r.useCallback(() => {
         h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
@@ -194,8 +194,8 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(D || k || U || B), {
-    titleAnimatedStyle: K,
+  }(l), z = !(D || k || U || B), {
+    titleAnimatedStyle: q,
     opacities: Y
   } = function(e) {
     let t = (0, d.Z)(() => new o.Z.Value(0)),
@@ -233,7 +233,7 @@ function M(e) {
       } : {},
       opacities: i
     }
-  }(W), [q, X] = r.useState([]), J = q.length > 0;
+  }(z), [K, X] = r.useState([]), J = K.length > 0;
   if (r.useEffect(() => {
       (async () => {
         try {
@@ -246,62 +246,62 @@ function M(e) {
   let Q = [];
   p || (M && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
-      header: Z.intl.string(Z.t.q9n0TU),
+      header: Z.intl.string(Z.t.q9n0Ta),
       completed: k,
       onClick: H
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
-      header: Z.intl.string(Z.t.c5kxPj),
+      header: Z.intl.string(Z.t.c5kxPh),
       completed: B,
       onClick: F
     })
   }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.qMX,
-      header: Z.intl.string(Z.t["SoP7+v"]),
+      header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
       onClick: V
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
-      header: Z.intl.string(Z.t.pGVNIy),
+      header: Z.intl.string(Z.t.pGVNI9),
       completed: D,
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: Y[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.Tg$,
-      header: Z.intl.string(Z.t.IhHDEB),
+      header: Z.intl.string(Z.t.IhHDEO),
       completed: J,
-      onClick: z
+      onClick: W
     })
   }, "addapp")));
-  let $ = v ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
-  p && ($ = Z.intl.string(Z.t["gwyU/P"]));
+  let $ = v ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
+  p && ($ = Z.intl.string(Z.t["gwyU/J"]));
   let ee = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(S.ZP, {
     channelId: t.id,
@@ -310,11 +310,11 @@ function M(e) {
       children: (0, i.jsxs)("div", {
         className: T.inner,
         children: [(0, i.jsxs)(o.Z.div, {
-          style: K,
+          style: q,
           children: [(0, i.jsx)(u.Heading, {
             className: T.titleName,
             variant: "heading-xxl/medium",
-            children: Z.intl.format(Z.t.rkHVKS, {
+            children: Z.intl.format(Z.t.rkHVKf, {
               guildName: l.name
             })
           }), (0, i.jsxs)(u.Text, {
@@ -324,7 +324,7 @@ function M(e) {
               [T.noChildren]: 0 === Q.length
             }),
             variant: "text-sm/normal",
-            children: [$, " ", Q.length > 0 ? Z.intl.format(Z.t.UOtD39, {
+            children: [$, " ", Q.length > 0 ? Z.intl.format(Z.t.UOtD32, {
               guideURL: ee
             }) : null]
           })]

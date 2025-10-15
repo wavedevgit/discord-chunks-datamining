@@ -32,12 +32,12 @@ let B = e => {
     displayProfile: E
   } = e, {
     analyticsLocations: S
-  } = (0, o.ZP)(c.Z.TIERED_TENURE_BADGES_MODAL), I = (0, u.Dt)(), L = Object.values(_.vK), R = (0, h.SI)(null == E ? true : E.userId), A = (0, h.Rw)(), D = g.default.getCurrentUser(), f = null != (t = (0, h.a1)(null != (a = null == E ? true : E.userId) ? a : null == D ? true : D.id)) ? t : new Date, k = (0, x.yd)(null == D ? true : D.premiumType, _.PremiumTypes.TIER_2), P = L.map(e => {
+  } = (0, o.ZP)(c.Z.TIERED_TENURE_BADGES_MODAL), I = (0, u.Dt)(), L = Object.values(_.vK), A = (0, T.SI)(null == E ? true : E.userId), D = (0, T.Rw)(), R = g.default.getCurrentUser(), f = null != (t = (0, T.a1)(null != (a = null == E ? true : E.userId) ? a : null == R ? true : R.id)) ? t : new Date, k = (0, x.yd)(null == R ? true : R.premiumType, _.PremiumTypes.TIER_2), P = L.map(e => {
     let {
       id: a,
       nameUnformatted: t,
       tenureReqNumMonths: d
-    } = e, l = j.intl.string(t), r = (0, T.J)(a), c = (0, v.q)(a, d), o = null == E, u = o && (null == A ? true : A.id) === a, m = !o && (null == R ? true : R.id) === a, g = u && (null == A ? true : A.status) === h.Vq.EARNED, x = u && (null == A ? true : A.status) === h.Vq.UPCOMING, b = m || g;
+    } = e, l = j.intl.string(t), r = (0, h.J)(a), c = (0, v.q)(a, d), o = null == E, u = o && (null == D ? true : D.id) === a, m = !o && (null == A ? true : A.id) === a, g = u && (null == D ? true : D.status) === T.Vq.EARNED, x = u && (null == D ? true : D.status) === T.Vq.UPCOMING, b = m || g;
     return (0, n.jsxs)("div", {
       className: i()(p.badge, {
         [p.earnedBadge]: b || x
@@ -59,15 +59,15 @@ let B = e => {
           variant: "text-xs/normal",
           color: "text-muted",
           className: p.earnedBadgeSubSince,
-          children: j.intl.formatToPlainString(j.t.Hu4jfn, {
+          children: j.intl.formatToPlainString(j.t.Hu4jfi, {
             date: f
           })
         }), x && (0, n.jsx)(s.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
           className: p.earnedBadgeSubSince,
-          children: j.intl.formatToPlainString(j.t.PPL1Ii, {
-            days: null == A ? true : A.daysLeft
+          children: j.intl.formatToPlainString(j.t.PPL1Il, {
+            days: null == D ? true : D.daysLeft
           })
         })]
       })]
@@ -95,29 +95,29 @@ let B = e => {
         children: [(0, n.jsx)(s.xvT, {
           variant: "display-md",
           className: p.header,
-          children: j.intl.string(j.t.Og62j4)
+          children: j.intl.string(j.t.Og62j7)
         }), (0, n.jsx)(s.xvT, {
           variant: "text-md/medium",
           className: p.subHeader,
-          children: j.intl.string(j.t["IdAP9/"])
+          children: j.intl.string(j.t.IdAP91)
         }), (0, n.jsx)("div", {
           className: p.badgeList,
           children: P
-        }), null != E && E.userId !== (null == D ? true : D.id) && (0, n.jsx)(r.gtL, {
+        }), null != E && E.userId !== (null == R ? true : R.id) && (0, n.jsx)(r.gtL, {
           "data-migration-pending": true,
           className: p.learnMoreButton,
           onClick: y,
-          children: j.intl.string(j.t.hvVgAQ)
+          children: j.intl.string(j.t.hvVgAZ)
         })]
       }) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.xvT, {
           variant: "display-md",
           className: p.header,
-          children: j.intl.string(j.t.RtGeFR)
+          children: j.intl.string(j.t.RtGeFS)
         }), (0, n.jsx)(s.xvT, {
           variant: "text-md/medium",
           className: p.subHeader,
-          children: j.intl.format(j.t.ffatnZ, {
+          children: j.intl.format(j.t.ffatnT, {
             onClick: y
           })
         }), (0, n.jsx)("div", {
@@ -129,7 +129,7 @@ let B = e => {
             page: N.ZY5.TIERED_TENURE_BADGES_MODAL
           },
           textOptions: {
-            subscribeText: j.intl.string(j.t.JST6jo)
+            subscribeText: j.intl.string(j.t.JST6jl)
           },
           subscriptionTier: _.Si.TIER_2,
           showGradient: true,

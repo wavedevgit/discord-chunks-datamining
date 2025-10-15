@@ -1,8 +1,8 @@
 /** Chunk was on 90688 **/
 /** chunk id: 198993, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => y,
-  c2: () => g,
+  ZP: () => g,
+  c2: () => y,
   cK: () => m
 });
 var n, o, a, Chunk951288 = require("./951288.js"),
@@ -80,7 +80,7 @@ f(b, "defaultProps", {
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-class g extends(a = Chunk647438.PureComponent) {
+class y extends(a = Chunk647438.PureComponent) {
   render() {
     let {
       overlaySize: e
@@ -98,9 +98,9 @@ class g extends(a = Chunk647438.PureComponent) {
     })
   }
 }
-f(g, "defaultProps", {
+f(y, "defaultProps", {
   size: 144,
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-let y = b
+let g = b

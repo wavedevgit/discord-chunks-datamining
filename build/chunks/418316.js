@@ -58,7 +58,7 @@ function g(e) {
         k = null == M ? true : M.name,
         G = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
         U = (0, l.Z2)(null != M ? M : true);
-      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXV, {
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G
       });
@@ -67,38 +67,38 @@ function g(e) {
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: h.t["9Dgf1N"],
-        withDefault: h.t.uIomX1
+        withApplication: h.t["9Dgf1L"],
+        withDefault: h.t.uIomXw
       });
     case d.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
       return f({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: h.t.nnC1q6,
-        withDefault: h.t["5Uzkdn"]
+        withApplication: h.t.nnC1q9,
+        withDefault: h.t["5Uzkdp"]
       });
     case d.DY.FRIEND_REQUEST_ACCEPTED:
       return f({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: h.t.jXlYiI,
-        withDefault: h.t.McYRBg
+        withApplication: h.t.jXlYiF,
+        withDefault: h.t.McYRBk
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
-      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["BB/0vr"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["BB/0vn"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS:
-      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["7cqOLC"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["7cqOLI"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.DY.GAME_FRIEND_REQUEST_ACCEPTED:
       if (null == w) return I.body;
-      return h.intl.format(h.t.Wi64vL, {
+      return h.intl.format(h.t.Wi64vN, {
         username: Z,
         applicationName: () => P(w)
       })

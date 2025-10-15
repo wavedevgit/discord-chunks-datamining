@@ -29,8 +29,8 @@ function a(e) {
     }
     return o
   }(e, ["type", "onConfirm"]);
-  let u = t === l.K.STREAM ? c.intl.string(c.t["/lFMWl"]) : c.intl.string(c.t.xzxhZW),
-    f = t === l.K.STREAM ? c.intl.string(c.t.xaOX7e) : c.intl.string(c.t.oU1p9P);
+  let u = t === c.K.STREAM ? l.intl.string(l.t["/lFMWr"]) : l.intl.string(l.t.xzxhZS),
+    f = t === c.K.STREAM ? l.intl.string(l.t.xaOX7d) : l.intl.string(l.t.oU1p9O);
   return (0, n.jsx)(i.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -49,10 +49,10 @@ function a(e) {
     }
     return e
   }({
-    confirmText: c.intl.string(c.t["cY+Ooa"]),
-    secondaryConfirmText: c.intl.string(c.t["JdIQ/f"]),
+    confirmText: l.intl.string(l.t["cY+Oob"]),
+    secondaryConfirmText: l.intl.string(l.t["JdIQ/Y"]),
     title: u,
-    cancelText: c.intl.string(c.t["ETE/oK"]),
+    cancelText: l.intl.string(l.t["ETE/oC"]),
     onConfirm: r,
     onConfirmSecondary: () => {
       o.ZP.updatedUnsyncedSettings({

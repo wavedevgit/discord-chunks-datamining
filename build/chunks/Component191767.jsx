@@ -334,7 +334,7 @@ function Z() {
 function M(e) {
   let t = r.useRef(null),
     n = {
-      paymentLabel: T.intl.string(T.t.ZURqX1),
+      paymentLabel: T.intl.string(T.t.ZURqX0),
       paymentRequestRef: t,
       onStripePaymentMethodReceived: () => {},
       onPaymentRequestFailure: () => {},
@@ -358,7 +358,7 @@ function L(e) {
   } = e;
   return (0, a.jsx)("div", {
     className: o()(N.root, N.focusLock, N.small, N.rootWithShadow, O.modal, r),
-    "aria-label": T.intl.string(T.t.eQ2bLi),
+    "aria-label": T.intl.string(T.t.eQ2bLp),
     children: (0, a.jsxs)("form", {
       className: O.form,
       onSubmit: e => {
@@ -379,7 +379,7 @@ function U(e) {
   return (0, a.jsx)(L, {
     footer: (0, a.jsx)(b.Z, {
       primaryCTA: b.Z.CTAType.CONTINUE,
-      primaryText: T.intl.string("applePay" === t ? T.t.WoXvJC : T.t.wnVVr6),
+      primaryText: T.intl.string("applePay" === t ? T.t.WoXvJL : T.t.wnVVr0),
       primaryDisabled: !i,
       onPrimary: () => void(null != n.current && n.current.show()),
       onBack: () => {}

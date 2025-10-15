@@ -121,7 +121,7 @@ function _(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          children: g.intl.format(g.t.EgKsZG, {
+          children: g.intl.format(g.t.EgKsZA, {
             memberCount: P
           })
         })

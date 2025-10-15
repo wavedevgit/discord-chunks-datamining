@@ -21,7 +21,7 @@ function l(e, t, n) {
       })
     } catch (e) {
       var a;
-      d(429 === (a = null == e ? true : e.status) ? i.intl.string(i.t.BPmZvr) : 404 === a || 400 === a ? i.intl.string(i.t.aWa1Pz) : i.intl.string(i.t.JNQRU1)), s(false), (null == e ? true : e.status) === 401 && n()
+      d(429 === (a = null == e ? true : e.status) ? i.intl.string(i.t.BPmZvj) : 404 === a || 400 === a ? i.intl.string(i.t.aWa1Pw) : i.intl.string(i.t.JNQRU4)), s(false), (null == e ? true : e.status) === 401 && n()
     }
   }, [e, t, n]);
   return a.useEffect(() => {

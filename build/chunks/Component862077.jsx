@@ -104,10 +104,10 @@ function T(e) {
                   guildId: n
                 }), (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/bold",
-                  children: b.intl.string(b.t.b33pLC)
+                  children: b.intl.string(b.t.b33pLD)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5u"], {
+                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
                     username: u.ZP.getName(n, T, t)
                   })
                 })]

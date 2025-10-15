@@ -34,7 +34,7 @@ let m = Chunk647438.memo(function(e) {
         })) : (y.pause(), h(false)))
       },
       className: f.playButton,
-      "aria-label": g ? d.intl.string(d.t.hHBkuL) : d.intl.string(d.t.RscU7O),
+      "aria-label": g ? d.intl.string(d.t.hHBkuG) : d.intl.string(d.t.RscU7I),
       children: g ? (0, a.jsx)(r.wNq, {
         size: "xs",
         color: "currentColor",

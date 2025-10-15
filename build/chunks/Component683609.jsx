@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 function s(t) {
   return null == t ? null : (0, r.jsx)(i.S89, {
     id: "on-overlay",
-    label: u.intl.string(u.t.rgZKg4),
+    label: u.intl.string(u.t.rgZKg2),
     action: function() {
       if (null == t) return;
       let e = (0, c.x9)(t.getFlags(), o.eHb.OVERLAY_DISABLED);

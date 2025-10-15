@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk788080 = require("./788080.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
-  Chunk398158 = require("./398158.js"),
+  Chunk847678 = require("./847678.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk179835 = require("./179835.js"),
   Chunk248319 = require("./248319.js");
@@ -62,13 +62,13 @@ let b = function(e) {
           fullWidth: true,
           variant: "secondary",
           icon: s.j9r,
-          text: f.intl.string(u.default.b7Oqdn),
+          text: f.intl.string(u.default.b7Oqdu),
           onClick: t
         }), (0, a.jsx)(s.Button, {
           fullWidth: true,
           variant: "secondary",
           icon: s.DuK,
-          text: f.intl.string(u.default["0vTx7u"]),
+          text: f.intl.string(u.default["0vTx7j"]),
           onClick: v
         })]
       })

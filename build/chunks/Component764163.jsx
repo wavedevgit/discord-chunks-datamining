@@ -145,19 +145,19 @@ function y(e) {
     }), f())
   }
   let N = [{
-    text: j.intl.string(j.t["ETE/oK"]),
+    text: j.intl.string(j.t["ETE/oC"]),
     variant: "secondary",
     onClick: f
   }];
   return null != m && N.push({
-    text: j.intl.string(j.t.oyYWHB),
+    text: j.intl.string(j.t.oyYWHE),
     variant: "critical-secondary",
     onClick: () => {
       m(), f()
     },
     icon: c.XHJ
   }), N.push({
-    text: null == l ? j.intl.string(j.t.OYkgVl) : j.intl.string(j.t.R3BPHx),
+    text: null == l ? j.intl.string(j.t.OYkgVk) : j.intl.string(j.t["R3BPH+"]),
     variant: "primary",
     onClick: y,
     disabled: !C
@@ -166,12 +166,12 @@ function y(e) {
     children: (0, r.jsx)(s.Modal, {
       transitionState: p,
       onClose: f,
-      title: j.intl.string(j.t["2qf9EB"]),
+      title: j.intl.string(j.t["2qf9EI"]),
       actions: N,
       children: (0, r.jsxs)(c.Kqy, {
         gap: "md",
         children: [a, (0, r.jsx)(c.Kx8, {
-          label: j.intl.string(j.t["1Ts7QE"]),
+          label: j.intl.string(j.t["1Ts7QP"]),
           placeholder: o,
           value: b,
           rows: 1,
@@ -179,7 +179,7 @@ function y(e) {
           onChange: x,
           "aria-labelledby": h
         }), (0, r.jsx)(s.gNt, {
-          label: j.intl.string(j.t.sMOuub),
+          label: j.intl.string(j.t.sMOuuS),
           children: (0, r.jsx)(O, {
             guildId: n,
             emojiData: v,
@@ -204,9 +204,9 @@ function N(e) {
     gap: 16,
     children: [(0, r.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
-      children: j.intl.string(j.t.xunxCg)
+      children: j.intl.string(j.t.xunxCo)
     }), (0, r.jsx)(b.Z, {
-      label: j.intl.string(j.t.GK18KC),
+      label: j.intl.string(j.t.GK18KJ),
       guildId: t,
       value: m,
       initialChannelId: null == l ? true : l.ref_id,
@@ -221,7 +221,7 @@ function N(e) {
     guildId: t,
     initialData: l,
     benefitTypeInput: h,
-    descriptionPlaceholder: j.intl.string(j.t.J8O1Li),
+    descriptionPlaceholder: j.intl.string(j.t.J8O1Lp),
     canSubmit: null != m,
     onSave: function(e) {
       a()(null != m, "Cannot submit null channel"), s(C(_({}, e), {
@@ -244,8 +244,8 @@ function E(e) {
     onDelete: d,
     guildId: g
   } = e, [m, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, u.Dt)(), h = (0, r.jsx)(c.Kx8, {
-    label: j.intl.string(j.t.NPOJra),
-    placeholder: j.intl.string(j.t.NPOJra),
+    label: j.intl.string(j.t.NPOJrU),
+    placeholder: j.intl.string(j.t.NPOJrU),
     value: m,
     rows: 1,
     onChange: function(e) {
@@ -257,7 +257,7 @@ function E(e) {
     guildId: g,
     initialData: n,
     benefitTypeInput: h,
-    descriptionPlaceholder: j.intl.string(j.t.ucP4Tk),
+    descriptionPlaceholder: j.intl.string(j.t.ucP4Tt),
     canSubmit: "" !== m,
     onSave: function(e) {
       a()("" !== m, "Cannot submit empty name"), l(C(_({}, e), {

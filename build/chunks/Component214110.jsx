@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk496675 = require("./496675.js"),
   Chunk594174 = require("./594174.js"),
   Chunk796263 = require("./796263.jsx"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e) {
@@ -26,7 +26,7 @@ function g(e) {
   if (!b || !_) return null;
   let v = "timeout-user-".concat(null == n ? true : n.id);
   return (0, i.jsx)(h.Z, {
-    text: y ? m.intl.string(f.default["6uMZbm"]) : m.intl.string(f.default["Sgg/uL"]),
+    text: y ? m.intl.string(f.default["6uMZbv"]) : m.intl.string(f.default["Sgg/uI"]),
     icon: l.T39,
     onClick: () => {
       null != n && (0, a.z)({

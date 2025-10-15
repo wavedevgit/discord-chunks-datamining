@@ -105,24 +105,24 @@ function P(e) {
       }))
     }, [u, l, O, b, c]);
   return null == m ? null : (0, n.jsx)(a.Modal, {
-    title: I.intl.string(I.t["+SZF6e"]),
-    subtitle: I.intl.string(I.t["0Ycgw8"]),
+    title: I.intl.string(I.t["+SZF6S"]),
+    subtitle: I.intl.string(I.t["0Ycgw5"]),
     transitionState: h,
     onClose: c,
     actionBarInput: (0, n.jsx)(r.Avr, {
       variant: "secondary",
       disabled: S,
       onClick: c,
-      text: I.intl.string(I.t["ETE/oK"])
+      text: I.intl.string(I.t["ETE/oC"])
     }),
     actions: [{
       variant: "secondary",
-      text: I.intl.string(I.t["8rKVHB"]),
+      text: I.intl.string(I.t["8rKVHL"]),
       disabled: S,
       onClick: P
     }, {
       variant: "primary",
-      text: I.intl.string(I.t.d611xM),
+      text: I.intl.string(I.t.d611xH),
       loading: S,
       onClick: M,
       autoFocus: true

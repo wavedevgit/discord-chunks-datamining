@@ -1,5 +1,5 @@
 /** Chunk was on 74023 **/
-/** chunk id: 431583, original params: e,a,t (module,exports,require) **/
+/** chunk id: 431583, original params: a,e,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => k
 }), require("./388685.js");
@@ -24,24 +24,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk394369 = require("./394369.js");
 let y = [{
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.NK5ySE),
+    getOs: () => Chunk388032.intl.string(Chunk388032.t.NK5ySJ),
     icon: Chunk394369.apple,
     url: () => (0, Chunk361207.w4)("osx", false),
     platformKey: 0
   }, {
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.OvKGEx),
+    getOs: () => Chunk388032.intl.string(Chunk388032.t.OvKGE6),
     icon: Chunk394369.windows,
     url: () => (0, Chunk361207.w4)("win", false),
     platformKey: 1
   }, {
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.dJB4PD),
+    getOs: () => Chunk388032.intl.string(Chunk388032.t.dJB4PN),
     icon: Chunk394369.linux,
     url: [{
       url: () => (0, Chunk361207.w4)("linux", false, "deb"),
-      getText: () => Chunk388032.intl.string(Chunk388032.t.Sodsur)
+      getText: () => Chunk388032.intl.string(Chunk388032.t.Sodsus)
     }, {
       url: () => (0, Chunk361207.w4)("linux", false, "tar.gz"),
-      getText: () => Chunk388032.intl.string(Chunk388032.t.G3U6IS)
+      getText: () => Chunk388032.intl.string(Chunk388032.t.G3U6IV)
     }],
     platformKey: 2
   }],
@@ -51,35 +51,35 @@ let y = [{
     url: () => Chunk981631.fzT.IOS,
     platformKey: 3
   }, {
-    getOs: () => Chunk388032.intl.string(Chunk388032.t.wuQpJC),
+    getOs: () => Chunk388032.intl.string(Chunk388032.t.wuQpJD),
     icon: Chunk394369.android,
     url: () => Chunk981631.fzT.ANDROID,
     platformKey: 4
   }],
-  C = e => {
+  C = a => {
     let {
-      url: a,
+      url: e,
       text: t,
       onClick: l
-    } = e, r = (0, p.nY)({
+    } = a, r = (0, p.nY)({
       grow: true
     });
     return (0, n.jsx)(m.Anchor, {
       useDefaultUnderlineStyles: false,
-      href: a,
+      href: e,
       className: s()(r, v.refreshDownloadButton),
       onClick: l,
       children: t
     })
   },
-  K = e => {
-    let a, {
+  K = a => {
+    let e, {
         platform: t,
         onClick: l,
         onMouseEnter: r,
         isActive: i,
         claimed: o
-      } = e,
+      } = a,
       {
         getOs: c,
         icon: d,
@@ -88,20 +88,20 @@ let y = [{
       } = t,
       f = c(),
       _ = s()(v.icon, d);
-    if (Array.isArray(u)) a = u.map((e, a) => {
-      let t = o ? e.url() : "";
+    if (Array.isArray(u)) e = u.map((a, e) => {
+      let t = o ? a.url() : "";
       return (0, n.jsx)(C, {
         url: t,
         onClick: () => l(f),
-        text: e.getText()
-      }, "".concat(t, "-").concat(a))
+        text: a.getText()
+      }, "".concat(t, "-").concat(e))
     });
     else {
-      let e = o ? u() : true;
-      a = (0, n.jsx)(C, {
-        url: e,
+      let a = o ? u() : true;
+      e = (0, n.jsx)(C, {
+        url: a,
         onClick: () => l(f),
-        text: N.intl.string(N.t["1WjMbG"])
+        text: N.intl.string(N.t["1WjMbC"])
       })
     }
     return (0, n.jsx)("li", {
@@ -125,23 +125,23 @@ let y = [{
             children: f
           }), (0, n.jsx)("div", {
             className: s()(v.downloadButtons, {
-              [v.list]: Array.isArray(a)
+              [v.list]: Array.isArray(e)
             }),
-            children: a
+            children: e
           })]
         })]
       })
     })
   };
 
-function k(e) {
+function k(a) {
   let {
-    source: a,
+    source: e,
     onClose: t,
     transitionState: r
-  } = e, s = (0, u.e7)([h.default], () => h.default.getCurrentUser()), i = (0, u.e7)([x.default], () => x.default.getFingerprint()), p = null == s || s.isClaimed(), [w, C] = l.useState(function() {
-    var e;
-    switch (null == (e = o().os) ? true : e.family) {
+  } = a, s = (0, u.e7)([h.default], () => h.default.getCurrentUser()), i = (0, u.e7)([x.default], () => x.default.getFingerprint()), p = null == s || s.isClaimed(), [w, C] = l.useState(function() {
+    var a;
+    switch (null == (a = o().os) ? true : a.family) {
       case "OS X":
         return 0;
       case "Windows":
@@ -162,28 +162,28 @@ function k(e) {
     }
   }());
 
-  function k(e) {
+  function k(a) {
     (null != d.getToken() || null != i) && g.default.track(j.rMx.DOWNLOAD_APP, {
-      platform: e,
+      platform: a,
       ptb: false,
       released: true,
       has_e_mail: p,
-      referring_location: a,
+      referring_location: e,
       qr_code: false
     }), p || (t(), f.j())
   }
 
-  function D(e) {
-    C(e)
+  function D(a) {
+    C(a)
   }
   l.useEffect(() => {
     g.default.track(j.rMx.OPEN_MODAL, {
       type: "Download App",
       source: {
-        location: a
+        location: e
       }
     })
-  }, [a]);
+  }, [e]);
   let O = (0, _.Dt)();
   return (0, n.jsxs)(m.Y0X, {
     className: v.downloadApps,
@@ -198,46 +198,46 @@ function k(e) {
       children: [(0, n.jsx)(m.nn4, {
         children: (0, n.jsx)(m.H, {
           id: O,
-          children: N.intl.string(N.t.BK8LKy)
+          children: N.intl.string(N.t["BK8LK+"])
         })
       }), !c.tq && (0, n.jsxs)("div", {
         className: v.platformsWrap,
         children: [(0, n.jsx)(m.Heading, {
           variant: "heading-lg/semibold",
           className: v.header,
-          children: N.intl.string(N.t["0KK0bG"])
+          children: N.intl.string(N.t["0KK0bP"])
         }), (0, n.jsx)("ul", {
           className: v.platforms,
-          children: y.map(e => (0, n.jsx)(K, {
-            isActive: w === e.platformKey,
-            platform: e,
+          children: y.map(a => (0, n.jsx)(K, {
+            isActive: w === a.platformKey,
+            platform: a,
             onClick: k,
             onMouseEnter: D,
             claimed: p
-          }, e.platformKey))
+          }, a.platformKey))
         })]
       }), (0, n.jsxs)("div", {
         className: v.platformsWrap,
         children: [!c.tq && (0, n.jsx)(m.Heading, {
           variant: "heading-lg/semibold",
           className: v.header,
-          children: N.intl.string(N.t.RdSNWV)
+          children: N.intl.string(N.t.RdSNWa)
         }), (0, n.jsx)("ul", {
           className: v.platforms,
-          children: A.map(e => (0, n.jsx)(K, {
-            isActive: w === e.platformKey,
-            platform: e,
+          children: A.map(a => (0, n.jsx)(K, {
+            isActive: w === a.platformKey,
+            platform: a,
             onClick: k,
             onMouseEnter: D,
             claimed: p
-          }, e.platformKey))
+          }, a.platformKey))
         })]
       })]
     }), (0, n.jsx)(m.mzw, {
       className: v.footer,
       children: (0, n.jsx)(m.Text, {
         variant: "text-sm/normal",
-        children: N.intl.format(N.t["RJS+1N"], {})
+        children: N.intl.format(N.t["RJS+1P"], {})
       })
     })]
   })

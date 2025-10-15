@@ -74,15 +74,15 @@ function G(e) {
     reviewWarningMessage: y,
     openInvoiceId: L,
     onSubscriptionConfirmation: S,
-    renderPurchaseConfirmation: w,
-    postSuccessGuild: I,
+    renderPurchaseConfirmation: I,
+    postSuccessGuild: w,
     followupSKUInfo: O,
     renderHeader: P,
     applicationId: E,
     guildId: T,
     referralTrialOfferId: k,
-    skuId: Z,
-    returnRef: B,
+    skuId: B,
+    returnRef: Z,
     skipConfirm: N = false,
     continueSessionToInitialStep: R
   } = e, {
@@ -99,7 +99,7 @@ function G(e) {
     giftRecipient: D
   } = (0, h.wD)(), z = H && (0, f.pO)(D) && F === x.h8.PLAN_SELECT;
   return (0, r.jsx)(v.Z, {
-    isConfirmationStep: F === x.h8.CONFIRM && null == R && null == w,
+    isConfirmationStep: F === x.h8.CONFIRM && null == R && null == I,
     children: (0, r.jsx)(j.PaymentModal, {
       analyticsLocations: G,
       analyticsLocation: t,
@@ -119,17 +119,17 @@ function G(e) {
       planGroup: A.Y1,
       openInvoiceId: L,
       onSubscriptionConfirmation: S,
-      renderPurchaseConfirmation: w,
-      postSuccessGuild: I,
+      renderPurchaseConfirmation: I,
+      postSuccessGuild: w,
       followupSKUInfo: O,
       renderHeader: P,
       applicationId: E,
       guildId: T,
       referralTrialOfferId: k,
-      skuId: Z,
+      skuId: B,
       shakeWhilePurchasing: true,
       isDynamicModal: z,
-      returnRef: B,
+      returnRef: Z,
       skipConfirm: N,
       continueSessionToInitialStep: R
     })
@@ -200,7 +200,7 @@ let H = function() {
       renderStep: e => (0, r.jsx)(P.x, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : Z.intl.string(Z.t["r+SebW"]),
+        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : B.intl.string(B.t["r+SebU"]),
         sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
       }
     }, {
@@ -208,7 +208,7 @@ let H = function() {
       renderStep: e => (0, r.jsx)(F, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : Z.intl.string(Z.t.Sb6wIy)
+        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : B.intl.string(B.t.Sb6wI1)
       }
     }, {
       key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -221,14 +221,14 @@ let H = function() {
       renderStep: e => (0, r.jsx)(S.l, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, O.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHh)
+        useBreadcrumbLabel: e => (0, O.Fv)(e) ? B.intl.string(B.t.UKbp1N) : B.intl.string(B.t.QBnNHq)
       }
     }, {
       key: Chunk409813.h8.CONFIRM,
-      renderStep: e => (0, r.jsx)(w.b, N({}, e))
+      renderStep: e => (0, r.jsx)(I.b, N({}, e))
     }, {
       key: Chunk409813.h8.SELECT_FREE_SKU,
-      renderStep: e => (0, r.jsx)(I.S, N({}, e)),
+      renderStep: e => (0, r.jsx)(w.S, N({}, e)),
       options: {
         bodyClassName: Chunk867983.selectFreeSku,
         isDynamicModal: true

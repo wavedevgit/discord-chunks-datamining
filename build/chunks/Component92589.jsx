@@ -73,7 +73,7 @@ let g = e => {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, C),
-            children: c.intl.string(c.t.O7ADgo)
+            children: c.intl.string(c.t.O7ADgv)
           })]
         }) : null]
       })

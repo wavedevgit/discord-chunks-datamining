@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 
 function u(e) {
   let {
-    giftMessage: t = l.intl.string(l.t.DrgnS0)
+    giftMessage: t = l.intl.string(l.t["DrgnS+"])
   } = e, {
     isGift: n,
     giftRecipient: u

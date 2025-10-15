@@ -14,8 +14,8 @@ var Chunk120356 = require("./120356.js"),
 
 function d(e) {
   let {
-    heading: t = s.intl.string(s.t.NGw8v7),
-    body: n = s.intl.string(s.t["1XZRY2"]),
+    heading: t = s.intl.string(s.t.NGw8v2),
+    body: n = s.intl.string(s.t["1XZRY4"]),
     className: a
   } = e;
   return (0, r.jsxs)("div", {
@@ -25,7 +25,7 @@ function d(e) {
       children: (0, r.jsx)("img", {
         className: o.image,
         src: c,
-        alt: s.intl.string(s.t["/UJaIy"])
+        alt: s.intl.string(s.t["/UJaI2"])
       })
     }), (0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",

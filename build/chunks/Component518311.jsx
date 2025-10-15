@@ -166,19 +166,19 @@ let ef = e => {
     } = e, i = eu(e, ["onConfirm", "channelIds"]);
     let l = (0, p.Wu)([B.Z], () => Array.from(n).map(B.Z.getChannel), [n]);
     return (0, r.jsxs)(f.ConfirmModal, ec(es({
-      header: er.intl.string(er.t.uFHxNT),
-      confirmText: er.intl.string(er.t.KCNNJi),
-      cancelText: er.intl.string(er.t["ETE/oK"]),
+      header: er.intl.string(er.t.uFHxNd),
+      confirmText: er.intl.string(er.t.KCNNJu),
+      cancelText: er.intl.string(er.t["ETE/oC"]),
       onConfirm: t,
       confirmButtonColor: h.zx.Colors.BRAND
     }, i), {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/normal",
-        children: er.intl.string(er.t.rIsSqK)
+        children: er.intl.string(er.t.rIsSqE)
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/normal",
         className: el.selectExistingFormHeader,
-        children: er.intl.string(er.t.cjE7wM)
+        children: er.intl.string(er.t.cjE7wH)
       }), (0, r.jsx)(f.Ttm, {
         className: el.confirmInviteScroller,
         children: l.filter(J.lm).sort((e, t) => {
@@ -272,7 +272,7 @@ class eg extends(i = Chunk647438.PureComponent) {
     let {
       channel: e,
       selectedUsers: t
-    } = this.props, n = this.getRemaining(), i = null != module && 0 === exports.size || require < 0, l = exports.size > 1 || null != module ? Chunk388032.intl.string(Chunk388032.t.ZGMNAw) : Chunk388032.intl.string(Chunk388032.t["6Urw1t"]);
+    } = this.props, n = this.getRemaining(), i = null != module && 0 === exports.size || require < 0, l = exports.size > 1 || null != module ? Chunk388032.intl.string(Chunk388032.t.ZGMNA8) : Chunk388032.intl.string(Chunk388032.t["6Urw1t"]);
     return (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "primary",
       fullWidth: true,
@@ -294,7 +294,7 @@ class eg extends(i = Chunk647438.PureComponent) {
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.OYkgVl),
+        text: Chunk388032.intl.string(Chunk388032.t.OYkgVk),
         disabled: i,
         onClick: this.handleInviteUsers
       })
@@ -303,9 +303,9 @@ class eg extends(i = Chunk647438.PureComponent) {
   renderSubtitle() {
     if (!this.props.hasFriends || this.isNotFriends() || this.isPartyFull()) return null;
     let e = this.getRemaining(),
-      t = module <= 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.xYr009, {
+      t = module <= 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.xYr004, {
         number: this.getMaxParticipants()
-      }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.HrSDPD, {
+      }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.HrSDPF, {
         number: module
       });
     return (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -328,7 +328,7 @@ class eg extends(i = Chunk647438.PureComponent) {
     if (!require || this.isNotFriends()) return null;
     let o = [];
     return Chunk120356.forEach(e => {
-      let t = K.default.getUser(e);
+      let t = q.default.getUser(e);
       null != t && o.push($.ZP.getName(t))
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk918324.searchBar,
@@ -336,7 +336,7 @@ class eg extends(i = Chunk647438.PureComponent) {
         ref: this.searchBarRef,
         className: Chunk918324.searchBarComponent,
         autoFocus: true,
-        placeholder: 0 === Chunk120356.size ? Chunk388032.intl.string(Chunk388032.t.Wxnb6u) : "",
+        placeholder: 0 === Chunk120356.size ? Chunk388032.intl.string(Chunk388032.t.Wxnb6q) : "",
         disabled: this.isPartyFull(),
         size: Chunk794433.Z.Sizes.MEDIUM,
         maxHeight: this.props.inBornThisNamedExperiment ? 110 : true,
@@ -361,7 +361,7 @@ class eg extends(i = Chunk647438.PureComponent) {
   }
   renderHeader() {
     let e = null != this.scrollerRef.current && this.state.separator,
-      t = this.isNotFriends() ? Chunk388032.intl.string(Chunk388032.t.Xjlbvr) : Chunk388032.intl.string(Chunk388032.t.CdNhGR);
+      t = this.isNotFriends() ? Chunk388032.intl.string(Chunk388032.t.Xjlbvs) : Chunk388032.intl.string(Chunk388032.t.CdNhGX);
     return (0, Chunk951288.jsxs)(Chunk481060.xBx, {
       direction: Chunk600164.Z.Direction.VERTICAL,
       align: Chunk600164.Z.Align.STRETCH,
@@ -394,7 +394,7 @@ class eg extends(i = Chunk647438.PureComponent) {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: Chunk388032.intl.format(Chunk388032.t["eg+R9/"], {
+          children: Chunk388032.intl.format(Chunk388032.t["eg+R9x"], {
             username: i
           })
         }), (0, Chunk951288.jsx)("div", {
@@ -403,7 +403,7 @@ class eg extends(i = Chunk647438.PureComponent) {
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
-            text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.xMH6vL) : Chunk388032.intl.string(Chunk388032.t["PMsq/f"]),
+            text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.xMH6vD) : Chunk388032.intl.string(Chunk388032.t["PMsq/b"]),
             disabled: Chunk647438,
             onClick: () => null != require ? this.handleAddFriend(require) : null
           })
@@ -413,16 +413,16 @@ class eg extends(i = Chunk647438.PureComponent) {
     return exports ? this.isPartyFull() ? (0, Chunk951288.jsxs)(eh, {
       className: Chunk918324.partyFull,
       children: [(0, Chunk951288.jsx)("div", {
-        children: Chunk388032.intl.string(Chunk388032.t.OtTQDw)
+        children: Chunk388032.intl.string(Chunk388032.t.OtTQDz)
       }), (0, Chunk951288.jsx)("div", {
-        children: Chunk388032.intl.format(Chunk388032.t.xYr009, {
+        children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
           number: this.getMaxParticipants()
         })
       })]
     }) : 0 === require.length ? (0, Chunk951288.jsx)(eh, {
       className: o()(Chunk918324.noResults, Chunk197571.marginBottom20),
       children: (0, Chunk951288.jsx)("div", {
-        children: Chunk388032.intl.string(Chunk388032.t.SV4DJy)
+        children: Chunk388032.intl.string(Chunk388032.t.SV4DJ1)
       })
     }) : (0, Chunk951288.jsx)(Chunk481060.aVo, {
       ref: this.scrollerRef,
@@ -445,14 +445,14 @@ class eg extends(i = Chunk647438.PureComponent) {
     }) : (0, Chunk951288.jsxs)(eh, {
       className: Chunk918324.noFriends,
       children: [(0, Chunk951288.jsx)("div", {
-        children: Chunk388032.intl.string(Chunk388032.t["7orY6O"])
+        children: Chunk388032.intl.string(Chunk388032.t["7orY6K"])
       }), (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: Chunk197571.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.w5uwoK),
+          text: Chunk388032.intl.string(Chunk388032.t.w5uwoI),
           autoFocus: true,
           fullWidth: true,
           onClick: this.handleAddFriendNavigation
@@ -475,16 +475,16 @@ class eg extends(i = Chunk647438.PureComponent) {
     let l = null != exports ? (0, Chunk366980.Z)(exports.code) : "",
       a = Chunk647438.length > 0;
     return (0, Chunk951288.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.t3O2BQ),
-      helperText: Chunk647438.length > 0 ? Chunk388032.intl.format(Chunk388032.t.ZVdJMz, {
+      label: Chunk388032.intl.string(Chunk388032.t.t3O2BR),
+      helperText: Chunk647438.length > 0 ? Chunk388032.intl.format(Chunk388032.t.ZVdJMy, {
         numHours: "".concat(24)
       }) : true,
       children: (0, Chunk951288.jsx)(Chunk481060.kO8, {
         supportsCopy: Chunk572004.wS,
-        placeholder: (0, Chunk366980.Z)(Chunk388032.intl.string(Chunk388032.t.lPVBqK)),
-        value: Chunk120356 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgY"]) : Chunk647438 : "",
+        placeholder: (0, Chunk366980.Z)(Chunk388032.intl.string(Chunk388032.t.lPVBqP)),
+        value: Chunk120356 ? require ? Chunk388032.intl.string(Chunk388032.t["6HzNgZ"]) : Chunk647438 : "",
         buttonColor: Chunk755721.zx.Colors.BRAND,
-        text: Chunk120356 ? i ? Chunk388032.intl.string(Chunk388032.t.q30c5u) : Chunk388032.intl.string(Chunk388032.t.OpuAlJ) : Chunk388032.intl.string(Chunk388032.t.qzxqUV),
+        text: Chunk120356 ? i ? Chunk388032.intl.string(Chunk388032.t.q30c5i) : Chunk388032.intl.string(Chunk388032.t.OpuAlK) : Chunk388032.intl.string(Chunk388032.t.qzxqUf),
         mode: i ? Chunk481060.uA3.SUCCESS : Chunk481060.uA3.DEFAULT,
         onCopy: () => {
           Chunk120356 ? this.handleCopyInvite(Chunk647438) : this.createInvite()
@@ -513,7 +513,7 @@ class eg extends(i = Chunk647438.PureComponent) {
         direction: "horizontal",
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
-          text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+          text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
           onClick: this.props.onClose
         }), this.renderCreateGroupButton()]
       })]
@@ -760,7 +760,7 @@ class eg extends(i = Chunk647438.PureComponent) {
         channel: t,
         invite: n
       } = this.props;
-      null != n && (0, q.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
+      null != n && (0, K.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
         copied: true
       }), this.copyTimeout = setTimeout(() => {
         this.setState({
@@ -794,7 +794,7 @@ function eb(e) {
     analyticsLocations: s
   } = (0, P.ZP)(E.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, A.a)(E.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, Z.pT)(Array.from(t), K.default, z.Z);
+  let c = (0, Z.pT)(Array.from(t), q.default, W.Z);
   return (0, r.jsxs)("div", {
     className: el.customizationContainer,
     children: [(0, r.jsx)(w.B, {
@@ -810,9 +810,9 @@ function eb(e) {
       className: el.channelNameLabel,
       variant: "text-sm/medium",
       color: "header-muted",
-      children: er.intl.string(er.t.YynaLC)
+      children: er.intl.string(er.t.YynaLK)
     }), (0, r.jsx)(f.oil, {
-      "aria-label": er.intl.string(er.t.YynaLC),
+      "aria-label": er.intl.string(er.t.YynaLK),
       name: "create-gdm-channel-name",
       placeholder: c,
       value: n,
@@ -825,12 +825,12 @@ function eC(e) {
   var {
     channel: t
   } = e, n = eu(e, ["channel"]);
-  let i = (0, p.cj)([V.Z, H.Z, W.Z], () => {
+  let i = (0, p.cj)([V.Z, H.Z, z.Z], () => {
     let e;
     return null != t && null != (e = H.Z.getInvite(t.id)) && e.isExpired() && (e = null), ec(es({}, V.Z.getState()), {
       invite: e,
-      hideDiscriminator: W.Z.hidePersonalInformation,
-      hideInstantInvites: W.Z.hideInstantInvites
+      hideDiscriminator: z.Z.hidePersonalInformation,
+      hideInstantInvites: z.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(eg, es({
@@ -893,7 +893,7 @@ function e_(e) {
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
-  }), E = (0, p.e7)([K.default], () => K.default.getUser(null == i ? true : i.getRecipientId()));
+  }), E = (0, p.e7)([q.default], () => q.default.getUser(null == i ? true : i.getRecipientId()));
   return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : j ? (0, r.jsx)(et.ZP.Icon, {
     ref: b,
     onClick: y,

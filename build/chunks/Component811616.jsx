@@ -60,26 +60,26 @@ function S(e) {
     Z = null != k && !A,
     F = (0, O.Ng)(),
     V = (0, b.Vi)(),
-    H = w.interval === v.rV.YEAR ? I.t.ECT4Aw : I.t.v9QeOD,
+    H = w.interval === v.rV.YEAR ? I.t.ECT4A5 : I.t.v9QeON,
     Y = () => V && !D && n === v.Xh.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(d.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
       className: T.planOptionDiscount,
-      children: I.intl.string(I.t.iQTfW1)
+      children: I.intl.string(I.t.iQTfWx)
     }) : null,
     W = () => null != k && !V && (0, r.jsx)(d.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
       className: T.planOptionDiscount,
-      children: I.intl.format(I.t.IAybsL, {
+      children: I.intl.format(I.t.IAybsG, {
         discount: (0, m.T3)(P, k / 100)
       })
     }),
     K = () => V ? Y() : w.interval === v.rV.YEAR && null != t || Z && !M ? w.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
       className: T.planOptionMonthsFree,
-      children: ["(", I.intl.string(I.t["122kWF"]), ")"]
+      children: ["(", I.intl.string(I.t["122kWB"]), ")"]
     }) : Z && !M ? W() : true : null,
     z = () => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ function S(e) {
         children: [(0, g.L7)(w.interval, D, B, w.intervalCount, x, (0, g.Rd)(w.id)), x && K()]
       }), x && (0, r.jsx)("div", {
         className: T.planOneTimeCost,
-        children: I.intl.format(I.t.ori2Ji, {
+        children: I.intl.format(I.t.ori2Jm, {
           currencyAmount: (0, E.T4)(G.amount, G.currency)
         })
       })]
@@ -102,7 +102,7 @@ function S(e) {
     X = () => {
       if (C && null != N && w.interval === v.rV.MONTH) {
         var e;
-        return I.intl.format(I.t["VeE/4O"], {
+        return I.intl.format(I.t["VeE/4E"], {
           numMonths: null != (e = null == F ? true : F.discount.user_usage_limit) ? e : v.rt,
           discountedPrice: (0, E.T4)(G.amount - N, G.currency),
           regularPrice: (0, E.T4)(G.amount, G.currency)
@@ -110,7 +110,7 @@ function S(e) {
       }
       return R ? I.intl.format(H, {
         price: (0, E.T4)(G.amount, G.currency)
-      }) : w.interval === v.rV.YEAR ? I.intl.formatToPlainString(I.t.rtLTJC, {
+      }) : w.interval === v.rV.YEAR ? I.intl.formatToPlainString(I.t.rtLTJP, {
         percent: k
       }) : null
     };
@@ -147,13 +147,13 @@ function S(e) {
           className: T.planOptionCheckbox
         }), z(), M && (0, r.jsxs)("span", {
           className: T.planOptionCurrentPlan,
-          children: ["(", I.intl.string(I.t.ymSxh4), ")"]
+          children: ["(", I.intl.string(I.t.ymSxhy), ")"]
         }), !x && K()]
       }), A ? (0, r.jsx)("div", {
         className: a()({
           [T.optionPriceSelected]: o
         }),
-        children: I.intl.format(I.t.hXcaLS, {
+        children: I.intl.format(I.t.hXcaLT, {
           price: q()
         })
       }) : (0, r.jsx)("div", {

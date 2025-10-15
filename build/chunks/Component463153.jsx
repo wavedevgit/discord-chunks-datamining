@@ -21,7 +21,7 @@ function l() {
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t.H217fX)
+      children: Chunk388032.intl.string(Chunk388032.t.H217fV)
     })]
   })
 }

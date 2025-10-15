@@ -136,7 +136,7 @@ function en(e) {
     {
       popouts: f,
       setPopout: m
-    } = (0, L.Z)(r.id, K.d$),
+    } = (0, L.Z)(r.id, q.d$),
     g = (0, T.ZP)(r),
     b = (0, w.iG)(r),
     C = (0, w.Gx)(r);
@@ -160,7 +160,7 @@ function en(e) {
       replyReference: l,
       author: g
     }),
-    childrenSystemMessage: (0, W.Z)(e),
+    childrenSystemMessage: (0, z.Z)(e),
     childrenMessageContent: null,
     "aria-labelledby": b,
     "aria-describedby": C,
@@ -195,7 +195,7 @@ function ei(e) {
     popouts: G,
     selected: J,
     setPopout: et
-  } = (0, L.Z)(o.id, K.d$), en = x.RS.useSetting(), ei = x.NA.useSetting(), er = (0, u.e7)([_.Z], () => _.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, L.Z)(o.id, q.d$), en = x.RS.useSetting(), ei = x.NA.useSetting(), er = (0, u.e7)([_.Z], () => _.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: eo,
     isHovered: es
@@ -226,8 +226,8 @@ function ei(e) {
     children: [(0, i.jsx)(d.P3F, {
       className: X.jump,
       onClick: e_,
-      "aria-label": q.intl.string(q.t.k5WiPT),
-      children: q.intl.string(q.t.k5WiPT)
+      "aria-label": K.intl.string(K.t.k5WiPf),
+      children: K.intl.string(K.t.k5WiPf)
     }), (0, i.jsx)(A.Z, $(Q({}, N), {
       id: l,
       compact: b,
@@ -244,7 +244,7 @@ function ei(e) {
       onKeyDown: em,
       onFocus: B,
       onBlur: H,
-      childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, z.Z)($(Q({}, e), {
+      childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, W.Z)($(Q({}, e), {
         setPopout: et,
         referencedUsernameProfile: G.referencedUsernameProfile,
         referencedAvatarProfile: G.referencedAvatarProfile,
@@ -270,7 +270,7 @@ function ei(e) {
         renderReactions: false,
         disableComponentInteractivity: true
       }),
-      childrenSystemMessage: (0, W.Z)(e),
+      childrenSystemMessage: (0, z.Z)(e),
       childrenMessageContent: ey,
       onMouseMove: ea,
       onMouseLeave: eo,
@@ -314,7 +314,7 @@ let er = Chunk647438.memo(function(e) {
       popouts: em,
       selected: eg,
       setPopout: eb
-    } = (0, L.Z)(v.id, K.d$),
+    } = (0, L.Z)(v.id, q.d$),
     eC = (0, M.qo)(v, J, eb),
     ey = (0, M.Go)(v, J),
     {
@@ -374,15 +374,15 @@ let er = Chunk647438.memo(function(e) {
       guildId: J.guild_id,
       roleId: eH.iconRoleId
     }),
-    ez = (0, w.iG)(v, el),
-    eW = (0, w.Gx)(v),
-    eK = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
+    eW = (0, w.iG)(v, el),
+    ez = (0, w.Gx)(v),
+    eq = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
     eY = (0, k.Z)({
       message: v,
       channel: J
     }),
-    eq = r.useRef(window),
-    eX = null != eK,
+    eK = r.useRef(window),
+    eX = null != eq,
     eJ = r.useMemo(() => Object.values(em).some(e => e), [em]);
   l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, ek) : (0, F.Z)(e, ek, eT);
   let eQ = v.id === el,
@@ -401,9 +401,9 @@ let er = Chunk647438.memo(function(e) {
           hovering: eO && !eT && !eJ
         }), (0, i.jsx)(A.Z, $(Q({}, eu), {
           "aria-setsize": false,
-          "aria-roledescription": q.intl.string(q.t.BAB0yM),
-          "aria-labelledby": ez,
-          "aria-describedby": eW,
+          "aria-roledescription": K.intl.string(K.t.BAB0yK),
+          "aria-labelledby": eW,
+          "aria-describedby": ez,
           onFocus: eI,
           onBlur: eZ,
           onContextMenu: eC,
@@ -428,7 +428,7 @@ let er = Chunk647438.memo(function(e) {
             [X.potioned]: (0, C.Uw)(v) && ed
           }),
           zalgo: !eT,
-          childrenRepliedMessage: ea || v.type !== Y.uaV.REPLY ? true : (0, z.Z)($(Q({}, e), {
+          childrenRepliedMessage: ea || v.type !== Y.uaV.REPLY ? true : (0, W.Z)($(Q({}, e), {
             setPopout: eb,
             referencedUsernameProfile: em.referencedUsernameProfile,
             referencedAvatarProfile: em.referencedAvatarProfile,
@@ -459,9 +459,9 @@ let er = Chunk647438.memo(function(e) {
             setPopout: eb,
             messagePopouts: em,
             isFocused: eO || ej,
-            messageWindow: eq.current
+            messageWindow: eK.current
           }) : true,
-          childrenSystemMessage: (0, W.Z)(e),
+          childrenSystemMessage: (0, z.Z)(e),
           childrenMessageContent: l,
           onMouseMove: e_,
           onMouseLeave: ev,
@@ -470,7 +470,7 @@ let er = Chunk647438.memo(function(e) {
           hasReply: v.type === Y.uaV.REPLY,
           messageRef: e => {
             var t, n;
-            eY.current = e, eq.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
+            eY.current = e, eK.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
           author: eH
         }))]

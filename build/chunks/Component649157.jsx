@@ -100,9 +100,9 @@ function O() {
       })
     }, []);
   return (0, Chunk951288.jsx)(Chunk273313.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.IHMsPj),
+    title: Chunk388032.intl.string(Chunk388032.t.IHMsPn),
     children: (0, Chunk951288.jsx)(Chunk755721.Gu, {
-      label: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
+      label: Chunk388032.intl.string(Chunk388032.t["mx+sp7"]),
       onChange: O,
       options: b,
       value: exports

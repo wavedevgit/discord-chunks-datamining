@@ -50,9 +50,9 @@ function d() {
       query: module,
       onClear: require,
       onChange: _,
-      placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
+      placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
       inputProps: {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.pk9BWV),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.pk9BWW),
         "aria-expanded": true,
         onFocus: e => t(true, e),
         onBlur: e => t(false, e)

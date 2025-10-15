@@ -33,7 +33,7 @@ let u = e => {
           className: l.backButton,
           children: [(0, r.jsx)(o.V7D, {
             color: "currentColor"
-          }), s.intl.string(s.t["13/7kZ"])]
+          }), s.intl.string(s.t["13/7kX"])]
         })
       }), (0, r.jsx)("div", {
         className: l.__invalid_contentContainer,
@@ -42,7 +42,7 @@ let u = e => {
           children: (0, r.jsx)(o.Heading, {
             variant: "display-lg",
             color: "always-white",
-            children: s.intl.string(s.t.hqjDX1)
+            children: s.intl.string(s.t["hqjDX/"])
           })
         })
       })]

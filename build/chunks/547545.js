@@ -21,7 +21,7 @@ class a {
   announceDrag(e, t) {
     if (null == e) return;
     let n = this.getName(e, t);
-    this.announce(r.intl.formatToPlainString(r.t["vHD/JS"], {
+    this.announce(r.intl.formatToPlainString(r.t["vHD/Je"], {
       itemName: n
     }))
   }
@@ -29,10 +29,10 @@ class a {
     null != e && this.announce(this.getName(e, t))
   }
   announceDrop() {
-    this.announce(Chunk388032.intl.string(Chunk388032.t.lMkmz8))
+    this.announce(Chunk388032.intl.string(Chunk388032.t.lMkmz7))
   }
   announceCancel() {
-    this.announce(Chunk388032.intl.string(Chunk388032.t["u4d/eH"]))
+    this.announce(Chunk388032.intl.string(Chunk388032.t["u4d/eC"]))
   }
   clear() {
     this.announcer.clearAnnouncements()

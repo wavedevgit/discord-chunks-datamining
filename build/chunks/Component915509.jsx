@@ -35,11 +35,11 @@ function s(e) {
     title: n,
     subtitle: s,
     actions: [{
-      text: o.intl.string(o.t["ETE/oK"]),
+      text: o.intl.string(o.t["ETE/oC"]),
       variant: "secondary",
       onClick: u
     }, {
-      text: o.intl.string(o.t.R3BPHx),
+      text: o.intl.string(o.t["R3BPH+"]),
       onClick: h,
       variant: "primary",
       loading: m

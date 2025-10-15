@@ -27,37 +27,37 @@ function f(e) {
       n = f && (t === u.A.DISCOVERABLE || h);
     return [{
       id: u.A.INVITE,
-      title: m.intl.string(m.t["HQVS/P"]),
-      body: m.intl.string(m.t.KzXzFR),
+      title: m.intl.string(m.t["HQVS/L"]),
+      body: m.intl.string(m.t.KzXzFa),
       icon: o.mBM,
       enabled: !e,
-      ineligibleText: m.intl.string(m.t.LIZgwM)
+      ineligibleText: m.intl.string(m.t.LIZgwJ)
     }, {
       id: u.A.APPLY,
       title: m.intl.string(m.t.LrFEYW),
-      body: m.intl.string(m.t.kJj2oK),
+      body: m.intl.string(m.t.kJj2oG),
       icon: o._XJ,
       enabled: !e,
-      ineligibleText: m.intl.string(m.t.LIZgwM)
+      ineligibleText: m.intl.string(m.t.LIZgwJ)
     }, {
       id: u.A.DISCOVERABLE,
-      title: m.intl.string(m.t.lhOHLy),
-      body: m.intl.string(m.t.pqQylZ),
+      title: m.intl.string(m.t.lhOHL3),
+      body: m.intl.string(m.t.pqQylS),
       icon: o.enf,
       enabled: n,
-      ineligibleText: f ? m.intl.string(m.t.iBpXPj) : m.intl.string(m.t["5TQ+eH"])
+      ineligibleText: f ? m.intl.string(m.t.iBpXPg) : m.intl.string(m.t["5TQ+eE"])
     }]
   }, [t, f, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       color: "header-primary",
       variant: "text-md/semibold",
-      children: m.intl.string(m.t["N+GnPz"])
+      children: m.intl.string(m.t["N+GnP2"])
     }), (0, r.jsx)(o.Text, {
       color: "text-secondary",
       variant: "text-sm/medium",
       className: p.bodyText,
-      children: m.intl.format(m.t["Y/jYws"], {
+      children: m.intl.format(m.t["Y/jYwu"], {
         helpdeskArticle: d.Z.getArticleURL(g.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(o.njP, {

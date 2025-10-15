@@ -81,14 +81,14 @@ let x = require("./227419.jsx").Z,
       id: Chunk689079.bi.BUILT_IN,
       type: Chunk895924.Qi.BUILT_IN,
       get name() {
-        return Chunk388032.intl.string(Chunk388032.t.fI5MTU)
+        return Chunk388032.intl.string(Chunk388032.t.fI5MTa)
       }
     },
     [Chunk689079.bi.FRECENCY]: {
       id: Chunk689079.bi.FRECENCY,
       type: Chunk895924.Qi.BUILT_IN,
       get name() {
-        return Chunk388032.intl.string(Chunk388032.t["+cGVV1"])
+        return Chunk388032.intl.string(Chunk388032.t["+cGVV6"])
       }
     }
   },
@@ -100,20 +100,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN_TEXT,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.j5xUSU)
+      return Chunk388032.intl.string(Chunk388032.t.j5xUSW)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.j5xUSU)
+      return Chunk388032.intl.string(Chunk388032.t.j5xUSW)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.JewOra)
+        return Chunk388032.intl.string(Chunk388032.t.JewOrS)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.JewOra)
+        return Chunk388032.intl.string(Chunk388032.t.JewOrS)
       }
     }],
     execute: e => {
@@ -131,20 +131,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN_TEXT,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.nrQRcX)
+      return Chunk388032.intl.string(Chunk388032.t.nrQRce)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.nrQRcX)
+      return Chunk388032.intl.string(Chunk388032.t.nrQRce)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.EI80t7)
+        return Chunk388032.intl.string(Chunk388032.t.EI80tw)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.EI80t7)
+        return Chunk388032.intl.string(Chunk388032.t.EI80tw)
       }
     }],
     execute: e => {
@@ -162,10 +162,10 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN_TEXT,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.pnnn8f)
+      return Chunk388032.intl.string(Chunk388032.t.pnnn8e)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.pnnn8f)
+      return Chunk388032.intl.string(Chunk388032.t.pnnn8e)
     },
     options: [{
       name: "message",
@@ -193,20 +193,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN_TEXT,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.jZcIiY)
+      return Chunk388032.intl.string(Chunk388032.t.jZcIid)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.jZcIiY)
+      return Chunk388032.intl.string(Chunk388032.t.jZcIid)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t["k+sw9v"])
+        return Chunk388032.intl.string(Chunk388032.t["k+sw9g"])
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t["k+sw9v"])
+        return Chunk388032.intl.string(Chunk388032.t["k+sw9g"])
       },
       required: true
     }],
@@ -231,20 +231,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN_TEXT,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.UGO8fX)
+      return Chunk388032.intl.string(Chunk388032.t.UGO8fU)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.UGO8fX)
+      return Chunk388032.intl.string(Chunk388032.t.UGO8fU)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.RWTgNT)
+        return Chunk388032.intl.string(Chunk388032.t.RWTgNd)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.RWTgNT)
+        return Chunk388032.intl.string(Chunk388032.t.RWTgNd)
       },
       required: true
     }],
@@ -263,20 +263,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN_TEXT,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.v0eDdX)
+      return Chunk388032.intl.string(Chunk388032.t.v0eDdV)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.v0eDdX)
+      return Chunk388032.intl.string(Chunk388032.t.v0eDdV)
     },
     options: [{
       name: "message",
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.D13pbW)
+        return Chunk388032.intl.string(Chunk388032.t.D13pbc)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.D13pbW)
+        return Chunk388032.intl.string(Chunk388032.t.D13pbc)
       },
       required: true
     }],
@@ -295,20 +295,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.jiHfS0)
+      return Chunk388032.intl.string(Chunk388032.t["jiHfS/"])
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.jiHfS0)
+      return Chunk388032.intl.string(Chunk388032.t["jiHfS/"])
     },
     options: [{
       name: "new_nick",
       displayName: "new_nick",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.WTSzVl)
+        return Chunk388032.intl.string(Chunk388032.t.WTSzVu)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.WTSzVl)
+        return Chunk388032.intl.string(Chunk388032.t.WTSzVu)
       }
     }],
     predicate: e => {
@@ -345,10 +345,10 @@ let x = require("./227419.jsx").Z,
       displayName: "name",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.TffOfX)
+        return Chunk388032.intl.string(Chunk388032.t.TffOfY)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.TffOfX)
+        return Chunk388032.intl.string(Chunk388032.t.TffOfY)
       },
       required: true
     }, {
@@ -356,10 +356,10 @@ let x = require("./227419.jsx").Z,
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.QXfSfX)
+        return Chunk388032.intl.string(Chunk388032.t.QXfSfU)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.QXfSfX)
+        return Chunk388032.intl.string(Chunk388032.t.QXfSfU)
       },
       required: true
     }],
@@ -386,20 +386,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t["03N0UF"])
+      return Chunk388032.intl.string(Chunk388032.t["03N0UL"])
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t["03N0UF"])
+      return Chunk388032.intl.string(Chunk388032.t["03N0UL"])
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk911969.jw.USER,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.gF8IpK)
+        return Chunk388032.intl.string(Chunk388032.t.gF8IpD)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.gF8IpK)
+        return Chunk388032.intl.string(Chunk388032.t.gF8IpD)
       },
       required: true
     }, {
@@ -407,10 +407,10 @@ let x = require("./227419.jsx").Z,
       displayName: "reason",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.QWldgo)
+        return Chunk388032.intl.string(Chunk388032.t.QWldgj)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.QWldgo)
+        return Chunk388032.intl.string(Chunk388032.t.QWldgj)
       },
       required: false
     }],
@@ -428,12 +428,12 @@ let x = require("./227419.jsx").Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = M(e, "user")) ? n : "";
-      if (!y.Z.canManageUser(A.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, R.intl.string(R.t["6RIwPD"]));
+      if (!y.Z.canManageUser(A.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, R.intl.string(R.t["6RIwPI"]));
       (async () => {
         var t;
         let n = O.default.getUser(a);
         if (null == n) throw Error();
-        await u.Z.kickUser(r.id, a, null != (t = M(e, "reason")) ? t : ""), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t["9wzHDQ"], {
+        await u.Z.kickUser(r.id, a, null != (t = M(e, "reason")) ? t : ""), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t["9wzHDV"], {
           user: I.ZP.getUserTag(n)
         }))
       })().catch(() => {
@@ -448,20 +448,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.HWuskp)
+      return Chunk388032.intl.string(Chunk388032.t.HWuskv)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.HWuskp)
+      return Chunk388032.intl.string(Chunk388032.t.HWuskv)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk911969.jw.USER,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.z3XPjo)
+        return Chunk388032.intl.string(Chunk388032.t.z3XPjr)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.z3XPjo)
+        return Chunk388032.intl.string(Chunk388032.t.z3XPjr)
       },
       required: true
     }, {
@@ -469,40 +469,40 @@ let x = require("./227419.jsx").Z,
       displayName: "delete_messages",
       type: Chunk911969.jw.INTEGER,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.smrvAw)
+        return Chunk388032.intl.string(Chunk388032.t.smrvA6)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.smrvAw)
+        return Chunk388032.intl.string(Chunk388032.t.smrvA6)
       },
       required: true,
       get choices() {
         return [{
-          name: Chunk388032.intl.string(Chunk388032.t["4obaMT"]),
-          displayName: Chunk388032.intl.string(Chunk388032.t["4obaMT"]),
+          name: Chunk388032.intl.string(Chunk388032.t["4obaMS"]),
+          displayName: Chunk388032.intl.string(Chunk388032.t["4obaMS"]),
           value: 0
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.RKpitb),
-          displayName: Chunk388032.intl.string(Chunk388032.t.RKpitb),
+          name: Chunk388032.intl.string(Chunk388032.t.RKpitY),
+          displayName: Chunk388032.intl.string(Chunk388032.t.RKpitY),
           value: Chunk70956.Z.Seconds.HOUR
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t["8WfJZ2"]),
-          displayName: Chunk388032.intl.string(Chunk388032.t["8WfJZ2"]),
+          name: Chunk388032.intl.string(Chunk388032.t["8WfJZ8"]),
+          displayName: Chunk388032.intl.string(Chunk388032.t["8WfJZ8"]),
           value: 6 * Chunk70956.Z.Seconds.HOUR
         }, {
           name: Chunk388032.intl.string(Chunk388032.t.p1up7u),
           displayName: Chunk388032.intl.string(Chunk388032.t.p1up7u),
           value: 12 * Chunk70956.Z.Seconds.HOUR
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.XuVkkJ),
-          displayName: Chunk388032.intl.string(Chunk388032.t.XuVkkJ),
+          name: Chunk388032.intl.string(Chunk388032.t.XuVkkD),
+          displayName: Chunk388032.intl.string(Chunk388032.t.XuVkkD),
           value: Chunk70956.Z.Seconds.DAY
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.gMcDS0),
-          displayName: Chunk388032.intl.string(Chunk388032.t.gMcDS0),
+          name: Chunk388032.intl.string(Chunk388032.t["gMcDS+"]),
+          displayName: Chunk388032.intl.string(Chunk388032.t["gMcDS+"]),
           value: 3 * Chunk70956.Z.Seconds.DAY
         }, {
-          name: Chunk388032.intl.string(Chunk388032.t.FA7IUl),
-          displayName: Chunk388032.intl.string(Chunk388032.t.FA7IUl),
+          name: Chunk388032.intl.string(Chunk388032.t.FA7IUk),
+          displayName: Chunk388032.intl.string(Chunk388032.t.FA7IUk),
           value: 7 * Chunk70956.Z.Seconds.DAY
         }]
       }
@@ -511,10 +511,10 @@ let x = require("./227419.jsx").Z,
       displayName: "reason",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.dG4noa)
+        return Chunk388032.intl.string(Chunk388032.t.dG4noU)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.dG4noa)
+        return Chunk388032.intl.string(Chunk388032.t.dG4noU)
       },
       required: false
     }],
@@ -532,18 +532,18 @@ let x = require("./227419.jsx").Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = M(e, "user")) ? n : "";
-      if (!y.Z.canManageUser(A.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, R.intl.string(R.t.R27LJi));
+      if (!y.Z.canManageUser(A.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, R.intl.string(R.t.R27LJl));
       (async () => {
         var t, n;
         if ("" === a) throw Error();
         let o = null != (t = M(e, "delete_messages")) ? t : 0,
           s = null != (n = M(e, "reason")) ? n : "",
           l = O.default.getUser(a);
-        await u.Z.banUser(r.id, a, o, s), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t.YflWdH, {
+        await u.Z.banUser(r.id, a, o, s), d.Z.sendBotMessage(i.id, R.intl.formatToPlainString(R.t.YflWdM, {
           user: null != l ? I.ZP.getUserTag(l) : a
         }))
       })().catch(() => {
-        d.Z.sendBotMessage(i.id, R.intl.string(R.t.w2J6Qk))
+        d.Z.sendBotMessage(i.id, R.intl.string(R.t.w2J6Qs))
       })
     }
   }, {
@@ -554,20 +554,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.KkPcen)
+      return Chunk388032.intl.string(Chunk388032.t.KkPcep)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.KkPcen)
+      return Chunk388032.intl.string(Chunk388032.t.KkPcep)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk911969.jw.USER,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.UU3VRk)
+        return Chunk388032.intl.string(Chunk388032.t.UU3VRm)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.UU3VRk)
+        return Chunk388032.intl.string(Chunk388032.t.UU3VRm)
       },
       required: true
     }, {
@@ -575,10 +575,10 @@ let x = require("./227419.jsx").Z,
       displayName: "duration",
       type: Chunk911969.jw.INTEGER,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.SNqN1d)
+        return Chunk388032.intl.string(Chunk388032.t.SNqN1e)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.SNqN1d)
+        return Chunk388032.intl.string(Chunk388032.t.SNqN1e)
       },
       required: true,
       get choices() {
@@ -592,10 +592,10 @@ let x = require("./227419.jsx").Z,
       displayName: "reason",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.akHScH)
+        return Chunk388032.intl.string(Chunk388032.t.akHScA)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.akHScH)
+        return Chunk388032.intl.string(Chunk388032.t.akHScA)
       },
       required: false
     }],
@@ -612,7 +612,7 @@ let x = require("./227419.jsx").Z,
       } = t;
       if (null == n || null == r) return;
       let i = M(e, "user");
-      if (!(0, _.F)(n.id, i)) return void d.Z.sendBotMessage(r.id, R.intl.string(R.t.F5pqSU));
+      if (!(0, _.F)(n.id, i)) return void d.Z.sendBotMessage(r.id, R.intl.string(R.t.F5pqSf));
       (async () => {
         var t, a;
         let s = null != (t = M(e, "duration")) ? t : "",
@@ -625,12 +625,12 @@ let x = require("./227419.jsx").Z,
           communicationDisabledUntilTimestamp: o()().add(s, "s").toISOString(),
           duration: s,
           reason: l
-        }), d.Z.sendBotMessage(r.id, R.intl.formatToPlainString(R.t.BbRV6u, {
+        }), d.Z.sendBotMessage(r.id, R.intl.formatToPlainString(R.t.BbRV6o, {
           user: I.ZP.getUserTag(c),
           duration: s
         }))
       })().catch(() => {
-        d.Z.sendBotMessage(r.id, R.intl.string(R.t["+mWyVl"]))
+        d.Z.sendBotMessage(r.id, R.intl.string(R.t["+mWyVq"]))
       })
     }
   }, {
@@ -641,20 +641,20 @@ let x = require("./227419.jsx").Z,
     inputType: Chunk895924.iw.BUILT_IN,
     applicationId: Chunk689079.bi.BUILT_IN,
     get untranslatedDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.Dg8XZ2)
+      return Chunk388032.intl.string(Chunk388032.t.Dg8XZw)
     },
     get displayDescription() {
-      return Chunk388032.intl.string(Chunk388032.t.Dg8XZ2)
+      return Chunk388032.intl.string(Chunk388032.t.Dg8XZw)
     },
     options: [{
       name: "user",
       displayName: "user",
       type: Chunk911969.jw.USER,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t["KmVq/P"])
+        return Chunk388032.intl.string(Chunk388032.t["KmVq/D"])
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t["KmVq/P"])
+        return Chunk388032.intl.string(Chunk388032.t["KmVq/D"])
       },
       required: true
     }, {
@@ -662,10 +662,10 @@ let x = require("./227419.jsx").Z,
       displayName: "message",
       type: Chunk911969.jw.STRING,
       get description() {
-        return Chunk388032.intl.string(Chunk388032.t.oGUuOD)
+        return Chunk388032.intl.string(Chunk388032.t.oGUuOJ)
       },
       get displayDescription() {
-        return Chunk388032.intl.string(Chunk388032.t.oGUuOD)
+        return Chunk388032.intl.string(Chunk388032.t.oGUuOJ)
       },
       required: true,
       get maxLength() {
@@ -691,7 +691,7 @@ let x = require("./227419.jsx").Z,
           })
         })
       })().catch(() => {
-        d.Z.sendBotMessage(r.id, R.intl.string(R.t["3XaE9/"]))
+        d.Z.sendBotMessage(r.id, R.intl.string(R.t["3XaE95"]))
       })
     }
   }],

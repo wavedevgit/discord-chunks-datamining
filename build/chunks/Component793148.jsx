@@ -101,7 +101,7 @@ class h extends(r = Chunk647438.PureComponent) {
         })
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         className: Chunk717255.volumeButton,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["19lt29"]),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["19lt24"]),
         size: Chunk755721.zx.Sizes.NONE,
         look: Chunk755721.zx.Looks.BLANK,
         onClick: this.handleToggleMute,

@@ -129,7 +129,7 @@ class L extends Chunk647438.PureComponent {
             gap: 16,
             children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-lg/semibold",
-              children: Chunk388032.intl.string(Chunk388032.t.obLrcH)
+              children: Chunk388032.intl.string(Chunk388032.t.obLrcK)
             }), (0, Chunk951288.jsx)(Chunk89057.oQ, {}), (0, Chunk951288.jsx)(Chunk231428.Z, {
               locale: Chunk442837
             })]
@@ -138,7 +138,7 @@ class L extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.INFO,
         className: Chunk61365.codeRedemptionRedirect,
-        children: Chunk388032.intl.format(Chunk388032.t["8b+FXF"], {
+        children: Chunk388032.intl.format(Chunk388032.t["8b+FXG"], {
           onClick: () => this.handleRedemptionRedirect()
         })
       })]

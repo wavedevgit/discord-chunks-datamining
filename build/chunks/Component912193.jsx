@@ -44,11 +44,11 @@ function f() {
 
 function _() {
   u = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.default, c({
-    title: s.intl.string(s.t["zQ1+Jy"]),
-    body: s.intl.string(s.t.K1gWXl),
-    secondaryConfirmText: s.intl.string(s.t.XAiAgI),
+    title: s.intl.string(s.t["zQ1+Jw"]),
+    body: s.intl.string(s.t.K1gWXn),
+    secondaryConfirmText: s.intl.string(s.t.XAiAgD),
     onConfirmSecondary: f,
     onConfirm: d,
-    confirmText: s.intl.string(s.t.BddRzc)
+    confirmText: s.intl.string(s.t.BddRzS)
   }, e)))
 }

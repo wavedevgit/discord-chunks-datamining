@@ -3,7 +3,7 @@
 require.r(exports), require.d(exports, {
   INVITE_OPTIONS_100_TIMES: () => N,
   INVITE_OPTIONS_10_TIMES: () => O,
-  INVITE_OPTIONS_12_HOURS: () => P,
+  INVITE_OPTIONS_12_HOURS: () => E,
   INVITE_OPTIONS_14_DAYS: () => g,
   INVITE_OPTIONS_1_DAY: () => f,
   INVITE_OPTIONS_1_HOUR: () => s,
@@ -13,13 +13,13 @@ require.r(exports), require.d(exports, {
   INVITE_OPTIONS_50_TIMES: () => T,
   INVITE_OPTIONS_5_TIMES: () => _,
   INVITE_OPTIONS_60_DAYS: () => c,
-  INVITE_OPTIONS_6_HOURS: () => o,
+  INVITE_OPTIONS_6_HOURS: () => P,
   INVITE_OPTIONS_7_DAYS: () => d,
-  INVITE_OPTIONS_8_HOURS: () => E,
-  INVITE_OPTIONS_FOREVER: () => p,
+  INVITE_OPTIONS_8_HOURS: () => o,
+  INVITE_OPTIONS_FOREVER: () => D,
   INVITE_OPTIONS_ONCE: () => r,
   INVITE_OPTIONS_UNLIMITED: () => l,
-  MAX_AGE_OPTIONS: () => D,
+  MAX_AGE_OPTIONS: () => p,
   MAX_USES_OPTIONS: () => a
 });
 var Chunk388032 = require("./388032.jsx");
@@ -32,57 +32,57 @@ function i(t, e) {
     }
   }
 }
-let l = i(0, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+let l = i(0, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 0
   })),
-  r = i(1, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+  r = i(1, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 1
   })),
-  _ = i(5, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+  _ = i(5, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 5
   })),
-  O = i(10, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+  O = i(10, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 10
   })),
-  u = i(25, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+  u = i(25, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 25
   })),
-  T = i(50, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+  T = i(50, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 50
   })),
-  N = i(100, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuL"], {
+  N = i(100, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["r/IcuP"], {
     maxUses: 100
   })),
   a = [l, r, _, O, u, T, N],
-  S = i(1800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.iXLF9f, {
+  S = i(1800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.iXLF9W, {
     minutes: 30
   })),
-  s = i(3600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxM, {
+  s = i(3600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
     hours: 1
   })),
-  o = i(21600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxM, {
+  P = i(21600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
     hours: 6
   })),
-  E = i(28800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxM, {
+  o = i(28800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
     hours: 8
   })),
-  P = i(43200, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxM, {
+  E = i(43200, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.xCjYxK, {
     hours: 12
   })),
-  f = i(86400, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.k2UNz8, {
+  f = i(86400, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
     days: 1
   })),
-  d = i(604800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.k2UNz8, {
+  d = i(604800, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
     days: 7
   })),
-  g = i(1209600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.k2UNz8, {
+  g = i(1209600, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
     days: 14
   })),
-  m = i(2592e3, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.k2UNz8, {
+  m = i(2592e3, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
     days: 30
   })),
-  c = i(5184e3, () => Chunk388032.intl.formatToPlainString(Chunk388032.t.k2UNz8, {
+  c = i(5184e3, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["k2UNz+"], {
     days: 60
   })),
-  p = i(0, () => Chunk388032.intl.string(Chunk388032.t.PqEzn5)),
-  D = [S, s, o, P, f, d, g, m, c, p]
+  D = i(0, () => Chunk388032.intl.string(Chunk388032.t.PqEzn8)),
+  p = [S, s, P, E, f, d, g, m, c, D]

@@ -110,7 +110,7 @@ let E = Chunk647438.memo(function(e) {
           className: v.positionContainer,
           role: "dialog",
           style: x,
-          "aria-label": _.intl.string(_.t["3CNGLC"]),
+          "aria-label": _.intl.string(_.t["3CNGLK"]),
           children: t && (0, i.jsx)(j, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

@@ -100,7 +100,7 @@ function Z(e) {
     renderHeader: Z,
     renderEmptyState: A,
     renderMessage: w,
-    "aria-label": S.intl.string(S.t.jbV6MD),
+    "aria-label": S.intl.string(S.t.jbV6MM),
     listName: "recents"
   })
 }
@@ -131,7 +131,7 @@ function T(e) {
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {
         className: I.closeButton,
-        tooltip: S.intl.string(S.t.cpT0Cg),
+        tooltip: S.intl.string(S.t.cpT0Cq),
         color: s.YX$.TERTIARY,
         icon: (0, r.jsx)(s.Dio, {
           size: "xs",
@@ -161,7 +161,7 @@ function T(e) {
 function A() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.lOy,
-    header: Chunk388032.intl.string(Chunk388032.t["bgDz7+"]),
-    tip: Chunk388032.intl.string(Chunk388032.t.NS15vr)
+    header: Chunk388032.intl.string(Chunk388032.t.bgDz74),
+    tip: Chunk388032.intl.string(Chunk388032.t.NS15vk)
   })
 }

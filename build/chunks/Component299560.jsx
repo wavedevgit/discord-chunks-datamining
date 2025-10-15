@@ -28,28 +28,28 @@ let O = {
       variant: "details",
       applicationId: Chunk804919.L.LEAGUE_OF_LEGENDS
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.xJtdIi)
+    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.xJtdIm)
   },
   [Chunk296009.l.CURRENT_GAMES]: {
     placeholder: () => ({
       variant: "details",
       applicationId: Chunk804919.L.VALORANT
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.Ae8tRk)
+    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.Ae8tRi)
   },
   [Chunk296009.l.PLAYED_GAMES]: {
     placeholder: () => ({
       variant: "grid",
       applicationIds: [Chunk804919.L.PEAK, Chunk804919.L.APEX_LEGENDS, Chunk804919.L.REPO, Chunk804919.L.BALDURS_GATE_3]
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t["pBR+4u"])
+    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t["pBR+4j"])
   },
   [Chunk296009.l.WANT_TO_PLAY_GAMES]: {
     placeholder: () => ({
       variant: "grid",
       applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.BATTLEFIELD_6, Chunk804919.L.RUST]
     }),
-    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.NtoBi4)
+    getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.NtoBi1)
   },
   [Chunk296009.l.APPLICATION]: {
     placeholder: e => ({
@@ -62,7 +62,7 @@ let O = {
     },
     getAriaLabel: e => {
       var t, n;
-      return b.intl.formatToPlainString(b.t.KfGahI, {
+      return b.intl.formatToPlainString(b.t.KfGahB, {
         applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }

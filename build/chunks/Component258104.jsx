@@ -76,13 +76,13 @@ let N = e => {
           }), (0, a.jsx)(c.Text, {
             variant: "text-md/medium",
             className: w.userName,
-            children: b.intl.format(b.t.RO3T4O, {
+            children: b.intl.format(b.t.RO3T4B, {
               userName: o
             })
           })]
         }) : (0, a.jsx)(C.u, {
           asContainer: true,
-          text: b.intl.string(b.t.xkVQPD),
+          text: b.intl.string(b.t.xkVQPN),
           position: "right",
           children: (0, a.jsx)(c.P3F, {
             onClick: () => {
@@ -119,11 +119,11 @@ let N = e => {
     l()(null !== n, "Referrals remaining should not be null");
     let C = (0, h.Fg)(),
       x = (0, d.ap)(C) ? y.Z : L.Z,
-      p = b.intl.string(b.t.Pcb7KC),
+      p = b.intl.string(b.t.Pcb7KF),
       f = [...r.values()].filter(e => e === _.Fz.SUCCESS).length;
-    return n > 0 && (p = b.intl.formatToPlainString(b.t.iWtOfH, {
+    return n > 0 && (p = b.intl.formatToPlainString(b.t.iWtOfC, {
       numReferrals: f
-    })), 0 === f && (p = b.intl.string(b.t["7VBEub"])), (0, a.jsxs)("div", {
+    })), 0 === f && (p = b.intl.string(b.t["7VBEue"])), (0, a.jsxs)("div", {
       className: w.confrimationContainer,
       children: [(0, a.jsx)(c.P3F, {
         onClick: i,
@@ -144,7 +144,7 @@ let N = e => {
         children: s
       }), (0, a.jsx)(c.Text, {
         variant: "text-md/medium",
-        children: b.intl.format(b.t.CZaMHh, {
+        children: b.intl.format(b.t.CZaMHn, {
           days: v.p,
           helpdeskArticle: m.Z.getArticleURL(S.BhN.REFERRAL_PROGRAM)
         })

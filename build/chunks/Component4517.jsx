@@ -123,7 +123,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
           prompt: a
         }))
       })
-    }, d = null != a ? a.label() : A.intl.string(A.t.evw0o6), f = (0, r.jsxs)("div", {
+    }, d = null != a ? a.label() : A.intl.string(A.t.evw0oz), f = (0, r.jsxs)("div", {
       className: C.content,
       children: [(0, r.jsx)(u.oFk, {
         size: "xs",
@@ -145,7 +145,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
           ref: t,
           children: (0, r.jsx)(u.P3F, {
             className: C.outer,
-            "aria-label": A.intl.string(A.t["zrpF/f"]),
+            "aria-label": A.intl.string(A.t["zrpF/b"]),
             onClick: c,
             focusProps: {
               ringClassName: C.ring
@@ -229,7 +229,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
       et = true === v || null != _ && P ? null : (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        "aria-label": "".concat(A.intl.string(A.t.EVV6ub), ": ").concat(v),
+        "aria-label": "".concat(A.intl.string(A.t.EVV6uZ), ": ").concat(v),
         className: o()(C.statusText, P && C.italicPrompt),
         children: null != v ? v : ""
       }),
@@ -269,7 +269,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
           role: "tooltip",
           tabIndex: 0,
           className: o()(C.container, g),
-          "aria-label": A.intl.formatToPlainString(A.t.xRGqo6, {
+          "aria-label": A.intl.formatToPlainString(A.t.xRGqow, {
             emoji: null != (n = null == _ ? true : _.name) ? n : "",
             status: p,
             label: ""
@@ -295,7 +295,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
           role: "tooltip",
           tabIndex: 0,
           className: o()(C.container, g),
-          "aria-label": A.intl.formatToPlainString(A.t.xRGqo6, {
+          "aria-label": A.intl.formatToPlainString(A.t.xRGqow, {
             emoji: null != (a = null == _ ? true : _.name) ? a : "",
             label: "",
             status: p

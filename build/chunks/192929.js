@@ -1,0 +1,3 @@
+/** Chunk was on 21408 **/
+/** chunk id: 192929, original params: n (module,exports,require) **/
+module.exports = JSON.parse('{"JA5C7L":["X\xf3a"],"WfH9in":["Tắt"],"m3Vfcs":["Kh\xf4ng hiện lại nội dung n\xe0y?"],"cgdAs2":["(Sẽ mở trong một thẻ mới)"],"VMNfsY":["Đ\xe3 chọn"],"YpT3kk":["Ph\xf3ng to v\xe0 ph\xe1t video"]}')

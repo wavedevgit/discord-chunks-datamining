@@ -90,7 +90,7 @@ function B(e) {
   let {
     numAudience: t,
     collapsed: n
-  } = e, r = n ? t : R.intl.formatToPlainString(R.t["+v2pNz"], {
+  } = e, r = n ? t : R.intl.formatToPlainString(R.t["+v2pN2"], {
     count: t
   });
   return (0, i.jsxs)("div", {
@@ -122,11 +122,11 @@ let H = (0, Chunk888651.$)(function(e) {
     localVideoDisabled: V,
     deaf: F,
     video: G,
-    embeddedApplication: z,
-    serverMute: W,
-    serverDeaf: K,
+    embeddedApplication: W,
+    serverMute: z,
+    serverDeaf: q,
     nick: Y,
-    ringing: q,
+    ringing: K,
     speaking: X,
     disconnected: J,
     connectUserDragSource: Q,
@@ -240,17 +240,17 @@ let H = (0, Chunk888651.$)(function(e) {
               isGuest: en,
               video: G,
               priority: ei,
-              ringing: q,
+              ringing: K,
               deaf: F,
               nick: Y,
               collapsed: l,
               overlap: l,
-              serverMute: W,
-              serverDeaf: K,
+              serverMute: z,
+              serverDeaf: q,
               tabIndex: ed,
               otherClientSessionType: es,
               voicePlatform: ec,
-              embeddedApplication: z,
+              embeddedApplication: W,
               avatarContainerClass: a()({
                 [L.userAvatar]: true
               }),
@@ -269,7 +269,7 @@ let H = (0, Chunk888651.$)(function(e) {
           if (eu) {
             var r;
             return (0, i.jsx)(o.u, {
-              text: null != (r = (0, C.Z)(es)) ? r : R.intl.string(R.t.IyYqqa),
+              text: null != (r = (0, C.Z)(es)) ? r : R.intl.string(R.t.IyYqqY),
               children: (0, i.jsx)(P.ZP, D({
                 ref: eC
               }, n))

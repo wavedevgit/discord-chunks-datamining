@@ -456,14 +456,14 @@ async function ea(e, t) {
       break;
     case E.wF.CAPTCHA_FAILED:
       l.Z.show({
-        title: M.intl.string(M.t["/CidxM"]),
-        body: M.intl.string(M.t.HQdHg4)
+        title: M.intl.string(M.t["/CidxO"]),
+        body: M.intl.string(M.t.HQdHg6)
       });
       break;
     case E.wF.UNKNOWN_ERROR:
       l.Z.show({
-        title: M.intl.string(M.t.R0RpRU),
-        body: M.intl.string(M.t.OXD41N)
+        title: M.intl.string(M.t.R0RpRX),
+        body: M.intl.string(M.t.OXD41D)
       });
     case E.wF.PREVIOUS_IN_FLIGHT_REQUEST:
   }

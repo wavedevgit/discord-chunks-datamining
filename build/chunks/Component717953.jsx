@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk583901 = require("./583901.jsx"),
   Chunk576157 = require("./576157.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk279457 = require("./279457.js");
 
@@ -89,7 +89,7 @@ function I(e) {
       onSelect: t ? true : j,
       isSelected: false,
       showSelectionCircle: P,
-      name: y.intl.string(b.default.KSBBpK),
+      name: y.intl.string(b.default.KSBBpC),
       className: o()(O.container, w && C, t && O.disabled),
       showBadge: false,
       showLockedBadge: false,

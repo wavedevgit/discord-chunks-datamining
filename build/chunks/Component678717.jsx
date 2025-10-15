@@ -416,7 +416,7 @@ function eO(e) {
           onClick: eT
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
-          tooltip: e_.intl.string(e_.t.cpT0Cg),
+          tooltip: e_.intl.string(e_.t.cpT0Cq),
           onClick: y.SO
         })]
       }),

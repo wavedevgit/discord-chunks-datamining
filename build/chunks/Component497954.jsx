@@ -32,11 +32,11 @@ let p = e => {
     }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
   }, [t, p, n]), v = i.useMemo(() => g || f, [g, f]);
   return (0, r.jsx)(s.JZ, {
-    title: m.intl.formatToPlainString(m.t.U3yyFh, {
+    title: m.intl.formatToPlainString(m.t.U3yyFs, {
       username: b
     }),
-    description: m.intl.string(m.t.naWE6e),
-    buttonText: v ? m.intl.string(m.t.nDdxOD) : m.intl.string(m.t.ICYEfX),
+    description: m.intl.string(m.t.naWE6W),
+    buttonText: v ? m.intl.string(m.t.nDdxOG) : m.intl.string(m.t.ICYEfY),
     buttonDisabled: v,
     onButtonPress: x
   })

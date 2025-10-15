@@ -52,11 +52,11 @@ function _(e) {
     navId: "staff-help-popout",
     variant: "fixed",
     onClose: t,
-    "aria-label": g.intl.string(g.t.HpQykZ),
+    "aria-label": g.intl.string(g.t.HpQykc),
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "staff-help-bug-reporter",
-        label: g.intl.string(g.t["5Lqopa"]),
+        label: g.intl.string(g.t["5LqopY"]),
         icon: a.nnZ,
         action: b
       }), n && (0, r.jsxs)(r.Fragment, {
@@ -109,7 +109,7 @@ function O(e) {
           ref: f,
           onClick: b,
           icon: a.nnZ,
-          "aria-label": g.intl.string(g.t.cqEoj4),
+          "aria-label": g.intl.string(g.t["cqEoj/"]),
           selected: l,
           className: t
         }, n))

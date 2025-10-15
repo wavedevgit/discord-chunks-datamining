@@ -34,11 +34,11 @@ let p = e => {
       }), (0, i.jsx)(a.Heading, {
         variant: "heading-xl/extrabold",
         className: c.errorPageTitle,
-        children: "guild_not_eligible" === t ? s.intl.string(s.t.atZQVV) : s.intl.string(s.t.gAdWBg)
+        children: "guild_not_eligible" === t ? s.intl.string(s.t.atZQVZ) : s.intl.string(s.t.gAdWBl)
       }), (0, i.jsx)(a.Text, {
         variant: "text-md/normal",
         className: c.errorPagSubtitle,
-        children: "guild_not_eligible" === t ? s.intl.string(s.t.teWe5O) : s.intl.string(s.t["X/yMrK"])
+        children: "guild_not_eligible" === t ? s.intl.string(s.t.teWe5G) : s.intl.string(s.t["X/yMrK"])
       })]
     })
   })

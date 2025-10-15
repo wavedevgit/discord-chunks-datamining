@@ -46,7 +46,7 @@ let h = {
   getGuildNameSuggestion: function(e) {
     let t = l.default.getCurrentUser(),
       n = u.oY(t);
-    return null == n || 0 === n.length ? "" : d.intl.formatToPlainString(d.t.Y6Qfjo, {
+    return null == n || 0 === n.length ? "" : d.intl.formatToPlainString(d.t.Y6Qfju, {
       username: (null == e ? true : e.truncateUsername) ? n.slice(0, 20) : n
     })
   },

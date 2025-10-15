@@ -28,14 +28,14 @@ function d(e, t, n) {
       isGift: n
     } = o.current;
     null != e && e.isPurchasedExternally && null != e.paymentGateway && !n && (a.Z.show({
-      title: u.intl.formatToPlainString(u.t["6mIX6u"], {
+      title: u.intl.formatToPlainString(u.t["6mIX6s"], {
         paymentGatewayName: c.Vz[e.paymentGateway]
       }),
-      body: u.intl.format(u.t.EOa8en, {
+      body: u.intl.format(u.t.EOa8ei, {
         paymentGatewayName: c.Vz[e.paymentGateway],
         subscriptionManagementLink: (0, l.JE)(e.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
       }),
-      confirmText: u.intl.string(u.t.BddRzc)
+      confirmText: u.intl.string(u.t.BddRzS)
     }), t())
   }, [e])
 }

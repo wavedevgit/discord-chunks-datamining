@@ -34,13 +34,13 @@ function h(e) {
   return a > false && i.push((0, r.jsx)(v, {
     className: n,
     count: a,
-    label: _.t.SbCNo6
+    label: _.t.SbCNox
   }, f.PC.REDDIT_TOTAL_KARMA)), o && i.push((0, r.jsx)(S, {
     className: n,
-    label: _.intl.string(_.t["06rDHR"])
+    label: _.intl.string(_.t["06rDHU"])
   }, f.PC.REDDIT_GOLD)), s && i.push((0, r.jsx)(S, {
     className: n,
-    label: _.intl.string(_.t.oWM95O)
+    label: _.intl.string(_.t.oWM95M)
   }, f.PC.REDDIT_MOD)), i
 }
 
@@ -53,11 +53,11 @@ function m(e) {
   return o > false && a.push((0, r.jsx)(v, {
     className: i,
     count: o,
-    label: _.t.llwqqa
+    label: _.t.llwqqe
   }, f.PC.TWITTER_STATUSES_COUNT)), s > false && a.push((0, r.jsx)(v, {
     className: i,
     count: s,
-    label: _.t.LMNOUV
+    label: _.t.LMNOUQ
   }, f.PC.TWITTER_FOLLOWERS_COUNT)), a
 }
 
@@ -71,21 +71,21 @@ function g(e) {
   return l > false && s.push((0, r.jsx)(v, {
     className: o,
     count: l,
-    label: _.t.ppXMu7
+    label: _.t["ppXMu/"]
   }, f.PC.STEAM_GAME_COUNT)), c > false && s.push((0, r.jsx)(T, {
     className: o,
-    label: _.intl.format(_.t["Y88M5+"], {
+    label: _.intl.format(_.t.Y88M5x, {
       count: c
     }),
     imageSrc: n(738535),
-    imageAlt: _.intl.string(_.t.HKUEZm)
+    imageAlt: _.intl.string(_.t.HKUEZo)
   }, f.PC.STEAM_ITEM_COUNT_DOTA2)), u > false && s.push((0, r.jsx)(T, {
     className: o,
-    label: _.intl.format(_.t["Y88M5+"], {
+    label: _.intl.format(_.t.Y88M5x, {
       count: u
     }),
     imageSrc: n(80730),
-    imageAlt: _.intl.string(_.t.C8p1Sk)
+    imageAlt: _.intl.string(_.t.C8p1Sh)
   }, f.PC.STEAM_ITEM_COUNT_TF2)), s
 }
 
@@ -94,7 +94,7 @@ function E(e) {
     n = [];
   return "1" === e[f.PC.PAYPAL_VERIFIED] && n.push((0, r.jsx)(S, {
     className: a()(t, p.paypalVerifiedTag),
-    label: _.intl.string(_.t.IhXLy8)
+    label: _.intl.string(_.t.IhXLyx)
   }, f.PC.PAYPAL_VERIFIED)), n
 }
 
@@ -111,7 +111,7 @@ function b(e) {
     percent: true
   }, f.PC.EBAY_POSITIVE_FEEDBACK_PERCENTAGE)), o && i.push((0, r.jsx)(S, {
     className: n,
-    label: _.intl.string(_.t.TEEYwc)
+    label: _.intl.string(_.t.TEEYwa)
   }, f.PC.EBAY_TOP_RATED_SELLER)), i
 }
 
@@ -126,18 +126,18 @@ function y(e) {
   return l > false && o.push((0, r.jsx)(v, {
     className: a,
     count: l,
-    label: _.t["Mpm/BQ"]
+    label: _.t["Mpm/Bc"]
   }, f.PC.TIKTOK_FOLLOWER_COUNT)), c > false && o.push((0, r.jsx)(v, {
     className: a,
     count: c,
-    label: _.t.ftf12t
+    label: _.t.ftf12v
   }, f.PC.TIKTOK_FOLLOWING_COUNT)), u > false && o.push((0, r.jsx)(v, {
     className: a,
     count: u,
-    label: _.t.Qwhe5u
+    label: _.t.Qwhe5j
   }, f.PC.TIKTOK_LIKES_COUNT)), s && o.push((0, r.jsx)(S, {
     className: a,
-    label: _.intl.string(_.t.QHHwRU)
+    label: _.intl.string(_.t.QHHwRR)
   }, f.PC.TIKTOK_VERIFIED)), o
 }
 
@@ -191,7 +191,7 @@ function v(e) {
       percent: s
     } = e,
     l = (0, u.$U)(n) + (s ? "%" : "");
-  return t = "string" == typeof i ? _.intl.format(_.t.HLoinJ, {
+  return t = "string" == typeof i ? _.intl.format(_.t.HLoinF, {
     name: i,
     value: l
   }) : _.intl.format(i, {
@@ -215,7 +215,7 @@ function I(e) {
     className: a()(p.connectedAccountVanityMetadata, o),
     variant: "text-xxs/normal",
     color: "text-default",
-    children: _.intl.format(_.t.HLoinJ, {
+    children: _.intl.format(_.t.HLoinF, {
       value: (0, d.FI)(t, n),
       name: i
     })

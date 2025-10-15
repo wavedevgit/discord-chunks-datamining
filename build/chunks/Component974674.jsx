@@ -114,7 +114,7 @@ function N(e) {
 
 function R(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return null != t ? E.intl.formatToPlainString(E.t["/6mw19"], {
+  return null != t ? E.intl.formatToPlainString(E.t["/6mw10"], {
     label: e,
     status: (0, p.u5)(t, n)
   }) : e

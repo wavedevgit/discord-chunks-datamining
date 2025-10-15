@@ -375,13 +375,13 @@ class er extends Chunk98597.ZP {
       } = this.props;
       if (!t) return (0, r.jsx)(c.u, {
         asContainer: true,
-        text: J.intl.string(J.t.ZXxLQk),
+        text: J.intl.string(J.t.ZXxLQg),
         children: (0, r.jsx)(u.P3F, {
           className: o()($.iconItem, n ? $.alwaysShown : null),
           onClick: () => {
             d.Z.updateChatOpen(e.id, true), (0, A.Kh)(e.id)
           },
-          "aria-label": J.intl.string(J.t.ZXxLQk),
+          "aria-label": J.intl.string(J.t.ZXxLQg),
           children: (0, r.jsx)(u.kBi, {
             size: "xs",
             color: "currentColor",
@@ -393,7 +393,7 @@ class er extends Chunk98597.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? J.intl.string(J.t.rZfiNj) : null
+      return this.isFull() && !e ? J.intl.string(J.t.rZfiNq) : null
     })
   }
 }
@@ -422,7 +422,7 @@ function el(e) {
       bypassLimit: G.Z.can(X.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([V.Z], () => V.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
+  }), h = (0, a.e7)([F.Z], () => F.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
     enabled: y
   } = b.W.useExperiment({
     guildId: t.id,
@@ -452,7 +452,7 @@ function el(e) {
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), F = w && null == M;
+  }), V = w && null == M;
   return (0, r.jsx)(ei, en(et({
     channelName: m,
     embeddedApps: f,
@@ -464,7 +464,7 @@ function el(e) {
   }, u, p, e), {
     connected: w,
     isFavoriteSuggestion: l && !N,
-    forceShowButtons: F,
+    forceShowButtons: V,
     channelInfo: M,
     resolvedUnreadSetting: d,
     enableHangStatus: A,

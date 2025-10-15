@@ -23,8 +23,8 @@ let x = e => {
     className: t,
     upsellText: o
   } = e, x = c.default.getCurrentUser(), h = (0, u.yd)(null == x ? true : x.premiumType, p.PremiumTypes.TIER_2), C = (0, m._)({
-    defaultResponse: f.intl.string(f.t["8x0jKS"]),
-    onNonTier2Subscriber: f.intl.string(f.t.IJI7ys)
+    defaultResponse: f.intl.string(f.t["8x0jKT"]),
+    onNonTier2Subscriber: f.intl.string(f.t.IJI7yk)
   });
   return h ? null : (0, a.jsxs)("div", {
     className: r()(g.upsellContainer, t),

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk631885 = require("./631885.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk352258 = require("./352258.js"),
   Chunk197571 = require("./197571.js");
@@ -43,7 +43,7 @@ let _ = e => {
   }), o.useEffect(() => {
     N > z.current && t()
   }, [z, N, t]);
-  let k = i && !O && null != q;
+  let E = i && !O && null != q;
   return (0, n.jsxs)(c.Y0X, {
     "data-migration-pending": true,
     className: h.modalRoot,
@@ -55,7 +55,7 @@ let _ = e => {
       children: [(0, n.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor"
-      }), y.intl.string(g.default.iHYMAw)]
+      }), g.intl.string(y.default.iHYMAz)]
     }), (0, n.jsxs)(c.hzk, {
       "data-migration-pending": true,
       className: h.content,
@@ -63,24 +63,24 @@ let _ = e => {
         className: v.marginBottom8,
         variant: "text-lg/bold",
         color: "header-primary",
-        children: y.intl.string(g.default.AVTZaG)
+        children: g.intl.string(y.default.AVTZaN)
       }), (0, n.jsx)(c.Text, {
         className: v.marginBottom20,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: y.intl.format(g.default.LyyCsL, {
+        children: g.intl.format(y.default.LyyCsE, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), (0, n.jsx)("div", {
         className: h.qrCodeContainer,
         children: (0, n.jsx)(c.P3F, {
           className: s()(h.qrCodeObscure, {
-            [h.visible]: k
+            [h.visible]: E
           }),
           onClick: S,
           children: (0, n.jsx)(u.c2, {
             size: 272,
-            text: k ? q : x.vH,
+            text: E ? q : x.vH,
             overlaySize: u.cK.SIZE_60,
             className: h.qrCodeOverlay
           })
@@ -89,18 +89,18 @@ let _ = e => {
         className: h.reminder,
         variant: "text-xs/semibold",
         color: "header-secondary",
-        children: y.intl.string(g.default.goDyoa)
+        children: g.intl.string(y.default.goDyoe)
       }), (0, n.jsx)("div", {
         className: s()(h.buttonContainer, v.marginTop20),
         children: (0, n.jsxs)(c.ButtonGroup, {
           fullWidth: true,
           children: [(0, n.jsx)(c.Button, {
             variant: "secondary",
-            text: y.intl.string(y.t.cpT0Cg),
+            text: g.intl.string(g.t.cpT0Cq),
             onClick: t
           }), (0, n.jsx)(c.Button, {
             variant: "primary",
-            text: i ? y.intl.string(g.default.wg2xwc) : y.intl.string(g.default["10dX6e"]),
+            text: i ? g.intl.string(y.default.wg2xwQ) : g.intl.string(y.default["10dX6U"]),
             onClick: S,
             loading: i && O
           })]

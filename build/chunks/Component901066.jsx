@@ -138,17 +138,17 @@ function R(e) {
     className: P.actionRow,
     children: [(0, l.jsx)(I, {
       icon: d.owK,
-      label: T.intl.string(T.t.BzjDQE),
+      label: T.intl.string(T.t.BzjDQJ),
       onClick: i,
       disabled: o
     }), (0, l.jsx)(I, {
       icon: d.k$p,
-      label: T.intl.string(T.t.hDtbs7),
+      label: T.intl.string(T.t.hDtbsz),
       onClick: a,
       disabled: o
     }), (0, l.jsx)(I, {
       icon: d.kBi,
-      label: T.intl.string(T.t.KQeYoK),
+      label: T.intl.string(T.t.KQeYoC),
       onClick: s,
       disabled: o
     })]
@@ -174,13 +174,13 @@ function w(e) {
       children: [(0, l.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: T.intl.string(T.t.bSZklZ)
+        children: T.intl.string(T.t.bSZkla)
       }), null != i && null != r ? (0, l.jsxs)("div", {
         className: P.actionedInfo,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T.intl.formatToPlainString(T.t.qnimbG, {
+          children: T.intl.formatToPlainString(T.t.qnimbL, {
             username: null != (t = i.global_name) ? t : i.username
           })
         }), (0, l.jsx)("div", {
@@ -193,7 +193,7 @@ function w(e) {
       }) : null, null != a && (0, l.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: T.intl.formatToPlainString(T.t.fU5PPD, {
+        children: T.intl.formatToPlainString(T.t.fU5PPM, {
           rejectionReason: a
         })
       })]
@@ -225,7 +225,7 @@ function A(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T.intl.formatToPlainString(T.t.qnimbG, {
+          children: T.intl.formatToPlainString(T.t.qnimbL, {
             username: null != (t = i.global_name) ? t : i.username
           })
         }), (0, l.jsx)("div", {
@@ -250,7 +250,7 @@ function M(e) {
       className: P.accountLabel,
       variant: "text-sm/medium",
       color: "text-muted",
-      children: T.intl.string(T.t["ldCE/v"])
+      children: T.intl.string(T.t["ldCE/p"])
     }), (0, l.jsxs)("div", {
       className: P.userInfoContainer,
       children: [(0, l.jsxs)("div", {
@@ -258,7 +258,7 @@ function M(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t.SaDIpK)
+          children: T.intl.string(T.t.SaDIpL)
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -269,7 +269,7 @@ function M(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t.Vt4cn5)
+          children: T.intl.string(T.t["Vt4cn+"])
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -292,7 +292,7 @@ function Z(e) {
     return null != (e = null == n ? true : n.formResponses) ? e : []
   }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.default(i) : null, [i]), u = (0, c.e7)([_.Z], () => _.Z.getGuild(t), [t]);
   return ((0, m.Tt)({
-    subsection: T.intl.string(T.t.nqrK8f),
+    subsection: T.intl.string(T.t.nqrK8X),
     location: null == u ? true : u.name
   }), null == n || null == u || null == o || null == i) ? null : (0, l.jsx)("section", {
     className: P.sidebar,

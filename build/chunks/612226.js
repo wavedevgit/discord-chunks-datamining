@@ -53,26 +53,26 @@ var Chunk2818 = require("./2818.js"),
 function Z(e) {
   switch (e) {
     case "NAVIGATION":
-      return G.intl.string(G.t["yGE+jo"]);
+      return G.intl.string(G.t["yGE+jg"]);
     case "VOICE_AND_VIDEO":
       return G.intl.string(G.t.bI8F5u);
     case "CHAT":
-      return G.intl.string(G.t.hDhbb2);
+      return G.intl.string(G.t.hDhbb3);
     case "MISCELLANEOUS":
-      return G.intl.string(G.t.cBdwqq);
+      return G.intl.string(G.t.cBdwqs);
     case "MESSAGE":
-      return G.intl.string(G.t["5fpmX1"]);
+      return G.intl.string(G.t["5fpmX9"]);
     case "DND":
-      return G.intl.string(G.t["69j6+/"])
+      return G.intl.string(G.t["69j6+4"])
   }
 }
 
 function F(e) {
   switch (e) {
     case "MESSAGE":
-      return G.intl.string(G.t.iepGDg);
+      return G.intl.string(G.t.iepGDn);
     case "DND":
-      return G.intl.string(G.t.LBsB0d);
+      return G.intl.string(G.t.LBsB0a);
     default:
       return
   }
@@ -139,168 +139,168 @@ let H = {
 
 function Y() {
   let e = [{
-      description: Chunk388032.intl.string(Chunk388032.t.bx4Uy8),
+      description: Chunk388032.intl.string(Chunk388032.t.bx4Uyz),
       binds: V(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["+Wem6u"]),
+      description: Chunk388032.intl.string(Chunk388032.t["+Wem6h"]),
       binds: V(Chunk981631.EkH.CHANNEL_PREV, Chunk981631.EkH.CHANNEL_NEXT),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["+2fcd3"]),
+      description: Chunk388032.intl.string(Chunk388032.t["+2fcdz"]),
       binds: V(Chunk981631.EkH.NAVIGATE_BACK, Chunk981631.EkH.NAVIGATE_FORWARD),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.eVmj1N),
+      description: Chunk388032.intl.string(Chunk388032.t.eVmj1H),
       binds: V(Chunk981631.EkH.UNREAD_PREV, Chunk981631.EkH.UNREAD_NEXT),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.EcqS7e),
+      description: Chunk388032.intl.string(Chunk388032.t.EcqS7Y),
       binds: V(Chunk981631.EkH.MENTION_CHANNEL_PREV, Chunk981631.EkH.MENTION_CHANNEL_NEXT),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["4I3pwc"]),
+      description: Chunk388032.intl.string(Chunk388032.t["4I3pwW"]),
       binds: V(Chunk981631.EkH.JUMP_TO_CURRENT_CALL),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["Bqss7+"]),
+      description: Chunk388032.intl.string(Chunk388032.t.Bqss72),
       binds: V(Chunk981631.EkH.TOGGLE_PREVIOUS_GUILD),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.yYsRlJ),
+      description: Chunk388032.intl.string(Chunk388032.t.yYsRlD),
       binds: V(Chunk981631.EkH.QUICKSWITCHER_SHOW),
       group: "NAVIGATION"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.O7ouXF),
+      description: Chunk388032.intl.string(Chunk388032.t.O7ouXO),
       binds: V(Chunk981631.EkH.CREATE_GUILD),
       group: "NAVIGATION",
       groupEnd: true
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.Lns0FR),
+      description: Chunk388032.intl.string(Chunk388032.t.Lns0Fc),
       binds: ["mod+d"],
       group: "DND"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.dmMqa2),
+      description: Chunk388032.intl.string(Chunk388032.t.dmMqay),
       binds: ["up", "down"],
       group: "DND"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["cs/HVF"]),
+      description: Chunk388032.intl.string(Chunk388032.t["cs/HVH"]),
       binds: ["spacebar", "enter"],
       group: "DND"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["1ioMJS"]),
+      description: Chunk388032.intl.string(Chunk388032.t["1ioMJQ"]),
       binds: ["esc"],
       group: "DND",
       groupEnd: true
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.UaXAPz),
+      description: Chunk388032.intl.string(Chunk388032.t.UaXAPx),
       binds: V(Chunk981631.EkH.MARK_SERVER_READ),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["5X9vFh"]),
+      description: Chunk388032.intl.string(Chunk388032.t["5X9vFj"]),
       binds: V(Chunk981631.EkH.MARK_CHANNEL_READ),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.wxQFsr),
+      description: Chunk388032.intl.string(Chunk388032.t.wxQFsl),
       binds: V(Chunk981631.EkH.CREATE_DM_GROUP),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["C+XV7e"]),
+      description: Chunk388032.intl.string(Chunk388032.t["C+XV7f"]),
       binds: V(Chunk981631.EkH.TOGGLE_CHANNEL_PINS),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["Q+YV/f"]),
+      description: Chunk388032.intl.string(Chunk388032.t["Q+YV/T"]),
       binds: V(Chunk981631.EkH.TOGGLE_INBOX),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["YEjV+f"]),
+      description: Chunk388032.intl.string(Chunk388032.t["YEjV+W"]),
       binds: V(Chunk981631.EkH.MARK_TOP_INBOX_CHANNEL_READ),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.AcBI9f),
+      description: Chunk388032.intl.string(Chunk388032.t.AcBI9S),
       binds: V(Chunk981631.EkH.TOGGLE_USERS),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.JoxNnp),
+      description: Chunk388032.intl.string(Chunk388032.t.JoxNnl),
       binds: V(Chunk981631.EkH.SEARCH_EMOJIS),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["3PHxo6"]),
+      description: Chunk388032.intl.string(Chunk388032.t["3PHxo8"]),
       binds: V(Chunk981631.EkH.SEARCH_GIFS),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.YFl7eX),
+      description: Chunk388032.intl.string(Chunk388032.t.YFl7eb),
       binds: V(Chunk981631.EkH.SEARCH_STICKERS),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.L3RYYG),
+      description: Chunk388032.intl.string(Chunk388032.t.L3RYYJ),
       binds: V(Chunk981631.EkH.SCROLL_UP, Chunk981631.EkH.SCROLL_DOWN),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["3HAurK"]),
+      description: Chunk388032.intl.string(Chunk388032.t["3HAurM"]),
       binds: V(Chunk981631.EkH.JUMP_TO_FIRST_UNREAD),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.rrYBEh),
+      description: Chunk388032.intl.string(Chunk388032.t.rrYBEu),
       binds: V(Chunk981631.EkH.TEXTAREA_FOCUS),
       group: "CHAT"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.sUJlPD),
+      description: Chunk388032.intl.string(Chunk388032.t.sUJlPL),
       binds: V(Chunk981631.EkH.UPLOAD_FILE),
       group: "CHAT",
       groupEnd: true
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.tL6eVV),
+      description: Chunk388032.intl.string(Chunk388032.t.tL6eVW),
       binds: V(Chunk981631.EkH.TOGGLE_MUTE),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["QXe/7e"]),
+      description: Chunk388032.intl.string(Chunk388032.t["QXe/7T"]),
       binds: V(Chunk981631.EkH.TOGGLE_DEAFEN),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.d6UIio),
+      description: Chunk388032.intl.string(Chunk388032.t.d6UIii),
       binds: V(Chunk981631.EkH.CALL_ACCEPT),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.IcEW09),
+      description: Chunk388032.intl.string(Chunk388032.t.IcEW06),
       binds: V(Chunk981631.EkH.MARK_CHANNEL_READ),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.WN2dsb),
+      description: Chunk388032.intl.string(Chunk388032.t.WN2dsS),
       binds: V(Chunk981631.EkH.CALL_START),
       group: "VOICE_AND_VIDEO",
       groupEnd: true
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.rUK0kp),
+      description: Chunk388032.intl.string(Chunk388032.t.rUK0kk),
       binds: V(Chunk981631.EkH.SEARCH_SOUNDBOARD),
       group: "VOICE_AND_VIDEO"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.vkGkSk),
+      description: Chunk388032.intl.string(Chunk388032.t.vkGkSn),
       binds: V(Chunk981631.EkH.TOGGLE_HELP),
       group: "MISCELLANEOUS"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["FJvZ8/"]),
+      description: Chunk388032.intl.string(Chunk388032.t.FJvZ87),
       binds: V(Chunk981631.EkH.FOCUS_SEARCH),
       group: "MISCELLANEOUS"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.HnNtEB),
+      description: Chunk388032.intl.string(Chunk388032.t.HnNtEI),
       binds: ["h+h+right+n+k"],
       group: "MISCELLANEOUS",
       groupEnd: true
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.fsBWmZ),
+      description: Chunk388032.intl.string(Chunk388032.t.fsBWmS),
       binds: ["e"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.xwMqDw),
+      description: Chunk388032.intl.string(Chunk388032.t.xwMqD7),
       binds: ["backspace"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t["CvQ18/"]),
+      description: Chunk388032.intl.string(Chunk388032.t.CvQ18w),
       binds: ["p"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.lfIHs7),
+      description: Chunk388032.intl.string(Chunk388032.t.lfIHs4),
       binds: ["plus"],
       group: "MESSAGE"
     }, {
@@ -308,24 +308,24 @@ function Y() {
       binds: ["r"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.zSyDdH),
+      description: Chunk388032.intl.string(Chunk388032.t.zSyDdA),
       binds: ["f"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.JrGD7O),
+      description: Chunk388032.intl.string(Chunk388032.t.JrGD7E),
       binds: ["mod+c"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.RpE9k5),
+      description: Chunk388032.intl.string(Chunk388032.t.RpE9k7),
       binds: ["alt+enter"],
       group: "MESSAGE"
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.rrYBEh),
+      description: Chunk388032.intl.string(Chunk388032.t.rrYBEu),
       binds: ["escape"],
       group: "MESSAGE",
       groupEnd: true
     }, {
-      description: Chunk388032.intl.string(Chunk388032.t.z9c6mp),
+      description: Chunk388032.intl.string(Chunk388032.t.z9c6mt),
       binds: V(Chunk981631.EkH.VIBE_WITH_WUMPUS),
       group: "MISCELLANEOUS"
     }],
@@ -338,7 +338,7 @@ function Y() {
       autoTrackExposure: false
     });
   return exports && !require && module.push({
-    description: Chunk388032.intl.string(Chunk388032.t.IWNSoK),
+    description: Chunk388032.intl.string(Chunk388032.t.IWNSoH),
     binds: V(Chunk981631.EkH.TOGGLE_FOR_LATER),
     group: "CHAT"
   }), module

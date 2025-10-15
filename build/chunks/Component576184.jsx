@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk827414 = require("./827414.js");
 let h = [{
     id: "discord",
-    getName: () => Chunk388032.intl.string(Chunk388032.t.uON9Ul),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.uON9Ui),
     url: (0, Chunk361207.t3)()
   }, {
     id: "chrome",
@@ -25,7 +25,7 @@ let h = [{
     url: "https://www.google.com/chrome/browser/desktop/"
   }, {
     id: "firefox",
-    getName: () => Chunk388032.intl.string(Chunk388032.t.LVbA5e),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.LVbA5X),
     url: "https://www.mozilla.org/en-US/firefox/new/?scene=2"
   }],
   _ = {
@@ -43,11 +43,11 @@ class u extends Chunk647438.Component {
     return e = null != Chunk647438 ? (0, Chunk951288.jsx)(Chunk481060.Anchor, {
       className: Chunk827414.btn,
       href: Chunk647438,
-      children: Chunk388032.intl.string(Chunk388032.t["1WjMbG"])
+      children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
     }) : (0, Chunk951288.jsx)(Chunk799899.rU, {
       className: Chunk827414.btn,
       to: Chunk981631.Z5c.APPS,
-      children: Chunk388032.intl.string(Chunk388032.t["1WjMbG"])
+      children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
     }), (0, Chunk951288.jsxs)("li", {
       className: Chunk827414.browserItem,
       children: [(0, Chunk951288.jsx)("div", {
@@ -75,10 +75,10 @@ class x extends Chunk647438.Component {
         className: Chunk827414.wrap,
         children: [(0, Chunk951288.jsx)(Chunk481060.H, {
           className: Chunk827414.title,
-          children: Chunk388032.intl.string(Chunk388032.t["3h+n+/"])
+          children: Chunk388032.intl.string(Chunk388032.t["3h+n+8"])
         }), (0, Chunk951288.jsx)("p", {
           className: Chunk827414.message,
-          children: Chunk388032.intl.string(Chunk388032.t.yNDLDA)
+          children: Chunk388032.intl.string(Chunk388032.t.yNDLDL)
         }), (0, Chunk951288.jsx)("ul", {
           className: Chunk827414.browserList,
           children: module

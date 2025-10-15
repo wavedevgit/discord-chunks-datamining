@@ -50,7 +50,7 @@ function O(e) {
       guildId: O.guildId,
       scrollIntoView: N === I.Tb.ROLES
     }), n.isProvisional && (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t.Iyka0d),
+      heading: y.intl.string(y.t.Iyka0U),
       headingIcon: (0, l.jsx)(r.Mgn, {
         size: "xxs",
         color: r.TVs.colors.HEADER_PRIMARY
@@ -60,19 +60,19 @@ function O(e) {
         userId: n.id
       })
     }), E.length > 0 && (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t["Uv/eT0"]),
+      heading: y.intl.string(y.t["Uv/eTx"]),
       children: (0, l.jsx)(j.Z, {
         applicationIds: E
       })
     }), (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t.a6XYDw),
+      heading: y.intl.string(y.t.a6XYD9),
       children: (0, l.jsx)(v.Z, {
         userId: n.id,
         guildId: null == O ? true : O.guildId,
         tooltipDelay: I.vB
       })
     }), _.length > 0 && (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t["3fe7U1"]),
+      heading: y.intl.string(y.t["3fe7U5"]),
       scrollIntoView: N === I.Tb.CONNECTIONS,
       children: (0, l.jsx)(x.ZP, {
         connectedAccounts: _,

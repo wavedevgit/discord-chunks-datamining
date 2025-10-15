@@ -116,29 +116,29 @@ function R(e) {
     selectedUserIds: M,
     addUsers: E,
     clearSelection: T
-  } = (0, g.Z)(t), k = P.requireUnusualDmActivity || P.requireCommunicationDisabled || P.requireUnusualAccountActivity || P.requireUsernameQuarantined, A = P.selectedRoleIds.size > 0, U = null != P.selectedJoinDateOption.afterDate, B = P.selectedSort === p.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != P.selectedAccountAgeOption.afterDate, q = P.selectedSort === p.d$.ORDER_BY_USER_ID_ASC || P.selectedSort === p.d$.ORDER_BY_USER_ID_DESC, G = null != P.selectedSourceInviteCode && "" !== P.selectedSourceInviteCode, z = null != P.selectedJoinSourceType, Y = G || z, W = (0, f.xC)(t), K = l.useMemo(() => n.filter(e => (0, f.rX)(t, W, e)), [W, n, t]), Q = K.length > 0, J = 0 === K.filter(e => !M.has(e)).length, X = l.useCallback(() => {
-    Q && (J ? T() : E(K))
-  }, [Q, J, T, E, K]);
+  } = (0, g.Z)(t), k = P.requireUnusualDmActivity || P.requireCommunicationDisabled || P.requireUnusualAccountActivity || P.requireUsernameQuarantined, A = P.selectedRoleIds.size > 0, U = null != P.selectedJoinDateOption.afterDate, B = P.selectedSort === p.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != P.selectedAccountAgeOption.afterDate, q = P.selectedSort === p.d$.ORDER_BY_USER_ID_ASC || P.selectedSort === p.d$.ORDER_BY_USER_ID_DESC, G = null != P.selectedSourceInviteCode && "" !== P.selectedSourceInviteCode, z = null != P.selectedJoinSourceType, Y = G || z, Q = (0, f.xC)(t), W = l.useMemo(() => n.filter(e => (0, f.rX)(t, Q, e)), [Q, n, t]), K = W.length > 0, J = 0 === W.filter(e => !M.has(e)).length, X = l.useCallback(() => {
+    K && (J ? T() : E(W))
+  }, [K, J, T, E, W]);
   return (0, r.jsx)("thead", {
     children: (0, r.jsxs)("tr", {
       className: w.tableHeaderRow,
-      children: [W && (0, r.jsx)("th", {
+      children: [Q && (0, r.jsx)("th", {
         className: o()(w.tableHeaderCellContainer, S.xsmallCol),
         children: (0, r.jsx)(u.u, {
-          shouldShow: !Q,
-          text: _.intl.string(_.t.tJEY0N),
+          shouldShow: !K,
+          text: _.intl.string(_.t.tJEY0G),
           children: (0, r.jsx)(C.P3F, {
             onClick: X,
             className: w.tableHeaderCell,
             children: (0, r.jsx)(d.$q, {
               type: d.M0.INVERTED,
               value: J,
-              disabled: !Q
+              disabled: !K
             })
           })
         })
       }), (0, r.jsx)(D, {
-        label: _.intl.string(_.t.Es7n9f)
+        label: _.intl.string(_.t.Es7n9c)
       }), V ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(C.yRy, {
           targetElementRef: i,
@@ -156,7 +156,7 @@ function R(e) {
             } = e, n = Z(e, ["onClick"]);
             return (0, r.jsx)(D, N({
               ref: i,
-              label: _.intl.string(_.t.xcKP1N),
+              label: _.intl.string(_.t.xcKP1P),
               onFilter: t,
               isFiltered: U,
               isSorted: B,
@@ -189,7 +189,7 @@ function R(e) {
         })]
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(D, {
-          label: _.intl.string(_.t.xcKP1N),
+          label: _.intl.string(_.t.xcKP1P),
           className: S.smallCol
         }), (0, r.jsx)(D, {
           label: _.intl.string(_.t.sPph4O),
@@ -211,14 +211,14 @@ function R(e) {
           } = e, n = Z(e, ["onClick"]);
           return (0, r.jsx)(D, N({
             ref: R,
-            label: _.intl.string(_.t.yn0w19),
+            label: _.intl.string(_.t["yn0w1+"]),
             onFilter: t,
             isFiltered: Y,
             className: S.smallCol
           }, n))
         }
       }) : V && (0, r.jsx)(D, {
-        label: _.intl.string(_.t.yn0w19),
+        label: _.intl.string(_.t["yn0w1+"]),
         className: S.smallCol
       }), (0, r.jsx)(C.yRy, {
         targetElementRef: L,
@@ -241,14 +241,14 @@ function R(e) {
           } = e, n = Z(e, ["onClick"]);
           return (0, r.jsx)(D, N({
             ref: L,
-            label: _.intl.string(_.t["2SZsWV"]),
+            label: _.intl.string(_.t["2SZsWX"]),
             onFilter: t,
             isFiltered: A,
             className: S.mediumCol
           }, n))
         }
       }), (0, r.jsx)(u.u, {
-        text: _.intl.string(_.t["2cRO3d"]),
+        text: _.intl.string(_.t["2cRO3R"]),
         position: "top",
         align: "left",
         shouldShow: true,
@@ -269,8 +269,8 @@ function R(e) {
           },
           children: e => (0, r.jsx)(D, {
             ref: I,
-            label: _.intl.string(_.t["7V375+"]),
-            "aria-label": _.intl.string(_.t["2cRO3d"]),
+            label: _.intl.string(_.t["7V3759"]),
+            "aria-label": _.intl.string(_.t["2cRO3R"]),
             onFilter: t => {
               var n;
               null == (n = e.onClick) || n.call(e, t)
@@ -288,7 +288,7 @@ function R(e) {
           })
         })
       }), (0, r.jsx)(D, {
-        label: _.intl.string(_.t["5Q9xGh"]),
+        label: _.intl.string(_.t["5Q9xGr"]),
         className: S.smallCol
       })]
     })

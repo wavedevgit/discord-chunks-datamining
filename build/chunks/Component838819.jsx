@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk887353 = require("./887353.js"),
   Chunk345213 = require("./345213.js");
-let M = e => {
+let D = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -59,7 +59,7 @@ let M = e => {
     let {
       tab: t = R.AW.HOME
     } = e;
-    (0, C.z)(p.f), (0, k.f)();
+    (0, C.z)(p.f), (0, j.f)();
     let n = (0, g.Z)((0, s.Z)()),
       i = (0, a.e7)([b.default], () => b.default.getCurrentUser()),
       {
@@ -91,22 +91,22 @@ let M = e => {
         tab: z
       }),
       Y = (0, y.O)(G),
-      [q, Q] = l.useState(),
-      J = (0, a.e7)([v.Z], () => {
+      [q, J] = l.useState(),
+      Q = (0, a.e7)([v.Z], () => {
         var e;
         return null == (e = v.Z.getCategory(q)) ? true : e.name
       }),
       [X, $] = l.useState();
     (0, I.Kp)();
     let ee = l.useCallback((e, t) => {
-        $(e), Q(t)
+        $(e), J(t)
       }, []),
       {
         selectedTab: et,
         transitionState: en,
         transitionToTab: er
-      } = (0, j.B)(z);
-    (0, x.q3)(n, et, J, en, X), (0, x.EB)(et, i);
+      } = (0, k.B)(z);
+    (0, x.q3)(n, et, Q, en, X), (0, x.EB)(et, i);
     let {
       dismissShopButtonDC: el
     } = (0, N.Z)();
@@ -129,17 +129,17 @@ let M = e => {
       children: (0, r.jsx)(E.k0, {
         newValue: {
           sessionId: n,
-          pageCategory: J,
+          pageCategory: Q,
           pageSize: R.kN
         },
         children: (0, r.jsx)(O.ni, {
           tab: et,
-          children: (0, r.jsx)(M, {
+          children: (0, r.jsx)(D, {
             onClose: W,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
               className: o()(H.shop, {
-                [D.shopTakeOver]: F
+                [M.shopTakeOver]: F
               }),
               ref: eo,
               tabIndex: false,

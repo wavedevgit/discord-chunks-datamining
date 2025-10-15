@@ -90,7 +90,7 @@ let g = Chunk647438.memo(function(e) {
         className: a()(u.innerHeader, {
           [u.toggled]: m && p
         }),
-        "aria-label": d.intl.string(d.t.dcl9MT),
+        "aria-label": d.intl.string(d.t.dcl9MQ),
         children: l
       }), (0, r.jsx)("div", {
         ref: y,

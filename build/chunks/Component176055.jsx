@@ -48,14 +48,14 @@ class N extends Chunk647438.PureComponent {
         className: Chunk295265.dotOnline
       }), (0, Chunk951288.jsx)("span", {
         className: Chunk295265.memberText,
-        children: Chunk388032.intl.format(Chunk388032.t["LC+S+v"], {
+        children: Chunk388032.intl.format(Chunk388032.t["LC+S+m"], {
           membersOnline: exports
         })
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk295265.dotOffline
       }), (0, Chunk951288.jsx)("span", {
         className: Chunk295265.memberText,
-        children: Chunk388032.intl.format(Chunk388032.t.zRl6XV, {
+        children: Chunk388032.intl.format(Chunk388032.t.zRl6XR, {
           count: module
         })
       })]
@@ -73,23 +73,23 @@ class N extends Chunk647438.PureComponent {
     } = this.props;
     if (exports && require) return null;
     let d = (0, Chunk411198.B3)(module),
-      p = Chunk388032.intl.string(Chunk388032.t.pxwdrK),
+      p = Chunk388032.intl.string(Chunk388032.t.pxwdrA),
       f = this.handleJoinOrView,
       b = Chunk755721.zx.Looks.FILLED,
       _ = Chunk755721.zx.Colors.PRIMARY;
     return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk295265.buttonColorInGuild, p = (0, Chunk951288.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk951288.jsx)("div", {
-        children: Chunk388032.intl.string(Chunk388032.t.cEnaW1)
+        children: Chunk388032.intl.string(Chunk388032.t.cEnaWx)
       }), (0, Chunk951288.jsx)(Chunk481060.dz2, {
         size: "md",
         color: "currentColor",
         className: Chunk295265.joinedCheckmark
       })]
-    })) : Chunk647438 && exports && (p = Chunk388032.intl.string(Chunk388032.t.XpeFYm)) : (p = Chunk388032.intl.string(Chunk388032.t.dKhVQE), f = this.handleLogin), (0, Chunk951288.jsxs)("div", {
+    })) : Chunk647438 && exports && (p = Chunk388032.intl.string(Chunk388032.t.XpeFYr)) : (p = Chunk388032.intl.string(Chunk388032.t.dKhVQN), f = this.handleLogin), (0, Chunk951288.jsxs)("div", {
       className: a()(Chunk593473, Chunk442837 === Chunk843445.b.SMALL ? Chunk295265.inviteSmall : Chunk295265.inviteLarge),
       children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
-        children: Chunk388032.intl.string(Chunk388032.t.s1KcLi)
+        children: Chunk388032.intl.string(Chunk388032.t.s1KcLo)
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk295265.content,
         children: [(0, Chunk951288.jsxs)("div", {

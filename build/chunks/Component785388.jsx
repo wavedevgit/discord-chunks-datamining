@@ -161,7 +161,7 @@ let er = e => {
       setSelected: s,
       reactionType: l,
       colors: u
-    } = e, f = i.useMemo(() => et(t), [t]), p = i.useMemo(() => en(t, $, Y.emoji, o()(Y.emoji, Y.emojiText)), [t]), h = l === I.O.BURST, m = h ? H.t.VmiNjY : H.t.cNfs19, g = H.intl.formatToPlainString(m, {
+    } = e, f = i.useMemo(() => et(t), [t]), p = i.useMemo(() => en(t, $, Y.emoji, o()(Y.emoji, Y.emojiText)), [t]), h = l === I.O.BURST, m = h ? H.t.VmiNjd : H.t["cNfs1/"], g = H.intl.formatToPlainString(m, {
       name: f,
       n: n
     }), E = i.useMemo(() => {
@@ -444,7 +444,7 @@ function eu(e) {
     disableTabs: o = false,
     onClose: s,
     transitionState: l,
-    "aria-label": c = H.intl.string(H.t.gHp0Cw)
+    "aria-label": c = H.intl.string(H.t.gHp0C4)
   } = e, d = (0, u.e7)([w.Z], () => w.Z.getChannel(t.getChannelId())), p = null == d ? true : d.getGuildId(), h = (0, u.e7)([x.Z, O.Z], () => {
     var e, n;
     let r = null != (n = x.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = O.Z.getMessage(Z.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;

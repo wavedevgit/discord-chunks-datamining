@@ -22,7 +22,7 @@ function f(e, t) {
     guildId: null != p ? p : d.aIL,
     channelId: e.id,
     channelName: (0, s.F6)(e, o.default, c.Z),
-    guildName: null != (r = null == x ? true : x.name) ? r : u.intl.string(u.t.LJpTRE),
+    guildName: null != (r = null == x ? true : x.name) ? r : u.intl.string(u.t.LJpTRF),
     muted: i.Z.isSelfMute(),
     deafened: i.Z.isSelfDeaf(),
     nonce: f

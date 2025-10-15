@@ -90,13 +90,13 @@ function d(e) {
         variant: "secondary",
         icon: a.whL,
         onClick: d,
-        "aria-label": s.intl.string(s.t["13/7kZ"])
+        "aria-label": s.intl.string(s.t["13/7kX"])
       }), (0, l.jsx)(a.hU, {
         size: "sm",
         variant: "secondary",
         icon: a.ZSh,
         onClick: m,
-        "aria-label": s.intl.string(s.t.PDTjLC)
+        "aria-label": s.intl.string(s.t.PDTjLN)
       })]
     })]
   })

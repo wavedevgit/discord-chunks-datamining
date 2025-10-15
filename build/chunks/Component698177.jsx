@@ -42,7 +42,7 @@ let x = () => {
       src: require("./292824.js")
     }), (0, Chunk951288.jsxs)(Chunk388905.Dx, {
       className: s()(Chunk197571.marginTop20, Chunk149715.flex, Chunk149715.justifyCenter, Chunk149715.alignCenter),
-      children: [Chunk388032.intl.string(Chunk388032.t.WWzQtb), (0, Chunk951288.jsx)(Chunk481060.owK, {
+      children: [Chunk388032.intl.string(Chunk388032.t.WWzQta), (0, Chunk951288.jsx)(Chunk481060.owK, {
         size: "md",
         color: "currentColor",
         className: Chunk197571.marginLeft8
@@ -51,14 +51,14 @@ let x = () => {
   });
   return b ? Z : (0, Chunk951288.jsxs)(Chunk388905.ZP, {
     children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-      children: Chunk388032.intl.string(Chunk388032.t.o4JNrK)
+      children: Chunk388032.intl.string(Chunk388032.t.o4JNrO)
     }), (0, Chunk951288.jsx)(Chunk388905.DK, {
       className: Chunk197571.marginTop8,
-      children: Chunk388032.intl.string(Chunk388032.t.y0tVbm)
+      children: Chunk388032.intl.string(Chunk388032.t.y0tVbq)
     }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
       className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk952802.Z, {
-        label: Chunk388032.intl.string(Chunk388032.t.eJnn09),
+        label: Chunk388032.intl.string(Chunk388032.t["eJnn0+"]),
         alpha2: y.alpha2,
         countryCode: C,
         value: module,
@@ -78,12 +78,12 @@ let x = () => {
         size: Chunk388905.zx.Sizes.SMALL,
         look: Chunk388905.zx.Looks.LINK,
         onClick: A,
-        children: Chunk388032.intl.string(Chunk388032.t["5b60go"])
+        children: Chunk388032.intl.string(Chunk388032.t["5b60gi"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop20,
         onClick: T,
         submitting: E,
-        children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)
+        children: Chunk388032.intl.string(Chunk388032.t.i4jeWR)
       })]
     })]
   })

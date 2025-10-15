@@ -19,7 +19,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345909 = require("./345909.js");
+  Chunk660886 = require("./660886.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,30 +61,30 @@ function y() {
     },
     I = [{
       value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
+      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
       value: Chunk524437.Q4.BLOCK,
-      label: Chunk388032.intl.string(Chunk388032.t["D/157e"])
+      label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }],
     T = [{
       value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
+      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }],
     S = {
       value: Chunk524437.Q4.SHOW,
-      label: Chunk388032.intl.string(Chunk388032.t["5k5OFh"])
+      label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
   exports && (I.unshift(S), T.unshift(S));
   let A = {
     isDisabled: require,
-    tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+    tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
   };
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
     setting: Chunk726985.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: Chunk526761.FY.EXPLICIT_MEDIA_REDACTION_V2,
-    description: Chunk388032.intl.string(Chunk388032.t.Wnojv7),
+    description: Chunk388032.intl.string(Chunk388032.t.Wnojv1),
     children: [(0, Chunk951288.jsx)(Chunk947707.Z, b({
-      title: Chunk388032.intl.string(Chunk388032.t["+uI23N"]),
+      title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
       value: y,
       onChange: e => v({
         explicitContentFriendDm: e
@@ -98,13 +98,13 @@ function y() {
       }),
       options: I
     }, A)), (0, Chunk951288.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["FP+a4+"]),
+      title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
       value: E,
       onChange: e => v({
         explicitContentGuilds: e
       }),
       isDisabled: !exports || require,
-      tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true,
+      tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true,
       options: T
     })]
   })

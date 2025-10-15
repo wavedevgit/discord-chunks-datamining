@@ -50,7 +50,7 @@ function p(t) {
   return (0, l.jsx)(s.Y0X, {
     className: u.bugReporterSubmitModalRoot,
     transitionState: e,
-    "aria-label": d.intl.string(d.t.mCCdws),
+    "aria-label": d.intl.string(d.t.mCCdwi),
     parentComponent: "BugReporterSubmitModal",
     children: (0, l.jsxs)(s.hzk, {
       style: {
@@ -67,8 +67,8 @@ function p(t) {
       }), (0, l.jsxs)(s.Text, {
         className: u.submitText,
         variant: "text-sm/normal",
-        children: ["Thanks for submitting a ", (0, l.jsx)(i.Z, {
-          onClick: () => (0, r.Z)(p.permalink_url),
+        children: ["Thanks for submitting a ", (0, l.jsx)(r.Z, {
+          onClick: () => (0, i.Z)(p.permalink_url),
           children: "bug"
         }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(b, {
           punConfig: m

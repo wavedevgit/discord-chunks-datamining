@@ -30,12 +30,12 @@ function u(e) {
   return (0, n.jsx)("div", {
     children: (0, n.jsxs)(l.v2r, {
       navId: "sort-and-view",
-      "aria-label": a.intl.string(a.t["4jfWTE"]),
+      "aria-label": a.intl.string(a.t["4jfWTK"]),
       hideScroller: true,
       onClose: t,
       onSelect: t,
       children: [(0, n.jsx)(l.kSQ, {
-        label: a.intl.string(a.t.mBvLen),
+        label: a.intl.string(a.t.mBvLev),
         children: C
       }), (0, n.jsx)(l.kSQ, {
         children: (0, n.jsx)(l.sNh, {
@@ -44,7 +44,7 @@ function u(e) {
           label: (0, n.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "none",
-            children: a.intl.string(a.t["3b//lJ"])
+            children: a.intl.string(a.t["3b//lO"])
           }),
           action: u
         })

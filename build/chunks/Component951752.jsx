@@ -28,9 +28,9 @@ function p(e) {
       children: (0, r.jsxs)(l.ZP, {
         children: [(0, r.jsx)(l.Dx, {
           className: u.appOpenedTitle,
-          children: c.intl.string(c.t.csrAMD)
+          children: c.intl.string(c.t.csrAMJ)
         }), (0, r.jsx)(l.DK, {
-          children: c.intl.string(c.t.ghBJz8)
+          children: c.intl.string(c.t.ghBJz9)
         })]
       })
     })]
@@ -43,7 +43,7 @@ function p(e) {
       className: u.container,
       children: (0, r.jsxs)(l.ZP, {
         children: [(0, r.jsx)(l.Dx, {
-          children: c.intl.string(c.t["Z+hCVV"])
+          children: c.intl.string(c.t["Z+hCVU"])
         }), (0, r.jsx)(l.Hh, {})]
       })
     })]

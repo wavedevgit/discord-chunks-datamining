@@ -168,7 +168,7 @@ function P(e) {
       break
     }
     case c.jw.ATTACHMENT:
-      f = R(O.intl.string(O.t.nONJVV));
+      f = R(O.intl.string(O.t.nONJVc));
       break;
     default: {
       let e = null == D || null == (s = D.choices) ? true : s.find(e => e.value === g.value);

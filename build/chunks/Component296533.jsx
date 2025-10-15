@@ -68,25 +68,25 @@ let C = 3e3;
 
 function N(e) {
   if (null == e || e === b.Eu4.NONE) return "";
-  let t = [O.intl.formatToPlainString(O.t.dLlKX1, {
+  let t = [O.intl.formatToPlainString(O.t["dLlKX/"], {
     numEmojiSlots: y.HO[e].limits.emoji
-  }), O.intl.formatToPlainString(O.t["+ANIfn"], {
+  }), O.intl.formatToPlainString(O.t["+ANIfv"], {
     numStickerSlots: y.HO[e].limits.stickers
-  }), O.intl.formatToPlainString(O.t["4gt60d"], {
+  }), O.intl.formatToPlainString(O.t["4gt60b"], {
     numSoundboardSlots: y.HO[e].limits.soundboardSounds
-  }), O.intl.formatToPlainString(O.t.XahSjY, {
+  }), O.intl.formatToPlainString(O.t.XahSjZ, {
     resolution: y.HO[e].limits.screenShareQualityResolution,
     framerate: y.HO[e].limits.screenShareQualityFramerate
-  }), O.intl.formatToPlainString(O.t.NbNs7e, {
+  }), O.intl.formatToPlainString(O.t.NbNs7S, {
     bitrate: y.HO[e].limits.bitrate / 1e3
-  }), O.intl.formatToPlainString(O.t.VVKcpq, {
+  }), O.intl.formatToPlainString(O.t.VVKcpn, {
     filesize: y.HO[e].limits.fileSize / 1024 / 1024
-  }), O.intl.formatToPlainString(O.t.TbpCvr, {
+  }), O.intl.formatToPlainString(O.t.TbpCvv, {
     numVideoStageSeats: y.HO[e].limits.stageVideoUsers
-  }), O.intl.string(O.t.LDyX3t), O.intl.string(O.t.YtGlPT)];
-  e >= b.Eu4.TIER_2 && (t.push(O.intl.string(O.t.SztbtL)), t.push(O.intl.string(O.t["3GK91t"]))), e >= b.Eu4.TIER_3 && t.push(O.intl.string(O.t.XUUJd3));
+  }), O.intl.string(O.t.LDyX3i), O.intl.string(O.t.YtGlPW)];
+  e >= b.Eu4.TIER_2 && (t.push(O.intl.string(O.t.SztbtN)), t.push(O.intl.string(O.t["3GK91n"]))), e >= b.Eu4.TIER_3 && t.push(O.intl.string(O.t["XUUJd+"]));
   let n = t[Math.floor(Math.random() * t.length)];
-  return O.intl.format(O.t["/dOAmZ"], {
+  return O.intl.format(O.t["/dOAmQ"], {
     perk: n
   })
 }
@@ -102,7 +102,7 @@ function R(e) {
   } = e, d = i.useMemo(() => {
     if (l) {
       let e = c.currentPeriodEnd;
-      return c.isPausedForFractionalPremium && (e = u.endsAt.toDate()), O.intl.format(O.t.Z4ULRE, {
+      return c.isPausedForFractionalPremium && (e = u.endsAt.toDate()), O.intl.format(O.t.Z4ULRD, {
         date: e
       })
     }
@@ -189,7 +189,7 @@ function P(e) {
         align: "center",
         children: e => (0, r.jsx)(s.P3F, A(T({}, e), {
           innerRef: S,
-          "aria-label": O.intl.string(O.t.PdRCRk),
+          "aria-label": O.intl.string(O.t.PdRCRg),
           className: v.boostSlotMenuIcon,
           children: (0, r.jsx)(s.Huf, {
             size: "md",

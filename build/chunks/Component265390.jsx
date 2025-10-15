@@ -14,7 +14,7 @@ var Chunk915009 = require("./915009.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345909 = require("./345909.js");
+  Chunk660886 = require("./660886.js");
 
 function _() {
   let e = Chunk695346.JT.useSetting(),
@@ -23,14 +23,14 @@ function _() {
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_QUESTS_3P,
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t.CyLYKS),
-      note: Chunk388032.intl.format(Chunk388032.t["2QFDU1"], {
+      title: Chunk388032.intl.string(Chunk388032.t.CyLYKZ),
+      note: Chunk388032.intl.format(Chunk388032.t["2QFDU/"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !module,
       onChange: e => o.JT.updateSetting(!e),
       disabled: exports || require,
-      tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+      tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
     })
   })
 }

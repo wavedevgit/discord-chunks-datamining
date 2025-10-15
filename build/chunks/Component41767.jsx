@@ -1,7 +1,7 @@
 /** Chunk was on 78273 **/
 /** chunk id: 41767, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,44 +24,44 @@ let o = t => {
       let n = i.find(n => n.value === t);
       null != n && r(n.value)
     },
-    placeholder: c.intl.string(c.t.k7yo6u)
+    placeholder: c.intl.string(c.t.k7yo6p)
   })
 };
 
-function j(t) {
+function A(t) {
   let {
     action: n,
     triggerType: e,
     isEdit: a,
-    onUpdateDuration: j,
-    onClose: A,
+    onUpdateDuration: A,
+    onClose: j,
     transitionState: E
-  } = t, [d, _] = r.useState(() => null != n.metadata.durationSeconds && n.metadata.durationSeconds > 0 ? n.metadata.durationSeconds : s.DisableCommunicationDuration.DURATION_60_SEC), N = (0, u.c)(n.type, n, e);
-  if (null == N) return null;
+  } = t, [d, S] = r.useState(() => null != n.metadata.durationSeconds && n.metadata.durationSeconds > 0 ? n.metadata.durationSeconds : s.DisableCommunicationDuration.DURATION_60_SEC), _ = (0, u.c)(n.type, n, e);
+  if (null == _) return null;
   let {
-    headerText: S
-  } = N;
+    headerText: N
+  } = _;
   return (0, l.jsx)(i.Modal, {
-    onClose: A,
+    onClose: j,
     transitionState: E,
-    title: S,
-    subtitle: c.intl.string(c.t.DWGBAg),
+    title: N,
+    subtitle: c.intl.string(c.t.DWGBAh),
     actions: [{
-      text: c.intl.string(c.t["ETE/oK"]),
+      text: c.intl.string(c.t["ETE/oC"]),
       onClick: () => {
-        A()
+        j()
       },
       variant: "secondary"
     }, {
-      text: a ? c.intl.string(c.t.bt75u7) : c.intl.string(c.t.R3BPHx),
+      text: a ? c.intl.string(c.t.bt75uw) : c.intl.string(c.t["R3BPH+"]),
       onClick: () => {
-        j(d)
+        A(d)
       }
     }],
     children: (0, l.jsx)(o, {
       duration: d,
       onSelectDuration: t => {
-        _(t)
+        S(t)
       }
     })
   })

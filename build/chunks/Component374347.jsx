@@ -41,7 +41,7 @@ function m() {
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           variant: "text-lg/semibold",
           className: Chunk657254.advancedTitle,
-          children: [Chunk388032.intl.string(Chunk388032.t.dYRsrq), (0, Chunk951288.jsx)(Chunk259580.Z, {
+          children: [Chunk388032.intl.string(Chunk388032.t.dYRsrm), (0, Chunk951288.jsx)(Chunk259580.Z, {
             expanded: module,
             className: Chunk657254.titleCaret,
             width: 20,

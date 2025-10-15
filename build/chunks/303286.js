@@ -18,7 +18,7 @@ var Chunk26151 = require("./26151.js"),
 
 function m(e) {
   let t = (0, a.F6)(e, u.default, s.Z),
-    n = f.intl.string(f.t.ssrVzM),
+    n = f.intl.string(f.t.ssrVzG),
     m = (0, o.x)(e),
     g = (0, c.Z)(e),
     {
@@ -35,8 +35,8 @@ function m(e) {
     icon: m,
     title: t,
     body: n,
-    confirmText: f.intl.string(f.t["0D/6R0"]),
-    cancelText: f.intl.string(f.t.BVN4pK),
+    confirmText: f.intl.string(f.t["0D/6Rz"]),
+    cancelText: f.intl.string(f.t.BVN4pL),
     onNotificationShow: () => {
       y()
     },

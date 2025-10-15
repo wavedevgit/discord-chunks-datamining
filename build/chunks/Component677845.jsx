@@ -60,7 +60,7 @@ function S(e) {
     V = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     F = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     G = null != M && M === I.id,
-    z = L.map(e => t => (0, i.jsx)(v.ZP, {
+    W = L.map(e => t => (0, i.jsx)(v.ZP, {
       participant: e,
       channel: I,
       className: E.tile,
@@ -82,19 +82,19 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != w && !U && (!(R >= 2) || !H || F || V || G ? B && 1 === R && k && (H && !F ? z.push(e => (0, i.jsx)(_.h, {
+  }, []), null != w && !U && (!(R >= 2) || !H || F || V || G ? B && 1 === R && k && (H && !F ? W.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: w,
     width: e,
     inPopout: A,
     handleClose: D,
     userParticipantCount: R
-  })) : z.push(e => (0, i.jsx)(O.Z, {
+  })) : W.push(e => (0, i.jsx)(O.Z, {
     width: e,
     channel: I,
     guild: w,
     inPopout: A
-  }))) : z.push(e => (0, i.jsx)(_.h, {
+  }))) : W.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: w,
     width: e,
@@ -102,15 +102,15 @@ function S(e) {
     handleClose: D,
     userParticipantCount: R
   })));
-  let W = r.useCallback(e => {
+  let z = r.useCallback(e => {
     var t, n;
     return null != (n = null == (t = L[e]) ? true : t.id) ? n : "empty-tile"
   }, [L]);
   return (0, i.jsx)(g.Z, {
     className: Z,
-    keyExtractor: W,
+    keyExtractor: z,
     paddingTop: 64,
     paddingBottom: 64,
-    children: z
+    children: W
   })
 }

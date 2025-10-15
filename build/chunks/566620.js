@@ -372,8 +372,8 @@ async function ec(e) {
   if (p !== W.jy.CAN_LAUNCH) {
     let e = 4;
     return p === W.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, R.w)()) : p === W.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, l.Z.show({
-      title: en.intl.string(en.t["IOy+Iy"]),
-      body: en.intl.string(en.t.UXoQTk),
+      title: en.intl.string(en.t["IOy+I5"]),
+      body: en.intl.string(en.t.UXoQTp),
       hideActionSheet: false
     })), {
       result: "failure",

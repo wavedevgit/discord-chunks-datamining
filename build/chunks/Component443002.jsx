@@ -94,7 +94,7 @@ let T = function(e) {
             className: I.heading,
             color: "always-white",
             variant: "display-lg",
-            children: v.intl.string(v.t.N4sqzM)
+            children: v.intl.string(v.t.N4sqzL)
           }), (0, r.jsx)(p.Z, {
             guild: n,
             closeLayer: x,

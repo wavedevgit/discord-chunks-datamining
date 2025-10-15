@@ -28,14 +28,14 @@ let s = e => {
       }), (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: o.intl.string(o.t["/GAO1N"])
+        children: o.intl.string(o.t["/GAO1P"])
       })]
     }), (0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: i.footerButton,
       children: (0, a.jsx)(r.Button, {
         variant: "primary",
-        text: o.intl.string(o.t["7NqTJi"]),
+        text: o.intl.string(o.t["7NqTJn"]),
         onClick: t
       })
     })]

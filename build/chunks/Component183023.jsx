@@ -129,7 +129,7 @@ let J = 32,
               })
             }), (0, r.jsx)(f.Text, {
               variant: "text-sm/normal",
-              children: W.intl.string(W.t.sXdH8f)
+              children: W.intl.string(W.t.sXdH8c)
             })]
           })]
         })
@@ -185,7 +185,7 @@ let J = 32,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: W.intl.format(W.t["LC+S+v"], {
+          children: W.intl.format(W.t["LC+S+m"], {
             membersOnline: t.presenceCount
           })
         }), (0, r.jsx)("div", {
@@ -196,18 +196,18 @@ let J = 32,
           children: (0, r.jsx)(f.Text, {
             variant: "text-xs/normal",
             color: "text-link",
-            children: W.intl.string(W.t.riu2R0)
+            children: W.intl.string(W.t.riu2R5)
           })
         }) : (0, r.jsx)(f.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: W.intl.string(W.t.inyJqK)
+          children: W.intl.string(W.t.inyJqO)
         })]
       })
     }, O = () => m ? g() : (0, r.jsx)(f.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: W.intl.string(W.t.H29mx8)
+      children: W.intl.string(W.t.H29mx4)
     });
     return (0, r.jsxs)(E.Z, {
       align: E.Z.Align.CENTER,
@@ -399,7 +399,7 @@ let J = 32,
               })]
             })]
           }), i(), eu && (0, r.jsx)(R.Z, {
-            text: ei ? W.intl.string(W.t.yma8Vl) : W.intl.string(W.t.nN2DIi),
+            text: ei ? W.intl.string(W.t.yma8Vp) : W.intl.string(W.t.nN2DIo),
             size: "sm",
             fullWidth: true,
             onClick: t
@@ -414,7 +414,7 @@ let J = 32,
             n && (null == P || P(), em || x || k.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
           a = () => {
-            let e = W.intl.string(W.t.pnsAS0);
+            let e = W.intl.string(W.t.pnsAS2);
             return (0, r.jsx)(f.P3F, {
               onClick: i,
               className: K.showMoreEmojis,
@@ -441,7 +441,7 @@ let J = 32,
             className: K.guildTitle,
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: Q ? W.intl.string(W.t.ohTzZG) : W.intl.string(W.t["eLfh+f"])
+            children: Q ? W.intl.string(W.t.ohTzZH) : W.intl.string(W.t["eLfh+a"])
           }), (0, r.jsx)(en, {
             expressionSourceGuild: null != v ? v : I.JO.createFromGuildRecord(S),
             hasJoinedExpressionSourceGuild: Q,

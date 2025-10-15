@@ -192,7 +192,7 @@ let O = Chunk647438.memo(function() {
                   variant: "text-xs/medium",
                   className: j.channelSubtitle,
                   color: "text-brand",
-                  children: x.intl.string(x.t.mPxmeH)
+                  children: x.intl.string(x.t.mPxmeE)
                 })]
               }) : null]
             })
@@ -204,7 +204,7 @@ let O = Chunk647438.memo(function() {
             }) : (0, r.jsx)(o.Button, {
               size: "sm",
               variant: "secondary",
-              text: x.intl.string(x.t.zA9d1N),
+              text: x.intl.string(x.t.zA9d1J),
               icon: o.mBM,
               onClick: b.dG4
             })

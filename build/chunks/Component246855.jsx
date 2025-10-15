@@ -1,7 +1,7 @@
 /** Chunk was on 74560 **/
 /** chunk id: 246855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk466674 = require("./466674.js"),
   Chunk201284 = require("./201284.js");
 
-function Z(e) {
+function w(e) {
   let {
     onVideoLoaded: t
   } = e;
@@ -45,13 +45,13 @@ function Z(e) {
     loop: true,
     onCanPlayThrough: t,
     children: (0, a.jsx)("source", {
-      src: O.Z,
+      src: Z.Z,
       type: "video/webm"
     })
   })
 }
 
-function w(e) {
+function O(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
@@ -64,7 +64,7 @@ function w(e) {
       null == (e = h.current) || e.play()
     }, 200)
   }, [n, i]);
-  let O = r.useCallback(() => {
+  let Z = r.useCallback(() => {
     if (!i) {
       var e;
       m(false), null == (e = x.current) || e.play()
@@ -95,21 +95,21 @@ function w(e) {
       className: N.centerOrb,
       controls: false,
       onCanPlayThrough: r.useCallback(() => y(true), []),
-      onEnded: O,
+      onEnded: Z,
       children: (0, a.jsx)("source", {
         src: _,
         type: "video/webm"
       })
     }), (0, a.jsxs)("div", {
       className: N.smallOrbContainer,
-      children: [(0, a.jsx)(Z, {
+      children: [(0, a.jsx)(w, {
         onVideoLoaded: r.useCallback(() => R(true), [])
-      }), (0, a.jsx)(Z, {}), (0, a.jsx)(Z, {}), (0, a.jsx)(Z, {})]
+      }), (0, a.jsx)(w, {}), (0, a.jsx)(w, {}), (0, a.jsx)(w, {})]
     })]
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     isLoading: t,
     onClose: n,
@@ -129,7 +129,7 @@ function I(e) {
   };
   return (0, a.jsxs)("div", {
     className: N.contentContainer,
-    children: [(0, a.jsx)(w, {
+    children: [(0, a.jsx)(O, {
       isLoading: t,
       onVideoLoaded: s
     }), (0, a.jsxs)("div", {
@@ -142,14 +142,14 @@ function I(e) {
         }), (0, a.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: R.intl.formatToPlainString(R.t.YMor7u, {
+          children: R.intl.formatToPlainString(R.t.YMor7k, {
             count: r
           })
         })]
       }), null != i ? (0, a.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: R.intl.format(R.t.g4t9a2, {
+        children: R.intl.format(R.t.g4t9aw, {
           orbsBalance: i,
           orbsBalanceHook: (e, t) => (0, a.jsx)(l.Text, {
             variant: "text-sm/medium",
@@ -162,14 +162,14 @@ function I(e) {
     }), (0, a.jsx)(l.Button, {
       variant: "secondary",
       size: "sm",
-      text: R.intl.string(R.t.WYchdX),
+      text: R.intl.string(R.t.WYchde),
       onClick: o,
       fullWidth: true
     })]
   })
 }
 
-function P(e) {
+function I(e) {
   var t;
   let {
     quest: n,
@@ -197,8 +197,8 @@ function P(e) {
     isRewardContentLoading: N,
     rewardContentHasError: A,
     rewardContent: A ? null : (0, a.jsx)(y.Z, {
-      rewardName: R.intl.string(R.t.Lmysvb),
-      children: (0, a.jsx)(I, {
+      rewardName: R.intl.string(R.t.Lmysvd),
+      children: (0, a.jsx)(P, {
         onClose: i,
         orbsEarned: m,
         orbsBalance: d,

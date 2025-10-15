@@ -20,7 +20,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk895563 = require("./895563.jsx"),
   Chunk423589 = require("./423589.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx");
 let Z = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(n) {
   let {
@@ -28,12 +28,12 @@ let Z = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(n) {
     onSelect: t
   } = n, c = (0, d.Z)(e), o = (0, s.Z)(e), a = (0, p.l)(e), y = (0, p.P)(e), Z = (0, f.ZP)(e), v = (0, O.Z)({
     id: e.id,
-    label: P.intl.string(P.t.gFHI3t)
+    label: P.intl.string(P.t.gFHI3k)
   }), E = (0, u.Z)(e), _ = (0, b.Z)(e), N = (0, h.ZP)(e), C = (0, j.Mn)("ReportToModChannelContextMenu");
   return (0, r.jsxs)(i.v2r, {
     navId: "report-to-mod-channel-context",
     onClose: l.Zy,
-    "aria-label": P.intl.string(g.default["zp+z/P"]),
+    "aria-label": P.intl.string(g.default["zp+z/E"]),
     onSelect: t,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [c, a]

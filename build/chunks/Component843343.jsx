@@ -22,7 +22,7 @@ function f() {
     f = (0, Chunk91192.Ie)("unavailable-guilds-button");
   return require <= 0 ? null : (0, Chunk951288.jsx)(Chunk682662.H, {
     children: (0, Chunk951288.jsx)(Chunk662146.Z, {
-      text: Chunk388032.intl.format(Chunk388032.t["TnH05+"], {
+      text: Chunk388032.intl.format(Chunk388032.t["TnH05/"], {
         count: require
       }),
       color: Chunk481060.aML.Colors.RED,
@@ -47,7 +47,7 @@ function f() {
         href: Chunk231338.yX.STATUS,
         target: "_blank",
         className: Chunk419619.guildsError,
-        "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["MEpX+/"], {
+        "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["MEpX+2"], {
           count: require
         })
       }, f), t = t = {

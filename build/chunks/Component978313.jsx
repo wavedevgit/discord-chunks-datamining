@@ -22,14 +22,14 @@ function h(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [l, h] = r.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = r.useState(true), [O, y] = r.useState(false), I = r.useRef(null), {
+  } = e, [l, h] = r.useState((null == t ? true : t.summaryLocalized) != null), [j, v] = r.useState(true), [O, y] = r.useState(false), I = r.useRef(null), {
     width: b,
-    height: E
+    height: N
   } = (0, u.Z)();
   return (r.useEffect(() => {
     let e = I.current;
-    null != e && y(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [I, b, E, v]), null == t.summary) ? null : (0, i.jsxs)("div", {
+    null != e && y(e.scrollHeight - e.clientHeight > 1 || !j)
+  }, [I, b, N, j]), null == t.summary) ? null : (0, i.jsxs)("div", {
     className: a()(g.column, g.gapMd),
     children: [null != t.summaryLocalized && (0, i.jsxs)("div", {
       className: a()(g.row, g.gapSm),
@@ -39,25 +39,25 @@ function h(e) {
       }), (0, i.jsx)(o.xvT, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: l ? p.intl.format(p.t.aZ2iIi, {
+        children: l ? p.intl.format(p.t.aZ2iIp, {
           onShowOriginal: () => h(false)
-        }) : p.intl.format(p.t["/2ylFx"], {
+        }) : p.intl.format(p.t["/2ylF4"], {
           onShowTranslated: () => h(true)
         })
       })]
     }), (0, i.jsx)(o.xvT, {
       ref: I,
-      lineClamp: v ? 8 : true,
+      lineClamp: j ? 8 : true,
       variant: "text-sm/normal",
       children: l ? t.summaryLocalized : t.summary
     }), O && (0, i.jsx)(d.P3F, {
       className: g.clickable,
       onClick: () => {
-        n(v ? m.as.ShowMore : m.as.ShowLess), j(!v)
+        n(j ? m.as.ShowMore : m.as.ShowLess), v(!j)
       },
       children: (0, i.jsx)(o.xvT, {
         variant: "text-sm/semibold",
-        children: v ? p.intl.string(p.t.lBeKY2) : p.intl.string(p.t["6MwJo6"])
+        children: j ? p.intl.string(p.t.lBeKY2) : p.intl.string(p.t["6MwJo/"])
       })
     }), (0, i.jsx)(f.Z, {
       className: x.platforms,

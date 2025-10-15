@@ -40,21 +40,21 @@ function x(t) {
     }
   }, [x]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: N.ringContainer,
+      className: I.ringContainer,
       children: (0, i.jsx)("img", {
-        src: I,
+        src: N,
         alt: "",
-        className: N.__invalid_ringArt
+        className: I.__invalid_ringArt
       })
     }), (0, i.jsx)(s.Fmz, {
       importData: A,
       shouldAnimate: !C && !m,
-      className: N.wumpus,
+      className: I.wumpus,
       pauseAtFrame: m ? 200 : true
     }), (0, i.jsx)(o.u, {
-      text: C ? p.intl.string(p.t.RscU7O) : p.intl.string(p.t.ZcgDJS),
+      text: C ? p.intl.string(p.t.RscU7I) : p.intl.string(p.t.ZcgDJX),
       position: "top",
-      "aria-label": C ? p.intl.string(p.t.RscU7O) : p.intl.string(p.t.ZcgDJS),
+      "aria-label": C ? p.intl.string(p.t.RscU7I) : p.intl.string(p.t.ZcgDJX),
       children: (0, i.jsx)(s.P3F, {
         onClick: () => {
           C ? ((0, u.JO)(), l.default.track(_.rMx.VIBING_WUMPUS_ACTION, {
@@ -63,22 +63,22 @@ function x(t) {
             action: d.G.PAUSE
           })), h(!C)
         },
-        className: N.iconButton,
+        className: I.iconButton,
         children: C ? (0, i.jsx)(s.o1U, {
           size: "xs",
           color: "currentColor",
-          className: N.icon
+          className: I.icon
         }) : (0, i.jsx)(s.fpf, {
           size: "xs",
           color: "currentColor",
-          className: N.icon
+          className: I.icon
         })
       })
     }), (0, i.jsx)(s.hzk, {
       "data-migration-pending": true,
-      className: N.body,
+      className: I.body,
       children: (0, i.jsxs)("div", {
-        className: N.textContainer,
+        className: I.textContainer,
         children: [(0, i.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
@@ -86,16 +86,16 @@ function x(t) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: p.intl.string(p.t.R8LCMT)
+          children: p.intl.string(p.t.R8LCMZ)
         })]
       })
     }), (0, i.jsx)(s.mzw, {
       "data-migration-pending": true,
       children: (0, i.jsx)("div", {
-        className: N.buttonContainer,
+        className: I.buttonContainer,
         children: (0, i.jsx)(s.Button, {
           variant: "primary",
-          text: p.intl.string(p.t["8eKkaW"]),
+          text: p.intl.string(p.t["8eKkaf"]),
           fullWidth: true,
           onClick: () => {
             n(), l.default.track(_.rMx.VIBING_WUMPUS_ACTION, {

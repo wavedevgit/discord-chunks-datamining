@@ -25,16 +25,16 @@ function N(e) {
     onComplete: n,
     onConnect: a,
     isSlideReady: o
-  } = e, [N, x] = r.useState(""), [T, A] = r.useState(false), [C, j] = r.useState(null), O = r.useRef(null);
+  } = e, [N, x] = r.useState(""), [A, T] = r.useState(false), [C, j] = r.useState(null), y = r.useRef(null);
   r.useEffect(() => {
     var e;
-    o && (null == (e = O.current) || e.focus())
+    o && (null == (e = y.current) || e.focus())
   }, [o]);
-  let y = r.useCallback(e => {
+  let O = r.useCallback(e => {
     e.preventDefault();
     let t = N.trim();
-    if ("" === t) return void j(h.intl.string(h.t.IRq5am));
-    j(null), A(true);
+    if ("" === t) return void j(h.intl.string(h.t.IRq5ah));
+    j(null), T(true);
     let a = t.split("/"),
       o = a[a.length - 1];
     c.ZP.resolveInvite(o, "Join Guild", {
@@ -43,7 +43,7 @@ function N(e) {
       let {
         invite: t
       } = e;
-      if (A(false), null == t) return void j(h.intl.string(h.t["GEYI+f"]));
+      if (T(false), null == t) return void j(h.intl.string(h.t["GEYI+Z"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -53,15 +53,15 @@ function N(e) {
             n(), c.ZP.transitionToInvite(e)
           }
         }).catch(e => {
-          e instanceof u.yZ || e instanceof u.Hx ? j((0, f.O)(e.code)) : j(h.intl.string(h.t.dDZRd3))
+          e instanceof u.yZ || e instanceof u.Hx ? j((0, f.O)(e.code)) : j(h.intl.string(h.t.dDZRdy))
         })
       }
     }, e => {
-      A(false);
+      T(false);
       let t = new u.yZ(e);
       j((0, f.O)(t.code))
     })
-  }, [N, A, j, n]);
+  }, [N, T, j, n]);
   return {
     content: (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsxs)(l.xBx, {
@@ -72,7 +72,7 @@ function N(e) {
           variant: "heading-xl/bold",
           color: "header-primary",
           className: b.title,
-          children: h.intl.string(h.t.riOUtL)
+          children: h.intl.string(h.t.riOUtB)
         }), (0, s.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
@@ -80,19 +80,19 @@ function N(e) {
         })]
       }), (0, s.jsxs)(l.hzk, {
         children: [(0, s.jsx)("form", {
-          onSubmit: y,
+          onSubmit: O,
           className: b.inputForm,
           children: (0, s.jsx)(l.oil, {
-            label: h.intl.string(h.t.qreV29),
+            label: h.intl.string(h.t.qreV25),
             error: C,
             value: N,
             onChange: x,
-            inputRef: O
+            inputRef: y
           })
         }), (0, s.jsx)(l.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          children: h.intl.format(h.t.lHTZl5, {
+          children: h.intl.format(h.t.lHTZl2, {
             examples: "".concat(E).concat("wumpus-friends", ", ").concat("hTKzmak")
           })
         }), (0, s.jsx)(l.Text, {
@@ -112,16 +112,16 @@ function N(e) {
     footer: (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsx)(l.Button, {
         variant: "primary",
-        text: h.intl.string(h.t.VJlc0d),
-        onClick: y,
+        text: h.intl.string(h.t.VJlc0S),
+        onClick: O,
         disabled: 0 === N.length,
-        loading: T
+        loading: A
       }), (0, s.jsx)(i.zx, {
         className: b.__invalid_skipButton,
         look: i.zx.Looks.BLANK,
         size: i.zx.Sizes.MIN,
         onClick: t,
-        children: h.intl.string(h.t["13/7kZ"])
+        children: h.intl.string(h.t["13/7kX"])
       })]
     })
   }

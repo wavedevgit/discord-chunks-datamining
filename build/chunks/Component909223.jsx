@@ -55,9 +55,9 @@ function j(e, t) {
 }
 Chunk442837.ZP.initialize();
 let I = {
-    [Chunk82554.BM.MESSAGE]: Chunk388032.t.fuqnBA,
-    [Chunk82554.BM.USER]: Chunk388032.t.F4jrRU,
-    [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMj
+    [Chunk82554.BM.MESSAGE]: Chunk388032.t.fuqnBC,
+    [Chunk82554.BM.USER]: Chunk388032.t.F4jrRW,
+    [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMs
   },
   N = e => {
     let {
@@ -78,8 +78,8 @@ let I = {
           onFormSubmit: s,
           onResend: t,
           onSuccess: o,
-          headerText: x.intl.string(x.t.H3Q7U1),
-          confirmButtonText: x.intl.string(x.t["13ofGh"]),
+          headerText: x.intl.string(x.t.H3Q7U8),
+          confirmButtonText: x.intl.string(x.t["13ofGu"]),
           impression: {
             impressionName: l.ImpressionNames.URF_CONFIRM_EMAIL_CODE
           }
@@ -94,8 +94,8 @@ let I = {
         } = await n.e("20670").then(n.bind(n, 993018));
         return t => (0, r.jsx)(e, j(b({}, t), {
           onSuccess: s,
-          headerText: x.intl.string(x.t.ZLRYGR),
-          confirmButtonText: x.intl.string(x.t.PDTjLC)
+          headerText: x.intl.string(x.t.ZLRYGU),
+          confirmButtonText: x.intl.string(x.t.PDTjLN)
         }))
       }),
       children: [(0, r.jsx)(a.Text, {
@@ -133,10 +133,10 @@ let I = {
     }) : null != require && require.length > 0 && (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.Z11w19)
+        children: Chunk388032.intl.string(Chunk388032.t.Z11w18)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.format(Chunk388032.t["532l+v"], {
+        children: Chunk388032.intl.format(Chunk388032.t["532l+q"], {
           supportURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, Chunk951288.jsx)("div", {

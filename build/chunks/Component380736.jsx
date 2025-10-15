@@ -128,7 +128,7 @@ let C = Chunk647438.memo(function(e) {
     return (0, r.jsx)(_.Z, {
       className: b.dismissButton,
       onDismiss: U,
-      "aria-label": E.intl.string(E.t.LnEgqa)
+      "aria-label": E.intl.string(E.t.LnEgqX)
     })
   }
 
@@ -150,14 +150,14 @@ let C = Chunk647438.memo(function(e) {
         size: c.zx.Sizes.SMALL,
         color: c.zx.Colors.GREEN,
         onClick: G,
-        children: null != I ? I : E.intl.string(E.t.BddRzc)
+        children: null != I ? I : E.intl.string(E.t.BddRzS)
       }) : null, null != m ? (0, r.jsx)(c.zx, {
         className: b.button,
         size: c.zx.Sizes.SMALL,
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.PRIMARY,
         onClick: B,
-        children: null != v ? v : E.intl.string(E.t["ETE/oK"])
+        children: null != v ? v : E.intl.string(E.t["ETE/oC"])
       }) : null]
     })
   }

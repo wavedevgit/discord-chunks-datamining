@@ -17,16 +17,16 @@ function c(e) {
   let {
     guild: n,
     onSelect: t
-  } = e, c = (0, u.Z)(n.id), h = (0, a.wC)(n.id);
+  } = e, c = (0, u.Z)(n.id), f = (0, a.wC)(n.id);
   return (0, i.jsx)(l.v2r, {
     onSelect: t,
     navId: "guild-browse-channels-context-menu",
-    "aria-label": o.intl.string(o.t.ogxXGh),
+    "aria-label": o.intl.string(o.t.ogxXGq),
     onClose: r.Zy,
     children: (0, i.jsxs)(l.kSQ, {
-      children: [h && (0, i.jsx)(l.sNh, {
+      children: [f && (0, i.jsx)(l.sNh, {
         id: "go-to-settings",
-        label: o.intl.string(o.t.X70lV1),
+        label: o.intl.string(o.t.X70lV6),
         action: () => {
           s.Z.open(n.id, d.pNK.ONBOARDING)
         }

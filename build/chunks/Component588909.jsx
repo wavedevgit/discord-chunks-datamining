@@ -83,7 +83,7 @@ function T(e, t) {
   for (let r of t) switch (r.type) {
     case E.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? h.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? h.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, s.Z)(t, S.xjy.JOIN) && (x.cancelText = j.intl.string(j.t["6F9ivr"]), x.onCancelClick = (e, n) => {
+      null != t && (0, s.Z)(t, S.xjy.JOIN) && (x.cancelText = j.intl.string(j.t["6F9ivu"]), x.onCancelClick = (e, n) => {
         c("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(false, (0, p.getPID)()), (0, o.h7)(t, false, S.IlC.POPOUT)
       });
       break
@@ -94,7 +94,7 @@ function T(e, t) {
         oneClickGoLiveEnabled: e,
         useStreamCtaCopy: t
       } = (0, f.tU)("welcomeNotification");
-      x.confirmText = j.intl.string(t ? j.t.pEuzio : j.t.U76Ft7), x.onConfirmClick = e ? (e, t) => {
+      x.confirmText = j.intl.string(t ? j.t.pEuzii : j.t.U76Ft2), x.onConfirmClick = e ? (e, t) => {
         a.Z.updateNotificationStatus(t);
         let n = () => {
             c("go-live-modal"), a.Z.setInputLocked(false, (0, p.getPID)())
@@ -141,8 +141,8 @@ function T(e, t) {
       })
   }
   let T = (0, d.zu)(r.z.OVERLAY_OOP_WELCOME_NUX),
-    _ = T ? j.intl.string(j.t.KWDIrq) : j.intl.string(j.t["prl+ra"]),
-    P = T ? true : j.intl.string(j.t.R3CpPT),
+    _ = T ? j.intl.string(j.t.KWDIrh) : j.intl.string(j.t["prl+rY"]),
+    P = T ? true : j.intl.string(j.t.R3CpPU),
     D = null != e ? (0, i.jsx)(w, {
       game: e
     }) : (0, i.jsx)("img", {
@@ -154,10 +154,10 @@ function T(e, t) {
     icon: D,
     title: _,
     body: P,
-    hint: () => (0, O.Q)((0, v.P)(), j.t["z8/sgI"], j.intl.string(j.t.jZkzVF), {
+    hint: () => (0, O.Q)((0, v.P)(), j.t["z8/sgJ"], j.intl.string(j.t.jZkzVJ), {
       highlightAdminWarningIfElevated: true
     }),
-    confirmText: T ? true : j.intl.string(j.t.TxyTbm),
+    confirmText: T ? true : j.intl.string(j.t.TxyTbk),
     onConfirmClick: T ? true : () => {
       c("unlock"), a.Z.setInputLocked(false, (0, p.getPID)()), T || (0, d.Q3)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }

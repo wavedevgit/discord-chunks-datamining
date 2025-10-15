@@ -37,7 +37,7 @@ function b() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk703662.rowContainer,
     children: [(0, Chunk951288.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t["9Oq93t"])
+      children: Chunk388032.intl.string(Chunk388032.t["9Oq93m"])
     }), module && (0, Chunk951288.jsx)(Chunk481060.rgF, {
       size: "xs",
       color: "currentColor",

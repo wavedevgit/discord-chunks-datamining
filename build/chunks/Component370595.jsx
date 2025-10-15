@@ -29,7 +29,7 @@ function u(e) {
           height: 20
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          children: s.intl.string(s.t["13/7kZ"])
+          children: s.intl.string(s.t["13/7kX"])
         })]
       })
     }), (0, r.jsx)(l.M2$, {

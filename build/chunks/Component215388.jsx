@@ -132,7 +132,7 @@ function C(e) {
           maxLength: g
         }), null != g && (0, n.jsx)(o.nn4, {
           id: h,
-          children: f.intl.format(f.t["+DFxLS"], {
+          children: f.intl.format(f.t["+DFxLc"], {
             maxLength: g
           })
         })]

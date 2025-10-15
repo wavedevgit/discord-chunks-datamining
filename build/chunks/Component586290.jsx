@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 586290, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk542257 = require("./542257.js"),
   Chunk197571 = require("./197571.js");
 
-function N(e) {
+function S(e) {
   let {
     selectedSource: n,
     onChangeVideoDeviceSource: t,
@@ -30,10 +30,10 @@ function N(e) {
   } = e;
   s()(null != n, "Camera capture device cannot be null");
   let a = (0, h.Z)(),
-    [N, S] = (0, x.Ls)(j.h7.AUDIO_INPUT, {
+    [S, N] = (0, x.Ls)(j.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    C = N.concat(S),
+    C = S.concat(N),
     [b, P] = r.useState(function(e, n, t) {
       var l;
       let r = n.find(n => n.id === e);
@@ -60,11 +60,11 @@ function N(e) {
             color: u.zx.Colors.PRIMARY,
             size: u.zx.Sizes.SMALL,
             onClick: t,
-            children: p.intl.string(p.t.GEgsAw)
+            children: p.intl.string(p.t.GEgsA4)
           })]
         })
       }), (0, l.jsx)(m.j, {
-        label: p.intl.string(p.t.y4ooen),
+        label: p.intl.string(p.t.y4ooer),
         deviceType: j.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
         className: Z.__invalid_marginaTop8,

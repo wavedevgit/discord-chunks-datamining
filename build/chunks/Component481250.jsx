@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 481250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  VE: () => x,
+  VE: () => C,
   lV: () => R
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk65154 = require("./65154.js"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-let C = {
+let x = {
   [Chunk65154.Z.NO_OVERRIDE]: "None",
   [Chunk65154.Z.LOW]: "Low Quality Stream",
   [Chunk65154.Z.HIGH]: "High Quality Stream"
 };
 
-function x(e) {
+function C(e) {
   let t = [],
     n = 0;
   for (e.length % 2 != 0 && e.push((0, r.jsx)(m.Z, {
@@ -103,7 +103,7 @@ function R(e) {
               userId: n
             })
           }) : null
-        }(e, n, a, i), x(o)]
+        }(e, n, a, i), C(o)]
       }, "".concat(e.type, " + ").concat(e.ssrc))
     }(V, 0, i, R, S),
     H = I && "video" === V.type && null != i && null != R && null != S && (0, r.jsx)(m.Z, {
@@ -118,7 +118,7 @@ function R(e) {
           },
           options: Object.values(D.Z).map(e => ({
             value: e,
-            label: C[e]
+            label: x[e]
           }))
         })
       })

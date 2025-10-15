@@ -47,7 +47,7 @@ function h() {
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk28025.column,
         children: (0, Chunk951288.jsx)(Chunk670863.j, {
-          label: Chunk388032.intl.string(Chunk388032.t.hHMYbW),
+          label: Chunk388032.intl.string(Chunk388032.t.hHMYbb),
           deviceType: Chunk65154.h7.AUDIO_INPUT,
           location: "UserSettingsDevices",
           hideDeviceTypeIcon: true,
@@ -56,7 +56,7 @@ function h() {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk28025.column,
         children: (0, Chunk951288.jsx)(Chunk670863.j, {
-          label: Chunk388032.intl.string(Chunk388032.t.dl18zc),
+          label: Chunk388032.intl.string(Chunk388032.t.dl18zb),
           deviceType: Chunk65154.h7.AUDIO_OUTPUT,
           location: "UserSettingsDevices",
           hideDeviceTypeIcon: true,
@@ -65,7 +65,7 @@ function h() {
       })]
     }), I && (0, Chunk951288.jsx)(Chunk494620.Z, {
       look: Chunk494620.z.WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t.Ioz3g4)
+      children: Chunk388032.intl.string(Chunk388032.t.Ioz3gx)
     })]
   })
 }

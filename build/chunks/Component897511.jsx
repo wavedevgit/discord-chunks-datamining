@@ -56,7 +56,7 @@ async function b(t, e, n) {
       postal_code: n.postalCode,
       country: n.country
     } : null,
-    a = await i.tn.post({
+    i = await a.tn.post({
       url: r,
       body: {
         payment_id: t,
@@ -72,28 +72,28 @@ async function b(t, e, n) {
     let o = new Blob([r], {
         type: "application/pdf"
       }),
-      a = URL.createObjectURL(o),
-      i = document.createElement("a");
-    i.href = a, i.download = "receipt_".concat(t, ".pdf"), document.body.appendChild(i), i.click(), document.body.removeChild(i), URL.revokeObjectURL(a)
-  }(t, a.text), true
+      i = URL.createObjectURL(o),
+      a = document.createElement("a");
+    a.href = i, a.download = "receipt_".concat(t, ".pdf"), document.body.appendChild(a), a.click(), document.body.removeChild(a), URL.revokeObjectURL(i)
+  }(t, i.text), true
 }
 
 function O(t) {
   var {
     payment: e,
     paymentSource: n
-  } = t, i = function(t, e) {
+  } = t, a = function(t, e) {
     if (null == t) return {};
     var n, r, o = function(t, e) {
       if (null == t) return {};
       var n, r, o = {},
-        a = Object.keys(t);
-      for (r = 0; r < a.length; r++) n = a[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
+        i = Object.keys(t);
+      for (r = 0; r < i.length; r++) n = i[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
       return o
     }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(t);
-      for (r = 0; r < a.length; r++) n = a[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
+      var i = Object.getOwnPropertySymbols(t);
+      for (r = 0; r < i.length; r++) n = i[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
     }
     return o
   }(t, ["payment", "paymentSource"]);
@@ -108,11 +108,11 @@ function O(t) {
     },
     [O, g] = o.useState(p),
     [m, j] = o.useState(false),
-    [h, w] = o.useState(false),
-    [P, S] = o.useState(false),
+    [h, S] = o.useState(false),
+    [w, P] = o.useState(false),
     [v, C] = o.useState("");
   async function k() {
-    S(true);
+    P(true);
     try {
       await b(x, m, O)
     } catch (n) {
@@ -120,16 +120,16 @@ function O(t) {
       let e = JSON.parse(await n.body.text());
       C(null != (t = new u.Z(f(d({}, n), {
         body: e
-      })).getAnyErrorMessage()) ? t : y.intl.formatToPlainString(y.t["4eT6rq"], {}))
+      })).getAnyErrorMessage()) ? t : y.intl.formatToPlainString(y.t["4eT6rr"], {}))
     } finally {
-      S(false)
+      P(false)
     }
   }
   let _ = s.C,
     x = e.id,
     E = (0, r.jsx)(l.rsf, {
-      label: y.intl.formatToPlainString(y.t["aJg+oa"], {}),
-      description: y.intl.formatToPlainString(y.t["2p1XJS"], {}),
+      label: y.intl.formatToPlainString(y.t["aJg+oS"], {}),
+      description: y.intl.formatToPlainString(y.t["2p1XJW"], {}),
       checked: m,
       onChange: j
     }),
@@ -137,20 +137,20 @@ function O(t) {
       mode: c.ZP.Modes.CREATE,
       layout: _,
       onBillingAddressChange: function(t, e) {
-        g(t), w(e)
+        g(t), S(e)
       },
       error: null
     })) : null;
-  return (0, r.jsxs)(a.Modal, {
-    transitionState: i.transitionState,
-    onClose: i.onClose,
-    title: y.intl.formatToPlainString(y.t.onRIxc, {}),
+  return (0, r.jsxs)(i.Modal, {
+    transitionState: a.transitionState,
+    onClose: a.onClose,
+    title: y.intl.formatToPlainString(y.t.onRIxS, {}),
     actions: [{
       variant: "primary",
       text: y.intl.formatToPlainString(y.t.uqZjLi, {}),
       onClick: k,
       disabled: m && !h,
-      loading: P,
+      loading: w,
       autoFocus: true
     }],
     children: [E, A, null != v && "" !== v && (0, r.jsx)(l.M14, {

@@ -34,10 +34,10 @@ function g(e) {
       className: p.customGiftHeader,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/bold",
-        children: _.intl.string(_.t.Hl2IgY)
+        children: _.intl.string(_.t.Hl2Ige)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: _.intl.string(_.t.stGFAw)
+        children: _.intl.string(_.t.stGFA3)
       })]
     }), e]
   }), y = e => {
@@ -90,7 +90,7 @@ function g(e) {
           className: E,
           variant: "text-sm/semibold",
           lineClamp: 1,
-          children: _.intl.string(_.t.Hl2IgY)
+          children: _.intl.string(_.t.Hl2Ige)
         })]
       }) : (0, r.jsxs)("div", {
         className: p.contentContainer,

@@ -16,30 +16,30 @@ var Chunk392711 = require("./392711.js"),
 let f = 3,
   _ = {
     standard: {
-      reactionTooltip1NInteractive: Chunk388032.t.dgtYDA,
-      reactionTooltip1N: Chunk388032.t.mXild3,
-      reactionTooltip1: Chunk388032.t.Oro30N,
-      reactionTooltip2NInteractive: Chunk388032.t["0GBwVV"],
-      reactionTooltip2N: Chunk388032.t.UWGs2t,
-      reactionTooltip2: Chunk388032.t["p+0jvr"],
-      reactionTooltip3NInteractive: Chunk388032.t["dK6/7e"],
-      reactionTooltip3N: Chunk388032.t.UnXdX1,
-      reactionTooltip3: Chunk388032.t.bbPMcX,
-      reactionTooltipNInteractive: Chunk388032.t.Thj7LS,
-      reactionTooltipN: Chunk388032.t.CRrc7e
+      reactionTooltip1NInteractive: Chunk388032.t.dgtYDJ,
+      reactionTooltip1N: Chunk388032.t.mXild1,
+      reactionTooltip1: Chunk388032.t.Oro30L,
+      reactionTooltip2NInteractive: Chunk388032.t["0GBwVR"],
+      reactionTooltip2N: Chunk388032.t.UWGs2n,
+      reactionTooltip2: Chunk388032.t["p+0jvt"],
+      reactionTooltip3NInteractive: Chunk388032.t["dK6/7W"],
+      reactionTooltip3N: Chunk388032.t["UnXdX/"],
+      reactionTooltip3: Chunk388032.t.bbPMcR,
+      reactionTooltipNInteractive: Chunk388032.t.Thj7LX,
+      reactionTooltipN: Chunk388032.t.CRrc7c
     },
     burst: {
-      reactionTooltip1NInteractive: Chunk388032.t.G98B0d,
-      reactionTooltip1N: Chunk388032.t["u/03eH"],
-      reactionTooltip1: Chunk388032.t["z4q3+/"],
-      reactionTooltip2NInteractive: Chunk388032.t.wkcffn,
-      reactionTooltip2N: Chunk388032.t.T4EYUl,
-      reactionTooltip2: Chunk388032.t.R2HykZ,
-      reactionTooltip3NInteractive: Chunk388032.t.OhtGx8,
-      reactionTooltip3N: Chunk388032.t.M8bwl5,
-      reactionTooltip3: Chunk388032.t.sNl6XV,
-      reactionTooltipNInteractive: Chunk388032.t.nsITOj,
-      reactionTooltipN: Chunk388032.t.dkieHx
+      reactionTooltip1NInteractive: Chunk388032.t.G98B0W,
+      reactionTooltip1N: Chunk388032.t["u/03eN"],
+      reactionTooltip1: Chunk388032.t["z4q3+w"],
+      reactionTooltip2NInteractive: Chunk388032.t.wkcffp,
+      reactionTooltip2N: Chunk388032.t.T4EYUu,
+      reactionTooltip2: Chunk388032.t.R2HykW,
+      reactionTooltip3NInteractive: Chunk388032.t.OhtGxz,
+      reactionTooltip3N: Chunk388032.t["M8bwl+"],
+      reactionTooltip3: Chunk388032.t.sNl6XR,
+      reactionTooltipNInteractive: Chunk388032.t.nsITOq,
+      reactionTooltipN: Chunk388032.t.dkieH5
     }
   };
 

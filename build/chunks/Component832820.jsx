@@ -47,9 +47,9 @@ let b = function(e) {
     (0, c.Hb)(t.id)
   }, [t.id]), S = i.useMemo(() => null != y && y > 0 ? (null == b ? true : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
     numPotions: y
-  }) : m.intl.format(m.t.RiQ4cn, {
+  }) : m.intl.format(m.t.RiQ4ci, {
     numPotions: y
-  }) : m.intl.string(m.t.hvVgAQ), [y, b]), [A, C] = i.useState(false === s);
+  }) : m.intl.string(m.t.hvVgAZ), [y, b]), [A, C] = i.useState(false === s);
   i.useEffect(() => {
     false === s && v()
   }, [s, v]);
@@ -89,7 +89,7 @@ let b = function(e) {
           })
         }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/medium",
-          children: null == n ? m.intl.string(m.t.mzfiGR) : m.intl.format(m.t.Hcd9OT, {
+          children: null == n ? m.intl.string(m.t.mzfiGW) : m.intl.format(m.t.Hcd9OU, {
             emojiName: I
           })
         })]

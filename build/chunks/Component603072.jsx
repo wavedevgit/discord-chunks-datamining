@@ -37,12 +37,12 @@ function I(e) {
       dismissAction: y.L.DISMISS
     })
   });
-  let i = t ? O.intl.formatToPlainString(O.t.uqZgYW, {
+  let i = t ? O.intl.formatToPlainString(O.t.uqZgYe, {
       guildName: n.name
-    }) : O.intl.formatToPlainString(O.t.velJeX, {
+    }) : O.intl.formatToPlainString(O.t.velJea, {
       guildName: n.name
     }),
-    a = t ? O.intl.string(O.t.h9mGOD) : O.intl.string(O.t.et6wam);
+    a = t ? O.intl.string(O.t.h9mGOP) : O.intl.string(O.t.et6wav);
   return (0, u.Tt)({
     location: i
   }), (0, l.jsxs)(h.Z, {
@@ -90,13 +90,13 @@ function w(e) {
           children: [(0, l.jsx)(d.njP.Item, {
             className: N.tabBarItem,
             id: j.l7.CUSTOMIZE,
-            children: O.intl.string(O.t.H2cICQ)
+            children: O.intl.string(O.t.H2cICW)
           }, j.l7.CUSTOMIZE), (0, l.jsxs)(d.njP.Item, {
             className: N.tabBarItem,
             id: j.l7.BROWSE,
-            "aria-label": O.intl.string(O.t.et6wam),
-            children: [O.intl.string(O.t.et6wam), (0, l.jsx)(d.IGR, {
-              text: w ? O.intl.string(O.t.psHMa2) : P,
+            "aria-label": O.intl.string(O.t.et6wav),
+            children: [O.intl.string(O.t.et6wav), (0, l.jsx)(d.IGR, {
+              text: w ? O.intl.string(O.t.psHMa6) : P,
               color: w ? c.Z.unsafe_rawColors.BRAND_260.css : c.Z.colors.BACKGROUND_ACCENT.css,
               className: a()({
                 [N.newBadge]: w

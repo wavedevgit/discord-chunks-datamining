@@ -30,8 +30,8 @@ let h = function(e) {
     className: t,
     value: new Set,
     onChange: h,
-    placeholder: _.intl.string(_.t.XPGZXF),
-    "aria-label": _.intl.string(_.t.ljnBlp),
+    placeholder: _.intl.string(_.t.XPGZXP),
+    "aria-label": _.intl.string(_.t.ljnBlo),
     onClose: m,
     children: e => b(e).map(e => {
       var t, n;

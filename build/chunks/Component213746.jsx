@@ -86,7 +86,7 @@ function y(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: x.intl.string(x.t.yUGTs7)
+        children: x.intl.string(x.t.yUGTs8)
       }), (0, r.jsx)("div", {
         className: v.products,
         children: a.map(e => (0, r.jsx)(u.hd, {
@@ -173,9 +173,9 @@ function S(e) {
       children: null != a && null != l ? x.intl.format(x.t.nylPOT, {
         termsHook: e => s(e, a),
         privacyHook: e => s(e, l)
-      }) : null != a ? x.intl.format(x.t["0cPyDw"], {
+      }) : null != a ? x.intl.format(x.t["0cPyDz"], {
         termsHook: e => s(e, a)
-      }) : null != l ? x.intl.format(x.t.loYGCw, {
+      }) : null != l ? x.intl.format(x.t["loYGC/"], {
         privacyHook: e => s(e, l)
       }) : null
     })

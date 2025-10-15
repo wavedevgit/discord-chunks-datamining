@@ -75,33 +75,33 @@ let C = {
   w = (0, Chunk392711.range)(1, 26),
   D = () => [{
     location: Chunk524484.Hn.CHAT_INPUT,
-    title: Chunk388032.intl.string(Chunk388032.t.elTty8),
-    description: Chunk388032.intl.string(Chunk388032.t.HtKfMj)
+    title: Chunk388032.intl.string(Chunk388032.t.elTtyz),
+    description: Chunk388032.intl.string(Chunk388032.t.HtKfMi)
   }, {
     location: Chunk524484.Hn.REACTION,
-    title: Chunk388032.intl.string(Chunk388032.t.Ik4VIS),
-    description: Chunk388032.intl.string(Chunk388032.t.y4rqKy)
+    title: Chunk388032.intl.string(Chunk388032.t.Ik4VIa),
+    description: Chunk388032.intl.string(Chunk388032.t.y4rqK0)
   }, {
     location: Chunk524484.Hn.MEMBER_USER,
-    title: Chunk388032.intl.string(Chunk388032.t.ZXBlAg),
-    description: Chunk388032.intl.string(Chunk388032.t["m9RD+f"])
+    title: Chunk388032.intl.string(Chunk388032.t.ZXBlAn),
+    description: Chunk388032.intl.string(Chunk388032.t["m9RD+c"])
   }, {
     location: Chunk524484.Hn.CALL_TILE,
-    title: Chunk388032.intl.string(Chunk388032.t.V66giY),
+    title: Chunk388032.intl.string(Chunk388032.t.V66giQ),
     description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
   }],
   L = () => [{
     location: Chunk524484.oZ.CHAT_INPUT,
-    title: Chunk388032.intl.string(Chunk388032.t.vUcvPD),
-    description: Chunk388032.intl.string(Chunk388032.t.y00OrK)
+    title: Chunk388032.intl.string(Chunk388032.t.vUcvPP),
+    description: Chunk388032.intl.string(Chunk388032.t.y00OrF)
   }, {
     location: Chunk524484.oZ.VOICE_USER,
-    title: Chunk388032.intl.string(Chunk388032.t["TcRO5+"]),
-    description: Chunk388032.intl.string(Chunk388032.t.YJCxVV)
+    title: Chunk388032.intl.string(Chunk388032.t.TcRO54),
+    description: Chunk388032.intl.string(Chunk388032.t.YJCxVY)
   }, {
     location: Chunk524484.oZ.MENTION,
-    title: Chunk388032.intl.string(Chunk388032.t.oW4shI),
-    description: Chunk388032.intl.string(Chunk388032.t["mqfw/P"])
+    title: Chunk388032.intl.string(Chunk388032.t.oW4shO),
+    description: Chunk388032.intl.string(Chunk388032.t["mqfw/H"])
   }];
 
 function x(e) {
@@ -120,7 +120,7 @@ function x(e) {
     }))
   }, e.location));
   return (0, r.jsx)(l.C3N, {
-    label: O.intl.string(O.t.bWVN1N),
+    label: O.intl.string(O.t.bWVN1D),
     children: o
   })
 }
@@ -146,9 +146,9 @@ function j(e) {
     updateSettings: i
   } = e, a = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), s = e => {
     e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, A(T({
-      header: a ? O.intl.string(O.t["FxT+p6"]) : O.intl.string(O.t.TAZ4Fx),
-      confirmText: O.intl.string(O.t.JFfinp),
-      cancelText: O.intl.string(O.t["ETE/oK"]),
+      header: a ? O.intl.string(O.t["FxT+p0"]) : O.intl.string(O.t.TAZ4F9),
+      confirmText: O.intl.string(O.t.JFfins),
+      cancelText: O.intl.string(O.t["ETE/oC"]),
       onConfirm: () => i(a ? C : {
         enabled: true,
         warningSeen: true
@@ -156,15 +156,15 @@ function j(e) {
     }, e), {
       children: (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: a ? O.intl.string(O.t.gmixr6) : O.intl.string(O.t.jN3t3N)
+        children: a ? O.intl.string(O.t.gmixrx) : O.intl.string(O.t.jN3t3K)
       })
     }))) : i({
       enabled: e
     })
   };
   return (0, r.jsx)(l.rsf, {
-    label: O.intl.string(O.t.vuiXm5),
-    description: O.intl.string(O.t.KuYbWF),
+    label: O.intl.string(O.t.vuiXm9),
+    description: O.intl.string(O.t.KuYbWN),
     checked: t,
     onChange: s
   })
@@ -182,10 +182,10 @@ function k(e) {
     updateSettings: s
   } = e, c = !t || !n;
   return (0, r.jsxs)(l.C3N, {
-    label: O.intl.string(O.t.mqxwJC),
+    label: O.intl.string(O.t.mqxwJO),
     children: [(0, r.jsx)(l.rsf, {
-      label: O.intl.string(O.t.s0KCgI),
-      description: O.intl.string(O.t.O1Vflp),
+      label: O.intl.string(O.t.s0KCgF),
+      description: O.intl.string(O.t.O1Vflg),
       checked: n,
       disabled: !t,
       onChange: e => s({
@@ -196,9 +196,9 @@ function k(e) {
         variant: "text-md/semibold",
         color: c ? "text-muted" : "header-primary",
         className: v.sliderLabel,
-        children: O.intl.string(O.t["vd0D8/"])
+        children: O.intl.string(O.t.vd0D81)
       }), (0, r.jsx)(M, {
-        children: O.intl.string(O.t.a18Sur)
+        children: O.intl.string(O.t.a18Sug)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
         markers: P,
@@ -216,9 +216,9 @@ function k(e) {
         variant: "text-md/semibold",
         color: c ? "text-muted" : "header-primary",
         className: v.sliderLabel,
-        children: O.intl.string(O.t.sPO3io)
+        children: O.intl.string(O.t.sPO3ij)
       }), (0, r.jsx)(M, {
-        children: O.intl.string(O.t.xoldVl)
+        children: O.intl.string(O.t.xoldVn)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
         markers: w,
@@ -253,18 +253,18 @@ function U(e) {
     updateSettings: o
   } = e, s = !t || !n;
   return (0, r.jsxs)(l.C3N, {
-    label: O.intl.string(O.t.Xz0olZ),
+    label: O.intl.string(O.t.Xz0ole),
     children: [(0, r.jsx)(l.rsf, {
-      label: O.intl.string(O.t.o3iV7O),
-      description: O.intl.string(O.t["31Z8ER"]),
+      label: O.intl.string(O.t.o3iV7B),
+      description: O.intl.string(O.t["31Z8Ee"]),
       checked: n,
       disabled: !t,
       onChange: e => o({
         combosEnabled: e
       })
     }), (0, r.jsx)(l.rsf, {
-      label: O.intl.string(O.t["Ax+Ioa"]),
-      description: O.intl.string(O.t["9rgQEh"]),
+      label: O.intl.string(O.t["Ax+IoW"]),
+      description: O.intl.string(O.t["9rgQEr"]),
       checked: i,
       disabled: !t,
       onChange: e => o({
@@ -275,9 +275,9 @@ function U(e) {
         variant: "text-md/semibold",
         color: s ? "text-muted" : "header-primary",
         className: v.sliderLabel,
-        children: O.intl.string(O.t.L0oQur)
+        children: O.intl.string(O.t.L0oQuh)
       }), (0, r.jsx)(M, {
-        children: O.intl.string(O.t["/OOFpK"])
+        children: O.intl.string(O.t["/OOFpL"])
       }), (0, r.jsx)(l.iRW, {
         disabled: s,
         markers: N,
@@ -307,11 +307,11 @@ function G(e) {
     null != e.shakeIntensity && e.shakeIntensity > i && (0, p.T)(h.hn.MORE), s(e, t)
   };
   return (0, r.jsxs)(l.C3N, {
-    label: O.intl.string(O.t.wVS5SU),
+    label: O.intl.string(O.t.wVS5Sd),
     children: [(0, r.jsx)(l.rsf, {
-      label: O.intl.string(O.t.N004zM),
-      description: O.intl.string(O.t.Qq5W3t),
-      helperText: u ? O.intl.string(O.t.GckHGx) : true,
+      label: O.intl.string(O.t.N004zO),
+      description: O.intl.string(O.t.Qq5W3v),
+      helperText: u ? O.intl.string(O.t.GckHGw) : true,
       checked: n && !u,
       disabled: !t || u,
       onChange: e => s({
@@ -322,9 +322,9 @@ function G(e) {
         variant: "text-md/semibold",
         color: d ? "text-muted" : "header-primary",
         className: v.sliderLabel,
-        children: O.intl.string(O.t.UxnnCw)
+        children: O.intl.string(O.t.UxnnC4)
       }), (0, r.jsx)(M, {
-        children: O.intl.string(O.t.CEOEOT)
+        children: O.intl.string(O.t.CEOEOb)
       }), (0, r.jsx)(l.iRW, {
         disabled: d,
         markers: R,
@@ -336,7 +336,7 @@ function G(e) {
         onValueChange: e => f({
           shakeIntensity: e
         }, 1),
-        onMarkerRender: e => e === R[R.length - 1] ? O.intl.string(O.t["4rbMWV"]) : "".concat(100 * e, "%")
+        onMarkerRender: e => e === R[R.length - 1] ? O.intl.string(O.t["4rbMWc"]) : "".concat(100 * e, "%")
       })]
     }), (0, r.jsx)(x, {
       disabled: d,
@@ -359,18 +359,18 @@ function B(e) {
     }), (0, f.default)()
   };
   return (0, r.jsx)(l.C3N, {
-    label: O.intl.string(O.t.EuXv2t),
+    label: O.intl.string(O.t.EuXv2q),
     children: (0, r.jsxs)(l.Kqy, {
       gap: 16,
       children: [(0, r.jsx)("div", {
-        children: O.intl.string(O.t["1SLnkp"])
+        children: O.intl.string(O.t["1SLnki"])
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: v.hideButton,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
-          text: O.intl.string(O.t.qz65yc),
+          text: O.intl.string(O.t.qz65yY),
           onClick: n
         })
       })]
@@ -396,11 +396,11 @@ function Z(e) {
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        children: O.intl.string(O.t["6jI0hY"])
+        children: O.intl.string(O.t["6jI0hd"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: O.intl.string(O.t.GuUItb)
+        children: O.intl.string(O.t.GuUItX)
       })]
     }), (0, r.jsx)(l.Fbu, {
       size: "custom",
@@ -466,7 +466,7 @@ function V(e) {
     gap: 24,
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
-      children: O.intl.string(O.t.AtCukJ)
+      children: O.intl.string(O.t.AtCukI)
     }), (0, r.jsx)(j, {
       settings: a,
       updateSettings: h

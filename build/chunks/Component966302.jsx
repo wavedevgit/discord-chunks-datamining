@@ -146,7 +146,7 @@ function eo(e) {
     className: o()(z.wrapper, z.actions),
     children: [(0, r.jsx)(C.Z, {
       iconComponent: c.Dio,
-      label: W.intl.string(W.t.WAI6xs),
+      label: W.intl.string(W.t.WAI6xu),
       className: z.actionButton,
       onClick: () => {
         (0, Z.v)(s, Z.d.DISCONNECT), j.default.track(H.rMx.RING_CALL_DECLINED, Q({
@@ -247,7 +247,7 @@ function es(e) {
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = j === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    X = j === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cK3) : W.intl.string(W.t.KcnWCO),
     J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(z.icon, K.wrapper, K.ringingIncoming),
@@ -326,7 +326,7 @@ function es(e) {
             children: (0, r.jsx)(c.Button, {
               variant: "secondary",
               size: "sm",
-              text: W.intl.string(W.t["8B0UDg"]),
+              text: W.intl.string(W.t["8B0UDr"]),
               fullWidth: true,
               onClick: () => v(true)
             })

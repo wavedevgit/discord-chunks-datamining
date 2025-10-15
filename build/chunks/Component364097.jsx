@@ -62,20 +62,20 @@ function g(e) {
   } = e, h = (0, i.e7)([l.Z], () => l.Z.getGuildTemplate(_));
   if (null == h || h.state === c.Rj.RESOLVING) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: u.intl.string(u.t.Xj87YW)
+      text: u.intl.string(u.t.Xj87Yf)
     }), (0, r.jsx)(o.Z.Body, {
       resolving: true
     })]
   });
   if (h.state === c.Rj.EXPIRED) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: u.intl.string(u.t.C7ZRNz)
+      text: u.intl.string(u.t.C7ZRNw)
     }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsx)(o.Z.Icon, {
         expired: true
       }), (0, r.jsx)(o.Z.Info, {
         expired: true,
-        title: u.intl.string(u.t.A6MwXF)
+        title: u.intl.string(u.t.A6MwXE)
       })]
     })]
   });
@@ -92,16 +92,16 @@ function g(e) {
     E = __OVERLAY__ ? (0, r.jsx)(o.Z.Button, {
       isDisabled: true,
       color: o.Z.Button.Colors.PRIMARY,
-      children: u.intl.string(u.t.W7NTWl)
+      children: u.intl.string(u.t.W7NTWm)
     }) : (0, r.jsx)(o.Z.Button, {
       onClick: g,
       submitting: h.state === c.Rj.ACCEPTING,
       color: o.Z.Button.Colors.GREEN,
-      children: u.intl.string(u.t["a3Gl+f"])
+      children: u.intl.string(u.t["a3Gl+e"])
     });
   return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: u.intl.string(u.t.kAvFkJ)
+      text: u.intl.string(u.t.kAvFkO)
     }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: f.headerLine,
@@ -109,7 +109,7 @@ function g(e) {
           className: d.icon
         }), (0, r.jsx)(o.Z.Info, {
           title: h.name,
-          children: u.intl.format(u.t.cGXXHB, {
+          children: u.intl.format(u.t.cGXXHL, {
             usageCount: String(null != (t = h.usageCount) ? t : 0)
           })
         })]

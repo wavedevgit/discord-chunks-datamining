@@ -173,11 +173,11 @@ function ef(e) {
         tabs: c,
         icon: d.qDn
       }), (0, r.jsx)(I.Z, {
-        title: er.intl.string(er.t.z8YP2N),
+        title: er.intl.string(er.t.z8YP2A),
         titleColor: "always-white",
         button: (0, r.jsx)(d.Button, {
           variant: "overlay-primary",
-          text: er.intl.string(er.t.GURBQk),
+          text: er.intl.string(er.t.GURBQl),
           onClick: u
         }),
         className: ei.redirectNoticeBannerContainer,
@@ -189,13 +189,13 @@ function ef(e) {
           className: ei.redirectNoticeContainer,
           children: [(0, r.jsx)(d.Heading, {
             variant: "heading-xl/semibold",
-            children: er.intl.string(er.t.z8YP2N)
+            children: er.intl.string(er.t.z8YP2A)
           }), (0, r.jsx)(d.Text, {
             color: "text-secondary",
             variant: "text-md/normal",
-            children: er.intl.string(er.t["HdKh6+"])
+            children: er.intl.string(er.t.HdKh65)
           }), (0, r.jsx)(d.Avr, {
-            text: er.intl.string(er.t["1CdL8f"]),
+            text: er.intl.string(er.t["1CdL8d"]),
             onClick: u,
             textVariant: "text-md/normal",
             variant: "primary"
@@ -258,10 +258,10 @@ let eh = function(e) {
     window.open(R.Z.getArticleURL(ee.BhN.QUESTS_LEARN_MORE))
   }, [es]);
   (0, O.Tt)({
-    location: er.intl.string(er.t.JALI2N)
+    location: er.intl.string(er.t.JALI2K)
   });
-  let eu = es ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBf3, {}),
-    ep = es ? er.intl.format(er.t.U9FY0N, {}) : er.intl.string(er.t.oWCrBg),
+  let eu = es ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBfy, {}),
+    ep = es ? er.intl.format(er.t.U9FY0J, {}) : er.intl.string(er.t.oWCrBq),
     eh = i.useRef(null),
     eg = i.useCallback(() => {
       (0, P.Y)({
@@ -319,7 +319,7 @@ let eh = function(e) {
           children: (0, r.jsx)(A.V9, {
             analyticsPage: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
             cardAlignment: A.ek.END,
-            ctaText: er.intl.string(er.t["J+vlIS"]),
+            ctaText: er.intl.string(er.t["J+vlIR"]),
             ctaOnClick: eg
           })
         }), (0, r.jsxs)(j.Z, {
@@ -331,7 +331,7 @@ let eh = function(e) {
             button: es ? (0, r.jsxs)(d.ButtonGroup, {
               children: [(0, r.jsx)(d.Button, {
                 variant: "overlay-primary",
-                text: er.intl.string(er.t["1Wm129"]),
+                text: er.intl.string(er.t["1Wm127"]),
                 onClick: () => (0, _.mK)({
                   tab: et.AW.ORBS,
                   analyticsLocations: [],
@@ -339,12 +339,12 @@ let eh = function(e) {
                 })
               }), (0, r.jsx)(d.Button, {
                 variant: "overlay-secondary",
-                text: er.intl.string(er.t["7kTAgI"]),
+                text: er.intl.string(er.t["7kTAgJ"]),
                 onClick: ec
               })]
             }) : (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
-              text: er.intl.string(er.t.hvVgAQ),
+              text: er.intl.string(er.t.hvVgAZ),
               onClick: ec,
               icon: d.Gr1,
               iconPosition: "end"
@@ -385,7 +385,7 @@ let eh = function(e) {
               description: ep,
               button: (0, r.jsx)(d.Button, {
                 variant: "overlay-primary",
-                text: er.intl.string(er.t.hvVgAQ),
+                text: er.intl.string(er.t.hvVgAZ),
                 onClick: ec,
                 icon: d.Gr1,
                 iconPosition: "end"

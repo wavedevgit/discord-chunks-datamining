@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk639777 = require("./639777.js"),
   Chunk735276 = require("./735276.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk948208 = require("./948208.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799070 = require("./799070.js");
 let x = {
@@ -48,13 +48,13 @@ function _(e) {
         onClose: () => {
           (0, s.Zy)(), a()
         },
-        "aria-label": g.intl.string(m.default["yb+orq"]),
+        "aria-label": g.intl.string(m.default["yb+ork"]),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
           children: [null != t.providerType && (0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: g.intl.string(m.default.bBkeMj),
+            label: g.intl.string(m.default.bBkeMs),
             action: () => {
               (0, l.q)({
                 href: u.uz[t.providerType]
@@ -63,7 +63,7 @@ function _(e) {
           }), (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: g.intl.string(m.default.feUiMz),
+            label: g.intl.string(m.default["feUiM/"]),
             action: () => {
               (0, d.Z)({
                 guildId: n,
@@ -96,7 +96,7 @@ function _(e) {
         }
         return e
       }({
-        "aria-label": g.intl.string(g.t.UKOtz8),
+        "aria-label": g.intl.string(g.t["UKOtz+"]),
         className: f.clickable
       }, e), t = t = {
         innerRef: _,

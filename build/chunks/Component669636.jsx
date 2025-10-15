@@ -89,15 +89,15 @@ let C = e => {
     })).with(c.Z.EXTERNAL_SKU, () => {
       if (w)
         if (r) return (0, n.jsx)("img", {
-          src: _ ? x : E,
-          alt: y.intl.string(y.t.t0xkSE),
+          src: _ ? E : x,
+          alt: y.intl.string(y.t.t0xkSB),
           style: {
             width: "100%"
           }
         });
         else return (0, n.jsx)("img", {
           src: O,
-          alt: y.intl.string(y.t.g5W1g4)
+          alt: y.intl.string(y.t.g5W1g8)
         });
       return (0, n.jsx)(m.b, {
         product: t

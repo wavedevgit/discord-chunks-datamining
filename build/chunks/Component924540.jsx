@@ -29,9 +29,9 @@ function m(e) {
   } = e, f = i.useMemo(() => Date.parse(n), [n]), m = (0, c.Z)(f, h);
   return Object.values(m).every(e => 0 === e) ? null : (0, r.jsx)(s.u, {
     text: (0, u.QX)(m, {
-      days: _.t.qVGNkZ,
-      hours: _.t.wyg9a2,
-      minutes: _.t.IzmIlZ
+      days: _.t.qVGNkU,
+      hours: _.t.wyg9a9,
+      minutes: _.t.IzmIlV
     }),
     children: (0, r.jsxs)("div", {
       className: o()(p.premiumTrialBadge, p.premiumTrialAcknowledgedBadge, d, {
@@ -72,7 +72,7 @@ function E(e) {
     isTabSelected: t,
     userDiscount: n,
     includesAmountOff: i
-  } = e, a = _.intl.formatToPlainString(_.t.iiLbvr, {
+  } = e, a = _.intl.formatToPlainString(_.t.iiLbvu, {
     percent: n.discount.amount
   });
   return (0, r.jsx)(b, {

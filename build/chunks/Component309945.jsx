@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk692547 = require("./692547.js"),
   Chunk899667 = require("./899667.js"),
   Chunk317169 = require("./317169.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk874622 = require("./874622.js");
 
@@ -36,16 +36,16 @@ function g(e) {
     }), (0, r.jsx)(a.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
-      children: f.intl.string(p.default.n5hQhY)
+      children: f.intl.string(p.default.n5hQhc)
     }), (0, r.jsxs)(a.xvT, {
       variant: "text-sm/medium",
-      children: [f.intl.formatToPlainString(p.default.iAaAiI, {
+      children: [f.intl.formatToPlainString(p.default.iAaAiG, {
         boostCount: x,
         perksString: n.map(e => e.title).join(", ")
       }), _ && (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
-        children: f.intl.string(p.default.Sfr0Jy)
+        children: f.intl.string(p.default.Sfr0Jw)
       })]
     })]
   })

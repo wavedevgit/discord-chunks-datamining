@@ -33,7 +33,7 @@ let p = new Chunk710845.Z("InteractionComponentUtils"),
       size: 48
     }) : true
   }),
-  m = e => (null == e ? true : e.errorCode) === 429 ? _.intl.string(_.t.fitPBQ) : _.intl.string(_.t.VCsUJi),
+  m = e => (null == e ? true : e.errorCode) === 429 ? _.intl.string(_.t.fitPBS) : _.intl.string(_.t.VCsUJu),
   g = (e, t, n) => {
     let r = (null == e ? true : e.data.interactionType) === a.B8.MESSAGE_COMPONENT && (null == e ? true : e.state) === s.F.FAILED ? e.data.componentId : null;
     if (null != (null != r ? v(n, r) : null)) {
@@ -44,7 +44,7 @@ let p = new Chunk710845.Z("InteractionComponentUtils"),
 
 function E(e) {
   var t;
-  return null != (t = e.placeholder) ? t : _.intl.string(_.t.Otr6W1)
+  return null != (t = e.placeholder) ? t : _.intl.string(_.t.Otr6W2)
 }
 let b = e => {
   switch (e) {

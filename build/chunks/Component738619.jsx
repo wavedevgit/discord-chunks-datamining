@@ -85,7 +85,7 @@ class N extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk458182.activityInviteEducationArrow
       }), (0, Chunk951288.jsx)("span", {
-        children: Chunk388032.intl.format(Chunk388032.t["i/MoCg"], {
+        children: Chunk388032.intl.format(Chunk388032.t["i/MoCt"], {
           game: module.name,
           dismissOnClick: this.handleDismissInviteEducation
         })
@@ -138,17 +138,17 @@ function D(e) {
     isFocused: n
   }) : null;
   let [y, v, S] = o, j = "";
-  1 === o.length ? j = E.intl.format(E.t.lJ9sZW, {
+  1 === o.length ? j = x.intl.format(x.t.lJ9sZX, {
     a: y
-  }) : 2 === o.length ? j = E.intl.format(E.t.rB0CUV, {
+  }) : 2 === o.length ? j = x.intl.format(x.t.rB0CUa, {
     a: y,
     b: v
-  }) : 3 === o.length ? j = E.intl.format(E.t.StKTho, {
+  }) : 3 === o.length ? j = x.intl.format(x.t.StKThj, {
     a: y,
     b: v,
     c: S
-  }) : o.length > 3 && (j = E.intl.format(E.t.Q8lUnJ, {}));
-  let I = m && o.length > 0 && o.length <= 3 ? E.intl.format(E.t["qD/0qa"], {}) : j;
+  }) : o.length > 3 && (j = x.intl.format(x.t.Q8lUnE, {}));
+  let I = m && o.length > 0 && o.length <= 3 ? x.intl.format(x.t["qD/0qZ"], {}) : j;
   return (0, i.jsxs)("div", {
     className: l()(w.typing, {
       "stop-animation": !n,

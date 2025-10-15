@@ -20,7 +20,7 @@ function f() {
     className: o()(Chunk132789.row, Chunk132789.rowGuildName),
     children: (0, Chunk951288.jsx)("span", {
       className: o()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize, Chunk448213.tooltipText),
-      children: Chunk388032.intl.string(Chunk388032.t["4tSWQk"])
+      children: Chunk388032.intl.string(Chunk388032.t["4tSWQg"])
     })
   })
 }

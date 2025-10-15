@@ -14,10 +14,10 @@ var Chunk639119 = require("./639119.js"),
 let c = e => {
   let {
     discountAmount: t
-  } = e, n = (0, i.N)(), c = null != n && n.trial_id === o.a7, u = s.intl.string(s.t.IBYG5e);
-  return true !== t ? u = s.intl.formatToPlainString(s.t.iiLbvr, {
+  } = e, n = (0, i.N)(), c = null != n && n.trial_id === o.a7, u = s.intl.string(s.t.IBYG5U);
+  return true !== t ? u = s.intl.formatToPlainString(s.t.iiLbvu, {
     percent: t
-  }) : c && (u = s.intl.string(s.t.gtNqJS)), (0, r.jsx)("div", {
+  }) : c && (u = s.intl.string(s.t.gtNqJQ)), (0, r.jsx)("div", {
     className: l.badgeContainer,
     children: (0, r.jsx)(a.E, {
       text: u

@@ -71,7 +71,7 @@ function Z(e) {
                 className: P.header,
                 children: (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/semibold",
-                  children: T.intl.string(T.t["S40K6+"])
+                  children: T.intl.string(T.t.S40K66)
                 })
               }, "header"), (0, r.jsx)("div", {
                 children: (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function Z(e) {
                       }), (0, r.jsx)(o.Text, {
                         variant: "text-md/normal",
                         color: "text-muted",
-                        children: T.intl.format(T.t.Bf6yxM, {
+                        children: T.intl.format(T.t.Bf6yxB, {
                           onClick: e => {
                             null != n && (e.preventDefault(), m.Z.close(), (0, j._X)(n.id))
                           }

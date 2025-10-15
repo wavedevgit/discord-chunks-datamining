@@ -156,7 +156,7 @@ function U(e) {
         })
       },
       variant: "secondary",
-      text: N.intl.string(N.t.pD1L1t),
+      text: N.intl.string(N.t.pD1L1u),
       textVariant: "text-xs/medium"
     })
   }) : null, ef = i.useCallback(() => {
@@ -194,7 +194,7 @@ function U(e) {
       children: [(0, r.jsx)(l.nn4, {
         children: (0, r.jsx)(l.H, {
           id: D,
-          children: N.intl.string(N.t.J6STd3)
+          children: N.intl.string(N.t.J6STd9)
         })
       }), (0, r.jsxs)("div", {
         ref: q,
@@ -217,7 +217,7 @@ function U(e) {
                 children: (0, r.jsx)(l.Text, {
                   variant: "text-xs/medium",
                   color: "none",
-                  children: N.intl.format(N.t.wv8Q7u, {
+                  children: N.intl.format(N.t.wv8Q7k, {
                     activitiesCount: ec.length
                   })
                 })

@@ -55,7 +55,7 @@ function E(e) {
     className: o()(g.container, y),
     children: [P ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: m.intl.format(b ? m.t.syHjLC : m.t.V15uUF, {
+      children: m.intl.format(b ? m.t.syHjLL : m.t.V15uUI, {
         username: I,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: g.gameIcon,
@@ -66,7 +66,7 @@ function E(e) {
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: m.intl.format(m.t.uIomX1, {
+      children: m.intl.format(m.t.uIomXw, {
         username: I
       })
     }), (0, r.jsxs)("div", {
@@ -75,12 +75,12 @@ function E(e) {
         variant: v ? "secondary" : "primary",
         size: "sm",
         onClick: N,
-        text: m.intl.string(m.t.ZcibdX)
+        text: m.intl.string(m.t.Zcibdf)
       }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         onClick: R,
-        text: m.intl.string(m.t.xuio0N)
+        text: m.intl.string(m.t.xuio0C)
       })]
     })]
   })

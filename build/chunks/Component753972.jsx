@@ -33,7 +33,7 @@ function u(e) {
     className: o()(c.icon, c.placeholder, a)
   }) : null : (0, r.jsx)("img", {
     className: o()(c.icon, a),
-    alt: l.intl.string(l.t.X4IxWF),
+    alt: l.intl.string(l.t.X4IxWL),
     src: p,
     "aria-hidden": true,
     draggable: false

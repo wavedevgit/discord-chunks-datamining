@@ -17,10 +17,10 @@ let s = e => {
       navId: "notification-actions",
       onClose: n,
       onSelect: n,
-      "aria-label": a.intl.string(a.t.ljs3OT),
+      "aria-label": a.intl.string(a.t.ljs3Oe),
       children: (0, r.jsx)(l.sNh, {
         id: "delete",
-        label: a.intl.string(a.t.oyYWHB),
+        label: a.intl.string(a.t.oyYWHE),
         icon: l.XHJ,
         action: async () => {
           await (0, o.g3)(t)
@@ -75,7 +75,7 @@ let s = e => {
         } = e;
         return (0, r.jsx)(l.M0o, {
           ref: n,
-          tooltip: a.intl.string(a.t.UKOtz8),
+          tooltip: a.intl.string(a.t["UKOtz+"]),
           color: l.YX$.TERTIARY,
           icon: (0, r.jsx)(l.xhG, {
             size: "xs",

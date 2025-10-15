@@ -22,7 +22,7 @@ function c(e) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: o.intl.string(o.t.BDUDam)
+      children: o.intl.string(o.t.BDUDau)
     }), (0, r.jsx)("div", {
       className: s.controlsBarContainer,
       children: u
@@ -35,7 +35,7 @@ function c(e) {
       },
       children: [(0, r.jsx)(l.njP.Item, {
         id: "all",
-        children: o.intl.string(o.t.Y9DnPT)
+        children: o.intl.string(o.t.Y9DnPa)
       }), d.map(e => (0, r.jsx)(l.njP.Item, {
         id: e.value,
         children: e.label

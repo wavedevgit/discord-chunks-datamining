@@ -47,7 +47,7 @@ function E(e) {
     o(s()(e, null == T ? true : T.themeColors) ? true : e)
   };
   return (0, r.jsx)(h.Z, {
-    title: m.intl.string(m.t.DMeO2d),
+    title: m.intl.string(m.t.DMeO2X),
     disabled: !C && !E,
     className: a()(g.__invalid_profileThemesSection, y),
     showPremiumIcon: O,
@@ -81,7 +81,7 @@ function E(e) {
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: m.intl.string(m.t["8elvy8"])
+            children: m.intl.string(m.t["8elvy6"])
           })
         })
       }), v && null != b && (0, r.jsx)("div", {
@@ -90,7 +90,7 @@ function E(e) {
         children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
-          text: m.intl.string(m.t["L+Gmoa"]),
+          text: m.intl.string(m.t["L+GmoR"]),
           onClick: () => w([null, null])
         })
       })]

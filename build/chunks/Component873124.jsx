@@ -40,7 +40,7 @@ function o(e) {
       headerAlignStart: c
     }), (0, l.jsxs)(s.Z.SlideContent, {
       children: [(0, l.jsx)(i.oil, {
-        label: a.intl.string(a.t["CIGa+/"]),
+        label: a.intl.string(a.t["CIGa+7"]),
         inputRef: S,
         onChange: b,
         value: p,

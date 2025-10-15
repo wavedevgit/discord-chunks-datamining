@@ -50,10 +50,10 @@ function S(e) {
     setFilename: H
   } = (0, _.Z)(null == d ? true : d.cover_image_asset), W = (0, p.Dt)();
 
-  function V(e, t) {
+  function z(e, t) {
     a()(null != e, "Null value not allowed"), null != t && H(t.name), R(e)
   }
-  let z = i.useMemo(() => {
+  let V = i.useMemo(() => {
       var e;
       return null != P && P !== (null != (e = null == d ? true : d.description) ? e : "") || (null == Z ? true : Z.startsWith("data:")) === true || S !== s || (null == d ? true : d.store_page_guild_products_default_sort) !== D || (null == d ? true : d.server_shop_tab_order) !== L
     }, [Z, s, P, d, S, D, L]),
@@ -68,10 +68,10 @@ function S(e) {
       value: e
     })), []),
     X = i.useMemo(() => [{
-      label: N.intl.string(N.t.X6h2g4),
+      label: N.intl.string(N.t.X6h2gz),
       value: y.a3.PRODUCTS_FIRST
     }, {
-      label: N.intl.string(N.t["KzCF//"]),
+      label: N.intl.string(N.t["KzCF/6"]),
       value: y.a3.SUBS_FIRST
     }], []);
   return (0, r.jsxs)("div", {
@@ -85,8 +85,8 @@ function S(e) {
       })]
     }), l ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.FXm, {
-        label: N.intl.string(N.t["PAVi+/"]),
-        description: N.intl.string(N.t.x87YqK),
+        label: N.intl.string(N.t["PAVi++"]),
+        description: N.intl.string(N.t.x87YqH),
         value: S,
         onChange: e => {
           s !== e && e === O.e3.ALL_CHANNELS && (0, g.h7j)(e => {
@@ -110,11 +110,11 @@ function S(e) {
               return e
             }({}, e), n = n = {
               header: N.intl.string(N.t.dmVoOz),
-              confirmText: N.intl.string(N.t["NX+WJC"]),
+              confirmText: N.intl.string(N.t["NX+WJN"]),
               confirmButtonColor: u.zx.Colors.BRAND,
               children: (0, r.jsx)(g.Text, {
                 variant: "text-md/normal",
-                children: N.intl.string(N.t.mtwzdH)
+                children: N.intl.string(N.t.mtwzdD)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -130,13 +130,13 @@ function S(e) {
         },
         disabled: Y,
         options: [{
-          name: N.intl.string(N.t.rXqxhI),
-          desc: N.intl.string(N.t.yQiJnZ),
+          name: N.intl.string(N.t.rXqxhF),
+          desc: N.intl.string(N.t.yQiJne),
           value: O.e3.SOME_CHANNELS,
           icon: g.VL1
         }, {
-          name: N.intl.string(N.t.WzC9s7),
-          desc: N.intl.string(N.t.WmagiI),
+          name: N.intl.string(N.t.WzC9s6),
+          desc: N.intl.string(N.t.WmagiB),
           value: O.e3.ALL_CHANNELS,
           icon: g._m8
         }]
@@ -144,8 +144,8 @@ function S(e) {
         className: E.divider
       })]
     }), (0, r.jsx)(g.Kx8, {
-      label: N.intl.string(N.t["1+Ho1d"]),
-      placeholder: l ? N.intl.string(N.t.SD6LRU) : N.intl.string(N.t["aVhW/f"]),
+      label: N.intl.string(N.t["1+Ho1X"]),
+      placeholder: l ? N.intl.string(N.t.SD6LRZ) : N.intl.string(N.t["aVhW/W"]),
       maxLength: 1500,
       value: P,
       autosize: true,
@@ -155,8 +155,8 @@ function S(e) {
     }), (0, r.jsx)(g.izJ, {
       className: E.divider
     }), (0, r.jsxs)(g.gNt, {
-      label: N.intl.string(N.t["0kpTpK"]),
-      description: N.intl.string(N.t.i2rCwc),
+      label: N.intl.string(N.t["0kpTpM"]),
+      description: N.intl.string(N.t.i2rCwT),
       children: [(0, r.jsx)(h.Z, {
         image: Z,
         hint: B,
@@ -167,11 +167,11 @@ function S(e) {
         iconWrapperClassName: E.coverImageUploaderIconWrapper,
         imageClassName: E.coverImageUploaderInner,
         iconClassName: E.coverImageUploaderIcon,
-        onChange: V,
+        onChange: z,
         "aria-label": F,
         disabled: Y
       }), (0, r.jsx)(f.Z, {
-        onChange: V,
+        onChange: z,
         "aria-label": F,
         disabled: Y,
         text: B,
@@ -182,8 +182,8 @@ function S(e) {
       children: [(0, r.jsx)(g.izJ, {
         className: E.divider
       }), (0, r.jsx)(g.q4e, {
-        label: N.intl.string(N.t.aaZ9pK),
-        description: N.intl.string(N.t.TILN8v),
+        label: N.intl.string(N.t.aaZ9pE),
+        description: N.intl.string(N.t.TILN8u),
         value: D,
         placeholder: N.intl.string(N.t.XqMe3N),
         options: q,
@@ -193,8 +193,8 @@ function S(e) {
       children: [(0, r.jsx)(g.izJ, {
         className: E.divider
       }), (0, r.jsx)(g.q4e, {
-        label: N.intl.string(N.t["+dtmw8"]),
-        description: N.intl.string(N.t.n8WSWF),
+        label: N.intl.string(N.t["+dtmw+"]),
+        description: N.intl.string(N.t.n8WSWJ),
         value: L,
         placeholder: N.intl.string(N.t.XqMe3N),
         options: X,
@@ -203,7 +203,7 @@ function S(e) {
     }), (0, r.jsx)(c.W, {
       component: "div",
       className: E.contentRegion,
-      children: z && (0, r.jsx)(g.oXn, {
+      children: V && (0, r.jsx)(g.oXn, {
         children: (0, r.jsx)(m.Z, {
           submitting: M,
           disabled: !K,
@@ -216,7 +216,7 @@ function S(e) {
             let e = {};
             P !== d.description && (e.description = P), null != Z && Z.startsWith("data:") && (e.cover_image = Z), S !== s && (e.full_server_gate = S === O.e3.ALL_CHANNELS), D !== d.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = D), L !== d.server_shop_tab_order && (e.server_shop_tab_order = L), o().isEmpty(e) || U(n.id, e)
           },
-          saveButtonTooltip: K ? true : N.intl.string(N.t["6HRvio"])
+          saveButtonTooltip: K ? true : N.intl.string(N.t["6HRvit"])
         })
       })
     })]

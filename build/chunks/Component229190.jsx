@@ -23,7 +23,7 @@ function o(e) {
       variant: "text-xs/semibold",
       color: "header-secondary",
       className: s.customColorsHeader,
-      children: a.intl.string(a.t.JhNpg4)
+      children: a.intl.string(a.t.JhNpgy)
     }), (0, r.jsxs)("div", {
       ref: d,
       className: s.colorPickersContainer,
@@ -56,7 +56,7 @@ function o(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: a.intl.string(a.t["8elvy8"])
+          children: a.intl.string(a.t["8elvy6"])
         }), (0, r.jsx)(l.Z$W, {
           className: s.colorPicker,
           value: n.secondary,

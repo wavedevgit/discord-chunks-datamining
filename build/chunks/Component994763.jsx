@@ -1,7 +1,7 @@
 /** Chunk was on 95140 **/
 /** chunk id: 994763, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => L
+  default: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ let D = {
   isOwnerWithRequiredMfaLevel: false,
   isGuildAdmin: false
 };
-class _ extends Chunk647438.PureComponent {
+class L extends Chunk647438.PureComponent {
   componentDidMount() {
     x(this.props.section, null, this.props.analyticsLocation)
   }
@@ -111,7 +111,7 @@ class _ extends Chunk647438.PureComponent {
       onboardingEnabled: S,
       welcomeScreenEmpty: I,
       guildMetadata: j,
-      pinPermissionMigrationAvailable: G
+      pinPermissionMigrationAvailable: A
     } = this.props;
     if (null == Chunk100527) return null;
     let T = (0, Chunk896007.vE)({
@@ -146,7 +146,7 @@ class _ extends Chunk647438.PureComponent {
         section: x && null != Chunk442837 ? Chunk442837 : D,
         onSetSection: Chunk434404.Z.setSection,
         onClose: Chunk37234.xf,
-        title: "" !== Chunk100527.name ? Chunk100527.name : Chunk388032.intl.string(Chunk388032.t["154/bG"]),
+        title: "" !== Chunk100527.name ? Chunk100527.name : Chunk388032.intl.string(Chunk388032.t["154/bL"]),
         sections: Chunk981631
       }), (0, Chunk951288.jsx)(Chunk918658.d, {
         guildId: Chunk100527.id
@@ -155,17 +155,17 @@ class _ extends Chunk647438.PureComponent {
   }
 }
 
-function L() {
+function _() {
   var e, n, t;
   let {
     guild: r,
     section: o,
     analyticsLocation: c,
     guildMetadata: O,
-    isGuildMetadataLoaded: A
+    isGuildMetadataLoaded: G
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), {
     analyticsLocations: C
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS), w = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), x = (0, Chunk984802.Ll)(), L = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != Chunk37234 ? Chunk984933.ZP.getChannels(Chunk37234.id).SELECTABLE : null, [Chunk37234]), R = (0, Chunk442837.cj)([Chunk496675.Z], () => null != Chunk37234 ? Chunk496675.Z.getGuildPermissionProps(Chunk37234) : D), K = null == Chunk37234 ? true : Chunk37234.id, k = (0, Chunk442837.e7)([Chunk496675.Z], () => null != Chunk37234 && Chunk496675.Z.canAccessGuildSettings(Chunk37234));
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS), w = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), x = (0, Chunk984802.Ll)(), _ = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != Chunk37234 ? Chunk984933.ZP.getChannels(Chunk37234.id).SELECTABLE : null, [Chunk37234]), R = (0, Chunk442837.cj)([Chunk496675.Z], () => null != Chunk37234 ? Chunk496675.Z.getGuildPermissionProps(Chunk37234) : D), K = null == Chunk37234 ? true : Chunk37234.id, k = (0, Chunk442837.e7)([Chunk496675.Z], () => null != Chunk37234 && Chunk496675.Z.canAccessGuildSettings(Chunk37234));
   Chunk647438.useEffect(() => {
     Chunk896007 || null == K || (0, Chunk456268.aC)(K)
   }, [Chunk896007, K]);
@@ -192,7 +192,7 @@ function L() {
     z = (0, Chunk190263.D)(Chunk37234);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk978946,
-    children: (0, Chunk951288.jsx)(_, (n = function(e) {
+    children: (0, Chunk951288.jsx)(L, (n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           l = Object.keys(t);
@@ -214,7 +214,7 @@ function L() {
       section: Chunk503089,
       theme: Chunk388032,
       sidebarTheme: x,
-      channels: L,
+      channels: _,
       showDirtyGuildTemplateIndicator: W,
       analyticsLocation: Chunk367907,
       memberCount: B

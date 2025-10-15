@@ -38,7 +38,7 @@ function p(e) {
     y = [p.firstHeader, p.secondHeader].filter(Boolean).join(" "),
     b = [{
       variant: "secondary",
-      text: s.intl.string(s.t["ETE/oK"]),
+      text: s.intl.string(s.t["ETE/oC"]),
       onClick: u.onClose
     }, ...null != p.primaryButtonText ? [{
       variant: "primary",

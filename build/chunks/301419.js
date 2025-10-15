@@ -61,13 +61,13 @@ function f(e) {
     _ = n.extra.artist.name,
     p = {
       onClick: () => (0, i.o)(o.Hw.ALBUM, n.extra.media.external_parent_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
+      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
         itemName: n.extra.media.parent_title
       })
     },
     h = {
       onClick: () => (0, i.o)(o.Hw.ARTIST, n.extra.artist.external_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
+      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
         itemName: _
       })
     };
@@ -79,7 +79,7 @@ function f(e) {
     titleClickable: h,
     subtitleClickable: p,
     thumbnailClickable: p,
-    userDescription: s.t.CcVI1d,
+    userDescription: s.t.CcVI1T,
     providerIconProps: t
   })
 }

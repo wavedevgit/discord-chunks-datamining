@@ -56,7 +56,7 @@ let p = function(e) {
             return e
           }({}, e), n = n = {
             icon: l.ewm,
-            label: d.intl.string(d.t["3D5yo6"]),
+            label: d.intl.string(d.t["3D5yo/"]),
             ref: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);

@@ -174,23 +174,23 @@ let N = [{
         })]
       }), (0, r.jsx)(d.Heading, {
         variant: "heading-xl/semibold",
-        children: b.intl.string(b.t["M/gBcH"])
+        children: b.intl.string(b.t["M/gBcA"])
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
         className: x.body,
-        children: b.intl.format(b.t["52EgsL"], {
+        children: b.intl.format(b.t["52EgsM"], {
           helpdeskArticle: p.Z.getArticleURL(f.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.u, {
-        text: S ? null : b.intl.string(b.t["pjG+T0"]),
-        "aria-label": S ? true : b.intl.string(b.t["pjG+T0"]),
+        text: S ? null : b.intl.string(b.t["pjG+T3"]),
+        "aria-label": S ? true : b.intl.string(b.t["pjG+T3"]),
         children: (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: x.button,
           children: (0, r.jsx)(d.Button, {
             variant: "primary",
-            text: b.intl.string(b.t.LhlgY2),
+            text: b.intl.string(b.t.LhlgY9),
             onClick: () => {
               g.Z.open()
             },
@@ -202,12 +202,12 @@ let N = [{
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: b.intl.string(b.t.OzLWLC)
+        children: b.intl.string(b.t.OzLWLE)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         className: x.body,
         variant: "text-sm/normal",
-        children: b.intl.format(b.t.rjhrqK, {
+        children: b.intl.format(b.t.rjhrqC, {
           helpdeskArticle: p.Z.getArticleURL(f.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
@@ -215,8 +215,8 @@ let N = [{
         children: [{
           icon: d.IeX,
           color: o.Z.unsafe_rawColors.GREEN_360.css,
-          header: b.intl.string(b.t.oVQF29),
-          body: b.intl.format(b.t.A6G7am, {
+          header: b.intl.string(b.t.oVQF2y),
+          body: b.intl.format(b.t.A6G7ak, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
               className: x.featuredText,
               children: e
@@ -225,11 +225,11 @@ let N = [{
         }, {
           icon: d.IeX,
           color: o.Z.unsafe_rawColors.PARTNER.css,
-          header: b.intl.string(b.t["0rJl9/"]),
-          body: b.intl.format(b.t.XsCNk5, {
+          header: b.intl.string(b.t["0rJl9y"]),
+          body: b.intl.format(b.t.XsCNky, {
             infoHook: () => (0, r.jsx)(c.u, {
-              text: b.intl.string(b.t.kPJlTk),
-              "aria-label": b.intl.string(b.t.kPJlTk),
+              text: b.intl.string(b.t.kPJlTh),
+              "aria-label": b.intl.string(b.t.kPJlTh),
               children: (0, r.jsx)(d.d3s, {
                 size: "xs",
                 color: "currentColor",
@@ -245,7 +245,7 @@ let N = [{
           icon: d.d3s,
           color: o.Z.unsafe_rawColors.RED_360.css,
           header: b.intl.string(b.t.W2kLJC),
-          body: b.intl.string(b.t.hyNkHx)
+          body: b.intl.string(b.t.hyNkHz)
         }].map((e, t) => (0, r.jsx)(E, y({}, e), t))
       })]
     })

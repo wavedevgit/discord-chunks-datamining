@@ -45,10 +45,10 @@ function N(e) {
     isNewChannel: L,
     muted: M,
     resolvedUnreadSetting: k
-  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), V = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), F = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
+  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
     channel: n,
-    locked: V,
-    video: (H || z) && null == F,
+    locked: F,
+    video: (H || z) && null == V,
     selected: N
   }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([f.Z], () => {
     var e, t;
@@ -69,7 +69,7 @@ function N(e) {
   if (!M && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: I.intl.format(I.t.GkAbqa, {
+    children: I.intl.format(I.t.GkAbqY, {
       count: (0, o.NGo)(K)
     })
   });
@@ -84,12 +84,12 @@ function N(e) {
     video: H || z,
     channel: n
   }) : Z && (0, _.a)(w) && q ? (0, r.jsx)(o.IGR, {
-    text: I.intl.string(I.t.dI3q4u),
+    text: I.intl.string(I.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != F ? (0, r.jsx)(c.x3, {
+  }) : null != V ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",
     entry: {
-      start: F
+      start: V
     }
   }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(j.Z, {
     embeddedApps: B,

@@ -27,13 +27,13 @@ let f = [{
     secondary_color: null,
     tertiary_color: null
   },
-  labelString: Chunk388032.t["8Qyaho"]
+  labelString: Chunk388032.t["8Qyahn"]
 }, {
   id: Chunk103576.g.GRADIENT,
   colors: Chunk141006.Eg,
-  labelString: Chunk388032.t.XpWmJy
+  labelString: Chunk388032.t.XpWmJz
 }, {
   id: Chunk103576.g.HOLOGRAPHIC,
   colors: Chunk141006.SK,
-  labelString: Chunk388032.t.QTKppa
+  labelString: Chunk388032.t.QTKppe
 }]

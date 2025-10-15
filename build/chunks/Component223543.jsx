@@ -34,10 +34,10 @@ function d(e) {
       className: u.marginBottom20
     }), (0, r.jsx)(a.Dx, {
       className: u.marginBottom8,
-      children: c.intl.string(c.t.GHRpub)
+      children: c.intl.string(c.t.GHRpue)
     }), (0, r.jsx)(a.DK, {
       className: u.marginBottom40,
-      children: c.intl.string(c.t["1nO55u"])
+      children: c.intl.string(c.t["1nO55v"])
     })]
   }) : "succeeded" === d ? (0, r.jsxs)(a.ZP, {
     children: [(0, r.jsx)("img", {
@@ -46,14 +46,14 @@ function d(e) {
       className: u.marginBottom20
     }), (0, r.jsx)(a.Dx, {
       className: u.marginBottom8,
-      children: c.intl.string(c.t["ihHX5+"])
+      children: c.intl.string(c.t.ihHX53)
     }), (0, r.jsx)(a.DK, {
       className: u.marginBottom40,
-      children: c.intl.string(c.t.pGPCv7)
+      children: c.intl.string(c.t["pGPCv+"])
     })]
   }) : (0, r.jsxs)(a.ZP, {
     children: [(0, r.jsx)(a.Hh, {}), (0, r.jsx)(a.Dx, {
-      children: c.intl.string(c.t.T3vC7u)
+      children: c.intl.string(c.t.T3vC7n)
     })]
   })
 }

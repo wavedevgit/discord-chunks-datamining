@@ -33,7 +33,7 @@ function c(e) {
     })
   });
   let b = null;
-  return null != m ? b = m : g ? b = s.intl.string(s.t.MyJpJS) : null != p ? (b = p, t = s.intl.string(s.t["YKw/NT"])) : h ? b = s.intl.string(s.t.e2g9sb) : f && (b = s.intl.string(s.t.rxI9sr)), null != b ? (0, r.jsx)("div", {
+  return null != m ? b = m : g ? b = s.intl.string(s.t.MyJpJT) : null != p ? (b = p, t = s.intl.string(s.t["YKw/NQ"])) : h ? b = s.intl.string(s.t.e2g9sW) : f && (b = s.intl.string(s.t.rxI9sl)), null != b ? (0, r.jsx)("div", {
     className: o.noticeContainer,
     children: (0, r.jsx)(i.Wn, {
       messageType: i.QYI.WARNING,

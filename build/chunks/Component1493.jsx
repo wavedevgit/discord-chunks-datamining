@@ -22,7 +22,7 @@ function l(t) {
     instructionText: h,
     transitionState: m,
     children: j
-  } = t, [b, f] = a.useState(""), [g, v] = a.useState(null), C = a.Children.count(j) > 0 ? (0, r.jsx)(i.Zbd, {
+  } = t, [b, f] = a.useState(""), [C, g] = a.useState(null), v = a.Children.count(j) > 0 ? (0, r.jsx)(i.Zbd, {
     type: i.Zbd.Types.WARNING,
     className: o.card,
     children: (0, r.jsx)(i.Text, {
@@ -37,7 +37,7 @@ function l(t) {
     parentComponent: "TextEntryConfirm",
     children: (0, r.jsxs)("form", {
       onSubmit: function(t) {
-        if (t.preventDefault(), b.toLowerCase() !== l.toLowerCase()) return void v(c);
+        if (t.preventDefault(), b.toLowerCase() !== l.toLowerCase()) return void g(c);
         null == e || e(), n()
       },
       children: [(0, r.jsx)(i.xBx, {
@@ -47,7 +47,7 @@ function l(t) {
           children: d
         })
       }), (0, r.jsxs)(i.hzk, {
-        children: [C, (0, r.jsxs)("div", {
+        children: [v, (0, r.jsxs)("div", {
           className: o.spacing,
           children: [(0, r.jsx)(i.oil, {
             id: "text-entry-confirm",
@@ -57,11 +57,11 @@ function l(t) {
             autoComplete: "off",
             onChange: f,
             autoFocus: true
-          }), null != g && "" !== g ? (0, r.jsx)(i.Text, {
+          }), null != C && "" !== C ? (0, r.jsx)(i.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
             className: o.error,
-            children: g
+            children: C
           }) : null]
         })]
       }), (0, r.jsx)(i.mzw, {
@@ -69,11 +69,11 @@ function l(t) {
           direction: "horizontal-reverse",
           children: [(0, r.jsx)(i.Button, {
             variant: "critical-primary",
-            text: null != p ? p : s.intl.string(s.t["cY+Ooa"]),
+            text: null != p ? p : s.intl.string(s.t["cY+Oob"]),
             type: "submit"
           }), (0, r.jsx)(i.Button, {
             variant: "secondary",
-            text: null != x ? x : s.intl.string(s.t["ETE/oK"]),
+            text: null != x ? x : s.intl.string(s.t["ETE/oC"]),
             onClick: n
           })]
         })

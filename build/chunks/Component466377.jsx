@@ -234,7 +234,7 @@ function M(e) {
   return (0, r.jsx)(f.Button, {
     "data-migration-pending": true,
     focusProps: e.focusProps,
-    "aria-label": b.intl.string(b.t.cpT0Cg),
+    "aria-label": b.intl.string(b.t.cpT0Cq),
     look: f.Button.Looks.BLANK,
     size: f.Button.Sizes.NONE,
     onClick: e.onClick,

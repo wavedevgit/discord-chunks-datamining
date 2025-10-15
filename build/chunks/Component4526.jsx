@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk985002 = require("./985002.js"),
   Chunk880257 = require("./880257.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk544723 = require("./544723.js");
 let p = e => {
@@ -39,13 +39,13 @@ let p = e => {
       },
       children: [h && (0, n.jsx)(s.M14, {
         type: "critical",
-        children: b.intl.string(u.default.tJAUys)
+        children: b.intl.string(u.default.tJAUyn)
       }), (0, n.jsxs)(s.hzk, {
         "data-migration-pending": true,
         children: [(0, n.jsx)(d.Z.Header, {
           currentUser: t,
           otherUser: r,
-          header: b.intl.string(u.default.teIRCQ),
+          header: b.intl.string(u.default.teIRCR),
           icon: (0, n.jsx)(s.Dio, {
             size: "md",
             color: "currentColor",
@@ -53,7 +53,7 @@ let p = e => {
           })
         }), (0, n.jsx)(d.Z.Content, {
           children: (0, n.jsx)(d.Z.Notice, {
-            notice: b.intl.string(u.default.LcM8BQ)
+            notice: b.intl.string(u.default.LcM8BS)
           })
         })]
       }), (0, n.jsx)(s.mzw, {
@@ -64,7 +64,7 @@ let p = e => {
             children: [(0, n.jsx)(s.Button, {
               variant: "secondary",
               size: "sm",
-              text: b.intl.string(b.t["ETE/oK"]),
+              text: b.intl.string(b.t["ETE/oC"]),
               type: "button",
               disabled: O,
               onClick: p

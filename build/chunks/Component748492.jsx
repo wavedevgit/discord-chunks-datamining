@@ -52,7 +52,7 @@ function M(e) {
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? D.intl.string(D.t["2TiKgY"]) : D.intl.string(D.t.oN8bqa)
+    label: n ? D.intl.string(D.t["2TiKgS"]) : D.intl.string(D.t.oN8bqe)
   })
 }
 

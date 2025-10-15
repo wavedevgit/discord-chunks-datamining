@@ -92,12 +92,12 @@ function w() {
     children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
       component: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.KUw7Sk)
+        children: Chunk388032.intl.string(Chunk388032.t.KUw7Ss)
       }),
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk197571.marginBottom20,
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.c0m8bG, {})
+        children: Chunk388032.intl.format(Chunk388032.t.c0m8bK, {})
       }), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk86477.divider
       }), (0, Chunk951288.jsx)(Z, {})]
@@ -170,7 +170,7 @@ function R() {
       className: Chunk86477.descriptionSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
-        children: Chunk388032.intl.string(Chunk388032.t["f8u+VF"])
+        children: Chunk388032.intl.string(Chunk388032.t["f8u+VO"])
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
@@ -178,7 +178,7 @@ function R() {
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
-        }), Chunk388032.intl.string(Chunk388032.t.K2tn19)]
+        }), Chunk388032.intl.string(Chunk388032.t.K2tn16)]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
@@ -186,7 +186,7 @@ function R() {
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
-        }), Chunk388032.intl.string(Chunk388032.t.om5gNj)]
+        }), Chunk388032.intl.string(Chunk388032.t.om5gNq)]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
@@ -194,13 +194,13 @@ function R() {
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
-        }), Chunk388032.intl.string(Chunk388032.t["/VNqdH"])]
+        }), Chunk388032.intl.string(Chunk388032.t["/VNqdD"])]
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk86477.descriptionSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
-        children: Chunk388032.intl.string(Chunk388032.t["8zhJEh"])
+        children: Chunk388032.intl.string(Chunk388032.t["8zhJEr"])
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.k$p, {
@@ -208,7 +208,7 @@ function R() {
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
-        }), Chunk388032.intl.string(Chunk388032.t.WOKI6u)]
+        }), Chunk388032.intl.string(Chunk388032.t.WOKI6t)]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.k$p, {
@@ -216,7 +216,7 @@ function R() {
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
-        }), Chunk388032.intl.string(Chunk388032.t.ddhDJC)]
+        }), Chunk388032.intl.string(Chunk388032.t.ddhDJH)]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
         children: [(0, Chunk951288.jsx)(Chunk481060.k$p, {
@@ -224,7 +224,7 @@ function R() {
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
-        }), Chunk388032.intl.string(Chunk388032.t["6Q/DHh"])]
+        }), Chunk388032.intl.string(Chunk388032.t["6Q/DHk"])]
       })]
     })]
   })
@@ -237,15 +237,15 @@ function D(e) {
   } = e;
   return (0, i.jsx)(m.sYh, {
     dismissable: true,
-    header: O.intl.string(O.t["cN/RFB"]),
-    confirmText: O.intl.string(O.t["cN/RFB"]),
-    cancelText: O.intl.string(O.t["ETE/oK"]),
+    header: O.intl.string(O.t["cN/RFD"]),
+    confirmText: O.intl.string(O.t["cN/RFD"]),
+    cancelText: O.intl.string(O.t["ETE/oC"]),
     onCancel: t,
     onConfirm: n,
     children: (0, i.jsx)(m.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: O.intl.string(O.t.apCQv7)
+      children: O.intl.string(O.t["apCQv/"])
     })
   })
 }
@@ -262,26 +262,26 @@ function A() {
       Chunk120356(true)
     }, []),
     c = Chunk647438.useMemo(() => {
-      if (!(r || module.length < 1 || P(module))) return Chunk388032.intl.string(Chunk388032.t.IHAlh4)
+      if (!(r || module.length < 1 || P(module))) return Chunk388032.intl.string(Chunk388032.t.IHAlh1)
     }, [module, r]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-      label: Chunk388032.intl.string(Chunk388032.t.z1a9R0),
+      label: Chunk388032.intl.string(Chunk388032.t.z1a9R1),
       required: true,
       error: null != c ? c : null == require ? true : require.getFirstFieldErrorMessage("name"),
       value: module,
       onChange: e => S.setName(e),
-      placeholder: Chunk388032.intl.string(Chunk388032.t.bMlpvr),
+      placeholder: Chunk388032.intl.string(Chunk388032.t.bMlpvk),
       maxLength: 100,
       onBlur: s,
       onFocus: Chunk512722,
       autoFocus: true
     }), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
-      label: Chunk388032.intl.string(Chunk388032.t.GxirWV),
+      label: Chunk388032.intl.string(Chunk388032.t.GxirWa),
       error: null == require ? true : require.getFirstFieldErrorMessage("description"),
       value: exports,
       onChange: e => S.setDescription(e),
-      placeholder: Chunk388032.intl.string(Chunk388032.t.n1FBXl),
+      placeholder: Chunk388032.intl.string(Chunk388032.t.n1FBXh),
       maxLength: 120
     })]
   })
@@ -296,7 +296,7 @@ function L(e) {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.gNt, {
-      label: O.intl.string(O.t.zGGcLy),
+      label: O.intl.string(O.t.zGGcLw),
       children: (0, i.jsx)(f.Z, {
         buttonLook: g.zx.Looks.FILLED,
         buttonColor: g.zx.Colors.BRAND,
@@ -306,7 +306,7 @@ function L(e) {
       color: "text-feedback-warning",
       className: N.marginTop8,
       variant: "text-sm/normal",
-      children: O.intl.string(O.t.aWsjtL)
+      children: O.intl.string(O.t.aWsjtD)
     }), (0, i.jsxs)("div", {
       className: s()(N.marginTop20, y.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(M, {
@@ -323,7 +323,7 @@ function L(e) {
       })]
     }), n.isDirty && (0, i.jsx)("div", {
       className: y.lastSync,
-      children: O.intl.format(O.t.v0AVur, {
+      children: O.intl.format(O.t.v0AVum, {
         timestamp: new Date(n.updatedAt)
       })
     })]
@@ -344,7 +344,7 @@ function k(e) {
   };
   return (0, i.jsx)(m.Button, {
     variant: "primary",
-    text: O.intl.string(O.t.Wxdi8P),
+    text: O.intl.string(O.t.Wxdi8A),
     loading: r,
     disabled: !P(n),
     onClick: s
@@ -369,7 +369,7 @@ function M(e) {
     className: y.button,
     children: (0, i.jsx)(m.Button, {
       variant: "primary",
-      text: O.intl.string(O.t["Nw+0Y2"]),
+      text: O.intl.string(O.t["Nw+0Y/"]),
       loading: r,
       onClick: s
     })
@@ -395,7 +395,7 @@ function G(e) {
       className: y.button,
       children: (0, i.jsx)(m.Button, {
         variant: "critical-secondary",
-        text: O.intl.string(O.t["cN/RFB"]),
+        text: O.intl.string(O.t["cN/RFD"]),
         onClick: () => a(true)
       })
     }), r ? (0, i.jsx)(D, {
@@ -414,7 +414,7 @@ function U(e) {
     className: y.button,
     children: (0, i.jsx)(m.Button, {
       variant: "secondary",
-      text: O.intl.string(O.t.YI3iV1),
+      text: O.intl.string(O.t.YI3iV6),
       onClick: () => (0, m.ZDy)(async () => {
         let {
           default: e

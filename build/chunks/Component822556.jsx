@@ -19,7 +19,7 @@ function d(e) {
   } = (0, o.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "voice-settings",
-    label: u.intl.string(u.t.NiTd0d),
+    label: u.intl.string(u.t.NiTd0e),
     action: () => {
       (0, s.openUserSettings)(a.n.VOICE_AND_VIDEO_PANEL, {
         section: c.oAB.VOICE,

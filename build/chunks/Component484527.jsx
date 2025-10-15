@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 484527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk226788 = require("./226788.js"),
   Chunk943987 = require("./943987.js");
 
-function j(e) {
+function v(e) {
   let {
     detectedGame: t,
     trackClick: n,
     onInviteResolved: l,
-    closeModal: j
+    closeModal: v
   } = e, [O, y] = r.useState(), I = (0, o.e7)([m.Z], () => {
     var e, t;
     return (null == O || null == (e = O.guild) ? true : e.id) != null && m.Z.isMember(null == O || null == (t = O.guild) ? true : t.id)
@@ -49,7 +49,7 @@ function j(e) {
       };
       null != b && e(b.url)
     }, [b, l, O]), null == O || null == O.guild || !O.guild.features.includes(g.oNc.VERIFIED)) return null;
-  let E = f.ZP.getGuildIconURL({
+  let N = f.ZP.getGuildIconURL({
     id: O.guild.id,
     icon: O.guild.icon,
     size: 32
@@ -60,32 +60,32 @@ function j(e) {
       className: h.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
-      children: x.intl.string(x.t.kBDZSE)
+      children: x.intl.string(x.t.kBDZSL)
     }), (0, i.jsxs)("div", {
       className: a()(h.row, h.gapMd),
       children: [(0, i.jsx)("img", {
-        className: v.guildIcon,
-        src: E,
-        alt: x.intl.formatToPlainString(x.t.xm6W9P, {
+        className: j.guildIcon,
+        src: N,
+        alt: x.intl.formatToPlainString(x.t.xm6W9D, {
           guildName: O.guild.name
         })
       }), (0, i.jsxs)("div", {
-        className: v.inviteInfo,
+        className: j.inviteInfo,
         children: [(0, i.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: O.guild.name
         }), null != O.approximate_member_count && (0, i.jsx)(c.Text, {
           variant: "text-xxs/normal",
-          children: x.intl.format(x.t.zRl6XV, {
+          children: x.intl.format(x.t.zRl6XR, {
             count: O.approximate_member_count
           })
         })]
       })]
     }), (0, i.jsx)(c.Button, {
       variant: "secondary",
-      text: I ? x.intl.string(x.t.cEnaW1) : x.intl.string(x.t.XpeFYm),
+      text: I ? x.intl.string(x.t.cEnaWx) : x.intl.string(x.t.XpeFYr),
       onClick: () => {
-        j(), n(p.as.JoinOfficialServer), d.Z.dispatch({
+        v(), n(p.as.JoinOfficialServer), d.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
           invite: O,
           code: O.code,

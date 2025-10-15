@@ -150,7 +150,7 @@ class w extends Chunk647438.PureComponent {
       isEligibleForTrial: p = false
     } = this.props, h = null != (e = this.props.paymentRequestWallets) ? module : [], m = {
       iconClassName: Chunk213605.buttonIcon,
-      paymentLabel: Chunk388032.intl.string(Chunk388032.t.ZURqX1),
+      paymentLabel: Chunk388032.intl.string(Chunk388032.t.ZURqX0),
       onStripePaymentMethodReceived: Chunk120356,
       onChooseType: require,
       paymentRequestPaymentContext: Chunk355467
@@ -188,7 +188,7 @@ class w extends Chunk647438.PureComponent {
         children: (0, Chunk951288.jsxs)(Chunk481060.P3F, {
           onClick: () => this.toggleAllPayments(),
           className: o()(Chunk149715.flex, Chunk213605.allPaymentsToggleButton),
-          children: [Chunk388032.intl.string(Chunk388032.t["4uiQm5"]), (0, Chunk951288.jsx)(Chunk269128.Z, {
+          children: [Chunk388032.intl.string(Chunk388032.t["4uiQmz"]), (0, Chunk951288.jsx)(Chunk269128.Z, {
             open: exports
           })]
         })
@@ -212,7 +212,7 @@ class w extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk647438,
         children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
-          label: Chunk710845 ? Chunk388032.intl.string(Chunk388032.t.tywMsb) : Chunk388032.intl.string(Chunk388032.t["8lqkf3"]),
+          label: Chunk710845 ? Chunk388032.intl.string(Chunk388032.t.tywMsW) : Chunk388032.intl.string(Chunk388032.t["8lqkf8"]),
           children: S
         })
       }), Chunk710845 && (0, Chunk951288.jsx)("hr", {

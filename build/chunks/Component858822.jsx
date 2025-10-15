@@ -28,14 +28,14 @@ function f(e, t) {
     g = (0, d.U)(f);
   return null == n ? null : i ? (0, r.jsx)(s.sNh, {
     id: "unmute-guild",
-    label: p.intl.string(p.t.De0BTE),
+    label: p.intl.string(p.t.De0BTC),
     subtext: g,
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: false
     }, h.ZB.Unmuted)
   }) : (0, r.jsx)(s.sNh, {
     id: "mute-guild",
-    label: p.intl.string(p.t.vRzp7O),
+    label: p.intl.string(p.t.vRzp7P),
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: true
     }, h.ZB.Muted),

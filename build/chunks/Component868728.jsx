@@ -19,13 +19,13 @@ function d(e) {
   return (0, i.jsxs)(l.Fragment, {
     children: [(0, i.jsx)(r.Button, {
       variant: "primary",
-      text: o.intl.string(o.t.pz1lRE),
+      text: o.intl.string(o.t.pz1lRG),
       onClick: t
     }), (0, i.jsx)(a.zx, {
       look: a.zx.Looks.LINK,
       color: (0, s.ap)(d) ? a.zx.Colors.PRIMARY : a.zx.Colors.WHITE,
       onClick: n,
-      children: o.intl.string(o.t["ETE/oK"])
+      children: o.intl.string(o.t["ETE/oC"])
     })]
   })
 }

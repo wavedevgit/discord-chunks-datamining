@@ -45,8 +45,8 @@ function u(e) {
         }({}, t))
       })
     },
-    message: s.intl.string(s.t["1+hiPz"]),
-    cta: s.intl.string(s.t.hvVgAQ),
+    message: s.intl.string(s.t["1+hiP6"]),
+    cta: s.intl.string(s.t.hvVgAZ),
     trackingSource: a.PsQ.HUB_LINK_NOTICE,
     type: a.vID.HUB_LINK,
     image: c

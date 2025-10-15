@@ -21,8 +21,8 @@ function u() {
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       value: !!require && exports,
       onChange: Chunk695346.xM.updateSetting,
-      title: Chunk388032.intl.string(Chunk388032.t.XahVjo),
-      note: Chunk388032.intl.string(Chunk388032.t.R9fXyc),
+      title: Chunk388032.intl.string(Chunk388032.t.XahVjj),
+      note: Chunk388032.intl.string(Chunk388032.t.R9fXyS),
       disabled: !require
     })
   })

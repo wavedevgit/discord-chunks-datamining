@@ -64,7 +64,7 @@ function j(e) {
   }, [n]), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t["9gsSLi"], {
+      children: f.intl.format(f.t["9gsSLu"], {
         helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })
     }), (0, i.jsx)(o.izJ, {

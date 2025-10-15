@@ -110,7 +110,7 @@ function M(e) {
     }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
       className: x.card,
       children: (0, r.jsx)(y.Z, {
-        heading: L.intl.string(L.t.Iyka0d),
+        heading: L.intl.string(L.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY

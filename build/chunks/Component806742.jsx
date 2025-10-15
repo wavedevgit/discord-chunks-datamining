@@ -67,7 +67,7 @@ let x = function(e) {
   return (0, d.pw)(l) ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: h.intl.string(h.t["9Z+aEB"]),
+    text: h.intl.string(h.t["9Z+aEP"]),
     onClick: x
   }) : (0, r.jsxs)(c.P3F, {
     className: b.editWelcomeSection,
@@ -79,14 +79,14 @@ let x = function(e) {
         message: l.message
       }
     }), (0, r.jsx)(o.u, {
-      text: h.intl.string(h.t.bt75u7),
+      text: h.intl.string(h.t.bt75uw),
       children: (0, r.jsxs)("div", {
         className: a()(b.actionItemEditButton, b.editWelcomeButton),
         children: [(0, r.jsx)(c.vdY, {
           size: "md",
           color: "currentColor"
         }), (0, r.jsx)(c.nn4, {
-          children: h.intl.string(h.t.bt75u7)
+          children: h.intl.string(h.t.bt75uw)
         })]
       })
     })]

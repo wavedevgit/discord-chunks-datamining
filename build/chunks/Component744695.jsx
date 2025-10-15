@@ -112,8 +112,8 @@ function b(e) {
           [h.selected]: s
         }),
         id: p.GlobalDiscoverySharedTabId.MORE,
-        "aria-label": m.intl.string(m.t.UKOtz8),
-        children: [m.intl.string(m.t.UKOtz8), n ? (0, r.jsx)(o.u04, {
+        "aria-label": m.intl.string(m.t["UKOtz+"]),
+        children: [m.intl.string(m.t["UKOtz+"]), n ? (0, r.jsx)(o.u04, {
           size: "xs"
         }) : (0, r.jsx)(o.CJ0, {
           size: "xs"

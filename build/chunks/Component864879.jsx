@@ -27,7 +27,7 @@ let d = Chunk647438.forwardRef((e, t) => {
           variant: "display-md",
           color: "header-primary",
           className: u.footerHeader,
-          children: c.intl.string(c.t.lEw32t)
+          children: c.intl.string(c.t.lEw32m)
         })]
       })
     })

@@ -18,7 +18,7 @@ function d() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
       className: Chunk979493.title,
-      children: Chunk388032.intl.string(Chunk388032.t.w5uwoK)
+      children: Chunk388032.intl.string(Chunk388032.t.w5uwoI)
     }), (0, Chunk951288.jsx)(Chunk115849.Z, {})]
   })
 }

@@ -92,7 +92,7 @@ function v(e) {
       onClick: e => e.stopPropagation(),
       children: t.map((e, i) => {
         let l = i === n,
-          c = l ? h.t["qv/U5e"] : h.t.zviMAA;
+          c = l ? h.t["qv/U5V"] : h.t.zviMAG;
         return (0, r.jsx)(s.P3F, {
           id: E(i),
           className: o()(m.galleryItem, {

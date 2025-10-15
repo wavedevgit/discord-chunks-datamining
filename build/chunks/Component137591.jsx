@@ -13,11 +13,11 @@ var Chunk481060 = require("./481060.js"),
 
 function d(t) {
   var n, e;
-  if (!(0, r.Xb)(t) || t.type !== o.d4z.PRIVATE_THREAD) return null;
+  if (!(0, r.Xb)(t) || t.type !== s.d4z.PRIVATE_THREAD) return null;
   let d = null == (e = null == (n = t.threadMetadata) ? true : n.invitable) || e;
   return (0, i.jsx)(l.S89, {
     id: "toggle-thread-invitable",
-    label: s.intl.string(s.t.s2rpNT),
+    label: o.intl.string(o.t.s2rpNf),
     checked: d,
     action: () => a.Z.setInvitable(t, !d)
   })

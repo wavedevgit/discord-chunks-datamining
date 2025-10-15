@@ -29,10 +29,10 @@ function p(e) {
       src: n(689411)
     }), (0, r.jsx)(o.Dx, {
       className: l()(m.marginTop20, m.marginBottom8, g.flexCenter),
-      children: d.intl.string(d.t.eL5z0t)
+      children: d.intl.string(d.t.eL5z0i)
     }), (0, r.jsx)(o.DK, {
       className: m.marginBottom40,
-      children: d.intl.string(d.t["poAv6+"])
+      children: d.intl.string(d.t.poAv63)
     }), (0, r.jsxs)(a.Zbd, {
       className: h.card,
       type: a.Zbd.Types.CUSTOM,

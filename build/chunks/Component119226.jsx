@@ -84,7 +84,7 @@ function N(e) {
       src: a,
       className: O.avatar,
       size: o.EFr.SIZE_152,
-      "aria-label": y.intl.string(y.t.lqaIxM)
+      "aria-label": y.intl.string(y.t.lqaIxI)
     }))
   })
 }

@@ -63,14 +63,14 @@ function L(e) {
     channel: w
   } = e, L = __OVERLAY__, k = (0, g.ZP)(n.id), U = (0, o.ZP)(), G = i.useRef(Date.now()), {
     analyticsLocations: H
-  } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), F = (0, p.ZB)({
+  } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), B = (0, p.ZB)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
-  }), B = i.useRef(null), {
+  }), F = i.useRef(null), {
     isHoveringOrFocusing: V,
     isHovering: z
-  } = (0, u.Z)(B), W = (0, b.$m)(), Y = (0, s.q_F)({
+  } = (0, u.Z)(F), W = (0, b.$m)(), Y = (0, s.q_F)({
     opacity: +(null != W.interactionType),
     config: {
       duration: 150
@@ -79,14 +79,14 @@ function L(e) {
     (0, y.openUserProfileModal)(D({
       sourceAnalyticsLocations: H,
       hideRestrictedProfile: true
-    }, F, e))
+    }, B, e))
   }, K = (0, m.Z)({
     location: "UserProfileSidebar"
   }), Q = (null == k ? true : k.widgets) != null && k.widgets.length > 0;
   return (0, r.jsx)(d.Gt, {
     value: H,
     children: (0, r.jsx)(p.Mt, {
-      value: F,
+      value: B,
       openedAt: G.current,
       fetchStartedAt: null == k ? true : k.fetchStartedAt,
       fetchEndedAt: null == k ? true : k.fetchEndedAt,
@@ -94,7 +94,7 @@ function L(e) {
       children: (0, r.jsx)(b.NJ, {
         value: W,
         children: (0, r.jsxs)(x.Z, {
-          ref: B,
+          ref: F,
           user: n,
           displayProfile: k,
           themeType: R.l.SIDEBAR,
@@ -135,7 +135,7 @@ function L(e) {
                 themeType: R.l.SIDEBAR,
                 disableToolbar: n.bot
               })]
-            }), (0, r.jsx)(T.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: n,
               currentUser: f,
               displayProfile: k,
@@ -152,14 +152,14 @@ function L(e) {
                   })
                 }
               })
-            }), (0, r.jsx)(P.Z, {
+            }), (0, r.jsx)(T.Z, {
               user: n,
               channelId: w.id
             })]
           }), !L && (0, r.jsx)(M, {
             handleOpenProfile: q,
             analyticsLocations: H,
-            context: F
+            context: B
           }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(h.Z, {
             skuId: null == k || null == (t = k.profileEffect) ? true : t.skuId,
             isHovering: z,
@@ -191,7 +191,7 @@ let M = e => {
       children: (0, r.jsx)(s.Text, {
         color: a,
         variant: "text-sm/normal",
-        children: w.intl.string(w.t["+Xp3ho"])
+        children: w.intl.string(w.t["+Xp3hq"])
       })
     })
   })

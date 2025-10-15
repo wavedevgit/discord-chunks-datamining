@@ -61,7 +61,7 @@ class m extends(r = Chunk647438.PureComponent) {
   }
   render() {
     let e, {
-        text: t = Chunk388032.intl.string(Chunk388032.t.OpuAlJ),
+        text: t = Chunk388032.intl.string(Chunk388032.t.OpuAlK),
         mode: n,
         hideMessage: r,
         className: a,

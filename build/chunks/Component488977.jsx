@@ -94,13 +94,13 @@ function L(e) {
         }) : (0, p.J)(S({
           id: r.id
         }, M));
-        (0, b.JG)(e, () => (0, s.showToast)((0, s.createToast)(O.intl.string(O.t["L/PwZW"]), s.ToastType.SUCCESS))), g.default.track(_.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, b.JG)(e, () => (0, s.showToast)((0, s.createToast)(O.intl.string(O.t["L/PwZf"]), s.ToastType.SUCCESS))), g.default.track(_.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: r.id,
           source: k
         })
       },
       className: a()(I.clickable, R),
-      "aria-label": O.intl.string(O.t.WqhZsr),
+      "aria-label": O.intl.string(O.t.WqhZss),
       children: (0, i.jsx)(s.xPt, {
         size: "sm",
         color: s.TVs.colors.INTERACTIVE_ACTIVE
@@ -115,12 +115,12 @@ function L(e) {
           className: A.NN,
           navId: "app-details-more-menu",
           onClose: t,
-          "aria-label": O.intl.string(O.t.AXIHpa),
+          "aria-label": O.intl.string(O.t.AXIHpV),
           onSelect: true,
           children: [(0, i.jsxs)(s.kSQ, {
             children: [D && (0, i.jsx)(s.sNh, {
               id: "open-storefront",
-              label: O.intl.string(O.t.kRvlKC),
+              label: O.intl.string(O.t.kRvlKJ),
               action: () => {
                 (0, s.ZDy)(async () => {
                   let {
@@ -136,7 +136,7 @@ function L(e) {
               }
             }), U ? (0, i.jsx)(s.sNh, {
               id: "add-app",
-              label: O.intl.string(O.t.NgXl3N),
+              label: O.intl.string(O.t.NgXl3C),
               action: () => {
                 null == M.customInstallUrl && (0, c.yw)(_.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, B), (0, j.L)(T(S({}, M), {
                   oauth2Callback: e => {
@@ -151,7 +151,7 @@ function L(e) {
             }) : null, r instanceof v.ZP ? (0, i.jsx)(s.sNh, {
               id: "report-app",
               color: "danger",
-              label: O.intl.string(O.t.jhJze3),
+              label: O.intl.string(O.t.jhJzez),
               action: () => {
                 var e;
                 (0, h.uu)({
@@ -174,7 +174,7 @@ function L(e) {
       }, e), {
         onClick: e.onClick,
         className: a()(I.clickable, R),
-        "aria-label": O.intl.string(O.t.UKOtz8),
+        "aria-label": O.intl.string(O.t["UKOtz+"]),
         children: (0, i.jsx)(s.xhG, {
           size: "sm",
           color: s.TVs.colors.INTERACTIVE_ACTIVE

@@ -35,7 +35,7 @@ let h = e => {
     children: [(0, r.jsx)(a.Heading, {
       className: g.header,
       variant: "heading-sm/semibold",
-      children: p.intl.string(p.t["aYfK//"])
+      children: p.intl.string(p.t["aYfK/w"])
     }), (0, r.jsx)("div", {
       className: g.appContainer,
       children: (0, r.jsxs)("div", {
@@ -74,7 +74,7 @@ let h = e => {
             }), null != O && (0, r.jsx)(a.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: p.intl.formatToPlainString(p.t.C9rUOz, {
+              children: p.intl.formatToPlainString(p.t.C9rUO8, {
                 authorizedAt: O
               })
             })]

@@ -65,17 +65,17 @@ function x(e) {
     selected: w,
     ariaLabel: E
   } = e, {
-    name: L,
-    emojiId: S,
+    name: S,
+    emojiId: L,
     emojiName: N
-  } = t, _ = null != x, [P, C] = i.useState(false), T = (0, c.e7)([f.ZP], () => null != S ? f.ZP.getUsableCustomEmojiById(S) : null), R = _ || null != j, Z = (!_ || !P) && (null != S || null != N), M = 0 === r, A = i.useRef(null), I = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), U = (0, l.jsxs)(l.Fragment, {
-    children: [Z ? (0, l.jsx)(g.Z, {
+  } = t, _ = null != x, [P, C] = i.useState(false), M = (0, c.e7)([f.ZP], () => null != L ? f.ZP.getUsableCustomEmojiById(L) : null), R = _ || null != j, T = (!_ || !P) && (null != L || null != N), Z = 0 === r, A = i.useRef(null), I = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), U = (0, l.jsxs)(l.Fragment, {
+    children: [T ? (0, l.jsx)(g.Z, {
       className: s()(O.emoji, {
-        [O.small]: M
+        [O.small]: Z
       }),
-      emojiId: S,
+      emojiId: L,
       emojiName: N,
-      animated: !!(null == T ? true : T.animated),
+      animated: !!(null == M ? true : M.animated),
       size: "reaction"
     }) : null, P && _ && (0, l.jsx)("div", {
       className: O.closeCircle,
@@ -85,17 +85,17 @@ function x(e) {
         className: O.close
       })
     }), (0, l.jsx)(d.Text, {
-      variant: M ? "text-xs/semibold" : "text-sm/semibold",
+      variant: Z ? "text-xs/semibold" : "text-sm/semibold",
       lineClamp: 1,
       color: "currentColor",
-      children: L
+      children: S
     })]
   }), k = {
     key: t.id,
     className: s()(O.pill, {
       [O.disabled]: a,
       [O.clickable]: R,
-      [O.small]: M,
+      [O.small]: Z,
       [O.selected]: w,
       [O[t.color]]: null != t.color && !R
     }, u),
@@ -121,8 +121,8 @@ function x(e) {
     focusProps: {
       ringTarget: A
     },
-    "aria-label": null != E ? E : D.intl.formatToPlainString(D.t.iyRTLi, {
-      tagName: L
+    "aria-label": null != E ? E : D.intl.formatToPlainString(D.t.iyRTLm, {
+      tagName: S
     }),
     role: "button",
     "aria-pressed": w
@@ -140,7 +140,7 @@ function w(e) {
     size: r = 1
   } = e, i = 0 === r;
   return (0, l.jsx)(u.u, {
-    "aria-label": D.intl.string(D.t["P/y+sr"]),
+    "aria-label": D.intl.string(D.t["P/y+sj"]),
     __unsupportedReactNodeAsText: (0, l.jsx)(l.Fragment, {
       children: t.map(e => (0, l.jsx)(x, {
         tag: e,

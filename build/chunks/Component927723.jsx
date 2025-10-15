@@ -12,7 +12,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js");
+  Chunk833540 = require("./833540.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,11 +74,11 @@ function h() {
     } = await Promise.resolve().then(require.bind(require, 878678));
     return t => (0, r.jsx)(e, _(d({}, t), {
       header: l.intl.string(c.default.odgSTk),
-      confirmText: l.intl.string(l.t.BddRzc),
+      confirmText: l.intl.string(l.t.BddRzS),
       confirmButtonColor: i.zx.Colors.BRAND,
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: l.intl.format(c.default.EZfHRk, {
+        children: l.intl.format(c.default.EZfHRq, {
           helpURL: o.Z.getArticleURL(s.BhN.NSFW_AGE_GATING)
         })
       })

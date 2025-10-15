@@ -12,10 +12,10 @@ var Chunk835834 = require("./835834.js"),
 
 function c(e) {
   return {
-    [o.IIU.STREAMING]: e ? s.t["4CQq9f"] : s.t["0wJXSk"],
-    [o.IIU.LISTENING]: e ? s.t["b+lA5+"] : s.t.Vnuxub,
-    [o.IIU.WATCHING]: e ? s.t.mqdfDQ : s.t.pW3Ip6,
-    [o.IIU.COMPETING]: e ? s.t.oHF7Cg : s.t.QQ2wVF
+    [o.IIU.STREAMING]: e ? s.t["4CQq9Q"] : s.t["0wJXSh"],
+    [o.IIU.LISTENING]: e ? s.t["b+lA5+"] : s.t.Vnuxue,
+    [o.IIU.WATCHING]: e ? s.t.mqdfDc : s.t.pW3Ip3,
+    [o.IIU.COMPETING]: e ? s.t.oHF7Ch : s.t.QQ2wVE
   }
 }
 
@@ -23,7 +23,7 @@ function u(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null != e && e.type === o.IIU.CUSTOM_STATUS) return null != e.state ? e.state.trim() : null;
   let u = (0, r.R)("getActivityText");
-  if (null != t) return null == e || e.type !== o.IIU.PLAYING ? s.intl.string(s.t.eXan7O) : u ? e.name : s.intl.format(c(n)[o.IIU.STREAMING], {
+  if (null != t) return null == e || e.type !== o.IIU.PLAYING ? s.intl.string(s.t.eXan7B) : u ? e.name : s.intl.format(c(n)[o.IIU.STREAMING], {
     name: e.name
   });
   if (null == e || null == e.name) return null;
@@ -49,9 +49,9 @@ function u(e, t) {
         return null;
       case o.IIU.PLAYING:
       default:
-        return i ? t : n ? s.intl.formatToPlainString(s.t.Sq9xJy, {
+        return i ? t : n ? s.intl.formatToPlainString(s.t.Sq9xJ7, {
           game: t
-        }) : s.intl.format(s.t.lFApm5, {
+        }) : s.intl.format(s.t.lFApmz, {
           game: t
         })
     }

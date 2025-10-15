@@ -61,7 +61,7 @@ function A(e) {
     [D, k] = i.useState(false),
     [Z, U] = i.useState(null),
     [G, W] = i.useState(M ? x.Wq.SUGGESTION : x.Wq.NONE),
-    [F, q] = i.useState(false),
+    [q, F] = i.useState(false),
     [B, z] = i.useState(false),
     H = i.useRef(null),
     V = (0, l.e7)([O.Z], () => O.Z.isCurrentUsernameInvalid()),
@@ -70,8 +70,8 @@ function A(e) {
       return o()(null != e, "PomeloModal: user cannot be undefined"), e
     }),
     {
-      usernameSuggestion: Y,
-      usernameSuggestionLoading: X
+      usernameSuggestion: X,
+      usernameSuggestionLoading: Y
     } = (0, b.G)(M ? x.en : true);
   i.useEffect(() => {
     G === x.Wq.EDIT_USERNAME && z(true), p.default.track(j.rMx.POMELO_EDIT_STEP_VIEWED, {
@@ -79,10 +79,10 @@ function A(e) {
       step: G
     })
   }, [G, n]), i.useEffect(() => {
-    B || F || null == Y || !(Y.length > 0) || $(e => {
+    B || q || null == X || !(X.length > 0) || $(e => {
       var t, n;
       return t = C({}, e), n = n = {
-        username: Y
+        username: X
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -94,12 +94,12 @@ function A(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t
     })
-  }, [Y, B, F]);
+  }, [X, B, q]);
   let [Q, $] = i.useState({
     username: (0, S.e$)(K),
     globalName: h.ZP.getName(K)
   }), J = e => {
-    U(null), null != e.username && q(true), $(t => C({}, t, e))
+    U(null), null != e.username && F(true), $(t => C({}, t, e))
   }, ee = i.useMemo(() => [{
     slideId: T.A.INFO,
     next: T.A.EDIT_SCREEN,
@@ -119,7 +119,7 @@ function A(e) {
     slideId: T.A.FINISH_LATER
   }], [G]), et = ee.length, en = i.useCallback(async () => {
     if (Q.globalName.length <= 0) {
-      let e = I.intl.formatToPlainString(I.t.IpijXF, {
+      let e = I.intl.formatToPlainString(I.t.IpijXA, {
         minNum: 1,
         maxNum: 32
       });
@@ -152,7 +152,7 @@ function A(e) {
       }, M), await (0, d.In)(K.id), W(x.Wq.PREVIEW)
     } catch (n) {
       let e = new g.Z(n),
-        t = (null == e ? true : e.status) != null && e.status >= 400 && e.status < 500 ? e.getAnyErrorMessage() : I.intl.string(I.t.R0RpRU);
+        t = (null == e ? true : e.status) != null && e.status >= 400 && e.status < 500 ? e.getAnyErrorMessage() : I.intl.string(I.t.R0RpRX);
       U(t), p.default.track(j.rMx.POMELO_ERRORS, {
         reason: t,
         username_error: true,
@@ -175,8 +175,8 @@ function A(e) {
       handleBack: eo,
       handleRemindMeLater: es,
       onClose: A
-    }, D, X, F)
-  }, [eo, es, el, A, ee, w, D, X, F]), eu = i.useMemo(() => (0, S.zV)(K), [K]);
+    }, D, Y, q)
+  }, [eo, es, el, A, ee, w, D, Y, q]), eu = i.useMemo(() => (0, S.zV)(K), [K]);
   return i.useLayoutEffect(() => {
     (0, f.Z)(K.id, eu)
   }, [K, eu]), i.useEffect(() => {
@@ -189,9 +189,9 @@ function A(e) {
       case x.Wq.SUGGESTION:
         null == (t = H.current) || t.focusUsername()
     }
-  }, [G]), !F && null == Z && (G === x.Wq.EDIT_USERNAME ? t = I.intl.formatToPlainString(I.t.AJh8BQ, {
+  }, [G]), !q && null == Z && (G === x.Wq.EDIT_USERNAME ? t = I.intl.formatToPlainString(I.t.AJh8BR, {
     source: K.username
-  }) : G === x.Wq.SUGGESTION && (X || null != Y) && (t = I.intl.string(I.t["i/2SgI"]))), (0, r.jsxs)(u.Y0X, {
+  }) : G === x.Wq.SUGGESTION && (Y || null != X) && (t = I.intl.string(I.t["i/2SgP"]))), (0, r.jsxs)(u.Y0X, {
     className: P.modalRoot,
     impression: {
       impressionName: s.ImpressionNames.POMELO_LANDING,
@@ -211,7 +211,7 @@ function A(e) {
       size: c.zx.Sizes.MIN,
       look: c.zx.Looks.BLANK,
       className: P.closeContainer,
-      "aria-label": I.intl.string(I.t.cpT0Cg),
+      "aria-label": I.intl.string(I.t.cpT0Cq),
       children: (0, r.jsx)(u.Dio, {
         size: "custom",
         color: "currentColor",
@@ -261,7 +261,7 @@ function A(e) {
             onFocusUsername: () => W(x.Wq.SUGGESTION),
             onFocusDisplayName: () => W(x.Wq.EDIT_DISPLAY_NAME),
             onClose: A,
-            usernameSuggestionLoading: X,
+            usernameSuggestionLoading: Y,
             oneClickFlow: M
           })
         })]
@@ -280,37 +280,37 @@ let R = (e, t, n, i, a) => 0 === e.length ? null : (0, r.jsxs)(u.mzw, {
       look: c.zx.Looks.BLANK,
       color: c.zx.Colors.CUSTOM,
       onClick: t.handleRemindMeLater,
-      children: I.intl.string(I.t["1mGbXF"])
+      children: I.intl.string(I.t["1mGbXA"])
     }), e.includes("NEXT") && (0, r.jsx)(u.Button, {
       variant: "primary",
       size: "sm",
-      text: I.intl.string(I.t.PDTjLC),
+      text: I.intl.string(I.t.PDTjLN),
       type: "button",
       loading: n,
       onClick: t.handleNext
     }), e.includes("SUBMIT") && (0, r.jsx)(u.Button, {
       variant: "primary",
       size: "sm",
-      text: I.intl.string(I.t.geKm7u),
+      text: I.intl.string(I.t.geKm7t),
       type: "button",
       loading: n,
       onClick: t.handleNext
     }), e.includes("GET_STARTED") && (0, r.jsx)(u.Button, {
       variant: "primary",
       size: "sm",
-      text: I.intl.string(I.t.LhlgY2),
+      text: I.intl.string(I.t.LhlgY9),
       type: "button",
       onClick: t.handleNext
     }), e.includes("GOT_IT") && (0, r.jsx)(u.Button, {
       variant: "primary",
       size: "sm",
-      text: I.intl.string(I.t["NX+WJC"]),
+      text: I.intl.string(I.t["NX+WJN"]),
       type: "button",
       onClick: t.onClose
     }), e.includes("UPDATE") && (0, r.jsx)(u.Button, {
       variant: "primary",
       size: "sm",
-      text: I.intl.string(I.t.VZANAA),
+      text: I.intl.string(I.t.VZANAD),
       type: "button",
       disabled: i && !a,
       loading: n,
@@ -323,6 +323,6 @@ let R = (e, t, n, i, a) => 0 === e.length ? null : (0, r.jsxs)(u.mzw, {
     look: c.zx.Looks.BLANK,
     color: c.zx.Colors.CUSTOM,
     onClick: t.handleBack,
-    children: I.intl.string(I.t["13/7kZ"])
+    children: I.intl.string(I.t["13/7kX"])
   })]
 })

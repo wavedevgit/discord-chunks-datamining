@@ -17,8 +17,8 @@ function c(t) {
     transitionState: e,
     onClose: i,
     onBeforeDelete: c,
-    onAfterDelete: h,
-    clip: m
+    onAfterDelete: m,
+    clip: h
   } = t;
   return (0, a.jsxs)(n.Y0X, {
     size: n.CgR.SMALL,
@@ -33,7 +33,7 @@ function c(t) {
           className: o.__invalid_title,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: d.intl.string(d.t.Lzhui4)
+          children: d.intl.string(d.t.Lzhuiz)
         }), (0, a.jsx)(n.olH, {
           onClick: i
         })]
@@ -41,14 +41,14 @@ function c(t) {
         variant: "text-md/medium",
         color: "text-default",
         className: o.__invalid_body,
-        children: d.intl.string(d.t.yxCBqq)
+        children: d.intl.string(d.t.yxCBqo)
       })]
     }), (0, a.jsx)(n.mzw, {
       children: (0, a.jsx)(n.Button, {
         variant: "critical-primary",
-        text: d.intl.string(d.t.VRWPDg),
+        text: d.intl.string(d.t.VRWPDm),
         onClick: function() {
-          null == c || c(), s.sS(m.filepath), h(), l.default.track(r.rMx.CLIP_DELETED)
+          null == c || c(), s.sS(h.filepath), m(), l.default.track(r.rMx.CLIP_DELETED)
         }
       })
     })]

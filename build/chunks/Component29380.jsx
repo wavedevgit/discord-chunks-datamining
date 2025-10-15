@@ -79,7 +79,7 @@ function b(e) {
           button_action: m._y.USE_APP_COMMAND
         })
       },
-      "aria-label": g.intl.formatToPlainString(g.t["XjP/R0"], {
+      "aria-label": g.intl.formatToPlainString(g.t["XjP/R+"], {
         buttonText: R,
         applicationName: n.name
       }),

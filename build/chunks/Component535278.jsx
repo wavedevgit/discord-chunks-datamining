@@ -24,13 +24,13 @@ function h(e, t) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
   }).format(t / 100);
-  return e.days > 0 ? _.intl.formatToPlainString(_.t["7mw8CQ"], {
+  return e.days > 0 ? _.intl.formatToPlainString(_.t["7mw8CZ"], {
     days: e.days,
     discountPercentage: n
-  }) : e.hours > 0 ? _.intl.formatToPlainString(_.t["0hYT6u"], {
+  }) : e.hours > 0 ? _.intl.formatToPlainString(_.t["0hYT6o"], {
     hours: e.hours,
     discountPercentage: n
-  }) : _.intl.formatToPlainString(_.t["2rh7r6"], {
+  }) : _.intl.formatToPlainString(_.t["2rh7rw"], {
     minutes: Math.max(e.minutes, 1),
     discountPercentage: n
   })
@@ -63,7 +63,7 @@ let m = function(e) {
           }
         })
       },
-      children: _.intl.string(_.t.zLXssL)
+      children: _.intl.string(_.t.zLXssK)
     })]
   })
 }

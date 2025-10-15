@@ -66,7 +66,7 @@ let p = function(e) {
           let e = C.getElement(a.CardNumberElement);
           if (null == e) return;
           e.on("change", e => {
-            g !== e.brand && E(e.brand), e.empty && O ? T(d.intl.string(d.t.eOIfu7)) : null != e.error ? T(d.intl.string(d.t.x4pWtL)) : T(null), R(e)
+            g !== e.brand && E(e.brand), e.empty && O ? T(d.intl.string(d.t.eOIfuy)) : null != e.error ? T(d.intl.string(d.t.x4pWtJ)) : T(null), R(e)
           }), e.on("focus", P), e.on("blur", w);
           break
         }
@@ -74,7 +74,7 @@ let p = function(e) {
           let e = C.getElement(a.CardExpiryElement);
           if (null == e) return;
           e.on("change", e => {
-            null != e.error || e.empty && O ? T(d.intl.string(d.t["9/zZdn"])) : T(null), R(e)
+            null != e.error || e.empty && O ? T(d.intl.string(d.t["9/zZdl"])) : T(null), R(e)
           }), e.on("focus", P), e.on("blur", w);
           break
         }
@@ -82,7 +82,7 @@ let p = function(e) {
           let e = C.getElement(a.CardCvcElement);
           if (null == e) return;
           e.on("change", e => {
-            null != e.error || e.empty && O ? T(d.intl.string(d.t.ro4isb)) : T(null), R(e)
+            null != e.error || e.empty && O ? T(d.intl.string(d.t.ro4isZ)) : T(null), R(e)
           }), e.on("focus", P), e.on("blur", w)
         }
       }
@@ -112,7 +112,7 @@ let p = function(e) {
           }), (0, r.jsx)(a.CardNumberElement, {
             options: {
               style: S,
-              placeholder: d.intl.string(d.t.gPRHf3),
+              placeholder: d.intl.string(d.t.gPRHfw),
               disableLink: false
             },
             className: M()
@@ -122,7 +122,7 @@ let p = function(e) {
         return (0, r.jsx)(a.CardExpiryElement, {
           options: {
             style: S,
-            placeholder: d.intl.string(d.t.xeEWQ0)
+            placeholder: d.intl.string(d.t.xeEWQ6)
           },
           className: M()
         });
@@ -130,7 +130,7 @@ let p = function(e) {
         return (0, r.jsx)(a.CardCvcElement, {
           options: {
             style: S,
-            placeholder: d.intl.string(d.t.wZz04O)
+            placeholder: d.intl.string(d.t.wZz04F)
           },
           className: M()
         })

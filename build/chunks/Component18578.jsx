@@ -36,7 +36,7 @@ function _(e) {
   let S = !b && null != h && null != O && _;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      alt: null != (t = null == p ? true : p.alt) ? t : d.intl.string(d.t.P84bAA),
+      alt: null != (t = null == p ? true : p.alt) ? t : d.intl.string(d.t.P84bAD),
       className: null != (n = null == p ? true : p.className) ? n : f.image,
       src: T,
       onLoad: g,

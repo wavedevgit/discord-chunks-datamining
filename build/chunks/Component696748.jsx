@@ -57,7 +57,7 @@ class v extends Chunk647438.PureComponent {
           className: E.conflictTitle,
           children: e
         }), (0, r.jsx)("div", {
-          children: g.intl.string(g.t.gflHOz)
+          children: g.intl.string(g.t.gflHO6)
         }), (0, r.jsx)("div", {
           className: E.timestamp,
           children: o()(t).calendar()
@@ -91,7 +91,7 @@ class v extends Chunk647438.PureComponent {
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.PRIMARY,
             onClick: this.onClose,
-            children: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
+            children: Chunk388032.intl.string(Chunk388032.t["ETE/oC"])
           }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
             direction: Chunk600164.Z.Direction.HORIZONTAL,
             justify: Chunk600164.Z.Justify.END,
@@ -100,12 +100,12 @@ class v extends Chunk647438.PureComponent {
               className: Chunk422622.retryButton,
               children: (0, Chunk951288.jsx)(Chunk481060.Button, {
                 variant: "secondary",
-                text: Chunk388032.intl.string(Chunk388032.t["5911LS"]),
+                text: Chunk388032.intl.string(Chunk388032.t["5911Lb"]),
                 onClick: () => this.handlePlay()
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
-              text: Chunk388032.intl.string(Chunk388032.t["359PbW"]),
+              text: Chunk388032.intl.string(Chunk388032.t["359Pbd"]),
               onClick: () => this.handlePlay(false)
             })]
           })]
@@ -123,28 +123,28 @@ class v extends Chunk647438.PureComponent {
       className: Chunk197571.marginBottom20,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk422622.description,
-        children: Chunk388032.intl.format(Chunk388032.t.eyXUPz, {
+        children: Chunk388032.intl.format(Chunk388032.t.eyXUP6, {
           applicationName: module.name
         })
-      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AQUmkp), exports.remote.timestamp, Chunk422622.conflictDownloadArt, this.handleChooseDownload), (0, Chunk951288.jsxs)(Chunk600164.Z, {
+      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AQUmkr), exports.remote.timestamp, Chunk422622.conflictDownloadArt, this.handleChooseDownload), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk422622.choiceWrapper,
         align: Chunk600164.Z.Align.CENTER,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk422622.choiceLine
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk422622.choiceTitle,
-          children: Chunk388032.intl.string(Chunk388032.t.WUsA2N)
+          children: Chunk388032.intl.string(Chunk388032.t.WUsA2D)
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk422622.choiceLine
         })]
-      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AXVws7), exports.next.timestamp, Chunk422622.conflictUploadArt, this.handleChooseUpload)]
+      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AXVwsw), exports.next.timestamp, Chunk422622.conflictUploadArt, this.handleChooseUpload)]
     })
   }
   render() {
     let {
       cloudSyncState: e,
       transitionState: t
-    } = this.props, n = module.type === Chunk981631.TzF.CONFLICT ? Chunk388032.intl.string(Chunk388032.t.oNbO1d) : Chunk388032.intl.string(Chunk388032.t.as4Tgo);
+    } = this.props, n = module.type === Chunk981631.TzF.CONFLICT ? Chunk388032.intl.string(Chunk388032.t.oNbO1f) : Chunk388032.intl.string(Chunk388032.t.as4Tgg);
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
       className: Chunk422622.modal,

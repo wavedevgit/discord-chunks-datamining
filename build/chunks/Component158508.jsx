@@ -79,9 +79,9 @@ function m(e) {
   return v || T ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
-    label: I ? u.intl.string(u.t["8wXU9P"]) : (0, r.jsx)("div", {
+    label: I ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {
       className: d.label,
-      children: u.intl.string(u.t.ytCpKi)
+      children: u.intl.string(u.t.ytCpKs)
     }),
     action: I ? () => {
       null == E || E(), o.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != p ? p : true)

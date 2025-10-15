@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 298812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,16 +32,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk960359 = require("./960359.js");
-let P = Chunk647438.forwardRef(function(e, t) {
+let A = Chunk647438.forwardRef(function(e, t) {
   let {
     guildId: n
   } = e, [l, r] = s.useState(null), o = (0, a.Wu)([v.Z, N.ZP], () => (0, O.OD)(N.ZP.getChannelOverrides(n), {
     ignoreMute: true,
     ignoreUnreadSetting: false,
     ignoreNotificationSetting: false
-  }).map(e => v.Z.getChannel(e)).filter(b.lm)), d = (0, a.e7)([j.Z], () => j.Z.getCategories(n)), u = o.map((e, t) => (0, i.jsxs)("div", {
+  }).map(e => v.Z.getChannel(e)).filter(S.lm)), d = (0, a.e7)([j.Z], () => j.Z.getCategories(n)), u = o.map((e, t) => (0, i.jsxs)("div", {
     className: w.channelRow,
-    children: [(0, i.jsx)(A, {
+    children: [(0, i.jsx)(P, {
       channel: e,
       categories: d,
       autoFocus: l === e.id
@@ -70,27 +70,27 @@ let P = Chunk647438.forwardRef(function(e, t) {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowName,
-          children: M.intl.string(M.t.uShwWl)
+          children: M.intl.string(M.t.uShwWv)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: M.intl.string(M.t.hZrr6u)
+          children: M.intl.string(M.t.hZrr6k)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: M.intl.string(M.t.y59NJi)
+          children: M.intl.string(M.t.y59NJm)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: M.intl.string(M.t["pGn/bG"])
+          children: M.intl.string(M.t["pGn/bJ"])
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
           className: w.rowOption,
-          children: M.intl.string(M.t["32yow8"])
+          children: M.intl.string(M.t["32yow9"])
         })]
       }), u.length > 0 && (0, i.jsx)("div", {
         className: w.channels,
@@ -100,30 +100,30 @@ let P = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function A(e) {
+function P(e) {
   let {
     channel: t,
     categories: n,
     autoFocus: l
-  } = e, h = (0, c.dQu)(o.Z.unsafe_rawColors.GREEN_360).hex(), j = (0, a.e7)([v.Z], () => v.Z.getChannel(null == t ? true : t.parent_id)), N = (0, Z.ZA)(t), b = s.useRef(null), [E, O] = s.useState(false);
+  } = e, h = (0, c.dQu)(o.Z.unsafe_rawColors.GREEN_360).hex(), j = (0, a.e7)([v.Z], () => v.Z.getChannel(null == t ? true : t.parent_id)), N = (0, Z.ZA)(t), S = s.useRef(null), [E, O] = s.useState(false);
   if (s.useEffect(() => {
       if (l) {
         var e;
-        null == (e = b.current) || e.scrollIntoView({
+        null == (e = S.current) || e.scrollIntoView({
           behavior: "smooth"
         })
       }
     }, []), null == t) return null;
-  let C = M.intl.string(M.t.uIzfCA),
+  let C = M.intl.string(M.t.uIzfCE),
     _ = (0, p.KS)(t);
-  t.type === y.d4z.GUILD_CATEGORY && null != t.guild_id && "" !== t.guild_id ? C = M.intl.formatToPlainString(M.t["2KzH8/"], {
+  t.type === y.d4z.GUILD_CATEGORY && null != t.guild_id && "" !== t.guild_id ? C = M.intl.formatToPlainString(M.t["2KzH89"], {
     num: null != n[t.id] ? n[t.id].length : 0
-  }) : null != j && (C = M.intl.formatToPlainString(M.t.L1zJgY, {
-    categoryName: (0, m.F6)(j, S.default, f.Z)
+  }) : null != j && (C = M.intl.formatToPlainString(M.t.L1zJgb, {
+    categoryName: (0, m.F6)(j, b.default, f.Z)
   }));
-  let P = E ? L.s8.CUSTOM : N.preset;
+  let A = E ? L.s8.CUSTOM : N.preset;
   return (0, i.jsx)("div", {
-    ref: b,
+    ref: S,
     children: (0, i.jsxs)("div", {
       className: r()(w.row, w.channel),
       children: [(0, i.jsxs)("div", {
@@ -138,7 +138,7 @@ function A(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
             className: w.modColor,
-            children: (0, m.F6)(t, S.default, f.Z)
+            children: (0, m.F6)(t, b.default, f.Z)
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
             className: w.modColor,
@@ -152,7 +152,7 @@ function A(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.ALL_MESSAGES,
+            value: A === L.s8.ALL_MESSAGES,
             onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.ALL_MESSAGES), O(false))
           })
         })
@@ -163,7 +163,7 @@ function A(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.MENTIONS,
+            value: A === L.s8.MENTIONS,
             onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.MENTIONS), O(false))
           })
         })
@@ -174,7 +174,7 @@ function A(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.NOTHING,
+            value: A === L.s8.NOTHING,
             onChange: () => ((0, Z._m)(t.guild_id, t.id, L.s8.NOTHING), O(false))
           })
         })
@@ -185,7 +185,7 @@ function A(e) {
             onClick: e => {
               (0, u.vq)(e, () => (0, i.jsx)(c.v2r, {
                 navId: "ChannelNotificationCustomSettingsItems",
-                "aria-label": M.intl.string(M.t.kMdneX),
+                "aria-label": M.intl.string(M.t.kMdneQ),
                 onClose: () => {},
                 onSelect: () => {},
                 children: (0, x.T5)(t, () => O(false))
@@ -194,7 +194,7 @@ function A(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.CUSTOM,
+            value: A === L.s8.CUSTOM,
             onChange: () => O(true)
           })
         })

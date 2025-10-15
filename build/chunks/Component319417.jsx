@@ -35,7 +35,7 @@ function d(e) {
           disabled: n,
           isActive: false,
           noHover: n,
-          "aria-label": c.intl.string(c.t.oeb1vr),
+          "aria-label": c.intl.string(c.t.oeb1vg),
           children: (0, r.jsx)(s.Uuj, {
             size: "xs",
             color: "currentColor",

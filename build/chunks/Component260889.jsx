@@ -64,7 +64,7 @@ function _(e) {
         channel_id: n.channel.id
       }, (0, p.y)(e)))
     },
-    label: g.intl.string(g.t["8yOlh4"]),
+    label: g.intl.string(g.t["8yOlh9"]),
     disabled: !_
   }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
@@ -77,6 +77,6 @@ function _(e) {
         af_recently_played: false
       }, (0, p.y)(e)))
     },
-    label: g.intl.string(g.t.RGgqm5)
+    label: g.intl.string(g.t.RGgqm1)
   }, "goto-server")]
 }

@@ -177,7 +177,7 @@ function e8() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.format(Chunk388032.t["G/H+s7"], {
+      children: Chunk388032.intl.format(Chunk388032.t["G/H+s6"], {
         onClick: () => (0, Chunk98278.z)()
       })
     })]
@@ -551,7 +551,7 @@ class tt extends(r = Chunk647438.Component) {
   renderThreadRoleMentionWarning(e) {
     if (e.hasFlag(ez.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - eO.default.extractTimestamp(e.id) >= e6)) return (0, i.jsx)("div", {
       className: eQ.threadRoleMentionFailure,
-      children: eX.intl.string(eX.t.ma8Rs7)
+      children: eX.intl.string(eX.t.ma8Rs0)
     })
   }
   renderSuppressConfirmModal() {
@@ -561,9 +561,9 @@ class tt extends(r = Chunk647438.Component) {
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.sYh, {
       dismissable: true,
-      header: Chunk388032.intl.string(Chunk388032.t.VL1KOj),
-      confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppK),
-      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+      header: Chunk388032.intl.string(Chunk388032.t.VL1KOk),
+      confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppG),
+      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
       onCancel: () => this.setState({
         showSuppressModal: false
       }),
@@ -576,11 +576,11 @@ class tt extends(r = Chunk647438.Component) {
         variant: "text-md/normal",
         color: "text-default",
         className: Chunk636428.confirmText,
-        children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fh"])
+        children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fo"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t["5j2by8"])
+        children: Chunk388032.intl.string(Chunk388032.t["5j2by3"])
       })]
     })
   }
@@ -595,9 +595,9 @@ class tt extends(r = Chunk647438.Component) {
       showRemoveAttachmentModal: false
     }) : (0, Chunk951288.jsx)(Chunk481060.sYh, {
       dismissable: true,
-      header: Chunk388032.intl.string(Chunk388032.t.CbTIEh),
-      confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsb),
-      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+      header: Chunk388032.intl.string(Chunk388032.t.CbTIEo),
+      confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsa),
+      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
       onCancel: () => this.setState({
         showRemoveAttachmentModal: false,
         attachmentToDelete: null
@@ -613,7 +613,7 @@ class tt extends(r = Chunk647438.Component) {
         variant: "text-md/normal",
         color: "text-default",
         className: Chunk636428.confirmText,
-        children: Chunk388032.intl.string(Chunk388032.t.faHmOz)
+        children: Chunk388032.intl.string(Chunk388032.t.faHmO3)
       })
     })
   }

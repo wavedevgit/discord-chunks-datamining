@@ -83,7 +83,7 @@ function C(e) {
         onFlyingComplete: d
       }), (0, l.jsx)("div", {
         className: o()(j.tierCloseHint, f),
-        children: x.intl.format(x.t.qV3Erq, {
+        children: x.intl.format(x.t.qV3Erl, {
           numLeft: i - r
         })
       }), (0, l.jsx)(u.P3F, {
@@ -199,7 +199,7 @@ function y(e) {
       children: null != t ? t : (0, l.jsxs)(l.Fragment, {
         children: [N ? (0, l.jsx)("div", {
           className: j.previousPerks,
-          children: x.intl.string(x.t.oKzyRU)
+          children: x.intl.string(x.t.oKzyRQ)
         }) : null, null != i.perks && (0, l.jsx)("div", {
           className: j.perks,
           children: i.perks.map(e => ((e, t) => {
@@ -257,7 +257,7 @@ let N = e => {
         transform: t
       },
       className: j.tierUnlocked,
-      children: x.intl.string(x.t.dNGM0t)
+      children: x.intl.string(x.t.dNGM0v)
     })
   },
   I = e => {
@@ -267,7 +267,7 @@ let N = e => {
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(u.Text, {
         variant: "text-md/normal",
-        children: x.intl.format(x.t.t2Wbo6, {
+        children: x.intl.format(x.t.t2Wbo1, {
           required: t,
           decorator: ""
         })

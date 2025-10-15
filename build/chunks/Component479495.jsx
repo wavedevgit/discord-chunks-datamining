@@ -58,11 +58,11 @@ class P extends(n = Chunk647438.PureComponent) {
         src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
         className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t["1LV6Ki"])
+        children: Chunk388032.intl.string(Chunk388032.t["1LV6Kq"])
       }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
         className: Chunk197571.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk388905.II, {
-          label: Chunk388032.intl.string(Chunk388032.t["8dM4FB"]),
+          label: Chunk388032.intl.string(Chunk388032.t["8dM4FO"]),
           className: Chunk197571.marginBottom20,
           name: "password",
           value: module,
@@ -76,13 +76,13 @@ class P extends(n = Chunk647438.PureComponent) {
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           type: "submit",
           submitting: Chunk647438,
-          children: Chunk388032.intl.string(Chunk388032.t["FRep5+"])
+          children: Chunk388032.intl.string(Chunk388032.t["FRep5/"])
         }), n ? (0, Chunk951288.jsx)(Chunk388905.zx, {
           className: Chunk197571.marginTop8,
           onClick: this.handleGoToLogin,
           submitting: Chunk647438,
           color: Chunk388905.zx.Colors.PRIMARY,
-          children: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
+          children: Chunk388032.intl.string(Chunk388032.t["ETE/oC"])
         }) : null]
       })]
     })
@@ -139,7 +139,7 @@ class P extends(n = Chunk647438.PureComponent) {
         children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
-        children: Chunk388032.intl.string(Chunk388032.t.uJWIj4)
+        children: Chunk388032.intl.string(Chunk388032.t["uJWIj/"])
       })]
     })
   }
@@ -160,7 +160,7 @@ class P extends(n = Chunk647438.PureComponent) {
       } = this.state;
       if (e.preventDefault(), 0 === i.length) {
         this.setState({
-          error: v.intl.string(v.t.R98xDw)
+          error: v.intl.string(v.t.R98xD5)
         }), j.S.dispatch(w.CkL.WAVE_EMPHASIZE);
         return
       }

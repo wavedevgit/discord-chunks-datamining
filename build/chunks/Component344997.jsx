@@ -35,7 +35,7 @@ function _(e) {
   return (0, r.jsx)(s.Anchor, {
     onClick: i,
     className: d.detailsButton,
-    children: u.intl.string(u.t.QsqdXF)
+    children: u.intl.string(u.t.QsqdXC)
   })
 }
 
@@ -46,7 +46,7 @@ function p(e) {
   return (0, r.jsx)(s.Anchor, {
     className: d.detailsButton,
     href: t,
-    children: u.intl.string(u.t["8/GdRE"])
+    children: u.intl.string(u.t["8/GdRB"])
   })
 }
 
@@ -124,7 +124,7 @@ function E(e) {
         className: d.incidentTiming,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
-          children: u.intl.format(u.t.eevFb2, {
+          children: u.intl.format(u.t.eevFb6, {
             daysAgo: f(null != (n = i.timestamp) ? n : 0)
           })
         })

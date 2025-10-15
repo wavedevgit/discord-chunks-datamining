@@ -54,7 +54,7 @@ function _(e) {
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
-      children: g.intl.string(g.t.Mgpxi4)
+      children: g.intl.string(g.t.Mgpxiw)
     }), (0, r.jsx)(s.vdY, {
       color: "currentColor",
       className: m.pencilIcon,

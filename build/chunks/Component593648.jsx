@@ -103,7 +103,7 @@ function K(e) {
     checked: n,
     onChange: o,
     disabled: i,
-    description: Z.intl.format(Z.t.OOiGCA, {
+    description: Z.intl.format(Z.t.OOiGCM, {
       onClick: a
     })
   })
@@ -125,77 +125,77 @@ function z(e) {
     null == (e = o.current) || e.stop()
   });
   let d = [{
-      label: Z.intl.string(Z.t.pz71xM),
+      label: Z.intl.string(Z.t.pz71xC),
       sound: "message1",
       focusModeDisabled: s
     }, {
-      label: Z.intl.string(Z.t.hK51Ym),
+      label: Z.intl.string(Z.t.hK51Yg),
       sound: "deafen"
     }, {
-      label: Z.intl.string(Z.t.XiejaG),
+      label: Z.intl.string(Z.t.XiejaJ),
       sound: "undeafen"
     }, {
-      label: Z.intl.string(Z.t["w4m94+"]),
+      label: Z.intl.string(Z.t.w4m945),
       sound: "mute"
     }, {
-      label: Z.intl.string(Z.t.YqAjX1),
+      label: Z.intl.string(Z.t.YqAjXy),
       sound: "unmute"
     }, {
-      label: Z.intl.string(Z.t.JoTq8v),
+      label: Z.intl.string(Z.t.JoTq8n),
       sound: "camera_on"
     }, {
-      label: Z.intl.string(Z.t["8P6tQ0"]),
+      label: Z.intl.string(Z.t["8P6tQ6"]),
       sound: "camera_off"
     }, {
-      label: Z.intl.string(Z.t["juL9/P"]),
+      label: Z.intl.string(Z.t["juL9/L"]),
       sound: "disconnect"
     }, {
-      label: Z.intl.string(Z.t.x98vQk),
+      label: Z.intl.string(Z.t.x98vQq),
       sound: "ptt_start"
     }, {
-      label: Z.intl.string(Z.t["1HjRqK"]),
+      label: Z.intl.string(Z.t["1HjRqC"]),
       sound: "ptt_stop"
     }, {
-      label: Z.intl.string(Z.t["9JB1Cg"]),
+      label: Z.intl.string(Z.t["9JB1Ck"]),
       sound: "user_join"
     }, {
-      label: Z.intl.string(Z.t.KUBBNj),
+      label: Z.intl.string(Z.t.KUBBNt),
       sound: "user_leave"
     }, {
-      label: Z.intl.string(Z.t.EZjqUV),
+      label: Z.intl.string(Z.t.EZjqUT),
       sound: "user_moved"
     }, {
-      label: Z.intl.string(Z.t.LnNlQk),
+      label: Z.intl.string(Z.t.LnNlQh),
       sound: "call_calling"
     }, {
-      label: Z.intl.string(Z.t.XBrJT0),
+      label: Z.intl.string(Z.t.XBrJT6),
       sound: "call_ringing"
     }, {
-      label: Z.intl.string(Z.t["Nd8P5+"]),
+      label: Z.intl.string(Z.t.Nd8P5y),
       sound: "stream_started"
     }, {
-      label: Z.intl.string(Z.t["9bYj+P"]),
+      label: Z.intl.string(Z.t["9bYj+G"]),
       sound: "stream_ended"
     }, {
-      label: Z.intl.string(Z.t.KccUIy),
+      label: Z.intl.string(Z.t.KccUI1),
       sound: "stream_user_joined"
     }, {
-      label: Z.intl.string(Z.t.dsjkiI),
+      label: Z.intl.string(Z.t.dsjkiN),
       sound: "stream_user_left"
     }, {
-      label: Z.intl.string(Z.t.nFOcf3),
+      label: Z.intl.string(Z.t.nFOcf9),
       sound: "activity_launch"
     }, {
-      label: Z.intl.string(Z.t["a6lw/v"]),
+      label: Z.intl.string(Z.t["a6lw/u"]),
       sound: "activity_end"
     }, {
-      label: Z.intl.string(Z.t.KaFxra),
+      label: Z.intl.string(Z.t.KaFxrY),
       sound: "activity_user_join"
     }, {
-      label: Z.intl.string(Z.t.S14z9v),
+      label: Z.intl.string(Z.t.S14z9n),
       sound: "activity_user_left"
     }, {
-      label: Z.intl.string(Z.t.CP3DCw),
+      label: Z.intl.string(Z.t.CP3DC3),
       sound: "reconnect"
     }],
     _ = null != g.Z.useHolidaySoundpack();
@@ -203,15 +203,15 @@ function z(e) {
     setting: U.s6.NOTIFICATIONS_SOUNDS,
     children: (0, r.jsxs)("div", {
       children: [_ ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsxs)(u.C3N, {
-        label: Z.intl.string(Z.t.MKWyKS),
+        label: Z.intl.string(Z.t.MKWyKc),
         children: [(0, r.jsx)(u.rsf, {
-          label: Z.intl.string(Z.t.lF5GGR),
-          description: Z.intl.string(Z.t["7oXUio"]),
+          label: Z.intl.string(Z.t.lF5GGe),
+          description: Z.intl.string(Z.t["7oXUim"]),
           checked: a,
           onChange: f.default.setNotifyMessagesInSelectedChannel
         }), (0, r.jsx)(u.rsf, {
-          label: Z.intl.string(Z.t["2ZhCOT"]),
-          description: Z.intl.string(Z.t["+B0XLC"]),
+          label: Z.intl.string(Z.t["2ZhCOd"]),
+          description: Z.intl.string(Z.t["+B0XLE"]),
           checked: n,
           onChange: f.default.toggleDisableAllSounds
         }), d.map((e, i) => {
@@ -231,7 +231,7 @@ function z(e) {
               enabled: !n && !t.includes(o) && true !== s
             }, o), s ? (0, r.jsx)(u.Wn, {
               messageType: u.QYI.WARNING,
-              children: Z.intl.string(Z.t.cIRG0t)
+              children: Z.intl.string(Z.t.cIRG0s)
             }) : null]
           }, o)
         })]
@@ -253,10 +253,10 @@ function q() {
   return 0 === Object.keys(module).length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_ACTIVITY_ALERTS,
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.D9yVAA),
-      description: Chunk388032.intl.string(Chunk388032.t["0PhAOD"]),
+      label: Chunk388032.intl.string(Chunk388032.t.D9yVAH),
+      description: Chunk388032.intl.string(Chunk388032.t["0PhAOH"]),
       children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-        label: Chunk388032.intl.string(Chunk388032.t.Q0PsXV),
+        label: Chunk388032.intl.string(Chunk388032.t.Q0PsXX),
         value: exports,
         onChange: e => {
           n(e)
@@ -266,8 +266,8 @@ function q() {
         children: [(0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_IN_APP_ALERTS,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.u6dc5O),
-            description: Chunk388032.intl.string(Chunk388032.t["z8Td4+"]),
+            label: Chunk388032.intl.string(Chunk388032.t.u6dc5B),
+            description: Chunk388032.intl.string(Chunk388032.t.z8Td48),
             checked: !module[exports].disableRaidAlertNag,
             onChange: () => {
               (0, Chunk675478.PS)(exports, e => {
@@ -278,8 +278,8 @@ function q() {
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_COMMUNITY_PUSH_NOTIFICATIONS,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.P8MG6u),
-            description: Chunk388032.intl.string(Chunk388032.t.PyxXs7),
+            label: Chunk388032.intl.string(Chunk388032.t.P8MG6q),
+            description: Chunk388032.intl.string(Chunk388032.t.PyxXs8),
             checked: !module[exports].disableRaidAlertPush,
             onChange: () => {
               (0, Chunk675478.PS)(exports, e => {
@@ -315,45 +315,45 @@ class X extends Chunk647438.PureComponent {
       location: "Messages"
     }).enabled || 0 === exports ? 0 : 1, f = o().range(Chunk668781, 11).map(e => ({
       value: 60 * e,
-      label: 0 === e ? Z.intl.string(Z.t["0QN7cX"]) : Z.intl.formatToPlainString(Z.t.iXLF9f, {
+      label: 0 === e ? Z.intl.string(Z.t["0QN7cZ"]) : Z.intl.formatToPlainString(Z.t.iXLF9W, {
         minutes: e
       })
     }));
     return (0, Chunk951288.jsx)(Chunk273313.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.HcoRu7),
+      title: Chunk388032.intl.string(Chunk388032.t.HcoRu0),
       children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         children: [(0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_DESKTOP,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t["/0WClp"]),
-            description: Chunk388032.intl.string(Chunk388032.t.wF9ih4),
+            label: Chunk388032.intl.string(Chunk388032.t["/0WCll"]),
+            description: Chunk388032.intl.string(Chunk388032.t.wF9ih3),
             checked: module !== Chunk981631.qrD.NEVER && !Chunk538534,
-            helperText: Chunk538534 ? Chunk388032.intl.string(Chunk388032.t.cIRG0t) : true,
+            helperText: Chunk538534 ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true,
             onChange: this.handleDesktopChange,
             disabled: Chunk538534
           })
         }), (0, Chunk951288.jsx)(J, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_MESSAGE_BADGE,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.VH8AIC),
-            description: Chunk388032.intl.string(Chunk388032.t["9K4qwc"]),
+            label: Chunk388032.intl.string(Chunk388032.t.VH8AIJ),
+            description: Chunk388032.intl.string(Chunk388032.t["9K4qwX"]),
             checked: !require,
             onChange: this.handleToggleShowUnreadBadge
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_TASKBAR_FLASHING,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.xSmFQE),
-            description: Chunk388032.intl.string(Chunk388032.t["bd4j4+"]),
+            label: Chunk388032.intl.string(Chunk388032.t.xSmFQG),
+            description: Chunk388032.intl.string(Chunk388032.t.bd4j4x),
             checked: Chunk647438,
             onChange: this.handleToggleShowFlash
           })
         }), (0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(ei, {}), (0, Chunk951288.jsx)(er, {}), (0, Chunk951288.jsxs)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
           children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-            label: Chunk388032.intl.string(Chunk388032.t.TTvjd3),
-            description: Chunk388032.intl.string(Chunk388032.t.Xytv9P),
+            label: Chunk388032.intl.string(Chunk388032.t.TTvjd9),
+            description: Chunk388032.intl.string(Chunk388032.t.Xytv9C),
             value: exports,
             onChange: Chunk695346.CM.updateSetting,
             options: Chunk292556
@@ -378,20 +378,20 @@ class X extends Chunk647438.PureComponent {
     }), F(this, "renderTTS", () => {
       if (!p.Zh) return null;
       let e = [{
-        name: Z.intl.string(Z.t.B1AGeH),
+        name: Z.intl.string(Z.t.B1AGeJ),
         value: G.PrB.ALL_CHANNELS
       }, {
-        name: Z.intl.string(Z.t.uM2rNj),
+        name: Z.intl.string(Z.t.uM2rNr),
         value: G.PrB.SELECTED_CHANNEL
       }, {
-        name: Z.intl.string(Z.t.DYO5Oj),
+        name: Z.intl.string(Z.t.DYO5Oi),
         value: G.PrB.NEVER
       }];
       return (0, r.jsxs)(A.F, {
         setting: U.s6.NOTIFICATIONS_TEXT_TO_SPEECH,
         children: [(0, r.jsx)(c.E, {
-          label: Z.intl.string(Z.t.VIm5MD),
-          description: Z.intl.string(Z.t["+4dnAw"]),
+          label: Z.intl.string(Z.t.VIm5MO),
+          description: Z.intl.string(Z.t["+4dnA5"]),
           options: e,
           onChange: this.handleTTSChange,
           value: this.props.ttsType
@@ -457,8 +457,8 @@ function $() {
     children: [require ? (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_SETTINGS,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.z21l8P),
-        description: Chunk388032.intl.string(Chunk388032.t.frbLrK),
+        label: Chunk388032.intl.string(Chunk388032.t.z21l8M),
+        description: Chunk388032.intl.string(Chunk388032.t.frbLrH),
         checked: require,
         disabled: Chunk392711 || !require,
         onChange: () => ee(o)
@@ -466,7 +466,7 @@ function $() {
     }) : exports ? (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_SETTINGS,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.z21l8P),
+        label: Chunk388032.intl.string(Chunk388032.t.z21l8M),
         description: "Turns on the new notification system",
         checked: require,
         disabled: Chunk392711 || require,
@@ -520,12 +520,12 @@ async function ee(e) {
   e(true);
   let t = await (0, y.Tn)();
   0 === t.length ? await (0, v.oL)() : d.Z.show({
-    title: Z.intl.string(Z.t["cY+Ooa"]),
-    body: Z.intl.format(Z.t["7zTJJS"], {
+    title: Z.intl.string(Z.t["cY+Oob"]),
+    body: Z.intl.format(Z.t["7zTJJQ"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
-    cancelText: Z.intl.string(Z.t["ETE/oK"]),
-    confirmText: Z.intl.string(Z.t.Rm96T0),
+    cancelText: Z.intl.string(Z.t["ETE/oC"]),
+    confirmText: Z.intl.string(Z.t.Rm96Ty),
     onConfirm: v.oL
   }), e(false)
 }
@@ -555,13 +555,13 @@ function en() {
 function er() {
   let e = Chunk695346.fz.useSetting(),
     t = [{
-      name: Chunk388032.intl.string(Chunk388032.t["9x/Rtb"]),
+      name: Chunk388032.intl.string(Chunk388032.t["9x/RtT"]),
       value: Chunk524437.Ns.NOTIFICATIONS_ENABLED
     }, {
-      name: Chunk388032.intl.string(Chunk388032.t.fJAbQU),
+      name: Chunk388032.intl.string(Chunk388032.t.fJAbQd),
       value: Chunk524437.Ns.ONLY_DMS
     }, {
-      name: Chunk388032.intl.string(Chunk388032.t["xu+UDQ"]),
+      name: Chunk388032.intl.string(Chunk388032.t["xu+UDU"]),
       value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
     }],
     n = t => {
@@ -572,8 +572,8 @@ function er() {
   }).enableInAppNotifications ? (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_REACTIONS,
     children: [(0, Chunk951288.jsx)(Chunk538534.E, {
-      label: Chunk388032.intl.string(Chunk388032.t.Rq0NFh),
-      description: Chunk388032.intl.string(Chunk388032.t.oWF6eX),
+      label: Chunk388032.intl.string(Chunk388032.t.Rq0NFs),
+      description: Chunk388032.intl.string(Chunk388032.t.oWF6eQ),
       options: exports,
       onChange: e => n({
         value: e
@@ -592,8 +592,8 @@ function ei() {
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_VOICE_ACTIVITY,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.wtk08f),
-        description: Chunk388032.intl.string(Chunk388032.t.rngMNz),
+        label: Chunk388032.intl.string(Chunk388032.t.wtk08S),
+        description: Chunk388032.intl.string(Chunk388032.t.rngMNx),
         badge: "beta",
         checked: module,
         onChange: Chunk210176.I
@@ -601,8 +601,8 @@ function ei() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.NOTIFICATIONS_GO_LIVE,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.pW4TMj),
-        description: Chunk388032.intl.string(Chunk388032.t["H+WYqa"]),
+        label: Chunk388032.intl.string(Chunk388032.t.pW4TMp),
+        description: Chunk388032.intl.string(Chunk388032.t["H+WYqZ"]),
         checked: exports,
         onChange: Chunk695346.JN.updateSetting
       })

@@ -106,7 +106,7 @@ function T(e) {
   } = e;
   return (0, n.jsx)(s.nn4, {
     id: a,
-    children: _.intl.format(_.t.TM0XDQ, {
+    children: _.intl.format(_.t.TM0XDY, {
       name: p.ZP.getName(r, i, t)
     })
   })
@@ -125,7 +125,7 @@ function D(e) {
   })
 }
 
-function k(e) {
+function N(e) {
   let {
     text: t,
     user: r,
@@ -150,7 +150,7 @@ function k(e) {
   })
 }
 
-function N(e) {
+function k(e) {
   let {
     text: t,
     user: r,
@@ -160,12 +160,12 @@ function N(e) {
     applicationId: g
   } = e, f = (0, u.Dt)(), p = (0, u.Dt)(), {
     trackUserProfileEditAction: O
-  } = (0, b.KZ)(), [y, j] = i.useState("idle"), [x, v] = i.useState(null != t ? t : ""), h = i.useRef(null), w = i.useRef(null), I = _.intl.string(_.t.xKSfBQ), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
+  } = (0, b.KZ)(), [y, j] = i.useState("idle"), [x, v] = i.useState(null != t ? t : ""), h = i.useRef(null), w = i.useRef(null), I = _.intl.string(_.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
     O({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), j("editing")
-  }, [d, O]), k = i.useCallback(() => {
+  }, [d, O]), N = i.useCallback(() => {
     let e = x.trim(),
       r = e !== (null != t ? t : "").trim();
     (0, m.Bu)(d, g, "" !== e ? e : true), j("completed"), r && O({
@@ -173,7 +173,7 @@ function N(e) {
       widgetEdited: d,
       gameId: g
     })
-  }, [d, g, x, t, O]), N = i.useCallback(e => {
+  }, [d, g, x, t, O]), k = i.useCallback(e => {
     v(e)
   }, []);
   return i.useEffect(() => {
@@ -188,17 +188,17 @@ function N(e) {
     children: [(0, n.jsx)(s.nn4, {
       tag: "label",
       htmlFor: f,
-      children: _.intl.string(_.t.JxKXeX)
+      children: _.intl.string(_.t.JxKXeT)
     }), (0, n.jsx)(s.Kx8, {
       id: f,
       value: x,
       placeholder: I,
-      onChange: N,
-      onBlur: k,
+      onChange: k,
+      onBlur: N,
       rows: 3,
       autoFocus: "editing" === y,
       onKeyDown: e => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), k())
+        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), N())
       },
       maxLength: l.rN
     })]
@@ -222,7 +222,7 @@ function N(e) {
       className: o()(P.editableCommentText, !S && P.placeholder)
     }), (0, n.jsx)(s.P3F, {
       innerRef: h,
-      "aria-label": _.intl.string(_.t.ppb9MD),
+      "aria-label": _.intl.string(_.t.ppb9MJ),
       onClick: e => {
         e.stopPropagation(), E()
       },
@@ -242,7 +242,7 @@ function C(e) {
     widgetType: o,
     disableInteraction: l = false
   } = e, {
-    gameName: u = _.intl.string(_.t.GIWFlJ),
+    gameName: u = _.intl.string(_.t.GIWFlF),
     imageSrc: d,
     applicationId: g,
     comment: p,
@@ -269,14 +269,14 @@ function C(e) {
         applicationId: g,
         userId: t.id,
         gameName: u
-      }, m)), C ? (0, n.jsx)(N, {
+      }, m)), C ? (0, n.jsx)(k, {
         text: p,
         user: t,
         guildId: r,
         channelId: i,
         widgetType: o,
         applicationId: g
-      }) : (0, n.jsx)(k, {
+      }) : (0, n.jsx)(N, {
         text: p,
         user: t,
         guildId: r,

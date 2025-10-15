@@ -30,7 +30,7 @@ let _ = e => {
   } = e;
   return (0, l.jsx)(d.v2r, {
     navId: "members-tabs-overflow-menu",
-    "aria-label": p.intl.string(p.t.riPnr6),
+    "aria-label": p.intl.string(p.t.riPnr0),
     hideScroller: true,
     onClose: i,
     onSelect: i,
@@ -106,11 +106,11 @@ function C(e) {
         className: a()(v.more, {
           [v.selected]: m
         }),
-        "aria-label": p.intl.string(p.t.UKOtz8),
+        "aria-label": p.intl.string(p.t["UKOtz+"]),
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: j,
-          children: p.intl.string(p.t.UKOtz8)
+          children: p.intl.string(p.t["UKOtz+"])
         }), i ? (0, l.jsx)(d.u04, {
           size: "sm",
           color: b
@@ -146,15 +146,15 @@ function E(e) {
     }),
     S = (t = null != N ? N : 0, [{
       id: g.e.ALL_MEMBERS,
-      label: p.intl.string(p.t.NOOm1d)
+      label: p.intl.string(p.t.NOOm1Z)
     }, {
       id: g.e.PENDING,
-      label: t > 0 ? p.intl.formatToPlainString(p.t["Wo+zLy"], {
+      label: t > 0 ? p.intl.formatToPlainString(p.t["Wo+zL0"], {
         count: t
-      }) : p.intl.string(p.t["4eQVBA"])
+      }) : p.intl.string(p.t["4eQVBO"])
     }, {
       id: g.e.REJECTED,
-      label: p.intl.string(p.t.bSZklZ)
+      label: p.intl.string(p.t.bSZkla)
     }, {
       id: g.e.APPROVED,
       label: p.intl.string(p.t.aURgY2)
@@ -205,7 +205,7 @@ function E(e) {
           })
         })]
       }), (0, l.jsxs)(d.njP, {
-        "aria-label": p.intl.string(p.t.tcvVXF),
+        "aria-label": p.intl.string(p.t.tcvVXM),
         selectedItem: i,
         type: "top-pill",
         onItemSelect: a,

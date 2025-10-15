@@ -24,14 +24,14 @@ let h = e => {
   } = e, [s, h] = l.useState(""), [_, v] = l.useState(null), x = l.useCallback(async () => {
     if (null != n) try {
       let e = await d.Z.verifyCode(s, n, t);
-      e.guild && (null == i || i(), (0, m.uL)(g.Z5c.CHANNEL(e.guild.id)))
+      e.guild && (null == i || i(), (0, m.uL)(f.Z5c.CHANNEL(e.guild.id)))
     } catch (e) {
       v(new u.Hx(e))
     }
   }, [s, t, n, i]), N = o().throttle(() => {
     d.Z.sendVerificationEmail(t, true, n)
   }, 1e3), E = async e => {
-    null != s && "" !== s && e.charCode === g.yXg.ENTER && await x()
+    null != s && "" !== s && e.charCode === f.yXg.ENTER && await x()
   };
   return (0, r.jsxs)("div", {
     className: p.container,
@@ -40,14 +40,14 @@ let h = e => {
     }), (0, r.jsx)(c.Heading, {
       className: a()(p.centerText, p.header),
       variant: "heading-xl/semibold",
-      children: f.intl.string(f.t.SJ3Lxc)
+      children: g.intl.string(g.t.SJ3Lxc)
     }), (0, r.jsx)("div", {
       className: p.descriptionWidth,
       children: (0, r.jsx)(c.Text, {
         className: p.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: f.intl.format(f.t["b+W0oq"], {
+        children: g.intl.format(g.t["b+W0oq"], {
           email: t,
           onClick: N
         })
@@ -55,7 +55,7 @@ let h = e => {
     }), (0, r.jsx)("div", {
       className: p.formItem,
       children: (0, r.jsx)(c.oil, {
-        label: f.intl.string(f.t.rpWT1t),
+        label: g.intl.string(g.t.rpWT1s),
         onKeyPress: E,
         onChange: e => {
           null != e && "" !== e && h(e)
@@ -66,7 +66,7 @@ let h = e => {
       fullWidth: true,
       onClick: x,
       variant: "primary",
-      text: f.intl.string(f.t.geKm7u)
+      text: g.intl.string(g.t.geKm7t)
     })]
   })
 }

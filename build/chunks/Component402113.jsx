@@ -89,6 +89,6 @@ function m(e) {
     isTrayButton: false,
     onClick: g,
     iconComponent: i.PBZ,
-    label: c.intl.string(c.t["R/FK4O"])
+    label: c.intl.string(c.t["R/FK4A"])
   }))
 }

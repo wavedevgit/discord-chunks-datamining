@@ -45,7 +45,7 @@ let N = e => {
     tab: Z,
     buttonContainerClassName: w,
     orbsSupportedOnly: H
-  } = e, D = (0, s.e7)([d.default], () => d.default.getCurrentUser()), M = C.ZP.canUseCollectibles(D), F = (0, j.G)("FeedBlock"), {
+  } = e, M = (0, s.e7)([d.default], () => d.default.getCurrentUser()), D = C.ZP.canUseCollectibles(M), F = (0, k.G)("FeedBlock"), {
     sortType: W,
     setSortType: U,
     sortedItems: V,
@@ -54,10 +54,10 @@ let N = e => {
     showRecommendationOption: K
   } = (0, y.Z)({
     sortedSkuIds: N,
-    isPremiumUser: M,
+    isPremiumUser: D,
     prioritizeUserDiscounts: R,
     orbsSupportedOnly: H
-  }), Y = (0, k.St)(V), q = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, s.e7)([g.Z], () => g.Z.isFocused()), J = !q && Q, {
+  }), Y = (0, j.St)(V), q = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), J = (0, s.e7)([g.Z], () => g.Z.isFocused()), Q = !q && J, {
     animationPhase: X,
     startAnimation: $
   } = (0, S.y)(), ee = (0, h.sp)(), et = null != (t = null == ee ? true : ee.sessionId) ? t : "", en = l.useRef(null), er = l.useCallback(e => {
@@ -71,7 +71,7 @@ let N = e => {
   }, [$, U, et]), el = m.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
-  return null == D ? null : (0, r.jsxs)("div", {
+  return null == M ? null : (0, r.jsxs)("div", {
     className: o()(A.popularPicksSection, A.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: A.blockHeader,
@@ -82,9 +82,9 @@ let N = e => {
           children: i
         }), K && (0, r.jsx)(a.aML, {
           "data-migration-pending": true,
-          text: I.intl.string(I.t["3taPdn"]),
+          text: I.intl.string(I.t["3taPdj"]),
           position: "top",
-          "aria-label": I.intl.string(I.t["3taPdn"]),
+          "aria-label": I.intl.string(I.t["3taPdj"]),
           children: e => {
             var t, n;
             return (0, r.jsx)(a.P3F, (t = function(e) {
@@ -128,7 +128,7 @@ let N = e => {
         }),
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/medium",
-          children: I.intl.string(I.t.uaX709)
+          children: I.intl.string(I.t.uaX705)
         }), (0, r.jsx)("div", {
           className: w,
           children: (0, r.jsx)(a.PhF, {
@@ -145,7 +145,7 @@ let N = e => {
           className: w,
           children: (0, r.jsx)(a.Button, {
             variant: "secondary",
-            text: I.intl.string(I.t.X3tnc3),
+            text: I.intl.string(I.t.X3tnc4),
             buttonRef: en,
             onClick: () => {
               $({
@@ -167,7 +167,7 @@ let N = e => {
       }) : Y.slice(0, P).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
-        if (J)
+        if (Q)
           if (X === S.g.SHUFFLE_OUT) return el ? (0, r.jsx)("div", {
             className: A.shuffleOutro,
             children: (0, r.jsx)(x.Z, {
@@ -196,7 +196,7 @@ let N = e => {
           }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
-            user: D,
+            user: M,
             tab: Z,
             className: n
           })

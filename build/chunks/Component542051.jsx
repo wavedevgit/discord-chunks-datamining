@@ -75,14 +75,14 @@ let g = e => {
   }, [t]);
   return n ? (0, i.jsx)("div", {
     className: f.queryText,
-    children: d.intl.string(d.t["6RVtLC"])
+    children: d.intl.string(d.t["6RVtLA"])
   }) : r ? o > 0 ? (0, i.jsx)(l.Text, {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: f.searchDMQueryText,
-    children: u ? d.intl.format(d.t.iV2ftr, {
+    children: u ? d.intl.format(d.t.iV2fth, {
       filterCount: o
-    }) : d.intl.format(d.t["5CTmUl"], {
+    }) : d.intl.format(d.t["5CTmUk"], {
       filterCount: o,
       value: s
     })
@@ -90,12 +90,12 @@ let g = e => {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: f.searchDMQueryText,
-    children: u ? d.intl.string(d.t.w39VdH) : d.intl.format(d.t["9gKPv7"], {
+    children: u ? d.intl.string(d.t.w39VdC) : d.intl.format(d.t["9gKPvw"], {
       value: s
     })
   }) : (0, i.jsx)("div", {
     className: f.queryText,
-    children: d.intl.format(d.t.ub226e, {
+    children: d.intl.format(d.t.ub226W, {
       value: t
     })
   })
@@ -217,7 +217,7 @@ class y extends(r = Chunk647438.PureComponent) {
         s = (0, c.X3)(t),
         _ = (0, i.jsx)(u.ZP, {
           channel: t,
-          text: d.intl.formatToPlainString(d.t.LDpotL, {
+          text: d.intl.formatToPlainString(d.t.LDpotA, {
             guildName: s
           }),
           channelContainerClassName: f.channelContainer,
@@ -230,7 +230,7 @@ class y extends(r = Chunk647438.PureComponent) {
           variant: "text-md/normal",
           color: "interactive-normal",
           className: f.inChannelOption,
-          children: d.intl.format(d.t.LDpotL, {
+          children: d.intl.format(d.t.LDpotA, {
             guildName: _
           })
         })

@@ -55,7 +55,7 @@ function x() {
       className: Chunk628682.channelName,
       variant: "text-md/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["Qj6O9/"])
+      children: Chunk388032.intl.string(Chunk388032.t.Qj6O91)
     })]
   })
 }

@@ -66,10 +66,10 @@ let b = function(e) {
       children: [(0, r.jsx)(s.Heading, {
         className: m.heading,
         variant: "heading-md/semibold",
-        children: h.intl.string(h.t.jY7Zxs)
+        children: h.intl.string(h.t.jY7Zxg)
       }), (0, r.jsx)("div", {
         className: m.previewDescription,
-        children: h.intl.string(h.t.q3hbnZ)
+        children: h.intl.string(h.t.q3hbne)
       }), (0, r.jsx)("div", {
         className: m.memberListContainer,
         children: (0, r.jsx)(s.yRy, {
@@ -108,7 +108,7 @@ let b = function(e) {
                   }), (0, r.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: h.intl.string(h.t.b9w3bG)
+                    children: h.intl.string(h.t.b9w3bO)
                   })]
                 })]
               })

@@ -60,8 +60,8 @@ let g = () => {
     _ = Chunk647438.useMemo(() => null != require ? require : {
       asset: Chunk78230,
       popoutAsset: Chunk513767,
-      title: Chunk388032.intl.string(Chunk388032.t.QZVVBg),
-      body: Chunk388032.intl.string(Chunk388032.t.sajmAg),
+      title: Chunk388032.intl.string(Chunk388032.t.QZVVBh),
+      body: Chunk388032.intl.string(Chunk388032.t.sajmAq),
       version: 0,
       revertTextColor: false
     }, [require]);

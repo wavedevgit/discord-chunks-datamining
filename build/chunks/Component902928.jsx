@@ -17,7 +17,7 @@ let f = e => {
     onComplete: t,
     data: n
   } = e, f = (0, r.useId)(), h = null, p = null, x = n.scopes.some(e => (0, l.sg)(e));
-  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? h = d.Z : x && (h = u.Z), null != n.twoWayLinkCode ? p = s.intl.string(s.t.QhATl5) : x && (p = s.intl.string(s.t.vBPvKy)), (0, a.jsxs)("div", {
+  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? h = d.Z : x && (h = u.Z), null != n.twoWayLinkCode ? p = s.intl.string(s.t.QhATl2) : x && (p = s.intl.string(s.t.vBPvK3)), (0, a.jsxs)("div", {
     className: c.content,
     children: [null != h ? (0, a.jsx)("img", {
       src: h,
@@ -29,7 +29,7 @@ let f = e => {
       children: [(0, a.jsx)(i.Heading, {
         variant: "heading-xl/extrabold",
         id: f,
-        children: s.intl.string(s.t.qDtJmJ)
+        children: s.intl.string(s.t.qDtJmD)
       }), null != p ? (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
@@ -40,7 +40,7 @@ let f = e => {
       className: c.footerButton,
       children: (0, a.jsx)(i.Button, {
         variant: "primary",
-        text: s.intl.string(s.t.i4jeWV),
+        text: s.intl.string(s.t.i4jeWR),
         onClick: t
       })
     })]

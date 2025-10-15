@@ -78,7 +78,7 @@ function E(e) {
     focusProps: {
       within: true
     },
-    children: [g.intl.string(g.t.iMJO39), T.isSelectFileBeforeEmojiStudioExperimentEnabled ? (0, r.jsx)(_.ZP, {
+    children: [g.intl.string(g.t.iMJO37), T.isSelectFileBeforeEmojiStudioExperimentEnabled ? (0, r.jsx)(_.ZP, {
       ref: n,
       tabIndex: 0,
       disabled: R,

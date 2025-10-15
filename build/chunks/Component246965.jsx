@@ -44,7 +44,7 @@ function g(e) {
 function E(e, t) {
   switch (e) {
     case f.Si.TIER_0:
-      return t.days > 0 ? p.intl.formatToPlainString(p.t.sP5OqK, {
+      return t.days > 0 ? p.intl.formatToPlainString(p.t.sP5OqC, {
         days: t.days
       }) : t.hours > 0 ? p.intl.formatToPlainString(p.t["7Lhfu7"], {
         hours: t.hours
@@ -52,11 +52,11 @@ function E(e, t) {
         minutes: Math.max(t.minutes, 1)
       });
     case f.Si.TIER_2:
-      return t.days > 0 ? p.intl.formatToPlainString(p.t["4prs5e"], {
+      return t.days > 0 ? p.intl.formatToPlainString(p.t["4prs5b"], {
         days: t.days
-      }) : t.hours > 0 ? p.intl.formatToPlainString(p.t.OD5nIS, {
+      }) : t.hours > 0 ? p.intl.formatToPlainString(p.t.OD5nIR, {
         hours: t.hours
-      }) : p.intl.formatToPlainString(p.t.rvyXjI, {
+      }) : p.intl.formatToPlainString(p.t.rvyXjD, {
         minutes: Math.max(t.minutes, 1)
       });
     default:
@@ -67,9 +67,9 @@ function E(e, t) {
 function b(e) {
   switch (e) {
     case f.Si.TIER_0:
-      return p.intl.string(p.t.mCG029);
+      return p.intl.string(p.t.mCG023);
     case f.Si.TIER_2:
-      return p.intl.string(p.t["7590PT"]);
+      return p.intl.string(p.t["7590Pe"]);
     default:
       throw Error("Unsupported subscription tier: ".concat(e))
   }

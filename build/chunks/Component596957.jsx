@@ -180,23 +180,23 @@ let L = function(e) {
       let n = function(e, t, n) {
         switch (e) {
           case S.pJs.ONLINE:
-            return T.intl.formatToPlainString(T.t.BagU2d, {
+            return T.intl.formatToPlainString(T.t.BagU2U, {
               online: t.toString()
             });
           case S.pJs.PENDING:
-            if (0 === n) return T.intl.formatToPlainString(T.t["g+3FIS"], {
+            if (0 === n) return T.intl.formatToPlainString(T.t["g+3FIa"], {
               count: t.toString()
             });
-            if (1 === n) return T.intl.formatToPlainString(T.t.npJsRk, {
+            if (1 === n) return T.intl.formatToPlainString(T.t.npJsRl, {
               count: t.toString()
             });
             throw Error("Unexpected pending friend requests section index: ".concat(n));
           case S.pJs.SUGGESTIONS:
-            return T.intl.formatToPlainString(T.t["DYMZ/v"], {
+            return T.intl.formatToPlainString(T.t["DYMZ/p"], {
               count: t.toString()
             });
           default:
-            return T.intl.formatToPlainString(T.t.rHRrhI, {
+            return T.intl.formatToPlainString(T.t.rHRrhC, {
               count: t.toString()
             })
         }
@@ -209,9 +209,9 @@ let L = function(e) {
         }), q && (0, r.jsx)("div", {
           className: N.clearButton,
           children: (0, r.jsx)(a.Avr, {
-            text: T.intl.string(T.t.O8k7Oz),
+            text: T.intl.string(T.t.O8k7O4),
             onClick: K,
-            "aria-label": T.intl.string(T.t.O8k7Oz),
+            "aria-label": T.intl.string(T.t.O8k7O4),
             textVariant: "text-sm/medium"
           })
         })]
@@ -252,7 +252,7 @@ let L = function(e) {
         footer: H && !J ? (0, r.jsx)("div", {
           className: N.viewSpamButton,
           children: (0, r.jsx)(a.Avr, {
-            text: T.intl.string(T.t.R40bU1),
+            text: T.intl.string(T.t.R40bU2),
             onClick: Z,
             textVariant: "text-xs/medium",
             variant: "secondary"

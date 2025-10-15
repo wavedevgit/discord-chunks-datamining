@@ -100,7 +100,7 @@ class k extends Chunk647438.PureComponent {
           canUnlinkChannel: h
         } = e, f = (0, p.KS)(t), {
           GUILD_CATEGORY: b
-        } = L.d4z, x = v.Ec.has(t.type), j = t.type === b ? M.intl.string(M.t.ifbXnJ) : x ? t.isForumPost() ? M.intl.string(M.t.nEOg1N) : M.intl.string(M.t.H7vTe3) : M.intl.string(M.t["8D8Rsb"]);
+        } = L.d4z, x = v.Ec.has(t.type), j = t.type === b ? M.intl.string(M.t.ifbXnL) : x ? t.isForumPost() ? M.intl.string(M.t.nEOg1N) : M.intl.string(M.t.H7vTe2) : M.intl.string(M.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
@@ -108,19 +108,19 @@ class k extends Chunk647438.PureComponent {
               size: "xxs",
               color: "currentColor",
               className: A.channelIcon
-            }) : null, (0, g.F6)(t, Z.default, E.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, E.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
               className: A.category,
-              children: (0, g.F6)(n, Z.default, E.Z)
+              children: (0, g.F6)(n, E.default, Z.Z)
             }) : null]
-          }) : M.intl.string(M.t.XPDhcX)
+          }) : M.intl.string(M.t.XPDhcc)
         }, {
           section: L.CoT.OVERVIEW,
-          label: M.intl.string(M.t["/dp6yc"]),
-          ariaLabel: M.intl.string(M.t["/dp6yc"]),
+          label: M.intl.string(M.t["/dp6yY"]),
+          ariaLabel: M.intl.string(M.t["/dp6yY"]),
           element: P.Z,
           notice: {
             element: P.G,
@@ -129,7 +129,7 @@ class k extends Chunk647438.PureComponent {
           predicate: () => !t.isModeratorReportChannel()
         }, {
           section: L.CoT.PERMISSIONS,
-          label: M.intl.string(M.t.xrmhRU),
+          label: M.intl.string(M.t.xrmhRX),
           element: m.Z,
           notice: {
             element: I.n,
@@ -138,14 +138,14 @@ class k extends Chunk647438.PureComponent {
           predicate: () => l && !x
         }, {
           section: L.CoT.INSTANT_INVITES,
-          label: M.intl.string(M.t["9F90iY"]),
+          label: M.intl.string(M.t["9F90ic"]),
           element: R.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
           section: L.CoT.INTEGRATIONS,
-          label: M.intl.string(M.t.s69NLC),
-          ariaLabel: M.intl.string(M.t.s69NLC),
+          label: M.intl.string(M.t.s69NLF),
+          ariaLabel: M.intl.string(M.t.s69NLF),
           element: _.Z,
           notice: {
             stores: [y.Z],

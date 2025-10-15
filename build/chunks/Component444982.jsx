@@ -77,7 +77,7 @@ let j = {
       }) : null
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.UPvOiY)
+      children: Chunk388032.intl.string(Chunk388032.t.UPvOia)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
@@ -119,7 +119,7 @@ let j = {
       }) : null
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.nFv3GR)
+      children: Chunk388032.intl.string(Chunk388032.t.nFv3Gb)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
@@ -223,7 +223,7 @@ let j = {
     },
     renderTitle: e => (0, i.jsx)(y.XM, {
       widgetId: e.id,
-      children: S.intl.string(S.t["386XRk"])
+      children: S.intl.string(S.t["386XRo"])
     }),
     renderButtons(e) {
       var t;
@@ -274,7 +274,7 @@ let j = {
       })
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.gnKWdX)
+      children: Chunk388032.intl.string(Chunk388032.t.gnKWdS)
     }),
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
@@ -302,7 +302,7 @@ let j = {
       })
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t["6gwSFR"])
+      children: Chunk388032.intl.string(Chunk388032.t["6gwSFY"])
     }),
     renderButtons: () => null,
     predicate: () => (0, Chunk32300.Rb)("ActivityPopout").allowActivityWidget && !(0, Chunk482798.XU)("FriendsPopout").enableOverlayWidget
@@ -317,7 +317,7 @@ let j = {
       })
     },
     renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
-      children: Chunk388032.intl.string(Chunk388032.t.TdEu5e)
+      children: Chunk388032.intl.string(Chunk388032.t.TdEu5X)
     }),
     renderButtons: () => null,
     predicate: () => (0, Chunk482798.XU)("FriendsPopout").enableOverlayWidget

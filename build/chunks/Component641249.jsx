@@ -68,11 +68,11 @@ function x() {
   }
   let I = (0, Chunk723047.mY)();
   return (0, Chunk951288.jsxs)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.D0qeOz),
-    description: Chunk388032.intl.format(Chunk388032.t.zuwel5, {
+    label: Chunk388032.intl.string(Chunk388032.t["D0qeO+"]),
+    description: Chunk388032.intl.format(Chunk388032.t.zuwely, {
       premiumEmojiMaximum: y
     }),
-    helperText: Chunk388032.intl.format(Chunk388032.t.sEkgBg, {
+    helperText: Chunk388032.intl.format(Chunk388032.t.sEkgBk, {
       handleTransitionToManageEmoji: C
     }),
     disabled: I,
@@ -110,7 +110,7 @@ function x() {
         })
       },
       disabled: I,
-      children: Chunk388032.intl.string(Chunk388032.t.ouOOV1)
+      children: Chunk388032.intl.string(Chunk388032.t.ouOOVy)
     })]
   })
 }

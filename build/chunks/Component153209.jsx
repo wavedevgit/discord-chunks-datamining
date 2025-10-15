@@ -51,7 +51,7 @@ function y() {
     }
     returnfalse
   }, [exports, Chunk616032, require]) ? (0, Chunk951288.jsx)(Chunk481060.M0o, {
-    tooltip: Chunk388032.intl.string(Chunk388032.t["8k+6QU"]),
+    tooltip: Chunk388032.intl.string(Chunk388032.t["8k+6QY"]),
     color: Chunk481060.YX$.TERTIARY,
     icon: (0, Chunk951288.jsx)(Chunk481060.W6s, {
       size: "xs",

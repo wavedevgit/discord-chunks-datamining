@@ -40,7 +40,7 @@ function f(e) {
       children: t
     }), g && null != m && (0, i.jsx)(c.aML, {
       "data-migration-pending": true,
-      text: C && !f ? d.intl.string(d.t.YSDH9v) : true,
+      text: C && !f ? d.intl.string(d.t.YSDH9n) : true,
       children: e => {
         var t, n;
         return (0, i.jsx)(c.P3F, (t = function(e) {

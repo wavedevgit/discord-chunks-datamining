@@ -25,7 +25,7 @@ let m = e => {
         variant: "overlay-primary",
         size: "md",
         fullWidth: true,
-        text: u.intl.string(u.t.hvVgAQ),
+        text: u.intl.string(u.t.hvVgAZ),
         onClick: () => {
           (0, a.z)(), null != t && t()
         }
@@ -36,7 +36,7 @@ let m = e => {
       children: [(0, r.jsx)(l.Heading, {
         className: g.tier0Heading,
         variant: "heading-xxl/extrabold",
-        children: u.intl.string(u.t["qUl+Ky"])
+        children: u.intl.string(u.t["qUl+K4"])
       }), (0, r.jsx)(s.wp, {
         className: g.tier0Card,
         ctaButton: n,

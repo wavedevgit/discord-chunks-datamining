@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk55935 = require("./55935.js"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk424271 = require("./424271.js"),
   Chunk724913 = require("./724913.js"),
@@ -35,10 +35,10 @@ let O = e => {
     channelId: s.id,
     guildId: n,
     messageId: O
-  })((0, u.JZ)(I, s)), A = null != I ? I.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : y, C = null != I ? g.intl.format(m.default["+zqXZm"], {
+  })((0, u.JZ)(I, s)), A = null != I ? I.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : y, C = null != I ? g.intl.format(m.default["+zqXZs"], {
     username: I.username,
     onUserClick: S
-  }) : g.intl.string(m.default.xpRjfX);
+  }) : g.intl.string(m.default.xpRjfS);
   return (0, r.jsxs)("div", {
     className: o()(b.messageSpine, b.repliedMessage, T),
     children: [(0, r.jsx)(c.qEK, {

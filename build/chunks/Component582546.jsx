@@ -34,7 +34,7 @@ function m(e) {
   if ("recent" !== g || !(0, l.AZ)(m)) return null;
   if (!O) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
-    label: h.intl.formatToPlainString(h.t.XWSHTU, {
+    label: h.intl.formatToPlainString(h.t.XWSHTb, {
       platform: p.ai
     }),
     action: () => {

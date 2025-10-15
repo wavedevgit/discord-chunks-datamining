@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk424215 = require("./424215.js");
 
-function C(n) {
+function f(n) {
   var e, t, a, i;
   let {
     sku: r
@@ -49,7 +49,7 @@ function C(n) {
             isGift: false
           })
         },
-        text: m.intl.string(m.t.boqtTE),
+        text: m.intl.string(m.t.boqtTA),
         fullWidth: true
       }), (0, l.jsx)(o.Button, {
         icon: o.OgN,
@@ -59,14 +59,14 @@ function C(n) {
             isGift: true
           })
         },
-        text: m.intl.string(m.t.QAZA5e),
+        text: m.intl.string(m.t.QAZA5f),
         fullWidth: true
       })]
     })]
   })
 }
 
-function f(n) {
+function C(n) {
   let {
     socialLayerTenantMetadata: e,
     selectedCarouselItemIndex: t,
@@ -109,11 +109,11 @@ function h(n) {
       className: x.modalContent,
       children: (0, l.jsxs)("div", {
         className: x.infoContainer,
-        children: [(0, l.jsx)(f, {
+        children: [(0, l.jsx)(C, {
           applicationId: u,
           socialLayerTenantMetadata: null == m || null == (t = m.tenantMetadata) ? true : t.socialLayer,
           selectedCarouselItemIndex: p
-        }), (0, l.jsx)(C, {
+        }), (0, l.jsx)(f, {
           sku: m
         })]
       })

@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 934261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -52,7 +52,7 @@ let I = e => {
       pendingProfileEffectRecord: n,
       product: u,
       purchase: d
-    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = O.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), j = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, v.TD)(Date.now(), d.expiresAt) : null, I = (0, a.ag)(d), A = (0, a.kd)(m), w = (0, f.M)(!y || h), N = S(j, y, h, w);
+    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = _.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), j = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, O.TD)(Date.now(), d.expiresAt) : null, I = (0, a.ag)(d), w = (0, a.kd)(m), A = (0, f.M)(!y || h), N = S(j, y, h, A);
     return null != n ? (0, r.jsx)("div", {
       className: t ? E.effectDescriptionNoGradient : E.effectDescriptionBorderWithGradient,
       children: (0, r.jsxs)("div", {
@@ -61,7 +61,7 @@ let I = e => {
           color: "header-primary",
           variant: "text-sm/semibold",
           className: E.effectName,
-          children: (0, i.isEmpty)(I) ? A : I
+          children: (0, i.isEmpty)(I) ? w : I
         }), null != d ? null : (0, r.jsx)(o.Text, {
           color: "text-default",
           variant: "text-sm/normal",
@@ -71,20 +71,20 @@ let I = e => {
           variant: "text-xxs/normal",
           color: "text-muted",
           className: E.effectPurchasedAt,
-          children: _.intl.format(_.t.Io7ozs, {
+          children: v.intl.format(v.t.Io7ozn, {
             days: C.days.toString()
           })
         }), null != d && (0, r.jsxs)(o.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           className: E.effectPurchasedAt,
-          children: [_.intl.format(_.t.gW9R4O, {
+          children: [v.intl.format(v.t.gW9R4B, {
             date: d.purchasedAt.toLocaleDateString(g, {
               month: "long",
               year: "numeric"
             })
           }), null != d.expiresAt && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("br", {}), _.intl.format(_.t.eZSTa2, {
+            children: [(0, r.jsx)("br", {}), v.intl.format(v.t.eZSTa5, {
               date: d.expiresAt.toLocaleDateString(g, {
                 minute: "numeric",
                 hour: "numeric",
@@ -98,13 +98,13 @@ let I = e => {
           variant: "text-xxs/normal",
           color: "text-muted",
           className: E.effectPurchasedAt,
-          children: _.intl.string(_.t.nKdAlJ)
+          children: v.intl.string(v.t.nKdAlO)
         })]
       })
     }) : null
   },
-  S = (e, t, n, r) => e ? _.intl.string(_.t["1UPza2"]) : t && n ? _.intl.string(_.t.hmyYKy) : t && !n ? r ? _.intl.string(_.t.meldu7) : _.intl.string(_.t.JtAKws) : _.intl.string(_.t.fEGjVV),
-  A = e => {
+  S = (e, t, n, r) => e ? v.intl.string(v.t["1UPza/"]) : t && n ? v.intl.string(v.t.hmyYK8) : t && !n ? r ? v.intl.string(v.t.melduy) : v.intl.string(v.t.JtAKwp) : v.intl.string(v.t.fEGjVQ),
+  w = e => {
     var t, n;
     let {
       user: i,
@@ -116,31 +116,31 @@ let I = e => {
     } = e, {
       pendingGlobalName: x,
       pendingNickname: P,
-      pendingPronouns: v,
-      pendingBio: _,
+      pendingPronouns: O,
+      pendingBio: v,
       pendingBanner: S,
-      pendingAvatar: A,
-      pendingAvatarDecoration: w,
+      pendingAvatar: w,
+      pendingAvatarDecoration: A,
       pendingThemeColors: N,
       pendingAccentColor: Z
     } = (0, l.cj)([u.Z, j.Z], () => C({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = O.ZP.isPremium(i), D = O.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(_).value), B = {
+    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = _.ZP.isPremium(i), D = _.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(v).value), B = {
       user: i,
       guild: f,
       pendingGlobalName: x,
       pendingNickname: P,
-      pendingPronouns: v,
-      pendingBio: b.dN.useSetting() && null != _ ? d.ZP.parse(true, _).content : _,
+      pendingPronouns: O,
+      pendingBio: b.dN.useSetting() && null != v ? d.ZP.parse(true, v).content : v,
       pendingBanner: S,
       useLargeBanner: true,
       pendingAvatar: (0, m.SD)({
         userId: i.id,
-        image: A
+        image: w
       }),
-      pendingAvatarDecoration: w,
+      pendingAvatarDecoration: A,
       pendingThemeColors: N,
       pendingAccentColor: Z,
       pendingProfileEffect: null != o ? o : null,

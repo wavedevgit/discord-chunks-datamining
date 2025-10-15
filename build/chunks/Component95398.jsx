@@ -68,7 +68,7 @@ let I = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: o()(g.spoilerWarning, t),
-      children: m.intl.string(m.t["F+x38P"])
+      children: m.intl.string(m.t["F+x38C"])
     })
   },
   T = e => {
@@ -87,7 +87,7 @@ let I = e => {
           variant: "text-sm/normal",
           color: "always-white",
           className: g.explicitContentWarningText,
-          children: m.intl.string(m.t.SpxcUV)
+          children: m.intl.string(m.t.SpxcUR)
         })]
       })
     })
@@ -131,7 +131,7 @@ let I = e => {
       children: (0, r.jsx)(l.P3F, {
         className: g.obscureHoverButton,
         onClick: i,
-        "aria-label": m.intl.string(m.t.ex5G9v),
+        "aria-label": m.intl.string(m.t.ex5G9m),
         children: n ? (0, r.jsx)(l.tEF, {
           size: "md",
           color: "currentColor"
@@ -343,12 +343,12 @@ class N extends Chunk647438.PureComponent {
     } = this.props;
     switch (module) {
       case Chunk936141.wk.SPOILER:
-        return Chunk388032.intl.string(Chunk388032.t["F+x38P"]);
+        return Chunk388032.intl.string(Chunk388032.t["F+x38C"]);
       case Chunk936141.wk.EXPLICIT_CONTENT:
       case Chunk936141.wk.GORE_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t.mlJ8VV);
+        return Chunk388032.intl.string(Chunk388032.t.mlJ8Vf);
       case Chunk936141.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t["MRdR7+"]);
+        return Chunk388032.intl.string(Chunk388032.t.MRdR7z);
       default:
         return (0, Chunk823379.vE)(module)
     }
@@ -359,12 +359,12 @@ class N extends Chunk647438.PureComponent {
     } = this.props;
     switch (module) {
       case Chunk936141.wk.SPOILER:
-        return Chunk388032.intl.string(Chunk388032.t["F+x38P"]);
+        return Chunk388032.intl.string(Chunk388032.t["F+x38C"]);
       case Chunk936141.wk.EXPLICIT_CONTENT:
       case Chunk936141.wk.GORE_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t.mlJ8VV);
+        return Chunk388032.intl.string(Chunk388032.t.mlJ8Vf);
       case Chunk936141.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return Chunk388032.intl.string(Chunk388032.t["MRdR7+"]);
+        return Chunk388032.intl.string(Chunk388032.t.MRdR7z);
       default:
         return (0, Chunk823379.vE)(module)
     }

@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
 function f(e) {
   let {
     widget: t
-  } = e, r = (0, s.Gv)(t.type), i = 1 === r, f = (0, o.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)) && i ? d.intl.string(d.t["3FdPBQ"]) : d.intl.format(d.t.W8K2GB, {
+  } = e, r = (0, s.Gv)(t.type), i = 1 === r, f = (0, o.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)) && i ? d.intl.string(d.t["3FdPBT"]) : d.intl.format(d.t.W8K2GH, {
     maxGames: r
   });
   return (0, n.jsxs)("div", {

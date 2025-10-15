@@ -33,7 +33,7 @@ function l(e) {
         variant: l,
         color: "text-default",
         children: [(0, r.jsx)(a.nn4, {
-          children: o.intl.string(o.t.RnyseH)
+          children: o.intl.string(o.t.RnyseL)
         }), n.name]
       }), true === t && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.LZC, {

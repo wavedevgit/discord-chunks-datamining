@@ -32,13 +32,13 @@ function L(e) {
   } = e, {
     selectedPlan: S,
     selectedSkuId: v,
-    step: w
+    step: I
   } = (0, m.JL)(), {
-    setSelectedGiftingPromotionReward: I,
+    setSelectedGiftingPromotionReward: w,
     selectedGiftingPromotionReward: O,
     claimableRewards: P,
     claimableVariants: E
-  } = (0, h.wD)(), T = (0, o.e7)([_.default], () => _.default.getCurrentUser()), k = (0, c.ZP)(P, E, O), [M, A] = i.useState(null != (n = null == k ? true : k.defaultCategory) ? n : c.KN.Trick), [Z, B] = i.useState(null == k || null == (t = k.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(M), F = i.useMemo(() => null == E ? null != P ? P : [] : E.flatMap(e => {
+  } = (0, h.wD)(), T = (0, o.e7)([_.default], () => _.default.getCurrentUser()), k = (0, c.ZP)(P, E, O), [M, A] = i.useState(null != (n = null == k ? true : k.defaultCategory) ? n : c.KN.Trick), [B, Z] = i.useState(null == k || null == (t = k.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), G = i.useRef(M), F = i.useMemo(() => null == E ? null != P ? P : [] : E.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -72,24 +72,24 @@ function L(e) {
   }), [E, P, M]);
   i.useEffect(() => {
     let e = null == k ? true : k.defaultHighlightedReward;
-    !N && null == O && null != e && null != e && F.some(t => t.skuId === e.skuId) && (I(e), B(e.skuId))
-  }, [k, N, O, F, I]), i.useEffect(() => {
+    !N && null == O && null != e && null != e && F.some(t => t.skuId === e.skuId) && (w(e), Z(e.skuId))
+  }, [k, N, O, F, w]), i.useEffect(() => {
     (null == k ? true : k.defaultCategory) == null || N || A(k.defaultCategory)
-  }, [null == k ? true : k.defaultCategory, N]), l()(null != S, "Expected plan to selected"), l()(null != v, "Expected selectedSkuId"), l()(null != w, "Step should be set");
-  let H = i.useMemo(() => null != Z && (null != P ? P : []).some(e => e.skuId === Z), [Z, P]),
+  }, [null == k ? true : k.defaultCategory, N]), l()(null != S, "Expected plan to selected"), l()(null != v, "Expected selectedSkuId"), l()(null != I, "Step should be set");
+  let H = i.useMemo(() => null != B && (null != P ? P : []).some(e => e.skuId === B), [B, P]),
     U = i.useMemo(() => null != O && F.some(e => e.skuId === O.skuId), [F, O]),
-    D = i.useMemo(() => 0 === F.length || null == Z || !U || !H, [F, Z, H, U]);
+    D = i.useMemo(() => 0 === F.length || null == B || !U || !H, [F, B, H, U]);
   i.useEffect(() => {
     if (0 === F.length) {
-      B(true), I(true);
+      Z(true), w(true);
       return
     }
-    H && F.some(e => e.skuId === Z) || null == Z || (B(true), I(true))
-  }, [F, H, Z, I]), i.useEffect(() => {
-    G.current === M || U || (I(true), B(true)), G.current = M
-  }, [M, U, I]);
+    H && F.some(e => e.skuId === B) || null == B || (Z(true), w(true))
+  }, [F, H, B, w]), i.useEffect(() => {
+    G.current === M || U || (w(true), Z(true)), G.current = M
+  }, [M, U, w]);
   let z = e => {
-      I(F.find(t => t.skuId === e)), B(e), R(true)
+      w(F.find(t => t.skuId === e)), Z(e), R(true)
     },
     W = F.map(e => {
       var t, n;
@@ -101,7 +101,7 @@ function L(e) {
         claimed: null != P && P.every(t => t.skuId !== e.skuId),
         user: T,
         onSelect: z,
-        selectedSkuId: Z,
+        selectedSkuId: B,
         category: M
       }, e.skuId)
     }),
@@ -140,7 +140,7 @@ function L(e) {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.headerSubtitle,
-        children: b.intl.string(b.t.MhwtRU)
+        children: b.intl.string(b.t.MhwtRc)
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
         className: y.closeButton,

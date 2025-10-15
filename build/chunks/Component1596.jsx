@@ -11,16 +11,16 @@ var Chunk951288 = require("./951288.js"),
 function c() {
   return (0, Chunk951288.jsxs)(Chunk819557.z, {
     children: [(0, Chunk951288.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t.fjFJFR),
+      title: Chunk388032.intl.string(Chunk388032.t.fjFJFV),
       description: Chunk388032.intl.string(Chunk388032.t["8SIMPz"]),
       icon: Chunk481060.owK
     }), (0, Chunk951288.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t.QCrmqa),
-      description: Chunk388032.intl.string(Chunk388032.t.TKDMoK),
+      title: Chunk388032.intl.string(Chunk388032.t.QCrmqS),
+      description: Chunk388032.intl.string(Chunk388032.t.TKDMoN),
       icon: Chunk481060.owK
     }), (0, Chunk951288.jsx)(Chunk819557.q, {
-      title: Chunk388032.intl.string(Chunk388032.t["lkm/a2"]),
-      description: Chunk388032.intl.string(Chunk388032.t["8j3qaG"]),
+      title: Chunk388032.intl.string(Chunk388032.t["lkm/a8"]),
+      description: Chunk388032.intl.string(Chunk388032.t["8j3qaC"]),
       icon: Chunk481060.aNP
     })]
   })

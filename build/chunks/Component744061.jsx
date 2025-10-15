@@ -87,7 +87,7 @@ function g(e) {
           className: f.content,
           children: [(0, i.jsx)("div", {
             className: f.header,
-            children: h.intl.string(h.t.mY3Y39)
+            children: h.intl.string(h.t.mY3Y38)
           }), (0, i.jsx)(s.Text, {
             id: "content-warning-popout-label",
             className: m.markup,
@@ -101,11 +101,11 @@ function g(e) {
                 className: f.button,
                 color: o.zx.Colors.PRIMARY,
                 onClick: O,
-                children: h.intl.string(h.t.fsBWmZ)
+                children: h.intl.string(h.t.fsBWmS)
               }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 className: f.buttonHint,
-                children: h.intl.format(h.t["0LzVPT"], {})
+                children: h.intl.format(h.t["0LzVPZ"], {})
               })]
             }), (0, i.jsxs)("div", {
               className: f.buttonContainer,
@@ -114,7 +114,7 @@ function g(e) {
                 onClick: x,
                 type: "submit",
                 autoFocus: true,
-                children: h.intl.string(h.t.KJnHq6)
+                children: h.intl.string(h.t.KJnHq3)
               }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 className: f.buttonHint,

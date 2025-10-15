@@ -80,8 +80,8 @@ let b = "mweb_handoff_nonce",
         })
       }, [require, Z, C, y, T]), null == y) return null;
     let P = null == C ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [Chunk388032.intl.string(Chunk388032.t.uJ1Jsb), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAg)]
-    }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55u) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTk) : true;
+      children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
+    }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
     return null != C && S.has(C) ? (0, Chunk951288.jsx)("div", {
       className: Chunk78224.errorContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -115,7 +115,7 @@ let b = "mweb_handoff_nonce",
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk78224.buttonText,
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t["NcC75+"])
+          children: Chunk388032.intl.string(Chunk388032.t.NcC759)
         })
       })]
     })

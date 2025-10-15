@@ -2,7 +2,7 @@
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => B,
-  Z: () => M
+  Z: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -74,7 +74,7 @@ function G(e, t) {
   return i
 }
 
-function M(e) {
+function U(e) {
   var {
     widget: t
   } = e, n = G(e, ["widget"]);
@@ -85,16 +85,16 @@ function M(e) {
   }, n)) : null
 }
 
-function U() {
+function M() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
       size: "xs"
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz8"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["7blcz8"])
+      children: Chunk388032.intl.string(Chunk388032.t["7blcz6"])
     })]
   })
 }
@@ -149,11 +149,11 @@ function F(e) {
       null !== N.current && A()
     }, [A]), f)
     if (d) return (0, r.jsx)(C.Z, {});
-    else return (0, r.jsx)(Z.Z, {});
+    else return (0, r.jsx)(k.Z, {});
   return (0, r.jsxs)(r.Fragment, {
-    children: [o && c && (0, r.jsx)(U, {}), o && (0, r.jsx)(W, {
+    children: [o && c && (0, r.jsx)(M, {}), o && (0, r.jsx)(W, {
       user: t
-    }), a.map((e, i) => (0, r.jsx)(M, {
+    }), a.map((e, i) => (0, r.jsx)(U, {
       widget: e,
       user: t,
       guildId: n,
@@ -172,7 +172,7 @@ function B(e) {
     container: l.current
   });
   let s = (0, D.h)(t.id);
-  return (0, r.jsxs)(k.F, {
+  return (0, r.jsxs)(Z.F, {
     "data-scroller": true,
     scrollerRef: l,
     className: a()(R.scroller, {

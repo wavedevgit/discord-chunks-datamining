@@ -163,12 +163,12 @@ let k = Chunk647438.memo(function(e) {
   } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
     unread: U,
     mentionCount: B,
-    isMentionLowImportance: V
+    isMentionLowImportance: F
   } = (0, s.cj)([O.ZP], () => ({
     unread: O.ZP.hasUnread(t.id),
     mentionCount: O.ZP.getMentionCount(t.id),
     isMentionLowImportance: O.ZP.getIsMentionLowImportance(t.id)
-  })), F = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
+  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
@@ -200,12 +200,12 @@ let k = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? Z.intl.formatToPlainString(Z.t["ZL7+Iy"], {
+  }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? Z.intl.formatToPlainString(Z.t["ZL7+I6"], {
     channelName: t.name,
     mentionCount: B
-  }) : U ? Z.intl.formatToPlainString(Z.t.YlVvmZ, {
+  }) : U ? Z.intl.formatToPlainString(Z.t.YlVvmc, {
     channelName: t.name
-  }) : Z.intl.formatToPlainString(Z.t["0nZpiI"], {
+  }) : Z.intl.formatToPlainString(Z.t["0nZpiF"], {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
@@ -232,8 +232,8 @@ let k = Chunk647438.memo(function(e) {
       children: (0, r.jsxs)("div", {
         className: o()(w.iconVisibility, T.wrapper, T.typeThread, {
           [T.modeSelected]: l,
-          [T.modeMuted]: !l && F,
-          [T.modeUnreadImportant]: !F && !l && U,
+          [T.modeMuted]: !l && V,
+          [T.modeUnreadImportant]: !V && !l && U,
           [T.withGuildIcon]: A,
           [T.threadsInChannelListQoLExperiment]: H.enabled,
           [T.withThreadAvatar]: "icon-with-avatar" === H.variant,
@@ -241,7 +241,7 @@ let k = Chunk647438.memo(function(e) {
         }),
         onMouseDown: K,
         onContextMenu: Y,
-        children: [!U || F || l ? null : (0, r.jsx)("div", {
+        children: [!U || V || l ? null : (0, r.jsx)("div", {
           className: o()(T.unread, T.unreadImportant)
         }), (0, r.jsx)(u.P3F, D(R({}, J), {
           innerRef: $,
@@ -275,7 +275,7 @@ let k = Chunk647438.memo(function(e) {
                 channel: t
               }) : null, (0, C.Z)(B) ? (0, r.jsx)(S.Z, {
                 mentionsCount: B,
-                isMentionLowImportance: V
+                isMentionLowImportance: F
               }) : null]
             })]
           })

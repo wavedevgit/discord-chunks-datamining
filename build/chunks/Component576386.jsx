@@ -30,7 +30,7 @@ let g = e => {
     } = (0, u.Z)(b);
     return (0, i.jsxs)(s.P3F, {
       innerRef: b,
-      "aria-label": null != (t = l.label) ? t : h.intl.string(h.t.x5CoXV),
+      "aria-label": null != (t = l.label) ? t : h.intl.string(h.t.x5CoXR),
       className: m.nameplateItem,
       onClick: I,
       children: [(0, i.jsx)(d.Z, {
@@ -77,7 +77,7 @@ let g = e => {
               color: "currentColor"
             }), (0, i.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: null != r ? h.intl.string(h.t.CHf9iI) : h.intl.string(h.t.PoWNfX)
+              children: null != r ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.PoWNfe)
             })]
           }), (0, i.jsxs)(s.P3F, {
             className: m.inventoryControlsButton,
@@ -87,7 +87,7 @@ let g = e => {
               color: "currentColor"
             }), (0, i.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: h.intl.string(h.t.pWG4zc)
+              children: h.intl.string(h.t.pWG4ze)
             })]
           })]
         }), (0, i.jsx)("div", {

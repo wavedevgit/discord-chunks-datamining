@@ -68,12 +68,12 @@ let I = function() {
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             color: "header-primary",
-            children: Chunk388032.intl.string(Chunk388032.t.txdaxc)
+            children: Chunk388032.intl.string(Chunk388032.t.txdaxf)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "header-secondary",
             className: Chunk805220.description,
-            children: Chunk388032.intl.string(Chunk388032.t["5PGZWV"])
+            children: Chunk388032.intl.string(Chunk388032.t["5PGZWS"])
           })]
         }), (0, Chunk951288.jsx)(Chunk343397.Z, {
           profile: T,

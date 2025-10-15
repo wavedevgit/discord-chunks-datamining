@@ -11,7 +11,7 @@ var Chunk692547 = require("./692547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk318681 = require("./318681.js");
 let c = () => (0, Chunk951288.jsx)(Chunk28664.u, {
-  text: Chunk388032.intl.string(Chunk388032.t.GMZqSk),
+  text: Chunk388032.intl.string(Chunk388032.t.GMZqSi),
   children: (0, Chunk951288.jsx)("div", {
     className: Chunk318681.container,
     children: (0, Chunk951288.jsx)(Chunk311888.Z, {

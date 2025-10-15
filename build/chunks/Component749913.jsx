@@ -123,7 +123,7 @@ function ed(e) {
     j.bumpDispatchPriority()
   }, [j]), _ = (0, g.e7)([F.Z], () => F.Z.can(er.Plq.ATTACH_FILES, t)), C = (0, g.Wu)([H.Z], () => H.Z.getUploads(t.id, L.d.FirstThreadMessage)), y = f && _ && u, T = (null == t ? true : t.isMediaChannel()) === true, O = function(e, t) {
     let n = (0, Q.AF)(),
-      r = (0, X.ql)(e);
+      r = (0, K.ql)(e);
     return i.useCallback(() => {
       let {
         formOpen: i,
@@ -201,7 +201,7 @@ function ed(e) {
         setFormOpenFromUserAction: g,
         setGuidelinesOpen: f
       } = n.getState(), x = q.Z.hasSeen(e.id);
-      if (!u) return (0, K.P_)({
+      if (!u) return (0, X.P_)({
         guildId: e.guild_id,
         channelId: e.id
       }), x || n.getState().setGuidelinesOpen(true), g(), {
@@ -215,7 +215,7 @@ function ed(e) {
         hasNameError: v,
         hasMessageError: _
       } = a(t, i, l);
-      if (s(v ? (0, G.V_)() : null), o(_ ? (0, G.T4)() : null), v || _) return {
+      if (s(v ? (0, V.V_)() : null), o(_ ? (0, V.T4)() : null), v || _) return {
         shouldClear: false,
         shouldRefocus: true
       };
@@ -241,7 +241,7 @@ function ed(e) {
         }
       } catch (t) {
         var C, y;
-        return (null == (C = t.body) ? true : C.code) === er.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, G.Gx)(t.body, e)) : (null == (y = t.body) ? true : y.code) === er.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, G.Gx)(t.body, e)), {
+        return (null == (C = t.body) ? true : C.code) === er.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, V.Gx)(t.body, e)) : (null == (y = t.body) ? true : y.code) === er.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, V.Gx)(t.body, e)), {
           shouldClear: false,
           shouldRefocus: true
         }
@@ -252,7 +252,7 @@ function ed(e) {
   }(t);
   return i.useLayoutEffect(s, [f, m, C, s]), (0, r.jsx)(r.Fragment, {
     children: (0, r.jsx)("div", {
-      "aria-label": u ? ea.intl.string(ea.t.dq7mAQ) : ea.intl.string(ea.t["5h0QOD"]),
+      "aria-label": u ? ea.intl.string(ea.t.dq7mAa) : ea.intl.string(ea.t["5h0QOP"]),
       className: l()(el.container, {
         [el.collapsed]: !f
       }),
@@ -334,9 +334,9 @@ let eu = Chunk647438.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), m = (0, Q.AF)(), h = (0, X.ql)(t), g = i.useCallback(() => {
+    }, c.X), m = (0, Q.AF)(), h = (0, K.ql)(t), g = i.useCallback(() => {
       var e;
-      m.getState().resetFormState(), b.Z.clearDraft(t.id, L.d.ThreadSettings), b.Z.clearDraft(t.id, L.d.FirstThreadMessage), j.Z.clearAll(t.id, L.d.FirstThreadMessage), m.getState().setFormOpen(false), m.getState().setBodyFocused(false), m.getState().setTitleFocused(false), m.getState().setHasClickedForm(false), m.getState().setPreviewing(false), null == (e = a.current) || e.blur(), (0, K.Oq)({
+      m.getState().resetFormState(), b.Z.clearDraft(t.id, L.d.ThreadSettings), b.Z.clearDraft(t.id, L.d.FirstThreadMessage), j.Z.clearAll(t.id, L.d.FirstThreadMessage), m.getState().setFormOpen(false), m.getState().setBodyFocused(false), m.getState().setTitleFocused(false), m.getState().setHasClickedForm(false), m.getState().setPreviewing(false), null == (e = a.current) || e.blur(), (0, X.Oq)({
         guildId: t.guild_id,
         channelId: t.id
       })
@@ -388,7 +388,7 @@ let eu = Chunk647438.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), j = (0, Q.AF)(), v = null != t.topic && 0 !== t.topic.length, _ = q.Z.hasSeen(t.id), C = (0, X.ql)(t), y = (0, g.e7)([z.default], () => z.default.getCurrentUser());
+    }, c.X), j = (0, Q.AF)(), v = null != t.topic && 0 !== t.topic.length, _ = q.Z.hasSeen(t.id), C = (0, K.ql)(t), y = (0, g.e7)([z.default], () => z.default.getCurrentUser());
     o()(null != y, "current user cannot be null"), (0, B.yp)({
       event: er.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
@@ -398,11 +398,11 @@ let eu = Chunk647438.memo(function(e) {
     });
     let T = i.useCallback(async e => {
         let n = e.clipboardData.files[0];
-        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, V.d)([n], t, L.d.FirstThreadMessage, {
+        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, G.d)([n], t, L.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),
-      w = (0, G.Op)(m, {
+      w = (0, V.Op)(m, {
         content: h
       });
     return (0, r.jsxs)("div", {
@@ -416,7 +416,7 @@ let eu = Chunk647438.memo(function(e) {
         gap: 4,
         children: [(0, r.jsx)(f.l, {
           value: h,
-          placeholder: a ? u || x.textValue.length > 0 && x.textValue.trim() !== C ? ea.intl.string(ea.t.lU4dDQ) : ea.intl.string(ea.t.CjmivL) : ea.intl.string(ea.t["5h0QOD"]),
+          placeholder: a ? u || x.textValue.length > 0 && x.textValue.trim() !== C ? ea.intl.string(ea.t.lU4dDS) : ea.intl.string(ea.t.CjmivA) : ea.intl.string(ea.t["5h0QOP"]),
           rows: 1,
           maxLength: er.HN8,
           onChange: e => {
@@ -437,7 +437,7 @@ let eu = Chunk647438.memo(function(e) {
             e !== h && (j.getState().setName(e), u || W.Z.updateForumSearchQuery(t.id, e))
           },
           onKeyDown: e => {
-            "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), u && h.length > 0 ? null == l || l.focus() : a && e.shiftKey ? ((0, K.nH)({
+            "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), u && h.length > 0 ? null == l || l.focus() : a && e.shiftKey ? ((0, X.nH)({
               guildId: t.guild_id,
               channelId: t.id
             }), v && !_ && j.getState().setGuidelinesOpen(true), j.getState().setFormOpenFromUserAction(), h.trim().length > 0 && (j.getState().setBodyFocused(true), null == l || l.focus())) : u || !(h.length > 0) || null != d || s || W.Z.updateForumSearchQuery(t.id, h));
@@ -491,7 +491,7 @@ function eh(e) {
     }
   }, c.X), i = (0, Q.AF)();
   return null != t.topic && 0 !== t.topic.length ? (0, r.jsx)(x.u, {
-    text: ea.intl.string(ea.t["4d4T4u"]),
+    text: ea.intl.string(ea.t["4d4T4l"]),
     children: (0, r.jsx)(p.hU, {
       size: "sm",
       variant: "secondary",
@@ -499,7 +499,7 @@ function eh(e) {
         i.getState().setGuidelinesOpen(!n)
       },
       icon: p.snC,
-      "aria-label": ea.intl.string(ea.t["4d4T4u"])
+      "aria-label": ea.intl.string(ea.t["4d4T4l"])
     })
   }) : null
 }
@@ -561,7 +561,7 @@ let eg = Chunk647438.memo(function(e) {
         formOpen: a
       }
     }, c.X), j = (0, Q.AF)();
-    i.useEffect(() => () => (0, K.Vn)({
+    i.useEffect(() => () => (0, X.Vn)({
       guildId: t.guild_id,
       channelId: t.id
     }), [t.guild_id, t.id]);
@@ -595,7 +595,7 @@ let eg = Chunk647438.memo(function(e) {
       event: er.CkL.TEXTAREA_BLUR,
       handler: _
     });
-    let w = (0, G.Op)(m, {
+    let w = (0, V.Op)(m, {
       content: f.textValue
     });
     return (0, r.jsx)("div", {
@@ -611,7 +611,7 @@ let eg = Chunk647438.memo(function(e) {
             type: ec,
             setEditorRef: d,
             channel: t,
-            placeholder: ea.intl.string(ea.t["8IPnv7"]),
+            placeholder: ea.intl.string(ea.t["8IPnv1"]),
             textValue: f.textValue,
             richValue: f.richValue,
             focused: x,
@@ -621,7 +621,7 @@ let eg = Chunk647438.memo(function(e) {
             }),
             onChange: y,
             onSubmit: T,
-            promptToUpload: V.d,
+            promptToUpload: G.d,
             disabled: a,
             onKeyDown: e => {
               ("ArrowUp" === e.key || "ArrowDown" === e.key) && e.stopPropagation(), b && "Escape" === e.key && !j.getState().submitting && (null == s || s.blur(), j.getState().setFormOpen(false), j.getState().setTitleFocused(false), j.getState().setBodyFocused(false), j.getState().setPreviewing(false))
@@ -641,7 +641,7 @@ function ex() {
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "interactive-normal",
-      children: Chunk388032.intl.string(Chunk388032.t["WE/cYm"])
+      children: Chunk388032.intl.string(Chunk388032.t["WE/cYo"])
     })
   })
 }
@@ -690,7 +690,7 @@ function ej() {
     }
   }, Chunk574583.X), t = (0, Chunk470623.AF)(), n = Chunk647438.useCallback(() => {
     exports.getState().setPreviewing(!module), (0, Chunk228392.nE)()
-  }, [module, exports]), a = module ? Chunk388032.intl.string(Chunk388032.t.ojM1xM) : Chunk388032.intl.string(Chunk388032.t.SKNnqq);
+  }, [module, exports]), a = module ? Chunk388032.intl.string(Chunk388032.t.ojM1xJ) : Chunk388032.intl.string(Chunk388032.t.SKNnqq);
   return (0, Chunk951288.jsx)(Chunk28664.u, {
     text: Chunk120356,
     children: (0, Chunk951288.jsx)(Chunk481060.hU, {
@@ -765,7 +765,7 @@ let ev = Chunk647438.memo(function(e) {
       variant: "text-sm/medium",
       color: "text-feedback-critical",
       className: el.requiredError,
-      children: ea.intl.string(ea.t.xPfNQk)
+      children: ea.intl.string(ea.t.xPfNQi)
     })]
   })
 });
@@ -799,7 +799,7 @@ function e_(e) {
     loading: s,
     disabled: a && !m || i || !n,
     icon: p.kBi,
-    text: d ? ea.intl.string(ea.t.pIuQIy) : ea.intl.string(ea.t.TyAuoa)
+    text: d ? ea.intl.string(ea.t.pIuQI6) : ea.intl.string(ea.t.TyAuoT)
   })
 }
 
@@ -835,7 +835,7 @@ function ey(e) {
   }), {
     containerRef: g,
     containerWidth: f
-  } = (0, et.Z)(), x = i.useRef(null), b = i.useRef(null), [j, v] = i.useState(true), _ = (0, X.Vm)(t), [C, y] = i.useState(0);
+  } = (0, et.Z)(), x = i.useRef(null), b = i.useRef(null), [j, v] = i.useState(true), _ = (0, K.Vm)(t), [C, y] = i.useState(0);
   return (i.useLayoutEffect(() => {
     var e;
     let t = x.current,
@@ -893,7 +893,7 @@ function ey(e) {
               ref: t
             }, i), {
               children: _.map(e => (0, r.jsx)($.Z, {
-                ariaLabel: ea.intl.formatToPlainString(ea.t.FSZVIS, {
+                ariaLabel: ea.intl.formatToPlainString(ea.t.FSZVIR, {
                   tagName: e.name
                 }),
                 tag: e,
@@ -935,7 +935,7 @@ function ey(e) {
           variant: "secondary",
           icon: p.CJ0,
           iconPosition: "end",
-          text: ea.intl.string(ea.t.w6T0YW)
+          text: ea.intl.string(ea.t.w6T0Yc)
         }))
       })
     }), (0, r.jsx)("div", {
@@ -945,7 +945,7 @@ function ey(e) {
         variant: "secondary",
         icon: p.CJ0,
         iconPosition: "end",
-        text: ea.intl.string(ea.t.w6T0YW)
+        text: ea.intl.string(ea.t.w6T0Yc)
       })
     })]
   })

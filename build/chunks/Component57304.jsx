@@ -82,10 +82,10 @@ let b = function(e) {
       return (0, r.jsx)(h.JO, m(g({}, e), {
         ref: O,
         onClick: x,
-        tooltip: i ? null : f.intl.string(f.t["mp1N//"]),
+        tooltip: i ? null : f.intl.string(f.t["mp1N/2"]),
         icon: a.qQX,
         iconSize: 20,
-        "aria-label": f.intl.string(f.t["mp1N//"]),
+        "aria-label": f.intl.string(f.t["mp1N/2"]),
         disabled: n,
         showBadge: _,
         selected: i

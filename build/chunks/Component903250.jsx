@@ -41,7 +41,7 @@ let P = (e, t) => {
       videoRef: D
     } = e, {
       analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), x = (0, g._O)(), M = (0, m.Nx)(), j = (0, s.e7)([h.Z], () => h.Z.affinities), k = (0, E.Z)(), U = null != k, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = j.length > 0, Z = S.intl.string(S.t.YCZldH), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), x = (0, g._O)(), M = (0, m.Nx)(), j = (0, s.e7)([h.Z], () => h.Z.affinities), k = (0, E.Z)(), U = null != k, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = j.length > 0, Z = S.intl.string(S.t.YCZldK), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: L,
       children: (0, r.jsxs)("div", {

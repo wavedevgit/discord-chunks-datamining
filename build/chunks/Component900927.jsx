@@ -33,7 +33,7 @@ function g(e) {
     children: [(0, r.jsxs)("div", {
       className: f.memberSince,
       children: [(0, r.jsx)(l.u, {
-        text: p.intl.string(p.t.uvGmCw),
+        text: p.intl.string(p.t.uvGmCx),
         delay: m,
         children: (0, r.jsx)(a.gw7, {
           size: "custom",

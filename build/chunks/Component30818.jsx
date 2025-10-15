@@ -15,9 +15,9 @@ function a(e) {
     canManageGuild: a
   } = e;
   return (0, r.jsx)(i.z, {
-    label: l.intl.string(l.t["23TVho"]),
-    description: l.intl.string(l.t.U4LwWF),
-    helperText: l.intl.string(l.t.xdY0pK),
+    label: l.intl.string(l.t["23TVhl"]),
+    description: l.intl.string(l.t.U4LwWC),
+    helperText: l.intl.string(l.t.xdY0pC),
     guildId: t,
     defaultSettings: n,
     canManageGuild: a

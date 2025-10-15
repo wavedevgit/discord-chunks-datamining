@@ -32,7 +32,7 @@ function g(e) {
     })]
   });
   n.forEach((e, r) => {
-    e.alt = p.intl.formatToPlainString(p.t.sSEhHR, {
+    e.alt = p.intl.formatToPlainString(p.t.sSEhHb, {
       index: r + 1,
       totalImages: n.length,
       name: t.name

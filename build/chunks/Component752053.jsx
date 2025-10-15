@@ -27,7 +27,7 @@ let p = e => {
   } = e, p = (0, s.ZP)(), h = (0, i.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
-  }), m = 1 === n ? u.giftModalContainer : u.shopPageContainer, g = 1 === n ? c.intl.string(c.t["+2QBZW"]) : c.intl.string(c.t.LuhKs7);
+  }), m = 1 === n ? u.giftModalContainer : u.shopPageContainer, g = 1 === n ? c.intl.string(c.t["+2QBZX"]) : c.intl.string(c.t.LuhKs2);
   return (0, r.jsxs)("div", {
     className: m,
     children: [(0, r.jsx)("img", {
@@ -37,7 +37,7 @@ let p = e => {
     }), (0, r.jsx)(o.Heading, {
       className: u.heading1,
       variant: "heading-xl/semibold",
-      children: c.intl.string(c.t["i5SQ7+"])
+      children: c.intl.string(c.t.i5SQ74)
     }), (0, r.jsx)(o.Text, {
       className: u.description,
       variant: "text-md/normal",
@@ -50,7 +50,7 @@ let p = e => {
       className: u.reload,
       children: (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: c.intl.string(c.t["+hivLS"]),
+        text: c.intl.string(c.t["+hivLW"]),
         onClick: t
       })
     })]

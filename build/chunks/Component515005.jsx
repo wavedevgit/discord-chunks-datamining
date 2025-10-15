@@ -180,7 +180,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                 }), (0, r.jsx)(c.Text, {
                   color: "interactive-active",
                   variant: "text-xs/normal",
-                  children: O.intl.string(O.t["+nEuqq"])
+                  children: O.intl.string(O.t["+nEuqr"])
                 })]
               })
             }), e.guild_id);

@@ -58,7 +58,7 @@ function h(e) {
     return n => (0, r.jsx)(e, p({
       filters: l,
       maxFileSizeBytes: u.B,
-      imageSpecifications: t === d.pC.BANNER ? f.intl.string(f.t.IhzZlp) : true,
+      imageSpecifications: t === d.pC.BANNER ? f.intl.string(f.t.IhzZlo) : true,
       onComplete: e => {
         let {
           assetOrigin: n,

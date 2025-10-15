@@ -21,7 +21,7 @@ let u = e => {
       className: c.errorBlock,
       children: (0, r.jsx)(a.M14, {
         type: "critical",
-        children: l.intl.string(l.t["4vnhKS"])
+        children: l.intl.string(l.t["4vnhKV"])
       })
     }) : null, (0, r.jsx)(o.Z, {
       onCardInfoChange: n,

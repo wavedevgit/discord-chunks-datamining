@@ -85,7 +85,7 @@ function x(e) {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
-        children: R.intl.string(R.t.mn4eXF)
+        children: R.intl.string(R.t.mn4eXC)
       }), (0, r.jsxs)("div", {
         className: P.stackTraceCode,
         children: [(0, r.jsx)(f.Text, {
@@ -104,14 +104,14 @@ function x(e) {
         })]
       })]
     }) : null,
-    k = g ? null : R.intl.string(R.t.oEJEFh),
+    k = g ? null : R.intl.string(R.t.oEJEFq),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
-    title: R.intl.string(R.t.U38qZm),
+    title: R.intl.string(R.t.U38qZj),
     body: j,
     hint: U ? k : true,
-    confirmText: R.intl.string(R.t.a3HlgI),
-    cancelText: null != M ? R.intl.string(R.t.qIYnPj) : true,
+    confirmText: R.intl.string(R.t.a3HlgJ),
+    cancelText: null != M ? R.intl.string(R.t.qIYnPo) : true,
     icon: (0, r.jsx)(b.Z, {
       width: 40,
       height: 40,

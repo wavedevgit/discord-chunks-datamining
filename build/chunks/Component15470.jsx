@@ -138,7 +138,7 @@ class j extends Chunk647438.PureComponent {
         className: Chunk395155.toggleCollapseButton,
         onClick: this.handleToggleCollapse,
         color: Chunk755721.zx.Colors.PRIMARY,
-        children: Chunk159635 ? Chunk388032.intl.string(Chunk388032.t.DxcOXF) : Chunk388032.intl.string(Chunk388032.t.rD6EaG)
+        children: Chunk159635 ? Chunk388032.intl.string(Chunk388032.t.DxcOXA) : Chunk388032.intl.string(Chunk388032.t.rD6EaA)
       }) : null]
     })
   }

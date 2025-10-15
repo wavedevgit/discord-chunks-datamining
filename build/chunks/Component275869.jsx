@@ -53,7 +53,7 @@ function u(e) {
     sku_id: u.id,
     sku_name: u.name,
     guild_id: u.guild_id,
-    header: a.intl.format(a.t.avKMZm, {
+    header: a.intl.format(a.t.avKMZo, {
       listingName: u.name
     }),
     transitionState: s,
@@ -61,7 +61,7 @@ function u(e) {
   }, b), r = r = {
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: a.intl.format(a.t.jkvpmp, {
+      children: a.intl.format(a.t.jkvpmk, {
         listingName: u.name,
         monetizationTermsUrl: l.Z.getArticleURL(c.BhN.CREATOR_TERMS),
         communityGuidelinesUrl: c.EYA.GUIDELINES

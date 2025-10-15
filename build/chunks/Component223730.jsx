@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk88658 = require("./88658.js"),
   Chunk782896 = require("./782896.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk933554 = require("./933554.js"),
+  Chunk951917 = require("./951917.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk95049 = require("./95049.js");
 let m = () => {
@@ -51,7 +51,7 @@ function _(e) {
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      children: f.intl.string(n ? h.default["3GrhnJ"] : h.default["54ycKC"])
+      children: f.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
     }), (0, r.jsx)(d.c, {
       guildIds: p
     })]

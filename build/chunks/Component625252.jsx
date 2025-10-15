@@ -81,16 +81,16 @@ function I() {
           }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/bold",
             color: "always-white",
-            children: Chunk388032.intl.string(Chunk388032.t.z8YP2N)
+            children: Chunk388032.intl.string(Chunk388032.t.z8YP2A)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-secondary",
-          children: Chunk388032.intl.string(y ? Chunk388032.t["HdKh6+"] : Chunk388032.t.IqmRZ2)
+          children: Chunk388032.intl.string(y ? Chunk388032.t.HdKh65 : Chunk388032.t.IqmRZ9)
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: module ? "primary" : "overlay-primary",
-        text: Chunk388032.intl.string(Chunk388032.t.GURBQk),
+        text: Chunk388032.intl.string(Chunk388032.t.GURBQl),
         onClick: require
       })]
     })

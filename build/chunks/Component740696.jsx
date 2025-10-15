@@ -22,25 +22,25 @@ function f(t) {
   let {
     guildId: e,
     shouldUpsellCreation: f,
-    transitionState: j,
-    onClose: v
-  } = t, b = (0, s.e7)([l.Z], () => l.Z.getGuild(e), [e]), y = (0, s.e7)([c.Z], () => c.Z.can(u.Plq.MANAGE_CHANNELS, b)), P = [{
+    transitionState: v,
+    onClose: j
+  } = t, b = (0, s.e7)([l.Z], () => l.Z.getGuild(e), [e]), y = (0, s.e7)([c.Z], () => c.Z.can(u.Plq.MANAGE_CHANNELS, b)), N = [{
     id: 0,
-    name: x.intl.string(x.t.HTA519)
+    name: x.intl.string(x.t.HTA517)
   }, {
     id: 1,
-    name: x.intl.string(x.t.IHjjY2)
+    name: x.intl.string(x.t["IHjjY/"])
   }, {
     id: 2,
-    name: x.intl.string(x.t.x3drh4)
-  }], [N, S] = r.useState(0), O = [{
+    name: x.intl.string(x.t.x3drh1)
+  }], [P, S] = r.useState(0), O = [{
     variant: f ? "secondary" : "primary",
-    text: f ? x.intl.string(x.t.TulDPj) : x.intl.string(x.t["NX+WJC"]),
-    onClick: () => v(p.L.SECONDARY)
+    text: f ? x.intl.string(x.t.TulDPl) : x.intl.string(x.t["NX+WJN"]),
+    onClick: () => j(p.L.SECONDARY)
   }];
   return f && O.push({
     variant: "primary",
-    text: x.intl.string(x.t["1X8SKy"]),
+    text: x.intl.string(x.t["1X8SK/"]),
     onClick: () => {
       (0, o.ZDy)(async () => {
         let {
@@ -68,7 +68,7 @@ function f(t) {
           }({}, n), i = i = {
             channelType: u.d4z.GUILD_FORUM,
             guildId: e,
-            prefillChannelName: f ? x.intl.string(x.t["5z1Xam"]) : true
+            prefillChannelName: f ? x.intl.string(x.t["5z1Xat"]) : true
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
             var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
@@ -80,36 +80,36 @@ function f(t) {
             Object.defineProperty(r, t, Object.getOwnPropertyDescriptor(i, t))
           }), r))
         }
-      }), v(p.L.PRIMARY)
+      }), j(p.L.PRIMARY)
     }
   }), (0, a.jsxs)(i.IX, {
-    transitionState: j,
+    transitionState: v,
     size: "xl",
-    onClose: async () => await v(),
+    onClose: async () => await j(),
     children: [(0, a.jsx)(i.xBx, {
       title: x.intl.string(x.t["6S6WCQ"]),
-      subtitle: x.intl.string(x.t.I2BA8P)
+      subtitle: x.intl.string(x.t.I2BA8K)
     }), (0, a.jsxs)(i.fef, {
       children: [(0, a.jsx)(o.njP, {
-        selectedItem: N,
+        selectedItem: P,
         type: "top",
         onItemSelect: t => {
-          S(t), (0, g.ws)({
+          S(t), (0, d.ws)({
             forumDemoId: t
           })
         },
         className: h.tags,
-        children: P.map((t, e) => (0, a.jsx)(o.njP.Item, {
+        children: N.map((t, e) => (0, a.jsx)(o.njP.Item, {
           id: e,
           children: t.name
         }, e))
-      }), (0, a.jsx)(d.Z, {
-        id: N
+      }), (0, a.jsx)(g.Z, {
+        id: P
       })]
     }), y && (0, a.jsx)(i.Go$, {
       leading: (0, a.jsx)(o.Button, {
         variant: "secondary",
-        text: x.intl.string(x.t.hvVgAQ),
+        text: x.intl.string(x.t.hvVgAZ),
         icon: o.Gr1,
         iconPosition: "end",
         role: "link",

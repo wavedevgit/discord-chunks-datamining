@@ -30,10 +30,10 @@ function o(e) {
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-md/semibold",
         className: a.headerText,
-        children: l.intl.string(l.t.LIIyeH)
+        children: l.intl.string(l.t.LIIyeE)
       }), (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
-        children: l.intl.format(l.t["4/6vQk"], {
+        children: l.intl.format(l.t["4/6vQh"], {
           guildName: n
         })
       }), (0, i.jsx)("div", {
@@ -41,7 +41,7 @@ function o(e) {
         className: a.button,
         children: (0, i.jsx)(r.Button, {
           variant: "primary",
-          text: l.intl.string(l.t.BddRzc),
+          text: l.intl.string(l.t.BddRzS),
           onClick: t
         })
       })]

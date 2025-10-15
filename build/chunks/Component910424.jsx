@@ -48,7 +48,7 @@ function E(e) {
   };
   if (null == n) return null;
   let N = (0, d.P9)(T);
-  return t ? N = g.intl.string(g.t.XvBdeX) : A && (N = g.intl.string(g.t.JH1SJy)), (0, r.jsxs)(r.Fragment, {
+  return t ? N = g.intl.string(g.t.XvBdeT) : A && (N = g.intl.string(g.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Button, {
       size: "sm",
       variant: A ? "secondary" : "active",
@@ -58,12 +58,12 @@ function E(e) {
       onClick: () => C(false),
       fullWidth: true
     }), !O || A || b ? null : (0, r.jsx)(a.u, {
-      text: g.intl.string(g.t.wCrzur),
+      text: g.intl.string(g.t.wCrzut),
       children: (0, r.jsx)(o.hU, {
         variant: "secondary",
         size: "sm",
         icon: o.OgY,
-        "aria-label": g.intl.string(g.t.wCrzur),
+        "aria-label": g.intl.string(g.t.wCrzut),
         onClick: () => {
           C(true)
         }

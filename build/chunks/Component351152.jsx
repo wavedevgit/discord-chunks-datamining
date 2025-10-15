@@ -55,8 +55,8 @@ function b(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
-  return (0, r.jsx)(g.Z, {
-    title: x.intl.string(x.t.JsqeEh),
+  return (0, r.jsx)(x.Z, {
+    title: g.intl.string(g.t.JsqeEk),
     scrollerClassName: l()(j.guildScroller, v.marginBottom),
     children: o().flatMap(n, e => {
       let {

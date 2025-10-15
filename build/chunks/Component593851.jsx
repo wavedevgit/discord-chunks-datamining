@@ -1,7 +1,7 @@
 /** Chunk was on 84212 **/
 /** chunk id: 593851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ function u(e) {
   return e
 }
 
-function b(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,27 +43,27 @@ function b(e, t) {
   }), e
 }
 
-function p(e) {
+function b(e) {
   let {
     initialOptions: t,
     onChangeMaxAge: n,
-    onChangeMaxUses: p
+    onChangeMaxUses: b
   } = e, [O, f] = a.useState(t), g = a.useCallback(e => {
-    f(t => b(u({}, t), {
+    f(t => p(u({}, t), {
       max_age: e
     })), n(e)
   }, [f, n]), y = a.useCallback(e => {
-    f(t => b(u({}, t), {
+    f(t => p(u({}, t), {
       max_uses: e
-    })), p(e)
-  }, [f, p]);
+    })), b(e)
+  }, [f, b]);
   return (0, r.jsxs)(c.v2r, {
     navId: "instant_invite_options",
     onSelect: s.dG4,
     onClose: i.Zy,
-    "aria-label": l.intl.string(l.t.b85Vws),
+    "aria-label": l.intl.string(l.t.b85Vwn),
     children: [(0, r.jsx)(c.kSQ, {
-      label: l.intl.string(l.t.Sdarfn),
+      label: l.intl.string(l.t.Sdarfp),
       children: o.H.map(e => {
         let {
           value: t,
@@ -78,7 +78,7 @@ function p(e) {
         }, "max-age-".concat(t))
       })
     }), (0, r.jsx)(c.kSQ, {
-      label: l.intl.string(l.t["/2yRSE"]),
+      label: l.intl.string(l.t["/2yRSB"]),
       children: o.p.map(e => {
         let {
           value: t,

@@ -20,7 +20,7 @@ let d = Chunk647438.memo(function(e) {
   } = e;
   return (0, n.jsx)(a.v2r, {
     navId: "widget-game-tags",
-    "aria-label": s.intl.string(s.t.r6EJOj),
+    "aria-label": s.intl.string(s.t.r6EJOu),
     onClose: o,
     onSelect: () => {},
     className: u.gameTagsMenu,
@@ -30,7 +30,7 @@ let d = Chunk647438.memo(function(e) {
         return o.type === c.kd.RADIO && l.push((0, n.jsx)(a.k5B, {
           id: "".concat(e, "-none"),
           group: e,
-          label: s.intl.string(s.t.PoWNfX),
+          label: s.intl.string(s.t.PoWNfe),
           checked: !o.tags.some(e => t.includes(e)),
           action: () => i(o.tags)
         }, "none")), o.tags.forEach(i => {
@@ -143,11 +143,11 @@ function g(e) {
           return e
         }({}, e), r = r = {
           className: u.addButton,
-          "aria-label": s.intl.string(s.t.r6EJOj),
+          "aria-label": s.intl.string(s.t.r6EJOu),
           children: (0, n.jsx)(a.Text, {
             variant: "text-xxs/medium",
             color: "none",
-            children: s.intl.string(s.t.fZSej4)
+            children: s.intl.string(s.t.fZSejy)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);

@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk951948 = require("./951948.js");
 
 function w(e, t) {
-  return N.intl.formatToPlainString(N.t.h2yWWV, {
+  return N.intl.formatToPlainString(N.t.h2yWWX, {
     username: t.username,
     activity: e
   })
@@ -43,7 +43,7 @@ let D = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, a = N.t["6iNxrq"], o = m.ZP.getName(t.guild_id, t.id, n);
+  } = e, a = N.t["6iNxrl"], o = m.ZP.getName(t.guild_id, t.id, n);
   return N.intl.formatToMarkdownString(a, {
     artist: r,
     userName: o,
@@ -175,7 +175,7 @@ function x(e) {
         variant: "primary",
         size: "md",
         fullWidth: true,
-        text: N.intl.string(N.t.eU3inJ),
+        text: N.intl.string(N.t.eU3inB),
         icon: l.iOO,
         onClick: e
       }, "listen-along"))
@@ -190,7 +190,7 @@ function x(e) {
       "aria-label": N.intl.string(N.t.rRffNz),
       Icon: h.Z
     }) : null,
-    userDescription: (0, E.kr)(x) ? N.t.Tzx5Dw : N.t.CcVI1d,
+    userDescription: (0, E.kr)(x) ? N.t.Tzx5D2 : N.t.CcVI1T,
     title: F,
     onClickTitle: m,
     subtitle: q,

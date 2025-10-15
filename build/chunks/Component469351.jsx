@@ -62,10 +62,10 @@ function w(e) {
   let G = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: T.intl.string(T.t.X6h2g4)
+        children: T.intl.string(T.t.X6h2gz)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: T.intl.format(T.t.xiYuDg, {
+        children: T.intl.format(T.t.xiYuDt, {
           monetizationPolicyLink: C.Z.getArticleURL(I.BhN.CREATOR_POLICY),
           serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
         })
@@ -75,27 +75,27 @@ function w(e) {
       type: "top",
       look: "brand",
       className: P.tabBar,
-      "aria-label": T.intl.string(T.t.X6h2g4),
+      "aria-label": T.intl.string(T.t.X6h2gz),
       selectedItem: L,
       onItemSelect: k,
       children: [(0, r.jsx)(u.Z, {
         id: "basic_info",
-        disabledTooltip: T.intl.string(T.t.NVDuUV),
+        disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
-        children: T.intl.string(T.t.w27QAQ)
+        children: T.intl.string(T.t.w27QAR)
       }), (0, r.jsx)(u.Z, {
         id: "manage_listings",
-        disabledTooltip: T.intl.string(T.t.NVDuUV),
+        disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
-        children: T.intl.string(T.t.wlZ1mp)
+        children: T.intl.string(T.t.wlZ1mh)
       }), D ? (0, r.jsx)(o.njP.Item, {
         id: "payment",
         className: P.tabBarItem,
-        children: T.intl.string(T.t.YBrFe3)
+        children: T.intl.string(T.t.YBrFe6)
       }) : null, n ? (0, r.jsx)("div", {
         className: P.previewButton,
         children: (0, r.jsx)(s.zxk, {
-          text: T.intl.string(T.t.vM81yc),
+          text: T.intl.string(T.t.vM81yY),
           variant: "secondary",
           onClick: M,
           size: "sm"

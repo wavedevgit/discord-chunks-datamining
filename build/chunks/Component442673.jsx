@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk985002 = require("./985002.js"),
   Chunk880257 = require("./880257.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk601582 = require("./601582.js");
 let b = e => {
@@ -37,13 +37,13 @@ let b = e => {
       },
       children: [m && (0, n.jsx)(o.M14, {
         type: "critical",
-        children: d.intl.string(l.default.krIDd3)
+        children: d.intl.string(l.default.krIDdy)
       }), (0, n.jsxs)(o.hzk, {
         "data-migration-pending": true,
         children: [(0, n.jsx)(s.Z.Header, {
           currentUser: t,
           otherUser: r,
-          header: d.intl.formatToPlainString(l.default.NMSTb2, {
+          header: d.intl.formatToPlainString(l.default["NMSTb/"], {
             isAdult: String(p)
           }),
           icon: (0, n.jsx)(o.Dio, {
@@ -52,7 +52,7 @@ let b = e => {
             className: u.closeIcon
           })
         }), (0, n.jsx)(s.Z.Notice, {
-          notice: p ? d.intl.string(l.default.EvMGLS) : d.intl.string(l.default.f1SUeX)
+          notice: p ? d.intl.string(l.default.EvMGLT) : d.intl.string(l.default.f1SUeW)
         }), (0, n.jsx)("div", {
           className: u.acknowledgementCheckbox,
           children: (0, n.jsx)(o.Checkbox, {
@@ -60,7 +60,7 @@ let b = e => {
             onChange: e => {
               g(e), x(false)
             },
-            label: p ? d.intl.string(l.default["/MYCeX"]) : d.intl.string(l.default.VJaHUV)
+            label: p ? d.intl.string(l.default["/MYCee"]) : d.intl.string(l.default.VJaHUb)
           })
         })]
       }), (0, n.jsx)(o.mzw, {
@@ -71,14 +71,14 @@ let b = e => {
             children: [(0, n.jsx)(o.Button, {
               variant: "secondary",
               size: "sm",
-              text: d.intl.string(d.t["ETE/oK"]),
+              text: d.intl.string(d.t["ETE/oC"]),
               type: "button",
               onClick: f,
               disabled: v
             }), (0, n.jsx)(o.Button, {
               variant: "critical-primary",
               size: "sm",
-              text: d.intl.string(l.default["c5L+sr"]),
+              text: d.intl.string(l.default["c5L+sl"]),
               type: "submit",
               disabled: !j || v,
               loading: v

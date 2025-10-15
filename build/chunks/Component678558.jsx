@@ -125,7 +125,7 @@ let R = e => {
       }), B(false)
     }, K = m.Z.getPremiumTypeSubscription(), z = (0, r.jsxs)("div", {
       className: v.button,
-      children: [x, null != I ? I : O.intl.string(O.t.gKmQ1N)]
+      children: [x, null != I ? I : O.intl.string(O.t.gKmQ1G)]
     }), q = false;
   return ((q = null !== K && !(V.length > 0) && (null == K ? true : K.isPausedOrPausePending) && Z === y.a$.NONE) && (z = (0, r.jsxs)("div", {
     className: v.button,

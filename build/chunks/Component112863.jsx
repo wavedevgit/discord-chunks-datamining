@@ -28,15 +28,15 @@ function d() {
       className: Chunk776575.info,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/bold",
-        children: Chunk388032.intl.string(Chunk388032.t.ZHNSYW)
+        children: Chunk388032.intl.string(Chunk388032.t.ZHNSYf)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.kCj5pq)
+        children: Chunk388032.intl.string(Chunk388032.t.kCj5ps)
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.JFlifn),
+      text: Chunk388032.intl.string(Chunk388032.t.JFlifp),
       onClick: module
     })]
   })

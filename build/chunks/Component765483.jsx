@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk501517 = require("./501517.js"),
   Chunk982168 = require("./982168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764295 = require("./764295.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk474440 = require("./474440.js");
 
 function f(e) {
@@ -22,7 +22,7 @@ function f(e) {
     } = (0, i.e7)([o.Z], () => o.Z.getMessage(e.id), [e.id]);
   return !t || n || null == f ? null : (0, r.jsx)(l.sNh, {
     id: "resolve-report",
-    label: u.intl.string(s.default["8yIKen"]),
+    label: u.intl.string(s.default["8yIKem"]),
     action: () => a.Z.resolveFlag(e.id),
     className: d.menuItem
   })

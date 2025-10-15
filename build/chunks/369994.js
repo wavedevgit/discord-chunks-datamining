@@ -3,8 +3,8 @@
 require.d(exports, {
   C4: () => _,
   Fi: () => g,
-  KK: () => b,
-  f6: () => p,
+  KK: () => p,
+  f6: () => b,
   n: () => f
 }), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
@@ -17,7 +17,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk173530 = require("./173530.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
+function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
   if (0 !== t.length) {
     var n, r;
@@ -53,7 +53,7 @@ function b(e) {
     }), n))
   }
 }
-async function p(e, t) {
+async function b(e, t) {
   let n = new Set(e.features);
   n.has(d.oNc.COMMUNITY) ? t ? n.delete(d.oNc.RAID_ALERTS_DISABLED) : n.add(d.oNc.RAID_ALERTS_DISABLED) : t ? n.add(d.oNc.NON_COMMUNITY_RAID_ALERTS) : n.delete(d.oNc.NON_COMMUNITY_RAID_ALERTS), await o.Z.saveGuild(e.id, {
     features: n

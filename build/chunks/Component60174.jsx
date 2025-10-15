@@ -83,9 +83,9 @@ class D extends Chunk647438.Component {
     if (Chunk507274 || (0, Chunk630388.yE)(exports.flags, Chunk981631.iLy.EPHEMERAL)) return null;
     let h = Chunk594174.default.getCurrentUser(),
       m = (0, Chunk74538.I5)(Chunk222677),
-      g = Chunk659215 ? Chunk388032.intl.string(Chunk388032.t.Kfcszs) : Chunk388032.intl.string(Chunk388032.t.lfIHs7);
+      g = Chunk659215 ? Chunk388032.intl.string(Chunk388032.t.Kfcszg) : Chunk388032.intl.string(Chunk388032.t.lfIHs4);
     !Chunk995774 && Chunk659215 && (g = (0, Chunk951288.jsx)(Chunk466794.X, {
-      tooltipText: Chunk388032.intl.string(Chunk388032.t.Kfcszs)
+      tooltipText: Chunk388032.intl.string(Chunk388032.t.Kfcszg)
     }));
     let T = Chunk120356 ? Chunk893973 : Chunk127947,
       N = {
@@ -109,7 +109,7 @@ class D extends Chunk647438.Component {
         return (0, r.jsx)(u.jSM, {
           text: g,
           color: u.r6K.PRIMARY,
-          "aria-label": p ? S.intl.string(S.t.Kfcszs) : S.intl.string(S.t.lfIHs7),
+          "aria-label": p ? S.intl.string(S.t.Kfcszg) : S.intl.string(S.t.lfIHs4),
           tooltipClassName: T.__invalid_addReactionTooltip,
           children: (0, r.jsxs)(u.P3F, w(R({}, e), {
             innerRef: this.ref,
@@ -194,7 +194,7 @@ class D extends Chunk647438.Component {
             inDialog: t
           } = e;
           return t ? (0, r.jsx)(u.VqE, {
-            "aria-label": S.intl.string(S.t["7Xqzdn"]),
+            "aria-label": S.intl.string(S.t["7Xqzdj"]),
             children: s
           }) : s
         }

@@ -39,13 +39,13 @@ function p(e) {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "text-brand",
-        children: g.intl.format(g.t.kvroKC, {
+        children: g.intl.format(g.t.kvroKO, {
           count: _
         })
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "text-muted",
-        children: g.intl.format(g.t["0MjxJy"], {
+        children: g.intl.format(g.t["0MjxJ5"], {
           count: v
         })
       })]
@@ -58,7 +58,7 @@ function p(e) {
       children: [C ? E : N, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: g.intl.format(g.t.k0COZW, {
+        children: g.intl.format(g.t.k0COZY, {
           count: u.md
         })
       })]
@@ -67,7 +67,7 @@ function p(e) {
       children: [O ? N : E, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: g.intl.format(g.t.PwXgS0, {
+        children: g.intl.format(g.t.PwXgSy, {
           count: u.X
         })
       })]
@@ -82,7 +82,7 @@ function p(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: g.intl.string(g.t.AyvkOD)
+          children: g.intl.string(g.t.AyvkOK)
         })]
       }), (0, r.jsxs)("div", {
         className: m.requiredItem,
@@ -94,7 +94,7 @@ function p(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: g.intl.format(g.t["8Geut7"], {
+          children: g.intl.format(g.t["8Geut3"], {
             count: y,
             prejoinHook: e => (0, r.jsx)(a.Anchor, {
               onClick: n,

@@ -91,9 +91,9 @@ function k(e) {
     l = n.features.has(t);
   if (null == r) return;
   let a = (0, E.nW)(r);
-  return l ? P.intl.formatToPlainString(P.t.u3L3TU, {
+  return l ? R.intl.formatToPlainString(R.t.u3L3TX, {
     levelName: a
-  }) : P.intl.formatToPlainString(P.t["r/v25e"], {
+  }) : R.intl.formatToPlainString(R.t["r/v25U"], {
     levelName: a
   })
 }
@@ -135,7 +135,7 @@ function M(e) {
         }),
         children: [s && (0, r.jsx)(o.u, {
           asContainer: true,
-          text: P.intl.string(P.t["5AFxuL"]),
+          text: R.intl.string(R.t["5AFxuK"]),
           children: (0, r.jsx)(c.SrA, {
             size: "xs",
             color: "currentColor",
@@ -204,7 +204,7 @@ function U(e) {
     shouldAnimate: a,
     onMouseEnter: i,
     onMouseLeave: s
-  } = (0, A.Z)(), o = (0, N.Kq)(t), u = (0, N.C6)(t, {
+  } = (0, y.Z)(), o = (0, N.Kq)(t), u = (0, N.C6)(t, {
     isGIF: true
   }), d = k({
     guildFeature: u,
@@ -214,7 +214,7 @@ function U(e) {
     children: [(0, r.jsxs)(c.P3F, {
       className: _.option,
       onClick: l,
-      "aria-label": P.intl.string(P.t["xsC+//"]),
+      "aria-label": R.intl.string(R.t["xsC+/y"]),
       onMouseEnter: i,
       onMouseLeave: s,
       children: [(0, r.jsx)(I, {
@@ -224,7 +224,7 @@ function U(e) {
           size: "md",
           color: "currentColor"
         }),
-        label: P.intl.string(P.t["xsC+//"]),
+        label: R.intl.string(R.t["xsC+/y"]),
         guildFeature: u,
         guild: n,
         shouldShowPremiumIcon: o
@@ -243,18 +243,18 @@ function B(e) {
     uploadType: o,
     maxFileSizeBytes: f,
     showUpsellHeader: p,
-    filters: A,
+    filters: y,
     analyticsLocation: E,
     analyticsLocations: N = [],
     imageSpecifications: Z,
-    modalTitle: I = P.intl.string(P.t.DToW4e),
-    uploadOptionTitle: k = P.intl.string(P.t["MsUY/f"]),
+    modalTitle: I = R.intl.string(R.t.DToW4e),
+    uploadOptionTitle: k = R.intl.string(R.t["MsUY/S"]),
     allowRecentAvatarsSelection: D = true
-  } = e, M = (0, s.e7)([C.default], () => C.default.getCurrentUser()), B = (0, s.e7)([y.Z], () => y.Z.getGuildId()), H = (0, s.e7)([x.Z], () => x.Z.getGuild(B)), V = (0, c.vRw)(), z = o === w.pC.AVATAR || o === w.pC.BANNER, G = !O.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, W = (0, g.M)(!z), q = (0, h.T)({
+  } = e, M = (0, s.e7)([C.default], () => C.default.getCurrentUser()), B = (0, s.e7)([x.Z], () => x.Z.getGuildId()), H = (0, s.e7)([A.Z], () => A.Z.getGuild(B)), V = (0, c.vRw)(), z = o === w.pC.AVATAR || o === w.pC.BANNER, G = !O.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, q = (0, g.M)(!z), W = (0, h.T)({
     location: "NewSelectImageModal"
   }) && D, {
-    analyticsLocations: Y,
-    newestAnalyticsLocation: X
+    analyticsLocations: X,
+    newestAnalyticsLocation: Y
   } = (0, d.ZP)(N, u.Z.SELECT_IMAGE_MODAL), J = l.useCallback(e => {
     let {
       assetOrigin: t = b.q.NEW_ASSET,
@@ -271,7 +271,7 @@ function B(e) {
       isFromTenor: s
     })
   }, [a, i]), K = l.useCallback((e, t) => {
-    if (t.type === R.m.MP4) return J({
+    if (t.type === P.m.MP4) return J({
       imageUri: e,
       file: t
     });
@@ -290,9 +290,9 @@ function B(e) {
     }, {
       contextKey: V
     })
-  }, [null == E ? true : E.page, V, J, p, o]), $ = l.useCallback(() => {
+  }, [null == E ? true : E.page, V, J, p, o]), Q = l.useCallback(() => {
     (0, S.Z)(f)
-  }, [f]), Q = l.useCallback(() => {
+  }, [f]), $ = l.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -320,16 +320,16 @@ function B(e) {
   l.useEffect(() => {
     G && v.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: T.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location_stack: Y
+      location_stack: X
     }), v.default.track(T.rMx.OPEN_MODAL, {
       type: T.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: E,
-      location_stack: Y,
+      location_stack: X,
       upload_type: o
     })
-  }, [G, E, Y, o]);
-  let ee = p && W,
-    et = o === w.pC.AVATAR && q;
+  }, [G, E, X, o]);
+  let ee = p && q,
+    et = o === w.pC.AVATAR && W;
   return (0, r.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
@@ -351,7 +351,7 @@ function B(e) {
         className: _.imageSelectionSection,
         children: [(0, r.jsxs)("ul", {
           className: _.optionsList,
-          "aria-label": P.intl.string(P.t.iBnqtb),
+          "aria-label": R.intl.string(R.t.iBnqtQ),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
               label: k,
@@ -359,14 +359,14 @@ function B(e) {
               guild: H,
               handleOpenImageEditingModal: K,
               maxFileSizeBytes: f,
-              filters: A,
-              handleFileSizeError: $
+              filters: y,
+              handleFileSizeError: Q
             })
           }), (0, r.jsx)("li", {
             children: (0, r.jsx)(U, {
               uploadType: o,
               guild: H,
-              handleOpenGIFPickerModal: Q
+              handleOpenGIFPickerModal: $
             })
           })]
         }), null != Z ? (0, r.jsx)(c.Text, {
@@ -379,7 +379,7 @@ function B(e) {
         onComplete: J
       }), ee && (0, r.jsx)(m.Z, {
         uploadType: o,
-        analyticsSource: X,
+        analyticsSource: Y,
         showUpsell: true,
         position: "inline",
         showShadow: false,

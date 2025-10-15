@@ -22,11 +22,11 @@ function S(e) {
     messageId: t,
     transitionState: S,
     onClose: h
-  } = e, F = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [f, m] = (0, u.Z)(n), p = null == F ? true : F.guild_id;
+  } = e, C = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [F, f] = (0, u.Z)(n), m = null == C ? true : C.guild_id;
   return (0, s.jsx)(i.ConfirmModal, {
-    header: g.intl.string(g.t.aIz1oa),
-    confirmText: g.intl.string(g.t["cY+Ooa"]),
-    cancelText: g.intl.string(g.t["ETE/oK"]),
+    header: g.intl.string(g.t.aIz1oV),
+    confirmText: g.intl.string(g.t["cY+Oob"]),
+    cancelText: g.intl.string(g.t["ETE/oC"]),
     confirmButtonColor: o.zx.Colors.BRAND,
     onConfirm: () => a.Z.crosspostMessage(n, t),
     transitionState: S,
@@ -34,22 +34,22 @@ function S(e) {
     children: (0, s.jsx)(i.Text, {
       variant: "text-md/normal",
       className: _.spacing,
-      children: m ? (0, s.jsx)(i.$jN, {}) : null != f && null != f.guildsFollowing && f.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
+      children: f ? (0, s.jsx)(i.$jN, {}) : null != F && null != F.guildsFollowing && F.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsx)(i.Text, {
           className: _.spacing,
           variant: "text-sm/normal",
-          children: g.intl.format(g.t.GCGrND, {
-            numGuildsFollowing: f.guildsFollowing
+          children: g.intl.format(g.t.GCGrNP, {
+            numGuildsFollowing: F.guildsFollowing
           })
         }), (0, s.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: g.intl.format(g.t.IMhGZ2, {
+          children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
-              null != p && null != h && (h(), r.Z.open(p, d.pNK.ANALYTICS))
+              null != m && null != h && (h(), r.Z.open(m, d.pNK.ANALYTICS))
             }
           })
         })]
-      }) : g.intl.string(g.t["8FpqOj"])
+      }) : g.intl.string(g.t["8FpqOs"])
     })
   })
 }

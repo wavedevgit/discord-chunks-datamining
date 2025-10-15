@@ -108,7 +108,7 @@ function O(e) {
     }, [T]);
   if (!A || null == P) return null;
   let M = m({
-    text: null != (a = null == (t = P.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWV) : _.intl.string(_.t.PDTjLC),
+    text: null != (a = null == (t = P.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
     variant: null != (h = null == (n = P.action) ? true : n.variant) ? h : "primary",
     onClick: D
   }, P.action);
@@ -140,7 +140,7 @@ function O(e) {
           children: [(0, r.jsx)(s.xvT, {
             variant: "text-xs/normal",
             className: p.multistepIndicator,
-            children: _.intl.formatToPlainString(_.t.rO31eX, {
+            children: _.intl.formatToPlainString(_.t.rO31eY, {
               count: N + 1,
               totalSteps: y.length
             })

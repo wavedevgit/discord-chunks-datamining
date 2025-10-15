@@ -66,11 +66,11 @@ let b = 1e3,
       className: E.body,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/bold",
-        children: g.intl.string(g.t.C4HYf3)
+        children: g.intl.string(g.t.C4HYfy)
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         className: E.description,
-        children: g.intl.string(g.t.xfG7Ji)
+        children: g.intl.string(g.t.xfG7Jp)
       })]
     })
   },
@@ -86,7 +86,7 @@ let b = 1e3,
         "data-migration-pending": true,
         children: [(0, r.jsx)(c.y, {
           onClick: t,
-          children: g.intl.string(g.t["4Qvmmp"])
+          children: g.intl.string(g.t["4Qvmmj"])
         }), (0, r.jsx)(c.Z, {
           onClick: n
         })]

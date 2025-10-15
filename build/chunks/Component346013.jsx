@@ -149,7 +149,7 @@ function G(e) {
       onMouseLeave: ec,
       children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: x,
-        alt: D.intl.string(D.t.rIbh8P),
+        alt: D.intl.string(D.t.rIbh8H),
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
         }),
@@ -158,7 +158,7 @@ function G(e) {
       }) : (0, r.jsx)(h.Z, {
         src: !eg && em ? "".concat(eh, "?format=png") : eh,
         backgroundSrc: "".concat(eh, "?format=png"),
-        alt: D.intl.string(D.t.rIbh8P),
+        alt: D.intl.string(D.t.rIbh8H),
         aspectRatio: 16 / 9,
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
@@ -216,7 +216,7 @@ function G(e) {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,
-              "aria-label": D.intl.string(D.t.KXz3XF),
+              "aria-label": D.intl.string(D.t.KXz3XB),
               avatarDecoration: ed
             }))
           })
@@ -241,7 +241,7 @@ function G(e) {
             variant: "text-sm/medium",
             color: "text-muted",
             className: L.descriptionFooterAuthorContainer,
-            children: D.intl.format(D.t.voIDKS, {
+            children: D.intl.format(D.t.voIDKa, {
               authorName: V.authorName,
               authorNameHook: ep
             })

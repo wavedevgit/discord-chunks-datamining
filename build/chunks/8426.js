@@ -87,8 +87,8 @@ async function v(e, t, n, r) {
     var o;
     let e = i().flatMap(null != (o = t.body) ? o : {}, e => e);
     return s.Z.show({
-      title: p.intl.string(p.t["6nCZyM"]),
-      body: p.intl.format(p.t.dYCPDw, {
+      title: p.intl.string(p.t["6nCZyG"]),
+      body: p.intl.format(p.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     }), u.Z.addBreadcrumb({
@@ -145,8 +145,8 @@ async function N(e, t, n) {
     var r;
     let e = i().flatMap(null != (r = t.body) ? r : {}, e => e);
     s.Z.show({
-      title: p.intl.string(p.t["6nCZyM"]),
-      body: p.intl.format(p.t.dYCPDw, {
+      title: p.intl.string(p.t["6nCZyG"]),
+      body: p.intl.format(p.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     })
@@ -156,8 +156,8 @@ async function N(e, t, n) {
 function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return n || g.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (s.Z.show({
-    title: p.intl.string(p.t["6nCZyM"]),
-    body: p.intl.string(p.t.JuhUTU)
+    title: p.intl.string(p.t["6nCZyG"]),
+    body: p.intl.string(p.t.JuhUTS)
   }), u.Z.addBreadcrumb({
     message: "Error saving home settings"
   }), Promise.reject()) : S(e, t) : Promise.resolve()
@@ -167,8 +167,8 @@ function I(e, t) {
   var n, r;
   let i = o.Z.getSettings(e);
   return t && !(0, c.uo)(i) ? void s.Z.show({
-    title: p.intl.string(p.t["6nCZyM"]),
-    body: p.intl.string(p.t.JuhUTU)
+    title: p.intl.string(p.t["6nCZyG"]),
+    body: p.intl.string(p.t.JuhUTS)
   }) : (a.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_TOGGLE_ENABLED",
     guildId: e,
@@ -234,8 +234,8 @@ async function S(e, t) {
     a.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), s.Z.show({
-      title: p.intl.string(p.t["6nCZyM"]),
-      body: p.intl.format(p.t.dYCPDw, {
+      title: p.intl.string(p.t["6nCZyG"]),
+      body: p.intl.format(p.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     })

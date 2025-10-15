@@ -24,11 +24,11 @@ function _(n) {
   } = n, {
     slide: p,
     gotoNext: x,
-    gotoError: b,
-    handleWaitingForConnection: g,
+    gotoError: g,
+    handleWaitingForConnection: b,
     handleAuthToken: f,
     expectedCallbackState: v,
-    callbackData: j
+    callbackData: N
   } = (0, r.k)(_, C.ABu.CRUNCHYROLL);
   return (0, o.jsx)(i.Y0X, {
     className: h.modal,
@@ -48,9 +48,9 @@ function _(n) {
         id: u.O.PRE_CONNECT,
         children: (0, o.jsx)(c.Z, {
           isWaitingForConnection: false,
-          onWaitingForConnection: g,
+          onWaitingForConnection: b,
           onAuthToken: f,
-          onError: b,
+          onError: g,
           onClose: t
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -59,15 +59,15 @@ function _(n) {
           isWaitingForConnection: true,
           expectedCallbackState: v,
           onAuthToken: f,
-          onError: b,
+          onError: g,
           onClose: t
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.DISCORD_CONSENT,
         children: (0, o.jsx)(s.Z, {
-          authToken: j,
+          authToken: N,
           onContinue: x,
-          onError: b,
+          onError: g,
           onClose: t
         })
       }), (0, o.jsx)(i.Mi4, {

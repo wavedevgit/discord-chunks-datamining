@@ -71,7 +71,7 @@ function j() {
   return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "text-danger",
     variant: "text-md/normal",
-    children: Chunk388032.intl.string(Chunk388032.t["mrO/ZW"])
+    children: Chunk388032.intl.string(Chunk388032.t["mrO/ZQ"])
   })), (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: require,
     disabled: x,

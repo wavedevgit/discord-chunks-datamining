@@ -78,13 +78,13 @@ function E(e) {
     guildId: f,
     onRsvp: p
   } = e, g = m(e, ["event", "recurrenceId", "guildId", "onRsvp"]);
-  let [E, b] = i.useState(l.KX.SERIES), y = (0, l.X2)(t.id, null), O = (null == y ? true : y.response) === c.gv.INTERESTED ? c.gv.UNINTERESTED : c.gv.INTERESTED, v = O === c.gv.INTERESTED ? u.intl.string(u.t.WtOReX) : u.intl.string(u.t["8MPCVl"]), I = () => {
+  let [E, b] = i.useState(l.KX.SERIES), y = (0, l.X2)(t.id, null), O = (null == y ? true : y.response) === c.gv.INTERESTED ? c.gv.UNINTERESTED : c.gv.INTERESTED, v = O === c.gv.INTERESTED ? u.intl.string(u.t.WtORed) : u.intl.string(u.t["8MPCVr"]), I = () => {
     E === l.KX.SERIES ? s.Z.updateRsvp(t.id, null, f, O) : s.Z.updateRsvp(t.id, n, f, O), null == p || p(), g.onClose()
   };
   return (0, r.jsx)(o.ConfirmModal, h(_({}, g), {
     header: v,
-    confirmText: u.intl.string(u.t.TyCVIi),
-    cancelText: u.intl.string(u.t["ETE/oK"]),
+    confirmText: u.intl.string(u.t.TyCVIq),
+    cancelText: u.intl.string(u.t["ETE/oC"]),
     onConfirm: I,
     confirmButtonColor: a.zx.Colors.BRAND,
     children: (0, r.jsx)("div", {

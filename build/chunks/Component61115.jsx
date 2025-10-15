@@ -141,11 +141,11 @@ function S(e) {
             className: g.asset
           }), (0, r.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
-            children: m.intl.string(m.t.KTjjrK)
+            children: m.intl.string(m.t.KTjjrG)
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: m.intl.string(m.t.AvbrEB)
+            children: m.intl.string(m.t.AvbrEM)
           })]
         }), (0, r.jsx)(l.mzw, {
           "data-migration-pending": true,
@@ -153,7 +153,7 @@ function S(e) {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.Button, {
               variant: "primary",
-              text: m.intl.string(m.t.cpT0Cg),
+              text: m.intl.string(m.t.cpT0Cq),
               onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,

@@ -13,7 +13,7 @@ function a(e) {
     usernameOnClickHandler: n = r.dG4,
     productName: a
   } = e;
-  return i.intl.formatToParts(i.t.w4iXs7, {
+  return i.intl.formatToParts(i.t["w4iXs+"], {
     username: t,
     usernameHook: n,
     productName: a

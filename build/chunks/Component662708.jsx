@@ -53,14 +53,14 @@ class b extends Chunk647438.PureComponent {
           children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
             gap: 16,
             children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-              label: Chunk388032.intl.string(Chunk388032.t.tGRbjI),
+              label: Chunk388032.intl.string(Chunk388032.t.tGRbjA),
               maxLength: Chunk981631.dYL,
               value: exports,
               onChange: this.handleNameChange,
-              placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVl),
+              placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVh),
               autoFocus: true
             }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
-              label: Chunk388032.intl.string(Chunk388032.t.xpurRE),
+              label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
               children: (0, Chunk951288.jsx)(d, {
                 defaultColor: Chunk981631.Wyy,
                 colors: Chunk981631.pmI,
@@ -73,7 +73,7 @@ class b extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.i4jeWV),
+          text: Chunk388032.intl.string(Chunk388032.t.i4jeWR),
           type: "submit",
           onClick: this.handleSubmit
         })

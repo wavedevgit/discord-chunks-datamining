@@ -33,7 +33,7 @@ function d(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
-        children: c.intl.format(c.t.J3s8JC, {
+        children: c.intl.format(c.t.J3s8JP, {
           applicationName: t.name
         })
       })]
@@ -50,7 +50,7 @@ function f(e) {
   return (0, r.jsx)(o.u, {
     position: "top",
     asContainer: true,
-    "aria-label": c.intl.string(c.t["5nMcv7"]),
+    "aria-label": c.intl.string(c.t["5nMcv1"]),
     __unsupportedReactNodeAsText: (0, r.jsx)(d, {
       application: t,
       timestamp: n

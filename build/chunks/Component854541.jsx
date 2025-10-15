@@ -274,7 +274,7 @@ function w(e) {
         trailing: E && null != I ? {
           icon: f.ilE,
           onClick: x,
-          "aria-label": m.intl.string(m.t["0dU9Nz"])
+          "aria-label": m.intl.string(m.t["0dU9Ny"])
         } : true
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
         className: g.suggestedColors,

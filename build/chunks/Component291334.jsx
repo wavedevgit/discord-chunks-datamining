@@ -55,24 +55,24 @@ function y(e) {
       className: m.upsellOverlay,
       children: [(0, r.jsx)("img", {
         className: m.upsellImage,
-        alt: h.intl.string(h.t.LHFZQ0),
+        alt: h.intl.string(h.t.LHFZQy),
         src: b(E)
       }), (0, r.jsxs)("div", {
         className: m.upsellTextContainer,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
-          children: h.intl.string(h.t.dMaDFR)
+          children: h.intl.string(h.t.dMaDFX)
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "always-white",
-          children: h.intl.string(h.t.F7sgFB)
+          children: h.intl.string(h.t.F7sgFH)
         })]
       }), (0, r.jsx)(u.Z, {
         size: a.zx.Sizes.LARGE,
         color: a.zx.Colors.GREEN,
         textOptions: {
-          textOverride: f.ZP.isPremium(t) ? h.intl.string(h.t.AfRWIy) : h.intl.string(h.t.nkdUys)
+          textOverride: f.ZP.isPremium(t) ? h.intl.string(h.t.AfRWI8) : h.intl.string(h.t.nkdUym)
         },
         subscriptionTier: p.Si.TIER_2
       })]

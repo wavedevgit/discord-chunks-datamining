@@ -26,7 +26,7 @@ function d(e) {
     messageId: t.id
   })(f), p = (0, a.q)(t.applicationId);
   if (null == p) return null;
-  let h = c.intl.format(c.t.mAtJTE, {
+  let h = c.intl.format(c.t.mAtJTC, {
     username: t.author.username,
     usernameHook: _,
     applicationName: p.name,

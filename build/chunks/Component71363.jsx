@@ -50,7 +50,7 @@ let A = e => {
       fractionalState: k
     } = (0, _.Z)(),
     U = (0, h.W)();
-  j ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
+  j ? (t = I.intl.string(I.t["+vt7w9"]), n = I.intl.string(I.t.LgHbnL)) : (t = I.intl.string(I.t.LgHbnL), n = I.intl.string(I.t["+vt7w9"]));
   let G = () => {
     A(false), p.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: y.MQ.SEE_ALL,
@@ -116,7 +116,7 @@ let A = e => {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: T.heading,
-            children: I.intl.string(I.t.LTaxu7)
+            children: I.intl.string(I.t.LTaxu9)
           }), (0, r.jsx)(E.Z, {
             className: T.cardCarousel,
             cards: (0, O.ZM)({
@@ -147,7 +147,7 @@ let A = e => {
           className: T.bottomIllustration,
           width: 112,
           height: 85,
-          alt: I.intl.string(I.t.X4IxWF)
+          alt: I.intl.string(I.t.X4IxWL)
         })]
       })
     })

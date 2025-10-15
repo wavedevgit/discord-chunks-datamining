@@ -74,7 +74,7 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-secondary",
-              children: h.intl.string(h.t["5HiF2t"])
+              children: h.intl.string(h.t["5HiF2i"])
             })]
           }), A === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
             text: h.intl.string(h.t.y2b7CA),

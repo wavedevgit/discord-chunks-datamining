@@ -22,13 +22,13 @@ let v = function(n) {
     guildId: e,
     transitionState: t,
     onClose: v
-  } = n, _ = (0, a.e7)([p.Z], () => p.Z.getRequest(e), [e]), C = (0, a.e7)([c.Z], () => c.Z.getGuild(e), [e]), R = (0, a.e7)([u.default], () => {
+  } = n, _ = (0, a.e7)([p.Z], () => p.Z.getRequest(e), [e]), C = (0, a.e7)([u.Z], () => u.Z.getGuild(e), [e]), R = (0, a.e7)([c.default], () => {
     var n;
-    return null == (n = u.default.getCurrentUser()) ? true : n.id
-  }), x = (0, a.e7)([s.ZP], () => null != R ? s.ZP.getMember(e, R) : null, [R, e]), Z = o.useCallback(() => {
-    v(), null == x && (0, g.Z)()
-  }, [x, v]), j = o.useCallback(async () => {
-    if (null == x ? true : x.isPending) {
+    return null == (n = c.default.getCurrentUser()) ? true : n.id
+  }), k = (0, a.e7)([s.ZP], () => null != R ? s.ZP.getMember(e, R) : null, [R, e]), x = o.useCallback(() => {
+    v(), null == k && (0, g.Z)()
+  }, [k, v]), Z = o.useCallback(async () => {
+    if (null == k ? true : k.isPending) {
       try {
         await d.Z.removeGuildJoinRequest(e)
       } catch (n) {
@@ -36,28 +36,28 @@ let v = function(n) {
       }
       v(), (0, m.hk)(e)
     } else d.Z.resetGuildJoinRequest(e)
-  }, [e, null == x ? true : x.isPending, v]), k = o.useMemo(() => [{
-    text: f.intl.string(f.t.I1LYVl),
+  }, [e, null == k ? true : k.isPending, v]), j = o.useMemo(() => [{
+    text: f.intl.string(f.t.I1LYVk),
     variant: "secondary",
-    onClick: j
-  }, {
-    text: f.intl.string(f.t.BddRzc),
-    variant: "critical-primary",
     onClick: Z
-  }], [j, Z]);
+  }, {
+    text: f.intl.string(f.t.BddRzS),
+    variant: "critical-primary",
+    onClick: x
+  }], [Z, x]);
   return (0, i.jsx)(l.Modal, {
     transitionState: t,
     onClose: v,
-    title: (null == C ? true : C.name) != null ? f.intl.formatToPlainString(f.t["P+/gzM"], {
+    title: (null == C ? true : C.name) != null ? f.intl.formatToPlainString(f.t["P+/gzA"], {
       guildName: C.name
-    }) : f.intl.string(f.t.gBPcuL),
-    actions: k,
+    }) : f.intl.string(f.t.gBPcuP),
+    actions: j,
     children: (null == _ ? true : _.rejectionReason) != null && (null == _ ? true : _.rejectionReason) !== "" ? (0, i.jsxs)(r.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
       children: [(0, i.jsx)("span", {
         className: h.rejectionReasonLabel,
-        children: f.intl.string(f.t.cf1psb)
+        children: f.intl.string(f.t.cf1psW)
       }), (0, i.jsx)("span", {
         children: null == _ ? true : _.rejectionReason
       })]

@@ -25,16 +25,16 @@ function C(e) {
     onClose: n
   } = e, {
     currentUser: C,
-    multiAccountUsers: E
+    multiAccountUsers: T
   } = (0, l.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
-  })), [N, T] = a.useState(false), [b, A] = a.useState(f.lds), [p, v] = a.useState(null);
+  })), [E, N] = a.useState(false), [b, A] = a.useState(f.lds), [p, v] = a.useState(null);
   return a.useEffect(() => {
-    if (N) v((0, s.jsx)(c.Wn, {
+    if (E) v((0, s.jsx)(c.Wn, {
       messageType: c.QYI.ERROR,
       className: g.infoMessage,
-      children: _.intl.format(_.t.HAuRSE, {
+      children: _.intl.format(_.t.HAuRSM, {
         maxNumAccounts: h.$H
       })
     })), A(f.lds);
@@ -43,33 +43,33 @@ function C(e) {
       null != e && v((0, s.jsx)(c.Wn, {
         messageType: c.QYI.POSITIVE,
         className: g.infoMessage,
-        children: _.intl.format(_.t["09qidX"], {
+        children: _.intl.format(_.t["09qide"], {
           username: e.username
         })
-      })), T(false)
+      })), N(false)
     }
-  }, [b, N]), a.useEffect(() => {
-    E.length < h.$H && T(false)
-  }, [E]), (0, o.Z)({
+  }, [b, E]), a.useEffect(() => {
+    T.length < h.$H && N(false)
+  }, [T]), (0, o.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
   }), (0, s.jsxs)(r.Modal, {
     onClose: n,
     transitionState: t,
     size: "md",
-    "aria-label": _.intl.string(_.t.WbFpq6),
-    title: _.intl.string(_.t.WbFpq6),
-    subtitle: _.intl.string(_.t["+1Uk3d"]),
+    "aria-label": _.intl.string(_.t.WbFpq4),
+    title: _.intl.string(_.t.WbFpq4),
+    subtitle: _.intl.string(_.t["+1Uk3c"]),
     actions: [{
-      text: _.intl.string(_.t["9g2mqa"]),
+      text: _.intl.string(_.t["9g2mqT"]),
       variant: "secondary",
       onClick: () => {
-        if (E.length >= h.$H) return void T(true);
+        if (T.length >= h.$H) return void N(true);
         n(), (0, x.y)()
       }
     }],
     children: [p, (0, s.jsx)(m.Z, {
-      actionText: _.intl.string(_.t.Wf421N),
+      actionText: _.intl.string(_.t.Wf421J),
       onAction: (e, t) => {
         switch (e) {
           case m.W.LOGIN_REQUIRED:

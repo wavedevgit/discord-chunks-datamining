@@ -53,14 +53,14 @@ let M = () => {
       location: "UserSettingsAppearanceClientThemes"
     }), E = () => {
       if (!Chunk704215 || Chunk780384) return null;
-      let e = Chunk607070 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.bkQ4bG, {
+      let e = Chunk607070 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.bkQ4bH, {
         percent: null == Chunk857595 ? true : Chunk857595.discount.amount
-      }) : Chunk388032.intl.string(Chunk388032.t.mr4K7O);
+      }) : Chunk388032.intl.string(Chunk388032.t.mr4K7D);
       return Chunk550385 ? (0, Chunk951288.jsxs)("div", {
         className: Chunk505575.tryItOutButtonsV2,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
-          text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
+          text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
           onClick: () => M()
         }), (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
@@ -75,7 +75,7 @@ let M = () => {
         className: Chunk505575.tryItOutButtons,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
-          text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
+          text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
           onClick: () => M()
         }), (0, Chunk951288.jsx)(Chunk767714.Z, {
           showGradient: false,
@@ -99,7 +99,7 @@ let M = () => {
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
             fullWidth: true,
-            text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
+            text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
             onClick: () => M()
           })
         }), (0, Chunk951288.jsx)("div", {
@@ -154,7 +154,7 @@ function k() {
     children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {
       gap: 24
     }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.yF54Ki),
+      label: Chunk388032.intl.string(Chunk388032.t.yF54Ks),
       checked: module && (0, Chunk780384.ap)(exports) && !require,
       disabled: exports !== Chunk981631.BRd.LIGHT || require || null != Chunk647438 || Chunk704215,
       onChange: Chunk857595.lq
@@ -165,6 +165,6 @@ function k() {
 }
 let U = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.Button, {
   variant: "primary",
-  text: Chunk388032.intl.string(Chunk388032.t.qYXrkZ),
+  text: Chunk388032.intl.string(Chunk388032.t.qYXrkX),
   onClick: M
 })

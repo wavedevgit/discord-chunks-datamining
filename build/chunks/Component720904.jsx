@@ -53,9 +53,9 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+let E = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
-function E(e) {
+function S(e) {
   let {
     emoji: t,
     isFocused: n
@@ -97,7 +97,7 @@ function E(e) {
 function P(e, t) {
   let n = (0, s.MZ)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && S.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !p.ZP.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && E.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !p.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
       intention: y.Hz.REACTION
@@ -116,7 +116,7 @@ function P(e, t) {
           let {
             isFocused: t
           } = e;
-          return (0, r.jsx)(E, {
+          return (0, r.jsx)(S, {
             emoji: n,
             isFocused: t
           })

@@ -93,9 +93,9 @@ function O() {
         default: e
       } = await Promise.resolve().then(require.bind(require, 468026));
       return t => (0, a.jsx)(e, T(E({}, t), {
-        title: S.intl.string(S.t.KLnLIC),
-        body: S.intl.string(S.t.XGbCq6),
-        confirmText: S.intl.string(S.t["3oK4q6"])
+        title: S.intl.string(S.t.KLnLIP),
+        body: S.intl.string(S.t.XGbCq3),
+        confirmText: S.intl.string(S.t["3oK4qw"])
       }))
     }, {
       modalKey: Chunk308569.HR,
@@ -139,14 +139,14 @@ function O() {
           Text: t
         } = await Promise.resolve().then(require.bind(require, 481060));
         return n => (0, a.jsx)(e, T(E({
-          header: S.intl.string(S.t["2jxGen"]),
-          confirmText: S.intl.string(S.t["2jxGen"]),
-          cancelText: S.intl.string(S.t["ETE/oK"]),
+          header: S.intl.string(S.t["2jxGer"]),
+          confirmText: S.intl.string(S.t["2jxGer"]),
+          cancelText: S.intl.string(S.t["ETE/oC"]),
           onConfirm: () => c.Z.logout("verification")
         }, n), {
           children: (0, a.jsx)(t, {
             variant: "text-md/normal",
-            children: S.intl.string(S.t.SUnWBA)
+            children: S.intl.string(S.t.SUnWBB)
           })
         }))
       }, {

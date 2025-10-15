@@ -37,7 +37,7 @@ let v = function(e) {
     }, [t.id]),
     O = (0, i.jsx)(h.ZP.Icon, {
       icon: a.Dio,
-      tooltip: y.intl.string(y.t.cpT0Cg),
+      tooltip: y.intl.string(y.t.cpT0Cq),
       onClick: x
     });
   return (0, i.jsxs)(u.Z, {
@@ -52,7 +52,7 @@ let v = function(e) {
       "aria-label": y.intl.string(y.t.BIYAqa),
       children: [(0, i.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,
-        "aria-label": y.intl.string(y.t.Kx5kCA)
+        "aria-label": y.intl.string(y.t.Kx5kCN)
       }), (0, i.jsx)(h.ZP.Title, {
         children: t.name
       })]

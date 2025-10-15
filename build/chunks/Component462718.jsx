@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk342386 = require("./342386.js"),
   Chunk388032 = require("./388032.jsx");
 let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGen"]),
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGer"]),
   icon: Chunk657707.PBZ,
   onClick: () => {
     (0, Chunk481060.h7j)(t => {
@@ -35,9 +35,9 @@ let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         }
         return t
       }({
-        header: c.intl.string(c.t["2jxGen"]),
-        confirmText: c.intl.string(c.t["2jxGen"]),
-        cancelText: c.intl.string(c.t["ETE/oK"]),
+        header: c.intl.string(c.t["2jxGer"]),
+        confirmText: c.intl.string(c.t["2jxGer"]),
+        cancelText: c.intl.string(c.t["ETE/oC"]),
         onCancel: t.onClose,
         onConfirm: () => {
           (0, o.default)(), r.Z.logout("settings")
@@ -45,7 +45,7 @@ let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
       }, t), n = n = {
         children: (0, i.jsx)(u.Text, {
           variant: "text-md/normal",
-          children: c.intl.string(c.t.SUnWBA)
+          children: c.intl.string(c.t.SUnWBB)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
         var n = Object.keys(t);

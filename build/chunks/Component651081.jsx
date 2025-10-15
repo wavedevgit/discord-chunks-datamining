@@ -1,7 +1,7 @@
 /** Chunk was on 74590 **/
 /** chunk id: 651081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => V
+  default: () => U
 }), require("./388685.js"), require("./539854.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,10 +45,10 @@ function I() {
         marginBottom: 10
       }
     }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
-      note: Chunk388032.intl.string(Chunk388032.t.bwytdn),
+      note: Chunk388032.intl.string(Chunk388032.t.bwytdh),
       noteClassName: Chunk731595.emptyText,
       className: Chunk731595.emptyTitle,
-      children: Chunk388032.intl.string(Chunk388032.t.vhQK3t)
+      children: Chunk388032.intl.string(Chunk388032.t.vhQK3o)
     })]
   })
 }
@@ -85,7 +85,7 @@ function L(e) {
   return (0, l.jsx)(c.njP, {
     look: "custom",
     orientation: "vertical",
-    "aria-label": Z.intl.string(Z.t["qbir+/"]),
+    "aria-label": Z.intl.string(Z.t["qbir+4"]),
     selectedItem: a,
     onItemSelect: s,
     children: t.answers.map(e => {
@@ -96,7 +96,7 @@ function L(e) {
           emoji: o,
           text: d
         } = e.poll_media,
-        u = Z.intl.formatToPlainString(Z.t.wqBc7O, {
+        u = Z.intl.formatToPlainString(Z.t.wqBc7A, {
           numVotes: i,
           option: d
         }),
@@ -135,7 +135,7 @@ function L(e) {
   })
 }
 
-function E(e) {
+function A(e) {
   let {
     user: t,
     channel: n
@@ -170,7 +170,7 @@ function E(e) {
   })
 }
 
-function U(e) {
+function E(e) {
   let {
     message: t,
     reaction: n,
@@ -223,7 +223,7 @@ function U(e) {
         className: y.spinnerMore
       }, "hasMore") : null : 0 === r.length && u ? (0, l.jsx)(c.$jN, {
         className: y.spinner
-      }, "loadingMore") : null != a && (0, l.jsx)(E, {
+      }, "loadingMore") : null != a && (0, l.jsx)(A, {
         channel: s,
         user: a
       }, a.id)
@@ -247,7 +247,7 @@ function U(e) {
   })
 }
 
-function V(e) {
+function U(e) {
   var t;
   let {
     message: n,
@@ -272,7 +272,7 @@ function V(e) {
       var n;
       (null == e ? true : e.answer_id) != null && (null == (n = e.poll_media) ? true : n.text) != null && (t[e.answer_id] = e.poll_media.text)
     }), t
-  }, [null == (t = n.poll) ? true : t.answers]), g = Z.intl.formatToPlainString(Z.t.wqBc7O, {
+  }, [null == (t = n.poll) ? true : t.answers]), g = Z.intl.formatToPlainString(Z.t.wqBc7A, {
     numVotes: p,
     option: f[m]
   });
@@ -284,7 +284,7 @@ function V(e) {
     size: "lg",
     children: [(0, l.jsx)(i.xBx, {
       title: n.poll.question.text,
-      subtitle: Z.intl.format(Z.t.XRkuoa, {
+      subtitle: Z.intl.format(Z.t.XRkuof, {
         count: v.toLocaleString()
       })
     }), (0, l.jsx)(c.w0Z, {
@@ -304,7 +304,7 @@ function V(e) {
           id: m,
           "aria-label": g,
           className: y.panel,
-          children: null != _ && p > 0 ? (0, l.jsx)(U, {
+          children: null != _ && p > 0 ? (0, l.jsx)(E, {
             message: n,
             reaction: _,
             channel: u

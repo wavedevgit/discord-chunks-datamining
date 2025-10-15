@@ -40,7 +40,7 @@ function f(e) {
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
             className: d.nitroBadgeText,
-            children: u.intl.string(u.t["BMw+7O"])
+            children: u.intl.string(u.t["BMw+7I"])
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -50,7 +50,7 @@ function f(e) {
           iconClassName: d.premiumIcon,
           subscriptionTier: c.Si.TIER_2,
           textOptions: {
-            textOverride: u.intl.string(u.t.Y2WKTk)
+            textOverride: u.intl.string(u.t.Y2WKTl)
           },
           size: i.zx.Sizes.SMALL,
           premiumModalAnalyticsLocation: {

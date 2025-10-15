@@ -120,7 +120,7 @@ function P() {
       className: l()(Chunk132789.row, Chunk132789.rowGuildName),
       children: (0, Chunk951288.jsx)("span", {
         className: l()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize),
-        children: Chunk388032.intl.string(Chunk388032.t.wMWycn)
+        children: Chunk388032.intl.string(Chunk388032.t.wMWyci)
       })
     }), (0, Chunk951288.jsx)(I, {})]
   })

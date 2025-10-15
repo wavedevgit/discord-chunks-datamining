@@ -53,7 +53,7 @@ function I(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), v(!x)
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE)), v(!x)
     }
   };
   return (0, r.jsxs)("div", {
@@ -63,7 +63,7 @@ function I(e) {
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: N.intl.string(N.t.Qp98s7)
+        children: N.intl.string(N.t.Qp98s9)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
@@ -128,7 +128,7 @@ function S(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), l(m)
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE)), l(m)
     }
   };
   return (0, r.jsx)("div", {
@@ -137,8 +137,8 @@ function S(e) {
       className: E.itemBodyInner,
       children: (0, r.jsx)(c.VcW, {
         wrapperClassName: E.bringToFront,
-        label: N.intl.string(N.t.sMkYEx),
-        helperText: N.intl.string(N.t["1QxN9P"]),
+        label: N.intl.string(N.t.sMkYE8),
+        helperText: N.intl.string(N.t["1QxN9N"]),
         options: h,
         onChange: b,
         value: i,

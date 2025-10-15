@@ -1,5 +1,5 @@
 /** Chunk was on 14486 **/
-/** chunk id: 786746, original params: n,t,i (module,exports,require) **/
+/** chunk id: 786746, original params: n,t,l (module,exports,require) **/
 require.d(exports, {
   default: () => o
 }), require("./539854.js");
@@ -15,17 +15,17 @@ var Chunk481060 = require("./481060.js"),
 function o(n) {
   let {
     role: t,
-    guild: i,
+    guild: l,
     onSelect: o
-  } = n, p = [], c = (0, r.Z)(i, t, u.pNK.INTEGRATIONS);
+  } = n, p = [], c = (0, r.Z)(l, t, u.pNK.INTEGRATIONS);
   null != c && p.push(c);
   let h = (0, a.Z)({
     id: t.id,
-    label: d.intl.string(d.t.sMsaLi)
+    label: d.intl.string(d.t.sMsaLg)
   });
-  return (null != h && p.push(h), 0 === p.length) ? null : (0, l.jsx)(e.v2r, {
+  return (null != h && p.push(h), 0 === p.length) ? null : (0, i.jsx)(e.v2r, {
     navId: "guild-integrations-permission-role-context",
-    "aria-label": d.intl.string(d.t["337Ja2"]),
+    "aria-label": d.intl.string(d.t["337Ja9"]),
     onClose: s.Zy,
     onSelect: o,
     children: p

@@ -34,7 +34,7 @@ let p = e => {
         size: "md",
         color: "currentColor",
         className: d.icon
-      }), u.intl.string(u.t["7eicAA"])]
+      }), u.intl.string(u.t["7eicAO"])]
     })
   },
   h = e => {
@@ -103,7 +103,7 @@ let p = e => {
     } = e;
     return (0, i.jsx)("div", {
       className: t,
-      children: u.intl.string(u.t.QQsaCQ)
+      children: u.intl.string(u.t.QQsaCc)
     })
   };
 class O extends(r = Chunk647438.PureComponent) {

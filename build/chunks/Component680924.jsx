@@ -51,8 +51,8 @@ function c(e, t) {
 function u(e, t, n) {
   (0, i.h7j)(o => (0, r.jsx)(i.ConfirmModal, c(s({
     header: e,
-    confirmText: a.intl.string(a.t.BddRzc),
-    cancelText: a.intl.string(a.t["ETE/oK"]),
+    confirmText: a.intl.string(a.t.BddRzS),
+    cancelText: a.intl.string(a.t["ETE/oC"]),
     onConfirm: n
   }, o), {
     children: (0, r.jsx)(i.Text, {

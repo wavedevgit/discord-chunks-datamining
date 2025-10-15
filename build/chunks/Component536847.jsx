@@ -21,12 +21,12 @@ function p() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
     t = (0, Chunk481060.wjy)(module) ? Chunk231338.BR.DARK : Chunk231338.BR.LIGHT,
     n = [{
-      name: Chunk388032.intl.string(Chunk388032.t.b8Cei4),
+      name: Chunk388032.intl.string(Chunk388032.t.b8Cei3),
       value: Chunk231338.BR.DARK,
       icon: Chunk657707.Z6G,
       className: _(exports, Chunk231338.BR.DARK)
     }, {
-      name: Chunk388032.intl.string(Chunk388032.t.K2sFfn),
+      name: Chunk388032.intl.string(Chunk388032.t.K2sFfo),
       value: Chunk231338.BR.LIGHT,
       icon: Chunk657707.chG,
       className: _(exports, Chunk231338.BR.LIGHT)

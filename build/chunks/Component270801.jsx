@@ -51,7 +51,7 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
             variant: "heading-lg/semibold",
             className: s.header,
             id: u,
-            children: o.intl.format(o.t.z9qozM, {
+            children: o.intl.format(o.t.z9qozJ, {
               guildName: e.guildName
             })
           }), (0, i.jsx)(l.Text, {
@@ -66,7 +66,7 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
           onClick: () => {
             e.onAccept(), e.onClose()
           },
-          text: o.intl.string(o.t.NuzmOD)
+          text: o.intl.string(o.t.NuzmOA)
         }],
         actionsFullWidth: true
       })]

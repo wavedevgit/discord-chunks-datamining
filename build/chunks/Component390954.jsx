@@ -101,7 +101,7 @@ class I extends(r = Chunk647438.PureComponent) {
           variant: "secondary",
           onClick: this.handleEditClick,
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.bt75u7)
+          text: Chunk388032.intl.string(Chunk388032.t.bt75uw)
         })]
       })]
     })
@@ -128,14 +128,14 @@ class T extends Chunk647438.PureComponent {
         className: Chunk579378.footerContent,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.aRHpAA)
+          children: Chunk388032.intl.string(Chunk388032.t.aRHpAB)
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk579378.subText,
-          children: Chunk388032.intl.string(Chunk388032.t.o9bOIi)
+          children: Chunk388032.intl.string(Chunk388032.t.o9bOIl)
         })]
       }) : null, (0, Chunk951288.jsx)(Chunk159691.zxk, {
         onClick: this.handleAddPaymentMethod,
-        text: Chunk388032.intl.string(Chunk388032.t.CpOiEB)
+        text: Chunk388032.intl.string(Chunk388032.t.CpOiEO)
       })]
     })
   }
@@ -168,11 +168,11 @@ class T extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.mBM, {
           size: "sm",
           className: Chunk579378.lockIcon
-        }), " ", Chunk388032.intl.string(Chunk388032.t.W26xGR)]
+        }), " ", Chunk388032.intl.string(Chunk388032.t.W26xGQ)]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.h6V3uL)
+        children: Chunk388032.intl.string(Chunk388032.t.h6V3uK)
       }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk579378.__invalid_sourceDivider
       }) : null, this.renderFooter()]

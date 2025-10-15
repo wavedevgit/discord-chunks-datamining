@@ -23,8 +23,8 @@ function d(t) {
     canManageGuildEvent: b
   } = (0, o.XJ)(null != g ? g : d), [v, E] = (0, r.Wu)([u.ZP], () => [u.ZP.isActive(e), u.ZP.getGuildScheduledEvent(e)]), p = (0, a.Z)(n, null == E ? true : E.id), Z = null != E && b(E);
   return f && (null == p ? true : p.is_canceled) && Z && (!v || f) ? (0, l.jsx)(i.sNh, {
-    id: s.intl.string(s.t.b8606O),
-    label: s.intl.string(s.t.b8606O),
+    id: s.intl.string(s.t.b8606G),
+    label: s.intl.string(s.t.b8606G),
     action: () => {
       null != n && null != p && (0, c.Z)(p, d.id, e, n)
     }

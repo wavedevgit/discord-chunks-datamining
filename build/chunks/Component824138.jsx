@@ -66,9 +66,9 @@ class I extends Chunk647438.PureComponent {
   renderTitle() {
     return (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk115530.Z, {
-        children: this.isHost() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6UJ7mp"], {
+        children: this.isHost() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6UJ7mh"], {
           count: this.props.party.length
-        }) : Chunk388032.intl.string(Chunk388032.t.RZufbG)
+        }) : Chunk388032.intl.string(Chunk388032.t.RZufbH)
       }), (0, Chunk951288.jsx)(Chunk345243.Z, {
         children: Chunk388032.intl.string(Chunk388032.t["0ZHLIi"])
       })]
@@ -79,14 +79,14 @@ class I extends Chunk647438.PureComponent {
       onStopListening: e
     } = this.props;
     return this.isHost() ? null : (0, Chunk951288.jsx)(Chunk870569.Z, {
-      tooltipText: Chunk388032.intl.string(Chunk388032.t.LeZSp6),
+      tooltipText: Chunk388032.intl.string(Chunk388032.t.LeZSpz),
       onClick: module,
       icon: Chunk481060.Dio
     })
   }
   renderHelpIcon() {
     return this.isHost() ? (0, Chunk951288.jsx)(Chunk870569.Z, {
-      tooltipText: Chunk388032.intl.string(Chunk388032.t.U7N2Hh),
+      tooltipText: Chunk388032.intl.string(Chunk388032.t.U7N2Hs),
       onClick: () => {
         window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_CONNECTION), "_blank")
       },
@@ -119,7 +119,7 @@ class I extends Chunk647438.PureComponent {
         host: l,
         onUserContextMenu: u
       } = this.props;
-      return n = (null == l ? true : l.id) === e.id ? _.intl.string(_.t.N9bqDw) : _.intl.string(_.t.Z2Y4c3), (0, r.jsx)(d.Z, {
+      return n = (null == l ? true : l.id) === e.id ? _.intl.string(_.t["N9bqD+"]) : _.intl.string(_.t.Z2Y4c9), (0, r.jsx)(d.Z, {
         targetElementRef: this.partyMemberAvatarRef,
         user: e,
         newAnalyticsLocations: [c.Z.AVATAR],
@@ -147,7 +147,7 @@ class I extends Chunk647438.PureComponent {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(o.u, {
-          text: _.intl.string(_.t.Zf4NPT),
+          text: _.intl.string(_.t.Zf4NPe),
           children: (0, r.jsx)("div", y(v({}, n), {
             ref: this.partyMemberOverflowRef,
             className: a()(O.overflow, t),

@@ -48,7 +48,7 @@ class v extends(i = Chunk647438.PureComponent) {
       guildId: module,
       onDragStart: this.onDragStart
     }, module) : (0, Chunk951288.jsx)(Chunk711553.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.YUU0RE),
+      title: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
       renderSettings: b,
       onDragStart: this.onDragStart,
       children: (0, Chunk951288.jsx)(Chunk483962.Z, {})

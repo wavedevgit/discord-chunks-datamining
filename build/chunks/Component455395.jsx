@@ -25,11 +25,11 @@ function c(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [!c && (0, i.jsx)(r.sNh, {
       id: "mark-as-tier-1-inappro",
-      label: d.intl.string(d.t.EuzCER),
+      label: d.intl.string(d.t.EuzCET),
       action: () => (0, a.KK)(e.id, l.pj.INAPPROPRIATE_CONVERSATION_TIER_1)
     }), !u && (0, i.jsx)(r.sNh, {
       id: "mark-as-tier-2-inappro",
-      label: d.intl.string(d.t["tBw/1t"]),
+      label: d.intl.string(d.t["tBw/1i"]),
       action: () => (0, a.KK)(e.id, l.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
     })]
   })

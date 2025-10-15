@@ -157,14 +157,14 @@ class S extends Chunk647438.Component {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk360751.connectionInstructions,
-        children: Chunk388032.intl.string(Chunk388032.t.f19PPT)
+        children: Chunk388032.intl.string(Chunk388032.t.f19PPV)
       })]
     })
   }
   renderMain() {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
       iconType: Chunk219929.ZP.Types.PAYMENT_REQUEST,
-      buttonText: Chunk388032.intl.string(Chunk388032.t.f19PPT),
+      buttonText: Chunk388032.intl.string(Chunk388032.t.f19PPV),
       loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
     })
   }
@@ -278,14 +278,14 @@ class A extends S {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk360751.connectionInstructions,
-        children: Chunk388032.intl.string(Chunk388032.t.ueoGeX)
+        children: Chunk388032.intl.string(Chunk388032.t.ueoGef)
       })]
     })
   }
   renderMain() {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
       iconType: Chunk219929.ZP.Types.G_PAY,
-      buttonText: Chunk388032.intl.string(Chunk388032.t.p2jr2N),
+      buttonText: Chunk388032.intl.string(Chunk388032.t.p2jr2E),
       loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
     })
   }
@@ -338,14 +338,14 @@ class C extends S {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk360751.connectionInstructions,
-        children: Chunk388032.intl.string(Chunk388032.t.iv8pQU)
+        children: Chunk388032.intl.string(Chunk388032.t.iv8pQV)
       })]
     })
   }
   renderMain() {
     return this.props.renderConnectorView ? this.renderConnectorView() : this.renderButton({
       iconType: Chunk219929.ZP.Types.APPLE_LIGHT,
-      buttonText: Chunk388032.intl.string(Chunk388032.t.xdGS1t),
+      buttonText: Chunk388032.intl.string(Chunk388032.t.xdGS1o),
       loading: !(0, Chunk358085.isDesktop)() && this.state.submitting
     })
   }

@@ -34,18 +34,18 @@ class _ extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: Chunk975060.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
           className: Chunk969590.connectionInstructions,
-          children: Chunk388032.intl.format(Chunk388032.t["ze/1yM"], {
+          children: Chunk388032.intl.format(Chunk388032.t["ze/1yE"], {
             cashtag: Chunk975060
           })
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           className: Chunk969590.connectionInstructions,
-          children: Chunk388032.intl.string(Chunk388032.t.VPOx7O)
+          children: Chunk388032.intl.string(Chunk388032.t.VPOx7N)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk969590.connectionInstructions,
-        children: null == Chunk647438 ? Chunk388032.intl.string(Chunk388032.t["CgVe//"]) : Chunk388032.intl.string(Chunk388032.t["1MqcjI"])
+        children: null == Chunk647438 ? Chunk388032.intl.string(Chunk388032.t["CgVe/w"]) : Chunk388032.intl.string(Chunk388032.t["1MqcjI"])
       })]
     })
   }

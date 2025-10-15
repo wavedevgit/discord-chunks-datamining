@@ -39,16 +39,16 @@ let C = {
       children: [(0, r.jsx)(l.Heading, {
         className: _.upsellHeader,
         variant: "heading-xl/semibold",
-        children: v.intl.string(v.t.hzCkys)
+        children: v.intl.string(v.t.hzCkyg)
       }), (0, r.jsx)(l.Text, {
         className: _.upsellDescription,
         variant: "text-md/normal",
-        children: v.intl.string(v.t.jcesAA)
+        children: v.intl.string(v.t.jcesAE)
       }), (0, r.jsxs)(l.ButtonGroup, {
         className: _.upsellButtons,
         children: [(0, r.jsx)(l.Button, {
           variant: "overlay-primary",
-          text: v.intl.string(v.t.Q5dbTk),
+          text: v.intl.string(v.t.Q5dbTi),
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
             analyticsLocation: C,
@@ -57,7 +57,7 @@ let C = {
           })
         }), (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
-          text: v.intl.string(v.t.hvVgAQ),
+          text: v.intl.string(v.t.hvVgAZ),
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
@@ -72,17 +72,17 @@ let C = {
     gap: 8,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
-      children: Chunk388032.intl.string(Chunk388032.t["9N2OWF"])
+      children: Chunk388032.intl.string(Chunk388032.t["9N2OWD"])
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.format(Chunk388032.t.hxLvi4, {
+      children: Chunk388032.intl.format(Chunk388032.t.hxLviw, {
         fileSize: (0, Chunk424218.IC)(Chunk611480.Ht, {
           useKibibytes: true
         })
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.format(Chunk388032.t.UBj0aW, {
+      children: Chunk388032.intl.format(Chunk388032.t.UBj0aX, {
         articleUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STICKERS_UPLOAD)
       })
     })]
@@ -97,11 +97,11 @@ let C = {
       d = (0, f.FZ)(s),
       u = (0, f.A3)(s),
       g = a.length;
-    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1d, {
+    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1f, {
       level: d
-    }), n = v.intl.formatToPlainString(v.t["13hOWl"], {
+    }), n = v.intl.formatToPlainString(v.t["13hOWm"], {
       level: d
-    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9Sxc), n = v.intl.formatToPlainString(v.t.YaW9wM, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9SxY), n = v.intl.formatToPlainString(v.t.YaW9wI, {
       level: d,
       numAdditional: (0, f.ig)(d)
     }), i = x.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
@@ -133,7 +133,7 @@ let C = {
         gap: 16,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t.R5nQkZ)
+          children: Chunk388032.intl.string(Chunk388032.t.R5nQkS)
         }), Chunk623624 ? (0, Chunk951288.jsxs)("div", {
           children: [(0, Chunk951288.jsx)(N, {
             guild: module,

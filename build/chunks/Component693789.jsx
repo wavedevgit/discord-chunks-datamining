@@ -164,7 +164,7 @@ function v(e) {
     Y = y(k, t),
     W = i.useRef(false);
   i.useEffect(() => {
-    true === m && (W.current = true, l.uvj.announce(null != G ? G : c.intl.string(c.t.pfChQk))), false === m && true === W.current && l.uvj.announce(null != B ? B : c.intl.string(c.t.SVPara))
+    true === m && (W.current = true, l.uvj.announce(null != G ? G : c.intl.string(c.t.pfChQr))), false === m && true === W.current && l.uvj.announce(null != B ? B : c.intl.string(c.t.SVParY))
   }, [m, G, B]);
   let K = (0, r.jsx)(l.tEY, p(f({}, k), {
     offset: Y,

@@ -84,8 +84,8 @@ function C(e) {
     tileWidth: Q,
     tileHeight: K,
     widgetWidth: X,
-    widgetHeight: q,
-    containerRef: J,
+    widgetHeight: J,
+    containerRef: q,
     containerMinMaxSizes: $
   } = (0, S.Bz)({
     tileCount: B,
@@ -103,12 +103,12 @@ function C(e) {
     widgetMinMaxSizes: $,
     containerSize: {
       width: X,
-      height: q
+      height: J
     },
     orientedPosition: {
       top: 0,
       left: 0,
-      bottom: null != (t = null == Y ? true : Y.height) ? t : q,
+      bottom: null != (t = null == Y ? true : Y.height) ? t : J,
       right: null != (n = null == Y ? true : Y.width) ? n : X
     },
     locked: w
@@ -125,7 +125,7 @@ function C(e) {
   }, [et]), (0, s.ZP)(() => () => {
     a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
   }), (et || !A) && w) ? null : et && !w ? L ? w ? null : (0, i.jsx)(O.E, {
-    emptyText: j.intl.string(j.t["T6+rX1"]),
+    emptyText: j.intl.string(j.t["T6+rXy"]),
     icon: o.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
@@ -133,7 +133,7 @@ function C(e) {
     style: {
       opacity: P
     },
-    ref: J,
+    ref: q,
     children: (0, i.jsx)(v.Z, {
       widgetId: C,
       tileWidth: Q,

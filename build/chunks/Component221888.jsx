@@ -69,11 +69,11 @@ let N = 150;
 function R(e, t) {
   switch (e) {
     case y.fO.ACTIVITY:
-      return v.intl.formatToPlainString(v.t.TCM94e, {
+      return v.intl.formatToPlainString(v.t.TCM94S, {
         numUsers: t
       });
     case y.fO.STREAM:
-      return v.intl.formatToPlainString(v.t.BR7Tnp, {
+      return v.intl.formatToPlainString(v.t.BR7Tno, {
         numViewers: t
       });
     default:

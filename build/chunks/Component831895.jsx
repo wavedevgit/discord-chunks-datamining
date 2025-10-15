@@ -21,7 +21,7 @@ function p(e) {
     onCategoryChange: f,
     className: h
   } = e, [m, x] = i.useState(_), [g, j] = i.useState(null), b = (0, s.Z)(), y = i.useMemo(() => [{
-    name: c.intl.string(c.t["6Zuiv7"]),
+    name: c.intl.string(c.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
     icon: (0, r.jsx)(o.yDF, {
@@ -31,7 +31,7 @@ function p(e) {
     onMouseEnter: () => j(d.KN.Trick),
     onMouseLeave: () => j(null)
   }, {
-    name: c.intl.string(c.t["2UeOlZ"]),
+    name: c.intl.string(c.t["2UeOlY"]),
     value: d.KN.Treat,
     key: "Treat",
     icon: (0, r.jsx)(o.sq, {

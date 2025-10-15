@@ -41,7 +41,7 @@ function N() {
       className: Chunk823914.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",
-      children: Chunk388032.intl.string(Chunk388032.t.ToyvLi)
+      children: Chunk388032.intl.string(Chunk388032.t.ToyvLk)
     })]
   })
 }

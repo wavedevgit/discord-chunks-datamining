@@ -137,8 +137,8 @@ function A(e) {
 function C(e) {
   let t = A(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = S(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
-    title: b.intl.string(b.t["+XYXtb"]),
-    body: b.intl.formatToPlainString(b.t.JaIyFh, {
+    title: b.intl.string(b.t["+XYXtZ"]),
+    body: b.intl.formatToPlainString(b.t.JaIyFi, {
       count: E.oX
     })
   }), false) : !e.emojis.includes(t) && void e.emojis.push(t), E.fy.INFREQUENT_USER_ACTION)

@@ -36,7 +36,7 @@ let b = e => {
   } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
-      title: g.intl.format(g.t["rm+ojI"], {
+      title: g.intl.format(g.t["rm+ojA"], {
         serverName: b.name
       }),
       description: null != v ? v : null,

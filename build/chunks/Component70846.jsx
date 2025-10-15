@@ -16,7 +16,7 @@ let l = t => {
     onClose: l
   } = t, d = i.useMemo(() => [{
     variant: "secondary",
-    text: o.intl.string(o.t["NX+WJC"]),
+    text: o.intl.string(o.t["NX+WJN"]),
     onClick: l
   }], [l]);
   return (0, s.jsx)(n.u_l, {

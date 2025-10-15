@@ -53,15 +53,15 @@ function d(e) {
         }
         return e
       }({
-        body: u.intl.string(u.t["d9+vQ0"])
+        body: u.intl.string(u.t["d9+vQ8"])
       }, t))
     })
   }, []);
   return (0, n.jsx)(i.Z, {
     modalType: "ignore_user",
-    header: u.intl.string(u.t.Ib6biY),
-    body: u.intl.string(u.t["uW0/nZ"]),
-    problemTitle: u.intl.string(u.t.avs5Vl),
+    header: u.intl.string(u.t.Ib6bic),
+    body: u.intl.string(u.t["uW0/nV"]),
+    problemTitle: u.intl.string(u.t.avs5Vg),
     problems: m,
     freeformNeededProblems: p,
     onSubmit: f,
@@ -70,6 +70,6 @@ function d(e) {
     otherKey: b.XL.SOMETHING_ELSE,
     hideHelpDeskLink: true,
     hideDontShowAgainCheckbox: true,
-    freeformDescription: e => null == e ? null : e.value === b.XL.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel5)
+    freeformDescription: e => null == e ? null : e.value === b.XL.SOMETHING_ELSE ? u.intl.string(u.t.h95hcn) : u.intl.string(u.t.wRGel3)
   })
 }

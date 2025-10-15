@@ -74,20 +74,20 @@ class w extends Chunk647438.PureComponent {
         className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: s()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
-        children: Chunk388032.intl.string(Chunk388032.t.C7ZRNz)
+        children: Chunk388032.intl.string(Chunk388032.t.C7ZRNw)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t.A6MwXF)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O), this.handleContinue)]
+        children: Chunk388032.intl.string(Chunk388032.t.A6MwXE)
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   renderAppOpened() {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.csrAMD)
+        children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["m1+IBg"])
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O), this.handleContinue)]
+        children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   renderAuthenticatedOrDownload() {
@@ -106,8 +106,8 @@ class w extends Chunk647438.PureComponent {
   renderContinue() {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t.fOc4go)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O), this.handleContinue)]
+        children: Chunk388032.intl.string(Chunk388032.t.fOc4gn)
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   render() {
@@ -118,12 +118,12 @@ class w extends Chunk647438.PureComponent {
       transitionTo: i,
       location: l
     } = this.props;
-    if (null == module) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.ZTNur6));
+    if (null == module) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.ZTNur7));
     if (exports === Chunk981631.kEZ.OPEN) return this.renderAppOpened();
-    if (exports === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
+    if (exports === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
     switch (module.state) {
       case Chunk260539.Rj.RESOLVING:
-        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
+        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
       case Chunk260539.Rj.RESOLVED:
         if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
         if (this.props.login) return (0, Chunk951288.jsx)(Chunk781428.Z, {
@@ -188,7 +188,7 @@ function k(e) {
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: P.header,
-      children: Z.intl.string(Z.t.UNFvtL)
+      children: Z.intl.string(Z.t.UNFvtM)
     }), n, (0, r.jsx)(u.zx, {
       className: P.createButton,
       onClick: i,

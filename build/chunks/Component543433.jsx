@@ -62,7 +62,7 @@ function E(e) {
       fullWidth: i,
       variant: "primary",
       onClick: a,
-      text: _.intl.string(_.t.GURBQk)
+      text: _.intl.string(_.t.GURBQl)
     })
   })
 }
@@ -90,7 +90,7 @@ function b(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "lg" === u ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: _.intl.string(_.t.vnP31d)
+        children: _.intl.string(_.t.vnP31W)
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === u ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",

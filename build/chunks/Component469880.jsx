@@ -32,7 +32,7 @@ function u(e) {
       onClear: () => g("")
     }),
     inModal: false,
-    title: c.intl.string(c.t["0hKkS0"]),
+    title: c.intl.string(c.t["0hKkS+"]),
     children: m.map((e, a) => (0, i.jsxs)(r.Fragment, {
       children: [(0, i.jsx)(o.Z, {
         applicationIcon: t,
@@ -48,7 +48,7 @@ function u(e) {
     children: (0, i.jsx)(l.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
-      children: c.intl.string(c.t["x78c+P"])
+      children: c.intl.string(c.t["x78c+J"])
     })
   })
 }

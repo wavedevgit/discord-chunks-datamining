@@ -25,8 +25,8 @@ function f() {
         slurs: e,
         sexualContent: e
       }),
-      title: Chunk388032.intl.string(Chunk388032.t.CB5reH),
-      note: Chunk388032.intl.format(Chunk388032.t.kAyJIS, {
+      title: Chunk388032.intl.string(Chunk388032.t.CB5reE),
+      note: Chunk388032.intl.format(Chunk388032.t.kAyJIR, {
         learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.KEYWORD_FILTERS)
       })
     })

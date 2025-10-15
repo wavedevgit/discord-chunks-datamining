@@ -13,7 +13,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk880257 = require("./880257.js"),
   Chunk863552 = require("./863552.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk441076 = require("./441076.js");
 let C = {
@@ -90,7 +90,7 @@ let C = {
     let {
       transitionState: e,
       onClose: r
-    } = t, i = (0, l.PO)("family_center_activity_card"), u = (0, s.o)(p.intl.string(d.default.q3IRam), p.intl.string(d.default.JNLpDQ)), h = (0, a.Z)(), f = (0, c._p)(i);
+    } = t, i = (0, l.PO)("family_center_activity_card"), u = (0, s.o)(p.intl.string(d.default.q3IRal), p.intl.string(d.default.JNLpDZ)), h = (0, a.Z)(), f = (0, c._p)(i);
     return (0, o.jsx)(n.Modal, {
       transitionState: e,
       onClose: r,

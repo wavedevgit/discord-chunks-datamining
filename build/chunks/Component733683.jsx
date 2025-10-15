@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624138 = require("./624138.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk31441 = require("./31441.js");
 
@@ -99,12 +99,12 @@ class y extends(r = Chunk647438.Component) {
       color: Chunk481060.aML.Colors.PRIMARY,
       tooltipClassName: Chunk31441.foregroundTooltip,
       children: [(0, Chunk951288.jsx)("div", {
-        children: Chunk388032.intl.format(Chunk388032.t.gDsyBw, {
+        children: Chunk388032.intl.format(Chunk388032.t.gDsyB9, {
           numSubscriptions: module
         })
       }), null != s && s > 0 && null != Chunk647438 ? (0, Chunk951288.jsx)("div", {
         className: Chunk31441.tooltipMuted,
-        children: Chunk388032.intl.format(Chunk388032.t["2U9MDg"], {
+        children: Chunk388032.intl.format(Chunk388032.t["2U9MDp"], {
           number: s,
           tier: Chunk647438.name
         })
@@ -119,14 +119,14 @@ class y extends(r = Chunk647438.Component) {
     let n = Math.min(t, e.numRequired);
     return (0, i.jsx)("div", {
       children: this.getTierDisabled(e) ? (0, i.jsx)("div", {
-        children: h.intl.formatToPlainString(f.default["9CtPjo"], {
+        children: h.intl.formatToPlainString(f.default["9CtPjt"], {
           perk: e.name
         })
       }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           children: e.name
         }), (0, i.jsx)("div", {
-          children: h.intl.format(h.t.AkLa6u, {
+          children: h.intl.format(h.t.AkLa6n, {
             subscribers: n,
             numRequired: e.numRequired
           })

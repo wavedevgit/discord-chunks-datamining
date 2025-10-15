@@ -42,7 +42,7 @@ function d(e) {
     }), (0, l.jsxs)(a.Z.SlideContent, {
       scrollbarType: "none",
       children: [(0, l.jsx)(s.oil, {
-        label: o.intl.string(o.t.HZPBOT),
+        label: o.intl.string(o.t.HZPBOd),
         inputRef: x,
         onChange: S,
         placeholder: o.intl.string(o.t.tARzgo),

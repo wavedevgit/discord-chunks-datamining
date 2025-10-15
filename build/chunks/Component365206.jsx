@@ -66,7 +66,7 @@ function E(e) {
   return (0, r.jsxs)("div", {
     className: d.votesData,
     children: [t && (0, r.jsx)(o.T, {
-      children: u.intl.string(u.t["8DAM+/"])
+      children: u.intl.string(u.t["8DAM+5"])
     }), (0, r.jsxs)(s.Text, {
       variant: "text-md/semibold",
       color: "none",

@@ -28,12 +28,12 @@ function b(e) {
     children: [(0, i.jsx)(p.Kq, {
       channelType: t.type
     }), (0, i.jsx)(p.Ot, {
-      children: f.intl.format(f.t.I3R7Vl, {
+      children: f.intl.format(f.t.I3R7Vn, {
         channelName: n
       })
     }), (0, i.jsx)(p.jz, {
       className: g.markup,
-      children: f.intl.format(f.t.pYMVRU, {
+      children: f.intl.format(f.t.pYMVRT, {
         channelName: n,
         topicHook: () => s.Z.parseTopic(t.topic, true, {
           channelId: t.id
@@ -42,7 +42,7 @@ function b(e) {
     }), b ? (0, i.jsx)("div", {
       className: m.buttonContainer,
       children: (0, i.jsx)(d.Z, {
-        label: f.intl.string(f.t["3gUsJS"]),
+        label: f.intl.string(f.t["3gUsJb"]),
         onClick: () => {
           a.ZP.open(t.id)
         },

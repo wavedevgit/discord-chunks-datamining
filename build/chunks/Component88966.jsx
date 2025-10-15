@@ -18,7 +18,7 @@ function g(e, n, t) {
   let g = (0, u.Aq)();
   return (0, i.e7)([s.default], () => s.default.getId() === e) || n === d.IlC.POPOUT ? null : (0, l.jsx)(r.sNh, {
     id: "message-user",
-    label: c.intl.string(c.t.OAJQlJ),
+    label: c.intl.string(c.t.OAJQlP),
     action: () => {
       (0, o.i)(n, true), a.Z.openPrivateChannel({
         recipientIds: e

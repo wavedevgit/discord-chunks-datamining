@@ -71,14 +71,14 @@ function _(e) {
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: I
   });
-  let S = O ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+  let S = O ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
     E = [S];
-  C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+  C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
     mentionCount: C
-  })), v > 0 && E.push(b.intl.string(b.t.x5zAGR));
+  })), v > 0 && E.push(b.intl.string(b.t.x5zAGZ));
   let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    T = C > 0 ? C : v,
-    P = T > 0;
+    P = C > 0 ? C : v,
+    T = P > 0;
   return (0, r.jsxs)("div", {
     className: y.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
@@ -108,9 +108,9 @@ function _(e) {
       iconComponent: Z === g.MI.NO_CHAT ? s.sXD : s.hic,
       themeable: true,
       className: n
-    }, _)), P ? (0, r.jsx)(o.Z, {
+    }, _)), T ? (0, r.jsx)(o.Z, {
       hasMentions: C > 0,
-      truncatedCount: T > 99 ? "99+" : T,
+      truncatedCount: P > 99 ? "99+" : P,
       className: y.badge
     }) : null]
   })

@@ -29,20 +29,20 @@ let c = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == n ? true : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu//"], {
+        children: (null == n ? true : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu/6"], {
           guildName: n.name
-        }) : o.intl.string(o.t["5iLvS0"])
+        }) : o.intl.string(o.t["5iLvSx"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: o.intl.string(o.t.FdsK4u)
+        children: o.intl.string(o.t.FdsK4h)
       })]
     }), (0, r.jsx)(l.Button, {
       fullWidth: true,
       onClick: t,
       variant: "critical-primary",
       size: "md",
-      text: o.intl.string(o.t.g9tK0t)
+      text: o.intl.string(o.t.g9tK0o)
     })]
   })
 }

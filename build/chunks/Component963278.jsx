@@ -37,7 +37,7 @@ let m = e => {
         children: t.name
       }), (0, r.jsx)(s.Button, {
         variant: "secondary",
-        text: h.intl.formatToPlainString(h.t.bc9RBA, {
+        text: h.intl.formatToPlainString(h.t.bc9RBE, {
           category_name: t.name
         }),
         onClick: () => n("shelf block see all", t.categorySkuId)

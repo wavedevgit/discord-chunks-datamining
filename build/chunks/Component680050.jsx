@@ -19,7 +19,7 @@ let _ = e => {
   } = e, m = (0, s.PO)("share_with_parent_element"), [p, g] = i.useState(false), f = i.useCallback(() => {
     (0, o.ty)().then(() => {
       var e, t;
-      (0, a.showToast)((0, l.Y)(u.intl.formatToPlainString(u.t.wr4IT0, {
+      (0, a.showToast)((0, l.Y)(u.intl.formatToPlainString(u.t.wr4IT5, {
         count: _.length,
         parent1: _[0].username,
         parent2: null == (e = _[1]) ? true : e.username,
@@ -30,7 +30,7 @@ let _ = e => {
     })
   }, [_]);
   if (0 === _.length || !m) return null;
-  let h = u.intl.formatToPlainString(u.t.HqyWeH, {
+  let h = u.intl.formatToPlainString(u.t.HqyWeO, {
     count: _.length,
     parent1: _[0].username,
     parent2: null == (t = _[1]) ? true : t.username,
@@ -38,8 +38,8 @@ let _ = e => {
   });
   return (0, r.jsx)(d.JZ, {
     title: h,
-    description: u.intl.string(u.t["5l/hlp"]),
-    buttonText: p ? u.intl.string(u.t.ntuuk5) : u.intl.string(u.t["sYdX/P"]),
+    description: u.intl.string(u.t["5l/hlt"]),
+    buttonText: p ? u.intl.string(u.t.ntuuk7) : u.intl.string(u.t["sYdX/H"]),
     buttonDisabled: p,
     onButtonPress: f
   })

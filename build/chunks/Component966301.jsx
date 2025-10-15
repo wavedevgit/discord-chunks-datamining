@@ -45,7 +45,7 @@ function C(e) {
           className: _.coverageTitle,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: v.intl.format(v.t.nMVKCQ, {
+          children: v.intl.format(v.t.nMVKCX, {
             numChannelsMissing: p - m
           })
         })]
@@ -66,7 +66,7 @@ function C(e) {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: v.intl.string(v.t["0FM4i4"])
+        children: v.intl.string(v.t["0FM4i+"])
       }), (0, r.jsx)("div", {
         className: _.channels,
         children: u.map(e => {
@@ -94,7 +94,7 @@ function C(e) {
           }), (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: v.intl.format(v.t["sX889/"], {
+            children: v.intl.format(v.t.sX8890, {
               numChannels: h
             })
           })]
@@ -145,11 +145,11 @@ function y(e) {
     children: [(0, r.jsx)(a.Heading, {
       className: _.header,
       variant: "heading-lg/extrabold",
-      children: d ? v.intl.string(v.t.AGjtFh) : v.intl.string(v.t.dqCzoa)
+      children: d ? v.intl.string(v.t.AGjtFv) : v.intl.string(v.t.dqCzoT)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: v.intl.string(v.t["q/6MLC"])
+      children: v.intl.string(v.t["q/6MLL"])
     }), (0, r.jsxs)("div", {
       className: _.links,
       children: [(0, r.jsx)(a.Anchor, {
@@ -158,7 +158,7 @@ function y(e) {
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: v.intl.string(v.t.Ok55Ki)
+          children: v.intl.string(v.t.Ok55Kh)
         })
       }), (0, r.jsx)("div", {
         className: _.dot
@@ -167,7 +167,7 @@ function y(e) {
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: v.intl.string(v.t["6gsjdH"])
+          children: v.intl.string(v.t["6gsjdM"])
         })
       }), (0, r.jsx)("div", {
         className: _.dot
@@ -198,6 +198,6 @@ function N() {
     },
     onReset: Chunk570961.NB,
     submitting: exports,
-    onSaveText: Chunk388032.intl.string(Chunk388032.t.R3BPHx)
+    onSaveText: Chunk388032.intl.string(Chunk388032.t["R3BPH+"])
   })
 }

@@ -58,7 +58,7 @@ function _() {
       color: "currentColor",
       className: Chunk858783.labelIcon
     }),
-    title: Chunk388032.intl.string(Chunk388032.t.d7YJMD),
+    title: Chunk388032.intl.string(Chunk388032.t.d7YJMK),
     className: Chunk858783.createLabel
   })
 }
@@ -99,7 +99,7 @@ function y(e) {
     omitChannelIds: x,
     "aria-labelledby": v,
     onChange: _
-  } = e, C = b.intl.string(b.t.d7YJMD), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
+  } = e, C = b.intl.string(b.t.d7YJMK), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
     let e = [{
         value: null,
         label: C
@@ -120,7 +120,7 @@ function y(e) {
   }, [C, a, N, y, x, d]);
   return (0, r.jsx)(o.PhF, {
     label: t,
-    placeholder: b.intl.string(b.t.r2pts7),
+    placeholder: b.intl.string(b.t.r2ptsz),
     options: E,
     select: function(e) {
       null == e ? (0, o.ZDy)(async () => {

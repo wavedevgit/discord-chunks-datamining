@@ -50,97 +50,97 @@ function D() {
     id: Chunk997945.Ru.TRICK,
     iconSource: Chunk487483,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"])
+    name: Chunk388032.intl.string(Chunk388032.t["6Zuivx"])
   }, {
     id: Chunk997945.Ru.TREAT,
     iconSource: Chunk936684,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"])
+    name: Chunk388032.intl.string(Chunk388032.t["2UeOlY"])
   }] : [], {
     id: Chunk997945.Ru.BRAND_DARK,
     iconSource: Chunk760260,
-    name: Chunk388032.intl.string(Chunk388032.t.gZEUBg),
+    name: Chunk388032.intl.string(Chunk388032.t.gZEUBl),
     isPremium: true
   }, {
     id: Chunk997945.Ru.MANGA,
     iconSource: Chunk328664,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.hGBbFx)
+    name: Chunk388032.intl.string(Chunk388032.t.hGBbF8)
   }, {
     id: Chunk997945.Ru.MATTE_DARK,
     iconSource: Chunk328259,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.NkshQk)
+    name: Chunk388032.intl.string(Chunk388032.t.NkshQt)
   }, {
     id: Chunk997945.Ru.MATTE_LIGHT,
     iconSource: Chunk19009,
-    name: Chunk388032.intl.string(Chunk388032.t.G2W309),
+    name: Chunk388032.intl.string(Chunk388032.t.G2W302),
     isPremium: true
   }, {
     id: Chunk997945.Ru.PASTEL,
     iconSource: Chunk405571,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.mTSkLS)
+    name: Chunk388032.intl.string(Chunk388032.t.mTSkLT)
   }, {
     id: Chunk997945.Ru.PIRATE,
     iconSource: Chunk730886,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.EgWTY2)
+    name: Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
   }, {
     id: Chunk997945.Ru.CAMO,
     iconSource: Chunk448578,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.RSKXOD)
+    name: Chunk388032.intl.string(Chunk388032.t.RSKXOK)
   }, {
     id: Chunk997945.Ru.SUNSET,
     iconSource: Chunk473974,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.ixdjPD)
+    name: Chunk388032.intl.string(Chunk388032.t.ixdjPB)
   }, {
     id: Chunk997945.Ru.GALAXY,
     iconSource: Chunk818143,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.cb78Li)
+    name: Chunk388032.intl.string(Chunk388032.t.cb78Ls)
   }, {
     id: Chunk997945.Ru.Y2K,
     iconSource: Chunk563856,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["s+KoXF"])
+    name: Chunk388032.intl.string(Chunk388032.t["s+KoXO"])
   }, {
     id: Chunk997945.Ru.CHERRY_BLOSSOM,
     iconSource: Chunk946185,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["ta/5RE"])
+    name: Chunk388032.intl.string(Chunk388032.t["ta/5RB"])
   }, {
     id: Chunk997945.Ru.BEANIE,
     iconSource: Chunk924997,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.IoLVi4)
+    name: Chunk388032.intl.string(Chunk388032.t.IoLViw)
   }, {
     id: Chunk997945.Ru.GAMING,
     iconSource: Chunk666475,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["2Tf+c3"])
+    name: Chunk388032.intl.string(Chunk388032.t["2Tf+c4"])
   }, {
     id: Chunk997945.Ru.CIRCUIT,
     iconSource: Chunk480423,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.dUpxKS)
+    name: Chunk388032.intl.string(Chunk388032.t.dUpxKb)
   }, {
     id: Chunk997945.Ru.HOLO_WAVES,
     iconSource: Chunk591304,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["9mg7g4"])
+    name: Chunk388032.intl.string(Chunk388032.t["9mg7g1"])
   }, {
     id: Chunk997945.Ru.BLUSH,
     iconSource: Chunk749834,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.nmd90t)
+    name: Chunk388032.intl.string(Chunk388032.t.nmd90m)
   }, {
     id: Chunk997945.Ru.ANGRY,
     iconSource: Chunk105797,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t["9PUXpK"])
+    name: Chunk388032.intl.string(Chunk388032.t["9PUXpM"])
   }, {
     id: Chunk997945.Ru.CONTROLLER,
     iconSource: Chunk665801,
@@ -150,22 +150,22 @@ function D() {
     id: Chunk997945.Ru.BLURPLE_TWILIGHT,
     iconSource: Chunk861498,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.Mfoe3t)
+    name: Chunk388032.intl.string(Chunk388032.t.Mfoe3p)
   }, {
     id: Chunk997945.Ru.IN_RAINBOWS,
     iconSource: Chunk73375,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.yxJB9P)
+    name: Chunk388032.intl.string(Chunk388032.t.yxJB9E)
   }, {
     id: Chunk997945.Ru.MIDNIGHT_PRISM,
     iconSource: Chunk234912,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.nshUZW)
+    name: Chunk388032.intl.string(Chunk388032.t.nshUZZ)
   }, {
     id: Chunk997945.Ru.COLOR_WAVE,
     iconSource: Chunk273593,
     isPremium: true,
-    name: Chunk388032.intl.string(Chunk388032.t.MWRYqq)
+    name: Chunk388032.intl.string(Chunk388032.t.MWRYqh)
   }]
 }
 

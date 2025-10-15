@@ -74,7 +74,7 @@ function z(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: S.intl.string(S.t["5dWOZW"])
+        children: S.intl.string(S.t["5dWOZX"])
       })]
     })]
   })
@@ -90,7 +90,7 @@ function P(e) {
     productId: n.id
   });
   return 0 === i.length ? null : (0, r.jsx)(Z.Z, {
-    label: S.intl.string(S.t.HOkHPD),
+    label: S.intl.string(S.t.HOkHPB),
     children: (0, r.jsxs)("div", {
       className: l()(O.attachmentsContainer, {
         [O.attachmentsContainerMultiple]: s
@@ -129,7 +129,7 @@ function L(e) {
     role: t
   } = e;
   return null == t ? null : (0, r.jsx)(Z.Z, {
-    label: S.intl.string(S.t.gWBNen),
+    label: S.intl.string(S.t.gWBNet),
     children: (0, r.jsx)(N.Z, {
       role: t
     })
@@ -162,9 +162,9 @@ function T(e) {
         p(true), await (0, g.cf)(s, l), p(false)
       } catch (e) {
         n(), (0, h.Z)({
-          body: S.intl.string(S.t.VQ0lXV),
-          confirmText: S.intl.string(S.t["NX+WJC"]),
-          header: S.intl.string(S.t.OCwKlp),
+          body: S.intl.string(S.t.VQ0lXY),
+          confirmText: S.intl.string(S.t["NX+WJN"]),
+          header: S.intl.string(S.t.OCwKlu),
           confirmButtonColor: d.Button.Colors.BRAND
         })
       }
@@ -174,8 +174,8 @@ function T(e) {
     C = x.role_id,
     Z = (0, u.e7)([j.Z], () => null != C ? j.Z.getRole(s, C) : true);
   return (0, r.jsx)(o.Modal, {
-    title: S.intl.string(S.t.dhAgv7),
-    subtitle: S.intl.format(S.t.X6yvvr, {
+    title: S.intl.string(S.t.dhAgv3),
+    subtitle: S.intl.format(S.t.X6yvvo, {
       productName: x.name,
       emphasisHook: w
     }),
@@ -187,7 +187,7 @@ function T(e) {
       children: [(0, r.jsxs)(f.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: [y ? S.intl.string(S.t["A/RnkJ"]) + " " : "", null != Z ? S.intl.format(S.t.IeJDKi, {
+        children: [y ? S.intl.string(S.t["A/RnkK"]) + " " : "", null != Z ? S.intl.format(S.t.IeJDKs, {
           roleName: Z.name,
           emphasisHook: w
         }) : ""]
@@ -196,7 +196,7 @@ function T(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: S.intl.string(S.t["9S3QHB"])
+        children: S.intl.string(S.t["9S3QHF"])
       }), (0, r.jsx)(f.LZC, {
         size: 24
       }), (0, r.jsx)(z, {

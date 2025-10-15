@@ -61,7 +61,7 @@ function g(e) {
     children: [(0, r.jsx)(l.Heading, {
       className: p.optionalHeader,
       variant: "heading-deprecated-12/semibold",
-      children: _.intl.string(_.t["5C107O"])
+      children: _.intl.string(_.t["5C107K"])
     }), c.map(e => m(e, null == n ? true : n[e.name], a))]
   }) : null, E = u.length > 0 ? (0, r.jsx)(s.u, {
     __unsupportedReactNodeAsText: d,
@@ -71,9 +71,9 @@ function g(e) {
       className: p.optionalCount,
       color: "text-muted",
       variant: "text-sm/normal",
-      children: 0 === c.length ? _.intl.formatToPlainString(_.t["0mI72t"], {
+      children: 0 === c.length ? _.intl.formatToPlainString(_.t["0mI72g"], {
         count: u.length
-      }) : _.intl.formatToPlainString(_.t.BP8N0N, {
+      }) : _.intl.formatToPlainString(_.t.BP8N0K, {
         count: u.length
       })
     })

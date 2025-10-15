@@ -63,7 +63,7 @@ let b = Chunk647438.memo(function(e) {
             color: "currentColor",
             width: 20,
             height: 20
-          }), f.intl.string(f.t["4d4T4u"]), v && (0, r.jsx)(c.P3F, {
+          }), f.intl.string(f.t["4d4T4l"]), v && (0, r.jsx)(c.P3F, {
             onClick: () => {
               d.ZP.open(t.id, true, g.ZfP.TOPIC)
             },
@@ -75,7 +75,7 @@ let b = Chunk647438.memo(function(e) {
             })
           })]
         }), (0, r.jsx)(c.P3F, {
-          "aria-label": f.intl.string(f.t.cpT0Cg),
+          "aria-label": f.intl.string(f.t.cpT0Cq),
           className: x.clickable,
           onClick: () => {
             b.getState().setGuidelinesOpen(false)
@@ -154,7 +154,7 @@ let b = Chunk647438.memo(function(e) {
                 variant: "text-sm/semibold",
                 color: "text-brand",
                 className: x.showMoreText,
-                children: [f.intl.string(f.t.Vu7odH), (0, r.jsx)(c.bJT, {
+                children: [f.intl.string(f.t.Vu7odK), (0, r.jsx)(c.bJT, {
                   size: "xs",
                   color: "currentColor",
                   className: x.showMoreIcon

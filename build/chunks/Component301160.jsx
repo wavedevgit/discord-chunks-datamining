@@ -56,30 +56,30 @@ function h(e) {
     transitionToManageEmoji: r,
     transitionState: h,
     onClose: u
-  } = e, x = (0, m.Z)(i), [p, f] = n.useState(new Set), g = p.size > 0;
+  } = e, x = (0, m.Z)(i), [p, v] = n.useState(new Set), C = p.size > 0;
   return (0, a.jsx)(o.Modal, {
     transitionState: h,
     onClose: u,
-    title: d.intl.string(d.t.xC6tUl),
+    title: d.intl.string(d.t.xC6tUv),
     actions: [{
-      text: d.intl.string(d.t["ETE/oK"]),
+      text: d.intl.string(d.t["ETE/oC"]),
       variant: "secondary",
       onClick: u
     }, {
-      text: d.intl.format(d.t.pX74jo, {
+      text: d.intl.format(d.t.pX74jh, {
         totalEmoji: p.size
       }),
       variant: "primary",
       onClick: function() {
         s(p), u()
       },
-      disabled: !g
+      disabled: !C
     }],
     children: (0, a.jsxs)(l.Kqy, {
       gap: "md",
       children: [(0, a.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: d.intl.format(d.t["OnK+Cw"], {
+        children: d.intl.format(d.t["OnK+C1"], {
           transitionToManageEmoji: r
         })
       }), null != x && x.length > 0 && (0, a.jsx)("div", {
@@ -88,7 +88,7 @@ function h(e) {
           emoji: e,
           onChange: () => {
             var i;
-            return i = e.id, void f(e => {
+            return i = e.id, void v(e => {
               let t = new Set(e);
               return p.has(i) ? t.delete(i) : t.add(i), t
             })

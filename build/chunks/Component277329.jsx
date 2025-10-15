@@ -53,7 +53,7 @@ function g() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk830260.heading,
       variant: "heading-xl/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.URyqtL)
+      children: Chunk388032.intl.string(Chunk388032.t.URyqtP)
     }), (0, Chunk951288.jsx)(Chunk481060.njP, {
       className: Chunk830260.tabBar,
       selectedItem: require,

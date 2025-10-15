@@ -131,28 +131,28 @@ let w = (e, t) => n => {
       e.stopPropagation(), c ? a && f() : d()
     };
     return c ? a ? u ? (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.GoCQxc),
+      text: R.intl.string(R.t.GoCQxU),
       variant: "secondary"
     }) : (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.XpeFYm),
+      text: R.intl.string(R.t.XpeFYr),
       onClick: h,
       variant: "active"
     }) : o ? (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.Pj7Xrq),
+      text: R.intl.string(R.t.Pj7Xrv),
       variant: "secondary",
       disabled: true
     }) : _ ? (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.DlcqlZ),
+      text: R.intl.string(R.t.DlcqlU),
       onClick: p,
       variant: "active",
       icon: l.dz2
     }) : (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.DlcqlZ),
+      text: R.intl.string(R.t.DlcqlU),
       onClick: p,
       variant: "secondary",
       icon: l.Dkj
     }) : (0, r.jsx)(l.Button, {
-      text: R.intl.string(R.t.XpeFYm),
+      text: R.intl.string(R.t.XpeFYr),
       onClick: h,
       variant: "active"
     })

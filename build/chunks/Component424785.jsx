@@ -254,17 +254,17 @@ class Y extends Chunk98597.ZP {
       } = this.props;
       if (!t) return (0, r.jsx)(s.u, {
         asContainer: true,
-        text: V.intl.string(V.t.ZXxLQk),
+        text: F.intl.string(F.t.ZXxLQg),
         children: (0, r.jsx)(c.P3F, {
-          className: o()(F.iconItem, n ? F.alwaysShown : null),
+          className: o()(V.iconItem, n ? V.alwaysShown : null),
           onClick: () => {
             u.Z.updateChatOpen(e.id, true), this.handleClickChat()
           },
-          "aria-label": V.intl.string(V.t.ZXxLQk),
+          "aria-label": F.intl.string(F.t.ZXxLQg),
           children: (0, r.jsx)(c.kBi, {
             size: "xs",
             color: "currentColor",
-            className: F.actionIcon
+            className: V.actionIcon
           })
         })
       })
@@ -272,7 +272,7 @@ class Y extends Chunk98597.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? V.intl.string(V.t.rZfiNj) : null
+      return this.isFull() && !e ? F.intl.string(F.t.rZfiNq) : null
     }), z(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;

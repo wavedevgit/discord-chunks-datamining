@@ -52,15 +52,15 @@ function O(e) {
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, U = T && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
+  }), U = E.length > 0 || null != C, M = T && null == C && null == w && null != _, k = !L && (U || M), B = S.length > 0;
   return k || B || !D ? (0, l.jsxs)(r.zJl, {
     className: y.scroller,
     fade: true,
     children: [k ? (0, l.jsx)(f.Z, {
-      "aria-label": I.intl.string(I.t.J6STd3),
+      "aria-label": I.intl.string(I.t.J6STd9),
       children: (0, l.jsxs)("ul", {
         className: y.activityList,
-        children: [!A && U && (0, l.jsx)("li", {
+        children: [!A && M && (0, l.jsx)("li", {
           children: (0, l.jsx)(v.Z, {
             user: n,
             currentUser: t,
@@ -84,8 +84,8 @@ function O(e) {
         }, "live-".concat(i)))]
       })
     }) : null, B ? (0, l.jsx)(f.Z, {
-      heading: I.intl.string(I.t.M0zgnZ),
-      introText: R ? I.intl.format(I.t["4bk9Ag"], {
+      heading: I.intl.string(I.t.M0zgnT),
+      introText: R ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, n) => (0, l.jsx)(r.Anchor, {
           href: d.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

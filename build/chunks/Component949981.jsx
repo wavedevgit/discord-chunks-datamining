@@ -57,12 +57,12 @@ function y(e) {
     C && null != e && t.push(e)
   }
   let R = S.name;
-  (null == R || "" === R) && (R = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : E.intl.string(E.t.LJpTRE));
-  let P = E.intl.string(E.t.XpeFYm),
+  (null == R || "" === R) && (R = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : E.intl.string(E.t.LJpTRF));
+  let P = E.intl.string(E.t.XpeFYr),
     w = d.Z.Button.Colors.GREEN;
-  C && (P = E.intl.string(E.t.cEnaW1), w = d.Z.Button.Colors.PRIMARY);
-  let D = E.intl.string(E.t["3p3/BA"]);
-  return I && (D = E.intl.string(E.t.qmtuXF)), (0, r.jsxs)(d.Z, {
+  C && (P = E.intl.string(E.t.cEnaWx), w = d.Z.Button.Colors.PRIMARY);
+  let D = E.intl.string(E.t["3p3/BK"]);
+  return I && (D = E.intl.string(E.t.qmtuXE)), (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
       text: D
     }), (0, r.jsxs)(d.Z.Body, {

@@ -65,11 +65,11 @@ function Z(e) {
     roleId: N
   }), D = [{
     icon: r.owK,
-    description: b.intl.string(b.t.kcuWvb)
+    description: b.intl.string(b.t.kcuWva)
   }, {
     icon: r.owK,
-    description: b.intl.string(C ? b.t.QxrDY2 : b.t.W6fjkZ)
-  }], R = (0, p.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
+    description: b.intl.string(C ? b.t.QxrDY1 : b.t.W6fjkS)
+  }], R = (0, p.ZP)(n.id, S), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), U = b.intl.formatToPlainString(b.t.KRe1Fk, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
@@ -84,7 +84,7 @@ function Z(e) {
         "data-migration-pending": true,
         transitionState: P,
         className: I.root,
-        "aria-label": M,
+        "aria-label": U,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, l.jsxs)(h.Z, {
           user: n,
@@ -102,11 +102,11 @@ function Z(e) {
               children: [(0, l.jsx)(r.Heading, {
                 variant: "heading-xl/bold",
                 color: "text-default",
-                children: b.intl.string(b.t.b33pLC)
+                children: b.intl.string(b.t.b33pLD)
               }), (0, l.jsx)(r.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: b.intl.format(C ? b.t.T7QiLi : b.t.MnEow8, {
+                children: b.intl.format(C ? b.t.T7QiLn : b.t.MnEowy, {
                   username: L
                 })
               })]

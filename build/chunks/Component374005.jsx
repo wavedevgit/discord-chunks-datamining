@@ -83,7 +83,7 @@ let C = Chunk647438.memo(function() {
     className: a()(Chunk981028.panels, {
       [Chunk981028.disablePointersWhileSorting]: exports
     }),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
+    "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
     children: (0, Chunk951288.jsxs)(Chunk793030.JcV, {
       containerRef: module,
       children: [(0, Chunk951288.jsx)(Chunk316173.Z, {}), (0, Chunk951288.jsx)(Chunk210724.Z, {}), (0, Chunk951288.jsx)(Chunk235555.Z, {}), (0, Chunk951288.jsx)(Chunk410575.Z, {

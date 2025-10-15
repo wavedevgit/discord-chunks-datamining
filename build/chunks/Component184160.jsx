@@ -35,8 +35,8 @@ function _(e) {
   });
   return a()(null != j, "Expected premium type"), (0, r.jsx)(o.Z, {
     premiumType: j,
-    titleText: p.intl.string(p.t["7VcWW1"]),
-    subtitleText: p.intl.format(p.t.Qk34Ii, {
+    titleText: p.intl.string(p.t["7VcWW0"]),
+    subtitleText: p.intl.format(p.t.Qk34Ik, {
       subscriptionName: g
     }),
     footer: (0, r.jsxs)(l.ButtonGroup, {
@@ -44,14 +44,14 @@ function _(e) {
       align: "center",
       children: [(0, r.jsx)(l.Button, {
         variant: "primary",
-        text: p.intl.string(p.t["3PatS0"]),
+        text: p.intl.string(p.t["3PatSz"]),
         onClick: () => {
           b ? (f((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(l.Button, {
         variant: "secondary",
         onClick: n,
-        text: p.intl.string(p.t.h9tkAA)
+        text: p.intl.string(p.t.h9tkAK)
       })]
     }),
     onClose: n,

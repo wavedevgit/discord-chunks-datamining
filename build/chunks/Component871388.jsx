@@ -40,7 +40,7 @@ function l(e, t) {
         children: e
       })
     }, A)),
-    cta: i.intl.string(i.t["NX+WJC"]),
+    cta: i.intl.string(i.t["NX+WJN"]),
     onConfirm: () => {}
   })
 }

@@ -31,12 +31,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
+let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
     username: t.username,
     activity: e.extra.activity_name
   }),
   w = (e, t, n) => {
-    let r = R.t["bES+y8"],
+    let r = R.t["bES+y2"],
       i = b.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
     return R.intl.formatToMarkdownString(r, {
@@ -50,7 +50,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
       channel: n,
       users: r,
       countOthers: i
-    } = e, a = R.t["7j/5mp"];
+    } = e, a = R.t["7j/5mg"];
     return R.intl.formatToMarkdownString(a, {
       gameName: t.extra.activity_name,
       user1: b.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[0]),
@@ -123,7 +123,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
       }),
       $ = (0, r.jsx)(A.wG, {
         channel: t,
-        userDescription: (0, v.kr)(n) ? R.t.vPg1JS : R.t.rPqqtr,
+        userDescription: (0, v.kr)(n) ? R.t.vPg1JT : R.t.rPqqts,
         title: n.extra.activity_name,
         subtitle: k,
         badges: J,
@@ -147,7 +147,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         size: "md",
         fullWidth: true,
         onClick: X,
-        text: R.intl.string(R.t["jaYS/v"]),
+        text: R.intl.string(R.t["jaYS/h"]),
         icon: o.v3n
       }),
       er = Q ? o.iWm : o.jje,
@@ -156,7 +156,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1t, {
         size: "md",
         fullWidth: true,
         onClick: K,
-        text: R.intl.string(R.t.GDWYR0),
+        text: R.intl.string(R.t.GDWYR8),
         icon: er
       }),
       ea = [en, ee && !x ? et : ei].filter(E.lm);

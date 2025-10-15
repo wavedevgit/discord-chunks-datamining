@@ -67,7 +67,7 @@ function C(e) {
       },
       gradientColor: "purple",
       actions: [{
-        text: g.intl.string(g.t.fwPura),
+        text: g.intl.string(g.t.fwPurU),
         onClick: () => {
           (0, c.Z)({
             nextStatus: f.Sk.ONLINE

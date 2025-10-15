@@ -170,9 +170,9 @@ class b extends(i = Chunk647438.Component) {
         className: m.empty,
         children: [(0, l.jsx)("p", {
           className: m.noResultsHeader,
-          children: p.intl.string(p.t["4o4z3d"])
+          children: p.intl.string(p.t["4o4z3e"])
         }), (0, l.jsx)("p", {
-          children: p.intl.string(p.t.QwSXv7)
+          children: p.intl.string(p.t.QwSXv8)
         })]
       }, "empty");
       let s = this.getRows(),

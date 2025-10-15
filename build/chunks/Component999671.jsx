@@ -38,12 +38,12 @@ function f(e) {
   });
   return (0, r.jsxs)(o.v2r, {
     navId: "mentions-filter",
-    "aria-label": p.intl.string(p.t.pEasFR),
+    "aria-label": p.intl.string(p.t.pEasFX),
     onClose: t,
     onSelect: n,
     children: [(0, r.jsx)(o.S89, {
       id: "Everyone",
-      label: p.intl.string(p.t.cdyUsb),
+      label: p.intl.string(p.t.cdyUsV),
       action: function() {
         a.Z.setGuildFilter({
           everyoneFilter: !h
@@ -52,7 +52,7 @@ function f(e) {
       checked: h
     }), (0, r.jsx)(o.S89, {
       id: "Roles",
-      label: p.intl.string(p.t.lZejCg),
+      label: p.intl.string(p.t.lZejCq),
       action: function() {
         a.Z.setGuildFilter({
           roleFilter: !f
@@ -61,7 +61,7 @@ function f(e) {
       checked: f
     }), null == i || i.isPrivate() ? null : (0, r.jsx)(o.S89, {
       id: "All Servers",
-      label: p.intl.string(p.t.GWMA6u),
+      label: p.intl.string(p.t.GWMA6s),
       action: function() {
         a.Z.setGuildFilter({
           guildFilter: g === d.NgX.THIS_SERVER ? d.NgX.ALL_SERVERS : d.NgX.THIS_SERVER
@@ -93,7 +93,7 @@ function g() {
       } = t;
       return (0, r.jsx)(o.M0o, {
         ref: e,
-        tooltip: p.intl.string(p.t.pEasFR),
+        tooltip: p.intl.string(p.t.pEasFX),
         color: o.YX$.TERTIARY,
         icon: (0, r.jsx)(o.gXV, {
           size: "xs",

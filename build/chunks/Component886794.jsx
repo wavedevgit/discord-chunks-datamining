@@ -42,8 +42,8 @@ function C(e) {
     roleId: D,
     sessionId: R,
     transitionState: L,
-    openedAt: M,
-    onClose: U,
+    openedAt: U,
+    onClose: M,
     sourceAnalyticsLocations: k = []
   } = e, B = C === N.ME ? true : C, V = (0, p.ZP)(t.id, B), F = u.ZP.getName(B, _, t), G = (0, a.Dt)(), {
     analyticsLocations: z
@@ -60,7 +60,7 @@ function C(e) {
     value: z,
     children: (0, l.jsx)(m.Mt, {
       value: H,
-      openedAt: M,
+      openedAt: U,
       fetchStartedAt: null == V ? true : V.fetchStartedAt,
       fetchEndedAt: null == V ? true : V.fetchEndedAt,
       isLoaded: null == V ? true : V.isLoaded,
@@ -75,7 +75,7 @@ function C(e) {
           component: (0, l.jsx)(r.nn4, {
             children: (0, l.jsx)(r.H, {
               id: G,
-              children: T.intl.format(T.t.KRe1Fh, {
+              children: T.intl.format(T.t.KRe1Fk, {
                 name: F
               })
             })
@@ -116,7 +116,7 @@ function C(e) {
                 tags: (0, l.jsx)(h.Z, {
                   displayProfile: V,
                   themeType: P.l.MODAL,
-                  onClose: U
+                  onClose: M
                 })
               }), (0, l.jsxs)("div", {
                 className: S.container,
@@ -128,10 +128,10 @@ function C(e) {
                   children: (0, l.jsx)(r.njP.Item, {
                     className: S.tabBarItem,
                     id: O.oh.BOT_INFO,
-                    "aria-label": T.intl.string(T.t.jGoPJS),
+                    "aria-label": T.intl.string(T.t.jGoPJT),
                     children: (0, l.jsx)(r.Text, {
                       variant: "text-sm/normal",
-                      children: T.intl.string(T.t.jGoPJS)
+                      children: T.intl.string(T.t.jGoPJT)
                     })
                   }, O.oh.BOT_INFO)
                 }), (0, l.jsxs)(r.zJl, {
@@ -142,7 +142,7 @@ function C(e) {
                     userBio: null == V ? true : V.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(g.Z, {
-                    heading: T.intl.string(T.t["A//N4u"]),
+                    heading: T.intl.string(T.t["A//N4k"]),
                     children: (0, l.jsx)(v.Z, {
                       userId: t.id,
                       guildId: B,

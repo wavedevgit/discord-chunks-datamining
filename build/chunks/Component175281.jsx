@@ -139,13 +139,13 @@ class w extends Chunk647438.PureComponent {
         className: Chunk870525.modalTitle,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk870525.content,
-          children: Chunk388032.intl.string(Chunk388032.t["1BdUt7"])
+          children: Chunk388032.intl.string(Chunk388032.t["1BdUtx"])
         }), (0, Chunk951288.jsx)(Chunk481060.M2$, {
           shortcut: "mod+/"
         })]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk870525.modalSubtitle,
-        children: Chunk388032.intl.string(Chunk388032.t["2t19lZ"])
+        children: Chunk388032.intl.string(Chunk388032.t["2t19lU"])
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk870525.ddrArrows,
         children: [(0, Chunk951288.jsx)(T, {
@@ -300,7 +300,7 @@ function A(e) {
         [C.noShadow]: l
       }),
       size: f.CgR.DYNAMIC,
-      "aria-label": x.intl.string(x.t.T9DA2N),
+      "aria-label": x.intl.string(x.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(h.W, {

@@ -1,7 +1,7 @@
 /** Chunk was on 39476 **/
 /** chunk id: 97594, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,13 +26,13 @@ function h(e, t) {
   true === n || d.Z.useReducedMotion ? e.set(t) : e.start(t)
 }
 
-function S(e) {
+function _(e) {
   var {
     onClose: t,
     items: n,
     startingIndex: l,
-    enabledContentHarmTypeFlags: S,
-    shouldHideMediaOptions: _ = false,
+    enabledContentHarmTypeFlags: _,
+    shouldHideMediaOptions: S = false,
     transitionState: v
   } = e, T = function(e, t) {
     if (null == e) return {};
@@ -49,7 +49,7 @@ function S(e) {
     }
     return r
   }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]);
-  let [j, C] = r.useState(null != l ? l : 0), [D, x] = r.useState(false), [P, L] = (0, s.q_F)(() => ({
+  let [j, C] = r.useState(null != l ? l : 0), [D, x] = r.useState(false), [P, R] = (0, s.q_F)(() => ({
     scale: d.Z.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -57,7 +57,7 @@ function S(e) {
       friction: 30,
       tension: 300
     }
-  })), R = r.useRef(null);
+  })), L = r.useRef(null);
   r.useEffect(() => {
     if (null != t) return f.S.subscribe(b.CkL.MEDIA_MODAL_CLOSE, t), () => {
       f.S.unsubscribe(b.CkL.MEDIA_MODAL_CLOSE, t)
@@ -71,7 +71,7 @@ function S(e) {
       i = () => {
         u.Z.disableTemp()
       },
-      r = null == (t = R.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
+      r = null == (t = L.current) || null == (e = t.ownerDocument) ? true : e.defaultView;
     return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", i), () => {
       null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", i), u.Z.disableTemp()
     }
@@ -125,25 +125,25 @@ function S(e) {
         animation: o.fM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
-        "aria-label": E.intl.string(E.t.AMTX3t),
+        "aria-label": E.intl.string(E.t.AMTX3j),
         parentComponent: "MediaViewerModal",
         children: (0, i.jsxs)(m.z.Provider, {
           value: I,
           children: [(0, i.jsx)(O.Z, {
             item: n[j],
-            hideMediaOptions: _,
+            hideMediaOptions: S,
             onClose: t
           }), (0, i.jsx)("div", {
             style: {
               display: "none"
             },
-            ref: R
+            ref: L
           }), (0, i.jsx)(y.ZP, {
             items: n,
             startIndex: j,
             onIndexChange: M,
-            enabledContentHarmTypeFlags: S,
-            shouldHideMediaOptions: _
+            enabledContentHarmTypeFlags: _,
+            shouldHideMediaOptions: S
           })]
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

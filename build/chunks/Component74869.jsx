@@ -145,7 +145,7 @@ function O() {
         query: c,
         onChange: f,
         ref: t,
-        placeholder: h.intl.string(h.t["5h0QOD"])
+        placeholder: h.intl.string(h.t["5h0QOP"])
       }))
     }, "experiments-search");
   return v.length > 0 ? [(0, Chunk951288.jsx)(Chunk481060.kSQ, {

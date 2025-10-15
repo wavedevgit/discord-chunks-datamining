@@ -86,9 +86,9 @@ let C = e => {
         case c.Z.AVATAR_DECORATION:
           return O.intl.string(O.t["7v0T9P"]);
         case c.Z.PROFILE_EFFECT:
-          return O.intl.string(O.t.wR5wOj);
+          return O.intl.string(O.t.wR5wOo);
         case c.Z.NAMEPLATE:
-          return O.intl.string(O.t.x5CoXV);
+          return O.intl.string(O.t.x5CoXR);
         default:
           return null
       }
@@ -102,7 +102,7 @@ let C = e => {
     children: [I && (0, r.jsx)("div", {
       className: v.previewTitleContainer,
       children: (0, r.jsx)(d.gNt, {
-        label: O.intl.string(O.t.PpoJzs),
+        label: O.intl.string(O.t.PpoJzt),
         children: M && (0, r.jsx)(d.yRy, {
           targetElementRef: D,
           preload: () => (0, p.Z)(N.id, N.getAvatarURL(null, 80)),
@@ -123,7 +123,7 @@ let C = e => {
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
-              children: O.intl.string(O.t["2GnJQE"])
+              children: O.intl.string(O.t["2GnJQL"])
             })
           }))
         }, N.id)

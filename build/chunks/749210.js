@@ -92,8 +92,8 @@ function j(e, t) {
 }
 let k = e => {
     C.Z.show({
-      title: P.intl.string(P.t.cTaRxM),
-      body: P.intl.formatToPlainString(P.t["VSd+Ag"], {
+      title: P.intl.string(P.t.cTaRxF),
+      body: P.intl.formatToPlainString(P.t["VSd+Aj"], {
         quantity: e
       })
     })
@@ -108,8 +108,8 @@ let k = e => {
   },
   G = () => {
     Chunk668781.Z.show({
-      title: Chunk388032.intl.string(Chunk388032.t.ZZlox8),
-      body: Chunk388032.intl.string(Chunk388032.t.ZUEGFh)
+      title: Chunk388032.intl.string(Chunk388032.t.ZZlox4),
+      body: Chunk388032.intl.string(Chunk388032.t.ZUEGFn)
     })
   };
 
@@ -320,7 +320,7 @@ let F = {
   }),
   async createRole(e, t, n, r) {
     let l = {
-      name: null != t && "" !== t ? t : P.intl.string(P.t.QBMHvL),
+      name: null != t && "" !== t ? t : P.intl.string(P.t.QBMHvB),
       color: null != n ? n : 0,
       colors: null != r ? r : {
         primary_color: null != n ? n : 0,

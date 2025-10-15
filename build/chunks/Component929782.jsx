@@ -78,15 +78,15 @@ function T() {
 
 function S() {
   return !Chunk131951.Z.isSupported() && ((0, Chunk481060.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(y({
-    header: E.intl.string(E.t.ilMTy8),
-    confirmText: E.intl.string(E.t.BK8LKy),
-    cancelText: E.intl.string(E.t["ETE/oK"]),
+    header: E.intl.string(E.t.ilMTy0),
+    confirmText: E.intl.string(E.t["BK8LK+"]),
+    cancelText: E.intl.string(E.t["ETE/oC"]),
     onConfirm: T,
     confirmButtonColor: i.zx.Colors.BRAND
   }, e), {
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
-      children: E.intl.string(E.t.h66vlJ)
+      children: E.intl.string(E.t.h66vlB)
     })
   }))), true)
 }

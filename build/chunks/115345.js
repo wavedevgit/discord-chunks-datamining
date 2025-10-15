@@ -217,8 +217,8 @@ async function H(e, t) {
     } else n()
   } catch (e) {
     I.Z.captureException(e), c.Z.show({
-      title: L.intl.string(L.t.j2d6Ki),
-      body: L.intl.string(L.t.mCjLAQ),
+      title: L.intl.string(L.t.j2d6Km),
+      body: L.intl.string(L.t.mCjLAR),
       onConfirm: t
     })
   }

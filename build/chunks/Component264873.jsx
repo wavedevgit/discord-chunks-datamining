@@ -29,7 +29,7 @@ function _(e) {
       onClick: () => l(m.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       }),
-      children: p.intl.string(p.t.dKhVQE)
+      children: p.intl.string(p.t.dKhVQN)
     })
   }
   return ((0, c.ZP)(() => {
@@ -50,10 +50,10 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: p.intl.string(p.t["f/54a2"])
+      children: p.intl.string(p.t["f/54az"])
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: p.intl.string(p.t.i3ehMj)
+      children: p.intl.string(p.t.i3ehMr)
     }), x()]
   }) : "succeeded" === a ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
@@ -62,14 +62,14 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: p.intl.string(p.t.iG0SlJ)
+      children: p.intl.string(p.t.iG0SlK)
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: p.intl.string(p.t["Elv+qq"])
+      children: p.intl.string(p.t["Elv+qt"])
     }), x()]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: p.intl.string(p.t["9exy+f"])
+      children: p.intl.string(p.t["9exy+V"])
     })]
   })
 }

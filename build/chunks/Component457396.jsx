@@ -138,7 +138,7 @@ let F = e => {
       let e = (0, A.$q)();
       n = (0, r.jsx)(L._y, {
         isTabSelected: Y,
-        badgeCopy: V.intl.string(V.t.OS9KPj),
+        badgeCopy: V.intl.string(V.t.OS9KPu),
         offerExpiresAt: true === e ? null == er ? true : er.expires_at : null
       }), y = 4
     } else eC === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || eC === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE || eC === o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(L._y, {
@@ -168,7 +168,7 @@ let F = e => {
     }), y = 4);
     eu && (n = (0, r.jsx)(L._y, {
       isTabSelected: Y,
-      badgeCopy: V.intl.string(V.t.RDE0SU),
+      badgeCopy: V.intl.string(V.t.RDE0Sc),
       offerExpiresAt: null
     }), y = 4, ej = () => {
       E.default.track(B.rMx.NITRO_TAB_VISITED, {
@@ -199,7 +199,7 @@ let F = e => {
       route: K,
       icon: s.SrA,
       text: (0, r.jsx)(f.Z, {
-        children: et ? V.intl.string(V.t["4gwVVl"]) : V.intl.string(V.t.Ipxkoq)
+        children: et ? V.intl.string(V.t["4gwVVn"]) : V.intl.string(V.t.Ipxkog)
       }),
       locationState: Q,
       onClick: ej

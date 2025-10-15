@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk49012 = require("./49012.js"),
   Chunk905551 = require("./905551.js"),
   Chunk619733 = require("./619733.js"),
-  Chunk948208 = require("./948208.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(t) {
@@ -32,8 +32,8 @@ function p(t) {
     return i
   }(t, ["provider", "onAccept"]);
   return (0, n.jsx)(o.Modal, {
-    title: u.intl.string(c.default.ny8Szc),
-    subtitle: u.intl.format(c.default.D3STV1, {
+    title: u.intl.string(c.default.ny8Szd),
+    subtitle: u.intl.format(c.default.D3STVx, {
       provider: (0, i.De)(e),
       providerUrl: () => (0, l.q)({
         href: a.nd[e]
@@ -46,7 +46,7 @@ function p(t) {
       onClick: p.onClose,
       variant: "secondary"
     }, {
-      text: u.intl.string(c.default.K1xIXV),
+      text: u.intl.string(c.default.K1xIXf),
       onClick: () => {
         (0, s.WY)(true, e), null == r || r(), p.onClose()
       },

@@ -108,7 +108,7 @@ function P(e) {
   } = n.springs, c = t.features.has(v.oNc.DISCOVERABLE), p = (0, r.jsx)("div", {
     className: C.communityInfo,
     children: c && (0, r.jsx)(u.u, {
-      text: x.intl.string(x.t.O8lDIy),
+      text: x.intl.string(x.t.O8lDI2),
       position: "right",
       children: (0, r.jsxs)("div", {
         className: C.communityInfoPill,
@@ -121,7 +121,7 @@ function P(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: x.intl.string(x.t["B/vjCg"])
+          children: x.intl.string(x.t["B/vjCu"])
         })]
       })
     })
@@ -199,7 +199,7 @@ function T(e) {
         ringTarget: c,
         offset: 4
       },
-      "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
+      "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
         guildName: null != (t = null == i ? true : i.name) ? t : ""
       })
     }), (0, r.jsx)("div", {
@@ -239,7 +239,7 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.P3F, {
       className: C.guildDropdown,
-      "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
+      "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
         guildName: null != (t = null == o ? true : o.name) ? t : ""
       }),
       "aria-controls": p,
@@ -259,7 +259,7 @@ function R(e) {
         children: m
       })]
     }), !A.includes(o.id) && (0, r.jsx)(u.u, {
-      text: x.intl.string(x.t.Sd8Ix8),
+      text: x.intl.string(x.t.Sd8Ixw),
       position: "bottom",
       asContainer: true,
       children: (0, r.jsx)(d.P3F, {
@@ -294,10 +294,10 @@ let D = Chunk647438.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
-      F(false)
+    if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
+      V(false)
     }, 5e3), () => {
       clearTimeout(K.current)
     }
@@ -364,16 +364,16 @@ let D = Chunk647438.memo(function(e) {
           guild: j,
           controller: l,
           guildBanner: x,
-          animate: V
+          animate: F
         }) : null, (0, r.jsx)(L, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
         className: C.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          F(true), clearTimeout(K.current)
+          V(true), clearTimeout(K.current)
         },
-        onMouseLeave: () => F(false),
+        onMouseLeave: () => V(false),
         style: {
           height: N
         }

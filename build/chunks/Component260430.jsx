@@ -61,7 +61,7 @@ function h(e) {
   } = e, b = (0, u.Z)(() => d.ZW[Math.floor(Math.random() * d.ZW.length)]);
   if (0 === i.length) return null;
   let y = b(),
-    O = g ? f.t.PZpY9f : f.t["1Hz+Sk"],
+    O = g ? f.t.PZpY9c : f.t["1Hz+Sl"],
     v = h === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
     className: a()(_.scopes, E ? _.noDivider : true),
@@ -78,7 +78,7 @@ function h(e) {
         error: 0 === n ? null == m || null == (i = m[e]) ? true : i[0] : true
       }, "".concat(e, "-").concat(n))
     })).flat(), v && (0, r.jsx)(p, {
-      text: f.intl.string(f.t.Ls2XRk)
+      text: f.intl.string(f.t.Ls2XRq)
     }), (0, r.jsx)(p, {
       text: y,
       isFake: true

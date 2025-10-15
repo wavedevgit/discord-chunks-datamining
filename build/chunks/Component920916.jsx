@@ -1,7 +1,7 @@
 /** Chunk was on 83175 **/
 /** chunk id: 920916, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => q
+  default: () => W
 }), require("./457542.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -88,7 +88,7 @@ function U(e) {
           children: (0, a.jsx)(c.$jN, {
             type: c.$jN.Type.SPINNING_CIRCLE
           })
-        }) : (0, a.jsx)(W, {
+        }) : (0, a.jsx)(H, {
           quest: s,
           user: N,
           decoration: p,
@@ -102,13 +102,13 @@ function U(e) {
     }), !w && !b && "claimed" === T && (0, a.jsx)(x.Z, {
       confettiTarget: h.current,
       confettiCanvas: C,
-      sprites: k.CA,
-      colors: k.Br
+      sprites: O.CA,
+      colors: O.Br
     })]
   })
 }
 
-function H(e) {
+function q(e) {
   let {
     quest: n
   } = e, t = o.useMemo(() => (0, B.fh)(n, B.eC.LOGO_TYPE, "dark"), [n]), r = A.r.build(n.config).defaultRewardRedemptionInstructionsByPlatform[y.y$.CROSS_PLATFORM];
@@ -128,7 +128,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function H(e) {
   let {
     quest: n,
     user: t,
@@ -177,7 +177,7 @@ function W(e) {
           variant: "heading-lg/bold",
           color: "header-primary",
           className: F.heading,
-          children: D.intl.string(D.t["0/Yz+f"])
+          children: D.intl.string(D.t["0/Yz+Y"])
         }), (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -185,22 +185,22 @@ function W(e) {
           children: _
         }), (0, a.jsx)(c.Button, {
           variant: "primary",
-          text: D.intl.string(D.t.MAS7uL),
+          text: D.intl.string(D.t.MAS7uK),
           loading: r,
           onClick: l
-        }), (0, R.zK)(n, M.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(H, {
+        }), (0, R.zK)(n, M.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(q, {
           quest: n
         }), d && !m && (0, a.jsx)(C.p, {
           className: F.upsell,
-          upsellText: D.intl.format(D.t.VHXn7O, {
+          upsellText: D.intl.format(D.t.VHXn7C, {
             onNitroClick: () => {
               (0, N.openUserSettings)(w.n.NITRO_PANEL, {
-                section: O.oAB.PREMIUM
+                section: k.oAB.PREMIUM
               }), i()
             }
           }),
           buttonAnalyticsObject: {
-            section: O.jXE.PERMADECOS_MARKETING_UPSELL
+            section: k.jXE.PERMADECOS_MARKETING_UPSELL
           }
         })]
       })
@@ -208,7 +208,7 @@ function W(e) {
   })
 }
 
-function q(e) {
+function W(e) {
   var n, t;
   let {
     quest: r,

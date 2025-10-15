@@ -44,7 +44,7 @@ let g = function(e) {
       }) : (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "text-muted",
-        children: h.intl.string(h.t.Cyxddn)
+        children: h.intl.string(h.t.Cyxddp)
       }), (0, r.jsxs)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
@@ -54,7 +54,7 @@ let g = function(e) {
       maxUsers: 4,
       users: y,
       guildId: g,
-      "aria-label": h.intl.string(h.t.WTozwc)
+      "aria-label": h.intl.string(h.t.WTozwe)
     })]
   })
 }

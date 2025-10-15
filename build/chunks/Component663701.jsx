@@ -64,7 +64,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk686918 = require("./686918.js");
 
 function ed(e) {
@@ -155,7 +155,7 @@ let eh = e => {
         selected: t,
         route: ei.Z5c.FRIENDS,
         icon: g.iFz,
-        text: es.intl.string(es.t.TdEu5e),
+        text: es.intl.string(es.t.TdEu5X),
         onMouseEnter: () => {
           m(true)
         },
@@ -198,7 +198,7 @@ let eh = e => {
       selected: t,
       route: ei.Z5c.APPLICATION_LIBRARY,
       icon: g.vqy,
-      text: es.intl.string(es.t.cw57am)
+      text: es.intl.string(es.t.cw57ar)
     }, i, l), {
       children: (0, r.jsx)(er.Z, {
         className: a()(eu.downloadProgressCircle, {
@@ -235,7 +235,7 @@ let eh = e => {
       selected: t,
       route: ei.Z5c.MESSAGE_REQUESTS,
       icon: g._XJ,
-      text: es.intl.string(es.t.e7GWjY),
+      text: es.intl.string(es.t.e7GWjQ),
       onClick: l
     }, n), {
       children: (0, r.jsx)(eb, {})
@@ -278,7 +278,7 @@ let eh = e => {
             return t => (0, r.jsx)(e, ed({}, t))
           })
         },
-        "aria-label": es.intl.string(es.t.cpT0Cg),
+        "aria-label": es.intl.string(es.t.cpT0Cq),
         icon: g.Dio
       })
     }) : i > 0 ? (0, r.jsx)("div", {
@@ -332,7 +332,7 @@ let eI = Chunk647438.memo(function(e) {
   } = e, _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), y = i.useRef(null);
   return (0, r.jsxs)("nav", {
     className: eu.privateChannels,
-    "aria-label": es.intl.string(es.t.ZH9aPz),
+    "aria-label": es.intl.string(es.t.ZH9aP4),
     children: [(0, r.jsx)(z.Z, {
       childRef: _,
       tutorialId: "direct-messages",
@@ -350,7 +350,7 @@ let eI = Chunk647438.memo(function(e) {
           fullWidth: true,
           onClick: ev,
           children: (0, r.jsx)(I.Z, {
-            children: es.intl.string(es.t.LzcpeX)
+            children: es.intl.string(es.t.LzcpeZ)
           })
         })
       })

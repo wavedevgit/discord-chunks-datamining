@@ -56,8 +56,8 @@ function C() {
       value: e
     } = t;
     i(e)
-  }, [Chunk913527]), O = Chunk481060.status === Chunk981631.O0b.PAUSED ? Chunk388032.intl.string(Chunk388032.t.Lp9WoK) : Chunk388032.intl.string(Chunk388032.t.eSR83d), b = function(t) {
-    let e = t.status === p.O0b.PAUSED ? S.t.o3upfX : S.t.dBXZEh,
+  }, [Chunk913527]), O = Chunk481060.status === Chunk981631.O0b.PAUSED ? Chunk388032.intl.string(Chunk388032.t.Lp9WoG) : Chunk388032.intl.string(Chunk388032.t.eSR83U), b = function(t) {
+    let e = t.status === p.O0b.PAUSED ? S.t.o3upfT : S.t.dBXZEm,
       {
         durations: n,
         currentDaysPaused: a
@@ -74,7 +74,7 @@ function C() {
       })
     }
     return r.sort((t, e) => t.value - e.value), r.push({
-      name: S.intl.string(S.t.OCPUMz),
+      name: S.intl.string(S.t.OCPUM6),
       value: 0,
       radioBarClassName: y.cancelText,
       radioItemIconClassName: y.cancelText
@@ -84,19 +84,19 @@ function C() {
     b.length < 1 || Chunk913527(b[0].value)
   }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
     transitionState: module,
-    title: Chunk388032.intl.string(Chunk388032.t.f3nnBw),
+    title: Chunk388032.intl.string(Chunk388032.t["f3nnB/"]),
     subtitle: Chunk74538,
     onClose: async () => {
       await exports()
     },
     actions: [{
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
+      text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
       onClick: exports
     }, {
       variant: "primary",
       disabled: null === l,
-      text: Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
+      text: Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
       onClick: () => {
         0 === l ? require(Chunk45474.R.WHAT_YOU_LOSE) : require(Chunk45474.R.PAUSE_CONFIRM)
       }
@@ -122,35 +122,35 @@ function P() {
   if (null == require) return void Chunk755721(Chunk45474.R.PAUSE_SELECT);
   let P = null,
     R = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED].includes(Chunk913527.status) ? Chunk913527.currentPeriodStart : Chunk913527.currentPeriodEnd,
-    v = l()(R).add(require, "days").toDate();
+    T = l()(R).add(require, "days").toDate();
   switch (Chunk913527.status) {
     case Chunk981631.O0b.PAST_DUE:
       P = Chunk388032.intl.format(Chunk388032.t["xaS18/"], {
         pauseDuration: require,
-        resumeDate: v
+        resumeDate: T
       });
       break;
     case Chunk981631.O0b.PAUSED:
-      P = Chunk388032.intl.format(Chunk388032.t.Vur3FR, {
-        resumeDate: v
+      P = Chunk388032.intl.format(Chunk388032.t.Vur3Fc, {
+        resumeDate: T
       });
       break;
     default:
-      P = Chunk388032.intl.format(Chunk388032.t.W85vFB, {
+      P = Chunk388032.intl.format(Chunk388032.t.W85vFA, {
         pauseDate: R,
-        resumeDate: v,
+        resumeDate: T,
         pauseDuration: require
       })
   }
   return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
-    title: Chunk388032.intl.string(Chunk388032.t["AnMG5+"]),
+    title: Chunk388032.intl.string(Chunk388032.t.AnMG5x),
     transitionState: module,
     actions: [{
-      text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
+      text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
       variant: "primary",
       onClick: exports
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t["cY+Ooa"]),
+      text: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
       variant: "critical-primary",
       disabled: Chunk296848 || null == require,
       onClick: async () => {
@@ -171,7 +171,7 @@ function P() {
     children: [Chunk493773 ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.ERROR,
       className: Chunk353680.errorBlock,
-      children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
+      children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
     }) : null, (0, Chunk951288.jsx)("div", {
       className: Chunk353680.body,
       children: P

@@ -63,7 +63,7 @@ function g(e) {
               color: "text-brand",
               tag: "span",
               className: m.username,
-              children: h.intl.string(h.t.hG1StL)
+              children: h.intl.string(h.t.hG1StD)
             }), (0, r.jsx)(l.Z, {
               type: p.Hb.SYSTEM_DM,
               className: m.systemTag
@@ -75,7 +75,7 @@ function g(e) {
           className: a()(m.__invalid_messageContent, {
             [m.compact]: i
           }),
-          children: h.intl.format(h.t.W0UBIy, {
+          children: h.intl.format(h.t.W0UBI3, {
             username: y.nick,
             usernameHook: O,
             guildName: null != (t = null == b ? true : b.name) ? t : ""

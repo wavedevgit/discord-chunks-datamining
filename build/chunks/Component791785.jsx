@@ -208,7 +208,7 @@ function J(e) {
       let e = (0, R.MY)(eH) === R.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
       N.default.track(F.rMx.PAYMENT_FLOW_SUCCEEDED, q(K({}, eQ), {
-        is_custom_message_edited: eV && e && null != eY ? eY !== H.intl.string(H.t.ZkOo1d) : true,
+        is_custom_message_edited: eV && e && null != eY ? eY !== H.intl.string(H.t.ZkOo1U) : true,
         is_custom_emoji_sound_available: eV && e,
         emoji_name: eV && e && (null == eW ? true : eW.id) == null ? null == eW ? true : eW.surrogates : true,
         sound_id: eV && e ? null == eK ? true : eK.soundId : true,

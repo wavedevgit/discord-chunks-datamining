@@ -21,7 +21,7 @@ function p(t) {
   return (0, n.jsx)(a.II_, {
     id: "opacity",
     "aria-haspopup": true,
-    label: u.intl.string(u.t.OVovCQ),
+    label: u.intl.string(u.t.OVovCb),
     control: (r, o) => {
       var i, l;
       return (0, n.jsx)(a._wy, (i = function(t) {
@@ -51,7 +51,7 @@ function p(t) {
             opacity: r / 100
           }), e(Math.floor(r))
         },
-        "aria-label": u.intl.string(u.t.kbFsAA)
+        "aria-label": u.intl.string(u.t.kbFsAD)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
         var r = Object.keys(t);
         if (Object.getOwnPropertySymbols) {

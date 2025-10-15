@@ -77,7 +77,7 @@ function P(e) {
       action: () => (0, m.openUserSettings)(g.n.CONNECTIONS_PANEL, {
         section: C.oAB.CONNECTIONS
       }),
-      label: S.intl.formatToPlainString(S.t.XWSHTU, {
+      label: S.intl.formatToPlainString(S.t.XWSHTb, {
         platform: j
       })
     })
@@ -132,7 +132,7 @@ function P(e) {
         id: "join-".concat(i.session_id),
         label: t ? S.intl.formatToPlainString(S.t.wFAvxM, {
           name: l.toString()
-        }) : S.intl.string(S.t.OKsSCQ),
+        }) : S.intl.string(S.t.OKsSCR),
         action: c
       })
     }(e, n), function(e, t) {
@@ -146,9 +146,9 @@ function P(e) {
         isLaunching: u
       } = e;
       if (!s || null == n) return null;
-      let d = c ? S.intl.formatToPlainString(S.t["gBme//"], {
+      let d = c ? S.intl.formatToPlainString(S.t["gBme/4"], {
         name: i.name
-      }) : u ? S.intl.formatToPlainString(S.t.WtSQwM, {
+      }) : u ? S.intl.formatToPlainString(S.t.WtSQwG, {
         name: i.name
       }) : true;
       return (0, r.jsx)(a.sNh, {
@@ -162,9 +162,9 @@ function P(e) {
             }
           })
         },
-        label: t ? S.intl.formatToPlainString(S.t.ZDZEJC, {
+        label: t ? S.intl.formatToPlainString(S.t.ZDZEJN, {
           name: i.name
-        }) : S.intl.string(S.t.XKUw8v),
+        }) : S.intl.string(S.t.XKUw8m),
         subtext: d
       })
     }(e, n))

@@ -55,7 +55,7 @@ function S(e) {
   let {
     onSourceSelect: t
   } = e;
-  (0, f.UB)(), (0, p.Z)(t, g.Vq);
+  (0, f.UB)(), (0, p.Z)(t, x.Vq);
   let [{
     nativeSourceType: n
   }, i] = (0, m.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, _.jR);
@@ -65,14 +65,14 @@ function S(e) {
       className: v.header,
       variant: "heading-lg/semibold",
       color: "text-default",
-      children: x.intl.string(x.t.XyYoFR)
+      children: g.intl.string(g.t.XyYoFc)
     }), l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xvT, {
         className: v.body,
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: x.intl.format(x.t.sbbPhY, {
-          buttonName: x.intl.string(x.t.FiBjwc)
+        children: g.intl.format(g.t.sbbPhW, {
+          buttonName: g.intl.string(g.t.FiBjwU)
         })
       }), (0, r.jsx)(h.Z, {})]
     }) : (0, r.jsxs)("div", {
@@ -86,7 +86,7 @@ function S(e) {
           })
         },
         id: "screen",
-        text: x.intl.string(x.t.cVUFXV),
+        text: g.intl.string(g.t.cVUFXY),
         icon: c.pzj
       }), (0, r.jsx)(j, {
         selected: "window" === n,
@@ -97,7 +97,7 @@ function S(e) {
           })
         },
         id: "window",
-        text: x.intl.string(x.t.dG2A1N),
+        text: g.intl.string(g.t.dG2A1E),
         icon: c.GON
       })]
     })]

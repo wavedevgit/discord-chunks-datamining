@@ -99,7 +99,7 @@ function j(e) {
       }, e))
     })]
   }) : !c && 0 === d.length || _ ? null : (0, i.jsx)(g.Modal, {
-    title: I.intl.string(I.t["D+DkEB"]),
+    title: I.intl.string(I.t["D+DkEH"]),
     transitionState: n,
     onClose: r,
     actions: [],

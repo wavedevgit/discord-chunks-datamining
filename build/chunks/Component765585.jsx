@@ -45,7 +45,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
     dismissIcon: k,
     onDismissIconClick: G,
     tryItButtonColor: U
-  } = e, B = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [V, F] = i.useState(false), {
+  } = e, B = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [F, V] = i.useState(false), {
     ref: H,
     width: z
   } = (0, c.ZP)();
@@ -61,8 +61,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
   return i.useEffect(() => {
     var e, t;
     let n = (null != (t = null == (e = H.current) ? true : e.scrollWidth) ? t : 0) + 64;
-    !V && n > R && F(true)
-  }, [V, z, H, R]), i.useEffect(() => {
+    !F && n > R && V(true)
+  }, [F, z, H, R]), i.useEffect(() => {
     (0, p.kk)(N)
   }, [N]), (0, r.jsx)("div", {
     className: C,
@@ -101,7 +101,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
               className: m.earlyAccessIcon
             }), (0, r.jsx)("span", {
               className: m.earlyAccessText,
-              children: g.intl.string(g.t.phHyIS)
+              children: g.intl.string(g.t.phHyIY)
             })]
           }) : null, l]
         }), null == n ? null : "string" == typeof n ? (0, r.jsx)(s.Text, {
@@ -111,7 +111,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         }) : n]
       }), (0, r.jsx)("div", {
         ref: H,
-        className: V || !I ? m.buttonContainerVertical : m.buttonContainerHorizontal,
+        className: F || !I ? m.buttonContainerVertical : m.buttonContainerHorizontal,
         children: null != j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,
@@ -120,7 +120,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
               null == x || x(e), j(e), W(f.L.PRIMARY)
             },
             color: null != U ? U : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
-            children: null != y ? y : g.intl.string(g.t.IHf1RE)
+            children: null != y ? y : g.intl.string(g.t.IHf1RN)
           }), !D && (0, r.jsx)(a.zx, {
             className: m.button,
             size: B,
@@ -129,7 +129,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             },
             color: S || A ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S || A ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
-            children: null != v ? v : g.intl.string(g.t.om7Ovr)
+            children: null != v ? v : g.intl.string(g.t.om7Ovn)
           })]
         }) : (0, r.jsx)(a.zx, {
           className: m.button,
@@ -138,7 +138,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             null == x || x(e), W(f.L.PRIMARY)
           },
           color: a.zx.Colors.WHITE,
-          children: g.intl.string(g.t.HU2IR0)
+          children: g.intl.string(g.t.HU2IR5)
         })
       }), (0, r.jsx)("div", {
         className: o()(m.pointer, L, {

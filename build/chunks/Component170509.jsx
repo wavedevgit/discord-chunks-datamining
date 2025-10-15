@@ -51,9 +51,9 @@ function c(e) {
     }
     return e
   }({
-    header: a.intl.string(a.t.YWMtRU),
-    confirmText: a.intl.string(a.t.eW8Gy8),
-    cancelText: a.intl.string(a.t.s4uM3d),
+    header: a.intl.string(a.t.YWMtRe),
+    confirmText: a.intl.string(a.t.eW8Gy4),
+    cancelText: a.intl.string(a.t.s4uM3b),
     confirmButtonColor: i.zx.Colors.BRAND
   }, d), n = n = {
     children: (0, r.jsx)(l.Text, {

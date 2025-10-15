@@ -31,11 +31,11 @@ function b(e, t) {
   if (t) return i;
   switch (r) {
     case m.rV.MONTH:
-      return g.intl.formatToPlainString(g.t.AbOLNj, {
+      return g.intl.formatToPlainString(g.t.AbOLNu, {
         price: i
       });
     case m.rV.YEAR:
-      return g.intl.formatToPlainString(g.t.rS8FAw, {
+      return g.intl.formatToPlainString(g.t["rS8FA+"], {
         price: i
       })
   }
@@ -44,10 +44,10 @@ let y = e => {
     let {
       isTier0: t,
       discountAmount: n
-    } = e, i = (0, h.N)(), s = null != i && i.trial_id === m.a7, l = g.intl.string(g.t.IBYG5e);
-    return true !== n ? l = g.intl.formatToPlainString(g.t.iiLbvr, {
+    } = e, i = (0, h.N)(), s = null != i && i.trial_id === m.a7, l = g.intl.string(g.t.IBYG5U);
+    return true !== n ? l = g.intl.formatToPlainString(g.t.iiLbvu, {
       percent: n
-    }) : s && (l = g.intl.string(g.t.gtNqJS)), (0, r.jsx)("div", {
+    }) : s && (l = g.intl.string(g.t.gtNqJQ)), (0, r.jsx)("div", {
       className: E.trialBadgeContainer,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/bold",

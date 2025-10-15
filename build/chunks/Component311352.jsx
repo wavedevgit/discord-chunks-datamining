@@ -71,7 +71,7 @@ let x = e => {
           position: "top",
           header: (0, r.jsx)("div", {
             className: v.header,
-            children: y.intl.format(y.t["o+srEx"], {
+            children: y.intl.format(y.t["o+srEw"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
                 className: v.keybindHintKeys,
@@ -87,7 +87,7 @@ let x = e => {
             variant: "text-sm/normal",
             color: "always-white",
             className: v.bodyText,
-            children: y.intl.format(y.t.DWeRm5, {
+            children: y.intl.format(y.t.DWeRm1, {
               keybindHook: () => (0, r.jsx)("div", {
                 className: v.keyCombo,
                 children: t
@@ -126,9 +126,9 @@ let x = e => {
       children: (0, Chunk951288.jsx)(Chunk870569.Z, {
         ref: module,
         disabled: Chunk765585,
-        tooltipText: null != Chunk611372 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv7, {
+        tooltipText: null != Chunk611372 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {
           hotkey: Chunk13140.BB(null == Chunk611372 ? true : Chunk611372.shortcut, true)
-        }) : Chunk388032.intl.string(Chunk388032.t.s52pjo),
+        }) : Chunk388032.intl.string(Chunk388032.t.s52pju),
         onClick: () => {
           (0, Chunk39604.C1)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
         },

@@ -429,7 +429,7 @@ async function q(e, t) {
 async function X(e, t, n, r) {
   let i = (0, S.dg)(n),
     a = e => {
-      null == r || r(i, e), m.yr(t, M.evJ.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdX, {
+      null == r || r(i, e), m.yr(t, M.evJ.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {
         maxSize: (0, S.Ng)(i)
       }))
     },
@@ -441,7 +441,7 @@ async function X(e, t, n, r) {
   try {
     await (0, d.Z)(e)
   } catch (n) {
-    m.yr(t, true, k.intl.formatToPlainString(k.t["9h1/1t"], {
+    m.yr(t, true, k.intl.formatToPlainString(k.t["9h1/1p"], {
       count: e.length
     }))
   }

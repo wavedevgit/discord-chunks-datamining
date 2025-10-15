@@ -1,8 +1,8 @@
 /** Chunk was on 10778 **/
 /** chunk id: 306453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => g,
-  Z: () => x
+  D: () => f,
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk930029 = require("./930029.js"),
   Chunk197571 = require("./197571.js");
 
-function h() {
+function L() {
   return (0, Chunk951288.jsx)(Chunk297700.Z, {
     className: Chunk930029.verifiedIcon,
     children: (0, Chunk951288.jsx)("div", {
@@ -32,18 +32,18 @@ function h() {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     verified: t,
     text: n
   } = e;
   return t ? (0, r.jsxs)("div", {
     className: m.verifiedNameContainer,
-    children: [(0, r.jsx)(h, {}), n]
+    children: [(0, r.jsx)(L, {}), n]
   }) : n
 }
 
-function g(e) {
+function f(e) {
   let {
     className: t,
     count: n,
@@ -55,28 +55,28 @@ function g(e) {
     children: null != i || null != s ? C.intl.format(C.t.TTcKAw, {
       usageCount: n,
       creator: null != s ? s : i,
-      creatorHook: (e, t) => (0, r.jsx)(f, {
+      creatorHook: (e, t) => (0, r.jsx)(h, {
         text: e,
         verified: null != s
       }, t)
-    }) : C.intl.format(C.t.cGXXHB, {
+    }) : C.intl.format(C.t.cGXXHL, {
       usageCount: n
     })
   })
 }
 
-function x(e) {
+function g(e) {
   var t;
   let {
     guildTemplate: n,
     error: i,
     tall: c,
-    pillClassName: h
+    pillClassName: L
   } = e;
   if (null != i && "" !== i) return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(a.Dx, {
-      children: C.intl.string(C.t.mDFGFh)
+      children: C.intl.string(C.t.mDFGFj)
     }), (0, r.jsx)(a.DK, {
       children: i
     })]
@@ -85,23 +85,23 @@ function x(e) {
     className: m.container,
     children: (0, r.jsx)(s.$jN, {})
   });
-  let f = (0, u.Z)(n.code).header;
+  let h = (0, u.Z)(n.code).header;
   return c ? (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(a.Dx, {
       className: m.title,
-      children: f
+      children: h
     }), (0, r.jsx)(a.DK, {
-      className: l()(m.subtitle, L.__invalid_marginTop2),
-      children: C.intl.string(C.t["h+vyOz"])
+      className: l()(m.subtitle, x.__invalid_marginTop2),
+      children: C.intl.string(C.t["h+vyO6"])
     }), (0, r.jsx)(a.Dx, {
       className: l()(m.title, m.userText),
       children: n.name
     }), null != n.description && "" !== n.description && (0, r.jsx)(a.DK, {
-      className: l()(m.subtitle, m.userText, L.marginTop8),
+      className: l()(m.subtitle, m.userText, x.marginTop8),
       children: n.description
-    }), (0, r.jsx)(g, {
-      className: h,
+    }), (0, r.jsx)(f, {
+      className: L,
       count: null != (t = n.usageCount) ? t : 0,
       creator: n.creator.username,
       verifiedName: (0, d.R)(n.code)
@@ -110,7 +110,7 @@ function x(e) {
     className: m.container,
     children: [(0, r.jsx)(a.Dx, {
       className: m.title,
-      children: f
+      children: h
     }), (0, r.jsx)(a.DK, {
       className: l()(m.subtitle, m.userText),
       children: n.name

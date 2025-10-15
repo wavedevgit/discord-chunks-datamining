@@ -1,7 +1,7 @@
 /** Chunk was on 56848 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => J
+  Z: () => Q
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,7 +63,7 @@ function C(e, t) {
   }), e
 }
 let D = /{{(.*?)}}/g,
-  k = [{
+  Z = [{
     type: "HERO",
     title: "{{username}}",
     image: "{{featured_played_character_image}}",
@@ -158,7 +158,7 @@ let D = /{{(.*?)}}/g,
     }]
   }];
 
-function Z(e) {
+function k(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
@@ -190,11 +190,11 @@ function _(e) {
         body: L(n)
       }));
     case "GRID":
-      return (0, r.jsx)(M, {
+      return (0, r.jsx)(U, {
         children: L(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(U, {
+      return (0, r.jsx)(M, {
         value: R(t.value),
         name: R(t.name)
       });
@@ -205,7 +205,7 @@ function _(e) {
     case "SEPARATOR":
       return (0, r.jsx)(B, N({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(H, {})
+      return (0, r.jsx)(z, {})
   }
 }
 
@@ -240,7 +240,7 @@ function G(e) {
         color: "muted",
         children: n
       })]
-    }), Z(i) ? (0, r.jsx)("div", {
+    }), k(i) ? (0, r.jsx)("div", {
       className: A.heroImageContainer,
       children: (0, r.jsx)(x.ZP, {
         src: i.proxyUrl,
@@ -263,7 +263,7 @@ function G(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     children: t
   } = e;
@@ -273,7 +273,7 @@ function M(e) {
   })
 }
 
-function U(e) {
+function M(e) {
   let {
     name: t,
     value: n
@@ -301,7 +301,7 @@ function F(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, l = (0, v._)(), s = Z(n) ? (0, r.jsx)("div", {
+  } = e, l = (0, v._)(), s = k(n) ? (0, r.jsx)("div", {
     className: a()(A.image, l.className),
     children: (0, r.jsx)(x.ZP, {
       src: n.proxyUrl,
@@ -334,7 +334,7 @@ function B(e) {
   })
 }
 
-function H() {
+function z() {
   let e = function() {
       let e = Chunk647438.useContext(V);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
@@ -351,7 +351,7 @@ function H() {
   })
 }
 
-function z(e, t) {
+function H(e, t) {
   if (null == e) return null;
   let n = e.split(D);
   if (1 === n.length) return n[0];
@@ -439,7 +439,7 @@ function X(e) {
     })]
   })
 }
-let J = Object.assign(function(e) {
+let Q = Object.assign(function(e) {
   let {
     user: t,
     widget: n,
@@ -460,7 +460,7 @@ let J = Object.assign(function(e) {
     hasAlreadyLinked: I,
     canStartAuthorization: S,
     startAuthorization: E
-  } = (0, d.FG)(u), D = null == s && x && !I && S, Z = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(u), D = null == s && x && !I && S, k = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: A.appIcon,
       src: h,
@@ -477,15 +477,15 @@ let J = Object.assign(function(e) {
     })]
   }), R = null == f ? (0, r.jsx)("div", {
     className: A.header,
-    children: Z
+    children: k
   }) : (0, r.jsx)(o.u, {
     asContainer: true,
-    text: T.intl.string(T.t.ajHoOj),
+    text: T.intl.string(T.t.ajHoOr),
     children: (0, r.jsx)(c.P3F, {
       className: a()(A.header, A.headerClickable),
       onClick: j,
-      "aria-label": T.intl.string(T.t.ajHoOj),
-      children: Z
+      "aria-label": T.intl.string(T.t.ajHoOr),
+      children: k
     })
   }), L = i.useMemo(() => {
     var e, t, n, r, i;
@@ -515,12 +515,12 @@ let J = Object.assign(function(e) {
       }).filter(P.lm)),
       config: t
     });
-    return k.map(function e(t) {
+    return Z.map(function e(t) {
       switch (t.type) {
         case "HERO":
           var n;
           return {
-            type: "HERO", body: t.body.map(e), title: z(t.title, l), image: Y(t.image, l), imagePlaceholder: null == (n = l.config) ? true : n.hero_placeholder_image
+            type: "HERO", body: t.body.map(e), title: H(t.title, l), image: Y(t.image, l), imagePlaceholder: null == (n = l.config) ? true : n.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -532,11 +532,11 @@ let J = Object.assign(function(e) {
           };
         case "TEXT":
           return {
-            type: "TEXT", content: z(t.content, l)
+            type: "TEXT", content: H(t.content, l)
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: z(t.content, l), image: Y(t.image, l), imagePosition: t.imagePosition
+            type: "TEXT_WITH_IMAGE", content: H(t.content, l), image: Y(t.image, l), imagePosition: t.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
@@ -572,13 +572,13 @@ let J = Object.assign(function(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: T.intl.string(T.t.z5K4Ul)
+          children: T.intl.string(T.t.z5K4Uv)
         })]
       }), D ? (0, r.jsx)(X, {
-        heading: T.intl.string(T.t.UDPRLC),
-        content: T.intl.string(T.t["OW/2am"]),
+        heading: T.intl.string(T.t.UDPRLO),
+        content: T.intl.string(T.t["OW/2al"]),
         buttons: (0, r.jsx)(c.Button, {
-          text: T.intl.string(T.t.S0W8Z2),
+          text: T.intl.string(T.t.S0W8Z5),
           onClick: E
         })
       }) : s]

@@ -59,8 +59,8 @@ function D(e) {
     x(null), Z(0), clearTimeout(j)
   };
   if (null == d) return null;
-  let k = T.intl.string(T.t.YUU0RE);
-  y && (k = a.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  let k = T.intl.string(T.t.YUU0RF);
+  y && (k = a.K.get(N.wli) ? T.intl.string(T.t["nkq1l+"]) : T.intl.string(T.t.Be8Q5E));
   let G = null;
   !o && b && (G = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
@@ -104,7 +104,7 @@ function D(e) {
           }
         },
         selected: U,
-        ariaLabel: T.intl.string(T.t.YUU0RE),
+        ariaLabel: T.intl.string(T.t.YUU0RF),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
       }, D), n = n = {

@@ -36,7 +36,7 @@ function u(e) {
     variant: "primary",
     size: "md",
     icon: a.v3n,
-    text: c.intl.string(c.t["jaYS/v"]),
+    text: c.intl.string(c.t["jaYS/h"]),
     onClick: f,
     fullWidth: true
   }, "cloud-play")

@@ -54,15 +54,15 @@ function _(e, t) {
 }
 let p = () => ({
     [Chunk505905.tN.BRB]: {
-      title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
+      title: Chunk388032.intl.string(Chunk388032.t.fFTJTI),
       icon: Chunk136779
     },
     [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.vybY9f),
+      title: Chunk388032.intl.string(Chunk388032.t.vybY9c),
       icon: Chunk970683.s_
     },
     [Chunk505905.tN.GAMING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.wvWdTU),
+      title: Chunk388032.intl.string(Chunk388032.t.wvWdTV),
       icon: Chunk970683.mB
     },
     [Chunk505905.tN.WATCHING]: {
@@ -70,27 +70,27 @@ let p = () => ({
       icon: Chunk829290
     },
     [Chunk505905.tN.FOCUSING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.D5eCT0),
+      title: Chunk388032.intl.string(Chunk388032.t.D5eCTx),
       icon: Chunk970683.Nl
     }
   }),
   h = () => ({
     [Chunk505905.tN.BRB]: {
-      title: Chunk388032.intl.string(Chunk388032.t.fFTJTE),
+      title: Chunk388032.intl.string(Chunk388032.t.fFTJTI),
       emoji: {
         id: true,
         name: "\uD83E\uDDFB"
       }
     },
     [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.vybY9f),
+      title: Chunk388032.intl.string(Chunk388032.t.vybY9c),
       emoji: {
         id: true,
         name: "\uD83C\uDF68"
       }
     },
     [Chunk505905.tN.GAMING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.wvWdTU),
+      title: Chunk388032.intl.string(Chunk388032.t.wvWdTV),
       emoji: {
         id: true,
         name: "⚔️"
@@ -104,7 +104,7 @@ let p = () => ({
       }
     },
     [Chunk505905.tN.FOCUSING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.D5eCT0),
+      title: Chunk388032.intl.string(Chunk388032.t.D5eCTx),
       emoji: {
         id: true,
         name: "\uD83E\uDDE0"
@@ -113,7 +113,7 @@ let p = () => ({
   }),
   m = () => _(d({}, h()), {
     [Chunk505905.tN.CHILLING]: {
-      title: Chunk388032.intl.string(Chunk388032.t.IeolFR),
+      title: Chunk388032.intl.string(Chunk388032.t.IeolFa),
       emoji: {
         id: true,
         name: "\uD83D\uDCAD"

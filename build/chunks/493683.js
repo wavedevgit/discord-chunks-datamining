@@ -173,9 +173,9 @@ let A = {
       oldFormErrors: true,
       rejectWithError: false
     }).then(() => {
-      i.uv.announce(O.intl.string(O.t.nRbucn))
+      i.uv.announce(O.intl.string(O.t.nRbucl))
     }).catch(() => {
-      i.uv.announce(O.intl.string(O.t.ndXVIy))
+      i.uv.announce(O.intl.string(O.t.ndXVI5))
     })
   },
   async updatePermissionOverwrite(e, t) {
@@ -211,7 +211,7 @@ let A = {
       },
       oldFormErrors: true,
       rejectWithError: true
-    }).then(t => (i.uv.announce(O.intl.string(O.t.cU0t1N)), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (i.uv.announce(O.intl.string(O.t["8GEden"])), e))
+    }).then(t => (i.uv.announce(O.intl.string(O.t.cU0t1F)), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (i.uv.announce(O.intl.string(O.t["8GEdej"])), e))
   },
   addRecipients(e, t, n, r) {
     return this.addRecipient(e, t[0], n, r).then(e => Promise.all(t.slice(1).map(t => this.addRecipient(e, t, n))).then(() => e))

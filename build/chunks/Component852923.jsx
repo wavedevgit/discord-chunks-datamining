@@ -33,19 +33,19 @@ function h(e) {
     className: _.blocked,
     children: (0, r.jsx)("div", {
       className: a()(_.blockedText, _.noIcon),
-      children: f.intl.string(f.t.xlJRfn)
+      children: f.intl.string(f.t.xlJRfv)
     })
   }) : o > 0 ? (0, r.jsx)("div", {
     className: _.blocked,
     children: (0, r.jsx)("div", {
       className: a()(_.blockedText, _.noIcon),
-      children: f.intl.string(f.t.WYad9f)
+      children: f.intl.string(f.t.WYad9Z)
     })
   }) : s > 0 ? (0, r.jsx)("div", {
     className: _.blocked,
     children: (0, r.jsx)("div", {
       className: a()(_.blockedText, _.noIcon),
-      children: f.intl.string(f.t.eHq2OD)
+      children: f.intl.string(f.t.eHq2OF)
     })
   }) : null
 }
@@ -55,19 +55,19 @@ function m() {
   return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     className: Chunk250043.container,
     color: Chunk481060.DM8.DEFAULT,
-    children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJS), (0, Chunk951288.jsx)(h, {
+    children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJQ), (0, Chunk951288.jsx)(h, {
       channelId: module.id
     }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
       size: "sm",
       className: Chunk250043.buttonGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "overlay-primary",
-        text: Chunk388032.intl.string(Chunk388032.t.MpO0p6),
+        text: Chunk388032.intl.string(Chunk388032.t.MpO0px),
         onClick: () => p(false)
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "secondary",
         onClick: () => p(true),
-        text: Chunk388032.intl.string(Chunk388032.t["1YDv7e"])
+        text: Chunk388032.intl.string(Chunk388032.t["1YDv7a"])
       })]
     })]
   })

@@ -33,10 +33,10 @@ function g(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: f.intl.formatToPlainString(y(e) ? f.t["1vGXqK"] : f.t.xMJylZ, {
+      title: f.intl.formatToPlainString(y(e) ? f.t["1vGXqM"] : f.t.xMJyla, {
         eventName: e.name
       }),
-      description: f.intl.formatToPlainString(f.t.PTebCQ, {
+      description: f.intl.formatToPlainString(f.t.PTebCR, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {

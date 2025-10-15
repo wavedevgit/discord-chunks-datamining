@@ -50,7 +50,7 @@ function E(e) {
         children: [(0, r.jsx)(c.u, {
           targetElementRef: v,
           shouldShow: !t,
-          text: _.intl.string(_.t.GSmTKC),
+          text: _.intl.string(_.t.GSmTKJ),
           children: (0, r.jsx)(u.P3F, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -73,7 +73,7 @@ function E(e) {
             innerRef: v,
             onClick: e,
             "data-jump-section": l,
-            "aria-label": _.intl.string(_.t.GSmTKC),
+            "aria-label": _.intl.string(_.t.GSmTKJ),
             className: a()(O.clickable, {
               [O.withHighlight]: C
             }),

@@ -22,12 +22,12 @@ let b = function(e) {
   return (0, n.jsx)(o.v2r, {
     navId: "member-application-context-menu",
     onClose: i.Zy,
-    "aria-label": u.intl.string(u.t.liqwPD),
+    "aria-label": u.intl.string(u.t.liqwPJ),
     onSelect: d,
     children: (0, n.jsxs)(o.kSQ, {
       children: [O && (0, n.jsx)(o.sNh, {
         id: "ban",
-        label: u.intl.string(u.t["I+Cbur"]),
+        label: u.intl.string(u.t["I+Cbum"]),
         icon: o.pgN,
         color: "danger",
         action: () => (0, o.ZDy)(async () => {

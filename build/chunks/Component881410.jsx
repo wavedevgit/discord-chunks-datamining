@@ -73,7 +73,7 @@ function b(e) {
   } = (0, c.KZ)(), _ = i.useCallback(e => {
     (0, s.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(u.intl.string(u.t.q0U3DA)), h({
+    }), o.uvj.announce(u.intl.string(u.t.q0U3DE)), h({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
@@ -90,10 +90,10 @@ function b(e) {
       numCharacters: e.trim().length,
       numResults: I(e).length
     }), j(e), x.current = e
-  }, [y, h, t, I]), E = i.useMemo(() => "" !== y.trim() ? u.intl.format(u.t.ZoearK, {
+  }, [y, h, t, I]), E = i.useMemo(() => "" !== y.trim() ? u.intl.format(u.t.ZoearO, {
     searchTerm: y.trim(),
     surveyUrl: "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C"
-  }) : u.intl.string(u.t.QwSXv7), [y]);
+  }) : u.intl.string(u.t.QwSXv8), [y]);
   return (0, n.jsx)(o.yRy, f(g({}, m), {
     onRequestOpen: () => {
       h({
@@ -115,7 +115,7 @@ function b(e) {
       } = e;
       return (0, n.jsx)(o.DBG, {
         className: d.gameSearchCombobox,
-        placeholder: u.intl.string(u.t["5h0QOD"]),
+        placeholder: u.intl.string(u.t["5h0QOP"]),
         autoFocus: true,
         value: O,
         onChange: e => {
@@ -158,7 +158,7 @@ function m(e) {
       variant: "secondary",
       size: "sm",
       icon: o.qJs,
-      text: u.intl.string(u.t.SgTOtb),
+      text: u.intl.string(u.t.SgTOtX),
       disabled: t
     }, e))
   }))
@@ -174,7 +174,7 @@ function O(e) {
     children: e => (0, n.jsx)(o.P3F, f(g({
       innerRef: t,
       className: d.coverButton,
-      "aria-label": u.intl.string(u.t.SgTOtb)
+      "aria-label": u.intl.string(u.t.SgTOtX)
     }, e), {
       children: (0, n.jsx)(o.svS, {
         color: "currentColor"

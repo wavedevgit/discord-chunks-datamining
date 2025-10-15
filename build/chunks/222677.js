@@ -84,9 +84,9 @@ function S(e, t, n) {
   if (403 === i) switch (a && a.code) {
     case E.evJ.TOO_MANY_REACTIONS:
       o.Z.show({
-        title: b.intl.string(b.t.lFddsb),
-        body: b.intl.string(b.t.h27eIi),
-        confirmText: b.intl.string(b.t.BddRzc)
+        title: b.intl.string(b.t.lFddsR),
+        body: b.intl.string(b.t.h27eIm),
+        confirmText: b.intl.string(b.t.BddRzS)
       });
       break;
     case E.evJ.REACTION_BLOCKED:
@@ -166,9 +166,9 @@ async function P(e, t, n) {
     f = null != u && !!u.burst,
     p = null != u && !!u.isRetry;
   if (!p && j(e, t, n, f)) return void o.Z.show({
-    title: b.intl.string(b.t["uaUU/v"]),
-    body: b.intl.string(b.t.psMorq),
-    confirmText: b.intl.string(b.t["NX+WJC"])
+    title: b.intl.string(b.t["uaUU/g"]),
+    body: b.intl.string(b.t.psMorl),
+    confirmText: b.intl.string(b.t["NX+WJN"])
   });
   let h = await M(n, f);
   return A("MESSAGE_REACTION_ADD", e, t, n, {
@@ -199,7 +199,7 @@ async function P(e, t, n) {
         action: "react"
       }, (0, s.hH)(null == i ? true : i.guild_id), (0, s.v_)(i)))
     }
-    f ? (i.uv.announce(b.intl.formatToPlainString(b.t["RJlG+f"], {
+    f ? (i.uv.announce(b.intl.formatToPlainString(b.t["RJlG+R"], {
       name: n.name
     })), g.Z.triggerFullscreenAnimation({
       channelId: e,
@@ -207,7 +207,7 @@ async function P(e, t, n) {
       emoji: I(O({}, n), {
         animated: false
       })
-    })) : i.uv.announce(b.intl.formatToPlainString(b.t.ol4acH, {
+    })) : i.uv.announce(b.intl.formatToPlainString(b.t.ol4acF, {
       name: n.name
     }))
   }).catch(r => {
@@ -218,9 +218,9 @@ async function P(e, t, n) {
       isRetry: p
     }) && (A("MESSAGE_REACTION_REMOVE", e, t, n, {
       burst: f
-    }), f ? i.uv.announce(b.intl.formatToPlainString(b.t["fJeu8/"], {
+    }), f ? i.uv.announce(b.intl.formatToPlainString(b.t.fJeu87, {
       name: n.name
-    })) : i.uv.announce(b.intl.formatToPlainString(b.t.UUn5V1, {
+    })) : i.uv.announce(b.intl.formatToPlainString(b.t["UUn5V+"], {
       name: n.name
     })))
   })
@@ -301,7 +301,7 @@ async function x(e) {
   }).then(() => {
     (null == u ? true : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t["3l9f6u"], {
       name: a.name
-    })): i.uv.announce(b.intl.formatToPlainString(b.t["DQxi+/"], {
+    })): i.uv.announce(b.intl.formatToPlainString(b.t["DQxi+7"], {
       name: a.name
     }))
   }).catch(async e => {
@@ -323,9 +323,9 @@ async function x(e) {
         userId: s,
         burst: d,
         colors: e
-      }), (null == u ? true : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t.OamVbW, {
+      }), (null == u ? true : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t.OamVbV, {
         name: a.name
-      })) : i.uv.announce(b.intl.formatToPlainString(b.t["tD9+b2"], {
+      })) : i.uv.announce(b.intl.formatToPlainString(b.t["tD9+b+"], {
         name: a.name
       }))
     }

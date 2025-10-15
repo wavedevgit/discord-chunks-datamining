@@ -22,7 +22,7 @@ function d(e) {
   } = e;
   return d ? (0, i.jsx)(a.u, {
     position: "bottom",
-    text: c.intl.string(c.t["0qPSMT"]),
+    text: c.intl.string(c.t["0qPSMV"]),
     children: (0, i.jsxs)(o.P3F, {
       className: l()(u.editableGdmIcon, r),
       onClick: () => (0, s.P5)(t.id, p),

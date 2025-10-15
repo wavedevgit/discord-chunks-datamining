@@ -24,7 +24,7 @@ let u = e => {
     variant: u,
     className: l()(c.striked, i),
     children: [(0, r.jsx)(a.nn4, {
-      children: s.intl.format(s.t["2CEGlp"], {
+      children: s.intl.format(s.t["2CEGln"], {
         price: d
       })
     }), (0, r.jsx)("span", {

@@ -25,7 +25,7 @@ function u(e, t, n, u, m) {
   return (0, a.jsxs)(a.Fragment, {
     children: [null != p ? (0, a.jsx)(i.sNh, {
       id: "edit-server-profile",
-      "aria-label": c.intl.string(c.t["9ESaOz"]),
+      "aria-label": c.intl.string(c.t["9ESaO7"]),
       label: () => (0, a.jsxs)("div", {
         className: d.item,
         children: [(0, a.jsx)(l.Z, {
@@ -35,7 +35,7 @@ function u(e, t, n, u, m) {
         }), (0, a.jsxs)("div", {
           children: [(0, a.jsx)(i.Text, {
             variant: "text-sm/medium",
-            children: c.intl.string(c.t["9ESaOz"])
+            children: c.intl.string(c.t["9ESaO7"])
           }), (0, a.jsx)(i.Text, {
             variant: "text-xs/normal",
             lineClamp: 1,

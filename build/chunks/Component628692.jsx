@@ -68,7 +68,7 @@ function S(e) {
     sound: n,
     playSound: i,
     isPlaying: a
-  } = e, s = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, l = O.intl.formatToPlainString(O.t.tuMUJy, {
+  } = e, s = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, l = O.intl.formatToPlainString(O.t.tuMUJ2, {
     emojiName: null == n ? true : n.emojiName,
     soundName: null == n ? true : n.name
   });

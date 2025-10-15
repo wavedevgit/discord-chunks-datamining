@@ -81,7 +81,7 @@ function j(e) {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null == (t = O.emoji) ? true : t.id, null == (i = O.emoji) ? true : i.name);
-  return (0, p.Oq)(O.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+  return (0, p.Oq)(O.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
     className: l()(h.optionCard, {
       [h.hasError]: y || null != S,
       [h.dropIndicatorBefore]: null != w && T < w,
@@ -181,12 +181,12 @@ function v(e) {
     }),
     onClick: () => {
       i.options.length + 1 === p.fY ? c.Z.show({
-        title: f.intl.string(f.t.TggC7u),
-        body: f.intl.formatToPlainString(f.t.kPQKam, {
+        title: f.intl.string(f.t.TggC7k),
+        body: f.intl.formatToPlainString(f.t.kPQKai, {
           thresholdCount: p.fY
         }),
-        confirmText: f.intl.string(f.t.BddRzc),
-        cancelText: f.intl.string(f.t["ETE/oK"]),
+        confirmText: f.intl.string(f.t.BddRzS),
+        cancelText: f.intl.string(f.t["ETE/oC"]),
         onConfirm: d
       }) : d()
     },
@@ -199,7 +199,7 @@ function v(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: f.intl.string(f.t.Ty3lgo)
+        children: f.intl.string(f.t.Ty3lgp)
       })]
     })
   })

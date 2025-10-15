@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk531604 = require("./531604.js");
 
@@ -153,10 +153,10 @@ function R(e) {
       className: v.headerContainer,
       children: [(0, r.jsx)(h.Text, {
         variant: "text-sm/medium",
-        children: O.intl.string(y.default["8ZcEfn"])
+        children: O.intl.string(y.default["8ZcEfj"])
       }), (0, r.jsx)(_.u, {
         asContainer: true,
-        text: O.intl.string(y.default["61KGaW"]),
+        text: O.intl.string(y.default["61KGad"]),
         shouldShow: o.length === S,
         children: (0, r.jsx)(h.P3F, {
           onClick: o.length === S ? true : j,
@@ -166,7 +166,7 @@ function R(e) {
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/medium",
             className: v.addColorButtonText,
-            children: O.intl.string(y.default["+tTysr"])
+            children: O.intl.string(y.default["+tTysq"])
           })
         })
       })]
@@ -190,22 +190,22 @@ function R(e) {
       }), (0, r.jsxs)("div", {
         className: v.trailingIcons,
         children: [null != c && (0, r.jsx)(_.u, {
-          text: O.intl.string(y.default["8QXO8v"]),
+          text: O.intl.string(y.default["8QXO8g"]),
           children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             size: "sm",
             onClick: M,
             icon: d.i,
-            "aria-label": O.intl.string(y.default["8QXO8v"])
+            "aria-label": O.intl.string(y.default["8QXO8g"])
           })
         }), G && (0, r.jsx)(_.u, {
-          text: O.intl.string(y.default["rTik5+"]),
+          text: O.intl.string(y.default.rTik5y),
           children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             size: "sm",
             onClick: () => k(I),
             icon: f.X,
-            "aria-label": O.intl.string(y.default["rTik5+"])
+            "aria-label": O.intl.string(y.default.rTik5y)
           })
         })]
       })]

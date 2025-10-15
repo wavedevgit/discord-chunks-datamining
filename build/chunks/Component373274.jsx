@@ -201,8 +201,8 @@ class ef extends(r = Chunk647438.PureComponent) {
       className: Chunk776677.positionedContainer,
       children: (0, Chunk951288.jsx)(Chunk950969.Z, {
         ref: this.unreadTopRef,
-        textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
-        textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
+        textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
+        textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
         hide: null == module && (r || null != exports || null != require),
         className: Chunk776677.unreadTop,
         barClassName: Chunk776677.unreadBar,
@@ -227,8 +227,8 @@ class ef extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsx)(Chunk950969.Z, {
       reverse: true,
       ref: this.unreadBottomRef,
-      textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
-      textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
+      textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
+      textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
       hide: null == r && Chunk647438,
       className: Chunk776677.unreadBottom,
       barClassName: Chunk776677.unreadBar,
@@ -287,7 +287,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         onResize: this.handleResize,
         onContentResize: this.handleResize,
         sections: e.getSections(true),
-        innerAriaLabel: es.intl.string(es.t.OGiMXF),
+        innerAriaLabel: es.intl.string(es.t.OGiMXJ),
         innerTag: "ul",
         getAnchorId: this.getAnchorId
       }, s, t, l), "guild-channels")
@@ -304,7 +304,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         component: (0, i.jsx)(d.nn4, {
           children: (0, i.jsx)(d.H, {
             id: r,
-            children: es.intl.string(es.t.OGiMXF)
+            children: es.intl.string(es.t.OGiMXJ)
           })
         }),
         children: n ? (0, i.jsxs)(l.Fragment, {
@@ -445,7 +445,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         optInEnabled: l,
         guildChannelsVersion: o
       } = this.props;
-      return (0, V.dt)({
+      return (0, F.dt)({
         sectionIndex: e,
         guildChannels: t,
         guildChannelsVersion: o,
@@ -607,7 +607,7 @@ class ef extends(r = Chunk647438.PureComponent) {
               selected: a === ea.oC.CHANNEL_BROWSER || a === ea.oC.CUSTOMIZE_COMMUNITY
             }, ei.z.CHANNELS_AND_ROLES);
           case ei.z.GUILD_DIRECTORY:
-            return (0, i.jsx)(F.Z, {
+            return (0, i.jsx)(V.Z, {
               guild: r,
               selectedChannelId: a,
               disableManageChannels: p
@@ -735,7 +735,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         optInEnabled: s,
         guildId: c
       } = this.props;
-      return (0, i.jsx)(V.ZP, {
+      return (0, i.jsx)(F.ZP, {
         guildId: c,
         guildChannels: n,
         guildChannelsVersion: r,
@@ -744,7 +744,7 @@ class ef extends(r = Chunk647438.PureComponent) {
         selectedChannelId: o,
         selectedVoiceChannelId: a,
         optInEnabled: s
-      }, (0, V.eo)(t, n, s))
+      }, (0, F.eo)(t, n, s))
     }), eu(this, "getAnchorId", (e, t) => {
       var n, r, i;
       let {

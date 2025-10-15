@@ -46,11 +46,11 @@ let O = () => {
         className: module,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: exports ? "secondary" : "primary",
-          text: Chunk388032.intl.string(Chunk388032.t["hb/wEx"]),
+          text: Chunk388032.intl.string(Chunk388032.t["hb/wE0"]),
           onClick: () => O()
         }), exports ? require ? (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
-          defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O),
+          defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7D),
           premiumModalAnalyticsLocation: {
             object: Chunk981631.qAy.BUTTON_CTA,
             objectType: Chunk981631.Qqv.BUY
@@ -61,7 +61,7 @@ let O = () => {
           showGradient: false,
           subscriptionTier: Chunk474936.Si.TIER_2,
           textOptions: {
-            textOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O)
+            textOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7D)
           }
         }) : null]
       })

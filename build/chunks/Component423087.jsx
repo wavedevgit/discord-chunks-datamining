@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk510918 = require("./510918.jsx"),
   Chunk434404 = require("./434404.js"),
   Chunk131085 = require("./131085.js"),
-  Chunk659854 = require("./659854.js"),
+  Chunk234786 = require("./234786.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764009 = require("./764009.js");
 
@@ -89,7 +89,7 @@ function _(e) {
     handleChange: f
   } = e, v = (0, o.jm)({
     isSelected: l,
-    label: h.intl.formatToPlainString(h.t.hr4D2d, {
+    label: h.intl.formatToPlainString(h.t.hr4D2X, {
       primaryColor: n,
       secondaryColor: i
     })
@@ -173,7 +173,7 @@ let C = function(e) {
       }))
     }), (0, r.jsx)(c.nn4, {
       id: O,
-      children: h.intl.string(h.t.ovbW0d)
+      children: h.intl.string(h.t.ovbW0Z)
     })]
   })
 }

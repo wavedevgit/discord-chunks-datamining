@@ -64,7 +64,7 @@ class E extends Chunk647438.Component {
       className: a()(Chunk796787.root, Chunk120356),
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk796787.header,
-        children: Chunk388032.intl.string(Chunk388032.t.qABFpa)
+        children: Chunk388032.intl.string(Chunk388032.t.qABFpX)
       }), this.renderReasons(module, exports, Chunk647438), null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk4962.Z, {
         data: Chunk442837,
         className: Chunk796787.review

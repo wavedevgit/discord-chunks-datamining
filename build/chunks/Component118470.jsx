@@ -30,16 +30,16 @@ function h(e) {
       }
       return e
     }, [m]);
-  return 0 === b.length ? null : (t = 1 === b.length ? p.intl.formatToPlainString(p.t["Egq+Gx"], {
+  return 0 === b.length ? null : (t = 1 === b.length ? p.intl.formatToPlainString(p.t["Egq+G/"], {
     a: b[0].name
-  }) : 2 === b.length ? p.intl.formatToPlainString(p.t.LxU9R0, {
+  }) : 2 === b.length ? p.intl.formatToPlainString(p.t.LxU9R3, {
     a: b[0].name,
     b: b[1].name
-  }) : 3 === b.length ? p.intl.formatToPlainString(p.t.crKXMD, {
+  }) : 3 === b.length ? p.intl.formatToPlainString(p.t.crKXMC, {
     a: b[0].name,
     b: b[1].name,
     c: b[2].name
-  }) : p.intl.string(p.t.MvfowM), (0, r.jsx)(o.Z, {
+  }) : p.intl.string(p.t.MvfowF), (0, r.jsx)(o.Z, {
     guild: n,
     onDismissed: g,
     message: t,
@@ -50,6 +50,6 @@ function h(e) {
     },
     imageMarginTop: 6,
     imageMarginX: 46,
-    cta: p.intl.string(p.t.Rr3MAQ)
+    cta: p.intl.string(p.t.Rr3MAe)
   }))
 }

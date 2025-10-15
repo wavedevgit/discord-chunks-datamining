@@ -82,11 +82,11 @@ function C(e) {
     null != k && ((0, E.TQ)(R, k, D, Z, h.Sbl.E2EE_USER_VERIFY_MODAL), I())
   }, [k, R, D, Z, I]), G = l.useCallback(() => {
     null != k && ((0, E.LO)(R, k, D), I())
-  }, [k, R, D, I]), [Y, B] = l.useMemo(() => F ? [j.intl.string(j.t.UNUuen), a.Z.BG_BRAND] : [j.intl.string(j.t.y2b7CA), a.Z.STATUS_DANGER], [F]), J = l.useMemo(() => (0, E.kK)({
+  }, [k, R, D, I]), [Y, B] = l.useMemo(() => F ? [j.intl.string(j.t.UNUuem), a.Z.BG_BRAND] : [j.intl.string(j.t.y2b7CA), a.Z.STATUS_DANGER], [F]), z = l.useMemo(() => (0, E.kK)({
     isCurrentUserKeyPersistent: V,
     isOtherUserKeyPersistent: D,
     otherUserNickname: x
-  }), [V, D, x]), z = (0, O.P)({
+  }), [V, D, x]), J = (0, O.P)({
     userId: R,
     keyToOmit: k
   });
@@ -98,26 +98,26 @@ function C(e) {
   }, [Z, R]);
   let W = {
       transitionState: C,
-      title: j.intl.string(j.t["/WPGnJ"]),
-      subtitle: j.intl.format(j.t.oc2kcX, {
+      title: j.intl.string(j.t["/WPGnF"]),
+      subtitle: j.intl.format(j.t.oc2kce, {
         username: x
       })
     },
-    X = (0, n.jsxs)(n.Fragment, {
+    q = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
         className: T.verification,
-        children: [z > 0 && (0, n.jsx)(c.Wn, {
+        children: [J > 0 && (0, n.jsx)(c.Wn, {
           messageType: c.QYI.INFO,
           className: T.helpMessage,
-          children: j.intl.format(j.t.uZDkz8, {
-            count: z
+          children: j.intl.format(j.t.uZDkz0, {
+            count: J
           })
         }), (0, n.jsxs)("div", {
           className: T.header,
           children: [(0, n.jsx)(c.Heading, {
             variant: "text-sm/bold",
             color: "header-primary",
-            children: j.intl.string(j.t["/WPGnJ"])
+            children: j.intl.string(j.t["/WPGnF"])
           }), null != M && (0, n.jsx)(_.H, {
             className: T.copyIcon,
             chunks: M,
@@ -142,16 +142,16 @@ function C(e) {
         className: T.footer,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: J
+        children: z
       })]
     }),
-    q = {
-      text: F ? j.intl.string(j.t["Osb+/v"]) : j.intl.string(j.t["0tvNAg"]),
+    H = {
+      text: F ? j.intl.string(j.t["Osb+/n"]) : j.intl.string(j.t["0tvNAn"]),
       disabled: null == M || K,
       onClick: F ? G : L
     },
-    H = {
-      text: j.intl.string(j.t["ETE/oK"]),
+    X = {
+      text: j.intl.string(j.t["ETE/oC"]),
       onClick: I,
       variant: "secondary"
     };
@@ -175,8 +175,8 @@ function C(e) {
   }({
     onClose: I
   }, W), r = r = {
-    actions: [H, q],
-    children: X
+    actions: [X, H],
+    children: q
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

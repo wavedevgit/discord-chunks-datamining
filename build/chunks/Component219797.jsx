@@ -103,7 +103,7 @@ function A(e) {
     a = i.useCallback(() => {
       var e;
       return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.jS, {
-        text: b.intl.string(b.t["/fgfWl"]),
+        text: b.intl.string(b.t["/fgfWh"]),
         className: y.clipPill,
         children: [(0, r.jsx)(l.AlX, {
           size: "xs",
@@ -111,7 +111,7 @@ function A(e) {
         }), (0, r.jsx)(o.x, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: b.intl.string(b.t.oA4afH)
+          children: b.intl.string(b.t.oA4afG)
         })]
       }) : null
     }, [n]),

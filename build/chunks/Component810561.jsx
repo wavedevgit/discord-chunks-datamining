@@ -52,7 +52,7 @@ function _(e) {
           onClick: e => {
             e.stopPropagation(), h()
           },
-          text: d.intl.string(d.t["8O7Hp6"]),
+          text: d.intl.string(d.t["8O7Hpy"]),
           size: "sm"
         })
       })]

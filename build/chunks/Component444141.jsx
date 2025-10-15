@@ -60,8 +60,8 @@ function p(e) {
   } = (0, s.KZ)(), b = (0, c.ZP)(n.id, t);
   return (null == b ? true : b.guildId) == null || null == v ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
-    label: d.intl.string(d.t.GISTtb),
-    subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
+    label: d.intl.string(d.t.GISTta),
+    subtext: d.intl.formatToPlainString(d.t["mn/nW2"], {
       displayName: o.ZP.getName(true, true, n)
     }),
     action: () => {
@@ -75,8 +75,8 @@ function p(e) {
     }
   }) : (0, l.jsx)(i.sNh, {
     id: "view-server-profile",
-    label: d.intl.string(d.t.DisZzM),
-    subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
+    label: d.intl.string(d.t.DisZzB),
+    subtext: d.intl.formatToPlainString(d.t["mn/nW2"], {
       displayName: o.ZP.getName(t, p, n)
     }),
     action: () => {

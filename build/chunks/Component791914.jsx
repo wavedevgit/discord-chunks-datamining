@@ -53,14 +53,14 @@ function v(e) {
         className: y.inboxTitle,
         variant: "text-lg/semibold",
         color: "interactive-active",
-        children: O.intl.string(O.t.GSmTKC)
+        children: O.intl.string(O.t.GSmTKJ)
       }), (0, r.jsxs)(o.kL8, {
         className: y.controls,
         onClick: e => e.stopPropagation(),
         focusProps: {
           enabled: false
         },
-        "aria-label": O.intl.string(O.t["8k+6QU"]),
+        "aria-label": O.intl.string(O.t["8k+6QY"]),
         children: [(0, r.jsx)(j, {
           tab: t
         }), (0, r.jsx)(g.Z, {
@@ -77,26 +77,26 @@ function v(e) {
         className: y.tabBar,
         children: [(0, r.jsxs)(o.njP.Item, {
           id: l.X.FOR_YOU,
-          "aria-label": O.intl.string(O.t["En+D+v"]),
+          "aria-label": O.intl.string(O.t["En+D+u"]),
           className: y.tab,
-          children: [O.intl.string(O.t["En+D+v"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {
           id: l.X.UNREADS,
           className: y.tab,
-          children: O.intl.string(O.t.sRUdBw)
+          children: O.intl.string(O.t.sRUdB8)
         }), (0, r.jsx)(o.njP.Item, {
-          "aria-label": O.intl.string(O.t["GRZF9/"]),
+          "aria-label": O.intl.string(O.t.GRZF96),
           id: l.X.MENTIONS,
           className: y.tab,
-          children: O.intl.string(O.t["GRZF9/"])
+          children: O.intl.string(O.t.GRZF96)
         }), x ? (0, r.jsxs)(o.njP.Item, {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
-          children: [O.intl.string(O.t.apq3cX), C > 0 ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t.apq3cU), C > 0 ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
@@ -104,7 +104,7 @@ function v(e) {
           "aria-label": O.intl.string(O.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: y.tab,
-          children: 0 === E ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryM, {
+          children: 0 === E ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryG, {
             count: E
           })
         }) : null, v ? (0, r.jsx)(o.njP.Item, {

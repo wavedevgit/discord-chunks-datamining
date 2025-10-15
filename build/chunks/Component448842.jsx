@@ -116,7 +116,7 @@ function A(e) {
       searchAutocompleteSelectAction: i
     })
   }, x = i.useCallback(e => {
-    let t = e ? y.intl.string(y.t.diOL4u) : y.intl.string(y.t["M1tf+/"]),
+    let t = e ? y.intl.string(y.t.diOL4i) : y.intl.string(y.t["M1tf+7"]),
       i = () => {
         (0, a.ZDy)(async () => {
           let {
@@ -173,7 +173,7 @@ function A(e) {
               className: O.itemIcon
             }),
             label: (0, r.jsx)(d.Q0, {
-              label: y.intl.format(y.t["VGEH//"], {
+              label: y.intl.format(y.t["VGEH/0"], {
                 channelName: t
               }),
               className: O.labelWithElements
@@ -195,7 +195,7 @@ function A(e) {
         let n = [...w, t];
         e.push((0, _.fC)(f.i.GROUP, {
           rows: n,
-          title: y.intl.string(y.t.UdhTtr)
+          title: y.intl.string(y.t.UdhTtk)
         }))
       } else e.push(t);
       let n = C ? e.length + w.length : e.length,
@@ -238,7 +238,7 @@ function A(e) {
             return (0, _.fC)(f.i.ROW, {
               icon: s,
               label: l,
-              ariaLabel: y.intl.formatToPlainString(y.t.WoiGra, {
+              ariaLabel: y.intl.formatToPlainString(y.t.WoiGrV, {
                 suggestion: c
               }),
               resultText: o,
@@ -277,14 +277,14 @@ function A(e) {
             className: O.itemIcon
           }),
           label: v.type === b.aib.FAVORITES && (0, l.X$)() ? (0, r.jsx)(d.Q0, {
-            label: y.intl.string(y.t["6RVtLC"])
+            label: y.intl.string(y.t["6RVtLA"])
           }) : (0, r.jsx)(d.Q0, {
-            label: y.intl.format(y.t.rCnaoq, {
+            label: y.intl.format(y.t.rCnaoo, {
               value: n
             }),
             className: O.labelWithElements
           }),
-          ariaLabel: y.intl.formatToPlainString(y.t.rCnaoq, {
+          ariaLabel: y.intl.formatToPlainString(y.t.rCnaoo, {
             value: t.query
           }),
           onSelect: () => D({
@@ -373,7 +373,7 @@ function A(e) {
         let t = [...w, s];
         e.push((0, _.fC)(f.i.GROUP, {
           rows: t,
-          title: y.intl.string(y.t.UdhTtr)
+          title: y.intl.string(y.t.UdhTtk)
         }))
       } else e.push(s);
       return n > 0 && e.push(...i), {

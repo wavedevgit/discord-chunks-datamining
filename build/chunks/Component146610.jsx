@@ -41,14 +41,14 @@ let m = [{
   }, {
     key: "subscribers",
     cellClassName: l()(Chunk183190.subscribersColumn, Chunk698128.cellAlignRight),
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.zu8go6),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.zu8go1),
     render: e => (0, r.jsx)(c.av, {
       children: e.roleMemberCount
     })
   }, {
     key: "price",
     cellClassName: l()(Chunk183190.priceColumn, Chunk698128.cellAlignRight),
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.NcrbWF),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.NcrbWI),
     render(e) {
       let {
         subscriptionListing: t

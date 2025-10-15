@@ -152,7 +152,7 @@ function T(e) {
   return (0, r.jsx)(s.P3F, {
     className: h.clearButton,
     onClick: n,
-    "aria-label": p.intl.string(p.t.VkKicX),
+    "aria-label": p.intl.string(p.t.VkKicb),
     children: (0, r.jsx)(s.k$p, {
       size: i,
       color: "currentColor"

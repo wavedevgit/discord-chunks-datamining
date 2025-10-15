@@ -182,7 +182,7 @@ function eq() {
     className: Chunk890332.noiseCancellationPopout,
     children: [(0, Chunk951288.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
-      text: Chunk388032.intl.formatToPlainString(Chunk388032.t["/tqmfH"], {
+      text: Chunk388032.intl.formatToPlainString(Chunk388032.t["/tqmfM"], {
         enabled: exports ? "true" : "false",
         inputProfile: require
       }),
@@ -190,7 +190,7 @@ function eq() {
       align: "right",
       children: e => (0, r.jsx)("div", eF(eV({}, e), {
         children: (0, r.jsx)(m.rsf, {
-          label: eU.intl.string(eU.t.WGWHv7),
+          label: eU.intl.string(eU.t["WGWHv/"]),
           checked: t,
           disabled: l,
           onChange: () => b.Z.setNoiseCancellation(!t, {
@@ -200,12 +200,12 @@ function eq() {
       }))
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.uKdWn5)
+      children: Chunk388032.intl.string(Chunk388032.t.uKdWn6)
     }), (0, Chunk951288.jsx)(Chunk284056.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.JdUas7),
+      title: Chunk388032.intl.string(Chunk388032.t.JdUas1),
       notchBackground: Chunk284056._.BLACK,
-      buttonTest: Chunk388032.intl.string(Chunk388032.t["sG+MGh"]),
-      buttonStop: Chunk388032.intl.string(Chunk388032.t.Yp3SbG),
+      buttonTest: Chunk388032.intl.string(Chunk388032.t["sG+MGg"]),
+      buttonStop: Chunk388032.intl.string(Chunk388032.t.Yp3SbJ),
       buttonClassName: Chunk890332.micTestButton,
       buttonColor: Chunk755721.zx.Colors.PRIMARY,
       location: {
@@ -214,7 +214,7 @@ function eq() {
     }), (0, Chunk951288.jsx)("div", {
       className: a()(Chunk197571.marginBottom8, Chunk197571.marginTop20),
       children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.k6h1Fx),
+        label: Chunk388032.intl.string(Chunk388032.t.k6h1F4),
         children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.BETWEEN,
           className: Chunk890332.__invalid_footer,
@@ -228,7 +228,7 @@ function eq() {
             href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
             className: Chunk890332.krispLink,
             onClick: e => eY(e),
-            children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
+            children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
           })]
         })
       })
@@ -239,7 +239,7 @@ function eq() {
 function eK() {
   let {
     parentAnalyticsLocation: e
-  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk754277.Z], () => Chunk754277.Z.isMuted()), n = exports ? Chunk388032.intl.string(Chunk388032.t.ScHlfn) : Chunk388032.intl.string(Chunk388032.t.zqxfra);
+  } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk754277.Z], () => Chunk754277.Z.isMuted()), n = exports ? Chunk388032.intl.string(Chunk388032.t.ScHlfl) : Chunk388032.intl.string(Chunk388032.t.zqxfrf);
   return (0, Chunk951288.jsx)(Chunk870569.Z, {
     "aria-label": require,
     tooltipText: require,
@@ -353,7 +353,7 @@ function eQ(e) {
               focusProps: eW,
               children: C ? d : (0, r.jsxs)(k.Z, {
                 align: k.Z.Align.CENTER,
-                children: [d, eU.intl.string(eU.t.FlNoSU)]
+                children: [d, eU.intl.string(eU.t.FlNoSV)]
               })
             }))
           })
@@ -467,7 +467,7 @@ function eJ(e) {
     S = (0, ec.E)(n, h, b);
   t = null == C ? l ? y : ed.Z : () => (0, V.Z)(C);
   let T = null != C || S.length > 0,
-    N = _ ? eU.intl.string(eU.t.fjBNo6) : eU.intl.string(eU.t.uQn9Bw),
+    N = _ ? eU.intl.string(eU.t.fjBNo1) : eU.intl.string(eU.t.uQn9B8),
     j = E || o || v,
     P = null != C,
     {
@@ -595,7 +595,7 @@ class e$ extends Chunk647438.PureComponent {
     } = this.props;
     return null != Chunk647438 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === em.default.getId() && (0, ei.gf)(e.voiceState) === ei.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk951288.jsx)(eK, {}) : !require && exports ? (0, Chunk951288.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
-      text: Chunk388032.intl.string(Chunk388032.t["i+SO/f"]),
+      text: Chunk388032.intl.string(Chunk388032.t["i+SO/U"]),
       tooltipClassName: Chunk890332.noiseCancellationTooltip,
       forceOpen: true,
       children: e => {
@@ -747,11 +747,11 @@ class e$ extends Chunk647438.PureComponent {
       children: [(0, r.jsx)(m.Heading, {
         className: eG.voicePanelIntroductionHeader,
         variant: "heading-md/semibold",
-        children: eU.intl.string(eU.t["ba/rLy"])
+        children: eU.intl.string(eU.t["ba/rL2"])
       }), (0, r.jsx)(m.Text, {
         className: eG.voicePanelIntroductionText,
         variant: "text-sm/normal",
-        children: eU.intl.string(eU.t.Ne1Ee3)
+        children: eU.intl.string(eU.t.Ne1Eew)
       }), (0, r.jsx)(m.Button, {
         fullWidth: true,
         onClick: this.handleCloseVoicePanelIntroduction,
@@ -788,7 +788,7 @@ function e0(e) {
       u.onMouseLeave()
     },
     tooltipClassName: eG.noiseCancellationTooltip,
-    tooltipText: n ? null : eU.intl.string(eU.t.vFiCS0),
+    tooltipText: n ? null : eU.intl.string(eU.t.vFiCSx),
     icon: (0, r.jsx)(c, {
       size: "refresh_sm"
     })
@@ -877,14 +877,14 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         children: [(0, r.jsx)(m.Text, {
           variant: "text-sm/normal",
           className: eG.viewAsRolesWarningText,
-          children: E ? eU.intl.string(eU.t.efjuQE) : eU.intl.string(eU.t.br8H2N)
+          children: E ? eU.intl.string(eU.t.efjuQJ) : eU.intl.string(eU.t.br8H2N)
         }), (0, r.jsx)(m.Button, {
           size: "sm",
           fullWidth: true,
           onClick: () => {
             A(true)
           },
-          text: eU.intl.string(eU.t.WAI6xs),
+          text: eU.intl.string(eU.t.WAI6xu),
           focusProps: eW
         })]
       }) : null]

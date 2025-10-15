@@ -49,7 +49,7 @@ function p(e) {
   return o === u.l.MODAL_V2 ? (0, r.jsx)("div", {
     className: f.customButtons,
     children: n.buttons.map((e, a) => (0, r.jsx)(c.O1, {
-      text: s ? d.intl.string(d.t["I6JG4+"]) : e,
+      text: s ? d.intl.string(d.t.I6JG46) : e,
       onClick: e => {
         e.stopPropagation(), null == i || i({
           action: s ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
@@ -63,7 +63,7 @@ function p(e) {
   }) : (0, r.jsx)("div", {
     className: f.customButtons,
     children: n.buttons.map((e, a) => (0, r.jsx)(c.O1, {
-      text: s ? d.intl.string(d.t["I6JG4+"]) : e,
+      text: s ? d.intl.string(d.t.I6JG46) : e,
       fullWidth: true,
       onClick: e => {
         e.stopPropagation(), null == i || i({

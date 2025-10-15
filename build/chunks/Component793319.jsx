@@ -336,7 +336,7 @@ let eP = Chunk647438.memo(function(e) {
           switch (S) {
             case "ACTIVITY":
               if (null == s || null == t || s.type !== eC.fO.ACTIVITY || null == a) return;
-              return (0, i.jsx)(K.Z, eO(ex({}, c), {
+              return (0, i.jsx)(q.Z, eO(ex({}, c), {
                 applicationId: s.applicationId,
                 color: "disconnect",
                 location: a.location,
@@ -409,12 +409,12 @@ function eI(e) {
       onCameraUnavailable: h,
       className: e_.controlButton,
       onChange: p
-    }), (0, i.jsx)(W.Z, {
+    }), (0, i.jsx)(z.Z, {
       centerButton: true,
       color: "join",
       channel: t,
       className: e_.controlButton
-    }), f ? (0, i.jsx)(z.Z, {
+    }), f ? (0, i.jsx)(W.Z, {
       color: "disconnect",
       channel: t,
       className: e_.controlButton,
@@ -454,10 +454,10 @@ let eT = function(e) {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : er.Z.getVoiceChannelId()) === n.id
   }), F = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
-    reachedLimit: z,
-    limit: W
+    reachedLimit: W,
+    limit: z
   } = (0, eo.Z)(n), {
-    analyticsLocations: K
+    analyticsLocations: q
   } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), Y = (0, $.Hu)({
     location: _.Z.VOICE_CONTROL_TRAY,
     autoTrackExposure: true
@@ -479,7 +479,7 @@ let eT = function(e) {
     })))
   } : true;
   return H ? (0, i.jsx)(v.Gt, {
-    value: K,
+    value: q,
     children: (0, i.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,
       children: [(0, i.jsx)("div", {
@@ -538,7 +538,7 @@ let eT = function(e) {
               } = e, {
                 isShown: r
               } = t;
-              return (0, i.jsx)(q.Z, {
+              return (0, i.jsx)(K.Z, {
                 ref: en,
                 centerButton: true,
                 onPopoutClick: B ? null : n,
@@ -583,8 +583,8 @@ let eT = function(e) {
                 cameraUnavailable: x,
                 onChange: ej,
                 onCameraUnavailable: eh.Z,
-                channelLimitReached: z,
-                channelLimit: W,
+                channelLimitReached: W,
+                channelLimit: z,
                 popoutOpen: r,
                 onPopoutClick: n
               })
@@ -623,7 +623,7 @@ let eT = function(e) {
       })]
     })
   }) : (0, i.jsx)(v.Gt, {
-    value: K,
+    value: q,
     children: (0, i.jsx)(eI, {
       channel: n,
       cameraUnavailable: x,

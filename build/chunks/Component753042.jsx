@@ -26,7 +26,7 @@ function g(e) {
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(s.gNt, {
-    label: I.intl.string(I.t["ldCE/v"]),
+    label: I.intl.string(I.t["ldCE/p"]),
     children: (0, r.jsxs)(A.WM, {
       children: [(0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.lZ8, {
@@ -59,7 +59,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t["93hqlp"])
+          children: I.intl.string(I.t["93hqln"])
         }),
         description: N === u.qc.AGREED ? (0, r.jsx)(s.sV5, {
           size: "custom",
@@ -82,7 +82,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t.SaDIpK)
+          children: I.intl.string(I.t.SaDIpL)
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -99,7 +99,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t["NQJ+WF"])
+          children: I.intl.string(I.t["NQJ+WG"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -115,7 +115,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t["eJOq+f"])
+          children: I.intl.string(I.t["eJOq+Z"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",

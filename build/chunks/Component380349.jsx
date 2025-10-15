@@ -30,7 +30,7 @@ function h(e, t, n) {
   }, "spotify-play-".concat(e.session_id)), h.canPlaySpotify ? (0, r.jsx)(l.sNh, {
     id: "spotify-sync-".concat(e.session_id),
     action: () => (0, u.Z)(h, p.kG.USER_ACTIVITY_SYNC, n),
-    label: f.intl.string(f.t.eU3inJ),
+    label: f.intl.string(f.t.eU3inB),
     subtext: m ? (0, s.Z)(h, p.kG.USER_ACTIVITY_SYNC) : true,
     disabled: m
   }, "spotify-sync-".concat(e.session_id)) : null]

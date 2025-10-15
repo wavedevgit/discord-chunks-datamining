@@ -232,10 +232,10 @@ function Q(e) {
         className: q.trialPriceLine,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/bold",
-          children: z.intl.string(z.t.txajQE)
+          children: z.intl.string(z.t.txajQG)
         }), (0, r.jsx)(f.Text, {
           variant: "text-md/normal",
-          children: z.intl.format(z.t.hXcaLS, {
+          children: z.intl.format(z.t.hXcaLT, {
             price: (0, w.T4)(0, ti.currency, {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
@@ -263,7 +263,7 @@ function Q(e) {
       }), (0, r.jsxs)(j.aO, {
         className: o()(q.invoice, ew),
         children: [(0, r.jsx)(j.Z9, {
-          children: z.intl.string(z.t["2eh+Cg"])
+          children: z.intl.string(z.t["2eh+Co"])
         }), (0, r.jsx)(F.Lu, {
           invoice: eH,
           newPlan: eU,
@@ -289,7 +289,7 @@ function Q(e) {
     tc = z.intl.formatToPlainString(z.t["sBpy9/"], {
       planName: eU.name
     });
-  eD && !eJ ? tc = z.intl.string(z.t.J5a0eX) : eD && eJ ? tc = "" : (0, P.PV)(eU.id) && (tc = P.ZP.getBillingReviewSubheader(null, eU));
+  eD && !eJ ? tc = z.intl.string(z.t.J5a0eb) : eD && eJ ? tc = "" : (0, P.PV)(eU.id) && (tc = P.ZP.getBillingReviewSubheader(null, eU));
   let tu = null != eV && eV.length > 0 && (e1 === C.c || null === e2) && eR ? B.w.SELECT_PAYMENT_METHOD : true;
   return e5 ? null : (0, r.jsxs)("div", {
     className: q.stepBody,
@@ -326,7 +326,7 @@ function Q(e) {
       variant: "heading-md/normal",
       color: "always-white",
       className: q.trialHeader,
-      children: z.intl.format(z.t["7ZS2m5"], {
+      children: z.intl.format(z.t["7ZS2m1"], {
         trialEnd: null == ey ? true : ey.currentPeriodEnd
       })
     }), !em && "" !== tc && (0, r.jsx)(f.Heading, {
@@ -344,11 +344,11 @@ function Q(e) {
     }), Q, (0, r.jsxs)("div", {
       className: q.paymentSourceWrapper,
       children: [(0, r.jsx)(h.ZP, {
-        label: em ? z.intl.string(z.t["YH7B+P"]) : z.intl.string(z.t.mmDvV1),
+        label: em ? z.intl.string(z.t["YH7B+D"]) : z.intl.string(z.t["mmDvV+"]),
         paymentSources: Object.values(ee),
         selectedPaymentSourceId: e1,
         prependOption: e3 && !em ? {
-          label: z.intl.string(z.t.IGU7Eh),
+          label: z.intl.string(z.t.IGU7El),
           value: null
         } : null,
         onChange: ei,
@@ -361,14 +361,14 @@ function Q(e) {
         })
       }), e3 && null == e1 ? (0, r.jsx)("div", {
         className: q.paymentSourceOptionalWarning,
-        children: z.intl.format(z.t["2wPRSE"], {
+        children: z.intl.format(z.t["2wPRSF"], {
           months: e4.length
         })
       }) : null, eg ? null : (0, r.jsx)(_.b, {
         currencies: en,
         className: q.currencyWrapper,
         children: (0, r.jsx)(_.Z, {
-          label: z.intl.string(z.t["/AAR09"]),
+          label: z.intl.string(z.t["/AAR02"]),
           selectedCurrency: et.currency,
           currencies: en,
           onChange: er

@@ -51,10 +51,10 @@ function w(e) {
     originApplicationId: d.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, o.Y)({
     userId: t.id
-  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([p.Z], () => {
+  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), B = (0, l.e7)([p.Z], () => {
     var e;
     return null == (e = p.Z.getUserProfile(t.id)) ? true : e.application
-  }), B = (0, f.b)({
+  }), F = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
   return (0, r.jsxs)("div", {
@@ -67,7 +67,7 @@ function w(e) {
       onOpenProfile: L,
       tags: (0, r.jsx)(m.Z, {
         displayProfile: w,
-        themeType: P.l.SIDEBAR
+        themeType: T.l.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(_.Z, {
@@ -78,7 +78,7 @@ function w(e) {
           onOpenProfile: L
         })]
       })
-    }), M === T.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
+    }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
       children: (0, r.jsx)(O.Z, {
         user: t,
         channelId: A.id,
@@ -97,7 +97,7 @@ function w(e) {
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: R.card,
       children: (0, r.jsx)(C.Z, {
-        heading: N.intl.string(N.t.Iyka0d),
+        heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(i.Mgn, {
           size: "xxs",
           color: a.Z.colors.HEADER_PRIMARY
@@ -107,7 +107,7 @@ function w(e) {
           userId: t.id
         })
       })
-    }), B ? (0, r.jsx)(I.Z, {
+    }), F ? (0, r.jsx)(I.Z, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: L
@@ -126,18 +126,18 @@ function w(e) {
           isHoveringOrFocusing: D,
           animateOnHoverOrFocusOnly: true
         })
-      }), (null == F ? true : F.popularApplicationCommandIds) != null && (0, r.jsx)(g.Z, {
-        applicationId: F.id,
-        commandIds: F.popularApplicationCommandIds,
+      }), (null == B ? true : B.popularApplicationCommandIds) != null && (0, r.jsx)(g.Z, {
+        applicationId: B.id,
+        commandIds: B.popularApplicationCommandIds,
         channel: A
       }), G.length > 0 && (0, r.jsx)(C.Z, {
-        heading: N.intl.string(N.t["Uv/eT0"]),
+        heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(j.Z, {
           applicationIds: G
         })
       }), (0, r.jsx)(C.Z, {
-        heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
+        heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
         children: (0, r.jsx)(x.Z, {
           userId: t.id

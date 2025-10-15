@@ -35,18 +35,18 @@ function C(e) {
   let w = [{
       icon: (0, N.r)([t], null == A ? true : A.guild_id),
       text: (0, N.a)([t], 1, null == A ? true : A.guild_id, n),
-      className: p.row
+      className: h.row
     }, {
       icon: (0, i.jsx)("div", {
-        className: p.icon,
+        className: h.icon,
         children: (0, i.jsx)(a.aNP, {})
       }),
-      text: h.intl.string(h.t["+4O9nZ"]),
-      className: p.row
+      text: p.intl.string(p.t["+4O9nX"]),
+      className: h.row
     }],
-    I = v ? h.intl.string(h.t.QnTzrq) : h.intl.string(h.t.QsWbfX);
+    I = v ? p.intl.string(p.t.QnTzrp) : p.intl.string(p.t.QsWbfY);
   return (0, i.jsx)(x.Z, {
-    headerText: h.intl.string(h.t["1/gpFh"]),
+    headerText: p.intl.string(p.t["1/gpFh"]),
     descriptionText: I,
     infoRows: w,
     onDismissAndStay: () => {
@@ -67,8 +67,8 @@ function C(e) {
         warning_surface: g.fz.POST_JOIN_MODAL
       })
     },
-    leaveButtonText: h.intl.string(h.t["Hi1/aW"]),
-    stayButtonText: h.intl.string(h.t["Z+/hfX"]),
+    leaveButtonText: p.intl.string(p.t["Hi1/aQ"]),
+    stayButtonText: p.intl.string(p.t["Z+/hfb"]),
     transitionState: C,
     onClose: k,
     impression: {

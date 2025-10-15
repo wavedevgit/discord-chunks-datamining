@@ -38,7 +38,7 @@ let d = function(e) {
         size: "sm",
         variant: "primary",
         onClick: u,
-        text: o.intl.string(o.t.OYkgVl)
+        text: o.intl.string(o.t.OYkgVk)
       })]
     }), d && (0, r.jsx)("div", {
       className: c.suggestedSeparator

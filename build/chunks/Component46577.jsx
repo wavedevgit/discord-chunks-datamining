@@ -27,45 +27,45 @@ function w(t) {
     rule: e,
     analyticsContext: r,
     onSelect: w
-  } = t, x = (0, p.Vb)(e), v = function(t) {
+  } = t, x = (0, p.Vb)(e), P = function(t) {
     let {
       editingRule: e,
       setEditingRule: r
     } = (0, y.V)();
-    return (0, n.jsx)(c.sNh, {
+    return (0, n.jsx)(a.sNh, {
       id: "edit-automod-rule",
-      label: m.intl.string(m.t.uQq6Pz),
+      label: m.intl.string(m.t.uQq6Px),
       action: () => {
         r(t)
       },
       disabled: null != e
     })
-  }(e), P = function(t) {
+  }(e), v = function(t) {
     let {
       setEditingRule: e
-    } = (0, y.V)(), [r, a] = i.useState(false), {
+    } = (0, y.V)(), [r, c] = i.useState(false), {
       removeRule: s
     } = (0, f.pH)(t.guildId), d = (0, l.e7)([b.Z], () => b.Z.getGuild(t.guildId)), p = async () => {
       if (!r && await (0, j.gK)(t.name)) {
-        a(true);
+        c(true);
         try {
           await (0, g.mm)(t.id, t.guildId), e(null), s(t.id, t.guildId)
         } catch (e) {
           var n;
           let t = new u.Hx(e);
-          (0, c.showToast)((0, c.createToast)(null != (n = t.getAnyErrorMessage()) ? n : m.intl.string(m.t.fEptJC), c.ToastType.FAILURE))
+          (0, a.showToast)((0, a.createToast)(null != (n = t.getAnyErrorMessage()) ? n : m.intl.string(m.t.fEptJP), a.ToastType.FAILURE))
         } finally {
-          a(false)
+          c(false)
         }
       }
     }, w = t.triggerType === O.fX.MENTION_SPAM && (null == d ? true : d.features) != null && d.features.has(h.oNc.COMMUNITY);
-    return (0, n.jsx)(c.sNh, {
+    return (0, n.jsx)(a.sNh, {
       id: "delete-automod-rule",
-      label: m.intl.string(m.t["92m/09"]),
+      label: m.intl.string(m.t["92m/01"]),
       action: w ? () => {
-        (0, c.h7j)(t => {
+        (0, a.h7j)(t => {
           var e, r;
-          return (0, n.jsx)(c.ConfirmModal, (e = function(t) {
+          return (0, n.jsx)(a.ConfirmModal, (e = function(t) {
             for (var e = 1; e < arguments.length; e++) {
               var r = null != arguments[e] ? arguments[e] : {},
                 n = Object.keys(r);
@@ -83,13 +83,13 @@ function w(t) {
             }
             return t
           }({
-            header: m.intl.string(m.t.MmpqMD),
-            confirmText: m.intl.string(m.t.BddRzc),
+            header: m.intl.string(m.t.MmpqMC),
+            confirmText: m.intl.string(m.t.BddRzS),
             confirmButtonColor: o.zx.Colors.BRAND
           }, t), r = r = {
-            children: (0, n.jsx)(c.Text, {
+            children: (0, n.jsx)(a.Text, {
               variant: "text-md/normal",
-              children: m.intl.string(m.t.XMdBLy)
+              children: m.intl.string(m.t.XMdBLw)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
             var r = Object.keys(t);
@@ -106,19 +106,19 @@ function w(t) {
     })
   }(e), T = (0, d.Z)({
     id: e.id,
-    label: m.intl.string(m.t.F64hjo)
+    label: m.intl.string(m.t.F64hjn)
   });
   return (0, n.jsx)(s.Z, {
     context: r,
     object: h.qAy.CONTEXT_MENU,
-    children: (0, n.jsxs)(c.v2r, {
+    children: (0, n.jsxs)(a.v2r, {
       navId: "automod-rule-context",
-      onClose: a.Zy,
-      "aria-label": m.intl.string(m.t.uT36Sk),
+      onClose: c.Zy,
+      "aria-label": m.intl.string(m.t.uT36So),
       onSelect: w,
-      children: [(0, n.jsxs)(c.kSQ, {
-        children: [v, x && P]
-      }), x && (0, n.jsx)(c.kSQ, {
+      children: [(0, n.jsxs)(a.kSQ, {
+        children: [P, x && v]
+      }), x && (0, n.jsx)(a.kSQ, {
         children: T
       })]
     })

@@ -21,7 +21,7 @@ let p = e => {
       cancelText: h,
       className: m,
       confirmColor: g,
-      confirmText: E = f.intl.string(f.t.BddRzc),
+      confirmText: E = f.intl.string(f.t.BddRzS),
       secondaryConfirmText: b,
       onCancel: y,
       onClose: O,

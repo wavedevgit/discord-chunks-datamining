@@ -83,7 +83,7 @@ function v(e) {
   } = e, [i, o] = (0, f.ww)({
     guildId: t,
     analyticsLocations: n
-  }), s = o ? h.intl.string(h.t["6ndMcn"]) : h.intl.string(h.t["0eiu6O"]), l = o ? h.intl.string(h.t.S09nw8) : h.intl.string(h.t.tEttXV);
+  }), s = o ? h.intl.string(h.t["6ndMcq"]) : h.intl.string(h.t["0eiu6J"]), l = o ? h.intl.string(h.t.S09nw4) : h.intl.string(h.t.tEttXd);
   return (0, r.jsxs)(a.qXd, {
     color: a.DM8.DANGER,
     children: [s, (0, r.jsx)(a.EyT, {
@@ -99,9 +99,9 @@ function I() {
   });
   return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
-    children: [Chunk388032.intl.string(Chunk388032.t.ZqlecX), (0, Chunk951288.jsx)(Chunk481060.EyT, {
+    children: [Chunk388032.intl.string(Chunk388032.t.Zqlecb), (0, Chunk951288.jsx)(Chunk481060.EyT, {
       onClick: module,
-      children: Chunk388032.intl.string(Chunk388032.t.SJehVV)
+      children: Chunk388032.intl.string(Chunk388032.t.SJehVW)
     })]
   })
 }

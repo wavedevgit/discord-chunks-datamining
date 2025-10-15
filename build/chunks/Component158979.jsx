@@ -55,7 +55,7 @@ function m() {
     children: (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "active",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk388032.t.U76Ft7),
+      text: Chunk388032.intl.string(Chunk388032.t.U76Ft2),
       fullWidth: true
     })
   })
@@ -121,7 +121,7 @@ function y(e) {
       return {
         icon: n(847881),
         title: null,
-        body: p.intl.formatToPlainString(p.t["0SVWgI"], {
+        body: p.intl.formatToPlainString(p.t["0SVWgF"], {
           game: t.name
         }),
         hint: () => (0, i.jsx)(m, {}),

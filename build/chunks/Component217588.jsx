@@ -82,7 +82,7 @@ let B = 80,
   V = 2,
   H = 3,
   Y = 12,
-  W = (e, t) => t ? L.intl.format(L.t.auckX1, {
+  W = (e, t) => t ? L.intl.format(L.t.auckXz, {
     stickerPackName: e.name
   }) : L.intl.format(L.t.OzB6e3, {
     stickerPackName: e.name
@@ -191,7 +191,7 @@ let X = e => {
         children: (0, r.jsx)(u.Button, {
           variant: "secondary",
           size: "sm",
-          text: L.intl.string(L.t.GPy3Ag),
+          text: L.intl.string(L.t.GPy3Ar),
           onClick: E
         }, "view-sticker-pack")
       })]
@@ -240,7 +240,7 @@ let X = e => {
       en = null != A,
       er = false,
       ei = "Custom Sticker Popout";
-    U ? t = Z ? et ? L.intl.string(L.t.fZ0DiI) : L.intl.string(L.t["1f6D9v"]) : en ? L.intl.string(L.t.yHmoR0) : L.intl.string(L.t.vZaScH) : Z ? (t = et ? L.intl.string(L.t.jNphpq) : L.intl.string(L.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = L.intl.string(L.t.IuXYcn), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = L.intl.format(L.t.hGWuxc, {
+    U ? t = Z ? et ? L.intl.string(L.t.fZ0DiG) : L.intl.string(L.t["1f6D9m"]) : en ? L.intl.string(L.t.yHmoR9) : L.intl.string(L.t.vZaScH) : Z ? (t = et ? L.intl.string(L.t.jNphpt) : L.intl.string(L.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = L.intl.string(L.t.IuXYch), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = L.intl.format(L.t.hGWuxU, {
       openPremiumSettings: () => {
         z(a), h()
       }
@@ -279,7 +279,7 @@ let X = e => {
               size: c.zx.Sizes.SMALL,
               fullWidth: true,
               textOptions: {
-                textOverride: L.intl.string(L.t["gl/XHB"])
+                textOverride: L.intl.string(L.t["gl/XHJ"])
               },
               onSubscribeModalClose: t => t ? e() : h(),
               postSuccessGuild: Z || null == A ? true : A,
@@ -290,7 +290,7 @@ let X = e => {
               children: (0, r.jsx)(u.Button, {
                 variant: "primary",
                 size: "sm",
-                text: L.intl.string(L.t.riu2R0),
+                text: L.intl.string(L.t.riu2R5),
                 fullWidth: true,
                 onClick: e
               })
@@ -311,7 +311,7 @@ let X = e => {
               variant: "text-sm/normal",
               color: "text-secondary",
               className: M.guildTitle,
-              children: Z ? L.intl.string(L.t.kx6pEB) : L.intl.string(L.t.pDE7GR)
+              children: Z ? L.intl.string(L.t.kx6pEG) : L.intl.string(L.t.pDE7Gb)
             }), (0, r.jsx)(E.Oe, {
               expressionSourceGuild: a,
               hasJoinedExpressionSourceGuild: Z,
@@ -325,7 +325,7 @@ let X = e => {
                     className: M.__invalid_showMoreEmojisLabel,
                     variant: "text-xs/normal",
                     color: "none",
-                    children: L.intl.string(L.t.vtH5ho)
+                    children: L.intl.string(L.t.vtH5hn)
                   }), (0, r.jsx)(u.CJ0, {
                     size: "md",
                     color: "currentColor",
@@ -383,7 +383,7 @@ function J(e) {
     className: x.popoutContent,
     children: (0, r.jsx)(q, {
       sticker: i,
-      description: L.intl.format(L.t.hGWuxc, {
+      description: L.intl.format(L.t.hGWuxU, {
         openPremiumSettings: () => {
           n(), z(t)
         }

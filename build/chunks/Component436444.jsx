@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk724437 = require("./724437.js");
 
 function b(e, t, n) {
@@ -143,15 +143,15 @@ let T = {
       } : {};
     return (0, r.jsx)(s.aML, {
       tooltipClassName: E.tooltip,
-      text: x ? m.intl.formatToPlainString(m.t["1o48kp"], {
+      text: x ? m.intl.formatToPlainString(m.t["1o48ki"], {
         tierName: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : k ? m.intl.formatToPlainString(g.default["9CtPjo"], {
+      }) : k ? m.intl.formatToPlainString(g.default["9CtPjt"], {
         perk: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : m.intl.formatToPlainString(m.t.r6NN6e, {
+      }) : m.intl.formatToPlainString(m.t.r6NN6Q, {
         numBoostsRequired: D,
         tierName: (0, d.nW)(A, {
           useLevels: false

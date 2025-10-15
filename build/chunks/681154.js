@@ -22,7 +22,7 @@ function l() {
 }
 
 function s() {
-  return a(0, Chunk388032.intl.string(Chunk388032.t["w/BT3N"]))
+  return a(0, Chunk388032.intl.string(Chunk388032.t["w/BT3G"]))
 }
 
 function o(e, t) {

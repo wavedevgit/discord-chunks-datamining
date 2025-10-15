@@ -152,33 +152,33 @@ function L(e, t, n, i, a, o) {
 function x(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return v.intl.string(v.t.k8fFjo);
+      return v.intl.string(v.t.k8fFjp);
     case g.bg.RECENTLY_HEARD:
-      return v.intl.string(v.t["8i/+SE"]);
+      return v.intl.string(v.t["8i/+SA"]);
     case g.bg.FREQUENTLY_USED:
-      return v.intl.string(v.t["+cGVV1"]);
+      return v.intl.string(v.t["+cGVV6"]);
     case g.bg.GUILD:
       return (0, r.jsx)(_.K, {
         guild: e.categoryInfo.guild,
         includeActivity: false
       });
     case g.bg.DEFAULTS:
-      return v.intl.string(v.t.Rtvk9f)
+      return v.intl.string(v.t.Rtvk9X)
   }
 }
 
 function M(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return v.intl.string(v.t.k8fFjo);
+      return v.intl.string(v.t.k8fFjp);
     case g.bg.RECENTLY_HEARD:
-      return v.intl.string(v.t["8i/+SE"]);
+      return v.intl.string(v.t["8i/+SA"]);
     case g.bg.FREQUENTLY_USED:
-      return v.intl.string(v.t["+cGVV1"]);
+      return v.intl.string(v.t["+cGVV6"]);
     case g.bg.GUILD:
       return e.categoryInfo.guild.name;
     case g.bg.DEFAULTS:
-      return v.intl.string(v.t.Rtvk9f)
+      return v.intl.string(v.t.Rtvk9X)
   }
 }
 

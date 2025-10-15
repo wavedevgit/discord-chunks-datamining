@@ -41,7 +41,7 @@ function u(e) {
 
 function d() {
   return (0, Chunk951288.jsx)(u, {
-    label: Chunk388032.intl.string(Chunk388032.t["I+02Gh"]),
+    label: Chunk388032.intl.string(Chunk388032.t["I+02Gs"]),
     backgroundColor: "#207B8D",
     icon: Chunk481060.T$Z
   })
@@ -49,7 +49,7 @@ function d() {
 
 function f() {
   return (0, Chunk951288.jsx)(u, {
-    label: Chunk388032.intl.string(Chunk388032.t.TgsPaG),
+    label: Chunk388032.intl.string(Chunk388032.t.TgsPaP),
     icon: Chunk481060.vdY,
     iconColor: (0, Chunk44315.Lq)(Chunk981631.Ilk.PRIMARY_330)
   })

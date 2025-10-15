@@ -148,7 +148,7 @@ class F extends Chunk647438.PureComponent {
         className: o()(Chunk547660.__invalid_text, {
           hidden: module
         }),
-        children: Chunk388032.intl.string(Chunk388032.t.k5WiPT)
+        children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
       }), (0, Chunk951288.jsx)(Chunk481060.$jN, {
         type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
         className: o()(Chunk547660.loading, {
@@ -269,7 +269,7 @@ function H(e) {
       color: d.zx.Colors.PRIMARY,
       size: d.zx.Sizes.MAX,
       onClick: _,
-      children: C.intl.string(C.t.XBlaiI)
+      children: C.intl.string(C.t.XBlaiC)
     })
   }) : (0, r.jsx)("div", {
     className: N.scrollingFooterWrap,

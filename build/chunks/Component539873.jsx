@@ -118,14 +118,14 @@ function A(e) {
               children: [(0, r.jsx)(s.Heading, {
                 className: E.titleText,
                 variant: "text-lg/medium",
-                children: g.intl.string(g.t.NThqT0)
+                children: g.intl.string(g.t.NThqTw)
               }), (0, r.jsx)(u.Z, {
                 className: E.premiumIcon
               })]
             }), (0, r.jsx)(s.Heading, {
               variant: "text-sm/normal",
               className: b.subtext,
-              children: g.intl.string(g.t.IgENJi)
+              children: g.intl.string(g.t.IgENJo)
             })]
           }), null == v ? true : v()]
         }), (0, r.jsx)(s.Kqy, {

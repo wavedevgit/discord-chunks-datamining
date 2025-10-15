@@ -1,7 +1,7 @@
 /** Chunk was on 28382 **/
 /** chunk id: 537623, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk833894 = require("./833894.js");
 
-function O(t) {
+function f(t) {
   let {
     guildId: e,
     messageId: n,
-    transitionState: O,
+    transitionState: f,
     onClose: I
   } = t, [A, E] = l.useState([]), [y, g] = l.useState(), h = l.useCallback(() => {
     let t = {
@@ -33,43 +33,43 @@ function O(t) {
     };
     (0, s.yw)(_.rMx.GUILD_RAID_FEEDBACK, t), (0, c.Fi)(e, n, (0, d.J$)(A)), I(), u.Z.showSuccessToast(p.wQ.SAFETY_FEEDBACK_SUCCESS)
   }, [I, n, e, y, A]), D = [{
-    label: b.intl.string(b.t.yeaXw8),
+    label: b.intl.string(b.t.yeaXw5),
     value: d.$l.LEGITIMATE_ACTIVITY
   }, {
-    label: b.intl.string(b.t["o++3Bw"]),
+    label: b.intl.string(b.t["o++3B8"]),
     value: d.$l.DM_SPAM
   }, {
-    label: b.intl.string(b.t.UfHAwc),
+    label: b.intl.string(b.t.UfHAwZ),
     value: d.$l.JOIN_RAID
   }, {
-    label: b.intl.string(b.t.K3UWeX),
+    label: b.intl.string(b.t.K3UWeR),
     value: d.$l.OTHER
   }], C = l.useCallback(t => {
     E(t)
   }, []);
   return (0, r.jsx)(i.Modal, {
     onClose: I,
-    transitionState: O,
-    title: b.intl.string(b.t["1zmw/P"]),
-    subtitle: b.intl.string(b.t.nF79oK),
+    transitionState: f,
+    title: b.intl.string(b.t["1zmw/H"]),
+    subtitle: b.intl.string(b.t.nF79oO),
     actions: [{
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: I,
       variant: "secondary"
     }, {
-      text: b.intl.string(b.t.Gh3A0N),
+      text: b.intl.string(b.t.Gh3A0O),
       onClick: h
     }],
     children: (0, r.jsxs)("div", {
-      className: f.options,
+      className: O.options,
       children: [(0, r.jsx)(a.c, {
         selectedValues: A,
         onChange: C,
         options: D
       }), A.includes(d.$l.OTHER) && (0, r.jsx)("div", {
-        className: f.textboxContainer,
+        className: O.textboxContainer,
         children: (0, r.jsx)(o.Kx8, {
-          placeholder: b.intl.string(b.t["PAM+JS"]),
+          placeholder: b.intl.string(b.t["PAM+JR"]),
           onChange: g,
           value: y,
           autoFocus: true

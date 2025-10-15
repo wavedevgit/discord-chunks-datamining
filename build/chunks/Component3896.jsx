@@ -64,11 +64,11 @@ function m(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: u.intl.string(u.t.DpRdYG)
+        children: u.intl.string(u.t.DpRdYK)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.intl.string(u.t.mA17eH)
+        children: u.intl.string(u.t.mA17eD)
       }), (0, r.jsx)("div", {
         className: g.__invalid_pillRow,
         children: (0, r.jsxs)(s.Text, {

@@ -14,15 +14,15 @@ var Chunk481060 = require("./481060.js"),
 function d(t) {
   var n;
   let e = (0, a.HL)(t),
-    d = (0, o.C7)(t),
-    u = (0, o.tc)(t);
+    d = (0, s.C7)(t),
+    u = (0, s.tc)(t);
   if ((t.isArchivedThread() ? u : d) && !e) return (null == (n = t.threadMetadata) ? true : n.archived) ? (0, i.jsx)(l.sNh, {
     id: "unarchive-thread",
-    label: t.isForumPost() ? s.intl.string(s.t.cnRubW) : s.intl.string(s.t.S9E4Gx),
+    label: t.isForumPost() ? o.intl.string(o.t.cnRubV) : o.intl.string(o.t.S9E4G7),
     action: () => r.Z.unarchiveThread(t, false)
   }) : (0, i.jsx)(l.sNh, {
     id: "archive-thread",
-    label: t.isForumPost() ? s.intl.string(s.t.BTs4KS) : s.intl.string(s.t.wiIevb),
+    label: t.isForumPost() ? o.intl.string(o.t.BTs4Kb) : o.intl.string(o.t.wiIevd),
     action: () => r.Z.archiveThread(t, false)
   })
 }

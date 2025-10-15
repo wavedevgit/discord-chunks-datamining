@@ -100,11 +100,11 @@ function N(e) {
   }
   return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
     id: "invite-to-server",
-    label: b.intl.string(b.t.Sd8Ix8),
+    label: b.intl.string(b.t.Sd8Ixw),
     children: d.map(e => y[e.id] ? (0, r.jsx)(o.sNh, {
       id: e.id,
       disabled: true,
-      label: b.intl.string(b.t.PuLLzM)
+      label: b.intl.string(b.t.PuLLzP)
     }, e.id) : (0, r.jsx)(o.sNh, {
       id: e.id,
       label: e.name,

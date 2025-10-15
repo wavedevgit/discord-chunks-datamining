@@ -41,7 +41,7 @@ function g(e) {
         children: (0, n.jsxs)(l.kSQ, {
           children: [(0, n.jsx)(l.sNh, {
             id: "flag-widget",
-            label: u.intl.string(u.t.D4GvHB),
+            label: u.intl.string(u.t.D4GvHE),
             action: p,
             color: "danger",
             icon: l.U65

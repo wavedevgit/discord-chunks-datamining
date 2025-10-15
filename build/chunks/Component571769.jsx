@@ -1,4 +1,4 @@
-/** Chunk was on 32076 **/
+/** Chunk was on 19038 **/
 /** chunk id: 571769, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => _
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk905551 = require("./905551.js"),
   Chunk60482 = require("./60482.js"),
   Chunk986841 = require("./986841.js"),
-  Chunk948208 = require("./948208.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk71124 = require("./71124.js");
 
@@ -34,19 +34,19 @@ function _(e) {
   }, [t, n.planId, C]);
   let N = (0, x.Z)(n),
     j = r.useCallback(() => {
-      (0, p.JG)(null != N ? N : ""), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t["+5kSoa"]), c.ToastType.SUCCESS))
+      (0, p.JG)(null != N ? N : ""), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t["+5kSoW"]), c.ToastType.SUCCESS))
     }, [N]),
     S = r.useMemo(() => {
       switch (n.status) {
-        case a.V.STARTING:
-          return h.intl.string(m.default.ud4hxc);
-        case a.V.OFFLINE:
-          return h.intl.string(m.default["ABAm7+"]);
+        case i.V.STARTING:
+          return h.intl.string(m.default.ud4hxY);
+        case i.V.OFFLINE:
+          return h.intl.string(m.default.ABAm7x);
         default:
           return
       }
     }, [n.status]);
-  return (0, s.jsx)(i.ExpressiveModal, {
+  return (0, s.jsx)(a.ExpressiveModal, {
     graphic: {
       type: "dynamic",
       component: o.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
@@ -55,7 +55,7 @@ function _(e) {
       }
     },
     title: n.name,
-    subtitle: h.intl.string(m.default["4HqfaW"]),
+    subtitle: h.intl.string(m.default["4HqfaU"]),
     size: "md",
     transitionState: I,
     onClose: _,
@@ -73,7 +73,7 @@ function _(e) {
             children: (0, s.jsx)(c.Text, {
               variant: "text-xs/semibold",
               color: "text-secondary",
-              children: h.intl.formatToPlainString(m.default.oSU1fH, {
+              children: h.intl.formatToPlainString(m.default.oSU1fF, {
                 step: t + 1
               })
             })
@@ -94,7 +94,7 @@ function _(e) {
           })
         }), (0, s.jsx)(c.Button, {
           variant: "primary",
-          text: h.intl.string(h.t.OpuAlJ),
+          text: h.intl.string(h.t.OpuAlK),
           onClick: j,
           icon: c.TIy
         })]

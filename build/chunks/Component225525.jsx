@@ -64,9 +64,9 @@ function f(t) {
     return t
   }({
     bodyClassName: l.modalContent,
-    header: s.intl.string(s.t.rfaLTE),
-    confirmText: s.intl.string(s.t.Lh0uy8),
-    cancelText: s.intl.string(s.t["ETE/oK"]),
+    header: s.intl.string(s.t.rfaLTH),
+    confirmText: s.intl.string(s.t.Lh0uyy),
+    cancelText: s.intl.string(s.t["ETE/oC"]),
     confirmButtonColor: a.zx.Colors.RED,
     loading: O,
     onConfirm: async () => {
@@ -83,7 +83,7 @@ function f(t) {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: s.intl.string(s.t.EKmxKS)
+      children: s.intl.string(s.t.EKmxKc)
     }), (0, n.jsx)("div", {
       onMouseEnter: g,
       onMouseLeave: x,
@@ -96,11 +96,11 @@ function f(t) {
     }), (0, n.jsx)(i.Text, {
       variant: "eyebrow",
       color: "text-feedback-positive",
-      children: s.intl.string(s.t["2Ld8DA"])
+      children: s.intl.string(s.t["2Ld8DM"])
     }), (0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: s.intl.string(s.t.Oe0xqq)
+      children: s.intl.string(s.t.Oe0xqt)
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

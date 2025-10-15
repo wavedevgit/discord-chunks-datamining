@@ -48,8 +48,8 @@ let j = () => {
       ctaText: t,
       ctaOnClick: n,
       analyticsPage: i,
-      linkPreText: o = x.intl.string(x.t["5qZv9P"]),
-      linkText: d = x.intl.string(x.t.XRdyj4)
+      linkPreText: o = x.intl.string(x.t["5qZv9E"]),
+      linkText: d = x.intl.string(x.t.XRdyjz)
     } = e, u = r.useCallback(() => {
       null != i && (0, p.Y)({
         pageType: i,

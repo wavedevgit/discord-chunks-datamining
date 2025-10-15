@@ -27,14 +27,14 @@ function f() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.OS9KPj)
+      children: Chunk388032.intl.string(Chunk388032.t.OS9KPu)
     })]
   }) : (0, Chunk951288.jsx)("div", {
     className: a()(Chunk400963.premiumTrialBadge, Chunk400963.backgroundGradient),
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "always-white",
-      children: Chunk388032.intl.string(Chunk388032.t.OS9KPj)
+      children: Chunk388032.intl.string(Chunk388032.t.OS9KPu)
     })
   })
 }

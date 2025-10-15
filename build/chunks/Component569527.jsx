@@ -138,7 +138,7 @@ function T(e) {
       query: w,
       categoryId: e.id
     })
-  }, [w]), K = a.useCallback((e, t) => {
+  }, [w]), X = a.useCallback((e, t) => {
     (0, v.zZ)(E.rMx.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
       current_page: y.m_.SEARCH,
       application_id: e,
@@ -146,7 +146,7 @@ function T(e) {
       search_term: w,
       position: t
     }), n(e)
-  }, [null == V ? true : V.loadId, n, w]), X = (0, g.K)();
+  }, [null == V ? true : V.loadId, n, w]), K = (0, g.K)();
   return (0, r.jsxs)("div", {
     className: N.container,
     children: [(0, r.jsx)(p.Z, {
@@ -169,8 +169,8 @@ function T(e) {
             }), (0, r.jsx)(C.Z, {
               loading: U === _.M.FETCHING,
               children: U === _.M.FETCHED && (null == V || (null == V ? true : V.results.length) === 0) ? (0, r.jsx)(P.Z, {
-                selectedCategoryId: null != k ? k : X.id,
-                searchAllCategories: () => W(X)
+                selectedCategoryId: null != k ? k : K.id,
+                searchAllCategories: () => W(K)
               }) : (0, r.jsx)("div", {
                 className: N.content,
                 children: null == V ? true : V.results.map((e, t) => {
@@ -178,7 +178,7 @@ function T(e) {
                     let n = e.data;
                     return (0, r.jsx)(j.Z, {
                       application: n,
-                      onSelectApplication: e => K(e, t),
+                      onSelectApplication: e => X(e, t),
                       showCategory: true
                     }, n.id)
                   }

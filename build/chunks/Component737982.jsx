@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk948208 = require("./948208.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk990963 = require("./990963.js");
 let b = Chunk647438.memo(function(e) {
@@ -61,7 +61,7 @@ let b = Chunk647438.memo(function(e) {
           className: e,
           color: "currentColor"
         }),
-        text: g.intl.string(f.default.vCzwMz),
+        text: g.intl.string(f.default.vCzwM7),
         selected: n,
         onClick: O,
         trailing: v ? (0, r.jsx)(o.IGR, {

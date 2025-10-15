@@ -78,8 +78,8 @@ let Q = e => {
     return r.useEffect(() => {
       var e;
       if (t !== V.wZ8.CONFIRM) return;
-      let i = A.Z.getSoundById(n);
-      (0, C.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
+      let i = C.Z.getSoundById(n);
+      (0, A.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
     }, [t, n]), null
   };
 class ee extends Chunk647438.Component {
@@ -146,16 +146,16 @@ class ee extends Chunk647438.Component {
       sku: o,
       application: u
     } = this.props;
-    if (module && this.step === Chunk981631.wZ8.ERROR) return Chunk388032.intl.formatToMarkdownString(Chunk388032.t.JUvC0t, {});
+    if (module && this.step === Chunk981631.wZ8.ERROR) return Chunk388032.intl.formatToMarkdownString(Chunk388032.t.JUvC0s, {});
     if (Chunk951288)
       if (!exports) return Chunk388032.intl.formatToPlainString(Chunk388032.t.xHzRub, {
         recipientDisplayName: Chunk51144.ZP.getName(Chunk594174.default.getCurrentUser())
       });
       else {
         var c, d;
-        if (require) return Chunk388032.intl.string(Chunk388032.t["+BNMcH"]);
+        if (require) return Chunk388032.intl.string(Chunk388032.t["+BNMcF"]);
         let e = Chunk594174.default.getUser(Chunk647438.userId);
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["2tBYtL"], {
+        return Chunk388032.intl.formatToPlainString(Chunk388032.t["2tBYtA"], {
           sender: Chunk51144.ZP.getName(module),
           skuName: null != (c = null == Chunk442837 ? true : Chunk442837.name) ? Chunk481060 : "item",
           applicationName: null != (d = null == Chunk780384 ? true : Chunk780384.name) ? Chunk533307 : "an application"
@@ -169,32 +169,32 @@ class ee extends Chunk647438.Component {
           t = Chunk51144.ZP.getName(module);
         if (null != a) switch (a) {
           case Chunk979554.Z.AVATAR_DECORATION:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.SKduys, {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t.SKduyh, {
               sender: exports
             });
           case Chunk979554.Z.PROFILE_EFFECT:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t["1w42T0"], {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t["1w42T2"], {
               sender: exports
             });
           case Chunk979554.Z.NAMEPLATE:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.vFiQlZ, {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t.vFiQlU, {
               sender: exports
             });
           default:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.U4Ko29, {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t.U4Ko2y, {
               sender: exports
             })
         }
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["0UR0u7"], {
+        return Chunk388032.intl.formatToPlainString(Chunk388032.t["0UR0u4"], {
           sender: exports,
-          timeInterval: (null == Chunk120356 ? true : Chunk120356.interval) === Chunk474936.rV.MONTH ? Chunk388032.intl.string(Chunk388032.t.FPybU1) : Chunk388032.intl.string(Chunk388032.t.tfqrho)
+          timeInterval: (null == Chunk120356 ? true : Chunk120356.interval) === Chunk474936.rV.MONTH ? Chunk388032.intl.string(Chunk388032.t.FPybU7) : Chunk388032.intl.string(Chunk388032.t.tfqrhj)
         })
       } return null == this.props.sku ? null : (0, Chunk669079.dQ)(this.step, this.props.giftCode, this.props.sku)
   }
   get secondHeaderText() {
     if (!this.state.isCustomGift || this.state.opened || this.state.accepted) return null;
     let e = Chunk594174.default.getUser(this.props.giftCode.userId);
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4W1, {
+    return Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4Wz, {
       sender: Chunk51144.ZP.getName(module)
     })
   }
@@ -216,7 +216,7 @@ class ee extends Chunk647438.Component {
     } = this.state;
     if (Chunk780384) {
       let e = Chunk594174.default.getUser(Chunk647438.userId);
-      return Chunk442837 ? a ? Chunk388032.intl.string(Chunk388032.t.fLHIp6) : null : Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4W1, {
+      return Chunk442837 ? a ? Chunk388032.intl.string(Chunk388032.t.fLHIp6) : null : Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4Wz, {
         sender: Chunk51144.ZP.getName(module)
       })
     }
@@ -274,7 +274,7 @@ class ee extends Chunk647438.Component {
       to_step: this.step,
       location_stack: Chunk120356,
       has_custom_message: a,
-      is_custom_message_edited: a && exports !== Chunk388032.intl.string(Chunk388032.t.ZkOo1d),
+      is_custom_message_edited: a && exports !== Chunk388032.intl.string(Chunk388032.t.ZkOo1U),
       gift_style: module.giftStyle,
       gift_code: module.code,
       emoji_name: require,
@@ -302,9 +302,9 @@ class ee extends Chunk647438.Component {
       isCollectiblesGift: y,
       accepted: O,
       opened: v,
-      emojiURL: j,
+      emojiURL: P,
       isPremiumAppGift: x
-    } = this.state, S = Chunk594174.default.getCurrentUser(), w = this.step === Chunk981631.wZ8.ERROR, C = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk120356.userId === Chunk313201.id;
+    } = this.state, S = Chunk594174.default.getCurrentUser(), w = this.step === Chunk981631.wZ8.ERROR, A = (null == Chunk120356 ? true : Chunk120356.userId) != null && null != Chunk313201 && (null == Chunk313201 ? true : Chunk313201.id) != null && Chunk120356.userId === Chunk313201.id;
     switch (this.step) {
       case Chunk981631.wZ8.ERROR:
         null == Chunk533307 || Chunk533307(Chunk120356, false);
@@ -312,7 +312,7 @@ class ee extends Chunk647438.Component {
       case Chunk981631.wZ8.SUCCESS:
         null == Chunk533307 || Chunk533307(Chunk120356, true)
     }
-    let A = (0, Chunk164670.K$)(module);
+    let C = (0, Chunk164670.K$)(module);
     return (0, Chunk951288.jsxs)("div", {
       ref: this.modalRef,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Y0X, {
@@ -380,7 +380,7 @@ class ee extends Chunk647438.Component {
             children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               id: Chunk979554,
               variant: "heading-md/semibold",
-              children: Chunk388032.intl.format(Chunk388032.t.DDO4W1, {
+              children: Chunk388032.intl.format(Chunk388032.t.DDO4Wz, {
                 sender: Chunk51144.ZP.getName(Chunk728345)
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -459,8 +459,8 @@ class ee extends Chunk647438.Component {
           applicationId: null != t ? t.id : true
         }
       }), e()
-    }), J(this, "getDefaultAnimationStatus", () => this.step === V.wZ8.OPEN ? U.SR.IDLE : U.SR.ACTION), J(this, "getIdleAnimationStatus", () => {
-      if (this.step !== V.wZ8.OPEN) return U.SR.LOOP
+    }), J(this, "getDefaultAnimationStatus", () => this.step === V.wZ8.OPEN ? H.SR.IDLE : H.SR.ACTION), J(this, "getIdleAnimationStatus", () => {
+      if (this.step !== V.wZ8.OPEN) return H.SR.LOOP
     })
   }
 }
@@ -505,7 +505,7 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       b = (0, o.e7)([T.Z], () => T.Z.get(l)),
       y = (0, p.ZP)(),
       {
-        analyticsLocations: P
+        analyticsLocations: j
       } = (0, g.ZP)(m.Z.GIFT_CODE_MODAL),
       {
         product: x
@@ -528,14 +528,14 @@ let et = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       headerId: h,
       emojiName: s,
       soundId: c,
-      analyticsLocations: P,
+      analyticsLocations: j,
       isThemeDark: (0, u.wj)(y),
       onClose: d,
       collectiblesItemType: (0, O.$W)(x),
       onAccept: null != x ? () => {
-        d(), (0, j.Z)({
+        d(), (0, P.Z)({
           product: x,
-          analyticsLocations: P,
+          analyticsLocations: j,
           purchaseType: K.o8.GIFT
         })
       } : true

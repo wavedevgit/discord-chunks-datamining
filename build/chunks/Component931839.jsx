@@ -24,19 +24,19 @@ function m(e) {
     children: [(0, s.jsx)(x, {
       tab: 0,
       selectedTab: t,
-      label: c.intl.string(c.t.JwwVrq),
+      label: c.intl.string(c.t.JwwVrl),
       disabled: i,
       onClick: n
     }), (0, s.jsx)(x, {
       tab: 1,
       selectedTab: t,
-      label: c.intl.string(c.t["56vYWV"]),
+      label: c.intl.string(c.t["56vYWZ"]),
       disabled: i,
       onClick: n
     }), (0, s.jsx)(x, {
       tab: 2,
       selectedTab: t,
-      label: c.intl.string(c.t["0l0rJi"]),
+      label: c.intl.string(c.t["0l0rJj"]),
       disabled: !i,
       onClick: n
     })]

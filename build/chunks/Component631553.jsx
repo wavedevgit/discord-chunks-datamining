@@ -257,16 +257,16 @@ class eC extends Chunk647438.Component {
         })
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? Q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
-          title: ey.intl.string(ey.t.WLx4Fx),
-          body: ey.intl.string(ey.t.H8O1TE),
-          secondaryConfirmText: ey.intl.string(ey.t.IwqGhY),
-          confirmText: ey.intl.string(ey.t["3PatS0"]),
-          cancelText: ey.intl.string(ey.t["ETE/oK"]),
+        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? J.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
+          title: ey.intl.string(ey.t.WLx4F6),
+          body: ey.intl.string(ey.t.H8O1TK),
+          secondaryConfirmText: ey.intl.string(ey.t.IwqGhU),
+          confirmText: ey.intl.string(ey.t["3PatSz"]),
+          cancelText: ey.intl.string(ey.t["ETE/oC"]),
           onConfirmSecondary: () => {
             O.Z.disableExternalLinkAlert()
           },
-          onConfirm: () => Q.ZP.send("OPEN_EXTERNAL_URL", t)
+          onConfirm: () => J.ZP.send("OPEN_EXTERNAL_URL", t)
         })
       })
     }
@@ -282,7 +282,7 @@ class eC extends Chunk647438.Component {
       className: Chunk722363.invalidContainer,
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk722363.inactiveContainer,
-        children: Chunk388032.intl.format(Chunk388032.t.ketnW1, Chunk145597.OVERLAY_MIN_RESOLUTION)
+        children: Chunk388032.intl.format(Chunk388032.t.ketnW0, Chunk145597.OVERLAY_MIN_RESOLUTION)
       })
     })
   }
@@ -309,7 +309,7 @@ class eC extends Chunk647438.Component {
       className: Chunk722363.overlay,
       children: [(0, Chunk951288.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk951288.jsx)("header", {
         className: Chunk722363.previewingInGameHeader,
-        children: Chunk388032.intl.string(Chunk388032.t.iOq96u)
+        children: Chunk388032.intl.string(Chunk388032.t.iOq96m)
       }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(ex, {
         locked: module,
         keybind: exports,

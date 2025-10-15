@@ -130,7 +130,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     } = this.props;
     return null != exports && (null == module ? true : module.type) !== Chunk981631.IIU.PLAYING && (null == module ? true : module.type) !== Chunk981631.IIU.WATCHING && (null == module ? true : module.type) !== Chunk981631.IIU.LISTENING && (null == module ? true : module.type) !== Chunk981631.IIU.HANG_STATUS ? {
       type: Chunk981631.IIU.PLAYING,
-      name: Chunk388032.intl.string(Chunk388032.t.eXan7O)
+      name: Chunk388032.intl.string(Chunk388032.t.eXan7B)
     } : module
   }
   getTypeClass(e, t) {
@@ -158,12 +158,12 @@ class $ extends(r = Chunk647438.PureComponent) {
         });
         break;
       case B.IIU.LISTENING:
-        t = Z.intl.formatToPlainString(Z.t["5sYPnp"], {
+        t = Z.intl.formatToPlainString(Z.t["5sYPnr"], {
           name: c
         });
         break;
       case B.IIU.WATCHING:
-        t = Z.intl.formatToPlainString(Z.t.Ge29Z2, {
+        t = Z.intl.formatToPlainString(Z.t.Ge29Zy, {
           name: c
         });
         break;
@@ -171,21 +171,21 @@ class $ extends(r = Chunk647438.PureComponent) {
         t = (0, D.Z)(l);
         break;
       case B.IIU.COMPETING:
-        t = Z.intl.formatToPlainString(Z.t.SQCo6O, {
+        t = Z.intl.formatToPlainString(Z.t.SQCo6D, {
           name: c
         })
     }
     if (null != r) {
       var u;
-      t = (0, P.yE)(null != (u = null == l ? true : l.flags) ? u : 0, B.xjy.EMBEDDED) ? l.type === B.IIU.WATCHING ? Z.intl.formatToPlainString(Z.t["M/L8oq"], {
+      t = (0, P.yE)(null != (u = null == l ? true : l.flags) ? u : 0, B.xjy.EMBEDDED) ? l.type === B.IIU.WATCHING ? Z.intl.formatToPlainString(Z.t["M/L8ot"], {
         guildName: r.name
-      }) : Z.intl.formatToPlainString(Z.t["4chKQk"], {
+      }) : Z.intl.formatToPlainString(Z.t["4chKQu"], {
         guildName: r.name
-      }) : Z.intl.formatToPlainString(Z.t.sddlGB, {
+      }) : Z.intl.formatToPlainString(Z.t.sddlGK, {
         server: r.name
       })
     }
-    return (null == l ? true : l.type) === B.IIU.HANG_STATUS && (t = Z.intl.string(Z.t["74vS//"])), (0, i.jsxs)("div", {
+    return (null == l ? true : l.type) === B.IIU.HANG_STATUS && (t = Z.intl.string(Z.t["74vS/x"])), (0, i.jsxs)("div", {
       className: F.headerContainer,
       children: [(0, i.jsx)(d.Heading, {
         className: s()((0, w.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
@@ -268,7 +268,7 @@ class $ extends(r = Chunk647438.PureComponent) {
           children: e.name
         }), (0, i.jsx)("div", {
           className: F.streamGame,
-          children: Z.intl.format(Z.t.gmCZRU, {
+          children: Z.intl.format(Z.t.gmCZRY, {
             game: e.details
           })
         })]
@@ -363,7 +363,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       o = n,
       s = n;
     if (e.type === B.IIU.CUSTOM_STATUS) o = r;
-    else if (e.type === B.IIU.HANG_STATUS && null != a) o = Z.intl.formatToPlainString(Z.t.IAZiW1, {
+    else if (e.type === B.IIU.HANG_STATUS && null != a) o = Z.intl.formatToPlainString(Z.t.IAZiW2, {
       guildName: a.name
     }), t = () => {
       (0, S.X)(a.id)
@@ -376,7 +376,7 @@ class $ extends(r = Chunk647438.PureComponent) {
           canOpen: null != e.sync_id,
           onOpenSpotifyArtist: this.handleOpenSpotifyArtist
         }, n);
-        o = Z.intl.format(Z.t.uU9le3, {
+        o = Z.intl.format(Z.t.uU9le8, {
           artists: s,
           artistsHook: t
         })
@@ -385,7 +385,7 @@ class $ extends(r = Chunk647438.PureComponent) {
         o = null == (l = e.assets) ? true : l.small_text
       }
     }
-    return null == o || "" === o ? null : ((0, k.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRU, {
+    return null == o || "" === o ? null : ((0, k.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRY, {
       game: o
     })), null != t) ? (0, i.jsx)(d.P3F, {
       onClick: t,
@@ -406,7 +406,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
       className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
-      children: Z.intl.format(Z.t["hq/Qzc"], {
+      children: Z.intl.format(Z.t["hq/Qze"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
@@ -479,20 +479,20 @@ class $ extends(r = Chunk647438.PureComponent) {
         onClick: this.handleOpenSpotifyAlbum,
         children: u
       }, n) : u;
-      c = Z.intl.format(Z.t.vOLBEx, {
+      c = Z.intl.format(Z.t.vOLBEy, {
         album: u,
         albumHook: t
       })
     }
-    return null != c && "" !== c && e.type !== B.IIU.CUSTOM_STATUS || (0, C.dS)(e) ? ((null == s ? true : s.size) == null && [G.Zc].includes(null != (n = e.application_id) ? n : "") ? a = Z.intl.formatToPlainString(Z.t["u//9Bw"], {
+    return null != c && "" !== c && e.type !== B.IIU.CUSTOM_STATUS || (0, C.dS)(e) ? ((null == s ? true : s.size) == null && [G.Zc].includes(null != (n = e.application_id) ? n : "") ? a = Z.intl.formatToPlainString(Z.t["u//9By"], {
       count: "0",
       max: null != (r = null == t ? true : t.getMaxParticipants()) ? r : 0
-    }) : (0, C.dS)(e) && (null == s ? true : s.size) != null ? a = Z.intl.formatToPlainString(Z.t["JC/3x8"], {
+    }) : (0, C.dS)(e) && (null == s ? true : s.size) != null ? a = Z.intl.formatToPlainString(Z.t["JC/3xw"], {
       numSpeakers: s.size[0],
       numListeners: s.size[1] - s.size[0]
     }) : (null == s ? true : s.size) != null && s.size.length >= 2 && (a = 0 === s.size[1] ? Z.intl.formatToPlainString(Z.t.IM4J4e, {
       count: s.size[0]
-    }) : Z.intl.formatToPlainString(Z.t["u//9Bw"], {
+    }) : Z.intl.formatToPlainString(Z.t["u//9By"], {
       count: s.size[0],
       max: s.size[1]
     })), (0, i.jsxs)("div", {

@@ -17,7 +17,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _(e, t) {
@@ -34,10 +34,10 @@ function _(e, t) {
     y = null != (n = null == r ? true : r.has(g.oNc.PARTNERED)) && n,
     v = _ && null != O && !y && h.type === f.A3.POWERUP_ACTIVATED,
     j = v ? {
-      title: b.intl.formatToPlainString(m.default.mgoPkZ, {
+      title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
-      description: b.intl.formatToPlainString(m.default.UT9pkJ, {
+      description: b.intl.formatToPlainString(m.default.UT9pkI, {
         dateString: (0, p.Z)(O)
       })
     } : null;
@@ -73,20 +73,20 @@ function O(e, t) {
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(P),
-        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
+        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
       return {
         firstHeader: S.title,
-        secondHeader: b.intl.formatToPlainString(m.default["8imxAg"], {
+        secondHeader: b.intl.formatToPlainString(m.default["8imxAq"], {
           dateString: e
         }),
-        firstBody: b.intl.formatToPlainString(m.default["/bW9tb"], {
+        firstBody: b.intl.formatToPlainString(m.default["/bW9tW"], {
           serverName: v.name
         }),
-        secondBody: b.intl.formatToPlainString(m.default.D09fdn, {
+        secondBody: b.intl.formatToPlainString(m.default.D09fdi, {
           dateString: e,
           boostCount: S.cost
         }),
-        thirdBody: b.intl.string(m.default["+zvKPj"]),
+        thirdBody: b.intl.string(m.default["+zvKPr"]),
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }

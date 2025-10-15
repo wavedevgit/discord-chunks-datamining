@@ -34,13 +34,13 @@ function f(e) {
   let I = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
     title: C ? f : null != (t = null == I ? true : I.title) ? t : f,
-    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
+    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == I ? true : I.description) ? l : "",
     highlightColor: C ? d.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(s.zx, {
       look: s.zx.Looks.LINK,
       size: s.zx.Sizes.MIN,
       color: s.zx.Colors.LINK,
-      children: m.intl.string(m.t.GEgsAw)
+      children: m.intl.string(m.t.GEgsA4)
     }),
     loading: y,
     className: x,

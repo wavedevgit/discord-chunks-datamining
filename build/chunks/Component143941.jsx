@@ -64,10 +64,10 @@ let P = e => {
     selectedVariantIndex: S
   } = e, [A, N] = (0, p.US)([s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), I = A === s.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: L
-  } = (0, u.ZP)(), T = m.default.getCurrentUser(), R = null != T ? f.Z.getFirstWishlistId(T.id) : null, k = l.useMemo(() => {
+  } = (0, u.ZP)(), T = m.default.getCurrentUser(), k = null != T ? f.Z.getFirstWishlistId(T.id) : null, R = l.useMemo(() => {
     var e;
     return t.type === o.Z.VARIANTS_GROUP && null != S && (null == (e = t.variants) ? true : e[S]) != null ? t.variants[S] : t
-  }, [t, S]), w = k.skuId, D = (0, y.ny)(R, w), M = l.useRef(null), [F, U] = l.useState(null);
+  }, [t, S]), w = R.skuId, D = (0, y.ny)(k, w), M = l.useRef(null), [F, U] = l.useState(null);
   l.useEffect(() => {
     U(null)
   }, [w]);
@@ -77,17 +77,17 @@ let P = e => {
     B = Z || Y ? v.wishlistedOrHoveredIconColor : v.normalIconColor,
     {
       isPurchased: V
-    } = (0, g.L)(k),
-    z = (0, O.fp)(k),
-    G = (0, O.x6)(k),
-    H = (0, O.G1)(k),
+    } = (0, g.L)(R),
+    z = (0, O.fp)(R),
+    G = (0, O.x6)(R),
+    H = (0, O.G1)(R),
     K = l.useCallback(async e => {
-      if (e.stopPropagation(), Z && null != R) {
+      if (e.stopPropagation(), Z && null != k) {
         U(false);
         try {
-          await b.Z.removeSkuFromWishlist(R, w, L), U(null)
+          await b.Z.removeSkuFromWishlist(k, w, L), U(null)
         } catch (e) {
-          U(null), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t.F8FvU1), c.ToastType.FAILURE)), c.uvj.announce(h.intl.string(h.t.F8FvU1))
+          U(null), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t.F8FvUy), c.ToastType.FAILURE)), c.uvj.announce(h.intl.string(h.t.F8FvUy))
         }
       } else {
         U(true);
@@ -97,18 +97,18 @@ let P = e => {
               default: e
             } = await n.e("36340").then(n.bind(n, 874533));
             return t => (0, r.jsx)(e, E(x({}, t), {
-              product: k
+              product: R
             }))
           }), N(j.L.USER_DISMISS))
         } catch (e) {
-          U(null), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t.F8FvU1), c.ToastType.FAILURE)), c.uvj.announce(h.intl.string(h.t.F8FvU1))
+          U(null), (0, c.showToast)((0, c.createToast)(h.intl.string(h.t.F8FvUy), c.ToastType.FAILURE)), c.uvj.announce(h.intl.string(h.t.F8FvUy))
         }
       }
-    }, [L, Z, w, k, I, N, R, U]);
+    }, [L, Z, w, R, I, N, k, U]);
   if (!C && !Z || null == T || V) return null;
   if (z || G || H) {
-    let e = h.intl.string(h.t["50TX9v"]);
-    return G ? e = h.intl.string(h.t.UfDp3N) : z && (e = h.intl.string(h.t.KsFBMj)), (0, r.jsx)(c.aML, {
+    let e = h.intl.string(h.t["50TX9k"]);
+    return G ? e = h.intl.string(h.t.UfDp3L) : z && (e = h.intl.string(h.t.KsFBMs)), (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: e,
       children: e => (0, r.jsx)(c.P3F, E(x({}, e), {
@@ -125,19 +125,19 @@ let P = e => {
       }))
     })
   }
-  let X = Z ? h.intl.string(h.t.yr9TTU) : h.intl.string(h.t["8DkMER"]),
-    J = I ? (0, r.jsxs)(r.Fragment, {
+  let X = Z ? h.intl.string(h.t.yr9TTf) : h.intl.string(h.t["8DkMEQ"]),
+    q = I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
         children: h.intl.string(h.t["47Rhc3"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
-        children: h.intl.string(h.t.PXjA0d)
+        children: h.intl.string(h.t.PXjA0b)
       })]
     }) : X;
   return (0, r.jsx)(c.aML, {
     "data-migration-pending": true,
-    text: J,
+    text: q,
     "aria-label": X,
     children: e => (0, r.jsx)(c.P3F, E(x({}, e), {
       className: a()(v.wishlistButton, _ && v.withHover, P),

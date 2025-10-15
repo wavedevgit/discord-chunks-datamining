@@ -34,10 +34,10 @@ let m = e => {
     I = _.intl.string(_.t.d7b1p6);
   switch (t) {
     case 0:
-      v = _.intl.string(_.t.Xiwf1d);
+      v = _.intl.string(_.t.Xiwf1Q);
       break;
     case 1:
-      v = _.intl.string(_.t.GXvlU1);
+      v = _.intl.string(_.t.GXvlU9);
       break;
     default:
       return (0, u.vE)(t)
@@ -82,7 +82,7 @@ let m = e => {
           onClick: m,
           look: o.zx.Looks.BLANK,
           className: p.cancel,
-          children: _.intl.string(_.t["2m+Sqq"])
+          children: _.intl.string(_.t["2m+Sqk"])
         })]
       })]
     })]

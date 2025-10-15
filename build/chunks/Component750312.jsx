@@ -34,38 +34,38 @@ function y(e) {
     dragHandleAdditionalMenuItems: P
   } = e, I = (0, s.Dt)(), S = (0, c.e7)([u.default], () => u.default.getId() === t), E = i.useRef(null), T = i.useRef(null), {
     trackUserProfileAction: D
-  } = (0, d.KZ)(), k = (0, f.Z)({
+  } = (0, d.KZ)(), N = (0, f.Z)({
     widgetType: r.type,
     onAction: D
-  }), N = S && null != x && !m, {
+  }), k = S && null != x && !m, {
     isDragging: C,
-    dragSourcePosition: A
+    dragSourcePosition: Z
   } = (0, g.q)({
     dropRef: E,
     dragRef: T,
     userId: t,
     widget: r,
     index: x,
-    disableInteraction: !N
-  }), [Z, R] = i.useState(false);
+    disableInteraction: !k
+  }), [A, R] = i.useState(false);
   return (0, n.jsx)(j, {
     ref: E,
-    disableInteraction: !N,
+    disableInteraction: !k,
     onMouseEnter: () => R(true),
     onMouseLeave: () => R(false),
-    dragSourcePosition: A,
+    dragSourcePosition: Z,
     index: null != x ? x : 0,
     children: (0, n.jsxs)("section", {
-      ref: k,
+      ref: N,
       className: o()(O.container, y, {
         [O.isDragging]: C
       }),
       "aria-labelledby": I,
-      children: [N && (0, n.jsx)(p.Z, {
+      children: [k && (0, n.jsx)(p.Z, {
         buttonRef: T,
         widget: r,
         className: o()(O.dragHandleButton, {
-          [O.opacity]: Z || C
+          [O.opacity]: A || C
         }),
         additionalMenuItems: P
       }), (0, n.jsx)(b.Z, {

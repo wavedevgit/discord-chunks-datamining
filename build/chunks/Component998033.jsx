@@ -47,7 +47,7 @@ function _(e, t, n, _) {
       style: {
         textAlign: "center"
       },
-      children: y.intl.string(y.t["+MJm39"])
+      children: y.intl.string(y.t["+MJm3w"])
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {

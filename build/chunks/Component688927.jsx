@@ -25,7 +25,7 @@ function p(e) {
     children: [(0, r.jsx)(o.Text, {
       variant: "text-xxs/medium",
       className: a()(u.flex, u.headerText),
-      children: d.intl.format(d.t["pX+fmp"], {
+      children: d.intl.format(d.t["pX+fmn"], {
         expirationDate: m
       })
     }), (0, r.jsx)(c.r, {
@@ -58,7 +58,7 @@ function p(e) {
           return e
         }({}, e), n = n = {
           className: u.submenuWrapper,
-          "aria-label": d.intl.string(d.t.DEoVWV),
+          "aria-label": d.intl.string(d.t.DEoVWZ),
           children: (0, r.jsx)(o.xhG, {
             size: "md",
             color: "currentColor",

@@ -25,8 +25,8 @@ let y = e => {
     onClose: n
   } = e, y = (0, a.useRef)((0, g.sf)()).current, {
     selectedDestinations: O,
-    messageText: j,
-    canSend: C,
+    messageText: C,
+    canSend: j,
     setSend: w,
     updateMessage: v,
     updateChannel: S
@@ -34,12 +34,12 @@ let y = e => {
     colors: E,
     chassisMixAmount: M,
     gradientAngle: k
-  } = (0, b.Ig)(), D = (0, s.e7)([u.Z], () => u.Z.theme), I = (0, a.useMemo)(() => ({
+  } = (0, b.Ig)(), I = (0, s.e7)([u.Z], () => u.Z.theme), D = (0, a.useMemo)(() => ({
     colors: E.map(e => e.replace("#", "")),
     gradient_angle: k,
     base_mix: M,
-    base_theme: (0, p.h)(D)
-  }), [E, k, M, D]), T = a.useMemo(() => (0, d.createChannelRecord)({
+    base_theme: (0, p.h)(I)
+  }), [E, k, M, I]), T = a.useMemo(() => (0, d.createChannelRecord)({
     id: "1",
     type: l.d.DM
   }), []), R = a.useMemo(() => (0, i.e5)(function(e) {
@@ -67,11 +67,11 @@ let y = e => {
     v(R), S(T), x(true)
   }, [R, T, v, S]);
   let Z = a.useCallback(async () => {
-    if (!C()) return Promise.reject();
-    await (0, _.O)(O, I, j), f.default.track(m.rMx.CUSTOM_THEME_SHARED, {
+    if (!j()) return Promise.reject();
+    await (0, _.O)(O, D, C), f.default.track(m.rMx.CUSTOM_THEME_SHARED, {
       num_destinations: O.length
     }), await n()
-  }, [I, O, j, C, n]);
+  }, [D, O, C, j, n]);
   return ((0, a.useEffect)(() => {
     w(Z)
   }, [Z, w]), P) ? (0, r.jsx)(g.fm.Provider, {

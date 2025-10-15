@@ -32,17 +32,17 @@ function _(e) {
   }
   return (0, r.jsx)(c.Z, {
     artURL: f,
-    header: d.intl.string(d.t["z+mxvr"]),
+    header: d.intl.string(d.t["z+mxvo"]),
     size: (0, c.L)(_),
     noArt: m,
     selected: h,
-    description: d.intl.format(d.t.d486Wl, {
+    description: d.intl.format(d.t.d486Wm, {
       helpUrl: l.Z.getArticleURL(u.BhN.VOICE_VIDEO_TROUBLESHOOTING)
     }),
-    errorCodeMessage: d.intl.formatToPlainString(d.t["ejOT9/"], {
+    errorCodeMessage: d.intl.formatToPlainString(d.t.ejOT95, {
       errorCode: g
     }),
     onCTAClick: E,
-    callToAction: d.intl.string(d.t["hxmQ/f"])
+    callToAction: d.intl.string(d.t["hxmQ/e"])
   })
 }

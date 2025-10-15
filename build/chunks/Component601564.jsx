@@ -57,9 +57,9 @@ class P extends Chunk647438.PureComponent {
   renderCustomErrorMessage() {
     return (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)("p", {
-        children: Chunk388032.intl.string(Chunk388032.t["1PZdFx"])
+        children: Chunk388032.intl.string(Chunk388032.t["1PZdF7"])
       }), (0, Chunk951288.jsx)("p", {
-        children: Chunk388032.intl.string(Chunk388032.t.CvQlAA)
+        children: Chunk388032.intl.string(Chunk388032.t.CvQlAH)
       })]
     })
   }

@@ -32,10 +32,10 @@ function p(e) {
     }
   };
   return (0, n.jsx)(o.u, {
-    text: g.intl.string(g.t.jTW019),
+    text: g.intl.string(g.t.jTW016),
     children: (0, n.jsx)(l.P3F, {
       onClick: m,
-      "aria-label": g.intl.string(g.t.jTW019),
+      "aria-label": g.intl.string(g.t.jTW016),
       className: a()(p, f.clickable),
       children: (0, n.jsx)(l.XHJ, {
         size: i,

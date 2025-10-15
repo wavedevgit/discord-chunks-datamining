@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -93,8 +93,8 @@ let y = () => 80,
       y = i.useRef(null),
       {
         accessibilityLabel: P,
-        thumbnailPreviewSrc: v,
-        title: O
+        thumbnailPreviewSrc: O,
+        title: _
       } = null != (t = null == p ? true : p.config) ? t : {};
     return (0, r.jsxs)(j, x(h({
       innerRef: null != l ? l : y,
@@ -106,8 +106,8 @@ let y = () => 80,
         className: m.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: m.presetEffectImg,
-        src: v,
-        alt: O
+        src: O,
+        alt: _
       }), (0, r.jsx)(a.Z, {
         isPurchaseSection: o === f.$0.PURCHASE,
         isPremiumSection: o === f.$0.PREMIUM_PURCHASE,
@@ -116,7 +116,7 @@ let y = () => 80,
       })]
     }))
   },
-  v = e => {
+  O = e => {
     let {
       user: t,
       guild: n,
@@ -144,9 +144,9 @@ let y = () => 80,
         renderItem: (e, t, u, x) => {
           let {
             section: y,
-            items: v
+            items: O
           } = d[e];
-          return (0, s.EQ)(v[t]).with(f.Tm, () => (0, r.jsxs)(j, {
+          return (0, s.EQ)(O[t]).with(f.Tm, () => (0, r.jsxs)(j, {
             style: h({}, u),
             isSelected: !g,
             onSelect: () => o(null),
@@ -157,7 +157,7 @@ let y = () => 80,
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/normal",
               color: "header-primary",
-              children: null != n ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
+              children: null != n ? p.intl.string(p.t.CHf9iJ) : p.intl.string(p.t.PoWNfe)
             })]
           }, x)).with(f.oT, () => (0, r.jsxs)(j, {
             style: u,
@@ -171,7 +171,7 @@ let y = () => 80,
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/normal",
               color: "header-primary",
-              children: p.intl.string(p.t.pWG4zc)
+              children: p.intl.string(p.t.pWG4ze)
             })]
           }, x)).otherwise(e => {
             let t = (null == i ? true : i.skuId) === e.skuId;

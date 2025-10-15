@@ -25,7 +25,7 @@ function d(e) {
   }), [o, d] = i.useState();
   null == o && (o = (0, r.jsx)(f, {
     onBack: t,
-    title: c.intl.string(c.t["DB/m9f"])
+    title: c.intl.string(c.t["DB/m9a"])
   }));
   let _ = (e, t) => {
     d((0, r.jsx)(f, {
@@ -54,7 +54,7 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: u.title,
     children: [(0, r.jsx)(o.hU, {
-      "aria-label": c.intl.string(c.t["13/7kZ"]),
+      "aria-label": c.intl.string(c.t["13/7kX"]),
       icon: () => (0, r.jsx)(o.j9r, {
         size: "sm"
       }),

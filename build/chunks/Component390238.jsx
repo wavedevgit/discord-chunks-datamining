@@ -1,7 +1,7 @@
 /** Chunk was on 88938 **/
 /** chunk id: 390238, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function A(e) {
     location: g,
     reward: x,
     sourceQuestContent: j
-  } = e, _ = r.useRef(null), [v, w] = r.useState(null), A = r.useRef(new s.qA), k = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), B = (null == (t = m.userStatus) ? true : t.claimedAt) != null, [M, I] = r.useState(B ? "claimed" : "loading");
+  } = e, _ = r.useRef(null), [v, w] = r.useState(null), A = r.useRef(new s.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), B = (null == (t = m.userStatus) ? true : t.claimedAt) != null, [M, I] = r.useState(B ? "claimed" : "loading");
   r.useEffect(() => {
     if (!B) {
       let e = f.r.build(m.config),
@@ -64,16 +64,16 @@ function A(e) {
           type: l.$jN.Type.SPINNING_CIRCLE
         }) : "error" === M ? (0, a.jsx)(p.Z, {
           onClose: o
-        }) : (0, a.jsx)(y, {
+        }) : (0, a.jsx)(k, {
           quest: m,
           rewardName: x.messages.name,
           location: g,
-          useReducedMotion: k,
+          useReducedMotion: y,
           onClose: o,
           sourceQuestContent: j
         })
       })
-    }), !k && !B && "claimed" === M && (0, a.jsx)(u.Z, {
+    }), !y && !B && "claimed" === M && (0, a.jsx)(u.Z, {
       confettiTarget: _.current,
       confettiCanvas: v,
       sprites: N.CA,
@@ -82,7 +82,7 @@ function A(e) {
   })
 }
 
-function y(e) {
+function k(e) {
   let {
     quest: t,
     rewardName: n,
@@ -134,12 +134,12 @@ function y(e) {
           variant: "heading-lg/bold",
           color: "always-white",
           className: R.heading,
-          children: w.intl.string(w.t["0/Yz+f"])
+          children: w.intl.string(w.t["0/Yz+Y"])
         }), (0, a.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "always-white",
           className: R.text,
-          children: w.intl.format(w.t["v1u/zs"], {
+          children: w.intl.format(w.t["v1u/zq"], {
             rewardName: n
           })
         })]
@@ -148,7 +148,7 @@ function y(e) {
   })
 }
 
-function k(e) {
+function y(e) {
   let {
     quest: t,
     location: n,

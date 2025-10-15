@@ -52,8 +52,8 @@ function w() {
     className: Chunk909136.loadingPlaceholder
   }) : 0 === exports.length ? (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.T39,
-    header: Chunk388032.intl.string(Chunk388032.t.aJQZfX),
-    tip: Chunk388032.intl.string(Chunk388032.t.rCN4pK)
+    header: Chunk388032.intl.string(Chunk388032.t.aJQZfZ),
+    tip: Chunk388032.intl.string(Chunk388032.t.rCN4pN)
   }) : (0, Chunk951288.jsx)(Chunk91192.bG, {
     navigator: o,
     children: (0, Chunk951288.jsx)(Chunk91192.SJ, {
@@ -174,23 +174,23 @@ let A = Chunk647438.memo(function(e) {
         };
       case b._.ERROR_CHANNEL_NOT_FOUND:
         return {
-          isError: true, stateMessage: I.intl.string(I.t.v5O2dH)
+          isError: true, stateMessage: I.intl.string(I.t.v5O2dK)
         };
       case b._.ERROR_USER_NOT_FOUND:
         return {
-          isError: true, stateMessage: I.intl.string(I.t.j8uIfH)
+          isError: true, stateMessage: I.intl.string(I.t.j8uIfG)
         };
       case b._.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES:
         return {
-          isError: true, stateMessage: I.intl.string(I.t.w6zHX1)
+          isError: true, stateMessage: I.intl.string(I.t["w6zHX/"])
         };
       case b._.ERROR_SEND_FAILED:
         return {
-          isError: true, stateMessage: I.intl.string(I.t["pflV7+"])
+          isError: true, stateMessage: I.intl.string(I.t.pflV7z)
         };
       case b._.ERROR_SCHEDULED_MESSAGES_DISABLED:
         return {
-          isError: true, stateMessage: I.intl.string(I.t.j8uIfH)
+          isError: true, stateMessage: I.intl.string(I.t.j8uIfG)
         };
       default:
         (0, x.vE)(e)

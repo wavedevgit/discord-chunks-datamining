@@ -21,7 +21,7 @@ function d() {
       window.open(Chunk63063.Z.getArticleURL(module), "_blank")
     };
   return (0, Chunk951288.jsx)(Chunk907995.f, {
-    label: Chunk388032.t.EUo0ys,
+    label: Chunk388032.t.EUo0yj,
     labelHook: exports,
     noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
   })
@@ -34,7 +34,7 @@ function f() {
     })
   };
   return (0, Chunk951288.jsx)(Chunk907995.f, {
-    label: Chunk388032.t.OX4ybm,
+    label: Chunk388032.t.OX4ybh,
     labelHook: module,
     noticeType: Chunk484710.nq.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
   })

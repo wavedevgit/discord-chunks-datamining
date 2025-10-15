@@ -42,6 +42,6 @@ let _ = Chunk647438.memo(function(e) {
   }).enabled && !n && !l && j && x && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
     icon: o.Csw,
     onClick: v,
-    tooltip: _ ? y.intl.string(y.t.fdEeb2) : y.intl.string(y.t.focH1t)
+    tooltip: _ ? y.intl.string(y.t.fdEeb5) : y.intl.string(y.t.focH1t)
   }) : null
 })

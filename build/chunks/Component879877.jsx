@@ -29,18 +29,18 @@ function O(e) {
     disableInteraction: O = false
   } = e, h = null != (t = null == r ? true : r.filter(e => null != (0, p.zK)(e))) ? t : [], _ = h.length > 0, w = l.qH, P = a && !O && (0, g.M8)(c) && h.length < w, {
     trackUserProfileAction: I
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, k] = (0, i.useState)(0), [N, C] = (0, i.useState)(false), A = v(E, T, h, S, k);
-  if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
-      window.removeEventListener("resize", A)
-    }), [A, null == h ? true : h.join("")]), !_ && !P) return null;
-  let Z = N ? h : h.slice(0, h.length - D);
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [D, N] = (0, i.useState)(0), [k, C] = (0, i.useState)(false), Z = v(E, T, h, S, N);
+  if ((0, i.useEffect)(() => (Z(), window.addEventListener("resize", Z), () => {
+      window.removeEventListener("resize", Z)
+    }), [Z, null == h ? true : h.join("")]), !_ && !P) return null;
+  let A = k ? h : h.slice(0, h.length - D);
   return (0, n.jsxs)("div", {
     className: o()(m.tagListContainer, u),
     children: [_ && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("ul", {
         className: m.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
-        children: Z.map(e => (0, n.jsx)(y, {
+        children: A.map(e => (0, n.jsx)(y, {
           tag: e,
           isCurrentUser: a,
           applicationId: s,
@@ -50,7 +50,7 @@ function O(e) {
           },
           disableInteraction: O
         }, e))
-      }), D > 0 && (N ? (0, n.jsx)(x, {
+      }), D > 0 && (k ? (0, n.jsx)(x, {
         onClick: () => {
           C(false), I({
             action: "COLLAPSE_GAME_TAGS"
@@ -100,7 +100,7 @@ let y = e => {
         color: "text-secondary",
         children: O()
       }), r && !o && (0, n.jsx)(c.u, {
-        text: b.intl.string(b.t.Otv9fH),
+        text: b.intl.string(b.t.Otv9fP),
         children: (0, n.jsx)(s.P3F, {
           onClick: () => {
             (0, g.RZ)(a, i, t), u({
@@ -110,7 +110,7 @@ let y = e => {
             })
           },
           className: m.removeButton,
-          "aria-label": b.intl.formatToPlainString(b.t.GCn1nZ, {
+          "aria-label": b.intl.formatToPlainString(b.t.GCn1ne, {
             tag: O()
           }),
           children: (0, n.jsx)(s.Dio, {
@@ -137,12 +137,12 @@ let y = e => {
       })
     }) : (0, n.jsx)(c.u, {
       asContainer: true,
-      text: b.intl.string(b.t.mriLXF),
+      text: b.intl.string(b.t.mriLXL),
       children: (0, n.jsx)(s.P3F, {
         onClick: r,
         className: m.expandButton,
         innerRef: a,
-        "aria-label": b.intl.string(b.t.mriLXF),
+        "aria-label": b.intl.string(b.t.mriLXL),
         children: (0, n.jsx)(s.Text, {
           variant: "text-xxs/medium",
           color: "none",
@@ -157,11 +157,11 @@ let y = e => {
     } = e;
     return (0, n.jsx)(c.u, {
       asContainer: true,
-      text: b.intl.string(b.t.z9VPra),
+      text: b.intl.string(b.t.z9VPrQ),
       children: (0, n.jsx)(s.P3F, {
         onClick: t,
         className: m.collapseButton,
-        "aria-label": b.intl.string(b.t.z9VPra),
+        "aria-label": b.intl.string(b.t.z9VPrQ),
         children: (0, n.jsx)(u.Z, {
           direction: u.Z.Directions.LEFT,
           width: 12,

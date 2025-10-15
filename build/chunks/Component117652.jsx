@@ -62,7 +62,7 @@ let M = {
   renderStep: e => (0, r.jsx)(k, x({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
+    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
   }
 };
 
@@ -81,7 +81,7 @@ function j(e) {
       onClick: () => t(c),
       disabled: o,
       loading: s,
-      text: P.intl.string(P.t.XiOHRU)
+      text: P.intl.string(P.t.XiOHRX)
     }), i ? (0, r.jsx)(g.Z, {
       onClick: n
     }) : null]
@@ -116,8 +116,8 @@ function k(e) {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), q = K && M === R.Wt.DM_CHANNEL, X = z === p.u.POPULAR ? P.intl.string(P.t.Kwgrrq) : P.intl.string(P.t.r1huYW), Q = async (e, t) => {
-    k(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqa"])), k(false)
+  }), q = K && M === R.Wt.DM_CHANNEL, X = z === p.u.POPULAR ? P.intl.string(P.t.Kwgrrr) : P.intl.string(P.t.r1huYR), Q = async (e, t) => {
+    k(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqQ"])), k(false)
   };
   (0, o.ZP)(() => {
     null != B && null != L && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -147,7 +147,7 @@ function k(e) {
       }, e)
     },
     ee = () => (0, r.jsx)(h.Z, {
-      sectionTitle: P.intl.string(P.t.B3miEx),
+      sectionTitle: P.intl.string(P.t.B3miE8),
       onTextChange: e => null == l ? true : l(e),
       pendingText: s,
       currentText: s,
@@ -273,11 +273,11 @@ function U(e) {
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: P.intl.string(P.t["1+Co8P"])
+            children: P.intl.string(P.t["1+Co8G"])
           }), (0, r.jsx)(a.Heading, {
             color: "header-secondary",
             variant: "heading-sm/medium",
-            children: P.intl.string(P.t.nYn52N)
+            children: P.intl.string(P.t.nYn52B)
           })]
         })]
       }), (0, r.jsx)("div", {

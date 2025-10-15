@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk279475 = require("./279475.js"),
   Chunk60482 = require("./60482.js"),
   Chunk735276 = require("./735276.jsx"),
-  Chunk989308 = require("./989308.js"),
-  Chunk948208 = require("./948208.js"),
+  Chunk149829 = require("./149829.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk237522 = require("./237522.js"),
   Chunk922434 = require("./922434.js"),
@@ -37,15 +37,15 @@ function I(e) {
       expiringAt: r[0].ends_at
     } : {
       type: "active",
-      statusText: _.intl.string(v.default.FFLkm5)
+      statusText: _.intl.string(v.default.FFLkmx)
     }
-  }, [null == n ? true : n.entitlements]), I = (0, f.d)((null == o ? true : o.type) === "active"), E = i.useMemo(() => {
+  }, [null == n ? true : n.entitlements]), I = (0, f.d)((null == o ? true : o.type) === "active"), w = i.useMemo(() => {
     if ((null == n ? true : n.catalog) == null) return 0;
     let e = Object.values(n.catalog);
     return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
   }, [null == n ? true : n.catalog]);
   return null == n ? null : (0, r.jsxs)(p.aB, {
-    label: _.intl.string(x.default.B3OfLy),
+    label: _.intl.string(x.default["B3OfL/"]),
     badge: "beta",
     isActive: (null == o ? true : o.type) === "active",
     isWarning: (null == o ? true : o.type) === "expiring",
@@ -63,10 +63,10 @@ function I(e) {
         className: l()(b.image, j.gradient)
       })]
     }), (0, r.jsx)(p.Q9, {
-      title: _.intl.string(x.default.B3OfLy),
+      title: _.intl.string(x.default["B3OfL/"]),
       textColor: I,
       footer: (0, r.jsx)(p.uf, {
-        cost: E,
+        cost: w,
         costDecorator: "+",
         status: o
       }),
@@ -74,13 +74,13 @@ function I(e) {
         className: b.description,
         color: I,
         variant: "text-sm/medium",
-        children: _.intl.string(x.default.EGkJAA)
+        children: _.intl.string(x.default.EGkJAG)
       })
     }), (0, r.jsx)(p.N4, {
       children: (0, r.jsx)(c.Button, {
         variant: "primary",
         fullWidth: true,
-        text: _.intl.string(x.default.PuvU5e),
+        text: _.intl.string(x.default.PuvU5b),
         onClick: e => {
           e.stopPropagation(), (0, g.Z)({
             guildId: t,

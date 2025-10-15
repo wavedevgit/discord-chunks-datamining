@@ -2,7 +2,7 @@
 /** chunk id: 760213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => v,
-  Z: () => I
+  Z: () => U
 }), require("./457542.js");
 var s, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,24 +35,24 @@ function j(e) {
   } = e, {
     currentUser: i,
     hidePrivateData: r,
-    isAuthenticated: T
+    isAuthenticated: N
   } = (0, c.cj)([_.default, f.Z, h.default], () => ({
     currentUser: _.default.getCurrentUser(),
     hidePrivateData: f.Z.hidePersonalInformation,
     isAuthenticated: h.default.isAuthenticated()
-  })), v = new x.default(n), j = T && (null == i ? true : i.id) === v.id, I = n.tokenStatus === N.q.INVALID, U = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
+  })), v = new x.default(n), j = N && (null == i ? true : i.id) === v.id, U = n.tokenStatus === E.q.INVALID, I = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
   return m.Z.useConfig({
     location: "Account card load"
   }), j ? M = (0, a.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: p.hintText,
     color: "text-feedback-positive",
-    children: A.intl.string(A.t.seV8ys)
-  }) : I && (M = (0, a.jsx)(o.Text, {
+    children: A.intl.string(A.t.seV8yt)
+  }) : U && (M = (0, a.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: p.hintText,
     color: "text-danger",
-    children: A.intl.string(A.t.tYX2pq)
+    children: A.intl.string(A.t.tYX2ps)
   })), (0, a.jsx)("div", {
     className: p.accountCard,
     children: (0, a.jsxs)("div", {
@@ -78,21 +78,21 @@ function j(e) {
           }), (0, a.jsx)(o.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: U
+            children: I
           })]
         }), M]
       }), (0, a.jsxs)("div", {
         className: p.userActions,
         children: [!j && (0, a.jsx)(o.Button, {
           variant: "secondary",
-          text: I ? A.intl.string(A.t["DSN+h4"]) : t,
+          text: U ? A.intl.string(A.t["DSN+hw"]) : t,
           onClick: function() {
-            if (I) return void s(0, n.id);
+            if (U) return void s(0, n.id);
             g.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
                 section: b.jXE.MANAGE_ACCOUNTS_MODAL
               }
-            }), E.yD(n.id), s(1, n.id)
+            }), T.yD(n.id), s(1, n.id)
           }
         }), (0, a.jsx)(o.hU, {
           icon: o.xhG,
@@ -102,16 +102,16 @@ function j(e) {
                 onSelect: t
               } = e;
               return (0, a.jsx)(o.v2r, {
-                "aria-label": A.intl.string(A.t["41qiDQ"]),
+                "aria-label": A.intl.string(A.t["41qiDU"]),
                 navId: "manage-multi-account",
                 onClose: u.Zy,
                 onSelect: t,
                 children: (0, a.jsx)(o.sNh, {
                   id: "remove-account",
-                  label: A.intl.string(A.t.lSLMaW),
+                  label: A.intl.string(A.t.lSLMaU),
                   action: () => {
                     d.Z.logout("multi_accounts_list", null, n.id).finally(() => {
-                      E.Zd(n.id)
+                      T.Zd(n.id)
                     });
                     let e = {};
                     null != i ? e.section = b.jXE.MANAGE_ACCOUNTS_MODAL : e.page = b.Usc.LOGIN, g.default.track(b.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
@@ -123,7 +123,7 @@ function j(e) {
               })
             })
           },
-          "aria-label": A.intl.string(A.t.PdRCRk),
+          "aria-label": A.intl.string(A.t.PdRCRg),
           variant: "icon-only"
         })]
       })]
@@ -131,14 +131,14 @@ function j(e) {
   })
 }
 
-function I(e) {
+function U(e) {
   let {
     actionText: t,
     onAction: n
   } = e, {
     isLoading: s,
     multiAccountUsers: r
-  } = (0, T.L)();
+  } = (0, N.L)();
   return (0, a.jsx)("div", {
     className: p.list,
     children: s ? (0, a.jsx)(o.$jN, {

@@ -80,7 +80,7 @@ let h = {
       guildId: e,
       channelId: t,
       settings: n
-    }), i.uv.announce(p.intl.string(p.t.MlIsJy)), (0, c.jz)({
+    }), i.uv.announce(p.intl.string(p.t.MlIsJ8)), (0, c.jz)({
       guildId: e,
       channelId: t,
       change: n,
@@ -120,7 +120,7 @@ let h = {
       guildId: e,
       channelId: t,
       settings: r
-    }), i.uv.announce(p.intl.string(p.t.MlIsJy)), (0, c.jz)({
+    }), i.uv.announce(p.intl.string(p.t.MlIsJ8)), (0, c.jz)({
       updateType: f.I.AUTHORIZED_APP_DM,
       guildId: e,
       channelId: t,

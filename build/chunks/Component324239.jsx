@@ -25,10 +25,10 @@ function S(e) {
     claimRequired: m,
     onSuccess: d,
     onClose: f
-  } = e, [S, y] = l.useState(), [N, C] = l.useState(""), [b, x] = l.useState(""), [O, j] = l.useState(false);
+  } = e, [S, y] = l.useState(), [N, b] = l.useState(""), [x, C] = l.useState(""), [O, j] = l.useState(false);
   l.useEffect(() => u.Z.flowStep(p.MK.ANY, p.mx.CLAIM_ACCOUNT), []);
   let v = async e => {
-    e.preventDefault(), j(true), y(""), x("");
+    e.preventDefault(), j(true), y(""), C("");
     try {
       await (0, c.S2)({
         email: t,
@@ -36,7 +36,7 @@ function S(e) {
       }), j(false), d()
     } catch (e) {
       var n, r;
-      (null == e || null == (n = e.body) ? true : n.email) && y(e.body.email), (null == e || null == (r = e.body) ? true : r.password) && x(e.body.password), j(false)
+      (null == e || null == (n = e.body) ? true : n.email) && y(e.body.email), (null == e || null == (r = e.body) ? true : r.password) && C(e.body.password), j(false)
     }
   };
   return (0, r.jsxs)("div", {
@@ -49,12 +49,12 @@ function S(e) {
       }), (0, r.jsx)(i.Heading, {
         className: g.formTitle,
         variant: "heading-xl/semibold",
-        children: _.intl.string(_.t.uQShv7)
+        children: _.intl.string(_.t["uQShv/"])
       }), (0, r.jsx)(i.Text, {
         className: g.formBody,
         variant: "text-md/normal",
         color: "header-secondary",
-        children: m ? _.intl.string(_.t.sW28gY) : _.intl.string(_.t["gP/vPT"])
+        children: m ? _.intl.string(_.t.sW28gZ) : _.intl.string(_.t["gP/vPe"])
       }), (0, r.jsx)(i.olH, {
         className: g.closeButton,
         onClick: f
@@ -66,24 +66,24 @@ function S(e) {
         children: (0, r.jsxs)(i.Kqy, {
           gap: 16,
           children: [(0, r.jsx)(i.oil, {
-            label: _.intl.string(_.t.dI4d4e),
+            label: _.intl.string(_.t.dI4d4S),
             value: t,
             error: S,
             onChange: e => n(e),
             autoFocus: true
           }), (0, r.jsx)(i.oil, {
-            label: _.intl.string(_.t["CIGa+/"]),
+            label: _.intl.string(_.t["CIGa+7"]),
             type: "password",
             value: N,
-            error: b,
-            onChange: e => C(e)
+            error: x,
+            onChange: e => b(e)
           }), (0, r.jsx)(o.zx, {
             type: "submit",
             size: o.zx.Sizes.LARGE,
             fullWidth: true,
             submitting: O,
             disabled: 0 === t.length || 0 === N.length,
-            children: _.intl.string(_.t.fiNVio)
+            children: _.intl.string(_.t.fiNVin)
           }), m && (0, r.jsx)(o.zx, {
             className: g.logoutButton,
             color: o.zx.Colors.PRIMARY,
@@ -92,7 +92,7 @@ function S(e) {
             onClick: () => {
               s.Z.logout("claim_account_modal"), f()
             },
-            children: _.intl.string(_.t["2jxGen"])
+            children: _.intl.string(_.t["2jxGer"])
           })]
         })
       })
@@ -105,7 +105,7 @@ function y(e) {
     email: t,
     claimRequired: n,
     onClose: s
-  } = e, c = n ? _.t.D7trIC : _.t.JNWX7O;
+  } = e, c = n ? _.t.D7trIB : _.t.JNWX7G;
   return l.useEffect(() => u.Z.flowStep(p.MK.ANY, p.mx.CLAIM_ACCOUNT_SUCCESS), []), (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(i.hzk, {
       className: g.successContent,
@@ -130,7 +130,7 @@ function y(e) {
       children: (0, r.jsx)(o.zx, {
         size: o.zx.Sizes.LARGE,
         onClick: s,
-        children: _.intl.string(_.t.BddRzc)
+        children: _.intl.string(_.t.BddRzS)
       })
     }) : (0, r.jsx)(i.mzw, {
       direction: a.Z.Direction.VERTICAL,
@@ -147,7 +147,7 @@ function y(e) {
             qr_code: false
           })
         },
-        children: _.intl.string(_.t.ygArIS)
+        children: _.intl.string(_.t.ygArIV)
       })
     })]
   })

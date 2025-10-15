@@ -82,11 +82,11 @@ function D(e, t, n, r) {
         type: "GROUP", key: t, id: t, get title() {
           switch (t) {
             case I.Skl.ONLINE:
-              return T.intl.string(T.t.WbGtnJ);
+              return T.intl.string(T.t.WbGtnH);
             case I.Skl.OFFLINE:
-              return T.intl.string(T.t.Vv0abG);
+              return T.intl.string(T.t.Vv0abJ);
             default:
-              return T.intl.string(T.t["UQMV/P"])
+              return T.intl.string(T.t["UQMV/E"])
           }
         }, count: n, index: r
       };

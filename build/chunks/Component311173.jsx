@@ -30,7 +30,7 @@ function h(e) {
       className: p.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
-      children: null != i ? i : m.intl.format(m.t.jKYAPj, {
+      children: null != i ? i : m.intl.format(m.t.jKYAPu, {
         helpArticle: f
       })
     })
@@ -88,7 +88,7 @@ function b(e) {
       tagErrors: C,
       maxTags: u.VW
     }), (0, r.jsx)(h, {
-      text: m.intl.format(m.t["PGC/AA"], {
+      text: m.intl.format(m.t["PGC/AJ"], {
         helpArticle: f
       }),
       hasErrors: x.length > 0 || null != b,

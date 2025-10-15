@@ -25,8 +25,8 @@ function f(e) {
   let {
     transitionState: t,
     onClose: f,
-    channelId: h,
-    guildId: C,
+    channelId: C,
+    guildId: h,
     tag: O
   } = e, k = l.useRef(null), x = null != O, [P, N] = l.useState(null != (n = null == O ? true : O.name) ? n : ""), [w, Z] = l.useState(null != O ? {
     id: O.emojiId,
@@ -40,7 +40,7 @@ function f(e) {
           emojiId: null == w ? true : w.id,
           emojiName: null == w ? true : w.name,
           moderated: B
-        }, h), f();
+        }, C), f();
         return
       }
       p.Z.createForumTag({
@@ -48,34 +48,34 @@ function f(e) {
         emojiId: null == w ? true : w.id,
         emojiName: null == w ? true : w.name,
         moderated: B
-      }, h), f()
+      }, C), f()
     }
-  }, R = l.useCallback(e => N(e), []), T = l.useRef(null);
+  }, D = l.useCallback(e => N(e), []), T = l.useRef(null);
   return (0, c.ZP)(() => {
     null != T.current && T.current.focus()
   }), (0, i.jsxs)(o.Modal, {
-    title: x ? b.intl.string(b.t.zeVg5e) : b.intl.string(b.t["/jubeH"]),
-    subtitle: b.intl.string(b.t["3v8kZG"]),
+    title: x ? b.intl.string(b.t.zeVg5d) : b.intl.string(b.t["/jubeD"]),
+    subtitle: b.intl.string(b.t["3v8kZH"]),
     transitionState: t,
     onClose: f,
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: () => {
         f()
       }
     }, {
       variant: "primary",
-      text: b.intl.string(b.t.R3BPHx),
+      text: b.intl.string(b.t["R3BPH+"]),
       onClick: _,
       disabled: 0 === P.length || !S,
       autoFocus: true
     }],
     actionBarInput: x ? (0, i.jsx)(r.Button, {
       variant: "critical-secondary",
-      text: b.intl.string(b.t.huYSMj),
+      text: b.intl.string(b.t.huYSMr),
       onClick: () => {
-        x && (p.Z.deleteForumTag(h, O.id), f())
+        x && (p.Z.deleteForumTag(C, O.id), f())
       }
     }) : true,
     children: [(0, i.jsx)("div", {
@@ -84,8 +84,8 @@ function f(e) {
         inputRef: T,
         maxLength: 20,
         value: P,
-        placeholder: b.intl.string(b.t["5vpeb2"]),
-        onChange: R,
+        placeholder: b.intl.string(b.t["5vpeb4"]),
+        onChange: D,
         autoFocus: true,
         leading: {
           type: "emoji",
@@ -96,9 +96,9 @@ function f(e) {
               renderPopout: e => {
                 let {
                   closePopout: n
-                } = e, t = j.ZP.getDefaultChannel(C);
+                } = e, t = j.ZP.getDefaultChannel(h);
                 return (0, i.jsx)(s.Z, {
-                  guildId: C,
+                  guildId: h,
                   closePopout: n,
                   onSelectEmoji: e => {
                     let {
@@ -180,7 +180,7 @@ function f(e) {
           onClick: () => {
             N(""), Z(null)
           },
-          "aria-label": b.intl.string(b.t.o8lsHR)
+          "aria-label": b.intl.string(b.t.o8lsHe)
         } : true
       })
     }), (0, i.jsx)(r.LZC, {
@@ -188,7 +188,7 @@ function f(e) {
     }), (0, i.jsx)(r.Checkbox, {
       checked: null != B && B,
       onChange: e => E(e || (null == O ? true : O.moderated) == null && true),
-      label: b.intl.string(b.t["rMH+rq"]),
+      label: b.intl.string(b.t["rMH+rt"]),
       labelType: "secondary"
     })]
   })

@@ -51,7 +51,7 @@ let d = function(e) {
               t([]), f()
             },
             size: "sm",
-            text: c.intl.string(c.t.VkKicX),
+            text: c.intl.string(c.t.VkKicb),
             variant: "secondary"
           })
         })]

@@ -52,7 +52,7 @@ function _(e) {
       className: o()(f.contentImage, _),
       src: y && null != h ? h : t,
       "aria-hidden": m,
-      alt: null != p ? p : m ? true : d.intl.string(d.t["2B/phI"]),
+      alt: null != p ? p : m ? true : d.intl.string(d.t["2B/phM"]),
       onError: e => y ? I(true) : O(true)
     })
   }, "content-image")

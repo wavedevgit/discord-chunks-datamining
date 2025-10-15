@@ -92,8 +92,8 @@ class T extends Chunk647438.PureComponent {
               height: 40,
               className: I.notificationIcon
             }),
-            title: j.intl.string(j.t.U38qZm),
-            confirmText: j.intl.string(j.t.TzAl1d),
+            title: j.intl.string(j.t.U38qZj),
+            confirmText: j.intl.string(j.t.TzAl1a),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,

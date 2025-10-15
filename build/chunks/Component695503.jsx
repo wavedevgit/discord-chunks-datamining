@@ -14,6 +14,6 @@ let s = function() {
     size: "md",
     color: "currentColor",
     className: Chunk856773.icon,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t.BAB0yM)
+    "aria-label": Chunk388032.intl.string(Chunk388032.t.BAB0yK)
   })
 }

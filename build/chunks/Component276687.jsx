@@ -23,7 +23,7 @@ let d = () => {
     onSave: () => (0, Chunk524329.Es)(module.id, require),
     onReset: Chunk524329.Xb,
     submitting: exports,
-    onSaveText: Chunk388032.intl.string(Chunk388032.t["7NqTJi"]),
-    message: Chunk388032.intl.string(Chunk388032.t["Z0/WmZ"])
+    onSaveText: Chunk388032.intl.string(Chunk388032.t["7NqTJn"]),
+    message: Chunk388032.intl.string(Chunk388032.t["Z0/Wme"])
   })
 }

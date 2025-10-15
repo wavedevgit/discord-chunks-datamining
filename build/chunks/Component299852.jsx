@@ -68,25 +68,25 @@ class v extends(r = Chunk647438.PureComponent) {
     let {
       defaultRoute: n,
       transitionTo: r
-    } = this.props, l = _.intl.formatToPlainString(_.t.YDAohI, {
+    } = this.props, l = _.intl.formatToPlainString(_.t.YDAohB, {
       category: t
     });
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.Dx, {
         className: x.marginBottom8,
-        children: _.intl.string(_.t.f6rdLi)
+        children: _.intl.string(_.t.f6rdLg)
       }), (0, i.jsx)(d.DK, {
         children: l
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop20,
         onClick: () => r(n),
-        children: _.intl.string(_.t.fIv16O)
+        children: _.intl.string(_.t.fIv16B)
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
         onClick: () => r(p.Z5c.SETTINGS("notifications", f.vG)),
-        children: _.intl.string(_.t.YYTira)
+        children: _.intl.string(_.t.YYTirT)
       })]
     })
   }
@@ -109,13 +109,13 @@ class v extends(r = Chunk647438.PureComponent) {
         className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t["6U6OMT"])
+        children: Chunk388032.intl.string(Chunk388032.t["6U6OMQ"])
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["yaDJ4+"])
+        children: Chunk388032.intl.string(Chunk388032.t["yaDJ4/"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
       })]
     })
   }
@@ -132,11 +132,11 @@ class v extends(r = Chunk647438.PureComponent) {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["/dcuR0"])
+        children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
       })]
     })
   }

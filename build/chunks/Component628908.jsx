@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,9 +34,9 @@ let O = e => {
   var t, n, {
       label: s,
       text: i,
-      children: o
+      children: a
     } = e,
-    a = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
       var n, r, s = function(e, t) {
         if (null == e) return {};
@@ -64,17 +64,17 @@ let O = e => {
     return e
   }({
     direction: h.Z.Direction.VERTICAL
-  }, a), n = n = {
+  }, o), n = n = {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/semibold",
       children: s
     }), null != i ? (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      className: C.sectionBody,
+      className: j.sectionBody,
       children: i
     }) : null, (0, r.jsx)(h.Z.Child, {
       wrap: true,
-      children: o
+      children: a
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -90,7 +90,7 @@ let O = e => {
 class P extends Chunk647438.PureComponent {
   renderBackupCodesSection(e) {
     return (0, r.jsx)(O, {
-      label: j.intl.string(j.t.qZZUy8),
+      label: g.intl.string(g.t.qZZUy6),
       text: e,
       children: (0, r.jsx)(d.Z, {
         fileContents: this.getDownloadFileContents,
@@ -102,25 +102,25 @@ class P extends Chunk647438.PureComponent {
         children: (0, r.jsx)(l.Button, {
           variant: "active",
           size: "sm",
-          text: j.intl.string(j.t.qZZUy8)
+          text: g.intl.string(g.t.qZZUy6)
         })
       })
     })
   }
   renderPasskeyCTASection() {
     return Chunk15980.Z.hasCredentials ? null : (0, Chunk951288.jsxs)(O, {
-      label: Chunk388032.intl.string(Chunk388032.t.xMDCHR),
-      text: Chunk388032.intl.string(Chunk388032.t.okgGTk),
+      label: Chunk388032.intl.string(Chunk388032.t.xMDCHa),
+      text: Chunk388032.intl.string(Chunk388032.t.okgGTu),
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         className: Chunk505198.sectionBody,
-        children: Chunk388032.intl.format(Chunk388032.t.OeGXVl, {
+        children: Chunk388032.intl.format(Chunk388032.t.OeGXVv, {
           learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SETTING_UP_TWO_FACTOR)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "active",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.NIFmCA),
+        text: Chunk388032.intl.string(Chunk388032.t.NIFmCJ),
         onClick: this.handleAddPasskey
       })]
     })
@@ -133,11 +133,11 @@ class P extends Chunk647438.PureComponent {
         shrink: 1,
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
-          className: C.header,
+          className: j.header,
           children: u.Z.parse(e)
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
-          className: C.subHeader,
+          className: j.subHeader,
           children: t
         })]
       }), (0, r.jsx)(h.Z.Child, {
@@ -154,9 +154,9 @@ class P extends Chunk647438.PureComponent {
     } = this.props;
     return (0, r.jsx)(l.sYh, {
       dismissable: true,
-      header: j.intl.string(j.t.mwVXnJ),
-      confirmText: j.intl.string(j.t.MwSEo6),
-      cancelText: j.intl.string(j.t["ETE/oK"]),
+      header: g.intl.string(g.t.mwVXnI),
+      confirmText: g.intl.string(g.t.MwSEoz),
+      cancelText: g.intl.string(g.t["ETE/oC"]),
       onCancel: () => this.setState({
         showConfirmModal: false
       }),
@@ -188,12 +188,12 @@ class P extends Chunk647438.PureComponent {
       transitionState: module,
       className: Chunk505198.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPT"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8f"], {})), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPV"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
         className: Chunk505198.modalInner,
         children: [this.renderPasskeyCTASection(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk505198.divider
-        }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogo, {}))]
-      }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHB))]
+        }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogh, {}))]
+      }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHJ))]
     })
   }
   renderWebAuthn() {
@@ -206,10 +206,10 @@ class P extends Chunk647438.PureComponent {
       transitionState: module,
       className: Chunk505198.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielJ), Chunk388032.intl.format(Chunk388032.t["/Nhi8f"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielD), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
         className: Chunk505198.modalInner,
-        children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLS, {}))
-      }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXF))]
+        children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLQ, {}))
+      }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXB))]
     })
   }
   constructor(...e) {
@@ -231,9 +231,9 @@ class P extends Chunk647438.PureComponent {
             consumed: t,
             code: n
           } = e;
-          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(j.intl.string(j.t["ycME+/"]), ")") : "")
+          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(g.intl.string(g.t["ycME+9"]), ")") : "")
         }).join("\r\n"),
-        t = j.intl.formatToPlainString(j.t.uYWwh4, {
+        t = g.intl.formatToPlainString(g.t["uYWwh/"], {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
@@ -242,7 +242,7 @@ class P extends Chunk647438.PureComponent {
 }
 let k = Chunk442837.ZP.connectStores([Chunk594174.default, Chunk325067.Z], () => {
   let e = Chunk594174.default.getCurrentUser();
-  return o()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
+  return a()(null != module, "MFAEnableSuccess: currentUser cannot be undefined"), {
     currentUser: module,
     backupCodes: Chunk325067.Z.getBackupCodes(),
     hasSeenBackupPrompt: Chunk325067.Z.hasSeenBackupPrompt

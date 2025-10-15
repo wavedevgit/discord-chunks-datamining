@@ -40,7 +40,7 @@ function E(e) {
   } = e, R = e => null == A ? e : (0, r.jsx)(s.kL8, {
     onClick: A,
     className: g.clickableUsername,
-    "aria-label": m.intl.string(m.t["+Xp3ho"]),
+    "aria-label": m.intl.string(m.t["+Xp3hq"]),
     children: e
   }), P = null != v && v.length > 0, w = (0, c.D)(t), D = (0, d.Z)({
     userId: t.id,
@@ -96,7 +96,7 @@ function E(e) {
           className: g.dotSpacer
         }), (0, r.jsx)(o.u, {
           asContainer: true,
-          text: m.intl.string(m.t.GI2A8P),
+          text: m.intl.string(m.t.GI2A8C),
           delay: h.vB,
           children: (0, r.jsx)(s.Text, {
             className: a()(g.pronounsText, T),

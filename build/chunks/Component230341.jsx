@@ -21,8 +21,8 @@ function f() {
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       value: module,
       onChange: Chunk90641.Z.updatePersistentCodesEnabled,
-      title: Chunk388032.intl.string(Chunk388032.t["opi/XF"]),
-      note: Chunk388032.intl.format(Chunk388032.t["/T+ZlJ"], {
+      title: Chunk388032.intl.string(Chunk388032.t["opi/XK"]),
+      note: Chunk388032.intl.format(Chunk388032.t["/T+ZlP"], {
         helpArticle: (0, Chunk630759.aZ)()
       })
     })

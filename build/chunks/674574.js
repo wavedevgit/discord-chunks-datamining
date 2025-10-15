@@ -17,12 +17,12 @@ let T = (0, Chunk509613.x1)(Chunk313789.n.NOTIFICATIONS_PANE, {
     buildLayout: () => [Chunk802.Z, Chunk348911.Z, Chunk441302.Z, Chunk736608.Z, Chunk61512.Z]
   }),
   I = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
     buildLayout: () => [T]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.Dkj,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
     usePredicate: () => (0, Chunk526665.gj)("NotificationsPanel"),
     buildLayout: () => [I]
   })

@@ -86,7 +86,7 @@ function m(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: u.description,
-        children: c.intl.string(c.t.X0TrNT)
+        children: c.intl.string(c.t.X0TrNQ)
       })
     })
   }) : (0, r.jsx)(s.Z.Overlay, {
@@ -97,17 +97,17 @@ function m(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: u.description,
-        children: c.intl.string(c.t.bHpUcX)
+        children: c.intl.string(c.t.bHpUca)
       }), (0, r.jsxs)("div", {
         className: m ? u.buttonsVertical : u.buttonsHorizontal,
         children: [(0, r.jsx)(a.Button, {
-          text: c.intl.string(c.t.p89ACg),
+          text: c.intl.string(c.t.p89ACt),
           size: "sm",
           variant: "secondary",
           onClick: g,
           fullWidth: m
         }), (0, r.jsx)(a.Button, {
-          text: c.intl.string(c.t.gm1Ven),
+          text: c.intl.string(c.t.gm1Vej),
           size: "sm",
           variant: "secondary",
           onClick: E,

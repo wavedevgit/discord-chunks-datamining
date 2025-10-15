@@ -43,7 +43,7 @@ function h(e) {
     f && null != t && null != l ? d(t < l) : d(false)
   }, [f, t, l]), {
     horizontalScrollNotice: i.useMemo(() => s ? (0, r.jsx)(u, {
-      text: c.intl.string(c.t.RfAAHx),
+      text: c.intl.string(c.t.RfAAH9),
       hasScrolled: h
     }) : null, [s, h]),
     handleScroll: () => p(true),

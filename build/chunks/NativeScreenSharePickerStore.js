@@ -92,7 +92,7 @@ function k() {
   return {
     sourceId: "prepicked:0",
     nativePickerStyleUsed: N.lastPresentedPickerStyle,
-    sourceName: null != (e = M()) ? module : Chunk388032.intl.string(Chunk388032.t["KKcy9/"]),
+    sourceName: null != (e = M()) ? module : Chunk388032.intl.string(Chunk388032.t.KKcy95),
     sound: exports
   }
 }

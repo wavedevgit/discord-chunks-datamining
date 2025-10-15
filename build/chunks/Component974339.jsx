@@ -54,21 +54,21 @@ function g(e, t) {
   return l
 }
 
-function p(e) {
+function j(e) {
   var t = function(e, t) {
-    if ("object" !== j(e) || null === e) return e;
+    if ("object" !== p(e) || null === e) return e;
     var r = e[Symbol.toPrimitive];
     if (true !== r) {
       var n = r.call(e, t || "default");
-      if ("object" !== j(n)) return n;
+      if ("object" !== p(n)) return n;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === j(t) ? t : String(t)
+  return "symbol" === p(t) ? t : String(t)
 }
 
-function j(e) {
+function p(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
 let S = (0, Chunk313201.hQ)(),
@@ -129,20 +129,20 @@ function P(e) {
     children: h,
     showCheckbox: w,
     showRowLabel: g
-  } = e, p = (0, s.JA)(o), {
-    selectedSection: j,
+  } = e, j = (0, s.JA)(o), {
+    selectedSection: p,
     selectedRow: S,
     onSelectionChange: v,
     pendingAdditions: R,
     onRowClick: T,
     isAtMaxPendingRows: k
   } = O(), C = m[d], P = E(C), L = C.disabled || P in R, I = C.disabled || !L && k;
-  return (0, l.createElement)(c.P3F, (t = y({}, p), r = r = {
+  return (0, l.createElement)(c.P3F, (t = y({}, j), r = r = {
     id: o,
     key: P,
     role: "option",
     className: i()(f.clickableRow, {
-      [f.selectedRow]: j === u && S === d
+      [f.selectedRow]: p === u && S === d
     }),
     onClick: e => {
       I || (e.preventDefault(), C.rowType !== b.aC.EMPTY_STATE && T(C))
@@ -324,7 +324,7 @@ let L = e => {
         guilds: m = T,
         getRichTag: x,
         maxPendingRows: h
-      } = e, w = l.useRef(null), [f, j] = l.useState({
+      } = e, w = l.useRef(null), [f, p] = l.useState({
         section: 0,
         row: false
       });
@@ -337,7 +337,7 @@ let L = e => {
             let {
               [r]: e
             } = t;
-            return g(t, [r].map(p))
+            return g(t, [r].map(j))
           } {
             let n = x(e);
             if (null != n) {
@@ -369,7 +369,7 @@ let L = e => {
           isAtMaxPendingRows: v,
           onSelectionChange: function(e, t) {
             let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-            if (j(r => r.section === e && r.row === t ? r : {
+            if (p(r => r.section === e && r.row === t ? r : {
                 section: null != e ? e : 0,
                 row: null != t ? t : false
               }), n) {
@@ -409,7 +409,7 @@ let L = e => {
               let {
                 [e]: r
               } = t;
-              return g(t, [e].map(p))
+              return g(t, [e].map(j))
             })
           }
         },
@@ -436,8 +436,8 @@ let L = e => {
         users: y,
         guilds: g
       } = O(), {
-        keys: p,
-        tags: j
+        keys: j,
+        tags: p
       } = l.useMemo(() => {
         let e = Object.keys(c),
           t = e.map(e => c[e].display);
@@ -459,9 +459,9 @@ let L = e => {
         selectedRow: a,
         onSelectionChange: d,
         onSelect: x,
-        tags: j,
+        tags: p,
         sections: E,
-        onRemoveTag: e => b(p[e]),
+        onRemoveTag: e => b(j[e]),
         placeholder: t,
         focusAfterReady: r,
         isReady: o,
@@ -476,19 +476,19 @@ let L = e => {
       switch (t) {
         case b.m$.ROLES:
           return (0, n.jsx)(C, {
-            title: w.intl.string(w.t.LPJmLy)
+            title: w.intl.string(w.t["LPJmL/"])
           });
         case b.m$.MEMBERS:
           return (0, n.jsx)(C, {
-            title: w.intl.string(w.t["9Oq93t"])
+            title: w.intl.string(w.t["9Oq93m"])
           });
         case b.m$.USERS:
           return (0, n.jsx)(C, {
-            title: w.intl.string(w.t.nqDUBQ)
+            title: w.intl.string(w.t.nqDUBX)
           });
         case b.m$.GUILDS:
           return (0, n.jsx)(C, {
-            title: w.intl.string(w.t["7hB4kp"])
+            title: w.intl.string(w.t["7hB4kg"])
           });
         default:
           return null

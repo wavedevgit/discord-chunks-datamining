@@ -61,14 +61,14 @@ function x(t) {
     actions: [{
       variant: "secondary",
       onClick: d,
-      text: o.intl.string(o.t.Jj8nUF)
+      text: o.intl.string(o.t.Jj8nUC)
     }, {
       variant: "primary",
       loading: m,
       onClick: p,
-      text: o.intl.string(o.t["pC/ozM"])
+      text: o.intl.string(o.t["pC/ozD"])
     }],
-    title: o.intl.string(o.t.TP4GSk),
+    title: o.intl.string(o.t.TP4GSt),
     onClose: d,
     preview: (0, r.jsxs)(r.Fragment, {
       children: [null == h ? null : (0, r.jsxs)(n.Text, {
@@ -78,21 +78,21 @@ function x(t) {
       }), (0, r.jsx)(n.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: o.intl.format(o.t["+oNl6+"], {
+        children: o.intl.format(o.t["+oNl6x"], {
           termsURL: "https://support.discord.com/hc/en-us/articles/5330075836311-Creator-Pilot-Terms"
         })
       })]
     }),
-    subtitle: o.intl.format(o.t.c0IsOD, {
+    subtitle: o.intl.format(o.t.c0IsON, {
       termsURL: "https://support.discord.com/hc/en-us/articles/5330075836311-Creator-Pilot-Terms"
     }),
     children: (0, r.jsxs)(n.Kqy, {
       gap: 16,
       children: [(0, r.jsx)(u, {
-        header: o.intl.string(o.t.UzDaWF),
-        body: o.intl.string(o.t.IDk8Fx)
+        header: o.intl.string(o.t.UzDaWD),
+        body: o.intl.string(o.t.IDk8Fz)
       }), (0, r.jsx)(u, {
-        header: o.intl.string(o.t["36/RiY"]),
+        header: o.intl.string(o.t["36/RiT"]),
         body: o.intl.string(o.t.CBzNtr)
       })]
     })

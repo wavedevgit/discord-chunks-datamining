@@ -128,7 +128,7 @@ let A = e => {
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
       className: o()(b.giftBoxOptionContainer, a),
-      "aria-label": E.intl.string(E.t.v54NrK),
+      "aria-label": E.intl.string(E.t.v54NrN),
       ref: x
     }, M), {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {

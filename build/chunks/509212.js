@@ -393,15 +393,15 @@ function eh(e, t, n) {
 let em = e => {
   switch (e) {
     case w.y$.XBOX:
-      return G.intl.string(G.t.G84UWV);
+      return G.intl.string(G.t.G84UWZ);
     case w.y$.PLAYSTATION:
-      return G.intl.string(G.t["6IeKx8"]);
+      return G.intl.string(G.t["6IeKx2"]);
     case w.y$.SWITCH:
-      return G.intl.string(G.t["1pp0sr"]);
+      return G.intl.string(G.t["1pp0su"]);
     case w.y$.PC:
-      return G.intl.string(G.t["YK+wUl"]);
+      return G.intl.string(G.t["YK+wUg"]);
     case w.y$.CROSS_PLATFORM:
-      return G.intl.string(G.t.UWVbzc)
+      return G.intl.string(G.t.UWVbzV)
   }
 };
 
@@ -412,14 +412,14 @@ function eg(e) {
     taskDetails: i,
     thirdPartyTaskDetails: a
   } = e;
-  if ((null == (t = r.userStatus) ? true : t.completedAt) != null) return G.intl.string(G.t.BzFeTE);
+  if ((null == (t = r.userStatus) ? true : t.completedAt) != null) return G.intl.string(G.t.BzFeTF);
   if ((null == (n = r.userStatus) ? true : n.enrolledAt) != null) {
     let {
       percentComplete: e
     } = i, t = null != a ? a.percentComplete : e;
-    return t >= .75 ? G.intl.string(G.t.gvCR4O) : t >= .45 && t <= .55 ? G.intl.string(G.t.JNx8sL) : t > 0 ? G.intl.string(G.t.JMbfnZ) : G.intl.string(G.t["7e5k7O"])
+    return t >= .75 ? G.intl.string(G.t.gvCR4H) : t >= .45 && t <= .55 ? G.intl.string(G.t.JNx8sG) : t > 0 ? G.intl.string(G.t.JMbfnc) : G.intl.string(G.t["7e5k7L"])
   }
-  return G.intl.formatToPlainString(G.t.EQa7oq, {
+  return G.intl.formatToPlainString(G.t.EQa7os, {
     questName: r.config.messages.questName
   })
 }
@@ -453,20 +453,20 @@ function ev(e) {
     o = Math.floor(a / 30) + +(a % 30 >= 25);
   if (o >= 12) {
     let e = Math.floor(o / 12);
-    return G.intl.formatToPlainString(G.t.PClsr6, {
+    return G.intl.formatToPlainString(G.t.PClsrw, {
       years: e
     })
   } {
-    if (o > 0) return G.intl.formatToPlainString(G.t.kridzM, {
+    if (o > 0) return G.intl.formatToPlainString(G.t.kridzK, {
       months: o
     });
     let e = (0, r.Z)(i, n);
-    if (!(e >= 7)) return G.intl.formatToPlainString(G.t.k2UNz8, {
+    if (!(e >= 7)) return G.intl.formatToPlainString(G.t["k2UNz+"], {
       days: e
     });
     {
       let t = Math.ceil(e / 7);
-      return G.intl.formatToPlainString(G.t.EmoBDw, {
+      return G.intl.formatToPlainString(G.t.EmoBD2, {
         weeks: t
       })
     }
@@ -867,7 +867,7 @@ function th(e) {
 }
 
 function tm(e) {
-  return th(e) === k.ABu.XBOX ? G.t.mytEv7 : G.t.iDiwb2
+  return th(e) === k.ABu.XBOX ? G.t["mytEv+"] : G.t.iDiwby
 }
 
 function tg(e) {
@@ -893,14 +893,14 @@ function tE(e) {
     gameTitle: r,
     cosponsorName: i
   } = e;
-  return t ? null == i ? G.intl.formatToPlainString(G.t.Piihy8, {
+  return t ? null == i ? G.intl.formatToPlainString(G.t.Piihy1, {
     gamePublisher: n
-  }) : G.intl.formatToPlainString(G.t.DV47Gx, {
+  }) : G.intl.formatToPlainString(G.t.DV47Gy, {
     gamePublisher: n,
     cosponsorName: i
   }) : G.intl.formatToPlainString(L.m8.getConfig({
     location: j.dr.QUEST_DISCLOSURE_MODAL
-  }).enabled ? G.t.euizJS : G.t.tOWwxM, {
+  }).enabled ? G.t.euizJY : G.t.tOWwxN, {
     gamePublisher: n,
     gameTitle: r
   })
@@ -974,9 +974,9 @@ function tR(e) {
   let t = e.assets.video;
   return null == t || null == t.width || null == t.height ? tN : t.width > t.height ? "landscape" : "portrait"
 }
-let tP = e => e.percentComplete > 0 ? G.intl.formatToPlainString(G.t["c59/Tk"], {
+let tP = e => e.percentComplete > 0 ? G.intl.formatToPlainString(G.t["c59/Tp"], {
   remainTime: e7(e)
-}) : G.intl.formatToPlainString(G.t.GNsKiY, {
+}) : G.intl.formatToPlainString(G.t.GNsKiW, {
   remainTime: e7(e)
 });
 
@@ -987,7 +987,7 @@ function tw(e, t) {
 function tD(e) {
   var t, n, r, i;
   let a = x.r.build(e).defaultWatchVideoTask;
-  return null != (i = null != (r = null != (n = null == (t = e.ctaConfig) ? true : t.buttonLabel) ? n : null == a ? true : a.messages.videoEndCtaButtonLabel) ? r : null == a ? true : a.messages.videoEndCtaTitle) ? i : G.intl.string(G.t.iiTtpK)
+  return null != (i = null != (r = null != (n = null == (t = e.ctaConfig) ? true : t.buttonLabel) ? n : null == a ? true : a.messages.videoEndCtaButtonLabel) ? r : null == a ? true : a.messages.videoEndCtaTitle) ? i : G.intl.string(G.t.iiTtpJ)
 }
 
 function tL(e, t) {
@@ -1080,36 +1080,36 @@ function tZ(e, t) {
 function tF(e) {
   switch (e) {
     case j.yq.SUGGESTED:
-      return G.intl.string(G.t.gBfXPT);
+      return G.intl.string(G.t.gBfXPZ);
     case j.yq.MOST_RECENT:
-      return G.intl.string(G.t.K6oEu7);
+      return G.intl.string(G.t.K6oEu2);
     case j.yq.EXPIRING_SOON:
-      return G.intl.string(G.t.IB22n5);
+      return G.intl.string(G.t.IB22n3);
     case j.yq.RECENTLY_ENROLLED:
-      return G.intl.string(G.t["BB+2tb"])
+      return G.intl.string(G.t["BB+2tX"])
   }
 }
 
 function tV(e) {
   switch (e) {
     case j.UP.VIRTUAL_CURRENCY:
-      return G.intl.string(G.t.ElYQFR);
+      return G.intl.string(G.t.ElYQFS);
     case j.UP.COLLECTIBLE:
-      return G.intl.string(G.t.Jg17Ul);
+      return G.intl.string(G.t.Jg17Ut);
     case j.UP.IN_GAME:
-      return G.intl.string(G.t["O/J2kp"]);
+      return G.intl.string(G.t["O/J2kr"]);
     case j.oH.VIDEO:
-      return G.intl.string(G.t.e0iISE);
+      return G.intl.string(G.t.e0iISA);
     case j.oH.PLAY:
-      return G.intl.string(G.t["1nJR4u"])
+      return G.intl.string(G.t["1nJR4p"])
   }
 }
 
 function tH(e) {
   switch (e) {
     case "reward":
-      return G.intl.string(G.t.vjLqAQ);
+      return G.intl.string(G.t.vjLqAU);
     case "task":
-      return G.intl.string(G.t.Hufmsr)
+      return G.intl.string(G.t.Hufmss)
   }
 }

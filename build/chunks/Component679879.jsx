@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 function s(t) {
   return null == t ? null : (0, r.jsx)(i.S89, {
     id: "private",
-    label: u.intl.string(u.t.fHDNJi),
+    label: u.intl.string(u.t.fHDNJv),
     action: function() {
       if (null == t) return;
       let e = (0, c.x9)(t.getFlags(), o.eHb.PRIVATE);

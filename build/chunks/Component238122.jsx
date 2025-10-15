@@ -63,7 +63,7 @@ let u = e => {
       null == t || t.test(e) ? null != e && (C(null), y(e), h({
         value: e,
         isValid: true
-      })) : (C(s.intl.string(s.t["24xrGR"])), h({
+      })) : (C(s.intl.string(s.t["24xrGb"])), h({
         value: e,
         isValid: false
       }))

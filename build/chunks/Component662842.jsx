@@ -84,22 +84,22 @@ function D(e) {
       return {
         noticeType: 3,
         title: "\uD83D\uDCDA☕ ".concat(i.name),
-        location: L.intl.string(L.t.LZA6NT),
+        location: L.intl.string(L.t.LZA6Na),
         locationIcon: null != e ? (0, r.jsx)(e, {
           size: "xs",
           color: "currentColor",
           className: R.locationIcon
         }) : null,
         canListenIn: l,
-        buttonText: L.intl.string(L.t.wBoE6O),
+        buttonText: L.intl.string(L.t.wBoE6L),
         users: [],
         overflowUsers: null
       }
     }
     if (null == t || d) {
       if (_) {
-        let e = L.intl.string(L.t.ZYO5OD);
-        return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFR"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
+        let e = L.intl.string(L.t.ZYO5OK);
+        return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFc"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
           noticeType: 0,
           title: n.topic,
           location: i.name,
@@ -134,8 +134,8 @@ function D(e) {
         }
       }
     } else if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
-      let e = L.intl.string(L.t.ZYO5OD);
-      return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFR"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
+      let e = L.intl.string(L.t.ZYO5OK);
+      return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFc"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
         noticeType: 0,
         title: n.topic,
         location: i.name,
@@ -186,7 +186,7 @@ function D(e) {
           className: R.locationIcon
         }),
         canListenIn: false,
-        buttonText: L.intl.string(L.t.iW6Xur),
+        buttonText: L.intl.string(L.t.iW6Xuo),
         onClose: () => (0, g.ji)({
           eventId: null == t ? true : t.id
         }),
@@ -220,7 +220,7 @@ function D(e) {
           className: R.locationIcon
         }) : null,
         canListenIn: l,
-        buttonText: L.intl.string(L.t.nxUtoa),
+        buttonText: L.intl.string(L.t.nxUtoQ),
         onClose: () => (0, g.ji)({
           eventId: null == t ? true : t.id
         }),
@@ -263,7 +263,7 @@ function D(e) {
     children: [null != ee ? (0, r.jsx)(c.P3F, {
       onClick: ee,
       className: R.close,
-      "aria-label": L.intl.string(L.t.WAI6xs),
+      "aria-label": L.intl.string(L.t.WAI6xu),
       children: (0, r.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
@@ -278,7 +278,7 @@ function D(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/semibold",
         color: "text-feedback-positive",
-        children: L.intl.string(L.t.dI3q4u)
+        children: L.intl.string(L.t.dI3q4h)
       })]
     }), (J.length > 0 || null != $) && (0, r.jsxs)("div", {
       className: R.participants,

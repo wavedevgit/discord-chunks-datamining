@@ -65,27 +65,27 @@ let j = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.btxSdH)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.btxSdB)
     },
     serverMute: {
       icon: Chunk481060.v0G,
       colorize: true,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.uLddbW)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.uLddbQ)
     },
     deaf: {
       icon: Chunk481060.wE8,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.NjmiOD)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.NjmiOL)
     },
     mute: {
       icon: Chunk481060.nRN,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.tjtv3N)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.tjtv3P)
     },
     localMute: {
       icon: Chunk481060.v0G,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t["9F+xJS"])
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t["9F+xJU"])
     }
   };
 
@@ -136,7 +136,7 @@ function x(e) {
       mute: Z,
       localMute: D
     })) ? l : {},
-    F = null != V ? C.intl.formatToPlainString(C.t["1+MVBA"], {
+    F = null != V ? C.intl.formatToPlainString(C.t["1+MVBP"], {
       userName: G,
       status: V()
     }) : G;
@@ -242,7 +242,7 @@ function A(e) {
     onClick: () => u(!s),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
-    tooltip: s ? C.intl.string(C.t["Z/Tya2"]) : C.intl.string(C.t.XR5BAQ),
+    tooltip: s ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc),
     icon: (0, r.jsx)(_, {
       size: "xs",
       color: "currentColor"
@@ -256,7 +256,7 @@ function A(e) {
       ref: h,
       className: a()(S.voiceUsers, !s && S.collapsed),
       role: "group",
-      "aria-label": C.intl.string(C.t["/ZgaVV"]),
+      "aria-label": C.intl.string(C.t["/ZgaVU"]),
       children: [v.map(e => {
         let {
           user: t,

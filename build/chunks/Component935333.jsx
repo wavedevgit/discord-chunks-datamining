@@ -1,5 +1,5 @@
 /** Chunk was on 16169 **/
-/** chunk id: 935333, original params: t,i,n (module,exports,require) **/
+/** chunk id: 935333, original params: t,n,s (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -11,21 +11,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk370213 = require("./370213.js");
 let p = t => {
   let {
-    transitionState: i,
-    processFiles: n,
+    transitionState: n,
+    processFiles: s,
     onClose: p
   } = t;
   return e.useEffect(() => {
     (async () => {
-      i === r.Dvm.ENTERED && (await n(), p())
+      n === r.Dvm.ENTERED && (await s(), p())
     })()
-  }, [p, n, i]), (0, s.jsx)(a.u_l, {
-    title: c.intl.string(c.t["B/HSDQ"]),
-    subtitle: c.intl.string(c.t.k7OALi),
+  }, [p, s, n]), (0, i.jsx)(a.u_l, {
+    title: c.intl.string(c.t["B/HSDd"]),
+    subtitle: c.intl.string(c.t.k7OALr),
     actions: true,
     onClose: p,
-    transitionState: i,
-    children: (0, s.jsx)(r.$jN, {
+    transitionState: n,
+    children: (0, i.jsx)(r.$jN, {
       className: l.spinner
     })
   })

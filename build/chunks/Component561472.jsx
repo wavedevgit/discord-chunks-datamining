@@ -27,14 +27,14 @@ let v = function(e) {
     style: n,
     channel: v,
     draftType: x
-  } = e, [O, j] = r.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(y.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = r.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, v, I, E]), A = Z ? y.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhI) : _.intl.string(_.t.gUx4en) : O ? _.intl.format(_.t.dYP2FR, {
+  } = e, [O, j] = r.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(y.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = r.useMemo(() => !E && (v.isPrivate() && !v.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, v, I, E]), A = Z ? y.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhL) : _.intl.string(_.t.gUx4eu) : O ? _.intl.format(_.t.dYP2Fc, {
     destination: (0, s.F6)(v, f.default, h.Z, true)
-  }) : _.intl.string(_.t.h76ulJ);
+  }) : _.intl.string(_.t.h76ulG);
   return P || !N ? null : (0, i.jsx)(b.Z, {
     className: t,
     style: n,
     title: A,
-    description: Z ? _.intl.string(_.t.lpgkzs) : _.intl.string(_.t.usQh4O),
+    description: Z ? _.intl.string(_.t.lpgkzq) : _.intl.string(_.t.usQh4J),
     icons: C.J6,
     onDrop: e => {
       if (P) returnfalse;

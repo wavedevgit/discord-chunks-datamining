@@ -34,13 +34,13 @@ function S(e) {
   return null == n ? (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: v.intl.format(v.t.MkzlDA, {
-      channelName: v.intl.string(v.t.J90oLS)
+    children: v.intl.format(v.t.MkzlDL, {
+      channelName: v.intl.string(v.t.J90oLW)
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: v.intl.format(v.t.MkzlDA, {
+    children: v.intl.format(v.t.MkzlDL, {
       channelName: i
     })
   })
@@ -119,7 +119,7 @@ function C(e) {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: v.intl.format(v.t["/beONz"], {
+            children: v.intl.format(v.t["/beONw"], {
               step: y.title
             })
           }), (0, r.jsx)(S, {
@@ -155,7 +155,7 @@ function C(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: v.intl.string(v.t["ElGg8/"])
+          children: v.intl.string(v.t["ElGg8+"])
         })]
       }), b ? (0, r.jsx)(c.owK, {
         size: "custom",

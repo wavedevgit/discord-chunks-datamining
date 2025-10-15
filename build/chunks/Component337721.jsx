@@ -20,14 +20,14 @@ function u(e) {
   } = e;
   return (0, r.jsx)(i.J2, {
     targetElementRef: u,
-    title: s.intl.string(s.t.Hgd22t),
-    body: s.intl.string(s.t.SorTPD),
+    title: s.intl.string(s.t.Hgd22r),
+    body: s.intl.string(s.t.SorTPA),
     graphic: {
       type: "image",
       src: c
     },
     actions: [{
-      text: s.intl.string(s.t["9l+df3"]),
+      text: s.intl.string(s.t["9l+df7"]),
       variant: "primary",
       onClick: e => {
         l.Z.open(t.id, a.pNK.DISCOVERY_LANDING_PAGE)

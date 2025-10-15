@@ -424,7 +424,7 @@ function eh(e) {
     h = (0, l.cj)([Y.Z], () => (0, C.Z)(Y.Z)),
     p = (0, l.e7)([F.Z], () => F.Z.getCurrentUserActiveStream()),
     f = (0, ee.P)({
-      pid: (0, J.getPID)(),
+      pid: (0, q.getPID)(),
       allowOneClickGoLive: true,
       analyticsLocation: ei.Sbl.UNLOCKED_OVERLAY
     }),
@@ -436,12 +436,12 @@ function eh(e) {
       })
     },
     g = null != p;
-  if (g) t = er.intl.string(er.t.S5anIS);
+  if (g) t = er.intl.string(er.t.S5anIc);
   else if (null != n) {
     let e = (0, en.pL)();
-    t = c ? null != e ? er.intl.format(er.t.AB5gT0, {
+    t = c ? null != e ? er.intl.format(er.t.AB5gTy, {
       game: e.name
-    }) : er.intl.string(er.t.FeUKeH) : er.intl.string(er.t.uQn9Bw)
+    }) : er.intl.string(er.t.FeUKeA) : er.intl.string(er.t.uQn9B8)
   }
   let y = () => {
       if (g) return (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
@@ -497,7 +497,7 @@ function eh(e) {
         ref: a,
         iconComponent: v,
         tooltip: t,
-        "aria-label": er.intl.string(er.t.FeUKeH),
+        "aria-label": er.intl.string(er.t.FeUKeA),
         isActive: g,
         highlightedColor: "green",
         onClick: y,
@@ -574,7 +574,7 @@ function ep(e) {
       return (0, i.jsx)(es, {
         ref: s,
         iconComponent: E,
-        tooltip: h ? er.intl.string(er.t["Ox4/zc"]) : f ? er.intl.string(er.t["+YBKYG"]) : m ? er.intl.string(er.t.X1lQlp) : true,
+        tooltip: h ? er.intl.string(er.t["Ox4/zU"]) : f ? er.intl.string(er.t["+YBKYI"]) : m ? er.intl.string(er.t.X1lQli) : true,
         onClick: e => {
           S(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
             type: $.Qu.SOUNDBOARD,
@@ -652,7 +652,7 @@ function ef(e) {
       return (0, i.jsx)(es, {
         ref: a,
         iconComponent: E,
-        tooltip: s ? er.intl.string(er.t["6vrfgo"]) : er.intl.string(er.t.S0W8Z2),
+        tooltip: s ? er.intl.string(er.t["6vrfgt"]) : er.intl.string(er.t.S0W8Z5),
         onClick: s ? u : m(n),
         defaultColor: s ? "disconnect" : true,
         onMouseEnter: y,
@@ -731,7 +731,7 @@ function ey(e) {
     quality: Q.Z.getQuality(),
     state: Q.Z.getState(),
     lastPing: Q.Z.getLastPing()
-  })), s = (0, l.e7)([q.Z], () => null != o && q.Z.hasVideo(o), [o]);
+  })), s = (0, l.e7)([J.Z], () => null != o && J.Z.hasVideo(o), [o]);
   return null != o && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(T.Z, (t = eo({}, a), n = n = {
       channelId: o,

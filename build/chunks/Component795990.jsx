@@ -27,15 +27,15 @@ function f() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t.oqalCw)
+        children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.O9SQ1d)
+        children: Chunk388032.intl.string(Chunk388032.t.O9SQ1c)
       })]
     }), (0, Chunk951288.jsx)("ul", {
       className: Chunk958461.widgetGrid,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSA"]),
       children: require.map(t => (0, r.jsx)("li", {
         children: (0, r.jsx)(o.Z, {
           widgetType: t,

@@ -78,7 +78,7 @@ function P(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
     let e = (0, j.IF)(null == t ? true : t.features.has(N.oNc.COMMUNITY)).map(e => T(S({}, e), {
@@ -93,14 +93,14 @@ function P(e) {
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: E.intl.string(E.t.DpRdYG)
+        children: E.intl.string(E.t.DpRdYK)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: E.intl.format(E.t.iuRk2t, {})
+        children: E.intl.format(E.t.iuRk2j, {})
       })]
     }), (0, r.jsx)(O.Z, {
-      changeTitle: E.intl.string(E.t.TxESJC),
+      changeTitle: E.intl.string(E.t.TxESJG),
       value: null == s ? true : s.value,
       options: a,
       disabled: !n,
@@ -125,7 +125,7 @@ function w(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
     let e = (0, j.MF)(null == t ? true : t.features.has(N.oNc.COMMUNITY)).map(e => T(S({}, e), {
@@ -143,16 +143,16 @@ function w(e) {
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: E.intl.string(E.t.bPgfJy)
+          children: E.intl.string(E.t.bPgfJz)
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: E.intl.format(E.t.BI4ukJ, {
+          children: E.intl.format(E.t.BI4ukC, {
             helpdeskArticle: x.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(O.Z, {
-        changeTitle: E.intl.string(E.t["eBd+Ul"]),
+        changeTitle: E.intl.string(E.t["eBd+Uv"]),
         value: null == g ? true : g.value,
         options: u,
         disabled: !s,
@@ -179,8 +179,8 @@ function R(e) {
     children: [(0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: E.intl.string(E.t.jDarm5),
-        description: E.intl.string(E.t["/ee7yM"]),
+        label: E.intl.string(E.t.jDarmy),
+        description: E.intl.string(E.t["/ee7yK"]),
         badge: "beta",
         checked: s,
         onChange: g,
@@ -188,7 +188,7 @@ function R(e) {
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: E.intl.string(E.t.JxO639)
+        children: E.intl.string(E.t.JxO63z)
       })]
     }), (0, r.jsx)(c.izJ, {
       className: I.divider
@@ -222,15 +222,15 @@ function D(e) {
     }), (0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: E.intl.string(E.t.lbBfER),
-        description: E.intl.string(E.t.REr5AA),
+        label: E.intl.string(E.t.lbBfEQ),
+        description: E.intl.string(E.t.REr5AI),
         checked: h,
         onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: E.intl.format(E.t.Xz1O0d, {
+        children: E.intl.format(E.t.Xz1O0W, {
           onClick: function() {
             (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
               section: N.oAB.ACCOUNT
@@ -251,7 +251,7 @@ function A() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk776853.headerContainer,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t["suhY+f"])
+      children: Chunk388032.intl.string(Chunk388032.t["suhY+Y"])
     }), (0, Chunk951288.jsx)(Chunk723136.z, {
       guild: module
     }), (0, Chunk951288.jsx)(R, {

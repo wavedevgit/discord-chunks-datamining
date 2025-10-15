@@ -15,7 +15,7 @@ let s = function() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.MjVwl5)
+      children: Chunk388032.intl.string(Chunk388032.t.MjVwl8)
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk197530.example,
       children: [(0, Chunk951288.jsx)("div", {
@@ -28,11 +28,11 @@ let s = function() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk388032.t.wyARg4)
+          children: Chunk388032.intl.string(Chunk388032.t.wyARgw)
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk388032.t.lhsK1d)
+          children: Chunk388032.intl.string(Chunk388032.t.lhsK1V)
         })]
       })]
     })]

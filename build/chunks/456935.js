@@ -12,13 +12,13 @@ var Chunk981631 = require("./981631.js"),
 function a(e) {
   switch (e) {
     case i.sFg.LOW:
-      return l.intl.string(l.t.SsCK8P);
+      return l.intl.string(l.t.SsCK8I);
     case i.sFg.MEDIUM:
-      return l.intl.string(l.t.WwNoR0);
+      return l.intl.string(l.t.WwNoR4);
     case i.sFg.HIGH:
       return l.intl.string(l.t.I2jMUF);
     case i.sFg.VERY_HIGH:
-      return l.intl.string(l.t.cJY8w8);
+      return l.intl.string(l.t.cJY8w9);
     default:
       return ""
   }

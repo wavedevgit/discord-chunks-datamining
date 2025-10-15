@@ -58,12 +58,12 @@ let h = e => 1 - Math.pow(1 - e, 4),
     tension: 1e3,
     clamp: true
   },
-  P = {
+  _ = {
     mass: 1,
     friction: 64,
     tension: 1e3
   },
-  _ = {
+  P = {
     mass: 1,
     friction: 35,
     tension: 1e3
@@ -88,15 +88,15 @@ function w(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), I = E ? c.Iy5 : c.X_q, T = i.useCallback(() => (0, f.v6)(null), []), S = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, c.dQu)(c.TVs.colors.WHITE).hex(), D = i.useRef(0), Z = n !== o ? D.current + 1 : D.current;
+  }(), I = E ? c.Iy5 : c.X_q, T = i.useCallback(() => (0, f.v6)(null), []), S = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), N = (0, c.dQu)(c.TVs.colors.WHITE).hex(), Z = i.useRef(0), D = n !== o ? Z.current + 1 : Z.current;
   i.useEffect(() => {
-    D.current = Z
-  }, [Z]);
+    Z.current = D
+  }, [D]);
   let k = null != n,
     M = !k,
     A = k && null != o,
     R = null == n && null != o,
-    V = (0, c.q_F)({
+    L = (0, c.q_F)({
       opacity: +!!k,
       height: 72 * !!k,
       pointerEvents: k ? "auto" : "none",
@@ -107,8 +107,8 @@ function w(e) {
       } : x,
       delay: 100 * !!A
     }, "respect-motion-settings"),
-    L = (0, c.Yzy)(null == w ? true : w.id, {
-      key: Z,
+    V = (0, c.Yzy)(null == w ? true : w.id, {
+      key: D,
       from: {
         opacity: 0,
         background: null == w ? true : w.splashGradient
@@ -144,11 +144,11 @@ function w(e) {
       config: e => "opacity" === e ? {
         easing: h,
         duration: 200
-      } : P,
+      } : _,
       delay: R ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     U = (0, c.Yzy)(null == w ? true : w.iconURL, {
-      key: Z,
+      key: D,
       from: {
         opacity: 0,
         scale: 80 / 88,
@@ -169,10 +169,10 @@ function w(e) {
       config: e => "opacity" === e ? {
         easing: h,
         duration: 200
-      } : k ? x : _
+      } : k ? x : P
     }, "respect-motion-settings"),
     Y = (0, c.Yzy)(null == w ? true : w.name, {
-      key: Z,
+      key: D,
       from: {
         opacity: 0,
         scale: A ? .9 : 1,
@@ -187,7 +187,7 @@ function w(e) {
         config: e => "opacity" === e ? {
           easing: h,
           duration: 200
-        } : A ? x : P
+        } : A ? x : _
       },
       leave: {
         opacity: 0,
@@ -197,17 +197,17 @@ function w(e) {
         config: e => "opacity" === e ? {
           easing: h,
           duration: 200
-        } : A ? x : P
+        } : A ? x : _
       }
     }, "respect-motion-settings"),
-    H = v.intl.string(E ? v.t.esVyo6 : v.t.UQqFCA);
+    H = v.intl.string(E ? v.t.esVyo6 : v.t.UQqFCF);
   return (0, r.jsxs)(a.animated.div, {
     className: y.voiceFilterHero,
     "aria-hidden": M,
-    style: V,
+    style: L,
     children: [(0, r.jsx)("div", {
       className: l()([y.bgGradient, y.bgGradientHighlight])
-    }), L(e => (0, r.jsx)(a.animated.div, {
+    }), V(e => (0, r.jsx)(a.animated.div, {
       className: y.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
@@ -227,7 +227,7 @@ function w(e) {
           variant: "text-xs/normal",
           color: "always-white",
           className: y.offWhiteText,
-          children: v.intl.string(v.t.WW5DAA)
+          children: v.intl.string(v.t.WW5DAC)
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "always-white",
@@ -251,7 +251,7 @@ function w(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: v.intl.string(E ? v.t.Sg6cfn : v.t.ZKhtw8)
+            children: v.intl.string(E ? v.t.Sg6cfm : v.t.ZKhtw0)
           })]
         }),
         children: e => (0, r.jsx)(a.animated.div, {
@@ -279,7 +279,7 @@ function w(e) {
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         shouldShow: k,
-        text: v.intl.string(v.t.UvMx7O),
+        text: v.intl.string(v.t.UvMx7F),
         children: e => (0, r.jsx)(a.animated.div, {
           className: y.buttonWrapper,
           style: F[1],

@@ -19,7 +19,7 @@ function c(e) {
     onAuthToken: d,
     onError: u,
     onClose: p
-  } = e, f = t ? (0, o.jsx)("img", {
+  } = e, b = t ? (0, o.jsx)("img", {
     src: l.Z,
     width: "231",
     height: "172",
@@ -29,7 +29,7 @@ function c(e) {
     width: "231",
     height: "160",
     alt: ""
-  }), b = t ? s.intl.string(s.t.EuwcxM) : s.intl.string(s.t["e/z3nZ"]), x = t ? s.intl.string(s.t["1GjS/f"]) : s.intl.string(s.t["7tXu0t"]);
+  }), f = t ? s.intl.string(s.t.EuwcxO) : s.intl.string(s.t["e/z3na"]), x = t ? s.intl.string(s.t["1GjS/W"]) : s.intl.string(s.t["7tXu0i"]);
   return (0, o.jsx)(r.t, {
     platformType: i.ABu.XBOX,
     isWaitingForConnection: t,
@@ -38,8 +38,8 @@ function c(e) {
     onAuthToken: d,
     onError: u,
     onClose: p,
-    img: f,
-    title: b,
+    img: b,
+    title: f,
     body: x
   })
 }

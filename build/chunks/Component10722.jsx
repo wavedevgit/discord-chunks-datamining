@@ -24,10 +24,10 @@ function k(e) {
     onClose: o,
     guild: k,
     transitionState: N
-  } = e, u = (0, s.KS)(n, k), j = (0, r.ZP)(n, false), y = (0, t.q)(null == (a = n.linkedLobby) ? true : a.application_id);
+  } = e, u = (0, d.KS)(n, k), j = (0, r.ZP)(n, false), y = (0, t.q)(null == (a = n.linkedLobby) ? true : a.application_id);
   return (0, l.jsxs)(i.Y0X, {
     transitionState: N,
-    "aria-label": m.intl.string(m.t.X8jMDg),
+    "aria-label": m.intl.string(m.t.X8jMDh),
     className: b.modal,
     parentComponent: "ChannelTopicModal",
     children: [(0, l.jsxs)(i.xBx, {
@@ -52,7 +52,7 @@ function k(e) {
         selectable: true,
         variant: "text-md/normal",
         className: c()(b.content, x.markup),
-        children: d.Z.parseTopic(n.topic, true, {
+        children: s.Z.parseTopic(n.topic, true, {
           channelId: n.id
         })
       }), null != y ? (0, l.jsxs)("div", {
@@ -62,7 +62,7 @@ function k(e) {
         }), (0, l.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: m.intl.format(m.t.Ud5rys, {
+          children: m.intl.format(m.t.Ud5ryv, {
             applicationName: y.name,
             helpdeskArticle: p.Z.getArticleURL(h.BhN.LINKED_LOBBIES),
             separatorHook: (e, a) => (0, l.jsx)("span", {

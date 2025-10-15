@@ -74,13 +74,13 @@ function v(e) {
     paymentSourceId: u,
     hasPaymentSources: _
   } = e;
-  if (null === u && _) return g.intl.string(g.t.CpOiEB);
-  if (t === m.GZ.ONE_TIME) return o ? g.intl.string(g.t.ouo4FB) : g.intl.string(g.t.ExD0Nj);
-  if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === h.POd.BOOST) return g.intl.string(g.t.eUEeCg);
-  if (o) return g.intl.string(g.t.ouo4FB);
-  if (c) return g.intl.string(g.t.LQVQIi);
-  if ((0, d.PV)(n.id)) return l ? g.intl.string(g.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.intl.string(g.t.zpi5pq) : (0, f.R4)(r, n.id, s) ? g.intl.string(g.t.IJI7ys) : g.intl.string(g.t.VPuTc3) : (0, d.W_)(null, n);
-  return g.intl.string(g.t.YScQSE)
+  if (null === u && _) return g.intl.string(g.t.CpOiEO);
+  if (t === m.GZ.ONE_TIME) return o ? g.intl.string(g.t.ouo4FK) : g.intl.string(g.t.ExD0Ng);
+  if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === h.POd.BOOST) return g.intl.string(g.t.eUEeCt);
+  if (o) return g.intl.string(g.t.ouo4FK);
+  if (c) return g.intl.string(g.t.LQVQIq);
+  if ((0, d.PV)(n.id)) return l ? g.intl.string(g.t.cRCCJ3) : null != r ? r.isPausedAllowsResumeButNotUpdates ? g.intl.string(g.t.zpi5pg) : (0, f.R4)(r, n.id, s) ? g.intl.string(g.t.IJI7yk) : g.intl.string(g.t.VPuTc5) : (0, d.W_)(null, n);
+  return g.intl.string(g.t.YScQSF)
 }
 
 function I(e, t) {
@@ -144,7 +144,7 @@ function T(e) {
   }
   if (N && G) return (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
-    text: g.intl.string(g.t.L7jbQU),
+    text: g.intl.string(g.t.L7jbQV),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "primary",
       text: Z
@@ -156,7 +156,7 @@ function T(e) {
   });
   if (N && !G) return (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
-    text: g.intl.string(g.t.L7jbQU),
+    text: g.intl.string(g.t.L7jbQV),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "active",
       text: Z
@@ -168,7 +168,7 @@ function T(e) {
   });
   if ((0, u.yE)(null != (t = null == D ? true : D.flags) ? t : 0, h.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
-    text: g.intl.string(g.t.cjA5tr),
+    text: g.intl.string(g.t.cjA5tj),
     children: e => (0, r.jsx)(o.Button, O(b({
       variant: "active",
       text: Z

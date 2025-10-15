@@ -204,7 +204,7 @@ function W(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: j.intl.string(j.t.fpKdS0)
+    children: j.intl.string(j.t.fpKdS1)
   }) : (0, r.jsx)(v.Z, {
     muteConfig: t,
     className: n
@@ -246,13 +246,13 @@ function K(e) {
 function z(e) {
   switch (e) {
     case E.wB.SUBMITTED:
-      return j.intl.string(j.t["9KFC9/"]);
+      return j.intl.string(j.t["9KFC98"]);
     case E.wB.REJECTED:
-      return j.intl.string(j.t["TQY/RU"]);
+      return j.intl.string(j.t["TQY/Rd"]);
     case E.wB.APPROVED:
-      return j.intl.string(j.t.WXHcq6);
+      return j.intl.string(j.t.WXHcq5);
     default:
-      return j.intl.string(j.t.fjHFCw)
+      return j.intl.string(j.t.fjHFC8)
   }
 }
 
@@ -297,12 +297,12 @@ function X(e) {
       className: k.invitesDisabledTooltip,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: j.intl.string(j.t["2n0/Fh"])
+      children: j.intl.string(j.t["2n0/Fk"])
     }) : null, d ? (0, r.jsx)(u.Text, {
       className: k.viewAsRolesWarning,
       color: "text-default",
       variant: "text-xs/normal",
-      children: j.intl.string(j.t["5LwN8/"])
+      children: j.intl.string(j.t["5LwN89"])
     }) : f]
   })
 }

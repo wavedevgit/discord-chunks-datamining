@@ -41,9 +41,9 @@ let p = e => {
       })
     }, [t.id, f, b, n]);
   return null == t ? null : (0, r.jsx)(d.JZ, {
-    title: m.intl.string(m.t.ygG62N),
-    description: m.intl.string(m.t.S51EKi),
-    buttonText: p ? m.intl.string(m.t.xXpoGR) : m.intl.string(m.t.JsiUnJ),
+    title: m.intl.string(m.t.ygG62M),
+    description: m.intl.string(m.t.S51EKg),
+    buttonText: p ? m.intl.string(m.t.xXpoGV) : m.intl.string(m.t.JsiUnL),
     buttonDisabled: !p,
     onButtonPress: x,
     buttonVariant: p ? "critical-primary" : "secondary"

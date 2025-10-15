@@ -62,13 +62,13 @@ function N() {
       gap: 24,
       className: Chunk844642.sessions,
       children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t.LLS19v),
+        label: Chunk388032.intl.string(Chunk388032.t.LLS19o),
         children: null != exports ? (0, Chunk951288.jsx)(R, {
           session: exports,
           current: true
         }) : null
       }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
+        label: Chunk388032.intl.string(Chunk388032.t.xx1MWc),
         children: [require.map(e => (0, r.jsx)(R, {
           session: e,
           useChecks: O.size > 0,
@@ -80,17 +80,17 @@ function N() {
         }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(P, {})]
       })]
     }), require.length > 0 ? (0, Chunk951288.jsx)(Chunk481060.gNt, {
-      label: Chunk313789.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
-      description: Chunk388032.intl.string(Chunk388032.t.OTXyaW),
+      label: Chunk313789.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRO) : Chunk388032.intl.string(Chunk388032.t.Vij32M),
+      description: Chunk388032.intl.string(Chunk388032.t.OTXyaf),
       children: (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: Chunk844642.logOutAllButton,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "critical-secondary",
           size: "sm",
-          text: Chunk313789.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLi"], {
+          text: Chunk313789.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLj"], {
             count: Chunk313789.size
-          }) : Chunk388032.intl.string(Chunk388032.t.cLmmeX),
+          }) : Chunk388032.intl.string(Chunk388032.t.cLmmeY),
           onClick: () => {
             Chunk313789.size > 0 ? (0, Chunk43015.L$)(Array.from(Chunk313789)) : (0, Chunk43015.L$)(require.map(e => e.id_hash))
           }
@@ -98,11 +98,11 @@ function N() {
       })
     }) : null]
   }), (0, Chunk951288.jsxs)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
+    header: Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       className: Chunk844642.description,
-      children: Chunk388032.intl.string(Chunk388032.t.zZp619)
+      children: Chunk388032.intl.string(Chunk388032.t.zZp618)
     }), (null == o ? true : o.isStaff()) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk844642.tools,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -187,7 +187,7 @@ function R(e) {
       onClick: e => {
         e.shiftKey ? null == u || u(true) : (0, p.L$)(l.id_hash)
       },
-      "aria-label": A.intl.string(A.t.E4MJNj),
+      "aria-label": A.intl.string(A.t.E4MJNt),
       children: (0, r.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
@@ -213,14 +213,14 @@ function P() {
         className: Chunk844642.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
-          children: Chunk388032.intl.string(Chunk388032.t.iUa0sr)
+          children: Chunk388032.intl.string(Chunk388032.t.iUa0sn)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         className: Chunk844642.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
-          children: Chunk388032.intl.format(Chunk388032.t["044+8v"], {
+          children: Chunk388032.intl.format(Chunk388032.t["044+8i"], {
             onClick: () => module(Chunk313789.n.ACCOUNT_PANEL, {
               section: Chunk981631.oAB.ACCOUNT,
               analyticsLocations: [Chunk100527.Z.USER_SETTINGS_SESSIONS]
@@ -238,7 +238,7 @@ function w(e) {
     case true:
     case "":
       return {
-        text: A.intl.string(A.t.cDHCNT), icon: d.pzj
+        text: A.intl.string(A.t.cDHCNY), icon: d.pzj
       };
     case "ios":
     case "android":

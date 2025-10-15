@@ -66,23 +66,23 @@ let d = e => {
     }), (0, r.jsx)(l.Heading, {
       className: c.emptyTitle,
       variant: "heading-xl/semibold",
-      children: o.intl.format(o.t.vyvrpK, {
+      children: o.intl.format(o.t.vyvrpC, {
         guildName: t.name
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: c.emptySubtitle,
-      children: o.intl.string(o.t.WypE0t)
+      children: o.intl.string(o.t.WypE0i)
     }), null != d ? (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
-      header: o.intl.string(o.t.hyK15u),
+      header: o.intl.string(o.t.hyK15i),
       completed: false,
       onClick: d
     }) : null, (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
-      header: o.intl.string(o.t.L4bwJy),
+      header: o.intl.string(o.t.L4bwJ9),
       completed: false,
       onClick: u
     })]

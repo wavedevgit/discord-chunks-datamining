@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk74655 = require("./74655.jsx"),
-  Chunk490340 = require("./490340.js"),
+  Chunk751611 = require("./751611.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680765 = require("./680765.js");
 
@@ -72,7 +72,7 @@ function f(e) {
   return t ? (0, r.jsx)(o.tEY, {
     children: (0, r.jsx)("button", {
       className: u.clearButton,
-      "aria-label": c.intl.string(l.default.JA5C7O),
+      "aria-label": c.intl.string(l.default.JA5C7L),
       onClick: i,
       children: (0, r.jsx)(o.k$p, {
         size: n,

@@ -30,19 +30,19 @@ function p(e) {
         return {
           icon: (0, i.jsx)(o.enf, {
             colorClass: m.linkIcon
-          }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvr)
+          }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
         };
       case a.p.TWITTER:
         return {
           icon: (0, i.jsx)(o.TAi, {
             colorClass: m.linkIcon
-          }), action: c.as.XLink, title: d.intl.string(d.t["INic4+"])
+          }), action: c.as.XLink, title: d.intl.string(d.t.INic4y)
         };
       case a.p.YOUTUBE:
         return {
           action: c.as.YouTubeLink, icon: (0, i.jsx)(o.$5w, {
             colorClass: m.linkIcon
-          }), title: d.intl.string(d.t.lNmxbG)
+          }), title: d.intl.string(d.t.lNmxbE)
         };
       default:
         throw Error("Unknown IGDB website category")
@@ -79,7 +79,7 @@ let g = function(e) {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
-      children: d.intl.string(d.t.Oj3o19)
+      children: d.intl.string(d.t["Oj3o1/"])
     }), (0, i.jsx)("div", {
       className: l()(u.row, u.gapMd),
       children: r.map(e => (0, i.jsx)(p, {

@@ -68,7 +68,7 @@ function u(e) {
     });
     return e.push((0, n.jsx)(i.sNh, {
       id: "create-reminder-custom",
-      label: l.intl.string(l.t.OLA8Zm),
+      label: l.intl.string(l.t.OLA8Zi),
       action: o
     }, "custom")), e
   }, [t, o])

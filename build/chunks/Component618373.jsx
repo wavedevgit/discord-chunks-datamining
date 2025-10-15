@@ -50,13 +50,13 @@ function g(e) {
   return O ? (0, r.jsx)(a.Text, {
     variant: "text-xxs/semibold",
     color: g ? "text-feedback-warning" : "text-muted",
-    children: v ? p.intl.format(p.t.MVS9pa, {
+    children: v ? p.intl.format(p.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, s.Z)(true, true), (0, u.openUserSettings)(c.n.OVERLAY_PANEL, {
           section: _.oAB.OVERLAY
         })
       }
-    }) : p.intl.string(p.t.PIeSHB)
+    }) : p.intl.string(p.t.PIeSHF)
   }) : y ? E ? (0, r.jsx)("div", {
     className: h.keybindFlexboxLayout,
     children: p.intl.format(n, {

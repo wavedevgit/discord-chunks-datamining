@@ -261,7 +261,7 @@ function ec(e) {
                 children: (0, a.jsxs)(X.XE, {
                   children: [(0, a.jsx)(X.V4, {
                     action: "EDIT_PROFILE",
-                    label: ep ? ei.intl.string(ei.t.Ip9nBQ) : ei.intl.string(ei.t.s5vZlZ),
+                    label: ep ? ei.intl.string(ei.t.Ip9nBS) : ei.intl.string(ei.t.s5vZlQ),
                     icon: c.vdY,
                     onClick: eq,
                     renderSubmenu: eY ? e => {
@@ -270,7 +270,7 @@ function ec(e) {
                       } = e;
                       return (0, a.jsx)(X.gp, {
                         navId: "edit-profile-submenu",
-                        "aria-label": ei.intl.string(ei.t.szTA8P),
+                        "aria-label": ei.intl.string(ei.t.szTA8E),
                         onClose: t,
                         children: eJ
                       })
@@ -297,7 +297,7 @@ function ec(e) {
                       return (0, a.jsx)(X.gp, {
                         navId: "set-status-submenu",
                         className: el.statusPickerModalMenu,
-                        "aria-label": ei.intl.string(ei.t.E13trK),
+                        "aria-label": ei.intl.string(ei.t.E13trI),
                         onClose: t,
                         children: eN
                       })
@@ -326,11 +326,11 @@ function ec(e) {
                           onClose: r
                         }, i), n = n = {
                           size: "sm",
-                          "aria-label": ei.intl.string(ei.t["3Uj+2t"]),
+                          "aria-label": ei.intl.string(ei.t["3Uj+2p"]),
                           children: (0, a.jsx)(c.v2r, {
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
-                            "aria-label": ei.intl.string(ei.t.E13trK),
+                            "aria-label": ei.intl.string(ei.t.E13trI),
                             className: el.statusPickerModal,
                             hideScroller: true,
                             onClose: r,
@@ -357,7 +357,7 @@ function ec(e) {
                   children: [(0, a.jsx)(X.V4, {
                     action: "PRESS_SWITCH_ACCOUNTS",
                     icon: c.lMe,
-                    label: ei.intl.string(ei.t.oMNyYG),
+                    label: ei.intl.string(ei.t.oMNyYN),
                     onClick: () => {
                       n(), (0, ee.Z)()
                     },
@@ -367,7 +367,7 @@ function ec(e) {
                       } = e;
                       return (0, a.jsx)(X.gp, {
                         navId: "switch-accounts-submenu",
-                        "aria-label": ei.intl.string(ei.t.wFhVqK),
+                        "aria-label": ei.intl.string(ei.t.wFhVqL),
                         onClose: t,
                         children: eP
                       })
@@ -375,7 +375,7 @@ function ec(e) {
                   }), !__OVERLAY__ && V.wS && eO && (0, a.jsx)(X.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
-                    label: ei.intl.string(ei.t["/AXYnJ"]),
+                    label: ei.intl.string(ei.t["/AXYnE"]),
                     onClick: () => {
                       (0, V.JG)(t.id), n()
                     }

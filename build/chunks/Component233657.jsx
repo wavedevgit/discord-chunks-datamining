@@ -72,9 +72,9 @@ function _(e) {
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let x = (0, c.ZP)(t.id),
-    C = x.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
+    C = x.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
       number: x.length
-    }) : f.intl.string(f.t.tlopTE);
+    }) : f.intl.string(f.t.tlopTM);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.Que, {

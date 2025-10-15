@@ -10,15 +10,15 @@ var Chunk913527 = require("./913527.js"),
 
 function s(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : r.intl.string(r.t["Yl1D8/"]),
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : r.intl.string(r.t.Yl1D84),
     i = l().duration(e, "seconds");
-  return i.days() > 0 ? r.intl.formatToPlainString(t ? r.t.GBLpQ0 : r.t.k2UNz8, {
+  return i.days() > 0 ? r.intl.formatToPlainString(t ? r.t.GBLpQ8 : r.t["k2UNz+"], {
     days: i.days()
-  }) : i.hours() > 0 ? r.intl.formatToPlainString(t ? r.t.rhY1Rk : r.t.xCjYxM, {
+  }) : i.hours() > 0 ? r.intl.formatToPlainString(t ? r.t.rhY1Rs : r.t.xCjYxK, {
     hours: i.hours()
-  }) : i.minutes() > 0 ? r.intl.formatToPlainString(t ? r.t["XIGt+f"] : r.t.iXLF9f, {
+  }) : i.minutes() > 0 ? r.intl.formatToPlainString(t ? r.t["XIGt+W"] : r.t.iXLF9W, {
     minutes: i.minutes()
-  }) : e > 0 ? r.intl.formatToPlainString(t ? r.t.pyvjRk : r.t.geSp4O, {
+  }) : e > 0 ? r.intl.formatToPlainString(t ? r.t.pyvjRp : r.t.geSp4K, {
     seconds: i.seconds()
-  }) : t ? r.intl.string(r.t["Yl1D8/"]) : n
+  }) : t ? r.intl.string(r.t.Yl1D84) : n
 }

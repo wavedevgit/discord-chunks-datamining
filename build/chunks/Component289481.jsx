@@ -144,7 +144,7 @@ function P(e) {
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(d.M0o, {
     className: C.markReadButton,
-    tooltip: o ? x.intl.string(x.t["5lLMhI"]) : x.intl.string(x.t.e6RscX),
+    tooltip: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
     color: d.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(d.W6s, {
       size: "xs",
@@ -171,7 +171,7 @@ function N(e) {
     getNumUnreadChannels: i
   } = e;
   return (0, r.jsx)(u.u, {
-    text: x.intl.string(x.t.iTcumZ),
+    text: x.intl.string(x.t.iTcuma),
     children: (0, r.jsx)(d.P3F, {
       className: o()(C.collapseButton, {
         [C.collapsed]: t.collapsed

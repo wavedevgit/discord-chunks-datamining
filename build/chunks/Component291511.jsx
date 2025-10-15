@@ -19,10 +19,10 @@ function d() {
     t = (0, Chunk915009.xf)(),
     n = [{
       value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
+      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
       value: Chunk524437.Q4.BLOCK,
-      label: Chunk388032.intl.string(Chunk388032.t["D/157e"])
+      label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }];
   if (null == exports || null == module) return null;
   let d = t => {
@@ -33,9 +33,9 @@ function d() {
       explicitContentNonFriendDm: _
     } = exports;
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
-    description: Chunk388032.intl.string(Chunk388032.t.Wnojv7),
+    description: Chunk388032.intl.string(Chunk388032.t.Wnojv1),
     children: [(0, Chunk951288.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["+uI23N"]),
+      title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
       value: f,
       onChange: e => d({
         explicitContentFriendDm: e

@@ -21,8 +21,8 @@ let p = function(e) {
   return (0, r.jsxs)(o.Z, {
     onScroll: t,
     children: [(0, r.jsx)(l.Z, {
-      title: d.intl.format(d.t["kEcZ9/"], {}),
-      description: d.intl.string(d.t.XxFts7),
+      title: d.intl.format(d.t.kEcZ97, {}),
+      description: d.intl.string(d.t.XxFts9),
       children: (0, r.jsx)(i.Z, {})
     }), (0, r.jsx)(s.Z, {
       children: (0, r.jsxs)("div", {

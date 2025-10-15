@@ -21,19 +21,19 @@ function p() {
   return (0, Chunk399606.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) ? (0, Chunk951288.jsx)("div", {
     className: Chunk830026.micTest,
     children: (0, Chunk951288.jsx)(Chunk284056.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.gyljWF),
-      description: Chunk388032.intl.string(Chunk388032.t["8hhsCQ"]),
+      title: Chunk388032.intl.string(Chunk388032.t.gyljWE),
+      description: Chunk388032.intl.string(Chunk388032.t["8hhsCU"]),
       notchBackground: Chunk284056._.GRAY,
-      captionVoice: Chunk388032.intl.string(Chunk388032.t.bp3JOT),
+      captionVoice: Chunk388032.intl.string(Chunk388032.t.bp3JOV),
       captionNoVoice: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [Chunk388032.intl.string(Chunk388032.t["MA+OZm"]), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
+        children: [Chunk388032.intl.string(Chunk388032.t["MA+OZh"]), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           className: Chunk830026.micTestHelpLink,
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NO_INPUT_DETECTED),
-          children: Chunk388032.intl.string(Chunk388032.t.RYKKo6)
+          children: Chunk388032.intl.string(Chunk388032.t.RYKKox)
         })]
       }),
-      buttonTest: Chunk388032.intl.string(Chunk388032.t.c4qHt7),
-      buttonStop: Chunk388032.intl.string(Chunk388032.t.I6OnJy),
+      buttonTest: Chunk388032.intl.string(Chunk388032.t.c4qHt6),
+      buttonStop: Chunk388032.intl.string(Chunk388032.t.I6OnJ3),
       buttonClassName: Chunk830026.micTestButton,
       buttonColor: Chunk755721.zx.Colors.BRAND,
       location: {

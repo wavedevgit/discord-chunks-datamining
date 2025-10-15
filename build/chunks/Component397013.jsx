@@ -37,28 +37,28 @@ let i = e => {
     parentComponent: "QuarantineModeInfoModal",
     children: [(0, r.jsxs)(c.xBx, {
       separator: false,
-      className: l.modalHeader,
+      className: s.modalHeader,
       children: [(0, r.jsx)(c.Heading, {
         id: d,
         variant: "heading-xl/extrabold",
-        children: s.intl.string(s.t.EouHws)
+        children: l.intl.string(l.t.EouHwv)
       }), (0, r.jsx)(c.olH, {
-        className: l.closeButton,
+        className: s.closeButton,
         onClick: i
       })]
     }), (0, r.jsx)(c.hzk, {
-      className: l.modalContent,
+      className: s.modalContent,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: l.contentText,
-        children: s.intl.string(s.t.zNPBMD)
+        className: s.contentText,
+        children: l.intl.string(l.t.zNPBMA)
       })
     }), (0, r.jsx)(c.mzw, {
       children: (0, r.jsx)(o.zx, {
-        className: l.button,
+        className: s.button,
         size: o.zx.Sizes.MIN,
         onClick: i,
-        children: s.intl.string(s.t.BddRzc)
+        children: l.intl.string(l.t.BddRzS)
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

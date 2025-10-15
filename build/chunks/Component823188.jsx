@@ -231,7 +231,7 @@ function W(e) {
     children: [m && (0, r.jsx)(l.Text, {
       variant: "text-sm/bold",
       className: s ? j.tier2ApplicationHomeSubheader : k.tier2ApplicationHomeSubheader,
-      children: M.intl.string(M.t.AozD3d)
+      children: M.intl.string(M.t.AozD3Q)
     }), g.map((e, n) => {
       let {
         Icon: i,
@@ -432,7 +432,7 @@ function X(e) {
       className: k.applicationHomeTierCardSectionHeader,
       variant: "display-md",
       color: "header-primary",
-      children: M.intl.string(M.t.vLz3Zm)
+      children: M.intl.string(M.t.vLz3Zs)
     }), (0, r.jsxs)("div", {
       ref: s,
       className: a()(k.premiumCards, i),

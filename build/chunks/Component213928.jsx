@@ -22,13 +22,13 @@ function m() {
     className: Chunk61952.container,
     children: [(0, Chunk951288.jsxs)(Chunk481060.nn4, {
       tag: "div",
-      children: [Chunk388032.intl.string(Chunk388032.t.AHoLf3), ":"]
+      children: [Chunk388032.intl.string(Chunk388032.t.AHoLf4), ":"]
     }), require, require.length > 0 && m && (0, Chunk951288.jsx)(Chunk681715.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.L99HQk),
+      text: Chunk388032.intl.string(Chunk388032.t.L99HQm),
       children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
         size: "xs",
         color: Chunk481060.TVs.colors.STATUS_WARNING,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.L99HQk)
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.L99HQm)
       })
     })]
   })

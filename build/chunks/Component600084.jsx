@@ -86,12 +86,12 @@ function F(e) {
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
   }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : D.lds), {
-    authorizedAppToken: z,
-    authorizedAppsFetchState: W
+    authorizedAppToken: W,
+    authorizedAppsFetchState: z
   } = (0, l.cj)([_.Z], () => ({
     authorizedAppToken: _.Z.getNewestTokenForApplication(null == G ? true : G.id),
     authorizedAppsFetchState: _.Z.getFetchState()
-  })), K = c.Z.useExperiment({
+  })), q = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
@@ -99,16 +99,16 @@ function F(e) {
         withMutualGuilds: true
       }))
     }, [L, v, p, P]), r.useEffect(() => {
-      (null == P ? true : P.bot) && W === _.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == P ? true : P.bot, W]), p.isSystemDM()) return F ? (0, i.jsx)(w.Z, {
+      (null == P ? true : P.bot) && z === _.M.NOT_FETCHED && s.Z.fetch()
+    }, [null == P ? true : P.bot, z]), p.isSystemDM()) return F ? (0, i.jsx)(w.Z, {
     channel: p
   }) : (0, i.jsx)(N.Z, {
     channel: p,
-    children: U.intl.string(U.t.Rzvnio)
+    children: U.intl.string(U.t.Rzvnig)
   });
   if (v === D.d4z.DM) {
     let e;
-    return null != P && null != G ? null != z && (e = (0, i.jsxs)("div", {
+    return null != P && null != G ? null != W && (e = (0, i.jsxs)("div", {
       className: B.buttonContainer,
       children: [(0, i.jsx)(T.W, {
         className: B.button,
@@ -119,8 +119,8 @@ function F(e) {
         user: P,
         application: G,
         channel: p,
-        oauth2Token: z
-      }), K && (0, i.jsx)(f.Z, {
+        oauth2Token: W
+      }), q && (0, i.jsx)(f.Z, {
         channel: p
       })]
     })) : e = (0, i.jsx)(E.Z, {
@@ -145,11 +145,11 @@ function F(e) {
     if (p.isManaged()) return (0, i.jsxs)(S.ZP, {
       channelId: p.id,
       children: [(0, i.jsx)(S.Ot, {
-        children: U.intl.format(U.t.I3R7Vl, {
+        children: U.intl.format(U.t.I3R7Vn, {
           channelName: y
         })
       }), (0, i.jsx)(S.jz, {
-        children: U.intl.string(U.t.M8Ao6O)
+        children: U.intl.string(U.t.M8Ao6I)
       })]
     });
     else if (p.hasFlag(k.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
@@ -157,7 +157,7 @@ function F(e) {
   });
   else return (0, i.jsx)(N.Z, {
     channel: p,
-    children: U.intl.format(U.t.MFwcqK, {
+    children: U.intl.format(U.t.MFwcqO, {
       name: y
     })
   });
@@ -167,7 +167,7 @@ function F(e) {
   }) : (0, i.jsx)(S.ZP, {
     channelId: p.id,
     children: (0, i.jsx)(S.jz, {
-      children: U.intl.format(U.t.hPVEQE, {
+      children: U.intl.format(U.t.hPVEQG, {
         channelName: y
       })
     })

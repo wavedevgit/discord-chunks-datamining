@@ -88,7 +88,7 @@ function P(e) {
     Y = !j && (0, l.Z)(n.id),
     W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
-      label: A.intl.string(A.t["+Xp3ho"]),
+      label: A.intl.string(A.t["+Xp3hq"]),
       action: () => {
         H(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
@@ -113,7 +113,7 @@ function P(e) {
         children: [(0, r.jsx)(a.nn4, {
           children: (0, r.jsx)(a.H, {
             id: z,
-            children: A.intl.format(A.t.KRe1Fh, {
+            children: A.intl.format(A.t.KRe1Fk, {
               name: q
             })
           })

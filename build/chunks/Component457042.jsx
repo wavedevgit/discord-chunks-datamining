@@ -41,10 +41,10 @@ function p(t) {
     field: y,
     onSave: _,
     onClose: f
-  } = t, [m, O] = i.useState(null != (e = null == y ? true : y.label) ? e : ""), [j, x] = i.useState(null), h = async () => {
-    null != j && x(null);
+  } = t, [m, O] = i.useState(null != (e = null == y ? true : y.label) ? e : ""), [j, h] = i.useState(null), x = async () => {
+    null != j && h(null);
     let t = m.trim();
-    if ("" === t) return void x(u.intl.string(u.t["G+TI4+"]));
+    if ("" === t) return void h(u.intl.string(u.t["G+TI44"]));
     try {
       await _({
         field_type: p,
@@ -52,24 +52,24 @@ function p(t) {
         required: true
       }), f()
     } catch (t) {
-      x(new a.Hx(t).getAnyErrorMessage())
+      h(new o.Hx(t).getAnyErrorMessage())
     }
   };
   return (0, n.jsx)(c.Z, (r = d({}, t), l = l = {
     errorText: j,
     title: b,
     description: g,
-    onConfirm: h,
+    onConfirm: x,
     onCancel: f,
-    children: (0, n.jsx)(o.oil, {
+    children: (0, n.jsx)(a.oil, {
       onChange: t => {
-        null != j && x(null);
+        null != j && h(null);
         let e = t.replace(/(\r\n|\n|\r)/g, " ");
         e.length > s.XN && (e = e.slice(0, s.XN)), O(e)
       },
-      placeholder: u.intl.string(u.t.fqVmbG),
+      placeholder: u.intl.string(u.t.fqVmbL),
       value: m,
-      onKeyDown: t => "Enter" === t.key && h()
+      onKeyDown: t => "Enter" === t.key && x()
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
     var r = Object.keys(t);
@@ -85,16 +85,16 @@ function p(t) {
 
 function b(t) {
   return (0, n.jsx)(p, d({
-    title: u.intl.string(u.t.w6Q9w8),
-    description: u.intl.string(u.t["A6M+qq"]),
+    title: u.intl.string(u.t.w6Q9wz),
+    description: u.intl.string(u.t["A6M+qv"]),
     type: l.QJ.TEXT_INPUT
   }, t))
 }
 
 function g(t) {
   return (0, n.jsx)(p, d({
-    title: u.intl.string(u.t.gG0JBA),
-    description: u.intl.string(u.t.SMX0iY),
+    title: u.intl.string(u.t.gG0JBN),
+    description: u.intl.string(u.t.SMX0ia),
     type: l.QJ.PARAGRAPH
   }, t))
 }

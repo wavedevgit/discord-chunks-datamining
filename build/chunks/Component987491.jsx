@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 987491, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,13 +40,13 @@ function A(e) {
   } = e;
   switch (r) {
     case f.wB.REJECTED:
-      t = O.t["7YSJ6e"], n = O.t.i05OUV;
+      t = O.t["7YSJ6f"], n = O.t.i05OUR;
       break;
     case f.wB.APPROVED:
-      t = O.t.bv82GR, n = O.t.D4OUHR;
+      t = O.t.bv82GS, n = O.t.D4OUHT;
       break;
     default:
-      t = O.t["/wqiSk"], n = O.t.o47YZm
+      t = O.t["/wqiSv"], n = O.t.o47YZs
   }
   return (0, l.jsxs)("div", {
     className: I.emptyContainer,
@@ -78,7 +78,7 @@ function M(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: O.intl.string(O.t.Es7n9f)
+          children: O.intl.string(O.t.Es7n9c)
         })
       }), (0, l.jsx)("th", {
         className: a()(I.headerCell, w.mediumCol),
@@ -88,7 +88,7 @@ function M(e) {
           children: [(0, l.jsx)(u.Text, {
             variant: "eyebrow",
             color: "interactive-normal",
-            children: O.intl.string(O.t.EZ5QWF)
+            children: O.intl.string(O.t.EZ5QWL)
           }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(E.Z, {
             className: I.sortIcon,
             direction: E.Z.Directions.UP
@@ -102,7 +102,7 @@ function M(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: O.intl.string(O.t["5Q9xGh"])
+          children: O.intl.string(O.t["5Q9xGr"])
         })
       })]
     })
@@ -193,7 +193,7 @@ let Z = Chunk647438.memo(function(e) {
       }), (0, l.jsx)("td", {
         className: I.moreOptionsCol,
         children: v && (0, l.jsx)(d.u, {
-          text: O.intl.string(O.t.x8Nn4O),
+          text: O.intl.string(O.t.x8Nn4M),
           children: (0, l.jsx)(u.P3F, {
             onClick: e => {
               (0, m.jW)(e, async () => {
@@ -293,7 +293,7 @@ let Z = Chunk647438.memo(function(e) {
     })
   };
 
-function G(e) {
+function L(e) {
   let {
     guildId: t,
     currentTab: n

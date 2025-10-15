@@ -38,7 +38,7 @@ let d = function(e) {
           children: [(0, r.jsx)(i.Text, {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
-            children: l.intl.format(l.t["2gem09"], {
+            children: l.intl.format(l.t["2gem05"], {
               percent: s.discount.amount,
               numMonths: s.discount.user_usage_limit
             })
@@ -58,11 +58,11 @@ let d = function(e) {
               }), (0, r.jsx)(i.Text, {
                 variant: "text-sm/semibold",
                 className: c.churnFooterClaimCopy,
-                children: l.intl.string(l.t.zrCzVF)
+                children: l.intl.string(l.t.zrCzVB)
               })]
             }), (0, r.jsx)(i.Button, {
               variant: "primary",
-              text: l.intl.string(l.t["3PatS0"]),
+              text: l.intl.string(l.t["3PatSz"]),
               onClick: () => null == d ? true : d()
             })]
           })]

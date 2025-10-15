@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk914788 = require("./914788.js"),
   Chunk322192 = require("./322192.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk987588 = require("./987588.js");
 let m = [18, 18, 16, 16, 14, 12, 10];
@@ -55,7 +55,7 @@ let E = Chunk647438.memo(e => {
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: null != i ? i : true !== a.approximateMemberCount ? p.intl.format(_.default["5JmNgo"], {
+        children: null != i ? i : true !== a.approximateMemberCount ? p.intl.format(_.default["5JmNgg"], {
           members: a.approximateMemberCount
         }) : null
       })]

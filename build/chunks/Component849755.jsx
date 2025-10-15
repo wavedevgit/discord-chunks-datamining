@@ -55,7 +55,7 @@ function v(e) {
     className: O.clickable,
     onClick: N,
     children: [(0, r.jsx)(g.Z, {
-      text: null != C ? C : y.intl.string(y.t.Mgpxi4),
+      text: null != C ? C : y.intl.string(y.t.Mgpxiw),
       variant: "text-xs/normal",
       color: "text-secondary",
       className: O.text
@@ -63,7 +63,7 @@ function v(e) {
       color: "currentColor",
       size: "xxs",
       className: o()(O.pencilIcon, null != C ? O.hidden : true),
-      "aria-label": y.intl.string(y.t.bt75u7)
+      "aria-label": y.intl.string(y.t.bt75uw)
     })]
   }) : null != C ? (0, r.jsx)(g.Z, {
     text: C,

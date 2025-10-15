@@ -55,17 +55,17 @@ let s = e => {
     }
     return e
   }({
-    confirmText: f.intl.string(f.t["cY+Ooa"]),
-    secondaryConfirmText: f.intl.string(f.t["JdIQ/f"]),
-    title: f.intl.string(f.t["0LZN5O"]),
-    cancelText: f.intl.string(f.t["ETE/oK"]),
+    confirmText: f.intl.string(f.t["cY+Oob"]),
+    secondaryConfirmText: f.intl.string(f.t["JdIQ/Y"]),
+    title: f.intl.string(f.t["0LZN5F"]),
+    cancelText: f.intl.string(f.t["ETE/oC"]),
     onConfirm: n,
     onConfirmSecondary: () => {
       o.ZP.updatedUnsyncedSettings({
         disableVoiceChannelChangeAlert: true
       })
     },
-    body: f.intl.format(f.t["vA+uEh"], {
+    body: f.intl.format(f.t["vA+uEs"], {
       channel: b
     })
   }, s))

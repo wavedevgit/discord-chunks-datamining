@@ -100,7 +100,7 @@ function p() {
         })))
       },
       disabled: h,
-      children: Chunk388032.intl.string(Chunk388032.t["6dwqo6"])
+      children: Chunk388032.intl.string(Chunk388032.t["6dwqo0"])
     })]
   })
 }

@@ -28,7 +28,7 @@ function h(e) {
       canAccessChannel: _
     } = (0, a.cj)([g.Z], () => ({
       canAccessChannel: g.Z.can(e.accessPermissions, e),
-      canManageChannel: g.Z.can(e.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, e)
+      canManageChannel: g.Z.can(e.isThread() ? v.Plq.MANAGE_THREADS : v.Plq.MANAGE_CHANNELS, e)
     }), [e]),
     b = (0, a.e7)([d.Z], () => {
       var t;
@@ -39,14 +39,14 @@ function h(e) {
     } = (0, a.e7)([u.Z], () => u.Z.getMessage(e.id), [e.id]),
     y = h && E && null == C,
     N = t && (E || n && b < 1 || y),
-    A = t && n && !E && b > 0 && null != C;
-  return _ && (!h || y) && (E || N || A) ? (0, i.jsx)(l.sNh, {
+    m = t && n && !E && b > 0 && null != C;
+  return _ && (!h || y) && (E || N || m) ? (0, i.jsx)(l.sNh, {
     id: "delete-channel",
-    label: e.type === p.d4z.GUILD_CATEGORY ? v.intl.string(v.t.ifbXnJ) : e.isForumPost() ? N ? v.intl.string(v.t.nEOg1N) : v.intl.string(v.t.xwMqDw) : e.isThread() ? v.intl.string(v.t.H7vTe3) : v.intl.string(v.t["8D8Rsb"]),
+    label: e.type === v.d4z.GUILD_CATEGORY ? p.intl.string(p.t.ifbXnL) : e.isForumPost() ? N ? p.intl.string(p.t.nEOg1N) : p.intl.string(p.t.xwMqD7) : e.isThread() ? p.intl.string(p.t.H7vTe2) : p.intl.string(p.t["8D8Rsb"]),
     color: "danger",
     action: () => {
       (0, s.w)(e, function() {
-        A ? o.Z.deleteMessage(e.id, O.default.castChannelIdAsMessageId(e.id)) : r.ZP.deleteChannel(e.id)
+        m ? o.Z.deleteMessage(e.id, O.default.castChannelIdAsMessageId(e.id)) : r.ZP.deleteChannel(e.id)
       })
     }
   }) : null

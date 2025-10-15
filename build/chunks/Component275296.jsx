@@ -26,7 +26,7 @@ let d = e => {
       className: c.noticeIconPowerful
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: o.intl.string(o.t.YRbgX1)
+      children: o.intl.string(o.t.YRbgXz)
     })]
   }) : (0, r.jsxs)("div", {
     className: c.notice,
@@ -38,7 +38,7 @@ let d = e => {
       className: c.noticeIcon
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: o.intl.string(o.t.mqeO2t)
+      children: o.intl.string(o.t.mqeO2v)
     })]
   }) : null
 }

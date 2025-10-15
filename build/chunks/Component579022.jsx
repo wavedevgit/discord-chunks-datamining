@@ -15,13 +15,13 @@ let o = Math.ceil(2 * Math.PI * 20),
       used: n
     } = e, s = Math.max(0, Math.min(1, n / t)), c = "".concat(Math.floor(100 * s), "%");
     return (0, r.jsx)(i.u, {
-      text: l.intl.formatToPlainString(l.t["2eoRMj"], {
+      text: l.intl.formatToPlainString(l.t["2eoRMh"], {
         used: c
       }),
       children: (0, r.jsxs)("div", {
         className: a.wrapper,
         role: "progressbar",
-        "aria-label": l.intl.formatToPlainString(l.t["2eoRMj"], {
+        "aria-label": l.intl.formatToPlainString(l.t["2eoRMh"], {
           used: c
         }),
         children: [(0, r.jsxs)("svg", {

@@ -11,9 +11,9 @@ var Chunk823379 = require("./823379.js"),
 function a(e) {
   switch (e) {
     case i.GlobalDiscoveryTab.SERVERS:
-      return l.intl.string(l.t["+Anbp6"]);
+      return l.intl.string(l.t["+Anbp9"]);
     case i.GlobalDiscoveryTab.APPS:
-      return l.intl.string(l.t.bGwCoa);
+      return l.intl.string(l.t.bGwCoR);
     case i.GlobalDiscoveryTab.QUESTS:
       return l.intl.string(l.t.EcaD4e);
     default:

@@ -51,7 +51,7 @@ let m = function(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: g.clickable,
-        children: u.intl.format(u.t.jnhD0d, {
+        children: u.intl.format(u.t.jnhD0S, {
           count: y
         })
       }), (0, r.jsx)(o.Z, {

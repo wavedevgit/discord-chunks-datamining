@@ -157,7 +157,7 @@ function w(e) {
         guild: D.guild,
         onClose: Y
       });
-      let e = ea ? S.intl.string(S.t.pj0XBA) : true;
+      let e = ea ? S.intl.string(S.t.pj0XBN) : true;
       if (eE)
         if (null != em) {
           var t, n;
@@ -165,7 +165,7 @@ function w(e) {
             intervalType: null == em || null == (t = em.subscription_trial) ? true : t.interval,
             intervalCount: null == em || null == (n = em.subscription_trial) ? true : n.interval_count
           })
-        } else null != eg && (e = S.intl.formatToPlainString(S.t.bkQ4bG, {
+        } else null != eg && (e = S.intl.formatToPlainString(S.t.bkQ4bH, {
           percent: eg.discount.amount
         }));
       return (0, r.jsx)(y.Z, {
@@ -261,7 +261,7 @@ function w(e) {
       }), !er && !ea && (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        text: null != ei ? ei : S.intl.string(S.t["13/7kZ"]),
+        text: null != ei ? ei : S.intl.string(S.t["13/7kX"]),
         onClick: Y
       })]
     }), ea ? (0, r.jsx)(c.olH, {

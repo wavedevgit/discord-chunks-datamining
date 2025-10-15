@@ -38,18 +38,18 @@ function v() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.TXPK7O)
+        children: Chunk388032.intl.string(Chunk388032.t.TXPK7B)
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 8
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         className: j(module),
-        children: Chunk388032.intl.string(Chunk388032.t.LdjJGx)
+        children: Chunk388032.intl.string(Chunk388032.t.LdjJG5)
       })]
     }), (0, Chunk951288.jsx)("img", {
       className: Chunk570734.roundAvatar,
       src: Chunk487703,
-      alt: Chunk388032.intl.string(Chunk388032.t.NgjpTE)
+      alt: Chunk388032.intl.string(Chunk388032.t.NgjpTL)
     })]
   })
 }
@@ -102,7 +102,7 @@ function _() {
   }
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk570734.avatarGridContainer,
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["P2B/0d"]),
+    "aria-label": Chunk388032.intl.string(Chunk388032.t["P2B/0W"]),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk570734.avatarCard,
       children: [(0, Chunk951288.jsx)(exports, {
@@ -155,7 +155,7 @@ function C() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t["9CdmS0"])
+      children: Chunk388032.intl.string(Chunk388032.t["9CdmS8"])
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 32
     }), (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)(Chunk481060.LZC, {
@@ -171,15 +171,15 @@ function O() {
       className: Chunk570734.followerBenefitText,
       variant: "text-md/normal",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.qsKRUV)
+      children: Chunk388032.intl.string(Chunk388032.t.qsKRUQ)
     }), (0, Chunk951288.jsx)("img", {
       className: Chunk570734.roleSubscriptionSocial,
       src: Chunk431712,
-      alt: Chunk388032.intl.string(Chunk388032.t.yTPpra)
+      alt: Chunk388032.intl.string(Chunk388032.t.yTPprb)
     }), (0, Chunk951288.jsx)("img", {
       className: Chunk570734.roleSubscriptionLanyardIllo,
       src: Chunk334364,
-      alt: Chunk388032.intl.string(Chunk388032.t["+gd9QU"])
+      alt: Chunk388032.intl.string(Chunk388032.t["+gd9QQ"])
     })]
   })
 }
@@ -200,12 +200,12 @@ function y() {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.AewsXF)
+        children: Chunk388032.intl.string(Chunk388032.t.AewsXD)
       })]
     }), (0, Chunk951288.jsx)("img", {
       className: Chunk570734.roleSubscriptionEarningIllo,
       src: Chunk458050,
-      alt: Chunk388032.intl.string(Chunk388032.t.fD9Wv7)
+      alt: Chunk388032.intl.string(Chunk388032.t.fD9Wv1)
     })]
   })
 }

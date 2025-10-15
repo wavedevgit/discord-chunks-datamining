@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 function p(t) {
   let {
     guildId: e
-  } = t, n = (0, a.e7)([h.Z], () => h.Z.getGuild(e)), [p, k] = l.useState(null), [v, C] = l.useState(""), {
+  } = t, n = (0, a.e7)([h.Z], () => h.Z.getGuild(e)), [p, k] = l.useState(null), [C, v] = l.useState(""), {
     createMultipleConfettiAt: x
   } = l.useContext(c.h), m = (0, a.e7)([u.Z], () => u.Z.useReducedMotion, []), w = async e => {
     let {
@@ -30,7 +30,7 @@ function p(t) {
     e.preventDefault(), k(null);
     try {
       await (0, d.e)(i, {
-        nick: v
+        nick: C
       }), null == n || n()
     } catch (t) {
       k(new s.Hx(t))
@@ -42,16 +42,16 @@ function p(t) {
   return l.useEffect(() => {
     E && x(window.innerWidth / 2, window.innerHeight / 2)
   }, [x, E]), (0, i.jsx)(o.u_l, {
-    title: b.intl.formatToPlainString(b.t["d+6kzs"], {
+    title: b.intl.formatToPlainString(b.t["d+6kzl"], {
       guildName: null == n ? true : n.name
     }),
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: _
     }, {
       variant: "primary",
-      text: b.intl.string(b.t.Np4yXV),
+      text: b.intl.string(b.t.Np4yXU),
       onClick: w
     }],
     transitionState: S,
@@ -59,14 +59,14 @@ function p(t) {
     children: (0, i.jsx)("form", {
       onSubmit: w,
       children: (0, i.jsx)(r.oil, {
-        label: b.intl.string(b.t.pt6jh4),
-        placeholder: b.intl.string(b.t.RfWvWF),
-        description: b.intl.string(b.t.VAaqfH),
+        label: b.intl.string(b.t.pt6jhx),
+        placeholder: b.intl.string(b.t.RfWvWI),
+        description: b.intl.string(b.t.VAaqfF),
         onChange: t => {
-          C(t)
+          v(t)
         },
         error: null == p ? true : p.getFirstFieldErrorMessage("name"),
-        value: v
+        value: C
       })
     })
   })

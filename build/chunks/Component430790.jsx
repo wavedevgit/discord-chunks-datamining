@@ -65,7 +65,7 @@ function c() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: Chunk388032.intl.string(Chunk388032.t.lBG2s7)
+      children: Chunk388032.intl.string(Chunk388032.t["lBG2s/"])
     })]
   })
 }

@@ -38,7 +38,7 @@ function _(e) {
     className: y.overlay,
     children: [S && (0, r.jsx)(m.Z, {
       section: "MUTUAL_GUILDS",
-      header: b.intl.string(b.t["4lTDZm"]),
+      header: b.intl.string(b.t["4lTDZq"]),
       listClassName: y.list,
       items: C.map(e => {
         let {
@@ -56,7 +56,7 @@ function _(e) {
       className: y.divider
     }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
-      header: b.intl.string(b.t["0mTJ3t"]),
+      header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: y.list,
       onExpand: () => (0, d.Z)(t.id, O),
       items: null == v ? Array.from({

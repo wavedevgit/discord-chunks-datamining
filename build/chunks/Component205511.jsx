@@ -61,9 +61,9 @@ function E(e) {
     let e = E.length > 0,
       n = t.config.messages.gameTitle;
     return {
-      header: e ? (0, f.Pb)(t) ? v.intl.string(v.t.N33EuL) : v.intl.formatToPlainString(v.t["28Ql29"], {
+      header: e ? (0, f.Pb)(t) ? v.intl.string(v.t.N33EuL) : v.intl.formatToPlainString(v.t["28Ql27"], {
         gameTitle: n
-      }) : (0, f.Pb)(t) ? v.intl.string(v.t.YstzGB) : v.intl.formatToPlainString(v.t.gX0Qc3, {
+      }) : (0, f.Pb)(t) ? v.intl.string(v.t.YstzGO) : v.intl.formatToPlainString(v.t.gX0Qcx, {
         gameTitle: n
       }),
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
@@ -97,7 +97,7 @@ function E(e) {
         className: C.microphoneUnitBodyText,
         color: "text-muted",
         variant: "text-xxs/normal",
-        children: (0, f.Pb)(t) ? v.intl.string(v.t.bUyEZW) : v.intl.format(v.t.GXqvCw, {
+        children: (0, f.Pb)(t) ? v.intl.string(v.t.bUyEZZ) : v.intl.format(v.t.GXqvC1, {
           gameTitle: n
         })
       })
@@ -186,14 +186,14 @@ let O = function(e) {
         isComplete: s || a || c
       }, {
         renderContent: () => (0, r.jsx)(j.y3, {
-          children: (0, f.Pb)(t) ? v.intl.string(v.t["5tXqFR"]) : v.intl.formatToPlainString(v.t["+8JB6e"], {
+          children: (0, f.Pb)(t) ? v.intl.string(v.t["5tXqFe"]) : v.intl.formatToPlainString(v.t["+8JB6Y"], {
             gameTitle: l
           })
         }),
         isComplete: a || c
       }, {
         renderContent: () => (0, r.jsx)(j.y3, {
-          children: v.intl.formatToPlainString(v.t.HhfrYW, {
+          children: v.intl.formatToPlainString(v.t.HhfrYS, {
             numMinutes: n.targetMinutes
           })
         }),
@@ -205,7 +205,7 @@ let O = function(e) {
     }
   }, [o, i.length, t, n.targetMinutes]);
   return (0, r.jsx)(j.ZP, {
-    heading: v.intl.string(v.t.UPWlJi),
+    heading: v.intl.string(v.t.UPWlJu),
     steps: c,
     children: u && !p && !m && (0, r.jsx)(E, {
       useReducedMotion: a,

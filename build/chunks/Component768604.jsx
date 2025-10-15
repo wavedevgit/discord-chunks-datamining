@@ -18,7 +18,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk947707 = require("./947707.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345909 = require("./345909.js");
+  Chunk660886 = require("./660886.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,29 +60,29 @@ function b() {
     },
     v = [{
       value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
+      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
       value: Chunk524437.Q4.BLOCK,
-      label: Chunk388032.intl.string(Chunk388032.t["D/157e"])
+      label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }],
     I = [{
       value: Chunk524437.Q4.BLUR,
-      label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
+      label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }],
     T = {
       value: Chunk524437.Q4.SHOW,
-      label: Chunk388032.intl.string(Chunk388032.t["5k5OFh"])
+      label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
   exports && (v.unshift(T), I.unshift(T));
   let S = {
     isDisabled: require,
-    tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+    tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
   };
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
     setting: Chunk726985.s6.GORE_MEDIA_REDACTION,
-    description: Chunk388032.intl.string(Chunk388032.t.XgH9en),
+    description: Chunk388032.intl.string(Chunk388032.t.XgH9eh),
     children: [(0, Chunk951288.jsx)(Chunk947707.Z, E({
-      title: Chunk388032.intl.string(Chunk388032.t["+uI23N"]),
+      title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
       value: b,
       onChange: e => O({
         goreContentFriendDm: e
@@ -96,14 +96,14 @@ function b() {
       }),
       options: v
     }, S)), (0, Chunk951288.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["FP+a4+"]),
+      title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
       value: g,
       onChange: e => O({
         goreContentGuilds: e
       }),
       isDisabled: !exports || require,
       options: I,
-      tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+      tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
     })]
   })
 }

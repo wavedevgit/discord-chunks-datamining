@@ -52,7 +52,7 @@ class m extends Chunk647438.PureComponent {
       case "UPDATE_AVAILABLE":
         return (0, Chunk951288.jsx)(Chunk665149.JO, {
           hideOnClick: false,
-          tooltip: Chunk388032.intl.string(Chunk388032.t["zp9d//"]),
+          tooltip: Chunk388032.intl.string(Chunk388032.t["zp9d/4"]),
           foreground: Chunk979905.downloadArrow,
           background: Chunk979905.cloud,
           icon: Chunk481060._8t,
@@ -77,11 +77,11 @@ class m extends Chunk647438.PureComponent {
       clicked: false
     }), g(this, "handleInstallDownload", () => {
       d.Z.isConnected() ? o.Z.show({
-        title: f.intl.string(f.t.tiu1l5),
-        body: f.intl.string(f.t["zK+lqa"]),
+        title: f.intl.string(f.t.tiu1ly),
+        body: f.intl.string(f.t["zK+lqW"]),
         onConfirm: this.doUpdate,
-        cancelText: f.intl.string(f.t["ETE/oK"]),
-        confirmText: f.intl.string(f.t["QDX/qq"]),
+        cancelText: f.intl.string(f.t["ETE/oC"]),
+        confirmText: f.intl.string(f.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
     }), g(this, "doUpdate", () => {

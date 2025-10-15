@@ -20,14 +20,14 @@ function c(e) {
       className: s.content,
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/normal",
-        children: o.intl.format(o.t.ilLVLi, {})
+        children: o.intl.format(o.t.ilLVLr, {})
       }), (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: "md",
         onClick: e => {
           e.stopPropagation(), l.Z.toggleVoiceParticipantsHidden(t, false)
         },
-        text: o.intl.string(o.t.kLQySE)
+        text: o.intl.string(o.t.kLQySL)
       })]
     })]
   })

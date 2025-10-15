@@ -32,13 +32,13 @@ function d(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.xBx, {
       title: c.intl.string(c.t["5bQcoa"]),
-      subtitle: c.intl.string(c.t.Ie60WV)
+      subtitle: c.intl.string(c.t.Ie60Wc)
     }), (0, i.jsxs)(s.fef, {
       children: [(0, i.jsx)(r.Kx8, {
-        label: c.intl.string(c.t.FFFAGh),
+        label: c.intl.string(c.t.FFFAGt),
         value: n,
         maxLength: 200,
-        placeholder: c.intl.string(c.t.VzuITE),
+        placeholder: c.intl.string(c.t.VzuITC),
         onChange: d,
         error: null == f ? true : f.getAnyErrorMessage()
       }), (0, i.jsx)(r.q4e, {
@@ -54,12 +54,12 @@ function d(e) {
       leading: (0, i.jsx)(r.Avr, {
         size: "sm",
         variant: "secondary",
-        text: c.intl.string(c.t["13/7kZ"]),
+        text: c.intl.string(c.t["13/7kX"]),
         onClick: C
       }),
       actions: [{
         variant: "primary",
-        text: c.intl.string(c.t.H9jxS0),
+        text: c.intl.string(c.t.H9jxS1),
         onClick: h,
         loading: g,
         disabled: "" === n || u === o.AR.UNCATEGORIZED

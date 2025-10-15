@@ -20,41 +20,41 @@ function x(e) {
     title: x,
     body: u
   } = e;
-  return (0, r.jsxs)(i.Z, {
-    children: [(0, r.jsxs)(s.xBx, {
+  return (0, n.jsxs)(i.Z, {
+    children: [(0, n.jsxs)(s.xBx, {
       direction: l.Z.Direction.VERTICAL,
       className: c.header,
       separator: false,
-      children: [(0, r.jsx)("img", {
+      children: [(0, n.jsx)("img", {
         src: d,
         className: c.illustration,
         width: "254",
         height: "127",
         alt: ""
-      }), (0, r.jsx)(s.Heading, {
+      }), (0, n.jsx)(s.Heading, {
         className: c.title,
         variant: "heading-xl/extrabold",
         children: x
-      }), null != t && (0, r.jsx)(s.olH, {
+      }), null != t && (0, n.jsx)(s.olH, {
         className: c.closeButton,
         onClick: t
       })]
-    }), (0, r.jsx)(s.hzk, {
+    }), (0, n.jsx)(s.hzk, {
       className: c.body,
       paddingFix: false,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, n.jsx)(s.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: u
       })
-    }), (0, r.jsx)(s.mzw, {
+    }), (0, n.jsx)(s.mzw, {
       className: c.footer,
-      children: (0, r.jsxs)(n.zx, {
+      children: (0, n.jsxs)(r.zx, {
         className: c.footerButton,
-        color: n.zx.Colors.BRAND,
+        color: r.zx.Colors.BRAND,
         onClick: a,
-        children: [o.intl.string(o.t["7NqTJi"]), (0, r.jsx)(s.rgF, {
+        children: [o.intl.string(o.t["7NqTJn"]), (0, n.jsx)(s.rgF, {
           color: "currentColor",
           className: c.launchIcon,
           size: "xs"

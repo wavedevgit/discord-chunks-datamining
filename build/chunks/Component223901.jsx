@@ -21,7 +21,7 @@ function u(s) {
     (0, i.U4)()
   }, []), (0, t.jsx)(a.IX, {
     transitionState: u,
-    "aria-label": c.intl.string(c.t.B2panJ),
+    "aria-label": c.intl.string(c.t.B2panI),
     size: "lg",
     onClose: n,
     children: (0, t.jsx)(o.Z, {

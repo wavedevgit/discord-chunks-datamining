@@ -80,9 +80,9 @@ function m(e) {
     defaultDirty: s
   } = e, [c, u] = i.useState(s), d = i.useMemo(() => {
     var e, i;
-    return "change" !== t ? null : null === n || "" === n ? null : null != n ? n : c ? null != a && (null != (e = null == r ? true : r.length) ? e : 0) < a ? l.intl.formatToPlainString(l.t["62rk1N"], {
+    return "change" !== t ? null : null === n || "" === n ? null : null != n ? n : c ? null != a && (null != (e = null == r ? true : r.length) ? e : 0) < a ? l.intl.formatToPlainString(l.t["62rk1K"], {
       minLength: a
-    }) : null != o && (null != (i = null == r ? true : r.length) ? i : 0) > o ? l.intl.formatToPlainString(l.t.ICT5S0, {
+    }) : null != o && (null != (i = null == r ? true : r.length) ? i : 0) > o ? l.intl.formatToPlainString(l.t.ICT5S6, {
       maxLength: o
     }) : null : null
   }, [t, n, c, a, null == r ? true : r.length, o]), f = null != n && "" !== n || null != d;

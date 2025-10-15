@@ -1,5 +1,5 @@
 /** Chunk was on 48748 **/
-/** chunk id: 52004, original params: t,i,n (module,exports,require) **/
+/** chunk id: 52004, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   default: () => x
 });
@@ -15,19 +15,19 @@ var Chunk951288 = require("./951288.js"),
 let d = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
   x = Chunk442837.ZP.connectStores([Chunk812206.Z], t => {
     let {
-      applicationId: i
+      applicationId: n
     } = t;
     return {
-      application: s.Z.getApplication(i)
+      application: s.Z.getApplication(n)
     }
   })(function(t) {
     let {
-      application: i,
-      transitionState: n,
+      application: n,
+      transitionState: i,
       onClose: a
     } = t;
     return (0, e.jsxs)(l.Y0X, {
-      transitionState: n,
+      transitionState: i,
       size: l.CgR.MEDIUM,
       parentComponent: "MissingEntitlementModal",
       children: [(0, e.jsxs)(l.xBx, {
@@ -35,9 +35,9 @@ let d = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
         justify: r.Z.Justify.BETWEEN,
         children: [(0, e.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
-          children: null != i ? m.intl.formatToPlainString(m.t.N2mILi, {
-            applicationName: i.name
-          }) : m.intl.string(m.t.nS8PUV)
+          children: null != n ? m.intl.formatToPlainString(m.t.N2mILu, {
+            applicationName: n.name
+          }) : m.intl.string(m.t.nS8PUT)
         }), (0, e.jsx)(l.olH, {
           onClick: a
         })]
@@ -47,17 +47,17 @@ let d = Chunk63063.Z.getArticleURL(Chunk981631.BhN.MISSING_ENTITLEMENT),
         }), (0, e.jsx)(l.Text, {
           className: p.text,
           variant: "text-md/normal",
-          children: null != i ? m.intl.format(m.t["MM/7q6"], {
-            applicationName: i.name,
+          children: null != n ? m.intl.format(m.t["MM/7qx"], {
+            applicationName: n.name,
             supportArticleURL: d
-          }) : m.intl.format(m.t.IfQUx8, {
+          }) : m.intl.format(m.t["IfQUx+"], {
             supportArticleURL: d
           })
         })]
       }), (0, e.jsx)(l.mzw, {
         children: (0, e.jsx)(l.Button, {
           variant: "primary",
-          text: m.intl.string(m.t.BddRzc),
+          text: m.intl.string(m.t.BddRzS),
           onClick: a
         })
       })]

@@ -108,14 +108,14 @@ function A(e) {
   } = e;
   return (0, s.e7)([v.Z, j.Z], () => n || j.Z.getGuildId() === C.I_8 || !v.Z.can(C.Plq.MANAGE_CHANNELS, t) && !v.Z.can(C.Plq.MANAGE_ROLES, t) && !v.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, _.r8)(t.type) && !v.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !v.Z.can(C.Plq.CONNECT, t) || !_.dF.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(c.u, {
     asContainer: true,
-    text: E.intl.string(E.t["3gUsJS"]),
+    text: E.intl.string(E.t["3gUsJb"]),
     children: (0, i.jsx)(u.P3F, {
       className: a()(S.iconItem, l ? S.alwaysShown : true, o ? S.iconWithChannelInfo : S.iconNoChannelInfo),
       onClick: function() {
         d.ZP.open(t.id)
       },
       tabIndex: r,
-      "aria-label": E.intl.string(E.t["3gUsJS"]),
+      "aria-label": E.intl.string(E.t["3gUsJb"]),
       children: (0, i.jsx)(u.ewm, {
         size: "xs",
         color: "currentColor",
@@ -135,7 +135,7 @@ function R(e) {
     hasChannelInfo: _ = false
   } = e, j = (0, h._k)({
     location: "channel_base"
-  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), Z = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([v.Z], () => (0, f.b)(v.Z, x, t, I)), T = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0N"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXl"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), A = l.useRef(null);
+  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), Z = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([v.Z], () => (0, f.b)(v.Z, x, t, I)), T = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
   let R = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
     D = (0, i.jsx)(R, {
@@ -187,13 +187,13 @@ function D(e) {
   } = e;
   return (0, i.jsx)(c.u, {
     asContainer: true,
-    text: E.intl.string(E.t.ROh4T0),
+    text: E.intl.string(E.t["ROh4T+"]),
     children: (0, i.jsx)(u.P3F, {
       className: S.iconItem,
       onClick: () => {
         (0, g._U)(t.guild_id, t.id)
       },
-      "aria-label": E.intl.string(E.t.ROh4T0),
+      "aria-label": E.intl.string(E.t["ROh4T+"]),
       children: (0, i.jsx)(u.Dio, {
         size: "xs",
         color: "currentColor",
@@ -209,7 +209,7 @@ function L(e) {
   } = e;
   return (0, i.jsx)(c.u, {
     asContainer: true,
-    text: E.intl.string(E.t["N2c/Ul"]),
+    text: E.intl.string(E.t["N2c/Un"]),
     children: (0, i.jsx)(u.P3F, {
       className: S.iconItem,
       onClick: () => {
@@ -217,7 +217,7 @@ function L(e) {
           section: C.jXE.CHANNEL_LIST
         })
       },
-      "aria-label": E.intl.string(E.t["N2c/Ul"]),
+      "aria-label": E.intl.string(E.t["N2c/Un"]),
       children: (0, i.jsx)(u.dz2, {
         size: "xs",
         color: "currentColor",

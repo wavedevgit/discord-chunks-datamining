@@ -33,7 +33,7 @@ class y extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk264815.sliderContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-          label: Chunk388032.intl.string(Chunk388032.t.OVovCQ),
+          label: Chunk388032.intl.string(Chunk388032.t.OVovCb),
           mini: true,
           initialValue: this.initialValue,
           defaultValue: this.initialValue,

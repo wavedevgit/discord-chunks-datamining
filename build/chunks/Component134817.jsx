@@ -24,14 +24,14 @@ class p extends Chunk647438.Component {
       onClose: async () => {
         await require(false)
       },
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.BNg1io),
-      title: Chunk388032.intl.string(Chunk388032.t.BNg1io),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t.BNg1ir),
+      title: Chunk388032.intl.string(Chunk388032.t.BNg1ir),
       premiumModalType: Chunk233787.C.Types.UPGRADE,
       primary: {
         onClick: () => require(true),
-        label: Chunk388032.intl.string(Chunk388032.t.P3etAg)
+        label: Chunk388032.intl.string(Chunk388032.t.P3etAv)
       },
-      children: Chunk74538.ZP.isPremium(module) && !Chunk74538.ZP.canInstallPremiumApplications(module) ? Chunk388032.intl.string(Chunk388032.t.mKA9OD) : Chunk388032.intl.string(Chunk388032.t.sqSlm5)
+      children: Chunk74538.ZP.isPremium(module) && !Chunk74538.ZP.canInstallPremiumApplications(module) ? Chunk388032.intl.string(Chunk388032.t.mKA9OJ) : Chunk388032.intl.string(Chunk388032.t.sqSlm4)
     })
   }
 }

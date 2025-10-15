@@ -18,7 +18,7 @@ let c = function(e) {
     text: i,
     hasConnectedChannel: c,
     textVariant: d = "text-md/medium"
-  } = e, f = n ? s.intl.string(s.t.IlHdW1) : s.intl.string(s.t.WsOisr);
+  } = e, f = n ? s.intl.string(s.t.IlHdW8) : s.intl.string(s.t.WsOisp);
   return (0, l.jsx)(o.Z, {
     className: r()(t, u.hoverableStatus),
     hoverText: c ? (0, l.jsx)(a.Text, {

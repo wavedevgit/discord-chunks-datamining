@@ -1,7 +1,7 @@
 /** Chunk was on 638 **/
 /** chunk id: 543974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,7 +44,7 @@ function m(e) {
       options: l,
       onChange: e => i(e)
     }), (0, r.jsx)(p.Z, {
-      children: v.intl.string(v.t.dI4HFh)
+      children: v.intl.string(v.t.dI4HFq)
     })]
   })
 }
@@ -61,58 +61,58 @@ function y() {
   })
 }
 
-function x(e) {
+function w(e) {
   let t, n, l, d, {
       channel: p,
       platform: g,
       transitionState: O,
       onClose: j
     } = e,
-    x = (0, c.e7)([h.default], () => h.default.getDevicesForPlatform(g), [g]),
-    w = (0, c.e7)([h.default], () => h.default.getLastSelectedDeviceByPlatform(g)),
-    P = i.useMemo(() => Object.values(x), [x]),
+    w = (0, c.e7)([h.default], () => h.default.getDevicesForPlatform(g), [g]),
+    x = (0, c.e7)([h.default], () => h.default.getLastSelectedDeviceByPlatform(g)),
+    P = i.useMemo(() => Object.values(w), [w]),
     S = (0, c.e7)([h.default], () => h.default.getFetchingDevices(g)),
     D = (0, c.e7)([h.default], () => {
       var e;
       return null == (e = h.default.getAwaitingRemoteSessionInfo()) ? true : e.deviceId
     }),
     [N, k] = i.useState(false),
-    [I, E] = i.useState(() => {
+    [I, Z] = i.useState(() => {
       var e, t;
-      return null != (t = null == (e = x[null != D ? D : ""]) ? true : e.id) ? t : null
+      return null != (t = null == (e = w[null != D ? D : ""]) ? true : e.id) ? t : null
     });
   i.useEffect(() => {
     C.LO(g)
   }, [g]), i.useEffect(() => {
-    1 === P.length ? E(P[0].id) : null != w && E(w)
-  }, [P, w]);
-  let Z = async () => {
-    let e = x[null != I ? I : ""];
+    1 === P.length ? Z(P[0].id) : null != x && Z(x)
+  }, [P, x]);
+  let E = async () => {
+    let e = w[null != I ? I : ""];
     o()(null != e, "Cannot transfer without selected device");
     try {
       k(true), await C.sh(g, e.id, p), j()
     } catch (t) {
       k(false), f.Z.show({
-        title: v.intl.string(v.t["QL1y9/"]),
-        body: v.intl.formatToPlainString(v.t["6ZyNHx"], {
+        title: v.intl.string(v.t.QL1y93),
+        body: v.intl.formatToPlainString(v.t["6ZyNH/"], {
           deviceName: e.name
         })
       })
     }
   };
-  return S ? (n = v.intl.string(v.t["+d9SHx"]), t = (0, r.jsx)("div", {
+  return S ? (n = v.intl.string(v.t["+d9SH8"]), t = (0, r.jsx)("div", {
     className: b.spinnerContainer,
     children: (0, r.jsx)(u.$jN, {})
-  })) : 0 === P.length ? (n = v.intl.string(v.t.OkJf1d), l = v.intl.string(v.t["of/l5e"]), t = (0, r.jsx)(y, {})) : (n = v.intl.string(v.t["+d9SHx"]), l = v.intl.string(v.t["5DtaWl"]), d = [{
-    text: v.intl.string(v.t.FJR4bG),
-    onClick: Z,
+  })) : 0 === P.length ? (n = v.intl.string(v.t.OkJf1e), l = v.intl.string(v.t["of/l5Z"]), t = (0, r.jsx)(y, {})) : (n = v.intl.string(v.t["+d9SH8"]), l = v.intl.string(v.t["5DtaWg"]), d = [{
+    text: v.intl.string(v.t.FJR4bD),
+    onClick: E,
     loading: N || null != D,
     disabled: null == I
   }], t = (0, r.jsx)(m, {
     devices: P,
     selectedDeviceId: I,
     onSelectDeviceId: e => {
-      E(e), (0, C.bp)(g, e)
+      Z(e), (0, C.bp)(g, e)
     }
   })), (0, r.jsx)(a.Modal, {
     title: n,

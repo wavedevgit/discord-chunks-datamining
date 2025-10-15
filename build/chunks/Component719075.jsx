@@ -29,38 +29,38 @@ let b = e => {
     } = (0, u.G)(t.skuId), {
       isPurchased: v,
       isPartiallyOwnedBundle: O
-    } = (0, d.L)(t), x = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), k = (0, p.Iw)(t), {
-      displayPrices: j,
+    } = (0, d.L)(t), x = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), j = (0, p.Iw)(t), {
+      displayPrices: k,
       hasSufficientOrbs: T
     } = (0, C.Ip)({
       product: t,
       isPremiumUser: b,
       prioritizedCurrency: n,
-      hasDiscountOffer: null != k
+      hasDiscountOffer: null != j
     }), L = x && !b;
     return E ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
-      children: _.intl.string(_.t.wu4gyc)
+      children: _.intl.string(_.t.wu4gyV)
     }) : O ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.BEjTio)
+      children: _.intl.string(_.t.BEjTij)
     }) : v && !L ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t["6cfuDg"])
+      children: _.intl.string(_.t["6cfuDj"])
     }) : S ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.nBtvYG)
+      children: _.intl.string(_.t.nBtvYB)
     }) : x ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.rt69oq)
-    }) : 0 === j.length ? null : (0, r.jsx)(g.F, {
-      price: j[0],
+      children: _.intl.string(_.t.rt69oo)
+    }) : 0 === k.length ? null : (0, r.jsx)(g.F, {
+      price: k[0],
       discount: y,
       nitroIconType: b ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: k,
-      className: j[0].currency !== h.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
+      discountOfferAmount: j,
+      className: k[0].currency !== h.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
     })
   },
   E = e => {

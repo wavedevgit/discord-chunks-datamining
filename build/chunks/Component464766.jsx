@@ -23,18 +23,18 @@ function a(e) {
     className: o.container,
     children: (0, l.jsxs)(i.njP, {
       className: o.tabBar,
-      "aria-label": c.intl.string(c.t["+1H47u"]),
+      "aria-label": c.intl.string(c.t["+1H47t"]),
       selectedItem: n,
       type: "top",
       onItemSelect: t,
       children: [(0, l.jsx)(i.njP.Item, {
         className: o.tabBarItem,
         id: s.fL.EVENT_INFO,
-        children: c.intl.string(c.t.iW6Xur)
+        children: c.intl.string(c.t.iW6Xuo)
       }), (0, l.jsx)(i.njP.Item, {
         className: o.tabBarItem,
         id: s.fL.RSVP_LIST,
-        children: c.intl.formatToPlainString(c.t["ZrTT/P"], {
+        children: c.intl.formatToPlainString(c.t["ZrTT/N"], {
           userCount: a
         })
       })]

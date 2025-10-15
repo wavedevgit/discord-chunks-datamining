@@ -14,11 +14,11 @@ var Chunk442837 = require("./442837.js"),
 function u(n, t) {
   let i = (0, e.e7)([r.Z], () => r.Z.getLaunchOptions(n.id, n.branchId)),
     u = (0, e.e7)([l.Z], () => l.Z.getActiveLaunchOptionId(n.id, n.branchId));
-  return i.length < 2 ? null : i.map(i => (0, a.jsx)(c.sNh, {
+  return i.length < 2 ? null : i.map(i => (0, a.jsx)(d.sNh, {
     id: i.id,
     label: i.name,
     action: a => {
-      i.id !== u && d.ul(n.id, n.branchId, i.id), null == t || t(a)
+      i.id !== u && c.ul(n.id, n.branchId, i.id), null == t || t(a)
     }
   }, i.id))
 }

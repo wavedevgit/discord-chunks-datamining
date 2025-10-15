@@ -43,7 +43,7 @@ function g(e, t) {
   }, [e.content]), i.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
-      content: p.intl.string(p.t.sWi5ER),
+      content: p.intl.string(p.t.sWi5EU),
       hasSpoilerEmbeds: false
     };
     if (e.isCommandType() && 0 === e.content.length || e.hasFlag(_.iLy.LOADING)) return (0, u.Z)(e);

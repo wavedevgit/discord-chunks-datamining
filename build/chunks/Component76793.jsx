@@ -54,7 +54,7 @@ function g(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: h.intl.format(h.t["/MBjYG"], {
+        children: h.intl.format(h.t["/MBjYF"], {
           count: n
         })
       })]
@@ -84,7 +84,7 @@ function E(e) {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "interactive-active",
-        children: h.intl.format(h.t.N4qBBA, {
+        children: h.intl.format(h.t.N4qBBO, {
           index: s + 1
         })
       }), (0, r.jsx)(o.Text, {

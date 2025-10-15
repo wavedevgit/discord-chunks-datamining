@@ -46,7 +46,7 @@ function _(e) {
   return e
 }
 
-function b(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function b(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let I = {
+let b = {
   x: 0,
   y: 0
 };
@@ -114,7 +114,7 @@ let x = {
     left: 0,
     right: 0
   },
-  imageTransformCoordinates: I,
+  imageTransformCoordinates: b,
   imageRotation: 0,
   zoomRatio: 1,
   startingCoordinates: {
@@ -129,18 +129,18 @@ function G(e, t) {
   var r, n, i, a, o, s;
   switch (t.type) {
     case "SET_DIMENSIONS":
-      return b(_({}, e), {
+      return I(_({}, e), {
         imageDimensions: t.imageDimensions,
         cropDimensions: t.cropDimensions,
         dragBoundaries: t.dragBoundaries
       });
     case "START_DRAGGING_IMAGE":
-      return b(_({}, e), {
+      return I(_({}, e), {
         startingCoordinates: t.startingCoordinates,
         isDragging: true
       });
     case "STOP_DRAGGING_IMAGE":
-      return b(_({}, e), {
+      return I(_({}, e), {
         isDragging: false,
         hasImageEdits: v({
           zoomRatio: e.zoomRatio,
@@ -149,7 +149,7 @@ function G(e, t) {
         })
       });
     case "ROTATE_IMAGE":
-      return b(_({}, e), {
+      return I(_({}, e), {
         imageRotation: t.imageRotation,
         imageTransformCoordinates: t.imageTransformCoordinates,
         imageDimensions: null != (r = t.imageDimensions) ? r : e.imageDimensions,
@@ -162,7 +162,7 @@ function G(e, t) {
         })
       });
     case "SET_IMAGE_ZOOM_RATIO":
-      return b(_({}, e), {
+      return I(_({}, e), {
         imageTransformCoordinates: t.imageTransformCoordinates,
         zoomRatio: t.zoomRatio,
         dragBoundaries: t.dragBoundaries,
@@ -173,7 +173,7 @@ function G(e, t) {
         })
       });
     case "RESET":
-      return b(_({}, e), {
+      return I(_({}, e), {
         zoomRatio: 1,
         imageRotation: 0,
         imageDimensions: null != (a = t.imageDimensions) ? a : e.imageDimensions,
@@ -197,7 +197,7 @@ function M(e) {
     uploadType: M = O.pC.AVATAR,
     showUpsellHeader: S = false,
     analyticsPage: j
-  } = e, B = i.useRef(I), k = i.useRef(null), P = i.useRef(null), [L, V] = i.useReducer(G, x), {
+  } = e, B = i.useRef(b), k = i.useRef(null), P = i.useRef(null), [L, V] = i.useReducer(G, x), {
     cropDimensions: U,
     dragBoundaries: z,
     imageDimensions: H,
@@ -205,11 +205,11 @@ function M(e) {
     zoomRatio: X,
     startingCoordinates: Z,
     isDragging: K,
-    hasImageEdits: W
-  } = L, [Y, J] = i.useState(false), [q, $] = i.useState(false), [Q, ee] = i.useState(0), {
+    hasImageEdits: Y
+  } = L, [W, J] = i.useState(false), [q, $] = i.useState(false), [Q, ee] = i.useState(0), {
     analyticsLocations: et,
     newestAnalyticsLocation: er
-  } = (0, m.ZP)(d.Z.IMAGE_CROPPING_MODAL), en = "image/gif" === t.type, ei = q || Y;
+  } = (0, m.ZP)(d.Z.IMAGE_CROPPING_MODAL), en = "image/gif" === t.type, ei = q || W;
   i.useEffect(() => {
     (0, R.Z)()
   }, []), i.useEffect(() => {
@@ -422,14 +422,14 @@ function M(e) {
           } = e;
           return r ? t ? E.q.EDITED_ARCHIVED_ASSET : E.q.ARCHIVED_ASSET : E.q.NEW_ASSET
         }({
-          hasImageEdits: W,
+          hasImageEdits: Y,
           hasOriginalAsset: null != a
         }),
         imageUri: e,
         file: t,
         originalAsset: a
       }), $(false), await v()
-    }, [U, t, W, F, en, v, y, a, M]),
+    }, [U, t, Y, F, en, v, y, a, M]),
     eC = i.useCallback(async () => {
       if (null != P.current) {
         P.current(), P.current = null, $(false);
@@ -452,20 +452,20 @@ function M(e) {
   return (0, n.jsx)(m.Gt, {
     value: et,
     children: (0, n.jsxs)(c.Modal, {
-      title: w.intl.string(w.t.DxAYCA),
+      title: w.intl.string(w.t.DxAYCF),
       size: "md",
       actionBarInput: (0, n.jsx)(u.Avr, {
-        text: w.intl.string(w.t.yBZMsb),
+        text: w.intl.string(w.t.yBZMsQ),
         textVariant: "text-md/medium",
         onClick: eg,
-        disabled: !W
+        disabled: !Y
       }),
       actions: [{
-        text: w.intl.string(w.t["9TG40t"]),
+        text: w.intl.string(w.t["9TG40l"]),
         onClick: eC,
         variant: "secondary"
       }, {
-        text: w.intl.string(w.t.ZSHmKC),
+        text: w.intl.string(w.t.ZSHmKD),
         onClick: eE,
         variant: "primary",
         loading: q,
@@ -483,7 +483,7 @@ function M(e) {
         className: T.modalContent,
         children: [(0, n.jsx)("div", {
           className: T.editingContainer,
-          children: Y ? (0, n.jsxs)("div", {
+          children: W ? (0, n.jsxs)("div", {
             className: T.errorContainer,
             children: [(0, n.jsx)(u.Mgn, {
               size: "sm",
@@ -491,7 +491,7 @@ function M(e) {
             }), (0, n.jsx)(u.Text, {
               variant: "text-md/normal",
               color: "text-danger",
-              children: w.intl.string(w.t["+ITMYW"])
+              children: w.intl.string(w.t["+ITMYX"])
             })]
           }) : (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
@@ -549,7 +549,7 @@ function M(e) {
               disabled: ei,
               equidistant: true,
               hideBubble: true,
-              "aria-label": w.intl.string(w.t.dnvZSk)
+              "aria-label": w.intl.string(w.t.dnvZSg)
             }, Q), (0, n.jsx)(u.XBm, {
               size: "md",
               color: "currentColor",
@@ -557,8 +557,8 @@ function M(e) {
             })]
           }), (0, n.jsx)(u.aML, {
             "data-migration-pending": true,
-            text: w.intl.string(w.t.E36Wd3),
-            "aria-label": w.intl.string(w.t.LzFiKC),
+            text: w.intl.string(w.t.E36Wd4),
+            "aria-label": w.intl.string(w.t.LzFiKG),
             children: e => {
               var {
                 onClick: t
@@ -577,7 +577,7 @@ function M(e) {
                 }
                 return i
               }(e, ["onClick"]);
-              return (0, n.jsx)(u.P3F, b(_({
+              return (0, n.jsx)(u.P3F, I(_({
                 className: o()(T.rotateButton, {
                   [T.disabled]: ei
                 })

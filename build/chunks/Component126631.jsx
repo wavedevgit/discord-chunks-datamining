@@ -58,7 +58,7 @@ function y(e) {
   return (0, r.jsxs)(_.Z, {
     title: t,
     titleId: g,
-    description: h.intl.string(h.t.Bbw6AQ),
+    description: h.intl.string(h.t.Bbw6Ac),
     errors: n,
     disabled: v,
     children: [(0, r.jsx)(l.ZP, {
@@ -85,7 +85,7 @@ function y(e) {
       onSubmit: R
     }), (0, r.jsx)(a.nn4, {
       id: b,
-      children: h.intl.format(h.t["+DFxLS"], {
+      children: h.intl.format(h.t["+DFxLc"], {
         maxLength: p.tPV
       })
     })]

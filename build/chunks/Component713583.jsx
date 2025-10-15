@@ -73,7 +73,7 @@ function g(e) {
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, m(p({}, t), {
           id: i,
-          label: d.intl.string(d.t.oJ1Mu7)
+          label: d.intl.string(d.t.oJ1Muw)
         }))
       })
     }, [null == E || null == (t = E.rootCommand) ? true : t.id]),

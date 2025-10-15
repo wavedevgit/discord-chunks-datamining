@@ -102,7 +102,7 @@ let b = function() {
       className: Chunk569029.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: Chunk388032.intl.format(Chunk388032.t.kqC5vr, {
+      children: Chunk388032.intl.format(Chunk388032.t.kqC5vq, {
         boostAnyGuildHook: (e, t) => {
           let n = null != y,
             i = (0, o.qgQ)(e),

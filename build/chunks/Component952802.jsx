@@ -24,8 +24,8 @@ function f(e) {
     error: m,
     className: g,
     required: y,
-    value: b,
-    setRef: C,
+    value: C,
+    setRef: b,
     placeholder: O,
     autoFocus: j,
     maxLength: w,
@@ -35,7 +35,7 @@ function f(e) {
     autoCorrect: P,
     onChange: N,
     inputClassName: E
-  } = e, k = (0, c.Dt)(), [Z, A] = s.useState(false), T = (0, u.o9)(i, b);
+  } = e, k = (0, c.Dt)(), [Z, A] = s.useState(false), T = (0, u.o9)(i, C);
   return (0, n.jsx)("div", {
     className: null != g ? g : true,
     children: (0, n.jsx)(l.gNt, {
@@ -56,8 +56,8 @@ function f(e) {
           id: k,
           name: "email",
           type: i === u.Nz.EMAIL ? "email" : "text",
-          value: b,
-          inputRef: C,
+          value: C,
+          inputRef: b,
           placeholder: O,
           "aria-label": f,
           required: y,

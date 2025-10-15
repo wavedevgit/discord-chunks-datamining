@@ -103,7 +103,7 @@ let S = l()(e => {
       e.preventDefault(), e.stopPropagation(), (0, h.$)(t, a), A()
     }, [A, t, a]);
     return (0, r.jsx)(f.u, {
-      text: g.intl.string(g.t["6cfuDg"]),
+      text: g.intl.string(g.t["6cfuDj"]),
       "aria-label": false,
       shouldShow: !b && O,
       asContainer: true,
@@ -192,7 +192,7 @@ let S = l()(e => {
               variant: "text-xs/medium",
               color: "text-secondary",
               className: E.variantLabel,
-              children: d ? g.intl.string(g.t.wbgaj4) : S
+              children: d ? g.intl.string(g.t.wbgaj6) : S
             })]
           }))
         }

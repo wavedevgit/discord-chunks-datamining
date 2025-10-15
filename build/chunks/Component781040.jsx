@@ -62,21 +62,21 @@ let v = e => {
       isDragging: e.isDragging()
     }));
     return (0, n.jsx)(c.aML, {
-      "aria-label": O.intl.formatToPlainString(O.t.HWNJJC, {
+      "aria-label": O.intl.formatToPlainString(O.t.HWNJJN, {
         widgetTitle: t
       }),
       text: () => (0, n.jsxs)("div", {
         className: y.dragClickTooltipText,
         children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O.intl.format(i ? O.t["zvln/v"] : O.t["7cdwho"], {
+          children: O.intl.format(i ? O.t["zvln/l"] : O.t["7cdwhg"], {
             emphasizeHook: e => (0, n.jsx)("strong", {
               children: e
             })
           })
         }), (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O.intl.format(O.t["4e0rMz"], {
+          children: O.intl.format(O.t["4e0rM4"], {
             emphasizeHook: e => (0, n.jsx)("strong", {
               children: e
             })
@@ -135,7 +135,7 @@ let v = e => {
           children: (0, n.jsxs)(c.kSQ, {
             children: [o, (0, n.jsx)(c.sNh, {
               id: "remove-widget",
-              label: O.intl.string(O.t.Mm07YW),
+              label: O.intl.string(O.t.Mm07Yc),
               action: u,
               color: "danger",
               icon: c.XHJ
@@ -163,7 +163,7 @@ let v = e => {
           innerRef: i,
           className: a()(y.dragHandleButton, r),
           "data-dnd-name": l,
-          "aria-label": O.intl.formatToPlainString(O.t.HWNJJC, {
+          "aria-label": O.intl.formatToPlainString(O.t.HWNJJN, {
             widgetTitle: l
           }),
           "aria-describedby": s
@@ -172,7 +172,7 @@ let v = e => {
             size: "sm"
           }), (0, n.jsx)(c.nn4, {
             id: s,
-            children: O.intl.string(O.t.bsuqFh)
+            children: O.intl.string(O.t.bsuqFn)
           })]
         }))
       })

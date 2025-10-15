@@ -64,15 +64,15 @@ function N(e) {
   switch (n) {
     case v.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjS, {
           payoutDate: o
-        }) : _.intl.string(_.t.G5ATX1), (0, l.jsx)(f.Z, {
+        }) : _.intl.string(_.t.G5ATX6), (0, l.jsx)(f.Z, {
           className: C.statusScheduledIcon
         })]
       });
     case v.x_.CANCELED:
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
+        children: [_.intl.string(_.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon
@@ -80,14 +80,14 @@ function N(e) {
       });
     case v.x_.PAYOUT_DEFERRED:
       if ((null == i ? true : i.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
+        children: [_.intl.string(_.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(h.Z, {
+        children: [_.intl.string(_.t.OtZ5kz), (0, l.jsx)(h.Z, {
           className: C.statusDeferredIcon
         })]
       })
@@ -102,9 +102,9 @@ function N(e) {
     case v.jw.CANCELED:
     case v.jw.ERROR:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjS, {
           payoutDate: o
-        }) : _.intl.string(_.t.ubdQTk), (0, l.jsx)(f.Z, {
+        }) : _.intl.string(_.t.ubdQTt), (0, l.jsx)(f.Z, {
           className: C.statusScheduledIcon
         })]
       });
@@ -135,7 +135,7 @@ let E = (0, Chunk755930.i$)({
     cellClassName: Chunk744277.amountColumn,
     renderHeader() {
       let e = (0, Chunk951288.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t.q3PkLy),
+        text: Chunk388032.intl.string(Chunk388032.t.q3PkL5),
         children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
           size: "xs",
           color: "currentColor",
@@ -143,7 +143,7 @@ let E = (0, Chunk755930.i$)({
         })
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
-        children: [Chunk388032.intl.string(Chunk388032.t.VodAGR), module]
+        children: [Chunk388032.intl.string(Chunk388032.t.VodAGZ), module]
       })
     },
     getAmount: e => e.amount
@@ -152,7 +152,7 @@ let E = (0, Chunk755930.i$)({
     key: "PERIOD",
     cellClassName: Chunk744277.periodColumn,
     renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-      children: Chunk388032.intl.string(Chunk388032.t.fThnXV)
+      children: Chunk388032.intl.string(Chunk388032.t.fThnXa)
     }),
     renderContent: e => (0, l.jsx)(y, {
       dateUtc: e.periodStartingAt
@@ -183,7 +183,7 @@ let E = (0, Chunk755930.i$)({
     cellClassName: Chunk744277.statusColumn,
     renderHeader() {
       let e = (0, Chunk951288.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t.cIGvZG),
+        text: Chunk388032.intl.string(Chunk388032.t.cIGvZI),
         children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
           size: "xs",
           color: "currentColor",
@@ -191,7 +191,7 @@ let E = (0, Chunk755930.i$)({
         })
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
-        children: [Chunk388032.intl.string(Chunk388032.t.oypxx8), module]
+        children: [Chunk388032.intl.string(Chunk388032.t.oypxxw), module]
       })
     },
     renderContent: e => (0, l.jsx)(x.bL, {

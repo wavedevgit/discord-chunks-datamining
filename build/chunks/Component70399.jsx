@@ -76,11 +76,11 @@ function p(e) {
     }), (0, r.jsx)(a.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: g ? l ? d.intl.format(d.t.wiyuGx, {
+      children: g ? l ? d.intl.format(d.t.wiyuG9, {
         applicationName: i.name
-      }) : s ? d.intl.format(d.t.RNWFOT, {
+      }) : s ? d.intl.format(d.t.RNWFOQ, {
         onConnect: u
-      }) : d.intl.string(d.t["9TX4UV"]) : (0, r.jsx)("div", {
+      }) : d.intl.string(d.t["9TX4UT"]) : (0, r.jsx)("div", {
         className: f.footerPlaceholder
       })
     })]

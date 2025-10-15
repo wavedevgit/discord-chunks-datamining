@@ -27,22 +27,22 @@ function O(t) {
     transitionState: O,
     onAction: p,
     onClose: I,
-    onOpenGameSettings: S
-  } = t, [f, x] = (0, l.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
+    onOpenGameSettings: f
+  } = t, [x, S] = (0, l.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
   return r.useEffect(() => c.Bt, []), (0, e.jsxs)(s.Modal, {
     title: (0, T.y)(i),
-    subtitle: h.intl.format(h.t.KV72oa, {
+    subtitle: R.intl.format(R.t.KV72oe, {
       settingsHook: (t, n) => {
-        let r = (0, N.C)({
+        let r = (0, C.C)({
           entry: i,
-          onOpenGameSettings: S
+          onOpenGameSettings: f
         });
         return (0, e.jsx)(a.Anchor, {
           onClick: () => {
             null == p || p({
               action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
             }), null != r ? r() : (0, u.openUserSettings)(E.n.PROFILE_PANEL, {
-              section: R.oAB.PROFILE_CUSTOMIZATION
+              section: N.oAB.PROFILE_CUSTOMIZATION
             }), I()
           },
           children: t
@@ -51,35 +51,35 @@ function O(t) {
     }),
     size: "sm",
     actions: [{
-      text: h.intl.string(h.t["ETE/oK"]),
+      text: R.intl.string(R.t["ETE/oC"]),
       onClick: I,
       variant: "secondary",
       size: "sm"
     }, {
-      text: null != x ? h.intl.string(h.t["5911LS"]) : h.intl.string(h.t.VkKicX),
+      text: null != S ? R.intl.string(R.t["5911Lb"]) : R.intl.string(R.t.VkKicb),
       onClick: () => {
         null == p || p({
           action: "PRESS_CLEAR_HISTORY_BUTTON"
         }), (0, d.CV)(i, n.id, I)
       },
-      disabled: f,
+      disabled: x,
       variant: "critical-primary",
       size: "sm"
     }],
     onClose: I,
     transitionState: O,
-    children: [null != x ? (0, e.jsxs)("div", {
-      className: C.error,
+    children: [null != S ? (0, e.jsxs)("div", {
+      className: h.error,
       children: [(0, e.jsx)(a.k$p, {
         color: a.TVs.colors.STATUS_DANGER
       }), (0, e.jsx)(a.Text, {
         variant: "text-sm/medium",
-        children: h.intl.string(h.t.FMbL3t)
+        children: R.intl.string(R.t.FMbL3s)
       })]
     }) : null, (0, e.jsx)(_.Z, {
       user: n,
       entry: i,
-      className: C.card,
+      className: h.card,
       hideContextMenu: true
     })]
   })

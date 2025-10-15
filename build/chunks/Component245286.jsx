@@ -109,8 +109,8 @@ function _() {
     t = Chunk647438.useRef(null),
     [n, o] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
     s = Chunk647438.useMemo(() => ({
-      title: Chunk388032.intl.string(Chunk388032.t.Kv519f),
-      body: Chunk388032.intl.string(Chunk388032.t.cTGJBQ),
+      title: Chunk388032.intl.string(Chunk388032.t.Kv519a),
+      body: Chunk388032.intl.string(Chunk388032.t.cTGJBZ),
       badge: "new",
       position: "right",
       align: "center",
@@ -154,11 +154,11 @@ function P() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
       color: "text-primary",
-      children: Chunk388032.intl.string(Chunk388032.t.zihbmp)
+      children: Chunk388032.intl.string(Chunk388032.t.zihbmv)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.XclvsL)
+      children: Chunk388032.intl.string(Chunk388032.t.XclvsB)
     })]
   })
 }

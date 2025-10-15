@@ -37,7 +37,7 @@ function h(e) {
     }), null == f && (0, i.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: d.intl.string(d.t.mE3KJC)
+      children: d.intl.string(d.t.mE3KJN)
     }), (0, i.jsx)(c.Z, {
       appliedTags: m,
       wrap: n.isModeratorReportChannel()

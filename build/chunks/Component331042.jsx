@@ -41,7 +41,7 @@ let k = t => {
     purchaseType: Z = b.o8.FIAT
   } = t, M = (0, s.e7)([h.Z], () => h.Z.purchases), x = (0, E.o)(n, M), B = (0, y.W)(n, x), {
     analyticsLocations: U
-  } = (0, d.ZP)([...v, o.Z.COLLECTIBLES_COLLECTED_MODAL]), {
+  } = (0, o.ZP)([...v, d.Z.COLLECTIBLES_COLLECTED_MODAL]), {
     hasRequiredProductItems: D
   } = (t => {
     let {
@@ -79,47 +79,47 @@ let k = t => {
   } = (0, m.$0)(B, Z), X = (0, L.kd)(B);
   (0, m.f1)(B, U);
   let {
-    handleUseNow: z,
-    isApplying: Y
+    handleUseNow: q,
+    isApplying: z
   } = (0, A.W)({
     product: B,
     onSuccess: k,
     onError: k
-  }), Q = (0, m.Xw)({
+  }), Y = (0, m.Xw)({
     product: B,
     overrideTitle: S,
     isVariantsGroupEnabled: true,
     shouldShowPromotionalExperience: N,
     productName: X
-  }), $ = (0, m.ys)({
+  }), K = (0, m.ys)({
     product: B,
     overrideDescription: P,
     productName: X,
     shouldShowPromotionalExperience: N,
     promotionalRewardCollectedText: F
-  }), q = (0, m.cf)({
+  }), Q = (0, m.cf)({
     product: B,
     onClose: k,
     analyticsLocations: U,
     hasRequiredProductItems: D,
-    handleUseNow: z,
-    isApplying: Y,
+    handleUseNow: q,
+    isApplying: z,
     openProfileSettings: w
-  }), K = "6/4";
+  }), $ = "6/4";
   switch (B.type) {
     case l.Z.NAMEPLATE:
     case l.Z.AVATAR_DECORATION:
-      K = "16/9";
+      $ = "16/9";
       break;
     case l.Z.BUNDLE:
     case l.Z.PROFILE_EFFECT:
     default:
-      K = "6/4"
+      $ = "6/4"
   }
   let {
     confettiColors: J
   } = (0, C.Z)(B.styles);
-  return (0, i.jsx)(d.Gt, {
+  return (0, i.jsx)(o.Gt, {
     value: U,
     children: (0, i.jsxs)("div", {
       ref: V,
@@ -131,17 +131,17 @@ let k = t => {
         graphic: {
           type: "dynamic",
           component: u.AX$.COLLECTIBLES_PREVIEW,
-          aspectRatio: K,
+          aspectRatio: $,
           props: {
             product: B,
             forCollectedModal: true
           }
         },
-        title: Q,
-        subtitle: null != $ ? $ : true,
+        title: Y,
+        subtitle: null != K ? K : true,
         onClose: k,
         transitionState: e,
-        actions: q
+        actions: Q
       }), null != H ? (0, i.jsx)(_.i, {
         options: H
       }) : (0, i.jsx)(I.Z, {

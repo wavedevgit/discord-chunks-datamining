@@ -66,19 +66,19 @@ function v(e) {
   }
   let Z = null != v.channel ? (0, f.jD)(v.channel) : null,
     F = m.ZP.getName(j);
-  B && !x ? a = k ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
+  B && !x ? a = k ? y.intl.string(y.t.oBLoZJ) : y.intl.formatToPlainString(y.t["0QJmA+"], {
     name: F
-  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, L && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = k ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
+  }) : (t = y.intl.string(y.t.I6JG46), n = d.Z.Button.Colors.GREEN, L && (t = y.intl.string(y.t.Q1W99y), n = d.Z.Button.Colors.PRIMARY), a = k ? y.intl.string(y.t["4hyaHu"]) : y.intl.formatToPlainString(y.t.QmlLEq, {
     name: F
   }));
   let V = R === T.id && null != Z ? (0, r.jsx)(d.Z.Channel, {
     channel: Z
-  }) : y.intl.formatToPlainString(y.t.u0vaDA, {
+  }) : y.intl.formatToPlainString(y.t.u0vaDE, {
     guildName: T.name
   });
   return (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
-      text: y.intl.string(y.t["wS+5WV"])
+      text: y.intl.string(y.t["wS+5Wb"])
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: O.headerLine,

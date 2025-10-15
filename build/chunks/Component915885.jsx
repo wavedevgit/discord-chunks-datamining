@@ -44,7 +44,7 @@ function _(e) {
         color: "currentColor",
         className: e
       }),
-      text: b.intl.string(b.t.oclz3d),
+      text: b.intl.string(b.t.oclz3Z),
       selected: n,
       onClick: v,
       trailing: y > 0 ? (0, r.jsx)(a.mAB, {

@@ -24,7 +24,7 @@ function g(e) {
     trackUserProfileEditAction: f
   } = (0, c.KZ)();
   return (0, n.jsx)(o.u, {
-    text: u.intl.string(u.t.HUvyDQ),
+    text: u.intl.string(u.t.HUvyDc),
     children: (0, n.jsx)(l.P3F, {
       onClick: () => {
         (0, s.$b)(r, t.applicationId), l.uvj.announce(u.intl.string(u.t["08HmMj"])), f({
@@ -33,7 +33,7 @@ function g(e) {
           widgetEdited: r
         })
       },
-      "aria-label": u.intl.string(u.t.HUvyDQ),
+      "aria-label": u.intl.string(u.t.HUvyDc),
       className: a()(g, d.clickable),
       children: (0, n.jsx)(l.XHJ, {
         size: i,

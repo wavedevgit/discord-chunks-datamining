@@ -100,7 +100,7 @@ let R = e => {
       color: "header-muted",
       lineClamp: 1,
       children: [i, t.name].join("\xa0\xa0•\xa0\xa0")
-    }), r = (0, v.KS)(n, t), s = (0, l.jsx)(O.Ft, {
+    }), r = (0, v.KS)(n, t), s = (0, l.jsx)(b.Ft, {
       guildId: t.id,
       guildName: t.name,
       guildIcon: t.icon,
@@ -135,7 +135,7 @@ let R = e => {
         }), (0, l.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
-          children: C.intl.format(C.t["LC+S+v"], {
+          children: C.intl.format(C.t["LC+S+m"], {
             membersOnline: a.onlineCount
           })
         })]
@@ -146,13 +146,13 @@ let R = e => {
         }), (0, l.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
-          children: C.intl.format(C.t.zRl6XV, {
+          children: C.intl.format(C.t.zRl6XR, {
             count: a.memberCount
           })
         })]
       })]
     });
-    let s = (0, l.jsx)(O.Ft, {
+    let s = (0, l.jsx)(b.Ft, {
       guildId: n.id,
       guildName: n.name,
       guildIcon: n.icon,
@@ -248,7 +248,7 @@ function F(e) {
     sendInvite: v,
     canUseVanityURL: h,
     disabled: _,
-    hasSelection: O,
+    hasSelection: b,
     options: E,
     setOptions: R,
     isApplicationBypassAllowed: k,
@@ -256,16 +256,16 @@ function F(e) {
     isTemporaryInviteAllowed: D,
     setError: F,
     analyticsLocation: G
-  } = e, [z, B] = i.useState(false), [H, q] = i.useState(false), Y = i.useRef(null), [W] = (0, c.Wu)([b.Z], () => [b.Z.hideInstantInvites]), K = (0, x.Dt)(), Q = (0, x.Dt)(), X = (0, x.Dt)(), J = i.useMemo(() => h && null != a.vanityURLCode ? (0, S.Z)(a.vanityURLCode, false) : null, [a, h]), $ = i.useCallback(async () => {
+  } = e, [z, B] = i.useState(false), [H, q] = i.useState(false), W = i.useRef(null), [Y] = (0, c.Wu)([O.Z], () => [O.Z.hideInstantInvites]), K = (0, x.Dt)(), Q = (0, x.Dt)(), X = (0, x.Dt)(), J = i.useMemo(() => h && null != a.vanityURLCode ? (0, T.Z)(a.vanityURLCode, false) : null, [a, h]), $ = i.useCallback(async () => {
     var e, t;
     if (_) return;
-    null !== Y.current && clearTimeout(Y.current);
+    null !== W.current && clearTimeout(W.current);
     let n = await f();
     o()(null != n, "Invite key could not be determined.");
-    let l = (0, S.Z)(n);
+    let l = (0, T.Z)(n);
     return (0, j.JG)(l, () => {
-      B(true), Y.current = setTimeout(() => {
-        B(false), Y.current = null
+      B(true), W.current = setTimeout(() => {
+        B(false), W.current = null
       }, 1e3)
     }, e => {
       F(e)
@@ -277,7 +277,7 @@ function F(e) {
       code: n,
       application_id: p
     }), () => {
-      null !== Y.current && clearTimeout(Y.current)
+      null !== W.current && clearTimeout(W.current)
     }
   }, [_, f, a, s, G, p, F]), ee = i.useCallback(e => {
     R({
@@ -327,10 +327,10 @@ function F(e) {
         } = t;
         return n === e.max_uses
       });
-    return null == t || null == n ? null : t.value === T.ZP.INVITE_OPTIONS_FOREVER.value && n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.string(C.t["5u4A6e"]) : t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.formatToPlainString(C.t["Z5Vt5+"], {
+    return null == t || null == n ? null : t.value === S.ZP.INVITE_OPTIONS_FOREVER.value && n.value === S.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.string(C.t["5u4A6V"]) : t.value !== S.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== S.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.intl.formatToPlainString(C.t.Z5Vt52, {
       maxAge: t.label,
       maxUses: n.label
-    }) : n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === T.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
+    }) : n.value === S.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== S.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== S.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === S.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
   }(E);
   return (0, l.jsxs)("div", {
     className: r()(t, Z.footer),
@@ -343,7 +343,7 @@ function F(e) {
       }), (0, l.jsx)(m.aML, {
         "data-migration-pending": true,
         position: "top",
-        text: C.intl.string(C.t["4QuV7O"]),
+        text: C.intl.string(C.t["4QuV7G"]),
         children: e => (0, l.jsx)(m.P3F, M(A({
           className: r()(Z.settingsButton, {
             [Z.settingsOpen]: H
@@ -366,11 +366,11 @@ function F(e) {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(m.Heading, {
             variant: "heading-md/medium",
-            children: C.intl.string(C.t.YlT5MT)
+            children: C.intl.string(C.t.YlT5Me)
           }), (0, l.jsx)(m.aML, {
             "data-migration-pending": true,
             position: "top",
-            text: C.intl.string(C.t.efLzgY),
+            text: C.intl.string(C.t.efLzgX),
             children: e => (0, l.jsx)(m.idN, M(A({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -393,11 +393,11 @@ function F(e) {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(m.Heading, {
             variant: "heading-md/medium",
-            children: C.intl.string(C.t.EPIOl5)
+            children: C.intl.string(C.t.EPIOlw)
           }), (0, l.jsx)(m.aML, {
             "data-migration-pending": true,
             position: "top",
-            text: C.intl.string(C.t["jvd/LC"]),
+            text: C.intl.string(C.t["jvd/LF"]),
             children: e => (0, l.jsx)(m.idN, M(A({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -414,11 +414,11 @@ function F(e) {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(m.Heading, {
             variant: "heading-md/medium",
-            children: C.intl.string(C.t.NKqlpq)
+            children: C.intl.string(C.t.NKqlpn)
           }), (0, l.jsx)(m.aML, {
             "data-migration-pending": true,
             position: "top",
-            text: C.intl.string(C.t.pBOevb),
+            text: C.intl.string(C.t.pBOeva),
             children: e => (0, l.jsx)(m.idN, M(A({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -435,11 +435,11 @@ function F(e) {
           className: Z.advancedOptionContent,
           children: [(0, l.jsx)(m.Heading, {
             variant: "heading-md/medium",
-            children: C.intl.string(C.t.UL177u)
+            children: C.intl.string(C.t.UL177t)
           }), (0, l.jsx)(m.aML, {
             "data-migration-pending": true,
             position: "top",
-            text: C.intl.string(C.t.cl1HNT),
+            text: C.intl.string(C.t.cl1HNR),
             children: e => (0, l.jsx)(m.idN, M(A({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -457,7 +457,7 @@ function F(e) {
         "data-migration-pending": true,
         position: "top",
         text: J,
-        shouldShow: null !== J && !W,
+        shouldShow: null !== J && !Y,
         children: e => (0, l.jsx)(g.zx, M(A({
           className: Z.button,
           innerClassName: Z.buttonInner,
@@ -473,14 +473,14 @@ function F(e) {
               size: "xs",
               color: "currentColor"
             }), (0, l.jsx)("span", {
-              children: C.intl.string(C.t["+5kSoa"])
+              children: C.intl.string(C.t["+5kSoW"])
             })]
           }) : (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(m.xPt, {
               size: "xs",
               color: "currentColor"
             }), (0, l.jsx)("span", {
-              children: C.intl.string(C.t.WqhZsr)
+              children: C.intl.string(C.t.WqhZss)
             })]
           })
         }))
@@ -488,9 +488,9 @@ function F(e) {
         className: Z.button,
         innerClassName: Z.buttonInner,
         onClick: () => v(),
-        disabled: !O || _,
+        disabled: !b || _,
         children: [(0, l.jsx)("span", {
-          children: C.intl.string(C.t.BcAABg)
+          children: C.intl.string(C.t.BcAABv)
         }), (0, l.jsx)(m.Uuj, {
           size: "xs",
           color: "currentColor"

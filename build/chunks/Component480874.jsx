@@ -39,7 +39,7 @@ function N() {
       channelId: P
     } = (0, Chunk488634._)(),
     x = Chunk647438.useCallback(() => {
-      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.EDYbS0), Chunk481060.ToastType.FAILURE))
+      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
     }, []),
     {
       rejectAll: A
@@ -74,7 +74,7 @@ function N() {
     }, [exports, Chunk120356, P]),
     L = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk393272.sectionTitle,
-      children: [Chunk388032.intl.format(Chunk388032.t.C79Edn, {
+      children: [Chunk388032.intl.format(Chunk388032.t.C79Edh, {
         count: require
       }), N && require > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -85,9 +85,9 @@ function N() {
           children: "•"
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           textVariant: "text-sm/normal",
-          text: Chunk388032.intl.string(Chunk388032.t.p6t7RE),
+          text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
           onClick: Z,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RE)
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RC)
         })]
       }) : null]
     }, "message-requests-spam-title"), [require, Z, N]);
@@ -135,7 +135,7 @@ function N() {
         }({
           className: T.list,
           innerRole: l,
-          innerAriaLabel: S.intl.string(S.t.e7GWjY),
+          innerAriaLabel: S.intl.string(S.t.e7GWjQ),
           ref: t => {
             var n;
             e.current = t, i.current = null != (n = null == t ? true : t.getScrollerNode()) ? n : null

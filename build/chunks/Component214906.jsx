@@ -16,28 +16,28 @@ var Chunk913527 = require("./913527.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h(t) {
-  let [n, e, l] = (0, r.Wu)([d.Z], () => [d.Z.isMuted(t.id), d.Z.getMuteConfig(t.id), d.Z.hasJoined(t.id)]), h = (0, s.U)(e);
+  let [n, e, l] = (0, r.Wu)([d.Z], () => [d.Z.isMuted(t.id), d.Z.getMuteConfig(t.id), d.Z.hasJoined(t.id)]), h = (0, o.U)(e);
 
   function g(n) {
     u.Z.setNotificationSettings(t, {
       muted: n
     })
   }
-  return l ? n ? (0, i.jsx)(o.sNh, {
+  return l ? n ? (0, i.jsx)(s.sNh, {
     id: "unmute-channel",
-    label: t.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
+    label: t.isForumPost() ? f.intl.string(f.t["0JQfsP"]) : f.intl.string(f.t["Cq/TzF"]),
     subtext: h,
     action: () => g(false)
-  }) : (0, i.jsx)(o.sNh, {
+  }) : (0, i.jsx)(s.sNh, {
     id: "mute-channel",
-    label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
+    label: t.isForumPost() ? f.intl.string(f.t["nP+Ykd"]) : f.intl.string(f.t.bUUd8q),
     action: () => g(true),
     children: (0, c.k)().map(n => {
       let {
         value: e,
         label: l
       } = n;
-      return (0, i.jsx)(o.sNh, {
+      return (0, i.jsx)(s.sNh, {
         id: "".concat(e),
         label: l,
         action: () => (function(n) {
@@ -52,9 +52,9 @@ function h(t) {
         })(e)
       }, e)
     })
-  }) : (0, i.jsx)(o.sNh, {
+  }) : (0, i.jsx)(s.sNh, {
     id: "mute-disabled",
-    label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
+    label: t.isForumPost() ? f.intl.string(f.t["nP+Ykd"]) : f.intl.string(f.t.bUUd8q),
     disabled: true
   })
 }

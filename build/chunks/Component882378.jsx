@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
 let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), O = (0, h.M)(t.id), x = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != O ? b.intl.string(b.t.kCN9i4) : null, [j, O]), I = i.useMemo(() => (j || null != O) && !x && !v, [j, O, x, v]), [S, E] = i.useState(C());
+  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), O = (0, h.M)(t.id), x = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDv"]) : null != O ? b.intl.string(b.t.kCN9i0) : null, [j, O]), I = i.useMemo(() => (j || null != O) && !x && !v, [j, O, x, v]), [S, E] = i.useState(C());
   i.useEffect(() => {
-    null != O && null != _ && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
+    null != O && null != _ && (s.uvj.announce(b.intl.string(b.t.acsXuG)), setTimeout(() => {
       (0, c.T)(t.id, [O.id])
     }, 5e3), (0, p.KQ)({
       channelId: t.id,
@@ -33,7 +33,7 @@ let _ = Chunk647438.memo(function(e) {
       warningType: O.type,
       isNudgeWarning: null != O,
       viewName: p.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
+    })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqG"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
   }, [t, O, _, j]), (0, o.ZP)(() => {
@@ -90,7 +90,7 @@ let _ = Chunk647438.memo(function(e) {
     children: () => (0, r.jsx)(g.ZP.Icon, {
       icon: s.b7C,
       onClick: Z,
-      tooltip: b.intl.string(b.t.rpc2qq),
+      tooltip: b.intl.string(b.t.rpc2qv),
       tooltipDisabled: null != O
     })
   })

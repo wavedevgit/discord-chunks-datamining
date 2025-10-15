@@ -19,7 +19,7 @@ function f(e) {
   let {
     channelId: t
   } = e, n = (0, l.m7)(t);
-  if (null == n) return "[".concat(u.intl.string(u.t.bz1PZW), "]");
+  if (null == n) return "[".concat(u.intl.string(u.t.bz1PZX), "]");
   let s = n.isMediaChannel() ? i.XBm : (0, o.Th)(n.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.nn4, {

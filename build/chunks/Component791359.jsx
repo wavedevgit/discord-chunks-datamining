@@ -171,7 +171,7 @@ function w() {
       color: "none",
       className: Chunk559909.emptyText,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["99ZWxc"])
+      children: Chunk388032.intl.string(Chunk388032.t["99ZWxQ"])
     })]
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk559909.emptyCard,

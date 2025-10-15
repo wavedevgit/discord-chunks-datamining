@@ -7,7 +7,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk823379 = require("./823379.js"),
   Chunk267642 = require("./267642.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk989308 = require("./989308.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e) {
@@ -25,7 +25,7 @@ function l(e) {
       d = (0, c.d5)();
     return t && n.push({
       perkIcon: a.Ro.EMOJI,
-      description: i.intl.formatToPlainString(s.default.NXvV09, {
+      description: i.intl.formatToPlainString(s.default["NXvV0+"], {
         totalEmojis: e.features.total_emoji_slots,
         additionalEmojis: e.features.additional_emoji_slots
       })
@@ -37,7 +37,7 @@ function l(e) {
       })
     }), l && n.push({
       perkIcon: a.Ro.SOUNDBOARD,
-      description: i.intl.formatToPlainString(s.default["s9u/Ex"], {
+      description: i.intl.formatToPlainString(s.default["s9u/E7"], {
         totalSoundboards: e.features.total_sound_slots,
         additionalSoundboards: e.features.additional_sound_slots
       })

@@ -21,7 +21,7 @@ let d = e => {
     children: [(0, r.jsx)(l.Heading, {
       className: c.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t.SpsnDQ)
+      children: s.intl.string(s.t.SpsnDY)
     }), (0, r.jsx)(a.Z, {
       widget: t,
       user: d,

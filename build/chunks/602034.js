@@ -37,8 +37,8 @@ function b(e) {
       onAttachmentUploadError: (r, i, a, c) => {
         var d;
         (0, o.openUploadError)({
-          title: m.intl.string(m.t.B3vFdX),
-          help: null != (d = null == c ? true : c.message) ? d : m.intl.string(m.t.zMEjJi)
+          title: m.intl.string(m.t.B3vFdU),
+          help: null != (d = null == c ? true : c.message) ? d : m.intl.string(m.t.zMEjJg)
         }), "" !== n && "" === h.Z.getDraft(e.id, h.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, h.d.FirstThreadMessage), 0 === p.Z.getUploadCount(e.id, h.d.FirstThreadMessage) && s.Z.setUploads({
           channelId: e.id,
           uploads: t,

@@ -38,13 +38,13 @@ function _(e) {
     size: _ = d.LARGE
   } = e;
   return "RED" === u ? (0, r.jsx)(s.IGR, {
-    text: l.intl.string(l.t.dI3q4u),
+    text: l.intl.string(l.t.dI3q4h),
     className: a()(t, c.live, _),
     color: o.Z.unsafe_rawColors.RED_400.css,
     shape: f[i],
     style: n
   }) : (0, r.jsx)(s.IGR, {
-    text: l.intl.string(l.t.dI3q4u),
+    text: l.intl.string(l.t.dI3q4h),
     className: a()(t, c.live, _, c.grey),
     disableColor: true,
     shape: f[i],

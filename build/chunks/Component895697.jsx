@@ -110,7 +110,7 @@ function R(e) {
       guildId: null == P ? true : P.id,
       onClick: x
     }), null != P && (0, r.jsx)(m.Z, {
-      heading: A.intl.string(A.t.LPJmLy),
+      heading: A.intl.string(A.t["LPJmL/"]),
       children: (0, r.jsx)(I.Z, {
         user: t,
         currentUser: n,

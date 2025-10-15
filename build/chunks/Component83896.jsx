@@ -110,12 +110,12 @@ function S(e) {
       children: (0, f.O8)(l, t)
     }), I ? (0, i.jsx)(s.aML, {
       "data-migration-pending": true,
-      text: T ? true : v.intl.string(v.t["0LMpW1"]),
+      text: T ? true : v.intl.string(v.t["0LMpW+"]),
       children: e => (0, i.jsx)("div", E(j({}, e), {
         children: (0, i.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: v.intl.string(v.t["0eHzpq"]),
+          text: v.intl.string(v.t["0eHzpm"]),
           onClick: A,
           disabled: !T
         })
@@ -123,7 +123,7 @@ function S(e) {
     }) : Z && (0, i.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
-      text: v.intl.string(v.t["B/dHXF"]),
+      text: v.intl.string(v.t["B/dHXL"]),
       onClick: N
     })]
   })

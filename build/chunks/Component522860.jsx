@@ -22,13 +22,13 @@ function u(e) {
     onJoinStream: f,
     usernameHook: _,
     compact: p
-  } = e, h = (0, o.ZP)(n), m = null == (t = n.call) ? true : t.duration, g = _(h), E = l.intl.format(l.t.FKXvaG, {
+  } = e, h = (0, o.ZP)(n), m = null == (t = n.call) ? true : t.duration, g = _(h), E = l.intl.format(l.t.FKXvaI, {
     username: h.nick,
     activityName: null != d ? d.name : "unknown",
     onJoinStream: f,
     usernameHook: g
   });
-  return null != m && (E = l.intl.format(l.t.NEFxtb, {
+  return null != m && (E = l.intl.format(l.t.NEFxtd, {
     username: h.nick,
     duration: m.humanize(),
     channelName: u.name,

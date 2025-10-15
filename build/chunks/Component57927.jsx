@@ -40,13 +40,13 @@ function N(e) {
   return (0, i.jsxs)("div", {
     className: p.container,
     children: [(0, i.jsx)(C, {
-      header: v.intl.string(v.t.tGGAdX),
-      subheader: v.intl.string(v.t["e+d/vr"]),
+      header: v.intl.string(v.t.tGGAdR),
+      subheader: v.intl.string(v.t["e+d/vn"]),
       guildPlans: l,
       onClick: o
     }), (0, i.jsx)(C, {
-      header: v.intl.string(v.t.f6pf39),
-      subheader: v.intl.string(v.t.izeB6e),
+      header: v.intl.string(v.t.f6pf36),
+      subheader: v.intl.string(v.t.izeB6V),
       guildPlans: a,
       onClick: o
     })]
@@ -110,7 +110,7 @@ function y(e) {
         }), (0, i.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.messagePain ? v.intl.string(v.t["3EQSoK"]) : v.intl.string(v.t["CaR/Eh"])
+          children: n.messagePain ? v.intl.string(v.t["3EQSoP"]) : v.intl.string(v.t["CaR/Et"])
         })]
       }), (0, i.jsxs)("div", {
         className: p.tooltipRow,
@@ -120,7 +120,7 @@ function y(e) {
         }), (0, i.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.visitsALot ? v.intl.string(v.t["6dgvsb"]) : v.intl.string(v.t.fgedbG)
+          children: n.visitsALot ? v.intl.string(v.t["6dgvsf"]) : v.intl.string(v.t.fgedbB)
         })]
       }), (0, i.jsxs)("div", {
         className: p.tooltipRow,
@@ -130,7 +130,7 @@ function y(e) {
         }), (0, i.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: n.muted ? v.intl.string(v.t.rdTrHx) : v.intl.string(v.t.sdFUj4)
+          children: n.muted ? v.intl.string(v.t.rdTrH7) : v.intl.string(v.t.sdFUj1)
         })]
       })]
     }),

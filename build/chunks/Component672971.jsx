@@ -80,7 +80,7 @@ class y extends Chunk647438.Component {
       children: [v && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         className: Chunk209857.formTitle,
-        children: Chunk388032.intl.string(Chunk388032.t.Ogvn5u)
+        children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
       }), null != module && (Chunk120356 || !Chunk647438) ? (0, Chunk951288.jsx)(Chunk755721.$q, {
         type: Chunk755721.M0.INVERTED,
         value: N,
@@ -89,7 +89,7 @@ class y extends Chunk647438.Component {
         className: Chunk209857.checkbox,
         children: (0, Chunk951288.jsx)("div", {
           className: Chunk209857.checkboxLabel,
-          children: Chunk388032.intl.format(Chunk388032.t.IodJKS, {
+          children: Chunk388032.intl.format(Chunk388032.t.IodJKT, {
             applicationName: exports,
             onClick: t => {
               (0, d.ZDy)(async () => {
@@ -116,21 +116,21 @@ class y extends Chunk647438.Component {
           className: o()(Chunk209857.checkbox, Chunk850840),
           children: (0, Chunk951288.jsx)("div", {
             className: o()(Chunk209857.checkboxLabel, E),
-            children: Chunk388032.intl.string(Chunk388032.t.DFCVNz)
+            children: Chunk388032.intl.string(Chunk388032.t["DFCVN+"])
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk209857.finePrint,
-          children: Chunk388032.intl.string(Chunk388032.t.jhu6zs)
+          children: Chunk388032.intl.string(Chunk388032.t.jhu6zm)
         })]
       }) : null, O && (0, Chunk951288.jsxs)("div", {
         className: Chunk209857.finePrint,
-        children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3N"], {
+        children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3F"], {
           documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
         })]
       }), I && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: Chunk388032.intl.format(Chunk388032.t["Hvo/Z2"], {
+        children: Chunk388032.intl.format(Chunk388032.t["Hvo/Z5"], {
           buttonText: (0, Chunk74538.W_)(null, A),
           interval: Chunk74538.ZP.formatInterval(null == A ? true : A.interval),
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
@@ -139,7 +139,7 @@ class y extends Chunk647438.Component {
       }), T && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: Chunk388032.intl.format(Chunk388032.t.Oo2FeX, {
+        children: Chunk388032.intl.format(Chunk388032.t.Oo2FeS, {
           buttonText: (0, Chunk74538.W_)(null, A),
           interval: Chunk74538.ZP.formatInterval(null == A ? true : A.interval),
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
@@ -148,7 +148,7 @@ class y extends Chunk647438.Component {
       }), S && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: Chunk388032.intl.format(Chunk388032.t["Z2c+aW"], {
+        children: Chunk388032.intl.format(Chunk388032.t["Z2c+aV"], {
           buttonText: (0, Chunk74538.W_)(null, A),
           interval: Chunk74538.ZP.formatInterval(null == A ? true : A.interval),
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),

@@ -26,16 +26,16 @@ function v(e) {
   let {
     payoutsByPeriod: t,
     team: n
-  } = e, l = (0, c.mY)() ? null : x.intl.format(x.t.d1sCiY, {
+  } = e, l = (0, c.mY)() ? null : x.intl.format(x.t.d1sCiW, {
     url: null != n ? b.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(n.id) : null
   });
   return 0 === t.length ? (0, r.jsxs)(i.Text, {
     variant: "text-sm/medium",
-    children: [x.intl.string(x.t.RrtXu7), " ", l]
+    children: [x.intl.string(x.t.RrtXuy), " ", l]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.Text, {
       variant: "text-sm/medium",
-      children: [x.intl.string(x.t["9Ub4KS"]), " ", l]
+      children: [x.intl.string(x.t["9Ub4KY"]), " ", l]
     }), (0, r.jsx)(i.LZC, {
       size: 16
     }), (0, r.jsx)(m.ZP, {
@@ -72,28 +72,28 @@ let C = e => {
   return g ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
-        children: x.intl.format(x.t["2raBCQ"], {
+        children: x.intl.format(x.t["2raBCT"], {
           insightsURL: b.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(s)
         })
       }), (0, r.jsx)(i.LZC, {
         size: 32
       })]
     }), (0, r.jsxs)(i.C3N, {
-      label: x.intl.string(x.t.ofmOzc),
+      label: x.intl.string(x.t.ofmOzb),
       className: j.formSection,
       children: [(0, r.jsx)(i.LZC, {
         size: 8
       }), (0, r.jsxs)("div", {
         className: j.metricsContainer,
         children: [(0, r.jsx)(p.Z, {
-          label: x.intl.string(x.t.iY1jW1),
+          label: x.intl.string(x.t.iY1jW3),
           value: (0, a.T4)(null != (t = y.revenue) ? t : 0, b.pKx.USD),
           additionalContent: (0, r.jsx)(p.H, {
             value: y.revenuePctChange,
             isPercent: true
           })
         }), (0, r.jsx)(p.Z, {
-          label: x.intl.string(x.t.cXyw29),
+          label: x.intl.string(x.t["cXyw2/"]),
           value: (0, r.jsxs)(r.Fragment, {
             children: [null != (n = y.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
               size: "md",
@@ -111,14 +111,14 @@ let C = e => {
         totalPayoutsForPeriod: C
       })]
     }), (0, r.jsx)(i.C3N, {
-      label: x.intl.string(x.t["+5Rmho"]),
+      label: x.intl.string(x.t["+5Rmhl"]),
       className: j.formSection,
       children: (0, r.jsx)(v, {
         payoutsByPeriod: O,
         team: m
       })
     }), (0, r.jsx)(i.C3N, {
-      label: x.intl.string(x.t.O8cDAA),
+      label: x.intl.string(x.t.O8cDAJ),
       className: j.formSection,
       disabled: E,
       children: (0, r.jsx)(f.Z, {
@@ -126,7 +126,7 @@ let C = e => {
         application: o
       })
     }), (0, r.jsx)(i.C3N, {
-      label: x.intl.string(x.t["0n7R2d"]),
+      label: x.intl.string(x.t["0n7R2X"]),
       className: j.formSection,
       children: (0, r.jsx)(h.Z, {
         guildId: s,

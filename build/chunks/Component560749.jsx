@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk102172 = require("./102172.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk637824 = require("./637824.js"),
+  Chunk489999 = require("./489999.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk603410 = require("./603410.js");
 
@@ -80,23 +80,23 @@ function T(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), b = (0, o.Wu)([S.Z, x.ZP, _.Z, v.Z, j.Z], () => {
+  }), b = (0, o.Wu)([S.Z, g.ZP, _.Z, v.Z, j.Z], () => {
     let e = [],
       t = S.Z.getGuildId();
     if (null == t) return e;
-    for (let n of x.ZP.getVocalChannelIds(t)) {
+    for (let n of g.ZP.getVocalChannelIds(t)) {
       let t = _.Z.getChannel(n);
       null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
     }
     return e
-  }), y = (0, o.Wu)([f.Z, _.Z, g.Z, v.Z, j.Z], () => {
+  }), y = (0, o.Wu)([f.Z, _.Z, x.Z, v.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
       let r = _.Z.getChannel(n);
       (null == r ? true : r.type) === w.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
     let e = new Set(y.map(e => e.id)),
@@ -108,7 +108,7 @@ function T(e) {
     children: [(0, r.jsx)("div", {
       className: I.searchBar,
       children: (0, r.jsx)(a.E1j, {
-        placeholder: Z.intl.string(Z.t["3jvv+/"]),
+        placeholder: Z.intl.string(Z.t["3jvv+6"]),
         query: u,
         onChange: e => l({
           query: e,
@@ -125,7 +125,7 @@ function T(e) {
         return (0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: Z.intl.string(P.default.FZ9Fl5)
+          children: Z.intl.string(P.default.FZ9Fl7)
         })
       },
       sections: [A.length],
@@ -155,11 +155,11 @@ function N() {
       className: Chunk603410.emptyHeader,
       variant: "text-lg/medium",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk637824.default.sWGfr6)
+      children: Chunk388032.intl.string(Chunk489999.default.sWGfr9)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: Chunk388032.intl.string(Chunk637824.default.nBRtt7)
+      children: Chunk388032.intl.string(Chunk489999.default["nBRtt/"])
     })]
   })
 }

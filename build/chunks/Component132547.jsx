@@ -133,7 +133,7 @@ let x = e => {
             className: D.bottomIllustration,
             width: 112,
             height: 85,
-            alt: w.intl.string(w.t.X4IxWF)
+            alt: w.intl.string(w.t.X4IxWL)
           })]
         })
       }), V && null != H && (0, r.jsx)(v.Z, {

@@ -78,7 +78,7 @@ function h(e) {
     count: t
   } = e, n = f(e, ["count"]);
   return (0, r.jsx)(s.Z, d({
-    label: l.intl.string(l.t.jNqDh4),
+    label: l.intl.string(l.t["jNqDh/"]),
     iconComponent: e => {
       let {
         className: n

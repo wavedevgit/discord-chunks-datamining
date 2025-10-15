@@ -75,7 +75,7 @@ function Y(e) {
     maxHeight: q,
     connectedLocation: K,
     renderExternalHeader: Q
-  } = e, X = (0, w.Z)(), J = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([j.Z], () => j.Z.getChannel($)), et = (0, T.gb)(J), en = (0, T.uF)(et), er = i.useCallback(() => {
+  } = e, X = (0, w.Z)(), J = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([j.Z], () => j.Z.getChannel($)), et = (0, P.gb)(J), en = (0, P.uF)(et), er = i.useCallback(() => {
     (0, S.tg)(G.Ez.PIP)
   }, []), ei = i.useRef(null), el = (0, s.e7)([E.ZP], () => E.ZP.getFocusedLayout()), ea = el !== G.MI.NO_CHAT, [es, eo] = i.useState(null != (l = null != (t = m.ZP.activityPanelHeight) ? t : q) ? l : null), ec = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -99,7 +99,7 @@ function Y(e) {
   let ep = eu.width / Math.max(eu.height, 1) < G.I0,
     ef = 0,
     eg = 0,
-    em = (0, P.Z)(null == X ? true : X.id);
+    em = (0, T.Z)(null == X ? true : X.id);
   if (!em) {
     let e = eu.width,
       t = eu.height;
@@ -170,29 +170,29 @@ function Y(e) {
       children: (0, r.jsx)("img", {
         src: e.getAvatarURL(null == ee ? true : ee.guild_id, z),
         alt: i,
-        className: B.avatar
+        className: F.avatar
       }, e.id)
     }, e.id)
   };
   return (0, r.jsx)(d.f6W, {
     theme: H.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(B.wrapper, W[el], e),
+      className: a()(F.wrapper, W[el], e),
       ref: ei,
       style: eO,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
-        className: B.activityPanelContainer,
+        className: F.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {
-          className: B.header,
+          className: F.header,
           children: (0, r.jsx)(o.x, {
             color: "header-primary",
             variant: "text-md/semibold",
-            className: B.headerTitle,
+            className: F.headerTitle,
             children: null == X ? true : X.name
           })
         }), (0, r.jsx)("div", {
-          className: a()(B.activityContainer, {
-            [B.activityContainerNoMargin]: em
+          className: a()(F.activityContainer, {
+            [F.activityContainerNoMargin]: em
           }),
           style: {
             paddingLeft: ef,
@@ -202,11 +202,11 @@ function Y(e) {
           },
           ref: ed,
           children: (0, r.jsx)(A.Z, {
-            className: B.iframe,
+            className: F.iframe,
             embedId: (0, M.Z)(K.id, X.id)
           })
         }), null != ey ? (0, r.jsxs)("div", {
-          className: B.footer,
+          className: F.footer,
           children: [(0, r.jsx)(D.ZP, {
             renderIcon: false,
             users: eI,
@@ -214,20 +214,20 @@ function Y(e) {
             max: 6,
             renderUser: eS
           }), (0, r.jsxs)("div", {
-            className: B.footerButtons,
+            className: F.footerButtons,
             children: [(0, r.jsxs)("div", {
-              className: B.buttonSection,
+              className: F.buttonSection,
               children: [(0, r.jsx)(U.Z, {
                 channelId: ey
               }), (0, r.jsx)(b.d, {
                 isTrayButton: true,
-                label: F.intl.string(F.t.brPQ5e),
+                label: B.intl.string(B.t.brPQ5U),
                 onClick: er,
                 iconComponent: d.dOc,
                 themeable: true
               })]
             }), (0, r.jsx)("div", {
-              className: B.leaveButtonContainer,
+              className: F.leaveButtonContainer,
               children: (0, r.jsx)(y.Z, {
                 applicationId: X.id,
                 location: K,
@@ -236,7 +236,7 @@ function Y(e) {
               })
             })]
           }), eC && (0, r.jsx)("div", {
-            className: B.fortniteUpsellModalButton,
+            className: F.fortniteUpsellModalButton,
             children: (0, r.jsx)(d.Button, {
               onClick: () => {
                 (0, d.ZDy)(async () => {
@@ -248,7 +248,7 @@ function Y(e) {
                   modalKey: "activity-upsell-modal"
                 })
               },
-              text: F.intl.string(F.t["36gY4e"]),
+              text: B.intl.string(B.t["36gY4e"]),
               variant: "color-mix"
             })
           }), ex ? (0, r.jsx)(_.Z, {

@@ -123,7 +123,7 @@ let S = function(e) {
             children: N
           }), (0, r.jsx)("span", {
             className: y.name,
-            children: null != (n = null == I ? true : I.name) ? n : b.intl.string(b.t["11pdXV"])
+            children: null != (n = null == I ? true : I.name) ? n : b.intl.string(b.t["11pdXZ"])
           })]
         }))
       })

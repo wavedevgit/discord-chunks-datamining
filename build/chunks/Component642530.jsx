@@ -22,7 +22,7 @@ let d = () => {
       isGift: n
     } = (0, Chunk987209.wD)();
   return require || exports !== Chunk474936.Si.TIER_2 || !module ? null : (0, Chunk951288.jsx)(Chunk196567.Z, {
-    copy: Chunk388032.intl.string(Chunk388032.t.OejPtr),
+    copy: Chunk388032.intl.string(Chunk388032.t.OejPtl),
     bannerImage: Chunk430597,
     textColor: "text-invert",
     hideGiftIcon: true

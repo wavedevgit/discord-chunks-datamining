@@ -39,7 +39,7 @@ function d(e) {
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: o.intl.string(o.t.bFGpub)
+        children: o.intl.string(o.t.bFGpua)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
         children: b.map(e => (0, r.jsx)(s.Z, {

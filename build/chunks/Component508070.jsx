@@ -24,11 +24,11 @@ function f(e) {
     case "days":
       return l.intl.string(l.t.ixASa2);
     case "hours":
-      return l.intl.string(l.t["8sNvNj"]);
+      return l.intl.string(l.t["8sNvNn"]);
     case "minutes":
-      return l.intl.string(l.t.Gv6kPz);
+      return l.intl.string(l.t["Gv6kP/"]);
     case "seconds":
-      return l.intl.string(l.t.JhaiLS);
+      return l.intl.string(l.t.JhaiLW);
     default:
       return ""
   }
@@ -97,7 +97,7 @@ let p = e => {
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/semibold",
       color: "always-white",
-      children: l.intl.string(l.t["/ARFVF"])
+      children: l.intl.string(l.t["/ARFVE"])
     }), (0, r.jsx)("div", {
       className: c.timeUnitsOuterContainer,
       children: h.map((e, t) => _(e, t === h.length - 1))

@@ -30,13 +30,13 @@ class s extends Chunk647438.Component {
       premiumModalType: Chunk233787.C.Types.UNCLAIMED,
       primary: {
         onClick: this.claimAccount,
-        label: Chunk388032.intl.string(Chunk388032.t.fiNVio)
+        label: Chunk388032.intl.string(Chunk388032.t.fiNVin)
       },
       secondary: {
         onClick: this.cancel,
-        label: Chunk388032.intl.string(Chunk388032.t.oEAioK)
+        label: Chunk388032.intl.string(Chunk388032.t.oEAioF)
       },
-      children: Chunk388032.intl.string(Chunk388032.t["7btfmJ"])
+      children: Chunk388032.intl.string(Chunk388032.t["7btfmI"])
     })
   }
   constructor(...e) {

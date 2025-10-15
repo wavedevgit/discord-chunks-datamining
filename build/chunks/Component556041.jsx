@@ -26,24 +26,24 @@ let u = () => (0, Chunk951288.jsxs)(Chunk600164.Z, {
     justify: Chunk600164.Z.Justify.CENTER,
     className: Chunk5146.nameWrapper,
     children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.oMx98P),
+      text: Chunk388032.intl.string(Chunk388032.t.oMx98L),
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk5146.staffBadge
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk5146.header,
       variant: "heading-md/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.xfAlNz)
+      children: Chunk388032.intl.string(Chunk388032.t.xfAlNx)
     })]
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     className: Chunk5146.description,
     color: "header-secondary",
     variant: "text-sm/normal",
-    children: Chunk388032.intl.string(Chunk388032.t.BUZ0sr)
+    children: Chunk388032.intl.string(Chunk388032.t.BUZ0sl)
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     className: Chunk5146.description,
     color: "header-secondary",
     variant: "text-sm/normal",
-    children: Chunk388032.intl.string(Chunk388032.t.w5beJC)
+    children: Chunk388032.intl.string(Chunk388032.t.w5beJH)
   })]
 })

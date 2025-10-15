@@ -20,7 +20,7 @@ function o(e) {
       width: 415,
       height: 200
     }), (0, r.jsx)(i.OZU, {
-      note: a.intl.format(a.t.Pv8u2t, {
+      note: a.intl.format(a.t.Pv8u2u, {
         onClick: t
       })
     })]

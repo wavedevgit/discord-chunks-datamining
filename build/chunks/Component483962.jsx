@@ -33,7 +33,7 @@ let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
           type: "button",
           className: Chunk537074.searchBarComponent,
           onClick: g,
-          children: Chunk388032.intl.string(Chunk388032.t.LzcpeX)
+          children: Chunk388032.intl.string(Chunk388032.t.LzcpeZ)
         })
       }), (0, Chunk951288.jsx)(Chunk831218.Z, {
         padding: 8,
@@ -42,7 +42,7 @@ let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
         selectedChannelId: exports
       }), (0, Chunk951288.jsx)("section", {
         className: Chunk537074.panels,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
         children: (0, Chunk951288.jsx)(Chunk840780.Z, {
           guildId: null
         })

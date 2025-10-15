@@ -83,7 +83,7 @@ function v(e) {
       }), (0, r.jsx)(c.Text, {
         className: E.text,
         variant: "text-sm/normal",
-        children: g.intl.format(g.t.BNAIBQ, {
+        children: g.intl.format(g.t.BNAIBU, {
           onLearnMore: O
         })
       })]
@@ -92,7 +92,7 @@ function v(e) {
       className: E.iconOnly,
       onClick: () => O(),
       children: (0, r.jsx)(l.u, {
-        text: g.intl.string(g.t["+eFIjY"]),
+        text: g.intl.string(g.t["+eFIjX"]),
         position: "top",
         children: (0, r.jsx)(c.SrA, {
           size: "md",

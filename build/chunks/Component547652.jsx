@@ -76,7 +76,7 @@ let P = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
     }, [e, t]);
     return i ? (0, r.jsx)(c.sNh, {
       id: "edit-soundboard-sound",
-      label: v.intl.string(v.t.ponZcH),
+      label: v.intl.string(v.t.ponZcG),
       action: a
     }, "edit-soundboard-sound") : null
   }(s, e), P = function(t) {
@@ -102,25 +102,25 @@ let P = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
         y.isPlatformEmbedded ? await g.ZP.saveFile(t, l) : (0, i.saveAs)(r, l)
       } catch (t) {
         a.Z.show({
-          title: v.intl.string(v.t.mK3tDA),
-          body: v.intl.string(v.t.jLlfDA),
-          confirmText: v.intl.string(v.t.BddRzc)
+          title: v.intl.string(v.t.mK3tDH),
+          body: v.intl.string(v.t.jLlfDN),
+          confirmText: v.intl.string(v.t.BddRzS)
         })
       }
     }, [e]);
     return t.guildId === h.X8 ? null : (0, r.jsx)(c.sNh, {
       id: "download-soundboard-sound",
-      label: v.intl.string(v.t["/fzLLC"]),
+      label: v.intl.string(v.t["/fzLLK"]),
       action: n
     }, "download-soundboard-sound")
   }(s), m = (0, O.Z)(s, d), Z = (0, f.Z)({
     id: s.soundId,
-    label: v.intl.string(v.t.HJikXl)
+    label: v.intl.string(v.t.HJikXp)
   });
   return (0, r.jsx)(c.v2r, {
     navId: "sound-button-context",
     onClose: u.Zy,
-    "aria-label": v.intl.string(v.t.liqwPD),
+    "aria-label": v.intl.string(v.t.liqwPJ),
     onSelect: b,
     children: (0, r.jsxs)(c.kSQ, {
       children: [w, m, P, Z]

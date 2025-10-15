@@ -25,7 +25,7 @@ function u(e) {
     action: "PRESS_WATCH_BUTTON"
   }), window.open(f));
   return (0, r.jsx)(s.O1, {
-    text: c.intl.string(c.t["I6JG4+"]),
+    text: c.intl.string(c.t.I6JG46),
     fullWidth: !d,
     onClick: _
   })

@@ -97,7 +97,7 @@ class j extends Chunk647438.PureComponent {
             className: Chunk744749.text,
             children: [null != exports ? null : (0, Chunk951288.jsx)("div", {
               className: Chunk744749.tipTitle,
-              children: Chunk388032.intl.string(Chunk388032.t.v0R1Li)
+              children: Chunk388032.intl.string(Chunk388032.t.v0R1Lh)
             }), (0, Chunk951288.jsx)("div", {
               className: null != exports ? Chunk744749.title : Chunk744749.tip,
               children: Chunk647438
@@ -112,7 +112,7 @@ class j extends Chunk647438.PureComponent {
           }),
           children: [(0, Chunk951288.jsx)("div", {
             className: Chunk744749.problemsText,
-            children: Chunk388032.intl.string(Chunk388032.t.AG2zPD)
+            children: Chunk388032.intl.string(Chunk388032.t.AG2zPM)
           }), (0, Chunk951288.jsxs)("div", {
             children: [(0, Chunk951288.jsxs)(Chunk481060.Anchor, {
               className: Chunk744749.twitterLink,
@@ -122,14 +122,14 @@ class j extends Chunk647438.PureComponent {
                 size: "xs",
                 color: "currentColor",
                 className: Chunk744749.icon
-              }), Chunk388032.intl.string(Chunk388032.t.KlyTbm)]
+              }), Chunk388032.intl.string(Chunk388032.t.KlyTbj)]
             }), (0, Chunk951288.jsxs)(Chunk481060.Anchor, {
               className: Chunk744749.statusLink,
               href: Chunk981631.yXt.STATUS,
               target: "_blank",
               children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
                 className: Chunk744749.icon
-              }), Chunk388032.intl.string(Chunk388032.t.AgXXy8)]
+              }), Chunk388032.intl.string(Chunk388032.t.AgXXyy)]
             })]
           })]
         })]
@@ -138,12 +138,12 @@ class j extends Chunk647438.PureComponent {
   }
   constructor(e) {
     super(e), N(this, "videoRef", null), N(this, "_noProblemsTimeout", null), N(this, "_problemsTimeout", null), N(this, "_connectedSound", this.createSound()), N(this, "_loadingText", function() {
-      let e = [S.intl.string(S.t.Ex79Ky), S.intl.string(S.t["+v5zsb"]), S.intl.string(S.t["RLx6+f"]), S.intl.string(S.t.Q1PZkJ), S.intl.string(S.t.x7sfVl), S.intl.format(S.t.PHuQsb, {
+      let e = [S.intl.string(S.t.Ex79K6), S.intl.string(S.t["+v5zsT"]), S.intl.string(S.t["RLx6+Y"]), S.intl.string(S.t.Q1PZkN), S.intl.string(S.t.x7sfVg), S.intl.format(S.t.PHuQsQ, {
         tabHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "tab",
           className: T.keybind
         }, t)
-      }), S.intl.string(S.t.UorX4e), S.intl.string(S.t["il/GZm"]), S.intl.string(S.t.HKBJv7), S.intl.format(S.t["FVVp7+"], {
+      }), S.intl.string(S.t.UorX4T), S.intl.string(S.t["il/GZt"]), S.intl.string(S.t.HKBJvw), S.intl.format(S.t.FVVp79, {
         F6Hook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "f6",
           className: T.keybind
@@ -152,24 +152,24 @@ class j extends Chunk647438.PureComponent {
           shortcut: "tab",
           className: T.keybind
         }, t)
-      }), S.intl.string(S.t["7Y1hFB"]), S.intl.string(S.t["UcCW7+"]), S.intl.string(S.t.E5GhfX), S.intl.string(S.t.bANqo6), S.intl.string(S.t.yOEVDg), S.intl.string(S.t["u0Ra/P"]), S.intl.string(S.t.un4cQ0), S.intl.string(S.t["2cyYx8"]), S.intl.string(S.t.KCmze3), S.intl.string(S.t.I98MEB), S.intl.format(S.t.c0YCIy, {}), S.intl.string(S.t.z8AvIC), S.intl.string(S.t.IjX3Pz), S.intl.string(S.t.lg3CkZ), S.intl.string(S.t["4GaLhY"]), S.intl.string(S.t.qHKbU1), S.intl.string(S.t.mJxKDw), S.intl.string(S.t.iiQBXF), S.intl.string(S.t.YPD46e), S.intl.string(S.t.O8BpgY), S.intl.string(S.t.xzFwfn), S.intl.string(S.t["4G3fsb"]), S.intl.string(S.t["/jPyKC"]), S.intl.string(S.t["8x7D5e"]), S.intl.string(S.t.G6Q8Hx), S.intl.string(S.t["9Cx+xM"]), S.intl.string(S.t.WsZ8dX), S.intl.string(S.t.btoe7O), S.intl.string(S.t.E6Y0j4), S.intl.string(S.t["7KZ819"]), S.intl.string(S.t.hm7OKi), S.intl.string(S.t.H535i4), S.intl.string(S.t["08WJUV"]), S.intl.string(S.t.hhtfys), S.intl.string(S.t.on980d), S.intl.string(S.t.AL6c09), S.intl.string(S.t.iLTeFx), S.intl.string(S.t.b3vSu7), S.intl.string(S.t["f8ao5+"]), S.intl.format(S.t["1v1h8v"], {
+      }), S.intl.string(S.t["7Y1hFH"]), S.intl.string(S.t.UcCW71), S.intl.string(S.t.E5Ghfc), S.intl.string(S.t.bANqo8), S.intl.string(S.t.yOEVDr), S.intl.string(S.t["u0Ra/G"]), S.intl.string(S.t.un4cQ7), S.intl.string(S.t["2cyYx1"]), S.intl.string(S.t.KCmze1), S.intl.string(S.t.I98MEE), S.intl.format(S.t.c0YCIx, {}), S.intl.string(S.t.z8AvIN), S.intl.string(S.t.IjX3P1), S.intl.string(S.t.lg3Ckc), S.intl.string(S.t["4GaLhY"]), S.intl.string(S.t.qHKbUw), S.intl.string(S.t.mJxKDw), S.intl.string(S.t.iiQBXF), S.intl.string(S.t.YPD46Q), S.intl.string(S.t.O8Bpga), S.intl.string(S.t.xzFwfi), S.intl.string(S.t["4G3fsX"]), S.intl.string(S.t["/jPyKC"]), S.intl.string(S.t["8x7D5c"]), S.intl.string(S.t.G6Q8H3), S.intl.string(S.t["9Cx+xL"]), S.intl.string(S.t.WsZ8dW), S.intl.string(S.t.btoe7M), S.intl.string(S.t.E6Y0j7), S.intl.string(S.t["7KZ81/"]), S.intl.string(S.t.hm7OKu), S.intl.string(S.t["H535i+"]), S.intl.string(S.t["08WJUR"]), S.intl.string(S.t.hhtfyi), S.intl.string(S.t.on980U), S.intl.string(S.t.AL6c01), S.intl.string(S.t.iLTeF6), S.intl.string(S.t.b3vSu7), S.intl.string(S.t.f8ao58), S.intl.format(S.t["1v1h8o"], {
         asterisks: "**"
-      }), S.intl.format(S.t.MUlAVV, {
+      }), S.intl.format(S.t.MUlAVW, {
         quickSwitcherHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+k",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.aes5VF, {
+      }), S.intl.format(S.t.aes5VI, {
         markUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "alt+click",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.md9Svr, {
+      }), S.intl.format(S.t.md9Svv, {
         markServerUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+esc",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t["X0Tu+v"], {
+      }), S.intl.format(S.t["X0Tu+u"], {
         navigateUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+alt+up",
           className: T.keybind
@@ -178,28 +178,28 @@ class j extends Chunk647438.PureComponent {
           shortcut: "down",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.AkoeIS, {
+      }), S.intl.format(S.t.AkoeIY, {
         keyboardShortcutsHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+/",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.P9sfAA, {
+      }), S.intl.format(S.t.P9sfAH, {
         messageNewlineHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+return",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t["3Ox33d"], {
+      }), S.intl.format(S.t["3Ox33f"], {
         shiftHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift",
           className: T.keybind
         }, t)
-      }), S.intl.format(S.t.enCV6e, {
+      }), S.intl.format(S.t.enCV6b, {
         upHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "up",
           className: T.keybind
         }, t)
       })];
-      return _.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqq)), e[s().random(e.length - 1)]
+      return _.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqk)), e[s().random(e.length - 1)]
     }()), N(this, "_eventLoadingText", function() {
       let e = g.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[s().random(e.length - 1)]

@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function u(e, t) {
   return t === a.IlC.POPOUT ? null : (0, n.jsx)(c.sNh, {
     id: "nav-server-settings",
-    label: l.intl.string(l.t["154/bG"]),
+    label: l.intl.string(l.t["154/bL"]),
     action: () => {
       (0, o.xf)(), i.Z.open(e, a.pNK.MODERATION)
     }

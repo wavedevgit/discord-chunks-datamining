@@ -47,7 +47,7 @@ function g(e) {
           children: (0, r.jsx)(l.X6q, {
             variant: "heading-sm/semibold",
             color: "header-primary",
-            children: m.intl.string(m.t["3NxHCw"])
+            children: m.intl.string(m.t["3NxHC4"])
           })
         })
       }), (0, r.jsx)(c.Z, {

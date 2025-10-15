@@ -23,8 +23,8 @@ function m(e) {
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)(i.u, {
-      text: u.intl.string(u.t.MPFyJy),
-      "aria-label": u.intl.string(u.t.X3Ekj4),
+      text: u.intl.string(u.t.MPFyJ5),
+      "aria-label": u.intl.string(u.t.X3Ekj8),
       children: (0, r.jsx)(l.SrA, {
         size: "md",
         color: "currentColor",
@@ -32,7 +32,7 @@ function m(e) {
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      children: u.intl.format(u.t.Sv8iiY, {
+      children: u.intl.format(u.t.Sv8iic, {
         price: m,
         subscribeNowHook: e => (0, r.jsx)(s.F, {
           text: e

@@ -61,6 +61,6 @@ function p(e, t) {
   if (null == e) return [];
   let h = null != (n = null == e ? true : e.getBadges()) ? n : [];
   return null != f && f.id === e.userId && u && (h = h.filter(e => e.id !== _)), p && (h = h.map(e => d(c({}, e), {
-    description: e.id === _ ? s.intl.string(s.t.Br1ls7) : e.description
+    description: e.id === _ ? s.intl.string(s.t.Br1ls3) : e.description
   }))), h
 }

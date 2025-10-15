@@ -127,17 +127,17 @@ class D extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
           grow: 0,
           children: [(0, Chunk951288.jsx)(Chunk870569.Z, {
-            tooltipText: Chunk933557 ? Chunk388032.intl.string(Chunk388032.t.YqAjX1) : Chunk388032.intl.string(Chunk388032.t["w4m94+"]),
+            tooltipText: Chunk933557 ? Chunk388032.intl.string(Chunk388032.t.YqAjXy) : Chunk388032.intl.string(Chunk388032.t.w4m945),
             icon: Chunk933557 ? Chunk481060.nRN : Chunk481060.S6n,
             iconForeground: Chunk933557 ? Chunk361979.strikethrough : null,
             onClick: this.handleToggleSelfMute
           }), (0, Chunk951288.jsx)(Chunk870569.Z, {
-            tooltipText: Chunk287734 ? Chunk388032.intl.string(Chunk388032.t["2US87+"]) : Chunk388032.intl.string(Chunk388032.t.wjcRFR),
+            tooltipText: Chunk287734 ? Chunk388032.intl.string(Chunk388032.t["2US872"]) : Chunk388032.intl.string(Chunk388032.t.wjcRFX),
             icon: Chunk287734 ? Chunk481060.wE8 : Chunk481060.VWR,
             onClick: this.handleToggleSelfDeaf,
             iconForeground: Chunk287734 ? Chunk361979.strikethrough : null
           }), null == Chunk647438 && (0, Chunk951288.jsx)(Chunk870569.Z, {
-            tooltipText: Chunk388032.intl.string(Chunk388032.t["6vrfgo"]),
+            tooltipText: Chunk388032.intl.string(Chunk388032.t["6vrfgt"]),
             onClick: this.handleDisconnect,
             icon: Chunk481060.gkL
           })]

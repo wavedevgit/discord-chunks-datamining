@@ -116,7 +116,7 @@ function B(e) {
         analyticsLocations: B,
         componentId: er
       })
-    }, eo = en.disabled ? U.intl.string(U.t.JBnc7O) : U.intl.string(U.t.cX9uLS), es = (0, v.G)($, () => {
+    }, eo = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, v.G)($, () => {
       R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: I,
@@ -144,7 +144,7 @@ function B(e) {
       submitting: ei
     }];
   return (0, r.jsx)(b.W, {
-    header: U.intl.string(U.t.pkq6Vl),
+    header: U.intl.string(U.t.pkq6Vq),
     title: d.name,
     iconSrc: el,
     info: (0, r.jsx)("div", {

@@ -69,14 +69,14 @@ let _ = Chunk647438.memo(function(e) {
         className: m.progressBarText,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-sm/bold",
-          children: g.intl.string(g.t.SnrR39)
+          children: g.intl.string(g.t.SnrR3x)
         }), (0, r.jsxs)("div", {
           className: m.rightContainer,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
             className: m.rightText,
-            children: g.intl.format(g.t.eqZ1lZ, {
+            children: g.intl.format(g.t.eqZ1lW, {
               numberHook: b,
               total: j.toString(),
               completed: v.toString()

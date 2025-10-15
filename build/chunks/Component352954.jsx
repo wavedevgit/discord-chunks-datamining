@@ -73,7 +73,7 @@ let d = {
     let {
       title: t,
       subtitle: a,
-      confirmText: s = o.intl.string(o.t["cY+Ooa"]),
+      confirmText: s = o.intl.string(o.t["cY+Oob"]),
       onConfirm: c
     } = e;
     (0, i.ZDy)(async () => {
@@ -83,7 +83,7 @@ let d = {
       return n => (0, r.jsx)(e, u(l({
         header: t,
         confirmText: s,
-        cancelText: o.intl.string(o.t["ETE/oK"]),
+        cancelText: o.intl.string(o.t["ETE/oC"]),
         onConfirm: c
       }, n), {
         children: (0, r.jsx)(i.Text, {

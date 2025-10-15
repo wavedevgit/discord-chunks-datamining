@@ -48,7 +48,7 @@ function m(e) {
     sourceQuestContent: s
   } = e;
   return t.length > 0 ? (0, r.jsx)(p, {
-    text: d.intl.string(d.t["qiS+xs"]),
+    text: d.intl.string(d.t["qiS+xj"]),
     quest: n,
     sourceQuestContent: s
   }) : null
@@ -59,7 +59,7 @@ function g(e) {
     children: [(0, r.jsx)(s.Text, {
       color: "text-muted",
       variant: "text-xs/medium",
-      children: d.intl.string(d.t.EJFSvL)
+      children: d.intl.string(d.t.EJFSvD)
     }), (0, r.jsx)(m, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

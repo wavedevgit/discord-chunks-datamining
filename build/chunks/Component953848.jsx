@@ -26,7 +26,7 @@ function b(e) {
     transitionState: _,
     onSubmitted: f,
     detectedActivity: j
-  } = e, [O, w] = i.useState("issue_selection"), [y, P] = i.useState(null), [k, I] = i.useState(""), [G, N] = i.useState(null), [T, D] = i.useState(""), S = i.useMemo(() => (0, d.fP)(), []), C = (0, o.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, o.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = i.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
+  } = e, [O, w] = a.useState("issue_selection"), [y, P] = a.useState(null), [k, I] = a.useState(""), [G, N] = a.useState(null), [D, T] = a.useState(""), S = a.useMemo(() => (0, d.fP)(), []), C = (0, o.e7)([u.Z], () => u.Z.games), E = null != j, A = (0, o.e7)([s.Z], () => (null == j ? true : j.application_id) != null ? s.Z.getApplication(j.application_id) : null), Z = a.useMemo(() => k.trim().length < 1 ? [] : C.filter(e => e.name.toLowerCase().includes(k.toLowerCase())).slice(0, 20).map(e => ({
     value: e.id,
     label: e.name,
     game: e
@@ -37,19 +37,19 @@ function b(e) {
       applicationId: null != (e = null == j ? true : j.application_id) ? e : "",
       suggestedGameName: "" !== k.trim() ? k.trim() : true,
       suggestedGameApplicationId: null != (t = null == G ? true : G.id) ? t : null,
-      feedback: "" !== T.trim() ? T.trim() : true,
+      feedback: "" !== D.trim() ? D.trim() : true,
       submitted: true
     }), null == f || f(), b()
   }, L = (() => {
     switch (O) {
       case "issue_selection":
         return {
-          title: v.intl.string(v.t["6tnjbG"]), actions: []
+          title: v.intl.string(v.t["6tnjbD"]), actions: []
         };
       case "game_search":
         return {
-          title: E ? v.intl.string(v.t.TZgkxc) : v.intl.string(v.t["+ie+wc"]), actions: [{
-            text: v.intl.string(v.t.geKm7u),
+          title: E ? v.intl.string(v.t.TZgkxY) : v.intl.string(v.t["+ie+wX"]), actions: [{
+            text: v.intl.string(v.t.geKm7t),
             onClick: M,
             variant: "primary",
             disabled: "" === k.trim()
@@ -57,11 +57,11 @@ function b(e) {
         };
       case "other_feedback":
         return {
-          title: v.intl.string(v.t.tdDpJi), actions: [{
-            text: v.intl.string(v.t.geKm7u),
+          title: v.intl.string(v.t.tdDpJj), actions: [{
+            text: v.intl.string(v.t.geKm7t),
             onClick: M,
             variant: "primary",
-            disabled: "" === T.trim()
+            disabled: "" === D.trim()
           }]
         };
       default:
@@ -92,7 +92,7 @@ function b(e) {
     onClose: b,
     trackingProps: {
       impression: {
-        impressionName: a.ImpressionNames.GAME_DETECTION_REPORT_MODAL
+        impressionName: i.ImpressionNames.GAME_DETECTION_REPORT_MODAL
       }
     },
     children: (() => {
@@ -103,7 +103,7 @@ function b(e) {
             children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: v.intl.string(v.t.IQHicn)
+              children: v.intl.string(v.t.IQHicr)
             }), (0, l.jsx)("div", {
               className: x.radioGroup,
               children: (0, l.jsx)(c.FXm, {
@@ -118,16 +118,16 @@ function b(e) {
                   }, 100)
                 },
                 options: E ? [{
-                  name: v.intl.string(v.t.TZgkxc),
+                  name: v.intl.string(v.t.TZgkxY),
                   value: "wrong_game_shown"
                 }, {
-                  name: v.intl.string(v.t.tdDpJi),
+                  name: v.intl.string(v.t.tdDpJj),
                   value: "other_feedback"
                 }] : [{
-                  name: v.intl.string(v.t["+ie+wc"]),
+                  name: v.intl.string(v.t["+ie+wX"]),
                   value: "game_not_detected"
                 }, {
-                  name: v.intl.string(v.t.tdDpJi),
+                  name: v.intl.string(v.t.tdDpJj),
                   value: "other_feedback"
                 }]
               })
@@ -140,18 +140,18 @@ function b(e) {
             children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: E ? v.intl.string(v.t["79o/io"]) : v.intl.string(v.t["r/2pZ2"])
+              children: E ? v.intl.string(v.t["79o/iq"]) : v.intl.string(v.t["r/2pZy"])
             }), E && (0, l.jsxs)(l.Fragment, {
               children: [(0, l.jsxs)("div", {
                 className: x.detectedGameFrame,
                 children: [(() => {
                   var e, t, n;
-                  let i = p.ZP.getApplicationIconURL({
+                  let a = p.ZP.getApplicationIconURL({
                     id: null != (e = j.application_id) ? e : "",
                     icon: null != (t = null == A ? true : A.icon) ? t : null
                   });
-                  return null != i ? (0, l.jsx)("img", {
-                    src: i,
+                  return null != a ? (0, l.jsx)("img", {
+                    src: a,
                     alt: null != j.name && "" !== j.name ? j.name : null != (n = null == A ? true : A.name) ? n : "",
                     className: x.detectedGameIcon
                   }) : (0, l.jsx)("div", {
@@ -184,7 +184,7 @@ function b(e) {
               onSearchChange: e => {
                 I(e), null != G && e !== G.name && N(null)
               },
-              placeholder: E ? v.intl.string(v.t["/SGi7u"]) : v.intl.string(v.t.ss9Zwc),
+              placeholder: E ? v.intl.string(v.t["/SGi7v"]) : v.intl.string(v.t.ss9Zwa),
               clearable: true,
               filter: false,
               maxVisibleItems: 5,
@@ -216,11 +216,11 @@ function b(e) {
             children: [(0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: v.intl.string(v.t.IblYEx)
+              children: v.intl.string(v.t.IblYEw)
             }), (0, l.jsx)(c.Kx8, {
-              value: T,
-              onChange: D,
-              placeholder: v.intl.string(v.t.aiPKV1),
+              value: D,
+              onChange: T,
+              placeholder: v.intl.string(v.t.aiPKV4),
               maxLength: 300,
               rows: 4
             })]

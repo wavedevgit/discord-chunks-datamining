@@ -17,13 +17,13 @@ function u(n) {
     onContinue: e,
     onClose: t
   } = n, u = s.Z.getArticleURL(a.BhN.CRUNCHYROLL_CONNECTION), C = i.useMemo(() => [{
-    label: c.intl.string(c.t["2TXHQU"]),
+    label: c.intl.string(c.t["2TXHQd"]),
     icon: r.ARS
   }], []);
   return (0, o.jsx)(l.m, {
     platformType: a.ABu.CRUNCHYROLL,
-    headerConnect: c.intl.string(c.t["Da+3ND"]),
-    body: c.intl.string(c.t.MaPpPD),
+    headerConnect: c.intl.string(c.t["Da+3NJ"]),
+    body: c.intl.string(c.t.MaPpPL),
     learnMoreLink: u,
     onClose: t,
     onContinue: e,

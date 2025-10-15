@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk693450 = require("./693450.js"),
+  Chunk592186 = require("./592186.js"),
   Chunk147164 = require("./147164.js");
 
 function v(e) {
@@ -53,7 +53,7 @@ function v(e) {
   if (!I && !k) return null;
   let U = true !== N ? N : C;
   return (0, r.jsx)(m.Z, {
-    title: b.intl.string(y.default["86GtGB"]),
+    title: b.intl.string(y.default["86GtGH"]),
     titleIcon: L ? (0, r.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: O.newBadge
@@ -66,12 +66,12 @@ function v(e) {
       children: [I && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
-        text: b.intl.string(y.default.vJqrIi),
+        text: b.intl.string(y.default.vJqrIg),
         onClick: x
       }), null == n && k && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
-        text: b.intl.string(y.default.ymq8WV),
+        text: b.intl.string(y.default.ymq8WQ),
         onClick: M
       }), null != n && null != U && (0, r.jsx)(o.Button, {
         variant: "secondary",

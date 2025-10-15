@@ -26,9 +26,9 @@ let h = function(e) {
       query: s.Z.getField("fetchedQuery"),
       languageCode: s.Z.getField("languageCode")
     })
-  }, [t]), m = n === u.Hk ? d.intl.string(d.t.Ivw1Ii) : d.intl.formatToPlainString(d.t["+1WAFR"], {
+  }, [t]), m = n === u.Hk ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
     categoryName: h
-  }), b = n === u.Hk ? d.intl.string(d.t.aXvEjY) : d.intl.format(d.t.XLioqq, {
+  }), b = n === u.Hk ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
     onClick: g
   });
   return (0, r.jsxs)("div", {

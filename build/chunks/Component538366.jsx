@@ -66,22 +66,22 @@ function g(e) {
     children: [(0, r.jsx)(l.Heading, {
       className: h.header,
       variant: "heading-md/semibold",
-      children: _ ? m.intl.formatToPlainString(m.t.lvPci4, {
+      children: _ ? m.intl.formatToPlainString(m.t.lvPci0, {
         numTags: f.size
-      }) : m.intl.string(m.t.PwTMGx)
+      }) : m.intl.string(m.t.PwTMG0)
     }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: _ ? m.intl.formatToPlainString(m.t.AAeye3, {
+      children: _ ? m.intl.formatToPlainString(m.t.AAeye1, {
         numTags: f.size
-      }) : m.intl.formatToPlainString(m.t.YtsXFB, {
+      }) : m.intl.formatToPlainString(m.t.YtsXFD, {
         channelName: t
       })
     }), C && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 16
       }), (0, r.jsx)(a.zxk, {
-        text: y ? m.intl.string(m.t.DgatTU) : m.intl.string(m.t.wOKE8P),
+        text: y ? m.intl.string(m.t.DgatTQ) : m.intl.string(m.t.wOKE8I),
         variant: "secondary",
         onClick: T
       })]

@@ -107,7 +107,7 @@ function eo(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, y = (0, q.Z)({
+  } = e, y = (0, Q.Z)({
     location: "overlay_voice_widget"
   }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), v = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
     userId: i.id,
@@ -245,13 +245,13 @@ class el extends(i = Chunk647438.PureComponent) {
         })]
       }), require ? null : (0, Chunk951288.jsx)(Chunk518084.ZP.Icon, {
         icon: Chunk481060.ewm,
-        label: Chunk388032.intl.string(Chunk388032.t.NiTd0d),
+        label: Chunk388032.intl.string(Chunk388032.t.NiTd0e),
         onClick: this.handleOpenVoiceSettings,
         tooltipPosition: "left",
         size: 18
       }), require ? null : (0, Chunk951288.jsx)(Chunk518084.ZP.Icon, {
         icon: module ? Chunk481060.QVc : Chunk481060.k5M,
-        label: module ? Chunk388032.intl.string(Chunk388032.t.cSu80t) : Chunk388032.intl.string(Chunk388032.t.cM8Vnp),
+        label: module ? Chunk388032.intl.string(Chunk388032.t.cSu80j) : Chunk388032.intl.string(Chunk388032.t.cM8Vnm),
         onClick: this.handlePin,
         tooltipPosition: "left",
         size: 18,
@@ -298,7 +298,7 @@ class el extends(i = Chunk647438.PureComponent) {
             children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
               className: Chunk226833.streaming,
               variant: "text-sm/normal",
-              children: Chunk388032.intl.string(Chunk388032.t.XKYej4)
+              children: Chunk388032.intl.string(Chunk388032.t.XKYej5)
             }), (0, Chunk951288.jsx)(Chunk345243.Z, {
               children: null != (e = null == Chunk692547 ? true : Chunk692547.name) ? module : Chunk765250
             })]
@@ -322,7 +322,7 @@ class el extends(i = Chunk647438.PureComponent) {
             className: Chunk226833.streamerIconWrapper,
             children: (0, Chunk951288.jsx)(Chunk28664.u, {
               asContainer: true,
-              text: Chunk388032.intl.string(Chunk388032.t.S5anIS),
+              text: Chunk388032.intl.string(Chunk388032.t.S5anIc),
               children: (0, Chunk951288.jsx)(Chunk755721.zx, {
                 onClick: this.handleStopStream,
                 look: Chunk755721.zx.Looks.BLANK,
@@ -343,7 +343,7 @@ class el extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, J.CR)(e, this.props, this.shouldDisplay)
+    (0, q.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -447,7 +447,7 @@ function ea(e) {
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, q.Z)({
+      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])

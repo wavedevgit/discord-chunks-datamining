@@ -1,7 +1,7 @@
 /** Chunk was on 9606 **/
 /** chunk id: 987578, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => r
+  default: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,25 +11,25 @@ var Chunk481060 = require("./481060.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx");
 
-function r(t) {
+function c(t) {
   let {
     onSelect: i
   } = t;
   return (0, e.jsxs)(l.v2r, {
     navId: "guild-context",
-    "aria-label": d.intl.string(d.t.HpQykZ),
+    "aria-label": d.intl.string(d.t.HpQykc),
     onClose: a.Zy,
     onSelect: i,
     children: [(0, e.jsx)(l.sNh, {
       id: "join",
-      label: d.intl.string(d.t.yRjK4u),
+      label: d.intl.string(d.t.yRjK4p),
       action: () => o.Z.openCreateGuildModal({
         initialSlide: s._m.JOIN_GUILD,
         location: "Guild List - ContextMenu"
       })
     }), (0, e.jsx)(l.sNh, {
       id: "create",
-      label: d.intl.string(d.t.B44MTk),
+      label: d.intl.string(d.t.B44MTm),
       action: () => o.Z.openCreateGuildModal({
         location: "Guild List - ContextMenu"
       })

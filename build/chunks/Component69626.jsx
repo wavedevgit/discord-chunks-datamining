@@ -104,9 +104,9 @@ function N(e, t, n, i, a) {
     }
   };
   "" !== m.Z.getDraft(e, m.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(S({
-    header: I.intl.string(I.t.pe26Cg),
-    confirmText: I.intl.string(I.t.VkKicX),
-    cancelText: I.intl.string(I.t["ETE/oK"]),
+    header: I.intl.string(I.t.pe26Cj),
+    confirmText: I.intl.string(I.t.VkKicb),
+    cancelText: I.intl.string(I.t["ETE/oC"]),
     onConfirm: () => o(),
     confirmButtonColor: s.zx.Colors.BRAND,
     onCloseCallback: () => {

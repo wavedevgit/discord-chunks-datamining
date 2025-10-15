@@ -25,7 +25,7 @@ function d(e) {
     children: (0, i.jsx)(a.Z, {
       artURL: u,
       size: (0, a.L)(p),
-      header: s.intl.string(s.t.O4FiWl),
+      header: s.intl.string(s.t.O4FiWi),
       onCTAClick: () => (0, r.ZDy)(async () => {
         let {
           default: e
@@ -67,7 +67,7 @@ function d(e) {
       }, {
         contextKey: h ? r.u1M : r.z1l
       }),
-      callToAction: s.intl.string(s.t.VINpSE)
+      callToAction: s.intl.string(s.t.VINpSK)
     })
   })
 }

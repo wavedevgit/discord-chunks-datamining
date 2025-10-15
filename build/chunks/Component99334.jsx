@@ -18,12 +18,12 @@ let d = (0, Chunk108843.Z)(function(n) {
     onSelect: t
   } = n, l = (0, s.Z)(e), i = (0, o.Z)({
     id: e.id,
-    label: u.intl.string(u.t.gFHI3t)
+    label: u.intl.string(u.t.gFHI3k)
   });
   return (0, r.jsxs)(a.v2r, {
     navId: "channel-context",
     onClose: c.Zy,
-    "aria-label": u.intl.string(u.t.Xm41aW),
+    "aria-label": u.intl.string(u.t.Xm41aV),
     onSelect: t,
     children: [(0, r.jsx)(a.kSQ, {
       children: l

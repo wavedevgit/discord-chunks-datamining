@@ -96,7 +96,7 @@ let S = function(e) {
       asset: j,
       assetId: "QuestRewardTile_rewardTileStatic",
       className: I.imageVideoOverlay,
-      alt: v.intl.string(v.t.UMclVF)
+      alt: v.intl.string(v.t.UMclVN)
     } : true,
     videoAsset: {
       asset: M,
@@ -152,7 +152,7 @@ let S = function(e) {
       style: {
         fontSize: A
       },
-      children: v.intl.format(v.t.DYAleX, {})
+      children: v.intl.format(v.t.DYAleT, {})
     }), "icon" === S && (0, r.jsx)("div", {
       className: I.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {

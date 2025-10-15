@@ -77,7 +77,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })),
       l = Object.keys(Chunk647438),
       s = Chunk345074.length > 0 ? Chunk345074[0] : null;
-    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYm"]) : null != Chunk544891 ? Chunk647438[Chunk544891] : true, (0, Chunk951288.jsx)(Chunk852860.Z, {
+    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYt"]) : null != Chunk544891 ? Chunk647438[Chunk544891] : true, (0, Chunk951288.jsx)(Chunk852860.Z, {
       submitting: require,
       onReset: () => {
         null != exports && Chunk434404.Z.init(exports.id)
@@ -138,14 +138,14 @@ let Z = "dismissedCommunityFeaturesUpsell",
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-md/semibold",
             className: S.upsellHeader,
-            children: I.intl.string(I.t["pR/BgY"])
+            children: I.intl.string(I.t["pR/Bge"])
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: I.intl.string(I.t["V+Yo1t"])
+            children: I.intl.string(I.t["V+Yo1l"])
           })]
         })]
       }), (0, r.jsx)(d.zx, {
-        "aria-label": I.intl.string(I.t.cpT0Cg),
+        "aria-label": I.intl.string(I.t.cpT0Cq),
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
         className: S.upsellClose,
@@ -164,7 +164,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
             size: "sm",
-            text: I.intl.string(I.t.iF1Asr),
+            text: I.intl.string(I.t.iF1Asi),
             onClick: O
           })
         }), n ? null : (0, r.jsx)("div", {
@@ -173,7 +173,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
             size: "sm",
-            text: I.intl.string(I.t["S/DfiY"]),
+            text: I.intl.string(I.t["S/Dfid"]),
             onClick: () => {
               C.Z.setSection(E.pNK.ONBOARDING)
             }
@@ -184,7 +184,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.Button, {
             variant: "secondary",
             size: "sm",
-            text: I.intl.string(I.t["0kmJd3"]),
+            text: I.intl.string(I.t["0kmJdw"]),
             onClick: () => {
               C.Z.setSection(E.pNK.ACCESS, E.KsC.ACCESS_DISCOVERABLE)
             }
@@ -195,7 +195,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
           children: (0, r.jsx)(u.Button, {
             variant: "secondary",
             size: "sm",
-            text: I.intl.string(I.t.BQIYTU),
+            text: I.intl.string(I.t.BQIYTb),
             onClick: () => {
               C.Z.setSection(E.pNK.ANALYTICS)
             }
@@ -245,15 +245,15 @@ let Z = "dismissedCommunityFeaturesUpsell",
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.nRtNqq)
+        children: Chunk388032.intl.string(Chunk388032.t.nRtNqn)
       }), Chunk852860 ? (0, Chunk951288.jsx)(D, {
         discoveryEnabled: module.features.has(Chunk981631.oNc.DISCOVERABLE),
         onboardingEnabled: module.features.has(Chunk981631.oNc.GUILD_ONBOARDING),
         guild: module
       }) : null, (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
-        label: Chunk388032.intl.string(Chunk388032.t.otcXPz),
-        description: Chunk388032.intl.string(Chunk388032.t.BtwmYG),
+        label: Chunk388032.intl.string(Chunk388032.t["otcXP/"]),
+        description: Chunk388032.intl.string(Chunk388032.t.BtwmYB),
         value: module.rulesChannelId,
         options: Chunk493773,
         onChange: e => {
@@ -264,8 +264,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
-        label: Chunk388032.intl.string(Chunk388032.t.vAyDGR),
-        description: Chunk388032.intl.string(Chunk388032.t.ZFeonp),
+        label: Chunk388032.intl.string(Chunk388032.t.vAyDGU),
+        description: Chunk388032.intl.string(Chunk388032.t.ZFeonu),
         value: module.publicUpdatesChannelId,
         options: Chunk493773,
         onChange: e => {
@@ -276,8 +276,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
         isDisabled: !require
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
-        label: Chunk388032.intl.string(Chunk388032.t.sMkYEx),
-        description: Chunk388032.intl.string(Chunk388032.t.htioQk),
+        label: Chunk388032.intl.string(Chunk388032.t.sMkYE8),
+        description: Chunk388032.intl.string(Chunk388032.t.htioQo),
         value: module.safetyAlertsChannelId,
         options: Chunk493773,
         onChange: e => {
@@ -288,8 +288,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
-        label: Chunk388032.intl.string(Chunk388032.t.pO60f3),
-        description: Chunk388032.intl.string(Chunk388032.t.aIR73d),
+        label: Chunk388032.intl.string(Chunk388032.t.pO60fy),
+        description: Chunk388032.intl.string(Chunk388032.t.aIR73T),
         value: module.preferredLocale,
         options: Chunk755721,
         onChange: e => {
@@ -301,48 +301,48 @@ let Z = "dismissedCommunityFeaturesUpsell",
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
         var n;
         if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Kx8, {
-          label: Chunk388032.intl.string(Chunk388032.t["RSfm+v"]),
-          description: Chunk388032.intl.string(Chunk388032.t["/B6PR0"]),
+          label: Chunk388032.intl.string(Chunk388032.t["RSfm+i"]),
+          description: Chunk388032.intl.string(Chunk388032.t["/B6PRw"]),
           value: null != (n = module.description) ? require : "",
-          placeholder: Chunk388032.intl.string(Chunk388032.t.Nvfows),
+          placeholder: Chunk388032.intl.string(Chunk388032.t.Nvfowl),
           onChange: Chunk650774,
           maxLength: Chunk345074.Us,
           disabled: !exports
         })
       })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.c1BmbG),
-        description: Chunk388032.intl.string(Chunk388032.t.aQzVFx),
+        label: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
+        description: Chunk388032.intl.string(Chunk388032.t.aQzVF8),
         layout: "horizontal",
         children: (0, Chunk951288.jsx)(Chunk28664.u, {
-          text: require ? null : Chunk388032.intl.string(Chunk388032.t["pjG+T0"]),
-          "aria-label": require ? true : Chunk388032.intl.string(Chunk388032.t["pjG+T0"]),
+          text: require ? null : Chunk388032.intl.string(Chunk388032.t["pjG+T3"]),
+          "aria-label": require ? true : Chunk388032.intl.string(Chunk388032.t["pjG+T3"]),
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "critical-primary",
             size: "sm",
-            text: Chunk388032.intl.string(Chunk388032.t.c1BmbG),
+            text: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
             onClick: () => {
               module.features.has(Chunk981631.oNc.DISCOVERABLE) && module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
-                header: I.intl.string(I.t.iBnVHR),
-                confirmText: I.intl.string(I.t["cY+Ooa"]),
-                cancelText: I.intl.string(I.t.oEAioK),
+                header: I.intl.string(I.t.iBnVHc),
+                confirmText: I.intl.string(I.t["cY+Oob"]),
+                cancelText: I.intl.string(I.t.oEAioF),
                 onConfirm: f,
                 children: (0, r.jsx)(u.Text, {
                   variant: "text-sm/normal",
-                  children: I.intl.string(I.t["P+Sh8f"])
+                  children: I.intl.string(I.t["P+Sh8V"])
                 })
               }))) : module.features.has(Chunk981631.oNc.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
-                header: I.intl.string(I.t.iBnVHR),
-                confirmText: I.intl.string(I.t["cY+Ooa"]),
-                cancelText: I.intl.string(I.t.oEAioK),
+                header: I.intl.string(I.t.iBnVHc),
+                confirmText: I.intl.string(I.t["cY+Oob"]),
+                cancelText: I.intl.string(I.t.oEAioF),
                 onConfirm: f,
                 children: (0, r.jsx)(u.Text, {
                   variant: "text-sm/normal",
-                  children: I.intl.string(I.t["eMx/ub"])
+                  children: I.intl.string(I.t["eMx/uZ"])
                 })
               }))) : module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
-                header: I.intl.string(I.t.iBnVHR),
-                confirmText: I.intl.string(I.t["cY+Ooa"]),
-                cancelText: I.intl.string(I.t.oEAioK),
+                header: I.intl.string(I.t.iBnVHc),
+                confirmText: I.intl.string(I.t["cY+Oob"]),
+                cancelText: I.intl.string(I.t.oEAioF),
                 onConfirm: f,
                 children: (0, r.jsx)(u.Text, {
                   variant: "text-sm/normal",

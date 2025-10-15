@@ -158,8 +158,8 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         rejectWithError: false
       }), {
         modalProps: {
-          title: v.intl.string(v.t.Wi9LER),
-          actionText: r ? v.intl.string(v.t.MP0Ho6) : v.intl.string(v.t.yZcYGR)
+          title: v.intl.string(v.t.Wi9LEV),
+          actionText: r ? v.intl.string(v.t["MP0Ho+"]) : v.intl.string(v.t.yZcYGa)
         },
         checkEnabled: false
       }).then(e => a.Z.dispatch({
@@ -312,8 +312,8 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         rejectWithError: false
       }), {
         modalProps: {
-          title: v.intl.string(v.t.Z5s7PD),
-          actionText: v.intl.string(v.t.Z5s7PD)
+          title: v.intl.string(v.t.Z5s7PM),
+          actionText: v.intl.string(v.t.Z5s7PM)
         },
         checkEnabled: false
       })
@@ -340,10 +340,10 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       rejectWithError: false
     }), {
       modalProps: {
-        title: v.intl.formatToPlainString(v.t.us7mCw, {
+        title: v.intl.formatToPlainString(v.t.us7mC1, {
           name: t
         }),
-        actionText: v.intl.string(v.t.l3hWPz),
+        actionText: v.intl.string(v.t.l3hWP6),
         disallowBackupCodes: true
       },
       checkEnabled: false

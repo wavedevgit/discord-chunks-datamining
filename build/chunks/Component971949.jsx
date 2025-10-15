@@ -1,7 +1,7 @@
 /** Chunk was on 11166 **/
 /** chunk id: 971949, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -25,7 +25,7 @@ function y(t, n) {
   }, n)
 }
 
-function O(t) {
+function g(t) {
   var {
     guildCount: n,
     onClose: e,
@@ -45,7 +45,7 @@ function O(t) {
     }
     return o
   }(t, ["guildCount", "onClose", "analyticsLocations"]);
-  let O = function(t, n) {
+  let g = function(t, n) {
       return (0, r.jsx)(a.P3F, {
         className: d.learnMoreLink,
         tag: "span",
@@ -56,10 +56,10 @@ function O(t) {
       }, n)
     },
     {
-      analyticsLocations: g
+      analyticsLocations: O
     } = (0, c.ZP)(o);
   return (0, r.jsx)(c.Gt, {
-    value: g,
+    value: O,
     children: (0, r.jsx)(l.Z, function(t) {
       for (var n = 1; n < arguments.length; n++) {
         var e = null != arguments[n] ? arguments[n] : {},
@@ -81,20 +81,20 @@ function O(t) {
       artURL: b.Z,
       onClose: e,
       type: s.cd.GUILD_CAP_MODAL_UPSELL,
-      title: f.intl.string(f.t.CoNXBw),
-      body: n < u.DZw ? f.intl.format(f.t["5qLH7O"], {
+      title: f.intl.string(f.t["CoNXB+"]),
+      body: n < u.DZw ? f.intl.format(f.t["5qLH7B"], {
         guildCount: n,
-        onAndMore: O,
+        onAndMore: g,
         newBadgeHook: y
-      }) : f.intl.format(f.t.mk9CS0, {
-        onAndMore: O,
+      }) : f.intl.format(f.t.mk9CS6, {
+        onAndMore: g,
         newBadgeHook: y
       }),
       context: n < u.DZw ? f.intl.formatToPlainString(f.t["C+Hqzs"], {
         guildCount: n
-      }) : f.intl.string(f.t.m0xavb),
+      }) : f.intl.string(f.t.m0xavd),
       glowUp: f.intl.format(f.t["6Dl5X1"], {
-        onAndMore: O
+        onAndMore: g
       })
     }, p))
   })

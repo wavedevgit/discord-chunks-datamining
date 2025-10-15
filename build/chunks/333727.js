@@ -17,7 +17,7 @@ var Chunk278323 = require("./278323.js"),
 function p(e, t, n, p) {
   if (s.Z.isNotificationDisabled(c.n0.ActivityInvite)) return null;
   let f = t.username,
-    m = h.intl.format(h.t.VDODnp, {
+    m = h.intl.format(h.t.VDODnv, {
       username: "",
       game: n.name
     }),
@@ -35,8 +35,8 @@ function p(e, t, n, p) {
     icon: g,
     title: f,
     body: m,
-    confirmText: h.intl.string(h.t["fgP/wc"]),
-    cancelText: h.intl.string(h.t.tpXzJy),
+    confirmText: h.intl.string(h.t["fgP/wX"]),
+    cancelText: h.intl.string(h.t["tpXzJ+"]),
     onNotificationShow: () => {
       y()
     },

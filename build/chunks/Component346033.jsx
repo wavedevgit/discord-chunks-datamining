@@ -179,7 +179,7 @@ let U = e => {
         className: Chunk689095.bottomIllustration,
         width: 112,
         height: 85,
-        alt: Chunk388032.intl.string(Chunk388032.t.X4IxWF)
+        alt: Chunk388032.intl.string(Chunk388032.t.X4IxWL)
       })]
     })
   }

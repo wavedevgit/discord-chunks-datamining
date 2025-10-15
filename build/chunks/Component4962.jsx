@@ -32,7 +32,7 @@ let h = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
         className: p.headerText,
         children: [(0, i.jsx)("div", {
           className: p.label,
-          children: d.intl.string(d.t.vmzMZG)
+          children: d.intl.string(d.t.vmzMZC)
         }), (0, i.jsx)("div", {
           className: p.username,
           children: t.username

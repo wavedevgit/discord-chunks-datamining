@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk237012 = require("./237012.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk113648 = require("./113648.js");
+  Chunk386521 = require("./386521.js");
 
 function b() {
   let {
@@ -50,7 +50,7 @@ function v() {
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Balance Widget Menu",
       children: (0, Chunk951288.jsx)(Chunk775451.V9, {
-        ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIS"]),
+        ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIR"]),
         ctaOnClick: Chunk981631.dG4
       })
     }), (0, Chunk951288.jsxs)(Chunk237012.E_, {
@@ -82,14 +82,14 @@ function v() {
         },
         children: "Enter a number and click Set Balance to see the balance widget pill update:"
       }), (0, Chunk951288.jsx)(Chunk481060.FiK, {
-        className: Chunk113648.numberInput,
+        className: Chunk386521.numberInput,
         value: module,
         onChange: e => t(e)
       }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
         onClick: () => Chunk52647(module),
         text: "Set Balance"
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk113648.interactivePillContainer,
+        className: Chunk386521.interactivePillContainer,
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: require,
           balanceWidgetMode: b,
@@ -102,7 +102,7 @@ function v() {
         },
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, Chunk951288.jsx)(Chunk481060.FiK, {
-        className: Chunk113648.numberInput,
+        className: Chunk386521.numberInput,
         value: Chunk825102,
         onChange: e => p(e)
       }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
@@ -113,7 +113,7 @@ function v() {
         },
         text: "Simulate Loading State"
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk113648.interactivePillContainer,
+        className: Chunk386521.interactivePillContainer,
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: require,
           balanceWidgetMode: b,
@@ -123,8 +123,8 @@ function v() {
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Balance Widget Card",
       children: (0, Chunk951288.jsx)(Chunk120786.L, {
-        ctaText: Chunk388032.intl.string(Chunk388032.t["H57f4+"]),
-        linkText: Chunk388032.intl.string(Chunk388032.t["7f4H7O"]),
+        ctaText: Chunk388032.intl.string(Chunk388032.t.H57f41),
+        linkText: Chunk388032.intl.string(Chunk388032.t["7f4H7D"]),
         ctaOnClick: Chunk981631.dG4
       })
     })]

@@ -34,7 +34,7 @@ function C(e) {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: _.vanityInfo,
-      children: v.intl.format(v.t["1qTOvr"], {
+      children: v.intl.format(v.t["1qTOvn"], {
         urlText: e,
         urlValue: e
       })
@@ -65,11 +65,11 @@ function O(e) {
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: v.intl.string(v.t["6oJyq6"])
+        children: v.intl.string(v.t["6oJyq5"])
       }), n.length > 0 ? (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: v.intl.format(v.t.MVWOUV, {
+        children: v.intl.format(v.t.MVWOUY, {
           uses: l
         })
       }) : null]
@@ -83,7 +83,7 @@ function O(e) {
       children: (0, r.jsx)(a.Button, {
         variant: "critical-secondary",
         onClick: d,
-        text: v.intl.string(v.t["3ggb6O"])
+        text: v.intl.string(v.t["3ggb6K"])
       })
     }) : null]
   })

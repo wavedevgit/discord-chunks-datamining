@@ -96,7 +96,7 @@ class T extends Chunk647438.PureComponent {
           children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
             className: Chunk374815.button,
             onClick: this.jumpTo,
-            children: Chunk388032.intl.string(Chunk388032.t.k5WiPT)
+            children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
           })
         })]
       }))

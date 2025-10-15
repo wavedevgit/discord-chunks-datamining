@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk985002 = require("./985002.js"),
   Chunk880257 = require("./880257.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk345909 = require("./345909.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk490839 = require("./490839.js");
 let f = e => {
@@ -20,16 +20,16 @@ let f = e => {
     otherUser: r,
     transitionState: i,
     onClose: f
-  } = e, [h, j] = o.useState(false), m = o.useCallback(() => {
+  } = e, [h, j] = o.useState(false), y = o.useCallback(() => {
     j(true)
-  }, []), y = o.useCallback(() => {
+  }, []), m = o.useCallback(() => {
     f()
   }, [f]), g = (0, l.Z)(), {
     cancelLinkRequest: x,
     isCancelLoading: O
   } = (0, s.G)({
-    onError: m,
-    onSuccess: y
+    onError: y,
+    onSuccess: m
   });
   return c()(g, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsx)(d.Z, {
     transitionState: i,
@@ -39,13 +39,13 @@ let f = e => {
       },
       children: [h && (0, n.jsx)(a.M14, {
         type: "critical",
-        children: b.intl.string(u.default["6gyAQU"])
+        children: b.intl.string(u.default["6gyAQZ"])
       }), (0, n.jsx)(a.hzk, {
         "data-migration-pending": true,
         children: (0, n.jsx)(d.Z.Header, {
           currentUser: t,
           otherUser: r,
-          header: b.intl.string(u.default.HynllZ),
+          header: b.intl.string(u.default.HynllX),
           icon: (0, n.jsx)(a.Dio, {
             size: "md",
             color: "currentColor",
@@ -67,7 +67,7 @@ let f = e => {
             }), (0, n.jsx)(a.Button, {
               variant: "critical-primary",
               size: "sm",
-              text: b.intl.string(u.default.mK40bm),
+              text: b.intl.string(u.default.mK40bk),
               type: "submit",
               disabled: O || h,
               loading: O

@@ -71,7 +71,7 @@ function x(e) {
         className: v.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: _.intl.format(_.t.f2tNxM, {
+        children: _.intl.format(_.t.f2tNxH, {
           username: null == t ? true : t.globalName,
           channelName: (0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -93,7 +93,7 @@ function O(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: r
-  } = e, l = r ? _.intl.string(_.t.ygslb2) : _.intl.string(_.t["3Hv9qa"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, l = r ? _.intl.string(_.t.ygslb0) : _.intl.string(_.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
   return (0, i.jsx)(s.zxk, {

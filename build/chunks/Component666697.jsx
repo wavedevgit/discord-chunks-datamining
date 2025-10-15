@@ -88,7 +88,7 @@ let O = function(e) {
   }, [null == A ? true : A.id, M]);
   let z = a.useMemo(() => [{
       id: y.GlobalDiscoveryAppsSections.ABOUT,
-      label: S.intl.string(S.t.DkyHMD)
+      label: S.intl.string(S.t.DkyHMK)
     }, {
       id: y.GlobalDiscoveryAppsSections.STORE,
       label: S.intl.string(S.t.jgEXGB)

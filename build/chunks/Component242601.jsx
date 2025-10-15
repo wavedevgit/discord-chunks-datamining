@@ -180,13 +180,13 @@ class em extends Chunk647438.PureComponent {
       color: f.r6K.BRAND,
       position: "bottom",
       shouldShow: !e && !i,
-      text: es.intl.string(es.t.sFSrFB),
-      "aria-label": es.intl.string(es.t.sFSrFB),
+      text: es.intl.string(es.t.sFSrFH),
+      "aria-label": es.intl.string(es.t.sFSrFH),
       children: () => this.renderGuildHeaderDropdownButton(e)
     }) : i || e ? this.renderGuildHeaderDropdownButton(e) : l ? (0, r.jsxs)(r.Fragment, {
       children: [this.renderGuildHeaderDropdownButton(e), (0, r.jsx)(p.J2, {
         targetElementRef: this.guildHeaderDropdownButtonRef,
-        title: es.intl.string(es.t["Q3qa4+"]),
+        title: es.intl.string(es.t.Q3qa4x),
         body: es.intl.string(es.t.UyHD4O),
         onRequestClose: this.handleCloseSubscribeTooltip,
         position: "bottom",
@@ -321,7 +321,7 @@ class em extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("nav", {
       className: Chunk971606.container,
       onContextMenu: this.handleContextMenu,
-      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAQ, {
+      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAZ, {
         guildName: null != (e = null == exports ? true : exports.name) ? module : ""
       }),
       children: [null != exports && this.renderGuildHeader(this.state.hasGuildSubheader), null != exports && (0, Chunk951288.jsx)(Chunk156978.Z, {

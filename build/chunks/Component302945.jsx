@@ -18,7 +18,7 @@ function f(e) {
   let {
     affinities: t,
     className: n
-  } = e, a = e => null != e.globalName ? e.globalName : e.username, f = i.useMemo(() => t.length > 1 ? u.intl.formatToPlainString(u.t.HaVk0d, {
+  } = e, a = e => null != e.globalName ? e.globalName : e.username, f = i.useMemo(() => t.length > 1 ? u.intl.formatToPlainString(u.t.HaVk0X, {
     username: a(t[0]),
     numFriends: t.length - 1
   }) : "", [t]);

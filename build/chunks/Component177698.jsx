@@ -110,10 +110,10 @@ let O = (0, Chunk703912.Z)(e => {
       } = function(e, t) {
         function n() {
           (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
-            title: m.intl.string(m.t.j2d6Ki),
-            subtitle: m.intl.string(m.t["4LKmNz"]),
+            title: m.intl.string(m.t.j2d6Km),
+            subtitle: m.intl.string(m.t["4LKmN5"]),
             actions: [{
-              text: m.intl.string(m.t.cpT0Cg),
+              text: m.intl.string(m.t.cpT0Cq),
               onClick: e.onClose
             }]
           })))

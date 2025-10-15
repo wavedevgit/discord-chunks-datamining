@@ -103,7 +103,7 @@ function f() {
         })))
       },
       disabled: x,
-      children: Chunk388032.intl.string(Chunk388032.t.PLSCUl)
+      children: Chunk388032.intl.string(Chunk388032.t.PLSCUg)
     })]
   })
 }

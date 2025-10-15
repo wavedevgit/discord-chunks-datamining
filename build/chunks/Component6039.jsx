@@ -98,10 +98,10 @@ let N = e => {
           }
           return e
         }({
-          header: C.intl.string(C.t.y0CVen),
-          cancelText: C.intl.string(C.t.oEAioK),
+          header: C.intl.string(C.t.y0CVes),
+          cancelText: C.intl.string(C.t.oEAioF),
           onConfirm: t,
-          confirmText: C.intl.string(C.t.p89ACg),
+          confirmText: C.intl.string(C.t.p89ACt),
           confirmButtonColor: a.zx.Colors.RED
         }, n), l = l = {
           children: (0, r.jsx)(o.Text, {
@@ -123,9 +123,9 @@ let N = e => {
     },
     w = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = Z(C.intl.format(C.t["9ZezpK"], {
+    }, L = Z(C.intl.format(C.t["9ZezpN"], {
       name: null == x ? true : x.name
-    }), A), R = Z(C.intl.format(C.t.fJwWVl, {
+    }), A), R = Z(C.intl.format(C.t.fJwWVt, {
       name: null == x ? true : x.name
     }), A);
   return (0, r.jsxs)("div", {
@@ -147,9 +147,9 @@ let N = e => {
             });
           case b.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
-              reapplyText: C.intl.string(C.t.I1LYVl),
+              reapplyText: C.intl.string(C.t.I1LYVk),
               onReapply: w,
-              confirmText: C.intl.string(C.t.g9tK0t),
+              confirmText: C.intl.string(C.t.g9tK0o),
               onWithdrawApplication: L,
               rejectionReason: N.rejectionReason,
               guild: x

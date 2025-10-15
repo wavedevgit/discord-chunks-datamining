@@ -55,21 +55,21 @@ function h(e) {
       }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKC, {
+        children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
           friendlyDurationString: O
-        }) : p.intl.format(p.t.mvHxzc, {
+        }) : p.intl.format(p.t.mvHxze, {
           friendlyDurationString: O
         }), y && (0, r.jsx)(s.P3F, {
           onClick: v(true),
           className: f.editChannel,
           tag: "span",
           role: "link",
-          children: p.intl.string(p.t["0B95RE"])
+          children: p.intl.string(p.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.u, {
-      text: p.intl.format(p.t.wx6Vb2, {}),
-      "aria-label": p.intl.formatToMarkdownString(p.t.wx6Vb2, {}),
+      text: p.intl.format(p.t.wx6Vb9, {}),
+      "aria-label": p.intl.formatToMarkdownString(p.t.wx6Vb9, {}),
       shouldShow: !y,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.$q, {

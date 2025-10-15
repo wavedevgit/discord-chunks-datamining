@@ -17,7 +17,7 @@ function c(e) {
   let {
     author: c,
     inviteError: u
-  } = e, d = (0, i.e7)([o.default], () => o.default.getId()) === c.id ? l.intl.string(l.t.C89OLC) : l.intl.string(l.t["YVub5+"]), f = (0, s.l)(null == u ? true : u.code);
+  } = e, d = (0, i.e7)([o.default], () => o.default.getId()) === c.id ? l.intl.string(l.t.C89OLE) : l.intl.string(l.t.YVub5y), f = (0, s.l)(null == u ? true : u.code);
   return (0, r.jsxs)(a.Z, {
     children: [(0, r.jsx)(a.Z.Header, {
       text: d
@@ -26,7 +26,7 @@ function c(e) {
         expired: true
       }), (0, r.jsx)(a.Z.Info, {
         expired: true,
-        title: null != (t = null == f ? true : f.title) ? t : l.intl.string(l.t["Jhx/ub"]),
+        title: null != (t = null == f ? true : f.title) ? t : l.intl.string(l.t["Jhx/ud"]),
         children: null != (n = null == f ? true : f.description) ? n : null == u ? true : u.message
       })]
     })]

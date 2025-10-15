@@ -83,7 +83,7 @@ let T = 20,
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         className: Chunk345857.premiumTooltipText,
-        children: Chunk388032.intl.format(Chunk388032.t["/7R4q6"], {})
+        children: Chunk388032.intl.format(Chunk388032.t["/7R4q4"], {})
       })]
     })
   };
@@ -116,7 +116,7 @@ let P = function(e) {
     "data-migration-pending": true,
     targetElementRef: z,
     text: () => (0, r.jsx)(N, {}),
-    "aria-label": E.intl.formatToMarkdownString(E.t["/7R4q6"], {}),
+    "aria-label": E.intl.formatToMarkdownString(E.t["/7R4q4"], {}),
     position: "top",
     shouldShow: Y,
     tooltipClassName: b.premiumTooltip,
@@ -139,7 +139,7 @@ let P = function(e) {
         var n;
         null == v || v(t), null == (n = e.onClick) || n.call(e)
       },
-      "aria-label": E.intl.string(E.t["59QgaG"]),
+      "aria-label": E.intl.string(E.t["59QgaD"]),
       "aria-controls": T,
       "aria-expanded": y,
       "aria-haspopup": "dialog",

@@ -13,7 +13,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk213609 = require("./213609.js"),
   Chunk550385 = require("./550385.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk119475 = require("./119475.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk574876 = require("./574876.js"),
   Chunk758335 = require("./758335.js");
@@ -47,17 +47,17 @@ function h() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "text-primary",
-          children: Chunk388032.intl.string(Chunk119475.default.XP4jzM)
+          children: Chunk388032.intl.string(Chunk687101.default.XP4jzJ)
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "text-tertiary",
-          children: Chunk388032.intl.string(Chunk119475.default.MJYvmJ)
+          children: Chunk388032.intl.string(Chunk687101.default.MJYvmG)
         })]
       })]
     }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
       variant: "secondary",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk119475.default.eGxkmp),
+      text: Chunk388032.intl.string(Chunk687101.default.eGxkmm),
       onClick: exports,
       fullWidth: true
     })]

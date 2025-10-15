@@ -19,8 +19,8 @@ function d(t, e, d) {
     canManageGuildEvent: f
   } = (0, o.XJ)(null != d ? d : e), b = (0, r.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(t), [t]), v = f(b), E = null != (0, c.qY)(null != (g = null == d ? true : d.id) ? g : a.lds), p = null != b && (0, u.xt)(b);
   return !v || p || E ? null : (0, l.jsx)(i.sNh, {
-    id: s.intl.string(s.t.cK1GGR),
-    label: s.intl.string(s.t.cK1GGR),
+    id: s.intl.string(s.t.cK1GGY),
+    label: s.intl.string(s.t.cK1GGY),
     action: function() {
       null != b && (0, i.ZDy)(async () => {
         let {

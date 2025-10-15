@@ -18,6 +18,6 @@ function l() {
   return (0, Chunk445794.N3)({
     skuId: module
   }) ? (0, Chunk951288.jsx)(Chunk658114.Z, {
-    message: Chunk388032.intl.format(Chunk388032.t.fsOXXF, {})
+    message: Chunk388032.intl.format(Chunk388032.t.fsOXXO, {})
   }) : null
 }

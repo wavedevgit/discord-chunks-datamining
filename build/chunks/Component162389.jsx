@@ -81,7 +81,7 @@ function y(e) {
   }, [r, t]), {
     handleDragStart: N,
     handleDragReset: O,
-    handleDragComplete: E
+    handleDragComplete: Z
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
       availableTags: e
@@ -94,7 +94,7 @@ function y(e) {
       availableTags: t.availableTags,
       canManageChannels: r,
       onTagClick: S,
-      onDragComplete: E,
+      onDragComplete: Z,
       onDragReset: O,
       onDragStart: N
     }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
@@ -104,14 +104,14 @@ function y(e) {
       }),
       children: (0, i.jsx)(c.qJs, {
         size: "custom",
-        "aria-label": b.intl.string(b.t["/jubeH"]),
+        "aria-label": b.intl.string(b.t["/jubeD"]),
         color: o.Z.unsafe_rawColors.WHITE_500.css,
         width: 20,
         height: 20
       })
     }) : (0, i.jsx)(c.Button, {
       variant: "primary",
-      text: b.intl.string(b.t["/jubeH"]),
+      text: b.intl.string(b.t["/jubeD"]),
       disabled: !r,
       onClick: y
     })]
@@ -153,7 +153,7 @@ function C(e) {
     children: (0, i.jsx)(p.Z, {
       tag: t,
       disabled: !l,
-      ariaLabel: b.intl.formatToPlainString(b.t.jhSvBw, {
+      ariaLabel: b.intl.formatToPlainString(b.t.jhSvB9, {
         name: t.name
       }),
       onClick: l ? () => r(t) : true

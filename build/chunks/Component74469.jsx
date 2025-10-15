@@ -88,7 +88,7 @@ let v = (0, Chunk313201.hQ)(),
       T(g.L.TAKE_ACTION), null == l || l(null)
     }, [T, l]), k = i.useRef(null);
     return (0, p.Z)(k, b.Y_.GUILD_TAG), (0, r.jsxs)(_.Z, {
-      title: y.intl.string(y.t.Pdd1nZ),
+      title: y.intl.string(y.t.Pdd1nd),
       titleId: v,
       ref: k,
       titleIcon: I === o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(s.IGR, {
@@ -98,7 +98,7 @@ let v = (0, Chunk313201.hQ)(),
       children: [(0, r.jsx)(s.Text, {
         className: O.subtitle,
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.mlZ6Jy)
+        children: y.intl.string(y.t.mlZ6Jx)
       }), (0, r.jsx)(s.PhF, {
         className: O.select,
         optionClassName: O.selectPopout,

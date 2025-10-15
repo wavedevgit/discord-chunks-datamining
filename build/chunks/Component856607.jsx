@@ -27,17 +27,17 @@ function d() {
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk433155.topSpacing,
       variant: "heading-lg/extrabold",
-      children: Chunk388032.intl.string(Chunk388032.t.Z1OZCQ)
+      children: Chunk388032.intl.string(Chunk388032.t.Z1OZCV)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk433155.topSpacing,
       variant: "text-md/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.ZSt4Tk)
+      children: Chunk388032.intl.string(Chunk388032.t.ZSt4Tt)
     }), (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk433155.topSpacing,
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.jQ3pqq),
+        text: Chunk388032.intl.string(Chunk388032.t.jQ3pqt),
         onClick: module
       })
     })]

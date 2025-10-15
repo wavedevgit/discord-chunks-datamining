@@ -81,9 +81,9 @@ let S = function(e) {
   let U = Z.filter(e => null === e.tags.guild_connections);
   return (0, n.jsx)(a.Modal, {
     transitionState: l,
-    title: N.intl.string(N.t.ghtnsr),
+    title: N.intl.string(N.t.ghtnss),
     onClose: S,
-    subtitle: N.intl.format(N.t["Y+TsER"], {
+    subtitle: N.intl.format(N.t["Y+TsEV"], {
       helpdeskArticleUrl: x.Z.getArticleURL(P.BhN.CONNECTION_DETAILS)
     }),
     actions: [],

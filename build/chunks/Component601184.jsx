@@ -27,7 +27,7 @@ function _(e, t) {
     N = g || null != n && e.canDeleteOwnMessage(n.id);
   return e.state === f.yb.SENDING || !N || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == S ? true : S.id) || (0, E.Z)(e)) ? null : (0, i.jsx)(s.sNh, {
     id: "delete",
-    label: m.intl.string(m.t.xwMqDw),
+    label: m.intl.string(m.t.xwMqD7),
     action: function(n) {
       e.state === f.yb.SEND_FAILED ? r.Z.deleteMessage(t.id, e.id, true) : n.shiftKey ? r.Z.deleteMessage(t.id, e.id) : a.Z.confirmDelete(t, e, true)
     },

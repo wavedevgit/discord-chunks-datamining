@@ -43,19 +43,19 @@ let b = e => {
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-xl/semibold",
             className: f.searchTitle,
-            children: h.intl.string(h.t.IT7qoK)
+            children: h.intl.string(h.t.IT7qoC)
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             className: f.searchSubtitle,
-            children: h.intl.string(h.t["5PoYtr"])
+            children: h.intl.string(h.t["5PoYts"])
           }), (0, r.jsx)(s.f6W, {
             theme: u.BR.LIGHT,
             children: e => (0, r.jsx)("div", {
               className: a()(f.searchContainer, e),
               children: (0, r.jsx)(s.E1j, {
                 query: t,
-                "aria-label": h.intl.string(h.t.nL2wKC),
-                placeholder: h.intl.string(h.t.nL2wKC),
+                "aria-label": h.intl.string(h.t.nL2wKD),
+                placeholder: h.intl.string(h.t.nL2wKD),
                 onChange: n,
                 onClear: i,
                 onKeyDown: l
@@ -103,7 +103,7 @@ let b = e => {
             children: [(0, r.jsx)(s.njP.Item, {
               className: f.tabBarItem,
               id: d.AR.ALL,
-              children: "".concat(h.intl.string(h.t.hEAa2d), " (").concat(j, ")")
+              children: "".concat(h.intl.string(h.t.hEAa2a), " (").concat(j, ")")
             }, d.AR.ALL), (0, d.b7)(t.id).map(e => {
               let {
                 value: t,

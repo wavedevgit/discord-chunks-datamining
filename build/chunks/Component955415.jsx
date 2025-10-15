@@ -191,7 +191,7 @@ let C = e => {
         className: y.statusOnline
       }), (0, r.jsx)("span", {
         className: y.count,
-        children: b.intl.format(b.t["LC+S+v"], {
+        children: b.intl.format(b.t["LC+S+m"], {
           membersOnline: t
         })
       })]
@@ -201,7 +201,7 @@ let C = e => {
         className: y.statusOffline
       }), (0, r.jsx)("span", {
         className: y.count,
-        children: b.intl.format(b.t.zRl6XV, {
+        children: b.intl.format(b.t.zRl6XR, {
           count: n
         })
       })]

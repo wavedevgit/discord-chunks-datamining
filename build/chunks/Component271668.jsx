@@ -176,7 +176,7 @@ let D = 512,
             [P.categorySectionLast]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
-            message: R.intl.format(R.t.WoQXT0, {
+            message: R.intl.format(R.t.WoQXT6, {
               applicationName: i.name
             }),
             noResultsImageURL: w,

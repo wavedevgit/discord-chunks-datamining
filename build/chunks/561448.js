@@ -78,14 +78,14 @@ let m = {
       paymentSourceType: Chunk231338.He.PAYPAL,
       liveId: "cpmt_1RbPZnCR4aIufmH2qyrDhNFa",
       testId: "cpmt_1RRMZZCR4aIufmH2ZzcE5aS4",
-      subtitleTranslationKey: Chunk388032.t.Djzd7O,
+      subtitleTranslationKey: Chunk388032.t.Djzd7L,
       isRegionalPaymentMethod: false
     },
     [Chunk231338.He.GOPAY_WALLET]: {
       paymentSourceType: Chunk231338.He.GOPAY_WALLET,
       liveId: "cpmt_1Re1C5CR4aIufmH2YKUuWN9N",
       testId: "cpmt_1RdkCFCR4aIufmH2CNjO11CE",
-      subtitleTranslationKey: Chunk388032.t["43J8JC"],
+      subtitleTranslationKey: Chunk388032.t["43J8JK"],
       isRegionalPaymentMethod: true,
       isStaffOnly: true
     },
@@ -93,7 +93,7 @@ let m = {
       paymentSourceType: Chunk231338.He.KAKAOPAY,
       liveId: null,
       testId: "cpmt_1ReOr3CR4aIufmH29WgZlgkT",
-      subtitleTranslationKey: Chunk388032.t.CSVexs,
+      subtitleTranslationKey: Chunk388032.t.CSVexi,
       isRegionalPaymentMethod: true
     }
   },

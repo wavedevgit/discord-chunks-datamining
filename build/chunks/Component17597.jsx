@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk352138 = require("./352138.js"),
   Chunk629235 = require("./629235.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk398158 = require("./398158.js"),
+  Chunk847678 = require("./847678.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk70402 = require("./70402.js"),
   Chunk736056 = require("./736056.js");
@@ -60,7 +60,7 @@ let C = function(e) {
       type: "image",
       src: y.Z
     },
-    title: j.intl.string(j.t.JHNunp),
+    title: j.intl.string(j.t.JHNunj),
     subtitle: j.intl.format(v.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
         h.Z.openUrl(p.Z.getArticleURL(b.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LEARN_MORE)
@@ -69,7 +69,7 @@ let C = function(e) {
     actionBarInput: (0, a.jsx)(s.Avr, {
       size: "sm",
       textVariant: "text-sm/medium",
-      text: j.intl.string(j.t["2jxGen"]),
+      text: j.intl.string(j.t["2jxGer"]),
       onClick: () => {
         (0, x.x3)(w, x.d_.EXPRESSIVE_PRIMARY, x.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
@@ -95,7 +95,7 @@ let C = function(e) {
         }), (0, a.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
-          children: j.intl.string(v.default.ar3a3t)
+          children: j.intl.string(v.default.ar3a3q)
         })]
       }), null == A || 0 === A.length ? (0, a.jsxs)(s.Kqy, {
         direction: "vertical",
@@ -104,11 +104,11 @@ let C = function(e) {
         children: [(0, a.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: j.intl.string(v.default.cR6339)
+          children: j.intl.string(v.default.cR6336)
         }), (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
-          text: j.intl.string(v.default.hDvmYG),
+          text: j.intl.string(v.default.hDvmYP),
           onClick: () => {
             (0, f.Jh)()
           }

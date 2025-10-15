@@ -24,7 +24,7 @@ let E = t => {
     warningType: _,
     otherUserId: E,
     transitionState: g
-  } = t, A = null != (0, o.M)(n), [O, h] = r.useState("ACTIONS"), p = r.useCallback(t => {
+  } = t, A = null != (0, o.M)(n), [O, h] = r.useState("ACTIONS"), m = r.useCallback(t => {
     (0, c.qc)({
       channelId: n,
       warningId: i,
@@ -33,7 +33,7 @@ let E = t => {
       cta: t,
       isNudgeWarning: A
     })
-  }, [n, i, _, E, A]), m = r.useCallback(t => {
+  }, [n, i, _, E, A]), p = r.useCallback(t => {
     let {
       text: e,
       onClick: n
@@ -44,23 +44,23 @@ let E = t => {
       variant: "secondary",
       textVariant: "text-sm/normal"
     })
-  }, []), N = r.useCallback(() => {
+  }, []), b = r.useCallback(() => {
     switch (O) {
       case "SAFETY_TIPS":
       case "ABOUT_SAFETY_ALERTS":
-        return (0, s.jsx)(m, {
-          text: S.intl.string(S.t["13/7kZ"]),
+        return (0, s.jsx)(p, {
+          text: S.intl.string(S.t["13/7kX"]),
           onClick: () => h("ACTIONS")
         });
       default:
         return null
     }
-  }, [O, m]), b = r.useCallback(() => {
+  }, [O, p]), N = r.useCallback(() => {
     switch (O) {
       case "SAFETY_TIPS":
-        return S.intl.string(S.t.EtNxi4);
+        return S.intl.string(S.t.EtNxi6);
       case "ABOUT_SAFETY_ALERTS":
-        return S.intl.string(S.t.qI14KC);
+        return S.intl.string(S.t.qI14KM);
       default:
         return S.intl.string(S.t.MAhAp6)
     }
@@ -70,7 +70,7 @@ let E = t => {
   return (0, s.jsxs)(l.Y0X, {
     "data-migration-pending": true,
     transitionState: g,
-    "aria-label": S.intl.string(S.t.eXlt09),
+    "aria-label": S.intl.string(S.t.eXlt01),
     size: l.CgR.SMALL,
     parentComponent: "SafetyToolsModal",
     children: [(0, s.jsx)(l.xBx, {
@@ -80,7 +80,7 @@ let E = t => {
       justify: a.Z.Justify.CENTER,
       children: (0, s.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        children: b()
+        children: N()
       })
     }), (0, s.jsx)(l.Ttm, {
       children: (0, s.jsxs)(l.MyZ, {
@@ -100,7 +100,7 @@ let E = t => {
           children: (0, s.jsx)(d.Z, {
             channelId: n,
             onClose: () => {
-              e(), p(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
+              e(), m(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
             }
           })
         }), (0, s.jsx)(l.Mi4, {
@@ -111,12 +111,12 @@ let E = t => {
     }), (0, s.jsxs)(l.mzw, {
       "data-migration-pending": true,
       justify: a.Z.Justify.BETWEEN,
-      children: [(0, s.jsx)(m, {
-        text: S.intl.string(S.t.cpT0Cg),
+      children: [(0, s.jsx)(p, {
+        text: S.intl.string(S.t.cpT0Cq),
         onClick: () => {
-          e(), p(c.NM.USER_SAFETY_TOOLS_DISMISS)
+          e(), m(c.NM.USER_SAFETY_TOOLS_DISMISS)
         }
-      }), N()]
+      }), b()]
     })]
   })
 }

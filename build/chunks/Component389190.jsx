@@ -44,7 +44,7 @@ function h(e) {
         className: f.emptyIconFriends
       }), (0, l.jsx)("div", {
         className: f.emptyText,
-        children: p.intl.string(p.t["/5p4g4"])
+        children: p.intl.string(p.t["/5p4gx"])
       })]
     }) : j.map(e => {
       let {

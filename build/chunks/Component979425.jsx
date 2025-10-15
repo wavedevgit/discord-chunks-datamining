@@ -33,10 +33,10 @@ function d(e) {
         className: u.streamUnavailableText,
         color: "always-white",
         variant: n ? "text-sm/semibold" : "text-md/semibold",
-        children: d ? s.intl.string(s.t.UeEwj4) : s.intl.string(s.t["1i3tSU"])
+        children: d ? s.intl.string(s.t.UeEwjy) : s.intl.string(s.t["1i3tSY"])
       }), (0, r.jsx)(a.u, {
         asContainer: true,
-        text: d ? s.intl.string(s.t["ro/HNz"]) : s.intl.string(s.t.UPf6ZG),
+        text: d ? s.intl.string(s.t["ro/HN8"]) : s.intl.string(s.t.UPf6ZM),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(o.o8v, {
             size: "md",

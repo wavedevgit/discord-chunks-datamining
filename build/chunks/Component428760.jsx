@@ -49,7 +49,7 @@ function u(e) {
       className: d.paddingTop,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: null != g ? g : c.intl.string(c.t["Gm6G5+"])
+      children: null != g ? g : c.intl.string(c.t.Gm6G5x)
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 46154 **/
 /** chunk id: 13736, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,13 +10,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk665906 = require("./665906.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(t) {
+function o(t) {
   let n = (0, r.C7)(t),
     e = (0, r.$R)(t),
-    s = (0, r.Gu)(t);
-  return !n || !e || s || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(l.sNh, {
+    o = (0, r.Gu)(t);
+  return !n || !e || o || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(l.sNh, {
     id: "edit-thread",
-    label: t.isForumPost() ? o.intl.string(o.t.NP1yHB) : o.intl.string(o.t["2Mk1TE"]),
+    label: t.isForumPost() ? s.intl.string(s.t.NP1yHG) : s.intl.string(s.t["2Mk1TP"]),
     action: () => {
       (0, l.pTH)(), a.ZP.open(t.id)
     }

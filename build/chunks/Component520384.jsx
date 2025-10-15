@@ -25,8 +25,8 @@ function f() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS,
     children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["1CzWUF"]),
-      description: Chunk388032.intl.string(Chunk388032.t.jTNPHB),
+      label: Chunk388032.intl.string(Chunk388032.t["1CzWUK"]),
+      description: Chunk388032.intl.string(Chunk388032.t.jTNPHM),
       checked: module,
       onChange: require
     })

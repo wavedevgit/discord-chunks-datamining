@@ -1,5 +1,5 @@
 /** Chunk was on 27751 **/
-/** chunk id: 783576, original params: t,n,e (module,exports,require) **/
+/** chunk id: 783576, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
@@ -18,35 +18,35 @@ function d(t) {
     onClose: d,
     transitionState: b
   } = t, x = (0, l.Dt)();
-  return (0, i.jsxs)(a.Y0X, {
+  return (0, e.jsxs)(a.Y0X, {
     transitionState: b,
     "aria-labelledby": x,
     parentComponent: "SuspiciousDownloadModal",
-    children: [(0, i.jsx)("img", {
+    children: [(0, e.jsx)("img", {
       className: c.art,
-      src: e(902623),
+      src: i(902623),
       alt: ""
-    }), (0, i.jsx)(a.hzk, {
-      children: (0, i.jsxs)("div", {
+    }), (0, e.jsx)(a.hzk, {
+      children: (0, e.jsxs)("div", {
         className: c.modalContent,
-        children: [(0, i.jsx)(a.Heading, {
+        children: [(0, e.jsx)(a.Heading, {
           id: x,
           variant: "heading-lg/semibold",
           className: c.title,
-          children: r.intl.string(r.t.XtDo9f)
-        }), (0, i.jsx)(a.Text, {
+          children: r.intl.string(r.t.XtDo9Z)
+        }), (0, e.jsx)(a.Text, {
           variant: "text-md/normal",
           className: c.body,
-          children: r.intl.string(r.t.L9yFkp)
+          children: r.intl.string(r.t.L9yFko)
         })]
       })
-    }), (0, i.jsxs)(a.mzw, {
-      children: [(0, i.jsx)(a.Button, {
+    }), (0, e.jsxs)(a.mzw, {
+      children: [(0, e.jsx)(a.Button, {
         variant: "primary",
-        text: r.intl.string(r.t.j7Vi2t),
+        text: r.intl.string(r.t.j7Vi2i),
         type: "button",
         onClick: d
-      }), (0, i.jsx)(s.zx, {
+      }), (0, e.jsx)(s.zx, {
         type: "button",
         size: s.zx.Sizes.MEDIUM,
         color: s.zx.Colors.TRANSPARENT,
@@ -54,7 +54,7 @@ function d(t) {
         onClick: () => {
           d(), (0, o.Z)(n, true)
         },
-        children: r.intl.string(r.t["/bHu8/"])
+        children: r.intl.string(r.t["/bHu89"])
       })]
     })]
   })

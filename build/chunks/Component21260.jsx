@@ -82,7 +82,7 @@ function _(e) {
     }),
     "aria-label": "overflow",
     children: (0, r.jsx)("div", {
-      children: n(c.intl.formatToPlainString(c.t.vGclWl, {
+      children: n(c.intl.formatToPlainString(c.t.vGclWm, {
         count: t.length
       }))
     })
@@ -147,7 +147,7 @@ function m(e) {
       }), (0, r.jsx)("div", {
         className: u.overflowMeasurement,
         ref: O,
-        children: a(c.intl.formatToPlainString(c.t.vGclWl, {
+        children: a(c.intl.formatToPlainString(c.t.vGclWm, {
           count: Number("1".concat(n.length))
         }))
       })]

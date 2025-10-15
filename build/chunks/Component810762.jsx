@@ -22,15 +22,15 @@ let _ = e => {
   } = (0, l.sp)(n);
   return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.zxk, {
-      text: d.intl.string(d.t.hqyhKS),
+      text: d.intl.string(d.t.hqyhKQ),
       icon: o.wj7,
       variant: "secondary",
       onClick: t
     }), (0, r.jsx)(o.LZC, {
       size: 10
     }), (0, r.jsx)(o.C3N, {
-      label: d.intl.string(d.t["KzCF//"]),
-      description: d.intl.string(d.t["Y+ucR0"]),
+      label: d.intl.string(d.t["KzCF/6"]),
+      description: d.intl.string(d.t["Y+ucR7"]),
       children: (0, r.jsx)("div", {
         className: f.subscriptionsContainer,
         children: n.map(e => (0, r.jsx)(u.Z, {

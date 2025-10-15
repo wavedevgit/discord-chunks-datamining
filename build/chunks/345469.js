@@ -1,5 +1,5 @@
 /** Chunk was on 52432 **/
-/** chunk id: 345469, original params: e,t,a (module,exports,require) **/
+/** chunk id: 345469, original params: e,a,t (module,exports,require) **/
 module.exports = {
   headerContainer: "headerContainer__3131d",
   ratingBody: "ratingBody__3131d",

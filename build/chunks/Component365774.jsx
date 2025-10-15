@@ -15,10 +15,10 @@ function a(e) {
   } = e;
   return t ? (0, r.jsxs)("div", {
     className: l.container,
-    children: [i.intl.string(i.t.KUw7Sk), (0, r.jsx)("div", {
+    children: [i.intl.string(i.t.KUw7Ss), (0, r.jsx)("div", {
       className: l.dot
     })]
   }) : (0, r.jsx)(r.Fragment, {
-    children: i.intl.string(i.t.KUw7Sk)
+    children: i.intl.string(i.t.KUw7Ss)
   })
 }
